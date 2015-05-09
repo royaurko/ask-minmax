@@ -4,7 +4,7 @@ This is an ongoing project on building an expert system for optimization problem
 the novice user. 
 
 Prerequisites: 
- - A  mongodb server running on localhost
+ - A running [Mongodb](https://www.mongodb.org/) server 
 
 The main expert system file is in src/expert.py
 
