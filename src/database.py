@@ -2,16 +2,39 @@
 
 import subprocess
 import os
+import helper
 from pymongo import MongoClient
+
+
+def connect():
+    host = raw_input('Mongodb host name (press enter for localhost): ')
+    while True:
+        try:
+            port = raw_input('Port number (press enter for default port): ')
+            if not port:
+                break
+            port = int(port)
+            break
+        except ValueError:
+            helper.errornumber()
+    if not host and not port:
+        client = MongoClient()
+    elif not host:
+        client = MongoClient(port=port)
+    elif not port:
+        client = MongoClient(host=host)
+    else:
+        client = MongoClient(host=host, port=port)
+    return client
 
 
 def initializedb():
     '''Initialize the database with problems and questions'''
-    client = MongoClient()
+    client = connect()
     db = client.db
     db.problems.drop()
     db.questions.drop()
-    return db
+    return (client, db)
 
 
 def dumpdb(db):
@@ -28,9 +51,8 @@ def dumpdb(db):
         print 'Error backing up database!'
 
 
-def recoverdb():
+def recoverdb(client):
     '''Recover a db from a bson dump'''
-    client = MongoClient()
     client.drop_database('db')
     cmd = 'mongorestore'
     path = raw_input('Folder to recover from? ')
