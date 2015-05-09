@@ -27,15 +27,11 @@ def gettokens(s):
     return s.strip().split()
 
 
-def indicator(db, s, tokens, t):
-    '''Return 1 if property of query is non-zero and 0 o.w. '''
+def mass(db, s, tokens, t):
+    '''Return mass of property of query is non-zero and 0 o.w. '''
     if s == 'problems':
         problem = db.problems.find_one({'tokens': tokens})
-        if problem[t]:
-            return 1
-        return 0
+        return problem[t]
     elif s == 'questions':
         question = db.problems.find_one({'tokens': tokens})
-        if question[t]:
-            return 1
-        return 0
+        return question[t]
