@@ -28,6 +28,7 @@ def training(n, db):
             except ValueError:
                 helper.erroronezero()
         if flag:
+            problems.increasecount(db, problem)
             continue
         else:
             sepquestions.separatingquestion(db, problem)
