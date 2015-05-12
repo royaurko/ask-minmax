@@ -6,7 +6,7 @@ Ask Minmax is an expert system for optimization problems targeted to a non-techn
  - A running [Mongodb](https://www.mongodb.org/) server 
  - Pymongo for python 2.7
 
-The main expert system file is in src/expert.py
+The main expert system file is in `src/expert.py`
 
 ## Quick Start:
 
