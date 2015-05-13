@@ -7,10 +7,10 @@ the name of the database is (you guessed it) `database`.
 
 If a new database is being built then it asks the user for a list of problems and then in the training
 phase guesses a random problem. If the answer is wrong it queries the user for a separating question.
-Separating questions come in two flavors - positive and negative. A positive separating question is
-true for the correct problem but false for the guessed problem. A negative separating question is
-false for the correct problem but true for the guessed problem. Clearly these two possible scenarios
-under which the program can learn stuff.
+Separating questions come in two flavors - **positive** and **negative**. A *positive separating question* is
+true for the correct problem but false for the guessed problem. A *negative separating question* is
+false for the correct problem but true for the guessed problem. Clearly these are the only two scenarios
+under which the program can learn anything non-trivial.
 
 While running in prediction mode, you have the option to stop the program at any point and make it
 output either a single problem or a set of most likely problems. You get to choose the upper limit
