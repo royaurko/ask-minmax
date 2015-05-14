@@ -35,9 +35,3 @@ Once mongodb is up and running simply clone the repo and run `expert.py`
  python src/expert.py
 
  ```
-
-## Todo:
-- compute frequency for setting priors instead of using uniform priors when it has been used enough
-- make posteriors small instead of 0
-- explore gensim, locality sensitive hashing to make it noise stable
-- explore bbns 
