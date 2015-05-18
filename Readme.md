@@ -5,6 +5,11 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
 ## How it works
 
 The user either inputs a bunch of optimization problems 
+$\sum_{i=1}^n x $ or
+
+```math
+\sum_{i=1}^n x 
+```
 
 ```tex
 $\sum x = \prod$
