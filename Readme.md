@@ -4,16 +4,13 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
 
 ## How it works
 
-The user either inputs a bunch of optimization problems 
-$\sum_{i=1}^n x $ or
-
-```math
-\sum_{i=1}^n x 
-```
-
-```tex
-$\sum x = \prod$
-```
+ - The program assumes uniform prior over the problems
+ - During the training phase the program asks for separating questions
+ - Every problem has a data structure storing positive and negative 
+questions
+ - The program samples a question according to its likelihood value
+ - Finally it outputs either a single or a set of problems with the highest
+posterior
 
 ## Prerequisites: 
  - A running [Mongodb](https://www.mongodb.org/) server 
