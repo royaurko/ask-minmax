@@ -1,8 +1,14 @@
 # Ask Minmax!
 
 Ask Minmax is an expert system for optimization problems targeted towards the non-expert user.
-At present it uses a simple Bayesian update rule to predict - I plan to implement more
-sophisticated models soon.
+
+## How it works
+
+The user either inputs a bunch of optimization problems 
+
+```tex
+\sum = \prod
+```
 
 ## Prerequisites: 
  - A running [Mongodb](https://www.mongodb.org/) server 
