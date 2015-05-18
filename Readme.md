@@ -7,7 +7,7 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
 The user either inputs a bunch of optimization problems 
 
 ```tex
-\sum = \prod
+$\sum x = \prod$
 ```
 
 ## Prerequisites: 
