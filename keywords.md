@@ -3,3 +3,5 @@
 - routing
 - flow network
 - job scheduling
+- graph coloring
+- bin packing
