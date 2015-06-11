@@ -1,14 +1,19 @@
 # List of keywords downloaded from arxiv
-- CSP 
-- routing
-- flow network
-- job scheduling
-- graph coloring
-- bin packing
-- combinatorial optimization
-- local search
-- knapsack
-- bipartite matching
-- machine scheduling
-- TSP
-- hypergraph matching
+- CSP (370)
+- routing (500)
+- flow network (500)
+- job scheduling (500)
+- graph coloring (500)
+- bin packing (500)
+- combinatorial optimization (500)
+- local search (500)
+- knapsack (174)
+- bipartite matching (500)
+- machine scheduling (500)
+- TSP (216)
+- hypergraph matching (500)
+- k-server (15)
+- set cover (500)
+- facility location (100)
+- minimum cut (100)
+- maximum cut (100)
