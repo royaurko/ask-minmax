@@ -17,3 +17,6 @@
 - facility location (100)
 - minimum cut (100)
 - maximum cut (100)
+- planar graph (100)
+- multicommodity flow (100)
+- vehicle routing (100)
