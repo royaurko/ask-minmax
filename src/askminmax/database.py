@@ -1,4 +1,8 @@
-# Contains all the functions responsible for maintaining the database
+#############################################################################
+#                                                                           #
+#  Author: Aurko Roy, Email: roy.aurko@gmail.com                            #
+#                                                                           #
+#############################################################################
 
 import subprocess
 import helper
@@ -6,6 +10,10 @@ from pymongo import MongoClient
 
 
 def connect():
+    '''
+    Get the host and port number from the user and connect a client
+    :return: Connected Mongoclient
+    '''
     host = raw_input('Mongodb host name (press enter for localhost): ')
     while True:
         try:
@@ -28,7 +36,10 @@ def connect():
 
 
 def initializedb():
-    '''Initialize the database with problems and questions'''
+    '''
+    Connect client, drop all tables in the database and return
+    :return: client, database db with all tables dropped
+    '''
     client = connect()
     db = client.db
     db.problems.drop()
@@ -37,7 +48,10 @@ def initializedb():
 
 
 def dumpdb(db):
-    '''Dump database to bson file for use later'''
+    '''
+    :param db: Name of the database to dump to BSON files
+    :return: None
+    '''
     try:
         path = raw_input('Name of folder to dump BSON files to? ')
         cmd = 'mongodump'
@@ -48,7 +62,10 @@ def dumpdb(db):
 
 
 def recoverdb(client):
-    '''Recover a db from a bson dump'''
+    '''
+    :param client:
+    :return:
+    '''
     client.drop_database('db')
     cmd = 'mongorestore'
     path = raw_input('Folder to recover from? ')
