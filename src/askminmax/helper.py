@@ -45,7 +45,7 @@ def mass(db, table, hashval, property):
     :param table: Type of db table, either problems or questions
     :param tokens:
     :param property: Property type whose mass to return
-    :return:
+    :return: Mass of the property
     '''
     if table == 'problems':
         problem = db.problems.find_one({'hash': hashval})
