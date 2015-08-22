@@ -10,7 +10,7 @@ def train(db):
     '''
     while True:
         try:
-            n = int(raw_input('Number of times to train?'))
+            n = int(raw_input('Number of times to train? '))
             break
         except ValueError:
             helper.errornumber()

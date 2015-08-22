@@ -13,7 +13,10 @@ def errornumber():
 
 
 def strip(s):
-    '''Strip spaces from left and right'''
+    ''' Strip spaces from left and right
+    :param s: string to strip
+    :return: stripped string
+    '''
     s = s.lstrip()
     s = s.rstrip()
     return s

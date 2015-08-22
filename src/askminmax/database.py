@@ -30,8 +30,7 @@ def connect():
 
 
 def initializedb():
-    '''
-    Connect client, drop all tables in the database and return
+    ''' Connect client, drop all tables in the database and return
     :return: client, database db with all tables dropped
     '''
     client = connect()
@@ -42,7 +41,7 @@ def initializedb():
 
 
 def dumpdb(db):
-    '''
+    ''' Dump database to BSON file
     :param db: Name of the database to dump to BSON files
     :return: None
     '''
@@ -56,7 +55,7 @@ def dumpdb(db):
 
 
 def recoverdb(client):
-    '''
+    ''' Recover database from BSON file
     :param client:
     :return:
     '''
