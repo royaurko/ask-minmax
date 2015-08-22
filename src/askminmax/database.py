@@ -1,9 +1,3 @@
-#############################################################################
-#                                                                           #
-#  Author: Aurko Roy, Email: roy.aurko@gmail.com                            #
-#                                                                           #
-#############################################################################
-
 import subprocess
 import helper
 from pymongo import MongoClient
