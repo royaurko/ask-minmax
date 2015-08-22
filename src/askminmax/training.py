@@ -28,7 +28,10 @@ def training(n, db):
             except ValueError:
                 helper.erroronezero()
         if flag:
+            # Increase the count and update the priors and posteriors of this problem
             problems.increasecount(db, problem)
+            problems.updatepriors(db, problem)
+            problems.updateposteriors(db, problem)
             continue
         else:
             sepquestions.separatingquestion(db, problem)
