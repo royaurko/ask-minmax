@@ -2,7 +2,7 @@
 
 The main files that comprise this expert system are:
 
-* (database.py)[database.py]
+* [database.py](database.py)
 * (problems.py)[problems.py]
 * (questions.py)[questions.py]
 * (sepquestions.py)[sepquestions.py]
