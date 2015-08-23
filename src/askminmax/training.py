@@ -24,7 +24,7 @@ def training(n, db):
    :return: None, modify db in place
    '''
    for i in xrange(n):
-        problem = problems.sampleproblem(db, 'prior')
+        problem = problems.sample(db, 'prior')
         print problem['name']
         while True:
             try:

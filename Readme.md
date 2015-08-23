@@ -45,3 +45,7 @@ you the option to create one of your own. Finally to run the expert system use
 ```python
 expert.run()
 ```
+
+## Organization:
+
+To see how the code is organized see [organization.md](src/askminmax/organization.md)
