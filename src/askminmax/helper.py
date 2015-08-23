@@ -32,15 +32,6 @@ def gethashval(s):
     return hashlib.sha512(s).hexdigest()
 
 
-# Marked for deletion
-def gettokens(s):
-    '''Return list of words in the problem'''
-    replacelist = ['-', ',', '.', '?', '!', '&']
-    s = s.lower()
-    for c in replacelist:
-        s = s.replace(c, ' ')
-    return s.strip().split()
-
 
 def mass(db, table, hashval, property):
     ''' Return mass of property of query is non-zero and 0 o.w.
