@@ -29,7 +29,7 @@ def gethashval(s):
     '''
     regex = re.compile('[^a-zA-Z]')
     s = regex.sub('', s)
-    return hashlib.sha512(s).hexdigest()
+    return hashlib.md5(s).hexdigest()
 
 
 
