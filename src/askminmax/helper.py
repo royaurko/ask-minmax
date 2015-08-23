@@ -29,8 +29,8 @@ def gethashval(s):
     '''
     regex = re.compile('[^a-zA-Z]')
     s = regex.sub('', s)
-    return hashlib.md5(s).hexdigest()
-
+    s = s.lower()
+    return hashlib.(s).hexdigest()
 
 
 def mass(db, table, hashval, property):
