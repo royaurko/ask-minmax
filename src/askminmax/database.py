@@ -48,6 +48,8 @@ def dumpdb(db):
     try:
         path = raw_input('Name of folder to dump BSON files to (default = database)? ')
         cmd = 'mongodump'
+        if not path:
+            path = 'database'
         output = subprocess.call([cmd, '-o', path])
         print output
     except:
@@ -62,6 +64,8 @@ def recoverdb(client):
     client.drop_database('db')
     cmd = 'mongorestore'
     path = raw_input('Folder to recover from (default = database)? ')
+    if not path:
+        path = 'database'
     subprocess.call([cmd, path])
     client = MongoClient()
     db = client.db
