@@ -46,7 +46,7 @@ def dumpdb(db):
     :return: None
     '''
     try:
-        path = raw_input('Name of folder to dump BSON files to (default = db)? ')
+        path = raw_input('Name of folder to dump BSON files to (default = database)? ')
         cmd = 'mongodump'
         output = subprocess.call([cmd, '-o', path])
         print output
@@ -61,7 +61,7 @@ def recoverdb(client):
     '''
     client.drop_database('db')
     cmd = 'mongorestore'
-    path = raw_input('Folder to recover from (default = db)? ')
+    path = raw_input('Folder to recover from (default = database)? ')
     subprocess.call([cmd, path])
     client = MongoClient()
     db = client.db
