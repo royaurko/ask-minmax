@@ -1,0 +1,176 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage[authoryear]{natbib}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amssymb}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xspace}
+\usepackage{color}
+\usepackage[american]{babel}
+
+\usepackage{algpseudocode}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+
+\usepackage{varwidth}
+
+\usepackage{mathtools}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage[authoryear]{natbib}
+
+\usepackage{verbatim}
+
+\usepackage[pagebackref]{hyperref}
+
+\usepackage[
+letterpaper,
+top=1in,
+bottom=1in,
+left=1in,
+right=1in]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo, tgcursor, tgpagella}
+\usepackage[scale=.9]{tgheros}
+\usepackage{textcomp}
+\hypersetup{
+colorlinks=true,
+urlcolor=blue,
+linkcolor=blue,
+citecolor=OliveGreen,
+pdfauthor = {Ruta Mehta, Sebastian Pokutta, Aurko Roy, Prasad Tetali}
+pdftitle = {Ask Minmax: An expert system for optimization problems}
+}
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+%\numberwithin{theorem}{subsection}
+\newtheorem*{theorem*}{Theorem}
+
+
+
+\newtheorem{proposition}[theorem]{Proposition}
+%\numberwithin{proposition}{subsection} % important bit
+
+\newtheorem{lemma}[theorem]{Lemma}
+%\numberwithin{lemma}{subsection} % important bit
+
+\newtheorem{corollary}[theorem]{Corollary}
+%\numberwithin{corollary}{subsection} % important bit
+
+
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\newcommand\Algphase[2]{%
+\vspace*{-.7\baselineskip}\Statex\hspace*{\dimexpr-\algorithmicindent-2pt\relax}\rule{\textwidth}{0.4pt}%
+\Statex\hspace*{-\algorithmicindent}\textbf{Phase #1: }{#2}%
+\vspace*{-.7\baselineskip}\Statex\hspace*{\dimexpr-\algorithmicindent-2pt\relax}\rule{\textwidth}{0.4pt}%
+}
+
+\newcommand{\todo}[1]{\textcolor{red}{@TODO: #1}}
+\newcommand{\defeq}{\stackrel{\mathrm{def}}=}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+%\numberwithin{definition}{subsection} % important bit
+
+\newtheorem{construction}[theorem]{Construction}
+%\numberwithin{construction}{subsection} % important bit
+
+\newtheorem{example}[theorem]{Example}
+%\numberwithin{example}{subsection} % important bit
+
+\newtheorem{question}{Question}
+%\numberwithin{question}{subsection} % important bit
+
+\newtheorem{openquestion}{Open Question}
+%\numberwithin{openquestion}{subsection} % important bit
+
+%\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{problem}{Problem}
+%\numberwithin{problem}{subsection} % important bit
+
+\newtheorem{protocol}{Protocol}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{property}{Property}
+%\numberwithin{property}{subsection} % important bit
+
+
+\theoremstyle{remark}
+\newtheorem{claim}{Claim}
+%\numberwithin{claim}{subsection} % important bit
+
+\newtheorem*{claim*}{Claim}
+\newtheorem{remark}{Remark}
+%\numberwithin{remark}{subsection} % important bit
+
+\newtheorem*{remark*}{Remark}
+\newtheorem{observation}{Observation}
+%\numberwithin{observation}{subsection} % important bit
+
+\newtheorem*{observation*}{Observation}%opening
+\newcommand{\bad}[2]{\mathcal{B}(#1, #2)}
+\newcommand{\E}[1]{\mathbb{E}[#1]}
+\renewcommand{\root}[1]{\operatorname{root}(#1)}
+\newcommand{\R}[1]{\mathbb{R}^{#1}}
+\newcommand{\sets}[2]{[#1]_{#2}}
+%opening
+\title{AskMinmax: An Expert System For Optimization Problems}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+An expert system is an algorithm that replicates the decision making
+process of a human expert in a specific field. One of the earliest expert systems to be
+studied was expert systems on medical diagnosis \cite{feigenbaum1979themes} and
+\cite{lindsay1993dendral}. The classical approach to expert systems has been to use 
+a Bayesian Belief Networks (BBNs). For example this is the approach followed in 
+\cite{neapolitan2012probabilistic}, \cite{cowell2006probabilistic},
+ \cite{cooper1992bayesian}, \cite{heckerman1998tutorial}, \cite{lauritzen1988local}, \cite{spiegelhalter1993bayesian}.
+ However modeling the causal reasoning of an expert system as a Bayesian Network can be very expensive, especially
+ if the domain of the expert system is complicated. One natural approach would be to try to learn the Bayesian
+ Network from observed data, instead of having a human expert to build it. Unfortunately as shown in \cite{chickering1996learning}
+  this problem turns out to be NP-complete. Nonetheless several authors have attempted to come up with various heuristics
+  to learn a Bayesian Network from data (see for example \cite{margaritis2003learning}, \cite{cheng1997learning}, 
+ \cite{friedman1997sequential}, \cite{heckerman1995learning}, \cite{friedman1999learning}). Some of the popular
+ heuristics for learning a Bayesian Network from observational data are the \emph{Sparse Candidate} algorithm in 
+ \cite{friedman1999learning}, the \emph{Grow-Shrink} algorithm in 
+\cite{margaritis2003learning}, the \emph{Greedy Equivalent Search} algorithm in \cite{chickering2003optimal},
+the \emph{Optimal Reinsertion} algorithm in \cite{moore2003optimal},
+the \emph{Incremental Association} algorithm in  \cite{tsamardinos2003algorithms}
+and \cite{yaramakala2005speculative} and the \emph{Max-Min Hill Climbing} algorithm in \cite{tsamardinos2006max}.
+   
+\begin{enumerate}
+\item Using Bayesian networks to build expert systems \cite{neapolitan2012probabilistic}, \cite{cowell2006probabilistic},
+ \cite{cooper1992bayesian}, \cite{heckerman1998tutorial}, \cite{lauritzen1988local}, \cite{spiegelhalter1993bayesian}
+ 
+ \item Learning a Bayesian network from data \cite{margaritis2003learning}, \cite{cheng1997learning}, 
+ \cite{friedman1997sequential}, \cite{heckerman1995learning}, \cite{friedman1999learning}
+ 
+ \item Learning a Bayesian network is NP-complete \cite{chickering1996learning}
+ 
+ \item A recent survey on methods used to learn Bayesian networks \cite{daly2011learning} 
+ 
+ \item The Max-min hill climbing algorithm for learning Bayesian networks \cite{tsamardinos2006max}
+
+ \item Neural network learning applied to expert systems \cite{gallant1993neural}, \cite{bergerson1991commodity}
+ 
+ \item Representation of words and phrases for deep learning \cite{mikolov2013efficient}, \cite{mikolov2013distributed}
+ 
+ \item Distributed algorithms for ML/Deep Learning \cite{dai2013petuum}
+ 
+ \item A good reference on Stochastic Gradient Descent (SGD) \cite{bottou2012stochastic}.
+\end{enumerate}
+
+\bibliographystyle{alpha}
+\bibliography{bibliography.bib}
+\end{document}
