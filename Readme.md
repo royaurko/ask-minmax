@@ -24,7 +24,7 @@ whether you want to refine the set further by asking more questions.
  - A running [Mongodb](https://www.mongodb.org/) server 
  - [pymongo](https://pypi.python.org/pypi/pymongo/)
  - [nltk](http://www.nltk.org/)
- - [jenks](https://github.com/rtyley/bfg-repo-cleaner)
+ - [jenks](https://github.com/perrygeo/jenks)
  - [scikit-learn](https://pypi.python.org/pypi/scikit-learn/0.16.1)
  - [gensim](https://pypi.python.org/pypi/gensim)
 
