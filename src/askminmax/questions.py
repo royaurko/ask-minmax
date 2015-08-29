@@ -78,14 +78,18 @@ def maxposterior(db):
         m /= total
     return m
 
-def adjustposteriors(db):
+def adjustposteriors(db, most_likely=set()):
     ''' Update the log likelihood and posterior of the questions
     :param db: The Mongodb database
+    :param most_likely: The set of most_likely problems (hash, name)
     :return: None, update db in place
     '''
     cursor = db.questions.find()
+    if most_likely:
+        most_likely_hash = set([item[0] for item in most_likely])
     for q in cursor:
-        if q['posterior'] > 0:
+        if q['posterior'] > 0 and not most_likely_hash:
+            # Find a question that separates total positive problems from total negative problems
             table = 'problems'
             property = 'posterior'
             q_posproblem_mass = map(lambda x: helper.mass(db, table, x, property), q['posproblems'])
@@ -99,6 +103,27 @@ def adjustposteriors(db):
                 q['posterior'] *= math.exp(-q['loglikelihood'])
             else:
                 # It does not appear as a separating question in any problem
+                q['posterior'] = 0
+            db.questions.update({'_id': q['_id']}, q)
+        elif q['posterior'] > 0:
+            # Update the posteriors of the questions taking into account the most likely problems
+            q_posproblem_total_mass = 0
+            q_negproblem_total_mass = 0
+            for pos_hash in q['posproblems']:
+                if pos_hash in most_likely_hash:
+                    item = db.problems.find_one({'hash': pos_hash})
+                    q_posproblem_total_mass += item['posterior']
+            for neg_hash in q['negproblems']:
+                if neg_hash in most_likely_hash:
+                    item = db.problems.find_one({'hash': neg_hash})
+                    q_negproblem_total_mass += item['posterior']
+            if q_posproblem_total_mass and q_negproblem_total_mass:
+                pos = float(q_posproblem_total_mass)
+                neg = float(q_negproblem_total_mass)
+                q['loglikelihood'] = abs(math.log(pos) - math.log(neg))
+                q['posterior'] *= math.exp(-q['loglikelihood'])
+            else:
+                # It does not appear as a separating question
                 q['posterior'] = 0
             db.questions.update({'_id': q['_id']}, q)
 

@@ -24,13 +24,15 @@ def getcorrectproblem(db):
         correct_hash = helper.gethashval(correct)
     return (correct, correct_hash)
 
-def separatingquestion(db, problem):
+
+def separatingquestion(db, problem, correct, correct_hash):
     ''' Ask a separating question between wrong problem and correct problem
     :param db: The Mongodb database
     :param problem: The problem dictionary for which we want the separating question
+    :param correct: The name of the correct problem
+    :param correct_hash: The hash value of the correct problem
     :return: None
     '''
-    correct, correct_hash = getcorrectproblem(db)
     question_idx_to_id = questions.printlist(db)
     while True:
         try:
@@ -56,8 +58,7 @@ def separatingquestion(db, problem):
         # For every question set its list correctly and increment its prior and set posterior equal to prior
         setlists(db, qhash, problem, correct, correct_hash, False)
         questions.increment(db, qhash)
-    # Increment the prior for the correct problem and set its posterior equal to prior
-    problems.increment(db, correct_hash)
+
 
 def parseproblemlist(db):
     ''' Parse list of problems in the database

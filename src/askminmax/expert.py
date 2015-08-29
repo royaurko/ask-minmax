@@ -41,6 +41,13 @@ class Expert(object):
         self.db = db
 
 
+    def train(self):
+        ''' Just call the train subroutine from training to learn separating questions
+        :return: None, modify db in place
+        '''
+        training.train(self.db)
+
+
     def delete(self):
         ''' Allows you to delete a problem or a question from the database
         :return: None, modify database in place
@@ -101,27 +108,30 @@ class Expert(object):
             db.questions.update({'_id': question['_id']}, question)
 
 
-    def adjustposteriors(self, question, response, confidence):
-        ''' Adjust posteriors of problems and questions
+    def adjustquestionposteriors(self, question):
+        ''' Adjust posteriors of questions based on most_likely set
         :param question: Dictionary of question whose posterior to adjust
-        :param response: 0 or 1, asnwer to this question
-        :param confidence: A number between 0 and 1 showing confidence in the user's answer
-        :return: None, update db in place
+        :return: Name of most_likely set of problems
         '''
         db = self.db
-        # Adjust the posteriors of the problems based on response and confidence level
-        problems.adjustposteriors(db, question, response, confidence)
+        # Get the most_likely set of problems by calling on fit posteriors
+        try:
+            gvf = float(raw_input('Goodness of fit (default = 0.8) '))
+        except ValueError:
+            gvf = 0.8
+        most_likely = self.fitposteriors(gvf)
         # Since the mass on problems has changed, posteriors of questions need to be updated
-        questions.adjustposteriors(db)
+        questions.adjustposteriors(db, most_likely)
         # Set posterior of this question to 0, essentially it should not be asked again
         question['posterior'] = 0
         db.questions.update({'_id': question['_id']}, question)
+        # Return the most likely set of problems (hash, name)
+        return most_likely
 
 
-    def askquestions(self, n):
-        ''' Predict by asking n questions
-        :param n: The number of questions to ask
-        :return: None, update db in place
+    def askquestion(self):
+        ''' Ask a question and update posteriors by calling adjust posteriors
+        :return: Most_likely set of problem names
         '''
         db = self.db
         count = db.questions.find().count()
@@ -129,28 +139,35 @@ class Expert(object):
             print 'No questions in database!'
             training.train(db)
             count = db.questions.find().count()
-        for i in xrange(n):
-            cursor = db.questions.find()
-            m = 0
-            for item in cursor:
-                if item['posterior'] > 0:
-                    m += 1
-            if not m:
-                return
+        # Check to see if there is a question with non-zero posterior
+        cursor = db.questions.find()
+        m = 0
+        for item in cursor:
+            if item['posterior'] > 0:
+                m += 1
+                break
+        if not m:
+            return
+        question = questions.sample(db, 'posterior')
+        while question is None:
+            training.train(db)
             question = questions.sample(db, 'posterior')
-            while question is None:
-                training.train(db)
-                question = questions.sample(db, 'posterior')
-            while True:
-                confidence = 1.0
+        while True:
+            try:
+                response = int(raw_input(question['name']))
                 try:
-                    response = int(raw_input(question['name']))
-                    confidence = float(raw_input('Confidence in your answer [0, 1]: '))
-                    break
+                    confidence = float(raw_input('Confidence in your answer (default 0.8) : '))
                 except ValueError:
-                    helper.erroronezero()
-            self.adjustposteriors(question, response, confidence)
-            self.printtable()
+                    confidence = 0.8
+                break
+            except ValueError:
+                helper.erroronezero()
+        # Adjust the posteriors of the problems
+        problems.adjustposteriors(db, question, response, confidence)
+        # Adjust the posteriors of the questions
+        most_likely = self.adjustquestionposteriors(question)
+        self.printtable()
+        return most_likely
 
 
     def predictsingle(self):
@@ -204,6 +221,32 @@ class Expert(object):
                     sepquestions.separatingquestion(db, problem)
 
 
+    def getfeedback(self, most_likely):
+        ''' Query the user if the correct problem was in this set
+        :param most_likely:
+        :return:
+        '''
+        while True:
+            try:
+                correct = int(raw_input('Are you happy with the result? (0/1) '))
+                break
+            except ValueError:
+                helper.erroronezero()
+        most_likely_hash = [item[0] for item in most_likely]
+        if correct:
+            # Correct answer, increase count of each problem in this set
+            map(lambda x: problems.increment(self.db, x), most_likely_hash)
+        else:
+            # Incorrect problem
+            correct, correct_hash = sepquestions.getcorrectproblem(self.db)
+            for hashval in most_likely_hash:
+                if hashval != correct_hash:
+                    problem = self.db.problems.find_one({'hash': hashval})
+                    sepquestions.separatingquestion(self.db, problem, correct, correct_hash)
+            # Increment the prior for the correct problem and set its posterior equal to prior
+            problems.increment(self.db, correct_hash)
+
+
     def querybackup(self):
         ''' Query whether to backup the database
         :return:
@@ -227,57 +270,36 @@ class Expert(object):
         m = questions.maxposterior(db)
         response = 1
         while m > 0 and response:
-            self.askquestions(1)
+            most_likely = self.askquestion()
+            most_likely_names = [item[1] for item in most_likely]
             m = questions.maxposterior(db)
-            while True:
-                try:
-                    pflag = int(raw_input('Try to fit problem posteriors using Jenks natural break? '))
-                    break
-                except ValueError:
-                    helper.erroronezero()
-            if pflag:
-                gvf = float(raw_input('Goodness of fit (default = 0.8'))
-                if not gvf:
-                    problems.printset(self.fitposteriors())
-                else:
-                    problems.printset(self.fitposteriors(gvf))
-            while True:
-                try:
-                    response = int(raw_input('Ask more questions? (0/1) '))
-                    break
-                except ValueError:
-                    helper.erroronezero()
-        while True:
-            try:
-                flag = int(raw_input('Predict single problem? (0/1) '))
-                break
-            except ValueError:
-                helper.erroronezero()
-        if flag:
-            self.predictsingle()
-        else:
-            while True:
-                try:
-                    n = int(raw_input('Maximum size of set? '))
-                    break
-                except ValueError:
-                    helper.errornumber()
-            self.predictset(n)
+            print 'Most likely set of problems:'
+            problems.printset(most_likely_names)
+            if len(most_likely_names) > 1:
+                while True:
+                    try:
+                        response = int(raw_input('Refine set further? (0/1) '))
+                        break
+                    except ValueError:
+                        helper.erroronezero()
+        self.getfeedback(most_likely)
+        star = '*'*70
+        print star
 
 
     def fitposteriors(self, desired_gvf=0.8):
         ''' Try to cluster the posteriors using Jenks Natural Breaks algorithm
-        :return:
+        :return: The hash value of the problems and their names as a tuple
         '''
         gvf = 0.0
         nclasses = 0
         cursor = self.db.problems.find()
         posteriors = list()
         i = 0
-        idx_to_name = dict()
+        idx_to_hash_name = dict()
         for item in cursor:
             posteriors.append(float(item['posterior']))
-            idx_to_name[i] = item['name']
+            idx_to_hash_name[i] = (item['hash'], item['name'])
             i += 1
         array = np.array(posteriors)
         while gvf < desired_gvf:
@@ -290,7 +312,7 @@ class Expert(object):
             d = [(abs(posteriors[i] - centers[k]), k) for k in xrange(len(centers))]
             d.sort()
             if d[0][1] == len(centers) - 1:
-                most_likely.add(idx_to_name[i])
+                most_likely.add(idx_to_hash_name[i])
         return most_likely
 
 
