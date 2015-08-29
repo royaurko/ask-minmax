@@ -6,6 +6,9 @@ import sepquestions
 import training
 import arxiv
 import cluster
+import natural_break
+import numpy as np
+from jenks import jenks
 
 
 class Expert(object):
@@ -147,6 +150,7 @@ class Expert(object):
                 except ValueError:
                     helper.erroronezero()
             self.adjustposteriors(question, response, confidence)
+            self.printtable()
 
 
     def predictsingle(self):
@@ -227,6 +231,18 @@ class Expert(object):
             m = questions.maxposterior(db)
             while True:
                 try:
+                    pflag = int(raw_input('Try to fit problem posteriors using Jenks natural break? '))
+                    break
+                except ValueError:
+                    helper.erroronezero()
+            if pflag:
+                gvf = float(raw_input('Goodness of fit (default = 0.8'))
+                if not gvf:
+                    problems.printset(self.fitposteriors())
+                else:
+                    problems.printset(self.fitposteriors(gvf))
+            while True:
+                try:
                     response = int(raw_input('Ask more questions? (0/1) '))
                     break
                 except ValueError:
@@ -247,6 +263,35 @@ class Expert(object):
                 except ValueError:
                     helper.errornumber()
             self.predictset(n)
+
+
+    def fitposteriors(self, desired_gvf=0.8):
+        ''' Try to cluster the posteriors using Jenks Natural Breaks algorithm
+        :return:
+        '''
+        gvf = 0.0
+        nclasses = 0
+        cursor = self.db.problems.find()
+        posteriors = list()
+        i = 0
+        idx_to_name = dict()
+        for item in cursor:
+            posteriors.append(float(item['posterior']))
+            idx_to_name[i] = item['name']
+            i += 1
+        array = np.array(posteriors)
+        while gvf < desired_gvf:
+            # Keep increasing nclasses till Goodness of fit is atleast 0.8 say
+            gvf = natural_break.gvf(array, nclasses)
+            nclasses += 1
+        centers = jenks(array, nclasses)
+        most_likely = set()
+        for i in xrange(len(posteriors)):
+            d = [(abs(posteriors[i] - centers[k]), k) for k in xrange(len(centers))]
+            d.sort()
+            if d[0][1] == len(centers) - 1:
+                most_likely.add(idx_to_name[i])
+        return most_likely
 
 
     def download(self, keywords):

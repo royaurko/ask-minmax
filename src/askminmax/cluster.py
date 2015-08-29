@@ -1,7 +1,8 @@
 import gensim
 from nltk.data import load
 from nltk.corpus import stopwords
-from nltk.tokenize.treebank import TreebankWordTokenizer
+from nltk.tokenize import word_tokenize
+from nltk.tokenize import sent_tokenize
 import time
 import sklearn
 import re
@@ -14,25 +15,6 @@ class MySentences(object):
         :return: None, create MySentence instance
         '''
         self.db = db
-
-
-    def sent_tokenize(self, text):
-        ''' Return sentence tokenized copy of text
-        :param text: The text to tokenize
-        :param language: default is english
-        :return: Tokens
-        '''
-        tokenizer = load('tokenizers/punkt/{0}.pickle'.format('english'))
-        return tokenizer.tokenize(text)
-
-
-    def word_tokenize(self, text):
-        ''' Given sentence as a text return a token of words
-        :param text: A sentence
-        :return: Token of words
-        '''
-        return [token for sent in self.sent_tokenize(text)
-            for token in TreebankWordTokenizer().tokenize(sent)]
 
 
     def smallwords(self, word_tokens):
@@ -68,20 +50,23 @@ class MySentences(object):
             text = item['text']
             # Convert to utf-8
             text = text.encode('utf-8')
-            tokens = self.word_tokenize(text)
-            cleaned_tokens = []
+            # tokens = self.word_tokenize(text)
+            tokens = sent_tokenize(text)
             for sent in tokens:
                 words = []
+                word_tokens = word_tokenize(sent)
                 # Remove non-alpha characters from the words
-                for w in sent:
-                    words.append(self.scrunch(w))
+                for w in word_tokens:
+                    scrunched = self.scrunch(w)
+                    if scrunched:
+                        words.append(scrunched)
                 # Remove short words, convert to lower case
                 words = self.smallwords(words)
                 # Remove stop words
                 words = self.removestop(words)
                 # Yield the words to Word2Vec
-                yield words
-
+                if words:
+                    yield words
 
 
 def w2vClusters(model):
@@ -112,7 +97,9 @@ def clusterTests(db):
     :return: None, call k-means from w2vClusters(corpus)
     '''
     sentences = MySentences(db)
-    # For now le the parameters be default
+    # For now let the parameters be default
     print("Training word2vec model...")
-    model = gensim.models.Word2Vec(sentences)
+    model = gensim.models.Word2Vec(sentences, min_count=5)
+    # Save the model for future use
+    model.save('gensim_model')
     w2vClusters(model)

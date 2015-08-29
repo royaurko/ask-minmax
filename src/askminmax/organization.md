@@ -116,6 +116,15 @@ functions are written as `[return variable] function([parameters])`.
     - `None download(db, keywords)`: List of keywords, downloads papers and saves it in `db.papers`
     
     
+## [natural_breaks.py](natural_breaks.py)
+
+ * Depends on `jenks`, `numpy`
+ * Functions:
+    - `gvf gvf(array, classes`: Return the the goodness of fit value of Jenks run on array with `classes` number of 
+    classes.
+    - `num classify(value, breaks)`: Helper function for `gvf` 
+    
+    
 ## [clusters.py](cluster.py)
 
 * Depends on `gensim`
