@@ -273,12 +273,12 @@ class Expert(object):
             most_likely = self.askquestion()
             most_likely_names = [item[1] for item in most_likely]
             m = questions.maxposterior(db)
-            print 'Most likely set of problems:'
+            print 'Popular problems that match your criteria:'
             problems.printset(most_likely_names)
             if len(most_likely_names) > 1:
                 while True:
                     try:
-                        response = int(raw_input('Refine set further? (0/1) '))
+                        response = int(raw_input('Ask more questions? (0/1) '))
                         break
                     except ValueError:
                         helper.erroronezero()

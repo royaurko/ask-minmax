@@ -63,7 +63,7 @@ functions are written as `[return variable] function([parameters])`.
 * Functions: 
     - `(correct, correct_hash) getcorrectproblem(db)`: Query the correct problem from the user and return the
      name and the hash value
-    - `None separatingquestion(db, problem)`: Ask a separating question between wrong problem and correct problem
+    - `None separatingquestion(db, problem, correct, correct_hash)`: Ask a separating question between wrong problem and correct problem
     - `(correct_problem['name'], correct_problem['hash']) parseproblemlist(db)`: Helper function that takes user's
     input of correct problem into account and returns the name and database id of the problem
     - `[neg_qhash_val] parsenegsingle(db, problem, correct_hash)`: Parse a single negative separating question
