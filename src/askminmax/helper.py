@@ -2,15 +2,32 @@ import hashlib
 import re
 
 
+def errorspaces():
+    ''' Error when user does not enter space separated question numbers
+    :return: None
+    '''
+    print 'Please separate question numbers by spaces!'
+
+
 def erroronezero():
-    ''' error message '''
+    ''' Error when user enters something other than 0 or 1
+    :return: None
+    '''
     print 'Please enter 0 or 1!'
 
 
 def errornumber():
-    ''' error message '''
+    ''' Error when user does not enter a number
+    :return:None
+    '''
     print 'Please enter a valid number!'
 
+
+def errorkey():
+    ''' Error if user does not enter correct number
+    :return: None
+    '''
+    print 'Please enter a correct number from the list!'
 
 def strip(s):
     ''' Strip spaces from left and right

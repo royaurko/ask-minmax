@@ -108,30 +108,26 @@ class Expert(object):
             db.questions.update({'_id': question['_id']}, question)
 
 
-    def adjustquestionposteriors(self, question):
-        ''' Adjust posteriors of questions based on most_likely set
+    def adjustposteriors(self, question, response, confidence):
+        ''' Adjust posteriors of problems and questions
         :param question: Dictionary of question whose posterior to adjust
-        :return: Name of most_likely set of problems
+        :param response: The response of user
+        :param confidence: The confidence level of the user
+        :return: None, update db in place
         '''
         db = self.db
-        # Get the most_likely set of problems by calling on fit posteriors
-        try:
-            gvf = float(raw_input('Goodness of fit (default = 0.8) '))
-        except ValueError:
-            gvf = 0.8
-        most_likely = self.fitposteriors(gvf)
-        # Since the mass on problems has changed, posteriors of questions need to be updated
-        questions.adjustposteriors(db, most_likely)
+        # Adjust the posteriors of the problems
+        problems.adjustposteriors(db, question, response, confidence)
+        # Update the posteriors of questions
+        questions.adjustposteriors(db)
         # Set posterior of this question to 0, essentially it should not be asked again
         question['posterior'] = 0
         db.questions.update({'_id': question['_id']}, question)
-        # Return the most likely set of problems (hash, name)
-        return most_likely
 
 
     def askquestion(self):
         ''' Ask a question and update posteriors by calling adjust posteriors
-        :return: Most_likely set of problem names
+        :return: None, update database in place
         '''
         db = self.db
         count = db.questions.find().count()
@@ -162,12 +158,9 @@ class Expert(object):
                 break
             except ValueError:
                 helper.erroronezero()
-        # Adjust the posteriors of the problems
-        problems.adjustposteriors(db, question, response, confidence)
-        # Adjust the posteriors of the questions
-        most_likely = self.adjustquestionposteriors(question)
+        # Adjust the posteriors of the problems and questions
+        self.adjustposteriors(question, response, confidence)
         self.printtable()
-        return most_likely
 
 
     def predictsingle(self):
@@ -223,7 +216,7 @@ class Expert(object):
 
     def getfeedback(self, most_likely):
         ''' Query the user if the correct problem was in this set
-        :param most_likely:
+        :param most_likely: The most_likely set of problems
         :return:
         '''
         while True:
@@ -269,20 +262,26 @@ class Expert(object):
         db = self.db
         m = questions.maxposterior(db)
         response = 1
+        most_likely = set()
         while m > 0 and response:
-            most_likely = self.askquestion()
+            self.askquestion()
+            try:
+                gvf = float(raw_input('Goodness of fit (default = 0.8) '))
+            except ValueError:
+                gvf = 0.8
+            most_likely = self.fitposteriors(gvf)
             most_likely_names = [item[1] for item in most_likely]
-            m = questions.maxposterior(db)
             print 'Popular problems that match your criteria:'
             problems.printset(most_likely_names)
-            if len(most_likely_names) > 1:
-                while True:
-                    try:
-                        response = int(raw_input('Ask more questions? (0/1) '))
-                        break
-                    except ValueError:
-                        helper.erroronezero()
-        self.getfeedback(most_likely)
+            m = questions.maxposterior(db)
+            while True:
+                try:
+                    response = int(raw_input('Ask more questions? (0/1) '))
+                    break
+                except ValueError:
+                    helper.erroronezero()
+        if most_likely:
+            self.getfeedback(most_likely)
         star = '*'*70
         print star
 
@@ -314,6 +313,153 @@ class Expert(object):
             if d[0][1] == len(centers) - 1:
                 most_likely.add(idx_to_hash_name[i])
         return most_likely
+
+
+    def addproblem(self):
+        ''' Add a problem to the database and query for YES questions and NO questions
+        :return: None, update database in place
+        '''
+        pname = helper.strip(raw_input('Enter a problem: '))
+        if not pname:
+            return
+        phash_val = helper.gethashval(pname)
+        problem = self.db.problems.find_one({'hash': phash_val})
+        # Print question list, ask what questions it has yes for an answer and no for an answer
+        question_idx_to_id = questions.printlist(self.db)
+        while True:
+            try:
+                yes_list = raw_input('Enter numbers of questions to which it answers YES: ')
+                yes_list = map(int, yes_list.strip().split())
+                yes_qid_list = [question_idx_to_id[x] for x in yes_list]
+                break
+            except ValueError:
+                helper.errorspaces()
+            except KeyError:
+                helper.errorkey()
+        pos_questions = list()
+        neg_questions = list()
+        for qid in yes_qid_list:
+            question = self.db.questions.find_one({'_id': qid})
+            pos_problems = question['posproblems']
+            pos_problems.append(phash_val)
+            neg_problems = question['negproblems']
+            neg_problems = [x for x in neg_problems if x != phash_val]
+            self.db.questions.update({'_id': question['_id']}, {
+                '$set': {'posproblems': pos_problems, 'negproblems': neg_problems}
+            })
+            pos_questions.append(question['hash'])
+        while True:
+            try:
+                no_list = raw_input('Enter numbers of questions to which it answers NO: ')
+                no_list = map(int, no_list.strip().split())
+                no_qid_list = [question_idx_to_id[x] for x in no_list]
+                break
+            except ValueError:
+                helper.errorspaces()
+            except KeyError:
+                helper.errorkey()
+        for qid in no_qid_list:
+            question = self.db.questions.find_one({'_id': qid})
+            neg_problems = question['negproblems']
+            neg_problems.append(phash_val)
+            pos_problems = question['posproblems']
+            pos_problems = [x for x in pos_problems if x != phash_val]
+            self.db.questions.update({'_id': question['_id']}, {
+                '$set': {'posproblems': pos_problems, 'negproblems': neg_problems}
+            })
+            neg_questions.append(question['hash'])
+        # Finally update the problem or insert it
+        if problem is None:
+            # New problem
+            prior = 1
+            posterior = 1
+            d = {'name': pname, 'hash': phash_val, 'prior': prior,
+             'posterior': posterior, 'posquestions': pos_questions,
+             'negquestions': neg_questions}
+            self.db.problems.insert_one(d)
+        else:
+            # Problem already existed, append pos_questions and neg_questions to it
+            plist = problem['posquestions']
+            nlist = problem['negquestions']
+            plist += pos_questions
+            nlist += neg_questions
+            self.db.problems.update({'_id': problem['_id']}, {
+                '$set':{'posquestions': plist, 'negquestions': nlist}
+            })
+
+
+    def addquestion(self):
+        ''' Add a question to the database and query for problems with YES answers and NO answers
+        :return: None, update database in place
+        '''
+        qname = helper.strip(raw_input('Enter a question: '))
+        if not qname:
+            return
+        qhash_val = helper.gethashval(qname)
+        question = self.db.questions.find_one({'hash': qhash_val})
+        # Print problem list, ask what problems it has yes answers and no answers for
+        problem_idx_to_id = problems.printlist(self.db)
+        while True:
+            try:
+                yes_list = raw_input('Enter numbers of problems that have a YES answer to this question: ')
+                yes_list = map(int, yes_list.strip().split())
+                yes_pid_list = [problem_idx_to_id[x] for x in yes_list]
+                break
+            except ValueError:
+                helper.errorspaces()
+            except KeyError:
+                helper.errorkey()
+        pos_problems = list()
+        neg_problems = list()
+        for pid in yes_pid_list:
+            problem = self.db.problems.find_one({'_id': pid})
+            pos_questions = problem['posquestions']
+            pos_questions.append(qhash_val)
+            neg_questions = problem['negquestions']
+            neg_questions = [x for x in neg_questions if x != qhash_val]
+            self.db.problems.update({'_id': problem['_id']}, {
+                '$set': {'posquestions': pos_questions, 'negquestions': neg_questions}
+            })
+            pos_problems.append(problem['hash'])
+        while True:
+            try:
+                no_list = raw_input('Enter numbers of problems that have a NO answer to this question: ')
+                no_list = map(int, no_list.strip().split())
+                no_pid_list = [problem_idx_to_id[x] for x in no_list]
+                break
+            except ValueError:
+                helper.errorspaces()
+            except KeyError:
+                helper.errorkey()
+        for pid in no_pid_list:
+            problem = self.db.problems.find_one({'_id': pid})
+            neg_questions = problem['negquestions']
+            neg_questions.append(qhash_val)
+            pos_questions = problem['posquestions']
+            pos_questions = [x for x in pos_questions if x != qhash_val]
+            self.db.problems.update({'_id': problem['_id']}, {
+                '$set': {'posquestions': pos_questions, 'negquestions': neg_questions}
+            })
+            neg_problems.append(problem['hash'])
+        # Finally update the question or insert it
+        if question is None:
+            # New question
+            prior = 1.0
+            posterior = 1.0
+            loglikelihood = 0.0
+            d = {'name': qname, 'hash': qhash_val, 'prior': prior,
+             'posterior': posterior, 'posproblems': pos_problems,
+             'negproblems': neg_problems, 'loglikelihood': loglikelihood}
+            self.db.questions.insert_one(d)
+        else:
+            # Question already existed, append pos_problems and neg_problems to it
+            plist = question['posproblems']
+            nlist = question['negproblems']
+            plist = pos_problems
+            nlist = neg_problems
+            self.db.questions.update({'_id': question['_id']}, {
+                '$set':{'posproblems': plist, 'negproblems': nlist}
+            })
 
 
     def download(self, keywords):

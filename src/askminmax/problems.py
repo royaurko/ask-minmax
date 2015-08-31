@@ -2,9 +2,28 @@ import helper
 import random
 
 
+def getsepquestions(problem1, problem2):
+    ''' Print the separating questions already in our database between problem1 and problem2
+    :param db: The Mongodb database
+    :param problem1: The dictionary of problem #1
+    :param problem2: The dictionary of problem #2
+    :param question_idx_to_id: The dictionary mapping question indexes to Mongodb id's
+    :return: Set of separating questions as a tuple
+    '''
+    # First get questions with YES answer for hash1 and NO answer for hash2
+    hash1_posquestions = set(problem1['posquestions'])
+    hash1_negquestions = set(problem1['negquestions'])
+    hash2_posquestions = set(problem2['posquestions'])
+    hash2_negquestions = set(problem2['negquestions'])
+    h1_pos_h2_neg = hash1_posquestions.intersection(hash2_negquestions)
+    h2_pos_h1_neg = hash1_negquestions.intersection(hash2_posquestions)
+    return h1_pos_h2_neg, h2_pos_h1_neg
+
+
 def printlist(db):
     ''' Print the list of problems in the database
-    :param db: Mongodb database
+    :param db: Mongodb daif question is not None:
+        tabase
     :return: A dictionary mapping the index in the printed list to the id of the problems in the db
     '''
     cursor = db.problems.find()

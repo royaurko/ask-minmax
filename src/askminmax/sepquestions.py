@@ -25,6 +25,29 @@ def getcorrectproblem(db):
     return (correct, correct_hash)
 
 
+def displayseparating(db, correct, wrong, pos_q, neg_q, question_idx_to_id):
+    ''' Display the list of separating questions already in the DB
+    :param correct_name: The dictionary of the correct problem
+    :param wrong_name: The dictionary of the wrong problem
+    :param pos_q: The set of questions with YES answer for correct problem and NO for wrong
+    :param neg_q: Opposite
+    :param question_idx_to_id: Dictionary mapping indexes to mongodb ids
+    :return: None
+    '''
+    question_id_to_idx = {v: k for k, v in question_idx_to_id.items()}
+    list1, list2  = list(), list()
+    for qhash in pos_q:
+        question = db.questions.find_one({'hash': qhash})
+        list1.append(question_id_to_idx[question['_id']])
+    for qhash in neg_q:
+        question = db.questions.find_one({'hash': qhash})
+        list2.append(question_id_to_idx[question['_id']])
+    print 'YES for ' + correct['name'] + ' NO for ' + wrong['name'] + ': '
+    print list1
+    print 'NO for ' + correct['name'] + ' YES for ' + wrong['name'] + ': '
+    print list2
+
+
 def separatingquestion(db, problem, correct, correct_hash):
     ''' Ask a separating question between wrong problem and correct problem
     :param db: The Mongodb database
@@ -34,6 +57,11 @@ def separatingquestion(db, problem, correct, correct_hash):
     :return: None
     '''
     question_idx_to_id = questions.printlist(db)
+    # Check if correct problem is already in our list
+    correct_problem = db.problems.find_one({'hash': correct_hash})
+    if correct_problem is not None:
+        pos_q, neg_q = problems.getsepquestions(correct_problem, problem)
+        displayseparating(db, correct_problem, problem, pos_q, neg_q, question_idx_to_id)
     while True:
         try:
             s = 'Separating question for ' + problem['name']
@@ -137,14 +165,22 @@ def parseneglist(db, question_idx_to_id):
     :param question_idx_to_id: The dictionary that maps question numbers to Mongodb ids
     :return: List of hash values of negative questions
     '''
-    neg_list = raw_input('Enter negative question numbers separated by spaces: ')
-    neg_list = map(int, neg_list.strip().split())
-    neg_qid_list = [question_idx_to_id[x] for x in neg_list]
+    while True:
+        try:
+            neg_list = raw_input('Enter negative question numbers separated by spaces: ')
+            neg_list = map(int, neg_list.strip().split())
+            neg_qid_list = [question_idx_to_id[x] for x in neg_list]
+            break
+        except ValueError:
+            helper.errorspaces()
+        except KeyError:
+            helper.errorkey()
     neg_qhash_list = list()
     for item in neg_qid_list:
         hashval = db.questions.find_one({'_id': item})['hash']
         neg_qhash_list.append(hashval)
     return neg_qhash_list
+
 
 def parseposlist(db, question_idx_to_id):
     '''  Get list of hash values of separating questions already in the list
@@ -152,14 +188,22 @@ def parseposlist(db, question_idx_to_id):
     :param question_idx_to_id: The dictionary that maps question numbers to Mongodb ids
     :return: List of hash values of positive questions
     '''
-    pos_list = raw_input('Enter positive question numbers separated by spaces: ')
-    pos_list = map(int, pos_list.strip().split())
-    pos_qid_list = [question_idx_to_id[x] for x in pos_list]
+    while True:
+        try:
+            pos_list = raw_input('Enter positive question numbers separated by spaces: ')
+            pos_list = map(int, pos_list.strip().split())
+            pos_qid_list = [question_idx_to_id[x] for x in pos_list]
+            break
+        except ValueError:
+            helper.errorspaces()
+        except KeyError:
+            helper.errorkey()
     pos_qhash_list = list()
     for item in pos_qid_list:
         hashval = db.questions.find_one({'_id': item})['hash']
         pos_qhash_list.append(hashval)
     return pos_qhash_list
+
 
 def setlists(db, qhash, problem, correct, correct_hash, flag):
     ''' Modify the positive and negative lists of the correct and wrong problem
