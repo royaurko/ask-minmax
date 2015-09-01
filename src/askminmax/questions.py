@@ -13,7 +13,7 @@ def printlist(db):
     print eq
     i = 1
     question_idx_to_id = dict()
-    template = "{Index:5} | {Name:80} | {Prior:5} | {Posterior:5}"
+    template = "{Index:5} | {Name:70} | {Prior:15} | {Posterior:15}"
     print template.format(Index="Index", Name="Question Name", Prior="Prior", Posterior="Posterior")
     print eq
     for item in cursor:
@@ -24,21 +24,25 @@ def printlist(db):
     print eq
     return question_idx_to_id
 
-def increment(db, question_hash):
-    ''' Increment the prior for this problem and set posterior equal to prior
+
+def increment(db, question_hash, n=1):
+    ''' Increment the prior for this question and set posterior equal to prior
     :param db: The Mongodb database
     :param question: The hash value for the question whose prior to increment
+    :param n: Increment by n
     :return: None, update the db by incrementing prior and set posterior = prior
     '''
     question = db.questions.find_one({'hash': question_hash})
-    question['prior'] += 1
+    question['prior'] += n
     question['posterior'] = question['prior']
     db.questions.update({'_id': question['_id']}, question)
 
-def sample(db, p):
+
+def sample(db, p, most_likely_hash=None):
     ''' Sample a question from the database according to its p-value
     :param db: The mongodb database
     :param p: A string that is either 'prior' or 'posterior'
+    :param most_likely_hash: A set of hash values of the questions to sample from
     :return: Dictionary of sampled question
     '''
     cursor = db.questions.find()
@@ -49,16 +53,31 @@ def sample(db, p):
         print 'No questions with non-zero ' + p + ' !'
         return
     weight = 0.0
-    for item in cursor:
-        weight += item[p]
-    r = random.uniform(0, weight)
-    s = 0.0
-    cursor = db.questions.find()
-    for item in cursor:
-        s += item[p]
-        if r < s:
-            return item
-    return item
+    if most_likely_hash is not None:
+        for item in cursor:
+            if item['hash'] in most_likely_hash:
+                weight += item[p]
+        r = random.uniform(0, weight)
+        s = 0.0
+        cursor = db.questions.find()
+        for item in cursor:
+            if item['hash'] in most_likely_hash:
+                s += item[p]
+                if r < s:
+                    return item
+        return item
+    else:
+        for item in cursor:
+            weight += item[p]
+        r = random.uniform(0, weight)
+        s = 0.0
+        cursor = db.questions.find()
+        for item in cursor:
+            s += item[p]
+            if r < s:
+                return item
+        return item
+
 
 def maxposterior(db):
     ''' Return the value of the maximum posterior among questions
@@ -75,6 +94,45 @@ def maxposterior(db):
         m /= total
     return m
 
+
+def resetpriors(db):
+    ''' Recompute the priors of the questions in the database
+    :param db: Mongodb database
+    :return: None, update db in place
+    '''
+    print 'here'
+    cursor = db.questions.find()
+    for q in cursor:
+        table, property = 'problems', 'posterior'
+        pos, neg = 0.0, 0.0
+        print '\n'
+        print 'question: ' + q['name']
+        for phash in q['posproblems']:
+            problem = db.problems.find_one({'hash': phash})
+            print 'positive problem = ' + problem['name'] + ' posterior = ' + str(problem['posterior'])
+        for phash in q['negproblems']:
+            problem = db.problems.find_one({'hash': phash})
+            print 'negative problem = ' + problem['name'] + ' posterior = ' + str(problem['posterior'])
+        if q['posproblems']:
+            q_posproblem_mass = map(lambda x: helper.mass(db, table, x, property), q['posproblems'])
+            pos = float(reduce(lambda x, y: x + y, q_posproblem_mass))
+        if q['negproblems']:
+            q_negproblem_mass = map(lambda x: helper.mass(db, table, x, property), q['negproblems'])
+            neg = float(reduce(lambda x, y: x + y, q_negproblem_mass))
+        if pos and neg:
+            # Weight by mass of the maximum
+            logmax = max(pos, neg)
+            q['loglikelihood'] = abs(math.log(pos) - math.log(neg))
+            q['prior'] = logmax * math.exp(-q['loglikelihood'])
+            q['posterior'] = q['prior']
+            print 'logmax = ' + str(logmax) + ' balanced = ' + str(math.exp(-q['loglikelihood']))
+            print 'prior = ' + str(q['prior'])
+        else:
+            q['prior'] = 0.0
+            q['posterior'] = q['prior']
+        db.questions.update({'_id': q['_id']}, q)
+
+
 def adjustposteriors(db):
     ''' Update the log likelihood and posterior of the questions
     :param db: The Mongodb database
@@ -82,27 +140,25 @@ def adjustposteriors(db):
     '''
     cursor = db.questions.find()
     for q in cursor:
-        if q['posterior'] > 0:
-            # Find a question that separates total positive problems from total negative problems
-            table = 'problems'
-            property = 'posterior'
-            q_posproblem_total_mass, q_negproblem_total_mass = 0, 0
-            if q['posproblems']:
-                q_posproblem_mass = map(lambda x: helper.mass(db, table, x, property), q['posproblems'])
-                q_posproblem_total_mass = reduce(lambda x, y: x + y, q_posproblem_mass)
-            if q['negproblems']:
-                q_negproblem_mass = map(lambda x: helper.mass(db, table, x, property), q['negproblems'])
-                q_negproblem_total_mass = reduce(lambda x, y: x + y, q_negproblem_mass)
-            if q_posproblem_total_mass and q_negproblem_total_mass:
-                pos = float(q_posproblem_total_mass)
-                neg = float(q_negproblem_total_mass)
-                q['loglikelihood'] = abs(math.log(pos) - math.log(neg))
-                q['posterior'] *= math.exp(-q['loglikelihood'])
-            else:
-                # It does not appear as a separating question in any problem
-                q['posterior'] = 0
-            db.questions.update({'_id': q['_id']}, q)
-
+        # Find a question that separates total positive problems from total negative problems
+        table, property = 'problems', 'posterior'
+        q_posproblem_total_mass, q_negproblem_total_mass = 0, 0
+        if q['posproblems']:
+            q_posproblem_mass = map(lambda x: helper.mass(db, table, x, property), q['posproblems'])
+            q_posproblem_total_mass = reduce(lambda x, y: x + y, q_posproblem_mass)
+        if q['negproblems']:
+            q_negproblem_mass = map(lambda x: helper.mass(db, table, x, property), q['negproblems'])
+            q_negproblem_total_mass = reduce(lambda x, y: x + y, q_negproblem_mass)
+        pos = float(q_posproblem_total_mass)
+        neg = float(q_negproblem_total_mass)
+        # Questions are weighed by three criteria
+        if pos and neg:
+            logmax = max(pos, neg)
+            q['loglikelihood'] = abs(math.log(pos) - math.log(neg))
+            q['posterior'] = logmax * math.exp(-q['loglikelihood'])
+        else:
+            q['posterior'] = 0.0
+        db.questions.update({'_id': q['_id']}, q)
 
 
 def delete(db, question_id):

@@ -31,7 +31,7 @@ def printlist(db):
     print eq
     i = 1
     problem_idx_to_id = dict()
-    template = "{Index:5} | {Name:80} | {Prior:5} | {Posterior:5}"
+    template = "{Index:5} | {Name:70} | {Prior:15} | {Posterior:15}"
     print template.format(Index="Index", Name="Problem Name", Prior="Prior", Posterior="Posterior")
     print eq
     for item in cursor:
@@ -43,10 +43,11 @@ def printlist(db):
     return problem_idx_to_id
 
 
-def increment(db, problem_hash):
+def increment(db, problem_hash, n=1):
     ''' Increment the prior for this problem and set posterior equal to prior
     :param db: The Mongodb database
     :param problem: Hash value of the problem for which to increment the prior
+    :param n: Increment by n
     :return: None, update the db
     '''
     problem = db.problems.find_one({'hash': problem_hash})

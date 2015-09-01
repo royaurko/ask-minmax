@@ -35,6 +35,9 @@ def training(n, db):
         if response:
             # Increase the count and update the priors and posteriors of this problem
             problems.increment(db, problem['hash'])
+            # Normalize the priors and posteriors of the problems
+            problems.normalize(db, 'prior')
+            problems.normalize(db, 'posterior')
             continue
         else:
             # It was not the right guess: get the correct problem
@@ -43,3 +46,6 @@ def training(n, db):
             sepquestions.separatingquestion(db, problem, correct, correct_hash)
             # Increment the prior for the correct problem and set its posterior equal to prior
             problems.increment(db, correct_hash)
+            # Normalize priors and posteriors of problems
+            problems.normalize(db, 'prior')
+            problems.normalize(db, 'posterior')
