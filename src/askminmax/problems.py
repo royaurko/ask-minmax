@@ -27,19 +27,16 @@ def printlist(db):
     :return: A dictionary mapping the index in the printed list to the id of the problems in the db
     '''
     cursor = db.problems.find()
-    eq = '=' * 70
+    eq = '-' * 115
     print eq
-    print 'List of problems'
     i = 1
     problem_idx_to_id = dict()
-    prior_begin = ' [prior: '
-    prior_end = ']'
-    posterior_begin = ' [posterior: '
-    posterior_end = ']'
+    template = "{Index:5} | {Name:80} | {Prior:5} | {Posterior:5}"
+    print template.format(Index="Index", Name="Problem Name", Prior="Prior", Posterior="Posterior")
+    print eq
     for item in cursor:
-        prior_str = prior_begin + str(item['prior']) + prior_end
-        posterior_str = posterior_begin + str(item['posterior']) + posterior_end
-        print str(i) + '. ' + item['name'] + prior_str + posterior_str
+        d = {'Index': i, 'Name': item['name'], 'Prior': item['prior'], 'Posterior': item['posterior']}
+        print template.format(**d)
         problem_idx_to_id[i] = item['_id']
         i += 1
     print eq
