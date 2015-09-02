@@ -116,6 +116,7 @@ class Expert(object):
         :param question: Dictionary of question whose posterior to adjust
         :param response: The response of user
         :param confidence: The confidence level of the user
+        :param most_likely_problems_hash: Optional, if given question posteriors are updated depending on it
         :return: None, update db in place
         '''
         db = self.db
@@ -128,9 +129,10 @@ class Expert(object):
         # db.questions.update({'_id': question['_id']}, question)
 
 
-    def askquestion(self):
+    def askquestion(self, most_likely_questions):
         ''' Ask a question and update posteriors by calling adjust posteriors
-        :return: None, update database in place
+        :param most_likely_questions: Most likely set of questions as obtained from Jenks
+        :return: The dictionary of the question asked
         '''
         db = self.db
         count = db.questions.find().count()
@@ -148,10 +150,11 @@ class Expert(object):
         if not m:
             return
         # Get list of questions with the highest posterior values by using k-means/Jenks
-        most_likely = self.fitposteriors('questions', 0.8)
-        most_likely_hash = set([item['hash'] for item in most_likely])
-        most_likely_names = set([item['name'] for item in most_likely])
-        print 'most likely questions: ' + str(most_likely_names)
+        most_likely_hash = set([item['hash'] for item in most_likely_questions])
+        # Print the most helpful questions
+        most_likely_names = set([item['name'] for item in most_likely_questions])
+        print 'Most helpful questions: '
+        questions.printset(most_likely_names)
         question = questions.sample(db, 'posterior', most_likely_hash)
         while question is None:
             training.train(db)
@@ -160,7 +163,7 @@ class Expert(object):
             try:
                 response = int(raw_input(question['name']))
                 try:
-                    confidence = float(raw_input('Confidence in your answer (default 0.95) : '))
+                    confidence = float(raw_input('Confidence in your answer (default 0.99) : '))
                 except ValueError:
                     confidence = 0.95
                 break
@@ -169,6 +172,7 @@ class Expert(object):
         # Adjust the posteriors of the problems and questions
         self.adjustposteriors(question, response, confidence)
         self.printtable()
+        return question
 
 
     def predictsingle(self):
@@ -270,17 +274,24 @@ class Expert(object):
         db = self.db
         m = questions.maxposterior(db)
         response = 1
-        most_likely = set()
+        most_likely_problems, asked_questions = set(), set()
+        print 'Current total entropy = %0.2f' % problems.getentropy(self.db)
         while m > 0 and response:
-            self.askquestion()
+            most_likely_questions = self.fitposteriors('questions', 0.6)
+            most_likely_questions = [q for q in most_likely_questions if q['hash'] not in asked_questions]
+            question = self.askquestion(most_likely_questions)
+            if question is None:
+                break
+            asked_questions.add(question['hash'])
             try:
                 gvf = float(raw_input('Goodness of fit (default = 0.8) '))
             except ValueError:
                 gvf = 0.8
-            most_likely = self.fitposteriors('problems', gvf)
-            most_likely_names = [item['name'] for item in most_likely]
+            most_likely_problems = self.fitposteriors('problems', gvf)
+            most_likely_problem_names = [item['name'] for item in most_likely_problems]
             print 'Popular problems that match your criteria:'
-            problems.printset(most_likely_names)
+            problems.printset(most_likely_problem_names)
+            print 'Current total entropy = %0.2f' % problems.getentropy(self.db)
             m = questions.maxposterior(db)
             while True:
                 try:
@@ -288,8 +299,8 @@ class Expert(object):
                     break
                 except ValueError:
                     helper.erroronezero()
-        if most_likely:
-            self.getfeedback(most_likely)
+        if most_likely_problems:
+            self.getfeedback(most_likely_problems)
         star = '*'*70
         print star
 
@@ -396,8 +407,14 @@ class Expert(object):
             # Problem already existed, append pos_questions and neg_questions to it
             plist = problem['posquestions']
             nlist = problem['negquestions']
-            plist += pos_questions
-            nlist += neg_questions
+            plist_set = set(plist)
+            nlist_set = set(nlist)
+            for i in xrange(len(pos_questions)):
+                if pos_questions[i] not in plist_set:
+                    plist.append(pos_questions[i])
+            for i in xrange(len(neg_questions)):
+                if neg_questions[i] not in nlist_set:
+                    nlist.append(neg_questions[i])
             self.db.problems.update({'_id': problem['_id']}, {
                 '$set':{'posquestions': plist, 'negquestions': nlist}
             })
@@ -462,11 +479,14 @@ class Expert(object):
             table = 'problems'
             property = 'prior'
             # Get mass of YES problems
-            q_posproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), pos_problems)
-            pos_mass = reduce(lambda x, y: x + y, q_posproblem_mass)
+            pos_mass, neg_mass = 0, 0
+            if pos_problems:
+                q_posproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), pos_problems)
+                pos_mass = reduce(lambda x, y: x + y, q_posproblem_mass)
             # Get mass of NO problems
-            q_negproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), neg_problems)
-            neg_mass = reduce(lambda x, y: x + y, q_negproblem_mass)
+            if neg_problems:
+                q_negproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), neg_problems)
+                neg_mass = reduce(lambda x, y: x + y, q_negproblem_mass)
             # Define prior as total mass of pairs separated
             prior = pos_mass * neg_mass
             posterior = prior
@@ -479,16 +499,25 @@ class Expert(object):
             # Question already existed, append pos_problems and neg_problems to it
             plist = question['posproblems']
             nlist = question['negproblems']
-            plist += pos_problems
-            nlist += neg_problems
+            plist_set = set(plist)
+            nlist_set = set(nlist)
+            for i in xrange(len(pos_problems)):
+                if pos_problems[i] not in plist_set:
+                    plist.append(pos_problems[i])
+            for i in xrange(len(neg_problems)):
+                if neg_problems[i] not in nlist_set:
+                    nlist.append(neg_problems[i])
             table = 'problems'
             property = 'prior'
             # Get mass of YES problems
-            q_posproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), plist)
-            pos_mass = reduce(lambda x, y: x + y, q_posproblem_mass)
+            pos_mass, neg_mass = 0, 0
+            if plist:
+                q_posproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), plist)
+                pos_mass = reduce(lambda x, y: x + y, q_posproblem_mass)
             # Get mass of NO problems
-            q_negproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), nlist)
-            neg_mass = reduce(lambda x, y: x + y, q_negproblem_mass)
+            if nlist:
+                q_negproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), nlist)
+                neg_mass = reduce(lambda x, y: x + y, q_negproblem_mass)
             # Define prior as total mass of pairs separated
             prior = pos_mass * neg_mass
             posterior = prior
@@ -514,6 +543,23 @@ class Expert(object):
         '''
         cursor = self.db.papers.find()
         return cursor.count()
+
+
+    def makeuniform(self):
+        ''' Make the priors of all the problems in the database uniform
+        :return: None, update DB in place
+        '''
+        while True:
+            try:
+                n = int(raw_input('Make prior for every problem = '))
+                break
+            except ValueError:
+                helper.errornumber()
+        cursor = self.db.problems.find()
+        for item in cursor:
+            item['prior'] = n
+            self.db.problems.update({'_id': item['_id']}, item)
+
 
 
     def cluster(self):

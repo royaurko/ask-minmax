@@ -1,6 +1,8 @@
 import random
 import helper
 import math
+from scipy.stats import entropy
+import numpy as np
 
 
 def printlist(db):
@@ -38,11 +40,11 @@ def increment(db, question_hash, n=1):
     db.questions.update({'_id': question['_id']}, question)
 
 
-def sample(db, p, most_likely_hash=None):
+def sample(db, p, most_likely_question_hash=set()):
     ''' Sample a question from the database according to its p-value
     :param db: The mongodb database
     :param p: A string that is either 'prior' or 'posterior'
-    :param most_likely_hash: A set of hash values of the questions to sample from
+    :param most_likely_question_hash: A set of hash values of the questions to sample from
     :return: Dictionary of sampled question
     '''
     cursor = db.questions.find()
@@ -53,30 +55,30 @@ def sample(db, p, most_likely_hash=None):
         print 'No questions with non-zero ' + p + ' !'
         return
     weight = 0.0
-    if most_likely_hash is not None:
-        for item in cursor:
-            if item['hash'] in most_likely_hash:
-                weight += item[p]
+    if most_likely_question_hash:
+        for question in cursor:
+            if question['hash'] in most_likely_question_hash:
+                weight += question[p]
         r = random.uniform(0, weight)
         s = 0.0
         cursor = db.questions.find()
-        for item in cursor:
-            if item['hash'] in most_likely_hash:
-                s += item[p]
+        for question in cursor:
+            if question['hash'] in most_likely_question_hash:
+                s += question[p]
                 if r < s:
-                    return item
-        return item
+                    return question
+        return question
     else:
-        for item in cursor:
-            weight += item[p]
+        for question in cursor:
+            weight += question[p]
         r = random.uniform(0, weight)
         s = 0.0
         cursor = db.questions.find()
-        for item in cursor:
-            s += item[p]
+        for question in cursor:
+            s += question[p]
             if r < s:
-                return item
-        return item
+                return question
+        return question
 
 
 def maxposterior(db):
@@ -95,12 +97,28 @@ def maxposterior(db):
     return m
 
 
+def indifferencemass(db, question, p):
+    ''' Return the posterior mass of problems that are indifferent to question
+    :param db: The Mongodb database
+    :param question: The dictionary of the question
+    :param p: p in {prior, posterior}
+    :return: Total mass of indifferent problems
+    '''
+    cursor = db.problems.find()
+    posproblems = set(question['posproblems'])
+    negproblems = set(question['negproblems'])
+    mass = 0
+    for problem in cursor:
+        if problem['hash'] not in posproblems and problem['hash'] not in negproblems:
+            mass += problem[p]
+    return mass
+
+
 def resetpriors(db):
     ''' Recompute the priors of the questions in the database
     :param db: Mongodb database
     :return: None, update db in place
     '''
-    print 'here'
     cursor = db.questions.find()
     for q in cursor:
         table, property = 'problems', 'posterior'
@@ -119,17 +137,24 @@ def resetpriors(db):
         if q['negproblems']:
             q_negproblem_mass = map(lambda x: helper.mass(db, table, x, property), q['negproblems'])
             neg = float(reduce(lambda x, y: x + y, q_negproblem_mass))
-        if pos and neg:
-            # Weight by mass of the maximum
-            logmax = max(pos, neg)
-            q['loglikelihood'] = abs(math.log(pos) - math.log(neg))
-            q['prior'] = logmax * math.exp(-q['loglikelihood'])
-            q['posterior'] = q['prior']
-            print 'logmax = ' + str(logmax) + ' balanced = ' + str(math.exp(-q['loglikelihood']))
-            print 'prior = ' + str(q['prior'])
+        # Different weighing scheme
+        avgval = 0.5*(pos + neg)
+        minimum = min(pos, neg)
+        maximum = max(pos, neg)
+        if not minimum:
+            balance = 0
         else:
-            q['prior'] = 0.0
-            q['posterior'] = q['prior']
+            balance = minimum/maximum
+        # indifference = indifferencemass(db, q, 'prior')
+        q['prior'] = changeinentropy(db, q)
+        # End of different weighing scheme
+        # Weight by mass of the maximum
+        # maxvalue = max(pos, neg)
+        # num_questions = (len(q['posproblems']) + len(q['negproblems']))/2
+        q['loglikelihood'] = abs(math.log(1 + pos) - math.log(1 + neg))
+        # q['prior'] = maxvalue * 1/(1 + indifference) * math.exp(-q['loglikelihood'])
+        q['posterior'] = q['prior']
+        print 'prior = ' + str(q['prior'])
         db.questions.update({'_id': q['_id']}, q)
 
 
@@ -151,13 +176,22 @@ def adjustposteriors(db):
             q_negproblem_total_mass = reduce(lambda x, y: x + y, q_negproblem_mass)
         pos = float(q_posproblem_total_mass)
         neg = float(q_negproblem_total_mass)
-        # Questions are weighed by three criteria
-        if pos and neg:
-            logmax = max(pos, neg)
-            q['loglikelihood'] = abs(math.log(pos) - math.log(neg))
-            q['posterior'] = logmax * math.exp(-q['loglikelihood'])
+        # Different weighing scheme
+        avgval = 0.5*(pos + neg)
+        minimum = min(pos, neg)
+        maximum = max(pos, neg)
+        if not minimum:
+            balance = 0
         else:
-            q['posterior'] = 0.0
+            balance = minimum/maximum
+        # indifference = indifferencemass(db, q, 'prior')
+        q['posterior'] = changeinentropy(db, q)
+        # Questions are weighed by three criteria
+        # indifference = indifferencemass(db, q, 'posterior')
+        # maxvalue = max(pos, neg)
+        # num_questions = (len(q['posproblems']) + len(q['negproblems']))/2
+        q['loglikelihood'] = abs(math.log(1 + pos) - math.log(1 + neg))
+        # q['posterior'] = avgvalue * 1/(1 + indifference) * math.exp(-q['loglikelihood'])
         db.questions.update({'_id': q['_id']}, q)
 
 
@@ -176,3 +210,47 @@ def delete(db, question_id):
         problem['negquestions'] = neg_questions
         problem['posquestions'] = pos_questions
         db.problems.update({'_id': problem['_id']}, problem)
+
+
+
+def changeinentropy(db, q):
+    ''' The expected change in entropy when you ask this question, assuming each answer is equall likely
+    :param db: The Mongodb database
+    :param q: The dictionary of the question
+    :return: The expected change in entropy
+    '''
+    cursor = db.problems.find()
+    old_pvalues, yes_pvalues, no_pvalues = np.array([]), np.array([]), np.array([])
+    # Get the old_pvalues
+    for problem in cursor:
+        old_pvalues = np.append(old_pvalues, problem['posterior'])
+    # Compute the old entropy
+    old_entropy = entropy(old_pvalues)
+    # Change in entropy if we answer YES to this question
+    cursor = db.problems.find()
+    for problem in cursor:
+        if problem['hash'] in q['negproblems']:
+            yes_pvalues = np.append(yes_pvalues, 0.0)
+        else:
+            yes_pvalues = np.append(yes_pvalues, problem['posterior'])
+    # Compute the YES entropy
+    yes_entropy = entropy(yes_pvalues)
+    # Change in entropy if we answer NO to this question
+    cursor = db.problems.find()
+    for problem in cursor:
+        if problem['hash'] in q['posproblems']:
+            no_pvalues = np.append(no_pvalues, 0.0)
+        else:
+            no_pvalues = np.append(no_pvalues, problem['posterior'])
+    # Compute the NO entropy
+    no_entropy = entropy(no_pvalues)
+    return old_entropy - 0.5*(yes_entropy + no_entropy)
+
+
+def printset(questionnames):
+    ''' Print a set of question names
+    :param questionnames: Set of question names
+    :return: None, just print the set
+    '''
+    s = ', '.join(item for item in questionnames)
+    print '{' + s + '}'

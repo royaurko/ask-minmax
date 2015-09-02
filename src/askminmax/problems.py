@@ -1,5 +1,7 @@
 import helper
 import random
+from scipy.stats import entropy
+import numpy as np
 
 
 def getsepquestions(problem1, problem2):
@@ -185,3 +187,20 @@ def delete(db, problem_id):
         question['negproblems'] = neg_problems
         question['posproblems'] = pos_problems
         db.questions.update({'_id': question['_id']}, question)
+
+
+def getentropy(db, most_likely_problem_hash=set()):
+    ''' Get the entropy of the poteriors
+    :param db: The Mongodb database
+    :param most_likely_problem_hash: Optional argument, if provided confine only to this set
+    :return: The entropy of the posterior distribution of the problems
+    '''
+    p = np.array([])
+    cursor = db.problems.find()
+    for problem in cursor:
+        if most_likely_problem_hash:
+            if problem['hash'] in most_likely_problem_hash:
+                p = np.append(p, problem['posterior'])
+        else:
+            p = np.append(p, problem['posterior'])
+    return entropy(p)
