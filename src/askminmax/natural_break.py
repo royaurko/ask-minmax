@@ -1,12 +1,13 @@
 from jenks import jenks
 import numpy as np
 
+
 def gvf(array, classes):
-    ''' Compute goodness of fit with Jenks natural breaks algorithm with num classes = classes
+    """ Compute goodness of fit with Jenks natural breaks algorithm with num classes = classes
     :param array: The numpy array on which to apply JNB algorithm
     :param classes: The number of classes in JNB algorithm
     :return: The goodness of fit value
-    '''
+    """
     # Get the break points
     classes = jenks(array, classes)
     # Do the actual classification
@@ -27,11 +28,11 @@ def gvf(array, classes):
 
 
 def classify(value, breaks):
-    ''' Helper function
+    """ Helper function
     :param value: Classify the numbers to correct clusters according to Jenks clusters
     :param breaks: The number of classes
     :return:
-    '''
+    """
     for i in range(1, len(breaks)):
         if value < breaks[i]:
             return i

@@ -4,19 +4,19 @@ import problems
 
 
 def getcorrectproblem(db):
-    ''' Query the correct problem from the user and return its dictionary
+    """ Query the correct problem from the user and return its dictionary
     :param db: The Mongodb database
     :return: The dictionary item for the correct problem
-    '''
+    """
     while True:
         try:
             response = int(raw_input('Correct problem in the DB (0/1)? '))
             break
         except ValueError:
-            helper.erroronezero()
+            helper.error_one_zero()
     if response:
         # Correct problem is in our database; get it's dictionary item
-        correct = getproblemfromlist(db)
+        correct = get_problem_from_list(db)
         print 'Correct problem: ' + correct['name']
     else:
         # Correct problem is not in our database
@@ -28,16 +28,16 @@ def getcorrectproblem(db):
     return correct
 
 
-def displayseparating(db, wrong, correct, question_idx_to_id):
-    ''' Display the list of separating questions already in the database
+def display_separating_questions(db, wrong, correct, question_idx_to_id):
+    """ Display the list of separating questions already in the database
     :param wrong: The dictionary of the wrong problem
     :param correct: The dictionary of the correct problem
     :param question_idx_to_id: Dictionary mapping question indices to mongodb ids
     :return: None
-    '''
+    """
     question_id_to_idx = {v: k for k, v in question_idx_to_id.items()}
     # Get the list of separating questions
-    neg_q, pos_q = problems.getsepquestions(wrong, correct)
+    neg_q, pos_q = problems.get_separating_questions(wrong, correct)
     list1, list2  = list(), list()
     for qhash in pos_q:
         question = db.questions.find_one({'hash': qhash})
@@ -51,17 +51,17 @@ def displayseparating(db, wrong, correct, question_idx_to_id):
     print list2
 
 
-def separatingquestion(db, wrong, correct):
-    ''' Ask a separating question between wrong problem and correct problem
+def ask_separating_question(db, wrong, correct):
+    """ Ask a separating question between wrong problem and correct problem
     :param db: The Mongodb database
     :param problem: The dictionary item of the wrong problem
     :param correct: The dictionary item of the correct problem
     :return: None
-    '''
+    """
     # Print questions and get the dictionary mapping printed indices to Mongodb id's
     question_idx_to_id = questions.printlist(db)
     # Display the existing separating questions in the database
-    displayseparating(db, wrong, correct, question_idx_to_id)
+    display_separating_questions(db, wrong, correct, question_idx_to_id)
     while True:
         try:
             s = 'Question separating ' + wrong['name'] + ' from ' + correct['name']
@@ -69,30 +69,30 @@ def separatingquestion(db, wrong, correct):
             response = int(raw_input(s))
             break
         except ValueError:
-            helper.erroronezero()
+            helper.error_one_zero()
     if response:
         # Separating question is already in our DB; get their hash values
-        pos_qhash_list = parseposlist(db, wrong, correct, question_idx_to_id)
-        neg_qhash_list = parseneglist(db, wrong, correct, question_idx_to_id)
+        pos_qhash_list = parse_positive_list_questions(db, wrong, correct, question_idx_to_id)
+        neg_qhash_list = parse_negative_list_questions(db, wrong, correct, question_idx_to_id)
     else:
         # Separating question is not in our DB ask for one
-        pos_qhash_list = parsepossingle(db, wrong, correct)
-        neg_qhash_list = parsenegsingle(db, wrong, correct)
+        pos_qhash_list = parse_positive_single_question(db, wrong, correct)
+        neg_qhash_list = parse_negative_single_question(db, wrong, correct)
     for qhash in pos_qhash_list:
         # For every question set its list correctly and increment its prior and set posterior equal to prior
-        setproblemlists(db, qhash, wrong, correct, True)
+        set_problem_lists(db, qhash, wrong, correct, True)
         questions.increment(db, qhash, wrong['prior']*correct['prior'])
     for qhash in neg_qhash_list:
         # For every question set its list correctly and increment its prior and set posterior equal to prior
-        setproblemlists(db, qhash, wrong, correct, False)
+        set_problem_lists(db, qhash, wrong, correct, False)
         questions.increment(db, qhash, wrong['prior']*correct['prior'])
 
 
-def getproblemfromlist(db):
-    ''' Ask the user for the correct problem and return its dictionary
+def get_problem_from_list(db):
+    """ Ask the user for the correct problem and return its dictionary
     :param db: The Mongodb database
     :return: The dictionary item for the correct problem
-    '''
+    """
     problem_idx_to_id = problems.printlist(db)
     while True:
         try:
@@ -100,20 +100,20 @@ def getproblemfromlist(db):
             correct_id = problem_idx_to_id[idx]
             break
         except ValueError:
-            helper.errornumber()
+            helper.error_number()
         except KeyError:
-            helper.errorkey()
+            helper.error_key()
     correct = db.problems.find_one({'_id': correct_id})
     return correct
 
 
-def parsenegsingle(db, wrong, correct):
-    ''' Parse a negative single question
+def parse_negative_single_question(db, wrong, correct):
+    """ Parse a negative single question
     :param db: The Mongodb database
     :param wrong: The dictionary item for the wrong problem
     :param correct: The dictionary item for the correct problem
     :return: List of hash value of the negative question
-    '''
+    """
     # First query the user for a question that is NO for correct problem and YES for wrong one
     q_string = 'Enter a question that is NO for ' + correct['name'] + ' and YES for ' + wrong['name'] + ':\n '
     neg_qname = helper.strip(raw_input(q_string))
@@ -138,13 +138,13 @@ def parsenegsingle(db, wrong, correct):
     return [neg_qhashval]
 
 
-def parsepossingle(db, wrong, correct):
-    ''' Parse a positive single question
+def parse_positive_single_question(db, wrong, correct):
+    """ Parse a positive single question
     :param db: The Mongodb database
     :param problem: The dictionary item for the wrong problem
     :param correct: The dictionary item for the correct problem
     :return: List of hash value of the positive question
-    '''
+    """
     # First query the user for a question that is YES for correct problem and NO for wrong one
     q_string = 'Enter a question that is YES for ' + correct['name'] + ' and NO for ' + wrong['name'] + ':\n '
     pos_qname = helper.strip(raw_input(q_string))
@@ -169,14 +169,14 @@ def parsepossingle(db, wrong, correct):
     return [pos_qhashval]
 
 
-def parseneglist(db, wrong, correct, question_idx_to_id):
-    ''' Parse negative questions already in the list
+def parse_negative_list_questions(db, wrong, correct, question_idx_to_id):
+    """ Parse negative questions already in the list
     :param db: The Mongodb database
     :param wrong: The dictionary item for the wrong problem
     :param correct: The dictionary item for the correct problem
     :param question_idx_to_id: The dictionary that maps question numbers to Mongodb ids
     :return: List of hash values of negative questions
-    '''
+    """
     while True:
         try:
             q_string = 'Enter question numbers that are NO for ' \
@@ -186,9 +186,9 @@ def parseneglist(db, wrong, correct, question_idx_to_id):
             neg_qid_list = [question_idx_to_id[x] for x in neg_list]
             break
         except ValueError:
-            helper.errorspaces()
+            helper.error_spaces()
         except KeyError:
-            helper.errorkey()
+            helper.error_key()
     neg_qhash_list = list()
     for item in neg_qid_list:
         hashval = db.questions.find_one({'_id': item})['hash']
@@ -196,14 +196,14 @@ def parseneglist(db, wrong, correct, question_idx_to_id):
     return neg_qhash_list
 
 
-def parseposlist(db, wrong, correct, question_idx_to_id):
-    '''  Get list of hash values of separating questions already in the list
+def parse_positive_list_questions(db, wrong, correct, question_idx_to_id):
+    """  Get list of hash values of separating questions already in the list
     :param db: The Mongodb database
     :param wrong: The dictionary item for the wrong problem
     :param correct: The dictionary item for the correct problem
     :param question_idx_to_id: The dictionary that maps question numbers to Mongodb ids
     :return: List of hash values of positive questions
-    '''
+    """
     while True:
         try:
             q_string = 'Enter question numbers that are YES for ' \
@@ -213,9 +213,9 @@ def parseposlist(db, wrong, correct, question_idx_to_id):
             pos_qid_list = [question_idx_to_id[x] for x in pos_list]
             break
         except ValueError:
-            helper.errorspaces()
+            helper.error_spaces()
         except KeyError:
-            helper.errorkey()
+            helper.error_key()
     pos_qhash_list = list()
     for item in pos_qid_list:
         hashval = db.questions.find_one({'_id': item})['hash']
@@ -223,15 +223,15 @@ def parseposlist(db, wrong, correct, question_idx_to_id):
     return pos_qhash_list
 
 
-def setproblemlists(db, qhash, wrong, correct, flag):
-    ''' Modify the positive and negative lists of the correct and wrong problem
+def set_problem_lists(db, qhash, wrong, correct, flag):
+    """ Modify the positive and negative lists of the correct and wrong problem
     :param db: The Mongodb database
     :param qhash: The hash value of the question
     :param problem: The dictionary for the wrong problem
     :param correct: The dictionary for the correct problem
     :param flag: Indicates whether it is a positive or a negative separating question
     :return: None, modify the database
-    '''
+    """
     if flag:
         correct_list_name = 'posquestions'
         wrong_list_name = 'negquestions'

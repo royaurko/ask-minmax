@@ -4,10 +4,10 @@ from pymongo import MongoClient
 
 
 def connect():
-    '''
+    """
     Get the host and port number from the user and connect a client
     :return: Connected Mongoclient
-    '''
+    """
     host = raw_input('Mongodb host name (press enter for localhost): ')
     while True:
         try:
@@ -17,7 +17,7 @@ def connect():
             port = int(port)
             break
         except ValueError:
-            helper.errornumber()
+            helper.error_number()
     if not host and not port:
         client = MongoClient()
     elif not host:
@@ -29,10 +29,10 @@ def connect():
     return client
 
 
-def initializedb():
-    ''' Connect client, drop all tables in the database and return
+def initialize_db():
+    """ Connect client, drop all tables in the database and return
     :return: client, database db with all tables dropped
-    '''
+    """
     client = connect()
     db = client.db
     db.problems.drop()
@@ -40,11 +40,10 @@ def initializedb():
     return (client, db)
 
 
-def dumpdb(db):
-    ''' Dump database to BSON file
-    :param db: Name of the database to dump to BSON files
+def dump_db():
+    """ Dump database to BSON file
     :return: None
-    '''
+    """
     try:
         path = raw_input('Name of folder to dump BSON files to (default = database)? ')
         cmd = 'mongodump'
@@ -56,11 +55,11 @@ def dumpdb(db):
         print 'Error backing up database!'
 
 
-def recoverdb(client):
-    ''' Recover database from BSON file
+def recover_db(client):
+    """ Recover database from BSON file
     :param client:
     :return:
-    '''
+    """
     client.drop_database('db')
     cmd = 'mongorestore'
     path = raw_input('Folder to recover from (default = database)? ')

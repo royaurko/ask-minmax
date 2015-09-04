@@ -4,14 +4,14 @@ from scipy.stats import entropy
 import numpy as np
 
 
-def getsepquestions(problem1, problem2):
-    ''' Print the separating questions already in our database between problem1 and problem2
+def get_separating_questions(problem1, problem2):
+    """ Print the separating questions already in our database between problem1 and problem2
     :param db: The Mongodb database
     :param problem1: The dictionary of problem #1
     :param problem2: The dictionary of problem #2
     :param question_idx_to_id: The dictionary mapping question indexes to Mongodb id's
     :return: Set of separating questions as a tuple
-    '''
+    """
     # First get questions with YES answer for hash1 and NO answer for hash2
     hash1_posquestions = set(problem1['posquestions'])
     hash1_negquestions = set(problem1['negquestions'])
@@ -22,12 +22,11 @@ def getsepquestions(problem1, problem2):
     return h1_pos_h2_neg, h2_pos_h1_neg
 
 
-def printlist(db):
-    ''' Print the list of problems in the database
-    :param db: Mongodb daif question is not None:
-        tabase
+def print_list(db):
+    """ Print the list of problems in the database
+    :param db: Mongodb database
     :return: A dictionary mapping the index in the printed list to the id of the problems in the db
-    '''
+    """
     cursor = db.problems.find()
     eq = '-' * 115
     print eq
@@ -46,24 +45,24 @@ def printlist(db):
 
 
 def increment(db, problem_hash, n=1):
-    ''' Increment the prior for this problem and set posterior equal to prior
+    """ Increment the prior for this problem and set posterior equal to prior
     :param db: The Mongodb database
     :param problem: Hash value of the problem for which to increment the prior
     :param n: Increment by n
     :return: None, update the db
-    '''
+    """
     problem = db.problems.find_one({'hash': problem_hash})
-    problem['prior'] += 1
+    problem['prior'] += n
     problem['posterior'] = problem['prior']
     db.problems.update({'_id': problem['_id']}, problem)
 
 
 def sample(db, p):
-    '''
+    """
     :param db: The Mongodb database
     :param p: A string that is either 'prior' or 'posterior' depending on what we want to sample from
     :return: A problem sampled from the problems database according to p
-    '''
+    """
     cursor = db.problems.find()
     count = cursor.count()
     if count < 1:
@@ -84,10 +83,10 @@ def sample(db, p):
 
 
 def query(db):
-    ''' Query for a problem
+    """ Query for a problem
     :param db: The Mongodb database
     :return: None
-    '''
+    """
     response = 1
     while response:
         pname = helper.strip(raw_input('Problem name: '))
@@ -109,14 +108,14 @@ def query(db):
                 response = int(raw_input('Continue (0/1)? '))
                 break
             except ValueError:
-                helper.erroronezero()
+                helper.error_one_zero()
 
 
-def maxposterior(db):
-    ''' Return the maximum (normalized) posterior value among all the problems in the database
+def max_posterior(db):
+    """ Return the maximum (normalized) posterior value among all the problems in the database
     :param db: The Mongodb database
     :return: The maximum posterior probability among all the problems in the database
-    '''
+    """
     cursor = db.problems.find()
     m = 0.0
     total = 0.0
@@ -128,14 +127,14 @@ def maxposterior(db):
     return m
 
 
-def adjustposteriors(db, question, response, confidence=0.9):
-    ''' Adjust the posterior of all the problems depending on the question, response and confidence
+def adjust_posteriors(db, question, response, confidence=0.9):
+    """ Adjust the posterior of all the problems depending on the question, response and confidence
     :param db: The Mongodb database
     :param question: The question object
     :param response: Response (0 or 1)
     :param tolerance: Number in [0, 1] showing confidence in correctness of response
     :return: None, just update db entries
-    '''
+    """
     cursor = db.problems.find()
     for problem in cursor:
         if response and question['hash'] in problem['negquestions']:
@@ -149,12 +148,12 @@ def adjustposteriors(db, question, response, confidence=0.9):
         db.problems.update({'_id': problem['_id']}, problem)
 
 
-def thresholdset(db, t):
-    '''
+def threshold_set(db, t):
+    """
     :param db: The Mongodb database
     :param t: A parameter t
     :return: Return set of problem names whose posterior is > t
-    '''
+    """
     s = set()
     cursor = db.problems.find()
     for item in cursor:
@@ -163,21 +162,21 @@ def thresholdset(db, t):
     return s
 
 
-def printset(problemnames):
-    ''' Print a set of problem names
-    :param problemnames: Set of problem names
+def print_set(problem_names):
+    """ Print a set of problem names
+    :param problem_names: Set of problem names
     :return: None, just print the set
-    '''
-    s = ', '.join(item for item in problemnames)
+    """
+    s = ', '.join(item for item in problem_names)
     print '{' + s + '}'
 
 
 def delete(db, problem_id):
-    ''' Delete problem from both the problems and question database
+    """ Delete problem from both the problems and question database
     :param db: The Mongodb database
     :param problem_id: The Mongodb database id of the problem
     :return: None, modify database in place
-    '''
+    """
     problem_hash = db.problems.find_one({'_id': problem_id})['hash']
     db.problems.remove(problem_id)
     cursor = db.questions.find()
@@ -189,12 +188,12 @@ def delete(db, problem_id):
         db.questions.update({'_id': question['_id']}, question)
 
 
-def getentropy(db, most_likely_problem_hash=set()):
-    ''' Get the entropy of the poteriors
+def get_entropy(db, most_likely_problem_hash=set()):
+    """ Get the entropy of the posteriors
     :param db: The Mongodb database
     :param most_likely_problem_hash: Optional argument, if provided confine only to this set
     :return: The entropy of the posterior distribution of the problems
-    '''
+    """
     p = np.array([])
     cursor = db.problems.find()
     for problem in cursor:
