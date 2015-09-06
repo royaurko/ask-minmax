@@ -1,3 +1,4 @@
+from __future__ import print_function
 import hashlib
 import re
 
@@ -6,28 +7,28 @@ def error_spaces():
     """ Error when user does not enter space separated question numbers
     :return: None
     """
-    print 'Please separate question numbers by spaces!'
+    print('Please separate question numbers by spaces!')
 
 
 def error_one_zero():
     """ Error when user enters something other than 0 or 1
     :return: None
     """
-    print 'Please enter 0 or 1!'
+    print('Please enter 0 or 1!')
 
 
 def error_number():
     """ Error when user does not enter a number
     :return:None
     """
-    print 'Please enter a valid number!'
+    print('Please enter a valid number!')
 
 
 def error_key():
     """ Error if user does not enter correct number
     :return: None
     """
-    print 'Please enter a correct number from the list!'
+    print('Please enter a correct number from the list!')
 
 
 def strip(s):

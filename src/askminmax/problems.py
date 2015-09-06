@@ -1,3 +1,4 @@
+from __future__ import print_function
 import helper
 import random
 from scipy.stats import entropy
@@ -30,18 +31,18 @@ def print_list(db):
     """
     cursor = db.problems.find()
     eq = '-' * 115
-    print eq
+    print(eq)
     i = 1
     problem_idx_to_id = dict()
     template = "{Index:5} | {Name:70} | {Prior:15} | {Posterior:15}"
-    print template.format(Index="Index", Name="Problem Name", Prior="Prior", Posterior="Posterior")
-    print eq
+    print(template.format(Index="Index", Name="Problem Name", Prior="Prior", Posterior="Posterior"))
+    print(eq)
     for item in cursor:
         d = {'Index': i, 'Name': item['name'], 'Prior': item['prior'], 'Posterior': item['posterior']}
-        print template.format(**d)
+        print(template.format(**d))
         problem_idx_to_id[i] = item['_id']
         i += 1
-    print eq
+    print(eq)
     return problem_idx_to_id
 
 
@@ -68,7 +69,7 @@ def sample(db, p):
     count = cursor.count()
     if count < 1:
         '''Trying to sample from empty collection'''
-        print 'Empty problem set!'
+        print('Empty problem set!')
         query(db)
     weight = 0
     for item in cursor:
@@ -90,17 +91,16 @@ def query(db):
     """
     response = 1
     while response:
-        pname = helper.strip(raw_input('Problem name: '))
-        # tokens = helper.gettokens(pname)
-        hashval = helper.gethashval(pname)
-        item = db.problems.find_one({'hash': hashval})
+        problem_name = helper.strip(raw_input('Problem name: '))
+        hash_value = helper.get_hash(problem_name)
+        item = db.problems.find_one({'hash': hash_value})
         if item is None:
             # It is a new item, create the problem dictionary and insert into data base
             prior = 1
             posterior = 1
             posquestions = list()
             negquestions = list()
-            d = {'name': pname, 'hash': hashval, 'prior': prior,
+            d = {'name': problem_name, 'hash': hash_value, 'prior': prior,
                  'posterior': posterior, 'posquestions': posquestions,
                  'negquestions': negquestions}
             db.problems.insert(d)
@@ -169,7 +169,7 @@ def print_set(problem_names):
     :return: None, just print the set
     """
     s = ', '.join(item for item in problem_names)
-    print '{' + s + '}'
+    print('{' + s + '}')
 
 
 def delete(db, problem_id):

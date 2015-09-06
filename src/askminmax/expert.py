@@ -1,3 +1,4 @@
+from __future__ import print_function
 import helper
 import database
 import problems
@@ -61,8 +62,8 @@ class Expert(object):
         questions_list = map(int, questions_list.strip().split())
         for question in questions_list:
             questions.delete(db, question_idx_to_id[question])
-        print 'Modified database:'
-        self.printtable()
+        print('Modified database:')
+        self.print_table()
 
     def print_table(self):
         """ Print the current list of problems and questions with their priors and posteriors
@@ -84,7 +85,7 @@ class Expert(object):
                 self.print_table()
                 # Call control_prediction
                 self.control_prediction()
-                print 'Press [Ctrl] + c to exit'
+                print('Press [Ctrl] + c to exit')
         except KeyboardInterrupt:
             self.query_backup()
 
@@ -132,7 +133,7 @@ class Expert(object):
         db = self.db
         count = db.questions.find().count()
         while count < 1:
-            print 'No questions in database!'
+            print('No questions in database!')
             training.train(db)
             count = db.questions.find().count()
         # Check to see if there is a question with non-zero posterior
@@ -148,7 +149,7 @@ class Expert(object):
         most_likely_hash = set([item['hash'] for item in most_likely_questions])
         # Print the most helpful questions
         most_likely_names = set([item['name'] for item in most_likely_questions])
-        print 'Most helpful questions: '
+        print('Most helpful questions: ')
         questions.print_set(most_likely_names)
         question = questions.sample(db, 'posterior', most_likely_hash)
         while question is None:
@@ -172,7 +173,7 @@ class Expert(object):
         """
         db = self.db
         problem = problems.sample(db, 'posterior')
-        print problem['name']
+        print(problem['name'])
         while True:
             try:
                 response = int(raw_input('Is this the correct problem? (0/1)? '))
@@ -233,9 +234,9 @@ class Expert(object):
         else:
             # Incorrect problem
             correct = sepquestions.getcorrectproblem(self.db)
-            for hashval in most_likely_hash:
-                if hashval != correct['hash']:
-                    wrong = self.db.problems.find_one({'hash': hashval})
+            for hash_value in most_likely_hash:
+                if hash_value != correct['hash']:
+                    wrong = self.db.problems.find_one({'hash': hash_value})
                     sepquestions.ask_separating_question(self.db, wrong, correct)
             # Increment the prior for the correct problem and set its posterior equal to prior
             problems.increment(self.db, correct['hash'])
@@ -284,7 +285,7 @@ class Expert(object):
         continue_response = 1
         most_likely_problems = list()
         responses_known_so_far = dict()
-        print 'Current total entropy = %0.2f' % problems.get_entropy(self.db)
+        print('Current total entropy = %0.2f' % problems.get_entropy(self.db))
         problems.plot_posteriors(self.db)
         while m > 0 and continue_response:
             # Get the most_likely questions
@@ -305,10 +306,10 @@ class Expert(object):
             self.adjust_question_posteriors(responses_known_so_far, most_likely_problems)
             # Print the most likely problems
             most_likely_problem_names = set([item['name'] for item in most_likely_problems])
-            print 'Popular problems that match your criteria:'
+            print('Popular problems that match your criteria:')
             problems.print_set(most_likely_problem_names)
             # Print the current entropy level of the distribution
-            print 'Current total entropy = %0.2f' % problems.get_entropy(self.db)
+            print('Current total entropy = %0.2f' % problems.get_entropy(self.db))
             # Plot problem posteriors
             problems.plot_posteriors(self.db)
             # Update the maximum posterior value
@@ -323,7 +324,7 @@ class Expert(object):
         if most_likely_problems:
             self.get_feedback(most_likely_problems)
         star = '*'*70
-        print star
+        print(star)
 
     def fit_posteriors(self, document, desired_gvf=0.8):
         """ Try to cluster the posteriors using Jenks Natural Breaks algorithm

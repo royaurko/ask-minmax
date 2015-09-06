@@ -1,7 +1,7 @@
+from __future__ import print_function
 import random
 from scipy.stats import entropy
 import numpy as np
-import math
 import problems
 
 
@@ -12,18 +12,18 @@ def print_list(db):
     """
     cursor = db.questions.find()
     eq = '-' * 115
-    print eq
+    print(eq)
     i = 1
     question_idx_to_id = dict()
     template = "{Index:5} | {Name:70} | {Prior:15} | {Posterior:15}"
-    print template.format(Index="Index", Name="Question Name", Prior="Prior", Posterior="Posterior")
-    print eq
+    print(template.format(Index="Index", Name="Question Name", Prior="Prior", Posterior="Posterior"))
+    print(eq)
     for item in cursor:
         d = {'Index': i, 'Name': item['name'], 'Prior': item['prior'], 'Posterior': item['posterior']}
-        print template.format(**d)
+        print(template.format(**d))
         question_idx_to_id[i] = item['_id']
         i += 1
-    print eq
+    print(eq)
     return question_idx_to_id
 
 
@@ -52,7 +52,7 @@ def sample(db, p, most_likely_question_hash=set()):
     zero_count = db.questions.find({p: 0}).count()
     if count < 1 or count == zero_count:
         # Trying to sample from empty question set or all the p-values are 0
-        print 'No questions with non-zero ' + p + ' !'
+        print('No questions with non-zero ' + p + ' !')
         return
     weight = 0.0
     if most_likely_question_hash:
@@ -190,4 +190,4 @@ def print_set(question_names):
     :return: None, just print the set
     """
     s = ', '.join(item for item in question_names)
-    print '{' + s + '}'
+    print('{' + s + '}')

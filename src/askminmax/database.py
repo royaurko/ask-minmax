@@ -1,3 +1,4 @@
+from __future__ import print_function
 import subprocess
 import helper
 from pymongo import MongoClient
@@ -50,9 +51,9 @@ def dump_db():
         if not path:
             path = 'database'
         output = subprocess.call([cmd, '-o', path])
-        print output
+        print(output)
     except:
-        print 'Error backing up database!'
+        print('Error backing up database!')
 
 
 def recover_db(client):

@@ -1,3 +1,4 @@
+from __future__ import print_function
 import helper
 import questions
 import problems
@@ -17,7 +18,7 @@ def getcorrectproblem(db):
     if response:
         # Correct problem is in our database; get it's dictionary item
         correct = get_problem_from_list(db)
-        print 'Correct problem: ' + correct['name']
+        print('Correct problem: ' + correct['name'])
     else:
         # Correct problem is not in our database
         correct_name = helper.strip(raw_input('What is the correct problem?\n'))
@@ -45,10 +46,10 @@ def display_separating_questions(db, wrong, correct, question_idx_to_id):
     for qhash in neg_q:
         question = db.questions.find_one({'hash': qhash})
         list2.append(question_id_to_idx[question['_id']])
-    print 'YES for ' + correct['name'] + ' NO for ' + wrong['name'] + ': '
-    print list1
-    print 'NO for ' + correct['name'] + ' YES for ' + wrong['name'] + ': '
-    print list2
+    print('YES for ' + correct['name'] + ' NO for ' + wrong['name'] + ': ')
+    print(list1)
+    print('NO for ' + correct['name'] + ' YES for ' + wrong['name'] + ': ')
+    print(list2)
 
 
 def ask_separating_question(db, wrong, correct):
