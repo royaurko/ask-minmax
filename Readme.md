@@ -4,20 +4,23 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
 
 
 ## How it works
-Ask-minmax associates a prior to every problem and question in the database. The prior of a problem is roughly 
-proportional to the number of times there was a query intended for that particular problem. The prior of a question
-reflects the relative usefulness of the question - i.e. the total "current weight" of problems it can separate. 
-The posteriors are initialized equal to the priors. At every step, a question is sampled proportional to a prior
-and depending on its answer the posteriors of the problems and questions are updated. One has the option to use
-[Jenks natural breaks](https://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization) algorithm 
-with a desired *Goodness of fit* parameter to output a set of most likely problems. The algorithm also queries
-whether you want to refine the set further by asking more questions. 
+ * Ask-minmax associates a **prior** to every problem and question in the database. 
+ * The prior of a problem is proportional to the number of times there is a query intended for that particular
+  problem. 
+ * The prior of a question reflects the **gain in information** by asking the question  - in other words
+ it is inversely proportional to the expected conditional entropy of the distribution of problem posteriors.
+ * At every step a question is sampled proportional to it's posterior.
+ * The posteriors of a problem are updated according to the **confidence** level in your answer.
+ * The posteriors of a question are updated reflecting the information gain provided for this new distribution.
+ * The algorithm outputs the most popular problems by doing a 1 dimensional k-means (a.k.a
+[Jenks natural breaks](https://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization) ).
+ * A similar idea is applied to questions, at every step only the "most useful questions" are sampled from. 
+ * The program visualizes the changing distribution with a simple matplotlib plot.
  
 ## Other stuff
  
  * You can store the database files as a BSON object (stored in `database/db`).
  * To see the code organization see [organization.md](src/askminmax/organization.md)
- * Snakefood visualization of the code [food.pdf](src/askminmax/food.pdf)
  * Comes with a small default [database](database/db)
  
 ## Prerequisites: 
@@ -25,6 +28,9 @@ whether you want to refine the set further by asking more questions.
  - [pymongo](https://pypi.python.org/pypi/pymongo/)
  - [nltk](http://www.nltk.org/)
  - [jenks](https://github.com/perrygeo/jenks)
+ - [scipy](http://www.scipy.org/)
+ - [numpy](http://www.scipy.org/)
+ - [matplotlib](http://matplotlib.org/)
  - [scikit-learn](https://pypi.python.org/pypi/scikit-learn/0.16.1)
  - [gensim](https://pypi.python.org/pypi/gensim)
 
