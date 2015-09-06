@@ -2,6 +2,7 @@ import helper
 import random
 from scipy.stats import entropy
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 def get_separating_questions(problem1, problem2):
@@ -203,3 +204,25 @@ def get_entropy(db, most_likely_problem_hash=set()):
         else:
             p = np.append(p, problem['posterior'])
     return entropy(p)
+
+
+def plot_posteriors(db):
+    """ Plot the posteriors of the problems in the database
+    :param db: The Mongodb database
+    :return: None, plot the distribution of the posteriors of the problems
+    """
+    p = np.array([])
+    cursor = db.problems.find()
+    for problem in cursor:
+        p = np.append(p, problem['posterior'])
+    s = p.sum()
+    n = p.shape
+    for i in xrange(n[0]):
+        p[i] /= s
+    x = xrange(len(p))
+    plt.ion()
+    plt.clf()
+    plt.plot(x, p, 'bo', x, p, 'k')
+    plt.xlabel('Problems')
+    plt.ylabel('Posteriors')
+    plt.show()

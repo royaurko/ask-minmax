@@ -105,26 +105,26 @@ class Expert(object):
             question['posterior'] = question['prior']
             db.questions.update({'_id': question['_id']}, question)
 
-    def adjust_posteriors(self, question, response, confidence):
+    def adjust_posteriors(self, question, response, confidence, responses_known_so_far):
         """ Adjust the posteriors of problems and questions
         :param question: Dictionary of question whose posterior to adjust
         :param response: The response of user
         :param confidence: The confidence level of the user
+        :param responses_known_so_far: Dictionary mapping hash values of questions and the response
         :return: None, update db in place
         """
-        db = self.db
         # Adjust the posteriors of the problems
-        problems.adjust_posteriors(db, question, response, confidence)
+        problems.adjust_posteriors(self.db, question, response, confidence)
         # Update the posteriors of questions
-        questions.adjust_posteriors(db)
+        questions.adjust_posteriors(self.db, responses_known_so_far)
         # Set posterior of this question to 0, essentially it should not be asked again
         # question['posterior'] = 0
         # db.questions.update({'_id': question['_id']}, question)
 
     def ask_question(self, most_likely_questions):
-        """ Ask a question and update posteriors by calling adjust posteriors
+        """ Ask a question and return the question, response and confidence level
         :param most_likely_questions: Most likely set of questions as obtained from Jenks
-        :return: The dictionary of the question asked
+        :return: The dictionary of the question asked and the response given by the user
         """
         db = self.db
         count = db.questions.find().count()
@@ -161,10 +161,7 @@ class Expert(object):
                 break
             except ValueError:
                 helper.error_one_zero()
-        # Adjust the posteriors of the problems and questions
-        self.adjust_posteriors(question, response, confidence)
-        self.print_table()
-        return question
+        return question, response, confidence
 
     def predict_single(self):
         """ Predict a single problem by sampling once from problem posterior
@@ -254,35 +251,67 @@ class Expert(object):
         if response:
             database.dump_db()
 
+    def query_gvf_question(self):
+        """ Query goodness of fit value for the questions from user
+        :return: The dictionary items of the most likely questions
+        """
+        try:
+            question_gvf = float(raw_input('Goodness of fit of questions (default = 0.6) '))
+        except ValueError:
+            question_gvf = 0.6
+        most_likely_questions = self.fit_posteriors('questions', question_gvf)
+        return most_likely_questions
+
+    def query_gvf_problems(self):
+        """ Query goodness of fit value for the problems from user
+        :return: The dictionary items of the most likely problems
+        """
+        try:
+            problem_gvf = float(raw_input('Goodness of fit of problems (default = 0.8) '))
+        except ValueError:
+            problem_gvf = 0.8
+        most_likely_problems = self.fit_posteriors('problems', problem_gvf)
+        return most_likely_problems
+
     def control_prediction(self):
         """ Control flow of questions
         :return: None, just control the flow of prediction
         """
-        db = self.db
-        m = questions.max_posterior(db)
-        response = 1
-        most_likely_problems, asked_questions = set(), set()
+        m = questions.max_posterior(self.db)
+        continue_response = 1
+        most_likely_problems = set()
+        responses_known_so_far = dict()
         print 'Current total entropy = %0.2f' % problems.get_entropy(self.db)
-        while m > 0 and response:
-            most_likely_questions = self.fit_posteriors('questions', 0.6)
-            most_likely_questions = [q for q in most_likely_questions if q['hash'] not in asked_questions]
-            question = self.ask_question(most_likely_questions)
+        problems.plot_posteriors(self.db)
+        while m > 0 and continue_response:
+            # Get the most_likely questions
+            most_likely_questions = self.query_gvf_question()
+            # Ask a question and get response from user
+            question, response, confidence = self.ask_question(most_likely_questions)
             if question is None:
                 break
-            asked_questions.add(question['hash'])
-            try:
-                gvf = float(raw_input('Goodness of fit (default = 0.8) '))
-            except ValueError:
-                gvf = 0.8
-            most_likely_problems = self.fit_posteriors('problems', gvf)
-            most_likely_problem_names = [item['name'] for item in most_likely_problems]
+            # Update the history_of_responses dictionary item
+            responses_known_so_far[question['hash']] = (response, confidence)
+            # Adjust the posteriors of the problems and questions
+            self.adjust_posteriors(question, response, confidence, responses_known_so_far)
+            # Print the contents of the database
+            self.print_table()
+            # Get the most likely set of problems
+            most_likely_problems = self.query_gvf_problems()
+            # Print the most likely problems
+            most_likely_problem_names = set([item['name'] for item in most_likely_problems])
             print 'Popular problems that match your criteria:'
             problems.print_set(most_likely_problem_names)
+            # Print the current entropy level of the distribution
             print 'Current total entropy = %0.2f' % problems.get_entropy(self.db)
-            m = questions.max_posterior(db)
+            # Plot problem posteriors
+            problems.plot_posteriors(self.db)
+            # Update the maximum posterior value
+            m = questions.max_posterior(self.db)
+            # Query whether to continue
             while True:
                 try:
-                    response = int(raw_input('Ask more questions? (0/1) '))
+                    continue_response = int(raw_input('Ask more questions? (0/1) '))
                     break
                 except ValueError:
                     helper.error_one_zero()

@@ -102,20 +102,28 @@ def reset_priors(db):
     """
     cursor = db.questions.find()
     for q in cursor:
-        q['prior'] = change_in_entropy(db, q)
+        q['prior'] = 0.5*change_in_entropy(db, q, True) + 0.5*change_in_entropy(db, q, False)
         q['posterior'] = q['prior']
         db.questions.update({'_id': q['_id']}, q)
 
 
-def adjust_posteriors(db):
-    """ Update the log likelihood and posterior of the questions
-    :param db: The Mongodb database
+def adjust_posteriors(db, responses_known_so_far):
+    """ Update the posteriorsof the questions
+    :param db: The database
     :return: None, update db in place
     """
+    print 'responses  = ' + str(responses_known_so_far)
     cursor = db.questions.find()
     for q in cursor:
         # Update the posterior of a problem to reflect how much it brings down the entropy
-        q['posterior'] = change_in_entropy(db, q)
+        if q['hash'] in responses_known_so_far:
+            # If a question was asked already
+            response, confidence = responses_known_so_far[q['hash']]
+            q['posterior'] = confidence*change_in_entropy(db, q, response)
+            + (1 - confidence)*change_in_entropy(db, q, response ^ 1)
+        else:
+            # Question hasn't been asked yet, so assume either response is equally likely
+            q['posterior'] = 0.5*change_in_entropy(db, q, True) + 0.5*change_in_entropy(db, q, False)
         db.questions.update({'_id': q['_id']}, q)
 
 
@@ -136,38 +144,41 @@ def delete(db, question_id):
         db.problems.update({'_id': problem['_id']}, problem)
 
 
-def change_in_entropy(db, q):
+def change_in_entropy(db, q, response):
     """ The expected change in entropy when you ask this question, assuming each answer is equally likely
     :param db: The Mongodb database
     :param q: The dictionary of the question
-    :return: The expected change in entropy
+    :param response: The response to the question, either True or False
+    :return: The change in entropy
     """
     cursor = db.problems.find()
-    old_pvalues, yes_pvalues, no_pvalues = np.array([]), np.array([]), np.array([])
+    old_posterior_values, new_posterior_values = np.array([]), np.array([])
     # Get the old_pvalues
     for problem in cursor:
-        old_pvalues = np.append(old_pvalues, problem['posterior'])
+        old_posterior_values = np.append(old_posterior_values, problem['posterior'])
     # Compute the old entropy
-    old_entropy = entropy(old_pvalues)
-    # Change in entropy if we answer YES to this question
+    old_entropy = entropy(old_posterior_values)
+    # Change in entropy if the response to this question is YES/1/True
     cursor = db.problems.find()
-    for problem in cursor:
-        if problem['hash'] in q['negproblems']:
-            yes_pvalues = np.append(yes_pvalues, 0.0)
-        else:
-            yes_pvalues = np.append(yes_pvalues, problem['posterior'])
-    # Compute the YES entropy
-    yes_entropy = entropy(yes_pvalues)
-    # Change in entropy if we answer NO to this question
-    cursor = db.problems.find()
-    for problem in cursor:
-        if problem['hash'] in q['posproblems']:
-            no_pvalues = np.append(no_pvalues, 0.0)
-        else:
-            no_pvalues = np.append(no_pvalues, problem['posterior'])
-    # Compute the NO entropy
-    no_entropy = entropy(no_pvalues)
-    return old_entropy - 0.5*(yes_entropy + no_entropy)
+    if response:
+        # Yes answer
+        for problem in cursor:
+            if problem['hash'] in q['negproblems']:
+                new_posterior_values = np.append(new_posterior_values, 0.0)
+            else:
+                new_posterior_values = np.append(new_posterior_values, problem['posterior'])
+        # Compute the new entropy
+        new_entropy = entropy(new_posterior_values)
+    else:
+        # No answer
+        for problem in cursor:
+            if problem['hash'] in q['posproblems']:
+                new_posterior_values = np.append(new_posterior_values, 0.0)
+            else:
+                new_posterior_values = np.append(new_posterior_values, problem['posterior'])
+        # Compute the new entropy
+        new_entropy = entropy(new_posterior_values)
+    return old_entropy - new_entropy
 
 
 def print_set(question_names):
