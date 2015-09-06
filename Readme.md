@@ -8,14 +8,15 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
  * The prior of a problem is proportional to the number of times there is a query intended for that particular
   problem. 
  * The prior of a question reflects the **gain in information** by asking the question  - in other words
- it is inversely proportional to the expected conditional entropy of the distribution of problem posteriors.
+ it is inversely proportional to the **expected conditional entropy** of the distribution of problem posteriors
+ conditioned on the response to this question.
  * At every step a question is sampled proportional to it's posterior.
  * The posteriors of a problem are updated according to the **confidence** level in your answer.
  * The posteriors of a question are updated reflecting the information gain provided for this new distribution.
  * The algorithm outputs the most popular problems by doing a 1 dimensional k-means (a.k.a
 [Jenks natural breaks](https://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization) ).
- * A similar idea is applied to questions, at every step only the "most useful questions" are sampled from. 
- * The program visualizes the changing distribution with a simple matplotlib plot.
+ * A similar (clustering) idea is applied to questions, at every step only the "most useful questions" are sampled from. 
+ * You can visualizes the changing distribution in a simple matplotlib plot.
  
 ## Other stuff
  
