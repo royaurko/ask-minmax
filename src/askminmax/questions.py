@@ -1,6 +1,8 @@
 import random
 from scipy.stats import entropy
 import numpy as np
+import math
+import problems
 
 
 def print_list(db):
@@ -101,29 +103,33 @@ def reset_priors(db):
     :return: None, update db in place
     """
     cursor = db.questions.find()
+    old_entropy = problems.get_entropy(db)
     for q in cursor:
-        q['prior'] = 0.5*change_in_entropy(db, q, True) + 0.5*change_in_entropy(db, q, False)
+        c_entropy = 0.5*conditional_entropy(db, q, True) + 0.5*conditional_entropy(db, q, False)
+        q['prior'] = old_entropy - c_entropy
         q['posterior'] = q['prior']
         db.questions.update({'_id': q['_id']}, q)
 
 
-def adjust_posteriors(db, responses_known_so_far):
+def adjust_posteriors(db, responses_known_so_far, most_likely_problems):
     """ Update the posteriorsof the questions
     :param db: The database
+    :param responses_known_so_far: The responses known so far
+    :param most_likely_problems: The most likely set of problems
     :return: None, update db in place
     """
-    print 'responses  = ' + str(responses_known_so_far)
     cursor = db.questions.find()
+    old_entropy = problems.get_entropy(db, most_likely_problems)
     for q in cursor:
         # Update the posterior of a problem to reflect how much it brings down the entropy
         if q['hash'] in responses_known_so_far:
             # If a question was asked already
-            response, confidence = responses_known_so_far[q['hash']]
-            q['posterior'] = confidence*change_in_entropy(db, q, response)
-            + (1 - confidence)*change_in_entropy(db, q, response ^ 1)
+            q['posterior'] = 0.0
         else:
             # Question hasn't been asked yet, so assume either response is equally likely
-            q['posterior'] = 0.5*change_in_entropy(db, q, True) + 0.5*change_in_entropy(db, q, False)
+            c_entropy = 0.5*conditional_entropy(db, q, True, most_likely_problems) \
+                + 0.5*conditional_entropy(db, q, False, most_likely_problems)
+            q['posterior'] = old_entropy - c_entropy
         db.questions.update({'_id': q['_id']}, q)
 
 
@@ -144,41 +150,38 @@ def delete(db, question_id):
         db.problems.update({'_id': problem['_id']}, problem)
 
 
-def change_in_entropy(db, q, response):
-    """ The expected change in entropy when you ask this question, assuming each answer is equally likely
+def conditional_entropy(db, q, response, most_likely_problems=list()):
+    """ The conditional entropy H(posterior | response to q)
     :param db: The Mongodb database
-    :param q: The dictionary of the question
-    :param response: The response to the question, either True or False
-    :return: The change in entropy
+    :param q: The question
+    :param response: The response to the question
+    :param most_likely_problems: List of the most likely problems dictionary
+    :return: The conditional entropy H(posterior | response to q)
     """
+    posteriors = np.array([])
     cursor = db.problems.find()
-    old_posterior_values, new_posterior_values = np.array([]), np.array([])
-    # Get the old_pvalues
-    for problem in cursor:
-        old_posterior_values = np.append(old_posterior_values, problem['posterior'])
-    # Compute the old entropy
-    old_entropy = entropy(old_posterior_values)
-    # Change in entropy if the response to this question is YES/1/True
-    cursor = db.problems.find()
+    most_likely_problems_hash = set([item['hash'] for item in most_likely_problems])
     if response:
-        # Yes answer
         for problem in cursor:
+            if most_likely_problems_hash:
+                if problem['hash'] not in most_likely_problems_hash:
+                    continue
             if problem['hash'] in q['negproblems']:
-                new_posterior_values = np.append(new_posterior_values, 0.0)
+                posteriors = np.append(posteriors, 0.0)
             else:
-                new_posterior_values = np.append(new_posterior_values, problem['posterior'])
-        # Compute the new entropy
-        new_entropy = entropy(new_posterior_values)
+                posteriors = np.append(posteriors, problem['posterior'])
     else:
-        # No answer
         for problem in cursor:
+            if most_likely_problems_hash:
+                if problem['hash'] not in most_likely_problems_hash:
+                    continue
             if problem['hash'] in q['posproblems']:
-                new_posterior_values = np.append(new_posterior_values, 0.0)
+                posteriors = np.append(posteriors, 0.0)
             else:
-                new_posterior_values = np.append(new_posterior_values, problem['posterior'])
-        # Compute the new entropy
-        new_entropy = entropy(new_posterior_values)
-    return old_entropy - new_entropy
+                posteriors = np.append(posteriors, problem['posterior'])
+    if np.any(posteriors):
+        return entropy(posteriors)
+    return 0.0
 
 
 def print_set(question_names):

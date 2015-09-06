@@ -105,21 +105,24 @@ class Expert(object):
             question['posterior'] = question['prior']
             db.questions.update({'_id': question['_id']}, question)
 
-    def adjust_posteriors(self, question, response, confidence, responses_known_so_far):
-        """ Adjust the posteriors of problems and questions
+    def adjust_question_posteriors(self, responses_known_so_far, most_likely_problems):
+        """ Adjust the posteriors of the questions
+        :param responses_known_so_far: Dictionary mapping hash values of questions and the response
+        :param most_likely_problems: The most likely problems returned by Jenks/k-means
+        :return: None, update db in place
+        """
+        # Update the posteriors of questions
+        questions.adjust_posteriors(self.db, responses_known_so_far, most_likely_problems)
+
+    def adjust_problem_posteriors(self, question, response, confidence):
+        """ Adjust the posteriors of problems
         :param question: Dictionary of question whose posterior to adjust
         :param response: The response of user
         :param confidence: The confidence level of the user
-        :param responses_known_so_far: Dictionary mapping hash values of questions and the response
         :return: None, update db in place
         """
         # Adjust the posteriors of the problems
         problems.adjust_posteriors(self.db, question, response, confidence)
-        # Update the posteriors of questions
-        questions.adjust_posteriors(self.db, responses_known_so_far)
-        # Set posterior of this question to 0, essentially it should not be asked again
-        # question['posterior'] = 0
-        # db.questions.update({'_id': question['_id']}, question)
 
     def ask_question(self, most_likely_questions):
         """ Ask a question and return the question, response and confidence level
@@ -279,7 +282,7 @@ class Expert(object):
         """
         m = questions.max_posterior(self.db)
         continue_response = 1
-        most_likely_problems = set()
+        most_likely_problems = list()
         responses_known_so_far = dict()
         print 'Current total entropy = %0.2f' % problems.get_entropy(self.db)
         problems.plot_posteriors(self.db)
@@ -292,12 +295,14 @@ class Expert(object):
                 break
             # Update the history_of_responses dictionary item
             responses_known_so_far[question['hash']] = (response, confidence)
-            # Adjust the posteriors of the problems and questions
-            self.adjust_posteriors(question, response, confidence, responses_known_so_far)
+            # Adjust the posteriors of the problems
+            self.adjust_problem_posteriors(question, response, confidence)
             # Print the contents of the database
             self.print_table()
             # Get the most likely set of problems
             most_likely_problems = self.query_gvf_problems()
+            # Update the posteriors of the questions
+            self.adjust_question_posteriors(responses_known_so_far, most_likely_problems)
             # Print the most likely problems
             most_likely_problem_names = set([item['name'] for item in most_likely_problems])
             print 'Popular problems that match your criteria:'

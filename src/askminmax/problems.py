@@ -189,17 +189,18 @@ def delete(db, problem_id):
         db.questions.update({'_id': question['_id']}, question)
 
 
-def get_entropy(db, most_likely_problem_hash=set()):
+def get_entropy(db, most_likely_problems=list()):
     """ Get the entropy of the posteriors
     :param db: The Mongodb database
-    :param most_likely_problem_hash: Optional argument, if provided confine only to this set
+    :param most_likely_problems: Optional argument, if provided confine only to this set
     :return: The entropy of the posterior distribution of the problems
     """
     p = np.array([])
     cursor = db.problems.find()
+    most_likely_problems_hash = set([item['hash'] for item in most_likely_problems])
     for problem in cursor:
-        if most_likely_problem_hash:
-            if problem['hash'] in most_likely_problem_hash:
+        if most_likely_problems_hash:
+            if problem['hash'] in most_likely_problems_hash:
                 p = np.append(p, problem['posterior'])
         else:
             p = np.append(p, problem['posterior'])
