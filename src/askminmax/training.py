@@ -41,7 +41,7 @@ def training(n, db):
             continue
         else:
             # It was not the right guess: get the correct problem
-            correct, correct_hash = sepquestions.getcorrectproblem(db)
+            correct, correct_hash = sepquestions.get_correct_problem(db)
             # Ask for a separating question
             sepquestions.ask_separating_question(db, problem, correct, correct_hash)
             # Increment the prior for the correct problem and set its posterior equal to prior

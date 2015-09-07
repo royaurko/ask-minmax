@@ -4,7 +4,7 @@ import questions
 import problems
 
 
-def getcorrectproblem(db):
+def get_correct_problem(db):
     """ Query the correct problem from the user and return its dictionary
     :param db: The Mongodb database
     :return: The dictionary item for the correct problem
@@ -39,12 +39,12 @@ def display_separating_questions(db, wrong, correct, question_idx_to_id):
     question_id_to_idx = {v: k for k, v in question_idx_to_id.items()}
     # Get the list of separating questions
     neg_q, pos_q = problems.get_separating_questions(wrong, correct)
-    list1, list2  = list(), list()
-    for qhash in pos_q:
-        question = db.questions.find_one({'hash': qhash})
+    list1, list2 = list(), list()
+    for question_hash in pos_q:
+        question = db.questions.find_one({'hash': question_hash})
         list1.append(question_id_to_idx[question['_id']])
-    for qhash in neg_q:
-        question = db.questions.find_one({'hash': qhash})
+    for question_hash in neg_q:
+        question = db.questions.find_one({'hash': question_hash})
         list2.append(question_id_to_idx[question['_id']])
     print('YES for ' + correct['name'] + ' NO for ' + wrong['name'] + ': ')
     print(list1)
@@ -117,26 +117,25 @@ def parse_negative_single_question(db, wrong, correct):
     """
     # First query the user for a question that is NO for correct problem and YES for wrong one
     q_string = 'Enter a question that is NO for ' + correct['name'] + ' and YES for ' + wrong['name'] + ':\n '
-    neg_qname = helper.strip(raw_input(q_string))
-    if not neg_qname:
+    neg_question_name = helper.strip(raw_input(q_string))
+    if not neg_question_name:
         # User did not enter a new negative question
         return []
     # Get the hash value of the question
-    neg_qhashval = helper.gethashval(neg_qname)
+    neg_question_hash_value = helper.gethashval(neg_question_name)
     # Check if the question is already in our database
-    neg_question = db.questions.find_one({'hash': neg_qhashval})
+    neg_question = db.questions.find_one({'hash': neg_question_hash_value})
     if neg_question is None:
         # This is a new negative question, upload to DB
-        posproblems = [wrong['hash']]
-        negproblems = [correct['hash']]
+        positive_problems = [wrong['hash']]
+        negative_problems = [correct['hash']]
         prior = 0
         posterior = 0
-        loglikelihood = 0.0
-        d = {'name': neg_qname, 'hash': neg_qhashval, 'prior': prior,
-             'posterior': posterior, 'posproblems': posproblems,
-             'negproblems': negproblems, 'loglikelihood': loglikelihood}
+        d = {'name': neg_question_name, 'hash': neg_question_hash_value, 'prior': prior,
+             'posterior': posterior, 'posproblems': positive_problems,
+             'negproblems': negative_problems}
         db.questions.insert_one(d)
-    return [neg_qhashval]
+    return [neg_question_hash_value]
 
 
 def parse_positive_single_question(db, wrong, correct):
@@ -148,26 +147,24 @@ def parse_positive_single_question(db, wrong, correct):
     """
     # First query the user for a question that is YES for correct problem and NO for wrong one
     q_string = 'Enter a question that is YES for ' + correct['name'] + ' and NO for ' + wrong['name'] + ':\n '
-    pos_qname = helper.strip(raw_input(q_string))
-    if not pos_qname:
+    positive_question_name = helper.strip(raw_input(q_string))
+    if not positive_question_name:
         # User did not enter a positive question
         return []
     # Get the hash value of the question
-    pos_qhashval = helper.gethashval(pos_qname)
+    positive_question_hash_value = helper.gethashval(positive_question_name)
     # Check if the question is already in our database
-    pos_question = db.questions.find_one({'hash': pos_qhashval})
-    if pos_question is None:
+    positive_question = db.questions.find_one({'hash': positive_question_hash_value})
+    if positive_question is None:
         # This is a new positive question, upload to DB with priors and posteriors 0
-        posproblems = [correct['hash']]
-        negproblems = [wrong['hash']]
+        positive_problems = [correct['hash']]
+        negative_problems = [wrong['hash']]
         prior = 0
         posterior = 0
-        loglikelihood = 0.0
-        question = {'name': pos_qname, 'hash': pos_qhashval, 'prior': prior,
-             'posterior': posterior, 'posproblems': posproblems,
-             'negproblems': negproblems, 'loglikelihood': loglikelihood}
+        question = {'name': positive_question_name, 'hash': positive_question_hash_value, 'prior': prior,
+                    'posterior': posterior, 'posproblems': positive_problems, 'negproblems': negative_problems}
         db.questions.insert_one(question)
-    return [pos_qhashval]
+    return [positive_question_hash_value]
 
 
 def parse_negative_list_questions(db, wrong, correct, question_idx_to_id):
@@ -180,21 +177,21 @@ def parse_negative_list_questions(db, wrong, correct, question_idx_to_id):
     """
     while True:
         try:
-            q_string = 'Enter question numbers that are NO for ' \
+            question_string = 'Enter question numbers that are NO for ' \
                        + correct['name'] + ' and YES for ' + wrong['name'] + ':\n '
-            neg_list = raw_input(q_string)
-            neg_list = map(int, neg_list.strip().split())
-            neg_qid_list = [question_idx_to_id[x] for x in neg_list]
+            negative_list = raw_input(question_string)
+            negative_list = map(int, negative_list.strip().split())
+            negative_question_id_list = [question_idx_to_id[x] for x in negative_list]
             break
         except ValueError:
             helper.error_spaces()
         except KeyError:
             helper.error_key()
-    neg_qhash_list = list()
-    for item in neg_qid_list:
-        hashval = db.questions.find_one({'_id': item})['hash']
-        neg_qhash_list.append(hashval)
-    return neg_qhash_list
+    negative_question_hash_list = list()
+    for item in negative_question_id_list:
+        hash_value = db.questions.find_one({'_id': item})['hash']
+        negative_question_hash_list.append(hash_value)
+    return negative_question_hash_list
 
 
 def parse_positive_list_questions(db, wrong, correct, question_idx_to_id):
@@ -207,28 +204,28 @@ def parse_positive_list_questions(db, wrong, correct, question_idx_to_id):
     """
     while True:
         try:
-            q_string = 'Enter question numbers that are YES for ' \
+            question_string = 'Enter question numbers that are YES for ' \
                        + correct['name'] + ' and NO for ' + wrong['name'] + ':\n '
-            pos_list = raw_input(q_string)
-            pos_list = map(int, pos_list.strip().split())
-            pos_qid_list = [question_idx_to_id[x] for x in pos_list]
+            positive_list = raw_input(question_string)
+            positive_list = map(int, positive_list.strip().split())
+            positive_question_id_list = [question_idx_to_id[x] for x in positive_list]
             break
         except ValueError:
             helper.error_spaces()
         except KeyError:
             helper.error_key()
-    pos_qhash_list = list()
-    for item in pos_qid_list:
-        hashval = db.questions.find_one({'_id': item})['hash']
-        pos_qhash_list.append(hashval)
-    return pos_qhash_list
+    positive_question_hash_list = list()
+    for item in positive_question_id_list:
+        hash_value = db.questions.find_one({'_id': item})['hash']
+        positive_question_hash_list.append(hash_value)
+    return positive_question_hash_list
 
 
-def set_problem_lists(db, qhash, wrong, correct, flag):
+def set_problem_lists(db, question_hash, wrong, correct, flag):
     """ Modify the positive and negative lists of the correct and wrong problem
     :param db: The Mongodb database
-    :param qhash: The hash value of the question
-    :param problem: The dictionary for the wrong problem
+    :param question_hash: The hash value of the question
+    :param wrong: The dictionary for the wrong problem
     :param correct: The dictionary for the correct problem
     :param flag: Indicates whether it is a positive or a negative separating question
     :return: None, modify the database
@@ -242,25 +239,25 @@ def set_problem_lists(db, qhash, wrong, correct, flag):
     if '_id' in correct:
         # Add question hash value to appropriate list of the problem
         l = correct[correct_list_name]
-        if qhash not in l:
-            l.append(qhash)
+        if question_hash not in l:
+            l.append(question_hash)
             db.problems.update({'_id': correct['_id']}, {
                 '$set': {correct_list_name: l}
             })
     else:
         # It is a new problem, populate its values
         if flag:
-            posquestions = [qhash]
-            negquestions = list()
+            positive_questions = [question_hash]
+            negative_questions = list()
         else:
-            posquestions = list()
-            negquestions = [qhash]
-        correct['posquestions'] = posquestions
-        correct['negquestions'] = negquestions
+            positive_questions = list()
+            negative_questions = [question_hash]
+        correct['posquestions'] = positive_questions
+        correct['negquestions'] = negative_questions
         db.problems.insert_one(correct)
     wrong_list = wrong[wrong_list_name]
-    if qhash not in wrong_list:
-        wrong_list.append(qhash)
+    if question_hash not in wrong_list:
+        wrong_list.append(question_hash)
         db.problems.update_one({'_id': wrong['_id']}, {
             '$set': {wrong_list_name: wrong_list}
         })

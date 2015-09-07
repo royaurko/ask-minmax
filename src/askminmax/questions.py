@@ -112,7 +112,7 @@ def reset_priors(db):
 
 
 def adjust_posteriors(db, responses_known_so_far, most_likely_problems):
-    """ Update the posteriorsof the questions
+    """ Update the posteriors of the questions
     :param db: The database
     :param responses_known_so_far: The responses known so far
     :param most_likely_problems: The most likely set of problems

@@ -42,7 +42,7 @@ class Expert(object):
         self.db = db
 
     def train(self):
-        """ Just call the train subroutine from training to learn separating questions
+        """ Call the train subroutine from training to learn separating questions
         :return: None, modify db in place
         """
         training.train(self.db)
@@ -233,7 +233,7 @@ class Expert(object):
             map(lambda x: problems.increment(self.db, x), most_likely_hash)
         else:
             # Incorrect problem
-            correct = sepquestions.getcorrectproblem(self.db)
+            correct = sepquestions.get_correct_problem(self.db)
             for hash_value in most_likely_hash:
                 if hash_value != correct['hash']:
                     wrong = self.db.problems.find_one({'hash': hash_value})
@@ -327,7 +327,7 @@ class Expert(object):
         print(star)
 
     def fit_posteriors(self, document, desired_gvf=0.8):
-        """ Try to cluster the posteriors using Jenks Natural Breaks algorithm
+        """ Cluster the posteriors using Jenks Natural Breaks algorithm
         :param document: document in {problems, questions}
         :param desired_gvf: A number between [0, 1] showing goodness of fit
         :return: A list of the dictionary of the most likely problems/questions

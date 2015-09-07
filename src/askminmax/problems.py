@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 def get_separating_questions(problem1, problem2):
-    """ Print the separating questions already in our database between problem1 and problem2
+    """ Return the separating questions already in our database between problem1 and problem2
     :param db: The Mongodb database
     :param problem1: The dictionary of problem #1
     :param problem2: The dictionary of problem #2
@@ -60,7 +60,7 @@ def increment(db, problem_hash, n=1):
 
 
 def sample(db, p):
-    """
+    """ Sample a problem from the database according to its p-value
     :param db: The Mongodb database
     :param p: A string that is either 'prior' or 'posterior' depending on what we want to sample from
     :return: A problem sampled from the problems database according to p
