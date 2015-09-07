@@ -546,13 +546,14 @@ class Expert(object):
                          'posproblems': positive_list, 'negproblems': negative_list}
             })
 
-    def download(self, keywords):
+    def download(self, flag, keywords):
         """ Download papers from arxiv, integration with word2vec
+        :param flag: flag in {Yes, No}, if Yes downloads pdfs too
         :return: None, update db in place
         """
         try:
             keywords = keywords.strip().split(",")
-            arxiv.download(self.db, keywords)
+            arxiv.download(self.db, flag, keywords)
         except KeyboardInterrupt:
             self.query_backup()
 
@@ -582,4 +583,4 @@ class Expert(object):
         """ Run the Word2Vec model on the papers and k-means
         :return: None for now
         """
-        cluster.clusterTests(self.db)
+        cluster.cluster_tests(self.db)
