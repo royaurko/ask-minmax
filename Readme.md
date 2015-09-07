@@ -25,13 +25,17 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
  * Comes with a small default [database](database/db)
  
 ## Prerequisites: 
+ - Python 2.7
  - A running [Mongodb](https://www.mongodb.org/) server 
  - [pymongo](https://pypi.python.org/pypi/pymongo/)
- - [nltk](http://www.nltk.org/)
  - [jenks](https://github.com/perrygeo/jenks)
  - [scipy](http://www.scipy.org/)
  - [numpy](http://www.scipy.org/)
  - [matplotlib](http://matplotlib.org/)
+ 
+ The following dependencies are due to Google's word2vec model, this part is still work in progress.
+ 
+ - [nltk](http://www.nltk.org/)
  - [scikit-learn](https://pypi.python.org/pypi/scikit-learn/0.16.1)
  - [gensim](https://pypi.python.org/pypi/gensim)
 

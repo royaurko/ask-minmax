@@ -213,17 +213,19 @@ def plot_posteriors(db):
     :return: None, plot the distribution of the posteriors of the problems
     """
     p = np.array([])
+    x = list()
     cursor = db.problems.find()
     for problem in cursor:
         p = np.append(p, problem['posterior'])
+        x.append(problem['name'])
     s = p.sum()
     n = p.shape
     for i in xrange(n[0]):
         p[i] /= s
-    x = xrange(len(p))
+    plt.figure(1, [10, 8])
     plt.ion()
     plt.clf()
-    plt.plot(x, p, 'bo', x, p, 'k')
+    plt.plot(xrange(len(p)), p, 'bo', xrange(len(p)), p, 'k')
     plt.xlabel('Problems')
     plt.ylabel('Posteriors')
     plt.show()
