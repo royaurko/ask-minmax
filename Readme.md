@@ -15,7 +15,10 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
  * The posteriors of a question are updated reflecting the information gain provided for this new distribution.
  * The algorithm outputs the most popular problems by doing a 1 dimensional k-means (a.k.a
 [Jenks natural breaks](https://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization) ).
- * A similar (clustering) idea is applied to questions, at every step only the "most useful questions" are sampled from. 
+ * A similar (clustering) idea is applied to questions, at every step only the "most useful questions" are
+  sampled from.
+ * The algorithm is greedy in the sense that it only cares about questions that reduce the entropy on the
+ posterior distribution supported on the "most relevant" (coming from Jenks/k-means) problems.
  * You can visualizes the changing distribution in a simple matplotlib plot.
  
 ## Other stuff
@@ -32,9 +35,7 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
  * [scipy](http://www.scipy.org/)
  * [numpy](http://www.scipy.org/)
  * [matplotlib](http://matplotlib.org/)
- 
- The following dependencies are due to Google's word2vec model, this part is still work in progress.
- 
+ The following dependencies are due to Google's word2vec model (this part is work in progress):
  * [nltk](http://www.nltk.org/)
  * [scikit-learn](https://pypi.python.org/pypi/scikit-learn/0.16.1)
  * [gensim](https://pypi.python.org/pypi/gensim)
