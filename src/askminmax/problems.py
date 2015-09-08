@@ -228,4 +228,5 @@ def plot_posteriors(db):
     plt.plot(xrange(len(p)), p, 'bo', xrange(len(p)), p, 'k')
     plt.xlabel('Problems')
     plt.ylabel('Posteriors')
+    plt.ylim((0, 1))
     plt.show()
