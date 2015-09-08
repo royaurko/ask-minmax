@@ -546,14 +546,14 @@ class Expert(object):
                          'posproblems': positive_list, 'negproblems': negative_list}
             })
 
-    def download(self, flag, keywords):
+    def download(self, flag, max_results, keywords):
         """ Download papers from arxiv, integration with word2vec
         :param flag: flag in {Yes, No}, if Yes downloads pdfs too
         :return: None, update db in place
         """
         try:
             keywords = keywords.strip().split(",")
-            arxiv.download(self.db, flag, keywords)
+            arxiv.download(self.db, flag, max_results, keywords)
         except KeyboardInterrupt:
             self.query_backup()
 
