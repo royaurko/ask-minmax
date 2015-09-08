@@ -35,6 +35,7 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
  * [scipy](http://www.scipy.org/)
  * [numpy](http://www.scipy.org/)
  * [matplotlib](http://matplotlib.org/)
+ 
  The following dependencies are due to Google's word2vec model (this part is work in progress):
  * [nltk](http://www.nltk.org/)
  * [scikit-learn](https://pypi.python.org/pypi/scikit-learn/0.16.1)
