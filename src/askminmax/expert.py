@@ -497,23 +497,22 @@ class Expert(object):
         if question is None:
             # New question
             table = 'problems'
-            property = 'prior'
+            item_property = 'prior'
             # Get mass of YES problems
             pos_mass, neg_mass = 0, 0
             if pos_problems:
-                q_posproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), pos_problems)
-                pos_mass = reduce(lambda x, y: x + y, q_posproblem_mass)
+                q_positive_problem_mass = map(lambda x: helper.mass(self.db, table, x, item_property), pos_problems)
+                pos_mass = reduce(lambda x, y: x + y, q_positive_problem_mass)
             # Get mass of NO problems
             if neg_problems:
-                q_negproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), neg_problems)
-                neg_mass = reduce(lambda x, y: x + y, q_negproblem_mass)
+                q_negative_problem_mass = map(lambda x: helper.mass(self.db, table, x, item_property), neg_problems)
+                neg_mass = reduce(lambda x, y: x + y, q_negative_problem_mass)
             # Define prior as total mass of pairs separated
             prior = pos_mass * neg_mass
             posterior = prior
-            loglikelihood = 0.0
             d = {'name': question_name, 'hash': question_hash, 'prior': prior,
              'posterior': posterior, 'posproblems': pos_problems,
-             'negproblems': neg_problems, 'loglikelihood': loglikelihood}
+             'negproblems': neg_problems}
             self.db.questions.insert_one(d)
         else:
             # Question already existed, append pos_problems and neg_problems to it
@@ -528,16 +527,16 @@ class Expert(object):
                 if neg_problems[i] not in negative_set:
                     negative_list.append(neg_problems[i])
             table = 'problems'
-            property = 'prior'
+            item_property = 'prior'
             # Get mass of YES problems
             pos_mass, neg_mass = 0, 0
             if positive_list:
-                q_posproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), positive_list)
-                pos_mass = reduce(lambda x, y: x + y, q_posproblem_mass)
+                q_positive_problem_mass = map(lambda x: helper.mass(self.db, table, x, item_property), positive_list)
+                pos_mass = reduce(lambda x, y: x + y, q_positive_problem_mass)
             # Get mass of NO problems
             if negative_list:
-                q_negproblem_mass = map(lambda x: helper.mass(self.db, table, x, property), negative_list)
-                neg_mass = reduce(lambda x, y: x + y, q_negproblem_mass)
+                q_negative_problem_mass = map(lambda x: helper.mass(self.db, table, x, item_property), negative_list)
+                neg_mass = reduce(lambda x, y: x + y, q_negative_problem_mass)
             # Define prior as total mass of pairs separated
             prior = pos_mass * neg_mass
             posterior = prior
@@ -579,8 +578,9 @@ class Expert(object):
             item['prior'] = n
             self.db.problems.update({'_id': item['_id']}, item)
 
-    def cluster(self):
+    def cluster(self, flag=0):
         """ Run the Word2Vec model on the papers and k-means
+        :param flag: If flag is 1 then run on full papers, otherwise only on abstracts
         :return: None for now
         """
-        cluster.cluster_tests(self.db)
+        cluster.cluster_tests(self.db, flag)

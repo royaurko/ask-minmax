@@ -1,5 +1,4 @@
 import gensim
-from nltk.data import load
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
@@ -9,28 +8,33 @@ import re
 
 
 class MySentences(object):
-    def __init__(self, db):
+    def __init__(self, db, flag):
         """ Constructor for a sentence, used to create an iterator for better memory usage
         :param db: The Mongodb database
+        :param flag: If flag is 1 run it on full papers, else on abstracts
         :return: None, create MySentence instance
         """
         self.db = db
+        self.flag = flag
 
-    def small_words(self, word_tokens):
+    @staticmethod
+    def small_words(word_tokens):
         """ Remove all words from word_tokens that are smaller in length than 3, convert to lowercase
         :param word_tokens: Word tokens
         :return: Word tokens with small words removed, converted to lowercase
         """
         return [w.lower() for w in word_tokens if len(w) >= 3]
 
-    def scrunch(self, text):
+    @staticmethod
+    def scrunch(text):
         """ Remove non-alpha characters from text
         :param text: Text to scrunch
         :return: Scrunched text
         """
         return re.sub('[^a-zA-Z]+', ' ', text)
 
-    def remove_stop(self, word_tokens):
+    @staticmethod
+    def remove_stop(word_tokens):
         """ Return new word_token with stop words removed
         :param word_tokens:
         :return:
@@ -43,7 +47,10 @@ class MySentences(object):
         """
         cursor = self.db.papers.find()
         for item in cursor:
-            text = item['text']
+            if self.flag:
+                text = item['text']
+            else:
+                text = item['summary']
             # Convert to utf-8
             text = text.encode('utf-8')
             # tokens = self.word_tokenize(text)
@@ -87,12 +94,13 @@ def word2vec_clusters(model):
             print(words)
 
 
-def cluster_tests(db):
+def cluster_tests(db, flag):
     """ Call Word2Vec
     :param db: The Mongodb database
+    :param flag: If flag is 1 then run cluster on full papers, else run on abstracts
     :return: None, call k-means from w2vClusters(corpus)
     """
-    sentences = MySentences(db)
+    sentences = MySentences(db, flag)
     # For now let the parameters be default
     print("Training word2vec model...")
     model = gensim.models.Word2Vec(sentences, min_count=5)
