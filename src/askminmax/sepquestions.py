@@ -22,7 +22,7 @@ def get_correct_problem(db):
     else:
         # Correct problem is not in our database
         correct_name = helper.strip(raw_input('What is the correct problem?\n'))
-        correct_hash = helper.gethashval(correct_name)
+        correct_hash = helper.get_hash(correct_name)
         # Create a blank dictionary item for this new problem
         correct = {'name': correct_name, 'hash': correct_hash,
                    'prior': 1, 'posterior': 1, 'posquestions': [], 'negquestions': []}
@@ -60,7 +60,7 @@ def ask_separating_question(db, wrong, correct):
     :return: None
     """
     # Print questions and get the dictionary mapping printed indices to Mongodb id's
-    question_idx_to_id = questions.printlist(db)
+    question_idx_to_id = questions.print_list(db)
     # Display the existing separating questions in the database
     display_separating_questions(db, wrong, correct, question_idx_to_id)
     while True:
@@ -94,7 +94,7 @@ def get_problem_from_list(db):
     :param db: The Mongodb database
     :return: The dictionary item for the correct problem
     """
-    problem_idx_to_id = problems.printlist(db)
+    problem_idx_to_id = problems.print_list(db)
     while True:
         try:
             idx = int(raw_input('Enter correct problem number: '))
@@ -122,7 +122,7 @@ def parse_negative_single_question(db, wrong, correct):
         # User did not enter a new negative question
         return []
     # Get the hash value of the question
-    neg_question_hash_value = helper.gethashval(neg_question_name)
+    neg_question_hash_value = helper.get_hash(neg_question_name)
     # Check if the question is already in our database
     neg_question = db.questions.find_one({'hash': neg_question_hash_value})
     if neg_question is None:
@@ -152,7 +152,7 @@ def parse_positive_single_question(db, wrong, correct):
         # User did not enter a positive question
         return []
     # Get the hash value of the question
-    positive_question_hash_value = helper.gethashval(positive_question_name)
+    positive_question_hash_value = helper.get_hash(positive_question_name)
     # Check if the question is already in our database
     positive_question = db.questions.find_one({'hash': positive_question_hash_value})
     if positive_question is None:
