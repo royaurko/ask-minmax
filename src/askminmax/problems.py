@@ -215,9 +215,11 @@ def plot_posteriors(db):
     p = np.array([])
     x = list()
     cursor = db.problems.find()
+    count = 0
     for problem in cursor:
         p = np.append(p, problem['posterior'])
         x.append(problem['name'])
+        count += 1
     s = p.sum()
     n = p.shape
     for i in xrange(n[0]):
@@ -229,4 +231,5 @@ def plot_posteriors(db):
     plt.xlabel('Problems')
     plt.ylabel('Posteriors')
     plt.ylim((0, 1))
+    plt.xlim((0, count-1))
     plt.show()
