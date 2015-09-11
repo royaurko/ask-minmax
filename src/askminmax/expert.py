@@ -298,12 +298,12 @@ class Expert(object):
             responses_known_so_far[question['hash']] = (response, confidence)
             # Adjust the posteriors of the problems
             self.adjust_problem_posteriors(question, response, confidence)
-            # Print the contents of the database
-            self.print_table()
             # Get the most likely set of problems
             most_likely_problems = self.query_gvf_problems()
             # Update the posteriors of the questions
             self.adjust_question_posteriors(responses_known_so_far, most_likely_problems)
+            # Print the contents of the database
+            self.print_table()
             # Print the most likely problems
             most_likely_problem_names = set([item['name'] for item in most_likely_problems])
             print('Popular problems that match your criteria:')
@@ -563,20 +563,27 @@ class Expert(object):
         cursor = self.db.papers.find()
         return cursor.count()
 
-    def make_uniform(self):
+    def make_uniform(self, n):
         """ Make the priors of all the problems in the database uniform
+        :param n: Set the priors to n
         :return: None, update DB in place
         """
-        while True:
-            try:
-                n = int(raw_input('Make prior for every problem = '))
-                break
-            except ValueError:
-                helper.error_number()
         cursor = self.db.problems.find()
         for item in cursor:
             item['prior'] = n
             self.db.problems.update({'_id': item['_id']}, item)
+
+    def view_problem_structure(self):
+        """ View the YES questions and NO questions of a problem
+        :return: None
+        """
+        problems.view_questions(self.db)
+
+    def view_question_structure(self):
+        """ View the YES problems and NO problems of a question
+        :return:None
+        """
+        questions.view_problems(self.db)
 
     def cluster(self, flag=0):
         """ Run the Word2Vec model on the papers and k-means

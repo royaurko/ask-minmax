@@ -66,7 +66,7 @@ def ask_separating_question(db, wrong, correct):
     while True:
         try:
             s = 'Question separating ' + wrong['name'] + ' from ' + correct['name']
-            s = s + ' in the DB (0/1)? '
+            s += ' in the DB (0/1)? '
             response = int(raw_input(s))
             break
         except ValueError:

@@ -1,6 +1,7 @@
 from __future__ import print_function
 import random
 from scipy.stats import entropy
+import helper
 import numpy as np
 import problems
 
@@ -127,8 +128,9 @@ def adjust_posteriors(db, responses_known_so_far, most_likely_problems):
             q['posterior'] = 0.0
         else:
             # Question hasn't been asked yet, so assume either response is equally likely
-            c_entropy = 0.5*conditional_entropy(db, q, True, most_likely_problems) \
-                + 0.5*conditional_entropy(db, q, False, most_likely_problems)
+            yes_entropy = conditional_entropy(db, q, True, most_likely_problems)
+            no_entropy = conditional_entropy(db, q, False, most_likely_problems)
+            c_entropy = 0.5 * yes_entropy + 0.5 * no_entropy
             q['posterior'] = old_entropy - c_entropy
         db.questions.update({'_id': q['_id']}, q)
 
@@ -163,6 +165,7 @@ def conditional_entropy(db, q, response, most_likely_problems=list()):
     most_likely_problems_hash = set([item['hash'] for item in most_likely_problems])
     if response:
         for problem in cursor:
+            # If the most_likely_problems set is not empty then
             if most_likely_problems_hash:
                 if problem['hash'] not in most_likely_problems_hash:
                     continue
@@ -182,6 +185,35 @@ def conditional_entropy(db, q, response, most_likely_problems=list()):
     if np.any(posteriors):
         return entropy(posteriors)
     return 0.0
+
+
+def view_problems(db):
+    """ View the YES problems and the NO problems of a question
+    :param db: The Mongodb database
+    :return: None, print the YES problems and the NO problems
+    """
+    question_idx_to_id = print_list(db)
+    while True:
+        try:
+            idx = int(raw_input('Enter question number: '))
+            question_id = question_idx_to_id[idx]
+            break
+        except ValueError:
+            helper.error_number()
+        except KeyError:
+            helper.error_key()
+    print('YES problems: ')
+    print('{', end=' ')
+    question = db.questions.find_one({'_id': question_id})
+    for problem_hash in question['posproblems']:
+        problem = db.problems.find_one({'hash': problem_hash})
+        print(problem['name'], end=', ')
+    print('}')
+    print('NO problems: ')
+    for problem_hash in question['negproblems']:
+        problem = db.problems.find_one({'hash': problem_hash})
+        print(problem['name'], end=', ')
+    print('}')
 
 
 def print_set(question_names):

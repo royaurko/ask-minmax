@@ -207,6 +207,36 @@ def get_entropy(db, most_likely_problems=list()):
     return entropy(p)
 
 
+def view_questions(db):
+    """ View the YES questions and the NO questions of a problem
+    :param db: The Mongodb database
+    :return: None, print the YES questions and the NO questions
+    """
+    problem_idx_to_id = print_list(db)
+    while True:
+        try:
+            idx = int(raw_input('Enter problem number: '))
+            problem_id = problem_idx_to_id[idx]
+            break
+        except ValueError:
+            helper.error_number()
+        except KeyError:
+            helper.error_key()
+    print('YES questions: ')
+    print('{', end=' ')
+    problem = db.problems.find_one({'_id': problem_id})
+    for question_hash in problem['posquestions']:
+        question = db.questions.find_one({'hash': question_hash})
+        print(question['name'], end=', ')
+    print('}')
+    print('NO questions: ')
+    print('{', end=' ')
+    for question_hash in problem['negquestions']:
+        question = db.questions.find_one({'hash': question_hash})
+        print(question['name'], end=', ')
+    print(' }')
+
+
 def plot_posteriors(db):
     """ Plot the posteriors of the problems in the database
     :param db: The Mongodb database
