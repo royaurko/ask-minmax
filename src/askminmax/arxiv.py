@@ -87,7 +87,7 @@ def download(db, flag, max_results, keywords):
                     # Sleep for a minute otherwise you'll get banned
                     time.sleep(60)
                     if pdf_link:
-                        pdf_response = urllib2.urlopen(pdf_link)
+                        pdf_response = urllib.urlopen(pdf_link)
                         pdf = open(pdf_name, 'wb')
                         pdf.write(pdf_response.read())
                         pdf.close()
