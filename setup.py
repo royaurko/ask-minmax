@@ -15,6 +15,7 @@ setup(
     license="BSD",
     keywords="expert system",
     url="https://github.com/royaurko/ask-minmax",
+    install_requires=['pymongo', 'jenks', 'scipy', 'numpy', 'matplotlib', 'nltk', 'scikit-learn', 'gensim'],
     packages=['askminmax'],
     package_dir={'askminmax': 'src/askminmax'},
     package_data={'askminmax': ['src/askminmax/database']},
