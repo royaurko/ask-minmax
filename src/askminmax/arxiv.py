@@ -7,10 +7,10 @@ import time
 
 
 def clean(to_translate):
-    ''' Clean text
+    """ Clean text
     :param to_translate: Text to clean
     :return: Cleaned text
-    '''
+    """
     translate_to = u' '
     not_letters_or_digits = u'$!"#%\'()*+,-./:;<=>?@[\]^_`{|}~'
     translate_table = dict((ord(char), translate_to) for
@@ -19,13 +19,12 @@ def clean(to_translate):
 
 
 def download(db, flag, max_results, keywords):
-    ''' Download abstracts and fulltexts from arxiv
+    """ Download abstracts and fulltexts from arxiv
     :param db: The Mongodb database to download the papers to
     :param flag: flag in {Yes, No}, if Yes downloads pdfs
     :param keywords: List of keywords to search for, defaults to k
     :return: None, modify database in place
-    '''
-
+    """
     # Base API query url
     base_url = 'http://export.arxiv.org/api/query?'
     feedparser_url = 'http://a9.com/-/spec/opensearch/1.1/'
