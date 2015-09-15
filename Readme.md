@@ -41,12 +41,12 @@ The last three dependencies are due to Google's word2vec and are still a work in
  * [scikit-learn](https://pypi.python.org/pypi/scikit-learn/0.16.1)
  * [gensim](https://pypi.python.org/pypi/gensim)
 
-## Quick Start:
+## Quickstart:
 
-Clone the repository and install it as a library using 
+Install using `pip`.
 
 ```shell
-sudo python setup.py install
+pip install "git+https://github.com/royaurko/ask-minmax.git#egg=ask-minmax"
 ```
 
 To create an instance of the Expert system first import the `Expert` class and
