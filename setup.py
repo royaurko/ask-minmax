@@ -1,10 +1,13 @@
 #!/usr/bin/python
 import os
 from setuptools import setup
+import sys
 
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+data_dir = os.path.join(sys.prefix, "local/lib/python2.7/dist-package/askmminmax")
 
 setup(
     name="askminmax",
@@ -19,8 +22,7 @@ setup(
     dependency_links=['git+https://github.com/perrygeo/jenks.git#egg=jenks'],
     packages=['askminmax'],
     package_dir={'askminmax': 'src/askminmax'},
-    package_data = {'askminmax': ['database', 'model']},
-    include_package_data=True,
+    data_files = [('askminmax', [os.path.join(data_dir, 'database'), os.path.join(data_dir, 'model')])],
     long_description=read('Readme.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
