@@ -19,7 +19,8 @@ setup(
     dependency_links=['git+https://github.com/perrygeo/jenks.git#egg=jenks'],
     packages=['askminmax'],
     package_dir={'askminmax': 'src/askminmax'},
-    package_data={'askminmax': ['database', 'model']},
+    package_data = {'askminmax': ['database', 'model']},
+    include_package_data=True,
     long_description=read('Readme.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
