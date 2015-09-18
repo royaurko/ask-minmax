@@ -52,12 +52,12 @@ class Expert(object):
         :return: None, modify database in place
         """
         db = self.db
-        problem_idx_to_id = problems.printlist(db)
+        problem_idx_to_id = problems.print_list(db)
         problems_list = raw_input('Enter indices of problems to delete separated by spaces: ')
         problems_list = map(int, problems_list.strip().split())
         for problem in problems_list:
             problems.delete(db, problem_idx_to_id[problem])
-        question_idx_to_id = questions.printlist(db)
+        question_idx_to_id = questions.print_list(db)
         questions_list = raw_input('Enter indices of questions to delete separated by spaces: ')
         questions_list = map(int, questions_list.strip().split())
         for question in questions_list:
@@ -167,54 +167,6 @@ class Expert(object):
                 helper.error_one_zero()
         return question, response, confidence
 
-    def predict_single(self):
-        """ Predict a single problem by sampling once from problem posterior
-        :return: None
-        """
-        db = self.db
-        problem = problems.sample(db, 'posterior')
-        print(problem['name'])
-        while True:
-            try:
-                response = int(raw_input('Is this the correct problem? (0/1)? '))
-                break
-            except ValueError:
-                helper.error_one_zero()
-        if response:
-            # Correct answer, increase prior of the correct problem and set posterior = prior
-            problems.increment(db, problem['hash'])
-        else:
-            # Wrong answer, call subroutine for separating question
-            sepquestions.ask_separating_question(db, problem)
-
-    def predict_set(self, n):
-        """ Predict a set of problems by sampling n times from posterior
-        :param n: Size of the set to predict
-        :return: None
-        """
-        db = self.db
-        problem_hash = set()
-        problem_name = set()
-        for i in xrange(n):
-            problem = problems.sample(db, 'posterior')
-            problem_hash.add(problem['hash'])
-            problem_name.add(problem['name'])
-        problems.print_set(problem_name)
-        while True:
-            try:
-                set_question = 'Is the correct problem in this set? (0/1)'
-                flag = int(raw_input(set_question))
-                break
-            except ValueError:
-                helper.error_one_zero()
-        if flag:
-            # Correct answer, increase count of each problem in the set
-            map(lambda x: problems.increment(db, x), problem_hash)
-        else:
-            # Wrong answer, ask for a separating question for each problem in set
-            for hash_value in problem_hash:
-                    problem = db.problems.find_one({'hash': hash_value})
-                    sepquestions.ask_separating_question(db, problem)
 
     def get_feedback(self, most_likely):
         """ Query the user if the correct problem was in this set
