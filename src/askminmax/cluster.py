@@ -1,3 +1,4 @@
+from __future__ import print_function
 import gensim
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
@@ -5,6 +6,7 @@ from nltk.tokenize import sent_tokenize
 import time
 import sklearn
 import re
+import os
 
 
 class MySentences(object):
@@ -45,12 +47,12 @@ class MySentences(object):
         """ Create iterator
         :return: Iterator
         """
-        cursor = self.db.papers.find()
+        cursor = self.db.papers.find(no_cursor_timeout=True)
         for item in cursor:
             if self.flag:
                 text = item['text']
             else:
-                text = item['summary']
+                text = item['abstract']
             # Convert to utf-8
             text = text.encode('utf-8')
             # tokens = self.word_tokenize(text)
@@ -80,7 +82,7 @@ def word2vec_clusters(model):
     start = time.time()
     vectors = model.syn0
     num_clusters = int(raw_input('Number of clusters: '))
-    print 'Running clustering with %d clusters' % num_clusters
+    print("Running clustering with %d clusters" % num_clusters)
     clustering_algorithm = sklearn.cluster.MiniBatchKMeans(n_clusters=num_clusters)
     idx = clustering_algorithm.fit_predict(vectors)
     end = time.time()
@@ -94,7 +96,7 @@ def word2vec_clusters(model):
             print(words)
 
 
-def cluster_tests(db, flag):
+def cluster_tests(db, flag, cores=1):
     """ Call Word2Vec
     :param db: The Mongodb database
     :param flag: If flag is 1 then run cluster on full papers, else run on abstracts
@@ -102,8 +104,13 @@ def cluster_tests(db, flag):
     """
     sentences = MySentences(db, flag)
     # For now let the parameters be default
-    print("Training word2vec model...")
-    model = gensim.models.Word2Vec(sentences, min_count=5)
+    print("Training word2vec model using %d cores" % cores)
+    model = gensim.models.Word2Vec(sentences, min_count=5, workers=cores)
     # Save the model for future use
-    model.save('gensim_model')
+    model_path = 'model/'
+    if not os.path.exists(model_path):
+        os.makedirs(model_path)
+    cursor = db.papers.find()
+    model_name = 'model_' + str(cursor.count())
+    model.save(model_path + model_name)
     word2vec_clusters(model)

@@ -63,3 +63,19 @@ you the option to create one of your own. Finally to run the expert system use
 ```python
 expert.run()
 ```
+
+## Fun with Word2Vec
+
+You can train your own word2vec model on your domain specific dataset. In this case we train it on
+abstracts downloaded from `arxiv`, it has a vocabulary size of `175930` at the moment. Here's a fun
+example in IPython:
+
+```python
+In [1]: from gensim.models import Word2Vec
+In [2]: model = Word2Vec.load('model/model_175930')
+In [3]: model.doesnt_match(['bipartite', 'non-bipartite', 'stable', 'matching', 'scheduling'])
+Out[3]: 'scheduling'
+```
+
+
+
