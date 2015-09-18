@@ -43,10 +43,10 @@ The last three dependencies are due to Google's word2vec and are still a work in
 
 ## Quickstart:
 
-Install using `pip`.
+Clone the repository and use
 
 ```shell
-pip install "git+https://github.com/royaurko/ask-minmax.git#egg=ask-minmax"
+sudo python setup.py install
 ```
 
 To create an instance of the Expert system first import the `Expert` class and
