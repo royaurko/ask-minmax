@@ -105,7 +105,9 @@ def cluster_tests(db, flag, cores=1):
     sentences = MySentences(db, flag)
     # For now let the parameters be default
     print("Training word2vec model using %d cores" % cores)
-    model = gensim.models.Word2Vec(sentences, min_count=5, workers=cores)
+    # Use phrases
+    bigram_transformer = gensim.models.Phrases(sentences)
+    model = gensim.models.Word2Vec(bigram_transformer[sentences], min_count=5, workers=cores)
     # Save the model for future use
     model_path = 'model/'
     if not os.path.exists(model_path):

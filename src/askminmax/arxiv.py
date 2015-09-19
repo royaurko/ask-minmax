@@ -39,6 +39,7 @@ def download(db, flag, max_results, keywords):
     text_name = dir_name + '/fullpaper.txt'
     count = 1
     for keyword in keywords:
+        print('Downloading abstracts with keyword ' + keyword)
         search_query = 'all:' + keyword
         start = 0
         total_results = max_results

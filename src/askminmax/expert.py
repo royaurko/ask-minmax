@@ -543,3 +543,21 @@ class Expert(object):
         :return: None for now
         """
         cluster.cluster_tests(self.db, flag)
+
+    def get_downloaded_keywords(self):
+        """ Get the list of keywords downloaded so far
+        :return: Set of downloaded keywords
+        """
+        keywords = dict()
+        cursor = self.db.papers.find()
+        for item in cursor:
+            if item['keyword'] in keywords:
+                keywords[item['keyword']] += 1
+            else:
+                keywords[item['keyword']] = 1
+        return keywords
+
+    def get_summay(self):
+        """ Get a summary or a description of the problem from the user
+        :return:
+        """
