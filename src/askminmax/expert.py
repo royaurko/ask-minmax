@@ -9,6 +9,9 @@ import arxiv
 import cluster
 import natural_break
 import numpy as np
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.tokenize import sent_tokenize
 from jenks import jenks
 
 
@@ -557,7 +560,25 @@ class Expert(object):
                 keywords[item['keyword']] = 1
         return keywords
 
-    def get_summay(self):
+    def get_summary(self):
         """ Get a summary or a description of the problem from the user
-        :return:
+        :return: None, store the summary in the database
         """
+        summary = raw_input('Please describe your problem in a few words:')
+        tokenized_summary = set()
+        tokens = sent_tokenize(summary)
+        for sent in tokens:
+            words = []
+            word_tokens = word_tokenize(sent)
+            # Remove non-alpha characters from the words
+            for w in word_tokens:
+                scrunched = cluster.MySentences.scrunch(w)
+                if scrunched:
+                     words.append(scrunched)
+            # Remove short words, convert to lower case
+            words = cluster.MySentences.small_words(words)
+            # Remove stop words
+            words = cluster.MySentences.remove_stop(words)
+            tokenized_summary = tokenized_summary.union(set(words))
+        return tokenized_summary
+

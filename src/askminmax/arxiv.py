@@ -101,7 +101,7 @@ def download(db, flag, max_results, keywords):
                         continue
                 # Add to database
                 summary = entry.summary
-                hash_value = hashlib.md5(summary).hexdigest()
+                hash_value = hashlib.md5(summary.encode("utf-8")).hexdigest()
                 item = db.papers.find_one({'hash': hash_value})
                 if item is None:
                     d = {'keyword': keyword, 'abstract': summary, 'text': text, 'hash': hash_value}
