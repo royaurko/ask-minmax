@@ -7,6 +7,7 @@ import time
 import sklearn
 import re
 import os
+import logging
 
 
 class MySentences(object):
@@ -48,7 +49,9 @@ class MySentences(object):
         :return: Iterator
         """
         cursor = self.db.papers.find(no_cursor_timeout=True)
-        for item in cursor:
+        ids = [item['_id'] for item in cursor]
+        for id in ids:
+            item = self.db.papers.find_one({'_id': id})
             if self.flag:
                 text = item['text']
             else:
@@ -105,6 +108,7 @@ def build_model(db, flag, cores=1):
     sentences = MySentences(db, flag)
     # For now let the parameters be default
     print("Training word2vec model using %d cores" % cores)
+    logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     # Use phrases
     bigram_transformer = gensim.models.Phrases(sentences)
     model = gensim.models.Word2Vec(bigram_transformer[sentences], size=500, min_count=10, workers=cores)
@@ -112,7 +116,7 @@ def build_model(db, flag, cores=1):
     model_path = 'model/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
-    cursor = db.papers.find()
+    cursor = db.papers.find(no_cursor_timeout=True)
     model_name = 'model_' + str(cursor.count())
     model.save(model_path + model_name)
 
