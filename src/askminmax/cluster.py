@@ -96,8 +96,8 @@ def word2vec_clusters(model):
             print(words)
 
 
-def cluster_tests(db, flag, cores=1):
-    """ Call Word2Vec
+def build_model(db, flag, cores=1):
+    """ Build Word2Vec model
     :param db: The Mongodb database
     :param flag: If flag is 1 then run cluster on full papers, else run on abstracts
     :return: None, call k-means from w2vClusters(corpus)
@@ -107,7 +107,7 @@ def cluster_tests(db, flag, cores=1):
     print("Training word2vec model using %d cores" % cores)
     # Use phrases
     bigram_transformer = gensim.models.Phrases(sentences)
-    model = gensim.models.Word2Vec(bigram_transformer[sentences], min_count=5, workers=cores)
+    model = gensim.models.Word2Vec(bigram_transformer[sentences], size=500, min_count=10, workers=cores)
     # Save the model for future use
     model_path = 'model/'
     if not os.path.exists(model_path):
@@ -115,4 +115,28 @@ def cluster_tests(db, flag, cores=1):
     cursor = db.papers.find()
     model_name = 'model_' + str(cursor.count())
     model.save(model_path + model_name)
-    word2vec_clusters(model)
+
+
+def continue_training(db, flag, model_name, cores=1):
+    """ Continue training word2vec model
+    :param db: Mongodb database
+    :param flag: If flag is 1 then train over full texts
+    :param model_path: Path to word2vec model
+    :param cores: Number of cores to use
+    :return: None
+    """
+    sentences = MySentences(db, flag)
+    print("Training word2vec model using %d cores" % cores)
+    # Use phrases
+    bigram_transformer = gensim.models.Phrases(sentences)
+    # Load model from model_path
+    model = gensim.models.Word2Vec.load(model_name)
+    # Continue training model
+    model.train(sentences)
+    # Save the model for future use
+    model_path = 'model/'
+    if not os.path.exists(model_path):
+        os.makedirs(model_path)
+    cursor = db.papers.find()
+    model_name = 'model_' + str(cursor.count())
+    model.save(model_path + model_name)
