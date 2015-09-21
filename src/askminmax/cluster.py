@@ -1,8 +1,9 @@
 from __future__ import print_function
-import gensim
+from gensim.models.doc2vec import TaggedDocument
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
+import gensim
 import time
 import sklearn
 import re
@@ -48,7 +49,7 @@ class MySentences(object):
         """ Create iterator
         :return: Iterator
         """
-        cursor = self.db.papers.find(no_cursor_timeout=True)
+        cursor = self.db.papers.find()
         ids = [item['_id'] for item in cursor]
         for id in ids:
             item = self.db.papers.find_one({'_id': id})
@@ -60,6 +61,7 @@ class MySentences(object):
             text = text.encode('utf-8')
             # tokens = self.word_tokenize(text)
             tokens = sent_tokenize(text)
+            sentence_counter = 0
             for sent in tokens:
                 words = []
                 word_tokens = word_tokenize(sent)
@@ -74,7 +76,8 @@ class MySentences(object):
                 words = self.remove_stop(words)
                 # Yield the words to Word2Vec
                 if words:
-                    yield words
+                    yield TaggedDocument(words, [sentence_counter])
+                    sentence_counter += 1
 
 
 def word2vec_clusters(model):
@@ -107,11 +110,10 @@ def build_model(db, flag, cores=1):
     """
     sentences = MySentences(db, flag)
     # For now let the parameters be default
-    print("Training word2vec model using %d cores" % cores)
+    print("Training doc2vec model using %d cores" % cores)
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     # Use phrases
-    bigram_transformer = gensim.models.Phrases(sentences)
-    model = gensim.models.Word2Vec(bigram_transformer[sentences], size=500, min_count=10, workers=cores)
+    model = gensim.models.Doc2Vec(sentences, size=500, min_count=10, workers=cores)
     # Save the model for future use
     model_path = 'model/'
     if not os.path.exists(model_path):
@@ -130,11 +132,11 @@ def continue_training(db, flag, model_name, cores=1):
     :return: None
     """
     sentences = MySentences(db, flag)
-    print("Training word2vec model using %d cores" % cores)
+    print("Training doc2vec model using %d cores" % cores)
     # Use phrases
     bigram_transformer = gensim.models.Phrases(sentences)
     # Load model from model_path
-    model = gensim.models.Word2Vec.load(model_name)
+    model = gensim.models.Doc2Vec.load(model_name)
     # Continue training model
     model.train(sentences)
     # Save the model for future use
