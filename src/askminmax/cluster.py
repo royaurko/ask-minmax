@@ -112,18 +112,17 @@ def build_model(db, flag, cores=1):
     # For now let the parameters be default
     print("Training doc2vec model using %d cores" % cores)
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    # Use phrases
     model = gensim.models.Doc2Vec(sentences, size=500, min_count=10, workers=cores)
     # Save the model for future use
     model_path = 'model/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
-    cursor = db.papers.find(no_cursor_timeout=True)
+    cursor = db.papers.find()
     model_name = 'model_' + str(cursor.count())
     model.save(model_path + model_name)
 
 
-def continue_training(db, flag, model_name, cores=1):
+def continue_training(db, flag, model_ncoame, cores=1):
     """ Continue training word2vec model
     :param db: Mongodb database
     :param flag: If flag is 1 then train over full texts
@@ -133,8 +132,7 @@ def continue_training(db, flag, model_name, cores=1):
     """
     sentences = MySentences(db, flag)
     print("Training doc2vec model using %d cores" % cores)
-    # Use phrases
-    bigram_transformer = gensim.models.Phrases(sentences)
+    logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     # Load model from model_path
     model = gensim.models.Doc2Vec.load(model_name)
     # Continue training model

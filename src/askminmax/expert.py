@@ -9,10 +9,11 @@ import arxiv
 import cluster
 import natural_break
 import numpy as np
-from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 from jenks import jenks
+import gensim
+import math
 
 
 class Expert(object):
@@ -76,12 +77,14 @@ class Expert(object):
         problems.print_list(db)
         questions.print_list(db)
 
-    def run(self):
+    def run(self, model_name='model/model_211088'):
         """ Control the main program flow
         :return: None, modify db in place
         """
         try:
             while True:
+                # Ask the user for a short summary of the problem
+                self.adjust_priors_from_summary(model_name)
                 # Reset the posteriors equal to prior before starting a prediction loop
                 self.reset_posteriors()
                 # Print the table
@@ -564,7 +567,7 @@ class Expert(object):
         """ Get a summary or a description of the problem from the user
         :return: None, store the summary in the database
         """
-        summary = raw_input('Please describe your problem in a few words:')
+        summary = raw_input('Please describe your problem in a few words: ')
         tokenized_summary = set()
         tokens = sent_tokenize(summary)
         for sent in tokens:
@@ -582,3 +585,31 @@ class Expert(object):
             tokenized_summary = tokenized_summary.union(set(words))
         return tokenized_summary
 
+    def adjust_priors_from_summary(self, model_name):
+        """ Adjust the priors of problems from the summary
+        :param model_name: Name of the model
+        :return: None
+        """
+        words = list(self.get_summary())
+        print('Tokens: ' + str(words))
+        model = gensim.models.Doc2Vec.load(model_name)
+        cursor = self.db.problems.find()
+        num_problems = cursor.count()
+        cursor = self.db.problems.find()
+        for item in cursor:
+            # Tokenize the problem name
+            problem = []
+            problem_tokens = word_tokenize(item['name'])
+            # Remove non-alpha characters from the words
+            for w in problem_tokens:
+                scrunched = cluster.MySentences.scrunch(w)
+                if scrunched:
+                     problem.append(scrunched)
+            # Remove short words, convert to lower case
+            problem = cluster.MySentences.small_words(problem)
+            # Remove stop words
+            problem = cluster.MySentences.remove_stop(problem)
+            similarity = model.n_similarity(words, problem)
+            print(item['name'] + ': ' + str(similarity))
+            item['prior'] *= math.pow((1 + similarity)/2, math.log(num_problems))
+            self.db.problems.update({'_id': item['_id']}, item)
