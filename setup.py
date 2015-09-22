@@ -16,7 +16,7 @@ setup(
     license="BSD",
     keywords="expert system",
     url="https://github.com/royaurko/ask-minmax",
-    install_requires=['pymongo', 'scipy', 'numpy', 'matplotlib', 'nltk', 'sklearn', 'gensim', 'feedparser', 'jenks'],
+    install_requires=['pymongo', 'scipy', 'numpy', 'matplotlib', 'nltk', 'sklearn', 'gensim', 'feedparser', 'jenks', 'dragnet'],
     dependency_links=['git+https://github.com/perrygeo/jenks.git#egg=jenks'],
     packages=['askminmax'],
     package_dir={'askminmax': 'src/askminmax'},
