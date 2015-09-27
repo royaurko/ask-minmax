@@ -162,8 +162,8 @@ def classify(db, dimension, keywords, model, text):
     classifier = get_classifier(db, dimension, keywords, model)
     idx_to_keywords = dict([(i, v) for i, v in enumerate(keywords)])
     vector = model.infer_vector(text)
-    label = classifier.predict(vector)
-    return idx_to_keywords[label]
+    probability_vector = classifier.predict_proba(vector)
+    return dict([(idx_to_keywords[i], v) for i, v in enumerate(probability_vector)])
 
 
 def word2vec_clusters(model):
