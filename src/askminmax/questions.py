@@ -210,6 +210,7 @@ def view_problems(db):
         print(problem['name'], end=', ')
     print('}')
     print('NO problems: ')
+    print('{', end=' ')
     for problem_hash in question['negproblems']:
         problem = db.problems.find_one({'hash': problem_hash})
         print(problem['name'], end=', ')

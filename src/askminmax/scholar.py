@@ -1,4 +1,3 @@
-#! /usr/bin/env python
 """
 This module provides classes for querying Google Scholar and parsing
 returned results. It currently *only* processes the first results
@@ -219,6 +218,7 @@ class ScholarConf(object):
     # If set, we will use this file to read/save cookies to enable
     # cookie use across sessions.
     COOKIE_JAR_FILE = None
+
 
 class ScholarUtils(object):
     """A wrapper for various utensils that come in handy."""

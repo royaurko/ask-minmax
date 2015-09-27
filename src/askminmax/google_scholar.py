@@ -5,14 +5,18 @@ from dragnet import content_extractor
 import sys
 import hashlib
 import time
+import database
+import random
 
 
-def download_abstracts_scholar(db, num_results, keyword):
+def download_abstracts_scholar(db, start, num_results, keyword, time_delay=1200):
     """ Download abstracts from google scholar
-    :param db:
-    :param num_results:
-    :param keyword:
-    :return:
+    :param db: Mongodb database
+    :param start: The start page
+    :param num_results: Number of results
+    :param keyword: Keyword to search for
+    :param time_delay: time delay
+    :return: None
     """
     querier = ScholarQuerier()
     settings = ScholarSettings()
@@ -20,33 +24,41 @@ def download_abstracts_scholar(db, num_results, keyword):
     query = SearchScholarQuery()
     query.set_phrase(keyword)
     query.set_num_page_results(min(20, num_results))
-    total = 0
+    total = start
     while total < num_results:
-        query.set_start(total)
-        querier.send_query(query)
-        querier.save_cookies()
-        items = csv(querier)
-        for index, item in enumerate(items):
-            url = item.strip().split('|')[1]
-            try:
-                r = requests.get(url)
+        try:
+            query.set_start(total)
+            querier.send_query(query)
+            # querier.save_cookies()
+            items = csv(querier)
+            for index, item in enumerate(items):
+                url = item.strip().split('|')[1]
+                content = ''
                 try:
-                    content = content_extractor.analyze(r.content)
+                    r = requests.get(url)
+                    try:
+                        content = content_extractor.analyze(r.content)
+                    except Exception as e:
+                        sys.stderr.write('Error fetching content: ' + str(e) + '\n')
+                except requests.packages.urllib3.exceptions.ProtocolError:
+                        sys.stderr.write('Error: ' + str(e) + '\n')
+                except requests.exceptions.RequestException as e:
+                        sys.stderr.write('Error fetching URL ' + url + ': ' + str(e) + '\n')
                 except Exception as e:
-                    sys.stderr.write('Error fetching content: ' + str(e) + '\n')
-            except requests.packages.urllib3.exceptions.ProtocolError:
-                    sys.stderr.write('Error: ' + str(e) + '\n')
-            except requests.exceptions.RequestException as e:
-                    sys.stderr.write('Error fetching URL ' + url + ': ' + str(e) + '\n')
-            except Exception as e:
-                    sys.stderr.write('Error fetching URL ' + url + ': ' + str(e) + '\n')
-            print(" --------- Abstract %d  ------------ " % (index + 1 + total))
-            print(content)
-            hash_value = hashlib.md5(content).hexdigest()
-            item = db.papers.find_one({'hash': hash_value})
-            text = str()
-            if item is None:
-                        d = {'keyword': keyword, 'abstract': content, 'text': text, 'hash': hash_value}
-                        db.papers.insert(d)
-        time.sleep(300)
-        total += 20
+                        sys.stderr.write('Error fetching URL ' + url + ': ' + str(e) + '\n')
+                print(" --------- Abstract %d  ------------ " % (index + 1 + total))
+                print(content)
+                hash_value = hashlib.md5(content).hexdigest()
+                item = db.papers.find_one({'hash': hash_value})
+                text = str()
+                acm_msg = 'Did you know the ACM DL App is now available? Did you know your Organization can subscribe to the ACM Digital Library?'
+                if item is None and content != acm_msg:
+                            d = {'keyword': keyword, 'abstract': content, 'text': text, 'hash': hash_value}
+                            db.papers.insert(d)
+            delay = random.randint(time_delay, time_delay + 600)
+            print('Sleeping for %d seconds ... ' % delay)
+            time.sleep(delay)
+            total += 20
+        except KeyboardInterrupt:
+            break
+    database.dump_db()

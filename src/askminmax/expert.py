@@ -6,14 +6,14 @@ import questions
 import sepquestions
 import training
 import arxiv
-import cluster
+import model
 import natural_break
 import numpy as np
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 from jenks import jenks
 import gensim
-import math
+import time
 
 
 class Expert(object):
@@ -84,7 +84,11 @@ class Expert(object):
         try:
             while True:
                 # Ask the user for a short summary of the problem
-                self.adjust_priors_from_summary(model_name)
+                summary = self.get_summary()
+                # Adjust problem priors
+                self.adjust_problem_priors_from_summary(summary, model_name)
+                # Adjust question priors
+                self.adjust_question_priors_from_summary(summary, model_name)
                 # Reset the posteriors equal to prior before starting a prediction loop
                 self.reset_posteriors()
                 # Print the table
@@ -172,7 +176,6 @@ class Expert(object):
             except ValueError:
                 helper.error_one_zero()
         return question, response, confidence
-
 
     def get_feedback(self, most_likely):
         """ Query the user if the correct problem was in this set
@@ -503,7 +506,7 @@ class Expert(object):
                          'posproblems': positive_list, 'negproblems': negative_list}
             })
 
-    def download(self, flag, max_results, keywords):
+    def download_arxiv(self, flag, max_results, keywords):
         """ Download papers from arxiv, integration with word2vec
         :param flag: flag in {Yes, No}, if Yes downloads pdfs too
         :return: None, update db in place
@@ -548,7 +551,7 @@ class Expert(object):
         :param flag: If flag is 1 then run on full papers, otherwise only on abstracts
         :return: None for now
         """
-        cluster.cluster_tests(self.db, flag)
+        model.cluster_tests(self.db, flag)
 
     def get_downloaded_keywords(self):
         """ Get the list of keywords downloaded so far
@@ -575,26 +578,23 @@ class Expert(object):
             word_tokens = word_tokenize(sent)
             # Remove non-alpha characters from the words
             for w in word_tokens:
-                scrunched = cluster.MySentences.scrunch(w)
+                scrunched = model.MySentences.scrunch(w)
                 if scrunched:
                      words.append(scrunched)
             # Remove short words, convert to lower case
-            words = cluster.MySentences.small_words(words)
+            words = model.MySentences.small_words(words)
             # Remove stop words
-            words = cluster.MySentences.remove_stop(words)
+            words = model.MySentences.remove_stop(words)
             tokenized_summary = tokenized_summary.union(set(words))
-        return tokenized_summary
+        return list(tokenized_summary)
 
-    def adjust_priors_from_summary(self, model_name):
+    def adjust_problem_priors_from_summary(self, summary, model_name):
         """ Adjust the priors of problems from the summary
+        :param summary: word tokens from the summary
         :param model_name: Name of the model
         :return: None
         """
-        words = list(self.get_summary())
-        print('Tokens: ' + str(words))
         model = gensim.models.Doc2Vec.load(model_name)
-        cursor = self.db.problems.find()
-        num_problems = cursor.count()
         cursor = self.db.problems.find()
         for item in cursor:
             # Tokenize the problem name
@@ -602,14 +602,62 @@ class Expert(object):
             problem_tokens = word_tokenize(item['name'])
             # Remove non-alpha characters from the words
             for w in problem_tokens:
-                scrunched = cluster.MySentences.scrunch(w)
+                scrunched = model.MySentences.scrunch(w)
                 if scrunched:
-                     problem.append(scrunched)
+                    problem.append(scrunched)
             # Remove short words, convert to lower case
-            problem = cluster.MySentences.small_words(problem)
+            problem = model.MySentences.small_words(problem)
             # Remove stop words
-            problem = cluster.MySentences.remove_stop(problem)
-            similarity = model.n_similarity(words, problem)
+            problem = model.MySentences.remove_stop(problem)
+            similarity = model.n_similarity(summary, problem)
             print(item['name'] + ': ' + str(similarity))
-            item['prior'] *= math.pow((1 + similarity)/2, math.log(num_problems))
+            item['prior'] *= (1 + similarity)/2
             self.db.problems.update({'_id': item['_id']}, item)
+
+    def adjust_question_priors_from_summary(self, summary, model_name):
+        """ Adjust the priors of problems from the summary
+        :param summary: Word tokens of summary
+        :param model_name: Name of the model
+        :return: None
+        """
+        model = gensim.models.Doc2Vec.load(model_name)
+        cursor = self.db.questions.find()
+        for item in cursor:
+            # Tokenize the question name
+            question = []
+            question_tokens = word_tokenize(item['name'].strip().encode("utf-8"))
+            # Remove non-alpha characters from the words
+            for w in question_tokens:
+                scrunched = model.MySentences.scrunch(w)
+                if scrunched:
+                    question.append(scrunched)
+            # Remove short words, convert to lower case
+            question = model.MySentences.small_words(question)
+            # Remove stop words
+            question = model.MySentences.remove_stop(question)
+            similarity = model.n_similarity(summary, question)
+            print(item['name'] + ': ' + str(similarity))
+            item['prior'] *= (1 + similarity)/2
+            self.db.questions.update({'_id': item['_id']}, item)
+
+
+    def clean_database(self):
+        """ Clean database of abstracts that contain physics words and short abstracts
+        :return: None, clean db
+        """
+        cursor = self.db.papers.find()
+        stop_words = set(['physics', 'quantum', 'hep', 'topology', 'optics', 'electrodynamics', 'Doppler', 'Cookies'])
+        counter = 0
+        for item in cursor:
+            words = set(item['abstract'].strip().split())
+            if words & stop_words:
+                self.db.papers.remove({'_id': item['_id']})
+                counter += 1
+            elif len(sent_tokenize(item['abstract'])) < 3:
+                # Abstract should have at least 2 sentences
+                print('----------------Abstract-----------')
+                print(item['abstract'])
+                self.db.papers.remove({'_id': item['_id']})
+                counter += 1
+        print('Deleted %d entries' % counter)
+

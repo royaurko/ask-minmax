@@ -257,7 +257,13 @@ def plot_posteriors(db):
     plt.figure(1, [10, 8])
     plt.ion()
     plt.clf()
-    plt.plot(xrange(len(p)), p, 'bo', xrange(len(p)), p, 'k')
+    cursor = db.problems.find()
+    x_value = xrange(len(p))
+    x_ticks = []
+    for item in cursor:
+        x_ticks.append(helper.get_initials(item['name']))
+    plt.xticks(x_value, x_ticks)
+    plt.plot(x_value, p, 'bo', x_value, p, 'k')
     plt.xlabel('Problems')
     plt.ylabel('Posteriors')
     plt.ylim((0, 1))

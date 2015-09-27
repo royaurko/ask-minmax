@@ -66,3 +66,15 @@ def mass(db, table, hash_value, property_name):
     elif table == 'questions':
         question = db.problems.find_one({'hash': hash_value})
         return question[property_name]
+
+
+def get_initials(s):
+    """ Get the initials of the string s
+    :param s: String to get initials of
+    :return: The initials
+    """
+    initials = ''
+    s_list = s.strip().split()
+    for i in xrange(len(s_list)):
+        initials += s_list[i][0]
+    return initials.upper()
