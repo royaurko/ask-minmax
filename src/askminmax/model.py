@@ -1,71 +1,17 @@
 from __future__ import print_function
 from gensim.models.doc2vec import TaggedDocument
-from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 import numpy as np
 import gensim
 import time
 import sklearn
-import re
+import helper
 import os
 import logging
 from sklearn.linear_model import LogisticRegression
 import multiprocessing
 num_cpus = multiprocessing.cpu_count()
-
-
-def clean_item(db, flag, mongo_id):
-        """ Clean up a single item given its id
-        :param mongo_id: Mongodb id of item
-        :return: None, clean up the db in place
-        """
-        item = db.papers.find_one({'_id': mongo_id})
-        print('Cleaning up entry ', mongo_id)
-        if flag:
-            text = item['text']
-        else:
-            text = item['abstract']
-        text = scrunch(text)
-        tokens = sent_tokenize(text)
-        sentences = []
-        for sent in tokens:
-            words = word_tokenize(sent)
-            # Remove short words, convert to lower case
-            words = small_words(words)
-            # Remove stop words
-            words = remove_stop(words)
-            words_str = ' '.join(words)
-            sentences.append(words_str)
-        if flag:
-            item['text'] = '.'.join(sentences)
-        else:
-            item['abstract'] = '.'.join(sentences)
-        db.papers.update({'_id': item['_id']}, {"$set": item}, upsert=False)
-
-
-def small_words(word_tokens):
-    """ Remove all words from word_tokens that are smaller in length than 3, convert to lowercase
-    :param word_tokens: Word tokens
-    :return: Word tokens with small words removed, converted to lowercase
-    """
-    return [w.lower() for w in word_tokens if len(w) >= 3]
-
-
-def scrunch(text):
-    """ Remove non-alpha characters from text
-    :param text: Text to scrunch
-    :return: Scrunched text
-    """
-    return re.sub('[^a-zA-Z]+', ' ', text)
-
-
-def remove_stop(word_tokens):
-    """ Return new word_token with stop words removed
-    :param word_tokens:
-    :return:
-    """
-    return [w for w in word_tokens if w not in stopwords.words('english')]
 
 
 class MySentences(object):
@@ -79,15 +25,6 @@ class MySentences(object):
         self.flag = flag
         self.keywords = keywords
         self.sentences = []
-
-    def clean_up_db(self):
-        """ Clean up the database by removing stop words etc
-        :return: None
-        """
-        # Remove non-alpha characters from the words
-        cursor = self.db.papers.find()
-        ids = [item['_id'] for item in cursor]
-        map(lambda mongo_id: clean_item(self.db, self.flag, mongo_id), ids)
 
     def to_array(self):
         self.sentences = []
