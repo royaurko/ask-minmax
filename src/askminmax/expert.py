@@ -566,7 +566,8 @@ class Expert(object):
                 keywords[item['keyword']] = 1
         return keywords
 
-    def get_summary(self):
+    @staticmethod
+    def get_summary():
         """ Get a summary or a description of the problem from the user
         :return: None, store the summary in the database
         """
@@ -578,13 +579,13 @@ class Expert(object):
             word_tokens = word_tokenize(sent)
             # Remove non-alpha characters from the words
             for w in word_tokens:
-                scrunched = model.MySentences.scrunch(w)
+                scrunched = model.scrunch(w)
                 if scrunched:
-                     words.append(scrunched)
+                    words.append(scrunched)
             # Remove short words, convert to lower case
-            words = model.MySentences.small_words(words)
+            words = model.small_words(words)
             # Remove stop words
-            words = model.MySentences.remove_stop(words)
+            words = model.remove_stop(words)
             tokenized_summary = tokenized_summary.union(set(words))
         return list(tokenized_summary)
 
@@ -602,13 +603,13 @@ class Expert(object):
             problem_tokens = word_tokenize(item['name'])
             # Remove non-alpha characters from the words
             for w in problem_tokens:
-                scrunched = model.MySentences.scrunch(w)
+                scrunched = model.scrunch(w)
                 if scrunched:
                     problem.append(scrunched)
             # Remove short words, convert to lower case
-            problem = model.MySentences.small_words(problem)
+            problem = model.small_words(problem)
             # Remove stop words
-            problem = model.MySentences.remove_stop(problem)
+            problem = model.remove_stop(problem)
             similarity = model.n_similarity(summary, problem)
             print(item['name'] + ': ' + str(similarity))
             item['prior'] *= (1 + similarity)/2
@@ -628,18 +629,17 @@ class Expert(object):
             question_tokens = word_tokenize(item['name'].strip().encode("utf-8"))
             # Remove non-alpha characters from the words
             for w in question_tokens:
-                scrunched = model.MySentences.scrunch(w)
+                scrunched = model.scrunch(w)
                 if scrunched:
                     question.append(scrunched)
             # Remove short words, convert to lower case
-            question = model.MySentences.small_words(question)
+            question = model.small_words(question)
             # Remove stop words
-            question = model.MySentences.remove_stop(question)
+            question = model.remove_stop(question)
             similarity = model.n_similarity(summary, question)
             print(item['name'] + ': ' + str(similarity))
             item['prior'] *= (1 + similarity)/2
             self.db.questions.update({'_id': item['_id']}, item)
-
 
     def clean_database(self):
         """ Clean database of abstracts that contain physics words and short abstracts

@@ -11,6 +11,61 @@ import re
 import os
 import logging
 from sklearn.linear_model import LogisticRegression
+import multiprocessing
+num_cpus = multiprocessing.cpu_count()
+
+
+def clean_item(db, flag, mongo_id):
+        """ Clean up a single item given its id
+        :param mongo_id: Mongodb id of item
+        :return: None, clean up the db in place
+        """
+        item = db.papers.find_one({'_id': mongo_id})
+        print('Cleaning up entry ', mongo_id)
+        if flag:
+            text = item['text']
+        else:
+            text = item['abstract']
+        text = scrunch(text)
+        tokens = sent_tokenize(text)
+        sentences = []
+        for sent in tokens:
+            words = word_tokenize(sent)
+            # Remove short words, convert to lower case
+            words = small_words(words)
+            # Remove stop words
+            words = remove_stop(words)
+            words_str = ' '.join(words)
+            sentences.append(words_str)
+        if flag:
+            item['text'] = '.'.join(sentences)
+        else:
+            item['abstract'] = '.'.join(sentences)
+        db.papers.update({'_id': item['_id']}, {"$set": item}, upsert=False)
+
+
+def small_words(word_tokens):
+    """ Remove all words from word_tokens that are smaller in length than 3, convert to lowercase
+    :param word_tokens: Word tokens
+    :return: Word tokens with small words removed, converted to lowercase
+    """
+    return [w.lower() for w in word_tokens if len(w) >= 3]
+
+
+def scrunch(text):
+    """ Remove non-alpha characters from text
+    :param text: Text to scrunch
+    :return: Scrunched text
+    """
+    return re.sub('[^a-zA-Z]+', ' ', text)
+
+
+def remove_stop(word_tokens):
+    """ Return new word_token with stop words removed
+    :param word_tokens:
+    :return:
+    """
+    return [w for w in word_tokens if w not in stopwords.words('english')]
 
 
 class MySentences(object):
@@ -25,60 +80,14 @@ class MySentences(object):
         self.keywords = keywords
         self.sentences = []
 
-    @staticmethod
-    def small_words(word_tokens):
-        """ Remove all words from word_tokens that are smaller in length than 3, convert to lowercase
-        :param word_tokens: Word tokens
-        :return: Word tokens with small words removed, converted to lowercase
-        """
-        return [w.lower() for w in word_tokens if len(w) >= 3]
-
-    @staticmethod
-    def scrunch(text):
-        """ Remove non-alpha characters from text
-        :param text: Text to scrunch
-        :return: Scrunched text
-        """
-        return re.sub('[^a-zA-Z]+', ' ', text)
-
-    @staticmethod
-    def remove_stop(word_tokens):
-        """ Return new word_token with stop words removed
-        :param word_tokens:
-        :return:
-        """
-        return [w for w in word_tokens if w not in stopwords.words('english')]
-
     def clean_up_db(self):
         """ Clean up the database by removing stop words etc
         :return: None
         """
         # Remove non-alpha characters from the words
         cursor = self.db.papers.find()
-        count = 1
-        for item in cursor:
-            print('Cleaning up entry ', count)
-            count += 1
-            if self.flag:
-                text = item['text']
-            else:
-                text = item['abstract']
-            text = self.scrunch(text)
-            tokens = sent_tokenize(text)
-            sentences = []
-            for sent in tokens:
-                words = word_tokenize(sent)
-                # Remove short words, convert to lower case
-                words = self.small_words(words)
-                # Remove stop words
-                words = self.remove_stop(words)
-                words_str = ' '.join(words)
-                sentences.append(words_str)
-            if self.flag:
-                item['text'] = '.'.join(sentences)
-            else:
-                item['abstract'] = '.'.join(sentences)
-            self.db.papers.update({'_id': item['_id']}, item)
+        ids = [item['_id'] for item in cursor]
+        map(lambda mongo_id: clean_item(self.db, self.flag, mongo_id), ids)
 
     def to_array(self):
         self.sentences = []
@@ -153,7 +162,7 @@ def get_classifier(db, dimension, keywords, model):
             total_count += 1
         key_count += 1
     classifier = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-          intercept_scaling=1, penalty='l2', multi_class='ovr', random_state=None, tol=0.0001)
+                                    intercept_scaling=1, penalty='l2', multi_class='ovr', random_state=None, tol=0.0001)
     classifier.fit(train_arrays, train_labels)
     return classifier
 
@@ -188,7 +197,7 @@ def word2vec_clusters(model):
             print(words)
 
 
-def build_model(db, clean_flag, flag, cores=1, num_epochs=10):
+def build_model(db, clean_flag, flag, cores=num_cpus, num_epochs=10):
     """ Build Word2Vec model
     :param db: The Mongodb database
     :param flag: If flag is 1 then run cluster on full papers, else run on abstracts
@@ -221,7 +230,7 @@ def build_model(db, clean_flag, flag, cores=1, num_epochs=10):
     model.save(model_path + model_name)
 
 
-def continue_training(db, flag, model_name, cores=1):
+def continue_training(db, flag, model_name, cores=num_cpus):
     """ Continue training word2vec model
     :param db: Mongodb database
     :param flag: If flag is 1 then train over full texts
@@ -229,7 +238,10 @@ def continue_training(db, flag, model_name, cores=1):
     :param cores: Number of cores to use
     :return: None
     """
-    sentences = MySentences(db, flag)
+    # Get keywords
+    cursor = db.papers.find()
+    keywords = [item['keyword'] for item in cursor]
+    sentences = MySentences(db, flag, keywords)
     print("Training doc2vec model using %d cores" % cores)
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     # Load model from model_path
