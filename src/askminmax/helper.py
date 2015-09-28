@@ -113,11 +113,11 @@ def clean_text(db, flag, mongo_id):
         :return: None, clean up the db in place
         """
         item = db.papers.find_one({'_id': mongo_id})
-        print('Cleaning up entry ', mongo_id)
         if flag:
             text = item['text']
         else:
             text = item['abstract']
+        text_old = text
         text = scrunch(text)
         tokens = sent_tokenize(text)
         sentences = []
@@ -131,6 +131,10 @@ def clean_text(db, flag, mongo_id):
             sentences.append(words_str)
         if flag:
             item['text'] = '.'.join(sentences)
+            if text_old == item['text']:
+                print('Nothing to do for entry ', mongo_id)
         else:
             item['abstract'] = '.'.join(sentences)
+            if text_old == item['abstract']:
+                print('Nothing to do for entry', mongo_id)
         db.papers.update({'_id': item['_id']}, {"$set": item}, upsert=False)
