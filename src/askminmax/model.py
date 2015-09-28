@@ -134,7 +134,7 @@ def word2vec_clusters(model):
             print(words)
 
 
-def build_model(db, clean_flag, flag, cores=num_cpus, num_epochs=10):
+def build_model(db, flag, cores=num_cpus, num_epochs=10):
     """ Build Word2Vec model
     :param db: The Mongodb database
     :param flag: If flag is 1 then run cluster on full papers, else run on abstracts
@@ -144,10 +144,6 @@ def build_model(db, clean_flag, flag, cores=num_cpus, num_epochs=10):
     cursor = db.papers.find()
     keywords = [item['keyword'] for item in cursor]
     sentences = MySentences(db, flag, keywords)
-    # Clean up the db
-    if clean_flag:
-        print('Cleaning up the db')
-        sentences.clean_up_db()
     # For now let the parameters be default
     print("Training doc2vec model using %d cores" % cores)
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
