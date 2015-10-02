@@ -645,7 +645,7 @@ class Expert(object):
         """ Clean database of abstracts that contain physics words, short abstracts and remove crap
         :return: None, clean db
         """
-        cursor = self.db.papers.find()
+        cursor = self.db.papers.find(no_cursor_timeout=True)
         stop_words = set(['physics', 'quantum', 'hep', 'topology', 'optics', 'electrodynamics', 'Doppler', 'Cookies'])
         counter = 0
         print('Cleaning up physics stuff...')
@@ -660,10 +660,13 @@ class Expert(object):
                 print(item['abstract'])
                 self.db.papers.remove({'_id': item['_id']})
                 counter += 1
+        # Close cursor
+        cursor.close()
         print('Deleted %d entries' % counter)
         # Remove non-alpha characters from the words
-        cursor = self.db.papers.find()
-        ids = [item['_id'] for item in cursor]
+        cursor = self.db.papers.find(no_cursor_timeout=True)
         # Clean abstracts for now
         print('Cleaning up abstracts...')
-        map(lambda mongo_id: helper.clean_text(self.db, 0, mongo_id), ids)
+        for item in cursor:
+            helper.clean_text(self.db, 0, item['_id'])
+        cursor.close()
