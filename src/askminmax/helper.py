@@ -107,12 +107,12 @@ def remove_stop(word_tokens):
     return [w for w in word_tokens if w not in stopwords.words('english')]
 
 
-def clean_text(db, flag, mongo_id):
+def clean_text(db, flag, hash):
         """ Clean up text given its mongodb id
-        :param mongo_id: Mongodb id of item
+        :param hash: hash value of the item to be cleaned
         :return: None, clean up the db in place
         """
-        item = db.papers.find_one({'_id': mongo_id})
+        item = db.papers.find_one({'hash': hash})
         if flag:
             text = item['text']
         else:
@@ -132,9 +132,9 @@ def clean_text(db, flag, mongo_id):
         if flag:
             item['text'] = '.'.join(sentences)
             if text_old == item['text']:
-                print('Nothing to do for entry ', mongo_id)
+                print('Nothing to do for entry ', hash)
         else:
             item['abstract'] = '.'.join(sentences)
             if text_old == item['abstract']:
-                print('Nothing to do for entry', mongo_id)
-        db.papers.update({'_id': item['_id']}, {"$set": item}, upsert=False)
+                print('Nothing to do for entry', hash)
+        db.papers.update({'hash': hash}, {"$set": item}, upsert=False)

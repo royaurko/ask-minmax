@@ -532,7 +532,7 @@ class Expert(object):
         cursor = self.db.problems.find()
         for item in cursor:
             item['prior'] = n
-            self.db.problems.update({'_id': item['_id']}, item)
+            self.db.problems.update({'hash': item['hash']}, item)
 
     def view_problem_structure(self):
         """ View the YES questions and NO questions of a problem
@@ -545,13 +545,6 @@ class Expert(object):
         :return:None
         """
         questions.view_problems(self.db)
-
-    def cluster(self, flag=0):
-        """ Run the Word2Vec model on the papers and k-means
-        :param flag: If flag is 1 then run on full papers, otherwise only on abstracts
-        :return: None for now
-        """
-        model.cluster_tests(self.db, flag)
 
     def get_downloaded_keywords(self):
         """ Get the list of keywords downloaded so far
@@ -579,13 +572,13 @@ class Expert(object):
             word_tokens = word_tokenize(sent)
             # Remove non-alpha characters from the words
             for w in word_tokens:
-                scrunched = model.scrunch(w)
+                scrunched = helper.scrunch(w)
                 if scrunched:
                     words.append(scrunched)
             # Remove short words, convert to lower case
-            words = model.small_words(words)
+            words = helper.small_words(words)
             # Remove stop words
-            words = model.remove_stop(words)
+            words = helper.remove_stop(words)
             tokenized_summary = tokenized_summary.union(set(words))
         return list(tokenized_summary)
 
@@ -613,7 +606,7 @@ class Expert(object):
             similarity = model.n_similarity(summary, problem)
             print(item['name'] + ': ' + str(similarity))
             item['prior'] *= (1 + similarity)/2
-            self.db.problems.update({'_id': item['_id']}, item)
+            self.db.problems.update({'hash': item['hash']}, item)
 
     def adjust_question_priors_from_summary(self, summary, model_name):
         """ Adjust the priors of problems from the summary
@@ -639,7 +632,7 @@ class Expert(object):
             similarity = model.n_similarity(summary, question)
             print(item['name'] + ': ' + str(similarity))
             item['prior'] *= (1 + similarity)/2
-            self.db.questions.update({'_id': item['_id']}, item)
+            self.db.questions.update({'hash': item['hash']}, item)
 
     def clean_database(self):
         """ Clean database of abstracts that contain physics words, short abstracts and remove crap
@@ -658,7 +651,7 @@ class Expert(object):
                 # Abstract should have at least 2 sentences
                 print('----------------Abstract-----------')
                 print(item['abstract'])
-                self.db.papers.remove({'_id': item['_id']})
+                self.db.papers.remove({'hash': item['hash']})
                 counter += 1
         # Close cursor
         cursor.close()
@@ -668,5 +661,5 @@ class Expert(object):
         # Clean abstracts for now
         print('Cleaning up abstracts...')
         for item in cursor:
-            helper.clean_text(self.db, 0, item['_id'])
+            helper.clean_text(self.db, 0, item['hash'])
         cursor.close()

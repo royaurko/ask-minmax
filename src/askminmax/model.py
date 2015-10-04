@@ -6,12 +6,11 @@ import numpy as np
 import gensim
 import time
 import sklearn
-import helper
 import os
 import logging
 from sklearn.linear_model import LogisticRegression
 import multiprocessing
-num_cpus = multiprocessing.cpu_count()
+num_cpu = multiprocessing.cpu_count()
 
 
 class MySentences(object):
@@ -29,7 +28,7 @@ class MySentences(object):
     def to_array(self):
         self.sentences = []
         for keyword in self.keywords:
-                cursor = self.db.papers.find({'keyword': keyword})
+                cursor = self.db.papers.find({'keyword': keyword}, no_cursor_timeout=True)
                 for item in cursor:
                     if self.flag:
                         text = item['text']
@@ -50,6 +49,7 @@ class MySentences(object):
                         if word_tokens:
                             self.sentences.append(TaggedDocument(word_tokens, [keyword + '_' + str(sentence_counter)]))
                             sentence_counter += 1
+                cursor.close()
         return self.sentences
 
     def sentences_perm(self):
@@ -60,10 +60,8 @@ class MySentences(object):
         :return: Iterator
         """
         for keyword in self.keywords:
-            cursor = self.db.papers.find({'keyword': keyword})
-            ids = [item['_id'] for item in cursor]
-            for id in ids:
-                item = self.db.papers.find_one({'_id': id})
+            cursor = self.db.papers.find({'keyword': keyword}, no_cursor_timeout=True)
+            for item in cursor:
                 if self.flag:
                     text = item['text']
                 else:
@@ -83,6 +81,7 @@ class MySentences(object):
                     if word_tokens:
                         yield TaggedDocument(word_tokens, [keyword + '_' + str(sentence_counter)])
                         sentence_counter += 1
+            cursor.close()
 
 
 def get_classifier(db, dimension, keywords, model):
@@ -91,7 +90,7 @@ def get_classifier(db, dimension, keywords, model):
     train_arrays = np.zeros((num_documents, dimension))
     train_labels = np.zeros(num_documents)
     for keyword in keywords:
-        cursor = db.papers.find({'keyword': keyword})
+        cursor = db.papers.find({'keyword': keyword}, no_cursor_timeout=True)
         for i in xrange(cursor.count()):
             tag = keyword + '_' + total_count
             train_arrays[total_count] = model[tag]
@@ -101,6 +100,7 @@ def get_classifier(db, dimension, keywords, model):
     classifier = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                                     intercept_scaling=1, penalty='l2', multi_class='ovr', random_state=None, tol=0.0001)
     classifier.fit(train_arrays, train_labels)
+    cursor.close()
     return classifier
 
 
@@ -134,17 +134,18 @@ def word2vec_clusters(model):
             print(words)
 
 
-def build_model(db, flag, cores=num_cpus, num_epochs=10):
+def build_model(db, flag, cores=num_cpu, num_epochs=10):
     """ Build Word2Vec model
     :param db: The Mongodb database
     :param flag: If flag is 1 then run cluster on full papers, else run on abstracts
+    :param cores: Number of cores to use
+    :param num_epochs: Number of epochs to train for
     :return: None, call k-means from w2vClusters(corpus)
     """
     # Get keywords
-    cursor = db.papers.find()
+    cursor = db.papers.find(no_cursor_timeout=True)
     keywords = [item['keyword'] for item in cursor]
     sentences = MySentences(db, flag, keywords)
-    # For now let the parameters be default
     print("Training doc2vec model using %d cores" % cores)
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     model = gensim.models.Doc2Vec(sentences, size=400, min_count=1, window=10, alpha=0.025, min_alpha=0.025,
@@ -158,21 +159,23 @@ def build_model(db, flag, cores=num_cpus, num_epochs=10):
     model_path = 'model/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
-    cursor = db.papers.find()
-    model_name = 'model_' + str(cursor.count()) + '_' + str(num_epochs)
+    time_str = time.strftime("_%Y-%m-%d_%H-%M-%S")
+    model_name = 'model_' + str(cursor.count()) + time_str
     model.save(model_path + model_name)
+    cursor.close()
 
 
-def continue_training(db, flag, model_name, cores=num_cpus):
+def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
     """ Continue training word2vec model
     :param db: Mongodb database
     :param flag: If flag is 1 then train over full texts
-    :param model_path: Path to word2vec model
+    :param model_name: Path to word2vec model
     :param cores: Number of cores to use
+    :param num_epochs: Number of epochs to train for
     :return: None
     """
     # Get keywords
-    cursor = db.papers.find()
+    cursor = db.papers.find(no_cursor_timeout=True)
     keywords = [item['keyword'] for item in cursor]
     sentences = MySentences(db, flag, keywords)
     print("Training doc2vec model using %d cores" % cores)
@@ -180,11 +183,15 @@ def continue_training(db, flag, model_name, cores=num_cpus):
     # Load model from model_path
     model = gensim.models.Doc2Vec.load(model_name)
     # Continue training model
-    model.train(sentences)
+    for i in xrange(num_epochs):
+        model.train(sentences.sentences_perm())
+        model.alpha -= 0.002
+        model.min_alpha = model.alpha
     # Save the model for future use
     model_path = 'model/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
-    cursor = db.papers.find()
-    model_name = 'model_' + str(cursor.count())
+    time_str = time.strftime("_%Y-%m-%d_%H-%M-%S")
+    model_name = 'model_' + str(cursor.count()) + time_str
     model.save(model_path + model_name)
+    cursor.close()
