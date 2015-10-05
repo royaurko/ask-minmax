@@ -50,7 +50,7 @@ def dump_db():
         cmd = 'mongodump'
         if not path:
             path = 'database'
-        output = subprocess.call([cmd, '-o', path])
+        output = subprocess.call([cmd, '-o', path, '--db', 'db'])
         print(output)
     except:
         print('Error backing up database!')

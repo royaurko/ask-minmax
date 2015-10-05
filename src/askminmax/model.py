@@ -10,6 +10,7 @@ import os
 import logging
 from sklearn.linear_model import LogisticRegression
 import multiprocessing
+import random
 num_cpu = multiprocessing.cpu_count()
 
 
@@ -34,12 +35,6 @@ class MySentences(object):
                         text = item['text']
                     else:
                         text = item['abstract']
-                    # Convert to utf-8
-                    try:
-                        text = text.decode('utf8')
-                    except UnicodeDecodeError:
-                        print('Error decoding ' + text)
-                        print(type(text))
                     # Tokenize sentences
                     tokens = sent_tokenize(text)
                     sentence_counter = 0
@@ -66,13 +61,6 @@ class MySentences(object):
                     text = item['text']
                 else:
                     text = item['abstract']
-                # Convert to utf-8
-                try:
-                    text = text.decode('utf8')
-                except UnicodeDecodeError:
-                    print('Error decoding ' + text)
-                    print(type(text))
-                # tokens = self.word_tokenize(text)
                 tokens = sent_tokenize(text)
                 sentence_counter = 0
                 for sent in tokens:
@@ -97,10 +85,10 @@ def get_classifier(db, dimension, keywords, model):
             train_labels[total_count] = key_count
             total_count += 1
         key_count += 1
+        cursor.close()
     classifier = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                                     intercept_scaling=1, penalty='l2', multi_class='ovr', random_state=None, tol=0.0001)
     classifier.fit(train_arrays, train_labels)
-    cursor.close()
     return classifier
 
 
@@ -148,11 +136,15 @@ def build_model(db, flag, cores=num_cpu, num_epochs=10):
     sentences = MySentences(db, flag, keywords)
     print("Training doc2vec model using %d cores" % cores)
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    model = gensim.models.Doc2Vec(sentences, size=400, min_count=1, window=10, alpha=0.025, min_alpha=0.025,
+    model = gensim.models.Doc2Vec(sentences, size=5, min_count=1, window=10, alpha=0.025, min_alpha=0.025,
                                   sample=1e-4, workers=cores)
     model.build_vocab(sentences.to_array())
+    sentences_list = sentences.to_array()
+    idx = range(len(sentences_list))
     for i in xrange(num_epochs):
-        model.train(sentences.sentences_perm())
+        random.shuffle(idx)
+        perm_sentences = [sentences_list[i] for i in idx]
+        model.train(perm_sentences)
         model.alpha -= 0.002
         model.min_alpha = model.alpha
     # Save model
@@ -182,9 +174,12 @@ def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     # Load model from model_path
     model = gensim.models.Doc2Vec.load(model_name)
-    # Continue training model
+    sentences_list = sentences.to_array()
+    idx = range(len(sentences_list))
     for i in xrange(num_epochs):
-        model.train(sentences.sentences_perm())
+        random.shuffle(idx)
+        perm_sentences = [sentences_list[i] for i in idx]
+        model.train(perm_sentences)
         model.alpha -= 0.002
         model.min_alpha = model.alpha
     # Save the model for future use
