@@ -11,6 +11,9 @@ import logging
 from sklearn.linear_model import LogisticRegression
 import multiprocessing
 import random
+from keras.models import Sequential
+from keras.callbacks import ModelCheckpoint
+from keras.layers.core import Dense, Dropout, Activation
 num_cpu = multiprocessing.cpu_count()
 
 
@@ -72,7 +75,80 @@ class MySentences(object):
             cursor.close()
 
 
+def get_dense_model(input_dim, output_dim):
+    """ Build a simple MLP to classify Doc2Vec vectors to problems
+    :param input_dim:
+    :param output_dim:
+    :return:
+    """
+    nb_dim = 1024
+    model = Sequential()
+    # First dense layer
+    model.add(Dense(input_dim, nb_dim))
+    model.add(Activation('tanh'))
+    model.add(Dropout(0.5))
+    # Second dense layer
+    model.add(Dense(nb_dim, nb_dim))
+    model.add(Activation('tanh'))
+    model.add(Dropout(0.5))
+    # Third dense layer
+    model.add(Dense(nb_dim, output_dim))
+    model.add(Activation('softmax'))
+    # Add optimizer
+    model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
+    return model
+
+
+def fit_mlp(db, dimension, keywords, mlp_model, doc2vec_model, batch_size=32, nb_epoch=10):
+    """ MLP classifier
+    :param db: MongoDB database
+    :param dimension: The dimension of the word vectors
+    :param keywords: The problems/keywords
+    :param mlp_model: MLP model
+    :param doc2vec_model: Doc2Vec model
+    :param batch_size: Batch size of training
+    :param nb_epoch: Number of epochs to train for
+    :return: Trained MLP model
+    """
+    key_count, total_count = 0, 0
+    num_documents = db.papers.find().count()
+    train_arrays = np.zeros((num_documents, dimension))
+    train_labels = np.zeros(num_documents)
+    for keyword in keywords:
+        cursor = db.papers.find({'keyword': keyword}, no_cursor_timeout=True)
+        for i in xrange(cursor.count()):
+            tag = keyword + '_' + total_count
+            train_arrays[total_count] = doc2vec_model[tag]
+            train_labels[total_count] = key_count
+            total_count += 1
+        key_count += 1
+        cursor.close()
+    check_pointer = ModelCheckpoint(filepath='model/mlp_weights', verbose=1, save_best_only=True)
+    history = mlp_model.fit(train_arrays, train_labels, nb_epoch=nb_epoch, batch_size=batch_size, verbose=1,
+                            show_accuracy=True, validation_split=0.1, callbacks=[check_pointer])
+    return history
+
+
+def predict(db, dimension, keywords, doc2vec_model, text):
+    """
+    :param db:
+    :param dimension:
+    :param keywords:
+    :param model:
+    :param text:
+    :return:
+    """
+    mlp_model = get_dense_model(dimension, len(keywords))
+
+
 def get_classifier(db, dimension, keywords, model):
+    """ Logistic regression classifier
+    :param db:
+    :param dimension:
+    :param keywords:
+    :param model:
+    :return:
+    """
     key_count, total_count = 0, 0
     num_documents = db.papers.find().count()
     train_arrays = np.zeros((num_documents, dimension))
@@ -93,6 +169,14 @@ def get_classifier(db, dimension, keywords, model):
 
 
 def classify(db, dimension, keywords, model, text):
+    """ Classify using logistic regression
+    :param db:
+    :param dimension:
+    :param keywords:
+    :param model:
+    :param text:
+    :return:
+    """
     classifier = get_classifier(db, dimension, keywords, model)
     idx_to_keywords = dict([(i, v) for i, v in enumerate(keywords)])
     vector = model.infer_vector(text)
@@ -126,6 +210,7 @@ def build_model(db, flag, cores=num_cpu, num_epochs=10):
     """ Build Word2Vec model
     :param db: The Mongodb database
     :param flag: If flag is 1 then run cluster on full papers, else run on abstracts
+    :param keyword: If specified train only on those keywords (useful for debugging)
     :param cores: Number of cores to use
     :param num_epochs: Number of epochs to train for
     :return: None, call k-means from w2vClusters(corpus)
@@ -134,9 +219,9 @@ def build_model(db, flag, cores=num_cpu, num_epochs=10):
     cursor = db.papers.find(no_cursor_timeout=True)
     keywords = [item['keyword'] for item in cursor]
     sentences = MySentences(db, flag, keywords)
-    print("Training doc2vec model using %d cores" % cores)
+    print("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    model = gensim.models.Doc2Vec(sentences, size=5, min_count=1, window=10, alpha=0.025, min_alpha=0.025,
+    model = gensim.models.Doc2Vec(sentences, size=400, min_count=50, window=10, alpha=0.025, min_alpha=0.025,
                                   sample=1e-4, workers=cores)
     model.build_vocab(sentences.to_array())
     sentences_list = sentences.to_array()
@@ -152,7 +237,7 @@ def build_model(db, flag, cores=num_cpu, num_epochs=10):
     if not os.path.exists(model_path):
         os.makedirs(model_path)
     time_str = time.strftime("_%Y-%m-%d_%H-%M-%S")
-    model_name = 'model_' + str(cursor.count()) + time_str
+    model_name = 'model_' + str(cursor.count()) + time_str + '.d2v'
     model.save(model_path + model_name)
     cursor.close()
 
@@ -170,7 +255,7 @@ def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
     cursor = db.papers.find(no_cursor_timeout=True)
     keywords = [item['keyword'] for item in cursor]
     sentences = MySentences(db, flag, keywords)
-    print("Training doc2vec model using %d cores" % cores)
+    print("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     # Load model from model_path
     model = gensim.models.Doc2Vec.load(model_name)
