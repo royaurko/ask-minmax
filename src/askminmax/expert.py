@@ -672,6 +672,7 @@ class Expert(object):
             os.makedirs(data_path)
         keywords = self.get_downloaded_keywords()
         for keyword in keywords:
+            print('Writing abstracts for ', keyword)
             keyword_path = data_path + '/' + keyword
             if not os.path.exists(keyword_path):
                 os.makedirs(keyword_path)
