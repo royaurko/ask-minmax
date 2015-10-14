@@ -194,7 +194,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
     sentences = MySentences(data_set)
     print("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    model = gensim.models.Doc2Vec(sentences, size=400, min_count=50, window=2000, alpha=0.025, min_alpha=0.025,
+    model = gensim.models.Doc2Vec(sentences, size=400, min_count=10, window=10, alpha=0.025, min_alpha=0.025,
                                   sample=1e-4, workers=cores)
     model.build_vocab(sentences.to_array())
     sentences_list = sentences.to_array()
