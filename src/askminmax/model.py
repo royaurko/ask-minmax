@@ -4,6 +4,7 @@ from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 import numpy as np
 import gensim
+from gensim import utils
 import time
 import sklearn
 import os
@@ -18,36 +19,23 @@ num_cpu = multiprocessing.cpu_count()
 
 
 class MySentences(object):
-    def __init__(self, db, flag, keywords):
+    def __init__(self, data_set):
         """ Constructor for a sentence, used to create an iterator for better memory usage
-        :param db: The Mongodb database
-        :param flag: If flag is 1 run it on full papers, else on abstracts
+        :param data_set: The data set containing the problems as subfolders
         :return: None, create MySentence instance
         """
-        self.db = db
-        self.flag = flag
-        self.keywords = keywords
+        self.data_set = data_set
         self.sentences = []
 
     def to_array(self):
         self.sentences = []
-        for keyword in self.keywords:
-                cursor = self.db.papers.find({'keyword': keyword}, no_cursor_timeout=True)
-                for item in cursor:
-                    if self.flag:
-                        text = item['text']
-                    else:
-                        text = item['abstract']
-                    # Tokenize sentences
-                    tokens = sent_tokenize(text)
-                    sentence_counter = 0
-                    for sent in tokens:
-                        word_tokens = word_tokenize(sent)
-                        # Append to sentences
-                        if word_tokens:
-                            self.sentences.append(TaggedDocument(word_tokens, [keyword + '_' + str(sentence_counter)]))
-                            sentence_counter += 1
-                cursor.close()
+        keywords = os.listdir(self.data_set)
+        for keyword in keywords:
+            for index, abstract in enumerate(os.listdir(self.data_set + '/' + keyword)):
+                with utils.smart_open(self.data_set + '/' + keyword + '/' + abstract) as fin:
+                    for item_no, line in enumerate(fin):
+                        self.sentences.append(TaggedDocument(utils.to_unicode(line).split(),
+                                                             keyword + '_%s_%s' % (index, item_no)))
         return self.sentences
 
     def sentences_perm(self):
@@ -57,22 +45,12 @@ class MySentences(object):
         """ Create iterator
         :return: Iterator
         """
-        for keyword in self.keywords:
-            cursor = self.db.papers.find({'keyword': keyword}, no_cursor_timeout=True)
-            for item in cursor:
-                if self.flag:
-                    text = item['text']
-                else:
-                    text = item['abstract']
-                tokens = sent_tokenize(text)
-                sentence_counter = 0
-                for sent in tokens:
-                    word_tokens = word_tokenize(sent)
-                    # Yield the words to Word2Vec
-                    if word_tokens:
-                        yield TaggedDocument(word_tokens, [keyword + '_' + str(sentence_counter)])
-                        sentence_counter += 1
-            cursor.close()
+        keywords = os.listdir(self.data_set)
+        for keyword in keywords:
+            for index, abstract in enumerate(os.listdir(self.data_set + '/' + keyword)):
+                with utils.smart_open(self.data_set + '/' + keyword + '/' + abstract) as fin:
+                    for item_no, line in enumerate(fin):
+                        yield TaggedDocument(utils.to_unicode(line).split(), keyword + '_%s_%s' % (index, item_no))
 
 
 def get_dense_model(input_dim, output_dim):
@@ -206,22 +184,17 @@ def word2vec_clusters(model):
             print(words)
 
 
-def build_model(db, flag, cores=num_cpu, num_epochs=10):
+def build_model(data_set, cores=num_cpu, num_epochs=10):
     """ Build Word2Vec model
-    :param db: The Mongodb database
-    :param flag: If flag is 1 then run cluster on full papers, else run on abstracts
-    :param keyword: If specified train only on those keywords (useful for debugging)
+    :param data_set: The dataset folder containing the problems
     :param cores: Number of cores to use
     :param num_epochs: Number of epochs to train for
     :return: None, call k-means from w2vClusters(corpus)
     """
-    # Get keywords
-    cursor = db.papers.find(no_cursor_timeout=True)
-    keywords = [item['keyword'] for item in cursor]
-    sentences = MySentences(db, flag, keywords)
+    sentences = MySentences(data_set)
     print("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    model = gensim.models.Doc2Vec(sentences, size=400, min_count=50, window=10, alpha=0.025, min_alpha=0.025,
+    model = gensim.models.Doc2Vec(sentences, size=400, min_count=50, window=2000, alpha=0.025, min_alpha=0.025,
                                   sample=1e-4, workers=cores)
     model.build_vocab(sentences.to_array())
     sentences_list = sentences.to_array()
@@ -237,9 +210,8 @@ def build_model(db, flag, cores=num_cpu, num_epochs=10):
     if not os.path.exists(model_path):
         os.makedirs(model_path)
     time_str = time.strftime("_%Y-%m-%d_%H-%M-%S")
-    model_name = 'model_' + str(cursor.count()) + time_str + '.d2v'
+    model_name = 'model_' + time_str + '.d2v'
     model.save(model_path + model_name)
-    cursor.close()
 
 
 def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):

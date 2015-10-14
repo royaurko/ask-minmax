@@ -6,14 +6,13 @@ import questions
 import sepquestions
 import training
 import arxiv
-import model
 import natural_break
 import numpy as np
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 from jenks import jenks
 import gensim
-import time
+import os
 
 
 class Expert(object):
@@ -663,3 +662,25 @@ class Expert(object):
         for item in cursor:
             helper.clean_text(self.db, 0, item['hash'])
         cursor.close()
+
+    def dump_data_to_txt(self):
+        """ Dump the papers to a folder with folders inside keywords
+        :return:
+        """
+        data_path = 'dataset'
+        if not os.path.exists(data_path):
+            os.makedirs(data_path)
+        keywords = self.get_downloaded_keywords()
+        for keyword in keywords:
+            keyword_path = data_path + '/' + keyword
+            if not os.path.exists(keyword_path):
+                os.makedirs(keyword_path)
+            cursor = self.db.papers.find({'keyword': keyword}, no_cursor_timeout=True)
+            count = 0
+            for item in cursor:
+                file_name = keyword_path + '/' + 'abstract_' + str(count)
+                f = open(file_name, 'wb')
+                f.write(item['abstract'].encode('utf-8'))
+                f.close()
+                count += 1
+            cursor.close()
