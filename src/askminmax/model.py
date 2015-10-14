@@ -31,11 +31,14 @@ class MySentences(object):
         self.sentences = []
         keywords = os.listdir(self.data_set)
         for keyword in keywords:
+            count = 0
             for index, abstract in enumerate(os.listdir(self.data_set + '/' + keyword)):
                 with utils.smart_open(self.data_set + '/' + keyword + '/' + abstract) as fin:
                     for item_no, line in enumerate(fin):
+                        label = keyword.replace(' ', '_')
                         self.sentences.append(TaggedDocument(utils.to_unicode(line).split(),
-                                                             keyword + '_%s_%s' % (index, item_no)))
+                                                             label + '_%s' % count))
+                        count += 1
         return self.sentences
 
     def sentences_perm(self):
@@ -47,10 +50,13 @@ class MySentences(object):
         """
         keywords = os.listdir(self.data_set)
         for keyword in keywords:
-            for index, abstract in enumerate(os.listdir(self.data_set + '/' + keyword)):
+            count = 0
+            for abstract in os.listdir(self.data_set + '/' + keyword):
                 with utils.smart_open(self.data_set + '/' + keyword + '/' + abstract) as fin:
-                    for item_no, line in enumerate(fin):
-                        yield TaggedDocument(utils.to_unicode(line).split(), keyword + '_%s_%s' % (index, item_no))
+                    for line in fin:
+                        label = keyword.replace(' ', '_')
+                        yield TaggedDocument(utils.to_unicode(line).split(), label + '_%s' % count)
+                        count += 1
 
 
 def get_dense_model(input_dim, output_dim):
@@ -119,27 +125,28 @@ def predict(db, dimension, keywords, doc2vec_model, text):
     mlp_model = get_dense_model(dimension, len(keywords))
 
 
-def get_classifier(db, dimension, keywords, model):
+def get_classifier(data_set, dimension, model):
     """ Logistic regression classifier
-    :param db:
-    :param dimension:
-    :param keywords:
-    :param model:
+    :param data_set: Path to data set folder
+    :param dimension: Dimension of the word vectors
+    :param model: Doc2Vec model
     :return:
     """
     key_count, total_count = 0, 0
-    num_documents = db.papers.find().count()
+    keywords = os.listdir(data_set)
+    num_documents = 0
+    for keyword in keywords:
+        num_documents += len(os.listdir(data_set + '/' + keyword))
     train_arrays = np.zeros((num_documents, dimension))
     train_labels = np.zeros(num_documents)
     for keyword in keywords:
-        cursor = db.papers.find({'keyword': keyword}, no_cursor_timeout=True)
-        for i in xrange(cursor.count()):
-            tag = keyword + '_' + total_count
+        count = 0
+        for abstract in os.listdir(data_set + '/' + keyword):
+            tag = keyword + '_%s' % count
             train_arrays[total_count] = model[tag]
             train_labels[total_count] = key_count
-            total_count += 1
+            count += 1
         key_count += 1
-        cursor.close()
     classifier = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                                     intercept_scaling=1, penalty='l2', multi_class='ovr', random_state=None, tol=0.0001)
     classifier.fit(train_arrays, train_labels)
@@ -194,7 +201,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
     sentences = MySentences(data_set)
     print("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    model = gensim.models.Doc2Vec(sentences, size=400, min_count=10, window=10, alpha=0.025, min_alpha=0.025,
+    model = gensim.models.Doc2Vec(sentences, size=400, min_count=1, window=10, alpha=0.025, min_alpha=0.025,
                                   sample=1e-4, workers=cores)
     model.build_vocab(sentences.to_array())
     sentences_list = sentences.to_array()
