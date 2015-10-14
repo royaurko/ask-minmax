@@ -663,11 +663,11 @@ class Expert(object):
             helper.clean_text(self.db, 0, item['hash'])
         cursor.close()
 
-    def dump_data_to_txt(self):
+    def dump_data_to_txt(self, data_path):
         """ Dump the papers to a folder with folders inside keywords
+        :param data_path: path to dump to
         :return:
         """
-        data_path = 'dataset'
         if not os.path.exists(data_path):
             os.makedirs(data_path)
         keywords = self.get_downloaded_keywords()
