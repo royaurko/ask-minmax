@@ -140,32 +140,32 @@ def get_classifier(data_set, dimension, model):
     train_arrays = np.zeros((num_documents, dimension))
     train_labels = np.zeros(num_documents)
     for keyword in keywords:
-        count = 0
         for abstract in os.listdir(data_set + '/' + keyword):
-            tag = keyword + '_%s' % count
-            train_arrays[total_count] = model[tag]
+            f = open(data_set + '/' + keyword + '/' + abstract, 'rb')
+            text = f.read()
+            vector = model.infer_vector(text)
+            train_arrays[total_count] = vector
             train_labels[total_count] = key_count
-            count += 1
+            total_count += 1
         key_count += 1
     classifier = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-                                    intercept_scaling=1, penalty='l2', multi_class='ovr', random_state=None, tol=0.0001)
+                                    intercept_scaling=1, penalty='l2', random_state=None, tol=0.0001)
     classifier.fit(train_arrays, train_labels)
     return classifier
 
 
-def classify(db, dimension, keywords, model, text):
+def classify(data_set, model, classifier, text):
     """ Classify using logistic regression
-    :param db:
-    :param dimension:
-    :param keywords:
-    :param model:
-    :param text:
+    :param data_set: Path to dataset
+    :param model: Doc2Vec model
+    :param classifier: Logistic Regression classifier
+    :param text: Text to classify
     :return:
     """
-    classifier = get_classifier(db, dimension, keywords, model)
+    keywords = os.listdir(data_set)
     idx_to_keywords = dict([(i, v) for i, v in enumerate(keywords)])
     vector = model.infer_vector(text)
-    probability_vector = classifier.predict_proba(vector)
+    probability_vector = classifier.predict_proba(vector).flatten
     return dict([(idx_to_keywords[i], v) for i, v in enumerate(probability_vector)])
 
 
