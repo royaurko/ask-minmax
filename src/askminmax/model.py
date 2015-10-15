@@ -164,7 +164,7 @@ def classify(data_set, model, classifier, text):
     keywords = os.listdir(data_set)
     idx_to_keywords = dict([(i, v) for i, v in enumerate(keywords)])
     vector = model.infer_vector(text)
-    probability_vector = classifier.predict_proba(vector).flatten
+    probability_vector = classifier.predict_proba(vector).flatten()
     return dict([(idx_to_keywords[i], v) for i, v in enumerate(probability_vector)])
 
 
