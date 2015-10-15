@@ -125,13 +125,13 @@ def predict(db, dimension, keywords, doc2vec_model, text):
     mlp_model = get_dense_model(dimension, len(keywords))
 
 
-def get_classifier(data_set, dimension, model):
+def get_classifier(data_set, model):
     """ Logistic regression classifier
     :param data_set: Path to data set folder
-    :param dimension: Dimension of the word vectors
     :param model: Doc2Vec model
     :return:
     """
+    dimension = model.vector_size
     key_count, total_count = 0, 0
     keywords = os.listdir(data_set)
     num_documents = 0
