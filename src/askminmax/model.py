@@ -1,7 +1,5 @@
 from __future__ import print_function
 from gensim.models.doc2vec import TaggedDocument
-from nltk.tokenize import word_tokenize
-from nltk.tokenize import sent_tokenize
 import numpy as np
 import gensim
 from gensim import utils
@@ -83,11 +81,9 @@ def get_dense_model(input_dim, output_dim):
     return model
 
 
-def fit_mlp(db, dimension, keywords, mlp_model, doc2vec_model, batch_size=32, nb_epoch=10):
+def fit_mlp(data_set, mlp_model, doc2vec_model, batch_size=32, nb_epoch=10):
     """ MLP classifier
-    :param db: MongoDB database
-    :param dimension: The dimension of the word vectors
-    :param keywords: The problems/keywords
+    :param data_set: Data set containing the abstracts
     :param mlp_model: MLP model
     :param doc2vec_model: Doc2Vec model
     :param batch_size: Batch size of training
@@ -95,18 +91,21 @@ def fit_mlp(db, dimension, keywords, mlp_model, doc2vec_model, batch_size=32, nb
     :return: Trained MLP model
     """
     key_count, total_count = 0, 0
-    num_documents = db.papers.find().count()
+    keywords = os.listdir(data_set)
+    num_documents = 0
+    dimension = doc2vec_model.vector_size
+    for keyword in keywords:
+        num_documents += len(os.listdir(data_set + '/' + keyword))
     train_arrays = np.zeros((num_documents, dimension))
     train_labels = np.zeros(num_documents)
     for keyword in keywords:
-        cursor = db.papers.find({'keyword': keyword}, no_cursor_timeout=True)
-        for i in xrange(cursor.count()):
-            tag = keyword + '_' + total_count
-            train_arrays[total_count] = doc2vec_model[tag]
+        for abstract in os.listdir(data_set + '/' + keyword):
+            f = open(data_set + '/' + keyword + '/' + abstract, 'rb')
+            text = f.read()
+            vector = doc2vec_model.infer_vector(text)
+            train_arrays[total_count] = vector
             train_labels[total_count] = key_count
             total_count += 1
-        key_count += 1
-        cursor.close()
     check_pointer = ModelCheckpoint(filepath='model/mlp_weights', verbose=1, save_best_only=True)
     history = mlp_model.fit(train_arrays, train_labels, nb_epoch=nb_epoch, batch_size=batch_size, verbose=1,
                             show_accuracy=True, validation_split=0.1, callbacks=[check_pointer])
