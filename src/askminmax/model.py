@@ -13,6 +13,7 @@ import random
 from keras.models import Sequential
 from keras.callbacks import ModelCheckpoint
 from keras.layers.core import Dense, Dropout
+from joblib import Parallel, delayed
 num_cpu = multiprocessing.cpu_count()
 
 
@@ -78,6 +79,23 @@ def get_dense_model(input_dim, output_dim):
     return model
 
 
+def get_vector(doc2vec_model, data_set, keyword, abstract, d):
+    """ Get the vector for the abstract
+    :param doc2vec_model: Doc2Vec model
+    :param data_set: Dataset containing abstracts
+    :param keyword: Keyword
+    :param abstract: Abstract
+    :param d: Dictionary mapping keyword to label
+    :return:
+    """
+    f = open(data_set + '/' + keyword + '/' + abstract, 'rb')
+    text = f.read()
+    f.close()
+    vector = doc2vec_model.infer_vector(text)
+    label = d[keyword]
+    return vector, label
+
+
 def fit_mlp(data_set, mlp_model, doc2vec_model, batch_size=32, nb_epoch=10):
     """ MLP classifier
     :param data_set: Data set containing the abstracts
@@ -87,25 +105,17 @@ def fit_mlp(data_set, mlp_model, doc2vec_model, batch_size=32, nb_epoch=10):
     :param nb_epoch: Number of epochs to train for
     :return: Trained MLP model
     """
-    key_count, total_count = 0, 0
+    print('Building an MLP classifier using %d cores' % num_cpu)
     keywords = os.listdir(data_set)
-    num_documents = 0
-    dimension = doc2vec_model.vector_size
-    for keyword in keywords:
-        num_documents += len(os.listdir(data_set + '/' + keyword))
-    train_arrays = np.zeros((num_documents, dimension))
-    train_labels = np.zeros(num_documents)
-    for keyword in keywords:
-        for abstract in os.listdir(data_set + '/' + keyword):
-            f = open(data_set + '/' + keyword + '/' + abstract, 'rb')
-            text = f.read()
-            print('Inferring vector on abstract %s of keyword %s' % (abstract, keyword))
-            vector = doc2vec_model.infer_vector(text)
-            train_arrays[total_count] = vector
-            train_labels[total_count] = key_count
-            total_count += 1
-    print('Train arrays shape = ', train_arrays.shape)
-    print('Train labels shape = ', train_labels.shape)
+    d = {}
+    for i, keyword in enumerate(keywords):
+        d[keyword] = i
+    train_data = Parallel(n_jobs=num_cpu)(delayed(get_vector)(doc2vec_model, data_set, keyword, abstract)
+                                          for keyword in keywords for abstract in keyword)
+    train_arrays = np.array([x[0] for x in train_data])
+    train_labels = np.array([x[1] for x in train_data])
+    print('Shape of train_arrays = ', train_arrays.shape)
+    print('Shape of train_labels = ', train_labels.shape)
     check_pointer = ModelCheckpoint(filepath='model/mlp_weights', verbose=1, save_best_only=True)
     history = mlp_model.fit(train_arrays, train_labels, nb_epoch=nb_epoch, batch_size=batch_size, verbose=1,
                             show_accuracy=True, validation_split=0.1, callbacks=[check_pointer])
@@ -124,29 +134,23 @@ def predict(db, dimension, keywords, doc2vec_model, text):
     mlp_model = get_dense_model(dimension, len(keywords))
 
 
-def get_classifier(data_set, model):
+def get_logistic_classifier(data_set, doc2vec_model):
     """ Logistic regression classifier
     :param data_set: Path to data set folder
-    :param model: Doc2Vec model
+    :param doc2vec_model: Doc2Vec model
     :return:
     """
-    dimension = model.vector_size
-    key_count, total_count = 0, 0
+    print('Building a logistic regression classifier using %d cores' % num_cpu)
     keywords = os.listdir(data_set)
-    num_documents = 0
-    for keyword in keywords:
-        num_documents += len(os.listdir(data_set + '/' + keyword))
-    train_arrays = np.zeros((num_documents, dimension))
-    train_labels = np.zeros(num_documents)
-    for keyword in keywords:
-        for abstract in os.listdir(data_set + '/' + keyword):
-            f = open(data_set + '/' + keyword + '/' + abstract, 'rb')
-            text = f.read()
-            vector = model.infer_vector(text)
-            train_arrays[total_count] = vector
-            train_labels[total_count] = key_count
-            total_count += 1
-        key_count += 1
+    d = {}
+    for i, keyword in enumerate(keywords):
+        d[keyword] = i
+    train_data = Parallel(n_jobs=num_cpu)(delayed(get_vector)(doc2vec_model, data_set, keyword, abstract, d)
+                                                     for keyword in keywords for abstract in keyword)
+    train_arrays = np.array([x[0] for x in train_data])
+    train_labels = np.array([x[1] for x in train_data])
+    print('Shape of train_arrays = ', train_arrays.shape)
+    print('Shape of train_labels = ', train_labels.shape)
     classifier = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                                     intercept_scaling=1, penalty='l2', random_state=None, tol=0.0001)
     classifier.fit(train_arrays, train_labels)
