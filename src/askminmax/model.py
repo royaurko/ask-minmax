@@ -215,7 +215,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
     model_path = 'model/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
-    time_str = time.strftime("_%Y-%m-%d_%H-%M-%S")
+    time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
     model_name = 'model_' + time_str + '.d2v'
     model.save(model_path + model_name)
 
