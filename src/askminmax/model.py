@@ -96,7 +96,7 @@ def get_vector(doc2vec_model, data_set, keyword, abstract, d):
     return vector, label
 
 
-def fit_mlp(data_set, mlp_model, doc2vec_model, batch_size=32, nb_epoch=10):
+def fit_mlp(data_set, mlp_model, doc2vec_model, num_cpu=num_cpu, batch_size=32, nb_epoch=10):
     """ MLP classifier
     :param data_set: Data set containing the abstracts
     :param mlp_model: MLP model
@@ -134,7 +134,7 @@ def predict(db, dimension, keywords, doc2vec_model, text):
     mlp_model = get_dense_model(dimension, len(keywords))
 
 
-def get_logistic_classifier(data_set, doc2vec_model):
+def get_logistic_classifier(data_set, doc2vec_model, num_cpu=num_cpu):
     """ Logistic regression classifier
     :param data_set: Path to data set folder
     :param doc2vec_model: Doc2Vec model
