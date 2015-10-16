@@ -63,7 +63,7 @@ def get_dense_model(input_dim, output_dim):
     :param output_dim:
     :return:
     """
-    nb_dim = 1024
+    nb_dim = 10
     model = Sequential()
     # First dense layer
     model.add(Dense(nb_dim, input_dim, init='glorot_uniform', activation='tanh'))
@@ -72,7 +72,7 @@ def get_dense_model(input_dim, output_dim):
     model.add(Dense(nb_dim, nb_dim, init='glorot_uniform', activation='tanh'))
     model.add(Dropout(0.5))
     # Third dense layer
-    model.add(Dense(output_dim, nb_dim, init='glorot_uniform', activation='softmax')
+    model.add(Dense(output_dim, nb_dim, init='glorot_uniform', activation='softmax'))
     # Add optimizer
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
     return model
@@ -99,6 +99,7 @@ def fit_mlp(data_set, mlp_model, doc2vec_model, batch_size=32, nb_epoch=10):
         for abstract in os.listdir(data_set + '/' + keyword):
             f = open(data_set + '/' + keyword + '/' + abstract, 'rb')
             text = f.read()
+            print('Inferring vector on abstract %s of keyword %s' % (abstract, keyword))
             vector = doc2vec_model.infer_vector(text)
             train_arrays[total_count] = vector
             train_labels[total_count] = key_count
