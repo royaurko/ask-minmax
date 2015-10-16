@@ -12,7 +12,7 @@ import multiprocessing
 import random
 from keras.models import Sequential
 from keras.callbacks import ModelCheckpoint
-from keras.layers.core import Dense, Dropout, Activation
+from keras.layers.core import Dense, Dropout
 num_cpu = multiprocessing.cpu_count()
 
 
@@ -66,16 +66,13 @@ def get_dense_model(input_dim, output_dim):
     nb_dim = 1024
     model = Sequential()
     # First dense layer
-    model.add(Dense(input_dim, nb_dim))
-    model.add(Activation('tanh'))
+    model.add(Dense(nb_dim, input_dim, init='glorot_uniform', activation='tanh'))
     model.add(Dropout(0.5))
     # Second dense layer
-    model.add(Dense(nb_dim, nb_dim))
-    model.add(Activation('tanh'))
+    model.add(Dense(nb_dim, nb_dim, init='glorot_uniform', activation='tanh'))
     model.add(Dropout(0.5))
     # Third dense layer
-    model.add(Dense(nb_dim, output_dim))
-    model.add(Activation('softmax'))
+    model.add(Dense(output_dim, nb_dim, init='glorot_uniform', activation='softmax')
     # Add optimizer
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
     return model
@@ -106,6 +103,8 @@ def fit_mlp(data_set, mlp_model, doc2vec_model, batch_size=32, nb_epoch=10):
             train_arrays[total_count] = vector
             train_labels[total_count] = key_count
             total_count += 1
+    print('Train arrays shape = ', train_arrays.shape)
+    print('Train labels shape = ', train_labels.shape)
     check_pointer = ModelCheckpoint(filepath='model/mlp_weights', verbose=1, save_best_only=True)
     history = mlp_model.fit(train_arrays, train_labels, nb_epoch=nb_epoch, batch_size=batch_size, verbose=1,
                             show_accuracy=True, validation_split=0.1, callbacks=[check_pointer])
