@@ -644,13 +644,13 @@ class Expert(object):
         for item in cursor:
             words = set(item['abstract'].strip().split())
             if words & stop_words:
-                self.db.papers.remove({'_id': item['_id']})
+                self.db.papers.delete_one({'_id': item['_id']})
                 counter += 1
             elif len(sent_tokenize(item['abstract'])) < 3:
                 # Abstract should have at least 2 sentences
                 print('----------------Abstract-----------')
                 print(item['abstract'])
-                self.db.papers.remove({'hash': item['hash']})
+                self.db.papers.delete_one({'hash': item['hash']})
                 counter += 1
         # Close cursor
         cursor.close()
