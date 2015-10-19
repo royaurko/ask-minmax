@@ -146,7 +146,8 @@ def get_logistic_classifier(data_set, doc2vec_model, num_cpu=num_cpu):
     for i, keyword in enumerate(keywords):
         d[keyword] = i
     train_data = Parallel(n_jobs=num_cpu)(delayed(get_vector)(doc2vec_model, data_set, keyword, abstract, d)
-                                                     for keyword in keywords for abstract in keyword)
+                                          for keyword in keywords
+                                          for abstract in os.listdir(data_set + '/' + keyword))
     train_arrays = np.array([x[0] for x in train_data])
     train_labels = np.array([x[1] for x in train_data])
     print('Shape of train_arrays = ', train_arrays.shape)
