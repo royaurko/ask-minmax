@@ -158,7 +158,9 @@ def get_logistic_classifier(data_set, doc2vec_model):
     classifier = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                                     intercept_scaling=1, penalty='l2', random_state=None, tol=0.0001)
     classifier.fit(train_arrays, train_labels)
-    model_path = 'model/'
+    model_path = 'models/'
+    if not os.path.exists(model_path):
+        os.makedirs(model_path)
     time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
     model_name = 'model_' + time_str + '.log'
     f = open(model_path + model_name, 'wb')
@@ -229,7 +231,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
         model.alpha -= 0.002
         model.min_alpha = model.alpha
     # Save model
-    model_path = 'model/'
+    model_path = 'models/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
     time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
