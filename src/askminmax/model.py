@@ -14,6 +14,7 @@ from keras.models import Sequential
 from keras.callbacks import ModelCheckpoint
 from keras.layers.core import Dense, Dropout
 from joblib import Parallel, delayed
+import cPickle as pickle
 num_cpu = multiprocessing.cpu_count()
 
 
@@ -134,20 +135,22 @@ def predict(db, dimension, keywords, doc2vec_model, text):
     mlp_model = get_dense_model(dimension, len(keywords))
 
 
-def get_logistic_classifier(data_set, doc2vec_model, num_cpu=num_cpu):
+def get_logistic_classifier(data_set, doc2vec_model):
     """ Logistic regression classifier
     :param data_set: Path to data set folder
     :param doc2vec_model: Doc2Vec model
-    :return:
+    :return: None, save classifier to pickle file
     """
-    print('Building a logistic regression classifier using %d cores' % num_cpu)
+    print('Building a logistic regression classifier...')
     keywords = os.listdir(data_set)
     d = {}
     for i, keyword in enumerate(keywords):
         d[keyword] = i
-    train_data = Parallel(n_jobs=num_cpu)(delayed(get_vector)(doc2vec_model, data_set, keyword, abstract, d)
-                                          for keyword in keywords
-                                          for abstract in os.listdir(data_set + '/' + keyword))
+    train_data = []
+    for keyword in keywords:
+        for abstract in os.listdir(data_set + '/' + keyword):
+            labelled_vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
+            train_data.append(labelled_vector)
     train_arrays = np.array([x[0] for x in train_data])
     train_labels = np.array([x[1] for x in train_data])
     print('Shape of train_arrays = ', train_arrays.shape)
@@ -155,21 +158,30 @@ def get_logistic_classifier(data_set, doc2vec_model, num_cpu=num_cpu):
     classifier = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                                     intercept_scaling=1, penalty='l2', random_state=None, tol=0.0001)
     classifier.fit(train_arrays, train_labels)
-    return classifier
+    model_path = 'model/'
+    time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
+    model_name = 'model_' + time_str + '.log'
+    f = open(model_path + model_name, 'wb')
+    pickle.dump(classifier, f)
+    f.close()
 
 
-def classify(data_set, model, classifier, text):
+def classify(data_set, doc2vec_model_path, logistic_classifier_path, text):
     """ Classify using logistic regression
     :param data_set: Path to dataset
-    :param model: Doc2Vec model
-    :param classifier: Logistic Regression classifier
+    :param doc2vec_model_path: Path to Doc2Vec model
+    :param logistic_classifier_path: Path to Logistic Regression classifier
     :param text: Text to classify
     :return:
     """
+    logistic_file = open(logistic_classifier_path, 'rb')
+    classifier = pickle.load(logistic_file)
+    model = gensim.models.Doc2Vec.load(doc2vec_model_path)
     keywords = os.listdir(data_set)
     idx_to_keywords = dict([(i, v) for i, v in enumerate(keywords)])
     vector = model.infer_vector(text)
     probability_vector = classifier.predict_proba(vector).flatten()
+    logistic_file.close()
     return dict([(idx_to_keywords[i], v) for i, v in enumerate(probability_vector)])
 
 
