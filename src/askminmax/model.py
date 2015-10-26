@@ -135,13 +135,14 @@ def predict(db, dimension, keywords, doc2vec_model, text):
     mlp_model = get_dense_model(dimension, len(keywords))
 
 
-def get_logistic_classifier(data_set, doc2vec_model):
+def get_logistic_classifier(data_set, doc2vec_model_path):
     """ Logistic regression classifier
     :param data_set: Path to data set folder
     :param doc2vec_model: Doc2Vec model
     :return: None, save classifier to pickle file
     """
     print('Building a logistic regression classifier...')
+    doc2vec_model = gensim.models.Doc2Vec.load(doc2vec_model_path)
     keywords = os.listdir(data_set)
     d = {}
     for i, keyword in enumerate(keywords):
