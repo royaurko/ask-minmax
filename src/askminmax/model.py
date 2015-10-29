@@ -8,6 +8,7 @@ import sklearn
 import os
 import logging
 from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
 import multiprocessing
 import random
 from keras.models import Sequential
@@ -59,27 +60,6 @@ class MySentences(object):
                         count += 1
 
 
-def get_dense_model(input_dim, output_dim):
-    """ Build a simple MLP to classify Doc2Vec vectors to problems
-    :param input_dim:
-    :param output_dim:
-    :return:
-    """
-    nb_dim = 10
-    model = Sequential()
-    # First dense layer
-    model.add(Dense(nb_dim, input_dim, init='glorot_uniform', activation='tanh'))
-    model.add(Dropout(0.5))
-    # Second dense layer
-    model.add(Dense(nb_dim, nb_dim, init='glorot_uniform', activation='tanh'))
-    model.add(Dropout(0.5))
-    # Third dense layer
-    model.add(Dense(output_dim, nb_dim, init='glorot_uniform', activation='softmax'))
-    # Add optimizer
-    model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
-    return model
-
-
 def get_vector(doc2vec_model, data_set, keyword, abstract, d):
     """ Get the vector for the abstract
     :param doc2vec_model: Doc2Vec model
@@ -97,51 +77,13 @@ def get_vector(doc2vec_model, data_set, keyword, abstract, d):
     return vector, label
 
 
-def fit_mlp(data_set, mlp_model, doc2vec_model, num_cpu=num_cpu, batch_size=32, nb_epoch=10):
-    """ MLP classifier
-    :param data_set: Data set containing the abstracts
-    :param mlp_model: MLP model
-    :param doc2vec_model: Doc2Vec model
-    :param batch_size: Batch size of training
-    :param nb_epoch: Number of epochs to train for
-    :return: Trained MLP model
-    """
-    print('Building an MLP classifier using %d cores' % num_cpu)
-    keywords = os.listdir(data_set)
-    d = {}
-    for i, keyword in enumerate(keywords):
-        d[keyword] = i
-    train_data = Parallel(n_jobs=num_cpu)(delayed(get_vector)(doc2vec_model, data_set, keyword, abstract)
-                                          for keyword in keywords for abstract in keyword)
-    train_arrays = np.array([x[0] for x in train_data])
-    train_labels = np.array([x[1] for x in train_data])
-    print('Shape of train_arrays = ', train_arrays.shape)
-    print('Shape of train_labels = ', train_labels.shape)
-    check_pointer = ModelCheckpoint(filepath='model/mlp_weights', verbose=1, save_best_only=True)
-    history = mlp_model.fit(train_arrays, train_labels, nb_epoch=nb_epoch, batch_size=batch_size, verbose=1,
-                            show_accuracy=True, validation_split=0.1, callbacks=[check_pointer])
-    return history
-
-
-def predict(db, dimension, keywords, doc2vec_model, text):
-    """
-    :param db:
-    :param dimension:
-    :param keywords:
-    :param model:
-    :param text:
-    :return:
-    """
-    mlp_model = get_dense_model(dimension, len(keywords))
-
-
-def get_logistic_classifier(data_set, doc2vec_model_path):
-    """ Logistic regression classifier
+def get_random_forest_classifier(data_set, doc2vec_model_path):
+    """ Random forest classifier classifier
     :param data_set: Path to data set folder
-    :param doc2vec_model: Doc2Vec model
+    :param doc2vec_model_path: Path to Doc2Vec model
     :return: None, save classifier to pickle file
     """
-    print('Building a logistic regression classifier...')
+    print('Building a random forest classifier...')
     doc2vec_model = gensim.models.Doc2Vec.load(doc2vec_model_path)
     keywords = os.listdir(data_set)
     d = {}
@@ -156,14 +98,13 @@ def get_logistic_classifier(data_set, doc2vec_model_path):
     train_labels = np.array([x[1] for x in train_data])
     print('Shape of train_arrays = ', train_arrays.shape)
     print('Shape of train_labels = ', train_labels.shape)
-    classifier = LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-                                    intercept_scaling=1, penalty='l2', random_state=None, tol=0.0001)
+    classifier = RandomForestClassifier(n_estimators=50, n_jobs=-1)
     classifier.fit(train_arrays, train_labels)
     model_path = 'models/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
     time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
-    model_name = 'model_' + time_str + '.log'
+    model_name = 'model_' + time_str + '.rf'
     f = open(model_path + model_name, 'wb')
     pickle.dump(classifier, f)
     f.close()
