@@ -7,7 +7,6 @@ import time
 import sklearn
 import os
 import logging
-from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 import multiprocessing
 import random
