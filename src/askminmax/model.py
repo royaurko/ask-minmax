@@ -95,9 +95,7 @@ def get_random_forest_classifier(data_set, doc2vec_model_path):
             train_data.append(labelled_vector)
     train_arrays = np.array([x[0] for x in train_data])
     train_labels = np.array([x[1] for x in train_data])
-    print('Shape of train_arrays = ', train_arrays.shape)
-    print('Shape of train_labels = ', train_labels.shape)
-    classifier = RandomForestClassifier(n_estimators=50, n_jobs=-1)
+    classifier = RandomForestClassifier(n_estimators=500, n_jobs=-1)
     classifier.fit(train_arrays, train_labels)
     model_path = 'models/'
     if not os.path.exists(model_path):
@@ -109,15 +107,15 @@ def get_random_forest_classifier(data_set, doc2vec_model_path):
     f.close()
 
 
-def classify(data_set, doc2vec_model_path, logistic_classifier_path, text):
+def classify(data_set, doc2vec_model_path, classifier_path, text):
     """ Classify using logistic regression
     :param data_set: Path to dataset
     :param doc2vec_model_path: Path to Doc2Vec model
-    :param logistic_classifier_path: Path to Logistic Regression classifier
+    :param classifier_path: Path to Random forest classifier
     :param text: Text to classify
     :return:
     """
-    logistic_file = open(logistic_classifier_path, 'rb')
+    logistic_file = open(classifier_path, 'rb')
     classifier = pickle.load(logistic_file)
     model = gensim.models.Doc2Vec.load(doc2vec_model_path)
     keywords = os.listdir(data_set)
