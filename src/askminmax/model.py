@@ -7,13 +7,10 @@ import time
 import sklearn
 import os
 import logging
+from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 import multiprocessing
 import random
-from keras.models import Sequential
-from keras.callbacks import ModelCheckpoint
-from keras.layers.core import Dense, Dropout
-from joblib import Parallel, delayed
 import cPickle as pickle
 num_cpu = multiprocessing.cpu_count()
 
@@ -76,8 +73,8 @@ def get_vector(doc2vec_model, data_set, keyword, abstract, d):
     return vector, label
 
 
-def get_random_forest_classifier(data_set, doc2vec_model_path):
-    """ Random forest classifier classifier
+def train_random_forest_classifier(data_set, doc2vec_model_path):
+    """ Random forest classifier
     :param data_set: Path to data set folder
     :param doc2vec_model_path: Path to Doc2Vec model
     :return: None, save classifier to pickle file
@@ -102,6 +99,37 @@ def get_random_forest_classifier(data_set, doc2vec_model_path):
         os.makedirs(model_path)
     time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
     model_name = 'model_' + time_str + '.rf'
+    f = open(model_path + model_name, 'wb')
+    pickle.dump(classifier, f)
+    f.close()
+
+
+def train_logistic_regression_classifier(data_set, doc2vec_model_path):
+    """ Logistic regression classifier
+    :param data_set: Path to data set folder
+    :param doc2vec_model_path: Path to Doc2Vec model
+    :return: None, save classifier to pickle file
+    """
+    print('Building a logistic regression classifier...')
+    doc2vec_model = gensim.models.Doc2Vec.load(doc2vec_model_path)
+    keywords = os.listdir(data_set)
+    d = {}
+    for i, keyword in enumerate(keywords):
+        d[keyword] = i
+    train_data = []
+    for keyword in keywords:
+        for abstract in os.listdir(data_set + '/' + keyword):
+            labelled_vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
+            train_data.append(labelled_vector)
+    train_arrays = np.array([x[0] for x in train_data])
+    train_labels = np.array([x[1] for x in train_data])
+    classifier = LogisticRegression(penalty='l2', multi_class='ovr', n_jobs=-1)
+    classifier.fit(train_arrays, train_labels)
+    model_path = 'models/'
+    if not os.path.exists(model_path):
+        os.makedirs(model_path)
+    time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
+    model_name = 'model_' + time_str + '.log'
     f = open(model_path + model_name, 'wb')
     pickle.dump(classifier, f)
     f.close()
