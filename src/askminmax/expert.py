@@ -8,8 +8,10 @@ import training
 import arxiv
 import natural_break
 import numpy as np
+import model
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
+from scipy.stats import entropy
 from jenks import jenks
 import gensim
 import os
@@ -76,18 +78,21 @@ class Expert(object):
         problems.print_list(db)
         questions.print_list(db)
 
-    def run(self, model_name='model/model_211088'):
+    def run(self):
         """ Control the main program flow
         :return: None, modify db in place
         """
+        data_set = raw_input('Path to data_set: ')
+        doc2vec_model_path = raw_input('Path to Doc2Vec model: ')
+        classifier_path = raw_input('Path to classifier trained on word vectors: ')
         try:
             while True:
                 # Ask the user for a short summary of the problem
-                summary = self.get_summary()
+                summary = raw_input('Please describe your problem in a few words: ')
                 # Adjust problem priors
-                self.adjust_problem_priors_from_summary(summary, model_name)
+                self.adjust_problem_priors_from_summary(data_set, doc2vec_model_path, classifier_path, summary)
                 # Adjust question priors
-                self.adjust_question_priors_from_summary(summary, model_name)
+                self.adjust_question_priors_from_summary(summary, doc2vec_model_path)
                 # Reset the posteriors equal to prior before starting a prediction loop
                 self.reset_posteriors()
                 # Print the table
@@ -558,54 +563,18 @@ class Expert(object):
                 keywords[item['keyword']] = 1
         return keywords
 
-    @staticmethod
-    def get_summary():
-        """ Get a summary or a description of the problem from the user
-        :return: None, store the summary in the database
-        """
-        summary = raw_input('Please describe your problem in a few words: ')
-        tokenized_summary = set()
-        tokens = sent_tokenize(summary)
-        for sent in tokens:
-            words = []
-            word_tokens = word_tokenize(sent)
-            # Remove non-alpha characters from the words
-            for w in word_tokens:
-                scrunched = helper.scrunch(w)
-                if scrunched:
-                    words.append(scrunched)
-            # Remove short words, convert to lower case
-            words = helper.small_words(words)
-            # Remove stop words
-            words = helper.remove_stop(words)
-            tokenized_summary = tokenized_summary.union(set(words))
-        return list(tokenized_summary)
-
-    def adjust_problem_priors_from_summary(self, summary, model_name):
+    def adjust_problem_priors_from_summary(self, data_set, doc2vec_model_path, classifier_path, summary):
         """ Adjust the priors of problems from the summary
         :param summary: word tokens from the summary
         :param model_name: Name of the model
         :return: None
         """
-        model = gensim.models.Doc2Vec.load(model_name)
-        cursor = self.db.problems.find()
-        for item in cursor:
-            # Tokenize the problem name
-            problem = []
-            problem_tokens = word_tokenize(item['name'])
-            # Remove non-alpha characters from the words
-            for w in problem_tokens:
-                scrunched = model.scrunch(w)
-                if scrunched:
-                    problem.append(scrunched)
-            # Remove short words, convert to lower case
-            problem = model.small_words(problem)
-            # Remove stop words
-            problem = model.remove_stop(problem)
-            similarity = model.n_similarity(summary, problem)
-            print(item['name'] + ': ' + str(similarity))
-            item['prior'] *= (1 + similarity)/2
-            self.db.problems.update({'hash': item['hash']}, item)
+        for sent in summary:
+            distribution = model.classify(data_set, doc2vec_model_path, classifier_path, sent)
+            p = np.array([x[1] for x in distribution])
+            print(distribution)
+            e = entropy(p)
+            print('Entropy = ', e)
 
     def adjust_question_priors_from_summary(self, summary, model_name):
         """ Adjust the priors of problems from the summary
@@ -685,3 +654,21 @@ class Expert(object):
                 f.close()
                 count += 1
             cursor.close()
+
+    def import_problems_from_txt(self, data_path):
+        """ Given a data path import problems from the sub folders
+        :return: None, update data base
+        """
+        problem_list = os.listdir(data_path)
+        for problem in problem_list:
+            hash_value = helper.get_hash(problem)
+            item = self.db.problems.find_one({'hash': hash_value})
+            if item is None:
+                prior = 1
+                posterior = 1
+                posquestions = list()
+                negquestions = list()
+                d = {'name': problem, 'hash': hash_value, 'prior': prior,
+                     'posterior': posterior, 'posquestions': posquestions,
+                     'negquestions': negquestions}
+                self.db.problems.insert(d)
