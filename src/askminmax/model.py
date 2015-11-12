@@ -136,7 +136,7 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path, num_cpu=n
     processes = []
     for keyword in keywords:
         for abstract in os.listdir(data_set + '/' + keyword):
-            p = mp.Process(target=append_vector_to_queue, args=(doc2vec_model, data_set, keyword, abstract, d))
+            p = mp.Process(target=append_vector_to_queue, args=(doc2vec_model, data_set, keyword, abstract, d, output))
             processes.append(p)
     # Run process
     for p in processes:
