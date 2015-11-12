@@ -64,7 +64,7 @@ you the option to create one of your own. Finally to run the expert system use
 expert.run()
 ```
 
-## Fun with Word2Vec
+## Fun with Doc2Vec
 
 You can train your own word2vec model on your domain specific dataset. In this case we train it on
 abstracts downloaded from `arxiv`. Here's a fun example in IPython:

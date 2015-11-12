@@ -9,10 +9,10 @@ import os
 import logging
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
-import multiprocessing
+import multiprocessing as mp
 import random
 import cPickle as pickle
-num_cpu = multiprocessing.cpu_count()
+num_cpu = mp.cpu_count()
 
 
 class MySentences(object):
@@ -104,10 +104,25 @@ def train_random_forest_classifier(data_set, doc2vec_model_path):
     f.close()
 
 
-def train_logistic_regression_classifier(data_set, doc2vec_model_path):
+def append_vector_to_queue(doc2vec_model, data_set, keyword, abstract, d, queue):
+    """ Append vector to Multiprocessing queue
+    :param doc2vec_model: Doc2Vec model
+    :param data_set: The data set containing abstracts
+    :param keyword: The keyword describing the problem
+    :param abstract: Abstract
+    :param d: dictionary mapping problems to indices
+    :param queue: Multiprocessing queue
+    :return: None
+    """
+    vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
+    queue.put(vector)
+
+
+def train_logistic_regression_classifier(data_set, doc2vec_model_path, num_cpu=num_cpu):
     """ Logistic regression classifier
     :param data_set: Path to data set folder
     :param doc2vec_model_path: Path to Doc2Vec model
+    :param num_cpu: Number of cores to use, defaults to num_cpu
     :return: None, save classifier to pickle file
     """
     print('Building a logistic regression classifier...')
@@ -116,17 +131,26 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path):
     d = {}
     for i, keyword in enumerate(keywords):
         d[keyword] = i
-    train_data = []
-    test_data = []
+    # Collect vectors in parallel
+    output = mp.Queue()
+    processes = []
     for keyword in keywords:
-        n = len(os.listdir(data_set + '/' + keyword))
-        counter = 0
         for abstract in os.listdir(data_set + '/' + keyword):
-            labelled_vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
-            if counter < 0.9*n:
-                train_data.append(labelled_vector)
-            else:
-                test_data.append(labelled_vector)
+            p = mp.Process(target=append_vector_to_queue, args=(doc2vec_model, data_set, keyword, abstract, d))
+            processes.append(p)
+    # Run process
+    for p in processes:
+        p.start()
+    # Exit completed processes
+    for p in processes:
+        p.join()
+    # Compile result
+    data = [output.get() for p in processes]
+    # Split randomly into training and testing
+    random.shuffle(data)
+    n = len(data)
+    train_data = data[:0.9*n]
+    test_data = data[0.9*n:]
     train_arrays = np.array([x[0] for x in train_data])
     train_labels = np.array([x[1] for x in train_data])
     test_arrays = np.array([x[0] for x in test_data])
