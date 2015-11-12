@@ -117,14 +117,24 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path):
     for i, keyword in enumerate(keywords):
         d[keyword] = i
     train_data = []
+    test_data = []
     for keyword in keywords:
+        n = len(os.listdir(data_set + '/' + keyword))
+        counter = 0
         for abstract in os.listdir(data_set + '/' + keyword):
             labelled_vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
-            train_data.append(labelled_vector)
+            if counter < 0.9*n:
+                train_data.append(labelled_vector)
+            else:
+                test_data.append(labelled_vector)
     train_arrays = np.array([x[0] for x in train_data])
     train_labels = np.array([x[1] for x in train_data])
-    classifier = LogisticRegression(penalty='l2', multi_class='ovr', n_jobs=-1)
+    test_arrays = np.array([x[0] for x in test_data])
+    test_labels = np.array([x[1] for x in test_data])
+    classifier = LogisticRegression(penalty='l2')
     classifier.fit(train_arrays, train_labels)
+    print('Testing classifier...')
+    classifier.score(test_arrays, test_labels)
     model_path = 'models/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
