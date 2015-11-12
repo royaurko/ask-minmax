@@ -94,7 +94,7 @@ def query(db):
         problem_name = helper.strip(raw_input('Problem name: '))
         hash_value = helper.get_hash(problem_name)
         item = db.problems.find_one({'hash': hash_value})
-        if item is None:
+        if item is None and problem_name:
             # It is a new item, create the problem dictionary and insert into data base
             prior = 1
             posterior = 1
