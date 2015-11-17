@@ -104,14 +104,13 @@ def train_random_forest_classifier(data_set, doc2vec_model_path):
     f.close()
 
 
-def append_vector_to_queue(doc2vec_model, data_set, d, work_queue, output):
+def worker(doc2vec_model, data_set, d, work_queue, output):
     """ Append vector to Multiprocessing queue
     :param doc2vec_model: Doc2Vec model
     :param data_set: The data set containing abstracts
-    :param keyword: The keyword describing the problem
-    :param abstract: Abstract
     :param d: dictionary mapping problems to indices
-    :param queue: Multiprocessing queue
+    :param work_queue: Multiprocessing queue containing (keyword, abstract) pairs
+    :param output: Multiprocessing queue where output is to be pushed
     :return: None
     """
     while not work_queue.empty():
@@ -141,7 +140,7 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path, num_cpu=n
         for abstract in os.listdir(data_set + '/' + keyword):
             work_queue.put((keyword, abstract))
     for w in xrange(num_cpu):
-            p = mp.Process(target=append_vector_to_queue, args=(doc2vec_model, data_set, d, work_queue, output))
+            p = mp.Process(target=worker, args=(doc2vec_model, data_set, d, work_queue, output))
             p.start()
             processes.append(p)
     # Run process
