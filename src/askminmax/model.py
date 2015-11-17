@@ -104,7 +104,7 @@ def train_random_forest_classifier(data_set, doc2vec_model_path):
     f.close()
 
 
-def append_vector_to_queue(doc2vec_model, data_set, keyword, abstract, d, queue):
+def append_vector_to_queue(doc2vec_model, data_set, d, work_queue, output):
     """ Append vector to Multiprocessing queue
     :param doc2vec_model: Doc2Vec model
     :param data_set: The data set containing abstracts
@@ -114,8 +114,10 @@ def append_vector_to_queue(doc2vec_model, data_set, keyword, abstract, d, queue)
     :param queue: Multiprocessing queue
     :return: None
     """
-    vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
-    queue.put(vector)
+    while not work_queue.empty():
+        (keyword, abstract) = work_queue.get()
+        vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
+        output.put(vector)
 
 
 def train_logistic_regression_classifier(data_set, doc2vec_model_path, num_cpu=num_cpu):
@@ -132,20 +134,24 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path, num_cpu=n
     for i, keyword in enumerate(keywords):
         d[keyword] = i
     # Collect vectors in parallel
+    work_queue = mp.Queue()
     output = mp.Queue()
     processes = []
     for keyword in keywords:
         for abstract in os.listdir(data_set + '/' + keyword):
-            p = mp.Process(target=append_vector_to_queue, args=(doc2vec_model, data_set, keyword, abstract, d, output))
+            work_queue.put((keyword, abstract))
+    for w in xrange(num_cpu):
+            p = mp.Process(target=append_vector_to_queue, args=(doc2vec_model, data_set, d, work_queue, output))
+            p.start()
             processes.append(p)
     # Run process
     for p in processes:
-        p.start()
-    # Exit completed processes
-    for p in processes:
         p.join()
     # Compile result
-    data = [output.get() for p in processes]
+    data = []
+    while not output.empty():
+        item = output.get()
+        data.append(item)
     # Split randomly into training and testing
     random.shuffle(data)
     n = len(data)
@@ -159,7 +165,7 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path, num_cpu=n
     classifier.fit(train_arrays, train_labels)
     print('Testing classifier...')
     classifier.score(test_arrays, test_labels)
-    model_path = 'models/'
+    model_path = 'models/'Cloud
     if not os.path.exists(model_path):
         os.makedirs(model_path)
     time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
