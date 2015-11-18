@@ -7,11 +7,11 @@ import time
 import sklearn
 import os
 import logging
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LogisticRegressionCV
 from sklearn.ensemble import RandomForestClassifier
 import multiprocessing as mp
-import random
 import cPickle as pickle
+import argparse
 num_cpu = mp.cpu_count()
 
 
@@ -151,20 +151,13 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path, num_cpu=n
     while not output.empty():
         item = output.get()
         data.append(item)
-    # Split randomly into training and testing
-    random.shuffle(data)
-    n = len(data)
-    train_data = data[:0.9*n]
-    test_data = data[0.9*n:]
-    train_arrays = np.array([x[0] for x in train_data])
-    train_labels = np.array([x[1] for x in train_data])
-    test_arrays = np.array([x[0] for x in test_data])
-    test_labels = np.array([x[1] for x in test_data])
-    classifier = LogisticRegression(penalty='l2')
+    # Do a cross validation
+    train_arrays = np.array([x[0] for x in data])
+    train_labels = np.array([x[1] for x in data])
+    classifier = LogisticRegressionCV(Cs=[0.0001, 0.001, 0.01, 0.1, 1.0, 10.0], cv=10, penalty='l2', solver='newton-cg')
     classifier.fit(train_arrays, train_labels)
-    print('Testing classifier...')
-    classifier.score(test_arrays, test_labels)
-    model_path = 'models/'Cloud
+    print('Classifier score = ', classifier.score(train_arrays, train_labels))
+    model_path = 'models/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
     time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
@@ -278,3 +271,12 @@ def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
     model_name = 'model_' + str(cursor.count()) + time_str
     model.save(model_path + model_name)
     cursor.close()
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d', '--data_path', help='Path to abstracts')
+    parser.add_argument('-m', '--model_path', help='Path to Doc2Vec model')
+    parser.add_argument('-n', '--num_cores', type=int, default=num_cpu, help='Number of workers to use')
+    args = parser.parse_args()
+    train_logistic_regression_classifier(args.data_path, args.model_path, args.num_cores)
