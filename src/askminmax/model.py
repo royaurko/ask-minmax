@@ -12,6 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 import multiprocessing as mp
 import cPickle as pickle
 import argparse
+import random
 num_cpu = mp.cpu_count()
 
 
