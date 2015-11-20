@@ -105,26 +105,10 @@ def train_random_forest_classifier(data_set, doc2vec_model_path):
     f.close()
 
 
-def worker(doc2vec_model, data_set, d, work_queue, output):
-    """ Append vector to Multiprocessing queue
-    :param doc2vec_model: Doc2Vec model
-    :param data_set: The data set containing abstracts
-    :param d: dictionary mapping problems to indices
-    :param work_queue: Multiprocessing queue containing (keyword, abstract) pairs
-    :param output: Multiprocessing queue where output is to be pushed
-    :return: None
-    """
-    while not work_queue.empty():
-        (keyword, abstract) = work_queue.get()
-        vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
-        output.put(vector)
-
-
-def train_logistic_regression_classifier(data_set, doc2vec_model_path, num_cpu=num_cpu):
+def train_logistic_regression_classifier(data_set, doc2vec_model_path):
     """ Logistic regression classifier
     :param data_set: Path to data set folder
     :param doc2vec_model_path: Path to Doc2Vec model
-    :param num_cpu: Number of cores to use, defaults to num_cpu
     :return: None, save classifier to pickle file
     """
     print('Building a logistic regression classifier...')
@@ -134,24 +118,11 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path, num_cpu=n
     for i, keyword in enumerate(keywords):
         d[keyword] = i
     # Collect vectors in parallel
-    work_queue = mp.Queue()
-    output = mp.Queue()
-    processes = []
+    data = []
     for keyword in keywords:
         for abstract in os.listdir(data_set + '/' + keyword):
-            work_queue.put((keyword, abstract))
-    for w in xrange(num_cpu):
-            p = mp.Process(target=worker, args=(doc2vec_model, data_set, d, work_queue, output))
-            p.start()
-            processes.append(p)
-    # Run process
-    for p in processes:
-        p.join()
-    # Compile result
-    data = []
-    while not output.empty():
-        item = output.get()
-        data.append(item)
+            vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
+            data.append(vector)
     # Do a cross validation
     train_arrays = np.array([x[0] for x in data])
     train_labels = np.array([x[1] for x in data])
@@ -278,6 +249,5 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--data_path', help='Path to abstracts')
     parser.add_argument('-m', '--model_path', help='Path to Doc2Vec model')
-    parser.add_argument('-n', '--num_cores', type=int, default=num_cpu, help='Number of workers to use')
     args = parser.parse_args()
-    train_logistic_regression_classifier(args.data_path, args.model_path, args.num_cores)
+    train_logistic_regression_classifier(args.data_path, args.model_path)
