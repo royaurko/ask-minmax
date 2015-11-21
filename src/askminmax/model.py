@@ -15,7 +15,7 @@ import random
 num_cpu = mp.cpu_count()
 
 
-class MySentences():
+class MySentences:
     def __init__(self, data_set):
         """ Constructor for a sentence, used to create an iterator for better memory usage
         :param data_set: The data set containing the problems as subfolders

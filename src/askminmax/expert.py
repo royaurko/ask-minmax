@@ -16,7 +16,7 @@ import gensim
 import os
 
 
-class Expert():
+class Expert:
     def __init__(self):
         """ Constructor for Expert class
         :return: None
