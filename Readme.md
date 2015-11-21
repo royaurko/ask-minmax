@@ -30,7 +30,7 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
 ## Prerequisites: 
 The last three dependencies are due to Google's word2vec and are still a work in progress.
 
- * Python 2.7
+ * Python 3
  * A running [Mongodb](https://www.mongodb.org/) server 
  * [pymongo](https://pypi.python.org/pypi/pymongo/)
  * [jenks](https://github.com/perrygeo/jenks)
@@ -38,7 +38,7 @@ The last three dependencies are due to Google's word2vec and are still a work in
  * [numpy](http://www.scipy.org/)
  * [matplotlib](http://matplotlib.org/)
  * [nltk](http://www.nltk.org/)
- * [scikit-learn](https://pypi.python.org/pypi/scikit-learn/0.16.1)
+ * [scikit-learn 0.17](https://pypi.python.org/pypi/scikit-learn/0.17)
  * [gensim](https://pypi.python.org/pypi/gensim)
 
 ## Quickstart:
