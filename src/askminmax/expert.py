@@ -1,4 +1,3 @@
-from __future__ import print_function
 import helper
 import database
 import problems
@@ -17,7 +16,7 @@ import gensim
 import os
 
 
-class Expert(object):
+class Expert():
     def __init__(self):
         """ Constructor for Expert class
         :return: None

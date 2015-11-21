@@ -1,4 +1,3 @@
-from __future__ import print_function
 from gensim.models.doc2vec import TaggedDocument
 import numpy as np
 import gensim
@@ -10,13 +9,13 @@ import logging
 from sklearn.linear_model import LogisticRegressionCV
 from sklearn.ensemble import RandomForestClassifier
 import multiprocessing as mp
-import cPickle as pickle
+import pickle
 import argparse
 import random
 num_cpu = mp.cpu_count()
 
 
-class MySentences(object):
+class MySentences():
     def __init__(self, data_set):
         """ Constructor for a sentence, used to create an iterator for better memory usage
         :param data_set: The data set containing the problems as subfolders
@@ -165,7 +164,7 @@ def word2vec_clusters(model):
     """
     start = time.time()
     vectors = model.syn0
-    num_clusters = int(raw_input('Number of clusters: '))
+    num_clusters = int(input('Number of clusters: '))
     print("Running clustering with %d clusters" % num_clusters)
     clustering_algorithm = sklearn.cluster.MiniBatchKMeans(n_clusters=num_clusters)
     idx = clustering_algorithm.fit_predict(vectors)
@@ -195,7 +194,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
     model.build_vocab(sentences.to_array())
     sentences_list = sentences.to_array()
     idx = range(len(sentences_list))
-    for i in xrange(num_epochs):
+    for i in range(num_epochs):
         random.shuffle(idx)
         perm_sentences = [sentences_list[i] for i in idx]
         model.train(perm_sentences)
@@ -229,7 +228,7 @@ def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
     model = gensim.models.Doc2Vec.load(model_name)
     sentences_list = sentences.to_array()
     idx = range(len(sentences_list))
-    for i in xrange(num_epochs):
+    for i in range(num_epochs):
         random.shuffle(idx)
         perm_sentences = [sentences_list[i] for i in idx]
         model.train(perm_sentences)

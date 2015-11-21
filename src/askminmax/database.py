@@ -9,10 +9,10 @@ def connect():
     Get the host and port number from the user and connect a client
     :return: Connected Mongoclient
     """
-    host = raw_input('Mongodb host name (press enter for localhost): ')
+    host = input('Mongodb host name (press enter for localhost): ')
     while True:
         try:
-            port = raw_input('Port number (press enter for default port): ')
+            port = input('Port number (press enter for default port): ')
             if not port:
                 break
             port = int(port)
@@ -46,7 +46,7 @@ def dump_db():
     :return: None
     """
     try:
-        path = raw_input('Name of folder to dump BSON files to (default = database)? ')
+        path = input('Name of folder to dump BSON files to (default = database)? ')
         cmd = 'mongodump'
         if not path:
             path = 'database'
@@ -63,7 +63,7 @@ def recover_db(client):
     """
     client.drop_database('db')
     cmd = 'mongorestore'
-    path = raw_input('Folder to recover from (default = database)? ')
+    path = input('Folder to recover from (default = database)? ')
     if not path:
         path = 'database'
     subprocess.call([cmd, path])

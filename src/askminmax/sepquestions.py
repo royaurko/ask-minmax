@@ -1,4 +1,3 @@
-from __future__ import print_function
 import helper
 import questions
 import problems
@@ -21,7 +20,7 @@ def get_correct_problem(db):
         print('Correct problem: ' + correct['name'])
     else:
         # Correct problem is not in our database
-        correct_name = helper.strip(raw_input('What is the correct problem?\n'))
+        correct_name = helper.strip(input('What is the correct problem?\n'))
         correct_hash = helper.get_hash(correct_name)
         # Create a blank dictionary item for this new problem
         correct = {'name': correct_name, 'hash': correct_hash,
@@ -67,7 +66,7 @@ def ask_separating_question(db, wrong, correct):
         try:
             s = 'Question separating ' + wrong['name'] + ' from ' + correct['name']
             s += ' in the DB (0/1)? '
-            response = int(raw_input(s))
+            response = int(input(s))
             break
         except ValueError:
             helper.error_one_zero()
@@ -117,7 +116,7 @@ def parse_negative_single_question(db, wrong, correct):
     """
     # First query the user for a question that is NO for correct problem and YES for wrong one
     q_string = 'Enter a question that is NO for ' + correct['name'] + ' and YES for ' + wrong['name'] + ':\n '
-    neg_question_name = helper.strip(raw_input(q_string))
+    neg_question_name = helper.strip(input(q_string))
     if not neg_question_name:
         # User did not enter a new negative question
         return []
@@ -147,7 +146,7 @@ def parse_positive_single_question(db, wrong, correct):
     """
     # First query the user for a question that is YES for correct problem and NO for wrong one
     q_string = 'Enter a question that is YES for ' + correct['name'] + ' and NO for ' + wrong['name'] + ':\n '
-    positive_question_name = helper.strip(raw_input(q_string))
+    positive_question_name = helper.strip(input(q_string))
     if not positive_question_name:
         # User did not enter a positive question
         return []
@@ -179,7 +178,7 @@ def parse_negative_list_questions(db, wrong, correct, question_idx_to_id):
         try:
             question_string = 'Enter question numbers that are NO for ' \
                        + correct['name'] + ' and YES for ' + wrong['name'] + ':\n '
-            negative_list = raw_input(question_string)
+            negative_list = input(question_string)
             negative_list = map(int, negative_list.strip().split())
             negative_question_id_list = [question_idx_to_id[x] for x in negative_list]
             break
@@ -206,7 +205,7 @@ def parse_positive_list_questions(db, wrong, correct, question_idx_to_id):
         try:
             question_string = 'Enter question numbers that are YES for ' \
                        + correct['name'] + ' and NO for ' + wrong['name'] + ':\n '
-            positive_list = raw_input(question_string)
+            positive_list = input(question_string)
             positive_list = map(int, positive_list.strip().split())
             positive_question_id_list = [question_idx_to_id[x] for x in positive_list]
             break

@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import os
 from setuptools import setup
 
@@ -12,12 +11,12 @@ setup(
     version="1.0.0",
     author="Aurko Roy",
     author_email="aurko@gatech.edu",
-    description=("A Bayesian expert system for optimization problems "),
+    description="Expert system for optimization problems ",
     license="BSD",
     keywords="expert system",
     url="https://github.com/royaurko/ask-minmax",
     install_requires=['pymongo', 'scipy', 'numpy', 'matplotlib', 'nltk', 'sklearn', 'gensim', 'feedparser',
-                      'jenks', 'dragnet', 'lxml', 'cython', 'requests', 'keras'],
+                      'jenks', 'dragnet', 'lxml', 'cython', 'requests'],
     dependency_links=['git+https://github.com/perrygeo/jenks.git#egg=jenks'],
     packages=['askminmax'],
     package_dir={'askminmax': 'src/askminmax'},

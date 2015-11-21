@@ -1,4 +1,3 @@
-from __future__ import print_function
 import random
 from scipy.stats import entropy
 import helper
@@ -195,7 +194,7 @@ def view_problems(db):
     question_idx_to_id = print_list(db)
     while True:
         try:
-            idx = int(raw_input('Enter question number: '))
+            idx = int(input('Enter question number: '))
             question_id = question_idx_to_id[idx]
             break
         except ValueError:

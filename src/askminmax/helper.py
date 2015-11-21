@@ -1,4 +1,3 @@
-from __future__ import print_function
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
@@ -56,13 +55,13 @@ def get_hash(s):
 
 
 def mass(db, table, hash_value, property_name):
-    ''' Return mass of property of query is non-zero and 0 o.w.
+    """ Return mass of property of query is non-zero and 0 o.w.
     :param db: The Mongodb database
     :param table: Type of db table, either problems or questions
     :param hash_value: Hash value of the problem or question
     :param property_name: Property type whose mass to return
     :return: Mass of the property
-    '''
+    """
     if table == 'problems':
         problem = db.problems.find_one({'hash': hash_value})
         return problem[property_name]
@@ -78,7 +77,7 @@ def get_initials(s):
     """
     initials = ''
     s_list = s.strip().split()
-    for i in xrange(len(s_list)):
+    for i in range(len(s_list)):
         initials += s_list[i][0]
     return initials.upper()
 

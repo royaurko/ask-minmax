@@ -10,7 +10,7 @@ def train(db):
     """
     while True:
         try:
-            n = int(raw_input('Number of times to train? '))
+            n = int(input('Number of times to train? '))
             break
         except ValueError:
             helper.error_number()
@@ -23,12 +23,12 @@ def training(n, db):
     :param db: The Mongodb database
     :return: None, modify db in place
     """
-    for i in xrange(n):
+    for i in range(n):
         problem = problems.sample(db, 'prior')
-        print problem['name']
+        print(problem['name'])
         while True:
             try:
-                response = int(raw_input('Is this the correct problem (0/1)? '))
+                response = int(input('Is this the correct problem (0/1)? '))
                 break
             except ValueError:
                 helper.error_one_zero()

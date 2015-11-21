@@ -1,4 +1,3 @@
-from __future__ import print_function
 import helper
 import random
 from scipy.stats import entropy
