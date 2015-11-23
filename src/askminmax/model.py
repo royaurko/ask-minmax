@@ -147,7 +147,7 @@ def classify(data_set, doc2vec_model_path, classifier_path, text):
     :return:
     """
     logistic_file = open(classifier_path, 'rb')
-    classifier = pickle.load(logistic_file)
+    classifier = pickle.load(logistic_file, encoding='latin1')
     model = gensim.models.Doc2Vec.load(doc2vec_model_path)
     keywords = os.listdir(data_set)
     idx_to_keywords = dict([(i, v) for i, v in enumerate(keywords)])
@@ -246,7 +246,19 @@ def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument('mode', help="'doc2vec' for training doc2vec vectors, 'logit' for building logit model")
+    parser.add_argument('-n', '--num_cores', help='Number of cores to use with -w')
+    parser.add_argument('-e', '--num_epochs', help='Number of epochs to train with -w')
     parser.add_argument('-d', '--data_path', help='Path to abstracts')
     parser.add_argument('-m', '--model_path', help='Path to Doc2Vec model')
     args = parser.parse_args()
-    train_logistic_regression_classifier(args.data_path, args.model_path)
+    if args.mode == 'doc2vec':
+        try:
+            build_model(args.data_path, args.num_cores, args.num_epochs)
+        except:
+            print('Unexpected error')
+    if args.mode == 'logit':
+        try:
+            train_logistic_regression_classifier(args.data_path, args.model_path)
+        except:
+            print('Unexpected error')
