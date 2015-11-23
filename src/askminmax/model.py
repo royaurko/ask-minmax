@@ -193,7 +193,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
                                   sample=1e-4, workers=cores)
     model.build_vocab(sentences.to_array())
     sentences_list = sentences.to_array()
-    idx = range(len(sentences_list))
+    idx = list(range(len(sentences_list)))
     for i in range(num_epochs):
         random.shuffle(idx)
         perm_sentences = [sentences_list[i] for i in idx]
