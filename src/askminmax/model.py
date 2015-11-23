@@ -260,5 +260,5 @@ if __name__ == '__main__':
     if args.mode == 'logit':
         try:
             train_logistic_regression_classifier(args.data_path, args.model_path)
-        except:
-            print('Unexpected error')
+        except Exception as e:
+            print('Unexpected error: ', e)
