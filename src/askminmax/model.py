@@ -2,7 +2,6 @@ from gensim.models.doc2vec import TaggedDocument
 import numpy as np
 import gensim
 from gensim import utils
-from gensim import corpora, models, similarities
 import time
 import sklearn
 import os
@@ -13,7 +12,6 @@ import multiprocessing as mp
 import pickle
 import argparse
 import random
-from gensim.models.ldamulticore import LdaMulticore
 num_cpu = mp.cpu_count()
 
 
