@@ -1,11 +1,10 @@
-from __future__ import print_function
-from scholar import ScholarQuerier, ScholarSettings, SearchScholarQuery, csv
+from .scholar import ScholarQuerier, ScholarSettings, SearchScholarQuery, csv
 import requests
 from dragnet import content_extractor
 import sys
 import hashlib
 import time
-import database
+from . import database
 import random
 
 

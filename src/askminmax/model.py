@@ -2,6 +2,7 @@ from gensim.models.doc2vec import TaggedDocument
 import numpy as np
 import gensim
 from gensim import utils
+from gensim import corpora, models, similarities
 import time
 import sklearn
 import os
@@ -12,6 +13,7 @@ import multiprocessing as mp
 import pickle
 import argparse
 import random
+from gensim.models.ldamulticore import LdaMulticore
 num_cpu = mp.cpu_count()
 
 
@@ -59,13 +61,13 @@ class MySentences:
 def get_vector(doc2vec_model, data_set, keyword, abstract, d):
     """ Get the vector for the abstract
     :param doc2vec_model: Doc2Vec model
-    :param data_set: Dataset containing abstracts
+    :param data_set: Data set containing abstracts
     :param keyword: Keyword
     :param abstract: Abstract
     :param d: Dictionary mapping keyword to label
     :return:
     """
-    f = open(data_set + '/' + keyword + '/' + abstract, 'rb')
+    f = open(data_set + '/' + keyword + '/' + abstract, encoding='utf-8')
     text = f.read()
     f.close()
     vector = doc2vec_model.infer_vector(text)
@@ -127,7 +129,7 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path):
     train_labels = np.array([x[1] for x in data])
     classifier = LogisticRegressionCV(Cs=[0.0001, 0.001, 0.01, 0.1, 1.0, 10.0], cv=10, penalty='l2', solver='newton-cg')
     classifier.fit(train_arrays, train_labels)
-    print('Classifier score = ', classifier.score(train_arrays, train_labels))
+    print(('Classifier score = ', classifier.score(train_arrays, train_labels)))
     model_path = 'models/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
@@ -164,18 +166,18 @@ def word2vec_clusters(model):
     """
     start = time.time()
     vectors = model.syn0
-    num_clusters = int(input('Number of clusters: '))
-    print("Running clustering with %d clusters" % num_clusters)
+    num_clusters = eval(input('Number of clusters: '))
+    print(("Running clustering with %d clusters" % num_clusters))
     clustering_algorithm = sklearn.cluster.MiniBatchKMeans(n_clusters=num_clusters)
     idx = clustering_algorithm.fit_predict(vectors)
     end = time.time()
     elapsed = end - start
-    print("Time for clustering: ", elapsed, "seconds.")
-    centroid_map = dict(zip(model.index2word, idx))
+    print(("Time for clustering: ", elapsed, "seconds."))
+    centroid_map = dict(list(zip(model.index2word, idx)))
     for cluster in range(num_clusters):
-        words = [key for key in centroid_map.keys() if centroid_map[key] == cluster]
+        words = [key for key in list(centroid_map.keys()) if centroid_map[key] == cluster]
         if 1 < len(words) < 20:
-            print("\nCluster %d" % cluster)
+            print(("\nCluster %d" % cluster))
             print(words)
 
 
@@ -187,7 +189,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
     :return: None, call k-means from w2vClusters(corpus)
     """
     sentences = MySentences(data_set)
-    print("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs))
+    print(("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs)))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     model = gensim.models.Doc2Vec(sentences, size=400, min_count=10, window=10, alpha=0.025, min_alpha=0.025,
                                   sample=1e-4, workers=cores)
@@ -222,12 +224,12 @@ def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
     cursor = db.papers.find(no_cursor_timeout=True)
     keywords = [item['keyword'] for item in cursor]
     sentences = MySentences(db, flag, keywords)
-    print("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs))
+    print(("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs)))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     # Load model from model_path
     model = gensim.models.Doc2Vec.load(model_name)
     sentences_list = sentences.to_array()
-    idx = range(len(sentences_list))
+    idx = list(range(len(sentences_list)))
     for i in range(num_epochs):
         random.shuffle(idx)
         perm_sentences = [sentences_list[i] for i in idx]
@@ -261,4 +263,4 @@ if __name__ == '__main__':
         try:
             train_logistic_regression_classifier(args.data_path, args.model_path)
         except Exception as e:
-            print('Unexpected error: ', e)
+            print(('Unexpected error: ', e))

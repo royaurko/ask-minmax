@@ -1,3 +1,4 @@
+#!/usr/bin/env/python
 import os
 from setuptools import setup
 
@@ -15,14 +16,16 @@ setup(
     license="BSD",
     keywords="expert system",
     url="https://github.com/royaurko/ask-minmax",
-    install_requires=['pymongo', 'scipy', 'numpy', 'matplotlib', 'nltk', 'scikit-learn', 'gensim', 'feedparser',
-                      'jenks', 'dragnet', 'lxml', 'cython', 'requests'],
+    install_requires=['pymongo', 'scipy', 'numpy', 'matplotlib', 'nltk', 'scikit-learn==0.17', 'gensim', 'feedparser',
+                      'jenks', 'lxml', 'cython', 'requests'],
     dependency_links=['git+https://github.com/perrygeo/jenks.git#egg=jenks'],
     packages=['askminmax'],
     package_dir={'askminmax': 'src/askminmax'},
-    package_data={'askminmax': ['src/askminmax/database', 'src/askminmax/model']},
+    package_data={'askminmax': ['src/askminmax/database', 'src/askminmax/models']},
     long_description=read('Readme.md'),
     classifiers=[
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
         "License :: OSI Approved :: BSD License",

@@ -1,6 +1,6 @@
-import helper
-import problems
-import sepquestions
+from . import helper
+from . import problems
+from . import sepquestions
 
 
 def train(db):
@@ -10,7 +10,7 @@ def train(db):
     """
     while True:
         try:
-            n = int(input('Number of times to train? '))
+            n = eval(input('Number of times to train? '))
             break
         except ValueError:
             helper.error_number()
@@ -25,10 +25,10 @@ def training(n, db):
     """
     for i in range(n):
         problem = problems.sample(db, 'prior')
-        print(problem['name'])
+        print((problem['name']))
         while True:
             try:
-                response = int(input('Is this the correct problem (0/1)? '))
+                response = eval(input('Is this the correct problem (0/1)? '))
                 break
             except ValueError:
                 helper.error_one_zero()

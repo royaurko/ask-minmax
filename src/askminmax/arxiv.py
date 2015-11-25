@@ -1,5 +1,5 @@
-from __future__ import print_function
-import urllib
+
+import urllib.request, urllib.parse, urllib.error
 import feedparser
 import os
 import hashlib
@@ -11,8 +11,8 @@ def clean(to_translate):
     :param to_translate: Text to clean
     :return: Cleaned text
     """
-    translate_to = u' '
-    not_letters_or_digits = u'$!"#%\'()*+,-./:;<=>?@[\]^_`{|}~'
+    translate_to = ' '
+    not_letters_or_digits = '$!"#%\'()*+,-./:;<=>?@[\]^_`{|}~'
     translate_table = dict((ord(char), translate_to) for
                            char in not_letters_or_digits)
     return to_translate.translate(translate_table)
@@ -46,7 +46,7 @@ def download(db, flag, max_results, keywords):
         while start < total_results:
             query = 'search_query=%s&start=%i&max_results=%i' % (search_query,
                                                                  start, max_results)
-            response = urllib.urlopen(base_url + query).read()
+            response = urllib.request.urlopen(base_url + query).read()
             # change author -> contributors (because contributors is a list)
             response = response.replace('author', 'contributor')
             # parse the response using feedparser
@@ -87,7 +87,7 @@ def download(db, flag, max_results, keywords):
                     # Sleep for a minute otherwise you'll get banned
                     time.sleep(60)
                     if pdf_link:
-                        pdf_response = urllib.urlopen(pdf_link)
+                        pdf_response = urllib.request.urlopen(pdf_link)
                         pdf = open(pdf_name, 'wb')
                         pdf.write(pdf_response.read())
                         pdf.close()

@@ -1,8 +1,8 @@
+from . import helper
+from . import problems
 import random
 from scipy.stats import entropy
-import helper
 import numpy as np
-import problems
 
 
 def print_list(db):

@@ -1,4 +1,4 @@
-import helper
+from . import helper
 import random
 from scipy.stats import entropy
 import numpy as np
@@ -90,7 +90,7 @@ def query(db):
     """
     response = 1
     while response:
-        problem_name = helper.strip(raw_input('Problem name: '))
+        problem_name = helper.strip(input('Problem name: '))
         hash_value = helper.get_hash(problem_name)
         item = db.problems.find_one({'hash': hash_value})
         if item is None and problem_name:
@@ -105,7 +105,7 @@ def query(db):
             db.problems.insert(d)
         while True:
             try:
-                response = int(raw_input('Continue (0/1)? '))
+                response = int(input('Continue (0/1)? '))
                 break
             except ValueError:
                 helper.error_one_zero()
@@ -214,7 +214,7 @@ def view_questions(db):
     problem_idx_to_id = print_list(db)
     while True:
         try:
-            idx = int(raw_input('Enter problem number: '))
+            idx = int(input('Enter problem number: '))
             problem_id = problem_idx_to_id[idx]
             break
         except ValueError:
@@ -251,13 +251,13 @@ def plot_posteriors(db):
         count += 1
     s = p.sum()
     n = p.shape
-    for i in xrange(n[0]):
+    for i in range(n[0]):
         p[i] /= s
     plt.figure(1, [10, 8])
     plt.ion()
     plt.clf()
     cursor = db.problems.find()
-    x_value = xrange(len(p))
+    x_value = list(range(len(p)))
     x_ticks = []
     for item in cursor:
         x_ticks.append(helper.get_initials(item['name']))
