@@ -6,7 +6,7 @@ import time
 import sklearn
 import os
 import logging
-from sklearn.linear_model import LogisticRegressionCV
+from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 import multiprocessing as mp
 import pickle
@@ -65,7 +65,7 @@ def get_vector(doc2vec_model, data_set, keyword, abstract, d):
     :param d: Dictionary mapping keyword to label
     :return:
     """
-    f = open(data_set + '/' + keyword + '/' + abstract, 'rb')
+    f = open(data_set + '/' + keyword + '/' + abstract, encoding='utf-8')
     text = f.read()
     f.close()
     vector = doc2vec_model.infer_vector(text)
@@ -125,7 +125,8 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path):
     # Do a cross validation
     train_arrays = np.array([x[0] for x in data])
     train_labels = np.array([x[1] for x in data])
-    classifier = LogisticRegressionCV(Cs=[0.0001, 0.001, 0.01, 0.1, 1.0, 10.0], cv=10, penalty='l2', solver='newton-cg')
+    classifier = LogisticRegression(C=1.0, max_iter=1000, penalty='l2',
+                                      solver='newton-cg')
     classifier.fit(train_arrays, train_labels)
     print('Classifier score = ', classifier.score(train_arrays, train_labels))
     model_path = 'models/'
