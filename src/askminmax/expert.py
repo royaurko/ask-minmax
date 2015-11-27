@@ -92,7 +92,7 @@ class Expert:
                 # Adjust problem priors
                 self.adjust_problem_priors_from_summary(data_set, doc2vec_model_path, classifier_path, summary)
                 # Adjust question priors
-                self.adjust_question_priors_from_summary(summary, doc2vec_model_path)
+                # self.adjust_question_priors_from_summary(summary, doc2vec_model_path)
                 # Reset the posteriors equal to prior before starting a prediction loop
                 self.reset_posteriors()
                 # Print the table
@@ -226,7 +226,7 @@ class Expert:
         """
         try:
             question_gvf = eval(input('Goodness of fit of questions (default = 0.6) '))
-        except ValueError:
+        except Exception:
             question_gvf = 0.6
         most_likely_questions = self.fit_posteriors('questions', question_gvf)
         return most_likely_questions
@@ -237,7 +237,7 @@ class Expert:
         """
         try:
             problem_gvf = eval(input('Goodness of fit of problems (default = 0.8) '))
-        except ValueError:
+        except Exception:
             problem_gvf = 0.8
         most_likely_problems = self.fit_posteriors('problems', problem_gvf)
         return most_likely_problems
@@ -250,7 +250,7 @@ class Expert:
         continue_response = 1
         most_likely_problems = list()
         responses_known_so_far = dict()
-        print(('Current total entropy = %0.2f' % problems.get_entropy(self.db)))
+        print('Current total entropy = %0.2f' % problems.get_entropy(self.db))
         problems.plot_posteriors(self.db)
         while m > 0 and continue_response:
             # Get the most_likely questions
@@ -407,7 +407,7 @@ class Expert:
         """ Add a question to the database and query for problems with YES answers and NO answers
         :return: None, update database in place
         """
-        question_name = helper.strip(eval(input('Enter a question: ')))
+        question_name = helper.strip(input('Enter a question: '))
         if not question_name:
             return
         question_hash = helper.get_hash(question_name)
@@ -416,8 +416,7 @@ class Expert:
         problem_idx_to_id = problems.print_list(self.db)
         while True:
             try:
-                yes_list = eval(input('Enter numbers of problems that have a YES answer to this question: '))
-                yes_list = list(map(int, yes_list.strip().split()))
+                yes_list = list(eval(input('Enter numbers of problems that have a YES answer to this question: ')))
                 yes_pid_list = [problem_idx_to_id[x] for x in yes_list]
                 break
             except ValueError:
@@ -438,8 +437,7 @@ class Expert:
             pos_problems.append(problem['hash'])
         while True:
             try:
-                no_list = eval(input('Enter numbers of problems that have a NO answer to this question: '))
-                no_list = list(map(int, no_list.strip().split()))
+                no_list = list(eval(input('Enter numbers of problems that have a NO answer to this question: ')))
                 no_pid_list = [problem_idx_to_id[x] for x in no_list]
                 break
             except ValueError:
@@ -563,16 +561,19 @@ class Expert:
 
     def adjust_problem_priors_from_summary(self, data_set, doc2vec_model_path, classifier_path, summary):
         """ Adjust the priors of problems from the summary
-        :param summary: word tokens from the summary
+        :param summary: Summary of text
         :param model_name: Name of the model
         :return: None
         """
-        for sent in summary:
-            distribution = model.classify(data_set, doc2vec_model_path, classifier_path, sent)
-            p = np.array([x[1] for x in distribution])
-            print(distribution)
-            e = entropy(p)
-            print(('Entropy = ', e))
+        distribution = model.classify(data_set, doc2vec_model_path, classifier_path, summary)
+        for key in distribution:
+            item = self.db.problems.find_one({'name': key})
+            item['prior'] *= distribution[key]
+            self.db.problems.update({'hash': item['hash']}, item)
+        p = np.array([distribution[key] for key in distribution])
+        e = entropy(p)
+        print('Entropy = ', e)
+
 
     def adjust_question_priors_from_summary(self, summary, model_name):
         """ Adjust the priors of problems from the summary

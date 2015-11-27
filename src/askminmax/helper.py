@@ -51,6 +51,7 @@ def get_hash(s):
     regex = re.compile('[^a-zA-Z]')
     s = regex.sub('', s)
     s = s.lower()
+    s = s.encode('utf-8')
     return hashlib.md5(s).hexdigest()
 
 
