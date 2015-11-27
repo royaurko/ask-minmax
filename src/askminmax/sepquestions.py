@@ -1,6 +1,6 @@
-import helper
-import questions
-import problems
+from . import helper
+from . import questions
+from . import problems
 
 
 def get_correct_problem(db):
@@ -10,14 +10,14 @@ def get_correct_problem(db):
     """
     while True:
         try:
-            response = int(raw_input('Correct problem in the DB (0/1)? '))
+            response = int(input('Correct problem in the DB (0/1)? '))
             break
         except ValueError:
             helper.error_one_zero()
     if response:
         # Correct problem is in our database; get it's dictionary item
         correct = get_problem_from_list(db)
-        print('Correct problem: ' + correct['name'])
+        print(('Correct problem: ' + correct['name']))
     else:
         # Correct problem is not in our database
         correct_name = helper.strip(input('What is the correct problem?\n'))
@@ -35,7 +35,7 @@ def display_separating_questions(db, wrong, correct, question_idx_to_id):
     :param question_idx_to_id: Dictionary mapping question indices to mongodb ids
     :return: None
     """
-    question_id_to_idx = {v: k for k, v in question_idx_to_id.items()}
+    question_id_to_idx = {v: k for k, v in list(question_idx_to_id.items())}
     # Get the list of separating questions
     neg_q, pos_q = problems.get_separating_questions(wrong, correct)
     list1, list2 = list(), list()
@@ -45,9 +45,9 @@ def display_separating_questions(db, wrong, correct, question_idx_to_id):
     for question_hash in neg_q:
         question = db.questions.find_one({'hash': question_hash})
         list2.append(question_id_to_idx[question['_id']])
-    print('YES for ' + correct['name'] + ' NO for ' + wrong['name'] + ': ')
+    print(('YES for ' + correct['name'] + ' NO for ' + wrong['name'] + ': '))
     print(list1)
-    print('NO for ' + correct['name'] + ' YES for ' + wrong['name'] + ': ')
+    print(('NO for ' + correct['name'] + ' YES for ' + wrong['name'] + ': '))
     print(list2)
 
 
@@ -66,7 +66,7 @@ def ask_separating_question(db, wrong, correct):
         try:
             s = 'Question separating ' + wrong['name'] + ' from ' + correct['name']
             s += ' in the DB (0/1)? '
-            response = int(input(s))
+            response = eval(input(s))
             break
         except ValueError:
             helper.error_one_zero()
@@ -96,7 +96,7 @@ def get_problem_from_list(db):
     problem_idx_to_id = problems.print_list(db)
     while True:
         try:
-            idx = int(raw_input('Enter correct problem number: '))
+            idx = int(input('Enter correct problem number: '))
             correct_id = problem_idx_to_id[idx]
             break
         except ValueError:
@@ -178,8 +178,7 @@ def parse_negative_list_questions(db, wrong, correct, question_idx_to_id):
         try:
             question_string = 'Enter question numbers that are NO for ' \
                        + correct['name'] + ' and YES for ' + wrong['name'] + ':\n '
-            negative_list = input(question_string)
-            negative_list = map(int, negative_list.strip().split())
+            negative_list = list(eval(input(question_string)))
             negative_question_id_list = [question_idx_to_id[x] for x in negative_list]
             break
         except ValueError:
@@ -205,8 +204,7 @@ def parse_positive_list_questions(db, wrong, correct, question_idx_to_id):
         try:
             question_string = 'Enter question numbers that are YES for ' \
                        + correct['name'] + ' and NO for ' + wrong['name'] + ':\n '
-            positive_list = input(question_string)
-            positive_list = map(int, positive_list.strip().split())
+            positive_list = list(eval(input(question_string)))
             positive_question_id_list = [question_idx_to_id[x] for x in positive_list]
             break
         except ValueError:

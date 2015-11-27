@@ -165,9 +165,9 @@ try:
     from http.cookiejar import MozillaCookieJar
 except ImportError:
     # Fallback for Python 2
-    from urllib2 import Request, build_opener, HTTPCookieProcessor
-    from urllib import quote, unquote
-    from cookielib import MozillaCookieJar
+    from urllib.request import Request, build_opener, HTTPCookieProcessor
+    from urllib.parse import quote, unquote
+    from http.cookiejar import MozillaCookieJar
 
 # Import BeautifulSoup -- try 4 first, fall back to older
 try:
@@ -181,11 +181,11 @@ except ImportError:
 
 # Support unicode in both Python 2 and 3. In Python 3, unicode is str.
 if sys.version_info[0] == 3:
-    unicode = str # pylint: disable-msg=W0622
+    str = str # pylint: disable-msg=W0622
     encode = lambda s: s # pylint: disable-msg=C0103
 else:
     def encode(s):
-        if isinstance(s, basestring):
+        if isinstance(s, str):
             return s.encode('utf-8') # pylint: disable-msg=C0103
         else:
             return str(s)
@@ -237,7 +237,7 @@ class ScholarUtils(object):
 
     @staticmethod
     def log(level, msg):
-        if level not in ScholarUtils.LOG_LEVELS.keys():
+        if level not in list(ScholarUtils.LOG_LEVELS.keys()):
             return
         if ScholarUtils.LOG_LEVELS[level] > ScholarConf.LOG_LEVEL:
             return
@@ -313,7 +313,7 @@ class ScholarArticle(object):
         res = []
         if header:
             res.append(sep.join(keys))
-        res.append(sep.join([unicode(self.attrs[key][0]) for key in keys]))
+        res.append(sep.join([str(self.attrs[key][0]) for key in keys]))
         return '\n'.join(res)
 
     def as_citation(self):
@@ -630,7 +630,7 @@ class ScholarQuery(object):
         if len(self.attrs) == 0:
             self.attrs[key] = [default_value, label, 0]
             return
-        idx = max([item[2] for item in self.attrs.values()]) + 1
+        idx = max([item[2] for item in list(self.attrs.values())]) + 1
         self.attrs[key] = [default_value, label, idx]
 
     def __getitem__(self, key):
@@ -698,7 +698,7 @@ class ClusterScholarQuery(ScholarQuery):
         urlargs = {'cluster': self.cluster,
                    'num': self.num_results or ScholarConf.MAX_PAGE_RESULTS}
 
-        for key, val in urlargs.items():
+        for key, val in list(urlargs.items()):
             urlargs[key] = quote(encode(val))
 
         return self.SCHOLAR_CLUSTER_URL % urlargs
@@ -826,7 +826,7 @@ class SearchScholarQuery(ScholarQuery):
                    'citations': '0' if self.include_citations else '1',
                    'num': self.num_results or ScholarConf.MAX_PAGE_RESULTS}
 
-        for key, val in urlargs.items():
+        for key, val in list(urlargs.items()):
             urlargs[key] = quote(encode(val))
 
         return self.SCHOLAR_QUERY_URL % urlargs
@@ -1092,13 +1092,13 @@ def txt(querier, with_globals):
         fmt = '[G] %%%ds %%s' % max(0, max_label_len-4)
         for item in items:
             if item[0] is not None:
-                print(fmt % (item[1], item[0]))
+                print((fmt % (item[1], item[0])))
         if len(items) > 0:
-            print
+            print()
 
     articles = querier.articles
     for art in articles:
-        print(encode(art.as_txt()) + '\n')
+        print((encode(art.as_txt()) + '\n'))
 
 def csv(querier, header=False, sep='|'):
     articles = querier.articles
@@ -1112,7 +1112,7 @@ def csv(querier, header=False, sep='|'):
 def citation_export(querier):
     articles = querier.articles
     for art in articles:
-        print(art.as_citation() + '\n')
+        print((art.as_citation() + '\n'))
 
 
 def main():
@@ -1199,7 +1199,7 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
         ScholarUtils.log('info', 'using log level %d' % ScholarConf.LOG_LEVEL)
 
     if options.version:
-        print('This is scholar.py %s.' % ScholarConf.VERSION)
+        print(('This is scholar.py %s.' % ScholarConf.VERSION))
         return 0
 
     if options.cookie_file:

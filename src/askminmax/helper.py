@@ -131,9 +131,9 @@ def clean_text(db, flag, hash):
         if flag:
             item['text'] = '.'.join(sentences)
             if text_old == item['text']:
-                print('Nothing to do for entry ', hash)
+                print(('Nothing to do for entry ', hash))
         else:
             item['abstract'] = '.'.join(sentences)
             if text_old == item['abstract']:
-                print('Nothing to do for entry', hash)
+                print(('Nothing to do for entry', hash))
         db.papers.update({'hash': hash}, {"$set": item}, upsert=False)

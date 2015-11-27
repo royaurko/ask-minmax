@@ -1,13 +1,14 @@
-import helper
-import database
-import problems
-import questions
-import sepquestions
-import training
-import arxiv
-import natural_break
+from . import helper
+from . import database
+from . import problems
+from . import questions
+from . import sepquestions
+from . import training
+from . import arxiv
+from . import natural_break
 import numpy as np
-import model
+from . import model
+from functools import reduce
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 from scipy.stats import entropy
@@ -24,7 +25,7 @@ class Expert:
         while True:
             try:
                 build_question = 'Build new database (0/1)? '
-                response = int(raw_input(build_question))
+                response = eval(input(build_question))
                 break
             except ValueError:
                 helper.error_one_zero()
@@ -36,7 +37,7 @@ class Expert:
             while True:
                 try:
                     recover_question = 'Recover a database from bson file? '
-                    flag = int(raw_input(recover_question))
+                    flag = eval(input(recover_question))
                     break
                 except ValueError:
                     helper.error_one_zero()
@@ -57,13 +58,13 @@ class Expert:
         """
         db = self.db
         problem_idx_to_id = problems.print_list(db)
-        problems_list = raw_input('Enter indices of problems to delete separated by spaces: ')
-        problems_list = map(int, problems_list.strip().split())
+        problems_list = input('Enter indices of problems to delete separated by spaces: ')
+        problems_list = list(map(int, problems_list.strip().split()))
         for problem in problems_list:
             problems.delete(db, problem_idx_to_id[problem])
         question_idx_to_id = questions.print_list(db)
-        questions_list = raw_input('Enter indices of questions to delete separated by spaces: ')
-        questions_list = map(int, questions_list.strip().split())
+        questions_list = input('Enter indices of questions to delete separated by spaces: ')
+        questions_list = list(map(int, questions_list.strip().split()))
         for question in questions_list:
             questions.delete(db, question_idx_to_id[question])
         print('Modified database:')
@@ -81,13 +82,13 @@ class Expert:
         """ Control the main program flow
         :return: None, modify db in place
         """
-        data_set = raw_input('Path to data_set: ')
-        doc2vec_model_path = raw_input('Path to Doc2Vec model: ')
-        classifier_path = raw_input('Path to classifier trained on word vectors: ')
+        data_set = input('Path to data_set: ')
+        doc2vec_model_path = input('Path to Doc2Vec model: ')
+        classifier_path = input('Path to classifier trained on word vectors: ')
         try:
             while True:
                 # Ask the user for a short summary of the problem
-                summary = raw_input('Please describe your problem in a few words: ')
+                summary = input('Please describe your problem in a few words: ')
                 # Adjust problem priors
                 self.adjust_problem_priors_from_summary(data_set, doc2vec_model_path, classifier_path, summary)
                 # Adjust question priors
@@ -170,9 +171,9 @@ class Expert:
             question = questions.sample(db, 'posterior')
         while True:
             try:
-                response = int(raw_input(question['name']))
+                response = eval(input(question['name']))
                 try:
-                    confidence = float(raw_input('Confidence in your answer (default 0.99) : '))
+                    confidence = eval(input('Confidence in your answer (default 0.99) : '))
                 except ValueError:
                     confidence = 0.95
                 break
@@ -187,14 +188,14 @@ class Expert:
         """
         while True:
             try:
-                correct = int(raw_input('Are you happy with the result? (0/1) '))
+                correct = eval(input('Are you happy with the result? (0/1) '))
                 break
             except ValueError:
                 helper.error_one_zero()
         most_likely_hash = [item['hash'] for item in most_likely]
         if correct:
             # Correct answer, increase count of each problem in this set
-            map(lambda x: problems.increment(self.db, x), most_likely_hash)
+            list([problems.increment(self.db, x) for x in most_likely_hash])
         else:
             # Incorrect problem
             correct = sepquestions.get_correct_problem(self.db)
@@ -212,7 +213,7 @@ class Expert:
         db = self.db
         while True:
             try:
-                response = int(raw_input('\nBackup database (0/1)? '))
+                response = eval(input('\nBackup database (0/1)? '))
                 break
             except ValueError:
                 helper.error_one_zero()
@@ -224,7 +225,7 @@ class Expert:
         :return: The dictionary items of the most likely questions
         """
         try:
-            question_gvf = float(raw_input('Goodness of fit of questions (default = 0.6) '))
+            question_gvf = eval(input('Goodness of fit of questions (default = 0.6) '))
         except ValueError:
             question_gvf = 0.6
         most_likely_questions = self.fit_posteriors('questions', question_gvf)
@@ -235,7 +236,7 @@ class Expert:
         :return: The dictionary items of the most likely problems
         """
         try:
-            problem_gvf = float(raw_input('Goodness of fit of problems (default = 0.8) '))
+            problem_gvf = eval(input('Goodness of fit of problems (default = 0.8) '))
         except ValueError:
             problem_gvf = 0.8
         most_likely_problems = self.fit_posteriors('problems', problem_gvf)
@@ -249,7 +250,7 @@ class Expert:
         continue_response = 1
         most_likely_problems = list()
         responses_known_so_far = dict()
-        print('Current total entropy = %0.2f' % problems.get_entropy(self.db))
+        print(('Current total entropy = %0.2f' % problems.get_entropy(self.db)))
         problems.plot_posteriors(self.db)
         while m > 0 and continue_response:
             # Get the most_likely questions
@@ -273,7 +274,7 @@ class Expert:
             print('Popular problems that match your criteria:')
             problems.print_set(most_likely_problem_names)
             # Print the current entropy level of the distribution
-            print('Current total entropy = %0.2f' % problems.get_entropy(self.db))
+            print(('Current total entropy = %0.2f' % problems.get_entropy(self.db)))
             # Plot problem posteriors
             problems.plot_posteriors(self.db)
             # Update the maximum posterior value
@@ -281,7 +282,7 @@ class Expert:
             # Query whether to continue
             while True:
                 try:
-                    continue_response = int(raw_input('Ask more questions? (0/1) '))
+                    continue_response = eval(input('Ask more questions? (0/1) '))
                     break
                 except ValueError:
                     helper.error_one_zero()
@@ -319,8 +320,8 @@ class Expert:
             n += 1
         centers = jenks(array, n)
         most_likely = list()
-        for i in xrange(len(posteriors)):
-            d = [(abs(posteriors[i] - centers[k]), k) for k in xrange(len(centers))]
+        for i in range(len(posteriors)):
+            d = [(abs(posteriors[i] - centers[k]), k) for k in range(len(centers))]
             d.sort()
             if d[0][1] == len(centers) - 1:
                 most_likely.append(idx_to_hash_name[i])
@@ -330,7 +331,7 @@ class Expert:
         """ Add a problem to the database and query for YES questions and NO questions
         :return: None, update database in place
         """
-        problem_name = helper.strip(raw_input('Enter a problem: '))
+        problem_name = helper.strip(input('Enter a problem: '))
         if not problem_name:
             return
         problem_hash = helper.get_hash(problem_name)
@@ -339,8 +340,7 @@ class Expert:
         question_idx_to_id = questions.print_list(self.db)
         while True:
             try:
-                yes_list = raw_input('Enter numbers of questions to which it answers YES: ')
-                yes_list = map(int, yes_list.strip().split())
+                yes_list = list(eval(input('Enter numbers of questions to which it answers YES: ')))
                 yes_qid_list = [question_idx_to_id[x] for x in yes_list]
                 break
             except ValueError:
@@ -361,8 +361,7 @@ class Expert:
             pos_questions.append(question['hash'])
         while True:
             try:
-                no_list = raw_input('Enter numbers of questions to which it answers NO: ')
-                no_list = map(int, no_list.strip().split())
+                no_list = list(eval(input('Enter numbers of questions to which it answers NO: ')))
                 no_qid_list = [question_idx_to_id[x] for x in no_list]
                 break
             except ValueError:
@@ -394,10 +393,10 @@ class Expert:
             negative_list = problem['negquestions']
             positive_set = set(positive_list)
             negative_set = set(negative_list)
-            for i in xrange(len(pos_questions)):
+            for i in range(len(pos_questions)):
                 if pos_questions[i] not in positive_set:
                     positive_list.append(pos_questions[i])
-            for i in xrange(len(neg_questions)):
+            for i in range(len(neg_questions)):
                 if neg_questions[i] not in negative_set:
                     negative_list.append(neg_questions[i])
             self.db.problems.update({'_id': problem['_id']}, {
@@ -408,7 +407,7 @@ class Expert:
         """ Add a question to the database and query for problems with YES answers and NO answers
         :return: None, update database in place
         """
-        question_name = helper.strip(raw_input('Enter a question: '))
+        question_name = helper.strip(eval(input('Enter a question: ')))
         if not question_name:
             return
         question_hash = helper.get_hash(question_name)
@@ -417,8 +416,8 @@ class Expert:
         problem_idx_to_id = problems.print_list(self.db)
         while True:
             try:
-                yes_list = raw_input('Enter numbers of problems that have a YES answer to this question: ')
-                yes_list = map(int, yes_list.strip().split())
+                yes_list = eval(input('Enter numbers of problems that have a YES answer to this question: '))
+                yes_list = list(map(int, yes_list.strip().split()))
                 yes_pid_list = [problem_idx_to_id[x] for x in yes_list]
                 break
             except ValueError:
@@ -439,8 +438,8 @@ class Expert:
             pos_problems.append(problem['hash'])
         while True:
             try:
-                no_list = raw_input('Enter numbers of problems that have a NO answer to this question: ')
-                no_list = map(int, no_list.strip().split())
+                no_list = eval(input('Enter numbers of problems that have a NO answer to this question: '))
+                no_list = list(map(int, no_list.strip().split()))
                 no_pid_list = [problem_idx_to_id[x] for x in no_list]
                 break
             except ValueError:
@@ -465,11 +464,11 @@ class Expert:
             # Get mass of YES problems
             pos_mass, neg_mass = 0, 0
             if pos_problems:
-                q_positive_problem_mass = map(lambda x: helper.mass(self.db, table, x, item_property), pos_problems)
+                q_positive_problem_mass = [helper.mass(self.db, table, x, item_property) for x in pos_problems]
                 pos_mass = reduce(lambda x, y: x + y, q_positive_problem_mass)
             # Get mass of NO problems
             if neg_problems:
-                q_negative_problem_mass = map(lambda x: helper.mass(self.db, table, x, item_property), neg_problems)
+                q_negative_problem_mass = [helper.mass(self.db, table, x, item_property) for x in neg_problems]
                 neg_mass = reduce(lambda x, y: x + y, q_negative_problem_mass)
             # Define prior as total mass of pairs separated
             prior = pos_mass * neg_mass
@@ -484,10 +483,10 @@ class Expert:
             negative_list = question['negproblems']
             positive_set = set(positive_list)
             negative_set = set(negative_list)
-            for i in xrange(len(pos_problems)):
+            for i in range(len(pos_problems)):
                 if pos_problems[i] not in positive_set:
                     positive_list.append(pos_problems[i])
-            for i in xrange(len(neg_problems)):
+            for i in range(len(neg_problems)):
                 if neg_problems[i] not in negative_set:
                     negative_list.append(neg_problems[i])
             table = 'problems'
@@ -495,11 +494,11 @@ class Expert:
             # Get mass of YES problems
             pos_mass, neg_mass = 0, 0
             if positive_list:
-                q_positive_problem_mass = map(lambda x: helper.mass(self.db, table, x, item_property), positive_list)
+                q_positive_problem_mass = [helper.mass(self.db, table, x, item_property) for x in positive_list]
                 pos_mass = reduce(lambda x, y: x + y, q_positive_problem_mass)
             # Get mass of NO problems
             if negative_list:
-                q_negative_problem_mass = map(lambda x: helper.mass(self.db, table, x, item_property), negative_list)
+                q_negative_problem_mass = [helper.mass(self.db, table, x, item_property) for x in negative_list]
                 neg_mass = reduce(lambda x, y: x + y, q_negative_problem_mass)
             # Define prior as total mass of pairs separated
             prior = pos_mass * neg_mass
@@ -573,7 +572,7 @@ class Expert:
             p = np.array([x[1] for x in distribution])
             print(distribution)
             e = entropy(p)
-            print('Entropy = ', e)
+            print(('Entropy = ', e))
 
     def adjust_question_priors_from_summary(self, summary, model_name):
         """ Adjust the priors of problems from the summary
@@ -597,7 +596,7 @@ class Expert:
             # Remove stop words
             question = model.remove_stop(question)
             similarity = model.n_similarity(summary, question)
-            print(item['name'] + ': ' + str(similarity))
+            print((item['name'] + ': ' + str(similarity)))
             item['prior'] *= (1 + similarity)/2
             self.db.questions.update({'hash': item['hash']}, item)
 
@@ -606,7 +605,7 @@ class Expert:
         :return: None, clean db
         """
         cursor = self.db.papers.find(no_cursor_timeout=True)
-        stop_words = set(['physics', 'quantum', 'hep', 'topology', 'optics', 'electrodynamics', 'Doppler', 'Cookies'])
+        stop_words = {'physics', 'quantum', 'hep', 'topology', 'optics', 'electrodynamics', 'Doppler', 'Cookies'}
         counter = 0
         print('Cleaning up physics stuff...')
         for item in cursor:
@@ -617,12 +616,12 @@ class Expert:
             elif len(sent_tokenize(item['abstract'])) < 3:
                 # Abstract should have at least 2 sentences
                 print('----------------Abstract-----------')
-                print(item['abstract'])
+                print((item['abstract']))
                 self.db.papers.delete_one({'hash': item['hash']})
                 counter += 1
         # Close cursor
         cursor.close()
-        print('Deleted %d entries' % counter)
+        print(('Deleted %d entries' % counter))
         # Remove non-alpha characters from the words
         cursor = self.db.papers.find(no_cursor_timeout=True)
         # Clean abstracts for now
@@ -640,7 +639,7 @@ class Expert:
             os.makedirs(data_path)
         keywords = self.get_downloaded_keywords()
         for keyword in keywords:
-            print('Writing abstracts for ', keyword)
+            print(('Writing abstracts for ', keyword))
             keyword_path = data_path + '/' + keyword
             if not os.path.exists(keyword_path):
                 os.makedirs(keyword_path)

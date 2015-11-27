@@ -1,6 +1,5 @@
-from __future__ import print_function
 import subprocess
-import helper
+from . import helper
 from pymongo import MongoClient
 
 
@@ -38,7 +37,7 @@ def initialize_db():
     db = client.db
     db.problems.drop()
     db.questions.drop()
-    return (client, db)
+    return client, db
 
 
 def dump_db():
