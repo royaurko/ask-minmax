@@ -152,7 +152,7 @@ def classify(data_set, doc2vec_model_path, classifier_path, text):
     model = gensim.models.Doc2Vec.load(doc2vec_model_path)
     keywords = os.listdir(data_set)
     idx_to_keywords = dict([(i, v) for i, v in enumerate(keywords)])
-    vector = model.infer_vector(text)
+    vector = model.infer_vector(text).reshape(1, -1)
     probability_vector = classifier.predict_proba(vector).flatten()
     logistic_file.close()
     return dict([(idx_to_keywords[i], v) for i, v in enumerate(probability_vector)])
