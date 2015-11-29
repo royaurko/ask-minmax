@@ -58,13 +58,17 @@ class Expert:
         """
         db = self.db
         problem_idx_to_id = problems.print_list(db)
-        problems_list = input('Enter indices of problems to delete separated by spaces: ')
-        problems_list = list(map(int, problems_list.strip().split()))
+        try:
+            problems_list = eval(input('Enter indices of problems to delete separated by comma: '))
+        except (NameError, ValueError, SyntaxError):
+            helper.error_comma()
         for problem in problems_list:
             problems.delete(db, problem_idx_to_id[problem])
         question_idx_to_id = questions.print_list(db)
-        questions_list = input('Enter indices of questions to delete separated by spaces: ')
-        questions_list = list(map(int, questions_list.strip().split()))
+        try:
+            questions_list = eval(input('Enter indices of questions to delete separated by comma: '))
+        except (NameError, ValueError, SyntaxError):
+            helper.error_comma()
         for question in questions_list:
             questions.delete(db, question_idx_to_id[question])
         print('Modified database:')
@@ -174,7 +178,7 @@ class Expert:
                 response = eval(input(question['name']))
                 try:
                     confidence = eval(input('Confidence in your answer (default 0.99) : '))
-                except ValueError:
+                except (NameError, ValueError, SyntaxError):
                     confidence = 0.95
                 break
             except ValueError:
@@ -190,7 +194,7 @@ class Expert:
             try:
                 correct = eval(input('Are you happy with the result? (0/1) '))
                 break
-            except ValueError:
+            except (NameError, SyntaxError, ValueError):
                 helper.error_one_zero()
         most_likely_hash = [item['hash'] for item in most_likely]
         if correct:
@@ -215,7 +219,7 @@ class Expert:
             try:
                 response = eval(input('\nBackup database (0/1)? '))
                 break
-            except ValueError:
+            except (NameError, SyntaxError, ValueError):
                 helper.error_one_zero()
         if response:
             database.dump_db()
@@ -226,7 +230,7 @@ class Expert:
         """
         try:
             question_gvf = eval(input('Goodness of fit of questions (default = 0.6) '))
-        except Exception:
+        except (NameError, SyntaxError):
             question_gvf = 0.6
         most_likely_questions = self.fit_posteriors('questions', question_gvf)
         return most_likely_questions
@@ -237,7 +241,7 @@ class Expert:
         """
         try:
             problem_gvf = eval(input('Goodness of fit of problems (default = 0.8) '))
-        except Exception:
+        except (NameError, SyntaxError):
             problem_gvf = 0.8
         most_likely_problems = self.fit_posteriors('problems', problem_gvf)
         return most_likely_problems
@@ -284,7 +288,7 @@ class Expert:
                 try:
                     continue_response = eval(input('Ask more questions? (0/1) '))
                     break
-                except ValueError:
+                except (NameError, ValueError, SyntaxError):
                     helper.error_one_zero()
         if most_likely_problems:
             self.get_feedback(most_likely_problems)
@@ -340,11 +344,11 @@ class Expert:
         question_idx_to_id = questions.print_list(self.db)
         while True:
             try:
-                yes_list = list(eval(input('Enter numbers of questions to which it answers YES: ')))
+                yes_list = eval(input('Enter numbers of questions to which it answers YES: '))
                 yes_qid_list = [question_idx_to_id[x] for x in yes_list]
                 break
-            except ValueError:
-                helper.error_spaces()
+            except (NameError, ValueError, SyntaxError):
+                helper.error_comma()
             except KeyError:
                 helper.error_key()
         pos_questions = list()
@@ -361,11 +365,11 @@ class Expert:
             pos_questions.append(question['hash'])
         while True:
             try:
-                no_list = list(eval(input('Enter numbers of questions to which it answers NO: ')))
+                no_list = eval(input('Enter numbers of questions to which it answers NO: '))
                 no_qid_list = [question_idx_to_id[x] for x in no_list]
                 break
             except ValueError:
-                helper.error_spaces()
+                helper.error_comma()
             except KeyError:
                 helper.error_key()
         for qid in no_qid_list:
@@ -416,11 +420,11 @@ class Expert:
         problem_idx_to_id = problems.print_list(self.db)
         while True:
             try:
-                yes_list = list(eval(input('Enter numbers of problems that have a YES answer to this question: ')))
+                yes_list = eval(input('Enter numbers of problems that have a YES answer to this question: '))
                 yes_pid_list = [problem_idx_to_id[x] for x in yes_list]
                 break
             except ValueError:
-                helper.error_spaces()
+                helper.error_comma()
             except KeyError:
                 helper.error_key()
         pos_problems = list()
@@ -437,11 +441,11 @@ class Expert:
             pos_problems.append(problem['hash'])
         while True:
             try:
-                no_list = list(eval(input('Enter numbers of problems that have a NO answer to this question: ')))
+                no_list = eval(input('Enter numbers of problems that have a NO answer to this question: '))
                 no_pid_list = [problem_idx_to_id[x] for x in no_list]
                 break
             except ValueError:
-                helper.error_spaces()
+                helper.error_comma()
             except KeyError:
                 helper.error_key()
         for pid in no_pid_list:

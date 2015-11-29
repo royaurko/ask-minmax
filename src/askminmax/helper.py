@@ -5,11 +5,11 @@ import hashlib
 import re
 
 
-def error_spaces():
+def error_comma():
     """ Error when user does not enter space separated question numbers
     :return: None
     """
-    print('Please separate question numbers by spaces!')
+    print('Please separate question numbers by a comma!')
 
 
 def error_one_zero():
