@@ -64,9 +64,9 @@ expert.run(data_set, doc2vec_model_path, classifier_path)
 ```
 where `data_set` is the path to the data set (for e.g. [dataset](dataset)), 
  `doc2vec_model_path` is the path to the Doc2Vec model (for e.g. 
- [model_2015-11-25_08-44-27.d2v](model_2015-11-25_08-44-27.d2v)), and 
+ [models/model_2015-11-25_08-44-27.d2v](models/model_2015-11-25_08-44-27.d2v)), and 
  `classifier_path` is the path to the softmax classifier 
- (for e.g. [model_2015-11-28_21-50-40.log](model_2015-11-28_21-50-40.log)).
+ (for e.g. [models/model_2015-11-28_21-50-40.log](models/model_2015-11-28_21-50-40.log)).
 
 ## Doc2Vec model examples
 
