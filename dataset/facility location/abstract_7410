@@ -1,0 +1,18 @@
+Hybrid spectral-spatial representations are introduced to rapidly calculate
+periodic scalar and dyadic Green's functions of the Helmholtz equation for 2D
+and 3D configurations with a 1D (linear) periodicity. The presented schemes
+work seamlessly for any observation location near the array and for any
+practical array periodicities, including electrically small and large
+periodicities. The representations are based on the expansion of the periodic
+Green's functions in terms of the continuous spectral integrals over the
+transverse (to the array) spectral parameters. To achieve high convergence and
+numerical efficiency, the introduced integral representations are cast in a
+hybrid form in terms of (i) a small number of contributions due to sources
+located around the unit cell of interest, (ii) a small number of symmetric
+combinations of the Floquet modes, and (iii) an integral evaluated along the
+steepest descent path (SDP). The SDP integral is regularized by extracting the
+singular behavior near the saddle point of the integrand and integrating the
+extracted components in closed form. Efficient quadrature rules are established
+to evaluate this integral using a small number of quadrature nodes with
+arbitrary small error for a wide range of structure parameters. Strengths of
+the introduced approach are demonstrated via extensive numerical examples.

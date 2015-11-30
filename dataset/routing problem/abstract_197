@@ -1,0 +1,22 @@
+The capacitated vehicle routing problem (CVRP) involves distributing
+(identical) items from a depot to a set of demand locations, using a single
+capacitated vehicle. We study a generalization of this problem to the setting
+of multiple vehicles having non-uniform speeds (that we call Heterogenous
+CVRP), and present a constant-factor approximation algorithm.
+  The technical heart of our result lies in achieving a constant approximation
+to the following TSP variant (called Heterogenous TSP). Given a metric denoting
+distances between vertices, a depot r containing k vehicles with possibly
+different speeds, the goal is to find a tour for each vehicle (starting and
+ending at r), so that every vertex is covered in some tour and the maximum
+completion time is minimized. This problem is precisely Heterogenous CVRP when
+vehicles are uncapacitated.
+  The presence of non-uniform speeds introduces difficulties for employing
+standard tour-splitting techniques. In order to get a better understanding of
+this technique in our context, we appeal to ideas from the 2-approximation for
+scheduling in parallel machine of Lenstra et al.. This motivates the
+introduction of a new approximate MST construction called Level-Prim, which is
+related to Light Approximate Shortest-path Trees. The last component of our
+algorithm involves partitioning the Level-Prim tree and matching the resulting
+parts to vehicles. This decomposition is more subtle than usual since now we
+need to enforce correlation between the size of the parts and their distances
+to the depot.

@@ -1,0 +1,15 @@
+We present a formal proof of a time-triggered hardware interface. The design
+implements the bit-clock synchronization mechanism specified by the FlexRay
+standard for automotive embedded systems. The design is described at the
+gate-level. It can be translated to Verilog and synthesized on FPGA. The proof
+is based on a general model of asynchronous communications and combines
+interactive theorem proving in Isabelle/HOL and automatic model-checking using
+NuSMV together with a model-reduction procedure, IHaVeIt. Our general model of
+asynchronous communications defines a clear separation between analog and
+digital concerns. This separation enables the combination of theorem proving
+and model-checking for an efficient methodology. The analog phenomena are
+formalized in the logic of Isabelle/HOL. The gate-level hardware is
+automatically analyzed using IHaVeIt. Our proof reveals the correct values of a
+crucial parameter of the bit-clock synchronization mechanism. Our main theorem
+proves the functional correctness as well as the maximum number of cycles of
+the transmission.

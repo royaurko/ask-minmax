@@ -1,0 +1,15 @@
+Today, most devices have multiple network interfaces. Coupled with
+wide-spread replication of popular content at multiple locations, this provides
+substantial path diversity in the Internet. We propose Multi-source Multipath
+HTTP, mHTTP, which takes advantage of all existing types of path diversity in
+the Internet. mHTTP needs only client-side but not server-side or network
+modifications as it is a receiver-oriented mechanism. Moreover, the
+modifications are restricted to the socket interface. Thus, no changes are
+needed to the applications or to the kernel.
+  As mHTTP relies on HTTP range requests, it is specific to HTTP which accounts
+for more than 60% of the Internet traffic. We implement mHTTP and study its
+performance by conducting measurements over a testbed and in the wild. Our
+results show that mHTTP indeed takes advantage of all types of path diversity
+in the Internet, and that it is a viable alternative to Multipath TCP for HTTP
+traffic. mHTTP decreases download times for large objects up to 50%, whereas it
+does no harm to small object downloads.

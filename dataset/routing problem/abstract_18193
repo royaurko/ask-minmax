@@ -1,0 +1,14 @@
+There are a number of situations where, when computing prices of financial
+derivatives using quasi-Monte Carlo (QMC), it turns out to be beneficial to
+apply an orthogonal transform to the standard normal input variables. Sometimes
+those transforms can be computed in time $O(n\log(n))$ for problems depending
+on $n$ input variables. Among those are classical methods like the Brownian
+bridge construction and principal component analysis (PCA) construction for
+Brownian paths.
+  Building on preliminary work by Imai and Tan [3] as well as Wang and Sloan
+[13], where the contributors try to find optimal orthogonal transform for given
+problems, we present how those transforms can be approximated by others that
+are fast to compute.
+  We further present a new regression-based method for finding a Householder
+reflection which turns out to be very efficient for a wide range of problems.
+We apply these methods to several very high-dimensional examples from finance.

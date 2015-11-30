@@ -1,0 +1,25 @@
+Due to the increasing popularity of collaborative tagging systems, the
+research on tagged networks, hypergraphs, ontologies, folksonomies and other
+related concepts is becoming an important interdisciplinary topic with great
+actuality and relevance for practical applications. In most collaborative
+tagging systems the tagging by the users is completely "flat", while in some
+cases they are allowed to define a shallow hierarchy for their own tags.
+However, usually no overall hierarchical organisation of the tags is given, and
+one of the interesting challenges of this area is to provide an algorithm
+generating the ontology of the tags from the available data. In contrast, there
+are also other type of tagged networks available for research, where the tags
+are already organised into a directed acyclic graph (DAG), encapsulating the
+"is a sub-category of" type of hierarchy between each other. In this paper we
+study how this DAG affects the statistical distribution of tags on the nodes
+marked by the tags in various real networks. We analyse the relation between
+the tag-frequency and the position of the tag in the DAG in two large
+sub-networks of the English Wikipedia and a protein-protein interaction
+network. We also study the tag co-occurrence statistics by introducing a 2d
+tag-distance distribution preserving both the difference in the levels and the
+absolute distance in the DAG for the co-occurring pairs of tags. Our most
+interesting finding is that the local relevance of tags in the DAG, (i.e.,
+their rank or significance as characterised by, e.g., the length of the
+branches starting from them) is much more important than their global distance
+from the root. Furthermore, we also introduce a simple tagging model based on
+random walks on the DAG, capable of reproducing the main statistical features
+of tag co-occurrence.

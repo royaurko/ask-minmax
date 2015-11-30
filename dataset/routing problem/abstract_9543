@@ -1,0 +1,19 @@
+We study the problem of tracking (causally estimating) a time sequence of
+sparse spatial signals with changing sparsity patterns, as well as other
+unknown states, from a sequence of nonlinear observations corrupted by
+(possibly) non-Gaussian noise. In many applications, particularly those in
+visual tracking, the unknown state can be split into a small dimensional part,
+e.g. global motion, and a spatial signal, e.g. illumination or shape
+deformation. The spatial signal is often well modeled as being sparse in some
+domain. For a long sequence, its sparsity pattern can change over time,
+although the changes are usually slow. To address the above problem, we propose
+a novel solution approach called Particle Filtered Modified-CS (PaFiMoCS). The
+key idea of PaFiMoCS is to importance sample for the small dimensional state
+vector, while replacing importance sampling by slow sparsity pattern change
+constrained posterior mode tracking for recovering the sparse spatial signal.
+We show that the problem of tracking moving objects across spatially varying
+illumination change is an example of the above problem and explain how to
+design PaFiMoCS for it. Experiments on both simulated data as well as on real
+videos with significant illumination changes demonstrate the superiority of the
+proposed algorithm as compared with existing particle filter based tracking
+algorithms.

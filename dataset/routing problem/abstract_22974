@@ -1,0 +1,11 @@
+Global SLS-resolution is a well-known procedural semantics for top-down
+computation of queries under the well-founded model. It inherits from
+SLDNF-resolution the {\em linearity} property of derivations, which makes it
+easy and efficient to implement using a simple stack-based memory structure.
+However, like SLDNF-resolution it suffers from the problem of infinite loops
+and redundant computations. To resolve this problem, in this paper we develop a
+new procedural semantics, called {\em SLTNF-resolution}, by enhancing Global
+SLS-resolution with loop cutting and tabling mechanisms. SLTNF-resolution is
+sound and complete w.r.t. the well-founded semantics for logic programs with
+the bounded-term-size property, and is superior to existing linear tabling
+procedural semantics such as SLT-resolution.

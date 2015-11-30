@@ -1,0 +1,24 @@
+We present the first provably almost-optimal gossip-based algorithms for
+aggregate computation that are both time optimal and message-optimal. Given a
+$n$-node network, our algorithms guarantee that all the nodes can compute the
+common aggregates (such as Min, Max, Count, Sum, Average, Rank etc.) of their
+values in optimal $O(\log n)$ time and using $O(n \log \log n)$ messages. Our
+result improves on the algorithm of Kempe et al. \cite{kempe} that is
+time-optimal, but uses $O(n \log n)$ messages as well as on the algorithm of
+Kashyap et al. \cite{efficient-gossip} that uses $O(n \log \log n)$ messages,
+but is not time-optimal (takes $O(\log n \log \log n)$ time). Furthermore, we
+show that our algorithms can be used to improve gossip-based aggregate
+computation in sparse communication networks, such as in peer-to-peer networks.
+  The main technical ingredient of our algorithm is a technique called {\em
+distributed random ranking (DRR)} that can be useful in other applications as
+well. DRR gives an efficient distributed procedure to partition the network
+into a forest of (disjoint) trees of small size.
+  Our algorithms are non-address oblivious. In contrast, we show a lower bound
+of $\Omega(n\log n)$ on the message complexity of any address-oblivious
+algorithm for computing aggregates. This shows that non-address oblivious
+algorithms are needed to obtain significantly better message complexity. Our
+lower bound holds regardless of the number of rounds taken or the size of the
+messages used. Our lower bound is the first non-trivial lower bound for
+gossip-based aggregate computation and also gives the first formal proof that
+computing aggregates is strictly harder than rumor spreading in the
+address-oblivious model.

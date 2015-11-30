@@ -1,0 +1,23 @@
+An algebraic integer (AI) based time-multiplexed row-parallel architecture
+and two final-reconstruction step (FRS) algorithms are proposed for the
+implementation of bivariate AI-encoded 2-D discrete cosine transform (DCT). The
+architecture directly realizes an error-free 2-D DCT without using FRSs between
+row-column transforms, leading to an 8$\times$8 2-D DCT which is entirely free
+of quantization errors in AI basis. As a result, the user-selectable accuracy
+for each of the coefficients in the FRS facilitates each of the 64 coefficients
+to have its precision set independently of others, avoiding the leakage of
+quantization noise between channels as is the case for published DCT designs.
+The proposed FRS uses two approaches based on (i) optimized Dempster-Macleod
+multipliers and (ii) expansion factor scaling. This architecture enables
+low-noise high-dynamic range applications in digital video processing that
+requires full control of the finite-precision computation of the 2-D DCT. The
+proposed architectures and FRS techniques are experimentally verified and
+validated using hardware implementations that are physically realized and
+verified on FPGA chip. Six designs, for 4- and 8-bit input word sizes, using
+the two proposed FRS schemes, have been designed, simulated, physically
+implemented and measured. The maximum clock rate and block-rate achieved among
+8-bit input designs are 307.787 MHz and 38.47 MHz, respectively, implying a
+pixel rate of 8$\times$307.787$\approx$2.462 GHz if eventually embedded in a
+real-time video-processing system. The equivalent frame rate is about 1187.35
+Hz for the image size of 1920$\times$1080. All implementations are functional
+on a Xilinx Virtex-6 XC6VLX240T FPGA device.

@@ -1,0 +1,15 @@
+We apply a replica inference based Potts model method to unsupervised image
+segmentation on multiple scales. This approach was inspired by the statistical
+mechanics problem of "community detection" and its phase diagram. Specifically,
+the problem is cast as identifying tightly bound clusters ("communities" or
+"solutes") against a background or "solvent". Within our multiresolution
+approach, we compute information theory based correlations among multiple
+solutions ("replicas") of the same graph over a range of resolutions.
+Significant multiresolution structures are identified by replica correlations
+as manifest in information theory overlaps. With the aid of these correlations
+as well as thermodynamic measures, the phase diagram of the corresponding Potts
+model is analyzed both at zero and finite temperatures. Optimal parameters
+corresponding to a sensible unsupervised segmentation correspond to the "easy
+phase" of the Potts model. Our algorithm is fast and shown to be at least as
+accurate as the best algorithms to date and to be especially suited to the
+detection of camouflaged images.

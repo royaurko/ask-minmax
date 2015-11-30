@@ -1,0 +1,13 @@
+A new model of causal failure is presented and used to solve a novel replica
+placement problem in data centers. The model describes dependencies among
+system components as a directed graph. A replica placement is defined as a
+subset of vertices in such a graph. A criterion for optimizing replica
+placements is formalized and explained. In this work, the optimization goal is
+to avoid choosing placements in which a single failure event is likely to wipe
+out multiple replicas. Using this criterion, a fast algorithm is given for the
+scenario in which the dependency model is a tree. The main contribution of the
+paper is an $O(n + \rho \log \rho)$ dynamic programming algorithm for placing
+$\rho$ replicas on a tree with $n$ vertices. This algorithm exhibits the
+interesting property that only two subproblems need to be recursively
+considered at each stage. An $O(n^2 \rho)$ greedy algorithm is also briefly
+reported.

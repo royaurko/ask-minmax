@@ -1,0 +1,24 @@
+Sampling theories lie at the heart of signal processing devices and
+communication systems. To accommodate high operating rates while retaining low
+computational cost, efficient analog-to digital (ADC) converters must be
+developed. Many of limitations encountered in current converters are due to a
+traditional assumption that the sampling state needs to acquire the data at the
+Nyquist rate, corresponding to twice the signal bandwidth. In this thesis a
+method of sampling far below the Nyquist rate for sparse spectrum multiband
+signals is investigated. The method is called periodic non-uniform sampling,
+and it is useful in a variety of applications such as data converters, sensor
+array imaging and image compression. Firstly, a model for the sampling system
+in the frequency domain is prepared. It relates the Fourier transform of
+observed compressed samples with the unknown spectrum of the signal. Next, the
+reconstruction process based on the topic of compressed sensing is provided. We
+show that the sampling parameters play an important role on the average sample
+ratio and the quality of the reconstructed signal. The concept of condition
+number and its effect on the reconstructed signal in the presence of noise is
+introduced, and a feasible approach for choosing a sample pattern with a low
+condition number is given. We distinguish between the cases of known spectrum
+and unknown spectrum signals respectively. One of the model parameters is
+determined by the signal band locations that in case of unknown spectrum
+signals should be estimated from sampled data. Therefore, we applied both
+subspace methods and non-linear least square methods for estimation of this
+parameter. We also used the information theoretic criteria (Akaike and MDL) and
+the exponential fitting test techniques for model order selection in this case.

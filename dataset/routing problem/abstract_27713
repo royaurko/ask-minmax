@@ -1,0 +1,13 @@
+The problem of computing the Betweenness Centrality (BC) is important in
+analyzing graphs in many practical applications like social networks,
+biological networks, transportation networks, electrical circuits, etc. Since
+this problem is computation intensive, researchers have been developing
+algorithms using high performance computing resources like supercomputers,
+clusters, and Graphics Processing Units (GPUs). Current GPU algorithms for
+computing BC employ Brandes' sequential algorithm with different trade-offs for
+thread scheduling, data structures, and atomic operations. In this paper, we
+study three GPU algorithms for computing BC of unweighted, directed, scale-free
+networks. We discuss and measure the trade-offs of their design choices about
+balanced thread scheduling, atomic operations, synchronizations and latency
+hiding. Our program is written in NVIDIA CUDA C and was tested on an NVIDIA
+Tesla M2050 GPU.

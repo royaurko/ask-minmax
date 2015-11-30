@@ -1,0 +1,17 @@
+We study a location-routing problem in the context of capacitated vehicle
+routing. The input is a set of demand locations in a metric space and a fleet
+of k vehicles each of capacity Q. The objective is to locate k depots, one for
+each vehicle, and compute routes for the vehicles so that all demands are
+satisfied and the total cost is minimized. Our main result is a constant-factor
+approximation algorithm for this problem. To achieve this result, we reduce to
+the k-median-forest problem, which generalizes both k-median and minimum
+spanning tree, and which might be of independent interest. We give a
+(3+c)-approximation algorithm for k-median-forest, which leads to a
+(12+c)-approximation algorithm for the above location-routing problem, for any
+constant c>0. The algorithm for k-median-forest is just t-swap local search,
+and we prove that it has locality gap 3+2/t; this generalizes the corresponding
+result known for k-median. Finally we consider the "non-uniform"
+k-median-forest problem which has different cost functions for the MST and
+k-median parts. We show that the locality gap for this problem is unbounded
+even under multi-swaps, which contrasts with the uniform case. Nevertheless, we
+obtain a constant-factor approximation algorithm, using an LP based approach.

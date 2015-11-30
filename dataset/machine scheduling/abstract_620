@@ -1,0 +1,19 @@
+We characterize the complexity of liveness verification for parameterized
+systems consisting of a leader process and arbitrarily many anonymous and
+identical contributor processes. Processes communicate through a shared,
+bounded-value register. While each operation on the register is atomic, there
+is no synchronization primitive to execute a sequence of operations atomically.
+  We analyze the case in which processes are modeled by finite-state machines
+or pushdown machines and the property is given by a B\"uchi automaton over the
+alphabet of read and write actions of the leader. We show that the problem is
+decidable, and has a surprisingly low complexity: it is NP-complete when all
+processes are finite-state machines, and is PSPACE-hard and in NEXPTIME when
+they are pushdown machines. This complexity is lower than for the
+non-parameterized case: liveness verification of finitely many finite-state
+machines is PSPACE-complete, and undecidable for two pushdown machines.
+  For finite-state machines, our proofs characterize infinite behaviors using
+existential abstraction and semilinear constraints. For pushdown machines, we
+show how contributor computations of high stack height can be simulated by
+computations of many contributors, each with low stack height. Together, our
+results characterize the complexity of verification for parameterized systems
+under the assumptions of anonymity and asynchrony.

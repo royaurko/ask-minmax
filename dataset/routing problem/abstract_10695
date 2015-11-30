@@ -1,0 +1,19 @@
+We consider the Fault-Tolerant Facility Placement problem ($FTFP$), which is
+a generalization of the classical Uncapacitated Facility Location problem
+($UFL$). In the $FTFP$ problem we have a set of clients $C$ and a set of
+facilities $F$. Each facility $i \in F$ can be opened many times. For each
+opening of facility $i$ we pay $f_i \geq 0$. Our goal is to connect each client
+$j \in C$ with $r_j \geq 1$ open facilities in a way that minimizes the total
+cost of open facilities and established connections.
+  In a series of recent papers $FTFP$ was essentially reduced to $FTFL$ and
+then to $UFL$ showing it could be approximated with ratio $1.575$. In this
+paper we show that $FTFP$ can actually be approximated even better. We consider
+approximation ratio as a function of $r = min_{j \in C} r_j$ (minimum
+requirement of a client). With increasing $r$ the approximation ratio of our
+algorithm $\lambda_r$ converges to one. Furthermore, for $r > 1$ the value of
+$\lambda_r$ is less than 1.463 (hardness of approximation of $UFL$). We also
+show a lower bound of 1.278 for the approximability of the Fault-Tolerant
+Facility Location problem ($FTFL$) for arbitrary $r$. Already for $r > 3$ we
+obtain that $FTFP$ can be approximated with ratio 1.275, showing that under
+standard complexity theoretic assumptions $FTFP$ is strictly better
+approximable than $FTFL$.

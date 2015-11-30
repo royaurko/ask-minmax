@@ -1,0 +1,23 @@
+Bounded treewidth and Monadic Second Order (MSO) logic have proved to be key
+concepts in establishing fixed-parameter tractability results. Indeed, by
+Courcelle's Theorem we know: Any property of finite structures, which is
+expressible by an MSO sentence, can be decided in linear time (data complexity)
+if the structures have bounded treewidth.
+  In principle, Courcelle's Theorem can be applied directly to construct
+concrete algorithms by transforming the MSO evaluation problem into a tree
+language recognition problem. The latter can then be solved via a finite tree
+automaton (FTA). However, this approach has turned out to be problematical,
+since even relatively simple MSO formulae may lead to a ``state explosion'' of
+the FTA.
+  In this work we propose monadic datalog (i.e., datalog where all intentional
+predicate symbols are unary) as an alternative method to tackle this class of
+fixed-parameter tractable problems. We show that if some property of finite
+structures is expressible in MSO then this property can also be expressed by
+means of a monadic datalog program over the structure plus the tree
+decomposition.
+  Moreover, we show that the resulting fragment of datalog can be evaluated in
+linear time (both w.r.t. the program size and w.r.t. the data size). This new
+approach is put to work by devising new algorithms for the 3-Colorability
+problem of graphs and for the PRIMALITY problem of relational schemas (i.e.,
+testing if some attribute in a relational schema is part of a key). We also
+report on experimental results with a prototype implementation.

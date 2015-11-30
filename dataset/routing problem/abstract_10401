@@ -1,0 +1,24 @@
+Recent work has addressed the algorithmic problem of allocating advertisement
+space for keywords in sponsored search auctions so as to maximize revenue, most
+of which assume that pricing is done via a first-price auction. This does not
+realistically model the Generalized Second Price (GSP) auction used in
+practice, in which bidders pay the next-highest bid for keywords that they are
+allocated. Towards the goal of more realistically modeling these auctions, we
+introduce the Second-Price Ad Auctions problem, in which bidders' payments are
+determined by the GSP mechanism. We show that the complexity of the
+Second-Price Ad Auctions problem is quite different than that of the more
+studied First-Price Ad Auctions problem. First, unlike the first-price variant,
+for which small constant-factor approximations are known, it is NP-hard to
+approximate the Second-Price Ad Auctions problem to any non-trivial factor,
+even when the bids are small compared to the budgets. Second, this discrepancy
+extends even to the 0-1 special case that we call the Second-Price Matching
+problem (2PM). Offline 2PM is APX-hard, and for online 2PM there is no
+deterministic algorithm achieving a non-trivial competitive ratio and no
+randomized algorithm achieving a competitive ratio better than 2. This
+contrasts with the results for the analogous special case in the first-price
+model, the standard bipartite matching problem, which is solvable in polynomial
+time and which has deterministic and randomized online algorithms achieving
+better competitive ratios. On the positive side, we provide a 2-approximation
+for offline 2PM and a 5.083-competitive randomized algorithm for online 2PM.
+The latter result makes use of a new generalization of a result on the
+performance of the "Ranking" algorithm for online bipartite matching.

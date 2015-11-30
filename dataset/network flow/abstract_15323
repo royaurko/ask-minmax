@@ -1,0 +1,13 @@
+The linear noise approximation is commonly used to obtain intrinsic noise
+statistics for biochemical networks. These estimates are accurate for networks
+with large numbers of molecules. However it is well known that many biochemical
+networks are characterized by at least one species with a small number of
+molecules. We here describe version 0.3 of the software intrinsic Noise
+Analyzer (iNA) which allows for accurate computation of noise statistics over
+wide ranges of molecule numbers. This is achieved by calculating the next order
+corrections to the linear noise approximation's estimates of variance and
+covariance of concentration fluctuations. The efficiency of the methods is
+significantly improved by automated just-in-time compilation using the LLVM
+framework leading to a fluctuation analysis which typically outperforms that
+obtained by means of exact stochastic simulations. iNA is hence particularly
+well suited for the needs of the computational biology community.

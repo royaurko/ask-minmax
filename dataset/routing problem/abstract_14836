@@ -1,0 +1,24 @@
+Given a set of $m$ agents and a set of $n$ items, where agent $A$ has utility
+$u_{A,i}$ for item $i$, our goal is to allocate items to agents to maximize
+fairness. Specifically, the utility of an agent is the sum of its utilities for
+items it receives, and we seek to maximize the minimum utility of any agent.
+While this problem has received much attention recently, its approximability
+has not been well-understood thus far: the best known approximation algorithm
+achieves an $\tilde{O}(\sqrt{m})$-approximation, and in contrast, the best
+known hardness of approximation stands at 2.
+  Our main result is an approximation algorithm that achieves an
+$\tilde{O}(n^{\eps})$ approximation for any $\eps=\Omega(\log\log n/\log n)$ in
+time $n^{O(1/\eps)}$. In particular, we obtain poly-logarithmic approximation
+in quasi-polynomial time, and for any constant $\eps > 0$, we obtain
+$O(n^{\eps})$ approximation in polynomial time. An interesting aspect of our
+algorithm is that we use as a building block a linear program whose integrality
+gap is $\Omega(\sqrt m)$. We bypass this obstacle by iteratively using the
+solutions produced by the LP to construct new instances with significantly
+smaller integrality gaps, eventually obtaining the desired approximation.
+  We also investigate the special case of the problem, where every item has a
+non-zero utility for at most two agents. We show that even in this restricted
+setting the problem is hard to approximate upto any factor better tha 2, and
+show a factor $(2+\eps)$-approximation algorithm running in time
+$poly(n,1/\eps)$ for any $\eps>0$. This special case can be cast as a graph
+edge orientation problem, and our algorithm can be viewed as a generalization
+of Eulerian orientations to weighted graphs.

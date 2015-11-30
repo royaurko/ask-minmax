@@ -1,0 +1,17 @@
+We propose a double obstacle phase field approach to the recovery of
+piece-wise constant diffusion coefficients for elliptic partial differential
+equations. The approach to this inverse problem is that of optimal control in
+which we have a quadratic fidelity term to which we add a perimeter
+regularisation weighted by a parameter sigma. This yields a functional which is
+optimised over a set of diffusion coefficients subject to a state equation
+which is the underlying elliptic PDE. In order to derive a problem which is
+amenable to computation the perimeter functional is relaxed using a gradient
+energy functional together with an obstacle potential in which there is an
+interface parameter epsilon. This phase field approach is justified by proving
+Gamma-convergence to the functional with perimeter regularisation as epsilon
+tends to zero. The computational approach is based on a finite element
+approximation. This discretisation is shown to converge in an appropriate way
+to the solution of the phase field problem. We derive an iterative method which
+is shown to yield an energy decreasing sequence converging to a discrete
+critical point. The efficacy of the approach is illustrated with numerical
+experiments.

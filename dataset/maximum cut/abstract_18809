@@ -1,0 +1,25 @@
+In this work, we propose a SPH interpolating Kernel reformulation suitable
+also to treat free edge boundaries in the computational domain. Application to
+both inviscid and viscous stationary low compressibility accretion disc models
+in Close Binaries (CB) are shown. The investigation carried out in this paper
+is a consequence of the fact that a low compressibility modelling is crucial to
+check numerical reliability.
+  Results show that physical viscosity supports a well-bound accretion disc
+formation, despite the low gas compressibility, when a Gaussian-derived Kernel
+(from the Error Function) is assumed, in extended particle range - whose Half
+Width at Half Maximum (HWHM) is fixed to a constant $h$ value - without any
+spatial restrictions on its radial interaction (hereinafter GASPHER). At the
+same time, GASPHER ensures adequate particle interpolations at the boundary
+free edges. Both SPH and adaptive SPH (hereinafter ASPH) methods lack accuracy
+if there are not constraints on the boundary conditions, in particular at the
+edge of the particle envelope: Free Edge (FE) conditions. In SPH, an
+inefficient particle interpolation involves a few neighbour particles; instead,
+in the second case, non-physical effects involve both the boundary layer
+particles themselves and the radial transport.
+  Either in a regime where FE conditions involve the computational domain, or
+in a viscous fluid dynamics, or both, a GASPHER scheme can be rightly adopted
+in such troublesome physical regimes. Despite the applied low compressibiity
+condition, viscous GASPHER model shows clear spiral pattern profiles
+demonstrating the better quality of results compared to SPH viscous ones.
+Moreover a successful comparison of results concerning GASPHER 1D inviscid
+shock tube with analytical solution is also reported.

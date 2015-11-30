@@ -1,0 +1,19 @@
+In this paper, we present a novel learning-aided energy management scheme
+($\mathtt{LEM}$) for multihop energy harvesting networks. Different from prior
+works on this problem, our algorithm explicitly incorporates information
+learning into system control via a step called \emph{perturbed dual learning}.
+$\mathtt{LEM}$ does not require any statistical information of the system
+dynamics for implementation, and efficiently resolves the challenging energy
+outage problem. We show that $\mathtt{LEM}$ achieves the near-optimal
+$[O(\epsilon), O(\log(1/\epsilon)^2)]$ utility-delay tradeoff with an
+$O(1/\epsilon^{1-c/2})$ energy buffers ($c\in(0,1)$). More interestingly,
+$\mathtt{LEM}$ possesses a \emph{convergence time} of $O(1/\epsilon^{1-c/2}
++1/\epsilon^c)$, which is much faster than the $\Theta(1/\epsilon)$ time of
+pure queue-based techniques or the $\Theta(1/\epsilon^2)$ time of approaches
+that rely purely on learning the system statistics. This fast convergence
+property makes $\mathtt{LEM}$ more adaptive and efficient in resource
+allocation in dynamic environments. The design and analysis of $\mathtt{LEM}$
+demonstrate how system control algorithms can be augmented by learning and what
+the benefits are. The methodology and algorithm can also be applied to similar
+problems, e.g., processing networks, where nodes require nonzero amount of
+contents to support their actions.

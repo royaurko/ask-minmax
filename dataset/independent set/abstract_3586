@@ -1,0 +1,25 @@
+Symmetry breaking problems are among the most well studied in the field of
+distributed computing and yet the most fundamental questions about their
+complexity remain open. In this paper we work in the LOCAL model (where the
+input graph and underlying distributed network are identical) and study the
+randomized complexity of four fundamental symmetry breaking problems on graphs:
+computing MISs (maximal independent sets), maximal matchings, vertex colorings,
+and ruling sets. A small sample of our results includes
+  - An MIS algorithm running in $O(\log^2\Delta + 2^{O(\sqrt{\log\log n})})$
+time, where $\Delta$ is the maximum degree. This is the first MIS algorithm to
+improve on the 1986 algorithms of Luby and Alon, Babai, and Itai, when $\log n
+\ll \Delta \ll 2^{\sqrt{\log n}}$, and comes close to the $\Omega(\log \Delta)$
+lower bound of Kuhn, Moscibroda, and Wattenhofer.
+  - A maximal matching algorithm running in $O(\log\Delta + \log^4\log n)$
+time. This is the first significant improvement to the 1986 algorithm of
+Israeli and Itai. Moreover, its dependence on $\Delta$ is provably optimal.
+  - A method for reducing symmetry breaking problems in low
+arboricity/degeneracy graphs to low degree graphs. (Roughly speaking, the
+arboricity or degeneracy of a graph bounds the density of any subgraph.)
+Corollaries of this reduction include an $O(\sqrt{\log n})$-time maximal
+matching algorithm for graphs with arboricity up to $2^{\sqrt{\log n}}$ and an
+$O(\log^{2/3} n)$-time MIS algorithm for graphs with arboricity up to $2^{(\log
+n)^{1/3}}$.
+  Each of our algorithms is based on a simple, but powerful technique for
+reducing a randomized symmetry breaking task to a corresponding deterministic
+one on a poly$(\log n)$-size graph.

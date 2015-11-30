@@ -1,0 +1,10 @@
+We describe algorithms for two-stage stochastic linear programming with
+recourse and their implementation on a grid computing platform. In particular,
+we examine serial and asynchronous versions of the L-shaped method and a
+trust-region method. The parallel platform of choice is the dynamic,
+heterogeneous, opportunistic platform provided by the Condor system. The
+algorithms are of master-worker type (with the workers being used to solve
+second-stage problems, and the MW runtime support library (which supports
+master-worker computations) is key to the implementation. Computational results
+are presented on large sample average approximations of problems from the
+literature.

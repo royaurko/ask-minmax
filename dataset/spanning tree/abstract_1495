@@ -1,0 +1,18 @@
+Given the respective advantages of the two complimentary techniques for
+peer-to-peer media streaming (namely tree-based push and mesh-based pull),
+there is a strong trend of combining them into a hybrid streaming system.
+Backed by recently proposed mechanisms to identify stable peers, such a hybrid
+system usually consists of backbone trees formed by the stable peers and other
+overlay structures in the second tier to accommodate the remaining peers. In
+this paper, we embrace the hybrid push-pull structure for peer-to-peer media
+streaming. Our protocol is dominated by a multi-tree push mechanism to minimize
+the delay in the backbone and is complemented by other overlay structures to
+cope with peer dynamics. What mainly distinguishes our multi-tree pushing from
+the conventional ones is an unbalanced tree design guided by the so called
+snow-ball streaming, which has a provable minimum delay and can be smoothly
+"melded" with virtually any other existing overlay structures lying in the
+second tier. We design algorithms to construct and maintain our SNowbAll
+multi-tree Pushing (SNAP) overlay, and we also illustrate how to smoothly weld
+the SNAP backbone with the second tier. Finally, we perform simulations in
+ns-2; the results indicate that our approach outperforms a recently proposed
+hybrid streaming system.

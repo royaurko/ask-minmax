@@ -1,0 +1,15 @@
+We propose a time discretization scheme for a class of ordinary differential
+equations arising in simulations of fluid/particle flows. The scheme is
+intended to work robustly in the lubrication regime when the distance between
+two particles immersed in the fluid or between a particle and the wall tends to
+zero. The idea consists in introducing a small threshold for the particle-wall
+distance below which the real trajectory of the particle is replaced by an
+approximated one where the distance is kept equal to the threshold value. The
+error of this approximation is estimated both theoretically and by numerical
+experiments. Our time marching scheme can be easily incorporated into a full
+simulation method where the velocity of the fluid is obtained by a numerical
+solution to Stokes or Navier-Stokes equations. We also provide a derivation of
+the asymptotic expansion for the lubrication force (used in our numerical
+experiments) acting on a disk immersed in a Newtonian fluid and approaching the
+wall. The method of this derivation is new and can be easily adapted to other
+cases.

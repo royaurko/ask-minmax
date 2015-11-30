@@ -1,0 +1,13 @@
+The declustering problem is to allocate given data on parallel working
+storage devices in such a manner that typical requests find their data evenly
+distributed on the devices. Using deep results from discrepancy theory, we
+improve previous work of several contributors concerning range queries to
+higher-dimensional data. We give a declustering scheme with an additive error
+of $O_d(\log^{d-1} M)$ independent of the data size, where $d$ is the
+dimension, $M$ the number of storage devices and $d-1$ does not exceed the
+smallest prime power in the canonical decomposition of $M$ into prime powers.
+In particular, our schemes work for arbitrary $M$ in dimensions two and three.
+For general $d$, they work for all $M\geq d-1$ that are powers of two.
+Concerning lower bounds, we show that a recent proof of a
+$\Omega_d(\log^{\frac{d-1}{2}} M)$ bound contains an error. We close the gap in
+the proof and thus establish the bound.

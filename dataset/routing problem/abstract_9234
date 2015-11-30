@@ -1,0 +1,16 @@
+The following paper compares a consistent Newton-Raphson and fixed-point
+iteration based solution strategy for a variational multiscale finite element
+formulation for incompressible Navier-Stokes. The main contributions of this
+work include a consistent linearization of the Navier-Stokes equations, which
+provides an avenue for advanced algorithms that require origins in a consistent
+method. We also present a comparison between formulations that differ only in
+their linearization, but maintain all other equivalences. Using the variational
+multiscale concept, we construct a stabilized formulation (that may be
+considered an extension of the MINI element to nonlinear Navier-Stokes). We
+then linearize the problem using fixed-point iteration and by deriving a
+consistent tangent matrix for the update equation to obtain the solution via
+Newton-Raphson iterations. We show that the consistent formulation converges in
+fewer iterations, as expected, for several test problems. We also show that the
+consistent formulation converges for problems for which fixed-point iteration
+diverges. We present the results of both methods for problems of Reynold's
+number up to 5000.

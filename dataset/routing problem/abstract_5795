@@ -1,0 +1,17 @@
+A generic framework for the solution of PDE-constrained optimisation problems
+based on the FEniCS system is presented. Its main features are an intuitive
+mathematical interface, a high degree of automation, and an efficient
+implementation of the generated adjoint model. The framework is based upon the
+extension of a domain-specific language for variational problems to cleanly
+express complex optimisation problems in a compact, high-level syntax. For
+example, optimisation problems constrained by the time-dependent Navier-Stokes
+equations can be written in tens of lines of code. Based on this high-level
+representation, the framework derives the associated adjoint equations in the
+same domain-specific language, and uses the FEniCS code generation technology
+to emit parallel optimised low-level C++ code for the solution of the forward
+and adjoint systems. The functional and gradient information so computed is
+then passed to the optimisation algorithm to update the parameter values. This
+approach works both for steady-state as well as transient, and for linear as
+well as nonlinear governing PDEs and a wide range of functionals and control
+parameters. We demonstrate the applicability and efficiency of this approach on
+classical textbook optimisation problems and advanced examples.

@@ -1,0 +1,19 @@
+We are interested in the finite element solution of elliptic problems with a
+right-hand side of the single layer distribution type. Such problems arise when
+one aims at accounting for a physical hypersurface (or line, for bi-dimensional
+problem), but also in the context of fictitious domain methods, when one aims
+at accounting for the presence of an inclusion in a domain (in that case the
+support of the distribution is the boundary of the inclusion). The most popular
+way to handle numerically the single layer distribution in the finite element
+context is to spread it out by a regularization technique. An alternative
+approach consists in approximating the single layer distribution by a
+combination of Dirac masses. As the Dirac mass in the right hand side does not
+make sense at the continuous level, this approach raises particular issues. The
+object of the present paper is to give a theoretical background to this
+approach. We present a rigorous numerical analysis of this approximation, and
+we present two examples of application of the main result of this paper. The
+first one is a Poisson problem with a single layer distribution as a right-hand
+side and the second one is another Poisson problem where the single layer
+distribution is the Lagrange multiplier used to enforce a Dirichlet boundary
+condition on the boundary of an inclusion in the domain. Theoretical analysis
+is supplemented by numerical experiments in the last section.

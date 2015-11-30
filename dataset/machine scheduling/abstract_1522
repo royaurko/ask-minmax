@@ -1,0 +1,8 @@
+Markov Chain Monte Carlo (MCMC) algorithms are a workhorse of probabilistic
+modeling and inference, but are difficult to debug, and are prone to silent
+failure if implemented naively. We outline several strategies for testing the
+correctness of MCMC algorithms. Specifically, we advocate writing code in a
+modular way, where conditional probability calculations are kept separate from
+the logic of the sampler. We discuss strategies for both unit testing and
+integration testing. As a running example, we show how a Python implementation
+of Gibbs sampling for a mixture of Gaussians model can be tested.

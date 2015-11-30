@@ -1,0 +1,17 @@
+Current approaches to the practical implementation of network coding are
+batch-based, and often do not use feedback, except possibly to signal
+completion of a file download. In this paper, the various benefits of using
+feedback in a network coded system are studied. It is shown that network coding
+can be performed in a completely online manner, without the need for batches or
+generations, and that such online operation does not affect the throughput.
+Although these ideas are presented in a single-hop packet erasure broadcast
+setting, they naturally extend to more general lossy networks which employ
+network coding in the presence of feedback. The impact of feedback on queue
+size at the sender and decoding delay at the receivers is studied. Strategies
+for adaptive coding based on feedback are presented, with the goal of
+minimizing the queue size and delay. The asymptotic behavior of these metrics
+is characterized, in the limit of the traffic load approaching capacity.
+Different notions of decoding delay are considered, including an
+order-sensitive notion which assumes that packets are useful only when
+delivered in order. Our work may be viewed as a natural extension of Automatic
+Repeat reQuest (ARQ) schemes to coded networks.

@@ -1,0 +1,18 @@
+The geometric median as well as the Frechet mean of points in an Hadamard
+space are important in both theory and applications. Surprisingly, no
+algorithms for their computation are hitherto known. To address this issue, we
+use a split version of the proximal point algorithm for minimizing a sum of
+convex functions and prove that this algorithm produces a sequence converging
+to a minimizer of the objective function, which extends a recent result of D.
+Bertsekas (2001) into Hadamard spaces. The method is quite robust and not only
+does it yield algorithms for the median and the mean, but it also applies to
+various other optimization problems. We moreover show that another algorithm
+for computing the Frechet mean can be derived from the law of large numbers due
+to K.-T. Sturm (2002). In applications, computing medians and means is probably
+most needed in tree space, which is an instance of an Hadamard space, invented
+by Billera, Holmes, and Vogtmann (2001) as a tool for averaging phylogenetic
+trees. It turns out, however, that it can be also used to model numerous other
+tree-like structures. Since there now exists a polynomial-time algorithm for
+computing geodesics in tree space due to M. Owen and S. Provan (2011), we
+obtain efficient algorithms for computing medians and means, which can be
+directly used in practice.

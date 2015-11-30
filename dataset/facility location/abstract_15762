@@ -1,0 +1,20 @@
+This paper describes an extension, to higher dimensions, of the Bayesian
+Blocks algorithm for estimating signals in noisy time series data (Scargle
+1998, 2000). The mathematical problem is to find the partition of the data
+space with the maximum posterior probability for a model consisting of a
+homogeneous Poisson process for each partition element. For model M_{n},
+attributing the data within region n of the data space to a Poisson process
+with a fixed event rate lambda_{n}, the global posterior is:
+  P(M_{n}) = Phi(N,V) = Gamma(N+1)Gamma(V-N+1) / Gamma(V+2) = N!(V-N)!/(V+1)! .
+  Note that lambda_{n} does not appear, since it has been marginalized, using a
+flat, improper prior. Other priors yield similar formulas. This expression is
+valid for a data space of any dimension. It depends on only N, the number of
+data points within the region, and V, the volume of the region. No information
+about the actual locations of the points enters this expression.
+  Suppose two such regions, described by N_{1},V_{1} and N_{2},V_{2}, are
+candidates for being merged into one. From the above equation, construct a
+Bayes merge factor, giving the ratio of posteriors for the two regions merged
+and not merged, respectively:
+  P(Merge) = Phi(N_{1}+N_{2},V_{1}+V_{2}) / Phi(N_{1},V_{1}) Phi(N_{2},V_{2}) .
+  Then collect data points into blocks with a greedy cell coalescence
+algorithm.

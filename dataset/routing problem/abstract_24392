@@ -1,0 +1,13 @@
+We demonstrate the application of our 3D radiative transfer framework in the
+model atmosphere code PHOENIX/3D for a number of spectrum synthesis
+calculations for very different conditions. The 3DRT framework discussed in the
+previous papers of this series was added to our general-purpose model
+atmosphere code PHOENIX/1D and an extended 3D version PHOENIX/3D was created.
+The \phxT code is parallelized via the MPI library using a hierarchical domain
+decomposition and displays very good strong scaling. We present the results of
+several test cases for widely different atmosphere conditions and compare the
+3D calculations with equivalent 1D models to assess the internal accuracy of
+the 3D modeling. In addition, we show the results for a number of parameterized
+3D structures. With presently available computational resources it is possible
+to solve the full 3D radiative transfer (including scattering) problem with the
+same micro-physics as included in 1D modeling.

@@ -1,0 +1,20 @@
+The goal of entity linking is to map spans of text to canonical entity
+representations such as Freebase entries or Wikipedia articles. It provides a
+foundation for various natural language processing tasks, including text
+understanding, summarization and machine translation. Name ambiguity, word
+polysemy, context dependencies, and a heavy-tailed distribution of entities
+contribute to the complexity of this problem.
+  We propose a simple, yet effective, probabilistic graphical model for
+collective entity linking, which resolves entity links jointly across an entire
+document. Our model captures local information from linkable token spans (i.e.,
+mentions) and their surrounding context and combines it with a document-level
+prior of entity co-occurrences. The model is acquired automatically from
+entity-linked text repositories with a lightweight computational step for
+parameter adaptation. Loopy belief propagation is used as an efficient
+approximate inference algorithm.
+  In contrast to state-of-the-art methods, our model is conceptually simple and
+easy to reproduce. It comes with a small memory footprint and is sufficiently
+fast for real-time usage. We demonstrate its benefits on a wide range of
+well-known entity linking benchmark datasets. Our empirical results show the
+merits of the proposed approach and its competitiveness in comparison to
+state-of-the-art methods.

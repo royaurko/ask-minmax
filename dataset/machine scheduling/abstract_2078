@@ -1,0 +1,11 @@
+Task parallelism as employed by the OpenMP task construct, although ideal for
+tackling irregular problems or typical producer/consumer schemes, bears some
+potential for performance bottlenecks if locality of data access is important,
+which is typically the case for memory-bound code on ccNUMA systems. We present
+a programming technique which ameliorates adverse effects of dynamic task
+distribution by sorting tasks into locality queues, each of which is preferably
+processed by threads that belong to the same locality domain. Dynamic
+scheduling is fully preserved inside each domain, and is preferred over
+possible load imbalance even if non-local access is required. The effectiveness
+of the approach is demonstrated using a blocked six-point stencil solver as a
+toy model.

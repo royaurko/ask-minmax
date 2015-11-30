@@ -1,0 +1,17 @@
+The increasing amount of personal and sensitive information disseminated over
+the Internet prompts commensurately growing privacy concerns. Digital data
+often lingers indefinitely and users lose its control. This motivates the
+desire to restrict content availability to an expiration time set by the data
+owner. This paper presents and formalizes the notion of Ephemeral Publishing
+(EphPub), to prevent the access to expired content. We propose an efficient and
+robust protocol that builds on the Domain Name System (DNS) and its caching
+mechanism. With EphPub, sensitive content is published encrypted and the key
+material is distributed, in a steganographic manner, to randomly selected and
+independent resolvers. The availability of content is then limited by the
+evanescence of DNS cache entries. The EphPub protocol is transparent to
+existing applications, and does not rely on trusted hardware, centralized
+servers, or user proactive actions. We analyze its robustness and show that it
+incurs a negligible overhead on the DNS infrastructure. We also perform a
+large-scale study of the caching behavior of 900K open DNS resolvers. Finally,
+we propose Firefox and Thunderbird extensions that provide ephemeral publishing
+capabilities, as well as a command-line tool to create ephemeral files.

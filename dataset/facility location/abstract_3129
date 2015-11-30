@@ -1,0 +1,13 @@
+The original liveness based flow and context sensitive points-to analysis
+(LFCPA) is restricted to scalar pointer variables and scalar pointees on stack
+and static memory. In this paper, we extend it to support heap memory and
+pointer expressions involving structures, unions, arrays, and pointer
+arithmetic. The key idea behind these extensions involves constructing bounded
+names for locations in terms of compile time constants (names and fixed
+offsets), and introducing sound approximations when it is not possible to do
+so. We achieve this by defining a grammar for pointer expressions, suitable
+memory models and location naming conventions, and some key evaluations of
+pointer expressions that compute the named locations. These extensions preserve
+the spirit of the original LFCPA which is evidenced by the fact that although
+the lattices and flow functions change, the overall data flow equations remain
+unchanged.

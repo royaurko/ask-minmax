@@ -1,0 +1,15 @@
+Data intensive applications often involve the analysis of large datasets that
+require large amounts of compute and storage resources. While dedicated compute
+and/or storage farms offer good task/data throughput, they suffer low resource
+utilization problem under varying workloads conditions. If we instead move such
+data to distributed computing resources, then we incur expensive data transfer
+cost. In this paper, we propose a data diffusion approach that combines dynamic
+resource provisioning, on-demand data replication and caching, and data
+locality-aware scheduling to achieve improved resource efficiency under varying
+workloads. We define an abstract "data diffusion model" that takes into
+consideration the workload characteristics, data accessing cost, application
+throughput and resource utilization; we validate the model using a real-world
+large-scale astronomy application. Our results show that data diffusion can
+increase the performance index by as much as 34X, and improve application
+response time by over 506X, while achieving near-optimal throughputs and
+execution times.

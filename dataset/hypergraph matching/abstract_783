@@ -1,0 +1,19 @@
+When designing a preemptive online algorithm for the maximum matching
+problem, we wish to maintain a valid matching M while edges of the underlying
+graph are presented one after the other. When presented with an edge e, the
+algorithm should decide whether to augment the matching M by adding e (in which
+case e may be removed later on) or to keep M in its current form without adding
+e (in which case e is lost for good). The objective is to eventually hold a
+matching M with maximum weight.
+  The main contribution of this paper is to establish new lower and upper
+bounds on the competitive ratio achievable by preemptive online algorithms:
+  1. We provide a lower bound of 1+ln 2~1.693 on the competitive ratio of any
+randomized algorithm for the maximum cardinality matching problem, thus
+improving on the currently best known bound of e/(e-1)~1.581 due to Karp,
+Vazirani, and Vazirani [STOC'90].
+  2. We devise a randomized algorithm that achieves an expected competitive
+ratio of 5.356 for maximum weight matching. This finding demonstrates the power
+of randomization in this context, showing how to beat the tight bound of 3
++2\sqrt{2}~5.828 for deterministic algorithms, obtained by combining the 5.828
+upper bound of McGregor [APPROX'05] and the recent 5.828 lower bound of
+Varadaraja [ICALP'11].

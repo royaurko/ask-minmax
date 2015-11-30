@@ -1,0 +1,19 @@
+We consider graphs without loops or parallel edges in which every edge is
+assigned + or -. Such a signed graph is balanced if its vertex set can be
+partitioned into parts $V_1$ and $V_2$ such that all edges between vertices in
+the same part have sign + and all edges between vertices of different parts
+have sign $-$ (one of the parts may be empty). It is well-known that every
+connected signed graph with $n$ vertices and $m$ edges has a balanced subgraph
+with at least $\frac{m}{2} + \frac{n-1}{4}$ edges and this bound is tight. We
+consider the following parameterized problem: given a connected signed graph
+$G$ with $n$ vertices and $m$ edges, decide whether $G$ has a balanced subgraph
+with at least $\frac{m}{2} + \frac{n-1}{4}+\frac{k}{4}$ edges, where $k$ is the
+parameter.
+  We obtain an algorithm for the problem of runtime $8^k(kn)^{O(1)}$. We also
+prove that for each instance $(G,k)$ of the problem, in polynomial time, we can
+either solve $(G,k)$ or produce an equivalent instance $(G',k')$ such that
+$k'\le k$ and $|V(G')|=O(k^3)$. Our first result generalizes a result of
+Crowston, Jones and Mnich (ICALP 2012) on the corresponding parameterization of
+Max Cut (when every edge of $G$ has sign $-$). Our second result generalizes
+and significantly improves the corresponding result of Crowston, Jones and
+Mnich: they showed that $|V(G')|=O(k^5)$.

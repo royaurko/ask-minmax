@@ -1,0 +1,19 @@
+A graph $G = (V,E)$ can be described by the characteristic function of the
+edge set $\chi_E$ which maps a pair of binary encoded nodes to 1 iff the nodes
+are adjacent. Using \emph{Ordered Binary Decision Diagrams} (OBDDs) to store
+$\chi_E$ can lead to a (hopefully) compact representation. Given the OBDD as an
+input, symbolic/implicit OBDD-based graph algorithms can solve optimization
+problems by mainly using functional operations, e.g. quantification or binary
+synthesis. While the OBDD representation size can not be small in general, it
+can be provable small for special graph classes and then also lead to fast
+algorithms. In this paper, we show that the OBDD size of unit interval graphs
+is $O(\ | V \ | /\log \ | V \ |)$ and the OBDD size of interval graphs is $O(\
+| V \ | \log \ | V \ |)$ which both improve a known result from Nunkesser and
+Woelfel (2009). Furthermore, we can show that using our variable order and node
+labeling for interval graphs the worst-case OBDD size is $\Omega(\ | V \ | \log
+\ | V \ |)$. We use the structure of the adjacency matrices to prove these
+bounds. This method may be of independent interest and can be applied to other
+graph classes. We also develop a maximum matching algorithm on unit interval
+graphs using $O(\log \ | V \ |)$ operations and a coloring algorithm for unit
+and general intervals graphs using $O(\log^2 \ | V \ |)$ operations and
+evaluate the algorithms empirically.

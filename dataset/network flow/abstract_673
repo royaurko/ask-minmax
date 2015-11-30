@@ -1,0 +1,15 @@
+This paper presents and analyses the implementation of a novel active queue
+management (AQM) named FavorQueue that aims to improve delay transfer of short
+lived TCP flows over best-effort networks. The idea is to dequeue packets that
+do not belong to a flow previously enqueued first. The rationale is to mitigate
+the delay induced by long-lived TCP flows over the pace of short TCP data
+requests and to prevent dropped packets at the beginning of a connection and
+during recovery period. Although the main target of this AQM is to accelerate
+short TCP traffic, we show that FavorQueue does not only improve the
+performance of short TCP traffic but also improves the performance of all TCP
+traffic in terms of drop ratio and latency whatever the flow size. In
+particular, we demonstrate that FavorQueue reduces the loss of a retransmitted
+packet, decreases the number of dropped packets recovered by RTO and improves
+the latency up to 30% compared to DropTail. Finally, we show that this scheme
+remains compliant with recent TCP updates such as the increase of the initial
+slow-start value.

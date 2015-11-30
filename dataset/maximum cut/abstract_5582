@@ -1,0 +1,15 @@
+In this article, we present a graph-based method using a cubic template for
+volumetric segmentation of vertebrae in magnetic resonance imaging (MRI)
+acquisitions. The user can define the degree of deviation from a regular cube
+via a smoothness value Delta. The Cube-Cut algorithm generates a directed graph
+with two terminal nodes (s-t-network), where the nodes of the graph correspond
+to a cubic-shaped subset of the image's voxels. The weightings of the graph's
+terminal edges, which connect every node with a virtual source s or a virtual
+sink t, represent the affinity of a voxel to the vertebra (source) and to the
+background (sink). Furthermore, a set of infinite weighted and non-terminal
+edges implements the smoothness term. After graph construction, a minimal
+s-t-cut is calculated within polynomial computation time, which splits the
+nodes into two disjoint units. Subsequently, the segmentation result is
+determined out of the source-set. A quantitative evaluation of a C++
+implementation of the algorithm resulted in an average Dice Similarity
+Coefficient (DSC) of 81.33% and a running time of less than a minute.

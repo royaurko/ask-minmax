@@ -1,0 +1,23 @@
+Recovering intrinsic data structure from corrupted observations plays an
+important role in various tasks in the communities of machine learning and
+signal processing. In this paper, we propose a novel model, named log-sum
+heuristic recovery (LHR), to learn the essential low-rank structure from
+corrupted data. Different from traditional approaches, which directly utilize
+$\ell_1$ norm to measure the sparseness, LHR introduces a more reasonable
+log-sum measurement to enhance the sparsity in both the intrinsic low-rank
+structure and in the sparse corruptions. Although the proposed LHR optimization
+is no longer convex, it still can be effectively solved by a
+majorization-minimization (MM) type algorithm, with which the non-convex
+objective function is iteratively replaced by its convex surrogate and LHR
+finally falls into the general framework of reweighed approaches. We prove that
+the MM-type algorithm can converge to a stationary point after successive
+iteration. We test the performance of our proposed model by applying it to
+solve two typical problems: robust principal component analysis (RPCA) and
+low-rank representation (LRR).
+  For RPCA, we compare LHR with the benchmark Principal Component Pursuit (PCP)
+method from both the perspectives of simulations and practical applications.
+For LRR, we apply LHR to compute the low-rank representation matrix for motion
+segmentation and stock clustering. Experimental results on low rank structure
+learning demonstrate that the proposed Log-sum based model performs much better
+than the $\ell_1$-based method on for data with higher rank and with denser
+corruptions.

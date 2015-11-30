@@ -1,0 +1,17 @@
+We address a fundamental problem arising from analysis of biomolecular
+sequences. The input consists of two numbers $w_{\min}$ and $w_{\max}$ and a
+sequence $S$ of $n$ number pairs $(a_i,w_i)$ with $w_i>0$. Let {\em segment}
+$S(i,j)$ of $S$ be the consecutive subsequence of $S$ between indices $i$ and
+$j$. The {\em density} of $S(i,j)$ is
+$d(i,j)=(a_i+a_{i+1}+...+a_j)/(w_i+w_{i+1}+...+w_j)$. The {\em maximum-density
+segment problem} is to find a maximum-density segment over all segments
+$S(i,j)$ with $w_{\min}\leq w_i+w_{i+1}+...+w_j \leq w_{\max}$. The best
+previously known algorithm for the problem, due to Goldwasser, Kao, and Lu,
+runs in $O(n\log(w_{\max}-w_{\min}+1))$ time. In the present paper, we solve
+the problem in O(n) time. Our approach bypasses the complicated {\em right-skew
+decomposition}, introduced by Lin, Jiang, and Chao. As a result, our algorithm
+has the capability to process the input sequence in an online manner, which is
+an important feature for dealing with genome-scale sequences. Moreover, for a
+type of input sequences $S$ representable in $O(m)$ space, we show how to
+exploit the sparsity of $S$ and solve the maximum-density segment problem for
+$S$ in $O(m)$ time.

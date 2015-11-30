@@ -1,0 +1,17 @@
+There are two broad approaches for differentially private data analysis. The
+interactive approach aims at developing customized differentially private
+algorithms for various data mining tasks. The non-interactive approach aims at
+developing differentially private algorithms that can output a synopsis of the
+input dataset, which can then be used to support various data mining tasks. In
+this paper we study the tradeoff of interactive vs. non-interactive approaches
+and propose a hybrid approach that combines interactive and non-interactive,
+using $k$-means clustering as an example. In the hybrid approach to
+differentially private $k$-means clustering, one first uses a non-interactive
+mechanism to publish a synopsis of the input dataset, then applies the standard
+$k$-means clustering algorithm to learn $k$ cluster centroids, and finally uses
+an interactive approach to further improve these cluster centroids. We analyze
+the error behavior of both non-interactive and interactive approaches and use
+such analysis to decide how to allocate privacy budget between the
+non-interactive step and the interactive step. Results from extensive
+experiments support our analysis and demonstrate the effectiveness of our
+approach.

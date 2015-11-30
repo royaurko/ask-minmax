@@ -1,0 +1,17 @@
+Depth image based rendering techniques for multiview applications have been
+recently introduced for efficient view generation at arbitrary camera
+positions. Encoding rate control has thus to consider both texture and depth
+data. Due to different structures of depth and texture images and their
+different roles on the rendered views, distributing the available bit budget
+between them however requires a careful analysis. Information loss due to
+texture coding affects the value of pixels in synthesized views while errors in
+depth information lead to shift in objects or unexpected patterns at their
+boundaries. In this paper, we address the problem of efficient bit allocation
+between textures and depth data of multiview video sequences. We adopt a
+rate-distortion framework based on a simplified model of depth and texture
+images. Our model preserves the main features of depth and texture images.
+Unlike most recent solutions, our method permits to avoid rendering at encoding
+time for distortion estimation so that the encoding complexity is not
+augmented. In addition to this, our model is independent of the underlying
+inpainting method that is used at decoder. Experiments confirm our theoretical
+results and the efficiency of our rate allocation strategy.

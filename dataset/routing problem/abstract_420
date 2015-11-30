@@ -1,0 +1,17 @@
+Planar graph navigation is an important problem with significant implications
+to both point location in geometric data structures and routing in networks.
+However, whilst a number of algorithms and existence proofs have been proposed,
+very little analysis is available for the properties of the paths generated and
+the computational resources required to generate them under a random
+distribution hypothesis for the input. In this paper we analyse a new
+deterministic planar navigation algorithm with constant competitiveness which
+follows vertex adjacencies in the Delaunay triangulation. We call this strategy
+cone walk. We prove that given $n$ uniform points in a smooth convex domain of
+unit area, and for any start point $z$ and query point $q$; cone walk applied
+to $z$ and $q$ will access at most $O(|zq|\sqrt{n} +\log^7 n)$ sites with
+complexity $O(|zq|\sqrt{n} \log \log n + \log^7 n)$ with probability tending to
+1 as $n$ goes to infinity. We additionally show that in this model, cone walk
+is $(\log ^{3+\xi} n)$-memoryless with high probability for any pair of start
+and query point in the domain, for any positive $\xi$. We take special care
+throughout to ensure our bounds are valid even when the query points are
+arbitrarily close to the border.

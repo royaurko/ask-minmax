@@ -1,0 +1,13 @@
+We study the \LowerBoundedCenter (\lbc) problem, which is a clustering
+problem that can be viewed as a variant of the \kCenter problem. In the \lbc
+problem, we are given a set of points P in a metric space and a lower bound
+\lambda, and the goal is to select a set C \subseteq P of centers and an
+assignment that maps each point in P to a center of C such that each center of
+C is assigned at least \lambda points. The price of an assignment is the
+maximum distance between a point and the center it is assigned to, and the goal
+is to find a set of centers and an assignment of minimum price. We give a
+constant factor approximation algorithm for the \lbc problem that runs in O(n
+\log n) time when the input points lie in the d-dimensional Euclidean space
+R^d, where d is a constant. We also prove that this problem cannot be
+approximated within a factor of 1.8-\epsilon unless P = \NP even if the input
+points are points in the Euclidean plane R^2.

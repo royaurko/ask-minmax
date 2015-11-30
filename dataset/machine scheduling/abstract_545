@@ -1,0 +1,14 @@
+We show that, for all reasonable functions $T(n)=o(n\log n)$, we can
+algorithmically verify whether a given one-tape Turing machine runs in time at
+most $T(n)$. This is a tight bound on the order of growth for the function $T$
+because we prove that, for $T(n)\geq(n+1)$ and $T(n)=\Omega(n\log n)$, there
+exists no algorithm that would verify whether a given one-tape Turing machine
+runs in time at most $T(n)$.
+  We give results also for the case of multi-tape Turing machines. We show that
+we can verify whether a given multi-tape Turing machine runs in time at most
+$T(n)$ iff $T(n_0)< (n_0+1)$ for some $n_0\in\mathbb{N}$.
+  We prove a very general undecidability result stating that, for any class of
+functions $\mathcal{F}$ that contains arbitrary large constants, we cannot
+verify whether a given Turing machine runs in time $T(n)$ for some
+$T\in\mathcal{F}$. In particular, we cannot verify whether a Turing machine
+runs in constant, polynomial or exponential time.

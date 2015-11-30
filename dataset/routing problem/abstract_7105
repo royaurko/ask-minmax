@@ -1,0 +1,8 @@
+We consider the problem of computing approximate solution of Poisson equation
+in the low-parametric tensor formats. We propose a new algorithm to compute the
+solution based on the cross approximation algorithm in the frequency space, and
+it has better complexity with respect to ranks in comparison with standard
+algorithms, which are based on the exponential sums approximation. To
+illustrate the effectiveness of our solver, we incorporate into a Uzawa solver
+for the Stokes problem on semi-staggered grid as a subsolver. The resulting
+solver outperforms the standard method for $n \geq 256$.

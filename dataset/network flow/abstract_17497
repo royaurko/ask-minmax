@@ -1,0 +1,24 @@
+We consider energy-efficient scheduling on multiprocessors, where the speed
+of each processor can be individually scaled, and a processor consumes power
+$s^{\alpha}$ when running at speed $s$, for $\alpha>1$. A scheduling algorithm
+needs to decide at any time both processor allocations and processor speeds for
+a set of parallel jobs with time-varying parallelism. The objective is to
+minimize the sum of the total energy consumption and certain performance
+metric, which in this paper includes total flow time and makespan. For both
+objectives, we present instantaneous parallelism clairvoyant (IP-clairvoyant)
+algorithms that are aware of the instantaneous parallelism of the jobs at any
+time but not their future characteristics, such as remaining parallelism and
+work. For total flow time plus energy, we present an $O(1)$-competitive
+algorithm, which significantly improves upon the best known non-clairvoyant
+algorithm and is the first constant competitive result on multiprocessor speed
+scaling for parallel jobs. In the case of makespan plus energy, which is
+considered for the first time in the literature, we present an
+$O(\ln^{1-1/\alpha}P)$-competitive algorithm, where $P$ is the total number of
+processors. We show that this algorithm is asymptotically optimal by providing
+a matching lower bound. In addition, we also study non-clairvoyant scheduling
+for total flow time plus energy, and present an algorithm that achieves $O(\ln
+P)$-competitive for jobs with arbitrary release time and
+$O(\ln^{1/\alpha}P)$-competitive for jobs with identical release time. Finally,
+we prove an $\Omega(\ln^{1/\alpha}P)$ lower bound on the competitive ratio of
+any non-clairvoyant algorithm, matching the upper bound of our algorithm for
+jobs with identical release time.

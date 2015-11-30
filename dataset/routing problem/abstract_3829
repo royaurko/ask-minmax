@@ -1,0 +1,20 @@
+In this work we study approximation algorithms for the \textit{Bounded Color
+Matching} problem (a.k.a. Restricted Matching problem) which is defined as
+follows: given a graph in which each edge $e$ has a color $c_e$ and a profit
+$p_e \in \mathbb{Q}^+$, we want to compute a maximum (cardinality or profit)
+matching in which no more than $w_j \in \mathbb{Z}^+$ edges of color $c_j$ are
+present. This kind of problems, beside the theoretical interest on its own
+right, emerges in multi-fiber optical networking systems, where we interpret
+each unique wavelength that can travel through the fiber as a color class and
+we would like to establish communication between pairs of systems. We study
+approximation and bi-criteria algorithms for this problem which are based on
+linear programming techniques and, in particular, on polyhedral
+characterizations of the natural linear formulation of the problem. In our
+setting, we allow violations of the bounds $w_j$ and we model our problem as a
+bi-criteria problem: we have two objectives to optimize namely (a) to maximize
+the profit (maximum matching) while (b) minimizing the violation of the color
+bounds. We prove how we can "beat" the integrality gap of the natural linear
+programming formulation of the problem by allowing only a slight violation of
+the color bounds. In particular, our main result is \textit{constant}
+approximation bounds for both criteria of the corresponding bi-criteria
+optimization problem.

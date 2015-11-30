@@ -1,0 +1,21 @@
+As the Internet becomes more virtualized and software-defined, new
+functionality is introduced in the network core: the distributed resources
+available in ISP central offices, universal nodes, or datacenter middleboxes
+can be used to process (e.g., filter, aggregate or duplicate) data. Based on
+this new networking paradigm, we formulate the Constrained Virtual Steiner
+Arborescence Problem (CVSAP) which asks for optimal locations to perform
+In-network processing, in order to jointly minimize processing costs and
+network traffic while respecting link and node capacities.
+  We prove that CVSAP cannot be approximated (unless P = NP), and accordingly,
+develop the exact algorithm VirtuCast to compute (near) optimal solutions.
+VirtuCast consists of: (1) a compact single-commodity flow Integer Programming
+(IP) formulation; (2) a flow decomposition algorithm to reconstruct individual
+routes from the IP solution. The compactness of the IP formulation allows for
+computing lower bounds even on large instances quickly, speeding up the
+algorithm. We rigorously prove VirtuCast's correctness.
+  To complement our theoretical findings, we have implemented VirtuCast and
+present an extensive computational evaluation, showing that using VirtuCast
+realistically sized instances can be solved (close to) optimality. We show that
+VirtuCast significantly improves upon naive multi-commodity formulations and
+also initiate the study of primal heuristics to generate feasible solutions
+during the branch-and-bound process.

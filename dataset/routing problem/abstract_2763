@@ -1,0 +1,20 @@
+The vulnerability of the Internet has been demonstrated by prominent IP
+prefix hijacking events. Major outages such as the China Telecom incident in
+2010 stimulate speculations about malicious intentions behind such anomalies.
+Surprisingly, almost all discussions in the current literature assume that
+hijacking incidents are enabled by the lack of security mechanisms in the
+inter-domain routing protocol BGP. In this paper, we discuss an attacker model
+that accounts for the hijacking of network ownership information stored in
+Regional Internet Registry (RIR) databases. We show that such threats emerge
+from abandoned Internet resources (e.g., IP address blocks, AS numbers). When
+DNS names expire, attackers gain the opportunity to take resource ownership by
+re-registering domain names that are referenced by corresponding RIR database
+objects. We argue that this kind of attack is more attractive than conventional
+hijacking, since the attacker can act in full anonymity on behalf of a victim.
+Despite corresponding incidents have been observed in the past, current
+detection techniques are not qualified to deal with these attacks. We show that
+they are feasible with very little effort, and analyze the risk potential of
+abandoned Internet resources for the European service region: our findings
+reveal that currently 73 /24 IP prefixes and 7 ASes are vulnerable to be
+stealthily abused. We discuss countermeasures and outline research directions
+towards preventive solutions.

@@ -1,0 +1,16 @@
+rdering of regression or classification coefficients occurs in many
+real-world applications. Fused Lasso exploits this ordering by explicitly
+regularizing the differences between neighboring coefficients through an
+$\ell_1$ norm regularizer. However, due to nonseparability and nonsmoothness of
+the regularization term, solving the fused Lasso problem is computationally
+demanding. Existing solvers can only deal with problems of small or medium
+size, or a special case of the fused Lasso problem in which the predictor
+matrix is identity matrix. In this paper, we propose an iterative algorithm
+based on split Bregman method to solve a class of large-scale fused Lasso
+problems, including a generalized fused Lasso and a fused Lasso support vector
+classifier. We derive our algorithm using augmented Lagrangian method and prove
+its convergence properties. The performance of our method is tested on both
+artificial data and real-world applications including proteomic data from mass
+spectrometry and genomic data from array CGH. We demonstrate that our method is
+many times faster than the existing solvers, and show that it is especially
+efficient for large p, small n problems.

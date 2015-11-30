@@ -1,0 +1,16 @@
+Much current research in AI and games is being devoted to Monte Carlo search
+(MCS) algorithms. While the quest for a single unified MCS algorithm that would
+perform well on all problems is of major interest for AI, practitioners often
+know in advance the problem they want to solve, and spend plenty of time
+exploiting this knowledge to customize their MCS algorithm in a problem-driven
+way. We propose an MCS algorithm discovery scheme to perform this in an
+automatic and reproducible way. We first introduce a grammar over MCS
+algorithms that enables inducing a rich space of candidate algorithms.
+Afterwards, we search in this space for the algorithm that performs best on
+average for a given distribution of training problems. We rely on multi-armed
+bandits to approximately solve this optimization problem. The experiments,
+generated on three different domains, show that our approach enables
+discovering algorithms that outperform several well-known MCS algorithms such
+as Upper Confidence bounds applied to Trees and Nested Monte Carlo search. We
+also show that the discovered algorithms are generally quite robust with
+respect to changes in the distribution over the training problems.

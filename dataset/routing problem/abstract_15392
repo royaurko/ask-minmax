@@ -1,0 +1,17 @@
+We study frequency linear-time temporal logic (fLTL) which extends the
+linear-time temporal logic (LTL) with a path operator $G^p$ expressing that on
+a path, certain formula holds with at least a given frequency p, thus relaxing
+the semantics of the usual G operator of LTL. Such logic is particularly useful
+in probabilistic systems, where some undesirable events such as random failures
+may occur and are acceptable if they are rare enough.
+  Frequency-related extensions of LTL have been previously studied by several
+contributors, where mostly the logic is equipped with an extended "until" and
+"globally" operator, leading to undecidability of most interesting problems.
+  For the variant we study, we are able to establish fundamental decidability
+results. We show that for Markov chains, the problem of computing the
+probability with which a given fLTL formula holds has the same complexity as
+the analogous problem for LTL. We also show that for Markov decision processes
+the problem becomes more delicate, but when restricting the frequency bound $p$
+to be 1 and negations not to be outside any $G^p$ operator, we can compute the
+maximum probability of satisfying the fLTL formula. This can be again performed
+with the same time complexity as for the ordinary LTL formulas.

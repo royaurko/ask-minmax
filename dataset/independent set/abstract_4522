@@ -1,0 +1,27 @@
+If a game has a Nash equilibrium with probability values that are either zero
+or Omega(1) then this equilibrium can be found exhaustively in polynomial time.
+Somewhat surprisingly, we show that there is a PTAS for the games whose
+equilibria are guaranteed to have small-O(1/n)-values, and therefore
+large-Omega(n)-supports. We also point out that there is a PTAS for games with
+sparse payoff matrices, which are known to be PPAD-complete to solve exactly.
+Both algorithms are of a special kind that we call oblivious: The algorithm
+just samples a fixed distribution on pairs of mixed strategies, and the game is
+only used to determine whether the sampled strategies comprise an eps-Nash
+equilibrium; the answer is yes with inverse polynomial probability. These
+results bring about the question: Is there an oblivious PTAS for Nash
+equilibrium in general games? We answer this question in the negative; our
+lower bound comes close to the quasi-polynomial upper bound of [Lipton,
+Markakis, Mehta 2003].
+  Another recent PTAS for anonymous games is also oblivious in a weaker sense
+appropriate for this class of games (it samples from a fixed distribution on
+unordered collections of mixed strategies), but its runtime is exponential in
+1/eps. We prove that any oblivious PTAS for anonymous games with two strategies
+and three player types must have 1/eps^c in the exponent of the running time
+for some c>1/3, rendering the algorithm in [Daskalakis 2008] essentially
+optimal within oblivious algorithms. In contrast, we devise a poly(n)
+(1/eps)^O(log^2(1/eps)) non-oblivious PTAS for anonymous games with 2
+strategies and any bounded number of player types.
+  Our algorithm is based on the construction of a sparse (and efficiently
+computable) eps-cover of the set of all possible sums of n independent
+indicators, under the total variation distance. The size of the cover is
+poly(n) (1/ eps^{O(log^2 (1/eps))}.

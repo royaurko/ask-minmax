@@ -1,0 +1,14 @@
+Matrix rank minimization (RM) problems recently gained extensive attention
+due to numerous applications in machine learning, system identification and
+graphical models. In RM problem, one aims to find the matrix with the lowest
+rank that satisfies a set of linear constraints. The existing algorithms
+include nuclear norm minimization (NNM) and singular value thresholding. Thus
+far, most of the attention has been on i.i.d. Gaussian measurement operators.
+In this work, we introduce a new class of measurement operators, and a novel
+recovery algorithm, which is notably faster than NNM. The proposed operators
+are based on what we refer to as subspace expanders, which are inspired by the
+well known expander graphs based measurement matrices in compressed sensing. We
+show that given an $n\times n$ PSD matrix of rank $r$, it can be uniquely
+recovered from a minimal sampling of $O(nr)$ measurements using the proposed
+structures, and the recovery algorithm can be cast as matrix inversion after a
+few initial processing steps.

@@ -1,0 +1,18 @@
+Many systems in nature, society and technology can be described as networks,
+where the vertices are the system's elements and edges between vertices
+indicate the interactions between the corresponding elements. Edges may be
+weighted if the interaction strength is measurable. However, the full network
+information is often redundant because tools and techniques from network
+analysis do not work or become very inefficient if the network is too dense and
+some weights may just reflect measurement errors, and shall be discarded.
+Moreover, since weight distributions in many complex weighted networks are
+broad, most of the weight is concentrated among a small fraction of all edges.
+It is then crucial to properly detect relevant edges. Simple thresholding would
+leave only the largest weights, disrupting the multiscale structure of the
+system, which is at the basis of the structure of complex networks, and ought
+to be kept. In this paper we propose a weight filtering technique based on a
+global null model (GloSS filter), keeping both the weight distribution and the
+full topological structure of the network. The method correctly quantifies the
+statistical significance of weights assigned independently to the edges from a
+given distribution. Applications to real networks reveal that the GloSS filter
+is indeed able to identify relevantconnections between vertices.

@@ -1,0 +1,24 @@
+The rapid developing area of compressed sensing suggests that a sparse vector
+lying in an arbitrary high dimensional space can be accurately recovered from
+only a small set of non-adaptive linear measurements. Under appropriate
+conditions on the measurement matrix, the entire information about the original
+sparse vector is captured in the measurements, and can be recovered using
+efficient polynomial methods. The vector model has been extended to a finite
+set of sparse vectors sharing a common non-zero location set. In this paper, we
+treat a broader framework in which the goal is to recover a possibly infinite
+set of jointly sparse vectors. Extending existing recovery methods to this
+model is difficult due to the infinite structure of the sparse vector set.
+Instead, we prove that the entire infinite set of sparse vectors can recovered
+by solving a single, reduced-size finite-dimensional problem, corresponding to
+recovery of a finite set of sparse vectors. We then show that the problem can
+be further reduced to the basic recovery of a single sparse vector by randomly
+combining the measurement vectors. Our approach results in exact recovery of
+both countable and uncountable sets as it does not rely on discretization or
+heuristic techniques. To efficiently recover the single sparse vector produced
+by the last reduction step, we suggest an empirical boosting strategy that
+improves the recovery ability of any given sub-optimal method for recovering a
+sparse vector. Numerical experiments on random data demonstrate that when
+applied to infinite sets our strategy outperforms discretization techniques in
+terms of both run time and empirical recovery rate. In the finite model, our
+boosting algorithm is characterized by fast run time and superior recovery rate
+than known popular methods.

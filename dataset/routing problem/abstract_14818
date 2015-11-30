@@ -1,0 +1,20 @@
+We consider the problem of intruder deduction in security protocol analysis:
+that is, deciding whether a given message $M$ can be deduced from a set of
+messages $\Gamma$ under the theory of blind signatures and arbitrary convergent
+equational theories modulo associativity and commutativity (AC) of certain
+binary operators. The traditional formulations of intruder deduction are
+usually given in natural-deduction-like systems and proving decidability
+requires significant effort in showing that the rules are "local" in some
+sense. By using the well-known translation between natural deduction and
+sequent calculus, we recast the intruder deduction problem as proof search in
+sequent calculus, in which locality is immediate. Using standard proof
+theoretic methods, such as permutability of rules and cut elimination, we show
+that the intruder deduction problem can be reduced, in polynomial time, to the
+elementary deduction problems, which amounts to solving certain equations in
+the underlying individual equational theories. We further show that this result
+extends to combinations of disjoint AC-convergent theories whereby the
+decidability of intruder deduction under the combined theory reduces to the
+decidability of elementary deduction in each constituent theory. Although
+various researchers have reported similar results for individual cases, our
+work shows that these results can be obtained using a systematic and uniform
+methodology based on the sequent calculus.

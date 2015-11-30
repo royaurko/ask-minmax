@@ -1,0 +1,19 @@
+In this paper, we introduced a novel approach to computing the fewest-turn
+map directions or routes based on the concept of natural roads. Natural roads
+are joined road segments that perceptually constitute good continuity. This
+approach relies on the connectivity of natural roads rather than that of road
+segments for computing routes or map directions. Because of this, the derived
+routes posses the fewest turns. However, what we intend to achieve are the
+routes that not only possess the fewest turns, but are also as short as
+possible. This kind of map direction is more effective and favorable by people,
+because they bear less cognitive burden. Furthermore, the computation of the
+routes is more efficient, since it is based on the graph encoding the
+connectivity of roads, which is significantly smaller than the graph of road
+segments. We made experiments applied to eight urban street networks from North
+America and Europe in order to illustrate the above stated advantages. The
+experimental results indicate that the fewest-turn routes posses fewer turns
+and shorter distances than the simplest paths and the routes provided by Google
+Maps. For example, the fewest-turn-and-shortest routes are on average 15%
+shorter than the routes suggested by Google Maps, while the number of turns is
+just half as much. This approach is a key technology behind FromToMap.org - a
+web mapping service using openstreetmap data.

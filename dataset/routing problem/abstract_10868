@@ -1,0 +1,26 @@
+We resolve an open problem posed by Joswig et al. by providing an
+$\tilde{O}(N)$ time, $O(\log^2(N))$-factor approximation algorithm for the
+min-Morse unmatched problem (MMUP) Let $\Lambda$ be the no. of critical cells
+of the optimal discrete Morse function and $N$ be the total no. of cells of a
+regular cell complex K. The goal of MMUP is to find $\Lambda$ for a given
+complex K. To begin with, we apply an approx. preserving graph reduction on
+MMUP to obtain a new problem namely the min-partial order problem (min-POP)(a
+strict generalization of the min-feedback arc set problem). The reduction
+involves introduction of rigid edges which are edges that demand strict
+inclusion in output solution. To solve min-POP, we use the Leighton- Rao
+divide-&-conquer paradigm that provides solutions to SDP-formulated instances
+of min-directed balanced cut with rigid edges (min-DBCRE). Our first algorithm
+for min-DBCRE extends Agarwal et al.'s rounding procedure for digraph
+formulation of ARV-algorithm to handle rigid edges. Our second algorithm to
+solve min-DBCRE SDP, adapts Arora et al.'s primal dual MWUM. In terms of
+applications, under the mild assumption1 of the size of topological features
+being significantly smaller compared to the size of the complex, we obtain an
+(a) $\tilde{O}(N)$ algorithm for computing homology groups $H_i(K,A)$ of a
+simplicial complex K, (where A is an arbitrary Abelian group.) (b) an
+$\tilde{O}(N^2)$ algorithm for computing persistent homology and (c) an
+$\tilde{O}(N)$ algorithm for computing the optimal discrete Morse-Witten
+function compatible with input scalar function as simple consequences of our
+approximation algorithm for MMUP thereby giving us the best known complexity
+bounds for each of these applications under the aforementioned assumption. Such
+an assumption is realistic in applied settings, and often a characteristic of
+modern massive datasets.

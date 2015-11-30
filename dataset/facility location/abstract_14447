@@ -1,0 +1,17 @@
+An FPGA-based digital-receiver has been developed for a low-frequency imaging
+radio interferometer, the Murchison Widefield Array (MWA). The MWA, located at
+the Murchison Radio-astronomy Observatory (MRO) in Western Australia, consists
+of 128 dual-polarized aperture-array elements (tiles) operating between 80 and
+300\,MHz, with a total processed bandwidth of 30.72 MHz for each polarization.
+Radio-frequency signals from the tiles are amplified and band limited using
+analog signal conditioning units; sampled and channelized by digital-receivers.
+The signals from eight tiles are processed by a single digital-receiver, thus
+requiring 16 digital-receivers for the MWA. The main function of the
+digital-receivers is to digitize the broad-band signals from each tile,
+channelize them to form the sky-band, and transport it through optical fibers
+to a centrally located correlator for further processing. The digital-receiver
+firmware also implements functions to measure the signal power, perform power
+equalization across the band, detect interference-like events, and invoke
+diagnostic modes. The digital-receiver is controlled by high-level programs
+running on a single-board-computer. This paper presents the digital-receiver
+design, implementation, current status, and plans for future enhancements.

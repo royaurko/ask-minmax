@@ -1,0 +1,17 @@
+This paper introduces an algorithm for the nonnegative matrix
+factorization-and-completion problem, which aims to find nonnegative low-rank
+matrices X and Y so that the product XY approximates a nonnegative data matrix
+M whose elements are partially known (to a certain accuracy). This problem
+aggregates two existing problems: (i) nonnegative matrix factorization where
+all entries of M are given, and (ii) low-rank matrix completion where
+nonnegativity is not required. By taking the advantages of both nonnegativity
+and low-rankness, one can generally obtain superior results than those of just
+using one of the two properties. We propose to solve the non-convex constrained
+least-squares problem using an algorithm based on the classic alternating
+direction augmented Lagrangian method. Preliminary convergence properties of
+the algorithm and numerical simulation results are presented. Compared to a
+recent algorithm for nonnegative matrix factorization, the proposed algorithm
+produces factorizations of similar quality using only about half of the matrix
+entries. On tasks of recovering incomplete grayscale and hyperspectral images,
+the proposed algorithm yields overall better qualities than those produced by
+two recent matrix-completion algorithms that do not exploit nonnegativity.

@@ -1,0 +1,17 @@
+In the Multislope Ski Rental problem, the user needs a certain resource for
+some unknown period of time. To use the resource, the user must subscribe to
+one of several options, each of which consists of a one-time setup cost
+(``buying price''), and cost proportional to the duration of the usage
+(``rental rate''). The larger the price, the smaller the rent. The actual usage
+time is determined by an adversary, and the goal of an algorithm is to minimize
+the cost by choosing the best option at any point in time. Multislope Ski
+Rental is a natural generalization of the classical Ski Rental problem (where
+the only options are pure rent and pure buy), which is one of the fundamental
+problems of online computation. The Multislope Ski Rental problem is an
+abstraction of many problems where online decisions cannot be modeled by just
+two options, e.g., power management in systems which can be shut down in parts.
+In this paper we study randomized algorithms for Multislope Ski Rental. Our
+results include the best possible online randomized strategy for any additive
+instance, where the cost of switching from one option to another is the
+difference in their buying prices; and an algorithm that produces an
+$e$-competitive randomized strategy for any (non-additive) instance.

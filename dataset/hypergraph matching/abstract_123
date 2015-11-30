@@ -1,0 +1,15 @@
+Cartesian products of graphs and hypergraphs have been studied since the
+1960s. For (un)directed hypergraphs, unique \emph{prime factor decomposition
+(PFD)} results with respect to the Cartesian product are known. However, there
+is still a lack of algorithms, that compute the PFD of directed hypergraphs
+with respect to the Cartesian product.
+  In this contribution, we focus on the algorithmic aspects for determining the
+Cartesian prime factors of a finite, connected, directed hypergraph and present
+a first polynomial time algorithm to compute its PFD. In particular, the
+algorithm has time complexity $O(|E||V|r^2)$ for hypergraphs $H=(V,E)$, where
+the rank $r$ is the maximum number of vertices contained in an hyperedge of
+$H$. If $r$ is bounded, then this algorithm performs even in
+$O(|E|\log^2(|V|))$ time. Thus, our method additionally improves also the time
+complexity of PFD-algorithms designed for undirected hypergraphs that have time
+complexity $O(|E||V|r^6\Delta^6)$, where $\Delta$ is the maximum number of
+hyperedges a vertex is contained in.

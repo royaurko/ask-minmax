@@ -1,0 +1,19 @@
+A few years ago we identified a recursion that works directly with the gaps
+among the generators in each stage of Eratosthenes sieve. This recursion
+provides explicit enumerations of sequences of gaps among the generators, which
+are known as constellations.
+  As the recursion proceeds, adjacent gaps within longer constellations are
+added together to produce shorter constellations of the same sum. These
+additions or closures correspond to removing composite numbers that are
+divisible by the prime for that stage of Eratosthenes sieve. Although we don't
+know where in the cycle of gaps a closure will occur, we can enumerate exactly
+how many copies of various constellations will survive each stage.
+  In this paper, we study these systems of constellations of a fixed sum.
+Viewing them as discrete dynamic systems, we are able to characterize the
+populations of constellations for sums including the first few primorial
+numbers: 2, 6, 30.
+  Since the eigenvectors of the discrete dynamic system are independent of the
+prime -- that is, independent of the stage of the sieve -- we can characterize
+the asymptotic behavior exactly. In this way we can give exact ratios of the
+occurrences of the gap 2 to the occurrences of other small gaps for all stages
+of Eratosthenes sieve.

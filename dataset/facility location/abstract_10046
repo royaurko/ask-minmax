@@ -1,0 +1,11 @@
+We propose a novel algorithm for automata-based LTL model checking that
+interleaves the construction of the generalized B\"{u}chi automaton for the
+negation of the formula and the emptiness check. Our algorithm first converts
+the LTL formula into a linear weak alternating automaton; configurations of the
+alternating automaton correspond to the locations of a generalized B\"{u}chi
+automaton, and a variant of Tarjan's algorithm is used to decide the existence
+of an accepting run of the product of the transition system and the automaton.
+Because we avoid an explicit construction of the B\"{u}chi automaton, our
+approach can yield significant improvements in runtime and memory, for large
+LTL formulas. The algorithm has been implemented within the SPIN model checker,
+and we present experimental results for some benchmark examples.

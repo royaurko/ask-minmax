@@ -1,0 +1,22 @@
+With the increasing prevalence of location-aware devices, trajectory data has
+been generated and collected in various application domains. Trajectory data
+carries rich information that is useful for many data analysis tasks. Yet,
+improper publishing and use of trajectory data could jeopardize individual
+privacy. However, it has been shown that existing privacy-preserving trajectory
+data publishing methods derived from partition-based privacy models, for
+example k-anonymity, are unable to provide sufficient privacy protection.
+  In this paper, motivated by the data publishing scenario at the Societe de
+transport de Montreal (STM), the public transit agency in Montreal area, we
+study the problem of publishing trajectory data under the rigorous differential
+privacy model. We propose an efficient data-dependent yet differentially
+private sanitization algorithm, which is applicable to different types of
+trajectory data. The efficiency of our approach comes from adaptively narrowing
+down the output domain by building a noisy prefix tree based on the underlying
+data. Moreover, as a post-processing step, we make use of the inherent
+constraints of a prefix tree to conduct constrained inferences, which lead to
+better utility. This is the first paper to introduce a practical solution for
+publishing large volume of trajectory data under differential privacy. We
+examine the utility of sanitized data in terms of count queries and frequent
+sequential pattern mining. Extensive experiments on real-life trajectory data
+from the STM demonstrate that our approach maintains high utility and is
+scalable to large trajectory datasets.

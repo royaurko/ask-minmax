@@ -1,0 +1,16 @@
+We consider the construction of locally conservative fluxes by means of a
+simple post-processing technique obtained from the finite element solutions of
+advection diffusion equations. It is known that a naive calculation of fluxes
+from these solutions yields non-conservative fluxes. We consider two finite
+element methods: the usual continuous Galerkin finite element (CGFEM) for
+solving non dominating advection diffusion equations and the streamline
+upwind/Petrov-Galerkin (SUPG) for solving advection dominated problems. We then
+describe the post-processing technique for constructing conservative fluxes
+from the numerical solutions of the general variational formulation. The
+post-processing technique requires solving an auxiliary Neumann boundary value
+problem on each element independently and it produces a locally conservative
+flux on a vertex centered dual mesh relative to the finite element mesh. We
+provide a convergence analysis for the post-processing technique. Performance
+of the technique and the convergence behavior are demonstrated through
+numerical examples including a set of test problems for advection diffusion
+equations, advection dominated equations, and drift-diffusion equations.

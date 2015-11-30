@@ -1,0 +1,14 @@
+We consider the problem of PAC-learning decision trees, i.e., learning a
+decision tree over the n-dimensional hypercube from independent random labeled
+examples. Despite significant effort, no polynomial-time algorithm is known for
+learning polynomial-sized decision trees (even trees of any super-constant
+size), even when examples are assumed to be drawn from the uniform distribution
+on {0,1}^n. We give an algorithm that learns arbitrary polynomial-sized
+decision trees for {\em most product distributions}. In particular, consider a
+random product distribution where the bias of each bit is chosen independently
+and uniformly from, say, [.49,.51]. Then with high probability over the
+parameters of the product distribution and the random examples drawn from it,
+the algorithm will learn any tree. More generally, in the spirit of smoothed
+analysis, we consider an arbitrary product distribution whose parameters are
+specified only up to a [-c,c] accuracy (perturbation), for an arbitrarily small
+positive constant c.

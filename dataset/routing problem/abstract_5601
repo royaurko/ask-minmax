@@ -1,0 +1,19 @@
+We consider the problem of finding high dimensional approximate nearest
+neighbors. Suppose there are d independent rare features, each having its own
+independent statistics. A point x will have x_{i}=0 denote the absence of
+feature i, and x_{i}=1 its existence. Sparsity means that usually x_{i}=0.
+Distance between points is a variant of the Hamming distance. Dimensional
+reduction converts the sparse heterogeneous problem into a lower dimensional
+full homogeneous problem. However we will see that the converted problem can be
+much harder to solve than the original problem. Instead we suggest a direct
+approach. It consists of T tries. In try t we rearrange the coordinates in
+decreasing order of (1-r_{t,i})\frac{p_{i,11}}{p_{i,01}+p_{i,10}}
+\ln\frac{1}{p_{i,1*}} where 0<r_{t,i}<1 are uniform pseudo-random numbers, and
+the p's are the coordinate's statistical parameters. The points are
+lexicographically ordered, and each is compared to its neighbors in that order.
+  We analyze a generalization of this algorithm, show that it is optimal in
+some class of algorithms, and estimate the necessary number of tries to
+success. It is governed by an information like function, which we call
+bucketing forest information. Any doubts whether it is "information" are
+dispelled by another paper, where unrestricted bucketing information is
+defined.

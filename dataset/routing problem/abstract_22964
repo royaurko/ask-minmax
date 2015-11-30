@@ -1,0 +1,14 @@
+We discuss stability for a class of learning algorithms with respect to noisy
+labels. The algorithms we consider are for regression, and they involve the
+minimization of regularized risk functionals, such as L(f) := 1/N sum_i
+(f(x_i)-y_i)^2+ lambda ||f||_H^2. We shall call the algorithm `stable' if, when
+y_i is a noisy version of f*(x_i) for some function f* in H, the output of the
+algorithm converges to f* as the regularization term and noise simultaneously
+vanish. We consider two flavors of this problem, one where a data set of N
+points remains fixed, and the other where N -> infinity. For the case where N
+-> infinity, we give conditions for convergence to f_E (the function which is
+the expectation of y(x) for each x), as lambda -> 0. For the fixed N case, we
+describe the limiting 'non-noisy', 'non-regularized' function f*, and give
+conditions for convergence. In the process, we develop a set of tools for
+dealing with functionals such as L(f), which are applicable to many other
+problems in learning theory.

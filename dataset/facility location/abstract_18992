@@ -1,0 +1,24 @@
+This paper addresses the problem of universal synchronization primitives that
+can support scalable thread synchronization for large-scale many-core
+architectures. The universal synchronization primitives that have been deployed
+widely in conventional architectures like CAS and LL/SC are expected to reach
+their scalability limits in the evolution to many-core architectures with
+thousands of cores. We introduce a non-blocking full/empty bit primitive, or
+NB-FEB for short, as a promising synchronization primitive for parallel
+programming on may-core architectures. We show that the NB-FEB primitive is
+universal, scalable, feasible and convenient to use. NB-FEB, together with
+registers, can solve the consensus problem for an arbitrary number of processes
+(universality). NB-FEB is combinable, namely its memory requests to the same
+memory location can be combined into only one memory request, which
+consequently mitigates performance degradation due to synchronization "hot
+spots" (scalability). Since NB-FEB is a variant of the original full/empty bit
+that always returns a value instead of waiting for a conditional flag, it is as
+feasible as the original full/empty bit, which has been implemented in many
+computer systems (feasibility). The original full/empty bit is well-known as a
+special-purpose primitive for fast producer-consumer synchronization and has
+been used extensively in the specific domain of applications. In this paper, we
+show that NB-FEB can be deployed easily as a general-purpose primitive. Using
+NB-FEB, we construct a non-blocking software transactional memory system called
+NBFEB-STM, which can be used to handle concurrent threads conveniently.
+NBFEB-STM is space efficient: the space complexity of each object updated by
+$N$ concurrent threads/transactions is $\Theta(N)$, the optimal.

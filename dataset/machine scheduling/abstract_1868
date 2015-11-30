@@ -1,0 +1,24 @@
+We propose a new theoretical model for passively mobile Wireless Sensor
+Networks. We call it the PALOMA model, standing for PAssively mobile
+LOgarithmic space MAchines. The main modification w.r.t. the Population
+Protocol model is that agents now, instead of being automata, are Turing
+Machines whose memory is logarithmic in the population size n. Note that the
+new model is still easily implementable with current technology. We focus on
+complete communication graphs. We define the complexity class PLM, consisting
+of all symmetric predicates on input assignments that are stably computable by
+the PALOMA model. We assume that the agents are initially identical.
+Surprisingly, it turns out that the PALOMA model can assign unique consecutive
+ids to the agents and inform them of the population size! This allows us to
+give a direct simulation of a Deterministic Turing Machine of O(nlogn) space,
+thus, establishing that any symmetric predicate in SPACE(nlogn) also belongs to
+PLM. We next prove that the PALOMA model can simulate the Community Protocol
+model, thus, improving the previous lower bound to all symmetric predicates in
+NSPACE(nlogn). Going one step further, we generalize the simulation of the
+deterministic TM to prove that the PALOMA model can simulate a Nondeterministic
+TM of O(nlogn) space. Although providing the same lower bound, the important
+remark here is that the bound is now obtained in a direct manner, in the sense
+that it does not depend on the simulation of a TM by a Pointer Machine.
+Finally, by showing that a Nondeterministic TM of O(nlogn) space decides any
+language stably computable by the PALOMA model, we end up with an exact
+characterization for PLM: it is precisely the class of all symmetric predicates
+in NSPACE(nlogn).

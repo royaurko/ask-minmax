@@ -1,0 +1,22 @@
+Analyses of high-throughput genomic data often lead to ranked lists of
+genomic loci. How to characterize concordant signals between two rank lists is
+a common problem with many applications. One example is measuring the
+reproducibility between two replicate experiments. Another is to characterize
+the interaction and co-binding between two transcription factors (TF) based on
+the overlap between their binding sites. As an exploratory tool, the simple
+Venn diagram approach can be used to show the common loci between two lists.
+However, this approach does not account for changes in overlap with decreasing
+ranks, which may contain useful information for studying similarities or
+dissimilarities of the two lists. The recently proposed irreproducible
+discovery rate (IDR) approach compares two rank lists using a copula mixture
+model. This model considers the rank correlation between two lists. However, it
+only analyzes the genomic loci that appear in both lists, thereby only
+measuring signal concordance in the overlapping set of the two lists. When two
+lists have little overlap but loci in their overlapping set have high
+concordance in terms of rank, the original IDR approach may misleadingly claim
+that the two rank lists are highly reproducible when they are indeed not. In
+this article, we propose to address the various issues above by translating the
+problem into a bivariate survival problem. A survival copula mixture model is
+developed to characterize concordant signals in two rank lists. The
+effectiveness of this approach is demonstrated using both simulations and real
+data.

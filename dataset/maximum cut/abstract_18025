@@ -1,0 +1,19 @@
+We introduce an automata-theoretic method for the verification of distributed
+algorithms running on ring networks. In a distributed algorithm, an arbitrary
+number of processes cooperate to achieve a common goal (e.g., elect a leader).
+Processes have unique identifiers (pids) from an infinite, totally ordered
+domain. An algorithm proceeds in synchronous rounds, each round allowing a
+process to perform a bounded sequence of actions such as send or receive a pid,
+store it in some register, and compare register contents wrt. the associated
+total order. An algorithm is supposed to be correct independently of the number
+of processes. To specify correctness properties, we introduce a logic that can
+reason about processes and pids. Referring to leader election, it may say that,
+at the end of an execution, each process stores the maximum pid in some
+dedicated register. Since the verification of distributed algorithms is
+undecidable, we propose an underapproximation technique, which bounds the
+number of rounds. This is an appealing approach, as the number of rounds needed
+by a distributed algorithm to conclude is often exponentially smaller than the
+number of processes. We provide an automata-theoretic solution, reducing model
+checking to emptiness for alternating two-way automata on words. Overall, we
+show that round-bounded verification of distributed algorithms over rings is
+PSPACE-complete.

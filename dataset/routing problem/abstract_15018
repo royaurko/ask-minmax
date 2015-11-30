@@ -1,0 +1,22 @@
+This work considers the problem of locating a single source from noisy range
+measurements to a set of nodes in a wireless sensor network. We propose two new
+techniques that we designate as Source Localization with Nuclear Norm (SLNN)
+and Source Localization with l1-norm (SL-l1), which extend to arbitrary real
+dimensions, including 3D, our prior work on 2D source localization formulated
+in the complex plane. Broadly, our approach is based on formulating a
+Maximum-Likelihood (ML) estimation problem for the source position, and then
+using convex relaxation techniques to obtain a semidefinite program (SDP) that
+can be globally and efficiently solved. SLNN directly approximates the Gaussian
+ML solution, and the relaxation is shown to be tighter than in other methods in
+the same class. We present an analysis of the convexity properties of the
+constraint set for the 2D complex version of SLNN (SLCP) to justify the
+observed tightness of the relaxation. In terms of global accuracy of
+localization, SLNN outperforms state-of-the-art optimization-based methods with
+either iterative or closed-form formulations. We propose the SL-l1 algorithm to
+address the Laplacian noise case, which models the presence of outliers in
+range measurements. We overcome the nondifferentiability of the Laplacian
+likelihood function by rewriting the ML problem as an exact weighted version of
+the Gaussian case, and compare two solution strategies. One of them is
+iterative, based on block coordinate descent, and uses SLNN as a subprocessing
+block. The other, attaining only slightly worse performance, is noniterative
+and based on an SDP relaxation of the weighted ML problem.

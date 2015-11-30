@@ -1,0 +1,20 @@
+Random finite sets (RFSs) has been a fruitful area of research in recent
+years, yielding new approximate filters such as the probability hypothesis
+density (PHD), cardinalised PHD (CPHD), and multiple target multi-Bernoulli
+(MeMBer). These new methods have largely been based on approximations that
+side-step the need for measurement-to-track association. Comparably, RFS
+methods that incorporate data association, such as Morelande and Challa's (M-C)
+method, have received little attention. This paper provides a RFS algorithm
+that incorporates data association similarly to the M-C method, but retains
+computational tractability via a recently developed approximation of marginal
+association weights. We describe an efficient method for resolving the track
+coalescence phenomenon which is problematic for joint probabilistic data
+association (JPDA) and related methods (including M-C). The method utilises a
+network flow optimisation, and thus is tractable for large numbers of targets.
+Finally, our derivation also shows that it is natural for the multi-target
+density to incorporate both a Poisson point process (PPP) component
+(representing targets that have never been detected) and a multi-Bernoulli
+component (representing targets under track). We describe a method of
+recycling, in which tracks with a low probability existence are transferred
+from the multi-Bernoulli component to the PPP component, effectively yielding a
+hybrid of M-C and PHD.

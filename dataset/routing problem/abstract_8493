@@ -1,0 +1,26 @@
+For some computational problems (e.g., product configuration, planning,
+diagnosis, query answering, phylogeny reconstruction) computing a set of
+similar/diverse solutions may be desirable for better decision-making. With
+this motivation, we studied several decision/optimization versions of this
+problem in the context of Answer Set Programming (ASP), analyzed their
+computational complexity, and introduced offline/online methods to compute
+similar/diverse solutions of such computational problems with respect to a
+given distance function. All these methods rely on the idea of computing
+solutions to a problem by means of finding the answer sets for an ASP program
+that describes the problem. The offline methods compute all solutions in
+advance using the ASP formulation of the problem with an ASP solver, like
+Clasp, and then identify similar/diverse solutions using clustering methods.
+The online methods compute similar/diverse solutions following one of the three
+approaches: by reformulating the ASP representation of the problem to compute
+similar/diverse solutions at once using an ASP solver; by computing
+similar/diverse solutions iteratively (one after other) using an ASP solver; by
+modifying the search algorithm of an ASP solver to compute similar/diverse
+solutions incrementally. We modified Clasp to implement the last online method
+and called it Clasp-NK. In the first two online methods, the given distance
+function is represented in ASP; in the last one it is implemented in C++. We
+showed the applicability and the effectiveness of these methods on
+reconstruction of similar/diverse phylogenies for Indo-European languages, and
+on several planning problems in Blocks World. We observed that in terms of
+computational efficiency the last online method outperforms the others; also it
+allows us to compute similar/diverse solutions when the distance function
+cannot be represented in ASP.

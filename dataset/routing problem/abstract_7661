@@ -1,0 +1,19 @@
+Path integral (PI) control problems are a restricted class of non-linear
+control problems that can be solved formally as a Feyman-Kac path integral and
+can be estimated using Monte Carlo sampling. In this contribution we review
+path integral control theory in the finite horizon case.
+  We subsequently focus on the problem how to compute and represent control
+solutions. Within the PI theory, the question of how to compute becomes the
+question of importance sampling. Efficient importance samplers are state
+feedback controllers and the use of these requires an efficient representation.
+Learning and representing effective state-feedback controllers for non-linear
+stochastic control problems is a very challenging, and largely unsolved,
+problem. We show how to learn and represent such controllers using ideas from
+the cross entropy method. We derive a gradient descent method that allows to
+learn feed-back controllers using an arbitrary parametrisation. We refer to
+this method as the Path Integral Cross Entropy method or PICE. We illustrate
+this method for some simple examples.
+  The path integral control methods can be used to estimate the posterior
+distribution in latent state models. In neuroscience these problems arise when
+estimating connectivity from neural recording data using EM. We demonstrate the
+path integral control method as an accurate alternative to particle filtering.

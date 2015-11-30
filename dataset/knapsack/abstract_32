@@ -1,0 +1,14 @@
+The Groebner walk is an algorithm for conversion between Groebner bases for
+different term orders. It is based on the polyhedral geometry of the Groebner
+fan and involves tracking a line between cones representing the initial and
+target term order. An important parameter is explicit numerical perturbation of
+this line. This usually involves both time and space demanding arithmetic of
+integers much larger than the input numbers. In this paper we show how the
+explicit line may be replaced by a formal line using Robbiano's
+characterization of group orders on Q^n. This gives rise to the generic
+Groebner walk involving only Groebner basis conversion over facets and
+computations with marked polynomials. The proposed technique is closely related
+to the lexicographic (symbolic) perturbation method used in optimization and
+computational geometry. We report on computations with toric ideals, where a
+version of our algorithm in certain cases computes test sets for hard integer
+knapsack problems significantly faster than the Buchberger algorithm.

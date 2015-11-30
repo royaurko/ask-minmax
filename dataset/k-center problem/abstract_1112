@@ -1,0 +1,14 @@
+We consider situations in Bayesian analysis where we have a family of priors
+$\nu_h$ on the parameter $\theta$, where $h$ varies continuously over a space
+$\mathcal{H}$, and we deal with two related problems. The first involves
+sensitivity analysis and is stated as follows. Suppose we fix a function $f$ of
+$\theta$. How do we efficiently estimate the posterior expectation of
+$f(\theta)$ simultaneously for all $h$ in $\mathcal{H}$? The second problem is
+how do we identify subsets of $\mathcal{H}$ which give rise to reasonable
+choices of $\nu_h$? We assume that we are able to generate Markov chain samples
+from the posterior for a finite number of the priors, and we develop a
+methodology, based on a combination of importance sampling and the use of
+control variates, for dealing with these two problems. The methodology applies
+very generally, and we show how it applies in particular to a commonly used
+model for variable selection in Bayesian linear regression, and give an
+illustration on the US crime data of Vandaele.

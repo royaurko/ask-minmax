@@ -1,0 +1,19 @@
+Despite its reduced complexity, lattice reduction-aided decoding exhibits a
+widening gap to maximum-likelihood (ML) performance as the dimension increases.
+To improve its performance, this paper presents randomized lattice decoding
+based on Klein's sampling technique, which is a randomized version of Babai's
+nearest plane algorithm (i.e., successive interference cancelation (SIC)). To
+find the closest lattice point, Klein's algorithm is used to sample some
+lattice points and the closest among those samples is chosen. Lattice reduction
+increases the probability of finding the closest lattice point, and only needs
+to be run once during pre-processing. Further, the sampling can operate very
+efficiently in parallel. The technical contribution of this paper is two-fold:
+we analyze and optimize the decoding radius of sampling decoding resulting in
+better error performance than Klein's original algorithm, and propose a very
+efficient implementation of random rounding. Of particular interest is that a
+fixed gain in the decoding radius compared to Babai's decoding can be achieved
+at polynomial complexity. The proposed decoder is useful for moderate
+dimensions where sphere decoding becomes computationally intensive, while
+lattice reduction-aided decoding starts to suffer considerable loss. Simulation
+results demonstrate near-ML performance is achieved by a moderate number of
+samples, even if the dimension is as high as 32.

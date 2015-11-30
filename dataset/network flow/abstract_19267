@@ -1,0 +1,24 @@
+Today, the technology for video streaming over the Internet is converging
+towards a paradigm named HTTP-based adaptive streaming (HAS). HAS comes with
+two unique flavors. First, by riding on top of HTTP/TCP, it leverages the
+network-friendly TCP to achieve firewall/NATS traversal and bandwidth sharing.
+Second, by pre-encoding and storing the video in a number of discrete bitrate
+levels, it introduces video bitrate adaptivity in a scalable way that the video
+encoding is excluded from the closed-loop adaptation. A conventional wisdom is
+that the TCP throughput observed by a HAS client indicates the available
+network bandwidth, thus can be used as a reliable reference for the video
+bitrate selection.
+  We argue that this no longer holds true when HAS becomes a substantial
+fraction of the Internet traffic. We show that when multiple HAS clients
+compete at a network bottleneck, the presence of competing clients and the
+discrete nature of the video bitrates would together create confusion for a
+client to correctly perceive its fair-share bandwidth. Through analysis and
+real experiments, we demonstrate that this fundamental limitation would lead
+to, for example, video rate oscillation that negatively impacts the video
+watching experiences. We therefore argue that it is necessary to implement at
+the application layer a "probe-and-adapt" mechanism for HAS video rate
+adaptation, which is akin but orthogonal to the transport-layer network rate
+adaptation achieved by TCP. We present PANDA -- a client-side rate adaptation
+algorithm for HAS -- as an embodiment of this idea. Our testbed results show
+that compared to conventional algorithms, PANDA is able to reduce the
+instability of video rate by 60%, at a given risk of buffer underrun.

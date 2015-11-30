@@ -1,0 +1,27 @@
+Backdoor sets, a notion introduced by Williams et al. in 2003, are certain
+sets of key variables of a CNF formula F that make it easy to solve the
+formula; by assigning truth values to the variables in a backdoor set, the
+formula gets reduced to one or several polynomial-time solvable formulas. More
+specifically, a weak backdoor set of F is a set X of variables such that there
+exits a truth assignment t to X that reduces F to a satisfiable formula F[t]
+that belongs to a polynomial-time decidable base class C. A strong backdoor set
+is a set X of variables such that for all assignments t to X, the reduced
+formula F[t] belongs to C.
+  We study the problem of finding backdoor sets of size at most k with respect
+to the base class of CNF formulas with acyclic incidence graphs, taking k as
+the parameter. We show that
+  1. the detection of weak backdoor sets is W[2]-hard in general but
+fixed-parameter tractable for r-CNF formulas, for any fixed r>=3, and
+  2. the detection of strong backdoor sets is fixed-parameter approximable.
+  Result 1 is the the first positive one for a base class that does not have a
+characterization with obstructions of bounded size. Result 2 is the first
+positive one for a base class for which strong backdoor sets are more powerful
+than deletion backdoor sets.
+  Not only SAT, but also #SAT can be solved in polynomial time for CNF formulas
+with acyclic incidence graphs. Hence Result 2 establishes a new structural
+parameter that makes #SAT fixed-parameter tractable and that is incomparable
+with known parameters such as treewidth and clique-width.
+  We obtain the algorithms by a combination of an algorithmic version of the
+Erd\"os-P\'osa Theorem, Courcelle's model checking for monadic second order
+logic, and new combinatorial results on how disjoint cycles can interact with
+the backdoor set.

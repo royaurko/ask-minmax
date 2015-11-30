@@ -1,0 +1,14 @@
+We introduce a general technique to create an extended formulation of a
+mixed-integer program. We classify the integer variables into blocks, each of
+which generates a finite set of vector values. The extended formulation is
+constructed by creating a new binary variable for each generated value. Initial
+experiments show that the extended formulation can have a more compact complete
+description than the original formulation.
+  We prove that, using this reformulation technique, the facet description
+decomposes into one ``linking polyhedron'' per block and the ``aggregated
+polyhedron''. Each of these polyhedra can be analyzed separately. For the case
+of identical coefficients in a block, we provide a complete description of the
+linking polyhedron and a polynomial-time separation algorithm. Applied to the
+knapsack with a fixed number of distinct coefficients, this theorem provides a
+complete description in an extended space with a polynomial number of
+variables.

@@ -1,0 +1,16 @@
+Boolean satisfiability ({\SAT}) has played a key role in diverse areas
+spanning testing, formal verification, planning, optimization, inferencing and
+the like. Apart from the classical problem of checking boolean satisfiability,
+the problems of generating satisfying uniformly at random, and of counting the
+total number of satisfying assignments have also attracted significant
+theoretical and practical interest over the years. Prior work offered heuristic
+approaches with very weak or no guarantee of performance, and theoretical
+approaches with proven guarantees, but poor performance in practice.
+  We propose a novel approach based on limited-independence hashing that allows
+us to design algorithms for both problems, with strong theoretical guarantees
+and scalability extending to thousands of variables. Based on this approach, we
+present two practical algorithms, {\UniformWitness}: a near uniform generator
+and {\approxMC}: the first scalable approximate model counter, along with
+reference implementations. Our algorithms work by issuing polynomial calls to
+{\SAT} solver. We demonstrate scalability of our algorithms over a large set of
+benchmarks arising from different application domains.

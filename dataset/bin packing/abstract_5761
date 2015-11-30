@@ -1,0 +1,24 @@
+Extracting useful information from high-dimensional data is an important
+focus of today's statistical research and practice. Penalized loss function
+minimization has been shown to be effective for this task both theoretically
+and empirically. With the virtues of both regularization and sparsity, the
+$L_1$-penalized squared error minimization method Lasso has been popular in
+regression models and beyond. In this paper, we combine different norms
+including $L_1$ to form an intelligent penalty in order to add side information
+to the fitting of a regression or classification model to obtain reasonable
+estimates. Specifically, we introduce the Composite Absolute Penalties (CAP)
+family, which allows given grouping and hierarchical relationships between the
+predictors to be expressed. CAP penalties are built by defining groups and
+combining the properties of norm penalties at the across-group and within-group
+levels. Grouped selection occurs for nonoverlapping groups. Hierarchical
+variable selection is reached by defining groups with particular overlapping
+patterns. We propose using the BLASSO and cross-validation to compute CAP
+estimates in general. For a subfamily of CAP estimates involving only the $L_1$
+and $L_{\infty}$ norms, we introduce the iCAP algorithm to trace the entire
+regularization path for the grouped selection problem. Within this subfamily,
+unbiased estimates of the degrees of freedom (df) are derived so that the
+regularization parameter is selected without cross-validation. CAP is shown to
+improve on the predictive performance of the LASSO in a series of simulated
+experiments, including cases with $p\gg n$ and possibly mis-specified
+groupings. When the complexity of a model is properly calculated, iCAP is seen
+to be parsimonious in the experiments.

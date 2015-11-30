@@ -1,0 +1,12 @@
+It is time-consuming and error-prone to implement inference procedures for
+each new probabilistic model. Probabilistic programming addresses this problem
+by allowing a user to specify the model and having a compiler automatically
+generate an inference procedure for it. For this approach to be practical, it
+is important to generate inference code that has reasonable performance. In
+this paper, we present a probabilistic programming language and compiler for
+Bayesian networks designed to make effective use of data-parallel architectures
+such as GPUs. Our language is fully integrated within the Scala programming
+language and benefits from tools such as IDE support, type-checking, and code
+completion. We show that the compiler can generate data-parallel inference code
+scalable to thousands of GPU cores by making use of the conditional
+independence relationships in the Bayesian network.

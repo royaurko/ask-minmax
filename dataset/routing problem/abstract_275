@@ -1,0 +1,12 @@
+We consider the problem of managing a dynamic heterogeneous storage system in
+a distributed way so that the amount of data assigned to a host in that system
+is related to its capacity. Two central problems have to be solved for this:
+(1) organizing the hosts in an overlay network with low degree and diameter so
+that one can efficiently check the correct distribution of the data and route
+between any two hosts, and (2) distributing the data among the hosts so that
+the distribution respects the capacities of the hosts and can easily be adapted
+as the set of hosts or their capacities change. We present distributed
+protocols for these problems that are self-stabilizing and that do not need any
+global knowledge about the system such as the number of nodes or the overall
+capacity of the system. Prior to this work no solution was known satisfying
+these properties.

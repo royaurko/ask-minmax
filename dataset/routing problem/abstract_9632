@@ -1,0 +1,10 @@
+The graph isomorphism problem is of practical importance, as well as being a
+theoretical curiosity in computational complexity theory in that it is not
+known whether it is $NP$-complete or $P$. However, for many graphs, the problem
+is tractable, and related to the problem of finding the automorphism group of
+the graph. Perhaps the most well known state-of-the art implementation for
+finding the automorphism group is Nauty. However, Nauty is particularly
+susceptible to poor performance on star configurations, where the spokes of the
+star are isomorphic with each other. In this work, I present an algorithm that
+explodes these star configurations, reducing the problem to a sequence of
+simpler automorphism group calculations.

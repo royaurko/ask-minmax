@@ -1,0 +1,10 @@
+The distributed resampling algorithm with proportional allocation (RNA) is
+key to implementing particle filtering applications on parallel computer
+systems. We extend the original work by Bolic et al. by introducing an adaptive
+RNA (ARNA) algorithm, improving RNA by dynamically adjusting the
+particle-exchange ratio and randomizing the process ring topology. This
+improves the runtime performance of ARNA by about 9% over RNA with 10% particle
+exchange. ARNA also significantly improves the speed at which information is
+shared between processing elements, leading to about 20-fold faster
+convergence. The ARNA algorithm requires only a few modifications to the
+original RNA, and is hence easy to implement.

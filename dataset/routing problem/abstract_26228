@@ -1,0 +1,14 @@
+For popular websites most important concern is to handle incoming load
+dynamically among web servers, so that they can respond to their client without
+any wait or failure. Different websites use different strategies to distribute
+load among web servers but most of the schemes concentrate on only one factor
+that is number of requests, but none of the schemes consider the point that
+different type of requests will require different level of processing efforts
+to answer, status record of all the web servers that are associated with one
+domain name and mechanism to handle a situation when one of the servers is not
+working. Therefore, there is a fundamental need to develop strategy for dynamic
+load allocation on web side. In this paper, an effort has been made to
+introduce a cluster based frame work to solve load distribution problem. This
+framework aims to distribute load among clusters on the basis of their
+operational capabilities. Moreover, the experimental results are shown with the
+help of example, algorithm and analysis of the algorithm.

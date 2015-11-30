@@ -1,0 +1,9 @@
+This report details the generation and use of tree node ordering keys in a
+single relational database table. The keys for each node are calculated from
+the keys of its parent, in such a way that the sort order places every node in
+the tree before all of its descendants and after all siblings having a lower
+index. The calculation from parent keys to child keys is simple, and reversible
+in the sense that the keys of every ancestor of a node can be calculated from
+that node's keys without having to consult the database.
+  Proofs of the above properties of the key encoding process and of its
+correspondence to a finite continued fraction form are provided.

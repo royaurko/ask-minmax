@@ -1,0 +1,22 @@
+We investigate the use of message-passing algorithms for the problem of
+finding the max-weight independent set (MWIS) in a graph. First, we study the
+performance of the classical loopy max-product belief propagation. We show that
+each fixed point estimate of max-product can be mapped in a natural way to an
+extreme point of the LP polytope associated with the MWIS problem. However,
+this extreme point may not be the one that maximizes the value of node weights;
+the particular extreme point at final convergence depends on the initialization
+of max-product. We then show that if max-product is started from the natural
+initialization of uninformative messages, it always solves the correct LP -- if
+it converges. This result is obtained via a direct analysis of the iterative
+algorithm, and cannot be obtained by looking only at fixed points.
+  The tightness of the LP relaxation is thus necessary for max-product
+optimality, but it is not sufficient. Motivated by this observation, we show
+that a simple modification of max-product becomes gradient descent on (a
+convexified version of) the dual of the LP, and converges to the dual optimum.
+We also develop a message-passing algorithm that recovers the primal MWIS
+solution from the output of the descent algorithm. We show that the MWIS
+estimate obtained using these two algorithms in conjunction is correct when the
+graph is bipartite and the MWIS is unique.
+  Finally, we show that any problem of MAP estimation for probability
+distributions over finite domains can be reduced to an MWIS problem. We believe
+this reduction will yield new insights and algorithms for MAP estimation.

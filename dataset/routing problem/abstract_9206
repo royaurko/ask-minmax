@@ -1,0 +1,16 @@
+We give a deterministic, polynomial-time algorithm for approximately counting
+the number of {0,1}-solutions to any instance of the knapsack problem. On an
+instance of length n with total weight W and accuracy parameter eps, our
+algorithm produces a (1 + eps)-multiplicative approximation in time poly(n,log
+W,1/eps). We also give algorithms with identical guarantees for general integer
+knapsack, the multidimensional knapsack problem (with a constant number of
+constraints) and for contingency tables (with a constant number of rows).
+Previously, only randomized approximation schemes were known for these problems
+due to work by Morris and Sinclair and work by Dyer.
+  Our algorithms work by constructing small-width, read-once branching programs
+for approximating the underlying solution space under a carefully chosen
+distribution. As a byproduct of this approach, we obtain new query algorithms
+for learning functions of k halfspaces with respect to the uniform distribution
+on {0,1}^n. The running time of our algorithm is polynomial in the accuracy
+parameter eps. Previously even for the case of k=2, only algorithms with an
+exponential dependence on eps were known.

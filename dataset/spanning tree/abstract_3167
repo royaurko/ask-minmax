@@ -1,0 +1,18 @@
+Vertex deletion and edge deletion problems play a central role in
+Parameterized Complexity. Examples include classical problems like Feedback
+Vertex Set, Odd Cycle Transversal, and Chordal Deletion. Interestingly, the
+study of edge contraction problems of this type from a parameterized
+perspective has so far been left largely unexplored. We consider two basic edge
+contraction problems, which we call Path-Contractibility and
+Tree-Contractibility. Both problems take an undirected graph $G$ and an integer
+$k$ as input, and the task is to determine whether we can obtain a path or an
+acyclic graph, respectively, by contracting at most $k$ edges of $G$. Our main
+contribution is an algorithm with running time $4^{k+O(\log^2 k)} + n^{O(1)}$
+for Path-Contractibility and an algorithm with running time $4.88^k n^{O(1)}$
+for Tree-Contractibility, based on a novel application of the color coding
+technique of Alon, Yuster and Zwick. Furthermore, we show that
+Path-Contractibility has a kernel with at most $5k+3$ vertices, while
+Tree-Contractibility does not have a polynomial kernel unless coNP $\subseteq$
+NP/poly. We find the latter result surprising, because of the strong connection
+between Tree-Contractibility and Feedback Vertex Set, which is known to have a
+vertex kernel with size $O(k^2)$.

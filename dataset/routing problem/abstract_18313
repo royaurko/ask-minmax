@@ -1,0 +1,26 @@
+Poljak and Turzik (Discrete Mathematics 1986) introduced the notion of
+{\lambda}-extendible properties of graphs as a generalization of the property
+of being bipartite. They showed that for any 0 < {\lambda} < 1 and
+{\lambda}-extendible property {\Pi}, any connected graph G on n vertices and m
+edges contains a spanning subgraph H in {\Pi} with at least {\lambda}m +
+(1-{\lambda})(n-1)/2 edges. The property of being bipartite is
+{\lambda}-extendible for {\lambda} = 1/2, and so the Poljak-Turzik bound
+generalizes the well-known Edwards-Erdos bound for Max-Cut. Other examples of
+{\lambda}-extendible properties include: being an acyclic oriented graph, a
+balanced signed graph, or a q-colorable graph for some integer q.
+  Mnich et. al. (FSTTCS 2012) defined the closely related notion of strong
+{\lambda}-extendibility. They showed that the problem of finding a subgraph
+satisfying a given strongly {\lambda}-extendible property {\Pi} is
+fixed-parameter tractable (FPT) when parameterized above the Poljak-Turzik
+bound - does there exist a spanning subgraph H of a connected graph G such that
+H in {\Pi} and H has at least {\lambda}m + (1-{\lambda})(n-1)/2 + k edges? -
+subject to the condition that the problem is FPT on a certain simple class of
+graphs called almost-forests of cliques.
+  In this paper we settle the kernelization complexity of nearly all problems
+parameterized above Poljak-Turzik bounds, in the affirmative. We show that
+these problems admit quadratic kernels (cubic when {\lambda} = 1/2), without
+using the assumption that the problem is FPT on almost-forests of cliques. Thus
+our results not only remove the technical condition of being FPT on
+almost-forests of cliques from previous results, but also unify and extend
+previously known kernelization results in this direction. Our results add to
+the select list of generic kernelization results known in the literature.

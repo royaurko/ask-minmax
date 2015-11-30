@@ -1,0 +1,13 @@
+Dominators provide a general mechanism for identifying reconverging paths in
+graphs. This is useful for a number of applications in Computer-Aided Design
+(CAD) including signal probability computation in biased random simulation,
+switching activity estimation in power and noise analysis, and cut points
+identification in equivalence checking. However, traditional single-vertex
+dominators are too rare in circuit graphs. In order to handle reconverging
+paths more efficiently, we consider the case of double-vertex dominators which
+occur more frequently. First, we derive a number of specific properties of
+double-vertex dominators. Then, we describe a data structure for representing
+all double-vertex dominators of a given vertex in linear space. Finally, we
+present an algorithm for finding all double-vertex dominators of a given vertex
+in linear time. Our results provide an efficient systematic way of partitioning
+large graphs along the reconverging points of the signal flow.

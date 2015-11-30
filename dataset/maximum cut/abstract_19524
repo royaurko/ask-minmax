@@ -1,0 +1,26 @@
+Erasure codes are being increasingly used in distributed-storage systems in
+place of data-replication, since they provide the same level of reliability
+with much lower storage overhead. We consider the problem of constructing
+explicit erasure codes for distributed storage with the following desirable
+properties motivated by practice: (i) Maximum-Distance-Separable (MDS): to
+provide maximal reliability at minimum storage overhead, (ii) Optimal
+repair-bandwidth: to minimize the amount of data needed to be transferred to
+repair a failed node from remaining ones, (iii) Flexibility in repair: to allow
+maximal flexibility in selecting subset of nodes to use for repair, which
+includes not requiring that all surviving nodes be used for repair, (iv)
+Systematic Form: to ensure that the original data exists in uncoded form, and
+(v) Fast encoding: to minimize the cost of generating encoded data (enabled by
+a sparse generator matrix).
+  This paper presents the first explicit code construction which theoretically
+guarantees all the five desired properties simultaneously. Our construction
+builds on a powerful class of codes called Product-Matrix (PM) codes. PM codes
+satisfy properties (i)-(iii), and either (iv) or (v), but not both
+simultaneously. Indeed, native PM codes have inherent structure that leads to
+sparsity, but this structure is destroyed when the codes are made systematic.
+We first present an analytical framework for understanding the interaction
+between the design of PM codes and the systematic property. Using this
+framework, we provide an explicit code construction that simultaneously
+achieves all the above desired properties. We also present general ways of
+transforming existing storage and repair optimal codes to enable fast encoding
+through sparsity. In practice, such sparse codes result in encoding speedup by
+a factor of about 4 for typical parameters.

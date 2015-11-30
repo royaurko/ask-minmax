@@ -1,0 +1,20 @@
+Boolean-width is a recently introduced graph parameter. Many problems are
+fixed parameter tractable when parametrized by boolean-width, for instance
+"Minimum Weighted Dominating Set" (MWDS) problem can be solved in $O^*(2^{3k})$
+time given a boolean-decomposition of width $k$, hence for all graph classes
+where a boolean-decomposition of width $O(\log n)$ can be found in polynomial
+time, MWDS can be solved in polynomial time. We study graph classes having
+boolean-width $O(\log n)$ and problems solvable in $O^*(2^{O(k)})$, combining
+these two results to design polynomial algorithms. We show that for trapezoid
+graphs, circular permutation graphs, convex graphs, Dilworth-$k$ graphs,
+circular arc graphs and complements of $k$-degenerate graphs,
+boolean-decompositions of width $O(\log n)$ can be found in polynomial time. We
+also show that circular $k$-trapezoid graphs have boolean-width $O(\log n)$,
+and find such a decomposition if a circular $k$-trapezoid intersection model is
+given. For many of the graph classes we also prove that they contain graphs of
+boolean-width $\Theta(\log n)$.
+  Further we apply the results from \cite{boolw2} to give a new polynomial time
+algorithm solving all vertex partitioning problems introduced by Proskurowski
+and Telle \cite{TP97}. This extends previous results by Kratochv\'il, Manuel
+and Miller \cite{KMM95} showing that a large subset of the vertex partitioning
+problems are polynomial solvable on interval graphs.

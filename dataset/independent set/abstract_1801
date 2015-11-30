@@ -1,0 +1,22 @@
+Compressed sensing is a recent set of mathematical results showing that
+sparse signals can be exactly reconstructed from a small number of linear
+measurements. Interestingly, for ideal sparse signals with no measurement
+noise, random measurements allow perfect reconstruction while measurements
+based on principal component analysis (PCA) or independent component analysis
+(ICA) do not. At the same time, for other signal and noise distributions, PCA
+and ICA can significantly outperform random projections in terms of enabling
+reconstruction from a small number of measurements. In this paper we ask: given
+the distribution of signals we wish to measure, what are the optimal set of
+linear projections for compressed sensing? We consider the problem of finding a
+small number of linear projections that are maximally informative about the
+signal. Formally, we use the InfoMax criterion and seek to maximize the mutual
+information between the signal, x, and the (possibly noisy) projection y=Wx. We
+show that in general the optimal projections are not the principal components
+of the data nor random projections, but rather a seemingly novel set of
+projections that capture what is still uncertain about the signal, given the
+knowledge of distribution. We present analytic solutions for certain special
+cases including natural images. In particular, for natural images, the
+near-optimal projections are bandwise random, i.e., incoherent to the sparse
+bases at a particular frequency band but with more weights on the
+low-frequencies, which has a physical relation to the multi-resolution
+representation of images.

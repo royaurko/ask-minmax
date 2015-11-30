@@ -1,0 +1,13 @@
+We present a generalisation of King's symbolic execution technique called
+compact symbolic execution. It proceeds in two steps. First, we analyse cyclic
+paths in the control flow graph of a given program, independently from the rest
+of the program. Our goal is to compute a so called template for each such a
+cyclic path. A template is a declarative parametric description of all possible
+program states, which may leave the analysed cyclic path after any number of
+iterations along it. In the second step, we execute the program symbolically
+with the templates in hand. The result is a compact symbolic execution tree. A
+compact tree always carry the same information in all its leaves as the
+corresponding classic symbolic execution tree. Nevertheless, a compact tree is
+typically substantially smaller than the corresponding classic tree. There are
+even programs for which compact symbolic execution trees are finite while
+classic symbolic execution trees are infinite.

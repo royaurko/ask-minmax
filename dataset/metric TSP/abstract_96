@@ -1,0 +1,24 @@
+The performance of processing search queries depends heavily on the stored
+index size. Accordingly, considerable research efforts have been devoted to the
+development of efficient compression techniques for inverted indexes. Roughly,
+index compression relies on two factors: the ordering of the indexed documents,
+which strives to position similar documents in proximity, and the encoding of
+the inverted lists that result from the ordered stream of documents. Large
+commercial search engines index tens of billions of pages of the ever growing
+Web. The sheer size of their indexes dictates the distribution of documents
+among thousands of servers in a scheme called local index-partitioning, such
+that each server indexes only several millions pages. Due to engineering and
+runtime performance considerations, random distribution of documents to servers
+is common. However, random index-partitioning among many servers adversely
+impacts the resulting index sizes, as it decreases the effectiveness of
+document ordering schemes. We study the impact of random index-partitioning on
+document ordering schemes. We show that index-partitioning decreases the
+aggregated size of the inverted lists logarithmically with the number of
+servers, when documents within each server are randomly reordered. On the other
+hand, the aggregated partitioned index size increases logarithmically with the
+number of servers, when state-of-the-art document ordering schemes, such as
+lexical URL sorting and clustering with TSP, are applied. Finally, we justify
+the common practice of randomly distributing documents to servers, as we
+qualitatively show that despite its ill-effects on the ensuing compression, it
+decreases key factors in distributed query evaluation time by an order of
+magnitude as compared with partitioning techniques that compress better.

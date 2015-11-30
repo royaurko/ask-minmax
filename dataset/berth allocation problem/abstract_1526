@@ -1,0 +1,23 @@
+We design a framework for truthful double multi-channel spectrum auctions
+where each seller (or buyer) can sell (or buy) multiple spectrum channels based
+on their individual needs. Open, market-based spectrum trading motivates
+existing spectrum owners (as sellers) to lease their selected idle spectrum
+channels to new spectrum users (as buyers) who need the spectrum desperately.
+The most significant requirement is how to make the auction economic-robust
+(truthful in particular) while enabling spectrum reuse to improve spectrum
+utilization. Additionally, in practice, both sellers and buyers would require
+to trade multiple channels at one time, while guaranteeing their individual
+profitability. Unfortunately, none of the existing designs can meet all these
+requirements simultaneously. We address these requirements by proposing
+True-MCSA, a framework for truthful double multi-channel spectrum auctions.
+True-MCSA takes as input any reusability-driven spectrum allocation algorithm,
+introduces novel virtual buyer group (VBG) splitting and bidding algorithms,
+and applies a winner determination and pricing mechanism to achieve
+truthfulness and other economic properties while improving spectrum utilization
+and successfully dealing with multi-channel requests from both buyers and
+sellers. Our results show that the auction efficiency is impacted by the
+economic factors with efficiency degradations within 30%, under different
+experimental settings. Furthermore, the experimental results indicate that we
+can improve the auction efficiency by choosing a proper bidding algorithm and
+using a base bid. True-MCSA makes an important contribution on enabling
+spectrum reuse to improve auction efficiency in multi-channel cases.

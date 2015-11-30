@@ -1,0 +1,27 @@
+In the planar range skyline reporting problem, we store a set P of n 2D
+points in a structure such that, given a query rectangle Q = [a_1, a_2] x [b_1,
+b_2], the maxima (a.k.a. skyline) of P \cap Q can be reported efficiently. The
+query is 3-sided if an edge of Q is grounded, giving rise to two variants:
+top-open (b_2 = \infty) and left-open (a_1 = -\infty) queries.
+  All our results are in external memory under the O(n/B) space budget, for
+both the static and dynamic settings:
+  * For static P, we give structures that answer top-open queries in O(log_B n
++ k/B), O(loglog_B U + k/B), and O(1 + k/B) I/Os when the universe is R^2, a U
+x U grid, and a rank space grid [O(n)]^2, respectively (where k is the number
+of reported points). The query complexity is optimal in all cases.
+  * We show that the left-open case is harder, such that any linear-size
+structure must incur \Omega((n/B)^e + k/B) I/Os for a query. We show that this
+case is as difficult as the general 4-sided queries, for which we give a static
+structure with the optimal query cost O((n/B)^e + k/B).
+  * We give a dynamic structure that supports top-open queries in O(log_2B^e
+(n/B) + k/B^1-e) I/Os, and updates in O(log_2B^e (n/B)) I/Os, for any e
+satisfying 0 \le e \le 1. This leads to a dynamic structure for 4-sided queries
+with optimal query cost O((n/B)^e + k/B), and amortized update cost O(log
+(n/B)).
+  As a contribution of independent interest, we propose an I/O-efficient
+version of the fundamental structure priority queue with attrition (PQA). Our
+PQA supports FindMin, DeleteMin, and InsertAndAttrite all in O(1) worst case
+I/Os, and O(1/B) amortized I/Os per operation.
+  We also add the new CatenateAndAttrite operation that catenates two PQAs in
+O(1) worst case and O(1/B) amortized I/Os. This operation is a non-trivial
+extension to the classic PQA of Sundar, even in internal memory.

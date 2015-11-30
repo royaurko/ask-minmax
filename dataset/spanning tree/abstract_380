@@ -1,0 +1,28 @@
+We present time-efficient distributed algorithms for decomposing graphs with
+large edge or vertex connectivity into multiple spanning or dominating trees,
+respectively. As their primary applications, these decompositions allow us to
+achieve information flow with size close to the connectivity by parallelizing
+it along the trees. More specifically, our distributed decomposition algorithms
+are as follows:
+  (I) A decomposition of each undirected graph with vertex-connectivity $k$
+into (fractionally) vertex-disjoint weighted dominating trees with total weight
+$\Omega(\frac{k}{\log n})$, in $\widetilde{O}(D+\sqrt{n})$ rounds.
+  (II) A decomposition of each undirected graph with edge-connectivity
+$\lambda$ into (fractionally) edge-disjoint weighted spanning trees with total
+weight $\lceil\frac{\lambda-1}{2}\rceil(1-\varepsilon)$, in
+$\widetilde{O}(D+\sqrt{n\lambda})$ rounds.
+  We also show round complexity lower bounds of
+$\tilde{\Omega}(D+\sqrt{\frac{n}{k}})$ and
+$\tilde{\Omega}(D+\sqrt{\frac{n}{\lambda}})$ for the above two decompositions,
+using techniques of [Das Sarma et al., STOC'11]. Moreover, our
+vertex-connectivity decomposition extends to centralized algorithms and
+improves the time complexity of [Censor-Hillel et al., SODA'14] from $O(n^3)$
+to near-optimal $\tilde{O}(m)$.
+  As corollaries, we also get distributed oblivious routing broadcast with
+$O(1)$-competitive edge-congestion and $O(\log n)$-competitive
+vertex-congestion. Furthermore, the vertex connectivity decomposition leads to
+near-time-optimal $O(\log n)$-approximation of vertex connectivity: centralized
+$\widetilde{O}(m)$ and distributed $\tilde{O}(D+\sqrt{n})$. The former moves
+toward the 1974 conjecture of Aho, Hopcroft, and Ullman postulating an $O(m)$
+centralized exact algorithm while the latter is the first distributed vertex
+connectivity approximation.

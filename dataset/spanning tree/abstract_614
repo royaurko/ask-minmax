@@ -1,0 +1,13 @@
+A distributed XML document is an XML document that spans several machines. We
+assume that a distribution design of the document tree is given, consisting of
+an XML kernel-document T[f1,...,fn] where some leaves are "docking points" for
+external resources providing XML subtrees (f1,...,fn, standing, e.g., for Web
+services or peers at remote locations). The top-down design problem consists
+in, given a type (a schema document that may vary from a DTD to a tree
+automaton) for the distributed document, "propagating" locally this type into a
+collection of types, that we call typing, while preserving desirable
+properties. We also consider the bottom-up design which consists in, given a
+type for each external resource, exhibiting a global type that is enforced by
+the local types, again with natural desirable properties. In the article, we
+lay out the fundamentals of a theory of distributed XML design, analyze
+problems concerning typing issues in this setting, and study their complexity.

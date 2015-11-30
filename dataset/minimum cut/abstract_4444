@@ -1,0 +1,12 @@
+The parallel ordering of large graphs is a difficult problem, because on the
+one hand minimum degree algorithms do not parallelize well, and on the other
+hand the obtainment of high quality orderings with the nested dissection
+algorithm requires efficient graph bipartitioning heuristics, the best
+sequential implementations of which are also hard to parallelize. This paper
+presents a set of algorithms, implemented in the PT-Scotch software package,
+which allows one to order large graphs in parallel, yielding orderings the
+quality of which is only slightly worse than the one of state-of-the-art
+sequential algorithms. Our implementation uses the classical nested dissection
+approach but relies on several novel features to solve the parallel graph
+bipartitioning problem. Thanks to these improvements, PT-Scotch produces
+consistently better orderings than ParMeTiS on large numbers of processors.

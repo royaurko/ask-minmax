@@ -1,0 +1,19 @@
+The framework of consistent query answers and repairs has been introduced to
+alleviate the impact of inconsistent data on the answers to a query. A repair
+is a minimally different consistent instance and an answer is consistent if it
+is present in every repair. In this article we study the complexity of
+consistent query answers and repair checking in the presence of universal
+constraints.
+  We propose an extended version of the conflict hypergraph which allows to
+capture all repairs w.r.t. a set of universal constraints. We show that repair
+checking is in PTIME for the class of full tuple-generating dependencies and
+denial constraints, and we present a polynomial repair algorithm. This
+algorithm is sound, i.e. always produces a repair, but also complete, i.e.
+every repair can be constructed. Next, we present a polynomial-time algorithm
+computing consistent answers to ground quantifier-free queries in the presence
+of denial constraints, join dependencies, and acyclic full-tuple generating
+dependencies. Finally, we show that extending the class of constraints leads to
+intractability. For arbitrary full tuple-generating dependencies consistent
+query answering becomes coNP-complete. For arbitrary universal constraints
+consistent query answering is \Pi_2^p-complete and repair checking
+coNP-complete.

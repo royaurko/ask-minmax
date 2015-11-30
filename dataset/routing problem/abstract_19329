@@ -1,0 +1,19 @@
+We present a substantially more efficient variant, both in terms of running
+time and size of preprocessing advice, of the algorithm by Liu, Lyubashevsky,
+and Micciancio for solving CVPP (the preprocessing version of the Closest
+Vector Problem, CVP) with a distance guarantee. For instance, for any $\alpha <
+1/2$, our algorithm finds the (unique) closest lattice point for any target
+point whose distance from the lattice is at most $\alpha$ times the length of
+the shortest nonzero lattice vector, requires as preprocessing advice only $N
+\approx \widetilde{O}(n \exp(\alpha^2 n /(1-2\alpha)^2))$ vectors, and runs in
+time $\widetilde{O}(nN)$.
+  As our second main contribution, we present reductions showing that it
+suffices to solve CVP, both in its plain and preprocessing versions, when the
+input target point is within some bounded distance of the lattice. The
+reductions are based on ideas due to Kannan and a recent sparsification
+technique due to Dadush and Kun. Combining our reductions with the LLM
+algorithm gives an approximation factor of $O(n/\sqrt{\log n})$ for search
+CVPP, improving on the previous best of $O(n^{1.5})$ due to Lagarias, Lenstra,
+and Schnorr. When combined with our improved algorithm we obtain, somewhat
+surprisingly, that only O(n) vectors of preprocessing advice are sufficient to
+solve CVPP with (the only slightly worse) approximation factor of O(n).

@@ -1,0 +1,25 @@
+L (Logarithmic space) versus NL (Non-deterministic logarithmic space) is one
+of the great open problems in computational complexity theory. In the paper
+"Bounds on monotone switching networks for directed connectivity", we separated
+monotone analogues of L and NL using a model called the switching network
+model. In particular, by considering inputs consisting of just a path and
+isolated vertices, we proved that any monotone switching network solving
+directed connectivity on $N$ vertices must have size at least
+$N^{\Omega(\lg(N))}$ and this bound is tight. If we could show a similar result
+for general switching networks solving directed connectivity, then this would
+prove that $L \neq NL$. However, proving lower bounds for general switching
+networks solving directed connectivity requires proving stronger lower bounds
+on monotone switching networks for directed connectivity. To work towards this
+goal, we investigated a different set of inputs which we believed to be hard
+for monotone switching networks to solve and attempted to prove similar lower
+size bounds. Instead, we found that this set of inputs is actually easy for
+monotone switching networks for directed connectivity to solve, yet if we
+restrict ourselves to certain-knowledge switching networks, which are a simple
+and intuitive subclass of monotone switching networks for directed
+connectivity, then these inputs are indeed hard to solve. In this paper, we
+give this set of inputs, demonstrate a "weird" polynomially-sized monotone
+switching network for directed connectivity which solves this set of inputs,
+and prove that no polynomially-sized certain-knowledge switching network can
+solve this set of inputs, thus proving that monotone switching networks for
+directed connectivity are strictly more powerful than certain-knowledge
+switching networks.

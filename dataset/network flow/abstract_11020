@@ -1,0 +1,13 @@
+In this paper, a new routing algorithm based on a flooding method is
+introduced. Flooding techniques have been used previously, e.g. for
+broadcasting the routing table in the ARPAnet [1] and other special purpose
+networks [3][4][5]. However, sending data using flooding can often saturate the
+network [2] and it is usually regarded as an inefficient broadcast mechanism.
+Our approach is to flood a very short packet to explore an optimal route
+without relying on a pre-established routing table, and an efficient flood
+control algorithm to reduce the signalling traffic overhead. This is an
+inherently robust mechanism in the face of a network configuration change,
+achieves automatic load sharing across alternative routes and has potential to
+solve many contemporary routing problems. An earlier version of this mechanism
+was originally developed for virtual circuit establishment in the experimental
+Caroline ATM LAN [6][7] at Monash University.

@@ -1,0 +1,23 @@
+In (Ferrucci, Pacini and Sessa, 1995) an extended form of resolution, called
+Reduced SLD resolution (RSLD), is introduced. In essence, an RSLD derivation is
+an SLD derivation such that redundancy elimination from resolvents is performed
+after each rewriting step. It is intuitive that redundancy elimination may have
+positive effects on derivation process. However, undesiderable effects are also
+possible. In particular, as shown in this paper, program termination as well as
+completeness of loop checking mechanisms via a given selection rule may be
+lost. The study of such effects has led us to an analysis of selection rule
+basic concepts, so that we have found convenient to move the attention from
+rules of atom selection to rules of atom scheduling. A priority mechanism for
+atom scheduling is built, where a priority is assigned to each atom in a
+resolvent, and primary importance is given to the event of arrival of new atoms
+from the body of the applied clause at rewriting time. This new computational
+model proves able to address the study of redundancy elimination effects,
+giving at the same time interesting insights into general properties of
+selection rules. As a matter of fact, a class of scheduling rules, namely the
+specialisation independent ones, is defined in the paper by using not trivial
+semantic arguments. As a quite surprising result, specialisation independent
+scheduling rules turn out to coincide with a class of rules which have an
+immediate structural characterisation (named stack-queue rules). Then we prove
+that such scheduling rules are tolerant to redundancy elimination, in the sense
+that neither program termination nor completeness of equality loop check is
+lost passing from SLD to RSLD.

@@ -1,0 +1,26 @@
+In the framework of multidimensional Compressed Sensing (CS), we introduce an
+analytical reconstruction formula that allows one to recover an $N$th-order
+$(I_1\times I_2\times \cdots \times I_N)$ data tensor $\underline{\mathbf{X}}$
+from a reduced set of multi-way compressive measurements by exploiting its low
+multilinear-rank structure. Moreover, we show that, an interesting property of
+multi-way measurements allows us to build the reconstruction based on
+compressive linear measurements taken only in two selected modes, independently
+of the tensor order $N$. In addition, it is proved that, in the matrix case and
+in a particular case with $3$rd-order tensors where the same 2D sensor operator
+is applied to all mode-3 slices, the proposed reconstruction
+$\underline{\mathbf{X}}_\tau$ is stable in the sense that the approximation
+error is comparable to the one provided by the best low-multilinear-rank
+approximation, where $\tau$ is a threshold parameter that controls the
+approximation error. Through the analysis of the upper bound of the
+approximation error we show that, in the 2D case, an optimal value for the
+threshold parameter $\tau=\tau_0 > 0$ exists, which is confirmed by our
+simulation results. On the other hand, our experiments on 3D datasets show that
+very good reconstructions are obtained using $\tau=0$, which means that this
+parameter does not need to be tuned. Our extensive simulation results
+demonstrate the stability and robustness of the method when it is applied to
+real-world 2D and 3D signals. A comparison with state-of-the-arts sparsity
+based CS methods specialized for multidimensional signals is also included. A
+very attractive characteristic of the proposed method is that it provides a
+direct computation, i.e. it is non-iterative in contrast to all existing
+sparsity based CS algorithms, thus providing super fast computations, even for
+large datasets.

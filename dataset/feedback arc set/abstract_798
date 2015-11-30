@@ -1,0 +1,13 @@
+We present a very general approach to learning the structure of causal models
+based on d-separation constraints, obtained from any given set of overlapping
+passive observational or experimental data sets. The procedure allows for both
+directed cycles (feedback loops) and the presence of latent variables. Our
+approach is based on a logical representation of causal pathways, which permits
+the integration of quite general background knowledge, and inference is
+performed using a Boolean satisfiability (SAT) solver. The procedure is
+complete in that it exhausts the available information on whether any given
+edge can be determined to be present or absent, and returns "unknown"
+otherwise. Many existing constraint-based causal discovery algorithms can be
+seen as special cases, tailored to circumstances in which one or more
+restricting assumptions apply. Simulations illustrate the effect of these
+assumptions on discovery and how the present algorithm scales.

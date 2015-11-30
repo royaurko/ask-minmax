@@ -1,0 +1,21 @@
+In the Hospitals/Residents (HR) problem, agents are partitioned into
+hospitals and residents. Each agent wishes to be matched to an agent in the
+other set and has a strict preference over these potential matches. A matching
+is stable if there are no blocking pairs, i.e., no pair of agents that prefer
+each other to their assigned matches. Such a situation is undesirable as it
+could lead to a deviation in which the blocking pair form a private arrangement
+outside the matching. This however assumes that the blocking pair have social
+ties or communication channels to facilitate the deviation. Relaxing the
+stability definition to take account of the potential lack of social ties
+between agents can yield larger stable matchings.
+  In this paper, we define the Hospitals/Residents problem under Social
+Stability (HRSS) which takes into account social ties between agents by
+introducing a social network graph to the HR problem. Edges in the social
+network graph correspond to resident-hospital pairs in the HR instance that
+know one another. Pairs that do not have corresponding edges in the social
+network graph can belong to a matching M but they can never block M. Relative
+to a relaxed stability definition for HRSS, called social stability, we show
+that socially stable matchings can have different sizes and the problem of
+finding a maximum socially stable matching is NP-hard, though approximable
+within 3/2. Furthermore we give polynomial time algorithms for three special
+cases of the problem.

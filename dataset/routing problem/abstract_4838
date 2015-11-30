@@ -1,0 +1,20 @@
+The {\em shortest common superstring} and the {\em shortest common
+supersequence} are two well studied problems having a wide range of
+applications. In this paper we consider both problems with resource
+constraints, denoted as the Restricted Common Superstring (shortly
+\textit{RCSstr}) problem and the Restricted Common Supersequence (shortly
+\textit{RCSseq}). In the \textit{RCSstr} (\textit{RCSseq}) problem we are given
+a set $S$ of $n$ strings, $s_1$, $s_2$, $\ldots$, $s_n$, and a multiset $t =
+\{t_1, t_2, \dots, t_m\}$, and the goal is to find a permutation $\pi : \{1,
+\dots, m\} \to \{1, \dots, m\}$ to maximize the number of strings in $S$ that
+are substrings (subsequences) of $\pi(t) = t_{\pi(1)}t_{\pi(2)}...t_{\pi(m)}$
+(we call this ordering of the multiset, $\pi(t)$, a permutation of $t$). We
+first show that in its most general setting the \textit{RCSstr} problem is {\em
+NP-complete} and hard to approximate within a factor of $n^{1-\epsilon}$, for
+any $\epsilon > 0$, unless P = NP. Afterwards, we present two separate
+reductions to show that the \textit{RCSstr} problem remains NP-Hard even in the
+case where the elements of $t$ are drawn from a binary alphabet or for the case
+where all input strings are of length two. We then present some approximation
+results for several variants of the \textit{RCSstr} problem. In the second part
+of this paper, we turn to the \textit{RCSseq} problem, where we present some
+hardness results, tight lower bounds and approximation algorithms.

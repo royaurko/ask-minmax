@@ -1,0 +1,21 @@
+We analyze the three-year WMAP temperature anisotropy data seeking to confirm
+the power spectrum and likelihoods published by the WMAP team. We apply five
+independent implementations of four algorithms to the power spectrum estimation
+and two implementations to the parameter estimation. Our single most important
+result is that we broadly confirm the WMAP power spectrum and analysis. Still,
+we do find two small but potentially important discrepancies: On large angular
+scales there is a small power excess in the WMAP spectrum (5-10% at l<~30)
+primarily due to likelihood approximation issues between 13 <= l <~30. On small
+angular scales there is a systematic difference between the V- and W-band
+spectra (few percent at l>~300). Recently, the latter discrepancy was explained
+by Huffenberger et al. (2006) in terms of over-subtraction of unresolved point
+sources. As far as the low-l bias is concerned, most parameters are affected by
+a few tenths of a sigma. The most important effect is seen in n_s. For the
+combination of WMAP, Acbar and BOOMERanG, the significance of n_s =/ 1 drops
+from ~2.7 sigma to ~2.3 sigma when correcting for this bias. We propose a few
+simple improvements to the low-l WMAP likelihood code, and introduce two
+important extensions to the Gibbs sampling method that allows for proper
+sampling of the low signal-to-noise regime. Finally, we make the products from
+the Gibbs sampling analysis publically available, thereby providing a fast and
+simple route to the exact likelihood without the need of expensive matrix
+inversions.

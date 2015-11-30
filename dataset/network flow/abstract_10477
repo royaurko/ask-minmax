@@ -1,0 +1,23 @@
+Reaction networks in the bulk and on surfaces are widespread in physical,
+chemical and biological systems. In macroscopic systems, which include large
+populations of reactive species, stochastic fluctuations are negligible and the
+reaction rates can be evaluated using rate equations. However, many physical
+systems are partitioned into microscopic domains, where the number of molecules
+in each domain is small and fluctuations are strong. Under these conditions,
+the simulation of reaction networks requires stochastic methods such as direct
+integration of the master equation. However, direct integration of the master
+equation is infeasible for complex networks, because the number of equations
+proliferates as the number of reactive species increases. Recently, the
+multiplane method, which provides a dramatic reduction in the number of
+equations, was introduced [A. Lipshtat and O. Biham, Phys. Rev. Lett. 93,
+170601 (2004)]. The reduction is achieved by breaking the network into a set of
+maximal fully connected sub-networks (maximal cliques). Lower-dimensional
+master equations are constructed for the marginal probability distributions
+associated with the cliques, with suitable couplings between them. In this
+paper we test the multiplane method and examine its applicability. We show that
+the method is accurate in the limit of small domains, where fluctuations are
+strong. It thus provides an efficient framework for the stochastic simulation
+of complex reaction networks with strong fluctuations, for which rate equations
+fail and direct integration of the master equation is infeasible. The method
+also applies in the case of large domains, where it converges to the rate
+equation results.

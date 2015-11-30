@@ -1,0 +1,22 @@
+We formulate the problem of robots ferrying messages between
+statically-placed source and sink pairs that they can communicate with
+wirelessly. We first analyze the capacity region for this problem under both
+ideal (arbitrarily high velocity, long scheduling periods) and realistic
+conditions. We indicate how robots could be scheduled optimally to satisfy any
+arrival rate in the capacity region, given prior knowledge about arrival rates.
+We find that if the number of robots allocated grows proportionally with the
+number of source-sink pairs, then the capacity of the network scales as
+$\Theta(1)$, similar to what was shown previously by Grossglauser and Tse for
+uncontrolled mobility; however, in contrast to that prior result, we also find
+that with controlled mobility this constant capacity scaling can be obtained
+while ensuring finite delay. We then consider the setting where the arrival
+rates are unknown and present a coarse-grained backpressure message ferrying
+algorithm (CBMF) for it. In CBMF, the robots are matched to sources and sinks
+once every epoch to maximize a queue-differential-based weight. The matching
+controls both motion and transmission for each robot: if a robot is matched to
+a source, it moves towards that source and collects data from it; and if it is
+matched to a sink, it moves towards that sink and transmits data to it. We show
+through analysis and simulations the conditions under which CBMF can stabilize
+the network. We show that the maximum achievable stable throughput with this
+policy tends to the ideal capacity as the schedule duration and robot velocity
+increase.

@@ -1,0 +1,14 @@
+We address the problem of clustering words (or constructing a thesaurus)
+based on co-occurrence data, and using the acquired word classes to improve the
+accuracy of syntactic disambiguation. We view this problem as that of
+estimating a joint probability distribution specifying the joint probabilities
+of word pairs, such as noun verb pairs. We propose an efficient algorithm based
+on the Minimum Description Length (MDL) principle for estimating such a
+probability distribution. Our method is a natural extension of those proposed
+in (Brown et al 92) and (Li & Abe 96), and overcomes their drawbacks while
+retaining their advantages. We then combined this clustering method with the
+disambiguation method of (Li & Abe 95) to derive a disambiguation method that
+makes use of both automatically constructed thesauruses and a hand-made
+thesaurus. The overall disambiguation accuracy achieved by our method is 85.2%,
+which compares favorably against the accuracy (82.4%) obtained by the
+state-of-the-art disambiguation method of (Brill & Resnik 94).

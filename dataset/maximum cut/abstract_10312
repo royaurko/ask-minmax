@@ -1,0 +1,18 @@
+In this paper, we consider distributed maximum likelihood estimation (MLE)
+with dependent quantized data under the assumption that the structure of the
+joint probability density function (pdf) is known, but it contains unknown
+deterministic parameters. The parameters may include different vector
+parameters corresponding to marginal pdfs and parameters that describe
+dependence of observations across sensors. Since MLE with a single quantizer is
+sensitive to the choice of thresholds due to the uncertainty of pdf, we
+concentrate on MLE with multiple groups of quantizers (which can be determined
+by the use of prior information or some heuristic approaches) to fend off
+against the risk of a poor/outlier quantizer. The asymptotic efficiency of the
+MLE scheme with multiple quantizers is proved under some regularity conditions
+and the asymptotic variance is derived to be the inverse of a weighted linear
+combination of Fisher information matrices based on multiple different
+quantizers which can be used to show the robustness of our approach. As an
+illustrative example, we consider an estimation problem with a bivariate
+non-Gaussian pdf that has applications in distributed constant false alarm rate
+(CFAR) detection systems. Simulations show the robustness of the proposed MLE
+scheme especially when the number of quantized measurements is small.

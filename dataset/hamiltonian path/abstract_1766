@@ -1,0 +1,15 @@
+We consider the all pairs all shortest paths (APASP) problem, which maintains
+all of the multiple shortest paths for every vertex pair in a directed graph
+G=(V,E) with a positive real weight on each edge. We present a fully dynamic
+algorithm for this problem in which an update supports either weight increases
+or weight decreases on a subset of edges incident to a vertex. Our algorithm
+runs in amortized O(\vstar^2 \cdot \log^3 n) time per update, where n = |V|,
+and \vstar bounds the number of edges that lie on shortest paths through any
+single vertex. Our APASP algorithm leads to the same amortized bound for the
+fully dynamic computation of betweenness centrality (BC), which is a parameter
+widely used in the analysis of large complex networks.
+  Our method is a generalization and a variant of the fully dynamic algorithm
+of Demetrescu and Italiano [DI04] for unique shortest path, and it builds on
+very recent work on decremental APASP [NPR14]. Our algorithm matches the fully
+dynamic amortized bound in [DI04] for graphs with unique shortest paths, though
+our method, and especially its analysis, are different.

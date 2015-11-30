@@ -1,0 +1,17 @@
+In this paper, we focus on numerical methods for the genetic drift problems,
+which is governed by a degenerated convection-dominated parabolic equation. Due
+to the degeneration and convection, Dirac singularities will always be
+developed at boundary points as time evolves. In order to find a \emph{complete
+solution} which should keep the conservation of total probability and
+expectation, three different schemes based on finite volume methods are used to
+solve the equation numerically: one is a upwind scheme, the other two are
+different central schemes. We observed that all the methods are stable and can
+keep the total probability, but have totally different long-time behaviors
+concerning with the conservation of expectation. We prove that any extra
+infinitesimal diffusion leads to a same artificial steady state. So upwind
+scheme does not work due to its intrinsic numerical viscosity. We find one of
+the central schemes introduces a numerical viscosity term too, which is beyond
+the common understanding in the convection-diffusion community. Careful
+analysis is presented to prove that the other central scheme does work. Our
+study shows that the numerical methods should be carefully chosen and any
+method with intrinsic numerical viscosity must be avoided.

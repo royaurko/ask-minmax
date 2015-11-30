@@ -1,0 +1,16 @@
+The Abstract Syntax Description Language (ASDL) is a language for specifying
+the tree data structures often found in compiler intermediate representations.
+The ASDL generator reads an ASDL specification and generates code to construct,
+read, and write instances of the trees specified. Using ASDL permits a compiler
+to be decomposed into semi-independent components that communicate by reading
+and writing trees. Each component can be written in a different language,
+because the ASDL generator can emit code in several languages, and the files
+written by ASDL-generated code are machine- and language-independent. ASDL is
+part of the National Compiler Infrastructure project, which seeks to reduce
+dramatically the overhead of computer systems research by making it much easier
+to build high-quality compilers. This paper describes dividing lcc, a widely
+used retargetable C compiler, into two components that communicate via trees
+defined in ASDL. As the first use of ASDL in a `real' compiler, this experience
+reveals much about the effort required to retrofit an existing compiler to use
+ASDL, the overheads involved, and the strengths and weaknesses of ASDL itself
+and, secondarily, of lcc.

@@ -1,0 +1,19 @@
+High fidelity simulation of large-sized complex networks can be realized on a
+distributed computing platform that leverages the combined resources of
+multiple processors or machines. In a discrete event driven simulation, the
+assignment of logical processes (LPs) to machines is a critical step that
+affects the computational and communication burden on the machines, which in
+turn affects the simulation execution time of the experiment. We study a
+network partitioning game wherein each node (LP) acts as a selfish player. We
+derive two local node-level cost frameworks which are feasible in the sense
+that the aggregate state information required to be exchanged between the
+machines is independent of the size of the simulated network model. For both
+cost frameworks, we prove the existence of stable Nash equilibria in pure
+strategies. Using iterative partition improvements, we propose game theoretic
+partitioning algorithms based on the two cost criteria and show that each
+descends in a global cost. To exploit the distributed nature of the system, the
+algorithm is distributed, with each node's decision based on its local
+information and on a few global quantities which can be communicated
+machine-to-machine. We demonstrate the performance of our partitioning
+algorithm on an optimistic discrete event driven simulation platform that
+models an actual parallel simulator.

@@ -1,0 +1,13 @@
+The MULTICUT problem, given a graph G, a set of terminal pairs T={(s_i,t_i) |
+1 <= i <= r} and an integer p, asks whether one can find a cutset consisting of
+at most p non-terminal vertices that separates all the terminal pairs, i.e.,
+after removing the cutset, t_i is not reachable from s_i for each 1 <= i <= r.
+The fixed-parameter tractability of MULTICUT in undirected graphs,
+parameterized by the size of the cutset only, has been recently proven by Marx
+and Razgon (STOC'11) and, independently, by Bousquet et al. (STOC'11), after
+resisting attacks as a long-standing open problem. In this paper we prove that
+MULTICUT is fixed-parameter tractable on directed acyclic graphs, when
+parameterized both by the size of the cutset and the number of terminal pairs.
+We complement this result by showing that this is implausible for
+parameterization by the size of the cutset only, as this version of the problem
+remains W[1]-hard.

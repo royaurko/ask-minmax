@@ -1,0 +1,18 @@
+It is well known that $\ell_1$ minimization can be used to recover
+sufficiently sparse unknown signals from compressed linear measurements. In
+fact, exact thresholds on the sparsity, as a function of the ratio between the
+system dimensions, so that with high probability almost all sparse signals can
+be recovered from i.i.d. Gaussian measurements, have been computed and are
+referred to as "weak thresholds" \cite{D}. In this paper, we introduce a
+reweighted $\ell_1$ recovery algorithm composed of two steps: a standard
+$\ell_1$ minimization step to identify a set of entries where the signal is
+likely to reside, and a weighted $\ell_1$ minimization step where entries
+outside this set are penalized. For signals where the non-sparse component
+entries are independent and identically drawn from certain classes of
+distributions, (including most well known continuous distributions), we prove a
+\emph{strict} improvement in the weak recovery threshold. Our analysis suggests
+that the level of improvement in the weak threshold depends on the behavior of
+the distribution at the origin. Numerical simulations verify the distribution
+dependence of the threshold improvement very well, and suggest that in the case
+of i.i.d. Gaussian nonzero entries, the improvement can be quite
+impressive---over 20% in the example we consider.

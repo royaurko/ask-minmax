@@ -1,0 +1,15 @@
+This whitepaper describes the load-balancing performance issues that are
+observed and tackled during the petascaling of the Vlasiator codes. Vlasiator
+is a Vlasov-hybrid simulation code developed in Finnish Meteorological
+Institute (FMI). Vlasiator models the communications associated with the
+spatial grid operated on as a hypergraph and partitions the grid using the
+parallel hypergraph partitioning scheme (PHG) of the Zoltan partitioning
+framework. The result of partitioning determines the distribution of grid cells
+to processors. It is observed that the partitioning phase takes a substantial
+percentage of the overall computation time. Alternative
+(graph-partitioning-based) schemes that perform almost as well as the
+hypergraph partitioning scheme and that require less preprocessing overhead and
+better balance are proposed and investigated. A comparison in terms of effect
+on running time, preprocessing overhead and load-balancing quality of Zoltan's
+PHG, ParMeTiS, and PT-SCOTCH are presented. Test results on J\"uelich
+BlueGene/P cluster are presented.

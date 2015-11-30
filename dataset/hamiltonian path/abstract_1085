@@ -1,0 +1,20 @@
+Optimization approaches based on operator splitting are becoming popular for
+solving sparsity regularized statistical machine learning models. While many
+have proposed fast algorithms to solve these problems for a single
+regularization parameter, conspicuously less attention has been given to
+computing regularization paths, or solving the optimization problems over the
+full range of regularization parameters to obtain a sequence of sparse models.
+In this chapter, we aim to quickly approximate the sequence of sparse models
+associated with regularization paths for the purposes of statistical model
+selection by using the building blocks from a classical operator splitting
+method, the Alternating Direction Method of Multipliers (ADMM). We begin by
+proposing an ADMM algorithm that uses warm-starts to quickly compute the
+regularization path. Then, by employing approximations along this warm-starting
+ADMM algorithm, we propose a novel concept that we term the ADMM Algorithmic
+Regularization Path. Our method can quickly outline the sequence of sparse
+models associated with the regularization path in computational time that is
+often less than that of using the ADMM algorithm to solve the problem at a
+single regularization parameter. We demonstrate the applicability and
+substantial computational savings of our approach through three popular
+examples, sparse linear regression, reduced-rank multi-task learning, and
+convex clustering.

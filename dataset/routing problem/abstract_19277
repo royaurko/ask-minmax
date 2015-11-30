@@ -1,0 +1,19 @@
+We study the problem of recovering the phase from magnitude measurements;
+specifically, we wish to reconstruct a complex-valued signal x of C^n about
+which we have phaseless samples of the form y_r = |< a_r,x >|^2, r = 1,2,...,m
+(knowledge of the phase of these samples would yield a linear system). This
+paper develops a non-convex formulation of the phase retrieval problem as well
+as a concrete solution algorithm. In a nutshell, this algorithm starts with a
+careful initialization obtained by means of a spectral method, and then refines
+this initial estimate by iteratively applying novel update rules, which have
+low computational complexity, much like in a gradient descent scheme. The main
+contribution is that this algorithm is shown to rigorously allow the exact
+retrieval of phase information from a nearly minimal number of random
+measurements. Indeed, the sequence of successive iterates provably converges to
+the solution at a geometric rate so that the proposed scheme is efficient both
+in terms of computational and data resources. In theory, a variation on this
+scheme leads to a near-linear time algorithm for a physically realizable model
+based on coded diffraction patterns. We illustrate the effectiveness of our
+methods with various experiments on image data. Underlying our analysis are
+insights for the analysis of non-convex optimization schemes that may have
+implications for computational problems beyond phase retrieval.

@@ -1,0 +1,15 @@
+In the standard set reconciliation problem, there are two parties $A_1$ and
+$A_2$, each respectively holding a set of elements $S_1$ and $S_2$. The goal is
+for both parties to obtain the union $S_1 \cup S_2$. In many distributed
+computing settings the sets may be large but the set difference
+$|S_1-S_2|+|S_2-S_1|$ is small. In these cases one aims to achieve
+reconciliation efficiently in terms of communication; ideally, the
+communication should depend on the size of the set difference, and not on the
+size of the sets.
+  Recent work has considered generalizations of the reconciliation problem to
+multi-party settings, using a framework based on a specific type of linear
+sketch called an Invertible Bloom Lookup Table. Here, we consider multi-party
+set reconciliation using the alternative framework of characteristic
+polynomials, which have previously been used for efficient pairwise set
+reconciliation protocols, and compare their performance with Invertible Bloom
+Lookup Tables for these problems.

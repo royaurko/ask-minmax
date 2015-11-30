@@ -1,0 +1,24 @@
+We study the effect of boundary conditions on the relaxation time of the
+Glauber dynamics for the hard-core model on the tree. The hard-core model is
+defined on the set of independent sets weighted by a parameter $\lambda$,
+called the activity. The Glauber dynamics is the Markov chain that updates a
+randomly chosen vertex in each step. On the infinite tree with branching factor
+$b$, the hard-core model can be equivalently defined as a broadcasting process
+with a parameter $\omega$ which is the positive solution to
+$\lambda=\omega(1+\omega)^b$, and vertices are occupied with probability
+$\omega/(1+\omega)$ when their parent is unoccupied. This broadcasting process
+undergoes a phase transition between the so-called reconstruction and
+non-reconstruction regions at $\omega_r\approx \ln{b}/b$. Reconstruction has
+been of considerable interest recently since it appears to be intimately
+connected to the efficiency of local algorithms on locally tree-like graphs,
+such as sparse random graphs. In this paper we show that the relaxation time of
+the Glauber dynamics on regular $b$-ary trees $T_h$ of height $h$ and $n$
+vertices, undergoes a phase transition around the reconstruction threshold. In
+particular, we construct a boundary condition for which the relaxation time
+slows down at the reconstruction threshold. More precisely, for any $\omega \le
+\ln{b}/b$, for $T_h$ with any boundary condition, the relaxation time is
+$\Omega(n)$ and $O(n^{1+o_b(1)})$. In contrast, above the reconstruction
+threshold we show that for every $\delta>0$, for $\omega=(1+\delta)\ln{b}/b$,
+the relaxation time on $T_h$ with any boundary condition is $O(n^{1+\delta +
+o_b(1)})$, and we construct a boundary condition where the relaxation time is
+$\Omega(n^{1+\delta/2 - o_b(1)})$.

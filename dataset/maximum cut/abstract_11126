@@ -1,0 +1,24 @@
+We investigate the power of randomized algorithms for the maximum cardinality
+matching (MCM) and the maximum weight matching (MWM) problems in the online
+preemptive model. In this model, the edges of a graph are revealed one by one
+and the algorithm is required to always maintain a valid matching. On seeing an
+edge, the algorithm has to either accept or reject the edge. If accepted, then
+the adjacent edges are discarded. The complexity of the problem is settled for
+deterministic algorithms.
+  Almost nothing is known for randomized algorithms. A lower bound of $1.693$
+is known for MCM with a trivial upper bound of $2$. An upper bound of $5.356$
+is known for MWM. We initiate a systematic study of the same in this paper with
+an aim to isolate and understand the difficulty. We begin with a primal-dual
+analysis of the deterministic algorithm due to McGregor. All deterministic
+lower bounds are on instances which are trees at every step. For this class of
+(unweighted) graphs we present a randomized algorithm which is
+$\frac{28}{15}$-competitive. The analysis is a considerable extension of the
+(simple) primal-dual analysis for the deterministic case. The key new technique
+is that the distribution of primal charge to dual variables depends on the
+"neighborhood" and needs to be done after having seen the entire input. The
+assignment is asymmetric: in that edges may assign different charges to the two
+end-points. Also the proof depends on a non-trivial structural statement on the
+performance of the algorithm on the input tree.
+  The other main result of this paper is an extension of the deterministic
+lower bound of Varadaraja to a natural class of randomized algorithms which
+decide whether to accept a new edge or not using independent random choices.

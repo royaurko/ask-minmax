@@ -1,0 +1,18 @@
+The rapid growth of peer-to-peer (P2P) networks in the past few years has
+brought with it increases in transit cost to Internet Service Providers (ISPs),
+as peers exchange large amounts of traffic across ISP boundaries. This ISP
+oblivious behavior has resulted in misalignment of incentives between P2P
+networks--that seek to maximize user quality--and ISPs--that would seek to
+minimize costs. Can we design a P2P overlay that accounts for both ISP costs as
+well as quality of service, and attains a desired tradeoff between the two? We
+design a system, which we call MultiTrack, that consists of an overlay of
+multiple \emph{mTrackers} whose purpose is to align these goals. mTrackers
+split demand from users among different ISP domains while trying to minimize
+their individual costs (delay plus transit cost) in their ISP domain. We design
+the signals in this overlay of mTrackers in such a way that potentially
+competitive individual optimization goals are aligned across the mTrackers. The
+mTrackers are also capable of doing admission control in order to ensure that
+users who are from different ISP domains have a fair chance of being admitted
+into the system, while keeping costs in check. We prove analytically that our
+system is stable and achieves maximum utility with minimum cost. Our design
+decisions and control algorithms are validated by Matlab and ns-2 simulations.

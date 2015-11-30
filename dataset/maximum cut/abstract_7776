@@ -1,0 +1,19 @@
+In this paper, we investigate the performance of pseudo-spectral methods in
+computing nearly singular solutions of fluid dynamics equations. We consider
+two different ways of removing the aliasing errors in a pseudo-spectral method.
+The first one is the traditional 2/3 dealiasing rule. The second one is a high
+(36th) order Fourier smoothing which keeps a significant portion of the Fourier
+modes beyond the 2/3 cut-off point in the Fourier spectrum for the 2/3
+dealiasing method. Both the 1D Burgers equation and the 3D incompressible Euler
+equations are considered. We demonstrate that the pseudo-spectral method with
+the high order Fourier smoothing gives a much better performance than the
+pseudo-spectral method with the 2/3 dealiasing rule. Moreover, we show that the
+high order Fourier smoothing method captures about $12 \sim 15%$ more effective
+Fourier modes in each dimension than the 2/3 dealiasing method. For the 3D
+Euler equations, the gain in the effective Fourier codes for the high order
+Fourier smoothing method can be as large as 20% over the 2/3 dealiasing method.
+Another interesting observation is that the error produced by the high order
+Fourier smoothing method is highly localized near the region where the solution
+is most singular, while the 2/3 dealiasing method tends to produce oscillations
+in the entire domain. The high order Fourier smoothing method is also found be
+very stable dynamically. No high frequency instability has been observed.

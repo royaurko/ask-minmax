@@ -1,0 +1,22 @@
+The Min Energy broadcast problem consists in assigning transmission ranges to
+the nodes of an ad-hoc network in order to guarantee a directed spanning tree
+from a given source node and, at the same time, to minimize the energy
+consumption (i.e. the energy cost) yielded by the range assignment. Min energy
+broadcast is known to be NP-hard.
+  We consider random-grid networks where nodes are chosen independently at
+random from the $n$ points of a $\sqrt n \times \sqrt n$ square grid in the
+plane. The probability of the existence of a node at a given point of the grid
+does depend on that point, that is, the probability distribution can be
+non-uniform.
+  By using information-theoretic arguments, we prove a lower bound
+$(1-\epsilon) \frac n{\pi}$ on the energy cost of any feasible solution for
+this problem. Then, we provide an efficient solution of energy cost not larger
+than $1.1204 \frac n{\pi}$.
+  Finally, we present a fully-distributed protocol that constructs a broadcast
+range assignment of energy cost not larger than $8n$,thus still yielding
+constant approximation. The energy load is well balanced and, at the same time,
+the work complexity (i.e. the energy due to all message transmissions of the
+protocol) is asymptotically optimal. The completion time of the protocol is
+only an $O(\log n)$ factor slower than the optimum. The approximation quality
+of our distributed solution is also experimentally evaluated.
+  All bounds hold with probability at least $1-1/n^{\Theta(1)}$.

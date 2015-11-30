@@ -1,0 +1,23 @@
+Near optimal decoding of good error control codes is generally a difficult
+task. However, for a certain type of (sufficiently) good codes an efficient
+decoding algorithm with near optimal performance exists. These codes are
+defined via a combination of constituent codes with low complexity trellis
+representations. Their decoding algorithm is an instance of (loopy) belief
+propagation and is based on an iterative transfer of constituent beliefs. The
+beliefs are thereby given by the symbol probabilities computed in the
+constituent trellises. Even though weak constituent codes are employed close to
+optimal performance is obtained, i.e., the encoder/decoder pair (almost)
+achieves the information theoretic capacity. However, (loopy) belief
+propagation only performs well for a rather specific set of codes, which limits
+its applicability.
+  In this paper a generalisation of iterative decoding is presented. It is
+proposed to transfer more values than just the constituent beliefs. This is
+achieved by the transfer of beliefs obtained by independently investigating
+parts of the code space. This leads to the concept of discriminators, which are
+used to improve the decoder resolution within certain areas and defines
+discriminated symbol beliefs. It is shown that these beliefs approximate the
+overall symbol probabilities. This leads to an iteration rule that (below
+channel capacity) typically only admits the solution of the overall decoding
+problem. Via a Gauss approximation a low complexity version of this algorithm
+is derived. Moreover, the approach may then be applied to a wide range of
+channel maps without significant complexity increase.

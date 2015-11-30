@@ -1,0 +1,16 @@
+Network coding has been successfully used in the past for efficient
+broadcasting in wireless multi-hop networks. Two coding approaches are suitable
+for mobile networks; Random Linear Network Coding (RLNC) and XOR-based coding.
+In this work, we make the observation that RLNC provides increased resilience
+to packet losses compared to XOR-based coding. We develop an analytical model
+that justifies our intuition. However, the model also reveals that combining
+RLNC with probabilistic forwarding, which is the approach taken in the
+literature, may significantly impact RLNC's performance. Therefore, we take the
+novel approach to combine RLNC with a deterministic broadcasting algorithm in
+order to prune transmissions. More specifically, we propose a Connected
+Dominating Set (CDS) based algorithm that works in synergy with RLNC on the
+"packet generation level". Since managing packet generations is a key issue in
+RLNC, we propose a distributed scheme, which is also suitable for mobile
+environments and does not compromise the coding efficiency. We show that the
+proposed algorithm outperforms XOR-based as well as RLNC-based schemes even
+when global knowledge is used for managing packet generations.

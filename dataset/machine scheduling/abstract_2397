@@ -1,0 +1,22 @@
+In order to fully utilize "big data", it is often required to use "big
+models". Such models tend to grow with the complexity and size of the training
+data, and do not make strong parametric assumptions upfront on the nature of
+the underlying statistical dependencies. Kernel methods fit this need well, as
+they constitute a versatile and principled statistical methodology for solving
+a wide range of non-parametric modelling problems. However, their high
+computational costs (in storage and time) pose a significant barrier to their
+widespread adoption in big data applications.
+  We propose an algorithmic framework and high-performance implementation for
+massive-scale training of kernel-based statistical models, based on combining
+two key technical ingredients: (i) distributed general purpose convex
+optimization, and (ii) the use of randomization to improve the scalability of
+kernel methods. Our approach is based on a block-splitting variant of the
+Alternating Directions Method of Multipliers, carefully reconfigured to handle
+very large random feature matrices, while exploiting hybrid parallelism
+typically found in modern clusters of multicore machines. Our implementation
+supports a variety of statistical learning tasks by enabling several loss
+functions, regularization schemes, kernels, and layers of randomized
+approximations for both dense and sparse datasets, in a highly extensible
+framework. We evaluate the ability of our framework to learn models on data
+from applications, and provide a comparison against existing sequential and
+parallel libraries.

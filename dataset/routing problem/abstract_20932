@@ -1,0 +1,23 @@
+Sparsity has become a key concept for solving of high-dimensional inverse
+problems using variational regularization techniques. Recently, using similar
+sparsity-constraints in the Bayesian framework for inverse problems by encoding
+them in the prior distribution has attracted attention. Important questions
+about the relation between regularization theory and Bayesian inference still
+need to be addressed when using sparsity promoting inversion. A practical
+obstacle for these examinations is the lack of fast posterior sampling
+algorithms for sparse, high-dimensional Bayesian inversion: Accessing the full
+range of Bayesian inference methods requires being able to draw samples from
+the posterior probability distribution in a fast and efficient way. This is
+usually done using Markov chain Monte Carlo (MCMC) sampling algorithms. In this
+article, we develop and examine a new implementation of a single component
+Gibbs MCMC sampler for sparse priors relying on L1-norms. We demonstrate that
+the efficiency of our Gibbs sampler increases when the level of sparsity or the
+dimension of the unknowns is increased. This property is contrary to the
+properties of the most commonly applied Metropolis-Hastings (MH) sampling
+schemes: We demonstrate that the efficiency of MH schemes for L1-type priors
+dramatically decreases when the level of sparsity or the dimension of the
+unknowns is increased. Practically, Bayesian inversion for L1-type priors using
+MH samplers is not feasible at all. As this is commonly believed to be an
+intrinsic feature of MCMC sampling, the performance of our Gibbs sampler also
+challenges common beliefs about the applicability of sample based Bayesian
+inference.

@@ -1,0 +1,13 @@
+Given positive integers n and m, and a probability measure P on {0, 1, ...,
+m} the random intersection graph G(n,m,P) on vertex set V = {1,2, ..., n} and
+with attribute set W = {w_1, w_2, ..., w_m} is defined as follows. Let S_1,
+S_2, ..., S_n be independent random subsets of W such that for any v \in V and
+any S \subseteq W we have \pr(S_v = S) = P(|S|) / \binom (m, |S|). The edge set
+of G(n,m,P) consists of those pairs {u,v} V for which S_u and S_v intersect.
+  We study the asymptotic order of the clique number \omega(G(n,m,P)) in random
+intersection graphs with bounded expected degrees. For instance, in the case m
+= \Theta(n) we show that if the vertex degree distribution is power-law with
+exponent \alpha \in (1;2), then the maximum clique is of a polynomial size,
+while if the variance of the degrees is bounded, then the maximum clique has
+(ln n)/(ln ln n) (1 + o_P(1)) vertices whp. In each case there is a polynomial
+algorithm which finds a clique of size \omega(G(n,m,P)) (1-o_P(1)).

@@ -1,0 +1,15 @@
+In a recent thread of papers, we have introduced FQL, a precise specification
+language for test coverage, and developed the test case generation engine
+FShell for ANSI C. In essence, an FQL test specification amounts to a set of
+regular languages, each of which has to be matched by at least one test
+execution. To describe such sets of regular languages, the FQL semantics uses
+an automata-theoretic concept known as rational sets of regular languages
+(RSRLs). RSRLs are automata whose alphabet consists of regular expressions.
+Thus, the language accepted by the automaton is a set of regular expressions.
+  In this paper, we study RSRLs from a theoretic point of view. More
+specifically, we analyze RSRL closure properties under common set theoretic
+operations, and the complexity of membership checking, i.e., whether a regular
+language is an element of a RSRL. For all questions we investigate both the
+general case and the case of finite sets of regular languages. Although a few
+properties are left as open problems, the paper provides a systematic semantic
+foundation for the test specification language FQL.

@@ -1,0 +1,11 @@
+We consider the complexity for computing the approximate sum
+$a_1+a_2+...+a_n$ of a sorted list of numbers $a_1\le a_2\le ...\le a_n$. We
+show an algorithm that computes an $(1+\epsilon)$-approximation for the sum of
+a sorted list of nonnegative numbers in an $O({1\over \epsilon}\min(\log n,
+{\log ({x_{max}\over x_{min}})})\cdot (\log {1\over \epsilon}+\log\log n))$
+time, where $x_{max}$ and $x_{min}$ are the largest and the least positive
+elements of the input list, respectively. We prove a lower bound
+$\Omega(\min(\log n,\log ({x_{max}\over x_{min}}))$ time for every
+O(1)-approximation algorithm for the sum of a sorted list of nonnegative
+elements. We also show that there is no sublinear time approximation algorithm
+for the sum of a sorted list that contains at least one negative number.

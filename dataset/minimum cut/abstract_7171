@@ -1,0 +1,20 @@
+Let $G$ be a graph and ${\mathcal{\tau}}: V(G)\rightarrow \Bbb{N}\cup \{0\}$
+be an assignment of thresholds to the vertices of $G$. A subset of vertices $D$
+is said to be a dynamic monopoly corresponding to $(G, \tau)$ if the vertices
+of $G$ can be partitioned into subsets $D_0, D_1,..., D_k$ such that $D_0=D$
+and for any $i\in {0, ..., k-1}$, each vertex $v$ in $D_{i+1}$ has at least
+$\tau(v)$ neighbors in $D_0\cup ... \cup D_i$. Dynamic monopolies are in fact
+modeling the irreversible spread of influence in social networks. In this paper
+we first obtain a lower bound for the smallest size of any dynamic monopoly in
+terms of the average threshold and the order of graph. Also we obtain an upper
+bound in terms of the minimum vertex cover of graphs. Then we derive the upper
+bound $|G|/2$ for the smallest size of any dynamic monopoly when the graph $G$
+contains at least one odd vertex, where the threshold of any vertex $v$ is set
+as $\lceil (deg(v)+1)/2 \rceil$ (i.e. strict majority threshold). This bound
+improves the best known bound for strict majority threshold. We show that the
+latter bound can be achieved by a polynomial time algorithm. We also show that
+$\alpha'(G)+1$ is an upper bound for the size of strict majority dynamic
+monopoly, where $\alpha'(G)$ stands for the matching number of $G$. Finally, we
+obtain a basic upper bound for the smallest size of any dynamic monopoly, in
+terms of the average threshold and vertex degrees. Using this bound we derive
+some other upper bounds.

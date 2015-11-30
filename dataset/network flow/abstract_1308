@@ -1,0 +1,18 @@
+When the stations in an IEEE 802.11 infrastructure Basic Service Set (BSS)
+employ Transmission Control Protocol (TCP) in the transport layer, this
+exacerbates per-flow unfair access which is a direct result of uplink/downlink
+bandwidth asymmetry in the BSS. We propose a novel and simple analytical model
+to approximately calculate the per-flow TCP congestion window limit that
+provides fair and efficient TCP access in a heterogeneous wired-wireless
+scenario. The proposed analysis is unique in that it considers the effects of
+varying number of uplink and downlink TCP flows, differing Round Trip Times
+(RTTs) among TCP connections, and the use of delayed TCP Acknowledgment (ACK)
+mechanism. Motivated by the findings of this analysis, we design a link layer
+access control block to be employed only at the Access Point (AP) in order to
+resolve the unfair access problem. The novel and simple idea of the proposed
+link layer access control block is employing a congestion control and filtering
+algorithm on TCP ACK packets of uplink flows, thereby prioritizing the access
+of TCP data packets of downlink flows at the AP. Via simulations, we show that
+short- and long-term fair access can be provisioned with the introduction of
+the proposed link layer access control block to the protocol stack of the AP
+while improving channel utilization and access delay.

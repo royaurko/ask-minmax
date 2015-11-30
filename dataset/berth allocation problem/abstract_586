@@ -1,0 +1,18 @@
+We investigate two common numerical techniques for integrating reversible
+moist processes in atmospheric flows in the context of solving the fully
+compressible Euler equations. The first is a one-step, coupled technique based
+on using appropriate invariant variables such that terms resulting from phase
+change are eliminated in the governing equations. In the second approach, which
+is a two-step scheme, separate transport equations for liquid water and vapor
+water are used, and no conversion between water vapor and liquid water is
+allowed in the first step, while in the second step a saturation adjustment
+procedure is performed that correctly allocates the water into its two phases
+based on the Clausius-Clapeyron formula. The numerical techniques we describe
+are first validated by comparing to a well-established benchmark problem.
+Particular attention is then paid to the effect of changing the time scale at
+which the moist variables are adjusted to the saturation requirements in two
+different variations of the two-step scheme. This study is motivated by the
+fact that when acoustic modes are integrated separately in time (neglecting
+phase change related phenomena), or when sound-proof equations are integrated,
+the time scale for imposing saturation adjustment is typically much larger than
+the numerical one related to the acoustics.

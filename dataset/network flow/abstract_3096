@@ -1,0 +1,15 @@
+Ethernet is being considered as the backbone network protocol for
+next-generation automotive control networks. In such networks, Controller Area
+Network (CAN) messages related to automotive control can be sent from a CAN
+network to other sub-networks via the backbone Ethernet bus and, if the CAN
+messages have real-time constraints, these have to be guaranteed. This paper
+presents a simulation environment for CAN--Ethernet Audio Video Bridging (AVB)
+mixed networks based on OMNeT++. We use Ethernet AVB, which can guarantee
+network bandwidth, to improve the real-time property of CAN messages through
+the backbone Ethernet bus. To simulate the networks, we also developed a
+CAN--Ethernet AVB gateway (GW) model. To verify the efficacy of our model, we
+measured the latency of CAN messages sent from a CAN bus to an Ethernet AVB
+node via the backbone Ethernet AVB bus in both bandwidth-guaranteed and
+best-effort queue scenarios. The results indicate that the latency of Ethernet
+AVB frames containing CAN messages is minimized and limited by the
+bandwidth-guaranteed mechanism of Ethernet AVB.

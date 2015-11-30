@@ -1,0 +1,23 @@
+We consider a small cell network (SCN) consisting of N cells, with the small
+cell base stations (SCBSs) equipped with Nt \geq 1 antennas each, serving K
+single antenna user terminals (UTs) per cell. Under this set up, we address the
+following question: given certain time average quality of service (QoS) targets
+for the UTs, what is the minimum transmit power expenditure with which they can
+be met? Our motivation to consider time average QoS constraint comes from the
+fact that modern wireless applications such as file sharing, multi-media etc.
+allow some flexibility in terms of their delay tolerance. Time average QoS
+constraints can lead to greater transmit power savings as compared to
+instantaneous QoS constraints since it provides the flexibility to dynamically
+allocate resources over the fading channel states. We formulate the problem as
+a stochastic optimization problem whose solution is the design of the downlink
+beamforming vectors during each time slot. We solve this problem using the
+approach of Lyapunov optimization and characterize the performance of the
+proposed algorithm. With this algorithm as the reference, we present two main
+contributions that incorporate practical design considerations in SCNs. First,
+we analyze the impact of delays incurred in information exchange between the
+SCBSs. Second, we impose channel state information (CSI) feedback constraints,
+and formulate a joint CSI feedback and beamforming strategy. In both cases, we
+provide performance bounds of the algorithm in terms of satisfying the QoS
+constraints and the time average power expenditure. Our simulation results show
+that solving the problem with time average QoS constraints provide greater
+savings in the transmit power as compared to the instantaneous QoS constraints.

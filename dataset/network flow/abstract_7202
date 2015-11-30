@@ -1,0 +1,16 @@
+In wireless mesh networks such as WLAN (IEEE 802.11s) or WMAN (IEEE 802.11),
+each node should help to relay packets of neighboring nodes toward gateway
+using multi-hop routing mechanisms. Wireless mesh networks usually intensively
+deploy mesh nodes to deal with the problem of dead spot communication. However,
+the higher density of nodes deployed, the higher radio interference occurred.
+This causes significant degradation of system performance. In this paper, we
+first convert network problems into geometry problems in graph theory, and then
+solve the interference problem by geometric algorithms. We first define line
+intersection in a graph to reflect radio interference problem in a wireless
+mesh network. We then use plan sweep algorithm to find intersection lines, if
+any; employ Voronoi diagram algorithm to delimit the regions among nodes; use
+Delaunay Triangulation algorithm to reconstruct the graph in order to minimize
+the interference among nodes. Finally, we use standard deviation to prune off
+those longer links (higher interference links) to have a further enhancement.
+The proposed hybrid solution is proved to be able to significantly reduce
+interference in a wireless mesh network in O(n log n) time complexity.

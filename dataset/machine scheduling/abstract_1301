@@ -1,0 +1,20 @@
+In this article we propose solutions to diverse conflicts that result from
+the deployment of the (still immature) relay node (RN) technology in LTE-A
+networks. These conflicts and their possible solutions have been observed by
+implementing standard-compliant relay functionalities on the Vienna simulator.
+  As an original experimental approach, we model realistic RN operation, taking
+into account that transmitters are not active all the time due to half-duplex
+RN operation. We have rearranged existing elements in the simulator in a manner
+that emulates RN behavior, rather than implementing a standalone brand-new
+component for the simulator. We also study analytically some of the issues
+observed in the interaction between the network and the RNs, to draw
+conclusions beyond simulation observation.
+  The main observations of this paper are that: $i$) Additional time-varying
+interference management steps are needed, because the LTE-A standard employs a
+fixed time division between eNB-RN and RN-UE transmissions (typical relay
+capacity or throughput research models balance them optimally, which is
+unrealistic nowadays); $ii$) There is a trade-off between the time-division
+constraints of relaying and multi-user diversity; the stricter the constraints
+on relay scheduling are, the less flexibility schedulers have to exploit
+channel variation; and $iii$) Thee standard contains a variety of parameters
+for relaying configuration, but not all cases of interest are covered.

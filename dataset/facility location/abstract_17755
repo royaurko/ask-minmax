@@ -1,0 +1,20 @@
+This paper focuses on the analysis of spatially correlated functional data.
+The between-curve correlation is modeled by correlating functional principal
+component scores of the functional data. We propose a Spatial Principal
+Analysis by Conditional Expectation framework to explicitly estimate spatial
+correlations and reconstruct individual curves. This approach works even when
+the observed data per curve are sparse. Assuming spatial stationarity,
+empirical spatial correlations are calculated as the ratio of eigenvalues of
+the smoothed covariance surface $Cov(X_i(s),X_i(t))$ and cross-covariance
+surface $Cov(X_i(s), X_j(t))$ at locations indexed by $i$ and $j$. Then a
+anisotropy Mat\'ern spatial correlation model is fit to empirical correlations.
+Finally, principal component scores are estimated to reconstruct the sparsely
+observed curves. This framework can naturally accommodate arbitrary covariance
+structures, but there is an enormous reduction in computation if one can assume
+the separability of temporal and spatial components. We propose hypothesis
+tests to examine the separability as well as the isotropy effect of spatial
+correlation. Simulation studies and applications of empirical data show
+improvements in the curve reconstruction using our framework over the method
+where curves are assumed to be independent. In addition, we show that the
+asymptotic properties of estimates in uncorrelated case still hold in our case
+if 'mild' spatial correlation is assumed.

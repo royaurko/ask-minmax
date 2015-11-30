@@ -1,0 +1,15 @@
+In this paper, we consider networked estimation of linear, discrete-time
+dynamical systems monitored by a network of agents. In order to minimize the
+power requirement at the (possibly, battery-operated) agents, we require that
+the agents can exchange information with their neighbors only \emph{once per
+dynamical system time-step}; in contrast to consensus-based estimation where
+the agents exchange information until they reach a consensus. It can be
+verified that with this restriction on information exchange, measurement fusion
+alone results in an unbounded estimation error at every such agent that does
+not have an observable set of measurements in its neighborhood. To over come
+this challenge, state-estimate fusion has been proposed to recover the system
+observability. However, we show that adding state-estimate fusion may not
+recover observability when the system matrix is structured-rank ($S$-rank)
+deficient.
+  In this context, we characterize the state-estimate fusion and measurement
+fusion under both full $S$-rank and $S$-rank deficient system matrices.

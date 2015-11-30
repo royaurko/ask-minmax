@@ -1,0 +1,18 @@
+We introduce exponential search trees as a novel technique for converting
+static polynomial space search structures for ordered sets into fully-dynamic
+linear space data structures.
+  This leads to an optimal bound of O(sqrt(log n/loglog n)) for searching and
+updating a dynamic set of n integer keys in linear space. Here searching an
+integer y means finding the maximum key in the set which is smaller than or
+equal to y. This problem is equivalent to the standard text book problem of
+maintaining an ordered set (see, e.g., Cormen, Leiserson, Rivest, and Stein:
+Introduction to Algorithms, 2nd ed., MIT Press, 2001).
+  The best previous deterministic linear space bound was O(log n/loglog n) due
+Fredman and Willard from STOC 1990. No better deterministic search bound was
+known using polynomial space.
+  We also get the following worst-case linear space trade-offs between the
+number n, the word length w, and the maximal key U < 2^w: O(min{loglog n+log
+n/log w, (loglog n)(loglog U)/(logloglog U)}). These trade-offs are, however,
+not likely to be optimal.
+  Our results are generalized to finger searching and string searching,
+providing optimal results for both in terms of n.

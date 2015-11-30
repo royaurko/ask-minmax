@@ -1,0 +1,19 @@
+We introduce a hierarchy of problems between the \textsc{Dominating Set}
+problem and the \textsc{Power Dominating Set} (PDS) problem called the
+$\ell$-round power dominating set ($\ell$-round PDS, for short) problem. For
+$\ell=1$, this is the \textsc{Dominating Set} problem, and for $\ell\geq n-1$,
+this is the PDS problem; here $n$ denotes the number of nodes in the input
+graph. In PDS the goal is to find a minimum size set of nodes $S$ that power
+dominates all the nodes, where a node $v$ is power dominated if (1) $v$ is in
+$S$ or it has a neighbor in $S$, or (2) $v$ has a neighbor $u$ such that $u$
+and all of its neighbors except $v$ are power dominated. Note that rule (1) is
+the same as for the \textsc{Dominating Set} problem, and that rule (2) is a
+type of propagation rule that applies iteratively. The $\ell$-round PDS problem
+has the same set of rules as PDS, except we apply rule (2) in ``parallel'' in
+at most $\ell-1$ rounds. We prove that $\ell$-round PDS cannot be approximated
+better than $2^{\log^{1-\epsilon}{n}}$ even for $\ell=4$ in general graphs. We
+provide a dynamic programming algorithm to solve $\ell$-round PDS optimally in
+polynomial time on graphs of bounded tree-width. We present a PTAS (polynomial
+time approximation scheme) for $\ell$-round PDS on planar graphs for
+$\ell=O(\tfrac{\log{n}}{\log{\log{n}}})$. Finally, we give integer programming
+formulations for $\ell$-round PDS.

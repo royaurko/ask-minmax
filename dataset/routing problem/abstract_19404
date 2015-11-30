@@ -1,0 +1,19 @@
+Local Fourier analysis is a strong and well-established tool for analyzing
+the convergence of numerical methods for partial differential equations. The
+key idea of local Fourier analysis is to represent the occurring functions in
+terms of a Fourier series and to use this representation to study certain
+properties of the particular numerical method, like the convergence rate or an
+error estimate.
+  In the process of applying a local Fourier analysis, it is typically
+necessary to determine the supremum of a more or less complicated term with
+respect to all frequencies and, potentially, other variables. The problem of
+computing such a supremum can be rewritten as a quantifier elimination problem,
+which can be solved with cylindrical algebraic decomposition, a well-known tool
+from symbolic computation.
+  The combination of local Fourier analysis and cylindrical algebraic
+decomposition is a machinery that can be applied to a wide class of problems.
+In the present paper, we will discuss two examples. The first example is to
+compute the convergence rate of a multigrid method. As second example we will
+see that the machinery can also be used to do something rather different: We
+will compare approximation error estimates for different kinds of
+discretizations.

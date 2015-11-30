@@ -1,0 +1,11 @@
+We present algorithms for initializing a convolutional network coding scheme
+in networks that may contain cycles. An initialization process is needed if the
+network is unknown or if local encoding kernels are chosen randomly. During the
+initialization process every source node transmits basis vectors and every sink
+node measures the impulse response of the network. The impulse response is then
+used to find a relationship between the transmitted and the received symbols,
+which is needed for a decoding algorithm and to find the set of all achievable
+rates. Unlike acyclic networks, for which it is enough to transmit basis
+vectors one after another, the initialization of cyclic networks is more
+involved, as pilot symbols interfere with each other and the impulse response
+is of infinite duration.

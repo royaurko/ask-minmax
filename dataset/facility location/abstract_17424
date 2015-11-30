@@ -1,0 +1,22 @@
+This paper proposes a novel computationally efficient dynamic
+bi-orthogonality based approach for calibration of a computer simulator with
+high dimensional parametric and model structure uncertainty. The proposed
+method is based on a decomposition of the solution into mean and a random field
+using a generic Karhunnen-Loeve expansion. The random field is represented as a
+convolution of separable Hilbert spaces in stochastic and spacial dimensions
+that are spectrally represented using respective orthogonal bases. In
+particular, the present paper investigates generalized polynomial chaos bases
+for stochastic dimension and eigenfunction bases for spacial dimension. Dynamic
+orthogonality is used to derive closed form equations for the time evolution of
+mean, spacial and the stochastic fields. The resultant system of equations
+consists of a partial differential equation (PDE) that define dynamic evolution
+of the mean, a set of PDEs to define the time evolution of eigenfunction bases,
+while a set of ordinary differential equations (ODEs) define dynamics of the
+stochastic field. This system of dynamic evolution equations efficiently
+propagates the prior parametric uncertainty to the system response. The
+resulting bi-orthogonal expansion of the system response is used to reformulate
+the Bayesian inference for efficient exploration of the posterior distribution.
+Efficacy of the proposed method is investigated for calibration of a 2D
+transient diffusion simulator with uncertain source location and diffusivity.
+Computational efficiency of the method is demonstrated against a Monte Carlo
+method and a generalized polynomial chaos approach.

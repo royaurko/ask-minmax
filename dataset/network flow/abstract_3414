@@ -1,0 +1,23 @@
+Multiscale simulation methods have been developed based on the local stress
+sampling strategy and applied to three flow problems with different difficulty
+levels: (a) general flow problems of simple fluids, (b) parallel
+(one-dimensional) flow problems of polymeric liquids, and (c) general (two- or
+three-dimensional) flow problems of polymeric liquids. In our multiscale
+methods, the local stress of each fluid element is calculated directly by
+performing microscopic or mesoscopic simulations according to the local flow
+quantities instead of using any constitutive relations. For simple fluids (a),
+such as the Lenard-Jones liquid, a multiscale method combining MD and CFD
+simulations is developed based on the local equilibrium assumption without
+memories of the flow history. (b), the multiscale method is extended to take
+into account the memory effects that arise in hydrodynamic stress due to the
+slow relaxation of polymer-chain conformations. The memory of polymer dynamics
+on each fluid element is thus resolved by performing MD simulations in which
+cells are fixed at the mesh nodes of the CFD simulations.For general (two- or
+three-dimensional) flow problems of polymeric liquids (c), it is necessary to
+trace the history of microscopic information such as polymer-chain
+conformation, which carries the memories of past flow history, along the
+streamline of each fluid element. A Lagrangian-based CFD is thus implemented to
+correctly advect the polymer-chain conformation consistently with the flow. On
+each fluid element, coarse-grained polymer simulations are carried out to
+consider the dynamics of entangled polymer chains that show extremely slow
+relaxation compared to microscopic time scales.

@@ -1,0 +1,21 @@
+The single-chip crosspoint-queued (CQ) switch is a compact switching
+architecture that has all its buffers placed at the crosspoints of input and
+output lines. Scheduling is also performed inside the switching core, and does
+not rely on latency-limited communications with input or output line-cards.
+Compared with other legacy switching architectures, the CQ switch has the
+advantages of high throughput, minimal delay, low scheduling complexity, and no
+speedup requirement. However, the crosspoint buffers are small and segregated,
+thus how to efficiently use the buffers and avoid packet drops remains a major
+problem that needs to be addressed. In this paper, we consider load balancing,
+deflection routing, and buffer pooling for efficient buffer sharing in the CQ
+switch. We also design scheduling algorithms to maintain the correct packet
+order even while employing multi-path switching and resolve contentions caused
+by multiplexing. All these techniques require modest hardware modifications and
+memory speedup in the switching core, but can greatly boost the buffer
+utilizations by up to 10 times and reduce the packet drop rates by one to three
+orders of magnitude. Extensive simulations and analyses have been done to
+demonstrate the advantages of the proposed buffering and scheduling techniques
+in various aspects. By pushing the on-chip memory to the limit of current ASIC
+technology, we show that a cell drop rate of 10e-8, which is low enough for
+practical uses, can be achieved under real Internet traffic traces
+corresponding to a load of 0.9.

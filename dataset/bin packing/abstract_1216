@@ -1,0 +1,16 @@
+R\'enyi's parking problem (or $1D$ sequential interval packing problem) dates
+back to 1958, when R\'enyi studied the following random process: Consider an
+interval $I$ of length $x$, and sequentially and randomly pack disjoint unit
+intervals in $I$ until the remaining space prevents placing any new segment.
+The expected value of the measure of the covered part of $I$ is $M(x)$, so that
+the ratio $M(x)/x$ is the expected filling density of the random process.
+Following recent work by Gargano {\it et al.} \cite{GWML(2005)}, we studied the
+discretized version of the above process by considering the packing of the $1D$
+discrete lattice interval $\{1,2,...,n+2k-1\}$ with disjoint blocks of $(k+1)$
+integers but, as opposed to the mentioned \cite{GWML(2005)} result, our
+exclusion process is symmetric, hence more natural. Furthermore, we were able
+to obtain useful recursion formulas for the expected number of $r$-gaps ($0\le
+r\le k$) between neighboring blocks. We also provided very fast converging
+series and extensive computer simulations for these expected numbers, so that
+the limiting filling density of the long line segment (as $n\to \infty$) is
+R\'enyi's famous parking constant, $0.7475979203...$.

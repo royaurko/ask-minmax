@@ -1,0 +1,26 @@
+We consider the problem of discovering overlapping communities in networks
+which we model as generalizations of Graph Packing problems with overlap.
+  We seek a collection $\mathcal{S}' \subseteq \mathcal{S}$ consisting of at
+least $k$ sets subject to certain disjointness restrictions. In the $r$-Set
+Packing with $t$-Membership, each element of $\mathcal{U}$ belongs to at most
+$t$ sets of $\mathcal{S'}$ while in $t$-Overlap each pair of sets in
+$\mathcal{S'}$ overlaps in at most $t$ elements. Each set of $\mathcal{S}$ has
+at most $r$ elements.
+  Similarly, both of our graph packing problems seek a collection $\mathcal{K}$
+of at least $k$ subgraphs in a graph $G$ each isomorphic to a graph $H \in
+\mathcal{H}$. In $\mathcal{H}$-Packing with $t$-Membership, each vertex of $G$
+belongs to at most $t$ subgraphs of $\mathcal{K}$ while in $t$-Overlap each
+pair of subgraphs in $\mathcal{K}$ overlaps in at most $t$ vertices. Each
+member of $\mathcal{H}$ has at most $r$ vertices and $m$ edges.
+  We show NP-Completeness results for all of our packing problems and we give a
+dichotomy result for the $\mathcal{H}$-Packing with $t$-Membership problem
+analogous to the Kirkpatrick and Hell \cite{Kirk78}. We reduce the $r$-Set
+Packing with $t$-Membership to a problem kernel with $O((r+1)^r k^{r})$
+elements while we achieve a kernel with $O(r^r k^{r-t-1})$ elements for the
+$r$-Set Packing with $t$-Overlap. In addition, we reduce the
+$\mathcal{H}$-Packing with $t$-Membership and its edge version to problem
+kernels with $O((r+1)^r k^{r})$ and $O((m+1)^{m} k^{{m}})$ vertices,
+respectively. On the other hand, we achieve kernels with $O(r^r k^{r-t-1})$ and
+$O(m^{m} k^{m-t-1})$ vertices for the $\mathcal{H}$-Packing with $t$-Overlap
+and its edge version, respectively. In all cases, $k$ is the input parameter
+while $t$, $r$, and $m$ are constants.

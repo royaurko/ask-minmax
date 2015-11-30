@@ -1,0 +1,17 @@
+Laplacian matrices of graphs arise in large-scale computational applications
+such as machine learning; spectral clustering of images, genetic data and web
+pages; transportation network flows; electrical resistor circuits; and elliptic
+partial differential equations discretized on unstructured grids with finite
+elements. A Lean Algebraic Multigrid (LAMG) solver of the linear system Ax=b is
+presented, where A is a graph Laplacian. LAMG's run time and storage are linear
+in the number of graph edges. LAMG consists of a setup phase, in which a
+sequence of increasingly-coarser Laplacian systems is constructed, and an
+iterative solve phase using multigrid cycles. General graphs pose algorithmic
+challenges not encountered in traditional applications of algebraic multigrid.
+LAMG combines a lean piecewise-constant interpolation, judicious node
+aggregation based on a new node proximity definition, and an energy correction
+of the coarse-level systems. This results in fast convergence and substantial
+overhead and memory savings. A serial LAMG implementation scaled linearly for a
+diverse set of 1666 real-world graphs with up to six million edges. This
+multilevel methodology can be fully parallelized and extended to eigenvalue
+problems and other graph computations.

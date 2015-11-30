@@ -1,0 +1,21 @@
+Our article deals with Bayesian inference for a general state space model
+with the simulated likelihood computed by the particle filter. We show
+empirically that the partially or fully adapted particle filters can be much
+more efficient than the standard particle, especially when the signal to noise
+ratio is high. This is especially important because using the particle filter
+within MCMC sampling is O(T^2), where T is the sample size. We also show that
+an adaptive independent proposal for the unknown parameters based on a mixture
+of normals can be much more efficient than the usual optimal random walk
+methods because the simulated likelihood is not continuous in the parameters
+and the cost of constructing a good adaptive proposal is negligible compared to
+the cost of evaluating the simulated likelihood. Independent \MH proposals are
+also attractive because they are easy to run in parallel on multiple
+processors. The article also shows that the proposed \aimh sampler converges to
+the posterior distribution. We also show that the marginal likelihood of any
+state space model can be obtained in an efficient and unbiased manner by using
+the \pf making model comparison straightforward. Obtaining the marginal
+likelihood is often difficult using other methods. Finally, we prove that the
+simulated likelihood obtained by the auxiliary particle filter is unbiased.
+This result is fundamental to using the particle for MCMC sampling and is first
+obtained in a more abstract and difficult setting by Del Moral (2004). However,
+our proof is direct and will make the result accessible to readers.

@@ -1,0 +1,16 @@
+We present long term evolutions of a single black hole of mass $M$ with the
+BSSN system using pseudospectral methods. For our simulations we use the SGRID
+code where the BSSN system is implemented in its standard second order in space
+form. Previously we found that such simulations are quite unstable. The main
+goal of this paper is to present two improvements which now allow us to evolve
+for longer times. The first improvement is related to the boundary conditions
+at the excised black hole interior. We now use a gauge condition that ensures
+that all modes are going into the black hole, so that no boundary conditions
+are needed at the excision surface. The second more significant improvement has
+to do with our particular numerical method and involves filters based on
+projecting the double Fourier expansions used for the angular dependence onto
+Spherical Harmonics. With these two improvements it is now easily possible to
+evolve for several thousand $M$. The only remaining limitation seems to be the
+radiative outer boundary conditions used here. Yet this problem can be
+ameliorated by pushing out the location of the outer boundary, which leads to
+even longer run-times.

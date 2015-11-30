@@ -1,0 +1,18 @@
+New high-throughput sequencing technologies have made it possible to pursue
+the advent of genome-wide transcriptomics. That progress combined with the
+recent discovery of regulatory non-coding RNAs (ncRNAs) has necessitated fast
+and accurate algorithms to predict RNA-RNA interaction probability and
+structure. Although there are algorithms to predict minimum free energy
+interaction secondary structure for two nucleic acids, little work has been
+done to exploit the information invested in the base pair probabilities to
+improve interaction structure prediction. In this paper, we present an
+algorithm to predict the Hamming centroid of the Boltzmann ensemble of
+interaction structures. We also present an efficient algorithm to sample
+interaction structures from the ensemble. Our sampling algorithm uses a
+balanced scheme for traversing indices which improves the running time of the
+Ding-Lawrence sampling algorithm. The Ding-Lawrence sampling algorithm has
+$O(n^2m^2)$ time complexity whereas our algorithm has $O((n+m)^2\log(n+m))$
+time complexity, in which $n$ and $m$ are the lengths of input strands. We
+implemented our algorithm in a new version of {\tt piRNA} and compared our
+structure prediction results with competitors. Our centroid prediction
+outperforms competitor minimum-free-energy prediction algorithms on average.

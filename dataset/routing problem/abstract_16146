@@ -1,0 +1,16 @@
+Numerical solution of reaction-diffusion equations in three dimensions is one
+of the most challenging applied mathematical problems. Since these simulations
+are very time consuming, any ideas and strategies aiming at the reduction of
+CPU time are important topics of research. A general and robust idea is the
+parallelization of source codes/programs. Recently, the technological
+development of graphics hardware created a possibility to use desktop video
+cards to solve numerically intensive problems. We present a powerful parallel
+computing framework to solve reaction-diffusion equations numerically using the
+Graphics Processing Units (GPUs) with CUDA. Four different reaction-diffusion
+problems, (i) diffusion of chemically inert compound, (ii) Turing pattern
+formation, (iii) phase separation in the wake of a moving diffusion front and
+(iv) air pollution dispersion were solved, and additionally both the Shared
+method and the Moving Tiles method were tested. Our results show that parallel
+implementation achieves typical acceleration values in the order of 5-40 times
+compared to CPU using a single-threaded implementation on a 2.8 GHz desktop
+computer.

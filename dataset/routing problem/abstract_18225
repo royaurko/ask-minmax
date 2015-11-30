@@ -1,0 +1,13 @@
+Studying single-particle dynamics over many periods of oscillations is a
+well-understood problem solved using symplectic integration. Such integration
+schemes derive their update sequence from an approximate Hamiltonian,
+guaranteeing that the geometric structure of the underlying problem is
+preserved. Simulating a self-consistent system over many oscillations can
+introduce numerical artifacts such as grid heating. This unphysical heating
+stems from using non-symplectic methods on Hamiltonian systems. With this
+guidance, we derive an electrostatic algorithm using a discrete form of
+Hamilton's Principle. The resulting algorithm, a gridless spectral
+electrostatic macroparticle model, does not exhibit the unphysical heating
+typical of most particle-in-cell methods. We present results of this using a
+two-body problem as an example of the algorithm's energy- and
+momentum-conserving properties.

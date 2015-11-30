@@ -1,0 +1,17 @@
+This paper presents a novel extended dynamic programming approach for energy
+minimization (EDP) to solve the correspondence problem for stereo and motion. A
+significant speedup is achieved using a recursive minimum search strategy
+(RMS). The mentioned speedup is particularly important if the disparity space
+is 2D as well as 3D. The proposed RMS can also be applied in the well-known
+dynamic programming (DP) approach for stereo and motion. In this case, the
+general 2D problem of the global discrete energy minimization is reduced to
+several mutually independent sub-problems of the one-dimensional minimization.
+The EDP method is used when the approximation of the general 2D discrete energy
+minimization problem is considered. Then the RMS algorithm is an essential part
+of the EDP method. Using the EDP algorithm we obtain a lower energy bound than
+the graph cuts (GC) expansion technique on stereo and motion problems. The
+proposed calculation scheme possesses natural parallelism and can be realized
+on graphics processing unit (GPU) platforms, and can be potentially restricted
+further by the number of scanlines in the image plane. Furthermore, the RMS and
+EDP methods can be used in any optimization problem where the objective
+function meets specific conditions in the smoothness term.

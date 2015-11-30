@@ -1,0 +1,26 @@
+Consider an attributed graph whose vertices are colored green or red, but
+only a few are observed to be red. The color of the other vertices is
+unobserved. Typically, the unknown total number of red vertices is small. The
+vertex nomination problem is to nominate one of the unobserved vertices as
+being red. The edge set of the graph is a subset of the set of unordered pairs
+of vertices. Suppose that each edge is also colored green or red and this is
+observed for all edges. The context statistic of a vertex is defined as the
+number of observed red vertices connected to it, and its content statistic is
+the number of red edges incident to it. Assuming that these statistics are
+independent between vertices and that red edges are more likely between red
+vertices, Coppersmith and Priebe (2012) proposed a likelihood model based on
+these statistics. Here, we formulate a Bayesian model using the proposed
+likelihood together with prior distributions chosen for the unknown parameters
+and unobserved vertex colors. From the resulting posterior distribution, the
+nominated vertex is the one with the highest posterior probability of being
+red. Inference is conducted using a Metropolis-within-Gibbs algorithm, and
+performance is illustrated by a simulation study. Results show that (i) the
+Bayesian model performs significantly better than chance; (ii) the probability
+of correct nomination increases with increasing posterior probability that the
+nominated vertex is red; and (iii) the Bayesian model either matches or
+performs better than the method in Coppersmith and Priebe. An application
+example is provided using the Enron email corpus, where vertices represent
+Enron employees and their associates, observed red vertices are known
+fraudsters, red edges represent email communications perceived as fraudulent,
+and we wish to identify one of the latent vertices as most likely to be a
+fraudster.

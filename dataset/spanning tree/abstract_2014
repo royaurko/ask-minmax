@@ -1,0 +1,18 @@
+In this paper, we propose a new construction of constantdegree expanders
+motivated by their application in P2P overlay networks and in particular in the
+design of robust trees overlay. Our key result can be stated as follows.
+Consider a complete binary tree T and construct a random pairing {\Pi} between
+leaf nodes and internal nodes. We prove that the graph G\Pi obtained from T by
+contracting all pairs (leaf-internal nodes) achieves a constant node expansion
+with high probability. The use of our result in improving the robustness of
+tree overlays is straightforward. That is, if each physical node participating
+to the overlay manages a random pair that couples one virtual internal node and
+one virtual leaf node then the physical-node layer exhibits a constant
+expansion with high probability. We encompass the difficulty of obtaining this
+random tree virtualization by proposing a local, selforganizing and churn
+resilient uniformly-random pairing algorithm with O(log2 n) running time. Our
+algorithm has the merit to not modify the original tree virtual overlay (we
+just control the mapping between physical nodes and virtual nodes). Therefore,
+our scheme is general and can be applied to a large number of tree overlay
+implementations. We validate its performances in dynamic environments via
+extensive simulations.

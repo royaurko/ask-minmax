@@ -1,0 +1,22 @@
+We consider the problem of \emph{optimal matching with queues} in dynamic
+systems and investigate the value-of-information. In such systems, the
+operators match tasks and resources stored in queues, with the objective of
+maximizing the system utility of the matching reward profile, minus the average
+matching cost. This problem appears in many practical systems and the main
+challenges are the no-underflow constraints, and the lack of matching-reward
+information and system dynamics statistics. We develop two online matching
+algorithms: Learning-aided Reward optimAl Matching ($\mathtt{LRAM}$) and
+Dual-$\mathtt{LRAM}$ ($\mathtt{DRAM}$) to effectively resolve both challenges.
+Both algorithms are equipped with a learning module for estimating the
+matching-reward information, while $\mathtt{DRAM}$ incorporates an additional
+module for learning the system dynamics. We show that both algorithms achieve
+an $O(\epsilon+\delta_r)$ close-to-optimal utility performance for any
+$\epsilon>0$, while $\mathtt{DRAM}$ achieves a faster convergence speed and a
+better delay compared to $\mathtt{LRAM}$, i.e., $O(\delta_{z}/\epsilon +
+\log(1/\epsilon)^2))$ delay and $O(\delta_z/\epsilon)$ convergence under
+$\mathtt{DRAM}$ compared to $O(1/\epsilon)$ delay and convergence under
+$\mathtt{LRAM}$ ($\delta_r$ and $\delta_z$ are maximum estimation errors for
+reward and system dynamics). Our results reveal that information of different
+system components can play very different roles in algorithm performance and
+provide a systematic way for designing joint learning-control algorithms for
+dynamic systems.

@@ -1,0 +1,17 @@
+We present a probabilistic method for linking multiple datafiles. This task
+is not trivial in the absence of unique identifiers for the individuals
+recorded. This is a common scenario when linking census data to coverage
+measurement surveys for census coverage evaluation, and in general when
+multiple record-systems need to be integrated for posterior analysis. Our
+method generalizes the Fellegi-Sunter theory for linking records from two
+datafiles and its modern implementations. The multiple record linkage goal is
+to classify the record K-tuples coming from K datafiles according to the
+different matching patterns. Our method incorporates the transitivity of
+agreement in the computation of the data used to model matching probabilities.
+We use a mixture model to fit matching probabilities via maximum likelihood
+using the EM algorithm. We present a method to decide the record K-tuples
+membership to the subsets of matching patterns and we prove its optimality. We
+apply our method to the integration of three Colombian homicide record systems
+and we perform a simulation study in order to explore the performance of the
+method under measurement error and different scenarios. The proposed method
+works well and opens some directions for future research.

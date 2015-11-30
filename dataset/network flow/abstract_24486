@@ -1,0 +1,18 @@
+The fast evolving nature of modern cyber threats and network monitoring needs
+calls for new, "software-defined", approaches to simplify and quicken
+programming and deployment of online (stream-based) traffic analysis functions.
+StreaMon is a carefully designed data-plane abstraction devised to scalably
+decouple the "programming logic" of a traffic analysis application (tracked
+states, features, anomaly conditions, etc.) from elementary primitives
+(counting and metering, matching, events generation, etc), efficiently
+pre-implemented in the probes, and used as common instruction set for
+supporting the desired logic. Multi-stage multi-step real-time tracking and
+detection algorithms are supported via the ability to deploy custom states,
+relevant state transitions, and associated monitoring actions and triggering
+conditions. Such a separation entails platform-independent, portable, online
+traffic analysis tasks written in a high level language, without requiring
+developers to access the monitoring device internals and program their custom
+monitoring logic via low level compiled languages (e.g., C, assembly, VHDL). We
+validate our design by developing a prototype and a set of simple (but
+functionally demanding) use-case applications and by testing them over real
+traffic traces.

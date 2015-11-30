@@ -1,0 +1,16 @@
+We address the problem of un-supervised soft-clustering called
+micro-clustering. The aim of the problem is to enumerate all groups composed of
+records strongly related to each other, while standard clustering methods
+separate records at sparse parts. The problem formulation of micro-clustering
+is non-trivial. Clique mining in a similarity graph is a typical approach, but
+it results in a huge number of cliques that are of many similar cliques. We
+propose a new concept data polishing. The cause of huge solutions can be
+considered that the groups are not clear in the data, that is, the boundaries
+of the groups are not clear, because of noise, uncertainty, lie, lack, etc.
+Data polishing clarifies the groups by perturbating the data. Specifically,
+dense subgraphs that would correspond to clusters are replaced by cliques. The
+clusters are clarified as maximal cliques, thus the number of maximal cliques
+will be drastically reduced. We also propose an efficient algorithm applicable
+even for large scale data. Computational experiments showed the efficiency of
+our algorithm, i.e., the number of solutions is small, (e.g., 1,000), the
+members of each group are deeply related, and the computation time is short.

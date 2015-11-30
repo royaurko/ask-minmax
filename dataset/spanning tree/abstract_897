@@ -1,0 +1,18 @@
+We consider the problem of counting straight-edge triangulations of a given
+set $P$ of $n$ points in the plane. Until very recently it was not known
+whether the exact number of triangulations of $P$ can be computed
+asymptotically faster than by enumerating all triangulations. We now know that
+the number of triangulations of $P$ can be computed in $O^{*}(2^{n})$ time,
+which is less than the lower bound of $\Omega(2.43^{n})$ on the number of
+triangulations of any point set. In this paper we address the question of
+whether one can approximately count triangulations in sub-exponential time. We
+present an algorithm with sub-exponential running time and sub-exponential
+approximation ratio, that is, denoting by $\Lambda$ the output of our
+algorithm, and by $c^{n}$ the exact number of triangulations of $P$, for some
+positive constant $c$, we prove that $c^{n}\leq\Lambda\leq c^{n}\cdot
+2^{o(n)}$. This is the first algorithm that in sub-exponential time computes a
+$(1+o(1))$-approximation of the base of the number of triangulations, more
+precisely, $c\leq\Lambda^{\frac{1}{n}}\leq(1 + o(1))c$. Our algorithm can be
+adapted to approximately count other crossing-free structures on $P$, keeping
+the quality of approximation and running time intact. In this paper we show how
+to do this for matchings and spanning trees.

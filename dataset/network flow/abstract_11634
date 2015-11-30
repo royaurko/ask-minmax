@@ -1,0 +1,17 @@
+In this paper we present an optimization-based view of distributed parameter
+estimation and observational social learning in networks. Agents receive a
+sequence of random, independent and identically distributed (i.i.d.) signals,
+each of which individually may not be informative about the underlying true
+state, but the signals together are globally informative enough to make the
+true state identifiable. Using an optimization-based characterization of
+Bayesian learning as proximal stochastic gradient descent (with
+Kullback-Leibler divergence from a prior as a proximal function), we show how
+to efficiently use a distributed, online variant of Nesterov's dual averaging
+method to solve the estimation with purely local information. When the true
+state is globally identifiable, and the network is connected, we prove that
+agents eventually learn the true parameter using a randomized gossip scheme. We
+demonstrate that with high probability the convergence is exponentially fast
+with a rate dependent on the KL divergence of observations under the true state
+from observations under the second likeliest state. Furthermore, our work also
+highlights the possibility of learning under continuous adaptation of network
+which is a consequence of employing constant, unit stepsize for the algorithm.

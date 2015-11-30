@@ -1,0 +1,13 @@
+A data structure is presented for point location in connected planar
+subdivisions when the distribution of queries is known in advance. The data
+structure has an expected query time that is within a constant factor of
+optimal. More specifically, an algorithm is presented that preprocesses a
+connected planar subdivision G of size n and a query distribution D to produce
+a point location data structure for G. The expected number of point-line
+comparisons performed by this data structure, when the queries are distributed
+according to D, is H + O(H^{2/3}+1) where H=H(G,D) is a lower bound on the
+expected number of point-line comparisons performed by any linear decision tree
+for point location in G under the query distribution D. The preprocessing
+algorithm runs in O(n log n) time and produces a data structure of size O(n).
+These results are obtained by creating a Steiner triangulation of G that has
+near-minimum entropy.

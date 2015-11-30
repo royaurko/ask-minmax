@@ -1,0 +1,13 @@
+We propose a distributed algorithm for solving the optimization problem Basis
+Pursuit (BP). BP finds the least L1-norm solution of the underdetermined linear
+system Ax = b and is used, for example, in compressed sensing for
+reconstruction. Our algorithm solves BP on a distributed platform such as a
+sensor network, and is designed to minimize the communication between nodes.
+The algorithm only requires the network to be connected, has no notion of a
+central processing node, and no node has access to the entire matrix A at any
+time. We consider two scenarios in which either the columns or the rows of A
+are distributed among the compute nodes. Our algorithm, named D-ADMM, is a
+decentralized implementation of the alternating direction method of
+multipliers. We show through numerical simulation that our algorithm requires
+considerably less communications between the nodes than the state-of-the-art
+algorithms.

@@ -1,0 +1,19 @@
+In the classic multi-armed bandits problem, the goal is to have a policy for
+dynamically operating arms that each yield stochastic rewards with unknown
+means. The key metric of interest is regret, defined as the gap between the
+expected total reward accumulated by an omniscient player that knows the reward
+means for each arm, and the expected total reward accumulated by the given
+policy. The policies presented in prior work have storage, computation and
+regret all growing linearly with the number of arms, which is not scalable when
+the number of arms is large. We consider in this work a broad class of
+multi-armed bandits with dependent arms that yield rewards as a linear
+combination of a set of unknown parameters. For this general framework, we
+present efficient policies that are shown to achieve regret that grows
+logarithmically with time, and polynomially in the number of unknown parameters
+(even though the number of dependent arms may grow exponentially). Furthermore,
+these policies only require storage that grows linearly in the number of
+unknown parameters. We show that this generalization is broadly applicable and
+useful for many interesting tasks in networks that can be formulated as
+tractable combinatorial optimization problems with linear objective functions,
+such as maximum weight matching, shortest path, and minimum spanning tree
+computations.

@@ -1,0 +1,26 @@
+In the context of answer set programming, this work investigates symmetry
+detection and symmetry breaking to eliminate symmetric parts of the search
+space and, thereby, simplify the solution process. We contribute a reduction of
+symmetry detection to a graph automorphism problem which allows to extract
+symmetries of a logic program from the symmetries of the constructed coloured
+graph. We also propose an encoding of symmetry-breaking constraints in terms of
+permutation cycles and use only generators in this process which implicitly
+represent symmetries and always with exponential compression. These ideas are
+formulated as preprocessing and implemented in a completely automated flow that
+first detects symmetries from a given answer set program, adds
+symmetry-breaking constraints, and can be applied to any existing answer set
+solver. We demonstrate computational impact on benchmarks versus direct
+application of the solver.
+  Furthermore, we explore symmetry breaking for answer set programming in two
+domains: first, constraint answer set programming as a novel approach to
+represent and solve constraint satisfaction problems, and second, distributed
+nonmonotonic multi-context systems. In particular, we formulate a
+translation-based approach to constraint answer set solving which allows for
+the application of our symmetry detection and symmetry breaking methods. To
+compare their performance with a-priori symmetry breaking techniques, we also
+contribute a decomposition of the global value precedence constraint that
+enforces domain consistency on the original constraint via the unit-propagation
+of an answer set solver. We evaluate both options in an empirical analysis. In
+the context of distributed nonmonotonic multi-context system, we develop an
+algorithm for distributed symmetry detection and also carry over
+symmetry-breaking constraints for distributed answer set programming.

@@ -1,0 +1,16 @@
+When studying safety properties of (formal) protocol models, it is customary
+to view the scheduler as an adversary: an entity trying to falsify the safety
+property. We show that in the context of security protocols, and in particular
+of anonymizing protocols, this gives the adversary too much power; for
+instance, the contents of encrypted messages and internal computations by the
+parties should be considered invisible to the adversary.
+  We restrict the class of schedulers to a class of admissible schedulers which
+better model adversarial behaviour. These admissible schedulers base their
+decision solely on the past behaviour of the system that is visible to the
+adversary.
+  Using this, we propose a definition of anonymity: for all admissible
+schedulers the identity of the users and the observations of the adversary are
+independent stochastic variables. We also develop a proof technique for typical
+cases that can be used to proof anonymity: a system is anonymous if it is
+possible to `exchange' the behaviour of two users without the adversary
+`noticing'.

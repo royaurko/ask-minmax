@@ -1,0 +1,13 @@
+In this work, binary block-to-block distribution matching is considered. m
+independent and uniformly distributed bits are mapped to n output bits
+resembling a target product distribution. A rate R is called achieved by a
+sequence of encoder-decoder pairs, if for m,n to infinity, (1) m/n approaches
+R, (2) the informational divergence per bit of the output distribution and the
+target distribution goes to zero, and (3) the probability of erroneous decoding
+goes to zero. It is shown that the maximum achievable rate is equal to the
+entropy of the target distribution. A practical encoder-decoder pair is
+constructed that provably achieves the maximum rate in the limit. Numerical
+results illustrate that the suggested system operates close to the limits with
+reasonable complexity. The key idea is to internally use a fixed-to-variable
+length matcher and to compensate underflow by random mapping and to cast an
+error when overflow occurs.

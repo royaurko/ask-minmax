@@ -1,0 +1,23 @@
+Surface mapping plays an important role in geometric processing. They induce
+both area and angular distortions. If the angular distortion is bounded, the
+mapping is called a {\it quasi-conformal} map. Many surface maps in our
+physical world are quasi-conformal. The angular distortion of a quasi-conformal
+map can be represented by Beltrami differentials. According to quasi-conformal
+Teichm\"uller theory, there is an 1-1 correspondence between the set of
+Beltrami differentials and the set of quasi-conformal surface maps. Therefore,
+every quasi-conformal surface map can be fully determined by the Beltrami
+differential and can be reconstructed by solving the so-called Beltrami
+equation.
+  In this work, we propose an effective method to solve the Beltrami equation
+on general Riemann surfaces. The solution is a quasi-conformal map associated
+with the prescribed Beltrami differential. We firstly formulate a discrete
+analog of quasi-conformal maps on triangular meshes. Then, we propose an
+algorithm to compute discrete quasi-conformal maps. The main strategy is to
+define a discrete auxiliary metric of the source surface, such that the
+original quasi-conformal map becomes conformal under the newly defined discrete
+metric. The associated map can then be obtained by using the discrete Yamabe
+flow method. Numerically, the discrete quasi-conformal map converges to the
+continuous real solution as the mesh size approaches to 0. We tested our
+algorithm on surfaces scanned from real life with different topologies.
+Experimental results demonstrate the generality and accuracy of our auxiliary
+metric method.

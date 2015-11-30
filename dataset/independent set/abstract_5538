@@ -1,0 +1,20 @@
+Hereditarily finite sets (sets which are finite and have only hereditarily
+finite sets as members) are basic mathematical and computational objects, and
+also stand at the basis of some programming languages. This raises the need for
+efficient representation of such sets, for example by numbers. In 2008, Kirby
+proposed an adjunctive hierarchy of hereditarily finite sets, based on the fact
+that they can also be seen as built up from the empty set by repeated
+adjunction, that is, by the addition of a new single element drawn from the
+already existing sets to an already existing set. Determining the cardinality
+$a_n$ of each level of this hierarchy, problem crucial in establishing whether
+the natural adjunctive hierarchy leads to an efficient encoding by numbers, was
+left open.
+  In this paper we solve this problem. Our results can be generalized to
+hereditarily finite sets with atoms, or can be further refined by imposing
+restrictions on rank, on cardinality, or on the maximum level from where the
+new adjoined element can be drawn. We also show that $a_n$ satisfies the
+asymptotic formula $a_n = C^{2^n} + O(C^{2^{n-1}})$, for a constant $C \approx
+1.3399$, which is a too fast asymptotic growth for practical purposes. We thus
+propose a very natural variant of the adjunctive hierarchy, whose asymptotic
+behavior we prove to be $\Theta(2^n)$. To our knowledge, this is the first
+result of this kind.

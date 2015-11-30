@@ -1,0 +1,19 @@
+As data are increasingly modeled as graphs for expressing complex
+relationships, the tree pattern query on graph-structured data becomes an
+important type of queries in real-world applications. Most practical query
+languages, such as XQuery and SPARQL, support logical expressions using
+logical-AND/OR/NOT operators to define structural constraints of tree patterns.
+In this paper, (1) we propose generalized tree pattern queries (GTPQs) over
+graph-structured data, which fully support propositional logic of structural
+constraints. (2) We make a thorough study of fundamental problems including
+satisfiability, containment and minimization, and analyze the computational
+complexity and the decision procedures of these problems. (3) We propose a
+compact graph representation of intermediate results and a pruning approach to
+reduce the size of intermediate results and the number of join operations --
+two factors that often impair the efficiency of traditional algorithms for
+evaluating tree pattern queries. (4) We present an efficient algorithm for
+evaluating GTPQs using 3-hop as the underlying reachability index. (5)
+Experiments on both real-life and synthetic data sets demonstrate the
+effectiveness and efficiency of our algorithm, from several times to orders of
+magnitude faster than state-of-the-art algorithms in terms of evaluation time,
+even for traditional tree pattern queries with only conjunctive operations.

@@ -1,0 +1,13 @@
+In this tool demonstration, we give an overview of the Chameleon type
+debugger. The type debugger's primary use is to identify locations within a
+source program which are involved in a type error. By further examining these
+(potentially) problematic program locations, users gain a better understanding
+of their program and are able to work towards the actual mistake which was the
+cause of the type error. The debugger is interactive, allowing the user to
+provide additional information to narrow down the search space. One of the
+novel aspects of the debugger is the ability to explain erroneous-looking
+types. In the event that an unexpected type is inferred, the debugger can
+highlight program locations which contributed to that result. Furthermore, due
+to the flexible constraint-based foundation that the debugger is built upon, it
+can naturally handle advanced type system features such as Haskell's type
+classes and functional dependencies.

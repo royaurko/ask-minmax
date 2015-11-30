@@ -1,0 +1,22 @@
+The Lasserre/Sum-of-Squares hierarchy is a systematic procedure to strengthen
+LP relaxations by constructing a sequence of increasingly tight formulations.
+For a wide variety of optimization problems, this approach captures the convex
+relaxations used in the best available approximation algorithms.
+  The \emph{capacitated covering IP} is an integer program of the form
+$\min\{cx:Ux\geq d, 0\leq x\leq b, x\in Z^+\}$, where all the entries of $c,U$
+and $d$ are nonnegative. One difficulty in approximating the capacitated
+covering problems lies in the fact that the ratio between the optimal IP
+solution to the optimal LP solution can be as large as $||d||_{\infty}$, even
+when $U$ consists of a single row (i.e. the \textsc{Min Knapsack} problem).
+Currently the strongest linear program relaxation is obtained by adding
+(exponentially many) valid \emph{knapsack cover} $(KC)$ inequalities introduced
+by Wolsey~\cite{Wolsey75}, which yields a very powerful way to cope with these
+problems.
+  For the \textsc{Min Knapsack} problem we prove that even after non-constant
+number of levels the Lasserre/Sum-of-Squares hierarchy does not improve the
+integrality gap of 2 implied by the starting $(KC)$ inequalities. Furthermore,
+we show that the integrality gap of the relaxation stays $M$ for the special
+case of $\sum_i x_i \geq 1/M$ when starting with the standard \textsc{Min
+Knapsack} polytope. We note that \textsc{Min Knapsack} admits an FPTAS and our
+results quantify a fundamental weakness of the Lasserre/Sum-of-Squares
+hierarchy for this basic problem.

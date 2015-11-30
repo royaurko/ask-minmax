@@ -1,0 +1,20 @@
+Let $A,B$ with $|A| = m$ and $|B| = n\ge m$ be two sets. We assume that every
+element $a\in A$ has a reference list over all elements from $B$. We call an
+injective mapping $\tau$ from $A$ to $B$ a matching. A blocking coalition of
+$\tau$ is a subset $A'$ of $A$ such that there exists a matching $\tau'$ that
+differs from $\tau$ only on elements of $A'$, and every element of $A'$
+improves in $\tau'$, compared to $\tau$ according to its preference list. If
+there exists no blocking coalition, we call the matching $\tau$ an exchange
+stable matching (ESM). An element $b\in B$ is reachable if there exists an
+exchange stable matching using $b$. The set of all reachable elements is
+denoted by $E^*$. We show \[|E^*| \leq \sum_{i = 1,\ldots,
+m}{\left\lfloor\frac{m}{i}\right\rfloor} = \Theta(m\log m).\] This is
+asymptotically tight. A set $E\subseteq B$ is reachable (respectively exactly
+reachable) if there exists an exchange stable matching $\tau$ whose image
+contains $E$ as a subset (respectively equals $E$). We give bounds for the
+number of exactly reachable sets. We find that our results hold in the more
+general setting of multi-matchings, when each element $a$ of $A$ is matched
+with $\ell_a$ elements of $B$ instead of just one. Further, we give complexity
+results and algorithms for corresponding algorithmic questions. Finally, we
+characterize unavoidable elements, i.e., elements of $B$ that are used by all
+ESM's. This yields efficient algorithms to determine all unavoidable elements.

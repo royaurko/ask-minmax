@@ -1,0 +1,12 @@
+Data compression has been widely applied in many data processing areas.
+Compression methods use variable-size codes with the shorter codes assigned to
+symbols or groups of symbols that appear in the data frequently. Fibonacci
+coding, as a representative of these codes, is used for compressing small
+numbers. Time consumption of a decompression algorithm is not usually as
+important as the time of a compression algorithm. However, efficiency of the
+decompression may be a critical issue in some cases. For example, a real-time
+compression of tree data structures follows this issue. Tree's pages are
+decompressed during every reading from a secondary storage into the main
+memory. In this case, the efficiency of a decompression algorithm is extremely
+important. We have developed a Fast Fibonacci decompression for this purpose.
+Our approach is up to $3.5\times$ faster than the original implementation.

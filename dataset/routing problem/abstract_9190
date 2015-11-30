@@ -1,0 +1,16 @@
+The low-rank matrix completion problem can be succinctly stated as follows:
+given a subset of the entries of a matrix, find a low-rank matrix consistent
+with the observations. While several low-complexity algorithms for matrix
+completion have been proposed so far, it remains an open problem to devise
+search procedures with provable performance guarantees for a broad class of
+matrix models. The standard approach to the problem, which involves the
+minimization of an objective function defined using the Frobenius metric, has
+inherent difficulties: the objective function is not continuous and the
+solution set is not closed. To address this problem, we consider an
+optimization procedure that searches for a column (or row) space that is
+geometrically consistent with the partial observations. The geometric objective
+function is continuous everywhere and the solution set is the closure of the
+solution set of the Frobenius metric. We also preclude the existence of local
+minimizers, and hence establish strong performance guarantees, for special
+completion scenarios, which do not require matrix incoherence or large matrix
+size.

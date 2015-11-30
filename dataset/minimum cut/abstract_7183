@@ -1,0 +1,17 @@
+We present McGenus, an algorithm to predict RNA secondary structures with
+pseudoknots. The method is based on a classification of RNA structures
+according to their topological genus. McGenus can treat sequences of up to 1000
+bases and performs an advanced stochastic search of their minimum free energy
+structure allowing for non trivial pseudoknot topologies. Specifically, McGenus
+employs a multiple Markov chain scheme for minimizing a general scoring
+function which includes not only free energy contributions for pair stacking,
+loop penalties, etc. but also a phenomenological penalty for the genus of the
+pairing graph. The good performance of the stochastic search strategy was
+successfully validated against TT2NE which uses the same free energy
+parametrization and performs exhaustive or partially exhaustive structure
+search, albeit for much shorter sequences (up to 200 bases). Next, the method
+was applied to other RNA sets, including an extensive tmRNA database, yielding
+results that are competitive with existing algorithms. Finally, it is shown
+that McGenus highlights possible limitations in the free energy scoring
+function. The algorithm is available as a web-server at
+http://ipht.cea.fr/rna/mcgenus.php .

@@ -1,0 +1,16 @@
+We present the first micro-architectural side-channel attack which runs
+entirely in the browser. In contrast to other works in this genre, this attack
+does not require the attacker to install any software on the victim's machine
+-- to facilitate the attack, the victim needs only to browse to an untrusted
+webpage with attacker-controlled content. This makes the attack model highly
+scalable and extremely relevant and practical to today's web, especially since
+most desktop browsers currently accessing the Internet are vulnerable to this
+attack. Our attack, which is an extension of the last-level cache attacks of
+Yarom et al., allows a remote adversary recover information belonging to other
+processes, other users and even other virtual machines running on the same
+physical host as the victim web browser. We describe the fundamentals behind
+our attack, evaluate its performance using a high bandwidth covert channel and
+finally use it to construct a system-wide mouse/network activity logger.
+Defending against this attack is possible, but the required countermeasures can
+exact an impractical cost on other benign uses of the web browser and of the
+computer.

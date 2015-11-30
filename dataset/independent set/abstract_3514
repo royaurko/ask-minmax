@@ -1,0 +1,26 @@
+In the Matroid Secretary Problem, introduced by Babaioff et al. [SODA 2007],
+the elements of a given matroid are presented to an online algorithm in random
+order. When an element is revealed, the algorithm learns its weight and decides
+whether or not to select it under the restriction that the selected elements
+form an independent set in the matroid. The objective is to maximize the total
+weight of the chosen elements. In the most studied version of this problem, the
+algorithm has no information about the weights beforehand. We refer to this as
+the zero information model. In this paper we study a different model, also
+proposed by Babaioff et al., in which the relative order of the weights is
+random in the matroid. To be precise, in the random assignment model, an
+adversary selects a collection of weights that are randomly assigned to the
+elements of the matroid. Later, the elements are revealed to the algorithm in a
+random order independent of the assignment.
+  Our main result is the first constant competitive algorithm for the matroid
+secretary problem in the random assignment model. This solves an open question
+of Babaioff et al. Our algorithm achieves a competitive ratio of $2e^2/(e-1)$.
+It exploits the notion of principal partition of a matroid, its decomposition
+into uniformly dense minors, and a $2e$-competitive algorithm for uniformly
+dense matroids we also develop. As additional results, we present simple
+constant competitive algorithms in the zero information model for various
+classes of matroids including cographic, low density and the case when every
+element is in a small cocircuit. In the same model, we also give a
+$ke$-competitive algorithm for $k$-column sparse linear matroids, and a new
+$O(\log r)$-competitive algorithm for general matroids of rank $r$ which only
+uses the relative order of the weights seen and not their numerical value, as
+previously needed.

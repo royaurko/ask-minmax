@@ -1,0 +1,26 @@
+Increasing need for large-scale data analytics in a number of application
+domains has led to a dramatic rise in the number of distributed data management
+systems, both parallel relational databases, and systems that support
+alternative frameworks like MapReduce. There is thus an increasing contention
+on scarce data center resources like network bandwidth; further, the energy
+requirements for powering the computing equipment are also growing
+dramatically. As we show empirically, increasing the execution parallelism by
+spreading out data across a large number of machines may achieve the intended
+goal of decreasing query latencies, but in most cases, may increase the total
+resource and energy consumption significantly. For many analytical workloads,
+however, minimizing query latencies is often not critical; in such scenarios,
+we argue that we should instead focus on minimizing the average query span,
+i.e., the average number of machines that are involved in processing of a
+query, through colocation of data items that are frequently accessed together.
+In this work, we exploit the fact that most distributed environments need to
+use replication for fault tolerance, and we devise workload-driven replica
+selection and placement algorithms that attempt to minimize the average query
+span. We model a historical query workload trace as a hypergraph over a set of
+data items, and formulate and analyze the problem of replica placement by
+drawing connections to several well-studied graph theoretic concepts. We
+develop a series of algorithms to decide which data items to replicate, and
+where to place the replicas. We show effectiveness of our proposed approach by
+presenting results on a collection of synthetic and real workloads. Our
+experiments show that careful data placement and replication can dramatically
+reduce the average query spans resulting in significant reductions in the
+resource consumption.

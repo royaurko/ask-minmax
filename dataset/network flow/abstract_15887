@@ -1,0 +1,22 @@
+We consider the problem of finding the graph on which an epidemic cascade
+spreads, given only the times when each node gets infected. While this is a
+problem of importance in several contexts -- offline and online social
+networks, e-commerce, epidemiology, vulnerabilities in infrastructure networks
+-- there has been very little work, analytical or empirical, on finding the
+graph. Clearly, it is impossible to do so from just one cascade; our interest
+is in learning the graph from a small number of cascades.
+  For the classic and popular "independent cascade" SIR epidemics, we
+analytically establish the number of cascades required by both the global
+maximum-likelihood (ML) estimator, and a natural greedy algorithm. Both results
+are based on a key observation: the global graph learning problem decouples
+into $n$ local problems -- one for each node. For a node of degree $d$, we show
+that its neighborhood can be reliably found once it has been infected $O(d^2
+\log n)$ times (for ML on general graphs) or $O(d\log n)$ times (for greedy on
+trees). We also provide a corresponding information-theoretic lower bound of
+$\Omega(d\log n)$; thus our bounds are essentially tight. Furthermore, if we
+are given side-information in the form of a super-graph of the actual graph (as
+is often the case), then the number of cascade samples required -- in all cases
+-- becomes independent of the network size $n$.
+  Finally, we show that for a very general SIR epidemic cascade model, the
+Markov graph of infection times is obtained via the moralization of the network
+graph.

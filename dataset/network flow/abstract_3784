@@ -1,0 +1,22 @@
+The magnetic flow meter is one of the best possible choice for the
+measurement of flow rate of liquid metals in fast breeder reactors. Due to the
+associated complexities in the measuring environment, theoretical evaluation of
+their sensitivity is always preferred. In order to consider the 3D nature of
+the problem and the general flow patterns, numerical field computational
+approach is inevitable. When classical Galerkin's finite element formulation is
+employed for the solution, it is known to introduce numerical oscillations at
+high flow rates. The magnetic field produced by the flow induced currents
+circulate within the fluid and forms the source of this numerical problem. To
+overcome this, modified methods like stream-line upwind Petrov-Galerkin schemes
+are generally suggested in the allied areas like fluid dynamics, in which a
+similar dominance of advective (curl or circulation) component occurs over
+diffusion (divergence) component. After a careful analysis of the numerical
+instability through a reduced one dimensional problem, an elegant stable
+approach is devised. In this scheme, a pole-zero cancellation approach is
+adopted. The proposed scheme is shown to be absolutely stable. However, at
+lower flow rates numerical results exhibits small oscillation, which can be
+controlled by reducing the element size. The source of stability at higher flow
+rates, as well as, oscillations at lower flow rates are analysed using
+analytical solution of the associated difference equation. Finally the proposed
+approach is applied to the original flow meter problem and the solution is
+shown to be stable.

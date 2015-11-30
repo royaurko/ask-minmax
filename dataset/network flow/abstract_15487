@@ -1,0 +1,16 @@
+Data center applications use multicast as an effective method to reduce
+bandwidth cost. However, traditional multicast protocols designed for IP
+networks are usually bottlenecked by the limited state capacity on switches. In
+this paper, we propose a scalable multicast solution on fat tree networks based
+on the observation that data center multicast traffic has strong heterogeneity.
+We propose to remove the multicast management logic from switches and use the
+SDN controller to manage multicast groups. The proposed Dual-structure
+Multicast (DuSM) determines elephant and mice groups according to their traffic
+amounts and treats them separately. For each elephant group, the controller
+installs multicast state to maintain multiple shared trees and the group
+traffic will be balanced evenly among the trees to avoid congestion. For mice
+groups, the controller applies state-free mutlicast that trades bandwidth
+capacity for state capacity, such as multicast-to-unicast translation. Our
+experiments using real multicast traffic data show that the number of groups
+DuSM supports can be 300% of that of IP multicast. DuSM also achieves traffic
+balance among links.

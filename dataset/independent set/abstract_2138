@@ -1,0 +1,19 @@
+We present LS-CRF, a new method for very efficient large-scale training of
+Conditional Random Fields (CRFs). It is inspired by existing closed-form
+expressions for the maximum likelihood parameters of a generative graphical
+model with tree topology. LS-CRF training requires only solving a set of
+independent regression problems, for which closed-form expression as well as
+efficient iterative solvers are available. This makes it orders of magnitude
+faster than conventional maximum likelihood learning for CRFs that require
+repeated runs of probabilistic inference. At the same time, the models learned
+by our method still allow for joint inference at test time. We apply LS-CRF to
+the task of semantic image segmentation, showing that it is highly efficient,
+even for loopy models where probabilistic inference is problematic. It allows
+the training of image segmentation models from significantly larger training
+sets than had been used previously. We demonstrate this on two new datasets
+that form a second contribution of this paper. They consist of over 180,000
+images with figure-ground segmentation annotations. Our large-scale experiments
+show that the possibilities of CRF-based image segmentation are far from
+exhausted, indicating, for example, that semi-supervised learning and the use
+of non-linear predictors are promising directions for achieving higher
+segmentation accuracy in the future.

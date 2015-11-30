@@ -1,0 +1,14 @@
+In this paper we present a parallel for-loop scheduler which is based on
+work-stealing principles but runs under a completely cooperative scheme. POSIX
+signals are used by idle threads to interrupt left-behind workers, which in
+turn decide what portion of their workload can be given to the requester. We
+call this scheme Interrupt-Driven Work-Sharing (IDWS). This article describes
+how IDWS works, how it can be integrated into any POSIX-compliant OpenMP
+implementation and how a user can manually replace OpenMP parallel for-loops
+with IDWS in existing POSIX-compliant C++ applications. Additionally, we
+measure its performance using both a synthetic benchmark with varying
+distributions of workload across the iteration space and a real-life
+application on Sandy Bridge and Xeon Phi systems. Regardless the workload
+distribution and the underlying hardware, IDWS is always the best or among the
+best-performing strategies, providing a good all-around solution to the
+scheduling-choice dilemma.

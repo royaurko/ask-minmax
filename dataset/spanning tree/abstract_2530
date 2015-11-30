@@ -1,0 +1,20 @@
+Evolution is a process that is influenced by various environmental factors,
+e.g. the interactions between different species, genes, and biogeographical
+properties. Hence, it is interesting to study the combined evolutionary history
+of multiple species, their genes, and the environment they live in. A common
+approach to address this research problem is to describe each individual
+evolution as a phylogenetic tree and construct a tree reconciliation which is
+parsimonious with respect to a given event model. Unfortunately, most of the
+previous approaches are designed only either for host-parasite systems, for
+gene tree/species tree reconciliation, or biogeography. Hence, a method is
+desirable, which addresses the general problem of mapping phylogenetic trees
+and covering all varieties of coevolving systems, including e.g., predator-prey
+and symbiotic relationships. To overcome this gap, we introduce a generalized
+cophylogenetic event model considering the combinatorial complete set of local
+coevolutionary events. We give a dynamic programming based heuristic for
+solving the maximum parsimony reconciliation problem in time O(n^2), for two
+phylogenies each with at most n leaves. Furthermore, we present an exact
+branch-and-bound algorithm which uses the results from the dynamic programming
+heuristic for discarding partial reconciliations. The approach has been
+implemented as a Java application which is freely available from
+http://pacosy.informatik.uni-leipzig.de/coresym.

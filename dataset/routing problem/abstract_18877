@@ -1,0 +1,20 @@
+The NP-hard Metric Dimension problem is to decide for a given graph G and a
+positive integer k whether there is a vertex subset of size at most k that
+separates all vertex pairs in G. Herein, a vertex v separates a pair {u,w} if
+the distance (length of a shortest path) between v and u is different from the
+distance of v and w. We give a polynomial-time computable reduction from the
+Bipartite Dominating Set problem to Metric Dimension on maximum degree three
+graphs such that there is a one-to-one correspondence between the solution sets
+of both problems. There are two main consequences of this: First, it proves
+that Metric Dimension on maximum degree three graphs is W[2]-complete with
+respect to the parameter k. This answers an open question concerning the
+parameterized complexity of Metric Dimension posed by D\'iaz et al. [ESA'12]
+and already mentioned by Lokshtanov [Dagstuhl seminar, 2009]. Additionally, it
+implies that Metric Dimension cannot be solved in n^{o(k)} time, unless the
+assumption FPT \neq W[1] fails. This proves that a trivial n^{O(k)} algorithm
+is probably asymptotically optimal.
+  Second, as Bipartite Dominating Set is inapproximable within o(log n), it
+follows that Metric Dimension on maximum degree three graphs is also
+inapproximable by a factor of o(log n), unless NP=P. This strengthens the
+result of Hauptmann et al. [JDA 2012] who proved APX-hardness on bounded-degree
+graphs.

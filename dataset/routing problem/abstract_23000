@@ -1,0 +1,12 @@
+Let $G_1$ be a cyclic multiplicative group of order $n$. It is known that the
+Diffie-Hellman problem is random self-reducible in $G_1$ with respect to a
+fixed generator $g$ if $\phi(n)$ is known. That is, given $g, g^x\in G_1$ and
+having oracle access to a `Diffie-Hellman Problem' solver with fixed generator
+$g$, it is possible to compute $g^{1/x} \in G_1$ in polynomial time (see
+theorem 3.2). On the other hand, it is not known if such a reduction exists
+when $\phi(n)$ is unknown (see conjuncture 3.1). We exploit this ``gap'' to
+construct a cryptosystem based on hidden order groups and present a practical
+implementation of a novel cryptographic primitive called an \emph{Oracle Strong
+Associative One-Way Function} (O-SAOWF). O-SAOWFs have applications in
+multiparty protocols. We demonstrate this by presenting a key agreement
+protocol for dynamic ad-hoc groups.

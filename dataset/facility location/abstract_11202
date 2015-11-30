@@ -1,0 +1,10 @@
+This work deals with the numerical solution of the Vlasov equation. This
+equation gives a kinetic description of the evolution of a plasma, and is
+coupled with Poisson's equation for the computation of the self-consistent
+electric field. The coupled model is non linear. A new semi-Lagrangian method,
+based on forward integration of the characteristics, is developed. The
+distribution function is updated on an eulerian grid, and the pseudo-particles
+located on the mesh's nodes follow the characteristics of the equation forward
+for one time step, and are deposited on the 16 nearest nodes. This is an
+explicit way of solving the Vlasov equation on a grid of the phase space, which
+makes it easier to develop high order time schemes than the backward method.

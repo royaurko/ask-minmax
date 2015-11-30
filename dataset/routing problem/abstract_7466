@@ -1,0 +1,17 @@
+We present numerical simulations of galaxy formation, one of the most
+challenging problems in computational astrophysics. The key point in such
+simulations is the efficient solution of the N--body problem. If the gas of a
+galaxy is treated by means of smoothed particle hydrodynamics (SPH), the
+hydrodynamic equations can be reduced to a form similar to that of the N--body
+problem. A straightforward implementation requires a computational effort
+$\propto N^2$, making it prohibitively expensive to simulate systems larger
+than $10^5$ particles even on the largest available supercomputers. After a
+description of the physical and numerical problems, we shortly review the
+standard numerical methods to tackle these problems and discuss their
+advantages and drawbacks. We also present a completely different approach to
+perform such simulations using a workstation in combination with the special
+purpose hardware {\sc Grape}. After a discussion of the main features of {\sc
+Grape}, we present a simple implementation of a {\sc SPH}--N--body code on such
+a configuration. Comparing results and performance of these two approaches, we
+show, that with an investment of US \$ 50000, the problem can be solved up to 5
+times faster than on a {\sc Cray} YMP.

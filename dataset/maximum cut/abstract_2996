@@ -1,0 +1,16 @@
+In this paper, we introduce two focussed sequent calculi, LKp(T) and LK+(T),
+that are based on Miller-Liang's LKF system for polarised classical logic. The
+novelty is that those sequent calculi integrate the possibility to call a
+decision procedure for some background theory T, and the possibility to
+polarise literals "on the fly" during proof-search. These features are used in
+our other works to simulate the DPLL(T) procedure as proof-search in the
+extension of LKp(T) with a cut-rule. In this report we therefore prove
+cut-elimination in LKp(T). Contrary to what happens in the empty theory, the
+polarity of literals affects the provability of formulae in presence of a
+theory T. On the other hand, changing the polarities of connectives does not
+change the provability of formulae, only the shape of proofs. In order to prove
+this, we introduce a second sequent calculus, LK+(T) that extends LKp(T) with a
+relaxed focussing discipline, but we then show an encoding of LK+(T) back into
+the more restrictive system LK(T). We then prove completeness of LKp(T) (and
+therefore of LK+(T)) with respect to first-order reasoning modulo the ground
+propositional lemmas of the background theory T .

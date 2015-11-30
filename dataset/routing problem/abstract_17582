@@ -1,0 +1,17 @@
+We introduce two generalizations of synchronizability to automata with
+transitions weighted in an arbitrary semiring K=(K,+,*,0,1). (or equivalently,
+to finite sets of matrices in K^nxn.) Let us call a matrix A
+location-synchronizing if there exists a column in A consisting of nonzero
+entries such that all the other columns of A are filled by zeros. If
+additionally all the entries of this designated column are the same, we call A
+synchronizing. Note that these notions coincide for stochastic matrices and
+also in the Boolean semiring. A set M of matrices in K^nxn is called
+(location-)synchronizing if M generates a matrix subsemigroup containing a
+(location-)synchronizing matrix. The K-(location-)synchronizability problem is
+the following: given a finite set M of nxn matrices with entries in K, is it
+(location-)synchronizing?
+  Both problems are PSPACE-hard for any nontrivial semiring. We give sufficient
+conditions for the semiring K when the problems are PSPACE-complete and show
+several undecidability results as well, e.g. synchronizability is undecidable
+if 1 has infinite order in (K,+,0) or when the free semigroup on two generators
+can be embedded into (K,*,1).

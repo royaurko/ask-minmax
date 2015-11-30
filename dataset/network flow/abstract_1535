@@ -1,0 +1,18 @@
+While smartphone usage become more and more pervasive, people start also
+asking to which extent such devices can be maliciously exploited as "tracking
+devices". The concern is not only related to an adversary taking physical or
+remote control of the device (e.g., via a malicious app), but also to what a
+passive adversary (without the above capabilities) can observe from the device
+communications. Work in this latter direction aimed, for example, at inferring
+the apps a user has installed on his device, or identifying the presence of a
+specific user within a network.
+  In this paper, we move a step forward: we investigate to which extent it is
+feasible to identify the specific actions that a user is doing on his mobile
+device, by simply eavesdropping the device's network traffic. In particular, we
+aim at identifying actions like browsing someone's profile on a social network,
+posting a message on a friend's wall, or sending an email. We design a system
+that achieves this goal starting from encrypted TCP/IP packets: it works
+through identification of network flows and application of machine learning
+techniques. We did a complete implementation of this system and run a thorough
+set of experiments, which show that it can achieve accuracy and precision
+higher than 95%, for most of the considered actions.

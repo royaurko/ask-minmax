@@ -1,0 +1,13 @@
+The generalized list $T$-coloring is a common generalization of many graph
+coloring models, including classical coloring, $L(p,q)$-labeling, channel
+assignment and $T$-coloring. Every vertex from the input graph has a list of
+permitted labels. Moreover, every edge has a set of forbidden differences. We
+ask for such a labeling of vertices of the input graph with natural numbers, in
+which every vertex gets a label from its list of permitted labels and the
+difference of labels of the endpoints of each edge does not belong to the set
+of forbidden differences of this edge. In this paper we present an exact
+algorithm solving this problem, running in time $\mathcal{O}^*((\tau+2)^n)$,
+where $\tau$ is the maximum forbidden difference over all edges of the input
+graph and $n$ is the number of its vertices. Moreover, we show how to improve
+this bound if the input graph has some special structure, e.g. a bounded
+maximum degree, no big induced stars or a perfect matching.

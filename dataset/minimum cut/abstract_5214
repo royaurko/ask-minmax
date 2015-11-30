@@ -1,0 +1,14 @@
+Parallel replica dynamics is a method for accelerating the computation of
+processes characterized by a sequence of infrequent events. In this work, the
+processes are governed by the overdamped Langevin equation. Such processes
+spend much of their time about the minima of the underlying potential,
+occasionally transitioning into different basins of attraction. The essential
+idea of parallel replica dynamics is that the exit time distribution from a
+given well for a single process can be approximated by the minimum of the exit
+time distributions of $N$ independent identical processes, each run for only
+1/N-th the amount of time.
+  While promising, this leads to a series of numerical analysis questions about
+the accuracy of the exit distributions. Building upon the recent work in Le
+Bris et al., we prove a unified error estimate on the exit distributions of the
+algorithm against an unaccelerated process. Furthermore, we study a dephasing
+mechanism, and prove that it will successfully complete.

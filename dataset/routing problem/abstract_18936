@@ -1,0 +1,15 @@
+We consider the computation of the volume of the union of high-dimensional
+geometric objects. While showing that this problem is #P-hard already for very
+simple bodies (i.e., axis-parallel boxes), we give a fast FPRAS for all objects
+where one can: (1) test whether a given point lies inside the object, (2)
+sample a point uniformly, (3) calculate the volume of the object in polynomial
+time. All three oracles can be weak, that is, just approximate. This implies
+that Klee's measure problem and the hypervolume indicator can be approximated
+efficiently even though they are #P-hard and hence cannot be solved exactly in
+time polynomial in the number of dimensions unless P=NP. Our algorithm also
+allows to approximate efficiently the volume of the union of convex bodies
+given by weak membership oracles.
+  For the analogous problem of the intersection of high-dimensional geometric
+objects we prove #P-hardness for boxes and show that there is no multiplicative
+polynomial-time $2^{d^{1-\epsilon}}$-approximation for certain boxes unless
+NP=BPP, but give a simple additive polynomial-time $\epsilon$-approximation.

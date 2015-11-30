@@ -1,0 +1,21 @@
+The HLLC Riemann solver, which resolves both the shock waves and contact
+discontinuities, is popular to the computational fluid dynamics community
+studying compressible flow problems with mesh methods. Although it was reported
+to be used in meshless methods, the crucial information and procedure to
+realise this scheme within the framework of meshless methods were not clarified
+fully. Moreover, the capability of the meshless HLLC solver to deal with
+compressible liquid flows is not completely clear yet as very few related
+studies have been reported. Therefore, a comprehensive investigation of a
+dimensional non-split HLLC Riemann solver for the least-square meshless method
+is carried out in this study. The stiffened gas equation of state is adopted to
+capacitate the proposed method to deal with single-phase gases and/or liquids
+effectively, whilst direct applying the perfect gas equation of state for
+compressible liquid flows might encounter great difficulties in correlating the
+state variables. The spatial derivatives of the Euler equations are computed by
+a least-square approximation and the flux terms are calculated by the HLLC
+scheme in a dimensional non-split pattern. Simulations of gas and liquid shock
+tubes, moving shock passing a cylinder, internal supersonic flows in channels
+and external transonic flows over aerofoils are accomplished. The current
+approach is verified by extensive comparisons of the produced numerical
+outcomes with various available data such as the exact solutions, finite volume
+mesh method results, experimental measurements or other reference results.

@@ -1,0 +1,21 @@
+The Laser Interferometer Space Antenna (LISA) is expected to simultaneously
+detect many thousands of low frequency gravitational wave signals. This
+presents a data analysis challenge that is very different to the one
+encountered in ground based gravitational wave astronomy. LISA data analysis
+requires the identification of individual signals from a data stream containing
+an unknown number of overlapping signals. Because of the signal overlaps, a
+global fit to all the signals has to be performed in order to avoid biasing the
+solution. However, performing such a global fit requires the exploration of an
+enormous parameter space with a dimension upwards of 50,000. Markov Chain Monte
+Carlo (MCMC) methods offer a very promising solution to the LISA data analysis
+problem. MCMC algorithms are able to efficiently explore large parameter
+spaces, simultaneously providing parameter estimates, error analyses and even
+model selection. Here we present the first application of MCMC methods to
+simulated LISA data and demonstrate the great potential of the MCMC approach.
+Our implementation uses a generalized F-statistic to evaluate the likelihoods,
+and simulated annealing to speed convergence of the Markov chains. As a final
+step we super-cool the chains to extract maximum likelihood estimates, and
+estimates of the Bayes factors for competing models. We find that the MCMC
+approach is able to correctly identify the number of signals present, extract
+the source parameters, and return error estimates consistent with Fisher
+information matrix predictions.

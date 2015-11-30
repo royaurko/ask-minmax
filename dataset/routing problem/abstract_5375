@@ -1,0 +1,23 @@
+We consider an extension of the {\em popular matching} problem in this paper.
+The input to the popular matching problem is a bipartite graph G = (A U B,E),
+where A is a set of people, B is a set of items, and each person a belonging to
+A ranks a subset of items in an order of preference, with ties allowed. The
+popular matching problem seeks to compute a matching M* between people and
+items such that there is no matching M where more people are happier with M
+than with M*. Such a matching M* is called a popular matching. However, there
+are simple instances where no popular matching exists.
+  Here we consider the following natural extension to the above problem:
+associated with each item b belonging to B is a non-negative price cost(b),
+that is, for any item b, new copies of b can be added to the input graph by
+paying an amount of cost(b) per copy. When G does not admit a popular matching,
+the problem is to "augment" G at minimum cost such that the new graph admits a
+popular matching. We show that this problem is NP-hard; in fact, it is NP-hard
+to approximate it within a factor of sqrt{n1}/2, where n1 is the number of
+people. This problem has a simple polynomial time algorithm when each person
+has a preference list of length at most 2. However, if we consider the problem
+of "constructing" a graph at minimum cost that admits a popular matching that
+matches all people, then even with preference lists of length 2, the problem
+becomes NP-hard. On the other hand, when the number of copies of each item is
+"fixed", we show that the problem of computing a minimum cost popular matching
+or deciding that no popular matching exists can be solved in O(mn1) time, where
+m is the number of edges.

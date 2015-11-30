@@ -1,0 +1,14 @@
+One of the main bottlenecks when designing a network processing system is
+very often its memory subsystem. This is mainly due to the state-of-the-art
+network links operating at very high speeds and to the fact that in order to
+support advanced Quality of Service (QoS), a large number of independent queues
+is desirable. In this paper we analyze the performance bottlenecks of various
+data memory managers integrated in typical Network Processing Units (NPUs). We
+expose the performance limitations of software implementations utilizing the
+RISC processing cores typically found in most NPU architectures and we identify
+the requirements for hardware assisted memory management in order to achieve
+wire-speed operation at gigabit per second rates. Furthermore, we describe the
+architecture and performance of a hardware memory manager that fulfills those
+requirements. This memory manager, although it is implemented in a
+reconfigurable technology, it can provide up to 6.2Gbps of aggregate
+throughput, while handling 32K independent queues.

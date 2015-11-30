@@ -1,0 +1,18 @@
+Termination is a major question in both logic and computer science. In logic,
+termination is at the heart of proof theory where it is usually called strong
+normalization (of cut elimination). In computer science, termination has always
+been an important issue for showing programs correct. In the early days of
+logic, strong normalization was usually shown by assigning ordinals to
+expressions in such a way that eliminating a cut would yield an expression with
+a smaller ordinal. In the early days of verification, computer scientists used
+similar ideas, interpreting the arguments of a program call by a natural
+number, such as their size. Showing the size of the arguments to decrease for
+each recursive call gives a termination proof of the program, which is however
+rather weak since it can only yield quite small ordinals. In the sixties, Tait
+invented a new method for showing cut elimination of natural deduction, based
+on a predicate over the set of terms, such that the membership of an expression
+to the predicate implied the strong normalization property for that expression.
+The predicate being defined by induction on types, or even as a fixpoint, this
+method could yield much larger ordinals. Later generalized by Girard under the
+name of reducibility or computability candidates, it showed very effective in
+proving the strong normalization property of typed lambda-calculi...

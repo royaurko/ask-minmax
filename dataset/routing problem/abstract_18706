@@ -1,0 +1,19 @@
+In the Survivable Network Design problem (SNDP), we are given an undirected
+graph $G(V,E)$ with costs on edges, along with a connectivity requirement
+$r(u,v)$ for each pair $u,v$ of vertices. The goal is to find a minimum-cost
+subset $E^*$ of edges, that satisfies the given set of pairwise connectivity
+requirements. In the edge-connectivity version we need to ensure that there are
+$r(u,v)$ edge-disjoint paths for every pair $u, v$ of vertices, while in the
+vertex-connectivity version the paths are required to be vertex-disjoint. The
+edge-connectivity version of SNDP is known to have a 2-approximation. However,
+no non-trivial approximation algorithm has been known so far for the vertex
+version of SNDP, except for special cases of the problem. We present an
+extremely simple algorithm to achieve an $O(k^3 \log n)$-approximation for this
+problem, where $k$ denotes the maximum connectivity requirement, and $n$
+denotes the number of vertices. We also give a simple proof of the recently
+discovered $O(k^2 \log n)$-approximation result for the single-source version
+of vertex-connectivity SNDP. We note that in both cases, our analysis in fact
+yields slightly better guarantees in that the $\log n$ term in the
+approximation guarantee can be replaced with a $\log \tau$ term where $\tau$
+denotes the number of distinct vertices that participate in one or more pairs
+with a positive connectivity requirement.

@@ -1,0 +1,17 @@
+Two seemingly unrelated problems, scheduling a multiclass queueing system and
+minimizing a submodular function, share a rather deep connection via the
+polymatroid that is characterized by a submodular set function on the one hand
+and represents the performance polytope of the queueing system on the other
+hand. We first develop what we call a {\it grouping} algorithm that solves the
+queueing scheduling problem under side constraints, with a computational effort
+of $O(n^3LP(n))$, $n$ being the number of job classes, and LP(n) being the
+computational efforts of solving a linear program with no more than $n$
+variables and $n$ constraints. The algorithm organizes the job classes into
+groups, and identifies the optimal policy to be a priority rule across the
+groups and a randomized rule within each group (to enforce the side
+constraints). We then apply the grouping algorithm to the submodular function
+minimization, mapping the latter to a queueing scheduling problem with side
+constraints. %Each time the algorithm is applied, it identifies a subset; and
+We show the minimizing subset can be identified by applying the grouping
+algorithm $n$ times. Hence, this results in a algorithm that minimizes a
+submodular function with an effort of $O(n^4LP(n))$.

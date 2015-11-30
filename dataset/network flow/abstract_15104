@@ -1,0 +1,17 @@
+Models of reaction chemistry based on the stochastic simulation algorithm
+(SSA) have become a crucial tool for simulating complicated biological reaction
+networks due to their ability to handle extremely complicated reaction networks
+and to represent noise in small-scale chemistry. These methods can, however,
+become highly inefficient for stiff reaction systems, those in which different
+reaction channels operate on widely varying time scales. In this paper, we
+develop two methods for accelerating sampling in SSA models: an exact method
+and a scheme allowing for sampling accuracy up to any arbitrary error bound.
+Both methods depend on analysis of the eigenvalues of continuous time Markov
+model graphs that define the behavior of the SSA. We demonstrate these methods
+for the specific application of sampling breakage times for multiply-connected
+bond networks, a class of stiff system important to models of self-assembly
+processes. We show theoretically and empirically that our eigenvalue methods
+provide substantially reduced sampling times for a wide range of network
+breakage models. These techniques are also likely to have broad use in
+accelerating SSA models so as to apply them to systems and parameter ranges
+that are currently computationally intractable.

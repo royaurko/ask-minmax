@@ -1,0 +1,12 @@
+Singular Value Decomposition (SVD) is the basic body of many statistical
+algorithms and few users question whether SVD is properly handling its job.
+  SVD aims at evaluating the decomposition that best approximates a data
+matrix, given some rank restriction. However often we are interested in the
+best components of the decomposition rather than in the best approximation .
+This conflict of objectives leads us to introduce {\em Total SVD}, where the
+word "Total" is taken as in "Total" least squares.
+  SVD is a least squares method and, therefore, is very sensitive to gross
+errors in the data matrix. We make SVD robust by imposing a weight to each of
+the matrix entries. Breakdown properties are excellent.
+  Algorithmic aspects are handled; they rely on high dimension fixed point
+computations.

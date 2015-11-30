@@ -1,0 +1,23 @@
+The classic algorithms of Needleman--Wunsch and Smith--Waterman find a
+maximum a posteriori probability alignment for a pair hidden Markov model
+(PHMM). In order to process large genomes that have undergone complex genome
+rearrangements, almost all existing whole genome alignment methods apply fast
+heuristics to divide genomes into small pieces which are suitable for
+Needleman--Wunsch alignment. In these alignment methods, it is standard
+practice to fix the parameters and to produce a single alignment for subsequent
+analysis by biologists.
+  Our main result is the construction of a whole genome parametric alignment of
+Drosophila melanogaster and Drosophila pseudoobscura. Parametric alignment
+resolves the issue of robustness to changes in parameters by finding all
+optimal alignments for all possible parameters in a PHMM. Our alignment draws
+on existing heuristics for dividing whole genomes into small pieces for
+alignment, and it relies on advances we have made in computing convex polytopes
+that allow us to parametrically align non-coding regions using biologically
+realistic models. We demonstrate the utility of our parametric alignment for
+biological inference by showing that cis-regulatory elements are more conserved
+between Drosophila melanogaster and Drosophila pseudoobscura than previously
+thought. We also show how whole genome parametric alignment can be used to
+quantitatively assess the dependence of branch length estimates on alignment
+parameters.
+  The alignment polytopes, software, and supplementary material can be
+downloaded at http://bio.math.berkeley.edu/parametric/.

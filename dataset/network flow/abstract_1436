@@ -1,0 +1,24 @@
+Segment retransmissions are an essential tool in assuring reliable end-to-end
+communication in the Internet. Their crucial role in TCP design and operation
+has been studied extensively, in particular with respect to identifying
+non-conformant, buggy, or underperforming behaviour. However, TCP segment
+retransmissions are often overlooked when examining and analyzing large traffic
+traces. In fact, some have come to believe that retransmissions are a rare
+oddity, characteristically associated with faulty network paths, which,
+typically, tend to disappear as networking technology advances and link
+capacities grow. We find that this may be far from the reality experienced by
+TCP flows. We quantify aggregate TCP segment retransmission rates using
+publicly available network traces from six passive monitoring points attached
+to the egress gateways at large sites. In virtually half of the traces examined
+we observed aggregate TCP retransmission rates exceeding 1%, and of these,
+about half again had retransmission rates exceeding 2%. Even for sites with low
+utilization and high capacity gateway links, retransmission rates of 1%, and
+sometimes higher, were not uncommon. Our results complement, extend and bring
+up to date partial and incomplete results in previous work, and show that TCP
+retransmissions continue to constitute a non-negligible percentage of the
+overall traffic, despite significant advances across the board in
+telecommunications technologies and network protocols. The results presented
+are pertinent to end-to-end protocol designers and evaluators as they provide a
+range of "realistic" scenarios under which, and a "marker" against which,
+simulation studies can be configured and calibrated, and future protocols
+evaluated.

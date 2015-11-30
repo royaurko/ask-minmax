@@ -1,0 +1,26 @@
+A binding potential of mean force (BPMF) is a free energy of noncovalent
+association in which one binding partner is flexible and the other is rigid. I
+have developed a method to calculate BPMFs for protein-ligand systems. The
+method is based on replica exchange sampling from multiple thermodynamic states
+at different temperatures and protein-ligand interaction strengths.
+Protein-ligand interactions are represented by interpolating precomputed
+electrostatic and van der Waals grids. Using a simple estimator for
+thermodynamic length, thermodynamic states are initialized at approximately
+equal intervals. The method is demonstrated on the Astex diverse set, a
+database of 85 protein-ligand complexes relevant to pharmacy or agriculture.
+Fifteen independent simulations of each complex were started using poses from
+crystallography, docking, or the lowest-energy pose observed in the other
+simulations. Benchmark simulations completed within three days on a single
+processor. Overall, protocols initialized using the thermodynamic length
+estimator were system-specific, robust, and led to approximately even replica
+exchange acceptance probabilities between neighboring states. In most systems,
+the standard deviation of the BPMF converges to within 5 kT. Even with low
+variance, however, the mean BPMF was sometimes dependent on starting
+conditions, implying inadequate sampling. Within the thermodynamic cycle, free
+energies estimated based on multiple intermediate states were more precise, and
+those estimated by single-step perturbation were less precise. The results
+demonstrate that the method is promising, but that ligand pose sampling and
+phase space overlap can sometimes prevent precise BPMF estimation. The software
+used to perform these calculations, Alchemical Grid Dock (AlGDock), is
+available under the open-source MIT license at
+https://github.com/ccbatiit/algdock/.

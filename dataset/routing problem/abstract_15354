@@ -1,0 +1,20 @@
+Ill-posed inverse problems are commonplace in biomedical image processing.
+Their solution typically requires imposing prior knowledge about the latent
+ground truth. While this regularizes the problem to an extent where it can be
+solved, it also biases the result toward the expected. With inappropriate
+priors harming more than they use, it remains unclear what prior to use for a
+given practical problem. Priors are hence mostly chosen in an {\em ad hoc} or
+empirical fashion. We argue here that the gradient distribution of
+natural-scene images may provide a versatile and well-founded prior for
+biomedical images. We provide motivation for this choice from different points
+of view, and we fully validate the resulting prior for use on biomedical images
+by showing its stability and correlation with image quality. We then provide a
+set of simple parametric models for the resulting prior, leading to
+straightforward (quasi-)convex optimization problems for which we provide
+efficient solver algorithms. We illustrate the use of the present models and
+solvers in a variety of common image-processing tasks, including contrast
+enhancement, noise level estimation, denoising, blind deconvolution,
+zooming/up-sampling, and dehazing. In all cases we show that the present method
+leads to results that are comparable to or better than the state of the art;
+always using the same, simple prior. We conclude by discussing the limitations
+and possible interpretations of the prior.

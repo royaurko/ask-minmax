@@ -1,0 +1,20 @@
+In this paper we consider graph algorithms in models of computation where the
+space usage (random accessible storage, in addition to the read only input) is
+sublinear in the number of edges $m$ and the access to input data is
+constrained. These questions arises in many natural settings, and in particular
+in the analysis of MapReduce or similar algorithms that model constrained
+parallelism with sublinear central processing. In SPAA 2011, Lattanzi etal.
+provided a $O(1)$ approximation of maximum matching using $O(p)$ rounds of
+iterative filtering via mapreduce and $O(n^{1+1/p})$ space of central
+processing for a graph with $n$ nodes and $m$ edges.
+  We focus on weighted nonbipartite maximum matching in this paper. For any
+constant $p>1$, we provide an iterative sampling based algorithm for computing
+a $(1-\epsilon)$-approximation of the weighted nonbipartite maximum matching
+that uses $O(p/\epsilon)$ rounds of sampling, and $O(n^{1+1/p})$ space. The
+results extends to $b$-Matching with small changes. This paper combines
+adaptive sketching literature and fast primal-dual algorithms based on relaxed
+Dantzig-Wolfe decision procedures. Each round of sampling is implemented
+through linear sketches and executed in a single round of MapReduce. The paper
+also proves that nonstandard linear relaxations of a problem, in particular
+penalty based formulations, are helpful in mapreduce and similar settings in
+reducing the adaptive dependence of the iterations.

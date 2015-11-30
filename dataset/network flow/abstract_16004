@@ -1,0 +1,21 @@
+In this paper, we address the problem of quick detection of high-degree
+entities in large online social networks. Practical importance of this problem
+is attested by a large number of companies that continuously collect and update
+statistics about popular entities, usually using the degree of an entity as an
+approximation of its popularity. We suggest a simple, efficient, and easy to
+implement two-stage randomized algorithm that provides highly accurate
+solutions for this problem. For instance, our algorithm needs only one thousand
+API requests in order to find the top-100 most followed users in Twitter, a
+network with approximately a billion of registered users, with more than 90%
+precision. Our algorithm significantly outperforms existing methods and serves
+many different purposes, such as finding the most popular users or the most
+popular interest groups in social networks. An important contribution of this
+work is the analysis of the proposed algorithm using Extreme Value Theory -- a
+branch of probability that studies extreme events and properties of largest
+order statistics in random samples. Using this theory, we derive an accurate
+prediction for the algorithm's performance and show that the number of API
+requests for finding the top-k most popular entities is sublinear in the number
+of entities. Moreover, we formally show that the high variability among the
+entities, expressed through heavy-tailed distributions, is the reason for the
+algorithm's efficiency. We quantify this phenomenon in a rigorous mathematical
+way.

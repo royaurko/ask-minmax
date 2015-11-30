@@ -1,0 +1,11 @@
+Polynomial systems occur in many areas of science and engineering. Unlike
+general nonlinear systems, the algebraic structure enables to compute all
+solutions of a polynomial system. We describe our massive parallel
+predictor-corrector algorithms to track many solution paths of a polynomial
+homotopy. The data parallelism that provides the speedups stems from the
+evaluation and differentiation of the monomials in the same polynomial system
+at different data points, which are the points on the solution paths.
+Polynomial homotopies that have tens of thousands of solution paths can keep a
+sufficiently large amount of threads occupied. Our accelerated code combines
+the reverse mode of algorithmic differentiation with double double and quad
+double precision to compute more accurate results faster.

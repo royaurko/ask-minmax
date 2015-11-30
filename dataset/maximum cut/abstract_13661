@@ -1,0 +1,15 @@
+This paper investigates the multiresolution level-1 and level-2 Quotient
+based Fusion of thermal and visual images. In the proposed system, the method-1
+namely "Decompose then Quotient Fuse Level-1" and the method-2 namely
+"Decompose-Reconstruct then Quotient Fuse Level-2" both work on wavelet
+transformations of the visual and thermal face images. The wavelet transform is
+well-suited to manage different image resolution and allows the image
+decomposition in different kinds of coefficients, while preserving the image
+information without any loss. This approach is based on a definition of an
+illumination invariant signature image which enables an analytic generation of
+the image space with varying illumination. The quotient fused images are passed
+through Principal Component Analysis (PCA) for dimension reduction and then
+those images are classified using a multi-layer perceptron (MLP). The
+performances of both the methods have been evaluated using OTCBVS and IRIS
+databases. All the different classes have been tested separately, among them
+the maximum recognition result is 100%.

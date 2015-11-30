@@ -1,0 +1,17 @@
+The "power of choice" has been shown to radically alter the behavior of a
+number of randomized algorithms. Here we explore the effects of choice on
+models of tree and network growth. In our models each new node has k randomly
+chosen contacts, where k > 1 is a constant. It then attaches to whichever one
+of these contacts is most desirable in some sense, such as its distance from
+the root or its degree. Even when the new node has just two choices, i.e., when
+k=2, the resulting network can be very different from a random graph or tree.
+For instance, if the new node attaches to the contact which is closest to the
+root of the tree, the distribution of depths changes from Poisson to a
+traveling wave solution. If the new node attaches to the contact with the
+smallest degree, the degree distribution is closer to uniform than in a random
+graph, so that with high probability there are no nodes in the network with
+degree greater than O(log log N). Finally, if the new node attaches to the
+contact with the largest degree, we find that the degree distribution is a
+power law with exponent -1 up to degrees roughly equal to k, with an
+exponential cutoff beyond that; thus, in this case, we need k >> 1 to see a
+power law over a wide range of degrees.

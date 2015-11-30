@@ -1,0 +1,21 @@
+It is well-known that a market equilibrium with uniform prices often does not
+exist in non-convex day-ahead electricity auctions. We consider the case of the
+non-convex, uniform-price Pan-European day-ahead electricity market "PCR"
+(Price Coupling of Regions), with non-convexities arising from so-called
+complex and block orders. Extending previous results, we propose a new
+primal-dual framework for these auctions, which has applications in both
+economic analysis and algorithm design. The contribution here is threefold.
+First, from the algorithmic point of view, we give a non-trivial exact (i.e.
+not approximate) linearization of a non-convex 'minimum income condition' that
+must hold for complex orders arising from the Spanish market, avoiding the
+introduction of any auxiliary variables, and allowing us to solve market
+clearing instances involving most of the bidding products proposed in PCR using
+off-the-shelf MIP solvers. Second, from the economic analysis point of view, we
+give the first MILP formulations of optimization problems such as the
+maximization of the traded volume, or the minimization of opportunity costs of
+paradoxically rejected block bids. We first show on a toy example that these
+two objectives are distinct from maximizing welfare. We also recover directly a
+previously noted property of an alternative market model. Third, we provide
+numerical experiments on realistic large-scale instances. They illustrate the
+efficiency of the approach, as well as the economics trade-offs that may occur
+in practice.

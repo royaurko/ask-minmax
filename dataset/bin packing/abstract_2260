@@ -1,0 +1,19 @@
+Recent work by Polyanskiy et al. and Chen et al. has excited new interest in
+using feedback to approach capacity with low latency. Polyanskiy showed that
+feedback identifying the first symbol at which decoding is successful allows
+capacity to be approached with surprisingly low latency. This paper uses Chen's
+rate-compatible sphere-packing (RCSP) analysis to study what happens when
+symbols must be transmitted in packets, as with a traditional hybrid ARQ
+system, and limited to relatively few (six or fewer) incremental transmissions.
+  Numerical optimizations find the series of progressively growing cumulative
+block lengths that enable RCSP to approach capacity with the minimum possible
+latency. RCSP analysis shows that five incremental transmissions are sufficient
+to achieve 92% of capacity with an average block length of fewer than 101
+symbols on the AWGN channel with SNR of 2.0 dB.
+  The RCSP analysis provides a decoding error trajectory that specifies the
+decoding error rate for each cumulative block length. Though RCSP is an
+idealization, an example tail-biting convolutional code matches the RCSP
+decoding error trajectory and achieves 91% of capacity with an average block
+length of 102 symbols on the AWGN channel with SNR of 2.0 dB. We also show how
+RCSP analysis can be used in cases where packets have deadlines associated with
+them (leading to an outage probability).

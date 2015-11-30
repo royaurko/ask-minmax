@@ -1,0 +1,13 @@
+We study the problem of generating a test sequence that achieves maximal
+coverage for a reactive system under test. We formulate the problem as a
+repeated game between the tester and the system, where the system state space
+is partitioned according to some coverage criterion and the objective of the
+tester is to maximize the set of partitions (or coverage goals) visited during
+the game. We show the complexity of the maximal coverage problem for
+non-deterministic systems is PSPACE-complete, but is NP-complete for
+deterministic systems. For the special case of non-deterministic systems with a
+re-initializing ``reset'' action, which represent running a new test input on a
+re-initialized system, we show that the complexity is again co-NP-complete. Our
+proof technique for reset games uses randomized testing strategies that
+circumvent the exponentially large memory requirement in the deterministic
+case.

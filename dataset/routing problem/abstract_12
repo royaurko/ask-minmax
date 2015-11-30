@@ -1,0 +1,21 @@
+The applications of Wireless Sensor Networks (WSN) contain a wide variety of
+scenarios. In most of them, the network is composed of a significant number of
+nodes deployed in an extensive area in which not all nodes are directly
+connected. Then, the data exchange is supported by multihop communications.
+Routing protocols are in charge of discovering and maintaining the routes in
+the network. However, the correctness of a particular routing protocol mainly
+depends on the capabilities of the nodes and on the application requirements.
+This paper presents a dynamic discover routing method for communication between
+sensor nodes and a base station in WSN. This method tolerates failures of
+arbitrary individual nodes in the network (node failure) or a small part of the
+network (area failure). Each node in the network does only local routing
+preservation, needs to record only its neighbor nodes' information, and incurs
+no extra routing overhead during failure free periods. It dynamically discovers
+new routes when an intermediate node or a small part of the network in the path
+from a sensor node to a base station fails. In our planned method, every node
+decides its path based only on local information, such as its parent node and
+neighbor nodes' routing information. So, it is possible to form a loop in the
+routing path. We believe that the loop problem in sensor network routing is not
+as serious as that in the Internet routing or traditional mobile ad-hoc
+routing. We are trying to find all possible loops and eliminate the loops as
+far as possible in WSN.

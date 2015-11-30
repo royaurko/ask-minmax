@@ -1,0 +1,24 @@
+A natural requirement of many distributed structures is fault-tolerance:
+after some failures, whatever remains from the structure should still be
+effective for whatever remains from the network. In this paper we examine
+spanners of general graphs that are tolerant to vertex failures, and
+significantly improve their dependence on the number of faults $r$, for all
+stretch bounds.
+  For stretch $k \geq 3$ we design a simple transformation that converts every
+$k$-spanner construction with at most $f(n)$ edges into an $r$-fault-tolerant
+$k$-spanner construction with at most $O(r^3 \log n) \cdot f(2n/r)$ edges.
+Applying this to standard greedy spanner constructions gives $r$-fault tolerant
+$k$-spanners with $\tilde O(r^{2} n^{1+\frac{2}{k+1}})$ edges. The previous
+construction by Chechik, Langberg, Peleg, and Roddity [STOC 2009] depends
+similarly on $n$ but exponentially on $r$ (approximately like $k^r$).
+  For the case $k=2$ and unit-length edges, an $O(r \log n)$-approximation
+algorithm is known from recent work of Dinitz and Krauthgamer [arXiv 2010],
+where several spanner results are obtained using a common approach of rounding
+a natural flow-based linear programming relaxation. Here we use a different
+(stronger) LP relaxation and improve the approximation ratio to $O(\log n)$,
+which is, notably, independent of the number of faults $r$. We further
+strengthen this bound in terms of the maximum degree by using the \Lovasz Local
+Lemma.
+  Finally, we show that most of our constructions are inherently local by
+designing equivalent distributed algorithms in the LOCAL model of distributed
+computation.

@@ -1,0 +1,17 @@
+A novel semi-Lagrangian method is introduced to solve numerically the Euler
+equation for ideal incompressible flow in arbitrary space dimension. It
+exploits the time-analyticity of fluid particle trajectories and requires, in
+principle, only limited spatial smoothness of the initial data. Efficient
+generation of high-order time-Taylor coefficients is made possible by a
+recurrence relation that follows from the Cauchy invariants formulation of the
+Euler equation (Zheligovsky & Frisch, J. Fluid Mech. 2014, 749, 404-430).
+Truncated time-Taylor series of very high order allow the use of time steps
+vastly exceeding the Courant-Friedrichs-Lewy limit, without compromising the
+accuracy of the solution. Tests performed on the two-dimensional Euler equation
+indicate that the Cauchy-Lagrangian method is more - and occasionally much more
+- efficient and less prone to instability than Eulerian Runge-Kutta methods,
+and less prone to rapid growth of rounding errors than the high-order Eulerian
+time-Taylor algorithm. We also develop tools of analysis adapted to the
+Cauchy-Lagrangian method, such as the monitoring of the radius of convergence
+of the time-Taylor series. Certain other fluid equations can be handled
+similarly.

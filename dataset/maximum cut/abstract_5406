@@ -1,0 +1,14 @@
+For embedded boundary electromagnetics using the Dey-Mittra algorithm, a
+special grad-div matrix constructed in this work allows use of multigrid
+methods for efficient inversion of Maxwell's curl-curl matrix. Efficient
+curl-curl inversions are demonstrated within a shift-and-invert Krylov-subspace
+eigensolver (open-sourced at https://github.com/bauerca/maxwell) on the
+spherical cavity and the 9-cell TESLA superconducting accelerator cavity. The
+accuracy of the Dey-Mittra algorithm is also examined: frequencies converge
+with second-order error, and surface fields are found to converge with nearly
+second-order error. In agreement with previous work, neglecting some
+boundary-cut cell faces (as is required in the time domain for numerical
+stability) reduces frequency convergence to first-order and surface-field
+convergence to zeroth-order (i.e. surface fields do not converge). Additionally
+and importantly, neglecting faces can reduce accuracy by an order of magnitude
+at low resolutions.

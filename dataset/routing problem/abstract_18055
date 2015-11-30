@@ -1,0 +1,14 @@
+This paper presents a multi-swarm PSO algorithm for the Quadratic Assignment
+Problem (QAP) implemented on OpenCL platform. Our work was motivated by results
+of time efficiency tests performed for single-swarm algorithm implementation
+that showed clearly that the benefits of a parallel execution platform can be
+fully exploited, if the processed population is large. The described algorithm
+can be executed in two modes: with independent swarms or with migration. We
+discuss the algorithm construction, as well as we report results of tests
+performed on several problem instances from the QAPLIB library. During the
+experiments the algorithm was configured to process large populations. This
+allowed us to collect statistical data related to values of goal function
+reached by individual particles. We use them to demonstrate on two test cases
+that although single particles seem to behave chaotically during the
+optimization process, when the whole population is analyzed, the probability
+that a particle will select a near-optimal solution grows.

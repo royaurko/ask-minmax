@@ -1,0 +1,16 @@
+We examine the problem of managing a server farm in a way that attempts to
+maximize the net revenue earned by a cloud provider by renting servers to
+customers according to a typical Platform-as-a-Service model. The Cloud
+provider offers its resources to two classes of customers: `premium' and
+`basic'. Premium customers pay upfront fees to reserve servers for a specified
+period of time (e.g. a year). Premium customers can submit jobs for their
+reserved servers at any time and pay a fee for the server-hours they use. The
+provider is liable to pay a penalty every time a `premium' job can not be
+executed due to lack of resources. On the other hand, `basic' customers are
+served on a best-effort basis, and pay a server-hour fee that may be higher
+than the one paid by premium customers. The provider incurs energy costs when
+running servers. Hence, it has an incentive to turn off idle servers. The
+question of how to choose the number of servers to allocate to each pool (basic
+and premium) is answered by analyzing a suitable queuing model and maximizing a
+revenue function. Experimental results show that the proposed scheme adapts to
+different traffic conditions, penalty levels, energy costs and usage fees.

@@ -1,0 +1,21 @@
+We consider computation of permanent of a positive $(N\times N)$ non-negative
+matrix, $P=(P_i^j|i,j=1,\cdots,N)$, or equivalently the problem of weighted
+counting of the perfect matchings over the complete bipartite graph $K_{N,N}$.
+The problem is known to be of likely exponential complexity. Stated as the
+partition function $Z$ of a graphical model, the problem allows exact Loop
+Calculus representation [Chertkov, Chernyak '06] in terms of an interior
+minimum of the Bethe Free Energy functional over non-integer doubly stochastic
+matrix of marginal beliefs, $\beta=(\beta_i^j|i,j=1,\cdots,N)$, also
+correspondent to a fixed point of the iterative message-passing algorithm of
+the Belief Propagation (BP) type. Our main result is an explicit expression of
+the exact partition function (permanent) in terms of the matrix of BP
+marginals, $\beta$, as $Z=\mbox{Perm}(P)=Z_{BP}
+\mbox{Perm}(\beta_i^j(1-\beta_i^j))/\prod_{i,j}(1-\beta_i^j)$, where $Z_{BP}$
+is the BP expression for the permanent stated explicitly in terms if $\beta$.
+We give two derivations of the formula, a direct one based on the Bethe Free
+Energy and an alternative one combining the Ihara graph-$\zeta$ function and
+the Loop Calculus approaches. Assuming that the matrix $\beta$ of the Belief
+Propagation marginals is calculated, we provide two lower bounds and one
+upper-bound to estimate the multiplicative term. Two complementary lower bounds
+are based on the Gurvits-van der Waerden theorem and on a relation between the
+modified permanent and determinant respectively.

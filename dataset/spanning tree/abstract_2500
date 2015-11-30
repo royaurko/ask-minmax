@@ -1,0 +1,22 @@
+This paper studies the "explanation problem" for tree- and linearly-ordered
+array data, a problem motivated by database applications and recently solved
+for the one-dimensional tree-ordered case. In this paper, one is given a matrix
+A whose rows and columns have semantics: special subsets of the rows and
+special subsets of the columns are meaningful, others are not. A submatrix in A
+is said to be meaningful if and only if it is the cross product of a meaningful
+row subset and a meaningful column subset, in which case we call it an "allowed
+rectangle." The goal is to "explain" A as a sparse sum of weighted allowed
+rectangles. Specifically, we wish to find as few weighted allowed rectangles as
+possible such that, for all i,j, a_{ij} equals the sum of the weights of all
+rectangles which include cell (i,j).
+  In this paper we consider the natural cases in which the matrix dimensions
+are tree-ordered or linearly-ordered. In the tree-ordered case, we are given a
+rooted tree T1 whose leaves are the rows of A and another, T2, whose leaves are
+the columns. Nodes of the trees correspond in an obvious way to the sets of
+their leaf descendants. In the linearly-ordered case, a set of rows or columns
+is meaningful if and only if it is contiguous.
+  For tree-ordered data, we prove the explanation problem NP-Hard and give a
+randomized 2-approximation algorithm for it. For linearly-ordered data, we
+prove the explanation problem NP-Hard and give a 2.56-approximation algorithm.
+To our knowledge, these are the first results for the problem of sparsely and
+exactly representing matrices by weighted rectangles.

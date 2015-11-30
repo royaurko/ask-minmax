@@ -1,0 +1,20 @@
+Data-intensive applications often require exploratory analysis of large
+datasets. If analysis is performed on distributed resources, data locality can
+be crucial to high throughput and performance. We propose a "data diffusion"
+approach that acquires compute and storage resources dynamically, replicates
+data in response to demand, and schedules computations close to data. As demand
+increases, more resources are acquired, thus allowing faster response to
+subsequent requests that refer to the same data; when demand drops, resources
+are released. This approach can provide the benefits of dedicated hardware
+without the associated high costs, depending on workload and resource
+characteristics. The approach is reminiscent of cooperative caching,
+web-caching, and peer-to-peer storage systems, but addresses different
+application demands. Other data-aware scheduling approaches assume dedicated
+resources, which can be expensive and/or inefficient if load varies
+significantly. To explore the feasibility of the data diffusion approach, we
+have extended the Falkon resource provisioning and task scheduling system to
+support data caching and data-aware scheduling. Performance results from both
+micro-benchmarks and a large scale astronomy application demonstrate that our
+approach improves performance relative to alternative approaches, as well as
+provides improved scalability as aggregated I/O bandwidth scales linearly with
+the number of data cache nodes.

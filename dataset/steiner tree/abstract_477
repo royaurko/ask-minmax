@@ -1,0 +1,17 @@
+For a tree Markov random field non-reconstruction is said to hold if as the
+depth of the tree goes to infinity the information that a typical configuration
+at the leaves gives about the value at the root goes to zero. The distribution
+of the measure at the root conditioned on a typical boundary can be computed
+using a distributional recurrence. However the exact computation is not
+feasible because the support of the distribution grows exponentially with the
+depth.
+  In this work, we introduce a notion of a survey of a distribution over
+probability vectors which is a succinct representation of the true
+distribution. We show that a survey of the distribution of the measure at the
+root can be constructed by an efficient recursive algorithm. The key properties
+of surveys are that the size does not grow with the depth, they can be
+constructed recursively, and they still provide a good bound for the distance
+between the true conditional distribution and the unconditional distribution at
+the root. This approach applies to a large class of Markov random field models
+including randomly generated ones. As an application we show bounds on the
+reconstruction threshold for the Potts model on small-degree trees.

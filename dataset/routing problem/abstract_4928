@@ -1,0 +1,25 @@
+Motivation: In mass spectrometry-based shotgun proteomics, protein
+quantification and protein identification are two major computational problems.
+To quantify the protein abundance, a list of proteins must be firstly inferred
+from the sample. Then the relative or absolute protein abundance is estimated
+with quantification methods, such as spectral counting. Until now, researchers
+have been dealing with these two processes separately. In fact, they are two
+sides of same coin in the sense that truly present proteins are those proteins
+with non-zero abundances. Then, one interesting question is if we regard the
+protein inference problem as a special protein quantification problem, is it
+possible to achieve better protein inference performance?
+  Contribution: In this paper, we investigate the feasibility of using protein
+quantification methods to solve the protein inference problem. Protein
+inference is to determine whether each candidate protein is present in the
+sample or not. Protein quantification is to calculate the abundance of each
+protein. Naturally, the absent proteins should have zero abundances. Thus, we
+argue that the protein inference problem can be viewed as a special case of
+protein quantification problem: present proteins are those proteins with
+non-zero abundances. Based on this idea, our paper tries to use three very
+simple protein quantification methods to solve the protein inference problem
+effectively.
+  Results: The experimental results on six datasets show that these three
+methods are competitive with previous protein inference algorithms. This
+demonstrates that it is plausible to take the protein inference problem as a
+special case of protein quantification, which opens the door of devising more
+effective protein inference algorithms from a quantification perspective.

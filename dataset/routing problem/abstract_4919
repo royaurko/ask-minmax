@@ -1,0 +1,22 @@
+The exploration/exploitation (E/E) dilemma arises naturally in many subfields
+of Science. Multi-armed bandit problems formalize this dilemma in its canonical
+form. Most current research in this field focuses on generic solutions that can
+be applied to a wide range of problems. However, in practice, it is often the
+case that a form of prior information is available about the specific class of
+target problems. Prior knowledge is rarely used in current solutions due to the
+lack of a systematic approach to incorporate it into the E/E strategy.
+  To address a specific class of E/E problems, we propose to proceed in three
+steps: (i) model prior knowledge in the form of a probability distribution over
+the target class of E/E problems; (ii) choose a large hypothesis space of
+candidate E/E strategies; and (iii), solve an optimization problem to find a
+candidate E/E strategy of maximal average performance over a sample of problems
+drawn from the prior distribution.
+  We illustrate this meta-learning approach with two different hypothesis
+spaces: one where E/E strategies are numerically parameterized and another
+where E/E strategies are represented as small symbolic formulas. We propose
+appropriate optimization algorithms for both cases. Our experiments, with
+two-armed Bernoulli bandit problems and various playing budgets, show that the
+meta-learnt E/E strategies outperform generic strategies of the literature
+(UCB1, UCB1-Tuned, UCB-v, KL-UCB and epsilon greedy); they also evaluate the
+robustness of the learnt E/E strategies, by tests carried out on arms whose
+rewards follow a truncated Gaussian distribution.

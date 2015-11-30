@@ -1,0 +1,21 @@
+Nonlinear/non-Gaussian filtering has broad applications in many areas of life
+sciences where either the dynamic is nonlinear and/or the probability density
+function of uncertain state is non-Gaussian. In such problems, the accuracy of
+the estimated quantities depends highly upon how accurately their posterior pdf
+can be approximated. In low dimensional state spaces, methods based on
+Sequential Importance Sampling (SIS) can suitably approximate the posterior
+pdf. For higher dimensional problems, however, these techniques are usually
+inappropriate since the required number of particles to achieve satisfactory
+estimates grows exponentially with the dimension of state space. On the other
+hand, ensemble Kalman filter (EnKF) and its variants are more suitable for
+large-scale problems due to transformation of particles in the Bayesian update
+step. It has been shown that the latter class of methods may lead to suboptimal
+solutions for strongly nonlinear problems due to the Gaussian assumption in the
+update step. In this paper, we introduce a new technique based on the Gaussian
+sum expansion which captures the non-Gaussian features more accurately while
+the required computational effort remains within reason for high dimensional
+problems. We demonstrate the performance of the method for non-Gaussian
+processes through several examples including the strongly nonlinear Lorenz
+models. Results show a remarkable improvement in the mean square error compared
+to EnKF, and a desirable convergence behavior as the number of particles
+increases.

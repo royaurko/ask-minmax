@@ -1,0 +1,16 @@
+We address the problem of controlling a stochastic version of a Dubins
+vehicle such that the probability of satisfying a temporal logic specification
+over a set of properties at the regions in a partitioned environment is
+maximized. We assume that the vehicle can determine its precise initial
+position in a known map of the environment. However, inspired by practical
+limitations, we assume that the vehicle is equipped with noisy actuators and,
+during its motion in the environment, it can only measure its angular velocity
+using a limited accuracy gyroscope. Through quantization and discretization, we
+construct a finite approximation for the motion of the vehicle in the form of a
+Markov Decision Process (MDP). We allow for task specifications given as
+temporal logic statements over the environmental properties, and use tools in
+Probabilistic Computation Tree Logic (PCTL) to generate an MDP control policy
+that maximizes the probability of satisfaction. We translate this policy to a
+vehicle feedback control strategy and show that the probability that the
+vehicle satisfies the specification in the original environment is bounded from
+below by the maximum probability of satisfying the specification on the MDP.

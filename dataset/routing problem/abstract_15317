@@ -1,0 +1,15 @@
+We address the problem of computing a linear separating form of a system of
+two bivariate polynomials with integer coefficients, that is a linear
+combination of the variables that takes different values when evaluated at the
+distinct solutions of the system. The computation of such linear forms is at
+the core of most algorithms that solve algebraic systems by computing rational
+parameterizations of the solutions and this is the bottleneck of these
+algorithms in terms of worst-case bit complexity. We present for this problem a
+new algorithm of worst-case bit complexity $\sOB(d^7+d^6\tau)$ where $d$ and
+$\tau$ denote respectively the maximum degree and bitsize of the input (and
+where $\sO$ refers to the complexity where polylogarithmic factors are omitted
+and $O_B$ refers to the bit complexity). This algorithm simplifies and
+decreases by a factor $d$ the worst-case bit complexity presented for this
+problem by Bouzidi et al. \cite{bouzidiJSC2014a}. This algorithm also yields,
+for this problem, a probabilistic Las-Vegas algorithm of expected bit
+complexity $\sOB(d^5+d^4\tau)$.

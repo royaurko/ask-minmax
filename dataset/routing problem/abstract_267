@@ -1,0 +1,12 @@
+The so-called corner turning problem is a major bottleneck for radio
+telescopes with large numbers of antennas. The problem is essentially that of
+rapidly transposing a matrix that is too large to store on one single device;
+in radio interferometry, it occurs because data from each antenna needs to be
+routed to an array of processors that will each handle a limited portion of the
+data (a frequency range, say) but requires input from each antenna. We present
+a low-cost solution allowing the correlator to transpose its data in real time,
+without contending for bandwidth, via a butterfly network requiring neither
+additional RAM memory nor expensive general-purpose switching hardware. We
+discuss possible implementations of this using FPGA, CMOS, analog logic and
+optical technology, and conclude that the corner turner cost can be small even
+for upcoming massive radio arrays.

@@ -1,0 +1,11 @@
+Given a graph of which the n vertices form a regular two-dimensional grid,
+and in which each (possibly weighted and/or directed) edge connects a vertex to
+one of its eight neighbours, the following can be done in O(scan(n)) I/Os,
+provided M = Omega(B^2): computation of shortest paths with non-negative edge
+weights from a single source, breadth-first traversal, computation of a minimum
+spanning tree, topological sorting, time-forward processing (if the input is a
+plane graph), and an Euler tour (if the input graph is a tree). The
+minimum-spanning tree algorithm is cache-oblivious. The best previously
+published algorithms for these problems need Theta(sort(n)) I/Os. Estimates of
+the actual I/O volume show that the new algorithms may often be very efficient
+in practice.

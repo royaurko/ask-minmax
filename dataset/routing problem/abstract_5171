@@ -1,0 +1,14 @@
+Self-stabilizing distributed control is often modeled by token abstractions.
+A system with a single token may implement mutual exclusion; a system with
+multiple tokens may ensure that immediate neighbors do not simultaneously enjoy
+a privilege. For a cyber-physical system, tokens may represent physical objects
+whose movement is controlled. The problem studied in this paper is to ensure
+that a synchronous system with m circulating tokens has at least d distance
+between tokens. This problem is first considered in a ring where d is given
+whilst m and the ring size n are unknown. The protocol solving this problem can
+be uniform, with all processes running the same program, or it can be
+non-uniform, with some processes acting only as token relays. The protocol for
+this first problem is simple, and can be expressed with Petri net formalism. A
+second problem is to maximize d when m is given, and n is unknown. For the
+second problem, the paper presents a non-uniform protocol with a single
+corrective process.

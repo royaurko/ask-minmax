@@ -1,0 +1,13 @@
+Approximate Bayesian computation (ABC) is a powerful and elegant framework
+for performing inference in simulation-based models. However, due to the
+difficulty in scaling likelihood estimates, ABC remains useful for relatively
+low-dimensional problems. We introduce Hamiltonian ABC (HABC), a set of
+likelihood-free algorithms that apply recent advances in scaling Bayesian
+learning using Hamiltonian Monte Carlo (HMC) and stochastic gradients. We find
+that a small number forward simulations can effectively approximate the ABC
+gradient, allowing Hamiltonian dynamics to efficiently traverse parameter
+spaces. We also describe a new simple yet general approach of incorporating
+random seeds into the state of the Markov chain, further reducing the random
+walk behavior of HABC. We demonstrate HABC on several typical ABC problems, and
+show that HABC samples comparably to regular Bayesian inference using true
+gradients on a high-dimensional problem from machine learning.

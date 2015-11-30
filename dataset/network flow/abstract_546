@@ -1,0 +1,18 @@
+Finding the dominant direction of flow of information in densely
+interconnected regulatory or signaling networks is required in many
+applications in computational biology and neuroscience. This is achieved by
+first identifying and removing links which close up feedback loops in the
+original network and hierarchically arranging nodes in the remaining network.
+In mathematical language this corresponds to a problem of making a graph
+acyclic by removing as few links as possible and thus altering the original
+graph in the least possible way. Practically in all applications the exact
+solution of this problem requires an enumeration of all combinations of removed
+links, which is computationally intractable. We introduce and compare two
+algorithms: the deterministic, 'greedy' algorithm that preferentially cuts the
+links that participate in the largest number of feedback cycles, and the
+probabilistic one based on a simulated annealing of a hierarchical layout of
+the network which minimizes the number of ``backward'' links going from lower
+to higher hierarchical levels. We find that the annealing algorithm outperforms
+the deterministic one in terms of speed, memory requirement, and the actual
+number of removed links. Implications for system biology and directions for
+further research are discussed.

@@ -1,0 +1,23 @@
+Attractors in parity games are a technical device for solving "alternating"
+reachability of given node sets. A well known solver of parity games -
+Zielonka's algorithm - uses such attractor computations recursively. We here
+propose new forms of attractors that are monotone in that they are aware of
+specific static patterns of colors encountered in reaching a given node set in
+alternating fashion. Then we demonstrate how these new forms of attractors can
+be embedded within greatest fixed-point computations to design solvers of
+parity games that run in polynomial time but are partial in that they may not
+decide the winning status of all nodes in the input game.
+  Experimental results show that our partial solvers completely solve
+benchmarks that were constructed to challenge existing full solvers. Our
+partial solvers also have encouraging run times in practice. For one partial
+solver we prove that its run-time is at most cubic in the number of nodes in
+the parity game, that its output game is independent of the order in which
+monotone attractors are computed, and that it solves all Buechi games and weak
+games.
+  We then define and study a transformation that converts partial solvers into
+more precise partial solvers, and we prove that this transformation is sound
+under very reasonable conditions on the input partial solvers. Noting that one
+of our partial solvers meets these conditions, we apply its transformation on
+1.6 million randomly generated games and so experimentally validate that the
+transformation can be very effective in increasing the precision of partial
+solvers.

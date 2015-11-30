@@ -1,0 +1,15 @@
+This paper introduces the hierarchical interpolative factorization for
+integral equations (HIF-IE) associated with elliptic problems in two and three
+dimensions. This factorization takes the form of an approximate generalized LU
+decomposition that permits the efficient application of the discretized
+operator and its inverse. HIF-IE is based on the recursive skeletonization
+algorithm but incorporates a novel combination of two key features: (1) a
+matrix factorization framework for sparsifying structured dense matrices and
+(2) a recursive dimensional reduction strategy to decrease the cost. Thus,
+higher-dimensional problems are effectively mapped to one dimension, and we
+conjecture that constructing, applying, and inverting the factorization all
+have linear or quasilinear complexity. Numerical experiments support this claim
+and further demonstrate the performance of our algorithm as a generalized fast
+multipole method, direct solver, and preconditioner. HIF-IE is compatible with
+geometric adaptivity and can handle both boundary and volume problems. MATLAB
+codes are freely available.

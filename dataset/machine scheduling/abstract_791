@@ -1,0 +1,13 @@
+To make the development of efficient multi-core applications easier,
+libraries, such as Grand Central Dispatch, have been proposed. When using such
+a library, the programmer writes so-called blocks, which are chunks of codes,
+and dispatches them, using synchronous or asynchronous calls, to several types
+of waiting queues. A scheduler is then responsible for dispatching those blocks
+on the available cores. Blocks can synchronize via a global memory. In this
+paper, we propose Queue-Dispatch Asynchronous Systems as a mathematical model
+that faithfully formalizes the synchronization mechanisms and the behavior of
+the scheduler in those systems. We study in detail their relationships to
+classical formalisms such as pushdown systems, Petri nets, fifo systems, and
+counter systems. Our main technical contributions are precise worst-case
+complexity results for the Parikh coverability problem for several subclasses
+of our model.

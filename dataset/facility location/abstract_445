@@ -1,0 +1,21 @@
+The European Spallation Source (ESS) in Lund, Sweden is just entering the
+construction phase with 3 neutron instruments having started in its design
+concept phase in 2014. As a collaboration of 17 European countries the majority
+of hardware devices for neutron instrumentation will be provided in-kind. This
+presents numerous technical and organisational challenges for the construction
+and the integration of the instruments into the facility wide infrastructure;
+notably the EPICS control network with standardised hardware interfaces and the
+facilities absolute timing system. Additionally the new generation of pulsed
+source requires a new complexity and flexibility of instrumentation to fully
+exploit its opportunities. In this contribution we present a strategy for the
+modularity of the instrument hardware with well-defined standardized
+functionality and control & data interfaces integrating into EPICS and the
+facilities timing system. It allows for in-kind contribution of dedicated
+modules for each instrument (horizontal approach) as well as of whole
+instruments (vertical approach). Key point of the strategy is the time stamping
+of all readings from the instruments control electronics extending the event
+mode data acquisition from neutron events to all metadata. This gives the
+control software the flexibility necessary to adapt the functionality of the
+instruments to the demands of each single experiment. We present the advantages
+of that approach for operation and diagnostics and discuss additional hardware
+requirements necessary.

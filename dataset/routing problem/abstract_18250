@@ -1,0 +1,23 @@
+We present the outline of a research project aimed at designing and
+constructing a hybrid computing system that can be easily scaled up to
+petaflops speeds. As a first step, we envision building a prototype which will
+consist of three main components: a general-purpose, programmable front end, a
+special-purpose, fully hardwired computing engine, and a multi-purpose,
+reconfigurable system. The driving application will be a suite of
+particle-based large-scale simulations in various areas of physics. The
+prototype system will achieve performance in the $\sim 50 - 100$ teraflops
+range for a broad class of applications in this area. The combination of a
+hardwired petaflops-class computational engine and a front end with sustained
+speed on the order of 10 gigaflops can produce extremely high performance, but
+only for the limited class of problems in which there exists a single
+bottleneck with computing cost dominating the total. While the calculation for
+which the Grape-4 (our system's immediate predecessor) was designed is a prime
+example of such a problem, in many other applications the primary computational
+bottleneck, while still related to an inverse-square (gravitational, Coulomb,
+etc.) force, requires less than 99% of the computing power. Although the
+remainder of the CPU time is typically dominated by just one secondary
+bottleneck, its nature varies greatly from problem to problem. It is not
+cost-effective to attempt to design custom chips for each new problem that
+arises. FPGA-based systems can restore the balance, guaranteeing scalability
+from the teraflops to the petaflops domain, while still retaining significant
+flexibility. (abbreviated abstract)

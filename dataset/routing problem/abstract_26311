@@ -1,0 +1,11 @@
+We study the minimum Manhattan network problem, which is defined as follows.
+Given a set of points called \emph{terminals} in $\R^d$, find a minimum-length
+network such that each pair of terminals is connected by a set of axis-parallel
+line segments whose total length is equal to the pair's Manhattan (that is,
+$L_1$-) distance. The problem is NP-hard in 2D and there is no PTAS for 3D
+(unless ${\cal P}={\cal NP}$). Approximation algorithms are known for 2D, but
+not for 3D.
+  We present, for any fixed dimension $d$ and any $\eps>0$, an
+$O(n^\eps)$-approximation algorithm. For 3D, we also give a
+$4(k-1)$-approximation algorithm for the case that the terminals are contained
+in the union of $k \ge 2$ parallel planes.

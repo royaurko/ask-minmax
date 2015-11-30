@@ -1,0 +1,15 @@
+In many applications like FIR filters, FFT, signal processing and
+measurements, we are required (~45 dB) or less side lobes amplitudes. However,
+the problem is usual window based FIR filter design lies in its side lobes
+amplitudes that are higher than the requirement of application. We propose a
+window function, which has better performance like narrower main lobe width,
+minimum side lobe peak compared to the several commonly used windows. The
+proposed window has slightly larger main lobe width of the commonly used
+Hamming window, while featuring 6.2\ sim 22.62 dB smaller side lobe peak. The
+proposed window maintains its maximum side lobe peak about -58.4 \sim -52.6 dB
+compared to -35.8 \sim -38.8 dB of Hamming window for M=10~14, while offering
+roughly equal main lobe width. Our simulated results also show significant
+performance upgrading of the proposed window compared to the Kaiser, Gaussian,
+and Lanczos windows. The proposed window also shows better performance than
+Dolph-Chebyshev window. Finally, the example of designed low pass FIR filter
+confirms the efficiency of the proposed window.

@@ -1,0 +1,13 @@
+We present a converged algorithm for Tikhonov regularized nonnegative matrix
+factorization (NMF). We specially choose this regularization because it is
+known that Tikhonov regularized least square (LS) is the more preferable form
+in solving linear inverse problems than the conventional LS. Because an NMF
+problem can be decomposed into LS subproblems, it can be expected that Tikhonov
+regularized NMF will be the more appropriate approach in solving NMF problems.
+The algorithm is derived using additive update rules which have been shown to
+have convergence guarantee. We equip the algorithm with a mechanism to
+automatically determine the regularization parameters based on the L-curve, a
+well-known concept in the inverse problems community, but is rather unknown in
+the NMF research. The introduction of this algorithm thus solves two inherent
+problems in Tikhonov regularized NMF algorithm research, i.e., convergence
+guarantee and regularization parameters determination.

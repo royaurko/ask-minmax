@@ -1,0 +1,21 @@
+We study the problem of evaluating a discrete function by adaptively querying
+the values of its variables until the values read uniquely determine the value
+of the function. Reading the value of a variable is done at the expense of some
+cost, and the goal is to design a strategy (decision tree) for evaluating the
+function incurring as little cost as possible in the worst case or in
+expectation (according to a prior distribution on the possible variables
+assignments). Except for particular cases of the problem, in general, only the
+minimization of one of these two measures is addressed in the literature.
+However, there are instances of the problem for which the minimization of one
+measure leads to a strategy with a high cost with respect to the other measure
+(even exponentially bigger than the optimal). We provide a new construction
+which can guarantee a trade-off between the two criteria. More precisely, given
+a decision tree guaranteeing expected cost $E$ and a decision tree guaranteeing
+worst cost $W$ our method can guarantee for any chosen trade-off value $\rho$
+to produce a decision tree whose worst cost is $(1 + \rho)W$ and whose expected
+cost is $(1 + \frac{1}{\rho})E.$ These bounds are improved for the relevant
+case of uniform testing costs. Motivated by applications, we also study a
+variant of the problem where the cost of reading a variable depends on the
+variable's value. We provide an $O(\log n)$ approximation algorithm for the
+minimization of the worst cost measure, which is best possible under the
+assumption $P \neq NP$.

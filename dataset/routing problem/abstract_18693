@@ -1,0 +1,24 @@
+The variance reduction established by importance sampling strongly depends on
+the choice of the importance sampling distribution. A good choice is often hard
+to achieve especially for high-dimensional integration problems. Nonparametric
+estimation of the optimal importance sampling distribution (known as
+nonparametric importance sampling) is a reasonable alternative to parametric
+approaches.In this article nonparametric variants of both the self-normalized
+and the unnormalized importance sampling estimator are proposed and
+investigated. A common critique on nonparametric importance sampling is the
+increased computational burden compared to parametric methods. We solve this
+problem to a large degree by utilizing the linear blend frequency polygon
+estimator instead of a kernel estimator. Mean square error convergence
+properties are investigated leading to recommendations for the efficient
+application of nonparametric importance sampling. Particularly, we show that
+nonparametric importance sampling asymptotically attains optimal importance
+sampling variance. The efficiency of nonparametric importance sampling
+algorithms heavily relies on the computational efficiency of the employed
+nonparametric estimator. The linear blend frequency polygon outperforms kernel
+estimators in terms of certain criteria such as efficient sampling and
+evaluation. Furthermore, it is compatible with the inversion method for sample
+generation. This allows to combine our algorithms with other variance reduction
+techniques such as stratified sampling. Empirical evidence for the usefulness
+of the suggested algorithms is obtained by means of three benchmark integration
+problems. As an application we estimate the distribution of the queue length of
+a spam filter queueing system based on real data.

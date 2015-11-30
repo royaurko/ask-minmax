@@ -1,0 +1,13 @@
+SSE (streaming SIMD extensions) and AVX (advanced vector extensions) are SIMD
+(single instruction multiple data streams) instruction sets supported by recent
+CPUs manufactured in Intel and AMD. This SIMD programming allows parallel
+processing by multiple cores in a single CPU. Basic arithmetic and data
+transfer operations such as sum, multiplication and square root can be
+processed simultaneously. Although popular compilers such as GNU compilers and
+Intel compilers provide automatic SIMD optimization options, one can obtain
+better performance by a manual SIMD programming with proper optimization: data
+packing, data reuse and asynchronous data transfer. In particular, linear
+algebraic operations of vectors and matrices can be easily optimized by the
+SIMD programming. Typical calculations in lattice gauge theory are composed of
+linear algebraic operations of gauge link matrices and fermion vectors, and so
+can adopt the manual SIMD programming to improve the performance.

@@ -1,0 +1,23 @@
+It has long been known, since the classical work of (Arora, Karger,
+Karpinski, JCSS~99), that \MC\ admits a PTAS on dense graphs, and more
+generally, \kCSP\ admits a PTAS on "dense" instances with $\Omega(n^k)$
+constraints. In this paper we extend and generalize their exhaustive sampling
+approach, presenting a framework for $(1-\eps)$-approximating any \kCSP\
+problem in \emph{sub-exponential} time while significantly relaxing the
+denseness requirement on the input instance. Specifically, we prove that for
+any constants $\delta \in (0, 1]$ and $\eps > 0$, we can approximate \kCSP\
+problems with $\Omega(n^{k-1+\delta})$ constraints within a factor of
+$(1-\eps)$ in time $2^{O(n^{1-\delta}\ln n /\eps^3)}$. The framework is quite
+general and includes classical optimization problems, such as \MC, {\sc
+Max}-DICUT, \kSAT, and (with a slight extension) $k$-{\sc Densest Subgraph}, as
+special cases. For \MC\ in particular (where $k=2$), it gives an approximation
+scheme that runs in time sub-exponential in $n$ even for "almost-sparse"
+instances (graphs with $n^{1+\delta}$ edges). We prove that our results are
+essentially best possible, assuming the ETH. First, the density requirement
+cannot be relaxed further: there exists a constant $r < 1$ such that for all
+$\delta > 0$, \kSAT\ instances with $O(n^{k-1})$ clauses cannot be approximated
+within a ratio better than $r$ in time $2^{O(n^{1-\delta})}$. Second, the
+running time of our algorithm is almost tight \emph{for all densities}. Even
+for \MC\ there exists $r<1$ such that for all $\delta' > \delta >0$, \MC\
+instances with $n^{1+\delta}$ edges cannot be approximated within a ratio
+better than $r$ in time $2^{n^{1-\delta'}}$.

@@ -1,0 +1,14 @@
+We propose a hybrid tree algorithm for reducing calculation and communication
+cost of collision-less N-body simulations. The concept of our algorithm is that
+we split interaction force into two parts: hard-force from neighbor particles
+and soft-force from distant particles, and applying different time integration
+for the forces. For hard-force calculation, we can efficiently reduce the
+calculation and communication cost of the parallel tree code because we only
+need data of neighbor particles for this part. We implement the algorithm on
+GPU clusters to accelerate force calculation for both hard and soft force. As
+the result of implementing the algorithm on GPU clusters, we were able to
+reduce the communication cost and the total execution time to 40% and 80% of
+that of a normal tree algorithm, respectively. In addition, the reduction
+factor relative the normal tree algorithm is smaller for large number of
+processes, and we expect that the execution time can be ultimately reduced down
+to about 70% of the normal tree algorithm.

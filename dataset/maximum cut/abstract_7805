@@ -1,0 +1,20 @@
+In our previous work "An Algebraic Watchdog for Wireless Network Coding", we
+proposed a new scheme in which nodes can detect malicious behaviors
+probabilistically, police their downstream neighbors locally using overheard
+messages; thus, provide a secure global "self-checking network". As the first
+building block of such a system, we focused on a two-hop network, and presented
+a graphical model to understand the inference process by which nodes police
+their downstream neighbors and to compute the probabilities of misdetection and
+false detection.
+  In this paper, we extend the Algebraic Watchdog to a more general network
+setting, and propose a protocol in which we can establish "trust" in coded
+systems in a distributed manner. We develop a graphical model to detect the
+presence of an adversarial node downstream within a general two-hop network.
+The structure of the graphical model (a trellis) lends itself to well-known
+algorithms, such as Viterbi algorithm, that can compute the probabilities of
+misdetection and false detection. Using this as a building block, we generalize
+our scheme to multi-hop networks. We show analytically that as long as the
+min-cut is not dominated by the Byzantine adversaries, upstream nodes can
+monitor downstream neighbors and allow reliable communication with certain
+probability. Finally, we present preliminary simulation results that support
+our analysis.

@@ -1,0 +1,12 @@
+In order to compensate for the higher cost of double double and quad double
+arithmetic when solving large polynomial systems, we investigate the
+application of NVIDIA Tesla K20C general purpose graphics processing unit. The
+focus on this paper is on Newton's method, which requires the evaluation of the
+polynomials, their derivatives, and the solution of a linear system to compute
+the update to the current approximation for the solution. The reverse mode of
+algorithmic differentiation for a product of variables is rewritten in a binary
+tree fashion so all threads in a block can collaborate in the computation. For
+double arithmetic, the evaluation and differentiation problem is memory bound,
+whereas for complex quad double arithmetic the problem is compute bound. With
+acceleration we can double the dimension and get results that are twice as
+accurate in about the same time.

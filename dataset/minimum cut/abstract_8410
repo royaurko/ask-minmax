@@ -1,0 +1,25 @@
+The effort to understand network systems in increasing detail has resulted in
+a diversity of methods designed to extract their large-scale structure from
+data. Unfortunately, many of these methods yield diverging descriptions of the
+same network, making both the comparison and understanding of their results a
+difficult challenge. A possible solution to this outstanding issue is to shift
+the focus away from ad hoc methods and move towards more principled approaches
+based on statistical inference of generative models. As a result, we face
+instead the more well-defined task of selecting between competing generative
+processes, which can be done under a unified probabilistic framework. Here, we
+consider the comparison between a variety of generative models including
+features such as degree correction, where nodes with arbitrary degrees can
+belong to the same group, and community overlap, where nodes are allowed to
+belong to more than one group. Because such model variants possess an
+increasing number of parameters, they become prone to overfitting. In this
+work, we present a method of model selection based on the minimum description
+length criterion and posterior odds ratios that is capable of fully accounting
+for the increased degrees of freedom of the larger models, and selects the best
+one according to the statistical evidence available in the data. In applying
+this method to many empirical unweighted networks from different fields, we
+observe that community overlap is very often not supported by statistical
+evidence and is selected as a better model only for a minority of them. On the
+other hand, we find that degree correction tends to be almost universally
+favored by the available data, implying that intrinsic node proprieties (as
+opposed to group properties) are often an essential ingredient of network
+formation.

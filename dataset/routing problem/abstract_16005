@@ -1,0 +1,15 @@
+Multiple carrier-frequency offsets (CFO) arise in a distributed antenna
+system, where data are transmitted simultaneously from multiple antennas. In
+such systems the received signal contains multiple CFOs due to mismatch between
+the local oscillators of transmitters and receiver. This results in a
+time-varying rotation of the data constellation, which needs to be compensated
+for at the receiver before symbol recovery. This paper proposes a new approach
+for blind CFO estimation and symbol recovery. The received base-band signal is
+over-sampled, and its polyphase components are used to formulate a virtual
+Multiple-Input Multiple-Output (MIMO) problem. By applying blind MIMO system
+estimation techniques, the system response is estimated and used to
+subsequently transform the multiple CFOs estimation problem into many
+independent single CFO estimation problems. Furthermore, an initial estimate of
+the CFO is obtained from the phase of the MIMO system response. The Cramer-Rao
+Lower bound is also derived, and the large sample performance of the proposed
+estimator is compared to the bound.

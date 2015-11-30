@@ -1,0 +1,18 @@
+Many programming languages and tools, ranging from grep to the Java String
+library, contain regular expression matchers. Rather than first translating a
+regular expression into a deterministic finite automaton, such implementations
+typically match the regular expression on the fly. Thus they can be seen as
+virtual machines interpreting the regular expression much as if it were a
+program with some non-deterministic constructs such as the Kleene star. We
+formalize this implementation technique for regular expression matching using
+operational semantics. Specifically, we derive a series of abstract machines,
+moving from the abstract definition of matching to increasingly realistic
+machines. First a continuation is added to the operational semantics to
+describe what remains to be matched after the current expression. Next, we
+represent the expression as a data structure using pointers, which enables
+redundant searches to be eliminated via testing for pointer equality. From
+there, we arrive both at Thompson's lockstep construction and a machine that
+performs some operations in parallel, suitable for implementation on a large
+number of cores, such as a GPU. We formalize the parallel machine using process
+algebra and report some preliminary experiments with an implementation on a
+graphics processor using CUDA.

@@ -1,0 +1,25 @@
+This paper considers transmission schemes in multi-access relay networks
+(MARNs) where $J$ single-antenna sources send independent information to one
+$N$-antenna destination through one $M$-antenna relay. For complexity
+considerations, we propose a linear framework, where the relay linearly
+transforms its received signals to generate the forwarded signals without
+decoding and the destination uses its multi-antennas to fully decouple signals
+from different sources before decoding, by which the decoding complexity is
+linear in the number of sources. To achieve a high symbol rate, we first
+propose a scheme called DSTC-ICRec in which all sources' information streams
+are concurrently transmitted in both the source-relay link and the
+relay-destination link. In this scheme, distributed space-time coding (DSTC) is
+applied at the relay, which satisfies the linear constraint. DSTC also allows
+the destination to conduct the zero-forcing interference cancellation (IC)
+scheme originally proposed for multi-antenna systems to fully decouple signals
+from different sources. Our analysis shows that the symbol rate of DSTC-ICRec
+is $1/2$ symbols/source/channel use and the diversity gain of the scheme is
+upperbounded by $M-J+1$. To achieve a higher diversity gain, we propose another
+scheme called TDMA-ICRec in which the sources time-share the source-relay link.
+The relay coherently combines the signals on its antennas to maximize the
+signal-to-noise ratio (SNR) of each source, then concurrently forwards all
+sources' information. The destination performs zero-forcing IC. It is shown
+through both analysis and simulation that when $N \ge 2J-1$, TDMA-ICRec
+achieves the same maximum diversity gain as the full TDMA scheme in which the
+information stream from each source is assigned to an orthogonal channel in
+both links, but with a higher symbol rate.

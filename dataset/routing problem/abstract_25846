@@ -1,0 +1,16 @@
+We consider online similarity prediction problems over networked data. We
+begin by relating this task to the more standard class prediction problem,
+showing that, given an arbitrary algorithm for class prediction, we can
+construct an algorithm for similarity prediction with "nearly" the same mistake
+bound, and vice versa. After noticing that this general construction is
+computationally infeasible, we target our study to {\em feasible} similarity
+prediction algorithms on networked data. We initially assume that the network
+structure is {\em known} to the learner. Here we observe that Matrix Winnow
+\cite{w07} has a near-optimal mistake guarantee, at the price of cubic
+prediction time per round. This motivates our effort for an efficient
+implementation of a Perceptron algorithm with a weaker mistake guarantee but
+with only poly-logarithmic prediction time. Our focus then turns to the
+challenging case of networks whose structure is initially {\em unknown} to the
+learner. In this novel setting, where the network structure is only
+incrementally revealed, we obtain a mistake-bounded algorithm with a quadratic
+prediction time per round.

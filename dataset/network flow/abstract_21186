@@ -1,0 +1,25 @@
+In network MIMO systems, channel state information is required at the
+transmitter side to multiplex users in the spatial domain. Since perfect
+channel knowledge is difficult to obtain in practice, \emph{limited feedback}
+is a widely accepted solution. The {\em dynamic number of cooperating BSs} and
+{\em heterogeneous path loss effects} of network MIMO systems pose new
+challenges on limited feedback design. In this paper, we propose a scalable
+limited feedback design for network MIMO systems with multiple base stations,
+multiple users and multiple data streams for each user. We propose a {\em
+limited feedback framework using per-cell product codebooks}, along with a {\em
+low-complexity feedback indices selection algorithm}. We show that the proposed
+per-cell product codebook limited feedback design can asymptotically achieve
+the same performance as the joint-cell codebook approach. We also derive an
+asymptotic \emph{per-user throughput loss} due to limited feedback with
+per-cell product codebooks. Based on that, we show that when the number of
+per-user feedback-bits $B_{k}$ is $\mathcal{O}\big( Nn_{T}n_{R}\log_{2}(\rho
+g_{k}^{sum})\big)$, the system operates in the \emph{noise-limited} regime in
+which the per-user throughput is $\mathcal{O} \left( n_{R} \log_{2} \big(
+\frac{n_{R}\rho g_{k}^{sum}}{Nn_{T}} \big) \right)$. On the other hand, when
+the number of per-user feedback-bits $B_{k}$ does not scale with the
+\emph{system SNR} $\rho$, the system operates in the
+\emph{interference-limited} regime where the per-user throughput is
+$\mathcal{O}\left( \frac{n_{R}B_{k}}{(Nn_{T})^{2}} \right)$. Numerical results
+show that the proposed design is very flexible to accommodate dynamic number of
+cooperating BSs and achieves much better performance compared with other
+baselines (such as the Givens rotation approach).

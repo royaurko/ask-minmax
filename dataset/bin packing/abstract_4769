@@ -1,0 +1,20 @@
+In the study of deterministic distributed algorithms it is commonly assumed
+that each node has a unique $O(\log n)$-bit identifier. We prove that for a
+general class of graph problems, local algorithms (constant-time distributed
+algorithms) do not need such identifiers: a port numbering and orientation is
+sufficient.
+  Our result holds for so-called simple PO-checkable graph optimisation
+problems; this includes many classical packing and covering problems such as
+vertex covers, edge covers, matchings, independent sets, dominating sets, and
+edge dominating sets. We focus on the case of bounded-degree graphs and show
+that if a local algorithm finds a constant-factor approximation of a simple
+PO-checkable graph problem with the help of unique identifiers, then the same
+approximation ratio can be achieved on anonymous networks.
+  As a corollary of our result and by prior work, we derive a tight lower bound
+on the local approximability of the minimum edge dominating set problem.
+  Our main technical tool is an algebraic construction of homogeneously ordered
+graphs: We say that a graph is $(\alpha,r)$-homogeneous if its nodes are
+linearly ordered so that an $\alpha$ fraction of nodes have pairwise isomorphic
+radius-$r$ neighbourhoods. We show that there exists a finite
+$(\alpha,r)$-homogeneous $2k$-regular graph of girth at least $g$ for any
+$\alpha < 1$ and any $r$, $k$, and $g$.

@@ -1,0 +1,18 @@
+Chemical reaction networks (CRNs) formally model chemistry in a well-mixed
+solution. CRNs are widely used to describe information processing occurring in
+natural cellular regulatory networks, and with upcoming advances in synthetic
+biology, CRNs are a promising language for the design of artificial molecular
+control circuitry. Nonetheless, despite the widespread use of CRNs in the
+natural sciences, the range of computational behaviors exhibited by CRNs is not
+well understood.
+  CRNs have been shown to be efficiently Turing-universal when allowing for a
+small probability of error. CRNs that are guaranteed to converge on a correct
+answer, on the other hand, have been shown to decide only the semilinear
+predicates. We introduce the notion of function, rather than predicate,
+computation by representing the output of a function f:N^k --> N^l by a count
+of some molecular species, i.e., if the CRN starts with n_1,...,n_k molecules
+of some "input" species X1,...,Xk, the CRN is guaranteed to converge to having
+f(n_1,...,n_k) molecules of the "output" species Y1,...,Yl. We show that a
+function f:N^k --> N^l is deterministically computed by a CRN if and only if
+its graph {(x,y) | f(x) = y} is a semilinear set. Furthermore, each semilinear
+function f can be computed on input x in expected time O(polylog(|x|)).

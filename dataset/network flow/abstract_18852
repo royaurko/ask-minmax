@@ -1,0 +1,14 @@
+Inspired by the increasing interest in self-organizing social opportunistic
+networks, we investigate the problem of distributed detection of unknown
+communities in dynamic random graphs. As a formal framework, we consider the
+dynamic version of the well-studied \emph{Planted Bisection Model}
+$\sdG(n,p,q)$ where the node set $[n]$ of the network is partitioned into two
+unknown communities and, at every time step, each possible edge $(u,v)$ is
+active with probability $p$ if both nodes belong to the same community, while
+it is active with probability $q$ (with $q<<p$) otherwise. We also consider a
+time-Markovian generalization of this model.
+  We propose a distributed protocol based on the popular \emph{Label
+Propagation Algorithm} and prove that, when the ratio $p/q$ is larger than
+$n^{b}$ (for an arbitrarily small constant $b>0$), the protocol finds the right
+"planted" partition in $O(\log n)$ time even when the snapshots of the dynamic
+graph are sparse and disconnected (i.e. in the case $p=\Theta(1/n)$).

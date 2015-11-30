@@ -1,0 +1,11 @@
+We present a comparison of several modern C++ libraries providing high-level
+interfaces for programming multi- and many-core architectures on top of CUDA or
+OpenCL. The comparison focuses on the solution of ordinary differential
+equations and is based on odeint, a framework for the solution of systems of
+ordinary differential equations. Odeint is designed in a very flexible way and
+may be easily adapted for effective use of libraries such as Thrust, MTL4,
+VexCL, or ViennaCL, using CUDA or OpenCL technologies. We found that CUDA and
+OpenCL work equally well for problems of large sizes, while OpenCL has higher
+overhead for smaller problems. Furthermore, we show that modern high-level
+libraries allow to effectively use the computational resources of many-core
+GPUs or multi-core CPUs without much knowledge of the underlying technologies.

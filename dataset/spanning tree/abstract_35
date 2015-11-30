@@ -1,0 +1,25 @@
+Motivated by applications to sensor networks, as well as to many other areas,
+this paper studies the construction of minimum-degree spanning trees. We
+consider the classical node-register state model, with a weakly fair scheduler,
+and we present a space-optimal \emph{silent} self-stabilizing construction of
+minimum-degree spanning trees in this model. Computing a spanning tree with
+minimum degree is NP-hard. Therefore, we actually focus on constructing a
+spanning tree whose degree is within one from the optimal. Our algorithm uses
+registers on $O(\log n)$ bits, converges in a polynomial number of rounds, and
+performs polynomial-time computation at each node. Specifically, the algorithm
+constructs and stabilizes on a special class of spanning trees, with degree at
+most $OPT+1$. Indeed, we prove that, unless NP $=$ coNP, there are no
+proof-labeling schemes involving polynomial-time computation at each node for
+the whole family of spanning trees with degree at most $OPT+1$. Up to our
+knowledge, this is the first example of the design of a compact silent
+self-stabilizing algorithm constructing, and stabilizing on a subset of optimal
+solutions to a natural problem for which there are no time-efficient
+proof-labeling schemes. On our way to design our algorithm, we establish a set
+of independent results that may have interest on their own. In particular, we
+describe a new space-optimal silent self-stabilizing spanning tree
+construction, stabilizing on \emph{any} spanning tree, in $O(n)$ rounds, and
+using just \emph{one} additional bit compared to the size of the labels used to
+certify trees. We also design a silent loop-free self-stabilizing algorithm for
+transforming a tree into another tree. Last but not least, we provide a silent
+self-stabilizing algorithm for computing and certifying the labels of a
+NCA-labeling scheme.

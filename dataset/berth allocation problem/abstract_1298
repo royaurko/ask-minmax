@@ -1,0 +1,19 @@
+Electronic health records contain rich textual data which possess critical
+predictive information for machine-learning based diagnostic aids. However many
+traditional machine learning methods fail to simultaneously integrate both
+vector space data and text. We present a supervised method using Laplacian
+eigenmaps to augment existing machine-learning methods with low-dimensional
+representations of textual predictors which preserve the local similarities.
+The proposed implementation performs alternating optimization using gradient
+descent. For the evaluation we applied our method to over 2,000 patient records
+from a large single-center pediatric cardiology practice to predict if patients
+were diagnosed with cardiac disease. Our method was compared with latent
+semantic indexing, latent Dirichlet allocation, and local Fisher discriminant
+analysis. The results were assessed using AUC, MCC, specificity, and
+sensitivity. Results indicate supervised Laplacian eigenmaps was the highest
+performing method in our study, achieving 0.782 and 0.374 for AUC and MCC
+respectively. SLE showed an increase in 8.16% in AUC and 20.6% in MCC over the
+baseline which excluded textual data and a 2.69% and 5.35% increase in AUC and
+MCC respectively over unsupervised Laplacian eigenmaps. This method allows many
+existing machine learning predictors to effectively and efficiently utilize the
+potential of textual predictors.

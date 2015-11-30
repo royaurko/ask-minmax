@@ -1,0 +1,23 @@
+In the presence of confounders, the ordinary least squares (OLS) estimator is
+known to be biased. This problem can be remedied by using the two-stage least
+squares (TSLS) estimator, based on the availability of valid instrumental
+variables (IVs). This reduction in bias, however, is offset by an increase in
+variance. Under standard assumptions, the OLS has indeed a larger bias than the
+TSLS estimator; and moreover, one can prove that the sample variance of the OLS
+estimator is no greater than the one of the TSLS. Therefore, it is natural to
+ask whether one could combine the desirable properties of the OLS and TSLS
+estimators. Such a trade-off can be achieved through a convex combination of
+these two estimators, thereby producing our proposed convex least squares (CLS)
+estimator. The relative contribution of the OLS and TSLS estimators is here
+chosen to minimize a sample estimate of the mean squared error (MSE) of their
+convex combination. This proportion parameter is proved to be unique, whenever
+the OLS and TSLS differ in MSEs. Remarkably, we show that this proportion
+parameter can be estimated from the data, and that the resulting CLS estimator
+is consistent. We also show how the CLS framework can incorporate other
+asymptotically unbiased estimators, such as the jackknife IV estimator (JIVE).
+The finite-sample properties of the CLS estimator are investigated using Monte
+Carlo simulations, in which we independently vary the amount of confounding and
+the strength of the instrument. Overall, the CLS estimator is found to
+outperform the TSLS estimator in terms of MSE. The method is also applied to a
+classic data set from econometrics, which models the financial return to
+education.

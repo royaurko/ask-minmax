@@ -1,0 +1,17 @@
+We consider the problem of evaluating certain exponential sums. These sums
+take the form $\sum_{x_1,...,x_n \in Z_N} e^{f(x_1,...,x_n) {2 \pi i / N}} $,
+where each x_i is summed over a ring Z_N, and f(x_1,...,x_n) is a multivariate
+polynomial with integer coefficients. We show that the sum can be evaluated in
+polynomial time in n and log N when f is a quadratic polynomial. This is true
+even when the factorization of N is unknown. Previously, this was known for a
+prime modulus N. On the other hand, for very specific families of polynomials
+of degree \ge 3, we show the problem is #P-hard, even for any fixed prime or
+prime power modulus. This leads to a complexity dichotomy theorem - a complete
+classification of each problem to be either computable in polynomial time or
+#P-hard - for a class of exponential sums. These sums arise in the
+classifications of graph homomorphisms and some other counting CSP type
+problems, and these results lead to complexity dichotomy theorems. For the
+polynomial-time algorithm, Gauss sums form the basic building blocks. For the
+hardness results, we prove group-theoretic necessary conditions for
+tractability. These tests imply that the problem is #P-hard for even very
+restricted families of simple cubic polynomials over fixed modulus N.

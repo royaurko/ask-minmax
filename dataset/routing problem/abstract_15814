@@ -1,0 +1,19 @@
+We consider rate-independent models which are defined via two functionals:
+the time-dependent energy-storage functional $\calI:[0,T]\ti X\to [0,\infty]$
+and the dissipation distance $\calD:X\ti X\to[0,\infty]$. A function
+$z:[0,T]\to X$ is called a solution of the {energetic model}, if for all $0\leq
+s<t\leq T$ we have
+  stability: $\mathcal I(t,z(t)) \leq \mathcal I(t,\widetilde z)+
+\calD(z(t),\wt z)$ for all $\wt z\in X$;
+  energy inequality: $\mathcal I(t,z(t)) {+} \Diss_\calD(z,[s,t]) \leq
+\mathcal I(s,z(s)) {+} \int_s^t \partial_\tau\mathcal I(\tau,z(\tau))
+\mathrm d \tau$.
+  We provide an abstract framework for finding solutions of this problem. It
+involves time discretization where each incremental problem is a global
+minimization problem. We give applications in material modeling where $z\in
+\calZ\subset X$ denotes the internal state of a body. The first application
+treats shape-memory alloys where $z$ indicates the different crystallographic
+phases. The second application describes the delamination of bodies glued
+together where $z$ is the proportion of still active glue along the contact
+zones. The third application treats finite-strain plasticity where $z(t,x)$
+lies in a Lie group.

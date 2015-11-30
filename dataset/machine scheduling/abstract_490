@@ -1,0 +1,11 @@
+We consider an online scheduling problem, motivated by the issues present at
+the joints of networks using ATM and TCP/IP. Namely, IP packets have to broken
+down to small ATM cells and sent out before their deadlines, but cells
+corresponding to different packets can be interwoven. More formally, we
+consider the online scheduling problem with preemptions, where each job j is
+revealed at release time r_j, has processing time p_j, deadline d_j and weight
+w_j. A preempted job can be resumed at any time. The goal is to maximize the
+total weight of all jobs completed on time. Our main result are as follows: we
+prove that if all jobs have processing time exactly k, the deterministic
+competitive ratio is between 2.598 and 5, and when the processing times are at
+most k, the deterministic competitive ratio is Theta(k/log k).

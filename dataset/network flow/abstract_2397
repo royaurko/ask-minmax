@@ -1,0 +1,22 @@
+A few months ago, the BitTorrent developers announced that the transfer of
+torrent data in the official client was about to switch to uTP, an
+application-layer congestion-control protocol using UDP at the transport-layer.
+This announcement immediately raised an unmotivated buzz about a new, imminent
+congestion collapse of the whole Internet. Though this reaction was not built
+on solid technical foundation, nevertheless a legitimate question remains:
+i.e., whether this novel algorithm is a necessary building block for future
+Internet applications, or whether it may result in an umpteenth addition to the
+already well populated world of Internet congestion control algorithms.
+  In this paper, we tackle precisely this issue. The novel protocol is now
+under discussion at the IETF LEDBAT working group, and has been defined in a
+draft document in March 2009, whose adoption decision will be taken at the
+beginning of August 2009. Adhering to the IETF draft definition, we implement
+the LEDBAT congestion control algorithm and investigate its performance by
+means of packet-level simulations. Considering a simple bottleneck scenario
+where LEDBAT competes against either TCP or other LEDBAT flows, we evaluate the
+fairness of the resource share as well as its efficiency. Our preliminary
+results show that indeed, there is an undoubted appeal behind the novel
+application-layer congestion-control protocol. Yet, care must be taken in order
+to ensure that some important points, such as intra-protocol fairness, are
+fully clarified in the draft specification -- which we hope that this work can
+contribute to.

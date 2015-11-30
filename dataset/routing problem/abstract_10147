@@ -1,0 +1,15 @@
+We propose an iterative gradient-based algorithm to efficiently solve the
+portfolio selection problem with multiple spectral risk constraints. Since the
+conditional value at risk (CVaR) is a special case of the spectral risk
+measure, our algorithm solves portfolio selection problems with multiple CVaR
+constraints. In each step, the algorithm solves very simple separable convex
+quadratic programs; hence, we show that the spectral risk constrained portfolio
+selection problem can be solved using the technology developed for solving
+mean-variance problems. The algorithm extends to the case where the objective
+is a weighted sum of the mean return and either a weighted combination or the
+maximum of a set of spectral risk measures. We report numerical results that
+show that our proposed algorithm is very efficient; it is at least one order of
+magnitude faster than the state-of-the-art general purpose solver for all
+practical instances. One can leverage this efficiency to be robust against
+model risk by including constraints with respect to several different risk
+models.

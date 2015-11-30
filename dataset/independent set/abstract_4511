@@ -1,0 +1,20 @@
+Suppose that we observe entries or, more generally, linear combinations of
+entries of an unknown $m\times T$-matrix $A$ corrupted by noise. We are
+particularly interested in the high-dimensional setting where the number $mT$
+of unknown entries can be much larger than the sample size $N$. Motivated by
+several applications, we consider estimation of matrix $A$ under the assumption
+that it has small rank. This can be viewed as dimension reduction or sparsity
+assumption. In order to shrink toward a low-rank representation, we investigate
+penalized least squares estimators with a Schatten-$p$ quasi-norm penalty term,
+$p\leq1$. We study these estimators under two possible assumptions---a modified
+version of the restricted isometry condition and a uniform bound on the ratio
+"empirical norm induced by the sampling operator/Frobenius norm." The main
+results are stated as nonasymptotic upper bounds on the prediction risk and on
+the Schatten-$q$ risk of the estimators, where $q\in[p,2]$. The rates that we
+obtain for the prediction risk are of the form $rm/N$ (for $m=T$), up to
+logarithmic factors, where $r$ is the rank of $A$. The particular examples of
+multi-task learning and matrix completion are worked out in detail. The proofs
+are based on tools from the theory of empirical processes. As a by-product, we
+derive bounds for the $k$th entropy numbers of the quasi-convex Schatten class
+embeddings $S_p^M\hookrightarrow S_2^M$, $p<1$, which are of independent
+interest.

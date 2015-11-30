@@ -1,0 +1,25 @@
+Energy increasingly constrains modern computer hardware, yet protecting
+computations and data against errors costs energy. This holds at all scales,
+but especially for the largest parallel computers being built and planned
+today. As processor counts continue to grow, the cost of ensuring reliability
+consistently throughout an application will become unbearable. However, many
+algorithms only need reliability for certain data and phases of computation.
+This suggests an algorithm and system codesign approach. We show that if the
+system lets applications apply reliability selectively, we can develop
+algorithms that compute the right answer despite faults. These "fault-tolerant"
+iterative methods either converge eventually, at a rate that degrades
+gracefully with increased fault rate, or return a clear failure indication in
+the rare case that they cannot converge. Furthermore, they store most of their
+data unreliably, and spend most of their time in unreliable mode.
+  We demonstrate this for the specific case of detected but uncorrectable
+memory faults, which we argue are representative of all kinds of faults. We
+developed a cross-layer application / operating system framework that
+intercepts and reports uncorrectable memory faults to the application, rather
+than killing the application, as current operating systems do. The application
+in turn can mark memory allocations as subject to such faults. Using this
+framework, we wrote a fault-tolerant iterative linear solver using components
+from the Trilinos solvers library. Our solver exploits hybrid parallelism (MPI
+and threads). It performs just as well as other solvers if no faults occur, and
+converges where other solvers do not in the presence of faults. We show
+convergence results for representative test problems. Near-term future work
+will include performance tests.

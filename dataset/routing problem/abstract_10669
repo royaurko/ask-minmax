@@ -1,0 +1,21 @@
+As penetration testing frameworks have evolved and have become more complex,
+the problem of controlling automatically the pentesting tool has become an
+important question. This can be naturally addressed as an attack planning
+problem. Previous approaches to this problem were based on modeling the actions
+and assets in the PDDL language, and using off-the-shelf AI tools to generate
+attack plans. These approaches however are limited. In particular, the planning
+is classical (the actions are deterministic) and thus not able to handle the
+uncertainty involved in this form of attack planning.
+  We herein contribute a planning model that does capture the uncertainty about
+the results of the actions, which is modeled as a probability of success of
+each action. We present efficient planning algorithms, specifically designed
+for this problem, that achieve industrial-scale runtime performance (able to
+solve scenarios with several hundred hosts and exploits). These algorithms take
+into account the probability of success of the actions and their expected cost
+(for example in terms of execution time, or network traffic generated).
+  We thus show that probabilistic attack planning can be solved efficiently for
+the scenarios that arise when assessing the security of large networks. Two
+"primitives" are presented, which are used as building blocks in a framework
+separating the overall problem into two levels of abstraction. We also present
+the experimental results obtained with our implementation, and conclude with
+some ideas for further work.

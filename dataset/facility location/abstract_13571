@@ -1,0 +1,15 @@
+We introduce a new compressive power spectrum estimation approach in both
+frequency and direction of arrival (DOA). Wide-sense stationary signals
+produced by multiple uncorrelated sources are compressed in both the time and
+spatial domain where the latter compression is implemented by activating only
+some of the antennas in the underlying uniform linear array (ULA).We sample the
+received signal at every active antenna at sub-Nyquist rate, compute both the
+temporal and spatial correlation functions between the sub-Nyquist rate
+samples, and apply least squares to reconstruct the full-blown two-dimensional
+power spectrum matrix where the rows and columns correspond to the frequencies
+and the angles, respectively. This is possible under the full column rank
+condition of the system matrices and without applying any sparsity constraint
+on the signal statistics. Further, we can estimate the DOAs of the sources by
+locating the peaks of the angular power spectrum. We can theoretically estimate
+the frequency bands and the DOAs of more uncorrelated sources than active
+sensors using sub-Nyquist sampling.

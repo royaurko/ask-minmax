@@ -1,0 +1,18 @@
+A crucial aspect of 3D Monte Carlo radiative transfer is the choice of the
+spatial grid used to partition the dusty medium. We critically investigate the
+use of octree grids in Monte Carlo dust radiative transfer, with two different
+octree construction algorithms (regular and barycentric subdivision) and three
+different octree traversal algorithms (top-down, neighbour list, and the
+bookkeeping method). In general, regular octree grids need higher levels of
+subdivision compared to the barycentric grids for a fixed maximum cell mass
+threshold criterion. The total number of grid cells, however, depends on the
+geometry of the model. Surprisingly, regular octree grid simulations turn out
+to be 10 to 20% more efficient in run time than the barycentric grid
+simulations, even for those cases where the latter contain fewer grid cells
+than the former. Furthermore, we find that storing neighbour lists for each
+cell in an octree, ordered according to decreasing overlap area, is worth the
+additional memory and implementation overhead: using neighbour lists can cut
+down the grid traversal by 20% compared to the traditional top-down method. In
+conclusion, the combination of a regular node subdivision and the neighbour
+list method results in the most efficient octree structure for Monte Carlo
+radiative transfer simulations.

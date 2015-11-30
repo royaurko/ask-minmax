@@ -1,0 +1,26 @@
+We consider the following interacting particle system: There is a ``gas'' of
+particles, each of which performs a continuous-time simple random walk on
+$\mathbb{Z}^d$, with jump rate $D_A$. These particles are called $A$-particles
+and move independently of each other. They are regarded as individuals who are
+ignorant of a rumor or are healthy. We assume that we start the system with
+$N_A(x,0-)$ $A$-particles at $x$, and that the $N_A(x,0-),x\in\mathbb{Z}^d$,
+are i.i.d., mean-$\mu_A$ Poisson random variables. In addition, there are
+$B$-particles which perform continuous-time simple random walks with jump rate
+$D_B$. We start with a finite number of $B$-particles in the system at time 0.
+$B$-particles are interpreted as individuals who have heard a certain rumor or
+who are infected. The $B$-particles move independently of each other. The only
+interaction is that when a $B$-particle and an $A$-particle coincide, the
+latter instantaneously turns into a $B$-particle. We investigate how fast the
+rumor, or infection, spreads. Specifically, if
+$\widetilde{B}(t):=\{x\in\mathbb{Z}^d:$ a $B$-particle visits $x$ during
+$[0,t]\}$ and $B(t)=\widetilde{B}(t)+[-1/2,1/2]^d$, then we investigate the
+asymptotic behavior of $B(t)$. Our principal result states that if $D_A=D_B$
+(so that the $A$- and $B$-particles perform the same random walk), then there
+exist constants $0<C_i<\infty$ such that almost surely
+$\mathcal{C}(C_2t)\subset B(t)\subset \mathcal{C}(C_1t)$ for all large $t$,
+where $\mathcal{C}(r)=[-r,r]^d$. In a further paper we shall use the results
+presented here to prove a full ``shape theorem,'' saying that $t^{-1}B(t)$
+converges almost surely to a nonrandom set $B_0$, with the origin as an
+interior point, so that the true growth rate for $B(t)$ is linear in $t$. If
+$D_A\ne D_B$, then we can only prove the upper bound $B(t)\subset
+\mathcal{C}(C_1t)$ eventually.

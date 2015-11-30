@@ -1,0 +1,14 @@
+We introduce a new probabilistic method for solving a class of impulse
+control problems based on their representations as Backward Stochastic
+Differential Equations (BSDEs for short) with constrained jumps. As an example,
+our method is used for pricing Swing options. We deal with the jump constraint
+by a penalization procedure and apply a discrete-time backward scheme to the
+resulting penalized BSDE with jumps. We study the convergence of this numerical
+method, with respect to the main approximation parameters: the jump intensity
+$\lambda$, the penalization parameter $p > 0$ and the time step. In particular,
+we obtain a convergence rate of the error due to penalization of order
+$(\lambda p)^{\alpha - \frac{1}{2}}, \forall \alpha \in \left(0,
+\frac{1}{2}\right)$. Combining this approach with Monte Carlo techniques, we
+then work out the valuation problem of (normalized) Swing options in the Black
+and Scholes framework. We present numerical tests and compare our results with
+a classical iteration method.

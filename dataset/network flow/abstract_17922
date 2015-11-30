@@ -1,0 +1,23 @@
+We present the \emph{discrete beeping} communication model, which assumes
+nodes have minimal knowledge about their environment and severely limited
+communication capabilities. Specifically, nodes have no information regarding
+the local or global structure of the network, don't have access to synchronized
+clocks and are woken up by an adversary. Moreover, instead on communicating
+through messages they rely solely on carrier sensing to exchange information.
+We study the problem of \emph{interval coloring}, a variant of vertex coloring
+specially suited for the studied beeping model. Given a set of resources, the
+goal of interval coloring is to assign every node a large contiguous fraction
+of the resources, such that neighboring nodes share no resources. To highlight
+the importance of the discreteness of the model, we contrast it against a
+continuous variant described in [17]. We present an O(1$ time algorithm that
+terminates with probability 1 and assigns an interval of size
+$\Omega(T/\Delta)$ that repeats every $T$ time units to every node of the
+network. This improves an $O(\log n)$ time algorithm with the same guarantees
+presented in \cite{infocom09}, and accentuates the unrealistic assumptions of
+the continuous model. Under the more realistic discrete model, we present a Las
+Vegas algorithm that solves $\Omega(T/\Delta)$-interval coloring in $O(\log n)$
+time with high probability and describe how to adapt the algorithm for dynamic
+networks where nodes may join or leave. For constant degree graphs we prove a
+lower bound of $\Omega(\log n)$ on the time required to solve interval coloring
+for this model against randomized algorithms. This lower bound implies that our
+algorithm is asymptotically optimal for constant degree graphs.

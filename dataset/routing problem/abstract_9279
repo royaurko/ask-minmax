@@ -1,0 +1,13 @@
+A discretization scheme for variable coefficient Helmholtz problems on
+two-dimensional domains is presented. The scheme is based on high-order
+spectral approximations and is designed for problems with smooth solutions. The
+resulting system of linear equations is solved using a direct solver with
+O(N^1.5) complexity for the pre-computation and O(N log N) complexity for the
+solve. The fact that the solver is direct is a principal feature of the scheme,
+since iterative methods tend to struggle with the Helmholtz equation. Numerical
+examples demonstrate that the scheme is fast and highly accurate. For instance,
+using a discretization with 12 points per wave-length, a Helmholtz problem on a
+domain of size 100 x 100 wavelengths was solved to ten correct digits. The
+computation was executed on an office desktop; it involved 1.6M degrees of
+freedom and required 100 seconds for the pre-computation, and 0.3 seconds for
+the actual solve.

@@ -1,0 +1,13 @@
+We propose a new exact approach for solving integer linear programming (ILP)
+problems which we will call projective splitting algorithms (PSAs). Unlike
+classical methods for solving ILP problems, PSAs conduct the search for the
+optimal solution by generating candidate solutions tailored to specific values
+of the objective function. As a consequence of this strategy, the number of
+variables in the original ILP problem is systematically reduced without adding
+any additional constraint to the initial formulation. This is the first of a
+two-part series on PSAs. In this paper we focus on the resolution of pure
+integer linear programming (PILP) problems, leaving the treatment of mixed
+integer linear programming (MILP) formulations to the second part of this
+series. The proposed algorithm was tested against the IBM ILOG CPLEX [2]
+optimizer on instances of the 0-1 Multidimensional Knapsack Problem (0-1MKP),
+showing satisfactory results on instances with a large number of variables.

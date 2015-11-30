@@ -1,0 +1,12 @@
+This paper describes experiments, on two domains, to investigate the effect
+of averaging over predictions of multiple decision trees, instead of using a
+single tree. Other contributors have pointed out theoretical and commonsense reasons
+for preferring the multiple tree approach. Ideally, we would like to consider
+predictions from all trees, weighted by their probability. However, there is a
+vast number of different trees, and it is difficult to estimate the probability
+of each tree. We sidestep the estimation problem by using a modified version of
+the ID3 algorithm to build good trees, and average over only these trees. Our
+results are encouraging. For each domain, we managed to produce a small number
+of good trees. We find that it is best to average across sets of trees with
+different structure; this usually gives better performance than any of the
+constituent trees, including the ID3 tree.

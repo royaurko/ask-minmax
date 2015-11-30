@@ -1,0 +1,21 @@
+The most commonly used method to tackle the graph partitioning problem in
+practice is the multilevel approach. During a coarsening phase, a multilevel
+graph partitioning algorithm reduces the graph size by iteratively contracting
+nodes and edges until the graph is small enough to be partitioned by some other
+algorithm. A partition of the input graph is then constructed by successively
+transferring the solution to the next finer graph and applying a local search
+algorithm to improve the current solution.
+  In this paper, we describe a novel approach to partition graphs effectively
+especially if the networks have a highly irregular structure. More precisely,
+our algorithm provides graph coarsening by iteratively contracting
+size-constrained clusterings that are computed using a label propagation
+algorithm. The same algorithm that provides the size-constrained clusterings
+can also be used during uncoarsening as a fast and simple local search
+algorithm.
+  Depending on the algorithm's configuration, we are able to compute partitions
+of very high quality outperforming all competitors, or partitions that are
+comparable to the best competitor in terms of quality, hMetis, while being
+nearly an order of magnitude faster on average. The fastest configuration
+partitions the largest graph available to us with 3.3 billion edges using a
+single machine in about ten minutes while cutting less than half of the edges
+than the fastest competitor, kMetis.

@@ -1,0 +1,21 @@
+We introduce unconditionally stable finite element approximations for a phase
+field model for solidification, which take highly anisotropic surface energy
+and kinetic effects into account. We hence approximate Stefan problems with
+anisotropic Gibbs--Thomson law with kinetic undercooling, and quasi-static
+variants thereof. The phase field model is given by {align*} \vartheta\,w_t +
+\lambda\,\varrho(\varphi)\,\varphi_t & = \nabla \,.\, (b(\varphi)\,\nabla\, w)
+\,, \cPsi\,\tfrac{a}\alpha\,\varrho(\varphi)\,w & =
+\epsilon\,\tfrac\rho\alpha\,\mu(\nabla\,\varphi)\,\varphi_t -\epsilon\,\nabla
+\,.\, A'(\nabla\, \varphi) + \epsilon^{-1}\,\Psi'(\varphi) {align*} subject to
+initial and boundary conditions for the phase variable $\varphi$ and the
+temperature approximation $w$. Here $\epsilon > 0$ is the interfacial
+parameter, $\Psi$ is a double well potential, $\cPsi = \int_{-1}^1
+\sqrt{2\,\Psi(s)}\;{\rm d}s$, $\varrho$ is a shape function and
+$A(\nabla\,\varphi) = \tfrac12\,|\gamma(\nabla\,\varphi)|^2$, where $\gamma$ is
+the anisotropic density function. Moreover, $\vartheta \geq 0$, $\lambda > 0$,
+$a > 0$, $\alpha > 0$ and $\rho \geq 0$ are physical parameters from the Stefan
+problem, while $b$ and $\mu$ are coefficient functions which also relate to the
+sharp interface problem.
+  On introducing the novel fully practical finite element approximations for
+the anisotropic phase field model, we prove their stability and demonstrate
+their applicability with some numerical results.

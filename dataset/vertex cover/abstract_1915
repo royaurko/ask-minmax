@@ -1,0 +1,13 @@
+In order to protect an image search engine's users from undesirable results
+adult images' classifier should be built. The information about links from
+websites to images is employed to create such a classifier. These links are
+represented as a bipartite website-image graph. Each vertex is equipped with
+scores of adultness and decentness. The scores for image vertexes are
+initialized with zero, those for website vertexes are initialized according to
+a text-based website classifier. An iterative algorithm that propagates scores
+within a website-image graph is described. The scores obtained are used to
+classify images by choosing an appropriate threshold. The experiments on
+Internet-scale data have shown that the algorithm under consideration increases
+classification recall by 17% in comparison with a simple algorithm which
+classifies an image as adult if it is connected with at least one adult site
+(at the same precision level).

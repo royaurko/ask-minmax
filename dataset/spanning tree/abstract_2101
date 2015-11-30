@@ -1,0 +1,16 @@
+Dynamic programming on tree decompositions is a frequently used approach to
+solve otherwise intractable problems on instances of small treewidth. In recent
+work by Bodlaender et al., it was shown that for many connectivity problems,
+there exist algorithms that use time, linear in the number of vertices, and
+single exponential in the width of the tree decomposition that is used. The
+central idea is that it suffices to compute representative sets, and these can
+be computed efficiently with help of Gaussian elimination.
+  In this paper, we give an experimental evaluation of this technique for the
+Steiner Tree problem. A comparison of the classic dynamic programming algorithm
+and the improved dynamic programming algorithm that employs the table reduction
+shows that the new approach gives significant improvements on the running time
+of the algorithm and the size of the tables computed by the dynamic programming
+algorithm, and thus that the rank based approach from Bodlaender et al. does
+not only give significant theoretical improvements but also is a viable
+approach in a practical setting, and showcases the potential of exploiting the
+idea of representative sets for speeding up dynamic programming algorithms.

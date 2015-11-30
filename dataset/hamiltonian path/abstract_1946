@@ -1,0 +1,10 @@
+A path from s to t on a polyhedral terrain is descending if the height of a
+point p never increases while we move p along the path from s to t. No
+efficient algorithm is known to find a shortest descending path (SDP) from s to
+t in a polyhedral terrain. We give a simple approximation algorithm that solves
+the SDP problem on general terrains. Our algorithm discretizes the terrain with
+O(n^2 X / e) Steiner points so that after an O(n^2 X / e * log(n X /e))-time
+preprocessing phase for a given vertex s, we can determine a (1+e)-approximate
+SDP from s to any point v in O(n) time if v is either a vertex of the terrain
+or a Steiner point, and in O(n X /e) time otherwise. Here n is the size of the
+terrain, and X is a parameter of the geometry of the terrain.

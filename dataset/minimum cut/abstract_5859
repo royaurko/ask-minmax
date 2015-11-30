@@ -1,0 +1,16 @@
+We generalize an efficient exact synthesis algorithm for single-qubit
+unitaries over the Clifford+T gate set which was presented by Kliuchnikov,
+Maslov and Mosca. Their algorithm takes as input an exactly synthesizable
+single-qubit unitary--one which can be expressed without error as a product of
+Clifford and T gates--and outputs a sequence of gates which implements it. The
+algorithm is optimal in the sense that the length of the sequence, measured by
+the number of T gates, is smallest possible. In this paper, for each positive
+even integer $n$ we consider the "Clifford-cyclotomic" gate set consisting of
+the Clifford group plus a z-rotation by $\frac{\pi}{n}$. We present an
+efficient exact synthesis algorithm which outputs a decomposition using the
+minimum number of $\frac{\pi}{n}$ z-rotations. For the Clifford+T case $n=4$
+the group of exactly synthesizable unitaries was shown to be equal to the group
+of unitaries with entries over the ring $\mathbb{Z}[e^{i\frac{\pi}{n}},1/2]$.
+We prove that this characterization holds for a handful of other small values
+of $n$ but the fraction of positive even integers for which it fails to hold is
+100%.

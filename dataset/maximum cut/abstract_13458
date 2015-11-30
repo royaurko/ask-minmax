@@ -1,0 +1,15 @@
+Standard maximum-likelihood estimators for binary-star and exoplanet
+eccentricities are biased high, in the sense that the estimated eccentricity
+tends to be larger than the true eccentricity. As with most non-trivial
+observables, a simple histogram of estimated eccentricities is not a good
+estimate of the true eccentricity distribution. Here we develop and test a
+hierarchical probabilistic method for performing the relevant meta-analysis,
+that is, inferring the true eccentricity distribution, taking as input the
+likelihood functions for the individual-star eccentricities, or samplings of
+the posterior probability distributions for the eccentricities (under a given,
+uninformative prior). The method is a simple implementation of a hierarchical
+Bayesian model; it can also be seen as a kind of heteroscedastic deconvolution.
+It can be applied to any quantity measured with finite precision--other orbital
+parameters, or indeed any astronomical measurements of any kind, including
+magnitudes, parallaxes, or photometric redshifts--so long as the measurements
+have been communicated as a likelihood function or a posterior sampling.

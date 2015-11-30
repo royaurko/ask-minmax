@@ -1,0 +1,25 @@
+Communication networks, such as core optical networks, heavily depend on
+their physical infrastructure, and hence they are vulnerable to man-made
+disasters, such as Electromagnetic Pulse (EMP) or Weapons of Mass Destruction
+(WMD) attacks, as well as to natural disasters. Large-scale disasters may cause
+huge data loss and connectivity disruption in these networks. As our dependence
+on network services increases, the need for novel survivability methods to
+mitigate the effects of disasters on communication networks becomes a major
+concern. Software-Defined Networking (SDN), by centralizing control logic and
+separating it from physical equipment, facilitates network programmability and
+opens up new ways to design disaster-resilient networks. On the other hand, to
+fully exploit the potential of SDN, along with data-plane survivability, we
+also need to design the control plane to be resilient enough to survive network
+failures caused by disasters. Several distributed SDN controller architectures
+have been proposed to mitigate the risks of overload and failure, but they are
+optimized for limited faults without addressing the extent of large-scale
+disaster failures. For disaster resiliency of the control plane, we propose to
+design it as a virtual network, which can be solved using Virtual Network
+Mapping techniques. We select appropriate mapping of the controllers over the
+physical network such that the connectivity among the controllers
+(controller-to-controller) and between the switches to the controllers
+(switch-to-controllers) is not compromised by physical infrastructure failures
+caused by disasters. We formally model this disaster-aware control-plane design
+and mapping problem, and demonstrate a significant reduction in the disruption
+of controller-to-controller and switch-to-controller communication channels
+using our approach.

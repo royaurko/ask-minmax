@@ -1,0 +1,18 @@
+The interactions between the components of complex networks are often
+directed. Proper modeling of such systems frequently requires the construction
+of ensembles of digraphs with a given sequence of in- and out-degrees. As the
+number of simple labeled graphs with a given degree sequence is typically very
+large even for short sequences, sampling methods are needed for statistical
+studies. Currently, there are two main classes of methods that generate
+samples. One of the existing methods first generates a restricted class of
+graphs, then uses a Markov Chain Monte-Carlo algorithm based on edge swaps to
+generate other realizations. As the mixing time of this process is still
+unknown, the independence of the samples is not well controlled. The other
+class of methods is based on the Configuration Model that may lead to
+unacceptably many sample rejections due to self-loops and multiple edges. Here
+we present an algorithm that can directly construct all possible realizations
+of a given bi-degree sequence by simple digraphs. Our method is rejection free,
+guarantees the independence of the constructed samples, and provides their
+weight. The weights can then be used to compute statistical averages of network
+observables as if they were obtained from uniformly distributed sampling, or
+from any other chosen distribution.

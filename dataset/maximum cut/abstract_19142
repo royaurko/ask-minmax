@@ -1,0 +1,24 @@
+We consider the estimation of an i.i.d. (possibly non-Gaussian) vector $\xbf
+\in \R^n$ from measurements $\ybf \in \R^m$ obtained by a general cascade model
+consisting of a known linear transform followed by a probabilistic
+componentwise (possibly nonlinear) measurement channel. A novel method, called
+adaptive generalized approximate message passing (Adaptive GAMP), that enables
+joint learning of the statistics of the prior and measurement channel along
+with estimation of the unknown vector $\xbf$ is presented. The proposed
+algorithm is a generalization of a recently-developed EM-GAMP that uses
+expectation-maximization (EM) iterations where the posteriors in the E-steps
+are computed via approximate message passing. The methodology can be applied to
+a large class of learning problems including the learning of sparse priors in
+compressed sensing or identification of linear-nonlinear cascade models in
+dynamical systems and neural spiking processes. We prove that for large i.i.d.
+Gaussian transform matrices the asymptotic componentwise behavior of the
+adaptive GAMP algorithm is predicted by a simple set of scalar state evolution
+equations. In addition, we show that when a certain maximum-likelihood
+estimation can be performed in each step, the adaptive GAMP method can yield
+asymptotically consistent parameter estimates, which implies that the algorithm
+achieves a reconstruction quality equivalent to the oracle algorithm that knows
+the correct parameter values. Remarkably, this result applies to essentially
+arbitrary parametrizations of the unknown distributions, including ones that
+are nonlinear and non-Gaussian. The adaptive GAMP methodology thus provides a
+systematic, general and computationally efficient method applicable to a large
+range of complex linear-nonlinear models with provable guarantees.

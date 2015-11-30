@@ -1,0 +1,15 @@
+We enumerate a certain class of monomino-domino coverings of square grids,
+which conform to the \emph{tatami} restriction; no four tiles meet. Let
+$\mathbf T_{n}$ be the set of monomino-domino tatami coverings of the $n\times
+n$ grid with the maximum number, $n$, of monominoes, oriented so that they have
+a monomino in each of the top left and top right corners. We give an algorithm
+for exhaustively generating the coverings in $\mathbf T_{n}$ with exactly $v$
+vertical dominoes in constant amortized time, and an explicit formula for
+counting them. The polynomial that generates these counts has the factorisation
+{align*} P_n(z)\prod_{j\ge 1} S_{\lfloor \frac{n-2}{2^j} \rfloor}(z), {align*}
+where $S_n(z) = \prod_{i=1}^{n} (1 + z^i)$, and $P_n(z)$ is an irreducible
+polynomial, at least for ${1 < n < 200}$. We present some compelling properties
+and conjectures about $P_n(z)$. For example $P_n(1) = n2^{\nu(n-2)-1}$ for all
+$n \ge 2$, where $\nu(n)$ is the number of 1s in the binary representation of
+$n$ and deg$(P_n(z)) = \sum_{k=1}^{n-2} Od(k)$, where $Od(k)$ is the largest
+odd divisor of $k$.

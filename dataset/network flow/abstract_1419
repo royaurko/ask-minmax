@@ -1,0 +1,20 @@
+Distributed storage systems provide reliable access to data through
+redundancy spread over individually unreliable nodes. Application scenarios
+include data centers, peer-to-peer storage systems, and storage in wireless
+networks. Storing data using an erasure code, in fragments spread across nodes,
+requires less redundancy than simple replication for the same level of
+reliability. However, since fragments must be periodically replaced as nodes
+fail, a key question is how to generate encoded fragments in a distributed way
+while transferring as little data as possible across the network.
+  For an erasure coded system, a common practice to repair from a node failure
+is for a new node to download subsets of data stored at a number of surviving
+nodes, reconstruct a lost coded block using the downloaded data, and store it
+at the new node. We show that this procedure is sub-optimal. We introduce the
+notion of regenerating codes, which allow a new node to download
+\emph{functions} of the stored data from the surviving nodes. We show that
+regenerating codes can significantly reduce the repair bandwidth. Further, we
+show that there is a fundamental tradeoff between storage and repair bandwidth
+which we theoretically characterize using flow arguments on an appropriately
+constructed graph. By invoking constructive results in network coding, we
+introduce regenerating codes that can achieve any point in this optimal
+tradeoff.

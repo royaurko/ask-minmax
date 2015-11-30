@@ -1,0 +1,15 @@
+Applications such as traffic engineering and network provisioning can greatly
+benefit from knowing, in real time, what is the largest input rate at which it
+is possible to transmit on a given path without causing congestion. We consider
+a probabilistic formulation for available bandwidth where the user specifies
+the probability of achieving an output rate almost as large as the input rate.
+We are interested in estimating and tracking the network-wide probabilistic
+available bandwidth (PAB) on multiple paths simultaneously with minimal
+overhead on the network. We propose a novel framework based on chirps, Bayesian
+inference, belief propagation and active sampling to estimate the PAB. We also
+consider the time evolution of the PAB by forming a dynamic model and designing
+a tracking algorithm based on particle filters. We implement our method in a
+lightweight and practical tool that has been deployed on the PlanetLab network
+to do online experiments. We show through these experiments and simulations
+that our approach outperforms block-based algorithms in terms of input rate
+cost and probability of successful transmission.

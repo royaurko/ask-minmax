@@ -1,0 +1,22 @@
+Keyword search against structured databases has become a popular topic of
+investigation, since many users find structured queries too hard to express,
+and enjoy the freedom of a ``Google-like'' query box into which search terms
+can be entered. Attempts to address this problem face a fundamental dilemma.
+Database querying is based on the logic of predicate evaluation, with a
+precisely defined answer set for a given query. On the other hand, in an
+information retrieval approach, ranked query results have long been accepted as
+far superior to results based on boolean query evaluation. As a consequence,
+when keyword queries are attempted against databases, relatively ad-hoc ranking
+mechanisms are invented (if ranking is used at all), and there is little
+leverage from the large body of IR literature regarding how to rank query
+results.
+  Our proposal is to create a clear separation between ranking and database
+querying. This divides the problem into two parts, and allows us to address
+these separately. The first task is to represent the database, conceptually, as
+a collection of independent ``queried units'', or ``qunits'', each of which
+represents the desired result for some query against the database. The second
+task is to evaluate keyword queries against a collection of qunits, which can
+be treated as independent documents for query purposes, thereby permitting the
+use of standard IR techniques. We provide insights that encourage the use of
+this query paradigm, and discuss preliminary investigations into the efficacy
+of a qunits-based framework based on a prototype implementation.

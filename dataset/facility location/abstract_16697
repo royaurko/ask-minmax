@@ -1,0 +1,16 @@
+We introduce a Bayesian model for estimating the distribution of ambulance
+travel times on each road segment in a city, using Global Positioning System
+(GPS) data. Due to sparseness and error in the GPS data, the exact ambulance
+paths and travel times on each road segment are unknown. We simultaneously
+estimate the paths, travel times, and parameters of each road segment travel
+time distribution using Bayesian data augmentation. To draw ambulance path
+samples, we use a novel reversible jump Metropolis-Hastings step. We also
+introduce two simpler estimation methods based on GPS speed data. We compare
+these methods to a recently published travel time estimation method, using
+simulated data and data from Toronto EMS. In both cases, out-of-sample point
+and interval estimates of ambulance trip times from the Bayesian method
+outperform estimates from the alternative methods. We also construct
+probability-of-coverage maps for ambulances. The Bayesian method gives more
+realistic maps than the recently published method. Finally, path estimates from
+the Bayesian method interpolate well between sparsely recorded GPS readings and
+are robust to GPS location errors.

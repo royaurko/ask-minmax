@@ -1,0 +1,12 @@
+In this paper, we introduce a novel, general purpose, technique for faster
+sampling of nodes over an online social network. Specifically, unlike
+traditional random walk which wait for the convergence of sampling distribution
+to a predetermined target distribution - a waiting process that incurs a high
+query cost - we develop WALK-ESTIMATE, which starts with a much shorter random
+walk, and then proactively estimate the sampling probability for the node taken
+before using acceptance-rejection sampling to adjust the sampling probability
+to the predetermined target distribution. We present a novel backward random
+walk technique which provides provably unbiased estimations for the sampling
+probability, and demonstrate the superiority of WALK-ESTIMATE over traditional
+random walks through theoretical analysis and extensive experiments over real
+world online social networks.

@@ -1,0 +1,20 @@
+Structured Adaptive Mesh Refinement (SAMR) is a popular numerical technique
+to study processes with high spatial and temporal dynamic range. It reduces
+computational requirements by adapting the lattice on which the underlying
+differential equations are solved to most efficiently represent the solution.
+Particularly in astrophysics and cosmology such simulations now can capture
+spatial scales ten orders of magnitude apart and more. The irregular locations
+and extensions of the refined regions in the SAMR scheme and the fact that
+different resolution levels partially overlap, poses a challenge for GPU-based
+direct volume rendering methods. kD-trees have proven to be advantageous to
+subdivide the data domain into non-overlapping blocks of equally sized cells,
+optimal for the texture units of current graphics hardware, but previous
+GPU-supported raycasting approaches for SAMR data using this data structure
+required a separate rendering pass for each node, preventing the application of
+many advanced lighting schemes that require simultaneous access to more than
+one block of cells. In this paper we present a single-pass GPU-raycasting
+algorithm for SAMR data that is based on a kD-tree. The tree is efficiently
+encoded by a set of 3D-textures, which allows to adaptively sample complete
+rays entirely on the GPU without any CPU interaction. We discuss two different
+data storage strategies to access the grid data on the GPU and apply them to
+several datasets to prove the benefits of the proposed method.

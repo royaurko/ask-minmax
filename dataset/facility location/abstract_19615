@@ -1,0 +1,25 @@
+Building on ideas from online convex optimization, we propose a general
+framework for the design of efficient securities markets over very large
+outcome spaces. The challenge here is computational. In a complete market, in
+which one security is offered for each outcome, the market institution can not
+efficiently keep track of the transaction history or calculate security prices
+when the outcome space is large. The natural solution is to restrict the space
+of securities to be much smaller than the outcome space in such a way that
+securities can be priced efficiently. Recent research has focused on searching
+for spaces of securities that can be priced efficiently by existing mechanisms
+designed for complete markets. While there have been some successes, much of
+this research has led to hardness results. In this paper, we take a drastically
+different approach. We start with an arbitrary space of securities with bounded
+payoff, and establish a framework to design markets tailored to this space. We
+prove that any market satisfying a set of intuitive conditions must price
+securities via a convex potential function and that the space of reachable
+prices must be precisely the convex hull of the security payoffs. We then show
+how the convex potential function can be defined in terms of an optimization
+over the convex hull of the security payoffs. The optimal solution to the
+optimization problem gives the security prices. Using this framework, we
+provide an efficient market for predicting the landing location of an object on
+a sphere. In addition, we show that we can relax our "no-arbitrage" condition
+to design a new efficient market maker for pair betting, which is known to be
+#P-hard to price using existing mechanisms. This relaxation also allows the
+market maker to charge transaction fees so that the depth of the market can be
+dynamically increased as the number of trades increases.

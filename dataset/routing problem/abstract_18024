@@ -1,0 +1,14 @@
+We propose a parallel adaptive constraint-tightening approach to solve a
+linear model predictive control problem for discrete-time systems, based on
+inexact numerical optimization algorithms and operator splitting methods. The
+underlying algorithm first splits the original problem in as many independent
+subproblems as the length of the prediction horizon. Then, our algorithm
+computes a solution for these subproblems in parallel by exploiting auxiliary
+tightened subproblems in order to certify the control law in terms of
+suboptimality and recursive feasibility, along with closed-loop stability of
+the controlled system. Compared to prior approaches based on constraint
+tightening, our algorithm computes the tightening parameter for each subproblem
+to handle the propagation of errors introduced by the parallelization of the
+original problem. Our simulations show the computational benefits of the
+parallelization with positive impacts on performance and numerical conditioning
+when compared with a recent nonparallel adaptive tightening scheme.

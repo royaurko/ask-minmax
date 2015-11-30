@@ -1,0 +1,22 @@
+The paper demonstrates the optimization of the execution environment of a
+hybrid OpenMP+MPI computational fluid dynamics code (shallow water equation
+solver) on a cluster enabled with Intel Xeon Phi coprocessors. The discussion
+includes: (1) Controlling the number and affinity of OpenMP threads to optimize
+access to memory bandwidth; (2) Tuning the inter-operation of OpenMP and MPI to
+partition the problem for better data locality; (3) Ordering the MPI ranks in a
+way that directs some of the traffic into faster communication channels; (4)
+Using efficient peer-to-peer communication between Xeon Phi coprocessors based
+on the InfiniBand fabric.
+  With tuning, the application has 90% percent efficiency of parallel scaling
+up to 8 Intel Xeon Phi coprocessors in 2 compute nodes. For larger problems,
+scalability is even better, because of the greater computation to communication
+ratio. However, problems of that size do not fit in the memory of one
+coprocessor. The performance of the solver on one Intel Xeon Phi coprocessor
+7120P exceeds the performance on a dual-socket Intel Xeon E5-2697 v2 CPU by a
+factor of 1.6x. In a 2-node cluster with 4 coprocessors per compute node, the
+MIC architecture yields 5.8x more performance than the CPUs. Only one line of
+legacy Fortran code had to be changed in order to achieve the reported
+performance on the MIC architecture (not counting changes to the command-line
+interface). The methodology discussed in this paper is directly applicable to
+other bandwidth-bound stencil algorithms utilizing a hybrid OpenMP+MPI
+approach.

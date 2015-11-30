@@ -1,0 +1,21 @@
+Based on realistic simulations, we propose an hybrid method to reconstruct
+the lensing potential power spectrum, directly on PLANCK-like CMB frequency
+maps. It implies using a large galactic mask and dealing with a strong
+inhomogeneous noise. For l < 100, we show that a full-sky inpainting method,
+already described in a previous work, still allows a minimal variance
+reconstruction, with a bias that must be accounted for by a Monte-Carlo method,
+but that does not couple to the deflection field. For l>100 we develop a method
+based on tiling the cut-sky with local 10x10 degrees overlapping tangent planes
+(referred to in the following as "patches"). It requires to solve various
+issues concerning their size/position, non-periodic boundaries and irregularly
+sampled data after the sphere-to-plane projection. We show how the leading
+noise term of the quadratic lensing estimator applied onto an apodized patch
+can still be taken directly from the data. To not loose spatial accuracy, we
+developed a tool that allows the fast determination of the complex Fourier
+series coefficients from a bi-dimensional irregularly sampled dataset, without
+performing an interpolation. We show that the multi-patch approach allows the
+lensing power spectrum reconstruction with a very small bias, thanks to
+avoiding the galactic mask and lowering the noise inhomogeneities, while still
+having almost a minimal variance. The data quality can be assessed at each
+stage and simple bi-dimensional spectra build, which allows the control of
+local systematic errors.

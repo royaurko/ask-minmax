@@ -1,0 +1,11 @@
+Race condition is a timing sensitive problem. A significant source of timing
+variation comes from nondeterministic hardware interactions such as cache
+misses. While data race detectors and model checkers can check races, the
+enormous state space of complex software makes it difficult to identify all of
+the races and those residual implementation errors still remain a big
+challenge. In this paper, we propose deterministic real-time scheduling methods
+to address scheduling nondeterminism in uniprocessor systems. The main idea is
+to use timing insensitive deterministic events, e.g, an instruction counter, in
+conjunction with a real-time clock to schedule threads. By introducing the
+concept of Worst Case Executable Instructions (WCEI), we guarantee both
+determinism and real-time performance.

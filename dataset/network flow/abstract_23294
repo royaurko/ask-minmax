@@ -1,0 +1,19 @@
+In this paper, we consider the inverse problem of determining the
+permeability of the subsurface from hydraulic head measurements, within the
+framework of a steady Darcy model of groundwater flow. We study geometrically
+defined prior permeability fields, which admit layered, fault and channel
+structures, in order to mimic realistic subsurface features; within each layer
+we adopt either constant or continuous function representation of the
+permeability. This prior model leads to a parameter identification problem for
+a finite number of unknown parameters determining the geometry, together with
+either a finite number of permeability values (in the constant case) or a
+finite number of fields (in the continuous function case). We adopt a Bayesian
+framework showing existence and well-posedness of the posterior distribution.
+We also introduce novel Markov Chain-Monte Carlo (MCMC) methods, which exploit
+the different character of the geometric and permeability parameters, and build
+on recent advances in function space MCMC. These algorithms provide rigorous
+estimates of the permeability, as well as the uncertainty associated with it,
+and only require forward model evaluations. No adjoint solvers are required and
+hence the methodology is applicable to black-box forward models. We then use
+these methods to explore the posterior and to illustrate the methodology with
+numerical experiments.

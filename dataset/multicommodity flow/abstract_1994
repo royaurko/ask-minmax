@@ -1,0 +1,9 @@
+For accurate simulations of rarefied gas flows around moving obstacles, we
+propose a cut cell method on Cartesian grids: it allows exact conservation and
+accurate treatment of boundary conditions. Our approach is designed to treat
+Cartesian cells and various kind of cut cells by the same algorithm, with no
+need to identify the specific shape of each cut cell. This makes the
+implementation quite simple, and allows a direct extension to 3D problems. Such
+simulations are also made possible by using an adaptive mesh refinement
+technique and a hybrid parallel implementation. This is illustrated by several
+test cases, including a 3D unsteady simulation of the Crookes radiometer.

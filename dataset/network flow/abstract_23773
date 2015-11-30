@@ -1,0 +1,15 @@
+Recent work by Zymnis et al. proposes an efficient primal-dual interior-point
+method, using a truncated Newton method, for solving the network utility
+maximization (NUM) problem. This method has shown superior performance relative
+to the traditional dual-decomposition approach. Other recent work by Bickson et
+al. shows how to compute efficiently and distributively the Newton step, which
+is the main computational bottleneck of the Newton method, utilizing the
+Gaussian belief propagation algorithm.
+  In the current work, we combine both approaches to create an efficient
+distributed algorithm for solving the NUM problem. Unlike the work of Zymnis,
+which uses a centralized approach, our new algorithm is easily distributed.
+Using an empirical evaluation we show that our new method outperforms previous
+approaches, including the truncated Newton method and dual-decomposition
+methods. As an additional contribution, this is the first work that evaluates
+the performance of the Gaussian belief propagation algorithm vs. the
+preconditioned conjugate gradient method, for a large scale problem.

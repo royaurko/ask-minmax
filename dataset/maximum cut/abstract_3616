@@ -1,0 +1,14 @@
+The Maximum Betweenness Centrality problem (MBC) can be defined as follows.
+Given a graph find a $k$-element node set $C$ that maximizes the probability of
+detecting communication between a pair of nodes $s$ and $t$ chosen uniformly at
+random. It is assumed that the communication between $s$ and $t$ is realized
+along a shortest $s$--$t$ path which is, again, selected uniformly at random.
+The communication is detected if the communication path contains a node of $C$.
+Recently, Dolev et al. (2009) showed that MBC is NP-hard and gave a
+$(1-1/e)$-approximation using a greedy approach. We provide a reduction of MBC
+to Maximum Coverage that simplifies the analysis of the algorithm of Dolev et
+al. considerably. Our reduction allows us to obtain a new algorithm with the
+same approximation ratio for a (generalized) budgeted version of MBC. We
+provide tight examples showing that the analyses of both algorithms are best
+possible. Moreover, we prove that MBC is APX-complete and provide an exact
+polynomial-time algorithm for MBC on tree graphs.

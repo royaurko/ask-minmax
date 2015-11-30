@@ -1,0 +1,16 @@
+We propose automated techniques for the verification and control of
+probabilistic real-time systems that are only partially observable. To formally
+model such systems, we define an extension of probabilistic timed automata in
+which local states are partially visible to an observer or controller. We give
+a probabilistic temporal logic that can express a range of quantitative
+properties of these models, relating to the probability of an event's
+occurrence or the expected value of a reward measure. We then propose
+techniques to either verify that such a property holds or to synthesise a
+controller for the model which makes it true. Our approach is based on an
+integer discretisation of the model's dense-time behaviour and a grid-based
+abstraction of the uncountable belief space induced by partial observability.
+The latter is necessarily approximate since the underlying problem is
+undecidable, however we show how both lower and upper bounds on numerical
+results can be generated. We illustrate the effectiveness of the approach by
+implementing it in the PRISM model checker and applying it to several case
+studies, from the domains of computer security and task scheduling.

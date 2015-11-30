@@ -1,0 +1,18 @@
+Let R^d -> A be a query problem over R^d for which there exists a data
+structure S that can compute P(q) in O(log n) time for any query point q in
+R^d. Let D be a probability measure over R^d representing a distribution of
+queries. We describe a data structure called the odds-on tree, of size
+O(n^\epsilon) that can be used as a filter that quickly computes P(q) for some
+query values q in R^d and relies on S for the remaining queries. With an
+odds-on tree, the expected query time for a point drawn according to D is
+O(H*+1), where H* is a lower-bound on the expected cost of any linear decision
+tree that solves P.
+  Odds-on trees have a number of applications, including distribution-sensitive
+data structures for point location in 2-d, point-in-polytope testing in d
+dimensions, ray shooting in simple polygons, ray shooting in polytopes,
+nearest-neighbour queries in R^d, point-location in arrangements of hyperplanes
+in R^d, and many other geometric searching problems that can be solved in the
+linear-decision tree model. A standard lifting technique extends these results
+to algebraic decision trees of constant degree. A slightly different version of
+odds-on trees yields similar results for orthogonal searching problems that can
+be solved in the comparison tree model.

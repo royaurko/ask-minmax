@@ -1,0 +1,18 @@
+It is very common with molecular dynamics and other simulation techniques to
+apply Lees-Edwards periodic boundary conditions (PBCs) for the simulation of
+shear flow. However the behavior of a complex liquid can be quite different
+under extensional flow. Simple deformation of a simulation cell and its
+periodic images only allows for simulations of these flows with short duration.
+For the simulation of planar extensional flow it was recognized that the PBCs
+of Kraynik and Reinelt [Int. J. Multiphase Flow 18, 1045 (1992)] could be used
+to perform simulations of this flow with arbitrary duration. However, a very
+common extensional flow in industrial applications and experiment is uniaxial
+extensional flow. Kraynik and Reinelt found that their method could not be
+directly generalized to this flow because of the lack of a lattice which
+reproduces itself during uniaxial extension. PBCs are presented in this article
+which solve this problem, by finding a lattice which is compatible with the
+flow, finding the reduced basis to the lattice at all times and using this
+basis when calculating the position and separation of particles. Using these
+new PBCs we perform nonequilibrium molecular dynamics simulations of a simple
+liquid and show that the technique gives results which agree with those from
+simulations using simply deforming PBCs.

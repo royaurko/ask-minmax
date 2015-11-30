@@ -1,0 +1,22 @@
+This paper presents a comparative study of two different methods, which are
+based on fusion and polar transformation of visual and thermal images. Here,
+investigation is done to handle the challenges of face recognition, which
+include pose variations, changes in facial expression, partial occlusions,
+variations in illumination, rotation through different angles, change in scale
+etc. To overcome these obstacles we have implemented and thoroughly examined
+two different fusion techniques through rigorous experimentation. In the first
+method log-polar transformation is applied to the fused images obtained after
+fusion of visual and thermal images whereas in second method fusion is applied
+on log-polar transformed individual visual and thermal images. After this step,
+which is thus obtained in one form or another, Principal Component Analysis
+(PCA) is applied to reduce dimension of the fused images. Log-polar transformed
+images are capable of handling complicacies introduced by scaling and rotation.
+The main objective of employing fusion is to produce a fused image that
+provides more detailed and reliable information, which is capable to overcome
+the drawbacks present in the individual visual and thermal face images.
+Finally, those reduced fused images are classified using a multilayer
+perceptron neural network. The database used for the experiments conducted here
+is Object Tracking and Classification Beyond Visible Spectrum (OTCBVS) database
+benchmark thermal and visual face images. The second method has shown better
+performance, which is 95.71% (maximum) and on an average 93.81% as correct
+recognition rate.

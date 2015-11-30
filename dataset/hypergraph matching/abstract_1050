@@ -1,0 +1,15 @@
+Cluster matching by permuting cluster labels is important in many clustering
+contexts such as cluster validation and cluster ensemble techniques. The
+classic approach is to minimize the euclidean distance between two cluster
+solutions which induces inappropriate stability in certain settings. Therefore,
+we present the truematch algorithm that introduces two improvements best
+explained in the crisp case. First, instead of maximizing the trace of the
+cluster crosstable, we propose to maximize a chi-square transformation of this
+crosstable. Thus, the trace will not be dominated by the cells with the largest
+counts but by the cells with the most non-random observations, taking into
+account the marginals. Second, we suggest a probabilistic component in order to
+break ties and to make the matching algorithm truly random on random data. The
+truematch algorithm is designed as a building block of the truecluster
+framework and scales in polynomial time. First simulation results confirm that
+the truematch algorithm gives more consistent truecluster results for unequal
+cluster sizes. Free R software is available.

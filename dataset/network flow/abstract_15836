@@ -1,0 +1,16 @@
+State-of-the-art techniques for probability sampling of users of online
+social networks (OSNs) are based on random walks on a single social relation
+(typically friendship). While powerful, these methods rely on the social graph
+being fully connected. Furthermore, the mixing time of the sampling process
+strongly depends on the characteristics of this graph. In this paper, we
+observe that there often exist other relations between OSN users, such as
+membership in the same group or participation in the same event. We propose to
+exploit the graphs these relations induce, by performing a random walk on their
+union multigraph. We design a computationally efficient way to perform
+multigraph sampling by randomly selecting the graph on which to walk at each
+iteration. We demonstrate the benefits of our approach through (i) simulation
+in synthetic graphs, and (ii) measurements of Last.fm - an Internet website for
+music with social networking features. More specifically, we show that
+multigraph sampling can obtain a representative sample and faster convergence,
+even when the individual graphs fail, i.e., are disconnected or highly
+clustered.

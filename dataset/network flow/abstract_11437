@@ -1,0 +1,18 @@
+A novel method for estimating Bayesian network (BN) parameters from data is
+presented which provides improved performance on test data. Previous research
+has shown the value of representing conditional probability distributions
+(CPDs) via neural networks(Neal 1992), noisy-OR gates (Neal 1992, Diez 1993)and
+decision trees (Friedman and Goldszmidt 1996).The Bernoulli mixture network
+(BMN) explicitly represents the CPDs of discrete BN nodes as mixtures of local
+distributions,each having a different set of parents.This increases the space
+of possible structures which can be considered,enabling the CPDs to have
+finer-grained dependencies.The resulting estimation procedure induces a
+modelthat is better able to emulate the underlying interactions occurring in
+the data than conventional conditional Bernoulli network models.The results for
+artificially generated data indicate that overfitting is best reduced by
+restricting the complexity of candidate mixture substructures local to each
+node. Furthermore, mixtures of very simple substructures can perform almost as
+well as more complex ones.The BMN is also applied to data collected from an
+online adventure game with an application to keyhole plan recognition. The
+results show that the BMN-based model brings a dramatic improvement in
+performance over a conventional BN model.

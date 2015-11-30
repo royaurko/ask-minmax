@@ -1,0 +1,10 @@
+We present a major improvement to the incremental pruning algorithm for
+solving partially observable Markov decision processes. Our technique targets
+the cross-sum step of the dynamic programming (DP) update, a key source of
+complexity in POMDP algorithms. Instead of reasoning about the whole belief
+space when pruning the cross-sums, our algorithm divides the belief space into
+smaller regions and performs independent pruning in each region. We evaluate
+the benefits of the new technique both analytically and experimentally, and
+show that it produces very significant performance gains. The results
+contribute to the scalability of POMDP algorithms to domains that cannot be
+handled by the best existing techniques.

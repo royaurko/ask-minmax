@@ -1,0 +1,18 @@
+We consider the online stochastic matching problem proposed by Feldman et al.
+[FMMM09] as a model of display ad allocation. We are given a bipartite graph;
+one side of the graph corresponds to a fixed set of bins and the other side
+represents the set of possible ball types. At each time step, a ball is sampled
+independently from the given distribution and it needs to be matched upon its
+arrival to an empty bin. The goal is to maximize the number of allocations.
+  We present an online algorithm for this problem with a competitive ratio of
+0.702. Before our result, algorithms with a competitive ratio better than
+$1-1/e$ were known under the assumption that the expected number of arriving
+balls of each type is integral. A key idea of the algorithm is to collect
+statistics about the decisions of the optimum offline solution using Monte
+Carlo sampling and use those statistics to guide the decisions of the online
+algorithm. We also show that our algorithm achieves a competitive ratio of
+0.705 when the rates are integral.
+  On the hardness side, we prove that no online algorithm can have a
+competitive ratio better than 0.823 under the known distribution model (and
+henceforth under the permutation model). This improves upon the 5/6 hardness
+result proved by Goel and Mehta \cite{GM08} for the permutation model.

@@ -1,0 +1,23 @@
+Estimating the eigenvalues of a population covariance matrix from a sample
+covariance matrix is a problem of fundamental importance in multivariate
+statistics; the eigenvalues of covariance matrices play a key role in many
+widely techniques, in particular in Principal Component Analysis (PCA). In many
+modern data analysis problems, statisticians are faced with large datasets
+where the sample size, n, is of the same order of magnitude as the number of
+variables p. Random matrix theory predicts that in this context, the
+eigenvalues of the sample covariance matrix are not good estimators of the
+eigenvalues of the population covariance.
+  We propose to use a fundamental result in random matrix theory, the
+Marcenko-Pastur equation, to better estimate the eigenvalues of large
+dimensional covariance matrices. The Marcenko-Pastur equation holds in very
+wide generality and under weak assumptions. The estimator we obtain can be
+thought of as "shrinking" in a non linear fashion the eigenvalues of the sample
+covariance matrix to estimate the population eigenvalue. Inspired by ideas of
+random matrix theory, we also suggest a change of point of view when thinking
+about estimation of high-dimensional vectors: we do not try to estimate
+directly the vectors but rather a probability measure that describes them. We
+think this is a theoretically more fruitful way to think statistically about
+these problems.
+  Our estimator gives fast and good or very good results in extended
+simulations. Our algorithmic approach is based on convex optimization. We also
+show that the proposed estimator is consistent.

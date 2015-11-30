@@ -1,0 +1,13 @@
+Packet classification is a vital and complicated task as the processing of
+packets should be done at a specified line speed. In order to classify a packet
+as belonging to a particular flow or set of flows, network nodes must perform a
+search over a set of filters using multiple fields of the packet as the search
+key. Hence the matching of packets should be much faster and simpler for quick
+processing and classification. A hardware accelerator or a classifier has been
+proposed here using a modified version of the HyperCuts packet classification
+algorithm. A new pre-cutting process has been implemented to reduce the memory
+size to fit in an FPGA. This classifier can classify packets with high speed
+and with a power consumption factor of less than 3W. This methodology removes
+the need for floating point division to be performed by replacing the region
+compaction scheme of HyperCuts by pre-cutting, while classifying the packets
+and concentrates on classifying the packets at the core of the network.

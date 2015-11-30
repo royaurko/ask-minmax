@@ -1,0 +1,19 @@
+Packet-dispersion based measurement tools insert pairs of probe packets with
+a known separation into the network for transmission over a unicast path or a
+multicast tree. Samples of the separation between the probe pairs at the
+destination(s) are observed. Heuristic techniques are then used by these tools
+to estimate the path characteristics from the observations. In this paper we
+present a queueing theoretic setting for packet-dispersion based probing.
+Analogous to network tomography, we develop techniques to estimate the
+parameters of the arrival process to the individual links from the samples of
+the output separations, i.e., from the end-to-end measurements. The links are
+modeled as independent discrete time queues with i.i.d. arrivals. We first
+obtain an algorithm to obtain the (joint) distribution of the separation
+between the probes at the destination(s) for a given distribution of the
+spacing at the input. The parameter estimates of the arrival process are
+obtained as the minimizer of a cost function between the empirical and
+calculated distributions. We also carry out extensive simulations and numerical
+experiments to study the performance of the estimation algorithm under the
+fairly `harsh' conditions of non stationarity of the arrival process. We find
+that the estimations work fairly well for two queues in series and for
+multicast.

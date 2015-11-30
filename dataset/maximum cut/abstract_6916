@@ -1,0 +1,12 @@
+The standard implementation of the Maximum Entropy Method (MEM) follows Bryan
+and deploys a Singular Value Decomposition (SVD) to limit the dimensionality of
+the underlying solution space apriori. Here we present arguments based on the
+shape of the SVD basis functions and numerical evidence from a mock data
+analysis, which show that the correct Bayesian solution is not in general
+recovered with this approach. As a remedy we propose to extend the search basis
+systematically, which will eventually recover the full solution space and the
+correct solution. In order to adequately approach problems where an
+exponentially damped kernel is used, we provide an open-source implementation,
+using the C/C++ language that utilizes high precision arithmetic adjustable at
+run-time. The LBFGS algorithm is included in the code in order to attack
+problems without the need to resort to a particular search space restriction.

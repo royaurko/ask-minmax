@@ -1,0 +1,25 @@
+This paper introduces a new maximum likelihood (ML) solution for the
+code-aided (CA) timing recovery problem in square-QAM transmissions and
+derives, for the very first time, its CA Cram\'er-Rao lower bounds (CRLBs) in
+closed-form expressions. By exploiting the full symmetry of square-QAM
+constellations and further scrutinizing the Gray-coding mechanism, we express
+the likelihood function (LF) of the system explicitly in terms of the code
+bits' \textit{a priori} log-likelihood ratios (LLRs). The timing recovery task
+is then embedded in the turbo iteration loop wherein increasingly accurate
+estimates for such LLRs are computed from the output of the soft-input
+soft-output (SISO) decoders and exploited at a per-turbo-iteration basis in
+order to refine the ML time delay estimate. The latter is then used to better
+re-synchronize the system, through feedback to the matched filter (MF), so as
+to obtain more reliable symbol-rate samples for the next turbo iteration. In
+order to properly benchmark the new CA ML estimator, we also derive for the
+very first time the closed-form expressions for the exact CRLBs of the
+underlying turbo synchronization problem. Computer simulations will show that
+the new closed-form CRLBs coincide exactly with their empirical counterparts
+evaluated previously using exhaustive Monte-Carlo simulations. They will also
+show unambiguously the potential performance gains in time synchronization that
+can be achieved owing to the decoder assistance. Moreover, the new CA ML
+estimator almost reaches the underlying CA CRLBs, even for small SNRs, thereby
+confirming its statistical efficiency in practice. It also enjoys significant
+improvements in computational complexity as compared to the most powerful
+existing ML solution, namely the combined sum-product and
+expectation-maximization (SP-EM) algorithm.

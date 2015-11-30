@@ -1,0 +1,15 @@
+This paper introduces a directional multiscale algorithm for the two
+dimensional $N$-body problem of the Helmholtz kernel with applications to high
+frequency scattering. The algorithm follows the approach in [Engquist and Ying,
+SIAM Journal on Scientific Computing, 29 (4), 2007] where the three dimensional
+case was studied. The main observation is that, for two regions that follow a
+directional parabolic geometric configuration, the interaction between the
+points in these two regions through the Helmholtz kernel is approximately low
+rank. We propose an improved randomized procedure for generating the low rank
+representations. Based on these representations, we organize the computation of
+the far field interaction in a multidirectional and multiscale way to achieve
+maximum efficiency. The proposed algorithm is accurate and has the optimal
+$O(N\log N)$ complexity for problems from two dimensional scattering
+applications. We present numerical results for several test examples to
+illustrate the algorithm and its application to two dimensional high frequency
+scattering problems.

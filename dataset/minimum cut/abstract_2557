@@ -1,0 +1,9 @@
+One of the traditional mechanisms used in distributed systems for maintaining
+the consistency of replicated data is voting.
+  A problem involved in voting mechanisms is the size of the Quorums needed on
+each access to the data. In this paper, we present a novel and efficient
+distributed algorithm for managing replicated data. We impose a logical wheel
+structure on the set of copies of an object. The protocol ensures minimum read
+quorum size of one, by reading one copy of an object while guaranteeing
+fault-tolerance of write operations.Wheel structure has a wider application
+area as it can be imposed in a network with any number of nodes.

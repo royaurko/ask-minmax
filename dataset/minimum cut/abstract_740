@@ -1,0 +1,16 @@
+Generalized Concatenated codes are a code construction consisting of a number
+of outer codes whose code symbols are protected by an inner code. As outer
+codes, we assume the most frequently used Reed-Solomon codes; as inner code, we
+assume some linear block code which can be decoded up to half its minimum
+distance. Decoding up to half the minimum distance of Generalized Concatenated
+codes is classically achieved by the Blokh-Zyablov-Dumer algorithm, which
+iteratively decodes by first using the inner decoder to get an estimate of the
+outer code words and then using an outer error/erasure decoder with a varying
+number of erasures determined by a set of pre-calculated thresholds. In this
+paper, a modified version of the Blokh-Zyablov-Dumer algorithm is proposed,
+which exploits the fact that a number of outer Reed-Solomon codes with average
+minimum distance d can be grouped into one single Interleaved Reed-Solomon code
+which can be decoded beyond d/2. This allows to skip a number of decoding
+iterations on the one hand and to reduce the complexity of each decoding
+iteration significantly - while maintaining the decoding performance - on the
+other.

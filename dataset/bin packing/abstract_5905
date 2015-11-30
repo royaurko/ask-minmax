@@ -1,0 +1,25 @@
+We propose and study a new class of problem, called finding achievable region
+(FAR). Let $O$ be a set of $n$ disjoint obstacles in $R^2$, $M$ be a moving
+object. Let $s$ and $l$ denote the starting point and maximum path length of
+the moving object $M$, respectively. Given a point $p$ in $R^2$, we say the
+point $p$ is achievable for $M$ such that $\pi(s,p)\leq l$, where $\pi(\cdot)$
+denotes the shortest path length in the presence of obstacles. The FAR problem
+is to find a region $\mathscr R$ such that, for any point $p\in R^2$, if it is
+achievable for $M$, then $p\in \mathscr R$; otherwise, $p\notin \mathscr R$.
+The FAR problem has a variety of applications ranging from location-based
+service, probabilistic answer on uncertain data, to moving target search. In
+this paper, we restrict our attention to the case of line-segment obstacles. To
+tackle this problem, we develop three algorithms. We first present a
+simpler-version algorithm for the sake of intuition. Its basic idea is to
+reduce our problem to computing the union of a set of circular visibility
+regions (CVRs). In order to obtain the CVRs, we adopt the spatial pruning
+mechanism and incorporate the idea of the rotational plane sweep. Furthermore,
+for most CVRs, the circles used to construct them are unavailable beforehand.
+We adopt the visibility graph technique to obtain those circles. This algorithm
+takes $O(n^3)$ time. By analysing its dominant steps, we break through its
+bottleneck by using the short path map (SPM) technique to obtain those circles
+(unavailable beforehand), yielding an $O(n^2\log n)$ algorithm. Owing to the
+finding above, the third algorithm also uses the SPM technique. It however,
+does not continue to construct the CVRs. Instead, it directly traverses each
+region of the SPM to trace the boundaries, the final algorithm obtains the
+$O(n\log n)$ worst case upper bound.

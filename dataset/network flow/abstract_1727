@@ -1,0 +1,15 @@
+This paper considers future distribution networks featuring
+inverter-interfaced photovoltaic (PV) systems, and addresses the synthesis of
+feedback controllers that seek real- and reactive-power inverter setpoints
+corresponding to AC optimal power flow (OPF) solutions. The objective is to
+bridge the temporal gap between long-term system optimization and real-time
+inverter control, and enable seamless PV-owner participation without
+compromising system efficiency and stability. The design of the controllers is
+grounded on a dual epsilon-subgradient method, and semidefinite programming
+relaxations are advocated to bypass the non-convexity of AC OPF formulations.
+Global convergence of inverter output powers is analytically established for
+diminishing stepsize rules and strictly convex OPF costs for cases where: i)
+computational limits dictate asynchronous updates of the controller signals,
+and ii) inverter reference inputs may be updated at a faster rate than the
+power-output settling time. Although the focus is on PV systems, the framework
+naturally accommodates different types of inverter-interfaced energy resources.

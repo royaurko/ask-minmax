@@ -1,0 +1,15 @@
+Computing the similarity between two protein structures is a crucial task in
+molecular biology, and has been extensively investigated. Many protein
+structure comparison methods can be modeled as maximum clique problems in
+specific k-partite graphs, referred here as alignment graphs. In this paper, we
+propose a new protein structure comparison method based on internal distances
+(DAST) which is posed as a maximum clique problem in an alignment graph. We
+also design an algorithm (ACF) for solving such maximum clique problems. ACF is
+first applied in the context of VAST, a software largely used in the National
+Center for Biotechnology Information, and then in the context of DAST. The
+obtained results on real protein alignment instances show that our algorithm is
+more than 37000 times faster than the original VAST clique solver which is
+based on Bron & Kerbosch algorithm. We furthermore compare ACF with one of the
+fastest clique finder, recently conceived by Ostergard. On a popular benchmark
+(the Skolnick set) we observe that ACF is about 20 times faster in average than
+the Ostergard's algorithm.

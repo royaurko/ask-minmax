@@ -1,0 +1,23 @@
+Development of many futuristic technologies, such as MANET, VANET, iThings,
+nano-devices, depend on efficient distributed communication protocols in
+multi-hop ad hoc networks. A vast majority of research in this area focus on
+design heuristic protocols, and analyze their performance by simulations on
+networks generated randomly or obtained in practical measurements of some
+(usually small-size) wireless networks. %some library. Moreover, they often
+assume access to truly random sources, which is often not reasonable in case of
+wireless devices. In this work we use a formal framework to study the problem
+of broadcasting and its time complexity in any two dimensional Euclidean
+wireless network with uniform transmission powers. For the analysis, we
+consider two popular models of ad hoc networks based on the
+Signal-to-Interference-and-Noise Ratio (SINR): one with opportunistic links,
+and the other with randomly disturbed SINR. In the former model, we show that
+one of our algorithms accomplishes broadcasting in $O(D\log^2 n)$ rounds, where
+$n$ is the number of nodes and $D$ is the diameter of the network. If nodes
+know a priori the granularity $g$ of the network, i.e., the inverse of the
+maximum transmission range over the minimum distance between any two stations,
+a modification of this algorithm accomplishes broadcasting in $O(D\log g)$
+rounds.
+  Finally, we modify both algorithms to make them efficient in the latter model
+with randomly disturbed SINR, with only logarithmic growth of performance.
+  Ours are the first provably efficient and well-scalable, under the two
+models, distributed deterministic solutions for the broadcast task.

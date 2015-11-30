@@ -1,0 +1,20 @@
+Recovering low-rank and sparse matrices from incomplete or corrupted
+observations is an important problem in machine learning, statistics,
+bioinformatics, computer vision, as well as signal and image processing. In
+theory, this problem can be solved by the natural convex joint/mixed
+relaxations (i.e., l_{1}-norm and trace norm) under certain conditions.
+However, all current provable algorithms suffer from superlinear per-iteration
+cost, which severely limits their applicability to large-scale problems. In
+this paper, we propose a scalable, provable structured low-rank matrix
+factorization method to recover low-rank and sparse matrices from missing and
+grossly corrupted data, i.e., robust matrix completion (RMC) problems, or
+incomplete and grossly corrupted measurements, i.e., compressive principal
+component pursuit (CPCP) problems. Specifically, we first present two
+small-scale matrix trace norm regularized bilinear structured factorization
+models for RMC and CPCP problems, in which repetitively calculating SVD of a
+large-scale matrix is replaced by updating two much smaller factor matrices.
+Then, we apply the alternating direction method of multipliers (ADMM) to
+efficiently solve the RMC problems. Finally, we provide the convergence
+analysis of our algorithm, and extend it to address general CPCP problems.
+Experimental results verified both the efficiency and effectiveness of our
+method compared with the state-of-the-art methods.

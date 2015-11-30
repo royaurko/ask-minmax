@@ -1,0 +1,20 @@
+Given strings $P$ and $Q$ the (exact) string matching problem is to find all
+positions of substrings in $Q$ matching $P$. The classical Knuth-Morris-Pratt
+algorithm [SIAM J. Comput., 1977] solves the string matching problem in linear
+time which is optimal if we can only read one character at the time. However,
+most strings are stored in a computer in a packed representation with several
+characters in a single word, giving us the opportunity to read multiple
+characters simultaneously. In this paper we study the worst-case complexity of
+string matching on strings given in packed representation. Let $m \leq n$ be
+the lengths $P$ and $Q$, respectively, and let $\sigma$ denote the size of the
+alphabet. On a standard unit-cost word-RAM with logarithmic word size we
+present an algorithm using time $$ O\left(\frac{n}{\log_\sigma n} + m +
+\occ\right). $$ Here $\occ$ is the number of occurrences of $P$ in $Q$. For $m
+= o(n)$ this improves the $O(n)$ bound of the Knuth-Morris-Pratt algorithm.
+Furthermore, if $m = O(n/\log_\sigma n)$ our algorithm is optimal since any
+algorithm must spend at least $\Omega(\frac{(n+m)\log
+  \sigma}{\log n} + \occ) = \Omega(\frac{n}{\log_\sigma n} + \occ)$ time to
+read the input and report all occurrences. The result is obtained by a novel
+automaton construction based on the Knuth-Morris-Pratt algorithm combined with
+a new compact representation of subautomata allowing an optimal
+tabulation-based simulation.

@@ -1,0 +1,20 @@
+One of the fundamental open questions in computational complexity is whether
+the class of problems solvable by use of stochasticity under the Random
+Polynomial time (RP) model is larger than the class of those solvable in
+deterministic polynomial time (P). However, this question is only open for
+Turing Machines, not for Random Access Machines (RAMs).
+  Simon (1981) was able to show that for a sufficiently equipped Random Access
+Machine, the ability to switch states nondeterministically does not entail any
+computational advantage. However, in the same paper, Simon describes a
+different (and arguably more natural) scenario for stochasticity under the RAM
+model. According to Simon's proposal, instead of receiving a new random bit at
+each execution step, the RAM program is able to execute the pseudofunction
+$\textit{RAND}(y)$, which returns a uniformly distributed random integer in the
+range $[0,y)$. Whether the ability to allot a random integer in this fashion is
+more powerful than the ability to allot a random bit remained an open question
+for the last 30 years.
+  In this paper, we close Simon's open problem, by fully characterising the
+class of languages recognisable in polynomial time by each of the RAMs
+regarding which the question was posed. We show that for some of these,
+stochasticity entails no advantage, but, more interestingly, we show that for
+others it does.

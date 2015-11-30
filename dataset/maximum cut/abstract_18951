@@ -1,0 +1,25 @@
+We consider the problem of clock synchronization in a wireless setting where
+processors must power-down their radios in order to save energy. Energy
+efficiency is a central goal in wireless networks, especially if energy
+resources are severely limited. In the current setting, the problem is to
+synchronize clocks of $m$ processors that wake up in arbitrary time points,
+such that the maximum difference between wake up times is bounded by a positive
+integer $n$, where time intervals are appropriately discretized. Currently, the
+best-known results for synchronization for single-hop networks of $m$
+processors is a randomized algorithm due to \cite{BKO09} of O(\sqrt {n /m}
+\cdot poly-log(n)) awake times per processor and a lower bound of
+Omega(\sqrt{n/m}) of the number of awake times needed per processor
+\cite{BKO09}. The main open question left in their work is to close the
+poly-log gap between the upper and the lower bound and to de-randomize their
+probabilistic construction and eliminate error probability. This is exactly
+what we do in this paper.
+  That is, we show a {deterministic} algorithm with radio use of Theta(\sqrt {n
+/m}) that never fails. We stress that our upper bound exactly matches the lower
+bound proven in \cite{BKO09}, up to a small multiplicative constant. Therefore,
+our algorithm is {optimal} in terms of energy efficiency and completely
+resolves a long sequence of works in this area. In order to achieve these
+results we devise a novel {adaptive} technique that determines the times when
+devices power their radios on and off. In addition, we prove several lower
+bounds on the energy efficiency of algorithms for {multi-hop networks}.
+Specifically, we show that any algorithm for multi-hop networks must have radio
+use of Omega(\sqrt n) per processor.

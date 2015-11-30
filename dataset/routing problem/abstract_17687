@@ -1,0 +1,14 @@
+Suppose that we are given two independent sets $I_0$ and $I_r$ of a graph
+such that $|I_0| = |I_r|$, and imagine that a token is placed on each vertex in
+$I_0$. The token jumping problem is to determine whether there exists a
+sequence of independent sets which transforms $I_0$ into $I_r$ so that each
+independent set in the sequence results from the previous one by moving exactly
+one token to another vertex. This problem is known to be PSPACE-complete even
+for planar graphs of maximum degree three, and W[1]-hard for general graphs
+when parameterized by the number of tokens. In this paper, we present a
+fixed-parameter algorithm for the token jumping problem on planar graphs, where
+the parameter is only the number of tokens. Furthermore, the algorithm can be
+modified so that it finds a shortest sequence for a yes-instance. The same
+scheme of the algorithms can be applied to a wider class of graphs,
+$K_{3,t}$-free graphs for any fixed integer $t \ge 3$, and it yields
+fixed-parameter algorithms.

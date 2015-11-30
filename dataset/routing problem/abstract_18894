@@ -1,0 +1,17 @@
+The reduced basis method is a model reduction technique yielding substantial
+savings of computational time when a solution to a parametrized equation has to
+be computed for many values of the parameter. Certification of the
+approximation is possible by means of an a posteriori error bound. Under
+appropriate assumptions, this error bound is computed with an algorithm of
+complexity independent of the size of the full problem. In practice, the
+evaluation of the error bound can become very sensitive to round-off errors. We
+propose herein an explanation of this fact. A first remedy has been proposed in
+[F. Casenave, Accurate \textit{a posteriori} error evaluation in the reduced
+basis method. \textit{C. R. Math. Acad. Sci. Paris} \textbf{350} (2012)
+539--542.]. Herein, we improve this remedy by proposing a new approximation of
+the error bound using the Empirical Interpolation Method (EIM). This method
+achieves higher levels of accuracy and requires potentially less
+precomputations than the usual formula. A version of the EIM stabilized with
+respect to round-off errors is also derived. The method is illustrated on a
+simple one-dimensional diffusion problem and a three-dimensional acoustic
+scattering problem solved by a boundary element method.

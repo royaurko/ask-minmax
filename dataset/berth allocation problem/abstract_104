@@ -1,0 +1,20 @@
+To achieve an optimal outcome in many situations, agents need to choose
+distinct actions from one another. This is the case notably in many resource
+allocation problems, where a single resource can only be used by one agent at a
+time. How shall a designer of a multi-agent system program its identical agents
+to behave each in a different way? From a game theoretic perspective, such
+situations lead to undesirable Nash equilibria. For example consider a resource
+allocation game in that two players compete for an exclusive access to a single
+resource. It has three Nash equilibria. The two pure-strategy NE are efficient,
+but not fair. The one mixed-strategy NE is fair, but not efficient. Aumanns
+notion of correlated equilibrium fixes this problem: It assumes a correlation
+device that suggests each agent an action to take. However, such a "smart"
+coordination device might not be available. We propose using a randomly chosen,
+"stupid" integer coordination signal. "Smart" agents learn which action they
+should use for each value of the coordination signal. We present a multi-agent
+learning algorithm that converges in polynomial number of steps to a correlated
+equilibrium of a channel allocation game, a variant of the resource allocation
+game. We show that the agents learn to play for each coordination signal value
+a randomly chosen pure-strategy Nash equilibrium of the game. Therefore, the
+outcome is an efficient correlated equilibrium. This CE becomes more fair as
+the number of the available coordination signal values increases.

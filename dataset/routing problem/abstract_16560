@@ -1,0 +1,13 @@
+A hypergraph ${\cal F}$ is a set family defined on vertex set $V$. The dual
+of ${\cal F}$ is the set of minimal subsets $H$ of $V$ such that $F\cap H \ne
+\emptyset$ for any $F\in {\cal F}$. The computation of the dual is equivalent
+to many problems, such as minimal hitting set enumeration of a subset family,
+minimal set cover enumeration, and the enumeration of hypergraph transversals.
+Although many algorithms have been proposed for solving the problem, to the
+best of our knowledge, none of them can work on large-scale input with a large
+number of output minimal hitting sets. This paper focuses on developing time-
+and space-efficient algorithms for solving the problem. We propose two new
+algorithms with new search methods, new pruning methods, and fast techniques
+for the minimality check. The computational experiments show that our
+algorithms are quite fast even for large-scale input for which existing
+algorithms do not terminate in a practical time.

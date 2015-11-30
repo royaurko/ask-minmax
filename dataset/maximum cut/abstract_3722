@@ -1,0 +1,11 @@
+Straightforward methods for adapting the familiar chi^2 statistic to
+histograms of discrete events and other Poisson distributed data generally
+yield biased estimates of the parameters of a model. The bias can be important
+even when the total number of events is large. For the case of estimating a
+microcalorimeter's energy resolution at 6 keV from the observed shape of the Mn
+K-alpha fluorescence spectrum, a poor choice of chi^2 can lead to biases of at
+least 10% in the estimated resolution when up to thousands of photons are
+observed. The best remedy is a Poisson maximum-likelihood fit, through a simple
+modification of the standard Levenberg-Marquardt algorithm for chi^2
+minimization. Where the modification is not possible, another approach allows
+iterative approximation of the maximum-likelihood fit.

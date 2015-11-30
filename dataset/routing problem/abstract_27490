@@ -1,0 +1,17 @@
+In this work, we propose a novel two-level discretization for solving
+semilinear elliptic equations with random coefficients. Motivated by the
+two-grid method for deterministic partial differential equations (PDEs)
+introduced by Xu \cite{xu1994novel}, our two-level stochastic collocation
+method utilizes a two-grid finite element discretization in the physical space
+and a two-level collocation method in the random domain. In particular, we
+solve semilinear equations on a coarse mesh $\mathcal{T}_H$ with a low level
+stochastic collocation (corresponding to the polynomial space
+$\mathcal{P}_{P}$) and solve linearized equations on a fine mesh
+$\mathcal{T}_h$ using high level stochastic collocation (corresponding to the
+polynomial space $\mathcal{P}_p$). We prove that the approximated solution
+obtained from this method achieves the same order of accuracy as that from
+solving the original semilinear problem directly by stochastic collocation
+method with $\mathcal{T}_h$ and $\mathcal{P}_p$. The two-level method is
+computationally more efficient, especially for nonlinear problems with high
+random dimensions. Numerical experiments are also provided to verify the
+theoretical results.

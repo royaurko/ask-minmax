@@ -1,0 +1,14 @@
+The optimal power flow (OPF) problem is fundamental in power system
+operations and planning. Large-scale renewable penetration in distribution
+networks calls for real-time feedback control, and hence the need for fast and
+distributed solutions for OPF. This is difficult because OPF is nonconvex and
+Kirchhoff's laws are global. In this paper we propose a solution for balanced
+radial distribution networks. It exploits recent results that suggest solving
+for a globally optimal solution of OPF over a radial network through the
+second-order cone program (SOCP) relaxation. Our distributed algorithm is based
+on alternating direction method of multiplier (ADMM), but unlike standard ADMM
+algorithms that often require iteratively solving optimization subproblems in
+each ADMM iteration, our decomposition allows us to derive closed form
+solutions for these subproblems, greatly speeding up each ADMM iteration. We
+present simulations on a real-world 2,065-bus distribution network to
+illustrate the scalability and optimality of the proposed algorithm.

@@ -1,0 +1,18 @@
+Machine learning over fully distributed data poses an important problem in
+peer-to-peer (P2P) applications. In this model we have one data record at each
+network node, but without the possibility to move raw data due to privacy
+considerations. For example, user profiles, ratings, history, or sensor
+readings can represent this case. This problem is difficult, because there is
+no possibility to learn local models, the system model offers almost no
+guarantees for reliability, yet the communication cost needs to be kept low.
+Here we propose gossip learning, a generic approach that is based on multiple
+models taking random walks over the network in parallel, while applying an
+online learning algorithm to improve themselves, and getting combined via
+ensemble learning methods. We present an instantiation of this approach for the
+case of classification with linear models. Our main contribution is an ensemble
+learning method which---through the continuous combination of the models in the
+network---implements a virtual weighted voting mechanism over an exponential
+number of models at practically no extra cost as compared to independent random
+walks. We prove the convergence of the method theoretically, and perform
+extensive experiments on benchmark datasets. Our experimental analysis
+demonstrates the performance and robustness of the proposed approach.

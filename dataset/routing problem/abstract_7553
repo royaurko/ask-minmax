@@ -1,0 +1,23 @@
+To recover a sparse signal from an underdetermined system, we often solve a
+constrained L1-norm minimization problem. In many cases, the signal sparsity
+and the recovery performance can be further improved by replacing the L1 norm
+with a "weighted" L1 norm. Without any prior information about nonzero elements
+of the signal, the procedure for selecting weights is iterative in nature.
+Common approaches update the weights at every iteration using the solution of a
+weighted L1 problem from the previous iteration.
+  In this paper, we present two homotopy-based algorithms that efficiently
+solve reweighted L1 problems. First, we present an algorithm that quickly
+updates the solution of a weighted L1 problem as the weights change. Since the
+solution changes only slightly with small changes in the weights, we develop a
+homotopy algorithm that replaces the old weights with the new ones in a small
+number of computationally inexpensive steps. Second, we propose an algorithm
+that solves a weighted L1 problem by adaptively selecting the weights while
+estimating the signal. This algorithm integrates the reweighting into every
+step along the homotopy path by changing the weights according to the changes
+in the solution and its support, allowing us to achieve a high quality signal
+reconstruction by solving a single homotopy problem. We compare the performance
+of both algorithms, in terms of reconstruction accuracy and computational
+complexity, against state-of-the-art solvers and show that our methods have
+smaller computational cost. In addition, we will show that the adaptive
+selection of the weights inside the homotopy often yields reconstructions of
+higher quality.

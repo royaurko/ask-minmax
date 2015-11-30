@@ -1,0 +1,9 @@
+We consider the following problem: given an unsorted array of $n$ elements,
+and a sequence of intervals in the array, compute the median in each of the
+subarrays defined by the intervals. We describe a simple algorithm which uses
+O(n) space and needs $O(n\log k + k\log n)$ time to answer the first $k$
+queries. This improves previous algorithms by a logarithmic factor and matches
+a lower bound for $k=O(n)$.
+  Since the algorithm decomposes the range of element values rather than the
+array, it has natural generalizations to higher dimensional problems -- it
+reduces a range median query to a logarithmic number of range counting queries.

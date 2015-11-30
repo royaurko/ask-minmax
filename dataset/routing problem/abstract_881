@@ -1,0 +1,13 @@
+Triple Modular Redundancy (TMR) is a suitable fault tolerant technique for
+SRAM-based FPGA. However, one of the main challenges in achieving 100%
+robustness in designs protected by TMR running on programmable platforms is to
+prevent upsets in the routing from provoking undesirable connections between
+signals from distinct redundant logic parts, which can generate an error in the
+output. This paper investigates the optimal design of the TMR logic (e.g., by
+cleverly inserting voters) to ensure robustness. Four different versions of a
+TMR digital filter were analyzed by fault injection. Faults were randomly
+inserted straight into the bitstream of the FPGA. The experimental results
+presented in this paper demonstrate that the number and placement of voters in
+the TMR design can directly affect the fault tolerance, ranging from 4.03% to
+0.98% the number of upsets in the routing able to cause an error in the TMR
+circuit.

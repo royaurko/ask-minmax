@@ -1,0 +1,24 @@
+The recursive least-squares (RLS) algorithm has well-documented merits for
+reducing complexity and storage requirements, when it comes to online
+estimation of stationary signals as well as for tracking slowly-varying
+nonstationary processes. In this paper, a distributed recursive least-squares
+(D-RLS) algorithm is developed for cooperative estimation using ad hoc wireless
+sensor networks. Distributed iterations are obtained by minimizing a separable
+reformulation of the exponentially-weighted least-squares cost, using the
+alternating-minimization algorithm. Sensors carry out reduced-complexity tasks
+locally, and exchange messages with one-hop neighbors to consent on the
+network-wide estimates adaptively. A steady-state mean-square error (MSE)
+performance analysis of D-RLS is conducted, by studying a stochastically-driven
+`averaged' system that approximates the D-RLS dynamics asymptotically in time.
+For sensor observations that are linearly related to the time-invariant
+parameter vector sought, the simplifying independence setting assumptions
+facilitate deriving accurate closed-form expressions for the MSE steady-state
+values. The problems of mean- and MSE-sense stability of D-RLS are also
+investigated, and easily-checkable sufficient conditions are derived under
+which a steady-state is attained. Without resorting to diminishing step-sizes
+which compromise the tracking ability of D-RLS, stability ensures that per
+sensor estimates hover inside a ball of finite radius centered at the true
+parameter vector, with high-probability, even when inter-sensor communication
+links are noisy. Interestingly, computer simulations demonstrate that the
+theoretical findings are accurate also in the pragmatic settings whereby
+sensors acquire temporally-correlated data.

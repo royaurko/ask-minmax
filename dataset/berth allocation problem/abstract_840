@@ -1,0 +1,15 @@
+In this paper we demonstrate the applicability of latent Dirichlet allocation
+(LDA) for classifying large Web document collections. One of our main results
+is a novel influence model that gives a fully generative model of the document
+content taking linkage into account. In our setup, topics propagate along links
+in such a way that linked documents directly influence the words in the linking
+document. As another main contribution we develop LDA specific boosting of
+Gibbs samplers resulting in a significant speedup in our experiments. The
+inferred LDA model can be applied for classification as dimensionality
+reduction similarly to latent semantic indexing. In addition, the model yields
+link weights that can be applied in algorithms to process the Web graph; as an
+example we deploy LDA link weights in stacked graphical learning. By using
+Weka's BayesNet classifier, in terms of the AUC of classification, we achieve
+4% improvement over plain LDA with BayesNet and 18% over tf.idf with SVM. Our
+Gibbs sampling strategies yield about 5-10 times speedup with less than 1%
+decrease in accuracy in terms of likelihood and AUC of classification.

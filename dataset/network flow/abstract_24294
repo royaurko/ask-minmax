@@ -1,0 +1,15 @@
+Epidemic forwarding has been proposed as a forwarding technique to achieve
+opportunistic communication in Delay Tolerant Networks. Even if this technique
+is well known and widely referred, one has to first deal with several practical
+problems before using it. In particular, in order to manage the redundancy and
+to avoid useless transmissions, it has been proposed to ask nodes to exchange
+information about the buffer content prior to sending information. While Bloom
+filter has been proposed to transport the buffer content information, up to our
+knowledge no real evaluation has been provided to study the tradeoff that
+exists in practice. In this paper we describe an implementation of an epidemic
+forwarding scheme using Bloom filters. Then we propose some strategies for
+Bloom filter management based on windowing and describe implementation
+tradeoffs. By simulating our proposed strategies in ns-3 both with random
+waypoint mobility and realistic mobility traces coming from San Francisco
+taxicabs, we show that our proposed strategies alleviate the challenge of using
+epidemic forwarding in DTNs.

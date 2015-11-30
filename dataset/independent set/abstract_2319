@@ -1,0 +1,15 @@
+This paper suggests an approach to the development of software testing and
+debugging automation tools based on precise program behavior models. The
+program behavior model is defined as a set of events (event trace) with two
+basic binary relations over events -- precedence and inclusion, and represents
+the temporal relationship between actions. A language for the computations over
+event traces is developed that provides a basis for assertion checking,
+debugging queries, execution profiles, and performance measurements. The
+approach is nondestructive, since assertion texts are separated from the target
+program source code and can be maintained independently. Assertions can capture
+the dynamic properties of a particular target program and can formalize the
+general knowledge of typical bugs and debugging strategies. An event grammar
+provides a sound basis for assertion language implementation via target program
+automatic instrumentation. An implementation architecture and preliminary
+experiments with a prototype assertion checker for the C programming language
+are discussed.

@@ -1,0 +1,16 @@
+Many machine learning tasks can be formulated in terms of predicting
+structured outputs. In frameworks such as the structured support vector machine
+(SVM-Struct) and the structured perceptron, discriminative functions are
+learned by iteratively applying efficient maximum a posteriori (MAP) decoding.
+However, maximum likelihood estimation (MLE) of probabilistic models over these
+same structured spaces requires computing partition functions, which is
+generally intractable. This paper presents a method for learning discrete
+exponential family models using the Bethe approximation to the MLE. Remarkably,
+this problem also reduces to iterative (MAP) decoding. This connection emerges
+by combining the Bethe approximation with a Frank-Wolfe (FW) algorithm on a
+convex dual objective which circumvents the intractable partition function. The
+result is a new single loop algorithm MLE-Struct, which is substantially more
+efficient than previous double-loop methods for approximate maximum likelihood
+estimation. Our algorithm outperforms existing methods in experiments involving
+image segmentation, matching problems from vision, and a new dataset of
+university roommate assignments.

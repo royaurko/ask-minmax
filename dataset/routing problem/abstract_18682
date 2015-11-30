@@ -1,0 +1,23 @@
+In this paper, we propose a quality-centric congestion control for multimedia
+streaming over IP networks, which we refer to as media-TCP. Unlike existing
+congestion control schemes that adapt a user's sending rate merely to the
+network condition, our solution adapts the sending rate to both the network
+condition and the application characteristics by explicitly considering the
+distortion impacts, delay deadlines, and interdependencies of different video
+packet classes. Hence, our media-aware solution is able to provide differential
+services for transmitting various packet classes and thereby, further improves
+the multimedia streaming quality. We model this problem using a Finite-Horizon
+Markov Decision Process (FHMDP) and determine the optimal congestion control
+policy that maximizes the long-term multimedia quality, while adhering to the
+horizon- TCP-friendliness constraint, which ensures long-term fairness with
+existing TCP applications. We show that the FHMDP problem can be decomposed
+into multiple optimal stopping problems, which admit a low-complexity
+threshold-based solution. Moreover, unlike existing congestion control
+approaches, which focus on maintaining throughput-based fairness among users,
+the proposed media-TCP aims to achieve quality-based fairness among multimedia
+users. We also derive sufficient conditions for multiple multimedia users to
+achieve quality-based fairness using media-TCP congestion control. Our
+simulation results show that the proposed media-TCP achieves more than 3dB
+improvement in terms of PSNR over the conventional TCP congestion control
+approaches, with the largest improvements observed for real-time streaming
+applications requiring stringent playback delays.

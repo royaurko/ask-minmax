@@ -1,0 +1,17 @@
+Our probabilistic analysis sheds light to the following questions: Why do
+random polynomials seem to have few, and well separated real roots, on the
+average? Why do exact algorithms for real root isolation may perform
+comparatively well or even better than numerical ones? We exploit results by
+Kac, and by Edelman and Kostlan in order to estimate the real root separation
+of degree $d$ polynomials with i.i.d.\ coefficients that follow two zero-mean
+normal distributions: for SO(2) polynomials, the $i$-th coefficient has
+variance ${d \choose i}$, whereas for Weyl polynomials its variance is
+${1/i!}$. By applying results from statistical physics, we obtain the expected
+(bit) complexity of \func{sturm} solver, $\sOB(r d^2 \tau)$, where $r$ is the
+number of real roots and $\tau$ the maximum coefficient bitsize. Our bounds are
+two orders of magnitude tighter than the record worst case ones. We also derive
+an output-sensitive bound in the worst case. The second part of the paper shows
+that the expected number of real roots of a degree $d$ polynomial in the
+Bernstein basis is $\sqrt{2d}\pm\OO(1)$, when the coefficients are i.i.d.\
+variables with moderate standard deviation. Our paper concludes with
+experimental results which corroborate our analysis.

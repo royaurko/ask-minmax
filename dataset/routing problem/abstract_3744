@@ -1,0 +1,13 @@
+In an interference network, joint power and admission control aims to support
+a maximum number of links at their specified signal to interference plus noise
+ratio (SINR) targets while using a minimum total transmission power. In our
+previous work, we formulated the joint control problem as a sparse
+$\ell_0$-minimization problem and relaxed it to a $\ell_1$-minimization
+problem. In this work, we propose to approximate the $\ell_0$-optimization
+problem to a p norm minimization problem where $0<p<1$, since intuitively p
+norm will approximate 0 norm better than 1 norm. We first show that the
+$\ell_p$-minimization problem is strongly NP-hard and then derive a
+reformulation of it such that the well developed interior-point algorithms can
+be applied to solve it. The solution to the $\ell_p$-minimization problem can
+efficiently guide the link's removals (deflation). Numerical simulations show
+the proposed heuristic outperforms the existing algorithms.

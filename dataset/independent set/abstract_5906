@@ -1,0 +1,10 @@
+Many Random Number Generators (RNG) are available nowadays; they are divided
+in two categories, hardware RNG, that provide "true" random numbers, and
+algorithmic RNG, that generate pseudo random numbers (PRNG). Both types usually
+generate random numbers (X_n) as independent uniform samples in a range
+0...2^b-1, with b = 8, 16, 32 or b = 64. In applications, it is instead
+sometimes desirable to draw random numbers as independent uniform samples (Y_n)
+in a range 1, . . . M, where moreover M may change between drawings.
+Transforming the sequence (X_n) to (Y_n) is sometimes known as scaling. We
+discuss different methods for scaling the RNG, both in term of mathematical
+efficiency and of computational speed.

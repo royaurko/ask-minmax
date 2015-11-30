@@ -1,0 +1,22 @@
+We consider the question of the existence of variables with few occurrences
+in boolean conjunctive normal forms (clause-sets). Let mvd(F) for a clause-set
+F denote the minimal variable-degree, the minimum of the number of occurrences
+of variables. Our main result is an upper bound mvd(F) <= nM(surp(F)) <=
+surp(F) + 1 + log_2(surp(F)) for lean clause-sets F in dependency on the
+surplus surp(F).
+  - Lean clause-sets, defined as having no non-trivial autarkies, generalise
+minimally unsatisfiable clause-sets.
+  - For the surplus we have surp(F) <= delta(F) = c(F) - n(F), using the
+deficiency delta(F) of clause-sets, the difference between the number of
+clauses and the number of variables.
+  - nM(k) is the k-th "non-Mersenne" number, skipping in the sequence of
+natural numbers all numbers of the form 2^n - 1.
+  We conjecture that this bound is nearly precise for minimally unsatisfiable
+clause-sets.
+  As an application of the upper bound we obtain that (arbitrary!) clause-sets
+F with mvd(F) > nM(surp(F)) must have a non-trivial autarky (so clauses can be
+removed satisfiability-equivalently by an assignment satisfying some clauses
+and not touching the other clauses). It is open whether such an autarky can be
+found in polynomial time.
+  As a future application we discuss the classification of minimally
+unsatisfiable clause-sets depending on the deficiency.

@@ -1,0 +1,24 @@
+Lossy channel systems (LCSs) are systems of finite state automata that
+communicate via unreliable unbounded fifo channels. In order to circumvent the
+undecidability of model checking for nondeterministic
+  LCSs, probabilistic models have been introduced, where it can be decided
+whether a linear-time property holds almost surely. However, such fully
+probabilistic systems are not a faithful model of nondeterministic protocols.
+  We study a hybrid model for LCSs where losses of messages are seen as faults
+occurring with some given probability, and where the internal behavior of the
+system remains nondeterministic. Thus the semantics is in terms of
+infinite-state Markov decision processes. The purpose of this article is to
+discuss the decidability of linear-time properties formalized by formulas of
+linear temporal logic (LTL). Our focus is on the qualitative setting where one
+asks, e.g., whether a LTL-formula holds almost surely or with zero probability
+(in case the formula describes the bad behaviors). Surprisingly, it turns out
+that -- in contrast to finite-state Markov decision processes -- the
+satisfaction relation for LTL formulas depends on the chosen type of schedulers
+that resolve the nondeterminism. While all variants of the qualitative LTL
+model checking problem for the full class of history-dependent schedulers are
+undecidable, the same questions for finite-memory scheduler can be solved
+algorithmically. However, the restriction to reachability properties and
+special kinds of recurrent reachability properties yields decidable
+verification problems for the full class of schedulers, which -- for this
+restricted class of properties -- are as powerful as finite-memory schedulers,
+or even a subclass of them.

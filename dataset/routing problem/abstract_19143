@@ -1,0 +1,22 @@
+The transport of energy through radiation is very important in many
+astrophysical phenomena. In dynamical problems the time-dependent equations of
+radiation hydrodynamics have to be solved. We present a newly developed
+radiation-hydrodynamics module specifically designed for the versatile MHD code
+PLUTO. The solver is based on the flux-limited diffusion approximation in the
+two-temperature approach. All equations are solved in the co-moving frame in
+the frequency independent (grey) approximation. The hydrodynamics is solved by
+the different Godunov schemes implemented in PLUTO, and for the radiation
+transport we use a fully implicit scheme. The resulting system of linear
+equations is solved either using the successive over-relaxation (SOR) method
+(for testing purposes), or matrix solvers that are available in the PETSc
+library. We state in detail the methodology and describe several test cases in
+order to verify the correctness of our implementation. The solver works in
+standard coordinate systems, such as Cartesian, cylindrical and spherical, and
+also for non-equidistant grids. We have presented a new radiation-hydrodynamics
+solver coupled to the MHD-code \PLUTO that is a modern, versatile and efficient
+new module for treating complex radiation hydrodynamical problems in
+astrophysics. As test cases, either purely radiative situations, or full
+radiation-hydrodynamical setups (including radiative shocks and convection in
+accretion discs) have been studied successfully. The new module scales very
+well on parallel computers using MPI. For problems in star or planet formation,
+we have added the possibility of irradiation by a central source.

@@ -1,0 +1,12 @@
+Timed-arc Petri nets (TAPN) are a well-known time extension of the Petri net
+model and several translations to networks of timed automata have been proposed
+for this model. We present a direct, DBM-based algorithm for forward
+reachability analysis of bounded TAPNs extended with transport arcs, inhibitor
+arcs and age invariants. We also give a complete proof of its correctness,
+including reduction techniques based on symmetries and extrapolation. Finally,
+we augment the algorithm with a novel state-space reduction technique
+introducing a monotonic ordering on markings and prove its soundness even in
+the presence of monotonicity-breaking features like age invariants and
+inhibitor arcs. We implement the algorithm within the model-checker TAPAAL and
+the experimental results document an encouraging performance compared to
+verification approaches that translate TAPN models to UPPAAL timed automata.

@@ -1,0 +1,20 @@
+Frequently, randomly organized data is needed to avoid an anomalous operation
+of other algorithms and computational processes. An analogy is that a deck of
+cards is ordered within the pack, but before a game of poker or solitaire the
+deck is shuffled to create a random permutation. Shuffling is used to assure
+that an aggregate of data elements for a sequence S is randomly arranged, but
+avoids an ordered or partially ordered permutation.
+  Shuffling is the process of arranging data elements into a random
+permutation. The sequence S as an aggregation of N data elements, there are N!
+possible permutations. For the large number of possible permutations, two of
+the possible permutations are for a sorted or ordered placement of data
+elements--both an ascending and descending sorted permutation. Shuffling must
+avoid inadvertently creating either an ascending or descending permutation.
+  Shuffling is frequently coupled to another algorithmic function --
+pseudo-random number generation. The efficiency and quality of the shuffle is
+directly dependent upon the random number generation algorithm utilized. A more
+effective and efficient method of shuffling is to use parameterization to
+configure the shuffle, and to shuffle into sub-arrays by utilizing the encoding
+of the data elements. The binar shuffle algorithm uses the encoding of the data
+elements and parameterization to avoid any direct coupling to a random number
+generation algorithm, but still remain a linear O(N) shuffle algorithm.

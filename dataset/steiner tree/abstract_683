@@ -1,0 +1,12 @@
+In this paper, we develop a multigrid method on unstructured shape-regular
+grids. For a general shape-regular unstructured grid of ${\cal O}(N)$ elements,
+we present a construction of an auxiliary coarse grid hierarchy on which a
+geometric multigrid method can be applied together with a smoothing on the
+original grid by using the auxiliary space preconditioning technique. Such a
+construction is realized by a cluster tree which can be obtained in ${\cal
+O}(N\log N)$ operations for a grid of $N$ elements. This tree structure in turn
+is used for the definition of the grid hierarchy from coarse to fine. For the
+constructed grid hierarchy we prove that the convergence rate of the multigrid
+preconditioned CG for an elliptic PDE is $1 - {\cal O}({1}/{\log N})$.
+Numerical experiments confirm the theoretical bounds and show that the total
+complexity is in ${\cal O}(N\log N)$.

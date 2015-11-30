@@ -1,0 +1,17 @@
+Given a Boolean formula and a satisfying assignment, a flip is an operation
+that changes the value of a variable in the assignment so that the resulting
+assignment remains satisfying. We study the problem of computing the shortest
+sequence of flips (if one exists) that transforms a given satisfying assignment
+$s$ to another satisfying assignment $t$ of a Boolean formula. Earlier work
+characterized the complexity of finding any (not necessarily the shortest)
+sequence of flips from one satisfying assignment to another using Schaefer's
+framework for classification of Boolean formulas. We build on it to provide a
+trichotomy for the complexity of finding the shortest sequence of flips and
+show that it is either in P, NP-complete, or PSPACE-complete.
+  Our result adds to the small set of complexity results known for shortest
+reconfiguration sequence problems by providing an example where the shortest
+sequence can be found in polynomial time even though its length is not equal to
+the symmetric difference of the values of the variables in $s$ and $t$. This is
+in contrast to all reconfiguration problems studied so far, where polynomial
+time algorithms for computing the shortest path were known only for cases where
+the path modified the symmetric difference only.

@@ -1,0 +1,19 @@
+The dynamic nature of Web data gives rise to a multitude of problems related
+to the identification, computation and management of the evolving versions and
+the related changes. In this paper, we consider the problem of change
+recognition in RDF datasets, i.e., the problem of identifying, and when
+possible give semantics to, the changes that led from one version of an RDF
+dataset to another. Despite our RDF focus, our approach is sufficiently general
+to engulf different data models that can be encoded in RDF, such as relational
+or multi-dimensional. In fact, we propose a flexible, extendible and
+data-model-independent methodology of defining changes that can capture the
+peculiarities and needs of different data models and applications, while being
+formally robust due to the satisfaction of the properties of completeness and
+unambiguity. Further, we propose an ontology of changes for storing the
+detected changes that allows automated processing and analysis of changes,
+cross-snapshot queries (spanning across different versions), as well as queries
+involving both changes and data. To detect changes and populate said ontology,
+we propose a customizable detection algorithm, which is applicable to different
+data models and applications requiring the detection of custom, user-defined
+changes. Finally, we provide a proof-of-concept application and evaluation of
+our framework for different data models.

@@ -1,0 +1,19 @@
+We consider communities whose vertices are predominantly connected, i.e., the
+vertices in each community are stronger connected to other community members of
+the same community than to vertices outside the community. Flake et al.
+introduced a hierarchical clustering algorithm that finds such predominantly
+connected communities of different coarseness depending on an input parameter.
+We present a simple and efficient method for constructing a clustering
+hierarchy according to Flake et al. that supersedes the necessity of choosing
+feasible parameter values and guarantees the completeness of the resulting
+hierarchy, i.e., the hierarchy contains all clusterings that can be constructed
+by the original algorithm for any parameter value. However, predominantly
+connected communities are not organized in a single hierarchy. Thus, we develop
+a framework that, after precomputing at most $2(n-1)$ maximum flows, admits a
+linear time construction of a clustering $\C(S)$ of predominantly connected
+communities that contains a given community $S$ and is maximum in the sense
+that any further clustering of predominantly connected communities that also
+contains $S$ is hierarchically nested in $\C(S)$. We further generalize this
+construction yielding a clustering with similar properties for $k$ given
+communities in $O(kn)$ time. This admits the analysis of a network's structure
+with respect to various communities in different hierarchies.

@@ -1,0 +1,17 @@
+Networked applications have software components that reside on different
+computers. Email, for example, has database, processing, and user interface
+components that can be distributed across a network and shared by users in
+different locations or work groups. End-to-end performance and reliability
+metrics describe the software quality experienced by these groups of users,
+taking into account all the software components in the pipeline. Each user
+produces only some of the data needed to understand the quality of the
+application for the group, so group performance metrics are obtained by
+combining summary statistics that each end computer periodically (and
+automatically) sends to a central server. The group quality metrics usually
+focus on medians and tail quantiles rather than on averages. Distributed
+quantile estimation is challenging, though, especially when passing large
+amounts of data around the network solely to compute quality metrics is
+undesirable. This paper describes an Incremental Quantile (IQ) estimation
+method that is designed for performance monitoring at arbitrary levels of
+network aggregation and time resolution when only a limited amount of data can
+be transferred. Applications to both real and simulated data are provided.

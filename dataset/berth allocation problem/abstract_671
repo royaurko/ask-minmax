@@ -1,0 +1,25 @@
+This paper deals with the problem of efficient resource allocation in dynamic
+infrastructureless wireless networks. Assuming a reactive interference-limited
+scenario, each transmitter is allowed to select one frequency channel (from a
+common pool) together with a power level at each transmission trial; hence, for
+all transmitters, not only the fading gain, but also the number of interfering
+transmissions and their transmit powers are varying over time. Due to the
+absence of a central controller and time-varying network characteristics, it is
+highly inefficient for transmitters to acquire global channel and network
+knowledge. Therefore a reasonable assumption is that transmitters have no
+knowledge of fading gains, interference, and network topology. Each
+transmitting node selfishly aims at maximizing its average reward (or
+minimizing its average cost), which is a function of the action of that
+specific transmitter as well as those of all other transmitters. This scenario
+is modeled as a multi-player multi-armed adversarial bandit game, in which
+multiple players receive an a priori unknown reward with an arbitrarily
+time-varying distribution by sequentially pulling an arm, selected from a known
+and finite set of arms. Since players do not know the arm with the highest
+average reward in advance, they attempt to minimize their so-called regret,
+determined by the set of players' actions, while attempting to achieve
+equilibrium in some sense. To this end, we design in this paper two joint power
+level and channel selection strategies. We prove that the gap between the
+average reward achieved by our approaches and that based on the best fixed
+strategy converges to zero asymptotically. Moreover, the empirical joint
+frequencies of the game converge to the set of correlated equilibria. We
+further characterize this set for two special cases of our designed game.

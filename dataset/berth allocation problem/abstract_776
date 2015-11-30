@@ -1,0 +1,21 @@
+This paper addresses the design issues of the multi-antenna-based cognitive
+radio (CR) system that is able to operate concurrently with the licensed
+primary radio (PR) system. We propose a practical CR transmission strategy
+consisting of three major stages: environment learning, channel training, and
+data transmission. In the environment learning stage, the CR transceivers both
+listen to the PR transmission and apply blind algorithms to estimate the spaces
+that are orthogonal to the channels from the PR. Assuming time-division duplex
+(TDD) based transmission for the PR, cognitive beamforming is then designed and
+applied at CR transceivers to restrict the interference to/from the PR during
+the subsequent channel training and data transmission stages. In the channel
+training stage, the CR transmitter sends training signals to the CR receiver,
+which applies the linear-minimum-mean-square-error (LMMSE) based estimator to
+estimate the effective channel. Considering imperfect estimations in both
+learning and training stages, we derive a lower bound on the ergodic capacity
+achievable for the CR in the data transmission stage. From this capacity lower
+bound, we observe a general learning/training/throughput tradeoff associated
+with the proposed scheme, pertinent to transmit power allocation between
+training and transmission stages, as well as time allocation among learning,
+training, and transmission stages. We characterize the aforementioned tradeoff
+by optimizing the associated power and time allocation to maximize the CR
+ergodic capacity.

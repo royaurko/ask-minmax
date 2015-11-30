@@ -1,0 +1,18 @@
+Let $G$ be a simple undirected graph on $n$ vertices with maximum
+degree~$\Delta$. Brooks' Theorem states that $G$ has a $\Delta$-colouring
+unless~$G$ is a complete graph, or a cycle with an odd number of vertices. To
+recolour $G$ is to obtain a new proper colouring by changing the colour of one
+vertex. We show an analogue of Brooks' Theorem by proving that from any
+$k$-colouring, $k>\Delta$, a $\Delta$-colouring of $G$ can be obtained by a
+sequence of $O(n^2)$ recolourings using only the original $k$ colours unless
+$G$ is a complete graph or a cycle with an odd number of vertices, or
+$k=\Delta+1$, $G$ is $\Delta$-regular and, for each vertex $v$ in $G$, no two
+neighbours of $v$ are coloured alike.
+  We use this result to study the reconfiguration graph $R_k(G)$ of the
+$k$-colourings of $G$. The vertex set of $R_k(G)$ is the set of all possible
+$k$-colourings of $G$ and two colourings are adjacent if they differ on exactly
+one vertex. We prove that for $\Delta\geq 3$, $R_{\Delta+1}(G)$ consists of
+isolated vertices and at most one further component which has diameter
+$O(n^2)$. This result enables us to complete both a structural classification
+and an algorithmic classification for reconfigurations of colourings of graphs
+of bounded maximum degree.

@@ -1,0 +1,19 @@
+A snap-stabilizing protocol, starting from any configuration, always behaves
+according to its specification. In this paper, we present a snap-stabilizing
+protocol to solve the message forwarding problem in a message-switched network.
+In this problem, we must manage resources of the system to deliver messages to
+any processor of the network. In this purpose, we use information given by a
+routing algorithm. By the context of stabilization (in particular, the system
+starts in an arbitrary configuration), this information can be corrupted. So,
+the existence of a snap-stabilizing protocol for the message forwarding problem
+implies that we can ask the system to begin forwarding messages even if routing
+information are initially corrupted. In this paper, we propose two
+snap-stabilizing algorithms (in the state model) for the following
+specification of the problem: - Any message can be generated in a finite time.
+- Any emitted message is delivered to its destination once and only once in a
+finite time. This implies that our protocol can deliver any emitted message
+regardless of the state of routing tables in the initial configuration. These
+two algorithms are based on the previous work of [MS78]. Each algorithm needs a
+particular method to be transform into a snap-stabilizing one but both of them
+do not introduce a significant overcost in memory or in time with respect to
+algorithms of [MS78].

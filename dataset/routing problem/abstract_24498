@@ -1,0 +1,17 @@
+Verification of software systems is a very hard problem due to the large size
+of program state-space. The traditional techniques (like model checking) do not
+scale; since they include the whole state-space by inlining the library
+function codes. Current research avoids these problem by creating a lightweight
+representation of the library in form of an "interface graph" (call sequence
+graph). In this paper we introduce a new algorithm to compute a safe,
+permissive interface graph for C-type functions. In this modular analysis, each
+function transition is summarized following three-valued abstraction semantics.
+There are two kinds of abstraction used here. The global abstraction contains
+predicates over global variables only; however the local abstraction inside
+each function may also contain the local variables. The abstract summary needs
+refinement to guarantee safety and permissiveness. We have implemented the
+algorithms in TICC tool and compared this algorithm with some related interface
+generation algorithms. We also discuss the application of interface as an
+offline test-suite. We create an interface from the model program
+(specification) and the interface will act as a test-suite for the new
+implementation-under-test (IUT).

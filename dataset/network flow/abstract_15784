@@ -1,0 +1,24 @@
+We present an estimator-based control design procedure for flow control,
+using reduced-order models of the governing equations, linearized about a
+possibly unstable steady state. The reduced models are obtained using an
+approximate balanced truncation method that retains the most controllable and
+observable modes of the system. The original method is valid only for stable
+linear systems, and we present an extension to unstable linear systems. The
+dynamics on the unstable subspace are represented by projecting the original
+equations onto the global unstable eigenmodes, assumed to be small in number. A
+snapshot-based algorithm is developed, using approximate balanced truncation,
+for obtaining a reduced-order model of the dynamics on the stable subspace. The
+proposed algorithm is used to study feedback control of 2-D flow over a flat
+plate at a low Reynolds number and at large angles of attack, where the natural
+flow is vortex shedding, though there also exists an unstable steady state. For
+control design, we derive reduced-order models valid in the neighborhood of
+this unstable steady state. The actuation is modeled as a localized body force
+near the leading edge of the flat plate, and the sensors are two velocity
+measurements in the near-wake of the plate. A reduced-order Kalman filter is
+developed based on these models and is shown to accurately reconstruct the flow
+field from the sensor measurements, and the resulting estimator-based control
+is shown to stabilize the unstable steady state. For small perturbations of the
+steady state, the model accurately predicts the response of the full
+simulation. Furthermore, the resulting controller is even able to suppress the
+stable periodic vortex shedding, where the nonlinear effects are strong, thus
+implying a large domain of attraction of the stabilized steady state.

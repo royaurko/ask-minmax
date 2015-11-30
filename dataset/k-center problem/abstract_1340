@@ -1,0 +1,17 @@
+The workflow satisfiability problem (WSP) asks whether there exists an
+assignment of contributorised users to the steps in a workflow specification,
+subject to certain constraints on the assignment. (Such an assignment is called
+valid.) The problem is NP-hard even when restricted to the large class of
+user-independent constraints. Since the number of steps $k$ is relatively small
+in practice, it is natural to consider a parametrisation of the WSP by $k$. We
+propose a new fixed-parameter algorithm to solve the WSP with user-independent
+constraints. The assignments in our method are partitioned into equivalence
+classes such that the number of classes is exponential in $k$ only. We show
+that one can decide, in polynomial time, whether there is a valid assignment in
+an equivalence class. By exploiting this property, our algorithm reduces the
+search space to the space of equivalence classes, which it browses within a
+backtracking framework, hence emerging as an efficient yet relatively
+simple-to-implement or generalise solution method. We empirically evaluate our
+algorithm against the state-of-the-art methods and show that it clearly wins
+the competition on the whole range of our test problems and significantly
+extends the domain of practically solvable instances of the WSP.

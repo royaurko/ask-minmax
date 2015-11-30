@@ -1,0 +1,12 @@
+Although web applications evolved to mature solutions providing sophisticated
+user experience, they also became complex for the same reason. Complexity
+primarily affects the server-side generation of dynamic pages as they are
+aggregated from multiple sources and as there are lots of possible processing
+paths depending on parameters. Browser-based tests are an adequate instrument
+to detect errors within generated web pages considering the server-side process
+and path complexity a black box. However, these tests do not detect the cause
+of an error which has to be located manually instead. This paper proposes to
+generate metadata on the paths and parts involved during server-side processing
+to facilitate backtracking origins of detected errors at development time.
+While there are several possible points of interest to observe for
+backtracking, this paper focuses user interface components of web frameworks.

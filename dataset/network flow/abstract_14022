@@ -1,0 +1,16 @@
+A hybrid-parallel direct-numerical-simulation method with application to
+turbulent Taylor-Couette flow is presented. The Navier-Stokes equations are
+discretized in cylindrical coordinates with the spectral Fourier-Galerkin
+method in the axial and azimuthal directions, and high-order finite differences
+in the radial direction. Time is advanced by a second-order, semi-implicit
+projection scheme, which requires the solution of five Helmholtz/Poisson
+equations, avoids staggered grids and renders very small slip velocities.
+Nonlinear terms are computed with the pseudospectral method. The code is
+parallelized using a hybrid MPI-OpenMP strategy, which is simpler to implement,
+reduces inter-node communications and is more efficient compared to a flat MPI
+parallelization. A strong scaling study shows that the hybrid code maintains
+very good scalability up to more than 20000 processor cores and thus allows to
+perform simulations at higher resolutions than previously feasible, and opens
+up the possibility to simulate turbulent Taylor-Couette flows at Reynolds
+numbers up to $\mathcal{O}(10^5)$. This enables to probe hydrodynamic
+turbulence in Keplerian flows in experimentally relevant regimes.

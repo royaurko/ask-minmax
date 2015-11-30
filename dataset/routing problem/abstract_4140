@@ -1,0 +1,28 @@
+The little Grothendieck problem consists of maximizing
+$\sum_{ij}C_{ij}x_ix_j$ over binary variables $x_i\in\{\pm1\}$, where C is a
+positive semidefinite matrix. In this paper we focus on a natural
+generalization of this problem, the little Grothendieck problem over the
+orthogonal group. Given C a dn x dn positive semidefinite matrix, the objective
+is to maximize $\sum_{ij}Tr (C_{ij}^TO_iO_j^T)$ restricting $O_i$ to take
+values in the group of orthogonal matrices, where $C_{ij}$ denotes the (ij)-th
+d x d block of C. We propose an approximation algorithm, which we refer to as
+Orthogonal-Cut, to solve this problem and show a constant approximation ratio.
+Our method is based on semidefinite programming. For a given $d\geq 1$, we show
+a constant approximation ratio of $\alpha_{R}(d)^2$, where $\alpha_{R}(d)$ is
+the expected average singular value of a d x d matrix with random Gaussian
+$N(0,1/d)$ i.i.d. entries. For d=1 we recover the known $\alpha_{R}(1)^2=2/\pi$
+approximation guarantee for the classical little Grothendieck problem. Our
+algorithm and analysis naturally extends to the complex valued case also
+providing a constant approximation ratio for the analogous problem over the
+Unitary Group.
+  Orthogonal-Cut also serves as an approximation algorithm for several
+applications, including the Procrustes problem where it improves over the best
+previously known approximation ratio of~$\frac1{2\sqrt{2}}$. The little
+Grothendieck problem falls under the class of problems approximated by a recent
+algorithm proposed in the context of the non-commutative Grothendieck
+inequality. Nonetheless, our approach is simpler and it provides a more
+efficient algorithm with better approximation ratios and matching integrality
+gaps.
+  Finally, we also provide an improved approximation algorithm for the more
+general little Grothendieck problem over the orthogonal (or unitary) group with
+rank constraints.

@@ -1,0 +1,12 @@
+In this paper, we propose a gradient difference based approach to text
+localization in videos and scene images. The input video frame/ image is first
+compressed using multilevel 2-D wavelet transform. The edge information of the
+reconstructed image is found which is further used for finding the maximum
+gradient difference between the pixels and then the boundaries of the detected
+text blocks are computed using zero crossing technique. We perform logical AND
+operation of the text blocks obtained by gradient difference and the zero
+crossing technique followed by connected component analysis to eliminate the
+false positives. Finally, the morphological dilation operation is employed on
+the detected text blocks for scene text localization. The experimental results
+obtained on publicly available standard datasets illustrate that the proposed
+method can detect and localize the texts of various sizes, fonts and colors.

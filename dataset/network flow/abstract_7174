@@ -1,0 +1,17 @@
+In this paper we propose distributed flooding-based storage algorithms for
+large-scale wireless sensor networks. Assume a wireless sensor network with $n$
+nodes that have limited power, memory, and bandwidth. Each node is capable of
+both sensing and storing data. Such sensor nodes might disappear from the
+network due to failures or battery depletion. Hence it is desired to design
+efficient schemes to collect data from these $n$ nodes. We propose two
+distributed storage algorithms (DSA's) that utilize network flooding to solve
+this problem. In the first algorithm, DSA-I, we assume that every node utilizes
+network flooding to disseminate its data throughout the network using a mixing
+time of approximately O(n). We show that this algorithm is efficient in terms
+of the encoding and decoding operations. In the second algorithm, DSA-II, we
+assume that the total number of nodes is not known to every sensor; hence
+dissemination of the data does not depend on $n$. The encoding operations in
+this case take $O(C\mu^2)$, where $\mu$ is the mean degree of the network graph
+and $C$ is a system parameter. We evaluate the performance of the proposed
+algorithms through analysis and simulation, and show that their performance
+matches the derived theoretical results.

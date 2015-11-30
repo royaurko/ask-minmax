@@ -1,0 +1,17 @@
+We present a new algorithm for generating merger trees and halo catalogs
+which explicitly ensures consistency of halo properties (mass, position, and
+velocity) across timesteps. Our algorithm has demonstrated the ability to
+improve both the completeness (through detecting and inserting otherwise
+missing halos) and purity (through detecting and removing spurious objects) of
+both merger trees and halo catalogs. In addition, our method is able to
+robustly measure the self-consistency of halo finders; it is the first to
+directly measure the uncertainties in halo positions, halo velocities, and the
+halo mass function for a given halo finder based on consistency between
+snapshots in cosmological simulations. We use this algorithm to generate merger
+trees for two large simulations (Bolshoi and Consuelo) and evaluate two halo
+finders (ROCKSTAR and BDM). We find that both the ROCKSTAR and BDM halo finders
+track halos extremely well; in both, the number of halos which do not have
+physically consistent progenitors is at the 1-2% level across all halo masses.
+Our code is publicly available at http://code.google.com/p/consistent-trees .
+Our trees and catalogs are publicly available at
+http://hipacc.ucsc.edu/Bolshoi/ .

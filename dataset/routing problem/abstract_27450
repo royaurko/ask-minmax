@@ -1,0 +1,14 @@
+This paper is about randomized iterative algorithms for solving a linear
+system of equations $X \beta = y$ in different settings. Recent interest in the
+topic was reignited when Strohmer and Vershynin (2009) proved the linear
+convergence rate of a Randomized Kaczmarz (RK) algorithm that works on the rows
+of $X$ (data points). Following that, Leventhal and Lewis (2010) proved the
+linear convergence of a Randomized Coordinate Descent (RCD) algorithm that
+works on the columns of $X$ (features). The aim of this paper is to simplify
+our understanding of these two algorithms, establish the direct relationships
+between them (though RK is often compared to Stochastic Gradient Descent), and
+examine the algorithmic commonalities or tradeoffs involved with working on
+rows or columns. We also discuss Kernel Ridge Regression and present a
+Kaczmarz-style algorithm that works on data points and having the advantage of
+solving the problem without ever storing or forming the Gram matrix, one of the
+recognized problems encountered when scaling kernelized methods.

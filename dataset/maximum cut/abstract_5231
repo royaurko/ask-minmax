@@ -1,0 +1,13 @@
+We investigate the problem of maintaining an encoded distributed storage
+system when some nodes contain adversarial errors. Using the error-correction
+capabilities that are built into the existing redundancy of the system, we
+propose a simple linear hashing scheme to detect errors in the storage nodes.
+Our main result is that for storing a data object of total size $\size$ using
+an $(n,k)$ MDS code over a finite field $\F_q$, up to
+$t_1=\lfloor(n-k)/2\rfloor$ errors can be detected, with probability of failure
+smaller than $1/ \size$, by communicating only $O(n(n-k)\log \size)$ bits to a
+trusted verifier. Our result constructs small projections of the data that
+preserve the errors with high probability and builds on a pseudorandom
+generator that fools linear functions. The transmission rate achieved by our
+scheme is asymptotically equal to the min-cut capacity between the source and
+any receiver.

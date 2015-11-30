@@ -1,0 +1,24 @@
+In this paper, we explore worst-case solutions for the problems of single and
+multiple matching on strings in the word RAM model with word length w. In the
+first problem, we have to build a data structure based on a pattern p of length
+m over an alphabet of size sigma such that we can answer to the following
+query: given a text T of length n, where each character is encoded using
+log(sigma) bits return the positions of all the occurrences of p in T (in the
+following we refer by occ to the number of reported occurrences). For the
+multi-pattern matching problem we have a set S of d patterns of total length m
+and a query on a text T consists in finding all positions of all occurrences in
+T of the patterns in S. As each character of the text is encoded using log
+sigma bits and we can read w bits in constant time in the RAM model, we assume
+that we can read up to (w/log sigma) consecutive characters of the text in one
+time step. This implies that the fastest possible query time for both problems
+is O((n(log sigma/w)+occ). In this paper we present several different results
+for both problems which come close to that best possible query time. We first
+present two different linear space data structures for the first and second
+problem: the first one answers to single pattern matching queries in time
+O(n(1/m+log sigma/w)+occ) while the second one answers to multiple pattern
+matching queries to O(n((log d+log y+log log d)/y+log sigma/w)+occ) where y is
+the length of the shortest pattern in the case of multiple pattern-matching. We
+then show how a simple application of the four russian technique permits to get
+data structures with query times independent of the length of the shortest
+pattern (the length of the only pattern in case of single string matching) at
+the expense of using more space.

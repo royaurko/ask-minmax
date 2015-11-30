@@ -1,0 +1,25 @@
+We consider a service system model primarily motivated by the problem of
+efficient assignment of virtual machines to physical host machines in a network
+cloud, so that the number of occupied hosts is minimized.
+  There are multiple input flows of different type customers, with a customer
+mean service time depending on its type. There is infinite number of servers. A
+server packing {\em configuration} is the vector $k=\{k_i\}$, where $k_i$ is
+the number of type $i$ customers the server "contains". Packing constraints
+must be observed, namely there is a fixed finite set of configurations $k$ that
+are allowed. Service times of different customers are independent; after a
+service completion, each customer leaves its server and the system. Each new
+arriving customer is placed for service immediately; it can be placed into a
+server already serving other customers (as long as packing constraints are not
+violated), or into an idle server.
+  We consider a simple parsimonious real-time algorithm, called {\em Greedy},
+which attempts to minimize the increment of the objective function $\sum_k
+X_k^{1+\alpha}$, $\alpha>0$, caused by each new assignment; here $X_k$ is the
+number of servers in configuration $k$. (When $\alpha$ is small, $\sum_k
+X_k^{1+\alpha}$ approximates the total number $\sum_k X_k$ of occupied
+servers.) Our main results show that certain versions of the Greedy algorithm
+are {\em asymptotically optimal}, in the sense of minimizing $\sum_k
+X_k^{1+\alpha}$ in stationary regime, as the input flow rates grow to infinity.
+We also show that in the special case when the set of allowed configurations is
+determined by {\em vector-packing} constraints, Greedy algorithm can work with
+{\em aggregate configurations} as opposed to exact configurations $k$, thus
+reducing computational complexity while preserving the asymptotic optimality.

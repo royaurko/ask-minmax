@@ -1,0 +1,17 @@
+Keyword search in relational databases has been widely studied in recent
+years because it does not require users neither to master a certain structured
+query language nor to know the complex underlying database schemas. Most of
+existing methods focus on answering snapshot keyword queries in static
+databases. In practice, however, databases are updated frequently, and users
+may have long-term interests on specific topics. To deal with such a situation,
+it is necessary to build effective and efficient facility in a database system
+to support continual keyword queries.
+  In this paper, we propose an efficient method for answering continual top-$k$
+keyword queries over relational databases. The proposed method is built on an
+existing scheme of keyword search on relational data streams, but incorporates
+the ranking mechanisms into the query processing methods and makes two
+improvements to support efficient top-$k$ keyword search in relational
+databases. Compared to the existing methods, our method is more efficient both
+in computing the top-$k$ results in a static database and in maintaining the
+top-$k$ results when the database continually being updated. Experimental
+results validate the effectiveness and efficiency of the proposed method.

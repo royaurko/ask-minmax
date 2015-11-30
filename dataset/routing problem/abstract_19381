@@ -1,0 +1,15 @@
+In the minimum common string partition (MCSP) problem two related input
+strings are given. "Related" refers to the property that both strings consist
+of the same set of letters appearing the same number of times in each of the
+two strings. The MCSP seeks a minimum cardinality partitioning of one string
+into non-overlapping substrings that is also a valid partitioning for the
+second string. This problem has applications in bioinformatics e.g. in
+analyzing related DNA or protein sequences. For strings with lengths less than
+about 1000 letters, a previously published integer linear programming (ILP)
+formulation yields, when solved with a state-of-the-art solver such as CPLEX,
+satisfactory results. In this work, we propose a new, alternative ILP model
+that is compared to the former one. While a polyhedral study shows the linear
+programming relaxations of the two models to be equally strong, a comprehensive
+experimental comparison using real-world as well as artificially created
+benchmark instances indicates substantial computational advantages of the new
+formulation.

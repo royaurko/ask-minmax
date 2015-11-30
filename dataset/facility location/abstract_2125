@@ -1,0 +1,14 @@
+This report describes a new magnetohydrodynamic numerical model based on a
+hexagonal spherical geodesic grid. The model is designed to simulate
+astrophysical flows of partially ionized plasmas around a central compact
+object, such as a star or a planet with a magnetic field. The geodesic grid,
+produced by a recursive subdivision of a base platonic solid (an icosahedron),
+is free from control volume singularities inherent in spherical polar grids.
+Multiple populations of plasma and neutral particles, coupled via
+charge-exchange interactions, can be simulated simultaneously with this model.
+Our numerical scheme uses piecewise linear reconstruction on a surface of a
+sphere in a local two-dimensional "Cartesian" frame. The code employs HLL-type
+approximate Riemann solvers and includes facilities to control the divergence
+of magnetic field and maintain pressure positivity. Several test solutions are
+discussed, including a problem of an interaction between the solar wind and the
+local interstellar medium, and a simulation of Earth's magnetosphere.

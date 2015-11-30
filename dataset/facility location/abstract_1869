@@ -1,0 +1,13 @@
+The ISAC polarized beam facility uses a Ti:Sapphire laser for producing
+spin-polarized beams of short-lived radioactive isotopes, initially 7Li. The
+laser power and spectral content must be tightly controlled and monitored. The
+control system to accomplish this task uses techniques that combine operator
+interface, data reduction, and closed loop automation. The laser stabilization
+application uses input data acquired from a spectrum analyzer, in the form of a
+waveform array repetitively acquired from a GPIB-interfaced oscilloscope. A
+Labview based operator interface allows the selection of features from within
+the waveform, which are then used as the basis for closed loop control, in
+concert with the existing EPICS control system software and related hardware.
+Part of the challenge stems from using input data which are subject to human
+interpretation and require distillation into a hard numeric format suitable for
+use in a control system.

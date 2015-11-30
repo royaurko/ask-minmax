@@ -1,0 +1,19 @@
+A novel formalism for Bayesian learning in the context of complex inference
+models is proposed. The method is based on the use of the Stationary
+Fokker--Planck (SFP) approach to sample from the posterior density. Stationary
+Fokker--Planck sampling generalizes the Gibbs sampler algorithm for arbitrary
+and unknown conditional densities. By the SFP procedure approximate analytical
+expressions for the conditionals and marginals of the posterior can be
+constructed. At each stage of SFP, the approximate conditionals are used to
+define a Gibbs sampling process, which is convergent to the full joint
+posterior. By the analytical marginals efficient learning methods in the
+context of Artificial Neural Networks are outlined. Off--line and incremental
+Bayesian inference and Maximum Likelihood Estimation from the posterior is
+performed in classification and regression examples. A comparison of SFP with
+other Monte Carlo strategies in the general problem of sampling from arbitrary
+densities is also presented. It is shown that SFP is able to jump large
+low--probabilty regions without the need of a careful tuning of any step size
+parameter. In fact, the SFP method requires only a small set of meaningful
+parameters which can be selected following clear, problem--independent
+guidelines. The computation cost of SFP, measured in terms of loss function
+evaluations, grows linearly with the given model's dimension.

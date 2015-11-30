@@ -1,0 +1,9 @@
+We present an algorithm for the Single Source Shortest Paths (SSSP) problem
+in \emph{$H$-minor free} graphs. For every fixed $H$, if $G$ is a graph with
+$n$ vertices having integer edge lengths and $s$ is a designated source vertex
+of $G$, the algorithm runs in $\tilde{O}(n^{\sqrt{11.5}-2} \log L) \le
+O(n^{1.392} \log L)$ time, where $L$ is the absolute value of the smallest edge
+length. The algorithm computes shortest paths and the distances from $s$ to all
+vertices of the graph, or else provides a certificate that $G$ is not $H$-minor
+free. Our result improves an earlier $O(n^{1.5} \log L)$ time algorithm for
+this problem, which follows from a general SSSP algorithm of Goldberg.

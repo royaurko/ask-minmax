@@ -1,0 +1,17 @@
+Given a capacitated graph $G = (V,E)$ and a set of terminals $K \subseteq V$,
+how should we produce a graph $H$ only on the terminals $K$ so that every
+(multicommodity) flow between the terminals in $G$ could be supported in $H$
+with low congestion, and vice versa? (Such a graph $H$ is called a
+flow-sparsifier for $G$.) What if we want $H$ to be a "simple" graph? What if
+we allow $H$ to be a convex combination of simple graphs?
+  Improving on results of Moitra [FOCS 2009] and Leighton and Moitra [STOC
+2010], we give efficient algorithms for constructing: (a) a flow-sparsifier $H$
+that maintains congestion up to a factor of $O(\log k/\log \log k)$, where $k =
+|K|$, (b) a convex combination of trees over the terminals $K$ that maintains
+congestion up to a factor of $O(\log k)$, and (c) for a planar graph $G$, a
+convex combination of planar graphs that maintains congestion up to a constant
+factor. This requires us to give a new algorithm for the 0-extension problem,
+the first one in which the preimages of each terminal are connected in $G$.
+Moreover, this result extends to minor-closed families of graphs.
+  Our improved bounds immediately imply improved approximation guarantees for
+several terminal-based cut and ordering problems.

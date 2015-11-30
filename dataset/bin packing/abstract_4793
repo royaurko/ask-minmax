@@ -1,0 +1,21 @@
+The classical problem of reliable point-to-point digital communication is to
+achieve a low probability of error while keeping the rate high and the total
+power consumption small. Traditional information-theoretic analysis uses
+`waterfall' curves to convey the revolutionary idea that unboundedly low
+probabilities of bit-error are attainable using only finite transmit power.
+However, practitioners have long observed that the decoder complexity, and
+hence the total power consumption, goes up when attempting to use sophisticated
+codes that operate close to the waterfall curve.
+  This paper gives an explicit model for power consumption at an idealized
+decoder that allows for extreme parallelism in implementation. The decoder
+architecture is in the spirit of message passing and iterative decoding for
+sparse-graph codes. Generalized sphere-packing arguments are used to derive
+lower bounds on the decoding power needed for any possible code given only the
+gap from the Shannon limit and the desired probability of error. As the gap
+goes to zero, the energy per bit spent in decoding is shown to go to infinity.
+This suggests that to optimize total power, the transmitter should operate at a
+power that is strictly above the minimum demanded by the Shannon capacity.
+  The lower bound is plotted to show an unavoidable tradeoff between the
+average bit-error probability and the total power used in transmission and
+decoding. In the spirit of conventional waterfall curves, we call these
+`waterslide' curves.

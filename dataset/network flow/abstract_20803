@@ -1,0 +1,17 @@
+Many scientific computations need multi-node parallelism for matching up both
+space (memory) and time (speed) ever-increasing requirements. The use of GPUs
+as accelerators introduces yet another level of complexity for the programmer
+and may potentially result in large overheads due to the complex memory
+hierarchy. Additionally, top-notch problems may easily employ more than a
+Petaflops of sustained computing power, requiring thousands of GPUs
+orchestrated with some parallel programming model. Here we describe APEnet+,
+the new generation of our interconnect, which scales up to tens of thousands of
+nodes with linear cost, thus improving the price/performance ratio on large
+clusters. The project target is the development of the Apelink+ host adapter
+featuring a low latency, high bandwidth direct network, state-of-the-art wire
+speeds on the links and a PCIe X8 gen2 host interface. It features hardware
+support for the RDMA programming model and experimental acceleration of GPU
+networking. A Linux kernel driver, a set of low-level RDMA APIs and an OpenMPI
+library driver are available, allowing for painless porting of standard
+applications. Finally, we give an insight of future work and intended
+developments.

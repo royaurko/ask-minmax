@@ -1,0 +1,23 @@
+Travel sharing, i.e., the problem of finding parts of routes which can be
+shared by several travellers with different points of departure and
+destinations, is a complex multiagent problem that requires taking into account
+individual agents' preferences to come up with mutually acceptable joint plans.
+In this paper, we apply state-of-the-art planning techniques to real-world
+public transportation data to evaluate the feasibility of multiagent planning
+techniques in this domain. The potential application value of improving travel
+sharing technology has great application value due to its ability to reduce the
+environmental impact of travelling while providing benefits to travellers at
+the same time. We propose a three-phase algorithm that utilises performant
+single-agent planners to find individual plans in a simplified domain first,
+then merges them using a best-response planner which ensures resulting
+solutions are individually rational, and then maps the resulting plan onto the
+full temporal planning domain to schedule actual journeys. The evaluation of
+our algorithm on real-world, multi-modal public transportation data for the
+United Kingdom shows linear scalability both in the scenario size and in the
+number of agents, where trade-offs have to be made between total cost
+improvement, the percentage of feasible timetables identified for journeys, and
+the prolongation of these journeys. Our system constitutes the first
+implementation of strategic multiagent planning algorithms in large-scale
+domains and provides insights into the engineering process of translating
+general domain-independent multiagent planning algorithms to real-world
+applications.

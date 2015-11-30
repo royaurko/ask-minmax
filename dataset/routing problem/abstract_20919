@@ -1,0 +1,24 @@
+In a recent paper [4], Duarte and Jutten investigated the Blind Source
+Separation (BSS) problem, for the nonlinear mixing model that they introduced
+in that paper. They proposed to solve this problem by using
+information-theoretic tools, more precisely by minimizing the mutual
+information (MI) of the outputs of the separating structure. When applying the
+MI approach to BSS problems, one usually determines the analytical expressions
+of the derivatives of the MI with respect to the parameters of the considered
+separating model. In the literature, these calculations were mainly reported
+for linear mixtures up to now. They are more complex for nonlinear mixtures,
+due to dependencies between the considered quantities. Moreover, the notations
+commonly employed by the BSS community in such calculations may become
+misleading when using them for nonlinear mixtures, due to the above-mentioned
+dependencies. We claim that the calculations reported in [4] contain an error,
+because they did not take into account all these dependencies. In this
+document, we therefore explain this phenomenon, by showing the effect of
+indirect dependencies on the application of the MI approach to the mixing and
+separating models considered in [4]. We thus introduce a corrected expression
+of the gradient of the considered BSS criterion based on MI. This correct
+gradient may then e.g. be used to optimize the adaptive coefficients of the
+considered separating system by means of the well-known gradient descent
+algorithm. As explained hereafter, this investigation has some similarities
+with an analysis that we previously reported in another arXiv document [3].
+However, these two investigations concern different problems (mixture and
+separating structure, mathematical tools: see paper).

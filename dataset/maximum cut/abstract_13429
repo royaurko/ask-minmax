@@ -1,0 +1,18 @@
+We determine the thresholds for the number of variables, number of clauses,
+number of clause intersection pairs and the maximum clause degree of a k-CNF
+formula that guarantees satisfiability under the assumption that every two
+clauses share at most $\alpha$ variables. More formally, we call these formulas
+$\alpha$-intersecting and define, for example, a threshold $\mu_i(k,\alpha)$
+for the number of clause intersection pairs $i$, such that every
+$\alpha$-intersecting k-CNF formula in which at most $\mu_i(k,\alpha)$ pairs of
+clauses share a variable is satisfiable and there exists an unsatisfiable
+$\alpha$-intersecting k-CNF formula with $\mu_m(k,\alpha)$ such intersections.
+We provide a lower bound for these thresholds based on the Lovasz Local Lemma
+and a nearly matching upper bound by constructing an unsatisfiable k-CNF to
+show that $\mu_i(k,\alpha) = \tilde{\Theta}(2^{k(2+1/\alpha)})$. Similar
+thresholds are determined for the number of variables ($\mu_n =
+\tilde{\Theta}(2^{k/\alpha})$) and the number of clauses ($\mu_m =
+\tilde{\Theta}(2^{k(1+\frac{1}{\alpha})})$) (see [Scheder08] for an earlier but
+independent report on this threshold). Our upper bound construction gives a
+family of unsatisfiable formula that achieve all four thresholds
+simultaneously.

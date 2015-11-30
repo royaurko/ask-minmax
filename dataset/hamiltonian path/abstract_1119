@@ -1,0 +1,19 @@
+Distributed Arithmetic Coding (DAC) proves to be an effective implementation
+of Slepian-Wolf Coding (SWC), especially for short data blocks. To study the
+property of DAC codewords, the contributor has proposed the concept of DAC codeword
+spectrum. For equiprobable binary sources, the problem was formatted as solving
+a system of functional equations. Then, to calculate DAC codeword spectrum in
+general cases, three approximation methods have been proposed. In this paper,
+the contributor makes use of DAC codeword spectrum as a tool to answer an important
+question: how many (including proper and wrong) paths will be created during
+the DAC decoding, if no path is pruned? The contributor introduces the concept of
+another kind of DAC codeword spectrum, i.e. time spectrum, while the
+originally-proposed DAC codeword spectrum is called path spectrum from now on.
+To measure how fast the number of decoding paths increases, the contributor
+introduces the concept of expansion factor which is defined as the ratio of
+path numbers between two consecutive decoding stages. The contributor reveals the
+relation between expansion factor and path/time spectrum, and proves that the
+number of decoding paths of any DAC codeword increases exponentially as the
+decoding proceeds. Specifically, when symbols `0' and `1' are mapped onto
+intervals [0, q) and [(1-q), 1), where 0.5<q<1, the contributor proves that
+expansion factor converges to 2q as the decoding proceeds.

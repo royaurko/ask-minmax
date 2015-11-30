@@ -1,0 +1,16 @@
+Among the various critical systems that worth to be formally analyzed, a wide
+set consists of controllers for dynamical systems. Those programs typically
+execute an infinite loop in which simple com putations update internal states
+and produce commands to update the system state. Those systems are yet hardly
+analyzable by available static analysis method, since, even if performing
+mainly linear computations, the computation of a safe set of reachable states
+often requires quadratic invariants. In this paper we consider the general
+setting of a piecewise affine program; that is a program performing different
+affine updates on the system depending on some conditions. This typically
+encompasses linear controllers with saturations or controllers with different
+behaviors and performances activated on some safety conditions. Our analysis is
+inspired by works performed a decade ago by Johansson et al, and Morari et al,
+in the control community. We adapted their method focused on the analysis of
+stability in continuous-time or discrete-time settings to fit the static
+analysis paradigm and the computation of invariants, that is over-approximation
+of reachable sets using piecewise quadratic Lyapunov functions.

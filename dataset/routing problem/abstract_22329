@@ -1,0 +1,25 @@
+As an important information for traffic condition evaluation, trip planning,
+transportation management, etc., average travel speed for a road means the
+average speed of vehicles travelling through this road in a given time
+duration. Traditional ways for collecting travel-speed oriented traffic data
+always depend on dedicated sensors and supporting infrastructures, and are
+therefore financial costly. Differently, vehicular crowdsensing as an
+infrastructure-free way, can be used to collect data including real-time
+locations and velocities of vehicles for road travel speed estimation, which is
+a quite low-cost way. However, vehicular crowdsensing data is always
+coarse-grained. This coarseness can lead to the incompleteness of travel
+speeds. Aiming to handle this problem as well as estimate travel speed
+accurately, in this paper, we propose an approach named STC that exploits the
+spatial-temporal correlation among travel speeds for roads by introducing the
+time-lagged cross correlation function. The time lagging factor describes the
+time consumption of traffic feature diffusion along roads. To properly
+calculate cross correlation, we novelly make the determination of the time
+lagging factor self-adaptive by recording the locations of vehicles at
+different roads. Then, utilizing the local stationarity of cross correlation,
+we further reduce the problem of single-road travel speed vacancy completion to
+a minimization problem. Finally, we fill all the vacancies of travel speed for
+roads in a recursive way using the geometric structure of road net. Elaborate
+experiments based on real taxi trace data show that STC can settle the
+incompleteness problem of vehicle crowdsensing data based travel speed
+estimation and ensure the accuracy of estimated travel speed better, in
+comparison with representative existing methods such as KNN, Kriging and ARIMA.

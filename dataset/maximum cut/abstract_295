@@ -1,0 +1,24 @@
+A method is presented for automated photometric classification of supernovae
+(SNe) as Type-Ia or non-Ia. A two-step approach is adopted in which: (i) the SN
+lightcurve flux measurements in each observing filter are fitted separately;
+and (ii) the fitted function parameters and their associated uncertainties,
+along with the number of flux measurements, the maximum-likelihood value of the
+fit and Bayesian evidence for the model, are used as the input feature vector
+to a classification neural network (NN) that outputs the probability that the
+SN under consideration is of Type-Ia. The method is trained and tested using
+data released following the SuperNova Photometric Classification Challenge
+(SNPCC). We consider several random divisions of the data into training and
+testing sets: for instance, for our sample D_1 (D_4), a total of 10% (40%) of
+the data are involved in training the algorithm and the remainder used for
+blind testing of the resulting classifier; we make no selection cuts. Assigning
+a canonical threshold probability of p_th=0.5 on the NN output to classify a SN
+as Type-Ia, for the sample D_1 (D_4) we obtain a completeness of 0.78 (0.82),
+purity of 0.77 (0.82), and SNPCC figure-of-merit of 0.41 (0.50). Including the
+SN host-galaxy redshift and its uncertainty as additional inputs to the NN
+results in a modest 5-10% increase in these values. We find that the
+classification quality does not vary significantly with SN redshift. Moreover,
+our probabilistic classification method allows one to calculate the expected
+completeness, purity or other measures of classification quality as a function
+of the p_th, without knowing the true classes of the SNe in the testing sample.
+The method may thus be improved further by optimising p_th and can easily be
+extended to divide non-Ia SNe into their different classes.

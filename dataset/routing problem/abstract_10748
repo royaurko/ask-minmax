@@ -1,0 +1,18 @@
+We study a natural extension of the Maximum Weight Independent Set Problem
+(MWIS), one of the most studied optimization problems in Graph algorithms. We
+are given a graph $G=(V,E)$, a weight function $w: V \rightarrow \mathbb{R^+}$,
+a budget function $b: V \rightarrow \mathbb{Z^+}$, and a positive integer $B$.
+The weight (resp. budget) of a subset of vertices is the sum of weights (resp.
+budgets) of the vertices in the subset. A $k$-budgeted independent set in $G$
+is a subset of vertices, such that no pair of vertices in that subset are
+adjacent, and the budget of the subset is at most $k$. The goal is to find a
+$B$-budgeted independent set in $G$ such that its weight is maximum among all
+the $B$-budgeted independent sets in $G$. We refer to this problem as MWBIS.
+Being a generalization of MWIS, MWBIS also has several applications in
+Scheduling, Wireless networks and so on. Due to the hardness results implied
+from MWIS, we study the MWBIS problem in several special classes of graphs. We
+design exact algorithms for trees, forests, cycle graphs, and interval graphs.
+In unweighted case we design an approximation algorithm for $d+1$-claw free
+graphs whose approximation ratio ($d$) is competitive with the approximation
+ratio ($\frac{d}{2}$) of MWIS (unweighted). Furthermore, we extend Baker's
+technique \cite{Baker83} to get a PTAS for MWBIS in planar graphs.

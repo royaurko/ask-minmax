@@ -1,0 +1,23 @@
+Kinetic Monte Carlo (kMC) simulations have emerged as a key tool for
+microkinetic modeling in heterogeneous catalysis and other materials
+applications. Systems, where site-specificity of all elementary reactions
+allows a mapping onto a lattice of discrete active sites, can be addressed
+within the particularly efficient lattice kMC approach. To this end we describe
+the versatile kmos software package, which offers a most user-friendly
+implementation, execution, and evaluation of lattice kMC models of arbitrary
+complexity in one- to three-dimensional lattice systems, involving multiple
+active sites in periodic or aperiodic arrangements, as well as site-resolved
+pairwise and higher-order lateral interactions. Conceptually, kmos achieves a
+maximum runtime performance which is essentially independent of lattice size by
+generating code for the efficiency-determining local update of available events
+that is optimized for a defined kMC model. For this model definition and the
+control of all runtime and evaluation aspects kmos offers a high-level
+application programming interface. Usage proceeds interactively, via scripts,
+or a graphical user interface, which visualizes the model geometry, the lattice
+occupations and rates of selected elementary reactions, while allowing
+on-the-fly changes of simulation parameters. We demonstrate the performance and
+scaling of kmos with the application to kMC models for surface catalytic
+processes, where for given operation conditions (temperature and partial
+pressures of all reactants) central simulation outcomes are catalytic activity
+and selectivities, surface composition, and mechanistic insight into the
+occurrence of individual elementary processes in the reaction network.

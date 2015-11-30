@@ -1,0 +1,13 @@
+A subgraph $T$ of a digraph $D$ is an {\em out-branching} if $T$ is an
+oriented spanning tree with only one vertex of in-degree zero (called the {\em
+root}). The vertices of $T$ of out-degree zero are {\em leaves}. In the {\sc
+Directed $k$-Leaf} Problem, we are given a digraph $D$ and an integral
+parameter $k$, and we are to decide whether $D$ has an out-branching with at
+least $k$ leaves. Recently, Kneis et al. (2008) obtained an algorithm for the
+problem of running time $4^{k}\cdot n^{O(1)}$. We describe a new algorithm for
+the problem of running time $3.72^{k}\cdot n^{O(1)}$. In {\sc Rooted Directed
+$k$-Leaf} Problem, apart from $D$ and $k$, we are given a vertex $r$ of $D$ and
+we are to decide whether $D$ has an out-branching rooted at $r$ with at least
+$k$ leaves. Very recently, Fernau et al. (2008) found an $O(k^3)$-size kernel
+for {\sc Rooted Directed $k$-Leaf}. In this paper, we obtain an $O(k)$ kernel
+for {\sc Rooted Directed $k$-Leaf} restricted to acyclic digraphs.

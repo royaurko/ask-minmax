@@ -1,0 +1,17 @@
+We study the following geometric representation problem: Given a graph whose
+vertices correspond to axis-aligned rectangles with fixed dimensions, arrange
+the rectangles without overlaps in the plane such that two rectangles touch if
+the graph contains an edge between them. This problem is called \textsc{Contact
+Representation of Word Networks} (\textsc{Crown}) since it formalizes the
+geometric problem behind drawing word clouds in which semantically related
+words are close to each other. \textsc{Crown} is known to be NP-hard, and there
+are approximation algorithms for certain graph classes for the optimization
+version, \textsc{Max-Crown}, in which realizing each desired adjacency yields a
+certain profit. We present the first $O(1)$-approximation algorithm for the
+general case, when the input is a complete weighted graph, and for the
+bipartite case. Since the subgraph of realized adjacencies is necessarily
+planar, we also consider several planar graph classes (namely stars, trees,
+outerplanar, and planar graphs), improving upon the known results. For some
+graph classes, we also describe improvements in the unweighted case, where each
+adjacency yields the same profit. Finally, we show that the problem is APX-hard
+on bipartite graphs of bounded maximum degree.

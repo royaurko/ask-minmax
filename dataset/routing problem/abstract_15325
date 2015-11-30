@@ -1,0 +1,19 @@
+Studies have shown that multi-objective optimization problems are hard
+problems. Such problems either require longer time to converge to an optimum
+solution, or may not converge at all. Recently some researchers have claimed
+that real culprit for increasing the hardness of multi-objective problems are
+not the number of objectives themselves rather it is the increased size of
+solution set, incompatibility of solutions, and high probability of finding
+suboptimal solution due to increased number of local maxima. In this work, we
+have setup a simple framework for the evaluation of hardness of multi-objective
+genetic algorithms (MOGA). The algorithm is designed for a pray-predator game
+where a player is to improve its lifespan, challenging level and usability of
+the game arena through number of generations. A rigorous set of experiments are
+performed for quantifying the hardness in terms of evolution for increasing
+number of objective functions. In genetic algorithm, crossover and mutation
+with equal probability are applied to create offspring in each generation.
+First, each objective function is maximized individually by ranking the
+competing players on the basis of the fitness (cost) function, and then a
+multi-objective cost function (sum of individual cost functions) is maximized
+with ranking, and also without ranking where dominated solutions are also
+allowed to evolve.

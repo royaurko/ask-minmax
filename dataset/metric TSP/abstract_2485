@@ -1,0 +1,20 @@
+In the reordering buffer problem (RBP), a server is asked to process a
+sequence of requests lying in a metric space. To process a request the server
+must move to the corresponding point in the metric. The requests can be
+processed slightly out of order; in particular, the server has a buffer of
+capacity k which can store up to k requests as it reads in the sequence. The
+goal is to reorder the requests in such a manner that the buffer constraint is
+satisfied and the total travel cost of the server is minimized. The RBP arises
+in many applications that require scheduling with a limited buffer capacity,
+such as scheduling a disk arm in storage systems, switching colors in paint
+shops of a car manufacturing plant, and rendering 3D images in computer
+graphics.
+  We study the offline version of RBP and develop bicriteria approximations.
+When the underlying metric is a tree, we obtain a solution of cost no more than
+9OPT using a buffer of capacity 4k + 1 where OPT is the cost of an optimal
+solution with buffer capacity k. Constant factor approximations were known
+previously only for the uniform metric (Avigdor-Elgrabli et al., 2012). Via
+randomized tree embeddings, this implies an O(log n) approximation to cost and
+O(1) approximation to buffer size for general metrics. Previously the best
+known algorithm for arbitrary metrics by Englert et al. (2007) provided an
+O(log^2 k log n) approximation without violating the buffer constraint.

@@ -1,0 +1,17 @@
+Large contingency tables summarizing categorical variables arise in many
+areas. For example in biology when a large number of biomarkers are
+cross-tabulated according to their discrete expression level. Interactions of
+the variables are generally studied with log-linear models and the structure of
+a log-linear model can be visually represented by a graph from which the
+conditional independence structure can then be read off. However, since the
+number of parameters in a saturated model grows exponentially in the number of
+variables, this generally comes with a heavy burden as far as computational
+power is concerned. If we restrict ourselves to models of lower order
+interactions or other sparse structures we face similar problems as the number
+of cells remains unchanged. We therefore present a divide-and-conquer approach,
+where we first divide the problem into several lower-dimensional problems and
+then combine these to form a global solution. Our methodology is
+computationally feasible for log-linear interaction modeling with many
+categorical variables each or some of them having many categories. We
+demonstrate the proposed method on simulated data and apply it to a bio-medical
+problem in cancer research.

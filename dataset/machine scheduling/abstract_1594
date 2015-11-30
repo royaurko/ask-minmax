@@ -1,0 +1,20 @@
+Many applications in translational medicine require the understanding of how
+diseases progress through the accumulation of persistent events. Specialized
+Bayesian networks called monotonic progression networks offer a statistical
+framework for modeling this sort of phenomenon. Current machine learning tools
+to reconstruct Bayesian networks from data are powerful but not suited to
+progression models. We combine the technological advances in machine learning
+with a rigorous philosophical theory of causation to produce Polaris, a
+scalable algorithm for learning progression networks that accounts for causal
+or biological noise as well as logical relations among genetic events, making
+the resulting models easy to interpret qualitatively. We tested Polaris on
+synthetically generated data and showed that it outperforms a widely used
+machine learning algorithm and approaches the performance of the competing
+special-purpose, albeit clairvoyant algorithm that is given a priori
+information about the model parameters. We also prove that under certain rather
+mild conditions, Polaris is guaranteed to converge for sufficiently large
+sample sizes. Finally, we applied Polaris to point mutation and copy number
+variation data in Prostate cancer from The Cancer Genome Atlas (TCGA) and found
+that there are likely three distinct progressions, one major androgen driven
+progression, one major non-androgen driven progression, and one novel minor
+androgen driven progression.

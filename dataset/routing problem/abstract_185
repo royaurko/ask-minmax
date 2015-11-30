@@ -1,0 +1,18 @@
+Modern scientific repositories are growing rapidly in size. Scientists are
+increasingly interested in viewing the latest data as part of query results.
+Current scientific middleware cache systems, however, assume repositories are
+static. Thus, they cannot answer scientific queries with the latest data. The
+queries, instead, are routed to the repository until data at the cache is
+refreshed. In data-intensive scientific disciplines, such as astronomy,
+indiscriminate query routing or data refreshing often results in runaway
+network costs. This severely affects the performance and scalability of the
+repositories and makes poor use of the cache system. We present Delta, a
+dynamic data middleware cache system for rapidly-growing scientific
+repositories. Delta's key component is a decision framework that adaptively
+decouples data objects---choosing to keep some data object at the cache, when
+they are heavily queried, and keeping some data objects at the repository, when
+they are heavily updated. Our algorithm profiles incoming workload to search
+for optimal data decoupling that reduces network costs. It leverages formal
+concepts from the network flow problem, and is robust to evolving scientific
+workloads. We evaluate the efficacy of Delta, through a prototype
+implementation, by running query traces collected from a real astronomy survey.

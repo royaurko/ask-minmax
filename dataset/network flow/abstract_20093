@@ -1,0 +1,13 @@
+Threads and events are two common abstractions for writing concurrent
+programs. Because threads are often more convenient, but events more efficient,
+it is natural to want to translate the former into the latter. However, whereas
+there are many different event-driven styles, existing translators often apply
+ad-hoc rules which do not reflect this diversity. We analyse various
+control-flow and data-flow encodings in real-world event-driven code, and we
+observe that it is possible to generate any of these styles automatically from
+threaded code, by applying certain carefully chosen classical program
+transformations. In particular, we implement two of these transformations,
+lambda lifting and environments, in CPC, an extension of the C language for
+writing concurrent systems. Finally, we find out that, although rarely used in
+real-world programs because it is tedious to perform manually, lambda lifting
+yields better performance than environments in most of our benchmarks.

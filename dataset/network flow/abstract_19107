@@ -1,0 +1,13 @@
+Most work on influence maximization assumes network influence probabilities
+are given. The few papers that propose algorithms for learning these
+probabilities assume the availability of a batch of diffusion cascades and
+learn the probabilities offline. We tackle the real but difficult problems of
+(i)learning in influence probabilities and (ii) maximizing influence spread,
+when no cascades are available as input, by adopting a combinatorial
+multi-armed bandit (CMAB) paradigm. We formulate the above problems
+respectively as network exploration, i.e., minimizing the error in learned
+influence probabilities, and minimization of loss in spread from choosing
+suboptimal seed sets over the rounds of a CMAB game. We propose algorithms for
+both problems and establish bounds on their performance. Finally, we
+demonstrate the effectiveness and usefulness of the proposed algorithms via a
+comprehensive set of experiments over three real datasets.

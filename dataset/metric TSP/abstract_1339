@@ -1,0 +1,24 @@
+In recent years, considerable advances have been made in the study of
+properties of metric spaces in terms of their doubling dimension. This line of
+research has not only enhanced our understanding of finite metrics, but has
+also resulted in many algorithmic applications. However, we still do not
+understand the interaction between various graph-theoretic (topological)
+properties of graphs, and the doubling (geometric) properties of the
+shortest-path metrics induced by them. For instance, the following natural
+question suggests itself: \emph{given a finite doubling metric $(V,d)$, is
+there always an \underline{unweighted} graph $(V',E')$ with $V\subseteq V'$
+such that the shortest path metric $d'$ on $V'$ is still doubling, and which
+agrees with $d$ on $V$.} This is often useful, given that unweighted graphs are
+often easier to reason about.
+  We show that for any metric space $(V,d)$, there is an \emph{unweighted}
+graph $(V',E')$ with shortest-path metric $d':V'\times V' \to \R_{\geq 0}$ such
+that
+  -- for all $x,y \in V$, the distances $d(x,y) \leq d'(x,y) \leq (1+\eps)
+\cdot d(x,y)$, and
+  -- the doubling dimension for $d'$ is not much more than that of $d$, where
+this change depends only on $\e$ and not on the size of the graph.
+  We show a similar result when both $(V,d)$ and $(V',E')$ are restricted to be
+trees: this gives a simpler proof that doubling trees embed into constant
+dimensional Euclidean space with constant distortion. We also show that our
+results are tight in terms of the tradeoff between distortion and dimension
+blowup.

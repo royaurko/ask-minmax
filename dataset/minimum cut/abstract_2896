@@ -1,0 +1,25 @@
+The purpose of this article is to improve existing lower bounds on the
+chromatic number chi. Let mu_1,...,mu_n be the eigenvalues of the adjacency
+matrix sorted in non-increasing order.
+  First, we prove the lower bound chi >= 1 + max_m {sum_{i=1}^m mu_i / -
+sum_{i=1}^m mu_{n-i+1}} for m=1,...,n-1. This generalizes the Hoffman lower
+bound which only involves the maximum and minimum eigenvalues, i.e., the case
+$m=1$. We provide several examples for which the new bound exceeds the {\sc
+Hoffman} lower bound.
+  Second, we conjecture the lower bound chi >= 1 + S^+ / S^-, where S^+ and S^-
+are the sums of the squares of positive and negative eigenvalues, respectively.
+To corroborate this conjecture, we prove the weaker bound chi >= S^+/S^-. We
+show that the conjectured lower bound is tight for several families of graphs.
+We also performed various searches for a counter-example, but none was found.
+  Our proofs rely on a new technique of converting the adjacency matrix into
+the zero matrix by conjugating with unitary matrices and use majorization of
+spectra of self-adjoint matrices.
+  We also show that the above bounds are actually lower bounds on the
+normalized orthogonal rank of a graph, which is always less than or equal to
+the chromatic number. The normalized orthogonal rank is the minimum dimension
+making it possible to assign vectors with entries of modulus one to the
+vertices such that two such vectors are orthogonal if the corresponding
+vertices are connected.
+  All these bounds are also valid when we replace the adjacency matrix A by W *
+A where W is an arbitrary self-adjoint matrix and * denotes the Schur product,
+that is, entrywise product of W and A.

@@ -1,0 +1,10 @@
+The work presented in this paper aims at restricting the input parameter
+values of the semi-analytical model used in GALICS and MOMAF, so as to derive
+which parameters influence the most the results, e.g., star formation, feedback
+and halo recycling efficiencies, etc. Our approach is to proceed empirically:
+we run lots of simulations and derive the correct ranges of values. The
+computation time needed is so large, that we need to run on a grid of
+computers. Hence, we model GALICS and MOMAF execution time and output files
+size, and run the simulation using a grid middleware: DIET. All the complexity
+of accessing resources, scheduling simulations and managing data is harnessed
+by DIET and hidden behind a web portal accessible to the users.

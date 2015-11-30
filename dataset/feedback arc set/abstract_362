@@ -1,0 +1,22 @@
+We focus on the downlink of a cellular system, which corresponds to the bulk
+of the data transfer in such wireless systems. We address the problem of
+opportunistic multiuser scheduling under imperfect channel state information,
+by exploiting the memory inherent in the channel. In our setting, the channel
+between the base station and each user is modeled by a two-state Markov chain
+and the scheduled user sends back an ARQ feedback signal that arrives at the
+scheduler with a random delay that is i.i.d across users and time. The
+scheduler indirectly estimates the channel via accumulated delayed-ARQ feedback
+and uses this information to make scheduling decisions. We formulate a
+throughput maximization problem as a partially observable Markov decision
+process (POMDP). For the case of two users in the system, we show that a greedy
+policy is sum throughput optimal for any distribution on the ARQ feedback
+delay. For the case of more than two users, we prove that the greedy policy is
+suboptimal and demonstrate, via numerical studies, that it has near optimal
+performance. We show that the greedy policy can be implemented by a simple
+algorithm that does not require the statistics of the underlying Markov channel
+or the ARQ feedback delay, thus making it robust against errors in system
+parameter estimation. Establishing an equivalence between the two-user system
+and a genie-aided system, we obtain a simple closed form expression for the sum
+capacity of the Markov-modeled downlink. We further derive inner and outer
+bounds on the capacity region of the Markov-modeled downlink and tighten these
+bounds for special cases of the system parameters.

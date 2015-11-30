@@ -1,0 +1,19 @@
+This paper presents the design and analysis of parallel approximation
+algorithms for facility-location problems, including $\NC$ and $\RNC$
+algorithms for (metric) facility location, $k$-center, $k$-median, and
+$k$-means. These problems have received considerable attention during the past
+decades from the approximation algorithms community, concentrating primarily on
+improving the approximation guarantees. In this paper, we ask, is it possible
+to parallelize some of the beautiful results from the sequential setting?
+  Our starting point is a small, but diverse, subset of results in
+approximation algorithms for facility-location problems, with a primary goal of
+developing techniques for devising their efficient parallel counterparts. We
+focus on giving algorithms with low depth, near work efficiency (compared to
+the sequential versions), and low cache complexity. Common in algorithms we
+present is the idea that instead of picking only the most cost-effective
+element, we make room for parallelism by allowing a small slack (e.g., a
+$(1+\vareps)$ factor) in what can be selected---then, we use a clean-up step to
+ensure that the behavior does not deviate too much from the sequential steps.
+All the algorithms we developed are ``cache efficient'' in that the cache
+complexity is bounded by $O(w/B)$, where $w$ is the work in the EREW model and
+$B$ is the block size.

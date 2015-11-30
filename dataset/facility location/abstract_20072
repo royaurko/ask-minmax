@@ -1,0 +1,25 @@
+In most current debris disc models, the dynamical and the collisional
+evolutions are studied separately, with N-body and statistical codes,
+respectively, because of stringent computational constraints. We present here
+LIDT-DD, the first code able to mix both approaches in a fully self-consistent
+way. Our aim is for it to be generic enough so as to be applied to any
+astrophysical cases where we expect dynamics and collisions to be deeply
+interlocked with one another: planets in discs, violent massive breakups,
+destabilized planetesimal belts, exozodiacal discs, etc. The code takes its
+basic architecture from the LIDT3D algorithm developed by Charnoz et al.(2012)
+for protoplanetary discs, but has been strongly modified and updated in order
+to handle the very constraining specificities of debris discs physics:
+high-velocity fragmenting collisions, radiation-pressure affected orbits,
+absence of gas, etc. In LIDT-DD, grains of a given size at a given location in
+a disc are grouped into "super-particles", whose orbits are evolved with an
+N-body code and whose mutual collisions are individually tracked and treated
+using a particle-in-a-box prescription. To cope with the wide range of possible
+dynamics, tracers are sorted and regrouped into dynamical families depending on
+their orbits. The code retrieves the classical features known for debris discs,
+such as the particle size distributions in unperturbed discs, the outer radial
+density profiles (slope in -1.5) outside narrow collisionally active rings, and
+the depletion of small grains in "dynamically cold" discs. The potential of the
+new code is illustrated with the test case of the violent breakup of a massive
+planetesimal within a debris disc. The main potential future applications of
+the code are planet/disc interactions, and more generally any configurations
+where dynamics and collisions are expected to be intricately connected.

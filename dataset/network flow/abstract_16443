@@ -1,0 +1,17 @@
+In this paper we present three multiphase flow models suitable for the study
+of the dynamics of compressible dispersed multiphase flows. We adopt the
+Eulerian approach because we focus our attention to dispersed (concentration
+smaller than 0.001) and small particles (the Stokes number has to be smaller
+than 0.2). We apply these models to the compressible ($\text{Ma} = 0.2,\,0.5$)
+homogeneous and isotropic decaying turbulence inside a periodic
+three-dimensional box ($256^3$ cells) using a numerical solver based on the
+OpenFOAM$^{R}$ C++ libraries. In order to validate our simulations in the
+single-phase case we compare the energy spectrum obtained with our code with
+the one computed by an eighth order scheme getting a very good result (the
+relative error is very small $4*10^{-4}$). Moving to the bi-phase case,
+initially we insert inside the box an homogeneous distribution of particles
+leaving unchanged the initial velocity field. Because of the centrifugal force,
+turbulence induce particle preferential concentration and we study the
+evolution of the solid-phase density. Moreover, we do an {\em a-priori} test on
+the new sub-grid term of the multiphase equations comparing them with the
+standard sub-grid scale term of the Navier-Stokes equations.

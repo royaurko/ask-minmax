@@ -1,0 +1,13 @@
+A tree-based dictionary learning model is developed for joint analysis of
+imagery and associated text. The dictionary learning may be applied directly to
+the imagery from patches, or to general feature vectors extracted from patches
+or superpixels (using any existing method for image feature extraction). Each
+image is associated with a path through the tree (from root to a leaf), and
+each of the multiple patches in a given image is associated with one node in
+that path. Nodes near the tree root are shared between multiple paths,
+representing image characteristics that are common among different types of
+images. Moving toward the leaves, nodes become specialized, representing
+details in image classes. If available, words (text) are also jointly modeled,
+with a path-dependent probability over words. The tree structure is inferred
+via a nested Dirichlet process, and a retrospective stick-breaking sampler is
+used to infer the tree depth and width.

@@ -1,0 +1,15 @@
+Let $X_t$ solve the multidimensional It\^o's stochastic differential
+equations on $\R^d$ $$dX_t=b(t,X_t)dt+\sigma(t,X_t)dB_t$$ where
+$b:[0,\infty)\times\R^d\to\R^d$ is smooth in its two arguments,
+$\sigma:[0,\infty)\times\R^d\to\R^d\otimes\R^d$ is smooth with $\sigma(t,x)$
+being invertible for all $(t,x)\in[0,\infty)\times\R^d$, $B_t$ is
+$d$-dimensional Brownian motion. It is shown that, associated to a Girsanov
+transformation, the stochastic process
+$$\int^t_0\langle(\sigma^{-1}b)(s,X_s),dB_t\rangle+\frac{1}{2}\int^t_0|\sigma^{-1}b|^2(s,X_s)ds$$
+is a function of the arguments $t$ and $X_t$ (i.e., path-independent) if and
+only if $b=\sigma\sigma^\ast\nabla v$ for some scalar function
+$v:[0,\infty)\times\R^d\to\R$ satisfying the time-reversed KPZ type equation
+$$\frac{\partial}{\partial
+t}v(t,x)=-\frac{1}{2}\left[\left(Tr(\sigma\sigma^\ast\nabla^2v)\right)(t,x)
++|\sigma^\ast\nabla v|^2(t,x)\right].$$ The assertion also holds on a connected
+complete differential manifold.

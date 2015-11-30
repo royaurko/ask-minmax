@@ -1,0 +1,22 @@
+We study Semidefinite Programming, \SDPc relaxations for Sensor Network
+Localization, \SNLc with anchors and with noisy distance information. The main
+point of the paper is to view \SNL as a (nearest) Euclidean Distance Matrix,
+\EDM, completion problem and to show the advantages for using this latter, well
+studied model. We first show that the current popular \SDP relaxation is
+equivalent to known relaxations in the literature for \EDM completions. The
+existence of anchors in the problem is {\em not} special. The set of anchors
+simply corresponds to a given fixed clique for the graph of the \EDM problem.
+We next propose a method of projection when a large clique or a dense subgraph
+is identified in the underlying graph. This projection reduces the size, and
+improves the stability, of the relaxation. In addition, viewing the problem as
+an \EDM completion problem yields better low rank approximations for the low
+dimensional realizations. And, the projection/reduction procedure can be
+repeated for other given cliques of sensors or for sets of sensors, where many
+distances are known. Thus, further size reduction can be obtained.
+Optimality/duality conditions and a primal-dual interior-exterior path
+following algorithm are derived for the \SDP relaxations We discuss the
+relative stability and strength of two formulations and the corresponding
+algorithms that are used. In particular, we show that the quadratic formulation
+arising from the \SDP relaxation is better conditioned than the linearized
+form, that is used in the literature and that arises from applying a Schur
+complement.

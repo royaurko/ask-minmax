@@ -1,0 +1,11 @@
+We consider the problem of reconstructing a low-rank matrix from a small
+subset of its entries. In this paper, we describe the implementation of an
+efficient algorithm called OptSpace, based on singular value decomposition
+followed by local manifold optimization, for solving the low-rank matrix
+completion problem. It has been shown that if the number of revealed entries is
+large enough, the output of singular value decomposition gives a good estimate
+for the original matrix, so that local optimization reconstructs the correct
+matrix with high probability. We present numerical results which show that this
+algorithm can reconstruct the low rank matrix exactly from a very small subset
+of its entries. We further study the robustness of the algorithm with respect
+to noise, and its performance on actual collaborative filtering datasets.

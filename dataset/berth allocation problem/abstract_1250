@@ -1,0 +1,14 @@
+It is today accepted that matrix factorization models allow a high quality of
+rating prediction in recommender systems. However, a major drawback of matrix
+factorization is its static nature that results in a progressive declining of
+the accuracy of the predictions after each factorization. This is due to the
+fact that the new obtained ratings are not taken into account until a new
+factorization is computed, which can not be done very often because of the high
+cost of matrix factorization.
+  In this paper, aiming at improving the accuracy of recommender systems, we
+propose a cluster-based matrix factorization technique that enables online
+integration of new ratings. Thus, we significantly enhance the obtained
+predictions between two matrix factorizations. We use finer-grained user biases
+by clustering similar items into groups, and allocating in these groups a bias
+to each user. The experiments we did on large datasets demonstrated the
+efficiency of our approach.

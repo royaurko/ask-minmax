@@ -1,0 +1,19 @@
+We consider the problem of constructing a communication infrastructure from
+scratch, for a collection of identical wireless nodes. Combinatorially, this
+means a) finding a set of links that form a strongly connected spanning graph
+on a set of $n$ points in the plane, and b) scheduling it efficiently in the
+SINR model of interference. The nodes must converge on a solution in a
+distributed manner, having no means of communication beyond the sole wireless
+channel.
+  We give distributed connectivity algorithms that run in time $O(poly(\log
+\Delta, \log n))$, where $\Delta$ is the ratio between the longest and shortest
+distances among nodes. Given that algorithm without prior knowledge of the
+instance are essentially limited to using uniform power, this is close to best
+possible. Our primary aim, however, is to find efficient structures, measured
+in the number of slots used in the final schedule of the links. Our main result
+is algorithms that match the efficiency of centralized solutions. Specifically,
+the networks can be scheduled in $O(\log n)$ slots using (arbitrary) power
+control, and in $O(\log n (\log\log \Delta + \log n))$ slots using a simple
+oblivious power scheme. Additionally, the networks have the desirable
+properties that the latency of a converge-cast and of any node-to-node
+communication is optimal $O(\log n)$ time.

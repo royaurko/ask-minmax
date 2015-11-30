@@ -1,0 +1,26 @@
+We study the problem of matrix Lie algebra conjugacy. Lie algebras arise
+centrally in areas as diverse as differential equations, particle physics,
+group theory, and the Mulmuley--Sohoni Geometric Complexity Theory program. A
+matrix Lie algebra is a set L of matrices such that $A, B\in L$ implies $AB -
+BA \in L$. Two matrix Lie algebras are conjugate if there is an invertible
+matrix $M$ such that $L_1 = M L_2 M^{-1}$.
+  We show that certain cases of Lie algebra conjugacy are equivalent to graph
+isomorphism. On the other hand, we give polynomial-time algorithms for other
+cases of Lie algebra conjugacy, which allow us to essentially derandomize a
+recent result of Kayal on affine equivalence of polynomials. Affine equivalence
+is related to many complexity problems such as factoring integers, graph
+isomorphism, matrix multiplication, and permanent versus determinant.
+  Specifically, we show:
+  Abelian Lie algebra conjugacy is equivalent to the code equivalence problem,
+and hence is as hard as graph isomorphism.
+  Abelian Lie algebra conjugacy of $n \times n$ matrices can be solved in
+poly(n) time when the Lie algebras have dimension O(1).
+  Semisimple Lie algebra conjugacy is equivalent to graph isomorphism. A Lie
+algebra is semisimple if it is a direct sum of simple Lie algebras.
+  Semisimple Lie algebra conjugacy of $n \times n$ matrices can be solved in
+polynomial time when the Lie algebras consist of only $O(\log n)$ simple direct
+summands.
+  Conjugacy of completely reducible Lie algebras---that is, a direct sum of an
+abelian and a semisimple Lie algebra---can be solved in polynomial time when
+the abelian part has dimension O(1) and the semisimple part has $O(\log n)$
+simple direct summands.

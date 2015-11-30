@@ -1,0 +1,18 @@
+This work considers the multiple-access multicast error-correction scenario
+over a packetized network with $z$ malicious edge adversaries. The network has
+min-cut $m$ and packets of length $\ell$, and each sink demands all information
+from the set of sources $\sources$. The capacity region is characterized for
+both a "side-channel" model (where sources and sinks share some random bits
+that are secret from the adversary) and an "omniscient" adversarial model
+(where no limitations on the adversary's knowledge are assumed). In the
+"side-channel" adversarial model, the use of a secret channel allows higher
+rates to be achieved compared to the "omniscient" adversarial model, and a
+polynomial-complexity capacity-achieving code is provided. For the "omniscient"
+adversarial model, two capacity-achieving constructions are given: the first is
+based on random subspace code design and has complexity exponential in $\ell
+m$, while the second uses a novel multiple-field-extension technique and has
+$O(\ell m^{|\sources|})$ complexity, which is polynomial in the network size.
+Our code constructions are "end-to-end" in that all nodes except the sources
+and sinks are oblivious to the adversaries and may simply implement predesigned
+linear network codes (random or otherwise). Also, the sources act independently
+without knowledge of the data from other sources.

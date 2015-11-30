@@ -1,0 +1,10 @@
+Homotopy methods to solve polynomial systems are well suited for parallel
+computing because the solution paths defined by the homotopy can be tracked
+independently. Both the static and dynamic load balancing models are
+implemented in C with MPI, adapting PHCpack written in Ada using gcc, and
+tested on academic benchmarks and mechanical applications. We studied the
+parallelization of Pieri homotopies to compute all feedback laws to control
+linear systems. To distribute the workload, we mapped the poset onto a tree. As
+the dimensions of the Pieri homotopies grow incrementally from the root to the
+leaves in the tree, we found the Pieri homotopies well suited for parallel
+computing.

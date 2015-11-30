@@ -1,0 +1,22 @@
+Conventional speaker localization algorithms, based merely on the received
+microphone signals, are often sensitive to adverse conditions, such as: high
+reverberation or low signal to noise ratio (SNR). In some scenarios, e.g. in
+meeting rooms or cars, it can be assumed that the source position is confined
+to a predefined area, and the acoustic parameters of the environment are
+approximately fixed. Such scenarios give rise to the assumption that the
+acoustic samples from the region of interest have a distinct geometrical
+structure. In this paper, we show that the high dimensional acoustic samples
+indeed lie on a low dimensional manifold and can be embedded into a low
+dimensional space. Motivated by this result, we propose a semi-supervised
+source localization algorithm which recovers the inverse mapping between the
+acoustic samples and their corresponding locations. The idea is to use an
+optimization framework based on manifold regularization, that involves
+smoothness constraints of possible solutions with respect to the manifold. The
+proposed algorithm, termed Manifold Regularization for Localization (MRL), is
+implemented in an adaptive manner. The initialization is conducted with only
+few labelled samples attached with their respective source locations, and then
+the system is gradually adapted as new unlabelled samples (with unknown source
+locations) are received. Experimental results show superior localization
+performance when compared with a recently presented algorithm based on a
+manifold learning approach and with the generalized cross-correlation (GCC)
+algorithm as a baseline.

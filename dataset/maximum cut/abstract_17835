@@ -1,0 +1,19 @@
+Whole-arm tactile sensing enables a robot to sense properties of contact
+across its entire arm. By using this large sensing area, a robot has the
+potential to acquire useful information from incidental contact that occurs
+while performing a task. Within this paper, we demonstrate that data-driven
+methods can be used to infer mechanical properties of objects from incidental
+contact with a robot's forearm. We collected data from a tactile-sensing
+forearm as it made contact with various objects during a simple reaching
+motion. We then used hidden Markov models (HMMs) to infer two object properties
+(rigid vs. soft and fixed vs. movable) based on low-dimensional features of
+time-varying tactile sensor data (maximum force, contact area, and contact
+motion). A key issue is the extent to which data-driven methods can generalize
+to robot actions that differ from those used during training. To investigate
+this issue, we developed an idealized mechanical model of a robot with a
+compliant joint making contact with an object. This model provides intuition
+for the classification problem. We also conducted tests in which we varied the
+robot arm's velocity and joint stiffness. We found that, in contrast to our
+previous methods [1], multivariate HMMs achieved high cross-validation accuracy
+and successfully generalized what they had learned to new robot motions with
+distinct velocities and joint stiffnesses.

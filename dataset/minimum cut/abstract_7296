@@ -1,0 +1,21 @@
+We develop a method to estimate the power spectrum of a stochastic process on
+the sphere from data of limited geographical coverage. Our approach can be
+interpreted either as estimating the global power spectrum of a stationary
+process when only a portion of the data are available for analysis, or
+estimating the power spectrum from local data under the assumption that the
+data are locally stationary in a specified region. Restricting a global
+function to a spatial subdomain -- whether by necessity or by design -- is a
+windowing operation, and an equation like a convolution in the spectral domain
+relates the expected value of the windowed power spectrum to the underlying
+global power spectrum and the known power spectrum of the localization window.
+The best windows for the purpose of localized spectral analysis have their
+energy concentrated in the region of interest while possessing the smallest
+effective bandwidth as possible. Solving an optimization problem in the sense
+of Slepian (1960) yields a family of orthogonal windows of diminishing
+spatiospectral localization, the best concentrated of which we propose to use
+to form a weighted multitaper spectrum estimate in the sense of Thomson (1982).
+Such an estimate is both more representative of the target region and reduces
+the estimation variance when compared to estimates formed by any single
+bandlimited window. We describe how the weights applied to the individual
+spectral estimates in forming the multitaper estimate can be chosen such that
+the variance of the estimate is minimized.

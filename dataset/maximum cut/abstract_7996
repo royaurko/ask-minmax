@@ -1,0 +1,22 @@
+Pagination - the process of determining where to break an article across
+pages in a multi-article layout is a common layout challenge for most
+commercially printed newspapers and magazines. To date, no one has created an
+algorithm that determines a minimal pagination break point based on the content
+of the article. Existing approaches for automatic multi-article layout focus
+exclusively on maximizing content (number of articles) and optimizing aesthetic
+presentation (e.g., spacing between articles). However, disregarding the
+semantic information within the article can lead to overly aggressive cutting,
+thereby eliminating key content and potentially confusing the reader, or
+setting too generous of a break point, thereby leaving in superfluous content
+and making automatic layout more difficult. This is one of the remaining
+challenges on the path from manual layouts to fully automated processes that
+still ensure article content quality. In this work, we present a new approach
+to calculating a document minimal break point for the task of pagination. Our
+approach uses a statistical language model to predict minimal break points
+based on the semantic content of an article. We then compare 4 novel candidate
+approaches, and 4 baselines (currently in use by layout algorithms). Results
+from this experiment show that one of our approaches strongly outperforms the
+baselines and alternatives. Results from a second study suggest that humans are
+not able to agree on a single "best" break point. Therefore, this work shows
+that a semantic-based lower bound break point prediction is necessary for ideal
+automated document synthesis within a real-world context.

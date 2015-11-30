@@ -1,0 +1,20 @@
+The art gallery problem enquires about the least number of guards that are
+sufficient to ensure that an art gallery, represented by a polygon $P$, is
+fully guarded. In 1998, the problems of finding the minimum number of point
+guards, vertex guards, and edge guards required to guard $P$ were shown to be
+APX-hard by Eidenbenz, Widmayer and Stamm. In 1987, Ghosh presented
+approximation algorithms for vertex guards and edge guards that achieved a
+ratio of $\mathcal{O}(\log n)$, which was improved upto $\mathcal{O}(\log\log
+OPT)$ by King and Kirkpatrick in 2011. It has been conjectured that
+constant-factor approximation algorithms exist for these problems. We settle
+the conjecture for the special class of polygons that are weakly visible from
+an edge and contain no holes by presenting a 6-approximation algorithm for
+finding the minimum number of vertex guards that runs in $\mathcal{O}(n^2)$
+time. On the other hand, for weak visibility polygons with holes, we present a
+reduction from the Set Cover problem to show that there cannot exist a
+polynomial time algorithm for the vertex guard problem with an approximation
+ratio better than $((1 - \epsilon)/12)\ln n$ for any $\epsilon>0$, unless NP=P.
+We also show that, for the special class of polygons without holes that are
+orthogonal as well as weakly visible from an edge, the approximation ratio can
+be improved to 3. Finally, we consider the point guard problem and show that it
+is NP-hard in the case of polygons weakly visible from an edge.

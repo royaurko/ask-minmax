@@ -1,0 +1,15 @@
+Consider the following cascading process on a simple undirected graph
+$G(V,E)$ with diameter $\Delta$. In round zero, a set $S\subseteq V$ of
+vertices, called the seeds, are active. In round $i+1,$ $i\in\mathbb{N},$ a
+non-isolated vertex is activated if at least a $\rho\in(\,0,1\,]$ fraction of
+its neighbors are active in round $i$; it is deactivated otherwise. For
+$k\in\mathbb{N},$ let $\text{min-seed}^{(k)}(G,\rho)$ be the minimum number of
+seeds needed to activate all vertices in or before round $k$. This paper
+derives upper bounds on $\text{min-seed}^{(k)}(G,\rho)$. In particular, if $G$
+is connected and there exist constants $C>0$ and $\gamma>2$ such that the
+fraction of degree-$k$ vertices in $G$ is at most $C/k^\gamma$ for all
+$k\in\mathbb{Z}^+,$ then
+$\text{min-seed}^{(\Delta)}(G,\rho)=O(\lceil\rho^{\gamma-1}\,|\,V\,|\rceil)$.
+Furthermore, for $n\in\mathbb{Z}^+,$ $p=\Omega((\ln{(e/\rho)})/(\rho n))$ and
+with probability $1-\exp{(-n^{\Omega(1)})}$ over the Erd\H{o}s-R\'enyi random
+graphs $G(n,p),$ $\text{min-seed}^{(1)}(G(n,p),\rho)=O(\rho n)$.

@@ -1,0 +1,14 @@
+We propose a novel algorithm for optimizing multivariate linear threshold
+functions as split functions of decision trees to create improved Random Forest
+classifiers. Standard tree induction methods resort to sampling and exhaustive
+search to find good univariate split functions. In contrast, our method
+computes a linear combination of the features at each node, and optimizes the
+parameters of the linear combination (oblique) split functions by adopting a
+variant of latent variable SVM formulation. We develop a convex-concave upper
+bound on the classification loss for a one-level decision tree, and optimize
+the bound by stochastic gradient descent at each internal node of the tree.
+Forests of up to 1000 Continuously Optimized Oblique (CO2) decision trees are
+created, which significantly outperform Random Forest with univariate splits
+and previous techniques for constructing oblique trees. Experimental results
+are reported on multi-class classification benchmarks and on Labeled Faces in
+the Wild (LFW) dataset.

@@ -1,0 +1,25 @@
+We consider vehicle-routing problems (VRPs) that incorporate the notion of
+{\em regret} of a client, which is a measure of the waiting time of a client
+relative to its shortest-path distance from the depot. Formally, we consider
+both the additive and multiplicative versions of, what we call, the {\em
+regret-bounded vehicle routing problem} (RVRP). In these problems, we are given
+an undirected complete graph $G=(\{r\}\cup V,E)$ on $n$ nodes with a
+distinguished root (depot) node $r$, edge costs $\{c_{uv}\}$ that form a
+metric, and a regret bound $R$. Given a path $P$ rooted at $r$ and a node $v\in
+P$, let $c_P(v)$ be the distance from $r$ to $v$ along $P$. The goal is to find
+the fewest number of paths rooted at $r$ that cover all the nodes so that for
+every node $v$ covered by (say) path $P$: (i) its additive regret
+$c_P(v)-c_{rv}$, with respect to $P$ is at most $R$ in {\em additive-RVRP}; or
+(ii) its multiplicative regret, $c_P(c)/c_{rv}$, with respect to $P$ is at most
+$R$ in {\em multiplicative-RVRP}.
+  Our main result is the {\em first} constant-factor approximation algorithm
+for additive-RVRP by devising rounding techniques for a natural {\em
+configuration-style LP}. This is a substantial improvement over the
+previous-best $O(\log n)$-approximation. Additive-RVRP turns out be a rather
+central vehicle-routing problem, whose study reveals insights into a variety of
+other regret-related problems as well as the classical {\em
+distance-constrained VRP} ({DVRP}). We obtain approximation ratios of
+$O\bigl(\log(\frac{R}{R-1})\bigr)$ for multiplicative-RVRP, and
+$O\bigl(\min\bigl\{\mathit{OPT},\frac{\log D}{\log\log D}\bigr\}\bigr)$ for
+DVRP with distance bound $D$ via reductions to additive-RVRP; the latter
+improves upon the previous-best approximation for DVRP.

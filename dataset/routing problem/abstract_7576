@@ -1,0 +1,19 @@
+We address the inverse problem that arises in compressed sensing of a
+low-rank matrix. Our approach is to pose the inverse problem as an
+approximation problem with a specified target rank of the solution. A simple
+search over the target rank then provides the minimum rank solution satisfying
+a prescribed data approximation bound. We propose an atomic decomposition that
+provides an analogy between parsimonious representations of a sparse vector and
+a low-rank matrix. Efficient greedy algorithms to solve the inverse problem for
+the vector case are extended to the matrix case through this atomic
+decomposition. In particular, we propose an efficient and guaranteed algorithm
+named ADMiRA that extends CoSaMP, its analogue for the vector case. The
+performance guarantee is given in terms of the rank-restricted isometry
+property and bounds both the number of iterations and the error in the
+approximate solution for the general case where the solution is approximately
+low-rank and the measurements are noisy. With a sparse measurement operator
+such as the one arising in the matrix completion problem, the computation in
+ADMiRA is linear in the number of measurements. The numerical experiments for
+the matrix completion problem show that, although the measurement operator in
+this case does not satisfy the rank-restricted isometry property, ADMiRA is a
+competitive algorithm for matrix completion.

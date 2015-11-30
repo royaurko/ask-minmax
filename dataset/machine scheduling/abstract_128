@@ -1,0 +1,16 @@
+Many computer vision and medical imaging problems are faced with learning
+from large-scale datasets, with millions of observations and features. In this
+paper we propose a novel efficient learning scheme that tightens a sparsity
+constraint by gradually removing variables based on a criterion and a schedule.
+The attractive fact that the problem size keeps dropping throughout the
+iterations makes it particularly suitable for big data learning. Our approach
+applies generically to the optimization of any differentiable loss function,
+and finds applications in regression, classification and ranking. The resultant
+algorithms build variable screening into estimation and are extremely simple to
+implement. We provide theoretical guarantees of convergence and selection
+consistency. In addition, one dimensional piecewise linear response functions
+are used to account for nonlinearity and a second order prior is imposed on
+these functions to avoid overfitting. Experiments on real and synthetic data
+show that the proposed method compares very well with other state of the art
+methods in regression, classification and ranking while being computationally
+very efficient and scalable.

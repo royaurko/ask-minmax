@@ -1,0 +1,21 @@
+Accurate state estimation is of paramount importance to maintain the power
+system operating in a secure and efficient state. The recently identified
+coordinated data injection attacks to meter measurements can bypass the current
+security system and introduce errors to the state estimates. The conventional
+wisdom to mitigate such attacks is by securing meter measurements to evade
+malicious injections. In this paper, we provide a novel alternative to defend
+against false-data injection attacks using covert power network topological
+information. By keeping the exact reactance of a set of transmission lines from
+attackers, no false data injection attack can be launched to compromise any set
+of state variables. We first investigate from the attackers' perspective the
+necessary condition to perform injection attack. Based on the arguments, we
+characterize the optimal protection problem, which protects the state variables
+with minimum cost, as a well-studied Steiner tree problem in a graph. Besides,
+we also propose a mixed defending strategy that jointly considers the use of
+covert topological information and secure meter measurements when either method
+alone is costly or unable to achieve the protection objective. A mixed integer
+linear programming (MILP) formulation is introduced to obtain the optimal mixed
+defending strategy. To tackle the NP-hardness of the problem, a tree
+pruning-based heuristic is further presented to produce an approximate solution
+in polynomial time. The advantageous performance of the proposed defending
+mechanisms is verified in IEEE standard power system testcases.

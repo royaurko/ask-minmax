@@ -1,0 +1,16 @@
+In random-access networks, such as the IEEE 802.11 network, different users
+may transmit their packets simultaneously, resulting in packet collisions.
+Traditionally, the collided packets are simply discarded. To improve
+performance, advanced signal processing techniques can be applied to extract
+the individual packets from the collided signals. Prior work of ours has shown
+that the symbol misalignment among the collided packets can be exploited to
+improve the likelihood of successfully extracting the individual packets.
+However, the failure rate is still unacceptably high. This paper investigates
+how channel coding can be used to reduce the failure rate. We propose and
+investigate a decoding scheme that incorporates the exploitation of the
+aforementioned symbol misalignment into the channel decoding process. This is a
+fine-grained integration at the symbol level. In particular, collision
+resolution and channel decoding are applied in an integrated manner. Simulation
+results indicate that our method outperforms other schemes, including the
+straightforward method in which collision resolution and channel coding are
+applied separately.

@@ -1,0 +1,26 @@
+We present a new SED-fitting based routine for redshift determination that is
+optimised for mid-infrared (MIR) low-resolution spectroscopy. Its flexible
+template scaling increases the sensitivity to slope changes and small scale
+features in the spectrum, while a new selection algorithm called Maximum
+Combined Pseudo-Likelihood (MCPL) provides increased accuracy and a lower
+number of outliers compared to the standard maximum-likelihood (ML) approach.
+Unlike ML, MCPL searches for local (instead of absolute) maxima of a
+'pseudo-likelihood' (PL) function, and combines results obtained for all the
+templates in the library to weed out spurious redshift solutions. The
+capabilities of MCPL are demonstrated by comparing its results to those of
+regular ML and to the optical spectroscopic redshifts of a sample of 491
+Spitzer/IRS spectra from sources at 0<z<3.7. MCPL achieves a redshift accuracy
+dz/(1+z)<0.005 for 78% of the galaxies in the sample compared to 68% for ML.
+The rate of outliers (dz/(1+z)>0.02) is 14% for MCPL and 22% for ML. chi^2
+values for ML solutions are found to correlate with the SNR of the spectra, but
+not with redshift accuracy. By contrast, the peak value of the normalised
+combined PL (gamma) is found to provide a good indication on the reliability of
+the MCPL solution for individual sources. The accuracy and reliability of the
+redshifts depends strongly on the MIR SED. Sources with significant polycyclic
+aromatic hydrocarbon emission obtain much better results compared to sources
+dominated by AGN continuum. Nevertheless, for a given gamma the frequency of
+accurate solutions and outliers is largely independent on their SED type. This
+reliability indicator for MCPL solutions allows to select subsamples with
+highly reliable redshifts. In particular, a gamma>0.15 threshold retains 79% of
+the sources with dz/(1+z)<0.005 while reducing the outlier rate to 3.8%
+(abridged).

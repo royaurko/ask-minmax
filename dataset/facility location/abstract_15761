@@ -1,0 +1,23 @@
+A basis under which a given set of realizations of a stochastic process can
+be represented most sparsely (the so-called best sparsifying basis (BSB)) and
+the one under which such a set becomes as less statistically dependent as
+possible (the so-called least statistically-dependent basis (LSDB)) are
+important for data compression and have generated interests among computational
+neuroscientists as well as applied mathematicians. Here we consider these bases
+for a particularly simple stochastic process called ``generalized spike
+process'', which puts a single spike--whose amplitude is sampled from the
+standard normal distribution--at a random location in the zero vector of length
+$\ndim$ for each realization.
+  Unlike the ``simple spike process'' which we dealt with in our previous paper
+and whose amplitude is constant, we need to consider the kurtosis-maximizing
+basis (KMB) instead of the LSDB due to the difficulty of evaluating
+differential entropy and mutual information of the generalized spike process.
+By computing the marginal densities and moments, we prove that: 1) the BSB and
+the KMB selects the standard basis if we restrict our basis search within all
+possible orthonormal bases in ${\mathbb R}^n$; 2) if we extend our basis search
+to all possible volume-preserving invertible linear transformations, then the
+BSB exists and is again the standard basis whereas the KMB does not exist.
+Thus, the KMB is rather sensitive to the orthonormality of the transformations
+under consideration whereas the BSB is insensitive to that. Our results once
+again support the preference of the BSB over the LSDB/KMB for data compression
+applications as our previous work did.

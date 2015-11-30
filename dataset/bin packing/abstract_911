@@ -1,0 +1,10 @@
+Packing several characters into one computer word is a simple and natural way
+to compress the representation of a string and to speed up its processing.
+Exploiting this idea, we propose an index for a packed string, based on a {\em
+sparse suffix tree} \cite{KU-96} with appropriately defined suffix links.
+Assuming, under the standard unit-cost RAM model, that a word can store up to
+$\log_{\sigma}n$ characters ($\sigma$ the alphabet size), our index takes
+$O(n/\log_{\sigma}n)$ space, i.e. the same space as the packed string itself.
+The resulting pattern matching algorithm runs in time $O(m+r^2+r\cdot occ)$,
+where $m$ is the length of the pattern, $r$ is the actual number of characters
+stored in a word and $occ$ is the number of pattern occurrences.

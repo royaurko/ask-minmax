@@ -1,0 +1,15 @@
+Model-based parser generators decouple language specification from language
+processing. The model-driven approach avoids the limitations that conventional
+parser generators impose on the language designer. Conventional tools require
+the designed language grammar to conform to the specific kind of grammar
+supported by the particular parser generator (being LL and LR parser generators
+the most common). Model-driven parser generators, like ModelCC, do not require
+a grammar specification, since that grammar can be automatically derived from
+the language model and, if needed, adapted to conform to the requirements of
+the given kind of parser, all of this without interfering with the conceptual
+design of the language and its associated applications. Moreover, model-driven
+tools such as ModelCC are able to automatically resolve references between
+language elements, hence producing abstract syntax graphs instead of abstract
+syntax trees as the result of the parsing process. Such graphs are not confined
+to directed acyclic graphs and they can contain cycles, since ModelCC supports
+anaphoric, cataphoric, and recursive references.

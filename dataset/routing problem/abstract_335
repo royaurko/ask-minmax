@@ -1,0 +1,12 @@
+A memoryless routing algorithm is one in which the decision about the next
+edge on the route to a vertex t for a packet currently located at vertex v is
+made based only on the coordinates of v, t, and the neighbourhood, N(v), of v.
+The current paper explores the limitations of such algorithms by showing that,
+for any (randomized) memoryless routing algorithm A, there exists a convex
+subdivision on which A takes Omega(n^2) expected time to route a message
+between some pair of vertices. Since this lower bound is matched by a random
+walk, this result implies that the geometric information available in convex
+subdivisions is not helpful for this class of routing algorithms. The current
+paper also shows the existence of triangulations for which the Random-Compass
+algorithm proposed by Bose etal (2002,2004) requires 2^{\Omega(n)} time to
+route between some pair of vertices.

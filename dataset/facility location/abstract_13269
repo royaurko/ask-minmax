@@ -1,0 +1,17 @@
+In real-time trajectory planning for unmanned vehicles, on-board sensors,
+radars and other instruments are used to collect information on possible
+obstacles to be avoided and pathways to be followed. Since, in practice,
+observations of the sensors have measurement errors, the stochasticity of the
+data has to be incorporated into the models. In this paper, we consider using a
+genetic algorithm for the constrained optimization problem of finding the
+trajectory with minimum length between two locations, avoiding the obstacles on
+the way. To incorporate the variability of the sensor readings, we propose a
+more general framework, where the feasible regions of the genetic algorithm are
+stochastic. In this way, the probability that a possible solution of the search
+space, say x, is feasible can be derived from the random observations of
+obstacles and pathways, creating a real-time data learning algorithm. By
+building a confidence region from the observed data such that its border
+intersects with the solution point x, the level of the confidence region
+defines the probability that x is feasible. We propose using a smooth penalty
+function based on the Gaussian distribution, facilitating the borders of the
+feasible regions to be reached by the algorithm.

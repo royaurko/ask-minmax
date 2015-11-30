@@ -1,0 +1,17 @@
+In many large scale distributed systems and on the web, agents need to
+interact with other unknown agents to carry out some tasks or transactions. The
+ability to reason about and assess the potential risks in carrying out such
+transactions is essential for providing a safe and reliable environment. A
+traditional approach to reason about the trustworthiness of a transaction is to
+determine the trustworthiness of the specific agent involved, derived from the
+history of its behavior. As a departure from such traditional trust models, we
+propose a generic, machine learning approach based trust framework where an
+agent uses its own previous transactions (with other agents) to build a
+knowledge base, and utilize this to assess the trustworthiness of a transaction
+based on associated features, which are capable of distinguishing successful
+transactions from unsuccessful ones. These features are harnessed using
+appropriate machine learning algorithms to extract relationships between the
+potential transaction and previous transactions. The trace driven experiments
+using real auction dataset show that this approach provides good accuracy and
+is highly efficient compared to other trust mechanisms, especially when
+historical information of the specific agent is rare, incomplete or inaccurate.

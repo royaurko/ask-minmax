@@ -1,0 +1,20 @@
+Wireless sensor networks are often modeled in terms of a dense deployment of
+smart sensor nodes in a two-dimensional region. Give a node deployment, the
+\emph{critical geometric graph (CGG)} over these locations (i.e., the connected
+\emph{geometric graph (GG)} with the smallest radius) is a useful structure
+since it provides the most accurate proportionality between hop-count and
+Euclidean distance. Hence, it can be used for GPS-free node localisation as
+well as minimum distance packet forwarding. It is also known to be
+asymptotically optimal for network transport capacity and power efficiency. In
+this context, we propose DISCRIT, a distributed and asynchronous algorithm for
+obtaining an approximation of the CGG on the node locations. The algorithm does
+not require the knowledge of node locations or internode distances, nor does it
+require pair-wise RSSI (Received Signal Strength Indication) measurements to be
+made. Instead, the algorithm makes use of successful Hello receipt counts
+(obtained during a Hello-protocol-based neighbour discovery process) as edge
+weights, along with a simple distributed min-max computation algorithm. In this
+paper, we first provide the theory for justifying the use of the above edge
+weights. Then we provide extensive simulation results to demonstrate the
+efficacy of DISCRIT in obtaining an approximation of the CGG. Finally, we show
+how the CGG obtained from DISCRIT performs when used in certain network
+self-organisation algorithms.

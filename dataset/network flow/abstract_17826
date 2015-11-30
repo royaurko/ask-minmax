@@ -1,0 +1,24 @@
+We consider the problem of real-time data dissemination in wireless sensor
+networks, in which data are associated with deadlines and it is desired for
+data to reach the sink(s) by their deadlines. To this end, existing real-time
+data dissemination work have developed packet scheduling schemes that
+prioritize packets according to their deadlines. In this paper, we first
+demonstrate that not only the scheduling discipline but also the routing
+protocol has a significant impact on the success of real-time sensor data
+dissemination. We show that the shortest path routing using the minimum number
+of hops leads to considerably better performance than Geographical Forwarding,
+which has often been used in existing real-time data dissemination work. We
+also observe that packet prioritization by itself is not enough for real-time
+data dissemination, since many high priority packets may simultaneously contend
+for network resources, deteriorating the network performance. Instead,
+real-time packets could be judiciously delayed to avoid severe contention as
+long as their deadlines can be met. Based on this observation, we propose a
+Just-in-Time Scheduling (JiTS) algorithm for scheduling data transmissions to
+alleviate the shortcomings of the existing solutions. We explore several
+policies for non-uniformly delaying data at different intermediate nodes to
+account for the higher expected contention as the packet gets closer to the
+sink(s). By an extensive simulation study, we demonstrate that JiTS can
+significantly improve the deadline miss ratio and packet drop ratio compared to
+existing approaches in various situations. Notably, JiTS improves the
+performance requiring neither lower layer support nor synchronization among the
+sensor nodes.

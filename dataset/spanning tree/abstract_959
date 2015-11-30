@@ -1,0 +1,23 @@
+As other fundamental programming abstractions in energy-efficient computing,
+search trees are expected to support both high parallelism and data locality.
+However, existing highly-concurrent search trees such as red-black trees and
+AVL trees do not consider data locality while existing locality-aware search
+trees such as those based on the van Emde Boas layout (vEB-based trees), poorly
+support concurrent (update) operations.
+  This paper presents DeltaTree, a practical locality-aware concurrent search
+tree that combines both locality-optimisation techniques from vEB-based trees
+and concurrency-optimisation techniques from non-blocking highly-concurrent
+search trees. DeltaTree is a $k$-ary leaf-oriented tree of DeltaNodes in which
+each DeltaNode is a size-fixed tree-container with the van Emde Boas layout.
+The expected memory transfer costs of DeltaTree's Search, Insert, and Delete
+operations are $O(\log_B N)$, where $N, B$ are the tree size and the unknown
+memory block size in the ideal cache model, respectively. DeltaTree's Search
+operation is wait-free, providing prioritised lanes for Search operations, the
+dominant operation in search trees. Its Insert and {\em Delete} operations are
+non-blocking to other Search, Insert, and Delete operations, but they may be
+occasionally blocked by maintenance operations that are sometimes triggered to
+keep DeltaTree in good shape. Our experimental evaluation using the latest
+implementation of AVL, red-black, and speculation friendly trees from the
+Synchrobench benchmark has shown that DeltaTree is up to 5 times faster than
+all of the three concurrent search trees for searching operations and up to 1.6
+times faster for update operations when the update contention is not too high.

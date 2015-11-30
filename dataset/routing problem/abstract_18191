@@ -1,0 +1,11 @@
+We study the problem of non-preemptively scheduling $n$ jobs, each job $j$
+with a release time $t_j$, a deadline $d_j$, and a processing time $p_j$, on a
+minimum number $m$ of parallel identical machines. Cieliebak et al. (2004)
+considered the two constraints $|d_j-t_j|\leq \lambda p_j$ and $|d_j-t_j|\leq
+p_j +\sigma$ and showed the problem to be NP-hard for any $\lambda>1$ and for
+any $\sigma\geq 2$. We complement their results by parameterized complexity
+studies: we show that, for any $\lambda>1$, the problem remains weakly NP-hard
+even for $m=2$ and strongly W[1]-hard parameterized by $m$. We present a
+pseudo-polynomial-time algorithm for constant $m$ and $\lambda$ and a
+fixed-parameter tractability result for the parameter $m$ combined with
+$\sigma$.

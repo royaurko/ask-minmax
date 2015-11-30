@@ -1,0 +1,13 @@
+We study the use of the hybridizable discontinuous Galerkin (HDG) method for
+numerically solving fractional diffusion equations of order $-\alpha$ with
+$-1<\alpha<0$. For exact time-marching, we derive optimal algebraic error
+estimates {assuming} that the exact solution is sufficiently regular. Thus, if
+for each time $t \in [0,T]$ the approximations are taken to be piecewise
+polynomials of degree $k\ge0$ on the spatial domain~$\Omega$, the
+approximations to $u$ in the $L_\infty\bigr(0,T;L_2(\Omega)\bigr)$-norm and to
+$\nabla u$ in the $L_\infty\bigr(0,T;{\bf L}_2(\Omega)\bigr)$-norm are proven
+to converge with the rate $h^{k+1}$, where $h$ is the maximum diameter of the
+elements of the mesh. Moreover, for $k\ge1$ and quasi-uniform meshes, we obtain
+a superconvergence result which allows us to compute, in an elementwise manner,
+a new approximation for $u$ converging with a rate of $\sqrt{\log(T
+h^{-2/(\alpha+1)})}\, \,h^{k+2}$.

@@ -1,0 +1,21 @@
+In this paper we study a natural generalization of both {\sc $k$-Path} and
+{\sc $k$-Tree} problems, namely, the {\sc Subgraph Isomorphism} problem.
+  In the {\sc Subgraph Isomorphism} problem we are given two graphs $F$ and $G$
+on $k$ and $n$ vertices respectively as an input, and the question is whether
+there exists a subgraph of $G$ isomorphic to $F$. We show that if the treewidth
+of $F$ is at most $t$, then there is a randomized algorithm for the {\sc
+Subgraph Isomorphism} problem running in time $\cO^*(2^k n^{2t})$. To do so, we
+associate a new multivariate {Homomorphism polynomial} of degree at most $k$
+with the {\sc Subgraph Isomorphism} problem and construct an arithmetic circuit
+of size at most $n^{\cO(t)}$ for this polynomial. Using this polynomial, we
+also give a deterministic algorithm to count the number of homomorphisms from
+$F$ to $G$ that takes $n^{\cO(t)}$ time and uses polynomial space. For the
+counting version of the {\sc Subgraph Isomorphism} problem, where the objective
+is to count the number of distinct subgraphs of $G$ that are isomorphic to $F$,
+we give a deterministic algorithm running in time and space $\cO^*({n \choose
+k/2}n^{2p})$ or ${n\choose k/2}n^{\cO(t \log k)}$. We also give an algorithm
+running in time $\cO^{*}(2^{k}{n \choose k/2}n^{5p})$ and taking space
+polynomial in $n$. Here $p$ and $t$ denote the pathwidth and the treewidth of
+$F$, respectively. Thus our work not only improves on known results on {\sc
+Subgraph Isomorphism} but it also extends and generalize most of the known
+results on {\sc $k$-Path} and {\sc $k$-Tree}.

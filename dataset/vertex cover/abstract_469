@@ -1,0 +1,14 @@
+Given a graph G with positive integer weights on the vertices, and a token
+placed on some current vertex u, two players alternately remove a positive
+integer weight from u and then move the token to a new current vertex adjacent
+to u. When the weight of a vertex is set to 0, it is removed and its
+neighborhood becomes a clique. The player making the last move wins. This
+adaptation of Nim on graphs is called Vertexnim, and slightly differs from the
+game Vertex NimG introduced by Stockman in 2004. Vertexnim can be played on
+both directed or undirected graphs. In this paper, we study the complexity of
+deciding whether a given game position of Vertexnim is winning for the first or
+second player. In particular, we show that for undirected graphs, this problem
+can be solved in quadratic time. Our algorithm is also available for the game
+Vertex NimG, thus improving Stockman's exptime algorithm. In the directed case,
+we are able to compute the winning strategy in polynomial time for several
+instances, including circuits or digraphs with self loops.

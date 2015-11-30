@@ -1,0 +1,20 @@
+I describe a Bayesian method to account for measurement errors in linear
+regression of astronomical data. The method allows for heteroscedastic and
+possibly correlated measurement errors, and intrinsic scatter in the regression
+relationship. The method is based on deriving a likelihood function for the
+measured data, and I focus on the case when the intrinsic distribution of the
+independent variables can be approximated using a mixture of Gaussians. I
+generalize the method to incorporate multiple independent variables,
+non-detections, and selection effects (e.g., Malmquist bias). A Gibbs sampler
+is described for simulating random draws from the probability distribution of
+the parameters, given the observed data. I use simulation to compare the method
+with other common estimators. The simulations illustrate that the Gaussian
+mixture model outperforms other common estimators and can effectively give
+constraints on the regression parameters, even when the measurement errors
+dominate the observed scatter, source detection fraction is low, or the
+intrinsic distribution of the independent variables is not a mixture of
+Gaussians. I conclude by using this method to fit the X-ray spectral slope as a
+function of Eddington ratio using a sample of 39 z < 0.8 radio-quiet quasars. I
+confirm the correlation seen by other contributors between the radio-quiet quasar
+X-ray spectral slope and the Eddington ratio, where the X-ray spectral slope
+softens as the Eddington ratio increases.

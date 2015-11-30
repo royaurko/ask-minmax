@@ -1,0 +1,23 @@
+Memory ballooning is dynamic memory management technique for virtual machines
+(VMs). Ballooning is a part of memory reclamation technique operations used by
+a hypervisor to allow the physical host system to retrieve unused memory from
+certain guest virtual machines (VMs) and share it with others. Memory
+ballooning allows the total amount ofRAM required by guest VMs to exceed the
+amount ofphysical RAM available on the host. Memory overcommitment enables a
+higher consolidation ratio in a hypervisor. Using memory overcommitment, users
+can consolidate VMs on a physical machine such that physical resources are
+utilized in an optimal manner while delivering good performance. Hence memory
+reclamation is an integral component ofmemory overcommitment. In this paper, we
+address that the basic cause of memory that ballooning is memory overcommitment
+from using memory-intensive virtual machines. We compared to others reclamation
+technique and identify Cost Associate with Memory Ballooning in state of Memory
+Overcommitment. The objective of this paper is to analyse memory ballooning
+technique for dynamic memory management of VMs. For this analysis, VMware based
+virtualization software e.g ESXi Server, vCenter Server, vSphere Client are
+installed and configured on the Centre for Innovation and Technology (CIT) Lab,
+DIU; for monitor and analyze VM performance for memory ballooning technique.
+The performance ofmemory ballooning technique is evaluated with two different
+test cases. The purpose is to help users understand, how this technique impact
+the performance. Finally, we presents the throughput ofheavy workload with
+different memory limits when using ballooning or swapping; and analyse VM
+performance issue for this technique.

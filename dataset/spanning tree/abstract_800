@@ -1,0 +1,20 @@
+Python implementation of selected weighted graph algorithms is presented. The
+minimal graph interface is defined together with several classes implementing
+this interface. Graph nodes can be any hashable Python objects. Directed edges
+are instances of the Edge class. Graphs are instances of the Graph class. It is
+based on the adjacency-list representation, but with fast lookup of nodes and
+neighbors (dict-of-dict structure). Other implementations of this class are
+also possible.
+  In this work, many algorithms are implemented using a unified approach. There
+are separate classes and modules devoted to different algorithms. Three
+algorithms for finding a minimum spanning tree are implemented: the Boruvka's
+algorithm, the Prim's algorithm (three implementations), and the Kruskal's
+algorithm. Three algorithms for solving the single-source shortest path problem
+are implemented: the dag shortest path algorithm, the Bellman-Ford algorithm,
+and the Dijkstra's algorithm (two implementations). Two algorithms for solving
+all-pairs shortest path problem are implemented: the Floyd-Warshall algorithm
+and the Johnson's algorithm.
+  All algorithms were tested by means of the unittest module, the Python unit
+testing framework. Additional computer experiments were done in order to
+compare real and theoretical computational complexity. The source code is
+available from the public GitHub repository.

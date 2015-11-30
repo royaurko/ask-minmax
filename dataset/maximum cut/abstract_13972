@@ -1,0 +1,13 @@
+Conditional density estimation generalizes regression by modeling a full
+density f(yjx) rather than only the expected value E(yjx). This is important
+for many tasks, including handling multi-modality and generating prediction
+intervals. Though fundamental and widely applicable, nonparametric conditional
+density estimators have received relatively little attention from statisticians
+and little or none from the machine learning community. None of that work has
+been applied to greater than bivariate data, presumably due to the
+computational difficulty of data-driven bandwidth selection. We describe the
+double kernel conditional density estimator and derive fast dual-tree-based
+algorithms for bandwidth selection using a maximum likelihood criterion. These
+techniques give speedups of up to 3.8 million in our experiments, and enable
+the first applications to previously intractable large multivariate datasets,
+including a redshift prediction problem from the Sloan Digital Sky Survey.

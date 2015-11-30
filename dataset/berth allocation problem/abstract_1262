@@ -1,0 +1,18 @@
+Predictive models are fundamental to engineering reliable software systems.
+However, designing conservative, computable approximations for the behavior of
+programs (static analyses) remains a difficult and error-prone process for
+modern high-level programming languages. What analysis designers need is a
+principled method for navigating the gap between semantics and analytic models:
+analysis designers need a method that tames the interaction of complex
+languages features such as higher-order functions, recursion, exceptions,
+continuations, objects and dynamic allocation.
+  We contribute a systematic approach to program analysis that yields novel and
+transparently sound static analyses. Our approach relies on existing
+derivational techniques to transform high-level language semantics into
+low-level deterministic state-transition systems (with potentially infinite
+state spaces). We then perform a series of simple machine refactorings to
+obtain a sound, computable approximation, which takes the form of a
+non-deterministic state-transition systems with finite state spaces. The
+approach scales up uniformly to enable program analysis of realistic language
+features, including higher-order functions, tail calls, conditionals, side
+effects, exceptions, first-class continuations, and even garbage collection.

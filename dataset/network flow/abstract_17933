@@ -1,0 +1,23 @@
+Computing the shortest path between two given locations in a road network is
+an important problem that finds applications in various map services and
+commercial navigation products. The state-of-the-art solutions for the problem
+can be divided into two categories: spatial-coherence-based methods and
+vertex-importance-based approaches. The two categories of techniques, however,
+have not been compared systematically under the same experimental framework, as
+they were developed from two independent lines of research that do not refer to
+each other. This renders it difficult for a practitioner to decide which
+technique should be adopted for a specific application. Furthermore, the
+experimental evaluation of the existing techniques, as presented in previous
+work, falls short in several aspects. Some methods were tested only on small
+road networks with up to one hundred thousand vertices; some approaches were
+evaluated using distance queries (instead of shortest path queries), namely,
+queries that ask only for the length of the shortest path; a state-of-the-art
+technique was examined based on a faulty implementation that led to incorrect
+query results. To address the above issues, this paper presents a comprehensive
+comparison of the most advanced spatial-coherence-based and
+vertex-importance-based approaches. Using a variety of real road networks with
+up to twenty million vertices, we evaluated each technique in terms of its
+preprocessing time, space consumption, and query efficiency (for both shortest
+path and distance queries). Our experimental results reveal the characteristics
+of different techniques, based on which we provide guidelines on selecting
+appropriate methods for various scenarios.

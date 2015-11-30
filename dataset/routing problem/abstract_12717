@@ -1,0 +1,9 @@
+The rank problem in succinct data structures asks to preprocess an array
+A[1..n] of bits into a data structure using as close to n bits as possible, and
+answer queries of the form rank(k) = Sum_{i=1}^k A[i]. The problem has been
+intensely studied, and features as a subroutine in a majority of succinct data
+structures.
+  We show that in the cell probe model with w-bit cells, if rank takes t time,
+the space of the data structure must be at least n + n/w^{O(t)} bits. This
+redundancy/query trade-off is essentially optimal, matching our upper bound
+from [FOCS'08].

@@ -1,0 +1,15 @@
+We consider encoding problems for range queries on arrays. In these problems
+the goal is to store a structure capable of recovering the answer to all
+queries that occupies the information theoretic minimum space possible, to
+within lower order terms. As input, we are given an array $A[1..n]$, and a
+fixed parameter $k \in [1,n]$. A range top-$k$ query on an arbitrary range
+$[i,j] \subseteq [1,n]$ asks us to return the ordered set of indices $\{\ell_1,
+..., \ell_{k}\}$ such that $A[\ell_m]$ is the $m$-th largest element in
+$A[i..j]$, for $1 \le m \le k$. A range selection query for an arbitrary range
+$[i,j] \subseteq [1,n]$ and query parameter $k' \in [1,k]$ asks us to return
+the index of the $k'$-th largest element in $A[i..j]$. We completely resolve
+the space complexity of both of these heavily studied problems---to within
+lower order terms---for all $k = o(n)$. Previously, the constant factor in the
+space complexity was known only for $k=1$. We also resolve the space complexity
+of another problem, that we call range min-max, in which the goal is to return
+the indices of both the minimum and maximum elements in a range.

@@ -1,0 +1,17 @@
+In this paper, we study Coded relay (Crelay) in multi-hop wireless networks.
+Crelay exploits both partial packets and overhearing capabilities of the
+wireless nodes, and uses Forward Error Correction code in packet forwarding.
+When a node overhears a partial packet from an upstream node, it informs the
+upstream node about the number of parity bytes needed to correct the errors,
+such that the upstream node need only send a small amount of parity bytes
+instead of the complete packet, hence improving the network efficiency. Our
+main contributions include the following. First, we propose an efficient
+network protocol that can exploit partial packets and overhearing. Second, we
+study the routing problem in networks with Crelay and propose a greedy
+algorithm for finding the paths. Third, we propose an error ratio estimator,
+called AMPS, that can estimate the number of byte errors in a received frame
+with good accuracy at a low overhead of only 8 bytes per frame, where the
+estimator is needed for a node to find the number of needed parity bytes.
+Fourth, we implement the proposed protocol and algorithm within the Click
+modular router, and our experiments show that Crelay can significantly improve
+the performance of wireless networks.

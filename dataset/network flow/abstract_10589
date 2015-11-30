@@ -1,0 +1,17 @@
+We describe a network clustering framework, based on finite mixture models,
+that can be applied to discrete-valued networks with hundreds of thousands of
+nodes and billions of edge variables. Relative to other recent model-based
+clustering work for networks, we introduce a more flexible modeling framework,
+improve the variational-approximation estimation algorithm, discuss and
+implement standard error estimation via a parametric bootstrap approach, and
+apply these methods to much larger data sets than those seen elsewhere in the
+literature. The more flexible framework is achieved through introducing novel
+parameterizations of the model, giving varying degrees of parsimony, using
+exponential family models whose structure may be exploited in various
+theoretical and algorithmic ways. The algorithms are based on variational
+generalized EM algorithms, where the E-steps are augmented by a
+minorization-maximization (MM) idea. The bootstrapped standard error estimates
+are based on an efficient Monte Carlo network simulation idea. Last, we
+demonstrate the usefulness of the model-based clustering framework by applying
+it to a discrete-valued network with more than 131,000 nodes and 17 billion
+edge variables.

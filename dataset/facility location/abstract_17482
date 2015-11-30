@@ -1,0 +1,21 @@
+Weak-signal detection and single-particle selection from low-contrast
+micrographs of frozen hydrated biomolecules by cryo-electron microscopy
+(cryo-EM) presents a practical challenge. Cryo-EM image contrast degrades as
+the size of biomolecules of structural interest decreases. When the image
+contrast falls into a range where the location or presence of single particles
+becomes ambiguous, a need arises for objective computational approaches to
+detect weak signal and to select and verify particles from these low-contrast
+micrographs. Here we propose an objective validation scheme for low-contrast
+particle selection using a combination of two different target functions. In an
+implementation of this dual-target function (DTF) validation, a first target
+function of fast local correlation was used to select particles through
+template matching, followed by signal validation through a second target
+function of maximum likelihood. By a systematic study of simulated data, we
+found that such an implementation of DTF validation is capable of selecting and
+verifying particles from cryo-EM micrographs with a signal-to-noise ratio as
+low as 0.002. Importantly, we demonstrated that DTF validation can robustly
+evade over-fitting or reference bias from the particle-picking template,
+allowing true signal to emerge from amidst heavy noise in an objective fashion.
+The DTF approach allows efficient assembly of a large number of single-particle
+cryo-EM images of smaller biomolecules or specimens containing
+contrast-degrading agents like detergents in a semi-automatic manner.

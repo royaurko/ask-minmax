@@ -1,0 +1,18 @@
+Partitioning the vertices of a graph into two roughly equal parts while
+minimizing the number of edges crossing the cut is a fundamental problem
+(called Balanced Separator) that arises in many settings. For this problem, and
+variants such as the Uniform Sparsest Cut problem where the goal is to minimize
+the fraction of pairs on opposite sides of the cut that are connected by an
+edge, there are large gaps between the known approximation algorithms and
+non-approximability results. While no constant factor approximation algorithms
+are known, even APX-hardness is not known either.
+  In this work we prove that for balanced separator and uniform sparsest cut,
+semidefinite programs from the Lasserre hierarchy (which are the most powerful
+relaxations studied in the literature) have an integrality gap bounded away
+from $1$, even for $\Omega(n)$ levels of the hierarchy. This complements recent
+algorithmic results in Guruswami and Sinop (2011) which used the Lasserre
+hierarchy to give an approximation scheme for these problems (with runtime
+depending on the spectrum of the graph). Along the way, we make an observation
+that simplifies the task of lifting "polynomial constraints" (such as the
+global balance constraint in balanced separator) to higher levels of the
+Lasserre hierarchy.

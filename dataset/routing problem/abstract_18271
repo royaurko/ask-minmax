@@ -1,0 +1,21 @@
+In the classic Bayesian restless multi-armed bandit (RMAB) problem, there are
+$N$ arms, with rewards on all arms evolving at each time as Markov chains with
+known parameters. A player seeks to activate $K \geq 1$ arms at each time in
+order to maximize the expected total reward obtained over multiple plays. RMAB
+is a challenging problem that is known to be PSPACE-hard in general. We
+consider in this work the even harder non-Bayesian RMAB, in which the
+parameters of the Markov chain are assumed to be unknown \emph{a priori}. We
+develop an original approach to this problem that is applicable when the
+corresponding Bayesian problem has the structure that, depending on the known
+parameter values, the optimal solution is one of a prescribed finite set of
+policies. In such settings, we propose to learn the optimal policy for the
+non-Bayesian RMAB by employing a suitable meta-policy which treats each policy
+from this finite set as an arm in a different non-Bayesian multi-armed bandit
+problem for which a single-arm selection policy is optimal. We demonstrate this
+approach by developing a novel sensing policy for opportunistic spectrum access
+over unknown dynamic channels. We prove that our policy achieves
+near-logarithmic regret (the difference in expected reward compared to a
+model-aware genie), which leads to the same average reward that can be achieved
+by the optimal policy under a known model. This is the first such result in the
+literature for a non-Bayesian RMAB. For our proof, we also develop a novel
+generalization of the Chernoff-Hoeffding bound.

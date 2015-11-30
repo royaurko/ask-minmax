@@ -1,0 +1,13 @@
+The algorithms in the current sequential numerical linear algebra libraries
+(e.g. LAPACK) do not parallelize well on multicore architectures. A new family
+of algorithms, the tile algorithms, has recently been introduced. Previous
+research has shown that it is possible to write efficient and scalable tile
+algorithms for performing a Cholesky factorization, a (pseudo) LU
+factorization, and a QR factorization. In this extended abstract, we attack the
+problem of the computation of the inverse of a symmetric positive definite
+matrix. We observe that, using a dynamic task scheduler, it is relatively
+painless to translate existing LAPACK code to obtain a ready-to-be-executed
+tile algorithm. However we demonstrate that non trivial compiler techniques
+(array renaming, loop reversal and pipelining) need then to be applied to
+further increase the parallelism of our application. We present preliminary
+experimental results.

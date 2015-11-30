@@ -1,0 +1,21 @@
+A random walk on a directed graph gives a Markov chain on the vertices of the
+graph. An important question that arises often in the context of Markov chain
+is whether the uniform distribution on the vertices of the graph is a
+stationary distribution of the Markov chain. Stationary distribution of a
+Markov chain is a global property of the graph. In this paper, we prove that
+for a regular directed graph whether the uniform distribution on the vertices
+of the graph is a stationary distribution, depends on a local property of the
+graph, namely if (u,v) is an directed edge then outdegree(u) is equal to
+indegree(v).
+  This result also has an application to the problem of testing whether a given
+distribution is uniform or "far" from being uniform. This is a well studied
+problem in property testing and statistics. If the distribution is the
+stationary distribution of the lazy random walk on a directed graph and the
+graph is given as an input, then how many bits of the input graph do one need
+to query in order to decide whether the distribution is uniform or "far" from
+it? This is a problem of graph property testing and we consider this problem in
+the orientation model (introduced by Halevy et al.). We reduce this problem to
+test (in the orientation model) whether a directed graph is Eulerian. And using
+result of Fischer et al. on query complexity of testing (in the orientation
+model) whether a graph is Eulerian, we obtain bounds on the query complexity
+for testing whether the stationary distribution is uniform.

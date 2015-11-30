@@ -1,0 +1,19 @@
+A recent technique, proposed to alleviate the ``sign problem disease'', is
+discussed in details. As well known the ground state of a given Hamiltonian $H$
+can be obtained by applying the imaginary time propagator $e^{-H \tau}$ to a
+given trial state $\psi_T$ for large imaginary time $\tau$ and sampling
+statistically the propagated state $ \psi_{\tau} = e^{-H \tau} \psi_T$. However
+the so called ``sign problem'' may appear in the simulation and such
+statistical propagation would be practically impossible without employing some
+approximation such as the well known ``fixed node'' approximation (FN). This
+method allows to improve the FN dynamic with a systematic correction scheme.
+This is possible by the simple requirement that, after a short imaginary time
+propagation via the FN dynamic, a number $p$ of correlation functions can be
+further constrained to be {\em exact} by small perturbation of the FN
+propagated state, which is free of the sign problem. By iterating this scheme
+the Monte Carlo average sign, which is almost zero when there is sign problem,
+remains stable and finite even for large $\tau$. The proposed algorithm is
+tested against the exact diagonalization results available on finite lattice.
+It is also shown in few test cases that the dependence of the results upon the
+few parameters entering the stochastic technique can be very easily controlled,
+unless for exceptional cases.

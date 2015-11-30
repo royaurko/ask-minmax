@@ -1,0 +1,14 @@
+We describe a data structure, called a priority range tree, which
+accommodates fast orthogonal range reporting queries on prioritized points. Let
+$S$ be a set of $n$ points in the plane, where each point $p$ in $S$ is
+assigned a weight $w(p)$ that is polynomial in $n$, and define the rank of $p$
+to be $r(p)=\lfloor \log w(p) \rfloor$. Then the priority range tree can be
+used to report all points in a three- or four-sided query range $R$ with rank
+at least $\lfloor \log w \rfloor$ in time $O(\log W/w + k)$, and report $k$
+highest-rank points in $R$ in time $O(\log\log n + \log W/w' + k)$, where
+$W=\sum_{p\in S}{w(p)}$, $w'$ is the smallest weight of any point reported, and
+$k$ is the output size. All times assume the standard RAM model of computation.
+If the query range of interest is three sided, then the priority range tree
+occupies $O(n)$ space, otherwise $O(n\log n)$ space is used to answer
+four-sided queries. These queries are motivated by the Weber--Fechner Law,
+which states that humans perceive and interpret data on a logarithmic scale.

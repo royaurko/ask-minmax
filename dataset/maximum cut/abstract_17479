@@ -1,0 +1,19 @@
+We consider the problem of sparse estimation via a lasso-type penalized
+likelihood procedure in a factor analysis model. Typically, the model
+estimation is done under the assumption that the common factors are orthogonal
+(uncorrelated). However, the lasso-type penalization method based on the
+orthogonal model can often estimate a completely different model from that with
+the true factor structure when the common factors are correlated. In order to
+overcome this problem, we propose to incorporate a factor correlation into the
+model, and estimate the factor correlation along with parameters included in
+the orthogonal model by maximum penalized likelihood procedure. An entire
+solution path is computed by the EM algorithm with coordinate descent, which
+permits the application to a wide variety of convex and nonconvex penalties.
+The proposed method can provide sufficiently sparse solutions, and be applied
+to the data where the number of variables is larger than the number of
+observations. Monte Carlo simulations are conducted to investigate the
+effectiveness of our modeling strategies. The results show that the lasso-type
+penalization based on the orthogonal model cannot often approximate the true
+factor structure, whereas our approach performs well in various situations. The
+usefulness of the proposed procedure is also illustrated through the analysis
+of real data.

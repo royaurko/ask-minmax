@@ -1,0 +1,22 @@
+In this paper, we present an experimental analysis of the asynchronous push &
+pull rumour spreading protocol. This protocol is, to date, the best-performing
+rumour spreading protocol for simple, scalable, and robust information
+dissemination in distributed systems. We analyse the effect that multiple
+parameters have on the protocol's performance, such as using memory to avoid
+contacting the same neighbor twice in a row, varying the stopping criteria used
+by nodes to decide when to stop spreading the rumour, employing more
+sophisticated neighbor selection policies instead of the standard uniform
+random choice, and others. Prior work has focused on either providing
+theoretical upper bounds regarding the number of rounds needed to spread the
+rumour to all nodes, or, proposes improvements by adjusting isolated
+parameters. To our knowledge, our work is the first to study how multiple
+parameters affect system behaviour both in isolation and combination and under
+a wide range of values. Our analysis is based on experimental simulations using
+real-world social network datasets, thus complementing prior theoretical work
+to shed light on how the protocol behaves in practical, real-world systems. We
+also study the behaviour of the protocol on a special type of social graph,
+called signed networks (e.g., Slashdot and Epinions), whose links indicate
+stronger trust relationships. Finally, through our detailed analysis, we
+demonstrate how a few simple additions to the protocol can improve the total
+time required to inform 100% of the nodes by a maximum of 99.69% and an average
+of 82.37%.

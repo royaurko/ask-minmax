@@ -1,0 +1,15 @@
+Many SOCs today contain both digital and analog embedded cores. Even though
+the test cost for such mixed-signal SOCs is significantly higher than that for
+digital SOCs, most prior research in this area has focused exclusively on
+digital cores. We propose a low-cost test development methodology for
+mixed-signal SOCs that allows the analog and digital cores to be tested in a
+unified manner, thereby minimizing the overall test cost. The analog cores in
+the SOC are wrapped such that they can be accessed using a digital test access
+mechanism (TAM). We evaluate the impact of the use of analog test wrappers on
+area overhead and test time. To reduce area overhead, we present an analog test
+wrapper optimization technique, which is then combined with TAM optimization in
+a cost-oriented heuristic approach for test scheduling. We also demonstrate the
+feasibility of using analog wrappers by presenting transistor-level simulations
+for an analog wrapper and a representative core. We present experimental
+results on test scheduling for an ITC'02 benchmark SOC that has been augmented
+with five analog cores.

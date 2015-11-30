@@ -1,0 +1,10 @@
+Stochastic Gradient Descent (SGD) is a popular optimization method which has
+been applied to many important machine learning tasks such as Support Vector
+Machines and Deep Neural Networks. In order to parallelize SGD, minibatch
+training is often employed. The standard approach is to uniformly sample a
+minibatch at each step, which often leads to high variance. In this paper we
+propose a stratified sampling strategy, which divides the whole dataset into
+clusters with low within-cluster variance; we then take examples from these
+clusters using a stratified sampling technique. It is shown that the
+convergence rate can be significantly improved by the algorithm. Encouraging
+experimental results confirm the effectiveness of the proposed method.

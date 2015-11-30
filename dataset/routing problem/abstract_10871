@@ -1,0 +1,26 @@
+Given an edge-weighted directed graph $G=(V,E)$ on $n$ vertices and a set
+$T=\{t_1, t_2, \ldots, t_p\}$ of $p$ terminals, the objective of the \scss
+($p$-SCSS) problem is to find an edge set $H\subseteq E$ of minimum weight such
+that $G[H]$ contains an $t_{i}\rightarrow t_j$ path for each $1\leq i\neq j\leq
+p$. In this paper, we investigate the computational complexity of a variant of
+$2$-SCSS where we have demands for the number of paths between each terminal
+pair. Formally, the \sharinggeneral problem is defined as follows: given an
+edge-weighted directed graph $G=(V,E)$ with weight function $\omega:
+E\rightarrow \mathbb{R}^{\geq 0}$, two terminal vertices $s, t$, and integers
+$k_1, k_2$ ; the objective is to find a set of $k_1$ paths $F_1, F_2, \ldots,
+F_{k_1}$ from $s\leadsto t$ and $k_2$ paths $B_1, B_2, \ldots, B_{k_2}$ from
+$t\leadsto s$ such that $\sum_{e\in E} \omega(e)\cdot \phi(e)$ is minimized,
+where $\phi(e)= \max \Big\{|\{i\in [k_1] : e\in F_i\}|\ ,\ |\{j\in [k_2] : e\in
+B_j\}|\Big\}$. For each $k\geq 1$, we show the following:
+  \begin{itemize}
+  \item The \sharing problem can be solved in $n^{O(k)}$ time.
+  \item A matching lower bound for our algorithm: the \sharing problem does not
+have an $f(k)\cdot n^{o(k)}$ algorithm for any computable function $f$, unless
+the Exponential Time Hypothesis (ETH) fails.
+  \end{itemize}
+  Our algorithm for \sharing relies on a structural result regarding an optimal
+solution followed by using the idea of a "token game" similar to that of
+Feldman and Ruhl. We show with an example that the structural result does not
+hold for the \sharinggeneral problem if $\min\{k_1, k_2\}\geq 2$. Therefore
+\sharing is the most general problem one can attempt to solve with our
+techniques.

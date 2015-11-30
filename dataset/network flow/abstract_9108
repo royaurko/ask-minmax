@@ -1,0 +1,18 @@
+We consider distributed channel access in multi-hop cognitive radio networks.
+Previous works on opportunistic channel access using multi-armed bandits (MAB)
+mainly focus on single-hop networks that assume complete conflicts among all
+secondary users. In the multi-hop multi-channel network settings studied here,
+there is more general competition among different communication pairs. We
+formulate the problem as a linearly combinatorial MAB problem that involves a
+maximum weighted independent set (MWIS) problem with unknown weights which need
+to learn. Existing methods for MAB where each of $N$ nodes chooses from $M$
+channels have exponential time and space complexity $O(M^N)$, and poor
+theoretical guarantee on throughput performance. We propose a distributed
+channel access algorithm that can achieve $1/\rho$ of the optimum averaged
+throughput where each node has communication complexity $O(r^2+D)$ and space
+complexity $O(m)$ in the learning process, and time complexity $O(D
+m^{\rho^r})$ in strategy decision process for an arbitrary wireless network.
+Here $\rho=1+\epsilon$ is the approximation ratio to MWIS for a local $r$-hop
+network with $m<N$ nodes,and $D$ is the number of mini-rounds inside each round
+of strategy decision. For randomly located networks with an average degree $d$,
+the time complexity is $O(d^{\rho^r})$.

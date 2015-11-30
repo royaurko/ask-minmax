@@ -1,0 +1,23 @@
+We consider a wireless sensor network whose main function is to detect
+certain infrequent alarm events, and to forward alarm packets to a base
+station, using geographical forwarding. The nodes know their locations, and
+they sleep-wake cycle, waking up periodically but not synchronously. In this
+situation, when a node has a packet to forward to the sink, there is a
+trade-off between how long this node waits for a suitable neighbor to wake up
+and the progress the packet makes towards the sink once it is forwarded to this
+neighbr. Hence, in choosing a relay node, we consider the problem of minimizing
+average delay subject to a constraint on the average progress. By constraint
+relaxation, involving a Lagrange multiplier, we formulate this next hop relay
+selection problem as a Markov decision process (MDP). The exact optimal
+solution (BF (Best Forward)) can be found, but is computationally intensive.
+Next, we consider a mathematically simplified model for which the optimal
+policy (SF (Simplified Forward)) turns out to be a simple one-step-look-ahead
+rule. Simulations show that SF is very close in performance to BF, even for
+reasonably small node density. We then study the end-to-end performance of SF
+in comparison with two extremal policies: Max Forward (MF), which makes the
+maximum possible progress per hop and thus reduces network energy consumption,
+and First Forward (FF), which forwards the packet to the first node to wake up,
+and thus tends to make end-to-end forwarding delays small. We find that, with
+appropriate choice of one hop average progress constraint, SF can be tuned to
+provide a favorable trade-off between end-to-end packet delay and the number of
+hops in the forwarding path.

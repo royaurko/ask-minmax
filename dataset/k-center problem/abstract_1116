@@ -1,0 +1,17 @@
+We consider the counting rate estimation of an unknown radioactive source,
+which emits photons at times modeled by an homogeneous Poisson process. A
+spectrometer converts the energy of incoming photons into electrical pulses,
+whose number provides a rough estimate of the intensity of the Poisson process.
+When the activity of the source is high, a physical phenomenon known as pileup
+effect distorts direct measurements, resulting in a significant bias to the
+standard estimators of the source activities used so far in the field. We show
+in this paper that the problem of counting rate estimation can be interpreted
+as a sparse regression problem. We suggest a post-processed, non-negative,
+version of the Least Absolute Shrinkage and Selection Operator (LASSO) to
+estimate the photon arrival times. The main difficulty in this problem is that
+no theoretical conditions can guarantee consistency in sparsity of LASSO,
+because the dictionary is not ideal and the signal is sampled. We therefore
+derive theoretical conditions and bounds which illustrate that the proposed
+method can none the less provide a good, close to the best attainable, estimate
+of the counting rate activity. The good performances of the proposed approach
+are studied on simulations and real datasets.

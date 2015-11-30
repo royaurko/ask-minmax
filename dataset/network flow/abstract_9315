@@ -1,0 +1,18 @@
+A distributed algorithm is self-stabilizing if after faults and attacks hit
+the system and place it in some arbitrary global state, the system recovers
+from this catastrophic situation without external intervention in finite time.
+In this paper, we consider the problem of constructing self-stabilizingly a
+\emph{maximal independent set} in uniform unidirectional networks of arbitrary
+shape. On the negative side, we present evidence that in uniform networks,
+\emph{deterministic} self-stabilization of this problem is \emph{impossible}.
+Also, the \emph{silence} property (\emph{i.e.} having communication fixed from
+some point in every execution) is impossible to guarantee, either for
+deterministic or for probabilistic variants of protocols. On the positive side,
+we present a deterministic protocol for networks with arbitrary unidirectional
+networks with unique identifiers that exhibits polynomial space and time
+complexity in asynchronous scheduling. We complement the study with
+probabilistic protocols for the uniform case: the first probabilistic protocol
+requires infinite memory but copes with asynchronous scheduling, while the
+second probabilistic protocol has polynomial space complexity but can only
+handle synchronous scheduling. Both probabilistic solutions have expected
+polynomial time complexity.

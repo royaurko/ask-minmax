@@ -1,0 +1,22 @@
+This paper studies broadcasting and gossiping algorithms in random and
+general AdHoc networks. Our goal is not only to minimise the broadcasting and
+gossiping time, but also to minimise the energy consumption, which is measured
+in terms of the total number of messages (or transmissions) sent. We assume
+that the nodes of the network do not know the network, and that they can only
+send with a fixed power, meaning they can not adjust the areas sizes that their
+messages cover. We believe that under these circumstances the number of
+transmissions is a very good measure for the overall energy consumption.
+  For random networks, we present a broadcasting algorithm where every node
+transmits at most once. We show that our algorithm broadcasts in $O(\log n)$
+steps, w.h.p, where $n$ is the number of nodes. We then present a $O(d \log n)$
+($d$ is the expected degree) gossiping algorithm using $O(\log n)$ messages per
+node.
+  For general networks with known diameter $D$, we present a randomised
+broadcasting algorithm with optimal broadcasting time $O(D \log (n/D) + \log^2
+n)$ that uses an expected number of $O(\log^2 n / \log (n/D))$ transmissions
+per node. We also show a tradeoff result between the broadcasting time and the
+number of transmissions: we construct a network such that any oblivious
+algorithmusing a time-invariant distribution requires $\Omega(\log^2 n / \log
+(n/D))$ messages per node in order to finish broadcasting in optimal time. This
+demonstrates the tightness of our upper bound. We also show that no oblivious
+algorithm can complete broadcasting w.h.p. using $o(\log n)$ messages per node.

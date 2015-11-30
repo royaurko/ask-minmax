@@ -1,0 +1,14 @@
+We consider the high-dimensional sparse linear regression problem of
+accurately estimating a sparse vector using a small number of linear
+measurements that are contaminated by noise. It is well known that the standard
+cadre of computationally tractable sparse regression algorithms---such as the
+Lasso, Orthogonal Matching Pursuit (OMP), and their extensions---perform poorly
+when the measurement matrix contains highly correlated columns. To address this
+shortcoming, we develop a simple greedy algorithm, called SWAP, that
+iteratively swaps variables until convergence. SWAP is surprisingly effective
+in handling measurement matrices with high correlations. In fact, we prove that
+SWAP outputs the true support, the locations of the non-zero entries in the
+sparse vector, under a relatively mild condition on the measurement matrix.
+Furthermore, we show that SWAP can be used to boost the performance of any
+sparse regression algorithm. We empirically demonstrate the advantages of SWAP
+by comparing it with several state-of-the-art sparse regression algorithms.

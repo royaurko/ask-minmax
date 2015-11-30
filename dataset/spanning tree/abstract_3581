@@ -1,0 +1,10 @@
+A QR factorization of a tall and skinny matrix with n columns can be
+represented as a reduction. The operation used along the reduction tree has in
+input two n-by-n upper triangular matrices and in output an n-by-n upper
+triangular matrix which is defined as the R factor of the two input matrices
+stacked the one on top of the other. This operation is binary, associative, and
+commutative. We can therefore leverage the MPI library capabilities by using
+user-defined MPI operations and MPI_Reduce to perform this reduction. The
+resulting code is compact and portable. In this context, the user relies on the
+MPI library to select a reduction tree appropriate for the underlying
+architecture.

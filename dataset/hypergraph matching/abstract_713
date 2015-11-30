@@ -1,0 +1,6 @@
+We define a lazy pattern-matching mechanism modulo associativity and
+commutativity. The solutions of a pattern-matching problem are stored in a lazy
+list composed of a first substitution at the head and a non-evaluated object
+that encodes the remaining computations. We integrate the lazy AC-matching in a
+strategy language: rewriting rule and strategy application produce a lazy list
+of terms.

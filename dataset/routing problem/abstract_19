@@ -1,0 +1,15 @@
+In this paper, we present a new routing paradigm that generalizes
+opportunistic routing in wireless mesh networks. In multirate anypath routing,
+each node uses both a set of next hops and a selected transmission rate to
+reach a destination. Using this rate, a packet is broadcast to the nodes in the
+set and one of them forwards the packet on to the destination. To date, there
+is no theory capable of jointly optimizing both the set of next hops and the
+transmission rate used by each node. We bridge this gap by introducing a
+polynomial-time algorithm to this problem and provide the proof of its
+optimality. The proposed algorithm runs in the same running time as regular
+shortest-path algorithms and is therefore suitable for deployment in link-state
+routing protocols. We conducted experiments in a 802.11b testbed network, and
+our results show that multirate anypath routing performs on average 80% and up
+to 6.4 times better than anypath routing with a fixed rate of 11 Mbps. If the
+rate is fixed at 1 Mbps instead, performance improves by up to one order of
+magnitude.

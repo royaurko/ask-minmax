@@ -1,0 +1,20 @@
+We consider the problem of creating plane orthogonal drawings of 4-planar
+graphs (planar graphs with maximum degree 4) with constraints on the number of
+bends per edge. More precisely, we have a flexibility function assigning to
+each edge $e$ a natural number $\mathrm{flex}(e)$, its flexibility. The problem
+FlexDraw asks whether there exists an orthogonal drawing such that each edge
+$e$ has at most $\mathrm{flex}(e)$ bends. It is known that FlexDraw is NP-hard
+if $\mathrm{flex}(e) = 0$ for every edge $e$. On the other hand, FlexDraw can
+be solved efficiently if $\mathrm{flex}(e) \ge 1$ and is trivial if
+$\mathrm{flex}(e) \ge 2$ for every edge $e$.
+  To close the gap between the NP-hardness for $\mathrm{flex}(e) = 0$ and the
+efficient algorithm for $\mathrm{flex}(e) \ge 1$, we investigate the
+computational complexity of FlexDraw in case only few edges are inflexible
+(i.e., have flexibility~$0$). We show that for any $\varepsilon > 0$ FlexDraw
+is NP-complete for instances with $O(n^\varepsilon)$ inflexible edges with
+pairwise distance $\Omega(n^{1-\varepsilon})$ (including the case where they
+induce a matching). On the other hand, we give an FPT-algorithm with running
+time $O(2^k\cdot n \cdot T_{\mathrm{flow}}(n))$, where $T_{\mathrm{flow}}(n)$
+is the time necessary to compute a maximum flow in a planar flow network with
+multiple sources and sinks, and $k$ is the number of inflexible edges having at
+least one endpoint of degree 4.

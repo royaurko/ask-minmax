@@ -1,0 +1,23 @@
+We consider the inverse problem of determining the permeability from the
+pressure in a Darcy model of flow in a porous medium. Mathematically the
+problem is to find the diffusion coefficient for a linear uniformly elliptic
+partial differential equation in divergence form, in a bounded domain in
+dimension $d \le 3$, from measurements of the solution in the interior. We
+adopt a Bayesian approach to the problem. We place a prior random field measure
+on the log permeability, specified through the Karhunen-Lo\`eve expansion of
+its draws. We consider Gaussian measures constructed this way, and study the
+regularity of functions drawn from them. We also study the Lipschitz properties
+of the observation operator mapping the log permeability to the observations.
+Combining these regularity and continuity estimates, we show that the posterior
+measure is well-defined on a suitable Banach space. Furthermore the posterior
+measure is shown to be Lipschitz with respect to the data in the Hellinger
+metric, giving rise to a form of well-posedness of the inverse problem.
+Determining the posterior measure, given the data, solves the problem of
+uncertainty quantification for this inverse problem. In practice the posterior
+measure must be approximated in a finite dimensional space. We quantify the
+errors incurred by employing a truncated Karhunen-Lo\`eve expansion to
+represent this meausure. In particular we study weak convergence of a general
+class of locally Lipschitz functions of the log permeability, and apply this
+general theory to estimate errors in the posterior mean of the pressure and the
+pressure covariance, under refinement of the finite dimensional
+Karhunen-Lo\`eve truncation.

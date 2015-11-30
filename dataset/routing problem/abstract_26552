@@ -1,0 +1,17 @@
+This paper describes a fast approach to automatic point label de-confliction
+on interactive maps. The general Map Labeling problem is NP-hard and has been
+the subject of much study for decades. Computerized maps have introduced
+interactive zooming and panning, which has intensified the problem. Providing
+dynamic labels for such maps typically requires a time-consuming pre-processing
+phase. In the realm of visual analytics, however, the labeling of interactive
+maps is further complicated by the use of massive datasets laid out in
+arbitrary configurations, thus rendering reliance on a pre-processing phase
+untenable. This paper offers a method for labeling point-features on dynamic
+maps in real time without pre-processing. The algorithm presented is efficient,
+scalable, and exceptionally fast; it can label interactive charts and diagrams
+at speeds of multiple frames per second on maps with tens of thousands of
+nodes. To accomplish this, the algorithm employs a novel geometric
+de-confliction approach, the 'trellis strategy,' along with a unique label
+candidate cost analysis to determine the 'least expensive' label configuration.
+The speed and scalability of this approach make it well-suited for visual
+analytic applications.

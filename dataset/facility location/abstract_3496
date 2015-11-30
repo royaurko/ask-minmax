@@ -1,0 +1,17 @@
+HYDJET++ is a Monte-Carlo event generator for simulation of relativistic
+heavy ion AA collisions considered as a superposition of the soft, hydro-type
+state and the hard state resulting from multi-parton fragmentation. This model
+is the development and continuation of HYDJET event generator (Lokhtin &
+Snigirev, 2006, EPJC, 45, 211). The main program is written in the
+object-oriented C++ language under the ROOT environment. The hard part of
+HYDJET++ is identical to the hard part of Fortran-written HYDJET and it is
+included in the generator structure as a separate directory. The soft part of
+HYDJET++ event is the "thermal" hadronic state generated on the chemical and
+thermal freeze-out hypersurfaces obtained from the parameterization of
+relativistic hydrodynamics with preset freeze-out conditions. It includes the
+longitudinal, radial and elliptic flow effects and the decays of hadronic
+resonances. The corresponding fast Monte-Carlo simulation procedure, C++ code
+FAST MC (Amelin et al., 2006, PRC, 74, 064901; 2008, PRC, 77, 014903) is
+adapted to HYDJET++. It is designed for studying the multi-particle production
+in a wide energy range of heavy ion experimental facilities: from FAIR and NICA
+to RHIC and LHC.

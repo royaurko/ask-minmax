@@ -1,0 +1,13 @@
+In 2-neighborhood bootstrap percolation on a graph G, an infection spreads
+according to the following deterministic rule: infected vertices of G remain
+infected forever and in consecutive rounds healthy vertices with at least 2
+already infected neighbors become infected. Percolation occurs if eventually
+every vertex is infected. The maximum time t(G) is the maximum number of rounds
+needed to eventually infect the entire vertex set. In 2013, it was proved
+\cite{eurocomb13} that deciding whether $t(G)\geq k$ is polynomial time
+solvable for k=2, but is NP-Complete for k=4 and, if the problem is restricted
+to bipartite graphs, it is NP-Complete for k=7. In this paper, we solve the
+open questions. We obtain an $O(mn^5)$-time algorithm to decide whether
+$t(G)\geq 3$. For bipartite graphs, we obtain an $O(mn^3)$-time algorithm to
+decide whether $t(G)\geq 3$, an $O(m^2n^9)$-time algorithm to decide whether
+$t(G)\geq 4$ and we prove that $t(G)\geq 5$ is NP-Complete.

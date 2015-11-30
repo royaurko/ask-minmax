@@ -1,0 +1,14 @@
+In this paper, we tackle the problem of automatically generating algorithms
+for linear algebra operations by taking advantage of problem-specific
+knowledge. In most situations, users possess much more information about the
+problem at hand than what current libraries and computing environments accept;
+evidence shows that if properly exploited, such information leads to
+uncommon/unexpected speedups. We introduce a knowledge-aware linear algebra
+compiler that allows users to input matrix equations together with properties
+about the operands and the problem itself; for instance, they can specify that
+the equation is part of a sequence, and how successive instances are related to
+one another. The compiler exploits all this information to guide the generation
+of algorithms, to limit the size of the search space, and to avoid redundant
+computations. We applied the compiler to equations arising as part of
+sensitivity and genome studies; the algorithms produced exhibit, respectively,
+100- and 1000-fold speedups.

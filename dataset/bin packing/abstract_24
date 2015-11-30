@@ -1,0 +1,19 @@
+The 2D Online Bin Packing is a fundamental problem in Computer Science and
+the determination of its asymptotic competitive ratio has attracted great
+research attention. In a long series of papers, the lower bound of this ratio
+has been improved from 1.808, 1.856 to 1.907 and its upper bound reduced from
+3.25, 3.0625, 2.8596, 2.7834 to 2.66013. In this paper, we rewrite the upper
+bound record to 2.5545. Our idea for the improvement is as follows. In SODA
+2002 \cite{SS03}, Seiden and van Stee proposed an elegant algorithm called $H
+\otimes B$, comprised of the {\em Harmonic algorithm} $H$ and the {\em Improved
+Harmonic algorithm} $B$, for the two-dimensional online bin packing problem and
+proved that the algorithm has an asymptotic competitive ratio of at most
+2.66013. Since the best known online algorithm for one-dimensional bin packing
+is the {\em Super Harmonic algorithm} \cite{S02}, a natural question to ask is:
+could a better upper bound be achieved by using the Super Harmonic algorithm
+instead of the Improved Harmonic algorithm? However, as mentioned in
+\cite{SS03}, the previous analysis framework does not work. In this paper, we
+give a positive answer for the above question. A new upper bound of 2.5545 is
+obtained for 2-dimensional online bin packing. The main idea is to develop new
+weighting functions for the Super Harmonic algorithm and propose new techniques
+to bound the total weight in a rectangular bin.

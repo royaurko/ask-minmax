@@ -1,0 +1,14 @@
+Large graphs are difficult to represent, visualize, and understand. In this
+paper, we introduce "gate graph" - a new approach to perform graph
+simplification. A gate graph provides a simplified topological view of the
+original graph. Specifically, we construct a gate graph from a large graph so
+that for any "non-local" vertex pair (distance higher than some threshold) in
+the original graph, their shortest-path distance can be recovered by
+consecutive "local" walks through the gate vertices in the gate graph. We
+perform a theoretical investigation on the gate-vertex set discovery problem.
+We characterize its computational complexity and reveal the upper bound of
+minimum gate-vertex set using VC-dimension theory. We propose an efficient
+mining algorithm to discover a gate-vertex set with guaranteed logarithmic
+bound. We further present a fast technique for pruning redundant edges in a
+gate graph. The detailed experimental results using both real and synthetic
+graphs demonstrate the effectiveness and efficiency of our approach.

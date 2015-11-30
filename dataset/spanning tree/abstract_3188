@@ -1,0 +1,21 @@
+To assess how future progress in gravitational microlensing computation at
+high optical depth will rely on both hardware and software solutions, we
+compare a direct inverse ray-shooting code implemented on a graphics processing
+unit (GPU) with both a widely-used hierarchical tree code on a single-core CPU,
+and a recent implementation of a parallel tree code suitable for a CPU-based
+cluster supercomputer. We examine the accuracy of the tree codes through
+comparison with a direct code over a much wider range of parameter space than
+has been feasible before. We demonstrate that all three codes present
+comparable accuracy, and choice of approach depends on considerations relating
+to the scale and nature of the microlensing problem under investigation. On
+current hardware, there is little difference in the processing speed of the
+single-core CPU tree code and the GPU direct code, however the recent plateau
+in single-core CPU speeds means the existing tree code is no longer able to
+take advantage of Moore's law-like increases in processing speed. Instead, we
+anticipate a rapid increase in GPU capabilities in the next few years, which is
+advantageous to the direct code. We suggest that progress in other areas of
+astrophysical computation may benefit from a transition to GPUs through the use
+of "brute force" algorithms, rather than attempting to port the current best
+solution directly to a GPU language -- for certain classes of problems, the
+simple implementation on GPUs may already be no worse than an optimised
+single-core CPU version.

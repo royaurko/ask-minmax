@@ -1,0 +1,18 @@
+This paper examines synchronization of computer clocks connected via a data
+network and proposes a skewless algorithm to synchronize them. Unlike existing
+solutions, which either estimate and compensate the frequency difference (skew)
+among clocks or introduce offset corrections that can generate jitter and
+possibly even backward jumps, our algorithm achieves synchronization without
+these problems. We first analyze the convergence property of the algorithm and
+provide necessary and sufficient conditions on the parameters to guarantee
+synchronization. We then implement our solution on a cluster of IBM BladeCenter
+servers running Linux and study its performance. In particular, both
+analytically and experimentally, we show that our algorithm can converge in the
+presence of timing loops. This marks a clear contrast with current standards
+such as NTP and PTP, where timing loops are specifically avoided. Furthermore,
+timing loops can even be beneficial in our scheme. For example, it is
+demonstrated that highly connected subnetworks can collectively outperform
+individual clients when the time source has large jitter. It is also
+experimentally demonstrated that our algorithm outperforms other
+well-established software-based solutions such as the NTPv4 and IBM Coordinated
+Cluster Time (IBM CCT).

@@ -1,0 +1,24 @@
+The goal of this paper is twofold: first, it investigates the effect of
+low-pass spatial filters for approximate deconvolution large eddy simulation
+(AD-LES) of turbulent incompressible flows. Second, it proposes the
+hyper-differential filter as a means of increasing the accuracy of the AD-LES
+model without increasing the computational cost. Box filters, Pad\'{e} filters,
+and differential filters with a wide range of parameters are studied in the
+AD-LES framework. The AD-LES model, in conjunction with these spatial filters,
+is tested in the numerical simulation of the three-dimensional Taylor-Green
+vortex problem. The numerical results are benchmarked against direct numerical
+simulation (DNS) data. An under-resolved numerical simulation is also used for
+comparison purposes. Four criteria are used to investigate the AD-LES model
+equipped with these spatial filters: (i) the time series of the volume-averaged
+enstrophy; (ii) the volume-averaged third-order structure function; (iii) the
+$L^2$-norm of the velocity and vorticity errors; and (iv) the volume-averaged
+velocity and vorticity correlation coefficients. According to these criteria,
+the numerical results yield the following two conclusions: first, the AD-LES
+model equipped with any of these spatial filters yields accurate results at a
+fraction of the computational cost of DNS. Second, the most accurate results
+are obtained with the hyper-differential filter, followed by the differential
+filter. We demonstrate that the results highly depend on the selection of the
+filtering procedure. Although a careful parameter choice makes each class of
+filters used in this study competitive, it seems that filters whose transfer
+function resembles that of the Fourier cut-off filter (such as the
+hyper-differential filters) tend to perform best.

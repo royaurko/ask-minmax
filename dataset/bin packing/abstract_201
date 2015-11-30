@@ -1,0 +1,15 @@
+The study of {\em balls-into-bins processes} or {\em occupancy problems} has
+a long history. These processes can be used to translate realistic problems
+into mathematical ones in a natural way. In general, the goal of a
+balls-into-bins process is to allocate a set of independent objects (tasks,
+jobs, balls) to a set of resources (servers, bins, urns) and, thereby, to
+minimize the maximum load. In this paper, we analyze the maximum load for the
+{\em chains-into-bins} problem, which is defined as follows. There are $n$
+bins, and $m$ objects to be allocated. Each object consists of balls connected
+into a chain of length $\ell$, so that there are $m \ell$ balls in total. We
+assume the chains cannot be broken, and that the balls in one chain have to be
+allocated to $\ell$ consecutive bins. We allow each chain $d$ independent and
+uniformly random bin choices for its starting position. The chain is allocated
+using the rule that the maximum load of any bin receiving a ball of that chain
+is minimized. We show that, for $d \ge 2$ and $m\cdot\ell=O(n)$, the maximum
+load is $((\ln \ln m)/\ln d) +O(1)$ with probability $1-\tilde O(1/m^{d-1})$.

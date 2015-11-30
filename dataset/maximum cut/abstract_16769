@@ -1,0 +1,18 @@
+Let $(L; \sqcap, \sqcup)$ be a finite lattice and let $n$ be a positive
+integer. A function $f : L^n \to \mathbb{R}$ is said to be submodular if
+$f(\tup{a} \sqcap \tup{b}) + f(\tup{a} \sqcup \tup{b}) \leq f(\tup{a}) +
+f(\tup{b})$ for all $\tup{a}, \tup{b} \in L^n$. In this paper we study
+submodular functions when $L$ is a diamond. Given oracle access to $f$ we are
+interested in finding $\tup{x} \in L^n$ such that $f(\tup{x}) = \min_{\tup{y}
+\in L^n} f(\tup{y})$ as efficiently as possible.
+  We establish a min--max theorem, which states that the minimum of the
+submodular function is equal to the maximum of a certain function defined over
+a certain polyhedron; and a good characterisation of the minimisation problem,
+i.e., we show that given an oracle for computing a submodular $f : L^n \to
+\mathbb{Z}$ and an integer $m$ such that $\min_{\tup{x} \in L^n} f(\tup{x}) =
+m$, there is a proof of this fact which can be verified in time polynomial in
+$n$ and $\max_{\tup{t} \in L^n} \log |f(\tup{t})|$; and a pseudo-polynomial
+time algorithm for the minimisation problem, i.e., given an oracle for
+computing a submodular $f : L^n \to \mathbb{Z}$ one can find $\min_{\tup{t} \in
+L^n} f(\tup{t})$ in time bounded by a polynomial in $n$ and $\max_{\tup{t} \in
+L^n} |f(\tup{t})|$.

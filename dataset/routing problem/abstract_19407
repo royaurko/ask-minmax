@@ -1,0 +1,17 @@
+In this paper we focus on the problem of completion of multidimensional
+arrays (also referred to as tensors) from limited sampling. Our approach is
+based on a recently proposed tensor-Singular Value Decomposition (t-SVD) [1].
+Using this factorization one can derive notion of tensor rank, referred to as
+the tensor tubal rank, which has optimality properties similar to that of
+matrix rank derived from SVD. As shown in [2] some multidimensional data, such
+as panning video sequences exhibit low tensor tubal rank and we look at the
+problem of completing such data under random sampling of the data cube. We show
+that by solving a convex optimization problem, which minimizes the tensor
+nuclear norm obtained as the convex relaxation of tensor tubal rank, one can
+guarantee recovery with overwhelming probability as long as samples in
+proportion to the degrees of freedom in t-SVD are observed. In this sense our
+results are order-wise optimal. The conditions under which this result holds
+are very similar to the incoherency conditions for the matrix completion,
+albeit we define incoherency under the algebraic set-up of t-SVD. We show the
+performance of the algorithm on some real data sets and compare it with other
+existing approaches based on tensor flattening and Tucker decomposition.

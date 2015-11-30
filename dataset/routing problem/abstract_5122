@@ -1,0 +1,17 @@
+We consider a convex relaxation of sparse principal component analysis
+proposed by d'Aspremont et al. in (d'Aspremont et al. SIAM Rev 49:434-448,
+2007). This convex relaxation is a nonsmooth semidefinite programming problem
+in which the $\ell_1$ norm of the desired matrix is imposed in either the
+objective function or the constraint to improve the sparsity of the resulting
+matrix. The sparse principal component is obtained by a rank-one decomposition
+of the resulting sparse matrix. We propose an alternating direction method
+based on a variable-splitting technique and an augmented Lagrangian framework
+for solving this nonsmooth semidefinite programming problem. In contrast to the
+first-order method proposed in (d'Aspremont et al. SIAM Rev 49:434-448, 2007)
+that solves approximately the dual problem of the original semidefinite
+programming problem, our method deals with the primal problem directly and
+solves it exactly, which guarantees that the resulting matrix is a sparse
+matrix. Global convergence result is established for the proposed method.
+Numerical results on both synthetic problems and the real applications from
+classification of text data and senate voting data are reported to demonstrate
+the efficacy of our method.

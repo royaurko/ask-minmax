@@ -1,0 +1,18 @@
+In this paper we present the solver DuQuad specialized for solving general
+convex quadratic problems arising in many engineering applications. When it is
+difficult to project on the primal feasible set, we use the (augmented)
+Lagrangian relaxation to handle the complicated constraints and then, we apply
+dual first order algorithms based on inexact dual gradient information for
+solving the corresponding dual problem. The iteration complexity analysis is
+based on two types of approximate primal solutions: the primal last iterate and
+an average of primal iterates. We provide computational complexity estimates on
+the primal suboptimality and feasibility violation of the generated approximate
+primal solutions. Then, these algorithms are implemented in the programming
+language C in DuQuad, and optimized for low iteration complexity and low memory
+footprint. DuQuad has a dynamic Matlab interface which make the process of
+testing, comparing, and analyzing the algorithms simple. The algorithms are
+implemented using only basic arithmetic and logical operations and are suitable
+to run on low cost hardware. It is shown that if an approximate solution is
+sufficient for a given application, there exists problems where some of the
+implemented algorithms obtain the solution faster than state-of-the-art
+commercial solvers.

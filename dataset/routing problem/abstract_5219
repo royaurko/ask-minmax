@@ -1,0 +1,18 @@
+Many AI synthesis problems such as planning or scheduling may be modelized as
+constraint satisfaction problems (CSP). A CSP is typically defined as the
+problem of finding any consistent labeling for a fixed set of variables
+satisfying all given constraints between these variables. However, for many
+real tasks such as job-shop scheduling, time-table scheduling, design?, all
+these constraints have not the same significance and have not to be necessarily
+satisfied. A first distinction can be made between hard constraints, which
+every solution should satisfy and soft constraints, whose satisfaction has not
+to be certain. In this paper, we formalize the notion of possibilistic
+constraint satisfaction problems that allows the modeling of uncertainly
+satisfied constraints. We use a possibility distribution over labelings to
+represent respective possibilities of each labeling. Necessity-valued
+constraints allow a simple expression of the respective certainty degrees of
+each constraint. The main advantage of our approach is its integration in the
+CSP technical framework. Most classical techniques, such as Backtracking (BT),
+arcconsistency enforcing (AC) or Forward Checking have been extended to handle
+possibilistics CSP and are effectively implemented. The utility of our approach
+is demonstrated on a simple design problem.

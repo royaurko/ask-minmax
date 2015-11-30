@@ -1,0 +1,11 @@
+The Integer Programming Problem (IP) for a polytope P \subseteq R^n is to
+find an integer point in P or decide that P is integer free. We give an
+algorithm for an approximate version of this problem, which correctly decides
+whether P contains an integer point or whether a (1+\eps) scaling of P around
+its barycenter is integer free in time O(1/\eps^2)^n. We reduce this
+approximate IP question to an approximate Closest Vector Problem (CVP) in a
+"near-symmetric" semi-norm, which we solve via a sieving technique first
+developed by Ajtai, Kumar, and Sivakumar (STOC 2001). Our main technical
+contribution is an extension of the AKS sieving technique which works for any
+near-symmetric semi-norm. Our results also extend to general convex bodies and
+lattices.

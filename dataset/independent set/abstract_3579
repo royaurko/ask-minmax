@@ -1,0 +1,26 @@
+The Magnetic Tower of Hanoi puzzle - a modified "base 3" version of the
+classical Tower of Hanoi puzzle as described in earlier papers, is actually a
+small set of independent sister-puzzles, depending on the "pre-coloring"
+combination of the tower's posts. Starting with Red facing up on a Source post,
+working through an Intermediate - colored or Neutral post, and ending Blue
+facing up on a Destination post, we identify the different pre-coloring
+combinations in (S,I,D) order. The Tower's pre-coloring combinations are
+{[(R,B,B) / (R,R,B)] ; [(R,B,N) / (N,R,B)] ; [(N,B,N) / (N,R,N)] ; [R,N,B] ;
+[(R,N,N) / (N,N,B)] ; [N,N,N]}. In this paper we investigate these
+sister-puzzles, identify the algorithm that optimally solves each pre-colored
+puzzle, and prove its Optimality. As it turns out, five of the six algorithms,
+challenging on their own, are part of the algorithm solving the "natural", Free
+Magnetic Tower of Hanoi puzzle [N,N,N]. We start by showing that the N-disk
+Colored Tower [(R,B,B) / (R,R,B)] is solved by (3^N - 1)/2 moves. Defining
+"Algorithm Duration" as the ratio of number of algorithm-moves solving the
+puzzle to the number of algorithm-moves solving the Colored Tower, we find the
+Duration-Limits for all sister-puzzles. In the order of the list above they are
+{[1] ; [10/11] ; [10/11] ; [8/11] ; [7/11] ; [20/33]}. Thus, the Duration-Limit
+of the Optimal Algorithm solving the Free Magnetic Tower of Hanoi puzzle is
+20/33 or 606 0/00. On the road to optimally solve this colorful Magnetic
+puzzle, we hit other "forward-moving" puzzle-solving algorithms. Overall we
+looked at 10 pairs of integer sequences. Of the twenty integer sequences, five
+are listed in the On-line Encyclopedia of Integer Sequences, the other fifteen
+- not yet. The large set of different solutions is a clear indication to the
+freedom-of-wondering that makes this Magnetic Tower of Hanoi puzzle so
+colorful.

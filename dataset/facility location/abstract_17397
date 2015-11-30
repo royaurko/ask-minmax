@@ -1,0 +1,18 @@
+Spatiotemporal simulation of minimum and maximum temperature is a fundamental
+requirement for climate impact studies and hydrological or agricultural models.
+Particularly over regions with variable orography, these simulations are
+difficult to produce due to terrain driven nonstationarity. We develop a
+bivariate stochastic model for the spatiotemporal field of minimum and maximum
+temperature. The proposed framework splits the bivariate field into two
+components of "local climate" and "weather." The local climate component is a
+linear model with spatially varying process coefficients capturing the annual
+cycle and yielding local climate estimates at all locations, not only those
+within the observation network. The weather component spatially correlates the
+bivariate simulations, whose matrix-valued covariance function we estimate
+using a nonparametric kernel smoother that retains nonnegative definiteness and
+allows for substantial nonstationarity across the simulation domain. The
+statistical model is augmented with a spatially varying nugget effect to allow
+for locally varying small scale variability. Our model is applied to a daily
+temperature data set covering the complex terrain of Colorado, USA, and
+successfully accommodates substantial temporally varying nonstationarity in
+both the direct-covariance and cross-covariance functions.

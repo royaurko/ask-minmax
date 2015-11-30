@@ -1,0 +1,16 @@
+In this paper, we discuss and compare several policies to place replicas in
+tree networks, subject to server capacity and QoS constraints. The client
+requests are known beforehand, while the number and location of the servers are
+to be determined. The standard approach in the literature is to enforce that
+all requests of a client be served by the closest server in the tree. We
+introduce and study two new policies. In the first policy, all requests from a
+given client are still processed by the same server, but this server can be
+located anywhere in the path from the client to the root. In the second policy,
+the requests of a given client can be processed by multiple servers. One major
+contribution of this paper is to assess the impact of these new policies on the
+total replication cost. Another important goal is to assess the impact of
+server heterogeneity, both from a theoretical and a practical perspective. In
+this paper, we establish several new complexity results, and provide several
+efficient polynomial heuristics for NP-complete instances of the problem. These
+heuristics are compared to an absolute lower bound provided by the formulation
+of the problem in terms of the solution of an integer linear program.

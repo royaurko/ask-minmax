@@ -1,0 +1,18 @@
+Wyner-Ziv coding (WZC) is a compression technique using decoder side
+information, which is unknown at the encoder, to help the reconstruction. In
+this paper, we propose and implement a new WZC structure, called residual WZC,
+for the quadratic-Gaussian Wyner-Ziv problem where side information can be
+arbitrarily distributed. In our two-stage residual WZC, the source is quantized
+twice and the input of the second stage is the quantization error (residue) of
+the first stage. The codebook of the first stage quantizer must be
+simultaneously good for source and channel coding, since it also acts as a
+channel code at the decoder. Stemming from the non-ideal quantization at the
+encoder, a problem of channel decoding beyond capacity is identified and solved
+when we design the practical decoder. Moreover,by using the modified reinforced
+belief-propagation quantization algorithm, the low-density parity check code
+(LDPC), whose edge degree is optimized for channel coding, also performs well
+as a source code. We then implement the residual WZC by an LDPC and a low
+density generator matrix code (LDGM). The simulation results show that our
+practical construction approaches the Wyner-Ziv bound. Compared with previous
+works, our construction can offer more design lexibility in terms of
+distribution of side information and practical code rate selection.

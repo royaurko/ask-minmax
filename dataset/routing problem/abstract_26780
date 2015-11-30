@@ -1,0 +1,17 @@
+In physics, it is sometimes desirable to compute the so-called \emph{Density
+Of States} (DOS), also known as the \emph{spectral density}, of a real
+symmetric matrix $A$. The spectral density can be viewed as a probability
+density distribution that measures the likelihood of finding eigenvalues near
+some point on the real line. The most straightforward way to obtain this
+density is to compute all eigenvalues of $A$. But this approach is generally
+costly and wasteful, especially for matrices of large dimension. There exists
+alternative methods that allow us to estimate the spectral density function at
+much lower cost. The major computational cost of these methods is in
+multiplying $A$ with a number of vectors, which makes them appealing for
+large-scale problems where products of the matrix $A$ with arbitrary vectors
+are relatively inexpensive. This paper defines the problem of estimating the
+spectral density carefully, and discusses how to measure the accuracy of an
+approximate spectral density. It then surveys a few known methods for
+estimating the spectral density, and proposes some new variations of existing
+methods. All methods are discussed from a numerical linear algebra point of
+view.

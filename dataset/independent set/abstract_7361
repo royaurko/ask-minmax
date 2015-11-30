@@ -1,0 +1,18 @@
+The identification of predefined groups of genes ("gene-sets") which are
+differentially expressed between two conditions ("gene-set analysis", or GSA)
+is a very popular analysis in bioinformatics. GSA incorporates biological
+knowledge by aggregating over genes that are believed to be functionally
+related. This can enhance statistical power over analyses that consider only
+one gene at a time. However, currently available GSA approaches are all based
+on univariate two-sample comparison of single genes. This means that they
+cannot test for differences in covariance structure between the two conditions.
+Yet interplay between genes is a central aspect of biological investigation and
+it is likely that such interplay may differ between conditions. This paper
+proposes a novel approach for gene-set analysis that allows for truly
+multivariate hypotheses, in particular differences in gene-gene networks
+between conditions. Testing hypotheses concerning networks is challenging due
+the nature of the underlying estimation problem. Our starting point is a
+recent, general approach for high-dimensional two-sample testing. We refine the
+approach and show how it can be used to perform multivariate, network-based
+gene-set testing. We validate the approach in simulated examples and show
+results using high-throughput data from several studies in cancer biology.

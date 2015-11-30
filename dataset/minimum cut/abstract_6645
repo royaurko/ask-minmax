@@ -1,0 +1,17 @@
+Meshes composed of well-centered simplices have nice orthogonal dual meshes
+(the dual Voronoi diagram). This is useful for certain numerical algorithms
+that prefer such primal-dual mesh pairs. We prove that well-centered meshes
+also have optimality properties and relationships to Delaunay and minmax angle
+triangulations. We present an iterative algorithm that seeks to transform a
+given triangulation in two or three dimensions into a well-centered one by
+minimizing a cost function and moving the interior vertices while keeping the
+mesh connectivity and boundary vertices fixed. The cost function is a direct
+result of a new characterization of well-centeredness in arbitrary dimensions
+that we present. Ours is the first optimization-based heuristic for
+well-centeredness, and the first one that applies in both two and three
+dimensions. We show the results of applying our algorithm to small and large
+two-dimensional meshes, some with a complex boundary, and obtain a
+well-centered tetrahedralization of the cube. We also show numerical evidence
+that our algorithm preserves gradation and that it improves the maximum and
+minimum angles of acute triangulations created by the best known previous
+method.

@@ -1,0 +1,22 @@
+We present a careful analysis of possible issues on the application of the
+self-excited Hawkes process to high-frequency financial data. We carefully
+analyze a set of effects leading to significant biases in the estimation of the
+"criticality index" n that quantifies the degree of endogeneity of how much
+past events trigger future events. We report a number of model biases that are
+intrinsic to the estimation of brnaching ratio (n) when using power law memory
+kernels. We demonstrate that the calibration of the Hawkes process on mixtures
+of pure Poisson process with changes of regime leads to completely spurious
+apparent critical values for the branching ratio (n~1) while the true value is
+actually n=0. More generally, regime shifts on the parameters of the Hawkes
+model and/or on the generating process itself are shown to systematically lead
+to a significant upward bias in the estimation of the branching ratio. We also
+demonstrate the importance of the preparation of the high-frequency financial
+data and give special care to the decrease of quality of the timestamps of tick
+data due to latency and grouping of messages to packets by the stock exchange.
+Altogether, our careful exploration of the caveats of the calibration of the
+Hawkes process stresses the need for considering all the above issues before
+any conclusion can be sustained. In this respect, because the above effects are
+plaguing their analyses, the claim by Hardiman, Bercot and Bouchaud (2013) that
+financial market have been continuously functioning at or close to criticality
+(n~1) cannot be supported. In contrast, our previous results on E-mini S&P 500
+Futures Contracts and on major commodity future contracts are upheld.

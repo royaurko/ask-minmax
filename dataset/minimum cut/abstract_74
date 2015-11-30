@@ -1,0 +1,24 @@
+An interleaver is a critical component for the channel coding performance of
+turbo codes. Algebraic constructions are of particular interest because they
+admit analytical designs and simple, practical hardware implementation. Also,
+the recently proposed quadratic permutation polynomial (QPP) based interleavers
+by Sun and Takeshita (IEEE Trans. Inf. Theory, Jan. 2005) provide excellent
+performance for short-to-medium block lengths, and have been selected for the
+3GPP LTE standard. In this work, we derive some upper bounds on the best
+achievable minimum distance dmin of QPP-based conventional binary turbo codes
+(with tailbiting termination, or dual termination when the interleaver length N
+is sufficiently large) that are tight for larger block sizes. In particular, we
+show that the minimum distance is at most 2(2^{\nu +1}+9), independent of the
+interleaver length, when the QPP has a QPP inverse, where {\nu} is the degree
+of the primitive feedback and monic feedforward polynomials. However, allowing
+the QPP to have a larger degree inverse may give strictly larger minimum
+distances (and lower multiplicities). In particular, we provide several QPPs
+with an inverse degree of at least three for some of the 3GPP LTE interleaver
+lengths giving a dmin with the 3GPP LTE constituent encoders which is strictly
+larger than 50. For instance, we have found a QPP for N=6016 which gives an
+estimated dmin of 57. Furthermore, we provide the exact minimum distance and
+the corresponding multiplicity for all 3GPP LTE turbo codes (with dual
+termination) which shows that the best minimum distance is 51. Finally, we
+compute the best achievable minimum distance with QPP interleavers for all 3GPP
+LTE interleaver lengths N <= 4096, and compare the minimum distance with the
+one we get when using the 3GPP LTE polynomials.

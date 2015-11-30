@@ -1,0 +1,17 @@
+The NP-hard 2-Club problem is, given an undirected graph G=(V,E) and l\in N,
+to decide whether there is a vertex set S\subseteq V of size at least l such
+that the induced subgraph G[S] has diameter at most two. We make progress
+towards a systematic classification of the complexity of 2-Club with respect to
+a hierarchy of prominent structural graph parameters. First, we present the
+following tight NP-hardness results: 2-Club is NP-hard on graphs that become
+bipartite by deleting one vertex, on graphs that can be covered by three
+cliques, and on graphs with domination number two and diameter three. Then, we
+consider the parameter h-index of the input graph. This parameter is motivated
+by real-world instances and the fact that 2-Club is fixed-parameter tractable
+with respect to the larger parameter maximum degree. We present an algorithm
+that solves 2-Club in |V|^{f(k)} time with k being the h-index. By showing
+W[1]-hardness for this parameter, we provide evidence that the above algorithm
+cannot be improved to a fixed-parameter algorithm. Furthermore, the reduction
+used for this hardness result can be modified to show that 2-Club is NP-hard if
+the input graph has constant degeneracy. Finally, we show that 2-Club is
+fixed-parameter tractable with respect to distance to cographs.

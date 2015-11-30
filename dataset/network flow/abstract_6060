@@ -1,0 +1,18 @@
+Rooted phylogenetic networks are often used to represent conflicting
+phylogenetic signals. Given a set of clusters, a network is said to represent
+these clusters in the "softwired" sense if, for each cluster in the input set,
+at least one tree embedded in the network contains that cluster. Motivated by
+parsimony we might wish to construct such a network using as few reticulations
+as possible, or minimizing the "level" of the network, i.e. the maximum number
+of reticulations used in any "tangled" region of the network. Although these
+are NP-hard problems, here we prove that, for every fixed k >= 0, it is
+polynomial-time solvable to construct a phylogenetic network with level equal
+to k representing a cluster set, or to determine that no such network exists.
+However, this algorithm does not lend itself to a practical implementation. We
+also prove that the comparatively efficient Cass algorithm correctly solves
+this problem (and also minimizes the reticulation number) when input clusters
+are obtained from two not necessarily binary gene trees on the same set of taxa
+but does not always minimize level for general cluster sets. Finally, we
+describe a new algorithm which generates in polynomial-time all binary
+phylogenetic networks with exactly r reticulations representing a set of input
+clusters (for every fixed r >= 0).

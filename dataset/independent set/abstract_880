@@ -1,0 +1,16 @@
+We analyze the observability of motion estimates from the fusion of visual
+and inertial sensors. Because the model contains unknown parameters, such as
+sensor biases, the problem is usually cast as a mixed identification/filtering,
+and the resulting observability analysis provides a necessary condition for any
+algorithm to converge to a unique point estimate. Unfortunately, most models
+treat sensor bias rates as noise, independent of other states including biases
+themselves, an assumption that is patently violated in practice. When this
+assumption is lifted, the resulting model is not observable, and therefore past
+analyses cannot be used to conclude that the set of states that are
+indistinguishable from the measurements is a singleton. In other words, the
+resulting model is not observable. We therefore re-cast the analysis as one of
+sensitivity: Rather than attempting to prove that the indistinguishable set is
+a singleton, which is not the case, we derive bounds on its volume, as a
+function of characteristics of the input and its sufficient excitation. This
+provides an explicit characterization of the indistinguishable set that can be
+used for analysis and validation purposes.

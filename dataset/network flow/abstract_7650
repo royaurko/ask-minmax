@@ -1,0 +1,9 @@
+The Windows Vista operating system implements an interesting model of
+multi-level integrity. We observe that in this model, trusted code can be
+blamed for any information-flow attack; thus, it is possible to eliminate such
+attacks by static analysis of trusted code. We formalize this model by
+designing a type system that can efficiently enforce data-flow integrity on
+Windows Vista. Typechecking guarantees that objects whose contents are
+statically trusted never contain untrusted values, regardless of what untrusted
+code runs in the environment. Some of Windows Vista's runtime access checks are
+necessary for soundness; others are redundant and can be optimized away.

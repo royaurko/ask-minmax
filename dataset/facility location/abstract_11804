@@ -1,0 +1,16 @@
+Reasoning about security properties involves reasoning about where the
+information of a system is located, and how it evolves over time. While most
+security analysis techniques need to cope with some notions of information
+locality and knowledge propagation, usually they do not provide a general
+language for expressing arbitrary properties involving local knowledge and
+knowledge transfer. Building on this observation, we introduce a framework for
+security protocol analysis based on dynamic spatial logic specifications. Our
+computational model is a variant of existing pi-calculi, while specifications
+are expressed in a dynamic spatial logic extended with an epistemic operator.
+We present the syntax and semantics of the model and logic, and discuss the
+expressiveness of the approach, showing it complete for passive attackers. We
+also prove that generic Dolev-Yao attackers may be mechanically determined for
+any deterministic finite protocol, and discuss how this result may be used to
+reason about security properties of open systems. We also present a
+model-checking algorithm for our logic, which has been implemented as an
+extension to the SLMC system.

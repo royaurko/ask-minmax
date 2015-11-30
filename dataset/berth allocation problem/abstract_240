@@ -1,0 +1,26 @@
+We study an interactive live streaming scenario where multiple peers pull
+streams of the same free viewpoint video that are synchronized in time but not
+necessarily in view. In free viewpoint video, each user can periodically select
+a virtual view between two anchor camera views for display. The virtual view is
+synthesized using texture and depth videos of the anchor views via
+depth-image-based rendering (DIBR). In general, the distortion of the virtual
+view increases with the distance to the anchor views, and hence it is
+beneficial for a peer to select the closest anchor views for synthesis. On the
+other hand, if peers interested in different virtual views are willing to
+tolerate larger distortion in using more distant anchor views, they can
+collectively share the access cost of common anchor views.
+  Given anchor view access cost and synthesized distortion of virtual views
+between anchor views, we study the optimization of anchor view allocation for
+collaborative peers. We first show that, if the network reconfiguration costs
+due to view-switching are negligible, the problem can be optimally solved in
+polynomial time using dynamic programming. We then consider the case of
+non-negligible reconfiguration costs (e.g., large or frequent view-switching
+leading to anchor-view changes). In this case, the view allocation problem
+becomes NP-hard. We thus present a locally optimal and centralized allocation
+algorithm inspired by Lloyd's algorithm in non-uniform scalar quantization. We
+also propose a distributed algorithm with guaranteed convergence where each
+peer group independently make merge-and-split decisions with a well-defined
+fairness criteria. The results show that depending on the problem settings, our
+proposed algorithms achieve respective optimal and close-to-optimal performance
+in terms of total cost, and outperform a P2P scheme without collaborative
+anchor selection.

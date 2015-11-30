@@ -1,0 +1,20 @@
+Higher-Order Fixpoint Logic (HFL) is a hybrid of the simply typed
+\lambda-calculus and the modal \lambda-calculus. This makes it a highly
+expressive temporal logic that is capable of expressing various interesting
+correctness properties of programs that are not expressible in the modal
+\lambda-calculus.
+  This paper provides complexity results for its model checking problem. In
+particular we consider those fragments of HFL built by using only types of
+bounded order k and arity m. We establish k-fold exponential time completeness
+for model checking each such fragment. For the upper bound we use fixpoint
+elimination to obtain reachability games that are singly-exponential in the
+size of the formula and k-fold exponential in the size of the underlying
+transition system. These games can be solved in deterministic linear time. As a
+simple consequence, we obtain an exponential time upper bound on the expression
+complexity of each such fragment.
+  The lower bound is established by a reduction from the word problem for
+alternating (k-1)-fold exponential space bounded Turing Machines. Since there
+are fixed machines of that type whose word problems are already hard with
+respect to k-fold exponential time, we obtain, as a corollary, k-fold
+exponential time completeness for the data complexity of our fragments of HFL,
+provided m exceeds 3. This also yields a hierarchy result in expressive power.

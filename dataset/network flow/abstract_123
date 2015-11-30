@@ -1,0 +1,16 @@
+It is well-known that the Ford-Fulkerson algorithm for finding a maximum flow
+in a network need not terminate if we allow the arc capacities to take
+irrational values. Every non-terminating example converges to a limit flow, but
+this limit flow need not be a maximum flow. Hence, one may pass to the limit
+and begin the algorithm again. In this way, we may view the Ford-Fulkerson
+algorithm as a transfinite algorithm.
+  We analyze the transfinite running-time of the Ford-Fulkerson algorithm using
+ordinal numbers, and prove that the worst case running-time is
+$\omega^{\Theta(|E|)}$. For the lower bound, we show that we can model the
+Euclidean algorithm via Ford-Fulkerson on an auxiliary network. By running this
+example on a pair of incommensurable numbers, we obtain a new robust
+non-terminating example. We then describe how to glue $k$ copies of our
+Euclidean example in parallel to obtain running-time $\omega^k$. An upper bound
+of $\omega^{|E|}$ is established via induction on $|E|$. We conclude by
+illustrating a close connection to transfinite chip-firing as previously
+investigated by the first contributor.

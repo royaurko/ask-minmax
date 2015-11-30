@@ -1,0 +1,15 @@
+In this paper we investigate the top-$k$-selection problem, i.e. determine
+the largest, second largest, ..., and the $k$-th largest elements, in the
+dynamic data model. In this model the order of elements evolves dynamically
+over time. In each time step the algorithm can only probe the changes of data
+by comparing a pair of elements. Previously only two special cases were
+studied[2]: finding the largest element and the median; and sorting all
+elements. This paper systematically deals with $k\in [n]$ and solves the
+problem almost completely. Specifically, we identify a critical point $k^*$
+such that the top-$k$-selection problem can be solved error-free with
+probability $1-o(1)$ if and only if $k=o(k^*)$. A lower bound of the error when
+$k=\Omega(k^*)$ is also determined, which actually is tight under some
+condition. On the other hand, it is shown that the top-$k$-set problem, which
+means finding the largest $k$ elements without sorting them, can be solved
+error-free for all $k\in [n]$. Additionally, we extend the dynamic data model
+and show that most of these results still hold.

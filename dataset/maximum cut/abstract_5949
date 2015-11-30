@@ -1,0 +1,16 @@
+We give alternative definitions for maximum matching width, e.g. a graph $G$
+has $\operatorname{mmw}(G) \leq k$ if and only if it is a subgraph of a chordal
+graph $H$ and for every maximal clique $X$ of $H$ there exists $A,B,C \subseteq
+X$ with $A \cup B \cup C=X$ and $|A|,|B|,|C| \leq k$ such that any subset of
+$X$ that is a minimal separator of $H$ is a subset of either $A, B$ or $C$.
+Treewidth and branchwidth have alternative definitions through intersections of
+subtrees, where treewidth focuses on nodes and branchwidth focuses on edges. We
+show that mm-width combines both aspects, focusing on nodes and on edges. Based
+on this we prove that given a graph $G$ and a branch decomposition of mm-width
+$k$ we can solve Dominating Set in time $O^*({8^k})$, thereby beating
+$O^*(3^{\operatorname{tw}(G)})$ whenever $\operatorname{tw}(G) > \log_3{8}
+\times k \approx 1.893 k$. Note that $\operatorname{mmw}(G) \leq
+\operatorname{tw}(G)+1 \leq 3 \operatorname{mmw}(G)$ and these inequalities are
+tight. Given only the graph $G$ and using the best known algorithms to find
+decompositions, maximum matching width will be better for solving Dominating
+Set whenever $\operatorname{tw}(G) > 1.549 \times \operatorname{mmw}(G)$.

@@ -1,0 +1,15 @@
+Two mobile agents (robots) have to meet in an a priori unknown bounded
+terrain modeled as a polygon, possibly with polygonal obstacles. Agents are
+modeled as points, and each of them is equipped with a compass. Compasses of
+agents may be incoherent. Agents construct their routes, but the actual walk of
+each agent is decided by the adversary: the movement of the agent can be at
+arbitrary speed, the agent may sometimes stop or go back and forth, as long as
+the walk of the agent in each segment of its route is continuous, does not
+leave it and covers all of it. We consider several scenarios, depending on
+three factors: (1) obstacles in the terrain are present, or not, (2) compasses
+of both agents agree, or not, (3) agents have or do not have a map of the
+terrain with their positions marked. The cost of a rendezvous algorithm is the
+worst-case sum of lengths of the agents' trajectories until their meeting. For
+each scenario we design a deterministic rendezvous algorithm and analyze its
+cost. We also prove lower bounds on the cost of any deterministic rendezvous
+algorithm in each case. For all scenarios these bounds are tight.

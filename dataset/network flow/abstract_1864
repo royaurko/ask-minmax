@@ -1,0 +1,22 @@
+Distributed network utility maximization (NUM) has received an increasing
+intensity of interest over the past few years. Distributed solutions (e.g., the
+primal-dual gradient method) have been intensively investigated under fading
+channels. As such distributed solutions involve iterative updating and explicit
+message passing, it is unrealistic to assume that the wireless channel remains
+unchanged during the iterations. Unfortunately, the behavior of those
+distributed solutions under time-varying channels is in general unknown. In
+this paper, we shall investigate the convergence behavior and tracking errors
+of the iterative primal-dual scaled gradient algorithm (PDSGA) with dynamic
+scaling matrices (DSC) for solving distributive NUM problems under time-varying
+fading channels. We shall also study a specific application example, namely the
+multi-commodity flow control and multi-carrier power allocation problem in
+multi-hop ad hoc networks. Our analysis shows that the PDSGA converges to a
+limit region rather than a single point under the finite state Markov chain
+(FSMC) fading channels. We also show that the order of growth of the tracking
+errors is given by O(T/N), where T and N are the update interval and the
+average sojourn time of the FSMC, respectively. Based on this analysis, we
+derive a low complexity distributive adaptation algorithm for determining the
+adaptive scaling matrices, which can be implemented distributively at each
+transmitter. The numerical results show the superior performance of the
+proposed dynamic scaling matrix algorithm over several baseline schemes, such
+as the regular primal-dual gradient algorithm.

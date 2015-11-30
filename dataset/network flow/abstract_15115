@@ -1,0 +1,15 @@
+This paper investigates the operator mapping problem for in-network
+stream-processing applications. In-network stream-processing amounts to
+applying one or more trees of operators in steady-state, to multiple data
+objects that are continuously updated at different locations in the network.
+The goal is to compute some final data at some desired rate. Different operator
+trees may share common subtrees. Therefore, it may be possible to reuse some
+intermediate results in different application trees. The first contribution of
+this work is to provide complexity results for different instances of the basic
+problem, as well as integer linear program formulations of various problem
+instances. The second second contribution is the design of several
+polynomial-time heuristics. One of the primary objectives of these heuristics
+is to reuse intermediate results shared by multiple applications. Our
+quantitative comparisons of these heuristics in simulation demonstrates the
+importance of choosing appropriate processors for operator mapping. It also
+allow us to identify a heuristic that achieves good results in practice.

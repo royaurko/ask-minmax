@@ -1,0 +1,12 @@
+We show that the Hausdorff distance for two sets of non-intersecting line
+segments can be computed in parallel in $O(\log^2 n)$ time using O(n)
+processors in a CREW-PRAM computation model. We discuss how some parts of the
+sequential algorithm can be performed in parallel using previously known
+parallel algorithms; and identify the so-far unsolved part of the problem for
+the parallel computation, which is the following: Given two sets of
+$x$-monotone curve segments, red and blue, for each red segment find its
+extremal intersection points with the blue set, i.e. points with the minimal
+and maximal $x$-coordinate. Each segment set is assumed to be intersection
+free. For this intersection problem we describe a parallel algorithm which
+completes the Hausdorff distance computation within the stated time and
+processor bounds.

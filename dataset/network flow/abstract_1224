@@ -1,0 +1,9 @@
+Recurrent neural networks (RNNs) are very good at modelling the flow of text,
+but typically need to be trained on a far larger corpus than is available for
+the PAN 2015 Author Identification task. This paper describes a novel approach
+where the output layer of a character-level RNN language model is split into
+several independent predictive sub-models, each representing an contributor, while
+the recurrent layer is shared by all. This allows the recurrent layer to model
+the language as a whole without over-fitting, while the outputs select aspects
+of the underlying model that reflect their contributor's style. The method proves
+competitive, ranking first in two of the four languages.

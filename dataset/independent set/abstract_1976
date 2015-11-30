@@ -1,0 +1,24 @@
+There has been a recent interest in understanding the power of local
+algorithms for optimization and inference problems on sparse graphs. Gamarnik
+and Sudan (2014) showed that local algorithms are weaker than global algorithms
+for finding large independent sets in sparse random regular graphs. Montanari
+(2015) showed that local algorithms are suboptimal for finding a community with
+high connectivity in the sparse Erd\H{o}s-R\'enyi random graphs. For the
+symmetric planted partition problem (also named community detection for the
+block models) on sparse graphs, a simple observation is that local algorithms
+cannot have non-trivial performance.
+  In this work we consider the effect of side information on local algorithms
+for community detection under the binary symmetric stochastic block model. In
+the block model with side information each of the $n$ vertices is labeled $+$
+or $-$ independently and uniformly at random; each pair of vertices is
+connected independently with probability $a/n$ if both of them have the same
+label or $b/n$ otherwise. The goal is to estimate the underlying vertex
+labeling given 1) the graph structure and 2) side information in the form of a
+vertex labeling positively correlated with the true one. Assuming that the
+ratio between in and out degree $a/b$ is $\Theta(1)$ and the average degree $
+(a+b) / 2 = n^{o(1)}$, we characterize three different regimes under which a
+local algorithm, namely, belief propagation run on the local neighborhoods,
+maximizes the expected fraction of vertices labeled correctly. Thus, in
+contrast to the case of symmetric block models without side information, we
+show that local algorithms can achieve optimal performance for the block model
+with side information.

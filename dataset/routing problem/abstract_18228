@@ -1,0 +1,16 @@
+In this paper, we identify a fragment of second-order logic with restricted
+quantification that is expressive enough to capture numerous static analysis
+problems (e.g. safety proving, bug finding, termination and non-termination
+proving, superoptimisation). We call this fragment the {\it synthesis
+fragment}. Satisfiability of a formula in the synthesis fragment is decidable
+over finite domains; specifically the decision problem is NEXPTIME-complete. If
+a formula in this fragment is satisfiable, a solution consists of a satisfying
+assignment from the second order variables to \emph{functions over finite
+domains}. To concretely find these solutions, we synthesise \emph{programs}
+that compute the functions. Our program synthesis algorithm is complete for
+finite state programs, i.e. every \emph{function} over finite domains is
+computed by some \emph{program} that we can synthesise. We can therefore use
+our synthesiser as a decision procedure for the synthesis fragment of
+second-order logic, which in turn allows us to use it as a powerful backend for
+many program analysis tasks. To show the tractability of our approach, we
+evaluate the program synthesiser on several static analysis problems.

@@ -1,0 +1,16 @@
+The Quality of Experience (QoE) of streaming service is often degraded by
+frequent playback interruptions. To mitigate the interruptions, the media
+player prefetches streaming contents before starting playback, at a cost of
+delay. We study the QoE of streaming from the perspective of flow dynamics.
+First, a framework is developed for QoE when streaming users join the network
+randomly and leave after downloading completion. We compute the distribution of
+prefetching delay using partial differential equations (PDEs), and the
+probability generating function of playout buffer starvations using ordinary
+differential equations (ODEs) for CBR streaming. Second, we extend our
+framework to characterize the throughput variation caused by opportunistic
+scheduling at the base station, and the playback variation of VBR streaming.
+Our study reveals that the flow dynamics is the fundamental reason of playback
+starvation. The QoE of streaming service is dominated by the first moments such
+as the average throughput of opportunistic scheduling and the mean playback
+rate. While the variances of throughput and playback rate have very limited
+impact on starvation behavior.

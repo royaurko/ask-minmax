@@ -1,0 +1,14 @@
+We provide an O(log log OPT)-approximation algorithm for the problem of
+guarding a simple polygon with guards on the perimeter. We first design a
+polynomial-time algorithm for building epsilon-nets of size O(1/epsilon log log
+1/epsilon) for the instances of Hitting Set associated with our guarding
+problem. We then apply the technique of Bronnimann and Goodrich to build an
+approximation algorithm from this epsilon-net finder. Along with a simple
+polygon P, our algorithm takes as input a finite set of potential guard
+locations that must include the polygon's vertices. If a finite set of
+potential guard locations is not specified, e.g. when guards may be placed
+anywhere on the perimeter, we use a known discretization technique at the cost
+of making the algorithm's running time potentially linear in the ratio between
+the longest and shortest distances between vertices. Our algorithm is the first
+to improve upon O(log OPT)-approximation algorithms that use generic net
+finders for set systems of finite VC-dimension.

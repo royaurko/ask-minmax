@@ -1,0 +1,15 @@
+This paper introduces a new semi-parametric approach to the pricing and risk
+management of bespoke CDO tranches, with a particular attention to bespokes
+that need to be mapped onto more than one reference portfolio. The only user
+input in our framework is a multi-factor model (a "prior" model hereafter) for
+index portfolios, such as CDX.NA.IG or iTraxx Europe, that are chosen as
+benchmark securities for the pricing of a given bespoke CDO. Parameters of the
+prior model are fixed, and not tuned to match prices of benchmark index
+tranches. Instead, our calibration procedure amounts to a proper reweightening
+of the prior measure using the Minimum Cross Entropy method. As the latter
+problem reduces to convex optimization in a low dimensional space, our model is
+computationally efficient. Both the static (one-period) and dynamic versions of
+the model are presented. The latter can be used for pricing and risk management
+of more exotic instruments referencing bespoke portfolios, such as
+forward-starting tranches or tranche options, and for calculation of credit
+valuation adjustment (CVA) for bespoke tranches.

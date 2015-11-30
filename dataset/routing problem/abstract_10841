@@ -1,0 +1,25 @@
+Top-k query processing finds a list of k results that have largest scores
+w.r.t the user given query, with the assumption that all the k results are
+independent to each other. In practice, some of the top-k results returned can
+be very similar to each other. As a result some of the top-k results returned
+are redundant. In the literature, diversified top-k search has been studied to
+return k results that take both score and diversity into consideration. Most
+existing solutions on diversified top-k search assume that scores of all the
+search results are given, and some works solve the diversity problem on a
+specific problem and can hardly be extended to general cases. In this paper, we
+study the diversified top-k search problem. We define a general diversified
+top-k search problem that only considers the similarity of the search results
+themselves. We propose a framework, such that most existing solutions for top-k
+query processing can be extended easily to handle diversified top-k search, by
+simply applying three new functions, a sufficient stop condition sufficient(),
+a necessary stop condition necessary(), and an algorithm for diversified top-k
+search on the current set of generated results, div-search-current(). We
+propose three new algorithms, namely, div-astar, div-dp, and div-cut to solve
+the div-search-current() problem. div-astar is an A* based algorithm, div-dp is
+an algorithm that decomposes the results into components which are searched
+using div-astar independently and combined using dynamic programming. div-cut
+further decomposes the current set of generated results using cut points and
+combines the results using sophisticated operations. We conducted extensive
+performance studies using two real datasets, enwiki and reuters. Our div-cut
+algorithm finds the optimal solution for diversified top-k search problem in
+seconds even for k as large as 2,000.

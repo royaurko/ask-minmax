@@ -1,0 +1,20 @@
+We consider the problem of finding a local optimum for Max-Cut with
+FLIP-neighborhood, in which exactly one node changes the partition. Schaeffer
+and Yannakakis (SICOMP, 1991) showed PLS-completeness of this problem on graphs
+with unbounded degree. On the other side, Poljak (SICOMP, 1995) showed that in
+cubic graphs every FLIP local search takes O(n^2) steps, where n is the number
+of nodes. Due to the huge gap between degree three and unbounded degree,
+Ackermann, Roeglin, and Voecking (JACM, 2008) asked for the smallest d for
+which the local Max-Cut problem with FLIP-neighborhood on graphs with maximum
+degree d is PLS-complete. In this paper, we prove that the computation of a
+local optimum on graphs with maximum degree five is PLS-complete. Thus, we
+solve the problem posed by Ackermann et al. almost completely by showing that d
+is either four or five (unless PLS is in P). On the other side, we also prove
+that on graphs with degree O(log n) every FLIP local search has probably
+polynomial smoothed complexity. Roughly speaking, for any instance, in which
+the edge weights are perturbated by a (Gaussian) random noise with variance
+\sigma^2, every FLIP local search terminates in time polynomial in n and
+\sigma^{-1}, with probability 1-n^{-\Omega(1)}. Putting both results together,
+we may conclude that although local Max-Cut is likely to be hard on graphs with
+bounded degree, it can be solved in polynomial time for slightly perturbated
+instances with high probability.

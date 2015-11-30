@@ -1,0 +1,26 @@
+The existence of a polynomial kernel for Odd Cycle Transversal was a
+notorious open problem in parameterized complexity. Recently, this was settled
+by the present contributors (Kratsch and Wahlstr\"om, SODA 2012), with a randomized
+polynomial kernel for the problem, using matroid theory to encode flow
+questions over a set of terminals in size polynomial in the number of
+terminals.
+  In the current work we further establish the usefulness of matroid theory to
+kernelization by showing applications of a result on representative sets due to
+Lov\'asz (Combinatorial Surveys 1977) and Marx (TCS 2009). We show how
+representative sets can be used to give a polynomial kernel for the elusive
+Almost 2-SAT problem. We further apply the representative sets tool to the
+problem of finding irrelevant vertices in graph cut problems, i.e., vertices
+which can be made undeletable without affecting the status of the problem. This
+gives the first significant progress towards a polynomial kernel for the
+Multiway Cut problem; in particular, we get a kernel of O(k^{s+1}) vertices for
+Multiway Cut instances with at most s terminals. Both these kernelization
+results have significant spin-off effects, producing the first polynomial
+kernels for a range of related problems.
+  More generally, the irrelevant vertex results have implications for covering
+min-cuts in graphs. For a directed graph G=(V,E) and sets S, T \subseteq V, let
+r be the size of a minimum (S,T)-vertex cut (which may intersect S and T). We
+can find a set Z \subseteq V of size O(|S|*|T|*r) which contains a minimum
+(A,B)-vertex cut for every A \subseteq S, B \subseteq T. Similarly, for an
+undirected graph G=(V,E), a set of terminals X \subseteq V, and a constant s,
+we can find a set Z\subseteq V of size O(|X|^{s+1}) which contains a minimum
+multiway cut for any partition of X into at most s pairwise disjoint subsets.

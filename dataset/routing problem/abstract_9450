@@ -1,0 +1,14 @@
+We present a finite volume method that is applicable to hyperbolic PDEs
+including spatially varying and semilinear nonconservative systems. The spatial
+discretization, like that of the well-known Clawpack software, is based on
+solving Riemann problems and calculating fluctuations (not fluxes). The
+implementation employs weighted essentially non-oscillatory reconstruction in
+space and strong stability preserving Runge-Kutta integration in time. The
+method can be extended to arbitrarily high order of accuracy and allows a
+well-balanced implementation for capturing solutions of balance laws near
+steady state. This well-balancing is achieved through the $f$-wave Riemann
+solver and a novel wave-slope WENO reconstruction procedure. The wide
+applicability and advantageous properties of the method are demonstrated
+through numerical examples, including problems in nonconservative form,
+problems with spatially varying fluxes, and problems involving near-equilibrium
+solutions of balance laws.

@@ -1,0 +1,15 @@
+In the Permutation Constraint Satisfaction Problem (Permutation CSP) we are
+given a set of variables $V$ and a set of constraints C, in which constraints
+are tuples of elements of V. The goal is to find a total ordering of the
+variables, $\pi\ : V \rightarrow [1,...,|V|]$, which satisfies as many
+constraints as possible. A constraint $(v_1,v_2,...,v_k)$ is satisfied by an
+ordering $\pi$ when $\pi(v_1)<\pi(v_2)<...<\pi(v_k)$. An instance has arity $k$
+if all the constraints involve at most $k$ elements.
+  This problem expresses a variety of permutation problems including {\sc
+Feedback Arc Set} and {\sc Betweenness} problems. A naive algorithm, listing
+all the $n!$ permutations, requires $2^{O(n\log{n})}$ time. Interestingly, {\sc
+Permutation CSP} for arity 2 or 3 can be solved by Held-Karp type algorithms in
+time $O^*(2^n)$, but no algorithm is known for arity at least 4 with running
+time significantly better than $2^{O(n\log{n})}$. In this paper we resolve the
+gap by showing that {\sc Arity 4 Permutation CSP} cannot be solved in time
+$2^{o(n\log{n})}$ unless ETH fails.

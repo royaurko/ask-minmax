@@ -1,0 +1,11 @@
+The MWA is a next-generation radio interferometer under construction in
+remote Western Australia. The data rate from the correlator makes storing the
+raw data infeasible, so the data must be processed in real-time. The processing
+task is of order ~10 TFLOPS. The remote location of the MWA limits the power
+that can be allocated to computing. We describe the design and implementation
+of elements of the MWA real-time data processing system which leverage the
+computing abilities of modern graphics processing units (GPUs). The matrix
+algebra and texture mapping capabilities of GPUs are well suited to the
+majority of tasks involved in real-time calibration and imaging. Considerable
+performance advantages over a conventional CPU-based reference implementation
+are obtained.

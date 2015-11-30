@@ -1,0 +1,21 @@
+In previous work, we have introduced functional strategies, that is,
+first-class generic functions that can traverse into terms of any type while
+mixing uniform and type-specific behaviour. In the present paper, we give a
+detailed description of one particular Haskell-based model of functional
+strategies. This model is characterised as follows. Firstly, we employ
+first-class polymorphism as a form of second-order polymorphism as for the mere
+types of functional strategies. Secondly, we use an encoding scheme of run-time
+type case for mixing uniform and type-specific behaviour. Thirdly, we base all
+traversal on a fundamental combinator for folding over constructor
+applications.
+  Using this model, we capture common strategic traversal schemes in a highly
+parameterised style. We study two original forms of parameterisation. Firstly,
+we design parameters for the specific control-flow, data-flow and traversal
+characteristics of more concrete traversal schemes. Secondly, we use
+overloading to postpone commitment to a specific type scheme of traversal. The
+resulting portfolio of traversal schemes can be regarded as a challenging
+benchmark for setups for typed generic programming.
+  The way we develop the model and the suite of traversal schemes, it becomes
+clear that parameterised + typed strategic programming is best viewed as a
+potent combination of certain bits of parametric, intensional, polytypic, and
+ad-hoc polymorphism.

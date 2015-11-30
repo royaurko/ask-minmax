@@ -1,0 +1,16 @@
+In this paper we focus on the mobile sensor coverage problem formulated as a
+continuous locational optimization problem. Cort\`es et al. first proposed a
+distributed version of the Lloyd descent algorithm with guaranteed convergence
+to a local optima. Since then researchers have studied a number of variations
+of the coverage problem. The quality of the final solution with the Lloyd
+descent depends on the initial sensor configuration. Inspired by the recent
+results on a related $k$-means problem, in this paper we propose the
+weighted-$D^2$ sampling to choose the initial sensor configuration and show
+that it yields $O(\log k)$-competitive sensor coverage before even applying the
+Lloyd descent. Through extensive numerical simulations, we show that the
+initial coverage with the weighted-$D^2$ sampling is significantly lower than
+that with the uniform random initial sensor configuration. We also show that
+the average distance traveled by the sensors to reach the final configuration
+through the Lloyd descent is also significantly lower than that with the
+uniform random configuration. This also implies considerable savings in the
+energy spent by the sensors during motion and faster convergence.

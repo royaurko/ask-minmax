@@ -1,0 +1,15 @@
+Direct numerical simulation (DNS) for gas-solid flow is implemented on a
+multi-scale supercomputing system, Mole-8.5, featuring massive parallel GPU-CPU
+hybrid computing, for which the lattice Boltzmann method (LBM) is deployed
+together with the immersed moving boundary (IMB) method and discrete element
+method (DEM). A two-dimensional suspension with about 1,166,400 75-micron solid
+particles distributed in an area of 11.5cm x46cm, and a three-dimensional
+suspension with 129,024 solid particles in a domain of 0.384cm x1.512cm
+x0.384cm are fully-resolved below particle scale and distinct multi-scale
+heterogeneity are observed. Almost 20-fold speedup is achieved on one Nvidia
+C2050 GPU over one core of Intel E5520 CPU in double precision, and nearly
+ideal scalability is maintained when using up to 672 GPUs. The simulations
+demonstrate that LB-IMB-DEM modeling with parallel GPU computing may suggest a
+promising approach for exploring the fundamental mechanisms and constitutive
+laws of complex gas-solid flow, which are, so far, poorly understood in both
+experiments and theoretical studies.

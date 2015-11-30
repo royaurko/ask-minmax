@@ -1,0 +1,18 @@
+We consider the problem of estimating parameter sensitivity for Markovian
+models of reaction networks. Sensitivity values measure the responsiveness of
+an output to the model parameters. They help in analyzing the network,
+understanding its robustness properties and identifying the important reactions
+for a specific output. Sensitivity values are commonly estimated using methods
+that perform finite-difference computations along with Monte Carlo simulations
+of the reaction dynamics. These methods are computationally efficient and easy
+to implement, but they produce a biased estimate which can be unreliable for
+certain applications. Moreover the size of the bias is generally unknown and
+hence the accuracy of these methods cannot be easily determined. There also
+exist unbiased schemes for sensitivity estimation but these schemes can be
+computationally infeasible, even for simple networks. Our goal in this paper is
+to present a new method for sensitivity estimation, which combines the
+computational efficiency of finite-difference methods with the accuracy of
+unbiased schemes. Our method is easy to implement and it relies on an exact
+representation of parameter sensitivity that we recently proved in an earlier
+paper. Through examples we demonstrate that the proposed method can outperform
+the existing methods, both biased and unbiased, in many situations.

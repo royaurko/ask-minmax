@@ -1,0 +1,15 @@
+We present an algorithm and its parallel implementation for solving a self
+consistent problem as encountered in Hartree Fock or Density Functional Theory.
+The algorithm takes advantage of the sparsity of matrices through the use of
+local molecular orbitals. The implementation allows to exploit efficiently
+modern symmetric multiprocessing (SMP) computer architectures. As a first
+application, the algorithm is used within the density functional based tight
+binding method, for which most of the computational time is spent in the linear
+algebra routines (diagonalization of the Fock/Kohn-Sham matrix). We show that
+with this algorithm (i) single point calculations on very large systems
+(millions of atoms) can be performed on large SMP machines (ii) calculations
+involving intermediate size systems (1~000--100~000 atoms) are also strongly
+accelerated and can run efficiently on standard servers (iii) the error on the
+total energy due to the use of a cut-off in the molecular orbital coefficients
+can be controlled such that it remains smaller than the SCF convergence
+criterion.

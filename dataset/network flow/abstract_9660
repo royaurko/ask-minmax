@@ -1,0 +1,15 @@
+Many networks can be usefully decomposed into a dense core plus an outlying,
+loosely-connected periphery. Here we propose an algorithm for performing such a
+decomposition on empirical network data using methods of statistical inference.
+Our method fits a generative model of core-periphery structure to observed data
+using a combination of an expectation--maximization algorithm for calculating
+the parameters of the model and a belief propagation algorithm for calculating
+the decomposition itself. We find the method to be efficient, scaling easily to
+networks with a million or more nodes and we test it on a range of networks,
+including real-world examples as well as computer-generated benchmarks, for
+which it successfully identifies known core-periphery structure with low error
+rate. We also demonstrate that the method is immune from the detectability
+transition observed in the related community detection problem, which prevents
+the detection of community structure when that structure is too weak. There is
+no such transition for core-periphery structure, which is detectable, albeit
+with some statistical error, no matter how weak it is.

@@ -1,0 +1,23 @@
+Consider an n-vertex graph G = (V,E) of maximum degree Delta, and suppose
+that each vertex v \in V hosts a processor. The processors are allowed to
+communicate only with their neighbors in G. The communication is synchronous,
+i.e., it proceeds in discrete rounds. In the distributed vertex coloring
+problem the objective is to color G with Delta + 1, or slightly more than Delta
++ 1, colors using as few rounds of communication as possible. (The number of
+rounds of communication will be henceforth referred to as running time.)
+Efficient randomized algorithms for this problem are known for more than twenty
+years \cite{L86, ABI86}. Specifically, these algorithms produce a (Delta +
+1)-coloring within O(log n) time, with high probability. On the other hand, the
+best known deterministic algorithm that requires polylogarithmic time employs
+O(Delta^2) colors. This algorithm was devised in a seminal FOCS'87 paper by
+Linial \cite{L87}. Its running time is O(log^* n). In the same paper Linial
+asked whether one can color with significantly less than Delta^2 colors in
+deterministic polylogarithmic time. By now this question of Linial became one
+of the most central long-standing open questions in this area. In this paper we
+answer this question in the affirmative, and devise a deterministic algorithm
+that employs \Delta^{1 +o(1)} colors, and runs in polylogarithmic time.
+Specifically, the running time of our algorithm is O(f(Delta) log Delta log n),
+for an arbitrarily slow-growing function f(Delta) = \omega(1). We can also
+produce O(Delta^{1 + \eta})-coloring in O(log Delta log n)-time, for an
+arbitrarily small constant \eta > 0, and O(Delta)-coloring in
+O(Delta^{\epsilon} log n) time, for an arbitrarily small constant \epsilon > 0.

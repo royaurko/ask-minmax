@@ -1,0 +1,17 @@
+In this paper, four distinct approaches to Volume of Fluid (VOF)
+computational method are compared. Two of the methods are the 'simplified' VOF
+formulations, in that they do not require geometrical interface reconstruction.
+The assessment is made possible by implementing all four approaches into the
+same code as a switchable options. This allows to rule out possible influence
+of other parts of numerical scheme, be it the discretisation of Navier-Stokes
+equations or chosen approximation of curvature, so that we are left with
+conclusive arguments because only one factor differs the compared methods. The
+comparison is done in the framework of CLSVOF (Coupled Level Set Volume of
+Fluid), so that all four methods are coupled with Level Set interface, which is
+used to compute pressure jump via the GFM (Ghost-Fluid Method). Results
+presented include static advections, full N-S solutions in laminar and
+turbulent flows. The paper is aimed at research groups who are implementing VOF
+methods in their computations or intend to do it, and might consider a
+simplified approach as a preliminary measure, since the methods presented
+differ greatly in complication level, or ease of implementation expressed e.g.
+in number of code lines.

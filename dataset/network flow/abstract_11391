@@ -1,0 +1,16 @@
+Label propagation has proven to be an extremely fast method for detecting
+communities in large complex networks. Furthermore, due to its simplicity, it
+is also currently one of the most commonly adopted algorithms in the
+literature. Despite various subsequent advances, an important issue of the
+algorithm has not yet been properly addressed. Random (node) update orders
+within the algorithm severely hamper its robustness, and consequently also the
+stability of the identified community structure. We note that an update order
+can be seen as increasing propagation preferences from certain nodes, and
+propose a balanced propagation that counteracts for the introduced randomness
+by utilizing node balancers. We have evaluated the proposed approach on
+synthetic networks with planted partition, and on several real-world networks
+with community structure. The results confirm that balanced propagation is
+significantly more robust than label propagation, when the performance of
+community detection is even improved. Thus, balanced propagation retains high
+scalability and algorithmic simplicity of label propagation, but improves on
+its stability and performance.

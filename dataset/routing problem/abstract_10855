@@ -1,0 +1,25 @@
+Estimating consistent parameters of a structured state-space representation
+requires a reliable initialization when the vector of parameters is computed by
+using a gradient-based algorithm. In the eponymous companion paper accepted for
+publication in IEEE Transactions on Automatic Control, the problem of supplying
+a reliable initial vector of parameters is tackled. More precisely, by assuming
+that a reliable initial fully-parameterized state-space model of the system is
+available, the aforementioned paper addresses the challenging problem of
+transforming this initial fully-parameterized model into the structured
+state-space parameterization satisfied by the system to be identified. Two
+solutions to solve such a parameterization problem are more precisely
+introduced in the IEEE TAC paper. First, a solution based on a null-space-based
+reformulation of a set of equations arising from the aforementioned similarity
+transformation problem is considered. Second, an algorithm dedicated to
+non-convex optimization is presented in order to transform the initial
+fully-parameterized model into the structured state-space parameterization of
+the system to be identified. In this technical report, a specific attention is
+paid to the gradient computation required by the optimization algorithms used
+in aforementioned to solve the aforementioned problem. These gradient
+formulations are indeed necessary to apply the quasi-Newton
+Broyden-Fletcher-Goldfarb-Shanno (BFGS) methods used for the null-space based
+as well as the least-squares-formulated optimization techniques introduced in
+the IEEE TAC paper. For the sake of conciseness, we only focus on the smooth
+version of the optimization problem introduced in aforementioned paper.
+Interested readers can easily extend the following results by using the chain
+rule as well as the sub-gradient computation techniques.

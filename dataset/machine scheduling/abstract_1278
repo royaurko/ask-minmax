@@ -1,0 +1,20 @@
+This report contains revision and extension of some results about RBO
+[arXiv:1108.5095]. RBO is a simple and efficient broadcast scheduling of $n =
+2^k$ uniform frames for battery powered radio receivers. Each frame contains a
+key from some arbitrary linearly ordered universe. The broadcast cycle -- a
+sequence of frames sorted by the keys and permuted by $k$-bit reversal -- is
+transmitted in a round robin fashion by the broadcaster. At arbitrary time
+during the transmission, the receiver may start a simple protocol that reports
+to him all the frames with the keys that are contained in a specified interval
+of the key values $[K', K"]$. RBO receives at most $2 k + 1$ other frames' keys
+before receiving the first key from $[K', K"]$ or noticing that there are no
+such keys in the broadcast cycle. As a simple corollary, $4 k + 2$ is upper
+bound the number of keys outside $[K', K"]$ that will ever be received. In
+unreliable network the expected number of efforts to receive such frames is
+bounded by $(8 k + 4) / p + 2 (1 - p) / p^2$, where $p$ is probability of
+successful reception, and the reception rate of the requested frames is $p$ --
+the highest possible. The receiver's protocol state consists of the values $k$,
+$K'$ and $K"$, one wake-up timer and two other $k$-bit variables. Its only
+nontrivial computation -- the computation of the next wake-up time slot -- can
+be performed in $O (k)$ simple operations, such as arithmetic/bit-wise
+operations on $k$-bit numbers, using only constant number of $k$-bit variables.

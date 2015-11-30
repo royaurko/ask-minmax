@@ -1,0 +1,25 @@
+In the present paper we consider application of overcomplete dictionaries to
+solution of general ill-posed linear inverse problems. Construction of an
+adaptive optimal solution for such problems usually relies either on a singular
+value decomposition or representation of the solution via an orthonormal basis.
+The shortcoming of both approaches lies in the fact that, in many situations,
+neither the eigenbasis of the linear operator nor a standard orthonormal basis
+constitutes an appropriate collection of functions for sparse representation of
+the unknown function. In the context of regression problems, there have been an
+enormous amount of effort to recover an unknown function using an overcomplete
+dictionary. One of the most popular methods, Lasso, is based on minimizing the
+empirical likelihood and requires stringent assumptions on the dictionary, the,
+so called, compatibility conditions. While these conditions may be satisfied
+for the original dictionary functions, they usually do not hold for their
+images due to contraction imposed by the linear operator. In what follows, we
+bypass this difficulty by a novel approach which is based on inverting each of
+the dictionary functions and matching the resulting expansion to the true
+function, thus, avoiding unrealistic assumptions on the dictionary and using
+Lasso in a predictive setting. We examine both the white noise and the
+observational model formulations and also discuss how exact inverse images of
+the dictionary functions can be replaced by their approximate counterparts.
+Furthermore, we show how the suggested methodology can be extended to the
+problem of estimation of a mixing density in a continuous mixture. For all the
+situations listed above, we provide the oracle inequalities for the risk in a
+finite sample setting. Simulation studies confirm good computational properties
+of the Lasso-based technique.

@@ -1,0 +1,18 @@
+In this paper, we propose a distributive queueaware intra-cell user
+scheduling and inter-cell interference (ICI) management control design for a
+delay-optimal celluar downlink system with M base stations (BSs), and K users
+in each cell. Each BS has K downlink queues for K users respectively with
+heterogeneous arrivals and delay requirements. The ICI management control is
+adaptive to joint queue state information (QSI) over a slow time scale, while
+the user scheduling control is adaptive to both the joint QSI and the joint
+channel state information (CSI) over a faster time scale. We show that the
+problem can be modeled as an infinite horizon average cost Partially Observed
+Markov Decision Problem (POMDP), which is NP-hard in general. By exploiting the
+special structure of the problem, we shall derive an equivalent Bellman
+equation to solve the POMDP problem. To address the distributive requirement
+and the issue of dimensionality and computation complexity, we derive a
+distributive online stochastic learning algorithm, which only requires local
+QSI and local CSI at each of the M BSs. We show that the proposed learning
+algorithm converges almost surely (with probability 1) and has significant gain
+compared with various baselines. The proposed solution only has linear
+complexity order O(MK).

@@ -1,0 +1,17 @@
+In this paper we present a novel fast method to solve Poisson equation in an
+arbitrary two dimensional region with Neumann boundary condition. The basic
+idea is to solve the original Poisson problem by a two-step procedure: the
+first one finds the electric displacement field $\mathbf{D}$ and the second one
+involves the solution of potential $\phi$. The first step exploits loop-tree
+decomposition technique that has been applied widely in integral equations
+within the computational electromagnetics (CEM) community. We expand the
+electric displacement field in terms of a tree basis. Then, coefficients of the
+tree basis can be found by the fast tree solver in O(N) operations. Such
+obtained solution, however, fails to expand the exact field because the tree
+basis is not completely curl free. Despite of this, the accurate field could be
+retrieved by carrying out a procedure of divergence free field removal.
+Subsequently, potential distribution $\phi$ can be found rapidly at the second
+stage with another fast approach of O(N) complexity. As a result, the method
+dramatically reduces solution time comparing with traditional FEM with
+iterative method. Numerical examples including electrostatic simulations are
+presented to demonstrate the efficiency of the proposed method.

@@ -1,0 +1,13 @@
+We examine the problem of optimizing classification tree evaluation for
+on-line and real-time applications by using GPUs. Looking at trees with
+continuous attributes often used in image segmentation, we first put the
+existing algorithms for serial and data-parallel evaluation on solid footings.
+We then introduce a speculative parallel algorithm designed for single
+instruction, multiple data (SIMD) architectures commonly found in GPUs. A
+theoretical analysis shows how the run times of data and speculative
+decompositions compare assuming independent processors. To compare the
+algorithms in the SIMD environment, we implement both on a CUDA 2.0
+architecture machine and compare timings to a serial CPU implementation.
+Various optimizations and their effects are discussed, and results are given
+for all algorithms. Our specific tests show a speculative algorithm improves
+run time by 25% compared to a data decomposition.

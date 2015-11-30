@@ -1,0 +1,22 @@
+Implicit solvers present strong limitations when used on supercomputing
+facilities and in particular for adaptive mesh-refinement codes. We present a
+new method for implicit adaptive time-stepping on adaptive mesh
+refinement-grids. We implement it in the radiation hydrodynamics solver we
+designed for the RAMSES code for astrophysical purposes and, more particularly,
+for protostellar collapse. We briefly recall the radiation hydrodynamics
+equations and the adaptive time-stepping methodology used for hydrodynamical
+solvers. We then introduce the different types of boundary conditions
+(Dirichlet, Neumann, and Robin) that are used at the interface between levels
+and present our implementation of the new method in the RAMSES code. The method
+is tested against classical diffusion and radiation hydrodynamics tests, after
+which we present an application for protostellar collapse. We show that using
+Dirichlet boundary conditions at level interfaces is a good compromise between
+robustness and accuracy and that it can be used in structure formation
+calculations. The gain in computational time over our former unique time step
+method ranges from factors of 5 to 50 depending on the level of adaptive
+time-stepping and on the problem. We successfully compare the old and new
+methods for protostellar collapse calculations that involve highly nonlinear
+physics. We have developed a simple but robust method for adaptive
+time-stepping of implicit scheme on adaptive mesh-refinement grids. It can be
+applied to a wide variety of physical problems that involve diffusion
+processes.

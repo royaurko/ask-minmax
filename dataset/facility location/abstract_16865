@@ -1,0 +1,24 @@
+Simultaneous localization and tracking (SLAT) in sensor networks aims to
+determine the positions of sensor nodes and a moving target in a network, given
+incomplete and inaccurate range measurements between the target and each of the
+sensors. One of the established methods for achieving this is to iteratively
+maximize a likelihood function (ML), which requires initialization with an
+approximate solution to avoid convergence towards local extrema. This paper
+develops methods for handling both Gaussian and Laplacian noise, the latter
+modeling the presence of outliers in some practical ranging systems that
+adversely affect the performance of localization algorithms designed for
+Gaussian noise. A modified Euclidean Distance Matrix (EDM) completion problem
+is solved for a block of target range measurements to approximately set up
+initial sensor/target positions, and the likelihood function is then
+iteratively refined through Majorization-Minimization (MM). To avoid the
+computational burden of repeatedly solving increasingly large EDM problems in
+time-recursive operation an incremental scheme is exploited whereby a new
+target/node position is estimated from previously available node/target
+locations to set up the iterative ML initial point for the full spatial
+configuration. The above methods are first derived under Gaussian noise
+assumptions, and modifications for Laplacian noise are then considered.
+Analytically, the main challenges to be overcome in the Laplacian case stem
+from the non-differentiability of $\ell_1$ norms that arise in the various cost
+functions. Simulation results confirm that the proposed algorithms
+significantly outperform existing methods for SLAT in the presence of outliers,
+while offering comparable performance for Gaussian noise.

@@ -1,0 +1,17 @@
+Scheduling policies for real-time systems exhibit threshold behavior that is
+related to the utilization of the task set they schedule, and in some cases
+this threshold is sharp. For the rate monotonic scheduling policy, we show that
+periodic workload with utilization less than a threshold $U_{RM}^{*}$ can be
+scheduled almost surely and that all workload with utilization greater than
+$U_{RM}^{*}$ is almost surely not schedulable. We study such sharp threshold
+behavior in the context of processor scheduling using static task priorities,
+not only for periodic real-time tasks but for aperiodic real-time tasks as
+well. The notion of a utilization threshold provides a simple schedulability
+test for most real-time applications. These results improve our understanding
+of scheduling policies and provide an interesting characterization of the
+typical behavior of policies. The threshold is sharp (small deviations around
+the threshold cause schedulability, as a property, to appear or disappear) for
+most policies; this is a happy consequence that can be used to address the
+limitations of existing utilization-based tests for schedulability. We
+demonstrate the use of such an approach for balancing power consumption with
+the need to meet deadlines in web servers.

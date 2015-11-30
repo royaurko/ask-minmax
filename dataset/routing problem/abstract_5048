@@ -1,0 +1,16 @@
+For digraphs $G$ and $H$, a homomorphism of $G$ to $H$ is a mapping $f:\
+V(G)\dom V(H)$ such that $uv\in A(G)$ implies $f(u)f(v)\in A(H)$. If, moreover,
+each vertex $u \in V(G)$ is associated with costs $c_i(u), i \in V(H)$, then
+the cost of a homomorphism $f$ is $\sum_{u\in V(G)}c_{f(u)}(u)$. For each fixed
+digraph $H$, the minimum cost homomorphism problem for $H$, denoted
+MinHOM($H$), can be formulated as follows: Given an input digraph $G$, together
+with costs $c_i(u)$, $u\in V(G)$, $i\in V(H)$, decide whether there exists a
+homomorphism of $G$ to $H$ and, if one exists, to find one of minimum cost.
+Minimum cost homomorphism problems encompass (or are related to) many well
+studied optimization problems such as the minimum cost chromatic partition and
+repair analysis problems. We focus on the minimum cost homomorphism problem for
+locally semicomplete digraphs and quasi-transitive digraphs which are two
+well-known generalizations of tournaments. Using graph-theoretic
+characterization results for the two digraph classes, we obtain a full
+dichotomy classification of the complexity of minimum cost homomorphism
+problems for both classes.

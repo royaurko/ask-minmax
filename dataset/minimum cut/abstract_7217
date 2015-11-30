@@ -1,0 +1,23 @@
+In many wireless communication systems, radios are subject to a duty cycle
+constraint, that is, a radio only actively transmits signals over a fraction of
+the time. For example, it is desirable to have a small duty cycle in some low
+power systems; a half-duplex radio cannot keep transmitting if it wishes to
+receive useful signals; and a cognitive radio needs to listen and detect
+primary users frequently. This work studies the capacity of scalar
+discrete-time Gaussian channels subject to duty cycle constraint as well as
+average transmit power constraint. An idealized duty cycle constraint is first
+studied, which can be regarded as a requirement on the minimum fraction of
+nontransmissions or zero symbols in each codeword. A unique discrete input
+distribution is shown to achieve the channel capacity. In many situations,
+numerically optimized on-off signaling can achieve much higher rate than
+Gaussian signaling over a deterministic transmission schedule. This is in part
+because the positions of nontransmissions in a codeword can convey information.
+Furthermore, a more realistic duty cycle constraint is studied, where the extra
+cost of transitions between transmissions and nontransmissions due to pulse
+shaping is accounted for. The capacity-achieving input is no longer independent
+over time and is hard to compute. A lower bound of the achievable rate as a
+function of the input distribution is shown to be maximized by a first-order
+Markov input process, the distribution of which is also discrete and can be
+computed efficiently. The results in this paper suggest that, under various
+duty cycle constraints, departing from the usual paradigm of intermittent
+packet transmissions may yield substantial gain.

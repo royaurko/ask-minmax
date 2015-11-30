@@ -1,0 +1,27 @@
+We develop randomized modifications of Markov chains and apply these
+modifications to the routing chains of customers in Jacksonian stochastic
+networks. The aim of our investigations is to find new rerouting schemes for
+non standard Jackson networks which hitherto resist computing explicitly the
+stationary distribution.
+  The non standard properties we can handle by suitable algorithms encompass
+several modifications of Jackson networks known in the literature, especially
+breakdown and repair of nodes with access modification for customers to down
+nodes, finite buffers with control of buffer overflow. The rerouting schemes
+available in the literature for these situations are special cases of our
+rerouting schemes, which can deal also with partial degrading of service
+capacities and even with speed up of service.
+  In any case we require our algorithms to react on such general changes in the
+network with the aim to maintain the utilization of the nodes. To hold this
+invariant under change of service speeds (intensities) our algorithms not only
+adapt the routing probabilities but decrease automatically the overall arrival
+rate to the network if necessary.
+  Our main application is for stochastic networks in a random environment. The
+impact of the environment on the network is by changing service speeds (by
+upgrading and/or degrading, breakdown, repair) and we implement the
+randomization algorithms to react to the changes of the environment. On the
+other side, customers departing from the network may enforce the environment to
+jump immediately. So our environment is not Markov for its own.
+  The main result is to compute explicitly the joint stationary distribution of
+the queue lengths vector and the environment which is of product form:
+Environment and queue lengths vector, and the queue lengths over the network
+are decomposable.

@@ -1,0 +1,14 @@
+Transform Invariant Low-rank Textures (TILT) is a novel and powerful tool
+that can effectively rectify a rich class of low-rank textures in 3D scenes
+from 2D images despite significant deformation and corruption. The existing
+algorithm for solving TILT is based on the alternating direction method (ADM).
+It suffers from high computational cost and is not theoretically guaranteed to
+converge to a correct solution. In this paper, we propose a novel algorithm to
+speed up solving TILT, with guaranteed convergence. Our method is based on the
+recently proposed linearized alternating direction method with adaptive penalty
+(LADMAP). To further reduce computation, warm starts are also introduced to
+initialize the variables better and cut the cost on singular value
+decomposition. Extensive experimental results on both synthetic and real data
+demonstrate that this new algorithm works much more efficiently and robustly
+than the existing algorithm. It could be at least five times faster than the
+previous method.

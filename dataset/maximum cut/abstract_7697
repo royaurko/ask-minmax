@@ -1,0 +1,19 @@
+We study the design of local algorithms for massive graphs. A local algorithm
+is one that finds a solution containing or near a given vertex without looking
+at the whole graph. We present a local clustering algorithm. Our algorithm
+finds a good cluster--a subset of vertices whose internal connections are
+significantly richer than its external connections--near a given vertex. The
+running time of our algorithm, when it finds a non-empty local cluster, is
+nearly linear in the size of the cluster it outputs.
+  Our clustering algorithm could be a useful primitive for handling massive
+graphs, such as social networks and web-graphs. As an application of this
+clustering algorithm, we present a partitioning algorithm that finds an
+approximate sparsest cut with nearly optimal balance. Our algorithm takes time
+nearly linear in the number edges of the graph.
+  Using the partitioning algorithm of this paper, we have designed a
+nearly-linear time algorithm for constructing spectral sparsifiers of graphs,
+which we in turn use in a nearly-linear time algorithm for solving linear
+systems in symmetric, diagonally-dominant matrices. The linear system solver
+also leads to a nearly linear-time algorithm for approximating the
+second-smallest eigenvalue and corresponding eigenvector of the Laplacian
+matrix of a graph. These other results are presented in two companion papers.

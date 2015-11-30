@@ -1,0 +1,16 @@
+This paper introduces a parallel scheduling problem where a directed acyclic
+graph modeling $t$ tasks and their dependencies needs to be executed on $n$
+unreliable workers. Worker $i$ executes task $j$ correctly with probability
+$p_{i,j}$. The goal is to find a regimen $\Sigma$, that dictates how workers
+get assigned to tasks (possibly in parallel and redundantly) throughout
+execution, so as to minimize the expected completion time. This fundamental
+parallel scheduling problem arises in grid computing and project management
+fields, and has several applications.
+  We show a polynomial time algorithm for the problem restricted to the case
+when dag width is at most a constant and the number of workers is also at most
+a constant. These two restrictions may appear to be too severe. However, they
+are fundamentally required. Specifically, we demonstrate that the problem is
+NP-hard with constant number of workers when dag width can grow, and is also
+NP-hard with constant dag width when the number of workers can grow. When both
+dag width and the number of workers are unconstrained, then the problem is
+inapproximable within factor less than 5/4, unless P=NP.

@@ -1,0 +1,21 @@
+Centralized Virtual Private Networks (VPNs) when used in distributed systems
+have performance constraints as all traffic must traverse through a central
+server. In recent years, there has been a paradigm shift towards the use of P2P
+in VPNs to alleviate pressure placed upon the central server by allowing
+participants to communicate directly with each other, relegating the server to
+handling session management and supporting NAT traversal using relays when
+necessary. Another, less common, approach uses unstructured P2P systems to
+remove all centralization from the VPN. These approaches currently lack the
+depth in security options provided by other VPN solutions, and their
+scalability constraints have not been well studied.
+  In this paper, we propose and implement a novel VPN architecture, which uses
+a structured P2P system for peer discovery, session management, NAT traversal,
+and autonomic relay selection and a central server as a partially-automated
+public key infrastructure (PKI) via a user-friendly web interface. Our model
+also provides the first design and implementation of a P2P VPN with full
+tunneling support, whereby all non-P2P based Internet traffic routes through a
+trusted third party and does so in a way that is more secure than existing full
+tunnel techniques. To verify our model, we evaluate our reference
+implementation by comparing it quantitatively to other VPN technologies
+focusing on latency, bandwidth, and memory usage. We also discuss some of our
+experiences with developing, maintaining, and deploying a P2P VPN.

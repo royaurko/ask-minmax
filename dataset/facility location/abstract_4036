@@ -1,0 +1,20 @@
+We present a novel approach that protects trajectory privacy of users who
+access location-based services through a moving k nearest neighbor (MkNN)
+query. An MkNN query continuously returns the k nearest data objects for a
+moving user (query point). Simply updating a user's imprecise location such as
+a region instead of the exact position to a location-based service provider
+(LSP) cannot ensure privacy of the user for an MkNN query: continuous
+disclosure of regions enables the LSP to follow a user's trajectory. We
+identify the problem of trajectory privacy that arises from the overlap of
+consecutive regions while requesting an MkNN query and provide the first
+solution to this problem. Our approach allows a user to specify the confidence
+level that represents a bound of how much more the user may need to travel than
+the actual kth nearest data object. By hiding a user's required confidence
+level and the required number of nearest data objects from an LSP, we develop a
+technique to prevent the LSP from tracking the user's trajectory for MkNN
+queries. We propose an efficient algorithm for the LSP to find k nearest data
+objects for a region with a user's specified confidence level, which is an
+essential component to evaluate an MkNN query in a privacy preserving manner;
+this algorithm is at least two times faster than the state-of-the-art
+algorithm. Extensive experimental studies validate the effectiveness of our
+trajectory privacy protection technique and the efficiency of our algorithm.

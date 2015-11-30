@@ -1,0 +1,22 @@
+Various approaches to gene selection for cancer classification based on
+microarray data can be found in the literature and they may be grouped into two
+categories: univariate methods and multivariate methods. Univariate methods
+look at each gene in the data in isolation from others. They measure the
+contribution of a particular gene to the classification without considering the
+presence of the other genes. In contrast, multivariate methods measure the
+relative contribution of a gene to the classification by taking the other genes
+in the data into consideration. Multivariate methods select fewer genes in
+general. However, the selection process of multivariate methods may be
+sensitive to the presence of irrelevant genes, noises in the expression and
+outliers in the training data. At the same time, the computational cost of
+multivariate methods is high. To overcome the disadvantages of the two types of
+approaches, we propose a hybrid method to obtain gene sets that are small and
+highly discriminative.
+  We devise our hybrid method from the univariate Maximum Likelihood method
+(LIK) and the multivariate Recursive Feature Elimination method (RFE). We
+analyze the properties of these methods and systematically test the
+effectiveness of our proposed method on two cancer microarray datasets. Our
+experiments on a leukemia dataset and a small, round blue cell tumors dataset
+demonstrate the effectiveness of our hybrid method. It is able to discover sets
+consisting of fewer genes than those reported in the literature and at the same
+time achieve the same or better prediction accuracy.

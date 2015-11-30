@@ -1,0 +1,11 @@
+We present new approaches to constructing graph sparsifiers --- weighted
+subgraphs for which every cut has the same value as the original graph, up to a
+factor of $(1 \pm \epsilon)$. Our first approach independently samples each
+edge $uv$ with probability inversely proportional to the edge-connectivity
+between $u$ and $v$. The fact that this approach produces a sparsifier resolves
+a question posed by Bencz\'ur and Karger (2002). Concurrent work of Hariharan
+and Panigrahi also resolves this question. Our second approach constructs a
+sparsifier by forming the union of several uniformly random spanning trees.
+Both of our approaches produce sparsifiers with $O(n \log^2(n)/\epsilon^2)$
+edges. Our proofs are based on extensions of Karger's contraction algorithm,
+which may be of independent interest.

@@ -1,0 +1,22 @@
+We consider a single-hop data gathering sensor cluster consisting of a set of
+sensors that need to transmit data periodically to a base-station. We are
+interested in maximizing the lifetime of this network. Even though the setting
+of our problem is very simple, it turns out that the solution is far from easy.
+The complexity arises from several competing system-level opportunities
+available to reduce the energy consumed in radio transmission. First, sensor
+data is spatially and temporally correlated. Recent advances in distributed
+source-coding allow us to take advantage of these correlations to reduce the
+number of transmitted bits, with concomitant savings in energy. Second, it is
+also well-known that channel-coding can be used to reduce transmission energy
+by increasing transmission time. Finally, sensor nodes are cooperative, unlike
+nodes in an ad hoc network that are often modeled as competitive, allowing us
+to take full advantage of the first two opportunities for the purpose of
+maximizing cluster lifetime. In this paper, we pose the problem of maximizing
+lifetime as a max-min optimization problem subject to the constraint of
+successful data collection and limited energy supply at each node. By
+introducing the notion of instantaneous decoding, we are able to simplify this
+optimization problem into a joint scheduling and time allocation problem. We
+show that even with our ample simplification, the problem remains NP-hard. We
+provide some algorithms, heuristics and insight for various scenarios. Our
+chief contribution is to illustrate both the challenges and gains provided by
+joint source-channel coding and scheduling.

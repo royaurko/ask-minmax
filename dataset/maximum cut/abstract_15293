@@ -1,0 +1,15 @@
+This paper presents a new Bayesian model and algorithm for nonlinear unmixing
+of hyperspectral images. The model proposed represents the pixel reflectances
+as linear combinations of the endmembers, corrupted by nonlinear (with respect
+to the endmembers) terms and additive Gaussian noise. Prior knowledge about the
+problem is embedded in a hierarchical model that describes the dependence
+structure between the model parameters and their constraints. In particular, a
+gamma Markov random field is used to model the joint distribution of the
+nonlinear terms, which are expected to exhibit significant spatial
+correlations. An adaptive Markov chain Monte Carlo algorithm is then proposed
+to compute the Bayesian estimates of interest and perform Bayesian inference.
+This algorithm is equipped with a stochastic optimisation adaptation mechanism
+that automatically adjusts the parameters of the gamma Markov random field by
+maximum marginal likelihood estimation. Finally, the proposed methodology is
+demonstrated through a series of experiments with comparisons using synthetic
+and real data and with competing state-of-the-art approaches.

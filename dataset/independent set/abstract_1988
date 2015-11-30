@@ -1,0 +1,26 @@
+In many practical situations we would like to estimate the covariance matrix
+of a set of variables from an insufficient amount of data. More specifically,
+if we have a set of $N$ independent, identically distributed measurements of an
+$M$ dimensional random vector the maximum likelihood estimate is the sample
+covariance matrix. Here we consider the case where $N<M$ such that this
+estimate is singular and therefore fundamentally bad. We present a radically
+new approach to deal with this situation. Let $X$ be the $M\times N$ data
+matrix, where the columns are the $N$ independent realizations of the random
+vector with covariance matrix $\Sigma$. Without loss of generality, we can
+assume that the random variables have zero mean. We would like to estimate
+$\Sigma$ from $X$. Let $K$ be the classical sample covariance matrix. Fix a
+parameter $1\leq L\leq N$ and consider an ensemble of $L\times M$ random
+unitary matrices, $\{\Phi\}$, having Haar probability measure. Pre and post
+multiply $K$ by $\Phi$, and by the conjugate transpose of $\Phi$ respectively,
+to produce a non--singular $L\times L$ reduced dimension covariance estimate. A
+new estimate for $\Sigma$, denoted by $\mathrm{cov}_L(K)$, is obtained by a)
+projecting the reduced covariance estimate out (to $M\times M$) through pre and
+post multiplication by the conjugate transpose of $\Phi$, and by $\Phi$
+respectively, and b) taking the expectation over the unitary ensemble. Another
+new estimate (this time for $\Sigma^{-1}$), $\mathrm{invcov}_L(K)$, is obtained
+by a) inverting the reduced covariance estimate, b) projecting the inverse out
+(to $M\times M$) through pre and post multiplication by the conjugate transpose
+of $\Phi$, and by $\Phi$ respectively, and c) taking the expectation over the
+unitary ensemble. We have a closed analytical expression for
+$\mathrm{invcov}_L(K)$ and $\mathrm{cov}_L(K)$ in terms of its eigenvalue
+decomposition.

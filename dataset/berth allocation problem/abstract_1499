@@ -1,0 +1,22 @@
+Almost all of the current process scheduling algorithms which are used in
+modern operating systems (OS) have their roots in the classical scheduling
+paradigms which were developed during the 1970's. But modern computers have
+different types of software loads and user demands. We think it is important to
+run what the user wants at the current moment. A user can be a human, sitting
+in front of a desktop machine, or it can be another machine sending a request
+to a server through a network connection. We think that OS should become
+intelligent to distinguish between different processes and allocate resources,
+including CPU, to those processes which need them most. In this work, as a
+first step to make the OS aware of the current state of the system, we consider
+process dependencies and interprocess communications. We are developing a
+model, which considers the need to satisfy interactive users and other possible
+remote users or customers, by making scheduling decisions based on process
+dependencies and interprocess communications. Our simple proof of concept
+implementation and experiments show the effectiveness of this approach in the
+real world applications. Our implementation does not require any change in the
+software applications nor any special kind of configuration in the system,
+Moreover, it does not require any additional information about CPU needs of
+applications nor other resource requirements. Our experiments show significant
+performance improvement for real world applications. For example, almost
+constant average response time for Mysql data base server and constant frame
+rate for mplayer under different simulated load values.

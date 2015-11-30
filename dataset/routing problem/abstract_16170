@@ -1,0 +1,13 @@
+We consider the problem of minimizing a function represented as a sum of
+submodular terms. We assume each term allows an efficient computation of {\em
+exchange capacities}. This holds, for example, for terms depending on a small
+number of variables, or for certain cardinality-dependent terms.
+  A naive application of submodular minimization algorithms would not exploit
+the existence of specialized exchange capacity subroutines for individual
+terms. To overcome this, we cast the problem as a {\em submodular flow} (SF)
+problem in an auxiliary graph, and show that applying most existing SF
+algorithms would rely only on these subroutines.
+  We then explore in more detail Iwata's capacity scaling approach for
+submodular flows (Math. Programming, 76(2):299--308, 1997). In particular, we
+show how to improve its complexity in the case when the function contains
+cardinality-dependent terms.

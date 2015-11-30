@@ -1,0 +1,17 @@
+Large scale circuit simulation, such as power delivery network analysis, has
+become increasingly challenge in the VLSI design verification flow. Power
+delivery network can be simulated by both SPICE-type circuit-based model and
+eletromagnetics-based model when full-wave accuracy is desired. In the early
+time of the time domain finite element simulation for integrated circuit, the
+modes having the highest eigenvalues supported by the numerical system will be
+excited. Because of the band limited source, after the early time, the modes
+having a resonance frequency well beyond the input frequency band will die
+down, and all physically important high-order modes and DC mode will show up
+and become dominant. Among these modes, the DC mode is the last one to show up.
+Although the convergence criterion is not applied on the DC mode, the existence
+of DC mode in the field solution will deteriorate the convergence rate of the
+first several high order modes. Therefore, this paper first analyzed the
+mathematic characteristics of the DC mode and proposed a rigorous and fast
+solution to extract the DC mode from the numerical system in order to speed up
+the convergence rate. Experimental results demonstrated the robustness and
+superior performance of this method.

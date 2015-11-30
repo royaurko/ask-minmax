@@ -1,0 +1,12 @@
+In recent years, a number of finite element methods have been formulated for
+the solution of partial differential equations on complex geometries based on
+non-matching or overlapping meshes. Examples of such methods include the
+fictitious domain method, the extended finite element method, and Nitsche's
+method. In all of these methods, integrals must be computed over cut cells or
+subsimplices which is challenging to implement, especially in three space
+dimensions. In this note, we address the main challenges of such an
+implementation and demonstrate good performance of a fully general code for
+automatic detection of mesh intersections and integration over cut cells and
+subsimplices. As a canonical example of an overlapping mesh method, we consider
+Nitsche's method which we apply to Poisson's equation and a linear elastic
+problem.

@@ -1,0 +1,12 @@
+Given a set of $n$ points in the Euclidean plane, such that just $k$ points
+are strictly inside the convex hull of the whole set, we want to find the
+shortest tour visiting every point. The fastest known algorithm for the version
+when $k$ is significantly smaller than $n$, i.e., when there are just few inner
+points, works in $O(k^{11\sqrt{k}} k^{1.5} n^{3})$ time [Knauer and Spillner,
+WG 2006], but also requires space of order $k^{c\sqrt{k}}n^{2}$. The best
+linear space algorithm takes $O(k! k n)$ time [Deineko, Hoffmann, Okamoto,
+Woeginer, Oper. Res. Lett. 34(1), 106-110]. We construct a linear space
+$O(nk^2+k^{O(\sqrt{k})})$ time algorithm. The new insight is extending the
+known divide-and-conquer method based on planar separators with a
+matching-based argument to shrink the instance in every recursive call. This
+argument also shows that the problem admits a quadratic bikernel.

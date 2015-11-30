@@ -1,0 +1,6 @@
+This paper discusses a method for pipelining the calculation of CRC's, such
+as ITU/CCITT CRC32, into a mostly feed-forward architecture. This method allows
+several benefits such as independent scaling of circuit frequency and data
+throughput. Additionally it allows calculation over packet tails (packet length
+not a multiple of CRC input width). Finally it offers the ability to update a
+CRC where a subset of data in the packet has changed.

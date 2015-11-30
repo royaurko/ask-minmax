@@ -1,0 +1,15 @@
+This paper proposes a new microblogging architecture based on peer-to-peer
+networks overlays. The proposed platform is comprised of three mostly
+independent overlay networks. The first provides distributed user registration
+and authentication and is based on the Bitcoin protocol. The second one is a
+Distributed Hash Table (DHT) overlay network providing key/value storage for
+user resources and tracker location for the third network. The last network is
+a collection of possibly disjoint "swarms" of followers, based on the
+Bittorrent protocol, which can be used for efficient near-instant notification
+delivery to many users. By leveraging from existing and proven technologies,
+twister provides a new microblogging platform offering security, scalability
+and privacy features. A mechanism provides incentive for entities that
+contribute processing time to run the user registration network, rewarding such
+entities with the privilege of sending a single unsolicited ("promoted")
+message to the entire network. The number of unsolicited messages per day is
+defined in order to not upset users.

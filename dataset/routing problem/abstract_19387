@@ -1,0 +1,21 @@
+In this contribution we consider localized, robust and efficient a-posteriori
+error estimation of the localized reduced basis multi-scale (LRBMS) method for
+parametric elliptic problems with possibly heterogeneous diffusion coefficient.
+The numerical treatment of such parametric multi-scale problems are
+characterized by a high computational complexity, arising from the multi-scale
+character of the underlying differential equation and the additional parameter
+dependence. The LRBMS method can be seen as a combination of numerical
+multi-scale methods and model reduction using reduced basis (RB) methods to
+efficiently reduce the computational complexity with respect to the multi-scale
+as well as the parametric aspect of the problem, simultaneously. In contrast to
+the classical residual based error estimators currently used in RB methods, we
+are considering error estimators that are based on conservative flux
+reconstruction and provide an efficient and rigorous bound on the full error
+with respect to the weak solution. In addition, the resulting error estimator
+is localized and can thus be used in the on-line phase to adaptively enrich the
+solution space locally where needed. The resulting certified LRBMS method with
+adaptive on-line enrichment thus guarantees the quality of the reduced solution
+during the on-line phase, given any (possibly insufficient) reduced basis that
+was generated during the offline phase. Numerical experiments are given to
+demonstrate the applicability of the resulting algorithm with online enrichment
+to single phase flow in heterogeneous media.

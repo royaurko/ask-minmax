@@ -1,0 +1,21 @@
+This paper considers the optimization of the user and base-station (BS)
+association in a wireless downlink heterogeneous cellular network under the
+proportional fairness criterion. We first consider the case where each BS has a
+single antenna and transmits at fixed power, and propose a distributed price
+update strategy for a pricing-based user association scheme, in which the users
+are assigned to the BS based on the value of a utility function minus a price.
+The proposed price update algorithm is based on a coordinate descent method for
+solving the dual of the network utility maximization problem, and it has a
+rigorous performance guarantee. The main advantage of the proposed algorithm as
+compared to the existing subgradient method for price update is that the
+proposed algorithm is independent of parameter choices and can be implemented
+asynchronously. Further, this paper considers the joint user association and BS
+power control problem, and proposes an iterative dual coordinate descent and
+the power optimization algorithm that significantly outperforms existing
+approaches. Finally, this paper considers the joint user association and BS
+beamforming problem for the case where the BSs are equipped with multiple
+antennas and spatially multiplex multiple users. We incorporate dual coordinate
+descent with the weighted minimum mean-squared error (WMMSE) algorithm, and
+show that it achieves nearly the same performance as a computationally more
+complex benchmark algorithm (which applies the WMMSE algorithm on the entire
+network for BS association), while avoiding excessive BS handover.

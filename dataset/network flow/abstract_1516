@@ -1,0 +1,6 @@
+We consider flow rounding: finding an integral flow from a fractional flow.
+Costed flow rounding asks that we find an integral flow with no worse cost.
+Randomized flow rounding requires we randomly find an integral flow such that
+the expected flow along each edge matches the fractional flow. Both problems
+are reduced to cycle canceling, for which we develop an $O(m \log(n^2/m))$
+algorithm.

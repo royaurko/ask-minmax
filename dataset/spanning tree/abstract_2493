@@ -1,0 +1,20 @@
+The Steiner tree problem is a classical NP-hard optimization problem with a
+wide range of practical applications. In an instance of this problem, we are
+given an undirected graph G=(V,E), a set of terminals R, and non-negative costs
+c_e for all edges e in E. Any tree that contains all terminals is called a
+Steiner tree; the goal is to find a minimum-cost Steiner tree. The nodes V R
+are called Steiner nodes.
+  The best approximation algorithm known for the Steiner tree problem is due to
+Robins and Zelikovsky (SIAM J. Discrete Math, 2005); their greedy algorithm
+achieves a performance guarantee of 1+(ln 3)/2 ~ 1.55. The best known linear
+(LP)-based algorithm, on the other hand, is due to Goemans and Bertsimas (Math.
+Programming, 1993) and achieves an approximation ratio of 2-2/|R|. In this
+paper we establish a link between greedy and LP-based approaches by showing
+that Robins and Zelikovsky's algorithm has a natural primal-dual interpretation
+with respect to a novel partition-based linear programming relaxation. We also
+exhibit surprising connections between the new formulation and existing LPs and
+we show that the new LP is stronger than the bidirected cut formulation.
+  An instance is b-quasi-bipartite if each connected component of G R has at
+most b vertices. We show that Robins' and Zelikovsky's algorithm has an
+approximation ratio better than 1+(ln 3)/2 for such instances, and we prove
+that the integrality gap of our LP is between 8/7 and (2b+1)/(b+1).

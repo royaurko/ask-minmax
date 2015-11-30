@@ -1,0 +1,8 @@
+We present a simple, parallel and distributed algorithm for setting up and
+partitioning a sparse representation of a regular discretized simulation
+domain. This method is scalable for a large number of processes even for
+complex geometries and ensures load balance between the domains, reasonable
+communication interfaces, and good data locality within the domain. Applying
+this scheme to a list-based lattice Boltzmann flow solver can achieve similar
+or even higher flow solver performance than widely used standard graph
+partition based tools such as METIS and PT-SCOTCH.

@@ -1,0 +1,15 @@
+In order to produce high dynamic range images in radio interferometry, bright
+extended sources need to be removed with minimal error. However, this is not a
+trivial task because the Fourier plane is sampled only at a finite number of
+points. The ensuing deconvolution problem has been solved in many ways, mainly
+by algorithms based on CLEAN. However, such algorithms that use image pixels as
+basis functions have inherent limitations and by using an orthonormal basis
+that span the whole image, we can overcome them. The construction of such an
+orthonormal basis involves fine tuning of many free parameters that define the
+basis functions. The optimal basis for a given problem (or a given extended
+source) is not guaranteed. In this paper, we discuss the use of generalized
+prolate spheroidal wave functions as a basis. Given the geometry (or the region
+of interest) of an extended source and the sampling points on the visibility
+plane, we can construct the optimal basis to model the source. Not only does
+this gives us the minimum number of basis functions required but also the
+artifacts outside the region of interest are minimized.

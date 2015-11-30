@@ -1,0 +1,15 @@
+This paper presents Merlin, a new framework for managing resources in
+software-defined networks. With Merlin, administrators express high-level
+policies using programs in a declarative language. The language includes
+logical predicates to identify sets of packets, regular expressions to encode
+forwarding paths, and arithmetic formulas to specify bandwidth constraints. The
+Merlin compiler uses a combination of advanced techniques to translate these
+policies into code that can be executed on network elements including a
+constraint solver that allocates bandwidth using parameterizable heuristics. To
+facilitate dynamic adaptation, Merlin provides mechanisms for delegating
+control of sub-policies and for verifying that modifications made to
+sub-policies do not violate global constraints. Experiments demonstrate the
+expressiveness and scalability of Merlin on real-world topologies and
+applications. Overall, Merlin simplifies network administration by providing
+high-level abstractions for specifying network policies and scalable
+infrastructure for enforcing them.

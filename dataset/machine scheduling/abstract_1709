@@ -1,0 +1,12 @@
+We design a family of program analyses for JavaScript that make no
+approximation in matching calls with returns, exceptions with handlers, and
+breaks with labels. We do so by starting from an established reduction
+semantics for JavaScript and systematically deriving its intensional abstract
+interpretation. Our first step is to transform the semantics into an equivalent
+low-level abstract machine: the JavaScript Abstract Machine (JAM). We then give
+an infinite-state yet decidable pushdown machine whose stack precisely models
+the structure of the concrete program stack. The precise model of stack
+structure in turn confers precise control-flow analysis even in the presence of
+control effects, such as exceptions and finally blocks. We give pushdown
+generalizations of traditional forms of analysis such as k-CFA, and prove the
+pushdown framework for abstract interpretation is sound and computable.

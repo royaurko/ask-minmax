@@ -1,0 +1,15 @@
+We consider the problem of constructing optimal decision trees: given a
+collection of tests which can disambiguate between a set of $m$ possible
+diseases, each test having a cost, and the a-priori likelihood of the patient
+having any particular disease, what is a good adaptive strategy to perform
+these tests to minimize the expected cost to identify the disease? We settle
+the approximability of this problem by giving a tight $O(\log m)$-approximation
+algorithm. We also consider a more substantial generalization, the Adaptive TSP
+problem. Given an underlying metric space, a random subset $S$ of cities is
+drawn from a known distribution, but $S$ is initially unknown to us--we get
+information about whether any city is in $S$ only when we visit the city in
+question. What is a good adaptive way of visiting all the cities in the random
+subset $S$ while minimizing the expected distance traveled? For this problem,
+we give the first poly-logarithmic approximation, and show that this algorithm
+is best possible unless we can improve the approximation guarantees for the
+well-known group Steiner tree problem.

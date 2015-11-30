@@ -1,0 +1,15 @@
+We consider the model {eqnarray*}y=X\theta^*+\xi, Z=X+\Xi,{eqnarray*} where
+the random vector $y\in\mathbb{R}^n$ and the random $n\times p$ matrix $Z$ are
+observed, the $n\times p$ matrix $X$ is unknown, $\Xi$ is an $n\times p$ random
+noise matrix, $\xi\in\mathbb{R}^n$ is a noise independent of $\Xi$, and
+$\theta^*$ is a vector of unknown parameters to be estimated. The matrix
+uncertainty is in the fact that $X$ is observed with additive error. For
+dimensions $p$ that can be much larger than the sample size $n$, we consider
+the estimation of sparse vectors $\theta^*$. Under matrix uncertainty, the
+Lasso and Dantzig selector turn out to be extremely unstable in recovering the
+sparsity pattern (i.e., of the set of nonzero components of $\theta^*$), even
+if the noise level is very small. We suggest new estimators called matrix
+uncertainty selectors (or, shortly, the MU-selectors) which are close to
+$\theta^*$ in different norms and in the prediction risk if the restricted
+eigenvalue assumption on $X$ is satisfied. We also show that under somewhat
+stronger assumptions, these estimators recover correctly the sparsity pattern.

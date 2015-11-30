@@ -1,0 +1,13 @@
+The stability and the predictability of a computer network algorithm's
+performance are as important as the main functional purpose of networking
+software. However, asserting or deriving such properties from the finite state
+machine implementations of protocols is hard and, except for singular cases
+like TCP, is not done today. In this paper, we propose to design and study
+run-time environments for networking protocols which inherently enforce
+desirable, predictable global dynamics. To this end we merge two complementary
+design approaches: (i) A design-time and bottom up approach that enables us to
+engineer algorithms based on an analyzable (reaction) flow model. (ii) A
+run-time and top-down approach based on an autonomous stack composition
+framework, which switches among implementation alternatives to find optimal
+operation configurations. We demonstrate the feasibility of our self-optimizing
+system in both simulations and real-world Internet setups.

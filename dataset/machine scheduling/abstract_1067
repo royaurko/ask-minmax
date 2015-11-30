@@ -1,0 +1,12 @@
+State-machine replication, a fundamental approach to designing fault-tolerant
+services, requires commands to be executed in the same order by all replicas.
+Moreover, command execution must be deterministic: each replica must produce
+the same output upon executing the same sequence of commands. These
+requirements usually result in single-threaded replicas, which hinders service
+performance. This paper introduces Parallel State-Machine Replication (P-SMR),
+a new approach to parallelism in state-machine replication. P-SMR scales better
+than previous proposals since no component plays a centralizing role in the
+execution of independent commands---those that can be executed concurrently, as
+defined by the service. The paper introduces P-SMR, describes a "commodified
+architecture" to implement it, and compares its performance to other proposals
+using a key-value store and a networked file system.

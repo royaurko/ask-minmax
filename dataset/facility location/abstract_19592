@@ -1,0 +1,23 @@
+In this paper we present a method to treat interface jump conditions for
+constant coefficients Poisson problems that allows the use of standard "black
+box" solvers, without compromising accuracy. The basic idea of the new approach
+is similar to the Ghost Fluid Method (GFM). The GFM relies on corrections
+applied on nodes located across the interface for discretization stencils that
+straddle the interface. If the corrections are solution-independent, they can
+be moved to the right-hand-side (RHS) of the equations, producing a problem
+with the same linear system as if there were no jumps, only with a different
+RHS. However, achieving high accuracy is very hard (if not impossible) with the
+"standard" approaches used to compute the GFM correction terms.
+  In this paper we generalize the GFM correction terms to a correction
+function, defined on a band around the interface. This function is then shown
+to be characterized as the solution to a PDE, with appropriate boundary
+conditions. This PDE can, in principle, be solved to any desired order of
+accuracy. As an example, we apply this new method to devise a 4th order
+accurate scheme for the constant coefficients Poisson equation with
+discontinuities in 2D. This scheme is based on (i) the standard 9-point stencil
+discretization of the Poisson equation, (ii) a representation of the correction
+function in terms of bicubics, and (iii) a solution of the correction function
+PDE by a least squares minimization. Several applications of the method are
+presented to illustrate its robustness dealing with a variety of interface
+geometries, its capability to capture sharp discontinuities, and its high
+convergence rate.

@@ -1,0 +1,25 @@
+Simulation and bisimulation metrics for stochastic systems provide a
+quantitative generalization of the classical simulation and bisimulation
+relations. These metrics capture the similarity of states with respect to
+quantitative specifications written in the quantitative {\mu}-calculus and
+related probabilistic logics. We first show that the metrics provide a bound
+for the difference in long-run average and discounted average behavior across
+states, indicating that the metrics can be used both in system verification,
+and in performance evaluation. For turn-based games and MDPs, we provide a
+polynomial-time algorithm for the computation of the one-step metric distance
+between states. The algorithm is based on linear programming; it improves on
+the previous known exponential-time algorithm based on a reduction to the
+theory of reals. We then present PSPACE algorithms for both the decision
+problem and the problem of approximating the metric distance between two
+states, matching the best known algorithms for Markov chains. For the
+bisimulation kernel of the metric our algorithm works in time O(n^4) for both
+turn-based games and MDPs; improving the previously best known O(n^9\cdot
+log(n)) time algorithm for MDPs. For a concurrent game G, we show that
+computing the exact distance between states is at least as hard as computing
+the value of concurrent reachability games and the square-root-sum problem in
+computational geometry. We show that checking whether the metric distance is
+bounded by a rational r, can be done via a reduction to the theory of real
+closed fields, involving a formula with three quantifier alternations, yielding
+O(|G|^O(|G|^5)) time complexity, improving the previously known reduction,
+which yielded O(|G|^O(|G|^7)) time complexity. These algorithms can be iterated
+to approximate the metrics using binary search.

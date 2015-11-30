@@ -1,0 +1,16 @@
+Explaining adaptive behavior is a central problem in artificial intelligence
+research. Here we formalize adaptive agents as mixture distributions over
+sequences of inputs and outputs (I/O). Each distribution of the mixture
+constitutes a `possible world', but the agent does not know which of the
+possible worlds it is actually facing. The problem is to adapt the I/O stream
+in a way that is compatible with the true world. A natural measure of
+adaptation can be obtained by the Kullback-Leibler (KL) divergence between the
+I/O distribution of the true world and the I/O distribution expected by the
+agent that is uncertain about possible worlds. In the case of pure input
+streams, the Bayesian mixture provides a well-known solution for this problem.
+We show, however, that in the case of I/O streams this solution breaks down,
+because outputs are issued by the agent itself and require a different
+probabilistic syntax as provided by intervention calculus. Based on this
+calculus, we obtain a Bayesian control rule that allows modeling adaptive
+behavior with mixture distributions over I/O streams. This rule might allow for
+a novel approach to adaptive control based on a minimum KL-principle.

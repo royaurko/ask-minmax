@@ -1,0 +1,11 @@
+Exploiting the full computational power of always deeper hierarchical
+multiprocessor machines requires a very careful distribution of threads and
+data among the underlying non-uniform architecture. The emergence of multi-core
+chips and NUMA machines makes it important to minimize the number of remote
+memory accesses, to favor cache affinities, and to guarantee fast completion of
+synchronization steps. By using the BubbleSched platform as a threading backend
+for the GOMP OpenMP compiler, we are able to easily transpose affinities of
+thread teams into scheduling hints using abstractions called bubbles. We then
+propose a scheduling strategy suited to nested OpenMP parallelism. The
+resulting preliminary performance evaluations show an important improvement of
+the speedup on a typical NAS OpenMP benchmark application.

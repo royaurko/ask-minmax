@@ -1,0 +1,19 @@
+Many graph mining applications rely on detecting subgraphs which are
+near-cliques. There exists a dichotomy between the results in the existing work
+related to this problem: on the one hand the densest subgraph problem (DSP)
+which maximizes the average degree over all subgraphs is solvable in polynomial
+time but for many networks fails to find subgraphs which are near-cliques. On
+the other hand, formulations that are geared towards finding near-cliques are
+NP-hard and frequently inapproximable due to connections with the Maximum
+Clique problem.
+  In this work, we propose a formulation which combines the best of both
+worlds: it is solvable in polynomial time and finds near-cliques when the DSP
+fails. Surprisingly, our formulation is a simple variation of the DSP.
+Specifically, we define the triangle densest subgraph problem (TDSP): given
+$G(V,E)$, find a subset of vertices $S^*$ such that $\tau(S^*)=\max_{S
+\subseteq V} \frac{t(S)}{|S|}$, where $t(S)$ is the number of triangles induced
+by the set $S$. We provide various exact and approximation algorithms which the
+solve the TDSP efficiently. Furthermore, we show how our algorithms adapt to
+the more general problem of maximizing the $k$-clique average density. Finally,
+we provide empirical evidence that the TDSP should be used whenever the output
+of the DSP fails to output a near-clique.

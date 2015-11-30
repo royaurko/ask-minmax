@@ -1,0 +1,23 @@
+Let $\mathcal{D}$ be a collection of $D$ documents, which are strings over an
+alphabet of size $\sigma$, of total length $n$. We describe a data structure
+that uses linear space and and reports $k$ most relevant documents that contain
+a query pattern $P$, which is a string of length $p$, in time $O(p/\log_\sigma
+n+k)$, which is optimal in the RAM model in the general case where $\lg D =
+\Theta(\log n)$, and involves a novel RAM-optimal suffix tree search. Our
+construction supports an ample set of important relevance measures... [clip]
+  When $\lg D = o(\log n)$, we show how to reduce the space of the data
+structure from $O(n\log n)$ to $O(n(\log\sigma+\log D+\log\log n))$ bits...
+[clip]
+  We also consider the dynamic scenario, where documents can be inserted and
+deleted from the collection. We obtain linear space and query time
+$O(p(\log\log n)^2/\log_\sigma n+\log n + k\log\log k)$, whereas insertions and
+deletions require $O(\log^{1+\epsilon} n)$ time per symbol, for any constant
+$\epsilon>0$.
+  Finally, we consider an extended static scenario where an extra parameter
+$par(P,d)$ is defined, and the query must retrieve only documents $d$ such that
+$par(P,d)\in [\tau_1,\tau_2]$, where this range is specified at query time. We
+solve these queries using linear space and $O(p/\log_\sigma n +
+\log^{1+\epsilon} n + k\log^\epsilon n)$ time, for any constant $\epsilon>0$.
+  Our technique is to translate these top-$k$ problems into multidimensional
+geometric search problems. As an additional bonus, we describe some
+improvements to those problems.

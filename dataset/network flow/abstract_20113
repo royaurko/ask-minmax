@@ -1,0 +1,16 @@
+Ordered sets and maps play important roles as index structures in relational
+data models. When a shared index in a multi-user system is modified
+concurrently, the current state of the index will diverge into multiple
+versions containing the local modifications performed in each work flow. The
+confluent persistence problem arises when versions should be melded in commit
+and refresh operations so that modifications performed by different users
+become merged.
+  Confluently Persistent Sets and Maps are functional binary search trees that
+support efficient set operations both when operands are disjoint and when they
+are overlapping. Treap properties with hash values as priorities are maintained
+and with hash-consing of nodes a unique representation is provided.
+Non-destructive set merge algorithms that skip inspection of equal subtrees and
+a conflict detecting meld algorithm based on set merges are presented. The meld
+algorithm is used in commit and refresh operations. With m modifications in one
+flow and n items in total, the expected cost of the operations is O(m
+log(n/m)).

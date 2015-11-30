@@ -1,0 +1,23 @@
+Given a vertex-weighted tree T, the split of an edge xy in T is min{s_x(xy),
+s_y(xy)} where s_u(uv) is the sum of all weights of vertices that are closer to
+u than to v in T. Given a set of weighted vertices V and a multiset of splits
+S, we consider the problem of constructing a tree on V whose splits correspond
+to S. The problem is known to be NP-complete, even when all vertices have unit
+weight and the maximum vertex degree of T is required to be no more than 4. We
+show that the problem is strongly NP-complete when T is required to be a path,
+the problem is NP-complete when all vertices have unit weight and the maximum
+degree of T is required to be no more than 3, and it remains NP-complete when
+all vertices have unit weight and T is required to be a caterpillar with
+unbounded hair length and maximum degree at most 3. We also design polynomial
+time algorithms for the variant where T is required to be a path and the number
+of distinct vertex weights is constant, and the variant where all vertices have
+unit weight and T has a constant number of leaves. The latter algorithm is not
+only polynomial when the number of leaves, k, is a constant, but also
+fixed-parameter tractable when parameterized by k. Finally, we shortly discuss
+the problem when the vertex weights are not given but can be freely chosen by
+an algorithm.
+  The considered problem is related to building libraries of chemical compounds
+used for drug design and discovery. In these inverse problems, the goal is to
+generate chemical compounds having desired structural properties, as there is a
+strong correlation between structural properties, such as the Wiener index,
+which is closely connected to the considered problem, and biological activity.

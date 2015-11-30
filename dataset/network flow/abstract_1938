@@ -1,0 +1,17 @@
+As Moore's Law continues to fuel the ability to build ever increasingly
+complex system-on-chips (SoCs), achieving performance goals is rising as a
+critical challenge to completing designs. In particular, the system
+interconnect must efficiently service a diverse set of data flows with widely
+ranging quality-of-service (QoS) requirements. However, the known solutions for
+off-chip interconnects such as large-scale networks are not necessarily
+applicable to the on-chip environment. Latency and memory constraints for
+on-chip interconnects are quite different from larger-scale interconnects. This
+paper introduces a novel on-chip interconnect arbitration scheme. We show how
+this scheme can be distributed across a chip for high-speed implementation. We
+compare the performance of the arbitration scheme with other known interconnect
+arbitration schemes. Existing schemes typically focus heavily on either low
+latency of service for some initiators, or alternatively on guaranteed
+bandwidth delivery for other initiators. Our scheme allows service latency on
+some initiators to be traded off smoothly against jitter bounds on other
+initiators, while still delivering bandwidth guarantees. This scheme is a
+subset of the QoS controls that are available in the SonicsMX? (SMX) product.

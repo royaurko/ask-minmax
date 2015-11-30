@@ -1,0 +1,16 @@
+Most Web page classification models typically apply the bag of words (BOW)
+model to represent the feature space. The original BOW representation, however,
+is unable to recognize semantic relationships between terms. One possible
+solution is to apply the topic model approach based on the Latent Dirichlet
+Allocation algorithm to cluster the term features into a set of latent topics.
+Terms assigned into the same topic are semantically related. In this paper, we
+propose a novel hierarchical classification method based on a topic model and
+by integrating additional term features from neighboring pages. Our
+hierarchical classification method consists of two phases: (1) feature
+representation by using a topic model and integrating neighboring pages, and
+(2) hierarchical Support Vector Machines (SVM) classification model constructed
+from a confusion matrix. From the experimental results, the approach of using
+the proposed hierarchical SVM model by integrating current page with
+neighboring pages via the topic model yielded the best performance with the
+accuracy equal to 90.33% and the F1 measure of 90.14%; an improvement of 5.12%
+and 5.13% over the original SVM model, respectively.

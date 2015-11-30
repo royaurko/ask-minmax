@@ -1,0 +1,19 @@
+Consider the setting of \emph{randomly weighted graphs}, namely, graphs whose
+edge weights are chosen independently according to probability distributions
+with finite support over the non-negative reals. Under this setting, properties
+of weighted graphs typically become random variables and we are interested in
+computing their statistical features. Unfortunately, this turns out to be
+computationally hard for some properties albeit the problem of computing them
+in the traditional setting of algorithmic graph theory is tractable. For
+example, there are well known efficient algorithms that compute the
+\emph{diameter} of a given weighted graph, yet, computing the \emph{expected}
+diameter of a given randomly weighted graph is \SharpP{}-hard even if the edge
+weights are identically distributed. In this paper, we define a family of
+properties of weighted graphs and show that for each property in this family,
+the problem of computing the \emph{$k^{\text{th}}$ moment} (and in particular,
+the expected value) of the corresponding random variable in a given randomly
+weighted graph $G$ admits a \emph{fully polynomial time randomized
+approximation scheme (FPRAS)} for every fixed $k$. This family includes
+fundamental properties of weighted graphs such as the diameter of $G$, the
+\emph{radius} of $G$ (with respect to any designated vertex) and the weight of
+a \emph{minimum spanning tree} of $G$.

@@ -1,0 +1,23 @@
+Network interdiction can be viewed as a game between two players, an
+"interdictor" and a "flow player". The flow player wishes to send as much
+material as possible through a network, while the interdictor attempts to
+minimize the amount of transported material by removing a certain number of
+arcs, say $\Gamma$ arcs. We introduce the randomized network interdiction
+problem that allows the interdictor to use randomness to select arcs to be
+removed. We model the problem in two different ways: arc-based and path-based
+formulations, depending on whether flows are defined on arcs or paths,
+respectively. We present insights into the modeling power, complexity, and
+approximability of both formulations. In particular, we prove that
+$Z_{\text{NI}}/Z_{\text{RNI}}\leq \Gamma+1$,
+$Z_{\text{NI}}/Z_{\text{RNI}}^{\text{Path}}\leq \Gamma+1$,
+$Z_{\text{RNI}}/Z_{\text{RNI}}^{\text{Path}}\leq \Gamma$, where
+$Z_{\text{NI}}$, $Z_{\text{RNI}}$, and $Z_{\text{RNI}}^{\text{Path}}$ are the
+optimal values of the network interdiction problem and its randomized versions
+in arc-based and path-based formulations, respectively. We also show that these
+bounds are tight. We show that it is NP-hard to compute the values
+$Z_{\text{RNI}}$ and $Z_{\text{RNI}}^{\text{Path}}$ for a general $\Gamma$, but
+they are computable in polynomial time when $\Gamma=1$. Further, we provide a
+$(\Gamma+1)$-approximation for $Z_{\text{NI}}$, a $\Gamma$-approximation for
+$Z_{\text{RNI}}$, and a $\big(1+\lfloor \Gamma/2\rfloor \cdot \lceil
+\Gamma/2\rceil/(\Gamma+1)\big)$-approximation for
+$Z_{\text{RNI}}^{\text{Path}}$.

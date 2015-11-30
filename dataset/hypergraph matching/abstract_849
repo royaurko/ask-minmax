@@ -1,0 +1,25 @@
+Drucker (2012) proved the following result: Unless the unlikely
+complexity-theoretic collapse coNP is in NP/poly occurs, there is no
+AND-compression for SAT. The result has implications for the compressibility
+and kernelizability of a whole range of NP-complete parameterized problems. We
+present a streamlined proof of Drucker's theorem.
+  An AND-compression is a deterministic polynomial-time algorithm that maps a
+set of SAT-instances $x_1,\dots,x_t$ to a single SAT-instance $y$ of size
+poly(max $|x_i|$) such that $y$ is satisfiable if and only if all $x_i$ are
+satisfiable. The "AND" in the name stems from the fact that the predicate "$y$
+is satisfiable" can be written as the AND of all predicates "$x_i$ is
+satisfiable". Drucker's result complements the result by Bodlaender et al.
+(2009) and Fortnow and Santhanam (2010), who proved the analogous statement for
+OR-compressions, and Drucker's proof not only subsumes that result but also
+extends it to randomized compression algorithms that are allowed to have a
+certain probability of failure.
+  Drucker (2012) presented two proofs: The first uses information theory and
+the minimax theorem from game theory, and the second is an elementary,
+iterative proof that is not as general. In our proof, we realize the iterative
+structure as a generalization of the arguments of Ko (1983) for P-selective
+sets, which use the fact that tournaments have dominating sets of logarithmic
+size. We generalize this fact to hypergraph tournaments. Our proof achieves the
+full generality of Drucker's theorem, avoids the minimax theorem, and restricts
+the use of information theory to a single, intuitive lemma about the average
+noise sensitivity of compressive maps. To prove this lemma, we use the same
+information-theoretic inequalities as Drucker.

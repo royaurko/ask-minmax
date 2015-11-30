@@ -1,0 +1,15 @@
+Accounting for the Reynolds number is critical in numerical simulations of
+turbulence, particularly for subsonic flow. For Smoothed Particle Hydrodynamics
+(SPH) with constant artificial viscosity coefficient alpha, it is shown that
+the effective Reynolds number in the absence of explicit physical viscosity
+terms scales linearly with the Mach number - compared to mesh schemes, where
+the effective Reynolds number is largely independent of the flow velocity. As a
+result, SPH simulations with alpha=1 will have low Reynolds numbers in the
+subsonic regime compared to mesh codes, which may be insufficient to resolve
+turbulent flow. This explains the failure of Bauer and Springel (2011,
+arXiv:1109.4413v1) to find agreement between the moving-mesh code AREPO and the
+GADGET SPH code on simulations of driven, subsonic (v ~ 0.3 c_s) turbulence
+appropriate to the intergalactic/intracluster medium, where it was alleged that
+SPH is somehow fundamentally incapable of producing a Kolmogorov-like turbulent
+cascade. We show that turbulent flow with a Kolmogorov spectrum can be easily
+recovered by employing standard methods for reducing alpha away from shocks.

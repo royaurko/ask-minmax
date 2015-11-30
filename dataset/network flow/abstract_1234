@@ -1,0 +1,17 @@
+A classic network tomography problem is estimation of properties of the
+distribution of route traffic volumes based on counts taken on the network
+links. We consider inference for a general class of models for integer-valued
+traffic. Model identifiability is examined. We investigate both maximum
+likelihood and Bayesian methods of estimation. In practice, these must be
+implemented using stochastic EM and MCMC approaches. This requires a
+methodology for sampling latent route flows conditional on the observed link
+counts. We show that existing algorithms for doing so can fail entirely,
+because inflexibility in the choice of sampling directions can leave the
+sampler trapped at a vertex of the convex polytope that describes the feasible
+set of route flows. We prove that so long as the network's link-path incidence
+matrix is totally unimodular, it is always possible to select a coordinate
+system representation of the polytope for which sampling parallel to the axes
+is adequate. This motivates a modified sampler in which the representation of
+the polytope adapts to provide good mixing behavior. This methodology is
+applied to three road traffic data sets. We conclude with a discussion of the
+ramifications of the unimodularity requirements for the routing matrix.

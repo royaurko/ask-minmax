@@ -1,0 +1,20 @@
+In this paper a discretization based on discontinuous Galerkin (DG) method
+for an elliptic two-dimensional problem with discontinuous coefficients is
+considered. The problem is posed on a polygonal region $\Omega$ which is a
+union of $N$ disjoint polygonal subdomains $\Omega_i$ of diameter $O(H_i)$. The
+discontinuities of the coefficients, possibly very large, are assumed to occur
+only across the subdomain interfaces $\partial \Omega_i$. In each $\Omega_i$ a
+conforming quasiuniform triangulation with parameters $h_i$ is constructed. We
+assume that the resulting triangulation in $\Omega$ is also conforming, i.e.,
+the meshes are assumed to match across the subdomain interfaces. On the fine
+triangulation the problem is discretized by a DG method. For solving the
+resulting discrete system, a FETI-DP type method is proposed and analyzed. It
+is established that the condition number of the preconditioned linear system is
+estimated by $C(1 + \max_i \log H_i/h_i)^2$ with a constant $C$ independent of
+$h_i$, $H_i$ and the jumps of coefficients. The method is well suited for
+parallel computations and it can be extended to three-dimensional problems.
+This result is an extension, to the case of full fine-grid DG discretization,
+of the previous result [SIAM J. Numer. Anal., 51 (2013), pp.~400--422] where it
+was considered a conforming finite element method inside the subdomains and a
+discontinuous Galerkin method only across the subdomain interfaces. Numerical
+results are presented to validate the theory.

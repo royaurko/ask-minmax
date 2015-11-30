@@ -1,0 +1,12 @@
+We consider approximate maximum likelihood inference for a general class of
+models, using an approximate Bayesian computation (ABC) approach. The typical
+target of ABC methods are models with intractable likelihoods, and we merge an
+ABC-MCMC sampler with so-called "data cloning" for maximum likelihood
+estimation. The methodology should partly compensate for the inability to
+reduce the ABC-threshold to very small values. In our examples the threshold is
+set to fairly large (manageable) values, while the number of data-clones is
+increased to ease convergence of the Markov chain towards the (unattainable)
+maximum likelihood estimate. Simulation studies show the good performance of
+our approach on linear regression models and more challenging scenarios
+considering stochastic differential equations, also including state-space
+models.

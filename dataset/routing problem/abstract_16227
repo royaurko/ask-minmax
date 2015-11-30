@@ -1,0 +1,18 @@
+We study random instances of the weighted $d$-CNF satisfiability problem
+(WEIGHTED $d$-SAT), a generic W[1]-complete problem. A random instance of the
+problem consists of a fixed parameter $k$ and a random $d$-CNF formula
+$\weicnf{n}{p}{k, d}$ generated as follows: for each subset of $d$ variables
+and with probability $p$, a clause over the $d$ variables is selected uniformly
+at random from among the $2^d - 1$ clauses that contain at least one negated
+literals.
+  We show that random instances of WEIGHTED $d$-SAT can be solved in $O(k^2n +
+n^{O(1)})$-time with high probability, indicating that typical instances of
+WEIGHTED $d$-SAT under this instance distribution are fixed-parameter
+tractable. The result also hold for random instances from the model
+$\weicnf{n}{p}{k,d}(d')$ where clauses containing less than $d' (1 < d' < d)$
+negated literals are forbidden, and for random instances of the renormalized
+(miniaturized) version of WEIGHTED $d$-SAT in certain range of the random
+model's parameter $p(n)$. This, together with our previous results on the
+threshold behavior and the resolution complexity of unsatisfiable instances of
+$\weicnf{n}{p}{k, d}$, provides an almost complete characterization of the
+typical-case behavior of random instances of WEIGHTED $d$-SAT.

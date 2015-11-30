@@ -1,0 +1,23 @@
+A novel lossless source coding paradigm applies to problems of unreliable
+lossless channels with low bit rates, in which a vital message needs to be
+transmitted prior to termination of communications. This paradigm can be
+applied to Alfred Renyi's secondhand account of an ancient siege in which a spy
+was sent to scout the enemy but was captured. After escaping, the spy returned
+to his base in no condition to speak and unable to write. His commander asked
+him questions that he could answer by nodding or shaking his head, and the
+fortress was defended with this information. Renyi told this story with
+reference to prefix coding, but maximizing probability of survival in the siege
+scenario is distinct from yet related to the traditional source coding
+objective of minimizing expected codeword length. Rather than finding a code
+minimizing expected codeword length $\sum_{i=1}^n p(i) l(i)$, the siege problem
+involves maximizing $\sum_{i=1}^n p(i) \theta^{l(i)}$ for a known $\theta \in
+(0,1)$. When there are no restrictions on codewords, this problem can be solve
+using a known generalization of Huffman coding. The optimal solution has coding
+bounds which are functions of Renyi entropy; in addition to known bounds, new
+bounds are derived here. The alphabetically constrained version of this problem
+has applications in search trees and diagnostic testing. A novel dynamic
+programming algorithm -- based upon the oldest known algorithm for the
+traditional alphabetic problem -- optimizes this problem in $O(n^3)$ time and
+$O(n^2)$ space, whereas two novel approximation algorithms can find a
+suboptimal solution faster: one in linear time, the other in $O(n \log n)$.
+Coding bounds for the alphabetic version of this problem are also presented.

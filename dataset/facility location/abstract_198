@@ -1,0 +1,19 @@
+For a connected graph $G$, a vertex subset $S$ of $V(G)$ is a safe set if for
+every component $C$ of the subgraph of $G$ induced by $S$, $|C| \ge |D|$ holds
+for every component $D$ of $G-S$ such that there exists an edge between $C$ and
+$D$, and, in particular, if the subgraph induced by $S$ is connected, then $S$
+is called a connected safe set. For a connected graph $G$, the safe number and
+the connected safe number of $G$ are the minimum among sizes of the safe sets
+and the minimum among sizes of the connected safe sets, respectively, of $G$.
+Fujita et al. introduced these notions in connection with a variation of the
+facility location problem.
+  In this paper, we study the safe number and the connected safe number of
+Cartesian product of two complete graphs. Figuring out a way to reduce the
+number of components to two without changing the size of safe set makes it
+sufficient to consider only partitions of an integer into two parts without
+which it would be much more complicated to take care of all the partitions. In
+this way, we could show that the safe number and the connected safe number of
+Cartesian product of two complete graphs are equal and present a
+polynomial-time algorithm to compute them. Especially, in the case where one of
+complete components has order at most four, we precisely formulate those
+numbers.

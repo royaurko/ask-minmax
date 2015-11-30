@@ -1,0 +1,19 @@
+A model has been proposed in [Baruah et al., in Proceedings of the IEEE
+Real-Time Systems Symposium 2012] for representing recurrent
+precedence-constrained tasks to be executed on multiprocessor platforms, where
+each recurrent task is modeled by a directed acyclic graph (DAG), a period, and
+a relative deadline. Each vertex of the DAG represents a sequential job, while
+the edges of the DAG represent precedence constraints between these jobs. All
+the jobs of the DAG are released simultaneously and have to be completed within
+some specified relative deadline. The task may release jobs in this manner an
+unbounded number of times, with successive releases occurring at least the
+specified period apart. The feasibility problem is to determine whether such a
+recurrent task can be scheduled to always meet all deadlines on a specified
+number of dedicated processors.
+  The case of a single task has been considered in [Baruah et al., 2012]. The
+main contribution of this paper is to consider the case of multiple tasks. We
+show that EDF has a speedup bound of 2-1/m, where m is the number of
+processors. Moreover, we present polynomial and pseudopolynomial schedulability
+tests, of differing effectiveness, for determining whether a set of sporadic
+DAG tasks can be scheduled by EDF to meet all deadlines on a specified number
+of processors.

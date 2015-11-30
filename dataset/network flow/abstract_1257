@@ -1,0 +1,12 @@
+To solve the parameter sensitive issue of the traditional RED (random early
+detection) algorithm, an adaptive buffer management algorithm called PAFD
+(packet adaptive fair dropping) is proposed. This algorithm supports DiffServ
+(differentiated services) model of QoS (quality of service). In this algorithm,
+both of fairness and throughput are considered. The smooth buffer occupancy
+rate function is adopted to adjust the parameters. By implementing buffer
+management and packet scheduling on Intel IXP2400, the viability of QoS
+mechanisms on NPs (network processors) is verified. The simulation shows that
+the PAFD smoothes the flow curve, and achieves better balance between fairness
+and network throughput. It also demonstrates that this algorithm meets the
+requirements of fast data packet processing, and the hardware resource
+utilization of NPs is higher.

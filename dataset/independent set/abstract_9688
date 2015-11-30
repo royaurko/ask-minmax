@@ -1,0 +1,15 @@
+An integrated simulation approach fully based upon particle-in-cell (PIC)
+model is proposed, which involves both fast particle generation via laser
+solid-density plasma interaction and transport and energy deposition of the
+particles in extremely high density plasma. It is realized by introducing two
+independent systems in a simulation, where the fast particle generation is
+simulated by a full PIC system and the transport and energy deposition computed
+by a second PIC system with a reduced field solver. Data of the fast particles
+generated in the full PIC system are copied to the reduced PIC system in real
+time as the fast particle source. Unlike a two-region approach, which takes a
+single PIC system and two field solvers in two plasma density regions,
+respectively, the present one need not match the field-solvers since the
+reduced field solver and the full solver adopted respectively in the two
+systems are independent. A simulation case is presented, which demonstrates
+that this approach can be applied to integrated simulation of fast ignition
+with real target densities.

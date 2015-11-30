@@ -1,0 +1,18 @@
+The chase algorithm is a fundamental tool for query evaluation and query
+containment under constraints, where the constraints are (sub-classes of)
+tuple-generating dependencies (TGDs) and equality generating depencies (EGDs).
+So far, most of the research on this topic has focused on cases where the chase
+procedure terminates, with some notable exceptions. In this paper we take a
+general approach, and we propose large classes of TGDs under which the chase
+does not always terminate. Our languages, in particular, are inspired by
+guarded logic: we show that by enforcing syntactic properties on the form of
+the TGDs, we are able to ensure decidability of the problem of answering
+conjunctive queries despite the non-terminating chase. We provide tight
+complexity bounds for the problem of conjunctive query evaluation for several
+classes of TGDs. We then introduce EGDs, and provide a condition under which
+EGDs do not interact with TGDs, and therefore do not take part in query
+answering. We show applications of our classes of constraints to the problem of
+answering conjunctive queries under F-Logic Lite, a recently introduced
+ontology language, and under prominent tractable Description Logics languages.
+All the results in this paper immediately extend to the problem of conjunctive
+query containment.

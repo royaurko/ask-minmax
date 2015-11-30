@@ -1,0 +1,24 @@
+Exponential backoff (EB) is a widely adopted collision resolution mechanism
+in many popular random-access networks including Ethernet and wireless LAN
+(WLAN). The prominence of EB is primarily attributed to its asymptotic
+throughput stability, which ensures a non-zero throughput even when the number
+of users in the network goes to infinity. Recent studies, however, show that EB
+is fundamentally unsuitable for applications that are sensitive to large delay
+and delay jitters, as it induces divergent second- and higher-order moments of
+medium access delay. Essentially, the medium access delay follows a power law
+distribution, a subclass of heavy-tailed distribution. To understand and
+alleviate the issue, this paper systematically analyzes the tail delay
+distribution of general backoff functions, with EB being a special case. In
+particular, we establish a tradeoff between the tail decaying rate of medium
+access delay distribution and the stability of throughput. To be more specific,
+convergent delay moments are attainable only when the backoff functions $g(k)$
+grows slower than exponential functions, i.e., when $g(k)\in o(r^k)$ for all
+$r>1$. On the other hand, non-zero asymptotic throughput is attainable only
+when backoff functions grow at least as fast as an exponential function, i.e.,
+$g(k)\in\Omega(r^k)$ for some $r>1$. This implies that bounded delay moments
+and stable throughput cannot be achieved at the same time. For practical
+implementation, we show that polynomial backoff (PB), where $g(k)$ is a
+polynomial that grows slower than exponential functions, obtains finite delay
+moments and good throughput performance at the same time within a practical
+range of user population. This makes PB a better alternative than EB for
+multimedia applications with stringent delay requirements.

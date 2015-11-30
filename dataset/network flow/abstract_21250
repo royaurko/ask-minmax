@@ -1,0 +1,23 @@
+Objective-The main purpose of this paper is to construct a data accuracy
+model for the maximal set of sensor nodes that sense a point event and forms a
+cluster with fully connected network between them. We determine the minimal set
+of sensor nodes that are sufficient to give approximately the same data
+accuracy achieve by the maximal set of sensor nodes. Design
+approach/Procedure-L set of sensor nodes are randomly deployed over a region Z.
+Since a point event S has occurred in the region Z, M maximal set of sensor
+nodes wake up and start sensing the point event. The set of M sensor nodes
+forms a cluster with fully connected network and remaining set of sensor nodes
+continue to be in sleep mode. One sensor node is elected randomly as a cluster
+head (CH) node which can estimate the data accuracy for the cluster before data
+aggregation and finally send the data to the sink node. Findings - Since we
+simulate the data accuracy for the cluster (M set of sensor nodes) at CH node,
+there exist P minimal set of sensor nodes which give approximately the same
+data accuracy level achieve by M set of sensor nodes .Moreover we find that as
+the distance from the point event to the number of sensor nodes increases, the
+data accuracy also get decreases. Design Limitation -This model is only
+applicable to estimate data accuracy for the point event where the sensed data
+are assumed to be spatially correlated with approximately same variations.
+Practical implementation-Detect point event e.g. fire in forest.
+Inventive/Novel idea - This is the first time that a data accuracy model is
+performed for the cluster before data aggregation at the CH node which can
+reduce data redundancy and communication overhead.

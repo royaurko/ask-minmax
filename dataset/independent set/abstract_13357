@@ -1,0 +1,22 @@
+Flash memory is widely used as the secondary storage in lightweight computing
+devices due to its outstanding advantages over magnetic disks. Flash memory has
+many access characteristics different from those of magnetic disks, and how to
+take advantage of them is becoming an important research issue. There are two
+existing approaches to storing data into flash memory: page-based and
+log-based. The former has good performance for read operations, but poor
+performance for write operations. In contrast, the latter has good performance
+for write operations when updates are light, but poor performance for read
+operations. In this paper, we propose a new method of storing data, called
+page-differential logging, for flash-based storage systems that solves the
+drawbacks of the two methods. The primary characteristics of our method are:
+(1) writing only the difference (which we define as the page-differential)
+between the original page in flash memory and the up-to-date page in memory;
+(2) computing and writing the page-differential only once at the time the page
+needs to be reflected into flash memory. The former contrasts with existing
+page-based methods that write the whole page including both changed and
+unchanged parts of data or from log-based ones that keep track of the history
+of all the changes in a page. Our method allows existing disk-based DBMSs to be
+reused as flash-based DBMSs just by modifying the flash memory driver, i.e., it
+is DBMS-independent. Experimental results show that the proposed method
+improves the I/O performance by 1.2 ~ 6.1 times over existing methods for the
+TPC-C data of approximately 1 Gbytes.

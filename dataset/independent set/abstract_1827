@@ -1,0 +1,25 @@
+Identification of defective members of large populations has been widely
+studied in the statistics community under the name of group testing. It
+involves grouping subsets of items into different pools and detecting defective
+members based on the set of test results obtained for each pool.
+  In a classical noiseless group testing setup, it is assumed that the sampling
+procedure is fully known to the reconstruction algorithm, in the sense that the
+existence of a defective member in a pool results in the test outcome of that
+pool to be positive. However, this may not be always a valid assumption in some
+cases of interest. In particular, we consider the case where the defective
+items in a pool can become independently inactive with a certain probability.
+Hence, one may obtain a negative test result in a pool despite containing some
+defective items. As a result, any sampling and reconstruction method should be
+able to cope with two different types of uncertainty, i.e., the unknown set of
+defective items and the partially unknown, probabilistic testing procedure.
+  In this work, motivated by the application of detecting infected people in
+viral epidemics, we design non-adaptive sampling procedures that allow
+successful identification of the defective items through a set of probabilistic
+tests. Our design requires only a small number of tests to single out the
+defective items. In particular, for a population of size $N$ and at most $K$
+defective items with activation probability $p$, our results show that $M =
+O(K^2\log{(N/K)}/p^3)$ tests is sufficient if the sampling procedure should
+work for all possible sets of defective items, while $M = O(K\log{(N)}/p^3)$
+tests is enough to be successful for any single set of defective items.
+Moreover, we show that the defective members can be recovered using a simple
+reconstruction algorithm with complexity of $O(MN)$.

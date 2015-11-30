@@ -1,0 +1,16 @@
+In this paper we study the problem of reducing the evaluation costs of
+queries on finite databases in presence of integrity constraints, by designing
+and materializing views. Given a database schema, a set of queries defined on
+the schema, a set of integrity constraints, and a storage limit, to find a
+solution to this problem means to find a set of views that satisfies the
+storage limit, provides equivalent rewritings of the queries under the
+constraints (this requirement is weaker than equivalence in the absence of
+constraints), and reduces the total costs of evaluating the queries. This
+problem, database reformulation, is important for many applications, including
+data warehousing and query optimization. We give complexity results and
+algorithms for database reformulation in presence of constraints, for
+conjunctive queries, views, and rewritings and for several types of
+constraints, including functional and inclusion dependencies. To obtain better
+complexity results, we introduce an unchase technique, which reduces the
+problem of query equivalence under constraints to equivalence in the absence of
+constraints without increasing query size.

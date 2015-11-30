@@ -1,0 +1,11 @@
+This work presents a framework for tracking head movements and capturing the
+movements of the mouth and both the eyebrows in real-time. We present a head
+tracker which is a combination of a optical flow and a template based tracker.
+The estimation of the optical flow head tracker is used as starting point for
+the template tracker which fine-tunes the head estimation. This approach
+together with re-updating the optical flow points prevents the head tracker
+from drifting. This combination together with our switching scheme, makes our
+tracker very robust against fast movement and motion-blur. We also propose a
+way to reduce the influence of partial occlusion of the head. In both the
+optical flow and the template based tracker we identify and exclude occluded
+points.

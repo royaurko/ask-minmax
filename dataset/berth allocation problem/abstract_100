@@ -1,0 +1,18 @@
+Most sampling techniques for online social networks (OSNs) are based on a
+particular sampling method on a single graph, which is referred to as a
+statistics. However, various realizing methods on different graphs could
+possibly be used in the same OSN, and they may lead to different sampling
+efficiencies, i.e., asymptotic variances. To utilize multiple statistics for
+accurate measurements, we formulate a mixture sampling problem, through which
+we construct a mixture unbiased estimator which minimizes asymptotic variance.
+Given fixed sampling budgets for different statistics, we derive the optimal
+weights to combine the individual estimators; given fixed total budget, we show
+that a greedy allocation towards the most efficient statistics is optimal. In
+practice, the sampling efficiencies of statistics can be quite different for
+various targets and are unknown before sampling. To solve this problem, we
+design a two-stage framework which adaptively spends a partial budget to test
+different statistics and allocates the remaining budget to the inferred best
+statistics. We show that our two-stage framework is a generalization of 1)
+randomly choosing a statistics and 2) evenly allocating the total budget among
+all available statistics, and our adaptive algorithm achieves higher efficiency
+than these benchmark strategies in theory and experiment.

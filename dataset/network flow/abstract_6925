@@ -1,0 +1,19 @@
+In this work we present a general strategy for constructing multidimensional
+Riemann solvers with a single intermediate state, with particular attention
+paid to detailing the two-dimensional Riemann solver. This is accomplished by
+introducing a constant resolved state between the states being considered,
+which introduces sufficient dissipation for systems of conservation laws.
+Closed form expressions for the resolved fluxes are also provided to facilitate
+numerical implementation. The Riemann solver is proved to be positively
+conservative for the density variable; the positivity of the pressure variable
+has been demonstrated for Euler flows when the divergence in the fluid
+velocities is suitably restricted so as to prevent the formation of cavitation
+in the flow.
+  We also focus on the construction of multidimensionally upwinded electric
+fields for divergence-free magnetohydrodynamical flows. A robust and efficient
+second order accurate numerical scheme for two and three dimensional Euler and
+magnetohydrodynamic flows is presented. The scheme is built on the current
+multidimensional Riemann solver. The number of zones updated per second by this
+scheme on a modern processor is shown to be cost competitive with schemes that
+are based on a one-dimensional Riemann solver. However, the present scheme
+permits larger timesteps.

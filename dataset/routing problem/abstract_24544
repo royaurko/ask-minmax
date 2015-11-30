@@ -1,0 +1,15 @@
+Let s be a string whose symbols are solely available through access(i), a
+read-only operation that probes s and returns the symbol at position i in s.
+Many compressed data structures for strings, trees, and graphs, require two
+kinds of queries on s: select(c, j), returning the position in s containing the
+jth occurrence of c, and rank(c, p), counting how many occurrences of c are
+found in the first p positions of s. We give matching upper and lower bounds
+for this problem, improving the lower bounds given by Golynski [Theor. Comput.
+Sci. 387 (2007)] [PhD thesis] and the upper bounds of Barbay et al. [SODA
+2007]. We also present new results in another model, improving on Barbay et al.
+[SODA 2007] and matching a lower bound of Golynski [SODA 2009]. The main
+contribution of this paper is to introduce a general technique for proving
+lower bounds on succinct data structures, that is based on the access patterns
+of the supported operations, abstracting from the particular operations at
+hand. For this, it may find application to other interesting problems on
+succinct data structures.

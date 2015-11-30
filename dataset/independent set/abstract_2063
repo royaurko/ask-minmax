@@ -1,0 +1,18 @@
+Let $(V,\delta)$ be a finite metric space, where $V$ is a set of $n$ points
+and $\delta$ is a distance function defined for these points. Assume that
+$(V,\delta)$ has a constant doubling dimension $d$ and assume that each point
+$p\in V$ has a disk of radius $r(p)$ around it. The disk graph that corresponds
+to $V$ and $r(\cdot)$ is a \emph{directed} graph $I(V,E,r)$, whose vertices are
+the points of $V$ and whose edge set includes a directed edge from $p$ to $q$
+if $\delta(p,q)\leq r(p)$. In \cite{PeRo08} we presented an algorithm for
+constructing a $(1+\eps)$-spanner of size $O(n/\eps^d \log M)$, where $M$ is
+the maximal radius $r(p)$. The current paper presents two results. The first
+shows that the spanner of \cite{PeRo08} is essentially optimal, i.e., for
+metrics of constant doubling dimension it is not possible to guarantee a
+spanner whose size is independent of $M$. The second result shows that by
+slightly relaxing the requirements and allowing a small perturbation of the
+radius assignment, considerably better spanners can be constructed. In
+particular, we show that if it is allowed to use edges of the disk graph
+$I(V,E,r_{1+\eps})$, where $r_{1+\eps}(p) = (1+\eps)\cdot r(p)$ for every $p\in
+V$, then it is possible to get a $(1+\eps)$-spanner of size $O(n/\eps^d)$ for
+$I(V,E,r)$. Our algorithm is simple and can be implemented efficiently.

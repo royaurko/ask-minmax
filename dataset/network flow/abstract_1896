@@ -1,0 +1,21 @@
+Traditionally, the quality of orthogonal planar drawings is quantified by
+either the total number of bends, or the maximum number of bends per edge.
+However, this neglects that in typical applications, edges have varying
+importance. Moreover, as bend minimization over all planar embeddings is
+NP-hard, most approaches focus on a fixed planar embedding.
+  We consider the problem OptimalFlexDraw that is defined as follows. Given a
+planar graph G on n vertices with maximum degree 4 and for each edge e a cost
+function cost_e : N_0 --> R defining costs depending on the number of bends on
+e, compute an orthogonal drawing of G of minimum cost. Note that this optimizes
+over all planar embeddings of the input graphs, and the cost functions allow
+fine-grained control on the bends of edges.
+  In this generality OptimalFlexDraw is NP-hard. We show that it can be solved
+efficiently if 1) the cost function of each edge is convex and 2) the first
+bend on each edge does not cause any cost (which is a condition similar to the
+positive flexibility for the decision problem FlexDraw). Moreover, we show the
+existence of an optimal solution with at most three bends per edge except for a
+single edge per block (maximal biconnected component) with up to four bends.
+For biconnected graphs we obtain a running time of O(n T_flow(n)), where
+T_flow(n) denotes the time necessary to compute a minimum-cost flow in a planar
+flow network with multiple sources and sinks. For connected graphs that are not
+biconnected we need an additional factor of O(n).

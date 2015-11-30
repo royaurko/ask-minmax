@@ -1,0 +1,12 @@
+In this paper we study a variant of the shortest path problem in graphs:
+given a weighted graph G and vertices s and t, and given a set X of forbidden
+paths in G, find a shortest s-t path P such that no path in X is a subpath of
+P. Path P is allowed to repeat vertices and edges. We call each path in X an
+exception, and our desired path a shortest exception-avoiding path. We
+formulate a new version of the problem where the algorithm has no a priori
+knowledge of X, and finds out about an exception x in X only when a path
+containing x fails. This situation arises in computing shortest paths in
+optical networks. We give an algorithm that finds a shortest exception avoiding
+path in time polynomial in |G| and |X|. The main idea is to run Dijkstra's
+algorithm incrementally after replicating vertices when an exception is
+discovered.

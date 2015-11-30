@@ -1,0 +1,24 @@
+One of the most important open problems in machine scheduling is the problem
+of scheduling a set of jobs on unrelated machines to minimize the makespan. The
+best known approximation algorithm for this problem guarantees an approximation
+factor of 2. It is known to be NP-hard to approximate with a better ratio than
+3/2. Closing this gap has been open for over 20 years. The best known
+approximation factors are achieved by LP-based algorithms. The strongest known
+linear program formulation for the problem is the configuration-LP. We show
+that the configuration-LP has an integrality gap of 2 even for the special case
+of unrelated graph balancing, where each job can be assigned to at most two
+machines. In particular, our result implies that a large family of cuts does
+not help to diminish the integrality gap of the canonical assignment-LP. Also,
+we present cases of the problem which can be approximated with a better factor
+than 2. They constitute valuable insights for constructing an NP-hardness
+reduction which improves the known lower bound. Very recently Svensson studied
+the restricted assignment case, where each job can only be assigned to a given
+set of machines on which it has the same processing time. He shows that in this
+setting the configuration-LP has an integrality gap of 33/17<2. Hence, our
+result imply that the unrelated graph balancing case is significantly more
+complex than the restricted assignment case. Then we turn to another objective
+function: maximizing the minimum machine load. For the case that every job can
+be assigned to at most two machines we give a purely combinatorial
+2-approximation algorithm which is best possible, unless P=NP. This improves on
+the computationally costly LP-based (2+eps)-approximation algorithm by
+Chakrabarty et al.

@@ -1,0 +1,25 @@
+We apply the immersed boundary (or IB) method to simulate deformation and
+detachment of a periodic array of wall-bounded biofilm colonies in response to
+a linear shear flow. The biofilm material is represented as a network of
+Hookean springs that are placed along the edges of a triangulation of the
+biofilm region. The interfacial shear stress, lift and drag forces acting on
+the biofilm colony are computed by using fluid stress jump method developed by
+Williams, Fauci and Gaver [Disc. Contin. Dyn. Sys. B 11(2):519-540, 2009], with
+a modified version of their exclusion filter. Our detachment criterion is based
+on the novel concept of an averaged equivalent continuum stress tensor defined
+at each IB point in the biofilm which is then used to determine a corresponding
+von Mises yield stress; wherever this yield stress exceeds a given critical
+threshold the connections to that node are severed, thereby signalling the
+onset of a detachment event. In order to capture the deformation and detachment
+behaviour of a biofilm colony at different stages of growth, we consider a
+family of four biofilm shapes with varying aspect ratio. Our numerical
+simulations focus on the behaviour of weak biofilms (with relatively low yield
+stress threshold) and investigate features of the fluid-structure interaction
+such as locations of maximum shear and increased drag. The most important
+conclusion of this work is that the commonly employed detachment strategy in
+biofilm models based only on interfacial shear stress can lead to incorrect or
+inaccurate results when applied to the study of shear induced detachment of
+weak biofilms. Our detachment strategy based on equivalent continuum stresses
+provides a unified and consistent IB framework that handles both sloughing and
+erosion modes of biofilm detachment, and is consistent with strategies employed
+in many other continuum based biofilm models.

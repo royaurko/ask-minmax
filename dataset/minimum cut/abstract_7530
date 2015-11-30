@@ -1,0 +1,20 @@
+A total-colored graph is a graph $G$ such that both all edges and all
+vertices of $G$ are colored. A path in a total-colored graph $G$ is a total
+rainbow path if its edges and internal vertices have distinct colors. A
+total-colored graph $G$ is total-rainbow connected if any two vertices of $G$
+are connected by a total rainbow path of $G$. The total rainbow connection
+number of $G$, denoted by $trc(G)$, is defined as the smallest number of colors
+that are needed to make $G$ total-rainbow connected. These concepts were
+introduced by Liu et al. Notice that for a connected graph $G$, $2diam(G)-1\leq
+trc(G)\leq 2n-3$, where $diam(G)$ denotes the diameter of $G$ and $n$ is the
+order of $G$. In this paper we show, for a connected graph $G$ of order $n$
+with minimum degree $\delta$, that $trc(G)\leq6n/{(\delta+1)}+28$ for
+$\delta\geq\sqrt{n-2}-1$ and $n\geq 291$, while $trc(G)\leq7n/{(\delta+1)}+32$
+for $16\leq\delta\leq\sqrt{n-2}-2$ and
+$trc(G)\leq7n/{(\delta+1)}+4C(\delta)+12$ for $6\leq\delta\leq15$, where
+$C(\delta)=e^{\frac{3\log({\delta}^3+2{\delta}^2+3)-3(\log3-1)}{\delta-3}}-2$.
+This implies that when $\delta$ is in linear with $n$, then the total rainbow
+number $trc(G)$ is a constant. We also show that $trc(G)\leq 7n/4-3$ for
+$\delta=3$, $trc(G)\leq8n/5-13/5$ for $\delta=4$ and $trc(G)\leq3n/2-3$ for
+$\delta=5$. Furthermore, an example shows that our bound can be seen tight up
+to additive factors when $\delta\geq\sqrt{n-2}-1$.

@@ -1,0 +1,21 @@
+We study local search algorithms for metric instances of facility location
+problems: the uncapacitated facility location problem (UFL), as well as
+uncapacitated versions of the $k$-median, $k$-center and $k$-means problems.
+All these problems admit natural local search heuristics: for example, in the
+UFL problem the natural moves are to open a new facility, close an existing
+facility, and to swap a closed facility for an open one; in $k$-medians, we are
+allowed only swap moves. The local-search algorithm for $k$-median was analyzed
+by Arya et al. (SIAM J. Comput. 33(3):544-562, 2004), who used a clever
+``coupling'' argument to show that local optima had cost at most constant times
+the global optimum. They also used this argument to show that the local search
+algorithm for UFL was 3-approximation; their techniques have since been applied
+to other facility location problems.
+  In this paper, we give a proof of the $k$-median result which avoids this
+coupling argument. These arguments can be used in other settings where the Arya
+et al. arguments have been used. We also show that for the problem of opening
+$k$ facilities $F$ to minimize the objective function $\Phi_p(F) = \big(\sum_{j
+\in V} d(j, F)^p\big)^{1/p}$, the natural swap-based local-search algorithm is
+a $\Theta(p)$-approximation. This implies constant-factor approximations for
+$k$-medians (when $p=1$), and $k$-means (when $p = 2$), and an $O(\log
+n)$-approximation algorithm for the $k$-center problem (which is essentially $p
+= \log n$).

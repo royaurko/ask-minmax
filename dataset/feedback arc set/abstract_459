@@ -1,0 +1,18 @@
+Many Information Retrieval (IR) models make use of offline statistical
+techniques to score documents for ranking over a single period, rather than use
+an online, dynamic system that is responsive to users over time. In this paper,
+we explicitly formulate a general Multi Period Information Retrieval problem,
+where we consider retrieval as a stochastic yet controllable process. The
+ranking action during the process continuously controls the retrieval system's
+dynamics, and an optimal ranking policy is found in order to maximise the
+overall users' satisfaction over the multiple periods as much as possible. Our
+derivations show interesting properties about how the posterior probability of
+the documents relevancy evolves from users feedbacks through clicks, and
+provides a plug-in framework for incorporating different click models. Based on
+the Multi-Armed Bandit theory, we propose a simple implementation of our
+framework using a dynamic ranking rule that takes rank bias and exploration of
+documents into account. We use TREC data to learn a suitable exploration
+parameter for our model, and then analyse its performance and a number of
+variants using a search log data set; the experiments suggest an ability to
+explore document relevance dynamically over time using user feedback in a way
+that can handle rank bias.

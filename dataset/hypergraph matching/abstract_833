@@ -1,0 +1,12 @@
+Regular expression matching is essential for many applications, such as
+finding patterns in text, exploring substrings in large DNA sequences, or
+lexical analysis. However, sequential regular expression matching may be
+time-prohibitive for large problem sizes. In this paper, we describe a novel
+algorithm for parallel regular expression matching via deterministic finite
+automata. Furthermore, we present our tool PaREM that accepts regular
+expressions and finite automata as input and automatically generates the
+corresponding code for our algorithm that is amenable for parallel execution on
+shared-memory systems. We evaluate our parallel algorithm empirically by
+comparing it with a commonly used algorithm for sequential regular expression
+matching. Experiments on a dual-socket shared-memory system with 24 physical
+cores show speed-ups of up to 21x for 48 threads.

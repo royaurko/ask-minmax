@@ -1,0 +1,17 @@
+We have reduced the data taken with the Spectral and Photometric Imaging
+Receiver (SPIRE) photometer on board the Herschel Space Observatory in the
+Science Demonstration Phase (SDP) of the Herschel Astrophysical Terahertz Large
+Area Survey (H-ATLAS). We describe the data reduction, which poses specific
+challenges, both because of the sheer size of the data, and because only two
+scans are made for each region. We implement effective solutions to process the
+bolometric timelines into maps, and show that correlations among detectors are
+negligible, and that the photometer is stable on time scales up to 250 s. This
+is longer than the time the telescope takes to cross the observed sky region,
+and it allows us to use naive binning methods for an optimal reconstruction of
+the sky emission. The maps have equal contribution of confusion and white
+instrumental noise, and the latter is estimated to 5.3, 6.4, and 6.7 mJy/beam
+(1-{\sigma}), at 250, 350, and 500 \mu{m}, respectively. This pipeline is used
+to reduce other H-ATLAS observations, as they became available, and we discuss
+how it can be used with the optimal map maker implemented in the Herschel
+Interactive Processing Environment (HIPE), to improve computational efficiency
+and stability. The SDP dataset is available from http://www.h-atlas.org/.

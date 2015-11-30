@@ -1,0 +1,22 @@
+A network of observable, macroscopic cosmic (super-)strings may have formed
+in the early universe. If so, the cusps that generically develop on
+cosmic-string loops emit bursts of gravitational radiation that could be
+detectable by both ground- and space-based gravitational-wave interferometers.
+Here we report on two versions of a LISA-oriented string-burst search pipeline
+that we have developed and tested within the context of the Mock LISA Data
+Challenges. The two versions rely on the publicly available MultiNest and PyMC
+software packages, respectively. To reduce the effective dimensionality of the
+search space, our implementations use the F-statistic to analytically maximize
+over the signal's amplitude and polarization, A and psi, and use the FFT to
+search quickly over burst arrival times t_C. The standard F-statistic is
+essentially a frequentist statistic that maximizes the likelihood; we also
+demonstrate an approximate, Bayesian version of the F-statistic that
+incorporates realistic priors on A and psi. We calculate how accurately LISA
+can expect to measure the physical parameters of string-burst sources. To
+understand LISA's angular resolution for string-burst sources, we draw maps of
+the waveform fitting factor [maximized over (A psi, t_C)] as a function of sky
+position; these maps dramatically illustrate why (for LISA) inferring the
+correct sky location of the emitting string loop will often be practically
+impossible. We also identify and elucidate several symmetries that are imbedded
+in this search problem, and we derive the distribution of cut-off frequencies
+f_max for observable bursts.

@@ -1,0 +1,21 @@
+Metric data structures (distance oracles, distance labeling schemes, routing
+schemes) and low-distortion embeddings provide a powerful algorithmic
+methodology, which has been successfully applied for approximation algorithms
+\cite{llr}, online algorithms \cite{BBMN11}, distributed algorithms
+\cite{KKMPT12} and for computing sparsifiers \cite{ST04}. However, this
+methodology appears to have a limitation: the worst-case performance inherently
+depends on the cardinality of the metric, and one could not specify in advance
+which vertices/points should enjoy a better service (i.e., stretch/distortion,
+label size/dimension) than that given by the worst-case guarantee.
+  In this paper we alleviate this limitation by devising a suit of {\em
+prioritized} metric data structures and embeddings. We show that given a
+priority ranking $(x_1,x_2,\ldots,x_n)$ of the graph vertices (respectively,
+metric points) one can devise a metric data structure (respectively, embedding)
+in which the stretch (resp., distortion) incurred by any pair containing a
+vertex $x_j$ will depend on the rank $j$ of the vertex. We also show that other
+important parameters, such as the label size and (in some sense) the dimension,
+may depend only on $j$. In some of our metric data structures (resp.,
+embeddings) we achieve both prioritized stretch (resp., distortion) and label
+size (resp., dimension) {\em simultaneously}. The worst-case performance of our
+metric data structures and embeddings is typically asymptotically no worse than
+of their non-prioritized counterparts.

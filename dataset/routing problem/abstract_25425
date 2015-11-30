@@ -1,0 +1,18 @@
+Parameter estimation in cognitive communications can be formulated as a
+multi-user estimation problem, which is solvable under maximum likelihood
+solution but involves high computational complexity. This paper presents a
+time-sharing and interference mitigation based EKF (Extended Kalman Filter)
+design for joint CFO (carrier frequency offset) and channel estimation at
+multiple cognitive users. The key objective is to realize low implementation
+complexity by decomposing highdimensional parameters into multiple separate
+low-dimensional estimation problems, which can be solved in a time-shared
+manner via pipelining operation. We first present a basic EKF design that
+estimates the parameters from one TX user to one RX antenna. Then such basic
+design is time-shared and reused to estimate parameters from multiple TX users
+to multiple RX antennas. Meanwhile, we use interference mitigation module to
+cancel the co-channel interference at each RX sample. In addition, we further
+propose adaptive noise variance tracking module to improve the estimation
+performance. The proposed design enjoys low delay and low buffer size (because
+of its online real-time processing), as well as low implementation complexity
+(because of time-sharing and pipeling design). Its estimation performance is
+verified to be close to Cramer-Rao bound.

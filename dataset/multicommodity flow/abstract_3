@@ -1,0 +1,25 @@
+In Directed Multiway Cut(Dir-MC) the input is an edge-weighted directed graph
+$G=(V,E)$ and a set of $k$ terminal nodes $\{s_1,s_2,\ldots,s_k\} \subseteq V$;
+the goal is to find a min-weight subset of edges whose removal ensures that
+there is no path from $s_i$ to $s_j$ for any $i \neq j$. In Node-weighted
+Multiway Cut(Node-MC) the input is a node-weighted undirected graph $G$ and a
+set of $k$ terminal nodes $\{s_1,s_2,\ldots,s_k\} \subseteq V$; the goal is to
+remove a min-weight subset of nodes to disconnect each pair of terminals.
+Dir-MC admits a $2$-approximation [Naor, Zosin '97] and Node-MC admits a
+$2(1-\frac{1}{k})$-approximation [Garg, Vazirani, Yannakakis '94], both via
+rounding of LP relaxations. Previous rounding algorithms for these problems,
+from nearly twenty years ago, are based on careful rounding of an "optimum"
+solution to an LP relaxation. This is particularly true for Dir-MC for which
+the rounding relies on a custom LP formulation instead of the natural distance
+based LP relaxation [Naor, Zosin '97].
+  In this paper we describe extremely simple and near linear-time rounding
+algorithms for Dir-MC and Node-MC via a natural distance based LP relaxation.
+The dual of this relaxation is a special case of the maximum multicommodity
+flow problem. Our algorithms achieve the same bounds as before but have the
+significant advantage in that they can work with "any feasible" solution to the
+relaxation. Consequently, in addition to obtaining "book" proofs of LP rounding
+for these two basic problems, we also obtain significantly faster approximation
+algorithms by taking advantage of known algorithms for computing near-optimal
+solutions for maximum multicommodity flow problems. We also investigate lower
+bounds for Dir-MC when $k=2$ and in particular prove that the integrality gap
+of the LP relaxation is $2$ even in directed planar graphs.

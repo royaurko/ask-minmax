@@ -1,0 +1,18 @@
+Two kinds of approximation algorithms exist for the k-BALANCED PARTITIONING
+problem: those that are fast but compute unsatisfying approximation ratios, and
+those that guarantee high quality ratios but are slow. In this paper we prove
+that this tradeoff between runtime and solution quality is necessary. For the
+problem a minimum number of edges in a graph need to be found that, when cut,
+partition the vertices into k equal-sized sets. We develop a reduction
+framework which identifies some necessary conditions on the considered graph
+class in order to prove the hardness of the problem. We focus on two
+combinatorially simple but very different classes, namely trees and solid grid
+graphs. The latter are finite connected subgraphs of the infinite 2D grid
+without holes. First we use the framework to show that for solid grid graphs it
+is NP-hard to approximate the optimum number of cut edges within any satisfying
+ratio. Then we consider solutions in which the sets may deviate from being
+equal-sized. Our framework is used on grids and trees to prove that no fully
+polynomial time algorithm exists that computes solutions in which the sets are
+arbitrarily close to equal-sized. This is true even if the number of edges cut
+is allowed to increase the more stringent the limit on the set sizes is. These
+are the first bicriteria inapproximability results for the problem.

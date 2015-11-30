@@ -1,0 +1,18 @@
+We investigate the generalization ability of a perceptron with non-monotonic
+transfer function of a reversed-wedge type in on-line mode. This network is
+identical to a parity machine, a multilayer network. We consider several
+learning algorithms. By the perceptron algorithm the generalization error is
+shown to decrease by the ${\alpha}^{-1/3}$-law similarly to the case of a
+simple perceptron in a restricted range of the parameter $a$ characterizing the
+non-monotonic transfer function. For other values of $a$, the perceptron
+algorithm leads to the state where the weight vector of the student is just
+opposite to that of the teacher. The Hebbian learning algorithm has a similar
+property; it works only in a limited range of the parameter. The conventional
+AdaTron algorithm does not give a vanishing generalization error for any values
+of $a$.We thus introduce a modified AdaTron algorithm which yields a good
+performance for all values of $a$. We also investigate the effects of
+optimization of the learning rate as well as of the learning algorithm. Both
+methods give excellent learning curves proportional to ${\alpha}^{-1}$. The
+latter optimization is related to the Bayes statistics and is shown to yield
+useful hints to extract maximum amount of information necessary to accelerate
+learning processes.

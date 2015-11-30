@@ -1,0 +1,19 @@
+Given a stream of items each associated with a numerical value, its edit
+distance to monotonicity is the minimum number of items to remove so that the
+remaining items are non-decreasing with respect to the numerical value. The
+space complexity of estimating the edit distance to monotonicity of a data
+stream is becoming well-understood over the past few years. Motivated by
+applications on network quality monitoring, we extend the study to estimating
+the edit distance to monotonicity of a sliding window covering the $w$ most
+recent items in the stream for any $w \ge 1$. We give a deterministic algorithm
+which can return an estimate within a factor of $(4+\eps)$ using
+$O(\frac{1}{\eps^2} \log^2(\eps w))$ space.
+  We also extend the study in two directions. First, we consider a stream where
+each item is associated with a value from a partial ordered set. We give a
+randomized $(4+\epsilon)$-approximate algorithm using $O(\frac{1}{\epsilon^2}
+\log \epsilon^2 w \log w)$ space. Second, we consider an out-of-order stream
+where each item is associated with a creation time and a numerical value, and
+items may be out of order with respect to their creation times. The goal is to
+estimate the edit distance to monotonicity with respect to the numerical value
+of items arranged in the order of creation times. We show that any randomized
+constant-approximate algorithm requires linear space.

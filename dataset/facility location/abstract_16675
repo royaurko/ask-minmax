@@ -1,0 +1,16 @@
+In a coalescing random walk, a set of particles make independent random walks
+on a graph. Whenever one or more particles meet at a vertex, they unite to form
+a single particle, which then continues the random walk through the graph.
+Coalescing random walks can be used to achieve consensus in distributed
+networks, and is the basis of the self-stabilizing mutual exclusion algorithm
+of Israeli and Jalfon.
+  Let G=(V,E), be an undirected, connected n vertex graph with m edges. Let
+C(n) be the expected time for all particles to coalesce, when initially one
+particle is located at each vertex of an n vertex graph.
+  We study the problem of bounding the coalescence time C(n) for general
+classes of graphs. Our main result is that C(n)= O(1/(1-lambda_2))*((log n)^4
++n/A)), where lambda_2 is the absolute value of the second largest eigenvalue
+of the transition matrix of the random walk, A= (sum d^2(v))/(d^2 n), d(v) is
+the degree of vertex v, and d is the average node degree. The parameter A is an
+indicator of the variability of node degrees. Thus 1 <= A =O(n), with A=1 for
+regular graphs.

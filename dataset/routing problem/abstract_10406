@@ -1,0 +1,26 @@
+Consider the following problem. A seller has infinite copies of $n$ products
+represented by nodes in a graph. There are $m$ consumers, each has a budget and
+wants to buy two products. Consumers are represented by weighted edges. Given
+the prices of products, each consumer will buy both products she wants, at the
+given price, if she can afford to. Our objective is to help the seller price
+the products to maximize her profit.
+  This problem is called {\em graph vertex pricing} ({\sf GVP}) problem and has
+resisted several recent attempts despite its current simple solution. This
+motivates the study of this problem on special classes of graphs. In this
+paper, we study this problem on a large class of graphs such as graphs with
+bounded treewidth, bounded genus and $k$-partite graphs.
+  We show that there exists an {\sf FPTAS} for {\sf GVP} on graphs with bounded
+treewidth. This result is also extended to an {\sf FPTAS} for the more general
+{\em single-minded pricing} problem. On bounded genus graphs we present a {\sf
+PTAS} and show that {\sf GVP} is {\sf NP}-hard even on planar graphs.
+  We study the Sherali-Adams hierarchy applied to a natural Integer Program
+formulation that $(1+\epsilon)$-approximates the optimal solution of {\sf GVP}.
+Sherali-Adams hierarchy has gained much interest recently as a possible
+approach to develop new approximation algorithms. We show that, when the input
+graph has bounded treewidth or bounded genus, applying a constant number of
+rounds of Sherali-Adams hierarchy makes the integrality gap of this natural
+{\sf LP} arbitrarily small, thus giving a $(1+\epsilon)$-approximate solution
+to the original {\sf GVP} instance.
+  On $k$-partite graphs, we present a constant-factor approximation algorithm.
+We further improve the approximation factors for paths, cycles and graphs with
+degree at most three.

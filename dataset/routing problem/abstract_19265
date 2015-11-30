@@ -1,0 +1,21 @@
+We study the problem of rendezvous of two mobile agents starting at distinct
+locations in an unknown graph. The agents have distinct labels and walk in
+synchronous steps. However the graph is unlabelled and the agents have no means
+of marking the nodes of the graph and cannot communicate with or see each other
+until they meet at a node. When the graph is very large we want the time to
+rendezvous to be independent of the graph size and to depend only on the
+initial distance between the agents and some local parameters such as the
+degree of the vertices, and the size of the agent's label. It is well known
+that even for simple graphs of degree $\Delta$, the rendezvous time can be
+exponential in $\Delta$ in the worst case. In this paper, we introduce a new
+version of the rendezvous problem where the agents are equipped with a device
+that measures its distance to the other agent after every step. We show that
+these \emph{distance-aware} agents are able to rendezvous in any unknown graph,
+in time polynomial in all the local parameters such the degree of the nodes,
+the initial distance $D$ and the size of the smaller of the two agent labels $l
+= \min(l_1, l_2)$. Our algorithm has a time complexity of
+$O(\Delta(D+\log{l}))$ and we show an almost matching lower bound of
+$\Omega(\Delta(D+\log{l}/\log{\Delta}))$ on the time complexity of any
+rendezvous algorithm in our scenario. Further, this lower bound extends
+existing lower bounds for the general rendezvous problem without distance
+awareness.

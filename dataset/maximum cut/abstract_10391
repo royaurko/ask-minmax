@@ -1,0 +1,24 @@
+Data assimilation combines information from models, measurements, and priors
+to estimate the state of a dynamical system such as the atmosphere. The
+Ensemble Kalman filter (EnKF) is a family of ensemble-based data assimilation
+approaches that has gained wide popularity due its simple formulation, ease of
+implementation, and good practical results. Most EnKF algorithms assume that
+the underlying probability distributions are Gaussian. Although this assumption
+is well accepted, it is too restrictive when applied to large nonlinear models,
+nonlinear observation operators, and large levels of uncertainty. Several
+approaches have been proposed in order to avoid the Gaussianity assumption. One
+of the most successful strategies is the maximum likelihood ensemble filter
+(MLEF) which computes a maximum a posteriori estimate of the state assuming the
+posterior distribution is Gaussian. MLEF is designed to work with nonlinear and
+even non-differentiable observation operators, and shows good practical
+performance. However, there are limits to the degree of nonlinearity that MLEF
+can handle. This paper proposes a new ensemble-based data assimilation method,
+named the "sampling filter", which obtains the analysis by sampling directly
+from the posterior distribution. The sampling strategy is based on a Hybrid
+Monte Carlo (HMC) approach that can handle non-Gaussian probability
+distributions. Numerical experiments are carried out using the Lorenz-96 model
+and observation operators with different levels of non-linearity and
+differentiability. The proposed filter is also tested with shallow water model
+on a sphere with linear observation operator. The results show that the
+sampling filter can perform well even in highly nonlinear situations were EnKF
+and MLEF filters diverge.

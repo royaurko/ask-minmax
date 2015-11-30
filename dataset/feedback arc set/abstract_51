@@ -1,0 +1,21 @@
+Boxicity of a graph $G(V,E)$ is the minimum integer $k$ such that $G$ can be
+represented as the intersection graph of $k$-dimensional axis parallel
+rectangles in $\mathbf{R}^k$. Equivalently, it is the minimum number of
+interval graphs on the vertex set $V$ such that the intersection of their edge
+sets is $E$. It is known that boxicity cannot be approximated even for graph
+classes like bipartite, co-bipartite and split graphs below $O(n^{0.5 -
+\epsilon})$-factor, for any $\epsilon >0$ in polynomial time unless $NP=ZPP$.
+Till date, there is no well known graph class of unbounded boxicity for which
+even an $n^\epsilon$-factor approximation algorithm for computing boxicity is
+known, for any $\epsilon <1$. In this paper, we study the boxicity problem on
+Circular Arc graphs - intersection graphs of arcs of a circle. We give a
+$(2+\frac{1}{k})$-factor polynomial time approximation algorithm for computing
+the boxicity of any circular arc graph along with a corresponding box
+representation, where $k \ge 1$ is its boxicity. For Normal Circular Arc(NCA)
+graphs, with an NCA model given, this can be improved to an additive 2-factor
+approximation algorithm. The time complexity of the algorithms to approximately
+compute the boxicity is $O(mn+n^2)$ in both these cases and in $O(mn+kn^2)=
+O(n^3)$ time we also get their corresponding box representations, where $n$ is
+the number of vertices of the graph and $m$ is its number of edges. The
+additive 2-factor algorithm directly works for any Proper Circular Arc graph,
+since computing an NCA model for it can be done in polynomial time.

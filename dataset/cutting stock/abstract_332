@@ -1,0 +1,14 @@
+We use the GARCH model with a fat-tailed error distribution described by a
+rational function and apply it for the stock price data on the Tokyo Stock
+Exchange. To determine the model parameters we perform the Bayesian inference
+to the model. The Bayesian inference is implemented by the Metropolis-Hastings
+algorithm with an adaptive multi-dimensional Student's t-proposal density. In
+order to compare the model with the GARCH model with the standard normal errors
+we calculate information criterions: AIC and DIC, and find that both criterions
+favor the GARCH model with a rational error distribution. We also calculate the
+accuracy of the volatility by using the realized volatility and find that a
+good accuracy is obtained for the GARCH model with a rational error
+distribution. Thus we conclude that the GARCH model with a rational error
+distribution is superior to the GARCH model with the normal errors and it can
+be used as an alternative GARCH model to those with other fat-tailed
+distributions.

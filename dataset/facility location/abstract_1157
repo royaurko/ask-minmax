@@ -1,0 +1,17 @@
+In this paper, we investigate Gaussian process regression models where inputs
+are subject to measurement error. In spatial statistics, input measurement
+errors occur when the geographical locations of observed data are not known
+exactly. Such sources of error are not special cases of "nugget" or microscale
+variation, and require alternative methods for both interpolation and parameter
+estimation. Gaussian process models do not straightforwardly extend to
+incorporate input measurement error, and simply ignoring noise in the input
+space can lead to poor performance for both prediction and parameter inference.
+We review and extend existing theory on prediction and estimation in the
+presence of location errors, and show that ignoring location errors may lead to
+Kriging that is not "self-efficient". We also introduce a Markov Chain Monte
+Carlo (MCMC) approach using the Hybrid Monte Carlo algorithm that obtains
+optimal (minimum MSE) predictions, and discuss situations that lead to
+multimodality of the target distribution and/or poor chain mixing. Through
+simulation study and analysis of global air temperature data, we show that
+appropriate methods for incorporating location measurement error are essential
+to valid inference in this regime.

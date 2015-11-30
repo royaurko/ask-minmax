@@ -1,0 +1,20 @@
+The $k$-vertex disjoint paths problem is one of the most studied problems in
+algorithmic graph theory. In 1994, Schrijver proved that the problem can be
+solved in polynomial time for every fixed $k$ when restricted to the class of
+planar digraphs and it was a long standing open question whether it is
+fixed-parameter tractable (with respect to parameter $k$) on this restricted
+class. Only recently, \cite{CMPP}.\ achieved a major breakthrough and answered
+the question positively. Despite the importance of this result (and the
+brilliance of their proof), it is of rather theoretical importance. Their proof
+technique is both technically extremely involved and also has at least double
+exponential parameter dependence. Thus, it seems unrealistic that the algorithm
+could actually be implemented. In this paper, therefore, we study a smaller
+class of planar digraphs, the class of upward planar digraphs, a well studied
+class of planar graphs which can be drawn in a plane such that all edges are
+drawn upwards. We show that on the class of upward planar digraphs the problem
+(i) remains NP-complete and (ii) the problem is fixed-parameter tractable.
+While membership in FPT follows immediately from \cite{CMPP}'s general result,
+our algorithm has only single exponential parameter dependency compared to the
+double exponential parameter dependence for general planar digraphs.
+Furthermore, our algorithm can easily be implemented, in contrast to the
+algorithm in \cite{CMPP}.

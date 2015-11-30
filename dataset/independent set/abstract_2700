@@ -1,0 +1,14 @@
+We give a simple algorithm for decremental graph connectivity that handles
+edge deletions in worst-case time $O(k \log n)$ and connectivity queries in
+$O(\log k)$, where $k$ is the number of edges deleted so far, and uses
+worst-case space $O(m^2)$. We use this to give an algorithm for $k$-edge
+witness (``does the removal of a given set of $k$ edges disconnect two vertices
+$u,v$?'') with worst-case time $O(k^2 \log n)$ and space $O(k^2 n^2)$. For $k =
+o(\sqrt{n})$ these improve the worst-case $O(\sqrt{n})$ bound for deletion due
+to Eppstein et al. We also give a decremental connectivity algorithm using
+$O(n^2 \log n / \log \log n)$ space, whose time complexity depends on the
+toughness and independence number of the input graph. Finally, we show how to
+construct a distributed data structure for \kvw by giving a labeling scheme.
+This is the first data structure for \kvw that can efficiently distributed
+without just giving each vertex a copy of the whole structure. Its complexity
+depends on being able to construct a linear layout with good properties.

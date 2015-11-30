@@ -1,0 +1,15 @@
+Max-stable processes play an important role as models for spatial extreme
+events. Their complex structure as the pointwise maximum over an infinite
+number of random functions makes simulation highly nontrivial. Algorithms based
+on finite approximations that are used in practice are often not exact and
+computationally inefficient. We will present two algorithms for exact
+simulation of a max-stable process at a finite number of locations. The first
+algorithm generalizes the approach by \citet{DM-2014} for Brown--Resnick
+processes and it is based on simulation from the spectral measure. The second
+algorithm relies on the idea to simulate only the extremal functions, that is,
+those functions in the construction of a max-stable process that effectively
+contribute to the pointwise maximum. We study the complexity of both algorithms
+and prove that the second procedure is always more efficient. Moreover, we
+provide closed expressions for their implementation that cover the most popular
+models for max-stable processes and extreme value copulas. For simulation on
+dense grids, an adaptive design of the second algorithm is proposed.

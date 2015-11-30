@@ -1,0 +1,19 @@
+A common problem faced by statistical institutes is that data may be missing
+from collected data sets. The typical way to overcome this problem is to impute
+the missing data. The problem of imputing missing data is complicated by the
+fact that statistical data often have to satisfy certain edit rules and that
+values of variables across units sometimes have to sum up to known totals. For
+numerical data, edit rules are most often formulated as linear restrictions on
+the variables. For example, for data on enterprises edit rules could be that
+the profit and costs of an enterprise should sum up to its turnover and that
+the turnover should be at least zero. The totals of some variables across units
+may already be known from administrative data (e.g., turnover from a tax
+register) or estimated from other sources. Standard imputation methods for
+numerical data as described in the literature generally do not take such edit
+rules and totals into account. In this article we describe algorithms for
+imputing missing numerical data that take edit restrictions into account and
+ensure that sums are calibrated to known totals. These algorithms are based on
+a sequential regression approach that uses regression predictions to impute the
+variables one by one. To assess the performance of the imputation methods, a
+simulation study is carried out as well as an evaluation study based on a real
+data set.

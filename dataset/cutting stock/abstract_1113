@@ -1,0 +1,18 @@
+Ranking temporal data has not been studied until recently, even though
+ranking is an important operator (being promoted as a firstclass citizen) in
+database systems. However, only the instant top-k queries on temporal data were
+studied in, where objects with the k highest scores at a query time instance t
+are to be retrieved. The instant top-k definition clearly comes with
+limitations (sensitive to outliers, difficult to choose a meaningful query time
+t). A more flexible and general ranking operation is to rank objects based on
+the aggregation of their scores in a query interval, which we dub the aggregate
+top-k query on temporal data. For example, return the top-10 weather stations
+having the highest average temperature from 10/01/2010 to 10/07/2010; find the
+top-20 stocks having the largest total transaction volumes from 02/05/2011 to
+02/07/2011. This work presents a comprehensive study to this problem by
+designing both exact and approximate methods (with approximation quality
+guarantees). We also provide theoretical analysis on the construction cost, the
+index size, the update and the query costs of each approach. Extensive
+experiments on large real datasets clearly demonstrate the efficiency, the
+effectiveness, and the scalability of our methods compared to the baseline
+methods.

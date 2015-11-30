@@ -1,0 +1,23 @@
+In this paper we consider the well-studied problem of finding a perfect
+matching in a d-regular bipartite graph on 2n nodes with m=nd edges. The
+best-known algorithm for general bipartite graphs (due to Hopcroft and Karp)
+takes time O(m\sqrt{n}). In regular bipartite graphs, however, a matching is
+known to be computable in O(m) time (due to Cole, Ost and Schirra). In a recent
+line of work by Goel, Kapralov and Khanna the O(m) time algorithm was improved
+first to \tilde O(min{m, n^{2.5}/d}) and then to \tilde O(min{m, n^2/d}). It
+was also shown that the latter algorithm is optimal up to polylogarithmic
+factors among all algorithms that use non-adaptive uniform sampling to reduce
+the size of the graph as a first step.
+  In this paper, we give a randomized algorithm that finds a perfect matching
+in a d-regular graph and runs in O(n\log n) time (both in expectation and with
+high probability). The algorithm performs an appropriately truncated random
+walk on a modified graph to successively find augmenting paths. Our algorithm
+may be viewed as using adaptive uniform sampling, and is thus able to bypass
+the limitations of (non-adaptive) uniform sampling established in earlier work.
+We also show that randomization is crucial for obtaining o(nd) time algorithms
+by establishing an \Omega(nd) lower bound for any deterministic algorithm. Our
+techniques also give an algorithm that successively finds a matching in the
+support of a doubly stochastic matrix in expected time O(n\log^2 n) time, with
+O(m) pre-processing time; this gives a simple O(m+mn\log^2 n) time algorithm
+for finding the Birkhoff-von Neumann decomposition of a doubly stochastic
+matrix.

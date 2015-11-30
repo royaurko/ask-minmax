@@ -1,0 +1,16 @@
+We take an end-to-end, sequence-to-sequence learning approach to the task of
+following natural language route instructions, i.e., mapping natural language
+instructions to action sequences. Our model is a bidirectional,
+alignment-based, long short-term memory recurrent neural network (LSTM RNN)
+that encodes the free-form navigational instruction sentence and the
+corresponding representation of the environment state. We propose a multi-level
+aligner as part of our network that empowers the model to focus on salient
+sentence "regions", using both high- and low-level input representations. This
+alignment-based LSTM then decodes the learned representation to obtain the
+inferred action sequence. Adding bidirectionality to the network helps further.
+In contrast to existing methods, our model uses no additional information or
+resources about the task or language (e.g., parsers or seed lexicons) and still
+achieves the best results reported to-date on a benchmark single-sentence
+dataset and gives competitive results for the limited-training multi-sentence
+setting. We evaluate our model through a series of ablation studies that
+elucidate the contributions of the primary components of our model.

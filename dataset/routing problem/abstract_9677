@@ -1,0 +1,13 @@
+One can reduce the problem of proving that a polynomial is nonnegative, or
+more generally of proving that a system of polynomial inequalities has no
+solutions, to finding polynomials that are sums of squares of polynomials and
+satisfy some linear equality (Positivstellensatz). This produces a witness for
+the desired property, from which it is reasonably easy to obtain a formal proof
+of the property suitable for a proof assistant such as Coq. The problem of
+finding a witness reduces to a feasibility problem in semidefinite programming,
+for which there exist numerical solvers. Unfortunately, this problem is in
+general not strictly feasible, meaning the solution can be a convex set with
+empty interior, in which case the numerical optimization method fails.
+Previously published methods thus assumed strict feasibility; we propose a
+workaround for this difficulty. We implemented our method and illustrate its
+use with examples, including extractions of proofs to Coq.

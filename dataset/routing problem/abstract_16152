@@ -1,0 +1,13 @@
+An important problem that arises during the execution of service-based
+applications concerns the ability to determine whether a running service can be
+substituted with one with a different interface, for example if the former is
+no longer available. Standard Bounded Model Checking techniques can be used to
+perform this check, but they must be able to provide answers very quickly, lest
+the check hampers the operativeness of the application, instead of aiding it.
+The problem becomes even more complex when conversational services are
+considered, i.e., services that expose operations that have Input/Output data
+dependencies among them. In this paper we introduce a formal verification
+technique for an extension of Linear Temporal Logic that allows users to
+include in formulae constraints on integer variables. This technique applied to
+the substitutability problem for conversational services is shown to be
+considerably faster and with smaller memory footprint than existing ones.

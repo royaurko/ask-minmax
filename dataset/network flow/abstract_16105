@@ -1,0 +1,22 @@
+We present the first public release of our generic neural network training
+algorithm, called SkyNet. This efficient and robust machine learning tool is
+able to train large and deep feed-forward neural networks, including
+autoencoders, for use in a wide range of supervised and unsupervised learning
+applications, such as regression, classification, density estimation,
+clustering and dimensionality reduction. SkyNet uses a `pre-training' method to
+obtain a set of network parameters that has empirically been shown to be close
+to a good solution, followed by further optimisation using a regularised
+variant of Newton's method, where the level of regularisation is determined and
+adjusted automatically; the latter uses second-order derivative information to
+improve convergence, but without the need to evaluate or store the full Hessian
+matrix, by using a fast approximate method to calculate Hessian-vector
+products. This combination of methods allows for the training of complicated
+networks that are difficult to optimise using standard backpropagation
+techniques. SkyNet employs convergence criteria that naturally prevent
+overfitting, and also includes a fast algorithm for estimating the accuracy of
+network outputs. The utility and flexibility of SkyNet are demonstrated by
+application to a number of toy problems, and to astronomical problems focusing
+on the recovery of structure from blurred and noisy images, the identification
+of gamma-ray bursters, and the compression and denoising of galaxy images. The
+SkyNet software, which is implemented in standard ANSI C and fully parallelised
+using MPI, is available at http://www.mrao.cam.ac.uk/software/skynet/.

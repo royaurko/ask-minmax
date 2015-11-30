@@ -1,0 +1,21 @@
+Probabilistic inference over large data sets is an increasingly important
+data management challenge. The central problem is that exact inference is
+generally #P-hard, which limits the size of data that can be efficiently
+queried. This paper proposes a new approach for approximate evaluation of
+queries over probabilistic databases: in this approach, every query is
+evaluated entirely in the database engine by evaluating a fixed number of query
+plans, each providing an upper bound on the true probability, then taking their
+minimum. We provide an algorithm that takes into account important schema
+information to enumerate only the minimal necessary plans among all possible
+plans. Importantly, this algorithm is a strict generalization of all known
+results of PTIME self-join free conjunctive queries: the query is safe if and
+only if our algorithm returns one single plan. Furthermore, our approach is a
+generalization of a family of efficient network ranking functions from graphs
+to hypergraphs. We also describe three relational query optimization techniques
+that allow us to evaluate all minimal safe plans in a single query and very
+fast. We give a detailed experimental evaluation of our approach and, in the
+process, provide new way of thinking about the value of probabilistic methods
+over non-probabilistic methods for ranking query answers. We also note that the
+techniques developed in this paper apply immediately to lifted inference from
+statistical relational models since lifted inference corresponds to safe plans
+in probabilistic databases.

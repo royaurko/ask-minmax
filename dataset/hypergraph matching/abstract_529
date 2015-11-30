@@ -1,0 +1,11 @@
+We study the applicability of distributed, local algorithms to 0/1 max-min
+LPs where the objective is to maximise ${\min_k \sum_v c_{kv} x_v}$ subject to
+${\sum_v a_{iv} x_v \le 1}$ for each $i$ and ${x_v \ge 0}$ for each $v$. Here
+$c_{kv} \in \{0,1\}$, $a_{iv} \in \{0,1\}$, and the support sets ${V_i = \{v :
+a_{iv} > 0 \}}$ and ${V_k = \{v : c_{kv}>0 \}}$ have bounded size; in
+particular, we study the case $|V_k| \le 2$. Each agent $v$ is responsible for
+choosing the value of $x_v$ based on information within its constant-size
+neighbourhood; the communication network is the hypergraph where the sets $V_k$
+and $V_i$ constitute the hyperedges. We present a local approximation algorithm
+which achieves an approximation ratio arbitrarily close to the theoretical
+lower bound presented in prior work.

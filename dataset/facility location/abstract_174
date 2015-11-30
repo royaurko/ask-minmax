@@ -1,0 +1,17 @@
+The notion of {\em recoverable value} was advocated in work of Feige,
+Immorlica, Mirrokni and Nazerzadeh [Approx 2009] as a measure of quality for
+approximation algorithms. There this concept was applied to facility location
+problems. In the current work we apply a similar framework to the maximum
+independent set problem (MIS). We say that an approximation algorithm has {\em
+recoverable value} $\rho$, if for every graph it recovers an independent set of
+size at least $\max_I \sum_{v\in I} \min[1,\rho/(d(v) + 1)]$, where $d(v)$ is
+the degree of vertex $v$, and $I$ ranges over all independent sets in $G$.
+Hence, in a sense, from every vertex $v$ in the maximum independent set the
+algorithm recovers a value of at least $\rho/(d_v + 1)$ towards the solution.
+This quality measure is most effective in graphs in which the maximum
+independent set is composed of low degree vertices. It easily follows from
+known results that some simple algorithms for MIS ensure $\rho \ge 1$. We
+design a new randomized algorithm for MIS that ensures an expected recoverable
+value of at least $\rho \ge 7/3$. In addition, we show that approximating MIS
+in graphs with a given $k$-coloring within a ratio larger than $2/k$ is unique
+games hard. This rules out a natural approach for obtaining $\rho \ge 2$.

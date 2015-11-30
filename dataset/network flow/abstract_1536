@@ -1,0 +1,19 @@
+This paper considers the downlink traffic from a base station to two
+different clients. When assuming infinite backlog, it is known that
+inter-session network coding (INC) can significantly increase the throughput of
+each flow. However, the corresponding scheduling solution (when assuming
+dynamic arrivals instead and requiring bounded delay) is still nascent.
+  For the 2-flow downlink scenario, we propose the first opportunistic INC +
+scheduling solution that is provably optimal for time-varying channels, i.e.,
+the corresponding stability region matches the optimal Shannon capacity.
+Specifically, we first introduce a new binary INC operation, which is
+distinctly different from the traditional wisdom of XORing two overheard
+packets. We then develop a queue-length-based scheduling scheme, which, with
+the help of the new INC operation, can robustly and optimally adapt to
+time-varying channel quality. We then show that the proposed algorithm can be
+easily extended for rate adaptation and it again robustly achieves the optimal
+throughput. A byproduct of our results is a scheduling scheme for stochastic
+processing networks (SPNs) with random departure, which relaxes the assumption
+of deterministic departure in the existing results. The new SPN scheduler could
+thus further broaden the applications of SPN scheduling to other real-world
+scenarios.

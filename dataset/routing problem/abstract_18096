@@ -1,0 +1,15 @@
+Most finite element methods for solving time-harmonic wave-propagation
+problems lead to a linear system with a non-normal coefficient matrix. The
+non-normality is due to boundary conditions and losses. One way to solve these
+systems is to use a preconditioned iterative method. Detailed mathematical
+analysis of the convergence properties of these methods is important for
+developing new and understanding old preconditioners. Due to non-normality,
+there is currently very little existing literature in this direction. In this
+paper, we study the convergence of GMRES for such systems by deriving inclusion
+and exclusion regions for the pseudospectrum of the coefficient matrix. All
+analysis is done a priori by relating the properties of the weak problem to the
+coefficient matrix. The inclusion is derived from the stability properties of
+the problem and the exclusion is established via field of values and
+boundedness of the weak form. The derived tools are applied to estimate the
+pseudospectrum of time-harmonic Helmholtz equation with first-order absorbing
+boundary conditions, with and without a shifted-Laplace preconditioner.

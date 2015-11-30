@@ -1,0 +1,18 @@
+The belief propagation (BP) algorithm is an efficient way to solve
+"inference" problems in graphical models, such as Bayesian networks and Markov
+random fields. The system-state probability distribution of CSMA wireless
+networks is a Markov random field. An interesting question is how BP can help
+the analysis and design of CSMA wireless networks. This paper explores three
+such applications. First, we show how BP can be used to compute the throughputs
+of different links in the network given their access intensities, defined as
+the mean packet transmission time divided by the mean backoff countdown time.
+Second, we propose an inverse-BP algorithm to solve the reverse problem: how to
+set the access intensities of different links to meet their target throughputs?
+Third, we introduce a BP-adaptive CSMA algorithm to find the link access
+intensities that can achieve optimal system utility. BP solves the three
+problems with exact results in tree networks. It may, however, lose accuracy in
+networks with a loopy contention graph. We show how a generalized version of
+BP, GBP, can be designed to solve the three problems with high accuracy for
+networks with a loopy contention graph. Importantly, we show how the BP and GBP
+algorithms in this paper can be implemented in a distributed manner, making
+them useful in practical CSMA network opera-tion.

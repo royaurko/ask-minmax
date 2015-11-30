@@ -1,0 +1,22 @@
+Elastic materials are ubiquitous in nature and indispensable components in
+man-made devices and equipments. When a device or equipment involves composite
+or multiple elastic materials, elasticity interface problems come into play.
+The solution of three dimensional (3D) elasticity interface problems is
+significantly more difficult than that of elliptic counterparts due to the
+coupled vector components and cross derivatives in the governing elasticity
+equation. This work introduces the matched interface and boundary (MIB) method
+for solving 3D elasticity interface problems. The proposed MIB method utilizes
+fictitious values on irregular grid points near the material interface to
+replace function values in the discretization so that the elasticity equation
+can be discretized using the standard finite difference schemes as if there
+were no material interface. The interface jump conditions are rigorously
+enforced on the intersecting points between the interface and the mesh lines.
+Such an enforcement determines the fictitious values. A number of new technique
+are developed to construct efficient MIB schemes for dealing with cross
+derivative in coupled governing equations. The proposed method is extensively
+validated over both weak and strong discontinuity of the solution, both
+piecewise constant and position-dependent material parameters, both smooth and
+nonsmooth interface geometries, and both small and large contrasts in the
+Poisson's ratio and shear modulus across the interface. Numerical experiments
+indicate that the present MIB method is of second order convergence in both
+$L_\infty$ and $L_2$ error norms.

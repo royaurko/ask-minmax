@@ -1,0 +1,20 @@
+Precipitation is a complex physical process that varies in space and time.
+Predictions and interpolations at unobserved times and/or locations help to
+solve important problems in many areas. In this paper, we present a
+hierarchical Bayesian model for spatio-temporal data and apply it to obtain
+short term predictions of rainfall. The model incorporates physical knowledge
+about the underlying processes that determine rainfall, such as advection,
+diffusion and convection. It is based on a temporal autoregressive convolution
+with spatially colored and temporally white innovations. By linking the
+advection parameter of the convolution kernel to an external wind vector, the
+model is temporally nonstationary. Further, it allows for nonseparable and
+anisotropic covariance structures. With the help of the Voronoi tessellation,
+we construct a natural parametrization, that is, space as well as time
+resolution consistent, for data lying on irregular grid points. In the
+application, the statistical model combines forecasts of three other
+meteorological variables obtained from a numerical weather prediction model
+with past precipitation observations. The model is then used to predict
+three-hourly precipitation over 24 hours. It performs better than a separable,
+stationary and isotropic version, and it performs comparably to a deterministic
+numerical weather prediction model for precipitation and has the advantage that
+it quantifies prediction uncertainty.

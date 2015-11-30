@@ -1,0 +1,20 @@
+One of the main open research issues in Service Oriented Computing is to
+propose automated techniques to analyse service interfaces. A first problem,
+called compatibility, aims at determining whether a set of services (two in
+this paper) can be composed together and interact with each other as expected.
+Another related problem is to check the substitutability of one service with
+another. These problems are especially difficult when behavioural descriptions
+(i.e., message calls and their ordering) are taken into account in service
+interfaces. Interfaces should capture as faithfully as possible the service
+behaviour to make their automated analysis possible while not exhibiting
+implementation details. In this position paper, we choose Labelled Transition
+Systems to specify the behavioural part of service interfaces. In particular,
+we show that internal behaviours (tau transitions) are necessary in these
+transition systems in order to detect subtle errors that may occur when
+composing a set of services together. We also show that tau transitions should
+be handled differently in the compatibility and substitutability problem: the
+former problem requires to check if the compatibility is preserved every time a
+tau transition is traversed in one interface, whereas the latter requires a
+precise analysis of tau branchings in order to make the substitution preserve
+the properties (e.g., a compatibility notion) which were ensured before
+replacement.

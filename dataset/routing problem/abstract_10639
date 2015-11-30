@@ -1,0 +1,20 @@
+We consider the problem of assessing goodness of fit of a single Bayesian
+model to the observed data in the inverse problem context. A novel procedure of
+goodness of fit test is proposed, based on construction of reference
+distributions using the `inverse' part of the given model. This is motivated by
+an example from palaeoclimatology in which it is of interest to reconstruct
+past climates using information obtained from fossils deposited in lake
+sediment.
+  Technically, given a model $f(Y\mid X,\theta)$, where $Y$ is the observed
+data and $X$ is a set of (non-random) covariates, we obtain reference
+distributions based on the posterior $\pi(\tilde X\mid Y)$, where $\tilde X$
+must be interpreted as the {\it unobserved} random vector corresponding to the
+{\it observed} covariates $X$. Put simply, if the posterior distribution
+$\pi(\tilde X\mid Y)$ gives high density to the observed covariates $X$, or
+equivalently, if the posterior distribution of $T(\tilde X)$ gives high density
+to $T(X)$, where $T$ is any appropriate statistic, then we say that the model
+fits the data. Otherwise the model in question is not adequate. We provide
+decision-theoretic justification of our proposed approach and discuss other
+theoretical and computational advantages. We demonstrate our methodology with
+many simulated examples and three complex, high-dimensional, realistic
+palaeoclimate problems, including the motivating palaeoclimate problem.

@@ -1,0 +1,16 @@
+Structured-output learning is a challenging problem; particularly so because
+of the difficulty in obtaining large datasets of fully labelled instances for
+training. In this paper we try to overcome this difficulty by presenting a
+multi-utility learning framework for structured prediction that can learn from
+training instances with different forms of supervision. We propose a unified
+technique for inferring the loss functions most suitable for quantifying the
+consistency of solutions with the given weak annotation. We demonstrate the
+effectiveness of our framework on the challenging semantic image segmentation
+problem for which a wide variety of annotations can be used. For instance, the
+popular training datasets for semantic segmentation are composed of images with
+hard-to-generate full pixel labellings, as well as images with easy-to-obtain
+weak annotations, such as bounding boxes around objects, or image-level labels
+that specify which object categories are present in an image. Experimental
+evaluation shows that the use of annotation-specific loss functions
+dramatically improves segmentation accuracy compared to the baseline system
+where only one type of weak annotation is used.

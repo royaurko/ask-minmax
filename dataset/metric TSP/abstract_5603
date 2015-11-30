@@ -1,0 +1,21 @@
+The approach of quantifying the damage inflicted on a graph in Albert, Jeong
+and Barabsi's (AJB) report "Error and Attack Tolerance of Complex Networks"
+using the size of the largest connected component and the average size of the
+remaining components does not capture our intuitive idea of the damage to a
+graph caused by disconnections. We evaluate an alternative metric based on
+average inverse path lengths (AIPLs) that better fits our intuition that a
+graph can still be reasonably functional even when it is disconnected. We
+compare our metric with AJB's using a test set of graphs and report the
+differences. AJB's report should not be confused with a report by Crucitti et
+al. with the same name. Based on our analysis of graphs of different sizes and
+types, and using various numerical and statistical tools; the ratio of the
+average inverse path lengths of a connected graph of the same size as the sum
+of the size of the fragments of the disconnected graph can be used as a metric
+about the damage of a graph by the removal of an edge or a node. This damage is
+reported in the range (0,1) where 0 means that the removal had no effect on the
+graph's capability to perform its functions. A 1 means that the graph is
+totally dysfunctional. We exercise our metric on a collection of sample graphs
+that have been subjected to various attack profiles that focus on edge, node or
+degree betweenness values. We believe that this metric can be used to quantify
+the damage done to the graph by an attacker, and that it can be used in
+evaluating the positive effect of adding additional edges to an existing graph.

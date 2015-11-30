@@ -1,0 +1,24 @@
+In the online labeling problem with parameters n and m we are presented with
+a sequence of n keys from a totally ordered universe U and must assign each
+arriving key a label from the label set {1,2,...,m} so that the order of labels
+(strictly) respects the ordering on U. As new keys arrive it may be necessary
+to change the labels of some items; such changes may be done at any time at
+unit cost for each change. The goal is to minimize the total cost. An
+alternative formulation of this problem is the file maintenance problem, in
+which the items, instead of being labeled, are maintained in sorted order in an
+array of length m, and we pay unit cost for moving an item.
+  For the case m=cn for constant c>1, there are known algorithms that use at
+most O(n log(n)^2) relabelings in total [Itai, Konheim, Rodeh, 1981], and it
+was shown recently that this is asymptotically optimal [Bul\'anek, Kouck\'y,
+Saks, 2012]. For the case of m={\Theta}(n^C) for C>1, algorithms are known that
+use O(n log n) relabelings. A matching lower bound was claimed in [Dietz,
+Seiferas, Zhang, 2004]. That proof involved two distinct steps: a lower bound
+for a problem they call prefix bucketing and a reduction from prefix bucketing
+to online labeling. The reduction seems to be incorrect, leaving a (seemingly
+significant) gap in the proof. In this paper we close the gap by presenting a
+correct reduction to prefix bucketing. Furthermore we give a simplified and
+improved analysis of the prefix bucketing lower bound. This improvement allows
+us to extend the lower bounds for online labeling to the case where the number
+m of labels is superpolynomial in n. In particular, for superpolynomial m we
+get an asymptotically optimal lower bound {\Omega}((n log n) / (log log m - log
+log n)).

@@ -1,0 +1,16 @@
+We present faster approximation algorithms for generalized network flow
+problems. A generalized flow is one in which the flow out of an edge differs
+from the flow into the edge by a constant factor. We limit ourselves to the
+lossy case, when these factors are at most 1.
+  Our algorithm uses a standard interior-point algorithm to solve a linear
+program formulation of the network flow problem. The system of linear equations
+that arises at each step of the interior-point algorithm takes the form of a
+symmetric M-matrix. We present an algorithm for solving such systems in nearly
+linear time. The algorithm relies on the Spielman-Teng nearly linear time
+algorithm for solving linear systems in diagonally-dominant matrices.
+  For a graph with m edges, our algorithm obtains an additive epsilon
+approximation of the maximum generalized flow and minimum cost generalized flow
+in time tildeO(m^(3/2) * log(1/epsilon)). In many parameter ranges, this
+improves over previous algorithms by a factor of approximately m^(1/2). We also
+obtain a similar improvement for exactly solving the standard min-cost flow
+problem.

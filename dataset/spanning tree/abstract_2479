@@ -1,0 +1,20 @@
+The Tree-Particle-Mesh (TPM) N-body algorithm couples the tree algorithm for
+directly computing forces on particles in an hierarchical grouping scheme with
+the extremely efficient mesh based PM structured approach. The combined TPM
+algorithm takes advantage of the fact that gravitational forces are linear
+functions of the density field. Thus one can use domain decomposition to break
+down the density field into many separate high density regions containing a
+significant fraction of the mass but residing in a very small fraction of the
+total volume. In each of these high density regions the gravitational potential
+is computed via the tree algorithm supplemented by tidal forces from the
+external density distribution. For the bulk of the volume, forces are computed
+via the PM algorithm; timesteps in this PM component are large compared to
+individually determined timesteps in the tree regions. Since each tree region
+can be treated independently, the algorithm lends itself to very efficient
+parallelization using message passing. We have tested the new TPM algorithm (a
+refinement of that originated by Xu 1995) by comparison with results from
+Ferrell & Bertschinger's P^3M code and find that, except in small clusters, the
+TPM results are at least as accurate as those obtained with the
+well-established P^3M algorithm, while taking significantly less computing
+time. Production runs of 10^9 particles indicate that the new code has great
+scientific potential when used with distributed computing resources.

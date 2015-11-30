@@ -1,0 +1,18 @@
+We propose a Bayesian image super-resolution (SR) method with a causal
+Gaussian Markov random field (MRF) prior. SR is a technique to estimate a
+spatially high-resolution image from given multiple low-resolution images. An
+MRF model with the line process supplies a preferable prior for natural images
+with edges. We improve the existing image transformation model, the compound
+MRF model, and its hyperparameter prior model. We also derive the optimal
+estimator -- not the joint maximum a posteriori (MAP) or marginalized maximum
+likelihood (ML), but the posterior mean (PM) -- from the objective function of
+the L2-norm (mean square error) -based peak signal-to-noise ratio (PSNR). Point
+estimates such as MAP and ML are generally not stable in ill-posed
+high-dimensional problems because of overfitting, while PM is a stable
+estimator because all the parameters in the model are evaluated as
+distributions. The estimator is numerically determined by using variational
+Bayes. Variational Bayes is a widely used method that approximately determines
+a complicated posterior distribution, but it is generally hard to use because
+it needs the conjugate prior. We solve this problem with simple Taylor
+approximations. Experimental results have shown that the proposed method is
+more accurate or comparable to existing methods.

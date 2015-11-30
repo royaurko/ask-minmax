@@ -1,0 +1,24 @@
+Data on board the future PLANCK Low Frequency Instrument (LFI), to measure
+the Cosmic Microwave Background (CMB) anisotropies, consist of $N$ differential
+temperature measurements, expanding a range of values we shall call $R$.
+Preliminary studies and telemetry allocation indicate the need of compressing
+these data by a ratio of $c_r \simgt 10$. Here we present a study of entropy
+for (correlated multi-Gaussian discrete) noise, showing how the optimal
+compression $c_{r,opt}$, for a linearly discretized data set with
+$N_{bits}=\log_2{N_{max}}$ bits is given by: $c_r \simeq
+{N_{bits}/\log_2(\sqrt{2\pi e} ~\sigma_e/\Delta)}$, where $\sigma_e\equiv (det
+C)^{1/2N}$ is some effective noise rms given by the covariance matrix $C$ and
+$\Delta \equiv R / N_{max}$ is the digital resolution. This $\Delta$ only needs
+to be as small as the instrumental white noise RMS: $\Delta \simeq \sigma_T
+\simeq 2 mK$ (the nominal $\mu K$ pixel sensitivity will only be achieved after
+averaging). Within the currently proposed $N_{bits}=16$ representation, a
+linear analogue to digital converter (ADC) will allow the digital storage of a
+large dynamic range of differential temperature $R= N_{max} \Delta $ accounting
+for possible instrument drifts and instabilities (which could be reduced by
+proper on-board calibration). A well calibrated signal will be dominated by
+thermal (white) noise in the instrument: $\sigma_e \simeq \sigma_T$, which
+could yield large compression rates $c_{r,opt} \simeq 8$. This is the maximum
+lossless compression possible. In practice, point sources and $1/f$ noise will
+produce $\sigma_e > \sigma_T$ and $c_{r,opt} < 8$. This strategy seems safer
+than non-linear ADC or data reduction schemes (which could also be used at some
+stage).

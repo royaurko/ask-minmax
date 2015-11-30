@@ -1,0 +1,23 @@
+This paper deals with the delay-throughput analysis of a single-hop wireless
+network with $n$ transmitter/receiver pairs. All channels are assumed to be
+block Rayleigh fading with shadowing, described by parameters
+$(\alpha,\varpi)$, where $\alpha$ denotes the probability of shadowing and
+$\varpi$ represents the average cross-link gains. The analysis relies on the
+distributed on-off power allocation strategy (i.e., links with a direct channel
+gain above a certain threshold transmit at full power and the rest remain
+silent) for the deterministic and stochastic packet arrival processes. It is
+also assumed that each transmitter has a buffer size of one packet and dropping
+occurs once a packet arrives in the buffer while the previous packet has not
+been served. In the first part of the paper, we define a new notion of
+performance in the network, called effective throughput, which captures the
+effect of arrival process in the network throughput, and maximize it for
+different cases of packet arrival process. It is proved that the effective
+throughput of the network asymptotically scales as $\frac{\log
+n}{\hat{\alpha}}$, with $\hat{\alpha} \triangleq \alpha \varpi$, regardless of
+the packet arrival process. In the second part of the paper, we present the
+delay characteristics of the underlying network in terms of the packet dropping
+probability. We derive the sufficient conditions in the asymptotic case of $n
+\to \infty$ such that the packet dropping probability tend to zero, while
+achieving the maximum effective throughput of the network. Finally, we study
+the trade-off between the effective throughput, delay, and packet dropping
+probability of the network for different packet arrival processes.

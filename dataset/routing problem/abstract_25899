@@ -1,0 +1,15 @@
+We develop a robust uncertainty principle for finite signals in C^N which
+states that for almost all subsets T,W of {0,...,N-1} such that |T|+|W| ~ (log
+N)^(-1/2) N, there is no sigal f supported on T whose discrete Fourier
+transform is supported on W. In fact, we can make the above uncertainty
+principle quantitative in the sense that if f is supported on T, then only a
+small percentage of the energy (less than half, say) of its Fourier transform
+is concentrated on W.
+  As an application of this robust uncertainty principle (QRUP), we consider
+the problem of decomposing a signal into a sparse superposition of spikes and
+complex sinusoids. We show that if a generic signal f has a decomposition using
+spike and frequency locations in T and W respectively, and obeying |T| + |W| <=
+C (\log N)^{-1/2} N, then this is the unique sparsest possible decomposition
+(all other decompositions have more non-zero terms). In addition, if |T| + |W|
+<= C (\log N)^{-1} N, then this sparsest decomposition can be found by solving
+a convex optimization problem.

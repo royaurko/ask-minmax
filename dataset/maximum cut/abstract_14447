@@ -1,0 +1,10 @@
+We consider a real-time streaming system where messages are created
+sequentially at the source, and are encoded for transmission to the receiver
+over a packet erasure link. Each message must subsequently be decoded at the
+receiver within a given delay from its creation time. The goal is to construct
+an erasure correction code that achieves the maximum message size when all
+messages must be decoded by their respective deadlines under a specified set of
+erasure patterns (erasure model). We present an explicit intrasession code
+construction that is asymptotically optimal under erasure models containing a
+limited number of erasures per coding window, per sliding window, and
+containing erasure bursts of a limited length.

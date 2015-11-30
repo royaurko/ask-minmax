@@ -1,0 +1,21 @@
+We consider a set up where a file of size M is stored in n distributed
+storage nodes, using an (n,k) minimum storage regenerating (MSR) code, i.e., a
+maximum distance separable (MDS) code that also allows efficient exact-repair
+of any failed node. The problem of interest in this paper is to minimize the
+repair bandwidth B for exact regeneration of a single failed node, i.e., the
+minimum data to be downloaded by a new node to replace the failed node by its
+exact replica. Previous work has shown that a bandwidth of B=[M(n-1)]/[k(n-k)]
+is necessary and sufficient for functional (not exact) regeneration. It has
+also been shown that if k < = max(n/2, 3), then there is no extra cost of exact
+regeneration over functional regeneration. The practically relevant setting of
+low-redundancy, i.e., k/n>1/2 remains open for k>3 and it has been shown that
+there is an extra bandwidth cost for exact repair over functional repair in
+this case. In this work, we adopt into the distributed storage context an
+asymptotically optimal interference alignment scheme previously proposed by
+Cadambe and Jafar for large wireless interference networks. With this scheme we
+solve the problem of repair bandwidth minimization for (n,k) exact-MSR codes
+for all (n,k) values including the previously open case of k > \max(n/2,3). Our
+main result is that, for any (n,k), and sufficiently large file sizes, there is
+no extra cost of exact regeneration over functional regeneration in terms of
+the repair bandwidth per bit of regenerated data. More precisely, we show that
+in the limit as M approaches infinity, the ratio B/M = (n-1)/(k(n-k))$.

@@ -1,0 +1,8 @@
+We propose a syntax and semantics for interactive abstract state machines to
+deal with the following situation. A query is issued during a certain step, but
+the step ends before any reply is received. Later, a reply arrives, and later
+yet the algorithm makes use of this reply. By a persistent query, we mean a
+query for which a late reply might be used. Syntactically, our proposal
+involves issuing, along with a persistent query, a location where a late reply
+is to be stored. Semantically, it involves only a minor modification of the
+existing theory of interactive small-step abstract state machines.

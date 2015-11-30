@@ -1,0 +1,14 @@
+Sphere decoding (SD) of polar codes is an efficient method to achieve the
+error performance of maximum likelihood (ML) decoding. But the complexity of
+the conventional sphere decoder is still high, where the candidates in a target
+sphere are enumerated and the radius is decreased gradually until no available
+candidate is in the sphere. In order to reduce the complexity of SD, a stack SD
+(SSD) algorithm with an efficient enumeration is proposed in this paper. Based
+on a novel path metric, SSD can effectively narrow the search range when
+enumerating the candidates within a sphere. The proposed metric follows an
+exact ML rule and takes the full usage of the whole received sequence.
+Furthermore, another very simple metric is provided as an approximation of the
+ML metric in the high signal-to-noise ratio regime. For short polar codes,
+simulation results over the additive white Gaussian noise channels show that
+the complexity of SSD based on the proposed metrics is up to 100 times lower
+than that of the conventional SD.

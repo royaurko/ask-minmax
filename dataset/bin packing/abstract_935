@@ -1,0 +1,16 @@
+We consider the problem of solving packing/covering LPs online, when the
+columns of the constraint matrix are presented in random order. This problem
+has received much attention: the main open question is to figure out how large
+the right-hand sides of the LPs have to be (compared to the entries on the
+left-hand side of the constraint) to get $(1+\epsilon)$-approximations online?
+It is known that the RHS has to be $\Omega(\epsilon^{-2} \log m)$ times the
+left-hand sides, where $m$ is the number of constraints.
+  In this paper we give a primal-dual algorithm to achieve this bound for all
+packing LPs, and also for a class of mixed packing/covering LPs. Our algorithms
+construct dual solutions using a regret-minimizing online learning algorithm in
+a black-box fashion, and use them to construct primal solutions. The
+adversarial guarantee that holds for the constructed duals help us to take care
+of most of the correlations that arise in the algorithm; the remaining
+correlations are handled via martingale concentration and maximal inequalities.
+These ideas lead to conceptually simple and modular algorithms, which we hope
+will be useful in other contexts.

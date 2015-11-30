@@ -1,0 +1,15 @@
+The objective of this work is human pose estimation in videos, where multiple
+frames are available. We investigate a ConvNet architecture that is able to
+benefit from temporal context by combining information across the multiple
+frames using optical flow.
+  To this end we propose a new network architecture that: (i) regresses a
+confidence heatmap of joint position predictions; (ii) incorporates optical
+flow at a mid-layer to align heatmap predictions from neighbouring frames; and
+(iii) includes a final parametric pooling layer which learns to combine the
+aligned heatmaps into a pooled confidence map.
+  We show that this architecture outperforms a number of others, including one
+that uses optical flow solely at the input layers, and one that regresses joint
+coordinates directly.
+  The new architecture outperforms the state of the art by a large margin on
+three video pose estimation datasets, including the very challenging Poses in
+the Wild dataset.

@@ -1,0 +1,24 @@
+Due to its optimality on a single machine for the problem of minimizing
+average flow time, Shortest-Remaining-Processing-Time (\srpt) appears to be the
+most natural algorithm to consider for the problem of minimizing average flow
+time on multiple identical machines. It is known that $\srpt$ achieves the best
+possible competitive ratio on multiple machines up to a constant factor. Using
+resource augmentation, $\srpt$ is known to achieve total flow time at most that
+of the optimal solution when given machines of speed $2- \frac{1}{m}$. Further,
+it is known that $\srpt$'s competitive ratio improves as the speed increases;
+$\srpt$ is $s$-speed $\frac{1}{s}$-competitive when $s \geq 2- \frac{1}{m}$.
+  However, a gap has persisted in our understanding of $\srpt$. Before this
+work, the performance of $\srpt$ was not known when $\srpt$ is given
+$(1+\eps)$-speed when $0 < \eps < 1-\frac{1}{m}$, even though it has been
+thought that $\srpt$ is $(1+\eps)$-speed $O(1)$-competitive for over a decade.
+Resolving this question was suggested in Open Problem 2.9 from the survey
+"Online Scheduling" by Pruhs, Sgall, and Torng \cite{PruhsST}, and we answer
+the question in this paper. We show that $\srpt$ is \emph{scalable} on $m$
+identical machines. That is, we show $\srpt$ is $(1+\eps)$-speed
+$O(\frac{1}{\eps})$-competitive for $\eps >0$. We complement this by showing
+that $\srpt$ is $(1+\eps)$-speed $O(\frac{1}{\eps^2})$-competitive for the
+objective of minimizing the $\ell_k$-norms of flow time on $m$ identical
+machines. Both of our results rely on new potential functions that capture the
+structure of \srpt. Our results, combined with previous work, show that $\srpt$
+is the best possible online algorithm in essentially every aspect when
+migration is permissible.

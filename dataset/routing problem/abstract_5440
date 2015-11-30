@@ -1,0 +1,20 @@
+Cooperative beamforming in relay networks is considered, in which a source
+transmits to its destination with the help of a set of cooperating nodes. The
+source first transmits locally. The cooperating nodes that receive the source
+signal retransmit a weighted version of it in an amplify-and-forward (AF)
+fashion. Assuming knowledge of the second-order statistics of the channel state
+information, beamforming weights are determined so that the signal-to-noise
+ratio (SNR) at the destination is maximized subject to two different power
+constraints, i.e., a total (source and relay) power constraint, and individual
+relay power constraints. For the former constraint, the original problem is
+transformed into a problem of one variable, which can be solved via Newton's
+method. For the latter constraint, the original problem is transformed into a
+homogeneous quadratically constrained quadratic programming (QCQP) problem. In
+this case, it is shown that when the number of relays does not exceed three the
+global solution can always be constructed via semidefinite programming (SDP)
+relaxation and the matrix rank-one decomposition technique. For the cases in
+which the SDP relaxation does not generate a rank one solution, two methods are
+proposed to solve the problem: the first one is based on the coordinate descent
+method, and the second one transforms the QCQP problem into an infinity norm
+maximization problem in which a smooth finite norm approximation can lead to
+the solution using the augmented Lagrangian method.

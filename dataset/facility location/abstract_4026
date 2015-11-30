@@ -1,0 +1,22 @@
+We consider the problem of tracking $n$ targets in the plane using $2n$
+cameras. We can use two cameras to estimate the location of a target. We are
+then interested in forming $n$ camera pairs where each camera belongs to
+exactly one pair, followed by forming a matching between the targets and camera
+pairs so as to best estimate the locations of each of the targets. We consider
+a special case of this problem where each of the cameras are placed along a
+horizontal line $l$, and we consider two objective functions which have been
+shown to give good estimates of the locations of the targets when the distances
+between the targets and the cameras are sufficiently large. In the first
+objective, the value of an assignment of a camera pair to a target is the
+tracking angle formed by the assignment. Here, we are interested in maximizing
+the sum of these tracking angles. A polynomial time 2-approximation is known
+for this problem. We give a quasi-polynomial time algorithm that returns a
+solution whose value is at least a $(1-\epsilon)$ factor of the value of an
+optimal solution for any $\epsilon > 0$. In the second objective, the cost of
+an assignment of a camera pair to a target is the ratio of the vertical
+distance between the target and $l$ to the horizontal distance between the
+cameras in the camera pair. In this setting, we are interested in minimizing
+the sum of these ratios. A polynomial time 2-approximation is known for this
+problem. We give a quasi-polynomial time algorithm that returns a solution
+whose value is at most a $(1+\epsilon)$ factor of the value of an optimal
+solution for any $\epsilon > 0$.

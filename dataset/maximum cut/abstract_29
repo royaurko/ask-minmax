@@ -1,0 +1,25 @@
+Measurement of the angular power spectrum of the cosmic microwave background
+is most often based on a spherical harmonic analysis of the observed
+temperature anisotropies. Even if all-sky maps are obtained, however, it is
+likely that the region around the Galactic plane will have to be removed due to
+its strong microwave emissions. The spherical harmonics are not orthogonal on
+the cut sky, but an orthonormal basis set can be constructed from a linear
+combination of the original functions. Previous implementations of this
+technique, based on Gram-Schmidt orthogonalisation, were limited to maximum
+Legendre multipoles of l_max < 50 as they required all the modes have
+appreciable support on the cut sky, whereas for large l_max the fraction of
+modes supported is equal to the fractional area of the region retained. This
+problem is solved by using a singular value decomposition to remove the
+poorly-supported basis functions, although the treatment of the
+non-cosmological monopole and dipole modes necessarily becomes more
+complicated. A further difficulty is posed by computational limitations --
+orthogonalisation for a general cut requires O(l_max^6) operations and
+O(l_max^4) storage and so is impractical for l_max > 200 at present. These
+problems are circumvented for the special case of constant (Galactic) latitude
+cuts, for which the storage requirements scale as O(l_max) and the operations
+count scales as O(l_max^4). Less clear, however, is the stage of the data
+analysis at which the cut is best applied. As convolution is ill-defined on the
+incomplete sphere, beam-deconvolution should not be performed after the cut,
+and, if all-sky component separation is as successful as simulations indicate,
+the Galactic plane should probably be removed immediately prior to power
+spectrum estimation.

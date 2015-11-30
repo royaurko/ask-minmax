@@ -1,0 +1,22 @@
+We present a new energy-stable open boundary condition, and an associated
+numerical algorithm, for simulating incompressible flows with outflow/open
+boundaries. This open boundary condition ensures the energy stability of the
+system, even when strong vortices or backflows occur at the outflow boundary.
+Under certain situations it can be reduced to a form that can be analogized to
+the usual convective boundary condition. One prominent feature of this boundary
+condition is that it provides a control over the velocity on the outflow/open
+boundary. This is not available with the other energy-stable open boundary
+conditions from previous works. Our numerical algorithm treats the proposed
+open boundary condition based on a rotational velocity-correction type
+strategy. It gives rise to a Robin-type condition for the discrete pressure and
+a Robin-type condition for the discrete velocity on the outflow/open boundary,
+respectively at the pressure and the velocity sub-steps. We present extensive
+numerical experiments on a canonical wake flow and a jet flow in open domain to
+test the effectiveness and performance of the method developed herein.
+Simulation results are compared with the experimental data as well as with
+other previous simulations to demonstrate the accuracy of the current method.
+Long-time simulations are performed for a range of Reynolds numbers, at which
+strong vortices and backflows occur at the outflow/open boundaries. The results
+show that our method is effective in overcoming the backflow instability, and
+that it allows for the vortices to discharge from the domain in a fairly
+natural fashion even at high Reynolds numbers.

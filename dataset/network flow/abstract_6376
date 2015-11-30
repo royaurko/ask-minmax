@@ -1,0 +1,14 @@
+Position-based routing protocols take advantage of location information to
+perform a stateless and efficient routing. To enable position-based routing, a
+node must be able to discover the location of the messages' destination node.
+This task is typically accomplished by a location service. Recently, several
+location service protocols have been developed for ad hoc networks. In this
+paper we propose a novel location service called PHLS: Predictive Hierarchical
+Location Service. In PHLS, the entire network is partitioned into a hierarchy
+of smaller and smaller regions. For each node, one node in each-level region of
+the hierarchy is chosen as its local location server. When the network
+initializes or when a node attaches the network, nodes contact their local
+location server with their current location information (ie. position and
+velocity). Then, they only need to update their location server when they move
+away from their current region. Finally, nodes query their location servers and
+get the exact or predicted location of destination nodes.

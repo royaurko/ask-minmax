@@ -1,0 +1,20 @@
+An acyclic mapping from an $n$ element set into itself is a mapping $\phi$
+such that if $\phi^k(x) = x$ for some $k$ and $x$, then $\phi(x) = x$.
+Equivalently, $\phi^\ell = \phi^{\ell+1} = ...$ for $\ell$ sufficiently large.
+We investigate the behavior as $n \to \infty$ of a Markov chain on the
+collection of such mappings. At each step of the chain, a point in the $n$
+element set is chosen uniformly at random and the current mapping is modified
+by replacing the current image of that point by a new one chosen independently
+and uniformly at random, conditional on the resulting mapping being again
+acyclic. We can represent an acyclic mapping as a directed graph (such a graph
+will be a collection of rooted trees) and think of these directed graphs as
+metric spaces with some extra structure. Heuristic calculations indicate that
+the metric space valued process associated with the Markov chain should, after
+an appropriate time and ``space'' rescaling, converge as $n \to \infty$ to a
+real tree ($\R$-tree) valued Markov process that is reversible with respect to
+a measure induced naturally by the standard reflected Brownian bridge. The
+limit process, which we construct using Dirichlet form methods, is a Hunt
+process with respect to a suitable Gromov-Hausdorff-like metric. This process
+is similar to one that appears in earlier work by Evans and Winter as the limit
+of chains involving the subtree prune and regraft tree (SPR) rearrangements
+from phylogenetics.

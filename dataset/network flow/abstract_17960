@@ -1,0 +1,21 @@
+In this paper, we study the problem of reducing the energy consumption in a
+mobile communication network; we select the smallest set of active base
+stations that can preserve the quality of service (the minimum data rate)
+required by the users. In more detail, we start by posing this problem as an
+integer programming problem, the solution of which shows the optimal assignment
+(in the sense of minimizing the total energy consumption) between base stations
+and users. In particular, this solution shows which base stations can then be
+switched off or put in idle mode to save energy. However, solving this problem
+optimally is intractable in general, so in this study we develop a suboptimal
+approach that builds upon recent techniques that have been successfully applied
+to, among other problems, sparse signal reconstruction, portfolio optimization,
+statistical estimation, and error correction. More precisely, we relax the
+original integer programming problem as a minimization problem where the
+objective function is concave and the constraint set is convex. The resulting
+relaxed problem is still intractable in general, but we can apply the
+majorization-minimization algorithm to find good solutions (i.e., solutions
+attaining low objective value) with a low-complexity algorithm. In contrast to
+state-of-the-art approaches, the proposed algorithm can take into account
+inter-cell interference, is suitable for large-scale problems, and can be
+applied to heterogeneous networks (networks where base station consume
+different amounts of energy)

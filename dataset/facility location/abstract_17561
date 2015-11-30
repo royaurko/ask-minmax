@@ -1,0 +1,21 @@
+The Spatial Sensitivity Function (SSF) is used to quantify a detector's
+sensitivity to a spatially-distributed input signal. By weighting the incoming
+signal with the SSF and integrating, the overall scalar response of the
+detector can be estimated. This project focuses on estimating the SSF of a
+light intensity sensor consisting of a photodiode. This light sensor has been
+used previously in the Knuth Cyberphysics Laboratory on a robotic arm that
+performs its own experiments to locate a white circle in a dark field (Knuth et
+al., 2007). To use the light sensor to learn about its surroundings, the
+robot's inference software must be able to model and predict the light sensor's
+response to a hypothesized stimulus. Previous models of the light sensor
+treated it as a point sensor and ignored its spatial characteristics. Here we
+propose a parametric approach where the SSF is described by a mixture of
+Gaussians (MOG). By performing controlled calibration experiments with known
+stimulus inputs, we used nested sampling to estimate the SSF of the light
+sensor using an MOG model with the number of Gaussians ranging from one to
+five. By comparing the evidence computed for each MOG model, we found that one
+Gaussian is sufficient to describe the SSF to the accuracy we require. Future
+work will involve incorporating this more accurate SSF into the Bayesian
+machine learning software for the robotic system and studying how this detailed
+information about the properties of the light sensor will improve robot's
+ability to learn.

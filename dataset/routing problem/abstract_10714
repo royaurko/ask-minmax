@@ -1,0 +1,21 @@
+Generalizing many well-known and natural scheduling problems, scheduling with
+job-specific cost functions has gained a lot of attention recently. In this
+setting, each job incurs a cost depending on its completion time, given by a
+private cost function, and one seeks to schedule the jobs to minimize the total
+sum of these costs. The framework captures many important scheduling objectives
+such as weighted flow time or weighted tardiness. Still, the general case as
+well as the mentioned special cases are far from being very well understood
+yet, even for only one machine. Aiming for better general understanding of this
+problem, in this paper we focus on the case of uniform job release dates on one
+machine for which the state of the art is a 4-approximation algorithm. This is
+true even for a special case that is equivalent to the covering version of the
+well-studied and prominent unsplittable flow on a path problem, which is
+interesting in its own right. For that covering problem, we present a
+quasi-polynomial time $(1+\epsilon)$-approximation algorithm that yields an
+$(e+\epsilon)$-approximation for the above scheduling problem. Moreover, for
+the latter we devise the best possible resource augmentation result regarding
+speed: a polynomial time algorithm which computes a solution with \emph{optimal
+}cost at $1+\epsilon$ speedup. Finally, we present an elegant QPTAS for the
+special case where the cost functions of the jobs fall into at most $\log n$
+many classes. This algorithm allows the jobs even to have up to $\log n$ many
+distinct release dates.

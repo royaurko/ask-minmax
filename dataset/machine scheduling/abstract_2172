@@ -1,0 +1,12 @@
+We present the formal verification of a low-power x86 floating-point
+multiplier. The multiplier operates iteratively and feeds back intermediate
+results in redundant representation. It supports x87 and SSE instructions in
+various precisions and can block the issuing of new instructions. The design
+has been optimized for low-power operation and has not been constrained by the
+formal verification effort. Additional improvements for the implementation were
+identified through formal verification. The formal verification of the design
+also incorporates the implementation of clock-gating and control logic. The
+core of the verification effort was based on ACL2 theorem proving.
+Additionally, model checking has been used to verify some properties of the
+floating-point scheduler that are relevant for the correct operation of the
+unit.

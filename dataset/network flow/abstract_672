@@ -1,0 +1,16 @@
+Internet performance is tightly related to the properties of TCP and UDP
+protocols, jointly responsible for the delivery of the great majority of
+Internet traffic. It is well understood how these protocols behave under FIFO
+queuing and what the network congestion effects. However, no comprehensive
+analysis is available when flow-aware mechanisms such as per-flow scheduling
+and dropping policies are deployed. Previous simulation and experimental
+results leave a number of unanswered questions. In the paper, we tackle this
+issue by modeling via a set of fluid non-linear ODEs the instantaneous
+throughput and the buffer occupancy of N long-lived TCP sources under three
+per-flow scheduling disciplines (Fair Queuing, Longest Queue First, Shortest
+Queue First) and with longest queue drop buffer management. We study the system
+evolution and analytically characterize the stationary regime: closed-form
+expressions are derived for the stationary throughput/sending rate and buffer
+occupancy which give thorough understanding of short/long-term fairness for TCP
+traffic. Similarly, we provide the characterization of the loss rate
+experienced by UDP flows in presence of TCP traffic.

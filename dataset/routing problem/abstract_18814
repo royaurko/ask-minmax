@@ -1,0 +1,26 @@
+Effecting coordination across remote sites in a distributed system is an
+essential part of distributed computing, and also an inherent challenge. In
+1978, an analysis of communication in asynchronous systems was suggested by
+Leslie Lamport. Lamport's analysis determines a notion of temporal precedence,
+a sort of weak notion of time, which is otherwise missing in asynchronous
+systems. This notion has been extensively utilized in various applications.
+  Yet the analysis is limited to systems that are asynchronous. In this thesis
+we go beyond by investigating causality in synchronous systems. In such
+systems, the boundaries of causal influence are not charted out exclusively by
+message passing. Here time itself, passing at a uniform (or almost uniform)
+rate for all processes, is also a medium by which causal influence may fan out.
+This thesis studies, and characterizes, the combinations of time and message
+passing that govern causal influence in synchronous systems.
+  It turns out that knowledge based analysis [FHMV] provides a well tailored
+formal framework within which causal notions can be studied. As we show, the
+formal notion of knowledge is highly appropriate for characterizing causal
+influence in terms of information flow, broadening the analysis of Chandy and
+Misra in [ChM].
+  We define several generic classes of coordination problems that pose various
+temporal ordering requirements on the participating processes. These
+coordination problems provide natural generalizations of real life
+requirements. We then analyze the causal conditions that underlie suitable
+solutions to these problems. The analysis is conducted in two stages: first,
+the temporal ordering requirements are reduced to epistemic conditions. Then,
+these epistemic conditions are characterized in terms of the causal
+communication patterns that are necessary and sufficient to bring them about.

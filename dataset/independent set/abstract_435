@@ -1,0 +1,24 @@
+Algebraic independence is an advanced notion in commutative algebra that
+generalizes independence of linear polynomials to higher degree. Polynomials
+{f_1, ..., f_m} \subset \F[x_1, ..., x_n] are called algebraically independent
+if there is no non-zero polynomial F such that F(f_1, ..., f_m) = 0. The
+transcendence degree, trdeg{f_1, ..., f_m}, is the maximal number r of
+algebraically independent polynomials in the set. In this paper we design
+blackbox and efficient linear maps \phi that reduce the number of variables
+from n to r but maintain trdeg{\phi(f_i)}_i = r, assuming f_i's sparse and
+small r. We apply these fundamental maps to solve several cases of blackbox
+identity testing:
+  (1) Given a polynomial-degree circuit C and sparse polynomials f_1, ..., f_m
+with trdeg r, we can test blackbox D := C(f_1, ..., f_m) for zeroness in
+poly(size(D))^r time.
+  (2) Define a spsp_\delta(k,s,n) circuit C to be of the form \sum_{i=1}^k
+\prod_{j=1}^s f_{i,j}, where f_{i,j} are sparse n-variate polynomials of degree
+at most \delta. For k = 2 we give a poly(sn\delta)^{\delta^2} time blackbox
+identity test.
+  (3) For a general depth-4 circuit we define a notion of rank. Assuming there
+is a rank bound R for minimal simple spsp_\delta(k,s,n) identities, we give a
+poly(snR\delta)^{Rk\delta^2} time blackbox identity test for spsp_\delta(k,s,n)
+circuits. This partially generalizes the state of the art of depth-3 to depth-4
+circuits.
+  The notion of trdeg works best with large or zero characteristic, but we also
+give versions of our results for arbitrary fields.

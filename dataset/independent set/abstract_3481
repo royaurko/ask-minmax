@@ -1,0 +1,25 @@
+In the matroid secretary problem we are given a stream of elements and asked
+to choose a set of elements that maximizes the total value of the set, subject
+to being an independent set of a matroid given in advance. The difficulty comes
+from the assumption that decisions are irrevocable: if we choose to accept an
+element when it is presented by the stream then we can never get rid of it, and
+if we choose not to accept it then we cannot later add it. Babaioff, Immorlica,
+and Kleinberg [SODA 2007] introduced this problem, gave O(1)-competitive
+algorithms for certain classes of matroids, and conjectured that every matroid
+admits an O(1)-competitive algorithm. However, most matroids that are known to
+admit an O(1)-competitive algorithm can be easily represented using graphs
+(e.g. graphic and transversal matroids). In particular, there is very little
+known about F-representable matroids (the class of matroids that can be
+represented as elements of a vector space over a field F), which are one of the
+foundational matroid classes. Moreover, most of the known techniques are as
+dependent on graph theory as they are on matroid theory. We go beyond graphs by
+giving an O(1)-competitive algorithm for regular matroids (the class of
+matroids that are representable over every field), and use techniques that are
+matroid-theoretic rather than graph-theoretic. We use the regular matroid
+decomposition theorem of Seymour to decompose any regular matroid into matroids
+which are either graphic, cographic, or isomorphic to R_{10}, and then show how
+to combine algorithms for these basic classes into an algorithm for regular
+matroids. This allows us to generalize beyond regular matroids to any class of
+matroids that admits such a decomposition into classes for which we already
+have good algorithms. In particular, we give an O(1)-competitive algorithm for
+the class of max-flow min-cut matroids.

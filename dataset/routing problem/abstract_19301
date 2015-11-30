@@ -1,0 +1,22 @@
+The paper develops a finite element method for partial differential equations
+posed on hypersurfaces in $\mathbb{R}^N$, $N=2,3$. The method uses traces of
+bulk finite element functions on a surface embedded in a volumetric domain. The
+bulk finite element space is defined on an octree grid which is locally refined
+or coarsened depending on error indicators and estimated values of the surface
+curvatures. The cartesian structure of the bulk mesh leads to easy and
+efficient adaptation process, while the trace finite element method makes
+fitting the mesh to the surface unnecessary. The number of degrees of freedom
+involved in computations is consistent with the two-dimension nature of surface
+PDEs. No parametrization of the surface is required; it can be given implicitly
+by a level set function. In practice, a variant of the marching cubes method is
+used to recover the surface with the second order accuracy. We prove the
+optimal order of accuracy for the trace finite element method in $H^1$ and
+$L^2$ surface norms for a problem with smooth solution and quasi-uniform mesh
+refinement. Experiments with less regular problems demonstrate optimal
+convergence with respect to the number of degrees of freedom, if grid
+adaptation is based on an appropriate error indicator. The paper shows results
+of numerical experiments for a variety of geometries and problems, including
+advection-diffusion equations on surfaces. Analysis and numerical results of
+the paper suggest that combination of cartesian adaptive meshes and the
+unfitted (trace) finite elements provide simple, efficient, and reliable tool
+for numerical treatment of PDEs posed on surfaces.

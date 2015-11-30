@@ -1,0 +1,15 @@
+The width measure \emph{treedepth}, also known as vertex ranking, centered
+coloring and elimination tree height, is a well-established notion which has
+recently seen a resurgence of interest. We present an algorithm which---given
+as input an $n$-vertex graph, a tree decomposition of the graph of width $w$,
+and an integer $t$---decides Treedepth, i.e. whether the treedepth of the graph
+is at most $t$, in time $2^{O(wt)} \cdot n$. If necessary, a witness structure
+for the treedepth can be constructed in the same running time. In conjunction
+with previous results we provide a simple algorithm and a fast algorithm which
+decide treedepth in time $2^{2^{O(t)}} \cdot n$ and $2^{O(t^2)} \cdot n$,
+respectively, which do not require a tree decomposition as part of their input.
+The former answers an open question posed by Ossona de Mendez and Nesetril as
+to whether deciding Treedepth admits an algorithm with a linear running time
+(for every fixed $t$) that does not rely on Courcelle's Theorem or other heavy
+machinery. For chordal graphs we can prove a running time of $2^{O(t \log
+t)}\cdot n$ for the same algorithm.

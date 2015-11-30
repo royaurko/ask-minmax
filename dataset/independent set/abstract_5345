@@ -1,0 +1,26 @@
+Computational discovery of microRNAs (miRNA) is based on pre-determined sets
+of features from miRNA precursors (pre-miRNA). These feature sets used by
+current tools for pre-miRNA recognition differ in construction and dimension.
+Some feature sets are composed of sequence-structure patterns commonly found in
+pre-miRNAs, while others are a combination of more sophisticated RNA features.
+Current tools achieve similar predictive performance even though the feature
+sets used - and their computational cost - differ widely. In this work, we
+analyze the discriminant power of seven feature sets, which are used in six
+pre-miRNA prediction tools. The analysis is based on the classification
+performance achieved with these feature sets for the training algorithms used
+in these tools. We also evaluate feature discrimination through the F-score and
+feature importance in the induction of random forests. More diverse feature
+sets produce classifiers with significantly higher classification performance
+compared to feature sets composed only of sequence-structure patterns. However,
+small or non-significant differences were found among the estimated
+classification performances of classifiers induced using sets with
+diversification of features, despite the wide differences in their dimension.
+Based on these results, we applied a feature selection method to reduce the
+computational cost of computing the feature set, while maintaining discriminant
+power. We obtained a lower-dimensional feature set, which achieved a
+sensitivity of 90% and a specificity of 95%. Our feature set achieves a
+sensitivity and specificity within 0.1% of the maximal values obtained with any
+feature set while it is 34x faster to compute. Even compared to another feature
+set, which is the computationally least expensive feature set of those from the
+literature which perform within 0.1% of the maximal values, it is 34x faster to
+compute.

@@ -1,0 +1,23 @@
+We examine the specific problem of clearing day-ahead electricity market
+auctions where each bidder, whether a producer or consumer, can specify a
+minimum profit or maximum payment condition constraining the acceptance of a
+set of bid curves spanning multiple time periods in locations connected through
+a transmission network with linear constraints. This helps describing e.g. the
+recovery of start-up costs of a power plant, or analogously for a large
+consumer, utility reduced by a constant term. We propose here a new market
+model with a corresponding MILP formulation for uniform locational price
+day-ahead auctions, handling bids with a minimum profit or maximum payment
+condition, which we call MP bids, in a uniform and computationally-efficient
+way. We also propose an exact decomposition procedure with sparse strengthened
+Benders cuts derived from the MILP formulation. Both the MILP formulation and
+the exact decomposition procedure are similar to computationally-efficient
+approaches previously proposed to handle indivisible bids (so-called block
+bids) according to European market rules, though the clearing conditions could
+appear different at first sight. Indeed, the approach and the cuts proposed are
+also valid to deal with both kinds of bids simultaneously, as block bids with a
+minimum acceptance ratio, which generalize regular (fully indivisible) block
+bids, turn out to be a special case of the MP bids introduced here which
+include minimum power output level information. We compare these MP bids to
+previous models for minimum profit conditions proposed in the academic
+literature, and to the model for minimum income conditions used by the Spanish
+power exchange OMIE, now integrated to the pan-European PCR market.

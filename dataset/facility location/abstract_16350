@@ -1,0 +1,22 @@
+We consider Mobile Ad-hoc Network (MANET) with transmitters located according
+to a Poisson point in the Euclidean plane, slotted Aloha Medium Access (MAC)
+protocol and the so-called outage scenario, where a successful transmission
+requires a Signal-to-Interference-and-Noise (SINR) larger than some threshold.
+We analyze the local delays in such a network, namely the number of times slots
+required for nodes to transmit a packet to their prescribed next-hop receivers.
+The analysis depends very much on the receiver scenario and on the variability
+of the fading. In most cases, each node has finite-mean geometric random delay
+and thus a positive next hop throughput. However, the spatial (or large
+population) averaging of these individual finite mean-delays leads to infinite
+values in several practical cases, including the Rayleigh fading and positive
+thermal noise case. In some cases it exhibits an interesting phase transition
+phenomenon where the spatial average is finite when certain model parameters
+are below a threshold and infinite above. We call this phenomenon, contention
+phase transition. We argue that the spatial average of the mean local delays is
+infinite primarily because of the outage logic, where one transmits full
+packets at time slots when the receiver is covered at the required SINR and
+where one wastes all the other time slots. This results in the "RESTART"
+mechanism, which in turn explains why we have infinite spatial average.
+Adaptive coding offers a nice way of breaking the outage/RESTART logic. We show
+examples where the average delays are finite in the adaptive coding case,
+whereas they are infinite in the outage case.

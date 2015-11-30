@@ -1,0 +1,16 @@
+This paper addresses the problem of semantic part parsing (segmentation) of
+cars, i.e.assigning every pixel within the car to one of the parts (e.g.body,
+window, lights, license plates and wheels). We formulate this as a landmark
+identification problem, where a set of landmarks specifies the boundaries of
+the parts. A novel mixture of graphical models is proposed, which dynamically
+couples the landmarks to a hierarchy of segments. When modeling pairwise
+relation between landmarks, this coupling enables our model to exploit the
+local image contents in addition to spatial deformation, an aspect that most
+existing graphical models ignore. In particular, our model enforces appearance
+consistency between segments within the same part. Parsing the car, including
+finding the optimal coupling between landmarks and segments in the hierarchy,
+is performed by dynamic programming. We evaluate our method on a subset of
+PASCAL VOC 2010 car images and on the car subset of 3D Object Category dataset
+(CAR3D). We show good results and, in particular, quantify the effectiveness of
+using the segment appearance consistency in terms of accuracy of part
+localization and segmentation.

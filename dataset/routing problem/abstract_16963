@@ -1,0 +1,15 @@
+In a typical range emptiness searching (resp., reporting) problem, we are
+given a set $P$ of $n$ points in $\reals^d$, and wish to preprocess it into a
+data structure that supports efficient range emptiness (resp., reporting)
+queries, in which we specify a range $\sigma$, which, in general, is a
+semi-algebraic set in $\reals^d$ of constant description complexity, and wish
+to determine whether $P\cap\sigma=\emptyset$, or to report all the points in
+$P\cap\sigma$. Range emptiness searching and reporting arise in many
+applications, and have been treated by Matou\v{s}ek \cite{Ma:rph} in the
+special case where the ranges are halfspaces bounded by hyperplanes. As shown
+in \cite{Ma:rph}, the two problems are closely related, and have solutions (for
+the case of halfspaces) with similar performance bounds. In this paper we
+extend the analysis to general semi-algebraic ranges, and show how to adapt
+Matou\v{s}ek's technique, without the need to {\em linearize} the ranges into a
+higher-dimensional space. This yields more efficient solutions to several
+useful problems, and we demonstrate the new technique in four applications.

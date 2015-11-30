@@ -1,0 +1,17 @@
+The problem MaxLin2 can be stated as follows. We are given a system $S$ of
+$m$ equations in variables $x_1,...,x_n$, where each equation is $\sum_{i \in
+I_j}x_i = b_j$ is assigned a positive integral weight $w_j$ and $x_i,b_j \in
+\mathbb{F}_2$, $I_j \subseteq \{1,2,...,n\}$ for $j=1,...,m$. We are required
+to find an assignment of values to the variables in order to maximize the total
+weight of the satisfied equations.
+  Let $W$ be the total weight of all equations in $S$. We consider the
+following parameterized version of MaxLin2: decide whether there is an
+assignment satisfying equations of total weight at least $W-k$, where $k$ is a
+nonnegative parameter. We prove that this parameterized problem is W[1]-hard
+even if each equation of $S$ has exactly three variables and every variable
+appears in exactly three equations and, moreover, each weight $w_j$ equals 1
+and no two equations have the same left-hand side. We show the tightness of
+this result by proving that if each equation has at most two variables then the
+parameterized problem is fixed-parameter tractable. We also prove that if no
+variable appears in more than two equations then we can maximize the total
+weight of satisfied equations in polynomial time.

@@ -1,0 +1,21 @@
+Given a set of interacting components with non-deterministic variable update
+and given safety requirements, the goal of priority synthesis is to restrict,
+by means of priorities, the set of possible interactions in such a way as to
+guarantee the given safety conditions for all possible runs. In distributed
+priority synthesis we are interested in obtaining local sets of priorities,
+which are deployed in terms of local component controllers sharing intended
+next moves between components in local neighborhoods only. These possible
+communication paths between local controllers are specified by means of a
+communication architecture. We formally define the problem of distributed
+priority synthesis in terms of a multi-player safety game between players for
+(angelically) selecting the next transition of the components and an
+environment for (demonically) updating uncontrollable variables. We analyze the
+complexity of the problem, and propose several optimizations including a
+solution-space exploration based on a diagnosis method using a nested extension
+of the usual attractor computation in games together with a reduction to
+corresponding SAT problems. When diagnosis fails, the method proposes potential
+candidates to guide the exploration. These optimized algorithms for solving
+distributed priority synthesis problems have been integrated into the VissBIP
+framework. An experimental validation of this implementation is performed using
+a range of case studies including scheduling in multicore processors and
+modular robotics.

@@ -1,0 +1,14 @@
+When we try to solve a system of linear equations, we can consider a simple
+iterative algorithm in which an equation including only one variable is chosen
+at each step, and the variable is fixed to the value satisfying the equation.
+The dynamics of this algorithm is captured by the peeling algorithm. Analyses
+of the peeling algorithm on random hypergraphs are required for many problems,
+e.g., the decoding threshold of low-density parity check codes, the inverting
+threshold of Goldreich's pseudorandom generator, the load threshold of cuckoo
+hashing, etc. In this work, we deal with random hypergraphs including
+superlinear number of hyperedges, and derive the tight threshold for the
+succeeding of the peeling algorithm. For the analysis, Wormald's method of
+differential equations, which is commonly used for analyses of the peeling
+algorithm on random hypergraph with linear number of hyperedges, cannot be used
+due to the superlinear number of hyperedges. A new method called the evolution
+of the moment generating function is proposed in this work.

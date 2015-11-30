@@ -1,0 +1,15 @@
+We present a multi-level solver for drawing constrained Gaussian realizations
+or finding the maximum likelihood estimate of the CMB sky, given noisy sky maps
+with partial sky coverage. The method converges substantially faster than
+existing Conjugate Gradient (CG) methods for the same problem. For instance,
+for the 143 GHz Planck frequency channel, only 3 multi-level W-cycles result in
+an absolute error smaller than 1 microKelvin in any pixel. Using 16 CPU cores,
+this translates to a computational expense of 6 minutes wall time per
+realization, plus 8 minutes wall time for a power spectrum-dependent
+precomputation. Each additional W-cycle reduces the error by more than an order
+of magnitude, at an additional computational cost of 2 minutes. For comparison,
+we have never been able to achieve similar absolute convergence with
+conventional CG methods for this high signal-to-noise data set, even after
+thousands of CG iterations and employing expensive preconditioners. The solver
+is part of the Commander 2 code, which is available with an open source license
+at http://commander.bitbucket.org/.

@@ -1,0 +1,14 @@
+Gossip algorithms for aggregation have recently received significant
+attention for sensor network applications because of their simplicity and
+robustness in noisy and uncertain environments. However, gossip algorithms can
+waste significant energy by essentially passing around redundant information
+multiple times. For realistic sensor network model topologies like grids and
+random geometric graphs, the inefficiency of gossip schemes is caused by slow
+mixing times of random walks on those graphs. We propose and analyze an
+alternative gossiping scheme that exploits geographic information. By utilizing
+a simple resampling method, we can demonstrate substantial gains over
+previously proposed gossip protocols. In particular, for random geometric
+graphs, our algorithm computes the true average to accuracy $1/n^a$ using
+$O(n^{1.5}\sqrt{\log n})$ radio transmissions, which reduces the energy
+consumption by a $\sqrt{\frac{n}{\log n}}$ factor over standard gossip
+algorithms.

@@ -1,0 +1,12 @@
+Solving the Maximum a Posteriori on Markov Random Field, MRF-MAP, is a
+prevailing method in recent interactive image segmentation tools. Although
+mathematically explicit in its computational targets, and impressive for the
+segmentation quality, MRF-MAP is hard to accomplish without the interactive
+information from users. So it is rarely adopted in the automatic style up to
+today. In this paper, we present an automatic image segmentation algorithm,
+NegCut, based on the approximation to MRF-MAP. First we prove MRF-MAP is
+NP-hard when the probabilistic models are unknown, and then present an
+approximation function in the form of minimum cuts on graphs with negative
+weights. Finally, the binary segmentation is taken from the largest eigenvector
+of the target matrix, with a tuned version of the Lanczos eigensolver. It is
+shown competitive at the segmentation quality in our experiments.

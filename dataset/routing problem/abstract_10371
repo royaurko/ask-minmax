@@ -1,0 +1,15 @@
+In this paper, we introduce a methodology, called decomposition-based
+reductions, for showing the equivalence among various problems of
+bounded-width.
+  First, we show that the following are equivalent for any $\alpha > 0$:
+  * SAT can be solved in $O^*(2^{\alpha \mathrm{tw}})$ time,
+  * 3-SAT can be solved in $O^*(2^{\alpha \mathrm{tw}})$ time,
+  * Max 2-SAT can be solved in $O^*(2^{\alpha \mathrm{tw}})$ time,
+  * Independent Set can be solved in $O^*(2^{\alpha \mathrm{tw}})$ time, and
+  * Independent Set can be solved in $O^*(2^{\alpha \mathrm{cw}})$ time, where
+tw and cw are the tree-width and clique-width of the instance, respectively.
+  Then, we introduce a new parameterized complexity class EPNL, which includes
+Set Cover and Directed Hamiltonicity, and show that SAT, 3-SAT, Max 2-SAT, and
+Independent Set parameterized by path-width are EPNL-complete. This implies
+that if one of these EPNL-complete problems can be solved in $O^*(c^k)$ time,
+then any problem in EPNL can be solved in $O^*(c^k)$ time.

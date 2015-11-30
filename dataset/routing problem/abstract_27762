@@ -1,0 +1,14 @@
+We explore the effects of normalizing the proposal density in Markov Chain
+Monte Carlo algorithms in the context of reconstructing the conductivity term
+$K$ in the $2$-dimensional heat equation, given temperatures at the boundary
+points, $d$. We approach this nonlinear inverse problem by implementing a
+Metropolis-Hastings Markov Chain Monte Carlo algorithm. Markov Chains produce a
+probability distribution of possible solutions conditional on the observed
+data. We generate a candidate solution $K'$ and solve the forward problem,
+obtaining $d'$. At step $n$, with some probability $\alpha$, we set
+$K_{n+1}=K'$. We identify certain issues with this construction, stemming from
+large and fluctuating values of our data terms. Using this framework, we
+develop normalization terms $z_0,z$ and parameters $\lambda$ that preserve the
+inherently sparse information at our disposal. We examine the results of this
+variant of the MCMC algorithm on the reconstructions of several $2$-dimensional
+conductivity functions.

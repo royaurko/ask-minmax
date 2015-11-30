@@ -1,0 +1,18 @@
+At the cellular scale, biochemical processes are governed by random
+interactions between reactant molecules with small copy counts, leading to
+behavior that is inherently stochastic. Such systems are often modeled as
+continuous-time Markov jump processes that can be described by the Chemical
+Master Equation. Gillespie's Stochastic Simulation Algorithm (SSA) generates
+exact trajectories of these systems. The amount of computational work required
+for each step of the original SSA is proportional to the number of reaction
+channels, leading to computational complexity that scales linearly as the
+problem size increases. The original SSA is therefore inefficient for large
+problems, which has prompted the development of several alternative
+formulations with improved scaling properties. We describe an exact SSA that
+uses a table data structure with event time binning to achieve constant
+computational complexity. Optimal algorithm parameters and binning strategies
+are discussed. We compare the computational efficiency of the algorithm to
+existing methods and demonstrate excellent scaling for large problems. This
+method is well suited for generating exact trajectories of large models that
+can be described by the Reaction-Diffusion Master Equation arising from
+spatially discretized reaction-diffusion processes.

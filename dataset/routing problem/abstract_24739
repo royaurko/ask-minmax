@@ -1,0 +1,17 @@
+Markov Chain Monte Carlo (MCMC) methods are employed to sample from a given
+distribution of interest, whenever either the distribution does not exist in
+closed form, or, if it does, no efficient method to simulate an independent
+sample from it is available. Although a wealth of diagnostic tools for
+convergence assessment of MCMC methods have been proposed in the last two
+decades, the search for a dependable and easy to implement tool is ongoing. We
+present in this article a criterion based on the principle of detailed balance
+which provides a qualitative assessment of the convergence of a given chain.
+The criterion is based on the behaviour of a one-dimensional statistic, whose
+asymptotic distribution under the assumption of stationarity is derived; our
+results apply under weak conditions and have the advantage of being completely
+intuitive. We implement this criterion as a stopping rule for simulated
+annealing in the problem of finding maximum likelihood estimators for
+parameters of a 20-component mixture model. We also apply it to the problem of
+sampling from a 10-dimensional funnel distribution via slice sampling and the
+Metropolis-Hastings algorithm. Furthermore, based on this convergence criterion
+we define a measure of efficiency of one algorithm versus another.

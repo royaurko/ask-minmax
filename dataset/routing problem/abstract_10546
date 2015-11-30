@@ -1,0 +1,19 @@
+An important problem in the implementation of Markov Chain Monte Carlo
+algorithms is to determine the convergence time, or the number of iterations
+before the chain is close to stationarity. For many Markov chains used in
+practice this time is not known. Even in cases where the convergence time is
+known to be polynomial, the theoretical bounds are often too crude to be
+practical. Thus, practitioners like to carry out some form of statistical
+analysis in order to assess convergence. This has led to the development of a
+number of methods known as convergence diagnostics which attempt to diagnose
+whether the Markov chain is far from stationarity. We study the problem of
+testing convergence in the following settings and prove that the problem is
+hard in a computational sense: Given a Markov chain that mixes rapidly, it is
+hard for Statistical Zero Knowledge (SZK-hard) to distinguish whether starting
+from a given state, the chain is close to stationarity by time t or far from
+stationarity at time ct for a constant c. We show the problem is in AM
+intersect coAM. Second, given a Markov chain that mixes rapidly it is coNP-hard
+to distinguish whether it is close to stationarity by time t or far from
+stationarity at time ct for a constant c. The problem is in coAM. Finally, it
+is PSPACE-complete to distinguish whether the Markov chain is close to
+stationarity by time t or far from being mixed at time ct for c at least 1.

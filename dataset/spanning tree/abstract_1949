@@ -1,0 +1,12 @@
+We present a dynamic data structure for representing a graph $G$ with
+tree-depth at most $D$. Tree-depth is an important graph parameter which arose
+in the study of sparse graph classes.
+  The structure allows addition and removal of edges and vertices such that the
+resulting graph still has tree-depth at most $D$, in time bounds depending only
+on $D$. A tree-depth decomposition of the graph is maintained explicitly.
+  This makes the data structure useful for dynamization of static algorithms
+for graphs with bounded tree-depth. As an example application, we give a
+dynamic data structure for MSO-property testing, with time bounds for removal
+depending only on $D$ and constant-time testing of the property, while the time
+for the initialization and insertion also depends on the size of the formula
+expressing the property.

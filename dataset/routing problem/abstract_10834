@@ -1,0 +1,23 @@
+Motivated by the desire to cope with data imprecision, we study methods for
+taking advantage of preliminary information about point sets in order to speed
+up the computation of certain structures associated with them.
+  In particular, we study the following problem: given a set L of n lines in
+the plane, we wish to preprocess L such that later, upon receiving a set P of n
+points, each of which lies on a distinct line of L, we can construct the convex
+hull of P efficiently. We show that in quadratic time and space it is possible
+to construct a data structure on L that enables us to compute the convex hull
+of any such point set P in O(n alpha(n) log* n) expected time. If we further
+assume that the points are "oblivious" with respect to the data structure, the
+running time improves to O(n alpha(n)). The analysis applies almost verbatim
+when L is a set of line-segments, and yields similar asymptotic bounds. We
+present several extensions, including a trade-off between space and query time
+and an output-sensitive algorithm. We also study the "dual problem" where we
+show how to efficiently compute the (<= k)-level of n lines in the plane, each
+of which lies on a distinct point (given in advance).
+  We complement our results by Omega(n log n) lower bounds under the algebraic
+computation tree model for several related problems, including sorting a set of
+points (according to, say, their x-order), each of which lies on a given line
+known in advance. Therefore, the convex hull problem under our setting is
+easier than sorting, contrary to the "standard" convex hull and sorting
+problems, in which the two problems require Theta(n log n) steps in the worst
+case (under the algebraic computation tree model).

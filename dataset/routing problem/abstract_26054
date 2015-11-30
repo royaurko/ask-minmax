@@ -1,0 +1,18 @@
+We describe a reverse integration approach for the exploration of
+low-dimensional effective potential landscapes. Coarse reverse integration
+initialized on a ring of coarse states enables efficient "navigation" on the
+landscape terrain: escape from local effective potential wells, detection of
+saddle points, and identification of significant transition paths between
+wells. We consider several distinct ring evolution modes: backward stepping in
+time, solution arc--length, and effective potential. The performance of these
+approaches is illustrated for a deterministic problem where the energy
+landscape is known explicitly. Reverse ring integration is then applied to
+"noisy" problems where the ring integration routine serves as an outer
+"wrapper" around a forward-in-time inner simulator. Three versions of such
+inner simulators are considered: a system of stochastic differential equations,
+a Gillespie--type stochastic simulator, and a molecular dynamics simulator. In
+these "equation-free" computational illustrations, estimation techniques are
+applied to the results of short bursts of "inner" simulation to obtain the
+unavailable (in closed form) quantities (local drift and diffusion coefficient
+estimates) required for reverse ring integration; this naturally leads to
+approximations of the effective landscape.

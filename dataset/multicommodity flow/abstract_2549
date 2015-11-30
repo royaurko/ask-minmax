@@ -1,0 +1,13 @@
+Type systems hide data that is captured by function closures in function
+types. In most cases this is a beneficial design that favors simplicity and
+compositionality. However, some applications require explicit information about
+the data that is captured in closures. This paper introduces open closure
+types, that is, function types that are decorated with type contexts. They are
+used to track data-flow from the environment into the function closure. A
+simply-typed lambda calculus is used to study the properties of the type theory
+of open closure types. A distinctive feature of this type theory is that an
+open closure type of a function can vary in different type contexts. To present
+an application of the type theory, it is shown that a type derivation
+establishes a simple non-interference property in the sense of information-flow
+theory. A publicly available prototype implementation of the system can be used
+to experiment with type derivations for example programs.

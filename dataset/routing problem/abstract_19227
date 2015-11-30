@@ -1,0 +1,13 @@
+We present two algorithms for the Group Mutual Exclusion (GME) Problem that
+satisfy the properties of Mutual Exclusion, Starvation Freedom, Bounded Exit,
+Concurrent Entry and First Come First Served. Both our algorithms use only
+simple read and write instructions, have O(N) Shared Space complexity and O(N)
+Remote Memory Reference (RMR) complexity in the Cache Coherency (CC) model. Our
+first algorithm is developed by generalizing the well-known Lamport's Bakery
+Algorithm for the classical mutual exclusion problem, while preserving its
+simplicity and elegance. However, it uses unbounded shared registers. Our
+second algorithm uses only bounded registers and is developed by generalizing
+Taubenfeld's Black and White Bakery Algorithm to solve the classical mutual
+exclusion problem using only bounded shared registers. We show that contrary to
+common perception our algorithms are the first to achieve these properties with
+these combination of complexities.

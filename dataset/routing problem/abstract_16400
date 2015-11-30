@@ -1,0 +1,13 @@
+The Lennard-Jones (LJ) Potential Energy Problem is to construct the most
+stable form of $N$ atoms of a molecule with the minimal LJ potential energy.
+This problem has a simple mathematical form $f(x) = 4\sum_{i=1}^N
+\sum_{j=1,j<i}^N (\frac{1}{\tau_{ij}^6} - \frac{1}{\tau_{ij}^3} {subject to}
+x\in \mathbb{R}^n$, where $\tau_{ij} = (x_{3i-2} - x_{3j-2})^2 + (x_{3i-1} -
+x_{3j-1})^2 + (x_{3i} - x_{3j})^2$, $(x_{3i-2},x_{3i-1},x_{3i})$ is the
+coordinates of atom $i$ in $\mathbb{R}^3$, $i,j=1,2,...,N(\geq 2 \quad
+\text{integer})$, and $n=3N$; however it is a challenging and difficult problem
+for many optimization methods when $N$ is larger. In this paper, a brief review
+and a bibliography of important computational algorithms on minimizing the LJ
+potential energy are introduced in Sections 1 and 2. Section 3 of this paper
+illuminates many beautiful graphs (gotten by the contributor nearly 10 years ago)
+for the three dimensional structures of molecules with minimal LJ potential.

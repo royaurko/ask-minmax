@@ -1,0 +1,25 @@
+We study the ATSP (Asymmetric Traveling Salesman Problem), and our focus is
+on negative results in the framework of the Sherali-Adams (SA) Lift and Project
+method.
+  Our main result pertains to the standard LP (linear programming) relaxation
+of ATSP, due to Dantzig, Fulkerson, and Johnson. For any fixed integer $t\geq
+0$ and small $\epsilon$, $0<\epsilon\ll{1}$, there exists a digraph $G$ on
+$\nu=\nu(t,\epsilon)=O(t/\epsilon)$ vertices such that the integrality ratio
+for level~$t$ of the SA system starting with the standard LP on $G$ is $\ge
+1+\frac{1-\epsilon}{2t+3} \approx \frac43, \frac65, \frac87, \dots$. Thus, in
+terms of the input size, the result holds for any $t = 0,1,\dots,\Theta(\nu)$
+levels. Our key contribution is to identify a structural property of digraphs
+that allows us to construct fractional feasible solutions for any level~$t$ of
+the SA system starting from the standard~LP. Our hard instances are simple and
+satisfy the structural property.
+  There is a further relaxation of the standard LP called the balanced LP, and
+our methods simplify considerably when the starting LP for the SA system is the
+balanced~LP; in particular, the relevant structural property (of digraphs)
+simplifies such that it is satisfied by the digraphs given by the well-known
+construction of Charikar, Goemans and Karloff (CGK). Consequently, the CGK
+digraphs serve as hard instances, and we obtain an integrality ratio of $1
++\frac{1-\epsilon}{t+1}$ for any level~$t$ of the SA system, where
+$0<\epsilon\ll{1}$ and the number of vertices is
+$\nu(t,\epsilon)=O((t/\epsilon)^{(t/\epsilon)})$.
+  Also, our results for the standard~LP extend to the Path-ATSP (find a min
+cost Hamiltonian dipath from a given source vertex to a given sink vertex).

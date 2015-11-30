@@ -1,0 +1,13 @@
+Belief Propagation (BP) allows to approximate exact probabilistic inference
+in graphical models, such as Markov networks (also called Markov random fields,
+or undirected graphical models). However, no exact convergence guarantees for
+BP are known, in general. Recent work has proposed to approximate BP by
+linearizing the update equations around default values for the special case
+when all edges in the Markov network carry the same symmetric, doubly
+stochastic potential. This linearization has led to exact convergence
+guarantees, considerable speed-up, while maintaining high quality results in
+network-based classification (i.e. when we only care about the most likely
+label or class for each node and not the exact probabilities). The present
+paper generalizes our prior work on Linearized Belief Propagation (LinBP) with
+an approach that approximates Loopy Belief Propagation on any pairwise Markov
+network with the problem of solving a linear equation system.

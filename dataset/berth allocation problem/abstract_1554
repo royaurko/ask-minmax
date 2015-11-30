@@ -1,0 +1,18 @@
+This paper introduces a novel technique for access by a cognitive Secondary
+User (SU) using best-effort transmission to a spectrum with an incumbent
+Primary User (PU), which uses Type-I Hybrid ARQ. The technique leverages the
+primary ARQ protocol to perform Interference Cancellation (IC) at the SU
+receiver (SUrx). Two IC mechanisms that work in concert are introduced: Forward
+IC, where SUrx, after decoding the PU message, cancels its interference in the
+(possible) following PU retransmissions of the same message, to improve the SU
+throughput; Backward IC, where SUrx performs IC on previous SU transmissions,
+whose decoding failed due to severe PU interference. Secondary access policies
+are designed that determine the secondary access probability in each state of
+the network so as to maximize the average long-term SU throughput by
+opportunistically leveraging IC, while causing bounded average long-term PU
+throughput degradation and SU power expenditure. It is proved that the optimal
+policy prescribes that the SU prioritizes its access in the states where SUrx
+knows the PU message, thus enabling IC. An algorithm is provided to optimally
+allocate additional secondary access opportunities in the states where the PU
+message is unknown. Numerical results are shown to assess the throughput gain
+provided by the proposed techniques.

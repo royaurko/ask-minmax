@@ -1,0 +1,22 @@
+In many practical application domains, the software is organized into a set
+of threads, whose activation is exclusive and controlled by a cooperative
+scheduling policy: threads execute, without any interruption, until they either
+terminate or yield the control explicitly to the scheduler. The formal
+verification of such software poses significant challenges. On the one side,
+each thread may have infinite state space, and might call for abstraction. On
+the other side, the scheduling policy is often important for correctness, and
+an approach based on abstracting the scheduler may result in loss of precision
+and false positives. Unfortunately, the translation of the problem into a
+purely sequential software model checking problem turns out to be highly
+inefficient for the available technologies. We propose a software model
+checking technique that exploits the intrinsic structure of these programs.
+Each thread is translated into a separate sequential program and explored
+symbolically with lazy abstraction, while the overall verification is
+orchestrated by the direct execution of the scheduler. The approach is
+optimized by filtering the exploration of the scheduler with the integration of
+partial-order reduction. The technique, called ESST (Explicit Scheduler,
+Symbolic Threads) has been implemented and experimentally evaluated on a
+significant set of benchmarks. The results demonstrate that ESST technique is
+way more effective than software model checking applied to the sequentialized
+programs, and that partial-order reduction can lead to further performance
+improvements.

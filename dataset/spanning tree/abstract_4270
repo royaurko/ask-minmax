@@ -1,0 +1,12 @@
+We study the recently introduced Connected Feedback Vertex Set (CFVS) problem
+from the view-point of parameterized algorithms. CFVS is the connected variant
+of the classical Feedback Vertex Set problem and is defined as follows: given a
+graph G=(V,E) and an integer k, decide whether there exists a subset F of V, of
+size at most k, such that G[V F] is a forest and G[F] is connected. We show
+that Connected Feedback Vertex Set can be solved in time $O(2^{O(k)}n^{O(1)})$
+on general graphs and in time $O(2^{O(\sqrt{k}\log k)}n^{O(1)})$ on graphs
+excluding a fixed graph H as a minor. Our result on general undirected graphs
+uses as subroutine, a parameterized algorithm for Group Steiner Tree, a well
+studied variant of Steiner Tree. We find the algorithm for Group Steiner Tree
+of independent interest and believe that it will be useful for obtaining
+parameterized algorithms for other connectivity problems.

@@ -1,0 +1,20 @@
+In this paper, we consider the problem of power efficient uplink scheduling
+in a Time Division Multiple Access (TDMA) system over a fading wireless
+channel. The objective is to minimize the power expenditure of each user
+subject to satisfying individual user delay. We make the practical assumption
+that the system statistics are unknown, i.e., the probability distributions of
+the user arrivals and channel states are unknown. The problem has the structure
+of a Constrained Markov Decision Problem (CMDP). Determining an optimal policy
+under for the CMDP faces the problems of state space explosion and unknown
+system statistics. To tackle the problem of state space explosion, we suggest
+determining the transmission rate of a particular user in each slot based on
+its channel condition and buffer occupancy only. The rate allocation algorithm
+for a particular user is a learning algorithm that learns about the buffer
+occupancy and channel states of that user during system execution and thus
+addresses the issue of unknown system statistics. Once the rate of each user is
+determined, the proposed algorithm schedules the user with the best rate. Our
+simulations within an IEEE 802.16 system demonstrate that the algorithm is
+indeed able to satisfy the user specified delay constraints. We compare the
+performance of our algorithm with the well known M-LWDF algorithm. Moreover, we
+demonstrate that the power expended by the users under our algorithm is quite
+low.

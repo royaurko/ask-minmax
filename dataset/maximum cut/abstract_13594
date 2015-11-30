@@ -1,0 +1,18 @@
+An inherently parallel algorithm is proposed that efficiently performs
+selection: finding the K-th largest member of a set of N members. Selection is
+a common component of many more complex algorithms and therefore is a widely
+studied problem.
+  Not much is new in the proposed dualheap selection algorithm: the heap data
+structure is from J.W.J.Williams, the bottom-up heap construction is from R.W.
+Floyd, and the concept of a two heap data structure is from J.W.J. Williams and
+D.E. Knuth. The algorithm's novelty is limited to a few relatively minor
+implementation twists: 1) the two heaps are oriented with their roots at the
+partition values rather than at the minimum and maximum values, 2)the coding of
+one of the heaps (the heap of smaller values) employs negative indexing, and 3)
+the exchange phase of the algorithm is similar to a bottom-up heap
+construction, but navigates the heap with a post-order tree traversal.
+  When run on a single processor, the dualheap selection algorithm's
+performance is competitive with quickselect with median estimation, a common
+variant of C.A.R. Hoare's quicksort algorithm. When run on parallel processors,
+the dualheap selection algorithm is superior due to its subtasks that are
+easily partitioned and innately balanced.

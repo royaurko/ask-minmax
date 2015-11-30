@@ -1,0 +1,11 @@
+Assembling a gene from candidate exons is an important problem in
+computational biology. Among the most successful approaches to this problem is
+\emph{spliced alignment}, proposed by Gelfand et al., which scores different
+candidate exon chains within a DNA sequence of length $m$ by comparing them to
+a known related gene sequence of length n, $m = \Theta(n)$. Gelfand et al.\
+gave an algorithm for spliced alignment running in time O(n^3). Kent et al.\
+considered sparse spliced alignment, where the number of candidate exons is
+O(n), and proposed an algorithm for this problem running in time O(n^{2.5}). We
+improve on this result, by proposing an algorithm for sparse spliced alignment
+running in time O(n^{2.25}). Our approach is based on a new framework of
+\emph{quasi-local string comparison}.

@@ -1,0 +1,18 @@
+A Markovian model of the evolution of intermittent connections of various
+classes in a communication network is established and investigated. Any
+connection evolves in a way which depends only on its class and the state of
+the network, in particular as to the route it uses among a subset of the
+network nodes. It can be either active (ON) when it is transmitting data along
+its route, or idle (OFF). The congestion of a given node is defined as a
+functional of the transmission rates of all ON connections going through it,
+and causes losses and delays to these connections. In order to control this,
+the ON connections self-adaptively vary their transmission rate in TCP-like
+fashion. The connections interact through this feedback loop. A Markovian model
+is provided by the states (OFF, or ON with some transmission rate) of the
+connections. The number of connections in each class being potentially huge, a
+mean-field limit result is proved with an appropriate scaling so as to reduce
+the dimensionality. In the limit, the evolution of the states of the
+connections can be represented by a non-linear system of stochastic
+differential equations, of dimension the number of classes. Additionally, it is
+shown that the corresponding stationary distribution can be expressed by the
+solution of a fixed-point equation of finite dimension.

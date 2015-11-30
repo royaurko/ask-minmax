@@ -1,0 +1,24 @@
+Finding a good classifier is a multiobjective optimization problem with
+different error rates and the costs to be minimized. The receiver operating
+characteristic is widely used in the machine learning community to analyze the
+performance of parametric classifiers or sets of Pareto optimal classifiers. In
+order to directly compare two sets of classifiers the area (or volume) under
+the convex hull can be used as a scalar indicator for the performance of a set
+of classifiers in receiver operating characteristic space.
+  Recently, the convex hull based multiobjective genetic programming algorithm
+was proposed and successfully applied to maximize the convex hull area for
+binary classification problems. The contribution of this paper is to extend
+this algorithm for dealing with higher dimensional problem formulations. In
+particular, we discuss problems where parsimony (or classifier complexity) is
+stated as a third objective and multi-class classification with three different
+true classification rates to be maximized.
+  The design of the algorithm proposed in this paper is inspired by
+indicator-based evolutionary algorithms, where first a performance indicator
+for a solution set is established and then a selection operator is designed
+that complies with the performance indicator. In this case, the performance
+indicator will be the volume under the convex hull. The algorithm is tested and
+analyzed in a proof of concept study on different benchmarks that are designed
+for measuring its capability to capture relevant parts of a convex hull.
+  Further benchmark and application studies on email classification and feature
+selection round up the analysis and assess robustness and usefulness of the new
+algorithm in real world settings.

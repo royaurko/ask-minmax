@@ -1,0 +1,20 @@
+In Part I \cite{Zhao13TSPasync1}, we introduced a fairly general model for
+asynchronous events over adaptive networks including random topologies, random
+link failures, random data arrival times, and agents turning on and off
+randomly. We performed a stability analysis and established the notable fact
+that the network is still able to converge in the mean-square-error sense to
+the desired solution. Once stable behavior is guaranteed, it becomes important
+to evaluate how fast the iterates converge and how close they get to the
+optimal solution. This is a demanding task due to the various asynchronous
+events and due to the fact that agents influence each other. In this Part II,
+we carry out a detailed analysis of the mean-square-error performance of
+asynchronous strategies for solving distributed optimization and adaptation
+problems over networks. We derive analytical expressions for the mean-square
+convergence rate and the steady-state mean-square-deviation. The expressions
+reveal how the various parameters of the asynchronous behavior influence
+network performance. In the process, we establish the interesting conclusion
+that even under the influence of asynchronous events, all agents in the
+adaptive network can still reach an $O(\nu^{1 + \gamma_o'})$ near-agreement
+with some $\gamma_o' > 0$ while approaching the desired solution within
+$O(\nu)$ accuracy, where $\nu$ is proportional to the small step-size parameter
+for adaptation.

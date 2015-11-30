@@ -1,0 +1,20 @@
+A reliable support detection is essential for a greedy algorithm to
+reconstruct a sparse signal accurately from compressed and noisy measurements.
+This paper proposes a novel support detection method for greedy algorithms,
+which is referred to as maximum a posteriori (MAP) support detection. Unlike
+the existing support detection method that identifies support indices with the
+largest correlation value in magni- tude per iteration, the proposed method
+selects them with the largest likelihood ratios computed under the true and
+null support hypotheses by simultaneously exploiting the distributions of
+sensing matrix, sparse signal, and noise. Leveraging this technique,
+MAP-Orthogonal Matching Pursuit (MAP-OMP) is first presented to show the
+vantages of exploiting the proposed support detection method, and the
+sufficient condition for the perfect signal recovery is derived when the sparse
+signal is binary. Subsequently, a set of iterative greedy algorithms, called
+MAP-generalized Orthogonal Matching Pursuit (MAP-gOMP), MAP-Compressive
+Sampling Matching Pursuit (MAP-CoSaMP), and MAP-Subspace Pursuit (MAP-SP) are
+presented to demonstrate how the proposed support detection method can be
+applied into the existing greedy algorithms. From the empirical results, it is
+shown that the proposed greedy algorithms with highly reliable support
+detection can be better, faster, and easier to implement than basis pursuit via
+linear programing.

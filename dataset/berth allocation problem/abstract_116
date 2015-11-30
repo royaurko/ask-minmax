@@ -1,0 +1,13 @@
+In this paper a greedy algorithm to detect conflict cliques in interval
+graphs and circular-arc graphs is analyzed. In a graph, a stable set requires
+that at most one vertex is chosen for each edge. It is equivalent to requiring
+that at most one vertex for each maximal clique is chosen. We show that this
+algorithm finds all maximal cliques for interval graphs, i.e. it can compute
+the convex hull of the stable set polytope. In case of circular-arc graphs, the
+algorithm is not able to detect all maximal cliques, yet remaining correct.
+This problem occurs in the context of railway scheduling. A train requests the
+allocation of a railway infrastructure resource for a specific time interval.
+As one is looking for conflict-free train schedules, the used resource
+allocation intervals in a schedule must not overlap. The conflict-free choices
+of used intervals for each resource correspond to stable sets in the interval
+graph associated to the allocation time intervals.

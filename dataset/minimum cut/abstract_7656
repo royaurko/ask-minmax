@@ -1,0 +1,22 @@
+We present the parallel and interacting stochastic approximation annealing
+(PISAA) algorithm, a stochastic simulation procedure for global optimisation,
+that extends and improves the stochastic approximation annealing (SAA) by using
+population Monte Carlo ideas. The standard SAA algorithm guarantees convergence
+to the global minimum when a square-root cooling schedule is used; however the
+efficiency of its performance depends crucially on its self-adjusting
+mechanism. Because its mechanism is based on information obtained from only a
+single chain, SAA may present slow convergence in complex optimisation
+problems. The proposed algorithm involves simulating a population of SAA chains
+that interact each other in a manner that ensures significant improvement of
+the self-adjusting mechanism and better exploration of the sampling space.
+Central to the proposed algorithm are the ideas of (i) recycling information
+from the whole population of Markov chains to design a more accurate/stable
+self-adjusting mechanism and (ii) incorporating more advanced proposals, such
+as crossover operations, for the exploration of the sampling space. PISAA
+presents a significantly improved performance in terms of convergence. PISAA
+can be implemented in parallel computing environments if available. We
+demonstrate the good performance of the proposed algorithm on challenging
+applications including Bayesian network learning and protein folding. Our
+numerical comparisons suggest that PISAA outperforms the simulated annealing,
+stochastic approximation annealing, and annealing evolutionary stochastic
+approximation Monte Carlo especially in high dimensional or rugged scenarios.

@@ -1,0 +1,17 @@
+In this paper we motivate, discuss the implementation and present the
+resulting numerics for a new definition of strength of connection which is
+based on the notion of algebraic distance. This algebraic distance measure,
+combined with compatible relaxation, is used to choose suitable coarse grids
+and accurate interpolation operators for algebraic multigrid algorithms. The
+main tool of the proposed measure is the least squares functional defined using
+a set of relaxed test vectors. The motivating application is the anisotropic
+diffusion problem, in particular problems with non-grid aligned anisotropy. We
+demonstrate numerically that the measure yields a robust technique for
+determining strength of connectivity among variables, for both two-grid and
+multigrid solvers. %We illustrate the use of the measure to construct, in
+addition, an adaptive aggregation form of interpolation for the targeted
+anisotropic problems. %Our approach is not a two-level approach -- we provide
+preliminary results that show its extendability to multigrid. The proposed
+algebraic distance measure can also be used in any other coarsening procedure,
+assuming a rich enough set of the near-kernel components of the matrix for the
+targeted system is known or computed.

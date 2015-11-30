@@ -1,0 +1,17 @@
+We consider unsupervised estimation of mixtures of discrete graphical models,
+where the class variable corresponding to the mixture components is hidden and
+each mixture component over the observed variables can have a potentially
+different Markov graph structure and parameters. We propose a novel approach
+for estimating the mixture components, and our output is a tree-mixture model
+which serves as a good approximation to the underlying graphical model mixture.
+Our method is efficient when the union graph, which is the union of the Markov
+graphs of the mixture components, has sparse vertex separators between any pair
+of observed variables. This includes tree mixtures and mixtures of bounded
+degree graphs. For such models, we prove that our method correctly recovers the
+union graph structure and the tree structures corresponding to
+maximum-likelihood tree approximations of the mixture components. The sample
+and computational complexities of our method scale as $\poly(p, r)$, for an
+$r$-component mixture of $p$-variate graphical models. We further extend our
+results to the case when the union graph has sparse local separators between
+any pair of observed variables, such as mixtures of locally tree-like graphs,
+and the mixture components are in the regime of correlation decay.

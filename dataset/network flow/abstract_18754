@@ -1,0 +1,18 @@
+We study the problem of analyzing influence of various factors affecting
+individual messages posted in social media. The problem is challenging because
+of various types of influences propagating through the social media network
+that act simultaneously on any user. Additionally, the topic composition of the
+influencing factors and the susceptibility of users to these influences evolve
+over time. This problem has not studied before, and off-the-shelf models are
+unsuitable for this purpose. To capture the complex interplay of these various
+factors, we propose a new non-parametric model called the Dynamic
+Multi-Relational Chinese Restaurant Process. This accounts for the user network
+for data generation and also allows the parameters to evolve over time.
+Designing inference algorithms for this model suited for large scale
+social-media data is another challenge. To this end, we propose a scalable and
+multi-threaded inference algorithm based on online Gibbs Sampling. Extensive
+evaluations on large-scale Twitter and Facebook data show that the extracted
+topics when applied to contributorship and commenting prediction outperform
+state-of-the-art baselines. More importantly, our model produces valuable
+insights on topic trends and user personality trends, beyond the capability of
+existing approaches.

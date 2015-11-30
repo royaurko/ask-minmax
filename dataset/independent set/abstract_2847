@@ -1,0 +1,15 @@
+This paper proposes a robust ear identification system which is developed by
+fusing SIFT features of color segmented slice regions of an ear. The proposed
+ear identification method makes use of Gaussian mixture model (GMM) to build
+ear model with mixture of Gaussian using vector quantization algorithm and K-L
+divergence is applied to the GMM framework for recording the color similarity
+in the specified ranges by comparing color similarity between a pair of
+reference ear and probe ear. SIFT features are then detected and extracted from
+each color slice region as a part of invariant feature extraction. The
+extracted keypoints are then fused separately by the two fusion approaches,
+namely concatenation and the Dempster-Shafer theory. Finally, the fusion
+approaches generate two independent augmented feature vectors which are used
+for identification of individuals separately. The proposed identification
+technique is tested on IIT Kanpur ear database of 400 individuals and is found
+to achieve 98.25% accuracy for identification while top 5 matched criteria is
+set for each subject.

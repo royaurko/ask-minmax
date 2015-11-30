@@ -1,0 +1,18 @@
+Primal-dual splitting schemes are a class of powerful algorithms that solve
+complicated monotone inclusions and convex optimization problems that are built
+from many simpler pieces. They decompose problems that are built from sums,
+linear compositions, and infimal convolutions of simple functions so that each
+simple term is processed individually via proximal mappings, gradient mappings,
+and multiplications by the linear maps. This leads to easily implementable and
+highly parallelizable or distributed algorithms, which often obtain nearly
+state-of-the-art performance. In this paper, we analyze a monotone inclusion
+problem that captures a large class of primal-dual splittings as a special
+case. We introduce a unifying scheme and use some abstract analysis of the
+algorithm to prove convergence rates of the proximal point algorithm,
+forward-backward splitting, Peaceman-Rachford splitting, and
+forward-backward-forward splitting applied to the model problem. Our ergodic
+convergence rates are deduced under variable metrics, stepsizes, and
+relaxation. Our nonergodic convergence rates are the first shown in the
+literature. Finally, we apply our results to a large class of primal-dual
+algorithms that are a special case of our scheme and deduce their convergence
+rates.

@@ -1,0 +1,15 @@
+We present a formal framework for repairing infinite-state, imperative,
+sequential programs, with (possibly recursive) procedures and multiple
+assertions; the framework can generate repaired programs by modifying the
+original erroneous program in multiple program locations, and can ensure the
+readability of the repaired program using user-defined expression templates;
+the framework also generates a set of inductive assertions that serve as a
+proof of correctness of the repaired program. As a step toward integrating
+programmer intent and intuition in automated program repair, we present a "
+cost-aware" formulation - given a cost function associated with permissible
+statement modifications, the goal is to ensure that the total program
+modification cost does not exceed a given repair budget. As part of our
+predicate abstraction-based solution framework, we present a sound and complete
+algorithm for repair of Boolean programs. We have developed a prototype tool
+based on SMT solving and used it successfully to repair diverse errors in
+benchmark C programs.

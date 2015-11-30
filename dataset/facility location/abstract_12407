@@ -1,0 +1,17 @@
+A large spectrum of applications such as location based services and
+environmental monitoring demand efficient query processing on uncertain
+databases. In this paper, we propose the probabilistic Voronoi diagram (PVD)
+for processing moving nearest neighbor queries on uncertain data, namely the
+probabilistic moving nearest neighbor (PMNN) queries. A PMNN query finds the
+most probable nearest neighbor of a moving query point continuously. To process
+PMNN queries efficiently, we provide two techniques: a pre-computation approach
+and an incremental approach. In the pre-computation approach, we develop an
+algorithm to efficiently evaluate PMNN queries based on the pre-computed PVD
+for the entire data set. In the incremental approach, we propose an incremental
+probabilistic safe region based technique that does not require to pre-compute
+the whole PVD to answer the PMNN query. In this incremental approach, we
+exploit the knowledge for a known region to compute the lower bound of the
+probability of an object being the nearest neighbor. Experimental results show
+that our approaches significantly outperform a sampling based approach by
+orders of magnitude in terms of I/O, query processing time, and communication
+overheads.

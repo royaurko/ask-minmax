@@ -1,0 +1,19 @@
+We present the design of a structured search engine which returns a
+multi-column table in response to a query consisting of keywords describing
+each of its columns. We answer such queries by exploiting the millions of
+tables on the Web because these are much richer sources of structured knowledge
+than free-format text. However, a corpus of tables harvested from arbitrary
+HTML web pages presents huge challenges of diversity and redundancy not seen in
+centrally edited knowledge bases. We concentrate on one concrete task in this
+paper. Given a set of Web tables T1, . . ., Tn, and a query Q with q sets of
+keywords Q1, . . ., Qq, decide for each Ti if it is relevant to Q and if so,
+identify the mapping between the columns of Ti and query columns. We represent
+this task as a graphical model that jointly maps all tables by incorporating
+diverse sources of clues spanning matches in different parts of the table,
+corpus-wide co-occurrence statistics, and content overlap across table columns.
+We define a novel query segmentation model for matching keywords to table
+columns, and a robust mechanism of exploiting content overlap across table
+columns. We design efficient inference algorithms based on bipartite matching
+and constrained graph cuts to solve the joint labeling task. Experiments on a
+workload of 59 queries over a 25 million web table corpus shows significant
+boost in accuracy over baseline IR methods.

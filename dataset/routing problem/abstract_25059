@@ -1,0 +1,11 @@
+Some total languages, like Agda and Coq, allow the use of guarded corecursion
+to construct infinite values and proofs. Guarded corecursion is a form of
+recursion in which arbitrary recursive calls are allowed, as long as they are
+guarded by a coinductive constructor. Guardedness ensures that programs are
+productive, i.e. that every finite prefix of an infinite value can be computed
+in finite time. However, many productive programs are not guarded, and it can
+be nontrivial to put them in guarded form.
+  This paper gives a method for turning a productive program into a guarded
+program. The method amounts to defining a problem-specific language as a data
+type, writing the program in the problem-specific language, and writing a
+guarded interpreter for this language.

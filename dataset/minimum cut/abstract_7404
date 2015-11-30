@@ -1,0 +1,17 @@
+The objective is to design distributed coordination strategies for a network
+of agents in a cyber-physical environment. In particular, we concentrate on the
+rendez-vous of agents having double-integrator dynamics with the addition of a
+damping term in the velocity dynamics. We start with distributed controllers
+that solve the problem in continuous-time, and we then explain how to implement
+these using event-based sampling. The idea is to define a triggering rule per
+edge using a clock variable which only depends on the local variables. The
+triggering laws are designed to compensate for the perturbative term introduced
+by the sampling, a technique that reminds of Lyapunov-based control redesign.
+We first present an event-triggered solution which requires continuous
+measurement of the relative position and we then explain how to convert it to a
+self-triggered policy. The latter only requires the measurements of the
+relative position and velocity at the last transmission instants, which is
+useful to reduce both the communication and the computation costs. The
+strategies guarantee the existence of a uniform minimum amount of times between
+any two edge events. The analysis is carried out using an invariance principle
+for hybrid systems.

@@ -1,0 +1,20 @@
+We consider preprocessing a set $S$ of $n$ points in convex position in the
+plane into a data structure supporting queries of the following form: given a
+point $q$ and a directed line $\ell$ in the plane, report the point of $S$ that
+is farthest from (or, alternatively, nearest to) the point $q$ among all points
+to the left of line $\ell$. We present two data structures for this problem.
+The first data structure uses $O(n^{1+\varepsilon})$ space and preprocessing
+time, and answers queries in $O(2^{1/\varepsilon} \log n)$ time, for any $0 <
+\varepsilon < 1$. The second data structure uses $O(n \log^3 n)$ space and
+polynomial preprocessing time, and answers queries in $O(\log n)$ time. These
+are the first solutions to the problem with $O(\log n)$ query time and $o(n^2)$
+space.
+  The second data structure uses a new representation of nearest- and
+farthest-point Voronoi diagrams of points in convex position. This
+representation supports the insertion of new points in clockwise order using
+only $O(\log n)$ amortized pointer changes, in addition to $O(\log n)$-time
+point-location queries, even though every such update may make $\Theta(n)$
+combinatorial changes to the Voronoi diagram. This data structure is the first
+demonstration that deterministically and incrementally constructed Voronoi
+diagrams can be maintained in $o(n)$ amortized pointer changes per operation
+while keeping $O(\log n)$-time point-location queries.

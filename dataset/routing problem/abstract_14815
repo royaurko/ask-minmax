@@ -1,0 +1,17 @@
+We consider the following one-player game called Dundee. We are given a deck
+consisting of s_i cards of Value i, where i=1,...,v, and an integer m\le
+s_1+...+s_v. There are m rounds. In each round, the player names a number
+between 1 and v and draws a random card from the deck. The player loses if the
+named number coincides with the drawn value in at least one round.
+  The famous Problem of Thirteen, proposed by Monmort in 1708, asks for the
+probability of winning in the case when v=13, s_1=...=s_{13}=4, m=13, and the
+player names the sequence 1,...,13. This problem and its various
+generalizations were studied by numerous mathematicians, including J. and N.
+Bernoulli, De Moivre, Euler, Catalan, and others.
+  However, it seems that nobody has considered which strategies of the player
+maximize the probability of winning. We study two variants of this problem. In
+the first variant, the player's bid in Round i may depend on the values of the
+random cards drawn in the previous rounds. We completely solve this version. In
+the second variant, the player has to specify the whole sequence of m bids in
+advance, before turning any cards. We are able to solve this problem when
+s_1=...=s_v and m is arbitrary.

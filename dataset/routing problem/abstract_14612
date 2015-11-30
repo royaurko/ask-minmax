@@ -1,0 +1,20 @@
+We propose some domain-independent techniques for bringing well-founded
+partial-order planners closer to practicality. The first two techniques are
+aimed at improving search control while keeping overhead costs low. One is
+based on a simple adjustment to the default A* heuristic used by UCPOP to
+select plans for refinement. The other is based on preferring ``zero
+commitment'' (forced) plan refinements whenever possible, and using LIFO
+prioritization otherwise. A more radical technique is the use of operator
+parameter domains to prune search. These domains are initially computed from
+the definitions of the operators and the initial and goal conditions, using a
+polynomial-time algorithm that propagates sets of constants through the
+operator graph, starting in the initial conditions. During planning, parameter
+domains can be used to prune nonviable operator instances and to remove
+spurious clobbering threats. In experiments based on modifications of UCPOP,
+our improved plan and goal selection strategies gave speedups by factors
+ranging from 5 to more than 1000 for a variety of problems that are nontrivial
+for the unmodified version. Crucially, the hardest problems gave the greatest
+improvements. The pruning technique based on parameter domains often gave
+speedups by an order of magnitude or more for difficult problems, both with the
+default UCPOP search strategy and with our improved strategy. The Lisp code for
+our techniques and for the test problems is provided in on-line appendices.

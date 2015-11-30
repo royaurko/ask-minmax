@@ -1,0 +1,23 @@
+In probability density function (PDF) methods of turbulent flows, the joint
+PDF of several flow variables is computed by numerically integrating a system
+of stochastic differential equations for Lagrangian particles. A set of
+parallel algorithms is proposed to provide an efficient solution of the PDF
+transport equation, modeling the joint PDF of turbulent velocity, frequency and
+concentration of a passive scalar in geometrically complex configurations. An
+unstructured Eulerian grid is employed to extract Eulerian statistics, to solve
+for quantities represented at fixed locations of the domain (e.g. the mean
+pressure) and to track particles. All three aspects regarding the grid make use
+of the finite element method (FEM) employing the simplest linear FEM shape
+functions. To model the small-scale mixing of the transported scalar, the
+interaction by exchange with the conditional mean model is adopted. An adaptive
+algorithm that computes the velocity-conditioned scalar mean is proposed that
+homogenizes the statistical error over the sample space with no assumption on
+the shape of the underlying velocity PDF. Compared to other hybrid
+particle-in-cell approaches for the PDF equations, the current methodology is
+consistent without the need for consistency conditions. The algorithm is tested
+by computing the dispersion of passive scalars released from concentrated
+sources in two different turbulent flows: the fully developed turbulent channel
+flow and a street canyon (or cavity) flow. Algorithmic details on estimating
+conditional and unconditional statistics, particle tracking and particle-number
+control are presented in detail. Relevant aspects of performance and
+parallelism on cache-based shared memory machines are discussed.

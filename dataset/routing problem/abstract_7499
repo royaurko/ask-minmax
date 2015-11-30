@@ -1,0 +1,22 @@
+Typical geophysical inversion problems are ill-posed, non-linear and
+non-unique. Sometimes the problem is trans-dimensional, where the number of
+unknown parameters is one of the unknowns, which makes the inverse problem even
+more challenging. Detecting the shape of a geophysical object underneath the
+earth surface from gravity anomaly is one of such complex problems, where the
+number of geometrical parameters is one of the unknowns. To deal with the
+difficulties of non-uniqueness, ill-conditioning and nonlinearity, a
+statistical Bayesian model inference approach is adopted. A reversible jump
+Markov chain Monte Carlo (RJMCMC) algorithm is proposed to overcome the
+difficulty of trans-dimensionality. Carefully designed within-model and
+between-model Markov chain moves are implemented to reduce the rate of
+generating inadmissible geometries, thus achieving good overall efficiency in
+the Monte Carlo sampler. Numerical experiments on a 2-D problem show that the
+proposed algorithm is capable of obtaining satisfactory solutions with
+quantifiable uncertainty to a challenging trans-dimensional geophysical inverse
+problem. Solutions from RJMCMC appear to be parsimonious for the given prior,
+in the sense that among the models satisfactorily represent the true model,
+models with higher posterior probabilities tend to have fewer number of
+parameters. The proposed numerical algorithm can be readily adapted to other
+similar trans-dimensional geophysical inverse applications.
+  Keywords: trans-dimensional geophysical inversion, reversible jump Markov
+chain Monte Carlo; gravity anomaly.

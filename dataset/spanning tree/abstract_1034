@@ -1,0 +1,25 @@
+We introduce a problem that is a common generalization of the uncapacitated
+facility location and minimum latency (ML) problems, where facilities need to
+be opened to serve clients and also need to be sequentially activated before
+they can provide service. Formally, we are given a set \F of n facilities with
+facility-opening costs {f_i}, a set of m clients, and connection costs {c_{ij}}
+specifying the cost of assigning a client j to a facility i, a root node r
+denoting the depot, and a time metric d on \F\cup{r}. Our goal is to open a
+subset F of facilities, find a path P starting at r and spanning F to activate
+the open facilities, and connect each client j to a facility \phi(j)\in F, so
+as to minimize \sum_{i\in F}f_i +\sum_{clients j}(c_{\phi(j),j}+t_j), where t_j
+is the time taken to reach \phi(j) along path P. We call this the minimum
+latency uncapacitated facility location (MLUFL) problem.
+  Our main result is an O(\log n\max{\log n,\log m})-approximation for MLUFL.
+We also show that any improvement in this approximation guarantee, implies an
+improvement in the (current-best) approximation factor for group Steiner tree.
+We obtain constant approximations for two natural special cases of the problem:
+(a) related MLUFL (metric connection costs that are a scalar multiple of the
+time metric); (b) metric uniform MLUFL (metric connection costs, unform
+time-metric). Our LP-based methods are versatile and easily adapted to yield
+approximation guarantees for MLUFL in various more general settings, such as
+(i) when the latency-cost of a client is a function of the delay faced by the
+facility to which it is connected; and (ii) the k-route version, where k
+vehicles are routed in parallel to activate the open facilities. Our LP-based
+understanding of MLUFL also offers some LP-based insights into ML, which we
+believe is a promising direction for obtaining improvements for ML.

@@ -1,0 +1,23 @@
+The satisfiability problem for branching-time temporal logics like CTL*, CTL
+and CTL+ has important applications in program specification and verification.
+Their computational complexities are known: CTL* and CTL+ are complete for
+doubly exponential time, CTL is complete for single exponential time. Some
+decision procedures for these logics are known; they use tree automata,
+tableaux or axiom systems. In this paper we present a uniform game-theoretic
+framework for the satisfiability problem of these branching-time temporal
+logics. We define satisfiability games for the full branching-time temporal
+logic CTL* using a high-level definition of winning condition that captures the
+essence of well-foundedness of least fixpoint unfoldings. These winning
+conditions form formal languages of \omega-words. We analyse which kinds of
+deterministic {\omega}-automata are needed in which case in order to recognise
+these languages. We then obtain a reduction to the problem of solving parity or
+B\"uchi games. The worst-case complexity of the obtained algorithms matches the
+known lower bounds for these logics. This approach provides a uniform, yet
+complexity-theoretically optimal treatment of satisfiability for branching-time
+temporal logics. It separates the use of temporal logic machinery from the use
+of automata thus preserving a syntactical relationship between the input
+formula and the object that represents satisfiability, i.e. a winning strategy
+in a parity or B\"uchi game. The games presented here work on a Fischer-Ladner
+closure of the input formula only. Last but not least, the games presented here
+come with an attempt at providing tool support for the satisfiability problem
+of complex branching-time logics like CTL* and CTL+.

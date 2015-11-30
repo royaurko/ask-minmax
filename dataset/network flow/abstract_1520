@@ -1,0 +1,17 @@
+IPSec is a protocol that allows to make secure connections between branch
+offices and allows secure VPN accesses. However, the efforts to improve IPSec
+are still under way; one aspect of this improvement is to take Quality of
+Service (QoS) requirements into account. QoS is the ability of the network to
+provide a service at an assured service level while optimizing the global usage
+of network resources. The QoS level that a flow receives depends on a six-bit
+identifier in the IP header; the so-called Differentiated Services code point
+(DSCP). Basically, Multi-Field classifiers classify a packet by inspecting
+IP/TCP headers, to decide how the packet should be processed. The current IPSec
+standard does hardly offer any guidance to do this, because the existing IPSec
+ESP security protocol hides much of this information in its encrypted payloads,
+preventing network control devices such as routers and switches from utilizing
+this information in performing classification appropriately. To solve this
+problem, we propose a QoS-friendly Encapsulated Security Payload (Q-ESP) as a
+new IPSec security protocol that provides both security and QoS supports. We
+also present our NetBSD kernel-based implementation as well as our evaluation
+results of Q-ESP.

@@ -1,0 +1,13 @@
+This paper presents estimates of the convergence rate and complexity of an
+algebraic multilevel preconditioner based on piecewise constant coarse vector
+spaces applied to the graph Laplacian. A bound is derived on the energy norm of
+the projection operator onto any piecewise constant vector space, which results
+in an estimate of the two-level convergence rate where the coarse level graph
+is obtained by matching. The two-level convergence of the method is then used
+to establish the convergence of an Algebraic Multilevel Iteration that uses the
+two-level scheme recursively. On structured grids, the method is proven to have
+convergence rate $\approx (1-1/\log n)$ and $O(n\log n)$ complexity for each
+cycle, where $n$ denotes the number of unknowns in the given problem. Numerical
+results of the algorithm applied to various graph Laplacians are reported. It
+is also shown that all the theoretical estimates derived for matching can be
+generalized to the case of aggregates containing more than two vertices.

@@ -1,0 +1,22 @@
+We invoke a metric to quantify the correlation between any two earthquakes.
+This provides a simple and straightforward alternative to using space-time
+windows to detect aftershock sequences and obviates the need to distinguish
+main shocks from aftershocks. Directed networks of earthquakes are constructed
+by placing a link, directed from the past to the future, between pairs of
+events that are strongly correlated. Each link has a weight giving the relative
+strength of correlation such that the sum over the incoming links to any node
+equals unity for aftershocks, or zero if the event had no correlated
+predecessors. A correlation threshold is set to drastically reduce the size of
+the data set without losing significant information. Events can be aftershocks
+of many previous events, and also generate many aftershocks. The probability
+distribution for the number of incoming and outgoing links are both scale free,
+and the networks are highly clustered. The Omori law holds for aftershock rates
+up to a decorrelation time that scales with the magnitude, $m$, of the
+initiating shock as $t_{\rm cutoff} \sim 10^{\beta m}$ with $\beta \simeq 3/4$.
+Another scaling law relates distances between earthquakes and their aftershocks
+to the magnitude of the initiating shock. Our results are inconsistent with the
+hypothesis of finite aftershock zones. We also find evidence that seismicity is
+dominantly triggered by small earthquakes. Our approach, using concepts from
+the modern theory of complex networks, together with a metric to estimate
+correlations, opens up new avenues of research, as well as new tools to
+understand seismicity.

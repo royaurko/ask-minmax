@@ -1,0 +1,7 @@
+We describe a new implementation of a parallel N-body tree code. The code is
+load-balanced using the method of orthogonal recursive bisection to subdivide
+the N-body system into independent rectangular volumes each of which is mapped
+to a processor on a parallel computer. On the Cray T3D, the load balance in the
+range of 70-90\% depending on the problem size and number of processors. The
+code can handle simulations with $>$ 10 million particles roughly a factor of
+10 greater than allowed in vectorized tree codes.

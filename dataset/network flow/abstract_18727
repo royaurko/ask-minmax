@@ -1,0 +1,15 @@
+Network codes designed specifically for distributed storage systems have the
+potential to provide dramatically higher storage efficiency for the same
+availability. One main challenge in the design of such codes is the exact
+repair problem: if a node storing encoded information fails, in order to
+maintain the same level of reliability we need to create encoded information at
+a new node. One of the main open problems in this emerging area has been the
+design of simple coding schemes that allow exact and low cost repair of failed
+nodes and have high data rates. In particular, all prior known explicit
+constructions have data rates bounded by 1/2.
+  In this paper we introduce the first family of distributed storage codes that
+have simple look-up repair and can achieve arbitrarily high rates. Our
+constructions are very simple to implement and perform exact repair by simple
+XORing of packets. We experimentally evaluate the proposed codes in a realistic
+cloud storage simulator and show significant benefits in both performance and
+reliability compared to replication and standard Reed-Solomon codes.

@@ -1,0 +1,22 @@
+Two important metrics for measuring the quality of routing paths are the
+maximum edge congestion $C$ and maximum path length $D$. Here, we study
+bicriteria in routing games where each player $i$ selfishly selects a path that
+simultaneously minimizes its maximum edge congestion $C_i$ and path length
+$D_i$. We study the stability and price of anarchy of two bicriteria games:
+  - {\em Max games}, where the social cost is $\max(C,D)$ and the player cost
+is $\max(C_i, D_i)$. We prove that max games are stable and convergent under
+best-response dynamics, and that the price of anarchy is bounded above by the
+maximum path length in the players' strategy sets. We also show that this bound
+is tight in worst-case scenarios.
+  - {\em Sum games}, where the social cost is $C+D$ and the player cost is
+$C_i+D_i$. For sum games, we first show the negative result that there are game
+instances that have no Nash-equilibria. Therefore, we examine an approximate
+game called the {\em sum-bucket game} that is always convergent (and therefore
+stable). We show that the price of anarchy in sum-bucket games is bounded above
+by $C^* \cdot D^* / (C^* + D^*)$ (with a poly-log factor), where $C^*$ and
+$D^*$ are the optimal coordinated congestion and path length. Thus, the
+sum-bucket game has typically superior price of anarchy bounds than the max
+game. In fact, when either $C^*$ or $D^*$ is small (e.g. constant) the social
+cost of the Nash-equilibria is very close to the coordinated optimal $C^* +
+D^*$ (within a poly-log factor). We also show that the price of anarchy bound
+is tight for cases where both $C^*$ and $D^*$ are large.

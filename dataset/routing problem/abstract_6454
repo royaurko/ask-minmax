@@ -1,0 +1,10 @@
+We describe decomposition during search (DDS), an integration of And/Or tree
+search into propagation-based constraint solvers. The presented search
+algorithm dynamically decomposes sub-problems of a constraint satisfaction
+problem into independent partial problems, avoiding redundant work.
+  The paper discusses how DDS interacts with key features that make
+propagation-based solvers successful: constraint propagation, especially for
+global constraints, and dynamic search heuristics.
+  We have implemented DDS for the Gecode constraint programming library. Two
+applications, solution counting in graph coloring and protein structure
+prediction, exemplify the benefits of DDS in practice.

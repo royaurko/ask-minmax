@@ -1,0 +1,16 @@
+In data management, and in particular in data integration, data exchange,
+query optimization, and data privacy, the notion of view plays a central role.
+In several contexts, such as data integration, data mashups, and data
+warehousing, the need arises of designing views starting from a set of known
+correspondences between queries over different schemas. In this paper we deal
+with the issue of automating such a design process. We call this novel problem
+"view synthesis from schema mappings": given a set of schema mappings, each
+relating a query over a source schema to a query over a target schema,
+automatically synthesize for each source a view over the target schema in such
+a way that for each mapping, the query over the source is a rewriting of the
+query over the target wrt the synthesized views. We study view synthesis from
+schema mappings both in the relational setting, where queries and views are
+(unions of) conjunctive queries, and in the semistructured data setting, where
+queries and views are (two-way) regular path queries, as well as unions of
+conjunctions thereof. We provide techniques and complexity upper bounds for
+each of these cases.

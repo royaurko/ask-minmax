@@ -1,0 +1,19 @@
+Network processing elements in virtual machines, also known as Network
+Function Virtualization (NFV) often face CPU bottlenecks at the virtualization
+interface. Even highly optimized paravirtual device interfaces fall short of
+the throughput requirements of modern devices. Passthrough devices, together
+with SR-IOV support for multiple device virtual functions (VF) and IOMMU
+support, mitigate this problem somewhat, by allowing a VM to directly control a
+device partition bypassing the virtualization stack. However, device
+passthrough requires high-end (expensive and power-hungry) hardware, places
+scalability limits on consolidation ratios, and does not support efficient
+switching between multiple VMs on the same host.
+  We present a paravirtual interface that securely exposes an I/O device
+directly to the guest OS running inside the VM, and yet allows that device to
+be securely shared among multiple VMs and the host. Compared to the best-known
+paravirtualization interfaces, our paravirtual interface supports up to 2x
+higher throughput, and is closer in performance to device passthrough. Unlike
+device passthrough however, we do not require SR-IOV or IOMMU support, and
+allow fine-grained dynamic resource allocation, significantly higher
+consolidation ratios, and seamless VM migration. Our security mechanism is
+based on a novel approach called dynamic binary opcode subtraction.

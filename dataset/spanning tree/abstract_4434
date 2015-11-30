@@ -1,0 +1,11 @@
+We describe an automated technique for assume-guarantee style checking of
+strong simulation between a system and a specification, both expressed as
+non-deterministic Labeled Probabilistic Transition Systems (LPTSes). We first
+characterize counterexamples to strong simulation as "stochastic" trees and
+show that simpler structures are insufficient. Then, we use these trees in an
+abstraction refinement algorithm that computes the assumptions for
+assume-guarantee reasoning as conservative LPTS abstractions of some of the
+system components. The abstractions are automatically refined based on tree
+counterexamples obtained from failed simulation checks with the remaining
+components. We have implemented the algorithms for counterexample generation
+and assume-guarantee abstraction refinement and report encouraging results.

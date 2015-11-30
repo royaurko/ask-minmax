@@ -1,0 +1,16 @@
+We prove a theorem that reduces bounding the mixing time of a card shuffle to
+verifying a condition that involves only pairs of cards, then we use it to
+obtain improved bounds for two previously studied models.
+  E. Thorp introduced the following card shuffling model in 1973. Suppose the
+number of cards n is even. Cut the deck into two equal piles. Drop the first
+card from the left pile or from the right pile according to the outcome of a
+fair coin flip. Then drop from the other pile. Continue this way until both
+piles are empty. We obtain a mixing time bound of O(log^4 n). Previously, the
+best known bound was O(log^{29} n) and previous proofs were only valid for n a
+power of 2.
+  We also analyze the following model, called the L-reversal chain, introduced
+by Durrett. There are n cards arrayed in a circle. Each step, an interval of
+cards of length at most L is chosen uniformly at random and its order is
+reversed. Durrett has conjectured that the mixing time is O(max(n, n^3/L^3) log
+n). We obtain a bound that is within a factor O(log^2 n) of this,the first
+bound within a poly log factor of the conjecture.

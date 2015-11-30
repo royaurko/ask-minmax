@@ -1,0 +1,19 @@
+We consider the following document ranking problem: We have a collection of
+documents, each containing some topics (e.g. sports, politics, economics). We
+also have a set of users with diverse interests. Assume that user u is
+interested in a subset I_u of topics. Each user u is also associated with a
+positive integer K_u, which indicates that u can be satisfied by any K_u topics
+in I_u. Each document s contains information for a subset C_s of topics. The
+objective is to pick one document at a time such that the average satisfying
+time is minimized, where a user's satisfying time is the first time that at
+least K_u topics in I_u are covered in the documents selected so far. Our main
+result is an O({\rho})-approximation algorithm for the problem, where {\rho} is
+the algorithmic integrality gap of the linear programming relaxation of the set
+cover instance defined by the documents and topics. This result generalizes the
+constant approximations for generalized min-sum set cover and ranking with
+unrelated intents and the logarithmic approximation for the problem of ranking
+with submodular valuations (when the submodular function is the coverage
+function), and can be seen as an interpolation between these results. We
+further extend our model to the case when each user may interest in more than
+one sets of topics and when the user's valuation function is XOS, and obtain
+similar results for these models.

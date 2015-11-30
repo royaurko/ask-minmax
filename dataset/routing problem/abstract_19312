@@ -1,0 +1,20 @@
+The Owens Valley Radio Observatory 40 meter telescope is currently monitoring
+a sample of about 1700 blazars every three days at 15 GHz, with the main
+scientific goal of determining the relation between the variability of blazars
+at radio and gamma-rays as observed with the Fermi Gamma-ray Space Telescope.
+The time domain relation between radio and gamma-ray emission, in particular
+its correlation and time lag, can help us determine the location of the
+high-energy emission site in blazars, a current open question in blazar
+research. To achieve this goal, continuous observation of a large sample of
+blazars in a time scale of less than a week is indispensable. Since we only
+look at bright targets, the time available for target observations is mostly
+limited by source observability, calibration requirements and slewing of the
+telescope. Here I describe the implementation of a practical solution to this
+scheduling, calibration, and slewing time minimization problem. This solution
+combines ideas from optimization, in particular the traveling salesman problem,
+with astronomical and instrumental constraints. A heuristic solution using well
+stablished optimization techniques and astronomical insights particular to this
+situation, allow us to observe all the sources in the required three days
+cadence while obtaining reliable calibration of the radio flux densities.
+Problems of this nature will only be more common in the future and the ideas
+presented here can be relevant for other observing programs.

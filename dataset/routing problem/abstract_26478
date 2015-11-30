@@ -1,0 +1,12 @@
+We consider the problem of hitting sets online. The hypergraph (i.e.,
+range-space consisting of points and ranges) is known in advance, and the
+ranges to be stabbed are input one-by-one in an online fashion. The online
+algorithm must stab each range upon arrival. An online algorithm may add points
+to the hitting set but may not remove already chosen points. The goal is to use
+the smallest number of points. The best known competitive ratio for hitting
+sets online by Alon et al. \cite{alon2009online} is $O(\log n \cdot \log m)$
+for general hypergraphs, where $n$ and $m$ denote the number of points and the
+number of ranges, respectively. We consider hypergraphs in which the union of
+two intersecting ranges is also a range. Our main result for such hypergraphs
+is as follows. The competitive ratio of the online hitting set problem is at
+most the unique-max number and at least this number minus one.

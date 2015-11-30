@@ -1,0 +1,13 @@
+In this paper, we study the mixing time of Markov Chain Monte Carlo (MCMC)
+for integer least-square (LS) optimization problems. It is found that the
+mixing time of MCMC for integer LS problems depends on the structure of the
+underlying lattice. More specifically, the mixing time of MCMC is closely
+related to whether there is a local minimum in the lattice structure. For some
+lattices, the mixing time of the Markov chain is independent of the
+signal-to-noise ($SNR$) ratio and grows polynomially in the problem dimension;
+while for some lattices, the mixing time grows unboundedly as $SNR$ grows. Both
+theoretical and empirical results suggest that to ensure fast mixing, the
+temperature for MCMC should often grow positively as the $SNR$ increases. We
+also derive the probability that there exist local minima in an integer
+least-square problem, which can be as high as
+$1/3-\frac{1}{\sqrt{5}}+\frac{2\arctan(\sqrt{5/3})}{\sqrt{5}\pi}$.

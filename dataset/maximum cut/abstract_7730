@@ -1,0 +1,18 @@
+For an integer d>=1, let tau(d) be the smallest integer with the following
+property: If v1,v2,...,vt is a sequence of t>=2 vectors in [-1,1]^d with
+v1+v2+...+vt in [-1,1]^d, then there is a subset S of {1,2,...,t} of indices,
+2<=|S|<=tau(d), such that \sum_{i\in S} vi is in [-1,1]^d. The quantity tau(d)
+was introduced by Dash, Fukasawa, and G\"unl\"uk, who showed that tau(2)=2,
+tau(3)=4, and tau(d)=Omega(2^d), and asked whether tau(d) is finite for all d.
+  Using the Steinitz lemma, in a quantitative version due to Grinberg and
+Sevastyanov, we prove an upper bound of tau(d) <= d^{d+o(d)}, and based on a
+construction of Alon and Vu, whose main idea goes back to Hastad, we obtain a
+lower bound of tau(d)>= d^{d/2-o(d)}.
+  These results contribute to understanding the master equality polyhedron with
+multiple rows defined by Dash et al., which is a "universal" polyhedron
+encoding valid cutting planes for integer programs (this line of research was
+started by Gomory in the late 1960s). In particular, the upper bound on tau(d)
+implies a pseudo-polynomial running time for an algorithm of Dash et al. for
+integer programming with a fixed number of constraints. The algorithm consists
+in solving a linear program, and it provides an alternative to a 1981 dynamic
+programming algorithm of Papadimitriou.

@@ -1,0 +1,21 @@
+We consider inference for the reaction rates in discretely observed networks
+such as those found in models for systems biology, population ecology and
+epidemics. Most such networks are neither slow enough nor small enough for
+inference via the true state-dependent Markov jump process to be feasible.
+Typically, inference is conducted by approximating the dynamics through an
+ordinary differential equation (ODE), or a stochastic differential equation
+(SDE). The former ignores the stochasticity in the true model, and can lead to
+inaccurate inferences. The latter is more accurate but is harder to implement
+as the transition density of the SDE model is generally unknown. The Linear
+Noise Approximation (LNA) is a first order Taylor expansion of the
+approximating SDE about a deterministic solution and can be viewed as a
+compromise between the ODE and SDE models. It is a stochastic model, but
+discrete time transition probabilities for the LNA are available through the
+solution of a series of ordinary differential equations. We describe how a
+restarting LNA can be efficiently used to perform inference for a general class
+of reaction networks; evaluate the accuracy of such an approach; and show how
+and when this approach is either statistically or computationally more
+efficient than ODE or SDE methods. We apply the LNA to analyse Google Flu
+Trends data from the North and South Islands of New Zealand, and are able to
+obtain more accurate short-term forecasts of new flu cases than another
+recently proposed method, although at a greater computational cost.

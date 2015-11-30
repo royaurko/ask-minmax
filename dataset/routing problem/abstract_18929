@@ -1,0 +1,18 @@
+Contact algorithm between different bodies plays an important role in solving
+collision problems. Usually it is not easy to be treated very well. Several
+ones for material point method were proposed by Bardenhangen, Brackbill, and
+  Sulsky\cite{Bardenhagen2000,Bardenhagen2001}, Hu and Chen\cite{Hu_Chen2003}.
+  An improved one for three-dimensional material point method is presented in
+this paper. The improved algorithm emphasizes the energy conservation of the
+system and faithfully recovers opposite acting forces between contacting
+bodies. Contrasted to the one by Bardenhagen, both the normal and tangential
+contacting forces are more appropriately applied to the contacting bodies via
+the contacting nodes of the background mesh; Contrasted to the one by Hu and
+Chen, not only the tangential velocities but also the normal ones are handled
+separately in respective individual mesh. This treatment ensures not only the
+contact/sliding/separation procedure but also the friction between contacting
+bodies are recovered. The presented contact algorithm is validated via
+numerical experiments including rolling simulation, impact of elastic spheres,
+impact of a Taylor bar and impact of plastic spheres. The numerical results
+show that the multi-mesh material point method with the improved contact
+algorithm is more suitable for solving collision problems.

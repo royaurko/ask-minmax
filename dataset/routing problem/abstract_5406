@@ -1,0 +1,23 @@
+In this paper, we consider the problem of preserving privacy in the online
+learning setting. We study the problem in the online convex programming (OCP)
+framework---a popular online learning setting with several interesting
+theoretical and practical implications---while using differential privacy as
+the formal privacy measure. For this problem, we distill two critical
+attributes that a private OCP algorithm should have in order to provide
+reasonable privacy as well as utility guarantees: 1) linearly decreasing
+sensitivity, i.e., as new data points arrive their effect on the learning model
+decreases, 2) sub-linear regret bound---regret bound is a popular
+goodness/utility measure of an online learning algorithm.
+  Given an OCP algorithm that satisfies these two conditions, we provide a
+general framework to convert the given algorithm into a privacy preserving OCP
+algorithm with good (sub-linear) regret. We then illustrate our approach by
+converting two popular online learning algorithms into their differentially
+private variants while guaranteeing sub-linear regret ($O(\sqrt{T})$). Next, we
+consider the special case of online linear regression problems, a practically
+important class of online learning problems, for which we generalize an
+approach by Dwork et al. to provide a differentially private algorithm with
+just $O(\log^{1.5} T)$ regret. Finally, we show that our online learning
+framework can be used to provide differentially private algorithms for offline
+learning as well. For the offline learning problem, our approach obtains better
+error bounds as well as can handle larger class of problems than the existing
+state-of-the-art methods Chaudhuri et al.

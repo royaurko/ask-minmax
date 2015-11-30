@@ -1,0 +1,20 @@
+At present each neutron scattering facility has its own set of data treatment
+software, normally based on a proprietary data format. The travelling scientist
+is either forced to continually learn new software or to write conversion
+routines for his own software tools.
+  During software development most of the time is spent on routines connected
+with file input and output or visualisation. Our aim is to relieve the
+scientist from such tedious work to allow maximum effort to be spent on data
+processing routines.
+  I present an "Open Source" component based, extendable, platform independent
+framework for visualisation and transformation of data.
+  Most of the existing software appears as a monolithic block. In contrast
+openDaVE is built up in a modular design. It consists of three parts: the
+kernel, a lot of modules, and some different front-ends. The actual
+functionality of the framework is done by the modules. The kernel provides the
+creation, the destruction of the modules, and the interaction between them,
+whereas the front-end interacts with the user.
+  The modules are divided in three classes: sources, filters, and sinks. Each
+of the module consists of two different parts: the module logic, and one or
+more interfaces, which set the module parameters. The interfaces are front-end
+specific.

@@ -1,0 +1,15 @@
+We introduce FlowCutter, a novel algorithm to compute a set of edge cuts or
+node separators that optimize cut size and balance in the Pareto-sense. Our
+core algorithm solves the balanced connected st-edge-cut problem, where two
+given nodes s and t must be separated by removing edges to obtain two connected
+parts. Using the core algorithm we build variants that compute node separators
+and are independent of s and t. Using the Pareto-set we can identify cuts with
+a particularly good trade-off between cut size and balance that can be used to
+compute contraction and minimum fill-in orders, which can be used in
+Customizable Contraction Hierarchies (CCH), a speed-up technique for shortest
+path computations. Our core algorithm runs in O(cm) time where m is the number
+of edges and c the cut size. This makes it well-suited for large graphs with
+small cuts, such as road graphs, which are our primary application. For road
+graphs we present an extensive experimental study demonstrating that FlowCutter
+outperforms the current state of the art both in terms of cut sizes as well as
+CCH performance.

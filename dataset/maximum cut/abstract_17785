@@ -1,0 +1,16 @@
+The Grundy number of a graph is the maximum number of colors used by the
+greedy coloring algorithm over all vertex orderings. In this paper, we study
+the computational complexity of GRUNDY COLORING, the problem of determining
+whether a given graph has Grundy number at least $k$. We show that GRUNDY
+COLORING can be solved in time $O^*(2.443^n)$ on graphs of order $n$. While the
+problem is known to be solvable in time $f(k,w)\cdot n$ for graphs of treewidth
+$w$, we prove that under the Exponential Time Hypothesis, it cannot be computed
+in time $O^*(c^{w})$, for any constant $c$. We also study the parameterized
+complexity of GRUNDY COLORING parameterized by the number of colors, showing
+that it is in FPT for graphs including chordal graphs, claw-free graphs, and
+graphs excluding a fixed minor. Finally, we consider two previously studied
+variants of GRUNDY COLORING, namely WEAK GRUNDY COLORING and CONNECTED GRUNDY
+COLORING. We show that WEAK GRUNDY COLORING is fixed-parameter tractable with
+respect to the weak Grundy number. In stark contrast, it turns out that
+checking whether a given graph has connected Grundy number at least $k$ is
+NP-complete already for $k=7$.

@@ -1,0 +1,25 @@
+In comparative genomics, the rearrangement distance between two genomes
+(equal the minimal number of genome rearrangements required to transform them
+into a single genome) is often used for measuring their evolutionary
+remoteness. Generalization of this measure to three genomes is known as the
+median score (while a resulting genome is called median genome). In contrast to
+the rearrangement distance between two genomes which can be computed in linear
+time, computing the median score for three genomes is NP-hard. This inspires a
+quest for simpler and faster approximations for the median score, the most
+natural of which appears to be the halved sum of pairwise distances which in
+fact represents a lower bound for the median score.
+  In this work, we study relationship and interplay of pairwise distances
+between three genomes and their median score under the model of
+Double-Cut-and-Join (DCJ) rearrangements. Most remarkably we show that while a
+rearrangement may change the sum of pairwise distances by at most 2 (and thus
+change the lower bound by at most 1), even the most "powerful" rearrangements
+in this respect that increase the lower bound by 1 (by moving one genome
+farther away from each of the other two genomes), which we call strong, do not
+necessarily affect the median score. This observation implies that the two
+measures are not as well-correlated as one's intuition may suggest.
+  We further prove that the median score attains the lower bound exactly on the
+triples of genomes that can be obtained from a single genome with strong
+rearrangements. While the sum of pairwise distances with the factor 2/3
+represents an upper bound for the median score, its tightness remains unclear.
+Nonetheless, we show that the difference of the median score and its lower
+bound is not bounded by a constant.

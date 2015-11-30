@@ -1,0 +1,10 @@
+We adopt CUDA-capable Graphic Processing Units (GPUs) for Coulomb, Landau and
+maximally Abelian gauge fixing in 3+1 dimensional SU(3) lattice gauge field
+theories. The local overrelaxation algorithm is perfectly suited for highly
+parallel architectures. Simulated annealing preconditioning strongly increases
+the probability to reach the global maximum of the gauge functional. We give
+performance results for single and double precision. To obtain our maximum
+performance of ~300 GFlops on NVIDIA's GTX 580 a very fine grained degree of
+parallelism is required due to the register limits of NVIDIA's Fermi GPUs: we
+use eight threads per lattice site, i.e., one thread per SU(3) matrix that is
+involved in the computation of a site update.

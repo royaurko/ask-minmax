@@ -1,0 +1,13 @@
+We study the \emph{bounded-delay model} for Qualify-of-Service buffer
+management. Time is discrete. There is a buffer. Unit-length jobs (also called
+\emph{packets}) arrive at the buffer over time. Each packet has an integer
+release time, an integer deadline, and a positive real value. A packet's
+characteristics are not known to an online algorithm until the packet actually
+arrives. In each time step, at most one packet can be sent out of the buffer.
+The objective is to maximize the total value of the packets sent by their
+respective deadlines in an online manner. An online algorithm's performance is
+usually measured in terms of \emph{competitive ratio}, when this online
+algorithm is compared with a clairvoyant algorithm achieving the best total
+value. In this paper, we study a simple and intuitive online algorithm. We
+analyze its performance in terms of competitive ratio for the general model and
+a few important variants.

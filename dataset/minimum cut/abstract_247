@@ -1,0 +1,9 @@
+We show how to find a minimum weight loop cutset in a Bayesian network with
+high probability. Finding such a loop cutset is the first step in the method of
+conditioning for inference. Our randomized algorithm for finding a loop cutset
+outputs a minimum loop cutset after O(c 6^k kn) steps with probability at least
+1 - (1 - 1/(6^k))^c6^k, where c > 1 is a constant specified by the user, k is
+the minimal size of a minimum weight loop cutset, and n is the number of
+vertices. We also show empirically that a variant of this algorithm often finds
+a loop cutset that is closer to the minimum weight loop cutset than the ones
+found by the best deterministic algorithms known.

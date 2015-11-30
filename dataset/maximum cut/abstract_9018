@@ -1,0 +1,8 @@
+In {\sc MaxSat}, we ask for an assignment which satisfies the maximum number
+of clauses for a boolean formula in CNF. We present an algorithm yielding a run
+time upper bound of $O^*(2^{\frac{1}{6.2158}})$ for {\sc Max-2-Sat} (each
+clause contains at most 2 literals), where $K$ is the number of clauses. The
+run time has been achieved by using heuristic priorities on the choice of the
+variable on which we branch. The implementation of these heuristic priorities
+is rather simple, though they have a significant effect on the run time. The
+analysis is done using a tailored non-standard measure.

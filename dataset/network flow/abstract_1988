@@ -1,0 +1,25 @@
+The congestion control algorithm of TCP relies on correct feedback from the
+receiver to determine the rate at which packets should be sent into the
+network. Hence, correct receiver feedback (in the form of TCP acknowledgements)
+is essential to the goal of sharing the scarce bandwidth resources fairly and
+avoiding congestion collapse in the Internet. However, the assumption that a
+TCP receiver can always be trusted (to generate feedback correctly) no longer
+holds as there are plenty of incentives for a receiver to deviate from the
+protocol. In fact, it has been shown that a misbehaving receiver (whose aim is
+to bring about congestion collapse) can easily generate acknowledgements to
+conceal packet loss, so as to drive a number of honest, innocent senders
+arbitrarily fast to create a significant number of non-responsive packet flows,
+leading to denial of service to other Internet users. We give the first formal
+treatment to this problem. We also give an efficient, provably secure mechanism
+to force a receiver to generate feedback correctly; any incorrect
+acknowledgement will be detected at the sender and cheating TCP receivers would
+be identified. The idea is as follows: for each packet sent, the sender
+generates a tag using a secret key (known to himself only); the receiver could
+generate a proof using the packet and the tag alone, and send it to the sender;
+the sender can then verify the proof using the secret key; an incorrect proof
+would indicate a cheating receiver. The scheme is very efficient in the sense
+that the TCP sender does not need to store the packet or the tag, and the
+proofs for multiple packets can be aggregated at the receiver. The scheme is
+based on an aggregate authenticator. In addition, the proposed solution can be
+applied to network-layer rate-limiting architectures requiring correct
+feedback.

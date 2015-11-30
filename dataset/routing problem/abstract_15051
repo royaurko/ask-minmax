@@ -1,0 +1,14 @@
+This work studies the recursive robust principal components' analysis(PCA)
+problem. Here, "robust" refers to robustness to both independent and correlated
+sparse outliers. If the outlier is the signal-of-interest, this problem can be
+interpreted as one of recursively recovering a time sequence of sparse vectors,
+St, in the presence of large but structured noise, Lt. The structure that we
+assume on Lt is that Lt is dense and lies in a low dimensional subspace that is
+either fixed or changes "slowly enough". A key application where this problem
+occurs is in video surveillance where the goal is to separate a slowly changing
+background (Lt) from moving foreground objects (St) on-the-fly. To solve the
+above problem, we introduce a novel solution called Recursive Projected CS
+(ReProCS). Under mild assumptions, we show that, with high probability
+(w.h.p.), ReProCS can exactly recover the support set of St at all times; and
+the reconstruction errors of both St and Lt are upper bounded by a
+time-invariant and small value at all times.

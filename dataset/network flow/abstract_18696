@@ -1,0 +1,15 @@
+Random walks can be used to search complex networks for a desired resource.
+To reduce search lengths, we propose a mechanism based on building random walks
+connecting together partial walks (PW) previously computed at each network
+node. Resources found in each PW are registered. Searches can then jump over
+PWs where the resource is not located. However, we assume that perfect
+recording of resources may be costly, and hence, probabilistic structures like
+Bloom filters are used. Then, unnecessary hops may come from false positives at
+the Bloom filters. Two variations of this mechanism have been considered,
+depending on whether we first choose a PW in the current node and then check it
+for the resource, or we first check all PWs and then choose one. In addition,
+PWs can be either simple random walks or self-avoiding random walks. Analytical
+models are provided to predict expected search lengths and other magnitudes of
+the resulting four mechanisms. Simulation experiments validate these
+predictions and allow us to compare these techniques with simple random walk
+searches, finding very large reductions of expected search lengths.

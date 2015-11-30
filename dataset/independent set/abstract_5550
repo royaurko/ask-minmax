@@ -1,0 +1,26 @@
+As users migrate information to cloud storage, many distributed cloud-based
+services use multiple loosely consistent replicas of user information to avoid
+the high overhead of more tightly coupled synchronization. Periodically, the
+information must be synchronized, or reconciled. One can place this problem in
+the theoretical framework of {\em set reconciliation}: two parties $A_1$ and
+$A_2$ each hold a set of keys, named $S_1$ and $S_2$ respectively, and the goal
+is for both parties to obtain $S_1 \cup S_2$. Typically, set reconciliation is
+interesting algorithmically when sets are large but the set difference
+$|S_1-S_2|+|S_2-S_1|$ is small. In this setting the focus is on accomplishing
+reconciliation efficiently in terms of communication; ideally, the
+communication should depend on the size of the set difference, and not on the
+size of the sets.
+  In this paper, we extend recent approaches using Invertible Bloom Lookup
+Tables (IBLTs) for set reconciliation to the multi-party setting. In this
+setting there are three or more parties $A_1,A_2,\ldots,A_n$ holding sets of
+keys $S_1,S_2,\ldots,S_n$ respectively, and the goal is for all parties to
+obtain $\cup_i S_i$. This could of course be done by pairwise reconciliations,
+but we seek more effective methods.
+  Our methodology uses network coding techniques in conjunction with IBLTs,
+allowing efficiency in network utilization along with efficiency obtained by
+passing messages of size $O(|\cup_i S_i - \cap_i S_i|)$. Further, our approach
+can function even if the number of parties is not exactly known in advance, and
+in many cases can be used to determine which parties contain keys not in the
+joint union. By connecting reconciliation with network coding, we can allow for
+substantially more efficient reconciliation methods that apply to a number of
+natural distributed computing problems.

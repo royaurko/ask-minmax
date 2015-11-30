@@ -1,0 +1,21 @@
+In this paper we consider the problem of recovering a high dimensional data
+matrix from a set of incomplete and noisy linear measurements. We introduce a
+new model that can efficiently restrict the degrees of freedom of the problem
+and is generic enough to find a lot of applications, for instance in
+multichannel signal compressed sensing (e.g. sensor networks, hyperspectral
+imaging) and compressive sparse principal component analysis (s-PCA). We assume
+data matrices have a simultaneous low-rank and joint sparse structure, and we
+propose a novel approach for efficient compressed sensing (CS) of such data.
+Our CS recovery approach is based on a convex minimization problem that
+incorporates this restrictive structure by jointly regularizing the solutions
+with their nuclear (trace) norm and l2/l1 mixed norm. Our theoretical analysis
+uses a new notion of restricted isometry property (RIP) and shows that, for
+sampling schemes satisfying RIP, our approach can stably recover all low-rank
+and joint-sparse matrices. For a certain class of random sampling schemes
+satisfying a particular concentration bound (e.g. the subgaussian ensembles) we
+derive a lower bound on the number of CS measurements indicating the
+near-optimality of our recovery approach as well as a significant enhancement
+compared to the state-of-the-art. We introduce an iterative algorithm based on
+proximal calculus in order to solve the joint nuclear and l2/l1 norms
+minimization problem and, finally, we illustrate the empirical recovery phase
+transition of this approach by series of numerical experiments.

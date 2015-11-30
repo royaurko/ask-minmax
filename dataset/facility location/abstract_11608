@@ -1,0 +1,12 @@
+We describe a fast solver for linear systems with reconstructable Cauchy-like
+structure, which requires O(rn^2) floating point operations and O(rn) memory
+locations, where n is the size of the matrix and r its displacement rank. The
+solver is based on the application of the generalized Schur algorithm to a
+suitable augmented matrix, under some assumptions on the knots of the
+Cauchy-like matrix. It includes various pivoting strategies, already discussed
+in the literature, and a new algorithm, which only requires reconstructability.
+We have developed a software package, written in Matlab and C-MEX, which
+provides a robust implementation of the above method. Our package also includes
+solvers for Toeplitz(+Hankel)-like and Vandermonde-like linear systems, as
+these structures can be reduced to Cauchy-like by fast and stable transforms.
+Numerical experiments demonstrate the effectiveness of the software.

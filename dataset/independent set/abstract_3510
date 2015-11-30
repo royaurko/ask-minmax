@@ -1,0 +1,26 @@
+Random linear network codes can be designed and implemented in a distributed
+manner, with low computational complexity. However, these codes are classically
+implemented over finite fields whose size depends on some global network
+parameters (size of the network, the number of sinks) that may not be known
+prior to code design. Also, if new nodes join the entire network code may have
+to be redesigned.
+  In this work, we present the first universal and robust distributed linear
+network coding schemes. Our schemes are universal since they are independent of
+all network parameters. They are robust since if nodes join or leave, the
+remaining nodes do not need to change their coding operations and the receivers
+can still decode. They are distributed since nodes need only have topological
+information about the part of the network upstream of them, which can be
+naturally streamed as part of the communication protocol.
+  We present both probabilistic and deterministic schemes that are all
+asymptotically rate-optimal in the coding block-length, and have guarantees of
+correctness. Our probabilistic designs are computationally efficient, with
+order-optimal complexity. Our deterministic designs guarantee zero error
+decoding, albeit via codes with high computational complexity in general. Our
+coding schemes are based on network codes over ``scalable fields". Instead of
+choosing coding coefficients from one field at every node, each node uses
+linear coding operations over an ``effective field-size" that depends on the
+node's distance from the source node. The analysis of our schemes requires
+technical tools that may be of independent interest. In particular, we
+generalize the Schwartz-Zippel lemma by proving a non-uniform version, wherein
+variables are chosen from sets of possibly different sizes. We also provide a
+novel robust distributed algorithm to assign unique IDs to network nodes.

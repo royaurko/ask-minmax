@@ -1,0 +1,25 @@
+In hardware virtualization a hypervisor provides multiple Virtual Machines
+(VMs) on a single physical system, each executing a separate operating system
+instance. The hypervisor schedules execution of these VMs much as the scheduler
+in an operating system does, balancing factors such as fairness and I/O
+performance. As in an operating system, the scheduler may be vulnerable to
+malicious behavior on the part of users seeking to deny service to others or
+maximize their own resource usage.
+  Recently, publically available cloud computing services such as Amazon EC2
+have used virtualization to provide customers with virtual machines running on
+the provider's hardware, typically charging by wall clock time rather than
+resources consumed. Under this business model, manipulation of the scheduler
+may allow theft of service at the expense of other customers, rather than
+merely reallocating resources within the same administrative domain.
+  We describe a flaw in the Xen scheduler allowing virtual machines to consume
+almost all CPU time, in preference to other users, and demonstrate kernel-based
+and user-space versions of the attack. We show results demonstrating the
+vulnerability in the lab, consuming as much as 98% of CPU time regardless of
+fair share, as well as on Amazon EC2, where Xen modifications protect other
+users but still allow theft of service. In case of EC2, following the
+responsible disclosure model, we have reported this vulnerability to Amazon;
+they have since implemented a fix that we have tested and verified (See
+Appendix B). We provide a novel analysis of the necessary conditions for such
+attacks, and describe scheduler modifications to eliminate the vulnerability.
+  We present experimental results demonstrating the effectiveness of these
+defenses while imposing negligible overhead.

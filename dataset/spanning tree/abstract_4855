@@ -1,0 +1,21 @@
+Evaluating conjunctive queries and solving constraint satisfaction problems
+are fundamental problems in database theory and artificial intelligence,
+respectively. These problems are NP-hard, so that several research efforts have
+been made in the literature for identifying tractable classes, known as islands
+of tractability, as well as for devising clever heuristics for solving
+efficiently real-world instances. Many heuristic approaches are based on
+enforcing on the given instance a property called local consistency, where (in
+database terms) each tuple in every query atom matches at least one tuple in
+every other query atom. Interestingly, it turns out that, for many well-known
+classes of queries, such as for the acyclic queries, enforcing local
+consistency is even sufficient to solve the given instance correctly. However,
+the precise power of such a procedure was unclear, but for some very restricted
+cases. The paper provides full answers to the long-standing questions about the
+precise power of algorithms based on enforcing local consistency. The classes
+of instances where enforcing local consistency turns out to be a correct
+query-answering procedure are however not efficiently recognizable. In fact,
+the paper finally focuses on certain subclasses defined in terms of the novel
+notion of greedy tree projections. These latter classes are shown to be
+efficiently recognizable and strictly larger than most islands of tractability
+known so far, both in the general case of tree projections and for specific
+structural decomposition methods.

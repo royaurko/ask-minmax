@@ -1,0 +1,14 @@
+We study the problem of constructing phylogenetic trees for a given set of
+species. The problem is formulated as that of finding a minimum Steiner tree on
+$n$ points over the Boolean hypercube of dimension $d$. It is known that an
+optimal tree can be found in linear time if the given dataset has a perfect
+phylogeny, i.e. cost of the optimal phylogeny is exactly $d$. Moreover, if the
+data has a near-perfect phylogeny, i.e. the cost of the optimal Steiner tree is
+$d+q$, it is known that an exact solution can be found in running time which is
+polynomial in the number of species and $d$, yet exponential in $q$. In this
+work, we give a polynomial-time algorithm (in both $d$ and $q$) that finds a
+phylogenetic tree of cost $d+O(q^2)$. This provides the best guarantees known -
+namely, a $(1+o(1))$-approximation - for the case $\log(d) \ll q \ll \sqrt{d}$,
+broadening the range of settings for which near-optimal solutions can be
+efficiently found. We also discuss the motivation and reasoning for studying
+such additive approximations.

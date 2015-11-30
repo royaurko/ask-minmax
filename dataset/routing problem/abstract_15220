@@ -1,0 +1,20 @@
+This article considers the parallel machine scheduling problem with
+step-deteriorating jobs and sequence-dependent setup times. The objective is to
+minimize the total tardiness by determining the allocation and sequence of jobs
+on identical parallel machines. In this problem, the processing time of each
+job is a step function dependent upon its starting time. An individual extended
+time is penalized when the starting time of a job is later than a specific
+deterioration date. The possibility of deterioration of a job makes the
+parallel machine scheduling problem more challenging than ordinary ones. A
+mixed integer programming model for the optimal solution is derived. Due to its
+NP-hard nature, a hybrid discrete cuckoo search algorithm is proposed to solve
+this problem. In order to generate a good initial swarm, a modified heuristic
+named the MBHG is incorporated into the initialization of population. Several
+discrete operators are proposed in the random walk of L\'{e}vy Flights and the
+crossover search. Moreover, a local search procedure based on variable
+neighborhood descent is integrated into the algorithm as a hybrid strategy in
+order to improve the quality of elite solutions. Computational experiments are
+executed on two sets of randomly generated test instances. The results show
+that the proposed hybrid algorithm can yield better solutions in comparison
+with the commercial solver CPLEX with one hour time limit, discrete cuckoo
+search algorithm and the existing variable neighborhood search algorithm.

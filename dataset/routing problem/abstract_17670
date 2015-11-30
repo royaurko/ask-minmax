@@ -1,0 +1,17 @@
+Targeted maximum likelihood estimation (TMLE) is a general method for
+estimating parameters in semiparametric and nonparametric models. Each
+iteration of TMLE involves fitting a parametric submodel that targets the
+parameter of interest. We investigate the use of exponential families to define
+the parametric submodel. This implementation of TMLE gives a general approach
+for estimating any smooth parameter in the nonparametric model. A computational
+advantage of this approach is that each iteration of TMLE involves estimation
+of a parameter in an exponential family, which is a convex optimization problem
+for which software implementing reliable and computationally efficient methods
+exists. We illustrate the method in three estimation problems, involving the
+mean of an outcome missing at random, the parameter of a median regression
+model, and the causal effect of a continuous exposure, respectively. We conduct
+a simulation study comparing different choices for the parametric submodel,
+focusing on the first of these problems. To the best of our knowledge, this is
+the first study investigating robustness of TMLE to different specifications of
+the parametric submodel. We find that the choice of submodel can have an
+important impact on the behavior of the estimator in finite samples.

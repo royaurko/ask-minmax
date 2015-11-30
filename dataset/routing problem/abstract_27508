@@ -1,0 +1,14 @@
+We consider a Reinforcement Learning setup where an agent interacts with an
+environment in observation-reward-action cycles without any (esp.\ MDP)
+assumptions on the environment. State aggregation and more generally feature
+reinforcement learning is concerned with mapping histories/raw-states to
+reduced/aggregated states. The idea behind both is that the resulting reduced
+process (approximately) forms a small stationary finite-state MDP, which can
+then be efficiently solved or learnt. We considerably generalize existing
+aggregation results by showing that even if the reduced process is not an MDP,
+the (q-)value functions and (optimal) policies of an associated MDP with same
+state-space size solve the original problem, as long as the solution can
+approximately be represented as a function of the reduced states. This implies
+an upper bound on the required state space size that holds uniformly for all RL
+problems. It may also explain why RL algorithms designed for MDPs sometimes
+perform well beyond MDPs.

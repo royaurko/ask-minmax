@@ -1,0 +1,24 @@
+Answer set programming (ASP) with disjunction offers a powerful tool for
+declaratively representing and solving hard problems. Many NP-complete problems
+can be encoded in the answer set semantics of logic programs in a very concise
+and intuitive way, where the encoding reflects the typical "guess and check"
+nature of NP problems: The property is encoded in a way such that polynomial
+size certificates for it correspond to stable models of a program. However, the
+problem-solving capacity of full disjunctive logic programs (DLPs) is beyond
+NP, and captures a class of problems at the second level of the polynomial
+hierarchy. While these problems also have a clear "guess and check" structure,
+finding an encoding in a DLP reflecting this structure may sometimes be a
+non-obvious task, in particular if the "check" itself is a coNP-complete
+problem; usually, such problems are solved by interleaving separate guess and
+check programs, where the check is expressed by inconsistency of the check
+program. In this paper, we present general transformations of head-cycle free
+(extended) disjunctive logic programs into stratified and positive (extended)
+disjunctive logic programs based on meta-interpretation techniques. The answer
+sets of the original and the transformed program are in simple correspondence,
+and, moreover, inconsistency of the original program is indicated by a
+designated answer set of the transformed program. Our transformations
+facilitate the integration of separate "guess" and "check" programs, which are
+often easy to obtain, automatically into a single disjunctive logic program.
+Our results complement recent results on meta-interpretation in ASP, and extend
+methods and techniques for a declarative "guess and check" problem solving
+paradigm through ASP.

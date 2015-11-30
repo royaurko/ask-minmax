@@ -1,0 +1,11 @@
+We consider the problem of reconstructing a signal from noisy measurements in
+linear mixing systems. The reconstruction performance is usually quantified by
+standard error metrics such as squared error, whereas we consider any additive
+error metric. Under the assumption that relaxed belief propagation (BP) can
+compute the posterior in the large system limit, we propose a simple, fast, and
+highly general algorithm that reconstructs the signal by minimizing the
+user-defined error metric. For two example metrics, we provide performance
+analysis and convincing numerical results. Finally, our algorithm can be
+adjusted to minimize the $\ell_\infty$ error, which is not additive.
+Interestingly, $\ell_{\infty}$ minimization only requires to apply a Wiener
+filter to the output of relaxed BP.

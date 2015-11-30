@@ -1,0 +1,17 @@
+Multinomial logistic regression is one of the most popular models for
+modelling the effect of explanatory variables on a subject choice between a set
+of specified options. This model has found numerous applications in machine
+learning, psychology or economy. Bayesian inference in this model is non
+trivial and requires, either to resort to a MetropolisHastings algorithm, or
+rejection sampling within a Gibbs sampler. In this paper, we propose an
+alternative model to multinomial logistic regression. The model builds on the
+Plackett-Luce model, a popular model for multiple comparisons. We show that the
+introduction of a suitable set of auxiliary variables leads to an
+Expectation-Maximization algorithm to find Maximum A Posteriori estimates of
+the parameters. We further provide a full Bayesian treatment by deriving a
+Gibbs sampler, which only requires to sample from highly standard
+distributions. We also propose a variational approximate inference scheme. All
+are very simple to implement. One property of our Plackett-Luce regression
+model is that it learns a sparse set of feature weights. We compare our method
+to sparse Bayesian multinomial logistic regression and show that it is
+competitive, especially in presence of polychotomous data.

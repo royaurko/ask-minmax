@@ -1,0 +1,10 @@
+We present a distributed data structure, which we call the rainbow skip
+graph. To our knowledge, this is the first peer-to-peer data structure that
+simultaneously achieves high fault tolerance, constant-sized nodes, and fast
+update and query times for ordered data. It is a non-trivial adaptation of the
+SkipNet/skip-graph structures of Harvey et al. and Aspnes and Shah, so as to
+provide fault-tolerance as these structures do, but to do so using
+constant-sized nodes, as in the family tree structure of Zatloukal and Harvey.
+It supports successor queries on a set of n items using O(log n) messages with
+high probability, an improvement over the expected O(log n) messages of the
+family tree.

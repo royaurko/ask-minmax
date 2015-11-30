@@ -1,0 +1,26 @@
+Bilinear inverse problems (BIPs), the resolution of two vectors given their
+image under a bilinear mapping, arise in many applications. Without further
+constraints, BIPs are usually ill-posed. In practice, properties of natural
+signals are exploited to solve BIPs. For example, subspace constraints or
+sparsity constraints are imposed to reduce the search space. These approaches
+have shown some success in practice. However, there are few results on
+uniqueness in BIPs. For most BIPs, the fundamental question of under what
+condition the problem admits a unique solution, is yet to be answered. For
+example, blind gain and phase calibration (BGPC) is a structured bilinear
+inverse problem, which arises in many applications, including inverse rendering
+in computational relighting (albedo estimation with unknown lighting), blind
+phase and gain calibration in sensor array processing, and multichannel blind
+deconvolution (MBD). It is interesting to study the uniqueness of such
+problems.
+  In this paper, we define identifiability of a BIP up to a group of
+transformations. We derive necessary and sufficient conditions for such
+identifiability, i.e., the conditions under which the solutions can be uniquely
+determined up to the transformation group. Applying these results to BGPC, we
+derive sufficient conditions for unique recovery under several scenarios,
+including subspace, joint sparsity, and sparsity models. For BGPC with joint
+sparsity or sparsity constraints, we develop a procedure to compute the
+relevant transformation groups. We also give necessary conditions in the form
+of tight lower bounds on sample complexities, and demonstrate the tightness of
+these bounds by numerical experiments. The results for BGPC not only
+demonstrate the application of the proposed general framework for
+identifiability analysis, but are also of interest in their own right.

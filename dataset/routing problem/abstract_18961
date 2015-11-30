@@ -1,0 +1,20 @@
+Given linear matrix inequalities (LMIs) L_1 and L_2, it is natural to ask:
+(Q1) when does one dominate the other, that is, does L_1(X) PsD imply L_2(X)
+PsD? (Q2) when do they have the same solution set? Such questions can be
+NP-hard. This paper describes a natural relaxation of an LMI, based on
+substituting matrices for the variables x_j. With this relaxation, the
+domination questions (Q1) and (Q2) have elegant answers, indeed reduce to
+constructible semidefinite programs. Assume there is an X such that L_1(X) and
+L_2(X) are both PD, and suppose the positivity domain of L_1 is bounded. For
+our "matrix variable" relaxation a positive answer to (Q1) is equivalent to the
+existence of matrices V_j such that L_2(x)=V_1^* L_1(x) V_1 + ... + V_k^*
+L_1(x) V_k. As for (Q2) we show that, up to redundancy, L_1 and L_2 are
+unitarily equivalent.
+  Such algebraic certificates are typically called Positivstellensaetze and the
+above are examples of such for linear polynomials. The paper goes on to derive
+a cleaner and more powerful Putinar-type Positivstellensatz for polynomials
+positive on a bounded set of the form {X | L(X) PsD}.
+  An observation at the core of the paper is that the relaxed LMI domination
+problem is equivalent to a classical problem. Namely, the problem of
+determining if a linear map from a subspace of matrices to a matrix algebra is
+"completely positive".

@@ -1,0 +1,20 @@
+The linearly constrained matrix rank minimization problem is widely
+applicable in many fields such as control, signal processing and system
+identification. The tightest convex relaxation of this problem is the linearly
+constrained nuclear norm minimization. Although the latter can be cast as a
+semidefinite programming problem, such an approach is computationally expensive
+to solve when the matrices are large. In this paper, we propose fixed point and
+Bregman iterative algorithms for solving the nuclear norm minimization problem
+and prove convergence of the first of these algorithms. By using a homotopy
+approach together with an approximate singular value decomposition procedure,
+we get a very fast, robust and powerful algorithm, which we call FPCA (Fixed
+Point Continuation with Approximate SVD), that can solve very large matrix rank
+minimization problems. Our numerical results on randomly generated and real
+matrix completion problems demonstrate that this algorithm is much faster and
+provides much better recoverability than semidefinite programming solvers such
+as SDPT3. For example, our algorithm can recover 1000 x 1000 matrices of rank
+50 with a relative error of 1e-5 in about 3 minutes by sampling only 20 percent
+of the elements. We know of no other method that achieves as good
+recoverability. Numerical experiments on online recommendation, DNA microarray
+data set and image inpainting problems demonstrate the effectiveness of our
+algorithms.

@@ -1,0 +1,11 @@
+Many decision procedures for SMT problems rely more or less implicitly on an
+instantiation of the axioms of the theories under consideration, and differ by
+making use of the additional properties of each theory, in order to increase
+efficiency. We present a new technique for devising complete instantiation
+schemes on SMT problems over a combination of linear arithmetic with another
+theory T. The method consists in first instantiating the arithmetic part of the
+formula, and then getting rid of the remaining variables in the problem by
+using an instantiation strategy which is complete for T. We provide examples
+evidencing that not only is this technique generic (in the sense that it
+applies to a wide range of theories) but it is also efficient, even compared to
+state-of-the-art instantiation schemes for specific theories.

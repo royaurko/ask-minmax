@@ -1,0 +1,18 @@
+We introduce a highly structured family of hard satisfiable 3-SAT formulas
+corresponding to an ordered spin-glass model from statistical physics. This
+model has provably "glassy" behavior; that is, it has many local optima with
+large energy barriers between them, so that local search algorithms get stuck
+and have difficulty finding the true ground state, i.e., the unique satisfying
+assignment. We test the hardness of our formulas with two Davis-Putnam solvers,
+Satz and zChaff, the recently introduced Survey Propagation (SP), and two local
+search algorithms, Walksat and Record-to-Record Travel (RRT). We compare our
+formulas to random 3-XOR-SAT formulas and to two other generators of hard
+satisfiable instances, the minimum disagreement parity formulas of Crawford et
+al., and Hirsch's hgen. For the complete solvers the running time of our
+formulas grows exponentially in sqrt(n), and exceeds that of random 3-XOR-SAT
+formulas for small problem sizes. SP is unable to solve our formulas with as
+few as 25 variables. For Walksat, our formulas appear to be harder than any
+other known generator of satisfiable instances. Finally, our formulas can be
+solved efficiently by RRT but only if the parameter d is tuned to the height of
+the barriers between local minima, and we use this parameter to measure the
+barrier heights in random 3-XOR-SAT formulas as well.

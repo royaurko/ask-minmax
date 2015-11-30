@@ -1,0 +1,15 @@
+This paper studies the semi-analytic solution (SAS) of a power system's
+differential-algebraic equation. A SAS is a closed-form function of symbolic
+variables including time, the initial state and the parameters on system
+operating conditions, and hence able to directly give trajectories on system
+state variables, which are accurate for at least a certain time window. A
+two-stage SAS-based approach for fast transient stability simulation is
+proposed, which offline derives the SAS by the Adomian Decomposition Method and
+online evaluates the SAS for each of sequential time windows until making up a
+desired simulation period. When applied to fault simulation, the new approach
+employs numerical integration only for the fault-on period to determine the
+post-disturbance initial state of the SAS. The paper further analyzes the
+maximum length of a time window for a SAS to keep its accuracy, and
+accordingly, introduces a divergence indicator for adaptive time windows. The
+proposed SAS-based new approach is validated on the IEEE 10-machine, 39-bus
+system.

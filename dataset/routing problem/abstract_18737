@@ -1,0 +1,23 @@
+We consider the classical secret sharing problem in the case where all agents
+are selfish but rational. In recent work, Kol and Naor show that, when there
+are two players, in the non-simultaneous communication model, i.e. when rushing
+is possible, there is no Nash equilibrium that ensures both players learn the
+secret. However, they describe a mechanism for this problem, for any number of
+players, that is an epsilon-Nash equilibrium, in that no player can gain more
+than epsilon utility by deviating from it. Unfortunately, the Kol and Naor
+mechanism, and, to the best of our knowledge, all previous mechanisms for this
+problem require each agent to send O(n) messages in expectation, where n is the
+number of agents. This may be problematic for some applications of rational
+secret sharing such as secure multi-party computation and simulation of a
+mediator.
+  We address this issue by describing mechanisms for rational secret sharing
+that are designed for large n. Both of our results hold for n > 2, and are Nash
+equilbria, rather than just epsilon-Nash equilbria.
+  Our first result is a mechanism for n-out-of-n rational secret sharing that
+is scalable in the sense that it requires each agent to send only an expected
+O(log n) bits. Moreover, the latency of this mechanism is O(log n) in
+expectation, compared to O(n) expected latency for the Kol and Naor result. Our
+second result is a mechanism for a relaxed variant of rational m-out-of-n
+secret sharing where m = Theta(n). It requires each processor to send O(log n)
+bits and has O(log n) latency. Both of our mechanisms are non-cryptographic,
+and are not susceptible to backwards induction.

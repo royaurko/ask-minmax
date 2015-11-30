@@ -1,0 +1,25 @@
+Non-adaptive group testing involves grouping arbitrary subsets of $n$ items
+into different pools. Each pool is then tested and defective items are
+identified. A fundamental question involves minimizing the number of pools
+required to identify at most $d$ defective items. Motivated by applications in
+network tomography, sensor networks and infection propagation, a variation of
+group testing problems on graphs is formulated. Unlike conventional group
+testing problems, each group here must conform to the constraints imposed by a
+graph. For instance, items can be associated with vertices and each pool is any
+set of nodes that must be path connected. In this paper, a test is associated
+with a random walk. In this context, conventional group testing corresponds to
+the special case of a complete graph on $n$ vertices.
+  For interesting classes of graphs a rather surprising result is obtained,
+namely, that the number of tests required to identify $d$ defective items is
+substantially similar to what is required in conventional group testing
+problems, where no such constraints on pooling is imposed. Specifically, if
+T(n) corresponds to the mixing time of the graph $G$, it is shown that with
+$m=O(d^2T^2(n)\log(n/d))$ non-adaptive tests, one can identify the defective
+items. Consequently, for the Erdos-Renyi random graph $G(n,p)$, as well as
+expander graphs with constant spectral gap, it follows that $m=O(d^2\log^3n)$
+non-adaptive tests are sufficient to identify $d$ defective items. Next, a
+specific scenario is considered that arises in network tomography, for which it
+is shown that $m=O(d^3\log^3n)$ non-adaptive tests are sufficient to identify
+$d$ defective items. Noisy counterparts of the graph constrained group testing
+problem are considered, for which parallel results are developed. We also
+briefly discuss extensions to compressive sensing on graphs.

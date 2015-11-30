@@ -1,0 +1,15 @@
+Finding a d-regular spanning subgraph (or d-factor) of a graph is easy by
+Tutte's reduction to the matching problem. By the same reduction, it is easy to
+find a minimal or maximal d-factor of a graph. However, if we require that the
+d-factor is connected, these problems become NP-hard - finding a minimal
+connected 2-factor is just the traveling salesman problem (TSP).
+  Given a complete graph with edge weights that satisfy the triangle
+inequality, we consider the problem of finding a minimal connected $d$-factor.
+We give a 3-approximation for all $d$ and improve this to an
+(r+1)-approximation for even d, where r is the approximation ratio of the TSP.
+This yields a 2.5-approximation for even d. The same algorithm yields an
+(r+1)-approximation for the directed version of the problem, where r is the
+approximation ratio of the asymmetric TSP. We also show that none of these
+minimization problems can be approximated better than the corresponding TSP.
+  Finally, for the decision problem of deciding whether a given graph contains
+a connected d-factor, we extend known hardness results.

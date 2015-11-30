@@ -1,0 +1,14 @@
+We consider regression problems where the number of predictors greatly
+exceeds the number of observations. We propose a method for variable selection
+that first estimates the regression function, yielding a "pre-conditioned"
+response variable. The primary method used for this initial regression is
+supervised principal components. Then we apply a standard procedure such as
+forward stepwise selection or the LASSO to the pre-conditioned response
+variable. In a number of simulated and real data examples, this two-step
+procedure outperforms forward stepwise selection or the usual LASSO (applied
+directly to the raw outcome). We also show that under a certain Gaussian latent
+variable model, application of the LASSO to the pre-conditioned response
+variable is consistent as the number of predictors and observations increases.
+Moreover, when the observational noise is rather large, the suggested procedure
+can give a more accurate estimate than LASSO. We illustrate our method on some
+real problems, including survival analysis with microarray data.

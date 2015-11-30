@@ -1,0 +1,16 @@
+In the following work we apply the boundary element method to two-phase flows
+in shallow microchannels, where one phase is dispersed and does not wet the
+channel walls. These kinds of flows are often encountered in microfluidic
+Lab-on-a-Chip devices and characterized by low Reynolds and low capillary
+numbers.
+  Assuming that these channels are homogeneous in height and have a large
+aspect ratio, we use depth-averaged equations to describe these two-phase flows
+using the Brinkman equation, which constitutes a refinement of Darcy's law.
+These partial differential equations are discretized and solved numerically
+using the boundary element method, where a stabilization scheme is applied to
+the surface tension terms, allowing for a less restrictive time step at low
+capillary numbers. The convergence of the numerical algorithm is checked
+against a static analytical solution and on a dynamic test case. Finally the
+algorithm is applied to the non-linear development of the Saffman-Taylor
+instability and compared to experimental studies of droplet deformation in
+expanding flows.

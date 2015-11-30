@@ -1,0 +1,16 @@
+Motivated by applications of distributed linear estimation, distributed
+control and distributed optimization, we consider the question of designing
+linear iterative algorithms for computing the average of numbers in a network.
+Specifically, our interest is in designing such an algorithm with the fastest
+rate of convergence given the topological constraints of the network. As the
+main result of this paper, we design an algorithm with the fastest possible
+rate of convergence using a non-reversible Markov chain on the given network
+graph. We construct such a Markov chain by transforming the standard Markov
+chain, which is obtained using the Metropolis-Hastings method. We call this
+novel transformation pseudo-lifting. We apply our method to graphs with
+geometry, or graphs with doubling dimension. Specifically, the convergence time
+of our algorithm (equivalently, the mixing time of our Markov chain) is
+proportional to the diameter of the network graph and hence optimal. As a
+byproduct, our result provides the fastest mixing Markov chain given the
+network topological constraints, and should naturally find their applications
+in the context of distributed optimization, estimation and control.

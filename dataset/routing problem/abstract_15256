@@ -1,0 +1,24 @@
+This paper introduces a parallel and distributed extension to the alternating
+direction method of multipliers (ADMM) for solving convex problem: minimize
+$\sum_{i=1}^N f_i(x_i)$ subject to $\sum_{i=1}^N A_i x_i=c, x_i\in
+\mathcal{X}_i$. The algorithm decomposes the original problem into N smaller
+subproblems and solves them in parallel at each iteration. This Jacobian-type
+algorithm is well suited for distributed computing and is particularly
+attractive for solving certain large-scale problems.
+  This paper introduces a few novel results. Firstly, it shows that extending
+ADMM straightforwardly from the classic Gauss-Seidel setting to the Jacobian
+setting, from 2 blocks to N blocks, will preserve convergence if matrices $A_i$
+are mutually near-orthogonal and have full column-rank. Secondly, for general
+matrices $A_i$, this paper proposes to add proximal terms of different kinds to
+the N subproblems so that the subproblems can be solved in flexible and
+efficient ways and the algorithm converges globally at a rate of o(1/k).
+Thirdly, a simple technique is introduced to improve some existing convergence
+rates from O(1/k) to o(1/k).
+  In practice, some conditions in our convergence theorems are conservative.
+Therefore, we introduce a strategy for dynamically tuning the parameters in the
+algorithm, leading to substantial acceleration of the convergence in practice.
+Numerical results are presented to demonstrate the efficiency of the proposed
+method in comparison with several existing parallel algorithms.
+  We implemented our algorithm on Amazon EC2, an on-demand public computing
+cloud, and report its performance on very large-scale basis pursuit problems
+with distributed data.

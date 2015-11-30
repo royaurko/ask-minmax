@@ -1,0 +1,14 @@
+This paper introduces a novel message-passing (MP) framework for the
+collaborative filtering (CF) problem associated with recommender systems. We
+model the movie-rating prediction problem popularized by the Netflix Prize,
+using a probabilistic factor graph model and study the model by deriving
+generalization error bounds in terms of the training error. Based on the model,
+we develop a new MP algorithm, termed IMP, for learning the model. To show
+superiority of the IMP algorithm, we compare it with the closely related
+expectation-maximization (EM) based algorithm and a number of other matrix
+completion algorithms. Our simulation results on Netflix data show that, while
+the methods perform similarly with large amounts of data, the IMP algorithm is
+superior for small amounts of data. This improves the cold-start problem of the
+CF systems in practice. Another advantage of the IMP algorithm is that it can
+be analyzed using the technique of density evolution (DE) that was originally
+developed for MP decoding of error-correcting codes.

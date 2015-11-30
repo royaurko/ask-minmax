@@ -1,0 +1,15 @@
+Motivation: In the last few years a growing interest in biology has been
+shifting towards the problem of optimal information extraction from the huge
+amount of data generated via large scale and high-throughput techniques. One of
+the most relevant issues has recently become that of correctly and reliably
+predicting the functions of observed but still functionally undetermined
+proteins starting from information coming from the network of co-observed
+proteins of known functions.
+  Method: The method proposed in this article is based on a message passing
+algorithm known as Belief Propagation, which takes as input the network of
+proteins physical interactions and a catalog of known proteins functions, and
+returns the probabilities for each unclassified protein of having one chosen
+function. The implementation of the algorithm allows for fast on-line analysis,
+and can be easily generalized to more complex graph topologies taking into
+account hyper-graphs, {\em i.e.} complexes of more than two interacting
+proteins.

@@ -1,0 +1,24 @@
+This paper introduces a novel algorithm to approximate the matrix with
+minimum nuclear norm among all matrices obeying a set of convex constraints.
+This problem may be understood as the convex relaxation of a rank minimization
+problem, and arises in many important applications as in the task of recovering
+a large matrix from a small subset of its entries (the famous Netflix problem).
+Off-the-shelf algorithms such as interior point methods are not directly
+amenable to large problems of this kind with over a million unknown entries.
+  This paper develops a simple first-order and easy-to-implement algorithm that
+is extremely efficient at addressing problems in which the optimal solution has
+low rank. The algorithm is iterative and produces a sequence of matrices (X^k,
+Y^k) and at each step, mainly performs a soft-thresholding operation on the
+singular values of the matrix Y^k. There are two remarkable features making
+this attractive for low-rank matrix completion problems. The first is that the
+soft-thresholding operation is applied to a sparse matrix; the second is that
+the rank of the iterates X^k is empirically nondecreasing. Both these facts
+allow the algorithm to make use of very minimal storage space and keep the
+computational cost of each iteration low. We provide numerical examples in
+which 1,000 by 1,000 matrices are recovered in less than a minute on a modest
+desktop computer. We also demonstrate that our approach is amenable to very
+large scale problems by recovering matrices of rank about 10 with nearly a
+billion unknowns from just about 0.4% of their sampled entries. Our methods are
+connected with linearized Bregman iterations for l1 minimization, and we
+develop a framework in which one can understand these algorithms in terms of
+well-known Lagrange multiplier algorithms.

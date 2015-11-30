@@ -1,0 +1,17 @@
+We consider a bipartite stochastic block model on vertex sets $V_1$ and $V_2$
+of size $n_1$ and $n_2$ respectively, with planted partitions in each, and ask
+at what densities can spectral algorithms recover the partition of the smaller
+vertex set. The model was recently used by Feldman et al. to give a unified
+algorithm for random planted hypergraph partitioning and planted random k-SAT.
+  When $n_2 \gg n_1$, multiple thresholds emerge. We show that the singular
+vectors of the rectangular adjacency matrix exhibit a localization /
+delocalization phase transition at edge density $p = \tilde \Theta(n_1^{-2/3}
+n_2^{-1/3})$, giving recovery above the threshold and no recovery below.
+Nevertheless, we propose a simple spectral algorithm, Diagonal Deletion SVD,
+which recovers the partition at density $p = \tilde \Theta(n_1^{-1/2}
+n_2^{-1/2})$.
+  Finally, we locate a sharp threshold for detection of the partition, in the
+sense of the results of Mossel, Neeman, Sly and Massouli\'e for the stochastic
+block model. This gives the best known bounds for efficient recovery densities
+in planted k-SAT and hypergraph partitioning as well as showing a barrier to
+further improvement via the reduction to the bipartite block model.

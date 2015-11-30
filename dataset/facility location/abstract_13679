@@ -1,0 +1,12 @@
+Applications written in low-level languages without type or memory safety are
+especially prone to memory corruption. Attackers gain code execution
+capabilities through such applications despite all currently deployed defenses
+by exploiting memory corruption vulnerabilities. Control-Flow Integrity (CFI)
+is a promising defense mechanism that restricts open control-flow transfers to
+a static set of well-known locations. We present Lockdown, an approach to
+dynamic CFI that protects legacy, binary-only executables and libraries.
+Lockdown adaptively learns the control-flow graph of a running process using
+information from a trusted dynamic loader. The sandbox component of Lockdown
+restricts interactions between different shared objects to imported and
+exported functions by enforcing fine-grained CFI checks. Our prototype
+implementation shows that dynamic CFI results in low performance overhead.

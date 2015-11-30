@@ -1,0 +1,20 @@
+A novel approach to wall modeling for the incompressible Navier-Stokes
+equations including flows of moderate and large Reynolds numbers is presented.
+The basic idea is that a problem-tailored function space allows prediction of
+turbulent boundary layer gradients with very coarse meshes. The proposed
+function space consists of a standard polynomial function space plus an
+enrichment, which is constructed using Spalding's law-of-the-wall. The
+enrichment function is not enforced but "allowed" in a consistent way and the
+overall methodology is much more general and also enables other enrichment
+functions. The proposed method is closely related to detached-eddy simulation
+as near-wall turbulence is modeled statistically and large eddies are resolved
+in the bulk flow. Interpreted in terms of a three-scale separation within the
+variational multiscale method, the standard scale resolves large eddies and the
+enrichment scale represents boundary layer turbulence in an averaged sense. The
+potential of the scheme is shown applying it to turbulent channel flow of
+friction Reynolds numbers from $Re_{\tau}=590$ and up to $5,000$, flow over
+periodic constrictions at the Reynolds numbers $Re_H=10,595$ and $19,000$ as
+well as backward-facing step flow at $Re_h=5,000$, all with extremely coarse
+meshes. Excellent agreement with experimental and DNS data is observed with the
+first grid point located at up to $y_1^+=500$ and especially under adverse
+pressure gradients as well as in separated flows.

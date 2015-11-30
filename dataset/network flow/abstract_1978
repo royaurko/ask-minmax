@@ -1,0 +1,23 @@
+Modern computer threats are far more complicated than those seen in the past.
+They are constantly evolving, altering their appearance, perpetually changing
+disguise. Under such circumstances, detecting known threats, a fortiori
+zero-day attacks, requires new tools, which are able to capture the essence of
+their behavior, rather than some fixed signatures. In this work, we propose
+novel universal anomaly detection algorithms, which are able to learn the
+normal behavior of systems and alert for abnormalities, without any prior
+knowledge on the system model, nor any knowledge on the characteristics of the
+attack. The suggested method utilizes the Lempel-Ziv universal compression
+algorithm in order to optimally give probability assignments for normal
+behavior (during learning), then estimate the likelihood of new data (during
+operation) and classify it accordingly. The suggested technique is generic, and
+can be applied to different scenarios. Indeed, we apply it to key problems in
+computer security. The first is detecting Botnets Command and Control (C&C)
+channels. A Botnet is a logical network of compromised machines which are
+remotely controlled by an attacker using a C&C infrastructure, in order to
+perform malicious activities. We derive a detection algorithm based on timing
+data, which can be collected without deep inspection, from open as well as
+encrypted flows. We evaluate the algorithm on real-world network traces,
+showing how a universal, low complexity C&C identification system can be built,
+with high detection rates and low false-alarm probabilities. Further
+applications include malicious tools detection via system calls monitoring and
+data leakage identification.

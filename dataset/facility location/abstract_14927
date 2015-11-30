@@ -1,0 +1,21 @@
+We present the results of a study confronting density maps reconstructed by
+the Delaunay Tessellation Field Estimator (DTFE) and by regular SPH
+kernel-based techniques. The comparison between the two methods clearly
+demonstrates the superior performance of the DTFE with respect to conventional
+SPH methods, in particular at locations where SPH appears to fail. The DTFE is
+a fully self-adaptive technique for reconstructing continuous density fields
+from discrete particle distributions, and is based upon the corresponding
+Delaunay tessellation. Its principal asset is its complete independence of
+arbitrary smoothing functions and parameters specifying the properties of
+these. As a result it manages to faithfully reproduce the anisotropies of the
+local particle distribution and through its adaptive and local nature proves to
+be optimally suited for uncovering the full structural richness in the density
+distribution. Through the improvement in local density estimates, calculations
+invoking the DTFE will yield a much better representation of physical processes
+which depend on density. The presented results form an encouraging step towards
+the application and insertion of the DTFE in astrophysical hydrocodes. We
+describe an outline for the construction of a particle hydrodynamics code in
+which the DTFE replaces kernel-based methods. Further discussion addresses the
+issue and possibilities for a moving grid based hydrocode invoking the DTFE,
+and Delaunay tessellations, in an attempt to combine the virtues of the
+Eulerian and Lagrangian approaches.

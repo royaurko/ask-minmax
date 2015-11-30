@@ -1,0 +1,17 @@
+We study a two-stage mixed-integer linear program (MILP) with more than 1
+million binary variables in the second stage. We develop a two-level approach
+by constructing a semi-coarse model (coarsened with respect to variables) and a
+coarse model (coarsened with respect to both variables and constraints). We
+coarsen binary variables by selecting a small number of pre-specified daily
+on/off profiles. We aggregate constraints by partitioning them into groups and
+summing over each group. With an appropriate choice of coarsened profiles, the
+semi-coarse model is guaranteed to find a feasible solution of the original
+problem and hence provides an upper bound on the optimal solution. We show that
+solving a sequence of coarse models converges to the same upper bound with
+proven finite steps. This is achieved by adding violated constraints to coarse
+models until all constraints in the semi-coarse model are satisfied. We
+demonstrate the effectiveness of our approach in cogeneration for buildings.
+The coarsened models allow us to obtain good approximate solutions at a
+fraction of the time required by solving the original problem. Extensive
+numerical experiments show that the two-level approach scales to large problems
+that are beyond the capacity of state-of-the-art commercial MILP solvers.

@@ -1,0 +1,22 @@
+In this paper we further investigate the well-studied problem of finding a
+perfect matching in a regular bipartite graph. The first non-trivial algorithm,
+with running time $O(mn)$, dates back to K\"{o}nig's work in 1916 (here $m=nd$
+is the number of edges in the graph, $2n$ is the number of vertices, and $d$ is
+the degree of each node). The currently most efficient algorithm takes time
+$O(m)$, and is due to Cole, Ost, and Schirra. We improve this running time to
+$O(\min\{m, \frac{n^{2.5}\ln n}{d}\})$; this minimum can never be larger than
+$O(n^{1.75}\sqrt{\ln n})$. We obtain this improvement by proving a uniform
+sampling theorem: if we sample each edge in a $d$-regular bipartite graph
+independently with a probability $p = O(\frac{n\ln n}{d^2})$ then the resulting
+graph has a perfect matching with high probability. The proof involves a
+decomposition of the graph into pieces which are guaranteed to have many
+perfect matchings but do not have any small cuts. We then establish a
+correspondence between potential witnesses to non-existence of a matching
+(after sampling) in any piece and cuts of comparable size in that same piece.
+Karger's sampling theorem for preserving cuts in a graph can now be adapted to
+prove our uniform sampling theorem for preserving perfect matchings. Using the
+$O(m\sqrt{n})$ algorithm (due to Hopcroft and Karp) for finding maximum
+matchings in bipartite graphs on the sampled graph then yields the stated
+running time. We also provide an infinite family of instances to show that our
+uniform sampling result is tight up to poly-logarithmic factors (in fact, up to
+$\ln^2 n$).

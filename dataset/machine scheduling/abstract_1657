@@ -1,0 +1,15 @@
+Nature has evolved many molecular machines such as kinesin, myosin, and the
+rotary flagellar motor powered by an ion current from the mitochondria. Direct
+observation of the step-like motion of these machines with time series from
+novel experimental assays has recently become possible. These time series are
+corrupted by molecular and experimental noise that requires removal, but
+classical signal processing is of limited use for recovering such step-like
+dynamics. This paper reports simple, novel Bayesian filters that are robust to
+step-like dynamics in noise, and introduce an L1-regularized, global filter
+whose sparse solution can be rapidly obtained by standard convex optimization
+methods. We show these techniques outperforming classical filters on simulated
+time series in terms of their ability to accurately recover the underlying step
+dynamics. To show the techniques in action, we extract step-like speed
+transitions from Rhodobacter sphaeroides flagellar motor time series. Code
+implementing these algorithms available from
+http://www.eng.ox.ac.uk/samp/members/max/software/.

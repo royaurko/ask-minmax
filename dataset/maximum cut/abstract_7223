@@ -1,0 +1,18 @@
+Complex biological processes are usually experimented along time among a
+collection of individuals. Longitudinal data are then available and the
+statistical challenge is to better understand the underlying biological
+mechanisms. The standard statistical approach is mixed-effects model, with
+regression functions that are now highly-developed to describe precisely the
+biological processes (solutions of multi-dimensional ordinary differential
+equations or of partial differential equation). When there is no analytical
+solution, a classical estimation approach relies on the coupling of a
+stochastic version of the EM algorithm (SAEM) with a MCMC algorithm. This
+procedure needs many evaluations of the regression function which is clearly
+prohibitive when a time-consuming solver is used for computing it. In this work
+a meta-model relying on a Gaussian process emulator is proposed to replace this
+regression function. The new source of uncertainty due to this approximation
+can be incorporated in the model which leads to what is called a mixed
+meta-model. A control on the distance between the maximum likelihood estimates
+in this mixed meta-model and the maximum likelihood estimates obtained with the
+exact mixed model is guaranteed. Eventually, numerical simulations are
+performed to illustrate the efficiency of this approach.

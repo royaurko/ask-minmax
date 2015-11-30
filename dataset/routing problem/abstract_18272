@@ -1,0 +1,27 @@
+Code optimization and high level synthesis can be posed as constraint
+satisfaction and optimization problems, such as graph coloring used in register
+allocation. Graph coloring is also used to model more traditional CSPs relevant
+to AI, such as planning, time-tabling and scheduling. Provably optimal
+solutions may be desirable for commercial and defense applications.
+Additionally, for applications such as register allocation and code
+optimization, naturally-occurring instances of graph coloring are often small
+and can be solved optimally. A recent wave of improvements in algorithms for
+Boolean satisfiability (SAT) and 0-1 Integer Linear Programming (ILP) suggests
+generic problem-reduction methods, rather than problem-specific heuristics,
+because (1) heuristics may be upset by new constraints, (2) heuristics tend to
+ignore structure, and (3) many relevant problems are provably inapproximable.
+  Problem reductions often lead to highly symmetric SAT instances, and
+symmetries are known to slow down SAT solvers. In this work, we compare several
+avenues for symmetry breaking, in particular when certain kinds of symmetry are
+present in all generated instances. Our focus on reducing CSPs to SAT allows us
+to leverage recent dramatic improvement in SAT solvers and automatically
+benefit from future progress. We can use a variety of black-box SAT solvers
+without modifying their source code because our symmetry-breaking techniques
+are static, i.e., we detect symmetries and add symmetry breaking predicates
+(SBPs) during pre-processing.
+  An important result of our work is that among the types of
+instance-independent SBPs we studied and their combinations, the simplest and
+least complete constructions are the most effective. Our experiments also
+clearly indicate that instance-independent symmetries should mostly be
+processed together with instance-specific symmetries rather than at the
+specification level, contrary to what has been suggested in the literature.

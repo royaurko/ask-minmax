@@ -1,0 +1,13 @@
+The challenges of optimizing end-to-end performance over diverse Internet
+paths has driven widespread adoption of in-path optimizers, which can
+destructively interfere with TCP's end-to-end semantics and with each other,
+and are incompatible with end-to-end IPsec. We identify the architectural cause
+of these conflicts and resolve them in Tng, an experimental next-generation
+transport services architecture, by factoring congestion control from
+end-to-end semantic functions. Through a technique we call "queue sharing", Tng
+enables in-path devices to interpose on, split, and optimize congestion
+controlled flows without affecting or seeing the end-to-end content riding
+these flows. Simulations show that Tng's decoupling cleanly addresses several
+common performance problems, such as communication over lossy wireless links
+and reduction of buffering-induced latency on residential links. A working
+prototype and several incremental deployment paths suggest Tng's practicality.

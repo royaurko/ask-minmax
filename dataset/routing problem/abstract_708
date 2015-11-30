@@ -1,0 +1,18 @@
+Motivated by Kleinberg's (2000) and subsequent work, we consider the
+performance of greedy routing on a directed ring of $n$ nodes augmented with
+long-range contacts. In this model, each node $u$ is given an additional $D_u$
+edges, a degree chosen from a specified probability distribution. Each such
+edge from $u$ is linked to a random node at distance $r$ ahead in the ring with
+probability proportional to $1/r$, a "harmonic" distance distribution of
+contacts. Aspnes et al. (2002) have shown an $O(\log^2 n / \ell)$ bound on the
+expected length of greedy routes in the case when each node is assigned exactly
+$\ell$ contacts and, as a consequence of recent work by Dietzfelbinger and
+Woelfel (2009), this bound is known to be tight. In this paper, we generalize
+Aspnes' upper bound to show that any degree distribution with mean $\ell$ and
+maximum value $O(\log n)$ has greedy routes of expected length $O(\log^2n /
+\ell)$, implying that any harmonic ring in this family is asymptotically
+optimal. Furthermore, for a more general family of rings, we show that a fixed
+degree distribution is optimal. More precisely, if each random contact is
+chosen at distance $r$ with a probability that decreases with $r$, then among
+degree distributions with mean $\ell$, greedy routing time is smallest when
+every node is assigned $\floor{\ell}$ or $\ceiling{\ell}$ contacts.

@@ -1,0 +1,23 @@
+In this paper we study noisy sorting without re-sampling. In this problem
+there is an unknown order $a_{\pi(1)} < ... < a_{\pi(n)}$ where $\pi$ is a
+permutation on $n$ elements. The input is the status of $n \choose 2$ queries
+of the form $q(a_i,x_j)$, where $q(a_i,a_j) = +$ with probability at least
+$1/2+\ga$ if $\pi(i) > \pi(j)$ for all pairs $i \neq j$, where $\ga > 0$ is a
+constant and $q(a_i,a_j) = -q(a_j,a_i)$ for all $i$ and $j$. It is assumed that
+the errors are independent. Given the status of the queries the goal is to find
+the maximum likelihood order. In other words, the goal is find a permutation
+$\sigma$ that minimizes the number of pairs $\sigma(i) > \sigma(j)$ where
+$q(\sigma(i),\sigma(j)) = -$. The problem so defined is the feedback arc set
+problem on distributions of inputs, each of which is a tournament obtained as a
+noisy perturbations of a linear order. Note that when $\ga < 1/2$ and $n$ is
+large, it is impossible to recover the original order $\pi$.
+  It is known that the weighted feedback are set problem on tournaments is
+NP-hard in general. Here we present an algorithm of running time
+$n^{O(\gamma^{-4})}$ and sampling complexity $O_{\gamma}(n \log n)$ that with
+high probability solves the noisy sorting without re-sampling problem. We also
+show that if $a_{\sigma(1)},a_{\sigma(2)},...,a_{\sigma(n)}$ is an optimal
+solution of the problem then it is ``close'' to the original order. More
+formally, with high probability it holds that $\sum_i |\sigma(i) - \pi(i)| =
+\Theta(n)$ and $\max_i |\sigma(i) - \pi(i)| = \Theta(\log n)$.
+  Our results are of interest in applications to ranking, such as ranking in
+sports, or ranking of search items based on comparisons by experts.

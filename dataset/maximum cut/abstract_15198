@@ -1,0 +1,14 @@
+We study the impact of tunable parameters on computational intensity (i.e.,
+inverse code balance) and energy consumption of multicore-optimized wavefront
+diamond temporal blocking (MWD) applied to different stencil-based update
+schemes. MWD combines the concepts of diamond tiling and multicore-aware
+wavefront blocking in order to achieve lower cache size requirements than
+standard single-core wavefront temporal blocking. We analyze the impact of the
+cache block size on the theoretical and observed code balance, introduce loop
+tiling in the leading dimension to widen the range of applicable diamond sizes,
+and show performance results on a contemporary Intel CPU. The impact of code
+balance on power dissipation on the CPU and in the DRAM is investigated and
+shows that DRAM power is a decisive factor for energy consumption, which is
+strongly influenced by the code balance. Furthermore we show that highest
+performance does not necessarily lead to lowest energy even if the clock speed
+is fixed.

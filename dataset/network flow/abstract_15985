@@ -1,0 +1,18 @@
+Merging-based sorting networks are an important family of sorting networks.
+Most merge sorting networks are based on 2-way or multi-way merging algorithms
+using 2-sorters as basic building blocks. An alternative is to use n-sorters,
+instead of 2-sorters, as the basic building blocks so as to greatly reduce the
+number of sorters as well as the latency. Based on a modified Leighton's
+columnsort algorithm, an n-way merging algorithm, referred to as SS-Mk, that
+uses n-sorters as basic building blocks was proposed. In this work, we first
+propose a new multiway merging algorithm with n-sorters as basic building
+blocks that merges n sorted lists of m values each in 1 + ceil(m/2) stages (n
+<= m). Based on our merging algorithm, we also propose a sorting algorithm,
+which requires O(N log2 N) basic sorters to sort N inputs. While the asymptotic
+complexity (in terms of the required number of sorters) of our sorting
+algorithm is the same as the SS-Mk, for wide ranges of N, our algorithm
+requires fewer sorters than the SS-Mk. Finally, we consider a binary sorting
+network, where the basic sorter is implemented in threshold logic and scales
+linearly with the number of inputs, and compare the complexity in terms of the
+required number of gates. For wide ranges of N, our algorithm requires fewer
+gates than the SS-Mk.

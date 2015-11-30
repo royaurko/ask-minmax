@@ -1,0 +1,13 @@
+Cminor is a mid-level imperative programming language; there are
+proved-correct optimizing compilers from C to Cminor and from Cminor to machine
+language. We have redesigned Cminor so that it is suitable for Hoare Logic
+reasoning and we have designed a Separation Logic for Cminor. In this paper, we
+give a small-step semantics (instead of the big-step of the proved-correct
+compiler) that is motivated by the need to support future concurrent
+extensions. We detail a machine-checked proof of soundness of our Separation
+Logic. This is the first large-scale machine-checked proof of a Separation
+Logic w.r.t. a small-step semantics. The work presented in this paper has been
+carried out in the Coq proof assistant. It is a first step towards an
+environment in which concurrent Cminor programs can be verified using
+Separation Logic and also compiled by a proved-correct compiler with formal
+end-to-end correctness guarantees.

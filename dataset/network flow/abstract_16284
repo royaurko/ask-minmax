@@ -1,0 +1,18 @@
+Sequence assembly from short reads is an important problem in biology. It is
+known that solving the sequence assembly problem exactly on a bi-directed de
+Bruijn graph or a string graph is intractable. However finding a Shortest
+Double stranded DNA string (SDDNA) containing all the k-long words in the reads
+seems to be a good heuristic to get close to the original genome. This problem
+is equivalent to finding a cyclic Chinese Postman (CP) walk on the underlying
+un-weighted bi-directed de Bruijn graph built from the reads. The Chinese
+Postman walk Problem (CPP) is solved by reducing it to a general bi-directed
+flow on this graph which runs in O(|E|2 log2(|V |)) time. In this paper we show
+that the cyclic CPP on bi-directed graphs can be solved without reducing it to
+bi-directed flow. We present a ?(p(|V | + |E|) log(|V |) + (dmaxp)3) time
+algorithm to solve the cyclic CPP on a weighted bi-directed de Bruijn graph,
+where p = max{|{v|din(v) - dout(v) > 0}|, |{v|din(v) - dout(v) < 0}|} and dmax
+= max{|din(v) - dout(v)}. Our algorithm performs asymptotically better than the
+bidirected flow algorithm when the number of imbalanced nodes p is much less
+than the nodes in the bi-directed graph. From our experimental results on
+various datasets, we have noticed that the value of p/|V | lies between 0.08%
+and 0.13% with 95% probability.

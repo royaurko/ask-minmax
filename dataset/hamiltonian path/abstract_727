@@ -1,0 +1,13 @@
+The ability to efficiently find relevant subgraphs and paths in a large graph
+to a given query is important in many applications including scientific data
+analysis, social networks, and business intelligence. Currently, there is
+little support and no efficient approaches for expressing and executing such
+queries. This paper proposes a data model and a query language to address this
+problem. The contributions include supporting the construction and selection
+of: (i) folder nodes, representing a set of related entities, and (ii) path
+nodes, representing a set of paths in which a path is the transitive
+relationship of two or more entities in the graph. Folders and paths can be
+stored and used for future queries. We introduce FPSPARQL which is an extension
+of the SPARQL supporting folder and path nodes. We have implemented a query
+engine that supports FPSPARQL and the evaluation results shows its viability
+and efficiency for querying large graph datasets.

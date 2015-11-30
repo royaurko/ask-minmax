@@ -1,0 +1,19 @@
+We use p-values as a discrepancy criterion for identifying the threshold
+value at which a regression function takes off from its baseline value -- a
+problem that is motivated by applications in omics experiments, systems
+engineering, pharmacological dose-response studies and astronomy. In this
+paper, we study the problem in a controlled sampling setting, where multiple
+responses, discrete or continuous, can be obtained at a number of different
+covariate-levels. Our procedure involves testing the hypothesis that the
+regression function is at its baseline at each covariate value using the
+sampled responses at that value and then computing the p-value of the test. An
+estimate of the threshold is provided by fitting a stump, i.e., a piecewise
+constant function with a single jump discontinuity, to the observed p-values,
+since the corresponding p-values behave in markedly different ways on different
+sides of the threshold. The estimate is shown to be consistent, as both the
+number of covariate values and the number of responses sampled at each value
+become large, and its finite sample properties are studied through an extensive
+simulation study. Our approach is computationally simple and can also be used
+to estimate the baseline value of the regression function. The procedure is
+illustrated on two motivating real data applications. Extensions to multiple
+thresholds are also briefly investigated.

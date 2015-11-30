@@ -1,0 +1,19 @@
+Fast multipole methods have O(N) complexity, are compute bound, and require
+very little synchronization, which makes them a favorable algorithm on
+next-generation supercomputers. Their most common application is to accelerate
+N-body problems, but they can also be used to solve boundary integral
+equations. When the particle distribution is irregular and the tree structure
+is adaptive, load-balancing becomes a non-trivial question. A common strategy
+for load-balancing FMMs is to use the work load from the previous step as
+weights to statically repartition the next step. The contributors discuss in the
+paper another approach based on data-driven execution to efficiently tackle
+this challenging load-balancing problem. The core idea consists of breaking the
+most time-consuming stages of the FMMs into smaller tasks. The algorithm can
+then be represented as a Directed Acyclic Graph (DAG) where nodes represent
+tasks, and edges represent dependencies among them. The execution of the
+algorithm is performed by asynchronously scheduling the tasks using the QUARK
+runtime environment, in a way such that data dependencies are not violated for
+numerical correctness purposes. This asynchronous scheduling results in an
+out-of-order execution. The performance results of the data-driven FMM
+execution outperform the previous strategy and show linear speedup on a
+quad-socket quad-core Intel Xeon system.

@@ -1,0 +1,12 @@
+The BioAmbients calculus is a process algebra suitable for representing
+compartmentalization, molecular localization and movements between
+compartments. In this paper we enrich this calculus with a static type system
+classifying each ambient with group types specifying the kind of compartments
+in which the ambient can stay. The type system ensures that, in a well-typed
+process, ambients cannot be nested in a way that violates the type hierarchy.
+Exploiting the information given by the group types, we also extend the
+operational semantics of BioAmbients with rules signalling errors that may
+derive from undesired ambients' moves (i.e. merging incompatible tissues).
+Thus, the signal of errors can help the modeller to detect and locate unwanted
+situations that may arise in a biological system, and give practical hints on
+how to avoid the undesired behaviour.

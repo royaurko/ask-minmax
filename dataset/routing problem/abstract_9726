@@ -1,0 +1,17 @@
+The problem of gathering multiple mobile robots to a single location, is one
+of the fundamental problems in distributed coordination between autonomous
+robots. The problem has been studied and solved even for robots that are
+anonymous, disoriented, memoryless and operate in the semi-synchronous (ATOM)
+model. However all known solutions require the robots to be faulty-free except
+for the results of [Agmon and Peleg 2006] who solve the gathering problem in
+presence of one crash fault. This leaves open the question of whether gathering
+of correct robots can be achieved in the presence of multiple crash failures.
+We resolve the question in this paper and show how to solve gathering, when any
+number of robots may crash at any time during the algorithm, assuming strong
+multiplicity detection and chirality. In contrast it is known that for the more
+stronger byzantine faults, it is impossible to gather even in a 3-robot system
+if one robot is faulty. Our algorithm solves the gathering of correct robots in
+the semi-synchronous model where an adversary may stop any robot before
+reaching its desired destination. Further the algorithm is self-stabilizing as
+it achieves gathering starting from any configuration (except the bivalent
+configuration where deterministic gathering is impossible).

@@ -1,0 +1,15 @@
+Multicast transmission has several distinctive traits as opposed to more
+commonly studied unicast networks. Specially, these include (i) identical
+packets must be delivered successfully to several nodes, (ii) outage could
+simultaneously happen at different receivers, and (iii) the multicast rate is
+dominated by the receiver with the weakest link in order to minimize outage and
+retransmission. To capture these key traits, we utilize a Poisson cluster
+process consisting of a distinct Poisson point process (PPP) for the
+transmitters and receivers, and then define the multicast transmission capacity
+(MTC) as the maximum achievable multicast rate times the number of multicast
+clusters per unit volume, accounting for outages and retransmissions. Our main
+result shows that if $\tau$ transmission attempts are allowed in a multicast
+cluster, the MTC is $\Theta\left(\rho k^{x}\log(k)\right)$ where $\rho$ and $x$
+are functions of $\tau$ depending on the network size and density, and $k$ is
+the average number of the intended receivers in a cluster. We also show that an
+appropriate number of retransmissions can significantly enhance the MTC.

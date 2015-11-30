@@ -1,0 +1,15 @@
+Random basketball routing (BR) \cite {Hwang} is a simple protocol that
+integrates MAC and multihop routing in a cross-layer optimized manner. Due to
+its lightness and performance, BR would be quite suitable for sensor networks,
+where communication nodes are usually simple devices. In this paper, we
+describe how we implemented BR in a ZigBee-based (IEEE 802.15.4) sensor
+network. In \cite{Hwang}, it is verified that BR takes advantages of dynamic
+environments (in particular, node mobility), however, here we focus on how BR
+works under static situations. For implementation purposes, we add some
+features such as destination RSSI measuring and loop-free procedure, to the
+original BR. With implemented testbed, we compare the performance of BR with
+that of the simplified AODV with CSMA/CA. The result is that BR has merits in
+terms of number of hops to traverse the network. Considering the simple
+structure of BR and its possible energy-efficiency, we can conclude that BR can
+be a good candidate for sensor networks both under dynamic- and static
+environments.

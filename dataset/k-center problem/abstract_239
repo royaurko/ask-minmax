@@ -1,0 +1,11 @@
+Tabling has been used for some time to improve efficiency of Prolog programs
+by memorizing answered queries. The same idea can be naturally used to memorize
+visited states during search for planning. In this paper we present a planner
+developed in the Picat language to solve the Petrobras planning problem. Picat
+is a novel Prolog-like language that provides pattern matching, deterministic
+and non-deterministic rules, and tabling as its core modelling and solving
+features. We demonstrate these capabilities using the Petrobras problem, where
+the goal is to plan transport of cargo items from ports to platforms using
+vessels with limited capacity. Monte Carlo Tree Search has been so far the best
+technique to tackle this problem and we will show that by using tabling we can
+achieve much better runtime efficiency and better plan quality.

@@ -1,0 +1,22 @@
+In this paper, sensor selection problems for target tracking in large sensor
+networks with linear equality or inequality constraints are considered. First,
+we derive an equivalent Kalman filter for sensor selection, i.e., generalized
+information filter. Then, under a regularity condition, we prove that the
+multistage look-ahead policy that minimizes either the final or the average
+estimation error covariances of next multiple time steps is equivalent to a
+myopic sensor selection policy that maximizes the trace of the generalized
+information gain at each time step. Moreover, when the measurement noises are
+uncorrelated between sensors, the optimal solution can be obtained analytically
+for sensor selection when constraints are temporally separable. When
+constraints are temporally inseparable, sensor selections can be obtained by
+approximately solving a linear programming problem so that the sensor selection
+problem for a large sensor network can be dealt with quickly. Although there is
+no guarantee that the gap between the performance of the chosen subset and the
+performance bound is always small, numerical examples suggest that the
+algorithm is near-optimal in many cases. Finally, when the measurement noises
+are correlated between sensors, the sensor selection problem with temporally
+inseparable constraints can be relaxed to a Boolean quadratic programming
+problem which can be efficiently solved by a Gaussian randomization procedure
+along with solving a semi-definite programming problem. Numerical examples show
+that the proposed method is much better than the method that ignores dependence
+of noises.

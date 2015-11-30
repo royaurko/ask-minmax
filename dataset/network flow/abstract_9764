@@ -1,0 +1,23 @@
+In order to investigate the routing aspects of small-world networks,
+Kleinberg proposes a network model based on a $d$-dimensional lattice with
+long-range links chosen at random according to the $d$-harmonic distribution.
+Kleinberg shows that the greedy routing algorithm by using only local
+information performs in $O(\log^2 n)$ expected number of hops, where $n$
+denotes the number of nodes in the network. Martel and Nguyen have found that
+the expected diameter of Kleinberg's small-world networks is $\Theta(\log n)$.
+Thus a question arises naturally: Can we improve the routing algorithms to
+match the diameter of the networks while keeping the amount of information
+stored on each node as small as possible? We extend Kleinberg's model and add
+three augmented local links for each node: two of which are connected to nodes
+chosen randomly and uniformly within $\log^2 n$ Mahattan distance, and the
+third one is connected to a node chosen randomly and uniformly within $\log n$
+Mahattan distance. We show that if each node is aware of $O(\log n)$ number of
+neighbors via the augmented local links, there exist both non-oblivious and
+oblivious algorithms that can route messages between any pair of nodes in
+$O(\log n \log \log n)$ expected number of hops, which is a near optimal
+routing complexity and outperforms the other related results for routing in
+Kleinberg's small-world networks. Our schemes keep only $O(\log^2 n)$ bits of
+routing information on each node, thus they are scalable with the network size.
+Besides adding new light to the studies of social networks, our results may
+also find applications in the design of large-scale distributed networks, such
+as peer-to-peer systems, in the same spirit of Symphony.

@@ -1,0 +1,23 @@
+Rapid urbanization places increasing stress on already burdened
+transportation systems, resulting in delays and poor levels of service.
+Billions of spatiotemporal call detail records (CDRs) collected from mobile
+devices create new opportunities to quantify and solve these problems. However,
+there is a need for tools to map new data onto existing transportation
+infrastructure. In this work, we propose a system that leverages this data to
+identify patterns in road usage. First, we develop an algorithm to mine
+billions of calls and learn location transition probabilities of callers. These
+transition probabilities are then upscaled with demographic data to estimate
+origin-destination (OD) flows of residents between any two intersections of a
+city. Next, we implement a distributed incremental traffic assignment algorithm
+to route these flows on road networks and estimate congestion and level of
+service for each roadway. From this assignment, we construct a bipartite usage
+network by connecting census tracts to the roads used by their inhabitants.
+Comparing the topologies of the physical road network and bipartite usage
+network allows us to classify each road's role in a city's transportation
+network and detect causes of local bottlenecks. Finally, we demonstrate an
+interactive, web-based visualization platform that allows researchers,
+policymakers, and drivers to explore road congestion and usage in a new
+dimension. To demonstrate the flexibility of this system, we perform these
+analyses in multiple cities across the globe with diverse geographical and
+sociodemographic qualities. This platform provides a foundation to build
+congestion mitigation solutions and generate new insights into urban mobility.

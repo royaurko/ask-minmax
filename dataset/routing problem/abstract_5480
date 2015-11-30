@@ -1,0 +1,17 @@
+Finding whether a linear-constraint loop has a linear ranking function is an
+important key to understanding the loop behavior, proving its termination and
+establishing iteration bounds. If no preconditions are provided, the decision
+problem is known to be in coNP when variables range over the integers and in
+PTIME for the rational numbers, or real numbers. Here we show that deciding
+whether a linear-constraint loop with a precondition, specifically with
+partially-specified input, has a linear ranking function is EXPSPACE-hard over
+the integers, and PSPACE-hard over the rationals. The precise complexity of
+these decision problems is yet unknown. The EXPSPACE lower bound is derived
+from the reachability problem for Petri nets (equivalently, Vector Addition
+Systems), and possibly indicates an even stronger lower bound (subject to open
+problems in VAS theory). The lower bound for the rationals follows from a novel
+simulation of Boolean programs. Lower bounds are also given for the problem of
+deciding if a linear ranking-function supported by a particular form of
+inductive invariant exists. For loops over integers, the problem is PSPACE-hard
+for convex polyhedral invariants and EXPSPACE-hard for downward-closed sets of
+natural numbers as invariants.

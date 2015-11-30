@@ -1,0 +1,14 @@
+We extend the Balancing Domain Decomposition by Constraints (BDDC) method to
+flows in porous media discretised by mixed-hybrid finite elements with combined
+mesh dimensions. Such discretisations appear when major geological fractures
+are modelled by 1D or 2D elements inside three-dimensional domains. In this
+set-up, the global problem as well as the substructure problems have a
+symmetric saddle-point structure, containing a `penalty' block due to the
+combination of meshes. We show that the problem can be reduced by means of
+iterative substructuring to an interface problem, which is symmetric and
+positive definite. The interface problem can thus be solved by conjugate
+gradients with the BDDC method as a preconditioner. A parallel implementation
+of this algorithm is incorporated into an existing software package for
+subsurface flow simulations. We study the performance of the iterative solver
+on several academic and real-world problems. Numerical experiments illustrate
+its efficiency and scalability.

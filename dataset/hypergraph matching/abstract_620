@@ -1,0 +1,23 @@
+In this paper, we propose a theoretical framework to construct matching
+algorithms for any biometric authentication systems. Conventional matching
+algorithms are not necessarily secure against strong intentional impersonation
+attacks such as wolf attacks. The wolf attack is an attempt to impersonate a
+genuine user by presenting a "wolf" to a biometric authentication system
+without the knowledge of a genuine user's biometric sample. A wolf is a sample
+which can be accepted as a match with multiple templates. The wolf attack
+probability (WAP) is the maximum success probability of the wolf attack, which
+was proposed by Une, Otsuka, Imai as a measure for evaluating security of
+biometric authentication systems. We present a principle for construction of
+secure matching algorithms against the wolf attack for any biometric
+authentication systems. The ideal matching algorithm determines a threshold for
+each input value depending on the entropy of the probability distribution of
+the (Hamming) distances. Then we show that if the information about the
+probability distribution for each input value is perfectly given, then our
+matching algorithm is secure against the wolf attack. Our generalized matching
+algorithm gives a theoretical framework to construct secure matching
+algorithms. How lower WAP is achievable depends on how accurately the entropy
+is estimated. Then there is a trade-off between the efficiency and the
+achievable WAP. Almost every conventional matching algorithm employs a fixed
+threshold and hence it can be regarded as an efficient but insecure instance of
+our theoretical framework. Daugman's IrisCode recognition algorithm proposed
+can also be regarded as a non-optimal instance of our framework.

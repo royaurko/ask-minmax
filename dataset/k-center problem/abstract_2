@@ -1,0 +1,23 @@
+Modern text retrieval systems often provide a similarity search utility, that
+allows the user to find efficiently a fixed number k of documents in the data
+set that are most similar to a given query (here a query is either a simple
+sequence of keywords or the identifier of a full document found in previous
+searches that is considered of interest). We consider the case of a textual
+database made of semi-structured documents. Each field, in turns, is modelled
+with a specific vector space. The problem is more complex when we also allow
+each such vector space to have an associated user-defined dynamic weight that
+influences its contribution to the overall dynamic aggregated and weighted
+similarity. This dynamic problem has been tackled in a recent paper by
+Singitham et al. in in VLDB 2004. Their proposed solution, which we take as
+baseline, is a variant of the cluster-pruning technique that has the potential
+for scaling to very large corpora of documents, and is far more efficient than
+the naive exhaustive search. We devise an alternative way of embedding weights
+in the data structure, coupled with a non-trivial application of a clustering
+algorithm based on the furthest point first heuristic for the metric k-center
+problem. The validity of our approach is demonstrated experimentally by showing
+significant performance improvements over the scheme proposed in Singitham et
+al. in VLDB 2004. We improve significantly tradeoffs between query time and
+output quality with respect to the baseline method in Singitham et al. in in
+VLDB 2004, and also with respect to a novel method by Chierichetti et al. to
+appear in ACM PODS 2007. We also speed up the pre-processing time by a factor
+at least thirty.

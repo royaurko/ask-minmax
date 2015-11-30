@@ -1,0 +1,17 @@
+Preference elicitation is a central problem in AI, and has received
+significant attention in single-agent settings. It is also a key problem in
+multiagent systems, but has received little attention here so far. In this
+setting, the agents may have different preferences that often must be
+aggregated using voting. This leads to interesting issues because what, if any,
+information should be elicited from an agent depends on what other agents have
+revealed about their preferences so far.
+  In this paper we study effective elicitation, and its impediments, for the
+most common voting protocols. It turns out that in the Single Transferable Vote
+protocol, even knowing when to terminate elicitation is mathcal NP-complete,
+while this is easy for all the other protocols under study. Even for these
+protocols, determining how to elicit effectively is NP-complete, even with
+perfect suspicions about how the agents will vote. The exception is the
+Plurality protocol where such effective elicitation is easy.
+  We also show that elicitation introduces additional opportunities for
+strategic manipulation by the voters. We demonstrate how to curtail the space
+of elicitation schemes so that no such additional strategic issues arise.

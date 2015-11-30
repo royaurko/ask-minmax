@@ -1,0 +1,11 @@
+We demonstrate the implementation of a hybrid OpenMP and MPI parallelization
+of a conservative spectral method for the Boltzmann equation originally
+developed by Gamba and Tharkabhushaman. We perform a scaling analysis to
+demonstrate that the problem is well suited to parallelization, and find that
+the computational time scales linearly with the number of compute nodes on high
+performance computing resources. The original method has also been improved to
+higher order in space and time and is implemented on non-uniform grids in
+physical space. We test this scheme for an example problem in which a kinetic
+boundary layer generates a shock wave for large space and long times. This is
+the first time that the fully nonlinear Boltzmann collision operator has been
+used to compute this problem.

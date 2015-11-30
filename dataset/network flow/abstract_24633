@@ -1,0 +1,13 @@
+Parallel and distributed simulation have been extensively researched for a
+long time. Nevertheless, many simulation models are still executed
+sequentially. We attribute this to the fact that many of those models are
+simply not capable of being executed in parallel since they violate particular
+constraints. In this paper, we analyze the INET model suite, which enables
+network simulation in OMNeT++, with regard to parallelizability. We uncovered
+several issues preventing parallel execution of INET models. We analyzed those
+issues and developed solutions allowing INET models to be run in parallel. A
+case study shows the feasibility of our approach. Though there are parts of the
+model suite that we didn't investigate yet and the performance can still be
+improved, the results show parallelization speedup for most configurations. The
+source code of our implementation is available through our web site at
+code.comsys.rwth-aachen.de.

@@ -1,0 +1,22 @@
+We consider online algorithms for pull-based broadcast scheduling. In this
+setting there are n pages of information at a server and requests for pages
+arrive online. When the server serves (broadcasts) a page p, all outstanding
+requests for that page are satisfied. We study two related metrics, namely
+maximum response time (waiting time) and maximum delay-factor and their
+weighted versions. We obtain the following results in the worst-case online
+competitive model.
+  - We show that FIFO (first-in first-out) is 2-competitive even when the page
+sizes are different. Previously this was known only for unit-sized pages [10]
+via a delicate argument. Our proof differs from [10] and is perhaps more
+intuitive.
+  - We give an online algorithm for maximum delay-factor that is
+O(1/eps^2)-competitive with (1+\eps)-speed for unit-sized pages and with
+(2+\eps)-speed for different sized pages. This improves on the algorithm in
+[12] which required (2+\eps)-speed and (4+\eps)-speed respectively. In addition
+we show that the algorithm and analysis can be extended to obtain the same
+results for maximum weighted response time and delay factor.
+  - We show that a natural greedy algorithm modeled after LWF
+(Longest-Wait-First) is not O(1)-competitive for maximum delay factor with any
+constant speed even in the setting of standard scheduling with unit-sized jobs.
+This complements our upper bound and demonstrates the importance of the
+tradeoff made in our algorithm.

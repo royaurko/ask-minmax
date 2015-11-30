@@ -1,0 +1,22 @@
+Cuckoo hashing is a highly practical dynamic dictionary: it provides
+amortized constant insertion time, worst case constant deletion time and lookup
+time, and good memory utilization. However, with a noticeable probability
+during the insertion of n elements some insertion requires \Omega(log n) time.
+Whereas such an amortized guarantee may be suitable for some applications, in
+other applications (such as high-performance routing) this is highly
+undesirable.
+  Recently, Kirsch and Mitzenmacher (Allerton '07) proposed a de-amortization
+of cuckoo hashing using various queueing techniques that preserve its
+attractive properties. Kirsch and Mitzenmacher demonstrated a significant
+improvement to the worst case performance of cuckoo hashing via experimental
+results, but they left open the problem of constructing a scheme with provable
+properties.
+  In this work we follow Kirsch and Mitzenmacher and present a de-amortization
+of cuckoo hashing that provably guarantees constant worst case operations.
+Specifically, for any sequence of polynomially many operations, with
+overwhelming probability over the randomness of the initialization phase, each
+operation is performed in constant time. Our theoretical analysis and
+experimental results indicate that the scheme is highly efficient, and provides
+a practical alternative to the only other known dynamic dictionary with such
+worst case guarantees, due to Dietzfelbinger and Meyer auf der Heide (ICALP
+'90).

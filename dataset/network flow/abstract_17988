@@ -1,0 +1,18 @@
+We consider a large-scale cyber network with N components (e.g., paths,
+servers, subnets). Each component is either in a healthy state (0) or an
+abnormal state (1). Due to random intrusions, the state of each component
+transits from 0 to 1 over time according to certain stochastic process. At each
+time, a subset of K (K < N) components are checked and those observed in
+abnormal states are fixed. The objective is to design the optimal scheduling
+for intrusion detection such that the long-term network cost incurred by all
+abnormal components is minimized. We formulate the problem as a special class
+of Restless Multi-Armed Bandit (RMAB) process. A general RMAB suffers from the
+curse of dimensionality (PSPACE-hard) and numerical methods are often
+inapplicable. We show that, for this class of RMAB, Whittle index exists and
+can be obtained in closed form, leading to a low-complexity implementation of
+Whittle index policy with a strong performance. For homogeneous components,
+Whittle index policy is shown to have a simple structure that does not require
+any prior knowledge on the intrusion processes. Based on this structure,
+Whittle index policy is further shown to be optimal over a finite time horizon
+with an arbitrary length. Beyond intrusion detection, these results also find
+applications in queuing networks with finite-size buffers.

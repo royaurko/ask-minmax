@@ -1,0 +1,13 @@
+In a balancing network each processor has an initial collection of unit-size
+jobs (tokens) and in each round, pairs of processors connected by balancers
+split their load as evenly as possible. An excess token (if any) is placed
+according to some predefined rule. As it turns out, this rule crucially affects
+the performance of the network. In this work we propose a model that studies
+this effect. We suggest a model bridging the uniformly-random assignment rule,
+and the arbitrary one (in the spirit of smoothed-analysis). We start with an
+arbitrary assignment of balancer directions and then flip each assignment with
+probability $\alpha$ independently. For a large class of balancing networks our
+result implies that after $\Oh(\log n)$ rounds the discrepancy is $\Oh(
+(1/2-\alpha) \log n + \log \log n)$ with high probability. This matches and
+generalizes known upper bounds for $\alpha=0$ and $\alpha=1/2$. We also show
+that a natural network matches the upper bound for any $\alpha$.

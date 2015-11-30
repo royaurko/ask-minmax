@@ -1,0 +1,21 @@
+In probability density function (PDF) methods a transport equation is solved
+numerically to compute the time and space dependent probability distribution of
+several flow variables in a turbulent flow. The joint PDF of the velocity
+components contains information on all one-point one-time statistics of the
+turbulent velocity field, including the mean, the Reynolds stresses and
+higher-order statistics. We developed a series of numerical algorithms to model
+the joint PDF of turbulent velocity, frequency and scalar compositions for
+high-Reynolds-number incompressible flows in complex geometries using
+unstructured grids. Advection, viscous diffusion and chemical reaction appear
+in closed form in the PDF formulation, thus require no closure hypotheses. The
+generalized Langevin model (GLM) is combined with an elliptic relaxation
+technique to represent the non-local effect of walls on the pressure
+redistribution and anisotropic dissipation of turbulent kinetic energy. The
+governing system of equations is solved fully in the Lagrangian framework
+employing a large number of particles representing a finite sample of all fluid
+particles. Eulerian statistics are extracted at gridpoints of the unstructured
+mesh. Compared to other particle-in-cell approaches for the PDF equations, this
+methodology is non-hybrid, thus the computed fields remain fully consistent
+without requiring any specific treatment. Two testcases demonstrate the
+applicability of the algorithm: a fully developed turbulent channel flow and
+the classical cavity flow both with scalars released from concentrated sources.

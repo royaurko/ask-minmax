@@ -1,0 +1,16 @@
+The paper addresses the problem of distributed filtering with guaranteed
+convergence properties using minimum-energy filtering and $H_\infty$ filtering
+methodologies. A linear state space plant model is considered observed by a
+network of communicating sensors, in which individual sensor measurements may
+lead to an unobservable filtering problem. However, each filter locally shares
+estimates, that are subject to disturbances, with its respective neighboring
+filters to produce an estimate of the plant state. The minimum-energy strategy
+of the proposed local filter leads to a locally optimal time-varying filter
+gain facilitating the transient and the asymptotic convergence of the
+estimation error, with guaranteed $H_\infty$ performance. The filters are
+implementable using only the local measurements and information from the
+neighboring filters subject to disturbances. A key idea of the proposed
+algorithm is to locally approximate the neighboring estimates, that are not
+directly accessible, considering them as disturbance contaminated versions of
+the plant state. The proposed algorithm imposes minimal communication load on
+the network and is scalable to larger sensor networks.

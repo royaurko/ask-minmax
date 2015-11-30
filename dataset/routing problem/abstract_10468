@@ -1,0 +1,21 @@
+The k-forest problem is a common generalization of both the k-MST and the
+dense-$k$-subgraph problems. Formally, given a metric space on $n$ vertices
+$V$, with $m$ demand pairs $\subseteq V \times V$ and a ``target'' $k\le m$,
+the goal is to find a minimum cost subgraph that connects at least $k$ demand
+pairs. In this paper, we give an $O(\min\{\sqrt{n},\sqrt{k}\})$-approximation
+algorithm for $k$-forest, improving on the previous best ratio of
+$O(n^{2/3}\log n)$ by Segev & Segev.
+  We then apply our algorithm for k-forest to obtain approximation algorithms
+for several Dial-a-Ride problems. The basic Dial-a-Ride problem is the
+following: given an $n$ point metric space with $m$ objects each with its own
+source and destination, and a vehicle capable of carrying at most $k$ objects
+at any time, find the minimum length tour that uses this vehicle to move each
+object from its source to destination. We prove that an $\alpha$-approximation
+algorithm for the $k$-forest problem implies an
+$O(\alpha\cdot\log^2n)$-approximation algorithm for Dial-a-Ride. Using our
+results for $k$-forest, we get an $O(\min\{\sqrt{n},\sqrt{k}\}\cdot\log^2 n)$-
+approximation algorithm for Dial-a-Ride. The only previous result known for
+Dial-a-Ride was an $O(\sqrt{k}\log n)$-approximation by Charikar &
+Raghavachari; our results give a different proof of a similar approximation
+guarantee--in fact, when the vehicle capacity $k$ is large, we give a slight
+improvement on their results.

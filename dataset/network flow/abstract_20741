@@ -1,0 +1,13 @@
+Random walks can be used to search a complex networks for a desired resource.
+To reduce the number of hops necessary to find the resource, we propose a
+search mechanism based on building random walks connecting together partial
+walks that have been precomputed at each network node in an initial stage. The
+resources found in each partial walk are registered in its associated Bloom
+filter. Searches can then jump over partial nodes in which the resource is not
+located, significantly reducing search length. However, additional unnecessary
+hops come from false positives at the Bloom filters. The analytic model
+provided predicts the expected search length of this mechanism, the optimal
+size of the partial walks and the corresponding optimal (shortest) expected
+search length. Simulation experiments are used to validate these predictions
+and to assess the impact of the number of partial walks precomputed in each
+node.

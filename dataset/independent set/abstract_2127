@@ -1,0 +1,20 @@
+This paper introduces a novel methodology that combines the multi-resolution
+feature of the Gabor wavelet transformation (GWT) with the local interactions
+of the facial structures expressed through the Pseudo Hidden Markov model
+(PHMM). Unlike the traditional zigzag scanning method for feature extraction a
+continuous scanning method from top-left corner to right then top-down and
+right to left and so on until right-bottom of the image i.e. a spiral scanning
+technique has been proposed for better feature selection. Unlike traditional
+HMMs, the proposed PHMM does not perform the state conditional independence of
+the visible observation sequence assumption. This is achieved via the concept
+of local structures introduced by the PHMM used to extract facial bands and
+automatically select the most informative features of a face image. Thus, the
+long-range dependency problem inherent to traditional HMMs has been drastically
+reduced. Again with the use of most informative pixels rather than the whole
+image makes the proposed method reasonably faster for face recognition. This
+method has been successfully tested on frontal face images from the ORL, FRAV2D
+and FERET face databases where the images vary in pose, illumination,
+expression, and scale. The FERET data set contains 2200 frontal face images of
+200 subjects, while the FRAV2D data set consists of 1100 images of 100 subjects
+and the full ORL database is considered. The results reported in this
+application are far better than the recent and most referred systems.

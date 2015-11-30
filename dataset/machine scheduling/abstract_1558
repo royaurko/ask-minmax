@@ -1,0 +1,19 @@
+We propose a new theoretical model for passively mobile Wireless Sensor
+Networks, called PM, standing for Passively mobile Machines. The main
+modification w.r.t. the Population Protocol model is that agents now, instead
+of being automata, are Turing Machines. We provide general definitions for
+unbounded memories, but we are mainly interested in computations upper-bounded
+by plausible space limitations. However, we prove that our results hold for
+more general cases. We focus on complete communication graphs and define the
+complexity classes PMSPACE(f(n)) parametrically, consisting of all predicates
+that are stably computable by some PM protocol that uses O(f(n)) memory on each
+agent. We provide a protocol that generates unique ids from scratch only by
+using O(log n) memory, and use it to provide an exact characterization for the
+classes PMSPACE(f(n)) when f(n)={\Omega}(log n): they are precisely the classes
+of all symmetric predicates in NSPACE(nf(n)). In this way, we provide a space
+hierarchy for the PM model when the memory bounds are {\Omega}(log n). Finally,
+we explore the computability of the PM model when the protocols use o(loglog n)
+space per machine and prove that SEMILINEAR=PMSPACE(f(n)) when f(n)=o(loglog
+n), where SEMILINEAR denotes the class of the semilinear predicates. In fact,
+we prove that this bound acts as a threshold, so that SEMILINEAR is a proper
+subset of PMSPACE(f(n)) when f(n)=O(loglog n).

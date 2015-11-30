@@ -1,0 +1,10 @@
+Consider a finite set of targets, with each target assigned a relative
+deadline, and each pair of targets assigned a fixed transit flight time. Given
+a flock of identical UAVs, can one ensure that every target is repeatedly
+visited by some UAV at intervals of duration at most the target's relative
+deadline? The Cyclic-Routing UAV Problem (CR-UAV) is the question of whether
+this task has a solution.
+  This problem can straightforwardly be solved in PSPACE by modelling it as a
+network of timed automata. The special case of there being a single UAV is
+claimed to be NP-complete in the literature. In this paper, we show that the
+CR-UAV Problem is in fact PSPACE-complete even in the single-UAV case.

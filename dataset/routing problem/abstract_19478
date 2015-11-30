@@ -1,0 +1,18 @@
+It is well-known that the standard Galerkin formulation, which is often the
+formulation of choice under the finite element method for solving self-adjoint
+diffusion equations, does not meet maximum principles and the non-negative
+constraint for anisotropic diffusion equations. Recently, optimization-based
+methodologies that satisfy maximum principles and the non-negative constraint
+for steady-state and transient diffusion-type equations have been proposed.
+Till date, these methodologies have been tested only on small-scale academic
+problems. The purpose of this paper is to systematically study the performance
+of the non-negative methodology in the context of high performance computing
+(HPC). PETSc and TAO libraries are, respectively, used for the parallel
+environment and optimization solvers. For large-scale problems, it is important
+for computational scientists to understand the computational cost, scalability
+and efficiency; which all will be addressed in this paper. The numerical
+experiments are conducted on the state-of-the-art HPC systems, and relevant
+parallel performance metrics are provided to illustrate the efficiency of our
+methodology. Our studies indicate that the proposed non-negative computational
+framework for diffusion-type equations exhibits excellent strong scaling for
+large and complicated 3D problems.

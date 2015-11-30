@@ -1,0 +1,20 @@
+Research in location determination for GSM phones has gained interest
+recently as it enables a wide set of location based services. RSSI-based
+techniques have been the preferred method for GSM localization on the handset
+as RSSI information is available in all cell phones. Although the GSM standard
+allows for a cell phone to receive signal strength information from up to seven
+cell towers, many of today's cell phones are low-end phones, with limited API
+support, that gives only information about the associated cell tower. In
+addition, in many places in the world, the density of cell towers is very small
+and therefore, the available cell tower information for localization is very
+limited. This raises the challenge of accurately determining the cell phone
+location with very limited information, mainly the RSSI of the associated cell
+tower. In this paper we propose a Hidden Markov Model based solution that
+leverages the signal strength history from only the associated cell tower to
+achieve accurate GSM localization. We discuss the challenges of implementing
+our system and present the details of our system and how it addresses the
+challenges. To evaluate our proposed system, we implemented it on Androidbased
+phones. Results for two different testbeds, representing urban and rural
+environments, show that our system provides at least 156% enhancement in median
+error in rural areas and at least 68% enhancement in median error in urban
+areas compared to current RSSI-based GSM localization systems

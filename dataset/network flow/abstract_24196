@@ -1,0 +1,15 @@
+In this paper, we propose a distributed throughput-optimal ad hoc wireless
+network scheduling algorithm, which is motivated by the celebrated simplex
+algorithm for solving linear programming (LP) problems. The scheduler stores a
+sparse set of basic schedules, and chooses the max-weight basic schedule for
+transmission in each time slot. At the same time, the scheduler tries to update
+the set of basic schedules by searching for a new basic schedule in a
+throughput increasing direction. We show that both of the above procedures can
+be achieved in a distributed manner. Specifically, we propose an average
+consensus based link contending algorithm to implement the distributed max
+weight scheduling. Further, we show that the basic schedule update can be
+implemented using CSMA mechanisms, which is similar to the one proposed by
+Jiang et al. Compared to the optimal distributed scheduler in Jiang's paper,
+where schedules change in a random walk fashion, our algorithm has a better
+delay performance by achieving faster schedule transitions in the steady state.
+The performance of the algorithm is finally confirmed by simulation results.

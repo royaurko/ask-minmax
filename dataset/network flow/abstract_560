@@ -1,0 +1,16 @@
+We introduce a flow-dependent version of the quadratic Steiner tree problem
+in the plane. An instance of the problem on a set of embedded sources and a
+sink asks for a directed tree $T$ spanning these nodes and a bounded number of
+Steiner points, such that $\displaystyle\sum_{e \in E(T)}f(e)|e|^2$ is a
+minimum, where $f(e)$ is the flow on edge $e$. The edges are uncapacitated and
+the flows are determined additively, i.e., the flow on an edge leaving a node
+$u$ will be the sum of the flows on all edges entering $u$. Our motivation for
+studying this problem is its utility as a model for relay augmentation of
+wireless sensor networks. In these scenarios one seeks to optimise power
+consumption -- which is predominantly due to communication and, in free space,
+is proportional to the square of transmission distance -- in the network by
+introducing additional relays. We prove several geometric and combinatorial
+results on the structure of optimal and locally optimal solution-trees (under
+various strategies for bounding the number of Steiner points) and describe a
+geometric linear-time algorithm for constructing such trees with known
+topologies.

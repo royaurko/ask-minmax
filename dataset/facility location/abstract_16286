@@ -1,0 +1,23 @@
+The magnetic diagnostics subsystem of the LISA Technology Package (LTP) on
+board the LISA PathFinder (LPF) spacecraft includes a set of four tri-axial
+fluxgate magnetometers, intended to measure with high precision the magnetic
+field at their respective positions. However, their readouts do not provide a
+direct measurement of the magnetic field at the positions of the test masses,
+and hence an interpolation method must be designed and implemented to obtain
+the values of the magnetic field at these positions. However, such
+interpolation process faces serious difficulties. Indeed, the size of the
+interpolation region is excessive for a linear interpolation to be reliable
+while, on the other hand, the number of magnetometer channels does not provide
+sufficient data to go beyond the linear approximation. We describe an
+alternative method to address this issue, by means of neural network
+algorithms. The key point in this approach is the ability of neural networks to
+learn from suitable training data representing the behavior of the magnetic
+field. Despite the relatively large distance between the test masses and the
+magnetometers, and the insufficient number of data channels, we find that our
+artificial neural network algorithm is able to reduce the estimation errors of
+the field and gradient down to levels below 10%, a quite satisfactory result.
+Learning efficiency can be best improved by making use of data obtained in
+on-ground measurements prior to mission launch in all relevant satellite
+locations and in real operation conditions. Reliable information on that
+appears to be essential for a meaningful assessment of magnetic noise in the
+LTP.

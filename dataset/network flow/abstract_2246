@@ -1,0 +1,25 @@
+We consider a power system with $N$ transmission lines whose initial loads
+(i.e., power flows) $L_1, \ldots, L_N$ are independent and identically
+distributed with $P_L(x)$. The capacity $C_i$ defines the maximum flow allowed
+on line $i$, and is assumed to be given by $C_i=(1+\alpha)L_i$, with
+$\alpha>0$. We study the robustness of this power system against random attacks
+(or, failures) that target a $p$-{\em fraction} of the lines, under a
+democratic fiber bundle-like model. Namely, when a line fails, the load it was
+carrying is redistributed equally among the remaining lines. Our contributions
+are as follows: i) we show analytically that the final breakdown of the system
+always takes place through a first-order transition at the critical attack size
+$p^{\star}=1-\frac{E[L]}{\max\{P(L>x)(\alpha x + E[L ~|~ L>x])\}}~~~$; ii) we
+derive conditions on the distribution $P_L(x)$ for which the first order break
+down of the system occurs abruptly without any preceding diverging rate of
+failure; iii) we provide a detailed analysis of the robustness of the system
+under three specific load distributions: Uniform, Pareto, and Weibull, showing
+that with the minimum load $L_{\textrm{min}}$ and mean load $E[L]$ fixed,
+Pareto distribution is the worst (in terms of robustness) among the three,
+whereas Weibull distribution is the best with shape parameter selected
+relatively large; iv) we provide numerical results that confirm our mean-field
+analysis; and v) we show that $p^{\star}$ is maximized when the load
+distribution is a Dirac delta function centered at $E[L]$, i.e., when all lines
+carry the same load; we also show that optimal $p^{\star}$ equals
+$\frac{\alpha}{\alpha+1}$. This last finding is particularly surprising given
+that heterogeneity is known to lead to high robustness against random failures
+in many other systems.

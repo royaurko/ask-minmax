@@ -1,0 +1,13 @@
+We address the problem of learning in an online, bandit setting where the
+learner must repeatedly select among $K$ actions, but only receives partial
+feedback based on its choices. We establish two new facts: First, using a new
+algorithm called Exp4.P, we show that it is possible to compete with the best
+in a set of $N$ experts with probability $1-\delta$ while incurring regret at
+most $O(\sqrt{KT\ln(N/\delta)})$ over $T$ time steps. The new algorithm is
+tested empirically in a large-scale, real-world dataset. Second, we give a new
+algorithm called VE that competes with a possibly infinite set of policies of
+VC-dimension $d$ while incurring regret at most $O(\sqrt{T(d\ln(T) + \ln
+(1/\delta))})$ with probability $1-\delta$. These guarantees improve on those
+of all previous algorithms, whether in a stochastic or adversarial environment,
+and bring us closer to providing supervised learning type guarantees for the
+contextual bandit setting.

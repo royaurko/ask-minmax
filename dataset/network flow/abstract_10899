@@ -1,0 +1,24 @@
+Fractal scaling--a power-law behavior of the number of boxes needed to tile a
+given network with respect to the lateral size of the box--is studied. We
+introduce a new box-covering algorithm that is a modified version of the
+original algorithm introduced by Song et al. [Nature (London) 433, 392 (2005)];
+this algorithm enables effective computation and easy implementation. Fractal
+networks are viewed as comprising a skeleton and shortcuts. The skeleton,
+embedded underneath the original network, is a special type of spanning tree
+based on the edge betweenness centrality; it provides a scaffold for the
+fractality of the network. When the skeleton is regarded as a branching tree,
+it exhibits a plateau in the mean branching number as a function of the
+distance from a root. Based on these observations, we construct a fractal
+network model by combining a random branching tree and local shortcuts. The
+scaffold branching tree can be either critical or supercritical, depending on
+the small-worldness of a given network. For the network constructed from the
+critical (supercritical) branching tree, the average number of vertices within
+a given box grows with the lateral size of the box according to a power-law (an
+exponential) form in the cluster-growing method. The distribution of box
+masses, i.e., the number of vertices within each box, follows a power law
+P_m(M) sim M^{-eta}. The exponent eta depends on the box lateral size ell_B.
+For small values of ell_B, eta is equal to the degree exponent gamma of a given
+scale-free network, whereas eta approaches the exponent tau=gamma/(gamma-1) as
+ell_B increases, which is the exponent of the cluster-size distribution of the
+random branching tree. We also study the perimeter of a given box as a function
+of the box mass.

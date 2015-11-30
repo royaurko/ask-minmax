@@ -1,0 +1,25 @@
+We initiate a study of when the value of mathematical relaxations such as
+linear and semidefinite programs for constraint satisfaction problems (CSPs) is
+approximately preserved when restricting the instance to a sub-instance induced
+by a small random subsample of the variables. Let $C$ be a family of CSPs such
+as 3SAT, Max-Cut, etc., and let $\Pi$ be a relaxation for $C$, in the sense
+that for every instance $P\in C$, $\Pi(P)$ is an upper bound the maximum
+fraction of satisfiable constraints of $P$. Loosely speaking, we say that
+subsampling holds for $C$ and $\Pi$ if for every sufficiently dense instance $P
+\in C$ and every $\epsilon>0$, if we let $P'$ be the instance obtained by
+restricting $P$ to a sufficiently large constant number of variables, then
+$\Pi(P') \in (1\pm \epsilon)\Pi(P)$. We say that weak subsampling holds if the
+above guarantee is replaced with $\Pi(P')=1-\Theta(\gamma)$ whenever
+$\Pi(P)=1-\gamma$. We show: 1. Subsampling holds for the BasicLP and BasicSDP
+programs. BasicSDP is a variant of the relaxation considered by Raghavendra
+(2008), who showed it gives an optimal approximation factor for every CSP under
+the unique games conjecture. BasicLP is the linear programming analog of
+BasicSDP. 2. For tighter versions of BasicSDP obtained by adding additional
+constraints from the Lasserre hierarchy, weak subsampling holds for CSPs of
+unique games type. 3. There are non-unique CSPs for which even weak subsampling
+fails for the above tighter semidefinite programs. Also there are unique CSPs
+for which subsampling fails for the Sherali-Adams linear programming hierarchy.
+As a corollary of our weak subsampling for strong semidefinite programs, we
+obtain a polynomial-time algorithm to certify that random geometric graphs (of
+the type considered by Feige and Schechtman, 2002) of max-cut value $1-\gamma$
+have a cut value at most $1-\gamma/10$.

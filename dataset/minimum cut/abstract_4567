@@ -1,0 +1,15 @@
+A path in an edge-colored graph is called a \emph{rainbow path} if all edges
+on it have pairwise distinct colors. For $k\geq 1$, the
+\emph{rainbow-$k$-connectivity} of a graph $G$, denoted $rc_k(G)$, is the
+minimum number of colors required to color the edges of $G$ in such a way that
+every two distinct vertices are connected by at least $k$ internally disjoint
+rainbow paths. In this paper, we study rainbow-$k$-connectivity in the setting
+of random graphs. We show that for every fixed integer $d\geq 2$ and every
+$k\leq O(\log n)$, $p=\frac{(\log n)^{1/d}}{n^{(d-1)/d}}$ is a sharp threshold
+function for the property $rc_k(G(n,p))\leq d$. This substantially generalizes
+a result due to Caro et al., stating that $p=\sqrt{\frac{\log n}{n}}$ is a
+sharp threshold function for the property $rc_1(G(n,p))\leq 2$. As a
+by-product, we obtain a polynomial-time algorithm that makes $G(n,p)$
+rainbow-$k$-connected using at most one more than the optimal number of colors
+with probability $1-o(1)$, for all $k\leq O(\log n)$ and $p=n^{-\epsilon(1\pm
+o(1))}$ for some constant $\epsilon\in[0,1)$.

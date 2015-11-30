@@ -1,0 +1,14 @@
+We present algorithms that design NoCs with guaranteed quality of service.
+Given a topology, a mapping of tasks to processing elements, and traffic
+requirements between the tasks, the algorithm computes the interconnection
+widths, a detailed static routing, and a periodic scheduling. No headers,
+control messages, or acknowledgments are required. The algorithm employs
+fractional Multi-Commodity Flow (MCF) that determines the widths of the
+interconnections as well as the routes of the flits. The MCF is rounded to a
+periodic TDM schedule which is translated to local periodic control of switches
+and network interfaces. Our algorithm is applicable to large instances since
+every stage is efficient. The algorithm supports arbitrary topologies and
+traffic patterns. Routing along multiple paths is allowed in order to increase
+utilization and decrease latency. We implemented the algorithm and tested it
+with the MCSL benchmark. Experiments demonstrate that our solution is stable
+and satisfies all the real-time constraints.

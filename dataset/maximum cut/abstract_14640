@@ -1,0 +1,16 @@
+We propose a regression model for count data when the classical generalized
+linear model approach is too rigid due to a high outcome of zero counts and a
+nonlinear influence of continuous covariates. Zero-Inflation is applied to take
+into account the presence of excess zeros with separate link functions for the
+zero and the nonzero component. Nonlinearity in covariates is captured by
+spline functions based on B-splines. Our algorithm relies on maximum-likelihood
+estimation and allows for adaptive box-constrained knots, thus improving the
+goodness of the spline fit and allowing for detection of sensitivity
+changepoints. A simulation study substantiates the numerical stability of the
+algorithm to infer such models. The AIC criterion is shown to serve well for
+model selection, in particular if nonlinearities are weak such that BIC tends
+to overly simplistic models. We fit the introduced models to real data of
+children's dental sanity, linking caries counts with the so-called
+Body-Mass-Index (BMI) and other socioeconomic factors. This reveals a puzzling
+nonmonotonic influence of BMI on caries counts which is yet to be explained by
+clinical experts.

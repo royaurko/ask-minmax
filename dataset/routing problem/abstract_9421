@@ -1,0 +1,10 @@
+Given an undirected graph $G$, a collection $\{(s_1,t_1),..., (s_k,t_k)\}$ of
+pairs of vertices, and an integer $p$, the Edge Multicut problem ask if there
+is a set $S$ of at most $p$ edges such that the removal of $S$ disconnects
+every $s_i$ from the corresponding $t_i$. Vertex Multicut is the analogous
+problem where $S$ is a set of at most $p$ vertices. Our main result is that
+both problems can be solved in time $2^{O(p^3)}... n^{O(1)}$, i.e.,
+fixed-parameter tractable parameterized by the size $p$ of the cutset in the
+solution. By contrast, it is unlikely that an algorithm with running time of
+the form $f(p)... n^{O(1)}$ exists for the directed version of the problem, as
+we show it to be W[1]-hard parameterized by the size of the cutset.

@@ -1,0 +1,25 @@
+We introduce a variation of the scheduling with precedence constraints
+problem that has applications to molecular folding and production management.
+We are given a bipartite graph $H=(B,S)$. Vertices in $B$ are thought of as
+goods or services that must be \emph{bought} to produce items in $S$ that are
+to be \emph{sold}. An edge from $j\in S$ to $i\in B$ indicates that the
+production of $j$ requires the purchase of $i$. Each vertex in $B$ has a cost,
+and each vertex in $S$ results in some gain. The goal is to obtain an ordering
+of $B\cup S$ that respects the precedence constraints and maximizes the minimal
+net profit encountered as the vertices are processed. We call this optimal
+value the \emph{budget} or \emph{capital} investment required for the bipartite
+graph, and refer to our problem as \emph{the bipartite graph ordering problem}.
+  The problem is equivalent to a version of an NP-complete molecular folding
+problem that has been studied recently [14]. Work on the molecular folding
+problem has focused on heuristic algorithms and exponential-time exact
+algorithms for the un-weighted problem where costs are $\pm 1$ and when
+restricted to graphs arising from RNA folding.
+  The bipartite graph present work seeks exact algorithms for solving the
+bipartite ordering problem. We demonstrate an algorithm that computes the
+optimal ordering in time $O^*(2^n)$ when $n$ is the number of vertices in the
+input bipartite graph. Our main result is a general strategy that can be used
+to find an optimal ordering in polynomial time for bipartite graphs that
+satisfy certain properties. We apply the technique to a variety of graph
+classes, obtaining polynomial-time solutions to the bipartite graph ordering
+problem for bipartite graphs that are convex, trivially perfect, co-bipartite
+graphs, and trees.

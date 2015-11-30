@@ -1,0 +1,17 @@
+Kriging-based surrogate models have become very popular during the last
+decades to approximate a computer code output from few simulations. In
+practical applications, it is very common to sequentially add new simulations
+to obtain more accurate approximations. We propose in this paper a method of
+kriging-based sequential design which combines both the error evaluation
+providing by the kriging model and the observed errors of a Leave-One-Out
+cross-validation procedure. This method is proposed in two versions, the first
+one selects points one at-a-time. The second one allows us to parallelize the
+simulations and to add several design points at-a-time. Then, we extend these
+strategies to multi-fidelity co-kriging models which allow us to surrogate a
+complex code using fast approximations of it. The main advantage of these
+extensions is that it not only provides the new locations where to perform
+simulations but also which versions of code have to be simulated (between the
+complex one or one of its fast approximations). A real multi-fidelity
+application is used to illustrate the efficiency of the proposed approaches. In
+this example, the accurate code is a two-dimensional finite element model and
+the less accurate one is a one-dimensional approximation of the system.

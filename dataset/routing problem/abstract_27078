@@ -1,0 +1,16 @@
+Inpainting based image compression approaches, especially linear and
+non-linear diffusion models, are an active research topic for lossy image
+compression. The major challenge in these compression models is to find a small
+set of descriptive supporting points, which allow for an accurate
+reconstruction of the original image. It turns out in practice that this is a
+challenging problem even for the simplest Laplacian interpolation model. In
+this paper, we revisit the Laplacian interpolation compression model and
+introduce two fast algorithms, namely successive preconditioning primal dual
+algorithm and the recently proposed iPiano algorithm, to solve this problem
+efficiently. Furthermore, we extend the Laplacian interpolation based
+compression model to a more general form, which is based on principles from
+bi-level optimization. We investigate two different variants of the Laplacian
+model, namely biharmonic interpolation and smoothed Total Variation
+regularization. Our numerical results show that significant improvements can be
+obtained from the biharmonic interpolation model, and it can recover an image
+with very high quality from only 5% pixels.

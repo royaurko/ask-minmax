@@ -1,0 +1,17 @@
+We present tools for the analysis of Follow-The-Regularized-Leader (FTRL),
+Dual Averaging, and Mirror Descent algorithms when the regularizer
+(equivalently, prox-function or learning-rate schedule) is chosen adaptively
+based on the data. Adaptivity can be used to prove regret bounds that hold on
+every round, and also allows for data-dependent regret bounds as in
+AdaGrad-style algorithms. We present results from a large number of prior works
+in a unified manner, using a modular and tight analysis that isolates the key
+arguments in easily re-usable lemmas. This approach strengthens previously
+known FTRL analysis techniques to produce bounds as tight as those achieved by
+potential functions or primal-dual analysis. Further, we prove a general and
+exact equivalence between an arbitrary adaptive Mirror Descent algorithm and a
+corresponding FTRL update, which allows us to analyze any Mirror Descent
+algorithm in the same framework. The key to bridging the gap between Dual
+Averaging and Mirror Descent algorithms lies in an analysis of the
+FTRL-Proximal algorithm family. Our regret bounds are proved in the most
+general form, holding for arbitrary norms and non-smooth regularizers with
+time-varying weight.

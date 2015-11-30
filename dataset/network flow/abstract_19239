@@ -1,0 +1,24 @@
+We address the problem of minimizing power consumption when performing
+reliable broadcast on a radio network under the following popular model. Each
+node in the network is located on a point in a two dimensional grid, and
+whenever a node sends a message, all awake nodes within distance r receive the
+message. In the broadcast problem, some node wants to successfully send a
+message to all other nodes in the network even when up to a 1/2 fraction of the
+nodes within every neighborhood can be deleted by an adversary. The set of
+deleted nodes is carefully chosen by the adversary to foil our algorithm and
+moreover, the set of deleted nodes may change periodically. This models
+worst-case behavior due to mobile nodes, static nodes losing power or simply
+some points in the grid being unoccupied. A trivial solution requires each node
+in the network to be awake roughly 1/2 the time, and a trivial lower bound
+shows that each node must be awake for at least a 1/n fraction of the time. Our
+first result is an algorithm that requires each node to be awake for only a
+1/sqrt(n) fraction of the time in expectation. Our algorithm achieves this
+while ensuring correctness with probability 1, and keeping optimal values for
+other resource costs such as latency and number of messages sent. We give a
+lower-bound that shows that this reduction in power consumption is
+asymptotically optimal when latency and number of messages sent must be
+optimal. If we can increase the latency and messages sent by only a log*n
+factor we give a Las Vegas algorithm that requires each node to be awake for
+only a (log*n)/n expected fraction of the time; we give a lower-bound showing
+that this second algorithm is near optimal. Finally, we show how to ensure
+energy-efficient broadcast in the presence of Byzantine faults.

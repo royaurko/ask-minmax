@@ -1,0 +1,26 @@
+We study competitive equilibria in the classic Shapley-Shubik assignment
+model with indivisible goods and unit-demand buyers, with budget constraints:
+buyers can specify a maximum price they are willing to pay for each item,
+beyond which they cannot afford the item. This single discontinuity introduced
+by the budget constraint fundamentally changes the properties of equilibria: in
+the assignment model without budget constraints, a competitive equilibrium
+always exists, and corresponds exactly to a stable matching. With budgets, a
+competitive equilibrium need not always exist. In addition, there are now two
+distinct notions of stability, depending on whether both or only one of the
+buyer and seller can strictly benefit in a blocking pair, that no longer
+coincide due to the budget-induced discontinuity. We define weak and strong
+stability for the assignment model with transferable utilities, and show that
+competitive equilibria correspond exactly to strongly stable matchings.
+  We consider the algorithmic question of efficiently computing competitive
+equilibria in an extension of the assignment model with budgets, where each
+buyer specifies his preferences over items using utility functions $u_{ij}$,
+where $u_{ij}(p_j)$ is the utility of buyer $i$ for item $j$ when its price is
+$p_j$. Our main result is a strongly polynomial time algorithm that decides
+whether or not a competitive equilibrium exists and if yes, computes a minimum
+one, for a general class of utility functions $u_{ij}$. This class of utility
+functions includes the standard quasi-linear utility model with a budget
+constraint, and in addition, allows modeling marketplaces where, for example,
+buyers only have a preference ranking amongst items subject to a maximum
+payment limit for each item, or where buyers want to optimize return on
+investment (ROI) instead of a quasi-linear utility and only know items'
+relative values.

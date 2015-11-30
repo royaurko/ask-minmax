@@ -1,0 +1,16 @@
+In this paper we propose two behavioral distances that support approximate
+reasoning on Stochastic Markov Models (SMMs), that are continuous-time
+stochastic transition systems where the residence time on each state is
+described by a generic probability measure on the positive real line. In
+particular, we study the problem of measuring the behavioral dissimilarity of
+two SMMs against linear real-time specifications expressed as Metric Temporal
+Logic (MTL) formulas or Deterministic Timed-Automata (DTA). The most natural
+choice for such a distance is the one that measures the maximal difference that
+can be observed comparing two SMMs with respect to their probability of
+satisfying an arbitrary specification. We show that computing this metric is
+NP-hard. In addition, we show that any algorithm that approximates the distance
+within a certain absolute error, depending on the size of the SMMs, is NP-hard.
+Nevertheless, we introduce an alternative distance, based on the Kantorovich
+metric, that is an over-approximation of the former and we show that, under
+mild assumptions on the residence time distributions, it can be computed in
+polynomial time.

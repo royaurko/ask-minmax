@@ -1,0 +1,16 @@
+Aiming at bridging the gap between the maximum likelihood decoding (MLD) and
+the suboptimal iterative decodings for short or medium length LDPC codes, we
+present a generalized ordered statistic decoding (OSD) in the form of syndrome
+decoding, to cascade with the belief propagation (BP) or enhanced min-sum
+decoding. The OSD is invoked only when the decoding failures are obtained for
+the preceded iterative decoding method. With respect to the existing OSD which
+is based on the accumulated log-likelihood ratio (LLR) metric, we extend the
+accumulative metric to the situation where the BP decoding is in the
+probability domain. Moreover, after generalizing the accumulative metric to the
+context of the normalized or offset min-sum decoding, the OSD shows appealing
+tradeoff between performance and complexity. In the OSD implementation, when
+deciding the true error pattern among many candidates, an alternative proposed
+proves to be effective to reduce the number of real additions without
+performance loss. Simulation results demonstrate that the cascade connection of
+enhanced min-sum and OSD decodings outperforms the BP alone significantly, in
+terms of either performance or complexity.

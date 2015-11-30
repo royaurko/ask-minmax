@@ -1,0 +1,16 @@
+Gliomas are the most common primary brain tumors, evolving from the cerebral
+supportive cells. For clinical follow-up, the evaluation of the preoperative
+tumor volume is essential. Volumetric assessment of tumor volume with manual
+segmentation of its outlines is a time-consuming process that can be overcome
+with the help of segmentation methods. In this paper, a flexible semi-automatic
+approach for grade IV glioma segmentation is presented. The approach uses a
+novel segmentation scheme for spherical objects that creates a directed 3D
+graph. Thereafter, the minimal cost closed set on the graph is computed via a
+polynomial time s-t cut, creating an optimal segmentation of the tumor. The
+user can improve the results by specifying an arbitrary number of additional
+seed points to support the algorithm with grey value information and
+geometrical constraints. The presented method is tested on 12 magnetic
+resonance imaging datasets. The ground truth of the tumor boundaries are
+manually extracted by neurosurgeons. The segmented gliomas are compared with a
+one click method, and the semi-automatic approach yields an average Dice
+Similarity Coefficient (DSC) of 77.72% and 83.91%, respectively.

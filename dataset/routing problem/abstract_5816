@@ -1,0 +1,14 @@
+Consider a 0-1 observation matrix M, where rows correspond to entities and
+columns correspond to signals; a value of 1 (or 0) in cell (i,j) of M indicates
+that signal j has been observed (or not observed) in entity i. Given such a
+matrix we study the problem of inferring the underlying directed links between
+entities (rows) and finding which entries in the matrix are initiators.
+  We formally define this problem and propose an MCMC framework for estimating
+the links and the initiators given the matrix of observations M. We also show
+how this framework can be extended to incorporate a temporal aspect; instead of
+considering a single observation matrix M we consider a sequence of observation
+matrices M1,..., Mt over time.
+  We show the connection between our problem and several problems studied in
+the field of social-network analysis. We apply our method to paleontological
+and ecological data and show that our algorithms work well in practice and give
+reasonable results.

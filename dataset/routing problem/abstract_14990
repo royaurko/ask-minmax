@@ -1,0 +1,20 @@
+In this paper, we consider the following graph partitioning problem: The
+input is an undirected graph $G=(V,E),$ a balance parameter $b \in (0,1/2]$ and
+a target conductance value $\gamma \in (0,1).$ The output is a cut which, if
+non-empty, is of conductance at most $O(f),$ for some function $f(G, \gamma),$
+and which is either balanced or well correlated with all cuts of conductance at
+most $\gamma.$ Spielman and Teng gave an $\tilde{O}(|E|/\gamma^{2})$-time
+algorithm for $f= \sqrt{\gamma \log^{3}|V|}$ and used it to decompose graphs
+into a collection of near-expanders. We present a new spectral algorithm for
+this problem which runs in time $\tilde{O}(|E|/\gamma)$ for $f=\sqrt{\gamma}.$
+Our result yields the first nearly-linear time algorithm for the classic
+Balanced Separator problem that achieves the asymptotically optimal
+approximation guarantee for spectral methods. Our method has the advantage of
+being conceptually simple and relies on a primal-dual semidefinite-programming
+SDP approach. We first consider a natural SDP relaxation for the Balanced
+Separator problem. While it is easy to obtain from this SDP a certificate of
+the fact that the graph has no balanced cut of conductance less than $\gamma,$
+somewhat surprisingly, we can obtain a certificate for the stronger correlation
+condition. This is achieved via a novel separation oracle for our SDP and by
+appealing to Arora and Kale's framework to bound the running time. Our result
+contains technical ingredients that may be of independent interest.

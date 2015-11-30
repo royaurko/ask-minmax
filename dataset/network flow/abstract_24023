@@ -1,0 +1,13 @@
+We present an incentive model for route distribution in the context of path
+vector routing protocols and we focus on the Border Gateway Protocol (BGP). BGP
+is the de-facto protocol for interdomain routing on the Internet. We model BGP
+route distribution and computation using a game in which a BGP speaker
+advertises its prefix to its direct neighbors promising them a reward for
+further distributing the route deeper into the network, the neighbors do the
+same thing with their neighbors, and so on. The result of this cascaded route
+distribution is an advertised prefix and hence reachability of the BGP speaker.
+We first study the convergence of BGP protocol dynamics to a unique outcome
+tree in the defined game. We then proceed to study the existence of equilibria
+in the full information game considering competition dynamics. We focus our
+work on the simplest two classes of graphs: 1) the line (and the tree) graphs
+which involve no competition, and 2) the ring graph which involves competition.

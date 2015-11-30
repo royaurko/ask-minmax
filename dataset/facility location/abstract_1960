@@ -1,0 +1,13 @@
+This document describes a Fortran 95 package for carrying out DGLAP evolution
+and other common manipulations of parton distribution functions (PDFs). The
+PDFs are represented on a grid in x-space so as to avoid limitations on the
+functional form of input distributions. Good speed and accuracy are obtained
+through the representation of splitting functions in terms of their convolution
+with a set of piecewise polynomial basis functions, and Runge-Kutta techniques
+are used for the evolution in Q. Unpolarised evolution is provided to NNLO,
+including heavy-quark thresholds in the MSbar scheme, and longitudinally
+polarised evolution to NLO. The code is structured so as to provide simple
+access to the objects representing splitting functions and PDFs, making it
+possible for a user to extend the facilities already provided. A streamlined
+interface is also available, facilitating use of the evolution part of the code
+from F77 and C/C++.

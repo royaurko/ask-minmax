@@ -1,0 +1,23 @@
+Over the last two decades, many exciting variable selection methods have been
+developed for finding a small group of covariates that are associated with the
+response from a large pool. Can the discoveries by such data mining approaches
+be spurious due to high-dimensionality and limited sample size? Can our
+fundamental assumptions on exogeneity of covariates needed for such variable
+selection be validated with the data? To answer these questions, we need to
+derive the distributions of the maximum spurious correlations given certain
+number of predictors, namely, the distribution of the correlation of a response
+variable $Y$ with the best $s$ linear combinations of $p$ covariates
+$\mathbf{X}$, even when $\mathbf{X}$ and $Y$ are independent. When the
+covariance matrix of $\mathbf{X}$ possesses the restricted eigenvalue property,
+we derive such distributions for both finite $s$ and diverging $s$, using
+Gaussian approximation and empirical process techniques. However, such a
+distribution depends on the unknown covariance matrix of $\mathbf{X}$. Hence,
+we propose a multiplier bootstrap method to approximate the unknown
+distributions and establish the consistency of such a simple bootstrap
+approach. The results are further extended to the situation where residuals are
+from regularized fits. Our approach is then applied to construct the upper
+confidence limit for the maximum spurious correlation and testing exogeneity of
+covariates. The former provides a baseline for guiding false discoveries due to
+data mining and the latter tests whether our fundamental assumptions for
+high-dimensional model selection are statistically valid. Our techniques and
+results are illustrated by both numerical examples.

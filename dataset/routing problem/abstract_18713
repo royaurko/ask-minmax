@@ -1,0 +1,18 @@
+We introduce and analyze two-level and multi-level preconditioners for a
+family of Interior Penalty (IP) discontinuous Galerkin (DG) discretizations of
+second order elliptic problems with large jumps in the diffusion coefficient.
+Our approach to IPDG-type methods is based on a splitting of the DG space into
+two components that are orthogonal in the energy inner product naturally
+induced by the methods. As a result, the methods and their analysis depend in a
+crucial way on the diffusion coefficient of the problem. The analysis of the
+proposed preconditioners is presented for both symmetric and non-symmetric IP
+schemes; dealing simultaneously with the jump in the diffusion coefficient and
+the non-nested character of the relevant discrete spaces presents extra
+difficulties in the analysis which precludes a simple extension of existing
+results. However, we are able to establish robustness (with respect to the
+diffusion coefficient) and nearly-optimality (up to a logarithmic term
+depending on the mesh size) for both two-level and BPX-type preconditioners.
+Following the analysis, we present a sequence of detailed numerical results
+which verify the theory and illustrate the performance of the methods. The
+paper includes an Appendix with a collection of proofs of several technical
+results required for the analysis.

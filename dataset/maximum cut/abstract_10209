@@ -1,0 +1,16 @@
+We study the maximum entropy (MaxEnt) approach for analytical continuation of
+spectral data from imaginary times to real frequencies. The total error is
+divided in a statistical error, due to the noise in the input data, and a
+systematic error, due to deviations of the default function, used in the MaxEnt
+approach, from the exact spectrum. We find that the MaxEnt approach in its
+classical formulation can lead to a nonoptimal balance between the two types of
+errors, leading to an unnecessary large statistical error. The statistical
+error can be reduced by splitting up the data in several batches, performing a
+MaxEnt calculation for each batch and averaging. This can outweigh an increase
+in the systematic error resulting from this approach. The output from the
+MaxEnt result can be used as a default function for a new MaxEnt calculation.
+Such iterations often lead to worse results due to an increase in the
+statistical error. By splitting up the data in batches, the statistical error
+is reduced and and the increase resulting from iterations can be outweighed by
+a decrease in the systematic error. Finally we consider a linearized version to
+obtain a better understanding of the method.

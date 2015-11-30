@@ -1,0 +1,14 @@
+A geometric graph is a graph embedded in the plane with vertices at points
+and edges drawn as curves (which are usually straight line segments) between
+those points. The average transversal complexity of a geometric graph is the
+number of edges of that graph that are crossed by random line or line segment.
+In this paper, we study the average transversal complexity of road networks. By
+viewing road networks as multiscale-dispersed graphs, we show that a random
+line will cross the edges of such a graph O(sqrt(n)) times on average. In
+addition, we provide by empirical evidence from experiments on the road
+networks of the fifty states of United States and the District of Columbia that
+this bound holds in practice and has a small constant factor. Combining this
+result with data structuring techniques from computational geometry, allows us
+to show that we can then do point location and ray-shooting navigational
+queries with respect to road networks in O(sqrt(n) log n) expected time.
+Finally, we provide empirical justification for this claim as well.

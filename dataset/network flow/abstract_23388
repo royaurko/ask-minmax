@@ -1,0 +1,22 @@
+Discrete-optimal model-reduction techniques such as the Gauss--Newton with
+Approximated Tensors (GNAT) method have shown promise, as they have generated
+stable, accurate solutions for large-scale turbulent, compressible flow
+problems where standard Galerkin techniques have failed. However, there has
+been limited comparative analysis of the two approaches. This is due in part to
+difficulties arising from the fact that Galerkin techniques perform projection
+at the time-continuous level, while discrete-optimal techniques do so at the
+time-discrete level.
+  This work provides a detailed theoretical and experimental comparison of the
+two techniques for two common classes of time integrators: linear multistep
+schemes and Runge--Kutta schemes. We present a number of new findings,
+including conditions under which the discrete-optimal ROM has a time-continuous
+representation, conditions under which the two techniques are equivalent, and
+time-discrete error bounds for the two approaches. Perhaps most surprisingly,
+we demonstrate both theoretically and experimentally that decreasing the time
+step does not necessarily decrease the error for the discrete-optimal ROM;
+instead, the time step should be `matched' to the spectral content of the
+reduced basis. In numerical experiments carried out on a turbulent
+compressible-flow problem with over one million unknowns, we show that
+increasing the time step to an intermediate value decreases both the error and
+the simulation time of the discrete-optimal reduced-order model by an order of
+magnitude.

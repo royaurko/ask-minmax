@@ -1,0 +1,15 @@
+Given a directed graph $D=(V,A)$ with a set of $d$ specified vertices
+$S=\{s_1,...,s_d\}\subseteq V$ and a function $f\colon S \to \mathbb{Z}_+$
+where $\mathbb{Z}_+$ denotes the set of non-negative integers, we consider the
+problem which asks whether there exist $\sum_{i=1}^d f(s_i)$ in-trees denoted
+by $T_{i,1},T_{i,2},..., T_{i,f(s_i)}$ for every $i=1,...,d$ such that
+$T_{i,1},...,T_{i,f(s_i)}$ are rooted at $s_i$, each $T_{i,j}$ spans vertices
+from which $s_i$ is reachable and the union of all arc sets of $T_{i,j}$ for
+$i=1,...,d$ and $j=1,...,f(s_i)$ covers $A$. In this paper, we prove that such
+set of in-trees covering $A$ can be found by using an algorithm for the
+weighted matroid intersection problem in time bounded by a polynomial in
+$\sum_{i=1}^df(s_i)$ and the size of $D$. Furthermore, for the case where $D$
+is acyclic, we present another characterization of the existence of in-trees
+covering $A$, and then we prove that in-trees covering $A$ can be computed more
+efficiently than the general case by finding maximum matchings in a series of
+bipartite graphs.

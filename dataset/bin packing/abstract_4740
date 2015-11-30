@@ -1,0 +1,22 @@
+The celebrated multi-armed bandit problem in decision theory models the basic
+trade-off between exploration, or learning about the state of a system, and
+exploitation, or utilizing the system. In this paper we study the variant of
+the multi-armed bandit problem where the exploration phase involves costly
+experiments and occurs before the exploitation phase; and where each play of an
+arm during the exploration phase updates a prior belief about the arm. The
+problem of finding an inexpensive exploration strategy to optimize a certain
+exploitation objective is NP-Hard even when a single play reveals all
+information about an arm, and all exploration steps cost the same.
+  We provide the first polynomial time constant-factor approximation algorithm
+for this class of problems. We show that this framework also generalizes
+several problems of interest studied in the context of data acquisition in
+sensor networks. Our analyses also extends to switching and setup costs, and to
+concave utility objectives.
+  Our solution approach is via a novel linear program rounding technique based
+on stochastic packing. In addition to yielding exploration policies whose
+performance is within a small constant factor of the adaptive optimal policy, a
+nice feature of this approach is that the resulting policies explore the arms
+sequentially without revisiting any arm. Sequentiality is a well-studied
+concept in decision theory, and is very desirable in domains where multiple
+explorations can be conducted in parallel, for instance, in the sensor network
+context.

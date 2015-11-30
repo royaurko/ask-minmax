@@ -1,0 +1,21 @@
+Standard Collaborative Filtering (CF) algorithms make use of interactions
+between users and items in the form of implicit or explicit ratings alone for
+generating recommendations. Similarity among users or items is calculated
+purely based on rating overlap in this case,without considering explicit
+properties of users or items involved, limiting their applicability in domains
+with very sparse rating spaces. In many domains such as movies, news or
+electronic commerce recommenders, considerable contextual data in text form
+describing item properties is available along with the rating data, which could
+be utilized to improve recommendation quality.In this paper, we propose a novel
+approach to improve standard CF based recommenders by utilizing latent
+Dirichlet allocation (LDA) to learn latent properties of items, expressed in
+terms of topic proportions, derived from their textual description. We infer
+user's topic preferences or persona in the same latent space,based on her
+historical ratings. While computing similarity between users, we make use of a
+combined similarity measure involving rating overlap as well as similarity in
+the latent topic space. This approach alleviates sparsity problem as it allows
+calculation of similarity between users even if they have not rated any items
+in common. Our experiments on multiple public datasets indicate that the
+proposed hybrid approach significantly outperforms standard user Based and item
+Based CF recommenders in terms of classification accuracy metrics such as
+precision, recall and f-measure.

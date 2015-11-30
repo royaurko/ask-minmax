@@ -1,0 +1,22 @@
+Given a digraph $G = (V_G, A_G)$, a \emph{branching} in $G$ is a set of arcs
+$B \subseteq A_G$ such that the underlying undirected graph spanned by $B$ is
+acyclic and each node in $G$ is entered (\emph{covered}) by at most one arc
+from $B$. Tarjan developed efficient algorithms (based on the cycle contraction
+technique) for the following problem: given a digraph $G$ with a \emph{weight}
+function $w \colon A_G \to \R$, find a branching $B$ of the minimum weight
+$w(B) := \sum_{a \in B} w(a)$ among all branchings with the maximum ardinality
+$\abs{B}$. We generalize this notion as follows: for a digraph $G$ and a
+matroid $\calM_V$ on $V_G$, a \emph{matroid branching} in $G$ w.r.t. $\calM_V$
+is a branching in $G$ such that the covered set of nodes is independent w.r.t.
+$\calM_V$. The unweighted (cardinality) problem consists in finding a matroid
+branching $B$ with $\abs{B}$ maximum. We show that the general cycle
+contraction approach is applicable to this problem and leads to an efficient
+algorithm (provided that an oracle is given for testing independence in the
+matroids arising as the result of the contraction procedure). In the weighted
+version we are looking for a matroid branching $B$ that minimizes $w(B)$ (for a
+given weight function $w \colon A_G \to \R$) among all matroid branchings of
+the maximum cardinality. We show that if $\calM_V$ is a rainbow matroid (that
+is, nodes of $G$ are marked with colors and it is forbidden to cover more than
+one node of any color), then there exists an $O(\min(n^2, m \log n))$ method,
+matching the complexity of Tarjan's algorithm (here $n := \abs{V_G}$, $m :=
+\abs{A_G}$).

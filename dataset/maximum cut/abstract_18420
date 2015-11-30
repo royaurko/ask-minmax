@@ -1,0 +1,24 @@
+It is well-known that the noise associated with the collection of an
+astronomical image by a CCD camera is, in large part, Poissonian. One would
+expect, therefore, that computational approaches that incorporate this a priori
+information will be more effective than those that do not. The Richardson-Lucy
+(RL) algorithm, for example, can be viewed as a maximum-likelihood (ML) method
+for image deblurring when the data noise is assumed to be Poissonian.
+Least-squares (LS) approaches, on the other hand, arises from the assumption
+that the noise is Gaussian with fixed variance across pixels, which is rarely
+accurate. Given this, it is surprising that in many cases results obtained
+using LS techniques are relatively insensitive to whether the noise is
+Poissonian or Gaussian. Furthermore, in the presence of Poisson noise, results
+obtained using LS techniques are often comparable with those obtained by the RL
+algorithm. We seek an explanation of these phenomena via an examination of the
+regularization properties of particular LS algorithms. In addition, a careful
+analysis of the RL algorithm yields an explanation as to why it is more
+effective than LS approaches for star-like objects, and why it provides similar
+reconstructions for extended objects. We finish with a convergence analysis of
+the RL algorithm. Numerical results are presented throughout the paper. It is
+important to stress that the subject treated in this paper is not academic. In
+fact, in comparison with many ML algorithms, the LS algorithms are much easier
+to use and to implement, often provide faster convergence rates, and are much
+more flexible regarding the incorporation of constraints on the solution.
+Consequently, if little to no improvement is gained in the use of an ML
+approach over an LS algorithm, the latter will often be the preferred approach.

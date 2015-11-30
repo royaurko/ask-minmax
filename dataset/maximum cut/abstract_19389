@@ -1,0 +1,25 @@
+The Internet of things (IoT) holds much commercial potential and could
+facilitate distributed multiple-input multiple-output (MIMO) communication in
+future systems. We study a distributed reception scenario in which a
+transmitter equipped with multiple antennas sends multiple streams via spatial
+multiplexing to a large number of geographically separated single antenna
+receive nodes. The receive nodes then quantize their received signals and
+forward the quantized received signals to a receive fusion center. With global
+channel knowledge and forwarded quantized information from the receive nodes,
+the fusion center attempts to decode the transmitted symbols. We assume the
+transmit vector consists of phase shift keying (PSK) constellation points, and
+each receive node quantizes its received signal with one bit for each of the
+real and imaginary parts of the signal to minimize the transmission overhead
+between the receive nodes and the fusion center. Fusing this data is a
+non-trivial problem because the receive nodes cannot decode the transmitted
+symbols before quantization. Instead, each receive node processes a single
+quantity, i.e., the received signal, regardless of the number of transmitted
+symbols. We develop an optimal maximum likelihood (ML) receiver and a
+low-complexity zero-forcing (ZF)-type receiver at the fusion center. Despite
+its suboptimality, the ZF-type receiver is simple to implement and shows
+comparable performance with the ML receiver in the low signal-to-noise ratio
+(SNR) regime but experiences an error rate floor at high SNR. It is shown that
+this error floor can be overcome by increasing the number of receive nodes.
+Hence, the ZF-type receiver would be a practical solution for distributed
+reception with spatial multiplexing in the era of the IoT where we can easily
+have a large number of receive nodes.

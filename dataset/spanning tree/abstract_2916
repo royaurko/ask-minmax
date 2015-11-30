@@ -1,0 +1,13 @@
+An L(2,1)-labeling of a graph $G$ is an assignment $f$ from the vertex set
+$V(G)$ to the set of nonnegative integers such that $|f(x)-f(y)|\ge 2$ if $x$
+and $y$ are adjacent and $|f(x)-f(y)|\ge 1$ if $x$ and $y$ are at distance 2,
+for all $x$ and $y$ in $V(G)$. A $k$-L(2,1)-labeling is an assignment
+$f:V(G)\to\{0,..., k\}$, and the L(2,1)-labeling problem asks the minimum $k$,
+which we denote by $\lambda(G)$, among all possible assignments. It is known
+that this problem is NP-hard even for graphs of treewidth 2, and tree is one of
+a very few classes for which the problem is polynomially solvable. The running
+time of the best known algorithm for trees had been $\mO(\Delta^{4.5} n)$ for
+more than a decade, however, an $\mO(n^{1.75})$-time algorithm has been
+proposed recently, which substantially improved the previous one, where
+$\Delta$ is the maximum degree of $T$ and $n=|V(T)|$. In this paper, we finally
+establish a linear time algorithm for L(2,1)-labeling of trees.

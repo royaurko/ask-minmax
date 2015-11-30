@@ -1,0 +1,13 @@
+This paper introduces a special family of randomized algorithms for Max DICUT
+that we call oblivious algorithms. Let the bias of a vertex be the ratio
+between the total weight of its outgoing edges and the total weight of all its
+edges. An oblivious algorithm selects at random in which side of the cut to
+place a vertex v, with probability that only depends on the bias of v,
+independently of other vertices. The reader may observe that the algorithm that
+ignores the bias and chooses each side with probability 1/2 has an
+approximation ratio of 1/4, whereas no oblivious algorithm can have an
+approximation ratio better than 1/2 (with an even directed cycle serving as a
+negative example). We attempt to characterize the best approximation ratio
+achievable by oblivious algorithms, and present results that are nearly tight.
+The paper also discusses natural extensions of the notion of oblivious
+algorithms, and extensions to the more general problem of Max 2-AND.

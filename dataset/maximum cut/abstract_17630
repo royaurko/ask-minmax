@@ -1,0 +1,20 @@
+Several works have developed vector-linear maximum-distance separable (MDS)
+storage codes that min- imize the total communication cost required to repair a
+single coded symbol after an erasure, referred to as repair bandwidth (BW).
+Vector codes allow communicating fewer sub-symbols per node, instead of the
+entire content. This allows non trivial savings in repair BW. In sharp
+contrast, classic codes, like Reed- Solomon (RS), used in current storage
+systems, are deemed to suffer from naive repair, i.e. downloading the entire
+stored message to repair one failed node. This mainly happens because they are
+scalar-linear. In this work, we present a simple framework that treats scalar
+codes as vector-linear. In some cases, this allows significant savings in
+repair BW. We show that vectorized scalar codes exhibit properties that
+simplify the design of repair schemes. Our framework can be seen as a finite
+field analogue of real interference alignment. Using our simplified framework,
+we design a scheme that we call clique-repair which provably identifies the
+best linear repair strategy for any scalar 2-parity MDS code, under some
+conditions on the sub-field chosen for vectorization. We specify optimal repair
+schemes for specific (5,3)- and (6,4)-Reed- Solomon (RS) codes. Further, we
+present a repair strategy for the RS code currently deployed in the Facebook
+Analytics Hadoop cluster that leads to 20% of repair BW savings over naive
+repair which is the repair scheme currently used for this code.

@@ -1,0 +1,12 @@
+This paper presents the first step of a wider research effort to apply tree
+automata completion to the static analysis of functional programs. Tree
+Automata Completion is a family of techniques for computing or approximating
+the set of terms reachable by a rewriting relation. The completion algorithm we
+focus on is parameterized by a set E of equations controlling the precision of
+the approximation and influencing its termination. For completion to be used as
+a static analysis, the first step is to guarantee its termination. In this
+work, we thus give a sufficient condition on E and T(F) for completion
+algorithm to always terminate. In the particular setting of functional
+programs, this condition can be relaxed into a condition on E and T(C) (terms
+built on the set of constructors) that is closer to what is done in the field
+of static analysis, where abstractions are performed on data.

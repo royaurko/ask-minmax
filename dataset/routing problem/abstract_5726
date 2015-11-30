@@ -1,0 +1,16 @@
+This paper presents GRT, a domain-independent heuristic planning system for
+STRIPS worlds. GRT solves problems in two phases. In the pre-processing phase,
+it estimates the distance between each fact and the goals of the problem, in a
+backward direction. Then, in the search phase, these estimates are used in
+order to further estimate the distance between each intermediate state and the
+goals, guiding so the search process in a forward direction and on a best-first
+basis. The paper presents the benefits from the adoption of opposite directions
+between the preprocessing and the search phases, discusses some difficulties
+that arise in the pre-processing phase and introduces techniques to cope with
+them. Moreover, it presents several methods of improving the efficiency of the
+heuristic, by enriching the representation and by reducing the size of the
+problem. Finally, a method of overcoming local optimal states, based on domain
+axioms, is proposed. According to it, difficult problems are decomposed into
+easier sub-problems that have to be solved sequentially. The performance
+results from various domains, including those of the recent planning
+competitions, show that GRT is among the fastest planners.

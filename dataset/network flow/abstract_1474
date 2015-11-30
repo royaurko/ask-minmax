@@ -1,0 +1,17 @@
+BitTorrent has recently introduced LEDBAT, a novel application-layer
+congestion control protocol for data exchange. The protocol design starts from
+the assumption that network bottlenecks are at the access of the network, and
+that thus user traffic competes creating self-inducing congestion. To relieve
+from this phenomenon, LEDBAT is designed to quickly infer that self-induced
+congestion is approaching (by detecting relative changes of the one-way delay
+in the transmission path), and to react by reducing the sending rate prior that
+congestion occurs. Prior work has however shown LEDBAT to be affected by a
+latecomer advantage, where newly arriving connections can starve already
+existing flows. In this work, we propose modifications to the congestion window
+update mechanism of the LEDBAT protocol that aim at solving this issue,
+guaranteeing thus intra-protocol fairness and efficiency. Closed-form
+expressions for the stationary throughput and queue occupancy are provided via
+a fluid model, whose accuracy is confirmed by means of ns2 packet level
+simulations. Our results show that the proposed change can effective solve the
+latecomer issue, without affecting the other original LEDBAT goals at the same
+time.

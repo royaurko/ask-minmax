@@ -1,0 +1,10 @@
+The problem of estimating frequency moments of a data stream has attracted a
+lot of attention since the onset of streaming algorithms [AMS99]. While the
+space complexity for approximately computing the $p^{\rm th}$ moment, for
+$p\in(0,2]$ has been settled [KNW10], for $p>2$ the exact complexity remains
+open. For $p>2$ the current best algorithm uses $O(n^{1-2/p}\log n)$ words of
+space [AKO11,BO10], whereas the lower bound is of $\Omega(n^{1-2/p})$ [BJKS04].
+  In this paper, we show a tight lower bound of $\Omega(n^{1-2/p}\log n)$ words
+for the class of algorithms based on linear sketches, which store only a sketch
+$Ax$ of input vector $x$ and some (possibly randomized) matrix $A$. We note
+that all known algorithms for this problem are linear sketches.

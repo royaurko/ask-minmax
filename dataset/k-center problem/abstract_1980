@@ -1,0 +1,25 @@
+In this paper, we present near-optimal space bounds for Lp-samplers. Given a
+stream of updates (additions and subtraction) to the coordinates of an
+underlying vector x \in R^n, a perfect Lp sampler outputs the i-th coordinate
+with probability |x_i|^p/||x||_p^p. In SODA 2010, Monemizadeh and Woodruff
+showed polylog space upper bounds for approximate Lp-samplers and demonstrated
+various applications of them. Very recently, Andoni, Krauthgamer and Onak
+improved the upper bounds and gave a O(\epsilon^{-p} log^3 n) space \epsilon
+relative error and constant failure rate Lp-sampler for p \in [1,2]. In this
+work, we give another such algorithm requiring only O(\epsilon^{-p} log^2 n)
+space for p \in (1,2). For p \in (0,1), our space bound is O(\epsilon^{-1}
+log^2 n), while for the $p=1$ case we have an O(log(1/\epsilon)\epsilon^{-1}
+log^2 n) space algorithm. We also give a O(log^2 n) bits zero relative error
+L0-sampler, improving the O(log^3 n) bits algorithm due to Frahling, Indyk and
+Sohler.
+  As an application of our samplers, we give better upper bounds for the
+problem of finding duplicates in data streams. In case the length of the stream
+is longer than the alphabet size, L1 sampling gives us an O(log^2 n) space
+algorithm, thus improving the previous O(log^3 n) bound due to Gopalan and
+Radhakrishnan.
+  In the second part of our work, we prove an Omega(log^2 n) lower bound for
+sampling from 0, \pm 1 vectors (in this special case, the parameter p is not
+relevant for Lp sampling). This matches the space of our sampling algorithms
+for constant \epsilon > 0. We also prove tight space lower bounds for the
+finding duplicates and heavy hitters problems. We obtain these lower bounds
+using reductions from the communication complexity problem augmented indexing.

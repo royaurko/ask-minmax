@@ -1,0 +1,23 @@
+We discuss the cosmological simulation code GADGET-2, a new massively
+parallel TreeSPH code, capable of following a collisionless fluid with the
+N-body method, and an ideal gas by means of smoothed particle hydrodynamics
+(SPH). Our implementation of SPH manifestly conserves energy and entropy in
+regions free of dissipation, while allowing for fully adaptive smoothing
+lengths. Gravitational forces are computed with a hierarchical multipole
+expansion, which can optionally be applied in the form of a TreePM algorithm,
+where only short-range forces are computed with the `tree'-method while
+long-range forces are determined with Fourier techniques. Time integration is
+based on a quasi-symplectic scheme where long-range and short-range forces can
+be integrated with different timesteps. Individual and adaptive short-range
+timesteps may also be employed. The domain decomposition used in the
+parallelisation algorithm is based on a space-filling curve, resulting in high
+flexibility and tree force errors that do not depend on the way the domains are
+cut. The code is efficient in terms of memory consumption and required
+communication bandwidth. It has been used to compute the first cosmological
+N-body simulation with more than 10^10 dark matter particles, reaching a
+homogeneous spatial dynamic range of 10^5 per dimension in a 3D box. It has
+also been used to carry out very large cosmological SPH simulations that
+account for radiative cooling and star formation, reaching total particle
+numbers of more than 250 million. We present the algorithms used by the code
+and discuss their accuracy and performance using a number of test problems.
+GADGET-2 is publicly released to the research community.

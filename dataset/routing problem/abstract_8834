@@ -1,0 +1,25 @@
+Pose Graph Optimization (PGO) is the problem of estimating a set of poses
+from pairwise relative measurements. PGO is a nonconvex problem, and currently
+no known technique can guarantee the computation of an optimal solution. In
+this paper, we show that Lagrangian duality allows computing a globally optimal
+solution, under certain conditions that are satisfied in many practical cases.
+Our first contribution is to frame the PGO problem in the complex domain. This
+makes analysis easier and allows drawing connections with the recent literature
+on unit gain graphs. Exploiting this connection we prove non-trival results
+about the spectrum of the matrix underlying the problem. The second
+contribution is to formulate and analyze the dual problem in the complex
+domain. Our analysis shows that the duality gap is connected to the number of
+eigenvalues of the penalized pose graph matrix, which arises from the solution
+of the dual. We prove that if this matrix has a single eigenvalue in zero, then
+(i) the duality gap is zero, (ii) the primal PGO problem has a unique solution,
+and (iii) the primal solution can be computed by scaling an eigenvector of the
+penalized pose graph matrix. The third contribution is algorithmic: we exploit
+the dual problem and propose an algorithm that computes a guaranteed optimal
+solution for PGO when the penalized pose graph matrix satisfies the Single Zero
+Eigenvalue Property (SZEP). We also propose a variant that deals with the case
+in which the SZEP is not satisfied. The fourth contribution is a numerical
+analysis. Empirical evidence shows that in the vast majority of cases (100% of
+the tests under noise regimes of practical robotics applications) the penalized
+pose graph matrix does satisfy the SZEP, hence our approach allows computing
+the global optimal solution. Finally, we report simple counterexamples in which
+the duality gap is nonzero, and discuss open problems.

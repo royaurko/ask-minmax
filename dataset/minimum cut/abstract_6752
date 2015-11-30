@@ -1,0 +1,18 @@
+We investigate distributed source coding of two correlated sources X and Y
+where messages are passed to a decoder in a cascade fashion. The encoder of X
+sends a message at rate R_1 to the encoder of Y. The encoder of Y then sends a
+message to the decoder at rate R_2 based both on Y and on the message it
+received about X. The decoder's task is to estimate a function of X and Y. For
+example, we consider the minimum mean squared-error distortion when encoding
+the sum of jointly Gaussian random variables under these constraints. We also
+characterize the rates needed to reconstruct a function of X and Y losslessly.
+  Our general contribution toward understanding the limits of the cascade
+multiterminal source coding network is in the form of inner and outer bounds on
+the achievable rate region for satisfying a distortion constraint for an
+arbitrary distortion function d(x,y,z). The inner bound makes use of a balance
+between two encoding tactics--relaying the information about X and
+recompressing the information about X jointly with Y. In the Gaussian case, a
+threshold is discovered for identifying which of the two extreme strategies
+optimizes the inner bound. Relaying outperforms recompressing the sum at the
+relay for some rate pairs if the variance of X is greater than the variance of
+Y.

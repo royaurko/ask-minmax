@@ -1,0 +1,21 @@
+We propose robust and efficient algorithms for the joint sparse recovery
+problem in compressed sensing, which simultaneously recover the supports of
+jointly sparse signals from their multiple measurement vectors obtained through
+a common sensing matrix. In a favorable situation, the unknown matrix, which
+consists of the jointly sparse signals, has linearly independent nonzero rows.
+In this case, the MUSIC (MUltiple SIgnal Classification) algorithm, originally
+proposed by Schmidt for the direction of arrival problem in sensor array
+processing and later proposed and analyzed for joint sparse recovery by Feng
+and Bresler, provides a guarantee with the minimum number of measurements. We
+focus instead on the unfavorable but practically significant case of
+rank-defect or ill-conditioning. This situation arises with limited number of
+measurement vectors, or with highly correlated signal components. In this case
+MUSIC fails, and in practice none of the existing methods can consistently
+approach the fundamental limit. We propose subspace-augmented MUSIC (SA-MUSIC),
+which improves on MUSIC so that the support is reliably recovered under such
+unfavorable conditions. Combined with subspace-based greedy algorithms also
+proposed and analyzed in this paper, SA-MUSIC provides a computationally
+efficient algorithm with a performance guarantee. The performance guarantees
+are given in terms of a version of restricted isometry property. In particular,
+we also present a non-asymptotic perturbation analysis of the signal subspace
+estimation that has been missing in the previous study of MUSIC.

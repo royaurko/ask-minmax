@@ -1,0 +1,22 @@
+We explore the geometry of complex networks in terms of an n-dimensional
+Euclidean embedding represented by the Moore-Penrose pseudo-inverse of the
+graph Laplacian $(\bb L^+)$. The squared distance of a node $i$ to the origin
+in this n-dimensional space $(l^+_{ii})$, yields a topological centrality index
+$(\mathcal{C}^{*}(i) = 1/l^+_{ii})$ for node $i$. In turn, the sum of
+reciprocals of individual node structural centralities,
+$\sum_{i}1/\mathcal{C}^*(i) = \sum_{i} l^+_{ii}$, i.e. the trace of $\bb L^+$,
+yields the well-known Kirchhoff index $(\mathcal{K})$, an overall structural
+descriptor for the network. In addition to this geometric interpretation, we
+provide alternative interpretations of the proposed indices to reveal their
+true topological characteristics: first, in terms of forced detour overheads
+and frequency of recurrences in random walks that has an interesting analogy to
+voltage distributions in the equivalent electrical network; and then as the
+average connectedness of $i$ in all the bi-partitions of the graph. These
+interpretations respectively help establish the topological centrality
+$(\mathcal{C}^{*}(i))$ of node $i$ as a measure of its overall position as well
+as its overall connectedness in the network; thus reflecting the robustness of
+node $i$ to random multiple edge failures. Through empirical evaluations using
+synthetic and real world networks, we demonstrate how the topological
+centrality is better able to distinguish nodes in terms of their structural
+roles in the network and, along with Kirchhoff index, is appropriately
+sensitive to perturbations/rewirings in the network.

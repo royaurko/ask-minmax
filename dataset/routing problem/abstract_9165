@@ -1,0 +1,13 @@
+It has been shown by Alon et al. that the so-called 'all-pairs shortest-path'
+problem can be solved in O((MV)^2.688 * log^3(V)) for graphs with V vertices,
+with integer distances bounded by M. We solve the more general problem for
+graphs in R (assuming no negative cycles), with expected-case running time
+O(V^2.5 * log(V)). While our result appears to violate the Omega(V^3)
+requirement of "Funny Matrix Multiplication" (due to Kerr), we find that it has
+a sub-cubic expected time solution subject to reasonable conditions on the data
+distribution. The expected time solution arises when certain sub-problems are
+uncorrelated, though we can do better/worse than the expected-case under
+positive/negative correlation (respectively). Whether we observe
+positive/negative correlation depends on the statistics of the graph in
+question. In practice, our algorithm is significantly faster than
+Floyd-Warshall, even for dense graphs.

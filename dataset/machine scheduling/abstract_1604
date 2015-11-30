@@ -1,0 +1,26 @@
+A behavioural theory consists of machine-independent postulates
+characterizing a particular class of algorithms or systems, an abstract machine
+model that provably satisfies these postulates, and a rigorous proof that any
+algorithm or system stipulated by the postulates is captured by the abstract
+machine model. The class of interest in this article is that of synchronous
+parallel algorithms. For this class a behavioural theory has already been
+developed by Blass and Gurevich, which unfortunately, though mathematically
+correct, fails to be convincing, as it is not intuitively clear that the
+postulates really capture the essence of (synchronous) parallel algorithms.
+  In this article we present a much simpler (and presumably more convincing)
+set of four postulates for (synchronous) parallel algorithms, which are rather
+close to those used in Gurevich's celebrated sequential ASM thesis, i.e. the
+behavioural theory of sequential algorithms. The key difference is made by an
+extension of the bounded exploration postulate using multiset comprehension
+terms instead of ground terms formulated over the signature of the states. In
+addition, all implicit assumptions are made explicit, which amounts to
+considering states of a parallel algorithm to be represented by meta-finite
+first-order structures.
+  The article first provides the necessary evidence that the axiomatization
+presented in this article characterizes indeed the whole class of
+deterministic, synchronous, parallel algorithms, then formally proves that
+parallel algorithms are captured by Abstract State Machines (ASMs). The proof
+requires some recourse to methods from finite model theory, by means of which
+it can be shown that if a critical tuple defines an update in some update set,
+then also every other tuple that is logically indistinguishable defines an
+update in that update set.

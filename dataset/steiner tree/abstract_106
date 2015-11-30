@@ -1,0 +1,17 @@
+The minimum feature size of a crossing-free straight line drawing is the
+minimum distance between a vertex and a non-incident edge. This quantity
+measures the resolution needed to display a figure or the tool size needed to
+mill the figure. The spread is the ratio of the diameter to the minimum feature
+size. While many algorithms (particularly in meshing) depend on the spread of
+the input, none explicitly consider finding a mesh whose spread is similar to
+the input. When a polygon is partitioned into smaller regions, such as
+triangles or quadrangles, the degradation is the ratio of original to final
+spread (the final spread is always greater).
+  Here we present an algorithm to quadrangulate a simple n-gon, while achieving
+constant degradation. Note that although all faces have a quadrangular shape,
+the number of edges bounding each face may be larger. This method uses Theta(n)
+Steiner points and produces Theta(n) quadrangles. In fact to obtain constant
+degradation, Omega(n) Steiner points are required by any algorithm.
+  We also show that, for some polygons, a constant factor cannot be achieved by
+any triangulation, even with an unbounded number of Steiner points. The
+specific lower bounds depend on whether Steiner vertices are used or not.

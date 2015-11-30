@@ -1,0 +1,14 @@
+Resources in a distributed system can be identified using identifiers based
+on random numbers. When using a distributed hash table to resolve such
+identifiers to network locations, the straightforward approach is to store the
+network location directly in the hash table entry associated with an
+identifier. When a mobile host contains a large number of resources, this
+requires that all of the associated hash table entries must be updated when its
+network address changes.
+  We propose an alternative approach where we store a host identifier in the
+entry associated with a resource identifier and the actual network address of
+the host in a separate host entry. This can drastically reduce the time
+required for updating the distributed hash table when a mobile host changes its
+network address. We also investigate under which circumstances our approach
+should or should not be used. We evaluate and confirm the usefulness of our
+approach with experiments run on top of OpenDHT.

@@ -1,0 +1,18 @@
+Volunteer Computing, sometimes called Public Resource Computing, is an
+emerging computational model that is very suitable for work-pooled parallel
+processing. As more complex grid applications make use of work flows in their
+design and deployment it is reasonable to consider the impact of work flow
+deployment over a Volunteer Computing infrastructure. In this case, the inter
+work flow I/O can lead to a significant increase in I/O demands at the work
+pool server. A possible solution is the use of a Peer-to- Peer based parallel
+computing architecture to off-load this I/O demand to the workers; where the
+workers can fulfill some aspects of work flow coordination and I/O checking,
+etc. However, achieving robustness in such a large scale system is a
+challenging hurdle towards the decentralized execution of work flows and
+general parallel processes. To increase robustness, we propose and show the
+merits of using an adaptive checkpoint scheme that efficiently checkpoints the
+status of the parallel processes according to the estimation of relevant
+network and peer parameters. Our scheme uses statistical data observed during
+runtime to dynamically make checkpoint decisions in a completely de-
+centralized manner. The results of simulation show support for our proposed
+approach in terms of reduced required runtime.

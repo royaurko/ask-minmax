@@ -1,0 +1,19 @@
+The graph reconstruction conjecture asserts that every finite simple graph on
+at least three vertices can be reconstructed up to isomorphism from its deck -
+the collection of its vertex-deleted subgraphs. Kocay's Lemma is an important
+tool in graph reconstruction. Roughly speaking, given the deck of a graph $G$
+and any finite sequence of graphs, it gives a linear constraint that every
+reconstruction of $G$ must satisfy.
+  Let $\psi(n)$ be the number of distinct (mutually non-isomorphic) graphs on
+$n$ vertices, and let $d(n)$ be the number of distinct decks that can be
+constructed from these graphs. Then the difference $\psi(n) - d(n)$ measures
+how many graphs cannot be reconstructed from their decks. In particular, the
+graph reconstruction conjecture is true for $n$-vertex graphs if and only if
+$\psi(n) = d(n)$.
+  We give a framework based on Kocay's lemma to study this discrepancy. We
+prove that if $M$ is a matrix of covering numbers of graphs by sequences of
+graphs, then $d(n) \geq \mathsf{rank}_\mathbb{R}(M)$. In particular, all
+$n$-vertex graphs are reconstructible if one such matrix has rank $\psi(n)$. To
+complement this result, we prove that it is possible to choose a family of
+sequences of graphs such that the corresponding matrix $M$ of covering numbers
+satisfies $d(n) = \mathsf{rank}_\mathbb{R}(M)$.

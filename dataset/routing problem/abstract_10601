@@ -1,0 +1,18 @@
+While previous work on energy-efficient algorithms focused on assumption that
+tasks can be assigned to any processor, we initially study the problem of task
+scheduling on restricted parallel processors. The objective is to minimize the
+overall energy consumption while speed scaling (SS) method is used to reduce
+energy consumption under the execution time constraint (Makespan $C_{max}$). In
+this work, we discuss the speed setting in the continuous model that processors
+can run at arbitrary speed in $[s_{min},s_{max}]$. The energy-efficient
+scheduling problem, involving task assignment and speed scaling, is inherently
+complicated as it is proved to be NP-Complete. We formulate the problem as an
+Integer Programming (IP) problem. Specifically, we devise a polynomial time
+optimal scheduling algorithm for the case tasks have a uniform size. Our
+algorithm runs in $O(mn^3logn)$ time, where $m$ is the number of processors and
+$n$ is the number of tasks. We then present a polynomial time algorithm that
+achieves an approximation factor of $2^{\alpha-1}(2-\frac{1}{m^{\alpha}})$
+($\alpha$ is the power parameter) when the tasks have arbitrary size work.
+Experimental results demonstrate that our algorithm could provide an efficient
+scheduling for the problem of task scheduling on restricted parallel
+processors.

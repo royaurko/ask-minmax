@@ -1,0 +1,19 @@
+This paper mainly investigates the circular open dimension problem (CODP),
+which consists of packing a set of circles of known radii into a strip of fixed
+width and unlimited length without overlapping. The objective is to minimize
+the length of the strip. An iterated tabu search approach, named ITS, is
+proposed. ITS starts from a randomly generated solution and attempts to gain
+improvements by a tabu search procedure. After that, if the obtained solution
+is not feasible, a perturbation operator is subsequently employed to
+reconstruct the incumbent solution and an acceptance criterion is implemented
+to determine whether or not accept the perturbed solution. This process is
+repeated until a feasible solution has been found or the allowed computation
+time has been elapsed. Computational experiments based on well-known benchmark
+instances show that ITS produces quite competitive results with respect to the
+best known results. For 18 representative CODP instances taken from the
+literature, ITS succeeds in improving 13 best known results within reasonable
+time. In addition, for another challenging related variant: the problem of
+packing arbitrary sized circles into a circular container, ITS also succeeds in
+improving many best known results. Supplementary experiments are also provided
+to analyze the influence of the perturbation operator, as well as the
+acceptance criterion.

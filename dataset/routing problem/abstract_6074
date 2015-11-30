@@ -1,0 +1,17 @@
+In this paper, we propose a novel iterative convex approximation algorithm to
+efficiently compute stationary points for a large class of possibly nonconvex
+optimization problems. The stationary points are obtained by solving a sequence
+of successively refined approximate problems, each of which is much easier to
+solve than the original problem. To achieve convergence, the approximate
+problem only needs to exhibit a weak form of convexity, namely,
+pseudo-convexity. We show that the proposed framework not only includes as
+special cases a number of existing methods, for example, the gradient method
+and the Jacobi algorithm, but also leads to new algorithms which enjoy easier
+implementation and faster convergence speed. We also propose a novel line
+search method for nondifferentiable optimization problems, which is carried out
+over a properly constructed differentiable function with the benefit of a
+simplified implementation as compared to state-of-the-art line search
+techniques that directly operate on the original nondifferentiable objective
+function. The advantages of the proposed algorithm are shown, both
+theoretically and numerically, by several example applications, namely, MIMO
+broadcast channel capacity computation and LASSO in sparse signal recovery.

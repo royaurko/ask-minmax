@@ -1,0 +1,16 @@
+Real-world programs are neither monolithic nor static -- they are constructed
+using platform and third party libraries, and both programs and libraries
+continuously evolve in response to change pressure. In case of the Java
+language, rules defined in the Java Language and Java Virtual Machine
+Specifications define when library evolution is safe. These rules distinguish
+between three types of compatibility - binary, source and behavioural. We claim
+that some of these rules are counter intuitive and not well-understood by many
+developers. We present the results of a survey where we quizzed developers
+about their understanding of the various types of compatibility. 414 developers
+responded to our survey. We find that while most programmers are familiar with
+the rules of source compatibility, they generally lack knowledge about the
+rules of binary and behavioural compatibility. This can be problematic when
+organisations switch from integration builds to technologies that require
+dynamic linking, such as OSGi. We have assessed the gravity of the problem by
+studying how often linkage-related problems are referenced in issue tracking
+systems, and find that they are common.

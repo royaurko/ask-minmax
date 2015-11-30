@@ -1,0 +1,14 @@
+In this article we study the stable marriage game induced by the
+men-proposing Gale-Shapley algorithm. Our setting is standard: all the lists
+are complete and the matching mechanism is the men-proposing Gale-Shapley
+algorithm. It is well known that in this setting, men cannot cheat, but women
+can. In fact, Teo, Sethuraman and Tan \cite{TST01}, show that there is a
+polynomial time algorithm to obtain, for a given strategy (the set of all
+lists) $Q$ and a woman $w$, the best partner attainable by changing her list.
+However, what if the resulting matching is not stable with respect to $Q$?
+Obviously, such a matching would be vulnerable to further manipulation, but is
+not mentioned in \cite{TST01}. In this paper, we consider (safe) manipulation
+that implies a stable matching in a most general setting. Specifically, our
+goal is to decide for a given $Q$, if w can manipulate her list to obtain a
+strictly better partner with respect to the true strategy $P$ (which may be
+different from $Q$), and also the outcome is a stable matching for $P$.

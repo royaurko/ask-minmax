@@ -1,0 +1,22 @@
+Energy consumption is a critical design issue in real-time systems,
+especially in battery- operated systems. Maintaining high performance, while
+extending the battery life between charges is an interesting challenge for
+system designers. Dynamic Voltage Scaling (DVS) allows a processor to
+dynamically change speed and voltage at run time, thereby saving energy by
+spreading run cycles into idle time. Knowing when to use full power and when
+not, requires the cooperation of the operating system scheduler. Usually,
+higher processor voltage and frequency leads to higher system throughput while
+energy reduction can be obtained using lower voltage and frequency. Instead of
+lowering processor voltage and frequency as much as possible, energy efficient
+real-time scheduling adjusts voltage and frequency according to some
+optimization criteria, such as low energy consumption or high throughput, while
+it meets the timing constraints of the real-time tasks. As the quantity and
+functional complexity of battery powered portable devices continues to raise,
+energy efficient design of such devices has become increasingly important. Many
+real-time scheduling algorithms have been developed recently to reduce energy
+consumption in the portable devices that use DVS capable processors. Three
+algorithms namely Red Tasks Only (RTO), Blue When Possible (BWP) and Red as
+Late as Possible (RLP) are proposed in the literature to schedule the real-time
+tasks in Weakly-hard real-time systems. This paper proposes optimal slack
+management algorithms to make the above existing weakly hard real-time
+scheduling algorithms energy efficient using DVS and DPD techniques.

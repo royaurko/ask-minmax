@@ -1,0 +1,17 @@
+Fixed-complexity Sphere Decoder (FSD) is a recently proposed technique for
+Multiple-Input Multiple-Output (MIMO) detection. It has several outstanding
+features such as constant throughput and large potential parallelism, which
+makes it suitable for efficient VLSI implementation. However, to our best
+knowledge, no VLSI implementation of FSD has been reported in the literature,
+although some FPGA prototypes of FSD with pipeline architecture have been
+developed. These solutions achieve very high throughput but at very high cost
+of hardware resources, making them impractical in real applications. In this
+paper, we present a novel four-nodes-per-cycle parallel architecture of FSD,
+with a breadth-first processing that allows for short critical path. The
+implementation achieves a throughput of 213.3 Mbps at 400 MHz clock frequency,
+at a cost of 0.18 mm2 Silicon area on 0.13{\mu}m CMOS technology. The proposed
+solution is much more economical compared with the existing FPGA
+implementations, and very suitable for practicl applications because of its
+balanced performance and hardware-complexity; moreover it has the flexibility
+to be expanded into an eight-nodes-per-cycle version in order to double the
+throughput.

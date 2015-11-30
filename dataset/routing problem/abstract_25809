@@ -1,0 +1,15 @@
+Cutwidth of a digraph is a width measure introduced by Chudnovsky, Fradkin,
+and Seymour [4] in connection with development of a structural theory for
+tournaments, or more generally, for semi-complete digraphs. In this paper we
+provide an algorithm with running time 2^{O(\sqrt{k log k})} * n^{O(1)} that
+tests whether the cutwidth of a given n-vertex semi-complete digraph is at most
+k, improving upon the currently fastest algorithm of the second contributor [18]
+that works in 2^{O(k)} * n^2 time. As a byproduct, we obtain a new algorithm
+for Feedback Arc Set in tournaments (FAST) with running time 2^{c\sqrt{k}} *
+n^{O(1)}, where c = 2\pi / \sqrt(3)*\ln(2) <= 5.24, that is simpler than the
+algorithms of Feige [9] and of Karpinski and Schudy[16], both also working in
+2^{O(\sqrt{k})} * n^{O(1)} time. Our techniques can be applied also to other
+layout problems on semi-complete digraphs. We show that the Optimal Linear
+Arrangement problem, a close relative of Feedback Arc Set, can be solved in
+2^{O(k^{1/3} \sqrt{\log k})} * n^{O(1)} time, where k is the target cost of the
+ordering.

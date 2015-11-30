@@ -1,0 +1,16 @@
+In this work, we propose a novel node splitting method for regression trees
+and incorporate it into the regression forest framework. Unlike traditional
+binary splitting, where the splitting rule is selected from a predefined set of
+binary splitting rules via trial-and-error, the proposed node splitting method
+first finds clusters of the training data which at least locally minimize the
+empirical loss without considering the input space. Then splitting rules which
+preserve the found clusters as much as possible are determined by casting the
+problem into a classification problem. Consequently, our new node splitting
+method enjoys more freedom in choosing the splitting rules, resulting in more
+efficient tree structures. In addition to the Euclidean target space, we
+present a variant which can naturally deal with a circular target space by the
+proper use of circular statistics. We apply the regression forest employing our
+node splitting to head pose estimation (Euclidean target space) and car
+direction estimation (circular target space) and demonstrate that the proposed
+method significantly outperforms state-of-the-art methods (38.5% and 22.5%
+error reduction respectively).

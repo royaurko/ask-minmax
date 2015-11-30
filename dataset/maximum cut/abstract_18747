@@ -1,0 +1,19 @@
+It is common practice in Markov chain Monte Carlo to update the simulation
+one variable (or sub-block of variables) at a time, rather than conduct a
+single full-dimensional update. When it is possible to draw from each
+full-conditional distribution associated with the target this is just a Gibbs
+sampler. Often at least one of the Gibbs updates is replaced with a
+Metropolis-Hastings step, yielding a Metropolis-Hastings-within-Gibbs
+algorithm. Strategies for combining component-wise updates include composition,
+random sequence and random scans. While these strategies can ease MCMC
+implementation and produce superior empirical performance compared to
+full-dimensional updates, the theoretical convergence properties of the
+associated Markov chains have received limited attention. We present conditions
+under which some component-wise Markov chains converge to the stationary
+distribution at a geometric rate. We pay particular attention to the
+connections between the convergence rates of the various component-wise
+strategies. This is important since it ensures the existence of tools that an
+MCMC practitioner can use to be as confident in the simulation results as if
+they were based on independent and identically distributed samples. We
+illustrate our results in two examples including a hierarchical linear mixed
+model and one involving maximum likelihood estimation for mixed models.

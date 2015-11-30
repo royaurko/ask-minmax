@@ -1,0 +1,14 @@
+We have recently carried out a computational campaign to investigate a model
+of coronal heating in three-dimensions using reduced magnetohydrodynamics
+(RMHD). Our code is built on a conventional scheme using the pseudo-spectral
+method, and is parallelized using MPI. The current investigation requires very
+long time integrations using high Lundquist numbers, where the formation of
+very fine current layers challenge the resolutions achievable even on massively
+parallel machines. We present here results of a port to Nvidia CUDA (Compute
+Unified Device Architecture) for hardware acceleration using graphics
+processing units (GPUs). In addition to a brief discussion of our general
+strategy, we will report code performance on several machines which span a
+variety of hardware configurations and capabilities. These include a desktop
+workstation with commodity hardware, a dedicated research workstation equipped
+with four Nvidia C2050 GPUs, as well as several large-scale GPU accelerated
+distributed memory machines: Lincoln/NCSA, Dirac/NERSC, and Keeneland/NICS.

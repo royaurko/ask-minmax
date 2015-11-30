@@ -1,0 +1,19 @@
+Detecting early signs of failures (anomalies) in complex systems is one of
+the main goal of preventive maintenance. It allows in particular to avoid
+actual failures by (re)scheduling maintenance operations in a way that
+optimizes maintenance costs. Aircraft engine health monitoring is one
+representative example of a field in which anomaly detection is crucial.
+Manufacturers collect large amount of engine related data during flights which
+are used, among other applications, to detect anomalies. This article
+introduces and studies a generic methodology that allows one to build automatic
+early signs of anomaly detection in a way that builds upon human expertise and
+that remains understandable by human operators who make the final maintenance
+decision. The main idea of the method is to generate a very large number of
+binary indicators based on parametric anomaly scores designed by experts,
+complemented by simple aggregations of those scores. A feature selection method
+is used to keep only the most discriminant indicators which are used as inputs
+of a Naive Bayes classifier. This give an interpretable classifier based on
+interpretable anomaly detectors whose parameters have been optimized indirectly
+by the selection process. The proposed methodology is evaluated on simulated
+data designed to reproduce some of the anomaly types observed in real world
+engines.

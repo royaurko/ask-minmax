@@ -1,0 +1,21 @@
+Existing compact routing schemes, e.g., Thorup and Zwick [SPAA 2001] and
+Chechik [PODC 2013], often have no means to tolerate failures, once the system
+has been setup and started. This paper presents, to our knowledge, the first
+self-healing compact routing scheme. Besides, our schemes are developed for low
+memory nodes, i.e., nodes need only $O(\log^2 n)$ memory, and are thus, compact
+schemes.
+  We introduce two algorithms of independent interest: The first is CompactFT,
+a novel compact version (using only $O(\log n)$ local memory) of the
+self-healing algorithm Forgiving Tree of Hayes et al. [PODC 2008]. The second
+algorithm (CompactFTZ) combines CompactFT with Thorup-Zwick's tree-based
+compact routing scheme [SPAA 2001] to produce a fully compact self-healing
+routing scheme. In the self-healing model, the adversary deletes nodes one at a
+time with the affected nodes self-healing locally by adding few edges.
+CompactFT recovers from each attack in only $O(1)$ time and $\Delta$ messages,
+with only +3 degree increase and $O(log \Delta)$ graph diameter increase, over
+any sequence of deletions ($\Delta$ is the initial maximum degree).
+  Additionally, CompactFTZ guarantees delivery of a packet sent from sender s
+as long as the receiver t has not been deleted, with only an additional $O(y
+\log \Delta)$ latency, where $y$ is the number of nodes that have been deleted
+on the path between $s$ and $t$. If $t$ has been deleted, $s$ gets informed and
+the packet removed from the network.

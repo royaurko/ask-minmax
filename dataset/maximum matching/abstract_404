@@ -1,0 +1,8 @@
+We prove that to store n bits x so that each prefix-sum query Sum(i) :=
+sum_{k < i} x_k can be answered by non-adaptively probing q cells of log n
+bits, one needs memory > n + n/log^{O(q)} n. Our bound matches a recent upper
+bound of n + n/log^{Omega(q)} n by Patrascu (FOCS 2008), also non-adaptive. We
+also obtain a n + n/log^{2^{O(q)}} n lower bound for storing a string of
+balanced brackets so that each Match(i) query can be answered by non-adaptively
+probing q cells. To obtain these bounds we show that a too efficient data
+structure allows us to break the correlations between query answers.

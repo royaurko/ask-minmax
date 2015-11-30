@@ -1,0 +1,19 @@
+Shannon's analysis of the fundamental capacity limits for memoryless
+communication channels has been refined over time. In this paper, the maximum
+volume $M_\avg^*(n,\epsilon)$ of length-$n$ codes subject to an average
+decoding error probability $\epsilon$ is shown to satisfy the following tight
+asymptotic lower and upper bounds as $n \to \infty$: \[ \underline{A}_\epsilon
++ o(1) \le \log M_\avg^*(n,\epsilon) - [nC - \sqrt{nV_\epsilon}
+\,Q^{-1}(\epsilon) + \frac{1}{2} \log n] \le \overline{A}_\epsilon + o(1) \]
+where $C$ is the Shannon capacity, $V_\epsilon$ the $\epsilon$-channel
+dispersion, or second-order coding rate, $Q$ the tail probability of the normal
+distribution, and the constants $\underline{A}_\epsilon$ and
+$\overline{A}_\epsilon$ are explicitly identified. This expression holds under
+mild regularity assumptions on the channel, including nonsingularity. The gap
+$\overline{A}_\epsilon - \underline{A}_\epsilon$ is one nat for weakly
+symmetric channels in the Cover-Thomas sense, and typically a few nats for
+other symmetric channels, for the binary symmetric channel, and for the $Z$
+channel. The derivation is based on strong large-deviations analysis and
+refined central limit asymptotics. A random coding scheme that achieves the
+lower bound is presented. The codewords are drawn from a capacity-achieving
+input distribution modified by an $O(1/\sqrt{n})$ correction term.

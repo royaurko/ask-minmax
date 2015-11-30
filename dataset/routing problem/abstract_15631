@@ -1,0 +1,18 @@
+Full interpretation of data from gravitational wave observations will require
+accurate numerical simulations of source systems, particularly binary black
+hole mergers. A leading approach to improving accuracy in numerical relativity
+simulations of black hole systems is through fixed or adaptive mesh refinement
+techniques. We describe a manifestation of numerical interface truncation error
+which appears as slowly converging, artificial reflections from refinement
+boundaries in a broad class of mesh refinement implementations, potentially
+compromising the effectiveness of mesh refinement techniques for some numerical
+relativity applications if left untreated. We elucidate this numerical effect
+by presenting a model problem which exhibits the phenomenon, but which is
+simple enough that its numerical error can be understood analytically. Our
+analysis shows that the effect is caused by variations in finite differencing
+error generated across low and high resolution regions, and that its slow
+convergence is caused by the presence of dramatic speed differences among
+propagation modes typical of 3+1 relativity. Lastly, we resolve the problem,
+presenting a class of finite differencing stencil modifications, termed
+mesh-adapted differencing (MAD), which eliminate this pathology in both our
+model problem and in numerical relativity examples.

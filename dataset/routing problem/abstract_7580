@@ -1,0 +1,20 @@
+Heterogeneous anisotropic diffusion problems arise in the various areas of
+science and engineering including plasma physics, petroleum engineering, and
+image processing. Standard numerical methods can produce spurious oscillations
+when they are used to solve those problems. A common approach to avoid this
+difficulty is to design a proper numerical scheme and/or a proper mesh so that
+the numerical solution validates the discrete counterpart (DMP) of the maximum
+principle satisfied by the continuous solution. A well known mesh condition for
+the DMP satisfaction by the linear finite element solution of isotropic
+diffusion problems is the non-obtuse angle condition that requires the dihedral
+angles of mesh elements to be non-obtuse. In this paper, a generalization of
+the condition, the so-called anisotropic non-obtuse angle condition, is
+developed for the finite element solution of heterogeneous anisotropic
+diffusion problems. The new condition is essentially the same as the existing
+one except that the dihedral angles are now measured in a metric depending on
+the diffusion matrix of the underlying problem. Several variants of the new
+condition are obtained. Based on one of them, two metric tensors for use in
+anisotropic mesh generation are developed to account for DMP satisfaction and
+the combination of DMP satisfaction and mesh adaptivity. Numerical examples are
+given to demonstrate the features of the linear finite element method for
+anisotropic meshes generated with the metric tensors.

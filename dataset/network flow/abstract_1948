@@ -1,0 +1,16 @@
+This paper addresses the following foundational question: what is the maximum
+theoretical delay performance achievable by an overlay peer-to-peer streaming
+system where the streamed content is subdivided into chunks? As shown in this
+paper, when posed for chunk-based systems, and as a consequence of the
+store-and-forward way in which chunks are delivered across the network, this
+question has a fundamentally different answer with respect to the case of
+systems where the streamed content is distributed through one or more flows
+(sub-streams). To circumvent the complexity emerging when directly dealing with
+delay, we express performance in term of a convenient metric, called "stream
+diffusion metric". We show that it is directly related to the end-to-end
+minimum delay achievable in a P2P streaming network. In a homogeneous scenario,
+we derive a performance bound for such metric, and we show how this bound
+relates to two fundamental parameters: the upload bandwidth available at each
+node, and the number of neighbors a node may deliver chunks to. In this bound,
+k-step Fibonacci sequences do emerge, and appear to set the fundamental laws
+that characterize the optimal operation of chunk-based systems.

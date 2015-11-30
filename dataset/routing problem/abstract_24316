@@ -1,0 +1,12 @@
+We extend our framework for 3D radiative transfer calculations with a
+non-local operator splitting methods along (full) characteristics to spherical
+and cylindrical coordinate systems. These coordinate systems are better suited
+to a number of physical problems than Cartesian coordinates. The scattering
+problem for line transfer is solved via means of an operator splitting (OS)
+technique. The formal solution is based on a full characteristics method. The
+approximate $\Lambda$ operator is constructed considering nearest neighbors
+exactly. The code is parallelized over both wavelength and solid angle using
+the MPI library. We present the results of several test cases with different
+values of the thermalization parameter for the different coordinate systems.
+The results are directly compared to 1D plane parallel tests. The 3D results
+agree very well with the well-tested 1D calculations.

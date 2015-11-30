@@ -1,0 +1,19 @@
+This paper is concerned with the scaling of the number of hops in a large
+scale wireless ad-hoc network (WANET), a quantity we call network latency. A
+large network latency affects all aspects of data communication in a WANET,
+including an increase in delay, packet loss, required processing power and
+memory. We consider network management and data routing challenges in WANETs
+with scalable network latency. On the physical side, reducing network latency
+imposes a significantly higher power and bandwidth demand on nodes, as is
+reflected in a set of new bounds. On the protocol front, designing distributed
+routing protocols that can guarantee the delivery of data packets within
+scalable number of hops is a challenging task. To solve this, we introduce
+multi-resolution randomized hierarchy (MRRH), a novel power and bandwidth
+efficient WANET protocol with scalable network latency. MRRH uses a randomized
+algorithm for building and maintaining a random hierarchical network topology,
+which together with the proposed routing algorithm can guarantee efficient
+delivery of data packets in the wireless network. For a network of size $N$,
+MRRH can provide an average latency of only $O(\log^{3} N)$. The power and
+bandwidth consumption of MRRH are shown to be \emph{nearly} optimal for the
+latency it provides. Therefore, MRRH, is a provably efficient candidate for
+truly large scale wireless ad-hoc networking.

@@ -1,0 +1,18 @@
+A queue is required when a service provider is not able to handle jobs
+arriving over the time. In a highly flexible and dynamic environment, some jobs
+might demand for faster execution at run-time especially when the resources are
+limited and the jobs are competing for acquiring resources. A user might demand
+for speed up (reduced wait time) for some of the jobs present in the queue at
+run time. In such cases, it is required to accelerate (directly sending the job
+to the server) urgent jobs (requesting for speed up) ahead of other jobs
+present in the queue for an earlier completion of urgent jobs. Under the
+assumption of no additional resources, such acceleration of jobs would result
+in slowing down of other jobs present in the queue. In this paper, we formulate
+the problem of Speed Up Scheduling without acquiring any additional resources
+for the scheduling of on-line speed up requests posed by a user at run-time and
+present algorithms for the same. We apply the idea of Speed Up Scheduling to
+two different domains -Web Scheduling and CPU Scheduling. We demonstrate our
+results with a simulation based model using trace driven workload and synthetic
+datasets to show the usefulness of Speed Up scheduling. Speed Up provides a new
+way of addressing urgent jobs, provides a different evaluation criteria for
+comparing scheduling algorithms and has practical applications.

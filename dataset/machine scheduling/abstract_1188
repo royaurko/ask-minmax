@@ -1,0 +1,5 @@
+We present a new implementation of the Floyd-Warshall All-Pairs Shortest
+Paths algorithm on CUDA. Our algorithm runs approximately 5 times faster than
+the previously best reported algorithm. In order to achieve this speedup, we
+applied a new technique to reduce usage of on-chip shared memory and allow the
+CUDA scheduler to more effectively hide instruction latency.

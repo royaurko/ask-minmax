@@ -1,0 +1,13 @@
+We present two algorithms for maintaining the topological order of a directed
+acyclic graph with n vertices, under an online edge insertion sequence of m
+edges. Efficient algorithms for online topological ordering have many
+applications, including online cycle detection, which is to discover the first
+edge that introduces a cycle under an arbitrary sequence of edge insertions in
+a directed graph. In this paper we present efficient algorithms for the online
+topological ordering problem.
+  We first present a simple algorithm with running time O(n^{5/2}) for the
+online topological ordering problem. This is the current fastest algorithm for
+this problem on dense graphs, i.e., when m > n^{5/3}. We then present an
+algorithm with running time O((m + nlog n)\sqrt{m}); this is more efficient for
+sparse graphs. Our results yield an improved upper bound of O(min(n^{5/2}, (m +
+nlog n)sqrt{m})) for the online topological ordering problem.

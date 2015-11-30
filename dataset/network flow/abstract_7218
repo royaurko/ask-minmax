@@ -1,0 +1,20 @@
+Malicious mobile phone worms spread between devices via short-range Bluetooth
+contacts, similar to the propagation of human and other biological viruses.
+Recent work has employed models from epidemiology and complex networks to
+analyse the spread of malware and the effect of patching specific nodes. These
+approaches have adopted a static view of the mobile networks, i.e., by
+aggregating all the edges that appear over time, which leads to an approximate
+representation of the real interactions: instead, these networks are inherently
+dynamic and the edge appearance and disappearance is highly influenced by the
+ordering of the human contacts, something which is not captured at all by
+existing complex network measures. In this paper we first study how the
+blocking of malware propagation through immunisation of key nodes (even if
+carefully chosen through static or temporal betweenness centrality metrics) is
+ineffective: this is due to the richness of alternative paths in these
+networks. Then we introduce a time-aware containment strategy that spreads a
+patch message starting from nodes with high temporal closeness centrality and
+show its effectiveness using three real-world datasets. Temporal closeness
+allows the identification of nodes able to reach most nodes quickly: we show
+that this scheme can reduce the cellular network resource consumption and
+associated costs, achieving, at the same time, a complete containment of the
+malware in a limited amount of time.

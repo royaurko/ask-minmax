@@ -1,0 +1,17 @@
+We addressed the problem of detecting the change in behavior of information
+diffusion from a small amount of observation data, where the behavior changes
+were assumed to be effectively reflected in changes in the diffusion parameter
+value. The problem is to detect where in time and how long this change
+persisted and how big this change is. We solved this problem by searching the
+change pattern that maximizes the likelihood of generating the observed
+diffusion sequences. The naive learning algorithm has to iteratively update the
+patten boundaries, each requiring optimization of diffusion parameters by the
+EM algorithm, and is very inefficient. We devised a very efficient search
+algorithm using the derivative of likelihood which avoids parameter value
+optimization during the search. The results tested using three real world
+network structures confirmed that the algorithm can efficiently identify the
+correct change pattern. We further compared our algorithm with the naive method
+that finds the best combination of change boundaries by an exhaustive search
+through a set of randomly selected boundary candidates, and showed that the
+proposed algorithm far outperforms the native method both in terms of accuracy
+and computation time.

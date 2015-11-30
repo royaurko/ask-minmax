@@ -1,0 +1,15 @@
+The bin packing problem is to find the minimum number of bins of size one to
+pack a list of items with sizes $a_1,..., a_n$ in $(0,1]$. Using uniform
+sampling, which selects a random element from the input list each time, we
+develop a randomized $O({n(\log n)(\log\log n)\over \sum_{i=1}^n a_i}+({1\over
+\epsilon})^{O({1\over\epsilon})})$ time $(1+\epsilon)$-approximation scheme for
+the bin packing problem. We show that every randomized algorithm with uniform
+random sampling needs $\Omega({n\over \sum_{i=1}^n a_i})$ time to give an
+$(1+\epsilon)$-approximation. For each function $s(n): N\rightarrow N$, define
+$\sum(s(n))$ to be the set of all bin packing problems with the sum of item
+sizes equal to $s(n)$. For a constant $b\in (0,1)$, every problem in
+$\sum(n^{b})$ has an $O(n^{1-b}(\log n)(\log\log n)+({1\over
+\epsilon})^{O({1\over\epsilon})})$ time $(1+\epsilon)$-approximation for an
+arbitrary constant $\epsilon$. On the other hand, there is no $o(n^{1-b})$ time
+$(1+\epsilon)$-approximation scheme for the bin packing problems in
+$\sum(n^{b})$ for some constant $\epsilon>0$.

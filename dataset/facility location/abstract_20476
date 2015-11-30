@@ -1,0 +1,27 @@
+Image segmentation is a fundamental task for extracting semantically
+meaningful regions from an image. The goal is to assign object labels to each
+image location. Due to image-noise, shortcomings of algorithms and other
+ambiguities in the images, there is uncertainty in the assigned labels. In
+multiple application domains, estimates of this uncertainty are important. For
+example, object segmentation and uncertainty quantification is essential for
+many medical application, including tumor segmentation for radiation treatment
+planning. While a Bayesian characterization of the label posterior provides
+estimates of segmentation uncertainty, Bayesian approaches can be
+computationally prohibitive for practical applications. On the other hand,
+typical optimization based algorithms are computationally very efficient, but
+only provide maximum a-posteriori solutions and hence no estimates of label
+uncertainty.
+  In this paper, we propose Active Mean Fields (AMF), a Bayesian technique that
+uses a mean-field approximation to derive an efficient segmentation and
+uncertainty quantification algorithm. This model, which allows combining any
+label-likelihood measure with a boundary length prior, yields a variational
+formulation that is convex. A specific implementation of that model is the
+Chan--Vese segmentation model (CV), which formulates the binary segmentation
+problem through Gaussian likelihoods combined with a boundary-length
+regularizer. Furthermore, the Euler--Lagrange equations derived from the AMF
+model are equivalent to those of the popular Rudin-Osher-Fatemi (ROF) model for
+image de-noising. Solutions to the AMF model can thus be implemented by
+directly utilizing highly-efficient ROF solvers on log-likelihood ratio fields.
+We demonstrate the approach using synthetic data, as well as real medical
+images (for heart and prostate segmentations), and on standard computer vision
+test images.

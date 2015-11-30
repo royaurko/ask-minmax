@@ -1,0 +1,13 @@
+Interferometric radio telescopes often rely on computationally expensive
+O(N^2) correlation calculations; fortunately these computations map well to
+massively parallel accelerators such as low-cost GPUs. This paper describes the
+OpenCL kernels developed for the GPU based X-engine of a new hybrid FX
+correlator. Channelized data from the F-engine is supplied to the GPUs as
+4-bit, offset-encoded real and imaginary integers. Because of the low bit width
+of the data, two values may be packed into a 32-bit register, allowing
+multiplication and addition of more than one value with a single fused
+multiply-add instruction. With this data and calculation packing scheme, as
+many as 5.6 effective tera-operations per second (TOPS) can be executed on a
+4.3 TOPS GPU. The kernel design allows correlations to scale to large numbers
+of input elements, limited only by maximum buffer sizes on the GPU. This code
+is currently working on-sky with the CHIME Pathfinder Correlator in BC, Canada.

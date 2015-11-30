@@ -1,0 +1,18 @@
+We study the following vertex-weighted online bipartite matching problem:
+$G(U, V, E)$ is a bipartite graph. The vertices in $U$ have weights and are
+known ahead of time, while the vertices in $V$ arrive online in an arbitrary
+order and have to be matched upon arrival. The goal is to maximize the sum of
+weights of the matched vertices in $U$. When all the weights are equal, this
+reduces to the classic \emph{online bipartite matching} problem for which Karp,
+Vazirani and Vazirani gave an optimal $\left(1-\frac{1}{e}\right)$-competitive
+algorithm in their seminal work~\cite{KVV90}. Our main result is an optimal
+$\left(1-\frac{1}{e}\right)$-competitive randomized algorithm for general
+vertex weights. We use \emph{random perturbations} of weights by appropriately
+chosen multiplicative factors. Our solution constitutes the first known
+generalization of the algorithm in~\cite{KVV90} in this model and provides new
+insights into the role of randomization in online allocation problems. It also
+effectively solves the problem of \emph{online budgeted allocations}
+\cite{MSVV05} in the case when an agent makes the same bid for any desired
+item, even if the bid is comparable to his budget - complementing the results
+of \cite{MSVV05, BJN07} which apply when the bids are much smaller than the
+budgets.

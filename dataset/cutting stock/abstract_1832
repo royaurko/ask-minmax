@@ -1,0 +1,22 @@
+A fundamental task in human chromosome analysis is chromosome segmentation.
+Segmentation plays an important role in chromosome karyotyping. The first step
+in segmentation is to remove intrusive objects such as stain debris and other
+noises. The next step is detection of touching and overlapping chromosomes, and
+the final step is separation of such chromosomes. Common methods for separation
+between touching chromosomes are interactive and require human intervention for
+correct separation between touching and overlapping chromosomes. In this paper,
+a geometric-based method is used for automatic detection of touching and
+overlapping chromosomes and separating them. The proposed scheme performs
+segmentation in two phases. In the first phase, chromosome clusters are
+detected using three geometric criteria, and in the second phase, chromosome
+clusters are separated using a cut-line. Most of earlier methods did not work
+properly in case of chromosome clusters that contained more than two
+chromosomes. Our method, on the other hand, is quite efficient in separation of
+such chromosome clusters. At each step, one separation will be performed and
+this algorithm is repeated until all individual chromosomes are separated.
+Another important point about the proposed method is that it uses the geometric
+features of chromosomes which are independent of the type of images and it can
+easily be applied to any type of images such as binary images and does not
+require multispectral images as well. We have applied our method to a database
+containing 62 touching and partially overlapping chromosomes and a success rate
+of 91.9% is achieved.

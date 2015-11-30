@@ -1,0 +1,13 @@
+Inspired by recent work on convex formulations of clustering (Lashkari &
+Golland, 2008; Nowozin & Bakir, 2008) we investigate a new formulation of the
+Sparse Coding Problem (Olshausen & Field, 1997). In sparse coding we attempt to
+simultaneously represent a sequence of data-vectors sparsely (i.e. sparse
+approximation (Tropp et al., 2006)) in terms of a 'code' defined by a set of
+basis elements, while also finding a code that enables such an approximation.
+As existing alternating optimization procedures for sparse coding are
+theoretically prone to severe local minima problems, we propose a convex
+relaxation of the sparse coding problem and derive a boosting-style algorithm,
+that (Nowozin & Bakir, 2008) serves as a convex 'master problem' which calls a
+(potentially non-convex) sub-problem to identify the next code element to add.
+Finally, we demonstrate the properties of our boosted coding algorithm on an
+image denoising task.

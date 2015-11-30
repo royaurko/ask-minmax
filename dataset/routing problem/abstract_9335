@@ -1,0 +1,17 @@
+This paper concerns cheaply computable formulas and bounds for the condition
+number of the TLS problem. For a TLS problem with data $A$, $b$, two formulas
+are derived that are simpler and more compact than the known results in the
+literature. One is derived by exploiting the properties of Kronecker products
+of matrices. The other is obtained by making use of the singular value
+decomposition (SVD) of $[A \,\,b]$, which allows us to compute the condition
+number cheaply and accurately. We present lower and upper bounds for the
+condition number that involve the singular values of $[A \,\, b]$ and the last
+entries of the right singular vectors of $[A \,\, b]$. We prove that they are
+always sharp and can estimate the condition number accurately by no more than
+four times. Furthermore, we establish a few other lower and upper bounds that
+involve only a few singular values of $A$ and $[A \,\, b]$. We discuss how
+tight the bounds are. These bounds are particularly useful for large scale TLS
+problems since for them any formulas and bounds for the condition number
+involving all the singular values of $A$ and/or $[A \ b]$ are too costly to be
+computed. Numerical experiments illustrate that our bounds are sharper than a
+known approximate condition number in the literature.

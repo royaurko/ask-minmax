@@ -1,0 +1,24 @@
+We consider the "multi-frequency" periodogram, in which the putative signal
+is modelled as a sum of two or more sinusoidal harmonics with idependent
+frequencies. It is useful in the cases when the data may contain several
+periodic components, especially when their interaction with each other and with
+the data sampling patterns might produce misleading results.
+  Although the multi-frequency statistic itself was already constructed, e.g.
+by G. Foster in his CLEANest algorithm, its probabilistic properties (the
+detection significance levels) are still poorly known and much of what is
+deemed known is unrigourous. These detection levels are nonetheless important
+for the data analysis. We argue that to prove the simultaneous existence of all
+$n$ components revealed in a multi-periodic variation, it is mandatory to apply
+at least $2^n-1$ significance tests, among which the most involves various
+multi-frequency statistics, and only $n$ tests are single-frequency ones.
+  The main result of the paper is an analytic estimation of the statistical
+significance of the frequency tuples that the multi-frequency periodogram can
+reveal. Using the theory of extreme values of random fields (the generalized
+Rice method), we find a handy approximation to the relevant false alarm
+probability. For the double-frequency periodogram this approximation is given
+by an elementary formula $\frac{\pi}{16} W^2 e^{-z} z^2$, where $W$ stands for
+a normalized width of the settled frequency range, and $z$ is the observed
+periodogram maximum. We carried out intensive Monte Carlo simulations to show
+that the practical quality of this approximation is satisfactory. A similar
+analytic expression for the general multi-frequency periodogram is also given
+in the paper, though with a smaller amount of numerical verification.

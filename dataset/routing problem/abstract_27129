@@ -1,0 +1,19 @@
+Linear subspace representations of appearance variation are pervasive in
+computer vision. This paper addresses the problem of robustly matching such
+subspaces (computing the similarity between them) when they are used to
+describe the scope of variations within sets of images of different (possibly
+greatly so) scales. A naive solution of projecting the low-scale subspace into
+the high-scale image space is described first and subsequently shown to be
+inadequate, especially at large scale discrepancies. A successful approach is
+proposed instead. It consists of (i) an interpolated projection of the
+low-scale subspace into the high-scale space, which is followed by (ii) a
+rotation of this initial estimate within the bounds of the imposed
+``downsampling constraint''. The optimal rotation is found in the closed-form
+which best aligns the high-scale reconstruction of the low-scale subspace with
+the reference it is compared to. The method is evaluated on the problem of
+matching sets of (i) face appearances under varying illumination and (ii)
+object appearances under varying viewpoint, using two large data sets. In
+comparison to the naive matching, the proposed algorithm is shown to greatly
+increase the separation of between-class and within-class similarities, as well
+as produce far more meaningful modes of common appearance on which the match
+score is based.

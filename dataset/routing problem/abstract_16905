@@ -1,0 +1,14 @@
+We consider the problem of portfolio selection within the classical Markowitz
+mean-variance framework, reformulated as a constrained least-squares regression
+problem. We propose to add to the objective function a penalty proportional to
+the sum of the absolute values of the portfolio weights. This penalty
+regularizes (stabilizes) the optimization problem, encourages sparse portfolios
+(i.e. portfolios with only few active positions), and allows to account for
+transaction costs. Our approach recovers as special cases the
+no-short-positions portfolios, but does allow for short positions in limited
+number. We implement this methodology on two benchmark data sets constructed by
+Fama and French. Using only a modest amount of training data, we construct
+portfolios whose out-of-sample performance, as measured by Sharpe ratio, is
+consistently and significantly better than that of the naive evenly-weighted
+portfolio which constitutes, as shown in recent literature, a very tough
+benchmark.

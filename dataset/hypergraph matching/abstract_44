@@ -1,0 +1,13 @@
+Let G be an edge-weighted hypergraph on n vertices, m edges of size \le s,
+where the edges have real weights in an interval [1,W]. We show that if we can
+approximate a maximum weight matching in G within factor alpha in time T(n,m,W)
+then we can find a matching of weight at least (alpha-epsilon) times the
+maximum weight of a matching in G in time (epsilon^{-1})^{O(1)}max_{1\le q \le
+O(epsilon \frac {log {\frac n {epsilon}}} {log epsilon^{-1}})}
+max_{m_1+...m_q=m}
+sum_1^qT(min{n,sm_j},m_{j},(epsilon^{-1})^{O(epsilon^{-1})}). In particular, if
+we combine our result with the recent (1-\epsilon)-approximation algorithm for
+maximum weight matching in graphs due to Duan and Pettie whose time complexity
+has a poly-logarithmic dependence on W then we obtain a
+(1-\epsilon)-approximation algorithm for maximum weight matching in graphs
+running in time (epsilon^{-1})^{O(1)}(m+n).

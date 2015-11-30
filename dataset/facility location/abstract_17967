@@ -1,0 +1,17 @@
+We study the problem of detecting a random walk on a graph from a sequence of
+noisy measurements at every node. There are two hypotheses: either every
+observation is just meaningless zero-mean Gaussian noise, or at each time step
+exactly one node has an elevated mean, with its location following a random
+walk on the graph over time. We want to exploit knowledge of the graph
+structure and random walk parameters (specified by a Markov chain transition
+matrix) to detect a possibly very weak signal. The optimal detector is easily
+derived, and we focus on the harder problem of characterizing its performance
+through the (type-II) error exponent: the decay rate of the miss probability
+under a false alarm constraint. The expression for the error exponent resembles
+the free energy of a spin glass in statistical physics, and we borrow
+techniques from that field to develop a lower bound. Our fully rigorous
+analysis uses large deviations theory to show that the lower bound exhibits a
+phase transition: strong performance is only guaranteed when the
+signal-to-noise ratio exceeds twice the entropy rate of the random walk. Monte
+Carlo simulations show that the lower bound fully captures the behavior of the
+true exponent.

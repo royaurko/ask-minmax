@@ -1,0 +1,14 @@
+Reticulate events play an important role in determining evolutionary
+relationships. The problem of computing the minimum number of such events to
+explain discordance between two phylogenetic trees is a hard computational
+problem. Even for binary trees, exact solvers struggle to solve instances with
+reticulation number larger than 40-50. Here we present CycleKiller and
+NonbinaryCycleKiller, the first methods to produce solutions verifiably close
+to optimality for instances with hundreds or even thousands of reticulations.
+Using simulations, we demonstrate that these algorithms run quickly for large
+and difficult instances, producing solutions that are very close to optimality.
+As a spin-off from our simulations we also present TerminusEst, which is the
+fastest exact method currently available that can handle nonbinary trees: this
+is used to measure the accuracy of the NonbinaryCycleKiller algorithm. All
+three methods are based on extensions of previous theoretical work and are
+publicly available. We also apply our methods to real data.

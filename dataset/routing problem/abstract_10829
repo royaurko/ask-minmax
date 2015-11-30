@@ -1,0 +1,23 @@
+Let $G=(V,E)$ be a graph without isolated vertices. A matching in $G$ is a
+set of independent edges in $G$. A perfect matching $M$ in $G$ is a matching
+such that every vertex of $G$ is incident to an edge of $M$. A set $S\subseteq
+V$ is a \textit{paired-dominating set} of $G$ if every vertex in $V-S$ is
+adjacent to some vertex in $S$ and if the subgraph $G[S]$ induced by $S$
+contains at least one perfect matching. The paired-domination problem is to
+find a paired-dominating set of $G$ with minimum cardinality. A set
+$MPD\subseteq E$ is a \textit{matched-paired-dominating set} of $G$ if $MPD$ is
+a perfect matching of $G[S]$ induced by a paired-dominating set $S$ of $G$.
+Note that the paired-domination problem can be regard as finding a
+matched-paired-dominating set of $G$ with minimum cardinality. Let
+$\mathcal{R}$ be a subset of $V$, $MPD$ be a matched-paired-dominating set of
+$G$, and let $V(MPD)$ denote the set of vertices being incident to edges of
+$MPD$. A \textit{maximum matched-paired-dominating set} $MMPD$ of $G$ w.r.t.
+$\mathcal{R}$ is a matched-paired-dominating set such that $|V(MMPD)\cap
+\mathcal{R}|\geqslant |V(MPD)\cap \mathcal{R}|$. An edge in $MPD$ is called
+\textit{free-paired-edge} if neither of its both vertices is in $\mathcal{R}$.
+Given a graph $G$ and a subset $\mathcal{R}$ of vertices of $G$, the
+\textit{maximum matched-paired-domination problem} is to find a maximum
+matched-paired-dominating set of $G$ with the least free-paired-edges; note
+that, if $\mathcal{R}$ is empty, the stated problem coincides with the
+classical paired-domination problem. In this paper, we present a linear-time
+algorithm to solve the maximum matched-paired-domination problem in cographs.

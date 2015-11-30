@@ -1,0 +1,20 @@
+Given a collection of planar graphs $G_1,\dots,G_k$ on the same set $V$ of
+$n$ vertices, the simultaneous geometric embedding (with mapping) problem, or
+simply $k$-SGE, is to find a set $P$ of $n$ points in the plane and a bijection
+$\phi: V \to P$ such that the induced straight-line drawings of $G_1,\dots,G_k$
+under $\phi$ are all plane.
+  This problem is polynomial-time equivalent to weak rectilinear realizability
+of abstract topological graphs, which Kyn\v{c}l (doi:10.1007/s00454-010-9320-x)
+proved to be complete for $\exists\mathbb{R}$, the existential theory of the
+reals. Hence the problem $k$-SGE is polynomial-time equivalent to several other
+problems in computational geometry, such as recognizing intersection graphs of
+line segments or finding the rectilinear crossing number of a graph.
+  We give an elementary reduction from the pseudoline stretchability problem to
+$k$-SGE, with the property that both numbers $k$ and $n$ are linear in the
+number of pseudolines. This implies not only the $\exists\mathbb{R}$-hardness
+result, but also a $2^{2^{\Omega (n)}}$ lower bound on the minimum size of a
+grid on which any such simultaneous embedding can be drawn. This bound is
+tight. Hence there exists such collections of graphs that can be simultaneously
+embedded, but every simultaneous drawing requires an exponential number of bits
+per coordinates. The best value that can be extracted from Kyn\v{c}l's proof is
+only $2^{2^{\Omega (\sqrt{n})}}$.

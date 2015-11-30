@@ -1,0 +1,20 @@
+The availability of larger and larger graph datasets, growing exponentially
+over the years, has created several new algorithmic challenges to be addressed.
+Sequential approaches have become unfeasible, while interest on parallel and
+distributed algorithms has greatly increased.
+  Appropriately partitioning the graph as a preprocessing step can improve the
+degree of parallelism of its analysis. A number of heuristic algorithms have
+been developed to solve this problem, but many of them subdivide the graph on
+its vertex set, thus obtaining a vertex-partitioned graph.
+  Aim of this paper is to explore a completely different approach based on edge
+partitioning, in which edges, rather than vertices, are partitioned into
+disjoint subsets. Contribution of this paper is twofold: first, we introduce a
+graph processing framework based on edge partitioning, that is flexible enough
+to be applied to several different graph problems. Second, we show the
+feasibility of these ideas by presenting a distributed edge partitioning
+algorithm called d-fep.
+  Our framework is thoroughly evaluated, using both simulations and an Hadoop
+implementation running on the Amazon EC2 cloud. The experiments show that d-fep
+is efficient, scalable and obtains consistently good partitions. The resulting
+edge-partitioned graph can be exploited to obtain more efficient
+implementations of graph analysis algorithms.

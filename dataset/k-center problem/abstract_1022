@@ -1,0 +1,17 @@
+In the following paper, we present a consistent Newton-Schur solution
+approach for variational multiscale formulations of the time-dependent
+Navier-Stokes equations in three dimensions. The main contributions of this
+work are a systematic study of the variational multiscale method for
+three-dimensional problems, and an implementation of a consistent formulation
+suitable for large problems with high nonlinearity, unstructured meshes, and
+non-symmetric matrices. In addition to the quadratic convergence
+characteristics of a Newton-Raphson based scheme, the Newton-Schur approach
+increases computational efficiency and parallel scalability by implementing the
+tangent stiffness matrix in Schur complement form. As a result, more
+computations are performed at the element level. Using a variational multiscale
+framework, we construct a two-level approach to stabilizing the incompressible
+Navier-Stokes equations based on a coarse and fine-scale subproblem. We then
+derive the Schur complement form of the consistent tangent matrix. We
+demonstrate the performance of the method for a number of three-dimensional
+problems for Reynolds number up to 1000 including steady and time-dependent
+flows.

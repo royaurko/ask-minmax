@@ -1,0 +1,16 @@
+We implemented a fortran code that determine fundamental parameters of solar
+type stars from a list of Fe line equivalent widths. The solution should verify
+3 conditions in the standard method: ionization equilibrium, excitation
+equilibrium and independence between metallicity and equivalent widths. We
+added the condition that the input metallicity of the model atmosphere should
+be similar to the output metallicity derived with equivalent widths.
+Solar-scaled Kurucz model atmospheres with NEWODF opacities are calculated with
+an independent program. Parameter files control different details, such as the
+mixing-length parameter, the overshooting, the damping of the lines and the
+weight factors in the definition of the chi2 function. FUNDPAR derive the
+uncertainties following 2 methods: the criteria of Gonzalez & Vanture (1998)
+and the dispersion using the chi2 function. The code use the 2009 version of
+the MOOG program. The results derived with FUNDPAR are in agreement with
+previous determinations in the literature. In particular we obtained the
+fundamental parameters of 58 exoplanet host stars. The program is freely
+available from the web (http://icate-conicet.gob.ar/saffe/fundpar/).

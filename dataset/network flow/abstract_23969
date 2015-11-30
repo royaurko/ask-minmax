@@ -1,0 +1,13 @@
+A \emph{uniform random intersection graph} $G(n,m,k)$ is a random graph
+constructed as follows. Label each of $n$ nodes by a randomly chosen set of $k$
+distinct colours taken from some finite set of possible colours of size $m$.
+Nodes are joined by an edge if and only if some colour appears in both their
+labels. These graphs arise in the study of the security of wireless sensor
+networks. Such graphs arise in particular when modelling the network graph of
+the well known key predistribution technique due to Eschenauer and Gligor.
+  The paper determines the threshold for connectivity of the graph $G(n,m,k)$
+when $n\to \infty$ with $k$ a function of $n$ such that $k\geq 2$ and
+$m=\lfloor n^\alpha\rfloor$ for some fixed positive real number $\alpha$. In
+this situation, $G(n,m,k)$ is almost surely connected when \[ \liminf
+k^2n/m\log n>1, \] and $G(n,m,k)$ is almost surely disconnected when \[ \limsup
+k^2n/m\log n<1. \]

@@ -1,0 +1,20 @@
+We propose a robust ensemble filtering scheme based on the $H_{\infty}$
+filtering theory. The optimal $H_{\infty}$ filter is derived by minimizing the
+supremum (or maximum) of a predefined cost function, a criterion different from
+the minimum variance used in the Kalman filter. By design, the $H_{\infty}$
+filter is more robust than the Kalman filter, in the sense that the estimation
+error in the $H_{\infty}$ filter in general has a finite growth rate with
+respect to the uncertainties in assimilation, except for a special case that
+corresponds to the Kalman filter.
+  The original form of the $H_{\infty}$ filter contains global constraints in
+time, which may be inconvenient for sequential data assimilation problems.
+Therefore we introduce a variant that solves some time-local constraints
+instead, and hence we call it the time-local $H_{\infty}$ filter (TLHF). By
+analogy to the ensemble Kalman filter (EnKF), we also propose the concept of
+ensemble time-local $H_{\infty}$ filter (EnTLHF). We outline the general form
+of the EnTLHF, and discuss some of its special cases. In particular, we show
+that an EnKF with certain covariance inflation is essentially an EnTLHF. In
+this sense, the EnTLHF provides a general framework for conducting covariance
+inflation in the EnKF-based methods. We use some numerical examples to assess
+the relative robustness of the TLHF/EnTLHF in comparison with the corresponding
+KF/EnKF method.

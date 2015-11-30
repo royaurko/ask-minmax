@@ -1,0 +1,18 @@
+Cooperative multicast is an effective solution to address the bottleneck
+problem of single-hop broadcast in wireless networks. By incorporating with the
+random linear network coding technique, the existing schemes can reduce the
+retransmission overhead significantly. However, the receivers may incur large
+decoding delay and complexity due to the batch decoding scheme. In addition,
+the dependency on the explicit feedback leads to scalability problem in larger
+networks. In this paper, a cooperative multicast protocol named MWNCast is
+proposed based on a novel moving window network coding technique. We prove
+three properties of the proposed scheme. Firstly, without explicit feedback,
+MWNCast can approach the cooperative capacity with the packet loss probability
+dropping almost exponentially with the increase of window size. Secondly, the
+average decoding delay of a receiver is on the order of
+$O(\frac{1}{(1-\rho)^2})$ with respect to its traffic intensity $\rho$.
+Thirdly, MWNCast can achieve the linear decoding complexity of $O(W)$ with
+respect to the window size $W$. Simulation results show that MWNCast
+outperforms the existing schemes by achieving better tradeoff between the
+throughput and decoding delay, meanwhile keeping the packet loss probability
+and decoding complexity at a very low levelwithout explicit feedback.

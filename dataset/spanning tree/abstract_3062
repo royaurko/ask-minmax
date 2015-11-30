@@ -1,0 +1,13 @@
+Software certification aims at proving the correctness of programs but in
+many cases, the use of external libraries allows only a conditional proof: it
+depends on the assumption that the libraries meet their specifications. In
+particular, a bug in these libraries might still impact the certified program.
+In this case, the difficulty that arises is to isolate the defective library
+function and provide a counter-example. In this paper, we show that this
+problem can be logically formalized as the construction of a Herbrand tree for
+a contradictory universal theory and address it. The solution we propose is
+based on a proof of Herbrand's theorem in the proof assistant Coq. Classical
+program extraction using Krivine's classical realizability then translates this
+proof into a certified program that computes Herbrand trees. Using this tree
+and calls to the library functions, we are able to determine which function is
+defective and explicitly produce a counter-example to its specification.

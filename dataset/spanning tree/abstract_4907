@@ -1,0 +1,21 @@
+REBOUND is a new multi-purpose N-body code which is freely available under an
+open-source license. It was designed for collisional dynamics such as planetary
+rings but can also solve the classical N-body problem. It is highly modular and
+can be customized easily to work on a wide variety of different problems in
+astrophysics and beyond.
+  REBOUND comes with three symplectic integrators: leap-frog, the symplectic
+epicycle integrator (SEI) and a Wisdom-Holman mapping (WH). It supports open,
+periodic and shearing-sheet boundary conditions. REBOUND can use a Barnes-Hut
+tree to calculate both self-gravity and collisions. These modules are fully
+parallelized with MPI as well as OpenMP. The former makes use of a static
+domain decomposition and a distributed essential tree. Two new collision
+detection modules based on a plane-sweep algorithm are also implemented. The
+performance of the plane-sweep algorithm is superior to a tree code for
+simulations in which one dimension is much longer than the other two and in
+simulations which are quasi-two dimensional with less than one million
+particles.
+  In this work, we discuss the different algorithms implemented in REBOUND, the
+philosophy behind the code's structure as well as implementation specific
+details of the different modules. We present results of accuracy and scaling
+tests which show that the code can run efficiently on both desktop machines and
+large computing clusters.

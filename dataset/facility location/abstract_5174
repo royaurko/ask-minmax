@@ -1,0 +1,16 @@
+We consider the problem of estimating the distance, or range, between two
+locations by measuring the phase of a sinusoidal signal transmitted between the
+locations. This method is only capable of unambiguously measuring range within
+an interval of length equal to the wavelength of the signal. To address this
+problem signals of multiple different wavelengths can be transmitted. The range
+can then be measured within an interval of length equal to the least common
+multiple of these wavelengths. Estimation of the range requires solution of a
+problem from computational number theory called the closest lattice point
+problem. Algorithms to solve this problem require a basis for this lattice.
+Constructing a basis is non-trivial and an explicit construction has only been
+given in the case that the wavelengths can be scaled to pairwise relatively
+prime integers. In this paper we present an explicit construction of a basis
+without this assumption on the wavelengths. This is important because the
+accuracy of the range estimator depends upon the wavelengths. Simulations
+indicate that significant improvement in accuracy can be achieved by using
+wavelengths that cannot be scaled to pairwise relatively prime integers.

@@ -1,0 +1,20 @@
+One of the major problems in modeling natural signals is that signals with
+very similar structure may locally have completely different measurements,
+e.g., images taken under different illumination conditions, or the speech
+signal captured in different environments. While there have been many
+successful attempts to address these problems in application-specific settings,
+we believe that underlying a large set of problems in signal representation is
+a representational deficiency of intensity-derived local measurements that are
+the basis of most efficient models. We argue that interesting structure in
+signals is better captured when the signal is de- fined as a matrix whose
+entries are discrete indices to a separate palette of possible measurements. In
+order to model the variability in signal structure, we define a signal class
+not by a single index map, but by a probability distribution over the index
+maps, which can be estimated from the data, and which we call probabilistic
+index maps. The existing algorithm can be adapted to work with this
+representation. Furthermore, the probabilistic index map representation leads
+to algorithms with computational costs proportional to either the size of the
+palette or the log of the size of the palette, making the cost of significantly
+increased invariance to non-structural changes quite bearable. We illustrate
+the benefits of the probabilistic index map representation in several
+applications in computer vision and speech processing.

@@ -1,0 +1,11 @@
+This article describes an approach to designing a distributed and modular
+neural classifier. This approach introduces a new hierarchical clustering that
+enables one to determine reliable regions in the representation space by
+exploiting supervised information. A multilayer perceptron is then associated
+with each of these detected clusters and charged with recognizing elements of
+the associated cluster while rejecting all others. The obtained global
+classifier is comprised of a set of cooperating neural networks and completed
+by a K-nearest neighbor classifier charged with treating elements rejected by
+all the neural networks. Experimental results for the handwritten digit
+recognition problem and comparison with neural and statistical nonmodular
+classifiers are given.

@@ -1,0 +1,24 @@
+The computational modeling of many engineering problems using the Finite
+Element method involves the modeling of two or more bodies that meet through an
+interface. The interface can be physical, as in multi-physics and contact
+problems, or purely numerical, as in the coupling of non-conforming meshes. The
+most critical part of the modeling process is to ensure geometric compatibility
+and a complete transfer of surface tractions between the different components
+at the connecting interfaces. Popular contact modeling techniques rely on
+geometric projections to detect and resolve overlapping or mass
+interpenetration between two or more contacting bodies. Such approaches have
+been shown to have two major drawbacks: they are not suitable for contact at
+highly nonlinear surfaces and sharp corners where smooth normal projections are
+not feasible, and they fail to guarantee a complete and accurate transfer of
+pressure across the interface. This dissertation presents a novel formulation
+for the modeling of contact problems that possesses the ability to resolve
+complicated contact scenarios effectively, while being simpler to implement and
+more widely applicable than currently available methods. We show that the
+formulation boils down to a node-to-surface gap function that works effectively
+for non-smooth contact. The numerical implementation using the midpoint rule
+shows the need to guarantee the conservation of the total energy during impact,
+for which a Lagrange multiplier method is used. We propose a local enrichment
+of the interface and a simple stabilization procedure based on the
+discontinuous Galerkin method to guarantee an accurate transfer of the pressure
+field. The result is a robust interface formulation for contact problems and
+the coupling of non-conforming meshes.

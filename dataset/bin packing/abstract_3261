@@ -1,0 +1,18 @@
+Convolution and cross-correlation are the basis of filtering and pattern or
+template matching in multimedia signal processing. We propose two throughput
+scaling options for any one-dimensional convolution kernel in programmable
+processors by adjusting the imprecision (distortion) of computation. Our
+approach is based on scalar quantization, followed by two forms of tight
+packing in floating-point (one of which is proposed in this paper) that allow
+for concurrent calculation of multiple results. We illustrate how our approach
+can operate as an optional pre- and post-processing layer for off-the-shelf
+optimized convolution routines. This is useful for multimedia applications that
+are tolerant to processing imprecision and for cases where the input signals
+are inherently noisy (error tolerant multimedia applications). Indicative
+experimental results with a digital music matching system and an MPEG-7 audio
+descriptor system demonstrate that the proposed approach offers up to 175%
+increase in processing throughput against optimized (full-precision)
+convolution with virtually no effect in the accuracy of the results. Based on
+marginal statistics of the input data, it is also shown how the throughput and
+distortion can be adjusted per input block of samples under constraints on the
+signal-to-noise ratio against the full-precision convolution.

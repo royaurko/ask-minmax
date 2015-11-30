@@ -1,0 +1,13 @@
+Incremental SAT and QBF solving potentially yields improvements when
+sequences of related formulas are solved. An incremental application is usually
+tailored towards some specific solver and decomposes a problem into incremental
+solver calls. This hinders the independent comparison of different solvers,
+particularly when the application program is not available. As a remedy, we
+present an approach to automated benchmarking of incremental SAT and QBF
+solvers. Given a collection of formulas in (Q)DIMACS format generated
+incrementally by an application program, our approach automatically translates
+the formulas into instructions to import and solve a formula by an incremental
+SAT/QBF solver. The result of the translation is a program which replays the
+incremental solver calls and thus allows to evaluate incremental solvers
+independently from the application program. We illustrate our approach by
+different hardware verification problems for SAT and QBF solvers.

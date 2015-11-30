@@ -1,0 +1,16 @@
+This paper considers the problem of reasoning on massive amounts of (possibly
+distributed) data. Presently, existing proposals show some limitations: {\em
+(i)} the quantity of data that can be handled contemporarily is limited, due to
+the fact that reasoning is generally carried out in main-memory; {\em (ii)} the
+interaction with external (and independent) DBMSs is not trivial and, in
+several cases, not allowed at all; {\em (iii)} the efficiency of present
+implementations is still not sufficient for their utilization in complex
+reasoning tasks involving massive amounts of data. This paper provides a
+contribution in this setting; it presents a new system, called DLV$^{DB}$,
+which aims to solve these problems. Moreover, the paper reports the results of
+a thorough experimental analysis we have carried out for comparing our system
+with several state-of-the-art systems (both logic and databases) on some
+classical deductive problems; the other tested systems are: LDL++, XSB, Smodels
+and three top-level commercial DBMSs. DLV$^{DB}$ significantly outperforms even
+the commercial Database Systems on recursive queries. To appear in Theory and
+Practice of Logic Programming (TPLP)

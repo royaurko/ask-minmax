@@ -1,0 +1,24 @@
+Thermal infra-red (IR) images focus on changes of temperature distribution on
+facial muscles and blood vessels. These temperature changes can be regarded as
+texture features of images. A comparative study of face recognition methods
+working in thermal spectrum is carried out in this paper. In these study two
+local-matching methods based on Haar wavelet transform and Local Binary Pattern
+(LBP) are analyzed. Wavelet transform is a good tool to analyze multi-scale,
+multi-direction changes of texture. Local binary patterns (LBP) are a type of
+feature used for classification in computer vision. Firstly, human thermal IR
+face image is preprocessed and cropped the face region only from the entire
+image. Secondly, two different approaches are used to extract the features from
+the cropped face region. In the first approach, the training images and the
+test images are processed with Haar wavelet transform and the LL band and the
+average of LH/HL/HH bands sub-images are created for each face image. Then a
+total confidence matrix is formed for each face image by taking a weighted sum
+of the corresponding pixel values of the LL band and average band. For LBP
+feature extraction, each of the face images in training and test datasets is
+divided into 161 numbers of sub images, each of size 8X8 pixels. For each such
+sub images, LBP features are extracted which are concatenated in row wise
+manner. PCA is performed separately on the individual feature set for
+dimensionality reeducation. Finally two different classifiers are used to
+classify face images. One such classifier multi-layer feed forward neural
+network and another classifier is minimum distance classifier. The Experiments
+have been performed on the database created at our own laboratory and Terravic
+Facial IR Database.

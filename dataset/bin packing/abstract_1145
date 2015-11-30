@@ -1,0 +1,17 @@
+Purpose: We develop an iterative image-reconstruction algorithm for
+application to low-intensity computed tomography (CT) projection data, which is
+based on constrained, total-variation (TV) minimization. The algorithm design
+focuses on recovering structure on length scales comparable to a detector-bin
+width.
+  Method: Recovering the resolution on the scale of a detector bin, requires
+that pixel size be much smaller than the bin width. The resulting image array
+contains many more pixels than data, and this undersampling is overcome with a
+combination of Fourier upsampling of each projection and the use of
+constrained, TV-minimization, as suggested by compressive sensing. The
+presented pseudo-code for solving constrained, TV-minimization is designed to
+yield an accurate solution to this optimization problem within 100 iterations.
+  Results: The proposed image-reconstruction algorithm is applied to a
+low-intensity scan of a rabbit with a thin wire, to test resolution. The
+proposed algorithm is compared with filtered back-projection (FBP).
+  Conclusion: The algorithm may have some advantage over FBP in that the
+resulting noise-level is lowered at equivalent contrast levels of the wire.

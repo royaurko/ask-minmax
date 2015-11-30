@@ -1,0 +1,16 @@
+R-trees can be used to store and query sets of point data in two or more
+dimensions. An easy way to construct and maintain R-trees for two-dimensional
+points, due to Kamel and Faloutsos, is to keep the points in the order in which
+they appear along the Hilbert curve. The R-tree will then store bounding boxes
+of points along contiguous sections of the curve, and the efficiency of the
+R-tree depends on the size of the bounding boxes---smaller is better. Since
+there are many different ways to generalize the Hilbert curve to higher
+dimensions, this raises the question which generalization results in the
+smallest bounding boxes. Familiar methods, such as the one by Butz, can result
+in curve sections whose bounding boxes are a factor $\Omega(2^{d/2})$ larger
+than the volume traversed by that section of the curve. Most of the volume
+bounded by such bounding boxes would not contain any data points. In this paper
+we present a new way of generalizing Hilbert's curve to higher dimensions,
+which results in much tighter bounding boxes: they have at most 4 times the
+volume of the part of the curve covered, independent of the number of
+dimensions. Moreover, we prove that a factor 4 is asymptotically optimal.

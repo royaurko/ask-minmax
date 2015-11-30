@@ -1,0 +1,15 @@
+Markov random fields provide a compact representation of joint probability
+distributions by representing its independence properties in an undirected
+graph. The well-known Hammersley-Clifford theorem uses these conditional
+independences to factorize a Gibbs distribution into a set of factors. However,
+an important issue of using a graph to represent independences is that it
+cannot encode some types of independence relations, such as the
+context-specific independences (CSIs). They are a particular case of
+conditional independences that is true only for a certain assignment of its
+conditioning set; in contrast to conditional independences that must hold for
+all its assignments. This work presents a method for factorizing a Markov
+random field according to CSIs present in a distribution, and formally
+guarantees that this factorization is correct. This is presented in our main
+contribution, the context-specific Hammersley-Clifford theorem, a
+generalization to CSIs of the Hammersley-Clifford theorem that applies for
+conditional independences.

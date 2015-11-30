@@ -1,0 +1,27 @@
+We study policies aiming to minimize the weighted sum of completion times of
+jobs in the context of coordination mechanisms for selfish scheduling problems.
+Our goal is to design local policies that achieve a good price of anarchy in
+the resulting equilibria for unrelated machine scheduling. To obtain the
+approximation bounds, we introduce a new technique that while conceptually
+simple, seems to be quite powerful. With this method we are able to prove the
+following results.
+  First, we consider Smith's Rule, which orders the jobs on a machine in
+ascending processing time to weight ratio, and show that it achieves an
+approximation ratio of 4. We also demonstrate that this is the best possible
+for deterministic non-preemptive strongly local policies. Since Smith's Rule is
+always optimal for a given assignment, this may seem unsurprising, but we then
+show that better approximation ratios can be obtained if either preemption or
+randomization is allowed.
+  We prove that ProportionalSharing, a preemptive strongly local policy,
+achieves an approximation ratio of 2.618 for the weighted sum of completion
+times, and an approximation ratio of 2.5 in the unweighted case. Again, we
+observe that these bounds are tight. Next, we consider Rand, a natural
+non-preemptive but randomized policy. We show that it achieves an approximation
+ratio of at most 2.13; moreover, if the sum of the weighted completion times is
+negligible compared to the cost of the optimal solution, this improves to \pi
+/2.
+  Finally, we show that both ProportionalSharing and Rand induce potential
+games, and thus always have a pure Nash equilibrium (unlike Smith's Rule). This
+also allows us to design the first \emph{combinatorial} constant-factor
+approximation algorithm minimizing weighted completion time for unrelated
+machine scheduling that achieves a factor of 2+ \epsilon for any \epsilon > 0.

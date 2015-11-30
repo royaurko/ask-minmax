@@ -1,0 +1,10 @@
+Constraint problems can be trivially solved in parallel by exploring
+different branches of the search tree concurrently. Previous approaches have
+focused on implementing this functionality in the solver, more or less
+transparently to the user. We propose a new approach, which modifies the
+constraint model of the problem. An existing model is split into new models
+with added constraints that partition the search space. Optionally, additional
+constraints are imposed that rule out the search already done. The advantages
+of our approach are that it can be implemented easily, computations can be
+stopped and restarted, moved to different machines and indeed solved on
+machines which are not able to communicate with each other at all.

@@ -1,0 +1,15 @@
+The rainbow connection number, rc(G), of a connected graph G is the minimum
+number of colours needed to colour its edges, so that every pair of its
+vertices is connected by at least one path in which no two edges are coloured
+the same. In this note we show that for every bridgeless graph G with radius r,
+rc(G) <= r(r + 2). We demonstrate that this bound is the best possible for
+rc(G) as a function of r, not just for bridgeless graphs, but also for graphs
+of any stronger connectivity. It may be noted that for a general 1-connected
+graph G, rc(G) can be arbitrarily larger than its radius (Star graph for
+instance). We further show that for every bridgeless graph G with radius r and
+chordality (size of a largest induced cycle) k, rc(G) <= rk.
+  It is known that computing rc(G) is NP-Hard [Chakraborty et al., 2009]. Here,
+we present a (r+3)-factor approximation algorithm which runs in O(nm) time and
+a (d+3)-factor approximation algorithm which runs in O(dm) time to rainbow
+colour any connected graph G on n vertices, with m edges, diameter d and radius
+r.

@@ -1,0 +1,24 @@
+This thesis concerns the implementation of Lambda Prolog, a higher-order
+logic programming language that supports the lambda-tree syntax approach to
+representing and manipulating formal syntactic objects. Lambda Prolog achieves
+its functionality by extending a Prolog-like language by using typed lambda
+terms as data structures that it then manipulates via higher-order unification
+and some new program-level abstraction mechanisms. These additional features
+raise new implementation questions that must be adequately addressed for Lambda
+Prolog to be an effective programming tool. We consider these questions here,
+providing eventually a virtual machine and compilation based realization. A key
+idea is the orientation of the computation model of Lambda Prolog around a
+restricted version of higher-order unification with nice algorithmic properties
+and appearing to encompass most interesting applications. Our virtual machine
+embeds a treatment of this form of unification within the structure of the
+Warren Abstract Machine that is used in traditional Prolog implementations.
+Along the way, we treat various auxiliary issues such as the low-level
+representation of lambda terms, the implementation of reduction on such terms
+and the optimized processing of types in computation. We also develop an actual
+implementation of Lambda Prolog called Teyjus Version 2. A characteristic of
+this system is that it realizes an emulator for the virtual machine in the C
+language a compiler in the OCaml language. We present a treatment of the
+software issues that arise from this kind of mixing of languages within one
+system and we discuss issues relevant to the portability of our virtual machine
+emulator across arbitrary architectures. Finally, we assess the the efficacy of
+our various design ideas through experiments carried out using the system.

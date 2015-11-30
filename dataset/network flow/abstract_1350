@@ -1,0 +1,10 @@
+In this paper, we continue our development of algorithms used for topological
+network discovery. We present native P system versions of two fundamental
+problems in graph theory: finding the maximum number of edge- and node-disjoint
+paths between a source node and target node. We start from the standard
+depth-first-search maximum flow algorithms, but our approach is totally
+distributed, when initially no structural information is available and each P
+system cell has to even learn its immediate neighbors. For the node-disjoint
+version, our P system rules are designed to enforce node weight capacities (of
+one), in addition to edge capacities (of one), which are not readily available
+in the standard network flow algorithms.

@@ -1,0 +1,16 @@
+A self-learning algebraic multigrid method for dominant and minimal singular
+triplets and eigenpairs is described. The method consists of two multilevel
+phases. In the first, multiplicative phase (setup phase), tentative singular
+triplets are calculated along with a multigrid hierarchy of interpolation
+operators that approximately fit the tentative singular vectors in a collective
+and self-learning manner, using multiplicative update formulas. In the second,
+additive phase (solve phase), the tentative singular triplets are improved up
+to the desired accuracy by using an additive correction scheme with fixed
+interpolation operators, combined with a Ritz update. A suitable generalization
+of the singular value decomposition is formulated that applies to the coarse
+levels of the multilevel cycles. The proposed algorithm combines and extends
+two existing multigrid approaches for symmetric positive definite eigenvalue
+problems to the case of dominant and minimal singular triplets. Numerical tests
+on model problems from different areas show that the algorithm converges to
+high accuracy in a modest number of iterations, and is flexible enough to deal
+with a variety of problems due to its self-learning properties.

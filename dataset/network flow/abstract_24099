@@ -1,0 +1,17 @@
+Many online networks are not fully known and are often studied via sampling.
+Random Walk (RW) based techniques are the current state-of-the-art for
+estimating nodal attributes and local graph properties, but estimating global
+properties remains a challenge. In this paper, we are interested in a
+fundamental property of this type - the graph size N, i.e., the number of its
+nodes. Existing methods for estimating N are (i) inefficient and (ii) cannot be
+easily used with RW sampling due to dependence between successive samples. In
+this paper, we address both problems. First, we propose IE (Induced Edges), an
+efficient technique for estimating N from an independence sample of graph's
+nodes. IE exploits the edges induced on the sampled nodes. Second, we introduce
+SafetyMargin, a method that corrects estimators for dependence in RW samples.
+Finally, we combine these two stand-alone techniques to obtain a RW-based graph
+size estimator. We evaluate our approach in simulations on a wide range of
+real-life topologies, and on several samples of Facebook. IE with SafetyMargin
+typically requires at least 10 times fewer samples than the state-of-the-art
+techniques (over 100 times in the case of Facebook) for the same estimation
+error.

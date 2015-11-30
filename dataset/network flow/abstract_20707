@@ -1,0 +1,24 @@
+Dynamic connectivity is a well-studied problem, but so far the most
+compelling progress has been confined to the edge-update model: maintain an
+understanding of connectivity in an undirected graph, subject to edge
+insertions and deletions. In this paper, we study two more challenging, yet
+equally fundamental problems.
+  Subgraph connectivity asks to maintain an understanding of connectivity under
+vertex updates: updates can turn vertices on and off, and queries refer to the
+subgraph induced by "on" vertices. (For instance, this is closer to
+applications in networks of routers, where node faults may occur.)
+  We describe a data structure supporting vertex updates in O (m^{2/3})
+amortized time, where m denotes the number of edges in the graph. This greatly
+improves over the previous result [Chan, STOC'02], which required fast matrix
+multiplication and had an update time of O(m^0.94). The new data structure is
+also simpler.
+  Geometric connectivity asks to maintain a dynamic set of n geometric objects,
+and query connectivity in their intersection graph. (For instance, the
+intersection graph of balls describes connectivity in a network of sensors with
+bounded transmission radius.)
+  Previously, nontrivial fully dynamic results were known only for special
+cases like axis-parallel line segments and rectangles. We provide similarly
+improved update times, O (n^{2/3}), for these special cases. Moreover, we show
+how to obtain sublinear update bounds for virtually all families of geometric
+objects which allow sublinear-time range queries, such as arbitrary 2D line
+segments, d-dimensional simplices, and d-dimensional balls.

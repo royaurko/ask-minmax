@@ -1,0 +1,22 @@
+The primal-dual column generation method (PDCGM) is a general-purpose column
+generation technique that relies on the primal-dual interior point method to
+solve the restricted master problems. The use of this interior point method
+variant allows to obtain suboptimal and well-centered dual solutions which
+naturally stabilizes the column generation. As recently presented in the
+literature, reductions in the number of calls to the oracle and in the CPU
+times are typically observed when compared to the standard column generation,
+which relies on extreme optimal dual solutions. However, these results are
+based on relatively small problems obtained from linear relaxations of
+combinatorial applications. In this paper, we investigate the behaviour of the
+PDCGM in a broader context, namely when solving large-scale convex optimization
+problems. We have selected applications that arise in important real-life
+contexts such as data analysis (multiple kernel learning problem),
+decision-making under uncertainty (two-stage stochastic programming problems)
+and telecommunication and transportation networks (multicommodity network flow
+problem). In the numerical experiments, we use publicly available benchmark
+instances to compare the performance of the PDCGM against recent results for
+different methods presented in the literature, which were the best available
+results to date. The analysis of these results suggests that the PDCGM offers
+an attractive alternative over specialized methods since it remains competitive
+in terms of number of iterations and CPU times even for large-scale
+optimization problems.

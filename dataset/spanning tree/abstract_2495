@@ -1,0 +1,16 @@
+A k-dissimilarity D on a finite set X, |X| >= k, is a map from the set of
+size k subsets of X to the real numbers. Such maps naturally arise from
+edge-weighted trees T with leaf-set X: Given a subset Y of X of size k, D(Y) is
+defi?ned to be the total length of the smallest subtree of T with leaf-set Y .
+In case k = 2, it is well-known that 2-dissimilarities arising in this way can
+be characterized by the so-called "4-point condition". However, in case k > 2
+Pachter and Speyer recently posed the following question: Given an arbitrary
+k-dissimilarity, how do we test whether this map comes from a tree? In this
+paper, we provide an answer to this question, showing that for k >= 3 a
+k-dissimilarity on a set X arises from a tree if and only if its restriction to
+every 2k-element subset of X arises from some tree, and that 2k is the least
+possible subset size to ensure that this is the case. As a corollary, we show
+that there exists a polynomial-time algorithm to determine when a
+k-dissimilarity arises from a tree. We also give a 6-point condition for
+determining when a 3-dissimilarity arises from a tree, that is similar to the
+aforementioned 4-point condition.

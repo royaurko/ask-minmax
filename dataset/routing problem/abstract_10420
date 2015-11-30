@@ -1,0 +1,25 @@
+Let F be a set of ordered patterns, i.e., graphs whose vertices are linearly
+ordered. An F-free ordering of the vertices of a graph H is a linear ordering
+of V(H) such that none of patterns in F occurs as an induced ordered subgraph.
+We denote by ORD(F) the decision problem asking whether an input graph admits
+an F-free ordering; we also use ORD(F) to denote the class of graphs that do
+admit an F-free ordering. It was observed by Damaschke (and others) that many
+natural graph classes can be described as ORD(F) for sets F of small patterns
+(with three or four vertices). Damaschke also noted that for many sets F
+consisting of patterns with three vertices, ORD(F) is polynomial-time solvable
+by known algorithms or their simple modifications. We complete the picture by
+proving that all these problems can be solved in polynomial time. In fact, we
+provide a single master algorithm, i.e., we solve in polynomial time the
+problem $ORD_3$ in which the input is a set F of patterns with at most three
+vertices and a graph H, and the problem is to decide whether or not H admits an
+F-free ordering of the vertices. Our algorithm certifies non-membership by a
+forbidden substructure, and thus provides a single forbidden structure
+characterization for all the graph classes described by some ORD(F) with F
+consisting of patterns with at most three vertices. Many of the problems ORD(F)
+with F consisting of larger patterns have been shown to be NP-complete by
+Duffus, Ginn, and Rodl, and we add two simple examples.
+  We also discuss a bipartite version of the problem, BORD(F), in which the
+input is a bipartite graph H with a fixed bipartition of the vertices, and we
+are given a set F of bipartite patterns. We also describe some examples of
+digraph ordering problems and algorithms. We conjecture that for every set F of
+forbidden patterns, ORD(F) is either polynomial or NP-complete.

@@ -1,0 +1,16 @@
+We study the distributed detection problem in the context of a balanced
+binary relay tree, where the leaves of the tree correspond to $N$ identical and
+independent sensors generating binary messages. The root of the tree is a
+fusion center making an overall decision. Every other node is a relay node that
+aggregates the messages received from its child nodes into a new message and
+sends it up toward the fusion center. We derive upper and lower bounds for the
+total error probability $P_N$ as explicit functions of $N$ in the case where
+nodes and links fail with certain probabilities. These characterize the
+asymptotic decay rate of the total error probability as $N$ goes to infinity.
+Naturally, this decay rate is not larger than that in the non-failure case,
+which is $\sqrt N$. However, we derive an explicit necessary and sufficient
+condition on the decay rate of the local failure probabilities $p_k$
+(combination of node and link failure probabilities at each level) such that
+the decay rate of the total error probability in the failure case is the same
+as that of the non-failure case. More precisely, we show that $\log
+P_N^{-1}=\Theta(\sqrt N)$ if and only if $\log p_k^{-1}=\Omega(2^{k/2})$.

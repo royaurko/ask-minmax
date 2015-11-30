@@ -1,0 +1,21 @@
+For some years it was believed that for "connectivity" problems such as
+Hamiltonian Cycle, algorithms running in time 2^{O(tw)}n^{O(1)} -called
+single-exponential- existed only on planar and other sparse graph classes,
+where tw stands for the treewidth of the n-vertex input graph. This was
+recently disproved by Cygan et al. [FOCS 2011], Bodlaender et al. [ICALP 2013],
+and Fomin et al. [SODA 2014], who provided single-exponential algorithms on
+general graphs for essentially all connectivity problems that were known to be
+solvable in single-exponential time on sparse graphs. In this article we
+further investigate the role of planarity in connectivity problems
+parameterized by treewidth, and convey that several problems can indeed be
+distinguished according to their behavior on planar graphs. Known results from
+the literature imply that there exist problems, like Cycle Packing, that cannot
+be solved in time 2^{o(tw logtw)}n^{O(1)} on general graphs but that can be
+solved in time 2^{O(tw)}n^{O(1)} when restricted to planar graphs. Our main
+contribution is to show that there exist problems that can be solved in time
+2^{O(tw logtw)}n^{O(1)} on general graphs but that cannot be solved in time
+2^{o(tw logtw)}n^{O(1)} even when restricted to planar graphs. Furthermore, we
+prove that Planar Cycle Packing and Planar Disjoint Paths cannot be solved in
+time 2^{o(tw)}n^{O(1)}. The mentioned negative results hold unless the ETH
+fails. We feel that our results constitute a first step in a subject that can
+be further exploited.

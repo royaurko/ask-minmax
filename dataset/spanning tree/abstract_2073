@@ -1,0 +1,16 @@
+Ancestral maximum likelihood (AML) is a method that simultaneously
+reconstructs a phylogenetic tree and ancestral sequences from extant data
+(sequences at the leaves). The tree and ancestral sequences maximize the
+probability of observing the given data under a Markov model of sequence
+evolution, in which branch lengths are also optimized but constrained to take
+the same value on any edge across all sequence sites. AML differs from the more
+usual form of maximum likelihood (ML) in phylogenetics because ML averages over
+all possible ancestral sequences. ML has long been known to be statistically
+consistent -- that is, it converges on the correct tree with probability
+approaching 1 as the sequence length grows. However, the statistical
+consistency of AML has not been formally determined, despite informal remarks
+in a literature that dates back 20 years. In this short note we prove a general
+result that implies that AML is statistically inconsistent. In particular we
+show that AML can `shrink' short edges in a tree, resulting in a tree that has
+no internal resolution as the sequence length grows. Our results apply to any
+number of taxa.

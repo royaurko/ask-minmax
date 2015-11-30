@@ -1,0 +1,15 @@
+The application of the Reformulation Linearization Technique (RLT) to the
+Quadratic Assignment Problem (QAP) leads to a tight linear relaxation with huge
+dimensions that is hard to solve. Previous works found in the literature show
+that these relaxations combined with branch-and-bound algorithms belong to the
+state-of-the-art of exact methods for the QAP. For the level 3 RLT (RLT3),
+using this relaxation is prohibitive in conventional machines for instances
+with more than 22 locations due to memory limitations. This paper presents a
+distributed version of a dual ascent algorithm for the RLT3 QAP relaxation that
+approximately solves it for instances with up to 30 locations for the first
+time. Although, basically, the distributed algorithm has been implemented on
+top of its sequential conterpart, some changes, which improved not only the
+parallel performance but also the quality of solutions, were proposed here.
+When compared to other lower bounding methods found in the literature, our
+algorithm generates the best known lower bounds for 26 out of the 28 tested
+instances, reaching the optimal solution in 18 of them.

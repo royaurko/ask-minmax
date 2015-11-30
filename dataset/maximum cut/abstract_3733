@@ -1,0 +1,11 @@
+Based on the notion of supercodes, we propose a two-phase maximum-likelihood
+soft-decision decoding (tpMLSD) algorithm for binary linear block codes in this
+work. The first phase applies the Viterbi algorithm backwardly to a trellis
+derived from the parity-check matrix of the supercode of the linear block code.
+Using the information retained from the first phase, the second phase employs
+the priority-first search algorithm to the trellis corresponding to the linear
+block code itself, which guarantees finding the ML decision. Simulations on
+Reed-Muller codes show that the proposed two-phase scheme is an order of
+magnitude more efficient in average decoding complexity than the recursive
+maximum-likelihood decoding (RMLD) [1] when the signal-to-noise ratio per
+information bit is 4.5 dB.

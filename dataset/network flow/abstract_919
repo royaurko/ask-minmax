@@ -1,0 +1,11 @@
+In this paper we consider a network with $P$ nodes, where each node has
+exclusive access to a local cost function. Our contribution is a
+communication-efficient distributed algorithm that finds a vector $x^\star$
+minimizing the sum of all the functions. We make the additional assumption that
+the functions have intersecting local domains, i.e., each function depends only
+on some components of the variable. Consequently, each node is interested in
+knowing only some components of $x^\star$, not the entire vector. This allows
+for improvement in communication-efficiency. We apply our algorithm to model
+predictive control (MPC) and to network flow problems and show, through
+experiments on large networks, that our proposed algorithm requires less
+communications to converge than prior algorithms.

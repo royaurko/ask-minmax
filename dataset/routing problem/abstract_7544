@@ -1,0 +1,20 @@
+We consider online resource allocation problems where given a set of requests
+our goal is to select a subset that maximizes a value minus cost type of
+objective function. Requests are presented online in random order, and each
+request possesses an adversarial value and an adversarial size. The online
+algorithm must make an irrevocable accept/reject decision as soon as it sees
+each request. The "profit" of a set of accepted requests is its total value
+minus a convex cost function of its total size. This problem falls within the
+framework of secretary problems. Unlike previous work in that area, one of the
+main challenges we face is that the objective function can be positive or
+negative and we must guard against accepting requests that look good early on
+but cause the solution to have an arbitrarily large cost as more requests are
+accepted. This requires designing new techniques.
+  We study this problem under various feasibility constraints and present
+online algorithms with competitive ratios only a constant factor worse than
+those known in the absence of costs for the same feasibility constraints. We
+also consider a multi-dimensional version of the problem that generalizes
+multi-dimensional knapsack within a secretary framework. In the absence of any
+feasibility constraints, we present an O(l) competitive algorithm where l is
+the number of dimensions; this matches within constant factors the best known
+ratio for multi-dimensional knapsack secretary.

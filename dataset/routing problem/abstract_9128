@@ -1,0 +1,13 @@
+We propose an alternative implementation of preconditioning techniques for
+the solution of non-linear problems. Within the framework of Newton-Krylov
+methods, preconditioning techniques are needed to improve the performance of
+the solvers. We propose a different implementation approach to re-utilize
+existing semi-implicit methods to precondition fully implicit non-linear
+schemes. We propose a predictor-corrector approach where the fully non-linear
+scheme is the corrector and the pre-existing semi-implicit scheme is the
+predictor. The advantage of the proposed approach is that it allows to retrofit
+existing codes, with only minor modifications, in particular avoiding the need
+to reformulate existing methods in terms of variations, as required instead by
+other approaches now currently used. To test the performance of the approach we
+consider a non-linear diffusion problem and the standard driven cavity problem
+for incompressible flows.

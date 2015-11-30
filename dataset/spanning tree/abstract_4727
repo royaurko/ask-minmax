@@ -1,0 +1,11 @@
+It has been observed in a variety of contexts that gradient descent methods
+have great success in solving low-rank matrix-factorization problems, despite
+the relevant problem formulation being non-convex. We tackle a particular
+instance of this scenario, where we seek the d-dimensional subspace spanned by
+a streaming data matrix. We apply the natural first order incremental gradient
+descent method, constraining the gradient method to the Grassmannian. We show
+that this method converges from any random initialization to the global minimum
+of the problem, which is also given by the span of the top d left singular
+vectors. Further, we give bounds on the expected convergence rate and a high
+probability convergence rate. In a local neighborhood of the global minimizer,
+our results match the linear rate of convergence in [7].

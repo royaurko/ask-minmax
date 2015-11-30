@@ -1,0 +1,11 @@
+An inverse polynomial has a Chebyshev series expansion
+ 1/\sum(j=0..k)b_j*T_j(x)=\sum'(n=0..oo) a_n*T_n(x) if the polynomial has no
+roots in [-1,1]. If the inverse polynomial is decomposed into partial
+fractions, the a_n are linear combinations of simple functions of the
+polynomial roots. If the first k of the coefficients a_n are known, the others
+become linear combinations of these with expansion coefficients derived
+recursively from the b_j's. On a closely related theme, finding a polynomial
+with minimum relative error towards a given f(x) is approximately equivalent to
+finding the b_j in f(x)/sum_(j=0..k)b_j*T_j(x)=1+sum_(n=k+1..oo) a_n*T_n(x),
+and may be handled with a Newton method providing the Chebyshev expansion of
+f(x) is known.

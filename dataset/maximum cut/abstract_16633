@@ -1,0 +1,20 @@
+Spacetime Discontinuous Galerkin (DG) methods are used to solve hyperbolic
+PDEs describing wavelike physical phenomena. When the PDEs are nonlinear, the
+speed of propagation of the phenomena, called the wavespeed, at any point in
+the spacetime domain is computed as part of the solution. We give an advancing
+front algorithm to construct a simplicial mesh of the spacetime domain suitable
+for DG solutions. Given a simplicial mesh of a bounded linear or planar space
+domain M, we incrementally construct a mesh of the spacetime domain M x
+[0,infinity) such that the solution can be computed in constant time per
+element. We add a patch of spacetime elements to the mesh at every step. The
+boundary of every patch is causal which means that the elements in the patch
+can be solved immediately and that the patches in the mesh are partially
+ordered by dependence. The elements in a single patch are coupled because they
+share implicit faces; however, the number of elements in each patch is bounded.
+The main contribution of this paper is sufficient constraints on the progress
+in time made by the algorithm at each step which guarantee that a new patch
+with causal boundary can be added to the mesh at every step even when the
+wavespeed is increasing discontinuously. Our algorithm adapts to the local
+gradation of the space mesh as well as the wavespeed that most constrains
+progress at each step. Previous algorithms have been restricted at each step by
+the maximum wavespeed throughout the entire spacetime domain.

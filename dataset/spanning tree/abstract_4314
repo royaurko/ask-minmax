@@ -1,0 +1,12 @@
+At SODA 2009, Demaine et al. presented a novel connection between binary
+search trees (BSTs) and subsets of points on the plane. This connection was
+independently discovered by Derryberry et al. As part of their results, Demaine
+et al. considered GreedyFuture, an offline BST algorithm that greedily
+rearranges the search path to minimize the cost of future searches. They showed
+that GreedyFuture is actually an online algorithm in their geometric view, and
+that there is a way to turn GreedyFuture into an online BST algorithm with only
+a constant factor increase in total search cost. Demaine et al. conjectured
+this algorithm was dynamically optimal, but no upper bounds were given in their
+paper. We prove the first non-trivial upper bounds for the cost of search
+operations using GreedyFuture including giving an access lemma similar to that
+found in Sleator and Tarjan's classic paper on splay trees.

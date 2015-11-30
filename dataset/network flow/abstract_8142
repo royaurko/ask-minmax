@@ -1,0 +1,18 @@
+The Leray-$\alpha$ model reduces the range of active scales of the
+Navier-Stokes equations by smoothing the advective transport. Here we assess
+the potential of the Leray-$\alpha$ model in its standard formulation to
+simulate wall-bounded flows. Three flow cases are considered: plane channel
+flow at $\Re_\tau=590$, Rayleigh-B\'{e}nard convection at $\Ra=10^7$ and
+$\Pr=1$, and a side-heated vertical channel at $\Ra=5 \times 10^6$ and
+$\Pr=0.7$. The simulations are compared to results from a well resolved and
+coarse DNS. It is found that for all three flow cases, the variance in the
+velocity field increases as the filter width parameter $a$ is increased, where
+$a$ is connected to the filter width as $\alpha_i = a \Delta x_i$, with $\Delta
+x_i$ the local grid size. Furthermore, the viscous and diffusive wall regions
+tend to thicken relative to the coarse DNS results as a function of $a$. In the
+cases where coarse DNS overpredicts wall gradients (as for Rayleigh-B\'{e}nard
+convection and the side-heated vertical channel), the thickening is beneficial.
+However, for the plane channel flow, coarse DNS underpredicts the wall-shear
+velocity, and increasing $a$ only degrades the results. It is shown that
+buoyancy effects need to be included with care, because of the close relation
+of turbulent heat flux and the production of turbulent kinetic energy.

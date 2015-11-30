@@ -1,0 +1,11 @@
+We are given a set of points $p_1,\ldots , p_n$ and a symmetric distance
+matrix $(d_{ij})$ giving the distance between $p_i$ and $p_j$. We wish to
+construct a tour that minimizes $\sum_{i=1}^n \ell(i)$, where $\ell(i)$ is the
+{\em latency} of $p_i$, defined to be the distance traveled before first
+visiting $p_i$. This problem is also known in the literature as the {\em
+deliveryman problem} or the {\em traveling repairman problem}. It arises in a
+number of applications including disk-head scheduling, and turns out to be
+surprisingly different from the traveling salesman problem in character. We
+give exact and approximate solutions to a number of cases, including a
+constant-factor approximation algorithm whenever the distance matrix satisfies
+the triangle inequality.

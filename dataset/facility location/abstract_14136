@@ -1,0 +1,18 @@
+To optimize rotated, multidimensional constellations over a single-input,
+single-output Rayleigh fading channel, a family of rotation matrices is
+constructed for all dimensions which are a power of 2. This family is a
+one-parameter subgroup of the group of rotation matrices, and is located using
+a gradient descent scheme on this Lie group. The parameter defining the family
+is chosen to optimize the cutoff rate of the constellation. The optimal
+rotation parameter is computed explicitly for low signal-to-noise ratios. The
+cutoff rate serves as the main judge of performance, and is an approximation of
+the coded modulation capacity of the constellation.
+  These rotations modestly outperform full-diversity algebraic rotation
+matrices in terms of cutoff rate and error performance. However, a QAM
+constellation rotated by such a matrix lacks full diversity, but will satisfy a
+less restrictive property referred to as "local full diversity". Roughly, a
+locally fully diverse constellation is fully diverse only in small
+neighborhoods. This is in contrast with the conventional wisdom that good
+signal sets exhibit full diversity. A "local" variant of the minimum product
+distance is also introduced and is shown experimentally to be a superior
+predictor of constellation performance than the minimum product distance.

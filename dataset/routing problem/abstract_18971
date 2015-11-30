@@ -1,0 +1,14 @@
+The problem of finding "small" sets that meet every straight-line which
+intersects a given convex region was initiated by Mazurkiewicz in 1916. We call
+such a set an {\em opaque set} or a {\em barrier} for that region. We consider
+the problem of computing the shortest barrier for a given convex polygon with
+$n$ vertices. No exact algorithm is currently known even for the simplest
+instances such as a square or an equilateral triangle. For general barriers, we
+present an approximation algorithm with ratio $1/2 + \frac{2
++\sqrt{2}}{\pi}=1.5867...$. For connected barriers we achieve the approximation
+ratio 1.5716, while for single-arc barriers we achieve the approximation ratio
+$\frac{\pi+5}{\pi+2} = 1.5834...$. All three algorithms run in O(n) time. We
+also show that if the barrier is restricted to the (interior and the boundary
+of the) input polygon, then the problem admits a fully polynomial-time
+approximation scheme for the connected case and a quadratic-time exact
+algorithm for the single-arc case.

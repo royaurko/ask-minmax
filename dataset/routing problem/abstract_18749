@@ -1,0 +1,20 @@
+Many enterprise environments have databases running on network-attached
+server-storage infrastructure (referred to as Storage Area Networks or SANs).
+Both the database and the SAN are complex systems that need their own separate
+administrative teams. This paper puts forth the vision of an innovative
+management framework to simplify administrative tasks that require an in-depth
+understanding of both the database and the SAN. As a concrete instance, we
+consider the task of diagnosing the slowdown in performance of a database query
+that is executed multiple times (e.g., in a periodic report-generation
+setting). This task is very challenging because the space of possible causes
+includes problems specific to the database, problems specific to the SAN, and
+problems that arise due to interactions between the two systems. In addition,
+the monitoring data available from these systems can be noisy.
+  We describe the design of DIADS which is an integrated diagnosis tool for
+database and SAN administrators. DIADS generates and uses a powerful
+abstraction called Annotated Plan Graphs (APGs) that ties together the
+execution path of queries in the database and the SAN. Using an innovative
+workflow that combines domain-specific knowledge with machine-learning
+techniques, DIADS was applied successfully to diagnose query slowdowns caused
+by complex combinations of events across a PostgreSQL database and a production
+SAN.

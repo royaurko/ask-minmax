@@ -1,0 +1,18 @@
+We propose a new task of recommending touristic locations based on a user's
+visiting history in a geographically remote region. This can be used to plan a
+touristic visit to a new city or country, or by travel agencies to provide
+personalised travel deals.
+  A set of geotags is used to compute a location similarity model between two
+different regions. The similarity between two landmarks is derived from the
+number of users that have visited both places, using a Gaussian density
+estimation of the co-occurrence space of location visits to cluster related
+geotags. The standard deviation of the kernel can be used as a scale parameter
+that determines the size of the recommended landmarks.
+  A personalised recommendation based on the location similarity model is
+evaluated on city and country scale and is able to outperform a location
+ranking based on popularity. Especially when a tourist filter based on visit
+duration is enforced, the prediction can be accurately adapted to the
+preference of the user. An extensive evaluation based on manual annotations
+shows that more strict ranking methods like cosine similarity and a proposed
+RankDiff algorithm provide more serendipitous recommendations and are able to
+link similar locations on opposite sides of the world.

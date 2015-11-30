@@ -1,0 +1,19 @@
+The robustness of distributed systems is usually phrased in terms of the
+number of failures of certain types that they can withstand. However, these
+failure models are too crude to describe the different kinds of trust and
+expectations of participants in the modern world of complex, integrated systems
+extending across different owners, networks, and administrative domains. Modern
+systems often exist in an environment of heterogeneous trust, in which
+different participants may have different opinions about the trustworthiness of
+other nodes, and a single participant may consider other nodes to differ in
+their trustworthiness. We explore how to construct distributed protocols that
+meet the requirements of all participants, even in heterogeneous trust
+environments. The key to our approach is using lattice-based information flow
+to analyse and prove protocol properties. To demonstrate this approach, we show
+how two earlier distributed algorithms can be generalized to work in the
+presence of heterogeneous trust: first, Heterogeneous Fast Consensus, an
+adaptation of the earlier Bosco Fast Consensus protocol; and second, Nysiad, an
+algorithm for converting crash-tolerant protocols to be Byzantine-tolerant.
+Through simulations, we show that customizing a protocol to a heterogeneous
+trust configuration yields performance improvements over the conventional
+protocol designed for homogeneous trust.

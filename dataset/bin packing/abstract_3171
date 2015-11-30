@@ -1,0 +1,14 @@
+Image compression has been a frequent topic of presentations at ADASS.
+Compression is often viewed as just a technique to fit more data into a smaller
+space. Rather, the packing of data - its "density" - affects every facet of
+local data handling, long distance data transport, and the end-to-end
+throughput of workflows. In short, compression is one aspect of proper data
+structuring. For example, with FITS tile compression the efficient
+representation of data is combined with an expressive logistical paradigm for
+its manipulation.
+  A deeper question remains. Not just how best to represent the data, but which
+data to represent. CCDs are linear devices. What does this mean? One thing it
+does not mean is that the analog-to-digital conversion of pixels must be stored
+using linear data numbers (DN). An alternative strategy of using non- linear
+representations is presented, with one motivation being to magnify the
+efficiency of numerical compression algorithms such as Rice.

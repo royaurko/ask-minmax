@@ -1,0 +1,24 @@
+It is known that annotating named entities in unstructured and
+semi-structured data sets by their concepts improves the effectiveness of
+answering queries over these data sets. As every enterprise has a limited
+budget of time or computational resources, it has to annotate a subset of
+concepts in a given domain whose costs of annotation do not exceed the budget.
+We call such a subset of concepts a {\it conceptual design} for the annotated
+data set. We focus on finding a conceptual design that provides the most
+effective answers to queries over the annotated data set, i.e., a {\it
+cost-effective conceptual design}. Since, it is often less time-consuming and
+costly to annotate general concepts than specific concepts, we use information
+on superclass/subclass relationships between concepts in taxonomies to find a
+cost-effective conceptual design. We quantify the amount by which a conceptual
+design with concepts from a taxonomy improves the effectiveness of answering
+queries over an annotated data set. If the taxonomy is a tree, we prove that
+the problem is NP-hard and propose an efficient approximation and
+pseudo-polynomial time algorithms for the problem. We further prove that if the
+taxonomy is a directed acyclic graph, given some generally accepted hypothesis,
+it is not possible to find any approximation algorithm with reasonably small
+approximation ratio for the problem. Our empirical study using real-world data
+sets, taxonomies, and query workloads shows that our framework effectively
+quantifies the amount by which a conceptual design improves the effectiveness
+of answering queries. It also indicates that our algorithms are efficient for a
+design-time task with pseudo-polynomial algorithm being generally more
+effective than the approximation algorithm.

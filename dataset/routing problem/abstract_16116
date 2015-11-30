@@ -1,0 +1,17 @@
+Directed acyclic graphs (DAGs) are commonly used to represent causal
+relationships among random variables in graphical models. Applications of these
+models arise in the study of physical, as well as biological systems, where
+directed edges between nodes represent the influence of components of the
+system on each other. The general problem of estimating DAGs from observed data
+is computationally NP-hard, Moreover two directed graphs may be observationally
+equivalent. When the nodes exhibit a natural ordering, the problem of
+estimating directed graphs reduces to the problem of estimating the structure
+of the network. In this paper, we propose a penalized likelihood approach that
+directly estimates the adjacency matrix of DAGs. Both lasso and adaptive lasso
+penalties are considered and an efficient algorithm is proposed for estimation
+of high dimensional DAGs. We study variable selection consistency of the two
+penalties when the number of variables grows to infinity with the sample size.
+We show that although lasso can only consistently estimate the true network
+under stringent assumptions, adaptive lasso achieves this task under mild
+regularity conditions. The performance of the proposed methods is compared to
+alternative methods in simulated, as well as real, data examples.

@@ -1,0 +1,14 @@
+The original description of the k-d tree recognized that rebalancing
+techniques, such as are used to build an AVL tree or a red-black tree, are not
+applicable to a k-d tree. Hence, in order to build a balanced k-d tree, it is
+necessary to find the median of the data for each recursive subdivision of
+those data. The sort or selection that is used to find the median for each
+subdivision strongly influences the computational complexity of building a k-d
+tree. This paper discusses an alternative algorithm that builds a balanced k-d
+tree by presorting the data in each of k dimensions prior to building the tree.
+It then preserves the order of these k sorts during tree construction and
+thereby avoids the requirement for any further sorting. Moreover, this
+algorithm is amenable to parallel execution via multiple threads. Compared to
+an algorithm that finds the median for each recursive subdivision, this
+presorting algorithm has equivalent performance for four dimensions and better
+performance for three or fewer dimensions.

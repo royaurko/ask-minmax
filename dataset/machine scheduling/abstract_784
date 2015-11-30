@@ -1,0 +1,12 @@
+We consider algorithms to schedule packets with values and deadlines in a
+size-bounded buffer. At any time, the buffer can store at most B packets.
+Packets arrive over time. Each packet has a non-negative value and an integer
+deadline. In each time step, at most one packet can be sent. Packets can be
+dropped at any time before they are sent. The objective is to maximize the
+total value gained by delivering packets no later than their respective
+deadlines. This model generalizes the well-studied bounded-delay model (Hajek.
+CISS 2001. Kesselman et al. STOC 2001). We first provide an optimal offline
+algorithm for this model. Then we present an alternative proof of the
+2-competitive deterministic online algorithm (Fung. arXiv July 2009). We also
+prove that the lower bound of competitive ratio of a family of (deterministic
+and randomized) algorithms is 2 - 1 / B.

@@ -1,0 +1,13 @@
+A binary matrix $M$ has the Consecutive Ones Property (COP) if there exists a
+permutation of columns that arranges the ones consecutively in all the rows.
+Given a matrix, the $d$-COS-R problem is to determine if there exists a set of
+at most $d$ rows whose deletion results in a matrix with COP. We consider the
+parameterized complexity of this problem with respect to the number $d$ of rows
+to be deleted as the parameter. The closely related Interval Deletion problem
+has recently shown to be FPT [Y. Cao and D. Marx, Interval Deletion is
+Fixed-Parameter Tractable, arXiv:1211.5933 [cs.DS],2012]. In this work, we
+describe a recursive depth-bounded search tree algorithm in which the problems
+at the leaf-level are solved as instances of Interval Deletion. The running
+time of the algorithm is dominated by the running time of Interval Deletion,
+and therefore we show that $d$-COS-R is fixed-parameter tractable and has a
+run-time of $O^*(10^d)$.

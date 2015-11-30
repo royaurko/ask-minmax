@@ -1,0 +1,19 @@
+Cyber security is one of the most significant technical challenges in current
+times. Detecting adversarial activities, prevention of theft of intellectual
+properties and customer data is a high priority for corporations and government
+agencies around the world. Cyber defenders need to analyze massive-scale,
+high-resolution network flows to identify, categorize, and mitigate attacks
+involving networks spanning institutional and national boundaries. Many of the
+cyber attacks can be described as subgraph patterns, with prominent examples
+being insider infiltrations (path queries), denial of service (parallel paths)
+and malicious spreads (tree queries). This motivates us to explore subgraph
+matching on streaming graphs in a continuous setting. The novelty of our work
+lies in using the subgraph distributional statistics collected from the
+streaming graph to determine the query processing strategy. We introduce a
+"Lazy Search" algorithm where the search strategy is decided on a
+vertex-to-vertex basis depending on the likelihood of a match in the vertex
+neighborhood. We also propose a metric named "Relative Selectivity" that is
+used to select between different query processing strategies. Our experiments
+performed on real online news, network traffic stream and a synthetic social
+network benchmark demonstrate 10-100x speedups over selectivity agnostic
+approaches.

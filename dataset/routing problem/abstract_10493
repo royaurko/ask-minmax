@@ -1,0 +1,16 @@
+We study a problem of quick detection of top-k Personalized PageRank lists.
+This problem has a number of important applications such as finding local cuts
+in large graphs, estimation of similarity distance and name disambiguation. In
+particular, we apply our results to construct efficient algorithms for the
+person name disambiguation problem. We argue that when finding top-k
+Personalized PageRank lists two observations are important. Firstly, it is
+crucial that we detect fast the top-k most important neighbours of a node,
+while the exact order in the top-k list as well as the exact values of PageRank
+are by far not so crucial. Secondly, a little number of wrong elements in top-k
+lists do not really degrade the quality of top-k lists, but it can lead to
+significant computational saving. Based on these two key observations we
+propose Monte Carlo methods for fast detection of top-k Personalized PageRank
+lists. We provide performance evaluation of the proposed methods and supply
+stopping criteria. Then, we apply the methods to the person name disambiguation
+problem. The developed algorithm for the person name disambiguation problem has
+achieved the second place in the WePS 2010 competition.

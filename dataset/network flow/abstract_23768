@@ -1,0 +1,15 @@
+This paper introduces constNJ, the first algorithm for phylogenetic
+reconstruction of sets of trees with constrained pairwise rooted subtree-prune
+regraft (rSPR) distance. We are motivated by the problem of constructing sets
+of trees which must fit into a recombination, hybridization, or similar
+network. Rather than first finding a set of trees which are optimal according
+to a phylogenetic criterion (e.g. likelihood or parsimony) and then attempting
+to fit them into a network, constNJ estimates the trees while enforcing
+specified rSPR distance constraints. The primary input for constNJ is a
+collection of distance matrices derived from sequence blocks which are assumed
+to have evolved in a tree-like manner, such as blocks of an alignment which do
+not contain any recombination breakpoints. The other input is a set of rSPR
+constraints for any set of pairs of trees. ConstNJ is consistent and a strict
+generalization of the neighbor-joining algorithm; it uses the new notion of
+"maximum agreement partitions" to assure that the resulting trees satisfy the
+given rSPR distance constraints.

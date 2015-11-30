@@ -1,0 +1,20 @@
+In this paper we describe a new tool, SReach, which solves probabilistic
+bounded reachability problems for two classes of stochastic hybrid systems. The
+first one is (nonlinear) hybrid automata with parametric uncertainty. The
+second one is probabilistic hybrid automata with additional randomness for both
+transition probabilities and variable resets. Standard approaches to
+reachability problems for linear hybrid systems require numerical solutions for
+large optimization problems, and become infeasible for systems involving both
+nonlinear dynamics over the reals and stochasticity. Our approach encodes
+stochastic information by using random variables, and combines the randomized
+sampling, a $\delta$-complete decision procedure, and statistical tests. SReach
+utilizes the $\delta$-complete decision procedure to solve reachability
+problems in a sound manner, i.e., it always decides correctly if, for a given
+assignment to all random variables, the system actually reaches the unsafe
+region. The statistical tests adapted guarantee arbitrary small error bounds
+between probabilities estimated by SReach and real ones. Compared to standard
+simulation-based methods, our approach supports non-deterministic branching,
+increases the coverage of simulation, and avoids the zero-crossing problem. We
+demonstrate our method's feasibility by applying SReach to three representative
+biological models and to additional benchmarks for nonlinear hybrid systems
+with multiple probabilistic system parameters.

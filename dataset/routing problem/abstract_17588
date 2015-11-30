@@ -1,0 +1,14 @@
+Recovering matrices from compressive and grossly corrupted observations is a
+fundamental problem in robust statistics, with rich applications in computer
+vision and machine learning. In theory, under certain conditions, this problem
+can be solved in polynomial time via a natural convex relaxation, known as
+Compressive Principal Component Pursuit (CPCP). However, all existing provable
+algorithms for CPCP suffer from superlinear per-iteration cost, which severely
+limits their applicability to large scale problems. In this paper, we propose
+provable, scalable and efficient methods to solve CPCP with (essentially)
+linear per-iteration cost. Our method combines classical ideas from Frank-Wolfe
+and proximal methods. In each iteration, we mainly exploit Frank-Wolfe to
+update the low-rank component with rank-one SVD and exploit the proximal step
+for the sparse term. Convergence results and implementation details are also
+discussed. We demonstrate the scalability of the proposed approach with
+promising numerical experiments on visual data.

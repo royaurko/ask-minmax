@@ -1,0 +1,12 @@
+Large tick assets, i.e. assets where one tick movement is a significant
+fraction of the price and bid-ask spread is almost always equal to one tick,
+display a dynamics in which price changes and spread are strongly coupled. We
+introduce a Markov-switching modeling approach for price change, where the
+latent Markov process is the transition between spreads. We then use a finite
+Markov mixture of logit regressions on past squared returns to describe the
+dependence of the probability of price changes. The model can thus be seen as a
+Double Chain Markov Model. We show that the model describes the shape of return
+distribution at different time aggregations, volatility clustering, and the
+anomalous decrease of kurtosis of returns. We calibrate our models on Nasdaq
+stocks and we show that this model reproduces remarkably well the statistical
+properties of real data.

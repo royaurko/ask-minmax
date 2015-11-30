@@ -1,0 +1,11 @@
+Eventual consistency of replicated data supports concurrent updates, reduces
+latency and improves fault tolerance, but forgoes strong consistency.
+Accordingly, several cloud computing platforms implement eventually-consistent
+data types. The set is a widespread and useful abstraction, and many replicated
+set designs have been proposed. We present a reasoning abstraction, permutation
+equivalence, that systematizes the characterization of the expected concurrency
+semantics of concurrent types. Under this framework we present one of the
+existing conflict-free replicated data types, Observed-Remove Set. Furthermore,
+in order to decrease the size of meta-data, we propose a new optimization to
+avoid tombstones. This approach that can be transposed to other data types,
+such as maps, graphs or sequences.

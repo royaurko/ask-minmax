@@ -1,0 +1,13 @@
+We present a new implementation of the numerical integration of the
+classical, gravitational, N-body problem based on a high order Hermite's
+integration scheme with block time steps, with a direct evaluation of the
+particle-particle forces. The main innovation of this code (called HiGPUs) is
+its full parallelization, exploiting both OpenMP and MPI in the use of the
+multicore Central Processing Units as well as either Compute Unified Device
+Architecture (CUDA) or OpenCL for the hosted Graphic Processing Units. We
+tested both performance and accuracy of the code using up to 256 GPUs in the
+supercomputer IBM iDataPlex DX360M3 Linux Infiniband Cluster provided by the
+italian supercomputing consortium CINECA, for values of N up to 8 millions. We
+were able to follow the evolution of a system of 8 million bodies for few
+crossing times, task previously unreached by direct summation codes. The code
+is freely available to the scientific community.

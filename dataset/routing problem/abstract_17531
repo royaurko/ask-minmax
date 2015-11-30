@@ -1,0 +1,18 @@
+Long horizon lengths in Moving Horizon Estimation are desirable to reach the
+performance limits of the full information estimator. However, the conventional
+MHE technique suffers from a number of deficiencies in this respect. First, the
+problem complexity scales at least linearly with the horizon length selected,
+which restrains from selecting long horizons if computational limitations are
+present. Second, there is no monitoring of constraint activity/inactivity which
+results in conducting redundant constrained minimizations even when no
+constraints are active. In this study we develop a Multiple-Window Moving
+Horizon Estimation strategy (MW-MHE) that exploits constraint inactivity to
+reduce the problem size in long horizon estimation problems. The arrival cost
+is approximated using the unconstrained full information estimator arrival cost
+to guarantee stability of the technique. A new horizon length selection
+criteria is developed based on maximum sensitivity between remote states in
+time. The development will be in terms of general causal descriptor systems,
+which includes the standard state space representation as a special case. The
+potential of the new estimation algorithm will be demonstrated with an example
+showing a significant reduction in both computation time and numerical errors
+compared to conventional MHE.

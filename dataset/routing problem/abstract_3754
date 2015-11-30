@@ -1,0 +1,16 @@
+In the Palindrome Problem one tries to find all palindromes (palindromic
+substrings) in a given string. A palindrome is defined as a string which reads
+forwards the same as backwards, e.g., the string "racecar". A related problem
+is the Longest Palindromic Substring Problem in which finding an arbitrary one
+of the longest palindromes in the given string suffices. We regard the
+streaming version of both problems. In the streaming model the input arrives
+over time and at every point in time we are only allowed to use sublinear
+space. The main algorithms in this paper are the following: The first one is a
+one-pass randomized algorithm that solves the Palindrome Problem. It has an
+additive error and uses $O(\sqrt n$) space. The second algorithm is a two-pass
+algorithm which determines the exact locations of all longest palindromes. It
+uses the first algorithm as the first pass. The third algorithm is again a
+one-pass randomized algorithm, which solves the Longest Palindromic Substring
+Problem. It has a multiplicative error using only $O(\log(n))$ space. We also
+give two variants of the first algorithm which solve other related practical
+problems.

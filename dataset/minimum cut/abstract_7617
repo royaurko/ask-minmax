@@ -1,0 +1,23 @@
+Let $f$ be a polynomial of degree $d$ in $n$ variables over a finite field
+$\mathbb{F}$. The polynomial is said to be unbiased if the distribution of
+$f(x)$ for a uniform input $x \in \mathbb{F}^n$ is close to the uniform
+distribution over $\mathbb{F}$, and is called biased otherwise. The polynomial
+is said to have low rank if it can be expressed as a composition of a few lower
+degree polynomials. Green and Tao [Contrib. Discrete Math 2009] and Kaufman and
+Lovett [FOCS 2008] showed that bias implies low rank for fixed degree
+polynomials over fixed prime fields. This lies at the heart of many tools in
+higher order Fourier analysis. In this work, we extend this result to all prime
+fields (of size possibly growing with $n$). We also provide a generalization to
+nonprime fields in the large characteristic case. However, we state all our
+applications in the prime field setting for the sake of simplicity of
+presentation.
+  As an immediate application, we obtain improved bounds for a suite of
+problems in effective algebraic geometry, including Hilbert nullstellensatz,
+radical membership and counting rational points in low degree varieties.
+  Using the above generalization to large fields as a starting point, we are
+also able to settle the list decoding radius of fixed degree Reed-Muller codes
+over growing fields. The case of fixed size fields was solved by Bhowmick and
+Lovett [STOC 2015], which resolved a conjecture of Gopalan-Klivans-Zuckerman
+[STOC 2008]. Here, we show that the list decoding radius is equal the minimum
+distance of the code for all fixed degrees, even when the field size is
+possibly growing with $n$.

@@ -1,0 +1,20 @@
+This paper considers the problem of transferring a file from one source node
+to multiple receivers in a peer-to-peer (P2P) network. The objective is to
+minimize the weighted sum download time (WSDT) for the one-to-many file
+transfer. Previous work has shown that, given an order at which the receivers
+finish downloading, the minimum WSD can be solved in polynomial time by convex
+optimization, and can be achieved by linear network coding, assuming that node
+uplinks are the only bottleneck in the network. This paper, however, considers
+heterogeneous peers with both uplink and downlink bandwidth constraints
+specified. The static scenario is a file-transfer scheme in which the network
+resource allocation remains static until all receivers finish downloading. This
+paper first shows that the static scenario may be optimized in polynomial time
+by convex optimization, and the associated optimal static WSD can be achieved
+by linear network coding. This paper then presented a lower bound to the
+minimum WSDT that is easily computed and turns out to be tight across a wide
+range of parameterizations of the problem. This paper also proposes a static
+routing-based scheme and a static rateless-coding-based scheme which have
+almost-optimal empirical performances. The dynamic scenario is a file-transfer
+scheme which can re-allocate the network resource during the file transfer.
+This paper proposes a dynamic rateless-coding-based scheme, which provides
+significantly smaller WSDT than the optimal static scenario does.

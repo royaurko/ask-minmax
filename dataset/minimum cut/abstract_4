@@ -1,0 +1,25 @@
+We investigate the notion of stability proposed by Bilu and Linial. We obtain
+an exact polynomial-time algorithm for $\gamma$-stable Max Cut instances with
+$\gamma \geq c\sqrt{\log n}\log\log n$ for some absolute constant $c > 0$. Our
+algorithm is robust: it never returns an incorrect answer; if the instance is
+$\gamma$-stable, it finds the maximum cut, otherwise, it either finds the
+maximum cut or certifies that the instance is not $\gamma$-stable. We prove
+that there is no robust polynomial-time algorithm for $\gamma$-stable instances
+of Max Cut when $\gamma < \alpha_{SC}(n/2)$, where $\alpha_{SC}$ is the best
+approximation factor for Sparsest Cut with non-uniform demands.
+  Our algorithm is based on semidefinite programming. We show that the standard
+SDP relaxation for Max Cut (with $\ell_2^2$ triangle inequalities) is integral
+if $\gamma \geq D_{\ell_2^2\to \ell_1}(n)$, where $D_{\ell_2^2\to \ell_1}(n)$
+is the least distortion with which every $n$ point metric space of negative
+type embeds into $\ell_1$. On the negative side, we show that the SDP
+relaxation is not integral when $\gamma < D_{\ell_2^2\to \ell_1}(n/2)$.
+Moreover, there is no tractable convex relaxation for $\gamma$-stable instances
+of Max Cut when $\gamma < \alpha_{SC}(n/2)$. That suggests that solving
+$\gamma$-stable instances with $\gamma =o(\sqrt{\log n})$ might be difficult or
+impossible.
+  Our results significantly improve previously known results. The best
+previously known algorithm for $\gamma$-stable instances of Max Cut required
+that $\gamma \geq c\sqrt{n}$ (for some $c > 0$) [Bilu, Daniely, Linial, and
+Saks]. No hardness results were known for the problem. Additionally, we present
+an algorithm for 4-stable instances of Minimum Multiway Cut. We also study a
+relaxed notion of weak stability.

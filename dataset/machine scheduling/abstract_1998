@@ -1,0 +1,14 @@
+The latest implementations of commercial UNIX to offer mainframe style
+capacity management on enterprise servers include: AIX Workload Manager (WLM),
+HP-UX Process Resource Manager (PRM), Solaris Resource Manager (SRM), as well
+as SGI and Compaq. The ability to manage server capacity is achieved by making
+significant modifications to the standard UNIX operating system so that
+processes are inherently tied to specific users. Those users, in turn, are
+granted only a certain fraction of system resources. Resource usage is
+monitored and compared with each users grant to ensure that the assigned
+entitlement constraints are met. In this paper, we begin by clearing up some of
+the confusion that has surrounded the motivation and the terminology behind the
+new technology. The common theme across each of the commercial implementations
+is the introduction of the fair-share scheduler. After reviewing some potential
+performance pitfalls, we present capacity planning guidelines for migrating to
+automated UNIX resource management.

@@ -1,0 +1,16 @@
+A breast neoplasia is often marked by the presence of microcalcifications and
+massive lesions in the mammogram: hence the need for tools able to recognize
+such lesions at an early stage. Our collaboration, among italian physicists and
+radiologists, has built a large distributed database of digitized mammographic
+images and has developed a Computer Aided Detection (CADe) system for the
+automatic analysis of mammographic images and installed it in some Italian
+hospitals by a GRID connection. Regarding microcalcifications, in our CADe
+digital mammogram is divided into wide windows which are processed by a
+convolution filter; after a self-organizing map analyzes each window and
+produces 8 principal components which are used as input of a neural network
+(FFNN) able to classify the windows matched to a threshold. Regarding massive
+lesions we select all important maximum intensity position and define the ROI
+radius. From each ROI found we extract the parameters which are used as input
+in a FFNN to distinguish between pathological and non-pathological ROI. We
+present here a test of our CADe system, used as a second reader and a
+comparison with another (commercial) CADe system.

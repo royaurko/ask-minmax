@@ -1,0 +1,20 @@
+We first show that the Traveling Salesman Problem in an n-vertex graph with
+average degree bounded by d can be solved in O*(2^{(1-\eps_d)n}) time and
+exponential space for a constant \eps_d depending only on d, where the
+O*-notation suppresses factors polynomial in the input size. Thus, we
+generalize the recent results of Bjorklund et al. [TALG 2012] on graphs of
+bounded degree.
+  Then, we move to the problem of counting perfect matchings in a graph. We
+first present a simple algorithm for counting perfect matchings in an n-vertex
+graph in O*(2^{n/2}) time and polynomial space; our algorithm matches the
+complexity bounds of the algorithm of Bjorklund [SODA 2012], but relies on
+inclusion-exclusion principle instead of algebraic transformations. Building
+upon this result, we show that the number of perfect matchings in an n-vertex
+graph with average degree bounded by d can be computed in
+O*(2^{(1-\eps_{2d})n/2}) time and exponential space, where \eps_{2d} is the
+constant obtained by us for the Traveling Salesman Problem in graphs of average
+degree at most 2d.
+  Moreover we obtain a simple algorithm that counts the number of perfect
+matchings in an n-vertex bipartite graph of average degree at most d in
+O*(2^{(1-1/(3.55d))n/2}) time, improving and simplifying the recent result of
+Izumi and Wadayama [FOCS 2012].

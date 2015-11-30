@@ -1,0 +1,22 @@
+This work presents a distributed method for control centers to monitor the
+operating condition of a power network, i.e., to estimate the network state,
+and to ultimately determine the occurrence of threatening situations. State
+estimation has been recognized to be a fundamental task for network control
+centers to ensure correct and safe functionalities of power grids. We consider
+(static) state estimation problems, in which the state vector consists of the
+voltage magnitude and angle at all network buses. We consider the state to be
+linearly related to network measurements, which include power flows, current
+injections, and voltages phasors at some buses. We admit the presence of
+several cooperating control centers, and we design two distributed methods for
+them to compute the minimum variance estimate of the state given the network
+measurements. The two distributed methods rely on different modes of
+cooperation among control centers: in the first method an incremental mode of
+cooperation is used, whereas, in the second method, a diffusive interaction is
+implemented. Our procedures, which require each control center to know only the
+measurements and structure of a subpart of the whole network, are
+computationally efficient and scalable with respect to the network dimension,
+provided that the number of control centers also increases with the network
+cardinality. Additionally, a finite-memory approximation of our diffusive
+algorithm is proposed, and its accuracy is characterized. Finally, our
+estimation methods are exploited to develop a distributed algorithm to detect
+corrupted data among the network measurements.

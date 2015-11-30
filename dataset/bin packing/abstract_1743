@@ -1,0 +1,14 @@
+A natural probabilistic model for motif discovery has been used to
+experimentally test the quality of motif discovery programs. In this model,
+there are $k$ background sequences, and each character in a background sequence
+is a random character from an alphabet $\Sigma$. A motif $G=g_1g_2...g_m$ is a
+string of $m$ characters. Each background sequence is implanted a
+probabilistically generated approximate copy of $G$. For a probabilistically
+generated approximate copy $b_1b_2...b_m$ of $G$, every character $b_i$ is
+probabilistically generated such that the probability for $b_i\neq g_i$ is at
+most $\alpha$. We develop three algorithms that under the probabilistic model
+can find the implanted motif with high probability via a tradeoff between
+computational time and the probability of mutation. The methods developed in
+this paper have been used in the software implementation. We observed some
+encouraging results that show improved performance for motif detection compared
+with other softwares.

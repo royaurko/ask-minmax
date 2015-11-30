@@ -1,0 +1,20 @@
+Prediction markets are used in real life to predict outcomes of interest such
+as presidential elections. This paper presents a mathematical theory of
+artificial prediction markets for supervised learning of conditional
+probability estimators. The artificial prediction market is a novel method for
+fusing the prediction information of features or trained classifiers, where the
+fusion result is the contract price on the possible outcomes. The market can be
+trained online by updating the participants' budgets using training examples.
+Inspired by the real prediction markets, the equations that govern the market
+are derived from simple and reasonable assumptions. Efficient numerical
+algorithms are presented for solving these equations. The obtained artificial
+prediction market is shown to be a maximum likelihood estimator. It generalizes
+linear aggregation, existent in boosting and random forest, as well as logistic
+regression and some kernel methods. Furthermore, the market mechanism allows
+the aggregation of specialized classifiers that participate only on specific
+instances. Experimental comparisons show that the artificial prediction markets
+often outperform random forest and implicit online learning on synthetic data
+and real UCI datasets. Moreover, an extensive evaluation for pelvic and
+abdominal lymph node detection in CT data shows that the prediction market
+improves adaboost's detection rate from 79.6% to 81.2% at 3 false
+positives/volume.

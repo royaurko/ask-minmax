@@ -1,0 +1,16 @@
+Solving elliptic PDEs in more than one dimension can be a computationally
+expensive task. For some applications characterised by a high degree of
+anisotropy in the coefficients of the elliptic operator, such that the term
+with the highest derivative in one direction is much larger than the terms in
+the remaining directions, the discretized elliptic operator often has a very
+large condition number - taking the solution even further out of reach using
+traditional methods. This paper will demonstrate a solution method for such
+ill-behaved problems. The high condition number of the D-dimensional
+discretized elliptic operator will be exploited to split the problem into a
+series of well-behaved one and (D-1)-dimensional elliptic problems. This
+solution technique can be used alone on sufficiently coarse grids, or in
+conjunction with standard iterative methods, such as Conjugate Gradient, to
+substantially reduce the number of iterations needed to solve the problem to a
+specified accuracy. The solution is formulated analytically for a generic
+anisotropic problem using arbitrary coordinates, hopefully bringing this method
+into the scope of a wide variety of applications.

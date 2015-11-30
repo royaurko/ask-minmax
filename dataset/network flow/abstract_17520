@@ -1,0 +1,22 @@
+Overland flow on agricultural fields may have some undesirable effects such
+as soil erosion, flood and pollutant transport. To better understand this
+phenomenon and limit its consequences, we developed a code using
+state-of-the-art numerical methods: FullSWOF (Full Shallow Water equations for
+Overland Flow), an object oriented code written in C++. It has been made
+open-source and can be downloaded from
+http://www.univ-orleans.fr/mapmo/soft/FullSWOF/. The model is based on the
+classical system of Shallow Water (SW) (or Saint-Venant system). Numerical
+difficulties come from the numerous dry/wet transitions and the highly-variable
+topography encountered inside a field. It includes runon and rainfall inputs,
+infiltration (modified Green-Ampt equation), friction (Darcy-Weisbach and
+Manning formulas). First we present the numerical method for the resolution of
+the Shallow Water equations integrated in FullSWOF_2D (the two-dimension
+version). This method is based on hydrostatic reconstruction scheme, coupled
+with a semi-implicit friction term treatment. FullSWOF_2D has been previously
+validated using analytical solutions from the SWASHES library (Shallow Water
+Analytic Solutions for Hydraulic and Environmental Studies). Finally,
+FullSWOF_2D is run on a real topography measured on a runoff plot located in
+Thies (Senegal). Simulation results are compared with measured data. This
+experimental benchmark demonstrate the capabilities of FullSWOF to simulate
+adequately overland flow. FullSWOF could also be used for other environmental
+issues, such as river floods and dam-breaks.

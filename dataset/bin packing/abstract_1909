@@ -1,0 +1,12 @@
+A novel efficient method for extraction of object proposals is introduced.
+Its "objectness" function exploits deep spatial pyramid features, a new
+fast-to-compute HoG-based edge statistic and the EdgeBoxes score. The
+efficiency is achieved by the use of spatial bins in combination with
+sparsity-inducing group normalized SVM. State-of-the-art recall performance is
+achieved on Pascal VOC07, significantly outperforming methods with comparable
+speed. Interestingly, when only 100 proposals per image are considered our
+method attains 78% recall on VOC07. The novel method improves mAP of the RCNN
+state-of-the-art class-specific detector, increasing it by 10 points when only
+50 proposals are utilized in each image. Despite training the system on twenty
+classes, results on two-hundred class ILSVRC2013 dataset confirm generalization
+to previously unseen data.

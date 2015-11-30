@@ -1,0 +1,16 @@
+In this paper, a novel reconfigurable architecture is proposed for
+multifunctional image signal processing systems. A circuit-switched NoC is used
+to provide interconnection because the non-TMD links ensure fixed throughput,
+which is a desirable behavior for computational intensive image processing
+algorithms compared with packet-switched NoC. Image processing algorithms are
+modeled as synchronous dataflow graphs which provide a unified model for
+general computing procedure. An image processing system is considered as
+several temporally mutually exclusive algorithms. Thus, their dataflow graph
+representations could be considered as a group and a merging algorithm could be
+applied to generate a union graph while eliminating spatial redundancy for area
+consumption optimization. After the union graph have been mapped and routed on
+the NoC, the reconfigurable system could be configured to any of its target
+image processing algorithms by properly setting the NoC topology. Experiments
+show the demo reconfigurable system with two image processing applications cost
+26.4% less hardware resource, compared with the non-reconfigurable
+implementations.

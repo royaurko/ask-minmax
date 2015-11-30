@@ -1,0 +1,16 @@
+Cumulative resource constraints can model scarce resources in scheduling
+problems or a dimension in packing and cutting problems. In order to
+efficiently solve such problems with a constraint programming solver, it is
+important to have strong and fast propagators for cumulative resource
+constraints. One such propagator is the recently developed
+time-table-edge-finding propagator, which considers the current resource
+profile during the edge-finding propagation. Recently, lazy clause generation
+solvers, i.e. constraint programming solvers incorporating nogood learning,
+have proved to be excellent at solving scheduling and cutting problems. For
+such solvers, concise and accurate explanations of the reasons for propagation
+are essential for strong nogood learning. In this paper, we develop the first
+explaining version of time-table-edge-finding propagation and show preliminary
+results on resource-constrained project scheduling problems from various
+standard benchmark suites. On the standard benchmark suite PSPLib, we were able
+to close one open instance and to improve the lower bound of about 60% of the
+remaining open instances. Moreover, 6 of those instances were closed.

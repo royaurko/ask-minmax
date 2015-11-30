@@ -1,0 +1,17 @@
+Wideband spectrum sensing detects the unused spectrum holes for dynamic
+spectrum access (DSA). Too high sampling rate is the main problem. Compressive
+sensing (CS) can reconstruct sparse signal with much fewer randomized samples
+than Nyquist sampling with high probability. Since survey shows that the
+monitored signal is sparse in frequency domain, CS can deal with the sampling
+burden. Random samples can be obtained by the analog-to-information converter.
+Signal recovery can be formulated as an L0 norm minimization and a linear
+measurement fitting constraint. In DSA, the static spectrum allocation of
+primary radios means the bounds between different types of primary radios are
+known in advance. To incorporate this a priori information, we divide the whole
+spectrum into subsections according to the spectrum allocation policy. In the
+new optimization model, the minimization of the L2 norm of each subsection is
+used to encourage the cluster distribution locally, while the L0 norm of the L2
+norms is minimized to give sparse distribution globally. Because the L0/L2
+optimization is not convex, an iteratively re-weighted L1/L2 optimization is
+proposed to approximate it. Simulations demonstrate the proposed method
+outperforms others in accuracy, denoising ability, etc.

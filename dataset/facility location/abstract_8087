@@ -1,0 +1,24 @@
+To investigate the finite time singularity in three-dimensional (3D) Euler
+flows, the simplified model of 3D axisymmetric incompressible fluids (i.e.,
+two-dimensional Boussinesq approximation equations) is studied numerically. The
+system describes a cap-like hot zone of fluid rising from the bottom, while the
+edges of the cap lag behind, forming eye-like vortices. The hot liquid is
+driven by the buoyancy and meanwhile attracted by the vortices, which leads to
+the singularity-forming mechanism in our simulation. In the previous 2D
+Boussinesq simulations, the symmetricial initial data is used. However, it is
+observed that the adoption of symmetry leads to coordinate singularity.
+Moreover, as demonstrated in this work that the locations of peak values for
+the vorticity and the temperature gradient becomes far apart as $t$ approaches
+the predicted blow-up time. This suggests that the symmetry assumption may be
+unreasonable for searching solution blow-ups. One of the main contributions of
+this work is to propose an appropriate asymmetric initial condition, which
+avoids coordinate singularity and also makes the blow-up to occur much earlier
+than that given by the previously simulations. The shorter simulation time
+suppresses the development of the round-off error. On the numerical side, the
+pseudo-spectral method with filtering technique is adopted. The resolutions
+adopted in this study vary from $1024^2$, $2048^2$, $4096^2$ to $6144^2$. With
+our proposed asymmetric initial condition, it is shown that the $4096^2$ and
+$6144^2$ runs yield convergent results when $t$ is fairly close to the
+predicted blow-up time. Moreover, as expected the locations of peak values for
+the vorticity and the temperature gradient are very close to each other as $t$
+approaches the predicted blow-up time.

@@ -1,0 +1,19 @@
+Motivation of our work is to present a new methodology for symbol
+recognition. We support structural methods for representing visual associations
+in graphic documents. The proposed method employs a structural approach for
+symbol representation and a statistical classifier for recognition. We
+vectorize a graphic symbol, encode its topological and geometrical information
+by an ARG and compute a signature from this structural graph. To address the
+sensitivity of structural representations to deformations and degradations, we
+use data adapted fuzzy intervals while computing structural signature. The
+joint probability distribution of signatures is encoded by a Bayesian network.
+This network in fact serves as a mechanism for pruning irrelevant features and
+choosing a subset of interesting features from structural signatures, for
+underlying symbol set. Finally we deploy the Bayesian network in supervised
+learning scenario for recognizing query symbols. We have evaluated the
+robustness of our method against noise, on synthetically deformed and degraded
+images of pre-segmented 2D architectural and electronic symbols from GREC
+databases and have obtained encouraging recognition rates. A second set of
+experimentation was carried out for evaluating the performance of our method
+against context noise i.e. symbols cropped from complete documents. The results
+support the use of our signature by a symbol spotting system.

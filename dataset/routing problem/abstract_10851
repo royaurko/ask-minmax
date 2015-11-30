@@ -1,0 +1,25 @@
+We present an approximation scheme for minimizing certain Quadratic Integer
+Programming problems with positive semidefinite objective functions and global
+linear constraints. This framework includes well known graph problems such as
+Minimum graph bisection, Edge expansion, Sparsest Cut, and Small Set expansion,
+as well as the Unique Games problem. These problems are notorious for the
+existence of huge gaps between the known algorithmic results and NP-hardness
+results. Our algorithm is based on rounding semidefinite programs from the
+Lasserre hierarchy, and the analysis uses bounds for low-rank approximations of
+a matrix in Frobenius norm using columns of the matrix.
+  For all the above graph problems, we give an algorithm running in time
+$n^{O(r/\epsilon^2)}$ with approximation ratio
+$\frac{1+\epsilon}{\min\{1,\lambda_r\}}$, where $\lambda_r$ is the $r$'th
+smallest eigenvalue of the normalized graph Laplacian $\mathcal{L}$. In the
+case of graph bisection and small set expansion, the number of vertices in the
+cut is within lower-order terms of the stipulated bound. Our results imply
+$(1+O(\epsilon))$ factor approximation in time $n^{O(r^\ast/\epsilon^2)}$ where
+is the number of eigenvalues of $\mathcal{L}$ smaller than $1-\epsilon$ (for
+variants of sparsest cut, $\lambda_{r^\ast} \ge \mathrm{OPT}/\epsilon$ also
+suffices, and as $\mathrm{OPT}$ is usually $o(1)$ on interesting instances of
+these problems, this requirement on $r^\ast$ is typically weaker). For Unique
+Games, we give a factor $(1+\frac{2+\epsilon}{\lambda_r})$ approximation for
+minimizing the number of unsatisfied constraints in $n^{O(r/\epsilon)}$ time,
+improving upon an earlier bound for solving Unique Games on expanders. We also
+give an algorithm for independent sets in graphs that performs well when the
+Laplacian does not have too many eigenvalues bigger than $1+o(1)$.

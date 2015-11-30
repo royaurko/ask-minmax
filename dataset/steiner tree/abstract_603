@@ -1,0 +1,11 @@
+An alphabetic binary tree formulation applies to problems in which an outcome
+needs to be determined via alphabetically ordered search prior to the
+termination of some window of opportunity. Rather than finding a decision tree
+minimizing $\sum_{i=1}^n w(i) l(i)$, this variant involves minimizing $\log_a
+\sum_{i=1}^n w(i) a^{l(i)}$ for a given $a \in (0,1)$. This note introduces a
+dynamic programming algorithm that finds the optimal solution in polynomial
+time and space, and shows that methods traditionally used to improve the speed
+of optimizations in related problems, such as the Hu-Tucker procedure, fail for
+this problem. This note thus also introduces two approximation algorithms which
+can find a suboptimal solution in linear time (for one) or $\order(n \log n)$
+time (for the other), with associated coding redundancy bounds.

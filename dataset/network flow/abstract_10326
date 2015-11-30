@@ -1,0 +1,14 @@
+Handling all together large displacements, motion details and occlusions
+remains an open issue for reliable computation of optical flow in a video
+sequence. We propose a two-step aggregation paradigm to address this problem.
+The idea is to supply local motion candidates at every pixel in a first step,
+and then to combine them to determine the global optical flow field in a second
+step. We exploit local parametric estimations combined with patch
+correspondences and we experimentally demonstrate that they are sufficient to
+produce highly accurate motion candidates. The aggregation step is designed as
+the discrete optimization of a global regularized energy. The occlusion map is
+estimated jointly with the flow field throughout the two steps. We propose a
+generic exemplar-based approach for occlusion filling with motion vectors. We
+achieve state-of-the-art results in computer vision benchmarks, with
+particularly significant improvements in the case of large displacements and
+occlusions.

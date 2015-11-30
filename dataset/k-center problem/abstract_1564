@@ -1,0 +1,19 @@
+We propose a novel numerical inversion algorithm for the coefficients of
+parabolic partial differential equations, based on model reduction. The study
+is motivated by the application of controlled source electromagnetic
+exploration, where the unknown is the subsurface electrical resistivity and the
+data are time resolved surface measurements of the magnetic field. The
+algorithm presented in this paper considers inversion in one and two
+dimensions. The reduced model is obtained with rational interpolation in the
+frequency (Laplace) domain and a rational Krylov subspace projection method. It
+amounts to a nonlinear mapping from the function space of the unknown
+resistivity to the small dimensional space of the parameters of the reduced
+model. We use this mapping as a nonlinear preconditioner for the Gauss-Newton
+iterative solution of the inverse problem. The advantage of the inversion
+algorithm is twofold. First, the nonlinear preconditioner resolves most of the
+nonlinearity of the problem. Thus the iterations are less likely to get stuck
+in local minima and the convergence is fast. Second, the inversion is
+computationally efficient because it avoids repeated accurate simulations of
+the time-domain response. We study the stability of the inversion algorithm for
+various rational Krylov subspaces, and assess its performance with numerical
+experiments.

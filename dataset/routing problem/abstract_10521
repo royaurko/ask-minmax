@@ -1,0 +1,21 @@
+We introduce the s-Plex Cluster Vertex Deletion problem. Like the Cluster
+Vertex Deletion problem, it is NP-hard and motivated by graph-based data
+clustering. While the task in Cluster Vertex Deletion is to delete vertices
+from a graph so that its connected components become cliques, the task in
+s-Plex Cluster Vertex Deletion is to delete vertices from a graph so that its
+connected components become s-plexes. An s-plex is a graph in which every
+vertex is nonadjacent to at most s-1 other vertices; a clique is an 1-plex. In
+contrast to Cluster Vertex Deletion, s-Plex Cluster Vertex Deletion allows to
+balance the number of vertex deletions against the sizes and the density of the
+resulting clusters, which are s-plexes instead of cliques. The focus of this
+work is the development of provably efficient and effective data reduction
+rules for s-Plex Cluster Vertex Deletion. In terms of fixed-parameter
+algorithmics, these yield a so-called problem kernel. A similar problem, s-Plex
+Editing, where the task is the insertion or the deletion of edges so that the
+connected components of a graph become s-plexes, has also been studied in terms
+of fixed-parameter algorithmics. Using the number of allowed graph
+modifications as parameter, we expect typical parameter values for s-Plex
+Cluster Vertex Deletion to be significantly lower than for s-Plex Editing,
+because one vertex deletion can lead to a high number of edge deletions. This
+holds out the prospect for faster fixed-parameter algorithms for s-Plex Cluster
+Vertex Deletion.

@@ -1,0 +1,18 @@
+This paper is concerned with the problem of implementing an unbounded
+timestamp object from multi-writer atomic registers, in an asynchronous
+distributed system of n processors with distinct identifiers where timestamps
+are taken from an arbitrary universe. Ellen, Fatourou and Ruppert (2008) showed
+that sqrt{n}/2-O(1) registers are required for any obstruction-free
+implementation of long-lived timestamp systems from atomic registers (meaning
+processors can repeatedly get timestamps). We improve this existing lower bound
+in two ways. First we establish a lower bound of n/6 - O(1) registers for the
+obstruction-free long-lived timestamp problem. Previous such linear lower
+bounds were only known for constrained versions of the timestamp problem. This
+bound is asymptotically tight; Ellen, Fatourou and Ruppert (2008) constructed a
+wait-free algorithm that uses n-1 registers. Second we show that sqrt{n} - O(1)
+registers are required for any obstruction-free implementation of one-shot
+timestamp systems(meaning each processor can get a timestamp at most once). We
+show that this bound is also asymptotically tight by providing a wait-free
+one-shot timestamp system that uses fewer than 2 sqrt{n} registers, thus
+establishing a space complexity gap between one-shot and long-lived timestamp
+systems.

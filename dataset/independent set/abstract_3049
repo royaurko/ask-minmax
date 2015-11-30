@@ -1,0 +1,15 @@
+Polytope complexes are the generalisation of polygon meshes in
+geo-information systems (GIS) to arbitrary dimension, and a natural concept for
+accessing spatio-temporal information. Complexes of each dimension have a
+straight-forward dimension-independent database representation called
+"Relational Complex". Accordingly, complex overlay is the corresponding
+generalisation of map overlay in GIS to arbitrary dimension. Such overlay can
+be computed by partitioning the cells into simplices, intersecting these and
+finally combine their intersections into the resulting overlay complex. Simplex
+partitioning, however, can expensive in dimension higher than 2. In the case of
+polytope complex overlay /signed/ simplicial decomposition is an alternative.
+This paper presents a purely combinatoric polytope complex decomposition which
+ignores geometry. In particular, this method is also a decomposition method for
+/non-convex/ polytopes. Geometric n-D-simplex intersection is then done by a
+simplified active-set-method---a well-known numerical optimisation method.
+"Summing" up the simplex intersections then yields the desired overlay complex.

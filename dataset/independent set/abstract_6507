@@ -1,0 +1,18 @@
+In logistic regression, separation occurs when a linear combination of the
+predictors can perfectly classify part or all of the observations in the
+sample, and as a result, finite maximum likelihood estimates of the regression
+coefficients do not exist. Gelman et al (2008) recommended independent Cauchy
+distributions as default priors for the regression coefficients in logistic
+regression, even in the case of separation, and reported posterior modes in
+their analyses. As the mean does not exist for the Cauchy prior, a natural
+question is whether the posterior means of the regression coefficients exist
+under separation. We prove two theorems that provide necessary and sufficient
+conditions for the existence of posterior means under independent Cauchy priors
+for the logit link and a general family of link functions, including the probit
+link. For full Bayesian inference, we develop a Gibbs sampler based on
+Polya-Gamma data augmentation to sample from the posterior distribution under
+independent Student-t priors including Cauchy priors, and provide a companion R
+package in the supplement. We demonstrate empirically that even when the
+posterior means of the regression coefficients exist under separation, the
+magnitude of the posterior samples for Cauchy priors may be unusually large,
+and the corresponding Markov chain shows extremely slow mixing.

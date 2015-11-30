@@ -1,0 +1,15 @@
+We consider the problem of computing a shortest solid cover of an
+indeterminate string. An indeterminate string may contain non-solid symbols,
+each of which specifies a subset of the alphabet that could be present at the
+corresponding position. We also consider covering partial words, which are a
+special case of indeterminate strings where each non-solid symbol is a don't
+care symbol. We prove that indeterminate string covering problem and partial
+word covering problem are NP-complete for binary alphabet and show that both
+problems are fixed-parameter tractable with respect to $k$, the number of
+non-solid symbols. For the indeterminate string covering problem we obtain a
+$2^{O(k \log k)} + n k^{O(1)}$-time algorithm. For the partial word covering
+problem we obtain a $2^{O(\sqrt{k}\log k)} + nk^{O(1)}$-time algorithm. We
+prove that, unless the Exponential Time Hypothesis is false, no
+$2^{o(\sqrt{k})} n^{O(1)}$-time solution exists for either problem, which shows
+that our algorithm for this case is close to optimal. We also present an
+algorithm for both problems which is feasible in practice.

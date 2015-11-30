@@ -1,0 +1,13 @@
+We have developed a Scalable Linear Augmented Slater-Type Orbital (LASTO)
+method for electronic-structure calculations on free-standing atomic clusters.
+As with other linear methods we solve the Schr\"odinger equation using a mixed
+basis set consisting of numerical functions inside atom-centered spheres and
+matched onto tail functions outside. The tail functions are Slater-type
+orbitals, which are localized, exponentially decaying functions. To solve the
+Poisson equation between spheres, we use a finite difference method replacing
+the rapidly varying charge density inside the spheres with a smoothed density
+with the same multipole moments. We use multigrid techniques on the mesh, which
+yield the Coulomb potential on the spheres and in turn defines the potential
+inside via a Dirichlet problem. To solve the linear eigen-problem, we use
+ScaLAPACK, a well-developed package to solve large eigensystems with dense
+matrices. We have tested the method on small clusters of palladium.

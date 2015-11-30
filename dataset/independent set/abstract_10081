@@ -1,0 +1,19 @@
+Spectral methods have proven to be a highly effective tool in understanding
+the intrinsic geometry of a high-dimensional data set $\left\{x_i
+\right\}_{i=1}^{n} \subset \mathbb{R}^d$. The key ingredient is the
+construction of a Markov chain on the set, where transition probabilities
+depend on the distance between elements, for example where for every $1 \leq j
+\leq n$ the probability of going from $x_j$ to $x_i$ is proportional to $$
+p_{ij} \sim \exp \left( -\frac{1}{\varepsilon}\|x_i
+-x_j\|^2_{\ell^2(\mathbb{R}^d)}\right) \qquad
+\mbox{where}~\varepsilon>0~\mbox{is a free parameter}.$$ We propose a method
+which increases the self-consistency of such Markov chains before spectral
+methods are applied. Instead of directly using a Markov transition matrix $P$,
+we set $p_{ii} = 0$ and rescale, thereby obtaining a transition matrix $P^*$
+modeling a non-lazy random walk. We then create a new transition matrix $Q =
+(q_{ij})_{i,j=1}^{n}$ by demanding that for fixed $j$ the quantity $q_{ij}$ be
+proportional to $$ q_{ij} \sim \min((P^*)_{ij}, ((P^*)^2)_{ij}, \dots,
+((P^*)^k)_{ij}) \qquad \mbox{where usually}~ k=2.$$ We consider several
+classical data sets, show that this simple method can increase the efficiency
+of spectral methods and prove that it can correct randomly introduced errors in
+the kernel.

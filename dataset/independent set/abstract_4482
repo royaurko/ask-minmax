@@ -1,0 +1,22 @@
+Let $Y$ be a Gaussian vector of $\mathbb{R}^n$ of mean $s$ and diagonal
+covariance matrix $\Gamma$. Our aim is to estimate both $s$ and the entries
+$\sigma_i=\Gamma_{i,i}$, for $i=1,...,n$, on the basis of the observation of
+two independent copies of $Y$. Our approach is free of any prior assumption on
+$s$ but requires that we know some upper bound $\gamma$ on the ratio
+$\max_i\sigma_i/\min_i\sigma_i$. For example, the choice $\gamma=1$ corresponds
+to the homoscedastic case where the components of $Y$ are assumed to have
+common (unknown) variance. In the opposite, the choice $\gamma>1$ corresponds
+to the heteroscedastic case where the variances of the components of $Y$ are
+allowed to vary within some range. Our estimation strategy is based on model
+selection. We consider a family $\{S_m\times\Sigma_m, m\in\mathcal{M}\}$ of
+parameter sets where $S_m$ and $\Sigma_m$ are linear spaces. To each
+$m\in\mathcal{M}$, we associate a pair of estimators
+$(\hat{s}_m,\hat{\sigma}_m)$ of $(s,\sigma)$ with values in
+$S_m\times\Sigma_m$. Then we design a model selection procedure in view of
+selecting some $\hat{m}$ among $\mathcal{M}$ in such a way that the Kullback
+risk of $(\hat{s}_{\hat{m}},\hat{\sigma}_{\hat{m}})$ is as close as possible to
+the minimum of the Kullback risks among the family of estimators
+$\{(\hat{s}_m,\hat{\sigma}_m), m\in\mathcal{M}\}$. Then we derive uniform rates
+of convergence for the estimator $(\hat{s}_{\hat{m}},\hat{\sigma}_{\hat{m}})$
+over H\"{o}lderian balls. Finally, we carry out a simulation study in order to
+illustrate the performances of our estimators in practice.

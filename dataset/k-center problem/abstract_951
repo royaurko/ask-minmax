@@ -1,0 +1,20 @@
+Multicomputers have traditionally been viewed as powerful compute engines.
+It is from this perspective that they have been applied to various problems in
+order to achieve significant performance gains. There are many applications for
+which this compute intensive approach is only a partial solution. CAD, virtual
+reality, simulation, document management and analysis all require timely access
+to large amounts of data. This thesis investigates the use of the object store
+paradigm to harness the large distributed memories found on multicomputers. The
+design, implementation, and evaluation of a distributed object server on the
+Fujitsu AP1000 is described. The performance of the distributed object server
+under example applications, mainly physical simulation problems, is used to
+evaluate solutions to the problems of client space recovery, object migration,
+and coherence maintenance.
+  The distributed object server follows the client-server model, allows object
+replication, and uses binary semaphores as a concurrency control measure.
+Instrumentation of the server under these applications supports several
+conclusions: client space recovery should be dynamically controlled by the
+application, predictively prefetching object replicas yields benefits in
+restricted circumstances, object migration by storage unit (segment) is not
+generally suitable where there are many objects per storage unit, and binary
+semaphores are an expensive concurrency control measure in this environment.

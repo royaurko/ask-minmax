@@ -1,0 +1,11 @@
+Two fundamental algorithm-design paradigms are Tree Search and Dynamic
+Programming. The techniques used therein have been shown to complement one
+another when solving the complete set partitioning problem, also known as the
+coalition structure generation problem [5]. Inspired by this observation, we
+develop in this paper an algorithm to solve the coalition structure generation
+problem on graphs, where the goal is to identifying an optimal partition of a
+graph into connected subgraphs. More specifically, we develop a new depth-first
+search algorithm, and combine it with an existing dynamic programming algorithm
+due to Vinyals et al. [9]. The resulting hybrid algorithm is empirically shown
+to significantly outperform both its constituent parts when the
+subset-evaluation function happens to have certain intuitive properties.

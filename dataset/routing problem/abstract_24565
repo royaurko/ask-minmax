@@ -1,0 +1,10 @@
+The standard training method of Conditional Random Fields (CRFs) is very slow
+for large-scale applications. As an alternative, piecewise training divides the
+full graph into pieces, trains them independently, and combines the learned
+weights at test time. In this paper, we present \emph{separate} training for
+undirected models based on the novel Co-occurrence Rate Factorization (CR-F).
+Separate training is a local training method. In contrast to MEMMs, separate
+training is unaffected by the label bias problem. Experiments show that
+separate training (i) is unaffected by the label bias problem; (ii) reduces the
+training time from weeks to seconds; and (iii) obtains competitive results to
+the standard and piecewise training on linear-chain CRFs.

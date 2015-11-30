@@ -1,0 +1,24 @@
+Given i.i.d. observations of a random vector $X \in \mathbb{R}^p$, we study
+the problem of estimating both its covariance matrix $\Sigma^*$, and its
+inverse covariance or concentration matrix {$\Theta^* = (\Sigma^*)^{-1}$.} We
+estimate $\Theta^*$ by minimizing an $\ell_1$-penalized log-determinant Bregman
+divergence; in the multivariate Gaussian case, this approach corresponds to
+$\ell_1$-penalized maximum likelihood, and the structure of $\Theta^*$ is
+specified by the graph of an associated Gaussian Markov random field. We
+analyze the performance of this estimator under high-dimensional scaling, in
+which the number of nodes in the graph $p$, the number of edges $s$ and the
+maximum node degree $d$, are allowed to grow as a function of the sample size
+$n$. In addition to the parameters $(p,s,d)$, our analysis identifies other key
+quantities covariance matrix $\Sigma^*$; and (b) the $\ell_\infty$ operator
+norm of the sub-matrix $\Gamma^*_{S S}$, where $S$ indexes the graph edges, and
+$\Gamma^* = (\Theta^*)^{-1} \otimes (\Theta^*)^{-1}$; and (c) a mutual
+incoherence or irrepresentability measure on the matrix $\Gamma^*$ and (d) the
+rate of decay $1/f(n,\delta)$ on the probabilities $ \{|\hat{\Sigma}^n_{ij}-
+\Sigma^*_{ij}| > \delta \}$, where $\hat{\Sigma}^n$ is the sample covariance
+based on $n$ samples. Our first result establishes consistency of our estimate
+$\hat{\Theta}$ in the elementwise maximum-norm. This in turn allows us to
+derive convergence rates in Frobenius and spectral norms, with improvements
+upon existing results for graphs with maximum node degrees $d = o(\sqrt{s})$.
+In our second result, we show that with probability converging to one, the
+estimate $\hat{\Theta}$ correctly specifies the zero pattern of the
+concentration matrix $\Theta^*$.

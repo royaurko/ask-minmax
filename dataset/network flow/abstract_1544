@@ -1,0 +1,22 @@
+This paper proposes a novel congestion control algorithm for low-delay
+communication over best effort packet switched networks. Due to the presence of
+buffers in the internal network nodes, each congestion leads to buffer queueing
+and thus to an increasing delivery delay. It is therefore essential to properly
+control congestions in delay-sensitive applications. Delay-based congestion
+algorithms could offer a viable solution since they tend to minimize the
+queueing delay. Unfortunately they do not cohabit well with other types of
+congestion algorithms, such as loss-based algorithms, that are not regulated by
+delay constraints. Our target is to propose a congestion control algorithm able
+to both maintain a low queueing delay when the network conditions allows for it
+and to avoid starvation when competing against flows controlled by other types
+of policies. Our Low-Delay Congestion Control algorithm exactly achieves this
+double objective by using a non-linear mapping between the experienced delay
+and the penalty value used in rate update equation in the controller, and by
+combining delay and loss feedback information in a single term based on packet
+interarrival measurements. We provide a stability analysis of our new algorithm
+and show its performance in simulation results that are carried out in the NS3
+framework. They show that our algorithm compares favorably to other congestion
+control algorithms that share similar objectives. In particular, the simulation
+results show good fairness properties of our controller in different scenarios,
+with relatively low self inflicted delay and good ability to work also in lossy
+environments.

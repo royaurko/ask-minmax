@@ -1,0 +1,25 @@
+Our work is motivated by geographical forwarding of sporadic alarm packets to
+a base station in a wireless sensor network (WSN), where the nodes are
+sleep-wake cycling periodically and asynchronously. When a node (referred to as
+the source) gets a packet to forward, either by detecting an event or from an
+upstream node, it has to wait for its neighbors in a forwarding set (referred
+to as relays) to wake-up. Each of the relays is associated with a random reward
+(e.g., the progress made towards the sink) that is iid. To begin with, the
+source is uncertain about the number of relays, their wake-up times and the
+reward values, but knows their distributions. At each relay wake-up instant,
+when a relay reveals its reward value, the source's problem is to forward the
+packet or to wait for further relays to wake-up. In this setting, we seek to
+minimize the expected waiting time at the source subject to a lower bound on
+the average reward. In terms of the operations research literature, our work
+can be considered as a variant of the asset selling problem. We formulate the
+relay selection problem as a partially observable Markov decision process
+(POMDP), where the unknown state is the number of relays. We begin by
+considering the case where the source knows the number of relays. For the
+general case, where the source only knows a pmf on the number of relays, it has
+to maintain a posterior pmf on the number of relays and forward the packet iff
+the pmf is in an optimum stopping set. We show that the optimum stopping set is
+convex and obtain inner and outer bounds to this set. The computational
+complexity of the above policies motivates us to formulate an alternative
+simplified model, the optimal policy for which is a simple threshold rule. We
+provide simulation results to compare the performance of the various one-hop
+and end-to-end forwarding policies.

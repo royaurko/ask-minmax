@@ -1,0 +1,19 @@
+Fixed point combinators (and their generalization: looping combinators) are
+classic notions belonging to the heart of lambda-calculus and logic. We start
+with an exploration of the structure of fixed point combinators (fpc's), vastly
+generalizing the well-known fact that if Y is an fpc, Y(SI) is again an fpc,
+generating the Boehm sequence of fpc's. Using the infinitary lambda-calculus we
+devise infinitely many other generation schemes for fpc's. In this way we find
+schemes and building blocks to construct new fpc's in a modular way.
+  Having created a plethora of new fixed point combinators, the task is to
+prove that they are indeed new. That is, we have to prove their
+beta-inconvertibility. Known techniques via Boehm Trees do not apply, because
+all fpc's have the same Boehm Tree (BT). Therefore, we employ `clocked BT's',
+with annotations that convey information of the tempo in which the data in the
+BT are produced. BT's are thus enriched with an intrinsic clock behaviour,
+leading to a refined discrimination method for lambda-terms. The corresponding
+equality is strictly intermediate between beta-convertibility and BT-equality,
+the equality in the classical models of lambda-calculus. An analogous approach
+pertains to Levy-Longo Berarducci trees. Finally, we increase the
+discrimination power by a precision of the clock notion that we call `atomic
+clock'.

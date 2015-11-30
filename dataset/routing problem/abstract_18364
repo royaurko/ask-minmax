@@ -1,0 +1,27 @@
+The Container Relocation Problem (CRP) is concerned with finding a sequence
+of moves to retrieve containers in a given order with minimum number of
+relocations. While the problem is known to be NP-hard, there is much evidence
+that certain algorithms and heuristics perform reasonably well on many
+instances of the problem. In this paper, we first focus on the A* search
+algorithm, and analyze easy to compute lower and upper bounds that can be used
+to prune nodes and to determine the gap between the solution found and the
+optimum. Our analysis sheds light on which bounds result in fast computation
+within a given approximation gap. We also present extensive simulation results
+that show our method finds the optimum solution on most instances of
+medium-size bays. On the "hard" instances, our method finds a near-optimal
+solution with a small gap and within a time frame that is fast for practical
+applications. We also study the average-case asymptotic behavior of the CRP
+where the number of columns grows. We show that the optimum number of
+relocations converges to a simple and intuitive lower-bound. This gives strong
+evidence that the CRP is "easier" in large instances, and heuristic approach
+can give near optimal solution.
+  We further study the CRP with incomplete information in a 2-stage setting
+where the retrieval order of a subset of containers is known initially and the
+retrieval order of the remaining containers is observed later at a given
+revelation time. Before this time, we assume a probabilistic distribution on
+the retrieval order of unknown containers. We extend the A* algorithm and
+combine it with sampling technique to solve this 2-stage stochastic
+optimization problem. We show that our algorithm is fast and the error due to
+sampling is reasonably small. Using our framework, we study the value of
+information and the effect of revelation time on the average number of
+relocations.

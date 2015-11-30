@@ -1,0 +1,12 @@
+Statically reasoning in the presence of and about exceptions is challenging:
+exceptions worsen the well-known mutual recursion between data-flow and
+control-flow analysis. The recent development of pushdown control-flow analysis
+for the {\lambda}-calculus hints at a way to improve analysis of exceptions: a
+pushdown stack can precisely match catches to throws in the same way it matches
+returns to calls. This work generalizes pushdown control-flow analysis to
+object-oriented programs and to exceptions. Pushdown analysis of exceptions
+improves precision over the next best analysis, Bravenboer and Smaragdakis's
+Doop, by orders of magnitude. By then generalizing abstract garbage collection
+to object-oriented programs, we reduce analysis time by half over pure pushdown
+analysis. We evaluate our implementation for Dalvik bytecode on standard
+benchmarks as well as several Android applications.

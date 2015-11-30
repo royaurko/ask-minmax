@@ -1,0 +1,15 @@
+A feedback neural network approach to communication routing problems is
+developed with emphasis on Multiple Shortest Path problems, with several
+requests for transmissions between distinct start- and endnodes. The basic
+ingredients are a set of Potts neurons for each request, with interactions
+designed to minimize path lengths and to prevent overloading of network arcs.
+The topological nature of the problem is conveniently handled using a
+propagator matrix approach. Although the constraints are global, the
+algorithmic steps are based entirely on local information, facilitating
+distributed implementations. In the polynomially solvable single-request case
+the approach reduces to a fuzzy version of the Bellman-Ford algorithm. The
+approach is evaluated for synthetic problems of varying sizes and load levels,
+by comparing with exact solutions from a branch-and-bound method. With very few
+exceptions, the Potts approach gives legal solutions of very high quality. The
+computational demand scales merely as the product of the numbers of requests,
+nodes, and arcs.

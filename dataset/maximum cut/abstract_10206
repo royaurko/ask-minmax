@@ -1,0 +1,23 @@
+An approach to land surface temperature (LST) estimation that relies upon
+Bayesian inference has been tested against multiband infrared radiometric
+imagery from the Terra MODIS instrument. Bayesian LST estimators are shown to
+reproduce standard MODIS product LST values starting from a parsimoniously
+chosen (hence, uninformative) range of prior band emissivity knowledge. Two
+estimation methods have been tested. The first is the iterative contraction
+mapping of joint expectation values for LST and surface emissivity described in
+a previous paper. In the second method, the Bayesian algorithm is reformulated
+as a Maximum \emph{A-Posteriori} (MAP) search for the maximum joint
+\emph{a-posteriori} probability for LST, given observed sensor aperture
+radiances and \emph{a-priori} probabilities for LST and emissivity.
+  Two MODIS data granules each for daytime and nighttime were used for the
+comparison. The granules were chosen to be largely cloud-free, with limited
+vertical relief in those portions of the granules for which the sensor zenith
+angle $| ZA | < 30^{\circ}$. Level 1B radiances were used to obtain LST
+estimates for comparison with the Level 2 MODIS LST product.
+  The Bayesian LST estimators accurately reproduce standard MODIS product LST
+values. In particular, the mean discrepancy for the MAP retrievals is $| <
+\Delta T > | < 0.3 K$, and its standard deviation does not exceed $1 K$. The
+$\pm 68 %$ confidence intervals for individual LST estimates associated with
+assumed uncertainty in surface emissivity are of order $0.8 K$.
+  The Appendix presents a proof of convergence of the iterative contraction
+mapping algorithm.

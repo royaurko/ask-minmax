@@ -1,0 +1,14 @@
+We consider tomographic reconstruction using priors in the form of a
+dictionary learned from training images. The reconstruction has two stages:
+first we construct a tensor dictionary prior from our training data, and then
+we pose the reconstruction problem in terms of recovering the expansion
+coefficients in that dictionary. Our approach differs from past approaches in
+that a) we use a third-order tensor representation for our images and b) we
+recast the reconstruction problem using the tensor formulation. The dictionary
+learning problem is presented as a non-negative tensor factorization problem
+with sparsity constraints. The reconstruction problem is formulated in a convex
+optimization framework by looking for a solution with a sparse representation
+in the tensor dictionary. Numerical results show that our tensor formulation
+leads to very sparse representations of both the training images and the
+reconstructions due to the ability of representing repeated features compactly
+in the dictionary.

@@ -1,0 +1,26 @@
+In this paper we study the problem of approximately releasing the cut
+function of a graph while preserving differential privacy, and give new
+algorithms (and new analyses of existing algorithms) in both the interactive
+and non-interactive settings.
+  Our algorithms in the interactive setting are achieved by revisiting the
+problem of releasing differentially private, approximate answers to a large
+number of queries on a database. We show that several algorithms for this
+problem fall into the same basic framework, and are based on the existence of
+objects which we call iterative database construction algorithms. We give a new
+generic framework in which new (efficient) IDC algorithms give rise to new
+(efficient) interactive private query release mechanisms. Our modular analysis
+simplifies and tightens the analysis of previous algorithms, leading to
+improved bounds. We then give a new IDC algorithm (and therefore a new private,
+interactive query release mechanism) based on the Frieze/Kannan low-rank matrix
+decomposition. This new release mechanism gives an improvement on prior work in
+a range of parameters where the size of the database is comparable to the size
+of the data universe (such as releasing all cut queries on dense graphs).
+  We also give a non-interactive algorithm for efficiently releasing private
+synthetic data for graph cuts with error O(|V|^{1.5}). Our algorithm is based
+on randomized response and a non-private implementation of the SDP-based,
+constant-factor approximation algorithm for cut-norm due to Alon and Naor.
+Finally, we give a reduction based on the IDC framework showing that an
+efficient, private algorithm for computing sufficiently accurate rank-1 matrix
+approximations would lead to an improved efficient algorithm for releasing
+private synthetic data for graph cuts. We leave finding such an algorithm as
+our main open problem.

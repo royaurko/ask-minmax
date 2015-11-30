@@ -1,0 +1,16 @@
+A min-cut that seperates vertices s and t in a network is an edge set of
+minimum weight whose removal will disconnect s and t. This problem is the dual
+of the well known s-t max-flow problem. Several algorithms for the min-cut
+problem are based on max-flow computation although the fastest known min-cut
+algorithms are not flow based. The well known Karger's randomized algorithm for
+min-cut is a non-flow based method for solving the (global) min-cut problem of
+finding the min s-t cut over all pair of vertices s,t in a weighted undirected
+graph. This paper presents an adaptation of Karger's algorithm for a
+synchronous distributed setting where each node is allowed to perform only
+local computations. The paper essentially addresses the technicalities involved
+in circumventing the limitations imposed by a distributed setting to the
+working of Karger's algorithm. While the correctness proof follows directly
+from Karger's algorithm, the complexity analysis differs significantly. The
+algorithm achieves the same probability of success as the original algorithm
+with O(mn^{2}) message complexity and O(n^{2}) time complexity, where n and m
+denote the number of vertices and edges in the graph.

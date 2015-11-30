@@ -1,0 +1,23 @@
+In this work, we study a noiseless broadcast link serving $K$ users whose
+requests arise from a library of $N$ files. Every user is equipped with a cache
+of size $M$ files each. It has been shown that by splitting all the files into
+packets and placing individual packets in a random independent manner across
+all the caches, it requires at most $N/M$ file transmissions for any set of
+demands from the library. The achievable delivery scheme involves linearly
+combining packets of different files following a greedy clique cover solution
+to the underlying index coding problem. This remarkable multiplicative gain of
+random placement and coded delivery has been established in the asymptotic
+regime when the number of packets per file $F$ scales to infinity.
+  In this work, we initiate the finite-length analysis of random caching
+schemes when the number of packets $F$ is a function of the system parameters
+$M,N,K$. Specifically, we show that existing random placement and clique cover
+delivery schemes that achieve optimality in the asymptotic regime can have at
+most a multiplicative gain of $2$ if the number of packets is sub-exponential.
+Further, for any clique cover based coded delivery and a large class of random
+caching schemes, that includes the existing ones, we show that the number of
+packets required to get a multiplicative gain of $\frac{4}{3}g$ is at least
+$O((N/M)^g)$. We exhibit a random placement and an efficient clique cover based
+coded delivery scheme that approximately achieves this lower bound. We also
+provide tight concentration results that show that the average (over the random
+caching involved) number of transmissions concentrates very well requiring only
+polynomial number of packets in the rest of the parameters.

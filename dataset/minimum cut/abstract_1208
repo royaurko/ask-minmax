@@ -1,0 +1,13 @@
+An equivalence graph is a disjoint union of cliques, and the equivalence
+number $\mathit{eq}(G)$ of a graph $G$ is the minimum number of equivalence
+subgraphs needed to cover the edges of $G$. We consider the equivalence number
+of a line graph, giving improved upper and lower bounds: $\frac 13 \log_2\log_2
+\chi(G) < \mathit{eq}(L(G)) \leq 2\log_2\log_2 \chi(G) + 2$. This disproves a
+recent conjecture that $\mathit{eq}(L(G))$ is at most three for triangle-free
+$G$; indeed it can be arbitrarily large.
+  To bound $\mathit{eq}(L(G))$ we bound the closely-related invariant
+$\sigma(G)$, which is the minimum number of orientations of $G$ such that for
+any two edges $e,f$ incident to some vertex $v$, both $e$ and $f$ are oriented
+out of $v$ in some orientation. When $G$ is triangle-free,
+$\sigma(G)=\mathit{eq}(L(G))$. We prove that even when $G$ is triangle-free, it
+is NP-complete to decide whether or not $\sigma(G)\leq 3$.

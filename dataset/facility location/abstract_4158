@@ -1,0 +1,19 @@
+Compared to traditional online maps, crowdsourced maps such as Waze are
+unique in providing real-time updates on traffic, congestion, accidents and
+points of interest. In this paper, we explore the practical impact of attacks
+against crowdsourced map systems, and develop robust defenses against them. Our
+experiments show that a single attacker with limited resources can cause havoc
+on Waze, reporting false congestion and accidents and automatically rerouting
+user traffic. We describe techniques to emulate Waze-enabled vehicles using
+lightweight scripts, and how to use these "ghost riders" to compromise user
+privacy by remotely tracking precise user movements while avoiding detection. A
+single attacker can control groups of ghost riders, overwhelming data from
+legitimate users and magnifying the impact of attacks. As defense, we propose a
+new approach based on {\em co-location edges}, authenticated records that
+attest to the one-time physical co-location of a pair of devices. Over time,
+co-location edges combine to form large {\em proximity graphs}, network that
+attest to physical interactions between devices. "Ghost-riders" cannot
+physically interact with real devices and can be detected using graph
+algorithms. We demonstrate the efficacy of this approach using large
+simulations, and discuss how they can be used to dramatically reduce the impact
+of attacks against crowdsourced mapping services.

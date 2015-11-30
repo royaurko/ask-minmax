@@ -1,0 +1,17 @@
+The Immersed Boundary method has evolved into one of the most useful
+computational methods in studying fluid structure interaction. On the other
+hand, the Immersed Boundary method is also known to suffer from a severe
+timestep stability restriction when using an explicit time discretization. In
+this paper, we propose several efficient semi-implicit schemes to remove this
+stiffness from the Immersed Boundary method for the two-dimensional Stokes
+flow. First, we obtain a novel unconditionally stable semi-implicit
+discretization for the immersed boundary problem. Using this unconditionally
+stable discretization as a building block, we derive several efficient
+semi-implicit schemes for the immersed boundary problem by applying the Small
+Scale Decomposition to this unconditionally stable discretization. Our
+stability analysis and extensive numerical experiments show that our
+semi-implicit schemes offer much better stability property than the explicit
+scheme. Unlike other implicit or semi-implicit schemes proposed in the
+literature, our semi-implicit schemes can be solved explicitly in the spectral
+space. Thus the computational cost of our semi-implicit schemes is comparable
+to that of an explicit scheme, but with a much better stability property.

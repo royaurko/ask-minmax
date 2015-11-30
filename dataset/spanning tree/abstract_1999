@@ -1,0 +1,19 @@
+The advent of synoptic sky surveys has spurred the development of techniques
+for real-time classification of astronomical sources in order to ensure timely
+follow-up with appropriate instruments. Previous work has focused on algorithm
+selection or improved light curve representations, and naively convert light
+curves into structured feature sets without regard for the time span or phase
+of the light curves. In this paper, we highlight the violation of a fundamental
+machine learning assumption that occurs when archival light curves with long
+observational time spans are used to train classifiers that are applied to
+light curves with fewer observations. We propose two solutions to deal with the
+mismatch in the time spans of training and test light curves. The first is the
+use of classifier committees where each classifier is trained on light curves
+of different observational time spans. Only the committee member whose training
+set matches the test light curve time span is invoked for classification. The
+second solution uses hierarchical classifiers that are able to predict source
+types both individually and by sub-group, so that the user can trade-off an
+earlier, more robust classification with classification granularity. We test
+both methods using light curves from the MACHO survey, and demonstrate their
+usefulness in improving performance over similar methods that naively train on
+all available archival data.

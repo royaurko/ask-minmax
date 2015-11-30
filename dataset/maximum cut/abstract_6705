@@ -1,0 +1,15 @@
+The linear arboricity la(G) of a graph G is the minimum number of linear
+forests that partition the edges of G. In 1984, Akiyama et al. stated the
+Linear Arboricity Conjecture (LAC), that the linear arboricity of any simple
+graph of maximum degree $\Delta$ is either $\lceil \tfrac{\Delta}{2} \rceil$ or
+$\lceil \tfrac{\Delta+1}{2} \rceil$. In [J. L. Wu. On the linear arboricity of
+planar graphs. J. Graph Theory, 31:129-134, 1999] and [J. L. Wu and Y. W. Wu.
+The linear arboricity of planar graphs of maximum degree seven is four. J.
+Graph Theory, 58(3):210-220, 2008.] it was proven that LAC holds for all planar
+graphs.
+  LAC implies that for $\Delta$ odd, ${\rm la}(G)=\big \lceil \tfrac{\Delta}{2}
+\big \rceil$. We conjecture that for planar graphs this equality is true also
+for any even $\Delta \ge 6$. In this paper we show that it is true for any even
+$\Delta \ge 10$, leaving open only the cases $\Delta=6, 8$.
+  We present also an O(n log n)-time algorithm for partitioning a planar graph
+into max{la(G),5} linear forests, which is optimal when $\Delta \ge 9$.

@@ -1,0 +1,14 @@
+An algorithm for creating synthetic telescope images of Smoothed Particle
+Hydrodynamics (SPH) density fields is presented, which utilises the adaptive
+nature of the SPH formalism in full. The imaging process uses Monte Carlo
+Radiative Transfer (MCRT) methods to model the scattering and absorption of
+photon packets in the density field, which then exit the system and are
+captured on a pixelated image plane, creating a 2D image (or a 3D datacube, if
+the photons are also binned by their wavelength). The algorithm is implemented
+on the density field directly: no gridding of the field is required, allowing
+the density field to be described to an identical level of accuracy as the
+simulations that generated it. Some applications of the method to star and
+planet formation simulations are presented to illustrate the advantages of this
+new technique, and suggestions as to how this framework could support a
+Radiative Equilibrium algorithm are also given as an indication for future
+development.

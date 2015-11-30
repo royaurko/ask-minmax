@@ -1,0 +1,27 @@
+This paper makes two contributions towards determining some well-studied
+optimal constants in Fourier analysis \newa{of Boolean functions} and
+high-dimensional geometry.
+  \begin{enumerate}
+  \item It has been known since 1994 \cite{GL:94} that every linear threshold
+function has squared Fourier mass at least 1/2 on its degree-0 and degree-1
+coefficients. Denote the minimum such Fourier mass by $\w^{\leq 1}[\ltf]$,
+where the minimum is taken over all $n$-variable linear threshold functions and
+all $n \ge 0$. Benjamini, Kalai and Schramm \cite{BKS:99} have conjectured that
+the true value of $\w^{\leq 1}[\ltf]$ is $2/\pi$. We make progress on this
+conjecture by proving that $\w^{\leq 1}[\ltf] \geq 1/2 + c$ for some absolute
+constant $c>0$. The key ingredient in our proof is a "robust" version of the
+well-known Khintchine inequality in functional analysis, which we believe may
+be of independent interest.
+  \item We give an algorithm with the following property: given any $\eta > 0$,
+the algorithm runs in time $2^{\poly(1/\eta)}$ and determines the value of
+$\w^{\leq 1}[\ltf]$ up to an additive error of $\pm\eta$. We give a similar
+$2^{{\poly(1/\eta)}}$-time algorithm to determine \emph{Tomaszewski's constant}
+to within an additive error of $\pm \eta$; this is the minimum (over all
+origin-centered hyperplanes $H$) fraction of points in $\{-1,1\}^n$ that lie
+within Euclidean distance 1 of $H$. Tomaszewski's constant is conjectured to be
+1/2; lower bounds on it have been given by Holzman and Kleitman \cite{HK92} and
+independently by Ben-Tal, Nemirovski and Roos \cite{BNR02}.
+  Our algorithms combine tools from anti-concentration of sums of independent
+random variables, Fourier analysis, and Hermite analysis of linear threshold
+functions.
+  \end{enumerate}

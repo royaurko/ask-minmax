@@ -1,0 +1,22 @@
+In the {\sc Test Cover} problem we are given a hypergraph $H=(V,
+\mathcal{E})$ with $|V|=n, |\mathcal{E}|=m$, and we assume that $\mathcal{E}$
+is a test cover, i.e. for every pair of vertices $x_i, x_j$, there exists an
+edge $e \in \mathcal{E}$ such that $|{x_i,x_j}\cap e|=1$. The objective is to
+find a minimum subset of $\mathcal{E}$ which is a test cover. The problem is
+used for identification across many areas, and is NP-complete. From a
+parameterized complexity standpoint, many natural parameterizations of {\sc
+Test Cover} are either $W[1]$-complete or have no polynomial kernel unless
+$coNP\subseteq NP/poly$, and thus are unlikely to be solveable efficiently.
+  However, in practice the size of the edges is often bounded. In this paper we
+study the parameterized complexity of {\sc Test-$r$-Cover}, the restriction of
+{\sc Test Cover} in which each edge contains at most $r \ge 2$ vertices. In
+contrast to the unbounded case, we show that the following below-bound
+parameterizations of {\sc Test-$r$-Cover} are fixed-parameter tractable with a
+polynomial kernel: (1) Decide whether there exists a test cover of size $n-k$,
+and (2) decide whether there exists a test cover of size $m-k$, where $k$ is
+the parameter. In addition, we prove a new lower bound $\lceil
+\frac{2(n-1)}{r+1} \rceil$ on the minimum size of a test cover when the size of
+each edge is bounded by $r$. {\sc Test-$r$-Cover} parameterized above this
+bound is unlikely to be fixed-parameter tractable; in fact, we show that it is
+para-NP-complete, as it is NP-hard to decide whether an instance of {\sc
+Test-$r$-Cover} has a test cover of size exactly $\frac{2(n-1)}{r+1}$.

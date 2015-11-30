@@ -1,0 +1,12 @@
+We present a randomized approximation algorithm for computing traveling
+salesperson tours in undirected regular graphs. Given an $n$-vertex,
+$k$-regular graph, the algorithm computes a tour of length at most
+$\left(1+\frac{7}{\ln k-O(1)}\right)n$, with high probability, in $O(nk \log
+k)$ time. This improves upon a recent result by Vishnoi (\cite{Vishnoi12}, FOCS
+2012) for the same problem, in terms of both approximation factor, and running
+time. The key ingredient of our algorithm is a technique that uses
+edge-coloring algorithms to sample a cycle cover with $O(n/\log k)$ cycles with
+high probability, in near linear time.
+  Additionally, we also give a deterministic
+$\frac{3}{2}+O\left(\frac{1}{\sqrt{k}}\right)$ factor approximation algorithm
+running in time $O(nk)$.

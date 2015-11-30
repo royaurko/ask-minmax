@@ -1,0 +1,19 @@
+An undirected graph is Eulerian if it is connected and all its vertices are
+of even degree. Similarly, a directed graph is Eulerian, if for each vertex its
+in-degree is equal to its out-degree. It is well known that Eulerian graphs can
+be recognized in polynomial time while the problems of finding a maximum
+Eulerian subgraph or a maximum induced Eulerian subgraph are NP-hard. In this
+paper, we study the parameterized complexity of the following Euler subgraph
+problems:
+  - Large Euler Subgraph: For a given graph G and integer parameter k, does G
+contain an induced Eulerian subgraph with at least k vertices?
+  - Long Circuit: For a given graph G and integer parameter k, does G contain
+an Eulerian subgraph with at least k edges?
+  Our main algorithmic result is that Large Euler Subgraph is fixed parameter
+tractable (FPT) on undirected graphs. We find this a bit surprising because the
+problem of finding an induced Eulerian subgraph with exactly k vertices is
+known to be W[1]-hard. The complexity of the problem changes drastically on
+directed graphs. On directed graphs we obtained the following complexity
+dichotomy: Large Euler Subgraph is NP-hard for every fixed k>3 and is solvable
+in polynomial time for k<=3. For Long Circuit, we prove that the problem is FPT
+on directed and undirected graphs.

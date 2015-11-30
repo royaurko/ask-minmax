@@ -1,0 +1,11 @@
+Mapping reads on references is a central task in numerous genomic studies.
+Since references are mainly extracted from assembly graphs, it is of high
+interest to map efficiently on such structures. In this work we formally define
+this problem and provide a first theoretical and practical study toward this
+direction when the graph is a de Bruijn Graph. We show that the problem is
+NP-Complete and we propose simple and efficient heuristics with a prototype
+implementation called BGREAT that handle real world instances of the problem
+with moderate resources. It achieves to map millions reads per CPU hour on a
+complex human de Bruijn graph. Results show that mapping on graphs enables to
+map up to 22\% more reads than mapping on assembled sequences. BGREAT
+availability: github.com/Malfoy/BGREAT

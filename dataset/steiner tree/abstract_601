@@ -1,0 +1,16 @@
+Computing and storing probabilities is a hard problem as soon as one has to
+deal with complex distributions over multiple random variables. The problem of
+efficient representation of probability distributions is central in term of
+computational efficiency in the field of probabilistic reasoning. The main
+problem arises when dealing with joint probability distributions over a set of
+random variables: they are always represented using huge probability arrays. In
+this paper, a new method based on binary-tree representation is introduced in
+order to store efficiently very large joint distributions. Our approach
+approximates any multidimensional joint distributions using an adaptive
+discretization of the space. We make the assumption that the lower is the
+probability mass of a particular region of feature space, the larger is the
+discretization step. This assumption leads to a very optimized representation
+in term of time and memory. The other advantages of our approach are the
+ability to refine dynamically the distribution every time it is needed leading
+to a more accurate representation of the probability distribution and to an
+anytime representation of the distribution.

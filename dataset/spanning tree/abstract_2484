@@ -1,0 +1,16 @@
+We develop and analyze methods for computing provably optimal {\em maximum a
+posteriori} (MAP) configurations for a subclass of Markov random fields defined
+on graphs with cycles. By decomposing the original distribution into a convex
+combination of tree-structured distributions, we obtain an upper bound on the
+optimal value of the original problem (i.e., the log probability of the MAP
+assignment) in terms of the combined optimal values of the tree problems. We
+prove that this upper bound is tight if and only if all the tree distributions
+share an optimal configuration in common. An important implication is that any
+such shared configuration must also be a MAP configuration for the original
+distribution. Next we develop two approaches to attempting to obtain tight
+upper bounds: (a) a {\em tree-relaxed linear program} (LP), which is derived
+from the Lagrangian dual of the upper bounds; and (b) a {\em tree-reweighted
+max-product message-passing algorithm} that is related to but distinct from the
+max-product algorithm. In this way, we establish a connection between a certain
+LP relaxation of the mode-finding problem, and a reweighted form of the
+max-product (min-sum) message-passing algorithm.

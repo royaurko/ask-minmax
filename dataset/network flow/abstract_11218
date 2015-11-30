@@ -1,0 +1,18 @@
+Gaussian graphical models are often used to infer gene networks based on
+microarray expression data. Many scientists, however, have begun using
+high-throughput sequencing technologies to measure gene expression. As the
+resulting high-dimensional count data consists of counts of sequencing reads
+for each gene, Gaussian graphical models are not optimal for modeling gene
+networks based on this discrete data. We develop a novel method for estimating
+high-dimensional Poisson graphical models, the Log-Linear Graphical Model,
+allowing us to infer networks based on high-throughput sequencing data. Our
+model assumes a pair-wise Markov property: conditional on all other variables,
+each variable is Poisson. We estimate our model locally via neighborhood
+selection by fitting 1-norm penalized log-linear models. Additionally, we
+develop a fast parallel algorithm, an approach we call the Poisson Graphical
+Lasso, permitting us to fit our graphical model to high-dimensional genomic
+data sets. In simulations, we illustrate the effectiveness of our methods for
+recovering network structure from count data. A case study on breast cancer
+microRNAs, a novel application of graphical models, finds known regulators of
+breast cancer genes and discovers novel microRNA clusters and hubs that are
+targets for future research.

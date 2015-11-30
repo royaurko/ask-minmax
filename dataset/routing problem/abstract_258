@@ -1,0 +1,22 @@
+We consider the approximability of the maximum edge-disjoint paths problem
+(MEDP) in undirected graphs, and in particular, the integrality gap of the
+natural multicommodity flow based relaxation for it. The integrality gap is
+known to be $\Omega(\sqrt{n})$ even for planar graphs due to a simple
+topological obstruction and a major focus, following earlier work, has been
+understanding the gap if some constant congestion is allowed.
+  In this context, it is natural to ask for which classes of graphs does a
+constant-factor constant-congestion property hold. It is easy to deduce that
+for given constant bounds on the approximation and congestion, the class of
+"nice" graphs is nor-closed. Is the converse true? Does every proper
+minor-closed family of graphs exhibit a constant factor, constant congestion
+bound relative to the LP relaxation? We conjecture that the answer is yes.
+  One stumbling block has been that such bounds were not known for bounded
+treewidth graphs (or even treewidth 3). In this paper we give a polytime
+algorithm which takes a fractional routing solution in a graph of bounded
+treewidth and is able to integrally route a constant fraction of the LP
+solution's value. Note that we do not incur any edge congestion. Previously
+this was not known even for series parallel graphs which have treewidth 2. The
+algorithm is based on a more general argument that applies to $k$-sums of
+graphs in some graph family, as long as the graph family has a constant factor,
+constant congestion bound. We then use this to show that such bounds hold for
+the class of $k$-sums of bounded genus graphs.

@@ -1,0 +1,11 @@
+For a set of n points in the plane, we consider the axis--aligned (p,k)-Box
+Covering problem: Find p axis-aligned, pairwise-disjoint boxes that together
+contain n-k points. In this paper, we consider the boxes to be either squares
+or rectangles, and we want to minimize the area of the largest box. For general
+p we show that the problem is NP-hard for both squares and rectangles. For a
+small, fixed number p, we give algorithms that find the solution in the
+following running times:
+  For squares we have O(n+k log k) time for p=1, and O(n log n+k^p log^p k time
+for p = 2,3. For rectangles we get O(n + k^3) for p = 1 and O(n log n+k^{2+p}
+log^{p-1} k) time for p = 2,3.
+  In all cases, our algorithms use O(n) space.

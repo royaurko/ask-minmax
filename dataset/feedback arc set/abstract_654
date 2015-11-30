@@ -1,0 +1,17 @@
+One of the key research interests in the area of Constraint Satisfaction
+Problem (CSP) is to identify tractable classes of constraints and develop
+efficient solutions for them. In this paper, we introduce generalized staircase
+(GS) constraints which is an important generalization of one such tractable
+class found in the literature, namely, staircase constraints. GS constraints
+are of two kinds, down staircase (DS) and up staircase (US). We first examine
+several properties of GS constraints, and then show that arc consistency is
+sufficient to determine a solution to a CSP over DS constraints. Further, we
+propose an optimal O(cd) time and space algorithm to compute arc consistency
+for GS constraints where c is the number of constraints and d is the size of
+the largest domain. Next, observing that arc consistency is not necessary for
+solving a DSCSP, we propose a more efficient algorithm for solving it. With
+regard to US constraints, arc consistency is not known to be sufficient to
+determine a solution, and therefore, methods such as path consistency or
+variable elimination are required. Since arc consistency acts as a subroutine
+for these existing methods, replacing it by our optimal O(cd) arc consistency
+algorithm produces a more efficient method for solving a USCSP.

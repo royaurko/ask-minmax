@@ -1,0 +1,22 @@
+We investigate the problem of modifying a graph into a connected graph in
+which the degree of each vertex satisfies a prescribed parity constraint. Let
+$ea$, $ed$ and $vd$ denote the operations edge addition, edge deletion and
+vertex deletion respectively. For any $S\subseteq \{ea,ed,vd\}$, we define
+Connected Degree Parity Editing$(S)$ (CDPE($S$)) to be the problem that takes
+as input a graph $G$, an integer $k$ and a function $\delta\colon
+V(G)\rightarrow\{0,1\}$, and asks whether $G$ can be modified into a connected
+graph $H$ with $d_{H}(v)\equiv\delta(v)~(\bmod~2)$ for each $v\in V(H)$, using
+at most $k$ operations from $S$. We prove that
+  1. if $S=\{ea\}$ or $S=\{ea,ed\}$, then CDPE($S$) can be solved in polynomial
+time;
+  2. if $\{vd\} \subseteq S\subseteq \{ea,ed,vd\}$, then CDPE($S$) is
+NP-complete and W[1]-hard when parameterized by $k$, even if $\delta\equiv 0$.
+  Together with known results by Cai and Yang and by Cygan, Marx, Pilipczuk,
+Pilipczuk and Schlotter, our results completely classify the classical and
+parameterized complexity of the CDPE($S$) problem for all $S\subseteq
+\{ea,ed,vd\}$. We obtain the same classification for a natural variant of the
+CDPE($S$) problem on directed graphs, where the target is a weakly connected
+digraph in which the difference between the in- and out-degree of every vertex
+equals a prescribed value. As an important implication of our results, we
+obtain polynomial-time algorithms for the Eulerian Editing problem and its
+directed variant.

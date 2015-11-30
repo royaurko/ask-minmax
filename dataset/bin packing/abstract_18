@@ -1,0 +1,20 @@
+We present an exact method, based on an arc-flow formulation with side
+constraints, for solving bin packing and cutting stock problems --- including
+multi-constraint variants --- by simply representing all the patterns in a very
+compact graph. Our method includes a graph compression algorithm that usually
+reduces the size of the underlying graph substantially without weakening the
+model. As opposed to our method, which provides strong models, conventional
+models are usually highly symmetric and provide very weak lower bounds.
+  Our formulation is equivalent to Gilmore and Gomory's, thus providing a very
+strong linear relaxation. However, instead of using column-generation in an
+iterative process, the method constructs a graph, where paths from the source
+to the target node represent every valid packing pattern.
+  The same method, without any problem-specific parameterization, was used to
+solve a large variety of instances from several different cutting and packing
+problems. In this paper, we deal with vector packing, graph coloring, bin
+packing, cutting stock, cardinality constrained bin packing, cutting stock with
+cutting knife limitation, cutting stock with binary patterns, bin packing with
+conflicts, and cutting stock with binary patterns and forbidden pairs. We
+report computational results obtained with many benchmark test data sets, all
+of them showing a large advantage of this formulation with respect to the
+traditional ones.

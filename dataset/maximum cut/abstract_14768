@@ -1,0 +1,11 @@
+The \emph{total graph} $T(G)$ of a multigraph $G$ has as its vertices the set
+of edges and vertices of $G$ and has an edge between two vertices if their
+corresponding elements are either adjacent or incident in $G$. We show that if
+$G$ has maximum degree $\Delta(G)$, then $T(G)$ is $(2\Delta(G)-1)$-choosable.
+We give a linear-time algorithm that produces such a coloring. The best
+previous general upper bound for $\Delta(G) > 3$ was
+$\floor{\frac32\Delta(G)+2}$, by Borodin et al. When $\Delta(G)=4$, our
+algorithm gives a better upper bound. When $\Delta(G)\in\{3,5,6\}$, our
+algorithm matches the best known bound. However, because our algorithm is
+significantly simpler, it runs in linear time (unlike the algorithm of Borodin
+et al.).

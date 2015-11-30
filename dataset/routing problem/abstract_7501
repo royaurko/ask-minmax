@@ -1,0 +1,19 @@
+In this paper, we reduce Prize-Collecting Steiner TSP (PCTSP),
+Prize-Collecting Stroll (PCS), Prize-Collecting Steiner Tree (PCST),
+Prize-Collecting Steiner Forest (PCSF) and more generally Submodular
+Prize-Collecting Steiner Forest (SPCSF) on planar graphs (and more generally
+bounded-genus graphs) to the same problems on graphs of bounded treewidth. More
+precisely, we show any $\alpha$-approximation algorithm for these problems on
+graphs of bounded treewidth gives an $(\alpha + \epsilon)$-approximation
+algorithm for these problems on planar graphs (and more generally bounded-genus
+graphs), for any constant $\epsilon > 0$. Since PCS, PCTSP, and PCST can be
+solved exactly on graphs of bounded treewidth using dynamic programming, we
+obtain PTASs for these problems on planar graphs and bounded-genus graphs. In
+contrast, we show PCSF is APX-hard to approximate on series-parallel graphs,
+which are planar graphs of treewidth at most 2. This result is interesting on
+its own because it gives the first provable hardness separation between
+prize-collecting and non-prize-collecting (regular) versions of the problems:
+regular Steiner Forest is known to be polynomially solvable on series-parallel
+graphs and admits a PTAS on graphs of bounded treewidth. An analogous hardness
+result can be shown for Euclidian PCSF. This ends the common belief that
+prize-collecting variants should not add any new hardness to the problems.

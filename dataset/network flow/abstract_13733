@@ -1,0 +1,22 @@
+We describe a numerical code to solve the equations for ideal
+magnetohydrodynamics (MHD). It is based on an explicit finite difference scheme
+on an Eulerian grid, called the Total Variation Diminishing (TVD) scheme, which
+is a second-order-accurate extension of the Roe-type upwind scheme. We also
+describe a nonlinear Riemann solver for ideal MHD, which includes rarefactions
+as well as shocks and produces exact solutions for two-dimensional magnetic
+field structures as well as for the three-dimensional ones. The numerical code
+and the Riemann solver have been used to test each other. Extensive tests
+encompassing all the possible ideal MHD structures with planar symmetries (\ie
+~one-dimensional flows) are presented. These include those for which the field
+structure is two-dimensional ({\it i.e.}, those flows often called ``$1 + 1/2$
+dimensional'') as well as those for which the magnetic field plane rotates
+({\it i.e.,}, those flows often called ``$1 + 1/2 + 1/2$ dimensional'').
+Results indicate that the code can resolve strong fast, slow, and magnetosonic
+shocks within 2-4 cells while more cells are required if shocks become weak.
+With proper stiffening, rotational discontinuities are resolved within 3-5
+cells. Contact discontinuities are also resolved within 3-5 cells with
+stiffening and 6-8 cells without stiffening, while the stiffening on contact
+discontinuities in some cases generates numerical oscillations. Tangential
+discontinuities spread over more than 10 cells. Our tests confirm that slow
+compound structures with two-dimensional magnetic field are composed of
+intermediate shocks (so called ``2-4''

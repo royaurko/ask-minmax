@@ -1,0 +1,21 @@
+The focus of this paper is on spatial precoding in correlated multi-antenna
+channels, where the number of independent data-streams is adapted to trade-off
+the data-rate with the transmitter complexity. Towards the goal of a
+low-complexity implementation, a structured precoder is proposed, where the
+precoder matrix evolves fairly slowly at a rate comparable with the statistical
+evolution of the channel. Here, the eigenvectors of the precoder matrix
+correspond to the dominant eigenvectors of the transmit covariance matrix,
+whereas the power allocation across the modes is fixed, known at both the ends,
+and is of low-complexity. A particular case of the proposed scheme (semiunitary
+precoding), where the spatial modes are excited with equal power, is shown to
+be near-optimal in matched channels. A matched channel is one where the
+dominant eigenvalues of the transmit covariance matrix are well-conditioned and
+their number equals the number of independent data-streams, and the receive
+covariance matrix is also well-conditioned. In mismatched channels, where the
+above conditions are not met, it is shown that the loss in performance with
+semiunitary precoding when compared with a perfect channel information
+benchmark is substantial. This loss needs to be mitigated via limited feedback
+techniques that provide partial channel information to the transmitter. More
+importantly, we develop matching metrics that capture the degree of matching of
+a channel to the precoder structure continuously, and allow ordering two matrix
+channels in terms of their mutual information or error probability performance.

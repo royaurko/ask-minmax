@@ -1,0 +1,13 @@
+We present three algorithms for calculating rate constants and sampling
+transition paths for rare events in simulations with stochastic dynamics. The
+methods do not require a priori knowledge of the phase space density and are
+suitable for equilibrium or non-equilibrium systems in stationary state. All
+the methods use a series of interfaces in phase space, between the initial and
+final states, to generate transition paths as chains of connected partial
+paths, in a ratchet-like manner. No assumptions are made about the distribution
+of paths at the interfaces. The three methods differ in the way that the
+transition path ensemble is generated. We apply the algorithms to kinetic Monte
+Carlo simulations of a genetic switch and to Langevin Dynamics simulations of
+intermittently driven polymer translocation through a pore. We find that the
+three methods are all of comparable efficiency, and that all the methods are
+much more efficient than brute force simulation.

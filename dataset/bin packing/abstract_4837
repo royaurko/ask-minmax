@@ -1,0 +1,19 @@
+Sparse cutting-planes are often the ones used in mixed-integer programing
+(MIP) solvers, since they help in solving the linear programs encountered
+during branch-&-bound more efficiently. However, how well can we approximate
+the integer hull by just using sparse cutting-planes? In order to understand
+this question better, given a polyope $P$ (e.g. the integer hull of a MIP), let
+$P^k$ be its best approximation using cuts with at most $k$ non-zero
+coefficients. We consider $d(P, P^k) = \max_{x \in P^k} \left(min_{y \in P} \|
+x - y\|\right)$ as a measure of the quality of sparse cuts.
+  In our first result, we present general upper bounds on $d(P, P^k)$ which
+depend on the number of vertices in the polytope and exhibits three phases as
+$k$ increases. Our bounds imply that if $P$ has polynomially many vertices,
+using half sparsity already approximates it very well. Second, we present a
+lower bound on $d(P, P^k)$ for random polytopes that show that the upper bounds
+are quite tight. Third, we show that for a class of hard packing IPs, sparse
+cutting-planes do not approximate the integer hull well, that is $d(P, P^k)$ is
+large for such instances unless $k$ is very close to $n$. Finally, we show that
+using sparse cutting-planes in extended formulations is at least as good as
+using them in the original polyhedron, and give an example where the former is
+actually much better.

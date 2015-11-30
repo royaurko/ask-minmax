@@ -1,0 +1,13 @@
+The {\sc Directed Maximum Leaf Out-Branching} problem is to find an
+out-branching (i.e. a rooted oriented spanning tree) in a given digraph with
+the maximum number of leaves. In this paper, we obtain two combinatorial
+results on the number of leaves in out-branchings. We show that
+  - every strongly connected $n$-vertex digraph $D$ with minimum in-degree at
+least 3 has an out-branching with at least $(n/4)^{1/3}-1$ leaves;
+  - if a strongly connected digraph $D$ does not contain an out-branching with
+$k$ leaves, then the pathwidth of its underlying graph UG($D$) is $O(k\log k)$.
+Moreover, if the digraph is acyclic, the pathwidth is at most $4k$.
+  The last result implies that it can be decided in time $2^{O(k\log^2 k)}\cdot
+n^{O(1)}$ whether a strongly connected digraph on $n$ vertices has an
+out-branching with at least $k$ leaves. On acyclic digraphs the running time of
+our algorithm is $2^{O(k\log k)}\cdot n^{O(1)}$.

@@ -1,0 +1,27 @@
+Given $f:\{-1, 1\}^n \rightarrow \{-1, 1\}$, define the \emph{spectral
+distribution} of $f$ to be the distribution on subsets of $[n]$ in which the
+set $S$ is sampled with probability $\widehat{f}(S)^2$. Then the Fourier
+Entropy-Influence (FEI) conjecture of Friedgut and Kalai (1996) states that
+there is some absolute constant $C$ such that $\operatorname{H}[\widehat{f}^2]
+\leq C\cdot\operatorname{Inf}[f]$. Here, $\operatorname{H}[\widehat{f}^2]$
+denotes the Shannon entropy of $f$'s spectral distribution, and
+$\operatorname{Inf}[f]$ is the total influence of $f$. This conjecture is one
+of the major open problems in the analysis of Boolean functions, and settling
+it would have several interesting consequences.
+  Previous results on the FEI conjecture have been largely through direct
+calculation. In this paper we study a natural interpretation of the conjecture,
+which states that there exists a communication protocol which, given subset $S$
+of $[n]$ distributed as $\widehat{f}^2$, can communicate the value of $S$ using
+at most $C\cdot\operatorname{Inf}[f]$ bits in expectation.
+  Using this interpretation, we are able show the following results:
+  1. First, if $f$ is computable by a read-$k$ decision tree, then
+$\operatorname{H}[\widehat{f}^2] \leq 9k\cdot \operatorname{Inf}[f]$.
+  2. Next, if $f$ has $\operatorname{Inf}[f] \geq 1$ and is computable by a
+decision tree with expected depth $d$, then $\operatorname{H}[\widehat{f}^2]
+\leq 12d\cdot \operatorname{Inf}[f]$.
+  3. Finally, we give a new proof of the main theorem of O'Donnell and Tan
+(ICALP 2013), i.e. that their FEI$^+$ conjecture composes.
+  In addition, we show that natural improvements to our decision tree results
+would be sufficient to prove the FEI conjecture in its entirety. We believe
+that our methods give more illuminating proofs than previous results about the
+FEI conjecture.

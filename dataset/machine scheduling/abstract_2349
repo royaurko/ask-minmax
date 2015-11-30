@@ -1,0 +1,20 @@
+Rapid sequencing of individual human genome is prerequisite to genomic
+medicine, where diseases will be prevented by preemptive cures.
+Quantum-mechanical tunneling through single-stranded DNA in a solid-state
+nanopore has been proposed for rapid DNA sequencing, but unfortunately the
+tunneling current alone cannot distinguish the four nucleotides due to large
+fluctuations in molecular conformation and solvent. Here, we propose a
+machine-learning approach applied to the tunneling current-voltage (I-V)
+characteristic for efficient discrimination between the four nucleotides. We
+first combine principal component analysis (PCA) and fuzzy c-means (FCM)
+clustering to learn the "fingerprints" of the electronic density-of-states
+(DOS) of the four nucleotides, which can be derived from the I-V data. We then
+apply the hidden Markov model and the Viterbi algorithm to sequence a time
+series of DOS data (i.e., to solve the sequencing problem). Numerical
+experiments show that the PCA-FCM approach can classify unlabeled DOS data with
+91% accuracy. Furthermore, the classification is found to be robust against
+moderate levels of noise, i.e., 70% accuracy is retained with a signal-to-noise
+ratio of 26 dB. The PCA-FCM-Viterbi approach provides a 4-fold increase in
+accuracy for the sequencing problem compared with PCA alone. In conjunction
+with recent developments in nanotechnology, this machine-learning method may
+pave the way to the much-awaited rapid, low-cost genome sequencer.

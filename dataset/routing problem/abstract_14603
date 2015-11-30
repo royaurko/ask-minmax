@@ -1,0 +1,22 @@
+The inverse problem for a disordered system involves determining the
+interparticle interaction parameters consistent with a given set of
+experimental data. Recently, Rutledge has shown (Phys. Rev. E63, 021111 (2001))
+that such problems can be generally expressed in terms of a grand canonical
+ensemble of polydisperse particles. Within this framework, one identifies a
+polydisperse attribute (`pseudo-species') $\sigma$ corresponding to some
+appropriate generalized coordinate of the system to hand. Associated with this
+attribute is a composition distribution $\bar\rho(\sigma)$ measuring the number
+of particles of each species. Its form is controlled by a conjugate chemical
+potential distribution $\mu(\sigma)$ which plays the role of the requisite
+interparticle interaction potential. Simulation approaches to the inverse
+problem involve determining the form of $\mu(\sigma)$ for which
+$\bar\rho(\sigma)$ matches the available experimental data. The difficulty in
+doing so is that $\mu(\sigma)$ is (in general) an unknown {\em functional} of
+$\bar\rho(\sigma)$ and must therefore be found by iteration. At high particle
+densities and for high degrees of polydispersity, strong cross coupling between
+$\mu(\sigma)$ and $\bar\rho(\sigma)$ renders this process computationally
+problematic and laborious. Here we describe an efficient and robust {\em
+non-equilibrium} simulation scheme for finding the equilibrium form of
+$\mu[\bar\rho(\sigma)]$. The utility of the method is demonstrated by
+calculating the chemical potential distribution conjugate to a specific
+log-normal distribution of particle sizes in a polydisperse fluid.

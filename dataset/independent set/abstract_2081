@@ -1,0 +1,19 @@
+Approximate Bayesian computation has emerged as a standard computational tool
+when dealing with the increasingly common scenario of completely intractable
+likelihood functions in Bayesian inference. We show that many common Markov
+chain Monte Carlo kernels used to facilitate inference in this setting can fail
+to be variance bounding, and hence geometrically ergodic, which can have
+consequences for the reliability of estimates in practice. This phenomenon is
+typically independent of the choice of tolerance in the approximation. We then
+prove that a recently introduced Markov kernel in this setting can inherit
+variance bounding and geometric ergodicity from its intractable
+Metropolis--Hastings counterpart, under reasonably weak and manageable
+conditions. We show that the computational cost of this alternative kernel is
+bounded whenever the prior is proper, and present indicative results on an
+example where spectral gaps and asymptotic variances can be computed, as well
+as an example involving inference for a partially and discretely observed,
+time-homogeneous, pure jump Markov process. We also supply two general
+theorems, one of which provides a simple sufficient condition for lack of
+variance bounding for reversible kernels and the other provides a positive
+result concerning inheritance of variance bounding and geometric ergodicity for
+mixtures of reversible kernels.

@@ -1,0 +1,12 @@
+Finding the eigenvalues of a Sturm-Liouville problem can be a computationally
+challenging task, especially when a large set of eigenvalues is computed, or
+just when particularly large eigenvalues are sought. This is a consequence of
+the highly oscillatory behaviour of the solutions corresponding to high
+eigenvalues, which forces a naive integrator to take increasingly smaller
+steps. We will discuss some techniques that yield uniform approximation over
+the whole eigenvalue spectrum and can take large steps even for high
+eigenvalues. In particular, we will focus on methods based on coefficient
+approximation which replace the coefficient functions of the Sturm-Liouville
+problem by simpler approximations and then solve the approximating problem. The
+use of (modified) Magnus or Neumann integrators allows to extend the
+coefficient approximation idea to higher order methods.

@@ -1,0 +1,13 @@
+Monte-Carlo Tree Search (MCTS) methods are drawing great interest after
+yielding breakthrough results in computer Go. This paper proposes a Bayesian
+approach to MCTS that is inspired by distributionfree approaches such as UCT
+[13], yet significantly differs in important respects. The Bayesian framework
+allows potentially much more accurate (Bayes-optimal) estimation of node values
+and node uncertainties from a limited number of simulation trials. We further
+propose propagating inference in the tree via fast analytic Gaussian
+approximation methods: this can make the overhead of Bayesian inference
+manageable in domains such as Go, while preserving high accuracy of
+expected-value estimates. We find substantial empirical outperformance of UCT
+in an idealized bandit-tree test environment, where we can obtain valuable
+insights by comparing with known ground truth. Additionally we rigorously prove
+on-policy and off-policy convergence of the proposed methods.

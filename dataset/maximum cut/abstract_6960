@@ -1,0 +1,14 @@
+We report on an improvement to the implementation of the Maximum Entropy
+Method (MEM). It amounts to departing from the search space obtained through a
+singular value decomposition (SVD) of the Kernel. Based on the shape of the SVD
+basis functions we argue that the MEM spectrum for given $N_\tau$ data-points
+$D(\tau)$ and prior information $m(\omega)$ does not in general lie in this
+$N_\tau$ dimensional singular subspace. Systematically extending the search
+basis will eventually recover the full search space and the correct extremum.
+We illustrate this idea through a mock data analysis inspired by actual lattice
+spectra, to show where our improvement becomes essential for the success of the
+MEM. To remedy the shortcomings of Bryan's SVD prescription we propose to use
+the real Fourier basis, which consists of trigonometric functions. Not only
+does our approach lead to more stable numerical behavior, as the SVD is not
+required for the determination of the basis functions, but also the resolution
+of the MEM becomes independent from the position of the reconstructed peaks.

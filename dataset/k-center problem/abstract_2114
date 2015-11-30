@@ -1,0 +1,26 @@
+In spite of the extensive studies of the 3-coloring problem with respect to
+several basic parameters, the complexity status of the 3-coloring problem on
+graphs with small diameter, i.e. with diameter 2 or 3, has been a longstanding
+and challenging open question. For graphs with diameter 2 we provide the first
+subexponential algorithm with complexity $2^{O(\sqrt{n\log n})}$, which is
+asymptotically the same as the currently best known time complexity for the
+graph isomorphism (GI) problem. Moreover, we prove that the graph isomorphism
+problem on 3-colorable graphs with diameter 2 is GI-complete. Furthermore we
+present a subclass of graphs with diameter 2 that admits a polynomial algorithm
+for 3-coloring. For graphs with diameter 3 we establish the complexity of
+3-coloring by proving that for every $\varepsilon \in [0,1)$, 3-coloring is
+NP-complete on triangle-free graphs of diameter 3 and radius 2 with $n$
+vertices and minimum degree $\delta=\Theta(n^{\varepsilon})$. Moreover,
+assuming ETH, we provide three different amplifications of our hardness results
+to obtain for every $\varepsilon \in [0,1)$ subexponential lower bounds for the
+complexity of 3-coloring on triangle-free graphs with diameter 3 and minimum
+degree $\delta=\Theta(n^{\varepsilon})$. Finally, we provide a 3-coloring
+algorithm with running time
+$2^{O(\min\{\delta\Delta,\frac{n}{\delta}\log\delta\})}$ for graphs with
+diameter 3, where $\delta$ (resp. $\Delta $) is the minimum (resp. maximum)
+degree of the input graph. To the best of our knowledge, this algorithm is the
+first subexponential algorithm for graphs with $\delta=\omega(1)$ and for
+graphs with $\delta=O(1)$ and $\Delta=o(n)$. Due to the above lower bounds of
+the complexity of 3-coloring, the running time of this algorithm is
+asymptotically almost tight when the minimum degree if the input graph is
+$\delta=\Theta(n^{\varepsilon})$, where $\varepsilon \in [1/2,1)$.

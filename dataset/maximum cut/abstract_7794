@@ -1,0 +1,19 @@
+Current medium access control mechanisms are based on collision avoidance and
+collided packets are discarded. The recent work on ZigZag decoding departs from
+this approach by recovering the original packets from multiple collisions. In
+this paper, we present an algebraic representation of collisions which allows
+us to view each collision as a linear combination of the original packets. The
+transmitted, colliding packets may themselves be a coded version of the
+original packets.
+  We propose a new acknowledgment (ACK) mechanism for collisions based on the
+idea that if a set of packets collide, the receiver can afford to ACK exactly
+one of them and still decode all the packets eventually. We analytically
+compare delay and throughput performance of such collision recovery schemes
+with other collision avoidance approaches in the context of a single hop
+wireless erasure network. In the multiple receiver case, the broadcast
+constraint calls for combining collision recovery methods with network coding
+across packets at the sender. From the delay perspective, our scheme, without
+any coordination, outperforms not only a ALOHA-type random access mechanisms,
+but also centralized scheduling. For the case of streaming arrivals, we propose
+a priority-based ACK mechanism and show that its stability region coincides
+with the cut-set bound of the packet erasure network.

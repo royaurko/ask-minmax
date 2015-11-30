@@ -1,0 +1,21 @@
+Random walks are gaining much attention from the networks research community.
+They are the basis of many proposals aimed to solve a variety of
+network-related problems such as resource location, network construction, nodes
+sampling, etc. This interest on random walks is justified by their inherent
+properties. They are very simple to implement as nodes only require local
+information to take routing decisions. Also, random walks demand little
+processing power and bandwidth. Besides, they are very resilient to changes on
+the network topology.
+  Here, we quantify the effectiveness of random walks as a search mechanism in
+one-hop replication networks: networks where each node knows its neighbors'
+identity/resources, and so it can reply to queries on their behalf. Our model
+focuses on estimating the expected average search time of the random walk by
+applying network queuing theory. To do this, we must provide first the expected
+average search length. This is computed by means of estimations of the expected
+average coverage at each step of the random walk. This model takes into account
+the revisiting effect: the fact that, as the random walk progresses, the
+probability of arriving to nodes already visited increases, which impacts on
+how the network coverage evolves. That is, we do not model the coverage as a
+memoryless process. Furthermore, we conduct a series of simulations to
+evaluate, in practice, the above mentioned metrics. Our results show a very
+close correlation between the analytical and the experimental results.

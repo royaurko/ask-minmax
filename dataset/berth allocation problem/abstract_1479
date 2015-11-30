@@ -1,0 +1,24 @@
+The traditional information theoretic approach to studying feedback is to
+consider ideal instantaneous high-rate feedback of the channel outputs to the
+encoder. This was acceptable in classical work because the results were
+negative: Shannon pointed out that even perfect feedback often does not improve
+capacity and in the context of symmetric DMCs, Dobrushin showed that it does
+not improve the fixed block-coding error exponents in the interesting high rate
+regime. However, it has recently been shown that perfect feedback does allow
+great improvements in the asymptotic tradeoff between end-to-end delay and
+probability of error, even for symmetric channels at high rate. Since gains are
+claimed with ideal instantaneous feedback, it is natural to wonder whether
+these improvements remain if the feedback is unreliable or otherwise limited.
+  Here, packet-erasure channels are considered on both the forward and feedback
+links. First, the feedback channel is considered as a given and a strategy is
+given to balance forward and feedback error correction in the suitable
+information-theoretic limit of long end-to-end delays. At high enough rates,
+perfect-feedback performance is asymptotically attainable despite having only
+unreliable feedback! Second, the results are interpreted in the zero- sum case
+of "half-duplex" nodes where the allocation of bandwidth or time to the
+feedback channel comes at the direct expense of the forward channel. It turns
+out that even here, feedback is worthwhile since dramatically lower asymptotic
+delays are possible by appropriately balancing forward and feedback error
+correction.
+  The results easily generalize to channels with strictly positive
+zero-undeclared-error capacities.

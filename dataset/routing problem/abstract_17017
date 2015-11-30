@@ -1,0 +1,17 @@
+Sparse learning has recently received increasing attention in many areas
+including machine learning, statistics, and applied mathematics. The mixed-norm
+regularization based on the L1/Lq norm with q > 1 is attractive in many
+applications of regression and classification in that it facilitates group
+sparsity in the model. The resulting optimization problem is, however,
+challenging to solve due to the structure of the L1/Lq -regularization.
+Existing work deals with special cases including q = 2,infinity, and they
+cannot be easily extended to the general case. In this paper, we propose an
+efficient algorithm based on the accelerated gradient method for solving the
+L1/Lq -regularized problem, which is applicable for all values of q larger than
+1, thus significantly extending existing work. One key building block of the
+proposed algorithm is the L1/Lq -regularized Euclidean projection (EP1q). Our
+theoretical analysis reveals the key properties of EP1q and illustrates why
+EP1q for the general q is significantly more challenging to solve than the
+special cases. Based on our theoretical analysis, we develop an efficient
+algorithm for EP1q by solving two zero finding problems. Experimental results
+demonstrate the efficiency of the proposed algorithm.

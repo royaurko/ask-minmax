@@ -1,0 +1,24 @@
+Two new methods are proposed for linear regression analysis for data with
+measurement errors. Both methods are designed to accommodate intrinsic scatter
+in addition to measurement errors. The first (BCES) is a direct extension of
+the ordinary least squares (OLS) estimator to allow for measurement errors. It
+is quite general, allowing a) for measurement errors on both variables, b) the
+measurement errors for the two variables to be dependent, c) the magnitudes of
+the measurement errors to depend on the measurements, and d) other `symmetric'
+lines such as the bisector and the orthogonal regression can be constructed.
+The second method is a weighted least squares (WLS) estimator, which applies
+only in the case where the `independent' variable is measured without error and
+the magnitudes of the measurement errors on the 'dependent' variable are
+independent from the measurements. Several applications are made to
+extragalactic astronomy: The BCES method, when applied to data describing the
+color-luminosity relations for field galaxies, yields significantly different
+slopes than OLS and other estimators used in the literature. Simulations with
+artificial data sets are used to evaluate the small sample performance of the
+estimators. Unsurprisingly, the least-biased results are obtained when color is
+treated as the dependent variable. The Tully-Fisher relation is another example
+where the BCES method should be used because errors in luminosity and velocity
+are correlated due to inclination corrections. We also find, via simulations,
+that the WLS method is by far the best method for the Tolman surface-brightness
+test, producing the smallest variance in slope by an order of magnitude.
+Moreover, with WLS it is not necessary to ``reduce'' galaxies to a fiducial
+surface-brightness, since this model incorporates intrinsic scatter.

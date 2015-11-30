@@ -1,0 +1,24 @@
+Cascades are ubiquitous in various network environments. How to predict these
+cascades is highly nontrivial in several vital applications, such as viral
+marketing, epidemic prevention and traffic management. Most previous works
+mainly focus on predicting the final cascade sizes. As cascades are typical
+dynamic processes, it is always interesting and important to predict the
+cascade size at any time, or predict the time when a cascade will reach a
+certain size (e.g. an threshold for outbreak). In this paper, we unify all
+these tasks into a fundamental problem: cascading process prediction. That is,
+given the early stage of a cascade, how to predict its cumulative cascade size
+of any later time? For such a challenging problem, how to understand the micro
+mechanism that drives and generates the macro phenomenons (i.e. cascading
+proceese) is essential. Here we introduce behavioral dynamics as the micro
+mechanism to describe the dynamic process of a node's neighbors get infected by
+a cascade after this node get infected (i.e. one-hop subcascades). Through
+data-driven analysis, we find out the common principles and patterns lying in
+behavioral dynamics and propose a novel Networked Weibull Regression model for
+behavioral dynamics modeling. After that we propose a novel method for
+predicting cascading processes by effectively aggregating behavioral dynamics,
+and propose a scalable solution to approximate the cascading process with a
+theoretical guarantee. We extensively evaluate the proposed method on a large
+scale social network dataset. The results demonstrate that the proposed method
+can significantly outperform other state-of-the-art baselines in multiple tasks
+including cascade size prediction, outbreak time prediction and cascading
+process prediction.

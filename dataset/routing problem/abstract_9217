@@ -1,0 +1,13 @@
+In this paper we develop a discrete Hierarchical Basis (HB) to efficiently
+solve the Radial Basis Function (RBF) interpolation problem with variable
+polynomial order. The HB forms an orthogonal set and is adapted to the kernel
+seed function and the placement of the interpolation nodes. Moreover, this
+basis is orthogonal to a set of polynomials up to a given order defined on the
+interpolating nodes. We are thus able to decouple the RBF interpolation problem
+for any order of the polynomial interpolation and solve it in two steps: (1)
+The polynomial orthogonal RBF interpolation problem is efficiently solved in
+the transformed HB basis with a GMRES iteration and a diagonal, or block SSOR
+preconditioner. (2) The residual is then projected onto an orthonormal
+polynomial basis. We apply our approach on several test cases to study its
+effectiveness, including an application to the Best Linear Unbiased Estimator
+regression problem.

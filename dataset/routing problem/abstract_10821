@@ -1,0 +1,24 @@
+In many real-life optimisation problems, there are multiple interacting
+components in a solution. For example, different components might specify
+assignments to different kinds of resource. Often, each component is associated
+with different sets of soft constraints, and so with different measures of soft
+constraint violation. The goal is then to minimise a linear combination of such
+measures. This paper studies an approach to such problems, which can be thought
+of as multiphase exploitation of multiple objective-/value-restricted
+submodels. In this approach, only one computationally difficult component of a
+problem and the associated subset of objectives is considered at first. This
+produces partial solutions, which define interesting neighbourhoods in the
+search space of the complete problem. Often, it is possible to pick the initial
+component so that variable aggregation can be performed at the first stage, and
+the neighbourhoods to be explored next are guaranteed to contain feasible
+solutions. Using integer programming, it is then easy to implement heuristics
+producing solutions with bounds on their quality.
+  Our study is performed on a university course timetabling problem used in the
+2007 International Timetabling Competition, also known as the Udine Course
+Timetabling Problem. In the proposed heuristic, an objective-restricted
+neighbourhood generator produces assignments of periods to events, with
+decreasing numbers of violations of two period-related soft constraints. Those
+are relaxed into assignments of events to days, which define neighbourhoods
+that are easier to search with respect to all four soft constraints. Integer
+programming formulations for all subproblems are given and evaluated using ILOG
+CPLEX 11. The wider applicability of this approach is analysed and discussed.

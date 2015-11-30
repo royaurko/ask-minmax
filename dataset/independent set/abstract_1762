@@ -1,0 +1,14 @@
+We develop a set of scalable Bayesian inference procedures for a general
+class of nonparametric regression models based on embarrassingly parallel MCMC.
+Specifically, we first perform independent nonparametric Bayesian inference on
+each subset split from a massive dataset, and then aggregate those results into
+global counterparts. By partitioning the dataset carefully, we show that our
+aggregated inference results obtain the oracle rule in the sense that they are
+equivalent to those obtained directly from the massive data (which are
+computationally prohibitive in practice, though). For example, the aggregated
+credible sets achieve desirable credibility level and frequentist coverage
+possessed by the oracle counterparts (with similar radius). The oracle matching
+phenomenon occurs due to the nice geometric structures of the
+infinite-dimensional parameter space. A technical by-product is a new version
+of uniformly consistent test that applies to a general regression model under
+Sobolev norm.

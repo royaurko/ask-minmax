@@ -1,0 +1,23 @@
+We refine the bound on the packing number, originally shown by Haussler, for
+shallow geometric set systems. Specifically, let $\V$ be a finite set system
+defined over an $n$-point set $X$; we view $\V$ as a set of indicator vectors
+over the $n$-dimensional unit cube. A $\delta$-separated set of $\V$ is a
+subcollection $\W$, s.t. the Hamming distance between each pair $\uu, \vv \in
+\W$ is greater than $\delta$, where $\delta > 0$ is an integer parameter. The
+$\delta$-packing number is then defined as the cardinality of the largest
+$\delta$-separated subcollection of $\V$. Haussler showed an asymptotically
+tight bound of $\Theta((n/\delta)^d)$ on the $\delta$-packing number if $\V$
+has VC-dimension (or \emph{primal shatter dimension}) $d$. We refine this bound
+for the scenario where, for any subset, $X' \subseteq X$ of size $m \le n$ and
+for any parameter $1 \le k \le m$, the number of vectors of length at most $k$
+in the restriction of $\V$ to $X'$ is only $O(m^{d_1} k^{d-d_1})$, for a fixed
+integer $d > 0$ and a real parameter $1 \le d_1 \le d$ (this generalizes the
+standard notion of \emph{bounded primal shatter dimension} when $d_1 = d$). In
+this case when $\V$ is "$k$-shallow" (all vector lengths are at most $k$), we
+show that its $\delta$-packing number is $O(n^{d_1} k^{d-d_1}/\delta^d)$,
+matching Haussler's bound for the special cases where $d_1=d$ or $k=n$. As an
+immediate consequence we conclude that set systems of halfspaces, balls, and
+parallel slabs defined over $n$ points in $d$-space admit better packing
+numbers when $k$ is smaller than $n$. Last but not least, we describe
+applications to (i) spanning trees of low total crossing number, and (ii)
+geometric discrepancy, based on previous work by the contributor.

@@ -1,0 +1,18 @@
+In this paper we present a rigorous cost and error analysis of a multilevel
+estimator based on randomly shifted Quasi-Monte Carlo (QMC) lattice rules for
+lognormal diffusion problems. These problems are motivated by uncertainty
+quantification problems in subsurface flow. We extend the convergence analysis
+in [Graham et al., Numer. Math. 2014] to multilevel Quasi-Monte Carlo finite
+element discretizations and give a constructive proof of the
+dimension-independent convergence of the QMC rules. More precisely, we provide
+suitable parameters for the construction of such rules that yield the required
+variance reduction for the multilevel scheme to achieve an $\varepsilon$-error
+with a cost of $\mathcal{O}(\varepsilon^{-\theta})$ with $\theta < 2$, and in
+practice even $\theta \approx 1$, for sufficiently fast decaying covariance
+kernels of the underlying Gaussian random field inputs. This confirms that the
+computational gains due to the application of multilevel sampling methods and
+the gains due to the application of QMC methods, both demonstrated in earlier
+works for the same model problem, are complementary. A series of numerical
+experiments confirms these gains. The results show that in practice the
+multilevel QMC method consistently outperforms both the multilevel MC method
+and the single-level variants even for non-smooth problems.

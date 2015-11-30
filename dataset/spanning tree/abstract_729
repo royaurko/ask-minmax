@@ -1,0 +1,17 @@
+We consider the problem of computing all-pairs shortest paths in a directed
+graph with real weights assigned to vertices.
+  For an $n\times n$ 0-1 matrix $C,$ let $K_{C}$ be the complete weighted graph
+on the rows of $C$ where the weight of an edge between two rows is equal to
+their Hamming distance. Let $MWT(C)$ be the weight of a minimum weight spanning
+tree of $K_{C}.$
+  We show that the all-pairs shortest path problem for a directed graph $G$ on
+$n$ vertices with nonnegative real weights and adjacency matrix $A_G$ can be
+solved by a combinatorial randomized algorithm in time
+$$\widetilde{O}(n^{2}\sqrt {n + \min\{MWT(A_G), MWT(A_G^t)\}})$$
+  As a corollary, we conclude that the transitive closure of a directed graph
+$G$ can be computed by a combinatorial randomized algorithm in the
+aforementioned time. $\widetilde{O}(n^{2}\sqrt {n + \min\{MWT(A_G),
+MWT(A_G^t)\}})$
+  We also conclude that the all-pairs shortest path problem for uniform disk
+graphs, with nonnegative real vertex weights, induced by point sets of bounded
+density within a unit square can be solved in time $\widetilde{O}(n^{2.75})$.

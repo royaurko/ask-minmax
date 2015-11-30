@@ -1,0 +1,23 @@
+Graphs are extremely versatile and ubiquitous mathematical structures with
+potential to model a wide range of domains. For this reason, graph problems
+have been of interest since the early days of computer science. Some of these
+problems consider substructures of a graph that have certain properties. These
+substructures of interest, generally called patterns, are often meaningful in
+the domain being modeled. Classic examples of patterns include spanning trees,
+cycles and subgraphs.
+  This thesis focuses on the topic of explicitly listing all the patterns
+existing in an input graph. One of the defining features of this problem is
+that the number of patterns is frequently exponential on the size of the input
+graph. Thus, the time complexity of listing algorithms is parameterized by the
+size of the output.
+  The main contribution of this work is the presentation of optimal algorithms
+for four different problems of listing patterns in graphs, namely the listing
+of k-subtrees, k-subgraphs, st-paths and cycles. The algorithms presented are
+framed within the same generic approach, based in a recursive partition of the
+search space that divides the problem into subproblems. The key to an efficient
+implementation of this approach is to avoid recursing into subproblems that do
+not list any patterns. With this goal in sight, a dynamic data structure,
+called the certificate, is introduced and maintained throughout the recursion.
+Moreover, properties of the recursion tree and lower bounds on the number of
+patterns are used to amortize the cost of the algorithm on the size of the
+output.

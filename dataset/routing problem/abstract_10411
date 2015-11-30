@@ -1,0 +1,25 @@
+Let $S$ be a point set in the plane such that each of its elements is colored
+either red or blue. A matching of $S$ with rectangles is any set of
+pairwise-disjoint axis-aligned rectangles such that each rectangle contains
+exactly two points of $S$. Such a matching is monochromatic if every rectangle
+contains points of the same color, and is bichromatic if every rectangle
+contains points of different colors. In this paper we study the following two
+problems:
+  1. Find a maximum monochromatic matching of $S$ with rectangles.
+  2. Find a maximum bichromatic matching of $S$ with rectangles.
+  For each problem we provide a polynomial-time approximation algorithm that
+constructs a matching with at least $1/4$ of the number of rectangles of an
+optimal matching. We show that the first problem is $\mathsf{NP}$-hard even if
+either the matching rectangles are restricted to axis-aligned segments or $S$
+is in general position, that is, no two points of $S$ share the same $x$ or $y$
+coordinate. We further show that the second problem is also $\mathsf{NP}$-hard,
+even if $S$ is in general position. These $\mathsf{NP}$-hardness results follow
+by showing that deciding the existence of a perfect matching is
+$\mathsf{NP}$-complete in each case. The approximation results are based on a
+relation of our problem with the problem of finding a maximum independent set
+in a family of axis-aligned rectangles. With this paper we extend previous ones
+on matching one-colored points with rectangles and squares, and matching
+two-colored points with segments. Furthermore, using our techniques, we prove
+that it is $\mathsf{NP}$-complete to decide a perfect matching with rectangles
+in the case where all points have the same color, solving an open problem of
+Bereg, Mutsanas, and Wolff [CGTA (2009)].

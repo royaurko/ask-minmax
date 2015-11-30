@@ -1,0 +1,21 @@
+Parallel transmission has been a very promising candidate technology to
+mitigate the inevitable radio-frequency field inhomogeneity in magnetic
+resonance imaging (MRI) at ultra-high field (UHF). For the first few years,
+pulse design utilizing this technique was expressed as a least squares problem
+with crude power regularizations aimed at controlling the specific absorption
+rate (SAR), hence the patient safety. This approach being suboptimal for many
+applications sensitive mostly to the magnitude of the spin excitation, and not
+its phase, the magnitude least squares (MLS) problem then was first formulated
+in 2007. Despite its importance and the availability of other powerful
+numerical optimization methods, this problem yet has been faced exclusively by
+the pulse designer with the so-called variable exchange method. In this paper,
+we investigate other strategies and incorporate directly the strict SAR and
+hardware constraints. Different schemes such as sequential quadratic
+programming (SQP), interior point (I-P) methods, semi-definite programming
+(SDP) and magnitude squared least squares (MSLS) relaxations are studied both
+in the small and large tip angle regimes with real data sets obtained in-vivo
+on a human brain at 7 Tesla. Convergence and robustness of the different
+approaches are analyzed, and recommendations to tackle this specific problem
+are finally given. Small tip angle and inversion pulses are returned in a few
+seconds and in under a minute respectively while respecting the constraints,
+allowing the use of the proposed approach in routine.

@@ -1,0 +1,18 @@
+A numerical procedure was developed for solving equations for compressible
+granular multiphase flows in which the particle volume fraction can range
+dynamically from very dilute to very dense. The procedure uses a
+low-dissipation and high-order numerical method that can describe shocks and
+incorporates a particulate model based on kinetic theory. The algorithm
+separates edges of a computational cell into gas and solid sections where gas-
+and granular-phase Riemann problems are solved independently. Solutions from
+these individual Riemann problems are combined to assemble the fully coupled
+convective fluxes and nonconservative terms for both phases. The technique
+converges under grid refinement even with very high volume fraction granular
+interfaces. The method can advect sharp granular material interfaces that
+coincide with multi-species gaseous contact surfaces without violating the
+pressure nondisturbing condition. The procedure also reproduces known features
+from multiphase shock tube problems, granular shocks, transmission angles of
+compaction waves, and shock wave and dust-layer interactions. This approach is
+relatively straightforward to use in an existing code based on Godunov's method
+and can be constructed from standard compressible solvers for the gas-phase and
+a modified AUSM$^+$-up scheme for the particle phase.

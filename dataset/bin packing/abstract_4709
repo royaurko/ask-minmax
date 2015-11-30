@@ -1,0 +1,15 @@
+The main focus of this paper is a pair of new approximation algorithms for
+certain integer programs. First, for covering integer programs {min cx: Ax >=
+b, 0 <= x <= d} where A has at most k nonzeroes per row, we give a
+k-approximation algorithm. (We assume A, b, c, d are nonnegative.) For any k >=
+2 and eps>0, if P != NP this ratio cannot be improved to k-1-eps, and under the
+unique games conjecture this ratio cannot be improved to k-eps. One key idea is
+to replace individual constraints by others that have better rounding
+properties but the same nonnegative integral solutions; another critical
+ingredient is knapsack-cover inequalities. Second, for packing integer programs
+{max cx: Ax <= b, 0 <= x <= d} where A has at most k nonzeroes per column, we
+give a (2k^2+2)-approximation algorithm. Our approach builds on the iterated LP
+relaxation framework. In addition, we obtain improved approximations for the
+second problem when k=2, and for both problems when every A_{ij} is small
+compared to b_i. Finally, we demonstrate a 17/16-inapproximability for covering
+integer programs with at most two nonzeroes per column.

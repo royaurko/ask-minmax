@@ -1,0 +1,22 @@
+We consider the solution of a stochastic convex optimization problem
+$\mathbb{E}[f(x;\theta^*,\xi)]$ over a closed and convex set $X$ in a regime
+where $\theta^*$ is unavailable and $\xi$ is a suitably defined random
+variable. Instead, $\theta^*$ may be obtained through the solution of a
+learning problem that requires minimizing a metric $\mathbb{E}[g(\theta;\eta)]$
+in $\theta$ over a closed and convex set $\Theta$. Traditional approaches have
+been either sequential or direct variational approaches. In the case of the
+former, this entails the following steps: (i) a solution to the learning
+problem, namely $\theta^*$, is obtained; and (ii) a solution is obtained to the
+associated computational problem which is parametrized by $\theta^*$. Such
+avenues prove difficult to adopt particularly since the learning process has to
+be terminated finitely and consequently, in large-scale instances, sequential
+approaches may often be corrupted by error. On the other hand, a variational
+approach requires that the problem may be recast as a possibly non-monotone
+stochastic variational inequality problem in the $(x,\theta)$ space; but there
+are no known first-order stochastic approximation schemes are currently
+available for the solution of this problem. To resolve the absence of
+convergent efficient schemes, we present a coupled stochastic approximation
+scheme which simultaneously solves both the computational and the learning
+problems. The obtained schemes are shown to be equipped with almost sure
+convergence properties in regimes when the function $f$ is either strongly
+convex as well as merely convex.

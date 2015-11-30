@@ -1,0 +1,14 @@
+Consider a network of processors (sites) in which each site x has a finite
+set N(x) of neighbors. There is a transition function f that for each site x
+computes the next state \xi(x) from the states in N(x). But these transitions
+(updates) are applied in arbitrary order, one or many at a time. If the state
+of site x at time t is \eta(x,t) then let us define the sequence \zeta(x,0),
+\zeta(x,1), ... by taking the sequence \eta(x,0), \eta(x,1), ..., and deleting
+repetitions. The function f is said to have invariant histories if the sequence
+\zeta(x,i), (while it lasts, in case it is finite) depends only on the initial
+configuration, not on the order of updates.
+  This paper shows that though the invariant history property is typically
+undecidable, there is a useful simple sufficient condition, called
+commutativity: For any configuration, for any pair x,y of neighbors, if the
+updating would change both \xi(x) and \xi(y) then the result of updating first
+x and then y is the same as the result of doing this in the reverse order.

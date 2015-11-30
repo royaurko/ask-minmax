@@ -1,0 +1,15 @@
+Simulating a cellular automaton (CA) for t time-steps into the future
+requires t^2 serial computation steps or t parallel ones. However, certain CAs
+based on an Abelian group, such as addition mod 2, are termed ``linear''
+because they obey a principle of superposition. This allows them to be
+predicted efficiently, in serial time O(t) or O(log t) in parallel.
+  In this paper, we generalize this by looking at CAs with a variety of
+algebraic structures, including quasigroups, non-Abelian groups, Steiner
+systems, and others. We show that in many cases, an efficient algorithm exists
+even though these CAs are not linear in the previous sense; we term them
+``quasilinear.'' We find examples which can be predicted in serial time
+proportional to t, t log t, t log^2 t, and t^a for a < 2, and parallel time log
+t, log t log log t and log^2 t.
+  We also discuss what algebraic properties are required or implied by the
+existence of scaling relations and principles of superposition, and exhibit
+several novel ``vector-valued'' CAs.

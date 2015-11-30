@@ -1,0 +1,13 @@
+In a recent paper, Parikh and Boyd describe a method for solving a convex
+optimization problem, where each iteration involves evaluating a proximal
+operator and projection onto a subspace. In this paper we address the critical
+practical issues of how to select the proximal parameter in each iteration, and
+how to scale the original problem variables, so as the achieve reliable
+practical performance. The resulting method has been implemented as an
+open-source software package called POGS (Proximal Graph Solver), that targets
+multi-core and GPU-based systems, and has been tested on a wide variety of
+practical problems. Numerical results show that POGS can solve very large
+problems (with, say, more than a billion coefficients in the data), to modest
+accuracy in a few tens of seconds. As just one example, a radiation treatment
+planning problem with around 100 million coefficients in the data can be solved
+in a few seconds, as compared to around one hour with an interior-point method.

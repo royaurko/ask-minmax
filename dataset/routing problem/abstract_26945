@@ -1,0 +1,14 @@
+In the incremental knapsack problem ($\IK$), we are given a knapsack whose
+capacity grows weakly as a function of time. There is a time horizon of $T$
+periods and the capacity of the knapsack is $B_t$ in period $t$ for $t = 1,
+\ldots, T$. We are also given a set $S$ of $N$ items to be placed in the
+knapsack. Item $i$ has a value of $v_i$ and a weight of $w_i$ that is
+independent of the time period. At any time period $t$, the sum of the weights
+of the items in the knapsack cannot exceed the knapsack capacity $B_t$.
+Moreover, once an item is placed in the knapsack, it cannot be removed from the
+knapsack at a later time period. We seek to maximize the sum of (discounted)
+knapsack values over time subject to the capacity constraints. We first give a
+constant factor approximation algorithm for $\IK$, under mild restrictions on
+the growth rate of $B_t$ (the constant factor depends on the growth rate). We
+then give a PTAS for $\IIK$, the special case of $\IK$ with no discounting,
+when $T = O(\sqrt{\log N})$.

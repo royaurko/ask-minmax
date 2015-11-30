@@ -1,0 +1,25 @@
+Millimeter wave (mmWave) cellular systems will enable gigabit-per-second data
+rates thanks to the large bandwidth available at mmWave frequencies. To realize
+sufficient link margin, mmWave systems will employ directional beamforming with
+large antenna arrays at both the transmitter and receiver. Due to the high cost
+and power consumption of gigasample mixed-signal devices, mmWave precoding will
+likely be divided among the analog and digital domains. The large number of
+antennas and the presence of analog beamforming requires the development of
+mmWave-specific channel estimation and precoding algorithms. This paper
+develops an adaptive algorithm to estimate the mmWave channel parameters that
+exploits the poor scattering nature of the channel. To enable the efficient
+operation of this algorithm, a novel hierarchical multi-resolution codebook is
+designed to construct training beamforming vectors with different beamwidths.
+For single-path channels, an upper bound on the estimation error probability
+using the proposed algorithm is derived, and some insights into the efficient
+allocation of the training power among the adaptive stages of the algorithm are
+obtained. The adaptive channel estimation algorithm is then extended to the
+multi-path case relying on the sparse nature of the channel. Using the
+estimated channel, this paper proposes a new hybrid analog/digital precoding
+algorithm that overcomes the hardware constraints on the analog-only
+beamforming, and approaches the performance of digital solutions. Simulation
+results show that the proposed low-complexity channel estimation algorithm
+achieves comparable precoding gains compared to exhaustive channel training
+algorithms. The results also illustrate that the proposed algorithms can
+approach the coverage probability achieved by perfect channel knowledge even in
+the presence of interference.

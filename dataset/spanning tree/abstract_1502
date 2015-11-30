@@ -1,0 +1,14 @@
+The Robinson-Foulds (RF) metric is arguably the most widely used measure of
+phylogenetic tree similarity, despite its well-known shortcomings: For example,
+moving a single taxon in a tree can result in a tree that has maximum distance
+to the original one; but the two trees are identical if we remove the single
+taxon. To this end, we propose a natural extension of the RF metric that does
+not simply count identical clades but instead, also takes similar clades into
+consideration. In contrast to previous approaches, our model requires the
+matching between clades to respect the structure of the two trees, a property
+that the classical RF metric exhibits, too. We show that computing this
+generalized RF metric is, unfortunately, NP-hard. We then present a simple
+Integer Linear Program for its computation, and evaluate it by an
+all-against-all comparison of 100 trees from a benchmark data set. We find that
+matchings that respect the tree structure differ significantly from those that
+do not, underlining the importance of this natural condition.

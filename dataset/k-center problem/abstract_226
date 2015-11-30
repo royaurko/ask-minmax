@@ -1,0 +1,18 @@
+As datasets grow it becomes infeasible to process them completely with a
+desired model. For giant datasets, we frame the order in which computation is
+performed as a decision problem. The order is designed so that partial
+computations are of value and early stopping yields useful results. Our
+approach comprises two related tools: a decision framework to choose the order
+to perform computations, and an emulation framework to enable estimation of the
+unevaluated computations. The approach is applied to the problem of computing
+similarity matrices, for which the cost of computation grows quadratically with
+the number of objects. Reasoning about similarities before they are observed
+introduces difficulties as there is no natural space and hence comparisons are
+difficult. We solve this by introducing a computationally convenient form of
+multidimensional scaling we call `data directional scaling'. High quality
+estimation is possible with massively reduced computation from the naive
+approach, and can be scaled to very large matrices. The approach is applied to
+the practical problem of assessing genetic similarity in population genetics.
+The use of statistical reasoning in decision making for large scale problems
+promises to be an important tool in applying statistical methodology to Big
+Data.

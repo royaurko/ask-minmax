@@ -1,0 +1,15 @@
+This paper introduces an efficient, non-linear image adaptive filtering as a
+generalization of the standard spatial convolution of convolutional neural
+networks (CNNs). We build on the bilateral filtering operation, a commonly used
+edge-aware image processing technique. Our implementation of bilateral filters
+uses specialized data structures, and in this paper we demonstrate how these
+lead to generalizations and make the filters amendable to learning. This
+development enriches the convolutional operation found in CNNs, which becomes
+image adaptive, can process sparse input data, and produce continuous output.
+Our result also generalizes a class of densely connected graphical models with
+tractable mean field inference. It has previously been shown that mean field
+approximations in the subclass of models with Gaussian edge potentials reduce
+to a bilateral filtering operation. Here, we generalize this to the
+non-Gaussian case and allow highly parameterized potential functions. A diverse
+set of experiments validates the empirical performance and highlights the
+different aspects of the proposed operation.

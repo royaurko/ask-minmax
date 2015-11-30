@@ -1,0 +1,17 @@
+With the advent of autonomous robots with two- and three-dimensional scanning
+capabilities, classical visibility-based exploration methods from computational
+geometry have gained in practical importance. However, real-life laser scanning
+of useful accuracy does not allow the robot to scan continuously while in
+motion; instead, it has to stop each time it surveys its environment. This
+requirement was studied by Fekete, Klein and Nuechter for the subproblem of
+looking around a corner, but until now has not been considered in an online
+setting for whole polygonal regions.
+  We give the first algorithmic results for this important algorithmic problem
+that combines stationary art gallery-type aspects with watchman-type issues in
+an online scenario: We demonstrate that even for orthoconvex polygons, a
+competitive strategy can be achieved only for limited aspect ratio A (the ratio
+of the maximum and minimum edge length of the polygon), i.e., for a given lower
+bound on the size of an edge; we give a matching upper bound by providing an
+O(log A)-competitive strategy for simple rectilinear polygons, using the
+assumption that each edge of the polygon has to be fully visible from some scan
+point.

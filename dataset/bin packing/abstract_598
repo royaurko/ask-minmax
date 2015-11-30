@@ -1,0 +1,19 @@
+We study the following synchronous process that we call \emph {repeated
+balls-into-bins}. The process is started by assigning $n$ balls to $n$ bins in
+an arbitrary way. Then, in every subsequent round, one ball is chosen according
+to some fixed strategy (random, FIFO, etc) from each non-empty bin, and
+re-assigned to one of the $n$ bins uniformly at random. This process
+corresponds to a non-reversible Markov chain and our aim is to study its \emph
+{self-stabilization} properties with respect to the \emph{maximum (bin) load}
+and some related performance measures.
+  We define a configuration (i.e., a state) \emph{legitimate} if its maximum
+load is $O(\log n)$. We first prove that, starting from any legitimate
+configuration, the process will only take on legitimate configurations over a
+period of length bounded by \emph{any} polynomial in $n$, \emph{with high
+probability} (w.h.p.). Further we prove that, starting from \emph{any}
+configuration, the process converges to a legitimate configuration in linear
+time, w.h.p. This implies that the process is self-stabilizing w.h.p. and,
+moreover, that every ball traverses all bins in $O(n\log^2 n)$ rounds, w.h.p.
+The latter result can also be interpreted as an almost tight bound on the
+\emph{cover time} for the problem of \emph{parallel resource assignment} in the
+complete graph.

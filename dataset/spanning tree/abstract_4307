@@ -1,0 +1,16 @@
+In this paper we consider the following modification of the iterative search
+problem. We are given a tree $T$, so that a dynamic catalog $C(v)$ is
+associated with every tree node $v$. For any $x$ and for any node-to-root path
+$\pi$ in $T$, we must find the predecessor of $x$ in $\cup_{v\in \pi} C(v)$. We
+present a linear space dynamic data structure that supports such queries in
+$O(t(n)+|\pi|)$ time, where $t(n)$ is the time needed to search in one catalog
+and $|\pi|$ denotes the number of nodes on path $\pi$. We also consider the
+reporting variant of this problem, in which for any $x_1$, $x_2$ and for any
+path $\pi'$ all elements of $\cup_{v\in \pi'} (C(v)\cap [x_1,x_2])$ must be
+reported; here $\pi'$ denotes a path between an arbitrary node $v_0$ and its
+ancestor $v_1$. We show that such queries can be answered in $O(t(n)+|\pi'|+
+k)$ time, where $k$ is the number of elements in the answer. To illustrate
+applications of our technique, we describe the first dynamic data structures
+for the stabbing-max problem, the horizontal point location problem, and the
+orthogonal line-segment intersection problem with optimal $O(\log n/\log \log
+n)$ query time and poly-logarithmic update time.

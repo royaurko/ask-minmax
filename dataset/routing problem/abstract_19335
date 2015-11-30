@@ -1,0 +1,20 @@
+A general multisensor sequential change detection problem is considered, in
+which a number of possibly correlated sensors are monitored in real time and
+their joint distribution is determined by an underlying parameter vector; at
+some unknown time there is disorder in the system that changes an unknown
+subset of the components of the underlying parameter vector. The goal is to
+detect the change as soon as possible, while controlling the rate of false
+alarms. In this setup, we establish the second-order asymptotic optimality,
+under Lorden's criterion, of the GLR-CUSUM and two mixture-based CUSUM rules.
+That is, we show that, for any possible subset of affected components, their
+additional expected worst-case detection delay relative to the one that could
+be achieved if the affected subset was known remains bounded as the rate of
+false alarm goes to 0. This general framework incorporates the traditional
+multisensor setup in which only an unknown subset of sensors is affected by the
+change. The latter problem has a special structure which we exploit in order to
+obtain feasible modifications of the above schemes. In the special case that
+the change is known to affect exactly one sensor, GLR-CUSUM requires running in
+parallel the local CUSUM rule in each sensor and in this context we study the
+problem of specifying the local thresholds. Finally, we present the results of
+a simulation study in which we compare the proposed schemes with scalable
+detection rules that are only first-order asymptotically optimal.

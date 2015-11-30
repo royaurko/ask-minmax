@@ -1,0 +1,13 @@
+Warnsdorffs rule for a knights tour is a heuristic, i.e., it is a rule that
+does not produce the desired result all the time. It is a classic example of a
+greedy method in that it is based on a series of locally optimal choices. This
+note describes an analysis that determines how good the heuristic is on an 8 X
+8 chessboard. The order of appearance in a permutation of the eight possible
+moves a knight can make determines the path the knight takes. A computer
+analysis is done of the 8! permutations of the order of a knights moves in
+Warnsdorffs rule on an 8 X 8 chessboard for tours starting on each of the 64
+squares. Whenever a tie occurs for moves to vertices that have the lowest
+degree, the first of these vertices encountered in the programming loop is
+chosen. The number of permutations of the 8! total that yield non-Hamiltonian
+paths is tallied. This will be the same value if we consistently choose the
+last of these vertices encountered.

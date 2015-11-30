@@ -1,0 +1,13 @@
+Communication fabrics play a key role in the correctness and performance of
+modern multi-core processors and systems-on-chip. To enable formal
+verification, a recent trend is to use high-level micro-architectural models to
+capture designers' intent about the communication and processing of messages.
+Intel proposed the xMAS language to support the formal definition of executable
+specifications of micro-architectures. We formalise the semantics of xMAS in
+ACL2. Our formalisation represents the computation of the values of all wires
+of a design. Our main function computes a set of possible routing targets for
+each message and whether a message can make progress according to the current
+network state. We prove several properties on the semantics, including
+termination, non-emptiness of routing, and correctness of progress conditions.
+Our current effort focuses on a basic subset of the entire xMAS language, which
+includes queues, functions, and switches.

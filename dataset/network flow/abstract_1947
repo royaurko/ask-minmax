@@ -1,0 +1,20 @@
+We present an algorithm for multi-hop routing and scheduling of requests in
+wireless networks in the \sinr\ model. The goal of our algorithm is to maximize
+the throughput or maximize the minimum ratio between the flow and the demand.
+  Our algorithm partitions the links into buckets. Every bucket consists of a
+set of links that have nearly equivalent reception powers. We denote the number
+of nonempty buckets by $\sigdiv$. Our algorithm obtains an approximation ratio
+of $O(\sigdiv \cdot \log n)$, where $n$ denotes the number of nodes. For the
+case of linear powers $\sigdiv =1$, hence the approximation ratio of the
+algorithm is $O(\log n)$. This is the first practical approximation algorithm
+for linear powers with an approximation ratio that depends only on $n$ (and not
+on the max-to-min distance ratio).
+  If the transmission power of each link is part of the input (and arbitrary),
+then $\sigdiv = O(\log\Gamma + \log \Delta)$, where $\Gamma$ denotes the ratio
+of the max-to-min power, and $\Delta$ denotes the ratio of the max-to-min
+distance. Hence, the approximation ratio is $O(\log n \cdot (\log\Gamma + \log
+\Delta))$.
+  Finally, we consider the case that the algorithm needs to assign powers to
+each link in a range $[\pmin,\pmax]$. An extension of the algorithm to this
+case achieves an approximation ratio of $O[(\log n + \log \log \Gamma) \cdot
+(\log\Gamma + \log \Delta)]$.

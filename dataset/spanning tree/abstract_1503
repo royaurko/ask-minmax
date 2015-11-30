@@ -1,0 +1,15 @@
+Most of major algorithms for phylogenetic tree reconstruction assume that
+sequences in the analyzed set either do not have any offspring, or that parent
+sequences can maximally mutate into just two descendants. The graph resulting
+from such assumptions forms therefore a binary tree, with all the nodes labeled
+as leaves. However, these constraints are unduly restrictive as there are
+numerous data sets with multiple offspring of the same ancestors. Here we
+propose a solution to analyze and visualize such sets in a more intuitive
+manner. The method reconstructs phylogenetic tree by assigning the sequences
+with offspring as internal nodes, and the sequences without offspring as leaf
+nodes. In the resulting tree there is no constraint for the number of adjacent
+nodes, which means that the solution tree needs not to be a binary graph only.
+The subsequent derivation of evolutionary pathways, and pair-wise mutations,
+are then an algorithmically straightforward, with edge's length corresponding
+directly to the number of mutations. Other tree reconstruction algorithms can
+be extended in the proposed manner, to also give unbiased topologies.

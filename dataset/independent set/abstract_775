@@ -1,0 +1,16 @@
+We describe an application of the MultiNest algorithm to gravitational wave
+data analysis. MultiNest is a multimodal nested sampling algorithm designed to
+efficiently evaluate the Bayesian evidence and return posterior probability
+densities for likelihood surfaces containing multiple secondary modes. The
+algorithm employs a set of live points which are updated by partitioning the
+set into multiple overlapping ellipsoids and sampling uniformly from within
+them. This set of live points climbs up the likelihood surface through nested
+iso-likelihood contours and the evidence and posterior distributions can be
+recovered from the point set evolution. The algorithm is model-independent in
+the sense that the specific problem being tackled enters only through the
+likelihood computation, and does not change how the live point set is updated.
+In this paper, we consider the use of the algorithm for gravitational wave data
+analysis by searching a simulated LISA data set containing two non-spinning
+supermassive black hole binary signals. The algorithm is able to rapidly
+identify all the modes of the solution and recover the true parameters of the
+sources to high precision.

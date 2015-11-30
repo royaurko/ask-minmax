@@ -1,0 +1,23 @@
+In contrast to today's IP-based host-oriented Internet architecture,
+Information-Centric Networking (ICN) emphasizes content by making it directly
+addressable and routable. Named Data Networking (NDN) architecture is an
+instance of ICN that is being developed as a candidate next-generation Internet
+architecture. By opportunistically caching content within the network (in
+routers), NDN appears to be well-suited for large-scale content distribution
+and for meeting the needs of increasingly mobile and bandwidth-hungry
+applications that dominate today's Internet.
+  One key feature of NDN is the requirement for each content object to be
+digitally signed by its producer. Thus, NDN should be, in principle, immune to
+distributing fake (aka "poisoned") content. However, in practice, this poses
+two challenges for detecting fake content in NDN routers: (1) overhead due to
+signature verification and certificate chain traversal, and (2) lack of trust
+context, i.e., determining which public keys are trusted to verify which
+content. Because of these issues, NDN does not force routers to verify content
+signatures, which makes the architecture susceptible to content poisoning
+attacks.
+  This paper explores root causes of, and some cures for, content poisoning
+attacks in NDN. In the process, it becomes apparent that meaningful mitigation
+of content poisoning is contingent upon a network-layer trust management
+architecture, elements of which we construct while carefully justifying
+specific design choices. This work represents the initial effort towards
+comprehensive trust management for NDN.

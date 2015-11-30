@@ -1,0 +1,19 @@
+The alternating direction method of multipliers (ADMM) is widely used in
+solving structured convex optimization problems due to its superior practical
+performance. On the theoretical side however, a counterexample was shown in [7]
+indicating that the multi-block ADMM for minimizing the sum of $N$ $(N\geq 3)$
+convex functions with $N$ block variables linked by linear constraints may
+diverge. It is therefore of great interest to investigate further sufficient
+conditions on the input side which can guarantee convergence for the
+multi-block ADMM. The existing results typically require the strong convexity
+on parts of the objective. In this paper, we present convergence and
+convergence rate results for the multi-block ADMM applied to solve certain
+$N$-block $(N\geq 3)$ convex minimization problems without requiring strong
+convexity. Specifically, we prove the following two results: (1) the
+multi-block ADMM returns an $\epsilon$-optimal solution within
+$O(1/\epsilon^2)$ iterations by solving an associated perturbation to the
+original problem; (2) the multi-block ADMM returns an $\epsilon$-optimal
+solution within $O(1/\epsilon)$ iterations when it is applied to solve a
+certain sharing problem, under the condition that the augmented Lagrangian
+function satisfies the Kurdyka-Lojasiewicz property, which essentially covers
+most convex optimization models except for some pathological cases.

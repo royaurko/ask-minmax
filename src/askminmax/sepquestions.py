@@ -68,7 +68,7 @@ def ask_separating_question(db, wrong, correct):
             s += ' in the DB (0/1)? '
             response = eval(input(s))
             break
-        except ValueError:
+        except (SyntaxError, NameError, ValueError):
             helper.error_one_zero()
     if response:
         # Separating question is already in our DB; get their hash values
@@ -178,11 +178,14 @@ def parse_negative_list_questions(db, wrong, correct, question_idx_to_id):
         try:
             question_string = 'Enter question numbers that are NO for ' \
                        + correct['name'] + ' and YES for ' + wrong['name'] + ':\n '
-            negative_list = list(eval(input(question_string)))
-            negative_question_id_list = [question_idx_to_id[x] for x in negative_list]
+            negative_list = eval(input(question_string))
+            if type(negative_list) is int:
+                negative_question_id_list = [question_idx_to_id[negative_list]]
+            else:
+                negative_question_id_list = [question_idx_to_id[x] for x in negative_list]
             break
-        except ValueError:
-            helper.error_spaces()
+        except (SyntaxError, NameError, ValueError):
+            helper.error_comma()
         except KeyError:
             helper.error_key()
     negative_question_hash_list = list()
@@ -204,11 +207,14 @@ def parse_positive_list_questions(db, wrong, correct, question_idx_to_id):
         try:
             question_string = 'Enter question numbers that are YES for ' \
                        + correct['name'] + ' and NO for ' + wrong['name'] + ':\n '
-            positive_list = list(eval(input(question_string)))
-            positive_question_id_list = [question_idx_to_id[x] for x in positive_list]
+            positive_list = eval(input(question_string))
+            if type(positive_list) is int:
+                positive_question_id_list = [question_idx_to_id[positive_list]]
+            else:
+                positive_question_id_list = [question_idx_to_id[x] for x in positive_list]
             break
-        except ValueError:
-            helper.error_spaces()
+        except (SyntaxError, NameError, ValueError):
+            helper.error_comma()
         except KeyError:
             helper.error_key()
     positive_question_hash_list = list()

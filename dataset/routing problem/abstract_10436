@@ -1,0 +1,17 @@
+We consider the problem of searching for an object on a line at an unknown
+distance OPT from the original position of the searcher, in the presence of a
+cost of d for each time the searcher changes direction. This is a
+generalization of the well-studied linear-search problem. We describe a
+strategy that is guaranteed to find the object at a cost of at most 9*OPT + 2d,
+which has the optimal competitive ratio 9 with respect to OPT plus the minimum
+corresponding additive term. Our argument for upper and lower bound uses an
+infinite linear program, which we solve by experimental solution of an infinite
+series of approximating finite linear programs, estimating the limits, and
+solving the resulting recurrences. We feel that this technique is interesting
+in its own right and should help solve other searching problems. In particular,
+we consider the star search or cow-path problem with turn cost, where the
+hidden object is placed on one of m rays emanating from the original position
+of the searcher. For this problem we give a tight bound of
+(1+(2(m^m)/((m-1)^(m-1))) OPT + m ((m/(m-1))^(m-1) - 1) d. We also discuss
+tradeoff between the corresponding coefficients, and briefly consider
+randomized strategies on the line.

@@ -1,0 +1,25 @@
+This thesis is concerned with the quantitative assessment of security in
+software. More specifically, it tackles the problem of efficient computation of
+channel capacity, the maximum amount of confidential information leaked by
+software, measured in Shannon entropy or R\'{e}nyi's min-entropy.
+  Most approaches to computing channel capacity are either efficient and return
+only (possibly very loose) upper bounds, or alternatively are inefficient but
+precise; few target realistic programs. In this thesis, we present a novel
+approach to the problem by reducing it to a model counting problem on
+first-order logic, which we name Model Counting Modulo Theories or #SMT for
+brevity.
+  For quantitative security, our contribution is twofold. First, on the
+theoretical side we establish the connections between measuring confidentiality
+leaks and fundamental verification algorithms like Symbolic Execution, SMT
+solvers and DPLL. Second, exploiting these connections, we develop novel
+#SMT-based techniques to compute channel capacity, which achieve both accuracy
+and efficiency. These techniques are scalable to real-world programs, and
+illustrative case studies include C programs from Linux kernel, a Java program
+from a European project and anonymity protocols.
+  For formal verification, our contribution is also twofold. First, we
+introduce and study a new research problem, namely #SMT, which has other
+potential applications beyond computing channel capacity, such as returning
+multiple-counterexamples for Bounded Model Checking or automated test
+generation. Second, we propose an alternative approach for Bounded Model
+Checking using classical Symbolic Execution, which can be parallelised to
+leverage modern multi-core and distributed architecture.

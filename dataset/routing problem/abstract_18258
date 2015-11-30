@@ -1,0 +1,21 @@
+The classical Feedback Vertex Set problem asks, for a given undirected graph
+G and an integer k, to find a set of at most k vertices that hits all the
+cycles in the graph G. Feedback Vertex Set has attracted a large amount of
+research in the parameterized setting, and subsequent kernelization and
+fixed-parameter algorithms have been a rich source of ideas in the field.
+  In this paper we consider a more general and difficult version of the
+problem, named Subset Feedback Vertex Set (SUBSET-FVS in short) where an
+instance comes additionally with a set S ? V of vertices, and we ask for a set
+of at most k vertices that hits all simple cycles passing through S. Because of
+its applications in circuit testing and genetic linkage analysis SUBSET-FVS was
+studied from the approximation algorithms perspective by Even et al.
+[SICOMP'00, SIDMA'00].
+  The question whether the SUBSET-FVS problem is fixed-parameter tractable was
+posed independently by Kawarabayashi and Saurabh in 2009. We answer this
+question affirmatively. We begin by showing that this problem is
+fixed-parameter tractable when parametrized by |S|. Next we present an
+algorithm which reduces the given instance to 2^k n^O(1) instances with the
+size of S bounded by O(k^3), using kernelization techniques such as the
+2-Expansion Lemma, Menger's theorem and Gallai's theorem. These two facts allow
+us to give a 2^O(k log k) n^O(1) time algorithm solving the Subset Feedback
+Vertex Set problem, proving that it is indeed fixed-parameter tractable.

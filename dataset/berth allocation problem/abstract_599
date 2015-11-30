@@ -1,0 +1,19 @@
+We study the problem of a buyer (aka auctioneer) who gains stochastic rewards
+by procuring multiple units of a service or item from a pool of heterogeneous
+strategic agents. The reward obtained for a single unit from an allocated agent
+depends on the inherent quality of the agent; the agent's quality is fixed but
+unknown. Each agent can only supply a limited number of units (capacity of the
+agent). The costs incurred per unit and capacities are private information of
+the agents. The auctioneer is required to elicit costs as well as capacities
+(making the mechanism design bidimensional) and further, learn the qualities of
+the agents as well, with a view to maximize her utility. Motivated by this, we
+design a bidimensional multi-armed bandit procurement auction that seeks to
+maximize the expected utility of the auctioneer subject to incentive
+compatibility and individual rationality while simultaneously learning the
+unknown qualities of the agents. We first assume that the qualities are known
+and propose an optimal, truthful mechanism 2D-OPT for the auctioneer to elicit
+costs and capacities. Next, in order to learn the qualities of the agents in
+addition, we provide sufficient conditions for a learning algorithm to be
+Bayesian incentive compatible and individually rational. We finally design a
+novel learning mechanism, 2D-UCB that is stochastic Bayesian incentive
+compatible and individually rational.

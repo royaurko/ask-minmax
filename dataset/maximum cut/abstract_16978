@@ -1,0 +1,20 @@
+Diffusion processes are widely used for modelling real-world phenomena.
+Except for select cases however, analytical expressions do not exist for a
+diffusion process' transitional probabilities. It is proposed that the cumulant
+truncation procedure can be applied to predict the evolution of the cumulants
+of the system. These predictions may be subsequently used within the
+saddlepoint procedure to approximate the transitional probabilities. An
+approximation to the likelihood of the diffusion system is then easily derived.
+The method is applicable for a wide-range of diffusion systems - including
+multivariate, irreducible diffusion systems that existing estimation schemes
+struggle with. Not only is the accuracy of the saddlepoint comparable with the
+Hermite expansion - a popular approximation to a diffusion system's
+transitional density - it also appears to be less susceptible to increasing
+lags between successive samplings of the diffusion process. Furthermore, the
+saddlepoint is more stable in regions of the parameter space that are far from
+the maximum likelihood estimates. Hence, the saddlepoint method can be
+naturally incorporated within a Markov Chain Monte Carlo (MCMC) routine in
+order to provide reliable estimates and credibility intervals of the diffusion
+model's parameters. The method is applied to fit the Heston model to daily
+observations of the S&P 500 and VIX indices from December 2009 to November
+2010.

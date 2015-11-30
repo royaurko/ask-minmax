@@ -1,0 +1,18 @@
+A non-parametric smoothing method is presented that reduces noise in
+multi-wavelength imaging data sets. Using Principle Component Analysis
+(hereafter PCA) to associate pixels according to their $ugriz$-band colors,
+smoothing is done over pixels with a similar location in PCA space. This method
+smoothes over pixels with similar color, which reduces the amount of mixing of
+different colors within the smoothing region. The method is tested using a mock
+galaxy with signal-to-noise levels and color characteristics of SDSS data. When
+comparing this method to smoothing methods using a fixed radial profile or an
+adaptive radial profile, the chi^2-like statistic for the method presented here
+is smaller. The method shows a small dependence on input parameters. Running
+this method on SDSS data and fitting theoretical stellar population models to
+the smoothed data of the mock galaxy and SDSS data, shows that the method
+reduces scatter in the best-fit stellar population analysis parameters, when
+compared to cases where no smoothing is done. For an area centered on the star
+forming region of the mock galaxy, the median and standard deviation of the
+PCA-smoothed data is 7 Myr (+/- 3 Myr), as compared to 10 Myr (+/- 1 Myr) for a
+simple radial average, where the noise-free true value is 7.5 Myr (+/- 3.7
+Myr).

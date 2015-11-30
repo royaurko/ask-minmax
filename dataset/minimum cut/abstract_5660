@@ -1,0 +1,17 @@
+Dynamics in a distributed system are self-stabilizing if they are guaranteed
+to reach a stable state regardless of how the system is initialized. Game
+dynamics are uncoupled if each player's behavior is independent of the other
+players' preferences. Recognizing an equilibrium in this setting is a
+distributed computational task. Self-stabilizing uncoupled dynamics, then, have
+both resilience to arbitrary initial states and distribution of knowledge. We
+study these dynamics by analyzing their behavior in a bounded-recall
+synchronous environment. We determine, for every "size" of game, the minimum
+number of periods of play that stochastic (randomized) players must recall in
+order for uncoupled dynamics to be self-stabilizing. We also do this for the
+special case when the game is guaranteed to have unique best replies. For
+deterministic players, we demonstrate two self-stabilizing uncoupled protocols.
+One applies to all games and uses three steps of recall. The other uses two
+steps of recall and applies to games where each player has at least four
+available actions. For uncoupled deterministic players, we prove that a single
+step of recall is insufficient to achieve self-stabilization, regardless of the
+number of available actions.

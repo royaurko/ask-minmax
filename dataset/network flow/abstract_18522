@@ -1,0 +1,18 @@
+We refine a stimulating study by Sarvotham et al. [2005] which highlighted
+the influence of peak transmission rate on network burstiness. From TCP packet
+headers, we amalgamate packets into sessions where each session is
+characterized by a 5-tuple (S, D, R, Peak R, Initiation T)=(total payload,
+duration, average transmission rate, peak transmission rate, initiation time).
+After careful consideration, a new definition of peak rate is required. Unlike
+Sarvotham et al. [2005] who segmented sessions into two groups labelled alpha
+and beta, we segment into 10 sessions according to the empirical quantiles of
+the peak rate variable as a demonstration that the beta group is far from
+homogeneous. Our more refined segmentation reveals additional structure that is
+missed by segmentation into two groups. In each segment, we study the
+dependence structure of (S, D, R) and find that it varies across the groups.
+Furthermore, within each segment, session initiation times are well
+approximated by a Poisson process whereas this property does not hold for the
+data set taken as a whole. Therefore, we conclude that the peak rate level is
+important for understanding structure and for constructing accurate simulations
+of data in the wild. We outline a simple method of simulating network traffic
+based on our findings.

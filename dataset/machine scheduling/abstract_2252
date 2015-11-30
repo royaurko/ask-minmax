@@ -1,0 +1,13 @@
+Message Passing Interfaces (MPI) plays an important role in parallel
+computing. Many parallel applications are implemented as MPI programs. The
+existing methods of bug detection for MPI programs have the shortage of
+providing both input and non-determinism coverage, leading to missed bugs. In
+this paper, we employ symbolic execution to ensure the input coverage, and
+propose an on-the-fly schedule algorithm to reduce the interleaving
+explorations for non-determinism coverage, while ensuring the soundness and
+completeness. We have implemented our approach as a tool, called MPISE, which
+can automatically detect the deadlock and runtime bugs in MPI programs. The
+results of the experiments on benchmark programs and real world MPI programs
+indicate that MPISE finds bugs effectively and efficiently. In addition, our
+tool also provides diagnostic information and replay mechanism to help
+understanding bugs.

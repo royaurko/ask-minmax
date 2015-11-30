@@ -1,0 +1,13 @@
+Pure, or type-free, Linear Logic proof nets are Turing complete once
+cut-elimination is considered as computation. We introduce modal
+impredicativity as a new form of impredicativity causing the complexity of
+cut-elimination to be problematic from a complexity point of view. Modal
+impredicativity occurs when, during reduction, the conclusion of a residual of
+a box b interacts with a node that belongs to the proof net inside another
+residual of b. Technically speaking, superlazy reduction is a new notion of
+reduction that allows to control modal impredicativity. More specifically,
+superlazy reduction replicates a box only when all its copies are opened. This
+makes the overall cost of reducing a proof net finite and predictable.
+Specifically, superlazy reduction applied to any pure proof nets takes
+primitive recursive time. Moreover, any primitive recursive function can be
+computed by a pure proof net via superlazy reduction.

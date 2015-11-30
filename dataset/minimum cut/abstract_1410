@@ -1,0 +1,15 @@
+A broadcast graph is a connected graph, $G=(V,E)$, $ |V |=n$, in which each
+vertex can complete broadcasting of one message within at most $t=\lceil \log
+n\rceil$ time units. A minimum broadcast graph on $n$ vertices is a broadcast
+graph with the minimum number of edges over all broadcast graphs on $n$
+vertices. The cardinality of the edge set of such a graph is denoted by $B(n)$.
+In this paper we construct a new broadcast graph with
+  $B(n) \le (k+1)N -(t-\frac{k}{2}+2)2^{k}+t-k+2$, for $n=N=(2^{k}-1)2^{t+1-k}$
+and
+  $B(n) \le (k+1-p)n -(t-\frac{k}{2}+p+2)2^{k}+t-k -(p-2)2^{p}$, for $2^{t} <
+n<(2^{k}-1)2^{t+1-k}$, where $t \geq 7$, $2 \le k \le \lfloor t/2 \rfloor -1$
+for even $n$ and $2 \le k \le \lceil t/2 \rceil -1$ for odd $n$, $d=N-n$, $x=
+\lfloor \frac{d}{2^{t+1-k}} \rfloor$ and $ p = \lfloor \log_{2}{(x+1)} \rfloor$
+if $x>0$ and $p=0$ if $x=0$.
+  The new bound is an improvement upon the bound presented by Harutyunyan and
+Liestman (2012) for odd values of $n$.

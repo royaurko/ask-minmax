@@ -1,0 +1,21 @@
+This paper proposes solutions to three issues pertaining to the estimation of
+finite mixture models with an unknown number of components: the
+non-identifiability induced by overfitting the number of components, the mixing
+limitations of standard Markov Chain Monte Carlo (MCMC) sampling techniques,
+and the related label switching problem. An overfitting approach is used to
+estimate the number of components in a finite mixture model via a Zmix
+algorithm. Zmix provides a bridge between multidimensional samplers and test
+based estimation methods, whereby priors are chosen to encourage extra groups
+to have weights approaching zero. MCMC sampling is made possible by the
+implementation of prior parallel tempering, an extension of parallel tempering.
+Zmix can accurately estimate the number of components, posterior parameter
+estimates and allocation probabilities given a sufficiently large sample size.
+The results will reflect uncertainty in the final model and will report the
+range of possible candidate models and their respective estimated probabilities
+from a single run. Label switching is resolved with a computationally
+light-weight method, Zswitch, developed for overfitted mixtures by exploiting
+the intuitiveness of allocation-based relabelling algorithms and the precision
+of label-invariant loss functions. Four simulation studies are included to
+illustrate Zmix and Zswitch, as well as three case studies from the literature.
+All methods are available as part of the R package Zmix, which can currently be
+applied to univariate Gaussian mixture models

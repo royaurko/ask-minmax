@@ -1,0 +1,17 @@
+In this paper we consider the mutual exclusion problem on a multiple access
+channel. Mutual exclusion is one of the fundamental problems in distributed
+computing. In the classic version of this problem, n processes perform a
+concurrent program which occasionally triggers some of them to use shared
+resources, such as memory, communication channel, device, etc. The goal is to
+design a distributed algorithm to control entries and exits to/from the shared
+resource in such a way that in any time there is at most one process accessing
+it. We consider both the classic and a slightly weaker version of mutual
+exclusion, called ep-mutual-exclusion, where for each period of a process
+staying in the critical section the probability that there is some other
+process in the critical section is at most ep. We show that there are channel
+settings, where the classic mutual exclusion is not feasible even for
+randomized algorithms, while ep-mutual-exclusion is. In more relaxed channel
+settings, we prove an exponential gap between the makespan complexity of the
+classic mutual exclusion problem and its weaker ep-exclusion version. We also
+show how to guarantee fairness of mutual exclusion algorithms, i.e., that each
+process that wants to enter the critical section will eventually succeed.

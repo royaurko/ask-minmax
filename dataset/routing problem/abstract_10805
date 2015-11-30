@@ -1,0 +1,21 @@
+In massive multiple-input multiple-output (MIMO) systems that operate with
+high bandwidths, it may not be power efficient to have a high-resolution
+analog-to-digital converter (ADC) for each antenna element. In this paper, a
+near maximum likelihood (nML) detector for uplink multiuser massive MIMO
+systems is proposed where each antenna is connected to a pair of one-bit ADCs,
+i.e., one for each real and imaginary component of the baseband signal. To
+achieve low complexity in the proposed nML detector, a strict constraint on the
+possible transmitted symbols in the original maximum likelihood (ML) detection
+problem is relaxed to formulate an ML estimation problem. Then, the ML
+estimation problem is converted into a convex optimization problem which can be
+efficiently solved. After obtaining the ML estimate by solving the convex
+problem, the base station can perform simple symbol-by-symbol detection for the
+transmitted signals from multiple users. The minimum required number of receive
+antennas for detectors using one-bit ADCs to work is also discussed. Numerical
+results show that the proposed nML detector is efficient enough to
+simultaneously support multiple uplink users adopting higher-order
+constellations, e.g., 16 quadrature amplitude modulation. Since our detector
+makes use of the channel as part of the decoding, an ML channel estimation
+technique with one-bit ADCs that shares the same structure with our proposed
+nML detector is also developed. The proposed detector and channel estimator
+provide a complete low power solution for the uplink of a massive MIMO system.

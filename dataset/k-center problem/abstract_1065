@@ -1,0 +1,17 @@
+The finite intrinsic nature of the most distributed algorithms gives us this
+ability to use model checking tools for verification of this type of
+algorithms. In this paper, I attempt to use NuSMV as a model checking tool for
+verifying necessary properties of Peterson's algorithm for leader election
+problem in a unidirectional asynchronous ring topology. Peterson's algorithm
+for an asynchronous ring supposes that each node in the ring has a unique ID
+and also a queue for dealing with storage problem. By considering that the
+queue can have any combination of values, a constructed model for a ring with
+only four nodes will have more than a billion states. Although it seems that
+model checking is not a feasible approach for this problem, I attempt to use
+several effective limiting assumptions for hiring formal model checking
+approach without losing the correct functionality of the Peterson's algorithm.
+These enforced limiting assumptions target the degree of freedom in the model
+checking process and significantly decrease the CPU time, memory usage and the
+total number of page faults. By deploying these limitations, the number of
+nodes can be increased from four to eight in the model checking process with
+NuSMV.

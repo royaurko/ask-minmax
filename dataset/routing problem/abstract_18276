@@ -1,0 +1,24 @@
+Consider a linear model $Y=X\beta+z$, where $X=X_{n,p}$ and $z\sim N(0,I_n)$.
+The vector $\beta$ is unknown but is sparse in the sense that most of its
+coordinates are $0$. The main interest is to separate its nonzero coordinates
+from the zero ones (i.e., variable selection). Motivated by examples in
+long-memory time series (Fan and Yao [Nonlinear Time Series: Nonparametric and
+Parametric Methods (2003) Springer]) and the change-point problem (Bhattacharya
+[In Change-Point Problems (South Hadley, MA, 1992) (1994) 28-56 IMS]), we are
+primarily interested in the case where the Gram matrix $G=X'X$ is nonsparse but
+sparsifiable by a finite order linear filter. We focus on the regime where
+signals are both rare and weak so that successful variable selection is very
+challenging but is still possible. We approach this problem by a new procedure
+called the covariate assisted screening and estimation (CASE). CASE first uses
+a linear filtering to reduce the original setting to a new regression model
+where the corresponding Gram (covariance) matrix is sparse. The new covariance
+matrix induces a sparse graph, which guides us to conduct multivariate
+screening without visiting all the submodels. By interacting with the signal
+sparsity, the graph enables us to decompose the original problem into many
+separated small-size subproblems (if only we know where they are!). Linear
+filtering also induces a so-called problem of information leakage, which can be
+overcome by the newly introduced patching technique. Together, these give rise
+to CASE, which is a two-stage screen and clean [Fan and Song Ann. Statist. 38
+(2010) 3567-3604; Wasserman and Roeder Ann. Statist. 37 (2009) 2178-2201]
+procedure, where we first identify candidates of these submodels by patching
+and screening, and then re-examine each candidate to remove false positives.

@@ -1,0 +1,17 @@
+Metagenomics characterizes microbial communities by random shotgun sequencing
+of DNA isolated directly from an environment of interest. An essential step in
+computational metagenome analysis is taxonomic sequence assignment, which
+allows us to identify the sequenced community members and to reconstruct
+taxonomic bins with sequence data for the individual taxa. We describe an
+algorithm and the accompanying software, taxator-tk, which performs taxonomic
+sequence assignments by fast approximate determination of evolutionary
+neighbors from sequence similarities. Taxator-tk was precise in its taxonomic
+assignment across all ranks and taxa for a range of evolutionary distances and
+for short sequences. In addition to the taxonomic binning of metagenomes, it is
+well suited for profiling microbial communities from metagenome samples
+becauseit identifies bacterial, archaeal and eukaryotic community members
+without being affected by varying primer binding strengths, as in marker gene
+amplification, or copy number variations of marker genes across different taxa.
+Taxator-tk has an efficient, parallelized implementation that allows the
+assignment of 6 Gb of sequence data per day on a standard multiprocessor system
+with ten CPU cores and microbial RefSeq as the genomic reference data.

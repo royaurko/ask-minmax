@@ -1,0 +1,23 @@
+We present a new empirical pseudopotential (EPM) calculation approach to
+simulate the million atom nanostructured semiconductor devices under potential
+bias using the periodic boundary conditions. To treat the non-equilibrium
+condition, instead of directly calculating the scattering states from the
+source and drain, we calculate the stationary states by the linear combination
+of bulk band method and then decompose the stationary wave function into source
+and drain injecting scattering states according to an approximated top of the
+barrier splitting (TBS) scheme based on physical insight of ballistic and
+tunneling transport. The decomposed electronic scattering states are then
+occupied according to the source/drain Fermi-Levels to yield the occupied
+electron density which is then used to solve the potential, forming a
+self-consistent loop. The TBS is tested in an one-dimensional effective mass
+model by comparing with the direct scattering state calculation results. It is
+also tested in a three-dimensional 22 nm double gate ultra-thin-body
+field-effect transistor study, by comparing the TBS-EPM result with the
+non-equilibrium Green's function tight-binding result. We expected the TBS
+scheme will work whenever the potential in the barrier region is smoother than
+the wave function oscillations and if it does not have local minimum, thus
+there is no multiple scattering as in a resonant tunneling diode, and when a
+three-dimensional problem can be represented as a quasi-one-dimensional
+problem, e.g., in a variable separation approximation. Using our approach, a
+million atom non-equilibrium nanostructure device can be simulated with EPM on
+a single processor computer.

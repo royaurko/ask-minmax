@@ -1,0 +1,15 @@
+Devices equipped with accelerometer sensors such as today's mobile devices
+can make use of motion to exchange information. A typical example for shared
+motion is shaking of two devices which are held together in one hand. Deriving
+a shared secret (key) from shared motion, e.g. for device pairing, is an
+obvious application for this. Only the keys need to be exchanged between the
+peers and neither the motion data nor the features extracted from it. This
+makes the pairing fast and easy. For this, each device generates an information
+signal (key) independently of each other and, in order to pair, they should be
+identical. The key is essentially derived by quantizing certain well
+discriminative features extracted from the accelerometer data after an implicit
+synchronization. In this paper, we aim at finding a small set of effective
+features which enable a significantly simpler quantization procedure than the
+prior art. Our tentative results with authentic accelerometer data show that
+this is possible with a competent accuracy ($76$%) and key strength (entropy
+approximately $15$ bits).

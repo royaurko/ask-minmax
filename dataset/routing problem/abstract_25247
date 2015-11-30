@@ -1,0 +1,13 @@
+We introduce a simple tool called the wavelet (or, r-wavelet) scheme.
+Wavelets deals with coordination among processes which are at most r hops away
+of each other. We present a selfstabilizing solution for this scheme. Our
+solution requires no underlying structure and works in arbritrary anonymous
+networks, i.e., no process identifier is required. Moreover, our solution works
+under any (even unfair) daemon. Next, we use the wavelet scheme to design
+self-stabilizing layer clocks. We show that they provide an efficient device in
+the design of local coordination problems at distance r, i.e., r-barrier
+synchronization and r-local resource allocation (LRA) such as r-local mutual
+exclusion (LME), r-group mutual exclusion (GME), and r-Reader/Writers. Some
+solutions to the r-LRA problem (e.g., r-LME) also provide transformers to
+transform algorithms written assuming any r-central daemon into algorithms
+working with any distributed daemon.

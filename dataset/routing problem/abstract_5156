@@ -1,0 +1,14 @@
+Consider a transportation problem with sets of sources and sinks. There are
+profits and prices on the edges. The goal is to maximize the profit while
+meeting the following constraints; the total flow going out of a source must
+not exceed its capacity and the total price of the incoming flow on a sink must
+not exceed its budget. This problem is closely related to the generalized flow
+problem.
+  We propose an auction based primal dual approximation algorithm to solve the
+problem. The complexity is $O(\epsilon^{-1}(n^2+ n\log{m})m\log U)$ where $n$
+is the number of sources, $m$ is the number of sinks, $U$ is the ratio of the
+maximum profit/price to the minimum profit/price.
+  We also show how to generalize the scheme to solve a more general version of
+the problem, where there are edge capacities and/or the profit function is
+concave and piece-wise linear. The complexity of the algorithm depends on the
+number of linear segments, termed ${\cal L}$, of the profit function.

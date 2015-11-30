@@ -1,0 +1,14 @@
+We are given an equal number of mobile robotic agents, and distinct target
+locations. Each agent has simple integrator dynamics, a limited communication
+range, and knowledge of the position of every target. We address the problem of
+designing a distributed algorithm that allows the group of agents to divide the
+targets among themselves and, simultaneously, leads each agent to reach its
+unique target. We do not require connectivity of the communication graph at any
+time. We introduce a novel assignment-based algorithm with the following
+features: initial assignments and robot motions follow a greedy rule, and
+distributed refinements of the assignment exploit an implicit circular ordering
+of the targets. We prove correctness of the algorithm, and give worst-case
+asymptotic bounds on the time to complete the assignment as the environment
+grows with the number of agents. We show that among a certain class of
+distributed algorithms, our algorithm is asymptotically optimal. The analysis
+utilizes results on the Euclidean traveling salesperson problem.

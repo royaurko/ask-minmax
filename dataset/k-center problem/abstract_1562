@@ -1,0 +1,23 @@
+This paper considers the problem of estimating the channel response (or
+Green's function) between multiple source-receiver pairs. Typically, the
+channel responses are estimated one-at-a-time: a single source sends out a
+known probe signal, the receiver measures the probe signal convolved with the
+channel response, and the responses are recovered using deconvolution. In this
+paper, we show that if the channel responses are sparse and the probe signals
+are random, then we can significantly reduce the total amount of time required
+to probe the channels by activating all of the sources simultaneously. With all
+sources activated simultaneously, the receiver measures a superposition of all
+the channel responses convolved with the respective probe signals. Separating
+this cumulative response into individual channel responses can be posed as a
+linear inverse problem.
+  We show that channel response separation is possible (and stable) even when
+the probing signals are relatively short in spite of the corresponding linear
+system of equations becoming severely underdetermined. We derive a theoretical
+lower bound on the length of the source signals that guarantees that this
+separation is possible with high probability. The bound is derived by putting
+the problem in the context of finding a sparse solution to an underdetermined
+system of equations, and then using mathematical tools from the theory of
+compressive sensing. Finally, we discuss some practical applications of these
+results, which include forward modeling for seismic imaging, channel
+equalization in multiple-input multiple-output communication, and increasing
+the field-of-view in an imaging system by using coded apertures.

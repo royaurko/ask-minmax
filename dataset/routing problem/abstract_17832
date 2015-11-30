@@ -1,0 +1,12 @@
+We study synthesis of optimal schedulers for the linear temporal logic (LTL)
+with future discounting. The logic, introduced by Almagor, Boker and Kupferman,
+is a quantitative variant of LTL in which an event in the far future has only
+discounted contribution to a truth value (that is a real number in the unit
+interval [0,1]). The precise problem we study---it naturally arises e.g. in
+search for a scheduler that recovers from an internal error state as soon as
+possible---is the following: given a Kripke frame, a formula and a number in
+[0, 1] called a margin, find a path of the Kripke frame that is optimal with
+respect to the formula up to the prescribed margin (a truly optimal path may
+not exist). We present an algorithm for the problem: it relies on a translation
+to quantitative automata and their optimal value problem, a technique that is
+potentially useful also in other settings of optimality synthesis.

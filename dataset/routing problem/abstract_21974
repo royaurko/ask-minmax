@@ -1,0 +1,21 @@
+Rapidly-exploring random trees (RRTs) are popular in motion planning because
+they find solutions efficiently to single-query problems. Optimal RRTs (RRT*s)
+extend RRTs to the problem of finding the optimal solution, but in doing so
+asymptotically find the optimal path from the initial state to every state in
+the planning domain. This behaviour is not only inefficient but also
+inconsistent with their single-query nature.
+  For problems seeking to minimize path length, the subset of states that can
+improve a solution can be described by a prolate hyperspheroid. We show that
+unless this subset is sampled directly, the probability of improving a solution
+becomes arbitrarily small in large worlds or high state dimensions. In this
+paper, we present an exact method to focus the search by directly sampling this
+subset.
+  The advantages of the presented sampling technique are demonstrated with a
+new algorithm, Informed RRT*. This method retains the same probabilistic
+guarantees on completeness and optimality as RRT* while improving the
+convergence rate and final solution quality. We present the algorithm as a
+simple modification to RRT* that could be further extended by more advanced
+path-planning algorithms. We show experimentally that it outperforms RRT* in
+rate of convergence, final solution cost, and ability to find difficult
+passages while demonstrating less dependence on the state dimension and range
+of the planning problem.

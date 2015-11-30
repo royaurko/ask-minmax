@@ -1,0 +1,20 @@
+The present paper studies two particle management strategies for dynamically
+adaptive Cartesian grids at hands of a particle-in-cell code. One holds the
+particles within the grid cells, the other within the grid vertices. The
+fundamental challenge for the algorithmic strategies results from the fact that
+particles may run through the grid without velocity constraints. To facilitate
+this, we rely on multiscale grid representations. They allow us to lift and
+drop particles between different spatial resolutions. We call this cell-based
+strategy particle in tree (PIT). Our second approach assigns particles to
+vertices describing a dual grid (PIDT) and augments the lifts and drops with
+multiscale linked cells.
+  Our experiments validate the two schemes at hands of an electrostatic
+particle-in-cell code by retrieving the dispersion relation of Langmuir waves
+in a thermal plasma. They reveal that different particle and grid
+characteristics favour different realisations. However, the possibility that
+particles can tunnel through an arbitrary number of grid cells implies that we
+need an all-to-all communication per time step. This constraints the
+scalability. We show that the merger of an analysed tree grammar with PIDT
+allows us to predict particle movements among several levels and to avoid parts
+of this global communication a priori. It is capable to outperform several
+established implementations based upon trees and/or space-filling curves.

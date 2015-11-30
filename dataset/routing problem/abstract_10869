@@ -1,0 +1,26 @@
+We examine the complexity of the online Dictionary Matching with One Gap
+Problem (DMOG) which is the following. Preprocess a dictionary $D$ of $d$
+patterns, where each pattern contains a special gap symbol that can match any
+string, so that given a text that arrives online, a character at a time, we can
+report all of the patterns from $D$ that are suffixes of the text that has
+arrived so far, before the next character arrives. In more general versions the
+gap symbols are associated with bounds determining the possible lengths of
+matching strings. Finding efficient algorithmic solutions for (online) DMOG has
+proven to be a difficult algorithmic challenge. We demonstrate that the
+difficulty in obtaining efficient solutions for the DMOG problem even, in the
+offline setting, can be traced back to the infamous 3SUM conjecture.
+Interestingly, our reduction deviates from the known reduction paths that
+follow from 3SUM. In particular, most reductions from 3SUM go through the
+set-disjointness problem, which corresponds to the problem of preprocessing a
+graph to answer edge-triangles queries. We use a new path of reductions by
+considering the complementary, although structurally very different,
+vertex-triangles queries. Using this new path we show a conditional lower bound
+of $\Omega(\delta(G_D)+op)$ time per text character, where $G_D$ is a bipartite
+graph that captures the structure of $D$, $\delta(G_D)$ is the degeneracy of
+this graph, and $op$ is the output size. We also provide matching upper-bounds
+(up to sub-polynomial factors) for the vertex-triangles problem, and then
+extend these techniques to the online DMOG problem. In particular, we introduce
+algorithms whose time cost depends linearly on $\delta(G_D)$. Our algorithms
+make use of graph orientations, together with some additional techniques.
+Finally, when $\delta(G_D)$ is large we are able to obtain even more efficient
+solutions.

@@ -1,0 +1,23 @@
+The detection of change-points in heterogeneous sequences is a statistical
+challenge with applications across a wide variety of fields. In bioinformatics,
+a vast amount of methodology exists to identify an ideal set of change-points
+for detecting Copy Number Variation (CNV). While considerable efficient
+algorithms are currently available for finding the best segmentation of the
+data in CNV, relatively few approaches consider the important problem of
+assessing the uncertainty of the change-point location. Asymptotic and
+stochastic approaches exist but often require additional model assumptions to
+speed up the computations, while exact methods have quadratic complexity which
+usually are intractable for large datasets of tens of thousands points or more.
+In this paper, we suggest an exact method for obtaining the posterior
+distribution of change-points with linear complexity, based on a constrained
+hidden Markov model. The methods are implemented in the R package postCP, which
+uses the results of a given change-point detection algorithm to estimate the
+probability that each observation is a change-point. We present the results of
+the package on a publicly available CNV data set (n=120). Due to its
+frequentist framework, postCP obtains less conservative confidence intervals
+than previously published Bayesian methods, but with linear complexity instead
+of quadratic. Simulations showed that postCP provided comparable loss to a
+Bayesian MCMC method when estimating posterior means, specifically when
+assessing larger-scale changes, while being more computationally efficient. On
+another high-resolution CNV data set (n=14,241), the implementation processed
+information in less than one second on a mid-range laptop computer.

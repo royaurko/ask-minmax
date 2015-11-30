@@ -1,0 +1,15 @@
+Model order reduction (MOR) techniques play a crucial role in the
+computer-aided design of modern integrated circuits, where they are used to
+reduce the size of parasitic networks. Unfortunately, the efficient reduction
+of passive networks with many ports is still an open problem. Existing
+techniques do not scale well with the number of ports, and lead to dense
+reduced models that burden subsequent simulations. In this paper, we propose
+TurboMOR, a novel MOR technique for the efficient reduction of passive RC
+networks. TurboMOR is based on moment-matching, achieved through efficient
+congruence transformations based on Householder reflections. A novel feature of
+TurboMOR is the block-diagonal structure of the reduced models, that makes them
+more efficient than the dense models produced by existing techniques. Moreover,
+the model structure allows for an insightful interpretation of the reduction
+process in terms of system theory. Numerical results show that TurboMOR scales
+more favourably than existing techniques in terms of reduction time, simulation
+time and memory consumption.

@@ -1,0 +1,16 @@
+Assume that two robots are located at the centre of a unit disk. Their goal
+is to evacuate from the disk through an exit at an unknown location on the
+boundary of the disk. At any time the robots can move anywhere they choose on
+the disk, independently of each other, with maximum speed $1$. The robots can
+cooperate by exchanging information whenever they meet. We study algorithms for
+the two robots to minimize the evacuation time: the time when both robots reach
+the exit.
+  In [CGGKMP14] the contributors gave an algorithm defining trajectories for the two
+robots yielding evacuation time at most $5.740$ and also proved that any
+algorithm has evacuation time at least $3+ \frac{\pi}{4} + \sqrt{2} \approx
+5.199$. We improve both the upper and lower bounds on the evacuation time of a
+unit disk. Namely, we present a new non-trivial algorithm whose evacuation time
+is at most $5.628$ and show that any algorithm has evacuation time at least $3+
+\frac{\pi}{6} + \sqrt{3} \approx 5.255$. To achieve the upper bound, we
+designed an algorithm which non-intuitively proposes a forced meeting between
+the two robots, even if the exit has not been found by either of them.

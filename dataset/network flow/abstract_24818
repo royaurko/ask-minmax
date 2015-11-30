@@ -1,0 +1,13 @@
+We address the problem of uplink co-operative reception with constraints on
+both backhaul bandwidth and the receiver aperture, or number of antenna signals
+that can be processed. The problem is cast as a network utility (weighted sum
+rate) maximization subject to computational complexity and architectural
+bandwidth sharing constraints. We show that a relaxed version of the problem is
+convex, and can be solved via a dual-decomposition. The proposed solution is
+distributed in that each cell broadcasts a set of {\em demand prices} based on
+the data sharing requests they receive. Given the demand prices, the algorithm
+determines an antenna/cell ordering and antenna-selection for each scheduled
+user in a cell. This algorithm, referred to as {\em LiquidMAAS}, iterates
+between the preceding two steps. Simulations of realistic network scenarios
+show that the algorithm exhibits fast convergence even for systems with large
+number of cells.

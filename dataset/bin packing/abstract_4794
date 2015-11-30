@@ -1,0 +1,20 @@
+We consider the "Offline Ad Slot Scheduling" problem, where advertisers must
+be scheduled to "sponsored search" slots during a given period of time.
+Advertisers specify a budget constraint, as well as a maximum cost per click,
+and may not be assigned to more than one slot for a particular search.
+  We give a truthful mechanism under the utility model where bidders try to
+maximize their clicks, subject to their personal constraints. In addition, we
+show that the revenue-maximizing mechanism is not truthful, but has a Nash
+equilibrium whose outcome is identical to our mechanism. As far as we can tell,
+this is the first treatment of sponsored search that directly incorporates both
+multiple slots and budget constraints into an analysis of incentives.
+  Our mechanism employs a descending-price auction that maintains a solution to
+a certain machine scheduling problem whose job lengths depend on the price, and
+hence is variable over the auction. The price stops when the set of bidders
+that can afford that price pack exactly into a block of ad slots, at which
+point the mechanism allocates that block and continues on the remaining slots.
+To prove our result on the equilibrium of the revenue-maximizing mechanism, we
+first show that a greedy algorithm suffices to solve the revenue-maximizing
+linear program; we then use this insight to prove that bidders allocated in the
+same block of our mechanism have no incentive to deviate from bidding the fixed
+price of that block.

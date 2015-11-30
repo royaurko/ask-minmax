@@ -1,0 +1,17 @@
+This paper presents a simple, efficient, and high-order accurate sliding-mesh
+interface approach to the spectral difference (SD) method. We demonstrate the
+approach by solving the two-dimensional compressible Navier-Stokes equations on
+quadrilateral grids. This approach is an extension of the straight mortar
+method originally designed for stationary domains by Kopriva, it employs curved
+dynamic mortars on sliding-mesh interfaces to couple rotating and stationary
+domains. On the nonconforming sliding-mesh interfaces, the related variables
+are first projected from cell faces to mortars to compute common fluxes, and
+then the common fluxes are projected back from the mortars to the cell faces to
+ensure conservation. To verify the spatial order of accuracy of the
+sliding-mesh spectral difference (SSD) method, both inviscid and viscous flow
+cases are tested. It is shown that the SSD method preserves the high-order
+accuracy of the SD method. Meanwhile, the SSD method is found to be very
+efficient in terms of computational cost. This novel sliding-mesh interface
+method is very suitable for parallel processing with domain decomposition. It
+can be applied to a wide range of problems, such as the aerodynamics of
+rotorcraft, wind turbines, and oscillating wing wind power generators, etc.

@@ -1,0 +1,14 @@
+We present a systematic methodology to develop high order accurate numerical
+approaches for linear advection problems. These methods are based on evolving
+parts of the jet of the solution in time, and are thus called jet schemes.
+Through the tracking of characteristics and the use of suitable Hermite
+interpolations, high order is achieved in an optimally local fashion, i.e. the
+update for the data at any grid point uses information from a single grid cell
+only. We show that jet schemes can be interpreted as advect-and-project
+processes in function spaces, where the projection step minimizes a stability
+functional. Furthermore, this function space framework makes it possible to
+systematically inherit update rules for the higher derivatives from the ODE
+solver for the characteristics. Jet schemes of orders up to five are applied in
+numerical benchmark tests, and systematically compared with classical WENO
+finite difference schemes. It is observed that jet schemes tend to possess a
+higher accuracy than WENO schemes of the same order.

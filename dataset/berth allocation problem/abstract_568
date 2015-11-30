@@ -1,0 +1,18 @@
+This paper studies the topic modeling problem of tagged documents and images.
+Higher-order relations among tagged documents and images are major and
+ubiquitous characteristics, and play positive roles in extracting reliable and
+interpretable topics. In this paper, we propose the tag-topic models (TTM) to
+depict such higher-order topic structural dependencies within the Markov random
+field (MRF) framework. First, we use the novel factor graph representation of
+latent Dirichlet allocation (LDA)-based topic models from the MRF perspective,
+and present an efficient loopy belief propagation (BP) algorithm for
+approximate inference and parameter estimation. Second, we propose the factor
+hypergraph representation of TTM, and focus on both pairwise and higher-order
+relation modeling among tagged documents and images. Efficient loopy BP
+algorithm is developed to learn TTM, which encourages the topic labeling
+smoothness among tagged documents and images. Extensive experimental results
+confirm the incorporation of higher-order relations to be effective in
+enhancing the overall topic modeling performance, when compared with current
+state-of-the-art topic models, in many text and image mining tasks of broad
+interests such as word and link prediction, document classification, and tag
+recommendation.

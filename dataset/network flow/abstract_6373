@@ -1,0 +1,16 @@
+Given a spatio-temporal network (ST network) where edge properties vary with
+time, a time-sub-interval minimum spanning tree (TSMST) is a collection of
+minimum spanning trees of the ST network, where each tree is associated with a
+time interval. During this time interval, the total cost of tree is least among
+all the spanning trees. The TSMST problem aims to identify a collection of
+distinct minimum spanning trees and their respective time-sub-intervals under
+the constraint that the edge weight functions are piecewise linear. This is an
+important problem in ST network application domains such as wireless sensor
+networks (e.g., energy efficient routing). Computing TSMST is challenging
+because the ranking of candidate spanning trees is non-stationary over a given
+time interval. Existing methods such as dynamic graph algorithms and kinetic
+data structures assume separable edge weight functions. In contrast, we propose
+novel algorithms to find TSMST for large ST networks by accounting for both
+separable and non-separable piecewise linear edge weight functions. The
+algorithms are based on the ordering of edges in edge-order-intervals and
+intersection points of edge weight functions.

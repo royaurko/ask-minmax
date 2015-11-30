@@ -1,0 +1,19 @@
+This paper considers the problem of optimally deploying omnidirectional
+sensors, with potentially limited sensing radius, in a network-like
+environment. This model provides a compact and effective description of complex
+environments as well as a proper representation of road or river networks. We
+present a two-step procedure based on a discrete-time gradient ascent algorithm
+to find a local optimum for this problem. The first step performs a coarse
+optimization where sensors are allowed to move in the plane, to vary their
+sensing radius and to make use of a reduced model of the environment called
+collapsed network. It is made up of a finite discrete set of points,
+barycenters, produced by collapsing network edges. Sensors can be also
+clustered to reduce the complexity of this phase. The sensors' positions found
+in the first step are then projected on the network and used in the second
+finer optimization, where sensors are constrained to move only on the network.
+The second step can be performed on-line, in a distributed fashion, by sensors
+moving in the real environment, and can make use of the full network as well as
+of the collapsed one. The adoption of a less constrained initial optimization
+has the merit of reducing the negative impact of the presence of a large number
+of local optima. The effectiveness of the presented procedure is illustrated by
+a simulated deployment problem in an airport environment.

@@ -1,0 +1,11 @@
+This paper presents the requirements and design of a Timing Synchronization
+System (TSS) for the Continuous Electron Beam Accelerator Facility (CEBAF)
+control system at Thomas Jefferson National Accelerator Facility. A clock
+module has been designed which resides in a VME crate. The clock module can be
+a communications master or a slave depending on its configuration, which is
+software and jumper selectable. As a master, the clock module sends out
+messages in response to an external synchronization signal over a serial fiber
+optic line. As a slave, it receives the messages and interrupts an associated
+computer in its VME crate. The application that motivated the development of
+the TSS, the Accelerator 30 Hz Measurement System, will be described.
+Operational experience with the TSS will also be discussed.

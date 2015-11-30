@@ -1,0 +1,19 @@
+The ring and polynomial learning with errors problems (Ring-LWE and Poly-LWE)
+have been proposed as hard problems to form the basis for cryptosystems, and
+various security reductions to hard lattice problems have been presented. So
+far these problems have been stated for general (number) rings but have only
+been closely examined for cyclotomic number rings. In this paper, we state and
+examine the Ring-LWE problem for general number rings and demonstrate provably
+weak instances of Ring-LWE. We construct an explicit family of number fields
+for which we have an efficient attack. We demonstrate the attack in both theory
+and practice, providing code and running times for the attack. The attack runs
+in time linear in q, where q is the modulus.
+  Our attack is based on the attack on Poly-LWE which was presented in
+[Eisentr\"ager-Hallgren-Lauter]. We extend the EHL-attack to apply to a larger
+class of number fields, and show how it applies to attack Ring-LWE for a
+heuristically large class of fields. Certain Ring-LWE instances can be
+transformed into Poly-LWE instances without distorting the error too much, and
+thus provide the first weak instances of the Ring-LWE problem. We also provide
+additional examples of fields which are vulnerable to our attacks on Poly-LWE,
+including power-of-$2$ cyclotomic fields, presented using the minimal
+polynomial of $\zeta_{2^n} \pm 1$.

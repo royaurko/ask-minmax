@@ -1,0 +1,20 @@
+The goal of branch length estimation in phylogenetic inference is to estimate
+the divergence time between a set of sequences based on compositional
+differences between them. A number of software is currently available
+facilitating branch lengths estimation for homogeneous and stationary
+evolutionary models. Homogeneity of the evolutionary process imposes fixed
+rates of evolution throughout the tree. In complex data problems this
+assumption is likely to put the results of the analyses in question.
+  In this work we propose an algorithm for parameter and branch lengths
+inference in the discrete-time Markov processes on trees. This broad class of
+nonhomogeneous models comprises the general Markov model and all its submodels,
+including both stationary and nonstationary models.
+  Here, we adapted the well-known Expectation-Maximization algorithm and
+present a detailed performance study of this approach for a selection of
+nonhomogeneous evolutionary models. We conducted an extensive performance
+assessment on multiple sequence alignments simulated under a variety of
+settings. We demonstrated high accuracy of the tool in parameter estimation and
+branch lengths recovery, proving the method to be a valuable tool for
+phylogenetic inference in real life problems. $\empar$ is an open-source C++
+implementation of the methods introduced in this paper and is the first tool
+designed to handle nonhomogeneous data.

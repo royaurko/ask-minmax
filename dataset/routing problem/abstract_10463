@@ -1,0 +1,20 @@
+Smoothing is essential to many oceanographic, meteorological and hydrological
+applications. The interval smoothing problem updates all desired states within
+a time interval using all available observations. The fixed-lag smoothing
+problem updates only a fixed number of states prior to the observation at
+current time. The fixed-lag smoothing problem is, in general, thought to be
+computationally faster than a fixed-interval smoother, and can be an
+appropriate approximation for long interval-smoothing problems. In this paper,
+we use an ensemble-based approach to fixed-interval and fixed-lag smoothing,
+and synthesize two algorithms. The first algorithm produces a linear time
+solution to the interval smoothing problem with a fixed factor, and the second
+one produces a fixed-lag solution that is independent of the lag length.
+Identical-twin experiments conducted with the Lorenz-95 model show that for lag
+lengths approximately equal to the error doubling time, or for long intervals
+the proposed methods can provide significant computational savings. These
+results suggest that ensemble methods yield both fixed-interval and fixed-lag
+smoothing solutions that cost little additional effort over filtering and model
+propagation, in the sense that in practical ensemble application the additional
+increment is a small fraction of either filtering or model propagation costs.
+We also show that fixed-interval smoothing can perform as fast as fixed-lag
+smoothing and may be advantageous when memory is not an issue.

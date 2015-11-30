@@ -1,0 +1,11 @@
+We present parallel algorithms for constructing and traversing sparse octrees
+on graphics processing units (GPUs). The algorithms are based on parallel-scan
+and sort methods. To test the performance and feasibility, we implemented them
+in CUDA in the form of a gravitational tree-code which completely runs on the
+GPU.(The code is publicly available at:
+http://castle.strw.leidenuniv.nl/software.html) The tree construction and
+traverse algorithms are portable to many-core devices which have support for
+CUDA or OpenCL programming languages. The gravitational tree-code outperforms
+tuned CPU code during the tree-construction and shows a performance improvement
+of more than a factor 20 overall, resulting in a processing rate of more than
+2.8 million particles per second.

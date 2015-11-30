@@ -1,0 +1,12 @@
+We consider solving the Laplace-Beltrami problem on a smooth two dimensional
+surface embedded into a three dimensional space meshed with tetrahedra. The
+mesh does not respect the surface and thus the surface cuts through the
+elements. We consider a Galerkin method based on using the restrictions of
+continuous piecewise linears defined on the tetrahedra to the surface as trial
+and test functions.
+  The resulting discrete method may be severely ill-conditioned, and the main
+purpose of this paper is to suggest a remedy for this problem based on adding a
+consistent stabilization term to the original bilinear form. We show optimal
+estimates for the condition number of the stabilized method independent of the
+location of the surface. We also prove optimal a priori error estimates for the
+stabilized method.

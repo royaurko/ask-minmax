@@ -1,0 +1,16 @@
+Pallalel GPGPU computing for lattice QCD simulations has a bottleneck on the
+GPU to GPU data communication due to the lack of the direct data exchanging
+facility. In this work we investigate the performance of quark solver using the
+restricted additive Schwarz (RAS) preconditioner on a low cost GPU cluster. We
+expect that the RAS preconditioner with appropriate domaindecomposition and
+task distribution reduces the communication bottleneck. The GPU cluster we
+constructed is composed of four PC boxes, two GPU cards are attached to each
+box, and we have eight GPU cards in total. The compute nodes are connected with
+rather slow but low cost Gigabit-Ethernet. We include the RAS preconditioner in
+the single-precision part of the mixedprecision nested-BiCGStab algorithm and
+the single-precision task is distributed to the multiple GPUs. The benchmarking
+is done with the O(a)-improved Wilson quark on a randomly generated gauge
+configuration with the size of $32^4$. We observe a factor two improvment on
+the solver performance with the RAS precoditioner compared to that without the
+preconditioner and find that the improvment mainly comes from the reduction of
+the communication bottleneck as we expected.

@@ -1,0 +1,22 @@
+An important step in unveiling the relation between network structure and
+dynamics defined on networks is to detect communities, and numerous methods
+have been developed separately to identify community structure in different
+classes of networks, such as unipartite networks, bipartite networks, and
+directed networks. We show that both unipartite and directed networks can be
+represented as bipartite networks, and their modularity is completely
+consistent with that for bipartite networks, the detection of modular structure
+on which can be reformulated as modularity maximization. To optimize the
+bipartite modularity, we develop a modified adaptive genetic algorithm (MAGA),
+which is shown to be especially efficient for community structure detection.
+The high efficiency of the MAGA is based on the following three improvements we
+make. First, we introduce a different measure for the informativeness of a
+locus instead of the standard deviation, which can exactly determine which loci
+mutate. This measure is the bias between the distribution of a locus over the
+current population and the uniform distribution of the locus, i.e., the
+Kullback-Leibler divergence between them. Second, we develop a reassignment
+technique for differentiating the informative state a locus has attained from
+the random state in the initial phase. Third, we present a modified mutation
+rule which by incorporating related operation can guarantee the convergence of
+the MAGA to the global optimum and can speed up the convergence process.
+Experimental results show that the MAGA outperforms existing methods in terms
+of modularity for both bipartite and unipartite networks.

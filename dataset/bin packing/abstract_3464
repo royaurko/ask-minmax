@@ -1,0 +1,18 @@
+We are interested in the following problem: given an open, bounded domain
+$\Omega \subset \mathbb{R}^2$, what is the largest constant $\alpha =
+\alpha(\Omega) > 0$ such that there exist an infinite sequence of disks $B_1,
+B_2, \dots, B_N, \dots \subset \mathbb{R}^2$ and a sequence $(n_i)$ with $n_i
+\in \left\{1,2\right\}$ such that $$ \sup_{N \in \mathbb{N}}{N^{\alpha}\left\|
+\chi_{\Omega} -
+\sum_{i=1}^{N}{(-1)^{n_i}\chi_{B_i}}\right\|_{L^1(\mathbb{R}^2)}} < \infty,$$
+where $\chi$ denotes the characteristic function? We prove that certain
+(somewhat peculiar) domains $\Omega \subset \mathbb{R}^2$ satisfy the property
+with $\alpha = 0.53$. For these domains there exists a sequence of points
+$(x_i)_{i=1}^{\infty}$ in $\Omega$ with weights $(a_i)_{i=1}^{\infty}$ such
+that for all harmonic functions $u:\mathbb{R}^2 \rightarrow \mathbb{R}$ $$
+\left|\int_{\Omega}{u(x)dx} - \sum_{i=1}^{N}{a_i u(x_i)}\right| \leq
+C_{\Omega}\frac{\|u\|_{L^{\infty}(\Omega)}}{N^{0.53}},$$ where $C_{\Omega}$
+depends only on $\Omega$. This gives a Quasi-Monte-Carlo method for harmonic
+functions which improves on the probabilistic Monte-Carlo bound
+$\|u\|_{L^{2}(\Omega)}/N^{0.5}$ \textit{without} introducing a dependence on
+the total variation. We do not know which decay rates are optimal.

@@ -1,0 +1,24 @@
+In the problem of location anonymity of the events exposed to a global
+eavesdropper, we highlight and analyze some aspects that are missing in the
+prior work, which is especially relevant for the quality of secure sensing in
+delay-intolerant applications monitoring rare and spatially sparse events, and
+deployed as large wireless sensor networks with single data collector. We
+propose an efficient scheme for generating fake network traffic to disguise the
+real event notification. The efficiency of the scheme that provides statistical
+source location anonymity is achieved by partitioning network nodes randomly
+into several dummy source groups. Members of the same group collectively
+emulate both temporal and spatial distribution of the event. Under such
+dummy-traffic framework of the source anonymity protection, we aim to better
+model the global eavesdropper, especially her way of using statistical tests to
+detect the real event, and to present the quality of the location protection as
+relative to the adversary's strength. In addition, our approach aims to reduce
+the per-event work spent to generate the fake traffic while, most importantly,
+providing a guaranteed latency in reporting the event. The latency is
+controlled by decoupling the routing from the fake-traffic schedule. A good
+dummy source group design also provides a robust protection of event bursts.
+This is achieved at the expense of the significant overhead as the number of
+dummy source groups must be increased to the reciprocal value of the false
+alarm parameter used in the statistical test. We believe that the proposed
+source anonymity protection strategy, and the evaluation framework, are well
+justified by the abundance of the applications that monitor a rare event with
+known temporal statistics, and uniform spatial distribution.

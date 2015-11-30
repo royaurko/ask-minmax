@@ -1,0 +1,13 @@
+In this paper we present $LCSk$++: a new metric for measuring the similarity
+of long strings, and provide an algorithm for its efficient computation. With
+ever increasing size of strings occuring in practice, e.g. large genomes of
+plants and animals, classic algorithms such as Longest Common Subsequence (LCS)
+fail due to demanding computational complexity. Recently, Benson et al. defined
+a similarity metric named $LCSk$. By relaxing the requirement that the
+$k$-length substrings should not overlap, we extend their definition into a new
+metric. An efficient algorithm is presented which computes $LCSk$++ with
+complexity of $O((|X|+|Y|)\log(|X|+|Y|))$ for strings $X$ and $Y$ under a
+realistic random model. The algorithm has been designed with implementation
+simplicity in mind. Additionally, we describe how it can be adjusted to compute
+$LCSk$ as well, which gives an improvement of the $O(|X|\dot|Y|)$ algorithm
+presented in the original $LCSk$ paper.

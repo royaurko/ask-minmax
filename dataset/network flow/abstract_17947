@@ -1,0 +1,22 @@
+We analyze the effect of interference on the convergence rate of average
+consensus algorithms, which iteratively compute the measurement average by
+message passing among nodes. It is usually assumed that these algorithms
+converge faster with a greater exchange of information (i.e., by increased
+network connectivity) in every iteration. However, when interference is taken
+into account, it is no longer clear if the rate of convergence increases with
+network connectivity. We study this problem for randomly-placed
+consensus-seeking nodes connected through an interference-limited network. We
+investigate the following questions: (a) How does the rate of convergence vary
+with increasing communication range of each node? and (b) How does this result
+change when each node is allowed to communicate with a few selected far-off
+nodes? When nodes schedule their transmissions to avoid interference, we show
+that the convergence speed scales with $r^{2-d}$, where $r$ is the
+communication range and $d$ is the number of dimensions. This scaling is the
+result of two competing effects when increasing $r$: Increased schedule length
+for interference-free transmission vs. the speed gain due to improved
+connectivity. Hence, although one-dimensional networks can converge faster from
+a greater communication range despite increased interference, the two effects
+exactly offset one another in two-dimensions. In higher dimensions, increasing
+the communication range can actually degrade the rate of convergence. Our
+results thus underline the importance of factoring in the effect of
+interference in the design of distributed estimation algorithms.

@@ -1,0 +1,24 @@
+Given an undirected graph G=(V,E) and subset of terminals T \subseteq V, the
+element-connectivity of two terminals u,v \in T is the maximum number of u-v
+paths that are pairwise disjoint in both edges and non-terminals V \setminus T
+(the paths need not be disjoint in terminals). Element-connectivity is more
+general than edge-connectivity and less general than vertex-connectivity. Hind
+and Oellermann gave a graph reduction step that preserves the global
+element-connectivity of the graph. We show that this step also preserves local
+connectivity, that is, all the pairwise element-connectivities of the
+terminals. We give two applications of this reduction step to connectivity and
+network design problems:
+  1. Given a graph G and disjoint terminal sets T_1, T_2, ..., T_m, we seek a
+maximum number of element-disjoint Steiner forests where each forest connects
+each T_i. We prove that if each T_i is k-element-connected then there exist
+\Omega(\frac{k}{\log h \log m}) element-disjoint Steiner forests, where h =
+|\bigcup_i T_i|. If G is planar (or more generally, has fixed genus), we show
+that there exist \Omega(k) Steiner forests. Our proofs are constructive, giving
+poly-time algorithms to find these forests; these are the first non-trivial
+algorithms for packing element-disjoint Steiner Forests.
+  2. We give a very short and intuitive proof of a spider-decomposition theorem
+of Chuzhoy and Khanna in the context of the single-sink k-vertex-connectivity
+problem; this yields a simple and alternative analysis of an O(k \log n)
+approximation.
+  Our results highlight the effectiveness of the element-connectivity reduction
+step; we believe it will find more applications in the future.

@@ -1,0 +1,18 @@
+Register allocation has long been formulated as a graph coloring problem,
+coloring the conflict graph with physical registers. Such a formulation does
+not fully capture the goal of the allocation, which is to minimize the traffic
+between registers and memory. Linear scan has been proposed as an alternative
+to graph coloring, but in essence, it can be viewed as a greedy algorithm for
+graph coloring: coloring the vertices not in the order of their degrees, but in
+the order of their occurence in the program. Thus it suffers from almost the
+same constraints as graph coloring. In this article, I propose a new method of
+register allocation based on the ideas of model transformer semantics (MTS) and
+static cache replacement (SCR). Model transformer semantics captures the
+semantics of registers and the stack. Static cache replacement relaxes the
+assumptions made by graph coloring and linear scan, aiming directly at reducing
+register-memory traffic. The method explores a much larger solution space than
+that of graph coloring and linear scan, thus providing more opportunities of
+optimization. It seamlessly performs live range splitting, an optimization
+found in extensions to graph coloring and linear scan. Also, it simplifies the
+compiler, and its semantics-based approach provides possibilities of
+simplifying the formal verification of compilers.

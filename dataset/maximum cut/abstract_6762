@@ -1,0 +1,18 @@
+Link adaptation is a crucial part of many modern communications systems,
+allowing the system to adapt the transmission and reception strategies to
+changes in channel conditions. One of the fundamental components of the link
+adaptation mechanism is signal to noise ratio (SNR) estimation, measuring the
+instantaneous (mostly post processing) SNR at the receiver. That is, the SNR at
+the decoder input, which is an important metric for the prediction of decoder
+performance. In linearly decoded MIMO, which is the common MIMO decoding
+strategy, the post processing SNR is well defined. However, this is not the
+case in optimal maximum likelihood (ML) decoding applied to spatial
+multiplexing (SM). This gap is interesting since ML decoded SM is gaining ever
+growing interest in recent research and practice due to the rapid increase in
+computation power, and available near optimal low complexity schemes. In this
+paper we close the gap and provide SNR estimation schemes for ML decoded SM,
+which are based on various approximations of the "per stream" error
+probability. The proposed methods are applicable for both horizonal and
+vertical decoding. Moreover, we propose a very low complexity implementation
+for the SNR estimation mechanism employing the ML decoder itself with
+negligible overhead.

@@ -1,0 +1,17 @@
+In this paper we study grouped variable selection problems by proposing a
+specified prior, called the nested spike and slab prior, to model collective
+behavior of regression coefficients. At the group level, the nested spike and
+slab prior puts positive mass on the event that the l2-norm of the grouped
+coefficients is equal to zero. At the individual level, each coefficient is
+assumed to follow a spike and slab prior. We carry out maximum a posteriori
+estimation for the model by applying blockwise coordinate descent algorithms to
+solve an optimization problem involving an approximate objective modified by
+majorization-minimization techniques. Simulation studies show that the proposed
+estimator performs relatively well in the situations in which the true and
+redundant covariates are both covered by the same group. Asymptotic analysis
+under a frequentist's framework further shows that the l2 estimation error of
+the proposed estimator can have a better upper bound if the group that covers
+the true covariates does not cover too many redundant covariates. In addition,
+given some regular conditions hold, the proposed estimator is asymptotically
+invariant to group structures, and its model selection consistency can be
+established without imposing irrepresentable-type conditions.

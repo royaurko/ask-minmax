@@ -1,0 +1,21 @@
+Mobility support in future networks will be predominately based on micro
+mobility protocols. Current proposed schemes such as Hierarchical Mobile IPv6
+(HMIPv6) and more importantly Proxy Mobile IPv6 (PMIPv6) provide localized
+mobility support by electing a node within the network (topologically close to
+the Access Routers (AR)) to act as mobility anchor. Such schemes can
+significantly improve handover latency, as well as the end-to-end signalling
+overhead, but might entail scalability issues, which in some instances, do not
+fit adequately with the current explosion of mobile Internet traffic, and the
+evolutionary trend towards flat network architectures. The notion of using
+Distributed Mobility Management (DMM) allows for decentralization by anchoring
+nodes at their AR. The idea is that for sessions with duration less than the
+cell residence time efficient mobility can be supported. However, DMM might be
+highly suboptimal in instances where nodes perform multiple handovers during
+the session lifetime. Hence, one approach cannot be effective for all types of
+applications. In this paper a hybrid mobility management solution, integrated
+with a new routing scheme, is proposed. The scheme selects the most suitable
+mobility approach, centralized or distributed, by taking into account the
+flows' requirement, in terms of Quality of Experience (QoE), and new routing
+constraints. The results of optimization problem show that the proposed
+approach can achieve efficient resource utilisation, ease network congestion,
+and lead to a significant improvement in the QoE.

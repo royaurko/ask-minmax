@@ -1,0 +1,14 @@
+This paper summarizes the work on implementing few solutions for the Steiner
+Tree problem which we undertook in the PAAL project. The main focus of the
+project is the development of generic implementations of approximation
+algorithms together with universal solution frameworks. In particular, we have
+implemented Zelikovsky 11/6-approximation using local search framework, and
+1.39-approximation by Byrka et al. using iterative rounding framework. These
+two algorithms are experimentally compared with greedy 2-approximation, with
+exact but exponential time Dreyfus-Wagner algorithm, as well as with results
+given by a state-of-the-art local search techniques by Uchoa and Werneck. The
+results of this paper are twofold. On one hand, we demonstrate that high level
+algorithmic concepts can be designed and efficiently used in C++. On the other
+hand, we show that the above algorithms with good theoretical guarantees, give
+decent results in practice, but are inferior to state-of-the-art heuristical
+approaches.

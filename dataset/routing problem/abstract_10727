@@ -1,0 +1,20 @@
+In this paper, we investigate the application of the maximum principle
+preserving (MPP) parametrized flux limiters to the high order finite volume
+scheme with Runge-Kutta time discretization for solving convection dominated
+problems. Such flux limiter was originally proposed in [Xu, Math. Comp., 2013]
+and further developed in [Xiong et. al., J. Comp. Phys., 2013] for finite
+difference WENO schemes with Runge-Kutta time discretization for convection
+equations. The main idea is to limit the temporal integrated high order
+numerical flux toward a first order MPP monotone flux. In this paper, we
+generalize such flux limiter to high order finite volume methods solving
+convection-dominated problems, which is easy to implement and introduces little
+computational overhead. More importantly, for the first time in the finite
+volume setting, we provide a general proof that the proposed flux limiter
+maintains high order accuracy of the original WENO scheme for linear advection
+problems without any additional time step restriction. For general nonlinear
+convection-dominated problems, we prove that the proposed flux limiter
+introduces up to $O(\Delta x^3+\Delta t^3)$ modification to the high order
+temporal integrated flux in the original WENO scheme without extra time step
+constraint. We also numerically investigate the preservation of up to ninth
+order accuracy of the proposed flux limiter in a general setting. The advantage
+of the proposed method is demonstrated through various numerical experiments.

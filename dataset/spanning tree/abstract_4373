@@ -1,0 +1,12 @@
+Importance sampling (IS) is a variance reduction method for simulating rare
+events. A recent paper by Dupuis, Wang and Sezer (Ann. App. Probab. 17(4):1306-
+1346, 2007) exploits connections between IS and stochastic games and optimal
+control problems to show how to design and analyze simple and efficient IS
+algorithms for various overflow events for tandem Jackson networks. The present
+paper uses the same approach to build asymptotically optimal IS schemes for
+stable open Jackson networks with a tree topology. Customers arrive at the
+single root of the tree. The rare overflow event we consider is the following:
+given that initially the network is empty, the system experiences a buffer
+overflow before returning to the empty state. Two types of buffer structures
+are considered: 1) A single system-wide buffer of size $n$ shared by all nodes,
+2) each node $i$ has its own buffer of size $\beta_i n$, $\beta_i \in (0,1)$.

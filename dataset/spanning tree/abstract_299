@@ -1,0 +1,26 @@
+In the online Steiner tree problem, the input is a set of vertices that
+appear one-by-one, and we have to maintain a Steiner tree on the current set of
+vertices. The cost of the tree is the total length of edges in the tree, and we
+want this cost to be close to the cost of the optimal Steiner tree at all
+points in time. If we are allowed to only add edges, a tight bound of
+$\Theta(\log n)$ on the competitiveness is known. Recently it was shown that if
+we can add one new edge and make one edge swap upon every vertex arrival, we
+can maintain a constant-competitive tree online.
+  But what if the set of vertices sees both additions and deletions? Again, we
+would like to obtain a low-cost Steiner tree with as few edge changes as
+possible. The original paper of Imase and Waxman had also considered this
+model, and it gave a greedy algorithm that maintained a constant-competitive
+tree online, and made at most $O(n^{3/2})$ edge changes for the first $n$
+requests. In this paper give the following two results.
+  Our first result is an online algorithm that maintains a Steiner tree only
+under deletions: we start off with a set of vertices, and at each time one of
+the vertices is removed from this set: our Steiner tree no longer has to span
+this vertex. We give an algorithm that changes only a constant number of edges
+upon each request, and maintains a constant-competitive tree at all times. Our
+algorithm uses the primal-dual framework and a global charging argument to
+carefully make these constant number of changes.
+  We then study the natural greedy algorithm proposed by Imase and Waxman that
+maintains a constant-competitive Steiner tree in the fully-dynamic model (where
+each request either adds or deletes a vertex). Our second result shows that
+this algorithm makes only a constant number of changes per request in an
+amortized sense.

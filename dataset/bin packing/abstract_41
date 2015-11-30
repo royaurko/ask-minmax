@@ -1,0 +1,25 @@
+In Cloud systems, we often deal with jobs that arrive and depart in an online
+manner. Upon its arrival, a job should be assigned to a server. Each job has a
+size which defines the amount of resources that it needs. Servers have uniform
+capacity and, at all times, the total size of jobs assigned to a server should
+not exceed the capacity. This setting is closely related to the classic bin
+packing problem. The difference is that, in bin packing, the objective is to
+minimize the total number of used servers. In the Cloud, however, the charge
+for each server is proportional to the length of the time interval it is rented
+for, and the goal is to minimize the cost involved in renting all used servers.
+Recently, certain bin packing strategies were considered for renting servers in
+the Cloud [Li et al. SPAA'14]. There, it is proved that all Any-Fit bin packing
+strategy has a competitive ratio of at least $\mu$, where $\mu$ is the max/min
+interval length ratio of jobs. It is also shown that First Fit has a
+competitive ratio of $2\mu + 13$ while Best Fit is not competitive at all. We
+observe that the lower bound of $\mu$ extends to all online algorithms. We also
+prove that, surprisingly, Next Fit algorithm has competitive ratio of at most
+$2 \mu +1$. We also show that a variant of Next Fit achieves a competitive
+ratio of $K \times max\{1,\mu/(K-1)\}+1$, where $K$ is a parameter of the
+algorithm. In particular, if the value of $\mu$ is known, the algorithm has a
+competitive ratio of $\mu+2$; this improves upon the existing upper bound of
+$\mu+8$. Finally, we introduce a simple algorithm called Move To Front (MTF)
+which has a competitive ratio of at most $6\mu + 7$ and also promising
+average-case performance. We experimentally study the average-case performance
+of different algorithms and observe that the typical behaviour of MTF is
+distinctively better than other algorithms.

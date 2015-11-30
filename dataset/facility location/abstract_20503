@@ -1,0 +1,24 @@
+Designing efficient channel access schemes for wireless communications
+without \emph{any} prior knowledge about the nature of environments has been a
+very challenging issue, especially when the channel states distribution of all
+spectrum resources could be entirely or partially stochastic and/or adversarial
+at different time and locations. In this paper, we propose an adaptive channel
+access algorithm for wireless communications in unknown environments based on
+the theory of multi-armed bandits (MAB) problems. By automatically tuning two
+control parameters, i.e., learning rate and exploration probability, our
+algorithms are capable of finding the optimal channel access strategies and
+achieving the almost optimal learning performance over time under our defined
+four typical regimes for general unknown environments, e.g., the stochastic
+regime where channels follow some unknown i.i.d process, the adversarial regime
+where all channels are suffered by adversarial jamming attack, the mixed
+stochastic and adversarial regime where a subset of channels are attacked and
+the contaminated stochastic regime where occasionally adversarial events
+contaminate the stochastic channel process, etc. To reduce the implementation
+time and space complexity, we further develop an enhanced algorithm by
+exploiting the internal structure of the selection of channel access strategy.
+We conduct extensive simulations in all these regimes to validate our
+theoretical analysis. The quantitative performance studies indicate the
+superior throughput gain and the flexibility of our algorithm in practice,
+which is resilient to both oblivious and adaptive jamming attacks with
+different intelligence and any attacking strength that ranges from no-attack to
+the full-attack of all spectrum resources.

@@ -1,0 +1,17 @@
+Motivated by an application in computational topology, we consider a novel
+variant of the problem of efficiently maintaining dynamic rooted trees. This
+variant requires merging two paths in a single operation. In contrast to the
+standard problem, in which only one tree arc changes at a time, a single merge
+operation can change many arcs. In spite of this, we develop a data structure
+that supports merges on an n-node forest in O(log^2 n) amortized time and all
+other standard tree operations in O(log n) time (amortized, worst-case, or
+randomized depending on the underlying data structure). For the special case
+that occurs in the motivating application, in which arbitrary arc deletions
+(cuts) are not allowed, we give a data structure with an O(log n) time bound
+per operation. This is asymptotically optimal under certain assumptions. For
+the even-more special case in which both cuts and parent queries are
+disallowed, we give an alternative O(log n)-time solution that uses standard
+dynamic trees as a black box. This solution also applies to the motivating
+application. Our methods use previous work on dynamic trees in various ways,
+but the analysis of each algorithm requires novel ideas. We also investigate
+lower bounds for the problem under various assumptions.

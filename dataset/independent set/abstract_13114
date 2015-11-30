@@ -1,0 +1,25 @@
+A prespecified set of genes may be enriched, to varying degrees, for genes
+that have altered expression levels relative to two or more states of a cell.
+Knowing the enrichment of gene sets defined by functional categories, such as
+gene ontology (GO) annotations, is valuable for analyzing the biological
+signals in microarray expression data. A common approach to measuring
+enrichment is by cross-classifying genes according to membership in a
+functional category and membership on a selected list of significantly altered
+genes. A small Fisher's exact test $p$-value, for example, in this $2\times2$
+table is indicative of enrichment. Other category analysis methods retain the
+quantitative gene-level scores and measure significance by referring a
+category-level statistic to a permutation distribution associated with the
+original differential expression problem. We describe a class of random-set
+scoring methods that measure distinct components of the enrichment signal. The
+class includes Fisher's test based on selected genes and also tests that
+average gene-level evidence across the category. Averaging and selection
+methods are compared empirically using Affymetrix data on expression in
+nasopharyngeal cancer tissue, and theoretically using a location model of
+differential expression. We find that each method has a domain of superiority
+in the state space of enrichment problems, and that both methods have benefits
+in practice. Our analysis also addresses two problems related to
+multiple-category inference, namely, that equally enriched categories are not
+detected with equal probability if they are of different sizes, and also that
+there is dependence among category statistics owing to shared genes. Random-set
+enrichment calculations do not require Monte Carlo for implementation. They are
+made available in the R package allez.

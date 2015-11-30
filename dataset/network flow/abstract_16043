@@ -1,0 +1,19 @@
+The use of network Newton methods for the decentralized optimization of a sum
+cost distributed through agents of a network is considered. Network Newton
+methods reinterpret distributed gradient descent as a penalty method, observe
+that the corresponding Hessian is sparse, and approximate the Newton step by
+truncating a Taylor expansion of the inverse Hessian. Truncating the series at
+$K$ terms yields the NN-$K$ that requires aggregating information from $K$ hops
+away. Network Newton is introduced and shown to converge to the solution of the
+penalized objective function at a rate that is at least linear in a companion
+paper [3]. The contributions of this work are: (i) To complement the
+convergence analysis by studying the methods' rate of convergence. (ii) To
+introduce adaptive formulations that converge to the optimal argument of the
+original objective. (iii) To perform numerical evaluations of NN-$K$ methods.
+The convergence analysis relates the behavior of NN-$K$ with the behavior of
+(regular) Newton's method and shows that the method goes through a quadratic
+convergence phase in a specific interval. The length of this quadratic phase
+grows with $K$ and can be made arbitrarily large. The numerical experiments
+corroborate reductions in the number of iterations and the communication cost
+that are necessary to achieve convergence relative to distributed gradient
+descent.

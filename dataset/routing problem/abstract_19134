@@ -1,0 +1,17 @@
+An \emph{s-graph} is a graph with two kinds of edges: \emph{subdivisible}
+edges and \emph{real} edges. A \emph{realisation} of an s-graph $B$ is any
+graph obtained by subdividing subdivisible edges of $B$ into paths of arbitrary
+length (at least one). Given an s-graph $B$, we study the decision problem
+$\Pi_B$ whose instance is a graph $G$ and question is "Does $G$ contain a
+realisation of $B$ as an induced subgraph?". For several $B$'s, the complexity
+of $\Pi_B$ is known and here we give the complexity for several more. Our
+NP-completeness proofs for $\Pi_B$'s rely on the NP-completeness proof of the
+following problem. Let $\cal S$ be a set of graphs and $d$ be an integer. Let
+$\Gamma_{\cal S}^d$ be the problem whose instance is $(G, x, y)$ where $G$ is a
+graph whose maximum degree is at most d, with no induced subgraph in $\cal S$
+and $x, y \in V(G)$ are two non-adjacent vertices of degree 2. The question is
+"Does $G$ contain an induced cycle passing through $x, y$?". Among several
+results, we prove that $\Gamma^3_{\emptyset}$ is NP-complete. We give a simple
+criterion on a connected graph $H$ to decide whether $\Gamma^{+\infty}_{\{H\}}$
+is polynomial or NP-complete. The polynomial cases rely on the algorithm
+three-in-a-tree, due to Chudnovsky and Seymour.

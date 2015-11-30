@@ -1,0 +1,22 @@
+In this paper, we study the role non-adaptivity plays in maintaining dynamic
+data structures. Roughly speaking, a data structure is non-adaptive if the
+memory locations it reads and/or writes when processing a query or update
+depend only on the query or update and not on the contents of previously read
+cells. We study such non-adaptive data structures in the cell probe model. This
+model is one of the least restrictive lower bound models and in particular,
+cell probe lower bounds apply to data structures developed in the popular
+word-RAM model. Unfortunately, this generality comes at a high cost: the
+highest lower bound proved for any data structure problem is only
+polylogarithmic. Our main result is to demonstrate that one can in fact obtain
+polynomial cell probe lower bounds for non-adaptive data structures.
+  To shed more light on the seemingly inherent polylogarithmic lower bound
+barrier, we study several different notions of non-adaptivity and identify key
+properties that must be dealt with if we are to prove polynomial lower bounds
+without restrictions on the data structures.
+  Finally, our results also unveil an interesting connection between data
+structures and depth-2 circuits. This allows us to translate conjectured hard
+data structure problems into good candidates for high circuit lower bounds; in
+particular, in the area of linear circuits for linear operators. Building on
+lower bound proofs for data structures in slightly more restrictive models, we
+also present a number of properties of linear operators which we believe are
+worth investigating in the realm of circuit lower bounds.

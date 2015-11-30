@@ -1,0 +1,7 @@
+The pseudofermion action of the Hybrid Monte Carlo (HMC) algorithm for
+dynamical fermions is modified to directly incorporate Incomplete LU (ILU)
+factorisation. This reduces the stochastic noise and allows a larger molecular
+dynamics step-size to be taken, cutting the computational cost. Numerical tests
+using the two-flavour Schwinger model are presented, where a two-step ILU
+preconditioning of the even-odd fermion matrix allows the step-size to be
+increased by a factor of two over the standard even-odd formulation.

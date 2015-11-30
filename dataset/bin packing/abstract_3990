@@ -1,0 +1,12 @@
+This paper describes an effective unsupervised method for query-by-example
+speaker retrieval. We suppose that only one speaker is in each audio file or in
+audio segment. The audio data are modeled using a common universal codebook.
+The codebook is based on bag-of-frames (BOF). The features corresponding to the
+audio frames are extracted from all audio files. These features are grouped
+into clusters using the K-means algorithm. The individual audio files are
+modeled by the normalized distribution of the numbers of cluster bins
+corresponding to this file. In the first level the k-nearest to the query files
+are retrieved using vector space representation. In the second level the
+second-order statistical measure is applied to obtained k-nearest files to find
+the final result of the retrieval. The described method is evaluated on the
+subset of Ester corpus of French broadcast news.

@@ -1,0 +1,11 @@
+We design a novel algorithm for solving Mean-Payoff Games (MPGs). Besides
+solving an MPG in the usual sense, our algorithm computes more information
+about the game, information that is important with respect to applications. The
+weights of the edges of an MPG can be thought of as a gained/consumed energy --
+depending on the sign. For each vertex, our algorithm computes the minimum
+amount of initial energy that is sufficient for player Max to ensure that in a
+play starting from the vertex, the energy level never goes below zero. Our
+algorithm is not the first algorithm that computes the minimum sufficient
+initial energies, but according to our experimental study it is the fastest
+algorithm that computes them. The reason is that it utilizes the strategy
+improvement technique which is very efficient in practice.

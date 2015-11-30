@@ -1,0 +1,14 @@
+The usage of positive definite metric tensors derived from second derivative
+information in the context of the simplified manifold Metropolis adjusted
+Langevin algorithm (MALA) is explored. A new adaptive step length procedure
+that resolves the shortcomings of such metric tensors in regions where the
+log-target has near zero curvature in some direction is proposed. The adaptive
+step length selection also appears to alleviate the need for different tuning
+parameters in transient and stationary regimes that is typical of MALA. The
+combination of metric tensors derived from second derivative information and
+adaptive step length selection constitute a large step towards developing
+reliable manifold MCMC methods that can be implemented automatically for models
+with unknown or intractable Fisher information, and even for target
+distributions that do not admit factorization into prior and likelihood.
+Through examples of low to moderate dimension, it is shown that proposed
+methodology performs very well relative to alternative MCMC methods.

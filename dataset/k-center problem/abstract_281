@@ -1,0 +1,18 @@
+Importance sampling has been reported to produce algorithms with excellent
+empirical performance in counting problems. However, the theoretical support
+for its efficiency in these applications has been very limited. In this paper,
+we propose a methodology that can be used to design efficient importance
+sampling algorithms for counting and test their efficiency rigorously. We apply
+our techniques after transforming the problem into a rare-event simulation
+problem--thereby connecting complexity analysis of counting problems with
+efficiency in the context of rare-event simulation. As an illustration of our
+approach, we consider the problem of counting the number of binary tables with
+fixed column and row sums, $c_j$'s and $r_i$'s, respectively, and total
+marginal sums $d=\sum_jc_j$. Assuming that $\max_jc_j=o(d^{1/2})$, $\sum
+c_j^2=O(d)$ and the $r_j$'s are bounded, we show that a suitable importance
+sampling algorithm, proposed by Chen et al. [J. Amer. Statist. Assoc. 100
+(2005) 109--120], requires $O(d^3\varepsilon^{-2}\delta^{-1})$ operations to
+produce an estimate that has $\varepsilon$-relative error with probability
+$1-\delta$. In addition, if $\max_jc_j=o(d^{1/4-\delta_0})$ for some
+$\delta_0>0$, the same coverage can be guaranteed with
+$O(d^3\varepsilon^{-2}\log(\delta^{-1}))$ operations.

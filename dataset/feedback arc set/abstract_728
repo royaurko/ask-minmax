@@ -1,0 +1,23 @@
+In the recent paper [1] an elegant analytic criterion for incremental output
+feedback passivity (iOFP) of cyclic feedback systems (CFS) has been reported,
+assuming that the constituent subsystems are incrementally output strictly
+passive (iOSP). This result has also been applied to networks of linearly
+coupled biochemical oscillators in order to derive conditions on their coupling
+strengths to achieve global state synchronization. A typical class of CFS
+systems is used to model biochemical oscillators, describing dynamics of
+genetic pacemakers and hormonal cycles. These oscillators were named after
+Brian Goodwin, who first used the model to study oscillations in a single gene.
+We show in the present paper that for Goodwin's oscillators, where the rates of
+individual reactions obey the Mikhaelis-Menten law, the synchronization
+criterion from [1] cannot be directly applied, since this criterion relies on
+the implicit assumption of the solution boundedness, dictated also by the
+chemical feasibility (the state variables stand for the chemical concentrations
+of reagents). Furthermore to test the synchronization condition from [1], one
+needs to know an explicit bound for a solution, which generally cannot be
+guaranteed using linear balanced protocols. To address this issue, we further
+propose to add a special "saturation-like" nonlinear map to the controller from
+[1], which guarantees nonnegative and bounded input. We show that if these
+nonlinearities satisfy some technical condition, the system's solution remains
+nonnegative and bounded, staying in a known compact set. We prove the
+synchronization among oscillators under such a protocol for sufficiently strong
+couplings.

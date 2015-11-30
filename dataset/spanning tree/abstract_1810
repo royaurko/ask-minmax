@@ -1,0 +1,9 @@
+This paper details a data structure for managing and scheduling requests for
+computing resources of clusters and virtualised infrastructure such as private
+clouds. The data structure uses a red-black tree whose nodes represent the
+start times and/or completion times of requests. The tree is enhanced by a
+double-linked list that facilitates the iteration of nodes once the start time
+of a request is determined by using the tree. We describe the data structure
+main features, provide an example of use, and discuss experiments that
+demonstrate that the average complexity of two operations are often below 10%
+of their respective theoretical worst cases.

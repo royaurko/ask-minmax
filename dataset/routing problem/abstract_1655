@@ -1,0 +1,17 @@
+Space is a circuit oriented, spatial programming language designed to exploit
+the massive parallelism available in a novel formal model of computation called
+the Synchronic A-Ram, and physically related FPGA and reconfigurable
+architectures. Space expresses variable grained MIMD parallelism, is modular,
+strictly typed, and deterministic. Barring operations associated with memory
+allocation and compilation, modules cannot access global variables, and are
+referentially transparent. At a high level of abstraction, modules exhibit a
+small, sequential state transition system, aiding verification. Space deals
+with communication, scheduling, and resource contention issues in parallel
+computing, by resolving them explicitly in an incremental manner, module by
+module, whilst ascending the ladder of abstraction. Whilst the Synchronic A-Ram
+model was inspired by linguistic considerations, it is also put forward as a
+formal model for reconfigurable digital circuits. A programming environment has
+been developed, that incorporates a simulator and compiler that transform Space
+programs into Synchronic A-Ram machine code, consisting of only three bit-level
+instructions, and a marking instruction. Space and the Synchronic A-Ram point
+to novel routes out of the parallel computing crisis.

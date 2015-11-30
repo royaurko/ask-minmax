@@ -1,0 +1,21 @@
+We introduce and explore a new method for inferring hidden geometric
+coordinates of nodes in complex networks based on the number of common
+neighbors between the nodes. We compare this approach to the HyperMap method,
+which is based only on the connections (and disconnections) between the nodes,
+i.e., on the links that the nodes have (or do not have). We find that for high
+degree nodes the common-neighbors approach yields a more accurate inference
+than the link-based method, unless heuristic periodic adjustments (or
+"correction steps") are used in the latter. The common-neighbors approach is
+computationally intensive, requiring $O(t^4)$ running time to map a network of
+$t$ nodes, versus $O(t^3)$ in the link-based method. But we also develop a
+hybrid method with $O(t^3)$ running time, which combines the common-neighbors
+and link-based approaches, and explore a heuristic that reduces its running
+time further to $O(t^2)$, without significant reduction in the mapping
+accuracy. We apply this method to the Autonomous Systems (AS) Internet, and
+reveal how soft communities of ASes evolve over time in the similarity space.
+We further demonstrate the method's predictive power by forecasting future
+links between ASes. Taken altogether, our results advance our understanding of
+how to efficiently and accurately map real networks to their latent geometric
+spaces, which is an important necessary step towards understanding the laws
+that govern the dynamics of nodes in these spaces, and the fine-grained
+dynamics of network connections.

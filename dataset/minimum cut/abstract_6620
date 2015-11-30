@@ -1,0 +1,19 @@
+As feature sizes shrink, it will be necessary to use AAPSM
+(Alternating-Aperture Phase Shift Masking) to image critical features,
+especially on the polysilicon layer. This imposes additional constraints on the
+layouts beyond traditional design rules. Of particular note is the requirement
+that all critical features be flanked by opposite-phase shifters, while the
+shifters obey minimum width and spacing requirements. A layout is called
+phase-assignable if it satisfies this requirement. If a layout is not
+phase-assignable, the phase conflicts have to removed to enable the use of
+AAPSM for the layout. Previous work has sought to detect a suitable set of
+phase Conflicts to be removed, as well as correct them. The contribution of
+this paper are the following: (1) a new approach to detect a minimal set of
+phase conflicts (also referred to as AAPSM conflicts), which when corrected
+will produce a phase-assignable layout; (2) a novel layout modification scheme
+for correcting these AAPSM conflicts. The proposed approach for conflict
+detection shows significant improvements in the quality of results and runtime
+for real industrial circuits, when compared to previous methods. To the best of
+our knowledge, this is the first time layout modification results are presented
+for bright-field AAPSM. Our experiments show that the percentage area increase
+for making a layout phase-assignable ranges from 0.7-11.8%.

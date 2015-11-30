@@ -1,0 +1,20 @@
+Many astrophysical phenomena are highly subsonic, requiring specialized
+numerical methods suitable for long-time integration. In a series of earlier
+papers we described the development of MAESTRO, a low Mach number stellar
+hydrodynamics code that can be used to simulate long-time, low-speed flows that
+would be prohibitively expensive to model using traditional compressible codes.
+MAESTRO is based on an equation set derived using low Mach number asymptotics;
+this equation set does not explicitly track acoustic waves and thus allows a
+significant increase in the time step. MAESTRO is suitable for two- and
+three-dimensional local atmospheric flows as well as three-dimensional
+full-star flows. Here, we continue the development of MAESTRO by incorporating
+adaptive mesh refinement (AMR). The primary difference between MAESTRO and
+other structured grid AMR approaches for incompressible and low Mach number
+flows is the presence of the time-dependent base state, whose evolution is
+coupled to the evolution of the full solution. We also describe how to
+incorporate the expansion of the base state for full-star flows, which involves
+a novel mapping technique between the one-dimensional base state and the
+Cartesian grid, as well as a number of overall improvements to the algorithm.
+We examine the efficiency and accuracy of our adaptive code, and demonstrate
+that it is suitable for further study of our initial scientific application,
+the convective phase of Type Ia supernovae.

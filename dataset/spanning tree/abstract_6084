@@ -1,0 +1,17 @@
+We present an implementation of time-dependent density-functional theory
+(TDDFT) in the linear response formalism enabling the calculation of low energy
+optical absorption spectra for large molecules and nanostructures. The method
+avoids any explicit reference to canonical representations of either occupied
+or virtual Kohn-Sham states and thus achieves linear-scaling computational
+effort with system size. In contrast to conventional localised orbital
+formulations, where a single set of localised functions is used to span the
+occupied and unoccupied state manifold, we make use of two sets of in situ
+optimised localised orbitals, one for the occupied and one for the unoccupied
+space. This double representation approach avoids known problems of spanning
+the space of unoccupied Kohn-Sham states with a minimal set of localised
+orbitals optimised for the occupied space, while the in situ optimisation
+procedure allows for efficient calculations with a minimal number of functions.
+The method is applied to a number of medium sized organic molecules and a good
+agreement with traditional TDDFT methods is observed. Furthermore, linear
+scaling of computational cost with system size is demonstrated on a system of
+carbon nanotubes.

@@ -1,0 +1,13 @@
+In this thesis we develop tools for effective and flexible pattern matching.
+We introduce a new pattern matching system called amethyst. Amethyst is not
+only a generator of parsers of programming languages, but can also serve as an
+alternative to tools for matching regular expressions.
+  Our framework also produces dynamic parsers. Its intended use is in the
+context of IDE (accurate syntax highlighting and error detection on the fly).
+Amethyst offers pattern matching of general data structures. This makes it a
+useful tool for implementing compiler optimizations such as constant folding,
+instruction scheduling, and dataflow analysis in general.
+  The parsers produced are essentially top-down parsers. Linear time complexity
+is obtained by introducing the novel notion of structured grammars and
+regularized regular expressions. Amethyst uses techniques known from compiler
+optimizations to produce effective parsers.

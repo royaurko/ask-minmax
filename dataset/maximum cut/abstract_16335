@@ -1,0 +1,18 @@
+This paper provides an application of our hybrid continuum-particle scheme to
+liquids by considering unsteady shear flows driven by wall oscillations in
+nano-slots. The particle region (P) adjacent to the wall, is described at the
+atomistic level by molecular dynamics, while the outer region (C), described by
+a continuum equation for the transversal momentum, is solved via a finite
+volume method. Both regions overlap in the ``handshaking'' region where a
+two-way coupling scheme (C$\to$P and P$\to$C) is implemented. A protocol for
+the C$\to$P coupling was presented in a previous paper [Delgado-Buscalioni and
+Coveney, Phys. Rev. E, {\bf 67}, 046704 (2003)]; here we focus on the the
+P$\to$C counterpart, that is, on the exchange of information from the
+microscopic to the continuum domain. We first show how to use the finite volume
+formalism to balance the momentum and mass fluxes across the P$\to$C surface in
+such a way that the continuity of velocity is ensured. Then we analyse the
+effect of the fluctuations of the (P) stress tensor on the stability and
+accuracy of the numerical scheme. This analysis yields a condition which
+establishes a restriction on the resolution of the flow field that can be
+described by the hybrid method, in terms of the maximum frequency and
+wavenumber of the flow.

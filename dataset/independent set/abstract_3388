@@ -1,0 +1,13 @@
+Mobile apps can access a wide variety of secure information, such as contacts
+and location. However, current mobile platforms include only coarse access
+control mechanisms to protect such data. In this paper, we introduce
+interaction-based declassification policies, in which the user's interactions
+with the app constrain the release of sensitive information. Our policies are
+defined extensionally, so as to be independent of the app's implementation,
+based on sequences of security-relevant events that occur in app runs. Policies
+use LTL formulae to precisely specify which secret inputs, read at which times,
+may be released. We formalize a semantic security condition, interaction-based
+noninterference, to define our policies precisely. Finally, we describe a
+prototype tool that uses symbolic execution to check interaction-based
+declassification policies for Android, and we show that it enforces policies
+correctly on a set of apps.

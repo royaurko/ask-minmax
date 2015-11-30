@@ -1,0 +1,13 @@
+Error Tree is a novel tree structure that is mainly oriented to solve the
+approximate pattern matching problems, Hamming and edit distances, as well as
+the wildcards matching problem. The input is a text of length $n$ over a fixed
+alphabet of length $\Sigma$, a pattern of length $m$, and $k$. The output is to
+find all positions that have $\leq$ $k$ Hamming distance, edit distance, or
+wildcards matching with $P$. The algorithm proposes for Hamming distance and
+wildcards matching a tree structure that needs $O(n\frac{log_\Sigma
+^{k}n}{k!})$ words and takes $O(\frac {m^k}{k!} + occ$)($O(m + \frac
+{log_\Sigma ^kn}{k!} + occ$) in the average case) of query time for any
+online/offline pattern, where $occ$ is the number of outputs. As well, a tree
+structure of $O(2^{k}n\frac{log_\Sigma ^{k}n}{k!})$ words and $O(\frac
+{m^k}{k!} + 3^{k}occ$)($O(m + \frac {log_\Sigma ^kn}{k!} + 3^{k}occ$) in the
+average case) query time for edit distance for any online/offline pattern.

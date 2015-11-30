@@ -1,0 +1,22 @@
+In distributed networks, it is often useful for the nodes to be aware of
+dense subgraphs, e.g., such a dense subgraph could reveal dense subtructures in
+otherwise sparse graphs (e.g. the World Wide Web or social networks); these
+might reveal community clusters or dense regions for possibly maintaining good
+communication infrastructure. In this work, we address the problem of
+self-awareness of nodes in a dynamic network with regards to graph density,
+i.e., we give distributed algorithms for maintaining dense subgraphs that the
+member nodes are aware of. The only knowledge that the nodes need is that of
+the dynamic diameter $D$, i.e., the maximum number of rounds it takes for a
+message to traverse the dynamic network. For our work, we consider a model
+where the number of nodes are fixed, but a powerful adversary can add or remove
+a limited number of edges from the network at each time step. The communication
+is by broadcast only and follows the CONGEST model. Our algorithms are
+continuously executed on the network, and at any time (after some
+initialization) each node will be aware if it is part (or not) of a particular
+dense subgraph. We give algorithms that ($2 + \epsilon$)-approximate the
+densest subgraph and ($3 + \epsilon$)-approximate the at-least-$k$-densest
+subgraph (for a given parameter $k$). Our algorithms work for a wide range of
+parameter values and run in $O(D\log_{1+\epsilon} n)$ time. Further, a special
+case of our results also gives the first fully decentralized approximation
+algorithms for densest and at-least-$k$-densest subgraph problems for static
+distributed graphs.

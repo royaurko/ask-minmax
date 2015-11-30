@@ -1,0 +1,20 @@
+In this paper, we compare the performance of two scenario-based numerical
+methods to solve stochastic optimal control problems: scenario trees and
+particles. The problem consists in finding strategies to control a dynamical
+system perturbed by exogenous noises so as to minimize some expected cost along
+a discrete and finite time horizon. We introduce the Mean Squared Error (MSE)
+which is the expected $L^2$-distance between the strategy given by the
+algorithm and the optimal strategy, as a performance indicator for the two
+models. We study the behaviour of the MSE with respect to the number of
+scenarios used for discretization. The first model, widely studied in the
+Stochastic Programming community, consists in approximating the noise diffusion
+using a scenario tree representation. On a numerical example, we observe that
+the number of scenarios needed to obtain a given precision grows exponentially
+with the time horizon. In that sense, our conclusion on scenario trees is
+equivalent to the one in the work by Shapiro (2006) and has been widely noticed
+by practitioners. However, in the second part, we show using the same example
+that, by mixing Stochastic Programming and Dynamic Programming ideas, the
+particle method described by Carpentier et al (2009) copes with this numerical
+difficulty: the number of scenarios needed to obtain a given precision now does
+not depend on the time horizon. Unfortunately, we also observe that serious
+obstacles still arise from the system state space dimension.

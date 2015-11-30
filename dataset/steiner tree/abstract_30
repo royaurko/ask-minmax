@@ -1,0 +1,25 @@
+Given a directed graph G and an integer k >= 1, a
+k-transitive-closure-spanner (k-TCspanner) of G is a directed graph H that has
+(1) the same transitive-closure as G and (2) diameter at most k. In some
+applications, the shortcut paths added to the graph in order to obtain small
+diameter can use Steiner vertices, that is, vertices not in the original graph
+G. The resulting spanner is called a Steiner transitive-closure spanner
+(Steiner TC-spanner).
+  Motivated by applications to property reconstruction and access control
+hierarchies, we concentrate on Steiner TC-spanners of directed acyclic graphs
+or, equivalently, partially ordered sets. In these applications, the goal is to
+find a sparsest Steiner k-TC-spanner of a poset G for a given k and G. The
+focus of this paper is the relationship between the dimension of a poset and
+the size of its sparsest Steiner TCspanner. The dimension of a poset G is the
+smallest d such that G can be embedded into a d-dimensional directed hypergrid
+via an order-preserving embedding.
+  We present a nearly tight lower bound on the size of Steiner 2-TC-spanners of
+d-dimensional directed hypergrids. It implies better lower bounds on the
+complexity of local reconstructors of monotone functions and functions with low
+Lipschitz constant. The proof of the lower bound constructs a dual solution to
+a linear programming relaxation of the Steiner 2-TC-spanner problem. We also
+show that one can efficiently construct a Steiner 2-TC-spanner, of size
+matching the lower bound, for any low-dimensional poset. Finally, we present a
+lower bound on the size of Steiner k-TC-spanners of d-dimensional posets that
+shows that the best-known construction, due to De Santis et al., cannot be
+improved significantly.

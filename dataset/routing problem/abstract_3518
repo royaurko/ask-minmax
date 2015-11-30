@@ -1,0 +1,8 @@
+We propose and develop an efficient implementation of the robust tabu search
+heuristic for sparse quadratic assignment problems. The traditional
+implementation of the heuristic applicable to all quadratic assignment problems
+is of O(N^2) complexity per iteration for problems of size N. Using multiple
+priority queues to determine the next best move instead of scanning all
+possible moves, and using adjacency lists to minimize the operations needed to
+determine the cost of moves, we reduce the asymptotic complexity per iteration
+to O(N log N ). For practical sized problems, the complexity is O(N).

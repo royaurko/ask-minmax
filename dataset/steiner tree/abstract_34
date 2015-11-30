@@ -1,0 +1,18 @@
+Graphs with bounded highway dimension were introduced in [Abraham et al.,
+SODA 2010] as a model of transportation networks. We show that any such graph
+can be embedded into a distribution over bounded treewidth graphs with
+arbitrarily small distortion. More concretely, if the highway dimension of $G$
+is constant we show how to randomly compute a subgraph of the shortest path
+metric of the input graph $G$ with the following two properties: it distorts
+the distances of $G$ by a factor of $1+\varepsilon$ in expectation and has a
+treewidth that is polylogarithmic in the aspect ratio of $G$. In particular,
+this result implies quasi-polynomial time approximation schemes for a number of
+optimization problems that naturally arise on transportation networks,
+including Travelling Salesman, Steiner Tree, and Facility Location.
+  To construct our embedding for low highway dimension graphs we extend
+Talwar's [STOC 2004] embedding of low doubling dimension metrics into bounded
+treewidth graphs, which generalizes known results for Euclidean metrics. We add
+several non-trivial ingredients to Talwar's techniques, and in particular
+thoroughly analyze the structure of low highway dimension graphs. Thus we
+demonstrate that the geometric toolkit used for Euclidean metrics extends
+beyond the class of low doubling metrics.

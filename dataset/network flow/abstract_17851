@@ -1,0 +1,21 @@
+We describe here a structured system for distributed mechanism design
+appropriate for both Intranet and Internet applications. In our approach the
+players dynamically form a network in which they know neither their neighbours
+nor the size of the network and interact to jointly take decisions. The only
+assumption concerning the underlying communication layer is that for each pair
+of processes there is a path of neighbours connecting them. This allows us to
+deal with arbitrary network topologies.
+  We also discuss the implementation of this system which consists of a
+sequence of layers. The lower layers deal with the operations that implement
+the basic primitives of distributed computing, namely low level communication
+and distributed termination, while the upper layers use these primitives to
+implement high level communication among players, including broadcasting and
+multicasting, and distributed decision making.
+  This yields a highly flexible distributed system whose specific applications
+are realized as instances of its top layer. This design is implemented in Java.
+  The system supports at various levels fault-tolerance and includes a
+provision for distributed policing the purpose of which is to exclude
+`dishonest' players. Also, it can be used for repeated creation of dynamically
+formed networks of players interested in a joint decision making implemented by
+means of a tax-based mechanism. We illustrate its flexibility by discussing a
+number of implemented examples.

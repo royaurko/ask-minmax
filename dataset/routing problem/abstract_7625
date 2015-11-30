@@ -1,0 +1,22 @@
+In the online random-arrival model, an algorithm receives a sequence of n
+requests that arrive in a random order. The algorithm is expected to make an
+irrevocable decision with regard to each request based only on the observed
+history. We consider the following natural extension of this model: each
+request arrives k times, and the arrival order is a random permutation of the
+kn arrivals; the algorithm is expected to make a decision regarding each
+request only upon its last arrival. We focus primarily on the case when k=2,
+which can also be interpreted as each request arriving at, and departing from
+the system, at a random time. We examine the secretary problem: the problem of
+selecting the best secretary when the secretaries are presented online
+according to a random permutation. We show that when each secretary arrives
+twice, we can achieve a competitive ratio of ~0.768 (compared to 1/e in the
+classical secretary problem), and that it is optimal. We also show that without
+any knowledge about the number of secretaries or their arrival times, we can
+still hire the best secretary with probability at least 2/3, in contrast to the
+impossibility of achieving a constant success probability in the classical
+setting. We extend our results to the matroid secretary problem, introduced by
+Babaioff et al., (2007) and show a simple algorithm that achieves a
+2-approximation to the maximal weighted basis in the new model (for k=2). We
+show that this approximation factor can be improved in special cases of the
+matroid secretary problem; in particular, we give a 16/9-competitive algorithm
+for the returning edge-weighted bipartite matching problem.

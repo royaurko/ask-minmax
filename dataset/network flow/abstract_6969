@@ -1,0 +1,17 @@
+Flow cytometry is a technology that rapidly measures antigen-based markers
+associated to cells in a cell population. Although analysis of flow cytometry
+data has traditionally considered one or two markers at a time, there has been
+increasing interest in multidimensional analysis. However, flow cytometers are
+limited in the number of markers they can jointly observe, which is typically a
+fraction of the number of markers of interest. For this reason, practitioners
+often perform multiple assays based on different, overlapping combinations of
+markers. In this paper, we address the challenge of imputing the high
+dimensional jointly distributed values of marker attributes based on
+overlapping marginal observations. We show that simple nearest neighbor based
+imputation can lead to spurious subpopulations in the imputed data, and
+introduce an alternative approach based on nearest neighbor imputation
+restricted to a cell's subpopulation. This requires us to perform clustering
+with missing data, which we address with a mixture model approach and novel EM
+algorithm. Since mixture model fitting may be ill-posed, we also develop
+techniques to initialize the EM algorithm using domain knowledge. We
+demonstrate our approach on real flow cytometry data.

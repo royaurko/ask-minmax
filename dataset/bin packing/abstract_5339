@@ -1,0 +1,25 @@
+One popular method for dealing with large-scale data sets is sampling. For
+example, by using the empirical statistical leverage scores as an importance
+sampling distribution, the method of algorithmic leveraging samples and
+rescales rows/columns of data matrices to reduce the data size before
+performing computations on the subproblem. This method has been successful in
+improving computational efficiency of algorithms for matrix problems such as
+least-squares approximation, least absolute deviations approximation, and
+low-rank matrix approximation. Existing work has focused on algorithmic issues
+such as worst-case running times and numerical issues associated with providing
+high-quality implementations, but none of it addresses statistical aspects of
+this method.
+  In this paper, we provide a simple yet effective framework to evaluate the
+statistical properties of algorithmic leveraging in the context of estimating
+parameters in a linear regression model with a fixed number of predictors. We
+show that from the statistical perspective of bias and variance, neither
+leverage-based sampling nor uniform sampling dominates the other. This result
+is particularly striking, given the well-known result that, from the
+algorithmic perspective of worst-case analysis, leverage-based sampling
+provides uniformly superior worst-case algorithmic results, when compared with
+uniform sampling. Based on these theoretical results, we propose and analyze
+two new leveraging algorithms. A detailed empirical evaluation of existing
+leverage-based methods as well as these two new methods is carried out on both
+synthetic and real data sets. The empirical results indicate that our theory is
+a good predictor of practical performance of existing and new leverage-based
+algorithms and that the new algorithms achieve improved performance.

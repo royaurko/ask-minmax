@@ -1,0 +1,19 @@
+Mining frequent itemsets is a popular method for finding associated items in
+databases. For this method, support, the co-occurrence frequency of the items
+which form an association, is used as the primary indicator of the
+associations's significance. A single user-specified support threshold is used
+to decided if associations should be further investigated. Support has some
+known problems with rare items, favors shorter itemsets and sometimes produces
+misleading associations.
+  In this paper we develop a novel model-based frequency constraint as an
+alternative to a single, user-specified minimum support. The constraint
+utilizes knowledge of the process generating transaction data by applying a
+simple stochastic mixture model (the NB model) which allows for transaction
+data's typically highly skewed item frequency distribution. A user-specified
+precision threshold is used together with the model to find local frequency
+thresholds for groups of itemsets. Based on the constraint we develop the
+notion of NB-frequent itemsets and adapt a mining algorithm to find all
+NB-frequent itemsets in a database. In experiments with publicly available
+transaction databases we show that the new constraint provides improvements
+over a single minimum support threshold and that the precision threshold is
+more robust and easier to set and interpret by the user.

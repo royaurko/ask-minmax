@@ -1,0 +1,14 @@
+We consider the problem of finding the minimum sum-rate strategy in
+cooperative data exchange systems that do not allow packet-splitting (NPS-CDE).
+In an NPS-CDE system, there are a number of geographically close cooperative
+clients who send packets to help the others recover a packet set. A minimum
+sum-rate strategy is the strategy that achieves universal recovery (the
+situation when all the clients recover the whole packet set) with the the
+minimal sum-rate (the total number of transmissions). We propose an iterative
+merging (IM) algorithm that recursively merges client sets based on a lower
+estimate of the minimum sum-rate and updates to the value of the minimum
+sum-rate. We also show that a minimum sum-rate strategy can be learned by
+allocating rates for the local recovery in each merged client set in the IM
+algorithm. We run an experiment to show that the complexity of the IM algorithm
+is lower than that of the existing deterministic algorithm when the number of
+clients is lower than $94$.

@@ -1,0 +1,8 @@
+The standard algebraic decoding algorithm of cyclic codes $[n,k,d]$ up to the
+BCH bound $t$ is very efficient and practical for relatively small $n$ while it
+becomes unpractical for large $n$ as its computational complexity is $O(nt)$.
+Aim of this paper is to show how to make this algebraic decoding
+computationally more efficient: in the case of binary codes, for example, the
+complexity of the syndrome computation drops from $O(nt)$ to $O(t\sqrt n)$, and
+that of the error location from $O(nt)$ to at most $\max \{O(t\sqrt n),
+O(t^2\log(t)\log(n))\}$.

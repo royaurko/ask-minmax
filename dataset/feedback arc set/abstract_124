@@ -1,0 +1,13 @@
+In this paper we present an algorithm that generates $k$-noncrossing,
+$\sigma$-modular diagrams with uniform probability. A diagram is a labeled
+graph of degree $\le 1$ over $n$ vertices drawn in a horizontal line with arcs
+$(i,j)$ in the upper half-plane. A $k$-crossing in a diagram is a set of $k$
+distinct arcs $(i_1, j_1), (i_2, j_2),\ldots,(i_k, j_k)$ with the property $i_1
+< i_2 < \ldots < i_k < j_1 < j_2 < \ldots< j_k$. A diagram without any
+$k$-crossings is called a $k$-noncrossing diagram and a stack of length
+$\sigma$ is a maximal sequence
+$((i,j),(i+1,j-1),\dots,(i+(\sigma-1),j-(\sigma-1)))$. A diagram is
+$\sigma$-modular if any arc is contained in a stack of length at least
+$\sigma$. Our algorithm generates after $O(n^k)$ preprocessing time,
+  $k$-noncrossing, $\sigma$-modular diagrams in $O(n)$ time and space
+complexity.

@@ -1,0 +1,21 @@
+We investigate the parameterized complexity of Vertex Cover parameterized by
+the difference between the size of the optimal solution and the value of the
+linear programming (LP) relaxation of the problem. By carefully analyzing the
+change in the LP value in the branching steps, we argue that combining
+previously known preprocessing rules with the most straightforward branching
+algorithm yields an $O^*((2.618)^k)$ algorithm for the problem. Here $k$ is the
+excess of the vertex cover size over the LP optimum, and we write $O^*(f(k))$
+for a time complexity of the form $O(f(k)n^{O(1)})$, where $f (k)$ grows
+exponentially with $k$. We proceed to show that a more sophisticated branching
+algorithm achieves a runtime of $O^*(2.3146^k)$.
+  Following this, using known and new reductions, we give $O^*(2.3146^k)$
+algorithms for the parameterized versions of Above Guarantee Vertex Cover, Odd
+Cycle Transversal, Split Vertex Deletion and Almost 2-SAT, and an
+$O^*(1.5214^k)$ algorithm for Ko\"nig Vertex Deletion, Vertex Cover Param by
+OCT and Vertex Cover Param by KVD. These algorithms significantly improve the
+best known bounds for these problems. The most notable improvement is the new
+bound for Odd Cycle Transversal - this is the first algorithm which beats the
+dependence on $k$ of the seminal $O^*(3^k)$ algorithm of Reed, Smith and Vetta.
+Finally, using our algorithm, we obtain a kernel for the standard
+parameterization of Vertex Cover with at most $2k - c \log k$ vertices. Our
+kernel is simpler than previously known kernels achieving the same size bound.

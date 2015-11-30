@@ -1,0 +1,22 @@
+A digraph is $m$-labelled if every arc is labelled by an integer in $\{1,
+\dots,m\}$. Motivated by wavelength assignment for multicasts in optical
+networks, we introduce and study $n$-fibre colourings of labelled digraphs.
+These are colourings of the arcs of $D$ such that at each vertex $v$, and for
+each colour $\alpha$, $in(v,\alpha)+out(v,\alpha)\leq n$ with $in(v,\alpha)$
+the number of arcs coloured $\alpha$ entering $v$ and $out(v,\alpha)$ the
+number of labels $l$ such that there is at least one arc of label $l$ leaving
+$v$ and coloured with $\alpha$. The problem is to find the minimum number of
+colours $\lambda_n(D)$ such that the $m$-labelled digraph $D$ has an $n$-fibre
+colouring. In the particular case when $D$ is $1$-labelled, $\lambda_1(D)$ is
+called the directed star arboricity of $D$, and is denoted by $dst(D)$. We
+first show that $dst(D)\leq 2\Delta^-(D)+1$, and conjecture that if
+$\Delta^-(D)\geq 2$, then $dst(D)\leq 2\Delta^-(D)$. We also prove that for a
+subcubic digraph $D$, then $dst(D)\leq 3$, and that if $\Delta^+(D),
+\Delta^-(D)\leq 2$, then $dst(D)\leq 4$. Finally, we study
+$\lambda_n(m,k)=\max\{\lambda_n(D) \tq D \mbox{is $m$-labelled} \et
+\Delta^-(D)\leq k\}$. We show that if $m\geq n$, then $\ds
+\left\lceil\frac{m}{n}\left\lceil \frac{k}{n}\right\rceil + \frac{k}{n}
+\right\rceil\leq \lambda_n(m,k) \leq\left\lceil\frac{m}{n}\left\lceil
+\frac{k}{n}\right\rceil + \frac{k}{n} \right\rceil + C \frac{m^2\log k}{n}$ for
+some constant $C$. We conjecture that the lower bound should be the right value
+of $\lambda_n(m,k)$.

@@ -1,0 +1,16 @@
+A k-queue layout of a graph consists of a total order of the vertices, and a
+partition of the edges into k sets such that no two edges that are in the same
+set are nested with respect to the vertex ordering. A k-track layout of a graph
+consists of a vertex k-colouring, and a total order of each vertex colour
+class, such that between each pair of colour classes no two edges cross. The
+queue-number (track-number) of a graph G, is the minimum k such that G has a
+k-queue (k-track) layout.
+  This paper proves that every n-vertex planar graph has track number and queue
+number at most O(log n). This improves the result of Di Battista, Frati and
+Pach [Foundations of Computer Science, (FOCS '10), pp. 365--374] who proved the
+first sub-polynomial bounds on the queue number and track number of planar
+graphs. Specifically, they obtained O(log^2 n) queue number and O(log^8 n)
+track number bounds for planar graphs.
+  The result also implies that every planar graph has a 3D crossing-free grid
+drawing in O(n log n) volume. The proof uses a non-standard type of graph
+separators.

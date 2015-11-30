@@ -1,0 +1,16 @@
+We consider the problem of finding \textit{semi-matching} in bipartite graphs
+which is also extensively studied under various names in the scheduling
+literature. We give faster algorithms for both weighted and unweighted case.
+  For the weighted case, we give an $O(nm\log n)$-time algorithm, where $n$ is
+the number of vertices and $m$ is the number of edges, by exploiting the
+geometric structure of the problem. This improves the classical $O(n^3)$
+algorithms by Horn [Operations Research 1973] and Bruno, Coffman and Sethi
+[Communications of the ACM 1974].
+  For the unweighted case, the bound could be improved even further. We give a
+simple divide-and-conquer algorithm which runs in $O(\sqrt{n}m\log n)$ time,
+improving two previous $O(nm)$-time algorithms by Abraham [MSc thesis,
+University of Glasgow 2003] and Harvey, Ladner, Lov\'asz and Tamir [WADS 2003
+and Journal of Algorithms 2006]. We also extend this algorithm to solve the
+\textit{Balance Edge Cover} problem in $O(\sqrt{n}m\log n)$ time, improving the
+previous $O(nm)$-time algorithm by Harada, Ono, Sadakane and Yamashita [ISAAC
+2008].

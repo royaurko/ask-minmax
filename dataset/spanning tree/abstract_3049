@@ -1,0 +1,12 @@
+Previous algorithms for constructing regression tree models for longitudinal
+and multiresponse data have mostly followed the CART approach. Consequently,
+they inherit the same selection biases and computational difficulties as CART.
+We propose an alternative, based on the GUIDE approach, that treats each
+longitudinal data series as a curve and uses chi-squared tests of the residual
+curve patterns to select a variable to split each node of the tree. Besides
+being unbiased, the method is applicable to data with fixed and random time
+points and with missing values in the response or predictor variables.
+Simulation results comparing its mean squared prediction error with that of
+MVPART are given, as well as examples comparing it with standard linear mixed
+effects and generalized estimating equation models. Conditions for asymptotic
+consistency of regression tree function estimates are also given.

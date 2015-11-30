@@ -1,0 +1,17 @@
+Performing link adaptation in a multiantenna and multiuser system is
+challenging because of the coupling between precoding, user selection, spatial
+mode selection and use of limited feedback about the channel. The problem is
+exacerbated by the difficulty of selecting the proper modulation and coding
+scheme when using orthogonal frequency division multiplexing (OFDM). This paper
+presents a data-driven approach to link adaptation for multiuser multiple input
+mulitple output (MIMO) OFDM systems. A machine learning classifier is used to
+select the modulation and coding scheme, taking as input the SNR values in the
+different subcarriers and spatial streams. A new approximation is developed to
+estimate the unknown interuser interference due to the use of limited feedback.
+This approximation allows to obtain SNR information at the transmitter with a
+minimum communication overhead. A greedy algorithm is used to perform spatial
+mode and user selection with affordable complexity, without resorting to an
+exhaustive search. The proposed adaptation is studied in the context of the
+IEEE 802.11ac standard, and is shown to schedule users and adjust the
+transmission parameters to the channel conditions as well as to the rate of the
+feedback channel.

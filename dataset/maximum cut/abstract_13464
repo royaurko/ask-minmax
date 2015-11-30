@@ -1,0 +1,12 @@
+Restricted solid on solid surface growth models can be mapped onto binary
+lattice gases. We show that efficient simulation algorithms can be realized on
+GPUs either by CUDA or by OpenCL programming. We consider a
+deposition/evaporation model following Kardar-Parisi-Zhang growth in 1+1
+dimensions related to the Asymmetric Simple Exclusion Process and show that for
+sizes, that fit into the shared memory of GPUs one can achieve the maximum
+parallelization speedup ~ x100 for a Quadro FX 5800 graphics card with respect
+to a single CPU of 2.67 GHz). This permits us to study the effect of quenched
+columnar disorder, requiring extremely long simulation times. We compare the
+CUDA realization with an OpenCL implementation designed for processor clusters
+via MPI. A two-lane traffic model with randomized turning points is also
+realized and the dynamical behavior has been investigated.

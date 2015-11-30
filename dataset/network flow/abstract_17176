@@ -1,0 +1,10 @@
+We propose a simple, stable and distributed algorithm which directly
+optimizes the nonconvex maximum likelihood criterion for sensor network
+localization, with no need to tune any free parameter. We reformulate the
+problem to obtain a gradient Lipschitz cost; by shifting to this cost function
+we enable a Majorization-Minimization (MM) approach based on quadratic upper
+bounds that decouple across nodes; the resulting algorithm happens to be
+distributed, with all nodes working in parallel. Our method inherits the MM
+stability: each communication cuts down the cost function. Numerical
+simulations indicate that the proposed approach tops the performance of the
+state of the art algorithm, both in accuracy and communication cost.

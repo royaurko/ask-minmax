@@ -1,0 +1,16 @@
+Topic models, such as latent Dirichlet allocation (LDA), can be useful tools
+for the statistical analysis of document collections and other discrete data.
+The LDA model assumes that the words of each document arise from a mixture of
+topics, each of which is a distribution over the vocabulary. A limitation of
+LDA is the inability to model topic correlation even though, for example, a
+document about genetics is more likely to also be about disease than X-ray
+astronomy. This limitation stems from the use of the Dirichlet distribution to
+model the variability among the topic proportions. In this paper we develop the
+correlated topic model (CTM), where the topic proportions exhibit correlation
+via the logistic normal distribution [J. Roy. Statist. Soc. Ser. B 44 (1982)
+139--177]. We derive a fast variational inference algorithm for approximate
+posterior inference in this model, which is complicated by the fact that the
+logistic normal is not conjugate to the multinomial. We apply the CTM to the
+articles from Science published from 1990--1999, a data set that comprises 57M
+words. The CTM gives a better fit of the data than LDA, and we demonstrate its
+use as an exploratory tool of large document collections.

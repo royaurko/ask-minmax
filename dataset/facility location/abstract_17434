@@ -1,0 +1,20 @@
+Mass spectrometry provides a high-throughput approach to identify proteins in
+biological samples. A key step in the analysis of mass spectrometry data is to
+identify the peptide sequence that, most probably, gave rise to each observed
+spectrum. This is often tackled using a database search: each observed spectrum
+is compared against a large number of theoretical "expected" spectra predicted
+from candidate peptide sequences in a database, and the best match is
+identified using some heuristic scoring criterion. Here we provide a more
+principled, likelihood-based, scoring criterion for this problem. Specifically,
+we introduce a probabilistic model that allows one to assess, for each
+theoretical spectrum, the probability that it would produce the observed
+spectrum. This probabilistic model takes account of peak locations and
+intensities, in both observed and theoretical spectra, which enables
+incorporation of detailed knowledge of chemical plausibility in peptide
+identification. Besides placing peptide scoring on a sounder theoretical
+footing, the likelihood-based score also has important practical benefits: it
+provides natural measures for assessing the uncertainty of each identification,
+and in comparisons on benchmark data it produced more accurate peptide
+identifications than other methods, including SEQUEST. Although we focus here
+on peptide identification, our scoring rule could easily be integrated into any
+downstream analyses that require peptide-spectrum match scores.

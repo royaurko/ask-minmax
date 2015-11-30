@@ -1,0 +1,18 @@
+We introduce the Hawkes process with renewal immigration and make its
+statistical estimation possible with two Expectation Maximization (EM)
+algorithms. The standard Hawkes process introduces immigrant points via a
+Poisson process, and each immigrant has a subsequent cluster of associated
+offspring of multiple generations. We generalize the immigration to come from a
+Renewal process; introducing dependence between neighbouring clusters, and
+allowing for over/under dispersion in cluster locations. This complicates
+evaluation of the likelihood since one needs to know which subset of the
+observed points are immigrants. Two EM algorithms enable estimation here: The
+first is an extension of an existing algorithm that treats the entire branching
+structure - which points are immigrants, and which point is the parent of each
+offspring - as missing data. The second considers only if a point is an
+immigrant or not as missing data and can be implemented with linear time
+complexity. Both algorithms are found to be consistent in simulation studies.
+Further, we show that misspecifying the immigration process introduces
+signficant bias into model estimation-- especially the branching ratio, which
+quantifies the strength of self excitation. Thus, this extended model provides
+a valuable alternative model in practice.

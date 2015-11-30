@@ -1,0 +1,28 @@
+Given a closed, bounded convex set $\mathcal{W}\subset{\mathbb {R}}^d$ with
+nonempty interior, we consider a control problem in which the state process $W$
+and the control process $U$ satisfy \[W_t= w_0+\int_0^t\vartheta(W_s)
+ds+\int_0^t\sigma(W_s) dZ_s+GU_t\in \mathcal{W},\qquad t\ge0,\] where $Z$ is a
+standard, multi-dimensional Brownian motion, $\vartheta,\sigma\in
+C^{0,1}(\mathcal{W})$, $G$ is a fixed matrix, and $w_0\in\mathcal{W}$. The
+process $U$ is locally of bounded variation and has increments in a given
+closed convex cone $\mathcal{U}\subset{\mathbb{R}}^p$. Given $g\in
+C(\mathcal{W})$, $\kappa\in{\mathbb{R}}^p$, and $\alpha>0$, consider the
+objective that is to minimize the cost
+\[J(w_0,U)\doteq\mathbb{E}\biggl[\int_0^{\infty}e^{-\alpha s}g(W_s)
+ds+\int_{[0,\infty)}e^{-\alpha s} d(\kappa\cdot U_s)\biggr]\] over the
+admissible controls $U$. Both $g$ and $\kappa\cdot u$ ($u\in\mathcal{U}$) may
+take positive and negative values. This paper studies the corresponding dynamic
+programming equation (DPE), a second-order degenerate elliptic partial
+differential equation of HJB-type with a state constraint boundary condition.
+Under the controllability condition $G\mathcal{U}={\mathbb{R}}^d$ and the
+finiteness of $\mathcal{H}(q)=\sup_{u\in\mathcal{U}_1}\{-Gu\cdot q-\kappa\cdot
+u\}$, $q\in {\mathbb{R}}^d$, where $\mathcal{U}_1=\{u\in\mathcal{U}:|Gu|=1\}$,
+we show that the cost, that involves an improper integral, is well defined. We
+establish the following: (i) the value function for the control problem
+satisfies the DPE (in the viscosity sense), and (ii) the condition
+$\inf_{q\in{\mathbb{R}}^d}\mathcal{H}(q)<0$ is necessary and sufficient for
+uniqueness of solutions to the DPE. The existence and uniqueness of solutions
+are shown to be connected to an intuitive ``no arbitrage'' condition. Our
+results apply to Brownian control problems that represent formal diffusion
+approximations to control problems associated with stochastic processing
+networks.

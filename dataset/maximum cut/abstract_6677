@@ -1,0 +1,11 @@
+In this paper we present an O(n log n) algorithm for finding a maximum flow
+in a directed planar graph, where the vertices are subject to capacity
+constraints, in addition to the arcs. If the source and the sink are on the
+same face, then our algorithm can be implemented in O(n) time.
+  For general (not planar) graphs, vertex capacities do not make the problem
+more difficult, as there is a simple reduction that eliminates vertex
+capacities. However, this reduction does not preserve the planarity of the
+graph. The essence of our algorithm is a different reduction that does preserve
+the planarity, and can be implemented in linear time. For the special case of
+undirected planar graph, an algorithm with the same time complexity was
+recently claimed, but we show that it has a flaw.

@@ -1,0 +1,11 @@
+We consider the reachability problem for timed automata. A standard solution
+to this problem involves computing a search tree whose nodes are abstractions
+of zones. For efficiency reasons, they are parametrized by the maximal lower
+and upper bounds (LU-bounds) occurring in the guards of the automaton. We
+propose an algorithm that is updating LU-bounds during exploration of the
+search tree. In order to keep them as small as possible, the bounds are refined
+only when they enable a transition that is impossible in the unabstracted
+system. So our algorithm can be seen as a kind of lazy CEGAR algorithm for
+timed automata. We show that on several standard benchmarks, the algorithm is
+capable of keeping very small LU-bounds, and in consequence reduce the search
+space substantially.

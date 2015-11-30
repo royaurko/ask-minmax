@@ -1,0 +1,16 @@
+We consider the problem of estimating a sparse precision matrix of a
+multivariate Gaussian distribution, including the case where the dimension $p$
+is large. Gaussian graphical models provide an important tool in describing
+conditional independence through presence or absence of the edges in the
+underlying graph. A popular non-Bayesian method of estimating a graphical
+structure is given by the graphical lasso. In this paper, we consider a
+Bayesian approach to the problem. We use priors which put a mixture of a point
+mass at zero and certain absolutely continuous distribution on off-diagonal
+elements of the precision matrix. Hence the resulting posterior distribution
+can be used for graphical structure learning. The posterior convergence rate of
+the precision matrix is obtained. The posterior distribution on the model space
+is extremely cumbersome to compute. We propose a fast computational method for
+approximating the posterior probabilities of various graphs using the Laplace
+approximation approach by expanding the posterior density around the posterior
+mode, which is the graphical lasso by our choice of the prior distribution. We
+also provide estimates of the accuracy in the approximation.

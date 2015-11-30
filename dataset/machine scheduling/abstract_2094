@@ -1,0 +1,16 @@
+The paper presents three self-stabilizing protocols for basic fair and
+reliable link communication primitives. We assume a link-register communication
+model under read/write atomicity, where every process can read from but cannot
+write into its neighbours' registers. The first primitive guarantees that any
+process writes a new value in its register(s) only after all its neighbours
+have read the previous value, whatever the initial scheduling of processes'
+actions. The second primitive implements a "weak rendezvous" communication
+mechanism by using an alternating bit protocol: whenever a process
+consecutively writes n values (possibly the same ones) in a register, each
+neighbour is guaranteed to read each value from the register at least once. On
+the basis of the previous protocol, the third primitive implements a "quasi
+rendezvous": in words, this primitive ensures furthermore that there exists
+exactly one reading between two writing operations All protocols are
+self-stabilizing and run in asynchronous arbitrary networks. The goal of the
+paper is in handling each primitive by a separate procedure, which can be used
+as a "black box" in more involved self-stabilizing protocols.

@@ -1,0 +1,15 @@
+We are given a set of $n$ jobs and a single processor that can vary its speed
+dynamically. Each job $J_j$ is characterized by its processing requirement
+(work) $p_j$, its release date $r_j$ and its deadline $d_j$. We are also given
+a budget of energy $E$ and we study the scheduling problem of maximizing the
+throughput (i.e. the number of jobs which are completed on time). We propose a
+dynamic programming algorithm that solves the preemptive case of the problem,
+i.e. when the execution of the jobs may be interrupted and resumed later, in
+pseudo-polynomial time. Our algorithm can be adapted for solving the weighted
+version of the problem where every job is associated with a weight $w_j$ and
+the objective is the maximization of the sum of the weights of the jobs that
+are completed on time. Moreover, we provide a strongly polynomial time
+algorithm to solve the non-preemptive unweighed case when the jobs have the
+same processing requirements. For the weighted case, our algorithm can be
+adapted for solving the non-preemptive version of the problem in
+pseudo-polynomial time.

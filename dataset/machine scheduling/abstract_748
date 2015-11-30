@@ -1,0 +1,18 @@
+We propose Neural Transformation Machine (NTram), a novel architecture for
+sequence-to-sequence learning, which performs the task through a series of
+nonlinear transformations from the representation of the input sequence (e.g.,
+a Chinese sentence) to the final output sequence (e.g., translation to
+English). Inspired by the recent Neural Turing Machines [8], we store the
+intermediate representations in stacked layers of memories, and use read-write
+operations on the memories to realize the nonlinear transformations of those
+representations. Those transformations are designed in advance but the
+parameters are learned from data. Through layer-by-layer transformations, NTram
+can model complicated relations necessary for applications such as machine
+translation between distant languages. The architecture can be trained with
+normal back-propagation on parallel texts, and the learning can be easily
+scaled up to a large corpus. NTram is broad enough to subsume the
+state-of-the-art neural translation model in [2] as its special case, while
+significantly improves upon the model with its deeper architecture. Remarkably,
+NTram, being purely neural network-based, can achieve performance comparable to
+the traditional phrase-based machine translation system (Moses) with a small
+vocabulary and a modest parameter size.

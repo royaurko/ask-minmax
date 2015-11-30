@@ -1,0 +1,11 @@
+Dealing with asymmetry in the architecture opens a plethora of questions from
+the perspective of scheduling task-parallel applications, and there exist early
+attempts to address this problem via ad-hoc strategies embedded into a runtime
+framework. In this paper we take a different path, which consists in addressing
+the complexity of the problem at the library level, via a few asymmetry-aware
+fundamental kernels, hiding the architecture heterogeneity from the task
+scheduler. For the specific domain of dense linear algebra, we show that this
+is not only possible but delivers much higher performance than a naive approach
+based on an asymmetry-oblivious scheduler. Furthermore, this solution also
+outperforms an ad-hoc asymmetry-aware scheduler furnished with sophisticated
+scheduling techniques.

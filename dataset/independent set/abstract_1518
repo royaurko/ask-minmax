@@ -1,0 +1,11 @@
+We develop, implement and test a set of algorithms for estimating N-point
+correlation functions from pixelized sky maps. These algorithms are slow, in
+the sense that they do not break the O(N_pix^N) barrier, and yet, they are fast
+enough for efficient analysis of data sets up to several hundred thousand
+pixels. The typical application of these methods is Monte Carlo analysis using
+several thousand realizations, and therefore we organize our programs so that
+the initialization cost is paid only once. The effective cost is then reduced
+to a few additions per pixel multiplet (pair, triplet etc.). Further, the
+algorithms waste no CPU time on computing undesired geometric configurations,
+and, finally, the computations are naturally divided into independent parts,
+allowing for trivial (i.e., optimal) parallelization.

@@ -1,0 +1,17 @@
+We propose a new matching algorithm, called DeepMatching, to compute dense
+correspondences between images. DeepMatching relies on a deep, multi-layer,
+convolutional architecture designed for matching images. The proposed matching
+algorithm can handle non-rigid deformations and repetitive textures, and can
+therefore efficiently determine dense correspondences in the presence of
+significant changes between images. We evaluate the performance of
+DeepMatching, in comparison with state-of-the-art matching algorithms, on resp.
+the Mikolajczyk, the MPI-Sintel and the Kitti datasets. The performance measure
+is "Accuracy@T" , that is the percentage of correct pixels for a specified
+error threshold of T pixels. Deep-Matching outperforms the state-of-the-art
+algorithms in terms of accuracy@T and shows excellent results in particular for
+repetitive textures. We also propose a method for estimating optical flow,
+called DeepFlow, by integrating a DeepMatching term in a variational energy
+minimization approach. Robustness to large displacements is obtained due to
+this matching term. DeepFlow obtains competitive performance on public
+benchmarks for optical flow estimation. In particular, DeepFlow obtains
+state-of-the-art results on the MPI-Sintel dataset.

@@ -1,0 +1,19 @@
+Numerical solutions of the eikonal (Hamilton-Jacobi) equation for
+transversely isotropic (TI) media are essential for imaging and traveltime
+tomography applications. Such solutions, however, suffer from the inherent
+higher-order nonlinearity of the TI eikonal equation, which requires solving a
+quartic polynomial for every grid point. Analytical solutions of the quartic
+polynomial yield numerically unstable formulations. Thus, we need to utilize a
+numerical root finding algorithm, adding significantly to the computational
+load. Using perturbation theory we approximate, in a first order discretized
+form, the TI eikonal equation with a series of simpler equations for the
+coefficients of a polynomial expansion of the eikonal solution, in terms of the
+anellipticity anisotropic parameter. Such perturbation, applied to the
+discretized form of the eikonal equation, does not impose any restrictions on
+the complexity of the perturbed parameter field. Therefore, it provides
+accurate traveltime solutions even for models with complex distribution of
+velocity and anisotropic anellipticity parameter, such as that for the
+complicated Marmousi model. The formulation allows for large cost reduction
+compared to using the exact TI eikonal solver. Furthermore, comparative tests
+with previously developed approximations illustrate remarkable gain in accuracy
+in the proposed algorithm, without any addition to the computational cost.

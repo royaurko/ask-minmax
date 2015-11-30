@@ -1,0 +1,20 @@
+The question of the state-size cost for simulation of two-way
+nondeterministic automata (2NFAs) by two-way deterministic automata (2DFAs) was
+raised in 1978 and, despite many attempts, it is still open. Subsequently, the
+problem was attacked by restricting the power of 2DFAs (e.g., using a
+restricted input head movement) to the degree for which it was already possible
+to derive some exponential gaps between the weaker model and the standard
+2NFAs. Here we use an opposite approach, increasing the power of 2DFAs to the
+degree for which it is still possible to obtain a subexponential conversion
+from the stronger model to the standard 2DFAs. In particular, it turns out that
+subexponential conversion is possible for two-way automata that make
+nondeterministic choices only when the input head scans one of the input tape
+endmarkers. However, there is no restriction on the input head movement. This
+implies that an exponential gap between 2NFAs and 2DFAs can be obtained only
+for unrestricted 2NFAs using capabilities beyond the proposed new model. As an
+additional bonus, conversion into a machine for the complement of the original
+language is polynomial in this model. The same holds for making such machines
+self-verifying, halting, or unambiguous. Finally, any superpolynomial lower
+bound for the simulation of such machines by standard 2DFAs would imply L<>NL.
+In the same way, the alternating version of these machines is related to L =?
+NL =? P, the classical computational complexity problems.

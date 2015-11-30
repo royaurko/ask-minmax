@@ -1,0 +1,17 @@
+We present a new class of integrators for stiff PDEs. These integrators are
+generalizations of FLow AVeraging integratORS (FLAVORS) for stiff ODEs and SDEs
+introduced in [Tao, Owhadi and Marsden 2010] with the following properties: (i)
+Multiscale: they are based on flow averaging and have a computational cost
+determined by mesoscopic steps in space and time instead of microscopic steps
+in space and time; (ii) Versatile: the method is based on averaging the flows
+of the given PDEs (which may have hidden slow and fast processes). This
+bypasses the need for identifying explicitly (or numerically) the slow
+variables or reduced effective PDEs; (iii) Nonintrusive: A pre-existing
+numerical scheme resolving the microscopic time scale can be used as a black
+box and easily turned into one of the integrators in this paper by turning the
+large coefficients on over a microscopic timescale and off during a mesoscopic
+timescale; (iv) Convergent over two scales: strongly over slow processes and in
+the sense of measures over fast ones; (v) Structure-preserving: for stiff
+Hamiltonian PDEs (possibly on manifolds), they can be made to be
+multi-symplectic, symmetry-preserving (symmetries are group actions that leave
+the system invariant) in all variables and variational.

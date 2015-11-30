@@ -1,0 +1,16 @@
+We consider the decision problem for quantifier-free formulas whose atoms are
+linear inequalities interpreted over the reals or rationals. This problem may
+be decided using satisfiability modulo theory (SMT), using a mixture of a SAT
+solver and a simplex-based decision procedure for conjunctions.
+State-of-the-art SMT solvers use simplex implementations over rational numbers,
+which perform well for typical problems arising from model-checking and program
+analysis (sparse inequalities, small coefficients) but are slow for other
+applications (denser problems, larger coefficients). We propose a simple
+preprocessing phase that can be adapted on existing SMT solvers and that may be
+optionally triggered. Despite using floating-point computations, our method is
+sound and complete - it merely affects efficiency. We implemented the method
+and provide benchmarks showing that this change brings a naive and slow
+decision procedure ("textbook simplex" with rational numbers) up to the
+efficiency of recent SMT solvers, over test cases arising from model-checking,
+and makes it definitely faster than state-of-the-art SMT solvers on dense
+examples.

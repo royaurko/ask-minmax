@@ -1,0 +1,21 @@
+We are given n base elements and a finite collection of subsets of them. The
+size of any subset varies between p to k (p < k). In addition, we assume that
+the input contains all possible subsets of size p. Our objective is to find a
+subcollection of minimum-cardinality which covers all the elements. This
+problem is known to be NP-hard. We provide two approximation algorithms for it,
+one for the generic case, and an improved one for the special case of (p,k) =
+(2,4). The algorithm for the generic case is a greedy one, based on packing
+phases: at each phase we pick a collection of disjoint subsets covering i new
+elements, starting from i = k down to i = p+1. At a final step we cover the
+remaining base elements by the subsets of size p. We derive the exact
+performance guarantee of this algorithm for all values of k and p, which is
+less than Hk, where Hk is the k'th harmonic number. However, the algorithm
+exhibits the known improvement methods over the greedy one for the unweighted
+k-set cover problem (in which subset sizes are only restricted not to exceed
+k), and hence it serves as a benchmark for our improved algorithm. The improved
+algorithm for the special case of (p,k) = (2,4) is based on non-oblivious local
+search: it starts with a feasible cover, and then repeatedly tries to replace
+sets of size 3 and 4 so as to maximize an objective function which prefers big
+sets over small ones. For this case, our generic algorithm achieves an
+asymptotic approximation ratio of 1.5 + epsilon, and the local search algorithm
+achieves a better ratio, which is bounded by 1.458333... + epsilon.

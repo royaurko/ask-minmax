@@ -1,0 +1,25 @@
+We present optimal competitive algorithms for two interrelated known problems
+involving Steiner Arborescence. One is the continuous problem of the Symmetric
+Rectilinear Steiner Arborescence (SRSA), studied by Berman and Coulston.
+  A very related, but discrete problem (studied separately in the past) is the
+online Multimedia Content Delivery (MCD) problem on line networks, presented
+originally by Papadimitriu, Ramanathan, and Rangan. An efficient content
+delivery was modeled as a low cost Steiner arborescence in a grid of
+network*time they defined. We study here the version studied by Charikar,
+Halperin, and Motwani (who used the same problem definitions, but removed some
+constraints on the inputs).
+  The bounds on the competitive ratios introduced separately in the above
+papers are similar for the two problems: O(log N) for the continuous problem
+and O(log n) for the network problem, where N was the number of terminals to
+serve, and n was the size of the network. The lower bounds were Omega(sqrt{log
+N}) and Omega(sqrt{log n}) correspondingly. Berman and Coulston conjectured
+that both the upper bound and the lower bound could be improved.
+  We disprove this conjecture and close these quadratic gaps for both problems.
+We first present an O(sqrt{log n}) deterministic competitive algorithm for MCD
+on the line, matching the lower bound. We then translate this algorithm to
+become a competitive optimal algorithm O(sqrt{log N}) for SRSA. Finally, we
+translate the latter back to solve MCD problem, this time competitive optimally
+even in the case that the number of requests is small (that is, O(min{sqrt{log
+n},sqrt{log N}})). We also present a Omega(sqrt[3]{log n}) lower bound on the
+competitiveness of any randomized algorithm. Some of the techniques may be
+useful in other contexts.

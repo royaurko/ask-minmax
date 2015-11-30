@@ -1,0 +1,12 @@
+For a graph $G$, let $t(G)$ denote the maximum number of vertices in an
+induced subgraph of $G$ that is a tree. Further, for a vertex $v\in V(G)$, let
+$t^v(G)$ denote the maximum number of vertices in an induced subgraph of $G$
+that is a tree, with the extra condition that the tree must contain $v$. The
+minimum of $t(G)$ ($t^v(G)$, respectively) over all connected triangle-free
+graphs $G$ (and vertices $v\in V(G)$) on $n$ vertices is denoted by $t_3(n)$
+($t_3^v(n)$). Clearly, $t^v(G)\le t(G)$ for all $v\in V(G)$. In this note, we
+solve the extremal problem of maximizing $|G|$ for given $t^v(G)$, given that
+$G$ is connected and triangle-free. We show that $|G|\le
+1+\frac{(t_v(G)-1)t_v(G)}{2}$ and determine the unique extremal graphs. Thus,
+we get as corollary that $t_3(n)\ge t_3^v(n)=\lceil
+{1/2}(1+\sqrt{8n-7})\rceil$, improving a recent result by Fox, Loh and Sudakov.

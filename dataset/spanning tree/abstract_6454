@@ -1,0 +1,15 @@
+We study computational aspects of the nonparametric maximum likelihood
+estimator (NPMLE) for the distribution function of bivariate interval censored
+data. The computation of the NPMLE consists of two steps: a parameter reduction
+step and an optimization step. In this paper we focus on the reduction step. We
+introduce two new reduction algorithms: the Tree algorithm and the HeightMap
+algorithm. The Tree algorithm is only mentioned briefly. The HeightMap
+algorithm is discussed in detail and also given in pseudo code. It is a very
+fast and simple algorithm of time complexity O(n^2). This is an order faster
+than the best known algorithm thus far, the O(n^3) algorithm of Bogaerts and
+Lesaffre (2003). We compare our algorithms with the algorithms of Gentleman and
+Vandal (2001), Song (2001) and Bogaerts and Lesaffre (2003), using simulated
+data. We show that our algorithms, and especially the HeightMap algorithm, are
+significantly faster. Finally, we point out that the HeightMap algorithm can be
+easily generalized to d-dimensional data with d>2. Such a multivariate version
+of the HeightMap algorithm has time complexity O(n^d).

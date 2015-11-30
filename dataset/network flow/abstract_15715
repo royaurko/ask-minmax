@@ -1,0 +1,18 @@
+A current trend in networking and cloud computing is to provide compute
+resources at widely dispersed places; this is exemplified by developments such
+as Network Function Virtualisation. This paves the way for wide-area service
+deployments with improved service quality: e.g, a nearby server can reduce the
+user-perceived response times. But always using the nearest server can be a bad
+decision if that server is already highly utilised. This paper formalises the
+two related problems of allocating resources at different locations and
+assigning users to them with the goal of minimising the response times for a
+given number of resources to use -- a non-linear capacitated facility location
+problem with integrated queuing systems. To efficiently handle the
+non-linearity, we introduce five linear problem approximations and adapt the
+currently best heuristic for a similar problem to our scenario. All six
+approaches are compared in experiments for solution quality and solving time.
+Surprisingly, our best optimisation formulation outperforms the heuristic in
+both time and quality. Additionally, we evaluate the influence ot resource
+distributions in the network on the response time: Cut by half for some
+configurations. The presented formulations are applicable to a broader
+optimisation domain.

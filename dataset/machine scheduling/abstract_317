@@ -1,0 +1,12 @@
+Semistructured databases require tailor-made concurrency control mechanisms
+since traditional solutions for the relational model have been shown to be
+inadequate. Such mechanisms need to take full advantage of the hierarchical
+structure of semistructured data, for instance allowing concurrent updates of
+subtrees of, or even individual elements in, XML documents. We present an
+approach for concurrency control which is document-independent in the sense
+that two schedules of semistructured transactions are considered equivalent if
+they are equivalent on all possible documents. We prove that it is decidable in
+polynomial time whether two given schedules in this framework are equivalent.
+This also solves the view serializability for semistructured schedules
+polynomially in the size of the schedule and exponentially in the number of
+transactions.

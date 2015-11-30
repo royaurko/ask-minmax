@@ -1,0 +1,14 @@
+We present new distributed algorithms for constructing a Steiner Forest in
+the CONGEST model. Our deterministic algorithm finds, for any given constant
+$\epsilon>0$, a $(2+\epsilon)$-approximation in
+$\tilde{O}(sk+\sqrt{\min(st,n)})$ rounds, where $s$ is the shortest path
+diameter, $t$ is the number of terminals, $k$ is the number of terminal
+components in the input, and $n$ is the number of nodes. Our randomized
+algorithm finds, with high probability, an $O(\log n)$- approximation in time
+$\tilde{O}(k+\min(s,\sqrt n)+D)$, where $D$ is the unweighted diameter of the
+network. We also prove a matching lower bound of
+$\tilde{\Omega}(k+\min(s,\sqrt{n})+D)$ on the running time of any distributed
+approximation algorithm for the Steiner Forest problem. Previous algorithms
+were randomized, and obtained either an $O(\log n)$-approximation in
+$\tilde{O}(sk)$ time, or an $O(1/\epsilon)$-approximation in
+$\tilde{O}((\sqrt{n}+t)^{1+\epsilon}+D)$ time.

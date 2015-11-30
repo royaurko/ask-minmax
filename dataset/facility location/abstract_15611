@@ -1,0 +1,21 @@
+A coupled continuum-discrete numerical model is presented to study the
+synthesis of TiC nanosized aggregates during a self-propagating combustion
+synthesis (SHS) process. The overall model describes the transient of the basic
+mechanisms governing the SHS process in a two-dimensional micrometer size
+geometry system. At each time step, the continuum (micrometer scale) model
+computes the current temperature field according to the prescribed boundary
+conditions. The overall system domain is discretized with a desired number of
+uniform computational cells. Each cell contains a convenient number of
+computation particles which represent the actual particles mixture. The
+particle-in-cell (discrete) model maps the temperature field from the
+(continuum) cells to the respective internal particles. Depending on the
+temperature reached by the cell, the titanium particles may undergo a
+solid-liquid transformation. If the distance between the carbon particle and
+the liquid titanium particles is within a certain tolerance they will react and
+a TiC particle will be formed in the cell. Accordingly, the molecular dynamic
+method will update the location of all particles in the cell and the amount of
+transformation heat accounted by the cell will be entered into the source term
+of the (continuum) heat conduction equation. The new temperature distribution
+will progress depending on the cells which will time-by-time undergo the
+chemical reaction. As a demonstration of the effectiveness of the overall model
+some paradigmatic examples are shown.

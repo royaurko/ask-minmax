@@ -1,0 +1,14 @@
+Our focus is on constructing a multiscale nonparametric prior for densities.
+The Bayes density estimation literature is dominated by single scale methods,
+with the exception of Polya trees, which favor overly-spiky densities even when
+the truth is smooth. We propose a multiscale Bernstein polynomial family of
+priors, which produce smooth realizations that do not rely on hard partitioning
+of the support. At each level in an infinitely-deep binary tree, we place a
+beta dictionary density; within a scale the densities are equivalent to
+Bernstein polynomials. Using a stick-breaking characterization, stochastically
+decreasing weights are allocated to the finer scale dictionary elements. A
+slice sampler is used for posterior computation, and properties are described.
+The method characterizes densities with locally-varying smoothness, and can
+produce a sequence of coarse to fine density estimates. An extension for
+Bayesian testing of group differences is introduced and applied to DNA
+methylation array data.

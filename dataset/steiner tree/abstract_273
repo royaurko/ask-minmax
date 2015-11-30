@@ -1,0 +1,22 @@
+We revisit the classical problem of computing the contour tree of a scalar
+field $f:\mathbb{M} \mapsto \mathbb{R}$, where $\mathbb{M}$ is a triangulated
+simplicial mesh in $\mathbb{R}^d$. The contour tree is a fundamental
+topological data structure that tracks the evolution of level sets of $f$ and
+has numerous applications in data analysis and visualization.
+  Roughly speaking, all existing algorithms require $\Omega(n\log n)$ time for
+all instances, since the first step is a global sort of the values of $f$
+(technically, only the critical points must be sorted, but these can be
+$\Omega(n)$). Existing lower bounds show that there are pathological instances
+where this sort is required. We present the first input-sensitive algorithm
+whose time complexity depends on the contour tree structure, and avoids the
+global sort for non-pathological inputs. Our results match all existing upper
+bounds, but also characterize the amount of sorting required to compute the
+contour tree. This leads to an almost linear (inverse Ackermann overhead) time
+algorithm for contour tree computation for many classes of natural instances.
+Specifically, our approach ensures that any comparison made is between nodes in
+the same descending path in the contour tree, allowing us to complement our
+algorithmic results with matching lower bounds for contour tree computation.
+  Our algorithm requires several novel ideas: partitioning $\mathbb{M}$ in
+well-behaved portions, a local growing procedure to iteratively build contour
+trees, and the use of heavy path decompositions for the time complexity
+analysis.

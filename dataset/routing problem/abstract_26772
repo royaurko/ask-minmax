@@ -1,0 +1,15 @@
+The projected subgradient method for constrained minimization repeatedly
+interlaces subgradient steps for the objective function with projections onto
+the feasible region, which is the intersection of closed and convex constraints
+sets, to regain feasibility. The latter poses a computational difficulty and,
+therefore, the projected subgradient method is applicable only when the
+feasible region is "simple to project onto". In contrast to this, in the
+superiorization methodology a feasibility-seeking algorithm leads the overall
+process and objective function steps are interlaced into it. This makes a
+difference because the feasibility-seeking algorithm employs projections onto
+the individual constraints sets and not onto the entire feasible region.
+  We present the two approaches side-by-side and demonstrate their performance
+on a problem of computerized tomography image reconstruction, posed as a
+constrained minimization problem aiming at finding a constraint-compatible
+solution that has a reduced value of the total variation of the reconstructed
+image.

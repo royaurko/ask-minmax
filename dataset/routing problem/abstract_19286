@@ -1,0 +1,20 @@
+Visual learning problems such as object classification and action recognition
+are typically approached using extensions of the popular bag-of-words (BoW)
+model. Despite its great success, it is unclear what visual features the BoW
+model is learning: Which regions in the image or video are used to discriminate
+among classes? Which are the most discriminative visual words? Answering these
+questions is fundamental for understanding existing BoW models and inspiring
+better models for visual recognition. To answer these questions, this paper
+presents a method for feature selection and region selection in the visual BoW
+model. This allows for an intermediate visualization of the features and
+regions that are important for visual learning. The main idea is to assign
+latent weights to the features or regions, and jointly optimize these latent
+variables with the parameters of a classifier (e.g., SVM). There are four main
+benefits of our approach: (1) Our approach accommodates non-linear additive
+kernels such as the popular Chi-square and intersection kernel; (2) our
+approach is able to handle both regions in images and spatio-temporal regions
+in videos in a unified way; (3) the feature selection problem is convex, and
+both problems can be solved using a scalable reduced gradient method; (4) we
+point out strong connections with multiple kernel learning and multiple
+instance learning approaches. Experimental results in the PASCAL VOC 2007, MSR
+Action Dataset II and YouTube illustrate the benefits of our approach.

@@ -1,0 +1,22 @@
+We give an algorithm for learning a mixture of {\em unstructured}
+distributions. This problem arises in various unsupervised learning scenarios,
+for example in learning {\em topic models} from a corpus of documents spanning
+several topics. We show how to learn the constituents of a mixture of $k$
+arbitrary distributions over a large discrete domain $[n]=\{1,2,\dots,n\}$ and
+the mixture weights, using $O(n\polylog n)$ samples. (In the topic-model
+learning setting, the mixture constituents correspond to the topic
+distributions.) This task is information-theoretically impossible for $k>1$
+under the usual sampling process from a mixture distribution. However, there
+are situations (such as the above-mentioned topic model case) in which each
+sample point consists of several observations from the same mixture
+constituent. This number of observations, which we call the {\em "sampling
+aperture"}, is a crucial parameter of the problem. We obtain the {\em first}
+bounds for this mixture-learning problem {\em without imposing any assumptions
+on the mixture constituents.} We show that efficient learning is possible
+exactly at the information-theoretically least-possible aperture of $2k-1$.
+Thus, we achieve near-optimal dependence on $n$ and optimal aperture. While the
+sample-size required by our algorithm depends exponentially on $k$, we prove
+that such a dependence is {\em unavoidable} when one considers general
+mixtures. A sequence of tools contribute to the algorithm, such as
+concentration results for random matrices, dimension reduction, moment
+estimations, and sensitivity analysis.

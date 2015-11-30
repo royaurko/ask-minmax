@@ -1,0 +1,18 @@
+Attitude estimation is often a prerequisite for control of the attitude or
+orientation of mechanical systems. Current attitude estimation algorithms use
+coordinate representations for the group of rigid body orientations. All
+coordinate representations of the group of orientations have associated
+problems. While minimal coordinate representations exhibit kinematic
+singularities for large rotations, non-minimal coordinates like quaternions
+require satisfaction of extra constraints. A deterministic attitude estimation
+problem for a rigid body with bounded measurement errors is considered here. An
+attitude estimation algorithm that globally minimizes the attitide estimation
+error, is obtained. Assuming that the initial attitude, the initial angular
+velocity and measurement noise lie within given ellipsoidal bounds, an
+uncertainty ellipsoid that bounds the attitude and the angular velocity of the
+rigid body is obtained. The center of the uncertainty ellipsoid provides point
+estimates, and the size of the uncertainty ellipsoid measures the accuracy of
+the estimates. The point estimates, and the uncertainty ellipsoids are
+propagated using a Lie group variational integrator, and its linearization,
+respectively. The attitude estimation is optimal in the sense that the attitude
+estimation error and the size of the uncertainty ellipsoid is minimized.

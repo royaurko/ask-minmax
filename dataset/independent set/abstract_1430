@@ -1,0 +1,24 @@
+We obtain a new upper bound on the capacity of a class of discrete memoryless
+relay channels. For this class of relay channels, the relay observes an i.i.d.
+sequence $T$, which is independent of the channel input $X$. The channel is
+described by a set of probability transition functions $p(y|x,t)$ for all
+$(x,t,y)\in \mathcal{X}\times \mathcal{T}\times \mathcal{Y}$. Furthermore, a
+noiseless link of finite capacity $R_{0}$ exists from the relay to the
+receiver. Although the capacity for these channels is not known in general, the
+capacity of a subclass of these channels, namely when $T=g(X,Y)$, for some
+deterministic function $g$, was obtained in [1] and it was shown to be equal to
+the cut-set bound. Another instance where the capacity was obtained was in [2],
+where the channel output $Y$ can be written as $Y=X\oplus Z$, where $\oplus$
+denotes modulo-$m$ addition, $Z$ is independent of $X$,
+$|\mathcal{X}|=|\mathcal{Y}|=m$, and $T$ is some stochastic function of $Z$.
+The compress-and-forward (CAF) achievability scheme [3] was shown to be
+capacity achieving in both cases.
+  Using our upper bound we recover the capacity results of [1] and [2]. We also
+obtain the capacity of a class of channels which does not fall into either of
+the classes studied in [1] and [2]. For this class of channels, CAF scheme is
+shown to be optimal but capacity is strictly less than the cut-set bound for
+certain values of $R_{0}$. We also evaluate our outer bound for a particular
+relay channel with binary multiplicative states and binary additive noise for
+which the channel is given as $Y=TX+N$. We show that our upper bound is
+strictly better than the cut-set upper bound for certain values of $R_{0}$ but
+it lies strictly above the rates yielded by the CAF achievability scheme.

@@ -1,0 +1,15 @@
+The shock instability phenomenon is a famous problem for the shock-capturing
+scheme. By subdividing the numerical dissipation of the Roe scheme, the term of
+pressure-difference-driven modification for the cell face velocity is regarded
+as a version of the momentum interpolation method (MIM), which is necessary for
+incompressible flows to suppress the pressure checkerboard problem. Through the
+analysis and odd-even decoupling test, it is discovered that MIM plays the most
+important role on the shock instability. In fact, for non-linear flows MIM
+should be completely removed, but unexpected MIM is activated on the cell face
+nearly parallel to the flow for high Mach number flows or low Mach number flows
+in shock. For such conditions, two coefficients are designed based on local
+Mach number and a shock detector, respectively, and then the improved Roe
+scheme is proposed, which gives consideration to requirement of MIM for
+incompressible and compressible flows and is validated for good performance of
+avoiding odd-even decoupling. Therefore, the aim of decreasing rather than
+increasing numerical dissipation to cure the shock instability can be achieved.

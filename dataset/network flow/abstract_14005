@@ -1,0 +1,21 @@
+We investigate several robust preconditioners for solving the saddle-point
+linear systems that arise from spatial discretization of unsteady and steady
+variable-coefficient Stokes equations on a uniform staggered grid. Building on
+the success of using the classical projection method as a preconditioner for
+the coupled velocity-pressure system [B. E. Griffith, J. Comp. Phys., 228
+(2009), pp. 75657595], as well as established techniques for steady and
+unsteady Stokes flow in the finite-element literature, we construct
+preconditioners that employ independent generalized Helmholtz and Poisson
+solvers for the velocity and pressure subproblems. We demonstrate that only a
+single cycle of a standard geometric multigrid algorithm serves as an effective
+inexact solver for each of these subproblems. Contrary to traditional wisdom,
+we find that the Stokes problem can be solved nearly as efficiently as the
+independent pressure and velocity subproblems, making the overall cost of
+solving the Stokes system comparable to the cost of classical projection or
+fractional step methods for incompressible flow, even for steady flow and in
+the presence of large density and viscosity contrasts. Two of the five
+preconditioners considered here are found to be robust to GMRES restarts and to
+increasing problem size, making them suitable for large-scale problems. Our
+work opens many possibilities for constructing novel unsplit temporal
+integrators for finite-volume spatial discretizations of the equations of low
+Mach and incompressible flow dynamics.

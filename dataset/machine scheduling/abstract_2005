@@ -1,0 +1,15 @@
+E-commerce Web-servers often face overload conditions during which
+revenue-generating requests may be dropped or abandoned due to an increase in
+the browsing requests. In this paper we present a simple, yet effective,
+mechanism for overload control of E-commerce Web-servers. We develop an
+E-commerce workload model that separates the browsing requests from
+revenue-generating transaction requests. During overload, we apply LIFO
+discipline in the browsing queues and use a dynamic priority model to service
+them. The transaction queues are given absolute priority over the browsing
+queues. This is called the LIFO-Pri scheduling discipline. Experimental results
+show that LIFO-Pri dramatically improves the overall Web-server throughput
+while also increasing the completion rate of revenue-generating requests. The
+Web-server was able to operate at nearly 60% of its maximum capacity even when
+offered load was 1.5 times its capacity. Further, when compared to a single
+queue FIFO system, there was a seven-fold increase in the number of completed
+revenue-generating requests during overload.

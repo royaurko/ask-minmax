@@ -1,0 +1,21 @@
+When orchestrating highly distributed and data-intensive Web service
+workflows the geographical placement of the orchestration engine can greatly
+affect the overall performance of a workflow. Orchestration engines are
+typically run from within an organisations' network, and may have to transfer
+data across long geographical distances, which in turn increases execution time
+and degrades the overall performance of a workflow. In this paper we present
+CloudForecast: a Web service framework and analysis tool which given a workflow
+specification, computes the optimal Amazon EC2 Cloud region to automatically
+deploy the orchestration engine and execute the workflow. We use geographical
+distance of the workflow, network latency and HTTP round-trip time between
+Amazon Cloud regions and the workflow nodes to find a ranking of Cloud regions.
+This combined set of simple metrics effectively predicts where the workflow
+orchestration engine should be deployed in order to reduce overall execution
+time.
+  We evaluate our approach by executing randomly generated data-intensive
+workflows deployed on the PlanetLab platform in order to rank Amazon EC2 Cloud
+regions. Our experimental results show that our proposed optimisation strategy,
+depending on the particular workflow, can speed up execution time on average by
+82.25% compared to local execution. We also show that the standard deviation of
+execution time is reduced by an average of almost 65% using the optimisation
+strategy.

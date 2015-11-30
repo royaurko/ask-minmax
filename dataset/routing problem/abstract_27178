@@ -1,0 +1,11 @@
+In cryptanalysis, solving the discrete logarithm problem (DLP) is key to
+assessing the security of many public-key cryptosystems. The index-calculus
+methods, that attack the DLP in multiplicative subgroups of finite fields,
+require solving large sparse systems of linear equations modulo large primes.
+This article deals with how we can run this computation on GPU- and
+multi-core-based clusters, featuring InfiniBand networking. More specifically,
+we present the sparse linear algebra algorithms that are proposed in the
+literature, in particular the block Wiedemann algorithm. We discuss the
+parallelization of the central matrix--vector product operation from both
+algorithmic and practical points of view, and illustrate how our approach has
+contributed to the recent record-sized DLP computation in GF($2^{809}$).

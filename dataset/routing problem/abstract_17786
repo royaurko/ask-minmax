@@ -1,0 +1,17 @@
+The standard geostatistical problem is to predict the values of a spatially
+continuous phenomenon, $S(x)$ say, at locations $x$ using data
+$(y_i,x_i):i=1,..,n$ where $y_i$ is the realization at location $x_i$ of
+$S(x_i)$, or of a random variable $Y_i$ that is stochastically related to
+$S(x_i)$. In this paper we address the inverse problem of predicting the
+locations of observed measurements $y$. We discuss how knowledge of the
+sampling mechanism can and should inform a prior specification, $\pi(x)$ say,
+for the joint distribution of the measurement locations $X = \{x_i:
+i=1,...,n\}$, and propose an efficient Metropolis-Hastings algorithm for
+drawing samples from the resulting predictive distribution of the missing
+elements of $X$. An important feature in many applied settings is that this
+predictive distribution is multi-modal, which severely limits the usefulness of
+simple summary measures such as the mean or median. We present two simulated
+examples to demonstrate the importance of the specification for $\pi(x)$, and
+analyze rainfall data from Paran\'a State, Brazil to show how, under additional
+assumptions, an empirical of estimate of $\pi(x)$ can be used when no prior
+information on the sampling design is available.

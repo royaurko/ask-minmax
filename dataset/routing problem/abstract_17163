@@ -1,0 +1,14 @@
+Let $G=(V,E)$ be a $k$-edge-connected graph with edge costs $\{c(e):e \in
+E\}$ and let $1 \leq \ell \leq k-1$. We show by a simple and short proof, that
+$G$ contains an $\ell$-edge cover $I$ such that: $c(I) \leq \frac{\ell}{k}c(E)$
+if $G$ is bipartite, or if $\ell |V|$ is even, or if $|E| \geq \frac{k|V|}{2}
++\frac{k}{2\ell}$; otherwise, $c(I) \leq (\frac{\ell}{k}+\frac{1}{k|V|})c(E)$.
+The particular case $\ell=k-1$ and unit costs already includes a result of
+Cheriyan and Thurimella, that $G$ contains a $(k-1)$-edge-cover of size
+$|E|-\lfloor |V|/2 \rfloor$. Using our result, we slightly improve the
+approximation ratios for the {\sf $k$-Connected Subgraph} problem (the
+node-connectivity version) with uniform and $\beta$-metric costs. We then
+consider the dual problem of finding a spanning subgraph of maximum
+connectivity $k^*$ with a prescribed number of edges. We give an algorithm that
+computes a $(k^*-1)$-connected subgraph, which is tight, since the problem is
+NP-hard.

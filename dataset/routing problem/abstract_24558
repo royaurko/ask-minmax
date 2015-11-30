@@ -1,0 +1,16 @@
+We develop a framework for solving polynomial equations with size constraints
+on solutions. We obtain our results by showing how to apply a technique of
+Coppersmith for finding small solutions of polynomial equations modulo integers
+to analogous problems over polynomial rings, number fields, and function
+fields. This gives us a unified view of several problems arising naturally in
+cryptography, coding theory, and the study of lattices. We give (1) a
+polynomial-time algorithm for finding small solutions of polynomial equations
+modulo ideals over algebraic number fields, (2) a faster variant of the
+Guruswami-Sudan algorithm for list decoding of Reed-Solomon codes, and (3) an
+algorithm for list decoding of algebraic-geometric codes that handles both
+single-point and multi-point codes. Coppersmith's algorithm uses lattice basis
+reduction to find a short vector in a carefully constructed lattice; powerful
+analogies from algebraic number theory allow us to identify the appropriate
+analogue of a lattice in each application and provide efficient algorithms to
+find a suitably short vector, thus allowing us to give completely parallel
+proofs of the above theorems.

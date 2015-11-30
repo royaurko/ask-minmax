@@ -1,0 +1,13 @@
+We present two different methods for estimating the cost of solving SAT
+problems. The methods focus on the online behaviour of the backtracking solver,
+as well as the structure of the problem. Modern SAT solvers present several
+challenges to estimate search cost including coping with nonchronological
+backtracking, learning and restarts. Our first method adapt an existing
+algorithm for estimating the size of a search tree to deal with these
+challenges. We then suggest a second method that uses a linear model trained on
+data gathered online at the start of search. We compare the effectiveness of
+these two methods using random and structured problems. We also demonstrate
+that predictions made in early restarts can be used to improve later
+predictions. We conclude by showing that the cost of solving a set of problems
+can be reduced by selecting a solver from a portfolio based on such cost
+estimations.

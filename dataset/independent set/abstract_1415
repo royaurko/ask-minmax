@@ -1,0 +1,19 @@
+While much work has explored probabilistic graphical models for independent
+data, less attention has been paid to time series. The goal in this setting is
+to determine conditional independence relations between entire time series,
+which for stationary series, are encoded by zeros in the inverse spectral
+density matrix. We take a Bayesian approach to structure learning, placing
+priors on (i) the graph structure and (ii) spectral matrices given the graph.
+We leverage a Whittle likelihood approximation and define a conjugate
+prior---the hyper complex inverse Wishart---on the complex-valued and
+graph-constrained spectral matrices. Due to conjugacy, we can analytically
+marginalize the spectral matrices and obtain a closed-form marginal likelihood
+of the time series given a graph. Importantly, our analytic marginal likelihood
+allows us to avoid inference of the complex spectral matrices themselves and
+places us back into the framework of standard (Bayesian) structure learning. In
+particular, combining this marginal likelihood with our graph prior leads to
+efficient inference of the time series graph itself, which we base on a
+stochastic search procedure, though any standard approach can be
+straightforwardly modified to our time series case. We demonstrate our methods
+on analyzing stock data and neuroimaging data of brain activity during various
+auditory tasks.

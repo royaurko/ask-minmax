@@ -1,0 +1,28 @@
+Several multiagent reinforcement learning (MARL) algorithms have been
+proposed to optimize agents decisions. Due to the complexity of the problem,
+the majority of the previously developed MARL algorithms assumed agents either
+had some knowledge of the underlying game (such as Nash equilibria) and/or
+observed other agents actions and the rewards they received.
+  We introduce a new MARL algorithm called the Weighted Policy Learner (WPL),
+which allows agents to reach a Nash Equilibrium (NE) in benchmark
+2-player-2-action games with minimum knowledge. Using WPL, the only feedback an
+agent needs is its own local reward (the agent does not observe other agents
+actions or rewards). Furthermore, WPL does not assume that agents know the
+underlying game or the corresponding Nash Equilibrium a priori. We
+experimentally show that our algorithm converges in benchmark
+two-player-two-action games. We also show that our algorithm converges in the
+challenging Shapleys game where previous MARL algorithms failed to converge
+without knowing the underlying game or the NE. Furthermore, we show that WPL
+outperforms the state-of-the-art algorithms in a more realistic setting of 100
+agents interacting and learning concurrently.
+  An important aspect of understanding the behavior of a MARL algorithm is
+analyzing the dynamics of the algorithm: how the policies of multiple learning
+agents evolve over time as agents interact with one another. Such an analysis
+not only verifies whether agents using a given MARL algorithm will eventually
+converge, but also reveals the behavior of the MARL algorithm prior to
+convergence. We analyze our algorithm in two-player-two-action games and show
+that symbolically proving WPLs convergence is difficult, because of the
+non-linear nature of WPLs dynamics, unlike previous MARL algorithms that had
+either linear or piece-wise-linear dynamics. Instead, we numerically solve WPLs
+dynamics differential equations and compare the solution to the dynamics of
+previous MARL algorithms.

@@ -1,0 +1,12 @@
+Consider the problem of sampling sequentially from a finite number of $N \ge
+2$ populations or `bandits', where each population $i$ is specified by a
+sequence of random variables $\{ X^i_k \}_{k \geq 1}$, $X^i_k$ representing the
+reward received the $k^{th}$ time population $i$ is sampled. For each $i$, the
+$\{ X^i_k \}_{k \geq 1} $ are taken to be i.i.d. random variables with finite
+mean. For any slowly increasing function $g$, subject to mild regularity
+constraints, we construct two policies (the $g$-Forcing, and the $g$-Inflated
+Sample Mean) that achieve a measure of regret of order $ O(g(n))$ almost surely
+as $n \to \infty$. Additionally, asymptotic probability one bounds on the
+remainder term are established. In the constructions herein, the function $g$
+effectively controls the `exploration' of the classical
+`exploration/exploitation' tradeoff.

@@ -1,0 +1,21 @@
+A unit cube in $k$ dimensions ($k$-cube) is defined as the the Cartesian
+product $R_1\times R_2\times...\times R_k$ where $R_i$(for $1\leq i\leq k$) is
+a closed interval of the form $[a_i,a_i+1]$ on the real line. A graph $G$ on
+$n$ nodes is said to be representable as the intersection of $k$-cubes (cube
+representation in $k$ dimensions) if each vertex of $G$ can be mapped to a
+$k$-cube such that two vertices are adjacent in $G$ if and only if their
+corresponding $k$-cubes have a non-empty intersection. The \emph{cubicity} of
+$G$ denoted as $\cubi(G)$ is the minimum $k$ for which $G$ can be represented
+as the intersection of $k$-cubes.
+  We give an $O(bw\cdot n)$ algorithm to compute the cube representation of a
+general graph $G$ in $bw+1$ dimensions given a bandwidth ordering of the
+vertices of $G$, where $bw$ is the \emph{bandwidth} of $G$. As a consequence,
+we get $O(\Delta)$ upper bounds on the cubicity of many well-known graph
+classes such as AT-free graphs, circular-arc graphs and co-comparability graphs
+which have $O(\Delta)$ bandwidth. Thus we have: 1) $\cubi(G)\leq 3\Delta-1$, if
+$G$ is an AT-free graph. 2) $\cubi(G)\leq 2\Delta+1$, if $G$ is a circular-arc
+graph. 3) $\cubi(G)\leq 2\Delta$, if $G$ is a co-comparability graph. Also for
+these graph classes, there are constant factor approximation algorithms for
+bandwidth computation that generate orderings of vertices with $O(\Delta)$
+width. We can thus generate the cube representation of such graphs in
+$O(\Delta)$ dimensions in polynomial time.

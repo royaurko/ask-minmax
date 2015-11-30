@@ -1,0 +1,19 @@
+We consider the following two deterministic inventory optimization problems
+over a finite planning horizon $T$ with non-stationary demands.
+  (a) Submodular Joint Replenishment Problem: This involves multiple item types
+and a single retailer who faces demands. In each time step, any subset of
+item-types can be ordered incurring a joint ordering cost which is submodular.
+Moreover, items can be held in inventory while incurring a holding cost. The
+objective is find a sequence of orders that satisfies all demands and minimizes
+the total ordering and holding costs.
+  (b) Inventory Routing Problem: This involves a single depot that stocks
+items, and multiple retailer locations facing demands. In each time step, any
+subset of locations can be visited using a vehicle originating from the depot.
+There is also cost incurred for holding items at any retailer. The objective
+here is to satisfy all demands while minimizing the sum of routing and holding
+costs.
+  We present a unified approach that yields $\mathcal{O}\left(\frac{\log
+T}{\log\log T}\right)$-factor approximation algorithms for both problems when
+the holding costs are polynomial functions. A special case is the classic
+linear holding cost model, wherein this is the first sub-logarithmic
+approximation ratio for either problem.

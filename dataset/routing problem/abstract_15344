@@ -1,0 +1,23 @@
+In the Bayesian approach to inverse problems, data are often informative,
+relative to the prior, only on a low-dimensional subspace of the parameter
+space. Significant computational savings can be achieved by using this subspace
+to characterize and approximate the posterior distribution of the parameters.
+We first investigate approximation of the posterior covariance matrix as a
+low-rank update of the prior covariance matrix. We prove optimality of a
+particular update, based on the leading eigendirections of the matrix pencil
+defined by the Hessian of the negative log-likelihood and the prior precision,
+for a broad class of loss functions. This class includes the F\"{o}rstner
+metric for symmetric positive definite matrices, as well as the
+Kullback-Leibler divergence and the Hellinger distance between the associated
+distributions. We also propose two fast approximations of the posterior mean
+and prove their optimality with respect to a weighted Bayes risk under
+squared-error loss. These approximations are deployed in an offline-online
+manner, where a more costly but data-independent offline calculation is
+followed by fast online evaluations. As a result, these approximations are
+particularly useful when repeated posterior mean evaluations are required for
+multiple data sets. We demonstrate our theoretical results with several
+numerical examples, including high-dimensional X-ray tomography and an inverse
+heat conduction problem. In both of these examples, the intrinsic
+low-dimensional structure of the inference problem can be exploited while
+producing results that are essentially indistinguishable from solutions
+computed in the full space.

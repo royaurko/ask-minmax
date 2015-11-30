@@ -1,0 +1,24 @@
+Regular path queries (RPQs) select nodes connected by some path in a graph.
+The edge labels of such a path have to form a word that matches a given regular
+expression. We investigate the evaluation of RPQs with an additional constraint
+that prevents multiple traversals of the same nodes. Those regular simple path
+queries (RSPQs) find several applications in practice, yet they quickly become
+intractable, even for basic languages such as (aa)* or a*ba*.
+  In this paper, we establish a comprehensive classification of regular
+languages with respect to the complexity of the corresponding regular simple
+path query problem. More precisely, we identify the fragment that is maximal in
+the following sense: regular simple path queries can be evaluated in polynomial
+time for every regular language L that belongs to this fragment and evaluation
+is NP-complete for languages outside this fragment. We thus fully characterize
+the frontier between tractability and intractability for RSPQs, and we refine
+our results to show the following trichotomy: Evaluations of RSPQs is either
+AC0, NL-complete or NP-complete in data complexity, depending on the regular
+language L. The fragment identified also admits a simple characterization in
+terms of regular expressions.
+  Finally, we also discuss the complexity of the following decision problem:
+decide, given a language L, whether finding a regular simple path for L is
+tractable. We consider several alternative representations of L: DFAs, NFAs or
+regular expressions, and prove that this problem is NL-complete for the first
+representation and PSPACE-complete for the other two. As a conclusion we extend
+our results from edge-labeled graphs to vertex-labeled graphs and vertex-edge
+labeled graphs.

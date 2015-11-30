@@ -1,0 +1,21 @@
+Particle filters are key algorithms for object tracking under non-linear,
+non-Gaussian dynamics. The high computational cost of particle filters,
+however, hampers their applicability in cases where the likelihood model is
+costly to evaluate, or where large numbers of particles are required to
+represent the posterior. We introduce the approximate sequential importance
+sampling/resampling (ASIR) algorithm, which aims at reducing the cost of
+traditional particle filters by approximating the likelihood with a mixture of
+uniform distributions over pre-defined cells or bins. The particles in each bin
+are represented by a dummy particle at the center of mass of the original
+particle distribution and with a state vector that is the average of the states
+of all particles in the same bin. The likelihood is only evaluated for the
+dummy particles, and the resulting weight is identically assigned to all
+particles in the bin. We derive upper bounds on the approximation error of the
+so-obtained piecewise constant function representation, and analyze how bin
+size affects tracking accuracy and runtime. Further, we show numerically that
+the ASIR approximation error converges to that of sequential importance
+sampling/resampling (SIR) as the bin size is decreased. We present a set of
+numerical experiments from the field of biological image processing and
+tracking that demonstrate ASIR's capabilities. Overall, we consider ASIR a
+promising candidate for simple, fast particle filtering in generic
+applications.

@@ -1,0 +1,21 @@
+The presence of groups containing high leverage outliers makes linear
+regression a difficult problem due to the masking effect. The available high
+breakdown estimators based on Least Trimmed Squares often do not succeed in
+detecting masked high leverage outliers in finite samples.
+  An alternative to the LTS estimator, called Penalised Trimmed Squares (PTS)
+estimator, was introduced by the contributors in \cite{ZiouAv:05,ZiAvPi:07} and it
+appears to be less sensitive to the masking problem. This estimator is defined
+by a Quadratic Mixed Integer Programming (QMIP) problem, where in the objective
+function a penalty cost for each observation is included which serves as an
+upper bound on the residual error for any feasible regression line. Since the
+PTS does not require presetting the number of outliers to delete from the data
+set, it has better efficiency with respect to other estimators. However, due to
+the high computational complexity of the resulting QMIP problem, exact
+solutions for moderately large regression problems is infeasible.
+  In this paper we further establish the theoretical properties of the PTS
+estimator, such as high breakdown and efficiency, and propose an approximate
+algorithm called Fast-PTS to compute the PTS estimator for large data sets
+efficiently. Extensive computational experiments on sets of benchmark instances
+with varying degrees of outlier contamination, indicate that the proposed
+algorithm performs well in identifying groups of high leverage outliers in
+reasonable computational time.

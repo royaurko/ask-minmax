@@ -1,0 +1,13 @@
+In the Connected Vertex Cover problem we are given an undirected graph G
+together with an integer k and we are to find a subset of vertices X of size at
+most k, such that X contains at least one end-point of each edge and moreover X
+induces a connected subgraph. For this problem we present a deterministic
+algorithm running in O(2^k n^O(1)) time and polynomial space, improving over
+previously best O(2.4882^k n^O(1)) deterministic algorithm and O(2^k n^O(1))
+randomized algorithm. Furthermore, when usage of exponential space is allowed,
+we present an O(2^k k(n+m)) time algorithm that solves a more general variant
+with arbitrary real weights.
+  Finally, we show that in O(2k k(n + m)) time and O(2^k k) space one can count
+the number of connected vertex covers of size at most k, which can not be
+improved to O((2 - eps)^k nO(1)) for any eps > 0 under the Strong Exponential
+Time Hypothesis, as shown by Cygan et al. [CCC'12].

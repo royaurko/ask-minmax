@@ -1,0 +1,14 @@
+A broadcast mode may augment peer-to-peer overlay networks with an efficient,
+scalable data replication function, but may also give rise to a virtual link
+layer in VPN-type solutions. We introduce a simple broadcasting mechanism that
+operates in the prefix space of distributed hash tables without signaling. This
+paper concentrates on the performance analysis of the prefix flooding scheme.
+Starting from simple models of recursive $k$-ary trees, we analytically derive
+distributions of hop counts and the replication load. Extensive simulation
+results are presented further on, based on an implementation within the OverSim
+framework. Comparisons are drawn to Scribe, taken as a general reference model
+for group communication according to the shared, rendezvous-point-centered
+distribution paradigm. The prefix flooding scheme thereby confirmed its widely
+predictable performance and consistently outperformed Scribe in all metrics.
+Reverse path selection in overlays is identified as a major cause of
+performance degradation.

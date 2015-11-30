@@ -1,0 +1,18 @@
+Background: It is of biological interest to make genome-wide predictions of
+the locations of DNA melting bubbles using statistical mechanics models.
+Computationally, this poses the challenge that a generic search through all
+combinations of bubble starts and ends is quadratic.
+  Results: An efficient algorithm is described, which shows that the time
+complexity of the task is O(NlogN) rather than quadratic. The algorithm
+exploits that bubble lengths may be limited, but without a prior assumption of
+a maximal bubble length. No approximations, such as windowing, have been
+introduced to reduce the time complexity. More than just finding the bubbles,
+the algorithm produces a stitch profile, which is a probabilistic graphical
+model of bubbles and helical regions. The algorithm applies a probability peak
+finding method based on a hierarchical analysis of the energy barriers in the
+Poland-Scheraga model.
+  Conclusions: Exact and fast computation of genomic stitch profiles is thus
+feasible. Sequences of several megabases have been computed, only limited by
+computer memory. Possible applications are the genome-wide comparisons of
+bubbles with promotors, TSS, viral integration sites, and other melting-related
+regions.

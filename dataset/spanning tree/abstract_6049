@@ -1,0 +1,23 @@
+The paper deals with non-linear Poisson neuron network models with bounded
+memory dynamics, that can include both Hebbian learning mechanisms and
+refractory periods. The state of a network is described by the times elapsed
+since its neurons fired within the post-synaptic transfer kernel memory span,
+and the current strengths of synaptic connections, the state spaces of our
+models being hierarchies of finite-dimensional components. We establish
+ergodicity of the stochastic processes describing the behaviour of the networks
+and prove the existence of continuously differentiable stationary distribution
+densities (with respect to the Lebesgue measures of corresponding
+dimensionality) on the components of the state space and find upper bounds for
+them. For the density components, we derive a system of differential equations
+that can be solved in a few simplest cases only. Approaches to approximate
+computation of the stationary density are discussed. One is to reduce the
+dimensionality of the problem by modifying the network so that each neuron
+cannot fire if the number of spikes it emitted within the post-synaptic
+transfer kernel memory span reaches a given threshold. We show that the
+stationary distribution of this `truncated' network converges to that of the
+unrestricted one as the threshold increases, and that the convergence is at a
+super-exponential rate. A complementary approach uses discrete Markov chain
+approximations to the network process. We derive linear systems for the
+stationary distributions of these Markov chains and prove that these
+distributions converge weakly to the stationary laws for the original
+processes.

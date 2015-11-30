@@ -1,0 +1,15 @@
+This paper introduces a combined approach for the recovery of a timetable by
+rescheduling trips and vehicle circulations for a rail-based transportation
+system subject to disruptions. We propose a novel event-based integer
+programming (IP) model. Features include shifting and canceling of trips as
+well as modifying the vehicle schedules by changing or truncating the
+circulations. The objective maximizes the number of recovered trips, possibly
+with delay, while guaranteeing a conflict-free new timetable for the estimated
+time window of the disruption. We demonstrate the usefulness of our approach
+through experiments for real-life test instances of relevant size, arising from
+the subway system of Vienna. We focus on scenarios in which one direction of
+one track is blocked, and trains have to be scheduled through this bottleneck.
+Solving these instances is made possible by contracting parts of the underlying
+event-activity graph; this allows a significant size reduction of the IP.
+Usually, the solutions found within one minute are of good quality and can be
+used as good estimates of recovery plans in an online context.

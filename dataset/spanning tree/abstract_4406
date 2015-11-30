@@ -1,0 +1,12 @@
+In the following paper we consider a simulation technique for stochastic
+trees. One of the most important areas in computational genetics is the
+calculation and subsequent maximization of the likelihood function associated
+to such models. This typically consists of using importance sampling (IS) and
+sequential Monte Carlo (SMC) techniques. The approach proceeds by simulating
+the tree, backward in time from observed data, to a most recent common ancestor
+(MRCA). However, in many cases, the computational time and variance of
+estimators are often too high to make standard approaches useful. In this paper
+we propose to stop the simulation, subsequently yielding biased estimates of
+the likelihood surface. The bias is investigated from a theoretical point of
+view. Results from simulation studies are also given to investigate the balance
+between loss of accuracy, saving in computing time and variance reduction.

@@ -1,0 +1,16 @@
+The linearly-polarized solar limb spectrum that is produced by scattering
+processes contains a wealth of information on the physical conditions and
+magnetic fields of the solar outer atmosphere, but the modeling of many of its
+strongest spectral lines requires solving an involved non-LTE radiative
+transfer problem accounting for partial redistribution (PRD) effects. Fast
+radiative transfer methods for the numerical solution of PRD problems are also
+needed for a proper treatment of hydrogen lines when aiming at realistic
+time-dependent magnetohydrodynamic simulations of the solar chromosphere. Here
+we show how the two-level atom PRD problem with and without polarization can be
+solved accurately and efficiently via the application of highly convergent
+iterative schemes based on the Gauss-Seidel (GS) and Successive Overrelaxation
+(SOR) radiative transfer methods that had been previously developed for the
+complete redistribution (CRD) case. Of particular interest is the Symmetric SOR
+method, which allows us to reach the fully converged solution with an order of
+magnitude of improvement in the total computational time with respect to the
+Jacobi-based local ALI (Accelerated Lambda Iteration) method.

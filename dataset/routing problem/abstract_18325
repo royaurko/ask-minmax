@@ -1,0 +1,23 @@
+The objective of this paper is to design an efficient and convergent
+alternating direction method of multipliers (ADMM) for finding a solution of
+medium accuracy to conic programming problems whose constraints consist of
+linear equalities, linear inequalities, a non-polyhedral cone and a polyhedral
+cone. For this class of problems, one may apply the directly extended ADMM to
+their dual, which can be written in the form of convex programming with four
+separable blocks in the objective function and a coupling linear equation
+constraint. Indeed, the directly extended ADMM, though may diverge in theory,
+often performs much better numerically than many of its variants with
+theoretical convergence guarantee. Ideally, one should find a convergent
+variant which is at least as efficient as the directly extended ADMM in
+practice. We achieve this goal by designing a convergent semi-proximal ADMM
+(called sPADMM3c for convenience) for convex programming problems having three
+separable blocks in the objective function with the third part being linear. At
+each iteration, the proposed sPADMM3c takes one special block coordinate
+descent (BCD) cycle with the order $1 \rightarrow 3 \rightarrow 2 \rightarrow
+3$, instead of the usual $1 \rightarrow 2 \rightarrow 3$ Gauss-Seidel BCD cycle
+used in the non-convergent directly extended $3$-block ADMM, for updating the
+variable blocks. Our extensive numerical tests on the important class of doubly
+non-negative semidefinite programming (SDP) problems with linear equality
+and/or inequality constraints demonstrate that our convergent method is at
+least $20%$ faster than the directly extended ADMM with unit step-length for
+the vast majority of about $550$ large scale problems tested.

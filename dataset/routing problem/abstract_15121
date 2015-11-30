@@ -1,0 +1,20 @@
+Given two genomes with duplicate genes, \textsc{Zero Exemplar Distance} is
+the problem of deciding whether the two genomes can be reduced to the same
+genome without duplicate genes by deleting all but one copy of each gene in
+each genome. Blin, Fertin, Sikora, and Vialette recently proved that
+\textsc{Zero Exemplar Distance} for monochromosomal genomes is NP-hard even if
+each gene appears at most two times in each genome, thereby settling an
+important open question on genome rearrangement in the exemplar model. In this
+paper, we give a very simple alternative proof of this result. We also study
+the problem \textsc{Zero Exemplar Distance} for multichromosomal genomes
+without gene order, and prove the analogous result that it is also NP-hard even
+if each gene appears at most two times in each genome. For the positive
+direction, we show that both variants of \textsc{Zero Exemplar Distance} admit
+polynomial-time algorithms if each gene appears exactly once in one genome and
+at least once in the other genome. In addition, we present a polynomial-time
+algorithm for the related problem \textsc{Exemplar Longest Common Subsequence}
+in the special case that each mandatory symbol appears exactly once in one
+input sequence and at least once in the other input sequence. This answers an
+open question of Bonizzoni et al. We also show that \textsc{Zero Exemplar
+Distance} for multichromosomal genomes without gene order is fixed-parameter
+tractable if the parameter is the maximum number of chromosomes in each genome.

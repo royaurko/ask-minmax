@@ -1,0 +1,13 @@
+In the study of time-dependent waves, it is computationally expensive to
+solve a problem in which high frequencies (shortwaves, with wavenumber k =
+kmax) and low frequencies (longwaves, near k=kmin) mix. Consider a problem in
+which low frequencies scatter off a sharp impurity. The impurity generates high
+frequencies which propagate and spread throughout the computational domain,
+while the domain must be large enough to contain several longwaves.
+Conventional spectral methods have computational cost proportional to
+O(kmax/kmin \log (kmax/kmin)).
+  We present here a multiscale algorithm (implemented for the Schrodinger
+equation, but generally applicable) which solves the problem with cost (in
+space and time) O(kmax L log(kmax / kmin) \log(kmax L)). Here, L is the width
+of the region in which the algorithm resolves all frequencies, and is
+independent of kmin.

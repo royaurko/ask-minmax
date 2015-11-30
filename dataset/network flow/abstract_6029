@@ -1,0 +1,22 @@
+This paper pioneers the use of neural networks to provide a fast and
+automatic way to classify lightcurves in massive photometric datasets. As an
+example, we provide a working neural network that can distinguish microlensing
+lightcurves from other forms of variability, such as eruptive, pulsating,
+cataclysmic and eclipsing variable stars. The network has five input neurons, a
+hidden layer of five neurons and one output neuron. The five input variables
+for the network are extracted by spectral analysis from the lightcurve
+datapoints and are optimised for the identification of a single, symmetric,
+microlensing bump. The output of the network is the posterior probability of
+microlensing. The committee of neural networks successfully passes tests on
+noisy data taken by the MACHO collaboration. When used to process 5000
+lightcurves on a typical tile towards the bulge, the network cleanly identifies
+the single microlensing event. When fed with a sub-sample of 36 lightcurves
+identified by the MACHO collaboration as microlensing, the network corroborates
+this verdict in the case of 27 events, but classifies the remaining 9 events as
+other forms of variability. For some of these discrepant events, it looks as
+though there are secondary bumps or the bump is noisy or not properly
+contained. Neural networks naturally allow for the possibility of novelty
+detection -- that is, new or unexpected phenomena which we may want to follow
+up. The advantages of neural networks for microlensing rate calculations, as
+well as the future developments of massive variability surveys, are both
+briefly discussed.

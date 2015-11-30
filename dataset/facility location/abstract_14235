@@ -1,0 +1,19 @@
+Contemporary weather forecasts are typically based on ensemble prediction
+systems, which consist of multiple runs of numerical weather prediction models
+that vary with respect to in the initial conditions and/or the the
+parameterization of the atmosphere. Ensemble forecasts are frequently biased
+and show dispersion errors and thus need to be statistically postprocessed.
+However, current postprocessing approaches are often univariate and apply to a
+single weather quantity at a single location and for a single prediction
+horizon only, thereby failing to account for potentially crucial dependence
+structures. Non-parametric multivariate postprocessing methods based on
+empirical copulas, such as ensemble copula coupling or the Schaake shuffle, can
+address this shortcoming. A specific implementation of the Schaake shuffle,
+called the SimSchaake approach, is introduced. The SimSchaake method aggregates
+univariately postprocessed ensemble forecasts using dependence patterns from
+past observations. Specifically, the observations are taken from historical
+dates at which the ensemble forecasts resembled the current ensemble prediction
+with respect to a specific similarity criterion. The SimSchaake ensemble
+outperforms all reference ensembles in an application to ensemble forecasts for
+surface temperature from the European Centre for Medium-Range Weather
+Forecasts.

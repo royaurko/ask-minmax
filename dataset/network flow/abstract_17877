@@ -1,0 +1,23 @@
+It is well known that for ergodic channel processes the Generalized
+Max-Weight Matching (GMWM) scheduling policy stabilizes the network for any
+supportable arrival rate vector within the network capacity region. This
+policy, however, often requires the solution of an NP-hard optimization
+problem. This has motivated many researchers to develop sub-optimal algorithms
+that approximate the GMWM policy in selecting schedule vectors. One implicit
+assumption commonly shared in this context is that during the algorithm
+runtime, the channel states remain effectively unchanged. This assumption may
+not hold as the time needed to select near-optimal schedule vectors usually
+increases quickly with the network size. In this paper, we incorporate channel
+variations and the time-efficiency of sub-optimal algorithms into the scheduler
+design, to dynamically tune the algorithm runtime considering the tradeoff
+between algorithm efficiency and its robustness to changing channel states.
+Specifically, we propose a Dynamic Control Policy (DCP) that operates on top of
+a given sub-optimal algorithm, and dynamically but in a large time-scale
+adjusts the time given to the algorithm according to queue backlog and channel
+correlations. This policy does not require knowledge of the structure of the
+given sub-optimal algorithm, and with low overhead can be implemented in a
+distributed manner. Using a novel Lyapunov analysis, we characterize the
+throughput stability region induced by DCP and show that our characterization
+can be tight. We also show that the throughput stability region of DCP is at
+least as large as that of any other static policy. Finally, we provide two case
+studies to gain further intuition into the performance of DCP.

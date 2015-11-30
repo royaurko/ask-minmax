@@ -1,0 +1,17 @@
+A {\em balanced coloring} of a graph $G$ means a triple $\{P_1,P_2,X\}$ of
+mutually disjoint subsets of the vertex-set $V(G)$ such that $V(G)=P_1 \uplus
+P_2 \uplus X$ and $|P_1|=|P_2|$. A {\em balanced decomposition} associated with
+the balanced coloring $V(G)=P_1 \uplus P_2 \uplus X$ of $G$ is defined as a
+partition of $V(G)=V_1 \uplus \cdots \uplus V_r$ (for some $r$) such that, for
+every $i \in \{1,\cdots,r\}$, the subgraph $G[V_i]$ of $G$ is connected and
+$|V_i \cap P_1| = |V_i \cap P_2|$. Then the {\em balanced decomposition number}
+of a graph $G$ is defined as the minimum integer $s$ such that, for every
+balanced coloring $V(G)=P_1 \uplus P_2 \uplus X$ of $G$, there exists a
+balanced decomposition $V(G)=V_1 \uplus \cdots \uplus V_r$ whose every element
+$V_i (i=1, \cdots, r)$ has at most $s$ vertices. S. Fujita and H. Liu [\/SIAM
+J. Discrete Math. 24, (2010), pp. 1597--1616\/] proved a nice theorem which
+states that the balanced decomposition number of a graph $G$ is at most $3$ if
+and only if $G$ is $\lfloor\frac{|V(G)|}{2}\rfloor$-connected. Unfortunately,
+their proof is lengthy (about 10 pages) and complicated. Here we give an
+immediate proof of the theorem. This proof makes clear a relationship between
+balanced decomposition number and graph matching.

@@ -1,0 +1,22 @@
+We introduce and analyze greedy equilibria (GE) for the well-known model of
+selfish network creation by Fabrikant et al.[PODC'03]. GE are interesting for
+two reasons: (1) they model outcomes found by agents which prefer smooth
+adaptations over radical strategy-changes, (2) GE are outcomes found by agents
+which do not have enough computational resources to play optimally. In the
+model of Fabrikant et al. agents correspond to Internet Service Providers which
+buy network links to improve their quality of network usage. It is known that
+computing a best response in this model is NP-hard. Hence, poly-time agents are
+likely not to play optimally. But how good are networks created by such agents?
+We answer this question for very simple agents. Quite surprisingly, naive
+greedy play suffices to create remarkably stable networks. Specifically, we
+show that in the SUM version, where agents attempt to minimize their average
+distance to all other agents, GE capture Nash equilibria (NE) on trees and that
+any GE is in 3-approximate NE on general networks. For the latter we also
+provide a lower bound of 3/2 on the approximation ratio. For the MAX version,
+where agents attempt to minimize their maximum distance, we show that any
+GE-star is in 2-approximate NE and any GE-tree having larger diameter is in
+6/5-approximate NE. Both bounds are tight. We contrast these positive results
+by providing a linear lower bound on the approximation ratio for the MAX
+version on general networks in GE. This result implies a locality gap of
+$\Omega(n)$ for the metric min-max facility location problem, where n is the
+number of clients.

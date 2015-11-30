@@ -1,0 +1,21 @@
+The Trinity (Brodsky et al., 2007) spam classification system is based on a
+distributed hash table that is implemented using a structured peer-to-peer
+overlay. Such an overlay must be capable of processing hundreds of messages per
+second, and must be able to route messages to their destination even in the
+presence of failures and malicious peers that misroute packets or inject
+fraudulent routing information into the system. Typically there is tension
+between the requirements to route messages securely and efficiently in the
+overlay.
+  We describe a secure and efficient routing extension that we developed within
+the I3 (Stoica et al. 2004) implementation of the Chord (Stoica et al. 2001)
+overlay. Secure routing is accomplished through several complementary
+approaches: First, peers in close proximity form overlapping groups that police
+themselves to identify and mitigate fraudulent routing information. Second, a
+form of random routing solves the problem of entire packet flows passing
+through a malicious peer. Third, a message authentication mechanism links each
+message to it sender, preventing spoofing. Fourth, each peer's identifier links
+the peer to its network address, and at the same time uniformly distributes the
+peers in the key-space.
+  Lastly, we present our initial evaluation of the system, comprising a 255
+peer overlay running on a local cluster. We describe our methodology and show
+that the overhead of our secure implementation is quite reasonable.

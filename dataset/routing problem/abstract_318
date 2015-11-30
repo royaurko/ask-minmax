@@ -1,0 +1,17 @@
+When minimizing a nonlinear least-squares function, the Levenberg-Marquardt
+algorithm can suffer from a slow convergence, particularly when it must
+navigate a narrow canyon en route to a best fit. On the other hand, when the
+least-squares function is very flat, the algorithm may easily become lost in
+parameter space. We introduce several improvements to the Levenberg-Marquardt
+algorithm in order to improve both its convergence speed and robustness to
+initial parameter guesses. We update the usual step to include a geodesic
+acceleration correction term, explore a systematic way of accepting uphill
+steps that may increase the residual sum of squares due to Umrigar and
+Nightingale, and employ the Broyden method to update the Jacobian matrix. We
+test these changes by comparing their performance on a number of test problems
+with standard implementations of the algorithm. We suggest that these two
+particular challenges, slow convergence and robustness to initial guesses, are
+complimentary problems. Schemes that improve convergence speed often make the
+algorithm less robust to the initial guess, and vice versa. We provide an open
+source implementation of our improvements that allow the user to adjust the
+algorithm parameters to suit particular needs.

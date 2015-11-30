@@ -1,0 +1,18 @@
+We consider the offline sorting buffer problem. The input is a sequence of
+items of different types. All items must be processed one by one by a server.
+The server is equipped with a random-access buffer of limited capacity which
+can be used to rearrange items. The problem is to design a scheduling strategy
+that decides upon the order in which items from the buffer are sent to the
+server. Each type change incurs unit cost, and thus, the cost minimizing
+objective is to minimize the total number of type changes for serving the
+entire sequence. This problem is motivated by various applications in
+manufacturing processes and computer science, and it has attracted significant
+attention in the last few years. The main focus has been on online competitive
+algorithms. Surprisingly little is known on the basic offline problem. In this
+paper, we show that the sorting buffer problem with uniform cost is NP-hard
+and, thus, close one of the most fundamental questions for the offline problem.
+On the positive side, we give an O(1)-approximation algorithm when the
+scheduler is given a buffer only slightly larger than double the original size.
+We also give a dynamic programming algorithm for the special case of buffer
+size two that solves the problem exactly in linear time, improving on the
+standard DP which runs in cubic time.

@@ -1,0 +1,24 @@
+Dynamic Complexity (as introduced by Patnaik and Immerman) tries to express
+how hard it is to update the solution to a problem when the input is changed
+slightly. It considers the changes required to some stored data structure
+(possibly a massive database) as small quantities of data (or a tuple) are
+inserted or deleted from the database (or a structure over some vocabulary).
+The main difference from previous notions of dynamic complexity is that instead
+of treating the update quantitatively by finding the the time/space trade-offs,
+it tries to consider the update qualitatively, by finding the complexity class
+in which the update can be expressed (or made). In this setting, DynFO, or
+Dynamic First-Order, is one of the smallest and the most natural complexity
+class (since SQL queries can be expressed in First-Order Logic), and contains
+those problems whose solutions (or the stored data structure from which the
+solution can be found) can be updated in First-Order Logic when the data
+structure undergoes small changes.
+  Etessami considered the problem of isomorphism in the dynamic setting, and
+showed that Tree Isomorphism can be decided in DynFO. In this work, we show
+that isomorphism of Planar 3-connected graphs can be decided in DynFO+ (which
+is DynFO with some polynomial precomputation). We maintain a canonical
+description of 3-connected Planar graphs by maintaining a database which is
+accessed and modified by First-Order queries when edges are added to or deleted
+from the graph. We specifically exploit the ideas of Breadth-First Search and
+Canonical Breadth-First Search to prove the results. We also introduce a novel
+method for canonizing a 3-connected planar graph in First-Order Logic from
+Canonical Breadth-First Search Trees.

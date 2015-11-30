@@ -1,0 +1,16 @@
+The following work compares two popular mixed finite elements used to model
+subsurface flow and transport in heterogeneous porous media; the lowest order
+Raviart-Thomas element and the variational multiscale stabilized element.
+Comparison is made based on performance for several problems of engineering
+relevance that involve highly heterogenous material properties (permeability
+ratios of up to $1\times10^5$), open flow boundary conditions (pressure driven
+flows), and large scale domains in two dimensions. Numerical experiments are
+performed to show the degree to which mass conservation is violated when a flow
+field computed using either element is used as the advection velocity in a
+transport model. The results reveal that the variational multiscale element
+shows considerable mass production or loss for problems that involve flow
+tangential to layers of differing permeability, but marginal violation of local
+mass balance for problems of less orthogonality in the permeability. The
+results are useful in establishing rudimentary estimates of the error produced
+by using the variational mutliscale element for several different types of
+problems.

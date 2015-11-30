@@ -1,0 +1,18 @@
+We provide a new algorithm for the treatment of inverse problems which
+combines the traditional SVD inversion with an appropriate thresholding
+technique in a well chosen new basis. Our goal is to devise an inversion
+procedure which has the advantages of localization and multiscale analysis of
+wavelet representations without losing the stability and computability of the
+SVD decompositions. To this end we utilize the construction of localized frames
+(termed "needlets") built upon the SVD bases. We consider two different
+situations: the "wavelet" scenario, where the needlets are assumed to behave
+similarly to true wavelets, and the "Jacobi-type" scenario, where we assume
+that the properties of the frame truly depend on the SVD basis at hand (hence
+on the operator). To illustrate each situation, we apply the estimation
+algorithm respectively to the deconvolution problem and to the Wicksell
+problem. In the latter case, where the SVD basis is a Jacobi polynomial basis,
+we show that our scheme is capable of achieving rates of convergence which are
+optimal in the $L_2$ case, we obtain interesting rates of convergence for other
+$L_p$ norms which are new (to the best of our knowledge) in the literature, and
+we also give a simulation study showing that the NEED-D estimator outperforms
+other standard algorithms in almost all situations.

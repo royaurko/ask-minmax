@@ -1,0 +1,15 @@
+XML document markup is highly repetitive and therefore well compressible
+using dictionary-based methods such as DAGs or grammars. In the context of
+selectivity estimation, grammar-compressed trees were used before as synopsis
+for structural XPath queries. Here a fully-fledged index over such grammars is
+presented. The index allows to execute arbitrary tree algorithms with a
+slow-down that is comparable to the space improvement. More interestingly,
+certain algorithms execute much faster over the index (because no decompression
+occurs). E.g., for structural XPath count queries, evaluating over the index is
+faster than previous XPath implementations, often by two orders of magnitude.
+The index also allows to serialize XML results (including texts) faster than
+previous systems, by a factor of ca. 2-3. This is due to efficient copy
+handling of grammar repetitions, and because materialization is totally
+avoided. In order to compare with twig join implementations, we implemented a
+materializer which writes out pre-order numbers of result nodes, and show its
+competitiveness.

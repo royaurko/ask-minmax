@@ -1,0 +1,21 @@
+We analyze the security of the authentication code against pollution attacks
+in network coding given by Oggier and Fathi and show one way to remove one very
+strong condition they required. Actually, we find a way to attack their
+authentication scheme. In their scheme, they considered that if some malicious
+nodes in the network collude to make pollution in the network flow or make
+substitution attacks to other nodes, they thought these malicious nodes must
+solve a system of linear equations to recover the secret parameters. Then they
+concluded that their scheme is an unconditional secure scheme. Actually, note
+that the authentication tag in the scheme of Oggier and Fathi is nearly linear
+on the messages, so it is very easy for any malicious node to make pollution
+attack in the network flow, replacing the vector of any incoming edge by linear
+combination of his incoming vectors whose coefficients have sum 1. And if the
+coalition of malicious nodes can carry out decoding of the network coding, they
+can easily make substitution attack to any other node even if they do not know
+any information of the private key of the node. Moreover, even if their scheme
+can work fruitfully, the condition in their scheme $H\leqslant M$ in a network
+can be removed, where $H$ is the sum of numbers of the incoming edges at
+adversaries. Under the condition $H\leqslant M$, $H$ may be large, so we need
+large parameter $M$ which increases the cost of computation a lot. On the other
+hand, the parameter $M$ can not be very large as it can not exceed the length
+of original messages.

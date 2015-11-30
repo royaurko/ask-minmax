@@ -1,0 +1,16 @@
+We propose a framework for reasoning about unbounded dynamic networks of
+infinite-state processes. We propose Constrained Petri Nets (CPN) as generic
+models for these networks. They can be seen as Petri nets where tokens
+(representing occurrences of processes) are colored by values over some
+potentially infinite data domain such as integers, reals, etc. Furthermore, we
+define a logic, called CML (colored markings logic), for the description of CPN
+configurations. CML is a first-order logic over tokens allowing to reason about
+their locations and their colors. Both CPNs and CML are parametrized by a color
+logic allowing to express constraints on the colors (data) associated with
+tokens. We investigate the decidability of the satisfiability problem of CML
+and its applications in the verification of CPNs. We identify a fragment of CML
+for which the satisfiability problem is decidable (whenever it is the case for
+the underlying color logic), and which is closed under the computations of post
+and pre images for CPNs. These results can be used for several kinds of
+analysis such as invariance checking, pre-post condition reasoning, and bounded
+reachability analysis.

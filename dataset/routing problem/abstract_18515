@@ -1,0 +1,20 @@
+An important problem in shape analysis is to match configurations of points
+in space filtering out some geometrical transformation. In this paper we
+introduce hierarchical models for such tasks, in which the points in the
+configurations are either unlabelled, or have at most a partial labelling
+constraining the matching, and in which some points may only appear in one of
+the configurations. We derive procedures for simultaneous inference about the
+matching and the transformation, using a Bayesian approach. Our model is based
+on a Poisson process for hidden true point locations; this leads to
+considerable mathematical simplification and efficiency of implementation. We
+find a novel use for classic distributions from directional statistics in a
+conditionally conjugate specification for the case where the geometrical
+transformation includes an unknown rotation. Throughout, we focus on the case
+of affine or rigid motion transformations. Under a broad parametric family of
+loss functions, an optimal Bayesian point estimate of the matching matrix can
+be constructed, that depends only on a single parameter of the family.
+  Our methods are illustrated by two applications from bioinformatics. The
+first problem is of matching protein gels in 2 dimensions, and the second
+consists of aligning active sites of proteins in 3 dimensions. In the latter
+case, we also use information related to the grouping of the amino acids. We
+discuss some open problems and suggest directions for future work.

@@ -1,0 +1,10 @@
+Markov jump processes and continuous time Bayesian networks are important
+classes of continuous time dynamical systems. In this paper, we tackle the
+problem of inferring unobserved paths in these models by introducing a fast
+auxiliary variable Gibbs sampler. Our approach is based on the idea of
+uniformization, and sets up a Markov chain over paths by sampling a finite set
+of virtual jump times and then running a standard hidden Markov model forward
+filtering-backward sampling algorithm over states at the set of extant and
+virtual jump times. We demonstrate significant computational benefits over a
+state-of-the-art Gibbs sampler on a number of continuous time Bayesian
+networks.

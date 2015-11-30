@@ -1,0 +1,25 @@
+Traditionally, wireless network protocols have been designed for performance.
+Subsequently, as attacks have been identified, patches have been developed.
+This has resulted in an "arms race" development process of discovering
+vulnerabilities and then patching them. The fundamental difficulty with this
+approach is that other vulnerabilities may still exist. No provable security or
+performance guarantees can ever be provided.
+  We develop a system-theoretic approach to security that provides a complete
+protocol suite with provable guarantees, as well as proof of min-max optimality
+with respect to any given utility function of source-destination rates. Our
+approach is based on a model capturing the essential features of an adhoc
+wireless network that has been infiltrated with hostile nodes. We consider any
+collection of nodes, some good and some bad, possessing specified capabilities
+vis-a-vis cryptography, wireless communication and clocks. The good nodes do
+not know the bad nodes. The bad nodes can collaborate perfectly, and are
+capable of any disruptive acts ranging from simply jamming to non-cooperation
+with the protocols in any manner they please.
+  The protocol suite caters to the complete life-cycle, all the way from birth
+of nodes, through all phases of ad hoc network formation, leading to an
+optimized network carrying data reliably. It provably achieves the min-max of
+the utility function, where the max is over all protocol suites published and
+followed by the good nodes, while the min is over all Byzantine behaviors of
+the bad nodes. Under the protocol suite, the bad nodes do not benefit from any
+actions other than jamming or cooperating.
+  This approach supersedes much previous work that deals with several types of
+attacks.

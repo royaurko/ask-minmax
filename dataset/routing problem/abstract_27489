@@ -1,0 +1,16 @@
+In many problems involving generalized linear models, the covariates are
+subject to measurement error. When the number of covariates p exceeds the
+sample size n, regularized methods like the lasso or Dantzig selector are
+required. Several recent papers have studied methods which correct for
+measurement error in the lasso or Dantzig selector for linear models in the p>n
+setting. We study a correction for generalized linear models based on Rosenbaum
+and Tsybakov's matrix uncertainty selector. By not requiring an estimate of the
+measurement error covariance matrix, this generalized matrix uncertainty
+selector has a great practical advantage in problems involving high-dimensional
+data. We further derive an alternative method based on the lasso, and develop
+efficient algorithms for both methods. In our simulation studies of logistic
+and Poisson regression with measurement error, the proposed methods outperform
+the standard lasso and Dantzig selector with respect to covariate selection, by
+reducing the number of false positives considerably. We also consider
+classification of patients on the basis of gene expression data with noisy
+measurements.

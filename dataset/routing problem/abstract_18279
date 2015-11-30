@@ -1,0 +1,24 @@
+We present an exact algorithm that decides, for every fixed $r \geq 2$ in
+time $O(m) + 2^{O(k^2)}$ whether a given multiset of $m$ clauses of size $r$
+admits a truth assignment that satisfies at least $((2^r-1)m+k)/2^r$ clauses.
+Thus \textsc{Max-$r$-Sat} is fixed-parameter tractable when parameterized by
+the number of satisfied clauses above the tight lower bound $(1-2^{-r})m$. This
+solves an open problem of Mahajan et al. (J. Comput. System Sci., 75, 2009).
+  Our algorithm is based on a polynomial-time data reduction procedure that
+reduces a problem instance to an equivalent algebraically represented problem
+with $O(k^2)$ variables. This is done by representing the instance as an
+appropriate polynomial, and by applying a probabilistic argument combined with
+some simple tools from Harmonic analysis to show that if the polynomial cannot
+be reduced to one of size $O(k^2)$, then there is a truth assignment satisfying
+the required number of clauses.
+  We introduce a new notion of bikernelization from a parameterized problem to
+another one and apply it to prove that the above-mentioned parameterized
+\textsc{Max-$r$-Sat} admits a polynomial-size kernel.
+  Combining another probabilistic argument with tools from graph matching
+theory and signed graphs, we show that if an instance of \textsc{Max-2-Sat}
+with $m$ clauses has at least $3k$ variables after application of certain
+polynomial time reduction rules to it, then there is a truth assignment that
+satisfies at least $(3m+k)/4$ clauses.
+  We also outline how the fixed-parameter tractability and polynomial-size
+kernel results on \textsc{Max-$r$-Sat} can be extended to more general families
+of Boolean Constraint Satisfaction Problems.

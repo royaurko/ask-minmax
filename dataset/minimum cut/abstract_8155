@@ -1,0 +1,25 @@
+Here we present a range-limited approach to centrality measures in both
+non-weighted and weighted directed complex networks. We introduce an efficient
+method that generates for every node and every edge its betweenness centrality
+based on shortest paths of lengths not longer than $\ell = 1,...,L$ in case of
+non-weighted networks, and for weighted networks the corresponding quantities
+based on minimum weight paths with path weights not larger than $w_{\ell}=\ell
+\Delta$, $\ell=1,2...,L=R/\Delta$. These measures provide a systematic
+description on the positioning importance of a node (edge) with respect to its
+network neighborhoods 1-step out, 2-steps out, etc. up to including the whole
+network. We show that range-limited centralities obey universal scaling laws
+for large non-weighted networks. As the computation of traditional centrality
+measures is costly, this scaling behavior can be exploited to efficiently
+estimate centralities of nodes and edges for all ranges, including the
+traditional ones. The scaling behavior can also be exploited to show that the
+ranking top-list of nodes (edges) based on their range-limited centralities
+quickly freezes as function of the range, and hence the diameter-range top-list
+can be efficiently predicted. We also show how to estimate the typical largest
+node-to-node distance for a network of $N$ nodes, exploiting the aforementioned
+scaling behavior. These observations are illustrated on model networks and on a
+large social network inferred from cell-phone trace logs ($\sim 5.5\times 10^6$
+nodes and $\sim 2.7\times 10^7$ edges). Finally, we apply these concepts to
+efficiently detect the vulnerability backbone of a network (defined as the
+smallest percolating cluster of the highest betweenness nodes and edges) and
+illustrate the importance of weight-based centrality measures in weighted
+networks in detecting such backbones.

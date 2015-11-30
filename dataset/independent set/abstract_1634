@@ -1,0 +1,13 @@
+We study the problem of finding and characterizing subgraphs with small
+\textit{bipartiteness ratio}. We give a bicriteria approximation algorithm
+\verb|SwpDB| such that if there exists a subset $S$ of volume at most $k$ and
+bipartiteness ratio $\theta$, then for any $0<\epsilon<1/2$, it finds a set
+$S'$ of volume at most $2k^{1+\epsilon}$ and bipartiteness ratio at most
+$4\sqrt{\theta/\epsilon}$. By combining a truncation operation, we give a local
+algorithm \verb|LocDB|, which has asymptotically the same approximation
+guarantee as the algorithm \verb|SwpDB| on both the volume and bipartiteness
+ratio of the output set, and runs in time
+$O(\epsilon^2\theta^{-2}k^{1+\epsilon}\ln^3k)$, independent of the size of the
+graph. Finally, we give a spectral characterization of the small dense
+bipartite-like subgraphs by using the $k$th \textit{largest} eigenvalue of the
+Laplacian of the graph.

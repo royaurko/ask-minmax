@@ -1,0 +1,22 @@
+In this paper we present distributed and adaptive algorithms for motion
+coordination of a group of m autonomous vehicles. The vehicles operate in a
+convex environment with bounded velocity and must service demands whose time of
+arrival, location and on-site service are stochastic; the objective is to
+minimize the expected system time (wait plus service) of the demands. The
+general problem is known as the m-vehicle Dynamic Traveling Repairman Problem
+(m-DTRP). The best previously known control algorithms rely on centralized
+a-priori task assignment and are not robust against changes in the environment,
+e.g. changes in load conditions; therefore, they are of limited applicability
+in scenarios involving ad-hoc networks of autonomous vehicles operating in a
+time-varying environment. First, we present a new class of policies for the
+1-DTRP problem that: (i) are provably optimal both in light- and heavy-load
+condition, and (ii) are adaptive, in particular, they are robust against
+changes in load conditions. Second, we show that partitioning policies, whereby
+the environment is partitioned among the vehicles and each vehicle follows a
+certain set of rules in its own region, are optimal in heavy-load conditions.
+Finally, by combining the new class of algorithms for the 1-DTRP with suitable
+partitioning policies, we design distributed algorithms for the m-DTRP problem
+that (i) are spatially distributed, scalable to large networks, and adaptive to
+network changes, (ii) are within a constant-factor of optimal in heavy-load
+conditions and stabilize the system in any load condition. Simulation results
+are presented and discussed.

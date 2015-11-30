@@ -1,0 +1,15 @@
+The batch latent Dirichlet allocation (LDA) algorithms play important roles
+in probabilistic topic modeling, but they are not suitable for processing big
+data streams due to high time and space compleixty. Online LDA algorithms can
+not only extract topics from big data streams with constant memory
+requirements, but also detect topic shifts as the data stream flows. In this
+paper, we present a novel and easy-to-implement online belief propagation (OBP)
+algorithm that infers the topic distribution from the previously unseen
+documents incrementally within the stochastic approximation framework. We
+discuss intrinsic relations between OBP and online expectation-maximization
+(OEM) algorithms, and show that OBP can converge to the local stationary point
+of the LDA's likelihood function. Extensive empirical studies confirm that OBP
+significantly reduces training time and memory usage while achieves a much
+lower predictive perplexity when compared with current state-of-the-art online
+LDA algorithms. Due to its ease of use, fast speed and low memory usage, OBP is
+a strong candidate for becoming the standard online LDA algorithm.

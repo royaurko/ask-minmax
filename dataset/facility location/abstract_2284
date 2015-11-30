@@ -1,0 +1,11 @@
+The foundational theory of differentiation was developed as part of the
+original release of ACL2(r). In work reported at the last ACL2 Workshop, we
+presented theorems justifying the usual differentiation rules, including the
+chain rule and the derivative of inverse functions. However, the process of
+applying these theorems to formalize the derivative of a particular function is
+completely manual. More recently, we developed a macro and supporting functions
+that can automate this process. This macro uses the ACL2 table facility to keep
+track of functions and their derivatives, and it also interacts with the macro
+that introduces inverse functions in ACL2(r), so that their derivatives can
+also be automated. In this paper, we present the implementation of this macro
+and related functions.

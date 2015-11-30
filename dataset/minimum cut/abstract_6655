@@ -1,0 +1,17 @@
+Imposition of a lasso penalty shrinks parameter estimates toward zero and
+performs continuous model selection. Lasso penalized regression is capable of
+handling linear regression problems where the number of predictors far exceeds
+the number of cases. This paper tests two exceptionally fast algorithms for
+estimating regression coefficients with a lasso penalty. The previously known
+$\ell_2$ algorithm is based on cyclic coordinate descent. Our new $\ell_1$
+algorithm is based on greedy coordinate descent and Edgeworth's algorithm for
+ordinary $\ell_1$ regression. Each algorithm relies on a tuning constant that
+can be chosen by cross-validation. In some regression problems it is natural to
+group parameters and penalize parameters group by group rather than separately.
+If the group penalty is proportional to the Euclidean norm of the parameters of
+the group, then it is possible to majorize the norm and reduce parameter
+estimation to $\ell_2$ regression with a lasso penalty. Thus, the existing
+algorithm can be extended to novel settings. Each of the algorithms discussed
+is tested via either simulated or real data or both. The Appendix proves that a
+greedy form of the $\ell_2$ algorithm converges to the minimum value of the
+objective function.

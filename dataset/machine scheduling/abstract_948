@@ -1,0 +1,22 @@
+STEP-NC (ISO 14649) is becoming a promising standard to replace or supplement
+the conventional G-code programs based on ISO 6983 due to its feature based
+machine independent characteristics and its centric role to enable efficient
+CAD/CAM/CNC interoperability. The re-use of G-code programs is important for
+both manufacturing and capitalization of machining knowledge, nevertheless the
+conversion is a tedious task when carried out manually and machining knowledge
+is almost hidden in the low level G-code. Mapping G-code into STEP-NC should
+benefit from more expressiveness of the manufacturing feature-based
+characteristics of this new standard. The work presented here proposes an
+overall method for G-code to STEP-NC conversion. First, G-code is converted
+into canonical machining functions, this can make the method more applicable
+and make subsequent processes easier to implement; then these functions are
+parsed to generate the neutral format of STEP-NC Part21 toolpath file, this
+turns G-code into object instances, and can facilitate company's usage of
+legacy programs; and finally, also optionally, machining features are extracted
+to generate Part21 CC2 (conformance class) file. The proposed extraction method
+employs geometric information of cutting area inferred from toolpaths and
+machining strategies, in addition to cutting tools' data and workpiece's
+dimension data. This comprehensive use of available data makes the extraction
+more accurate and reliable. The conversion method is holistic, and can be
+extended to process a wide range of G-code programs (e.g. turning or mill-turn
+codes) with as few user interventions as possible.

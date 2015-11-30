@@ -1,0 +1,23 @@
+An algorithm for the detection of overlapping natural communities in networks
+was proposed by Lancichinetti, Fortunato, and Kertesz (LFK) last year. The LFK
+algorithm constructs natural communities of (in principle) all nodes of a graph
+by maximising the local fitness of communities. The resulting modules can
+overlap. The generation of communities can easily be repeated for many values
+of resolution; thus allowing different views on the network at different
+resolutions. We implemented the main idea of the LFK algorithm---to generate
+natural communities of each node of a network---in a different way. We start
+with a value of the resolution parameter that is high enough for each node to
+be its own natural community. As soon as the resolution is reduced, each node
+acquires other nodes as members of its community, i.e. natural communities
+grow. For each community found at a certain resolution level we calculate the
+next lower resolution where a node is added. After adding a node to a community
+of a seed node we check whether it is also the natural community of a node that
+we have already analysed. In this case, we can stop expanding the seed node's
+community. We tested our algorithm on a small benchmark graph and on a network
+of about 500 papers in information science (weighted with the Salton index of
+bibliographic coupling). In our tests, this approach results in characteristic
+ranges of resolution where a large resolution change does not lead to a growth
+of the natural community. Such stable modules were also obtained by applying
+the LFK algorithm but since we determine communities for all resolution values
+in one run, our approach is faster than the LFK reference. And our algorithm
+reveals the hierarchical structure of the graph more easily.

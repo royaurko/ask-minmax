@@ -1,0 +1,13 @@
+For tensor decompositions such as HOSVD and ParaFac, the objective functions
+are nonconvex. This implies, theoretically, there exists a large number of
+local optimas: starting from different starting point, the iteratively improved
+solution will converge to different local solutions. This non-uniqueness
+present a stability and reliability problem for image compression and
+retrieval. In this paper, we present the results of a comprehensive
+investigation of this problem. We found that although all tensor decomposition
+algorithms fail to reach a unique global solution on random data and severely
+scrambled data; surprisingly however, on all real life several data sets (even
+with substantial scramble and occlusions), HOSVD always produce the unique
+global solution in the parameter region suitable to practical applications,
+while ParaFac produce non-unique solutions. We provide an eigenvalue based rule
+for the assessing the solution uniqueness.

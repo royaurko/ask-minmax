@@ -1,0 +1,19 @@
+In a single hop broadcast packet erasure network, we demonstrate that it is
+possible to provide multirate packet delivery outside of what is given by the
+network min-cut. This is achieved by using a deterministic non-block-based
+network coding scheme, which allows us to sidestep some of the limitations put
+in place by the block coding model used to determine the network capacity.
+  Under the network coding scheme we outline, the sender is able to transmit
+network coded packets above the channel rate of some receivers, while ensuring
+that they still experience nonzero delivery rates. Interestingly, in this
+generalised form of asynchronous network coded broadcast, receivers are not
+required to obtain knowledge of all packets transmitted so far. Instead, causal
+feedback from the receivers about packet erasures is used by the sender to
+determine a network coded transmission that will allow at least one, but often
+multiple receivers, to deliver their next needed packet.
+  Although the analysis of deterministic coding schemes is generally a
+difficult problem, by making some approximations we are able to obtain
+tractable estimates of the receivers' delivery rates, which are shown to match
+reasonably well with simulation. Using these estimates, we design a fairness
+algorithm that allocates the sender's resources so all receivers will
+experience fair delivery rate performance.

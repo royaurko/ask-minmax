@@ -1,0 +1,14 @@
+We propose an adaptive version of the total variation algorithm proposed in
+[3] for computing the balanced cut of a graph. The algorithm from [3] used a
+sequence of inner total variation minimizations to guarantee descent of the
+balanced cut energy as well as convergence of the algorithm. In practice the
+total variation minimization step is never solved exactly. Instead, an accuracy
+parameter is specified and the total variation minimization terminates once
+this level of accuracy is reached. The choice of this parameter can vastly
+impact both the computational time of the overall algorithm as well as the
+accuracy of the result. Moreover, since the total variation minimization step
+is not solved exactly, the algorithm is not guarantied to be monotonic. In the
+present work we introduce a new adaptive stopping condition for the total
+variation minimization that guarantees monotonicity. This results in an
+algorithm that is actually monotonic in practice and is also significantly
+faster than previous, non-adaptive algorithms.

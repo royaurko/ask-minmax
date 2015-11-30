@@ -1,0 +1,12 @@
+In the original Art Gallery Problem (AGP), one seeks the minimum number of
+guards required to cover a polygon $P$. We consider the Chromatic AGP (CAGP),
+where the guards are colored. As long as $P$ is completely covered, the number
+of guards does not matter, but guards with overlapping visibility regions must
+have different colors. This problem has applications in landmark-based mobile
+robot navigation: Guards are landmarks, which have to be distinguishable (hence
+the colors), and are used to encode motion primitives, \eg, "move towards the
+red landmark". Let $\chi_G(P)$, the chromatic number of $P$, denote the minimum
+number of colors required to color any guard cover of $P$. We show that
+determining, whether $\chi_G(P) \leq k$ is \NP-hard for all $k \geq 2$. Keeping
+the number of colors minimal is of great interest for robot navigation, because
+less types of landmarks lead to cheaper and more reliable recognition.

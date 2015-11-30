@@ -1,0 +1,13 @@
+We consider the augmented Lagrangian method (ALM) as a solver for the fused
+lasso signal approximator (FLSA) problem. The ALM is a dual method in which
+squares of the constraint functions are added as penalties to the Lagrangian.
+In order to apply this method to FLSA, two types of auxiliary variables are
+introduced to transform the original unconstrained minimization problem into a
+linearly constrained minimization problem. Each updating in this iterative
+algorithm consists of just a simple one-dimensional convex programming problem,
+with closed form solution in many cases. While the existing literature mostly
+focused on the quadratic loss function, our algorithm can be easily implemented
+for general convex loss. The most attractive feature of this algorithm is its
+simplicity in implementation compared to other existing fast solvers. We also
+provide some convergence analysis of the algorithm. Finally, the method is
+illustrated with some simulation datasets.

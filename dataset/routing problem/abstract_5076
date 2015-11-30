@@ -1,0 +1,16 @@
+The minimum-cost subset $k$-connected subgraph problem is a cornerstone
+problem in the area of network design with vertex connectivity requirements. In
+this problem, we are given a graph $G=(V,E)$ with costs on edges and a set of
+terminals $T$. The goal is to find a minimum cost subgraph such that every pair
+of terminals are connected by $k$ openly (vertex) disjoint paths. In this
+paper, we present an approximation algorithm for the subset $k$-connected
+subgraph problem which improves on the previous best approximation guarantee of
+$O(k^2\log{k})$ by Nutov (FOCS 2009). Our approximation guarantee,
+$\alpha(|T|)$, depends upon the number of terminals: [\alpha(|T|) \ \ =\ \
+O(|T|^2) & if |T| < 2k O(k \log^2 k) & if 2k\le |T| < k^2 O(k \log k) & if |T|
+\ge k^2]
+  So, when the number of terminals is {\em large enough}, the approximation
+guarantee improves significantly. Moreover, we show that, given an
+approximation algorithm for $|T|=k$, we can obtain almost the same
+approximation guarantee for any instances with $|T|> k$. This suggests that the
+hardest instances of the problem are when $|T|\approx k$.

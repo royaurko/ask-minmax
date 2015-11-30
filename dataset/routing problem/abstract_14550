@@ -1,0 +1,10 @@
+Several applied problems may produce large sparse matrices with a small
+number of dense rows and/or columns, which can adversely affect the performance
+of commonly used direct solvers. By posing the problem as a saddle point
+system, an unconventional application of a null space method can be employed to
+eliminate dense rows and columns. The choice of null space basis is critical in
+retaining the overall sparse structure of the matrix. A one-sided application
+of the null space method is also presented to eliminate either dense rows or
+columns. These methods can be considered techniques that modify the nonzero
+structure of the matrix before employing a direct solver, and may result in
+improved direct solver performance.

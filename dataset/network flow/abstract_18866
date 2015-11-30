@@ -1,0 +1,18 @@
+More and more large data collections are gathered worldwide in various IT
+systems. Many of them possess the networked nature and need to be processed and
+analysed as graph structures. Due to their size they require very often usage
+of parallel paradigm for efficient computation. Three parallel techniques have
+been compared in the paper: MapReduce, its map-side join extension and Bulk
+Synchronous Parallel (BSP). They are implemented for two different graph
+problems: calculation of single source shortest paths (SSSP) and collective
+classification of graph nodes by means of relational influence propagation
+(RIP). The methods and algorithms are applied to several network datasets
+differing in size and structural profile, originating from three domains:
+telecommunication, multimedia and microblog. The results revealed that
+iterative graph processing with the BSP implementation always and
+significantly, even up to 10 times outperforms MapReduce, especially for
+algorithms with many iterations and sparse communication. Also MapReduce
+extension based on map-side join usually noticeably presents better efficiency,
+although not as much as BSP. Nevertheless, MapReduce still remains the good
+alternative for enormous networks, whose data structures do not fit in local
+memories.

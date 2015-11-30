@@ -1,0 +1,25 @@
+Consensus is one of the fundamental tasks studied in distributed computing.
+Processors have input values from some set $V$ and they have to decide the same
+value from this set. If all processors have the same input value, then they
+must all decide this value. We study the task of consensus in a Multiple Access
+Channel (MAC) prone to faults, under a very weak communication model called the
+$\mathit{beeping\ model}$. Communication proceeds in synchronous rounds. Some
+processors wake up spontaneously, in possibly different rounds decided by an
+adversary. In each round, an awake processor can either listen, i.e., stay
+silent, or beep, i.e., emit a signal. In each round, a fault can occur in the
+channel independently with constant probability $0<p<1$. In a fault-free round,
+an awake processor hears a beep if it listens in this round and if one or more
+other processors beep in this round. A processor still dormant in a fault-free
+round in which some other processor beeps is woken up by this beep and hears
+it. In a faulty round nothing is heard, regardless of the behaviour of the
+processors.
+  An algorithm working with error probability at most $\epsilon$, for a given
+$\epsilon>0$, is called $\epsilon$-$\mathit{safe}$. Our main result is the
+design and analysis, for any constant $\epsilon>0$, of a deterministic
+$\epsilon$-safe consensus algorithm that works in time $O(\log w)$ in a
+fault-prone MAC, where $w$ is the smallest input value of all participating
+processors. We show that this time cannot be improved, even when the MAC is
+fault-free. The main algorithmic tool that we develop to achieve our goal, and
+that might be of independent interest, is a deterministic algorithm that, with
+arbitrarily small constant error probability, establishes a global clock in a
+fault-prone MAC in constant time.

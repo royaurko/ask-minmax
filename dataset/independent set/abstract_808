@@ -1,0 +1,25 @@
+The Maximal Independent Set (MIS) problem is one of the basics in the study
+of locality in distributed graph algorithms. This paper presents an extremely
+simple randomized algorithm providing a near-optimal local complexity for this
+problem, which incidentally, when combined with some recent techniques, also
+leads to a near-optimal global complexity.
+  Classical algorithms of Luby [STOC'85] and Alon, Babai and Itai [JALG'86]
+provide the global complexity guarantee that, with high probability, all nodes
+terminate after $O(\log n)$ rounds. In contrast, our initial focus is on the
+local complexity, and our main contribution is to provide a very simple
+algorithm guaranteeing that each particular node $v$ terminates after $O(\log
+\mathsf{deg}(v)+\log 1/\epsilon)$ rounds, with probability at least
+$1-\epsilon$. The guarantee holds even if the randomness outside $2$-hops
+neighborhood of $v$ is determined adversarially. This degree-dependency is
+optimal, due to a lower bound of Kuhn, Moscibroda, and Wattenhofer [PODC'04].
+  Interestingly, this local complexity smoothly transitions to a global
+complexity: by adding techniques of Barenboim, Elkin, Pettie, and Schneider
+[FOCS'12, arXiv: 1202.1983v3], we get a randomized MIS algorithm with a high
+probability global complexity of $O(\log \Delta) + 2^{O(\sqrt{\log \log n})}$,
+where $\Delta$ denotes the maximum degree. This improves over the $O(\log^2
+\Delta) + 2^{O(\sqrt{\log \log n})}$ result of Barenboim et al., and gets close
+to the $\Omega(\min\{\log \Delta, \sqrt{\log n}\})$ lower bound of Kuhn et al.
+  Corollaries include improved algorithms for MIS in graphs of upper-bounded
+arboricity, or lower-bounded girth, for Ruling Sets, for MIS in the Local
+Computation Algorithms (LCA) model, and a faster distributed algorithm for the
+Lov\'asz Local Lemma.

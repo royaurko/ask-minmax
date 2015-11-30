@@ -1,0 +1,12 @@
+We consider an instance of the following problem: Parties P_1,..., P_k each
+receive an input x_i, and a coordinator (distinct from each of these parties)
+wishes to compute f(x_1,..., x_k) for some predicate f. We are interested in
+one-round protocols where each party sends a single message to the coordinator;
+there is no communication between the parties themselves. What is the minimum
+communication complexity needed to compute f, possibly with bounded error?
+  We prove tight bounds on the one-round communication complexity when f
+corresponds to the promise problem of distinguishing sums (namely, determining
+which of two possible values the {x_i} sum to) or the problem of determining
+whether the {x_i} sum to a particular value. Similar problems were studied
+previously by Nisan and in concurrent work by Viola. Our proofs rely on basic
+theorems from additive combinatorics, but are otherwise elementary.

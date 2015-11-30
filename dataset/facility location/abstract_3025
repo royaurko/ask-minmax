@@ -1,0 +1,13 @@
+In this correspondence, we present an algorithm for distributed sensor
+localization with noisy distance measurements (DILAND) that extends and makes
+the DLRE more robust. DLRE is a distributed sensor localization algorithm in
+$\mathbb{R}^m$ $(m\geq1)$ introduced in \cite{usman_loctsp:08}. DILAND operates
+when (i) the communication among the sensors is noisy; (ii) the communication
+links in the network may fail with a non-zero probability; and (iii) the
+measurements performed to compute distances among the sensors are corrupted
+with noise. The sensors (which do not know their locations) lie in the convex
+hull of at least $m+1$ anchors (nodes that know their own locations.) Under
+minimal assumptions on the connectivity and triangulation of each sensor in the
+network, this correspondence shows that, under the broad random phenomena
+described above, DILAND converges almost surely (a.s.) to the exact sensor
+locations.

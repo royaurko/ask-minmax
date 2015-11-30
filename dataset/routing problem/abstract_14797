@@ -1,0 +1,23 @@
+Despite the apparent similarity between shared randomness and shared
+entanglement in the context of Communication Complexity, our understanding of
+the latter is not as good as of the former. In particular, there is no known
+"entanglement analogue" for the famous theorem by Newman, saying that the
+number of shared random bits required for solving any communication problem can
+be at most logarithmic in the input length (i.e., using more than O(log n)
+shared random bits would not reduce the complexity of an optimal solution).
+  In this paper we prove that the same is not true for entanglement. We
+establish a wide range of tight (up to a polylogarithmic factor) entanglement
+vs. communication tradeoffs for relational problems. The low end is: for any
+t>2, reducing shared entanglement from log^t(n) to o(log^{t-2}(n)) qubits can
+increase the communication required for solving a problem almost exponentially,
+from O(log^t(n)) to \Omega(\sqrt n). The high end is: for any \eps>0, reducing
+shared entanglement from n^{1-\eps}log(n) to o(n^{1-\eps}/log(n)) can increase
+the required communication from O(n^{1-\eps}log(n)) to
+\Omega(n^{1-\eps/2}/log(n)). The upper bounds are demonstrated via protocols
+which are exact and work in the \e{simultaneous message passing model}, while
+the lower bounds hold for \e{bounded-error protocols}, even in the more
+powerful \e{model of 1-way communication}. Our protocols use shared EPR pairs
+while the lower bounds apply to any sort of prior entanglement.
+  We base the lower bounds on a strong direct product theorem for communication
+complexity of a certain class of relational problems. We believe that the
+theorem might have applications outside the scope of this work.

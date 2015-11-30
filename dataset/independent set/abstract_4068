@@ -1,0 +1,22 @@
+We consider an automatic overload control for two large service systems
+modeled as multi-server queues, such as call centers. We assume that the two
+systems are designed to operate independently, but want to help each other
+respond to unexpected overloads. The proposed overload control automatically
+activates sharing (sending some customers from one system to the other) once a
+ratio of the queue lengths in the two systems crosses an activation threshold
+(with ratio and activation threshold parameters for each direction). To prevent
+harmful sharing, sharing is allowed in only one direction at any time. In this
+paper, we are primarily concerned with ensuring that the system recovers
+rapidly after the overload is over, either (i) because the two systems return
+to normal loading or (ii) because the direction of the overload suddenly shifts
+in the opposite direction. To achieve rapid recovery, we introduce lower
+thresholds for the queue ratios, below which one-way sharing is released. As a
+basis for studying the complex dynamics, we develop a new six-dimensional fluid
+approximation for a system with time-varying arrival rates, extending a
+previous fluid approximation involving a stochastic averaging principle. We
+conduct simulations to confirm that the new algorithm is effective for
+predicting the system performance and choosing effective control parameters.
+The simulation and the algorithm both show that the system can experience an
+inefficient nearly-periodic behavior, corresponding to an oscillating
+equilibrium (congestion collapse), if the sharing is strongly inefficient and
+the control parameters are set inappropriately.

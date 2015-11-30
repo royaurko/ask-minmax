@@ -1,0 +1,26 @@
+This paper considers the joint-decoding (JD) problem for finite-state
+channels (FSCs) and low-density parity-check (LDPC) codes. In the first part,
+the linear-programming (LP) decoder for binary linear codes is extended to JD
+of binary-input FSCs. In particular, we provide a rigorous definition of LP
+joint-decoding pseudo-codewords (JD-PCWs) that enables evaluation of the
+pairwise error probability between codewords and JD-PCWs in AWGN. This leads
+naturally to a provable upper bound on decoder failure probability. If the
+channel is a finite-state intersymbol interference channel, then the joint LP
+decoder also has the maximum-likelihood (ML) certificate property and all
+integer-valued solutions are codewords. In this case, the performance loss
+relative to ML decoding can be explained completely by fractional-valued
+JD-PCWs. After deriving these results, we discovered some elements were
+equivalent to earlier work by Flanagan on LP receivers.
+  In the second part, we develop an efficient iterative solver for the joint LP
+decoder discussed in the first part. In particular, we extend the approach of
+iterative approximate LP decoding, proposed by Vontobel and Koetter and
+analyzed by Burshtein, to this problem. By taking advantage of the dual-domain
+structure of the JD-LP, we obtain a convergent iterative algorithm for joint LP
+decoding whose structure is similar to BCJR-based turbo equalization (TE). The
+result is a joint iterative decoder whose per-iteration complexity is similar
+to that of TE but whose performance is similar to that of joint LP decoding.
+The main advantage of this decoder is that it appears to provide the
+predictability of joint LP decoding and superior performance with the
+computational complexity of TE. One expected application is coding for magnetic
+storage where the required block-error rate is extremely low and system
+performance is difficult to verify by simulation.

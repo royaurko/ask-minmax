@@ -1,0 +1,17 @@
+We compare different selection criteria to choose the number of latent states
+of a multivariate latent Markov model for longitudinal data. This model is
+based on an underlying Markov chain to represent the evolution of a latent
+characteristic of a group of individuals over time. Then, the response
+variables observed at the different occasions are assumed to be conditionally
+independent given this chain. Maximum likelihood of the model is carried out
+through an Expectation-Maximization algorithm based on forward-backward
+recursions which are well known in the hidden Markov literature for time
+series. The selection criteria we consider in our comparison are based on
+penalized versions of the maximum log-likelihood or on the posterior
+probabilities of belonging to each latent state, that is the conditional
+probability of the latent state given the observed data. A Monte Carlo
+simulation study shows that the indices referred to the log-likelihood based
+information criteria perform in general better with respect to those referred
+to the classification based criteria. This is due to the fact that the latter
+tend to underestimate the true number of latent states, especially in the
+univariate case.

@@ -1,0 +1,16 @@
+Frequent pattern (itemset) mining in transactional databases is one of the
+most well-studied problems in data mining. One obstacle that limits the
+practical usage of frequent pattern mining is the extremely large number of
+patterns generated. Such a large size of the output collection makes it
+difficult for users to understand and use in practice. Even restricting the
+output to the border of the frequent itemset collection does not help much in
+alleviating the problem. In this paper we address the issue of overwhelmingly
+large output size by introducing and studying the following problem: mining
+top-k approximate frequent patterns. The union of the power sets of these k
+sets should satisfy the following conditions: (1) including itemsets with
+larger support as many as possible and (2) including itemsets with smaller
+support as less as possible. An integrated objective function is designed to
+combine these two objectives. Consequently, we derive the upper bounds on
+objective function and present an approximate branch-and-bound method for
+finding the feasible solution. We give empirical evidence showing that our
+formulation and approximation methods work well in practice.

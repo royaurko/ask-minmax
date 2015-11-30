@@ -1,0 +1,16 @@
+Multi-armed bandit problems are considered as a paradigm of the trade-off
+between exploring the environment to find profitable actions and exploiting
+what is already known. In the stationary case, the distributions of the rewards
+do not change in time, Upper-Confidence Bound (UCB) policies have been shown to
+be rate optimal. A challenging variant of the MABP is the non-stationary bandit
+problem where the gambler must decide which arm to play while facing the
+possibility of a changing environment. In this paper, we consider the situation
+where the distributions of rewards remain constant over epochs and change at
+unknown time instants. We analyze two algorithms: the discounted UCB and the
+sliding-window UCB. We establish for these two algorithms an upper-bound for
+the expected regret by upper-bounding the expectation of the number of times a
+suboptimal arm is played. For that purpose, we derive a Hoeffding type
+inequality for self normalized deviations with a random number of summands. We
+establish a lower-bound for the regret in presence of abrupt changes in the
+arms reward distributions. We show that the discounted UCB and the
+sliding-window UCB both match the lower-bound up to a logarithmic factor.

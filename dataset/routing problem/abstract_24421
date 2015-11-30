@@ -1,0 +1,16 @@
+The subspace approximation problem Subspace($k$,$p$) asks for a
+$k$-dimensional linear subspace that fits a given set of points optimally,
+where the error for fitting is a generalization of the least squares fit and
+uses the $\ell_{p}$ norm instead. Most of the previous work on subspace
+approximation has focused on small or constant $k$ and $p$, using coresets and
+sampling techniques from computational geometry.
+  In this paper, extending another line of work based on convex relaxation and
+rounding, we give a polynomial time algorithm, \emph{for any $k$ and any $p
+\geq 2$}, with the approximation guarantee roughly $\gamma_{p} \sqrt{2 -
+\frac{1}{n-k}}$, where $\gamma_{p}$ is the $p$-th moment of a standard normal
+random variable N(0,1). We show that the convex relaxation we use has an
+integrality gap (or "rank gap") of $\gamma_{p} (1 - \epsilon)$, for any
+constant $\epsilon > 0$. Finally, we show that assuming the Unique Games
+Conjecture, the subspace approximation problem is hard to approximate within a
+factor better than $\gamma_{p} (1 - \epsilon)$, for any constant $\epsilon >
+0$.

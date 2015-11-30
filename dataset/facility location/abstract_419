@@ -1,0 +1,16 @@
+Formal proof checkers such as Coq are capable of validating proofs of
+correction of algorithms for finite field arithmetics but they require
+extensive training from potential users. The delayed solution of a triangular
+system over a finite field mixes operations on integers and operations on
+floating point numbers. We focus in this report on verifying proof obligations
+that state that no round off error occurred on any of the floating point
+operations. We use a tool named Gappa that can be learned in a matter of
+minutes to generate proofs related to floating point arithmetic and hide
+technicalities of formal proof checkers. We found that three facilities are
+missing from existing tools. The first one is the ability to use in Gappa new
+lemmas that cannot be easily expressed as rewriting rules. We coined the second
+one ``variable interchange'' as it would be required to validate loop
+interchanges. The third facility handles massive loop unrolling and argument
+instantiation by generating traces of execution for a large number of cases. We
+hope that these facilities may sometime in the future be integrated into
+mainstream code validation.

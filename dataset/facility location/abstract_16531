@@ -1,0 +1,18 @@
+This paper considers the problem of matrix completion, when some number of
+the columns are arbitrarily corrupted, potentially by a malicious adversary. It
+is well-known that standard algorithms for matrix completion can return
+arbitrarily poor results, if even a single column is corrupted. What can be
+done if a large number, or even a constant fraction of columns are corrupted?
+In this paper, we study this very problem, and develop an efficient algorithm
+for its solution. Our results show that with a vanishing fraction of observed
+entries, it is nevertheless possible to succeed in performing matrix
+completion, even when the number of corrupted columns grows. When the number of
+corruptions is as high as a constant fraction of the total number of columns,
+we show that again exact matrix completion is possible, but in this case our
+algorithm requires many more -- a constant fraction -- of observations. One
+direct application comes from robust collaborative filtering. Here, some number
+of users are so-called manipulators, and try to skew the predictions of the
+algorithm. Significantly, our results hold without any assumptions on the
+number, locations or values of the observed entries of the manipulated columns.
+In particular, this means that manipulators can act in a completely adversarial
+manner.

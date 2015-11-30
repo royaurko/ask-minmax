@@ -1,0 +1,15 @@
+Subsets of F_2^n that are eps-biased, meaning that the parity of any set of
+bits is even or odd with probability eps close to 1/2, are powerful tools for
+derandomization. A simple randomized construction shows that such sets exist of
+size O(n/eps^2), and known deterministic constructions achieve sets of size
+O(n/eps^3), O(n^2/eps^2), and O((n/eps^2)^{5/4}). Rather than derandomizing
+these sets completely in exchange for making them larger, we attempt a partial
+derandomization while keeping them small, constructing sets of size O(n/eps^2)
+with as few random bits as possible. The naive randomized construction requires
+O(n^2/eps^2) random bits. We give two constructions. The first uses Nisan's
+space-bounded pseudorandom generator to partly derandomize a folklore
+probabilistic construction of an error-correcting code, and requires O(n log
+(1/eps)) bits. Our second construction requires O(n log (n/eps)) bits, but is
+more elementary; it adds randomness to a Legendre symbol construction on Alon,
+Goldreich, H{\aa}stad, and Peralta, and uses Weil sums to bound high moments of
+the bias.

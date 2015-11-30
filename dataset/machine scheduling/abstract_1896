@@ -1,0 +1,14 @@
+X-ray observations with the ROSAT High Resolution Imager (HRI) often have
+spatial smearing on the order of 10 arcsec (Morse 1994). This degradation of
+the intrinsic resolution of the instrument (5 arcsec) can be attributed to
+errors in the aspect solution associated with the wobble of the space craft or
+with the reacquisition of the guide stars. We have developed a set of IRAF/PROS
+and MIDAS/EXSAS routines to minimize these effects. Our procedure attempts to
+isolate aspect errors that are repeated through each cycle of the wobble. The
+method assigns a 'wobble phase' to each event based on the 402 second period of
+the ROSAT wobble. The observation is grouped into a number of phase bins and a
+centroid is calculated for each sub-image. The corrected HRI event list is
+reconstructed by adding the sub-images which have been shifted to a common
+source position. This method has shown approx. 30% reduction of the full width
+half maximum (FWHM) of an X-ray observation of the radio galaxy 3C 120.
+Additional examples are presented.

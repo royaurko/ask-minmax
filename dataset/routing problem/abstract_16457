@@ -1,0 +1,15 @@
+Saddle point problems arise from many wireless applications, and primal-dual
+iterative algorithms are widely applied to find the saddle points. In the
+existing literature, the convergence results of such algorithms are established
+assuming the problem specific parameters remain unchanged during the
+iterations. However, this assumption is unrealistic in time varying wireless
+systems, as explicit message passing is usually involved in the iterations and
+the channel state information (CSI) may change in a time scale comparable to
+the algorithm update period. This paper investigates the convergence behavior
+and the tracking error of primal-dual iterative algorithms under time varying
+CSI. The convergence results are established by studying the stability of an
+equivalent virtual dynamic system derived in the paper, and the Lyapunov theory
+is applied for the stability analysis. We show that the average tracking error
+is proportional to the time variation rate of the CSI. Based on these analyses,
+we also derive an adaptive primal-dual algorithm by introducing a compensation
+term to reduce the tracking error under the time varying CSI.

@@ -1,0 +1,16 @@
+New PCI-e flash cards and SSDs supporting over 100,000 IOPs are now
+available, with several usecases in the design of a high performance storage
+system. By using an array of flash chips, arranged in multiple banks, large
+capacities are achieved. Such multi-banked architecture allow parallel read,
+write and erase operations. In a raw PCI-e flash card, such parallelism is
+directly available to the software layer. In addition, the devices have
+restrictions such as, pages within a block can only be written sequentially.
+The devices also have larger minimum write sizes (greater than 4KB). Current
+flash translation layers (FTLs) in Linux are not well suited for such devices
+due to the high device speeds, architectural restrictions as well as other
+factors such as high lock contention. We present a FTL for Linux that takes
+into account the hardware restrictions, that also exploits the parallelism to
+achieve high speeds. We also consider leveraging the parallelism for garbage
+collection by scheduling the garbage collection activities on idle banks. We
+propose and evaluate an adaptive method to vary the amount of garbage
+collection according to the current I/O load on the device.

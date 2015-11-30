@@ -1,0 +1,17 @@
+The paper investigates a version of the resource allocation problem arising
+in the wireless networking, namely in the OVSF code reallocation process. In
+this setting a complete binary tree of a given height $n$ is considered,
+together with a sequence of requests which have to be served in an online
+manner. The requests are of two types: an insertion request requires to
+allocate a complete subtree of a given height, and a deletion request frees a
+given allocated subtree. In order to serve an insertion request it might be
+necessary to move some already allocated subtrees to other locations in order
+to free a large enough subtree. We are interested in the worst case average
+number of such reallocations needed to serve a request.
+  It was proved in previous work that the competitive ratio of the optimal
+online algorithm solving this problem is between 1.5 and O(n). We partially
+answer the question about its exact value by giving an O(1)-competitive online
+algorithm.
+  Same model has been used in the context of memory management systems, and
+analyzed for the number of reallocations needed to serve a request in the worst
+case. In this setting, our result is a corresponding amortized analysis.

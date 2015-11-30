@@ -1,0 +1,12 @@
+We suggest a new optical solution for solving the YES/NO version of the Exact
+Cover problem by using the massive parallelism of light. The idea is to build
+an optical device which can generate all possible solutions of the problem and
+then to pick the correct one. In our case the device has a graph-like
+representation and the light is traversing it by following the routes given by
+the connections between nodes. The nodes are connected by arcs in a special way
+which lets us to generate all possible covers (exact or not) of the given set.
+For selecting the correct solution we assign to each item, from the set to be
+covered, a special integer number. These numbers will actually represent delays
+induced to light when it passes through arcs. The solution is represented as a
+subray arriving at a certain moment in the destination node. This will tell us
+if an exact cover does exist or not.

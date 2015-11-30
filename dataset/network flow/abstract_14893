@@ -1,0 +1,14 @@
+The AC power flow equations underlie all operational aspects of power
+systems. They are solved routinely in operational practice using the
+Newton-Raphson method and its variants. These methods work well given a good
+initial "guess" for the solution, which is always available in normal system
+operations. However, with the increase in levels of intermittent generation,
+the assumption of a good initial guess always being available is no longer
+valid. In this paper, we solve this problem using the theory of monotone
+operators. We show that it is possible to compute (using an offline
+optimization) a "monotonicity domain" in the space of voltage phasors. Given
+this domain, there is a simple efficient algorithm that will either find a
+solution in the domain, or provably certify that no solutions exist in it. We
+validate the approach on several IEEE test cases and demonstrate that the
+offline optimization can be performed tractably and the computed "monotonicity
+domain" includes all practically relevant power flow solutions.

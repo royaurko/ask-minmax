@@ -1,0 +1,23 @@
+Answer set programming (ASP) is a form of declarative programming that allows
+to succinctly formulate and efficiently solve complex problems. An intuitive
+extension of this formalism is communicating ASP, in which multiple ASP
+programs collaborate to solve the problem at hand. However, the expressiveness
+of communicating ASP has not been thoroughly studied. In this paper, we present
+a systematic study of the additional expressiveness offered by allowing ASP
+programs to communicate. First, we consider a simple form of communication
+where programs are only allowed to ask questions to each other. For the most
+part, we deliberately only consider simple programs, i.e. programs for which
+computing the answer sets is in P. We find that the problem of deciding whether
+a literal is in some answer set of a communicating ASP program using simple
+communication is NP-hard. In other words: we move up a step in the polynomial
+hierarchy due to the ability of these simple ASP programs to communicate and
+collaborate. Second, we modify the communication mechanism to also allow us to
+focus on a sequence of communicating programs, where each program in the
+sequence may successively remove some of the remaining models. This mimics a
+network of leaders, where the first leader has the first say and may remove
+models that he or she finds unsatisfactory. Using this particular communication
+mechanism allows us to capture the entire polynomial hierarchy. This means, in
+particular, that communicating ASP could be used to solve problems that are
+above the second level of the polynomial hierarchy, such as some forms of
+abductive reasoning as well as PSPACE-complete problems such as STRIPS
+planning.

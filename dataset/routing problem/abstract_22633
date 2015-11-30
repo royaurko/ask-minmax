@@ -1,0 +1,14 @@
+This paper describes a fourth-order integration algorithm for the
+gravitational N-body problem based on discrete Lagrangian mechanics. When used
+with shared timesteps, the algorithm is momentum conserving and symplectic. We
+generalize the algorithm to handle individual time steps; this introduces
+fifth-order errors in angular momentum conservation and symplecticity. We show
+that using adaptive block power of two timesteps does not increase the error in
+symplecticity. In contrast to other high-order, symplectic, individual
+timestep, momentum-preserving algorithms, the algorithm takes only forward
+timesteps. We compare a code integrating an N-body system using the algorithm
+with a direct-summation force calculation to standard stellar cluster
+simulation codes. We find that our algorithm has about 1.5 orders of magnitude
+better symplecticity and momentum conservation errors than standard algorithms
+for equivalent numbers of force evaluations and equivalent energy conservation
+errors.

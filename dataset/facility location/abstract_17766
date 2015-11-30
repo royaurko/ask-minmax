@@ -1,0 +1,20 @@
+In this study, by developing a theory of a mixture model and EM algorithm for
+string data on the basis of a probability theory on a set of strings developed
+in our previous studies, we address the problem of clustering string data in an
+unsupervised manner. We first construct a parametric distribution on a set of
+strings in the motif of the Laplace distribution on a set of real numbers and
+reveal its basic properties. This Laplace-like distribution has two parameters
+one of which is a string that represents the location of the distribution and
+another is positive real number that represents the dispersion. It is difficult
+to explicitly write maximum likelihood estimators of the parameters because one
+parameter is a string. We construct estimators that almost surely converge to
+the maximum likelihood estimators as the number of observed strings increases
+and demonstrate that the estimators strongly consistently estimate the
+parameters. After that, we compose an iteration algorithm for estimating
+parameters of the mixture model of the Laplace-like distributions and
+demonstrate that the algorithm almost surely converges to the EM algorithm for
+the Laplace-like mixture and strongly consistently estimates its parameters as
+the numbers of observed strings and of iterations increase. We finally derive a
+procedure for unsupervised string clustering from the Laplace-like mixture that
+is asymptotically optimal in the sense that the posterior probability of making
+correct classifications is maximized.

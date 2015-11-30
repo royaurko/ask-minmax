@@ -1,0 +1,19 @@
+We propose Otiy, a node-centric location service that limits the impact of
+location updates generate by mobile nodes in IEEE802.11-based wireless mesh
+networks. Existing location services use node identifiers to determine the
+locator (aka anchor) that is responsible for keeping track of a node's
+location. Such a strategy can be inefficient because: (i) identifiers give no
+clue on the node's mobility and (ii) locators can be far from the
+source/destination shortest path, which increases both location delays and
+bandwidth consumption. To solve these issues, Otiy introduces a new strategy
+that identifies nodes to play the role of locators based on the likelihood of a
+destination to be close to these nodes- i.e., locators are identified depending
+on the mobility pattern of nodes. Otiy relies on the cyclic mobility patterns
+of nodes and creates a slotted agenda composed of a set of predicted locations,
+defined according to the past and present patterns of mobility. Correspondent
+nodes fetch this agenda only once and use it as a reference for identifying
+which locators are responsible for the node at different points in time. Over a
+period of about one year, the weekly proportion of nodes having at least 50% of
+exact location predictions is in average about 75%. This proportion increases
+by 10% when nodes also consider their closeness to the locator from only what
+they know about the network.

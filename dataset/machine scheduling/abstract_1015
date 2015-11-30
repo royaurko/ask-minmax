@@ -1,0 +1,11 @@
+A trend in high performance computers that is becoming increasingly popular
+is the use of symmetric multiprocessing (SMP) rather than the older paradigm of
+MPP. MPI codes that ran and scaled well on MPP machines can often be run on an
+SMP machine using the vendor's version of MPI. However, this approach may not
+make optimal use of the (expensive) SMP hardware. More significantly, there are
+machines like Blue Horizon, an IBM SP with 8-way SMP nodes at the San Diego
+Supercomputer Center that can only support 4 MPI processes per node (with the
+current switch). On such a machine it is imperative to be able to use OpenMP
+parallelism on the node, and MPI between nodes. We describe the challenges of
+converting MILC MPI code to using a second level of OpenMP parallelism, and
+benchmarks on IBM and Sun computers.

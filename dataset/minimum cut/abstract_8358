@@ -1,0 +1,26 @@
+This paper considers pilot-based channel estimation in large-scale
+multiple-input multiple-output (MIMO) communication systems, also known as
+massive MIMO, where there are hundreds of antennas at one side of the link.
+Motivated by the fact that computational complexity is one of the main
+challenges in such systems, a set of low-complexity Bayesian channel
+estimators, coined Polynomial ExpAnsion CHannel (PEACH) estimators, are
+introduced for arbitrary channel and interference statistics. While the
+conventional minimum mean square error (MMSE) estimator has cubic complexity in
+the dimension of the covariance matrices, due to an inversion operation, our
+proposed estimators significantly reduce this to square complexity by
+approximating the inverse by a L-degree matrix polynomial. The coefficients of
+the polynomial are optimized to minimize the mean square error (MSE) of the
+estimate.
+  We show numerically that near-optimal MSEs are achieved with low polynomial
+degrees. We also derive the exact computational complexity of the proposed
+estimators, in terms of the floating-point operations (FLOPs), by which we
+prove that the proposed estimators outperform the conventional estimators in
+large-scale MIMO systems of practical dimensions while providing a reasonable
+MSEs. Moreover, we show that L needs not scale with the system dimensions to
+maintain a certain normalized MSE. By analyzing different interference
+scenarios, we observe that the relative MSE loss of using the low-complexity
+PEACH estimators is smaller in realistic scenarios with pilot contamination. On
+the other hand, PEACH estimators are not well suited for noise-limited
+scenarios with high pilot power; therefore, we also introduce the
+low-complexity diagonalized estimator that performs well in this regime.
+Finally, we ...

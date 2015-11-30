@@ -1,0 +1,24 @@
+The packet routing problem plays an essential role in communication networks.
+It involves how to transfer data from some origins to some destinations within
+a reasonable amount of time. In the $(\ell,k)$-routing problem, each node can
+send at most $\ell$ packets and receive at most $k$ packets. Permutation
+routing is the particular case $\ell=k=1$. In the $r$-central routing problem,
+all nodes at distance at most $r$ from a fixed node $v$ want to send a packet
+to $v$. In this article we study the permutation routing, the $r$-central
+routing and the general $(\ell,k)$-routing problems on plane grids, that is
+square grids, triangular grids and hexagonal grids. We use the
+\emph{store-and-forward} $\Delta$-port model, and we consider both full and
+half-duplex networks. We first survey the existing results in the literature
+about packet routing, with special emphasis on $(\ell,k)$-routing on plane
+grids. Our main contributions are the following:
+  1. Tight permutation routing algorithms on full-duplex hexagonal grids, and
+half duplex triangular and hexagonal grids.
+  2. Tight $r$-central routing algorithms on triangular and hexagonal grids.
+  3. Tight $(k,k)$-routing algorithms on square, triangular and hexagonal
+grids.
+  4. Good approximation algorithms (in terms of running time) for
+$(\ell,k)$-routing on square, triangular and hexagonal grids, together with new
+lower bounds on the running time of any algorithm using shortest path routing.
+  These algorithms are all completely distributed, i.e., can be implemented
+independently at each node. Finally, we also formulate the $(\ell,k)$-routing
+problem as a \textsc{Weighted Edge Coloring} problem on bipartite graphs.

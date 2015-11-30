@@ -1,0 +1,15 @@
+An $r$-simple $k$-path is a {path} in the graph of length $k$ that passes
+through each vertex at most $r$ times. The $r$-SIMPLE $k$-PATH problem, given a
+graph $G$ as input, asks whether there exists an $r$-simple $k$-path in $G$. We
+first show that this problem is NP-Complete. We then show that there is a graph
+$G$ that contains an $r$-simple $k$-path and no simple path of length greater
+than $4\log k/\log r$. So this, in a sense, motivates this problem especially
+when one's goal is to find a short path that visits many vertices in the graph
+while bounding the number of visits at each vertex.
+  We then give a randomized algorithm that runs in time $$\mathrm{poly}(n)\cdot
+2^{O( k\cdot \log r/r)}$$ that solves the $r$-SIMPLE $k$-PATH on a graph with
+$n$ vertices with one-sided error. We also show that a randomized algorithm
+with running time $\mathrm{poly}(n)\cdot 2^{(c/2)k/ r}$ with $c<1$ gives a
+randomized algorithm with running time $\poly(n)\cdot 2^{cn}$ for the
+Hamiltonian path problem in a directed graph - an outstanding open problem. So
+in a sense our algorithm is optimal up to an $O(\log r)$ factor.

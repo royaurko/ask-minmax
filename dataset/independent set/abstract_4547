@@ -1,0 +1,22 @@
+Signal modeling lies at the core of numerous signal and image processing
+applications. A recent approach that has drawn considerable attention is sparse
+representation modeling, in which the signal is assumed to be generated as a
+combination of a few atoms from a given dictionary. In this work we consider a
+Bayesian setting and go beyond the classic assumption of independence between
+the atoms. The main goal of this paper is to introduce a statistical model that
+takes such dependencies into account and show how this model can be used for
+sparse signal recovery. We follow the suggestion of two recent works and assume
+that the sparsity pattern is modeled by a Boltzmann machine, a commonly used
+graphical model. For general dependency models, exact MAP and MMSE estimation
+of the sparse representation becomes computationally complex. To simplify the
+computations, we propose greedy approximations of the MAP and MMSE estimators.
+We then consider a special case in which exact MAP is feasible, by assuming
+that the dictionary is unitary and the dependency model corresponds to a
+certain sparse graph. Exploiting this structure, we develop an efficient
+message passing algorithm that recovers the underlying signal. When the model
+parameters defining the underlying graph are unknown, we suggest an algorithm
+that learns these parameters directly from the data, leading to an iterative
+scheme for adaptive sparse signal recovery. The effectiveness of our approach
+is demonstrated on real-life signals - patches of natural images - where we
+compare the denoising performance to that of previous recovery methods that do
+not exploit the statistical dependencies.

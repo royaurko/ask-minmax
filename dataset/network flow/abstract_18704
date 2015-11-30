@@ -1,0 +1,15 @@
+Gossip algorithms have recently received significant attention, mainly
+because they constitute simple and robust message-passing schemes for
+distributed information processing over networks. However for many topologies
+that are realistic for wireless ad-hoc and sensor networks (like grids and
+random geometric graphs), the standard nearest-neighbor gossip converges as
+slowly as flooding ($O(n^2)$ messages).
+  A recently proposed algorithm called geographic gossip improves gossip
+efficiency by a $\sqrt{n}$ factor, by exploiting geographic information to
+enable multi-hop long distance communications. In this paper we prove that a
+variation of geographic gossip that averages along routed paths, improves
+efficiency by an additional $\sqrt{n}$ factor and is order optimal ($O(n)$
+messages) for grids and random geometric graphs.
+  We develop a general technique (travel agency method) based on Markov chain
+mixing time inequalities, which can give bounds on the performance of
+randomized message-passing algorithms operating over various graph topologies.

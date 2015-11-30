@@ -1,0 +1,11 @@
+Recently we have developed a new method in graph theory based on the
+Regularity Lemma. The method is applied to find certain spanning subgraphs in
+dense graphs. The other main general tool of the method, beside the Regularity
+Lemma, is the so-called Blow-up Lemma. This lemma helps to find bounded degree
+spanning subgraphs in $\varepsilon$-regular graphs. Our original proof of the
+lemma is not algorithmic, it applies probabilistic methods. In this paper we
+provide an algorithmic version of the Blow-up Lemma. The desired subgraph, for
+an $n$-vertex graph, can be found in time $O(nM(n))$, where
+$M(n)=O(n^{2.376})$ is the time needed to multiply two $n$ by $n$ matrices
+with 0,1 entries over the integers. We show that the algorithm can be
+parallelized and implemented in $NC^5$.

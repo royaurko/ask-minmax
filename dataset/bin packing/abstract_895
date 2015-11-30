@@ -1,0 +1,16 @@
+We study a general stochastic probing problem defined on a universe V, where
+each element e in V is "active" independently with probability p_e. Elements
+have weights {w_e} and the goal is to maximize the weight of a chosen subset S
+of active elements. However, we are given only the p_e values-- to determine
+whether or not an element e is active, our algorithm must probe e. If element e
+is probed and happens to be active, then e must irrevocably be added to the
+chosen set S; if e is not active then it is not included in S. Moreover, the
+following conditions must hold in every random instantiation: (1) the set Q of
+probed elements satisfy an "outer" packing constraint, and (2) the set S of
+chosen elements satisfy an "inner" packing constraint.
+  The kinds of packing constraints we consider are intersections of matroids
+and knapsacks. Our results provide a simple and unified view of results in
+stochastic matching and Bayesian mechanism design, and can also handle more
+general constraints. As an application, we obtain the first polynomial-time
+$\Omega(1/k)$-approximate "Sequential Posted Price Mechanism" under k-matroid
+intersection feasibility constraints.

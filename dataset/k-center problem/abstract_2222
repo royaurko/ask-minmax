@@ -1,0 +1,24 @@
+The interpretation of the intensity and polarization of the spectral line
+radiation produced in the atmosphere of the Sun and of other stars requires
+solving a radiative transfer problem that can be very complex, especially when
+the main interest lies in modeling the spectral line polarization produced by
+scattering processes and the Hanle and Zeeman effects. One of the difficulties
+is that the plasma of a stellar atmosphere can be highly inhomogeneous and
+dynamic, which implies the need to solve the non-equilibrium problem of the
+generation and transfer of polarized radiation in realistic three-dimensional
+(3D) stellar atmospheric models. Here we present PORTA, an efficient multilevel
+radiative transfer code we have developed for the simulation of the spectral
+line polarization caused by scattering processes and the Hanle and Zeeman
+effects in 3D models of stellar atmospheres. The numerical method of solution
+is based on the non-linear multigrid iterative method and on a novel
+short-characteristics formal solver of the Stokes-vector transfer equation
+which uses monotonic B\'ezier interpolation. Therefore, with PORTA the
+computing time needed to obtain at each spatial grid point the self-consistent
+values of the atomic density matrix (which quantifies the excitation state of
+the atomic system) scales linearly with the total number of grid points.
+Another crucial feature of PORTA is its parallelization strategy, which allows
+us to speed up the numerical solution of complicated 3D problems by several
+orders of magnitude with respect to sequential radiative transfer approaches,
+given its excellent linear scaling with the number of available processors. The
+PORTA code can also be conveniently applied to solve the simpler 3D radiative
+transfer problem of unpolarized radiation in multilevel systems.

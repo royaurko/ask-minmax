@@ -1,0 +1,16 @@
+A problem which has recently attracted research attention is that of
+estimating the distribution of flow sizes in internet traffic. On high traffic
+links it is sometimes impossible to record every packet. Researchers have
+approached the problem of estimating flow lengths from sampled packet data in
+two separate ways. Firstly, different sampling methodologies can be tried to
+more accurately measure the desired system parameters. One such method is the
+sample-and-hold method where, if a packet is sampled, all subsequent packets in
+that flow are sampled. Secondly, statistical methods can be used to ``invert''
+the sampled data and produce an estimate of flow lengths from a sample.
+  In this paper we propose, implement and test two variants on the
+sample-and-hold method. In addition we show how the sample-and-hold method can
+be inverted to get an estimation of the genuine distribution of flow sizes.
+Experiments are carried out on real network traces to compare standard packet
+sampling with three variants of sample-and-hold. The methods are compared for
+their ability to reconstruct the genuine distribution of flow sizes in the
+traffic.

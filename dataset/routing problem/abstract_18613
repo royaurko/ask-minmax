@@ -1,0 +1,24 @@
+In this paper we propose the first better than second order accurate method
+in space and time for the numerical solution of the resistive relativistic
+magnetohydrodynamics (RRMHD) equations on unstructured meshes in multiple space
+dimensions. The nonlinear system under consideration is purely hyperbolic and
+contains a source term, the one for the evolution of the electric field, that
+becomes stiff for low values of the resistivity. For the spatial discretization
+we propose to use high order $\PNM$ schemes as introduced in \cite{Dumbser2008}
+for hyperbolic conservation laws and a high order accurate unsplit time
+discretization is achieved using the element-local space-time discontinuous
+Galerkin approach proposed in \cite{DumbserEnauxToro} for one-dimensional
+balance laws with stiff source terms. The divergence free character of the
+magnetic field is accounted for through the divergence cleaning procedure of
+Dedner et al. \cite{Dedneretal}. To validate our high order method we first
+solve some numerical test cases for which exact analytical reference solutions
+are known and we also show numerical convergence studies in the stiff limit of
+the RRMHD equations using $\PNM$ schemes from third to fifth order of accuracy
+in space and time. We also present some applications with shock waves such as a
+classical shock tube problem with different values for the conductivity as well
+as a relativistic MHD rotor problem and the relativistic equivalent of the
+Orszag-Tang vortex problem. We have verified that the proposed method can
+handle equally well the resistive regime and the stiff limit of ideal
+relativistic MHD. For these reasons it provides a powerful tool for
+relativistic astrophysical simulations involving the appearance of magnetic
+reconnection.

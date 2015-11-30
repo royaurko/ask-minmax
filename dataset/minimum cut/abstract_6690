@@ -1,0 +1,16 @@
+We assume that we have observational data generated from an unknown
+underlying directed acyclic graph (DAG) model. A DAG is typically not
+identifiable from observational data, but it is possible to consistently
+estimate the equivalence class of a DAG. Moreover, for any given DAG, causal
+effects can be estimated using intervention calculus. In this paper, we combine
+these two parts. For each DAG in the estimated equivalence class, we use
+intervention calculus to estimate the causal effects of the covariates on the
+response. This yields a collection of estimated causal effects for each
+covariate. We show that the distinct values in this set can be consistently
+estimated by an algorithm that uses only local information of the graph. This
+local approach is computationally fast and feasible in high-dimensional
+problems. We propose to use summary measures of the set of possible causal
+effects to determine variable importance. In particular, we use the minimum
+absolute value of this set, since that is a lower bound on the size of the
+causal effect. We demonstrate the merits of our methods in a simulation study
+and on a data set about riboflavin production.

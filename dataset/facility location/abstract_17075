@@ -1,0 +1,19 @@
+We consider the problem of estimating multiple related but distinct graphical
+models on the basis of a high-dimensional data set with observations that
+belong to distinct classes. A motivating example occurs in the analysis of gene
+expression data for tissue samples with and without cancer. In this case, we
+might wish to estimate a gene expression network for the normal tissue and a
+gene expression network for the tumor tissue. We expect the two gene expression
+networks to be similar but not identical to each other, and so more accurate
+estimation of these two networks may be possible using a joint approach. We
+propose the joint graphical lasso for this purpose. Rather than estimating a
+graphical model for each class separately, or a single graphical model across
+all classes, we borrow strength across the classes in order to estimate
+multiple graphical models that share certain characteristics, such as the
+locations or weights of nonzero edges. Our approach is based upon maximizing a
+penalized log likelihood. We employ fused lasso or group lasso penalties, and
+implement a very fast computational approach that solves the joint graphical
+lasso problem. In a simulation study we demonstrate that our proposed approach
+leads to more accurate estimation of networks and covariance structure than
+competing approaches. We further illustrate our proposal on a
+publicly-available lung cancer gene expression data set.

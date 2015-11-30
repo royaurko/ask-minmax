@@ -1,0 +1,18 @@
+We propose a Bayesian non-parametric approach for modeling the distribution
+of multiple returns. In particular, we use an asymmetric dynamic conditional
+correlation (ADCC) model to estimate the time-varying correlations of financial
+returns where the individual volatilities are driven by GJR-GARCH models. The
+ADCC-GJR-GARCH model takes into consideration the asymmetries in individual
+assets' volatilities, as well as in the correlations. The errors are modeled
+using a Dirichlet location-scale mixture of multivariate Gaussian distributions
+allowing for a great flexibility in the return distribution in terms of
+skewness and kurtosis. Model estimation and prediction are developed using MCMC
+methods based on slice sampling techniques. We carry out a simulation study to
+illustrate the flexibility of the proposed approach. We find that the proposed
+DPM model is able to adapt to several frequently used distribution models and
+also accurately estimates the posterior distribution of the volatilities of the
+returns, without assuming any underlying distribution. Finally, we present a
+financial application using Apple and NASDAQ Industrial index data to solve a
+portfolio allocation problem. We find that imposing a restrictive parametric
+distribution can result into underestimation of the portfolio variance, whereas
+DPM model is able to overcome this problem.

@@ -1,0 +1,23 @@
+The power of two choices is a classic paradigm used for assigning $m$ balls
+to $n$ bins. When placing a ball we pick two bins according to some hash
+functions $h_0$ and $h_1$, and place the ball in the least full bin. It was
+shown by Azar et al.~[STOC'94] that for $m = O(n)$ with perfectly random hash
+functions this scheme yields a maximum load of $\lg \lg n + O(1)$ with high
+probability. The two-choice paradigm has many applications in e.g.~hash tables
+and on-line assignment of tasks to servers.
+  In this paper we investigate the two-choice paradigm using the very efficient
+simple tabulation hashing scheme. This scheme dates back to Zobrist in 1970,
+and has since been studied by P\v{a}tra\c{s}cu and Thorup [STOC'11].
+P\v{a}tra\c{s}cu and Thorup claimed without proof that simple tabulation gives
+an expected maximum load of $O(\log\log n)$. We improve their result in two
+ways. We show that the expected maximum load, when placing $m = O(n)$ balls
+into two tables of $n$ bins, is at most $\lg\lg n + O(1)$. Furthermore, unlike
+with fully random hashing, we show that with simple tabulation hashing, the
+maximum load is not bounded by $\lg \lg n + O(1)$, or even $(1+o(1))\lg \lg n$
+with high probability. However, we do show that it is bounded by $O(\log \log
+n)$ with high probability, which is only a constant factor worse than the fully
+random case. Previously, such bounds have required $\Omega(\log n)$-independent
+hashing, or other methods that require $\omega(1)$ computation time.
+  Our analysis relies on classifying the dependencies between keys when using
+simple tabulation. We show, as a corollary, that these methods can be used to
+give good bounds for any constant moment.

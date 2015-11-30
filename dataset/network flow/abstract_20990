@@ -1,0 +1,25 @@
+In this paper, a two-step strategy for parametric sensitivity analysis for
+such systems is proposed, exploiting advantages and synergies between two
+recently proposed sensitivity analysis methodologies for stochastic dynamics.
+The first method performs sensitivity analysis of the stochastic dynamics by
+means of the Fisher Information Matrix on the underlying distribution of the
+trajectories; the second method is a reduced-variance, finite-difference,
+gradient-type sensitivity approach relying on stochastic coupling techniques
+for variance reduction. Here we demonstrate that these two methods can be
+combined and deployed together by means of a new sensitivity bound which
+incorporates the variance of the quantity of interest as well as the Fisher
+Information Matrix estimated from the first method. The first step of the
+proposed strategy labels sensitivities using the bound and screens out the
+insensitive parameters in a controlled manner based also on the new sensitivity
+bound. In the second step of the proposed strategy, the finite-difference
+method is applied only for the sensitivity estimation of the (potentially)
+sensitive parameters that have not been screened out in the first step. Results
+on an epidermal growth factor network with fifty parameters and on a protein
+homeostasis with eighty parameters demonstrate that the proposed strategy is
+able to quickly discover and discard the insensitive parameters and in the
+remaining potentially sensitive parameters it accurately estimates the
+sensitivities. The new sensitivity strategy can be several times faster than
+current state-of-the-art approaches that test all parameters, especially in
+"sloppy" systems. In particular, the computational acceleration is quantified
+by the ratio between the total number of parameters over the number of the
+sensitive parameters.

@@ -1,0 +1,17 @@
+Early scheduling algorithms usually adjusted the clock cycle duration to the
+execution time of the slowest operation. This resulted in large slack times
+wasted in those cycles executing faster operations. To reduce the wasted times
+multi-cycle and chaining techniques have been employed. While these techniques
+have produced successful designs, its effectiveness is often limited due to the
+area increment that may derive from chaining, and the extra latencies that may
+derive from multicycling. In this paper we present an optimization method that
+solves the time-constrained scheduling problem by transforming behavioural
+specifications into new ones whose subsequent synthesis substantially improves
+circuit performance. Our proposal breaks up some of the specification
+operations, allowing their execution during several possibly unconsecutive
+cycles, and also the calculation of several data-dependent operation fragments
+in the same cycle. To do so, it takes into account the circuit latency and the
+execution time of every specification operation. The experimental results
+carried out show that circuits obtained from the optimized specification are on
+average 60% faster than those synthesized from the original specification, with
+only slight increments in the circuit area.

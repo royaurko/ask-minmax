@@ -1,0 +1,9 @@
+Presented here are algorithms for converting between (decimal)
+scientific-notation and (binary) IEEE-754 double-precision floating-point
+numbers. By employing a rounding integer quotient operation these algorithms
+are much simpler than those previously published. The values are stable under
+repeated conversions between the formats. Unlike Java-1.6, the scientific
+representations generated use only the minimum number of mantissa digits needed
+to convert back to the original binary values.
+  Implemented in Java these algorithms execute as fast or faster than Java's
+native conversions over nearly all of the IEEE-754 double-precision range.

@@ -1,0 +1,36 @@
+Graphs are commonly used to characterise interactions between objects of
+interest. Because they are based on a straightforward formalism, they are used
+in many scientific fields from computer science to historical sciences. In this
+paper, we give an introduction to some methods relying on graphs for learning.
+This includes both unsupervised and supervised methods. Unsupervised learning
+algorithms usually aim at visualising graphs in latent spaces and/or clustering
+the nodes. Both focus on extracting knowledge from graph topologies. While most
+existing techniques are only applicable to static graphs, where edges do not
+evolve through time, recent developments have shown that they could be extended
+to deal with evolving networks. In a supervised context, one generally aims at
+inferring labels or numerical values attached to nodes using both the graph
+and, when they are available, node characteristics. Balancing the two sources
+of information can be challenging, especially as they can disagree locally or
+globally. In both contexts, supervised and un-supervised, data can be
+relational (augmented with one or several global graphs) as described above, or
+graph valued. In this latter case, each object of interest is given as a full
+graph (possibly completed by other characteristics). In this context, natural
+tasks include graph clustering (as in producing clusters of graphs rather than
+clusters of nodes in a single graph), graph classification, etc. 1 Real
+networks One of the first practical studies on graphs can be dated back to the
+original work of Moreno [51] in the 30s. Since then, there has been a growing
+interest in graph analysis associated with strong developments in the modelling
+and the processing of these data. Graphs are now used in many scientific
+fields. In Biology [54, 2, 7], for instance, metabolic networks can describe
+pathways of biochemical reactions [41], while in social sciences networks are
+used to represent relation ties between actors [66, 56, 36, 34]. Other examples
+include powergrids [71] and the web [75]. Recently, networks have also been
+considered in other areas such as geography [22] and history [59, 39]. In
+machine learning, networks are seen as powerful tools to model problems in
+order to extract information from data and for prediction purposes. This is the
+object of this paper. For more complete surveys, we refer to [28, 62, 49, 45].
+In this section, we introduce notations and highlight properties shared by most
+real networks. In Section 2, we then consider methods aiming at extracting
+information from a unique network. We will particularly focus on clustering
+methods where the goal is to find clusters of vertices. Finally, in Section 3,
+techniques that take a series of networks into account, where each network is

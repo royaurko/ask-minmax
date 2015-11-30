@@ -1,0 +1,23 @@
+The official meteorological network is poor on the island of Corsica: only
+three sites being about 50 km apart are equipped with pyranometers which enable
+measurements by hourly and daily step. These sites are Ajaccio (41\degree 55'N
+and 8\degree 48'E, seaside), Bastia (42\degree 33'N, 9\degree 29'E, seaside)
+and Corte (42\degree 30'N, 9\degree 15'E average altitude of 486 meters). This
+lack of weather station makes difficult the predictability of PV power grid
+performance. This work intends to study a methodology which can predict global
+solar irradiation using data available from another location for daily and
+hourly horizon. In order to achieve this prediction, we have used Artificial
+Neural Network which is a popular artificial intelligence technique in the
+forecasting domain. A simulator has been obtained using data available for the
+station of Ajaccio that is the only station for which we have a lot of data: 16
+years from 1972 to 1987. Then we have tested the efficiency of this simulator
+in two places with different geographical features: Corte, a mountainous region
+and Bastia, a coastal region. On daily horizon, the relocation has implied
+fewer errors than a "na\"ive" prediction method based on the persistence
+(RMSE=1468 Vs 1383Wh/m^2 to Bastia and 1325 Vs 1213Wh/m^2 to Corte). On hourly
+case, the results were still satisfactory, and widely better than persistence
+(RMSE=138.8 Vs 109.3 Wh/m^2 to Bastia and 135.1 Vs 114.7 Wh/m^2 to Corte). The
+last experiment was to evaluate the accuracy of our simulator on a PV power
+grid localized at 10 km from the station of Ajaccio. We got errors very
+suitable (nRMSE=27.9%, RMSE=99.0 W.h) compared to those obtained with the
+persistence (nRMSE=42.2%, RMSE=149.7 W.h).

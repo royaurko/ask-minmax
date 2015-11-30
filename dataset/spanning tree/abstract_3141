@@ -1,0 +1,24 @@
+When choosing a suitable technique for regression and classification with
+multivariate predictor variables, one is often faced with a tradeoff between
+interpretability and high predictive accuracy. To give a classical example,
+classification and regression trees are easy to understand and interpret. Tree
+ensembles like Random Forests provide usually more accurate predictions. Yet
+tree ensembles are also more difficult to analyze than single trees and are
+often criticized, perhaps unfairly, as `black box' predictors. Node harvest is
+trying to reconcile the two aims of interpretability and predictive accuracy by
+combining positive aspects of trees and tree ensembles. Results are very sparse
+and interpretable and predictive accuracy is extremely competitive, especially
+for low signal-to-noise data. The procedure is simple: an initial set of a few
+thousand nodes is generated randomly. If a new observation falls into just a
+single node, its prediction is the mean response of all training observation
+within this node, identical to a tree-like prediction. A new observation falls
+typically into several nodes and its prediction is then the weighted average of
+the mean responses across all these nodes. The only role of node harvest is to
+`pick' the right nodes from the initial large ensemble of nodes by choosing
+node weights, which amounts in the proposed algorithm to a quadratic
+programming problem with linear inequality constraints. The solution is sparse
+in the sense that only very few nodes are selected with a nonzero weight. This
+sparsity is not explicitly enforced. Maybe surprisingly, it is not necessary to
+select a tuning parameter for optimal predictive accuracy. Node harvest can
+handle mixed data and missing values and is shown to be simple to interpret and
+competitive in predictive accuracy on a variety of data sets.

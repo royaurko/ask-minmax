@@ -1,0 +1,24 @@
+This paper studies a cooperative cognitive radio network where two primary
+users (PUs) exchange information with the help of a secondary user (SU) that is
+equipped with multiple antennas and in return, the SU superimposes its own
+messages along with the primary transmission. The fundamental problem in the
+considered network is the design of transmission strategies at the secondary
+node. It involves three basic elements: first, how to split the power for
+relaying the primary signals and for transmitting the secondary signals;
+second, what two-way relay strategy should be used to assist the bidirectional
+communication between the two PUs; third, how to jointly design the primary and
+secondary transmit precoders. This work aims to address this problem by
+proposing a transmission framework of maximizing the achievable rate of the SU
+while maintaining the rate requirements of the two PUs. Three well-known and
+practical two-way relay strategies are considered: amplify-and-forward (AF),
+bit level XOR based decode-and-forward (DF-XOR) and symbol level superposition
+coding based DF (DF-SUP). For each relay strategy, although the design problem
+is non-convex, we find the optimal solution by using certain transformation
+techniques and optimization tools such as semidefinite programming (SDP) and
+second-order cone programming (SOCP). Closed-form solutions are also obtained
+under certain conditions. Simulation results show that when the rate
+requirements of the two PUs are symmetric, by using the DF-XOR strategy and
+applying the proposed optimal precoding, the SU requires the least power for
+relaying and thus reserves the most power to transmit its own signal. In the
+asymmetric scenario, on the other hand, the DF-SUP strategy with the
+corresponding optimal precoding is the best.

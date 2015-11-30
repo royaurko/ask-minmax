@@ -1,0 +1,24 @@
+WLAN localization has become an active research field recently. Due to the
+wide WLAN deployment, WLAN localization provides ubiquitous coverage and adds
+to the value of the wireless network by providing the location of its users
+without using any additional hardware. However, WLAN localization systems
+usually require constructing a radio map, which is a major barrier of WLAN
+localization systems' deployment. The radio map stores information about the
+signal strength from different signal strength streams at selected locations in
+the site of interest. Typical construction of a radio map involves measurements
+and calibrations making it a tedious and time-consuming operation. In this
+paper, we present the AROMA system that automatically constructs accurate
+active and passive radio maps for both device-based and device-free WLAN
+localization systems. AROMA has three main goals: high accuracy, low
+computational requirements, and minimum user overhead. To achieve high
+accuracy, AROMA uses 3D ray tracing enhanced with the uniform theory of
+diffraction (UTD) to model the electric field behavior and the human shadowing
+effect. AROMA also automates a number of routine tasks, such as importing
+building models and automatic sampling of the area of interest, to reduce the
+user's overhead. Finally, AROMA uses a number of optimization techniques to
+reduce the computational requirements. We present our system architecture and
+describe the details of its different components that allow AROMA to achieve
+its goals. We evaluate AROMA in two different testbeds. Our experiments show
+that the predicted signal strength differs from the measurements by a maximum
+average absolute error of 3.18 dBm achieving a maximum localization error of
+2.44m for both the device-based and device-free cases.

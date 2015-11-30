@@ -1,0 +1,10 @@
+The tandem mass spectrometry fragments a large number of molecules of the
+same peptide sequence into charged prefix and suffix subsequences, and then
+measures mass/charge ratios of these ions. The de novo peptide sequencing
+problem is to reconstruct the peptide sequence from a given tandem mass
+spectral data of k ions. By implicitly transforming the spectral data into an
+NC-spectrum graph G=(V,E) where |V|=2k+2, we can solve this problem in
+O(|V|+|E|) time and O(|V|) space using dynamic programming. Our approach can be
+further used to discover a modified amino acid in O(|V||E|) time and to analyze
+data with other types of noise in O(|V||E|) time. Our algorithms have been
+implemented and tested on actual experimental data.

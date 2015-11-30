@@ -1,0 +1,23 @@
+This paper addresses the stability and queueing delay of Space Division
+Multiple Access (SDMA) systems with bursty traffic, where zero-forcing
+beamforming enables simultaneous transmission to multiple mobiles. Computing
+beamforming vectors relies on quantized channel state information (CSI)
+feedback (limited feedback) from mobiles. Define the stability region for SDMA
+as the set of multiuser packet-arrival rates for which the steady-state queue
+lengths are finite. Given perfect CSI feedback and equal power allocation over
+scheduled queues, the stability region is proved to be a convex polytope having
+the derived vertices. For any set of arrival rates in the stability region,
+multiuser queues are shown to be stabilized by a joint queue-and-beamforming
+control policy that maximizes the departure-rate-weighted sum of queue lengths.
+The stability region for limited feedback is found to be the perfect-CSI region
+multiplied by one minus a small factor. The required number of feedback bits
+per mobile is proved to scale logarithmically with the inverse of the above
+factor as well as linearly with the number of transmit antennas minus one. The
+effects of limited feedback on queueing delay are also quantified. For Poisson
+arrival processes, CSI quantization errors are shown to multiply average
+queueing delay by a factor larger than one. This factor can be controlled by
+adjusting the number of feedback bits per mobile following the derived
+relationship. For general arrival processes, CSI errors are found to increase
+Kingman's bound on the tail probability of the instantaneous delay by one plus
+a small factor. The required number of feedback bits per mobile is shown to
+scale logarithmically with this factor.

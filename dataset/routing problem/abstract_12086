@@ -1,0 +1,10 @@
+The ensemble Kalman filter (EnKF) is a recursive filter suitable for problems
+with a large number of variables, such as discretizations of partial
+differential equations in geophysical models. The EnKF originated as a version
+of the Kalman filter for large problems (essentially, the covariance matrix is
+replaced by the sample covariance), and it is now an important data
+assimilation component of ensemble forecasting. EnKF is related to the particle
+filter (in this context, a particle is the same thing as an ensemble member)
+but the EnKF makes the assumption that all probability distributions involved
+are Gaussian. This article briefly describes the derivation and practical
+implementation of the basic version of EnKF, and reviews several extensions.

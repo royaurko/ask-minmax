@@ -1,0 +1,19 @@
+Artificial neural networks (ANNs) have been successfully applied to solve a
+variety of classification and function approximation problems. Although ANNs
+can generally predict better than decision trees for pattern classification
+problems, ANNs are often regarded as black boxes since their predictions cannot
+be explained clearly like those of decision trees. This paper presents a new
+algorithm, called rule extraction from ANNs (REANN), to extract rules from
+trained ANNs for medical diagnosis problems. A standard three-layer feedforward
+ANN with four-phase training is the basis of the proposed algorithm. In the
+first phase, the number of hidden nodes in ANNs is determined automatically by
+a constructive algorithm. In the second phase, irrelevant connections and input
+nodes are removed from trained ANNs without sacrificing the predictive accuracy
+of ANNs. The continuous activation values of the hidden nodes are discretized
+by using an efficient heuristic clustering algorithm in the third phase.
+Finally, rules are extracted from compact ANNs by examining the discretized
+activation values of the hidden nodes. Extensive experimental studies on three
+benchmark classification problems, i.e. breast cancer, diabetes and lenses,
+demonstrate that REANN can generate high quality rules from ANNs, which are
+comparable with other methods in terms of number of rules, average number of
+conditions for a rule, and predictive accuracy.

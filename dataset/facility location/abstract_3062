@@ -1,0 +1,16 @@
+Methods for choosing a fixed set of knot locations in additive spline models
+are fairly well established in the statistical literature. While most of these
+methods are in principle directly extendable to non-additive surface models,
+they are less likely to be successful in that setting because of the curse of
+dimensionality, especially when there are more than a couple of covariates. We
+propose a regression model for a multivariate Gaussian response that combines
+both additive splines and interactive splines, and a highly efficient MCMC
+algorithm that updates all the knot locations jointly. We use shrinkage priors
+to avoid overfitting with different estimated shrinkage factors for the
+additive and surface part of the model, and also different shrinkage parameters
+for the different response variables. This makes it possible for the model to
+adapt to varying degrees of nonlinearity in different parts of the data in a
+parsimonious way. Simulated data and an application to firm leverage data show
+that the approach is computationally efficient, and that allowing for freely
+estimated knot locations can offer a substantial improvement in out-of-sample
+predictive performance.

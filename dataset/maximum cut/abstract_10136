@@ -1,0 +1,21 @@
+This paper addresses the issue of efficient turbo packet combining techniques
+for coded transmission with a Chase-type automatic repeat request (ARQ)
+protocol operating over a multiple-input--multiple-output (MIMO) channel with
+intersymbol interference (ISI). First of all, we investigate the outage
+probability and the outage-based power loss of the MIMO-ISI ARQ channel when
+optimal maximum a posteriori (MAP) turbo packet combining is used at the
+receiver. We show that the ARQ delay (i.e., the maximum number of ARQ rounds)
+does not completely translate into a diversity gain. We then introduce two
+efficient turbo packet combining algorithms that are inspired by minimum mean
+square error (MMSE)-based turbo equalization techniques. Both schemes can be
+viewed as low-complexity versions of the optimal MAP turbo combiner. The first
+scheme is called signal-level turbo combining and performs packet combining and
+multiple transmission ISI cancellation jointly at the signal-level. The second
+scheme, called symbol-level turbo combining, allows ARQ rounds to be separately
+turbo equalized, while combining is performed at the filter output. We conduct
+a complexity analysis where we demonstrate that both algorithms have almost the
+same computational cost as the conventional log-likelihood ratio (LLR)-level
+combiner. Simulation results show that both proposed techniques outperform
+LLR-level combining, while for some representative MIMO configurations,
+signal-level combining has better ISI cancellation capability and achievable
+diversity order than that of symbol-level combining.

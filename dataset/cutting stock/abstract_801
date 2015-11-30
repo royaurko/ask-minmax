@@ -1,0 +1,17 @@
+In the first quarter of 2006 Chicago Board Options Exchange (CBOE)
+introduced, as one of the listed products, options on its implied volatility
+index (VIX). This created the challenge of developing a pricing framework that
+can simultaneously handle European options, forward-starts, options on the
+realized variance and options on the VIX. In this paper we propose a new
+approach to this problem using spectral methods. We use a regime switching
+model with jumps and local volatility defined in \cite{FXrev} and calibrate it
+to the European options on the S&P 500 for a broad range of strikes and
+maturities. The main idea of this paper is to "lift" (i.e. extend) the
+generator of the underlying process to keep track of the relevant path
+information, namely the realized variance. The lifted generator is too large a
+matrix to be diagonalized numerically. We overcome this difficulty by applying
+a new semi-analytic algorithm for block-diagonalization. This method enables us
+to evaluate numerically the joint distribution between the underlying stock
+price and the realized variance, which in turn gives us a way of pricing
+consistently European options, general accrued variance payoffs and
+forward-starting and VIX options.

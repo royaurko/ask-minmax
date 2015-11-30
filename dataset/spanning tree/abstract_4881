@@ -1,0 +1,21 @@
+It is widely assumed that $O(m+\lg \sigma)$ is the best one can do for
+finding a pattern of length $m$ in a compacted trie storing strings over an
+alphabet of size $\sigma$, if one insists on linear-size data structures and
+deterministic worst-case running times [Cole et al., ICALP'06]. In this
+article, we first show that a rather straightforward combination of well-known
+ideas yields $O(m+\lg\lg \sigma)$ deterministic worst-case searching time for
+static tries.
+  Then we move on to dynamic tries, where we achieve a worst-case bound of
+$O(m+\frac{\lg^{2}\lg\sigma}{\lg\lg\lg\sigma})$ per query or update, which
+should again be compared to the previously known $O(m+\lg\sigma)$ deterministic
+worst-case bounds [Cole et al., ICALP'06], and to the alphabet
+\emph{in}dependent $O(m+\sqrt{\lg n/\lg\lg n})$ deterministic worst-case bounds
+[Andersson and Thorup, SODA'01], where $n$ is the number of nodes in the trie.
+The basis of our update procedure is a weighted variant of exponential search
+trees which, while simple, might be of independent interest.
+  As one particular application, the above bounds (static and dynamic) apply to
+suffix trees. There, an update corresponds to pre- or appending a letter to the
+text, and an additional goal is to do the updates quicker than rematching
+entire suffixes. We show how to do this in $O(\lg\lg n +
+\frac{\lg^{2}\lg\sigma}{\lg\lg\lg\sigma})$ time, which improves the previously
+known $O(\lg n)$ bound [Amir et al., SPIRE'05].

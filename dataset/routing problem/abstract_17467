@@ -1,0 +1,14 @@
+Modern software systems may exhibit a nondeterministic behavior due to many
+unpredictable factors. In this work, we propose the node coverage game, a two
+player turn-based game played on a finite game graph, as a formalization of the
+problem to test such systems. Each node in the graph represents a {\em
+functional equivalence class} of the software under test (SUT). One player, the
+tester, wants to maximize the node coverage, measured by the number of nodes
+visited when exploring the game graphs, while his opponent, the SUT, wants to
+minimize it. An optimal test would maximize the cover, and it is an interesting
+problem to find the maximal number of nodes that the tester can guarantee to
+visit, irrespective of the responses of the SUT. We show that the decision
+problem of whether the guarantee is less than a given number is NP-complete.
+Then we present techniques for testing nondeterministic SUTs with existing test
+suites for deterministic models. Finally, we report our implementation and
+experiments.

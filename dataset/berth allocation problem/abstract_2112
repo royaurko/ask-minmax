@@ -1,0 +1,9 @@
+We propose a method for support vector machine classification using
+indefinite kernels. Instead of directly minimizing or stabilizing a nonconvex
+loss function, our algorithm simultaneously computes support vectors and a
+proxy kernel matrix used in forming the loss. This can be interpreted as a
+penalized kernel learning problem where indefinite kernel matrices are treated
+as a noisy observations of a true Mercer kernel. Our formulation keeps the
+problem convex and relatively large problems can be solved efficiently using
+the projected gradient or analytic center cutting plane methods. We compare the
+performance of our technique with other methods on several classic data sets.

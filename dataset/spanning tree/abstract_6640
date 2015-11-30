@@ -1,0 +1,13 @@
+We present a new multilevel method for calculating Poisson's equation, which
+often arises form electrostatic problems, by using hierarchical loop bases.
+This method, termed hierarchical Loop basis Poisson Solver (hieLPS), extends
+previous Poisson solver through loop-tree basis to a multilevel mesh. In this
+method, Poisson's equation is solved by a two-step procedure: First, the
+electric flux is found by using loop-tree basis based on Helmholtz
+decomposition of field; Second, the potential distribution is solved rapidly
+with a fast solution of O(N) complexity. Among the solution procedures, finding
+the loop part of electric flux is the most critical part and dominates the
+computational effort. To expedite this part's convergent speed, we propose to
+use hierarchical loop bases to construct a multilevel system. As a result, the
+whole solution time has been noticeably reduced. Numerical examples are
+presented to demonstrate the efficiency of the proposed method.

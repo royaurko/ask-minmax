@@ -1,0 +1,16 @@
+We consider a robust variant of the classical $k$-median problem, introduced
+by Anthony et al. \cite{AnthonyGGN10}. In the \emph{Robust $k$-Median problem},
+we are given an $n$-vertex metric space $(V,d)$ and $m$ client sets $\set{S_i
+\subseteq V}_{i=1}^m$. The objective is to open a set $F \subseteq V$ of $k$
+facilities such that the worst case connection cost over all client sets is
+minimized; in other words, minimize $\max_{i} \sum_{v \in S_i} d(F,v)$. Anthony
+et al.\ showed an $O(\log m)$ approximation algorithm for any metric and
+APX-hardness even in the case of uniform metric. In this paper, we show that
+their algorithm is nearly tight by providing $\Omega(\log m/ \log \log m)$
+approximation hardness, unless ${\sf NP} \subseteq \bigcap_{\delta >0} {\sf
+DTIME}(2^{n^{\delta}})$. This hardness result holds even for uniform and line
+metrics. To our knowledge, this is one of the rare cases in which a problem on
+a line metric is hard to approximate to within logarithmic factor. We
+complement the hardness result by an experimental evaluation of different
+heuristics that shows that very simple heuristics achieve good approximations
+for realistic classes of instances.

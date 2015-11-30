@@ -1,0 +1,20 @@
+Unary operator domains -- i.e., domains in which operators have a single
+effect -- arise naturally in many control problems. In its most general form,
+the problem of STRIPS planning in unary operator domains is known to be as hard
+as the general STRIPS planning problem -- both are PSPACE-complete. However,
+unary operator domains induce a natural structure, called the domain's causal
+graph. This graph relates between the preconditions and effect of each domain
+operator. Causal graphs were exploited by Williams and Nayak in order to
+analyze plan generation for one of the controllers in NASA's Deep-Space One
+spacecraft. There, they utilized the fact that when this graph is acyclic, a
+serialization ordering over any subgoal can be obtained quickly. In this paper
+we conduct a comprehensive study of the relationship between the structure of a
+domain's causal graph and the complexity of planning in this domain. On the
+positive side, we show that a non-trivial polynomial time plan generation
+algorithm exists for domains whose causal graph induces a polytree with a
+constant bound on its node indegree. On the negative side, we show that even
+plan existence is hard when the graph is a directed-path singly connected DAG.
+More generally, we show that the number of paths in the causal graph is closely
+related to the complexity of planning in the associated domain. Finally we
+relate our results to the question of complexity of planning with serializable
+subgoals.

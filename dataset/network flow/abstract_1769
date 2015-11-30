@@ -1,0 +1,17 @@
+A noise-tolerant data communications fabric has been developed to meet the
+real-time data acquisition and control requirements of fast feedback loops,
+machine protection systems, pulse-to-pulse sequencing, and machine-experiment
+communications at next-generation pulsed accelerators such as the Next Linear
+Collider ("NLC"). The fabric is constructed from "platform" or
+"system-on-a-chip" field programmable gate arrays ("FPGAs") containing embedded
+processors, block memory, and multi-gigabit serial transceivers interconnected
+via an array of point-to-point fiber-optic physical links for standard networks
+such as gigabit Ethernet. The FPGA-based link hardware segments messages of
+varying priorities into a continuous sequence of fixed-length data cells,
+interrupting the cell stream of lower priority messages with those comprising
+higher priority traffic. A high level of noise-tolerance is provided by
+dedicating almost half the contents of each cell to Reed-Solomon forward error
+correcting code ("ECC") data. Further reliability is achieved by hardware
+implementation of algorithms for cell-by-cell receipt acknowledgment, receipt
+timeout and retransmission after a tunable round-trip propagation delay, and
+separate backpressure flow control for each priority.

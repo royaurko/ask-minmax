@@ -1,0 +1,19 @@
+Two main trends in today's internet are of major interest for video streaming
+services: most content delivery platforms coincide towards using adaptive video
+streaming over HTTP and new network architectures allowing caching at
+intermediate points within the network. We investigate one of the most popular
+streaming service in terms of rate adaptation and opportunistic caching. Our
+experimental study shows that the streaming client's rate selection trajectory,
+i.e., the set of selected segments of varied bit rates which constitute a
+complete video, is not repetitive across separate downloads. Also, the
+involvement of caching could lead to frequent alternation between cache and
+server when serving back client's requests for video segments. These
+observations warrant cautions for rate adaption algorithm design and trigger
+our analysis to characterize the performance of in-network caching for HTTP
+streaming. Our analytic results show: (i) a significant degradation of cache
+hit rate for adaptive streaming, with a typical file popularity distribution in
+nowadays internet; (ii) as a result of the (usually) higher throughput at the
+client-cache connection compared to client-server one, cache-server
+oscillations due to misjudgments of the rate adaptation algorithm occur.
+Finally, we introduce DASH-INC, a framework for improved video streaming in
+caching networks including transcoding and multiple throughput estimation.

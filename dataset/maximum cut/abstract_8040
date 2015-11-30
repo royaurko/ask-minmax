@@ -1,0 +1,24 @@
+The highly anticipated transition to the third generation DNA sequencing
+(3rdGS) technology have reached a stalemate primarily due to the high error
+rates (15-45%), which make the assembly of long erroneous reads extremely
+challenging because existing software solutions for 3rdGS assembly are often
+overwhelmed by error correction tasks. We report three significant
+breakthroughs that push the envelope of genome assembly and offer an enabling
+software solution to overcome the current 3rdGS stalemate. Firstly, we take a
+counter-intuitive strategy and develop a base-level correction-free assembly
+algorithm, which resorts to data compression technology and the assembly was
+performed with the compressed reads. Magnitudes of compression lead to
+magnitudes of reduction in read lengths, enabling magnitudes of savings in
+computational time and memory space. We implement the new algorithm in a
+proof-of-concept software package DBG2OLC. Experiments with the 3rdGS data
+including PacBio and Oxford Nanopore show that our method is able to assemble
+large genomes magnitudes more efficiently than existing methods. For example,
+on a large PacBio human genome dataset we calculated the all-pair alignment of
+54x erroneous long reads in 6 hours compared to the 405,000 CPU hours
+previously reported by Pacific Biosciences. Secondly, while maintaining
+comparable high quality assemblies, our approach requires significantly lower
+sequencing coverage (10x-20x) than existing assemblers, which translates to
+significant cost-cut for genome sequencing. Thirdly, our method is highly
+adaptive and is the only one to date that demonstrates ultra efficiencies not
+only for the 3rdGS PacBio and Nanapore sequences, but also for the latest NGS
+data.

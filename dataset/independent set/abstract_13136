@@ -1,0 +1,24 @@
+We present analyses of data augmentation for machine learning redshift
+estimation. Data augmentation makes a training sample more closely resemble a
+test sample, if the two base samples differ, in order to improve measured
+statistics of the test sample. We perform two sets of analyses by selecting
+800k (1.7M) SDSS DR8 (DR10) galaxies with spectroscopic redshifts. We construct
+a base training set by imposing an artificial r band apparent magnitude cut to
+select only bright galaxies and then augment this base training set by using
+simulations and by applying the K-correct package to artificially place
+training set galaxies at a higher redshift.
+  We obtain redshift estimates for the remaining faint galaxy sample, which are
+not used during training. We find that data augmentation reduces the error on
+the recovered redshifts by 40% in both sets of analyses, when compared to the
+difference in error between the ideal case and the non augmented case. The
+outlier fraction is also reduced by at least 10% and up to 80% using data
+augmentation.
+  We finally quantify how the recovered redshifts degrade as one probes to
+deeper magnitudes past the artificial magnitude limit of the bright training
+sample. We find that at all apparent magnitudes explored, the use of data
+augmentation with tree based methods provide a estimate of the galaxy redshift
+with a negligible bias, although the error on the recovered values increases as
+we probe to deeper magnitudes. These results have applications for surveys
+which have a spectroscopic training set which forms a biased sample of all
+photometric galaxies, for example if the spectroscopic detection magnitude
+limit is shallower than the photometric limit.

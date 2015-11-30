@@ -1,0 +1,18 @@
+This paper develops a novel framework for sharing secret keys using the
+well-known Automatic Repeat reQuest (ARQ) protocol. The proposed key sharing
+protocol does not assume any prior knowledge about the channel state
+information (CSI), but, harnesses the available opportunistic secrecy gains
+using only the one bit feedback, in the form of ACK/NACK. The distribution of
+key bits among multiple ARQ epochs, in our approach, allows for mitigating the
+secrecy outage phenomenon observed in earlier works. We characterize the
+information theoretic limits of the proposed scheme, under different
+assumptions on the channel spatial and temporal correlation function, and
+develop low complexity explicit implementations. Our analysis reveals a novel
+role of "dumb antennas" in overcoming the negative impact of spatial
+correlation, between the legitimate and eavesdropper channels, on the
+achievable secrecy rates. We further develop an adaptive rate allocation policy
+which achieves higher secrecy rates by exploiting the channel temporal
+correlation. Finally, our theoretical claims are validated by numerical results
+that establish the achievability of non-zero secrecy rates even when the
+eavesdropper channel is less noisy, on the average, than the legitimate
+channel.

@@ -1,0 +1,16 @@
+Let $G$ be a graph and $\tau$ be an assignment of nonnegative integer
+thresholds to the vertices of $G$. A subset of vertices $D$ is said to be a
+$\tau$-dynamic monopoly, if $V(G)$ can be partitioned into subsets $D_0, D_1,
+\ldots, D_k$ such that $D_0=D$ and for any $i\in \{0, \ldots, k-1\}$, each
+vertex $v$ in $D_{i+1}$ has at least $\tau(v)$ neighbors in $D_0\cup \ldots
+\cup D_i$. Denote the size of smallest $\tau$-dynamic monopoly by
+$dyn_{\tau}(G)$ and the average of thresholds in $\tau$ by $\overline{\tau}$.
+We show that the values of $dyn_{\tau}(G)$ over all assignments $\tau$ with the
+same average threshold is a continuous set of integers. For any positive number
+$t$, denote the maximum $dyn_{\tau}(G)$ taken over all threshold assignments
+$\tau$ with $\overline{\tau}\leq t$, by $Ldyn_t(G)$. In fact, $Ldyn_t(G)$ shows
+the worst-case value of a dynamic monopoly when the average threshold is a
+given number $t$. We investigate under what conditions on $t$, there exists an
+upper bound for $Ldyn_{t}(G)$ of the form $c|G|$, where $c<1$. Next, we show
+that $Ldyn_t(G)$ is coNP-hard for planar graphs but has polynomial-time
+solution for forests.

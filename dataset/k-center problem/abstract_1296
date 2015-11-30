@@ -1,0 +1,11 @@
+We present a provably more efficient implementation of the Minimum Norm Point
+Algorithm conceived by Fujishige than the one presented in \cite{FUJI06}. The
+algorithm solves the minimization problem for a class of functions known as
+submodular. Many important functions, such as minimum cut in the graph, have
+the so called submodular property \cite{FUJI82}. It is known that the problem
+can also be efficiently solved in strongly polynomial time \cite{IWAT01},
+however known theoretical bounds are far from being practical. We present an
+improved implementation of the algorithm, for which unfortunately no worst case
+bounds are know, but which performs very well in practice. With the
+modifications presented, the algorithm performs an order of magnitude faster
+for certain submodular functions.

@@ -1,0 +1,25 @@
+In this work, we focus on the problem of learning a classification model that
+performs inference on patient Electronic Health Records (EHRs). Often, a large
+amount of costly expert supervision is required to learn such a model. To
+reduce this cost, we obtain confidence labels that indicate how sure an expert
+is in the class labels she provides. If meaningful confidence information can
+be incorporated into a learning method, fewer patient instances may need to be
+labeled to learn an accurate model. In addition, while accuracy of predictions
+is important for any inference model, a model of patients must be interpretable
+so that clinicians can understand how the model is making decisions. To these
+ends, we develop a novel metric learning method called Confidence bAsed MEtric
+Learning (CAMEL) that supports inclusion of confidence labels, but also
+emphasizes interpretability in three ways. First, our method induces sparsity,
+thus producing simple models that use only a few features from patient EHRs.
+Second, CAMEL naturally produces confidence scores that can be taken into
+consideration when clinicians make treatment decisions. Third, the metrics
+learned by CAMEL induce multidimensional spaces where each dimension represents
+a different "factor" that clinicians can use to assess patients. In our
+experimental evaluation, we show on a real-world clinical data set that our
+CAMEL methods are able to learn models that are as or more accurate as other
+methods that use the same supervision. Furthermore, we show that when CAMEL
+uses confidence scores it is able to learn models as or more accurate as others
+we tested while using only 10% of the training instances. Finally, we perform
+qualitative assessments on the metrics learned by CAMEL and show that they
+identify and clearly articulate important factors in how the model performs
+inference.

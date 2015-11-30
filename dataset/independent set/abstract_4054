@@ -1,0 +1,20 @@
+We present algorithms for checking and enforcing robustness of concurrent
+programs against the Total Store Ordering (TSO) memory model. A program is
+robust if all its TSO computations correspond to computations under the
+Sequential Consistency (SC) semantics.
+  We provide a complete characterization of non-robustness in terms of
+so-called attacks: a restricted form of (harmful) out-of-program-order
+executions. Then, we show that detecting attacks can be parallelized, and can
+be solved using state reachability queries under SC semantics in a suitably
+instrumented program obtained by a linear size source-to-source translation.
+Importantly, the construction is valid for an arbitrary number of addresses and
+an arbitrary number of parallel threads, and it is independent from the data
+domain and from the size of store buffers in the TSO semantics. In particular,
+when the data domain is finite and the number of addresses is fixed, we obtain
+decidability and complexity results for robustness, even for an arbitrary
+number of threads.
+  As a second contribution, we provide an algorithm for computing an optimal
+set of fences that enforce robustness. We consider two criteria of optimality:
+minimization of program size and maximization of its performance. The
+algorithms we define are implemented, and we successfully applied them to
+analyzing and correcting several concurrent algorithms.

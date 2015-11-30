@@ -1,0 +1,13 @@
+A Relational Dependency Network (RDN) is a directed graphical model widely
+used for multi-relational data. These networks allow cyclic dependencies,
+necessary to represent relational autocorrelations. We describe an approach for
+learning both the RDN's structure and its parameters, given an input relational
+database: First learn a Bayesian network (BN), then transform the Bayesian
+network to an RDN. Thus fast Bayes net learning can provide fast RDN learning.
+The BN-to-RDN transform comprises a simple, local adjustment of the Bayes net
+structure and a closed-form transform of the Bayes net parameters. This method
+can learn an RDN for a dataset with a million tuples in minutes. We empirically
+compare our approach to state-of-the art RDN learning methods that use
+functional gradient boosting, on five benchmark datasets. Learning RDNs via BNs
+scales much better to large datasets than learning RDNs with boosting, and
+provides competitive accuracy in predictions.

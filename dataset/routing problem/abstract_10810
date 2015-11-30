@@ -1,0 +1,23 @@
+We consider the problem of scheduling arrivals to a congestion system with a
+finite number of users having identical deterministic demand sizes. The
+congestion is of the processor sharing type in the sense that all users in the
+system at any given time are served simultaneously. However, in contrast to
+classical processor sharing congestion models, the processing slowdown is
+proportional to the number of users in the system at any time. That is, the
+rate of service experienced by all users is linearly decreasing with the number
+of users. For each user there is an ideal departure time (due date). A
+centralized scheduling goal is then to select arrival times so as to minimize
+the total penalty due to deviations from ideal times weighted with sojourn
+times. Each deviation is assumed quadratic, or more generally convex. But due
+to the dynamics of the system, the scheduling objective function is non-convex.
+Specifically, the system objective function is a non-smooth piecewise convex
+function. Nevertheless, we are able to leverage the structure of the problem to
+derive an algorithm that finds the global optimum in a (large but) finite
+number of steps, each involving the solution of a constrained convex program.
+Further, we put forward several heuristics. The first is the traversal of
+neighbouring constrained convex programming problems, that is guaranteed to
+reach a local minimum of the centralized problem. This is a form of a "local
+search", where we use the problem structure in a novel manner. The second is a
+one-coordinate "global search", used in coordinate pivot iteration. We then
+merge these two heuristics into a unified "local-global" heuristic, and
+numerically illustrate the effectiveness of this heuristic.

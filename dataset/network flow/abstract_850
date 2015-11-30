@@ -1,0 +1,23 @@
+Network coding theory studies the transmission of information in networks
+whose vertices may perform nontrivial encoding and decoding operations on data
+as it passes through the network. The main approach to deciding the feasibility
+of network coding problems aims to reduce the problem to optimization over a
+polytope of entropic vectors subject to constraints imposed by the network
+structure. In the case of directed acyclic graphs, these constraints are
+completely understood, but for general graphs the problem of enumerating them
+remains open: it is not known how to classify the constraints implied by a
+property that we call serializability, which refers to the absence of
+paradoxical circular dependencies in a network code.
+  In this work we initiate the first systematic study of the constraints
+imposed on a network code by serializability. We find that serializability
+cannot be detected solely by evaluating the Shannon entropy of edge sets in the
+graph, but nevertheless, we give a polynomial-time algorithm that decides the
+serializability of a network code. We define a certificate of
+non-serializability, called an information vortex, that plays a role in the
+theory of serializability comparable to the role of fractional cuts in
+multicommodity flow theory, including a type of min-max relation. Finally, we
+study the serializability deficit of a network code, defined as the minimum
+number of extra bits that must be sent in order to make it serializable. For
+linear codes, we show that it is NP-hard to approximate this parameter within a
+constant factor, and we demonstrate some surprising facts about the behavior of
+this parameter under parallel composition of codes.

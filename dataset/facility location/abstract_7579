@@ -1,0 +1,18 @@
+Presence-only data, point locations where a species has been recorded as
+being present, are often used in modeling the distribution of a species as a
+function of a set of explanatory variables---whether to map species occurrence,
+to understand its association with the environment, or to predict its response
+to environmental change. Currently, ecologists most commonly analyze
+presence-only data by adding randomly chosen "pseudo-absences" to the data such
+that it can be analyzed using logistic regression, an approach which has
+weaknesses in model specification, in interpretation, and in implementation. To
+address these issues, we propose Poisson point process modeling of the
+intensity of presences. We also derive a link between the proposed approach and
+logistic regression---specifically, we show that as the number of
+pseudo-absences increases (in a regular or uniform random arrangement),
+logistic regression slope parameters and their standard errors converge to
+those of the corresponding Poisson point process model. We discuss the
+practical implications of these results. In particular, point process modeling
+offers a framework for choice of the number and location of pseudo-absences,
+both of which are currently chosen by ad hoc and sometimes ineffective methods
+in ecology, a point which we illustrate by example.

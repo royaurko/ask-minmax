@@ -1,0 +1,18 @@
+In this paper we explore the problem of achieving efficient packet
+transmission over unreliable links with worst case occurrence of errors. In
+such a setup, even an omniscient offline scheduling strategy cannot achieve
+stability of the packet queue, nor is it able to use up all the available
+bandwidth. Hence, an important first step is to identify an appropriate metric
+for measuring the efficiency of scheduling strategies in such a setting. To
+this end, we propose a relative throughput metric which corresponds to the long
+term competitive ratio of the algorithm with respect to the optimal. We then
+explore the impact of the error detection mechanism and feedback delay on our
+measure. We compare instantaneous error feedback with deferred error feedback,
+that requires a faulty packet to be fully received in order to detect the
+error. We propose algorithms for worst-case adversarial and stochastic packet
+arrival models, and formally analyze their performance. The relative throughput
+achieved by these algorithms is shown to be close to optimal by deriving lower
+bounds on the relative throughput of the algorithms and almost matching upper
+bounds for any algorithm in the considered settings. Our collection of results
+demonstrate the potential of using instantaneous feedback to improve the
+performance of communication systems in adverse environments.

@@ -1,0 +1,18 @@
+Scott's graph model is a lambda-algebra based on the observation that
+continuous endofunctions on the lattice of sets of natural numbers can be
+represented via their graphs. A graph is a relation mapping finite sets of
+input values to output values.
+  We consider a similar model based on relations whose input values are finite
+sequences rather than sets. This alteration means that we are taking into
+account the order in which observations are made. This new notion of graph
+gives rise to a model of affine lambda-calculus that admits an interpretation
+of imperative constructs including variable assignment, dereferencing and
+allocation.
+  Extending this untyped model, we construct a category that provides a model
+of typed higher-order imperative computation with an affine type system. An
+appropriate language of this kind is Reynolds's Syntactic Control of
+Interference. Our model turns out to be fully abstract for this language. At a
+concrete level, it is the same as Reddy's object spaces model, which was the
+first "state-free" model of a higher-order imperative programming language and
+an important precursor of games models. The graph model can therefore be seen
+as a universal domain for Reddy's model.

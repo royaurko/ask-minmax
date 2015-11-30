@@ -1,0 +1,24 @@
+We study restricted computation models related to the Tree Evaluation
+Problem}. The TEP was introduced in earlier work as a simple candidate for the
+(*very*) long term goal of separating L and LogDCFL. The input to the problem
+is a rooted, balanced binary tree of height h, whose internal nodes are labeled
+with binary functions on [k] = {1,...,k} (each given simply as a list of k^2
+elements of [k]), and whose leaves are labeled with elements of [k]. Each node
+obtains a value in [k] equal to its binary function applied to the values of
+its children, and the output is the value of the root. The first restricted
+computation model, called Fractional Pebbling, is a generalization of the
+black/white pebbling game on graphs, and arises in a natural way from the
+search for good upper bounds on the size of nondeterministic branching programs
+(BPs) solving the TEP - for any fixed h, if the binary tree of height h has
+fractional pebbling cost at most p, then there are nondeterministic BPs of size
+O(k^p) solving the height h TEP. We prove a lower bound on the fractional
+pebbling cost of d-ary trees that is tight to within an additive constant for
+each fixed d. The second restricted computation model we study is a semantic
+restriction on (non)deterministic BPs solving the TEP - Thrifty BPs.
+Deterministic (resp. nondeterministic) thrifty BPs suffice to implement the
+best known algorithms for the TEP, based on black (resp. fractional) pebbling.
+In earlier work, for each fixed h a lower bound on the size of deterministic
+thrifty BPs was proved that is tight for sufficiently large k. We give an
+alternative proof that achieves the same bound for all k. We show the same
+bound still holds in a less-restricted model, and also that gradually weaker
+lower bounds can be obtained for gradually weaker restrictions on the model.

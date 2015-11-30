@@ -1,0 +1,17 @@
+We introduce CAFE, a new independent code designed to solve the equations of
+Relativistic ideal Magnetohydrodynamics (RMHD) in 3D. We present the standard
+tests for a RMHD code and for the Relativistic Hydrodynamics (RHD) regime since
+we have not reported them before. The tests include the 1D Riemann problems
+related to blast waves, head-on collision of streams and states with transverse
+velocities, with and without magnetic field, which is aligned or transverse,
+constant or discontinuous across the initial discontinuity. Among the 2D and 3D
+tests, without magnetic field we include the 2D Riemann problem, a one
+dimensional shock tube along a diagonal, the high speed Emery wind tunnel, the
+Kelvin-Helmholtz instability, a set of jets and a 3D spherical blast wave,
+whereas in the presence of a magnetic field we show the magnetic rotor, the
+cylindrical explosion, a case of Kelvin-Helmholtz instability and a 3D magnetic
+field advection loop. The code uses High Resolution Shock Capturing methods and
+we present the error analysis for a combination that uses the HLLE flux formula
+combined with linear, PPM and fifth order WENO reconstructors. We use the
+flux-CT and the divergence cleaning methods to control the divergence free
+magnetic field constraint.

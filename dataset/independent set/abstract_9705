@@ -1,0 +1,13 @@
+Multiple independent radio frequency (RF) beams find applications in
+communications, radio astronomy, radar, and microwave imaging. An $N$-point FFT
+applied spatially across an array of receiver antennas provides $N$-independent
+RF beams at $\frac{N}{2}\log_2N$ multiplier complexity. Here, a low-complexity
+multiplierless approximation for the 8-point FFT is presented for RF
+beamforming, using only 26 additions. The algorithm provides eight beams that
+closely resemble the antenna array patterns of the traditional FFT-based
+beamformer albeit without using multipliers. The proposed FFT-like algorithm is
+useful for low-power RF multi-beam receivers; being synthesized in 45 nm CMOS
+technology at 1.1 V supply, and verified on-chip using a Xilinx Virtex-6 Lx240T
+FPGA device. The CMOS simulation and FPGA implementation indicate bandwidths of
+588 MHz and 369 MHz, respectively, for each of the independent receive-mode RF
+beams.

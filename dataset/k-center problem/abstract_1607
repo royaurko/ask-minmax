@@ -1,0 +1,20 @@
+Bayesian approach to inverse problems is studied in the case where the
+forward map is a linear hypoelliptic pseudodifferential operator and
+measurement error is additive white Gaussian noise. The measurement model for
+an unknown Gaussian random variable $U(x,\omega)$ is \begin{eqnarray*}
+M(y,\omega) = A(U(x,\omega) )+ \delta\hspace{.2mm}\mathcal{E}(y,\omega),
+\end{eqnarray*} where $A$ is a finitely many times smoothing linear
+hypoelliptic operator and $\delta>0$ is the noise magnitude. The covariance
+operator $C_U$ of $U$ is $2r$ times smoothing, self-adjoint, injective and
+elliptic pseudodifferential operator.
+  If $\mathcal{E}$ was taking values in $L^2$ then in Gaussian case solving the
+conditional mean (and maximum a posteriori) estimate is linked to solving the
+minimisation problem \begin{eqnarray*} T_\delta(M) = \text{argmin}_{u\in H^r}
+  \big\{\|A u-m\|_{L^2}^2+ \delta^2\|C_U^{-1/2}u\|_{L^2}^2 \big\}.
+\end{eqnarray*} However, Gaussian white noise does not take values in $L^2$ but
+in $H^{-s}$ where $s>0$ is big enough. A modification of the above approach to
+solve the inverse problem is presented, covering the case of white Gaussian
+measurement noise. Furthermore, the convergence of conditional mean estimate to
+the correct solution as $\delta\rightarrow 0$ is proven in appropriate function
+spaces using microlocal analysis. Also the contraction of the credible set is
+studied.

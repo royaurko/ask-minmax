@@ -1,0 +1,19 @@
+During the past few years, we have observed the emergence of new applications
+that use multicast transmission. For a multicast routing algorithm to be
+applicable in optical networks, it must route data only to group members,
+optimize and maintain loop-free routes, and concentrate the routes on a subset
+of network links. For an all-optical switch to play the role of a branching
+router, it must be equipped with a light splitter. Light splitters are
+expensive equipments and therefore it will be very expensive to implement
+splitters on all optical switches. Optical light splitters are only implemented
+on some optical switches. That limited availability of light splitters raises a
+new problem when we want to implement multicast protocols in optical network
+(because usual multicast protocols make the assumption that all nodes have
+branching capabilities). Another issue is the knowledge of the locations of
+light splitters in the optical network. Nodes in the network should be able to
+identify the locations of light splitters scattered in the optical network so
+it can construct multicast trees. These problems must be resolved by
+implementing a multicast routing protocol that must take into consideration
+that not all nodes can be branching node. As a result, a new signaling process
+must be implemented so that light paths can be created, spanning from source to
+the group members.

@@ -1,0 +1,21 @@
+Artificial neural networks have been successfully applied to a variety of
+business application problems involving classification and regression. Although
+backpropagation neural networks generally predict better than decision trees do
+for pattern classification problems, they are often regarded as black boxes,
+i.e., their predictions are not as interpretable as those of decision trees. In
+many applications, it is desirable to extract knowledge from trained neural
+networks so that the users can gain a better understanding of the solution.
+This paper presents an efficient algorithm to extract rules from artificial
+neural networks. We use two-phase training algorithm for backpropagation
+learning. In the first phase, the number of hidden nodes of the network is
+determined automatically in a constructive fashion by adding nodes one after
+another based on the performance of the network on training data. In the second
+phase, the number of relevant input units of the network is determined using
+pruning algorithm. The pruning process attempts to eliminate as many
+connections as possible from the network. Relevant and irrelevant attributes of
+the data are distinguished during the training process. Those that are relevant
+will be kept and others will be automatically discarded. From the simplified
+networks having small number of connections and nodes we may easily able to
+extract symbolic rules using the proposed algorithm. Extensive experimental
+results on several benchmarks problems in neural networks demonstrate the
+effectiveness of the proposed approach with good generalization ability.

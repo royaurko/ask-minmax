@@ -1,0 +1,25 @@
+The purpose of this work is to propose a novel a posteriori finite volume
+subcell limiter technique for the Discontinuous Galerkin finite element method
+for nonlinear systems of hyperbolic conservation laws in multiple space
+dimensions that works well for arbitrary high order of accuracy in space and
+time and that does not destroy the natural subcell resolution properties of the
+DG method. High order time discretization is achieved via a one-step ADER
+approach that uses a local space-time discontinuous Galerkin predictor method.
+Our new limiting strategy is based on the so-called MOOD paradigm, which
+aposteriori verifies the validity of a discrete candidate solution against
+physical and numerical detection criteria. Within the DG scheme on the main
+grid, the discrete solution is represented by piecewise polynomials of degree
+N. For those troubled cells that need limiting, our new limiter approach
+recomputes the discrete solution by scattering the DG polynomials at the
+previous time step onto a set of N_s=2N+1 finite volume subcells per space
+dimension. A robust but accurate ADER-WENO finite volume scheme then updates
+the subcell averages of the conservative variables within the detected troubled
+cells. The choice of N_s=2N+1 subcells is optimal since it allows to match the
+maximum admissible time step of the finite volume scheme on the subgrid with
+the maximum admissible time step of the DG scheme on the main grid. We
+illustrate the performance of the new scheme via the simulation of numerous
+test cases in two and three space dimensions, using DG schemes of up to tenth
+order of accuracy in space and time (N=9). The method is also able to run on
+massively parallel large scale supercomputing infrastructure, which is shown
+via one 3D test problem that uses 10 billion space-time degrees of freedom per
+time step.

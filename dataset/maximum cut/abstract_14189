@@ -1,0 +1,16 @@
+The Bradley-Terry model is a popular approach to describe probabilities of
+the possible outcomes when elements of a set are repeatedly compared with one
+another in pairs. It has found many applications including animal behaviour,
+chess ranking and multiclass classification. Numerous extensions of the basic
+model have also been proposed in the literature including models with ties,
+multiple comparisons, group comparisons and random graphs. From a computational
+point of view, Hunter (2004) has proposed efficient iterative MM
+(minorization-maximization) algorithms to perform maximum likelihood estimation
+for these generalized Bradley-Terry models whereas Bayesian inference is
+typically performed using MCMC (Markov chain Monte Carlo) algorithms based on
+tailored Metropolis-Hastings (M-H) proposals. We show here that these MM\
+algorithms can be reinterpreted as special instances of
+Expectation-Maximization (EM) algorithms associated to suitable sets of latent
+variables and propose some original extensions. These latent variables allow us
+to derive simple Gibbs samplers for Bayesian inference. We demonstrate
+experimentally the efficiency of these algorithms on a variety of applications.

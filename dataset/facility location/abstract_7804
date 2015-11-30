@@ -1,0 +1,17 @@
+Fast multiple change-point segmentation methods, which additionally provide
+faithful statistical statements on the number, locations and sizes of the
+segments, have recently received great attention. In this paper, we propose a
+multiscale segmentation method, FDRSeg, which controls the false discovery rate
+(FDR) in the sense that the number of false jumps is bounded linearly by the
+number of true jumps. In this way, it adapts the detection power to the number
+of true jumps. We prove a non-asymptotic upper bound for its FDR in a Gaussian
+setting, which allows to calibrate the only parameter of FDRSeg properly.
+Change-point locations, as well as the signal, are shown to be estimated in a
+uniform sense at optimal minimax convergence rates up to a log-factor. The
+latter is w.r.t. $L^p$-risk, $p \ge 1$, over classes of step functions with
+bounded jump sizes and either bounded, or possibly increasing, number of
+change-points. FDRSeg can be efficiently computed by an accelerated dynamic
+program; its computational complexity is shown to be linear in the number of
+observations when there are many change-points. The performance of the proposed
+method is examined by comparisons with some state of the art methods on both
+simulated and real datasets. An R-package is available online.

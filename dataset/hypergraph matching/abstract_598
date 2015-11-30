@@ -1,0 +1,20 @@
+Context-dependent identification of orthologs customarily relies on conserved
+gene order or whole-genome sequence alignment. It is shown here that
+short-range context--as short as single maximal matches--also provides an
+effective means to identify orthologs within whole genomes. On pristine
+(un-repeatmasked) mammalian whole-genome assemblies we perform a genome
+"intersection" that in general consumes less than a tenth of the computation
+time required by commonly used methods for genome alignment, and we extract
+"non-embedded maximal matches," maximal matches that are not embedded into
+other maximal matches, as potential orthologs. An ortholog identified via
+non-embedded maximal matches is analogous to a "positional ortholog" or a
+"primary ortholog" as defined in previous literature; such orthologs constitute
+homologs derived from the same direct ancestor whose ancestral positions in the
+genome are conserved. At the nucleotide level, non-embedded maximal matches
+recapitulate most exact matches identified by a Lastz net alignment. At the
+gene level, reciprocal best hits of genes containing non-embedded maximal
+matches recover one-to-one orthologs annotated by Ensembl Compara with high
+selectivity and high sensitivity; these reciprocal best hits additionally
+include putatively novel orthologs not found in Ensembl (e.g. over two thousand
+for human/chimpanzee). The method is especially suitable for genome-wide
+identification of orthologs.

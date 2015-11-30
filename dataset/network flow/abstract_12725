@@ -1,0 +1,25 @@
+We propose a secure scheme for wireless network coding, called the algebraic
+watchdog. By enabling nodes to detect malicious behaviors probabilistically and
+use overheard messages to police their downstream neighbors locally, the
+algebraic watchdog delivers a secure global self-checking network. Unlike
+traditional Byzantine detection protocols which are receiver-based, this
+protocol gives the senders an active role in checking the node downstream. The
+key idea is inspired by Marti et al.'s watchdog-pathrater, which attempts to
+detect and mitigate the effects of routing misbehavior.
+  As an initial building block of a such system, we first focus on a two-hop
+network. We present a graphical model to understand the inference process nodes
+execute to police their downstream neighbors; as well as to compute, analyze,
+and approximate the probabilities of misdetection and false detection. In
+addition, we present an algebraic analysis of the performance using an
+hypothesis testing framework that provides exact formulae for probabilities of
+false detection and misdetection.
+  We then extend the algebraic watchdog to a more general network setting, and
+propose a protocol in which we can establish trust in coded systems in a
+distributed manner. We develop a graphical model to detect the presence of an
+adversarial node downstream within a general multi-hop network. The structure
+of the graphical model (a trellis) lends itself to well-known algorithms, such
+as the Viterbi algorithm, which can compute the probabilities of misdetection
+and false detection. We show analytically that as long as the min-cut is not
+dominated by the Byzantine adversaries, upstream nodes can monitor downstream
+neighbors and allow reliable communication with certain probability. Finally,
+we present simulation results that support our analysis.

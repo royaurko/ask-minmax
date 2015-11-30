@@ -1,0 +1,23 @@
+Static mapping is the assignment of parallel processes to the processing
+elements (PEs) of a parallel system, where the assignment does not change
+during the application's lifetime. In our scenario we model an application's
+computations and their dependencies by an application graph. This graph is
+first partitioned into (nearly) equally sized blocks. These blocks need to
+communicate at block boundaries. To assign the processes to PEs, our goal is to
+compute a communication-efficient bijective mapping between the blocks and the
+PEs.
+  This approach of partitioning followed by bijective mapping has many degrees
+of freedom. Thus, users and developers of parallel applications need to know
+more about which choices work for which application graphs and which parallel
+architectures. To this end, we not only develop new mapping algorithms (derived
+from known greedy methods). We also perform extensive experiments involving
+different classes of application graphs (meshes and complex networks),
+architectures of parallel computers (grids and tori), as well as different
+partitioners and mapping algorithms. Surprisingly, the quality of the
+partitions, unless very poor, has little influence on the quality of the
+mapping.
+  More importantly, one of our new mapping algorithms always yields the best
+results in terms of the quality measure maximum congestion when the application
+graphs are complex networks. In case of meshes as application graphs, this
+mapping algorithm always leads in terms of maximum congestion AND maximum
+dilation, another common quality measure.

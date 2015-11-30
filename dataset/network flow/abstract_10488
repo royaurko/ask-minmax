@@ -1,0 +1,20 @@
+The paper presents higher dimension consensus (HDC) for large-scale networks.
+HDC generalizes the well-known average-consensus algorithm. It divides the
+nodes of the large-scale network into anchors and sensors. Anchors are nodes
+whose states are fixed over the HDC iterations, whereas sensors are nodes that
+update their states as a linear combination of the neighboring states. Under
+appropriate conditions, we show that the sensor states converge to a linear
+combination of the anchor states. Through the concept of anchors, HDC captures
+in a unified framework several interesting network tasks, including distributed
+sensor localization, leader-follower, distributed Jacobi to solve linear
+systems of algebraic equations, and, of course, average-consensus. In many
+network applications, it is of interest to learn the weights of the distributed
+linear algorithm so that the sensors converge to a desired state. We term this
+inverse problem the HDC learning problem. We pose learning in HDC as a
+constrained non-convex optimization problem, which we cast in the framework of
+multi-objective optimization (MOP) and to which we apply Pareto optimality. We
+prove analytically relevant properties of the MOP solutions and of the Pareto
+front from which we derive the solution to learning in HDC. Finally, the paper
+shows how the MOP approach resolves interesting tradeoffs (speed of convergence
+versus quality of the final state) arising in learning in HDC in resource
+constrained networks.

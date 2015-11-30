@@ -1,0 +1,19 @@
+With the ever increasing resolution of N-body simulations, accurate subhalo
+detection is becoming essential in the study of the formation of structure, the
+production of merger trees and the seeding of semi-analytic models. To
+investigate the state of halo finders, we compare two different approaches to
+detecting subhaloes; the first based on overdensities in a halo and the second
+being adaptive mesh refinement. A set of stable mock NFW dark matter haloes
+were produced and a subhalo was placed at different radii within a larger halo.
+SUBFIND (a Friends-of-Friends based finder) and AHF (an adaptive mesh based
+finder) were employed to recover the subhalo. As expected, we found that the
+mass of the subhalo recovered by SUBFIND has a strong dependence on the radial
+position and that neither halo finder can accurately recover the subhalo when
+it is very near the centre of the halo. This radial dependence is shown to be
+related to the subhalo being truncated by the background density of the halo
+and originates due to the subhalo being defined as an overdensity. If the
+subhalo size is instead determined using the peak of the circular velocity
+profile, a much more stable value is recovered. The downside to this is that
+the maximum circular velocity is a poor measure of stripping and is affected by
+resolution. For future halo finders to recover all the particles in a subhalo,
+a search of phase space will need to be introduced.

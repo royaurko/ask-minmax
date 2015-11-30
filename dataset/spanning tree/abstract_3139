@@ -1,0 +1,22 @@
+We focus on the average-case analysis: A function w : V -> Z+ is given which
+defines the likelihood for a node to be the one marked, and we want the
+strategy that minimizes the expected number of queries. Prior to this paper,
+very little was known about this natural question and the complexity of the
+problem had remained so far an open question.
+  We close this question and prove that the above tree search problem is
+NP-complete even for the class of trees with diameter at most 4. This results
+in a complete characterization of the complexity of the problem with respect to
+the diameter size. In fact, for diameter not larger than 3 the problem can be
+shown to be polynomially solvable using a dynamic programming approach.
+  In addition we prove that the problem is NP-complete even for the class of
+trees of maximum degree at most 16. To the best of our knowledge, the only
+known result in this direction is that the tree search problem is solvable in
+O(|V| log|V|) time for trees with degree at most 2 (paths).
+  We match the above complexity results with a tight algorithmic analysis. We
+first show that a natural greedy algorithm attains a 2-approximation.
+Furthermore, for the bounded degree instances, we show that any optimal
+strategy (i.e., one that minimizes the expected number of queries) performs at
+most O(\Delta(T) (log |V| + log w(T))) queries in the worst case, where w(T) is
+the sum of the likelihoods of the nodes of T and \Delta(T) is the maximum
+degree of T. We combine this result with a non-trivial exponential time
+algorithm to provide an FPTAS for trees with bounded degree.

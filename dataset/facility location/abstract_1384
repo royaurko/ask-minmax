@@ -1,0 +1,20 @@
+We describe a method for detecting, locating and quantifying sources of gas
+emissions to the atmosphere using remotely obtained gas concentration data; the
+method is applicable to gases of environmental concern. We demonstrate its
+performance using methane data collected from aircraft. Atmospheric point
+concentration measurements are modelled as the sum of a spatially and
+temporally smooth atmospheric background concentration, augmented by
+concentrations due to local sources. We model source emission rates with a
+Gaussian mixture model and use a Markov random field to represent the
+atmospheric background concentration component of the measurements. A Gaussian
+plume atmospheric eddy dispersion model represents gas dispersion between
+sources and measurement locations. Initial point estimates of background
+concentrations and source emission rates are obtained using mixed L2-L1
+optimisation over a discretised grid of potential source locations. Subsequent
+reversible jump Markov chain Monte Carlo inference provides estimated values
+and uncertainties for the number, emission rates and locations of sources
+unconstrained by a grid. Source area, atmospheric background concentrations and
+other model parameters are also estimated. We investigate the performance of
+the approach first using a synthetic problem, then apply the method to real
+data collected from an aircraft flying over: a 1600 km^2 area containing two
+landfills, then a 225 km^2 area containing a gas flare stack.

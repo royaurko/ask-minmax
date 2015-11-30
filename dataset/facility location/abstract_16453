@@ -1,0 +1,23 @@
+The persistent programming systems of the 1980s offered a programming model
+that integrated computation and long-term storage. In these systems, reliable
+applications could be engineered without requiring the programmer to write
+translation code to manage the transfer of data to and from non-volatile
+storage. More importantly, it simplified the programmer's conceptual model of
+an application, and avoided the many coherency problems that result from
+multiple cached copies of the same information. Although technically
+innovative, persistent languages were not widely adopted, perhaps due in part
+to their closed-world model. Each persistent store was located on a single
+host, and there were no flexible mechanisms for communication or transfer of
+data between separate stores. Here we re-open the work on persistence and
+combine it with modern peer-to-peer techniques in order to provide support for
+orthogonal persistence in resilient and potentially long-running distributed
+applications. Our vision is of an infrastructure within which an application
+can be developed and distributed with minimal modification, whereupon the
+application becomes resilient to certain failure modes. If a node, or the
+connection to it, fails during execution of the application, the objects are
+re-instantiated from distributed replicas, without their reference holders
+being aware of the failure. Furthermore, we believe that this can be achieved
+within a spectrum of application programmer intervention, ranging from minimal
+to totally prescriptive, as desired. The same mechanisms encompass an
+orthogonally persistent programming model. We outline our approach to
+implementing this vision, and describe current progress.

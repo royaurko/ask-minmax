@@ -1,0 +1,20 @@
+In a landmark paper, Papadimitriou and Roughgarden described a
+polynomial-time algorithm ("Ellipsoid Against Hope") for computing sample
+correlated equilibria of concisely-represented games. Recently, Stein, Parrilo
+and Ozdaglar showed that this algorithm can fail to find an exact correlated
+equilibrium, but can be easily modified to efficiently compute approximate
+correlated equilibria. Currently, it remains unresolved whether the algorithm
+can be modified to compute an exact correlated equilibrium. We show that it
+can, presenting a variant of the Ellipsoid Against Hope algorithm that
+guarantees the polynomial-time identification of exact correlated equilibrium.
+Our new algorithm differs from the original primarily in its use of a
+separation oracle that produces cuts corresponding to pure-strategy profiles.
+As a result, we no longer face the numerical precision issues encountered by
+the original approach, and both the resulting algorithm and its analysis are
+considerably simplified. Our new separation oracle can be understood as a
+derandomization of Papadimitriou and Roughgarden's original separation oracle
+via the method of conditional probabilities. Also, the equilibria returned by
+our algorithm are distributions with polynomial-sized supports, which are
+simpler (in the sense of being representable in fewer bits) than the mixtures
+of product distributions produced previously; no tractable algorithm has
+previously been proposed for identifying such equilibria.

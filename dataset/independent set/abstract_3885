@@ -1,0 +1,20 @@
+The B-tree is a fundamental secondary index structure that is widely used for
+answering one-dimensional range reporting queries. Given a set of $N$ keys, a
+range query can be answered in $O(\log_B \nm + \frac{K}{B})$ I/Os, where $B$ is
+the disk block size, $K$ the output size, and $M$ the size of the main memory
+buffer. When keys are inserted or deleted, the B-tree is updated in $O(\log_B
+N)$ I/Os, if we require the resulting changes to be committed to disk right
+away. Otherwise, the memory buffer can be used to buffer the recent updates,
+and changes can be written to disk in batches, which significantly lowers the
+amortized update cost. A systematic way of batching up updates is to use the
+logarithmic method, combined with fractional cascading, resulting in a dynamic
+B-tree that supports insertions in $O(\frac{1}{B}\log\nm)$ I/Os and queries in
+$O(\log\nm + \frac{K}{B})$ I/Os. Such bounds have also been matched by several
+known dynamic B-tree variants in the database literature.
+  In this paper, we prove that for any dynamic one-dimensional range query
+index structure with query cost $O(q+\frac{K}{B})$ and amortized insertion cost
+$O(u/B)$, the tradeoff $q\cdot \log(u/q) = \Omega(\log B)$ must hold if
+$q=O(\log B)$. For most reasonable values of the parameters, we have $\nm =
+B^{O(1)}$, in which case our query-insertion tradeoff implies that the bounds
+mentioned above are already optimal. Our lower bounds hold in a dynamic version
+of the {\em indexability model}, which is of independent interests.

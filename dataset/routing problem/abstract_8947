@@ -1,0 +1,16 @@
+Many problems in robust control and motion planning can be reduced to either
+find a sound approximation of the solution space determined by a set of
+nonlinear inequalities, or to the ``guaranteed tuning problem'' as defined by
+Jaulin and Walter, which amounts to finding a value for some tuning parameter
+such that a set of inequalities be verified for all the possible values of some
+perturbation vector. A classical approach to solve these problems, which
+satisfies the strong soundness requirement, involves some quantifier
+elimination procedure such as Collins' Cylindrical Algebraic Decomposition
+symbolic method. Sound numerical methods using interval arithmetic and local
+consistency enforcement to prune the search space are presented in this paper
+as much faster alternatives for both soundly solving systems of nonlinear
+inequalities, and addressing the guaranteed tuning problem whenever the
+perturbation vector has dimension one. The use of these methods in camera
+control is investigated, and experiments with the prototype of a declarative
+modeller to express camera motion using a cinematic language are reported and
+commented.

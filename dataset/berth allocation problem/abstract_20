@@ -1,0 +1,15 @@
+We discuss investment allocation to multiple alpha streams traded on the same
+execution platform with internal crossing of trades and point out differences
+with allocating investment when alpha streams are traded on separate execution
+platforms with no crossing. First, in the latter case allocation weights are
+non-negative, while in the former case they can be negative. Second, the
+effects of both linear and nonlinear (impact) costs are different in these two
+cases due to turnover reduction when the trades are crossed. Third, the
+turnover reduction depends on the universe of traded alpha streams, so if some
+alpha streams have zero allocations, turnover reduction needs to be recomputed,
+hence an iterative procedure. We discuss an algorithm for finding allocation
+weights with crossing and linear costs. We also discuss a simple approximation
+when nonlinear costs are added, making the allocation problem tractable while
+still capturing nonlinear portfolio capacity bound effects. We also define
+"regression with costs" as a limit of optimization with costs, useful in
+often-occurring cases with singular alpha covariance matrix.

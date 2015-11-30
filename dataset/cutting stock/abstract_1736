@@ -1,0 +1,26 @@
+Analysis of microscopy images is one important tool in many fields of
+biomedical research, as it allows the quantification of a multitude of
+parameters at the cellular level. However, manual counting of these images is
+both tiring and unreliable and ultimately very time-consuming for biomedical
+researchers. Not only does this slow down the overall research process, it also
+introduces counting errors due to a lack of objectivity and consistency
+inherent to the researchers own human nature.
+  This thesis addresses this issue by automatically determining infection
+indexes of macrophages parasite by Leishmania in microscopy images using
+computer vision and pattern recognition methodologies. Initially images are
+submitted to a pre-processing stage that consists in a normalization of
+illumination conditions. Three algorithms are then applied in parallel to each
+image. Algorithm A intends to detect macrophage nuclei and consists of
+segmentation via adaptive multi-threshold, and classification of resulting
+regions using a set of collected features. Algorithm B intends to detect
+parasites and is similar to Algorithm A but the adaptive multi-threshold is
+parameterized with a different constraints vector. Algorithm C intends to
+detect the macrophages and parasites cytoplasm and consists of a cut-off
+version of the previous two algorithms, where the classification step is
+skipped. Regions with multiple nuclei or parasites are processed by a voting
+system that employs both a Support Vector Machine and a set of region features
+for determining the number of objects present in each region. The previous vote
+is then taken into account as the number of mixtures to be used in a Gaussian
+Mixture Model to decluster the said region. Finally each parasite is assigned
+to, at most, a single macrophage using minimum Euclidean distance to a cell
+nucleus, thus quantifying Leishmania infection levels.

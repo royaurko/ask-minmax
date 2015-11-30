@@ -1,0 +1,42 @@
+Let $G$ be a simple, undirected, finite graph with vertex set $V(G)$ and edge
+set $E(G)$. A $k$-dimensional box is a Cartesian product of closed intervals
+$[a_1,b_1]\times [a_2,b_2]\times...\times [a_k,b_k]$. The {\it boxicity} of
+$G$, $\boxi(G)$ is the minimum integer $k$ such that $G$ can be represented as
+the intersection graph of $k$-dimensional boxes, i.e. each vertex is mapped to
+a $k$-dimensional box and two vertices are adjacent in $G$ if and only if their
+corresponding boxes intersect. Let $\poset=(S,P)$ be a poset where $S$ is the
+ground set and $P$ is a reflexive, anti-symmetric and transitive binary
+relation on $S$. The dimension of $\poset$, $\dim(\poset)$ is the minimum
+integer $t$ such that $P$ can be expressed as the intersection of $t$ total
+orders. Let $G_\poset$ be the \emph{underlying comparability graph} of
+$\poset$, i.e. $S$ is the vertex set and two vertices are adjacent if and only
+if they are comparable in $\poset$. It is a well-known fact that posets with
+the same underlying comparability graph have the same dimension. The first
+result of this paper links the dimension of a poset to the boxicity of its
+underlying comparability graph. In particular, we show that for any poset
+$\poset$, $\boxi(G_\poset)/(\chi(G_\poset)-1) \le \dim(\poset)\le
+2\boxi(G_\poset)$, where $\chi(G_\poset)$ is the chromatic number of $G_\poset$
+and $\chi(G_\poset)\ne1$. It immediately follows that if $\poset$ is a height-2
+poset, then $\boxi(G_\poset)\le \dim(\poset)\le 2\boxi(G_\poset)$ since the
+underlying comparability graph of a height-2 poset is a bipartite graph. The
+second result of the paper relates the boxicity of a graph $G$ with a natural
+partial order associated with the \emph{extended double cover} of $G$, denoted
+as $G_c$: Note that $G_c$ is a bipartite graph with partite sets $A$ and $B$
+which are copies of $V(G)$ such that corresponding to every $u\in V(G)$, there
+are two vertices $u_A\in A$ and $u_B\in B$ and $\{u_A,v_B\}$ is an edge in
+$G_c$ if and only if either $u=v$ or $u$ is adjacent to $v$ in $G$. Let
+$\poset_c$ be the natural height-2 poset associated with $G_c$ by making $A$
+the set of minimal elements and $B$ the set of maximal elements. We show that
+$\frac{\boxi(G)}{2} \le \dim(\poset_c) \le 2\boxi(G)+4$. These results have
+some immediate and significant consequences. The upper bound $\dim(\poset)\le
+2\boxi(G_\poset)$ allows us to derive hitherto unknown upper bounds for poset
+dimension such as $\dim(\poset)\le 2\tw(G_\poset)+4$, since boxicity of any
+graph is known to be at most its $\tw+2$. In the other direction, using the
+already known bounds for partial order dimension we get the following: (1) The
+boxicity of any graph with maximum degree $\Delta$ is $O(\Delta\log^2\Delta)$
+which is an improvement over the best known upper bound of $\Delta^2+2$. (2)
+There exist graphs with boxicity $\Omega(\Delta\log\Delta)$. This disproves a
+conjecture that the boxicity of a graph is $O(\Delta)$. (3) There exists no
+polynomial-time algorithm to approximate the boxicity of a bipartite graph on
+$n$ vertices with a factor of $O(n^{0.5-\epsilon})$ for any $\epsilon>0$,
+unless $NP=ZPP$.

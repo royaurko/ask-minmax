@@ -1,0 +1,12 @@
+For a parameterized hyperbolic system $\frac{du}{dt}=f(u,s)$ the derivative
+of the ergodic average $\langle J \rangle = \lim_{T \to
+\infty}\frac{1}{T}\int_0^T J(u(t),s)$ to the parameter $s$ can be computed via
+the Least Squares Shadowing algorithm (LSS). We assume that the sytem is
+ergodic which means that $\langle J \rangle$ depends only on $s$ (not on the
+initial condition of the hyperbolic system). After discretizing this continuous
+system using a fixed timestep, the algorithm solves a constrained least squares
+problem and, from the solution to this problem, computes the desired derivative
+$\frac{d\langle J \rangle}{ds}$. The purpose of this paper is to prove that the
+value given by the LSS algorithm approaches the exact derivative when the
+discretization timestep goes to $0$ and the timespan used to formulate the
+least squares problem grows to infinity.

@@ -1,0 +1,25 @@
+The \emph{Workflow Satisfiability Problem (WSP)} is a problem of practical
+interest that arises whenever tasks need to be performed by contributorized users,
+subject to constraints defined by business rules. We are required to decide
+whether there exists a \emph{plan} -- an assignment of tasks to contributorized
+users -- such that all constraints are satisfied. Several bespoke algorithms
+have been constructed for solving the WSP, optimised to deal with constraints
+(business rules) of particular types.
+  It is natural to see the WSP as a subclass of the {\em Constraint
+Satisfaction Problem (CSP)} in which the variables are tasks and the domain is
+the set of users. What makes the WSP distinctive as a CSP is that we can assume
+that the number of tasks is very small compared to the number of users. This is
+in sharp contrast with traditional CSP models where the domain is small and the
+number of variables is very large. As such, it is appropriate to ask for which
+constraint languages the WSP is fixed-parameter tractable (FPT), parameterized
+by the number of tasks. We have identified a new FPT constraint language,
+user-independent constraint, that includes many of the constraints of interest
+in business processing systems. We are also able to prove that the union of FPT
+languages remains FPT if they satisfy a simple compatibility condition.
+  In this paper we present our generic algorithm, in which plans are grouped
+into equivalence classes, each class being associated with a \emph{pattern}. We
+demonstrate that our generic algorithm has running time $O^*(2^{k\log k})$,
+where $k$ is the number of tasks, for the language of user-independent
+constraints. We also show that there is no algorithm of running time
+$O^*(2^{o(k\log k)})$ for user-independent constraints unless the Exponential
+Time Hypothesis fails.

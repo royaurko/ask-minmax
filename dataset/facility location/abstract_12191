@@ -1,0 +1,12 @@
+A single target is hidden at a location chosen from a predetermined
+probability distribution. Then, a searcher must find a second probability
+distribution from which random search points are sampled such that the target
+is found in the minimum number of trials. Here it will be shown that if the
+searcher must get very close to the target to find it, then the best search
+distribution is proportional to the square root of the target distribution. For
+a Gaussian target distribution, the optimum search distribution is
+approximately a Gaussian with a standard deviation that varies inversely with
+how close the searcher must be to the target to find it. For a network, where
+the searcher randomly samples nodes and looks for the fixed target along edges,
+the optimum is to either sample a node with probability proportional to the
+square root of the out degree plus one or not at all.

@@ -1,0 +1,21 @@
+Aggregate Risk Analysis is a computationally intensive and a data intensive
+problem, thereby making the application of high-performance computing
+techniques interesting. In this paper, the design and implementation of a
+parallel Aggregate Risk Analysis algorithm on multi-core CPU and many-core GPU
+platforms are explored. The efficient computation of key risk measures,
+including Probable Maximum Loss (PML) and the Tail Value-at-Risk (TVaR) in the
+presence of both primary and secondary uncertainty for a portfolio of property
+catastrophe insurance treaties is considered. Primary Uncertainty is the the
+uncertainty associated with whether a catastrophe event occurs or not in a
+simulated year, while Secondary Uncertainty is the uncertainty in the amount of
+loss when the event occurs.
+  A number of statistical algorithms are investigated for computing secondary
+uncertainty. Numerous challenges such as loading large data onto hardware with
+limited memory and organising it are addressed. The results obtained from
+experimental studies are encouraging. Consider for example, an aggregate risk
+analysis involving 800,000 trials, with 1,000 catastrophic events per trial, a
+million locations, and a complex contract structure taking into account
+secondary uncertainty. The analysis can be performed in just 41 seconds on a
+GPU, that is 24x faster than the sequential counterpart on a fast multi-core
+CPU. The results indicate that GPUs can be used to efficiently accelerate
+aggregate risk analysis even in the presence of secondary uncertainty.

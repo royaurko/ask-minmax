@@ -1,0 +1,19 @@
+We consider a one-round two-player network pricing game, the Stackelberg
+Minimum Spanning Tree game or StackMST.
+  The game is played on a graph (representing a network), whose edges are
+colored either red or blue, and where the red edges have a given fixed cost
+(representing the competitor's prices). The first player chooses an assignment
+of prices to the blue edges, and the second player then buys the cheapest
+possible minimum spanning tree, using any combination of red and blue edges.
+The goal of the first player is to maximize the total price of purchased blue
+edges. This game is the minimum spanning tree analog of the well-studied
+Stackelberg shortest-path game.
+  We analyze the complexity and approximability of the first player's best
+strategy in StackMST. In particular, we prove that the problem is APX-hard even
+if there are only two different red costs, and give an approximation algorithm
+whose approximation ratio is at most $\min \{k,1+\ln b,1+\ln W\}$, where $k$ is
+the number of distinct red costs, $b$ is the number of blue edges, and $W$ is
+the maximum ratio between red costs. We also give a natural integer linear
+programming formulation of the problem, and show that the integrality gap of
+the fractional relaxation asymptotically matches the approximation guarantee of
+our algorithm.

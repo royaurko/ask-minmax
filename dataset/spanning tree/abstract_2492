@@ -1,0 +1,20 @@
+We have developed an alignment-free method that calculates phylogenetic
+distances using a maximum likelihood approach for a model of sequence change on
+patterns that are discovered in unaligned sequences. To evaluate the
+phylogenetic accuracy of our method, and to conduct a comprehensive comparison
+of existing alignment-free methods (freely available as Python package decaf+py
+at http://www.bioinformatics.org.au), we have created a dataset of reference
+trees covering a wide range of phylogenetic distances. Amino acid sequences
+were evolved along the trees and input to the tested methods; from their
+calculated distances we infered trees whose topologies we compared to the
+reference trees.
+  We find our pattern-based method statistically superior to all other tested
+alignment-free methods on this dataset. We also demonstrate the general
+advantage of alignment-free methods over an approach based on automated
+alignments when sequences violate the assumption of collinearity. Similarly, we
+compare methods on empirical data from an existing alignment benchmark set that
+we used to derive reference distances and trees. Our pattern-based approach
+yields distances that show a linear relationship to reference distances over a
+substantially longer range than other alignment-free methods. The pattern-based
+approach outperforms alignment-free methods and its phylogenetic accuracy is
+statistically indistinguishable from alignment-based distances.

@@ -1,0 +1,24 @@
+$\newcommand{\dist}{\operatorname{dist}}$ In this paper we define the notion
+of a probabilistic neighborhood in spatial data: Let a set $P$ of $n$ points in
+$\mathbb{R}^d$, a query point $q \in \mathbb{R}^d$, a distance metric $\dist$,
+and a monotonically decreasing function $f : \mathbb{R}^+ \rightarrow [0,1]$ be
+given. Then a point $p \in P$ belongs to the probabilistic neighborhood $N(q,
+f)$ of $q$ with respect to $f$ with probability $f(\dist(p,q))$. We envision
+applications in facility location, sensor networks, and other scenarios where a
+connection between two entities becomes less likely with increasing distance. A
+straightforward query algorithm would determine a probabilistic neighborhood in
+$\Theta(n\cdot d)$ time by probing each point in $P$.
+  To answer the query in sublinear time for the planar case, we augment a
+quadtree suitably and design a corresponding query algorithm. Our theoretical
+analysis shows that -- for certain distributions of planar $P$ -- our algorithm
+answers a query in $O((|N(q,f)| + \sqrt{n})\log n)$ time with high probability
+(whp). This matches up to a logarithmic factor the cost induced by
+quadtree-based algorithms for deterministic queries and is asymptotically
+faster than the straightforward approach whenever $|N(q,f)| \in o(n / \log n)$.
+  As practical proofs of concept we use two applications, one in the Euclidean
+and one in the hyperbolic plane. In particular, our results yield the first
+generator for random hyperbolic graphs with arbitrary temperatures in
+subquadratic time. Moreover, our experimental data show the usefulness of our
+algorithm even if the point distribution is unknown or not uniform: The running
+time savings over the pairwise probing approach constitute at least one order
+of magnitude already for a modest number of points and queries.

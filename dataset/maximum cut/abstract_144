@@ -1,0 +1,15 @@
+This paper introduces Bayesian supervised and unsupervised segmentation
+algorithms aimed at oceanic segmentation of SAR images. The data term,
+\emph{i.e}., the density of the observed backscattered signal given the region,
+is modeled by a finite mixture of Gamma densities with a given predefined
+number of components. To estimate the parameters of the class conditional
+densities, a new expectation maximization algorithm was developed. The prior is
+a multi-level logistic Markov random field enforcing local continuity in a
+statistical sense. The smoothness parameter controlling the degree of
+homogeneity imposed on the scene is automatically estimated, by computing the
+evidence with loopy belief propagation; the classical coding and least squares
+fit methods are also considered. The maximum a posteriori segmentation is
+computed efficiently by means of recent graph-cut techniques, namely the
+$\alpha$-Expansion algorithm that extends the methodology to an optional number
+of classes. The effectiveness of the proposed approaches is illustrated with
+simulated images and real ERS and Envisat scenes containing oil spills.

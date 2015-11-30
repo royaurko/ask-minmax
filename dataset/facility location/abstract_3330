@@ -1,0 +1,16 @@
+Sheer amount of petabyte scale data foreseen in the LHC experiments require a
+careful consideration of the persistency design and the system design in the
+world-wide distributed computing. Event parallelism of the HENP data analysis
+enables us to take maximum advantage of the high performance cluster computing
+and networking when we keep the parallelism both in the data processing phase,
+in the data management phase, and in the data transfer phase. A modular
+architecture of FADS/ Goofy, a versatile detector simulation framework for
+Geant4, enables an easy choice of plug-in facilities for persistency
+technologies such as Objectivity/DB and ROOT I/O. The framework is designed to
+work naturally with the parallel file system of Grid Datafarm (Gfarm).
+FADS/Goofy is proven to generate 10^6 Geant4-simulated Atlas Mockup events
+using a 512 CPU PC cluster. The data in ROOT I/O files is replicated using
+Gfarm file system. The histogram information is collected from the distributed
+ROOT files. During the data replication it has been demonstrated to achieve
+more than 2.3 Gbps data transfer rate between the PC clusters over seven
+participating PC clusters in the United States and in Japan.

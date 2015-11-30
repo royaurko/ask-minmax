@@ -1,0 +1,22 @@
+We consider the {\it indexable dictionary} problem, which consists of storing
+a set $S \subseteq \{0,...,m-1\}$ for some integer $m$, while supporting the
+operations of $\Rank(x)$, which returns the number of elements in $S$ that are
+less than $x$ if $x \in S$, and -1 otherwise; and $\Select(i)$ which returns
+the $i$-th smallest element in $S$. We give a data structure that supports both
+operations in O(1) time on the RAM model and requires ${\cal B}(n,m) + o(n) +
+O(\lg \lg m)$ bits to store a set of size $n$, where ${\cal B}(n,m) = \ceil{\lg
+{m \choose n}}$ is the minimum number of bits required to store any $n$-element
+subset from a universe of size $m$. Previous dictionaries taking this space
+only supported (yes/no) membership queries in O(1) time. In the cell probe
+model we can remove the $O(\lg \lg m)$ additive term in the space bound,
+answering a question raised by Fich and Miltersen, and Pagh.
+  We present extensions and applications of our indexable dictionary data
+structure, including:
+  An information-theoretically optimal representation of a $k$-ary cardinal
+tree that supports standard operations in constant time,
+  A representation of a multiset of size $n$ from $\{0,...,m-1\}$ in ${\cal
+B}(n,m+n) + o(n)$ bits that supports (appropriate generalizations of) $\Rank$
+and $\Select$ operations in constant time, and
+  A representation of a sequence of $n$ non-negative integers summing up to $m$
+in ${\cal B}(n,m+n) + o(n)$ bits that supports prefix sum queries in constant
+time.

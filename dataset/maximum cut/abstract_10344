@@ -1,0 +1,22 @@
+Detrended Fluctuation Analysis (DFA) is widely used to assess the presence of
+long-range temporal correlations in time series. Signals with long-range
+temporal correlations are typically defined as having a power law decay in
+their autocorrelation function. The output of DFA is an exponent, which is the
+slope obtained by linear regression of a log-log fluctuation plot against
+window size. However, if this fluctuation plot is not linear, then the
+underlying signal is not self-similar, and the exponent has no meaning. There
+is currently no method for assessing the linearity of a DFA fluctuation plot.
+Here we present such a technique, called ML-DFA. We scale the DFA fluctuation
+plot to construct a likelihood function for a set of alternative models
+including polynomial, root, exponential, logarithmic and spline functions. We
+use this likelihood function to determine the maximum likelihood and thus to
+calculate values of the Akaike and Bayesian information criteria, which
+identify the best fit model when the number of parameters involved is taken
+into account and over-fitting is penalised. This ensures that, of the models
+that fit well, the least complicated is selected as the best fit. We apply
+ML-DFA to synthetic data from FARIMA processes and sine curves with DFA
+fluctuation plots whose form has been analytically determined, and to
+experimentally collected neurophysiological data. ML-DFA assesses whether the
+hypothesis of a linear fluctuation plot should be rejected, and thus whether
+the exponent can be considered meaningful. We argue that ML-DFA is essential to
+obtaining trustworthy results from DFA.

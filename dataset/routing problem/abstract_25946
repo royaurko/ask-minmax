@@ -1,0 +1,15 @@
+We consider the generic regularized optimization problem
+$\hat{\mathsf{\beta}}(\lambda)=\arg
+\min_{\beta}L({\sf{y}},X{\sf{\beta}})+\lambda J({\sf{\beta}})$. Efron, Hastie,
+Johnstone and Tibshirani [Ann. Statist. 32 (2004) 407--499] have shown that for
+the LASSO--that is, if $L$ is squared error loss and $J(\beta)=\|\beta\|_1$ is
+the $\ell_1$ norm of $\beta$--the optimal coefficient path is piecewise linear,
+that is, $\partial \hat{\beta}(\lambda)/\partial \lambda$ is piecewise
+constant. We derive a general characterization of the properties of (loss $L$,
+penalty $J$) pairs which give piecewise linear coefficient paths. Such pairs
+allow for efficient generation of the full regularized coefficient paths. We
+investigate the nature of efficient path following algorithms which arise. We
+use our results to suggest robust versions of the LASSO for regression and
+classification, and to develop new, efficient algorithms for existing problems
+in the literature, including Mammen and van de Geer's locally adaptive
+regression splines.

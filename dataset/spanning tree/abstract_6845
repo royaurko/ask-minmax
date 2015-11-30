@@ -1,0 +1,15 @@
+Given a set of rectangular modules with fixed area and variable dimensions,
+and a fixed rectangular circuit. The placement of Fixed-Outline Floorplanning
+with Soft Modules (FOFSM) aims to determine the dimensions and position of each
+module on the circuit. We present a two-stage Iterative Merging Placement (IMP)
+algorithm for the FOFSM with zero deadspace constraint. The first stage
+iteratively merges two modules with the least area into a composite module to
+achieve a final composite module, and builds up a slicing tree in a bottom-up
+hierarchy. The second stage recursively determines the relative relationship
+(left-right or top-bottom) of the sibling modules in the slicing tree in a
+top-down hierarchy, and the dimensions and position of each leaf module are
+determined automatically. Compared with zero-dead-space (ZDS) algorithm, the
+only algorithm guarantees a feasible layout under some condition, we prove that
+the proposed IMP could construct a feasible layout under a more relaxed
+condition. Besides, IMP is more scalable in handling FOFSM considering the
+wirelength or without the zero deadspace constraint.

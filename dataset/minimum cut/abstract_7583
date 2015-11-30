@@ -1,0 +1,20 @@
+Motivated by recently derived fundamental limits on total (transmit +
+decoding) power for coded communication with VLSI decoders, this paper
+investigates the scaling behavior of the minimum-total-power needed to
+communicate over AWGN channels as the target bit-error-probability tends to
+zero, when using regular-LDPC codes and iterative message-passing decoders. We
+analyze scaling behavior under two VLSI complexity models of decoding. One
+model abstracts power consumed in processing elements ("node model"), and
+another abstracts power consumed in wires which connect the processing elements
+("wire model"). We prove that a coding strategy using regular-LDPC codes with
+Gallager-B decoding achieves order-optimal scaling of total-power under the
+node model. However, we also prove that regular-LDPC codes and iterative
+message-passing decoders cannot meet existing fundamental limits on total-power
+under the wire model. Further, total-power scales at a rate that is strictly
+worse than uncoded transmission unless transmit power diverges to infinity or
+the code-rate vanishes. Complementing our theoretical results, we develop
+detailed physical models of decoding implementations using post-layout circuit
+simulations. Our theoretical and numerical results show that approaching
+fundamental limits on total-power requires increasing the complexity of both
+the code design and the corresponding decoding algorithm as communication
+distance is increased or error-probability is lowered.

@@ -1,0 +1,15 @@
+We study the problem of finding a small sparse cut in an undirected graph.
+Given an undirected graph G=(V,E) and a parameter k <= |E|, the small sparsest
+cut problem is to find a subset of vertices S with minimum conductance among
+all sets with volume at most k. Using ideas developed in local graph
+partitioning algorithms, we obtain the following bicriteria approximation
+algorithms for the small sparsest cut problem:
+  - If there is a subset U with conductance \phi and vol(U) <= k, then there is
+a polynomial time algorithm to find a set S with conductance
+O(\sqrt{\phi/\epsilon}) and vol(S) <= k^{1+\epsilon} for any \epsilon > 1/k.
+  - If there is a subset U with conductance \phi and vol(U) <= k, then there is
+a polynomial time algorithm to find a set S with conductance O(\sqrt{\phi
+ln(k)/\epsilon}) and vol(S) <= (1+\epsilon)k for any \epsilon > 2ln(k)/k.
+  These algorithms can be implemented locally using truncated random walk, with
+running time almost linear to the output size. This provides a local graph
+partitioning algorithm with a better conductance guarantee when k is sublinear.

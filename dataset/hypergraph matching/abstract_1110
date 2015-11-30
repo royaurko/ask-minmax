@@ -1,0 +1,16 @@
+Graphs are becoming one of the most popular data modeling paradigms since
+they are able to model complex relationships that cannot be easily captured
+using traditional data models. One of the major tasks of graph management is
+graph matching, which aims to find all of the subgraphs in a data graph that
+match a query graph. In the literature, proposals in this context are
+classified into two different categories: graph-at-a-time, which process the
+whole query graph at the same time, and vertex-at-a-time, which process a
+single vertex of the query graph at the same time. In this paper, we propose a
+new vertex-at-a-time proposal that is based on graphlets, each of which
+comprises a vertex of a graph, all of the immediate neighbors of that vertex,
+and all of the edges that relate those neighbors. Furthermore, we also use the
+concept of minimum hub covers, each of which comprises a subset of vertices in
+the query graph that account for all of the edges in that graph. We present the
+algorithms of our proposal and describe an implementation based on XQuery and
+RDF. Our evaluation results show that our proposal is appealing to perform
+graph matching.

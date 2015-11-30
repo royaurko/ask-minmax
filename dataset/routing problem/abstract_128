@@ -1,0 +1,27 @@
+Following previous theoretical work by Srinivasan (FOCS 2001) and the first
+contributor (STACS 2006) and a first experimental evaluation on random instances
+(ALENEX 2009), we investigate how the recently developed different approaches
+to generate randomized roundings satisfying disjoint cardinality constraints
+behave when used in two classical algorithmic problems, namely low-congestion
+routing in networks and max-coverage problems in hypergraphs.
+  We generally find that all randomized rounding algorithms work well, much
+better than what is guaranteed by existing theoretical work. The derandomized
+versions produce again significantly better rounding errors, with running times
+still negligible compared to the one for solving the corresponding LP. It thus
+seems worth preferring them over the randomized variants.
+  The data created in these experiments lets us propose and investigate the
+following new ideas. For the low-congestion routing problems, we suggest to
+solve a second LP, which yields the same congestion, but aims at producing a
+solution that is easier to round. Experiments show that this reduces the
+rounding errors considerably, both in combination with randomized and
+derandomized rounding.
+  For the max-coverage instances, we generally observe that the greedy
+heuristics also performs very good. We develop a strengthened method of
+derandomized rounding, and a simple greedy/rounding hybrid approach using
+greedy and LP-based rounding elements, and observe that both these improvements
+yield again better solutions than both earlier approaches on their own.
+  For unit disk max-domination, we also develop a PTAS. Contrary to all other
+algorithms investigated, it performs not much better in experiments than in
+theory; thus, unless extremely good solutions are to be obtained with huge
+computational resources, greedy, LP-based rounding or hybrid approaches are
+preferable.

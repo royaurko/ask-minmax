@@ -1,0 +1,11 @@
+We consider an application of multi-armed bandits to internet advertising
+(specifically, to dynamic ad allocation in the pay-per-click model, with
+uncertainty on the click probabilities). We focus on an important practical
+issue that advertisers are constrained in how much money they can spend on
+their ad campaigns. This issue has not been considered in the prior work on
+bandit-based approaches for ad allocation, to the best of our knowledge.
+  We define a simple, stylized model where an algorithm picks one ad to display
+in each round, and each ad has a \emph{budget}: the maximal amount of money
+that can be spent on this ad. This model admits a natural variant of UCB1, a
+well-known algorithm for multi-armed bandits with stochastic rewards. We derive
+strong provable guarantees for this algorithm.

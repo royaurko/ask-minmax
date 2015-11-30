@@ -1,0 +1,19 @@
+We study the Isomorphism of Polynomial (IP2S) problem with m=2 homogeneous
+quadratic polynomials of n variables over a finite field of odd characteristic:
+given two quadratic polynomials (a, b) on n variables, we find two bijective
+linear maps (s,t) such that b=t . a . s. We give an algorithm computing s and t
+in time complexity O~(n^4) for all instances, and O~(n^3) in a dominant set of
+instances.
+  The IP2S problem was introduced in cryptography by Patarin back in 1996. The
+special case of this problem when t is the identity is called the isomorphism
+with one secret (IP1S) problem. Generic algebraic equation solvers (for example
+using Gr\"obner bases) solve quite well random instances of the IP1S problem.
+For the particular cyclic instances of IP1S, a cubic-time algorithm was later
+given and explained in terms of pencils of quadratic forms over all finite
+fields; in particular, the cyclic IP1S problem in odd characteristic reduces to
+the computation of the square root of a matrix.
+  We give here an algorithm solving all cases of the IP1S problem in odd
+characteristic using two new tools, the Kronecker form for a singular quadratic
+pencil, and the reduction of bilinear forms over a non-commutative algebra.
+Finally, we show that the second secret in the IP2S problem may be recovered in
+cubic time.

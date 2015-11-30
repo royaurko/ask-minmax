@@ -1,0 +1,22 @@
+Many real-world networks are so large that we must simplify their structure
+before we can extract useful information about the systems they represent. As
+the tools for doing these simplifications proliferate within the network
+literature, researchers would benefit from some guidelines about which of the
+so-called community detection algorithms are most appropriate for the
+structures they are studying and the questions they are asking. Here we show
+that different methods highlight different aspects of a network's structure and
+that the the sort of information that we seek to extract about the system must
+guide us in our decision. For example, many community detection algorithms,
+including the popular modularity maximization approach, infer module
+assignments from an underlying model of the network formation process. However,
+we are not always as interested in how a system's network structure was formed,
+as we are in how a network's extant structure influences the system's behavior.
+To see how structure influences current behavior, we will recognize that links
+in a network induce movement across the network and result in system-wide
+interdependence. In doing so, we explicitly acknowledge that most networks
+carry flow. To highlight and simplify the network structure with respect to
+this flow, we use the map equation. We present an intuitive derivation of this
+flow-based and information-theoretic method and provide an interactive on-line
+application that anyone can use to explore the mechanics of the map equation.
+We also describe an algorithm and provide source code to efficiently decompose
+large weighted and directed networks based on the map equation.

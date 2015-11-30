@@ -1,0 +1,19 @@
+A parameterized problem consists of a classical problem and an additional
+component, the so-called parameter. This point of view allows a formal
+definition of preprocessing: Given a parameterized instance (I,k), a polynomial
+kernelization computes an equivalent instance (I',k') of size and parameter
+bounded by a polynomial in k. We give a complete classification of Min Ones
+Constraint Satisfaction problems, i.e., Min Ones SAT(\Gamma), with respect to
+admitting or not admitting a polynomial kernelization (unless NP \subseteq
+coNP/poly). For this we introduce the notion of mergeability. If all relations
+of the constraint language \Gamma are mergeable, then a new variant of
+sunflower kernelization applies, based on non-zero-closed cores. We obtain a
+kernel with O(k^{d+1}) variables and polynomial total size, where d is the
+maximum arity of a constraint in \Gamma, comparing nicely with the bound of
+O(k^{d-1}) vertices for the less general and arguably simpler d-Hitting Set
+problem. Otherwise, any relation in \Gamma that is not mergeable permits us to
+construct a log-cost selection formula, i.e., an n-ary selection formula with
+O(log n) true local variables. From this we can construct our lower bound using
+recent results by Bodlaender et al. as well as Fortnow and Santhanam, proving
+that there is no polynomial kernelization, unless NP \subseteq coNP/poly and
+the polynomial hierarchy collapses to the third level.

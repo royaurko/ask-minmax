@@ -1,0 +1,14 @@
+This paper addresses the problem of finding cycles in the state transition
+graphs of synchronous Boolean networks. Synchronous Boolean networks are a
+class of deterministic finite state machines which are used for the modeling of
+gene regulatory networks. Their state transition graph cycles, called
+attractors, represent cell types of the organism being modeled. When the effect
+of a disease or a mutation on an organism is studied, attractors have to be
+re-computed every time a fault is injected in the model. We present an
+algorithm for finding attractors which uses a SAT-based bounded model checking.
+Novel features of the algorithm compared to the traditional SAT-based bounded
+model checking approaches are: (1) a termination condition which does not
+require an explicit computation of the diameter and (2) a technique to reduce
+the number of additional clauses which are needed to make paths loop-free. The
+presented algorithm uses much less space than existing BDD-based approaches and
+has a potential to handle several orders of magnitude larger networks.

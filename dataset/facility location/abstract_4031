@@ -1,0 +1,24 @@
+Automatic performance debugging of parallel applications usually involves two
+steps: automatic detection of performance bottlenecks and uncovering their root
+causes for performance optimization. Previous work fails to resolve this
+challenging issue in several ways: first, several previous efforts automate
+analysis processes, but present the results in a confined way that only
+identifies performance problems with apriori knowledge; second, several tools
+take exploratory or confirmatory data analysis to automatically discover
+relevant performance data relationships. However, these efforts do not focus on
+locating performance bottlenecks or uncovering their root causes. In this
+paper, we design and implement an innovative system, AutoAnalyzer, to
+automatically debug the performance problems of single program multi-data
+(SPMD) parallel programs. Our system is unique in terms of two dimensions:
+first, without any apriori knowledge, we automatically locate bottlenecks and
+uncover their root causes for performance optimization; second, our method is
+lightweight in terms of size of collected and analyzed performance data. Our
+contribution is three-fold. First, we propose a set of simple performance
+metrics to represent behavior of different processes of parallel programs, and
+present two effective clustering and searching algorithms to locate
+bottlenecks. Second, we propose to use the rough set algorithm to automatically
+uncover the root causes of bottlenecks. Third, we design and implement the
+AutoAnalyzer system, and use two production applications to verify the
+effectiveness and correctness of our methods. According to the analysis results
+of AutoAnalyzer, we optimize two parallel programs with performance
+improvements by minimally 20% and maximally 170%.

@@ -1,0 +1,20 @@
+Ordinary differential equations (ODEs) are commonly used to model dynamic
+behavior of a system. Because many parameters are unknown and have to be
+estimated from the observed data, there is growing interest in statistics to
+develop efficient estimation procedures for these parameters. Among the
+proposed methods in the literature, the generalized profiling estimation method
+developed by Ramsay and colleagues is particularly promising for its
+computational efficiency and good performance. In this approach, the ODE
+solution is approximated with a linear combination of basis functions. The
+coefficients of the basis functions are estimated by a penalized smoothing
+procedure with an ODE-defined penalty. However, the statistical properties of
+this procedure are not known. In this paper, we first give an upper bound on
+the uniform norm of the difference between the true solutions and their
+approximations. Then we use this bound to prove the consistency and asymptotic
+normality of this estimation procedure. We show that the asymptotic covariance
+matrix is the same as that of the maximum likelihood estimation. Therefore,
+this procedure is asymptotically efficient. For a fixed sample and fixed basis
+functions, we study the limiting behavior of the approximation when the
+smoothing parameter tends to infinity. We propose an algorithm to choose the
+smoothing parameters and a method to compute the deviation of the spline
+approximation from solution without solving the ODEs.

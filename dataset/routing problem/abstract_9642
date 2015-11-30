@@ -1,0 +1,15 @@
+In this paper, we consider the problem of energy efficient uplink scheduling
+with delay constraint for a multi-user wireless system. We address this problem
+within the framework of constrained Markov decision processes (CMDPs) wherein
+one seeks to minimize one cost (average power) subject to a hard constraint on
+another (average delay). We do not assume the arrival and channel statistics to
+be known. To handle state space explosion and informational constraints, we
+split the problem into individual CMDPs for the users, coupled through their
+Lagrange multipliers; and a user selection problem at the base station. To
+address the issue of unknown channel and arrival statistics, we propose a
+reinforcement learning algorithm. The users use this learning algorithm to
+determine the rate at which they wish to transmit in a slot and communicate
+this to the base station. The base station then schedules the user with the
+highest rate in a slot. We analyze convergence, stability and optimality
+properties of the algorithm. We also demonstrate the efficacy of the algorithm
+through simulations within IEEE 802.16 system.

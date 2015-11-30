@@ -1,0 +1,11 @@
+In this paper, we consider an energy-efficient scheduling problem where $n$
+jobs $J_1, J_2, ..., J_n$ need to be executed such that the total energy usage
+of these jobs is minimized while ensuring that each job is finished within it's
+deadline. We work in an online setting where a job is known only at it's
+arrival time, along with it's processing volume and deadline. In such a
+setting, the currently best-known algorithm by Han et al. \cite{han} provides a
+competitive ratio max $\{4, 2 + {\alpha}^{\alpha}\}$ of energy usage. In this
+paper, we present a new online algorithm SqOA which provides a competitive
+ratio max $\{4, 2 + (2-1/{\alpha})^\alpha 2^{\alpha-1}\}$ of energy usage. For
+$\alpha \geq 3$, the competitive ratio of our algorithm is better than that of
+any other existing algorithms for this problem.

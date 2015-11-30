@@ -1,0 +1,16 @@
+Monocular optical flow has been widely used to detect obstacles in Micro Air
+Vehicles (MAVs) during visual navigation. However, this approach requires
+significant movement, which reduces the efficiency of navigation and may even
+introduce risks in narrow spaces. In this paper, we introduce a novel setup of
+self-supervised learning (SSL), in which optical flow cues serve as a scaffold
+to learn the visual appearance of obstacles in the environment. We apply it to
+a landing task, in which initially `surface roughness' is estimated from the
+optical flow field in order to detect obstacles. Subsequently, a linear
+regression function is learned that maps appearance features represented by
+texton distributions to the roughness estimate. After learning, the MAV can
+detect obstacles by just analyzing a still image. This allows the MAV to search
+for a landing spot without moving. We first demonstrate this principle to work
+with offline tests involving images captured from an on-board camera, and then
+demonstrate the principle in flight. Although surface roughness is a property
+of the entire flow field in the global image, the appearance learning even
+allows for the pixel-wise segmentation of obstacles.

@@ -1,0 +1,25 @@
+A family of equivalence tools for bounding network capacities is introduced.
+Part I treats networks of point-to-point channels. The main result is roughly
+as follows. Given a network of noisy, independent, memoryless point-to-point
+channels, a collection of communication demands can be met on the given network
+if and only if it can be met on another network where each noisy channel is
+replaced by a noiseless bit pipe with throughput equal to the noisy channel
+capacity. This result was known previously for the case of a single-source
+multicast demand. The result given here treats general demands -- including,
+for example, multiple unicast demands -- and applies even when the achievable
+rate region for the corresponding demands is unknown in the noiseless network.
+In part II, definitions of upper and lower bounding channel models for general
+channels are introduced. By these definitions, a collection of communication
+demands can be met on a network of independent channels if it can be met on a
+network where each channel is replaced by its lower bounding model andonly if
+it can be met on a network where each channel is replaced by its upper bounding
+model. This work derives general conditions under which a network of noiseless
+bit pipes is an upper or lower bounding model for a multiterminal channel.
+Example upper and lower bounding models for broadcast, multiple access, and
+interference channels are given. It is then shown that bounding the difference
+between the upper and lower bounding models for a given channel yields bounds
+on the accuracy of network capacity bounds derived using those models. By
+bounding the capacity of a network of independent noisy channels by the network
+coding capacity of a network of noiseless bit pipes, this approach represents
+one step towards the goal of building computational tools for bounding network
+capacities.

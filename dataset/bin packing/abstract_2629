@@ -1,0 +1,22 @@
+The problem of finding a center string that is `close' to every given string
+arises and has many applications in computational biology and coding theory.
+This problem has two versions: the Closest String problem and the Closest
+Substring problem. Assume that we are given a set of strings ${\cal S}=\{s_1,
+s_2, ..., s_n\}$ of strings, say, each of length $m$. The Closest String
+problem asks for the smallest $d$ and a string $s$ of length $m$ which is
+within Hamming distance $d$ to each $s_i\in {\cal S}$. This problem comes from
+coding theory when we are looking for a code not too far away from a given set
+of codes. The problem is NP-hard. Berman et al give a polynomial time algorithm
+for constant $d$. For super-logarithmic $d$, Ben-Dor et al give an efficient
+approximation algorithm using linear program relaxation technique. The best
+polynomial time approximation has ratio 4/3 for all $d$ given by Lanctot et al
+and Gasieniec et al. The Closest Substring problem looks for a string $t$ which
+is within Hamming distance $d$ away from a substring of each $s_i$. This
+problem only has a $2- \frac{2}{2|\Sigma|+1}$ approximation algorithm
+previously Lanctot et al and is much more elusive than the Closest String
+problem, but it has many applications in finding conserved regions, genetic
+drug target identification, and genetic probes in molecular biology. Whether
+there are efficient approximation algorithms for both problems are major open
+questions in this area. We present two polynomial time approxmation algorithms
+with approximation ratio $1+ \epsilon$ for any small $\epsilon$ to settle both
+questions.

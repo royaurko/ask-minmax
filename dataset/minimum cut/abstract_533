@@ -1,0 +1,17 @@
+\emph{Zero forcing number}, $Z(G)$, of a graph $G$ is the minimum cardinality
+of a set $S$ of black vertices (whereas vertices in $V(G) \setminus S$ are
+colored white) such that $V(G)$ is turned black after finitely many
+applications of "the color-change rule": a white vertex is converted black if
+it is the only white neighbor of a black vertex. Zero forcing number was
+introduced and used to bound the minimum rank of graphs by the "AIM Minimum
+Rank -- Special Graphs Work Group". Let $G_1$ and $G_2$ be disjoint copies of a
+graph $G$ and let $f: V(G_1) \rightarrow V(G_2)$ be a function. Then a
+\emph{functigraph} $C(G, f)=(V, E)$ has the vertex set $V=V(G_1) \cup V(G_2)$
+and the edge set $E=E(G_1) \cup E(G_2) \cup \{uv \mid v=f(u)\}$. For a
+connected graph $G$ of order $n \ge 3$, it is readily seen that $1+\delta(G)
+\le Z(C(G, \sigma)) \le n$ for any permutation $\sigma$; we show that $1+
+\delta(G) \le Z(C(G, f)) \le 2n-2$ for any function $f$, where $\delta(G)$ is
+the minimum degree of $G$. We give examples showing that there does not exist a
+function $g$ such that, for every pair $(G,f)$, $Z(G)<g(Z(C(G,f)))$ or
+$g(Z(G))>Z(C(G,f))$. We further investigate the zero forcing number of
+functigraphs on complete graphs, on cycles, and on paths.

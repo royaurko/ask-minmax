@@ -1,0 +1,15 @@
+We introduce a method for aggregating many least squares estimator so that
+the resulting estimate has two properties: sparsity and structure. That is,
+only a few candidate covariates are used in the resulting model, and the
+selected covariates follow some structure over the candidate covariates that is
+assumed to be known a priori. While sparsity is well studied in many settings,
+including aggregation, structured sparse methods are still emerging. We
+demonstrate a general framework for structured sparse aggregation that allows
+for a wide variety of structures, including overlapping grouped structures and
+general structural penalties defined as set functions on the set of covariates.
+We show that such estimators satisfy structured sparse oracle inequalities ---
+their finite sample risk adapts to the structured sparsity of the target. These
+inequalities reveal that under suitable settings, the structured sparse
+estimator performs at least as well as, and potentially much better than, a
+sparse aggregation estimator. We empirically establish the effectiveness of the
+method using simulation and an application to HIV drug resistance.

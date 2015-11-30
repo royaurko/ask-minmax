@@ -1,0 +1,16 @@
+The deletion--contraction algorithm is perhaps the most popular method for
+computing a host of fundamental graph invariants such as the chromatic, flow,
+and reliability polynomials in graph theory, the Jones polynomial of an
+alternating link in knot theory, and the partition functions of the models of
+Ising, Potts, and Fortuin--Kasteleyn in statistical physics. Prior to this
+work, deletion--contraction was also the fastest known general-purpose
+algorithm for these invariants, running in time roughly proportional to the
+number of spanning trees in the input graph. Here, we give a substantially
+faster algorithm that computes the Tutte polynomial--and hence, all the
+aforementioned invariants and more--of an arbitrary graph in time within a
+polynomial factor of the number of connected vertex sets. The algorithm
+actually evaluates a multivariate generalization of the Tutte polynomial by
+making use of an identity due to Fortuin and Kasteleyn. We also provide a
+polynomial-space variant of the algorithm and give an analogous result for
+Chung and Graham's cover polynomial. An implementation of the algorithm
+outperforms deletion--contraction also in practice.

@@ -1,0 +1,16 @@
+XML data projection (or pruning) is a natural optimization for main memory
+query engines: given a query Q over a document D, the subtrees of D that are
+not necessary to evaluate Q are pruned, thus producing a smaller document D';
+the query Q is then executed on D', hence avoiding to allocate and process
+nodes that will never be reached by Q. In this article, we propose a new
+approach, based on types, that greatly improves current solutions. Besides
+providing comparable or greater precision and far lesser pruning overhead, our
+solution ---unlike current approaches--- takes into account backward axes,
+predicates, and can be applied to multiple queries rather than just to single
+ones. A side contribution is a new type system for XPath able to handle
+backward axes. The soundness of our approach is formally proved. Furthermore,
+we prove that the approach is also complete (i.e., yields the best possible
+type-driven pruning) for a relevant class of queries and Schemas. We further
+validate our approach using the XMark and XPathMark benchmarks and show that
+pruning not only improves the main memory query engine's performances (as
+expected) but also those of state of the art native XML databases.

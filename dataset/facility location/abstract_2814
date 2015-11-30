@@ -1,0 +1,10 @@
+When using images to locate objects, there is the problem of correcting for
+distortion and misalignment in the images. An elegant way of solving this
+problem is to generate an error correcting function that maps points in an
+image to their corrected locations. We generate such a function by fitting a
+polynomial to a set of sample points. The objective is to identify a polynomial
+that passes "sufficiently close" to these points with "good" approximation of
+intermediate points. In the past, it has been difficult to achieve good global
+polynomial approximation using only sample points. We report on the development
+of a global polynomial approximation algorithm for solving this problem. Key
+Words: Polynomial approximation, interpolation, image rectification.

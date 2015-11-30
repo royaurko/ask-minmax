@@ -1,0 +1,17 @@
+In this paper, we present an algorithm for minimizing the difference between
+two submodular functions using a variational framework which is based on (an
+extension of) the concave-convex procedure [17]. Because several commonly used
+metrics in machine learning, like mutual information and conditional mutual
+information, are submodular, the problem of minimizing the difference of two
+submodular problems arises naturally in many machine learning applications. Two
+such applications are learning discriminatively structured graphical models and
+feature selection under computational complexity constraints. A commonly used
+metric for measuring discriminative capacity is the EAR measure which is the
+difference between two conditional mutual information terms. Feature selection
+taking complexity considerations into account also fall into this framework
+because both the information that a set of features provide and the cost of
+computing and using the features can be modeled as submodular functions. This
+problem is NP-hard, and we give a polynomial time heuristic for it. We also
+present results on synthetic data to show that classifiers based on
+discriminative graphical models using this algorithm can significantly
+outperform classifiers based on generative graphical models.

@@ -1,0 +1,21 @@
+In many organisms the expression levels of each gene are controlled by the
+activation levels of known "Transcription Factors" (TF). A problem of
+considerable interest is that of estimating the "Transcription Regulation
+Networks" (TRN) relating the TFs and genes. While the expression levels of
+genes can be observed, the activation levels of the corresponding TFs are
+usually unknown, greatly increasing the difficulty of the problem. Based on
+previous experimental work, it is often the case that partial information about
+the TRN is available. For example, certain TFs may be known to regulate a given
+gene or in other cases a connection may be predicted with a certain
+probability. In general, the biology of the problem indicates there will be
+very few connections between TFs and genes. Several methods have been proposed
+for estimating TRNs. However, they all suffer from problems such as unrealistic
+assumptions about prior knowledge of the network structure or computational
+limitations. We propose a new approach that can directly utilize prior
+information about the network structure in conjunction with observed gene
+expression data to estimate the TRN. Our approach uses $L_1$ penalties on the
+network to ensure a sparse structure. This has the advantage of being
+computationally efficient as well as making many fewer assumptions about the
+network structure. We use our methodology to construct the TRN for E. coli and
+show that the estimate is biologically sensible and compares favorably with
+previous estimates.

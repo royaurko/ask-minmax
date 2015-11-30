@@ -1,0 +1,20 @@
+In this paper, we consider anisotropic diffusion with decay, and the
+diffusivity coefficient to be a second-order symmetric and positive definite
+tensor. It is well-known that this particular equation is a second-order
+elliptic equation, and satisfies a maximum principle under certain regularity
+assumptions. However, the finite element implementation of the classical
+Galerkin formulation for both anisotropic and isotropic diffusion with decay
+does not respect the maximum principle.
+  We first show that the numerical accuracy of the classical Galerkin
+formulation deteriorates dramatically with increase in the decay coefficient
+for isotropic medium and violates the discrete maximum principle. However, in
+the case of isotropic medium, the extent of violation decreases with mesh
+refinement. We then show that, in the case of anisotropic medium, the classical
+Galerkin formulation for anisotropic diffusion with decay violates the discrete
+maximum principle even at lower values of decay coefficient and does not vanish
+with mesh refinement. We then present a methodology for enforcing maximum
+principles under the classical Galerkin formulation for anisotropic diffusion
+with decay on general computational grids using optimization techniques.
+Representative numerical results (which take into account anisotropy and
+heterogeneity) are presented to illustrate the performance of the proposed
+formulation.

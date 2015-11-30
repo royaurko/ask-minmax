@@ -1,0 +1,17 @@
+Understanding and modelling resources of Internet end hosts is essential for
+the design of desktop software and Internet-distributed applications. In this
+paper we develop a correlated resource model of Internet end hosts based on
+real trace data taken from the SETI@home project. This data covers a 5-year
+period with statistics for 2.7 million hosts. The resource model is based on
+statistical analysis of host computational power, memory, and storage as well
+as how these resources change over time and the correlations between them. We
+find that resources with few discrete values (core count, memory) are well
+modeled by exponential laws governing the change of relative resource
+quantities over time. Resources with a continuous range of values are well
+modeled with either correlated normal distributions (processor speed for
+integer operations and floating point operations) or log-normal distributions
+(available disk space). We validate and show the utility of the models by
+applying them to a resource allocation problem for Internet-distributed
+applications, and demonstrate their value over other models. We also make our
+trace data and tool for automatically generating realistic Internet end hosts
+publicly available.

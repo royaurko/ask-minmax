@@ -1,0 +1,19 @@
+Near ubiquitous mobile computing has led to intense interest in dynamic graph
+theory. This provides a new and challenging setting for algorithmics and
+complexity theory. For any graph-based problem, the rapid evolution of a
+(possibly disconnected) graph over time naturally leads to the important
+complexity question: is it better to calculate a new solution from scratch or
+to adapt the known solution on the prior graph to quickly provide a solution of
+guaranteed quality for the changed graph?
+  In this paper, we demonstrate that the former is the best approach in some
+cases, but that there are cases where the latter is feasible. We prove that,
+under certain conditions, hard problems cannot even be approximated in any
+reasonable complexity bound --- i.e., even with a large amount of time, having
+a solution to a very similar graph does not help in computing a solution to the
+current graph. To achieve this, we formalize the idea as a maintenance
+algorithm. Using r-Regular Subgraph as the primary example we show that
+W[1]-hardness for the parameterized approximation problem implies the
+non-existence of a maintenance algorithm for the given approximation ratio.
+Conversely we show that Vertex Cover, which is fixed-parameter tractable, has a
+2-approximate maintenance algorithm. The implications of NP-hardness and
+NPO-hardness are also explored.

@@ -1,0 +1,16 @@
+The volatility of financial instruments is rarely constant, and usually
+varies over time. This creates a phenomenon called volatility clustering, where
+large price movements on one day are followed by similarly large movements on
+successive days, creating temporal clusters. The GARCH model, which treats
+volatility as a drift process, is commonly used to capture this behavior.
+However research suggests that volatility is often better described by a
+structural break model, where the volatility undergoes abrupt jumps in addition
+to drift. Most efforts to integrate these jumps into the GARCH methodology have
+resulted in models which are either very computationally demanding, or which
+make problematic assumptions about the distribution of the instruments, often
+assuming that they are Gaussian. We present a new approach which uses ideas
+from nonparametric statistics to identify structural break points without
+making such distributional assumptions, and then models drift separately within
+each identified regime. Using our method, we investigate the volatility of
+several major stock indexes, and find that our approach can potentially give an
+improved fit compared to more commonly used techniques.

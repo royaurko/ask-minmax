@@ -1,0 +1,18 @@
+We develop a new estimation technique for recovering depth-of-field from
+multiple stereo images. Depth-of-field is estimated by determining the shift in
+image location resulting from different camera viewpoints. When this shift is
+not divisible by pixel width, the multiple stereo images can be combined to
+form a super-resolution image. By modeling this super-resolution image as a
+realization of a random field, one can view the recovery of depth as a
+likelihood estimation problem. We apply these modeling techniques to the
+recovery of cloud height from multiple viewing angles provided by the MISR
+instrument on the Terra Satellite. Our efforts are focused on a two layer cloud
+ensemble where both layers are relatively planar, the bottom layer is optically
+thick and textured, and the top layer is optically thin. Our results
+demonstrate that with relative ease, we get comparable estimates to the M2
+stereo matcher which is the same algorithm used in the current MISR standard
+product (details can be found in [IEEE Transactions on Geoscience and Remote
+Sensing 40 (2002) 1547--1559]). Moreover, our techniques provide the
+possibility of modeling all of the MISR data in a unified way for cloud height
+estimation. Research is underway to extend this framework for fast, quality
+global estimates of cloud height.

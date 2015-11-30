@@ -1,0 +1,19 @@
+For Very Long Baseline Interferometry (VLBI), the fringe spacing is extremely
+narrow compared to the field of view imposed by the primary beam of each
+element. This means that an extremely large number of resolution units can
+potentially be imaged from a single observation.
+  We implement and test a technique for efficiently and accurately imaging
+large VLBI datasets. The DiFX software correlator is used to generate a dataset
+with extremely high time and frequency resolution. This large dataset is then
+transformed and averaged multiple times to generate many smaller datasets, each
+with a phase centre located at a different area of interest.
+  Results of an 8.4 GHz four-station VLBI observation of a field containing
+multiple sources are presented. Observations of the calibrator 3C345 were used
+for preliminary tests of accuracy of the shifting algorithm. A high level of
+accuracy was achieved, making the method suitable even for the most demanding
+astrometric VLBI observations. One target source (1320+299A) was detected and
+was used as a phase-reference calibrator in searching for further detections.
+An image containing 13 billion pixels was constructed by independently imaging
+782 visibility datasets covering the entire primary beam of the array.
+  Current implementations of this algorithm and possible future developments in
+VLBI data analysis are discussed.

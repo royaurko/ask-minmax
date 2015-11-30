@@ -1,0 +1,18 @@
+This paper proposes an analytical framework for peer-to-peer (P2P) networks
+and introduces schemes for building P2P networks to approach the minimum
+weighted average download time (WADT). In the considered P2P framework, the
+server, which has the information of all the download bandwidths and upload
+bandwidths of the peers, minimizes the weighted average download time by
+determining the optimal transmission rate from the server to the peers and from
+the peers to the other peers. This paper first defines the static P2P network,
+the hierarchical P2P network and the strictly hierarchical P2P network. Any
+static P2P network can be decomposed into an equivalent network of sub-peers
+that is strictly hierarchical. This paper shows that convex optimization can
+minimize the WADT for P2P networks by equivalently minimizing the WADT for
+strictly hierarchical networks of sub-peers. This paper then gives an upper
+bound for minimizing WADT by constructing a hierarchical P2P network, and lower
+bound by weakening the constraints of the convex problem. Both the upper bound
+and the lower bound are very tight. This paper also provides several suboptimal
+solutions for minimizing the WADT for strictly hierarchical networks, in which
+peer selection algorithms and chunk selection algorithm can be locally
+designed.

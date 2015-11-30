@@ -1,0 +1,17 @@
+Resource constrained shortest path problems are usually solved by label
+algorithms, which consist in a smart enumeration of the non-dominated paths.
+Recent improvements of these algorithms rely on the use of bounds on path
+resources to discard partial solutions. The quality of the bounds determines
+the performance of the algorithm. The main contribution of this paper is to
+introduce a standard procedure to generate bounds on paths resources in a
+general setting which covers most resource constrained shortest path problems,
+among which stochastic versions.
+  In that purpose, we introduce a generalization of the resource constrained
+shortest path problem where the resources are taken in a monoid. The resource
+of a path is the monoid sum of the resources of its arcs. The problem consists
+in finding a path whose resource minimizes a non-decreasing cost function of
+the path resource among the paths that respect a given constraint. Label
+algorithms are generalized to this framework. We use lattice theory to provide
+a polynomial procedure to find good quality bounds. The efficiency of the
+approach is proved through an extensive numerical study in the case of the
+Stochastic Resource Constrained Shortest Path problem.

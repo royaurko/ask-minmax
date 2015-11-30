@@ -1,0 +1,21 @@
+This paper considers the problem of distributed source coding for a large
+network. A major obstacle that poses an existential threat to practical
+deployment of conventional approaches to distributed coding is the exponential
+growth of the decoder complexity with the number of sources and the encoding
+rates. This growth in complexity renders many traditional approaches
+impractical even for moderately sized networks. In this paper, we propose a new
+decoding paradigm for large scale distributed compression wherein the decoder
+complexity is explicitly controlled during the design. Central to our approach
+is a module called the "bit-subset selector" whose role is to judiciously
+extract an appropriate subset of the received bits for decoding per individual
+source. We propose a practical design strategy, based on deterministic
+annealing (DA) for the joint design of the system components, that enables
+direct optimization of the decoder complexity-distortion trade-off, and thereby
+the desired scalability. We also point out the direct connections between the
+problem of large scale distributed compression and a related problem in sensor
+networks, namely, dispersive information routing of correlated sources. This
+allows us to extend the design principles proposed in the context of large
+scale distributed compression to design efficient routers for minimum cost
+communication of correlated sources across a network. Experiments on both real
+and synthetic data-sets provide evidence for substantial gains over
+conventional approaches.

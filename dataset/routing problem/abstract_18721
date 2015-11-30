@@ -1,0 +1,21 @@
+For a polygon P with n vertices, the vertex guarding problem asks for the
+minimum subset G of P's vertices such that every point in P is seen by at least
+one point in G. This problem is NP-complete and APX-hard. The first
+approximation algorithm (Ghosh, 1987) involves decomposing P into O(n^4) cells
+that are equivalence classes for visibility from the vertices of P. This
+discretized problem can then be treated as an instance of set cover and solved
+in O(n^5) time with a greedy O(log n)-approximation algorithm. Ghosh (2010)
+recently revisited the algorithm, noting that minimum visibility decompositions
+for simple polygons (Bose et al., 2000) have only O(n^3) cells, improving the
+running time of the algorithm to O(n^4) for simple polygons.
+  In this paper we show that, since minimum visibility decompositions for
+simple polygons have only O(n^2) cells of minimal visibility (Bose et al.,
+2000), the running time of the algorithm can be further improved to O(n^3).
+This result was obtained independently by Jang and Kwon (2011). We extend the
+result of Bose et al. to polygons with holes, showing that a minimum visibility
+decomposition of a polygon with h holes has only O((h+1)n^3) cells and only
+O((h+1)^2 n^2) cells of minimal visibility. We exploit this result to obtain a
+faster algorithm for vertex guarding polygons with holes. We then show that, in
+the same time complexity, we can attain approximation factors of O(log
+log(opt)) for simple polygons and O((1+\log((h+1))) log(opt)) for polygons with
+holes.

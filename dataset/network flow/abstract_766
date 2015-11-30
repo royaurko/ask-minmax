@@ -1,0 +1,17 @@
+We consider the problem of designing a fair scheduling algorithm for
+discrete-time constrained queuing networks. Each queue has dedicated exogenous
+packet arrivals. There are constraints on which queues can be served
+simultaneously. This model effectively describes important special instances
+like network switches, interference in wireless networks, bandwidth sharing for
+congestion control and traffic scheduling in road roundabouts. Fair scheduling
+is required because it provides isolation to different traffic flows; isolation
+makes the system more robust and enables providing quality of service. Existing
+work on fairness for constrained networks concentrates on flow based fairness.
+As a main result, we describe a notion of packet based fairness by establishing
+an analogy with the ranked election problem: packets are voters, schedules are
+candidates and each packet ranks the schedules based on its priorities. We then
+obtain a scheduling algorithm that achieves the described notion of fairness by
+drawing upon the seminal work of Goodman and Markowitz (1952). This yields the
+familiar Maximum Weight (MW) style algorithm. As another important result we
+prove that algorithm obtained is throughput optimal. There is no reason a
+priori why this should be true, and the proof requires non-traditional methods.

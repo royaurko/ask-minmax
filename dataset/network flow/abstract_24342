@@ -1,0 +1,14 @@
+The criterion commonly used in directed acyclic graphs (dags) for testing
+graphical independence is the well-known d-separation criterion. It allows us
+to build graphical representations of dependency models (usually probabilistic
+dependency models) in the form of belief networks, which make easy
+interpretation and management of independence relationships possible, without
+reference to numerical parameters (conditional probabilities). In this paper,
+we study the following combinatorial problem: finding the minimum d-separating
+set for two nodes in a dag. This set would represent the minimum information
+(in the sense of minimum number of variables) necessary to prevent these two
+nodes from influencing each other. The solution to this basic problem and some
+of its extensions can be useful in several ways, as we shall see later. Our
+solution is based on a two-step process: first, we reduce the original problem
+to the simpler one of finding a minimum separating set in an undirected graph,
+and second, we develop an algorithm for solving it.

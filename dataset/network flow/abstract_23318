@@ -1,0 +1,21 @@
+We propose a variational approach to identification of an optimal nonlinear
+eddy viscosity as a subscale turbulence representation for POD models. The
+ansatz for the eddy viscosity is given in terms of an arbitrary function of the
+resolved fluctuation energy. This function is found as a minimizer of a cost
+functional measuring the difference between the target data coming from a
+resolved direct or large-eddy simulation of the flow and its reconstruction
+based on the POD model. The optimization is performed with a data-assimilation
+approach generalizing the 4D-VAR method. POD models with optimal eddy
+viscosities are presented for a 2D incompressible mixing layer at $Re=500$
+(based on the initial vorticity thickness and the velocity of the high-speed
+stream) and a 3D Ahmed body wake at $Re=300,000$ (based on the body height and
+the free-stream velocity). The variational optimization formulation elucidates
+a number of interesting physical insights concerning the eddy-viscosity ansatz
+used. The 20-dimensional model of the mixing-layer reveals a negative
+eddy-viscosity regime at low fluctuation levels which improves the transient
+times towards the attractor. The 100-dimensional wake model yields more
+accurate energy distributions as compared to the nonlinear modal eddy-viscosity
+benchmark {proposed recently} by \"Osth et al. (2014). Our methodology can be
+applied to construct quite arbitrary closure relations and, more generally,
+constitutive relations optimizing statistical properties of a broad class of
+reduced-order models.

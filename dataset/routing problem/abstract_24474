@@ -1,0 +1,16 @@
+This work concerns the development of an Algebraic Multilevel method for
+computing stationary vectors of Markov chains. We present an efficient
+Bootstrap Algebraic Multilevel method for this task. In our proposed approach,
+we employ a multilevel eigensolver, with interpolation built using ideas based
+on compatible relaxation, algebraic distances, and least squares fitting of
+test vectors. Our adaptive variational strategy for computation of the state
+vector of a given Markov chain is then a combination of this multilevel
+eigensolver and associated multilevel preconditioned GMRES iterations. We show
+that the Bootstrap AMG eigensolver by itself can efficiently compute accurate
+approximations to the state vector. An additional benefit of the Bootstrap
+approach is that it yields an accurate interpolation operator for many other
+eigenmodes. This in turn allows for the use of the resulting AMG hierarchy to
+accelerate the MLE steps using standard multigrid correction steps. The
+proposed approach is applied to a range of test problems, involving
+non-symmetric stochastic M-matrices, showing promising results for all problems
+considered.

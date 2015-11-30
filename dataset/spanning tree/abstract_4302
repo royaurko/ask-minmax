@@ -1,0 +1,16 @@
+We present in this paper a first-order axiomatization of an extended theory
+$T$ of finite or infinite trees, built on a signature containing an infinite
+set of function symbols and a relation $\fini(t)$ which enables to distinguish
+between finite or infinite trees. We show that $T$ has at least one model and
+prove its completeness by giving not only a decision procedure, but a full
+first-order constraint solver which gives clear and explicit solutions for any
+first-order constraint satisfaction problem in $T$. The solver is given in the
+form of 16 rewriting rules which transform any first-order constraint $\phi$
+into an equivalent disjunction $\phi$ of simple formulas such that $\phi$ is
+either the formula $\true$ or the formula $\false$ or a formula having at least
+one free variable, being equivalent neither to $\true$ nor to $\false$ and
+where the solutions of the free variables are expressed in a clear and explicit
+way. The correctness of our rules implies the completeness of $T$. We also
+describe an implementation of our algorithm in CHR (Constraint Handling Rules)
+and compare the performance with an implementation in C++ and that of a recent
+decision procedure for decomposable theories.

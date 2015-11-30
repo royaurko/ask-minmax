@@ -1,0 +1,17 @@
+We present an object-oriented geophysical and astrophysical spectral-element
+adaptive refinement (GASpAR) code for application to turbulent flows. Like most
+spectral-element codes, GASpAR combines finite-element efficiency with
+spectral-method accuracy. It is also designed to be flexible enough for a range
+of geophysics and astrophysics applications where turbulence or other complex
+multiscale problems arise. For extensibility and flexibilty the code is
+designed in an object-oriented manner. The computational core is based on
+spectral-element operators, which are represented as objects. The formalism
+accommodates both conforming and nonconforming elements and their associated
+data structures for handling interelement communications in a parallel
+environment. Many aspects of this code are a synthesis of existing methods;
+however, we focus on a new formulation of dynamic adaptive refinement (DARe) of
+nonconforming h-type. This paper presents the code and its algorithms; we do
+not consider parallel efficiency metrics or performance. As a demonstration of
+the code we offer several two-dimensional test cases that we propose as
+standard test problems for comparable DARe codes. The suitability of these test
+problems for turbulent flow simulation is considered.

@@ -1,0 +1,22 @@
+A service system with multiple types of customers, arriving according to
+Poisson processes, is considered. The system is heterogeneous in that the
+servers also can be of multiple types. Each customer has an independent
+exponentially distributed service time, with the mean determined by its type.
+Multiple customers (possibly of different types) can be placed for service into
+one server, subject to "packing" constraints, which depend on the server type.
+Service times of different customers are independent, even if served
+simultaneously by the same server. Such a system models, for example, dynamic
+real-time assignment of virtual machines to physical machines in a network
+cloud, where typical objectives may be to minimize the number of occupied
+(non-idle) hosts and/or to minimize blocking/waiting of virtual machines. We
+consider two variants of the model, and two corresponding generalizations of
+the {\em Greedy Random} (GRAND) algorithm, introduced for homogeneous (one
+server type) systems in [15]. The large-scale asymptotic regime is considered
+such that the customer arrival rates grow to infinity.
+  For the infinite-server model, we prove asymptotic optimality of the
+algorithm in the sense of minimizing the weighted (by type) number of occupied
+servers in steady-state. For the finite-server system with blocking, under
+subcritical load, we prove existence, uniqueness, and local stability of the
+system equilibrium point (without blocking) for the fluid limit trajectories.
+This in turn strongly suggests a conjecture that the steady-state blocking
+probability under the algorithm vanishes in the large-scale limit.

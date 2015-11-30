@@ -1,0 +1,14 @@
+The constraints arising from DAG models with latent variables can be
+naturally represented by means of acyclic directed mixed graphs (ADMGs). Such
+graphs contain directed and bidirected arrows, and contain no directed cycles.
+DAGs with latent variables imply independence constraints in the distribution
+resulting from a 'fixing' operation, in which a joint distribution is divided
+by a conditional. This operation generalizes marginalizing and conditioning.
+Some of these constraints correspond to identifiable 'dormant' independence
+constraints, with the well known 'Verma constraint' as one example. Recently,
+models defined by a set of the constraints arising after fixing from a DAG with
+latents, were characterized via a recursive factorization and a nested Markov
+property. In addition, a parameterization was given in the discrete case. In
+this paper we use this parameterization to describe a parameter fitting
+algorithm, and a search and score structure learning algorithm for these nested
+Markov models. We apply our algorithms to a variety of datasets.

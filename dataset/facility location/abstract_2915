@@ -1,0 +1,16 @@
+The paper develops DILOC, a \emph{distributive}, \emph{iterative} algorithm
+that locates M sensors in $\mathbb{R}^m, m\geq 1$, with respect to a minimal
+number of m+1 anchors with known locations. The sensors exchange data with
+their neighbors only; no centralized data processing or communication occurs,
+nor is there centralized knowledge about the sensors' locations. DILOC uses the
+barycentric coordinates of a sensor with respect to its neighbors that are
+computed using the Cayley-Menger determinants. These are the determinants of
+matrices of inter-sensor distances. We show convergence of DILOC by associating
+with it an absorbing Markov chain whose absorbing states are the anchors. We
+introduce a stochastic approximation version extending DILOC to random
+environments when the knowledge about the intercommunications among sensors and
+the inter-sensor distances are noisy, and the communication links among
+neighbors fail at random times. We show a.s. convergence of the modified DILOC
+and characterize the error between the final estimates and the true values of
+the sensors' locations. Numerical studies illustrate DILOC under a variety of
+deterministic and random operating conditions.

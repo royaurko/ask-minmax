@@ -1,0 +1,26 @@
+We study classic streaming and sparse recovery problems using deterministic
+linear sketches, including l1/l1 and linf/l1 sparse recovery problems (the
+latter also being known as l1-heavy hitters), norm estimation, and approximate
+inner product. We focus on devising a fixed matrix A in R^{m x n} and a
+deterministic recovery/estimation procedure which work for all possible input
+vectors simultaneously. Our results improve upon existing work, the following
+being our main contributions:
+  * A proof that linf/l1 sparse recovery and inner product estimation are
+equivalent, and that incoherent matrices can be used to solve both problems.
+Our upper bound for the number of measurements is m=O(eps^{-2}*min{log n, (log
+n / log(1/eps))^2}). We can also obtain fast sketching and recovery algorithms
+by making use of the Fast Johnson-Lindenstrauss transform. Both our running
+times and number of measurements improve upon previous work. We can also obtain
+better error guarantees than previous work in terms of a smaller tail of the
+input vector.
+  * A new lower bound for the number of linear measurements required to solve
+l1/l1 sparse recovery. We show Omega(k/eps^2 + klog(n/k)/eps) measurements are
+required to recover an x' with |x - x'|_1 <= (1+eps)|x_{tail(k)}|_1, where
+x_{tail(k)} is x projected onto all but its largest k coordinates in magnitude.
+  * A tight bound of m = Theta(eps^{-2}log(eps^2 n)) on the number of
+measurements required to solve deterministic norm estimation, i.e., to recover
+|x|_2 +/- eps|x|_1.
+  For all the problems we study, tight bounds are already known for the
+randomized complexity from previous work, except in the case of l1/l1 sparse
+recovery, where a nearly tight bound is known. Our work thus aims to study the
+deterministic complexities of these problems.

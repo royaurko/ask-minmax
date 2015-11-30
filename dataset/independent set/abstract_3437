@@ -1,0 +1,17 @@
+The recently developed selected columns of the density matrix (SCDM) method
+[J. Chem. Theory Comput. 11, 1463, 2015] is a simple, robust, efficient and
+highly parallelizable method for constructing localized orbitals from a set of
+delocalized Kohn-Sham orbitals for insulators and semiconductors with $\Gamma$
+point sampling of the Brillouin zone. In this work we generalize the SCDM
+method to Kohn-Sham density functional theory calculations with k-point
+sampling of the Brillouin zone, which is needed for more general electronic
+structure calculations for solids. We demonstrate that our new method, called
+SCDM-k, is by construction gauge independent and is a natural way to describe
+localized orbitals. SCDM-k computes localized orbitals without the use of an
+optimization procedure, and thus does not suffer from the possibility of being
+trapped in a local minimum. Furthermore, the computational complexity of using
+SCDM-k to construct orthogonal and localized orbitals scales as O(N log N )
+where N is the total number of k-points in the Brillouin zone. SCDM-k is
+therefore efficient even when a large number of k-points are used for Brillouin
+zone sampling. We demonstrate the numerical performance of SCDM-k using systems
+with model potentials in two and three dimensions.

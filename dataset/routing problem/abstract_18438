@@ -1,0 +1,12 @@
+We study an abstract optimization problem arising from biomolecular sequence
+analysis. For a sequence A of pairs (a_i,w_i) for i = 1,..,n and w_i>0, a
+segment A(i,j) is a consecutive subsequence of A starting with index i and
+ending with index j. The width of A(i,j) is w(i,j) = sum_{i <= k <= j} w_k, and
+the density is (sum_{i<= k <= j} a_k)/ w(i,j). The maximum-density segment
+problem takes A and two values L and U as input and asks for a segment of A
+with the largest possible density among those of width at least L and at most
+U. When U is unbounded, we provide a relatively simple, O(n)-time algorithm,
+improving upon the O(n \log L)-time algorithm by Lin, Jiang and Chao. When both
+L and U are specified, there are no previous nontrivial results. We solve the
+problem in O(n) time if w_i=1 for all i, and more generally in
+O(n+n\log(U-L+1)) time when w_i>=1 for all i.

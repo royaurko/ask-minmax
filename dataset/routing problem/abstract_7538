@@ -1,0 +1,21 @@
+Given an n-vertex graph G, a drawing of G in the plane is a mapping of its
+vertices into points of the plane, and its edges into continuous curves,
+connecting the images of their endpoints. A crossing in such a drawing is a
+point where two such curves intersect. In the Minimum Crossing Number problem,
+the goal is to find a drawing of G with minimum number of crossings. The value
+of the optimal solution, denoted by OPT, is called the graph's crossing number.
+This is a very basic problem in topological graph theory, that has received a
+significant amount of attention, but is still poorly understood
+algorithmically. The best currently known efficient algorithm produces drawings
+with $O(\log^2 n)(n + OPT)$ crossings on bounded-degree graphs, while only a
+constant factor hardness of approximation is known. A closely related problem
+is Minimum Edge Planarization, in which the goal is to remove a
+minimum-cardinality subset of edges from G, such that the remaining graph is
+planar. Our main technical result establishes the following connection between
+the two problems: if we are given a solution of cost k to the Minimum Edge
+Planarization problem on graph G, then we can efficiently find a drawing of G
+with at most $\poly(d)\cdot k\cdot (k+OPT)$ crossings, where $d$ is the maximum
+degree in G. This result implies an $O(n\cdot \poly(d)\cdot
+\log^{3/2}n)$-approximation for Minimum Crossing Number, as well as improved
+algorithms for special cases of the problem, such as, for example, k-apex and
+bounded-genus graphs.

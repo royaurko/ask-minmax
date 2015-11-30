@@ -1,0 +1,15 @@
+Execution of concurrent programs implies frequent switching between different
+thread contexts. This property perplexes analyzing and reasoning about
+concurrent programs. Trace simplification is a technique that aims at
+alleviating this problem via transforming a concurrent program trace
+(execution) into a semantically equivalent one. The resulted trace typically
+includes less number of context switches than that in the original trace.
+  This paper presents a new static approach for trace simplification. This
+approach is based on a connectivity analysis that calculates for each
+trace-point connectivity and context-switching information. The paper also
+presents a novel operational semantics for concurrent programs. The semantics
+is used to prove the correctness and efficiency of the proposed techniques for
+connectivity analysis and trace simplification. The results of experiments
+testing the proposed technique on problems treated by previous work for trace
+simplification are also shown in the paper. The results prove the efficiency
+and effectiveness of the proposed method.

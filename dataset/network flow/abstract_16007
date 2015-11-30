@@ -1,0 +1,22 @@
+Network alignment can be used to transfer functional knowledge between
+conserved regions of different networks. Typically, existing methods use a node
+cost function (NCF) to compute similarity between nodes in different networks
+and an alignment strategy (AS) to find high-scoring alignments with respect to
+the total NCF over all aligned nodes (or node conservation). But, they then
+evaluate quality of their alignments via some other measure that is different
+than the node conservation measure used to guide the alignment construction
+process. Typically, one measures the amount of conserved edges, but only after
+alignments are produced. Hence, a recent attempt aimed to directly maximize the
+amount of conserved edges while constructing alignments, which improved
+alignment accuracy. Here, we aim to directly maximize both node and edge
+conservation during alignment construction to further improve alignment
+accuracy. For this, we design a novel measure of edge conservation that (unlike
+existing measures that treat each conserved edge the same) weighs each
+conserved edge so that edges with highly NCF-similar end nodes are favored. As
+a result, we introduce a novel AS, Weighted Alignment VotEr (WAVE), which can
+optimize any measures of node and edge conservation, and which can be used with
+any NCF or combination of multiple NCFs. Using WAVE on top of established
+state-of-the-art NCFs leads to superior alignments compared to the existing
+methods that optimize only node conservation or only edge conservation or that
+treat each conserved edge the same. And while we evaluate WAVE in the
+computational biology domain, it is easily applicable in any domain.

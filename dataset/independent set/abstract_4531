@@ -1,0 +1,20 @@
+A function $f:\ \{-1,1\}^n\rightarrow \mathbb{R}$ is called pseudo-Boolean.
+It is well-known that each pseudo-Boolean function $f$ can be written as
+$f(x)=\sum_{I\in {\cal F}}\hat{f}(I)\chi_I(x),$ where ${\cal F}\subseteq \{I:\
+I\subseteq [n]\}$, $[n]=\{1,2,...,n\}$, and $\chi_I(x)=\prod_{i\in I}x_i$ and
+$\hat{f}(I)$ are non-zero reals. The degree of $f$ is $\max \{|I|:\ I\in {\cal
+F}\}$ and the width of $f$ is the minimum integer $\rho$ such that every $i\in
+[n]$ appears in at most $\rho$ sets in $\cal F$. For $i\in [n]$, let
+$\mathbf{x}_i$ be a random variable taking values 1 or -1 uniformly and
+independently from all other variables $\mathbf{x}_j$, $j\neq i.$ Let
+$\mathbf{x}=(\mathbf{x}_1,...,\mathbf{x}_n)$. The $p$-norm of $f$ is
+$||f||_p=(\mathbb E[|f(\mathbf{x})|^p])^{1/p}$ for any $p\ge 1$. It is
+well-known that $||f||_q\ge ||f||_p$ whenever $q> p\ge 1$. However, the higher
+norm can be bounded by the lower norm times a coefficient not directly
+depending on $f$: if $f$ is of degree $d$ and $q> p>1$ then $ ||f||_q\le
+(\frac{q-1}{p-1})^{d/2}||f||_p.$ This inequality is called the Hypercontractive
+Inequality. We show that one can replace $d$ by $\rho$ in the Hypercontractive
+Inequality for each $q> p\ge 2$ as follows: $ ||f||_q\le
+((2r)!\rho^{r-1})^{1/(2r)}||f||_p,$ where $r=\lceil q/2\rceil$. For the case
+$q=4$ and $p=2$, which is important in many applications, we prove a stronger
+inequality: $ ||f||_4\le (2\rho+1)^{1/4}||f||_2.$

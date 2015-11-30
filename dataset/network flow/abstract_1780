@@ -1,0 +1,18 @@
+Last year, the official BitTorrent client switched to LEDBAT, a new
+congestion control algorithm targeting a lower-than Best Effort transport
+service. In this paper, we study this new protocol through packet-level
+simulations, with a special focus on a performance comparison with other
+lower-than Best Effort protocols such as TCP-LP and TCP-NICE: our aim is indeed
+to quantify and relatively weight the level of Low-priority provided by such
+protocols.
+  Our results show that LEDBAT transport generally achieves the lowest possible
+level of priority, with the default configurations of TCP-NICE and TCP-LP
+representing increasing levels of aggressiveness. In addition, we perform a
+careful sensitivity analysis of LEDBAT performance, by tuning its main
+parameters in both inter-protocol (against TCP) and intra-protocol (against
+LEDBAT itself) scenarios. In the inter-protocol case, although in case of
+misconfiguration LEDBAT competes as aggressively as TCP, however we show that
+it is not possible to achieve an arbitrary level of low-priority by merely
+tuning its parameters. In the intra-protocol case, we show that coexistence of
+legacy flows with slightly dissimilar settings, or experiencing different
+network conditions, can result in significant unfairness.

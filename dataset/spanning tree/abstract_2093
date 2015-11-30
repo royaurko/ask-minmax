@@ -1,0 +1,17 @@
+Decision tree is an effective classification approach in data mining and
+machine learning. In applications, test costs and misclassification costs
+should be considered while inducing decision trees. Recently, some
+cost-sensitive learning algorithms based on ID3 such as CS-ID3, IDX,
+\lambda-ID3 have been proposed to deal with the issue. These algorithms deal
+with only symbolic data. In this paper, we develop a decision tree algorithm
+inspired by C4.5 for numeric data. There are two major issues for our
+algorithm. First, we develop the test cost weighted information gain ratio as
+the heuristic information. According to this heuristic information, our
+algorithm is to pick the attribute that provides more gain ratio and costs less
+for each selection. Second, we design a post-pruning strategy through
+considering the tradeoff between test costs and misclassification costs of the
+generated decision tree. In this way, the total cost is reduced. Experimental
+results indicate that (1) our algorithm is stable and effective; (2) the
+post-pruning technique reduces the total cost significantly; (3) the
+competition strategy is effective to obtain a cost-sensitive decision tree with
+low cost.

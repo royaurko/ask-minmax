@@ -1,0 +1,19 @@
+How can we tell when accounts are fake or real in a social network? And how
+can we tell which accounts belong to liberal, conservative or centrist users?
+Often, we can answer such questions and label nodes in a network based on the
+labels of their neighbors and appropriate assumptions of homophily ("birds of a
+feather flock together") or heterophily ("opposites attract"). One of the most
+widely used methods for this kind of inference is Belief Propagation (BP) which
+iteratively propagates the information from a few nodes with explicit labels
+throughout a network until convergence. One main problem with BP, however, is
+that there are no known exact guarantees of convergence in graphs with loops.
+  This paper introduces Linearized Belief Propagation (LinBP), a linearization
+of BP that allows a closed-form solution via intuitive matrix equations and,
+thus, comes with convergence guarantees. It handles homophily, heterophily, and
+more general cases that arise in multi-class settings. Plus, it allows a
+compact implementation in SQL. The paper also introduces Single-pass Belief
+Propagation (SBP), a "localized" version of LinBP that propagates information
+across every edge at most once and for which the final class assignments depend
+only on the nearest labeled neighbors. In addition, SBP allows fast incremental
+updates in dynamic networks. Our runtime experiments show that LinBP and SBP
+are orders of magnitude faster than standard

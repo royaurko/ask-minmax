@@ -1,0 +1,24 @@
+Traditional Genetic Algorithms (GAs) mating schemes select individuals for
+crossover independently of their genotypic or phenotypic similarities. In
+Nature, this behaviour is known as random mating. However, non-random schemes -
+in which individuals mate according to their kinship or likeness - are more
+common in natural systems. Previous studies indicate that, when applied to GAs,
+negative assortative mating (a specific type of non-random mating, also known
+as dissortative mating) may improve their performance (on both speed and
+reliability) in a wide range of problems. Dissortative mating maintains the
+genetic diversity at a higher level during the run, and that fact is frequently
+observed as an explanation for dissortative GAs ability to escape local optima
+traps. Dynamic problems, due to their specificities, demand special care when
+tuning a GA, because diversity plays an even more crucial role than it does
+when tackling static ones. This paper investigates the behaviour of
+dissortative mating GAs, namely the recently proposed Adaptive Dissortative
+Mating GA (ADMGA), on dynamic trap functions. ADMGA selects parents according
+to their Hamming distance, via a self-adjustable threshold value. The method,
+by keeping population diversity during the run, provides an effective means to
+deal with dynamic problems. Tests conducted with deceptive and nearly deceptive
+trap functions indicate that ADMGA is able to outperform other GAs, some
+specifically designed for tracking moving extrema, on a wide range of tests,
+being particularly effective when speed of change is not very fast. When
+comparing the algorithm to a previously proposed dissortative GA, results show
+that performance is equivalent on the majority of the experiments, but ADMGA
+performs better when solving the hardest instances of the test set.

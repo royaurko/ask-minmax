@@ -1,0 +1,15 @@
+We show that the class of strongly connected graphical models with treewidth
+at most k can be properly efficiently PAC-learnt with respect to the
+Kullback-Leibler Divergence. Previous approaches to this problem, such as those
+of Chow ([1]), and Ho gen ([7]) have shown that this class is PAC-learnable by
+reducing it to a combinatorial optimization problem. However, for k > 1, this
+problem is NP-complete ([15]), and so unless P=NP, these approaches will take
+exponential amounts of time. Our approach differs significantly from these, in
+that it first attempts to find approximate conditional independencies by
+solving (polynomially many) submodular optimization problems, and then using a
+dynamic programming formulation to combine the approximate conditional
+independence information to derive a graphical model with underlying graph of
+the tree-width specified. This gives us an efficient (polynomial time in the
+number of random variables) PAC-learning algorithm which requires only
+polynomial number of samples of the true distribution, and only polynomial
+running time.

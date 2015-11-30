@@ -1,0 +1,12 @@
+We construct numerical integrators for Hamiltonian problems that may
+advantageously replace the standard Verlet time-stepper within Hybrid Monte
+Carlo and related simulations. Past attempts have often aimed at boosting the
+order of accuracy of the integrator and/or reducing the size of its error
+constants; order and error constant are relevant concepts in the limit of
+vanishing step-length. We propose an alternative methodology based on the
+performance of the integrator when sampling from Gaussian distributions with
+not necessarily small step-lengths. We construct new splitting formulae that
+require two, three or four force evaluations per time-step. Limited,
+proof-of-concept numerical experiments suggest that the new integrators may
+provide an improvement on the efficiency of the standard Verlet method,
+especially in problems with high dimensionality.

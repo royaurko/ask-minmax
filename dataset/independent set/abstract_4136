@@ -1,0 +1,26 @@
+Pamminger and Fruwirth-Schnatter (2010) considered a Bayesian approach to
+model-based clustering of categorical time series assuming a fixed number of
+clusters. But the popular methods for selecting the number of clusters, for
+example, the Bayes Information Criterion (BIC), turned out to have severe
+problems in the categorical time series context.
+  In this paper, we circumvent the difficulties of choosing the number of
+clusters by adopting the Bayesian semiparametric mixture model approach
+introduced by Bhattacharya (2008), who assume that the number of clusters is a
+random quantity, but is bounded above by a (possibly large) number of clusters.
+We adopt the perfect simulation approach of Mukhopadhyay and Bhattacharya
+(2012) for posterior simulation for completely solving the problems of
+convergence of the underlying Markov chain Monte Carlo (MCMC) approach.
+Importantly, within our main perfect simulation algorithm, there arose the
+necessity to simulate perfectly from the joint distribution of a set of
+continuous random variables with log-concave full conditional densities. We
+propose and develop a novel and efficient perfect simulation methodology for
+joint distributions with log-concave full conditionals. This perfect sampling
+methodology is of independent interest as well since in a very large and
+important class of Bayesian applications the full conditionals turn out to be
+log-concave.
+  We will consider application of our model and methodology to the Austrian
+wage mobility data, also analysed by Pamminger and Fruwirth-Schnatter (2010),
+and adopting the methods developed in Mukhopadhyay et al. (2011), Mukhopadhyay
+et al. (2012), will obtain the posterior modes of clusterings and also the
+desired highest posterior distribution credible regions of the posterior
+distribution of clusterings.

@@ -1,0 +1,21 @@
+An interprocedural analysis is precise if it is flow sensitive and fully
+context-sensitive even in the presence of recursion. Many methods of
+interprocedural analysis sacrifice precision for scalability while some are
+precise but limited to only a certain class of problems.
+  Soot currently supports interprocedural analysis of Java programs using graph
+reachability. However, this approach is restricted to IFDS/IDE problems, and is
+not suitable for general data flow frameworks such as heap reference analysis
+and points-to analysis which have non-distributive flow functions.
+  We describe a general-purpose interprocedural analysis framework for Soot
+using data flow values for context-sensitivity. This framework is not
+restricted to problems with distributive flow functions, although the lattice
+must be finite. It combines the key ideas of the tabulation method of the
+functional approach and the technique of value-based termination of call string
+construction.
+  The efficiency and precision of interprocedural analyses is heavily affected
+by the precision of the underlying call graph. This is especially important for
+object-oriented languages like Java where virtual method invocations cause an
+explosion of spurious call edges if the call graph is constructed naively. We
+have instantiated our framework with a flow and context-sensitive points-to
+analysis in Soot, which enables the construction of call graphs that are far
+more precise than those constructed by Soot's SPARK engine.

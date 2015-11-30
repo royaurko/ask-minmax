@@ -1,0 +1,14 @@
+The current Cloud infrastructure services (IaaS) market employs a
+resource-based selling model: customers rent nodes from the provider and pay
+per-node per-unit-time. This selling model places the burden upon customers to
+predict their job resource requirements and durations. Inaccurate prediction by
+customers can result in over-provisioning of resources, or under-provisioning
+and poor job performance. Thanks to improved resource virtualization and
+multi-tenant performance isolation, as well as common frameworks for batch
+jobs, such as MapReduce, Cloud providers can predict job completion times more
+accurately. We offer a new definition of QoS-levels in terms of job completion
+times and we present a new QoS-based selling mechanism for batch jobs in a
+multi-tenant OpenStack cluster. Our experiments show that the QoS-based
+solution yields up to 40% improvement over the revenue of more standard selling
+mechanisms based on a fixed per-node price across various demand and supply
+conditions in a 240-VCPU OpenStack cluster.

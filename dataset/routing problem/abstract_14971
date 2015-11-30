@@ -1,0 +1,14 @@
+We show tight bounds for both online integer multiplication and convolution
+in the cell-probe model with word size w. For the multiplication problem, one
+pair of digits, each from one of two n digit numbers that are to be multiplied,
+is given as input at step i. The online algorithm outputs a single new digit
+from the product of the numbers before step i+1. We give a Theta((d/w)*log n)
+bound on average per output digit for this problem where 2^d is the maximum
+value of a digit. In the convolution problem, we are given a fixed vector V of
+length n and we consider a stream in which numbers arrive one at a time. We
+output the inner product of V and the vector that consists of the last n
+numbers of the stream. We show a Theta((d/w)*log n) bound for the number of
+probes required per new number in the stream. All the bounds presented hold
+under randomisation and amortisation. Multiplication and convolution are
+central problems in the study of algorithms which also have the widest range of
+practical applications.

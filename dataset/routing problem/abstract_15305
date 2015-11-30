@@ -1,0 +1,21 @@
+As graphs continue to grow in size, we seek ways to effectively process such
+data at scale. The model of streaming graph processing, in which a compact
+summary is maintained as each edge insertion/deletion is observed, is an
+attractive one. However, few results are known for optimization problems over
+such dynamic graph streams.
+  In this paper, we introduce a new approach to handling graph streams, by
+instead seeking solutions for the parameterized versions of these problems
+where we are given a parameter $k$ and the objective is to decide whether there
+is a solution bounded by $k$. By combining kernelization techniques with
+randomized sketch structures, we obtain the first streaming algorithms for the
+parameterized versions of the Vertex Cover problem. We consider the following
+three models for a graph stream on $n$ nodes:
+  1. The insertion-only model where the edges can only be added.
+  2. The dynamic model where edges can be both inserted and deleted.
+  3. The \emph{promised} dynamic model where we are guaranteed that at each
+timestamp there is a solution of size at most $k$.
+  In each of these three models we are able to design parameterized streaming
+algorithms for the Vertex Cover problem. We are also able to show matching
+lower bound for the space complexity of our algorithms.
+  (Due to the arXiv limit of 1920 characters for abstract field, please see the
+abstract in the paper for detailed description of our results)

@@ -1,0 +1,25 @@
+Let $M$ be a random $m \times n$ matrix with binary entries and i.i.d. rows.
+The weight (i.e., number of ones) of a row has a specified probability
+distribution, with the row chosen uniformly at random given its weight. Let
+$N(n,m)$ denote the number of left null vectors in ${0,1}^m$ for $M$ (including
+the zero vector), where addition is mod 2. We take $n, m \to \infty$, with $m/n
+\to \alpha > 0$, while the weight distribution may vary with $n$ but converges
+weakly to a limiting distribution on ${3, 4, 5, ...}$; let $W$ denote a
+variable with this limiting distribution. Identifying $M$ with a hypergraph on
+$n$ vertices, we define the 2-core of $M$ as the terminal state of an iterative
+algorithm that deletes every row incident to a column of degree 1.
+  We identify two thresholds $\alpha^*$ and $\underline{\alpha}$, and describe
+them analytically in terms of the distribution of $W$. Threshold $\alpha^*$
+marks the infimum of values of $\alpha$ at which $n^{-1} \log{\mathbb{E}
+[N(n,m)}]$ converges to a positive limit, while $\underline{\alpha}$ marks the
+infimum of values of $\alpha$ at which there is a 2-core of non-negligible size
+compared to $n$ having more rows than non-empty columns.
+  We have $1/2 \leq \alpha^* \leq \underline{\alpha} \leq 1$, and typically
+these inequalities are strict; for example when $W = 3$ almost surely, numerics
+give $\alpha^* = 0.88949 ...$ and $\underline{\alpha} = 0.91793 ...$ (previous
+work on this model has mainly been concerned with such cases where $W$ is
+non-random). The threshold of values of $\alpha$ for which $N(n,m) \geq 2$ in
+probability lies in $[\alpha^*,\underline{\alpha}]$ and is conjectured to equal
+$\underline{\alpha}$.
+  The random row weight setting gives rise to interesting new phenomena not
+present in the non-random case that has been the focus of previous work.

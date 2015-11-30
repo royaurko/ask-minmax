@@ -1,0 +1,19 @@
+Similarity matching and join of time series data streams has gained a lot of
+relevance in today's world that has large streaming data. This process finds
+wide scale application in the areas of location tracking, sensor networks,
+object positioning and monitoring to name a few. However, as the size of the
+data stream increases, the cost involved to retain all the data in order to aid
+the process of similarity matching also increases. We develop a novel framework
+to addresses the following objectives. Firstly, Dimension reduction is
+performed in the preprocessing stage, where large stream data is segmented and
+reduced into a compact representation such that it retains all the crucial
+information by a technique called Multi-level Segment Means (MSM). This reduces
+the space complexity associated with the storage of large time-series data
+streams. Secondly, it incorporates effective Similarity Matching technique to
+analyze if the new data objects are symmetric to the existing data stream. And
+finally, the Pruning Technique that filters out the pseudo data object pairs
+and join only the relevant pairs. The computational cost for MSM is O(l*ni) and
+the cost for pruning is O(DRF*wsize*d), where DRF is the Dimension Reduction
+Factor. We have performed exhaustive experimental trials to show that the
+proposed framework is both efficient and competent in comparison with earlier
+works.

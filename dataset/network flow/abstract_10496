@@ -1,0 +1,23 @@
+Multi-channel wireless networks are increasingly being employed as
+infrastructure networks, e.g. in metro areas. Nodes in these networks
+frequently employ directional antennas to improve spatial throughput. In such
+networks, given a source and destination, it is of interest to compute an
+optimal path and channel assignment on every link in the path such that the
+path bandwidth is the same as that of the link bandwidth and such a path
+satisfies the constraint that no two consecutive links on the path are assigned
+the same channel, referred to as "Channel Discontinuity Constraint" (CDC).
+CDC-paths are also quite useful for TDMA system, where preferably every
+consecutive links along a path are assigned different time slots.
+  This paper contains several contributions. We first present an $O(N^{2})$
+distributed algorithm for discovering the shortest CDC-path between given
+source and destination. This improves the running time of the $O(N^{3})$
+centralized algorithm of Ahuja et al. for finding the minimum-weight CDC-path.
+Our second result is a generalized $t$-spanner for CDC-path; For any $\theta>0$
+we show how to construct a sub-network containing only $O(\frac{N}{\theta})$
+edges, such that that length of shortest CDC-paths between arbitrary sources
+and destinations increases by only a factor of at most
+$(1-2\sin{\tfrac{\theta}{2}})^{-2}$. We propose a novel algorithm to compute
+the spanner in a distributed manner using only $O(n\log{n})$ messages. An
+important conclusion of this scheme is in the case of directional antennas are
+used. In this case, it is enough to consider only the two closest nodes in each
+cone.

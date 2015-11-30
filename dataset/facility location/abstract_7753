@@ -1,0 +1,20 @@
+A well-known method for completing low-rank matrices based on convex
+optimization has been established by Cand{\`e}s and Recht. Although
+theoretically complete, the method may not entirely solve the low-rank matrix
+completion problem. This is because the method captures only the low-rankness
+property which gives merely a rough constraint that the data points locate on
+some low-dimensional subspace, but generally ignores the extra structures which
+specify in more detail how the data points locate on the subspace. Whenever the
+geometric distribution of the data points is not uniform, the coherence
+parameters of data might be large and, accordingly, the method might fail even
+if the latent matrix we want to recover is fairly low-rank. To better handle
+non-uniform data, in this paper we propose a method termed Low-Rank Factor
+Decomposition (LRFD), which imposes an additional restriction that the data
+points must be represented as linear combinations of the bases in a dictionary
+constructed or learnt in advance. We show that LRFD can well handle non-uniform
+data, provided that the dictionary is configured properly: We mathematically
+prove that if the dictionary itself is low-rank then LRFD is immune to the
+coherence parameters which might be large on non-uniform data. This provides an
+elementary principle for learning the dictionary in LRFD and, naturally, leads
+to a practical algorithm for advancing matrix completion. Extensive experiments
+on randomly generated matrices and motion datasets show encouraging results.

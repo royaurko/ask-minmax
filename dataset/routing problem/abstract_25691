@@ -1,0 +1,14 @@
+SYN-flooding attack uses the weakness available in TCP's three-way handshake
+process to keep it from handling legitimate requests. This attack causes the
+victim host to populate its backlog queue with forged TCP connections. In other
+words it increases Ploss (probability of loss) and Pa (buffer occupancy
+percentage of attack requests) and decreases Pr (buffer occupancy percentage of
+regular requests) in the victim host and results to decreased performance of
+the host. This paper proposes a self-managing approach, in which the host
+defends against SYN-flooding attack by dynamically tuning of its own two
+parameters, that is, m (maximum number of half-open connections) and h (hold
+time for each half-open connection). In this way, it formulates the defense
+problem to an optimization problem and then employs the learning automata (LA)
+algorithm to solve it. The simulation results show that the proposed defense
+strategy improves performance of the under attack system in terms of Ploss, Pa
+and Pr.

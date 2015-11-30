@@ -1,0 +1,18 @@
+In this note, we develop fast and deterministic dimensionality reduction
+techniques for a family of subspace approximation problems. Let $P\subset
+\mathbbm{R}^N$ be a given set of $M$ points. The techniques developed herein
+find an $O(n \log M)$-dimensional subspace that is guaranteed to always contain
+a near-best fit $n$-dimensional hyperplane $\mathcal{H}$ for $P$ with respect
+to the cumulative projection error $(\sum_{{\bf x} \in P} \| {\bf x} -
+\Pi_\mathcal{H} {\bf x} \|^p_2)^{1/p}$, for any chosen $p > 2$. The
+deterministic algorithm runs in $\tilde{O} (MN^2)$-time, and can be randomized
+to run in only $\tilde{O} (MNn)$-time while maintaining its error guarantees
+with high probability. In the case $p = \infty$ the dimensionality reduction
+techniques can be combined with efficient algorithms for computing the John
+ellipsoid of a data set in order to produce an $n$-dimensional subspace whose
+maximum $\ell_2$-distance to any point in the convex hull of $P$ is minimized.
+The resulting algorithm remains $\tilde{O} (MNn)$-time. In addition, the
+dimensionality reduction techniques developed herein can also be combined with
+other existing subspace approximation algorithms for $2 < p \leq \infty$ -
+including more accurate algorithms based on convex programming relaxations - in
+order to reduce their runtimes.

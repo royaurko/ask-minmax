@@ -1,0 +1,22 @@
+An important question in the study of constraint satisfaction problems (CSP)
+is understanding how the graph or hypergraph describing the incidence structure
+of the constraints influences the complexity of the problem. For binary CSP
+instances (i.e., where each constraint involves only two variables), the
+situation is well understood: the complexity of the problem essentially depends
+on the treewidth of the graph of the constraints. However, this is not the
+correct answer if constraints with unbounded number of variables are allowed,
+and in particular, for CSP instances arising from query evaluation problems in
+database theory. Formally, if H is a class of hypergraphs, then let CSP(H) be
+CSP restricted to instances whose hypergraph is in H. Our goal is to
+characterize those classes of hypergraphs for which CSP(H) is polynomial-time
+solvable or fixed-parameter tractable, parameterized by the number of
+variables. Note that in the applications related to database query evaluation,
+we usually assume that the number of variables is much smaller than the size of
+the instance, thus parameterization by the number of variables is a meaningful
+question. The most general known property of H that makes CSP(H)
+polynomial-time solvable is bounded fractional hypertree width. Here we
+introduce a new hypergraph measure called submodular width, and show that
+bounded submodular width of H implies that CSP(H) is fixed-parameter tractable.
+In a matching hardness result, we show that if H has unbounded submodular
+width, then CSP(H) is not fixed-parameter tractable, unless the Exponential
+Time Hypothesis fails.

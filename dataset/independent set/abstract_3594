@@ -1,0 +1,24 @@
+A sparse precision matrix can be directly translated into a sparse Gaussian
+graphical model under the assumption that the data follow a joint normal
+distribution. This neat property makes high-dimensional precision matrix
+estimation very appealing in many applications. However, in practice we often
+face nonnormal data, and variable transformation is often used to achieve
+normality. In this paper we consider the nonparanormal model that assumes that
+the variables follow a joint normal distribution after a set of unknown
+monotone transformations. The nonparanormal model is much more flexible than
+the normal model while retaining the good interpretability of the latter in
+that each zero entry in the sparse precision matrix of the nonparanormal model
+corresponds to a pair of conditionally independent variables. In this paper we
+show that the nonparanormal graphical model can be efficiently estimated by
+using a rank-based estimation scheme which does not require estimating these
+unknown transformation functions. In particular, we study the rank-based
+graphical lasso, the rank-based neighborhood Dantzig selector and the
+rank-based CLIME. We establish their theoretical properties in the setting
+where the dimension is nearly exponentially large relative to the sample size.
+It is shown that the proposed rank-based estimators work as well as their
+oracle counterparts defined with the oracle data. Furthermore, the theory
+motivates us to consider the adaptive version of the rank-based neighborhood
+Dantzig selector and the rank-based CLIME that are shown to enjoy graphical
+model selection consistency without assuming the irrepresentable condition for
+the oracle and rank-based graphical lasso. Simulated and real data are used to
+demonstrate the finite performance of the rank-based estimators.

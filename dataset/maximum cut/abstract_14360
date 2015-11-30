@@ -1,0 +1,16 @@
+This paper presents a novel coding scheme for distributed storage systems
+containing nodes with adversarial errors. The key challenge in such systems is
+the propagation of erroneous data from a single corrupted node to the rest of
+the system during a node repair process. This paper presents a concatenated
+coding scheme which is based on two types of codes: maximum rank distance (MRD)
+code as an outer code and optimal repair maximal distance separable (MDS) array
+code as an inner code. Given this, two different types of adversarial errors
+are considered: the first type considers an adversary that can replace the
+content of an affected node only once; while the second attack-type considers
+an adversary that can pollute data an unbounded number of times. This paper
+proves that the proposed coding scheme attains a suitable upper bound on
+resilience capacity for the first type of error. Further, the paper presents
+mechanisms that combine this code with subspace signatures to achieve error
+resilience for the second type of errors. Finally, the paper concludes by
+presenting a construction based on MRD codes for optimal locally repairable
+scalar codes that can tolerate adversarial errors.

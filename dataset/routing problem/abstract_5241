@@ -1,0 +1,14 @@
+One way to interpret the classical secretary problem (CSP) is to consider it
+as a special case of the following problem. We observe $n$ independent
+indicator variables $I_1,I_2,\dotsc,I_n$ sequentially and we try to stop on the
+last variable being equal to 1. If $I_k=1$ it means that the $k$-th observed
+secretary has smaller rank than all previous ones (and therefore is a better
+secretary). In the CSP $p_k=E(I_k)=1/k$ and the last $k$ with $I_k=1$ stands
+for the best candidate. The more general problem of stopping on a last "1" was
+studied by Bruss(2000). In what we will call Weber's problem the variables
+$I_k$ can take more than two values and we try to stop on the last occurence of
+\textit{one} of these values. Notice that we do not know in advance the value
+taken by the variable on which we stop.
+  We can solve this problem in some cases and provide algorithms to compute the
+optimal stopping rule. These cases carry enough generality to be applicable in
+concrete situations.

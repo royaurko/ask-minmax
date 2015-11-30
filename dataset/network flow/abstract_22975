@@ -1,0 +1,23 @@
+This research proposes a language independent intra-process framework for
+object based composition of unmodified code modules. Intuitively, the two major
+programming models, threads and processes, can be considered as extremes along
+a sharing axis. Multiple threads through a process share all global state,
+whereas instances of a process (or independent processes) share no global
+state. Weaves provide the generalized framework that allows arbitrary
+(selective) sharing of state between multiple control flows through a process.
+The Weaves framework supports multiple independent components in a single
+process, with flexible state sharing and scheduling, all of which is achieved
+without requiring any modification to existing code bases. Furthermore, the
+framework allows dynamic instantiation of code modules and control flows
+through them. In effect, weaves create intra-process modules (similar to
+objects in OOP) from code written in any language. The Weaves paradigm allows
+objects to be arbitrarily shared, it is a true superset of both processes as
+well as threads, with code sharing and fast context switching time similar to
+threads. Weaves does not require any special support from either the language
+or application code, practically any code can be weaved. Weaves also include
+support for fast automatic checkpointing and recovery with no application
+support. This paper presents the elements of the Weaves framework and results
+from our implementation that works by reverse-analyzing source-code independent
+ELF object files. The current implementation has been validated over Sweep3D, a
+benchmark for 3D discrete ordinates neutron transport [Koch et al., 1992], and
+a user-level port of the Linux 2.4 family kernel TCP/IP protocol stack.

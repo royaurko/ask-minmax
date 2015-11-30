@@ -1,0 +1,15 @@
+In this paper, we consider the problem of recovering an unknown sparse matrix
+X from the matrix sketch Y = AX B^T. The dimension of Y is less than that of X,
+and A and B are known matrices. This problem can be solved using standard
+compressive sensing (CS) theory after converting it to vector form using the
+Kronecker operation. In this case, the measurement matrix assumes a Kronecker
+product structure. However, as the matrix dimension increases the associated
+computational complexity makes its use prohibitive. We extend two algorithms,
+fast iterative shrinkage threshold algorithm (FISTA) and orthogonal matching
+pursuit (OMP) to solve this problem in matrix form without employing the
+Kronecker product. While both FISTA and OMP with matrix inputs are shown to be
+equivalent in performance to their vector counterparts with the Kronecker
+product, solving them in matrix form is shown to be computationally more
+efficient. We show that the computational gain achieved by FISTA with matrix
+inputs over its vector form is more significant compared to that achieved by
+OMP.

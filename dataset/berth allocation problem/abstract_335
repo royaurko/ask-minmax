@@ -1,0 +1,15 @@
+Data center operators face a bewildering set of choices when considering how
+to provision resources on machines with complex I/O subsystems. Modern I/O
+subsystems often have a rich mix of fast, high performing, but expensive SSDs
+sitting alongside with cheaper but relatively slower (for random accesses)
+traditional hard disk drives. The data center operators need to determine how
+to provision the I/O resources for specific workloads so as to abide by
+existing Service Level Agreements (SLAs), while minimizing the total operating
+cost (TOC) of running the workload, where the TOC includes the amortized
+hardware costs and the run time energy costs. The focus of this paper is on
+introducing this new problem of TOC-based storage allocation, cast in a
+framework that is compatible with traditional DBMS query optimization and query
+processing architecture. We also present a heuristic-based solution to this
+problem, called DOT. We have implemented DOT in PostgreSQL, and experiments
+using TPC-H and TPC-C demonstrate significant TOC reduction by DOT in various
+settings.

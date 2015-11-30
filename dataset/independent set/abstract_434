@@ -1,0 +1,21 @@
+Radio Frequency Identification (RFID) systems are gaining momentum in various
+applications of logistics, inventory, etc. A generic problem in such systems is
+to ensure that the RFID readers can reliably read a set of RFID tags, such that
+the probability of missing tags stays below an acceptable value. A tag may be
+missing (left unread) due to errors in the communication link towards the
+reader e.g. due to obstacles in the radio path. The present paper proposes
+techniques that use multiple reader sessions, during which the system of
+readers obtains a running estimate of the probability to have at least one tag
+missing. Based on such an estimate, it is decided whether an additional reader
+session is required. Two methods are proposed, they rely on the statistical
+independence of the tag reading errors across different reader sessions, which
+is a plausible assumption when e.g. each reader session is executed on
+different readers. The first method uses statistical relationships that are
+valid when the reader sessions are independent. The second method is obtained
+by modifying an existing capture-recapture estimator. The results show that,
+when the reader sessions are independent, the proposed mechanisms provide a
+good approximation to the probability of missing tags, such that the number of
+reader sessions made, meets the target specification. If the assumption of
+independence is violated, the estimators are still useful, but they should be
+corrected by a margin of additional reader sessions to ensure that the target
+probability of missing tags is met.

@@ -1,0 +1,15 @@
+Any performance analysis based on stochastic simulation is subject to the
+errors inherent in misspecifying the modeling assumptions, particularly the
+input distributions. One way to quantify such errors, especially in situations
+with little support from data, is to carry out a worst-case analysis, with the
+partial, nonparametric knowledge of the input model represented via
+optimization constraints. We design and analyze a numerical scheme for both a
+general class of simulation objectives and of uncertainty specifications, based
+on a Frank-Wolfe (FW) variant of the stochastic approximation (SA) method
+(which we call FWSA). A key step involves the construction of simulable
+unbiased gradient estimators using a suitable nonparametric analog of the
+classical likelihood ratio method. A convergence analysis for FWSA on
+non-convex problems is provided. We illustrate our approach numerically with
+robustness analyses for a canonical M/GI/1 queue under uncertain service time
+distribution specification, and for an energy storage facility acting as a
+hedge against uncertainty in local renewable generation.

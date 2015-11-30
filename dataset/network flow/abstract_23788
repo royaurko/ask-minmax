@@ -1,0 +1,15 @@
+Triangle counting is an important problem in graph mining. Clustering
+coefficients of vertices and the transitivity ratio of the graph are two
+metrics often used in complex network analysis. Furthermore, triangles have
+been used successfully in several real-world applications. However, exact
+triangle counting is an expensive computation. In this paper we present the
+analysis of a practical sampling algorithm for counting triangles in graphs.
+Our analysis yields optimal values for the sampling rate, thus resulting in
+tremendous speedups ranging from \emph{2800}x to \emph{70000}x when applied to
+real-world networks. At the same time the accuracy of the estimation is
+excellent.
+  Our contributions include experimentation on graphs with several millions of
+nodes and edges, where we show how practical our proposed method is. Finally,
+our algorithm's implementation is a part of the \pegasus library (Code and
+datasets are available at (http://www.cs.cmu.edu/~ctsourak/).) a Peta-Graph
+Mining library implemented in Hadoop, the open source version of Mapreduce.

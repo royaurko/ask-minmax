@@ -1,0 +1,10 @@
+This work proposes a causal and recursive algorithm for solving the "robust"
+principal components' analysis (PCA) problem. We primarily focus on robustness
+to correlated outliers. In recent work, we proposed a new way to look at this
+problem and showed how a key part of its solution strategy involves solving a
+noisy compressive sensing(CS) problem. However, if the support size of the
+outliers becomes too large, for a given dimension of the current PC space, then
+the number of "measurements" available for CS may become too small. In this
+work, we show how to address this issue by utilizing the correlation of the
+outliers to predict their support at the current time; and using this as
+"partial support knowledge" for solving Modified-CS instead of CS.

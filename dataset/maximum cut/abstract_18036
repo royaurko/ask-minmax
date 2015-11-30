@@ -1,0 +1,23 @@
+Energy consumption of the software running on a device has become
+increasingly important as a growing number of devices rely on batteries or
+other limited sources of power. Of particular interest is constructing a
+bounded measure of the energy consumption - the maximum energy a program could
+consume for any input given to it.
+  We explore the effect of different data on the energy consumption of
+individual instructions, instruction sequences and full programs. The whole
+program energy consumption of two benchmarks is analysed over random and
+hand-crafted data, and maximized with genetic algorithms for two embedded
+processors. We find that the worst case can be predicted from the distribution
+created by the random data, however, hand-crafted data can often achieve lower
+energy consumption.
+  A model is constructed that allows the worst case energy for a sequence of
+instructions to be predicted. This is based on the observation that the
+transition between instructions is important and thus is not a single energy
+cost - it is a distribution dependent on the input and output values of the two
+consecutive instructions. We characterise the transition distributions for
+several instructions in the AVR instruction set, and show that this gives a
+useful upper bound on the energy consumption. We explore the effect that the
+transfer function of the instruction has on the data, and give an example which
+leads to a bimodal energy distribution. Finally, we conclude that a
+probabilistic approach is appropriate for estimating the energy consumption of
+programs.

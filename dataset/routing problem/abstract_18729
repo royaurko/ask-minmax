@@ -1,0 +1,19 @@
+We study clustering on graphs with multiple edge types. Our main motivation
+is that similarities between objects can be measured in many different metrics.
+For instance similarity between two papers can be based on common contributors,
+where they are published, keyword similarity, citations, etc. As such, graphs
+with multiple edges is a more accurate model to describe similarities between
+objects. Each edge/metric provides only partial information about the data;
+recovering full information requires aggregation of all the similarity metrics.
+Clustering becomes much more challenging in this context, since in addition to
+the difficulties of the traditional clustering problem, we have to deal with a
+space of clusterings. We generalize the concept of clustering in single-edge
+graphs to multi-edged graphs and investigate problems such as: Can we find a
+clustering that remains good, even if we change the relative weights of
+metrics? How can we describe the space of clusterings efficiently? Can we find
+unexpected clusterings (a good clustering that is distant from all given
+clusterings)? If given the ground-truth clustering, can we recover how the
+weights for edge types were aggregated? %In this paper, we discuss these
+problems and the underlying algorithmic challenges and propose some solutions.
+We also present two case studies: one based on papers on Arxiv and one based on
+CIA World Factbook.

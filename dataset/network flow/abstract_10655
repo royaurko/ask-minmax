@@ -1,0 +1,19 @@
+Because Online Social Networks (OSNs) have become increasingly important in
+the last decade, they have motivated a great deal of research on social network
+analysis (SNA). Currently, SNA algorithms are evaluated on real datasets
+obtained from large-scale OSNs, which are usually sampled by
+Breadth-First-Search (BFS), Random Walk (RW), or some variations of the latter.
+However, none of the released datasets provides any statistical guarantees on
+the difference between the crawled datasets and the ground truth. Moreover, all
+existing sampling algorithms only focus on crawling a single OSN, but each OSN
+is actually a sampling of a global offline social network. Hence, even if the
+whole dataset from a single OSN is crawled, the results may still be skewed and
+may not fully reflect the properties of the global offline social network. To
+address the above issues, we have made the first attempt to explore the joint
+sampling of multiple OSNs and propose an approach called Quality-guaranteed
+Multi-network Sampler (QMSampler) that can crawl and jointly sample multiple
+OSNs. QMSampler provides a statistical guarantee on the difference between the
+crawled real dataset and the ground truth (the perfect integration of all
+OSNs). Our experimental results demonstrate that the proposed approach
+generates a much smaller bias than any existing method. QMSampler has also been
+released as a free download.

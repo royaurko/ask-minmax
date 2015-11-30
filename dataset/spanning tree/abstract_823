@@ -1,0 +1,26 @@
+We define the following parameter of connected graphs. For a given graph $G$
+we place one agent in each vertex of $G$. Every pair of agents sharing a common
+edge is declared to be acquainted. In each round we choose some matching of $G$
+(not necessarily a maximal matching), and for each edge in the matching the
+agents on this edge swap places. After the swap, again, every pair of agents
+sharing a common edge become acquainted, and the process continues. We define
+the \emph{acquaintance time} of a graph $G$, denoted by $AC(G)$, to be the
+minimal number of rounds required until every two agents are acquainted.
+  We first study the acquaintance time for some natural families of graphs
+including the path, expanders, the binary tree, and the complete bipartite
+graph. We also show that for all positive integers $n$ and $k \leq n^{1.5}$
+there exists an $n$-vertex graph $G$ such that $AC(G) =\Theta(k)$. We also
+prove that for all $n$-vertex connected graphs $G$ we have $AC(G) =
+O\left(\frac{n^2}{\log(n)/\log\log(n)}\right)$, improving the $O(n^2)$ trivial
+upper bound achieved by sequentially letting each agent perform depth-first
+search along a spanning tree of $G$.
+  Studying the computational complexity of this problem, we prove that for any
+constant $t \geq 1$ the problem of deciding that a given graph $G$ has $AC(G)
+\leq t$ or $AC(G) \geq 2t$ is $\mathcal{NP}$-complete. That is, $AC(G)$ is
+$\mathcal{NP}$-hard to approximate within multiplicative factor of 2, as well
+as within any additive constant factor.
+  On the algorithmic side, we give a deterministic algorithm that given a graph
+$G$ with $AC(G)=1$ finds a ${\lceil n/c\rceil}$-rounds strategy for
+acquaintance in time $n^{c+O(1)}$. We also design a randomized polynomial time
+algorithm that given a graph $G$ with $AC(G)=1$ finds with high probability an
+$O(\log(n))$-rounds strategy for acquaintance.

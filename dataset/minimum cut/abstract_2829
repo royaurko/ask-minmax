@@ -1,0 +1,22 @@
+Real world datasets are sparse, dirty and contain hundreds of items. In such
+situations, discovering interesting rules (results) using traditional frequent
+itemset mining approach by specifying a user defined input support threshold is
+not appropriate. Since without any domain knowledge, setting support threshold
+small or large can output nothing or a large number of redundant uninteresting
+results. Recently a novel approach of mining only N-most/Top-K interesting
+frequent itemsets has been proposed, which discovers the top N interesting
+results without specifying any user defined support threshold. However, mining
+interesting frequent itemsets without minimum support threshold are more costly
+in terms of itemset search space exploration and processing cost. Thereby, the
+efficiency of their mining highly depends upon three main factors (1) Database
+representation approach used for itemset frequency counting, (2) Projection of
+relevant transactions to lower level nodes of search space and (3) Algorithm
+implementation technique. Therefore, to improve the efficiency of mining
+process, in this paper we present two novel algorithms called (N-MostMiner and
+Top-K-Miner) using the bit-vector representation approach which is very
+efficient in terms of itemset frequency counting and transactions projection.
+In addition to this, several efficient implementation techniques of N-MostMiner
+and Top-K-Miner are also present which we experienced in our implementation.
+Our experimental results on benchmark datasets suggest that the NMostMiner and
+Top-K-Miner are very efficient in terms of processing time as compared to
+current best algorithms BOMO and TFP.

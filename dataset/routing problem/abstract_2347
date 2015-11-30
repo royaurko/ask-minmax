@@ -1,0 +1,17 @@
+Multipath transport protocols like MPTCP transfer data across multiple routes
+in parallel and deliver it in order at the receiver. When the delay on one or
+more of the paths is variable, as is commonly the case, out of order arrivals
+are frequent and head of line blocking leads to high latency. This is
+exacerbated when packet loss, which is also common with wireless links, is
+tackled using ARQ. This paper introduces Stochastic Earliest Delivery Path
+First (S-EDPF), a resilient low delay packet scheduler for multipath transport
+protocols. S-EDPF takes explicit account of the stochastic nature of paths and
+uses this to minimise in-order delivery delay. S-EDPF also takes account of
+FEC, jointly scheduling transmission of information and coded packets and in
+this way allows lossy links to reduce delay and improve resiliency, rather than
+degrading performance as usually occurs with existing multipath systems. We
+implement S-EDPF as a multi-platform application that does not require
+administration privileges nor modifications to the operating system and has
+negligible impact on energy consumption. We present a thorough experimental
+evaluation in both controlled environments and into the wild, revealing
+dramatic gains in delay performance compared to existing approaches.

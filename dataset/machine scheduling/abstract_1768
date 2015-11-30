@@ -1,0 +1,17 @@
+We present the Glasgow Parallel Reduction Machine (GPRM), a novel, flexible
+framework for parallel task-composition based many-core programming. We allow
+the programmer to structure programs into task code, written as C++ classes,
+and communication code, written in a restricted subset of C++ with functional
+semantics and parallel evaluation. In this paper we discuss the GPRM, the
+virtual machine framework that enables the parallel task composition approach.
+We focus the discussion on GPIR, the functional language used as the
+intermediate representation of the bytecode running on the GPRM. Using examples
+in this language we show the flexibility and power of our task composition
+framework. We demonstrate the potential using an implementation of a merge sort
+algorithm on a 64-core Tilera processor, as well as on a conventional Intel
+quad-core processor and an AMD 48-core processor system. We also compare our
+framework with OpenMP tasks in a parallel pointer chasing algorithm running on
+the Tilera processor. Our results show that the GPRM programs outperform the
+corresponding OpenMP codes on all test platforms, and can greatly facilitate
+writing of parallel programs, in particular non-data parallel algorithms such
+as reductions.

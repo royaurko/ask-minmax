@@ -1,0 +1,17 @@
+This paper is concerned with the problem of low rank plus sparse matrix
+decomposition for big data applications. Most of the existing decomposition
+algorithms are not applicable in high dimensional settings for two main
+reasons. First, they need the whole data to extract the low-rank/sparse
+components; second, they are based on an optimization problem whose
+dimensionality is equal to the dimension of the given data. In this paper, we
+present a randomized decomposition algorithm which exploits the low dimensional
+geometry of the low rank matrix to reduce the complexity. The low rank plus
+sparse matrix decomposition problem is reformulated as a columns-rows subspace
+learning problem. It is shown that when the columns/rows subspace of the low
+rank matrix is incoherent with the standard basis, the columns/rows subspace
+can be learned from a small random subset of the columns/rows of the given data
+matrix. Thus, the high dimensional decomposition problem is converted to a
+subspace learning problem (which is a low dimensional optimization problem) and
+it uses a small random subset of the data rather than the whole big data
+matrix. We derive sufficient conditions, which are no more stringent than those
+for existing methods, to ensure exact decomposition with high probability.

@@ -1,0 +1,22 @@
+For many practical applications of ASP, for instance data integration or
+planning, query answering is important, and therefore query optimization
+techniques for ASP are of great interest. Magic Sets are one of these
+techniques, originally defined for Datalog queries (ASP without disjunction and
+negation). Dynamic Magic Sets (DMS) are an extension of this technique, which
+has been proved to be sound and complete for query answering over ASP programs
+with stratified negation.
+  A distinguishing feature of DMS is that the optimization can be exploited
+also during the nondeterministic phase of ASP engines. In particular, after
+some assumptions have been made during the computation, parts of the program
+may become irrelevant to a query under these assumptions. This allows for
+dynamic pruning of the search space, which may result in exponential
+performance gains.
+  In this paper, the correctness of DMS is formally established and proved for
+brave and cautious reasoning over the class of super-consistent ASP programs
+(ASP^{sc} programs). ASP^{sc} programs guarantee consistency (i.e., have answer
+sets) when an arbitrary set of facts is added to them. This result generalizes
+the applicability of DMS, since the class of ASP^{sc} programs is richer than
+ASP programs with stratified negation, and in particular includes all
+odd-cycle-free programs. DMS has been implemented as an extension of DLV, and
+the effectiveness of DMS for ASP^{sc} programs is empirically confirmed by
+experimental results with this system.

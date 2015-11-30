@@ -1,0 +1,15 @@
+This paper summarizes the design of a programmable processor with transport
+triggered architecture (TTA) for decoding LDPC and turbo codes. The processor
+architecture is designed in such a manner that it can be programmed for LDPC or
+turbo decoding for the purpose of internetworking and roaming between different
+networks. The standard trellis based maximum a posteriori (MAP) algorithm is
+used for turbo decoding. Unlike most other implementations, a supercode based
+sum-product algorithm is used for the check node message computation for LDPC
+decoding. This approach ensures the highest hardware utilization of the
+processor architecture for the two different algorithms. Up to our knowledge,
+this is the first attempt to design a TTA processor for the LDPC decoder. The
+processor is programmed with a high level language to meet the time-to-market
+requirement. The optimization techniques and the usage of the function units
+for both algorithms are explained in detail. The processor achieves 22.64 Mbps
+throughput for turbo decoding with a single iteration and 10.12 Mbps throughput
+for LDPC decoding with five iterations for a clock frequency of 200 MHz.

@@ -1,0 +1,15 @@
+This paper studies the problem of having mobile robots in a multi-robot
+system maintain an estimate of the relative position and relative orientation
+of near-by robots in the environment. This problem is studied in the context of
+large swarms of simple robots which are capable of measuring only the distance
+to near-by robots.
+  We present two distributed localization algorithms with different trade-offs
+between their computational complexity and their coordination requirements. The
+first algorithm does not require the robots to coordinate their motion. It
+relies on a non-linear least squares based strategy to allow robots to compute
+the relative pose of near-by robots. The second algorithm borrows tools from
+distributed computing theory to coordinate which robots must remain stationary
+and which robots are allowed to move. This coordination allows the robots to
+use standard trilateration techniques to compute the relative pose of near-by
+robots. Both algorithms are analyzed theoretically and validated through
+simulations.

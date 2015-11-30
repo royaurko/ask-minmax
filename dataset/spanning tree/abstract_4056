@@ -1,0 +1,19 @@
+Computing problems that handle large amounts of data necessitate the use of
+lossless data compression for efficient storage and transmission. We present a
+novel lossless universal data compression algorithm that uses parallel
+computational units to increase the throughput. The length-$N$ input sequence
+is partitioned into $B$ blocks. Processing each block independently of the
+other blocks can accelerate the computation by a factor of $B$, but degrades
+the compression quality. Instead, our approach is to first estimate the minimum
+description length (MDL) context tree source underlying the entire input, and
+then encode each of the $B$ blocks in parallel based on the MDL source. With
+this two-pass approach, the compression loss incurred by using more parallel
+units is insignificant. Our algorithm is work-efficient, i.e., its
+computational complexity is $O(N/B)$. Its redundancy is approximately
+$B\log(N/B)$ bits above Rissanen's lower bound on universal compression
+performance, with respect to any context tree source whose maximal depth is at
+most $\log(N/B)$. We improve the compression by using different quantizers for
+states of the context tree based on the number of symbols corresponding to
+those states. Numerical results from a prototype implementation suggest that
+our algorithm offers a better trade-off between compression and throughput than
+competing universal data compression algorithms.

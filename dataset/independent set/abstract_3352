@@ -1,0 +1,13 @@
+The risk of reinsurance portfolios covering globally occurring natural
+catastrophes, such as earthquakes and hurricanes, is quantified by employing
+simulations. These simulations are computationally intensive and require large
+amounts of data to be processed. The use of many-core hardware accelerators,
+such as the Intel Xeon Phi and the NVIDIA Graphics Processing Unit (GPU), are
+desirable for achieving high-performance risk analytics. In this paper, we set
+out to investigate how accelerators can be employed in risk analytics, focusing
+on developing parallel algorithms for Aggregate Risk Analysis, a simulation
+which computes the Probable Maximum Loss of a portfolio taking both primary and
+secondary uncertainties into account. The key result is that both hardware
+accelerators are useful in different contexts; without taking data transfer
+times into account the Phi had lowest execution times when used independently
+and the GPU along with a host in a hybrid platform yielded best performance.

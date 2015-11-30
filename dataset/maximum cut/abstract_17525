@@ -1,0 +1,20 @@
+We study a model of collective real-time decision-making (or learning) in a
+social network operating in an uncertain environment, for which no a priori
+probabilistic model is available. Instead, the environment's impact on the
+agents in the network is seen through a sequence of cost functions, revealed to
+the agents in a causal manner only after all the relevant actions are taken.
+There are two kinds of costs: individual costs incurred by each agent and
+local-interaction costs incurred by each agent and its neighbors in the social
+network. Moreover, agents have inertia: each agent has a default mixed strategy
+that stays fixed regardless of the state of the environment, and must expend
+effort to deviate from this strategy in order to respond to cost signals coming
+from the environment. We construct a decentralized strategy, wherein each agent
+selects its action based only on the costs directly affecting it and on the
+decisions made by its neighbors in the network. In this setting, we quantify
+social learning in terms of regret, which is given by the difference between
+the realized network performance over a given time horizon and the best
+performance that could have been achieved in hindsight by a fictitious
+centralized entity with full knowledge of the environment's evolution. We show
+that our strategy achieves the regret that scales polylogarithmically with the
+time horizon and polynomially with the number of agents and the maximum number
+of neighbors of any agent in the social network.

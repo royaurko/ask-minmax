@@ -1,0 +1,10 @@
+We describe an extension to the TLA+ specification language with constructs
+for writing proofs and a proof environment, called the Proof Manager (PM), to
+checks those proofs. The language and the PM support the incremental
+development and checking of hierarchically structured proofs. The PM translates
+a proof into a set of independent proof obligations and calls upon a collection
+of back-end provers to verify them. Different provers can be used to verify
+different obligations. The currently supported back-ends are the tableau prover
+Zenon and Isabelle/TLA+, an axiomatisation of TLA+ in Isabelle/Pure. The proof
+obligations for a complete TLA+ proof can also be used to certify the theorem
+in Isabelle/TLA+.

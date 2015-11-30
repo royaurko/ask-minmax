@@ -1,0 +1,18 @@
+In this paper we study how the use of a more continuous set of basis
+functions affects the cost of solving systems of linear equations resulting
+from a discretized Galerkin weak form. Specifically, we compare performance of
+linear solvers when discretizing using $C^0$ B-splines, which span traditional
+finite element spaces, and $C^{p-1}$ B-splines, which represent maximum
+continuity. We provide theoretical estimates for the increase in cost of the
+matrix-vector product as well as for the construction and application of
+black-box preconditioners. We accompany these estimates with numerical results
+and study their sensitivity to various grid parameters such as element size $h$
+and polynomial order of approximation $p$. Finally, we present timing results
+for a range of preconditioning options for the Laplace problem. We conclude
+that the matrix-vector product operation is at most $\slfrac{33p^2}{8}$ times
+more expensive for the more continuous space, although for moderately low $p$,
+this number is significantly reduced. Moreover, if static condensation is not
+employed, this number further reduces to at most a value of 8, even for high
+$p$. Preconditioning options can be up to $p^3$ times more expensive to setup,
+although this difference significantly decreases for some popular
+preconditioners such as Incomplete LU factorization.

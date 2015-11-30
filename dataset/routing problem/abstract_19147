@@ -1,0 +1,21 @@
+This paper considers the matrix completion problem. We show that it is not
+necessary to assume joint incoherence, which is a standard but unintuitive and
+restrictive condition that is imposed by previous studies. This leads to a
+sample complexity bound that is order-wise optimal with respect to the
+incoherence parameter (as well as to the rank $r$ and the matrix dimension $n$
+up to a log factor). As a consequence, we improve the sample complexity of
+recovering a semidefinite matrix from $O(nr^{2}\log^{2}n)$ to $O(nr\log^{2}n)$,
+and the highest allowable rank from $\Theta(\sqrt{n}/\log n)$ to
+$\Theta(n/\log^{2}n)$. The key step in proof is to obtain new bounds on the
+$\ell_{\infty,2}$-norm, defined as the maximum of the row and column norms of a
+matrix. To illustrate the applicability of our techniques, we discuss
+extensions to SVD projection, structured matrix completion and semi-supervised
+clustering, for which we provide order-wise improvements over existing results.
+Finally, we turn to the closely-related problem of low-rank-plus-sparse matrix
+decomposition. We show that the joint incoherence condition is unavoidable here
+for polynomial-time algorithms conditioned on the Planted Clique conjecture.
+This means it is intractable in general to separate a rank-$\omega(\sqrt{n})$
+positive semidefinite matrix and a sparse matrix. Interestingly, our results
+show that the standard and joint incoherence conditions are associated
+respectively with the information (statistical) and computational aspects of
+the matrix decomposition problem.

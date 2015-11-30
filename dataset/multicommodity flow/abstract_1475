@@ -1,0 +1,21 @@
+Modeling blood flow in larger vessels using lattice-Boltzmann methods comes
+with a challenging set of constraints: a complex geometry with walls and
+inlet/outlets at arbitrary orientations with respect to the lattice,
+intermediate Reynolds number, and unsteady flow. Simple bounce-back is one of
+the most commonly used, simplest, and most computationally efficient boundary
+conditions, but many others have been proposed. We implement three other
+methods applicable to complex geometries (Guo, Zheng and Shi, Phys Fluids
+(2002); Bouzdi, Firdaouss and Lallemand, Phys. Fluids (2001); Junk and Yang
+Phys. Rev. E (2005)) in our open-source application \HemeLB{}. We use these to
+simulate Poiseuille and Womersley flows in a cylindrical pipe with an arbitrary
+orientation at physiologically relevant Reynolds (1--300) and Womersley (4--12)
+numbers and steady flow in a curved pipe at relevant Dean number (100--200) and
+compare the accuracy to analytical solutions. We find that both the
+Bouzidi-Firdaouss-Lallemand and Guo-Zheng-Shi methods give second-order
+convergence in space while simple bounce-back degrades to first order. The BFL
+method appears to perform better than GZS in unsteady flows and is
+significantly less computationally expensive. The Junk-Yang method shows poor
+stability at larger Reynolds number and so cannot be recommended here. The
+choice of collision operator (lattice Bhatnagar-Gross-Krook vs.\ multiple
+relaxation time) and velocity set (D3Q15 vs.\ D3Q19 vs.\ D3Q27) does not
+significantly affect the accuracy in the problems studied.

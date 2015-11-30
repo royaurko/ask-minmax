@@ -1,0 +1,20 @@
+The Field Estimator for Arbitrary Spaces (FiEstAS) computes the continuous
+probability density field underlying a given discrete data sample in multiple,
+non-commensurate dimensions. The algorithm works by constructing a
+metric-independent tessellation of the data space based on a recursive binary
+splitting. Individual, data-driven bandwidths are assigned to each point,
+scaled so that a constant "mass" M0 is enclosed. Kernel density estimation may
+then be performed for different kernel shapes, and a combination of balloon and
+sample point estimators is proposed as a compromise between resolution and
+variance. A bias correction is evaluated for the particular (yet common) case
+where the density is computed exactly at the locations of the data points
+rather than at an uncorrelated set of locations. By default, the algorithm
+combines a top-hat kernel with M0=2.0 with the balloon estimator and applies
+the corresponding bias correction. These settings are shown to yield reasonable
+results for a simple test case, a two-dimensional ring, that illustrates the
+performance for oblique distributions, as well as for a six-dimensional
+Hernquist sphere, a fairly realistic model of the dynamical structure of
+stellar bulges in galaxies and dark matter haloes in cosmological N-body
+simulations. Results for different parameter settings are discussed in order to
+provide a guideline to select an optimal configuration in other cases. Source
+code is available upon request.

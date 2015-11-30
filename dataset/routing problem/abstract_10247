@@ -1,0 +1,14 @@
+We present an algebraic method for constructing a highly effective coarse
+grid correction to accelerate domain decomposition. The coarse problem is
+constructed from the original matrix and a small set of input vectors that span
+a low-degree polynomial space, but no further knowledge of meshes or continuous
+functionals is used. We construct a coarse basis by partitioning the problem
+into subdomains and using the restriction of each input vector to each
+subdomain as its own basis function. This basis resembles a Discontinuous
+Galerkin basis on subdomain-sized elements. Constructing the coarse problem by
+Galerkin projection, we prove a high-order convergent error bound for the
+coarse solutions. Used in a two-level symmetric multiplicative overlapping
+Schwarz preconditioner, the resulting conjugate gradient solver shows optimal
+scaling. Convergence requires a constant number of iterations, independent of
+fine problem size, on a range of scalar and vector-valued second-order and
+fourth-order PDEs.

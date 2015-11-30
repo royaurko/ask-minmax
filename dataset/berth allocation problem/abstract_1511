@@ -1,0 +1,17 @@
+Testing is a vital part of the software development process. Test Case
+Generation (TCG) is the process of automatically generating a collection of
+test cases which are applied to a system under test. White-box TCG is usually
+performed by means of symbolic execution, i.e., instead of executing the
+program on normal values (e.g., numbers), the program is executed on symbolic
+values representing arbitrary values. When dealing with an object-oriented (OO)
+imperative language, symbolic execution becomes challenging as, among other
+things, it must be able to backtrack, complex heap-allocated data structures
+should be created during the TCG process and features like inheritance, virtual
+invocations and exceptions have to be taken into account. Due to its inherent
+symbolic execution mechanism, we pursue in this paper that Constraint Logic
+Programming (CLP) has a promising unexploited application field in TCG. We will
+support our claim by developing a fully CLP-based framework to TCG of an OO
+imperative language, and by assessing it on a corresponding implementation on a
+set of challenging Java programs. A unique characteristic of our approach is
+that it handles all language features using only CLP and without the need of
+developing specific constraint operators (e.g., to model the heap).

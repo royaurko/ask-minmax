@@ -1,0 +1,24 @@
+This paper explores feedback systems using incremental redundancy (IR) with
+noiseless transmitter confirmation (NTC). For IR-NTC systems based on {\em
+finite-length} codes (with blocklength $N$) and decoding attempts only at {\em
+certain specified decoding times}, this paper presents the asymptotic expansion
+achieved by random coding, provides rate-compatible sphere-packing (RCSP)
+performance approximations, and presents simulation results of tail-biting
+convolutional codes.
+  The information-theoretic analysis shows that values of $N$ relatively close
+to the expected latency yield the same random-coding achievability expansion as
+with $N = \infty$. However, the penalty introduced in the expansion by limiting
+decoding times is linear in the interval between decoding times. For binary
+symmetric channels, the RCSP approximation provides an efficiently-computed
+approximation of performance that shows excellent agreement with a family of
+rate-compatible, tail-biting convolutional codes in the short-latency regime.
+For the additive white Gaussian noise channel, bounded-distance decoding
+simplifies the computation of the marginal RCSP approximation and produces
+similar results as analysis based on maximum-likelihood decoding for latencies
+greater than 200. The efficiency of the marginal RCSP approximation facilitates
+optimization of the lengths of incremental transmissions when the number of
+incremental transmissions is constrained to be small or the length of the
+incremental transmissions is constrained to be uniform after the first
+transmission. Finally, an RCSP-based decoding error trajectory is introduced
+that provides target error rates for the design of rate-compatible code
+families for use in feedback communication systems.

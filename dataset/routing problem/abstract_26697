@@ -1,0 +1,13 @@
+The problem of model-checking hybrid systems is a long-time challenge in the
+scientific community. Most of the existing approaches and tools are either
+limited on the properties that they can verify, or restricted to simplified
+classes of systems. To overcome those limitations, a temporal logic called
+HyLTL has been recently proposed. The model checking problem for this logic has
+been solved by translating the formula into an equivalent hybrid automaton,
+that can be analized using existing tools. The original construction employs a
+declarative procedure that generates exponentially many states upfront, and can
+be very inefficient when complex formulas are involved. In this paper we solve
+a technical issue in the construction that was not considered in previous
+works, and propose a new algorithm to translate HyLTL into hybrid automata,
+that exploits optimized techniques coming from the discrete LTL community to
+build smaller automata.

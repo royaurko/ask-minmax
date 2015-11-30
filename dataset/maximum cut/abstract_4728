@@ -1,0 +1,18 @@
+Motivation: Algorithms for differential analysis of microarray data are vital
+to modern biomedical research. Their accuracy strongly depends on effective
+treatment of inter-gene correlation. Correlation is ordinarily accounted for in
+terms of its effect on significance cut-offs. In this paper it is shown that
+correlation can, in fact, be exploited {to share information across tests},
+which, in turn, can increase statistical power.
+  Results: Vastly and demonstrably improved differential analysis approaches
+are the result of combining identifiability (the fact that in most microarray
+data sets, a large proportion of genes can be identified a priori as
+non-differential) with optimization criteria that incorporate correlation. As a
+special case, we develop a method which builds upon the widely used two-sample
+t-statistic based approach and uses the Mahalanobis distance as an optimality
+criterion. Results on the prostate cancer data of Singh et al. (2002) suggest
+that the proposed method outperforms all published approaches in terms of
+statistical power.
+  Availability: The proposed algorithm is implemented in MATLAB and in R. The
+software, called Tellipsoid, and relevant data sets are available at
+http://www.egr.msu.edu/~desaikey

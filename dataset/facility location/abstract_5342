@@ -1,0 +1,24 @@
+The AKARI All-Sky Catalogues are an important infrared astronomical database
+for next-generation astronomy that take over the IRAS catalog. We have
+developed an online service, AKARI Catalogue Archive Server (AKARI-CAS), for
+astronomers. The service includes useful and attractive search tools and visual
+tools.
+  One of the new features of AKARI-CAS is cached SIMBAD/NED entries, which can
+match AKARI catalogs with other catalogs stored in SIMBAD or NED. To allow
+advanced queries to the databases, direct input of SQL is also supported. In
+those queries, fast dynamic cross-identification between registered catalogs is
+a remarkable feature. In addition, multiwavelength quick-look images are
+displayed in the visualization tools, which will increase the value of the
+service.
+  In the construction of our service, we considered a wide variety of
+astronomers' requirements. As a result of our discussion, we concluded that
+supporting users' SQL submissions is the best solution for the requirements.
+Therefore, we implemented an RDBMS layer so that it covered important
+facilities including the whole processing of tables. We found that PostgreSQL
+is the best open-source RDBMS products for such purpose, and we wrote codes for
+both simple and advanced searches into the SQL stored functions. To implement
+such stored functions for fast radial search and cross-identification with
+minimum cost, we applied a simple technique that is not based on dividing
+celestial sphere such as HTM or HEALPix. In contrast, the Web application layer
+became compact, and was written in simple procedural PHP codes. In total, our
+system realizes cost-effective maintenance and enhancements.

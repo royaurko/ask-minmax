@@ -1,0 +1,13 @@
+We introduce a novel algorithm for solving learning problems where both the
+loss function and the regularizer are non-convex but belong to the class of
+difference of convex (DC) functions. Our contribution is a new general purpose
+proximal Newton algorithm that is able to deal with such a situation. The
+algorithm consists in obtaining a descent direction from an approximation of
+the loss function and then in performing a line search to ensure sufficient
+descent. A theoretical analysis is provided showing that the iterates of the
+proposed algorithm {admit} as limit points stationary points of the DC
+objective function. Numerical experiments show that our approach is more
+efficient than current state of the art for a problem with a convex loss
+functions and non-convex regularizer. We have also illustrated the benefit of
+our algorithm in high-dimensional transductive learning problem where both loss
+function and regularizers are non-convex.

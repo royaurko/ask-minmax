@@ -1,0 +1,15 @@
+We address the problem of securing distributed storage systems against
+passive eavesdroppers that can observe a limited number of storage nodes. An
+important aspect of these systems is node failures over time, which demand a
+repair mechanism aimed at maintaining a targeted high level of system
+reliability. If an eavesdropper observes a node that is added to the system to
+replace a failed node, it will have access to all the data downloaded during
+repair, which can potentially compromise the entire information in the system.
+We are interested in determining the secrecy capacity of distributed storage
+systems under repair dynamics, i.e., the maximum amount of data that can be
+securely stored and made available to a legitimate user without revealing any
+information to any eavesdropper. We derive a general upper bound on the secrecy
+capacity and show that this bound is tight for the bandwidth-limited regime
+which is of importance in scenarios such as peer-to-peer distributed storage
+systems. We also provide a simple explicit code construction that achieves the
+capacity for this regime.

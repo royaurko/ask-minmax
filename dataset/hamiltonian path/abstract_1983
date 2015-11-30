@@ -1,0 +1,14 @@
+It is proven that the connected pathwidth of any graph $G$ is at most
+$2\cdot\pw(G)+1$, where $\pw(G)$ is the pathwidth of $G$. The method is
+constructive, i.e. it yields an efficient algorithm that for a given path
+decomposition of width $k$ computes a connected path decomposition of width at
+most $2k+1$. The running time of the algorithm is $O(dk^2)$, where $d$ is the
+number of `bags' in the input path decomposition.
+  The motivation for studying connected path decompositions comes from the
+connection between the pathwidth and the search number of a graph. One of the
+advantages of the above bound for connected pathwidth is an inequality
+$\csn(G)\leq 2\sn(G)+3$, where $\csn(G)$ and $\sn(G)$ are the connected search
+number and the search number of $G$. Moreover, the algorithm presented in this
+work can be used to convert a given search strategy using $k$ searchers into a
+(monotone) connected one using $2k+3$ searchers and starting at an arbitrary
+homebase.

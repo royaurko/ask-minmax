@@ -1,0 +1,18 @@
+We consider the following problem of decentralized statistical inference:
+given i.i.d. samples from an unknown distribution, estimate an arbitrary
+quantile subject to limits on the number of bits exchanged. We analyze a
+standard fusion-based architecture, in which each of $m$ sensors transmits a
+single bit to the fusion center, which in turn is permitted to send some number
+$k$ bits of feedback. Supposing that each of $\nodenum$ sensors receives $n$
+observations, the optimal centralized protocol yields mean-squared error
+decaying as $\order(1/[n m])$. We develop and analyze the performance of
+various decentralized protocols in comparison to this centralized
+gold-standard. First, we describe a decentralized protocol based on $k =
+\log(\nodenum)$ bits of feedback that is strongly consistent, and achieves the
+same asymptotic MSE as the centralized optimum. Second, we describe and analyze
+a decentralized protocol based on only a single bit ($k=1$) of feedback. For
+step sizes independent of $m$, it achieves an asymptotic MSE of order
+$\order[1/(n \sqrt{m})]$, whereas for step sizes decaying as $1/\sqrt{m}$, it
+achieves the same $\order(1/[n m])$ decay in MSE as the centralized optimum.
+Our theoretical results are complemented by simulations, illustrating the
+tradeoffs between these different protocols.

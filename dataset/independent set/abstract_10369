@@ -1,0 +1,10 @@
+This paper describes a method for compiling a constraint-based grammar into a
+potentially more efficient form for processing. This method takes dependent
+disjunctions within a constraint formula and factors them into non-interacting
+groups whenever possible by determining their independence. When a group of
+dependent disjunctions is split into smaller groups, an exponential amount of
+redundant information is reduced. At runtime, this means that an exponential
+amount of processing can be saved as well. Since the performance of an
+algorithm for processing constraints with dependent disjunctions is highly
+determined by its input, the transformation presented in this paper should
+prove beneficial for all such algorithms.

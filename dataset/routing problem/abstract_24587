@@ -1,0 +1,19 @@
+If an orbit is fitted from combined RV and astrometric data, the orbit should
+be physically consistent with both data sets. The Keplerian orbit of a planet
+is a highly nonlinear function of seven parameters. The astrometric orbit
+problem can be partially linearized via transformation to four linear
+parameters (related four Thiele-Innes constants) plus three nonlinear
+parameters: eccentricity, period and periastron time. The RV orbit problem can
+be partially linearized via transformation to two additional linear parameters
+plus the same three nonlinear parameters. Unfortunately, the two linear
+parameters from RV are not linearly related to the four linear parameters from
+astrometry. Because of this difficulty, currently available algorithms for
+fitting combined RV and astrometric data to multiple-planet systems employ at
+least five nonlinear parameters per planet. We have developed a new algorithm
+for fitting orbits of multiple planet systems from combined data sets of radial
+velocity and astrometric measurements. The new algorithm satisfies the
+RV-astrometry consistency requirement, while using three nonlinear parameters
+per planet. We expect the reduction in nonlinearity to give the algorithm a
+significant advantage in computation speed over existing algorithms. In this
+work, we describe the algorithm, which has been validated in the context of a
+recent double-blind planet detection simulation study.

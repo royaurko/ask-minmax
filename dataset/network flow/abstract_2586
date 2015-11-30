@@ -1,0 +1,23 @@
+Nonnegative Matrix Factorization (NMF) aims to factorize a matrix into two
+optimized nonnegative matrices and has been widely used for unsupervised
+learning tasks such as product recommendation based on a rating matrix.
+However, although networks between nodes with the same nature exist, standard
+NMF overlooks them, e.g., the social network between users. This problem leads
+to comparatively low recommendation accuracy because these networks are also
+reflections of the nature of the nodes, such as the preferences of users in a
+social network. Also, social networks, as complex networks, have many different
+structures. Each structure is a composition of links between nodes and reflects
+the nature of nodes, so retaining the different network structures will lead to
+differences in recommendation performance. To investigate the impact of these
+network structures on the factorization, this paper proposes four multi-level
+network factorization algorithms based on the standard NMF, which integrates
+the vertical network (e.g., rating matrix) with the structures of horizontal
+network (e.g., user social network). These algorithms are carefully designed
+with corresponding convergence proofs to retain four desired network
+structures. Experiments on synthetic data show that the proposed algorithms are
+able to preserve the desired network structures as designed. Experiments on
+real-world data show that considering the horizontal networks improves the
+accuracy of document clustering and recommendation with standard NMF, and
+various structures show their differences in performance on these two tasks.
+These results can be directly used in document clustering and recommendation
+systems.

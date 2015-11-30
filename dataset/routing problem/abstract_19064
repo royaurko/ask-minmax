@@ -1,0 +1,20 @@
+In this paper, we survey the complexity of distinct methods that allow the
+programmer to synthesize a sup-interpretation, a function providing an upper-
+bound on the size of the output values computed by a program. It consists in a
+static space analysis tool without consideration of the time consumption.
+Although clearly related, sup-interpretation is independent from termination
+since it only provides an upper bound on the terminating computations. First,
+we study some undecidable properties of sup-interpretations from a theoretical
+point of view. Next, we fix term rewriting systems as our computational model
+and we show that a sup-interpretation can be obtained through the use of a
+well-known termination technique, the polynomial interpretations. The drawback
+is that such a method only applies to total functions (strongly normalizing
+programs). To overcome this problem we also study sup-interpretations through
+the notion of quasi-interpretation. Quasi-interpretations also suffer from a
+drawback that lies in the subterm property. This property drastically restricts
+the shape of the considered functions. Again we overcome this problem by
+introducing a new notion of interpretations mainly based on the dependency
+pairs method. We study the decidability and complexity of the
+sup-interpretation synthesis problem for all these three tools over sets of
+polynomials. Finally, we take benefit of some previous works on termination and
+runtime complexity to infer sup-interpretations.

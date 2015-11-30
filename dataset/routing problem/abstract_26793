@@ -1,0 +1,15 @@
+This paper considers a class of constrained stochastic composite optimization
+problems whose objective function is given by the summation of a differentiable
+(possibly nonconvex) component, together with a certain non-differentiable (but
+convex) component. In order to solve these problems, we propose a randomized
+stochastic projected gradient (RSPG) algorithm, in which proper mini-batch of
+samples are taken at each iteration depending on the total budget of stochastic
+samples allowed. The RSPG algorithm also employs a general distance function to
+allow taking advantage of the geometry of the feasible region. Complexity of
+this algorithm is established in a unified setting, which shows nearly optimal
+complexity of the algorithm for convex stochastic programming. A
+post-optimization phase is also proposed to significantly reduce the variance
+of the solutions returned by the algorithm. In addition, based on the RSPG
+algorithm, a stochastic gradient free algorithm, which only uses the stochastic
+zeroth-order information, has been also discussed. Some preliminary numerical
+results are also provided.

@@ -1,0 +1,16 @@
+Restructuring compilers use dependence analysis to prove that the meaning of
+a program is not changed by a transformation. A well-known limitation of
+dependence analysis is that it examines only the memory locations read and
+written by a statement, and does not assume any particular interpretation for
+the operations in that statement. Exploiting the semantics of these operations
+enables a wider set of transformations to be used, and is critical for
+optimizing important codes such as LU factorization with pivoting.
+  Symbolic execution of programs enables the exploitation of such semantic
+properties, but it is intractable for all but the simplest programs. In this
+paper, we propose a new form of symbolic analysis for use in restructuring
+compilers. Fractal symbolic analysis compares a program and its transformed
+version by repeatedly simplifying these programs until symbolic analysis
+becomes tractable, ensuring that equality of simplified programs is sufficient
+to guarantee equality of the original programs. We present a prototype
+implementation of fractal symbolic analysis, and show how it can be used to
+optimize the cache performance of LU factorization with pivoting.

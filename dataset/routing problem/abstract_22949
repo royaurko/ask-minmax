@@ -1,0 +1,14 @@
+Consider the commonly known puzzle, given $k$ glass balls, find an optimal
+algorithm to determine the lowest floor of a building of $n$ floors from which
+a thrown glass ball will break. This puzzle was originally posed in its
+original form in \cite{focs1980}and was later cited in the book \cite{algthc}.
+There are several internet sites that presents this puzzle and its solution to
+the special case of $k=2$ balls. This is the first such analysis of the puzzle
+in its general form. Several variations of this puzzle have been studied with
+applications in Network Loading \cite{cgstctl} which analyzes a case similar to
+a scenario where an adversary is changing the lowest floor with time. Although
+the algorithm specified in \cite{algthc} solves the problem, it is not an
+efficient algorithm. In this paper another algorithm for the same problem is
+analyzed. It is shown that if $m$ is the minimum number of attempts required
+then for $k \geq m$ we have $m = \log (n+1)$ and for $k < m$ we have, $1 +
+\sum_{i=1}^{k}{{m-1}\choose{i}} < n \leq \sum_{i=1}^{k}{{m}\choose{i}}$

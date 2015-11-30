@@ -1,0 +1,17 @@
+Recently, lattice reduction (LR) technique has caught great attention for
+multi-input multi-output (MIMO) receiver because of its low complexity and high
+performance. However, when the number of antennas is large, LR-aided linear
+detectors and successive interference cancellation (SIC) detectors still
+exhibit considerable performance gap to the optimal maximum likelihood detector
+(MLD). To enhance the performance of the LR-aided detectors, the LR-aided
+K-best algorithm was developed at the cost of the extra complexity on the order
+$\mathcal{O}(N_t^2 K + N_t K^2)$, where $N_t$ is the number of transmit
+antennas and $K$ is the number of candidates. In this paper, we develop an
+LR-aided K-best algorithm with lower complexity by exploiting a priority queue.
+With the aid of the priority queue, our analysis shows that the complexity of
+the LR-aided K-best algorithm can be further reduced to $\mathcal{O}(N_t^2 K +
+N_t K {\rm log}_2(K))$. The low complexity of the proposed LR-aided K-best
+algorithm allows us to perform the algorithm for large MIMO systems (e.g.,
+50x50 MIMO systems) with large candidate sizes. Simulations show that as the
+number of antennas increases, the error performance approaches that of AWGN
+channel.

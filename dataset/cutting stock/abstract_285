@@ -1,0 +1,16 @@
+In this paper, we propose a simple generic model to manage time series. A
+time series is composed of a calendar with a typed value for each calendar
+entry. Although the model could support any kind of XML typed values, in this
+paper we focus on real numbers, which are the usual application. We define
+basic vector space operations (plus, minus, scale), and also relational-like
+and application oriented operators to manage time series. We show the interest
+of this generic model on two applications: (i) a stock investment helper; (ii)
+an ecological transport management system. Stock investment requires
+window-based operations while trip management requires complex queries. The
+model has been implemented and tested in PHP, Java, and XQuery. We show
+benchmark results illustrating that the computing of 5000 series of over
+100.000 entries in length - common requirements for both applications - is
+difficult on classical centralized PCs. In order to serve a community of users
+sharing time series, we propose a P2P implementation of time series by dividing
+them in segments and providing optimized algorithms for operator expression
+computation.

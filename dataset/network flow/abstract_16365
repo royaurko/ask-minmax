@@ -1,0 +1,18 @@
+In this paper, a new algorithm based on differential geometry viewpoint to
+solve the 3D rotating Navier-Stokes equations with complex Boundary is
+proposed, which is called Bi-parallel algorithm. For xample, it can be applied
+to passage flow between two blades in impeller and circulation flow through
+aircrafts with complex geometric shape of boundary. Assume that a domain in
+$R^3$ can be decomposed into a series sub-domain, which is called "flow layer",
+by a series smooth surface $\Im_k, k=1,...,M$. Applying differential geometry
+method, the 3D Navier-Stokes operator can be split into two kind of operator:
+the "Membrane Operator" on the tangent space at the surface $\Im_k$ and the
+"Bending Operator" along the transverse direction. The Bending Operators are
+approximated by the finite different quotients and restricted the 3D
+Naver-Stokes equations on the interface surface $\Im_k$, a Bi-Parallel
+algorithm can be constructed along two directors: "Bending" direction and
+"Membrane" directors. The advantages of the method are that: (1) it can improve
+the accuracy of approximate solution caused of irregular mesh nearly the
+complex boundary; (2) it can overcome the numerically effects of boundary
+layer, whic is a good boundary layer numerical method; (3) it is sufficiency to
+solve a two dimensional sub-problem without solving 3D sub-problem.

@@ -1,0 +1,15 @@
+The aim of this chapter is to show how option prices in jump-diffusion models
+can be computed using meshless methods based on Radial Basis Function (RBF)
+interpolation. The RBF technique is demonstrated by solving the partial
+integro-differential equation (PIDE) in one-dimension for the American put and
+the European vanilla call/put options on dividend-paying stocks in the Merton
+and Kou jump-diffusion models. The radial basis function we select is the Cubic
+Spline. We also propose a simple numerical algorithm for finding a finite
+computational range of an improper integral term in the PIDE so that the
+accuracy of approximation of the integral can be improved. Moreover, the
+solution functions of the PIDE are approximated explicitly by RBFs which have
+exact forms so we can easily compute the global integral by any kind of
+numerical quadrature. Finally, we will not only show numerically that our
+scheme is second order accurate in both spatial and time variables in a
+European case but also second order accurate in spatial variables and first
+order accurate in time variables in an American case.

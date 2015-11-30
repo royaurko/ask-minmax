@@ -1,0 +1,18 @@
+It is well-known that many environment-based abstract machines can be seen as
+strategies in lambda calculi with explicit substitutions (ES). Recently,
+graphical syntaxes and linear logic led to the linear substitution calculus
+(LSC), a new approach to ES that is halfway between big-step calculi and
+traditional calculi with ES. This paper studies the relationship between the
+LSC and environment-based abstract machines. While traditional calculi with ES
+simulate abstract machines, the LSC rather distills them: some transitions are
+simulated while others vanish, as they map to a notion of structural
+congruence. The distillation process unveils that abstract machines in fact
+implement weak linear head reduction, a notion of evaluation having a central
+role in the theory of linear logic. We show that such a pattern applies
+uniformly in call-by-name, call-by-value, and call-by-need, catching many
+machines in the literature. We start by distilling the KAM, the CEK, and the
+ZINC, and then provide simplified versions of the SECD, the lazy KAM, and
+Sestoft's machine. Along the way we also introduce some new machines with
+global environments. Moreover, we show that distillation preserves the time
+complexity of the executions, i.e. the LSC is a complexity-preserving
+abstraction of abstract machines.

@@ -1,0 +1,16 @@
+Random networks are widely used for modeling and analyzing complex processes.
+Many mathematical models have been proposed to capture diverse real-world
+networks. One of the most important aspects of these models is degree
+distribution. Chung--Lu (CL) model is a random network model, which can produce
+networks with any given arbitrary degree distribution. The complex systems we
+deal with nowadays are growing larger and more diverse than ever. Generating
+random networks with any given degree distribution consisting of billions of
+nodes and edges or more has become a necessity, which requires efficient and
+parallel algorithms. We present an MPI-based distributed memory parallel
+algorithm for generating massive random networks using CL model, which takes
+$O(\frac{m+n}{P}+P)$ time with high probability and $O(n)$ space per processor,
+where $n$, $m$, and $P$ are the number of nodes, edges and processors,
+respectively. The time efficiency is achieved by using a novel load-balancing
+algorithm. Our algorithms scale very well to a large number of processors and
+can generate massive power--law networks with one billion nodes and $250$
+billion edges in one minute using $1024$ processors.

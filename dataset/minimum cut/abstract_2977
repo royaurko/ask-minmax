@@ -1,0 +1,22 @@
+We introduce a new measure on secrecy, which is established based on
+rate-distortion theory. It is named \emph{security rate}, which is the minimum
+(infimum) of the additional rate needed to reconstruct the source within target
+distortion level with any positive probability for wiretapper. It denotes the
+minimum distance in information metric (bits) from what wiretapper has received
+to any decrypted reconstruction (where decryption is defined as reconstruction
+within target distortion level with some positive possibility). By source
+coding theorem, it is equivalent to a distortion-based equivocation
+$\mathop{\min}\limits
+_{p\left(v^{n}|s^{n},m\right):Ed\left(S^{n},V^{n}\right)\le
+D_{E}}\frac{1}{n}I\left(S^{n};V^{n}|M\right)$ which can be seen as a direct
+extension of equivocation $\frac{1}{n}H\left(S^{n}|M\right)$ to lossy
+decryption case, given distortion level $D_{E}$ and the received (encrypted)
+message $M$ of wiretapper. In this paper, we study it in Shannon cipher system
+with lossless communication, where a source is transmitted from sender to
+legitimate receiver secretly and losslessly, and also eavesdropped by a
+wiretapper. We characterize the admissible region of secret key rate, coding
+rate of the source, wiretapper distortion, and security rate (distortion-based
+equivocation). Since the security rate equals the distortion-based
+equivocation, and the equivocation is a special case of the distortion-based
+equivocation (with Hamming distortion measure and $D_{E}=0$), this gives an
+answer for the meaning of the maximum equivocation.

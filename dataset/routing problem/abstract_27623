@@ -1,0 +1,13 @@
+We propose a Nitsche-based fictitious domain method for the three field
+Stokes problem in which the boundary of the domain is allowed to cross through
+the elements of a fixed background mesh. The dependent variables of velocity,
+pressure and extra-stress tensor are discretised on the background mesh using
+linear finite elements. This equal order approximation is stabilized using a
+continuous interior penalty (CIP) method. On the unfitted domain boundary,
+Dirichlet boundary conditions are weakly enforced using Nitsche's method. We
+add CIP-like ghost penalties in the boundary region and prove that our scheme
+is inf-sup stable and that it has optimal convergence properties independent of
+how the domain boundary intersects the mesh. Additionally, we demonstrate that
+the condition number of the system matrix is bounded independently of the
+boundary location. We corroborate our theoretical findings with numerical
+examples.

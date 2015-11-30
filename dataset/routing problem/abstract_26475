@@ -1,0 +1,17 @@
+Many applications motivate the distance measure between rankings, such as
+comparing top-k lists and rank aggregation for voting, and intrigue great
+interest to researchers. For example, for a search engine, the use of different
+ranking algorithms may return different ranking lists. The effect of a ranking
+algorithm can be estimated by computing the distance (similarity) between the
+result ranking it returns and the appropriate ranking people expect. People may
+be interested in only the first few items of result ranking, therefore the
+metric for measuring the distance should emphasize on the items in higher
+positions. Besides, in an extreme case, if a result ranking is the total
+reverse of the expected ranking, then it is considered to be the worst ranking
+with the maximum distance. Therefore, a metric is called for, which can satisfy
+both of the two intuitions. To address this problem, we present a weighted
+metric based on the classical Spearman's footrule metric to measure the
+distance between two permutations of n objects. This metric can be applied in
+rank aggregation problem with a polynomial time algorithm, and produces a
+2-approximation for adopting the weighted Kendall's tau distance proposed by
+Farnoud et al.

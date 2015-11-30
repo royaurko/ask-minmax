@@ -1,0 +1,19 @@
+The propositional planning problem is a notoriously difficult computational
+problem. Downey et al. (1999) initiated the parameterized analysis of planning
+(with plan length as the parameter) and B\"ackstr\"om et al. (2012) picked up
+this line of research and provided an extensive parameterized analysis under
+various restrictions, leaving open only one stubborn case. We continue this
+work and provide a full classification. In particular, we show that the case
+when actions have no preconditions and at most $e$ postconditions is
+fixed-parameter tractable if $e\leq 2$ and W[1]-complete otherwise. We show
+fixed-parameter tractability by a reduction to a variant of the Steiner Tree
+problem; this problem has been shown fixed-parameter tractable by Guo et al.
+(2007). If a problem is fixed-parameter tractable, then it admits a
+polynomial-time self-reduction to instances whose input size is bounded by a
+function of the parameter, called the kernel. For some problems, this function
+is even polynomial which has desirable computational implications. Recent
+research in parameterized complexity has focused on classifying fixed-parameter
+tractable problems on whether they admit polynomial kernels or not. We revisit
+all the previously obtained restrictions of planning that are fixed-parameter
+tractable and show that none of them admits a polynomial kernel unless the
+polynomial hierarchy collapses to its third level.

@@ -1,0 +1,16 @@
+This paper presents a parallel Salt and Pepper (SP) noise removal algorithm
+in a grey level digital image based on the Hypergraph Based Root Mean Square
+(HGRMS) approach. HGRMS is generic algorithm for identifying noisy pixels in
+any digital image using a two level hierarchical serial approach. However, for
+SP noise removal, we reduce this algorithm to a parallel model by introducing a
+cardinality matrix and an iteration factor, k, which helps us reduce the
+dependencies in the existing approach. We also observe that the performance of
+the serial implementation is better on smaller images, but once the threshold
+is achieved in terms of image resolution, its computational complexity
+increases drastically. We test P-HGRMS using standard images from the Berkeley
+Segmentation dataset on NVIDIAs Compute Unified Device Architecture (CUDA) for
+noise identification and attenuation. We also compare the noise removal
+efficiency of the proposed algorithm using Peak Signal to Noise Ratio (PSNR) to
+the existing approach. P-HGRMS maintains the noise removal efficiency and
+outperforms its sequential counterpart by 6 to 18 times (6x - 18x) in
+computational efficiency.

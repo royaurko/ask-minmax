@@ -1,0 +1,12 @@
+We analyze a path-lifting algorithm for finding an approximate zero of a
+complex polynomial, and bound the number of iterates required in several ways:
+For any polynomial $f\in\PDone$ and appropriate starting value, we bound the
+number of iterates required to locate an approximate zero. This bound depends
+only on the value of the function at the initial point, how close the algorithm
+comes to certain critical values, and the derivative of the polynomial at the
+root it converges to. For any polynomial $f$, the average number of steps
+required over all starting values is bounded by a constant times the logarithm
+of the condition number of $f$. Averaging over all polynomials $f\in\PDone$,
+the number of steps required for a typical starting value is $\OO(d)$.
+  The analysis of the cost of this algorithm exploits the geometry of the
+branched Riemann surface for the inverse of a polynomial.

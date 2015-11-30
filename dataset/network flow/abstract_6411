@@ -1,0 +1,15 @@
+In complex network research clique percolation, introduced by Palla et al.,
+is a deterministic community detection method, which allows for overlapping
+communities and is purely based on local topological properties of a network.
+Here we present a sequential clique percolation algorithm (SCP) to do fast
+community detection in weighted and unweighted networks, for cliques of a
+chosen size. This method is based on sequentially inserting the constituent
+links to the network and simultaneously keeping track of the emerging community
+structure. Unlike existing algorithms, the SCP method allows for detecting
+k-clique communities at multiple weight thresholds in a single run, and can
+simultaneously produce a dendrogram representation of hierarchical community
+structure. In sparse weighted networks, the SCP algorithm can also be used for
+implementing the weighted clique percolation method recently introduced by
+Farkas et al. The computational time of the SCP algorithm scales linearly with
+the number of k-cliques in the network. As an example, the method is applied to
+a product association network, revealing its nested community structure.

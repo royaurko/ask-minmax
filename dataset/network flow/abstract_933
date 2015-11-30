@@ -1,0 +1,19 @@
+Given a large edge-weighted network $G$ with $k$ terminal vertices, we wish
+to compress it and store, using little memory, the value of the minimum cut (or
+equivalently, maximum flow) between every bipartition of terminals. One
+appealing methodology to implement a compression of $G$ is to construct a
+\emph{mimicking network}: a small network $G'$ with the same $k$ terminals, in
+which the minimum cut value between every bipartition of terminals is the same
+as in $G$. This notion was introduced by Hagerup, Katajainen, Nishimura, and
+Ragde [JCSS '98], who proved that such $G'$ of size at most $2^{2^k}$ always
+exists. Obviously, by having access to the smaller network $G'$, certain
+computations involving cuts can be carried out much more efficiently.
+  We provide several new bounds, which together narrow the previously known gap
+from doubly-exponential to only singly-exponential, both for planar and for
+general graphs. Our first and main result is that every $k$-terminal planar
+network admits a mimicking network $G'$ of size $O(k^2 2^{2k})$, which is
+moreover a minor of $G$. On the other hand, some planar networks $G$ require
+$|E(G')| \ge \Omega(k^2)$. For general networks, we show that certain bipartite
+graphs only admit mimicking networks of size $|V(G')| \geq 2^{\Omega(k)}$, and
+moreover, every data structure that stores the minimum cut value between all
+bipartitions of the terminals must use $2^{\Omega(k)}$ machine words.

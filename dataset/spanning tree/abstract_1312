@@ -1,0 +1,13 @@
+Karloff? and Shirley recently proposed summary trees as a new way to
+visualize large rooted trees (Eurovis 2013) and gave algorithms for generating
+a maximum-entropy k-node summary tree of an input n-node rooted tree. However,
+the algorithm generating optimal summary trees was only pseudo-polynomial (and
+worked only for integral weights); the contributors left open existence of a
+olynomial-time algorithm. In addition, the contributors provided an additive
+approximation algorithm and a greedy heuristic, both working on real weights.
+This paper shows how to construct maximum entropy k-node summary trees in time
+O(k^2 n + n log n) for real weights (indeed, as small as the time bound for the
+greedy heuristic given previously); how to speed up the approximation algorithm
+so that it runs in time O(n + (k^4/eps?) log(k/eps?)), and how to speed up the
+greedy algorithm so as to run in time O(kn + n log n). Altogether, these
+results make summary trees a much more practical tool than before.

@@ -1,0 +1,13 @@
+In previous work (`Network coding meets TCP') we proposed a new protocol that
+interfaces network coding with TCP by means of a coding layer between TCP and
+IP. Unlike the usual batch-based coding schemes, the protocol uses a
+TCP-compatible sliding window code in combination with new rules for
+acknowledging bytes to TCP that take into account the network coding operations
+in the lower layer. The protocol was presented in a theoretical framework and
+considered only in conjunction with TCP Vegas. In this paper we present a
+real-world implementation of this protocol that addresses several important
+practical aspects of incorporating network coding and decoding with TCP's
+window management mechanism. Further, we work with the more widespread and
+practical TCP Reno. Our implementation significantly advances the goal of
+designing a deployable, general, TCP-compatible protocol that provides the
+benefits of network coding.

@@ -1,0 +1,17 @@
+We consider a variant of the path cover problem, namely, the
+$k$-fixed-endpoint path cover problem, or kPC for short, on interval graphs.
+Given a graph $G$ and a subset $\mathcal{T}$ of $k$ vertices of $V(G)$, a
+$k$-fixed-endpoint path cover of $G$ with respect to $\mathcal{T}$ is a set of
+vertex-disjoint paths $\mathcal{P}$ that covers the vertices of $G$ such that
+the $k$ vertices of $\mathcal{T}$ are all endpoints of the paths in
+$\mathcal{P}$. The kPC problem is to find a $k$-fixed-endpoint path cover of
+$G$ of minimum cardinality; note that, if $\mathcal{T}$ is empty the stated
+problem coincides with the classical path cover problem. In this paper, we
+study the 1-fixed-endpoint path cover problem on interval graphs, or 1PC for
+short, generalizing the 1HP problem which has been proved to be NP-complete
+even for small classes of graphs. Motivated by a work of Damaschke, where he
+left both 1HP and 2HP problems open for the class of interval graphs, we show
+that the 1PC problem can be solved in polynomial time on the class of interval
+graphs. The proposed algorithm is simple, runs in $O(n^2)$ time, requires
+linear space, and also enables us to solve the 1HP problem on interval graphs
+within the same time and space complexity.

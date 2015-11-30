@@ -1,0 +1,19 @@
+We consider the problem of channel estimation for amplify-and-forward (AF)
+two-way relay networks (TWRNs). Most works on this problem focus on pilot-based
+approaches which impose a significant training overhead that reduces the
+spectral efficiency of the system. To avoid such losses, this work proposes
+blind channel estimation algorithms for AF TWRNs that employ constant-modulus
+(CM) signaling. Our main algorithm is based on the deterministic maximum
+likelihood (DML) approach. Assuming M-PSK modulation, we show that the
+resulting estimator is consistent and approaches the true channel with high
+probability at high SNR for modulation orders higher than 2. For BPSK, however,
+the DML performs poorly and we propose an alternative algorithm that performs
+much better by taking into account the BPSK structure of the data symbols. For
+comparative purposes, we also investigate the Gaussian maximum-likelihood (GML)
+approach which treats the data symbols as Gaussian-distributed nuisance
+parameters. We derive the Cramer-Rao bound and use Monte-Carlo simulations to
+investigate the mean squared error (MSE) performance of the proposed
+algorithms. We also compare the symbol-error rate (SER) performance of the DML
+algorithm with that of the training-based least-squares (LS) algorithm and
+demonstrate that the DML offers a superior tradeoff between accuracy and
+spectral efficiency.

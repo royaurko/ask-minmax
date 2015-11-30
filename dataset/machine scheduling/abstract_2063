@@ -1,0 +1,18 @@
+A rotorcraft-based unmanned aerial vehicle exhibits more complex properties
+compared to its full-size counterparts due to its increased sensitivity to
+control inputs and disturbances and higher bandwidth of its dynamics. As an
+aerial vehicle with vertical take-off and landing capability, the helicopter
+specifically poses a difficult problem of transition between forward flight and
+unstable hover and vice versa. The LPV control technique explicitly takes into
+account the change in performance due to the real-time parameter variations.
+The technique therefore theoretically guarantees the performance and robustness
+over the entire operating envelope. In this study, we investigate a new
+approach implementing model identification for use in the LPV control
+framework. The identification scheme employs recursive least square technique
+implemented on the LPV system represented by dynamics of helicopter during a
+transition. The airspeed as the scheduling of parameter trajectory is not
+assumed to vary slowly. The exclusion of slow parameter change requirement
+allows for the application of the algorithm for aggressive maneuvering
+capability without the need of expensive computation. The technique is tested
+numerically and will be validated in the autonomous flight of a small scale
+helicopter.

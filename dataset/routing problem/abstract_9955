@@ -1,0 +1,18 @@
+The trapezoidal rule, which is a special case of the Newmark family of
+algorithms, is one of the most widely used methods for transient hyperbolic
+problems. In this work, we show that this rule conserves linear and angular
+momenta and energy in the case of undamped linear elastodynamics problems, and
+an `energy-like measure' in the case of undamped acoustic problems. These
+conservation properties, thus, provide a rational basis for using this
+algorithm. In linear elastodynamics problems, variants of the trapezoidal rule
+that incorporate `high-frequency' dissipation are often used, since the higher
+frequencies, which are not approximated properly by the standard
+displacement-based approach, often result in unphysical behavior. Instead of
+modifying the trapezoidal algorithm, we propose using a hybrid finite element
+framework for constructing the stiffness matrix. Hybrid finite elements, which
+are based on a two-field variational formulation involving displacement and
+stresses, are known to approximate the eigenvalues much more accurately than
+the standard displacement-based approach, thereby either bypassing or reducing
+the need for high-frequency dissipation. We show this by means of several
+examples, where we compare the numerical solutions obtained using the
+displacement-based and hybrid approaches against analytical solutions.

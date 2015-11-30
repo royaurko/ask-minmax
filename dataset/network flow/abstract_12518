@@ -1,0 +1,16 @@
+In Ad Hoc networks, route failure may occur due to less received power,
+mobility, congestion and node failures. Many approaches have been proposed in
+literature to solve this problem, where a node predicts pre-emptively the route
+failure that occurs with the less received power. However, this approach
+encounters some difficulties, especially in scenario without mobility where
+route failures may arise. In this paper, we propose an improvement of AODV
+protocol called LO-PPAODV (Link Quality and MAC-Overhead aware Predictive
+Preemptive AODV). This protocol is based on new metric combine more routing
+metrics (Link Quality, MAC Overhead) between each node and one hop neighbor.
+Also we propose a cross-layer networking mechanism to distinguish between both
+situations, failures due to congestion or mobility, and consequently avoiding
+unnecessary route repair process. The LO-PPAODV was implemented using NS-2. The
+simulation results show that our approach improves the overall performance of
+the network. It reduces the average end to end delay, the routing overhead, MAC
+errors and route errors, and increases the packet delivery fraction of the
+network.

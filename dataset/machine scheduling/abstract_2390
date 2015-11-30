@@ -1,0 +1,20 @@
+We are given a set of $n$ jobs that have to be executed on a set of $m$
+speed-scalable machines that can vary their speeds dynamically using the energy
+model introduced in [Yao et al., FOCS'95]. Every job $j$ is characterized by
+its release date $r_j$, its deadline $d_j$, its processing volume $p_{i,j}$ if
+$j$ is executed on machine $i$ and its weight $w_j$. We are also given a budget
+of energy $E$ and our objective is to maximize the weighted throughput, i.e.
+the total weight of jobs that are completed between their respective release
+dates and deadlines. We propose a polynomial-time approximation algorithm where
+the preemption of the jobs is allowed but not their migration. Our algorithm
+uses a primal-dual approach on a linearized version of a convex program with
+linear constraints. Furthermore, we present two optimal algorithms for the
+non-preemptive case where the number of machines is bounded by a fixed
+constant. More specifically, we consider: {\em (a)} the case of identical
+processing volumes, i.e. $p_{i,j}=p$ for every $i$ and $j$, for which we
+present a polynomial-time algorithm for the unweighted version, which becomes a
+pseudopolynomial-time algorithm for the weighted throughput version, and {\em
+(b)} the case of agreeable instances, i.e. for which $r_i \le r_j$ if and only
+if $d_i \le d_j$, for which we present a pseudopolynomial-time algorithm. Both
+algorithms are based on a discretization of the problem and the use of dynamic
+programming.

@@ -1,0 +1,23 @@
+This paper proposes a new algorithm for MIMO cognitive radio Secondary Users
+(SU) to learn the null space of the interference channel to the Primary User
+(PU) without burdening the PU with any knowledge or explicit cooperation with
+the SU.
+  The knowledge of this null space enables the SU to transmit in the same band
+simultaneously with the PU by utilizing separate spatial dimensions than the
+PU. Specifically, the SU transmits in the null space of the interference
+channel to the PU. We present a new algorithm, called the One-Bit Null Space
+Learning Algorithm (OBNSLA), in which the SU learns the PU's null space by
+observing a binary function that indicates whether the interference it inflicts
+on the PU has increased or decreased in comparison to the SU's previous
+transmitted signal. This function is obtained by listening to the PU
+transmitted signal or control channel and extracting information from it about
+whether the PU's Signal to Interference plus Noise power Ratio (SINR) has
+increased or decreased.
+  In addition to introducing the OBNSLA, this paper provides a thorough
+convergence analysis of this algorithm. The OBNSLA is shown to have a linear
+convergence rate and an asymptotic quadratic convergence rate. Finally, we
+derive bounds on the interference that the SU inflicts on the PU as a function
+of a parameter determined by the SU. This lets the SU control the maximum level
+of interference, which enables it to protect the PU completely blindly with
+minimum complexity. The asymptotic analysis and the derived bounds also apply
+to the recently proposed Blind Null Space Learning Algorithm.

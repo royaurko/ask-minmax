@@ -1,0 +1,27 @@
+The capacity of multiuser networks has been a long-standing problem in
+information theory. Recently, Avestimehr et al. have proposed a deterministic
+network model to approximate multiuser wireless networks. This model, known as
+the ADT network model, takes into account the broadcast nature of wireless
+medium and interference.
+  We show that the ADT network model can be described within the algebraic
+network coding framework introduced by Koetter and Medard. We prove that the
+ADT network problem can be captured by a single matrix, and show that the
+min-cut of an ADT network is the rank of this matrix; thus, eliminating the
+need to optimize over exponential number of cuts between two nodes to compute
+the min-cut of an ADT network. We extend the capacity characterization for ADT
+networks to a more general set of connections, including single
+unicast/multicast connection and non-multicast connections such as multiple
+multicast, disjoint multicast, and two-level multicast. We also provide
+sufficiency conditions for achievability in ADT networks for any general
+connection set. In addition, we show that random linear network coding, a
+randomized distributed algorithm for network code construction, achieves the
+capacity for the connections listed above. Furthermore, we extend the ADT
+networks to those with random erasures and cycles (thus, allowing
+bi-directional links).
+  In addition, we propose an efficient linear code construction for the
+deterministic wireless multicast relay network model. Avestimehr et al.'s
+proposed code construction is not guaranteed to be efficient and may
+potentially involve an infinite block length. Unlike several previous coding
+schemes, we do not attempt to find flows in the network. Instead, for a layered
+network, we maintain an invariant where it is required that at each stage of
+the code construction, certain sets of codewords are linearly independent.

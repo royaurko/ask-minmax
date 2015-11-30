@@ -1,0 +1,12 @@
+This article introduces an algorithm for implicit High Dimensional Model
+Representation (HDMR) of the Bellman equation. This approximation technique
+reduces memory demands of the algorithm considerably. Moreover, we show that
+HDMR enables fast approximate minimization which is essential for evaluation of
+the Bellman function. In each time step, the problem of parametrized HDMR
+minimization is relaxed into trust region problems, all sharing the same
+matrix. Finding its eigenvalue decomposition, we effectively achieve estimates
+of all minima. Their full-domain representation is avoided by HDMR and then the
+same approach is used recursively in the next time step. An illustrative
+example of N-armed bandid problem is included. We assume that the newly
+established connection between approximate HDMR minimization and the trust
+region problem can be beneficial also to many other applications.

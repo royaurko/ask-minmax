@@ -1,0 +1,10 @@
+Presented simple extensions to scala language related to import statements:
+exported imports, which provide ability to reuse sequence of import clauses in
+composable form and default rewriters, which provide mechanism for pluggable
+macro-based AST transformation of overall compilation unit, activated by import
+of library object. Using these facilities not only allows more compact code, it
+prevents application programmer from producing certain type of errors too and
+allows to implement local language extension as libraries on top of standard
+compiler. Part of discussed extensions is submitted to scala language committee
+as pre-sip \cite{ai-presip} and can be used as first step for refining imports
+semantics in the future version of scala language.

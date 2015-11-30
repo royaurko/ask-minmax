@@ -1,0 +1,20 @@
+Let $(Y_i,\theta_i)$, $i=1,...,n$, be independent random vectors distributed
+like $(Y,\theta) \sim G^*$, where the marginal distribution of $\theta$ is
+completely unknown, and the conditional distribution of $Y$ conditional on
+$\theta$ is known. It is desired to estimate the marginal distribution of
+$\theta$ under $G^*$, as well as functionals of the form $E_{G^*} h(Y,\theta)$
+for a given $h$, based on the observed $Y_1,...,Y_n$.
+  In this paper we suggest a deconvolution method for the above estimation
+problems and discuss some of its applications in Empirical Bayes analysis. The
+method involves a quadratic programming step, which is an elaboration on the
+formulation and technique in Efron(2013). It is computationally efficient and
+may handle large data sets, where the popular method, of deconvolution using
+EM-algorithm, is impractical.
+  The main application that we study is treatment of non-response. Our approach
+is nonstandard and does not involve missing at random type of assumptions. The
+method is demonstrated in simulations, as well as in an analysis of a real data
+set from the Labor force survey in Israel. Other applications including
+estimation of the risk, and estimation of False Discovery Rates, are also
+discussed.
+  We also present a method, that involves convex optimization, for constructing
+confidence intervals for $E_{G^*} h$, under the above setup.

@@ -1,0 +1,11 @@
+In overlay networks, both local and long-distance links appear as a single
+hop to a routing protocol. Traditional routing metrics (based on hop count or
+packet loss) fail to take the differences between such links into account. In
+this paper, we study a metric based on packet delay that has been designed to
+improve routing in overlay networks. We show a lightweight technique for
+measuring delay asynchronously, and show how to use the data it provides for
+constructing a routing metric. Using delay naively leads to persistent routing
+oscillations, so our routing protocol implements a number of features to bound
+the frequency of oscillations. We show that our protocol causes no oscillations
+in real-world tests, and has oscillations with a period on the order of minutes
+in artificially constructed worst-case setups.

@@ -1,0 +1,22 @@
+We present a new version of a dynamical spectral model for Large Eddy
+Simulation based on the Eddy Damped Quasi Normal Markovian approximation
+\cite{sao,chollet_lesieur}. Three distinct modifications are implemented and
+tested. On the one hand, whereas in current approaches, a Kolmogorov-like
+energy spectrum is usually assumed in order to evaluate the nonlocal transfer,
+in our method the energy spectrum of the subgrid scales adapts itself
+dynamically to the large-scale resolved spectrum; this first modification
+allows in particular for a better treatment of transient phases and
+instabilities, as shown on one specific example. Moreover, the model takes into
+account the phase relationships of the small-scales, embodied for example in
+strong localized structures such as vortex filaments. To that effect, phase
+information is implemented in the treatment of the so-called eddy noise in the
+closure model. Finally, we also consider the role that helical small scales may
+play in the evaluation of the transfer of energy and helicity, the two
+invariants of the primitive equations in the inviscid case; this leads as well
+to intrinsic variations in the development of helicity spectra. Therefore, our
+model allows for simulations of flows for a variety of circumstances and a
+priori at any given Reynolds number. Comparisons with Direct Numerical
+Simulations of the three-dimensional Navier-Stokes equation are performed on
+fluids driven by an ABC (Beltrami) flow which is a prototype of fully helical
+flows. Good agreements are obtained for physical and spectral behavior of the
+large scales.

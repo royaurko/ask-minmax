@@ -1,0 +1,14 @@
+In this paper two scheduling models are addressed. First is the standard
+model (unicast) where requests (or jobs) are independent. The other is the
+broadcast model where broadcasting a page can satisfy multiple outstanding
+requests for that page. We consider online scheduling of requests when they
+have deadlines. Unlike previous models, which mainly consider the objective of
+maximizing throughput while respecting deadlines, here we focus on scheduling
+all the given requests with the goal of minimizing the maximum {\em delay
+factor}.We prove strong lower bounds on the achievable competitive ratios for
+delay factor scheduling even with unit-time requests.For the unicast model we
+give algorithms that are $(1 + \eps)$-speed $O({1 \over \eps})$-competitive in
+both the single machine and multiple machine settings. In the broadcast model
+we give an algorithm for similar-sized pages that is $(2+ \eps)$-speed $O({1
+\over \eps^2})$-competitive. For arbitrary page sizes we give an algorithm that
+is $(4+\eps)$-speed $O({1 \over \eps^2})$-competitive.

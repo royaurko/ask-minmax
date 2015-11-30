@@ -1,0 +1,25 @@
+Bootstrap percolation is a prominent framework for studying the spreading of
+activity on a graph. We begin with an initial set of active vertices. The
+process then proceeds in rounds, and further vertices become active as soon as
+they have a certain number of active neighbors. A recurring feature in
+bootstrap percolation theory is an `all-or-nothing' phenomenon: either the size
+of the starting set is so small that the process stops very soon, or it
+percolates (almost) completely.
+  Motivated by several important phenomena observed in various types of
+real-world networks we propose in this work a variant of bootstrap percolation
+that exhibits a vastly different behavior. Our graphs have two types of
+vertices: some of them obstruct the diffusion, while the others facilitate it.
+We study the effect of this setting by analyzing the process on
+Erd\H{o}s-R\'enyi random graphs. Our main findings are two-fold. First we show
+that the presence of vertices hindering the diffusion does not result in a
+stable behavior: tiny changes in the size of the starting set can dramatically
+influence the size of the final active set. In particular, the process is
+non-monotone: a larger starting set can result in a smaller final set. In the
+second part of the paper we show that this phenomenom arises from the
+round-based approach: if we move to a continuous time model in which every edge
+draws its transmission time randomly, then we gain stability, and the process
+stops with an active set that contains a non-trivial constant fraction of all
+vertices. Moreover, we show that in the continuous time model percolation
+occurs significantly faster compared to the classical round-based model. Our
+findings are in line with empirical observations and demonstrate the importance
+of introducing various types of vertex behaviors in the mathematical model.

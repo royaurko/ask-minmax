@@ -1,0 +1,19 @@
+Two challenging problems in the clinical study of cancer are the
+characterization of cancer subtypes and the classification of individual
+patients according to those subtypes. Statistical approaches addressing these
+problems are hampered by population heterogeneity and challenges inherent in
+data integration across high-dimensional, diverse covariates. We have developed
+a survival-supervised latent Dirichlet allocation (survLDA) modeling framework
+to address these concerns. LDA models have proven extremely effective at
+identifying themes common across large collections of text, but applications to
+genomics have been limited. Our framework extends LDA to the genome by
+considering each patient as a `document' with `text' constructed from clinical
+and high-dimensional genomic measurements. We then further extend the framework
+to allow for supervision by a time-to-event response. The model enables the
+efficient identification of collections of clinical and genomic features that
+co-occur within patient subgroups, and then characterizes each patient by those
+features. An application of survLDA to The Cancer Genome Atlas (TCGA) ovarian
+project identifies informative patient subgroups that are characterized by
+different propensities for exhibiting abnormal mRNA expression and
+methylations, corresponding to differential rates of survival from primary
+therapy.

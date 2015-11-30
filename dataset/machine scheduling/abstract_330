@@ -1,0 +1,15 @@
+Multiple applications that execute concurrently on heterogeneous platforms
+compete for CPU and network resources. In this paper we analyze the behavior of
+$K$ non-cooperative schedulers using the optimal strategy that maximize their
+efficiency while fairness is ensured at a system level ignoring applications
+characteristics. We limit our study to simple single-level master-worker
+platforms and to the case where each scheduler is in charge of a single
+application consisting of a large number of independent tasks. The tasks of a
+given application all have the same computation and communication requirements,
+but these requirements can vary from one application to another. In this
+context, we assume that each scheduler aims at maximizing its throughput. We
+give closed-form formula of the equilibrium reached by such a system and study
+its performance. We characterize the situations where this Nash equilibrium is
+optimal (in the Pareto sense) and show that even though no catastrophic
+situation (Braess-like paradox) can occur, such an equilibrium can be
+arbitrarily bad for any classical performance measure.

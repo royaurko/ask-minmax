@@ -1,0 +1,17 @@
+The pricing of American style and multiple exercise options is a very
+challenging problem in mathematical finance. One usually employs a Least-Square
+Monte Carlo approach (Longstaff-Schwartz method) for the evaluation of
+conditional expectations which arise in the Backward Dynamic Programming
+principle for such optimal stopping or stochastic control problems in a
+Markovian framework. Unfortunately, these Least-Square Monte Carlo approaches
+are rather slow and allow, due to the dependency structure in the Backward
+Dynamic Programming principle, no parallel implementation; whether on the Monte
+Carlo levelnor on the time layer level of this problem. We therefore present in
+this paper a quantization method for the computation of the conditional
+expectations, that allows a straightforward parallelization on the Monte Carlo
+level. Moreover, we are able to develop for AR(1)-processes a further
+parallelization in the time domain, which makes use of faster memory structures
+and therefore maximizes parallel execution. Finally, we present numerical
+results for a CUDA implementation of this methods. It will turn out that such
+an implementation leads to an impressive speed-up compared to a serial CPU
+implementation.

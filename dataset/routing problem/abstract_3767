@@ -1,0 +1,19 @@
+Inference in Bayes Nets (BAYES) is an important problem with numerous
+applications in probabilistic reasoning. Counting the number of satisfying
+assignments of a propositional formula (#SAT) is a closely related problem of
+fundamental theoretical importance. Both these problems, and others, are
+members of the class of sum-of-products (SUMPROD) problems. In this paper we
+show that standard backtracking search when augmented with a simple memoization
+scheme (caching) can solve any sum-of-products problem with time complexity
+that is at least as good any other state-of-the-art exact algorithm, and that
+it can also achieve the best known time-space tradeoff. Furthermore,
+backtracking's ability to utilize more flexible variable orderings allows us to
+prove that it can achieve an exponential speedup over other standard algorithms
+for SUMPROD on some instances.
+  The ideas presented here have been utilized in a number of solvers that have
+been applied to various types of sum-of-product problems. These system's have
+exploited the fact that backtracking can naturally exploit more of the
+problem's structure to achieve improved performance on a range of
+probleminstances. Empirical evidence of this performance gain has appeared in
+published works describing these solvers, and we provide references to these
+works.

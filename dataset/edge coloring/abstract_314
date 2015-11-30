@@ -1,0 +1,19 @@
+The Lov\'{a}sz Local Lemma (LLL) states that the probability that none of a
+set of "bad" events happens is nonzero if the probability of each event is
+small compared to the number of bad events it depends on. A series of results
+have provided algorithms to efficiently construct structures whose existence is
+(non-constructively) guaranteed by the full asymmetric LLL, culminating in the
+recent breakthrough of Moser & Tardos. We show that the output distribution of
+the Moser-Tardos procedure has sufficient randomness, leading to two classes of
+algorithmic applications. We first show that when an LLL application provides a
+small amount of slack, the running time of the Moser-Tardos algorithm is
+polynomial in the number of underlying independent variables (not events!), and
+can thus be used to give efficient constructions in cases where the underlying
+proof applies the LLL to super-polynomially many events (or where finding a bad
+event that holds is computationally hard). We demonstrate our method on
+applications including: the first constant-factor approximation algorithm for
+the Santa Claus problem, as well as efficient algorithms for acyclic edge
+coloring, non-repetitive graph colorings, and Ramsey-type graphs. Second, we
+show applications to cases where a few of the bad events can hold, leading to
+the first such algorithmic applications of the LLL: MAX $k$-SAT is an
+illustrative example of this.

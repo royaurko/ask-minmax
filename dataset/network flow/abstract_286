@@ -1,0 +1,18 @@
+As the most competitive solution for next-generation network,
+software-defined network (SDN) and its dominant implementation OpenFlow, are
+attracting more and more interests. But besides convenience and flexibility,
+SDN/OpenFlow also introduces new kinds of limitations and security issues. Of
+these limitations, the most obvious and maybe the most neglected one, is the
+flow table capacity of SDN/OpenFlow switches.
+  In this paper, we proposed a novel inference attack targeting at SDN/OpenFlow
+network, which is motivated by the limited flow table capacities of
+SDN/OpenFlow switches and the following measurable network performance decrease
+resulting from frequent interactions between data plane and control plane when
+the flow table is full. To our best knowledge, this is the first proposed
+inference attack model of this kind for SDN/OpenFlow. We also implemented an
+inference attack framework according to our model and examined its efficiency
+and accuracy. The simulation results demonstrate that our framework can infer
+the network parameters(flow table capacity and flow table usage) with an
+accuracy of 80% or higher. These findings give us a deeper understanding of
+SDN/OpenFlow limitations and serve as guidelines to future improvements of
+SDN/OpenFlow.

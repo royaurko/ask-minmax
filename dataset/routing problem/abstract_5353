@@ -1,0 +1,13 @@
+In this paper, we look at the complexity of designing algorithms without any
+bank conflicts in the shared memory of Graphical Processing Units (GPUs). Given
+input of size $n$, $w$ processors and $w$ memory banks, we study three
+fundamental problems: sorting, permuting and $w$-way partitioning (defined as
+sorting an input containing exactly $n/w$ copies of every integer in $[w]$).
+  We solve sorting in optimal $O(\frac{n}{w} \log n)$ time. When $n \ge w^2$,
+we solve the partitioning problem optimally in $O(n/w)$ time. We also present a
+general solution for the partitioning problem which takes $O(\frac{n}{w}
+\log^3_{n/w} w)$ time. Finally, we solve the permutation problem using a
+randomized algorithm in $O(\frac{n}{w} \log\log\log_{n/w} n)$ time. Our results
+show evidence that when working with banked memory architectures, there is a
+separation between these problems and the permutation and partitioning problems
+are not as easy as simple parallel scanning.

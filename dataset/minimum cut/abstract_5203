@@ -1,0 +1,13 @@
+We introduce a low complexity approach to iterative equalization and
+decoding, or "turbo equalization", that uses clustered models to better match
+the nonlinear relationship that exists between likelihood information from a
+channel decoder and the symbol estimates that arise in soft-input channel
+equalization. The introduced clustered turbo equalizer uses piecewise linear
+models to capture the nonlinear dependency of the linear minimum mean square
+error (MMSE) symbol estimate on the symbol likelihoods produced by the channel
+decoder and maintains a computational complexity that is only linear in the
+channel memory. By partitioning the space of likelihood information from the
+decoder, based on either hard or soft clustering, and using locally-linear
+adaptive equalizers within each clustered region, the performance gap between
+the linear MMSE equalizer and low-complexity, LMS-based linear turbo equalizers
+can be dramatically narrowed.

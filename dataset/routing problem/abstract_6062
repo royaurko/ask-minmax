@@ -1,0 +1,16 @@
+Image formation for radio astronomy can be defined as estimating the spatial
+power distribution of celestial sources over the sky, given an array of
+antennas. One of the challenges with image formation is that the problem
+becomes ill-posed as the number of pixels becomes large. The introduction of
+constraints that incorporate a-priori knowledge is crucial. In this paper we
+show that in addition to non-negativity, the magnitude of each pixel in an
+image is also bounded from above. Indeed, the classical "dirty image" is an
+upper bound, but a much tighter upper bound can be formed from the data using
+array processing techniques. This formulates image formation as a least squares
+optimization problem with inequality constraints. We propose to solve this
+constrained least squares problem using active set techniques, and the steps
+needed to implement it are described. It is shown that the least squares part
+of the problem can be efficiently implemented with Krylov subspace based
+techniques, where the structure of the problem allows massive parallelism and
+reduced storage needs. The performance of the algorithm is evaluated using
+simulations.

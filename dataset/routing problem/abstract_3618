@@ -1,0 +1,20 @@
+This paper addresses rate control for transmission of scalable video streams
+via Network Utility Maximization (NUM) formulation. Due to stringent QoS
+requirements of video streams and specific characterization of utility
+experienced by end-users, one has to solve nonconvex and even nonsmooth NUM
+formulation for such streams, where dual methods often prove incompetent.
+Convexification plays an important role in this work as it permits the use of
+existing dual methods to solve an approximate to the NUM problem iteratively
+and distributively. Hence, to tackle the nonsmoothness and nonconvexity, we aim
+at reformulating the NUM problem through approximation and transformation of
+the ideal discretely adaptive utility function for scalable video streams. The
+reformulated problem is shown to be a D.C. (Difference of Convex) problem. We
+leveraged Sequential Convex Programming (SCP) approach to replace the nonconvex
+D.C. problem by a sequence of convex problems that aim to approximate the
+original D.C. problem. We then solve each convex problem produced by SCP
+approach using existing dual methods. This procedure is the essence of two
+distributed iterative rate control algorithms proposed in this paper, for which
+one can show the convergence to a locally optimal point of the nonconvex D.C.
+problem and equivalently to a locally optimal point of an approximate to the
+original nonconvex problem. Our experimental results show that the proposed
+rate control algorithms converge with tractable convergence behavior.

@@ -1,0 +1,14 @@
+We present a formal model to represent and solve the unicast/multicast
+routing problem in networks with Quality of Service (QoS) requirements. To
+attain this, first we translate the network adapting it to a weighted graph
+(unicast) or and-or graph (multicast), where the weight on a connector
+corresponds to the multidimensional cost of sending a packet on the related
+network link: each component of the weights vector represents a different QoS
+metric value (e.g. bandwidth, cost, delay, packet loss). The second step
+consists in writing this graph as a program in Soft Constraint Logic
+Programming (SCLP): the engine of this framework is then able to find the best
+paths/trees by optimizing their costs and solving the constraints imposed on
+them (e.g. delay < 40msec), thus finding a solution to QoS routing problems.
+Moreover, c-semiring structures are a convenient tool to model QoS metrics. At
+last, we provide an implementation of the framework over scale-free networks
+and we suggest how the performance can be improved.

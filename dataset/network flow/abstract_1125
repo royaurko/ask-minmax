@@ -1,0 +1,13 @@
+In 3G UMTS, two main transport channels have been provided for downlink data
+transmission: a common FACH channel and a dedicated DCH channel. The
+performance of TCP in UMTS depends much on the channel switching policy used.
+In this paper, we propose and analyze three new basic threshold-based channel
+switching policies for UMTS that we name as QS (Queue Size), FS (Flow Size) and
+QSFS (QS & FS combined) policy. These policies significantly improve over a
+modified threshold policy in [1] by about 17% in response time metrics. We
+further propose and evaluate a new improved switching policy that we call
+FS-DCH (at-least flow-size threshold on DCH) policy. This policy is biased
+towards short TCP flows of few packets and is thus a cross-layer policy that
+improves the performance of TCP by giving priority to the initial few packets
+of a flow on the fast DCH channel. Extensive simulation results confirm this
+improvement for the case when number of TCP connections is low.

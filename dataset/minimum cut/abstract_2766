@@ -1,0 +1,17 @@
+The problem of computing functions of values at the nodes in a network in a
+totally distributed manner, where nodes do not have unique identities and make
+decisions based only on local information, has applications in sensor,
+peer-to-peer, and ad-hoc networks. The task of computing separable functions,
+which can be written as linear combinations of functions of individual
+variables, is studied in this context. Known iterative algorithms for averaging
+can be used to compute the normalized values of such functions, but these
+algorithms do not extend in general to the computation of the actual values of
+separable functions.
+  The main contribution of this paper is the design of a distributed randomized
+algorithm for computing separable functions. The running time of the algorithm
+is shown to depend on the running time of a minimum computation algorithm used
+as a subroutine. Using a randomized gossip mechanism for minimum computation as
+the subroutine yields a complete totally distributed algorithm for computing
+separable functions. For a class of graphs with small spectral gap, such as
+grid graphs, the time used by the algorithm to compute averages is of a smaller
+order than the time required by a known iterative averaging scheme.

@@ -1,0 +1,15 @@
+Peg solitaire is a game generalized to connected graphs by Beeler and
+Hoilman. In the game pegs are placed on all but one vertex. If $xyz$ form a
+3-vertex path and $x$ and $y$ each have a peg but $z$ does not, then we can
+remove the pegs at $x$ and $y$ and place a peg at $z$. By analogy with the
+moves in the original game, this is called a jump. The goal of the peg
+solitaire game on graphs is to find jumps that reduce the number of pegs on the
+graph to 1.
+  Beeler and Rodriguez proposed a variant where we instead want to maximize the
+number of pegs remaining when no more jumps can be made. Maximizing over all
+initial locations of a single hole, the maximum number of pegs left on a graph
+$G$ when no jumps remain is the fool's solitaire number $F(G)$. We determine
+the fool's solitaire number for the join of any graphs $G$ and $H$. For the
+cartesian product, we determine $F(G \Box K_k)$ when $k \ge 3$ and $G$ is
+connected and show why our argument fails when $k=2$. Finally, we give
+conditions on graphs $G$ and $H$ that imply $F(G \Box H) \ge F(G) F(H)$.

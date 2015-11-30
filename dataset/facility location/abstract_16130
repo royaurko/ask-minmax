@@ -1,0 +1,19 @@
+We study complexity of the model-checking problems for LTL with registers
+(also known as freeze LTL) and for first-order logic with data equality tests
+over one-counter automata. We consider several classes of one-counter automata
+(mainly deterministic vs. nondeterministic) and several logical fragments
+(restriction on the number of registers or variables and on the use of
+propositional variables for control locations). The logics have the ability to
+store a counter value and to test it later against the current counter value.
+We show that model checking over deterministic one-counter automata is
+PSPACE-complete with infinite and finite accepting runs. By constrast, we prove
+that model checking freeze LTL in which the until operator is restricted to the
+eventually operator over nondeterministic one-counter automata is undecidable
+even if only one register is used and with no propositional variable. As a
+corollary of our proof, this also holds for first-order logic with data
+equality tests restricted to two variables. This makes a difference with the
+facts that several verification problems for one-counter automata are known to
+be decidable with relatively low complexity, and that finitary satisfiability
+for the two logics are decidable. Our results pave the way for model-checking
+memoryful (linear-time) logics over other classes of operational models, such
+as reversal-bounded counter machines.

@@ -1,0 +1,15 @@
+Large systems are commonly internetworked. A security policy describes the
+communication relationship between the networked entities. The security policy
+defines rules, for example that A can connect to B, which results in a directed
+graph. However, this policy is often implemented in the network, for example by
+firewalls, such that A can establish a connection to B and all packets
+belonging to established connections are allowed. This stateful implementation
+is usually required for the network's functionality, but it introduces the
+backflow from B to A, which might contradict the security policy. We derive
+compliance criteria for a policy and its stateful implementation. In
+particular, we provide a criterion to verify the lack of side effects in linear
+time. Algorithms to automatically construct a stateful implementation of
+security policy rules are presented, which narrows the gap between
+formalization and real-world implementation. The solution scales to large
+networks, which is confirmed by a large real-world case study. Its correctness
+is guaranteed by the Isabelle/HOL theorem prover.

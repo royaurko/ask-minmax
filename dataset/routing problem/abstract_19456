@@ -1,0 +1,20 @@
+We propose a multi input multi output(MIMO) system identification framework
+by interpreting the MIMO system in terms of a multirate synthesis filter bank.
+The proposed methodology is discussed in two steps: in the first step the MIMO
+system is interpreted as a synthesis filter bank and the second step is to
+convert the MIMO system into a SISO system "without any loss of information",
+which re-structures the system identification problem into a SISO form. The
+system identification problem, in its new form, is identical to the problem of
+obtaining the signal matched synthesis filter bank (SMSFB) as proposed in Part
+II. Since we have developed fast algorithms to obtain the filter bank
+coefficients in Part II, for "the given data case" as well as "the given
+statistics case", we can use these algorithm for the MIMO system identification
+as well. This framework can have an adaptive as well as block processing
+implementation. The algorithms, used here, involve only scalar computations,
+unlike the conventional MIMO system identification algorithms where one
+requires matrix computations. These order recursive algorithm can also be used
+to obtain approximate smaller order model for large order systems without using
+any model order reduction algorithm. The proposed identification framework can
+also be used for SISO LPTV system identification and also for a SIMO or MISO
+system. The efficacy of the proposed scheme is validated and its performance in
+the presence of measurement noise is illustrated using simulation results.

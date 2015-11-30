@@ -1,0 +1,24 @@
+Ready access to emerging databases of gene annotation and functional pathways
+has shifted assessments of differential expression in DNA microarray studies
+from single genes to groups of genes with shared biological function. This
+paper takes a critical look at existing methods for assessing the differential
+expression of a group of genes (functional category), and provides some
+suggestions for improved performance. We begin by presenting a general
+framework, in which the set of genes in a functional category is compared to
+the complementary set of genes on the array. The framework includes tests for
+overrepresentation of a category within a list of significant genes, and
+methods that consider continuous measures of differential expression. Existing
+tests are divided into two classes. Class 1 tests assume gene-specific measures
+of differential expression are independent, despite overwhelming evidence of
+positive correlation. Analytic and simulated results are presented that
+demonstrate Class 1 tests are strongly anti-conservative in practice. Class 2
+tests account for gene correlation, typically through array permutation that by
+construction has proper Type I error control for the induced null. However,
+both Class 1 and Class 2 tests use a null hypothesis that all genes have the
+same degree of differential expression. We introduce a more sensible and
+general (Class 3) null under which the profile of differential expression is
+the same within the category and complement. Under this broader null, Class 2
+tests are shown to be conservative. We propose standard bootstrap methods for
+testing against the Class 3 null and demonstrate they provide valid Type I
+error control and more power than array permutation in simulated datasets and
+real microarray experiments.

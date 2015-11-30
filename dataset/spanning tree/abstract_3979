@@ -1,0 +1,18 @@
+In this paper, we address the scenario where nodes with sensor data are
+connected in a tree network, and every node wants to compute a given symmetric
+Boolean function of the sensor data. We first consider the problem of computing
+a function of two nodes with integer measurements. We allow for block
+computation to enhance data fusion efficiency, and determine the minimum
+worst-case total number of bits to be exchanged to perform the desired
+computation. We establish lower bounds using fooling sets, and provide a novel
+scheme which attains the lower bounds, using information theoretic tools. For a
+class of functions called sum-threshold functions, this scheme is shown to be
+optimal. We then turn to tree networks and derive a lower bound for the number
+of bits exchanged on each link by viewing it as a two node problem. We show
+that the protocol of recursive innetwork aggregation achieves this lower bound
+in the case of sumthreshold functions. Thus we have provided a communication
+and in-network computation strategy that is optimal for each link. All the
+results can be extended to the case of non-binary alphabets. In the case of
+general graphs, we present a cut-set lower bound, and an achievable scheme
+based on aggregation along trees. For complete graphs, the complexity of this
+scheme is no more than twice that of the optimal scheme.

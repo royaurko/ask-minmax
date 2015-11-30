@@ -1,0 +1,25 @@
+The smart power grid aims at harnessing information and communication
+technologies to enhance reliability and enforce sensible use of energy. Its
+realization is geared by the fundamental goal of effective management of demand
+load. In this work, we envision a scenario with real-time communication between
+the operator and consumers. The grid operator controller receives requests for
+power demands from consumers, with different power requirement, duration, and a
+deadline by which it is to be completed. The objective is to devise a power
+demand task scheduling policy that minimizes the grid operational cost over a
+time horizon. The operational cost is a convex function of instantaneous power
+consumption and reflects the fact that each additional unit of power needed to
+serve demands is more expensive as demand load increases.First, we study the
+off-line demand scheduling problem, where parameters are fixed and known. Next,
+we devise a stochastic model for the case when demands are generated
+continually and scheduling decisions are taken online and focus on long-term
+average cost. We present two instances of power consumption control based on
+observing current consumption. First, the controller may choose to serve a new
+demand request upon arrival or to postpone it to the end of its deadline.
+Second, the additional option exists to activate one of the postponed demands
+when an active demand terminates. For both instances, the optimal policies are
+threshold based. We derive a lower performance bound over all policies, which
+is asymptotically tight as deadlines increase. We propose the Controlled
+Release threshold policy and prove it is asymptotically optimal. The policy
+activates a new demand request if the current power consumption is less than a
+threshold, otherwise it is queued. Queued demands are scheduled when their
+deadline expires or when the consumption drops below the threshold.

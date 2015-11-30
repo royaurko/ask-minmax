@@ -1,0 +1,15 @@
+We consider the problem of multiple change-point estimation in the mean of a
+Gaussian AR(1) process. Taking into account the dependence structure does not
+allow us to use the dynamic programming algorithm, which is the only algorithm
+giving the optimal solution in the independent case. We propose a robust
+estimator of the autocorrelation parameter, which is consistent and satisfies a
+central limit theorem. Then, we propose to follow the classical inference
+approach, by plugging this estimator in the criteria used for change-points
+estimation. We show that the asymptotic properties of these estimators are the
+same as those of the classical estimators in the independent framework. The
+same plug-in approach is then used to approximate the modified BIC and choose
+the number of segments. This method is implemented in the R package AR1seg and
+is available from the Comprehensive R Archive Network (CRAN). This package is
+used in the simulation section in which we show that for finite sample sizes
+taking into account the dependence structure improves the statistical
+performance of the change-point estimators and of the selection criterion.

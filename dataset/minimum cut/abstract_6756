@@ -1,0 +1,20 @@
+We present three related ways of using Transfer Learning to improve feature
+selection. The three methods address different problems, and hence share
+different kinds of information between tasks or feature classes, but all three
+are based on the information theoretic Minimum Description Length (MDL)
+principle and share the same underlying Bayesian interpretation. The first
+method, MIC, applies when predictive models are to be built simultaneously for
+multiple tasks (``simultaneous transfer'') that share the same set of features.
+MIC allows each feature to be added to none, some, or all of the task models
+and is most beneficial for selecting a small set of predictive features from a
+large pool of features, as is common in genomic and biological datasets. Our
+second method, TPC (Three Part Coding), uses a similar methodology for the case
+when the features can be divided into feature classes. Our third method,
+Transfer-TPC, addresses the ``sequential transfer'' problem in which the task
+to which we want to transfer knowledge may not be known in advance and may have
+different amounts of data than the other tasks. Transfer-TPC is most beneficial
+when we want to transfer knowledge between tasks which have unequal amounts of
+labeled data, for example the data for disambiguating the senses of different
+verbs. We demonstrate the effectiveness of these approaches with experimental
+results on real world data pertaining to genomics and to Word Sense
+Disambiguation (WSD).

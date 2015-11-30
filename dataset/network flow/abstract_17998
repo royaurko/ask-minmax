@@ -1,0 +1,22 @@
+Protocols developed during the last years for Wireless Sensor Networks (WSNs)
+are mainly focused on energy efficiency and autonomous mechanisms (e.g.
+self-organization, self-configuration, etc). Nevertheless, with new WSN
+applications, appear new QoS requirements such as time constraints. Real-time
+applications require the packets to be delivered before a known time bound
+which depends on the application requirements. We particularly focus on
+applications which consist in alarms sent to the sink node. We propose
+Real-Time X-layer Protocol (RTXP), a real-time communication protocol. To the
+best of our knowledge, RTXP is the first MAC and routing real-time
+communication protocol that is not centralized, but instead relies only on
+local information. The solution is cross-layer (X-layer) because it allows to
+control the delays due to MAC and Routing layers interactions. RTXP uses a
+suited hop-count-based Virtual Coordinate System which allows deterministic
+medium access and forwarder selection. In this paper we describe the protocol
+mechanisms. We give theoretical bound on the end-to-end delay and the capacity
+of the protocol. Intensive simulation results confirm the theoretical
+predictions and allow to compare with a real-time centralized solution. RTXP is
+also simulated under harsh radio channel, in this case the radio link
+introduces probabilistic behavior. Nevertheless, we show that RTXP it performs
+better than a non-deterministic solution. It thus advocates for the usefulness
+of designing real-time (deterministic) protocols even for highly unreliable
+networks such as WSNs.

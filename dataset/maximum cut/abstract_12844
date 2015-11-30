@@ -1,0 +1,15 @@
+Regions in the genome that affect complex traits, quantitative trait loci
+(QTL), can be identified using statistical analysis of genetic and phenotypic
+data. When restricted maximum-likelihood (REML) models are used, the mapping
+procedure is normally computationally demanding. We develop a new efficient
+computational scheme for QTL mapping using variance component analysis and the
+AI-REML algorithm. The algorithm uses an exact or approximative low-rank
+representation of the identity-by-descent matrix, which combined with the
+Woodbury formula for matrix inversion results in that the computations in the
+AI-REML iteration body can be performed more efficiently. For cases where an
+exact low-rank representation of the IBD matrix is available a-priori, the
+improved AI-REML algorithm normally runs almost twice as fast compared to the
+standard version. When an exact low-rank representation is not available, a
+truncated spectral decomposition is used to determine a low-rank approximation.
+We show that also in this case, the computational efficiency of the AI-REML
+scheme can often be significantly improved.

@@ -1,0 +1,19 @@
+A cut set is a collection of component failure modes that could lead to a
+system failure. Cut Set Analysis (CSA) is applied to critical systems to
+identify and rank system vulnerabilities at design time. Model checking tools
+have been used to automate the generation of minimal cut sets but are generally
+based on checking reachability of system failure states. This paper describes a
+new approach to CSA using a Linear Temporal Logic (LTL) model checker called BT
+Analyser that supports the generation of multiple counterexamples. The approach
+enables a broader class of system failures to be analysed, by generalising from
+failure state formulae to failure behaviours expressed in LTL. The traditional
+approach to CSA using model checking requires the model or system failure to be
+modified, usually by hand, to eliminate already-discovered cut sets, and the
+model checker to be rerun, at each step. By contrast, the new approach works
+incrementally and fully automatically, thereby removing the tedious and
+error-prone manual process and resulting in significantly reduced computation
+time. This in turn enables larger models to be checked. Two different
+strategies for using BT Analyser for CSA are presented. There is generally no
+single best strategy for model checking: their relative efficiency depends on
+the model and property being analysed. Comparative results are given for the
+A320 hydraulics case study in the Behavior Tree modelling language.

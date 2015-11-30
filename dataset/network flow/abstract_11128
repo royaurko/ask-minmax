@@ -1,0 +1,19 @@
+The paper presents the gossip interactive Kalman filter (GIKF) for
+distributed Kalman filtering for networked systems and sensor networks, where
+inter-sensor communication and observations occur at the same time-scale. The
+communication among sensors is random; each sensor occasionally exchanges its
+filtering state information with a neighbor depending on the availability of
+the appropriate network link. We show that under a weak distributed
+detectability condition:
+  1. the GIKF error process remains stochastically bounded, irrespective of the
+instability properties of the random process dynamics; and
+  2. the network achieves \emph{weak consensus}, i.e., the conditional
+estimation error covariance at a (uniformly) randomly selected sensor converges
+in distribution to a unique invariant measure on the space of positive
+semi-definite matrices (independent of the initial state.)
+  To prove these results, we interpret the filtered states (estimates and error
+covariances) at each node in the GIKF as stochastic particles with local
+interactions. We analyze the asymptotic properties of the error process by
+studying as a random dynamical system the associated switched (random) Riccati
+equation, the switching being dictated by a non-stationary Markov chain on the
+network graph.

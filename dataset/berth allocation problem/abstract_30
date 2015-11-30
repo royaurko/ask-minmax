@@ -1,0 +1,20 @@
+We consider robust resource allocation of services in Clouds. More
+specifically, we consider the case of a large public or private Cloud platform
+that runs a relatively small set of large and independent services. These
+services are characterized by their demand along several dimensions (CPU,
+memory,...) and by their quality of service requirements, that have been
+defined through an SLA in the case of a public Cloud or fixed by the
+administrator in the case of a private Cloud. This quality of service defines
+the required robustness of the service, by setting an upper limit on the
+probability that the provider fails to allocate the required quantity of
+resources. This maximum probability of failure can be transparently turned into
+a pair (price,penalty). Failures can indeed hit the platform, and resilience is
+provided through service replication. Our contribution is two-fold. First, we
+propose a resource allocation strategy whose complexity is logarithmic in the
+number of resources, what makes it very efficient for large platforms. Second,
+we propose an efficient algorithm based on rare events detection techniques in
+order to estimate the robustness of an allocation, a problem that has been
+proven to be P-complete. Finally, we provide an analysis of the proposed
+strategy through an extensive set of simulations, both in terms of the overall
+number of allocated resources and in terms of time necessary to compute the
+allocation.

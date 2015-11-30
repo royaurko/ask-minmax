@@ -1,0 +1,11 @@
+There are numerous examples of problems in symbolic algebra in which the
+required storage grows far beyond the limitations even of the distributed RAM
+of a cluster. Often this limitation determines how large a problem one can
+solve in practice. Roomy provides a minimally invasive system to modify the
+code for such a computation, in order to use the local disks of a cluster or a
+SAN as a transparent extension of RAM.
+  Roomy is implemented as a C/C++ library. It provides some simple data
+structures (arrays, unordered lists, and hash tables). Some typical programming
+constructs that one might employ in Roomy are: map, reduce, duplicate
+elimination, chain reduction, pair reduction, and breadth-first search. All
+aspects of parallelism and remote I/O are hidden within the Roomy library.

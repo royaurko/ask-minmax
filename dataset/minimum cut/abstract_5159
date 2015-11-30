@@ -1,0 +1,11 @@
+Given a Boolean function f, the quantity ess(f) denotes the largest set of
+assignments that falsify f, no two of which falsify a common implicate of f.
+Although ess(f)$ is clearly a lower bound on cnf_size(f) (the minimum number of
+clauses in a CNF formula for f), Cepek et al. showed that it is not, in
+general, a tight lower bound. They gave examples of functions f for which there
+is a small gap between ess(f) and cnf_size(f). We demonstrate significantly
+larger gaps. We show that the gap can be exponential in n for arbitrary Boolean
+functions, and Theta(sqrt{n}) for Horn functions, where n is the number of
+variables of f. We also introduce a natural extension of the quantity ess(f),
+which we call ess_k(f), which is the largest set of assignments, no k of which
+falsify a common implicate of f.

@@ -1,0 +1,11 @@
+We describe the approach to linguistic variation taken by the Motorola speech
+synthesizer. A pan-dialectal pronunciation dictionary is described, which
+serves as the training data for a neural network based letter-to-sound
+converter. Subsequent to dictionary retrieval or letter-to-sound generation,
+pronunciations are submitted a neural network based postlexical module. The
+postlexical module has been trained on aligned dictionary pronunciations and
+hand-labeled narrow phonetic transcriptions. This architecture permits the
+learning of individual postlexical variation, and can be retrained for each
+speaker whose voice is being modeled for synthesis. Learning variation in this
+way can result in greater naturalness for the synthetic speech that is produced
+by the system.

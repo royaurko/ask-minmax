@@ -1,0 +1,25 @@
+Translation is an important stage in gene expression. During this stage,
+macro-molecules called ribosomes travel along the mRNA strand linking
+amino-acids together in a specific order to create a functioning protein. An
+important question is how to maximize protein production. Indeed, translation
+is known to consume most of the cell's energy and it is natural to assume that
+evolution shaped this process so that it maximizes the protein production rate.
+If this is indeed so then one can estimate various parameters of the
+translation machinery by solving an appropriate mathematical optimization
+problem. The same problem also arises in the context of synthetic biology,
+namely, re-engineer heterologous genes in order to maximize their translation
+rate in a host organism. We consider the problem of maximizing the protein
+production rate using a computational model for translation-elongation called
+the ribosome flow model (RFM). This model describes the flow of the ribosomes
+along an mRNA chain of length n using a set of n first-order nonlinear ODEs. It
+also includes n+1 positive parameters: the ribosomal initiation rate into the
+mRNA chain, and n elongation rates along the chain sites. We show that the
+steady-state translation rate in the RFM is a strictly concave function of its
+parameters. This means that the problem of maximizing the translation rate
+under a suitable constraint always admits a unique solution, and that this
+solution can be determined using highly-efficient algorithms for solving convex
+optimization problems even for large values of n. Furthermore, our analysis
+shows that the optimal translation rate can be computed based only on the
+optimal initiation rate and the elongation rate of the codons near the
+beginning of the ORF. We discuss some applications of the theoretical results
+to synthetic biology, molecular evolution, and functional genomics.

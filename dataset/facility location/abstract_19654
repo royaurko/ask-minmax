@@ -1,0 +1,29 @@
+The purpose of this paper is to point the effectiveness of the
+Jordan-Chevalley decomposition, i.e. the decomposition of a square matrix $U$
+with coefficients in a field $k$ containing the eigenvalues of $U$ as a sum
+$U=D+N,$ where $D$ is a diagonalizable matrix and $N$ a nilpotent matrix which
+commutes with $D.$ The most general version of this decomposition shows that
+every separable element $u$ of a $k$-algebra $A$ can be written in a unique way
+as a sum $u=d+n,$ where $d \in A$ is absolutely semi-simple and where $n\in A$
+is nilpotent and commutes with $d.$ In fact an algorithm, due to C. Chevalley,
+allows to compute this decomposition: this algorithm is an adaptation to this
+context of the Newton method, which gives here the exact value of the
+absolutely semi-simple part $d$ of $u$ after a finite number of iterations. We
+illustrate the effectiveness of this method by computing the decomposition of a
+$15 \times 15$ matrix having eigenvalues of multiplicity 3 which are not
+computable exactly. We also discuss the other classical method, based on the
+chinese remainder theorem, which gives the Jordan-Chevalley decomposition under
+the form $u=q(u) +[u-q(u)],$ with $q(u)$ absolutely semi-simple, $u-q(u)$
+nilpotent, where $q$ is any solution of a system of congruence equations
+related to the roots of a polynomial $p\in k[x]$ such that $p(u)=0.$ It is
+indeed possible to compute $q$ without knowing the roots of $p$ by applying the
+algorithm discussed above to $\pi(x),$ where $\pi: k[x] \to k[x]/pk[x]$ is the
+canonical surjection. We obtain this way after 2 iterations the polynomial $q$
+of degree 14 associated to the $15\times 15$ matrix mentioned above. We justify
+by historical considerations the use of the name "Jordan-Chevalley
+decomposition", instead of the name "Dunford decomposition" which also appears
+in the literature, and we discuss multiplicative versions of this decomposition
+in semi-simple Lie groups. We conclude this paper showing why this
+decomposition should play a central role in a linear algebra course, even at a
+rather elementary level. Our arguments are based on a teaching experience of
+more than 10 years in an engineering school located on the Basque Coast.

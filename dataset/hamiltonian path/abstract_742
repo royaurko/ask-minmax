@@ -1,0 +1,21 @@
+We present an algorithm for the efficient sampling of conditional paths of
+stochastic differential equations (SDEs). While unconditional path sampling of
+SDEs is straightforward, albeit expensive for high dimensional systems of SDEs,
+conditional path sampling can be difficult even for low dimensional systems.
+This is because we need to produce sample paths of the SDE which respect both
+the dynamics of the SDE and the initial and endpoint conditions. The dynamics
+of a SDE are governed by the deterministic term (drift) and the stochastic term
+(noise). Instead of producing conditional paths directly from the original SDE,
+one can consider a sequence of SDEs with modified drifts. The modified drifts
+should be chosen so that it is easier to produce sample paths which satisfy the
+initial and endpoint conditions. Also, the sequence of modified drifts
+converges to the drift of the original SDE. We construct a simple Markov Chain
+Monte Carlo (MCMC) algorithm which samples, in sequence, conditional paths from
+the modified SDEs, by taking the last sampled path at each level of the
+sequence as an initial condition for the sampling at the next level in the
+sequence. The algorithm can be thought of as a stochastic analog of
+deterministic homotopy methods for solving nonlinear algebraic equations or as
+a SDE generalization of simulated annealing. The algorithm is particularly
+suited for filtering/smoothing applications. We show how it can be used to
+improve the performance of particle filters. Numerical results for filtering of
+a stochastic differential equation are included.

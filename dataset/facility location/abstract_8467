@@ -1,0 +1,23 @@
+A half century ago, Huber evaluated the minimax asymptotic variance in scalar
+location estimation, $ \min_\psi \max_{F \in {\cal F}_\epsilon} V(\psi, F) =
+\frac{1}{I(F_\epsilon^*)} $, where $V(\psi,F)$ denotes the asymptotic variance
+of the $(M)$-estimator for location with score function $\psi$, and
+$I(F_\epsilon^*)$ is the minimal Fisher information $ \min_{{\cal F}_\epsilon}
+I(F)$ over the class of $\epsilon$-Contaminated Normal distributions.
+  We consider the linear regression model $Y = X\theta_0 + W$,
+$W_i\sim_{\text{i.i.d.}}F$, and iid Normal predictors $X_{i,j}$, working in the
+high-dimensional-limit asymptotic where the number $n$ of observations and $p$
+of variables both grow large, while $n/p \rightarrow m \in (1,\infty)$; hence
+$m$ plays the role of `asymptotic number of observations per parameter
+estimated'. Let $V_m(\psi,F)$ denote the per-coordinate asymptotic variance of
+the $(M)$-estimator of regression in the $n/p \rightarrow m$ regime. Then $V_m
+\neq V$; however $V_m \rightarrow V$ as $m \rightarrow \infty$.
+  In this paper we evaluate the minimax asymptotic variance of the Huber
+$(M)$-estimate. The statistician minimizes over the family
+$(\psi_\lambda)_{\lambda > 0}$ of all tunings of Huber $(M)$-estimates of
+regression, and Nature maximizes over gross-error contaminations $F \in {\cal
+F}_\epsilon$. Suppose that $I(F_\epsilon^*) \cdot m > 1$. Then $ \min_\lambda
+\max_{F \in {\cal F}_\epsilon} V_m(\psi_\lambda, F) = \frac{1}{I(F_\epsilon^*)
+- 1/m} $. Strikingly, if $I(F_\epsilon^*) \cdot m \leq 1$, then the minimax
+asymptotic variance is $+\infty$. The breakdown point is where the Fisher
+information per parameter equals unity.

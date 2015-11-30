@@ -1,0 +1,20 @@
+In the Wiener disorder problem, the drift of a Wiener process changes
+suddenly at some unknown and unobservable disorder time. The objective is to
+detect this change as quickly as possible after it happens. Earlier work on the
+Bayesian formulation of this problem brings optimal (or asymptotically optimal)
+detection rules assuming that the prior distribution of the change time is
+given at time zero, and additional information is received by observing the
+Wiener process only. Here, we consider a different information structure where
+possible causes of this disorder are observed. More precisely, we assume that
+we also observe an arrival/counting process representing external shocks. The
+disorder happens because of these shocks, and the change time coincides with
+one of the arrival times. Such a formulation arises, for example, from
+detecting a change in financial data caused by major financial events, or
+detecting damages in structures caused by earthquakes. In this paper, we
+formulate the problem in a Bayesian framework assuming that those observable
+shocks form a Poisson process. We present an optimal detection rule that
+minimizes a linear Bayes risk, which includes the expected detection delay and
+the probability of early false alarms. We also give the solution of the
+``variational formulation'' where the objective is to minimize the detection
+delay over all stopping rules for which the false alarm probability does not
+exceed a given constant.

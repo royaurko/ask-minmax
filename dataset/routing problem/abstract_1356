@@ -1,0 +1,18 @@
+Performance evaluation of the routing node in terms of latency is the
+characteristics of an efficient design of Buffer in input module. It is
+intended to study and quantify the behavior of the single packet array design
+in relation to the multiple packet array design. The utilization efficiency of
+the packet buffer array improves when a common buffer is used instead of
+individual buffers in each input port. First Poissons Queuing model was
+prepared to manifest the differences in packet delays. The queuing model can be
+classified as (M/M/1), (32/FIFO). Arrival rate has been assumed to be Poisson
+distributed with a mean arrival rate of 10 x 1000000. The service rate is
+assumed to be exponentially distributed with a mean service rate of 10.05 x
+1000000. It has been observed that latency in Common Buffer improved by 46
+percent over its distributed buffer. A Simulink model later simulated on MATLAB
+to calculate the improvement in packet delay. It has been observed that the
+delay improved by approximately 40 percent through the use of a common buffer.
+A verilog RTL for both common and shared buffer has been prepared and later
+synthesized using Design Compiler of SYNOPSYS. In distributed buffer, arrival
+of data packet could be delayed by 2 or 4 clock cycles which lead to latency
+improvement either by 17 percent or 34 percent in a common buffer

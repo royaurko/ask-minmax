@@ -1,0 +1,16 @@
+For text retrieval systems, the assumption that all data structures reside in
+main memory is increasingly common. In this context, we present a novel
+incremental inverted indexing algorithm for web-scale collections that directly
+constructs compressed postings lists in memory. Designing efficient in-memory
+algorithms requires understanding modern processor architectures and memory
+hierarchies: in this paper, we explore the issue of postings lists contiguity.
+Naturally, postings lists that occupy contiguous memory regions are preferred
+for retrieval, but maintaining contiguity increases complexity and slows
+indexing. On the other hand, allowing discontiguous index segments simplifies
+index construction but decreases retrieval performance. Understanding this
+tradeoff is our main contribution: We find that co-locating small groups of
+inverted list segments yields query evaluation performance that is
+statistically indistinguishable from fully-contiguous postings lists. In other
+words, it is not necessary to lay out in-memory data structures such that all
+postings for a term are contiguous; we can achieve ideal performance with a
+relatively small amount of effort.

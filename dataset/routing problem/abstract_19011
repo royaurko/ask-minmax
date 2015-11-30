@@ -1,0 +1,18 @@
+In this review, we describe applications of the pruned-enriched Rosenbluth
+method (PERM), a sequential Monte Carlo algorithm with resampling, to various
+problems in polymer physics. PERM produces samples according to any given
+prescribed weight distribution, by growing configurations step by step with
+controlled bias, and correcting "bad" configurations by "population control".
+The latter is implemented, in contrast to other population based algorithms
+like e.g. genetic algorithms, by depth-first recursion which avoids storing all
+members of the population at the same time in computer memory. The problems we
+discuss all concern single polymers (with one exception), but under various
+conditions: Homopolymers in good solvents and at the $\Theta$ point, semi-stiff
+polymers, polymers in confining geometries, stretched polymers undergoing a
+forced globule-linear transition, star polymers, bottle brushes, lattice
+animals as a model for randomly branched polymers, DNA melting, and finally --
+as the only system at low temperatures, lattice heteropolymers as simple models
+for protein folding. PERM is for some of these problems the method of choice,
+but it can also fail. We discuss how to recognize when a result is reliable,
+and we discuss also some types of bias that can be crucial in guiding the
+growth into the right directions.

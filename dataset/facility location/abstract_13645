@@ -1,0 +1,17 @@
+We propose an architecture for fine-grained visual categorization that
+approaches expert human performance in the classification of bird species. Our
+architecture first computes an estimate of the object's pose; this is used to
+compute local image features which are, in turn, used for classification. The
+features are computed by applying deep convolutional nets to image patches that
+are located and normalized by the pose. We perform an empirical study of a
+number of pose normalization schemes, including an investigation of higher
+order geometric warping functions. We propose a novel graph-based clustering
+algorithm for learning a compact pose normalization space. We perform a
+detailed investigation of state-of-the-art deep convolutional feature
+implementations and fine-tuning feature learning for fine-grained
+classification. We observe that a model that integrates lower-level feature
+layers with pose-normalized extraction routines and higher-level feature layers
+with unaligned image features works best. Our experiments advance
+state-of-the-art performance on bird species recognition, with a large
+improvement of correct classification rates over previous methods (75% vs.
+55-65%).

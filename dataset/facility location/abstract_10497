@@ -1,0 +1,12 @@
+We present the implementation of a batch job scheduler designed for
+single-point management of distributed tasks on a multi-node compute farm. The
+scheduler uses the notion of a meta-job to launch large computing tasks
+simultaneously on many nodes from a single user command. Job scheduling on
+specific computing nodes is predicated on the availability of user specified
+data files co-located with the CPUs where the analysis is meant to take place.
+Large I/O intensive data analyses may thus be efficiently conducted on multiple
+CPUs without the limitations implied by finite LAN or WAN bandwidths. Although
+this Scheduler was developed specifically for the STAR Collaboration at
+Brookhaven National Laboratory, its design is sufficiently general, it can be
+adapted to virtually any other data analysis tasks carried out by large
+scientific collaborations.

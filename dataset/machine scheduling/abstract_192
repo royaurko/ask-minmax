@@ -1,0 +1,15 @@
+A novel energy reduction strategy to maximally exploit the dynamic workload
+variation is proposed for the offline voltage scheduling of preemptive systems.
+The idea is to construct a fully-preemptive schedule that leads to minimum
+energy consumption when the tasks take on approximately the average execution
+cycles yet still guarantees no deadline violation during the worst-case
+scenario. End-time for each sub-instance of the tasks obtained from the
+schedule is used for the on-line dynamic voltage scaling (DVS) of the tasks.
+For the tasks that normally require a small number of cycles but occasionally a
+large number of cycles to complete, such a schedule provides more opportunities
+for slack utilization and hence results in larger energy saving. The concept is
+realized by formulating the problem as a Non-Linear Programming (NLP)
+optimization problem. Experimental results show that, by using the proposed
+scheme, the total energy consumption at runtime is reduced by as high as 60%
+for randomly generated task sets when comparing with the static scheduling
+approach only using worst case workload.

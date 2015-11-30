@@ -1,0 +1,13 @@
+We propose a new algorithm to obtain max flow for the multicommodity flow.
+This algorithm utilizes the max-flow min-cut theorem and the well known
+labeling algorithm due to Ford and Fulkerson [1]. We proceed as follows: We
+select one source/sink pair among the n distinguished source/sink pairs at a
+time and treat the given multicommodity network as a single commodity network
+for such chosen source/sink pair. Then applying standard labeling algorithm,
+separately for each sink/source pair, the feasible flow which is max flow and
+the corresponding minimum cut corresponding to each source/sink pair is
+obtained. A record is made of these cuts and the paths flowing through the
+edges of these cuts. This record is then utilized to develop our algorithm to
+obtain max flow for multicommodity flow. In this paper we have pinpointed the
+difficulty behind not getting a max flow min cut type theorem for
+multicommodity flow and found out a remedy.

@@ -1,0 +1,14 @@
+Simulation design is the choice of locations in parameter space at which
+simulations are to be run and is the first step in building an emulator capable
+of quickly providing estimates of simulation results for arbitrary locations in
+the parameter space. We introduce an alteration to the "OALHS" design used by
+Heitmann et al. (2006) that reduces the number of simulation runs required to
+achieve a fixed accuracy in our case study by a factor of two. We also compare
+interpolation procedures for emulators and find that interpolation via Gaussian
+Process models and via the much-easier-to-implement polynomial interpolation
+have comparable accuracy. A very simple emulation-building procedure consisting
+of a design sampled from the parameter prior distribution, combined with
+interpolation via polynomials also performs well. Although our primary
+motivation is efficient emulators of non-linear cosmological N-body
+simulations, in an appendix we describe an emulator for the CMB temperature
+power spectrum publicly available as computer code.

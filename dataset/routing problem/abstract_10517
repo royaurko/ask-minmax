@@ -1,0 +1,24 @@
+Many challenging tasks in sensor networks, including sensor calibration,
+ranking of nodes, monitoring, event region detection, collaborative filtering,
+collaborative signal processing, {\em etc.}, can be formulated as a problem of
+solving a linear system of equations. Several recent works propose different
+distributed algorithms for solving these problems, usually by using linear
+iterative numerical methods.
+  In this work, we extend the settings of the above approaches, by adding
+another dimension to the problem. Specifically, we are interested in {\em
+self-stabilizing} algorithms, that continuously run and converge to a solution
+from any initial state. This aspect of the problem is highly important due to
+the dynamic nature of the network and the frequent changes in the measured
+environment.
+  In this paper, we link together algorithms from two different domains. On the
+one hand, we use the rich linear algebra literature of linear iterative methods
+for solving systems of linear equations, which are naturally distributed with
+rapid convergence properties. On the other hand, we are interested in
+self-stabilizing algorithms, where the input to the computation is constantly
+changing, and we would like the algorithms to converge from any initial state.
+We propose a simple novel method called \syncAlg as a self-stabilizing variant
+of the linear iterative methods. We prove that under mild conditions the
+self-stabilizing algorithm converges to a desired result. We further extend
+these results to handle the asynchronous case.
+  As a case study, we discuss the sensor calibration problem and provide
+simulation results to support the applicability of our approach.

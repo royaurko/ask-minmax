@@ -1,0 +1,24 @@
+A NoC is composed by IP cores (Intellectual Propriety) and switches connected
+among themselves by communication channels. End-to-End Delay (EED)
+communication is accomplished by the exchange of data among IP cores. Often,
+the structure of particular messages is not adequate for the communication
+purposes. This leads to the concept of packet switching. In the context of
+NoCs, packets are composed by header, payload, and trailer. Packets are divided
+into small pieces called Flits. It appears of importance, to meet the required
+performance in NoC hardware resources. It should be specified in an earlier
+step of the system design. The main attention should be given to the choice of
+some network parameters such as the physical buffer size in the node. The EED
+and packet loss are some of the critical QoS metrics. Some real-time and
+multimedia applications bound up these parameters and require specific hardware
+resources and particular management approaches in the NoC switch. A traffic
+contract (SLA, Service Level Agreement) specifies the ability of a network or
+protocol to give guaranteed performance, throughput or latency bounds based on
+mutually agreed measures, usually by prioritizing traffic. A defined Quality of
+Service (QoS) may be required for some types of network real time traffic or
+multimedia applications. The main goal of this paper is, using the Network on
+Chip modeling architecture, to define a QoS metric. We focus on the network
+delay bound and packet losses. This approach is based on the Network Calculus
+theory, a mathematical model to represent the data flows behavior between IPs
+interconnected over NoC. We propose an approach of QoS-metric based on
+QoS-parameter prioritization factors for multi applications-service using
+calculus model.

@@ -1,0 +1,23 @@
+In this paper we present an $\tilde{O}(m\sqrt{n}\log^{O(1)}U)$ time algorithm
+for solving the maximum flow problem on directed graphs with $m$ edges, $n$
+vertices, and capacity ratio $U$. This improves upon the previous fastest
+running time of
+$O(m\min\left(n^{2/3},m^{1/2}\right)\log\left(n^{2}/m\right)\log U)$ achieved
+over 15 years ago by Goldberg and Rao. In the special case of solving dense
+directed unit capacity graphs our algorithm improves upon the previous fastest
+running times of of $O(\min\{m^{3/2},mn^{^{2/3}}\})$ achieved by Even and
+Tarjan and Karzanov over 35 years ago and of $\tilde{O}(m^{10/7})$ achieved
+recently by M\k{a}dry.
+  We achieve these results through the development and application of a new
+general interior point method that we believe is of independent interest. The
+number of iterations required by this algorithm is better than that predicted
+by analyzing the best self-concordant barrier of the feasible region. By
+applying this method to the linear programming formulations of maximum flow,
+minimum cost flow, and lossy generalized minimum cost flow and applying
+analysis by Daitch and Spielman we achieve running time of
+$\tilde{O}(m\sqrt{n}\log^{O(1)}(U/\epsilon))$ for these problems as well.
+Furthermore, our algorithm is parallelizable and using a recent nearly linear
+time work polylogarithmic depth Laplacian system solver of Spielman and Peng we
+achieve a $\tilde{O}(\sqrt{n}\log^{O(1)}(U/\epsilon))$ depth algorithm and
+$\tilde{O}(m\sqrt{n}\log^{O(1)}(U/\epsilon))$ work algorithm for solving these
+problems.

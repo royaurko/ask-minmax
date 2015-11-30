@@ -1,0 +1,26 @@
+Discrete-state, continuous-time Markov models are widely used in the modeling
+of biochemical reaction networks. Their complexity often precludes analytic
+solution, and we rely on stochastic simulation algorithms to estimate system
+statistics. The Gillespie algorithm is exact, but computationally costly as it
+simulates every single reaction. As such, approximate stochastic simulation
+algorithms such as the tau-leap algorithm are often used. Potentially
+computationally more efficient, the system statistics generated suffer from
+significant bias unless tau is relatively small, in which case the
+computational time can be comparable to that of the Gillespie algorithm. The
+multi-level method (Anderson and Higham, Multiscale Model. Simul. 2012) tackles
+this problem. A base estimator is computed using many (cheap) sample paths at
+low accuracy. The bias inherent in this estimator is then reduced using a
+number of corrections. Each correction term is estimated using a collection of
+paired sample paths where one path of each pair is generated at a higher
+accuracy compared to the other (and so more expensive). By sharing random
+variables between these paired paths the variance of each correction estimator
+can be reduced. This renders the multi-level method very efficient as only a
+relatively small number of paired paths are required to calculate each
+correction term. In the original multi-level method, each sample path is
+simulated using the tau-leap algorithm with a fixed value of $\tau$. This
+approach can result in poor performance when the reaction activity of a system
+changes substantially over the timescale of interest. By introducing a novel,
+adaptive time-stepping approach where $\tau$ is chosen according to the
+stochastic behaviour of each sample path we extend the applicability of the
+multi-level method to such cases. We demonstrate the efficiency of our method
+using a number of examples.

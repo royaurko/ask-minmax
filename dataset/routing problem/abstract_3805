@@ -1,0 +1,16 @@
+Optimization problems with rank constraints arise in many applications,
+including matrix regression, structured PCA, matrix completion and matrix
+decomposition problems. An attractive heuristic for solving such problems is to
+factorize the low-rank matrix, and to run projected gradient descent on the
+nonconvex factorized optimization problem. The goal of this problem is to
+provide a general theoretical framework for understanding when such methods
+work well, and to characterize the nature of the resulting fixed point. We
+provide a simple set of conditions under which projected gradient descent, when
+given a suitable initialization, converges geometrically to a statistically
+useful solution. Our results are applicable even when the initial solution is
+outside any region of local convexity, and even when the problem is globally
+concave. Working in a non-asymptotic framework, we show that our conditions are
+satisfied for a wide range of concrete models, including matrix regression,
+structured PCA, matrix completion with real and quantized observations, matrix
+decomposition, and graph clustering problems. Simulation results show excellent
+agreement with the theoretical predictions.

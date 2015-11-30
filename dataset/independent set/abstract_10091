@@ -1,0 +1,14 @@
+Suppose that we are given two dominating sets $D_s$ and $D_t$ of a graph $G$
+whose cardinalities are at most a given threshold $k$. Then, we are asked
+whether there exists a sequence of dominating sets of $G$ between $D_s$ and
+$D_t$ such that each dominating set in the sequence is of cardinality at most
+$k$ and can be obtained from the previous one by either adding or deleting
+exactly one vertex. This problem is known to be PSPACE-complete in general. In
+this paper, we study the complexity of this decision problem from the viewpoint
+of graph classes. We first prove that the problem remains PSPACE-complete even
+for planar graphs, bounded bandwidth graphs, split graphs, and bipartite
+graphs. We then give a general scheme to construct linear-time algorithms and
+show that the problem can be solved in linear time for cographs, trees, and
+interval graphs. Furthermore, for these tractable cases, we can obtain a
+desired sequence such that the number of additions and deletions is bounded by
+$O(n)$, where $n$ is the number of vertices in the input graph.

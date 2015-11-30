@@ -1,0 +1,17 @@
+Web-TLR is a Web verification engine that is based on the well-established
+Rewriting Logic--Maude/LTLR tandem for Web system specification and
+model-checking. In Web-TLR, Web applications are expressed as rewrite theories
+that can be formally verified by using the Maude built-in LTLR model-checker.
+Whenever a property is refuted, a counterexample trace is delivered that
+reveals an undesired, erroneous navigation sequence. Unfortunately, the
+analysis (or even the simple inspection) of such counterexamples may be
+unfeasible because of the size and complexity of the traces under examination.
+In this paper, we endow Web-TLR with a new Web debugging facility that supports
+the efficient manipulation of counterexample traces. This facility is based on
+a backward trace-slicing technique for rewriting logic theories that allows the
+pieces of information that we are interested to be traced back through inverse
+rewrite sequences. The slicing process drastically simplifies the computation
+trace by dropping useless data that do not influence the final result. By using
+this facility, the Web engineer can focus on the relevant fragments of the
+failing application, which greatly reduces the manual debugging effort and also
+decreases the number of iterative verifications.

@@ -1,0 +1,12 @@
+Given string $S[1..N]$ and integer $k$, the {\em suffix selection} problem is
+to determine the $k$th lexicographically smallest amongst the suffixes $S[i...
+N]$, $1 \leq i \leq N$. We study the suffix selection problem in the
+cache-aware model that captures two-level memory inherent in computing systems,
+for a \emph{cache} of limited size $M$ and block size $B$. The complexity of
+interest is the number of block transfers. We present an optimal suffix
+selection algorithm in the cache-aware model, requiring $\Thetah{N/B}$ block
+transfers, for any string $S$ over an unbounded alphabet (where characters can
+only be compared), under the common tall-cache assumption (i.e.
+$M=\Omegah{B^{1+\epsilon}}$, where $\epsilon<1$). Our algorithm beats the
+bottleneck bound for permuting an input array to the desired output array,
+which holds for nearly any nontrivial problem in hierarchical memory models.

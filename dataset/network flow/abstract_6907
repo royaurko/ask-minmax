@@ -1,0 +1,17 @@
+Diffeomorphic matching (only one of several names for this technique) is a
+technique for non-rigid registration of curves and surfaces in which the curve
+or surface is embedded in the flow of a time-series of vector fields. One seeks
+the flow between two topologically-equivalent curves or surfaces which
+minimises some metric defined on the vector fields, \emph{i.e.} the flow
+closest to the identity in some sense.
+  In this paper, we describe a new particle-mesh discretisation for the
+evolution of the geodesic flow and the embedded shape. Particle-mesh algorithms
+are very natural for this problem because Lagrangian particles (particles
+moving with the flow) can represent the movement of the shape whereas the
+vector field is Eulerian and hence best represented on a static mesh. We
+explain the derivation of the method, and prove conservation properties: the
+discrete method has a set of conserved momenta corresponding to the
+particle-relabelling symmetry which converge to conserved quantities in the
+continuous problem. We also introduce a new discretisation for the geometric
+current matching condition of (Vaillant and Glaunes, 2005). We illustrate the
+method and the derived properties with numerical examples.

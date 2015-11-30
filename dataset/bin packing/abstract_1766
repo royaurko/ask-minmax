@@ -1,0 +1,14 @@
+We propose a nested Gaussian process (nGP) as a locally adaptive prior for
+Bayesian nonparametric regression. Specified through a set of stochastic
+differential equations (SDEs), the nGP imposes a Gaussian process prior for the
+function's $m$th-order derivative. The nesting comes in through including a
+local instantaneous mean function, which is drawn from another Gaussian process
+inducing adaptivity to locally-varying smoothness. We discuss the support of
+the nGP prior in terms of the closure of a reproducing kernel Hilbert space,
+and consider theoretical properties of the posterior. The posterior mean under
+the nGP prior is shown to be equivalent to the minimizer of a nested penalized
+sum-of-squares involving penalties for both the global and local roughness of
+the function. Using highly-efficient Markov chain Monte Carlo for posterior
+inference, the proposed method performs well in simulation studies compared to
+several alternatives, and is scalable to massive data, illustrated through a
+proteomics application.

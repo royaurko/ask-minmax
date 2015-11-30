@@ -1,0 +1,19 @@
+The literature on clustering for continuous data is rich and wide;
+differently, that one developed for categorical data is still limited. In some
+cases, the problem is made more difficult by the presence of noise
+variables/dimensions that do not contain information about the clustering
+structure and could mask it. The aim of this paper is to propose a model for
+simultaneous clustering and dimensionality reduction of ordered categorical
+data able to detect the discriminative dimensions discarding the noise ones.
+Following the underlying response variable approach, the observed variables are
+considered as a discretization of underlying first-order latent continuous
+variables distributed as a Gaussian mixture. To recognize discriminative and
+noise dimensions, these variables are considered to be linear combinations of
+two independent sets of second-order latent variables where only one contains
+the information about the cluster structure while the other contains noise
+dimensions. The model specification involves multidimensional integrals that
+make the maximum likelihood estimation cumbersome and in some cases infeasible.
+To overcome this issue the parameter estimation is carried out through an
+EM-like algorithm maximizing a pairwise log-likelihood. Examples of application
+of the model on real and simulated data are performed to show the effectiveness
+of the proposal.

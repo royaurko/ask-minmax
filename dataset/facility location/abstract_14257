@@ -1,0 +1,16 @@
+Automated sensing instruments on satellites and aircraft have enabled the
+collection of massive amounts of high-resolution observations of spatial fields
+over large spatial regions. If these datasets can be efficiently exploited,
+they can provide new insights on a wide variety of issues. However, traditional
+spatial-statistical techniques such as kriging are not computationally feasible
+for big datasets. We propose a multi-resolution approximation (M-RA) of
+Gaussian processes observed at irregular locations in space. The M-RA process
+is specified as a linear combination of basis functions at multiple levels of
+spatial resolution, which can capture spatial structure from very fine to very
+large scales. The basis functions are automatically chosen to approximate a
+given covariance function, which can be nonstationary. All computations
+involving the M-RA, including parameter inference and prediction, are highly
+scalable for massive datasets. Crucially, the inference algorithms can also be
+parallelized to take full advantage of large distributed-memory computing
+environments. In comparisons using simulated data and a large satellite
+dataset, the M-RA outperforms a related state-of-the-art method.

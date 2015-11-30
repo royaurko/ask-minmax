@@ -1,0 +1,14 @@
+Symplectic integration algorithms are well-suited for long-term integrations
+of Hamiltonian systems because they preserve the geometric structure of the
+Hamiltonian flow. However, this desirable property is generally lost when
+adaptive timestep control is added to a symplectic integrator. We describe an
+adaptive-timestep symplectic integrator that can be used if the Hamiltonian is
+the sum of kinetic and potential energy components and the required timestep
+depends only on the potential energy (e.g. test-particle integrations in fixed
+potentials). In particular, we describe an explicit, reversible, symplectic,
+leapfrog integrator for a test particle in a near-Keplerian potential; this
+integrator has timestep proportional to distance from the attracting mass and
+has the remarkable property of integrating orbits in an inverse-square force
+field with only "along-track" errors; i.e. the phase-space shape of a Keplerian
+orbit is reproduced exactly, but the orbital period is in error by O(1/N^2),
+where N is the number of steps per period.

@@ -1,0 +1,14 @@
+Let P be a set of n points in the Euclidean plane and let O be the origin
+point in the plane. In the k-tour cover problem (called frequently the
+capacitated vehicle routing problem), the goal is to minimize the total length
+of tours that cover all points in P, such that each tour starts and ends in O
+and covers at most k points from P.
+  The k-tour cover problem is known to be NP-hard. It is also known to admit
+constant factor approximation algorithms for all values of k and even a
+polynomial-time approximation scheme (PTAS) for small values of k, i.e.,
+k=O(log n / log log n).
+  We significantly enlarge the set of values of k for which a PTAS is provable.
+We present a new PTAS for all values of k <= 2^{log^{\delta}n}, where \delta =
+\delta(\epsilon). The main technical result proved in the paper is a novel
+reduction of the k-tour cover problem with a set of n points to a small set of
+instances of the problem, each with O((k/\epsilon)^O(1)) points.

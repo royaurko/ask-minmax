@@ -1,0 +1,15 @@
+This article gives theoretical insights into the performance of K-SVD, a
+dictionary learning algorithm that has gained significant popularity in
+practical applications. The particular question studied here is when a
+dictionary $\Phi\in \mathbb{R}^{d \times K}$ can be recovered as local minimum
+of the minimisation criterion underlying K-SVD from a set of $N$ training
+signals $y_n =\Phi x_n$. A theoretical analysis of the problem leads to two
+types of identifiability results assuming the training signals are generated
+from a tight frame with coefficients drawn from a random symmetric
+distribution. First, asymptotic results showing, that in expectation the
+generating dictionary can be recovered exactly as a local minimum of the K-SVD
+criterion if the coefficient distribution exhibits sufficient decay. Second,
+based on the asymptotic results it is demonstrated that given a finite number
+of training samples $N$, such that $N/\log N = O(K^3d)$, except with
+probability $O(N^{-Kd})$ there is a local minimum of the K-SVD criterion within
+distance $O(KN^{-1/4})$ to the generating dictionary.

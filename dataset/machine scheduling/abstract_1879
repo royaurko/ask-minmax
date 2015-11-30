@@ -1,0 +1,24 @@
+We consider the problem of quickest event detection with sleep-wake
+scheduling in small extent wireless sensor networks in which, at each time
+slot, each sensor node in the awake state observes a sample and communicates
+the information to the fusion centre. The sensor nodes in the sleep state do
+not sample or communicate any information to the fusion centre (FC), thereby
+conserving energy. At each time slot, the FC, after having received the samples
+from the sensor nodes in the wake state, makes a decision to stop (and thus
+declare that the event has occurred) or to continue observing. If it decides to
+continue, the FC also makes the decision of choosing the number of sensor nodes
+to be in the wake state in the next time slot. We consider three alternative
+approaches to the problem of choosing the number of sensor nodes to be in the
+wake state in time slot k+1, based on the information available at time slot k,
+namely, 1. optimal control of M_{k+1}, the number of sensor nodes to be in the
+awake state in time slot k+1, 2. optimal control of q_{k+1}, the probability of
+a sensor node to be in the awake state in time slot k+1, and 3. optimal
+probability q that a sensor node is in the awake state in any time slot. In
+each case, we formulate the problem as a sequential decision process. We show
+that a sufficient statistic for the decision at time k is the a posteriori
+probability of change Pi_k. Also, we show that the optimal stopping rule is a
+threshold rule on Pi_k. The optimal policy for M_{k+1} can keep very few
+sensors wake during the prechange phase and then quickly increase the number of
+sensors in the wake state when a change is "suspected". Among the three
+sleep-wake algorithms described, we observe that the total cost is minimum for
+the optimum control of M_{k+1} and is maximum for the optimum control on q.

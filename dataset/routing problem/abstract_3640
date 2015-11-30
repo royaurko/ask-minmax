@@ -1,0 +1,13 @@
+One of the most common mechanisms used for speeding up problem solvers is
+macro-learning. Macros are sequences of basic operators acquired during problem
+solving. Macros are used by the problem solver as if they were basic operators.
+The major problem that macro-learning presents is the vast number of macros
+that are available for acquisition. Macros increase the branching factor of the
+search space and can severely degrade problem-solving efficiency. To make macro
+learning useful, a program must be selective in acquiring and utilizing macros.
+This paper describes a general method for selective acquisition of macros.
+Solvable training problems are generated in increasing order of difficulty. The
+only macros acquired are those that take the problem solver out of a local
+minimum to a better state. The utility of the method is demonstrated in several
+domains, including the domain of NxN sliding-tile puzzles. After learning on
+small puzzles, the system is able to efficiently solve puzzles of any size.

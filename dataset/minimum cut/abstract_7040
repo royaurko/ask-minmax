@@ -1,0 +1,25 @@
+Functionals that strive to correct for such self-interaction errors, such as
+those obtained by imposing the Perdew-Zunger self-interaction correction or the
+generalized Koopmans' condition, become orbital dependent or orbital-density
+dependent, and provide a very promising avenue to go beyond density-functional
+theory, especially when studying electronic, optical and dielectric properties,
+charge-transfer excitations, and molecular dissociations. Unlike conventional
+density functionals, these functionals are not invariant under unitary
+transformations of occupied electronic states, which leave the total charge
+density intact, and this added complexity has greatly inhibited both their
+development and their practical applicability. Here, we first recast the
+minimization problem for non-unitary invariant energy functionals into the
+language of ensemble density-functional theory, decoupling the variational
+search into an inner loop of unitary transformations that minimize the energy
+at fixed orbital subspace, and an outer-loop evolution of the orbitals in the
+space orthogonal to the occupied manifold. Then, we show that the potential
+energy surface in the inner loop is far from convex parabolic in the early
+stages of the minimization and hence minimization schemes based on these
+assumptions are unstable, and present an approach to overcome such difficulty.
+The overall formulation allows for a stable, robust, and efficient variational
+minimization of non-unitary-invariant functionals, essential to study complex
+materials and molecules, and to investigate the bulk thermodynamic limit, where
+orbitals converge typically to localized Wannier functions. In particular,
+using maximally localized Wannier functions as an initial guess can greatly
+reduce the computational costs needed to reach the energy minimum while not
+affecting or improving the convergence efficiency.

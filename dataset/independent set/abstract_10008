@@ -1,0 +1,17 @@
+Memoryless computation is a new technique to compute any function of a set of
+registers by updating one register at a time while using no memory. Its aim is
+to emulate how computations are performed in modern cores, since they typically
+involve updates of single registers. The memoryless computation model can be
+fully expressed in terms of transformation semigroups, or in the case of
+bijective functions, permutation groups. In this paper, we consider how
+efficiently permutations can be computed without memory. We determine the
+minimum number of basic updates required to compute any permutation, or any
+even permutation. The small number of required instructions shows that very
+small instruction sets could be encoded on cores to perform memoryless
+computation. We then start looking at a possible compromise between the size of
+the instruction set and the length of the resulting programs. We consider
+updates only involving a limited number of registers. In particular, we show
+that binary instructions are not enough to compute all permutations without
+memory when the alphabet size is even. These results, though expressed as
+properties of special generating sets of the symmetric or alternating groups,
+provide guidelines on the implementation of memoryless computation.

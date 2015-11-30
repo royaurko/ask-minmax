@@ -1,0 +1,19 @@
+This paper considers the multi-armed bandit problem with multiple
+simultaneous arm pulls. We develop a new `irrevocable' heuristic for this
+problem. In particular, we do not allow recourse to arms that were pulled at
+some point in the past but then discarded. This irrevocable property is highly
+desirable from a practical perspective. As a consequence of this property, our
+heuristic entails a minimum amount of `exploration'. At the same time, we find
+that the price of irrevocability is limited for a broad useful class of bandits
+we characterize precisely. This class includes one of the most common
+applications of the bandit model, namely, bandits whose arms are `coins' of
+unknown biases. Computational experiments with a generative family of large
+scale problems within this class indicate losses of up to 5 to 10% relative to
+an upper bound on the performance of an optimal policy with no restrictions on
+exploration. We also provide a worst-case theoretical analysis that shows that
+for this class of bandit problems, the price of irrevocability is uniformly
+bounded: our heuristic earns expected rewards that are always within a factor
+of 1/8 of an optimal policy with no restrictions on exploration. In addition to
+being an indicator of robustness across all parameter regimes, this analysis
+sheds light on the structural properties that afford a low price of
+irrevocability.

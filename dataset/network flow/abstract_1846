@@ -1,0 +1,23 @@
+We study adaptive network coding (NC) for scheduling real-time traffic over a
+single-hop wireless network. To meet the hard deadlines of real-time traffic,
+it is critical to strike a balance between maximizing the throughput and
+minimizing the risk that the entire block of coded packets may not be decodable
+by the deadline. Thus motivated, we explore adaptive NC, where the block size
+is adapted based on the remaining time to the deadline, by casting this
+sequential block size adaptation problem as a finite-horizon Markov decision
+process. One interesting finding is that the optimal block size and its
+corresponding action space monotonically decrease as the deadline approaches,
+and the optimal block size is bounded by the "greedy" block size. These unique
+structures make it possible to narrow down the search space of dynamic
+programming, building on which we develop a monotonicity-based backward
+induction algorithm (MBIA) that can solve for the optimal block size in
+polynomial time. Since channel erasure probabilities would be time-varying in a
+mobile network, we further develop a joint real-time scheduling and channel
+learning scheme with adaptive NC that can adapt to channel dynamics. We also
+generalize the analysis to multiple flows with hard deadlines and long-term
+delivery ratio constraints, devise a low-complexity online scheduling algorithm
+integrated with the MBIA, and then establish its asymptotical
+throughput-optimality. In addition to analysis and simulation results, we
+perform high fidelity wireless emulation tests with real radio transmissions to
+demonstrate the feasibility of the MBIA in finding the optimal block size in
+real time.

@@ -1,0 +1,20 @@
+The probabilistic modal {\mu}-calculus is a fixed-point logic designed for
+expressing properties of probabilistic labeled transition systems (PLTS's). Two
+equivalent semantics have been studied for this logic, both assigning to each
+state a value in the interval [0,1] representing the probability that the
+property expressed by the formula holds at the state. One semantics is
+denotational and the other is a game semantics, specified in terms of
+two-player stochastic parity games. A shortcoming of the probabilistic modal
+{\mu}-calculus is the lack of expressiveness required to encode other important
+temporal logics for PLTS's such as Probabilistic Computation Tree Logic (PCTL).
+To address this limitation we extend the logic with a new pair of operators:
+independent product and coproduct. The resulting logic, called probabilistic
+modal {\mu}-calculus with independent product, can encode many properties of
+interest and subsumes the qualitative fragment of PCTL. The main contribution
+of this paper is the definition of an appropriate game semantics for this
+extended probabilistic {\mu}-calculus. This relies on the definition of a new
+class of games which generalize standard two-player stochastic (parity) games
+by allowing a play to be split into concurrent subplays, each continuing their
+evolution independently. Our main technical result is the equivalence of the
+two semantics. The proof is carried out in ZFC set theory extended with
+Martin's Axiom at an uncountable cardinal.

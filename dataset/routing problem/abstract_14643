@@ -1,0 +1,20 @@
+We consider a multi-object detection problem over a sensor network (SNET)
+with limited range sensors. This problem complements the widely considered
+decentralized detection problem where all sensors observe the same object.
+While the necessity for global collaboration is clear in the decentralized
+detection problem, the benefits of collaboration with limited range sensors is
+unclear and has not been widely explored. In this paper we develop a
+distributed detection approach based on recent development of the false
+discovery rate (FDR). We first extend the FDR procedure and develop a
+transformation that exploits complete or partial knowledge of either the
+observed distributions at each sensor or the ensemble (mixture) distribution
+across all sensors. We then show that this transformation applies to
+multi-dimensional observations, thus extending FDR to multi-dimensional
+settings. We also extend FDR theory to cases where distributions under both
+null and positive hypotheses are uncertain. We then propose a robust
+distributed algorithm to perform detection. We further demonstrate scalability
+to large SNETs by showing that the upper bound on the communication complexity
+scales linearly with the number of sensors that are in the vicinity of objects
+and is independent of the total number of sensors. Finally, we deal with
+situations where the sensing model may be uncertain and establish robustness of
+our techniques to such uncertainties.

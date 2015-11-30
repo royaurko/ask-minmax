@@ -1,0 +1,14 @@
+A recent study characterizing failures in computer networks shows that
+transient single element (node/link) failures are the dominant failures in
+large communication networks like the Internet. Thus, having the routing paths
+globally recomputed on a failure does not pay off since the failed element
+recovers fairly quickly, and the recomputed routing paths need to be discarded.
+In this paper, we present the first distributed algorithm that computes the
+alternate paths required by some "proactive recovery schemes" for handling
+transient failures. Our algorithm computes paths that avoid a failed node, and
+provides an alternate path to a particular destination from an upstream
+neighbor of the failed node. With minor modifications, we can have the
+algorithm compute alternate paths that avoid a failed link as well. To the best
+of our knowledge all previous algorithms proposed for computing alternate paths
+are centralized, and need complete information of the network graph as input to
+the algorithm.

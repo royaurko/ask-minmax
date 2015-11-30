@@ -1,0 +1,16 @@
+Logical formalisms such as first-order logic (FO) and fixpoint logic (FP) are
+well suited to express in a declarative manner fundamental graph
+functionalities required in distributed systems. We show that these logics
+constitute good abstractions for programming distributed systems as a whole,
+since they can be evaluated in a fully distributed manner with reasonable
+complexity upper-bounds. We first prove that FO and FP can be evaluated with a
+polynomial number of messages of logarithmic size. We then show that the
+(global) logical formulas can be translated into rule programs describing the
+local behavior of the nodes of the distributed system, which compute equivalent
+results. Finally, we introduce local fragments of these logics, which preserve
+as much as possible the locality of their distributed computation, while
+offering a rich expressive power for networking functionalities. We prove that
+they admit tighter upper-bounds with bounded number of messages of bounded
+size. Finally, we show that the semantics and the complexity of the local
+fragments are preserved over locally consistent networks as well as anonymous
+networks, thus showing the robustness of the proposed local logical formalisms.

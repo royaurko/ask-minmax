@@ -1,0 +1,14 @@
+The problem of approximating the PageRank score of a node with minimal
+information about the rest of the graph has attracted considerable attention in
+the last decade; but its central question, whether it is in general necessary
+to explore a non-vanishing fraction of the graph, remained open until now (only
+for specific graphs and/or nodes was a solution known). We present the first
+algorithm that produces a $(1\pm\epsilon)$-approximation of the score of any
+one node in any $n$-node graph with probability $(1-\epsilon)$ visiting at most
+$O(n^\frac{2}{3}\sqrt[3]{\log(n)})=o(n)$ nodes. Our result is essentially tight
+(we prove that visiting $\Omega(n^\frac{2}{3})$ nodes is in general necessary
+to solve even an easier "ranking" version of the problem under any "natural"
+graph exploration model, including all those in the literature) but it can be
+further improved for some classes of graphs and/or nodes of practical interest
+- e.g. to $O(n^\frac{1}{2} \gamma^\frac{1}{2})$ nodes in graphs with maximum
+outdegree $\gamma$.

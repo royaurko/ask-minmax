@@ -1,0 +1,16 @@
+A new technique is presented for producing images from interferometric data.
+The method, ``smear fitting'', makes the constraints necessary for
+interferometric imaging double as a model, with uncertainties, of the sky
+brightness distribution. It does this by modelling the sky with a set of
+functions and then convolving each component with its own elliptical gaussian
+to account for the uncertainty in its shape and location that arises from
+noise. This yields much sharper resolution than CLEAN for significantly
+detected features, without sacrificing any sensitivity. Using appropriate
+functional forms for the components provides both a scientifically interesting
+model and imaging constraints that tend to be better than those used by
+traditional deconvolution methods. This allows it to avoid the most serious
+problems that limit the imaging quality of those methods. Comparisons of smear
+fitting to CLEAN and maximum entropy are given, using both real and simulated
+observations. It is also shown that the famous Rayleigh criterion (resolution =
+wavelength / baseline) is inappropriate for interferometers as it does not
+consider the reliability of the measurements.

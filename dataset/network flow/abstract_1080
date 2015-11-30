@@ -1,0 +1,21 @@
+Denial of service (DoS) attacks and more particularly the distributed ones
+(DDoS) are one of the latest threat and pose a grave danger to users,
+organizations and infrastructures of the Internet. Several schemes have been
+proposed on how to detect some of these attacks, but they suffer from a range
+of problems, some of them being impractical and others not being effective
+against these attacks. This paper reports the design principles and evaluation
+results of our proposed framework that autonomously detects and accurately
+characterizes a wide range of flooding DDoS attacks in ISP network. Attacks are
+detected by the constant monitoring of propagation of abrupt traffic changes
+inside ISP network. For this, a newly designed flow-volume based approach
+(FVBA) is used to construct profile of the traffic normally seen in the
+network, and identify anomalies whenever traffic goes out of profile.
+Consideration of varying tolerance factors make proposed detection system
+scalable to the varying network conditions and attack loads in real time.
+Six-sigma method is used to identify threshold values accurately for malicious
+flows characterization. FVBA has been extensively evaluated in a controlled
+test-bed environment. Detection thresholds and efficiency is justified using
+receiver operating characteristics (ROC) curve. For validation, KDD 99, a
+publicly available benchmark dataset is used. The results show that our
+proposed system gives a drastic improvement in terms of detection and false
+alarm rate.

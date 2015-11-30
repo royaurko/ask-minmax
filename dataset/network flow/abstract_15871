@@ -1,0 +1,22 @@
+Given a limited number of entries from the superposition of a low-rank matrix
+plus the product of a known fat compression matrix times a sparse matrix,
+recovery of the low-rank and sparse components is a fundamental task subsuming
+compressed sensing, matrix completion, and principal components pursuit. This
+paper develops algorithms for distributed sparsity-regularized rank
+minimization over networks, when the nuclear- and $\ell_1$-norm are used as
+surrogates to the rank and nonzero entry counts of the sought matrices,
+respectively. While nuclear-norm minimization has well-documented merits when
+centralized processing is viable, non-separability of the singular-value sum
+challenges its distributed minimization. To overcome this limitation, an
+alternative characterization of the nuclear norm is adopted which leads to a
+separable, yet non-convex cost minimized via the alternating-direction method
+of multipliers. The novel distributed iterations entail reduced-complexity
+per-node tasks, and affordable message passing among single-hop neighbors.
+Interestingly, upon convergence the distributed (non-convex) estimator provably
+attains the global optimum of its centralized counterpart, regardless of
+initialization. Several application domains are outlined to highlight the
+generality and impact of the proposed framework. These include unveiling
+traffic anomalies in backbone networks, predicting networkwide path latencies,
+and mapping the RF ambiance using wireless cognitive radios. Simulations with
+synthetic and real network data corroborate the convergence of the novel
+distributed algorithm, and its centralized performance guarantees.

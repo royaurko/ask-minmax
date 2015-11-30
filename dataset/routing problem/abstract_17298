@@ -1,0 +1,13 @@
+We consider a number of fundamental statistical and graph problems in the
+message-passing model, where we have $k$ machines (sites), each holding a piece
+of data, and the machines want to jointly solve a problem defined on the union
+of the $k$ data sets. The communication is point-to-point, and the goal is to
+minimize the total communication among the $k$ machines. This model captures
+all point-to-point distributed computational models with respect to minimizing
+communication costs. Our analysis shows that exact computation of many
+statistical and graph problems in this distributed setting requires a
+prohibitively large amount of communication, and often one cannot improve upon
+the communication of the simple protocol in which all machines send their data
+to a centralized server. Thus, in order to obtain protocols that are
+communication-efficient, one has to allow approximation, or investigate the
+distribution or layout of the data sets.

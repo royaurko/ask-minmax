@@ -1,0 +1,24 @@
+A $k$-dimensional box is the cartesian product $R_1 \times R_2 \times ...
+\times R_k$ where each $R_i$ is a closed interval on the real line. The {\it
+boxicity} of a graph $G$, denoted as $box(G)$, is the minimum integer $k$ such
+that $G$ is the intersection graph of a collection of $k$-dimensional boxes. A
+unit cube in $k$-dimensional space or a $k$-cube is defined as the cartesian
+product $R_1 \times R_2 \times ... \times R_k$ where each $R_i$ is a closed
+interval on the real line of the form $[a_i, a_{i}+1]$. The {\it cubicity} of
+$G$, denoted as $cub(G)$, is the minimum $k$ such that $G$ is the intersection
+graph of a collection of $k$-cubes. In this paper we show that $cub(G) \leq t +
+\left \lceil \log (n - t)\right\rceil - 1$ and $box(G) \leq \left
+\lfloor\frac{t}{2}\right\rfloor + 1$, where $t$ is the cardinality of the
+minimum vertex cover of $G$ and $n$ is the number of vertices of $G$. We also
+show the tightness of these upper bounds.
+  F. S. Roberts in his pioneering paper on boxicity and cubicity had shown that
+for a graph $G$, $box(G) \leq \left \lfloor\frac{n}{2} \right \rfloor$, where
+$n$ is the number of vertices of $G$, and this bound is tight. We show that if
+$G$ is a bipartite graph then $box(G) \leq \left \lceil\frac{n}{4}
+\right\rceil$ and this bound is tight. We point out that there exist graphs of
+very high boxicity but with very low chromatic number. For example there exist
+bipartite (i.e., 2 colorable) graphs with boxicity equal to $\frac{n}{4}$.
+Interestingly, if boxicity is very close to $\frac{n}{2}$, then chromatic
+number also has to be very high. In particular, we show that if $box(G) =
+\frac{n}{2} - s$, $s \geq 0$, then $\chi(G) \geq \frac{n}{2s+2}$, where
+$\chi(G)$ is the chromatic number of $G$.

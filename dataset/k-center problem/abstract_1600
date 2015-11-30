@@ -1,0 +1,18 @@
+Processors with large numbers of cores are becoming commonplace. In order to
+take advantage of the available resources in these systems, the programming
+paradigm has to move towards increased parallelism. However, increasing the
+level of concurrency in the program does not necessarily lead to better
+performance. Parallel programming models have to provide flexible ways of
+defining parallel tasks and at the same time, efficiently managing the created
+tasks. OpenMP is a widely accepted programming model for shared-memory
+architectures. In this paper we highlight some of the drawbacks in the OpenMP
+tasking approach, and propose an alternative model based on the Glasgow
+Parallel Reduction Machine (GPRM) programming framework. As the main focus of
+this study, we deploy our model to solve a fundamental linear algebra problem,
+LU factorisation of sparse matrices. We have used the SparseLU benchmark from
+the BOTS benchmark suite, and compared the results obtained from our model to
+those of the OpenMP tasking approach. The TILEPro64 system has been used to run
+the experiments. The results are very promising, not only because of the
+performance improvement for this particular problem, but also because they
+verify the task management efficiency, stability, and flexibility of our model,
+which can be applied to solve problems in future many-core systems.

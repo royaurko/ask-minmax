@@ -1,0 +1,13 @@
+The sparse group lasso optimization problem is solved using a coordinate
+gradient descent algorithm. The algorithm is applicable to a broad class of
+convex loss functions. Convergence of the algorithm is established, and the
+algorithm is used to investigate the performance of the multinomial sparse
+group lasso classifier. On three different real data examples the multinomial
+group lasso clearly outperforms multinomial lasso in terms of achieved
+classification error rate and in terms of including fewer features for the
+classification. The run-time of our sparse group lasso implementation is of the
+same order of magnitude as the multinomial lasso algorithm implemented in the R
+package glmnet. Our implementation scales well with the problem size. One of
+the high dimensional examples considered is a 50 class classification problem
+with 10k features, which amounts to estimating 500k parameters. The
+implementation is available as the R package msgl.

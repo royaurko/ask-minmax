@@ -1,0 +1,15 @@
+The Largest Empty Circle problem seeks the largest circle centered within the
+convex hull of a set $P$ of $n$ points in $\mathbb{R}^2$ and devoid of points
+from $P$. In this paper, we introduce a query version of this well-studied
+problem. In our query version, we are required to preprocess $P$ so that when
+given a query line $Q$, we can quickly compute the largest empty circle
+centered at some point on $Q$ and within the convex hull of $P$.
+  We present solutions for two special cases and the general case; all our
+queries run in $O(\log n)$ time. We restrict the query line to be horizontal in
+the first special case, which we preprocess in $O(n \alpha(n) \log n)$ time and
+space, where $\alpha(n)$ is the slow growing inverse of the Ackermann's
+function. When the query line is restricted to pass through a fixed point, the
+second special case, our preprocessing takes $O(n \alpha(n)^{O(\alpha(n))} \log
+n)$ time and space. We use insights from the two special cases to solve the
+general version of the problem with preprocessing time and space in $O(n^3 \log
+n)$ and $O(n^3)$ respectively.

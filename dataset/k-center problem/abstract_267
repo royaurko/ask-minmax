@@ -1,0 +1,14 @@
+In this paper, based on the overlapping domain decomposition method (DDM)
+proposed in \cite{Leng2015}, an one step preconditioner is proposed to solve 2D
+high frequency Helmholtz equation. The computation domain is decomposed in both
+$x$ and $y$ directions, and the local solution on each subdomain is updated
+simultaneously in one iteration, thus there is no sweeping along certain
+directions. In these ways, the overlapping DDM is similar to the popular DDM
+for Poisson problem. The one step preconditioner simply take the restricted
+source on each subdomain, solve the local problems and summarize the local
+solutions on all subdomains including their PML area. The complexity of solving
+the problem with the preconditioner is $O(N n_{\text{iter}})$, where
+$n_{\text{iter}}$ is the number of iteration, and it is shown numerically that
+$n_{\text{iter}}$ is proportional to the number of subdomains in one direction.
+2D Helmholtz problem with nearly a billion unknowns are solved efficiently with
+the preconditioner on massively parallel machines.

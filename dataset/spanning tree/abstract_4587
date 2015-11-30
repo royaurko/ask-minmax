@@ -1,0 +1,11 @@
+Different automated theorem provers reason in various deductive systems and,
+thus, produce proof objects which are in general not compatible. To understand
+and analyze these objects, one needs to study the corresponding proof theory,
+and then study the language used to represent proofs, on a prover by prover
+basis. In this work we present an implementation that takes SMT and Connection
+proof objects from two different provers and imports them both as expansion
+trees. By representing the proofs in the same framework, all the algorithms and
+tools available for expansion trees (compression, visualization, sequent
+calculus proof construction, proof checking, etc.) can be employed uniformly.
+The expansion proofs can also be used as a validation tool for the proof
+objects produced.

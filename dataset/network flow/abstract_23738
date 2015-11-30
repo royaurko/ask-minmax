@@ -1,0 +1,15 @@
+We present a systematic, algebraically based, design methodology for
+efficient implementation of computer programs optimized over multiple levels of
+the processor/memory and network hierarchy. Using a common formalism to
+describe the problem and the partitioning of data over processors and memory
+levels allows one to mathematically prove the efficiency and correctness of a
+given algorithm as measured in terms of a set of metrics (such as
+processor/network speeds, etc.). The approach allows the average programmer to
+achieve high-level optimizations similar to those used by compiler writers
+(e.g. the notion of "tiling").
+  The approach presented in this monograph makes use of A Mathematics of Arrays
+(MoA, Mullin 1988) and an indexing calculus (i.e. the psi-calculus) to enable
+the programmer to develop algorithms using high-level compiler-like
+optimizations through the ability to algebraically compose and reduce sequences
+of array operations. Extensive discussion and benchmark results are presented
+for the Fast Fourier Transform and other important algorithms.

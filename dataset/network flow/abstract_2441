@@ -1,0 +1,23 @@
+We consider an adaptive signal control problem on a signalized network whose
+traffic flow dynamic is described by the Lighthill-Whitham-Richards (LWR) model
+(Lighthill and Whitham, 1955; Richards, 1956). Such problem explicitly
+considers traffic-derived emission as side constraints. We seek to tackle this
+problem using a mixed integer mathematical programming approach. Such a problem
+class, which we call LWR-Emission (LWR-E), has been analyzed before to certain
+extent. Since mixed integer programs are practically efficient to compute in
+many cases (Bertsimas et al., 2011), the mere fact of having integer variables
+is not the most significant challenge to computing solutions of MIPs; rather,
+it is the presence of the nonlinear and nonconvex emission-related constraints
+that render the program computationally expensive. To address this issue, we
+proposed an efficient and practical way of solving the LWR-E problem, by
+formulating it as a mixed integer linear program (MILP). This methodology
+relies on the existence of a strong correlation between the aggregate vehicle
+emissions rate and certain macroscopic traffic quantities, such as the number
+of vehicles on a link. This correlation is fitted by a function and deviations
+from this function are treated as parameter uncertainty. We then apply robust
+optimization techniques to reformulate the emissions-related constraints into
+convex and tractable forms. To further reduce the computational cost, we employ
+the link transmission model to represent traffic dynamics. The final proposed
+MILP explicitly captures vehicle spillback, avoids traffic holding and features
+time-varying signal cycle and splits, as well as the aforementioned emissions
+constraints.

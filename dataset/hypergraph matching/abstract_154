@@ -1,0 +1,13 @@
+In this paper we consider the problem of reconstructing a hidden weighted
+hypergraph of constant rank using additive queries. We prove the following: Let
+$G$ be a weighted hidden hypergraph of constant rank with n vertices and $m$
+hyperedges. For any $m$ there exists a non-adaptive algorithm that finds the
+edges of the graph and their weights using $$ O(\frac{m\log n}{\log m}) $$
+additive queries. This solves the open problem in [S. Choi, J. H. Kim. Optimal
+Query Complexity Bounds for Finding Graphs. {\em STOC}, 749--758,~2008].
+  When the weights of the hypergraph are integers that are less than
+$O(poly(n^d/m))$ where $d$ is the rank of the hypergraph (and therefore for
+unweighted hypergraphs) there exists a non-adaptive algorithm that finds the
+edges of the graph and their weights using $$ O(\frac{m\log \frac{n^d}{m}}{\log
+m}). $$ additive queries.
+  Using the information theoretic bound the above query complexities are tight.

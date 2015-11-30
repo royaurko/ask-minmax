@@ -1,0 +1,22 @@
+One of the earliest and most well known problems in computational geometry is
+the so-called art gallery problem. The goal is to compute the minimum possible
+number guards placed on the vertices of a simple polygon in such a way that
+they cover the interior of the polygon.
+  In this paper we consider the problem of guarding an art gallery which is
+modeled as a polygon with curvilinear walls. Our main focus is on polygons the
+edges of which are convex arcs pointing towards the exterior or interior of the
+polygon (but not both), named piecewise-convex and piecewise-concave polygons.
+We prove that, in the case of piecewise-convex polygons, if we only allow
+vertex guards, $\lfloor\frac{4n}{7}\rfloor-1$ guards are sometimes necessary,
+and $\lfloor\frac{2n}{3}\rfloor$ guards are always sufficient. Moreover, an
+$O(n\log{}n)$ time and O(n) space algorithm is described that produces a vertex
+guarding set of size at most $\lfloor\frac{2n}{3}\rfloor$. When we allow point
+guards the afore-mentioned lower bound drops down to
+$\lfloor\frac{n}{2}\rfloor$. In the special case of monotone piecewise-convex
+polygons we can show that $\lfloor\frac{n}{2}\rfloor$ vertex guards are always
+sufficient and sometimes necessary; these bounds remain valid even if we allow
+point guards.
+  In the case of piecewise-concave polygons, we show that $2n-4$ point guards
+are always sufficient and sometimes necessary, whereas it might not be possible
+to guard such polygons by vertex guards. We conclude with bounds for other
+types of curvilinear polygons and future work.

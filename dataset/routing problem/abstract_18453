@@ -1,0 +1,24 @@
+Incomplete information is a problem in many aspects of actual environments.
+Furthermore, in many sceneries the knowledge is not represented in a crisp way.
+It is common to find fuzzy concepts or problems with some level of uncertainty.
+There are not many practical systems which handle fuzziness and uncertainty and
+the few examples that we can find are used by a minority. To extend a popular
+system (which many programmers are using) with the ability of combining crisp
+and fuzzy knowledge representations seems to be an interesting issue.
+  Our first work (Fuzzy Prolog) was a language that models
+$\mathcal{B}([0,1])$-valued Fuzzy Logic. In the Borel algebra,
+$\mathcal{B}([0,1])$, truth value is represented using unions of intervals of
+real numbers. This work was more general in truth value representation and
+propagation than previous works.
+  An interpreter for this language using Constraint Logic Programming over Real
+numbers (CLP(${\cal R}$)) was implemented and is available in the Ciao system.
+  Now, we enhance our former approach by using default knowledge to represent
+incomplete information in Logic Programming. We also provide the implementation
+of this new framework. This new release of Fuzzy Prolog handles incomplete
+information, it has a complete semantics (the previous one was incomplete as
+Prolog) and moreover it is able to combine crisp and fuzzy logic in Prolog
+programs. Therefore, new Fuzzy Prolog is more expressive to represent real
+world.
+  Fuzzy Prolog inherited from Prolog its incompleteness. The incorporation of
+default reasoning to Fuzzy Prolog removes this problem and requires a richer
+semantics which we discuss.

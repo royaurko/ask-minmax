@@ -1,0 +1,16 @@
+This paper proposes a new fBm (fractional Brownian motion)
+interpolation/reconstruction method from partially known samples based on CS
+(Compressive Sampling). Since 1/f property implies power law decay of the fBm
+spectrum, the fBm signals should be sparse in frequency domain. This property
+motivates the adoption of CS in the development of the reconstruction method.
+Hurst parameter H that occurs in the power law determines the sparsity level,
+therefore the CS reconstruction quality of an fBm signal for a given number of
+known subsamples will depend on H. However, the proposed method does not
+require the information of H to reconstruct the fBm signal from its partial
+samples. The method employs DFT (Discrete Fourier Transform) as the sparsity
+basis and a random matrix derived from known samples positions as the
+projection basis. Simulated fBm signals with various values of H are used to
+show the relationship between the Hurst parameter and the reconstruction
+quality. Additionally, US-DJIA (Dow Jones Industrial Average) stock index
+monthly values time-series are also used to show the applicability of the
+proposed method to reconstruct a real-world data.

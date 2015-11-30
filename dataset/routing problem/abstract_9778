@@ -1,0 +1,14 @@
+Prior to computing the Cholesky factorization of a sparse, symmetric positive
+definite matrix, a reordering of the rows and columns is computed so as to
+reduce both the number of fill elements in Cholesky factor and the number of
+arithmetic operations (FLOPs) in the numerical factorization. These two metrics
+are clearly somehow related and yet it is suspected that these two problems are
+different. However, no rigorous theoretical treatment of the relation of these
+two problems seems to have been given yet. In this paper we show by means of an
+explicit, scalable construction that the two problems are different in a very
+strict sense. In our construction no ordering, that is optimal for the fill, is
+optimal with respect to the number of FLOPs, and vice versa.
+  Further, it is commonly believed that minimizing the number of FLOPs is no
+easier than minimizing the fill (in the complexity sense), but so far no proof
+appears to be known. We give a reduction chain that shows the NP hardness of
+minimizing the number of arithmetic operations in the Cholesky factorization.

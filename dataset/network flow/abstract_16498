@@ -1,0 +1,24 @@
+There is wide agreement that the accuracy of turbulence models suffer from
+their sensitivity with respect to physical input data, the uncertainties of
+user-elected parameters, as well as the model inadequacy. However, the
+application of Bayesian inference to systematically quantify the uncertainties
+in parameters, by means of exploring posterior probability density functions
+(PPDFs), has been hindered by the prohibitively daunting computational cost
+associated with the large number of model executions, in addition to daunting
+computation time per one turbulence simulation. In this effort, we perform in
+this paper an adaptive hierarchical sparse grid surrogate modeling approach to
+Bayesian inference of large eddy simulation (LES). First, an adaptive
+hierarchical sparse grid surrogate for the output of forward models is
+constructed using a relatively small number of model executions. Using such
+surrogate, the likelihood function can be rapidly evaluated at any point in the
+parameter space without simulating the computationally expensive LES model.
+This method is essentially similar to those developed in [62] for geophysical
+and groundwater models, but is adjusted and applied here for a much more
+challenging problem of uncertainty quantification of turbulence models. Through
+a numerical demonstration of the Smagorinsky model of two-dimensional flow
+around a cylinder at sub-critical Reynolds number, our approach is proven to
+significantly reduce the number of costly LES executions without losing much
+accuracy in the posterior probability estimation. Here, the model parameters
+are calibrated against synthetic data related to the mean flow velocity and
+Reynolds stresses at different locations in the flow wake. The influence of the
+user-elected LES parameters on the quality of output data will be discussed.

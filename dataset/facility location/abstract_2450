@@ -1,0 +1,14 @@
+We present the PyHST2 code which is in service at ESRF for phase-contrast and
+absorption tomography. This code has been engineered to sustain the high data
+flow typical of the third generation synchrotron facilities (10 terabytes per
+experiment) by adopting a distributed and pipelined architecture. The code
+implements, beside a default filtered backprojection reconstruction, iterative
+reconstruction techniques with a-priori knowledge. These latter are used to
+improve the reconstruction quality or in order to reduce the required data
+volume and reach a given quality goal. The implemented a-priori knowledge
+techniques are based on the total variation penalisation and a new recently
+found convex functional which is based on overlapping patches.
+  We give details of the different methods and their implementations while the
+code is distributed under free license.
+  We provide methods for estimating, in the absence of ground-truth data, the
+optimal parameters values for a-priori techniques.

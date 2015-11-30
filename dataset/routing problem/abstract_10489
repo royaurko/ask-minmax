@@ -1,0 +1,23 @@
+Motivated by issues of saving energy in data centers we define a collection
+of new problems referred to as "machine activation" problems. The central
+framework we introduce considers a collection of $m$ machines (unrelated or
+related) with each machine $i$ having an {\em activation cost} of $a_i$. There
+is also a collection of $n$ jobs that need to be performed, and $p_{i,j}$ is
+the processing time of job $j$ on machine $i$. We assume that there is an
+activation cost budget of $A$ -- we would like to {\em select} a subset $S$ of
+the machines to activate with total cost $a(S) \le A$ and {\em find} a schedule
+for the $n$ jobs on the machines in $S$ minimizing the makespan (or any other
+metric).
+  For the general unrelated machine activation problem, our main results are
+that if there is a schedule with makespan $T$ and activation cost $A$ then we
+can obtain a schedule with makespan $\makespanconstant T$ and activation cost
+$\costconstant A$, for any $\epsilon >0$. We also consider assignment costs for
+jobs as in the generalized assignment problem, and using our framework, provide
+algorithms that minimize the machine activation and the assignment cost
+simultaneously. In addition, we present a greedy algorithm which only works for
+the basic version and yields a makespan of $2T$ and an activation cost $A
+(1+\ln n)$.
+  For the uniformly related parallel machine scheduling problem, we develop a
+polynomial time approximation scheme that outputs a schedule with the property
+that the activation cost of the subset of machines is at most $A$ and the
+makespan is at most $(1+\epsilon) T$ for any $\epsilon >0$.

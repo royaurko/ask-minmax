@@ -1,0 +1,18 @@
+This paper presents a technique called Improved Squeaky Wheel Optimisation
+for driver scheduling problems. It improves the original Squeaky Wheel
+Optimisations effectiveness and execution speed by incorporating two additional
+steps of Selection and Mutation which implement evolution within a single
+solution. In the ISWO, a cycle of
+Analysis-Selection-Mutation-Prioritization-Construction continues until
+stopping conditions are reached. The Analysis step first computes the fitness
+of a current solution to identify troublesome components. The Selection step
+then discards these troublesome components probabilistically by using the
+fitness measure, and the Mutation step follows to further discard a small
+number of components at random. After the above steps, an input solution
+becomes partial and thus the resulting partial solution needs to be repaired.
+The repair is carried out by using the Prioritization step to first produce
+priorities that determine an order by which the following Construction step
+then schedules the remaining components. Therefore, the optimisation in the
+ISWO is achieved by solution disruption, iterative improvement and an iterative
+constructive repair process performed. Encouraging experimental results are
+reported.

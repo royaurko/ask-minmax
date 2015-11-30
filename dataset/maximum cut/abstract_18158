@@ -1,0 +1,17 @@
+Deep convolutional neural networks (DCNN) have attracted much attention
+recently, and have been shown able to recognize thousands of object categories
+in natural image databases. Their architecture is somewhat similar to that of
+the human visual system: both use restricted receptive fields, and a hierarchy
+of layers which progressively extract more and more abstracted features. Thus
+it seems natural to compare their performance to that of humans. In particular,
+it is well known that humans excel at recognizing objects despite huge
+variations in viewpoints. It is not clear to what extent DCNNs also have this
+ability.To investigate this issue, we benchmarked 8 state-of-the-art DCNNs, the
+HMAX model, and a baseline model and compared the results to humans with
+backward masking. By carefully controlling the magnitude of the viewpoint
+variations, we show that using a few layers is sufficient to match human
+performance with small variations, but larger variations require more layers,
+that is deep, not shallow, nets. A very deep net with 19 layers even
+outperformed humans at the maximum variation level. Our results suggest that
+one important benefit of having more layers is to tolerate larger viewpoint
+variations. The main cost is that more training examples are needed.

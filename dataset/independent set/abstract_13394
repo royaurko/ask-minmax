@@ -1,0 +1,24 @@
+Complex, non-additive genetic interactions are common and can be critical in
+determining phenotypes. Genome-wide association studies (GWAS) and similar
+statistical studies of linkage data, however, assume additive models of gene
+interactions in looking for genotype-phenotype associations. These statistical
+methods view the compound effects of multiple genes on a phenotype as a sum of
+partial influences of each individual gene and can often miss a substantial
+part of the heritable effect. Such methods do not use any biological knowledge
+about underlying genotype-phenotype mechanisms. Modeling approaches from the AI
+field that incorporate deterministic knowledge into models to perform
+statistical analysis can be applied to include prior knowledge in genetic
+analysis. We chose to use the most general such approach, Markov Logic Networks
+(MLNs), as a framework for combining deterministic knowledge with statistical
+analysis. Using simple, logistic regression-type MLNs we have been able to
+replicate the results of traditional statistical methods. Moreover, we show
+that even with simple models we are able to go beyond finding independent
+markers linked to a phenotype by using joint inference that avoids an
+independence assumption. The method is applied to genetic data on yeast
+sporulation, a phenotype governed by non-linear gene interactions. In addition
+to detecting all of the previously identified loci associated with sporulation,
+our method is able to identify four loci with small effects. Since their effect
+on sporulation is small, these four loci were not detected with methods that do
+not account for dependence between markers due to gene interactions. We show
+how gene interactions can be detected using more complex models, which can be
+used as a general framework for incorporating systems biology with genetics.

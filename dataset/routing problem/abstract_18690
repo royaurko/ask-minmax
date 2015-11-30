@@ -1,0 +1,21 @@
+We present a compact discontinuous Galerkin (CDG) method for an elliptic
+model problem. The problem is first cast as a system of first order equations
+by introducing the gradient of the primal unknown, or flux, as an additional
+variable. A standard discontinuous Galerkin (DG) method is then applied to the
+resulting system of equations. The numerical interelement fluxes are such that
+the equations for the additional variable can be eliminated at the element
+level, thus resulting in a global system that involves only the original
+unknown variable. The proposed method is closely related to the local
+discontinuous Galerkin (LDG) method [B. Cockburn and C.-W. Shu, SIAM J. Numer.
+Anal., 35 (1998), pp. 2440-2463], but, unlike the LDG method, the sparsity
+pattern of the CDG method involves only nearest neighbors. Also, unlike the LDG
+method, the CDG method works without stabilization for an arbitrary orientation
+of the element interfaces. The computation of the numerical interface fluxes
+for the CDG method is slightly more involved than for the LDG method, but this
+additional complication is clearly offset by increased compactness and
+flexibility. Compared to the BR2 [F. Bassi and S. Rebay, J. Comput. Phys., 131
+(1997), pp. 267-279] and IP [J. Douglas, Jr., and T. Dupont, in Computing
+Methods in Applied Sciences (Second Internat. Sympos., Versailles, 1975),
+Lecture Notes in Phys. 58, Springer, Berlin, 1976, pp. 207-216] methods, which
+are known to be compact, the present method produces fewer nonzero elements in
+the matrix and is computationally more efficient.

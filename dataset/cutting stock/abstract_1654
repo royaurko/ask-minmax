@@ -1,0 +1,18 @@
+We embed Safe Recursion on Notation (SRN) into Light Affine Logic by Levels
+(LALL), derived from the logic L4. LALL is an intuitionistic deductive system,
+with a polynomial time cut elimination strategy.
+  The embedding allows to represent every term t of SRN as a family of proof
+nets |t|^l in LALL. Every proof net |t|^l in the family simulates t on
+arguments whose bit length is bounded by the integer l. The embedding is based
+on two crucial features. One is the recursive type in LALL that encodes Scott
+binary numerals, i.e. Scott words, as proof nets. Scott words represent the
+arguments of t in place of the more standard Church binary numerals. Also, the
+embedding exploits the "fuzzy" borders of paragraph boxes that LALL inherits
+from L4 to "freely" duplicate the arguments, especially the safe ones, of t.
+Finally, the type of |t|^l depends on the number of composition and recursion
+schemes used to define t, namely the structural complexity of t. Moreover, the
+size of |t|^l is a polynomial in l, whose degree depends on the structural
+complexity of t.
+  So, this work makes closer both the predicative recursive theoretic
+principles SRN relies on, and the proof theoretic one, called /stratification/,
+at the base of Light Linear Logic.

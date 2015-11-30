@@ -1,0 +1,24 @@
+We present a novel graphical framework for modeling non-negative sequential
+data with hierarchical structure. Our model corresponds to a network of coupled
+non-negative matrix factorization (NMF) modules, which we refer to as a
+positive factor network (PFN). The data model is linear, subject to
+non-negativity constraints, so that observation data consisting of an additive
+combination of individually representable observations is also representable by
+the network. This is a desirable property for modeling problems in
+computational auditory scene analysis, since distinct sound sources in the
+environment are often well-modeled as combining additively in the corresponding
+magnitude spectrogram. We propose inference and learning algorithms that
+leverage existing NMF algorithms and that are straightforward to implement. We
+present a target tracking example and provide results for synthetic observation
+data which serve to illustrate the interesting properties of PFNs and motivate
+their potential usefulness in applications such as music transcription, source
+separation, and speech recognition. We show how a target process characterized
+by a hierarchical state transition model can be represented as a PFN. Our
+results illustrate that a PFN which is defined in terms of a single target
+observation can then be used to effectively track the states of multiple
+simultaneous targets. Our results show that the quality of the inferred target
+states degrades gradually as the observation noise is increased. We also
+present results for an example in which meaningful hierarchical features are
+extracted from a spectrogram. Such a hierarchical representation could be
+useful for music transcription and source separation applications. We also
+propose a network for language modeling.

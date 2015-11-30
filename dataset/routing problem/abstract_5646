@@ -1,0 +1,15 @@
+We consider the following sequential decision problem. Given a set of items
+of unknown utility, we need to select one of as high a utility as possible
+(``the selection problem''). Measurements (possibly noisy) of item values prior
+to selection are allowed, at a known cost. The goal is to optimize the overall
+sequential decision process of measurements and selection.
+  Value of information (VOI) is a well-known scheme for selecting measurements,
+but the intractability of the problem typically leads to using myopic VOI
+estimates. In the selection problem, myopic VOI frequently badly underestimates
+the value of information, leading to inferior sensing plans. We relax the
+strict myopic assumption into a scheme we term semi-myopic, providing a
+spectrum of methods that can improve the performance of sensing plans. In
+particular, we propose the efficiently computable method of ``blinkered'' VOI,
+and examine theoretical bounds for special cases. Empirical evaluation of
+``blinkered'' VOI in the selection problem with normally distributed item
+values shows that is performs much better than pure myopic VOI.

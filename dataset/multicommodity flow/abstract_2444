@@ -1,0 +1,13 @@
+Flow-based traffic measurement is a very challenging problem: Managing
+counters for each individual traffic flow in hardware resources knowingly
+struggle to scale with high-speed links. In this paper we propose a novel
+lattice theory-based approach that improves flow-based measurement performances
+and scales by keeping the number of the maintained hardware counters to a
+minimum (result mathematically established in the paper). The crucial
+contribution of the lattice is to map the computational semantics of the packet
+processing to user requests for traffic measurement thus allowing for a
+better-informed and focused counter assignment.
+  An implementation over an Openflow switch, FlowME, was developed and
+evaluated upon its memory usage, performance overhead, and processing effort to
+generate the minimal solution. Experimental results indicate a significant
+decrease in resource consumption.

@@ -1,0 +1,16 @@
+This paper presents a stable numerical algorithm for the Brinkman equations
+by using weak Galerkin (WG) finite element methods. The Brinkman equations can
+be viewed mathematically as a combination of the Stokes and Darcy equations
+which model fluid flow in a multi-physics environment, such as flow in complex
+porous media with a permeability coefficient highly varying in the simulation
+domain. In such applications, the flow is dominated by Darcy in some regions
+and by Stokes in others. It is well known that the usual Stokes stable elements
+do not work well for Darcy flow and vise versa. The challenge of this study is
+on the design of numerical schemes which are stable for both the Stokes and the
+Darcy equations. This paper shows that the WG finite element method is capable
+of meeting this challenge by providing a numerical scheme that is stable and
+accurate for both Darcy and the Stokes dominated flows. Error estimates of
+optimal order are established for the corresponding WG finite element
+solutions. The paper also presents some numerical experiments that demonstrate
+the robustness, reliability, flexibility and accuracy of the WG method for the
+Brinkman equations.

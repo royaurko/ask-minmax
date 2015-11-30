@@ -1,0 +1,18 @@
+We consider a multiphysics system with multiple component models coupled
+together through network coupling interfaces, i.e., a handful of scalars. If
+each component model contains uncertainties represented by a set of parameters,
+a straightfoward uncertainty quantification (UQ) study would collect all
+uncertainties into a single set and treat the multiphysics model as a black
+box. Such an approach ignores the rich structure of the multiphysics system,
+and the combined space of uncertainties can have a large dimension that
+prohibits the use of polynomial surrogate models. We propose an intrusive
+methodology that exploits the structure of the network coupled multiphysics
+system to efficiently construct a polynomial surrogate of the model output as a
+function of uncertain inputs. Using a nonlinear elimination strategy, we treat
+the solution as a composite function: the model outputs are functions of the
+coupling terms which are functions of the uncertain parameters. The composite
+structure allows us to construct and employ a reduced polynomial basis that
+depends on the coupling terms; the basis can be constructed with many fewer
+system solves than the naive approach, which results in substantial
+computational savings. We demonstrate the method on an idealized model of a
+nuclear reactor.

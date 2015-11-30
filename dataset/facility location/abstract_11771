@@ -1,0 +1,14 @@
+In this paper we consider methods for dynamically storing a set of different
+objects ("modules") in a physical array. Each module requires one free
+contiguous subinterval in order to be placed. Items are inserted or removed,
+resulting in a fragmented layout that makes it harder to insert further
+modules. It is possible to relocate modules, one at a time, to another free
+subinterval that is contiguous and does not overlap with the current location
+of the module. These constraints clearly distinguish our problem from classical
+memory allocation. We present a number of algorithmic results, including a
+bound of Theta(n^2) on physical sorting if there is a sufficiently large free
+space and sum up NP-hardness results for arbitrary initial layouts. For online
+scenarios in which modules arrive one at a time, we present a method that
+requires O(1) moves per insertion or deletion and amortized cost O(m_i log M)
+per insertion or deletion, where m_i is the module's size, M is the size of the
+largest module and costs for moves are linear in the size of a module.

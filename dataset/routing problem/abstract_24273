@@ -1,0 +1,12 @@
+Recht, Fazel, and Parrilo provided an analogy between rank minimization and
+$\ell_0$-norm minimization. Subject to the rank-restricted isometry property,
+nuclear norm minimization is a guaranteed algorithm for rank minimization. The
+resulting semidefinite formulation is a convex problem but in practice the
+algorithms for it do not scale well to large instances. Instead, we explore
+missing terms in the analogy and propose a new algorithm which is
+computationally efficient and also has a performance guarantee. The algorithm
+is based on the atomic decomposition of the matrix variable and extends the
+idea in the CoSaMP algorithm for $\ell_0$-norm minimization. Combined with the
+recent fast low rank approximation of matrices based on randomization, the
+proposed algorithm can efficiently handle large scale rank minimization
+problems.

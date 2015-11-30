@@ -1,0 +1,18 @@
+The density classification problem is one of the simplest yet non-trivial
+computing tasks which seem to be ideally suitable for cellular automata (CA).
+Unfortunately, there exists no one-dimensional two-state CA which classifies
+binary strings according to their densities. If, however, in place of simple
+cells one uses agents which change their behaviour from one rule to another
+after a fixed number of iterations, the classification can be performed by the
+traffic rule 184 and the majority rule 232. This two-rule solution cannot be
+easily generalized to two (or higher) dimensions, because it critically depends
+on a kinetic phase transition occurring in the rule 184. No rule exhibiting
+analogous transition is known in two dimensions, most likely because no such
+rule exists. We propose, therefore, to approach this problem form a slightly
+different angle, namely by introducing a stochastic component into each of the
+two rules. If one precedes each iteration of rule 184 by the stochastic "lane
+changing rule," and each iteration of rule 232 by the stochastic "crowd
+avoidance" rule, in the limit of infinitely many iterations the classification
+can be performed correctly with probability 1. This solution can be described
+either in the language of CA, or using the paradigm of agents which move and
+proliferate on the 2D lattice, following probabilistic rules.

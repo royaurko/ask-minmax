@@ -1,0 +1,25 @@
+In this thesis, we study two different graph problems.
+  The first problem revolves around geometric spanners. Here, we have a set of
+points in the plane and we want to connect them with straight line segments,
+such that there is a path between each pair of points that does not make a
+large detour. If we achieve this, the resulting graph is called a spanner. We
+focus our attention on $\Theta$-graphs, which are constructed by connecting
+each point with its nearest neighbour in a fixed number of cones. Although this
+construction is very straight-forward, it has proven challenging to fully
+determine the properties of the resulting graphs. We show that if the
+construction uses 5 cones, the resulting graphs are still spanners. This was
+the only number of cones for which this question remained unanswered. We also
+present a routing strategy on the half-$\Theta_6$-graph, a variant of the graph
+with 6 cones. We show that our routing strategy finds a path whose length is at
+most a constant factor from the straight-line distance between the endpoints.
+Moreover, we show that this routing strategy is optimal.
+  In the second part, we turn our attention to flips in triangulations. A flip
+is a simple operation that transforms one triangulation into another. It turns
+out that with enough flips, we can transform any triangulation into any other.
+But how many flips is enough? We present an improved upper bound of $5.2n -
+33.6$ on the maximum flip distance between any pair of triangulations with n
+vertices. Along the way, we prove matching lower bounds on each step in the
+current algorithm, including a tight bound of $(3n - 9)/5$ flips needed to make
+a triangulation 4-connected. In addition, we prove tight $\Theta(n \log n)$
+bounds on the number of flips required in several settings where the edges have
+unique labels.

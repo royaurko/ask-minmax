@@ -1,0 +1,17 @@
+A multi-channel MAC seems to be an interesting approach for improving network
+throughput by multiplexing transmissions over orthogonal channels. In
+particular, Molecular MAC has recently proposed to modify the standard IEEE
+802.11 DCF access method to use dynamic channel switching for efficient packet
+forwarding over multiple hops. However, this MAC layer requires role and
+channel assignment to nodes: some of them use a static channel, while others
+dynamically switch to neighbor channels on-demand. To assign roles and
+channels, we extend the notion of the Weakly Connected Dominating Set, the
+structure already used in clustering. More precisely, we adapt the WCDS
+structure and introduce new constraints to define what we call a reversible
+WCDS (r-WCDS), which is particularly suitable for wireless mesh networks
+operating under Molecular MAC. We propose a divide-and-conquer scheme that
+partitions the network into clusters with one leader per cluster solving a MILP
+formulation to assign roles in its cluster. By appropriately defining the roles
+at the border of clusters, we maintain global connectivity in the r-wcds.
+Finally, our simulations show that the performance of the propose scheme is
+close to a centralized algorithm.

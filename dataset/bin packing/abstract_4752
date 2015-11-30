@@ -1,0 +1,18 @@
+We propose a method to decompose the total energy of a supercell containing
+defects into contributions of individual atoms, using the energy density
+formalism within density functional theory. The spatial energy density is
+unique up to a gauge transformation, and we show that unique atomic energies
+can be calculated by integrating over Bader and charge-neutral volumes for each
+atom. Numerically, we implement the energy density method in the framework of
+the Vienna ab initio simulation package (VASP) for both norm-conserving and
+ultrasoft pseudopotentials and the projector augmented wave method, and use a
+weighted integration algorithm to integrate the volumes. The surface energies
+and point defect energies can be calculated by integrating the energy density
+over the surface region and the defect region, respectively. We compute
+energies for several surfaces and defects: the (110) surface energy of GaAs,
+the mono-vacancy formation energies of Si, the (100) surface energy of Au, and
+the interstitial formation energy of O in the hexagonal close-packed Ti
+crystal. The surface and defect energies calculated using our method agree with
+size-converged calculations of the difference between the total energies of the
+system with and without the defect. Moreover, the convergence of the defect
+energies with size can be found from a single calculation.

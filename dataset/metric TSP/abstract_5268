@@ -1,0 +1,10 @@
+Metric LTL formulas rely on the next operator to encode time distances,
+whereas qualitative LTL formulas use only the until operator. This paper shows
+how to transform any metric LTL formula M into a qualitative formula Q, such
+that Q is satisfiable if and only if M is satisfiable over words with
+variability bounded with respect to the largest distances used in M (i.e.,
+occurrences of next), but the size of Q is independent of such distances.
+Besides the theoretical interest, this result can help simplify the
+verification of systems with time-granularity heterogeneity, where large
+distances are required to express the coarse-grain dynamics in terms of
+fine-grain time units.

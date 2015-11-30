@@ -1,0 +1,18 @@
+The problem of determining asymptotic bounds on the capacity of a random ad
+hoc network is considered. Previous approaches assumed a threshold-based link
+layer model in which a packet transmission is successful if the SINR at the
+receiver is greater than a fixed threshold. In reality, the mapping from SINR
+to packet success probability is continuous. Hence, over each hop, for every
+finite SINR, there is a non-zero probability of packet loss. With this more
+realistic link model, it is shown that for a broad class of routing and
+scheduling schemes, a fixed fraction of hops on each route have a fixed
+non-zero packet loss probability. In a large network, a packet travels an
+asymptotically large number of hops from source to destination. Consequently,
+it is shown that the cumulative effect of per-hop packet loss results in a
+per-node throughput of only O(1/n) (instead of Theta(1/sqrt{n log{n}})) as
+shown previously for the threshold-based link model).
+  A scheduling scheme is then proposed to counter this effect. The proposed
+scheme improves the link SINR by using conservative spatial reuse, and improves
+the per-node throughput to O(1/(K_n sqrt{n log{n}})), where each cell gets a
+transmission opportunity at least once every K_n slots, and K_n tends to
+infinity as n tends to infinity.

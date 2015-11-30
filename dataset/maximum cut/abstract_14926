@@ -1,0 +1,15 @@
+Microarray data come from many steps of production and have been known to
+contain noise. The pre-processing is implemented to reduce the noise, where the
+background is corrected. Prior to further analysis, many Illumina BeadArrays
+users had applied the convolution model, a model which had been adapted from
+when it was first developed on the Affymetrix platform, to adjust the intensity
+value: corrected background intensity value.
+  Several models based on different underlying distributions and or parameters
+estimation methods have been proposed and applied. For instance : the
+exponential-gamma, the normal-gamma and the exponential-normal convolutions
+with a maximum likelihood estimation, non-parametric, Bayesian and moment
+methods of the parameters estimation, including two recent
+exponential-lognormal and gamma-lognormal convolutions.
+  In this paper, we propose models and derive the corrected background
+intensity based on the generalized betas and the generalized beta-normal
+convolutions as a generalization of the existing models.

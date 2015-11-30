@@ -1,0 +1,17 @@
+The computational study of chemical reactions in complex, wet environments is
+critical for applications in many fields. It is often essential to study
+chemical reactions in the presence of applied electrochemical potentials,
+taking into account the non-trivial electrostatic screening coming from the
+solvent and the electrolytes. As a consequence the electrostatic potential has
+to be found by solving the generalized Poisson and the Poisson-Boltzmann
+equation for neutral and ionic solutions, respectively. In the present work
+solvers for both problems have been developed. A preconditioned conjugate
+gradient method has been implemented to the generalized Poisson equation and
+the linear regime of the Poisson-Boltzmann, allowing to solve iteratively the
+minimization problem with some ten iterations of a ordinary Poisson equation
+solver. In addition, a self-consistent procedure enables us to solve the
+non-linear Poisson-Boltzmann problem. Both solvers exhibit very high accuracy
+and parallel efficiency, and allow for the treatment of different boundary
+conditions, as for example surface systems. The solver has been integrated into
+the BigDFT and Quantum-ESPRESSO electronic-structure packages and will be
+released as an independent program, suitable for integration in other codes.

@@ -1,0 +1,17 @@
+Scenarios, or Message Sequence Charts, offer an intuitive way of describing
+the desired behaviors of a distributed protocol. In this paper we propose a new
+way of specifying finite-state protocols using scenarios: we show that it is
+possible to automatically derive a distributed implementation from a set of
+scenarios augmented with a set of safety and liveness requirements, provided
+the given scenarios adequately \emph{cover} all the states of the desired
+implementation. We first derive incomplete state machines from the given
+scenarios, and then synthesis corresponds to completing the transition relation
+of individual processes so that the global product meets the specified
+requirements. This completion problem, in general, has the same complexity,
+PSPACE, as the verification problem, but unlike the verification problem, is
+NP-complete for a constant number of processes. We present two algorithms for
+solving the completion problem, one based on a heuristic search in the space of
+possible completions and one based on OBDD-based symbolic fixpoint computation.
+We evaluate the proposed methodology for protocol specification and the
+effectiveness of the synthesis algorithms using the classical alternating-bit
+protocol.

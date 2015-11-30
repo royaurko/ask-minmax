@@ -1,0 +1,26 @@
+I present two new methods for exactly summing a set of floating-point
+numbers, and then correctly rounding to the nearest floating-point number.
+Higher accuracy than simple summation (rounding after each addition) is
+important in many applications, such as finding the sample mean of data. Exact
+summation also guarantees identical results with parallel and serial
+implementations, since the exact sum is independent of order. The new methods
+use variations on the concept of a "superaccumulator" - a large fixed-point
+number that can exactly represent the sum of any reasonable number of
+floating-point values. One method uses a "small" superaccumulator with
+sixty-seven 64-bit chunks, each with 32-bit overlap with the next chunk,
+allowing carry propagation to be done infrequently. The small superaccumulator
+is used alone when summing a small number of terms. For big summations, a
+"large" superaccumulator is used as well. It consists of 4096 64-bit chunks,
+one for every possible combination of exponent bits and sign bit, plus counts
+of when each chunk needs to be transferred to the small superaccumulator. To
+add a term to the large superaccumulator, only a single chunk and its
+associated count need to be updated, which takes very few instructions if
+carefully implemented. On modern 64-bit processors, exactly summing a large
+array using this combination of large and small superaccumulators takes less
+than twice the time of simple, inexact, ordered summation, with a serial
+implementation. A parallel implementation using a small number of processor
+cores can be expected to perform exact summation of large arrays at a speed
+that reaches the limit imposed by memory bandwidth. Some common methods that
+attempt to improve accuracy without being exact may therefore be pointless, at
+least for large summations, since they are slower than computing the sum
+exactly.

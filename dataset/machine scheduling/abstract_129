@@ -1,0 +1,26 @@
+In this paper we present the development of Acceleratable UVCs from standard
+UVCs in SystemVerilog and their usage in UVM based Verification Environment of
+Image Signal Processing designs to increase run time performance. This paper
+covers development of Acceleratable UVCs from standard UVCs for internal
+control and data buses of ST imaging group by partitioning of transaction-level
+components and cycle-accurate signal-level components between the software
+simulator and hardware accelerator respectively. Standard Co-Emulation API:
+Modeling Interface (SCE-MI) compliant, transaction-level communications link
+between test benches running on a host system and Emulation machine is
+established. Accelerated Verification IPs are used at UVM based Verification
+Environment of Image Signal Processing designs both with simulator and emulator
+as UVM acceleration is an extension of the standard simulation-only UVM and is
+fully backward compatible with it. Acceleratable UVCs significantly reduces
+development schedule risks while leveraging transaction models used during
+simulation.
+  In this paper, we discuss our experiences on UVM based methodology adoption
+on TestBench-Xpress(TBX) based technology step by step. We are also doing
+comparison between the run time performance results from earlier simulator-only
+environment and the new, hardware-accelerated environment. Although this paper
+focuses on Acceleratable UVCs development and their usage for image signal
+processing designs, Same concept can be extended for non-image signal
+processing designs.
+  KEYWORDS- SystemVerilog, Universal Verification Methodology (UVM),
+TestBench-Xpress (TBX), Universal Verification Component (UVC), Standard
+Co-Emulation API: Modelling Interface (SCE-MI), Acceleratable UVC, Emulator,
+XRTL Tasks/Functions (xtf), Transactor interface (tif), Verification IP (VIP).

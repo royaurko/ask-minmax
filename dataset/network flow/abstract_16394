@@ -1,0 +1,19 @@
+In this paper we consider splitting methods for nonlinear ordinary
+differential equations in which one of the (partial) flows that results from
+the splitting procedure can not be computed exactly. Instead, we insert a
+well-chosen state $y_{\star}$ into the corresponding nonlinearity $b(y)y$,
+which results in a linear term $b(y_{\star})y$ whose exact flow can be
+determined efficiently. Therefore, in the spirit of splitting methods, it is
+still possible for the numerical simulation to satisfy certain properties of
+the exact flow. However, Strang splitting is no longer symmetric (even though
+it is still a second order method) and thus high order composition methods are
+not easily attainable. We will show that an iterated Strang splitting scheme
+can be constructed which yields a method that is symmetric up to a given order.
+This method can then be used to attain high order composition schemes. We will
+illustrate our theoretical results, up to order six, by conducting numerical
+experiments for a charged particle in an inhomogeneous electric field, a
+post-Newtonian computation in celestial mechanics, and a nonlinear population
+model and show that the methods constructed yield superior efficiency as
+compared to Strang splitting. For the first example we also perform a
+comparison with the standard fourth order Runge--Kutta methods and find
+significant gains in efficiency as well better conservation properties.

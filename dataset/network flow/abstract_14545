@@ -1,0 +1,13 @@
+For multiscale gas flows, kinetic-continuum hybrid method is usually used to
+balance the computational accuracy and efficiency. However, the
+kinetic-continuum coupling is not straightforward since the coupled methods are
+based on different theoretical frameworks. In particular, it is not easy to
+recover the non-equilibrium information required by the kinetic method which is
+lost by the continuum model at the coupling interface. Therefore, we present a
+multiscale lattice Boltzmann (LB) method which deploys high-order LB models in
+highly rarefied flow regions and low-order ones in less rarefied regions. Since
+this multiscale approach is based on the same theoretical framework, the
+coupling precess becomes simple. The non-equilibrium information will not be
+lost at the interface as low-order LB models can also retain this information.
+The simulation results confirm that the present method can achieve model
+accuracy with reduced computational cost.

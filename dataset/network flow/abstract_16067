@@ -1,0 +1,21 @@
+In this paper, we first discuss the definition of modularity (Q) used as a
+metric for community quality and then we review the modularity maximization
+approaches which were used for community detection in the last decade. Then, we
+discuss two opposite yet coexisting problems of modularity optimization: in
+some cases, it tends to favor small communities over large ones while in
+others, large communities over small ones (so called the resolution limit
+problem). Next, we overview several community quality metrics proposed to solve
+the resolution limit problem and discuss Modularity Density (Qds) which
+simultaneously avoids the two problems of modularity. Finally, we introduce two
+novel fine-tuned community detection algorithms that iteratively attempt to
+improve the community quality measurements by splitting and merging the given
+network community structure. The first of them, referred to as Fine-tuned Q, is
+based on modularity (Q) while the second one is based on Modularity Density
+(Qds) and denoted as Fine-tuned Qds. Then, we compare the greedy algorithm of
+modularity maximization (denoted as Greedy Q), Fine-tuned Q, and Fine-tuned Qds
+on four real networks, and also on the classical clique network and the LFR
+benchmark networks, each of which is instantiated by a wide range of
+parameters. The results indicate that Fine-tuned Qds is the most effective
+among the three algorithms discussed. Moreover, we show that Fine-tuned Qds can
+be applied to the communities detected by other algorithms to significantly
+improve their results.

@@ -1,0 +1,19 @@
+This paper considers a cooperative OFDMA-based cognitive radio network where
+the primary system leases some of its subchannels to the secondary system for a
+fraction of time in exchange for the secondary users (SUs) assisting the
+transmission of primary users (PUs) as relays. Our aim is to determine the
+cooperation strategies among the primary and secondary systems so as to
+maximize the sum-rate of SUs while maintaining quality-of-service (QoS)
+requirements of PUs. We formulate a joint optimization problem of PU
+transmission mode selection, SU (or relay) selection, subcarrier assignment,
+power control, and time allocation. By applying dual method, this mixed integer
+programming problem is decomposed into parallel per-subcarrier subproblems,
+with each determining the cooperation strategy between one PU and one SU. We
+show that, on each leased subcarrier, the optimal strategy is to let a SU
+exclusively act as a relay or transmit for itself. This result is fundamentally
+different from the conventional spectrum leasing in single-channel systems
+where a SU must transmit a fraction of time for itself if it helps the PU's
+transmission. We then propose a subgradient-based algorithm to find the
+asymptotically optimal solution to the primal problem in polynomial time.
+Simulation results demonstrate that the proposed algorithm can significantly
+enhance the network performance.

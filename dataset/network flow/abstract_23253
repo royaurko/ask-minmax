@@ -1,0 +1,23 @@
+We consider numerical algorithms for the simulation of the rheology of
+two-dimensional vesicles suspended in a viscous Stokesian fluid. The vesicle
+evolution dynamics is governed by hydrodynamic and elastic forces. The elastic
+forces are due to local inextensibility of the vesicle membrane and resistance
+to bending. Numerically resolving vesicle flows poses several challenges. For
+example, we need to resolve moving interfaces, address stiffness due to
+bending, enforce the inextensibility constraint, and efficiently compute the
+(non-negligible) long-range hydrodynamic interactions.
+  Our method is based on the work of {\em Rahimian, Veerapaneni, and Biros,
+"Dynamic simulation of locally inextensible vesicles suspended in an arbitrary
+two-dimensional domain, a boundary integral method", Journal of Computational
+Physics, 229 (18), 2010}. It is a boundary integral formulation of the Stokes
+equations coupled to the interface mass continuity and force balance. We extend
+the algorithms presented in that paper to increase the robustness of the method
+and enable simulations with concentrated suspensions.
+  In particular, we propose a scheme in which both intra-vesicle and
+inter-vesicle interactions are treated semi-implicitly. In addition we use
+special integration for near-singular integrals and we introduce a spectrally
+accurate collision detection scheme. We test the proposed methodologies on both
+unconfined and confined flows for vesicles whose internal fluid may have a
+viscosity contrast with the bulk medium. Our experiments demonstrate the
+importance of treating both intra-vesicle and inter-vesicle interactions
+accurately.

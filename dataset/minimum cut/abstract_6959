@@ -1,0 +1,21 @@
+We present a comparison of methods for treating the electrostatic
+interactions of finite, isolated systems within periodic boundary conditions
+(PBCs), within Density Functional Theory (DFT), with particular emphasis on
+linear-scaling (LS) DFT. Often, PBCs are not physically realistic but are an
+unavoidable consequence of the choice of basis set and the efficacy of using
+Fourier transforms to compute the Hartree potential. In such cases the effects
+of PBCs on the calculations need to be avoided, so that the results obtained
+represent the open rather than the periodic boundary. The very large systems
+encountered in LS-DFT make the demands of the supercell approximation for
+isolated systems more difficult to manage, and we show cases where the open
+boundary (infinite cell) result cannot be obtained from extrapolation of
+calculations from periodic cells of increasing size. We discuss, implement and
+test three very different approaches for overcoming or circumventing the
+effects of PBCs: truncation of the Coulomb interaction combined with padding of
+the simulation cell, approaches based on the minimum image convention, and the
+explicit use of Open Boundary Conditions (OBCs). We have implemented these
+approaches in the ONETEP LS-DFT program and applied them to a range of systems,
+including a polar nanorod and a protein. We compare their accuracy, complexity,
+and rate of convergence with simulation cell size. We demonstrate that
+corrective approaches within PBCs can achieve the OBC result more efficiently
+and accurately than pure OBC approaches.

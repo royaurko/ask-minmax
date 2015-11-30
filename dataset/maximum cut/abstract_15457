@@ -1,0 +1,13 @@
+The Swap-Insert Correction distance from a string $S$ of length $n$ to
+another string $L$ of length $m\geq n$ on the alphabet $[1..d]$ is the minimum
+number of insertions, and swaps of pairs of adjacent symbols, converting $S$
+into $L$. Contrarily to other correction distances, computing it is NP-Hard in
+the size $d$ of the alphabet. We describe an algorithm computing this distance
+in time within $O(d^2 nm g^{d-1})$, where there are $n_\alpha$ occurrences of
+$\alpha$ in $S$, $m_\alpha$ occurrences of $\alpha$ in $L$, and where
+$g=\max_{\alpha\in[1..d]} \min\{n_\alpha,m_\alpha-n_\alpha\}$ measures the
+difficulty of the instance. The difficulty $g$ is bounded by above by various
+terms, such as the length of the shortest string $S$, and by the maximum number
+of occurrences of a single character in $S$. Those results illustrate how, in
+many cases, the correction distance between two strings can be easier to
+compute than in the worst case scenario.

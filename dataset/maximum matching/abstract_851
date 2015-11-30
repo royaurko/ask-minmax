@@ -1,0 +1,18 @@
+An expansion of a density field or particle distribution in basis functions
+which solve the Poisson equation both provides an easily parallelized n-body
+force algorithm and simplifies perturbation theories. The expansion converges
+quickly and provides the highest computational advantage if the lowest-order
+potential-density pair in the basis looks like the unperturbed galaxy or
+stellar system. Unfortunately, there are only a handful of such basis in the
+literature which limits this advantage. This paper presents an algorithm for
+deriving these bases to match a wide variety of galaxy models. The method is
+based on efficient numerical solution of the Sturm-Liouville equation and can
+be used for any geometry with a separable Laplacian. Two cases are described in
+detail. First for the spherical case, the lowest order basis function pair may
+be chosen to be exactly that of the underlying model. The profile may be cuspy
+or have a core and truncated or of infinite extent. Secondly, the method yields
+a three-dimensional cylindrical basis appropriate for studying galaxian disks.
+In this case, the vertical and radial bases are coupled; the lowest order
+radial part of the basis function can be chosen to match the underlying profile
+only in the disk plane. Practically, this basis is still a very good match to
+the overall disk profile and converges in a small number of terms.

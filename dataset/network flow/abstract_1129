@@ -1,0 +1,15 @@
+We propose in this paper an on-line algorithm based on Bloom filters for
+identifying large flows in IP traffic (a.k.a. elephants). Because of the large
+number of small flows, hash tables of these algorithms have to be regularly
+refreshed. Recognizing that the periodic erasure scheme usually used in the
+technical literature turns out to be quite inefficient when using real traffic
+traces over a long period of time, we introduce a simple adaptive scheme that
+closely follows the variations of traffic. When tested against real traffic
+traces, the proposed on-line algorithm performs well in the sense that the
+detection ratio of long flows by the algorithm over a long time period is quite
+high. Beyond the identification of elephants, this same class of algorithms is
+applied to the closely related problem of detection of anomalies in IP traffic,
+e.g., SYN flood due for instance to attacks. An algorithm for detecting SYN and
+volume flood anomalies in Internet traffic is designed. Experiments show that
+an anomaly is detected in less than one minute and the targeted destinations
+are identified at the same time.

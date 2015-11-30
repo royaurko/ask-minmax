@@ -1,0 +1,12 @@
+In this paper, we propose an effective search procedure that interleaves two
+steps: subproblem generation and subproblem solution. We mainly focus on the
+first part. It consists of a variable domain value ranking based on reduced
+costs. Exploiting the ranking, we generate, in a Limited Discrepancy Search
+tree, the most promising subproblems first. An interesting result is that
+reduced costs provide a very precise ranking that allows to almost always find
+the optimal solution in the first generated subproblem, even if its dimension
+is significantly smaller than that of the original problem. Concerning the
+proof of optimality, we exploit a way to increase the lower bound for
+subproblems at higher discrepancies. We show experimental results on the TSP
+and its time constrained variant to show the effectiveness of the proposed
+approach, but the technique could be generalized for other problems.

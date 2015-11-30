@@ -1,0 +1,22 @@
+We consider the estimation of an i.i.d.\ random vector observed through a
+linear transform followed by a componentwise, probabilistic (possibly
+nonlinear) measurement channel. A novel algorithm, called generalized
+approximate message passing (GAMP), is presented that provides computationally
+efficient approximate implementations of max-sum and sum-problem loopy belief
+propagation for such problems. The algorithm extends earlier approximate
+message passing methods to incorporate arbitrary distributions on both the
+input and output of the transform and can be applied to a wide range of
+problems in nonlinear compressed sensing and learning.
+  Extending an analysis by Bayati and Montanari, we argue that the asymptotic
+componentwise behavior of the GAMP method under large, i.i.d. Gaussian
+transforms is described by a simple set of state evolution (SE) equations. From
+the SE equations, one can \emph{exactly} predict the asymptotic value of
+virtually any componentwise performance metric including mean-squared error or
+detection accuracy. Moreover, the analysis is valid for arbitrary input and
+output distributions, even when the corresponding optimization problems are
+non-convex. The results match predictions by Guo and Wang for relaxed belief
+propagation on large sparse matrices and, in certain instances, also agree with
+the optimal performance predicted by the replica method. The GAMP methodology
+thus provides a computationally efficient methodology, applicable to a large
+class of non-Gaussian estimation problems with precise asymptotic performance
+guarantees.

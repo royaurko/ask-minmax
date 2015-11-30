@@ -1,0 +1,12 @@
+The correctness of most randomized distributed algorithms is expressed by a
+statement of the form ``some predicate of the executions holds with high
+probability, regardless of the order in which actions are scheduled''. In this
+paper, we present a general methodology to prove correctness statements of such
+randomized algorithms. Specifically, we show how to prove such statements by a
+series of refinements, which terminate in a statement independent of the
+schedule. To demonstrate the subtlety of the issues involved in this type of
+analysis, we focus on Rabin's randomized distributed algorithm for mutual
+exclusion [Rabin 82]. Surprisingly, it turns out that the algorithm does not
+maintain one of the requirements of the problem under a certain schedule. In
+particular, we give a schedule under which a set of processes can suffer
+lockout for arbitrary long periods.

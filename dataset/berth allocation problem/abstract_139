@@ -1,0 +1,24 @@
+We consider allocation problems that arise in the context of service
+allocation in Clouds. More specifically, we assume on the one part that each
+computing resource is associated to a capacity constraint, that can be chosen
+using Dynamic Voltage and Frequency Scaling (DVFS) method, and to a probability
+of failure. On the other hand, we assume that the service runs as a set of
+independent instances of identical Virtual Machines. Moreover, there exists a
+Service Level Agreement (SLA) between the Cloud provider and the client that
+can be expressed as follows: the client comes with a minimal number of service
+instances which must be alive at the end of the day, and the Cloud provider
+offers a list of pairs (price,compensation), this compensation being paid by
+the Cloud provider if it fails to keep alive the required number of services.
+On the Cloud provider side, each pair corresponds actually to a guaranteed
+success probability of fulfilling the constraint on the minimal number of
+instances. In this context, given a minimal number of instances and a
+probability of success, the question for the Cloud provider is to find the
+number of necessary resources, their clock frequency and an allocation of the
+instances (possibly using replication) onto machines. This solution should
+satisfy all types of constraints during a given time period while minimizing
+the energy consumption of used resources. We consider two energy consumption
+models based on DVFS techniques, where the clock frequency of physical
+resources can be changed. For each allocation problem and each energy model, we
+prove deterministic approximation ratios on the consumed energy for algorithms
+that provide guaranteed probability failures, as well as an efficient
+heuristic, whose energy ratio is not guaranteed.

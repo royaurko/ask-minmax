@@ -1,0 +1,14 @@
+We have designed, implemented and tested a time-to-digital converter core in
+a low-cost Spartan-6 FPGA. Our design exploits the finite propagation speed in
+carry chains to realize a delay line in which the propagation distance of the
+incoming signal's edges is measured using hundreds of taps. This technique
+enables the core to reach a precision far better than the minimum switching
+period of the FPGA flip-flops. To compensate for process, voltage and
+temperature (PVT) effects, our design uses a combination of two techniques:
+startup calibration and online calibration. The startup calibration uses a
+statistical method to estimate the delay between the taps of the delay line and
+helps eliminate the effect of process variations. The online calibration, which
+takes place without disruption of the core's operation, uses a ring oscillator
+whose frequency instability is measured and used to compensate for subsequent
+voltage and temperature effects on the delay line. Our tests show that our
+design reaches a precision of 26 ps RMS over a temperature range of 37C to 48C.

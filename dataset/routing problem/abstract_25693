@@ -1,0 +1,12 @@
+We examine the efficiency of clustering a set of points, when the
+encompassing metric space may be preprocessed in advance. In computational
+problems of this genre, there is a first stage of preprocessing, whose input is
+a collection of points $M$; the next stage receives as input a query set
+$Q\subset M$, and should report a clustering of $Q$ according to some
+objective, such as 1-median, in which case the answer is a point $a\in M$
+minimizing $\sum_{q\in Q} d_M(a,q)$.
+  We design fast algorithms that approximately solve such problems under
+standard clustering objectives like $p$-center and $p$-median, when the metric
+$M$ has low doubling dimension. By leveraging the preprocessing stage, our
+algorithms achieve query time that is near-linear in the query size $n=|Q|$,
+and is (almost) independent of the total number of points $m=|M|$.

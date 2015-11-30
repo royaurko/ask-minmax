@@ -1,0 +1,13 @@
+We have developed a one-dimensional code to solve ultra-relativistic
+hydrodynamic problems, using the Glimm method for an accurate treatment of
+shocks and contact discontinuities. The implementation of the Glimm method is
+based on an exact Riemann solver and van der Corput sampling sequence. In order
+to improve computational efficiency, the Glimm method is replaced by a finite
+differencing scheme in those regions where the fluid flow is sufficiently
+smooth. The accuracy and convergence of this hybrid method is investigated in
+tests involving planar, cylindrically and spherically symmetric flows that
+exhibit strong shocks and Lorentz factors of up to ~2000. This hybrid code has
+proven to be successful in simulating the interaction between a thin,
+ultra-relativistic, spherical shell and a low density stationary medium, a
+situation likely to appear in Gamma-Ray Bursts, supernovae explosions, pulsar
+winds and AGNs.

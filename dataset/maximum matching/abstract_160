@@ -1,0 +1,17 @@
+We study deterministic distributed broadcasting in synchronous
+multiple-access channels. Packets are injected into $n$ nodes by a window-type
+adversary that is constrained by a window $w$ and injection rates individually
+assigned to all nodes. We investigate what queue size and packet latency can be
+achieved with the maximum aggregate injection rate of one packet per round,
+depending on properties of channels and algorithms. We give a non-adaptive
+algorithm for channels with collision detection and an adaptive algorithm for
+channels without collision detection that achieve $O(\min(n+w,w\log n))$ packet
+latency. We show that packet latency has to be either $\Omega(w \max (1,\log_w
+n))$, when $w\le n$, or $\Omega(w+n)$, when $w>n$, as a matching lower bound to
+these algorithms. We develop a non-adaptive algorithm for channels without
+collision detection that achieves $O(n+w)$ queue size and $O(nw)$ packet
+latency. This is in contrast with the adversarial model of global injection
+rates, in which non-adaptive algorithms with bounded packet latency do not
+exist [18]. Our algorithm avoids collisions produced by simultaneous
+transmissions; we show that any algorithm with this property must have
+$\Omega(nw)$ packet latency.

@@ -1,0 +1,18 @@
+As of today, object categorization algorithms are not able to achieve the
+level of robustness and generality necessary to work reliably in the real
+world. Even the most powerful convolutional neural network we can train fails
+to perform satisfactorily when trained and tested on data from different
+databases. This issue, known as domain adaptation and/or dataset bias in the
+literature, is due to a distribution mismatch between data collections. Methods
+addressing it go from max-margin classifiers to learning how to modify the
+features and obtain a more robust representation. Recent work showed that by
+casting the problem into the image-to-class recognition framework, the domain
+adaptation problem is significantly alleviated \cite{danbnn}. Here we follow
+this approach, and show how a very simple, learning free Naive Bayes Nearest
+Neighbor (NBNN)-based domain adaptation algorithm can significantly alleviate
+the distribution mismatch among source and target data, especially when the
+number of classes and the number of sources grow. Experiments on standard
+benchmarks used in the literature show that our approach (a) is competitive
+with the current state of the art on small scale problems, and (b) achieves the
+current state of the art as the number of classes and sources grows, with
+minimal computational requirements.

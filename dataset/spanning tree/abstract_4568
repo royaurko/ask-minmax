@@ -1,0 +1,13 @@
+We solve the problem of designing an O(1) time algorithm for generating
+adjacent multiset combinations in a different approach from Walsh. By the word
+adjacent, we mean that two adjacent multiset combinations are different at two
+places by one in their vector forms. Previous O(1) time algorithms for multiset
+combinations generated non-adjacent multiset combinations. Our algorithm in
+this paper can be derived from a general framework of combinatorial Gray code,
+which we characterise to suit our need for combinations and multiset
+combinations. The central idea is a twisted lexico tree, which is obtained from
+the lexicographic tree for the given set of combinatorial objects by twisting
+branches depending on the parity of each node. An iterative algorithm which
+traverses this tree will generate the given set of combinatorial objects in
+constant time as well as with a fixed number of changes from the present
+combinatorial object to the next.

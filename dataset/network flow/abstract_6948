@@ -1,0 +1,12 @@
+We study the computation of the flow of water on imprecise terrains. We
+consider two approaches to modeling flow on a terrain: one where water flows
+across the surface of a polyhedral terrain in the direction of steepest
+descent, and one where water only flows along the edges of a predefined graph,
+for example a grid or a triangulation. In both cases each vertex has an
+imprecise elevation, given by an interval of possible values, while its
+(x,y)-coordinates are fixed. For the first model, we show that the problem of
+deciding whether one vertex may be contained in the watershed of another is
+NP-hard. In contrast, for the second model we give a simple O(n log n) time
+algorithm to compute the minimal and the maximal watershed of a vertex, where n
+is the number of edges of the graph. On a grid model, we can compute the same
+in O(n) time.

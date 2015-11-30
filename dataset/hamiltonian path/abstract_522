@@ -1,0 +1,9 @@
+In this paper, we present a novel and efficient algorithm to find the k
+longest (shortest) paths between sources and sinks in a directed acyclic graph
+(DAG). The algorithm does not enumerate paths therefore it is especially useful
+for very large k values. It is based on the Valued-Sum-of-Product (VSOP) tool,
+which is an extension of Zero-suppressed Binary Decision Diagrams (ZBDDs). We
+assessed the performance of this algorithm with a DAG model of a path-intensive
+combinational circuit, viz. c6288, that has \sim10^{20} paths. We found that it
+took about 64 minutes to compute all paths in this DAG along with their
+lengths.

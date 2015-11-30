@@ -1,0 +1,23 @@
+More and more critical Wireless Sensor Networks (WSNs) applications are
+emerging. Those applications need reliability and respect of time constraints.
+The underlying mechanisms such as MAC and routing must handle such
+requirements. Our approach to the time constraint problem is to bound the
+hop-count between a node and the sink and the time it takes to do a hop so the
+end-to-end delay can be bounded and the communications are thus real-time. For
+reliability purpose we propose to select forwarder nodes depending on how they
+are connected in the direction of the sink. In order to be able to do so we
+need a coordinate (or a metric) that gives information on hop-count, that
+allows to strongly differentiate nodes and gives information on the
+connectivity of each node keeping in mind the intrinsic constraints of WSWs
+such as energy consumption, autonomy, etc. Due to the efficiency and
+scalability of greedy routing in WSNs and the financial cost of GPS chips,
+Virtual Coordinate Systems (VCSs) for WSNs have been proposed. A category of
+VCSs is based on the hop-count from the sink, this scheme leads to many nodes
+having the same coordinate. The main advantage of this system is that the hops
+number of a packet from a source to the sink is known. Nevertheless, it does
+not allow to differentiate the nodes with the same hop-count. In this report we
+propose a novel hop-count-based VCS which aims at classifying the nodes having
+the same hop-count depending on their connectivity and at differentiating nodes
+in a 2-hop neighborhood. Those properties make the coordinates, which also can
+be viewed as a local identifier, a very powerful metric which can be used in
+WSNs mechanisms.

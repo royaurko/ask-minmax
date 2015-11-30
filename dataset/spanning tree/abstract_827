@@ -1,0 +1,25 @@
+Given a capacitated communication network N and a function f that needs to be
+computed on N, we study the problem of generating a computation and
+communication schedule in N to maximize the rate of computation of f. Shah et.
+al.[IEEE Journal of Selected Areas in Communication, 2013] studied this problem
+when the computation schema G for f is a tree graph. We define the notion of a
+schedule when G is a general DAG and show that finding an optimal schedule is
+equivalent to finding the solution of a packing linear program. We prove that
+approximating the maximum rate is MAX SNP-hard by looking at a restricted class
+of schedules and the equivalent packing LP. For this packing LP we prove that
+solving the separation oracle of its dual is equivalent to solving the LP. The
+separation oracle of the dual reduces to the problem of finding minimum cost
+embedding given N,G which we prove to be MAX SNP-hard even when G has bounded
+degree and bounded edge weights. A version of minimum cost embedding problem
+has been studied in literature and we relate our cost model with the one
+present in literature. We present a quadratic integer program for the minimum
+cost embedding problem and its linear programming relaxation based on
+earthmover metric. Applying the randomized rounding techniques to the optimal
+solution of this LP we give approximate algorithms for some special class of
+graphs. We present constant factor approximation algorithms for maximum rate
+when G is a bounded width layered graph and when it is a planar graph with
+bounded out-degree. We also present O(D log n)-approximation algorithm for
+arbitrary DAG G where D is the maximum out-degree of a vertex in G and n is the
+number of vertices in N. We also prove that if a DAG has a spanning tree in
+which every edge is a part of O(F) fundamental cycles then there is a
+O(FD)-approximation algorithm.

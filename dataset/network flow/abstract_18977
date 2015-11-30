@@ -1,0 +1,17 @@
+Social network analysis (SNA), which is a research field describing and
+modeling the social connection of a certain group of people, is popular among
+network services. Our topic words analysis project is a SNA method to visualize
+the topic words among emails from Obama.com to accounts registered in Columbus,
+Ohio. Based on Latent Dirichlet Allocation (LDA) model, a popular topic model
+of SNA, our project characterizes the preference of senders for target group of
+receptors. Gibbs sampling is used to estimate topic and word distribution. Our
+training and testing data are emails from the carbon-free server
+Datagreening.com. We use parallel computing tool BashReduce for word processing
+and generate related words under each latent topic to discovers typical
+information of political news sending specially to local Columbus receptors.
+Running on two instances using paralleling tool BashReduce, our project
+contributes almost 30% speedup processing the raw contents, comparing with
+processing contents on one instance locally. Also, the experimental result
+shows that the LDA model applied in our project provides precision rate 53.96%
+higher than TF-IDF model finding target words, on the condition that
+appropriate size of topic words list is selected.

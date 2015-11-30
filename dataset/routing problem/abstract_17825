@@ -1,0 +1,13 @@
+We present a factor $14D^2$ approximation algorithm for the minimum linear
+arrangement problem on series-parallel graphs, where $D$ is the maximum degree
+in the graph. Given a suitable decomposition of the graph, our algorithm runs
+in time $O(|E|)$ and is very easy to implement. Its divide-and-conquer approach
+allows for an effective parallelization. Note that a suitable decomposition can
+also be computed in time $O(|E|\log{|E|})$ (or even $O(\log{|E|}\log^*{|E|})$
+on an EREW PRAM using $O(|E|)$ processors).
+  For the proof of the approximation ratio, we use a sophisticated charging
+method that uses techniques similar to amortized analysis in advanced data
+structures.
+  On general graphs, the minimum linear arrangement problem is known to be
+NP-hard. To the best of our knowledge, the minimum linear arrangement problem
+on series-parallel graphs has not been studied before.

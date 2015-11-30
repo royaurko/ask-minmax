@@ -1,0 +1,18 @@
+In order to keep up with the increasing demands for capacity, cellular
+networks are becoming increasingly dense and heterogeneous. Dense deployments
+are expected to provide a linear capacity scaling with the number of small
+cells deployed due to spatial reuse gains. However in practice network capacity
+is severely limited in dense networks due to interference. The primary reason
+is that the current LTE control plane deployment model has very high latency
+and is unable to cope with the demand of implementing interference management
+techniques that require coordination on a millisecond timeframe.
+  This paper presents SwiftC, a novel low-latency control plane design for LTE
+networks. SwiftC's novel contribution is a design for efficiently sending and
+receiving control plane messages over the LTE spectrum itself, thus creating a
+direct and low-latency coordination signaling link between small cells and the
+macrocell. SwiftC builds on recent work in full duplex radios and shows via
+prototype implementations that a low latency control plane can be built over
+the existing LTE network without wasting licensed spectrum. We also show the
+benefits of SwiftC in implementing complex interference management techniques,
+and show that with SwiftC small cell deployments can achieve almost a linear
+capacity scaling with every small cell deployed.

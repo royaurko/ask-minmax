@@ -1,0 +1,12 @@
+Hierarchical proof trees (hiproofs for short) add structure to ordinary proof
+trees, by allowing portions of trees to be hierarchically nested. The
+additional structure can be used to abstract away from details, or to label
+particular portions to explain their purpose. In this paper we present two
+complementary methods for capturing hiproofs in HOL Light, along with a tool to
+produce web-based visualisations. The first method uses tactic recording, by
+modifying tactics to record their arguments and construct a hierarchical tree;
+this allows a tactic proof script to be modified. The second method uses proof
+recording, which extends the HOL Light kernel to record hierachical proof trees
+alongside theorems. This method is less invasive, but requires care to manage
+the size of the recorded objects. We have implemented both methods, resulting
+in two systems: Tactician and HipCam.

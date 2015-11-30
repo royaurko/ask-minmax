@@ -1,0 +1,17 @@
+In this paper, we analyze the complexity of natural parallelizations of
+Delaunay refinement methods for mesh generation. The parallelizations employ a
+simple strategy: at each iteration, they choose a set of ``independent'' points
+to insert into the domain, and then update the Delaunay triangulation. We show
+that such a set of independent points can be constructed efficiently in
+parallel and that the number of iterations needed is $O(\log^2(L/s))$, where
+$L$ is the diameter of the domain, and $s$ is the smallest edge in the output
+mesh. In addition, we show that the insertion of each independent set of points
+can be realized sequentially by Ruppert's method in two dimensions and
+Shewchuk's in three dimensions. Therefore, our parallel Delaunay refinement
+methods provide the same element quality and mesh size guarantees as the
+sequential algorithms in both two and three dimensions. For quasi-uniform
+meshes, such as those produced by Chew's method, we show that the number of
+iterations can be reduced to $O(\log(L/s))$. To the best of our knowledge,
+these are the first provably polylog$(L/s)$ parallel time Delaunay meshing
+algorithms that generate well-shaped meshes of size optimal to within a
+constant.

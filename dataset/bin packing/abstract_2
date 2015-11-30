@@ -1,0 +1,19 @@
+We consider two well-known natural variants of bin packing, and show that
+these packing problems admit asymptotic fully polynomial time approximation
+schemes (AFPTAS). In bin packing problems, a set of one-dimensional items of
+size at most 1 is to be assigned (packed) to subsets of sum at most 1 (bins).
+It has been known for a while that the most basic problem admits an AFPTAS. In
+this paper, we develop methods that allow to extend this result to other
+variants of bin packing. Specifically, the problems which we study in this
+paper, for which we design asymptotic fully polynomial time approximation
+schemes, are the following. The first problem is "Bin packing with cardinality
+constraints", where a parameter k is given, such that a bin may contain up to k
+items. The goal is to minimize the number of bins used. The second problem is
+"Bin packing with rejection", where every item has a rejection penalty
+associated with it. An item needs to be either packed to a bin or rejected, and
+the goal is to minimize the number of used bins plus the total rejection
+penalty of unpacked items. This resolves the complexity of two important
+variants of the bin packing problem. Our approximation schemes use a novel
+method for packing the small items. This new method is the core of the improved
+running times of our schemes over the running times of the previous results,
+which are only asymptotic polynomial time approximation schemes (APTAS).

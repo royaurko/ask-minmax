@@ -1,0 +1,17 @@
+This paper looks into the problem of pedestrian tracking using a monocular,
+potentially moving, uncalibrated camera. The pedestrians are located in each
+frame using a standard human detector, which are then tracked in subsequent
+frames. This is a challenging problem as one has to deal with complex
+situations like changing background, partial or full occlusion and camera
+motion. In order to carry out successful tracking, it is necessary to resolve
+associations between the detected windows in the current frame with those
+obtained from the previous frame. Compared to methods that use temporal windows
+incorporating past as well as future information, we attempt to make decision
+on a frame-by-frame basis. An occlusion reasoning scheme is proposed to resolve
+the association problem between a pair of consecutive frames by using an
+affinity matrix that defines the closeness between a pair of windows and then,
+uses a binary integer programming to obtain unique association between them. A
+second stage of verification based on SURF matching is used to deal with those
+cases where the above optimization scheme might yield wrong associations. The
+efficacy of the approach is demonstrated through experiments on several
+standard pedestrian datasets.

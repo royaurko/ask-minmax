@@ -1,0 +1,14 @@
+A widely adopted approach to solving constraint satisfaction problems
+combines systematic tree search with various degrees of constraint propagation
+for pruning the search space. One common technique to improve the execution
+efficiency is to add redundant constraints, which are constraints logically
+implied by others in the problem model. However, some redundant constraints are
+propagation redundant and hence do not contribute additional propagation
+information to the constraint solver. Redundant constraints arise naturally in
+the process of redundant modeling where two models of the same problem are
+connected and combined through channeling constraints. In this paper, we give
+general theorems for proving propagation redundancy of one constraint with
+respect to channeling constraints and constraints in the other model. We
+illustrate, on problems from CSPlib (http://www.csplib.org/), how detecting and
+removing propagation redundant constraints in redundant modeling can
+significantly speed up constraint solving.

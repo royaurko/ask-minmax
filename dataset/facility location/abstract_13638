@@ -1,0 +1,11 @@
+Proving the correctness of programs written for multiple processors is a
+challenging problem, due in no small part to the weaker memory guarantees
+afforded by most modern architectures. In particular, the existence of store
+buffers means that the programmer can no longer assume that writes to different
+locations become visible to all processors in the same order. However, all
+practical architectures do provide a collection of weaker guarantees about
+memory consistency across processors, which enable the programmer to write
+provably correct programs in spite of a lack of full sequential consistency. In
+this work, we present a mechanization in the ACL2 theorem prover of an
+axiomatic weak memory model (introduced by Alglave et al.). In the process, we
+provide a new proof of an established theorem involving these axioms.

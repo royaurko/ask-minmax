@@ -1,0 +1,14 @@
+Image subtraction in astronomy is a tool for transient object discovery such
+as asteroids, extra-solar planets and supernovae. To match point spread
+functions (PSFs) between images of the same field taken at different times a
+convolution technique is used. Particularly suitable for large-scale images is
+a computationally intensive spatially-varying kernel. The underlying algorithm
+is inherently massively parallel due to unique kernel generation at every pixel
+location. The spatially-varying kernel cannot be efficiently computed through
+the Convolution Theorem, and thus does not lend itself to acceleration by Fast
+Fourier Transform (FFT). This work presents results of accelerated
+implementation of the spatially-varying kernel image convolution in multi-cores
+with OpenMP and graphic processing units (GPUs). Typical speedups over ANSI-C
+were a factor of 50 and a factor of 1000 over the initial IDL implementation,
+demonstrating that the techniques are a practical and high impact path to
+terabyte-per-night image pipelines and petascale processing.

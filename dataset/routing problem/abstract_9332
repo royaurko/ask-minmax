@@ -1,0 +1,16 @@
+Finding a sparse representation of a possibly noisy signal can be modeled as
+a variational minimization with l_q-sparsity constraints for q less than one.
+Especially for real-time, on-line, or iterative applications, in which problems
+of this type have to be solved multiple times, one needs fast algorithms to
+compute these minimizers. Identifying the exact minimizers is computationally
+expensive. We consider minimization up to a constant factor to circumvent this
+limitation. We verify that q-dependent modifications of shrinkage rules provide
+closed formulas for such minimizers. Therefore, their computation is extremely
+fast. We also introduce a new shrinkage rule which is adapted to q. To support
+the theoretical results, the proposed method is applied to Landweber iteration
+with shrinkage used at each iteration step. This approach is utilized to solve
+the ill-posed problem of analytic ultracentrifugation, a method to determine
+the size distribution of macromolecules. For relatively pure solutes, our
+proposed scheme leads to sparser solutions with sharper peaks, higher
+resolution, and smaller residuals than standard regularization for this
+problem.

@@ -1,0 +1,15 @@
+This paper considers how to accurately estimate the minimum sum-rate so as to
+reduce the complexity of solving cooperative data exchange (CDE) problems. The
+CDE system contains a number of geographically close clients who send packets
+to help the others recover an entire packet set. The minimum sum-rate is the
+minimum value of total number of transmissions that achieves universal recovery
+(the situation when all the clients recover the whole packet set). Based on a
+necessary and sufficient condition for a supermodular base polyhedron to be
+nonempty, we show that the minimum sum-rate for a CDE system can be determined
+by a maximization over all possible partitions of the client set. Due to the
+high complexity of solving this maximization problem, we propose a
+deterministic algorithm to approximate a lower bound on the minimum sum-rate.
+We show by experiments that this lower bound is much tighter than those lower
+bounds derived in the existing literature. We also show that the deterministic
+algorithm prevents from repetitively running the existing algorithms for
+solving CDE problems so that the overall complexity can be reduced accordingly.

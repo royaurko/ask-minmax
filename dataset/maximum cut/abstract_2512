@@ -1,0 +1,8 @@
+We give a priority queue that achieves the same amortized bounds as Fibonacci
+heaps. Namely, find-min requires O(1) worst-case time, insert, meld and
+decrease-key require O(1) amortized time, and delete-min requires $O(\log n)$
+amortized time. Our structure is simple and promises an efficient practical
+behavior when compared to other known Fibonacci-like heaps. The main idea
+behind our construction is to propagate rank updates instead of performing
+cascaded cuts following a decrease-key operation, allowing for a relaxed
+structure.

@@ -1,0 +1,22 @@
+We take a unified view of network coding and decentralized control. Precisely
+speaking, we consider both as linear time-invariant systems by appropriately
+restricting channels and coding schemes of network coding to be linear
+time-invariant, and the plant and controllers of decentralized control to be
+linear time-invariant as well. First, we apply linear system theory to network
+coding. This gives a novel way of converting an arbitrary relay network to an
+equivalent acyclic single-hop relay network, which we call Network
+Linearization. Based on network linearization, we prove that the fundamental
+design limit, mincut, is achievable by a linear time-invariant network-coding
+scheme regardless of the network topology.
+  Then, we use the network-coding to view decentralized linear systems. We
+argue that linear time-invariant controllers in a decentralized linear system
+"communicate" via linear network coding to stabilize the plant. To justify this
+argument, we give an algorithm to "externalize" the implicit communication
+between the controllers that we believe must be occurring to stabilize the
+plant. Based on this, we show that the stabilizability condition for
+decentralized linear systems comes from an underlying communication limit,
+which can be described by the algebraic mincut-maxflow theorem. With this
+re-interpretation in hand, we also consider stabilizability over LTI networks
+to emphasize the connection with network coding. In particular, in broadcast
+and unicast problems, unintended messages at the receivers will be modeled as
+secrecy constraints.

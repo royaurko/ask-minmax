@@ -1,0 +1,21 @@
+Assembling genomic sequences from a set of overlapping reads is one of the
+most fundamental problems in computational biology. Algorithms addressing the
+assembly problem fall into two broad categories -- based on the data structures
+which they employ. The first class uses an overlap/string graph and the second
+type uses a de Bruijn graph. However with the recent advances in short read
+sequencing technology, de Bruijn graph based algorithms seem to play a vital
+role in practice.
+  Efficient algorithms for building these massive de Bruijn graphs are very
+essential in large sequencing projects based on short reads. In Jackson et. al.
+ICPP-2008, an $O(n/p)$ time parallel algorithm has been given for this problem.
+Here $n$ is the size of the input and $p$ is the number of processors. This
+algorithm enumerates all possible bi-directed edges which can overlap with a
+node and ends up generating $\Theta(n\Sigma)$ messages.
+  In this paper we present a $\Theta(n/p)$ time parallel algorithm with a
+communication complexity equal to that of parallel sorting and is not sensitive
+to $\Sigma$. The generality of our algorithm makes it very easy to extend it
+even to the out-of-core model and in this case it has an optimal I/O complexity
+of $\Theta(\frac{n\log(n/B)}{B\log(M/B)})$. We demonstrate the scalability of
+our parallel algorithm on a SGI/Altix computer. A comparison of our algorithm
+with that of Jackson et. al. ICPP-2008 reveals that our algorithm is faster. We
+also provide efficient algorithms for the bi-directed chain compaction problem.

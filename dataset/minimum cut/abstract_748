@@ -1,0 +1,15 @@
+Given $n$ points in a $d$ dimensional Euclidean space, the Minimum Enclosing
+Ball (MEB) problem is to find the ball with the smallest radius which contains
+all $n$ points. We give a $O(nd\Qcal/\sqrt{\epsilon})$ approximation algorithm
+for producing an enclosing ball whose radius is at most $\epsilon$ away from
+the optimum (where $\Qcal$ is an upper bound on the norm of the points). This
+improves existing results using \emph{coresets}, which yield a $O(nd/\epsilon)$
+greedy algorithm. Finding the Minimum Enclosing Convex Polytope (MECP) is a
+related problem wherein a convex polytope of a fixed shape is given and the aim
+is to find the smallest magnification of the polytope which encloses the given
+points. For this problem we present a $O(mnd\Qcal/\epsilon)$ approximation
+algorithm, where $m$ is the number of faces of the polytope. Our algorithms
+borrow heavily from convex duality and recently developed techniques in
+non-smooth optimization, and are in contrast with existing methods which rely
+on geometric arguments. In particular, we specialize the excessive gap
+framework of \citet{Nesterov05a} to obtain our results.

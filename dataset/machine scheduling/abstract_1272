@@ -1,0 +1,20 @@
+A typical enterprise uses a local area network of computers to perform its
+business. During the off-working hours, the computational capacities of these
+networked computers are underused or unused. In order to utilize this
+computational capacity an application has to be recoded to exploit concurrency
+inherent in a computation which is clearly not possible for legacy applications
+without any source code. This thesis presents the design an implementation of a
+distributed middleware which can automatically execute a legacy application on
+multiple networked computers by parallelizing it. This middleware runs multiple
+copies of the binary executable code in parallel on different hosts in the
+network. It wraps up the binary executable code of the legacy application in
+order to capture the kernel level data access system calls and perform them
+distributively over multiple computers in a safe and conflict free manner. The
+middleware also incorporates a dynamic scheduling technique to execute the
+target application in minimum time by scavenging the available CPU cycles of
+the hosts in the network. This dynamic scheduling also supports the CPU
+availability of the hosts to change over time and properly reschedule the
+replicas performing the computation to minimize the execution time. A prototype
+implementation of this middleware has been developed as a proof of concept of
+the design. This implementation has been evaluated with a few typical case
+studies and the test results confirm that the middleware works as expected.

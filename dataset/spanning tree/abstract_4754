@@ -1,0 +1,26 @@
+We propose polynomial-time algorithms that sparsify planar and bounded-genus
+graphs while preserving optimal or near-optimal solutions to Steiner problems.
+Our main contribution is a polynomial-time algorithm that, given an unweighted
+graph $G$ embedded on a surface of genus $g$ and a designated face $f$ bounded
+by a simple cycle of length $k$, uncovers a set $F \subseteq E(G)$ of size
+polynomial in $g$ and $k$ that contains an optimal Steiner tree for any set of
+terminals that is a subset of the vertices of $f$.
+  We apply this general theorem to prove that: * given an unweighted graph $G$
+embedded on a surface of genus $g$ and a terminal set $S \subseteq V(G)$, one
+can in polynomial time find a set $F \subseteq E(G)$ that contains an optimal
+Steiner tree $T$ for $S$ and that has size polynomial in $g$ and $|E(T)|$; * an
+analogous result holds for an optimal Steiner forest for a set $S$ of terminal
+pairs; * given an unweighted planar graph $G$ and a terminal set $S \subseteq
+V(G)$, one can in polynomial time find a set $F \subseteq E(G)$ that contains
+an optimal (edge) multiway cut $C$ separating $S$ and that has size polynomial
+in $|C|$.
+  In the language of parameterized complexity, these results imply the first
+polynomial kernels for Steiner Tree and Steiner Forest on planar and
+bounded-genus graphs (parameterized by the size of the tree and forest,
+respectively) and for (Edge) Multiway Cut on planar graphs (parameterized by
+the size of the cutset). Steiner Tree and similar "subset" problems were
+identified in [Demaine, Hajiaghayi, Computer J., 2008] as important to the
+quest to widen the reach of the theory of bidimensionality ([Demaine et al,
+JACM 2005], [Fomin et al, SODA 2010]). Therefore, our results can be seen as a
+leap forward to achieve this broader goal.
+  Additionally, we obtain a weighted variant of our main contribution.

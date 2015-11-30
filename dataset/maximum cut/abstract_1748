@@ -1,0 +1,23 @@
+Maximum entropy approach to classification is very well studied in applied
+statistics and machine learning and almost all the methods that exists in
+literature are discriminative in nature. In this paper, we introduce a maximum
+entropy classification method with feature selection for large dimensional data
+such as text datasets that is generative in nature. To tackle the curse of
+dimensionality of large data sets, we employ conditional independence
+assumption (Naive Bayes) and we perform feature selection simultaneously, by
+enforcing a `maximum discrimination' between estimated class conditional
+densities. For two class problems, in the proposed method, we use Jeffreys
+($J$) divergence to discriminate the class conditional densities. To extend our
+method to the multi-class case, we propose a completely new approach by
+considering a multi-distribution divergence: we replace Jeffreys divergence by
+Jensen-Shannon ($JS$) divergence to discriminate conditional densities of
+multiple classes. In order to reduce computational complexity, we employ a
+modified Jensen-Shannon divergence ($JS_{GM}$), based on AM-GM inequality. We
+show that the resulting divergence is a natural generalization of Jeffreys
+divergence to a multiple distributions case. As far as the theoretical
+justifications are concerned we show that when one intends to select the best
+features in a generative maximum entropy approach, maximum discrimination using
+$J-$divergence emerges naturally in binary classification. Performance and
+comparative study of the proposed algorithms have been demonstrated on large
+dimensional text and gene expression datasets that show our methods scale up
+very well with large dimensional datasets.

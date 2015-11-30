@@ -1,0 +1,8 @@
+We describe a synchronous distributed algorithm which identifies the
+edge-biconnected components of a connected network. It requires a leader, and
+uses messages of size O(log |V|). The main idea is to preorder a BFS spanning
+tree, and then to efficiently compute least common ancestors so as to mark
+cycle edges. This algorithm takes O(Diam) time and uses O(|E|) messages.
+Furthermore, we show that no correct singly-initiated edge-biconnectivity
+algorithm can beat either bound on any graph by more than a constant factor. We
+also describe a near-optimal local algorithm for edge-biconnectivity.

@@ -1,0 +1,11 @@
+We exhibit assertion-preserving (reachability preserving) transformations
+from parameterized concurrent shared-memory programs, under a k-round
+scheduling of processes, to sequential programs. The salient feature of the
+sequential program is that it tracks the local variables of only one thread at
+any point, and uses only O(k) copies of shared variables (it does not use extra
+counters, not even one counter to keep track of the number of threads).
+Sequentialization is achieved using the concept of a linear interface that
+captures the effect an unbounded block of processes have on the shared state in
+a k-round schedule. Our transformation utilizes linear interfaces to
+sequentialize the program, and to ensure the sequential program explores only
+reachable states and preserves local invariants.

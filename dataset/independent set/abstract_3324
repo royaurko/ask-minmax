@@ -1,0 +1,14 @@
+We study the growth rate of the hard squares lattice gas, equivalent to the
+number of independent sets on the square lattice, and two related models -
+non-attacking kings and read-write isolated memory. We use an assortment of
+techniques from combinatorics, statistical mechanics and linear algebra to
+prove upper bounds on these growth rates. We start from Calkin and Wilf's
+transfer matrix eigenvalue bound, then bound that with the Collatz-Wielandt
+formula from linear algebra. To obtain an approximate eigenvector, we use an
+ansatz from Baxter's corner transfer matrix formalism, optimised with Nishino
+and Okunishi's corner transfer matrix renormalisation group method. This
+results in an upper bound algorithm which no longer requires exponential memory
+and so is much faster to calculate than a direct evaluation of the Calkin-Wilf
+bound. Furthermore, it is extremely parallelisable and so allows us to make
+dramatic improvements to the previous best known upper bounds. In all cases we
+reduce the gap between upper and lower bounds by 4-6 orders of magnitude.

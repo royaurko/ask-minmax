@@ -1,0 +1,21 @@
+For a class $\mathcal{H}$ of graphs, #Sub$(\mathcal{H})$ is the counting
+problem that, given a graph $H\in \mathcal{H}$ and an arbitrary graph $G$, asks
+for the number of subgraphs of $G$ isomorphic to $H$. It is known that if
+$\mathcal{H}$ has bounded vertex-cover number (equivalently, the size of the
+maximum matching in $\mathcal{H}$ is bounded), then #Sub$(\mathcal{H})$ is
+polynomial-time solvable. We complement this result with a corresponding lower
+bound: if $\mathcal{H}$ is any recursively enumerable class of graphs with
+unbounded vertex-cover number, then #Sub$(\mathcal{H})$ is #W[1]-hard
+parameterized by the size of $H$ and hence not polynomial-time solvable and not
+even fixed-parameter tractable, unless FPT = #W[1].
+  As a first step of the proof, we show that counting $k$-matchings in
+bipartite graphs is #W[1]-hard. Recently, Curticapean [ICALP 2013] proved the
+#W[1]-hardness of counting $k$-matchings in general graphs; our result
+strengthens this statement to bipartite graphs with a considerably simpler
+proof and even shows that, assuming the Exponential Time Hypothesis (ETH),
+there is no $f(k)n^{o(k/\log k)}$ time algorithm for counting $k$-matchings in
+bipartite graphs for any computable function $f(k)$. As a consequence, we
+obtain an independent and somewhat simpler proof of the classical result of
+Flum and Grohe [SICOMP 2004] stating that counting paths of length $k$ is
+#W[1]-hard, as well as a similar almost-tight ETH-based lower bound on the
+exponent.

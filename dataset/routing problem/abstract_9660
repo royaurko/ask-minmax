@@ -1,0 +1,11 @@
+The pathwidth of a graph is a measure of how path-like the graph is. Given a
+graph G and an integer k, the problem of finding whether there exist at most k
+vertices in G whose deletion results in a graph of pathwidth at most one is NP-
+complete. We initiate the study of the parameterized complexity of this
+problem, parameterized by k. We show that the problem has a quartic
+vertex-kernel: We show that, given an input instance (G = (V, E), k); |V| = n,
+we can construct, in polynomial time, an instance (G', k') such that (i) (G, k)
+is a YES instance if and only if (G', k') is a YES instance, (ii) G' has
+O(k^{4}) vertices, and (iii) k' \leq k. We also give a fixed parameter
+tractable (FPT) algorithm for the problem that runs in O(7^{k} k \cdot n^{2})
+time.

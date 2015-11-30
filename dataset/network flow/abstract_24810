@@ -1,0 +1,13 @@
+We address the problem of tracking the 6-DoF pose of an object while it is
+being manipulated by a human or a robot. We use a dynamic Bayesian network to
+perform inference and compute a posterior distribution over the current object
+pose. Depending on whether a robot or a human manipulates the object, we employ
+a process model with or without knowledge of control inputs. Observations are
+obtained from a range camera. As opposed to previous object tracking methods,
+we explicitly model self-occlusions and occlusions from the environment, e.g,
+the human or robotic hand. This leads to a strongly non-linear observation
+model and additional dependencies in the Bayesian network. We employ a
+Rao-Blackwellised particle filter to compute an estimate of the object pose at
+every time step. In a set of experiments, we demonstrate the ability of our
+method to accurately and robustly track the object pose in real-time while it
+is being manipulated by a human or a robot.

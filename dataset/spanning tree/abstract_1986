@@ -1,0 +1,11 @@
+In this note we define a process algebra TCP (Truly Concurrent Processes)
+which corresponds closely with the automata model of concurrency based on
+Span(RGraph), the category of spans of reflexive graphs. In TCP, each process
+has a fixed set of interfaces. Actions are allowed to occur simultaneously on
+all the interfaces of a process. Asynchrony is modelled by the use of silent
+actions. Communication is anonymous: communication between two processes P and
+Q is described by an operation which connects some of the ports of P to some of
+the ports of Q; and a process can only communicate with other processes via its
+interfaces. The model is naturally equipped with a compositional semantics in
+terms of the operations in Span(RGraph) introduced in [5], and developed in [6,
+7, 10].

@@ -1,0 +1,17 @@
+Given a set of vertices $S=\{v_1,v_2,...,v_k\}$ of a connected graph $G$, the
+metric representation of a vertex $v$ of $G$ with respect to $S$ is the vector
+$r(v|S)=(d(v,v_1),d(v,v_2),...,d(v,v_k))$, where $d(v,v_i)$, $i\in \{1,...,k\}$
+denotes the distance between $v$ and $v_i$. $S$ is a resolving set for $G$ if
+for every pair of vertices $u,v$ of $G$, $r(u|S)\ne r(v|S)$. The metric
+dimension of $G$, $dim(G)$, is the minimum cardinality of any resolving set for
+$G$. Let $G$ and $H$ be two graphs of order $n_1$ and $n_2$, respectively. The
+corona product $G\odot H$ is defined as the graph obtained from $G$ and $H$ by
+taking one copy of $G$ and $n_1$ copies of $H$ and joining by an edge each
+vertex from the $i^{th}$-copy of $H$ with the $i^{th}$-vertex of $G$. For any
+integer $k\ge 2$, we define the graph $G\odot^k H$ recursively from $G\odot H$
+as $G\odot^k H=(G\odot^{k-1} H)\odot H$. We give several results on the metric
+dimension of $G\odot^k H$. For instance, we show that given two connected
+graphs $G$ and $H$ of order $n_1\ge 2$ and $n_2\ge 2$, respectively, if the
+diameter of $H$ is at most two, then $dim(G\odot^k H)=n_1(n_2+1)^{k-1}dim(H)$.
+Moreover, if $n_2\ge 7$ and the diameter of $H$ is greater than five or $H$ is
+a cycle graph, then $dim(G\odot^k H)=n_1(n_2+1)^{k-1}dim(K_1\odot H).$

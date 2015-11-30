@@ -1,0 +1,16 @@
+We consider the Do-All problem, where $p$ cooperating processors need to
+complete $t$ similar and independent tasks in an adversarial setting. Here we
+deal with a synchronous message passing system with processors that are subject
+to crash failures. Efficiency of algorithms in this setting is measured in
+terms of work complexity (also known as total available processor steps) and
+communication complexity (total number of point-to-point messages). When work
+and communication are considered to be comparable resources, then the overall
+efficiency is meaningfully expressed in terms of effort defined as work +
+communication. We develop and analyze a constructive algorithm that has work
+${\cal O}( t + p \log p\, (\sqrt{p\log p}+\sqrt{t\log t}\, ) )$ and a
+nonconstructive algorithm that has work ${\cal O}(t +p \log^2 p)$. The latter
+result is close to the lower bound $\Omega(t + p \log p/ \log \log p)$ on work.
+The effort of each of these algorithms is proportional to its work when the
+number of crashes is bounded above by $c\,p$, for some positive constant $c <
+1$. We also present a nonconstructive algorithm that has effort ${\cal O}(t + p
+^{1.77})$.

@@ -1,0 +1,13 @@
+The rank minimization problem is to find the lowest-rank matrix in a given
+set. Nuclear norm minimization has been proposed as an convex relaxation of
+rank minimization. Recht, Fazel, and Parrilo have shown that nuclear norm
+minimization subject to an affine constraint is equivalent to rank minimization
+under a certain condition given in terms of the rank-restricted isometry
+property. However, in the presence of measurement noise, or with only
+approximately low rank generative model, the appropriate constraint set is an
+ellipsoid rather than an affine space. There exist polynomial-time algorithms
+to solve the nuclear norm minimization with an ellipsoidal constraint, but no
+performance guarantee has been shown for these algorithms. In this paper, we
+derive such an explicit performance guarantee, bounding the error in the
+approximate solution provided by nuclear norm minimization with an ellipsoidal
+constraint.

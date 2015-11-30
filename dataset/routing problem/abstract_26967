@@ -1,0 +1,13 @@
+Many users would prefer the privacy of end-to-end encryption in their online
+communications if it can be done without significant inconvenience. However,
+because existing key distribution methods cannot be fully trusted enough for
+automatic use, key management has remained a user problem. We propose a
+fundamentally new approach to the key distribution problem by empowering
+end-users with the capacity to independently verify the authenticity of public
+keys using an additional media attestment. This permits client software to
+automatically lookup public keys from a keyserver without trusting the
+keyserver, because any attempted MITM attacks can be detected by end-users.
+Thus, our protocol is designed to enable a new breed of messaging clients with
+true end-to-end encryption built in, without the hassle of requiring users to
+manually manage the public keys, that is verifiably secure against MITM
+attacks, and does not require trusting any third parties.

@@ -1,0 +1,19 @@
+When considering distributed systems, it is a central issue how to deal with
+interactions between components. In this paper, we investigate the paradigms of
+synchronous and asynchronous interaction in the context of distributed systems.
+We investigate to what extent or under which conditions synchronous interaction
+is a valid concept for specification and implementation of such systems. We
+choose Petri nets as our system model and consider different notions of
+distribution by associating locations to elements of nets. First, we
+investigate the concept of simultaneity which is inherent in the semantics of
+Petri nets when transitions have multiple input places. We assume that tokens
+may only be taken instantaneously by transitions on the same location. We
+exhibit a hierarchy of `asynchronous' Petri net classes by different
+assumptions on possible distributions. Alternatively, we assume that the
+synchronisations specified in a Petri net are crucial system properties. Hence
+transitions and their preplaces may no longer placed on separate locations. We
+then answer the question which systems may be implemented in a distributed way
+without restricting concurrency, assuming that locations are inherently
+sequential. It turns out that in both settings we find semi-structural
+properties of Petri nets describing exactly the problematic situations for
+interactions in distributed systems.

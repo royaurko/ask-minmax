@@ -1,0 +1,16 @@
+In duty-cycled wireless sensor networks, the nodes switch between active and
+dormant states, and each node may determine its active/dormant schedule
+independently. This complicates the Minimum-Energy Multicasting (MEM) problem,
+which has been primarily studied in always-active wireless ad-hoc networks. In
+this paper, we study the duty-cycle-aware MEM problem in wireless sensor
+networks, and we present a formulation of the Minimum-Energy Multicast Tree
+Construction and Scheduling (MEMTCS) problem. We prove that the MEMTCS problem
+is NP-hard, and it is unlikely to have an approximation algorithm with a
+performance ratio of $(1-o(1))\ln\Delta$, where $\Delta$ is the maximum node
+degree in a network. We propose a polynomial-time approximation algorithm for
+the MEMTCS problem with a performance ratio of $\mathcal{O}(H(\Delta+1))$,
+where $H(\cdot)$ is the harmonic number. We also provide a distributed
+implementation of our algorithm. Finally, we perform extensive simulations and
+the results demonstrate that our algorithm significantly outperform other known
+algorithms in terms of both the total energy cost and the transmission
+redundancy.

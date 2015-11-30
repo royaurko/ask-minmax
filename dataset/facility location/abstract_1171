@@ -1,0 +1,20 @@
+The Integrated Computer Control System (ICCS) for the National Ignition
+Facility (NIF) is a layered architecture of 300 front-end processors (FEP)
+coordinated by supervisor subsystems including automatic beam alignment and
+wavefront control, laser and target diagnostics, pulse power, and shot control
+timed to 30 ps. FEP computers incorporate either VxWorks on PowerPC or Solaris
+on UltraSPARC processors that interface to over 45,000 control points attached
+to VME-bus or PCI-bus crates respectively. Typical devices are stepping motors,
+transient digitizers, calorimeters, and photodiodes. The front-end layer is
+divided into another segment comprised of an additional 14,000 control points
+for industrial controls including vacuum, argon, synthetic air, and safety
+interlocks implemented with Allen-Bradley programmable logic controllers
+(PLCs). The computer network is augmented asynchronous transfer mode (ATM) that
+delivers video streams from 500 sensor cameras monitoring the 192 laser beams
+to operator workstations. Software is based on an object-oriented framework
+using CORBA distribution that incorporates services for archiving, machine
+configuration, graphical user interface, monitoring, event logging, scripting,
+alert management, and access control. Software coding using a mixed language
+environment of Ada95 and Java is one-third complete at over 300 thousand source
+lines. Control system installation is currently under way for the first 8
+beams, with project completion scheduled for 2008.

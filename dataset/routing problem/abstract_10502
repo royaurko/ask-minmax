@@ -1,0 +1,23 @@
+A spectral method is described for solving coupled elliptic problems on an
+interior and an exterior domain. The method is formulated and tested on the
+two-dimensional interior Poisson and exterior Laplace problems, whose solutions
+and their normal derivatives are required to be continuous across the
+interface. A complete basis of homogeneous solutions for the interior and
+exterior regions, corresponding to all possible Dirichlet boundary values at
+the interface, are calculated in a preprocessing step. This basis is used to
+construct the influence matrix which serves to transform the coupled boundary
+conditions into conditions on the interior problem. Chebyshev approximations
+are used to represent both the interior solutions and the boundary values. A
+standard Chebyshev spectral method is used to calculate the interior solutions.
+The exterior harmonic solutions are calculated as the convolution of the
+free-space Green's function with a surface density; this surface density is
+itself the solution to an integral equation which has an analytic solution when
+the boundary values are given as a Chebyshev expansion. Properties of Chebyshev
+approximations insure that the basis of exterior harmonic functions represents
+the external near-boundary solutions uniformly. The method is tested by
+calculating the electrostatic potential resulting from charge distributions in
+a rectangle. The resulting influence matrix is well-conditioned and solutions
+converge exponentially as the resolution is increased. The generalization of
+this approach to three-dimensional problems is discussed, in particular the
+magnetohydrodynamic equations in a finite cylindrical domain surrounded by a
+vacuum.

@@ -1,0 +1,13 @@
+We present time-constrained automata (TCA), a model for hard real-time
+computation in which agents behaviors are modeled by automata and constrained
+by time intervals.
+  TCA actions can have multiple start time and deadlines, can be aperiodic, and
+are selected dynamically following a graph, the time-constrained automaton.
+This allows expressing much more precise time constraints than classical
+periodic or sporadic model, while preserving the ease of scheduling and
+analysis.
+  We provide some properties of this model as well as their scheduling
+semantics. We show that TCA can be automatically derived from source-code, and
+optimally scheduled on single processors using a variant of EDF. We explain how
+time constraints can be used to guarantee communication determinism by
+construction, and to study when possible agent interactions happen.

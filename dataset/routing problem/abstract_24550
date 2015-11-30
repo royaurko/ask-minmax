@@ -1,0 +1,10 @@
+In the context of adaptive Monte Carlo algorithms, we cannot directly
+generate independent samples from the distribution of interest but use a proxy
+which we need to be close to the target. Generally, such a proxy distribution
+is a parametric family on the sampling spaces of the target distribution. For
+continuous sampling problems in high dimensions, we often use the multivariate
+normal distribution as a proxy for we can easily parametrise it by its moments
+and quickly sample from it. Our objective is to construct similarly flexible
+parametric families on binary sampling spaces too large for exhaustive
+enumeration. The binary sampling problem is more difficult than its continuous
+counterpart since the choice of a suitable proxy distribution is not obvious.

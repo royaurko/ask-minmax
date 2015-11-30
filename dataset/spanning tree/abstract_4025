@@ -1,0 +1,24 @@
+We focus on designing combinatorial algorithms for the Capacitated Network
+Design problem (Cap-SNDP). The Cap-SNDP is the problem of satisfying
+connectivity requirements when edges have costs and hard capacities. We begin
+by showing that the Group Steiner tree problem (GST) is a special case of
+Cap-SNDP even when there is connectivity requirement between only one
+source-sink pair. This implies the first poly-logarithmic lower bound for the
+Cap-SNDP. We next provide combinatorial algorithms for several special cases of
+this problem. The Cap-SNDP is equivalent to its special case when every edge
+has either zero cost or infinite capacity. We consider a special case, called
+Connected Cap-SNDP, where all infinite-capacity edges in the solution are
+required to form a connected component containing the sinks. This problem is
+motivated by its similarity to the Connected Facility Location problem
+[G+01,SW04]. We solve this problem by reducing it to Submodular tree cover
+problem, which is a common generalization of Connected Cap-SNDP and Group
+Steiner tree problem. We generalize the recursive greedy algorithm [CEK]
+achieving a poly-logarithmic approximation algorithm for Submodular tree cover
+problem. This result is interesting in its own right and gives the first
+poly-logarithmic approximation algorithms for Connected hard capacities set
+multi-cover and Connected source location.
+  We then study another special case of Cap-SNDP called Unbalanced
+point-to-point connection problem. Besides its practical applications to shift
+design problems [EKS], it generalizes many problems such as k-MST, Steiner
+Forest and Point-to-Point Connection. We give a combinatorial logarithmic
+approximation algorithm for this problem by reducing it to degree-bounded SNDP.

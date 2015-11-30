@@ -1,0 +1,19 @@
+Finding the optimal $k$-means clustering is NP-hard in general and many
+heuristics have been designed for minimizing monotonically the $k$-means
+objective. We first show how to extend Lloyd's batched relocation heuristic and
+Hartigan's single-point relocation heuristic to take into account empty-cluster
+and single-point cluster events, respectively. Those events tend to
+increasingly occur when $k$ or $d$ increases, or when performing several
+restarts. First, we show that those special events are a blessing because they
+allow to partially re-seed some cluster centers while further minimizing the
+$k$-means objective function. Second, we describe a novel heuristic,
+merge-and-split $k$-means, that consists in merging two clusters and splitting
+this merged cluster again with two new centers provided it improves the
+$k$-means objective. This novel heuristic can improve Hartigan's $k$-means when
+it has converged to a local minimum. We show empirically that this
+merge-and-split $k$-means improves over the Hartigan's heuristic which is the
+{\em de facto} method of choice. Finally, we propose the $(k,l)$-means
+objective that generalizes the $k$-means objective by associating the data
+points to their $l$ closest cluster centers, and show how to either directly
+convert or iteratively relax the $(k,l)$-means into a $k$-means in order to
+reach better local minima.

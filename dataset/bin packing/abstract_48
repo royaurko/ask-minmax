@@ -1,0 +1,15 @@
+The Unbounded Knapsack Problem (UKP) is a well-known variant of the famous
+0-1 Knapsack Problem (0-1 KP). In contrast to 0-1 KP, an arbitrary number of
+copies of every item can be taken in UKP. Since UKP is NP-hard, fully
+polynomial time approximation schemes (FPTAS) are of great interest. Such
+algorithms find a solution arbitrarily close to the optimum $OPT(I)$, i.e. of
+value at least $(1-\varepsilon) OPT(I)$ for $\varepsilon > 0$, and have a
+running time polynomial in the input length and $\frac{1}{\varepsilon}$. For
+over thirty years, the best FPTAS was due to Lawler with running time in $O(n +
+\frac{1}{\varepsilon^3})$ and space complexity in $O(n +
+\frac{1}{\varepsilon^2})$, where $n$ is the number of knapsack items. We
+present an improved FPTAS with running time $O(n + \frac{1}{\varepsilon^2}
+\log^3 \frac{1}{\varepsilon})$ and space bound $O(n + \frac{1}{\varepsilon}
+\log^2 \frac{1}{\varepsilon})$. This directly improves the running time of the
+fastest known approximation schemes for Bin Packing and Strip Packing, which
+have to approximately solve UKP instances as subproblems.

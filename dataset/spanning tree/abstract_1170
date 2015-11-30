@@ -1,0 +1,21 @@
+Phylogenetic trees are leaf-labelled trees, where the leaves correspond to
+extant species (taxa), and the internal vertices represent ancestral species.
+The evolutionary history of a set of species can be explained by more than one
+phylogenetic tree, giving rise to the problem of comparing phylogenetic trees
+for similarity. Various distance metrics, like the subtree prune-and-regraft
+(SPR), tree bisection reconnection (TBR) and nearest neighbour interchange
+(NNI) have been proposed to capture this similarity. The distance between two
+phylogenetic trees can also be measured by the size of a Maximum Agreement
+Forest (MAF) on these trees, as it has been shown that the rooted subtree
+prune-and-regraft distance is 1 less than the size of a MAF. Since computing a
+MAF of minimum size is an NP-hard problem, approximation algorithms are of
+interest. Recently, it has been shown that the MAF on k(>=2) trees can be
+approximated to within a factor of 8. In this paper, we improve this ratio to
+3. For certain species, however, the evolutionary history is not completely
+tree-like. Due to reticulate evolution two gene trees, though related, appear
+different, making a phylogenetic network a more appropriate representation of
+reticulate evolution. A phylogenetic network contains hybrid nodes for the
+species evolved from two parents. The number of such nodes is its hybridization
+number. It has been shown that this number is 1 less than the size of a Maximum
+Acyclic Agreement Forest (MAAF). We show that the MAAF for k(>= 2) phylogenetic
+trees can be approximated to within a factor of 3.

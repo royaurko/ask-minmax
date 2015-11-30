@@ -1,0 +1,19 @@
+We consider a model where the failure hazard function, conditional on a
+covariate $Z$ is given by $R(t,\theta^0|Z)=\eta\_{\gamma^0}(t)f\_{\beta^0}(Z)$,
+with $\theta^0=(\beta^0,\gamma^0)^\top\in \mathbb{R}^{m+p}$. The baseline
+hazard function $\eta\_{\gamma^0}$ and relative risk $f\_{\beta^0}$ belong both
+to parametric families. The covariate $Z$ is measured through the error model
+$U=Z+\epsilon$ where $\epsilon$ is independent from $Z$, with known density
+$f\_\epsilon$. We observe a $n$-sample $(X\_i, D\_i, U\_i)$, $i=1,...,n$, where
+$X\_i$ is the minimum between the failure time and the censoring time, and
+$D\_i$ is the censoring indicator. We aim at estimating $\theta^0$ in presence
+of the unknown density $g$. Our estimation procedure based on least squares
+criterion provide two estimators. The first one minimizes an estimation of the
+least squares criterion where $g$ is estimated by density deconvolution. Its
+rate depends on the smoothnesses of $f\_\epsilon$ and $f\_\beta(z)$ as a
+function of $z$,. We derive sufficient conditions that ensure the
+$\sqrt{n}$-consistency. The second estimator is constructed under conditions
+ensuring that the least squares criterion can be directly estimated with the
+parametric rate. These estimators, deeply studied through examples are in
+particular $\sqrt{n}$-consistent and asymptotically Gaussian in the Cox model
+and in the excess risk model, whatever is $f\_\epsilon$.

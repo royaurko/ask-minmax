@@ -1,0 +1,24 @@
+In these notes, we consider the problem of finding the logarithm or the
+square root of a real matrix. It is known that for every real n x n matrix, A,
+if no real eigenvalue of A is negative or zero, then A has a real logarithm,
+that is, there is a real matrix, X, such that e^X = A. Furthermore, if the
+eigenvalues, xi, of X satisfy the property -pi < Im(xi) < pi, then X is unique.
+It is also known that under the same condition every real n x n matrix, A, has
+a real square root, that is, there is a real matrix, X, such that X^2 = A.
+Moreover, if the eigenvalues, rho e^{i theta}, of X satisfy the condition -pi/2
+< theta < pi/2, then X is unique. These theorems are the theoretical basis for
+various numerical methods for exponentiating a matrix or for computing its
+logarithm using a method known as scaling and squaring (resp. inverse scaling
+and squaring). Such methods play an important role in the log-Euclidean
+framework due to Arsigny, Fillard, Pennec and Ayache and its applications to
+medical imaging. Actually, there is a necessary and sufficient condition for a
+real matrix to have a real logarithm (or a real square root) but it is fairly
+subtle as it involves the parity of the number of Jordan blocks associated with
+negative eigenvalues. As far as I know, with the exception of Higham's recent
+book, proofs of these results are scattered in the literature and it is not
+easy to locate them. Moreover, Higham's excellent book assumes a certain level
+of background in linear algebra that readers interested in the topics of this
+paper may not possess so we feel that a more elementary presentation might be a
+valuable supplement to Higham. In these notes, I present a unified exposition
+of these results and give more direct proofs of some of them using the Real
+Jordan Form.

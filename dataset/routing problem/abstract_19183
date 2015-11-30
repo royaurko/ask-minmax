@@ -1,0 +1,19 @@
+We give a bi-criteria approximation algorithm for the Minimum Nonuniform
+Partitioning problem, recently introduced by Krauthgamer, Naor, Schwartz and
+Talwar (2014). In this problem, we are given a graph $G=(V,E)$ on $n$ vertices
+and $k$ numbers $\rho_1,\dots, \rho_k$. The goal is to partition the graph into
+$k$ disjoint sets $P_1,\dots, P_k$ satisfying $|P_i|\leq \rho_i n$ so as to
+minimize the number of edges cut by the partition. Our algorithm has an
+approximation ratio of $O(\sqrt{\log n \log k})$ for general graphs, and an
+$O(1)$ approximation for graphs with excluded minors. This is an improvement
+upon the $O(\log n)$ algorithm of Krauthgamer, Naor, Schwartz and Talwar
+(2014). Our approximation ratio matches the best known ratio for the Minimum
+(Uniform) $k$-Partitioning problem.
+  We extend our results to the case of "unrelated weights" and to the case of
+"unrelated $d$-dimensional weights". In the former case, different vertices may
+have different weights and the weight of a vertex may depend on the set $P_i$
+the vertex is assigned to. In the latter case, each vertex $u$ has a
+$d$-dimensional weight $r(u,i) = (r_1(u,i), \dots, r_d(u,i))$ if $u$ is
+assigned to $P_i$. Each set $P_i$ has a $d$-dimensional capacity $c(i) =
+(c_1(i),\dots, c_d(i))$. The goal is to find a partition such that $\sum_{u\in
+{P_i}} r(u,i) \leq c(i)$ coordinate-wise.

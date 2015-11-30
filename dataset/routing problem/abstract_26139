@@ -1,0 +1,11 @@
+We consider the problem of event detection based upon a (typically
+multivariate) data stream characterizing some system. Most of the time the
+system is quiescent - nothing of interest is happening - but occasionally
+events of interest occur. The goal of event detection is to raise an alarm as
+soon as possible after the onset of an event. A simple way of addressing the
+event detection problem is to look for changes in the data stream and equate
+`change' with `onset of event'. However, there might be many kinds of changes
+in the stream that are uninteresting. We assume that we are given a segment of
+the stream where interesting events have been marked. We propose a method for
+using these training data to construct a `targeted' detector that is
+specifically sensitive to changes signaling the onset of interesting events.

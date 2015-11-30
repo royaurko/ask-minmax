@@ -1,0 +1,12 @@
+Annotated pushdown automata provide an automaton model of higher-order
+recursion schemes, which may in turn be used to model higher-order programs for
+the purposes of verification. We study Ground Annotated Stack Tree Rewrite
+Systems -- a tree rewrite system where each node is labelled by the
+configuration of an annotated pushdown automaton. This allows the modelling of
+fork and join constructs in higher-order programs and is a generalisation of
+higher-order stack trees recently introduced by Penelle.
+  We show that, given a regular set of annotated stack trees, the set of trees
+that can reach this set is also regular, and constructible in n-EXPTIME for an
+order-n system, which is optimal. We also show that our construction can be
+extended to allow a global state through which unrelated nodes of the tree may
+communicate, provided the number of communications is subject to a fixed bound.

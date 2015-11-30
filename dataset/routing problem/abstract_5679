@@ -1,0 +1,16 @@
+For a given collection G of directed graphs we define the join-reachability
+graph of G, denoted by J(G), as the directed graph that, for any pair of
+vertices a and b, contains a path from a to b if and only if such a path exists
+in all graphs of G. Our goal is to compute an efficient representation of J(G).
+In particular, we consider two versions of this problem. In the explicit
+version we wish to construct the smallest join-reachability graph for G. In the
+implicit version we wish to build an efficient data structure (in terms of
+space and query time) such that we can report fast the set of vertices that
+reach a query vertex in all graphs of G. This problem is related to the
+well-studied reachability problem and is motivated by emerging applications of
+graph-structured databases and graph algorithms. We consider the construction
+of join-reachability structures for two graphs and develop techniques that can
+be applied to both the explicit and the implicit problem. First we present
+optimal and near-optimal structures for paths and trees. Then, based on these
+results, we provide efficient structures for planar graphs and general directed
+graphs.

@@ -1,0 +1,16 @@
+We study the convergence of the predictive surface of regression trees and
+forests. To support our analysis we introduce a notion of adaptive
+concentration. This approach breaks tree training into a model selection phase
+in which we pick the tree splits, followed by a model fitting phase where we
+find the best regression model consistent with these splits; a similar
+formalism holds for forests. We show that the fitted tree or forest predictor
+concentrates around the optimal predictor with the same splits: as d and n get
+large, the discrepancy is with high probability bounded on the order of
+sqrt{\log(d)\log(n)/k} uniformly over the whole regression surface, where d is
+the dimension of the feature space, n is the number of training examples, and k
+is the minimum leaf size for each tree. We also provide rate-matching lower
+bounds for this adaptive concentration statement. From a practical perspective,
+our result implies that random forests should have stable predictive surfaces
+whenever the minimum leaf size k is reasonable. Thus, forests can be used for
+principled estimation and data visualization, and need not only be considered
+as black box predictors.

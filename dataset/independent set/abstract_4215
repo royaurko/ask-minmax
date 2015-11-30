@@ -1,0 +1,18 @@
+Assume that a group of people is going to an excursion and our task is to
+seat them into buses with several constraints each saying that a pair of people
+does not want to see each other in the same bus. This is a well-known coloring
+problem and it can be solved in $O^*(2^n)$ time by the inclusion-exclusion
+principle as shown by Bj\"{o}rklund, Husfeldt, and Koivisto in 2009.Another
+approach to solve this problem in $O^*(2^n)$ time is to use the fast Fourier
+transform. A graph is $k$-colorable if and only if the $k$-th power of a
+polynomial containing a monomial $\prod_{i=1}^n x_i^{[i \in I]}$ for each
+independent set $I \subseteq [n]$ of the graph, contains the monomial
+$x_1x_2... x_n$.
+  Assume now that we have additional constraints: the group of people contains
+several infants and these infants should be accompanied by their relatives in a
+bus. We show that if the number of infants is linear then the problem can be
+solved in $O^*((2-\varepsilon)^n)$ time. We use this approach to improve known
+bounds for several NP-hard problems (the traveling salesman problem, the graph
+coloring problem, the problem of counting perfect matchings) on graphs of
+bounded average degree, as well as to simplify the proofs of several known
+results.

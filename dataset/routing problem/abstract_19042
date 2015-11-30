@@ -1,0 +1,18 @@
+We compare tools for complementing nondeterministic B\"uchi automata with a
+recent termination-analysis algorithm. Complementation of B\"uchi automata is a
+key step in program verification. Early constructions using a Ramsey-based
+argument have been supplanted by rank-based constructions with exponentially
+better bounds. In 2001 Lee et al. presented the size-change termination (SCT)
+problem, along with both a reduction to B\"uchi automata and a Ramsey-based
+algorithm. The Ramsey-based algorithm was presented as a more practical
+alternative to the automata-theoretic approach, but strongly resembles the
+initial complementation constructions for B\"uchi automata. We prove that the
+SCT algorithm is a specialized realization of the Ramsey-based complementation
+construction. To do so, we extend the Ramsey-based complementation construction
+to provide a containment-testing algorithm. Surprisingly, empirical analysis
+suggests that despite the massive gap in worst-case complexity, Ramsey-based
+approaches are superior over the domain of SCT problems. Upon further analysis
+we discover an interesting property of the problem space that both explains
+this result and provides a chance to improve rank-based tools. With these
+improvements, we show that theoretical gains in efficiency of the rank-based
+approach are mirrored in empirical performance.

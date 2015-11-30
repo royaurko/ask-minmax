@@ -1,0 +1,25 @@
+Let $X$ be a non-negative random variable and let the conditional
+distribution of a random variable $Y$, given $X$, be ${Poisson}(\gamma \cdot
+X)$, for a parameter $\gamma \geq 0$. We identify a natural loss function such
+that: 1) The derivative of the mutual information between $X$ and $Y$ with
+respect to $\gamma$ is equal to the \emph{minimum} mean loss in estimating $X$
+based on $Y$, regardless of the distribution of $X$. 2) When $X \sim P$ is
+estimated based on $Y$ by a mismatched estimator that would have minimized the
+expected loss had $X \sim Q$, the integral over all values of $\gamma$ of the
+excess mean loss is equal to the relative entropy between $P$ and $Q$.
+  For a continuous time setting where $X^T = \{X_t, 0 \leq t \leq T \}$ is a
+non-negative stochastic process and the conditional law of $Y^T=\{Y_t, 0\le
+t\le T\}$, given $X^T$, is that of a non-homogeneous Poisson process with
+intensity function $\gamma \cdot X^T$, under the same loss function: 1) The
+minimum mean loss in \emph{causal} filtering when $\gamma = \gamma_0$ is equal
+to the expected value of the minimum mean loss in \emph{non-causal} filtering
+(smoothing) achieved with a channel whose parameter $\gamma$ is uniformly
+distributed between 0 and $\gamma_0$. Bridging the two quantities is the mutual
+information between $X^T$ and $Y^T$. 2) This relationship between the mean
+losses in causal and non-causal filtering holds also in the case where the
+filters employed are mismatched, i.e., optimized assuming a law on $X^T$ which
+is not the true one. Bridging the two quantities in this case is the sum of the
+mutual information and the relative entropy between the true and the mismatched
+distribution of $Y^T$. Thus, relative entropy quantifies the excess estimation
+loss due to mismatch in this setting.
+  These results parallel those recently found for the Gaussian channel.

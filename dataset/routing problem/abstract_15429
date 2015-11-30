@@ -1,0 +1,20 @@
+Set-membership estimation is in general referred in literature as the
+deterministic approach to state estimation, since its solution can be
+formulated in the context of set-valued calculus and no stochastic calculations
+are necessary. This turns out not to be entirely true. In this paper, we show
+that set-membership estimation can be equivalently formulated in the stochastic
+setting by employing sets of probability measures. Inferences in set-membership
+estimation are thus carried out by computing expectations w.r.t. the updated
+set of probability measures P as in the stochastic case. In particular, we show
+that inferences can be computed by solving a particular semi-infinite linear
+programming problem, which is a special case of the truncated moment problem in
+which only the zero-th order moment is known (i.e., the support). By writing
+the dual of the above semi-infinite linear programming problem, we show that,
+if the nonlinearities in the measurement and process equations are polynomials
+and if the bounding sets for initial state, process and measurement noises are
+described by polynomial inequalities, then an approximation of this
+semi-infinite linear programming problem can efficiently be obtained by using
+the theory of sum-of-squares polynomial optimization. We then derive a smart
+greedy procedure to compute a polytopic outer-approximation of the true
+membership-set, by computing the minimum-volume polytope that outer-bounds the
+set that includes all the means computed w.r.t. P.

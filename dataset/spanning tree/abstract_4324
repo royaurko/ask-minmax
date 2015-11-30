@@ -1,0 +1,15 @@
+Parameterized algorithms are a very useful tool for dealing with NP-hard
+problems on graphs. Yet, to properly utilize parameterized algorithms it is
+necessary to choose the right parameter based on the type of problem and
+properties of the target graph class. Tree-width is an example of a very
+successful graph parameter, however it cannot be used on dense graph classes
+and there also exist problems which are hard even on graphs of bounded
+tree-width. Such problems can be tackled by using vertex cover as a parameter,
+however this places severe restrictions on admissible graph classes.
+  Michael Lampis has recently introduced neighborhood diversity, a new graph
+parameter which generalizes vertex cover to dense graphs. Among other results,
+he has shown that simple parameterized algorithms exist for a few problems on
+graphs of bounded neighborhood diversity. Our article further studies this area
+and provides new algorithms parameterized by neighborhood diversity for the
+p-Vertex-Disjoint Paths, Graph Motif and Precoloring Extension problems -- the
+latter two being hard even on graphs of bounded tree-width.

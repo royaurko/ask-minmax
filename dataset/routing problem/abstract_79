@@ -1,0 +1,16 @@
+The Clustered Vehicle Routing Problem (CluVRP) is a variant of the
+Capacitated Vehicle Routing Problem in which customers are grouped into
+clusters. Each cluster has to be visited once, and a vehicle entering a cluster
+cannot leave it until all customers have been visited. This article presents
+two alternative hybrid metaheuristic algorithms for the CluVRP. The first
+algorithm is based on an Iterated Local Search algorithm, in which only
+feasible solutions are explored and problem-specific local search moves are
+utilized. The second algorithm is a Hybrid Genetic Search, for which the
+shortest Hamiltonian path between each pair of vertices within each cluster
+should be precomputed. Using this information, a sequence of clusters can be
+used as a solution representation and large neighborhoods can be efficiently
+explored by means of bi-directional dynamic programming, sequence
+concatenations, by using appropriate data structures. Extensive computational
+experiments are performed on benchmark instances from the literature, as well
+as new large scale ones. Recommendations on promising algorithm choices are
+provided relatively to average cluster size.

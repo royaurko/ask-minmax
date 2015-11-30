@@ -1,0 +1,19 @@
+We study the problem of medium access control in domain of event-driven
+wireless sensor networks (WSNs). In this kind of WSN, sensor nodes send data to
+sink node only when an event occurs in the monitoring area. The nodes in this
+kind of WSNs encounter correlated traffic as a subset of nodes start sending
+data by sensing a common event simultaneously. We wish to rethink of medium
+access control (MAC) for this type of traffic characteristics. For WSNs, many
+existing MAC protocols utilize the basic CSMA/CA strategy such as IEEE 802.11
+Binary Exponential Backoff (BEB) algorithm to handle the collisions among
+packets when more than one node need to access the channel. We show that this
+BEB algorithm does not work well without incurring access delay or performance
+degradation due to increased number of collisions and retransmissions when
+nodes encounter correlated traffic. Based on above observations in mind, We
+present a Adaptive Random Backoff (ARB) algorithm that is capable of mitigating
+the impact of correlated traffic and capable of minimizing the chance of
+collisions. ARB is based on minor modifications of BEB. We show using numerical
+analysis that our proposals improve the channel access in terms of latency,
+throughput, and frame dropping probability as compared with IEEE 802.11 DCF.
+Simulations using NS-2 network simulator are conducted to validate the
+analytical results.

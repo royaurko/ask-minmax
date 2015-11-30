@@ -1,0 +1,21 @@
+Atomic-accuracy structure prediction of macromolecules is a long-sought goal
+of computational biophysics. Accurate modeling should be achievable by
+optimizing a physically realistic energy function but is presently precluded by
+incomplete sampling of a biopolymer's many degrees of freedom. We present
+herein a working hypothesis, called the "stepwise ansatz", for recursively
+constructing well-packed atomic-detail models in small steps, enumerating
+several million conformations for each monomer and covering all build-up paths.
+By implementing the strategy in Rosetta and making use of high-performance
+computing, we provide first tests of this hypothesis on a benchmark of fifteen
+RNA loop modeling problems drawn from riboswitches, ribozymes, and the
+ribosome, including ten cases that were not solvable by prior knowledge based
+modeling approaches. For each loop problem, this deterministic stepwise
+assembly (SWA) method either reaches atomic accuracy or exposes flaws in
+Rosetta's all-atom energy function, indicating the resolution of the
+conformational sampling bottleneck. To our knowledge, SWA is the first
+enumerative, ab initio build-up method to systematically outperform existing
+Monte Carlo and knowledge-based methods for 3D structure prediction. As a
+rigorous experimental test, we have applied SWA to a small RNA motif of
+previously unknown structure, the C7.2 tetraloop/tetraloop-receptor, and
+stringently tested this blind prediction with nucleotide-resolution structure
+mapping data.

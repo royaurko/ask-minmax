@@ -1,0 +1,18 @@
+Character posing is of interest in computer animation. It is difficult due to
+its dependence on inverse kinematics (IK) techniques and articulate property of
+human characters . To solve the IK problem, classical methods that rely on
+numerical solutions often suffer from the under-determination problem and can
+not guarantee naturalness. Existing data-driven methods address this problem by
+learning from motion capture data. When facing a large variety of poses
+however, these methods may not be able to capture the pose styles or be
+applicable in real-time environment. Inspired from the low-rank motion
+de-noising and completion model in \cite{lai2011motion}, we propose a novel
+model for character posing based on sparse coding. Unlike conventional
+approaches, our model directly captures the pose styles in Euclidean space to
+provide intuitive training error measurements and facilitate pose synthesis. A
+pose dictionary is learned in training stage and based on it natural poses are
+synthesized to satisfy users' constraints . We compare our model with existing
+models for tasks of pose de-noising and completion. Experiments show our model
+obtains lower de-noising and completion error. We also provide User
+Interface(UI) examples illustrating that our model is effective for interactive
+character posing.

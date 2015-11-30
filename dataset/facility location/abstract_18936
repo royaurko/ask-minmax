@@ -1,0 +1,27 @@
+Statistical tests of earthquake predictions require a null hypothesis to
+model occasional chance successes. To define and quantify `chance success' is
+knotty. Some null hypotheses ascribe chance to the Earth: Seismicity is modeled
+as random. The null distribution of the number of successful predictions -- or
+any other test statistic -- is taken to be its distribution when the fixed set
+of predictions is applied to random seismicity. Such tests tacitly assume that
+the predictions do not depend on the observed seismicity. Conditioning on the
+predictions in this way sets a low hurdle for statistical significance.
+Consider this scheme: When an earthquake of magnitude 5.5 or greater occurs
+anywhere in the world, predict that an earthquake at least as large will occur
+within 21 days and within an epicentral distance of 50 km. We apply this rule
+to the Harvard centroid-moment-tensor (CMT) catalog for 2000--2004 to generate
+a set of predictions. The null hypothesis is that earthquake times are
+exchangeable conditional on their magnitudes and locations and on the
+predictions--a common ``nonparametric'' assumption in the literature. We
+generate random seismicity by permuting the times of events in the CMT catalog.
+We consider an event successfully predicted only if (i) it is predicted and
+(ii) there is no larger event within 50 km in the previous 21 days. The
+$P$-value for the observed success rate is $<0.001$: The method successfully
+predicts about 5% of earthquakes, far better than `chance,' because the
+predictor exploits the clustering of earthquakes -- occasional foreshocks --
+which the null hypothesis lacks. Rather than condition on the predictions and
+use a stochastic model for seismicity, it is preferable to treat the observed
+seismicity as fixed, and to compare the success rate of the predictions to the
+success rate of simple-minded predictions like those just described. If the
+proffered predictions do no better than a simple scheme, they have little
+value.

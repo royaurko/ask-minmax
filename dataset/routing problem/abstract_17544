@@ -1,0 +1,16 @@
+Stable Logic Programming (SLP) is an emergent, alternative style of logic
+programming: each solution to a problem is represented by a stable model of a
+deductive database/function-free logic program encoding the problem itself.
+Several implementations now exist for stable logic programming, and their
+performance is rapidly improving. To make SLP generally applicable, it should
+be possible to check for consistency (i.e., existence of stable models) of the
+input program before attempting to answer queries. In the literature, only
+rather strong sufficient conditions have been proposed for consistency, e.g.,
+stratification. This paper extends these results in several directions. First,
+the syntactic features of programs, viz. cyclic negative dependencies,
+affecting the existence of stable models are characterized, and their relevance
+is discussed. Next, a new graph representation of logic programs, the Extended
+Dependency Graph (EDG), is introduced, which conveys enough information for
+reasoning about stable models (while the traditional Dependency Graph does
+not). Finally, we show that the problem of the existence of stable models can
+be reformulated in terms of coloring of the EDG.

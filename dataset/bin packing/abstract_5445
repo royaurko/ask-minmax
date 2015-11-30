@@ -1,0 +1,22 @@
+We introduce an ordinal classification algorithm for photometric redshift
+estimation, which significantly improves the reconstruction of photometric
+redshift probability density functions (PDFs) for individual galaxies and
+galaxy samples. As a use case we apply our method to CFHTLS galaxies. The
+ordinal classification algorithm treats distinct redshift bins as ordered
+values, which improves the quality of photometric redshift PDFs, compared with
+non-ordinal classification architectures. We also propose a new single value
+point estimate of the galaxy redshift, that can be used to estimate the full
+redshift PDF of a galaxy sample. This method is competitive in terms of
+accuracy with contemporary algorithms, which stack the full redshift PDFs of
+all galaxies in the sample, but requires orders of magnitudes less storage
+space.
+  The methods described in this paper greatly improve the log-likelihood of
+individual object redshift PDFs, when compared with a popular Neural Network
+code (ANNz). In our use case, this improvement reaches 50\% for high redshift
+objects ($z \geq 0.75$).
+  We show that using these more accurate photometric redshift PDFs will lead to
+a reduction in the systematic biases by up to a factor of four, when compared
+with less accurate PDFs obtained from commonly used methods. The cosmological
+analyses we examine and find improvement upon are the following: gravitational
+lensing cluster mass estimates, modelling of angular correlation functions, and
+modelling of cosmic shear correlation functions.

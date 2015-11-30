@@ -1,0 +1,25 @@
+The split Bregman (SB) method [T. Goldstein and S. Osher, SIAM J. Imaging
+Sci., 2 (2009), pp. 323-43] is a fast splitting-based algorithm that solves
+image reconstruction problems with general l1, e.g., total-variation (TV) and
+compressed sensing (CS), regularizations by introducing a single variable split
+to decouple the data-fitting term and the regularization term, yielding simple
+subproblems that are separable (or partially separable) and easy to minimize.
+Several convergence proofs have been proposed, and these proofs either impose a
+"full column rank" assumption to the split or assume exact updates in all
+subproblems. However, these assumptions are impractical in many applications
+such as the X-ray computed tomography (CT) image reconstructions, where the
+inner least-squares problem usually cannot be solved efficiently due to the
+highly shift-variant Hessian. In this paper, we show that when the data-fitting
+term is quadratic, the SB method is a convergent alternating direction method
+of multipliers (ADMM), and a straightforward convergence proof with inexact
+updates is given using [J. Eckstein and D. P. Bertsekas, Mathematical
+Programming, 55 (1992), pp. 293-318, Theorem 8]. Furthermore, since the SB
+method is just a special case of an ADMM algorithm, it seems likely that the
+ADMM algorithm will be faster than the SB method if the augmented Largangian
+(AL) penalty parameters are selected appropriately. To have a concrete example,
+we conduct a convergence rate analysis of the ADMM algorithm using two splits
+for image restoration problems with quadratic data-fitting term and
+regularization term. According to our analysis, we can show that the two-split
+ADMM algorithm can be faster than the SB method if the AL penalty parameter of
+the SB method is suboptimal. Numerical experiments were conducted to verify our
+analysis.

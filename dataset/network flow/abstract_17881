@@ -1,0 +1,24 @@
+We consider a decision network on an undirected graph in which each node
+corresponds to a decision variable, and each node and edge of the graph is
+associated with a reward function whose value depends only on the variables of
+the corresponding nodes. The goal is to construct a decision vector which
+maximizes the total reward. This decision problem encompasses a variety of
+models, including maximum-likelihood inference in graphical models (Markov
+Random Fields), combinatorial optimization on graphs, economic team theory and
+statistical physics. The network is endowed with a probabilistic structure in
+which costs are sampled from a distribution. Our aim is to identify sufficient
+conditions to guarantee average-case polynomiality of the underlying
+optimization problem. We construct a new decentralized algorithm called Cavity
+Expansion and establish its theoretical performance for a variety of models.
+Specifically, for certain classes of models we prove that our algorithm is able
+to find near optimal solutions with high probability in a decentralized way.
+The success of the algorithm is based on the network exhibiting a correlation
+decay (long-range independence) property. Our results have the following
+surprising implications in the area of average case complexity of algorithms.
+Finding the largest independent (stable) set of a graph is a well known NP-hard
+optimization problem for which no polynomial time approximation scheme is
+possible even for graphs with largest connectivity equal to three, unless P=NP.
+We show that the closely related maximum weighted independent set problem for
+the same class of graphs admits a PTAS when the weights are i.i.d. with the
+exponential distribution. Namely, randomization of the reward function turns an
+NP-hard problem into a tractable one.

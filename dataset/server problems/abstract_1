@@ -1,0 +1,16 @@
+This paper has two results. The first is based on the surprising observation
+that the well-known ``least-recently-used'' paging algorithm and the
+``balance'' algorithm for weighted caching are linear-programming primal-dual
+algorithms. This observation leads to a strategy (called ``Greedy-Dual'') that
+generalizes them both and has an optimal performance guarantee for weighted
+caching.
+  For the second result, the paper presents empirical studies of paging
+algorithms, documenting that in practice, on ``typical'' cache sizes and
+sequences, the performance of paging strategies are much better than their
+worst-case analyses in the standard model suggest. The paper then presents
+theoretical results that support and explain this. For example: on any input
+sequence, with almost all cache sizes, either the performance guarantee of
+least-recently-used is O(log k) or the fault rate (in an absolute sense) is
+insignificant.
+  Both of these results are strengthened and generalized in``On-line File
+Caching'' (1998).

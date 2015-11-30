@@ -1,0 +1,25 @@
+In an interference limited network, joint power and admission control (JPAC)
+aims at supporting a maximum number of links at their specified signal to
+interference plus noise ratio (SINR) targets while using a minimum total
+transmission power. Most existing works on JPAC assume the perfect
+instantaneous channel state information (CSI). However, in practical wireless
+systems, the CSI is prone to errors, and such imperfect CSI can deteriorate the
+system performance drastically.In this paper, we consider the JPAC problem with
+imperfect CSI, that is, we assume that only the channel distribution
+information (CDI) is available. We formulate the JPAC into a chance
+(probabilistic) constrained program, where each link's SINR outage probability
+is enforced to be less than or equal to a specified tolerance.
+  Unfortunately, the chance SINR constraints are computationally intractable
+because in general they do not have closed-form expressions and are not convex.
+To circumvent such difficulty, we propose to use the sample (scenario)
+approximation scheme to convert the chance constraints into finitely many
+(depending on the sample size) simple linear constraints. Furthermore, we
+reformulate the sample approximation of the chance SINR constrained JPAC
+problem as a group sparse minimization problem and then relax it to a
+second-order cone program (SOCP). The solution of the SOCP relaxation problem
+can be used to check the simultaneous supportability of all links in the
+network and to guide an iterative link removal procedure (deflation). Instead
+of solving the SOCP with general-purpose solvers like CVX, we exploit its
+special structure and custom-design an efficient algorithm for solving it.
+Finally, we illustrate the effectiveness and efficiency of the proposed sample
+approximation-based deflation approaches by simulations.

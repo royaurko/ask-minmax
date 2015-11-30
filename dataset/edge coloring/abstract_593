@@ -1,0 +1,16 @@
+Irregular computations on unstructured data are an important class of
+problems for parallel programming. Graph coloring is often an important
+preprocessing step, e.g. as a way to perform dependency analysis for safe
+parallel execution. The total run time of a coloring algorithm adds to the
+overall parallel overhead of the application whereas the number of colors used
+determines the amount of exposed parallelism. A fast and scalable coloring
+algorithm using as few colors as possible is vital for the overall parallel
+performance and scalability of many irregular applications that depend upon
+runtime dependency analysis.
+  Catalyurek et al. have proposed a graph coloring algorithm which relies on
+speculative, local assignment of colors. In this paper we present an improved
+version which runs even more optimistically with less thread synchronization
+and reduced number of conflicts compared to Catalyurek et al.'s algorithm. We
+show that the new technique scales better on multi-core and many-core systems
+and performs up to 1.5x faster than its predecessor on graphs with high-degree
+vertices, while keeping the number of colors at the same near-optimal levels.

@@ -1,0 +1,16 @@
+Evolutionary algorithms (EAs) are heuristic algorithms inspired by natural
+evolution. They are often used to obtain satisficing solutions in practice. In
+this paper, we investigate a largely underexplored issue: the approximation
+performance of EAs in terms of how close the solution obtained is to an optimal
+solution. We study an EA framework named simple EA with isolated population
+(SEIP) that can be implemented as a single- or multi-objective EA. We analyze
+the approximation performance of SEIP using the partial ratio, which
+characterizes the approximation ratio that can be guaranteed. Specifically, we
+analyze SEIP using a set cover problem that is NP-hard. We find that in a
+simple configuration, SEIP efficiently achieves an $H_n$-approximation ratio,
+the asymptotic lower bound, for the unbounded set cover problem. We also find
+that SEIP efficiently achieves an $(H_k-\frac{k-1}/{8k^9})$-approximation
+ratio, the currently best-achievable result, for the k-set cover problem.
+Moreover, for an instance class of the k-set cover problem, we disclose how
+SEIP, using either one-bit or bit-wise mutation, can overcome the difficulty
+that limits the greedy algorithm.

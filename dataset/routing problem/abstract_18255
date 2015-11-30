@@ -1,0 +1,24 @@
+Classical problems of sorting and searching assume an underlying linear
+ordering of the objects being compared. In this paper, we study a more general
+setting, in which some pairs of objects are incomparable. This generalization
+is relevant in applications related to rankings in sports, college admissions,
+or conference submissions. It also has potential applications in biology, such
+as comparing the evolutionary fitness of different strains of bacteria, or
+understanding input-output relations among a set of metabolic reactions or the
+causal influences among a set of interacting genes or proteins. Our results
+improve and extend results from two decades ago of Faigle and Tur\'{a}n.
+  A measure of complexity of a partially ordered set (poset) is its width. Our
+algorithms obtain information about a poset by queries that compare two
+elements. We present an algorithm that sorts, i.e. completely identifies, a
+width w poset of size n and has query complexity O(wn + nlog(n)), which is
+within a constant factor of the information-theoretic lower bound. We also show
+that a variant of Mergesort has query complexity O(wn(log(n/w))) and total
+complexity O((w^2)nlog(n/w)). Faigle and Tur\'{a}n have shown that the sorting
+problem has query complexity O(wn(log(n/w))) but did not address its total
+complexity.
+  For the related problem of determining the minimal elements of a poset, we
+give efficient deterministic and randomized algorithms with O(wn) query and
+total complexity, along with matching lower bounds for the query complexity up
+to a factor of 2. We generalize these results to the k-selection problem of
+determining the elements of height at most k. We also derive upper bounds on
+the total complexity of some other problems of a similar flavor.

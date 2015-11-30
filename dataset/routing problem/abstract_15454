@@ -1,0 +1,20 @@
+Influence maximization is a well-studied problem that asks for a small set of
+influential users from a social network, such that by targeting them as early
+adopters, the expected total adoption through influence cascades over the
+network is maximized. However, almost all prior work focuses on cascades of a
+single propagating entity or purely-competitive entities. In this work, we
+propose the Comparative Independent Cascade (Com-IC) model that covers the full
+spectrum of entity interactions from competition to complementarity. In Com-IC,
+users' adoption decisions depend not only on edge-level information
+propagation, but also on a node-level automaton whose behavior is governed by a
+set of model parameters, enabling our model to capture not only competition,
+but also complementarity, to any possible degree. We study two natural
+optimization problems, Self Influence Maximization and Complementary Influence
+Maximization, in a novel setting with complementary entities. Both problems are
+NP-hard, and we devise efficient and effective approximation algorithms via
+non-trivial techniques based on reverse-reachable sets and a novel "sandwich
+approximation". The applicability of both techniques extends beyond our model
+and problems. Our experiments show that the proposed algorithms consistently
+outperform intuitive baselines in four real-world social networks, often by a
+significant margin. In addition, we learn model parameters from real user
+action logs.

@@ -1,0 +1,24 @@
+Stochastic modeling has become a popular approach to quantify uncertainty in
+flows through heterogeneous porous media. The uncertainty in heterogeneous
+structure properties is often parameterized by a high-dimensional random
+variable. This leads to a deterministic problem in a high-dimensional parameter
+space and the numerical computation becomes very challengeable as the dimension
+of the parameter space increases. To efficiently tackle the
+high-dimensionality, we propose a hybrid high dimensional model representation
+(HDMR) technique, through which the high-dimensional stochastic model is
+decomposed into a moderate-dimensional stochastic model in a most active random
+space and a few one-dimensional stochastic models. The derived low-dimensional
+stochastic models are solved by incorporating sparse grid stochastic
+collocation method into the proposed hybrid HDMR. The porous media properties
+such as permeability are often heterogeneous. To treat the heterogeneity, we
+use a mixed multiscale finite element method (MMsFEM) to simulate each of
+derived stochastic models. To capture the non-local spatial features of the
+porous media and the important effects of random variables, we can
+hierarchically incorporate the global information individually from each of
+random parameters. This significantly enhances the accuracy of the multiscale
+simulation. The synergy of the hybrid HDMR and the MMsFEM reduces the
+stochastic model of flows in both stochastic space and physical space, and
+significantly decreases the computation complexity. We carefully analyze the
+proposed HDMR technique and the derived stochastic MMsFEM. A few numerical
+experiments are carried out for two-phase flows in random porous media and
+support the efficiency and accuracy of the MMsFEM based on the hybrid HDMR.

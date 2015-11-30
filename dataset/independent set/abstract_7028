@@ -1,0 +1,13 @@
+Are (set)-consensus objects necessary? This paper answer is negative.
+  We show that the availability of consensus objects can be replaced by
+restricting the set of runs we consider. In particular we concentrate of the
+set of runs of the Immediate-Snapshot-Model (IIS), and given the object we
+identify this restricted subset of IIS runs.
+  We further show that given an $(m,k)$-set consensus, an object that provides
+$k$-set consensus among $m$ processors, in a system of $n$, $n>m$ processors,
+we do not need to use the precise power of the objects but rather their
+effective cumulative set consensus power. E.g. when $n=3, m=2,$ and $k=1$ and
+all the 3 processors are active then we only use 2-set consensus among the 3
+processors, as if 2-processors consensus is not available. We do this until at
+least one of the 3 processors obtains an output. We show that this suggests a
+new direction in the design of algorithms when consensus objects are involved.

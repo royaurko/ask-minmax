@@ -1,0 +1,15 @@
+This paper contributes a novel embedding model which measures the probability
+of each belief $\langle h,r,t,m\rangle$ in a large-scale knowledge repository
+via simultaneously learning distributed representations for entities ($h$ and
+$t$), relations ($r$), and the words in relation mentions ($m$). It facilitates
+knowledge completion by means of simple vector operations to discover new
+beliefs. Given an imperfect belief, we can not only infer the missing entities,
+predict the unknown relations, but also tell the plausibility of the belief,
+just leveraging the learnt embeddings of remaining evidences. To demonstrate
+the scalability and the effectiveness of our model, we conduct experiments on
+several large-scale repositories which contain millions of beliefs from
+WordNet, Freebase and NELL, and compare it with other cutting-edge approaches
+via competing the performances assessed by the tasks of entity inference,
+relation prediction and triplet classification with respective metrics.
+Extensive experimental results show that the proposed model outperforms the
+state-of-the-arts with significant improvements.

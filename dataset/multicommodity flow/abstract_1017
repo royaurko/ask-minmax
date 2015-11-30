@@ -1,0 +1,21 @@
+We perform direct numerical simulations (DNS) of a turbulent channel flow
+over porous walls. In the fluid region the flow is governed by the
+incompressible Navier-Stokes equations, while in the porous layers the
+Volume-Averaged Navier-Stokes (VANS) equations are used, which are obtained by
+volume-averaging the microscopic flow field over a small volume that is larger
+than the typical dimensions of the pores. In this way the porous medium has a
+continuum description, and can be specified via global properties like
+permeability and porosity, without the need of a detailed knowledge of the pore
+microstructure. At the interface between the porous material and the fluid
+region, following literature momentum-transfer conditions are applied, in which
+an available coefficient related to the unknown structure of the interface can
+be used as an error estimate.
+  To formulate the numerical problem, the velocity-vorticity formulation of the
+coupled Navier--Stokes and VANS equations is derived and implement into a
+pseudo-spectral DNS solver. We perform simulations at $Re_\tau=180$, and carry
+out a parametric study, by varying thickness of the porous layers, properties
+of the porous material, as well as the coefficient of the momentum-transfer
+interface conditions. The analysis of turbulence statistics and instantaneous
+flow fields, in comparative form to the flow over a smooth impermeable wall,
+allows us to address the effects of permeability and to highlight their
+importance even in this low-permeability regime.

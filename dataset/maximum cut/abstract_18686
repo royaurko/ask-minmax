@@ -1,0 +1,21 @@
+We investigate the time-varying ARCH (tvARCH) process. It is shown that it
+can be used to describe the slow decay of the sample autocorrelations of the
+squared returns often observed in financial time series, which warrants the
+further study of parameter estimation methods for the model. Since the
+parameters are changing over time, a successful estimator needs to perform well
+for small samples. We propose a kernel normalized-least-squares (kernel-NLS)
+estimator which has a closed form, and thus outperforms the previously proposed
+kernel quasi-maximum likelihood (kernel-QML) estimator for small samples. The
+kernel-NLS estimator is simple, works under mild moment assumptions and avoids
+some of the parameter space restrictions imposed by the kernel-QML estimator.
+Theoretical evidence shows that the kernel-NLS estimator has the same rate of
+convergence as the kernel-QML estimator. Due to the kernel-NLS estimator's ease
+of computation, computationally intensive procedures can be used. A
+prediction-based cross-validation method is proposed for selecting the
+bandwidth of the kernel-NLS estimator. Also, we use a residual-based bootstrap
+scheme to bootstrap the tvARCH process. The bootstrap sample is used to obtain
+pointwise confidence intervals for the kernel-NLS estimator. It is shown that
+distributions of the estimator using the bootstrap and the ``true'' tvARCH
+estimator asymptotically coincide. We illustrate our estimation method on a
+variety of currency exchange and stock index data for which we obtain both good
+fits to the data and accurate forecasts.

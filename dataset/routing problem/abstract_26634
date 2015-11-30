@@ -1,0 +1,12 @@
+The purpose of this paper is to develop a self-optimized association
+algorithm based on PGRL (Policy Gradient Reinforcement Learning), which is both
+scalable, stable and robust. The term robust means that performance degradation
+in the learning phase should be forbidden or limited to predefined thresholds.
+The algorithm is model-free (as opposed to Value Iteration) and robust (as
+opposed to Q-Learning). The association problem is modeled as a Markov Decision
+Process (MDP). The policy space is parameterized. The parameterized family of
+policies is then used as expert knowledge for the PGRL. The PGRL converges
+towards a local optimum and the average cost decreases monotonically during the
+learning process. The properties of the solution make it a good candidate for
+practical implementation. Furthermore, the robustness property allows to use
+the PGRL algorithm in an "always-on" learning mode.

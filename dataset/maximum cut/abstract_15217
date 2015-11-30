@@ -1,0 +1,17 @@
+This paper examines a general class of noisy matrix completion tasks where
+the goal is to estimate a matrix from observations obtained at a subset of its
+entries, each of which is subject to random noise or corruption. Our specific
+focus is on settings where the matrix to be estimated is well-approximated by a
+product of two (a priori unknown) matrices, one of which is sparse. Such
+structural models - referred to here as "sparse factor models" - have been
+widely used, for example, in subspace clustering applications, as well as in
+contemporary sparse modeling and dictionary learning tasks. Our main
+theoretical contributions are estimation error bounds for sparsity-regularized
+maximum likelihood estimators for problems of this form, which are applicable
+to a number of different observation noise or corruption models. Several
+specific implications are examined, including scenarios where observations are
+corrupted by additive Gaussian noise or additive heavier-tailed (Laplace)
+noise, Poisson-distributed observations, and highly-quantized (e.g., one-bit)
+observations. We also propose a simple algorithmic approach based on the
+alternating direction method of multipliers for these tasks, and provide
+experimental evidence to support our error analyses.

@@ -1,0 +1,21 @@
+The {\sc $c$-Balanced Separator} problem is a graph-partitioning problem in
+which given a graph $G$, one aims to find a cut of minimum size such that both
+the sides of the cut have at least $cn$ vertices. In this paper, we present new
+directions of progress in the {\sc $c$-Balanced Separator} problem. More
+specifically, we propose a new family of mathematical programs, which depends
+upon a parameter $\epsilon > 0$, and extend the seminal work of
+Arora-Rao-Vazirani ({\sf ARV}) \cite{ARV} to show that the polynomial time
+solvability of the proposed family of programs implies an improvement in the
+approximation factor to $O(\log^{{1/3} + \epsilon} n)$ from the best-known
+factor of $O(\sqrt{\log n})$ due to {\sf ARV}. In fact, for $\epsilon = 1/3$,
+the program we get is the SDP proposed by {\sf ARV}. For $\epsilon < 1/3$, this
+family of programs is not convex but one can transform them into so called
+\emph{\textbf{concave programs}} in which one optimizes a concave function over
+a convex feasible set. The properties of concave programs allows one to apply
+techniques due to Hoffman \cite{H81} or Tuy \emph{et al} \cite{TTT85} to solve
+such problems with arbitrary accuracy. But the problem of finding of a method
+to solve these programs that converges in polynomial time still remains open.
+Our result, although conditional, introduces a new family of programs which is
+more powerful than semi-definite programming in the context of approximation
+algorithms and hence it will of interest to investigate this family both in the
+direction of designing efficient algorithms and proving hardness results.

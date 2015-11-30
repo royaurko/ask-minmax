@@ -1,0 +1,17 @@
+We study the large deviations performance of consensus+innovations
+distributed detection over noisy networks, where sensors at a time step k
+cooperate with immediate neighbors (consensus) and assimilate their new
+observations (innovation.) We show that, even under noisy communication,
+\emph{all sensors} can achieve exponential decay e^{-k C_{\mathrm{dis}}} of the
+detection error probability, even when certain (or most) sensors cannot detect
+the event of interest in isolation. We achieve this by designing a single time
+scale stochastic approximation type distributed detector with the optimal
+weight sequence {\alpha_k}, by which sensors weigh their neighbors' messages.
+The optimal design of {\alpha_k} balances the opposing effects of communication
+noise and information flow from neighbors: larger, slowly decaying \alpha_k
+improves information flow but injects more communication noise. Further, we
+quantify the best achievable C_{\mathrm{dis}} as a function of the sensing
+signal and noise, communication noise, and network connectivity. Finally, we
+find a threshold on the communication noise power below which a sensor that can
+detect the event in isolation still improves its detection by cooperation
+through noisy links.

@@ -1,0 +1,25 @@
+Here, we give an algorithm for deciding if the nonnegative rank of a matrix
+$M$ of dimension $m \times n$ is at most $r$ which runs in time
+$(nm)^{O(r^2)}$. This is the first exact algorithm that runs in time
+singly-exponential in $r$. This algorithm (and earlier algorithms) are built on
+methods for finding a solution to a system of polynomial inequalities (if one
+exists). Notably, the best algorithms for this task run in time exponential in
+the number of variables but polynomial in all of the other parameters (the
+number of inequalities and the maximum degree).
+  Hence these algorithms motivate natural algebraic questions whose solution
+have immediate {\em algorithmic} implications: How many variables do we need to
+represent the decision problem, does $M$ have nonnegative rank at most $r$? A
+naive formulation uses $nr + mr$ variables and yields an algorithm that is
+exponential in $n$ and $m$ even for constant $r$. (Arora, Ge, Kannan, Moitra,
+STOC 2012) recently reduced the number of variables to $2r^2 2^r$, and here we
+exponentially reduce the number of variables to $2r^2$ and this yields our main
+algorithm. In fact, the algorithm that we obtain is nearly-optimal (under the
+Exponential Time Hypothesis) since an algorithm that runs in time $(nm)^{o(r)}$
+would yield a subexponential algorithm for 3-SAT .
+  Our main result is based on establishing a normal form for nonnegative matrix
+factorization - which in turn allows us to exploit algebraic dependence among a
+large collection of linear transformations with variable entries. Additionally,
+we also demonstrate that nonnegative rank cannot be certified by even a very
+large submatrix of $M$, and this property also follows from the intuition
+gained from viewing nonnegative rank through the lens of systems of polynomial
+inequalities.

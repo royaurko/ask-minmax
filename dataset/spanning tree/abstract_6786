@@ -1,0 +1,14 @@
+We present space-efficient parallel strategies for two fundamental
+combinatorial search problems, namely, backtrack search and branch-and-bound,
+both involving the visit of an $n$-node tree of height $h$ under the assumption
+that a node can be accessed only through its father or its children. For both
+problems we propose efficient algorithms that run on a $p$-processor
+distributed-memory machine. For backtrack search, we give a deterministic
+algorithm running in $O(n/p+h\log p)$ time, and a Las Vegas algorithm requiring
+optimal $O(n/p+h)$ time, with high probability. Building on the backtrack
+search algorithm, we also derive a Las Vegas algorithm for branch-and-bound
+which runs in $O((n/p+h\log p \log n)h\log^2 n)$ time, with high probability. A
+remarkable feature of our algorithms is the use of only constant space per
+processor, which constitutes a significant improvement upon previous algorithms
+whose space requirements per processor depend on the (possibly huge) tree to be
+explored.

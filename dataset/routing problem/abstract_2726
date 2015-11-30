@@ -1,0 +1,19 @@
+Processing data received as a stream is a task commonly performed by modern
+embedded devices, in a wide range of applications such as multimedia
+(encoding/decoding/ playing media), networking (switching and routing), digital
+security, scientific data processing, etc. Such processing normally tends to be
+calculation intensive and therefore requiring significant processing power.
+Therefore, hardware acceleration methods to increase the performance of such
+applications constitute an important area of study. In this paper, we present
+an evaluation of one such method to process streaming data, namely
+multi-processor pipeline architecture. The hardware is based on a
+Multiple-Processor System on Chip (MPSoC), using a data encryption algorithm as
+a case study. The algorithm is partitioned on a coarse grained level and mapped
+on to an MPSoC with five processor cores in a pipeline, using specifically
+configured Xtensa LX3 cores. The system is then selectively optimized by
+strengthening and pruning the resources of each processor core. The optimized
+system is evaluated and compared against an optimal single-processor System on
+Chip (SoC) for the same application. The multiple-processor pipeline system for
+data encryption algorithms used was observed to provide significant speed ups,
+up to 4.45 times that of the single-processor system, which is close to the
+ideal speed up from a five-stage pipeline.

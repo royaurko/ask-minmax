@@ -1,0 +1,14 @@
+An {\it overlap representation} of a graph $G$ assigns sets to vertices so
+that vertices are adjacent if and only if their assigned sets intersect with
+neither containing the other. The {\it overlap number} $\ol(G)$ (introduced by
+Rosgen) is the minimum size of the union of the sets in such a representation.
+We prove the following: (1) An optimal overlap representation of a tree can be
+produced in linear time, and its size is the number of vertices in the largest
+subtree in which the neighbor of any leaf has degree 2. (2) If $\delta(G)\ge 2$
+and $G\ne K_3$, then $\ol(G)\le |E(G)|-1$, with equality when $G$ is connected
+and triangle-free and has no star-cutset. (3) If $G$ is an $n$-vertex plane
+graph with $n\ge5$, then $\ol(G)\le 2n-5$, with equality when every face has
+length 4 and there is no star-cutset. (4) If $G$ is an $n$-vertex graph with
+$n\ge 14$, then $\ol(G)\le \floor{n^2/4-n/2-1}$, and this is sharp (for even
+$n$, equality holds when $G$ arises from $K_{n/2,n/2}$ by deleting a perfect
+matching).

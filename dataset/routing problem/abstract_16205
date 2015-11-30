@@ -1,0 +1,14 @@
+We consider the least angle regression and forward stagewise algorithms for
+solving penalized least squares regression problems. In Efron, Hastie,
+Johnstone & Tibshirani (2004) it is proved that the least angle regression
+algorithm, with a small modification, solves the lasso regression problem. Here
+we give an analogous result for incremental forward stagewise regression,
+showing that it solves a version of the lasso problem that enforces
+monotonicity. One consequence of this is as follows: while lasso makes optimal
+progress in terms of reducing the residual sum-of-squares per unit increase in
+$L_1$-norm of the coefficient $\beta$, forward stage-wise is optimal per unit
+$L_1$ arc-length traveled along the coefficient path. We also study a condition
+under which the coefficient paths of the lasso are monotone, and hence the
+different algorithms coincide. Finally, we compare the lasso and forward
+stagewise procedures in a simulation study involving a large number of
+correlated predictors.

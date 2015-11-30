@@ -1,0 +1,20 @@
+Agglomerative clustering is a well established strategy for identifying
+communities in networks. Communities are successively merged into larger
+communities, coarsening a network of actors into a more manageable network of
+communities. The order in which merges should occur is not in general clear,
+necessitating heuristics for selecting pairs of communities to merge. We
+describe a hierarchical clustering algorithm based on a local optimality
+property. For each edge in the network, we associate the modularity change for
+merging the communities it links. For each community vertex, we call the
+preferred edge that edge for which the modularity change is maximal. When an
+edge is preferred by both vertices that it links, it appears to be the optimal
+choice from the local viewpoint. We use the locally optimal edges to define the
+algorithm: simultaneously merge all pairs of communities that are connected by
+locally optimal edges that would increase the modularity, redetermining the
+locally optimal edges after each step and continuing so long as the modularity
+can be further increased. We apply the algorithm to model and empirical
+networks, demonstrating that it can efficiently produce high-quality community
+solutions. We relate the performance and implementation details to the
+structure of the resulting community hierarchies. We additionally consider a
+complementary local clustering algorithm, describing how to identify
+overlapping communities based on the local optimality condition.

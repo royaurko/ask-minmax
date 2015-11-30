@@ -1,0 +1,24 @@
+Existing works on distributed consensus explore linear iterations based on
+reversible Markov chains, which contribute to the slow convergence of the
+algorithms. It has been observed that by overcoming the diffusive behavior of
+reversible chains, certain nonreversible chains lifted from reversible ones mix
+substantially faster than the original chains. In this paper, we investigate
+the idea of accelerating distributed consensus via lifting Markov chains, and
+propose a class of Location-Aided Distributed Averaging (LADA) algorithms for
+wireless networks, where nodes' coarse location information is used to
+construct nonreversible chains that facilitate distributed computing and
+cooperative processing. First, two general pseudo-algorithms are presented to
+illustrate the notion of distributed averaging through chain-lifting. These
+pseudo-algorithms are then respectively instantiated through one LADA algorithm
+on grid networks, and one on general wireless networks. For a $k\times k$ grid
+network, the proposed LADA algorithm achieves an $\epsilon$-averaging time of
+$O(k\log(\epsilon^{-1}))$. Based on this algorithm, in a wireless network with
+transmission range $r$, an $\epsilon$-averaging time of
+$O(r^{-1}\log(\epsilon^{-1}))$ can be attained through a centralized algorithm.
+Subsequently, we present a fully-distributed LADA algorithm for wireless
+networks, which utilizes only the direction information of neighbors to
+construct nonreversible chains. It is shown that this distributed LADA
+algorithm achieves the same scaling law in averaging time as the centralized
+scheme. Finally, we propose a cluster-based LADA (C-LADA) algorithm, which,
+requiring no central coordination, provides the additional benefit of reduced
+message complexity compared with the distributed LADA algorithm.

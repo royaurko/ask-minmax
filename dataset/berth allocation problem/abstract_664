@@ -1,0 +1,26 @@
+This work examines the use of two-way training to efficiently discriminate
+the channel estimation performances at a legitimate receiver (LR) and an
+uncontributorized receiver (UR) in a multiple-input multiple-output (MIMO) wireless
+system. This work improves upon the original discriminatory channel estimation
+(DCE) scheme proposed by Chang et al where multiple stages of feedback and
+retraining were used. While most studies on physical layer secrecy are under
+the information-theoretic framework and focus directly on the data transmission
+phase, studies on DCE focus on the training phase and aim to provide a
+practical signal processing technique to discriminate between the channel
+estimation performances at LR and UR. A key feature of DCE designs is the
+insertion of artificial noise (AN) in the training signal to degrade the
+channel estimation performance at UR. To do so, AN must be placed in a
+carefully chosen subspace based on the transmitter's knowledge of LR's channel
+in order to minimize its effect on LR. In this paper, we adopt the idea of
+two-way training that allows both the transmitter and LR to send training
+signals to facilitate channel estimation at both ends. Both reciprocal and
+non-reciprocal channels are considered and a two-way DCE scheme is proposed for
+each scenario. {For mathematical tractability, we assume that all terminals
+employ the linear minimum mean square error criterion for channel estimation.
+Based on the mean square error (MSE) of the channel estimates at all
+terminals,} we formulate and solve an optimization problem where the optimal
+power allocation between the training signal and AN is found by minimizing the
+MSE of LR's channel estimate subject to a constraint on the MSE achievable at
+UR. Numerical results show that the proposed DCE schemes can effectively
+discriminate between the channel estimation and hence the data detection
+performances at LR and UR.

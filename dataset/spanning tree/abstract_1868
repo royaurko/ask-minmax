@@ -1,0 +1,23 @@
+Link-cut trees have been introduced by D.D. Sleator and R.E. Tarjan (Journal
+of Computer and System Sciences, 1983) with the aim of efficiently maintaining
+a forest of vertex-disjoint dynamic rooted trees under cut and link operations.
+These operations respectively disconnect a subtree from a tree, and join two
+trees by an edge. Additionally, link-cut trees allow to change the root of a
+tree and to perform a number of updates and queries on cost values defined on
+the arcs of the trees. All these operations are performed in $O(\log\, n)$
+amortized or worst-case time, depending on the implementation, where $n$ is the
+total size of the forest.
+  In this paper, we show that a list of elements implemented using link-cut
+trees (we call it a $\log$-list) allows us to obtain a common running time of
+$O(\log\, n)$ for the classical operations on lists, but also for some other
+essential operations that usually take linear time on lists. Such operations
+require to find the minimum/maximum element in a sublist defined by its
+endpoints, the position of a given element in the list or the element placed at
+a given position in the list; or they require to add a value $a$, or to
+multiply by $-1$, all the elements in a sublist.
+  Furthermore, we use $\log$-lists to implement several existing algorithms for
+sorting permutations by transpositions and/or reversals and/or
+block-interchanges, and obtain $O(n\,\log\, n)$ running time for all of them.
+In this way, the running time of several algorithms is improved, whereas in
+other cases our algorithms perform as well as the best existing
+implementations.

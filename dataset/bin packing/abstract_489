@@ -1,0 +1,18 @@
+A major hindrance to studies of microbial diversity has been that the vast
+majority of microbes cannot be cultured in the laboratory and thus are not
+amenable to traditional methods of characterization. Environmental shotgun
+sequencing (ESS) overcomes this hurdle by sequencing the DNA from the organisms
+present in a microbial community. The interpretation of this metagenomic data
+can be greatly facilitated by associating every sequence read with its source
+organism. We report the development of CompostBin, a DNA composition-based
+algorithm for analyzing metagenomic sequence reads and distributing them into
+taxon-specific bins. Unlike previous methods that seek to bin assembled contigs
+and often require training on known reference genomes, CompostBin has the
+ability to accurately bin raw sequence reads without need for assembly or
+training. It applies principal component analysis to project the data into an
+informative lower-dimensional space, and then uses the normalized cut
+clustering algorithm on this filtered data set to classify sequences into
+taxon-specific bins. We demonstrate the algorithm's accuracy on a variety of
+simulated data sets and on one metagenomic data set with known species
+assignments. CompostBin is a work in progress, with several refinements of the
+algorithm planned for the future.

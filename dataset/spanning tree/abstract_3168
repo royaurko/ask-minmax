@@ -1,0 +1,20 @@
+Although a fair amount of work has been devoted to growing Monte-Carlo merger
+trees which resemble those built from an N-body simulation, comparatively
+little effort has been invested in quantifying the caveats one necessarily
+encounters when one extracts trees directly from such a simulation. To somewhat
+revert the tide, this paper seeks to provide its reader with a comprehensive
+study of the problems one faces when following this route. The first step to
+building merger histories of dark matter haloes and their subhaloes is to
+identify these structures in each of the time outputs (snapshots) produced by
+the simulation. Even though we discuss a particular implementation of such an
+algorithm (called AdaptaHOP) in this paper, we believe that our results do not
+depend on the exact details of the implementation but extend to most if not all
+(sub)structure finders. We then highlight different ways to build merger
+histories from AdaptaHOP haloes and subhaloes, contrasting their various
+advantages and drawbacks. We find that the best approach to (sub)halo merging
+histories is through an analysis that goes back and forth between
+identification and tree building rather than one which conducts a
+straightforward sequential treatment of these two steps. This is rooted in the
+complexity of the merging trees which have to depict an inherently dynamical
+process from the partial temporal information contained in the collection of
+instantaneous snapshots available from the N-body simulation.

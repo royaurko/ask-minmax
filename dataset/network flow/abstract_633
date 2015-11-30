@@ -1,0 +1,17 @@
+The sharing of network traces is an important prerequisite for the
+development and evaluation of efficient anomaly detection mechanisms.
+Unfortunately, privacy concerns and data protection laws prevent network
+operators from sharing these data. Anonymization is a promising solution in
+this context; however, it is unclear if the sanitization of data preserves the
+traffic characteristics or introduces artifacts that may falsify traffic
+analysis results. In this paper, we examine the utility of anonymized flow
+traces for anomaly detection. We quantitatively evaluate the impact of IP
+address anonymization, namely variations of permutation and truncation, on the
+detectability of large-scale anomalies. Specifically, we analyze three weeks of
+un-sampled and non-anonymized network traces from a medium-sized backbone
+network. We find that all anonymization techniques, except prefix-preserving
+permutation, degrade the utility of data for anomaly detection. We show that
+the degree of degradation depends to a large extent on the nature and mix of
+anomalies present in a trace. Moreover, we present a case study that
+illustrates how traffic characteristics of individual hosts are distorted by
+anonymization.

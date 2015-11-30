@@ -1,0 +1,25 @@
+In this thesis we consider the problem of information hiding in the scenarios
+of interactive systems, statistical disclosure control, and refinement of
+specifications. We apply quantitative approaches to information flow in the
+first two cases, and we propose improvements for the usual solutions based on
+process equivalences for the third case. In the first scenario we consider the
+problem of defining the information leakage in interactive systems where
+secrets and observables can alternate during the computation and influence each
+other. We show that the information-theoretic approach which interprets such
+systems as (simple) noisy channels is not valid. The principle can be recovered
+if we consider channels with memory and feedback. We also propose the use of
+directed information from input to output as the real measure of leakage in
+interactive systems. In the second scenario we consider the problem of
+statistical disclosure control, which concerns how to reveal accurate
+statistics about a set of respondents while preserving the privacy of
+individuals. We focus on the concept of differential privacy, a notion that has
+become very popular in the database community. We show how to model the query
+system in terms of an information-theoretic channel, and we compare the notion
+of differential privacy with that of min-entropy leakage.In the third scenario
+we address the problem of using process equivalences to characterize
+information-hiding properties. We show that, in the presence of nondeterminism,
+this approach may rely on the assumption that the scheduler "works for the
+benefit of the protocol", and this is often not a safe assumption. We present a
+formalism in which we can specify admissible schedulers and, correspondingly,
+safe versions of complete-trace equivalence and bisimulation, and we show that
+safe equivalences can be used to establish information-hiding properties.

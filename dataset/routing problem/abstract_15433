@@ -1,0 +1,26 @@
+We introduce a derivative-free computational framework for approximating
+solutions to nonlinear PDE-constrained inverse problems. The aim is to merge
+ideas from iterative regularization with ensemble Kalman methods from Bayesian
+inference to develop a derivative-free stable method easy to implement in
+applications where the PDE (forward) model is only accessible as a black box.
+The method can be derived as an approximation of the regularizing
+Levenberg-Marquardt (LM) scheme [14] in which the derivative of the forward
+operator and its adjoint are replaced with empirical covariances from an
+ensemble of elements from the admissible space of solutions. The resulting
+ensemble method consists of an update formula that is applied to each ensemble
+member and that has a regularization parameter selected in a similar fashion to
+the one in the LM scheme. Moreover, an early termination of the scheme is
+proposed according to a discrepancy principle-type of criterion. The proposed
+method can be also viewed as a regularizing version of standard Kalman
+approaches which are often unstable unless ad-hoc fixes, such as covariance
+localization, are implemented. We provide a numerical investigation of the
+conditions under which the proposed method inherits the regularizing properties
+of the LM scheme of [14]. More concretely, we study the effect of ensemble
+size, number of measurements, selection of initial ensemble and tunable
+parameters on the performance of the method. The numerical investigation is
+carried out with synthetic experiments on two model inverse problems: (i)
+identification of conductivity on a Darcy flow model and (ii) electrical
+impedance tomography with the complete electrode model. We further demonstrate
+the potential application of the method in solving shape identification
+problems by means of a level-set approach for the parameterization of unknown
+geometries.

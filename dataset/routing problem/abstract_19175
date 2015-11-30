@@ -1,0 +1,20 @@
+This paper investigates the problem of joint phase tracking and channel
+decoding in OFDM based Physical-layer Network Coding (PNC) systems. OFDM
+signaling can obviate the need for tight time synchronization among multiple
+simultaneous transmissions in the uplink of PNC systems. However, OFDM PNC
+systems are susceptible to phase drifts caused by residual carrier frequency
+offsets (CFOs). In the traditional OFDM system in which a receiver receives
+from only one transmitter, pilot tones are employed to aid phase tracking. In
+OFDM PNC systems, multiple transmitters transmit to a receiver, and these pilot
+tones must be shared among the multiple transmitters. This reduces the number
+of pilots that can be used by each transmitting node. Phase tracking in OFDM
+PNC is more challenging as a result. To overcome the degradation due to the
+reduced number of per-node pilots, this work supplements the pilots with the
+channel information contained in the data. In particular, we propose to solve
+the problems of phase tracking and channel decoding jointly. Our solution
+consists of the use of the expectation-maximization (EM) algorithm for phase
+tracking and the use of the belief propagation (BP) algorithm for channel
+decoding. The two problems are solved jointly through iterative processing
+between the EM and BP algorithms. Simulations and real experiments based on
+software-defined radio show that the proposed method can improve phase tracking
+as well as channel decoding performance.

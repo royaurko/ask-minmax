@@ -1,0 +1,21 @@
+We consider distributed optimization in random networks where N nodes
+cooperatively minimize the sum \sum_{i=1}^N f_i(x) of their individual convex
+costs. Existing literature proposes distributed gradient-like methods that are
+computationally cheap and resilient to link failures, but have slow convergence
+rates. In this paper, we propose accelerated distributed gradient methods that:
+1) are resilient to link failures; 2) computationally cheap; and 3) improve
+convergence rates over other gradient methods. We model the network by a
+sequence of independent, identically distributed random matrices {W(k)} drawn
+from the set of symmetric, stochastic matrices with positive diagonals. The
+network is connected on average and the cost functions are convex,
+differentiable, with Lipschitz continuous and bounded gradients. We design two
+distributed Nesterov-like gradient methods that modify the D-NG and D-NC
+methods that we proposed for static networks. We prove their convergence rates
+in terms of the expected optimality gap at the cost function. Let k and K be
+the number of per-node gradient evaluations and per-node communications,
+respectively. Then the modified D-NG achieves rates O(log k/k) and O(\log K/K),
+and the modified D-NC rates O(1/k^2) and O(1/K^{2-\xi}), where \xi>0 is
+arbitrarily small. For comparison, the standard distributed gradient method
+cannot do better than \Omega(1/k^{2/3}) and \Omega(1/K^{2/3}), on the same
+class of cost functions (even for static networks). Simulation examples
+illustrate our analytical findings.

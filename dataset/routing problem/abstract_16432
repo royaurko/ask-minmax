@@ -1,0 +1,10 @@
+An (encoded) decision problem is a pair (E, F) where E=words that encode
+instances of the problem, F=words to be accepted. We use "strings" in a
+technical sense. With an NP problem (E, F) we associate the "logogram" of F
+relative to E, which conveys structural information on E, F, and how F is
+embedded in E. The kernel Ker(P) of a program P that solves (E, F) consists of
+those strings in the logogram that are used by P. There are relations between
+Ker(P) and the complexity of P. We develop an application to SAT that relies
+upon a property of internal independence of SAT. We show that SAT cannot have
+in its logogram strings serving as collective certificates. As consequence, all
+programs that solve SAT have same kernel.

@@ -1,0 +1,19 @@
+We study the problem of local alignment, which is finding pairs of similar
+subsequences with gaps. The problem exists in biosequence databases. BLAST is a
+typical software for finding local alignment based on heuristic, but could miss
+results. Using the Smith-Waterman algorithm, we can find all local alignments
+in O(mn) time, where m and n are lengths of a query and a text, respectively. A
+recent exact approach BWT-SW improves the complexity of the Smith-Waterman
+algorithm under constraints, but still much slower than BLAST. This paper takes
+on the challenge of designing an accurate and efficient algorithm for
+evaluating local-alignment searches, especially for long queries. In this
+paper, we propose an efficient software called ALAE to speed up BWT-SW using a
+compressed suffix array. ALAE utilizes a family of filtering techniques to
+prune meaningless calculations and an algorithm for reusing score calculations.
+We also give a mathematical analysis and show that the upper bound of the total
+number of calculated entries using ALAE could vary from 4.50mn0.520 to
+9.05mn0.896 for random DNA sequences and vary from 8.28mn0.364 to 7.49mn0.723
+for random protein sequences. We demonstrate the significant performance
+improvement of ALAE on BWT-SW using a thorough experimental study on real
+biosequences. ALAE guarantees correctness and accelerates BLAST for most of
+parameters.

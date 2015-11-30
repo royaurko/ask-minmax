@@ -1,0 +1,16 @@
+The problem of finding the $k$ most critical nodes, referred to as the
+$top\text{-}k$ problem, is a very important one in several contexts such as
+information diffusion and preference aggregation in social networks, clustering
+of data points, etc. It has been observed in the literature that the value
+allotted to a node by most of the popular cooperative game theoretic solution
+concepts, acts as a good measure of appropriateness of that node (or a data
+point) to be included in the $top\text{-}k$ set, by itself. However, in
+general, nodes having the highest $k$ values are not the desirable
+$top\text{-}k$ nodes, because the appropriateness of a node to be a part of the
+$top\text{-}k$ set depends on other nodes in the set. As this is not explicitly
+captured by cooperative game theoretic solution concepts, it is necessary to
+post-process the obtained values in order to output the suitable $top\text{-}k$
+nodes. In this paper, we propose several such post-processing methods and give
+reasoning behind each of them, and also propose a standalone algorithm that
+combines cooperative game theoretic solution concepts with the popular greedy
+hill-climbing algorithm.

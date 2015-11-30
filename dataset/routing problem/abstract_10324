@@ -1,0 +1,17 @@
+In the Edge Bipartization problem one is given an undirected graph $G$ and an
+integer $k$, and the question is whether $k$ edges can be deleted from $G$ so
+that it becomes bipartite. In 2006, Guo et al. [J. Comput. Syst. Sci.,
+72(8):1386-1396, 2006] proposed an algorithm solving this problem in time
+$O(2^k m^2)$; today, this algorithm is a textbook example of an application of
+the iterative compression technique. Despite extensive progress in the
+understanding of the parameterized complexity of graph separation problems in
+the recent years, no significant improvement upon this result has been yet
+reported.
+  We present an algorithm for Edge Bipartization that works in time $O(1.977^k
+nm)$, which is the first algorithm with the running time dependence on the
+parameter better than $2^k$. To this end, we combine the general iterative
+compression strategy of Guo et al. [J. Comput. Syst. Sci., 72(8):1386-1396,
+2006], the technique proposed by Wahlstrom [SODA 2014, 1762-1781] of using a
+polynomial-time solvable relaxation in the form of a Valued Constraint
+Satisfaction Problem to guide a bounded-depth branching algorithm, and an
+involved Measure & Conquer analysis of the recursion tree.

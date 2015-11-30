@@ -1,0 +1,17 @@
+An effective solution to the problem of Hermite $G^1$ interpolation with a
+clothoid curve is provided. At the beginning the problem is naturally
+formulated as a system of nonlinear equations with multiple solutions that is
+generally difficult to solve numerically. All the solutions of this nonlinear
+system are reduced to the computation of the zeros of a single nonlinear
+equation. A simple strategy, together with the use of a good and simple guess
+function, permits to solve the single nonlinear equation with a few iterations
+of the Newton--Raphson method.
+  The computation of the clothoid curve requires the computation of Fresnel and
+Fresnel related integrals. Such integrals need asymptotic expansions near
+critical values to avoid loss of precision. This is necessary when, for
+example, the solution of interpolation problem is close to a straight line or
+an arc of circle. Moreover, some special recurrences are deduced for the
+efficient computation of asymptotic expansion.
+  The reduction of the problem to a single nonlinear function in one variable
+and the use of asymptotic expansions make the solution algorithm fast and
+robust.

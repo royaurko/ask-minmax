@@ -1,0 +1,16 @@
+The synthesis problem asks to construct a reactive finite-state system from
+an $\omega$-regular specification. Initial specifications are often
+unrealizable, which means that there is no system that implements the
+specification. A common reason for unrealizability is that assumptions on the
+environment of the system are incomplete. We study the problem of correcting an
+unrealizable specification $\phi$ by computing an environment assumption $\psi$
+such that the new specification $\psi\to\phi$ is realizable. Our aim is to
+construct an assumption $\psi$ that constrains only the environment and is as
+weak as possible. We present a two-step algorithm for computing assumptions.
+The algorithm operates on the game graph that is used to answer the
+realizability question. First, we compute a safety assumption that removes a
+minimal set of environment edges from the graph. Second, we compute a liveness
+assumption that puts fairness conditions on some of the remaining environment
+edges. We show that the problem of finding a minimal set of fair edges is
+computationally hard, and we use probabilistic games to compute a locally
+minimal fairness assumption.

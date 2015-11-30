@@ -1,0 +1,22 @@
+With the ever-increasing quantity and variety of data worldwide, the Web has
+become a rich repository of mathematical formulae. This necessitates the
+creation of robust and scalable systems for Mathematical Information Retrieval,
+where users search for mathematical information using individual formulae
+(query-by-expression) or a combination of keywords and formulae. Often, the
+pages that best satisfy users' information needs contain expressions that only
+approximately match the query formulae. For users trying to locate or re-find a
+specific expression, browse for similar formulae, or who are mathematical
+non-experts, the similarity of formulae depends more on the relative positions
+of symbols than on deep mathematical semantics.
+  We propose the Maximum Subtree Similarity (MSS) metric for
+query-by-expression that produces intuitive rankings of formulae based on their
+appearance, as represented by the types and relative positions of symbols.
+Because it is too expensive to apply the metric against all formulae in large
+collections, we first retrieve expressions using an inverted index over tuples
+that encode relationships between pairs of symbols, ranking hits using the Dice
+coefficient. The top-k formulae are then re-ranked using MSS. Our approach
+obtains state-of-the-art performance on the NTCIR-11 Wikipedia formula
+retrieval benchmark and is efficient in terms of both index space and overall
+retrieval time. Retrieval systems for other graphical forms, including chemical
+diagrams, flowcharts, figures, and tables, may also benefit from adopting our
+approach.

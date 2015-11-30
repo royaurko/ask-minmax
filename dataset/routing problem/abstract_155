@@ -1,0 +1,20 @@
+A dynamic network ${\cal N} = (G,c,\tau,S)$ where $G=(V,E)$ is a graph,
+integers $\tau(e)$ and $c(e)$ represent, for each edge $e\in E$, the time
+required to traverse edge $e$ and its nonnegative capacity, and the set
+$S\subseteq V$ is a set of sources. In the $k$-{\sc Sink Location} problem, one
+is given as input a dynamic network ${\cal N}$ where every source $u\in S$ is
+given a nonnegative supply value $\sigma(u)$. The task is then to find a set of
+sinks $X = \{x_1,\ldots,x_k\}$ in $G$ that minimizes the routing time of all
+supply to $X$. Note that, in the case where $G$ is an undirected graph, the
+optimal position of the sinks in $X$ needs not be at vertices, and can be
+located along edges. Hoppe and Tardos showed that, given an instance of
+$k$-{\sc Sink Location} and a set of $k$ vertices $X\subseteq V$, one can find
+an optimal routing scheme of all the supply in $G$ to $X$ in polynomial time,
+in the case where graph $G$ is directed. Note that when $G$ is directed, this
+suffices to obtain polynomial-time solvability of the $k$-{\sc Sink Location}
+problem, since any optimal position will be located at vertices of $G$.
+However, the computational complexity of the $k$-{\sc Sink Location} problem on
+general undirected graphs is still open. In this paper, we show that the
+$k$-{\sc Sink Location} problem admits a fully polynomial-time approximation
+scheme (FPTAS) for every fixed $k$, and that the problem is $W[1]$-hard when
+parameterized by $k$.

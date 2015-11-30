@@ -1,0 +1,16 @@
+This paper proposed software architecture for operating an automatic
+semiconductor manufacturing machine. Recent machines for semiconductor process
+are required for high level of automation which are composed of motion control,
+machine vision, data acquisition and networking. These functions are executed
+through industrial equipments that are generally installed in a computer. The
+equipments occupy a great part of system resource and generate a lot of
+computation, so the software structure should be designed for efficiency. The
+proposed architecture is consisted of four layers and virtual equipments(VEs).
+The VEs are made by subclassing the physical equipments(PEs) and the layers are
+coded into thread which updates the status of VEs. Subroutines in a program
+refer to the pointer of VEs, and direct access to physical equipment are
+prohibited. The number of access (NOA) to PEs in typical industrial application
+was simulated for the unlimited access structure and the presented structure.
+The result showed that the proposed structure was more efficient than typical
+ones and irrespective of subroutines. This architecture was also applied to
+design a machine operating software and performed automatic wafer dicing.

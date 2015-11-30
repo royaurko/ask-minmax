@@ -1,0 +1,24 @@
+Boxicity of a graph G(V, E) is the minimum integer k such that G can be
+represented as the intersection graph of axis parallel boxes in $\mathbb{R}^k$.
+Cubicity is a variant of boxicity, where the axis parallel boxes in the
+intersection representation are restricted to be of unit length sides. Deciding
+whether boxicity (resp. cubicity) of a graph is at most k is NP-hard, even for
+k=2 or 3. Computing these parameters is inapproximable within $O(n^{1 -
+\epsilon})$-factor, for any $\epsilon >0$ in polynomial time unless NP=ZPP,
+even for many simple graph classes.
+  In this paper, we give a polynomial time $\kappa(n)$ factor approximation
+algorithm for computing boxicity and a $\kappa(n)\lceil \log \log n\rceil$
+factor approximation algorithm for computing the cubicity, where $\kappa(n)
+=2\left\lceil\frac{n\sqrt{\log \log n}}{\sqrt{\log n}}\right\rceil$. These o(n)
+factor approximation algorithms also produce the corresponding box (resp. cube)
+representations. As a special case, this resolves the question paused by
+Spinrad about polynomial time construction of o(n) dimensional box
+representations for boxicity 2 graphs. Other consequences of our approximation
+algorithm include $O(\kappa(n))$ factor approximation algorithms for computing
+the following parameters: the partial order dimension of finite posets, the
+interval dimension of finite posets, minimum chain cover of bipartite graphs,
+threshold dimension of split graphs and Ferrer's dimension of digraphs. Each of
+these parameters is inapproximable within an $O(n^{1 - \epsilon})$-factor, for
+any $\epsilon >0$ in polynomial time unless NP=ZPP and the algorithms we derive
+seem to be the first o(n) factor approximation algorithms known for all these
+problems.

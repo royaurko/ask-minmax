@@ -1,0 +1,17 @@
+We study a variant of the contextual bandit problem, where on each round, the
+learner plays a sequence of actions, receives a feature for each individual
+action, and reward that is linearly related to these features. This setting has
+applications to network routing, crowd-sourcing, personalized search, and many
+other domains. If the linear transformation is known, we analyze an algorithm
+that is structurally similar to the algorithm of Agarwal et a. [2014] and show
+that it enjoys a regret bound between $\tilde{O}(\sqrt{KLT \ln N})$ and
+$\tilde{O}(L\sqrt{KT \ln N})$, where $K$ is the number of actions, $L$ is the
+length of each action sequence, $T$ is the number of rounds, and $N$ is the
+number of policies. If the linear transformation is unknown, we show that an
+algorithm that first explores to learn the unknown weights via linear
+regression and thereafter uses the estimated weights can achieve
+$\tilde{O}(\|w\|_1(KT)^{3/4} \sqrt{\ln N})$ regret, where $w$ is the true
+(unknown) weight vector. Both algorithms use an optimization oracle to avoid
+explicit enumeration of the policies and consequently are computationally
+efficient whenever an efficient algorithm for the fully supervised setting is
+available.

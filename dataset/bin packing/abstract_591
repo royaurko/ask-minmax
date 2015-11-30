@@ -1,0 +1,23 @@
+We explore a novel theoretical model for studying the performance of
+distributed storage management systems where the data-centers have limited
+capacities (as compared to storage space requested by the users). Prior schemes
+such as Balls-into-bins (used for load balancing) neither consider bin
+(consumer) capacities (multiple balls into a bin) nor the future performance of
+the system after, balls (producer requests) are allocated to bins and restrict
+number of balls as a function of the number of bins. Our problem consists of
+finding an optimal assignment of the online producer requests to consumers (via
+weighted edges) in a complete bipartite graph while ensuring that the total
+size of request assigned on a consumer is limited by its capacity. The metric
+used to measure the performance in this model is the (minimization of) weighted
+sum of the requests assigned on the edges (loads) and their corresponding
+weights. We first explore the optimal offline algorithms followed by
+competitive analysis of different online techniques. Using oblivious adversary.
+LP and Primal-Dual algorithms are used for calculating the optimal offline
+solution in O(r*n) time (where r and n are the number of requests and consumers
+respectively) while randomized algorithms are used for the online case.
+  For the simplified model with equal consumer capacities an average-case
+competitive ratio of AVG(d) / MIN(d) (where d is the edge weight / distance) is
+achieved using an algorithm that has equal probability for selecting any of the
+available edges with a running time of $O(r)$. In the extending the model to
+arbitrary consumer capacities we show an average case competitive ratio of
+AVG(d*c) / (AVG(c) *MIN(d)).

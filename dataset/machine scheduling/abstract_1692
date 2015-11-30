@@ -1,0 +1,16 @@
+Entity resolution is central to data integration and data cleaning.
+Algorithmic approaches have been improving in quality, but remain far from
+perfect. Crowdsourcing platforms offer a more accurate but expensive (and slow)
+way to bring human insight into the process. Previous work has proposed
+batching verification tasks for presentation to human workers but even with
+batching, a human-only approach is infeasible for data sets of even moderate
+size, due to the large numbers of matches to be tested. Instead, we propose a
+hybrid human-machine approach in which machines are used to do an initial,
+coarse pass over all the data, and people are used to verify only the most
+likely matching pairs. We show that for such a hybrid system, generating the
+minimum number of verification tasks of a given size is NP-Hard, but we develop
+a novel two-tiered heuristic approach for creating batched tasks. We describe
+this method, and present the results of extensive experiments on real data sets
+using a popular crowdsourcing platform. The experiments show that our hybrid
+approach achieves both good efficiency and high accuracy compared to
+machine-only or human-only alternatives.

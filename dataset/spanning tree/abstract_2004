@@ -1,0 +1,21 @@
+Let $F$ be a function on pairs of vertices. An {\em $F$- labeling scheme} is
+composed of a {\em marker} algorithm for labeling the vertices of a graph with
+short labels, coupled with a {\em decoder} algorithm allowing one to compute
+$F(u,v)$ of any two vertices $u$ and $v$ directly from their labels. As
+applications for labeling schemes concern mainly large and dynamically changing
+networks, it is of interest to study {\em distributed dynamic} labeling
+schemes. This paper investigates labeling schemes for dynamic trees.
+  This paper presents a general method for constructing labeling schemes for
+dynamic trees. Our method is based on extending an existing {\em static} tree
+labeling scheme to the dynamic setting. This approach fits many natural
+functions on trees, such as ancestry relation, routing (in both the adversary
+and the designer port models), nearest common ancestor etc.. Our resulting
+dynamic schemes incur overheads (over the static scheme) on the label size and
+on the communication complexity. Informally, for any function $k(n)$ and any
+static $F$-labeling scheme on trees, we present an $F$-labeling scheme on
+dynamic trees incurring multiplicative overhead factors
+ (over the static scheme) of $O(\log_{k(n)} n)$ on the label size and
+$O(k(n)\log_{k(n)} n)$ on the amortized message complexity. In particular, by
+setting $k(n)=n^{\epsilon}$ for any $0<\epsilon<1$, we obtain dynamic labeling
+schemes with asymptotically optimal label sizes and sublinear amortized message
+complexity for all the above mentioned functions.

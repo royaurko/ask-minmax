@@ -1,0 +1,20 @@
+Bundle adjustment (BA) is the problem of refining a visual reconstruction to
+produce better structure and viewing parameter estimates. This problem is often
+formulated as a nonlinear least squares problem, where data arises from
+interest point matching. Mismatched interest points cause serious problems in
+this approach, as a single mismatch will affect the entire reconstruction. In
+this paper, we propose a novel robust Student's t BA algorithm (RST-BA). We
+model reprojection errors using the heavy tailed Student's t-distribution, and
+use an implicit trust region method to compute the maximum a posteriori (MAP)
+estimate of the camera and viewing parameters in this model. The resulting
+algorithm exploits the sparse structure essential for reconstructing
+multi-image scenarios, has the same time complexity as standard L2 bundle
+adjustment (L2-BA), and can be implemented with minimal changes to the standard
+least squares framework. We show that the RST-BA is more accurate than either
+L2-BA or L2-BA with a sigma-edit rule for outlier removal for a range of
+simulated error generation scenarios. The new method has also been used to
+reconstruct lunar topography using data from the NASA Apollo 15 orbiter, and we
+present visual and quantitative comparisons of RST-BA and L2-BA methods for
+this application. In particular, using the RST-BA algorithm we were able to
+reconstruct a DEM from unprocessed data with many outliers and no ground
+control points, which was not possible with the L2-BA method.

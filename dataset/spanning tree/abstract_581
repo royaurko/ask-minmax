@@ -1,0 +1,14 @@
+Given a directed simple graph G=(V,E) and a nonnegative-valued cost function
+the power of a vertex u in a directed spanning subgraph H is given by the
+maximum cost of an arcs of H exiting u. The power of H is the sum of the power
+of its vertices.
+  Power Assignment seeks to minimize the power of H while H satisfies some
+connectivity constraint. In this paper, we assume E is bidirected (for every
+directed edge e in E, the opposite edge exists and has the same cost), while H
+is required to be strongly connected. This is the original power assignment
+problem introduced by Chen and Huang in 1989, who proved that bidirected
+minimum spanning tree has approximation ratio at most 2 (this is tight). In
+Approx 2010, we introduced a Greedy approximation algorithm and claimed a ratio
+of 1.992. Here we improve the analysis to 1.85.
+  The proof also shows that a natural linear programming relaxation, introduced
+by us in 2012, has the same 1.85 integrality gap.

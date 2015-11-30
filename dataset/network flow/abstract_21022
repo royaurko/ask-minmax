@@ -1,0 +1,24 @@
+Elementary flux modes (EFMs) are vectors defined from a metabolic reaction
+network, giving the connections between substrates and products. EFMs-based
+metabolic flux analysis (MFA) estimates the flux over each EFM from external
+flux measurements through least-squares data fitting. In previous work we
+presented an optimization method of column generation type that facilitates
+EFMs-based MFA when the metabolic reaction network is so large that enumerating
+all EFMs is prohibitive. In this work we extend this model by including errors
+on measurements in a robust optimization framework. In the robust optimization
+problem, the least-squares data fitting is minimized subject to the error on
+each metabolite being as unfavourable as it can be, within a given interval. In
+general, inclusion of robustness may make the optimization problem
+significantly harder. However, we show that in our case the robust problem can
+be stated as a convex quadratic programming problem, i.e., of the same form as
+the original non-robust problem. Additionally, we demonstrate that the
+column-generation technique of the non-robust problem can be extended also to
+the robust problem. Furthermore, the option to indicate intervals on
+metabolites that are not measured is introduced in this column generation
+framework. The effect of including robustness in the model is evaluated in a
+case-study, which indicated that the solutions of our non-robust problems are
+in fact near-optimal also when robustness is considered. On the other hand, the
+addition of intervals on unmeasured metabolites resulted in a change of optimal
+solution. Implying that the inclusion of intervals on unmeasured metabolites is
+more important than the direct consideration of measurement errors, this
+despite up to 20% errors.

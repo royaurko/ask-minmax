@@ -1,0 +1,12 @@
+In this paper, we propose a mechanism for packet marking called Probabilistic
+Congestion Notification (PCN). This scheme makes use of the 1-bit Explicit
+Congestion Notification (ECN) field in the Internet Protocol (IP) header. It
+allows the source to estimate the exact level of congestion at each
+intermediate queue. By knowing this, the source could take avoiding action
+either by adapting its sending rate or by using alternate routes. The
+estimation mechanism makes use of time series analysis both to improve the
+quality of the congestion estimation and to predict, ahead of time, the
+congestion level which subsequent packets will encounter.
+  The proposed protocol is tested in ns-2 simulator using a background of real
+Internet traffic traces. Results show that the methods can successfully
+calculate the congestion at any queue along the path with low error levels.

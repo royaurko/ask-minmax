@@ -1,0 +1,17 @@
+The most advanced implementation of adaptive constraint processing with
+Constraint Handling Rules (CHR) allows the application of intelligent search
+strategies to solve Constraint Satisfaction Problems (CSP). This presentation
+compares an improved version of conflict-directed backjumping and two variants
+of dynamic backtracking with respect to chronological backtracking on some of
+the AIM instances which are a benchmark set of random 3-SAT problems. A CHR
+implementation of a Boolean constraint solver combined with these different
+search strategies in Java is thus being compared with a CHR implementation of
+the same Boolean constraint solver combined with chronological backtracking in
+SICStus Prolog. This comparison shows that the addition of ``intelligence'' to
+the search process may reduce the number of search steps dramatically.
+Furthermore, the runtime of their Java implementations is in most cases faster
+than the implementations of chronological backtracking. More specifically,
+conflict-directed backjumping is even faster than the SICStus Prolog
+implementation of chronological backtracking, although our Java implementation
+of CHR lacks the optimisations made in the SICStus Prolog system. To appear in
+Theory and Practice of Logic Programming (TPLP).

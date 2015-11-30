@@ -1,0 +1,18 @@
+For a closed-loop system, which has a contention-based multiple access
+network on its sensor link, the Medium Access Controller (MAC) may discard some
+packets when the traffic on the link is high. We use a local state-based
+scheduler to select a few critical data packets to send to the MAC. In this
+paper, we analyze the impact of such a scheduler on the closed-loop system in
+the presence of traffic, and show that there is a dual effect with state-based
+scheduling. In general, this makes the optimal scheduler and controller hard to
+find. However, by removing past controls from the scheduling criterion, we find
+that certainty equivalence holds. This condition is related to the classical
+result of Bar-Shalom and Tse, and it leads to the design of a scheduler with a
+certainty equivalent controller. This design, however, does not result in an
+equivalent system to the original problem, in the sense of Witsenhausen.
+Computing the estimate is difficult, but can be simplified by introducing a
+symmetry constraint on the scheduler. Based on these findings, we propose a
+dual predictor architecture for the closed-loop system, which ensures
+separation between scheduler, observer and controller. We present an example of
+this architecture, which illustrates a network-aware event-triggering
+mechanism.

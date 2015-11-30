@@ -1,0 +1,15 @@
+Matching problems are ubiquitous. They occur in economic markets, labor
+markets, internet advertising, and elsewhere. In this paper we focus on an
+application of matching for social media. Our goal is to distribute content
+from information suppliers to information consumers. We seek to maximize the
+overall relevance of the matched content from suppliers to consumers while
+regulating the overall activity, e.g., ensuring that no consumer is overwhelmed
+with data and that all suppliers have chances to deliver their content.
+  We propose two matching algorithms, GreedyMR and StackMR, geared for the
+MapReduce paradigm. Both algorithms have provable approximation guarantees, and
+in practice they produce high-quality solutions. While both algorithms scale
+extremely well, we can show that StackMR requires only a poly-logarithmic
+number of MapReduce steps, making it an attractive option for applications with
+very large datasets. We experimentally show the trade-offs between quality and
+efficiency of our solutions on two large datasets coming from real-world
+social-media web sites.

@@ -1,0 +1,24 @@
+Cooperation between the nodes of wireless multihop networks can increase
+communication reliability, reduce energy consumption, and decrease latency. The
+possible improvements are even greater when nodes perform mutual information
+accumulation using rateless codes. In this paper, we investigate routing
+problems in such networks. Given a network, a source, and a destination, our
+objective is to minimize end-to-end transmission delay under energy and
+bandwidth constraints. We provide an algorithm that determines which nodes
+should participate in forwarding the message and what resources (time, energy,
+bandwidth) should be allocated to each.
+  Our approach factors into two sub-problems, each of which can be solved
+efficiently. For any transmission order we show that solving for the optimum
+resource allocation can be formulated as a linear programming problem. We then
+show that the transmission order can be improved systematically by swapping
+nodes based on the solution of the linear program. Solving a sequence of linear
+programs leads to a locally optimal solution in a very efficient manner. In
+comparison to the proposed cooperative routing solution, it is observed that
+conventional shortest path multihop routing typically incurs additional delays
+and energy expenditures on the order of 70%.
+  Our first algorithm is centralized, assuming that routing computations can be
+done at a central processor with full access to channel state information for
+the entire system. We also design two distributed routing algorithms that
+require only local channel state information. We provide simulations showing
+that for the same networks the distributed algorithms find routes that are only
+about two to five percent less efficient than the centralized algorithm.

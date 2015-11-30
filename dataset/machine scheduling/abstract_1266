@@ -1,0 +1,19 @@
+This paper develops and compares two simple asynchronous distributed
+searchlight scheduling algorithms for multiple robotic agents in nonconvex
+polygonal environments. A searchlight is a ray emitted by an agent which cannot
+penetrate the boundary of the environment. A point is detected by a searchlight
+if and only if the point is on the ray at some instant. Targets are points
+which can move continuously with unbounded speed. The objective of the proposed
+algorithms is for the agents to coordinate the slewing (rotation about a point)
+of their searchlights in a distributed manner, i.e., using only local sensing
+and limited communication, such that any target will necessarily be detected in
+finite time. The first algorithm we develop, called the DOWSS (Distributed One
+Way Sweep Strategy), is a distributed version of a known algorithm described
+originally in 1990 by Sugihara et al \cite{KS-IS-MY:90}, but it can be very
+slow in clearing the entire environment because only one searchlight may slew
+at a time. In an effort to reduce the time to clear the environment, we develop
+a second algorithm, called the PTSS (Parallel Tree Sweep Strategy), in which
+searchlights sweep in parallel if guards are placed according to an environment
+partition belonging to a class we call PTSS partitions. Finally, we discuss how
+DOWSS and PTSS could be combined with with deployment, or extended to
+environments with holes.

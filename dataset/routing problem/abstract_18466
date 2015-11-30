@@ -1,0 +1,18 @@
+The paper studies the problem of securely storing biometric passwords, such
+as fingerprints and irises. With the help of coding theory Juels and Wattenberg
+derived in 1999 a scheme where similar input strings will be accepted as the
+same biometric. In the same time nothing could be learned from the stored data.
+They called their scheme a "fuzzy commitment scheme". In this paper we will
+revisit the solution of Juels and Wattenberg and we will provide answers to two
+important questions: What type of error-correcting codes should be used and
+what happens if biometric templates are not uniformly distributed, i.e. the
+biometric data come with redundancy. Answering the first question will lead us
+to the search for low-rate large-minimum distance error-correcting codes which
+come with efficient decoding algorithms up to the designed distance. In order
+to answer the second question we relate the rate required with a quantity
+connected to the "entropy" of the string, trying to estimate a sort of
+"capacity", if we want to see a flavor of the converse of Shannon's noisy
+coding theorem. Finally we deal with side-problems arising in a practical
+implementation and we propose a possible solution to the main one that seems to
+have so far prevented real life applications of the fuzzy scheme, as far as we
+know.

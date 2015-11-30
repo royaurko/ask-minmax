@@ -1,0 +1,16 @@
+Sufficient dimension reduction (SDR) in regression, which reduces the
+dimension by replacing original predictors with a minimal set of their linear
+combinations without loss of information, is very helpful when the number of
+predictors is large. The standard SDR methods suffer because the estimated
+linear combinations usually consist of all original predictors, making it
+difficult to interpret. In this paper, we propose a unified method -
+coordinate-independent sparse estimation (CISE) - that can simultaneously
+achieve sparse sufficient dimension reduction and screen out irrelevant and
+redundant variables efficiently. CISE is subspace oriented in the sense that it
+incorporates a coordinate-independent penalty term with a broad series of
+model-based and model-free SDR approaches. This results in a Grassmann manifold
+optimization problem and a fast algorithm is suggested. Under mild conditions,
+based on manifold theories and techniques, it can be shown that CISE would
+perform asymptotically as well as if the true irrelevant predictors were known,
+which is referred to as the oracle property. Simulation studies and a real-data
+example demonstrate the effectiveness and efficiency of the proposed approach.

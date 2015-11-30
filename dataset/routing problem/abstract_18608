@@ -1,0 +1,24 @@
+This paper studies the capacity of the multi-antenna or multiple-input
+multiple-output (MIMO) secrecy channels with multiple eavesdroppers having
+single/multiple antennas. It is known that the MIMO secrecy capacity is
+achievable with the optimal transmit covariance matrix that maximizes the
+minimum difference between the channel mutual information of the secrecy user
+and those of the eavesdroppers. The MIMO secrecy capacity computation can thus
+be formulated as a non-convex max-min problem, which cannot be solved
+efficiently by standard convex optimization techniques. To handle this
+difficulty, we explore a relationship between the MIMO secrecy channel and the
+recently developed MIMO cognitive radio (CR) channel, in which the
+multi-antenna secondary user transmits over the same spectrum simultaneously
+with multiple primary users, subject to the received interference power
+constraints at the primary users, or the so-called ``interference temperature
+(IT)'' constraints. By constructing an auxiliary CR MIMO channel that has the
+same channel responses as the MIMO secrecy channel, we prove that the optimal
+transmit covariance matrix to achieve the secrecy capacity is the same as that
+to achieve the CR spectrum sharing capacity with properly selected IT
+constraints. Based on this relationship, several algorithms are proposed to
+solve the non-convex secrecy capacity computation problem by transforming it
+into a sequence of CR spectrum sharing capacity computation problems that are
+convex. For the case with single-antenna eavesdroppers, the proposed algorithms
+obtain the exact capacity of the MIMO secrecy channel, while for the case with
+multi-antenna eavesdroppers, the proposed algorithms obtain both upper and
+lower bounds on the MIMO secrecy capacity.

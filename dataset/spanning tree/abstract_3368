@@ -1,0 +1,10 @@
+A novel code for the approximate computation of long-range forces between N
+mutually interacting bodies is presented. The code is based on a hierarchical
+tree of cubic cells and features mutual cell-cell interactions which are
+calculated via a Cartesian Taylor expansion in a symmetric way, such that total
+momentum is conserved. The code benefits from an improved and simple multipole
+acceptance criterion that reduces the force error and the computational effort.
+For N>10^4, the computational costs are found empirically to rise sub-linear
+with N. For applications in stellar dynamics, this is the first competitive
+code with complexity O(N), it is faster than the standard tree code by a factor
+ten or more.

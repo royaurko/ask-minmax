@@ -1,0 +1,17 @@
+With the randomization approach, sensitive data items of records are
+randomized to protect privacy of individuals while allowing the distribution
+information to be reconstructed for data analysis. In this paper, we
+distinguish between reconstruction that has potential privacy risk, called
+micro reconstruction, and reconstruction that does not, called aggregate
+reconstruction. We show that the former could disclose sensitive information
+about a target individual, whereas the latter is more useful for data analysis
+than for privacy breaches. To limit the privacy risk of micro reconstruction,
+we propose a privacy definition, called (epsilon,delta)-reconstruction-privacy.
+Intuitively, this privacy notion requires that micro reconstruction has a large
+error with a large probability. The promise of this approach is that micro
+reconstruction is more sensitive to the number of independent trials in the
+randomization process than aggregate reconstruction is; therefore, reducing the
+number of independent trials helps achieve
+(epsilon,delta)-reconstruction-privacy while preserving the accuracy of
+aggregate reconstruction. We present an algorithm based on this idea and
+evaluate the effectiveness of this approach using real life data sets.

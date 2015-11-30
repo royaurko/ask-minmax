@@ -1,0 +1,17 @@
+In recent years, a growing need has arisen in different fields for the
+development of computational systems for automated analysis of large amounts of
+data (high-throughput). Dealing with nonstandard noise structure and outliers,
+that could have been detected and corrected in manual analysis, must now be
+built into the system with the aid of robust methods. We discuss such problems
+and present insights and solutions in the context of behavior genetics, where
+data consists of a time series of locations of a mouse in a circular arena. In
+order to estimate the location, velocity and acceleration of the mouse, and
+identify stops, we use a nonstandard mix of robust and resistant methods:
+LOWESS and repeated running median. In addition, we argue that protection
+against small deviations from experimental protocols can be handled
+automatically using statistical methods. In our case, it is of biological
+interest to measure a rodent's distance from the arena's wall, but this measure
+is corrupted if the arena is not a perfect circle, as required in the protocol.
+The problem is addressed by estimating robustly the actual boundary of the
+arena and its center using a nonparametric regression quantile of the
+behavioral data, with the aid of a fast algorithm developed for that purpose.

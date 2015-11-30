@@ -1,0 +1,20 @@
+We study approximation algorithms for several variants of the MaxCover
+problem, with the focus on algorithms that run in FPT time. In the MaxCover
+problem we are given a set N of elements, a family S of subsets of N, and an
+integer K. The goal is to find up to K sets from S that jointly cover (i.e.,
+include) as many elements as possible. This problem is well-known to be NP-hard
+and, under standard complexity-theoretic assumptions, the best possible
+polynomial-time approximation algorithm has approximation ratio (1 - 1/e). We
+first consider a variant of MaxCover with bounded element frequencies, i.e., a
+variant where there is a constant p such that each element belongs to at most p
+sets in S. For this case we show that there is an FPT approximation scheme
+(i.e., for each B there is a B-approximation algorithm running in FPT time) for
+the problem of maximizing the number of covered elements, and a randomized FPT
+approximation scheme for the problem of minimizing the number of elements left
+uncovered (we take K to be the parameter). Then, for the case where there is a
+constant p such that each element belongs to at least p sets from S, we show
+that the standard greedy approximation algorithm achieves approximation ratio
+exactly (1-e^{-max(pK/|S|, 1)}). We conclude by considering an unrestricted
+variant of MaxCover, and show approximation algorithms that run in exponential
+time and combine an exact algorithm with a greedy approximation. Some of our
+results improve currently known results for MaxVertexCover.

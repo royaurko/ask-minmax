@@ -1,0 +1,25 @@
+Security policies are naturally dynamic. Reflecting this, there has been a
+growing interest in studying information-flow properties which change during
+program execution, including concepts such as declassification, revocation, and
+role-change.
+  A static verification of a dynamic information flow policy, from a semantic
+perspective, should only need to concern itself with two things: 1) the
+dependencies between data in a program, and 2) whether those dependencies are
+consistent with the intended flow policies as they change over time. In this
+paper we provide a formal ground for this intuition. We present a
+straightforward extension to the principal flow-sensitive type system
+introduced by Hunt and Sands (POPL '06, ESOP '11) to infer both end-to-end
+dependencies and dependencies at intermediate points in a program. This allows
+typings to be applied to verification of both static and dynamic policies. Our
+extension preserves the principal type system's distinguishing feature, that
+type inference is independent of the policy to be enforced: a single, generic
+dependency analysis (typing) can be used to verify many different dynamic
+policies of a given program, thus achieving a clean separation between (1) and
+(2).
+  We also make contributions to the foundations of dynamic information flow.
+Arguably, the most compelling semantic definitions for dynamic security
+conditions in the literature are phrased in the so-called knowledge-based
+style. We contribute a new definition of knowledge-based termination
+insensitive security for dynamic policies. We show that the new definition
+avoids anomalies of previous definitions and enjoys a simple and useful
+characterisation as a two-run style property.

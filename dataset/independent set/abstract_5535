@@ -1,0 +1,23 @@
+Skyline queries have been widely used as a practical tool for multi-criteria
+decision analysis and for applications involving preference queries. For
+example, in a typical online retail application, skyline queries can help
+customers select the most interesting, among a pool of available, products.
+Recently, reverse skyline queries have been proposed, highlighting the
+manufacturer's perspective, i.e. how to determine the expected buyers of a
+given product. In this work we develop novel algorithms for two important
+classes of queries involving customer preferences. We first propose a novel
+algorithm, termed as RSA, for answering reverse skyline queries. We then
+introduce a new type of queries, namely the k-Most Attractive Candidates k-MAC
+query. In this type of queries, given a set of existing product specifications
+P, a set of customer preferences C and a set of new candidate products Q, the
+k-MAC query returns the set of k candidate products from Q that jointly
+maximizes the total number of expected buyers, measured as the cardinality of
+the union of individual reverse skyline sets (i.e., influence sets). Applying
+existing approaches to solve this problem would require calculating the reverse
+skyline set for each candidate, which is prohibitively expensive for large data
+sets. We, thus, propose a batched algorithm for this problem and compare its
+performance against a branch-and-bound variant that we devise. Both of these
+algorithms use in their core variants of our RSA algorithm. Our experimental
+study using both synthetic and real data sets demonstrates that our proposed
+algorithms outperform existing, or naive solutions to our studied classes of
+queries.

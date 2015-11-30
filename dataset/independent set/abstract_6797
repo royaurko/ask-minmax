@@ -1,0 +1,21 @@
+The OverRelational Manifesto (below ORM) proposes a possible approach to
+creation of data storage systems of the next generation. ORM starts from the
+requirement that information in a relational database is represented by a set
+of relation values. Accordingly, it is assumed that the information about any
+entity of an enterprise must also be represented as a set of relation values
+(the ORM main requirement). A system of types is introduced, which allows one
+to fulfill the main requirement. The data are represented in the form of
+complex objects, and the state of any object is described as a set of relation
+values. Emphasize that the types describing the objects are encapsulated,
+inherited, and polymorphic. Then, it is shown that the data represented as a
+set of such objects may also be represented as a set of relational values
+defined on the set of scalar domains (dual data representation). In the general
+case, any class is associated with a set of relation variables (R-variables)
+each one containing some data about all objects of this class existing in the
+system. One of the key points is the fact that the usage of complex (from the
+user's viewpoint) refined names of R-variables and their attributes makes it
+possible to preserve the semantics of complex data structures represented in
+the form of a set of relation values. The most important part of the data
+storage system created on the approach proposed is an object-oriented
+translator operating over a relational DBMS. The expressiveness of such a
+system is comparable with that of OO programming languages.

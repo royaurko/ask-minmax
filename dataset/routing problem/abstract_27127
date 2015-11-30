@@ -1,0 +1,14 @@
+For the minimum cardinality vertex cover and maximum cardinality matching
+problems, the max-product form of belief propagation (BP) is known to perform
+poorly on general graphs. In this paper, we present an iterative loopy
+annealing BP (LABP) algorithm which is shown to converge and to solve a Linear
+Programming relaxation of the vertex cover or matching problem on general
+graphs. LABP finds (asymptotically) a minimum half-integral vertex cover (hence
+provides a 2-approximation) and a maximum fractional matching on any graph. We
+also show that LABP finds (asymptotically) a minimum size vertex cover for any
+bipartite graph and as a consequence compute the matching number of the graph.
+Our proof relies on some subtle monotonicity arguments for the local iteration.
+We also show that the Bethe free entropy is concave and that LABP maximizes it.
+Using loop calculus, we also give an exact (also intractable for general
+graphs) expression of the partition function for matching in term of the LABP
+messages which can be used to improve mean-field approximations.

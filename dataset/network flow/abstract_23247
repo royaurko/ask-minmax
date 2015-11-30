@@ -1,0 +1,24 @@
+We study a nonlinear, unsteady, moving boundary, fluid-structure (FSI)
+problem in which the structure is composed of two layers: a thin layer which is
+in contact with the fluid, and a thick layer which sits on top of the thin
+structural layer. The fluid flow, which is driven by the time-dependent dynamic
+pressure data, is governed by the 2D Navier-Stokes equations for an
+incompressible, viscous fluid, defined on a 2D cylinder. The elastodynamics of
+the cylinder wall is governed by the 1D linear wave equation modeling the thin
+structural layer, and by the 2D equations of linear elasticity modeling the
+thick structural layer. The fluid and the structure, as well as the two
+structural layers, are fully coupled via the kinematic and dynamic coupling
+conditions describing continuity of velocity and balance of contact forces. The
+thin structural layer acts as a fluid-structure interface with mass. The
+resulting FSI problem is a nonlinear moving boundary problem of
+parabolic-hyperbolic type. This problem is motivated by the flow of blood in
+elastic arteries whose walls are composed of several layers, each with
+different mechanical characteristics and thickness. We prove existence of a
+weak solution to this nonlinear FSI problem as long as the cylinder radius is
+greater than zero. The proof is based on a novel semi-discrete, operator
+splitting numerical scheme, known as the kinematically coupled scheme. We
+effectively prove convergence of that numerical scheme to a solution of the
+nonlinear fluid-multi-layered-structure interaction problem. The spaces of weak
+solutions presented in this manuscript reveal a striking new feature: the
+presence of a thin fluid-structure interface with mass regularizes solutions of
+the coupled problem.

@@ -1,0 +1,16 @@
+Kaltofen has proposed a new approach in 1992 for computing matrix
+determinants without divisions. The algorithm is based on a baby steps/giant
+steps construction of Krylov subspaces, and computes the determinant as the
+constant term of a characteristic polynomial. For matrices over an abstract
+ring, by the results of Baur and Strassen, the determinant algorithm, actually
+a straight-line program, leads to an algorithm with the same complexity for
+computing the adjoint of a matrix. However, the latter adjoint algorithm is
+obtained by the reverse mode of automatic differentiation, hence somehow is not
+"explicit". We present an alternative (still closely related) algorithm for the
+adjoint thatcan be implemented directly, we mean without resorting to an
+automatic transformation. The algorithm is deduced by applying program
+differentiation techniques "by hand" to Kaltofen's method, and is completely
+decribed. As subproblem, we study the differentiation of programs that compute
+minimum polynomials of lineraly generated sequences, and we use a lazy
+polynomial evaluation mechanism for reducing the cost of Strassen's avoidance
+of divisions in our case.

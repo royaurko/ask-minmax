@@ -1,0 +1,12 @@
+We consider a variant of two-point Euclidean shortest path query problem:
+given a polygonal domain, build a data structure for two-point shortest path
+query, provided that query points always lie on the boundary of the domain. As
+a main result, we show that a logarithmic-time query for shortest paths between
+boundary points can be performed using O~ (n^5) preprocessing time and O(n^5)
+space where n is the number of corners of the polygonal domain and the O~
+notation suppresses the polylogarithmic factor. This is realized by observing a
+connection between Davenport-Schinzel sequences and our problem in the
+parameterized space. We also provide a tradeoff between space and query time; a
+sublinear time query is possible using O(n^{3+epsilon}) space. Our approach
+also extends to the case where query points should lie on a given set of line
+segments.

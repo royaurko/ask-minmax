@@ -1,0 +1,17 @@
+One of the most significant threats faced by enterprise networks today is
+from Bots. A Bot is a program that operates as an agent for a user and runs
+automated tasks over the internet, at a much higher rate than would be possible
+for a human alone. A collection of Bots in a network, used for malicious
+purposes is referred to as a Botnet. Bot attacks can range from localized
+attacks like key-logging to network intensive attacks like Distributed Denial
+of Service (DDoS). In this paper, we suggest a novel approach that can detect
+and combat Bots. The proposed solution adopts a two pronged strategy which we
+have classified into the standalone algorithm and the network algorithm. The
+standalone algorithm runs independently on each node of the network. It
+monitors the active processes on the node and tries to identify Bot processes
+using parameters such as response time and output to input traffic ratio. If a
+suspicious process has been identified the network algorithm is triggered. The
+network algorithm will then analyze conversations to and from the hosts of the
+network using the transport layer flow records. It then tries to deduce the Bot
+pattern as well as Bot signatures which can subsequently be used by the
+standalone algorithm to thwart Bot processes at their very onset.

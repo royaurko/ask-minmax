@@ -1,0 +1,19 @@
+The aim of hybrid methods in simulations is to communicate regions with
+disparate time and length scales. Here, a fluid described at the atomistic
+level within an inner region P is coupled to an outer region C described by
+continuum fluid dynamics. The matching of both descriptions of matter is made
+across an overlapping region and, in general, consists of a two-way coupling
+scheme (C->P and P->C) which conveys mass, momentum and energy fluxes. The
+contribution of the hybrid scheme hereby presented is two-fold: first it treats
+unsteady flows and, more importantly, it handles energy exchange between both C
+and P regions. The implementation of the C->P coupling is tested here using
+steady and unsteady flows with different rates of mass, momentum and energy
+exchange. In particular, relaxing flows described by linear hydrodynamics
+(transversal and longitudinal waves) are most enlightening as they comprise the
+whole set of hydrodynamic modes. Applying the hybrid coupling scheme after the
+onset of an initial perturbation, the cell-averaged Fourier components of the
+flow variables in the P region (velocity, density, internal energy, temperature
+and pressure) evolve in excellent agreement with the hydrodynamic trends. It is
+also shown that the scheme preserves the correct rate of entropy production. We
+discuss some general requirements on the coarse-grained length and time scales
+arising from both the characteristic microscopic and hydrodynamic scales.

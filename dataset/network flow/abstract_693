@@ -1,0 +1,22 @@
+In any communication network, the maximum number of link-disjoint paths
+between any pair of communicating nodes, S and T, is limited by the S-T minimum
+link-cut. Multipath routing protocols have been proposed in the literature to
+make use of these S-T paths in enhancing the survivability of the S-T
+information flow. This is usually accomplished by using a subset of these paths
+to forward redundant data units or combinations (if network coding is allowed)
+from S to T. Therefore, this enhancement in survivability reduces the useful
+S-T information rate. In this paper we present a new way to enhance the
+survivability of the S-T information flow without compromising the maximum
+achievable S-T information rate. To do this, bottleneck links (in the min-cut)
+should only forward useful information, and not redundant data units. We
+introduce the idea of extra source or destination connectivity with respect to
+a certain S-T max-flow, and then we study two problems: namely, pre-cut
+protection and post-cut protection. Although our objective in both problems is
+the same, where we aim to maximize the number of protected paths, our analysis
+shows that the nature of these two problems are very different, and that the
+pre-cut protection problem is much harder. Specifically, we prove the hardness
+of the pre-cut protection problem, formulate it as an integer linear program,
+and propose a heuristic approach to solve it. Simulations show that the
+performance of the heuristic is acceptable even on relatively large networks.
+In the post-cut problem we show that all the data units, forwarded by the
+min-cut edges not incident to T, can be post-cut-protected.

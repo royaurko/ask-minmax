@@ -1,0 +1,27 @@
+We introduce a discrete network corresponding to any Gaussian wireless
+network that is obtained by simply quantizing the received signals and
+restricting the transmitted signals to a finite precision. Since signals in the
+discrete network are obtained from those of a Gaussian network, the Gaussian
+network can be operated on the quantization-based digital interface defined by
+the discrete network. We prove that this digital interface is near-optimal for
+Gaussian relay networks and the capacities of the Gaussian and the discrete
+networks are within a bounded gap of O(M^2) bits, where M is the number of
+nodes.
+  We prove that any near-optimal coding strategy for the discrete network can
+be naturally transformed into a near-optimal coding strategy for the Gaussian
+network merely by quantization. We exploit this by designing a linear coding
+strategy for the case of layered discrete relay networks. The linear coding
+strategy is near-optimal for Gaussian and discrete networks and achieves rates
+within O(M^2) bits of the capacity, independent of channel gains or SNR. The
+linear code is robust and the relays need not know the channel gains. The
+transmit and receive signals at all relays are simply quantized to binary
+tuples of the same length $n$ . The linear network code requires all the relay
+nodes to collect the received binary tuples into a long binary vector and apply
+a linear transformation on the long vector. The resulting binary vector is
+split into smaller binary tuples for transmission by the relays. The
+quantization requirements of the linear network code are completely defined by
+the parameter $n$, which also determines the resolution of the
+analog-to-digital and digital-to-analog convertors for operating the network
+within a bounded gap of the network's capacity. The linear network code
+explicitly connects network coding for wireline networks with codes for
+Gaussian networks.

@@ -1,0 +1,16 @@
+The problem of electing a leader from among $n$ contenders is one of the
+fundamental questions in distributed computing. In its simplest formulation,
+the task is as follows: given $n$ processors, all participants must eventually
+return a win or lose indication, such that a single contender may win. Despite
+a considerable amount of work on leader election, the following question is
+still open: can we elect a leader in an asynchronous fault-prone system faster
+than just running a $\Theta(\log n)$-time tournament, against a strong adaptive
+adversary?
+  In this paper, we answer this question in the affirmative, improving on a
+decades-old upper bound. We introduce two new algorithmic ideas to reduce the
+time complexity of electing a leader to $O(\log^* n)$, using $O(n^2)$
+point-to-point messages. A non-trivial application of our algorithm is a new
+upper bound for the tight renaming problem, assigning $n$ items to the $n$
+participants in expected $O(\log^2 n)$ time and $O(n^2)$ messages. We
+complement our results with lower bound of $\Omega(n^2)$ messages for solving
+these two problems, closing the question of their message complexity.

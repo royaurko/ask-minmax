@@ -1,0 +1,21 @@
+We consider the file maintenance problem (also called the online labeling
+problem) in which n integer items from the set {1,...,r} are to be stored in an
+array of size m >= n. The items are presented sequentially in an arbitrary
+order, and must be stored in the array in sorted order (but not necessarily in
+consecutive locations in the array). Each new item must be stored in the array
+before the next item is received. If r<=m then we can simply store item j in
+location j but if r>m then we may have to shift the location of stored items to
+make space for a newly arrived item. The algorithm is charged each time an item
+is stored in the array, or moved to a new location. The goal is to minimize the
+total number of such moves done by the algorithm. This problem is non-trivial
+when n=<m<r.
+  In the case that m=Cn for some C>1, algorithms for this problem with cost
+O(log(n)^2) per item have been given [IKR81, Wil92, BCD+02]. When m=n,
+algorithms with cost O(log(n)^3) per item were given [Zha93, BS07]. In this
+paper we prove lower bounds that show that these algorithms are optimal, up to
+constant factors. Previously, the only lower bound known for this range of
+parameters was a lower bound of \Omega(log(n)^2) for the restricted class of
+smooth algorithms [DSZ05a, Zha93].
+  We also provide an algorithm for the sparse case: If the number of items is
+polylogarithmic in the array size then the problem can be solved in amortized
+constant time per item.

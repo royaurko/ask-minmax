@@ -1,0 +1,24 @@
+Network service providers and customers are often concerned with aggregate
+performance measures that span multiple network paths. Unfortunately, forming
+such network-wide measures can be difficult, due to the issues of scale
+involved. In particular, the number of paths grows too rapidly with the number
+of endpoints to make exhaustive measurement practical. As a result, there is
+interest in the feasibility of methods that dramatically reduce the number of
+paths measured in such situations while maintaining acceptable accuracy.
+  In previous work we proposed a statistical framework to efficiently address
+this problem, in the context of additive metrics such as delay and loss rate,
+for which the per-path metric is a sum of (possibly transformed) per-link
+measures. The key to our method lies in the observation and exploitation of
+significant redundancy in network paths (sharing of common links).
+  In this paper we make three contributions: (1) we generalize the framework to
+make it more immediately applicable to network measurements encountered in
+practice; (2) we demonstrate that the observed path redundancy upon which our
+method is based is robust to variation in key network conditions and
+characteristics, including link failures; and (3) we show how the framework may
+be applied to address three practical problems of interest to network providers
+and customers, using data from an operating network. In particular, we show how
+appropriate selection of small sets of path measurements can be used to
+accurately estimate network-wide averages of path delays, to reliably detect
+network anomalies, and to effectively make a choice between alternative
+sub-networks, as a customer choosing between two providers or two ingress
+points into a provider network.

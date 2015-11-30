@@ -1,0 +1,15 @@
+We introduce the contributor-topic model, a generative model for documents that
+extends Latent Dirichlet Allocation (LDA; Blei, Ng, & Jordan, 2003) to include
+contributorship information. Each contributor is associated with a multinomial
+distribution over topics and each topic is associated with a multinomial
+distribution over words. A document with multiple contributors is modeled as a
+distribution over topics that is a mixture of the distributions associated with
+the contributors. We apply the model to a collection of 1,700 NIPS conference papers
+and 160,000 CiteSeer abstracts. Exact inference is intractable for these
+datasets and we use Gibbs sampling to estimate the topic and contributor
+distributions. We compare the performance with two other generative models for
+documents, which are special cases of the contributor-topic model: LDA (a topic
+model) and a simple contributor model in which each contributor is associated with a
+distribution over words rather than a distribution over topics. We show topics
+recovered by the contributor-topic model, and demonstrate applications to computing
+similarity between contributors and entropy of contributor output.

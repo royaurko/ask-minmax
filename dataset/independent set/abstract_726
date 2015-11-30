@@ -1,0 +1,21 @@
+We consider a parsimonious model for fitting observation data $X = X_0 + W$
+with two-way dependencies; that is, we use the signal matrix $X_0$ to explain
+column-wise dependency in $X$, and the measurement error matrix $W$ to explain
+its row-wise dependency. In the matrix normal setting, we have the following
+representation where $X$ follows the matrix variate normal distribution with
+the Kronecker Sum covariance structure: ${\rm vec}\{X\} \sim \mathcal{N}(0,
+\Sigma)$ where $\Sigma = A \oplus B$, which is generalized to the subgaussian
+settings as follows. Suppose that we observe $y \in {\bf R}^f$ and $X \in {\bf
+R}^{f \times m}$ in the following model: \begin{eqnarray*} y & = & X_0 \beta^*
++ \epsilon \\ X & = & X_0 + W \end{eqnarray*} where $X_0$ is a $f \times m$
+design matrix with independent subgaussian row vectors, $\epsilon \in {\bf
+R}^m$ is a noise vector and $W$ is a mean zero $f \times m$ random noise matrix
+with independent subgaussian column vectors, independent of $X_0$ and
+$\epsilon$. This model is significantly different from those analyzed in the
+literature. Under sparsity and restrictive eigenvalue type of conditions, we
+show that one is able to recover a sparse vector $\beta^* \in {\bf R}^m$ from
+the following model given a single observation matrix $X$ and the response
+vector $y$. We establish consistency in estimating $\beta^*$ and obtain the
+rates of convergence in the $\ell_q$ norm, where $q = 1, 2$ for the Lasso-type
+estimator, and for $q \in [1, 2]$ for a Dantzig-type conic programming
+estimator.

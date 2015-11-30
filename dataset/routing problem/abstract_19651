@@ -1,0 +1,21 @@
+A system is data-independent with respect to a data type X iff the operations
+it can perform on values of type X are restricted to just equality testing. The
+system may also store, input and output values of type X. We study model
+checking of systems which are data-independent with respect to two distinct
+type variables X and Y, and may in addition use arrays with indices from X and
+values from Y . Our main interest is the following parameterised model-checking
+problem: whether a given program satisfies a given temporal-logic formula for
+all non-empty nite instances of X and Y . Initially, we consider instead the
+abstraction where X and Y are infinite and where partial functions with finite
+domains are used to model arrays. Using a translation to data-independent
+systems without arrays, we show that the u-calculus model-checking problem is
+decidable for these systems. From this result, we can deduce properties of all
+systems with finite instances of X and Y . We show that there is a procedure
+for the above parameterised model-checking problem of the universal fragment of
+the u-calculus, such that it always terminates but may give false negatives. We
+also deduce that the parameterised model-checking problem of the universal
+disjunction-free fragment of the u-calculus is decidable. Practical motivations
+for model checking data-independent systems with arrays include verification of
+memory and cache systems, where X is the type of memory addresses, and Y the
+type of storable values. As an example we verify a fault-tolerant memory
+interface over a set of unreliable memories.

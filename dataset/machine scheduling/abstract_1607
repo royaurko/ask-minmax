@@ -1,0 +1,21 @@
+We demonstrate the use of machine learning algorithms in combination with
+segmentation techniques in order to distinguish coronal holes and filaments in
+SDO/AIA EUV images of the Sun. Based on two coronal hole detection techniques
+(intensity-based thresholding, SPoCA), we prepared data sets of manually
+labeled coronal hole and filament channel regions present on the Sun during the
+time range 2011 - 2013. By mapping the extracted regions from EUV observations
+onto HMI line-of-sight magnetograms we also include their magnetic
+characteristics. We computed shape measures from the segmented binary maps as
+well as first order and second order texture statistics from the segmented
+regions in the EUV images and magnetograms. These attributes were used for data
+mining investigations to identify the most performant rule to differentiate
+between coronal holes and filament channels. We applied several classifiers,
+namely Support Vector Machine, Linear Support Vector Machine, Decision Tree,
+and Random Forest and found that all classification rules achieve good results
+in general, with linear SVM providing the best performances (with a true skill
+statistic of ~0.90). Additional information from magnetic field data
+systematically improves the performance across all four classifiers for the
+SPoCA detection. Since the calculation is inexpensive in computing time, this
+approach is well suited for applications on real-time data. This study
+demonstrates how a machine learning approach may help improve upon an
+unsupervised feature extraction method.

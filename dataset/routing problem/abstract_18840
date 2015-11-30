@@ -1,0 +1,20 @@
+The partial Schur factorization can be used to represent several eigenpairs
+of a matrix in a numerically robust way. Different adaptions of the Arnoldi
+method are often used to compute partial Schur factorizations. We propose here
+a technique to compute a partial Schur factorization of a nonlinear eigenvalue
+problem (NEP). The technique is inspired by the algorithm in [8], now called
+the infinite Arnoldi method. The infinite Arnoldi method is a method designed
+for NEPs, and can be interpreted as Arnoldi's method applied to a linear
+infinite-dimensional operator, whose reciprocal eigenvalues are the solutions
+to the NEP. As a first result we show that the invariant pairs of the operator
+are equivalent to invariant pairs of the NEP. We characterize the structure of
+the invariant pairs of the operator and show how one can carry out a
+modification of the infinite Arnoldi method by respecting the structure. This
+also allows us to naturally add the feature known as locking. We nest this
+algorithm with an outer iteration, where the infinite Arnoldi method for a
+particular type of structured functions is appropriately restarted. The
+restarting exploits the structure and is inspired by the well-known implicitly
+restarted Arnoldi method for standard eigenvalue problems. The final algorithm
+is applied to examples from a benchmark collection, showing that both
+processing time and memory consumption can be considerably reduced with the
+restarting technique.

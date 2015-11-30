@@ -1,0 +1,17 @@
+Suppose in a graph $G$ vertices can be either red or blue. Let $k$ be odd. At
+each time step, each vertex $v$ in $G$ polls $k$ random neighbours and takes
+the majority colour. If it doesn't have $k$ neighbours, it simply polls all of
+them, or all less one if the degree of $v$ is even. We study this protocol on
+the preferential attachment model of Albert and Barab\'asi, which gives rise to
+a degree distribution that has roughly power-law $P(x) \sim \frac{1}{x^{3}}$,
+as well as generalisations which give exponents larger than $3$. The setting is
+as follows: Initially each vertex of $G$ is red independently with probability
+$\alpha < \frac{1}{2}$, and is otherwise blue. We show that if $\alpha$ is
+sufficiently biased away from $\frac{1}{2}$, then with high probability,
+consensus is reached on the initial global majority within $O(\log_d \log_d t)$
+steps. Here $t$ is the number of vertices and $d \geq 5$ is the minimum of $k$
+and $m$ (or $m-1$ if $m$ is even), $m$ being the number of edges each new
+vertex adds in the preferential attachment generative process. Additionally,
+our analysis reduces the required bias of $\alpha$ for graphs of a given degree
+sequence studied by the first contributor (which includes, e.g., random regular
+graphs).

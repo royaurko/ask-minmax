@@ -1,0 +1,18 @@
+In this paper we present a novel iterative procedure for multichannel image
+and data reconstruction using Bregman distances. With the motivation that
+multiple channels sharing a common subgradient with respect to a suitable
+regularization implies desirable properties such as a common edge set (and a
+common direction of the normals to the level lines) in the case of the total
+variation (TV), we propose to determine each iterate by regularizing each
+channel with a weighted linear combination of Bregman distances to all other
+image channels from the previous iteration. In this sense we generalize the
+Bregman iteration proposed by Osher et al. to multichannel images. We prove the
+convergence of the proposed scheme, analyze stationary points and present
+numerical experiments on color image denoising, which show the superior
+behavior of our approach in comparison to TV, TV with Bregman iterations on
+each channel separately, and vectorial TV. Additionally, we propose to use the
+infimal convolution of Bregman distances to different channels from the
+previous iteration to obtain the independence of the sign and hence the
+independence of the direction of the edge. While this work focuses on TV
+regularization, the proposed scheme can potentially improve any variational
+multichannel reconstruction method with a 1-homogeneous regularization.

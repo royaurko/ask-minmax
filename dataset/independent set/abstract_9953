@@ -1,0 +1,13 @@
+Screening is the problem of finding a superset of the set of non-zero entries
+in an unknown p-dimensional vector \beta* given n noisy observations.
+Naturally, we want this superset to be as small as possible. We propose a novel
+framework for screening, which we refer to as Multiple Grouping (MuG), that
+groups variables, performs variable selection over the groups, and repeats this
+process multiple number of times to estimate a sequence of sets that contains
+the non-zero entries in \beta*. Screening is done by taking an intersection of
+all these estimated sets. The MuG framework can be used in conjunction with any
+group based variable selection algorithm. In the high-dimensional setting,
+where p >> n, we show that when MuG is used with the group Lasso estimator,
+screening can be consistently performed without using any tuning parameter. Our
+numerical simulations clearly show the merits of using the MuG framework in
+practice.

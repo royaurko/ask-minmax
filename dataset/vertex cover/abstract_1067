@@ -1,0 +1,12 @@
+The architecture of the ZEUS Micro Vertex Detector data acquisition system
+and the implementation of its second level trigger, the ZEUS Global Track
+Trigger are described. Data from the vertex detectors HELIX read-out chips,
+corresponding to 200k channels, are digitized by 3 crates of ADCs which perform
+noise and pedestal subtraction, and data suppression and compaction. PowerPC
+VME board computers push cluster data for second level trigger processing and
+strip data for event building via Fast and Gigabit Ethernet network
+connections. Additional tracking information from the central tracking chamber
+and the forward straw tube tracker are interfaced into the 12 dual CPU PC farm
+of the Global Track Trigger where track and vertex finding is performed. The
+system is data driven at the ZEUS first level trigger rate (~500Hz) and must
+generate a trigger result after a mean time of 10ms.

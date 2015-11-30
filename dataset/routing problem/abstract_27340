@@ -1,0 +1,14 @@
+Many hard graph problems can be solved efficiently when restricted to graphs
+of bounded treewidth, and more generally to graphs of bounded clique-width. But
+there is a price to be paid for this generality, exemplified by the four
+problems MaxCut, Graph Coloring, Hamiltonian Cycle and Edge Dominating Set that
+are all FPT parameterized by treewidth but none of which can be FPT
+parameterized by clique-width unless FPT = W[1], as shown by Fomin et al [7,
+8]. We therefore seek a structural graph parameter that shares some of the
+generality of clique-width without paying this price. Based on splits, branch
+decompositions and the work of Vatshelle [18] on Maximum Matching-width, we
+consider the graph parameter sm-width which lies between treewidth and
+clique-width. Some graph classes of unbounded treewidth, like
+distance-hereditary graphs, have bounded sm-width. We show that MaxCut, Graph
+Coloring, Hamiltonian Cycle and Edge Dominating Set are all FPT parameterized
+by sm-width.

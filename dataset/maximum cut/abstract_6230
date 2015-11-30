@@ -1,0 +1,23 @@
+We revisit the problem of exact CMB likelihood and power spectrum estimation
+with the goal of minimizing computational cost through linear compression. This
+idea was originally proposed for CMB purposes by Tegmark et al.\ (1997), and
+here we develop it into a fully working computational framework for large-scale
+polarization analysis, adopting \WMAP\ as a worked example. We compare five
+different linear bases (pixel space, harmonic space, noise covariance
+eigenvectors, signal-to-noise covariance eigenvectors and signal-plus-noise
+covariance eigenvectors) in terms of compression efficiency, and find that the
+computationally most efficient basis is the signal-to-noise eigenvector basis,
+which is closely related to the Karhunen-Loeve and Principal Component
+transforms, in agreement with previous suggestions. For this basis, the
+information in 6836 unmasked \WMAP\ sky map pixels can be compressed into a
+smaller set of 3102 modes, with a maximum error increase of any single
+multipole of 3.8\% at $\ell\le32$, and a maximum shift in the mean values of a
+joint distribution of an amplitude--tilt model of 0.006$\sigma$. This
+compression reduces the computational cost of a single likelihood evaluation by
+a factor of 5, from 38 to 7.5 CPU seconds, and it also results in a more robust
+likelihood by implicitly regularizing nearly degenerate modes. Finally, we use
+the same compression framework to formulate a numerically stable and
+computationally efficient variation of the Quadratic Maximum Likelihood
+implementation that requires less than 3 GB of memory and 2 CPU minutes per
+iteration for $\ell \le 32$, rendering low-$\ell$ QML CMB power spectrum
+analysis fully tractable on a standard laptop.

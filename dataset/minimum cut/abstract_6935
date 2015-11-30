@@ -1,0 +1,18 @@
+Active Constellation Extension (ACE) is one of techniques introduced for Peak
+to Average Power Ratio (PAPR) reduction for OFDM systems. In this technique,
+the constellation points are extended such that the PAPR is minimized but the
+minimum distance of the constellation points does not decrease. In this paper,
+an iterative ACE method is extended to spatially encoded OFDM systems. The
+proposed methods are such that the PAPR is reduced simultaneously at all
+antennas, while the spatial encoding relationships still hold. It will be shown
+that the original ACE method can be employed before Space Time Block Coding
+(STBC). But in case of Space Frequency Block Coding (SFBC), two modified
+techniques have been proposed. In the first method, the OFDM frame is separated
+by several subframes and the ACE method is applied to these subframes
+independently to reduce their corresponding PAPRs. Then the low PAPR subframes
+are recombined based on SFBC relationships to yield the transmitted signals
+from different antennas. In the second method, for each iteration, the ACE is
+applied to the antenna with the maximum PAPR, and the signals of the other
+antennas are generated from that of this antenna. Simulation results show that
+both algorithms converge, but the second method outperforms the first one when
+the number of antennas is increased.

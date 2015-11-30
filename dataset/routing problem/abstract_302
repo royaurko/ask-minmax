@@ -1,0 +1,24 @@
+The restless bandit problem is one of the most well-studied generalizations
+of the celebrated stochastic multi-armed bandit problem in decision theory. In
+its ultimate generality, the restless bandit problem is known to be PSPACE-Hard
+to approximate to any non-trivial factor, and little progress has been made
+despite its importance in modeling activity allocation under uncertainty.
+  We consider a special case that we call Feedback MAB, where the reward
+obtained by playing each of n independent arms varies according to an
+underlying on/off Markov process whose exact state is only revealed when the
+arm is played. The goal is to design a policy for playing the arms in order to
+maximize the infinite horizon time average expected reward. This problem is
+also an instance of a Partially Observable Markov Decision Process (POMDP), and
+is widely studied in wireless scheduling and unmanned aerial vehicle (UAV)
+routing. Unlike the stochastic MAB problem, the Feedback MAB problem does not
+admit to greedy index-based optimal policies.
+  We develop a novel and general duality-based algorithmic technique that
+yields a surprisingly simple and intuitive 2+epsilon-approximate greedy policy
+to this problem. We then define a general sub-class of restless bandit problems
+that we term Monotone bandits, for which our policy is a 2-approximation. Our
+technique is robust enough to handle generalizations of these problems to
+incorporate various side-constraints such as blocking plays and switching
+costs. This technique is also of independent interest for other restless bandit
+problems. By presenting the first (and efficient) O(1) approximations for
+non-trivial instances of restless bandits as well as of POMDPs, our work
+initiates the study of approximation algorithms in both these contexts.

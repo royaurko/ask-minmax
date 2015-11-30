@@ -1,0 +1,18 @@
+The potentially significant role of the surface of an elastic body in the
+overall response of the continuum can be described using the mature theory of
+surface elasticity. The objective of this contribution is to detail the finite
+element approximation of the underlying governing equations (both in the volume
+and on its surface) and their solution using the open-source finite element
+library deal.II. The fully-nonlinear (geometric and material) setting is
+considered. The nonlinear problem is solved using a Newton--Raphson procedure
+wherein the tangent contributions from the volume and surface are computed
+exactly. The finite element formulation is implemented within the total
+Lagrangian framework and a Bubnov-Galerkin spatial discretization of the volume
+and the surface employed. The surface is assumed material. A map between the
+degrees of freedom on the surface and on the boundary of the volume is used to
+allocate the contribution from the surface to the global system matrix and
+residual vector. The deal.II library greatly facilitates the computation of the
+various surface operators, allowing the numerical implementation to closely
+match the theory developed in a companion paper. Key features of the theory and
+the numerical implementation are elucidated using a series of benchmark example
+problems. The full, documented source code is provided.

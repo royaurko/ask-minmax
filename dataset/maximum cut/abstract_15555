@@ -1,0 +1,15 @@
+We consider a communication system in which status updates arrive at a source
+node, and should be transmitted through a network to the intended destination
+node. The status updates are samples of a random process under observation,
+transmitted as packets, which also contain the time stamp to identify when the
+sample was generated. The age of the information available to the destination
+node is the time elapsed since the last received update was generated. In this
+paper, we model the source-destination link using queuing theory, and we assume
+that the time it takes to successfully transmit a packet to the destination is
+an exponentially distributed service time. We analyze the age of information in
+the case that the source node has the capability to manage the arriving
+samples, possibly discarding packets in order to avoid wasting network
+resources with the transmission of stale information. In addition to
+characterizing the average age, we propose a new metric, called peak age, which
+provides information about the maximum value of the age, achieved immediately
+before receiving an update.

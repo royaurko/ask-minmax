@@ -1,0 +1,24 @@
+There is a growing interest in adopting object technologies for the
+development of real-time control systems. Several commercial tools, currently
+available, provide object-oriented modeling and design support for real-time
+control systems. While these products provide many useful facilities, such as
+visualization tools and automatic code generation, they are all weak in
+addressing the central characteristic of real-time control systems design,
+i.e., providing support for a designer to reason about timeliness properties.
+We believe an approach that integrates the advancements in both object modeling
+and design methods and real-time scheduling theory is the key to successful use
+of object technology for real-time software. Surprisingly several past
+approaches to integrate the two either restrict the object models, or do not
+allow sophisticated schedulability analysis techniques. This study shows how
+schedulability analysis can be integrated with UML for Real-Time (UML-RT) to
+deal with timing properties in real time control systems. More specifically, we
+develop the schedulability and feasibility analysis modeling for the external
+messages that may suffer release jitter due to being dispatched by a tick
+driven scheduler in real-time control system and we also develop the
+scheduliablity modeling for sporadic activities, where messages arrive
+sporadically then execute periodically for some bounded time. This method can
+be used to cope with timing constraints in realistic and complex real-time
+control systems. Using this method, a designer can quickly evaluate the impact
+of various implementation decisions on schedulability. In conjunction with
+automatic code-generation, we believe that this will greatly streamline the
+design and development of real-time control systems software.

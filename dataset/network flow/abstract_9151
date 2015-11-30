@@ -1,0 +1,20 @@
+We propose a multi-hop diffusion strategy for a sensor network to perform
+distributed least mean-squares (LMS) estimation under local and network-wide
+energy constraints. At each iteration of the strategy, each node can combine
+intermediate parameter estimates from nodes other than its physical neighbors
+via a multi-hop relay path. We propose a rule to select combination weights for
+the multi-hop neighbors, which can balance between the transient and the
+steady-state network mean-square deviations (MSDs). We study two classes of
+networks: simple networks with a unique transmission path from one node to
+another, and arbitrary networks utilizing diffusion consultations over at most
+two hops. We propose a method to optimize each node's information neighborhood
+subject to local energy budgets and a network-wide energy budget for each
+diffusion iteration. This optimization requires the network topology, and the
+noise and data variance profiles of each node, and is performed offline before
+the diffusion process. In addition, we develop a fully distributed and adaptive
+algorithm that approximately optimizes the information neighborhood of each
+node with only local energy budget constraints in the case where diffusion
+consultations are performed over at most a predefined number of hops. Numerical
+results suggest that our proposed multi-hop diffusion strategy achieves the
+same steady-state MSD as the existing one-hop adapt-then-combine diffusion
+algorithm but with a lower energy budget.

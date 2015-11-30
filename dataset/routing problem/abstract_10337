@@ -1,0 +1,16 @@
+We consider parameter identification problems in parametrized partial
+differential equations (PDE). This leads to nonlinear ill-posed inverse
+problems. One way to solve them are iterative regularization methods, which
+typically require numerous amounts of forward solutions during the solution
+process. In this article we consider the nonlinear Landweber method and want to
+couple it with the reduced basis method as a model order reduction technique in
+order to reduce the overall computational time. In particular, we consider PDEs
+with a high-dimensional parameter space, which are known to pose difficulties
+in the context of reduced basis methods. First, we show the applicability and
+the limitations of a direct approach, where we replace the forward solution in
+the nonlinear Landweber method with a reduced basis approximation. Then, the
+main contribution is a new method that is able to handle high-dimensional
+parameter spaces by combining the nonlinear Landweber method with adaptive
+online reduced basis updates. The various approaches presented are applied to
+the inverse problem of reconstructing the conductivity in the stationary heat
+equation.

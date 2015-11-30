@@ -1,0 +1,26 @@
+P2P overlays provide a framework for building distributed applications
+consisting of few to many resources with features including self-configuration,
+scalability, and resilience to node failures. Such systems have been
+successfully adopted in large-scale services for content delivery networks,
+file sharing, and data storage. In small-scale systems, they can be useful to
+address privacy concerns and for network applications that lack dedicated
+servers. The bootstrap problem, finding an existing peer in the overlay,
+remains a challenge to enabling these services for small-scale P2P systems. In
+large networks, the solution to the bootstrap problem has been the use of
+dedicated services, though creating and maintaining these systems requires
+expertise and resources, which constrain their usefulness and make them
+unappealing for small-scale systems. This paper surveys and summarizes
+requirements that allow peers potentially constrained by network connectivity
+to bootstrap small-scale overlays through the use of existing public overlays.
+In order to support bootstrapping, a public overlay must support the following
+requirements: a method for reflection in order to obtain publicly reachable
+addresses, so peers behind network address translators and firewalls can
+receive incoming connection requests; communication relaying to share public
+addresses and communicate when direct communication is not feasible; and
+rendezvous for discovering remote peers, when the overlay lacks stable
+membership. After presenting a survey of various public overlays, we identify
+two overlays that match the requirements: XMPP overlays, such as Google Talk
+and Live Journal Talk, and Brunet, a structured overlay based upon Symphony. We
+present qualitative experiences with prototypes that demonstrate the ability to
+bootstrap small-scale private structured overlays from public Brunet or XMPP
+infrastructures.

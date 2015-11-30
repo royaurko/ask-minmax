@@ -1,0 +1,23 @@
+The analysis of data from gravitational wave detectors can be divided into
+three phases: search, characterization, and evaluation. The evaluation of the
+detection - determining whether a candidate event is astrophysical in origin or
+some artifact created by instrument noise - is a crucial step in the analysis.
+The on-going analyses of data from ground based detectors employ a frequentist
+approach to the detection problem. A detection statistic is chosen, for which
+background levels and detection efficiencies are estimated from Monte Carlo
+studies. This approach frames the detection problem in terms of an infinite
+collection of trials, with the actual measurement corresponding to some
+realization of this hypothetical set. Here we explore an alternative, Bayesian
+approach to the detection problem, that considers prior information and the
+actual data in hand. Our particular focus is on the computational techniques
+used to implement the Bayesian analysis. We find that the Parallel Tempered
+Markov Chain Monte Carlo (PTMCMC) algorithm is able to address all three phases
+of the anaylsis in a coherent framework. The signals are found by locating the
+posterior modes, the model parameters are characterized by mapping out the
+joint posterior distribution, and finally, the model evidence is computed by
+thermodynamic integration. As a demonstration, we consider the detection
+problem of selecting between models describing the data as instrument noise, or
+instrument noise plus the signal from a single compact galactic binary. The
+evidence ratios, or Bayes factors, computed by the PTMCMC algorithm are found
+to be in close agreement with those computed using a Reversible Jump Markov
+Chain Monte Carlo algorithm.

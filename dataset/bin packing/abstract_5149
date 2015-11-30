@@ -1,0 +1,18 @@
+Penalization procedures often suffer from their dependence on multiplying
+factors, whose optimal values are either unknown or hard to estimate from the
+data. We propose a completely data-driven calibration algorithm for this
+parameter in the least-squares regression framework, without assuming a
+particular shape for the penalty. Our algorithm relies on the concept of
+minimal penalty, recently introduced by Birge and Massart (2007) in the context
+of penalized least squares for Gaussian homoscedastic regression. On the
+positive side, the minimal penalty can be evaluated from the data themselves,
+leading to a data-driven estimation of an optimal penalty which can be used in
+practice; on the negative side, their approach heavily relies on the
+homoscedastic Gaussian nature of their stochastic framework. The purpose of
+this paper is twofold: stating a more general heuristics for designing a
+data-driven penalty (the slope heuristics) and proving that it works for
+penalized least-squares regression with a random design, even for
+heteroscedastic non-Gaussian data. For technical reasons, some exact
+mathematical results will be proved only for regressogram bin-width selection.
+This is at least a first step towards further results, since the approach and
+the method that we use are indeed general.

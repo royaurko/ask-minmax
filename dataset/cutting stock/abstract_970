@@ -1,0 +1,17 @@
+Linear models that contain a time-dependent response and explanatory
+variables have attracted much interest in recent years. The most general form
+of the existing approaches is of a linear regression model with autoregressive
+moving average residuals. The addition of the moving average component results
+in a complex model with a very challenging implementation. In this paper, we
+propose to account for the time dependency in the data by explicitly adding
+autoregressive terms of the response variable in the linear model. In addition,
+we consider an autoregressive process for the errors in order to capture
+complex dynamic relationships parsimoniously. To broaden the application of the
+model, we present an $l_1$ penalized likelihood approach for the estimation of
+the parameters and show how the adaptive lasso penalties lead to an estimator
+which enjoys the oracle property. Furthermore, we prove the consistency of the
+estimators with respect to the mean squared prediction error in
+high-dimensional settings, an aspect that has not been considered by the
+existing time-dependent regression models. A simulation study and real data
+analysis show the successful applications of the model on financial data on
+stock indexes.

@@ -1,0 +1,23 @@
+A radio interferometer indirectly measures the intensity distribution of the
+sky over the celestial sphere. Since measurements are made over an irregularly
+sampled Fourier plane, synthesising an intensity image from interferometric
+measurements requires substantial processing. Furthermore there are distortions
+that have to be corrected. In this thesis, a new high-performance image
+synthesis tool (imaging tool) for radio interferometry is developed.
+Implemented in C++ and CUDA, the imaging tool achieves unprecedented
+performance by means of Graphics Processing Units (GPUs). The imaging tool is
+divided into several components, and the back-end handling numerical
+calculations is generalised in a new framework. A new feature termed
+compression arbitrarily increases the performance of an already highly
+efficient GPU-based implementation of the w-projection algorithm. Compression
+takes advantage of the behaviour of oversampled convolution functions and the
+baseline trajectories. A CPU-based component prepares data for the GPU which is
+multi-threaded to ensure maximum use of modern multi-core CPUs. Best
+performance can only be achieved if all hardware components in a system do work
+in parallel. The imaging tool is designed such that disk I/O and work on CPU
+and GPUs is done concurrently. Test cases show that the imaging tool performs
+nearly 100$\times$ faster than another general CPU-based imaging tool.
+Unfortunately, the tool is limited in use since deconvolution and A-projection
+are not yet supported. It is also limited by GPU memory. Future work will
+implement deconvolution and A-projection, whilst finding ways of overcoming the
+memory limitation.

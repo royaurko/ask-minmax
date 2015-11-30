@@ -1,0 +1,14 @@
+Over the past several years Bayesian networks have been applied to a wide
+variety of problems. A central problem in applying Bayesian networks is that of
+finding one or more of the most probable instantiations of a network. In this
+paper we develop an efficient algorithm that incrementally enumerates the
+instantiations of a Bayesian network in decreasing order of probability. Such
+enumeration algorithms are applicable in a variety of applications ranging from
+medical expert systems to model-based diagnosis. Fundamentally, our algorithm
+is simply performing a lazy enumeration of the sorted list of all
+instantiations of the network. This insight leads to a very concise algorithm
+statement which is both easily understood and implemented. We show that for
+singly connected networks, our algorithm generates the next instantiation in
+time polynomial in the size of the network. The algorithm extends to arbitrary
+Bayesian networks using standard conditioning techniques. We empirically
+evaluate the enumeration algorithm and demonstrate its practicality.

@@ -1,0 +1,19 @@
+Motivated by applications in storage systems and property testing, we study
+data stream algorithms for local testing and tolerant testing of codes.
+Ideally, we would like to know whether there exist asymptotically good codes
+that can be local/tolerant tested with one-pass, poly-log space data stream
+algorithms. We show that for the error detection problem (and hence, the local
+testing problem), there exists a one-pass, log-space data stream algorithm for
+a broad class of asymptotically good codes, including the Reed-Solomon (RS)
+code and expander codes. In our technically more involved result, we give a
+one-pass, $O(e\log^2{n})$-space algorithm for RS (and related) codes with
+dimension $k$ and block length $n$ that can distinguish between the cases when
+the Hamming distance between the received word and the code is at most $e$ and
+at least $a\cdot e$ for some absolute constant $a>1$. For RS codes with random
+errors, we can obtain $e\le O(n/k)$. For folded RS codes, we obtain similar
+results for worst-case errors as long as $e\le (n/k)^{1-\eps}$ for any constant
+$\eps>0$. These results follow by reducing the tolerant testing problem to the
+error detection problem using results from group testing and the list
+decodability of the code. We also show that using our techniques, the space
+requirement and the upper bound of $e\le O(n/k)$ cannot be improved by more
+than logarithmic factors.

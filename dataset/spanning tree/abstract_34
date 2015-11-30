@@ -1,0 +1,18 @@
+We introduce block-tree graphs as a framework for deriving efficient
+algorithms on graphical models. We define block-tree graphs as a
+tree-structured graph where each node is a cluster of nodes such that the
+clusters in the graph are disjoint. This differs from junction-trees, where two
+clusters connected by an edge always have at least one common node. When
+compared to junction-trees, we show that constructing block-tree graphs is
+faster, and finding optimal block-tree graphs has a much smaller search space.
+Applying our block-tree graph framework to graphical models, we show that, for
+some graphs, e.g., grid graphs, using block-tree graphs for inference is
+computationally more efficient than using junction-trees. For graphical models
+with boundary conditions, the block-tree graph framework transforms the
+boundary valued problem into an initial value problem. For Gaussian graphical
+models, the block-tree graph framework leads to a linear state-space
+representation. Since exact inference in graphical models can be
+computationally intractable, we propose to use spanning block-trees to derive
+approximate inference algorithms. Experimental results show the improved
+performance in using spanning block-trees versus using spanning trees for
+approximate estimation over Gaussian graphical models.

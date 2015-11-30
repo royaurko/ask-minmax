@@ -1,0 +1,19 @@
+The delay Lyapunov equation is an important matrix boundary-value problem
+which arises as an analogue of the Lyapunov equation in the study of time-delay
+systems $\dot{x}(t)=A_0x(t)+A_1x(t-\tau)+B_0u(t)$. We propose a new algorithm
+for the solution of the delay Lyapunov equation. Our method is based on the
+fact that the delay Lyapunov equation can be expressed as a linear system of
+equations, whose unknown is the value $U(\tau/2)\in\mathbb{R}^{n\times n}$,
+i.e., the delay Lyapunov matrix at time $\tau/2$. This linear matrix equation
+with $n^2$ unknowns is solved by adapting a preconditioned iterative method
+such as GMRES. The action of the $n^2\times n^2$ matrix associated to this
+linear system can be computed by solving a coupled matrix initial-value
+problem. A preconditioner for the iterative method is proposed based on solving
+a T-Sylvester equation $MX+X^TN=C$, for which there are methods available in
+the literature. We prove that the preconditioner is effective under certain
+assumptions. The efficiency of the approach is illustrated by applying it to a
+time-delay system stemming from the discretization of a partial differential
+equation with delay. Approximate solutions to this problem can be obtained for
+problems of size up to $n\approx 1000$, i.e., a linear system with $n^2\approx
+10^6$ unknowns, a dimension which is outside of the capabilities of the other
+existing methods for the delay Lyapunov equation.

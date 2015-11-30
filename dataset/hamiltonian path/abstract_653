@@ -1,0 +1,21 @@
+Let a and b be two positive integers. A culminating path is a path of Z^2
+that starts from (0,0), consists of steps (1,a) and (1,-b), stays above the
+x-axis and ends at the highest ordinate it ever reaches. These paths were first
+encountered in bioinformatics, in the analysis of similarity search algorithms.
+They are also related to certain models of Lorentzian gravity in theoretical
+physics. We first show that the language on a two letter alphabet that
+naturally encodes culminating paths is not context-free. Then, we focus on the
+enumeration of culminating paths. A step by step approach, combined with the
+kernel method, provides a closed form expression for the generating fucntion of
+culminating paths ending at a (generic) height k. In the case a=b, we derive
+from this expression the asymptotic behaviour of the number of culminating
+paths of length n. When a>b, we obtain the asymptotic behaviour by a simpler
+argument. When a<b, we only determine the exponential growth of the number of
+culminating paths. Finally, we study the uniform random generation of
+culminating paths via various methods. The rejection approach, coupled with a
+symmetry argument, gives an algorithm that is linear when a>= b, with no
+precomputation stage nor non-linear storage required. The choice of the best
+algorithm is not as clear when a<b. An elementary recursive approach yields a
+linear algorithm after a precomputation stage involving O(n^3) arithmetic
+operations, but we also present some alternatives that may be more efficient in
+practise.

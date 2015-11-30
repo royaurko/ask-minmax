@@ -1,0 +1,16 @@
+This paper studies the H2 (Kalman) filtering problem in the situation where a
+signal estimate must be constructed based on inputs from individual
+participants, whose data must remain private. This problem arises in emerging
+applications such as smart grids or intelligent transportation systems, where
+users continuously send data to third-party aggregators performing global
+monitoring or control tasks, and require guarantees that this data cannot be
+used to infer additional personal information. To provide strong formal privacy
+guarantees against adversaries with arbitrary side information, we rely on the
+notion of differential privacy introduced relatively recently in the database
+literature. This notion is extended to dynamic systems with many participants
+contributing independent input signals, and mechanisms are then proposed to
+solve the H2 filtering problem with a differential privacy constraint. A method
+for mitigating the impact of the privacy-inducing mechanism on the estimation
+performance is described, which relies on controlling the Hinfinity norm of the
+filter. Finally, we discuss an application to a privacy-preserving traffic
+monitoring system.

@@ -1,0 +1,27 @@
+The thesis describes a logical formalization of natural-language database
+interfacing. We assume the existence of a ``natural language engine'' capable
+of mediating between surface linguistic string and their representations as
+``literal'' logical forms: the focus of interest will be the question of
+relating ``literal'' logical forms to representations in terms of primitives
+meaningful to the underlying database engine. We begin by describing the nature
+of the problem, and show how a variety of interface functionalities can be
+considered as instances of a type of formal inference task which we call
+``Abductive Equivalential Translation'' (AET); functionalities which can be
+reduced to this form include answering questions, responding to commands,
+reasoning about the completeness of answers, answering meta-questions of type
+``Do you know...'', and generating assertions and questions. In each case, a
+``linguistic domain theory'' (LDT) $\Gamma$ and an input formula $F$ are given,
+and the goal is to construct a formula with certain properties which is
+equivalent to $F$, given $\Gamma$ and a set of permitted assumptions. If the
+LDT is of a certain specified type, whose formulas are either conditional
+equivalences or Horn-clauses, we show that the AET problem can be reduced to a
+goal-directed inference method. We present an abstract description of this
+method, and sketch its realization in Prolog. The relationship between AET and
+several problems previously discussed in the literature is discussed. In
+particular, we show how AET can provide a simple and elegant solution to the
+so-called ``Doctor on Board'' problem, and in effect allows a
+``relativization'' of the Closed World Assumption. The ideas in the thesis have
+all been implemented concretely within the SRI CLARE project, using a real
+projects and payments database. The LDT for the example database is described
+in detail, and examples of the types of functionality that can be achieved
+within the example domain are presented.

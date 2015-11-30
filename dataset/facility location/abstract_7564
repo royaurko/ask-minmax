@@ -1,0 +1,20 @@
+A recurring task in image processing, approximation theory, and the numerical
+solution of partial differential equations is to reconstruct a piecewise-smooth
+real-valued function f(x) in multiple dimensions from its truncated Fourier
+transform (its truncated spectrum). An essential step is edge detection for
+which a variety of one-dimensional schemes have been developed over the last
+few decades. Most higher-dimensional edge detection algorithms consist of
+applying one-dimensional detectors in each component direction in order to
+recover the locations in R^N where f(x) is singular (the singular support).
+  In this paper, we present a multidimensional algorithm which identifies the
+wavefront of a function from spectral data. The wavefront of f(x) is the set of
+points $(x,k) \in R^N \times (S^{N-1} / \{\pm 1\})$ which encode both the
+location of the singular points of a function and the orientation of the
+singularities. (Here $S^{N-1}$ denotes the unit sphere in N dimensions.) More
+precisely, k is the direction of the normal line to the curve or surface of
+discontinuity at x. Note that the singular support is simply the projection of
+the wavefront onto its x-component. In one dimension, the wavefront is a subset
+of R^1 and coincides with the singular support. In higher dimensions, geometry
+comes into play and they are distinct. We discuss the advantages of wavefront
+reconstruction and indicate how it can be used for segmentation in magnetic
+resonance imaging (MRI).

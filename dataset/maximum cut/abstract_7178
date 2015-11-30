@@ -1,0 +1,15 @@
+We present a Bayesian approach to adapting parameters of a well-trained
+context-dependent, deep-neural-network, hidden Markov model (CD-DNN-HMM) to
+improve automatic speech recognition performance. Given an abundance of DNN
+parameters but with only a limited amount of data, the effectiveness of the
+adapted DNN model can often be compromised. We formulate maximum a posteriori
+(MAP) adaptation of parameters of a specially designed CD-DNN-HMM with an
+augmented linear hidden networks connected to the output tied states, or
+senones, and compare it to feature space MAP linear regression previously
+proposed. Experimental evidences on the 20,000-word open vocabulary Wall Street
+Journal task demonstrate the feasibility of the proposed framework. In
+supervised adaptation, the proposed MAP adaptation approach provides more than
+10% relative error reduction and consistently outperforms the conventional
+transformation based methods. Furthermore, we present an initial attempt to
+generate hierarchical priors to improve adaptation efficiency and effectiveness
+with limited adaptation data by exploiting similarities among senones.

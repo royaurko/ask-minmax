@@ -1,0 +1,25 @@
+Mass modelling of spherical systems through internal motions is hampered by
+the mass/velocity anisotropy (VA) degeneracy inherent in the Jeans equation, as
+well as the lack of techniques that are both fast and adaptable to realistic
+systems. A new fast method, called MAMPOSSt, which performs a maximum
+likelihood fit of the distribution of observed tracers in projected phase
+space, is developed and thoroughly tested. MAMPOSSt assumes a shape for the
+gravitational potential, but instead of postulating a shape for the
+distribution function in terms of energy and angular momentum, or supposing
+Gaussian line-of-sight velocity distributions, MAMPOSSt assumes a VA profile
+and a shape for the 3D velocity distribution, here Gaussian. MAMPOSSt requires
+no binning, differentiation, nor extrapolation of the observables. Tests on
+cluster-mass haloes from LambdaCDM cosmological simulations show that, with 500
+tracers, MAMPOSSt is able to jointly recover the virial radius, tracer scale
+radius, dark matter scale radius and outer or constant VA with small bias (<10%
+on scale radii and <2% on the two other quantities) and inefficiencies of 10%,
+27%, 48% and 20%, respectively. MAMPOSSt does not perform better when some
+parameters are frozen, and even worse when the virial radius is set to its true
+value, which appears to be the consequence of halo triaxiality. The accuracy of
+MAMPOSSt depends weakly on the adopted interloper removal scheme, including an
+efficient iterative Bayesian scheme that we introduce here, which can directly
+obtain the virial radius with as good precision as MAMPOSSt. Our tests show
+that MAMPOSSt with Gaussian 3D velocities is very competitive with, and up to
+1000x faster than other methods. Hence, MAMPOSSt is a very powerful and rapid
+tool for the mass and anisotropy modeling of systems such as clusters and
+groups of galaxies, elliptical and dwarf spheroidal galaxies.

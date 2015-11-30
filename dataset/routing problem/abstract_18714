@@ -1,0 +1,18 @@
+We study the problem of validating XML documents of size $N$ against general
+DTDs in the context of streaming algorithms. The starting point of this work is
+a well-known space lower bound. There are XML documents and DTDs for which
+$p$-pass streaming algorithms require $\Omega(N/p)$ space.
+  We show that when allowing access to external memory, there is a
+deterministic streaming algorithm that solves this problem with memory space
+$O(\log^2 N)$, a constant number of auxiliary read/write streams, and $O(\log
+N)$ total number of passes on the XML document and auxiliary streams.
+  An important intermediate step of this algorithm is the computation of the
+First-Child-Next-Sibling (FCNS) encoding of the initial XML document in a
+streaming fashion. We study this problem independently, and we also provide
+memory efficient streaming algorithms for decoding an XML document given in its
+FCNS encoding.
+  Furthermore, validating XML documents encoding binary trees in the usual
+streaming model without external memory can be done with sublinear memory.
+There is a one-pass algorithm using $O(\sqrt{N \log N})$ space, and a
+bidirectional two-pass algorithm using $O(\log^2 N)$ space performing this
+task.

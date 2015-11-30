@@ -1,0 +1,18 @@
+Traditional Byzantine consensus does not work in P2P network due to Sybil
+attack while the most prevalent Sybil-proof consensus at present still can't
+resist adversary with dominant compute power. This paper proposed opinion
+dynamics based consensus for P2P network with trust relationships, consisting
+of the sky framework and the sky model. With the sky framework, opinion
+dynamics can be applied in P2P network for consensus which is Sybil-proof
+through trust relationships and emerges from local interactions of each node
+with its direct contacts without topology, global information or even sample of
+the network involved. The sky model has better performance of convergence than
+existing models including MR, voter and Sznajd, and its lower bound of fault
+tolerance performance is also analyzed and proved. Simulations show that our
+approach can tolerant failures by at least 13% random nodes or 2% top
+influential nodes while over 96% correct nodes still make correct decision
+within 70 seconds on the SNAP Wikipedia who-votes-on-whom network for initial
+configuration of convergence>0.5 with reasonable latencies. Comparing to
+compute power based consensus, our approach can resist any faulty or malicious
+nodes by unfollowing them. To the best of our knowledge, it's the first work to
+bring opinion dynamics to P2P network for consensus.

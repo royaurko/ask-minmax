@@ -1,0 +1,16 @@
+In the capacitated $k$-median (\CKM) problem, we are given a set $F$ of
+facilities, each facility $i \in F$ with a capacity $u_i$, a set $C$ of
+clients, a metric $d$ over $F \cup C$ and an integer $k$. The goal is to open
+$k$ facilities in $F$ and connect the clients $C$ to the open facilities such
+that each facility $i$ is connected by at most $u_i$ clients, so as to minimize
+the total connection cost.
+  In this paper, we give the first constant approximation for \CKM, that only
+violates the cardinality constraint by a factor of $1+\epsilon$. This
+generalizes the result of [Li15], which only works for the uniform capacitated
+case. Moreover, the approximation ratio we obtain is
+$O\big(\frac{1}{\epsilon^2}\log\frac1\epsilon\big)$, which is an exponential
+improvement over the ratio of $\exp(O(1/\epsilon^2))$ in [Li15]. The natural LP
+relaxation for the problem, which almost all previous algorithms for \CKM are
+based on, has unbounded integrality gap even if $(2-\epsilon)k$ facilities can
+be opened. We introduce a novel configuration LP for the problem, that
+overcomes this integrality gap.

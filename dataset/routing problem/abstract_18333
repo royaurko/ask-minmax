@@ -1,0 +1,26 @@
+Inverse problems and regularization theory is a central theme in contemporary
+signal processing, where the goal is to reconstruct an unknown signal from
+partial indirect, and possibly noisy, measurements of it. A now standard method
+for recovering the unknown signal is to solve a convex optimization problem
+that enforces some prior knowledge about its structure. This has proved
+efficient in many problems routinely encountered in imaging sciences,
+statistics and machine learning. This chapter delivers a review of recent
+advances in the field where the regularization prior promotes solutions
+conforming to some notion of simplicity/low-complexity. These priors encompass
+as popular examples sparsity and group sparsity (to capture the compressibility
+of natural signals and images), total variation and analysis sparsity (to
+promote piecewise regularity), and low-rank (as natural extension of sparsity
+to matrix-valued data). Our aim is to provide a unified treatment of all these
+regularizations under a single umbrella, namely the theory of partial
+smoothness. This framework is very general and accommodates all low-complexity
+regularizers just mentioned, as well as many others. Partial smoothness turns
+out to be the canonical way to encode low-dimensional models that can be linear
+spaces or more general smooth manifolds. This review is intended to serve as a
+one stop shop toward the understanding of the theoretical properties of the
+so-regularized solutions. It covers a large spectrum including: (i) recovery
+guarantees and stability to noise, both in terms of $\ell^2$-stability and
+model (manifold) identification; (ii) sensitivity analysis to perturbations of
+the parameters involved (in particular the observations), with applications to
+unbiased risk estimation ; (iii) convergence properties of the forward-backward
+proximal splitting scheme, that is particularly well suited to solve the
+corresponding large-scale regularized optimization problem.

@@ -1,0 +1,16 @@
+Given a metric space $(X,d_X)$, the earth mover distance between two
+distributions over $X$ is defined as the minimum cost of a bipartite matching
+between the two distributions. The doubling dimension of a metric $(X, d_X)$ is
+the smallest value $\alpha$ such that every ball in $X$ can be covered by
+$2^\alpha$ ball of half the radius. We study efficient algorithms for
+approximating earth mover distance over metrics with bounded doubling
+dimension.
+  Given a metric $(X, d_X)$, with $|X| = n$, we can use $\tilde O(n^2)$
+preprocessing time to create a data structure of size $\tilde O(n^{1 + \e})$,
+such that subsequently queried EMDs can be $O(\alpha_X/\e)$-approximated in
+$\tilde O(n)$ time.
+  We also show a weaker form of sketching scheme, which we call "encoding
+scheme". Given $(X, d_X)$, by using $\tilde O(n^2)$ preprocessing time, every
+subsequent distribution $\mu$ over $X$ can be encoded into $F(\mu)$ in $\tilde
+O(n^{1 + \e})$ time. Given $F(\mu)$ and $F(\nu)$, the EMD between $\mu$ and
+$\nu$ can be $O(\alpha_X/\e)$-approximated in $\tilde O(n^\e)$ time.

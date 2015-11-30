@@ -1,0 +1,16 @@
+The new era of information and communication technology (ICT) calls for a
+greater understanding of the environmental impacts of recent technology. With
+increasing energy cost and growing environmental concerns, green IT is
+receiving more and more attention. Network and system design play a crucial
+role in both computing and telecommunication systems. Significant part of this
+energy cost goes to system update by downloading regularly patches and bug
+fixes to solve security problems and to assure that the operating system and
+other systems function properly. This paper describes a new design of Windows
+Server Update Services (WSUS), system responsible of downloads of the mentioned
+patches and updates from Microsoft Update website and then distributes them to
+computers on a network. The general idea behind our proposed design is simple.
+Instead of the periodical check done by the WSUS servers to ensure update form
+Microsoft main servers, we rather propose to reverse the scenario in order to
+reduce energy consumption. In the proposed design, the Microsoft main server(s)
+sends signal to all WSUS servers to inform them about new updates. Once the
+signal received, WSUS can contact the main server to start downloading.

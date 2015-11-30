@@ -1,0 +1,16 @@
+We have developed a gravity solver based on combining the well developed
+Particle-Mesh (PM) method and TREE methods. It is designed for and has been
+implemented on parallel computer architectures. The new code can deal with tens
+of millions of particles on current computers, with the calculation done on a
+parallel supercomputer or a group of workstations. Typically, the spatial
+resolution is enhanced by more than a factor of 20 over the pure PM code with
+mass resolution retained at nearly the PM level. This code runs much faster
+than a pure TREE code with the same number of particles and maintains almost
+the same resolution in high density regions. Multiple time step integration has
+also been implemented with the code, with second order time accuracy. The
+performance of the code has been checked in several kinds of parallel computer
+configuration, including IBM SP1, SGI Challenge and a group of workstations,
+with the speedup of the parallel code on a 32 processor IBM SP2 supercomputer
+nearly linear (efficiency $\approx 80\%$) in the number of processors. The
+computation/communication ratio is also very high ($\sim 50$), which means the
+code spends $95\%$ of its CPU time in computation.

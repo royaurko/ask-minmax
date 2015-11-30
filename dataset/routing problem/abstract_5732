@@ -1,0 +1,14 @@
+Let G = (V, E) be a directed acyclic graph with two distinguished vertices s,
+t and let F be a set of forbidden pairs of vertices. We say that a path in G is
+safe, if it contains at most one vertex from each pair {u, v} in F. Given G and
+F, the path avoiding forbidden pairs (PAFP) problem is to find a safe s-t path
+in G. We systematically study the complexity of different special cases of the
+PAFP problem defined according to the mutual positions of forbidden pairs. Fix
+one topological ordering of vertices; we say that pairs {u, v} and {x, y} are
+disjoint, if u, v < x, y, nested, if u < x, y < v, and halving, if u < x < v <
+y. The PAFP problem is known to be NP-hard in general or if no two pairs are
+disjoint; we prove that it remains NP-hard even when no two forbidden pairs are
+nested. On the other hand, if no two pairs are halving, the problem is known to
+be solvable in cubic time. We simplify and improve this result by showing an
+O(M(n)) time algorithm, where M(n) is the time to multiply two n \times n
+boolean matrices.

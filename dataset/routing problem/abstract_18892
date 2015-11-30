@@ -1,0 +1,27 @@
+We consider a request processing system composed of organizations and their
+servers connected by the Internet.
+  The latency a user observes is a sum of communication delays and the time
+needed to handle the request on a server. The handling time depends on the
+server congestion, i.e. the total number of requests a server must handle. We
+analyze the problem of balancing the load in a network of servers in order to
+minimize the total observed latency. We consider both cooperative and selfish
+organizations (each organization aiming to minimize the latency of the
+locally-produced requests). The problem can be generalized to the task
+scheduling in a distributed cloud; or to content delivery in an
+organizationally-distributed CDNs.
+  In a cooperative network, we show that the problem is polynomially solvable.
+We also present a distributed algorithm iteratively balancing the load. We show
+how to estimate the distance between the current solution and the optimum based
+on the amount of load exchanged by the algorithm. During the experimental
+evaluation, we show that the distributed algorithm is efficient, therefore it
+can be used in networks with dynamically changing loads.
+  In a network of selfish organizations, we prove that the price of anarchy
+(the worst-case loss of performance due to selfishness) is low when the network
+is homogeneous and the servers are loaded (the request handling time is high
+compared to the communication delay). After relaxing these assumptions, we
+assess the loss of performance caused by the selfishness experimentally,
+showing that it remains low.
+  Our results indicate that a network of servers handling requests can be
+efficiently managed by a distributed algorithm. Additionally, even if the
+network is organizationally distributed, with individual organizations
+optimizing performance of their requests, the network remains efficient.

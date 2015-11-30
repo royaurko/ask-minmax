@@ -1,0 +1,11 @@
+We consider the target set selection problem. In this problem, a vertex is
+active either if it belongs to a set of initially activated vertices or if at
+some point it has at least $k$ active neighbors ($k$ is identical for all
+vertices of the graph). Our goal is to find a set of minimum size whose
+activation will result with the entire graph being activated. Call such a set
+\emph{contagious}. We prove that if $G=(V,E)$ is an undirected graph, the size
+of a contagious set is bounded by $\sum_{v\in V}{\min \{1,\frac{k}{d(v)+1}\}}$
+(where $d(v)$ is the degree of $v$). We present a simple and efficient
+algorithm that finds a contagious set that is not larger than the
+aforementioned bound and discuss algorithmic applications of this algorithm to
+finding contagious sets in dense graphs.

@@ -1,0 +1,12 @@
+An out-branching of a directed graph is a rooted spanning tree with all arcs
+directed outwards from the root. We consider the problem of deciding whether a
+given directed graph D has an out-branching with at least k leaves (Directed
+Spanning k-Leaf). We prove that this problem is fixed parameter tractable, when
+k is chosen as the parameter. Previously this was only known for restricted
+classes of directed graphs.
+  The main new ingredient in our approach is a lemma that shows that given a
+locally optimal out-branching of a directed graph in which every arc is part of
+at least one out-branching, either an out-branching with at least k leaves
+exists, or a path decomposition with width O(k^3) can be found. This enables a
+dynamic programming based algorithm of running time 2^{O(k^3 \log k)} n^{O(1)},
+where n=|V(D)|.

@@ -1,0 +1,14 @@
+This paper proposes a novel approach for efficiently evaluating regular path
+queries over provenance graphs of workflows that may include recursion. The
+approach assumes that an execution g of a workflow G is labeled with
+query-agnostic reachability labels using an existing technique. At query time,
+given g, G and a regular path query R, the approach decomposes R into a set of
+subqueries R1, ..., Rk that are safe for G. For each safe subquery Ri, G is
+rewritten so that, using the reachability labels of nodes in g, whether or not
+there is a path which matches Ri between two nodes can be decided in constant
+time. The results of each safe subquery are then composed, possibly with some
+small unsafe remainder, to produce an answer to R. The approach results in an
+algorithm that significantly reduces the number of subqueries k over existing
+techniques by increasing their size and complexity, and that evaluates each
+subquery in time bounded by its input and output size. Experimental results
+demonstrate the benefit of this approach.

@@ -1,0 +1,12 @@
+Many learning tasks can be viewed as sequence prediction problems. For
+example, online classification can be converted to sequence prediction with the
+sequence being pairs of input/target data and where the goal is to correctly
+predict the target data given input data and previous input/target pairs.
+Solomonoff induction is known to solve the general sequence prediction problem,
+but only if the entire sequence is sampled from a computable distribution. In
+the case of classification and discriminative learning though, only the targets
+need be structured (given the inputs). We show that the normalised version of
+Solomonoff induction can still be used in this case, and more generally that it
+can detect any recursive sub-pattern (regularity) within an otherwise
+completely unstructured sequence. It is also shown that the unnormalised
+version can fail to predict very simple recursive sub-patterns.

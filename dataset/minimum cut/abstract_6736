@@ -1,0 +1,22 @@
+PURPOSE: We develop a practical, iterative algorithm for image-reconstruction
+in under-sampled tomographic systems, such as digital breast tomosynthesis
+(DBT).
+  METHOD: The algorithm controls image regularity by minimizing the image total
+$p$-variation (TpV), a function that reduces to the total variation when
+$p=1.0$ or the image roughness when $p=2.0$. Constraints on the image, such as
+image positivity and estimated projection-data tolerance, are enforced by
+projection onto convex sets (POCS). The fact that the tomographic system is
+under-sampled translates to the mathematical property that many widely varied
+resultant volumes may correspond to a given data tolerance. Thus the
+application of image regularity serves two purposes: (1) reduction of the
+number of resultant volumes out of those allowed by fixing the data tolerance,
+finding the minimum image TpV for fixed data tolerance, and (2) traditional
+regularization, sacrificing data fidelity for higher image regularity. The
+present algorithm allows for this dual role of image regularity in
+under-sampled tomography.
+  RESULTS: The proposed image-reconstruction algorithm is applied to three
+clinical DBT data sets. The DBT cases include one with microcalcifications and
+two with masses.
+  CONCLUSION: Results indicate that there may be a substantial advantage in
+using the present image-reconstruction algorithm for microcalcification
+imaging.

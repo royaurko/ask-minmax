@@ -1,0 +1,26 @@
+Given a discrete time series that undergoes a transient change in
+distribution from $P_0$ to $P_1$ at an unknown instant, this paper addresses
+the question of finding the minimum sampling rate needed in order to detect the
+change as efficiently as under full sampling.
+  The problem is cast into a Bayesian setup where the change, assumed to be of
+fixed known duration $n$, occurs randomly and uniformly within a time frame of
+size $A_n=2^{\alpha n}$ for some known uncertainty parameter $\alpha>0$. It is
+shown that, for any fixed $\alpha \in (0,D(P_1||P_0))$, as long as the sampling
+rate is of order $\omega(1/n)$ the change can be detected as quickly as under
+full sampling, in the limit of vanishing false-alarm probability. The delay, in
+this case, is some linear function of $n$. Conversely, if $\alpha>D(P_1||P_0) $
+or if the sampling rate is $o(1/n)$ reliable detection is impossible---the
+false-alarm probability is bounded away from zero or the delay is
+$\Theta(2^{\alpha n})$.
+  This paper illustrates this result through a recently proposed asynchronous
+communication framework. Here, the receiver observes mostly pure background
+noise except for a brief period of time, starting at an unknown instant, when
+data is transmitted thereby inducing a local change in distribution at the
+receiver. For this model, capacity per unit cost (minimum energy to transmit
+one bit of information) and communication delay were characterized and shown to
+be unaffected by a sparse sampling at the receiver as long as the sampling rate
+is a non-zero constant. This paper strengthens this result and shows that it
+continues to hold even if the sampling rate tends to zero at a rate no faster
+than $ \omega(1/B)$, where $B$ denotes the number of transmitted message bits.
+Conversely, if the sampling rate decreases as $o(1/B)$, reliable communication
+is impossible.

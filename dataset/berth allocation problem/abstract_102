@@ -1,0 +1,12 @@
+In this paper we look at the problem of scheduling tasks on a
+single-processor system, where each task requires unit time and must be
+scheduled within a certain time window, and each task can be added to or
+removed from the system at any time. On each operation, the system is allowed
+to reschedule any tasks, but the goal is to minimize the number of rescheduled
+tasks. Our main result is an allocator that maintains a valid schedule for all
+tasks in the system if their time windows have constant size and reschedules
+O(1/{\epsilon}*log(1/{\epsilon})) tasks on each insertion, where {\epsilon} is
+a certain measure of the schedule flexibility of the system. We also show that
+it is optimal for any allocator that works on arbitrary instances. After that
+we describe an allocator for arbitrary window size that we hypothesize has
+reallocation cost 1 if {\epsilon} is sufficiently high.

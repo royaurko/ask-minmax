@@ -1,0 +1,23 @@
+While spike trains are obviously not band-limited, the theory of
+super-resolution tells us that perfect recovery of unknown spike locations and
+weights from low-pass Fourier transform measurements is possible provided that
+the minimum spacing, $\Delta$, between spikes is not too small. Specifically,
+for a measurement cutoff frequency of $f_c$, Donoho [2] showed that exact
+recovery is possible if the spikes (on $\mathbb{R}$) lie on a lattice and
+$\Delta > 1/f_c$, but does not specify a corresponding recovery method.
+Cand$\text{\`e}$s and Fernandez-Granda [3] provide a convex programming method
+for the recovery of periodic spike trains, i.e., spike trains on the torus
+$\mathbb{T}$, which provably succeeds if $\Delta > 2/f_c$, and does not need
+the spikes within the fundamental period to lie on a lattice. In this paper, we
+develop a theory of super-resolution from short-time Fourier transform (STFT)
+measurements. Specifically, we present a recovery method, similar in spirit to
+the one in [3] for pure Fourier measurements, that provably succeeds if $\Delta
+> 1/f_c$. This factor-of-two improvement in the recovery threshold is also
+observed in numerical results. Our theory is based on a measure-theoretic
+formulation of the recovery problem, which leads to considerable generality in
+the sense of the results being grid-free and applying to spike trains on both
+$\mathbb{R}$ and $\mathbb{T}$. The case of spike trains on $\mathbb{R}$ comes
+with significant technical challenges and requires, inter alia, the development
+of new results on the STFT of measures. For the recovery of spike trains on
+$\mathbb{T}$ we prove that the correct solution can be obtained by solving a
+sequence of finite-dimensional convex programming problems.

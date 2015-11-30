@@ -1,0 +1,13 @@
+Pheet is a C++ task-scheduling framework that allows for easy customization
+of internal data-structures. The implementation was started before the C++11
+standard was committed and therefore did not use the new standardized memory
+model but compiler/platform specific intrinsics for atomic memory operations.
+This not only makes the implementation harder to port to other compilers or
+architectures but also suffers from the fact that prior C++ versions did not
+specify any memory model.
+  In this report I discuss the porting of one of the internal Pheet data
+structures to the new memory model and provide reasoning about the correctness
+based on the semantics of the memory consistency model. Using two benchmarks
+from the Pheet benchmark suite I compare the performance of the original
+against the new implementation which shows a significant speedup under certain
+conditions on one of the two test machines.

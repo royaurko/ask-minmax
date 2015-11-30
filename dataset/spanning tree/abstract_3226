@@ -1,0 +1,20 @@
+Efficient automatic protein classification is of central importance in
+genomic annotation. As an independent way to check the reliability of the
+classification, we propose a statistical approach to test if two sets of
+protein domain sequences coming from two families of the Pfam database are
+significantly different. We model protein sequences as realizations of Variable
+Length Markov Chains (VLMC) and we use the context trees as a signature of each
+protein family. Our approach is based on a Kolmogorov--Smirnov-type
+goodness-of-fit test proposed by Balding et al. [Limit theorems for sequences
+of random trees (2008), DOI: 10.1007/s11749-008-0092-z]. The test statistic is
+a supremum over the space of trees of a function of the two samples; its
+computation grows, in principle, exponentially fast with the maximal number of
+nodes of the potential trees. We show how to transform this problem into a
+max-flow over a related graph which can be solved using a Ford--Fulkerson
+algorithm in polynomial time on that number. We apply the test to 10 randomly
+chosen protein domain families from the seed of Pfam-A database (high quality,
+manually curated families). The test shows that the distributions of context
+trees coming from different families are significantly different. We emphasize
+that this is a novel mathematical approach to validate the automatic clustering
+of sequences in any context. We also study the performance of the test via
+simulations on Galton--Watson related processes.

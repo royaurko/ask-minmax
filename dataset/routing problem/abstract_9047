@@ -1,0 +1,17 @@
+In this paper we consider the Nonnegative Matrix Factorization (NMF) problem:
+given an (elementwise) nonnegative matrix $V \in \R_+^{m\times n}$ find, for
+assigned $k$, nonnegative matrices $W\in\R_+^{m\times k}$ and
+$H\in\R_+^{k\times n}$ such that $V=WH$. Exact, non trivial, nonnegative
+factorizations do not always exist, hence it is interesting to pose the
+approximate NMF problem. The criterion which is commonly employed is
+I-divergence between nonnegative matrices. The problem becomes that of finding,
+for assigned $k$, the factorization $WH$ closest to $V$ in I-divergence. An
+iterative algorithm, EM like, for the construction of the best pair $(W, H)$
+has been proposed in the literature. In this paper we interpret the algorithm
+as an alternating minimization procedure \`a la Csisz\'ar-Tusn\'ady and
+investigate some of its stability properties. NMF is widespreading as a data
+analysis method in applications for which the positivity constraint is
+relevant. There are other data analysis methods which impose some form of
+nonnegativity: we discuss here the connections between NMF and Archetypal
+Analysis. An interesting system theoretic application of NMF is to the problem
+of approximate realization of Hidden Markov Models.

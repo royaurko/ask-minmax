@@ -1,0 +1,16 @@
+Influence maximization is the problem of finding a set of users in a social
+network, such that by targeting this set, one maximizes the expected spread of
+influence in the network. Most of the literature on this topic has focused
+exclusively on the social graph, overlooking historical data, i.e., traces of
+past action propagations. In this paper, we study influence maximization from a
+novel data-based perspective. In particular, we introduce a new model, which we
+call credit distribution, that directly leverages available propagation traces
+to learn how influence flows in the network and uses this to estimate expected
+influence spread. Our approach also learns the different levels of
+influenceability of users, and it is time-aware in the sense that it takes the
+temporal nature of influence into account. We show that influence maximization
+under the credit distribution model is NP-hard and that the function that
+defines expected spread under our model is submodular. Based on these, we
+develop an approximation algorithm for solving the influence maximization
+problem that at once enjoys high accuracy compared to the standard approach,
+while being several orders of magnitude faster and more scalable.

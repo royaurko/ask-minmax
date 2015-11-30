@@ -1,0 +1,19 @@
+{\it A unit cube in $k$-dimension (or a $k$-cube) is defined as the cartesian
+product $R_1 \times R_2 \times ... \times R_k$, where each $R_i$ is a closed
+interval on the real line of the form $[a_i, a_i+1]$. The {\it cubicity} of
+$G$, denoted as $cub(G)$, is the minimum $k$ such that $G$ is the intersection
+graph of a collection of $k$-cubes. Many NP-complete graph problems can be
+solved efficiently or have good approximation ratios in graphs of low cubicity.
+In most of these cases the first step is to get a low dimensional cube
+representation of the given graph.
+  It is known that for a graph $G$, $cub(G) \leq \lfloor\frac{2n}{3}\rfloor$.
+Recently it has been shown that for a graph $G$, $cub(G) \leq 4(\Delta + 1)\ln
+n$, where $n$ and $\Delta$ are the number of vertices and maximum degree of
+$G$, respectively. In this paper, we show that for a bipartite graph $G = (A
+\cup B, E)$ with $|A| = n_1$, $|B| = n_2$, $n_1 \leq n_2$, and $\Delta' =
+\min\{\Delta_A, \Delta_B\}$, where $\Delta_A = {max}_{a \in A}d(a)$ and
+$\Delta_B = {max}_{b \in B}d(b)$, $d(a)$ and $d(b)$ being the degree of $a$ and
+$b$ in $G$ respectively, $cub(G) \leq 2(\Delta'+2) \lceil \ln n_2 \rceil$. We
+also give an efficient randomized algorithm to construct the cube
+representation of $G$ in $3(\Delta'+2)\lceil \ln n_2 \rceil$ dimensions. The
+reader may note that in general $\Delta'$ can be much smaller than $\Delta$.}

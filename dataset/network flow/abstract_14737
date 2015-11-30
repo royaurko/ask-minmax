@@ -1,0 +1,15 @@
+Monotone frameworks is one of the most successful frameworks for
+intraprocedural data flow analysis extending the traditional class of bitvector
+frameworks (like live variables and available expressions). Weighted pushdown
+systems is similarly one of the most general frameworks for interprocedural
+analysis of programs. However, it makes use of idempotent semirings to
+represent the sets of properties and unfortunately they do not admit analyses
+whose transfer functions are not strict (e.g., classical bitvector frameworks).
+This motivates the development of algorithms for backward and forward
+reachability of pushdown systems using sets of properties forming so-called
+flow algebras that weaken some of the assumptions of idempotent semirings. In
+particular they do admit the bitvector frameworks, monotone frameworks, as well
+as idempotent semirings. We show that the algorithms are sound under mild
+assumptions on the flow algebras, mainly that the set of properties constitutes
+a join semi-lattice, and complete provided that the transfer functions are
+suitably distributive (but not necessarily strict).

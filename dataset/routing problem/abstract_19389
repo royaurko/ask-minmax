@@ -1,0 +1,21 @@
+The recently developed semi-Lagrangian discontinuous Galerkin approach is
+used to discretize hyperbolic partial differential equations (usually first
+order equations). Since these methods are conservative, local in space, and
+able to limit numerical diffusion, they are considered a promising alternative
+to more traditional semi-Lagrangian schemes (which are usually based on
+polynomial or spline interpolation).
+  In this paper, we consider a parallel implementation of a semi-Lagrangian
+discontinuous Galerkin method for distributed memory systems (so-called
+clusters). Both strong and weak scaling studies are performed on the Vienna
+Scientific Cluster 2 (VSC-2). In the case of weak scaling, up to 8192 cores, we
+observe a parallel efficiency above 0.89 for both two and four dimensional
+problems. Strong scaling results show good scalability to at least 1024 cores
+(we consider problems that can be run on a single processor in reasonable
+time). In addition, we study the scaling of a two dimensional Vlasov--Poisson
+solver that is implemented using the framework provided. All of the simulation
+are conducted in the context of worst case communication overhead; i.e., in a
+setting where the CFL number increases linearly with the problem size.
+  The framework introduced in this paper facilitates a dimension independent
+implementation (based on C++ templates) of scientific codes using both an MPI
+and a hybrid approach to parallelization. We describe the essential ingredients
+of our implementation.

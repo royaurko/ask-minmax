@@ -1,0 +1,19 @@
+In a scheduling game, each player owns a job and chooses a machine to execute
+it. While the social cost is the maximal load over all machines (makespan), the
+cost (disutility) of each player is the completion time of its own job. In the
+game, players may follow selfish strategies to optimize their cost and
+therefore their behaviors do not necessarily lead the game to an equilibrium.
+Even in the case there is an equilibrium, its makespan might be much larger
+than the social optimum, and this inefficiency is measured by the price of
+anarchy -- the worst ratio between the makespan of an equilibrium and the
+optimum. Coordination mechanisms aim to reduce the price of anarchy by
+designing scheduling policies that specify how jobs assigned to a same machine
+are to be scheduled. Typically these policies define the schedule according to
+the processing times as announced by the jobs. One could wonder if there are
+policies that do not require this knowledge, and still provide a good price of
+anarchy. This would make the processing times be private information and avoid
+the problem of truthfulness. In this paper we study these so-called
+non-clairvoyant policies. In particular, we study the RANDOM policy that
+schedules the jobs in a random order without preemption, and the EQUI policy
+that schedules the jobs in parallel using time-multiplexing, assigning each job
+an equal fraction of CPU time.

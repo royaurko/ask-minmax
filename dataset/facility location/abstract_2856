@@ -1,0 +1,9 @@
+We solve a fractional diffusion equation using a piecewise-constant,
+discontinuous Galerkin method in time combined with a continuous,
+piecewise-linear finite element method in space. If there are $N$ time levels
+and $M$ spatial degrees of freedom, then a direct implementation of this method
+requires $O(N^2M)$ operations and $O(NM)$ active memory locations, owing to the
+presence of a memory term: at each time step, the discrete evolution equation
+involves a sum over \emph{all} previous time levels. We show how the
+computational cost can be reduced to $O(MN\log N)$ operations and $O(M\log N)$
+active memory locations.

@@ -1,0 +1,25 @@
+Studies of solar and stellar convection often employ simple polytropic setups
+using the diffusion approximation instead of solving the proper radiative
+transfer equation. This allows one to control separately the polytropic index
+of the hydrostatic reference solution, the temperature contrast between top and
+bottom, and the Rayleigh and Peclet numbers. We extend such studies by
+including radiative transfer in the gray approximation using a Kramers-like
+opacity with freely adjustable coefficients. We study the properties of such
+models and compare them with results from the diffusion approximation. We use
+the Pencil Code, which is a high-order finite difference code where radiation
+is treated using the method of long characteristics. The source function is
+given by the Planck function. The opacity is written as kappa=kappa_0 rho^a
+T^b, where b is varied from -3.5 to +5, and kappa_0 is varied by four orders of
+magnitude. We consider sets of one dimensional models and perform a comparison
+with the diffusion approximation. Except for the case where b=5, we find
+one-dimensional hydrostatic equilibria with a nearly polytropic stratification
+and a polytropic index close to n=(3-b)/(1+a), covering both convectively
+stable (n>3/2) and unstable (n<3/2) cases. For b=3 and a=-1, the value of n is
+undefined a priori and the actual value of $n$ depends then on the depth of the
+domain. For large values of $\kappa_0$, the thermal adjustment time becomes
+long, the Peclet and Rayleigh numbers become large, and the temperature
+contrast increases and is thus no longer an independent input parameter, unless
+the Stefan Boltzmann constant is considered adjustable. Proper radiative
+transfer with Kramers-like opacities provides a useful tool for studying
+stratified layers with a radiative surface in ways that are more physical than
+what is possible with polytropic models using the diffusion approximation.

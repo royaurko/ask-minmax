@@ -1,0 +1,18 @@
+Ontology matching finds correspondences between similar entities of different
+ontologies. Two ontologies may be similar in some aspects such as structure,
+semantic etc. Most ontology matching systems integrate multiple matchers to
+extract all the similarities that two ontologies may have. Thus, we face a
+major problem to aggregate different similarities. Some matching systems use
+experimental weights for aggregation of similarities among different matchers
+while others use machine learning approaches and optimization algorithms to
+find optimal weights to assign to different matchers. However, both approaches
+have their own deficiencies. In this paper, we will point out the problems and
+shortcomings of current similarity aggregation strategies. Then, we propose a
+new strategy, which enables us to utilize the structural information of
+ontologies to get weights of matchers, for the similarity aggregation task. For
+achieving this goal, we create a new Ontology Matching system which it uses
+three available matchers, namely GMO, ISub and VDoc. We have tested our
+similarity aggregation strategy on the OAEI 2012 data set. Experimental results
+show significant improvements in accuracies of several cases, especially in
+matching the classes of ontologies. We will compare the performance of our
+similarity aggregation strategy with other well-known strategies

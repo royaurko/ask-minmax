@@ -1,0 +1,27 @@
+Consider a linear regression model with regression parameter
+beta=(beta_1,..., beta_p) and independent normal errors. Suppose the parameter
+of interest is theta = a^T beta, where a is specified. Define the s-dimensional
+parameter vector tau = C^T beta - t, where C and t are specified. Suppose that
+we carry out a preliminary F test of the null hypothesis H_0: tau = 0 against
+the alternative hypothesis H_1: tau not equal to 0. It is common statistical
+practice to then construct a confidence interval for theta with nominal
+coverage 1-alpha, using the same data, based on the assumption that the
+selected model had been given to us a priori(as the true model). We call this
+the naive 1-alpha confidence interval for theta. This assumption is false and
+it may lead to this confidence interval having minimum coverage probability far
+below 1-alpha, making it completely inadequate. Our aim is to compute this
+minimum coverage probability. It is straightforward to find an expression for
+the coverage probability of this confidence interval that is a multiple
+integral of dimension s+1. However, we derive a new elegant and
+computationally-convenient formula for this coverage probability. For s=2 this
+formula is a sum of a triple and a double integral and for all s>2 this formula
+is a sum of a quadruple and a double integral. This makes it easy to compute
+the minimum coverage probability of the naive confidence interval, irrespective
+of how large s is. A very important practical application of this formula is to
+the analysis of covariance. In this context, tau can be defined so that H_0
+expresses the hypothesis of "parallelism". Applied statisticians commonly
+recommend carrying out a preliminary F test of this hypothesis. We illustrate
+the application of our formula with a real-life analysis of covariance data set
+and a preliminary F test for "parallelism". We show that the naive 0.95
+confidence interval has minimum coverage probability 0.0846, showing that it is
+completely inadequate.

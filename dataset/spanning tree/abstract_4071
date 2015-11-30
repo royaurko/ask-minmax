@@ -1,0 +1,24 @@
+Decision forests and their variants deliver efficient state-of-the-art
+prediction performance, but many applications, such as probabilistic numerics,
+Bayesian optimization, uncertainty quantification, and planning, also demand a
+measure of the uncertainty associated with each prediction. Existing approaches
+to measuring the uncertainty of decision forest predictions are known to
+perform poorly, and so Gaussian processes and approximate variants are the
+standard tools in these application areas. With a goal of providing efficient
+state-of-the-art predictions together with estimates of uncertainty, we
+describe a regression framework using Mondrian forests, an approach to decision
+forests where the underlying random decision trees are modeled as i.i.d.
+Mondrian processes and efficient algorithms perform nonparametric Bayesian
+inference within each tree and ordinary model combination across trees. In our
+framework, the underlying nonparametric inference is a Gaussian diffusion over
+the tree, which results in a multivariate Gaussian calculation for inference in
+light of finite data that can be carried out efficiently using belief
+propagation. On a synthetic task designed to mimic a typical probabilistic
+numerical task, we demonstrate that Mondrian forest regression delivers far
+superior uncertainty quantification than existing decision forest methods with
+little-to-no cost in predictive performance. We then turn to a real-world
+probabilistic numerics benchmark modeling flight delay, where we compare
+Mondrian forests also to large-scale GP approximate methods. Our experiments
+demonstrate that Mondrian forests can deliver superior uncertainty assessments
+to GPs, as measured by negative predictive log density, with little-to-no loss
+in RMSE performance.

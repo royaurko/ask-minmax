@@ -1,0 +1,21 @@
+We consider the problem of finding equivalent minimal-size reformulations of
+SQL queries in presence of embedded dependencies [1]. Our focus is on
+select-project-join (SPJ) queries with equality comparisons, also known as safe
+conjunctive (CQ) queries, possibly with grouping and aggregation. For SPJ
+queries, the semantics of the SQL standard treat query answers as multisets
+(a.k.a. bags), whereas the stored relations may be treated either as sets,
+which is called bag-set semantics for query evaluation, or as bags, which is
+called bag semantics. (Under set semantics, both query answers and stored
+relations are treated as sets.)
+  In the context of the above Query-Reformulation Problem, we develop a
+comprehensive framework for equivalence of CQ queries under bag and bag-set
+semantics in presence of embedded dependencies, and make a number of conceptual
+and technical contributions. Specifically, we develop equivalence tests for CQ
+queries in presence of arbitrary sets of embedded dependencies under bag and
+bag-set semantics, under the condition that chase [9] under set semantics
+(set-chase) on the inputs terminates. We also present equivalence tests for
+aggregate CQ queries in presence of embedded dependencies. We use our
+equivalence tests to develop sound and complete (whenever set-chase on the
+inputs terminates) algorithms for solving instances of the Query-Reformulation
+Problem with CQ queries under each of bag and bag-set semantics, as well as for
+instances of the problem with aggregate queries.

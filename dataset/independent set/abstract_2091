@@ -1,0 +1,19 @@
+The Advanced Encryption Standard (AES) is widely recognized as the most
+important block cipher in common use nowadays. This high assurance in AES is
+given by its resistance to ten years of extensive cryptanalysis, that has shown
+no weakness, not even any deviation from the statistical behaviour expected
+from a random permutation. Only reduced versions of the ciphers have been
+broken, but they are not usually implemented. In this paper we build a
+distinguishing attack on the AES, exploiting the properties of a novel cipher
+embedding. With our attack we give some statistical evidence that the set of
+AES-$128$ encryptions acts on the message space in a way significantly
+different than that of the set of random permutations acting on the same space.
+While we feel that more computational experiments by independent third parties
+are needed in order to validate our statistical results, we show that the
+non-random behaviour is the same as we would predict using the property of our
+embedding. Indeed, the embedding lowers the nonlinearity of the AES rounds and
+therefore the AES encryptions tend, on average, to keep low the rank of
+low-rank matrices constructed in the large space. Our attack needs $2^{23}$
+plaintext-ciphertext pairs and costs the equivalent of $2^{48}$ encryptions.
+  We expect our attack to work also for AES-$192$ and AES-$256$, as confirmed
+by preliminary experiments.

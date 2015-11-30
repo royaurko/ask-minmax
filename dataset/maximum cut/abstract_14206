@@ -1,0 +1,15 @@
+L1 -penalized regression methods such as the Lasso (Tibshirani 1996) that
+achieve both variable selection and shrinkage have been very popular. An
+extension of this method is the Fused Lasso (Tibshirani and Wang 2007), which
+allows for the incorporation of external information into the model. In this
+article, we develop new and fast algorithms for solving the Fused Lasso which
+are based on coordinate-wise optimization. This class of algorithms has
+recently been applied very successfully to solve L1 -penalized problems very
+quickly (Friedman et al. 2007). As a straightforward coordinate-wise procedure
+does not converge to the global optimum in general, we adapt it in two ways,
+using maximum-flow algorithms and a Huber penalty based approximation to the
+loss function. In a simulation study, we evaluate the speed of these algorithms
+and compare them to other standard methods. As the Huber-penalty based method
+is only approximate, we also evaluate its accuracy. Apart from this, we also
+extend the Fused Lasso to logistic as well as proportional hazards models and
+allow for a more flexible penalty structure.

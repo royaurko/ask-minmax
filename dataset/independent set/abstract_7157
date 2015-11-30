@@ -1,0 +1,24 @@
+The construction of local reduced-order models via multiscale basis functions
+has been an area of active research. In this paper, we propose online
+multiscale basis functions which are constructed using the offline space and
+the current residual. Online multiscale basis functions are constructed
+adaptively in some selected regions based on our error indicators. We derive an
+error estimator which shows that one needs to have an offline space with
+certain properties to guarantee that additional online multiscale basis
+function will decrease the error. This error decrease is independent of
+physical parameters, such as the contrast and multiple scales in the problem.
+The offline spaces are constructed using Generalized Multiscale Finite Element
+Methods (GMsFEM). We show that if one chooses a sufficient number of offline
+basis functions, one can guarantee that additional online multiscale basis
+functions will reduce the error independent of contrast. We note that the
+construction of online basis functions is motivated by the fact that the
+offline space construction does not take into account distant effects. Using
+the residual information, we can incorporate the distant information provided
+the offline approximation satisfies certain properties. In the paper,
+theoretical and numerical results are presented. Our numerical results show
+that if the offline space is sufficiently large (in terms of the dimension)
+such that the coarse space contains all multiscale spectral basis functions
+that correspond to small eigenvalues, then the error reduction by adding online
+multiscale basis function is independent of the contrast. We discuss various
+ways computing online multiscale basis functions which include a use of small
+dimensional offline spaces.

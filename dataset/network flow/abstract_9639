@@ -1,0 +1,11 @@
+This paper presents the mechanization of a process algebra for Mobile Ad hoc
+Networks and Wireless Mesh Networks, and the development of a compositional
+framework for proving invariant properties. Mechanizing the core process
+algebra in Isabelle/HOL is relatively standard, but its layered structure
+necessitates special treatment. The control states of reactive processes, such
+as nodes in a network, are modelled by terms of the process algebra. We propose
+a technique based on these terms to streamline proofs of inductive invariance.
+This is not sufficient, however, to state and prove invariants that relate
+states across multiple processes (entire networks). To this end, we propose a
+novel compositional technique for lifting global invariants stated at the level
+of individual nodes to networks of nodes.

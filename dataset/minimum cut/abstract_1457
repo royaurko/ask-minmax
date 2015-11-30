@@ -1,0 +1,14 @@
+In the convex optimization approach to online regret minimization, many
+methods have been developed to guarantee a $O(\sqrt{T})$ regret bound for
+subdifferentiable convex loss functions with bounded subgradients by means of a
+reduction to bounded linear loss functions. This suggests that the latter tend
+to be the hardest loss functions to learn against. We investigate this question
+in a systematic fashion as a function of the decision set and the environment's
+set of moves. On the one hand, we exhibit a localization property for linear
+losses leading to $o(\sqrt{T})$ learning rates and provide examples where this
+property holds. On the other hand, we establish $\Omega(\sqrt{T})$ lower bounds
+on the minimum achievable regret for a class of piecewise linear loss functions
+that subsumes the class of bounded linear loss functions and for polyhedral
+decision sets. These results hold in a completely adversarial setting. In
+contrast, we show that the minimum achievable regret can be significantly
+smaller when the opponent is greedy.

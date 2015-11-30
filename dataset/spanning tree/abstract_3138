@@ -1,0 +1,24 @@
+The performance and accuracy of a GRAPE-3 system for collisionless N-body
+simulations is discussed. After a description of the hardware configurations
+available to us at Marseille, and the usefulness of on-line analysis, we
+concentrate on the performance and accuracy of the direct summation and tree
+code software. For the former we discuss the sources of round-off errors. The
+standard Barnes-Hut tree code has been modified for GRAPE-3, by dividing
+particles into blocks and performing the tree traversal for the whole block.
+The forces are then calculated by direct summation over the whole interaction
+list. The performance of the tree code depends on the number of particles in
+the block, the optimum number depending on the speed of the front end and the
+number of boards. The time per step scales with the number of particles, and
+decreases only weakly as the tolerance increases. We discuss the effect of the
+front end and compare performances with those of general purpose computers.
+  The accuracy of both direct summation and the tree code is discussed as
+function of the number of particles and the softening. The increased role of
+direct summation in the force calculation enhances the accuracy compared to the
+standard tree code. Finally, we follow the evolution of an isolated barred
+galaxy using different hardware and software in order to assess the reliability
+of our results. We find excellent agreement between the pattern speed of the
+bar in direct summation simulations run on the high precision GRAPE-4 machines
+and on our GRAPE-3 system. The agreement with the tree code is very good for
+tolerance values smaller than about 1.0.
+  We conclude that GRAPE-3 systems are well suited for collisionless
+simulations, in particular those of galaxies.

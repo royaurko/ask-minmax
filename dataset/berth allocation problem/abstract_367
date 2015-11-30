@@ -1,0 +1,26 @@
+This paper addresses the optimal design of limited-feedback downlink
+multi-user spatial multiplexing systems. A multiple-antenna base-station is
+assumed to serve multiple single-antenna users, who quantize and feed back
+their channel state information (CSI) through a shared rate-limited feedback
+channel. The optimization problem is cast in the form of minimizing the average
+transmission power at the base-station subject to users' target
+signal-to-interference-plus-noise ratios (SINR) and outage probability
+constraints. The goal is to derive the feedback bit allocations among the users
+and the corresponding channel magnitude and direction quantization codebooks in
+a high-resolution quantization regime. Toward this end, this paper develops an
+optimization framework using approximate analytical closed-form solutions, the
+accuracy of which is then verified by numerical results. The results show that,
+for channels in the real space, the number of channel direction quantization
+bits should be $(M-1)$ times the number of channel magnitude quantization bits,
+where $M$ is the number of base-station antennas. Moreover, users with higher
+requested quality-of-service (QoS), i.e. lower target outage probabilities, and
+higher requested downlink rates, i.e. higher target SINR's, should use larger
+shares of the feedback rate. It is also shown that, for the target QoS
+parameters to be feasible, the total feedback bandwidth should scale
+logarithmically with the geometric mean of the target SINR values and the
+geometric mean of the inverse target outage probabilities. In particular, the
+minimum required feedback rate is shown to increase if the users' target
+parameters deviate from the corresponding geometric means. Finally, the paper
+shows that, as the total number of feedback bits $B$ increases, the performance
+of the limited-feedback system approaches the perfect-CSI system as
+${2^{-{B}/{M^2}}}$.

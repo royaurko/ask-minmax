@@ -1,0 +1,16 @@
+We present a novel approach to accurate real-time estimation of wireless link
+quality using simple matched-filtering techniques. Our approach is based on the
+simple observation that there is a portion of each packet transmission from any
+given node that does not change from one packet to another; this includes
+preamble sequences used to synchronize the receiver and also address
+information in the packet header used for medium access control and routing.
+Our approach can be thought of as a generalized and simplified variant of
+standard signal processing techniques that are commonly used for preamble
+detection, automatic gain control, carrier sensing and other functions in many
+packet wireless networks. By using a combination of energy detection and
+correlation techniques, we show that we can effectively detect packet
+transmissions in real-time with low complexity, without decoding the packets
+themselves, and indeed, even without detailed knowledge of the packet format.
+We present extensive experimental results from a software-defined radio testbed
+to illustrate the effectiveness of this approach for 802.15.4 (Zigbee) networks
+even in the presence of strong interference signals and low SNR.

@@ -1,0 +1,17 @@
+A fully-automated algorithm is developed able to show that evaluation of a
+given untyped lambda-expression will terminate under CBV (call-by-value). The
+``size-change principle'' from first-order programs is extended to arbitrary
+untyped lambda-expressions in two steps. The first step suffices to show CBV
+termination of a single, stand-alone lambda;-expression. The second suffices to
+show CBV termination of any member of a regular set of lambda-expressions,
+defined by a tree grammar. (A simple example is a minimum function, when
+applied to arbitrary Church numerals.) The algorithm is sound and proven so in
+this paper. The Halting Problem's undecidability implies that any sound
+algorithm is necessarily incomplete: some lambda-expressions may in fact
+terminate under CBV evaluation, but not be recognised as terminating.
+  The intensional power of the termination algorithm is reasonably high. It
+certifies as terminating many interesting and useful general recursive
+algorithms including programs with mutual recursion and parameter exchanges,
+and Colson's ``minimum'' algorithm. Further, our type-free approach allows use
+of the Y combinator, and so can identify as terminating a substantial subset of
+PCF.

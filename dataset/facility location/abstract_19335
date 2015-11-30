@@ -1,0 +1,26 @@
+The Lagrange reconstructing polynomial [Shu C.W.: {\em SIAM Rev.} {\bf 51}
+(2009) 82--126] of a function $f(x)$ on a given set of equidistant ($\Delta
+x=\const$) points $\bigl\{x_i+\ell\Delta x;\;\ell\in\{-M_-,...,+M_+\}\bigr\}$
+is defined [Gerolymos G.A.: {\em J. Approx. Theory} {\bf 163} (2011) 267--305]
+as the polynomial whose sliding (with $x$) averages on $[x-\tfrac{1}{2}\Delta
+x,x+\tfrac{1}{2}\Delta x]$ are equal to the Lagrange interpolating polynomial
+of $f(x)$ on the same stencil. We first study the fundamental functions of
+Lagrange reconstruction, show that these polynomials have only real and
+distinct roots, which are never located at the cell-interfaces (half-points)
+$x_i+n\tfrac{1}{2}\Delta x$ ($n\in\mathbb{Z}$), and obtain several identities.
+Using these identities, by analogy to the recursive Neville-Aitken-like
+algorithm applied to the Lagrange interpolating polynomial, we show that there
+exists a unique representation of the Lagrange reconstructing polynomial on
+$\{i-M_-,...,i+M_+\}$ as a combination of the Lagrange reconstructing
+polynomials on the $K_\mathrm{s}+1\leq M:=M_-+M_+>1$ substencils
+$\{i-M_-+k_\mathrm{s},...,i+M_+-K_\mathrm{s}+k_\mathrm{s}\}$
+($k_\mathrm{s}\in\{0,...,K_\mathrm{s}\}$), with weights
+$\sigma_{R_1,M_-,M_+,K_\mathrm{s},k_\mathrm{s}}(\xi)$ which are rational
+functions of $\xi$ ($x=x_i+\xi\Delta x$) [Liu Y.Y., Shu C.W., Zhang M.P.: {\em
+Acta Math. Appl. Sinica} {\bf 25} (2009) 503--538], and give an analytical
+recursive expression of the weight-functions. We then use the analytical
+expression of the weight-functions
+$\sigma_{R_1,M_-,M_+,K_\mathrm{s},k_\mathrm{s}}(\xi)$ to obtain a formal proof
+of convexity (positivity of the weight-functions) in the neighborhood of
+$\xi=\tfrac{1}{2}$, under the condition that all of the substencils contain
+either point $i$ or point $i+1$ (or both).

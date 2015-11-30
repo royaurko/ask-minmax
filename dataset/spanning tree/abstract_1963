@@ -1,0 +1,12 @@
+We present an algorithm for the Merkle tree traversal problem which combines
+the efficient space-time trade-off from the fractal Merkle tree [3] and the
+space efficiency from the improved log space-time Merkle trees traversal [8].
+We give an exhaustive analysis of the space and time efficiency of our
+algorithm in function of the parameters H (the height of the Merkle tree) and h
+(h = H L where L is the number of levels in the Merkle tree). We also analyze
+the space impact when a continuous deterministic pseudo-random number generator
+(PRNG) is used to generate the leaves. We further program a low storage-space
+and a low time-overhead version of the algorithm in Java and measure its
+performance with respect to the two different implementations cited above. Our
+implementation uses the least space when a continuous PRNG is used for the leaf
+calculation.

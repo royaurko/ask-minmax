@@ -1,0 +1,10 @@
+Baker and Cirinei introduced an exact but naive algorithm, based on solving a
+state reachability problem in a finite automaton, to check whether sets of
+sporadic hard real-time tasks are schedulable on identical multiprocessor
+platforms. However, the algorithm suffered from poor performance due to the
+exponential size of the automaton relative to the size of the task set. In this
+paper, we successfully apply techniques developed by the formal verification
+community, specifically antichain algorithms, by defining and proving the
+correctness of a simulation relation on Baker and Cirinei's automaton. We show
+our improved algorithm yields dramatically improved performance for the
+schedulability test and opens for many further improvements.

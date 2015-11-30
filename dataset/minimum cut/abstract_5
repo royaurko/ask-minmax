@@ -1,0 +1,15 @@
+For an edge-weighted connected undirected graph, the minimum $k$-way cut
+problem is to find a subset of edges of minimum total weight whose removal
+separates the graph into $k$ connected components. The problem is NP-hard when
+$k$ is part of the input and W[1]-hard when $k$ is taken as a parameter.
+  A simple algorithm for approximating a minimum $k$-way cut is to iteratively
+increase the number of components of the graph by $h-1$, where $2 \le h \le k$,
+until the graph has $k$ components. The approximation ratio of this algorithm
+is known for $h \le 3$ but is open for $h \ge 4$.
+  In this paper, we consider a general algorithm that iteratively increases the
+number of components of the graph by $h_i-1$, where $h_1 \le h_2 \le ... \le
+h_q$ and $\sum_{i=1}^q (h_i-1) = k-1$. We prove that the approximation ratio of
+this general algorithm is $2 - (\sum_{i=1}^q {h_i \choose 2})/{k \choose 2}$,
+which is tight. Our result implies that the approximation ratio of the simple
+algorithm is $2-h/k + O(h^2/k^2)$ in general and $2-h/k$ if $k-1$ is a multiple
+of $h-1$.

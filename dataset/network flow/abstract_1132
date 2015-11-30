@@ -1,0 +1,16 @@
+Admission control as a mechanism for providing QoS requires an accurate
+description of the requested flow as well as already admitted flows. Since
+802.11 WLAN capacity is shared between flows belonging to all stations,
+admission control requires knowledge of all flows in the WLAN. Further,
+estimation of the load-dependent WLAN capacity through analytical model
+requires inputs about channel data rate, payload size and the number of
+stations. These factors combined point to a centralized admission control
+whereas for 802.11 DCF it is ideally performed in a distributed manner. The use
+of measurements from the channel avoids explicit inputs about the state of the
+channel described above. BUFFET, a model based measurement-assisted distributed
+admission control scheme for DCF proposed in this paper relies on measurements
+to derive model inputs and predict WLAN saturation, thereby maintaining average
+delay within acceptable limits. Being measurement based, it adapts to a
+combination of data rates and payload sizes, making it completely autonomous
+and distributed. Performance analysis using OPNET simulations suggests that
+BUFFET is able to ensure average delay under 7ms at a near-optimal throughput.

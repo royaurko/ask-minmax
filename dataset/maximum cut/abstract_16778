@@ -1,0 +1,18 @@
+The problem of graphical model selection is to correctly estimate the graph
+structure of a Markov random field given samples from the underlying
+distribution. We analyze the information-theoretic limitations of the problem
+of graph selection for binary Markov random fields under high-dimensional
+scaling, in which the graph size $p$ and the number of edges $k$, and/or the
+maximal node degree $d$ are allowed to increase to infinity as a function of
+the sample size $n$. For pairwise binary Markov random fields, we derive both
+necessary and sufficient conditions for correct graph selection over the class
+$\mathcal{G}_{p,k}$ of graphs on $p$ vertices with at most $k$ edges, and over
+the class $\mathcal{G}_{p,d}$ of graphs on $p$ vertices with maximum degree at
+most $d$. For the class $\mathcal{G}_{p, k}$, we establish the existence of
+constants $c$ and $c'$ such that if $\numobs < c k \log p$, any method has
+error probability at least 1/2 uniformly over the family, and we demonstrate a
+graph decoder that succeeds with high probability uniformly over the family for
+sample sizes $\numobs > c' k^2 \log p$. Similarly, for the class
+$\mathcal{G}_{p,d}$, we exhibit constants $c$ and $c'$ such that for $n < c d^2
+\log p$, any method fails with probability at least 1/2, and we demonstrate a
+graph decoder that succeeds with high probability for $n > c' d^3 \log p$.

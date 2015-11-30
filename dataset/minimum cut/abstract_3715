@@ -1,0 +1,16 @@
+Motivated by the increasing prominence of loosely-coupled systems, such as
+mobile and sensor networks, which are characterised by intermittent
+connectivity and volatile data, we study the tagging of data with so-called
+expiration times. More specifically, when data are inserted into a database,
+they may be tagged with time values indicating when they expire, i.e., when
+they are regarded as stale or invalid and thus are no longer considered part of
+the database. In a number of applications, expiration times are known and can
+be assigned at insertion time. We present data structures and algorithms for
+online management of data tagged with expiration times. The algorithms are
+based on fully functional, persistent treaps, which are a combination of binary
+search trees with respect to a primary attribute and heaps with respect to a
+secondary attribute. The primary attribute implements primary keys, and the
+secondary attribute stores expiration times in a minimum heap, thus keeping a
+priority queue of tuples to expire. A detailed and comprehensive experimental
+study demonstrates the well-behavedness and scalability of the approach as well
+as its efficiency with respect to a number of competitors.

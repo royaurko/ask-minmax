@@ -1,0 +1,24 @@
+The notion of treewidth plays an important role in theoretical and practical
+studies of graph problems. It has been recognized that, especially in practical
+environments, when computing the treewidth of a graph it is invaluable to first
+apply an array of preprocessing rules that simplify and shrink it. This work
+seeks to prove rigorous performance guarantees for such preprocessing rules,
+both known and new ones, by studying them in the framework of kernelization
+from parameterized complexity.
+  It is known that the NP-complete problem of determining whether a given graph
+G has treewidth at most k admits no polynomial-time preprocessing algorithm
+that reduces any input instance to size polynomial in k, unless NP is in
+coNP/poly and the polynomial hierarchy collapses to its third level. In this
+paper we therefore consider structural graph measures larger than treewidth,
+and determine whether efficient preprocessing can shrink the instance size to a
+polynomial in such a parameter value.
+  We prove that given an instance (G,k) of treewidth we can efficiently reduce
+its size to O(fvs(G)^4) vertices, where fvs(G) is the size of a minimum
+feedback vertex set in G. We can also prove a size reduction to O(vc(G)^3)
+vertices, where vc(G) is the size of a minimum vertex cover. Phrased in the
+language of parameterized complexity, we show that Treewidth has a polynomial
+kernel when parameterized by the size of a given feedback vertex set, and also
+by the size of a vertex cover. In contrast we show that Treewidth parameterized
+by the vertex-deletion distance to a single clique, and Weighted Treewidth
+parameterized by the size of a vertex cover, do not admit polynomial
+kernelizations unless NP is in coNP/poly.

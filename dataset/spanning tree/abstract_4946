@@ -1,0 +1,17 @@
+In this paper we present a novel algorithm for concurrent lock-free internal
+binary search trees (BST) and implement a Set abstract data type (ADT) based on
+that. We show that in the presented lock-free BST algorithm the amortized step
+complexity of each set operation - {\sc Add}, {\sc Remove} and {\sc Contains} -
+is $O(H(n) + c)$, where, $H(n)$ is the height of BST with $n$ number of nodes
+and $c$ is the contention during the execution. Our algorithm adapts to
+contention measures according to read-write load. If the situation is
+read-heavy, the operations avoid helping pending concurrent {\sc Remove}
+operations during traversal, and, adapt to interval contention. However, for
+write-heavy situations we let an operation help pending {\sc Remove}, even
+though it is not obstructed, and so adapt to tighter point contention. It uses
+single-word compare-and-swap (\texttt{CAS}) operations. We show that our
+algorithm has improved disjoint-access-parallelism compared to similar existing
+algorithms. We prove that the presented algorithm is linearizable. To the best
+of our knowledge this is the first algorithm for any concurrent tree data
+structure in which the modify operations are performed with an additive term of
+contention measure.

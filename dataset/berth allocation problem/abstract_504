@@ -1,0 +1,22 @@
+We study the necessity of predictive information in a class of queueing
+admission control problems, where a system manager is allowed to divert
+incoming jobs up to a fixed rate, in order to minimize the queueing delay
+experienced by the admitted jobs.
+  Spencer et al. (2014) show that the system's delay performance can be
+significantly improved by having access to future information in the form of a
+lookahead window, during which the times of future arrivals and services are
+revealed. They prove that, while delay under an optimal online policy diverges
+to infinity in the heavy-traffic regime, it can stay bounded by making use of
+future information. However, the diversion polices of Spencer et al. (2014)
+require the length of the lookahead window to grow to infinity at a non-trivial
+rate in the heavy-traffic regime, and it remained open whether substantial
+performance improvement could still be achieved with less future information.
+  We resolve this question to a large extent by establishing an asymptotically
+tight lower bound on how much future information is necessary to achieve
+superior performance, which matches the upper bound of Spencer et al. (2014) up
+to a constant multiplicative factor. Our result hence demonstrates that the
+system's heavy-traffic delay performance is highly sensitive to the amount of
+future information available. Our proof is based on analyzing certain excursion
+probabilities of the input sample paths, and exploiting a connection between a
+policy's diversion decisions and subsequent server idling, which may be of
+independent interest for related dynamic resource allocation problems.

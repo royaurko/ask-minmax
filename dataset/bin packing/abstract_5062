@@ -1,0 +1,24 @@
+Modern communication receiver architectures center around digital signal
+processing (DSP), with the bulk of the receiver processing being performed on
+digital signals obtained after analog-to-digital conversion (ADC). In this
+paper, we explore Shannon-theoretic performance limits when ADC precision is
+drastically reduced, from typical values of 8-12 bits used in current
+communication transceivers, to 1-3 bits. The goal is to obtain insight on
+whether DSP-centric transceiver architectures are feasible as communication
+bandwidths scale up, recognizing that high-precision ADC at high sampling rates
+is either unavailable, or too costly or power-hungry. Specifically, we evaluate
+the communication limits imposed by low-precision ADC for the ideal real
+discrete-time Additive White Gaussian Noise (AWGN) channel, under an average
+power constraint on the input. For an ADC with K quantization bins (i.e., a
+precision of log2 K bits), we show that the Shannon capacity is achievable by a
+discrete input distribution with at most K + 1 mass points. For 2-bin (1-bit)
+symmetric ADC, this result is tightened to show that binary antipodal signaling
+is optimum for any signal-to-noise ratio (SNR). For multi-bit ADC, the capacity
+is computed numerically, and the results obtained are used to make the
+following encouraging observations regarding system design with low-precision
+ADC : (a) even at moderately high SNR of up to 20 dB, 2-3 bit quantization
+results in only 10-20% reduction of spectral efficiency, which is acceptable
+for large communication bandwidths, (b) standard equiprobable pulse amplitude
+modulation with ADC thresholds set to implement maximum likelihood hard
+decisions is asymptotically optimum at high SNR, and works well at low to
+moderate SNRs as well.

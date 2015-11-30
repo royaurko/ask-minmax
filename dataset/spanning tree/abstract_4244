@@ -1,0 +1,10 @@
+Inspired by biological dynamics, we consider a growth Markov process taking
+values on the space of rooted binary trees, similar to the Aldous-Shields
+model. Fix $n\ge 1$ and $\beta>0$. We start at time 0 with the tree composed of
+a root only. At any time, each node with no descendants, independently from the
+other nodes, produces two successors at rate $\beta(n-k)/n$, where $k$ is the
+distance from the node to the root. Denote by $Z_n(t)$ the number of nodes with
+no descendants at time $t$ and let $T_n = \beta^{-1} n \ln(n /\ln 4) + (\ln
+2)/(2 \beta)$. We prove that $2^{-n} Z_n(T_n + n \tau)$, $\tau\in\bb R$,
+converges to the Gompertz curve $\exp (- (\ln 2) e^{-\beta \tau})$. We also
+prove a central limit theorem for the martingale associated to $Z_n(t)$.

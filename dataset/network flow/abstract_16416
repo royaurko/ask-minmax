@@ -1,0 +1,19 @@
+A stable partitioned algorithm for coupling incompressible flows with
+compressible elastic solids is described. This added-mass partitioned (AMP)
+scheme requires no sub-iterations, can be made fully second- or higher-order
+accurate, and remains stable even in the presence of strong added-mass effects.
+The approach extends the scheme of Banks et al. [1,2] for compressible flow,
+and uses Robin (mixed) boundary conditions with the fluid and solid solvers at
+the interface. The AMP Robin conditions are derived from a local characteristic
+decomposition in the solid at the interface. Two forms of the Robin conditions
+are derived depending on whether the fluid equations are advanced with a
+fractional-step method or not. A normal mode analysis for a discretization of
+an FSI model problem is performed to show that the new AMP algorithm is stable
+for any ratio of the solid and fluid densities, including the case of very
+light solids when the added-mass effects are large. In contrast, it is shown
+that a traditional partitioned algorithm involving a Dirichlet-Neumann coupling
+for the same FSI problem is formally unconditionally unstable for any ratio of
+densities. Exact traveling wave solutions are derived for three FSI model
+problems of increasing complexity, and these solutions are used to verify the
+stability and accuracy of the corresponding numerical results obtained from the
+AMP algorithm for the cases of light, medium and heavy solids.

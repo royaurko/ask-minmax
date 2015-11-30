@@ -1,0 +1,10 @@
+This article presents a form of bi-cross-validation (BCV) for choosing the
+rank in outer product models, especially the singular value decomposition (SVD)
+and the nonnegative matrix factorization (NMF). Instead of leaving out a set of
+rows of the data matrix, we leave out a set of rows and a set of columns, and
+then predict the left out entries by low rank operations on the retained data.
+We prove a self-consistency result expressing the prediction error as a
+residual from a low rank approximation. Random matrix theory and some empirical
+results suggest that smaller hold-out sets lead to more over-fitting, while
+larger ones are more prone to under-fitting. In simulated examples we find that
+a method leaving out half the rows and half the columns performs well.

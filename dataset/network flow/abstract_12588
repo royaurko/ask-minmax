@@ -1,0 +1,23 @@
+In the context of resource allocation in cloud-radio access networks, recent
+studies assume either signal-level or scheduling-level coordination. This
+paper, instead, considers a hybrid level of coordination for the scheduling
+problem in the downlink of a multi-cloud radio-access network, as a means to
+benefit from both scheduling policies. Consider a multi-cloud radio access
+network, where each cloud is connected to several base-stations (BSs) via high
+capacity links, and therefore allows joint signal processing between them.
+Across the multiple clouds, however, only scheduling-level coordination is
+permitted, as it requires a lower level of backhaul communication. The frame
+structure of every BS is composed of various time/frequency blocks, called
+power-zones (PZs), and kept at fixed power level. The paper addresses the
+problem of maximizing a network-wide utility by associating users to clouds and
+scheduling them to the PZs, under the practical constraints that each user is
+scheduled, at most, to a single cloud, but possibly to many BSs within the
+cloud, and can be served by one or more distinct PZs within the BSs' frame. The
+paper solves the problem using graph theory techniques by constructing the
+conflict graph. The scheduling problem is, then, shown to be equivalent to a
+maximum-weight independent set problem in the constructed graph, in which each
+vertex symbolizes an association of cloud, user, BS and PZ, with a weight
+representing the utility of that association. Simulation results suggest that
+the proposed hybrid scheduling strategy provides appreciable gain as compared
+to the scheduling-level coordinated networks, with a negligible degradation to
+signal-level coordination.

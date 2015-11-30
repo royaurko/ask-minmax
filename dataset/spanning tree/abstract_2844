@@ -1,0 +1,14 @@
+In this paper, we describe the design and performance of GRAPE-6A, a
+special-purpose computer for gravitational many-body simulations. It was
+designed to be used with a PC cluster, in which each node has one GRAPE-6A.
+Such configuration is particularly effective in running parallel tree
+algorithm. Though the use of parallel tree algorithm was possible with the
+original GRAPE-6 hardware, it was not very cost-effective since a single
+GRAPE-6 board was still too fast and too expensive. Therefore, we designed
+GRAPE-6A as a single PCI card to minimize the reproduction cost and optimize
+the computing speed. The peak performance is 130 Gflops for one GRAPE-6A board
+and 3.1 Tflops for our 24 node cluster. We describe the implementation of the
+tree, TreePM and individual timestep algorithms on both a single GRAPE-6A
+system and GRAPE-6A cluster. Using the tree algorithm on our 16-node GRAPE-6A
+system, we can complete a collisionless simulation with 100 million particles
+(8000 steps) within 10 days.

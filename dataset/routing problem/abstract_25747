@@ -1,0 +1,13 @@
+We present a new interior-point potential-reduction algorithm for solving
+monotone linear complementarity problems (LCPs) that have a particular special
+structure: their matrix $M\in{\mathbb R}^{n\times n}$ can be decomposed as
+$M=\Phi U + \Pi_0$, where the rank of $\Phi$ is $k<n$, and $\Pi_0$ denotes
+Euclidean projection onto the nullspace of $\Phi^\top$. We call such LCPs
+projective. Our algorithm solves a monotone projective LCP to relative accuracy
+$\epsilon$ in $O(\sqrt n \ln(1/\epsilon))$ iterations, with each iteration
+requiring $O(nk^2)$ flops. This complexity compares favorably with
+interior-point algorithms for general monotone LCPs: these algorithms also
+require $O(\sqrt n \ln(1/\epsilon))$ iterations, but each iteration needs to
+solve an $n\times n$ system of linear equations, a much higher cost than our
+algorithm when $k\ll n$. Our algorithm works even though the solution to a
+projective LCP is not restricted to lie in any low-rank subspace.

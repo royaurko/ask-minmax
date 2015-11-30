@@ -1,0 +1,14 @@
+We consider the problem of communicating information over a network secretly
+and reliably in the presence of a hidden adversary who can eavesdrop and inject
+malicious errors. We provide polynomial-time, rate-optimal distributed network
+codes for this scenario, improving on the rates achievable in previous work.
+Our main contribution shows that as long as the sum of the adversary's jamming
+rate Zo and his eavesdropping rate Zi is less than the network capacity C,
+(i.e., Zo+Zi<C), our codes can communicate (with vanishingly small error
+probability) a single bit correctly and without leaking any information to the
+adversary. We then use this to design codes that allow communication at the
+optimal source rate of C-Zo-Zi, while keeping the communicated message secret
+from the adversary. Interior nodes are oblivious to the presence of adversaries
+and perform random linear network coding; only the source and destination need
+to be tweaked. In proving our results we correct an error in prior work by a
+subset of the contributors in this work.

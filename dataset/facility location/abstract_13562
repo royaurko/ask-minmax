@@ -1,0 +1,14 @@
+We present an extension of Voronoi diagrams where not only the distance to
+the site is taken into account when considering which site the client is going
+to use, but additional attributes (i.e., prices) are also considered. A cell in
+this diagram is then the locus of all points (i.e. clients) that consider the
+same set of sites to be relevant. In particular, the precise site a client
+might use from this candidate set depends on parameters that might change
+between usages, and the candidate set lists all of the relevant sites. The
+resulting diagram is significantly more expressive than Voronoi diagrams, but
+naturally has the drawback that its complexity, even in the plane, might be
+quite high.
+  Nevertheless, we show that if the attributes of the sites are drawn from the
+same distribution (note that the locations are fixed), then the expected
+complexity of the candidate diagram is near linear. To derive this result, we
+derive several new technical results, which are of independent interest.

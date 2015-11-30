@@ -1,0 +1,23 @@
+Groundwater flow in Washington DC greatly influences the surface water
+quality in urban areas. The current methods of flow estimation, based on
+Darcy's Law and the groundwater flow equation, can be described by the
+diffusion equation (the transient flow) and the Laplace equation (the
+steady-state flow). The Laplace equation is a simplification of the diffusion
+equation under the condition that the aquifer has a recharging boundary. The
+practical way of calculation is to use numerical methods to solve these
+equations. The most popular system is called MODFLOW, which was developed by
+USGS. MODFLOW is based on the finite-difference method in rectangular Cartesian
+coordinates. MODFLOW can be viewed as a "quasi 3D" simulation since it only
+deals with the vertical average (no z-direction derivative). Flow calculations
+between the 2D horizontal layers use the concept of leakage. In this project,
+we have established a mathematical model based on gradually varied functions
+for groundwater data volume reconstruction. These functions do not rely on the
+rectangular Cartesian coordinate system. A gradually varied function can be
+defined in a general graph or network. Gradually varied functions are suitable
+for arbitrarily shaped aquifers. Two types of models are designed and
+implemented for real data processing: (1) the gradually varied model for
+individual (time) groundwater flow data, (2) the gradually varied model for
+sequential (time) groundwater flow data. In application, we also established a
+MySQL database to support the related research. The advantage of the gradually
+varied fitting and its related method does not need the strictly defined
+boundary condition as it is required in MODFLOW.

@@ -1,0 +1,23 @@
+How can we model networks with a mathematically tractable model that allows
+for rigorous analysis of network properties? Networks exhibit a long list of
+surprising properties: heavy tails for the degree distribution; small
+diameters; and densification and shrinking diameters over time. Most present
+network models either fail to match several of the above properties, are
+complicated to analyze mathematically, or both. In this paper we propose a
+generative model for networks that is both mathematically tractable and can
+generate networks that have the above mentioned properties. Our main idea is to
+use the Kronecker product to generate graphs that we refer to as "Kronecker
+graphs".
+  First, we prove that Kronecker graphs naturally obey common network
+properties. We also provide empirical evidence showing that Kronecker graphs
+can effectively model the structure of real networks.
+  We then present KronFit, a fast and scalable algorithm for fitting the
+Kronecker graph generation model to large real networks. A naive approach to
+fitting would take super- exponential time. In contrast, KronFit takes linear
+time, by exploiting the structure of Kronecker matrix multiplication and by
+using statistical simulation techniques.
+  Experiments on large real and synthetic networks show that KronFit finds
+accurate parameters that indeed very well mimic the properties of target
+networks. Once fitted, the model parameters can be used to gain insights about
+the network structure, and the resulting synthetic graphs can be used for null-
+models, anonymization, extrapolations, and graph summarization.

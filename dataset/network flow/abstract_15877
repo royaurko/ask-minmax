@@ -1,0 +1,18 @@
+Given a set of $n$ terminals, which are points in $d$-dimensional Euclidean
+space, the minimum Manhattan network problem (MMN) asks for a minimum-length
+rectilinear network that connects each pair of terminals by a Manhattan path,
+that is, a path consisting of axis-parallel segments whose total length equals
+the pair's Manhattan distance. Even for $d=2$, the problem is NP-hard, but
+constant-factor approximations are known. For $d \ge 3$, the problem is
+APX-hard; it is known to admit, for any $\eps > 0$, an
+$O(n^\eps)$-approximation.
+  In the generalized minimum Manhattan network problem (GMMN), we are given a
+set $R$ of $n$ terminal pairs, and the goal is to find a minimum-length
+rectilinear network such that each pair in $R$ is connected by a Manhattan
+path. GMMN is a generalization of both MMN and the well-known rectilinear
+Steiner arborescence problem (RSA). So far, only special cases of GMMN have
+been considered.
+  We present an $O(\log^{d+1} n)$-approximation algorithm for GMMN (and, hence,
+MMN) in $d \ge 2$ dimensions and an $O(\log n)$-approximation algorithm for 2D.
+We show that an existing $O(\log n)$-approximation algorithm for RSA in 2D
+generalizes easily to $d>2$ dimensions.

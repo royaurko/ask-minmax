@@ -1,0 +1,12 @@
+We present a waveform relaxation version of the Dirichlet-Neumann method for
+parabolic problem. Like the Dirichlet-Neumann method for steady problems, the
+method is based on a non-overlapping spatial domain decomposition, and the
+iteration involves subdomain solves with Dirichlet boundary conditions followed
+by subdomain solves with Neumann boundary conditions. However, each subdomain
+problem is now in space and time, and the interface conditions are also
+time-dependent. Using a Laplace transform argument, we show for the heat
+equation that when we consider finite time intervals, the Dirichlet-Neumann
+method converges, similar to the case of Schwarz waveform relaxation
+algorithms. The convergence rate depends on the length of the subdomains as
+well as the size of the time window. In this discussion, we only stick to the
+linear bound. We illustrate our results with numerical experiments.

@@ -1,0 +1,22 @@
+Given a set of points $P \subset \mathbb{R}^d$, the $k$-means clustering
+problem is to find a set of $k$ {\em centers} $C = \{c_1,...,c_k\}, c_i \in
+\mathbb{R}^d,$ such that the objective function $\sum_{x \in P} d(x,C)^2$,
+where $d(x,C)$ denotes the distance between $x$ and the closest center in $C$,
+is minimized. This is one of the most prominent objective functions that have
+been studied with respect to clustering.
+  $D^2$-sampling \cite{ArthurV07} is a simple non-uniform sampling technique
+for choosing points from a set of points. It works as follows: given a set of
+points $P \subseteq \mathbb{R}^d$, the first point is chosen uniformly at
+random from $P$. Subsequently, a point from $P$ is chosen as the next sample
+with probability proportional to the square of the distance of this point to
+the nearest previously sampled points.
+  $D^2$-sampling has been shown to have nice properties with respect to the
+$k$-means clustering problem. Arthur and Vassilvitskii \cite{ArthurV07} show
+that $k$ points chosen as centers from $P$ using $D^2$-sampling gives an
+$O(\log{k})$ approximation in expectation. Ailon et. al. \cite{AJMonteleoni09}
+and Aggarwal et. al. \cite{AggarwalDK09} extended results of \cite{ArthurV07}
+to show that $O(k)$ points chosen as centers using $D^2$-sampling give $O(1)$
+approximation to the $k$-means objective function with high probability. In
+this paper, we further demonstrate the power of $D^2$-sampling by giving a
+simple randomized $(1 + \epsilon)$-approximation algorithm that uses the
+$D^2$-sampling in its core.

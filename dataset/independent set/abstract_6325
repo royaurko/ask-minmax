@@ -1,0 +1,18 @@
+Previous analytical studies of on-line Independent Component Analysis (ICA)
+learning rules have focussed on asymptotic stability and efficiency. In
+practice the transient stages of learning will often be more significant in
+determining the success of an algorithm. This is demonstrated here with an
+analysis of a Hebbian ICA algorithm which can find a small number of
+non-Gaussian components given data composed of a linear mixture of independent
+source signals. An idealised data model is considered in which the sources
+comprise a number of non-Gaussian and Gaussian sources and a solution to the
+dynamics is obtained in the limit where the number of Gaussian sources is
+infinite. Previous stability results are confirmed by expanding around optimal
+fixed points, where a closed form solution to the learning dynamics is
+obtained. However, stochastic effects are shown to stabilise otherwise unstable
+sub-optimal fixed points. Conditions required to destabilise one such fixed
+point are obtained for the case of a single non-Gaussian component, indicating
+that the initial learning rate \eta required to successfully escape is very low
+(\eta = O(N^{-2}) where N is the data dimension) resulting in very slow
+learning typically requiring O(N^3) iterations. Simulations confirm that this
+picture holds for a finite system.

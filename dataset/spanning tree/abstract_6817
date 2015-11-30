@@ -1,0 +1,11 @@
+We consider the problem of maximum a posteriori (MAP) inference in discrete
+graphical models. We present a parallel MAP inference algorithm called
+Bethe-ADMM based on two ideas: tree-decomposition of the graph and the
+alternating direction method of multipliers (ADMM). However, unlike the
+standard ADMM, we use an inexact ADMM augmented with a Bethe-divergence based
+proximal function, which makes each subproblem in ADMM easy to solve in
+parallel using the sum-product algorithm. We rigorously prove global
+convergence of Bethe-ADMM. The proposed algorithm is extensively evaluated on
+both synthetic and real datasets to illustrate its effectiveness. Further, the
+parallel Bethe-ADMM is shown to scale almost linearly with increasing number of
+cores.

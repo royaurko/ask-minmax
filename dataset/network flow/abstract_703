@@ -1,0 +1,12 @@
+The goal of congestion control is to avoid congestion in network elements. A
+network element is congested if it is being offered more traffic than it can
+process. To detect such situations and to neutralize them we should monitor
+traffic in the network. In this paper, we propose using Cisco's NetFlow
+technology, which allows collecting statistics about traffic in the network by
+generating special NetFlow packets. Cisco's routers can send NetFlow packets to
+a special node, so we can collect these packets, analyze its content and detect
+network congestion. We use Cisco's feature as example, some other vendors
+(Juniper, 3COM, Alcatel, etc.) provide similar features for their routers. We
+also consider a simple system, which collects statistical information about
+network elements, determines overloaded elements and identifies flows, which
+congest them.

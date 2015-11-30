@@ -1,0 +1,13 @@
+LZ77-based compression schemes compress the input text by replacing factors
+in the text with an encoded reference to a previous occurrence formed by the
+couple (length, offset). For a given factor, the smallest is the offset, the
+smallest is the resulting compression ratio. This is optimally achieved by
+using the rightmost occurrence of a factor in the previous text. Given a cost
+function, for instance the minimum number of bits used to represent an integer,
+we define the Rightmost Equal-Cost Position (REP) problem as the problem of
+finding one of the occurrences of a factor which cost is equal to the cost of
+the rightmost one. We present the Multi-Layer Suffix Tree data structure that,
+for a text of length n, at any time i, it provides REP(LPF) in constant time,
+where LPF is the longest previous factor, i.e. the greedy phrase, a reference
+to the list of REP({set of prefixes of LPF}) in constant time and REP(p) in
+time O(|p| log log n) for any given pattern p.

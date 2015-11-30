@@ -1,0 +1,16 @@
+A set $G$ of points on a 1.5-dimensional terrain, also known as an
+$x$-monotone polygonal chain, is said to guard the terrain if any point on the
+terrain is 'seen' by a point in $G$. Two points on the terrain see each other
+if and only if the line segment between them is never strictly below the
+terrain. The minimum terrain guarding problem asks for a minimum guarding set
+for the given input terrain. We prove that the decision version of this problem
+is NP-hard. This solves a significant open problem and complements recent
+positive approximability results for the optimization problem.
+  Our proof uses a reduction from PLANAR 3-SAT. We build gadgets capable of
+'mirroring' a consistent variable assignment back and forth across a main
+valley. The structural simplicity of 1.5-dimensional terrains makes it
+difficult to build general clause gadgets that do not destroy this assignment
+when they are evaluated. However, we exploit the structure in instances of
+PLANAR 3-SAT to find very specific operations involving only 'adjacent'
+variables. For these restricted operations we can construct gadgets that allow
+a full reduction to work.

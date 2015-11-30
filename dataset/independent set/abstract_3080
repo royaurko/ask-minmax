@@ -1,0 +1,19 @@
+In this paper, we propose a sparse recovery algorithm called
+detection-directed (DD) sparse estimation using Bayesian hypothesis test (BHT)
+and belief propagation (BP). In this framework, we consider the use of
+sparse-binary sensing matrices which has the tree-like property and the
+sampled-message approach for the implementation of BP.
+  The key idea behind the proposed algorithm is that the recovery takes
+DD-estimation structure consisting of two parts: support detection and signal
+value estimation. BP and BHT perform the support detection, and an MMSE
+estimator finds the signal values using the detected support set. The proposed
+algorithm provides noise-robustness against measurement noise beyond the
+conventional MAP approach, as well as a solution to remove quantization effect
+by the sampled-message based BP independently of memory size for the message
+sampling.
+  We explain how the proposed algorithm can have the aforementioned
+characteristics via exemplary discussion. In addition, our experiments validate
+such superiority of the proposed algorithm, compared to recent algorithms under
+noisy setup. Interestingly the experimental results show that performance of
+the proposed algorithm approaches that of the oracle estimator as SNR becomes
+higher.

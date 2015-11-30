@@ -1,0 +1,25 @@
+Cournot competition is a fundamental economic model that represents firms
+competing in a single market of a homogeneous good. Each firm tries to maximize
+its utility---a function of the production cost as well as market price of the
+product---by deciding on the amount of production. In today's dynamic and
+diverse economy, many firms often compete in more than one market
+simultaneously, i.e., each market might be shared among a subset of these
+firms. In this situation, a bipartite graph models the access restriction where
+firms are on one side, markets are on the other side, and edges demonstrate
+whether a firm has access to a market or not. We call this game \emph{Network
+Cournot Competition} (NCC). In this paper, we propose algorithms for finding
+pure Nash equilibria of NCC games in different situations. First, we carefully
+design a potential function for NCC, when the price functions for markets are
+linear functions of the production in that market. However, for nonlinear price
+functions, this approach is not feasible. We model the problem as a nonlinear
+complementarity problem in this case, and design a polynomial-time algorithm
+that finds an equilibrium of the game for strongly convex cost functions and
+strongly monotone revenue functions. We also explore the class of price
+functions that ensures strong monotonicity of the revenue function, and show it
+consists of a broad class of functions. Moreover, we discuss the uniqueness of
+equilibria in both of these cases which means our algorithms find the unique
+equilibria of the games. Last but not least, when the cost of production in one
+market is independent from the cost of production in other markets for all
+firms, the problem can be separated into several independent classical
+\emph{Cournot Oligopoly} problems. We give the first combinatorial algorithm
+for this widely studied problem.

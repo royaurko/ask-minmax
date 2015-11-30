@@ -1,0 +1,26 @@
+With the advent of internet services, data started growing faster than it can
+be processed. To personalize user experience, this enormous data has to be
+processed in real time, in interactive fashion. In order to achieve faster data
+processing often a statistical method called subsampling. Subsampling workloads
+compute statistics from a random subset of sample data (i.e., a subsample).
+Data-parallel platforms group these samples into tasks; each task subsamples
+its data in parallel.
+  Current, state-of-the-art platforms such as Hadoop are built for large tasks
+that run for long periods of time, but applications with smaller average task
+sizes suffer large overheads on these platforms. Tasks in subsampling workloads
+are sized to minimize the number of overall cache misses, and these tasks can
+complete in seconds. This technique can reduce the overall length of a
+map-reduce job, but only when the savings from the cache miss rate reduction
+are not eclipsed by the platform overhead of task creation and data
+distribution.
+  In this thesis, we propose a data-parallel platform with an efficient data
+distribution component that breaks data-parallel subsampling workloads into
+compute clusters with tiny tasks. Each tiny task completes in few hundreds of
+milliseconds to seconds. Tiny tasks reduce processor cache misses caused by
+random subsampling, which speeds up per-task running time. However, they cause
+significant scheduling overheads and data distribution challenges. We propose a
+task knee-pointing algorithm and a dynamic scheduler that schedules the tasks
+to worker nodes based on the availability and response times of the data nodes.
+We compare our framework against various configurations of BashReduce and
+Hadoop. A detailed discussion of tiny task approach on two workloads, EAGLET
+and Netflix movie rating is presented.

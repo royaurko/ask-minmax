@@ -1,0 +1,9 @@
+ATM-UBR switches respond to congestion by dropping cells when their buffers
+become full. TCP connections running over UBR experience low throughput and
+high unfairness. For 100% TCP throughput each switch needs buffers equal to the
+sum of the window sizes of all the TCP connections. Intelligent drop policies
+can improve the performance of TCP over UBR with limited buffers. The UBR+
+service proposes enhancements to UBR for intelligent drop. Early Packet Discard
+improves throughput but does not attempt to improve fairness. Selective packet
+drop based on per-connection buffer occupancy improves fairness. The Fair
+Buffer Allocation scheme further improves both throughput and fairness.

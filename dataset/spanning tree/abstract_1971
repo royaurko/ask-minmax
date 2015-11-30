@@ -1,0 +1,15 @@
+Pairwise ordered tree alignment is an important pattern matching problem,
+motivated by RNA secondary structure comparison for example, that can be solved
+efficiently using Dynamic Programming (DP). An inquiry into the multiplicity of
+optimal solutions, as well as the existence of potentially interesting
+sub-optimal solutions, naturally motivates the question of exploring the space
+of all, optimal and sub-optimal, tree alignments. There are well-known DP-based
+techniques that allow for such an exploration, but they require completeness
+and unambiguity of the DP scheme, i.e. the existence of a score-preserving
+bijection between the search space and the set of possible derivations of the
+DP scheme. In this paper, we present the first unambiguous and complete dynamic
+programming algorithm for the alignment of a pair of ordered rooted trees. Our
+algorithm optimally aligns two trees of size $n\_1$ and $n\_2$ in $\Theta(n\_1
+n\_2 max(n\_1, n\_2)^2)$ time in the worst-case scenario. Assuming
+uniformly-drawn random trees as input, it has average-case time and space
+complexities in $\Theta(n\_1 n\_2)$.

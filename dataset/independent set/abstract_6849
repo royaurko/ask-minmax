@@ -1,0 +1,18 @@
+A determinantal point process (DPP) is a random process useful for modeling
+the combinatorial problem of subset selection. In particular, DPPs encourage a
+random subset Y to contain a diverse set of items selected from a base set Y.
+For example, we might use a DPP to display a set of news headlines that are
+relevant to a user's interests while covering a variety of topics. Suppose,
+however, that we are asked to sequentially select multiple diverse sets of
+items, for example, displaying new headlines day-by-day. We might want these
+sets to be diverse not just individually but also through time, offering
+headlines today that are unlike the ones shown yesterday. In this paper, we
+construct a Markov DPP (M-DPP) that models a sequence of random sets {Yt}. The
+proposed M-DPP defines a stationary process that maintains DPP margins.
+Crucially, the induced union process Zt = Yt u Yt-1 is also marginally
+DPP-distributed. Jointly, these properties imply that the sequence of random
+sets are encouraged to be diverse both at a given time step as well as across
+time steps. We describe an exact, efficient sampling procedure, and a method
+for incrementally learning a quality measure over items in the base set Y based
+on external preferences. We apply the M-DPP to the task of sequentially
+displaying diverse and relevant news articles to a user with topic preferences.

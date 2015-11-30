@@ -1,0 +1,14 @@
+This paper introduces the generalized forward-backward splitting algorithm
+for minimizing convex functions of the form $F + \sum_{i=1}^n G_i$, where $F$
+has a Lipschitz-continuous gradient and the $G_i$'s are simple in the sense
+that their Moreau proximity operators are easy to compute. While the
+forward-backward algorithm cannot deal with more than $n = 1$ non-smooth
+function, our method generalizes it to the case of arbitrary $n$. Our method
+makes an explicit use of the regularity of $F$ in the forward step, and the
+proximity operators of the $G_i$'s are applied in parallel in the backward
+step. This allows the generalized forward backward to efficiently address an
+important class of convex problems. We prove its convergence in infinite
+dimension, and its robustness to errors on the computation of the proximity
+operators and of the gradient of $F$. Examples on inverse problems in imaging
+demonstrate the advantage of the proposed methods in comparison to other
+splitting algorithms.

@@ -1,0 +1,8 @@
+Given an instance of the preferential attachment graph $G_n=([n],E_n)$, we
+would like to find vertex 1, using only `local' information about the graph.
+Borgs et. al gave a $O(\log^4 n)$ time algorithm, which is local in the sense
+that it grows a connected set of vertices which will contain vertex 1 while
+still of size $O(\log^4 n)$. % We give a $O(\omega \log^{7/2} n)$ algorithm to
+find vertex 1 (where $\omega\to \infty$ is arbitrary), which is local in the
+strong sense that it traverses the graph vertex-by-vertex, and operates only on
+the neighborhood of its current vertex.

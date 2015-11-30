@@ -1,0 +1,18 @@
+The present paper introduces a class of finite volume schemes of increasing
+order of accuracy in space and time for hyperbolic systems that are in
+conservation form. This paper specifically focuses on Euler system that is used
+for modeling the flow of neutral fluids and the divergence-free, ideal
+magnetohydrodynamics (MHD) system that is used for large scale modeling of
+ionized plasmas.
+  Efficient techniques for weighted essentially non-oscillatory (WENO)
+interpolation have been developed for finite volume reconstruction on
+structured meshes. We also present a new formulation of the ADER (for Arbitrary
+Derivative Riemann Problem) schemes that relies on a local continuous
+space-time Galerkin formulation instead of the usual Cauchy-Kovalewski
+procedure.
+  The schemes reported here have all been implemented in the RIEMANN framework
+for computational astrophysics. We demonstrate that the ADER-WENO meet their
+design accuracies. Several stringent test problems of Euler flows and MHD flows
+are presented in one, two and three dimensions. Many of our test problems
+involve near infinite shocks in multiple dimensions and the higher order
+schemes are shown to perform very robustly and accurately under all conditions.

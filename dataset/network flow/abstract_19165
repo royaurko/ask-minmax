@@ -1,0 +1,14 @@
+It is known that the learning rate is the most important hyper-parameter to
+tune for training deep convolutional neural networks (i.e., a "guessing game").
+This report describes a new method for setting the learning rate, named
+cyclical learning rates, that eliminates the need to experimentally find the
+best values and schedule for the learning rates. Instead of setting the
+learning rate to fixed values, this method lets the learning rate cyclically
+vary within reasonable boundary values. This report shows that training with
+cyclical learning rates achieves near optimal classification accuracy without
+tuning and often in many fewer iterations. This report also describes a simple
+way to estimate "reasonable bounds" - by linearly increasing the learning rate
+in one training run of the network for only a few epochs. In addition, cyclical
+learning rates are demonstrated on training with the CIFAR-10 dataset and the
+AlexNet and GoogLeNet architectures on the ImageNet dataset. These methods are
+practical tools for everyone who trains convolutional neural networks.

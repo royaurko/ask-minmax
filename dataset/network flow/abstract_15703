@@ -1,0 +1,18 @@
+Network programs must simultaneously describe static behavior and dynamic
+responses to events such as the arrival of a packet at a switch.
+Event-triggered updates are critical to get right to avoid issues such as
+dropped packets, degraded performance, or violations of security policies, but
+they are also challenging to implement due to the high degree of concurrency
+and distributed nature of networks. Unfortunately, existing languages rely on
+best-effort update strategies that offer weak guarantees. This paper introduces
+event-triggered consistent updates, which are guaranteed to preserve
+well-defined behaviors when transitioning between static configurations in
+response to events. We propose network event structures (NESs) as a way to
+specify which events can be simultaneously enabled and causal dependencies
+between events. To enable programmers to compactly specify both static
+configurations and responses to events, we develop a new network programming
+language based on NetKAT, enriched with a stateful assignment operation. We
+give semantics to these Stateful NetKAT programs in terms of NESs, develop
+general mechanisms for implementing NESs using next-generation switches, and
+prove our implementation strategies correct. Finally, we propose table-level
+optimization techniques enabled by our high-level specifications.

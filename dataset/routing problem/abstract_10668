@@ -1,0 +1,17 @@
+We propose a cache-enabled opportunistic cooperative MIMO (CoMP) framework
+for wireless video streaming. By caching a portion of the video files at the
+relays (RS) using a novel MDS-coded random cache scheme, the base station (BS)
+and RSs opportunistically employ CoMP to achieve spatial multiplexing gain
+without expensive payload backhaul. We study a two timescale joint optimization
+of power and cache control to support real-time video streaming. The cache
+control is to create more CoMP opportunities and is adaptive to the long-term
+popularity of the video files. The power control is to guarantee the QoS
+requirements and is adaptive to the channel state information (CSI), the cache
+state at the RS and the queue state information (QSI) at the users. The joint
+problem is decomposed into an inner power control problem and an outer cache
+control problem. We first derive a closed-form power control policy from an
+approximated Bellman equation. Based on this, we transform the outer problem
+into a convex stochastic optimization problem and propose a stochastic
+subgradient algorithm to solve it. Finally, the proposed solution is shown to
+be asymptotically optimal for high SNR and small timeslot duration. Its
+superior performance over various baselines is verified by simulations.

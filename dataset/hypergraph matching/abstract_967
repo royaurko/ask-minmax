@@ -1,0 +1,20 @@
+Intrinsic isometric shape matching has become the standard approach for pose
+invariant correspondence estimation among deformable shapes. Most existing
+approaches assume global consistency, i.e., the metric structure of the whole
+manifold must not change significantly. While global isometric matching is well
+understood, only a few heuristic solutions are known for partial matching.
+Partial matching is particularly important for robustness to topological noise
+(incomplete data and contacts), which is a common problem in real-world 3D
+scanner data. In this paper, we introduce a new approach to partial, intrinsic
+isometric matching. Our method is based on the observation that isometries are
+fully determined by purely local information: a map of a single point and its
+tangent space fixes an isometry for both global and the partial maps. From this
+idea, we develop a new representation for partial isometric maps based on
+equivalence classes of correspondences between pairs of points and their
+tangent spaces. From this, we derive a local propagation algorithm that find
+such mappings efficiently. In contrast to previous heuristics based on RANSAC
+or expectation maximization, our method is based on a simple and sound
+theoretical model and fully deterministic. We apply our approach to register
+partial point clouds and compare it to the state-of-the-art methods, where we
+obtain significant improvements over global methods for real-world data and
+stronger guarantees than previous heuristic partial matching algorithms.

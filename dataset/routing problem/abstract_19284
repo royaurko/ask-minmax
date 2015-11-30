@@ -1,0 +1,19 @@
+This paper is concerned with the development and analysis of an iterative
+solver for high-dimensional second-order elliptic problems based on
+subspace-based low-rank tensor formats. Both the subspaces giving rise to
+low-rank approximations and corresponding sparse approximations of
+lower-dimensional tensor components are determined adaptively. A principal
+obstruction to a simultaneous control of rank growth and accuracy turns out to
+be the fact that the underlying elliptic operator is an isomorphism only
+between spaces that are not endowed with cross norms. Therefore, as central
+part of this scheme, we devise a method for preconditioning low-rank tensor
+representations of operators. Under standard assumptions on the data, we
+establish convergence to the solution of the continuous problem with a
+guaranteed error reduction. Moreover, for the case that the solution exhibits a
+certain low-rank structure and representation sparsity, we derive bounds on the
+computational complexity, including in particular bounds on the tensor ranks
+that can arise during the iteration. We emphasize that such assumptions on the
+solution do not enter in the formulation of the scheme, which in fact is shown
+to detect them automatically. Our findings are illustrated by numerical
+experiments that demonstrate the practical efficiency of the method in high
+spatial dimensions.

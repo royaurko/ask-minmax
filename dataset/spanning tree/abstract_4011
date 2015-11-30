@@ -1,0 +1,24 @@
+Delay-tolerant networks (DTNs) are characterized by a possible absence of
+end-to-end communication routes at any instant. Still, connectivity can
+generally be established over time and space. The optimality of a temporal path
+(journey) in this context can be defined in several terms, including
+topological (e.g. {\em shortest} in hops) and temporal (e.g. {\em fastest,
+foremost}). The combinatorial problem of computing shortest, foremost, and
+fastest journeys {\em given full knowledge} of the network schedule was
+addressed a decade ago (Bui-Xuan {\it et al.}, 2003). A recent line of research
+has focused on the distributed version of this problem, where foremost,
+shortest or fastest {\em broadcast} are performed without knowing the schedule
+beforehand. In this paper we show how to build {\em fastest} broadcast trees
+(i.e., trees that minimize the global duration of the broadcast, however late
+the departure is) in Time-Varying Graphs where intermittent edges are available
+periodically (it is known that the problem is infeasible in the general case
+even if various parameters of the graph are know). We address the general case
+where contacts between nodes can have arbitrary durations and thus fastest
+routes may consist of a mixture of {\em continuous} and {\em discontinuous}
+segments (a more complex scenario than when contacts are {\em punctual} and
+thus routes are only discontinuous). Using the abstraction of \tclocks to
+compute the temporal distances, we solve the fastest broadcast problem by first
+learning, at the emitter, what is its time of {\em minimum temporal
+eccentricity} (i.e. the fastest time to reach all the other nodes), and second
+by building a {\em foremost} broadcast tree relative to this particular
+emission date.

@@ -1,0 +1,14 @@
+A problem posed by Freund is how to efficiently track a small pool of experts
+out of a much larger set. This problem was solved when Bousquet and Warmuth
+introduced their mixing past posteriors (MPP) algorithm in 2001.
+  In Freund's problem the experts would normally be considered black boxes.
+However, in this paper we re-examine Freund's problem in case the experts have
+internal structure that enables them to learn. In this case the problem has two
+possible interpretations: should the experts learn from all data or only from
+the subsequence on which they are being tracked? The MPP algorithm solves the
+first case. Our contribution is to generalise MPP to address the second option.
+The results we obtain apply to any expert structure that can be formalised
+using (expert) hidden Markov models. Curiously enough, for our interpretation
+there are \emph{two} natural reference schemes: freezing and sleeping. For each
+scheme, we provide an efficient prediction strategy and prove the relevant loss
+bound.

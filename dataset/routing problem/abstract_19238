@@ -1,0 +1,17 @@
+Databases need to allocate and free blocks of storage on disk. Freed blocks
+introduce holes where no data is stored. Allocation systems attempt to reuse
+such deallocated regions in order to minimize the footprint on disk. If
+previously allocated blocks cannot be moved, the problem is called the memory
+allocation problem, which is known to have a logarithmic overhead in the
+footprint.
+  This paper defines the storage reallocation problem, where previously
+allocated blocks can be moved, or reallocated, but at some cost. The algorithms
+presented here are cost oblivious, in that they work for a broad and reasonable
+class of cost functions, even when they do not know what the cost function is.
+  The objective is to minimize the storage footprint, that is, the largest
+memory address containing an allocated object, while simultaneously minimizing
+the reallocation costs. This paper gives asymptotically optimal algorithms for
+storage reallocation, in which the storage footprint is at most (1+epsilon)
+times optimal, and the reallocation cost is at most (1/epsilon) times the
+original allocation cost, which is also optimal. The algorithms are cost
+oblivious as long as the allocation/reallocation cost function is subadditive.

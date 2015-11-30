@@ -1,0 +1,20 @@
+The stochastic block model (SBM) with two communities, or equivalently the
+planted bisection model, is a popular model of random graph exhibiting a
+cluster behaviour. In the symmetric case, the graph has two equally sized
+clusters and vertices connect with probability $p$ within clusters and $q$
+across clusters. In the past two decades, a large body of literature in
+statistics and computer science has focused on providing lower-bounds on the
+scaling of $|p-q|$ to ensure exact recovery. In this paper, we identify a sharp
+threshold phenomenon for exact recovery: if $\alpha=pn/\log(n)$ and
+$\beta=qn/\log(n)$ are constant (with $\alpha>\beta$), recovering the
+communities with high probability is possible if $\frac{\alpha+\beta}{2} -
+\sqrt{\alpha \beta}>1$ and impossible if $\frac{\alpha+\beta}{2} - \sqrt{\alpha
+\beta}<1$. In particular, this improves the existing bounds. This also sets a
+new line of sight for efficient clustering algorithms. While maximum likelihood
+(ML) achieves the optimal threshold (by definition), it is in the worst-case
+NP-hard. This paper proposes an efficient algorithm based on a semidefinite
+programming relaxation of ML, which is proved to succeed in recovering the
+communities close to the threshold, while numerical experiments suggest it may
+achieve the threshold. An efficient algorithm which succeeds all the way down
+to the threshold is also obtained using a partial recovery algorithm combined
+with a local improvement procedure.

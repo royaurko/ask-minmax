@@ -1,0 +1,20 @@
+The wide availability of biological data at the genome-scale and across
+multiple variables has resulted in statistical questions regarding the
+enrichment or depletion of the number of discrete objects (e.g. genes)
+identified in individual experiments. Here, I consider the problem of inferring
+enrichment or depletion when drawing independently, and without replacement,
+from two or more separate urns in which the same $n$ distinct categories of
+objects exist. The statistic of interest is the size of the intersection of
+object categories. I derive a probability mass function describing the
+distribution of intersection sizes when sampling from N urns and show that this
+distribution follows the classic hypergeometric distribution when N = 2. I
+apply the theory to the intersection of genes belonging to a set of traits in
+three different vertebrate species illustrating that the use of P-values from
+one-tailed enrichment tests enables accurate clustering of related traits, yet
+this is not possible when relying on intersection sizes alone. In addition,
+intersection distributions provide a means to test for co-localization of
+objects in images when using discretized data, allowing co-localization tests
+in more than two channels. Finally, I show how to extend the problem to
+variable numbers of objects belonging to each category, and discuss how to make
+further progress in this direction. The distribution functions are implemented
+and freely available in the R package 'hint'.

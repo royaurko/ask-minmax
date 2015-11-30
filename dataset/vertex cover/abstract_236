@@ -1,0 +1,17 @@
+Within many-body perturbation theory we apply vertex corrections to various
+closed-shell atoms and to jellium, using a local approximation for the vertex
+consistent with starting the many-body perturbation theory from a DFT-LDA
+Green's function. The vertex appears in two places -- in the screened Coulomb
+interaction, W, and in the self-energy, \Sigma -- and we obtain a systematic
+discrimination of these two effects by turning the vertex in \Sigma on and off.
+We also make comparisons to standard GW results within the usual random-phase
+approximation (RPA), which omits the vertex from both. When a vertex is
+included for closed-shell atoms, both ground-state and excited-state properties
+demonstrate only limited improvements over standard GW. For jellium we observe
+marked improvement in the quasiparticle band width when the vertex is included
+only in W, whereas turning on the vertex in \Sigma leads to an unphysical
+quasiparticle dispersion and work function. A simple analysis suggests why
+implementation of the vertex only in W is a valid way to improve quasiparticle
+energy calculations, while the vertex in \Sigma is unphysical, and points the
+way to development of improved vertices for ab initio electronic structure
+calculations.

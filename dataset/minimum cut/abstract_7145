@@ -1,0 +1,16 @@
+Let $G = (V,E)$ be a graph and let $r,s,k$ be positive integers.
+"Revolutionaries and Spies", denoted $\cG(G,r,s,k)$, is the following
+two-player game. The sets of positions for player 1 and player 2 are $V^r$ and
+$V^s$ respectively. Each coordinate in $p \in V^r$ gives the location of a
+"revolutionary" in $G$. Similarly player 2 controls $s$ "spies". We say $u, u'
+\in V(G)^n$ are adjacent, $u \sim u'$, if for all $1 \leq i \leq n$, $u_i =
+u'_i$ or ${u_i,u'_i} \in E(G)$. In round 0 player 1 picks $p_0 \in V^r$ and
+then player 2 picks $q_0 \in V^s$. In each round $i \geq 1$ player 1 moves to
+$p_i \sim p_{i-1}$ and then player 2 moves to $q_i \sim q_{i-1}$. Player 1 wins
+the game if he can place $k$ revolutionaries on a vertex $v$ in such a way that
+player 1 cannot place a spy on $v$ in his following move. Player 2 wins the
+game if he can prevent this outcome.
+  Let $s(G,r,k)$ be the minimum $s$ such that player 2 can win $\cG(G,r,s,k)$.
+We show that for $d \geq 2$, $s(\Z^d,r,2)\geq 6 \lfloor \frac{r}{8} \rfloor$.
+Here $a,b \in \Z^{d}$ with $a \neq b$ are connected by an edge if and only if
+$|a_i - b_i| \leq 1$ for all $i$ with $1 \leq i \leq d$.

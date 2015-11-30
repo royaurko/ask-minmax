@@ -1,0 +1,17 @@
+We are given a stack of pancakes of different sizes and the only allowed
+operation is to take several pancakes from top and flip them. The unburnt
+version requires the pancakes to be sorted by their sizes at the end, while in
+the burnt version they additionally need to be oriented burnt-side down. We
+present an algorithm with the average number of flips, needed to sort a stack
+of n burnt pancakes, equal to 7n/4+O(1) and a randomized algorithm for the
+unburnt version with at most 17n/12+O(1) flips on average.
+  In addition, we show that in the burnt version, the average number of flips
+of any algorithm is at least n+\Omega(n/log n) and conjecture that some
+algorithm can reach n+\Theta(n/log n).
+  We also slightly increase the lower bound on g(n), the minimum number of
+flips needed to sort the worst stack of n burnt pancakes. This bound, together
+with the upper bound found by Heydari and Sudborough in 1997, gives the exact
+number of flips to sort the previously conjectured worst stack -I_n for n=3 mod
+4 and n>=15. Finally we present exact values of f(n) up to n=19 and of g(n) up
+to n=17 and disprove a conjecture of Cohen and Blum by showing that the burnt
+stack -I_{15} is not the worst one for n=15.

@@ -1,0 +1,20 @@
+Joint distributions over many variables are frequently modeled by decomposing
+them into products of simpler, lower-dimensional conditional distributions,
+such as in sparsely connected Bayesian networks. However, automatically
+learning such models can be very computationally expensive when there are many
+datapoints and many continuous variables with complex nonlinear relationships,
+particularly when no good ways of decomposing the joint distribution are known
+a priori. In such situations, previous research has generally focused on the
+use of discretization techniques in which each continuous variable has a single
+discretization that is used throughout the entire network. \ In this paper, we
+present and compare a wide variety of tree-based algorithms for learning and
+evaluating conditional density estimates over continuous variables. These trees
+can be thought of as discretizations that vary according to the particular
+interactions being modeled; however, the density within a given leaf of the
+tree need not be assumed constant, and we show that such nonuniform leaf
+densities lead to more accurate density estimation. We have developed Bayesian
+network structure-learning algorithms that employ these tree-based conditional
+density representations, and we show that they can be used to practically learn
+complex joint probability models over dozens of continuous variables from
+thousands of datapoints. We focus on finding models that are simultaneously
+accurate, fast to learn, and fast to evaluate once they are learned.

@@ -1,0 +1,16 @@
+In this paper, we study a simple correlation-based strategy for estimating
+the unknown delay and amplitude of a signal based on a small number of noisy,
+randomly chosen frequency-domain samples. We model the output of this
+"compressive matched filter" as a random process whose mean equals the scaled,
+shifted autocorrelation function of the template signal. Using tools from the
+theory of empirical processes, we prove that the expected maximum deviation of
+this process from its mean decreases sharply as the number of measurements
+increases, and we also derive a probabilistic tail bound on the maximum
+deviation. Putting all of this together, we bound the minimum number of
+measurements required to guarantee that the empirical maximum of this random
+process occurs sufficiently close to the true peak of its mean function. We
+conclude that for broad classes of signals, this compressive matched filter
+will successfully estimate the unknown delay (with high probability, and within
+a prescribed tolerance) using a number of random frequency-domain samples that
+scales inversely with the signal-to-noise ratio and only logarithmically in the
+in the observation bandwidth and the possible range of delays.

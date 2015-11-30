@@ -1,0 +1,11 @@
+A new domain decomposition method is introduced for the heterogeneous 2-D and
+3-D Helmholtz equations. Transmission conditions based on the perfectly matched
+layer (PML) are derived that avoid artificial reflections and match incoming
+and outgoing waves at the subdomain interfaces. We focus on a subdivision of
+the rectangular domain into many thin subdomains along one of the axes, in
+combination with a certain ordering for solving the subdomain problems and a
+GMRES outer iteration. When combined with multifrontal methods, the solver has
+near-linear cost in examples, due to very small iteration numbers that are
+essentially independent of problem size and number of subdomains. It is to our
+knowledge only the second method with this property next to the moving PML
+sweeping method.

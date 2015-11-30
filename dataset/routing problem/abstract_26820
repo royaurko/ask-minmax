@@ -1,0 +1,16 @@
+Standard approaches to constructing nonparametric confidence bands for
+functions are frustrated by the impact of bias, which generally is not
+estimated consistently when using the bootstrap and conventionally smoothed
+function estimators. To overcome this problem it is common practice to either
+undersmooth, so as to reduce the impact of bias, or oversmooth, and thereby
+introduce an explicit or implicit bias estimator. However, these approaches,
+and others based on nonstandard smoothing methods, complicate the process of
+inference, for example, by requiring the choice of new, unconventional
+smoothing parameters and, in the case of undersmoothing, producing relatively
+wide bands. In this paper we suggest a new approach, which exploits to our
+advantage one of the difficulties that, in the past, has prevented an
+attractive solution to the problem - the fact that the standard bootstrap bias
+estimator suffers from relatively high-frequency stochastic error. The high
+frequency, together with a technique based on quantiles, can be exploited to
+dampen down the stochastic error term, leading to relatively narrow,
+simple-to-construct confidence bands.

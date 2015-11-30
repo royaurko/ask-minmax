@@ -1,0 +1,20 @@
+The paper presents a formula for the reclassification of multidimensional
+data points (columns of real numbers, "objects", "vectors", etc.). This formula
+describes the change in the total squared error caused by reclassification of
+data points from one cluster into another and prompts the way to calculate the
+sequence of optimal partitions, which are characterized by a minimum value of
+the total squared error E (weighted sum of within-class variance,
+within-cluster sum of squares WCSS etc.), i.e. the sum of squared distances
+from each data point to its cluster center. At that source data points are
+treated with repetitions allowed, and resulting clusters from different
+partitions, in general case, overlap each other. The final partitions are
+characterized by "equilibrium" stability with respect to the reclassification
+of the data points, where the term "stability" means that any prescribed
+reclassification of data points does not increase the total squared error E. It
+is important that conventional K-means method, in general case, provides
+generation of instable partitions with overstated values of the total squared
+error E. The proposed method, based on the formula of reclassification, is more
+efficient than K-means method owing to converting of any partition into stable
+one, as well as involving into the process of reclassification of certain sets
+of data points, in contrast to the classification of individual data points
+according to K-means method.

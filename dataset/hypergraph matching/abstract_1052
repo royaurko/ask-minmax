@@ -1,0 +1,14 @@
+We present a deterministic way of assigning small (log bit) weights to the
+edges of a bipartite planar graph so that the minimum weight perfect matching
+becomes unique. The isolation lemma as described in (Mulmuley et al. 1987)
+achieves the same for general graphs using a randomized weighting scheme,
+whereas we can do it deterministically when restricted to bipartite planar
+graphs. As a consequence, we reduce both decision and construction versions of
+the matching problem to testing whether a matrix is singular, under the promise
+that its determinant is 0 or 1, thus obtaining a highly parallel SPL algorithm
+for bipartite planar graphs. This improves the earlier known bounds of
+non-uniform SPL by (Allender et al. 1999) and $NC^2$ by (Miller and Naor 1995,
+Mahajan and Varadarajan 2000). It also rekindles the hope of obtaining a
+deterministic parallel algorithm for constructing a perfect matching in
+non-bipartite planar graphs, which has been open for a long time. Our
+techniques are elementary and simple.

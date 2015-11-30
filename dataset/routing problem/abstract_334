@@ -1,0 +1,15 @@
+We propose bi-directional face traversal algorithm $2FACE$ to shorten the
+path the message takes to reach the destination in geometric routing. Our
+algorithm combines the practicality of the best single-direction traversal
+algorithms with the worst case message complexity of $O(|E|)$, where $E$ is the
+number of network edges. We apply $2FACE$ to a variety of geometric routing
+algorithms. Our simulation results indicate that bi-directional face traversal
+decreases the latency of message delivery two to three times compared to single
+direction face traversal. The thus selected path approaches the shortest
+possible route. This gain in speed comes with a similar message overhead
+increase. We describe an algorithm which compensates for this message overhead
+by recording the preferable face traversal direction. Thus, if a source has
+several messages to send to the destination, the subsequent messages follow the
+shortest route. Our simulation results show that with most geometric routing
+algorithms the message overhead of finding the short route by bi-directional
+face traversal is compensated within two to four repeat messages.

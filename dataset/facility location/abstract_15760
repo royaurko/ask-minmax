@@ -1,0 +1,19 @@
+Finding a basis/coordinate system that can efficiently represent an input
+data stream by viewing them as realizations of a stochastic process is of
+tremendous importance in many fields including data compression and
+computational neuroscience. Two popular measures of such efficiency of a basis
+are sparsity (measured by the expected $\ell^p$ norm, $0 < p \leq 1$) and
+statistical independence (measured by the mutual information). Gaining deeper
+understanding of their intricate relationship, however, remains elusive.
+Therefore, we chose to study a simple synthetic stochastic process called the
+spike process, which puts a unit impulse at a random location in an
+$n$-dimensional vector for each realization. For this process, we obtained the
+following results: 1) The standard basis is the best both in terms of sparsity
+and statistical independence if $n \geq 5$ and the search of basis is
+restricted within all possible orthonormal bases in $R^n$; 2) If we extend our
+basis search in all possible invertible linear transformations in $R^n$, then
+the best basis in statistical independence differs from the one in sparsity; 3)
+In either of the above, the best basis in statistical independence is not
+unique, and there even exist those which make the inputs completely dense; 4)
+There is no linear invertible transformation that achieves the true statistical
+independence for $n > 2$.

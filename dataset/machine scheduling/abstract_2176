@@ -1,0 +1,14 @@
+We propose a new strategy for Monte Carlo (MC) optimization on rugged
+multidimensional landscapes. The strategy is based on querying the statistical
+properties of the landscape in order to find the temperature at which the mean
+first passage time across the current region of the landscape is minimized.
+Thus, in contrast to other algorithms such as simulated annealing (SA), we
+explicitly match the temperature schedule to the statistics of landscape
+irregularities. In cases where this statistics is approximately the same over
+the entire landscape, or where non-local moves couple distant parts of the
+landscape, single-temperature MC will outperform any other MC algorithm with
+the same move set. We also find that in strongly anisotropic Coulomb spin glass
+and traveling salesman problems, the only relevant statistics (which we use to
+assign a single MC temperature) is that of irregularities in low-energy
+funnels. Our results may explain why protein folding in nature is efficient at
+room temperatures.

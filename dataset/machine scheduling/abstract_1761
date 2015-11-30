@@ -1,0 +1,15 @@
+Porting GCC to new architecture requires writing a Machine Description (MD)
+file that contains mapping from GCC's intermediate form to the target assembly
+code. Constructing an MD file is a difficult task because it requires the user
+to understand both (a) the internals of GCC, and (b) the intricacies of the
+target architecture. Instruction sets of different architectures exhibit
+significant amount of semantic similarities across a large class (for example,
+the instruction sets for RISC architectures) and differ only in syntax.
+Therefore, it is expected that MD files of machines with similar architectures
+should also have similarities. To confirm our hypothesis, we created
+"mdcompare", a tool to (a) extract RTL patterns (machine independent
+abstraction of RTL templates) from MD files of well known architectures and (b)
+compare the similarity of patterns across architectures. The results are
+encouraging; we found that 28% -- 70% RTL expressions are similar across pairs
+of MD files, the similarity percentage being on the higher side for pairs of
+similar architectures.

@@ -1,0 +1,24 @@
+Various query languages have been proposed to extract and restructure
+information in XML documents. These languages, usually claiming to be
+declarative, mainly consider the conjunctive relationships among data elements.
+In order to present the operations where the hierarchical and the disjunctive
+relationships need to be considered, such as restructuring hierarchy and
+handling heterogeneity, the programs in these languages often exhibit a
+procedural style and thus the declarativeness in them is not so prominent as in
+conventional query languages like SQL.
+  In this paper, we propose a declarative pattern-based functional XML query
+language named XML Tree Query (XTQ). XTQ adopts expressive composite patterns
+to present data extraction, meanwhile establishing the conjunctive, the
+disjunctive and the hierarchical relationships among data elements. It uses the
+matching terms, a composite structure of the variables bound to the matched
+data elements, to present a global sketch of the extracted data, and develops a
+deductive restructuring mechanism of matching terms to indicate data
+transformation, especially for restructuring hierarchy and handling
+heterogeneity. Based on matching terms, XTQ employs a coherent approach to
+function declaration and invocation to consistently extract and construct
+composite data structure, which integrates features of conventional functional
+languages and pattern-based query languages. Additionally, XTQ also supports
+data filtering on composite data structure such as hierarchical data, which is
+seldom deliberately considered in other studies. We demonstrate with various
+examples that XTQ can declaratively present complex XML queries which are
+common in practice.

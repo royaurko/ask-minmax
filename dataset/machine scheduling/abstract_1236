@@ -1,0 +1,16 @@
+The paper proposes a more formalized definition of UML 2.0 Activity Diagram
+semantics. A subset of activity diagram constructs relevant for business
+process modeling is considered. The semantics definition is based on the
+original token flow methodology, but a more constructive approach is used. The
+Activity Diagram Virtual machine is defined by means of a metamodel, with
+operations defined by a mix of pseudocode and OCL pre- and postconditions. A
+formal procedure is described which builds the virtual machine for any activity
+diagram. The relatively complicated original token movement rules in control
+nodes and edges are combined into paths from an action to action. A new
+approach is the use of different (push and pull) engines, which move tokens
+along the paths. Pull engines are used for paths containing join nodes, where
+the movement of several tokens must be coordinated. The proposed virtual
+machine approach makes the activity semantics definition more transparent where
+the token movement can be easily traced. However, the main benefit of the
+approach is the possibility to use the defined virtual machine as a basis for
+UML activity diagram based workflow or simulation engine.

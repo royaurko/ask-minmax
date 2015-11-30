@@ -1,0 +1,18 @@
+Block projections have been used, in [Eberly et al. 2006], to obtain an
+efficient algorithm to find solutions for sparse systems of linear equations. A
+bound of softO(n^(2.5)) machine operations is obtained assuming that the input
+matrix can be multiplied by a vector with constant-sized entries in softO(n)
+machine operations. Unfortunately, the correctness of this algorithm depends on
+the existence of efficient block projections, and this has been conjectured. In
+this paper we establish the correctness of the algorithm from [Eberly et al.
+2006] by proving the existence of efficient block projections over sufficiently
+large fields. We demonstrate the usefulness of these projections by deriving
+improved bounds for the cost of several matrix problems, considering, in
+particular, ``sparse'' matrices that can be be multiplied by a vector using
+softO(n) field operations. We show how to compute the inverse of a sparse
+matrix over a field F using an expected number of softO(n^(2.27)) operations in
+F. A basis for the null space of a sparse matrix, and a certification of its
+rank, are obtained at the same cost. An application to Kaltofen and Villard's
+Baby-Steps/Giant-Steps algorithms for the determinant and Smith Form of an
+integer matrix yields algorithms requiring softO(n^(2.66)) machine operations.
+The derived algorithms are all probabilistic of the Las Vegas type.

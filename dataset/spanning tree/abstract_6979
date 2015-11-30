@@ -1,0 +1,15 @@
+Distributed algorithms for solving coupled semidefinite programs (SDPs)
+commonly require many iterations to converge. They also put high computational
+demand on the computational agents. In this paper we show that in case the
+coupled problem has an inherent tree structure, it is possible to devise an
+efficient distributed algorithm for solving such problems. This algorithm can
+potentially enjoy the same efficiency as centralized solvers that exploit
+sparsity. The proposed algorithm relies on predictor-corrector primal-dual
+interior-point methods, where we use a message-passing algorithm to compute the
+search directions distributedly. Message-passing here is closely related to
+dynamic programming over trees. This allows us to compute the exact search
+directions in a finite number of steps. Furthermore this number can be computed
+a priori and only depends on the coupling structure of the problem. We use the
+proposed algorithm for analyzing robustness of large-scale uncertain systems
+distributedly. We test the performance of this algorithm using numerical
+examples.

@@ -1,0 +1,17 @@
+The boxicity (respectively cubicity) of a graph $G$ is the minimum
+non-negative integer $k$, such that $G$ can be represented as an intersection
+graph of axis-parallel $k$-dimensional boxes (respectively $k$-dimensional unit
+cubes) and is denoted by $box(G)$ (respectively $cub(G)$). It was shown by
+Adiga and Chandran (Journal of Graph Theory, 65(4), 2010) that for any graph
+$G$, $cub(G) \le$ box$(G) \left \lceil \log_2 \alpha \right \rceil$, where
+$\alpha = \alpha(G)$ is the cardinality of the maximum independent set in $G$.
+In this note we show that $cub(G) \le 2 \left \lceil \log_2 \chi(G) \right
+\rceil box(G) + \chi(G) \left \lceil \log_2 \alpha(G) \right \rceil $. In
+general, this result can provide a much better upper bound than that of Adiga
+and Chandran for graph classes with bounded chromatic number. For example, for
+bipartite graphs we get, $cub(G) \le 2 (box(G) + \left \lceil \log_2 \alpha(G)
+\right \rceil )$.
+  Moreover we show that for every positive integer $k$, there exist graphs with
+chromatic number $k$, such that for every $\epsilon > 0$, the value given by
+our upper bound is at most $(1+\epsilon)$ times their cubicity. Thus, our upper
+bound is almost tight.

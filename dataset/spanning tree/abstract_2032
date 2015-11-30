@@ -1,0 +1,19 @@
+In this work, we propose D3-Tree, a dynamic distributed deterministic
+structure for data management in decentralized networks. We present in brief
+the theoretical algorithmic analysis, in which our proposed structure is based
+on, and we describe thoroughly the key aspects of the implementation.
+Conducting experiments, we verify that the implemented structure outperforms
+other well-known hierarchical tree-based structures, since it provides better
+complexities regarding load-balancing operations. More specifically, the
+structure achieves a logarithmic amortized bound, using an efficient
+deterministic load-balancing mechanism, which is general enough to be applied
+to other hierarchical tree-based structures. Moreover, we investigate the
+structure's fault tolerance, which hasn't been sufficiently tackled in previous
+work, both theoretically and through rigorous experimentation. We prove that
+D3-Tree is highly fault tolerant, since, even for massive node failures, it
+achieves a significant success rate in element queries. Afterwards we go one
+step further, in order to achieve sub-logarithmic complexity and propose the
+ART+ structure (Autonomous Range Tree), exploiting the excellent performance of
+D3-Tree. ART+ is a fully dynamic and fault-tolerant structure, which achieves
+sub-logarithmic performance for query and update operations and performs
+load-balancing in sub-logarithmic amortized cost.

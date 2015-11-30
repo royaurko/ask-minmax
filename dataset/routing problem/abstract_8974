@@ -1,0 +1,18 @@
+A king in a directed graph is a node from which each node in the graph can be
+reached via paths of length at most two. There is a broad literature on
+tournaments (completely oriented digraphs), and it has been known for more than
+half a century that all tournaments have at least one king [Lan53]. Recently,
+kings have proven useful in theoretical computer science, in particular in the
+study of the complexity of the semifeasible sets [HNP98,HT05] and in the study
+of the complexity of reachability problems [Tan01,NT02].
+  In this paper, we study the complexity of recognizing kings. For each
+succinctly specified family of tournaments, the king problem is known to belong
+to $\Pi_2^p$ [HOZZ]. We prove that this bound is optimal: We construct a
+succinctly specified tournament family whose king problem is
+$\Pi_2^p$-complete. It follows easily from our proof approach that the problem
+of testing kingship in succinctly specified graphs (which need not be
+tournaments) is $\Pi_2^p$-complete. We also obtain $\Pi_2^p$-completeness
+results for k-kings in succinctly specified j-partite tournaments, $k,j \geq
+2$, and we generalize our main construction to show that $\Pi_2^p$-completeness
+holds for testing k-kingship in succinctly specified families of tournaments
+for all $k \geq 2$.

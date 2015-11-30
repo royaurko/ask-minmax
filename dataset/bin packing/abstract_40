@@ -1,0 +1,24 @@
+In this paper we present the first algorithm with optimal average-case and
+close-to-best known worst-case performance for the classic on-line problem of
+bin packing. It has long been observed that known bin packing algorithms with
+optimal average-case performance were not optimal in the worst-case sense. In
+particular First Fit and Best Fit had optimal average-case ratio of 1 but a
+worst-case competitive ratio of 1.7. The wasted space of First Fit and Best Fit
+for a uniform random sequence of length $n$ is expected to be $\Theta(n^{2/3})$
+and $\Theta(\sqrt{n} \log ^{3/4} n)$, respectively. The competitive ratio can
+be improved to 1.691 using the Harmonic algorithm; further variations of this
+algorithm can push down the competitive ratio to 1.588. However, Harmonic and
+its variations have poor performance on average; in particular, Harmonic has
+average-case ratio of around 1.27. In this paper, first we introduce a simple
+algorithm which we term Harmonic Match. This algorithm performs as well as Best
+Fit on average, i.e., it has an average-case ratio of 1 and expected wasted
+space of $\Theta(\sqrt{n} \log ^{3/4} n)$. Moreover, the competitive ratio of
+the algorithm is as good as Harmonic, i.e., it converges to $ 1.691$ which is
+an improvement over 1.7 of Best Fit and First Fit. We also introduce a
+different algorithm, termed as Refined Harmonic Match, which achieves an
+improved competitive ratio of $1.636$ while maintaining the good average-case
+performance of Harmonic Match and Best Fit. Finally, our extensive experimental
+evaluation of the studied bin packing algorithms shows that our proposed
+algorithms have comparable average-case performance with Best Fit and First
+Fit, and this holds also for sequences that follow distributions other than the
+uniform distribution.

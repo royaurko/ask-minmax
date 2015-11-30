@@ -1,0 +1,14 @@
+Starting from a high-level problem description in terms of partial
+differential equations using abstract tensor notation, the Chemora framework
+discretizes, optimizes, and generates complete high performance codes for a
+wide range of compute architectures. Chemora extends the capabilities of
+Cactus, facilitating the usage of large-scale CPU/GPU systems in an efficient
+manner for complex applications, without low-level code tuning. Chemora
+achieves parallelism through MPI and multi-threading, combining OpenMP and
+CUDA. Optimizations include high-level code transformations, efficient loop
+traversal strategies, dynamically selected data and instruction cache usage
+strategies, and JIT compilation of GPU code tailored to the problem
+characteristics. The discretization is based on higher-order finite differences
+on multi-block domains. Chemora's capabilities are demonstrated by simulations
+of black hole collisions. This problem provides an acid test of the framework,
+as the Einstein equations contain hundreds of variables and thousands of terms.

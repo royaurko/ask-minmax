@@ -1,0 +1,20 @@
+Consider a random graph model where each possible edge $e$ is present
+independently with some probability $p_e$. Given these probabilities, we want
+to build a large/heavy matching in the randomly generated graph. However, the
+only way we can find out whether an edge is present or not is to query it, and
+if the edge is indeed present in the graph, we are forced to add it to our
+matching. Further, each vertex $i$ is allowed to be queried at most $t_i$
+times. How should we adaptively query the edges to maximize the expected weight
+of the matching? We consider several matching problems in this general
+framework (some of which arise in kidney exchanges and online dating, and
+others arise in modeling online advertisements); we give LP-rounding based
+constant-factor approximation algorithms for these problems. Our main results
+are the following:
+  We give a 4 approximation for weighted stochastic matching on general graphs,
+and a 3 approximation on bipartite graphs. This answers an open question from
+[Chen etal ICALP 09]. Combining our LP-rounding algorithm with the natural
+greedy algorithm, we give an improved 3.46 approximation for unweighted
+stochastic matching on general graphs.
+  We introduce a generalization of the stochastic online matching problem
+[Feldman etal FOCS 09] that also models preference-uncertainty and timeouts of
+buyers, and give a constant factor approximation algorithm.

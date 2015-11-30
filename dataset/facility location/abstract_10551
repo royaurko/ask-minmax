@@ -1,0 +1,12 @@
+We describe the implementation of algorithms to construct and maintain
+three-dimensional dynamic Delaunay triangulations with kinetic vertices using a
+three-simplex data structure. The code is capable of constructing the geometric
+dual, the Voronoi or Dirichlet tessellation. Initially, a given list of points
+is triangulated. Time evolution of the triangulation is not only governed by
+kinetic vertices but also by a changing number of vertices. We use
+three-dimensional simplex flip algorithms, a stochastic visibility walk
+algorithm for point location and in addition, we propose a new simple method of
+deleting vertices from an existing three-dimensional Delaunay triangulation
+while maintaining the Delaunay property. The dual Dirichlet tessellation can be
+used to solve differential equations on an irregular grid, to define partitions
+in cell tissue simulations, for collision detection etc.

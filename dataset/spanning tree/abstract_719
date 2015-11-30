@@ -1,0 +1,13 @@
+Combinatorial network optimization algorithms that compute optimal structures
+taking into account edge weights form the foundation for many network
+protocols. Examples include shortest path routing, minimal spanning tree
+computation, maximum weighted matching on bipartite graphs, etc. We present
+CLRMR, the first online learning algorithm that efficiently solves the
+stochastic version of these problems where the underlying edge weights vary as
+independent Markov chains with unknown dynamics.
+  The performance of an online learning algorithm is characterized in terms of
+regret, defined as the cumulative difference in rewards between a
+suitably-defined genie, and that obtained by the given algorithm. We prove
+that, compared to a genie that knows the Markov transition matrices and uses
+the single-best structure at all times, CLRMR yields regret that is polynomial
+in the number of edges and nearly-logarithmic in time.

@@ -1,0 +1,15 @@
+In this paper we introduce an iterative Jacobi algorithm for solving
+distributed model predictive control (DMPC) problems, with linear coupled
+dynamics and convex coupled constraints. The algorithm guarantees stability and
+persistent feasibility, and we provide a localized procedure for constructing
+an initial feasible solution by constraint tightening. Moreover, we show that
+the solution of the iterative process converges to the centralized MPC
+solution. The proposed iterative approach involves solving local optimization
+problems consisting of only few subsystems, depending on the choice of the
+designer and the sparsity of dynamical and constraint couplings. The gain in
+the overall computational load compared to the centralized problem is balanced
+by the increased communication requirements. This makes our approach more
+applicable to situations where the number of subsystems is large, the coupling
+is sparse, and local communication is relatively fast and cheap. A numerical
+example illustrates the effects of the local problem size, and the number of
+iterations on convergence to the centralized solution.

@@ -1,0 +1,21 @@
+Let $G=(V_1(G),V_2(G),E(G))$ be a bipartite multigraph, and $R\subseteq
+V_1(G)\cup V_2(G)$. A proper coloring of edges of $G$ with the colors
+$1,\ldots,t$ is called interval (respectively, continuous) on $R$, if each
+color is used for at least one edge and the edges incident with each vertex
+$x\in R$ are colored by $d(x)$ consecutive colors (respectively, by the colors
+$1,\ldots,d(x))$, where $d(x)$ is a degree of the vertex $x$. We denote by
+$w_1(G)$ and $W_1(G)$, respectively, the least and the greatest values of $t$,
+for which there exists an interval on $V_1(G)$ coloring of the multigraph $G$
+with the colors $1,\ldots,t$.
+  In the paper the following basic results are obtained.
+  \textbf{Theorem 2.} For an arbitrary $k$, $w_1(G)\leq k\leq W_1(G)$, there is
+an interval on $V_1(G)$ coloring of the multigraph $G$ with the colors
+$1,\ldots,k$.
+  \textbf{Theorem 3.} The problem of recognition of the existence of a
+continuous on $V_1(G)$ coloring of the multigraph $G$ is $NP$-complete.
+  \textbf{Theorem 4.} If for any edge $(x,y)\in E(G)$, where $x\in V_1(G)$, the
+inequality $d(x)\geq d(y)$ holds then there is a continuous on $V_1(G)$
+coloring of the multigraph $G$.
+  \textbf{Theorem 1.} If $G$ has no multiple edges and triangles, and there is
+an interval on $V(G)$ coloring of the graph $G$ with the colors $1,\ldots,k$,
+then $k\leq|V(G)|-1$.

@@ -1,0 +1,14 @@
+Online prediction methods are typically presented as serial algorithms
+running on a single processor. However, in the age of web-scale prediction
+problems, it is increasingly common to encounter situations where a single
+processor cannot keep up with the high rate at which inputs arrive. In this
+work, we present the \emph{distributed mini-batch} algorithm, a method of
+converting many serial gradient-based online prediction algorithms into
+distributed algorithms. We prove a regret bound for this method that is
+asymptotically optimal for smooth convex loss functions and stochastic inputs.
+Moreover, our analysis explicitly takes into account communication latencies
+between nodes in the distributed environment. We show how our method can be
+used to solve the closely-related distributed stochastic optimization problem,
+achieving an asymptotically linear speed-up over multiple processors. Finally,
+we demonstrate the merits of our approach on a web-scale online prediction
+problem.

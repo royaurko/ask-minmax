@@ -1,0 +1,19 @@
+Polar codes under cyclic redundancy check aided successive cancellation list
+(CA-SCL) decoding can outperform the turbo codes and the LDPC codes when code
+lengths are configured to be several kilobits. In order to reduce the decoding
+complexity, a novel tree-pruning scheme for the \mbox{SCL/CA-SCL} decoding
+algorithms is proposed in this paper. In each step of the decoding procedure,
+the candidate paths with metrics less than a threshold are dropped directly to
+avoid the unnecessary computations for the path searching on the descendant
+branches of them. Given a candidate path, an upper bound of the path metric of
+its descendants is proposed to determined whether the pruning of this candidate
+path would affect frame error rate (FER) performance. By utilizing this upper
+bounding technique and introducing a dynamic threshold, the proposed scheme
+deletes the redundant candidate paths as many as possible while keeping the
+performance deterioration in a tolerant region, thus it is much more efficient
+than the existing pruning scheme. With only a negligible loss of FER
+performance, the computational complexity of the proposed pruned decoding
+scheme is only about $40\%$ of the standard algorithm in the low
+signal-to-noise ratio (SNR) region (where the FER under CA-SCL decoding is
+about $0.1 \sim 0.001$), and it can be very close to that of the successive
+cancellation (SC) decoder in the moderate and high SNR regions.

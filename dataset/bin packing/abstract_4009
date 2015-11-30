@@ -1,0 +1,16 @@
+Given n observations of a p-dimensional random vector, the covariance matrix
+and its inverse (precision matrix) are needed in a wide range of applications.
+Sample covariance (e.g. its eigenstructure) can misbehave when p is comparable
+to the sample size n. Regularization is often used to mitigate the problem.
+  In this paper, we proposed an l1-norm penalized pseudo-likelihood estimate
+for the inverse covariance matrix. This estimate is sparse due to the l1-norm
+penalty, and we term this method SPLICE. Its regularization path can be
+computed via an algorithm based on the homotopy/LARS-Lasso algorithm.
+Simulation studies are carried out for various inverse covariance structures
+for p=15 and n=20, 1000. We compare SPLICE with the l1-norm penalized
+likelihood estimate and a l1-norm penalized Cholesky decomposition based
+method. SPLICE gives the best overall performance in terms of three metrics on
+the precision matrix and ROC curve for model selection. Moreover, our
+simulation results demonstrate that the SPLICE estimates are positive-definite
+for most of the regularization path even though the restriction is not
+enforced.

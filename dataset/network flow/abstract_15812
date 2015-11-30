@@ -1,0 +1,19 @@
+We show how coupling of local optimization processes can lead to better
+solutions than multi-start local optimization consisting of independent runs.
+This is achieved by minimizing the average energy cost of the ensemble, subject
+to synchronization constraints between the state vectors of the individual
+local minimizers. From an augmented Lagrangian which incorporates the
+synchronization constraints both as soft and hard constraints, a network is
+derived wherein the local minimizers interact and exchange information through
+the synchronization constraints. From the viewpoint of neural networks, the
+array can be considered as a Lagrange programming network for continuous
+optimization and as a cellular neural network (CNN). The penalty weights
+associated with the soft state synchronization constraints follow from the
+solution to a linear program. This expresses that the energy cost of the
+ensemble should maximally decrease. In this way successful local minimizers can
+implicitly impose their state to the others through a mechanism of master-slave
+dynamics resulting into a cooperative search mechanism. Improved information
+spreading within the ensemble is obtained by applying the concept of
+small-world networks. This work suggests, in an interdisciplinary context, the
+importance of information exchange and state synchronization within ensembles,
+towards issues as evolution, collective behaviour, optimality and intelligence.

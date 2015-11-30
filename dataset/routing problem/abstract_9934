@@ -1,0 +1,15 @@
+This paper considers the linear inverse problem where we wish to estimate a
+structured signal $x$ from its corrupted observations. When the problem is
+ill-posed, it is natural to make use of a convex function $f(\cdot)$ that
+exploits the structure of the signal. For example, $\ell_1$ norm can be used
+for sparse signals. To carry out the estimation, we consider two well-known
+convex programs: 1) Second order cone program (SOCP), and, 2) Lasso. Assuming
+Gaussian measurements, we show that, if precise information about the value
+$f(x)$ or the $\ell_2$-norm of the noise is available, one can do a
+particularly good job at estimation. In particular, the reconstruction error
+becomes proportional to the "sparsity" of the signal rather than the ambient
+dimension of the noise vector. We connect our results to existing works and
+provide a discussion on the relation of our results to the standard
+least-squares problem. Our error bounds are non-asymptotic and sharp, they
+apply to arbitrary convex functions and do not assume any distribution on the
+noise.

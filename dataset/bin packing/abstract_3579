@@ -1,0 +1,22 @@
+Applying the standard weighted mean formula, [sum_i {n_i sigma^{-2}_i}] /
+[sum_i {sigma^{-2}_i}], to determine the weighted mean of data, n_i, drawn from
+a Poisson distribution, will, on average, underestimate the true mean by ~1 for
+all true mean values larger than ~3 when the common assumption is made that the
+error of the ith observation is sigma_i = max(sqrt{n_i},1). This small, but
+statistically significant offset, explains the long-known observation that
+chi-square minimization techniques which use the modified Neyman's chi-square
+statistic, chi^2_{N} equiv sum_i (n_i-y_i)^2 / max(n_i,1), to compare
+Poisson-distributed data with model values, y_i, will typically predict a total
+number of counts that underestimates the true total by about 1 count per bin.
+Based on my finding that the weighted mean of data drawn from a Poisson
+distribution can be determined using the formula [sum_i [n_i + min(n_i,1)]
+(n_i+1)^{-1}] / [sum_i (n_i+1)^{-1}], I propose that a new chi-square
+statistic, chi^2_gamma equiv sum_i [n_i + min(n_i,1) - y_i]^2 / [n_i + 1],
+should always be used to analyze Poisson-distributed data in preference to the
+modified Neyman's chi-square statistic. I demonstrate the power and usefulness
+of chi-square-gamma minimization by using two statistical fitting techniques
+and five chi-square statistics to analyze simulated X-ray power-law 15-channel
+spectra with large and small counts per bin. I show that chi-square-gamma
+minimization with the Levenberg-Marquardt or Powell's method can produce
+excellent results (mean slope errors <=3%) with spectra having as few as 25
+total counts.

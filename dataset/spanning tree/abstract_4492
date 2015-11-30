@@ -1,0 +1,13 @@
+A $k$-ranking of a graph $G$ is a labeling of its vertices from
+$\{1,\ldots,k\}$ such that any nontrivial path whose endpoints have the same
+label contains a larger label. The least $k$ for which $G$ has a $k$-ranking is
+the ranking number of $G$, also known as tree-depth. Applications of rankings
+include VLSI design, parallel computing, and factory scheduling. The on-line
+ranking problem asks for an algorithm to rank the vertices of $G$ as they are
+presented one at a time along with all previously ranked vertices and the edges
+between them (so each vertex is presented as the lone unranked vertex in a
+partially labeled induced subgraph of $G$ whose final placement in $G$ is not
+specified). The on-line ranking number of $G$ is the minimum over all such
+algorithms of the largest label that algorithm can be forced to use. We give
+bounds on the on-line ranking number of trees in terms of maximum degree,
+diameter, and number of interior vertices.

@@ -1,0 +1,20 @@
+The visual cue of optical flow plays a major role in the navigation of flying
+insects, and is increasingly studied for use by small flying robots as well. A
+major problem is that successful optical flow control seems to require distance
+estimates, while optical flow is known to provide only the ratio of velocity to
+distance. In this article, a novel, stability-based strategy is proposed to
+estimate distances with monocular optical flow and knowledge of the control
+inputs (efference copies). It is shown analytically that given a fixed control
+gain, the stability of a constant divergence control loop only depends on the
+distance to the approached surface. At close distances, the control loop first
+starts to exhibit self-induced oscillations, eventually leading to instability.
+The proposed stability-based strategy for estimating distances has two major
+attractive characteristics. First, self-induced oscillations are easy for the
+robot to detect and are hardly influenced by wind. Second, the distance can be
+estimated during a zero divergence maneuver, i.e., around hover. The
+stability-based strategy is implemented and tested both in simulation and with
+a Parrot AR drone 2.0. It is shown that it can be used to: (1) trigger a final
+approach response during a constant divergence landing with fixed gain, (2)
+estimate the distance in hover, and (3) estimate distances during an entire
+landing if the robot uses adaptive gain control to continuously stay on the
+'edge of oscillation'.

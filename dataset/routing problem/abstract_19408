@@ -1,0 +1,21 @@
+Continued demand for accurate and computationally efficient transport methods
+to solve optically thick, fixed-source transport problems has inspired research
+on variance-reduction (VR) techniques for Monte Carlo (MC). Methods that use
+deterministic results to create VR maps for MC constitute a dominant branch of
+this research, with Forward Weighted-Consistent Adjoint Driven Importance
+Sampling (FW-CADIS) being a particularly successful example. However, locations
+in which energy and spatial self-shielding are combined, such as thin plates
+embedded in concrete, challenge FW-CADIS. In these cases the deterministic flux
+cannot appropriately capture transport behavior, and the associated VR
+parameters result in high variance in and following the plate.
+  This work presents a new method that improves performance in transport
+calculations that contain regions of combined space and energy self-shielding
+without significant impact on the solution quality in other parts of the
+problem. This method is based on FW-CADIS and applies a Resonance Factor
+correction to the adjoint source. The impact of the Resonance Factor method is
+investigated in this work through an example problem. It is clear that this new
+method dramatically improves performance in terms of lowering the maximum 95%
+confidence interval relative error and reducing the compute time. Based on this
+work, we recommend that the Resonance Factor method be used when the accuracy
+of the solution in the presence of combined space and energy self-shielding is
+important.

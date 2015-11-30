@@ -1,0 +1,17 @@
+Experimental verification has been the method of choice for verifying the
+stability of a multi-agent reinforcement learning (MARL) algorithm as the
+number of agents grows and theoretical analysis becomes prohibitively complex.
+For cooperative agents, where the ultimate goal is to optimize some global
+metric, the stability is usually verified by observing the evolution of the
+global performance metric over time. If the global metric improves and
+eventually stabilizes, it is considered a reasonable verification of the
+system's stability.
+  The main contribution of this note is establishing the need for better
+experimental frameworks and measures to assess the stability of large-scale
+adaptive cooperative systems. We show an experimental case study where the
+stability of the global performance metric can be rather deceiving, hiding an
+underlying instability in the system that later leads to a significant drop in
+performance. We then propose an alternative metric that relies on agents' local
+policies and show, experimentally, that our proposed metric is more effective
+(than the traditional global performance metric) in exposing the instability of
+MARL algorithms.

@@ -1,0 +1,23 @@
+Fuzzy constraints are a popular approach to handle preferences and
+over-constrained problems in scenarios where one needs to be cautious, such as
+in medical or space applications. We consider here fuzzy constraint problems
+where some of the preferences may be missing. This models, for example,
+settings where agents are distributed and have privacy issues, or where there
+is an ongoing preference elicitation process. In this setting, we study how to
+find a solution which is optimal irrespective of the missing preferences. In
+the process of finding such a solution, we may elicit preferences from the user
+if necessary. However, our goal is to ask the user as little as possible. We
+define a combined solving and preference elicitation scheme with a large number
+of different instantiations, each corresponding to a concrete algorithm which
+we compare experimentally. We compute both the number of elicited preferences
+and the "user effort", which may be larger, as it contains all the preference
+values the user has to compute to be able to respond to the elicitation
+requests. While the number of elicited preferences is important when the
+concern is to communicate as little information as possible, the user effort
+measures also the hidden work the user has to do to be able to communicate the
+elicited preferences. Our experimental results show that some of our algorithms
+are very good at finding a necessarily optimal solution while asking the user
+for only a very small fraction of the missing preferences. The user effort is
+also very small for the best algorithms. Finally, we test these algorithms on
+hard constraint problems with possibly missing constraints, where the aim is to
+find feasible solutions irrespective of the missing constraints.

@@ -1,0 +1,18 @@
+A new approach to inference in state space models is proposed, based on
+approximate Bayesian computation (ABC). ABC avoids evaluation of the likelihood
+function by matching observed summary statistics with statistics computed from
+data simulated from the true process; exact inference being feasible only if
+the statistics are sufficient. With finite sample sufficiency unattainable in
+the state space setting, we seek asymptotic sufficiency via the maximum
+likelihood estimator (MLE) of the parameters of an auxiliary model. We prove
+that this auxiliary model-based approach achieves Bayesian consistency, and
+that - in a precise limiting sense - the proximity to (asymptotic) sufficiency
+yielded by the MLE is replicated by the score. In multiple parameter settings a
+separate treatment of scalar parameters, based on integrated likelihood
+techniques, is advocated as a way of avoiding the curse of dimensionality. Some
+attention is given to a structure in which the state variable is driven by a
+continuous time process, with exact inference typically infeasible in this case
+as a result of intractable transitions. The ABC method is demonstrated using
+the unscented Kalman filter as a fast and simple way of producing an
+approximation in this setting, with a stochastic volatility model for financial
+returns used for illustration.

@@ -1,0 +1,17 @@
+The decision to incorporate cross-validation into validation processes of
+mathematical models raises an immediate question - how should one partition the
+data into calibration and validation sets? We answer this question
+systematically: we present an algorithm to find the optimal partition of the
+data subject to certain constraints. While doing this, we address two critical
+issues: 1) that the model be evaluated with respect to predictions of a given
+quantity of interest and its ability to reproduce the data, and 2) that the
+model be highly challenged by the validation set, assuming it is properly
+informed by the calibration set. This framework also relies on the interaction
+between the experimentalist and/or modeler, who understand the physical system
+and the limitations of the model; the decision-maker, who understands and can
+quantify the cost of model failure; and the computational scientists, who
+strive to determine if the model satisfies both the modeler's and decision
+maker's requirements. We also note that our framework is quite general, and may
+be applied to a wide range of problems. Here, we illustrate it through a
+specific example involving a data reduction model for an ICCD camera from a
+shock-tube experiment located at the NASA Ames Research Center (ARC).

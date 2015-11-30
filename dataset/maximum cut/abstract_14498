@@ -1,0 +1,15 @@
+Logistic Gaussian process (LGP) priors provide a flexible alternative for
+modelling unknown densities. The smoothness properties of the density estimates
+can be controlled through the prior covariance structure of the LGP, but the
+challenge is the analytically intractable inference. In this paper, we present
+approximate Bayesian inference for LGP density estimation in a grid using
+Laplace's method to integrate over the non-Gaussian posterior distribution of
+latent function values and to determine the covariance function parameters with
+type-II maximum a posteriori (MAP) estimation. We demonstrate that Laplace's
+method with MAP is sufficiently fast for practical interactive visualisation of
+1D and 2D densities. Our experiments with simulated and real 1D data sets show
+that the estimation accuracy is close to a Markov chain Monte Carlo
+approximation and state-of-the-art hierarchical infinite Gaussian mixture
+models. We also construct a reduced-rank approximation to speed up the
+computations for dense 2D grids, and demonstrate density regression with the
+proposed Laplace approach.

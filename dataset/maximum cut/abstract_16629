@@ -1,0 +1,21 @@
+This article focuses on parameter estimation of multi-levels nonlinear mixed
+effects models (MNLMEMs). These models are used to analyze data presenting
+multiple hierarchical levels of grouping (cluster data, clinical trials with
+several observation periods,...). The variability of the individual parameters
+of the regression function is thus decomposed as a between-sub ject variability
+and higher levels of variability (for example within-sub ject variability). We
+propose maximum likelihood estimates of parameters of those MNLMEMs with two
+levels of random effects, using an extension of the SAEM-MCMC algorithm. The
+extended SAEM algorithm is split into an explicit direct EM algorithm and a
+stochastic EM part. Compared to the original algorithm, additional sufficient
+statistics have to be approximated by relying on the conditional distribution
+of the second level of random effects. This estimation method is evaluated on
+pharmacokinetic cross-over simulated trials, mimicking theophyllin
+concentration data. Results obtained on those datasets with either the SAEM
+algorithm or the FOCE algorithm (implemented in the nlme function of R
+software) are compared: biases and RMSEs of almost all the SAEM estimates are
+smaller than the FOCE ones. Finally, we apply the extended SAEM algorithm to
+analyze the pharmacokinetic interaction of tenofovir on atazanavir, a novel
+protease inhibitor, from the ANRS 107-Puzzle 2 study. A significant decrease of
+the area under the curve of atazanavir is found in patients receiving both
+treatments.

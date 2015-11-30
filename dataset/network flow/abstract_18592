@@ -1,0 +1,17 @@
+Parameter sensitivity analysis is a powerful tool in the building and
+analysis of biochemical network models. For stochastic simulations, parameter
+sensitivity analysis can be computationally expensive, requiring multiple
+simulations for perturbed values of the parameters. Here, we use trajectory
+reweighting to derive a method for computing sensitivity coefficients in
+stochastic simulations without explicitly perturbing the parameter values,
+avoiding the need for repeated simulations. The method allows the simultaneous
+computation of multiple sensitivity coefficients. Our approach recovers results
+originally obtained by application of the Girsanov measure transform in the
+general theory of stochastic processes [A. Plyasunov and A. P. Arkin, J. Comp.
+Phys. 221, 724 (2007)]. We build on these results to show how the method can be
+used to compute steady-state sensitivity coefficients from a single simulation
+run, and we present various efficiency improvements. For models of biochemical
+signaling networks the method has a particularly simple implementation. We
+demonstrate its application to a signaling network showing stochastic focussing
+and to a bistable genetic switch, and present exact results for models with
+linear propensity functions.

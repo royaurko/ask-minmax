@@ -1,0 +1,14 @@
+We describe a data structure that maintains the number of triangles in a
+dynamic undirected graph, subject to insertions and deletions of edges and of
+degree-zero vertices. More generally it can be used to maintain the number of
+copies of each possible three-vertex subgraph in time O(h) per update, where h
+is the h-index of the graph, the maximum number such that the graph contains
+$h$ vertices of degree at least h. We also show how to maintain the h-index
+itself, and a collection of h high-degree vertices in the graph, in constant
+time per update. Our data structure has applications in social network analysis
+using the exponential random graph model (ERGM); its bound of O(h) time per
+edge is never worse than the Theta(sqrt m) time per edge necessary to list all
+triangles in a static graph, and is strictly better for graphs obeying a power
+law degree distribution. In order to better understand the behavior of the
+h-index statistic and its implications for the performance of our algorithms,
+we also study the behavior of the h-index on a set of 136 real-world networks.

@@ -1,0 +1,16 @@
+A {\em parametric weighted graph} is a graph whose edges are labeled with
+continuous real functions of a single common variable. For any instantiation of
+the variable, one obtains a standard edge-weighted graph. Parametric weighted
+graph problems are generalizations of weighted graph problems, and arise in
+various natural scenarios. Parametric weighted graph algorithms consist of two
+phases. A {\em preprocessing phase} whose input is a parametric weighted graph,
+and whose output is a data structure, the advice, that is later used by the
+{\em instantiation phase}, where a specific value for the variable is given.
+The instantiation phase outputs the solution to the (standard) weighted graph
+problem that arises from the instantiation. The goal is to have the running
+time of the instantiation phase supersede the running time of any algorithm
+that solves the weighted graph problem from scratch, by taking advantage of the
+advice.
+  In this paper we construct several parametric algorithms for the shortest
+path problem. For the case of linear function weights we present an algorithm
+for the single source shortest path problem.

@@ -1,0 +1,9 @@
+This paper give a simple linear-time algorithm that, given a weighted
+digraph, finds a spanning tree that simultaneously approximates a shortest-path
+tree and a minimum spanning tree. The algorithm provides a continuous
+trade-off: given the two trees and epsilon > 0, the algorithm returns a
+spanning tree in which the distance between any vertex and the root of the
+shortest-path tree is at most 1+epsilon times the shortest-path distance, and
+yet the total weight of the tree is at most 1+2/epsilon times the weight of a
+minimum spanning tree. This is the best tradeoff possible. The paper also
+describes a fast parallel implementation.

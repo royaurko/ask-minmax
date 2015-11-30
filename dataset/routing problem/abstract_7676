@@ -1,0 +1,20 @@
+A priori dimension reduction is a widely adopted technique for reducing the
+computational complexity of stationary inverse problems. In this setting, the
+solution of an inverse problem is parameterized by a low-dimensional basis that
+is often obtained from the truncated Karhunen-Loeve expansion of the prior
+distribution. For high-dimensional inverse problems equipped with smoothing
+priors, this technique can lead to drastic reductions in parameter dimension
+and significant computational savings.
+  In this paper, we extend the concept of a priori dimension reduction to
+non-stationary inverse problems, in which the goal is to sequentially infer the
+state of a dynamical system. Our approach proceeds in an offline-online
+fashion. We first identify a low-dimensional subspace in the state space before
+solving the inverse problem (the offline phase), using either the method of
+"snapshots" or regularized covariance estimation. Then this subspace is used to
+reduce the computational complexity of various filtering algorithms - including
+the Kalman filter, extended Kalman filter, and ensemble Kalman filter - within
+a novel subspace-constrained Bayesian prediction-and-update procedure (the
+online phase). We demonstrate the performance of our new dimension reduction
+approach on various numerical examples. In some test cases, our approach
+reduces the dimensionality of the original problem by orders of magnitude and
+yields up to two orders of magnitude in computational savings.

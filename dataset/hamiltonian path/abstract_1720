@@ -1,0 +1,10 @@
+We consider efficient implementations of the generalized lasso dual path
+algorithm of Tibshirani and Taylor (2011). We first describe a generic approach
+that covers any penalty matrix D and any (full column rank) matrix X of
+predictor variables. We then describe fast implementations for the special
+cases of trend filtering problems, fused lasso problems, and sparse fused lasso
+problems, both with X=I and a general matrix X. These specialized
+implementations offer a considerable improvement over the generic
+implementation, both in terms of numerical stability and efficiency of the
+solution path computation. These algorithms are all available for use in the
+genlasso R package, which can be found in the CRAN repository.

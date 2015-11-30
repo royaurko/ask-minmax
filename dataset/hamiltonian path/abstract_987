@@ -1,0 +1,21 @@
+Shortest path computation is one of the most fundamental operations for
+managing and analyzing large social networks. Though existing techniques are
+quite effective for finding the shortest path on large but sparse road
+networks, social graphs have quite different characteristics: they are
+generally non-spatial, non-weighted, scale-free, and they exhibit small-world
+properties in addition to their massive size. In particular, the existence of
+hubs, those vertices with a large number of connections, explodes the search
+space, making the shortest path computation surprisingly challenging. In this
+paper, we introduce a set of novel techniques centered around hubs,
+collectively referred to as the Hub-Accelerator framework, to compute the
+k-degree shortest path (finding the shortest path between two vertices if their
+distance is within k). These techniques enable us to significantly reduce the
+search space by either greatly limiting the expansion scope of hubs (using the
+novel distance- preserving Hub-Network concept) or completely pruning away the
+hubs in the online search (using the Hub2-Labeling approach). The
+Hub-Accelerator approaches are more than two orders of magnitude faster than
+BFS and the state-of-the-art approximate shortest path method Sketch for the
+shortest path computation. The Hub- Network approach does not introduce
+additional index cost with light pre-computation cost; the index size and index
+construction cost of Hub2-Labeling are also moderate and better than or
+comparable to the approximation indexing Sketch method.

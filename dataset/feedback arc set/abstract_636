@@ -1,0 +1,21 @@
+In the {\sc Hitting Set} problem, we are given a collection $\cal F$ of
+subsets of a ground set $V$ and an integer $p$, and asked whether $V$ has a
+$p$-element subset that intersects each set in $\cal F$. We consider two
+parameterizations of {\sc Hitting Set} below tight upper bounds: $p=m-k$ and
+$p=n-k$. In both cases $k$ is the parameter. We prove that the first
+parameterization is fixed-parameter tractable, but has no polynomial kernel
+unless coNP$\subseteq$NP/poly. The second parameterization is W[1]-complete,
+but the introduction of an additional parameter, the degeneracy of the
+hypergraph $H=(V,{\cal F})$, makes the problem not only fixed-parameter
+tractable, but also one with a linear kernel. Here the degeneracy of
+$H=(V,{\cal F})$ is the minimum integer $d$ such that for each $X\subset V$ the
+hypergraph with vertex set $V\setminus X$ and edge set containing all edges of
+$\cal F$ without vertices in $X$, has a vertex of degree at most $d.$
+  In {\sc Nonblocker} ({\sc Directed Nonblocker}), we are given an undirected
+graph (a directed graph) $G$ on $n$ vertices and an integer $k$, and asked
+whether $G$ has a set $X$ of $n-k$ vertices such that for each vertex $y\not\in
+X$ there is an edge (arc) from a vertex in $X$ to $y$. {\sc Nonblocker} can be
+viewed as a special case of {\sc Directed Nonblocker} (replace an undirected
+graph by a symmetric digraph). Dehne et al. (Proc. SOFSEM 2006) proved that
+{\sc Nonblocker} has a linear-order kernel. We obtain a linear-order kernel for
+{\sc Directed Nonblocker}.

@@ -1,0 +1,11 @@
+We analyze a simple random process in which a token is moved in the interval
+$A=\{0,...,n\$: Fix a probability distribution $\mu$ over $\{1,...,n\$.
+Initially, the token is placed in a random position in $A$. In round $t$, a
+random value $d$ is chosen according to $\mu$. If the token is in position
+$a\geq d$, then it is moved to position $a-d$. Otherwise it stays put. Let $T$
+be the number of rounds until the token reaches position 0. We show tight
+bounds for the expectation of $T$ for the optimal distribution $\mu$. More
+precisely, we show that $\min_\mu\{E_\mu(T)\=\Theta((\log n)^2)$. For the
+proof, a novel potential function argument is introduced. The research is
+motivated by the problem of approximating the minimum of a continuous function
+over $[0,1]$ with a ``blind'' optimization strategy.

@@ -1,0 +1,10 @@
+Preconditioning is at the core of modern many-fermion Monte Carlo algorithms,
+such as Hybrid Monte Carlo, where the repeated solution of a linear problem
+involving an ill-conditioned matrix is needed. We report on a performance
+comparison of three preconditioning strategies, namely Chebyshev polynomials,
+strong-coupling approximation and weak-coupling expansion. We use conjugate
+gradient (CG) on the normal equations as well as stabilized biconjugate
+gradient (BiCGStab) as solvers and focus on the fermion matrix of the unitary
+Fermi gas. Our results indicate that BiCGStab is by far the most efficient
+strategy, both in terms of the number of iterations and matrix-vector
+operations.

@@ -1,0 +1,18 @@
+A common situation occurring when dealing with multimedia traffic is having
+large data frames fragmented into smaller IP packets, and having these packets
+sent independently through the network. For real-time multimedia traffic,
+dropping even few packets of a frame may render the entire frame useless. Such
+traffic is usually modeled as having {\em inter-packet dependencies}. We study
+the problem of scheduling traffic with such dependencies, where each packet has
+a deadline by which it should arrive at its destination. Such deadlines are
+common for real-time multimedia applications, and are derived from stringent
+delay constraints posed by the application. The figure of merit in such
+environments is maximizing the system's {\em goodput}, namely, the number of
+frames successfully delivered.
+  We study online algorithms for the problem of maximizing goodput of
+delay-bounded traffic with inter-packet dependencies, and use competitive
+analysis to evaluate their performance. We present competitive algorithms for
+the problem, as well as matching lower bounds that are tight up to a constant
+factor. We further present the results of a simulation study which further
+validates our algorithmic approach and shows that insights arising from our
+analysis are indeed manifested in practice.

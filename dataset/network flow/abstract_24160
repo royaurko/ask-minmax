@@ -1,0 +1,15 @@
+We examine the problem of accepting a new request for a pre-stored VBR video
+stream that has been smoothed using any of the smoothing algorithms found in
+the literature. The output of these algorithms is a piecewise constant-rate
+schedule for a Variable Bit-Rate (VBR) stream. The schedule guarantees that the
+decoder buffer does not overflow or underflow. The problem addressed in this
+paper is the determination of the minimal time displacement of each new
+requested VBR stream so that it can be accomodated by the network and/or the
+video server without overbooking the committed traffic. We prove that this
+call-admission control problem for multiple requested VBR streams is
+NP-complete and inapproximable within a constant factor, by reducing it from
+the VERTEX COLOR problem. We also present a deterministic morphology-sensitive
+algorithm that calculates the minimal time displacement of a VBR stream
+request. The complexity of the proposed algorithm make it suitable for
+real-time determination of the time displacement parameter during the call
+admission phase.

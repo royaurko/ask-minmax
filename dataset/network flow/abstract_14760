@@ -1,0 +1,14 @@
+We introduce a new problem that combines the well known All Pairs Shortest
+Paths (APSP) problem and the All Pairs Bottleneck Paths (APBP) problem to
+compute the shortest paths for all pairs of vertices for all possible flow
+amounts. We call this new problem the All Pairs Shortest Paths for All Flows
+(APSP-AF) problem. We firstly solve the APSP-AF problem on directed graphs with
+unit edge costs and real edge capacities in
+$\tilde{O}(\sqrt{t}n^{(\omega+9)/4}) = \tilde{O}(\sqrt{t}n^{2.843})$ time,
+where $n$ is the number of vertices, $t$ is the number of distinct edge
+capacities (flow amounts) and $O(n^{\omega}) < O(n^{2.373})$ is the time taken
+to multiply two $n$-by-$n$ matrices over a ring. Secondly we extend the problem
+to graphs with positive integer edge costs and present an algorithm with
+$\tilde{O}(\sqrt{t}c^{(\omega+5)/4}n^{(\omega+9)/4}) =
+\tilde{O}(\sqrt{t}c^{1.843}n^{2.843})$ worst case time complexity, where $c$ is
+the upper bound on edge costs.

@@ -1,0 +1,11 @@
+Let $\phi$ be a 3CNF formula with n variables and m clauses. A simple
+nonconstructive argument shows that when m is sufficiently large compared to n,
+most 3CNF formulas are not satisfiable. It is an open question whether there is
+an efficient refutation algorithm that for most such formulas proves that they
+are not satisfiable. A possible approach to refute a formula $\phi$ is: first,
+translate it into a graph $G_{\phi}$ using a generic reduction from 3-SAT to
+max-IS, then bound the maximum independent set of $G_{\phi}$ using the Lovasz
+$\vartheta$ function. If the $\vartheta$ function returns a value $< m$, this
+is a certificate for the unsatisfiability of $\phi$. We show that for random
+formulas with $m < n^{3/2 -o(1)}$ clauses, the above approach fails, i.e. the
+$\vartheta$ function is likely to return a value of m.

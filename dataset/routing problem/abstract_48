@@ -1,0 +1,17 @@
+The backpressure routing policy is known to be a throughput optimal policy
+that supports any feasible traffic demand in data networks, but may have poor
+delay performance when packets traverse loops in the network. In this paper, we
+study loop-free backpressure routing policies that forward packets along
+directed acyclic graphs (DAGs) to avoid the looping problem. These policies use
+link reversal algorithms to improve the DAGs in order to support any achievable
+traffic demand.
+  For a network with a single commodity, we show that a DAG that supports a
+given traffic demand can be found after a finite number of iterations of the
+link-reversal process. We use this to develop a joint link-reversal and
+backpressure routing policy, called the loop free backpressure (LFBP)
+algorithm. This algorithm forwards packets on the DAG, while the DAG is
+dynamically updated based on the growth of the queue backlogs. We show by
+simulations that such a DAG-based policy improves the delay over the classical
+backpressure routing policy. We also propose a multicommodity version of the
+LFBP algorithm, and via simulation we show that its delay performance is better
+than that of backpressure.

@@ -1,0 +1,19 @@
+This paper attends to the problem of embedding flexibly specified CloudNets,
+virtual networks connecting cloud resources (such as storage or computation).
+We attend to a scenario where customers can request CloudNets at short notice,
+and an infrastructure provider (or a potential itermediate broker or reseller)
+first embeds the CloudNet fast (e.g., using a simple heuristic). Later,
+however, long-lived CloudNets embeddings are optimized by migrating them to
+more suitable locations, whose precise definition depends on a given objective
+function. For instance, such migrations can be useful to reduce the peak
+resource loads in the network by spreading CloudNets across the infrastructure,
+to save energy by moving CloudNets together and switching off unused
+components, or for maintenance purposes.
+  We present a very generic algorithm to compute optimal embeddings of
+CloudNets: It allows for different objective functions (such as load
+minimization or energy conservation), supports cost-aware migration, and can
+deal with all link types that arise in practice (e.g., full-duplex or even
+wireless or wired broadcast links with multiple endpoints). Our evaluation
+shows that such a rigorous optimization is even feasible in order to optimize a
+moderate-size CloudNet of full flexibility (e.g., a router site, a small
+physical infrastructure or virtual provider network).

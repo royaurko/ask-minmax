@@ -1,0 +1,14 @@
+Belief Propagation has been widely used for marginal inference, however it is
+slow on problems with large-domain variables and high-order factors. Previous
+work provides useful approximations to facilitate inference on such models, but
+lacks important anytime properties such as: 1) providing accurate and
+consistent marginals when stopped early, 2) improving the approximation when
+run longer, and 3) converging to the fixed point of BP. To this end, we propose
+a message passing algorithm that works on sparse (partially instantiated)
+domains, and converges to consistent marginals using dynamic message
+scheduling. The algorithm grows the sparse domains incrementally, selecting the
+next value to add using prioritization schemes based on the gradients of the
+marginal inference objective. Our experiments demonstrate local anytime
+consistency and fast convergence, providing significant speedups over BP to
+obtain low-error marginals: up to 25 times on grid models, and up to 6 times on
+a real-world natural language processing task.

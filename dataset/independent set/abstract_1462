@@ -1,0 +1,18 @@
+We present a new linear scaling method for the energy minimization step of
+semiempirical and first-principles Hartree-Fock and Kohn-Sham calculations. It
+is based on the self-consistent calculation of the optimum localized orbitals
+of any localization method of choice and on the use of orbital-specific basis
+sets. The full set of localized orbitals of a large molecule is seen as an
+orbital mosaic where each tessera is made of only a few of them. The orbital
+tesserae are computed out of a set of embedded cluster pseudoeigenvalue coupled
+equations which are solved in a building-block self-consistent fashion. In each
+iteration, the embedded cluster equations are solved independently of each
+other and, as a result, the method is parallel at a high level of the
+calculation. In addition to full system calculations, the method enables to
+perform simpler, much less demanding embedded cluster calculations, where only
+a fraction of the localized molecular orbitals are variational while the rest
+are frozen, taking advantage of the transferability of the localized orbitals
+of a given localization method between similar molecules. Monitoring single
+point energy calculations of large poly(ethylene oxide) molecules and three
+dimensional carbon monoxide clusters using an extended Huckel Hamiltonian are
+presented.

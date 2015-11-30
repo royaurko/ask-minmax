@@ -1,0 +1,20 @@
+Recent contributions have framed linear system identification as a
+nonparametric regularized inverse problem, which in some situations have proved
+to be advantageous w.r.t classical parametric methods. Typical formulations
+exploit an $\ell_2$-type regularization which accounts for the stability and
+smoothness of the impulse response to be estimated. In this paper, adopting
+Maximum Entropy arguments, we derive a new type of $\ell_2$-regularization
+which results in a vector-valued kernel; our aim is to introduce regularization
+on the block Hankel matrix built with Markov coefficients, thus controlling the
+complexity of the identified model, measured by its McMillan degree. As a
+special case we recover the standard nuclear norm penalty. Combining this
+Hankel-based regularization with the standard $\ell_2$-type regularization
+adopted in previous literature we design a kernel which, at the same time,
+encodes stability, smoothness and low McMillan degree. In contrast with
+previous literature on reweighed nuclear norm penalties, our kernel is
+described by a small number of hyper-prameters, which are iteratively updated
+through marginal likelihood maximization. To this purpose we also adapt a
+Scaled Gradient Projection (SGP) algorithm which is proved to be significantly
+computationally cheaper than other first and second order off-the-shelf
+optimization methods. The effectiveness of the identification technique we
+propose is confirmed by several Monte-Carlo studies.

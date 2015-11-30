@@ -1,0 +1,15 @@
+Multi-mode real-time systems are those which support applications with
+different modes of operation, where each mode is characterized by a specific
+set of tasks. At run-time, such systems can, at any time, be requested to
+switch from its current operating mode to another mode (called "new mode") by
+replacing the current set of tasks with that of the new-mode. Thereby, ensuring
+that all the timing requirements are met not only requires that a
+schedulability test is performed on the tasks of each mode but also that (i) a
+protocol for transitioning from one mode to another is specified and (ii) a
+schedulability test for each transition is performed. We propose two distinct
+protocols that manage the mode transitions upon uniform and identical
+multiprocessor platforms at run-time, each specific to distinct task
+requirements. For each protocol, we formally establish schedulability analyses
+that indicate beforehand whether all the timing requirements will be met during
+any mode transition of the system. This is performed assuming both
+Fixed-Task-Priority and Fixed-Job-Priority schedulers.

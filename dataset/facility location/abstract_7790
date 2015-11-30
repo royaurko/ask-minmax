@@ -1,0 +1,19 @@
+The optimal control of a "blind" pursuer searching for an evader moving on a
+road network and heading at a known speed toward a set of goal vertices is
+considered. To aid the "blind" pursuer, certain roads in the network have been
+instrumented with Unattended Ground Sensors (UGSs) that detect the evader's
+passage. When the pursuer arrives at an instrumented node, the UGS therein
+informs the pursuer if and when the evader visited the node. The pursuer's
+motion is not restricted to the road network. In addition, the pursuer can
+choose to wait/loiter for an arbitrary time at any UGS location/node. At time
+0, the evader passes by an entry node on his way towards one of the exit nodes.
+The pursuer also arrives at this entry node after some delay and is thus
+informed about the presence of the intruder/evader in the network, whereupon
+the chase is on - the pursuer is tasked with capturing the evader. Because the
+pursuer is "blind", capture entails the pursuer and evader being collocated at
+an UGS location. If this happens, the UGS is triggered and this information is
+instantaneously relayed to the pursuer, thereby enabling capture. On the other
+hand, if the evader reaches one of the exit nodes without being captured, he is
+deemed to have escaped. We provide an algorithm that computes the maximum
+initial delay at the entry node for which capture is guaranteed. The algorithm
+also returns the corresponding optimal pursuit policy.

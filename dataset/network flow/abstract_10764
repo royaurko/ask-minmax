@@ -1,0 +1,20 @@
+Active galactic nuclei, x-ray binaries, pulsars, and gamma-ray bursts are all
+believed to be powered by compact objects surrounded by relativistic plasma
+flows driving phenomena such as accretion, winds, and jets. These flows are
+often accurately modelled by the relativistic magnetohydrodynamics (MHD)
+approximation. Time-dependent numerical MHD simulations have proven to be
+especially insightful, but one regime that remains difficult to simulate is
+when the energy scales (kinetic, thermal, magnetic) within the plasma become
+disparate. We develop a numerical scheme that significantly improves the
+accuracy and robustness of the solution in this regime. We use a modified form
+of the WENO method to construct a finite-volume general relativistic
+hydrodynamics code called WHAM that converges at fifth order. We avoid (1)
+field-by-field decomposition by adaptively reducing down to 2-point stencils
+near discontinuities for a more accurate treatment of shocks, and (2) excessive
+reduction to low order stencils, as in the standard WENO formalism, by
+maintaining high order accuracy in smooth monotonic flows. Our scheme performs
+the proper surface integral of the fluxes, converts cell averaged conserved
+quantities to point conserved quantities before performing the reconstruction
+step, and correctly averages all source terms. We demonstrate that the scheme
+is robust in strong shocks, very accurate in smooth flows, and maintains
+accuracy even when the energy scales in the flow are highly disparate.

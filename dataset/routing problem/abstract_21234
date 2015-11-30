@@ -1,0 +1,25 @@
+Parameter estimation by nonlinear least squares minimization is a common
+problem with an elegant geometric interpretation: the possible parameter values
+of a model induce a manifold in the space of data predictions. The minimization
+problem is then to find the point on the manifold closest to the data. We show
+that the model manifolds of a large class of models, known as sloppy models,
+have many universal features; they are characterized by a geometric series of
+widths, extrinsic curvatures, and parameter-effects curvatures. A number of
+common difficulties in optimizing least squares problems are due to this common
+structure. First, algorithms tend to run into the boundaries of the model
+manifold, causing parameters to diverge or become unphysical. We introduce the
+model graph as an extension of the model manifold to remedy this problem. We
+argue that appropriate priors can remove the boundaries and improve convergence
+rates. We show that typical fits will have many evaporated parameters. Second,
+bare model parameters are usually ill-suited to describing model behavior; cost
+contours in parameter space tend to form hierarchies of plateaus and canyons.
+Geometrically, we understand this inconvenient parametrization as an extremely
+skewed coordinate basis and show that it induces a large parameter-effects
+curvature on the manifold. Using coordinates based on geodesic motion, these
+narrow canyons are transformed in many cases into a single quadratic, isotropic
+basin. We interpret the modified Gauss-Newton and Levenberg-Marquardt fitting
+algorithms as an Euler approximation to geodesic motion in these natural
+coordinates on the model manifold and the model graph respectively. By adding a
+geodesic acceleration adjustment to these algorithms, we alleviate the
+difficulties from parameter-effects curvature, improving both efficiency and
+success rates at finding good fits.

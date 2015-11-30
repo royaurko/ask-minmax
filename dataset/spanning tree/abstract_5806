@@ -1,0 +1,24 @@
+A mesh is a graph that divides physical space into regularly-shaped regions.
+Meshes computations form the basis of many applications, e.g. finite-element
+methods, image rendering, and collision detection. In one important mesh
+primitive, called a mesh update, each mesh vertex stores a value and repeatedly
+updates this value based on the values stored in all neighboring vertices. The
+performance of a mesh update depends on the layout of the mesh in memory.
+  This paper shows how to find a memory layout that guarantees that the mesh
+update has asymptotically optimal memory performance for any set of memory
+parameters. Such a memory layout is called cache-oblivious. Formally, for a
+$d$-dimensional mesh $G$, block size $B$, and cache size $M$ (where
+$M=\Omega(B^d)$), the mesh update of $G$ uses $O(1+|G|/B)$ memory transfers.
+The paper also shows how the mesh-update performance degrades for smaller
+caches, where $M=o(B^d)$.
+  The paper then gives two algorithms for finding cache-oblivious mesh layouts.
+The first layout algorithm runs in time $O(|G|\log^2|G|)$ both in expectation
+and with high probability on a RAM. It uses $O(1+|G|\log^2(|G|/M)/B)$ memory
+transfers in expectation and $O(1+(|G|/B)(\log^2(|G|/M) + \log|G|))$ memory
+transfers with high probability in the cache-oblivious and disk-access machine
+(DAM) models. The layout is obtained by finding a fully balanced decomposition
+tree of $G$ and then performing an in-order traversal of the leaves of the
+tree. The second algorithm runs faster by almost a $\log|G|/\log\log|G|$ factor
+in all three memory models, both in expectation and with high probability. The
+layout obtained by finding a relax-balanced decomposition tree of $G$ and then
+performing an in-order traversal of the leaves of the tree.

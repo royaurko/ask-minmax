@@ -1,0 +1,25 @@
+We study two computational problems, parameterised by a fixed tree H.
+#HomsTo(H) is the problem of counting homomorphisms from an input graph G to H.
+#WHomsTo(H) is the problem of counting weighted homomorphisms to H, given an
+input graph G and a weight function for each vertex v of G. Even though H is a
+tree, these problems turn out to be sufficiently rich to capture all of the
+known approximation behaviour in #P. We give a complete trichotomy for
+#WHomsTo(H). If H is a star then #WHomsTo(H) is in FP. If H is not a star but
+it does not contain a certain induced subgraph J_3 then #WHomsTo(H) is
+equivalent under approximation-preserving (AP) reductions to #BIS, the problem
+of counting independent sets in a bipartite graph. This problem is complete for
+the class #RHPi_1 under AP-reductions. Finally, if H contains an induced J_3
+then #WHomsTo(H) is equivalent under AP-reductions to #SAT, the problem of
+counting satisfying assignments to a CNF Boolean formula. Thus, #WHomsTo(H) is
+complete for #P under AP-reductions. The results are similar for #HomsTo(H)
+except that a rich structure emerges if H contains an induced J_3. We show that
+there are trees H for which #HomsTo(H) is #SAT-equivalent (disproving a
+plausible conjecture of Kelk). There is an interesting connection between these
+homomorphism-counting problems and the problem of approximating the partition
+function of the ferromagnetic Potts model. In particular, we show that for a
+family of graphs J_q, parameterised by a positive integer q, the problem
+#HomsTo(H) is AP-interreducible with the problem of approximating the partition
+function of the q-state Potts model. It was not previously known that the Potts
+model had a homomorphism-counting interpretation. We use this connection to
+obtain some additional upper bounds for the approximation complexity of
+#HomsTo(J_q).

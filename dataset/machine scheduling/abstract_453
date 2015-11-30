@@ -1,0 +1,18 @@
+One of the main issues in the design of sensor networks is energy efficient
+communication of time-critical data. Energy wastage can be caused by failed
+packet transmission attempts at each node due to channel dynamics and
+interference. Therefore transmission control techniques that are unaware of the
+channel dynamics can lead to suboptimal channel use patterns. In this paper we
+propose a transmission controller that utilizes different "grades" of channel
+side information to schedule packet transmissions in an optimal way, while
+meeting a deadline constraint for all packets waiting in the transmission
+queue. The wireless channel is modeled as a finite-state Markov channel. We are
+specifically interested in the case where the transmitter has low-grade channel
+side information that can be obtained based solely on the ACK/NAK sequence for
+the previous transmissions. Our scheduler is readily implementable and it is
+based on the dynamic programming solution to the finite-horizon transmission
+control problem. We also calculate the information theoretic capacity of the
+finite state Markov channel with feedback containing different grades of
+channel side information including that, obtained through the ACK/NAK sequence.
+We illustrate that our scheduler achieves a given throughput at a power level
+that is fairly close to the fundamental limit achievable over the channel.

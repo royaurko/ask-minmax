@@ -1,0 +1,14 @@
+When in a full exponential family the maximum likelihood estimate (MLE) does
+not exist, the MLE may exist in the Barndorff-Nielsen completion of the family.
+We propose a practical algorithm for finding the MLE in the completion based on
+repeated linear programming using the R contributed package rcdd and illustrate
+it with two generalized linear model examples. When the MLE for the null
+hypothesis lies in the completion, likelihood ratio tests of model comparison
+are almost unchanged from the usual case. Only the degrees of freedom need to
+be adjusted. When the MLE lies in the completion, confidence intervals are
+changed much more from the usual case. The MLE of the natural parameter can be
+thought of as having gone to infinity in a certain direction, which we call a
+generic direction of recession. We propose a new one-sided confidence interval
+which says how close to infinity the natural parameter may be. This maps to
+one-sided confidence intervals for mean values showing how close to the
+boundary of their support they may be.

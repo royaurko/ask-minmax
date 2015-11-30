@@ -1,0 +1,20 @@
+This article discusses the problem of estimation of parameters in finite
+mixtures when the mixture components are assumed to be symmetric and to come
+from the same location family. We refer to these mixtures as semi-parametric
+because no additional assumptions other than symmetry are made regarding the
+parametric form of the component distributions. Because the class of symmetric
+distributions is so broad, identifiability of parameters is a major issue in
+these mixtures. We develop a notion of identifiability of finite mixture
+models, which we call k-identifiability, where k denotes the number of
+components in the mixture. We give sufficient conditions for k-identifiability
+of location mixtures of symmetric components when k=2 or 3. We propose a novel
+distance-based method for estimating the (location and mixing) parameters from
+a k-identifiable model and establish the strong consistency and asymptotic
+normality of the estimator. In the specific case of L_2-distance, we show that
+our estimator generalizes the Hodges--Lehmann estimator. We discuss the
+numerical implementation of these procedures, along with an empirical estimate
+of the component distribution, in the two-component case. In comparisons with
+maximum likelihood estimation assuming normal components, our method produces
+somewhat higher standard error estimates in the case where the components are
+truly normal, but dramatically outperforms the normal method when the
+components are heavy-tailed.

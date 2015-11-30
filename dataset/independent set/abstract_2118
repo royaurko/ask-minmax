@@ -1,0 +1,17 @@
+In a stochastic probing problem we are given a universe $E$, where each
+element $e \in E$ is active independently with probability $p_e$, and only a
+probe of e can tell us whether it is active or not. On this universe we execute
+a process that one by one probes elements --- if a probed element is active,
+then we have to include it in the solution, which we gradually construct.
+Throughout the process we need to obey inner constraints on the set of elements
+taken into the solution, and outer constraints on the set of all probed
+elements. This abstract model was presented by Gupta and Nagarajan (IPCO '13),
+and provides a unified view of a number of problems. Thus far, all the results
+falling under this general framework pertain mainly to the case in which we are
+maximizing a linear objective function of the successfully probed elements. In
+this paper we generalize the stochastic probing problem by considering a
+monotone submodular objective function. We give a $(1 - 1/e)/(k_{in} +
+k_{out}+1)$-approximation algorithm for the case in which we are given $k_{in}$
+matroids as inner constraints and $k_{out}$ matroids as outer constraints.
+Additionally, we obtain an improved $1/(k_{in} + k_{out})$-approximation
+algorithm for linear objective functions.

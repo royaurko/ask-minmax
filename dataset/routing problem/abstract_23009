@@ -1,0 +1,12 @@
+The aim of the paper is to introduce general techniques in order to optimize
+the parallel execution time of sorting on a distributed architectures with
+processors of various speeds. Such an application requires a partitioning step.
+For uniformly related processors (processors speeds are related by a constant
+factor), we develop a constant time technique for mastering processor load and
+execution time in an heterogeneous environment and also a technique to deal
+with unknown cost functions. For non uniformly related processors, we use a
+technique based on dynamic programming. Most of the time, the solutions are in
+O(p) (p is the number of processors), independent of the problem size n.
+Consequently, there is a small overhead regarding the problem we deal with but
+it is inherently limited by the knowing of time complexity of the portion of
+code following the partitioning.

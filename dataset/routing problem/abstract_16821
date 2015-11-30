@@ -1,0 +1,12 @@
+We study the problem of consistent query answering under primary key
+violations. In this setting, the relations in a database violate the key
+constraints and we are interested in maximal subsets of the database that
+satisfy the constraints, which we call repairs. For a boolean query Q, the
+problem CERTAINTY(Q) asks whether every such repair satisfies the query or not;
+the problem is known to be always in coNP for conjunctive queries. However,
+there are queries for which it can be solved in polynomial time. It has been
+conjectured that there exists a dichotomy on the complexity of CERTAINTY(Q) for
+conjunctive queries: it is either in PTIME or coNP-complete. In this paper, we
+prove that the conjecture is indeed true for the case of conjunctive queries
+without self-joins, where each atom has as a key either a single attribute
+(simple key) or all attributes of the atom.

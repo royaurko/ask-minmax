@@ -1,0 +1,12 @@
+BitTorrent developers have recently introduced a new application layer
+congestion control algorithm based on UDP framing at transport layer and
+currently under definition at the IETF LEDBAT Working Group. LEDBAT is a
+delay-based protocol which aims at offering a "lower than Best Effort" data
+transfer service, with a lower priority with respect to elastic TCP and
+interactive traffic (e.g., VoIP, game). However, in its current specification,
+LEDBAT is affected by a late-comer advantage: indeed the last flow arriving at
+the bottleneck is more aggressive due to a wrong estimation of the base delay
+and finally takes over all resources. In this work, we study several solutions
+to the late-comer problem by means of packet level simulations and simple
+analysis: in the investigation process, we individuate the root cause for
+LEDBAT unfairness and propose effective countermeasures.

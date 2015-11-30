@@ -1,0 +1,19 @@
+A model, called the linear transform network (LTN), is proposed to analyze
+the compression and estimation of correlated signals transmitted over directed
+acyclic graphs (DAGs). An LTN is a DAG network with multiple source and
+receiver nodes. Source nodes transmit subspace projections of random correlated
+signals by applying reduced-dimension linear transforms. The subspace
+projections are linearly processed by multiple relays and routed to intended
+receivers. Each receiver applies a linear estimator to approximate a subset of
+the sources with minimum mean squared error (MSE) distortion. The model is
+extended to include noisy networks with power constraints on transmitters. A
+key task is to compute all local compression matrices and linear estimators in
+the network to minimize end-to-end distortion. The non-convex problem is solved
+iteratively within an optimization framework using constrained quadratic
+programs (QPs). The proposed algorithm recovers as special cases the regular
+and distributed Karhunen-Loeve transforms (KLTs). Cut-set lower bounds on the
+distortion region of multi-source, multi-receiver networks are given for linear
+coding based on convex relaxations. Cut-set lower bounds are also given for any
+coding strategy based on information theory. The distortion region and
+compression-estimation tradeoffs are illustrated for different communication
+demands (e.g. multiple unicast), and graph structures.

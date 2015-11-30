@@ -1,0 +1,20 @@
+We study the problem of high-dimensional regression when there may be
+interacting variables. Approaches using sparsity-inducing penalty functions
+such as the Lasso (Tibshirani, 1996) can be useful for producing interpretable
+models. However, when the number variables runs into the thousands, and so even
+two-way interactions number in the millions, these methods become
+computationally infeasible. Typically variable screening based on model fits
+using only main effects must be performed first. One problem with screening is
+that important variables may be missed if they are only useful for prediction
+when certain interaction terms are also present in the model.
+  To tackle this issue, we introduce a new method we call Backtracking. It can
+be incorporated into many existing high-dimensional methods based on penalty
+functions, and works by building increasing sets of candidate interactions
+iteratively. Models fitted on the main effects and interactions selected early
+on in this process, guide the selection of future interactions. By also making
+use of previous fits for computation, as well as performing calculations is
+parallel, the overall run-time of the algorithm can be greatly reduced.
+  The effectiveness of our method when applied to regression and classification
+problems is demonstrated on simulated and real data sets. In the case of using
+Backtracking with the Lasso, we also give some theoretical support for our
+procedure.

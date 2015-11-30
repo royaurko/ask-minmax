@@ -1,0 +1,26 @@
+The WikiLeaks Afghanistan war logs contain nearly $77,000$ reports of
+incidents in the US-led Afghanistan war, covering the period from January 2004
+to December 2009. The recent growth of data on complex social systems and the
+potential to derive stories from them has shifted the focus of journalistic and
+scientific attention increasingly toward data-driven journalism and
+computational social science. In this paper we advocate the usage of modern
+statistical methods for problems of data journalism and beyond, which may help
+journalistic and scientific work and lead to additional insight. Using the
+WikiLeaks Afghanistan war logs for illustration, we present an approach that
+builds intelligible statistical models for interpretable segments in the data,
+in this case to explore the fatality rates associated with different
+circumstances in the Afghanistan war. Our approach combines preprocessing by
+Latent Dirichlet Allocation (LDA) with model trees. LDA is used to process the
+natural language information contained in each report summary by estimating
+latent topics and assigning each report to one of them. Together with other
+variables these topic assignments serve as splitting variables for finding
+segments in the data to which local statistical models for the reported number
+of fatalities are fitted. Segmentation and fitting is carried out with
+recursive partitioning of negative binomial distributions. We identify segments
+with different fatality rates that correspond to a small number of topics and
+other variables as well as their interactions. Furthermore, we carve out the
+similarities between segments and connect them to stories that have been
+covered in the media. This gives an unprecedented description of the war in
+Afghanistan and serves as an example of how data journalism, computational
+social science and other areas with interest in database data can benefit from
+modern statistical techniques.

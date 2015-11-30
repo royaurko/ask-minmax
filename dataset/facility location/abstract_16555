@@ -1,0 +1,18 @@
+We consider the problem of approximating all real roots of a square-free
+polynomial $f$. Given isolating intervals, our algorithm refines each of them
+to a width of $2^{-L}$ or less, that is, each of the roots is approximated to
+$L$ bits after the binary point. Our method provides a certified answer for
+arbitrary real polynomials, only considering finite approximations of the
+polynomial coefficients and choosing a suitable working precision adaptively.
+In this way, we get a correct algorithm that is simple to implement and
+practically efficient. Our algorithm uses the quadratic interval refinement
+method; we adapt that method to be able to cope with inaccuracies when
+evaluating $f$, without sacrificing its quadratic convergence behavior. We
+prove a bound on the bit complexity of our algorithm in terms of the degree of
+the polynomial, the size and the separation of the roots, that is, parameters
+exclusively related to the geometric location of the roots. Our bound is near
+optimal and significantly improves previous work on integer polynomials.
+Furthermore, it essentially matches the best known theoretical bounds on root
+approximation which are obtained by very sophisticated algorithms. We also
+investigate the practical behavior of the algorithm and demonstrate how closely
+the practical performance matches our asymptotic bounds.

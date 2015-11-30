@@ -1,0 +1,17 @@
+The GLAST LAT calibration infrastructure is designed to accommodate a wide
+range of time-varying data types, including at a minimum hardware status bits,
+conversion constants, and alignment for the GLAST LAT instrument and its
+prototypes. The system will support persistent XML and ROOT data to begin with;
+other physical formats will be added if necessary. In addition to the "bulk
+data", each data set will have associated with it a row in a rdbms table
+containing metadata, such as timestamps, data format, pointer to the location
+of the bulk data, etc., which will be used to identify and locate the
+appropriate data set for a particular application.
+  As GLAST uses the Gaudi framework for event processing, the Calibration
+Infrastructure makes use of several Gaudi elements and concepts, such as
+conversion services, converters and data objects and implements the prescribed
+Gaudi interfaces (IDetDataSvc, IValidity, ..). This insures that calibration
+data will always be valid and appropriate for the event being processed. The
+persistent representation of a calibration dataset as two physical pieces in
+different formats complicates the conversion process somewhat: two cooperating
+conversion services are involved in the conversion of any single dataset.

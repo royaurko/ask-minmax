@@ -1,0 +1,20 @@
+Given a connected (multi)graph G, consisting of V vertices and I lines, we
+consider a class of multidimensional sums constructed in the following way:
+  - orient the lines of the graph in some (arbitrary) fashion
+  - assign to each line i a positive variable q_i and an integer summation
+variable n_i
+  - assign to each vertex v an integer variable N_v
+  - construct the following rational function:
+  -- the denominator is a product of factors (n^2+q^2), one for each line of
+the graph;
+  -- the numerator is a product of Kronecker deltas, one for each vertex of the
+graph. For each vertex, the Kronecker delta imposes a linear constraint among
+the summation variables n_i of the lines incident upon the vertex, requiring
+that the sum of the variables n_i of the lines coming out of vertex minus the
+sum of the variables n_i of the lines coming into the vertex be equal to the
+integer variable N assigned to that vertex.
+  - sum over all the n_i variables from minus infinity to infinity
+  The sums thus constructed, called Matsubara sums, are functions of the I real
+positive variables q_i and the V integer variables N_v.
+  It is shown any Matsubara sum can be evaluated in closed form by applying a
+linear operator to an integral closely associated with the sum.

@@ -1,0 +1,17 @@
+We present an algorithm which is designed to allow the efficient
+identification and preliminary dynamical analysis of thousands of structures
+and substructures in large N-body simulations. First we utilise a refined
+density gradient system (based on DENMAX) to identify the structures, and then
+apply an iterative approximate method to identify unbound particles, allowing
+fast calculation of bound substructures. After producing a catalog of separate
+energetically bound substructures we check to see which of these are
+energetically bound to adjacent substructures. For such bound complex subhalos,
+we combine components and check if additional free particles are also bound to
+the union, repeating the process iteratively until no further changes are
+found. Thus our subhalos can contain more than one density maximum, but the
+scheme is stable: starting with a small smoothing length initially produces
+small structures which must be combined later, and starting with a large
+smoothing length produces large structures within which sub-substructure is
+found. We apply this algorithm to three simulations. Two which are using the
+TPM algorithm by Bode et al. (2000) and one on a simulated halo by Diemand
+(2004). For all these halos we find about 5-8% of the mass in substructures.

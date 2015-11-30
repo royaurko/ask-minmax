@@ -1,0 +1,20 @@
+A transmitter without channel state information (CSI) wishes to send a
+delay-limited Gaussian source over a slowly fading channel. The source is coded
+in superimposed layers, with each layer successively refining the description
+in the previous one. The receiver decodes the layers that are supported by the
+channel realization and reconstructs the source up to a distortion. The
+expected distortion is minimized by optimally allocating the transmit power
+among the source layers. For two source layers, the allocation is optimal when
+power is first assigned to the higher layer up to a power ceiling that depends
+only on the channel fading distribution; all remaining power, if any, is
+allocated to the lower layer. For convex distortion cost functions with convex
+constraints, the minimization is formulated as a convex optimization problem.
+In the limit of a continuum of infinite layers, the minimum expected distortion
+is given by the solution to a set of linear differential equations in terms of
+the density of the fading distribution. As the bandwidth ratio b (channel uses
+per source symbol) tends to zero, the power distribution that minimizes
+expected distortion converges to the one that maximizes expected capacity.
+While expected distortion can be improved by acquiring CSI at the transmitter
+(CSIT) or by increasing diversity from the realization of independent fading
+paths, at high SNR the performance benefit from diversity exceeds that from
+CSIT, especially when b is large.

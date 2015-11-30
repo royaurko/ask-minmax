@@ -1,0 +1,17 @@
+Many applications in network analysis require algorithms to sample uniformly
+at random from the set of all graphs with a prescribed degree sequence. We
+present a Markov chain based approach which converges to the uniform
+distribution of all realizations for both the directed and undirected case. It
+remains an open challenge whether these Markov chains are rapidly mixing.
+  For the case of directed graphs, we also explain in this paper that a popular
+switching algorithm fails in general to sample uniformly at random because the
+state graph of the Markov chain decomposes into different isomorphic
+components. We call degree sequences for which the state graph is strongly
+connected arc swap sequences. To handle arbitrary degree sequences, we develop
+two different solutions. The first uses an additional operation (a
+reorientation of induced directed 3-cycles) which makes the state graph
+strongly connected, the second selects randomly one of the isomorphic
+components and samples inside it. Our main contribution is a precise
+characterization of arc swap sequences, leading to an efficient recognition
+algorithm. Finally, we point out some interesting consequences for network
+analysis.

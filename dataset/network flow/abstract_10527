@@ -1,0 +1,19 @@
+Studies of community structure and evolution in large social networks require
+a fast and accurate algorithm for community detection. As the size of analyzed
+communities grows, complexity of the community detection algorithm needs to be
+kept close to linear. The Label Propagation Algorithm (LPA) has the benefits of
+nearly-linear running time and easy implementation, thus it forms a good basis
+for efficient community detection methods. In this paper, we propose new update
+rule and label propagation criterion in LPA to improve both its computational
+efficiency and the quality of communities that it detects. The speed is
+optimized by avoiding unnecessary updates performed by the original algorithm.
+This change reduces significantly (by order of magnitude for large networks)
+the number of iterations that the algorithm executes. We also evaluate our
+generalization of the LPA update rule that takes into account, with varying
+strength, connections to the neighborhood of a node considering a new label.
+Experiments on computer generated networks and a wide range of social networks
+show that our new rule improves the quality of the detected communities
+compared to those found by the original LPA. The benefit of considering
+positive neighborhood strength is pronounced especially on real-world networks
+containing sufficiently large fraction of nodes with high clustering
+coefficient.

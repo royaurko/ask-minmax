@@ -1,0 +1,13 @@
+A tensor network is a product of tensors associated with vertices of some
+graph $G$ such that every edge of $G$ represents a summation (contraction) over
+a matching pair of indexes. It was shown recently by Valiant, Cai, and
+Choudhary that tensor networks can be efficiently contracted on planar graphs
+if components of every tensor obey a system of quadratic equations known as
+matchgate identities. Such tensors are referred to as matchgate tensors. The
+present paper provides an alternative approach to contraction of matchgate
+tensor networks that easily extends to non-planar graphs. Specifically, it is
+shown that a matchgate tensor network on a graph $G$ of genus $g$ with $n$
+vertices can be contracted in time $T=poly(n) + 2^{2g} O(m^3)$ where $m$ is the
+minimum number of edges one has to remove from $G$ in order to make it planar.
+Our approach makes use of anticommuting (Grassmann) variables and Gaussian
+integrals.

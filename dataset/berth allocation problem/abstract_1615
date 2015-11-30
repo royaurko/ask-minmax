@@ -1,0 +1,19 @@
+Cloud computing deals with heterogeneity and dynamicity at all levels and
+therefore there is a need to manage resources in such an environment and
+properly allocate them. Resource planning and scheduling requires a proper
+understanding of arrival patterns and scheduling of resources. Study of
+workloads can aid in proper understanding of their associated environment.
+Google has released its latest version of cluster trace, trace version 2.1 in
+November 2014.The trace consists of cell information of about 29 days spanning
+across 700k jobs. This paper deals with statistical analysis of this cluster
+trace. Since the size of trace is very large, Hive which is a Hadoop
+distributed file system (HDFS) based platform for querying and analysis of Big
+data, has been used. Hive was accessed through its Beeswax interface. The data
+was imported into HDFS through HCatalog. Apart from Hive, Pig which is a
+scripting language and provides abstraction on top of Hadoop was used. To the
+best of our knowledge the analytical method adopted by us is novel and has
+helped in gaining several useful insights. Clustering of jobs and arrival time
+has been done in this paper using K-means++ clustering followed by analysis of
+distribution of arrival time of jobs which revealed weibull distribution while
+resource usage was close to zip-f like distribution and process runtimes
+revealed heavy tailed distribution.

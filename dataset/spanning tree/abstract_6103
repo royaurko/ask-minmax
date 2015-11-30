@@ -1,0 +1,23 @@
+Markov Decision Processes (MDP) is an useful framework to cast optimal
+sequential decision making problems. Given any MDP the aim is to find the
+optimal action selection mechanism i.e., the optimal policy. Typically, the
+optimal policy ($u^*$) is obtained by substituting the optimal value-function
+($J^*$) in the Bellman equation. Alternately $u^*$ is also obtained by learning
+the optimal state-action value function $Q^*$ known as the $Q$ value-function.
+However, it is difficult to compute the exact values of $J^*$ or $Q^*$ for MDPs
+with large number of states. Approximate Dynamic Programming (ADP) methods
+address this difficulty by computing lower dimensional approximations of
+$J^*$/$Q^*$. Most ADP methods employ linear function approximation (LFA), i.e.,
+the approximate solution lies in a subspace spanned by a family of pre-selected
+basis functions. The approximation is obtain via a linear least squares
+projection of higher dimensional quantities and the $L_2$ norm plays an
+important role in convergence and error analysis. In this paper, we discuss ADP
+methods for MDPs based on LFAs in $(\min,+)$ algebra. Here the approximate
+solution is a $(\min,+)$ linear combination of a set of basis functions whose
+span constitutes a subsemimodule. Approximation is obtained via a projection
+operator onto the subsemimodule which is different from linear least squares
+projection used in ADP methods based on conventional LFAs. MDPs are not
+$(\min,+)$ linear systems, nevertheless, we show that the monotonicity property
+of the projection operator helps us to establish the convergence of our ADP
+schemes. We also discuss future directions in ADP methods for MDPs based on the
+$(\min,+)$ LFAs.

@@ -1,0 +1,11 @@
+We present a parallelizable algorithm for computing the persistent homology
+of a filtered chain complex. Our approach differs from the commonly used
+reduction algorithm by first computing persistence pairs within local chunks,
+then simplifying the unpaired columns, and finally applying standard reduction
+on the simplified matrix. The approach generalizes a technique by G\"unther et
+al., which uses discrete Morse Theory to compute persistence; we derive the
+same worst-case complexity bound in a more general context. The algorithm
+employs several practical optimization techniques which are of independent
+interest. Our sequential implementation of the algorithm is competitive with
+state-of-the-art methods, and we improve the performance through parallelized
+computation.

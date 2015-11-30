@@ -1,0 +1,12 @@
+In particle simulations, the weights of particles determine how many physical
+particles they represent. Adaptively adjusting these weights can greatly
+improve the efficiency of the simulation, without creating severe nonphysical
+artifacts. We present a new method for the pairwise merging of particles.
+Pairwise merging reduces the number of particles by combining two particles
+into one. To find particles that are `close' to each other, we use a k-d tree
+data structure. With a k-d tree, close neighbors can be searched for
+efficiently, and independently of the mesh used in the simulation. The merging
+can be done in different ways, conserving for example momentum or energy. We
+introduce probabilistic schemes, which set properties for the merged particle
+using random numbers. The effect of various merge schemes on the energy
+distribution, the momentum distribution and the grid moments is compared.

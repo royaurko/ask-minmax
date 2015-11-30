@@ -1,0 +1,17 @@
+This paper proposes a fully decentralized adaptive re-weighted state
+estimation (DARSE) scheme for power systems via network gossiping. The enabling
+technique is the proposed Gossip-based Gauss-Newton (GGN) algorithm, which
+allows to harness the computation capability of each area (i.e. a database
+server that accrues data from local sensors) to collaboratively solve for an
+accurate global state. The DARSE scheme mitigates the influence of bad data by
+updating their error variances online and re-weighting their contributions
+adaptively for state estimation. Thus, the global state can be estimated and
+tracked robustly using near-neighbor communications in each area. Compared to
+other distributed state estimation techniques, our communication model is
+flexible with respect to reconfigurations and resilient to random failures as
+long as the communication network is connected. Furthermore, we prove that the
+Jacobian of the power flow equations satisfies the Lipschitz condition that is
+essential for the GGN algorithm to converge to the desired solution.
+Simulations of the IEEE-118 system show that the DARSE scheme can estimate and
+track online the global power system state accurately, and degrades gracefully
+when there are random failures and bad data.

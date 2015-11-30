@@ -1,0 +1,18 @@
+We consider stochastic model predictive control of a multi-agent systems with
+constraints on the probabilities of inter-agent collisions. We first study a
+sample-based approximation of the collision probabilities and use this
+approximation to formulate constraints for the stochastic control problem. This
+approximation will converge as the number of samples goes to infinity, however,
+the complexity of the resulting control problem is so high that this approach
+proves unsuitable for control under real-time requirements. To alleviate the
+computational burden we propose a second approach that uses probabilistic
+bounds to determine regions with increased probability of presence for each
+agent and formulate constraints for the control problem that guarantee that
+these regions will not overlap. We prove that the resulting problem is
+conservative for the original problem with probabilistic constraints, ie. every
+control strategy that is feasible under our new constraints will automatically
+be feasible for the original problem. Furthermore we show in simulations in a
+UAV path planning scenario that our proposed approach grants significantly
+better run-time performance compared to a controller with the sample-based
+approximation with only a small degree of sub-optimality resulting from the
+conservativeness of our new approach.

@@ -1,0 +1,19 @@
+In this paper we introduce a Bayesian framework for solving a class of
+problems termed Multi-agent Inverse Reinforcement Learning (MIRL). Compared to
+the well-known Inverse Reinforcement Learning (IRL) problem, MIRL is formalized
+in the context of a stochastic game rather than a Markov decision process
+(MDP). Games bring two primary challenges: First, the concept of optimality,
+central to MDPs, loses its meaning and must be replaced with a more general
+solution concept, such as the Nash equilibrium. Second, the non-uniqueness of
+equilibria means that in MIRL, in addition to multiple reasonable solutions for
+a given inversion model, there may be multiple inversion models that are all
+equally sensible approaches to solving the problem. We establish a theoretical
+foundation for competitive two-agent MIRL problems and propose a Bayesian
+optimization algorithm to solve the problem. We focus on the case of two-person
+zero-sum stochastic games, developing a generative model for the likelihood of
+unknown rewards of agents given observed game play assuming that the two agents
+follow a minimax bipolicy. As a numerical illustration, we apply our method in
+the context of an abstract soccer game. For the soccer game, we investigate
+relationships between the extent of prior information and the quality of
+learned rewards. Results suggest that covariance structure is more important
+than mean value in reward priors.

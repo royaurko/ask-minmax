@@ -1,0 +1,15 @@
+In this work, we obtain the following new results.
+  1. Given a sequence $D=((h_1,s_1), (h_2,s_2) ..., (h_n,s_n))$ of number
+pairs, where $s_i>0$ for all $i$, and a number $L_h$, we propose an O(n)-time
+algorithm for finding an index interval $[i,j]$ that maximizes
+$\frac{\sum_{k=i}^{j} h_k}{\sum_{k=i}^{j} s_k}$ subject to $\sum_{k=i}^{j} h_k
+\geq L_h$.
+  2. Given a sequence $D=((h_1,s_1), (h_2,s_2) ..., (h_n,s_n))$ of number
+pairs, where $s_i=1$ for all $i$, and an integer $L_s$ with $1\leq L_s\leq n$,
+we propose an $O(n\frac{T(L_s^{1/2})}{L_s^{1/2}})$-time algorithm for finding
+an index interval $[i,j]$ that maximizes $\frac{\sum_{k=i}^{j}
+h_k}{\sqrt{\sum_{k=i}^{j} s_k}}$ subject to $\sum_{k=i}^{j} s_k \geq L_s$,
+where $T(n')$ is the time required to solve the all-pairs shortest paths
+problem on a graph of $n'$ nodes. By the latest result of Chan \cite{Chan},
+$T(n')=O(n'^3 \frac{(\log\log n')^3}{(\log n')^2})$, so our algorithm runs in
+subquadratic time $O(nL_s\frac{(\log\log L_s)^3}{(\log L_s)^2})$.

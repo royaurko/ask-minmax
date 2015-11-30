@@ -1,0 +1,14 @@
+Recently, a successful pose estimation algorithm, called Cascade Pose
+Regression (CPR), was proposed in the literature. Trained over Pose Index
+Feature, CPR is a regressor ensemble that is similar to Boosting. In this paper
+we show how CPR can be represented as a Neural Network. Specifically, we adopt
+a Graph Transformer Network (GTN) representation and accordingly train CPR with
+Back Propagation (BP) that permits globally tuning. In contrast, previous CPR
+literature only took a layer wise training without any post fine tuning. We
+empirically show that global training with BP outperforms layer-wise
+(pre-)training. Our CPR-GTN adopts a Multi Layer Percetron as the regressor,
+which utilized sparse connection to learn local image feature representation.
+We tested the proposed CPR-GTN on 2D face pose estimation problem as in
+previous CPR literature. Besides, we also investigated the possibility of
+extending CPR-GTN to 3D pose estimation by doing experiments using 3D Computed
+Tomography dataset for heart segmentation.

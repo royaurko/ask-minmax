@@ -1,0 +1,21 @@
+Cross-layer optimization solutions have been proposed in recent years to
+improve the performance of network users operating in a time-varying,
+error-prone wireless environment. However, these solutions often rely on ad-hoc
+optimization approaches, which ignore the different environmental dynamics
+experienced at various layers by a user and violate the layered network
+architecture of the protocol stack by requiring layers to provide access to
+their internal protocol parameters to other layers. This paper presents a new
+theoretic foundation for cross-layer optimization, which allows each layer to
+make autonomous decisions individually, while maximizing the utility of the
+wireless user by optimally determining what information needs to be exchanged
+among layers. Hence, this cross-layer framework does not change the current
+layered architecture. Specifically, because the wireless user interacts with
+the environment at various layers of the protocol stack, the cross-layer
+optimization problem is formulated as a layered Markov decision process (MDP)
+in which each layer adapts its own protocol parameters and exchanges
+information (messages) with other layers in order to cooperatively maximize the
+performance of the wireless user. The message exchange mechanism for
+determining the optimal cross-layer transmission strategies has been designed
+for both off-line optimization and on-line dynamic adaptation. We also show
+that many existing cross-layer optimization algorithms can be formulated as
+simplified, sub-optimal, versions of our layered MDP framework.

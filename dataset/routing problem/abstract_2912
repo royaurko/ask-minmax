@@ -1,0 +1,21 @@
+Given a graph G = (V,E) and an integer k, an edge modification problem for a
+graph property P consists in deciding whether there exists a set of edges F of
+size at most k such that the graph H = (V,E \vartriangle F) satisfies the
+property P. In the P edge-completion problem, the set F of edges is constrained
+to be disjoint from E; in the P edge-deletion problem, F is a subset of E; no
+constraint is imposed on F in the P edge-edition problem. A number of
+optimization problems can be expressed in terms of graph modification problems
+which have been extensively studied in the context of parameterized complexity.
+When parameterized by the size k of the edge set F, it has been proved that if
+P is an hereditary property characterized by a finite set of forbidden induced
+subgraphs, then the three P edge-modification problems are FPT. It was then
+natural to ask whether these problems also admit a polynomial size kernel.
+Using recent lower bound techniques, Kratsch and Wahlstrom answered this
+question negatively. However, the problem remains open on many natural graph
+classes characterized by forbidden induced subgraphs. Kratsch and Wahlstrom
+asked whether the result holds when the forbidden subgraphs are paths or cycles
+and pointed out that the problem is already open in the case of P4-free graphs
+(i.e. cographs). This paper provides positive and negative results in that line
+of research. We prove that parameterized cograph edge modification problems
+have cubic vertex kernels whereas polynomial kernels are unlikely to exist for
+the Pl-free and Cl-free edge-deletion problems for large enough l.

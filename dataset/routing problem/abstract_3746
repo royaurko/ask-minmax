@@ -1,0 +1,13 @@
+The problem of (approximately) counting the number of triangles in a graph is
+one of the basic problems in graph theory. In this paper we study the problem
+in the streaming model. We study the amount of memory required by a randomized
+algorithm to solve this problem. In case the algorithm is allowed one pass over
+the stream, we present a best possible lower bound of $\Omega(m)$ for graphs
+$G$ with $m$ edges on $n$ vertices. If a constant number of passes is allowed,
+we show a lower bound of $\Omega(m/T)$, $T$ the number of triangles. We match,
+in some sense, this lower bound with a 2-pass $O(m/T^{1/3})$-memory algorithm
+that solves the problem of distinguishing graphs with no triangles from graphs
+with at least $T$ triangles. We present a new graph parameter $\rho(G)$ -- the
+triangle density, and conjecture that the space complexity of the triangles
+problem is $\Omega(m/\rho(G))$. We match this by a second algorithm that solves
+the distinguishing problem using $O(m/\rho(G))$-memory.

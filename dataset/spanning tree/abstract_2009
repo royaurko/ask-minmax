@@ -1,0 +1,23 @@
+The presence of reticulate evolutionary events in phylogenies turn
+phylogenetic trees into phylogenetic networks. These events imply in particular
+that there may exist multiple evolutionary paths from a non-extant species to
+an extant one, and this multiplicity makes the comparison of phylogenetic
+networks much more difficult than the comparison of phylogenetic trees. In
+fact, all attempts to define a sound distance measure on the class of all
+phylogenetic networks have failed so far. Thus, the only practical solutions
+have been either the use of rough estimates of similarity (based on comparison
+of the trees embedded in the networks), or narrowing the class of phylogenetic
+networks to a certain class where such a distance is known and can be
+efficiently computed. The first approach has the problem that one may identify
+two networks as equivalent, when they are not; the second one has the drawback
+that there may not exist algorithms to reconstruct such networks from
+biological sequences.
+  We present in this paper a distance measure on the class of tree-sibling time
+consistent phylogenetic networks, which generalize tree-child time consistent
+phylogenetic networks, and thus also galled-trees. The practical interest of
+this distance measure is twofold: it can be computed in polynomial time by
+means of simple algorithms, and there also exist polynomial-time algorithms for
+reconstructing networks of this class from DNA sequence data.
+  The Perl package Bio::PhyloNetwork, included in the BioPerl bundle,
+implements many algorithms on phylogenetic networks, including the computation
+of the distance presented in this paper.

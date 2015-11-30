@@ -1,0 +1,22 @@
+For a set A of n applicants and a set I of m items, we consider a problem of
+computing a matching of applicants to items, i.e., a function M mapping A to I;
+here we assume that each applicant $x \in A$ provides a preference list on
+items in I. We say that an applicant $x \in A$ prefers an item p than an item q
+if p is located at a higher position than q in its preference list, and we say
+that x prefers a matching M over a matching M' if x prefers M(x) over M'(x).
+For a given matching problem A, I, and preference lists, we say that M is more
+popular than M' if the number of applicants preferring M over M' is larger than
+that of applicants preferring M' over M, and M is called a popular matching if
+there is no other matching that is more popular than M. Here we consider the
+situation that A is partitioned into $A_{1},A_{2},...,A_{k}$, and that each
+$A_{i}$ is assigned a weight $w_{i}>0$ such that w_{1}>w_{2}>...>w_{k}>0$. For
+such a matching problem, we say that M is more popular than M' if the total
+weight of applicants preferring M over M' is larger than that of applicants
+preferring M' over M, and we call M an k-weighted popular matching if there is
+no other matching that is more popular than M. In this paper, we analyze the
+2-weighted matching problem, and we show that (lower bound) if
+$m/n^{4/3}=o(1)$, then a random instance of the 2-weighted matching problem
+with $w_{1} \geq 2w_{2}$ has a 2-weighted popular matching with probability
+o(1); and (upper bound) if $n^{4/3}/m = o(1)$, then a random instance of the
+2-weighted matching problem with $w_{1} \geq 2w_{2}$ has a 2-weighted popular
+matching with probability 1-o(1).

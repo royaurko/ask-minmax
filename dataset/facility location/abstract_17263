@@ -1,0 +1,21 @@
+Transcription factors are short stretches of DNA (or $k$-mers) mainly located
+in promoters sequences that enhance or repress gene expression. With respect to
+an initial distribution of letters on the DNA alphabet, Behrens and Vingron
+consider a random sequence of length $n$ that does not contain a given $k$-mer
+or word of size $k$. Under an evolution model of the DNA, they compute the
+probability $\mathfrak{p}_n$ that this $k$-mer appears after a unit time of 20
+years. They prove that the waiting time for the first apparition of the $k$-mer
+is well approximated by $T_n=1/\mathfrak{p}_n$. Their work relies on the
+simplifying assumption that the $k$-mer is not self-overlapping. They observe
+in particular that the waiting time is mostly driven by the initial
+distribution of letters.
+  Behrens et al. use an approach by automata that relaxes the assumption
+related to words overlaps. Their numerical evaluations confirms the validity of
+Behrens and Vingron approach for non self-overlapping words, but provides up to
+44% corrections for highly self-overlapping words such as $\mathtt{AAAAA}$. We
+devised an approach of the problem by clump analysis and generating functions;
+this approach leads to prove a quasi-linear behaviour of $\mathfrak{p}_n$ for a
+large range of values of $n$, an important result for DNA evolution. We present
+here this clump analysis, first by language decomposition, and next by an
+automaton construction; finally, we describe an equivalent approach by
+construction of Markov automata.

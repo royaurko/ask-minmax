@@ -1,0 +1,20 @@
+Community structure is an important property of complex networks. An
+automatic discovery of such structure is a fundamental task in many
+disciplines, including sociology, biology, engineering, and computer science.
+Recently, several community discovery algorithms have been proposed based on
+the optimization of a quantity called modularity (Q). However, the problem of
+modularity optimization is NP-hard, and the existing approaches often suffer
+from prohibitively long running time or poor quality. Furthermore, it has been
+recently pointed out that algorithms based on optimizing Q will have a
+resolution limit, i.e., communities below a certain scale may not be detected.
+In this research, we first propose an efficient heuristic algorithm, Qcut,
+which combines spectral graph partitioning and local search to optimize Q.
+Using both synthetic and real networks, we show that Qcut can find higher
+modularities and is more scalable than the existing algorithms. Furthermore,
+using Qcut as an essential component, we propose a recursive algorithm, HQcut,
+to solve the resolution limit problem. We show that HQcut can successfully
+detect communities at a much finer scale and with a higher accuracy than the
+existing algorithms. Finally, we apply Qcut and HQcut to study a
+protein-protein interaction network, and show that the combination of the two
+algorithms can reveal interesting biological results that may be otherwise
+undetectable.

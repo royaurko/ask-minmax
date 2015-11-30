@@ -1,0 +1,9 @@
+The data model of an application, the nature and format of data stored across
+executions, is typically a very rigid part of its early specification, even
+when prototyping, and changing it after code that relies on it was written can
+prove quite expensive and error-prone.
+  Code and data in a running Lisp image can be dynamically modified. A
+MOP-based persistence library can bring this dynamicity to the data model. This
+enables to extend the easy prototyping way of development to the storage of
+data and helps avoiding interruptions of service. This article presents the
+conditions to do this portably and transparently.

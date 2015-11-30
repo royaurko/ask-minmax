@@ -1,0 +1,18 @@
+Predicting ambulance demand accurately in fine resolutions in space and time
+is critical for ambulance fleet management and dynamic deployment. Typical
+challenges include data sparsity at high resolutions and the need to respect
+complex urban spatial domains. To provide spatial density predictions for
+ambulance demand in Melbourne, Australia as it varies over hourly intervals, we
+propose a predictive spatio-temporal kernel warping method. To predict for each
+hour, we build a kernel density estimator on a sparse set of the most similar
+data from relevant past time periods (labeled data), but warp these kernels to
+a larger set of past data irregardless of time periods (point cloud). The point
+cloud represents the spatial structure and geographical characteristics of
+Melbourne, including complex boundaries, road networks, and neighborhoods.
+Borrowing from manifold learning, kernel warping is performed through a graph
+Laplacian of the point cloud and can be interpreted as a regularization
+towards, and a prior imposed, for spatial features. Kernel bandwidth and degree
+of warping are efficiently estimated via cross-validation, and can be made
+time- and/or location-specific. Our proposed model gives significantly more
+accurate predictions compared to a current industry practice, an unwarped
+kernel density estimation, and a time-varying Gaussian mixture model.

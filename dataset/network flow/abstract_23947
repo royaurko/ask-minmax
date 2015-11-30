@@ -1,0 +1,13 @@
+Belief propagation and its variants are popular methods for approximate
+inference, but their running time and even their convergence depend greatly on
+the schedule used to send the messages. Recently, dynamic update schedules have
+been shown to converge much faster on hard networks than static schedules,
+namely the residual BP schedule of Elidan et al. [2006]. But that RBP algorithm
+wastes message updates: many messages are computed solely to determine their
+priority, and are never actually performed. In this paper, we show that
+estimating the residual, rather than calculating it directly, leads to
+significant decreases in the number of messages required for convergence, and
+in the total running time. The residual is estimated using an upper bound based
+on recent work on message errors in BP. On both synthetic and real-world
+networks, this dramatically decreases the running time of BP, in some cases by
+a factor of five, without affecting the quality of the solution.

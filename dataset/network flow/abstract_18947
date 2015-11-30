@@ -1,0 +1,15 @@
+Most phoneme recognition state-of-the-art systems rely on a classical neural
+network classifiers, fed with highly tuned features, such as MFCC or PLP
+features. Recent advances in ``deep learning'' approaches questioned such
+systems, but while some attempts were made with simpler features such as
+spectrograms, state-of-the-art systems still rely on MFCCs. This might be
+viewed as a kind of failure from deep learning approaches, which are often
+claimed to have the ability to train with raw signals, alleviating the need of
+hand-crafted features. In this paper, we investigate a convolutional neural
+network approach for raw speech signals. While convolutional architectures got
+tremendous success in computer vision or text processing, they seem to have
+been let down in the past recent years in the speech processing field. We show
+that it is possible to learn an end-to-end phoneme sequence classifier system
+directly from raw signal, with similar performance on the TIMIT and WSJ
+datasets than existing systems based on MFCC, questioning the need of complex
+hand-crafted features on large datasets.

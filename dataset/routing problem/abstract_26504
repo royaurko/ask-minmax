@@ -1,0 +1,14 @@
+This paper presents efficient implementations of several algorithms for
+solving the minimum-cost network flow problem. Various practical heuristics and
+other important implementation aspects are also discussed. A novel result of
+this work is the application of Goldberg's recent partial augment-relabel
+method in the cost-scaling algorithm. The presented implementations are
+available as part of the LEMON open source C++ optimization library
+(\url{http://lemon.cs.elte.hu/}). The performance of these codes is compared to
+well-known and efficient minimum-cost flow solvers, namely CS2, RelaxIV, MCF,
+and the corresponding method of the LEDA library. According to thorough
+experimental analysis, the presented cost-scaling and network simplex
+implementations turned out to be more efficient than LEDA and MCF. Furthermore,
+the cost-scaling implementation is competitive with CS2. The RelaxIV algorithm
+is often much slower than the other codes, although it is quite efficient on
+particular problem instances.

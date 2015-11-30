@@ -1,0 +1,15 @@
+We propose a new method for parameter learning in Bayesian networks with
+qualitative influences. This method extends our previous work from networks of
+binary variables to networks of discrete variables with ordered values. The
+specified qualitative influences correspond to certain order restrictions on
+the parameters in the network. These parameters may therefore be estimated
+using constrained maximum likelihood estimation. We propose an alternative
+method, based on the isotonic regression. The constrained maximum likelihood
+estimates are fairly complicated to compute, whereas computation of the
+isotonic regression estimates only requires the repeated application of the
+Pool Adjacent Violators algorithm for linear orders. Therefore, the isotonic
+regression estimator is to be preferred from the viewpoint of computational
+complexity. Through experiments on simulated and real data, we show that the
+new learning method is competitive in performance to the constrained maximum
+likelihood estimator, and that both estimators improve on the standard
+estimator.

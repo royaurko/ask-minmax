@@ -1,0 +1,15 @@
+Algorithms for frequent pattern mining, a popular informatics application,
+have unique requirements that are not met by any of the existing parallel
+tools. In particular, such applications operate on extremely large data sets
+and have irregular memory access patterns. For efficient parallelization of
+such applications, it is necessary to support dynamic load balancing along with
+scheduling mechanisms that allow users to exploit data locality. Given these
+requirements, task parallelism is the most promising of the available parallel
+programming models. However, existing solutions for task parallelism schedule
+tasks implicitly and hence, custom scheduling policies that can exploit data
+locality cannot be easily employed. In this paper we demonstrate and
+characterize the speedup obtained in a frequent pattern mining application
+using a custom clustered scheduling policy in place of the popular Cilk-style
+policy. We present PFunc, a novel task parallel library whose customizable task
+scheduling and task priorities facilitated the implementation of our clustered
+scheduling policy.

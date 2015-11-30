@@ -1,0 +1,16 @@
+Although there are many methods for functional data analysis (FDA), little
+emphasis is put on characterizing variability among volatilities of individual
+functions. In particular, certain individuals exhibit erratic swings in their
+trajectory while other individuals have more stable trajectories. There is
+evidence of such volatility heterogeneity in blood pressure trajectories during
+pregnancy, for example, and reason to suspect that volatility is a biologically
+important feature. Most FDA models implicitly assume similar or identical
+smoothness of the individual functions, and hence can lead to misleading
+inferences on volatility and an inadequate representation of the functions. We
+propose a novel class of FDA models characterized using hierarchical stochastic
+differential equations. We model the derivatives of a mean function and
+deviation functions using Gaussian processes, while also allowing covariate
+dependence including on the volatilities of the deviation functions. Following
+a Bayesian approach to inference, a Markov chain Monte Carlo algorithm is used
+for posterior computation. The methods are tested on simulated data and applied
+to blood pressure trajectories during pregnancy.

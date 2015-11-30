@@ -1,0 +1,19 @@
+Molecular phylogenetic techniques do not generally account for such common
+evolutionary events as site insertions and deletions (known as indels). Instead
+tree building algorithms and ancestral state inference procedures typically
+rely on substitution-only models of sequence evolution. In practice these
+methods are extended beyond this simplified setting with the use of heuristics
+that produce global alignments of the input sequences--an important problem
+which has no rigorous model-based solution. In this paper we consider a new
+version of the multiple sequence alignment in the context of stochastic indel
+models. More precisely, we introduce the following {\em trace reconstruction
+problem on a tree} (TRPT): a binary sequence is broadcast through a tree
+channel where we allow substitutions, deletions, and insertions; we seek to
+reconstruct the original sequence from the sequences received at the leaves of
+the tree. We give a recursive procedure for this problem with strong
+reconstruction guarantees at low mutation rates, providing also an alignment of
+the sequences at the leaves of the tree. The TRPT problem without indels has
+been studied in previous work (Mossel 2004, Daskalakis et al. 2006) as a
+bootstrapping step towards obtaining optimal phylogenetic reconstruction
+methods. The present work sets up a framework for extending these works to
+evolutionary models with indels.

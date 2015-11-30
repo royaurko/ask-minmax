@@ -1,0 +1,13 @@
+In practical work with American put options, it is important to be able to
+know when to exercise the option, and when not to do so. In computer simulation
+based on the standard theory of geometric Brownian motion for simulating stock
+price movements, this problem is fairly easy to handle for options with a short
+lifespan, by analyzing binomial trees. It is considerably more challenging to
+make the decision for American put options with long lifespan. In order to
+provide a satisfactory analysis, we look at the corresponding free boundary
+problem, and show that the free boundary -- which is the curve that separates
+the two decisions, to exercise or not to -- has an asymptotic expansion, where
+the coefficient of the main term is expressed as an integral in terms of the
+free boundary. This raises the perspective that one could use numerical
+simulation to approximate the integral and thus get an effective way to make
+correct decisions for long life options.

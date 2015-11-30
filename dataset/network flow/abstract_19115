@@ -1,0 +1,17 @@
+We consider a setting in which a sender wishes to broadcast a block of K data
+packets to a set of wireless receivers, where each of the receivers has a
+subset of the data packets already available to it (e.g., from prior
+transmissions) and wants the rest of the packets. Our goal is to find a linear
+network coding scheme that yields the minimum average packet decoding delay
+(APDD), i.e., the average time it takes for a receiver to decode a data packet.
+Our contributions can be summarized as follows. First, we prove that this
+problem is NP-hard by presenting a reduction from the hypergraph coloring
+problem. Next, we show that %\alexn{an MDS-based solution or} a random linear
+network coding (RLNC) provides an approximate solution to this problem with
+approximation ratio $2$ with high probability. Next, we present a methodology
+for designing specialized approximation algorithms for this problem that
+outperform RLNC solutions while maintaining the same throughput. In a special
+case of practical interest with a small number of wanted packets our solution
+can achieve an approximation ratio (4-2/K)/3. Finally, we conduct an
+experimental study that demonstrates the advantages of the presented
+methodology.

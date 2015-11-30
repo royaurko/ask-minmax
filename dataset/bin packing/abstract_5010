@@ -1,0 +1,19 @@
+We introduce the snowblower problem (SBP), a new optimization problem that is
+closely related to milling problems and to some material-handling problems. The
+objective in the SBP is to compute a short tour for the snowblower to follow to
+remove all the snow from a domain (driveway, sidewalk, etc.). When a snowblower
+passes over each region along the tour, it displaces snow into a nearby region.
+The constraint is that if the snow is piled too high, then the snowblower
+cannot clear the pile.
+  We give an algorithmic study of the SBP. We show that in general, the problem
+is NP-complete, and we present polynomial-time approximation algorithms for
+removing snow under various assumptions about the operation of the snowblower.
+Most commercially-available snowblowers allow the user to control the direction
+in which the snow is thrown. We differentiate between the cases in which the
+snow can be thrown in any direction, in any direction except backwards, and
+only to the right. For all cases, we give constant-factor approximation
+algorithms; the constants increase as the throw direction becomes more
+restricted.
+  Our results are also applicable to robotic vacuuming (or lawnmowing) with
+bounded capacity dust bin and to some versions of material-handling problems,
+in which the goal is to rearrange cartons on the floor of a warehouse.

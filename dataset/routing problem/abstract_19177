@@ -1,0 +1,21 @@
+A Constraint Satisfaction Problem (CSP) is a framework used for modeling and
+solving constrained problems. Tree-search algorithms like backtracking try to
+construct a solution to a CSP by selecting the variables of the problem one
+after another. The order in which these algorithm select the variables
+potentially have significant impact on the search performance. Various
+heuristics have been proposed for choosing good variable ordering. Many
+powerful variable ordering heuristics weigh the constraints first and then
+utilize the weights for selecting good order of the variables. Constraint
+weighting are basically employed to identify global bottlenecks in a CSP.
+  In this paper, we propose a new approach for learning weights for the
+constraints using competitive coevolutionary Genetic Algorithm (GA). Weights
+learned by the coevolutionary GA later help to make better choices for the
+first few variables in a search. In the competitive coevolutionary GA,
+constraints and candidate solutions for a CSP evolve together through an
+inverse fitness interaction process. We have conducted experiments on several
+random, quasi-random and patterned instances to measure the efficiency of the
+proposed approach. The results and analysis show that the proposed approach is
+good at learning weights to distinguish the hard constraints for quasi-random
+instances and forced satisfiable random instances generated with the Model RB.
+For other type of instances, RNDI still seems to be the best approach as our
+experiments show.

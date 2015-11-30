@@ -1,0 +1,19 @@
+Within a mathematically rigorous model, we analyse the curse of
+dimensionality for deterministic exact similarity search in the context of
+popular indexing schemes: metric trees. The datasets $X$ are sampled randomly
+from a domain $\Omega$, equipped with a distance, $\rho$, and an underlying
+probability distribution, $\mu$. While performing an asymptotic analysis, we
+send the intrinsic dimension $d$ of $\Omega$ to infinity, and assume that the
+size of a dataset, $n$, grows superpolynomially yet subexponentially in $d$.
+Exact similarity search refers to finding the nearest neighbour in the dataset
+$X$ to a query point $\omega\in\Omega$, where the query points are subject to
+the same probability distribution $\mu$ as datapoints. Let $\mathscr F$ denote
+a class of all 1-Lipschitz functions on $\Omega$ that can be used as decision
+functions in constructing a hierarchical metric tree indexing scheme. Suppose
+the VC dimension of the class of all sets $\{\omega\colon f(\omega)\geq a\}$,
+$a\in\R$ is $o(n^{1/4}/\log^2n)$. (In view of a 1995 result of Goldberg and
+Jerrum, even a stronger complexity assumption $d^{O(1)}$ is reasonable.) We
+deduce the $\Omega(n^{1/4})$ lower bound on the expected average case
+performance of hierarchical metric-tree based indexing schemes for exact
+similarity search in $(\Omega,X)$. In paricular, this bound is superpolynomial
+in $d$.

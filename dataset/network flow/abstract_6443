@@ -1,0 +1,11 @@
+Now that spike trains from many neurons can be recorded simultaneously, there
+is a need for methods to decode these data to learn about the networks that
+these neurons are part of. One approach to this problem is to adjust the
+parameters of a simple model network to make its spike trains resemble the data
+as much as possible. The connections in the model network can then give us an
+idea of how the real neurons that generated the data are connected and how they
+influence each other. In this chapter we describe how to do this for the
+simplest kind of model: an Ising network. We derive algorithms for finding the
+best model connection strengths for fitting a given data set, as well as faster
+approximate algorithms based on mean field theory. We test the performance of
+these algorithms on data from model networks and experiments.

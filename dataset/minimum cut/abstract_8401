@@ -1,0 +1,25 @@
+Let $G = (V, E)$ be a simple connected graph and $S = \{w_1, \cdots, w_t\}
+\subseteq V$ an ordered subset of vertices. The metric representation of a
+vertex $u\in V$ with respect to $S$ is the $t$-vector $r(u|S) = (d_G(u, w_1),
+\cdots, d_G(u, w_t))$, where $d_G(u, v)$ represents the length of a shortest
+$u-v$ path in $G$. The set $S$ is called a resolving set for $G$ if $r(u|S) =
+r(v|S)$ implies $u = v$ for every $u, v \in V$. The smallest cardinality of a
+resolving set is the metric dimension of $G$. In this article we propose, to
+the best of our knowledge, a new problem in Graph Theory that resembles to the
+aforementioned metric dimension problem. We call $S$ a $k$-antiresolving set if
+$k$ is the largest positive integer such that for every vertex $v \in V-S$
+there exist other $k-1$ different vertices $v_1, \cdots, v_{k-1} \in V-S$ with
+$r(v|S) = r(v_1|S) = \cdots = r(v_{k-1}|S)$, \emph{i.e.}, $v$ and $v_1, \cdots,
+v_{k-1}$ have the same metric representation with respect to $S$. The
+$k$-metric antidimension of $G$ is the minimum cardinality among all the
+$k$-antiresolving sets for $G$.
+  In this article, we introduce a novel privacy measure, named $(k,
+\ell)$-anonymity and based on the $k$-metric antidimension problem, aimed at
+evaluating the resistance of social graphs to active attacks. We, therefore,
+propose a true-biased algorithm for computing the $k$-metric antidimension of
+random graphs. The success rate of our algorithm, according to empirical
+results, is above $80 \%$ and $90 \%$ when looking for a $k$-antiresolving
+basis and a $k$-antiresolving set respectively. We also investigate theoretical
+properties of the $k$-antiresolving sets and the $k$-metric antidimension of
+graphs. In particular, we focus on paths, cycles, complete bipartite graphs and
+trees.

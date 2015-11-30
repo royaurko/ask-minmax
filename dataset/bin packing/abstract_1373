@@ -1,0 +1,18 @@
+An important research thread in algorithmic game theory studies the design of
+efficient truthful mechanisms that approximate the optimal social welfare. A
+fundamental question is whether an \alpha-approximation algorithm translates
+into an \alpha-approximate truthful mechanism. It is well-known that plugging
+an \alpha-approximation algorithm into the VCG technique may not yield a
+truthful mechanism. Thus, it is natural to investigate properties of
+approximation algorithms that enable their use in truthful mechanisms.
+  The main contribution of this paper is to identify a useful and natural
+property of approximation algorithms, which we call loser-independence; this
+property is applicable in the single-minded and single-parameter settings.
+Intuitively, a loser-independent algorithm does not change its outcome when the
+bid of a losing agent increases, unless that agent becomes a winner. We
+demonstrate that loser-independent algorithms can be employed as sub-procedures
+in a greedy iterative packing approach while preserving monotonicity. A greedy
+iterative approach provides a good approximation in the context of maximizing a
+non-decreasing submodular function subject to independence constraints. Our
+framework gives rise to truthful approximation mechanisms for various problems.
+Notably, some problems arise in online mechanism design.

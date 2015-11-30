@@ -1,0 +1,20 @@
+We consider "virtual" full-duplex relaying by means of half-duplex relays. In
+this configuration, each relay stage in a multi-hop relaying network is formed
+by at least two relays, used alternatively in transmit and receive modes, such
+that while one relay transmits its signal to the next stage, the other relay
+receives a signal from the previous stage. With such a pipelined scheme, the
+source is active and sends a new information message in each time slot. We
+consider the achievable rates for different coding schemes and compare them
+with a cut-set upper bound, which is tight in certain conditions. In
+particular, we show that both lattice-based Compute and Forward (CoF) and
+Quantize reMap and Forward (QMF) yield attractive performance and can be easily
+implemented. In particular, QMF in this context does not require "long"
+messages and joint (non-unique) decoding, if the quantization mean-square
+distortion at the relays is chosen appropriately. Also, in the multi-hop case
+the gap of QMF from the cut-set upper bound grows logarithmically with the
+number of stages, and not linearly as in the case of "noise level"
+quantization. Furthermore, we show that CoF is particularly attractive in the
+case of multi-hop relaying, when the channel gains have fluctuations not larger
+than 3dB, yielding a rate that does not depend on the number of relaying
+stages. In particular, we argue that such architecture may be useful for a
+wireless backhaul with line-of-sight propagation between the relays.

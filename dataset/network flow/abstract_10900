@@ -1,0 +1,24 @@
+In this paper we study the problem of how resilient networks are to node
+faults. Specifically, we investigate the question of how many faults a network
+can sustain so that it still contains a large (i.e. linear-sized) connected
+component that still has approximately the same expansion as the original
+fault-free network. For this we apply a pruning technique which culls away
+parts of the faulty network which have poor expansion. This technique can be
+applied to both adversarial faults and to random faults. For adversarial faults
+we prove that for every network with expansion alpha, a large connected
+component with basically the same expansion as the original network exists for
+up to a constant times alpha n faults. This result is tight in the sense that
+every graph G of size n and uniform expansion alpha(.), i.e. G has an expansion
+of alpha(n) and every subgraph G' of size m of G has an expansion of
+O(alpha(m)), can be broken into sublinear components with omega(alpha(n) n)
+faults.
+  For random faults we observe that the situation is significantly different,
+because in this case the expansion of a graph only gives a very weak bound on
+its resilience to random faults. More specifically, there are networks of
+uniform expansion O(sqrt{n}) that are resilient against a constant fault
+probability but there are also networks of uniform expansion Omega(1/log n)
+that are not resilient against a O(1/log n) fault probability. Thus, a
+different parameter is needed. For this we introduce the span of a graph which
+allows us to determine the maximum fault probability in a much better way than
+the expansion can. We use the span to show the first known results for the
+effect of random faults on the expansion of d-dimensional meshes.

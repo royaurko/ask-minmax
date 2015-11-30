@@ -1,0 +1,16 @@
+Influence diagrams are ideal knowledge representations for Bayesian
+statistical models. However, these diagrams are difficult for end users to
+interpret and to manipulate. We present a user-based architecture that enables
+end users to create and to manipulate the knowledge representation. We use the
+problem of physicians' interpretation of two-arm parallel randomized clinical
+trials (TAPRCT) to illustrate the architecture and its use. There are three
+primary data structures. Elements of statistical models are encoded as
+subgraphs of a restricted class of influence diagram. The interpretations of
+those elements are mapped into users' language in a domain-specific, user-based
+semantic interface, called a patient-flow diagram, in the TAPRCT problem.
+Pennitted transformations of the statistical model that maintain the semantic
+relationships of the model are encoded in a metadata-state diagram, called the
+cohort-state diagram, in the TAPRCT problem. The algorithm that runs the system
+uses modular actions called construction steps. This framework has been
+implemented in a system called THOMAS, that allows physicians to interpret the
+data reported from a TAPRCT.

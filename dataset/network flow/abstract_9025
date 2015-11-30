@@ -1,0 +1,20 @@
+We investigate optimal routing and scheduling strategies for multi-hop
+wireless networks with rateless codes. Rateless codes allow each node of the
+network to accumulate mutual information from every packet transmission. This
+enables a significant performance gain over conventional shortest path routing.
+Further, it outperforms cooperative communication techniques that are based on
+energy accumulation. However, it requires complex and combinatorial networking
+decisions concerning which nodes participate in transmission, and which decode
+ordering to use. We formulate three problems of interest in this setting: (i)
+minimum delay routing, (ii) minimum energy routing subject to delay constraint,
+and (iii) minimum delay broadcast. All of these are hard combinatorial
+optimization problems and we make use of several structural properties of their
+optimal solutions to simplify the problems and derive optimal greedy
+algorithms. Although the reduced problems still have exponential complexity,
+unlike prior works on such problems, our greedy algorithms are simple to use
+and do not require solving any linear programs. Further, using the insight
+obtained from the optimal solution to a line network, we propose two simple
+heuristics that can be implemented in polynomial time and in a distributed
+fashion and compare them with the optimal solution. Simulations suggest that
+both heuristics perform very close to the optimal solution over random network
+topologies.

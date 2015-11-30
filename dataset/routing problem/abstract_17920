@@ -1,0 +1,10 @@
+Given a set $P$ of $n$ uncertain points on the real line, each represented by
+its one-dimensional probability density function, we consider the problem of
+building data structures on $P$ to answer range queries of the following three
+types for any query interval $I$: (1) top-$1$ query: find the point in $P$ that
+lies in $I$ with the highest probability, (2) top-$k$ query: given any integer
+$k\leq n$ as part of the query, return the $k$ points in $P$ that lie in $I$
+with the highest probabilities, and (3) threshold query: given any threshold
+$\tau$ as part of the query, return all points of $P$ that lie in $I$ with
+probabilities at least $\tau$. We present data structures for these range
+queries with linear or nearly linear space and efficient query time.

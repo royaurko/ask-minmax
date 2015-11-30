@@ -1,0 +1,14 @@
+A distributed, hierarchical information service for computer networks might
+rely in several instances, located in different layers. A distributed directory
+service, for example, might be comprised of upper level listings, and local
+directories. The upper level listings contain a compact version of the local
+directories. Clients desiring to access the information contained in local
+directories might first access the high-level listings, in order to locate the
+appropriate local instance. One of the keys for the competent operation of such
+service is the ability of properly summarizing the information, which will be
+maintained in the upper level directories. We analyze the case of the Lookup
+Service in the Information Services plane of perfSONAR performance monitoring
+distributed architecture, which implements IPv4 summarization in its functions.
+We propose an empirical method, or heuristic, to achieve the summarizations,
+based on the PATRICIA tree. We further apply the heuristic on a simulated
+distributed test bed and contemplate the results.

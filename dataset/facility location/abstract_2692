@@ -1,0 +1,20 @@
+The actor model of computation has gained significant popularity over the
+last decade. Its high level of abstraction makes it appealing for concurrent
+applications in parallel and distributed systems. However, designing a
+real-world actor framework that subsumes full scalability, strong reliability,
+and high resource efficiency requires many conceptual and algorithmic additives
+to the original model.
+  In this paper, we report on designing and building CAF, the "C++ Actor
+Framework". CAF targets at providing a concurrent and distributed native
+environment for scaling up to very large, high-performance applications, and
+equally well down to small constrained systems. We present the key
+specifications and design concepts---in particular a message-transparent
+architecture, type-safe message interfaces, and pattern matching
+facilities---that make native actors a viable approach for many robust,
+elastic, and highly distributed developments. We demonstrate the feasibility of
+CAF in three scenarios: first for elastic, upscaling environments, second for
+including heterogeneous hardware like GPGPUs, and third for distributed runtime
+systems. Extensive performance evaluations indicate ideal runtime behaviour for
+up to 64 cores at very low memory footprint, or in the presence of GPUs. In
+these tests, CAF continuously outperforms the competing actor environments
+Erlang, Charm++, SalsaLite, Scala, ActorFoundry, and even the OpenMPI.

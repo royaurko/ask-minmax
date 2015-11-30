@@ -1,0 +1,17 @@
+We introduce a framework for the design of finite element methods for
+two-dimensional moving boundary problems with prescribed boundary evolution
+that have arbitrarily high order of accuracy, both in space and in time. At the
+core of our approach is the use of a universal mesh: a stationary background
+mesh containing the domain of interest for all times that adapts to the
+geometry of the immersed domain by adjusting a small number of mesh elements in
+the neighborhood of the moving boundary. The resulting method maintains an
+exact representation of the (prescribed) moving boundary at the discrete level,
+or an approximation of the appropriate order, yet is immune to large
+distortions of the mesh under large deformations of the domain. The framework
+is general, making it possible to achieve any desired order of accuracy in
+space and time by selecting a preferred and suitable finite-element space on
+the universal mesh for the problem at hand, and a preferred and suitable time
+integrator for ordinary differential equations. We illustrate our approach by
+constructing a particular class of methods, and apply them to a
+prescribed-boundary variant of the Stefan problem. We present numerical
+evidence for the order of accuracy of our schemes in one and two dimensions.

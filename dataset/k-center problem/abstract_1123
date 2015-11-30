@@ -1,0 +1,11 @@
+We describe algorithm MINRES-QLP and its FORTRAN 90 implementation for
+solving symmetric or Hermitian linear systems or least-squares problems. If the
+system is singular, MINRES-QLP computes the unique minimum-length solution
+(also known as the pseudoinverse solution), which generally eludes MINRES. In
+all cases, it overcomes a potential instability in the original MINRES
+algorithm. A positive-definite preconditioner may be supplied. Our FORTRAN 90
+implementation illustrates a design pattern that allows users to make problem
+data known to the solver but hidden and secure from other program units. In
+particular, we circumvent the need for reverse communication. While we focus
+here on a FORTRAN 90 implementation, we also provide and maintain MATLAB
+versions of MINRES and MINRES-QLP.

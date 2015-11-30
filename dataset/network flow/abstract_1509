@@ -1,0 +1,24 @@
+We consider two capacity problems in P2P networks. In the first one, the
+nodes have an infinite amount of data to send and the goal is to optimally
+allocate their uplink bandwidths such that the demands of every peer in terms
+of receiving data rate are met. We solve this problem through a mapping from a
+node-weighted graph featuring two labels per node to a max flow problem on an
+edge-weighted bipartite graph. In the second problem under consideration, the
+resource allocation is driven by the availability of the data resource that the
+peers are interested in sharing. That is a node cannot allocate its uplink
+resources unless it has data to transmit first. The problem of uplink bandwidth
+allocation is then equivalent to constructing a set of directed trees in the
+overlay such that the number of nodes receiving the data is maximized while the
+uplink capacities of the peers are not exceeded. We show that the problem is
+NP-complete, and provide a linear programming decomposition decoupling it into
+a master problem and multiple slave subproblems that can be resolved in
+polynomial time. We also design a heuristic algorithm in order to compute a
+suboptimal solution in a reasonable time. This algorithm requires only a local
+knowledge from nodes, so it should support distributed implementations.
+  We analyze both problems through a series of simulation experiments featuring
+different network sizes and network densities. On large networks, we compare
+our heuristic and its variants with a genetic algorithm and show that our
+heuristic computes the better resource allocation. On smaller networks, we
+contrast these performances to that of the exact algorithm and show that
+resource allocation fulfilling a large part of the peer can be found, even for
+hard configuration where no resources are in excess.

@@ -1,0 +1,24 @@
+Social hierarchy (i.e., pyramid structure of societies) is a fundamental
+concept in sociology and social network analysis. The importance of social
+hierarchy in a social network is that the topological structure of the social
+hierarchy is essential in both shaping the nature of social interactions
+between individuals and unfolding the structure of the social networks. The
+social hierarchy found in a social network can be utilized to improve the
+accuracy of link prediction, provide better query results, rank web pages, and
+study information flow and spread in complex networks. In this paper, we model
+a social network as a directed graph G, and consider the social hierarchy as
+DAG (directed acyclic graph) of G, denoted as GD. By DAG, all the vertices in G
+can be partitioned into different levels, the vertices at the same level
+represent a disjoint group in the social hierarchy, and all the edges in DAG
+follow one direction. The main issue we study in this paper is how to find DAG
+GD in G. The approach we take is to find GD by removing all possible cycles
+from G such that G = U(G) + GD where U(G) is a maximum Eulerian subgraph which
+contains all possible cycles. We give the reasons for doing so, investigate the
+properties of GD found, and discuss the applications. In addition, we develop a
+novel two-phase algorithm, called Greedy-&-Refine, which greedily computes an
+Eulerian subgraph and then refines this greedy solution to find the maximum
+Eulerian subgraph. We give a bound between the greedy solution and the optimal.
+The quality of our greedy approach is high. We conduct comprehensive
+experimental studies over 14 real-world datasets. The results show that our
+algorithms are at least two orders of magnitude faster than the baseline
+algorithm.

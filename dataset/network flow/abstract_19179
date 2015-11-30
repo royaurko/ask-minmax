@@ -1,0 +1,16 @@
+Detecting communities in a network, based only on the adjacency matrix, is a
+problem of interest to several scientific disciplines. Recently, Zhang and
+Moore have introduced an algorithm in [P. Zhang and C. Moore, Proceedings of
+the National Academy of Sciences 111, 18144 (2014)], called mod-bp, that avoids
+overfitting the data by optimizing a weighted average of modularity (a popular
+goodness-of-fit measure in community detection) and entropy (i.e. number of
+configurations with a given modularity). The adjustment of the relative weight,
+the "temperature" of the model, is crucial for getting a correct result from
+mod-bp. In this work we study the many phase transitions that mod-bp may
+undergo by changing the two parameters of the algorithm: the temperature $T$
+and the maximum number of groups $q$. We introduce a new set of order
+parameters that allow to determine the actual number of groups $\hat{q}$, and
+we observe on both synthetic and real networks the existence of phases with any
+$\hat{q} \in \{1,q\}$, which were unknown before. We discuss how to interpret
+the results of mod-bp and how to make the optimal choice for the problem of
+detecting significant communities.

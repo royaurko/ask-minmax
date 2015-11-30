@@ -1,0 +1,21 @@
+Regression-based adjusted plus-minus statistics were developed in basketball
+and have recently come to hockey. The purpose of these statistics is to provide
+an estimate of each player's contribution to his team, independent of the
+strength of his teammates, the strength of his opponents, and other variables
+that are out of his control. One of the main downsides of the ordinary least
+squares regression models is that the estimates have large error bounds. Since
+certain pairs of teammates play together frequently, collinearity is present in
+the data and is one reason for the large errors. In hockey, the relative lack
+of scoring compared to basketball is another reason. To deal with these issues,
+we use ridge regression, a method that is commonly used in lieu of ordinary
+least squares regression when collinearity is present in the data. We also
+create models that use not only goals, but also shots, Fenwick rating (shots
+plus missed shots), and Corsi rating (shots, missed shots, and blocked shots).
+One benefit of using these statistics is that there are roughly ten times as
+many shots as goals, so there is much more data when using these statistics and
+the resulting estimates have smaller error bounds. The results of our ridge
+regression models are estimates of the offensive and defensive contributions of
+forwards and defensemen during even strength, power play, and short handed
+situations, in terms of goals per 60 minutes. The estimates are independent of
+strength of teammates, strength of opponents, and the zone in which a player's
+shift begins.

@@ -1,0 +1,16 @@
+We consider the problem of answering point-to-point shortest path queries on
+massive social networks. The goal is to answer queries within tens of
+milliseconds while minimizing the memory requirements. We present a technique
+that achieves this goal for an extremely large fraction of path queries by
+exploiting the structure of the social networks.
+  Using evaluations on real-world datasets, we argue that our technique offers
+a unique trade-off between latency, memory and accuracy. For instance, for the
+LiveJournal social network (roughly 5 million nodes and 69 million edges), our
+technique can answer 99.9% of the queries in less than a millisecond. In
+comparison to storing all pair shortest paths, our technique requires at least
+550x less memory; the average query time is roughly 365 microseconds --- 430x
+faster than the state-of-the-art shortest path algorithm. Furthermore, the
+relative performance of our technique improves with the size (and density) of
+the network. For the Orkut social network (3 million nodes and 220 million
+edges), for instance, our technique is roughly 2588x faster than the
+state-of-the-art algorithm for computing shortest paths.

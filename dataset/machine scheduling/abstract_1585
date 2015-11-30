@@ -1,0 +1,18 @@
+In this paper we look at small Turing machines (TMs) that work with just two
+colors (alphabet symbols) and either two or three states. For any particular
+such machine $\tau$ and any particular input $x$ we consider what we call the
+\emph{space-time} diagram which basically is just the collection of consecutive
+tape configurations of the computation $\tau(x)$.
+  In our setting it makes sense to define a fractal dimension for a Turing
+machine as the limiting fractal dimension for the corresponding space-time
+diagrams. It turns out that there is a very strong relation between the fractal
+dimension of a Turing machine of the above specified type and its runtime
+complexity.
+  In particular, a TM with three states and two colors runs in at most linear
+time iff its dimension is 2, and its dimension is 1 iff it runs in
+super-polynomial time and it uses polynomial space. If a TM runs in time
+${\mathcal O} {(x^n)}$ we have empirically verified that the corresponding
+dimension is $\frac{n+1}{n}$, a result that we can only partially prove.
+  We find the results presented here remarkable because they relate two
+completely different complexity measures: the geometrical fractal dimension on
+the one side versus the time complexity of a computation on the other side.

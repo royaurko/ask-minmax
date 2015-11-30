@@ -1,0 +1,23 @@
+Valgrind, and specifically the included tool Memcheck, offers an easy and
+reliable way for checking the correctness of memory operations in programs.
+This works in an unintrusive way where Valgrind translates the program into
+intermediate code and executes it on an emulated CPU. The heavy weight tool
+Memcheck uses this to keep a full shadow copy of the memory used by a program
+and tracking accesses to it. This allows the detection of memory leaks and
+checking the validity of accesses.
+  Though suited for a wide variety of programs, this approach still fails when
+accelerator based programming models are involved. The code running on these
+devices is separate from the code running on the host. Access to memory on the
+device and starting of kernels is being handled by an API provided by the
+driver being used. Hence Valgrind is unable to understand and instrument
+operations being run on the device.
+  To circumvent this limitation a new set of wrapper functions have been
+introduced. These wrap a subset of the CUDA Driver API function that is
+responsible for (de-)allocation memory regions on the device and the respective
+memory copy operations. This allows to check whether memory is fully allocated
+during a transfer and, through the functionality provided by Valgrind, whether
+the memory transfered to the device from the host is defined and addressable.
+Through this technique it is possible to detect a number of common programming
+mistakes, which are very difficult to debug by other means. The combination of
+these wrappers together with the Valgrind tool Memcheck is being called
+Cudagrind.

@@ -1,0 +1,24 @@
+In this paper, we consider high-speed wireless packet access using code
+division multiple access (CDMA) and multiple-input multiple-output (MIMO).
+Current wireless standards, such as high speed packet access (HSPA), have
+adopted multi-code transmission and hybrid-automatic repeat request (ARQ) as
+major technologies for delivering high data rates. The key technique in
+hybrid-ARQ, is that erroneous data packets are kept in the receiver to
+detect/decode retransmitted ones. This strategy is refereed to as packet
+combining. In CDMA MIMO-based wireless packet access, multi-code transmission
+suffers from severe performance degradation due to the loss of code
+orthogonality caused by both interchip interference (ICI) and co-antenna
+interference (CAI). This limitation results in large transmission delays when
+an ARQ mechanism is used in the link layer. In this paper, we investigate
+efficient minimum mean square error (MMSE) frequency domain equalization
+(FDE)-based iterative (turbo) packet combining for cyclic prefix (CP)-CDMA MIMO
+with Chase-type ARQ. We introduce two turbo packet combining schemes: i) In the
+first scheme, namely "chip-level turbo packet combining", MMSE FDE and packet
+combining are jointly performed at the chip-level. ii) In the second scheme,
+namely "symbol-level turbo packet combining", chip-level MMSE FDE and
+despreading are separately carried out for each transmission, then packet
+combining is performed at the level of the soft demapper. The computational
+complexity and memory requirements of both techniques are quite insensitive to
+the ARQ delay, i.e., maximum number of ARQ rounds. The throughput is evaluated
+for some representative antenna configurations and load factors to show the
+gains offered by the proposed techniques.

@@ -1,0 +1,19 @@
+In this contribution we describe the hardware, firmware and software
+components of the readout system of the MAGIC-II Cherenkov telescope on the
+Canary island La Palma. The PMT analog signals are transmitted by means of
+optical fibers from the MAGIC-II camera to the 80 m away counting house where
+they are routed to the new high bandwidth and fully programmable receiver
+boards (MONSTER), which convert back the signals from optical to electrical
+ones. Then the signals are split, one half provide the input signals for the
+level ONE trigger system while the other half is sent to the digitizing units.
+The fast Cherenkov pulses are sampled by low-power Domino Ring Sampler chips
+(DRS2) and temporarily stored in an array of 1024 capacitors. Signals are
+sampled at the ultra-fast speed of 2 GSample/s, which allows a very precise
+measurement of the signal arrival times in all pixels. They are then digitized
+with 12-bit resolution by an external ADC readout at 40 MHz speed. The Domino
+samplers are integrated in the newly designed mezzanines which equip a set of
+fourteen multi-purpose PULSAR boards. Finally, the data are sent through an
+S-LINK optical interface to a single computer. The entire DAQ hardware is
+controlled through a VME interface and steered by the slow control software
+program (MIR). The Data AcQuisition software program (DAQ) proceeds finally to
+the event building and data storage.

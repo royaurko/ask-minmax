@@ -1,0 +1,22 @@
+We study the problem of privacy amplification with an active adversary in the
+information theoretic setting. In this setting, two parties Alice and Bob start
+out with a shared $n$-bit weak random string $W$, and try to agree on a secret
+random key $R$ over a public channel fully controlled by an active and
+unbounded adversary. Typical assumptions are that these two parties have access
+to local private uniform random bits. In this paper we seek to minimize the
+requirements on the local randomness used by the two parties.
+  We make two improvements over previous results. First, we reduce the number
+of random bits needed for each party to $\Theta(\ell+\log n)$, where $\ell$ is
+the security parameter, as long as $W$ has min-entropy $n^{\Omega(1)}$.
+Previously, the best known result needs to use $\Theta((\ell+\log n)\log n)$
+bits. Our result is also asymptotically optimal. Second, we generalize the
+problem to the case where the two parties only have local weak random sources
+instead of truly uniform random bits. We show that when each party has a local
+weak random source with min-entropy $> n/2$, there is an efficient privacy
+amplification protocol that works nearly as good as if the two parties have
+access to local uniform random bits. Next, in the case where each party only
+has a weak random source with arbitrarily linear min-entropy, we give an
+efficient privacy amplification protocol where we can achieve security
+parameter up to $\Omega(\log k)$. Our results give the first protocols that
+achieve privacy amplification when each party only has access to a local weak
+random source.

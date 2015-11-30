@@ -1,0 +1,15 @@
+In many signal processing problems, it may be fruitful to represent the
+signal under study in a frame. If a probabilistic approach is adopted, it
+becomes then necessary to estimate the hyper-parameters characterizing the
+probability distribution of the frame coefficients. This problem is difficult
+since in general the frame synthesis operator is not bijective. Consequently,
+the frame coefficients are not directly observable. This paper introduces a
+hierarchical Bayesian model for frame representation. The posterior
+distribution of the frame coefficients and model hyper-parameters is derived.
+Hybrid Markov Chain Monte Carlo algorithms are subsequently proposed to sample
+from this posterior distribution. The generated samples are then exploited to
+estimate the hyper-parameters and the frame coefficients of the target signal.
+Validation experiments show that the proposed algorithms provide an accurate
+estimation of the frame coefficients and hyper-parameters. Application to
+practical problems of image denoising show the impact of the resulting Bayesian
+estimation on the recovered signal quality.

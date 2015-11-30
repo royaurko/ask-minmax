@@ -1,0 +1,19 @@
+Real time processing for teamwork action recognition is a challenge, due to
+complex computational models to achieve high system performance. Hence, this
+paper proposes a framework based on Graphical Processing Units (GPUs) to
+achieve a significant speed up in the performance of role based activity
+recognition of teamwork. The framework can be applied in various fields,
+especially athletic and military applications. Furthermore, the framework can
+be customized for many action recognition applications. The paper presents the
+stages of the framework where GPUs are the main tool for performance
+improvement. The speedup is achieved by performing video processing and Machine
+learning algorithms on GPU. Video processing and machine learning algorithms
+covers all computations involved in our framework. Video processing tasks on
+involves GPU implementation of Motion detection, segmentation and object
+tracking algorithms. In addition, our framework is integrated with GPUCV, a GPU
+version of OpenCV functions. Machine learning tasks are supported under our
+framework with GPU implementations of Support Vector Machine (SVM) for object
+classification and feature discretization, Hidden Marcov Model (HMM) for
+activity recognition phase, and ID3 algorithm for role recognition of team
+members. The system was tested against UC-Teamwork dataset and speedup of 20X
+has been achieved on NVidia 9500GT graphics card (32 500MHZ processors).

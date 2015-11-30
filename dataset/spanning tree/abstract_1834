@@ -1,0 +1,21 @@
+Dynamic regression trees are an attractive option for automatic regression
+and classification with complicated response surfaces in on-line application
+settings. We create a sequential tree model whose state changes in time with
+the accumulation of new data, and provide particle learning algorithms that
+allow for the efficient on-line posterior filtering of tree-states. A major
+advantage of tree regression is that it allows for the use of very simple
+models within each partition. The model also facilitates a natural division of
+labor in our sequential particle-based inference: tree dynamics are defined
+through a few potential changes that are local to each newly arrived
+observation, while global uncertainty is captured by the ensemble of particles.
+We consider both constant and linear mean functions at the tree leaves, along
+with multinomial leaves for classification problems, and propose default prior
+specifications that allow for prediction to be integrated over all model
+parameters conditional on a given tree. Inference is illustrated in some
+standard nonparametric regression examples, as well as in the setting of
+sequential experiment design, including both active learning and optimization
+applications, and in on-line classification. We detail implementation
+guidelines and problem specific methodology for each of these motivating
+applications. Throughout, it is demonstrated that our practical approach is
+able to provide better results compared to commonly used methods at a fraction
+of the cost.

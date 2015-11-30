@@ -1,0 +1,16 @@
+Identification of functional elements of a genome often requires dividing a
+sequence of measurements along a genome into segments differing from adjacent
+segments. In many applications, the mean of the measured values at multiple
+genomic locations in a segment is used to make inference of the property of
+interest. The segments with non-zero means often correspond to genomic regions
+with certain biological events, such as changes between two conditions. This
+problem is often called the segmentation problem in the field of genomics, and
+the change-point problem in other scientific disciplines. We designed an
+efficient algorithm, called iSeg, for segmentation of high-throughput genomic
+profiles. iSeg first utilizes dynamic programming to compute the significance
+for a large number of candidate segments. It then uses tree-based data
+structures to detect overlapping significant regions and update them
+simultaneously. Refinement and merging of significant segments are performed at
+the end to generate the final segmentation. We evaluate iSeg using both
+simulated and experimental datasets and show that it performs quite well when
+compared with existing methods.

@@ -1,0 +1,13 @@
+Initial applications of the GriPhyN Chimera Virtual Data System have been
+performed within the context of CMS Production of Monte Carlo Simulated Data.
+The GriPhyN Chimera system consists of four primary components: 1) a Virtual
+Data Language, which is used to describe virtual data products, 2) a Virtual
+Data Catalog, which is used to store virtual data entries, 3) an Abstract
+Planner, which resolves all dependencies of a particular virtual data product
+and forms a location and existence independent plan, 4) a Concrete Planner,
+which maps an abstract, logical plan onto concrete, physical grid resources
+accounting for staging in/out files and publishing results to a replica
+location service. A CMS Workflow Planner, MCRunJob, is used to generate virtual
+data products using the Virtual Data Language. Subsequently, a prototype
+workflow manager, known as WorkRunner, is used to schedule the instantiation of
+virtual data products across a grid.

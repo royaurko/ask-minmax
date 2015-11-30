@@ -1,0 +1,19 @@
+An algorithm for simulating self-gravitating cosmological astrophysical
+fluids is presented. The advantages include a large dynamic range,
+parallelizability, high resolution per grid element and fast execution speed.
+The code is based on a finite volume flux conservative
+Total-Variation-Diminishing (TVD) scheme for the shock capturing hydro, and an
+iterative multigrid solver for the gravity. The grid is a time dependent field,
+whose motion is described by a generalized potential flow. Approximately
+constant mass per cell can be obtained, providing all the advantages of a
+Lagrangian scheme. The grid deformation combined with appropriate limiting and
+smoothing schemes guarantees a regular and well behaved grid geometry, where
+nearest neighbor relationships remain constant. The full hydrodynamic fluid
+equations are implemented in the curvilinear moving grid, allowing for
+arbitrary fluid flow relative to the grid geometry. This combination retains
+all the advantages of the grid based schemes including high speed per fluid
+element and a rapid gravity solver.
+  The current implementation is described, and empirical simulation results are
+presented. Accurate execution speed calculations are given in terms of floating
+point operations per time step per grid cell. This code is freely available to
+the community.

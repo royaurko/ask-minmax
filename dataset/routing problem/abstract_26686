@@ -1,0 +1,16 @@
+Much of the past work on asynchronous approximate Byzantine consensus has
+assumed scalar inputs at the nodes [3, 7]. Recent work has yielded approximate
+Byzantine consensus algorithms for the case when the input at each node is a
+d-dimensional vector, and the nodes must reach consensus on a vector in the
+convex hull of the input vectors at the fault-free nodes [8, 12]. The
+d-dimensional vectors can be equivalently viewed as points in the d-dimensional
+Euclidean space. Thus, the algorithms in [8, 12] require the fault-free nodes
+to decide on a point in the d-dimensional space.
+  In this paper, we generalize the problem to allow the decision to be a convex
+polytope in the d-dimensional space, such that the decided polytope is within
+the convex hull of the input vectors at the fault-free nodes. We name this
+problem as Byzantine convex consensus (BCC), and present an asynchronous
+approximate BCC algorithm with optimal fault tolerance. Ideally, the goal here
+is to agree on a convex polytope that is as large as possible. While we do not
+claim that our algorithm satisfies this goal, we show a bound on the output
+convex polytope chosen by our algorithm.

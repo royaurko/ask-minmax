@@ -1,0 +1,17 @@
+Two polynomials $f, g \in \mathbb{F}[x_1, \ldots, x_n]$ are called
+shift-equivalent if there exists a vector $(a_1, \ldots, a_n) \in \mathbb{F}^n$
+such that the polynomial identity $f(x_1+a_1, \ldots, x_n+a_n) \equiv
+g(x_1,\ldots,x_n)$ holds. Our main result is a new randomized algorithm that
+tests whether two given polynomials are shift equivalent. Our algorithm runs in
+time polynomial in the circuit size of the polynomials, to which it is given
+black box access. This complements a previous work of Grigoriev (Theoretical
+Computer Science, 1997) who gave a deterministic algorithm running in time
+$n^{O(d)}$ for degree $d$ polynomials.
+  Our algorithm uses randomness only to solve instances of the Polynomial
+Identity Testing (PIT) problem. Hence, if one could de-randomize PIT (a
+long-standing open problem in complexity) a de-randomization of our algorithm
+would follow. This establishes an equivalence between de-randomizing
+shift-equivalence testing and de-randomizing PIT (both in the black-box and the
+white-box setting). For certain restricted models, such as Read Once Branching
+Programs, we already obtain a deterministic algorithm using existing PIT
+results.

@@ -1,0 +1,14 @@
+A set $D\subseteq V$ is called a $k$-tuple dominating set of a graph
+$G=(V,E)$ if $\left| N_G[v] \cap D \right| \geq k$ for all $v \in V$, where
+$N_G[v]$ denotes the closed neighborhood of $v$. A set $D \subseteq V$ is
+called a liar's dominating set of a graph $G=(V,E)$ if (i) $\left| N_G[v] \cap
+D \right| \geq 2$ for all $v\in V$ and (ii) for every pair of distinct vertices
+$u, v\in V$, $\left| (N_G[u] \cup N_G[v]) \cap D \right| \geq 3$. Given a graph
+$G$, the decision versions of $k$-Tuple Domination Problem and the Liar's
+Domination Problem are to check whether there exists a $k$-tuple dominating set
+and a liar's dominating set of $G$ of a given cardinality, respectively. These
+two problems are known to be NP-complete \cite{LiaoChang2003, Slater2009}. In
+this paper, we study the parameterized complexity of these problems. We show
+that the $k$-Tuple Domination Problem and the Liar's Domination Problem are
+$\mathsf{W}[2]$-hard for general graphs but they admit linear kernels for
+graphs with bounded genus.

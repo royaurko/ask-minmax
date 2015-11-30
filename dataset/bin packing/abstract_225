@@ -1,0 +1,13 @@
+Suppose we sequentially put $n$ balls into $n$ bins. If we put each ball into
+a random bin then the heaviest bin will contain ${\sim}\log n/\log\log n$ balls
+with high probability. However, Azar, Broder, Karlin and Upfal [SIAM J. Comput.
+29 (1999) 180--200] showed that if each time we choose two bins at random and
+put the ball in the least loaded bin among the two, then the heaviest bin will
+contain only ${\sim}\log\log n$ balls with high probability. How much memory do
+we need to implement this scheme? We need roughly $\log\log\log n$ bits per
+bin, and $n\log\log\log n$ bits in total. Let us assume now that we have
+limited amount of memory. For each ball, we are given two random bins and we
+have to put the ball into one of them. Our goal is to minimize the load of the
+heaviest bin. We prove that if we have $n^{1-\delta}$ bits then the heaviest
+bin will contain at least $\Omega(\delta\log n/\log\log n)$ balls with high
+probability. The bound is tight in the communication complexity model.

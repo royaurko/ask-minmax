@@ -1,0 +1,19 @@
+Motivation: Models of discrete concurrent systems often lead to huge and
+complex state transition graphs that represent their dynamics. This makes
+difficult to analyse dynamical properties. In particular, for logical models of
+biological regulatory networks, it is of real interest to study attractors and
+their reachability from specific initial conditions, i.e. to assess the
+potential asymptotical behaviours of the system. Beyond the identification of
+the reachable attractors, we propose to quantify this reachability.
+  Results: Relying on the structure of the state transition graph, we estimate
+the probability of each attractor reachable from a given initial condition or
+from a portion of the state space. First, we present a quasi-exact solution
+with an original algorithm called Firefront, based on the exhaustive
+exploration of the reachable state space. Then, we introduce an adapted version
+of Monte Carlo simulation algorithm, termed Avatar, better suited to larger
+models. Firefront and Avatar methods are validated and compared to other
+related approaches, using as test cases logical models of synthetic and
+biological networks.
+  Availability: Both algorithms are implemented as Perl scripts that can be
+freely downloaded from http://compbio.igc.gulbenkian.pt/nmd/node/59 along with
+Supplementary Material.

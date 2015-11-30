@@ -1,0 +1,17 @@
+To schedule a large number of EVs with the presence of practical nonconvex
+charging constraints, a distributed and randomized algorithm is proposed in
+this paper. The algorithm assumes the availability of a coordinator which can
+communicate with all EVs. In each iteration of the algorithm, the coordinator
+receives tentative charging profiles from the EVs and computes a broadcast
+control signal. After receiving this broadcast control signal, each EV
+generates a probability distribution over its admissible charging profiles, and
+samples from the distribution to update its tentative charging profile.
+  We prove that the algorithm converges almost surely to a charging profile in
+finite iterations. The final charging profile (that the algorithm converges to)
+is random, i.e., it depends on the realization. We characterize the final
+charging profile---a charging profile can be a realization of the final
+charging profile if and only if it is a Nash equilibrium of the game in which
+each EV seeks to minimize the inner product of its own charging profile and the
+aggregate electricity demand. Furthermore, we provide a uniform suboptimality
+upper bound, that scales O(1/n) in the number n of EVs, for all realizations of
+the final charging profile.

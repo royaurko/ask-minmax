@@ -1,0 +1,24 @@
+Finding an unconstrained and statistically interpretable reparameterization
+of a covariance matrix is still an open problem in statistics. Its solution is
+of central importance in covariance estimation, particularly in the recent
+high-dimensional data environment where enforcing the positive-definiteness
+constraint could be computationally expensive. We provide a survey of the
+progress made in modeling covariance matrices from two relatively complementary
+perspectives: (1) generalized linear models (GLM) or parsimony and use of
+covariates in low dimensions, and (2) regularization or sparsity for
+high-dimensional data. An emerging, unifying and powerful trend in both
+perspectives is that of reducing a covariance estimation problem to that of
+estimating a sequence of regression problems. We point out several instances of
+the regression-based formulation. A notable case is in sparse estimation of a
+precision matrix or a Gaussian graphical model leading to the fast graphical
+LASSO algorithm. Some advantages and limitations of the regression-based
+Cholesky decomposition relative to the classical spectral (eigenvalue) and
+variance-correlation decompositions are highlighted. The former provides an
+unconstrained and statistically interpretable reparameterization, and
+guarantees the positive-definiteness of the estimated covariance matrix. It
+reduces the unintuitive task of covariance estimation to that of modeling a
+sequence of regressions at the cost of imposing an a priori order among the
+variables. Elementwise regularization of the sample covariance matrix such as
+banding, tapering and thresholding has desirable asymptotic properties and the
+sparse estimated covariance matrix is positive definite with probability
+tending to one for large samples and dimensions.

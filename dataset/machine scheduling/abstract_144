@@ -1,0 +1,20 @@
+In multiview applications, multiple cameras acquire the same scene from
+different viewpoints and generally produce correlated video streams. This
+results in large amounts of highly redundant data. In order to save resources,
+it is critical to handle properly this correlation during encoding and
+transmission of the multiview data. In this work, we propose a
+correlation-aware packet scheduling algorithm for multi-camera networks, where
+information from all cameras are transmitted over a bottleneck channel to
+clients that reconstruct the multiview images. The scheduling algorithm relies
+on a new rate-distortion model that captures the importance of each view in the
+scene reconstruction. We propose a problem formulation for the optimization of
+the packet scheduling policies, which adapt to variations in the scene content.
+Then, we design a low complexity scheduling algorithm based on a trellis search
+that selects the subset of candidate packets to be transmitted towards
+effective multiview reconstruction at clients. Extensive simulation results
+confirm the gain of our scheduling algorithm when inter-source correlation
+information is used in the scheduler, compared to scheduling policies with no
+information about the correlation or non-adaptive scheduling policies. We
+finally show that increasing the optimization horizon in the packet scheduling
+algorithm improves the transmission performance, especially in scenarios where
+the level of correlation rapidly varies with time.

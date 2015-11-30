@@ -1,0 +1,17 @@
+Many peak detection algorithms have been proposed for ChIP-seq data analysis,
+but it is not obvious which method and what parameters are optimal for any
+given data set. In contrast, peaks can easily be located by visual inspection
+of profile data on a genome browser. We thus propose a supervised machine
+learning approach to ChIP-seq data analysis, using annotated regions that
+encode an expert's qualitative judgments about which regions contain or do not
+contain peaks. The main idea is to manually annotate a small subset of the
+genome, and then learn a model that makes consistent predictions on the rest of
+the genome. We show how our method can be used to quantitatively calibrate and
+benchmark the performance of peak detection algorithms on specific data sets.
+We compare several peak detectors on 7 annotated region data sets, consisting
+of 2 histone marks, 4 expert annotators, and several different cell types. In
+these data the macs algorithm was best for a narrow peak histone profile
+(H3K4me3) while the hmcan.broad algorithm was best for a broad histone profile
+(H3K36me3). Our benchmark annotated region data sets can be downloaded from a
+public website, and there is an R package for computing the annotation error on
+GitHub.

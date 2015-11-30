@@ -1,0 +1,23 @@
+The scaling behaviour of randomly branched polymers in a good solvent is
+studied in two to nine dimensions, using as microscopic models lattice animals
+and lattice trees on simple hypercubic lattices. As a stochastic sampling
+method we use a biased sequential sampling algorithm with re-sampling, similar
+to the pruned-enriched Rosenbluth method (PERM) used extensively for linear
+polymers. Essentially we start simulating percolation clusters (either site or
+bond), re-weigh them according to the animal (tree) ensemble, and prune or
+branch the further growth according to a heuristic fitness function. In
+contrast to previous applications of PERM, this fitness function is {\it not}
+the weight with which the actual configuration would contribute to the
+partition sum, but is closely related to it. We obtain high statistics of
+animals with up to several thousand sites in all dimension 2 <= d <= 9. In
+addition to the partition sum (number of different animals) we estimate
+gyration radii and numbers of perimeter sites. In all dimensions we verify the
+Parisi-Sourlas prediction, and we verify all exactly known critical exponents
+in dimensions 2, 3, 4, and >= 8. In addition, we present the hitherto most
+precise estimates for growth constants in d >= 3. For clusters with one site
+attached to an attractive surface, we verify the superuniversality of the
+cross-over exponent at the adsorption transition predicted by Janssen and
+Lyssy. Finally, we discuss the collapse of animals and trees, arguing that our
+present version of the algorithm is also efficient for some of the models
+studied in this context, but showing that it is {\it not} very efficient for
+the `classical' model for collapsing animals.

@@ -1,0 +1,16 @@
+We show that randomization can lead to significant improvements for a few
+fundamental problems in distributed tracking. Our basis is the {\em
+count-tracking} problem, where there are $k$ players, each holding a counter
+$n_i$ that gets incremented over time, and the goal is to track an
+$\eps$-approximation of their sum $n=\sum_i n_i$ continuously at all times,
+using minimum communication. While the deterministic communication complexity
+of the problem is $\Theta(k/\eps \cdot \log N)$, where $N$ is the final value
+of $n$ when the tracking finishes, we show that with randomization, the
+communication cost can be reduced to $\Theta(\sqrt{k}/\eps \cdot \log N)$. Our
+algorithm is simple and uses only O(1) space at each player, while the lower
+bound holds even assuming each player has infinite computing power. Then, we
+extend our techniques to two related distributed tracking problems: {\em
+frequency-tracking} and {\em rank-tracking}, and obtain similar improvements
+over previous deterministic algorithms. Both problems are of central importance
+in large data monitoring and analysis, and have been extensively studied in the
+literature.

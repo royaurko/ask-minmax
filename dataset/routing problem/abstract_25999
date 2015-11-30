@@ -1,0 +1,13 @@
+We introduce a fast algorithm for computing sparse Fourier transforms
+supported on smooth curves or surfaces. This problem appear naturally in
+several important problems in wave scattering and reflection seismology. The
+main observation is that the interaction between a frequency region and a
+spatial region is approximately low rank if the product of their radii are
+bounded by the maximum frequency. Based on this property, equivalent sources
+located at Cartesian grids are used to speed up the computation of the
+interaction between these two regions. The overall structure of our algorithm
+follows the recently-introduced butterfly algorithm. The computation is further
+accelerated by exploiting the tensor-product property of the Fourier kernel in
+two and three dimensions. The proposed algorithm is accurate and has an $O(N
+\log N)$ complexity. Finally, we present numerical results in both two and
+three dimensions.

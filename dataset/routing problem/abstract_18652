@@ -1,0 +1,17 @@
+Dynamic maps that allow continuous map rotations, e.g., on mobile devices,
+encounter new issues unseen in static map labeling before. We study the
+following dynamic map labeling problem: The input is a static, labeled map,
+i.e., a set P of points in the plane with attached non-overlapping horizontal
+rectangular labels. The goal is to find a consistent labeling of P under
+rotation that maximizes the number of visible labels for all rotation angles
+such that the labels remain horizontal while the map is rotated. A labeling is
+consistent if a single active interval of angles is selected for each label
+such that labels neither intersect each other nor occlude points in P at any
+rotation angle. We first introduce a general model for labeling rotating maps
+and derive basic geometric properties of consistent solutions. We show
+NP-completeness of the active interval maximization problem even for
+unit-square labels. We then present a constant-factor approximation for this
+problem based on line stabbing, and refine it further into an efficient
+polynomial-time approximation scheme (EPTAS). Finally, we extend the EPTAS to
+the more general setting of rectangular labels of bounded size and aspect
+ratio.

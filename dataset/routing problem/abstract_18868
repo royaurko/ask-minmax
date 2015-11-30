@@ -1,0 +1,17 @@
+pde2path is a free and easy to use Matlab continuation/bifurcation package
+for elliptic systems of PDEs with arbitrary many components, on general two
+dimensional domains, and with rather general boundary conditions. The package
+is based on the FEM of the Matlab pdetoolbox, and is explained by a number of
+examples, including Bratu's problem, the Schnakenberg model, Rayleigh-Benard
+convection, and von Karman plate equations. These serve as templates to study
+new problems, for which the user has to provide, via Matlab function files, a
+description of the geometry, the boundary conditions, the coefficients of the
+PDE, and a rough initial guess of a solution. The basic algorithm is a one
+parameter arclength continuation with optional bifurcation detection and
+branch-switching. Stability calculations, error control and mesh-handling, and
+some elementary time-integration for the associated parabolic problem are also
+supported. The continuation, branch-switching, plotting etc are performed via
+Matlab command-line function calls guided by the AUTO style. The software can
+be downloaded from www.staff.uni-oldenburg.de/hannes.uecker/pde2path, where
+also an online documentation of the software is provided such that in this
+paper we focus more on the mathematics and the example systems.

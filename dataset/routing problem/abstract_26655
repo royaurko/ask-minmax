@@ -1,0 +1,11 @@
+In this paper, we perform an empirical evaluation of the Parallel External
+Memory (PEM) model in the context of geometric problems. In particular, we
+implement the parallel distribution sweeping framework of Ajwani, Sitchinava
+and Zeh to solve batched 1-dimensional stabbing max problem. While modern
+processors consist of sophisticated memory systems (multiple levels of caches,
+set associativity, TLB, prefetching), we empirically show that algorithms
+designed in simple models, that focus on minimizing the I/O transfers between
+shared memory and single level cache, can lead to efficient software on current
+multicore architectures. Our implementation exhibits significantly fewer
+accesses to slow DRAM and, therefore, outperforms traditional approaches based
+on plane sweep and two-way divide and conquer.

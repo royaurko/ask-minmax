@@ -1,0 +1,19 @@
+We study integrality gaps and approximability of two closely related problems
+on directed graphs. Given a set V of n nodes in an underlying asymmetric metric
+and two specified nodes s and t, both problems ask to find an s-t path visiting
+all other nodes. In the asymmetric traveling salesman path problem (ATSPP), the
+objective is to minimize the total cost of this path. In the directed latency
+problem, the objective is to minimize the sum of distances on this path from s
+to each node. Both of these problems are NP-hard. The best known approximation
+algorithms for ATSPP had ratio O(log n) until the very recent result that
+improves it to O(log n/ log log n). However, only a bound of O(sqrt(n)) for the
+integrality gap of its linear programming relaxation has been known. For
+directed latency, the best previously known approximation algorithm has a
+guarantee of O(n^(1/2+eps)), for any constant eps > 0. We present a new
+algorithm for the ATSPP problem that has an approximation ratio of O(log n),
+but whose analysis also bounds the integrality gap of the standard LP
+relaxation of ATSPP by the same factor. This solves an open problem posed by
+Chekuri and Pal [2007]. We then pursue a deeper study of this linear program
+and its variations, which leads to an algorithm for the k-person ATSPP (where k
+s-t paths of minimum total length are sought) and an O(log n)-approximation for
+the directed latency problem.

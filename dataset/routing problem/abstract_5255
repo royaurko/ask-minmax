@@ -1,0 +1,16 @@
+We present an operator-splitting scheme for fluid-structure interaction (FSI)
+problems in hemodynamics, where the thickness of the structural wall is
+comparable to the radius of the cylindrical fluid domain. The equations of
+linear elasticity are used to model the structure, while the Navier-Stokes
+equations for an incompressible viscous fluid are used to model the fluid. The
+operator splitting scheme, based on Lie splitting, separates the elastodynamics
+structure problem, from a fluid problem in which structure inertia is included
+to achieve unconditional stability. We prove energy estimates associated with
+unconditional stability of this modular scheme for the full nonlinear FSI
+problem defined on a moving domain, without requiring any sub-iterations within
+time steps. Two numerical examples are presented, showing excellent agreement
+with the results of monolithic schemes. First-order convergence in time is
+shown numerically. Modularity, unconditional stability without temporal
+sub-iterations, and simple implementation are the features that make this
+operator-splitting scheme particularly appealing for multi-physics problems
+involving fluid-structure interaction.

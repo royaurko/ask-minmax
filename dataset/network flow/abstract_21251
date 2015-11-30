@@ -1,0 +1,23 @@
+In this paper we study gossip based information spreading with bounded
+message sizes. We use algebraic gossip to disseminate $k$ distinct messages to
+all $n$ nodes in a network. For arbitrary networks we provide a new upper bound
+for uniform algebraic gossip of $O((k+\log n + D)\Delta)$ rounds with high
+probability, where $D$ and $\Delta$ are the diameter and the maximum degree in
+the network, respectively. For many topologies and selections of $k$ this bound
+improves previous results, in particular, for graphs with a constant maximum
+degree it implies that uniform gossip is \emph{order optimal} and the stopping
+time is $\Theta(k + D)$.
+  To eliminate the factor of $\Delta$ from the upper bound we propose a
+non-uniform gossip protocol, TAG, which is based on algebraic gossip and an
+arbitrary spanning tree protocol $\S$. The stopping time of TAG is $O(k+\log n
++d(\S)+t(\S))$, where $t(\S)$ is the stopping time of the spanning tree
+protocol, and $d(\S)$ is the diameter of the spanning tree. We provide two
+general cases in which this bound leads to an order optimal protocol. The first
+is for $k=\Omega(n)$, where, using a simple gossip broadcast protocol that
+creates a spanning tree in at most linear time, we show that TAG finishes after
+$\Theta(n)$ rounds for any graph. The second uses a sophisticated, recent
+gossip protocol to build a fast spanning tree on graphs with large weak
+conductance. In turn, this leads to the optimally of TAG on these graphs for
+$k=\Omega(\mathrm{polylog}(n))$. The technique used in our proofs relies on
+queuing theory, which is an interesting approach that can be useful in future
+gossip analysis.

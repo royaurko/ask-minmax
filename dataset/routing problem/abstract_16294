@@ -1,0 +1,14 @@
+The concept of \emph{data depth} in non-parametric multivariate descriptive
+statistics is the generalization of the univariate rank method to multivariate
+data. \emph{Halfspace depth} is a measure of data depth. Given a set $S$ of
+points and a point $p$, the halfspace depth (or rank) of $p$ is defined as the
+minimum number of points of $S$ contained in any closed halfspace with $p$ on
+its boundary. Computing halfspace depth is NP-hard, and it is equivalent to the
+Maximum Feasible Subsystem problem. In this paper a mixed integer program is
+formulated with the big-$M$ method for the halfspace depth problem. We suggest
+a branch and cut algorithm for these integer programs. In this algorithm,
+Chinneck's heuristic algorithm is used to find an upper bound and a related
+technique based on sensitivity analysis is used for branching. Irreducible
+Infeasible Subsystem (IIS) hitting set cuts are applied. We also suggest a
+binary search algorithm which may be more numerically stable. The algorithms
+are implemented with the BCP framework from the \textbf{COIN-OR} project.

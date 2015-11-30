@@ -1,0 +1,15 @@
+We present new theoretical results on differentially private data release
+useful with respect to any target class of counting queries, coupled with
+experimental results on a variety of real world data sets.
+  Specifically, we study a simple combination of the multiplicative weights
+approach of [Hardt and Rothblum, 2010] with the exponential mechanism of
+[McSherry and Talwar, 2007]. The multiplicative weights framework allows us to
+maintain and improve a distribution approximating a given data set with respect
+to a set of counting queries. We use the exponential mechanism to select those
+queries most incorrectly tracked by the current distribution. Combing the two,
+we quickly approach a distribution that agrees with the data set on the given
+set of queries up to small error.
+  The resulting algorithm and its analysis is simple, but nevertheless improves
+upon previous work in terms of both error and running time. We also empirically
+demonstrate the practicality of our approach on several data sets commonly used
+in the statistical community for contingency table release.

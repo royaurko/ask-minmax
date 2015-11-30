@@ -1,0 +1,18 @@
+In the private matching problem, a client and a server each hold a set of $n$
+input elements. The client wants to privately compute the intersection of these
+two sets: he learns which elements he has in common with the server (and
+nothing more), while the server gains no information at all. In certain
+applications it would be useful to have a private matching protocol that
+reports a match even if two elements are only similar instead of equal. Such a
+private matching protocol is called \emph{fuzzy}, and is useful, for instance,
+when elements may be inaccurate or corrupted by errors.
+  We consider the fuzzy private matching problem, in a semi-honest environment.
+Elements are similar if they match on $t$ out of $T$ attributes. First we show
+that the original solution proposed by Freedman et al. is incorrect.
+Subsequently we present two fuzzy private matching protocols. The first,
+simple, protocol has bit message complexity $O(n \binom{T}{t} (T
+\log{|D|}+k))$. The second, improved, protocol has a much better bit message
+complexity of $O(n T (\log{|D|}+k))$, but here the client incurs a O(n) factor
+time complexity. Additionally, we present protocols based on the computation of
+the Hamming distance and on oblivious transfer, that have different, sometimes
+more efficient, performance characteristics.

@@ -1,0 +1,27 @@
+We propose AWN (Algebra for Wireless Networks), a process algebra tailored to
+the modelling of Mobile Ad hoc Network (MANET) and Wireless Mesh Network (WMN)
+protocols. It combines novel treatments of local broadcast, conditional unicast
+and data structures.
+  In this framework we present a rigorous analysis of the Ad hoc On-Demand
+Distance Vector (AODV) protocol, a popular routing protocol designed for MANETs
+and WMNs, and one of the four protocols currently standardised by the IETF
+MANET working group.
+  We give a complete and unambiguous specification of this protocol, thereby
+formalising the RFC of AODV, the de facto standard specification, given in
+English prose. In doing so, we had to make non-evident assumptions to resolve
+ambiguities occurring in that specification. Our formalisation models the exact
+details of the core functionality of AODV, such as route maintenance and error
+handling, and only omits timing aspects.
+  The process algebra allows us to formalise and (dis)prove crucial properties
+of mesh network routing protocols such as loop freedom and packet delivery. We
+are the first to provide a detailed proof of loop freedom of AODV. In contrast
+to evaluations using simulation or model checking, our proof is generic and
+holds for any possible network scenario in terms of network topology, node
+mobility, etc. Due to ambiguities and contradictions the RFC specification
+allows several interpretations; we show for more than 5000 of them whether they
+are loop free or not, thereby demonstrating how the reasoning and proofs can
+relatively easily be adapted to protocol variants.
+  Using our formal and unambiguous specification, we find shortcomings of AODV
+that affect performance, e.g. the establishment of non-optimal routes, and some
+routes not being found at all. We formalise improvements in the same process
+algebra; carrying over the proofs is again easy.

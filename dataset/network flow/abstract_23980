@@ -1,0 +1,16 @@
+Self-stabilization is a general paradigm to provide forward recovery
+capabilities to distributed systems and networks. Intuitively, a protocol is
+self-stabilizing if it is able to recover without external intervention from
+any catastrophic transient failure. In this paper, our focus is to lower the
+communication complexity of self-stabilizing protocols \emph{below} the need of
+checking every neighbor forever. In more details, the contribution of the paper
+is threefold: (i) We provide new complexity measures for communication
+efficiency of self-stabilizing protocols, especially in the stabilized phase or
+when there are no faults, (ii) On the negative side, we show that for
+non-trivial problems such as coloring, maximal matching, and maximal
+independent set, it is impossible to get (deterministic or probabilistic)
+self-stabilizing solutions where every participant communicates with less than
+every neighbor in the stabilized phase, and (iii) On the positive side, we
+present protocols for coloring, maximal matching, and maximal independent set
+such that a fraction of the participants communicates with exactly one neighbor
+in the stabilized phase.

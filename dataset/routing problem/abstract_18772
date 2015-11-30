@@ -1,0 +1,18 @@
+Set intersection is the core in a variety of problems, e.g. frequent itemset
+mining and sparse boolean matrix multiplication. It is well-known that large
+speed gains can, for some computational problems, be obtained by using a
+graphics processing unit (GPU) as a massively parallel computing device.
+However, GPUs require highly regular control flow and memory access patterns,
+and for this reason previous GPU methods for intersecting sets have used a
+simple bitmap representation. This representation requires excessive space on
+sparse data sets. In this paper we present a novel data layout, "BatMap", that
+is particularly well suited for parallel processing, and is compact even for
+sparse data.
+  Frequent itemset mining is one of the most important applications of set
+intersection. As a case-study on the potential of BatMaps we focus on frequent
+pair mining, which is a core special case of frequent itemset mining. The main
+finding is that our method is able to achieve speedups over both Apriori and
+FP-growth when the number of distinct items is large, and the density of the
+problem instance is above 1%. Previous implementations of frequent itemset
+mining on GPU have not been able to show speedups over the best single-threaded
+implementations.

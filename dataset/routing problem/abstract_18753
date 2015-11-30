@@ -1,0 +1,21 @@
+Consider an asynchronous network in a shared-memory environment consisting of
+n nodes. Assume that up to f of the nodes might be Byzantine (n > 12f), where
+the adversary is full-information and dynamic (sometimes called adaptive). In
+addition, the non-Byzantine nodes may undergo transient failures. Nodes advance
+in atomic steps, which consist of reading all registers, performing some
+calculation and writing to all registers.
+  This paper contains three main contributions. First, the clock-function
+problem is defined, which is a generalization of the clock synchronization
+problem. This generalization encapsulates previous clock synchronization
+problem definitions while extending them to the current paper's model. Second,
+a randomized asynchronous self-stabilizing Byzantine tolerant clock
+synchronization algorithm is presented.
+  In the construction of the clock synchronization algorithm, a building block
+that ensures different nodes advance at similar rates is developed. This
+feature is the third contribution of the paper. It is self-stabilizing and
+Byzantine tolerant and can be used as a building block for different algorithms
+that operate in an asynchronous self-stabilizing Byzantine model.
+  The convergence time of the presented algorithm is exponential. Observe that
+in the asynchronous setting the best known full-information dynamic Byzantine
+agreement also has expected exponential convergence time, even though currently
+there is no known reduction between the two.

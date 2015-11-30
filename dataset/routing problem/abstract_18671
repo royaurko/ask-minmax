@@ -1,0 +1,20 @@
+Leader election and arbitrary pattern formation are funda- mental tasks for a
+set of autonomous mobile robots. The former consists in distinguishing a unique
+robot, called the leader. The latter aims in arranging the robots in the plane
+to form any given pattern. The solv- ability of both these tasks turns out to
+be necessary in order to achieve more complex tasks. In this paper, we study
+the relationship between these two tasks in a model, called CORDA, wherein the
+robots are weak in several aspects. In particular, they are fully asynchronous
+and they have no direct means of communication. They cannot remember any
+previous observation nor computation performed in any previous step. Such
+robots are said to be oblivious. The robots are also uniform and anonymous,
+i.e, they all have the same program using no global parameter (such as an
+identity) allowing to differentiate any of them. Moreover, we assume that none
+of them share any kind of common coordinate mechanism or common sense of
+direction and we discuss the influence of a common handedness (i.e.,
+chirality). In such a system, Flochini et al. proved in [11] that it is
+possible to elect a leader for n \geq 3 robots if it is possible to form any
+pattern for n \geq 3. In this paper, we show that the converse is true for n
+\geq 4 when the robots share a common handedness and for n \geq 5 when they do
+not. Thus, we deduce that with chirality (resp. without chirality) both
+problems are equivalent for n \geq 4 (resp. n \geq 5) in CORDA.

@@ -1,0 +1,16 @@
+A new parallel computing framework has been developed to use with
+general-purpose radiation transport codes. The framework was implemented as a
+C++ module that uses MPI for message passing. The module is significantly
+independent of radiation transport codes it can be used with, and is connected
+to the codes by means of a number of interface functions. The frame work was
+integrated with the MARS15 code, and an effort is under way to deploy it in
+PHITS. Besides the parallel computing functionality, the framework offers a
+checkpoint facility that allows restarting calculations with a saved checkpoint
+file. The checkpoint facility can be used in single process calculations as
+well as in the parallel regime. Several checkpoint files can be merged into one
+thus combining results of several calculations. The framework also corrects
+some of the known problems with the sch eduling and load balancing found in the
+original implementations of the parallel computing functionality in MARS15 and
+PHITS. The framework can be used efficiently on homogeneous systems and
+networks of workstations, where the interference from the other users is
+possible.

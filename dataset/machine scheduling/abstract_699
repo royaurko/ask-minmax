@@ -1,0 +1,21 @@
+The Berkeley Open Infrastructure for Network Computing (BOINC) is an open
+source client-server middleware system created to allow projects with large
+computational requirements, usually set in the scientific domain, to utilize a
+technically unlimited number of volunteer machines distributed over large
+physical distances. However various problems exist deploying applications over
+these heterogeneous machines using BOINC: applications must be ported to each
+machine architecture type, the project server must be trusted to supply
+authentic applications, applications that do not regularly checkpoint may lose
+execution progress upon volunteer machine termination and applications that
+have dependencies may find it difficult to run under BOINC.
+  To solve such problems we introduce virtual BOINC, or V-BOINC, where virtual
+machines are used to run computations on volunteer machines. Application
+developers can then compile their applications on a single architecture,
+checkpointing issues are solved through virtualization API's and many security
+concerns are addressed via the virtual machine's sandbox environment. In this
+paper we focus on outlining a unique approach on how virtualization can be
+introduced into BOINC and demonstrate that V-BOINC offers acceptable
+computational performance when compared to regular BOINC. Finally we show that
+applications with dependencies can easily run under V-BOINC in turn increasing
+the computational potential volunteer computing offers to the general public
+and project developers.

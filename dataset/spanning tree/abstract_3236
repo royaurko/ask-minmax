@@ -1,0 +1,25 @@
+In the Multi-Level Aggregation Problem (MLAP), requests arrive at the nodes
+of an edge-weighted tree T . A service is defined as a subtree X of T that
+contains its root. This subtree X services all requests that are pending in the
+nodes of X, and the cost of this service is equal to the total weight of X.
+Each request also incurs waiting cost between its arrival and service times.
+The objective is to minimize the total waiting cost of all requests plus the
+cost of all service sub-trees. MLAP is a generalization of some well-studied
+optimization problems; for example, for trees of depth 1, MLAP is equivalent to
+the TCP Acknowledgement Problem, while for trees of depth 2, it is equivalent
+to the Joint Replenishment Problem. In earlier literature, the waiting cost
+functions are often assumed to be linear; we denote this special case by
+MLAP-L. The model with deadlines, denoted MLAP-D, has also been studied.
+  Our main result is an online algorithm with competitive ratio O(D^42^D),
+where D is the depth of T . This is the first non-trivial competi- tiveness
+bound on trees of depth three or more, not only for MLAP but also for MLAP-D
+and MLAP-L. Previously constant-competitive algorithms were known only for D =
+1, 2.
+  We then consider the restricted case of MLAP when the tree is a path, for
+which we give a lower bound of 4 on the competitive ratio, that applies even to
+MLAP-D and MLAP-L. For MLAP-D, we give a matching upper bound.
+  In addition, we study the Single-Phase MLAP, a variant of MLAP in which all
+requests are revealed at time 0 and they expire at some time {\theta}, not
+known to the online algorithm. The Single- Phase MLAP is a crucial tool in
+lower-bound proofs for MLAP. For the Single-Phase MLAP we give an online
+algorithm with optimal competitive ratio 4.

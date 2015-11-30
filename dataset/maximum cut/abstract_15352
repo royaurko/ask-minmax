@@ -1,0 +1,13 @@
+Sliding window is one direct way to extend a successful recognition system to
+handle the more challenging detection problem. While action recognition decides
+only whether or not an action is present in a pre-segmented video sequence,
+action detection identifies the time interval where the action occurred in an
+unsegmented video stream. Sliding window approaches for action detection can
+however be slow as they maximize a classifier score over all possible
+sub-intervals. Even though new schemes utilize dynamic programming to speed up
+the search for the optimal sub-interval, they require offline processing on the
+whole video sequence. In this paper, we propose a novel approach for online
+action detection based on 3D skeleton sequences extracted from depth data. It
+identifies the sub-interval with the maximum classifier score in linear time.
+Furthermore, it is invariant to temporal scale variations and is suitable for
+real-time applications with low latency.

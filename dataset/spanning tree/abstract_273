@@ -1,0 +1,17 @@
+Searching in P2P networks is fundamental to all overlay networks.
+  P2P networks based on Distributed Hash Tables (DHT) are optimized for single
+key lookups, whereas unstructured networks offer more complex queries at the
+cost of increased traffic and uncertain success rates. Our Distributed Tree
+Construction (DTC) approach enables structured P2P networks to perform prefix
+search, range queries, and multicast in an optimal way. It achieves this by
+creating a spanning tree over the peers in the search area, using only
+information available locally on each peer. Because DTC creates a spanning
+tree, it can query all the peers in the search area with a minimal number of
+messages. Furthermore, we show that the tree depth has the same upper bound as
+a regular DHT lookup which in turn guarantees fast and responsive runtime
+behavior. By placing objects with a region quadtree, we can perform a prefix
+search or a range query in a freely selectable area of the DHT. Our DTC
+algorithm is DHT-agnostic and works with most existing DHTs. We evaluate the
+performance of DTC over several DHTs by comparing the performance to existing
+application-level multicast solutions, we show that DTC sends 30-250% fewer
+messages than common solutions.

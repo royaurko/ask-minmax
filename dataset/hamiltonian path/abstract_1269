@@ -1,0 +1,12 @@
+Standard algorithms for finding the shortest path in a graph require that the
+cost of a path be additive in edge costs, and typically assume that costs are
+deterministic. We consider the problem of uncertain edge costs, with potential
+probabilistic dependencies among the costs. Although these dependencies violate
+the standard dynamic-programming decomposition, we identify a weaker stochastic
+consistency condition that justifies a generalized dynamic-programming approach
+based on stochastic dominance. We present a revised path-planning algorithm and
+prove that it produces optimal paths under time-dependent uncertain costs. We
+test the algorithm by applying it to a model of stochastic bus networks, and
+present empirical performance results comparing it to some alternatives.
+Finally, we consider extensions of these concepts to a more general class of
+problems of heuristic search under uncertainty.

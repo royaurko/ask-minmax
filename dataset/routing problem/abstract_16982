@@ -1,0 +1,17 @@
+In 2008, Ben-Amram, Jones and Kristiansen showed that for a simple "core"
+programming language - an imperative language with bounded loops, and
+arithmetics limited to addition and multiplication - it was possible to decide
+precisely whether a program had certain growth-rate properties, namely
+polynomial (or linear) bounds on computed values, or on the running time.
+  This work emphasized the role of the core language in mitigating the
+notorious undecidability of program properties, so that one deals with
+decidable problems.
+  A natural and intriguing problem was whether more elements can be added to
+the core language, improving its utility, while keeping the growth-rate
+properties decidable. In particular, the method presented could not handle a
+command that resets a variable to zero. This paper shows how to handle resets.
+The analysis is given in a logical style (proof rules), and its complexity is
+shown to be PSPACE-complete (in contrast, without resets, the problem was
+PTIME). The analysis algorithm evolved from the previous solution in an
+interesting way: focus was shifted from proving a bound to disproving it, and
+the algorithm works top-down rather than bottom-up.

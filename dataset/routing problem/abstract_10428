@@ -1,0 +1,20 @@
+Case-Based Planning (CBP) provides a way of scaling up domain-independent
+planning to solve large problems in complex domains. It replaces the detailed
+and lengthy search for a solution with the retrieval and adaptation of previous
+planning experiences. In general, CBP has been demonstrated to improve
+performance over generative (from-scratch) planning. However, the performance
+improvements it provides are dependent on adequate judgements as to problem
+similarity. In particular, although CBP may substantially reduce planning
+effort overall, it is subject to a mis-retrieval problem. The success of CBP
+depends on these retrieval errors being relatively rare. This paper describes
+the design and implementation of a replay framework for the case-based planner
+DERSNLP+EBL. DERSNLP+EBL extends current CBP methodology by incorporating
+explanation-based learning techniques that allow it to explain and learn from
+the retrieval failures it encounters. These techniques are used to refine
+judgements about case similarity in response to feedback when a wrong decision
+has been made. The same failure analysis is used in building the case library,
+through the addition of repairing cases. Large problems are split and stored as
+single goal subproblems. Multi-goal problems are stored only when these smaller
+cases fail to be merged into a full solution. An empirical evaluation of this
+approach demonstrates the advantage of learning from experienced retrieval
+failure.

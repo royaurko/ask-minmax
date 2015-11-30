@@ -1,0 +1,15 @@
+In this paper we consider neighborhood load balancing in the context of
+selfish clients. We assume that a network of n processors and m tasks is given.
+The processors may have different speeds and the tasks may have different
+weights. Every task is controlled by a selfish user. The objective of the user
+is to allocate his/her task to a processor with minimum load. We revisit the
+concurrent probabilistic protocol introduced in [6], which works in sequential
+rounds. In each round every task is allowed to query the load of one randomly
+chosen neighboring processor. If that load is smaller the task will migrate to
+that processor with a suitably chosen probability. Using techniques from
+spectral graph theory we obtain upper bounds on the expected convergence time
+towards approximate and exact Nash equilibria that are significantly better
+than the previous results in [6]. We show results for uniform tasks on
+non-uniform processors and the general case where the tasks have different
+weights and the machines have speeds. To the best of our knowledge, these are
+the first results for this general setting.

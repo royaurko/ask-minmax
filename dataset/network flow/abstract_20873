@@ -1,0 +1,21 @@
+Given a set ${\cal V}$ of $n$ sensor node distributed on a 2-dimensional
+plane and a source node $s \in {\cal V}$, the {\it interference problem} deals
+with assigning transmission range to each $v \in {\cal V}$ such that the
+members in ${\cal V}$ maintain connectivity predicate ${\cal P}$, and the
+maximum/total interference is minimum. We propose algorithm for both {\it
+minimizing maximum interference} and {\it minimizing total interference} of the
+networks. For minimizing maximum interference we present optimum solution with
+running time $O(({\cal P}_n + n^2) \log n)$ for connectivity predicate ${\cal
+P}$ like strong connectivity, broadcast ($s$ is the source), $k$-edge(vertex)
+connectivity, spanner, where $O({\cal P}_n)$ is the time complexity for
+checking the connectivity predicate ${\cal P}$. The running time of the
+previous best known solution was $O({\cal P}_n \times n^2)$ [Bil$\grave{o}$ and
+Proietti, 2008].
+  For the minimizing total interference we propose optimum algorithm for the
+connectivity predicate broadcast. The running time of the propose algorithm is
+O(n). For the same problem, the previous best known result was $2(1 + \ln
+(n-1))$-factor approximation algorithm [Bil$\grave{o}$ and Proietti, 2008]. We
+also propose a heuristic for minimizing total interference in the case of
+strongly connected predicate and compare our result with the best result
+available in the literature. Experimental results demonstrate that our
+heuristic outperform existing result.

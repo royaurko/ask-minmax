@@ -1,0 +1,13 @@
+We propose an optimization algorithm for computing geodesics on the universal
+Teichm\"uller space T(1) in the Weil-Petersson ($W P$) metric. Another
+realization for T(1) is the space of planar shapes, modulo translation and
+scale, and thus our algorithm addresses a fundamental problem in computer
+vision: compute the distance between two given shapes. The identification of
+smooth shapes with elements on T(1) allows us to represent a shape as a
+diffeomorphism on $S^1$. Then given two diffeomorphisms on $S^1$ (i.e., two
+shapes we want connect with a flow), we formulate a discretized $W P$ energy
+and the resulting problem is a boundary-value minimization problem. We
+numerically solve this problem, providing several examples of geodesic flow on
+the space of shapes, and verifying mathematical properties of T(1). Our
+algorithm is more general than the application here in the sense that it can be
+used to compute geodesics on any other Riemannian manifold.

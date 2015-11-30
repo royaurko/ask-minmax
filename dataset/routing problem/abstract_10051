@@ -1,0 +1,16 @@
+After intensive research, heterogenous face recognition is still a
+challenging problem. The main difficulties are owing to the complex
+relationship between heterogenous face image spaces. The heterogeneity is
+always tightly coupled with other variations, which makes the relationship of
+heterogenous face images highly nonlinear. Many excellent methods have been
+proposed to model the nonlinear relationship, but they apt to overfit to the
+training set, due to limited samples. Inspired by the unsupervised algorithms
+in deep learning, this paper proposes an novel framework for heterogeneous face
+recognition. We first extract Gabor features at some localized facial points,
+and then use Restricted Boltzmann Machines (RBMs) to learn a shared
+representation locally to remove the heterogeneity around each facial point.
+Finally, the shared representations of local RBMs are connected together and
+processed by PCA. Two problems (Sketch-Photo and NIR-VIS) and three databases
+are selected to evaluate the proposed method. For Sketch-Photo problem, we
+obtain perfect results on the CUFS database. For NIR-VIS problem, we produce
+new state-of-the-art performance on the CASIA HFB and NIR-VIS 2.0 databases.

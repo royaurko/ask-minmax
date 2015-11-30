@@ -1,0 +1,12 @@
+This paper considers properties of an optimization based sampler for
+targeting the posterior distribution when the likelihood is intractable and
+auxiliary statistics are used to summarize information in the data. Our reverse
+sampler approximates the likelihood-based posterior distribution by solving a
+sequence of simulated minimum distance problems. By a change of variable
+argument, these estimates are reweighted with a prior and the volume of the
+jacobian matrix to serve as draws from the desired posterior distribution. The
+sampler provides a conceptual framework to understand the difference between
+two types of likelihood free estimation. Because simulated minimum distance
+estimation always results in acceptable draws, the reverse sampler is
+potentially an alternative to existing approximate Bayesian methods that are
+computationally demanding because of a low acceptance rate.

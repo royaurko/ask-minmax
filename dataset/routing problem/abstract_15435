@@ -1,0 +1,20 @@
+We consider least squares semidefinite programming (LSSDP) where the primal
+matrix variable must satisfy given linear equality and inequality constraints,
+and must also lie in the intersection of the cone of symmetric positive
+semidefinite matrices and a simple polyhedral set. We propose an inexact
+accelerated block coordinate descent (ABCD) method for solving LSSDP via its
+dual, which can be reformulated as a convex composite minimization problem
+whose objective is the sum of a coupled quadratic function involving four
+blocks of variables and two separable non-smooth functions involving only the
+first and second block, respectively. Our inexact ABCD method has the
+attractive $O(1/k^2)$ iteration complexity if the subproblems are solved
+progressively more accurately. The design of our ABCD method relies on recent
+advances in the symmetric Gauss-Seidel technique for solving a convex
+minimization problem whose objective is the sum of a multi-block quadratic
+function and a non-smooth function involving only the first block. Extensive
+numerical experiments on various classes of over 600 large scale LSSDP problems
+demonstrate that our proposed ABCD method not only can solve the problems to
+high accuracy, but it is also far more efficient than (a) the well known BCD
+(block coordinate descent) method, (b) the eARBCG (an enhanced version of the
+accelerated randomized block coordinate gradient) method, and (c) the APG
+(accelerated proximal gradient) method.

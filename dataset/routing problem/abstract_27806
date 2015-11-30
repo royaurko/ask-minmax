@@ -1,0 +1,14 @@
+Solving Markov Decision Processes (MDPs) is a recurrent task in engineering.
+Even though it is known that solutions for minimizing the infinite horizon
+expected reward can be found in polynomial time using Linear Programming
+techniques, iterative methods like the Policy Iteration algorithm (PI) remain
+usually the most efficient in practice. This method is guaranteed to converge
+in a finite number of steps. Unfortunately, it is known that it may require an
+exponential number of steps in the size of the problem to converge. On the
+other hand, many open questions remain considering the actual worst case
+complexity. In this work, we provide the first improvement over the fifteen
+years old upper bound from Mansour & Singh (1999) by showing that PI requires
+at most k/(k-1)*k^n/n + o(k^n/n) iterations to converge, where n is the number
+of states of the MDP and k is the maximum number of actions per state. Perhaps
+more importantly, we also show that this bound is optimal for an important
+relaxation of the problem.

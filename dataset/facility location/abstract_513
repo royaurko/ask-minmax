@@ -1,0 +1,21 @@
+With the increasing popularity of GPS-enabled hand-held devices,
+location-based applications and services have access to accurate and real-time
+location information, raising serious privacy concerns for their millions of
+users. Trying to address these issues, the notion of geo-indistinguishability
+was recently introduced, adapting the well-known concept of Differential
+Privacy to the area of location-based systems. A Laplace-based obfuscation
+mechanism satisfying this privacy notion works well in the case of a sporadic
+use; Under repeated use, however, independently applying noise leads to a quick
+loss of privacy due to the correlation between the location in the trace.
+  In this paper we show that correlations in the trace can be in fact exploited
+in terms of a prediction function that tries to guess the new location based on
+the previously reported locations. The proposed mechanism tests the quality of
+the predicted location using a private test; in case of success the prediction
+is reported otherwise the location is sanitized with new noise. If there is
+considerable correlation in the input trace, the extra cost of the test is
+small compared to the savings in budget, leading to a more efficient mechanism.
+  We evaluate the mechanism in the case of a user accessing a location-based
+service while moving around in a city. Using a simple prediction function and
+two budget spending stategies, optimizing either the utility or the budget
+consumption rate, we show that the predictive mechanim can offer substantial
+improvements over the independently applied noise.

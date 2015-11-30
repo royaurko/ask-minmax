@@ -1,0 +1,20 @@
+We present three new approximation algorithms with improved constant ratios
+for selecting $n$ points in $n$ disks such that the minimum pairwise distance
+among the points is maximized.
+  (1) A very simple $O(n\log n)$-time algorithm with ratio $0.511$ for disjoint
+unit disks.
+  (2) An LP-based algorithm with ratio $0.707$ for disjoint disks of arbitrary
+radii that uses a linear number of variables and constraints, and runs in
+polynomial time.
+  (3) A hybrid algorithm with ratio either $0.4487$ or $0.4674$ for (not
+necessarily disjoint) unit disks that uses an algorithm of Cabello in
+combination with either the simple $O(n\log n)$-time algorithm or the LP-based
+algorithm.
+  The LP algorithm can be extended for disjoint balls of arbitrary radii in
+$\RR^d$, for any (fixed) dimension $d$, while preserving the features of the
+planar algorithm. The algorithm introduces a novel technique which combines
+linear programming and projections for approximating Euclidean distances. The
+previous best approximation ratio for dispersion in disjoint disks, even when
+all disks have the same radius, was $1/2$. Our results give a partial answer to
+an open question raised by Cabello, who asked whether the ratio $1/2$ could be
+improved.

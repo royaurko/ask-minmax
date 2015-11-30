@@ -1,0 +1,25 @@
+We consider the problem of energy-efficient transmission in delay constrained
+cooperative multihop wireless networks. The combinatorial nature of cooperative
+multihop schemes makes it difficult to design efficient polynomial-time
+algorithms for deciding which nodes should take part in cooperation, and when
+and with what power they should transmit. In this work, we tackle this problem
+in memoryless networks with or without delay constraints, i.e., quality of
+service guarantee. We analyze a wide class of setups, including unicast,
+multicast, and broadcast, and two main cooperative approaches, namely: energy
+accumulation (EA) and mutual information accumulation (MIA). We provide a
+generalized algorithmic formulation of the problem that encompasses all those
+cases. We investigate the similarities and differences of EA and MIA in our
+generalized formulation. We prove that the broadcast and multicast problems
+are, in general, not only NP hard but also o(log(n)) inapproximable. We break
+these problems into three parts: ordering, scheduling and power control, and
+propose a novel algorithm that, given an ordering, can optimally solve the
+joint power allocation and scheduling problems simultaneously in polynomial
+time. We further show empirically that this algorithm used in conjunction with
+an ordering derived heuristically using the Dijkstra's shortest path algorithm
+yields near-optimal performance in typical settings. For the unicast case, we
+prove that although the problem remains NP hard with MIA, it can be solved
+optimally and in polynomial time when EA is used. We further use our algorithm
+to study numerically the trade-off between delay and power-efficiency in
+cooperative broadcast and compare the performance of EA vs MIA as well as the
+performance of our cooperative algorithm with a smart noncooperative algorithm
+in a broadcast setting.

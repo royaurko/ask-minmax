@@ -1,0 +1,22 @@
+The combinatorics of RNA plays a central role in biology. Mathematical
+biologists have several commonly-used models for RNA: words in a fixed alphabet
+(representing the primary sequence of nucleotides) and plane trees
+(representing the secondary structure, or folding of the RNA sequence). This
+paper considers an augmented version of the standard model of plane trees, one
+that incorporates some observed constraints on how the folding can occur. In
+particular we assume the alphabet consists of complementary pairs, for instance
+the Watson-Crick pairs A-U and C-G of RNA.
+  Given a word in the alphabet, a valid plane tree is a tree for which, when
+the word is folded around the tree, each edge matchs two complementary letters.
+Consider the graph whose vertices are valid plane trees for a fixed word and
+whose edges are given by Condon, Heitsch, and Hoos's local moves. We prove this
+graph is connected.
+  We give an explicit algorithm to construct a valid plane tree from a primary
+sequence, assuming that at least one valid plane tree exists. The tree produced
+by our algorithm has other useful characterizations, including a uniqueness
+condition defined by local moves. We also study enumerative properties of valid
+plane trees, analyzing how the number of valid plane trees depends on the
+choice of sequence length and alphabet size. Finally we show that words with at
+least one valid plane tree are unusual, in the sense that the proportion of
+words with at least one valid plane tree goes to zero as the word size
+increases. Open questions and conjectures are given throughout the document.

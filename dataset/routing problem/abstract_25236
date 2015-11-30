@@ -1,0 +1,15 @@
+In a non supervised Bayesian estimation approach for inverse problems in
+imaging systems, one tries to estimate jointly the unknown image pixels $\fb$
+and the hyperparameters $\thetab$. This is, in general, done through the joint
+posterior law $p(\fb,\thetab|\gb)$. The expression of this joint law is often
+very complex and its exploration through sampling and computation of the point
+estimators such as MAP and posterior means need either optimization of non
+convex criteria or int\'egration of non Gaussian and multi variate probability
+laws. In any of these cases, we need to do approximations. We had explored
+before the possibilities of Laplace approximation and sampling by MCMC. In this
+paper, we explore the possibility of approximating this joint law by a
+separable one in $\fb$ and in $\thetab$. This gives the possibility of
+developing iterative algorithms with more reasonable computational cost, in
+particular, if the approximating laws are choosed in the exponential conjugate
+families. The main objective of this paper is to give details of different
+algorithms we obtain with different choices of these families.

@@ -1,0 +1,12 @@
+In the vertex connectivity survivable network design problem we are given an
+undirected graph G = (V,E) and connectivity requirement r(u,v) for each pair of
+vertices u,v. We are also given a cost function on the set of edges. Our goal
+is to find the minimum cost subset of edges such that for every pair (u,v) of
+vertices we have r(u,v) vertex disjoint paths in the graph induced by the
+chosen edges. Recently, Chuzhoy and Khanna presented a randomized algorithm
+that achieves a factor of O(k^3 log n) for this problem where k is the maximum
+connectivity requirement. In this paper we derandomize their algorithm to get a
+deterministic O(k^3 log n) factor algorithm. Another problem of interest is the
+single source version of the problem, where there is a special vertex s and all
+non-zero connectivity requirements must involve s. We also give a deterministic
+O(k^2 log n) algorithm for this problem.

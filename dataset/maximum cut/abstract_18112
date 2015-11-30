@@ -1,0 +1,22 @@
+The molecular dynamics simulation package GROMACS runs efficiently on a wide
+variety of hardware from commodity workstations to high performance computing
+clusters. Hardware features are well exploited with a combination of SIMD,
+multi-threading, and MPI-based SPMD/MPMD parallelism, while GPUs can be used as
+accelerators to compute interactions offloaded from the CPU. Here we evaluate
+which hardware produces trajectories with GROMACS 4.6 or 5.0 in the most
+economical way. We have assembled and benchmarked compute nodes with various
+CPU/GPU combinations to identify optimal compositions in terms of raw
+trajectory production rate, performance-to-price ratio, energy efficiency, and
+several other criteria. Though hardware prices are naturally subject to trends
+and fluctuations, general tendencies are clearly visible. Adding any type of
+GPU significantly boosts a node's simulation performance. For inexpensive
+consumer-class GPUs this improvement equally reflects in the
+performance-to-price ratio. Although memory issues in consumer-class GPUs could
+pass unnoticed since these cards do not support ECC memory, unreliable GPUs can
+be sorted out with memory checking tools. Apart from the obvious determinants
+for cost-efficiency like hardware expenses and raw performance, the energy
+consumption of a node is a major cost factor. Over the typical hardware
+lifetime until replacement of a few years, the costs for electrical power and
+cooling can become larger than the costs of the hardware itself. Taking that
+into account, nodes with a well-balanced ratio of CPU and consumer-class GPU
+resources produce the maximum amount of GROMACS trajectory over their lifetime.

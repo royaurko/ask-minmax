@@ -1,0 +1,23 @@
+One of the fundamental concepts in Grid computing is the creation of Virtual
+Organizations (VO's): a set of resource consumers and providers that join
+forces to solve a common problem. Typical examples of Virtual Organizations
+include collaborations formed around the Large Hadron Collider (LHC)
+experiments. To date, Grid computing has been applied on a relatively small
+scale, linking dozens of users to a dozen resources, and management of these
+VO's was a largely manual operation. With the advance of large collaboration,
+linking more than 10000 users with a 1000 sites in 150 counties, a
+comprehensive, automated management system is required. It should be simple
+enough not to deter users, while at the same time ensuring local site autonomy.
+The VO Management Service (VOMS), developed by the EU DataGrid and DataTAG
+projects[1, 2], is a secured system for managing contributorization for users and
+resources in virtual organizations. It extends the existing Grid Security
+Infrastructure[3] architecture with embedded VO affiliation assertions that can
+be independently verified by all VO members and resource providers. Within the
+EU DataGrid project, Grid services for job submission, file- and database
+access are being equipped with fine- grained contributorization systems that take VO
+membership into account. These also give resource owners the ability to ensure
+site security and enforce local access policies. This paper will describe the
+EU DataGrid security architecture, the VO membership service and the local site
+enforcement mechanisms Local Centre Authorization Service (LCAS), Local
+Credential Mapping Service(LCMAPS) and the Java Trust and Authorization
+Manager.

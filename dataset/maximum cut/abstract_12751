@@ -1,0 +1,14 @@
+Suppose we have an n-qubit system, and we are given a collection of local
+density matrices rho_1,...,rho_m, where each rho_i describes some subset of the
+qubits. We say that rho_1,...,rho_m are "consistent" if there exists a global
+state sigma (on all n qubits) whose reduced density matrices match
+rho_1,...,rho_m.
+  We prove the following result: if rho_1,...,rho_m are consistent with some
+state sigma > 0, then they are also consistent with a state sigma' of the form
+sigma' = (1/Z) exp(M_1+...+M_m), where each M_i is a Hermitian matrix acting on
+the same qubits as rho_i, and Z is a normalizing factor. (This is known as a
+Gibbs state.) Actually, we show a more general result, on the consistency of a
+set of expectation values <T_1>,...,<T_r>, where the observables T_1,...,T_r
+need not commute. This result was previously proved by Jaynes (1957) in the
+context of the maximum-entropy principle; here we provide a somewhat different
+proof, using properties of the partition function.

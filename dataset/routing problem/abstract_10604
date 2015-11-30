@@ -1,0 +1,21 @@
+With the current burst of network theory (especially in connection with
+social and biological networks) there is a renewed interest on realizations of
+given degree sequences. In this paper we propose an essentially new degree
+sequence problem: we want to find graphical realizations of a given degree
+sequence on labeled vertices, where certain would-be edges are {\em forbidden}.
+Then we want to sample uniformly and efficiently all these possible
+realizations. (This problem can be considered as a special case of Tutte's
+$f$-factor problem, however it has a favorable sampling speed.)
+  We solve this {\em restricted degree sequence} (or RDS for short) problem
+completely if the forbidden edges form a bipartite graph, which consist of the
+union of a (not necessarily maximal) 1-factor and a (possible empty) star. Then
+we show how one can sample the space of all realizations of these RDSs
+uniformly and efficiently when the degree sequence describes a {\em
+half-regular} bipartite graph. Our result contains, as special cases, the
+well-known result of Kannan, Tetali and Vempala on sampling regular bipartite
+graphs and a recent result of Greenhill on sampling regular directed graphs (so
+it also provides new proofs of them).
+  The RDS problem descried above is self-reducible, therefore our {\em fully
+polynomial almost uniform sampler} (a.k.a. FPAUS) on the space of all
+realizations also provides a {\em fully polynomial randomized approximation
+scheme} (a.k.a. FPRAS) for approximate counting of all realizations.

@@ -1,0 +1,19 @@
+Modal dependence logic was introduced recently by V\"a\"an\"anen. It enhances
+the basic modal language by an operator =(). For propositional variables
+p_1,...,p_n, =(p_1,...,p_(n-1);p_n) intuitively states that the value of p_n is
+determined by those of p_1,...,p_(n-1). Sevenster (J. Logic and Computation,
+2009) showed that satisfiability for modal dependence logic is complete for
+nondeterministic exponential time. In this paper we consider fragments of modal
+dependence logic obtained by restricting the set of allowed propositional
+connectives. We show that satisfibility for poor man's dependence logic, the
+language consisting of formulas built from literals and dependence atoms using
+conjunction, necessity and possibility (i.e., disallowing disjunction), remains
+NEXPTIME-complete. If we only allow monotone formulas (without negation, but
+with disjunction), the complexity drops to PSPACE-completeness. We also extend
+V\"a\"an\"anen's language by allowing classical disjunction besides dependence
+disjunction and show that the satisfiability problem remains NEXPTIME-complete.
+If we then disallow both negation and dependence disjunction, satistiability is
+complete for the second level of the polynomial hierarchy. In this way we
+completely classify the computational complexity of the satisfiability problem
+for all restrictions of propositional and dependence operators considered by
+V\"a\"an\"anen and Sevenster.

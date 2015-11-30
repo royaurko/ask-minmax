@@ -1,0 +1,17 @@
+In this paper we consider the problem of finding a vector that can be written
+as a nonnegative integer linear combination of given 0-1 vectors, the
+generators, such that the l_1-distance between this vector and a given target
+vector is minimized. We prove that this closest vector problem is NP-hard to
+approximate within a O(d) additive error, where d is the dimension of the
+ambient vector space. We show that the problem can be approximated within a
+O(d^{3/2}) additive error in polynomial time, by rounding an optimal solution
+of a natural LP relaxation for the problem. We also observe that in the
+particular case where the target vector is integer and the generators form a
+totally unimodular matrix, the problem can be solved in polynomial time.
+  The closest vector problem arises in the elaboration of radiation therapy
+plans. In this context, the target is a nonnegative integer matrix and the
+generators are certain 0-1 matrices whose rows satisfy the consecutive ones
+property. Here we mainly consider the version of the problem in which the set
+of generators comprises all those matrices that have on each nonzero row a
+number of ones that is at least a certain constant. This set of generators
+encodes the so-called minimum separation constraint.

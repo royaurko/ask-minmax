@@ -1,0 +1,18 @@
+Paper addresses the process of dynamic data flow analysis using virtual code
+integration (VCI), often refered to as dynamic binary rewriting. This article
+will try to demonstrate all of the techniques that were applied in the
+SpiderPig project. It will also discuss the main differences between the
+methods that were employed and those used in other available software, as well
+as introducing other related work. SpiderPig's approach was found to be very
+fast and was transparent enough for reliable and usable data flow analysis. It
+was created with the purpose of providing a tool which would aid vulnerability
+and security researchers with tracing and analyzing any necessary data and its
+further propagation through a program. At the current state it works on IA-32
+platforms with Microsoft Windows systems and it supports FPU, SSE, MMX and all
+of the IA-32 general instructions. SpiderPig also demonstrates the usage of a
+virtual code integration (VCI) framework which allows for modifying the target
+application code at the instruction level. By this I mean that the VCI
+framework allows for custom code insertion, original code modification and full
+customization of the original application's code. Instructions can be swapped
+out, deleted or modified at a whim, without corrupting the surrounding code and
+side-effects of the modification are resolved.

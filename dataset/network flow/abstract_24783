@@ -1,0 +1,18 @@
+In this work, we present an extension to the context of Stochastic Reaction
+Networks (SRNs) of the forward-reverse representation introduced in "Simulation
+of forward-reverse stochastic representations for conditional diffusions", a
+2014 paper by Bayer and Schoenmakers. We apply this stochastic representation
+in the computation of efficient approximations of expected values of
+functionals of SNR bridges, i.e., SRNs conditioned to its values in the
+extremes of given time-intervals. We then employ this SNR bridge-generation
+technique to the statistical inference problem of approximating the reaction
+propensities based on discretely observed data. To this end, we introduce a
+two-phase iterative inference method in which, during phase I, we solve a set
+of deterministic optimization problems where the SRNs are replaced by their
+reaction-rate Ordinary Differential Equations (ODEs) approximation; then,
+during phase II, we apply the Monte Carlo version of the
+Expectation-Maximization (EM) algorithm starting from the phase I output. By
+selecting a set of over dispersed seeds as initial points for phase I, the
+output of parallel runs from our two-phase method is a cluster of approximate
+maximum likelihood estimates. Our results are illustrated by numerical
+examples.

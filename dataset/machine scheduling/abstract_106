@@ -1,0 +1,14 @@
+Modern languages are typically supported by managed runtimes (Virtual
+Machines). Since VMs have to deal with many concepts such as memory management,
+abstract execution model and scheduling, they tend to be very complex.
+Additionally, VMs have to meet strong performance requirements. This demand of
+performance is one of the main reasons why many VMs are built statically. Thus,
+design decisions are frozen at compile time preventing changes at runtime. One
+clear example is the impossibility to dynamically adapt or change primitives of
+the VM once it has been compiled. In this work we present a toolchain that
+allows for altering and configuring components such as primitives and plug-ins
+at runtime. The main contribution is Waterfall, a dynamic and reflective
+translator from Slang, a restricted subset of Smalltalk, to native code.
+Waterfall generates primitives on demand and executes them on the fly. We
+validate our approach by implementing dynamic primitive modification and
+runtime customization of VM plug-ins.

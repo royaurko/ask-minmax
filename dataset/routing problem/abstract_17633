@@ -1,0 +1,15 @@
+In the problem of reliable multiparty computation (RC), there are $n$
+parties, each with an individual input, and the parties want to jointly compute
+a function $f$ over $n$ inputs. The problem is complicated by the fact that an
+omniscient adversary controls a hidden fraction of the parties.
+  We describe a self-healing algorithm for this problem. In particular, for a
+fixed function $f$, with $n$ parties and $m$ gates, we describe how to perform
+RC repeatedly as the inputs to $f$ change. Our algorithm maintains the
+following properties, even when an adversary controls up to $t \leq
+(\frac{1}{4} - \epsilon) n$ parties, for any constant $\epsilon >0$. First, our
+algorithm performs each reliable computation with the following amortized
+resource costs: $O(m + n \log n)$ messages, $O(m + n \log n)$ computational
+operations, and $O(\ell)$ latency, where $\ell$ is the depth of the circuit
+that computes $f$. Second, the expected total number of corruptions is $O(t
+(\log^{*} m)^2)$, after which the adversarially controlled parties are
+effectively quarantined so that they cause no more corruptions.

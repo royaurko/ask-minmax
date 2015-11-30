@@ -1,0 +1,9 @@
+We introduce a new technique to bound the asymptotic performance of splay
+trees. The basic idea is to transcribe, in an indirect fashion, the rotations
+performed by the splay tree as a Davenport-Schinzel sequence S, none of whose
+subsequences are isomorphic to fixed forbidden subsequence. We direct this
+technique towards Tarjan's deque conjecture and prove that n deque operations
+require O(n alpha^*(n)) time, where alpha^*(n) is the minimum number of
+applications of the inverse-Ackermann function mapping n to a constant. We are
+optimistic that this approach could be directed towards other open conjectures
+on splay trees such as the traversal and split conjectures.

@@ -1,0 +1,11 @@
+The CLP scheme uses Horn clauses and SLD resolution to generate multiple
+constraint satisfaction problems (CSPs). The possible CSPs include rational
+trees (giving Prolog) and numerical algorithms for solving linear equations and
+linear programs (giving CLP(R)). In this paper we develop a form of CSP for
+interval constraints. In this way one obtains a logic semantics for the
+efficient floating-point hardware that is available on most computers.
+  The need for the method arises because in the practice of scheduling and
+engineering design it is not enough to solve a single CSP. Ideally one should
+be able to consider thousands of CSPs and efficiently solve them or show them
+to be unsolvable. This is what CLP/NCSP, the new subscheme of CLP described in
+this paper is designed to do.

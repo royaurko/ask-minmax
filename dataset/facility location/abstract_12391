@@ -1,0 +1,16 @@
+It is of increasing importance to develop learning methods for ranking. In
+contrast to many learning objectives, however, the ranking problem presents
+difficulties due to the fact that the space of permutations is not smooth. In
+this paper, we examine the class of rank-linear objective functions, which
+includes popular metrics such as precision and discounted cumulative gain. In
+particular, we observe that expectations of these gains are completely
+characterized by the marginals of the corresponding distribution over
+permutation matrices. Thus, the expectations of rank-linear objectives can
+always be described through locations in the Birkhoff polytope, i.e.,
+doubly-stochastic matrices (DSMs). We propose a technique for learning
+DSM-based ranking functions using an iterative projection operator known as
+Sinkhorn normalization. Gradients of this operator can be computed via
+backpropagation, resulting in an algorithm we call Sinkhorn propagation, or
+SinkProp. This approach can be combined with a wide range of gradient-based
+approaches to rank learning. We demonstrate the utility of SinkProp on several
+information retrieval data sets.

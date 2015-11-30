@@ -1,0 +1,23 @@
+The calibration of a PointQ arterial microsimulation model is formulated as a
+quadratic programming problem (QP) whose decision variables are link flows,
+demands at entry links, and turn movements at intersections, subject to linear
+constraints imposed by flow conservation identities and field measurements of a
+subset of link flows (counts), demands and turn ratios. The quadratic objective
+function is the deviation of the decision variables from their measured values.
+The solution to the QP gives estimates of all unmeasured variables and thus
+yields a fully specified simulation model. Runs of this simulation model can
+then be compared with other field measurements, such as travel times along
+routes, to judge the reliability of the calibrated model. A section of the
+Huntington-Colorado arterial near I-210 in Los Angeles comprising 73 links and
+16 intersections is used to illustrate the procedure. Two experiments are
+conducted with the calibrated model to determine the maximum traffic that can
+be diverted from the I-210 freeway to the arterial network, with and without
+permitting changes in the timing plans. The maximum diversion in both cases is
+obtained by solving a linear programming problem. A third experiment compares
+the delay and travel time using the existing fixed time control and a max
+pressure control. The fourth experiment compares two PointQ models: in the
+first model the freeway traffic follows a pre-specified route while the
+background traffic moves according to turn ratios, and in the second model turn
+ratios are modified in a single commodity model to match the link flows. The
+substantial modification of the turn ratios needed suggests that the use of a
+single-commodity model as frequently done in CTM models can be misleading...

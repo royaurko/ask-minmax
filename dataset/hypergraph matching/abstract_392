@@ -1,0 +1,11 @@
+We present a recursive way to partition hypergraphs which creates and
+exploits hypergraph geometry and is suitable for many-core parallel
+architectures. Such partitionings are then used to bring sparse matrices in a
+recursive Bordered Block Diagonal form (for processor-oblivious parallel LU
+decomposition) or recursive Separated Block Diagonal form (for cache-oblivious
+sparse matrix-vector multiplication). We show that the quality of the obtained
+partitionings and orderings is competitive by comparing obtained fill-in for LU
+decomposition with SuperLU (with better results for 8 of the 28 test matrices)
+and comparing cut sizes for sparse matrix-vector multiplication with Mondriaan
+(with better results for 4 of the 12 test matrices). The main advantage of the
+new method is its speed: it is on average 21.6 times faster than Mondriaan.

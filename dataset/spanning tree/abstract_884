@@ -1,0 +1,21 @@
+A graph $G=(V,E)$ is called $(k,\ell)$-full if $G$ contains a subgraph
+$H=(V,F)$ of $k|V|-\ell$ edges such that, for any non-empty $F' \subseteq F$,
+$|F'| \leq k|V(F')| - \ell$ holds. Here, $V(F')$ denotes the set of vertices
+incident to $F'$. It is known that the family of edge sets of $(k,\ell)$-full
+graphs forms a family of matroid, known as the sparsity matroid of $G$. In this
+paper, we give a constant-time approximation algorithm for the rank of the
+sparsity matroid of a degree-bounded undirected graph. This leads to a
+constant-time tester for $(k,\ell)$-fullness in the bounded-degree model,
+(i.e., we can decide with high probability whether an input graph satisfies a
+property $P$ or far from $P$). Depending on the values of $k$ and $\ell$, it
+can test various properties of a graph such as connectivity, rigidity, and how
+many spanning trees can be packed. Based on this result, we also propose a
+constant-time tester for $(k,\ell)$-edge-connected-orientability in the
+bounded-degree model, where an undirected graph $G$ is called
+$(k,\ell)$-edge-connected-orientable if there exists an orientation $\vec{G}$
+of $G$ with a vertex $r \in V$ such that $\vec{G}$ contains $k$ arc-disjoint
+dipaths from $r$ to each vertex $v \in V$ and $\ell$ arc-disjoint dipaths from
+each vertex $v \in V$ to $r$. A tester is called a one-sided error tester for
+$P$ if it always accepts a graph satisfying $P$. We show, for $k \geq 2$ and
+(proper) $\ell \geq 0$, any one-sided error tester for $(k,\ell)$-fullness and
+$(k,\ell)$-edge-connected-orientability requires $\Omega(n)$ queries.

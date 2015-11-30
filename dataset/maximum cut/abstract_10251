@@ -1,0 +1,19 @@
+We consider an initial-boundary value problem for
+$\partial_tu-\partial_t^{-\alpha}\nabla^2u=f(t)$, that is, for a fractional
+diffusion ($-1<\alpha<0$) or wave ($0<\alpha<1$) equation. A numerical solution
+is found by applying a piecewise-linear, discontinuous Galerkin method in time
+combined with a piecewise-linear, conforming finite element method in space.
+The time mesh is graded appropriately near $t=0$, but the spatial mesh is
+quasiuniform. Previously, we proved that the error, measured in the spatial
+$L_2$-norm, is of order $k^{2+\alpha_-}+h^2\ell(k)$, uniformly in $t$, where
+$k$ is the maximum time step, $h$ is the maximum diameter of the spatial finite
+elements, $\alpha_-=\min(\alpha,0)\le0$ and $\ell(k)=\max(1,|\log k|)$. Here,
+we generalize a known result for the classical heat equation (i.e., the case
+$\alpha=0$) by showing that at each time level $t_n$ the solution is
+superconvergent with respect to $k$: the error is of order
+$(k^{3+2\alpha_-}+h^2)\ell(k)$. Moreover, a simple postprocessing step
+employing Lagrange interpolation yields a superconvergent approximation for any
+$t$. Numerical experiments indicate that our theoretical error bound is
+pessimistic if $\alpha<0$. Ignoring logarithmic factors, we observe that the
+error in the DG solution at $t=t_n$, and after postprocessing at all $t$, is of
+order $k^{3+\alpha_-}+h^2$.

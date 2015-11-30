@@ -1,0 +1,11 @@
+In this paper, we analyze the time complexity of finding regular polygons in
+a set of n points. We combine two different approaches to find regular
+polygons, depending on their number of edges. Our result depends on the
+parameter alpha, which has been used to bound the maximum number of isosceles
+triangles that can be formed by n points. This bound has been expressed as
+O(n^{2+2alpha+epsilon}), and the current best value for alpha is ~0.068.
+  Our algorithm finds polygons with O(n^alpha) edges by sweeping a line through
+the set of points, while larger polygons are found by random sampling. We can
+find all regular polygons with high probability in O(n^{2+alpha+epsilon})
+expected time for every positive epsilon. This compares well to the
+O(n^{2+2alpha+epsilon}) deterministic algorithm of Brass.

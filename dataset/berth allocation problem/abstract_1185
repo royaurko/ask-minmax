@@ -1,0 +1,17 @@
+In this paper, we show how to achieve close-to-optimal utility performance in
+energy harvesting networks with only finite capacity energy storage devices. In
+these networks, nodes are capable of harvesting energy from the environment.
+The amount of energy that can be harvested is time varying and evolves
+according to some probability law. We develop an \emph{online} algorithm,
+called the Energy-limited Scheduling Algorithm (ESA), which jointly manages the
+energy and makes power allocation decisions for packet transmissions. ESA only
+has to keep track of the amount of energy left at the network nodes and
+\emph{does not require any knowledge} of the harvestable energy process. We
+show that ESA achieves a utility that is within $O(\epsilon)$ of the optimal,
+for any $\epsilon>0$, while ensuring that the network congestion and the
+required capacity of the energy storage devices are \emph{deterministically}
+upper bounded by bounds of size $O(1/\epsilon)$. We then also develop the
+Modified-ESA algorithm (MESA) to achieve the same $O(\epsilon)$
+close-to-utility performance, with the average network congestion and the
+required capacity of the energy storage devices being only
+$O([\log(1/\epsilon)]^2)$.

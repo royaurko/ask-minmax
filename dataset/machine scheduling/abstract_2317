@@ -1,0 +1,17 @@
+Qualitative formal verification, that seeks boolean answers about the
+behavior of a system, is often insufficient for practical purposes. Observing
+quantitative information is of interest, e.g. for the proper calibration of a
+battery or a real-time scheduler. Historically, the focus has been on
+quantities in a continuous domain, but recent years showed a renewed interest
+for discrete quantitative domains.
+  Cost Linear Temporal Logic (CLTL) is a quantitative extension of classical
+LTL. It integrates into a nice theory developed in the past few years that
+extends the qualitative setting, with counterparts in terms of logics, automata
+and algebraic structure. We propose a practical usage of this logics for
+model-checking purposes. A CLTL formula defines a function from infinite words
+to integers. Finding the bounds of such a function over a given set of words
+can be seen as an extension of LTL universal and existential model-checking. We
+propose a CEGAR-like algorithm to find these bounds by relying on classical LTL
+model-checking, and use B\"{u}chi automata with counters to implement it. This
+method constitutes a first step towards the practical use of such a discrete
+quantitative logic.

@@ -1,0 +1,15 @@
+In a finite undirected graph $G=(V,E)$, a vertex $v \in V$ {\em dominates}
+itself and its neighbors in $G$. A vertex set $D \subseteq V$ is an {\em
+efficient dominating set} ({\em e.d.} for short) of $G$ if every $v \in V$ is
+dominated in $G$ by exactly one vertex of $D$. The {\em Efficient Domination}
+(ED) problem, which asks for the existence of an e.d. in $G$, is known to be
+NP-complete for $P_7$-free graphs but solvable in polynomial time for
+$P_5$-free graphs. The $P_6$-free case was the last open question for the
+complexity of ED on $F$-free graphs.
+  Recently, Lokshtanov, Pilipczuk and van Leeuwen showed that weighted ED is
+solvable in polynomial time for $P_6$-free graphs, based on their
+sub-exponential algorithm for the Maximum Weight Independent Set problem for
+$P_6$-free graphs. Independently, at the same time, Mosca found a polynomial
+time algorithm for weighted ED on $P_6$-free graphs using a direct approach. In
+this paper, we describe the details of this approach which is simpler and much
+faster, namely its time bound is ${\cal O}(n^6 m)$.

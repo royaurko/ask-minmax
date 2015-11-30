@@ -1,0 +1,26 @@
+Because biological processes can make different loci have different
+evolutionary histories, species tree estimation requires multiple loci from
+across the genome. While many processes can result in discord between gene
+trees and species trees, incomplete lineage sorting (ILS), modeled by the
+multi-species coalescent, is considered to be a dominant cause for gene tree
+heterogeneity. Coalescent-based methods have been developed to estimate species
+trees, many of which operate by combining estimated gene trees, and so are
+called summary methods. Because summary methods are generally fast, they have
+become very popular techniques for estimating species trees from multiple loci.
+However, recent studies have established that summary methods can have reduced
+accuracy in the presence of gene tree estimation error, and also that many
+biological datasets have substantial gene tree estimation error, so that
+summary methods may not be highly accurate on biologically realistic
+conditions. Mirarab et al. (Science 2014) presented the statistical binning
+technique to improve gene tree estimation in multi-locus analyses, and showed
+that it improved the accuracy of MP-EST, one of the most popular
+coalescent-based summary methods. Statistical binning, which uses a simple
+statistical test for combinability and then uses the larger sets of genes to
+re-calculate gene trees, has good empirical performance, but using statistical
+binning within a phylogenomics pipeline does not have the desirable property of
+being statistically consistent. We show that weighting the recalculated gene
+trees by the bin sizes makes statistical binning statistically consistent under
+the multispecies coalescent, and maintains the good empirical performance.
+Thus, "weighted statistical binning" enables highly accurate genome-scale
+species tree estimation, and is also statistical consistent under the
+multi-species coalescent model.

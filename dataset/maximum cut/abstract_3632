@@ -1,0 +1,13 @@
+We study Markov chains for randomly sampling $k$-colorings of a graph with
+maximum degree $\Delta$. Our main result is a polynomial upper bound on the
+mixing time of the single-site update chain known as the Glauber dynamics for
+planar graphs when $k=\Omega(\Delta/\log{\Delta})$. Our results can be
+partially extended to the more general case where the maximum eigenvalue of the
+adjacency matrix of the graph is at most $\Delta^{1-\eps}$, for fixed $\eps >
+0$.
+  The main challenge when $k \le \Delta + 1$ is the possibility of "frozen"
+vertices, that is, vertices for which only one color is possible, conditioned
+on the colors of its neighbors. Indeed, when $\Delta = O(1)$, even a typical
+coloring can have a constant fraction of the vertices frozen. Our proofs rely
+on recent advances in techniques for bounding mixing time using "local
+uniformity" properties.

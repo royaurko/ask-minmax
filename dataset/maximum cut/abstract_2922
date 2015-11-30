@@ -1,0 +1,23 @@
+Analyzing massive data sets has been one of the key motivations for studying
+streaming algorithms. In recent years, there has been significant progress in
+analysing distributions in a streaming setting, but the progress on graph
+problems has been limited. A main reason for this has been the existence of
+linear space lower bounds for even simple problems such as determining the
+connectedness of a graph. However, in many new scenarios that arise from social
+and other interaction networks, the number of vertices is significantly less
+than the number of edges. This has led to the formulation of the semi-streaming
+model where we assume that the space is (near) linear in the number of vertices
+(but not necessarily the edges), and the edges appear in an arbitrary (and
+possibly adversarial) order.
+  In this paper we focus on graph sparsification, which is one of the major
+building blocks in a variety of graph algorithms. There has been a long history
+of (non-streaming) sampling algorithms that provide sparse graph approximations
+and it a natural question to ask if the sparsification can be achieved using a
+small space, and in addition using a single pass over the data? The question is
+interesting from the standpoint of both theory and practice and we answer the
+question in the affirmative, by providing a one pass
+$\tilde{O}(n/\epsilon^{2})$ space algorithm that produces a sparsification that
+approximates each cut to a $(1+\epsilon)$ factor. We also show that $\Omega(n
+\log \frac1\epsilon)$ space is necessary for a one pass streaming algorithm to
+approximate the min-cut, improving upon the $\Omega(n)$ lower bound that arises
+from lower bounds for testing connectivity.

@@ -1,0 +1,18 @@
+A graph G is well-covered if all its maximal independent sets are of the same
+cardinality. Assume that a weight function w is defined on its vertices. Then G
+is w-well-covered if all maximal independent sets are of the same weight. For
+every graph G, the set of weight functions w such that G is w-well-covered is a
+vector space. Given an input graph G without cycles of length 4, 5, and 6, we
+characterize polynomially the vector space of weight functions w for which G is
+w-well-covered. Let B be an induced complete bipartite subgraph of G on vertex
+sets of bipartition B_{X} and B_{Y}. Assume that there exists an independent
+set S such that both the union of S and B_{X} and the union of S and B_{Y} are
+maximal independent sets of G. Then B is a generating subgraph of G, and it
+produces the restriction w(B_{X})=w(B_{Y}). It is known that for every weight
+function w, if G is w-well-covered, then the above restriction is satisfied. In
+the special case, where B_{X}={x} and B_{Y}={y}, we say that xy is a relating
+edge. Recognizing relating edges and generating subgraphs is an NP-complete
+problem. However, we provide a polynomial algorithm for recognizing generating
+subgraphs of an input graph without cycles of length 5, 6 and 7. We also
+present a polynomial algorithm for recognizing relating edges in an input graph
+without cycles of length 5 and 6.

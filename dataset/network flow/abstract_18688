@@ -1,0 +1,17 @@
+A divide-and-conquer based approach for computing the Moore-Penrose
+pseudo-inverse of the combinatorial Laplacian matrix $(\bb L^+)$ of a simple,
+undirected graph is proposed. % The nature of the underlying sub-problems is
+studied in detail by means of an elegant interplay between $\bb L^+$ and the
+effective resistance distance $(\Omega)$. Closed forms are provided for a novel
+{\em two-stage} process that helps compute the pseudo-inverse incrementally.
+Analogous scalar forms are obtained for the converse case, that of structural
+regress, which entails the breaking up of a graph into disjoint components
+through successive edge deletions. The scalar forms in both cases, show
+absolute element-wise independence at all stages, thus suggesting potential
+parallelizability. Analytical and experimental results are presented for
+dynamic (time-evolving) graphs as well as large graphs in general (representing
+real-world networks). An order of magnitude reduction in computational time is
+achieved for dynamic graphs; while in the general case, our approach performs
+better in practice than the standard methods, even though the worst case
+theoretical complexities may remain the same: an important contribution with
+consequences to the study of online social networks.

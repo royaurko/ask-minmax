@@ -1,0 +1,24 @@
+Due to the large size of wireless networks, it is often impractical for nodes
+to track changes in the complete network state. As a result, nodes have to make
+distributed decisions about their transmission and reception parameters based
+on their local view of the network. In this paper, we characterize the impact
+of distributed decisions on the global network performance in terms of
+achievable sum-rates. We first formalize the concept of local view by proposing
+a protocol abstraction using the concept of local message passing. In the
+proposed protocol, nodes forward information about the network state to other
+neighboring nodes, thereby allowing network state information to trickle to all
+the nodes. The protocol proceeds in rounds, where all transmitters send a
+message followed by a message by all receivers. The number of rounds then
+provides a natural metric to quantify the extent of local information at each
+node.
+  We next study three network connectivities, Z-channel, a three-user double
+Z-channel and a reduced-parametrization $K$-user stacked Z-channel. In each
+case, we characterize achievable sum-rate with partial message passing leading
+to three main results. First, in many cases, nodes can make distributed
+decisions with only local information about the network and can still achieve
+the same sum-capacity as can be attained with global information irrespective
+of the actual channel gains. Second, for the case of three-user double
+Z-channel, we show that universal optimality is not achievable if the per node
+information is below a threshold. Third, using reduced parametrization $K$-user
+channel, we show that very few protocol rounds are needed for the case of very
+weak or very strong interference.

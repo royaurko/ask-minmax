@@ -1,0 +1,18 @@
+We study the admission control problem in general networks. Communication
+requests arrive over time, and the online algorithm accepts or rejects each
+request while maintaining the capacity limitations of the network. The
+admission control problem has been usually analyzed as a benefit problem, where
+the goal is to devise an online algorithm that accepts the maximum number of
+requests possible. The problem with this objective function is that even
+algorithms with optimal competitive ratios may reject almost all of the
+requests, when it would have been possible to reject only a few. This could be
+inappropriate for settings in which rejections are intended to be rare events.
+  In this paper, we consider preemptive online algorithms whose goal is to
+minimize the number of rejected requests. Each request arrives together with
+the path it should be routed on. We show an $O(\log^2 (mc))$-competitive
+randomized algorithm for the weighted case, where $m$ is the number of edges in
+the graph and $c$ is the maximum edge capacity. For the unweighted case, we
+give an $O(\log m \log c)$-competitive randomized algorithm. This settles an
+open question of Blum, Kalai and Kleinberg raised in \cite{BlKaKl01}. We note
+that allowing preemption and handling requests with given paths are essential
+for avoiding trivial lower bounds.

@@ -1,0 +1,15 @@
+Mining association rules is a popular and well researched method for
+discovering interesting relations between variables in large databases. A
+practical problem is that at medium to low support values often a large number
+of frequent itemsets and an even larger number of association rules are found
+in a database. A widely used approach is to gradually increase minimum support
+and minimum confidence or to filter the found rules using increasingly strict
+constraints on additional measures of interestingness until the set of rules
+found is reduced to a manageable size. In this paper we describe a different
+approach which is based on the idea to first define a set of ``interesting''
+itemsets (e.g., by a mixture of mining and expert knowledge) and then, in a
+second step to selectively generate rules for only these itemsets. The main
+advantage of this approach over increasing thresholds or filtering rules is
+that the number of rules found is significantly reduced while at the same time
+it is not necessary to increase the support and confidence thresholds which
+might lead to missing important information in the database.

@@ -1,0 +1,13 @@
+This paper describes a clustering method to group the most similar and
+important weblogs with their descriptive shared words by using a technique from
+multilinear algebra known as PARAFAC tensor decomposition. The proposed method
+first creates labeled-link network representation of the weblog datasets, where
+the nodes are the blogs and the labels are the shared words. Then, 3-way
+adjacency tensor is extracted from the network and the PARAFAC decomposition is
+applied to the tensor to get pairs of node lists and label lists with scores
+attached to each list as the indication of the degree of importance. The
+clustering is done by sorting the lists in decreasing order and taking the
+pairs of top ranked blogs and words. Thus, unlike standard co-clustering
+methods, this method not only groups the similar blogs with their descriptive
+words but also tends to produce clusters of important blogs and descriptive
+words.

@@ -1,0 +1,18 @@
+In this paper, we consider the weighted online set k-multicover problem. In
+this problem, we have a universe V of elements, a family S of subsets of V with
+a positive real cost for every set in S and a "coverage factor" (positive
+integer) k. A subset of elements are presented online in an arbitrary order.
+When each element, say i, is presented, we are also told the collection of all
+(at least k) sets and their costs to which i belongs and we need to select
+additional sets from these sets containing i, if necessary, such that our
+collection of selected sets contains at least k sets that contain the element
+i. The goal is to minimize the total cost of the selected sets (our algorithm
+and competitive ratio bounds can be extended to the case when a set can be
+selected at most a pre-specified number of times instead of just once; we do
+not report these extensions for simplicity and also because they have no
+relevance to the biological applications that motivated our work). In this
+paper, we describe a new randomized algorithm for the online multicover problem
+based on a randomized version of the winnowing approach of Littlestone. This
+algorithm generalizes and improves some earlier results by N. Alon, B.
+Awerbuch, Y. Azar, N. Buchbinder, and J. Naor. We also discuss lower bounds on
+competitive ratios for deterministic algorithms for general $k$.

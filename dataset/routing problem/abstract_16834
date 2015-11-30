@@ -1,0 +1,15 @@
+In this paper, we investigate the Hermite spectral method (HSM) to
+numerically solve the forward Kolmogorov equation (FKE). A useful guideline of
+choosing the scaling factor of the generalized Hermite functions is given in
+this paper. It greatly improves the resolution of HSM. The convergence rate of
+HSM to FKE is analyzed in the suitable function space and has been verified by
+the numerical simulation. As an important application and our primary
+motivation to study the HSM to FKE, we work on the implementation of the
+nonlinear filtering (NLF) problem with a real-time algorithm developed in [17].
+The HSM to FKE is served as the off-line computation in this algorithm. The
+translating factor of the generalized Hermite functions and the moving-window
+technique are introduced to deal with the drifting of the posterior conditional
+density function of the states in the on-line experiments. Two numerical
+experiments of NLF problems are carried out to illustrate the feasibility of
+our algorithm. Moreover, our algorithm surpasses the particle filter as a
+real-time solver to NLF.

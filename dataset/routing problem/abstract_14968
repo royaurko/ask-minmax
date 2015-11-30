@@ -1,0 +1,23 @@
+Finding heavy-elements (heavy-hitters) in streaming data is one of the
+central, and well-understood tasks. Despite the importance of this problem,
+when considering the sliding windows model of streaming (where elements
+eventually expire) the problem of finding L_2-heavy elements has remained
+completely open despite multiple papers and considerable success in finding
+L_1-heavy elements.
+  In this paper, we develop the first poly-logarithmic-memory algorithm for
+finding L_2-heavy elements in sliding window model. Since L_2 heavy elements
+play a central role for many fundamental streaming problems (such as frequency
+moments), we believe our method would be extremely useful for many
+sliding-windows algorithms and applications. For example, our technique allows
+us not only to find L_2-heavy elements, but also heavy elements with respect to
+any L_p for 0<p<2 on sliding windows. Thus, our paper completely resolves the
+question of finding L_p-heavy elements for sliding windows with
+poly-logarithmic memory for all values of p since it is well known that for p>2
+this task is impossible.
+  Our method may have other applications as well. We demonstrate a broader
+applicability of our novel yet simple method on two additional examples: we
+show how to obtain a sliding window approximation of other properties such as
+the similarity of two streams, or the fraction of elements that appear exactly
+a specified number of times within the window (the rarity problem). In these
+two illustrative examples of our method, we replace the current expected memory
+bounds with worst case bounds.

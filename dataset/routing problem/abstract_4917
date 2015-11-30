@@ -1,0 +1,20 @@
+We study the well-known Label Cover problem under the additional requirement
+that problem instances have large girth. We show that if the girth is some $k$,
+the problem is roughly $2^{\log^{1-\epsilon} n/k}$ hard to approximate for all
+constant $\epsilon > 0$. A similar theorem was claimed by Elkin and Peleg
+[ICALP 2000], but their proof was later found to have a fundamental error. We
+use the new proof to show inapproximability for the basic $k$-spanner problem,
+which is both the simplest problem in graph spanners and one of the few for
+which super-logarithmic hardness was not known. Assuming $NP \not\subseteq
+BPTIME(2^{polylog(n)})$, we show that for every $k \geq 3$ and every constant
+$\epsilon > 0$ it is hard to approximate the basic $k$-spanner problem within a
+factor better than $2^{(\log^{1-\epsilon} n) / k}$ (for large enough $n$). A
+similar hardness for basic $k$-spanner was claimed by Elkin and Peleg [ICALP
+2000], but the error in their analysis of Label Cover made this proof fail as
+well. Thus for the problem of Label Cover with large girth we give the first
+non-trivial lower bound. For the basic $k$-spanner problem we improve the
+previous best lower bound of $\Omega(\log n)/k$ by Kortsarz [Algorithmica
+1998]. Our main technique is subsampling the edges of 2-query PCPs, which
+allows us to reduce the degree of a PCP to be essentially equal to the
+soundness desired. This turns out to be enough to essentially guarantee large
+girth.

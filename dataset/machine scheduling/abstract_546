@@ -1,0 +1,15 @@
+The benchmark for computation is typically given as Turing computability; the
+ability for a computation to be performed by a Turing Machine. Many languages
+exploit (indirect) encodings of Turing Machines to demonstrate their ability to
+support arbitrary computation. However, these encodings are usually by
+simulating the entire Turing Machine within the language, or by encoding a
+language that does an encoding or simulation itself. This second category is
+typical for process calculi that show an encoding of lambda-calculus (often
+with restrictions) that in turn simulates a Turing Machine. Such approaches
+lead to indirect encodings of Turing Machines that are complex, unclear, and
+only weakly equivalent after computation. This paper presents an approach to
+encoding Turing Machines into intensional process calculi that is faithful,
+reduction preserving, and structurally equivalent. The encoding is demonstrated
+in a simple asymmetric concurrent pattern calculus before generalised to
+simplify infinite terms, and to show encodings into Concurrent Pattern Calculus
+and Psi Calculi.

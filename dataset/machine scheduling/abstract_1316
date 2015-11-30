@@ -1,0 +1,17 @@
+One of the main purposes of discrete event simulators such as OMNeT++ is to
+test new algorithms or protocols in realistic environments. These often need to
+be benchmarked against optimal/theoretical results obtained by running
+commercial optimization solvers. The usual way to do this is to have the
+simulator run in a standalone mode and generate (few) snapshots, which are then
+fed to the optimization solvers. This allows one to compare the optimal and
+suboptimal solutions in the snapshots, but does not allow to assess how the
+system being studied would evolve over time if the optimal solution was
+enforced every time. This requires optimization software to run directly in the
+loop of the simulation, exchanging information with the latter. The goal of
+this tutorial is to show how to integrate a commercial solver (CPLEX) into the
+simulation loop of the OMNeT++ environment. For this purpose, we propose two
+methods: a first one that uses a solver as an external program, and a second
+one that exploits a C-written API for CPLEX known as Callable Library. We then
+exemplify how to apply these two methods to SimuLTE, a simulation model for LTE
+cellular networks, implementing and testing a simple solution to a well-known
+resource-scheduling problem.

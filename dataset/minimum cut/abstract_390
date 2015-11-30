@@ -1,0 +1,7 @@
+This article introduces SatHyS (SAT HYbrid Solver), a novel hybrid approach
+for propositional satisfiability. It combines local search and conflict driven
+clause learning (CDCL) scheme. Each time the local search part reaches a local
+minimum, the CDCL is launched. For SAT problems it behaves like a tabu list,
+whereas for UNSAT ones, the CDCL part tries to focus on minimum unsatisfiable
+sub-formula (MUS). Experimental results show good performances on many classes
+of SAT instances from the last SAT competitions.

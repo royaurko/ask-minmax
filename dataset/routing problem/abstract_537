@@ -1,0 +1,19 @@
+We study the problem of distributed traffic control in the partitioned plane,
+where the movement of all entities (robots, vehicles, etc.) within each
+partition (cell) is coupled. Establishing liveness in such systems is
+challenging, but such analysis will be necessary to apply such distributed
+traffic control algorithms in applications like coordinating robot swarms and
+the intelligent highway system. We present a formal model of a distributed
+traffic control protocol that guarantees minimum separation between entities,
+even as some cells fail. Once new failures cease occurring, in the case of a
+single target, the protocol is guaranteed to self-stabilize and the entities
+with feasible paths to the target cell make progress towards it. For multiple
+targets, failures may cause deadlocks in the system, so we identify a class of
+non-deadlocking failures where all entities are able to make progress to their
+respective targets. The algorithm relies on two general principles: temporary
+blocking for maintenance of safety and local geographical routing for
+guaranteeing progress. Our assertional proofs may serve as a template for the
+analysis of other distributed traffic control protocols. We present simulation
+results that provide estimates of throughput as a function of entity velocity,
+safety separation, single-target path complexity, failure-recovery rates, and
+multi-target path complexity.

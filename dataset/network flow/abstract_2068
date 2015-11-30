@@ -1,0 +1,13 @@
+Today, SIP is a protocol par Excellence in the field of communication over
+Internet. But, the fact that it belongs to the application layer constitutes a
+weakness vis-a-vis the NAT traversal. This weakness is due to the way in which
+the server replies to the requests of clients on the one hand. On the other, it
+is caused by the dynamic allocation of UDP ports for emission and reception of
+packets RTP/RTCP. The TURN Protocol may face this weakness. However, its use
+requires a certain number of exchanges between the clients and a TURN server
+before establishing the multimedia sessions and this increase the latent time.
+In this article, we propose to adapt TURN protocol for applications based on
+SIP protocol such as telephony over Internet, conference video, etc. This
+adaptation optimises the establishment of multimedia sessions by integrating a
+manager of TCP connections and multimedia flow controller into SIP Proxy
+server.

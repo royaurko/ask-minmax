@@ -1,0 +1,13 @@
+Recently, Dziembowski et al. introduced the notion of non-malleable codes
+(NMC), inspired from the notion of non-malleability in cryptography and the
+work of Gennaro et al. in 2004 on tamper proof security. Informally, when using
+NMC, if an attacker modifies a codeword, decoding this modified codeword will
+return either the original message or a completely unrelated value.
+  The definition of NMC is related to a family of modifications contributorized to
+the attacker. In their paper, Dziembowski et al. propose a construction valid
+for the family of all bit-wise independent functions.
+  In this article, we study the link between the second version of the Wire-Tap
+(WT) Channel, introduced by Ozarow and Wyner in 1984, and NMC. Using
+coset-coding, we describe a new construction for NMC w.r.t. a subset of the
+family of bit-wise independent functions. Our scheme is easier to build and
+more efficient than the one proposed by Dziembowski et al.

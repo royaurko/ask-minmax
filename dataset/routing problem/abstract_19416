@@ -1,0 +1,22 @@
+We propose regularization schemes for deformable registration and efficient
+algorithms for its numerical approximation. We treat image registration as a
+variational optimal control problem. The deformation map is parametrized by a
+velocity field. Quadratic Tikhonov regularization ensures well-posedness of the
+problem. Our scheme augments standard smoothness vectorial operators based on
+$H^1$- and $H^2$-seminorms with a constraint on the divergence of the velocity
+field. Our formulation is motivated from Stokes flows in fluid mechanics. We
+invert for a stationary velocity field as well as a mass source map. This
+allows us to explicitly control the compressibility of the deformation map and
+by that the determinant of the deformation gradient. In addition, we design a
+novel regularization model that allows us to control shear.
+  We use a globalized, preconditioned, matrix-free (Gauss-)Newton-Krylov
+scheme. We exploit variable elimination techniques to reduce the number of
+unknowns of our system: we only iterate on the reduced space of the velocity
+field.
+  Our scheme can be used for problems in which the deformation map is expected
+to be nearly incompressible, as is often the case in medical imaging. Numerical
+experiments demonstrate that we can explicitly control the determinant of the
+deformation gradient without compromising registration quality. This additional
+control allows us to avoid over-smoothing of the deformation map. We
+demonstrate that our new formulation allows us to promote or penalize shear
+whilst controlling the determinant of the deformation gradient.

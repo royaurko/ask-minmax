@@ -1,0 +1,24 @@
+The concept of reputation is widely used as a measure of trustworthiness
+based on ratings from members in a community. The adoption of reputation
+systems, however, relies on their ability to capture the actual trustworthiness
+of a target. Several reputation models for aggregating trust information have
+been proposed in the literature. The choice of model has an impact on the
+reliability of the aggregated trust information as well as on the procedure
+used to compute reputations. Two prominent models are flow-based reputation
+(e.g., EigenTrust, PageRank) and Subjective Logic based reputation. Flow-based
+models provide an automated method to aggregate trust information, but they are
+not able to express the level of uncertainty in the information. In contrast,
+Subjective Logic extends probabilistic models with an explicit notion of
+uncertainty, but the calculation of reputation depends on the structure of the
+trust network and often requires information to be discarded. These are severe
+drawbacks.
+  In this work, we observe that the `opinion discounting' operation in
+Subjective Logic has a number of basic problems. We resolve these problems by
+providing a new discounting operator that describes the flow of evidence from
+one party to another. The adoption of our discounting rule results in a
+consistent Subjective Logic algebra that is entirely based on the handling of
+evidence. We show that the new algebra enables the construction of an automated
+reputation assessment procedure for arbitrary trust networks, where the
+calculation no longer depends on the structure of the network, and does not
+need to throw away any information. Thus, we obtain the best of both worlds:
+flow-based reputation and consistent handling of uncertainties.

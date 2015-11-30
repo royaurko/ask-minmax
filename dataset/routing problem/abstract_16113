@@ -1,0 +1,16 @@
+We study some numerical methods for solving second order elliptic problem
+with interface. We introduce an immersed interface finite element method based
+on the `broken' $P_1$-nonconforming piecewise linear polynomials on interface
+triangular elements having edge averages as degrees of freedom. This linear
+polynomials are broken to match the homogeneous jump condition along the
+interface which is allowed to cut through the element. We prove optimal orders
+of convergence in $H^1$ and $L^2$-norm. Next we propose a mixed finite volume
+method in the context introduced in \cite{Kwak2003} using the Raviart-Thomas
+mixed finite element and this `broken' $P_1$-nonconforming element. The
+advantage of this mixed finite volume method is that once we solve the
+symmetric positive definite pressure equation(without Lagrangian multiplier),
+the velocity can be computed locally by a simple formula. This procedure avoids
+solving the saddle point problem. Furthermore, we show optimal error estimates
+of velocity and pressure in our mixed finite volume method. Numerical results
+show optimal orders of error in $L^2$-norm and broken $H^1$-norm for the
+pressure, and in $H(\Div)$-norm for the velocity.

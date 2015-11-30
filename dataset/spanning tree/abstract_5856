@@ -1,0 +1,20 @@
+One exact and two heuristic algorithms for determining the generators, orbits
+and order of the graph automorphism group are presented. A basic tool of these
+algorithms is the well-known individualization and refinement procedure. A
+search tree is used in the algorithms - each node of the tree is a partition.
+All nonequivalent discreet partitions derivative of the selected vertices are
+stored in a coded form. A new strategy is used in the exact algorithm: if
+during its execution some of the searched or intermediate variables obtain a
+wrong value then the algorithm continues from a new start point losing some of
+the results determined so far. The algorithms has been tested on one of the
+known benchmark graphs and shows lower running times for some graph families.
+The heuristic versions of the algorithms are based on determining some number
+of discreet partitions derivative of each vertex in the selected cell of the
+initial partition and comparing them for an automorphism - their search trees
+are reduced. The heuristic algorithms are almost exact and are many times
+faster than the exact one. The experimental tests exhibit that the worst-cases
+running time of the exact algorithm is exponential but it is polynomial for the
+heuristic algorithms. Several cell selectors are used. Some of them are new. We
+also use a chooser of cell selector for choosing the optimal cell selector for
+the manipulated graph. The proposed heuristic algorithms use two main heuristic
+procedures that generate two different forests of search trees.

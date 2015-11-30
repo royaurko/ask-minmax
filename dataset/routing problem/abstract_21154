@@ -1,0 +1,26 @@
+Consider the following online version of the submodular maximization problem
+under a matroid constraint: We are given a set of elements over which a matroid
+is defined. The goal is to incrementally choose a subset that remains
+independent in the matroid over time. At each time, a new weighted rank
+function of a different matroid (one per time) over the same elements is
+presented; the algorithm can add a few elements to the incrementally
+constructed set, and reaps a reward equal to the value of the new weighted rank
+function on the current set. The goal of the algorithm as it builds this
+independent set online is to maximize the sum of these (weighted rank) rewards.
+As in regular online analysis, we compare the rewards of our online algorithm
+to that of an offline optimum, namely a single independent set of the matroid
+that maximizes the sum of the weighted rank rewards that arrive over time. This
+problem is a natural extension of two well-studied streams of earlier work: the
+first is on online set cover algorithms (in particular for the max coverage
+version) while the second is on approximately maximizing submodular functions
+under a matroid constraint.
+  In this paper, we present the first randomized online algorithms for this
+problem with poly-logarithmic competitive ratio. To do this, we employ the LP
+formulation of a scaled reward version of the problem. Then we extend a
+weighted-majority type update rule along with uncrossing properties of tight
+sets in the matroid polytope to find an approximately optimal fractional LP
+solution. We use the fractional solution values as probabilities for a online
+randomized rounding algorithm. To show that our rounding produces a
+sufficiently large reward independent set, we prove and use new covering
+properties for randomly rounded fractional solutions in the matroid polytope
+that may be of independent interest.

@@ -1,0 +1,21 @@
+We present a new method for upper bounding the second eigenvalue of the
+Laplacian of graphs. Our approach uses multi-commodity flows to deform the
+geometry of the graph; we embed the resulting metric into Euclidean space to
+recover a bound on the Rayleigh quotient. Using this, we show that every
+$n$-vertex graph of genus $g$ and maximum degree $d$ satisfies $\lambda_2(G) =
+O((g+1)^3 d/n)$. This recovers the $O(d/n)$ bound of Spielman and Teng for
+planar graphs, and compares to Kelner's bound of $O((g+1) poly(d)/n)$, but our
+proof does not make use of conformal mappings or circle packings. We are thus
+able to extend this to resolve positively a conjecture of Spielman and Teng, by
+proving that $\lambda_2(G) = O(d h^6 \log h/n)$ whenever $G$ is $K_h$-minor
+free. This shows, in particular, that spectral partitioning can be used to
+recover $O(\sqrt{n})$-sized separators in bounded degree graphs that exclude a
+fixed minor. We extend this further by obtaining nearly optimal bounds on
+$\lambda_2$ for graphs which exclude small-depth minors in the sense of
+Plotkin, Rao, and Smith. Consequently, we show that spectral algorithms find
+small separators in a general class of geometric graphs.
+  Moreover, while the standard "sweep" algorithm applied to the second
+eigenvector may fail to find good quotient cuts in graphs of unbounded degree,
+our approach produces a vector that works for arbitrary graphs. This yields an
+alternate proof of the result of Alon, Seymour, and Thomas that every
+excluded-minor family of graphs has $O(\sqrt{n})$-node balanced separators.

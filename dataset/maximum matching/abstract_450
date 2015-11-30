@@ -1,0 +1,8 @@
+In this paper we describe a data structure that supports pattern matching
+queries on a dynamically arriving text over an alphabet ofconstant size. Each
+new symbol can be prepended to $T$ in O(1) worst-case time. At any moment, we
+can report all occurrences of a pattern $P$ in the current text in $O(|P|+k)$
+time, where $|P|$ is the length of $P$ and $k$ is the number of occurrences.
+This resolves, under assumption of constant-size alphabet, a long-standing open
+problem of existence of a real-time indexing method for string matching (see
+\cite{AmirN08}).

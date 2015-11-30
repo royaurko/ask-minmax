@@ -1,0 +1,15 @@
+This paper presents the first convergence result for random search algorithms
+to a subset of the Pareto set of given maximum size k with bounds on the
+approximation quality. The core of the algorithm is a new selection criterion
+based on a hypothetical multilevel grid on the objective space. It is shown
+that, when using this criterion for accepting new search points, the sequence
+of solution archives converges with probability one to a subset of the Pareto
+set that epsilon-dominates the entire Pareto set. The obtained approximation
+quality epsilon is equal to the size of the grid cells on the finest level of
+resolution that allows an approximation with at most k points within the family
+of grids considered. While the convergence result is of general theoretical
+interest, the archiving algorithm might be of high practical value for any type
+iterative multiobjective optimization method, such as evolutionary algorithms
+or other metaheuristics, which all rely on the usage of a finite on-line memory
+to store the best solutions found so far as the current approximation of the
+Pareto set.

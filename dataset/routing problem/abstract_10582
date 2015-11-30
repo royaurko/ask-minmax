@@ -1,0 +1,22 @@
+In the Constrained Fault-Tolerant Resource Allocation (FTRA) problem, we are
+given a set of sites containing facilities as resources, and a set of clients
+accessing these resources. Specifically, each site i is allowed to open at most
+R_i facilities with cost f_i for each opened facility. Each client j requires
+an allocation of r_j open facilities and connecting j to any facility at site i
+incurs a connection cost c_ij. The goal is to minimize the total cost of this
+resource allocation scenario.
+  FTRA generalizes the Unconstrained Fault-Tolerant Resource Allocation
+(FTRA_{\infty}) [18] and the classical Fault-Tolerant Facility Location (FTFL)
+[13] problems: for every site i, FTRA_{\infty} does not have the constraint
+R_i, whereas FTFL sets R_i=1. These problems are said to be uniform if all
+r_j's are the same, and general otherwise.
+  For the general metric FTRA, we first give an LP-rounding algorithm achieving
+the approximation ratio of 4. Then we show the problem reduces to FTFL,
+implying the ratio of 1.7245 from [3]. For the uniform FTRA, we provide a
+1.52-approximation primal-dual algorithm in O(n^4) time, where n is the total
+number of sites and clients. We also consider the Constrained Fault-Tolerant
+k-Resource Allocation (k-FTRA) problem where additionally the total number of
+facilities can be opened across all sites is bounded by k. For the uniform
+k-FTRA, we give the first constant-factor approximation algorithm with a factor
+of 4. Note that the above results carry over to FTRA_{\infty} and
+k-FTRA_{\infty}.

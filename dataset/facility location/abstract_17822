@@ -1,0 +1,25 @@
+Massive MIMO and C-RAN are two promising techniques for implementing future
+wireless communication systems, where a large number of antennas are deployed
+either being co-located at the base station (BS) or totally distributed at
+separate sites called remote radio heads (RRHs). In this paper, we consider a
+general antenna deployment design for wireless networks, termed multi-antenna
+C-RAN, where a flexible number of antennas can be equipped at each RRH to more
+effectively balance the performance and fronthaul complexity trade-off beyond
+the conventional massive MIMO and single-antenna C-RAN. Under the uplink
+communication setup, we propose a new "spatial-compression-and-forward (SCF)"
+scheme, where each RRH first performs a linear spatial filtering to denoise and
+maximally compress its received signals from multiple users to a reduced number
+of dimensions, then conducts uniform scalar quantization over each of the
+resulting dimensions in parallel, and finally sends the total quantized bits to
+the baseband unit (BBU) via a finite-rate fronthaul link for joint information
+decoding. Under this scheme, we maximize the minimum
+signal-to-interference-plus-noise ratio (SINR) of all users at the BBU by a
+joint resource allocation over the wireless transmission and fronthaul links.
+Specifically, each RRH determines its own spatial filtering solution in a
+distributed manner to reduce the signalling overhead with the BBU, while the
+BBU jointly optimizes the users' transmit power, the RRHs' fronthaul bits
+allocation, and the BBU's receive beamforming with fixed spatial filters at
+individual RRHs. Through numerical results, it is shown that given a total
+number of antennas to be deployed, multi-antenna C-RAN with the proposed SCF
+and joint optimization significantly outperforms both massive MIMO and
+single-antenna C-RAN under practical fronthaul capacity constraints.

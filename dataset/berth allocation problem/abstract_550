@@ -1,0 +1,16 @@
+Conventional cache models are not suited for real-time parallel processing
+because tasks may flush each other's data out of the cache in an unpredictable
+manner. In this way the system is not compositional so the overall performance
+is difficult to predict and the integration of new tasks expensive. This paper
+proposes a new method that imposes compositionality to the system?s performance
+and makes different memory hierarchy optimizations possible for multimedia
+communicating tasks when running on embedded multiprocessor architectures. The
+method is based on a cache allocation strategy that assigns sets of the unified
+cache exclusively to tasks and to the communication buffers. We also
+analytically formulate the problem and describe a method to compute the cache
+partitioning ratio for optimizing the throughput and the consumed power. When
+applied to a multiprocessor with memory hierarchy our technique delivers also
+performance gain. Compared to the shared cache case, for an application
+consisting of two jpeg decoders and one edge detection algorithm 5 times less
+misses are experienced and for an mpeg2 decoder 6.5 times less misses are
+experienced.

@@ -1,0 +1,19 @@
+The decomposition method which makes the parallel solution of the
+block-tridiagonal matrix systems possible is presented. The performance of the
+method is analytically estimated based on the number of elementary
+multiplicative operations for its parallel and serial parts. The computational
+speedup with respect to the conventional sequential Thomas algorithm is
+assessed for various types of the application of the method. It is observed
+that the maximum of the analytical speedup for a given number of blocks on the
+diagonal is achieved at some finite number of parallel processors. The values
+of the parameters required to reach the maximum computational speedup are
+obtained. The benchmark calculations show a good agreement of analytical
+estimations of the computational speedup and practically achieved results. The
+application of the method is illustrated by employing the decomposition method
+to the matrix system originated from a boundary value problem for the
+two-dimensional integro-differential Faddeev equations. The block-tridiagonal
+structure of the matrix arises from the proper discretization scheme including
+the finite-differences over the first coordinate and spline approximation over
+the second one. The application of the decomposition method for parallelization
+of solving the matrix system reduces the overall time of calculation up to 10
+times.

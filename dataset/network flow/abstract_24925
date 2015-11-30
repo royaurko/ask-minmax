@@ -1,0 +1,26 @@
+In the next decade, the LSST will become a major facility for the
+astronomical community. However accurately determining the redshifts of the
+observed galaxies without using spectroscopy is a major challenge.
+Reconstruction of the redshifts with high resolution and well-understood
+uncertainties is mandatory for many science goals, including the study of
+baryonic acoustic oscillations. We investigate different approaches to
+establish the accuracy that can be reached by the LSST six-band photometry. We
+construct a realistic mock galaxy catalog, based on the GOODS survey luminosity
+function, by simulating the expected apparent magnitude distribution for the
+LSST. To reconstruct the photometric redshifts (photo-z's), we consider a
+template-fitting method and a neural network method. The photo-z reconstruction
+from both of these techniques is tested on real CFHTLS data and also on
+simulated catalogs. We describe a new method to improve photo-z reconstruction
+that efficiently removes catastrophic outliers via a likelihood ratio
+statistical test. This test uses the posterior probability functions of the fit
+parameters and the colors. We show that the photometric redshift accuracy will
+meet the stringent LSST requirements up to redshift $\sim2.5$ after a selection
+that is based on the likelihood ratio test or on the apparent magnitude for
+galaxies with $S/N>5$ in at least 5 bands. The former selection has the
+advantage of retaining roughly 35% more galaxies for a similar photo-z
+performance compared to the latter. Photo-z reconstruction using a neural
+network algorithm is also described. In addition, we utilize the CFHTLS
+spectro-photometric catalog to outline the possibility of combining the neural
+network and template-fitting methods. We conclude that the photo-z's will be
+accurately estimated with the LSST if a Bayesian prior probability and a
+calibration sample are used.

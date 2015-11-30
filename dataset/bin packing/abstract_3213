@@ -1,0 +1,16 @@
+We define a type system with intersection types for an extension of
+lambda-calculus with unbind and rebind operators. In this calculus, a term with
+free variables, representing open code, can be packed into an "unbound" term,
+and passed around as a value. In order to execute inside code, an unbound term
+should be explicitly rebound at the point where it is used. Unbinding and
+rebinding are hierarchical, that is, the term can contain arbitrarily nested
+unbound terms, whose inside code can only be executed after a sequence of
+rebinds has been applied. Correspondingly, types are decorated with levels, and
+a term has type decorated with k if it needs k rebinds in order to reduce to a
+value. With intersection types we model the fact that a term can be used
+differently in contexts providing different numbers of unbinds. In particular,
+top-level terms, that is, terms not requiring unbinds to reduce to values,
+should have a value type, that is, an intersection type where at least one
+element has level 0. With the proposed intersection type system we get
+soundness under the call-by-value strategy, an issue which was not resolved by
+previous type systems.

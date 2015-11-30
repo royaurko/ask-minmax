@@ -1,0 +1,23 @@
+Exoplanet searches using radial velocity (RV) and microlensing (ML) produce
+samples of "projected" mass and orbital radius, respectively. We present a new
+method for estimating the probability density distribution (density) of the
+unprojected quantity from such samples. For a sample of n data values, the
+method involves solving n simultaneous linear equations to determine the
+weights of delta functions for the raw, unsmoothed density of the unprojected
+quantity that cause the associated cumulative distribution function (CDF) of
+the projected quantity to exactly reproduce the empirical CDF of the sample at
+the locations of the n data values. We smooth the raw density using
+nonparametric kernel density estimation with a normal kernel of bandwidth
+\sigma. We calibrate the dependence of \sigma on n by Monte Carlo experiments
+performed on samples drawn from a theoretical density, in which the integrated
+square error is minimized. We scale this calibration to the ranges of real RV
+samples using the Normal Reference Rule. The resolution and amplitude accuracy
+of the estimated density improve with n. For typical RV and ML samples, we
+expect the fractional noise at the PDF peak to be approximately 80 n^{-\log 2}.
+For illustrations, we apply the new method to 67 RV values given a similar
+treatment by Jorissen et al. in 2001, and to the 308 RV values listed at
+exoplanets.org on 20 October 2010. In addition to analyzing observational
+results, our methods can be used to develop measurement
+requirements--particularly on the minimum sample size n--for future programs,
+such as the microlensing survey of Earth-like exoplanets recommended by the
+Astro 2010 committee.

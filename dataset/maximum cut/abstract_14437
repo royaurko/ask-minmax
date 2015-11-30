@@ -1,0 +1,12 @@
+Likelihood ratio tests are a widely used method in global analyses in
+particle physics. The computation of the statistical significance (p-value) of
+these tests is usually done with a simple formula that relies on Wilks'
+theorem. There are, however, many realistic situations where Wilks' theorem
+does not apply. In particular, no simple formula exists for the comparison of
+models that are not nested, in the sense that one model can be obtained from
+the other by fixing some of its parameters. In this paper I present methods for
+efficient numerical computations of p-values, which work for both nested and
+non-nested models and do not rely on additional approximations. These methods
+have been implemented in a publicly available C++ framework for maximum
+likelihood fits called myFitter and have recently been applied in a global
+analysis of the Standard Model with a fourth generation of fermions.

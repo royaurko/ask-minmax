@@ -1,0 +1,17 @@
+In this paper, a compressed membership problem for finite automata, both
+deterministic and non-deterministic, with compressed transition labels is
+studied. The compression is represented by straight-line programs (SLPs), i.e.
+context-free grammars generating exactly one string. A novel technique of
+dealing with SLPs is introduced: the SLPs are recompressed, so that substrings
+of the input text are encoded in SLPs labelling the transitions of the NFA
+(DFA) in the same way, as in the SLP representing the input text. To this end,
+the SLPs are locally decompressed and then recompressed in a uniform way.
+Furthermore, such recompression induces only small changes in the automaton, in
+particular, the size of the automaton remains polynomial.
+  Using this technique it is shown that the compressed membership for NFA with
+compressed labels is in NP, thus confirming the conjecture of Plandowski and
+Rytter and extending the partial result of Lohrey and Mathissen; as it is
+already known, that this problem is NP-hard, we settle its exact computational
+complexity. Moreover, the same technique applied to the compressed membership
+for DFA with compressed labels yields that this problem is in P; for this
+problem, only trivial upper-bound PSPACE was known.

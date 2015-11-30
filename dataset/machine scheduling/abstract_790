@@ -1,0 +1,15 @@
+This work introduces a runtime model for managing communication with support
+for latency-hiding. The model enables non-computer science researchers to
+exploit communication latency-hiding techniques seamlessly. For compiled
+languages, it is often possible to create efficient schedules for
+communication, but this is not the case for interpreted languages. By
+maintaining data dependencies between scheduled operations, it is possible to
+aggressively initiate communication and lazily evaluate tasks to allow maximal
+time for the communication to finish before entering a wait state. We implement
+a heuristic of this model in DistNumPy, an auto-parallelizing version of
+numerical Python that allows sequential NumPy programs to run on distributed
+memory architectures. Furthermore, we present performance comparisons for eight
+benchmarks with and without automatic latency-hiding. The results shows that
+our model reduces the time spent on waiting for communication as much as 27
+times, from a maximum of 54% to only 2% of the total execution time, in a
+stencil application.

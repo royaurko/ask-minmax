@@ -1,0 +1,15 @@
+Canonical correlation analysis is a statistical technique that is used to
+find relations between two sets of variables. An important extension in pattern
+analysis is to consider more than two sets of variables. This problem can be
+expressed as a quadratically constrained quadratic program (QCQP), commonly
+referred to Multi-set Canonical Correlation Analysis (MCCA). This is a
+non-convex problem and so greedy algorithms converge to local optima without
+any guarantees on global optimality. In this paper, we show that despite being
+highly structured, finding the optimal solution is NP-Hard. This motivates our
+relaxation of the QCQP to a semidefinite program (SDP). The SDP is convex, can
+be solved reasonably efficiently and comes with both absolute and
+output-sensitive approximation quality. In addition to theoretical guarantees,
+we do an extensive comparison of the QCQP method and the SDP relaxation on a
+variety of synthetic and real world data. Finally, we present two useful
+extensions: we incorporate kernel methods and computing multiple sets of
+canonical vectors.

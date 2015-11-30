@@ -1,0 +1,25 @@
+Bidimensionality theory is a powerful framework for the development of
+metaalgorithmic techniques. It was introduced by Demaine et al. as a tool to
+obtain sub-exponential time parameterized algorithms for problems on H-minor
+free graphs. Demaine and Hajiaghayi extended the theory to obtain PTASs for
+bidimensional problems, and subsequently improved these results to EPTASs.
+Fomin et. al related the theory to the existence of linear kernels for
+parameterized problems. In this paper we revisit bidimensionality theory from
+the perspective of approximation algorithms and redesign the framework for
+obtaining EPTASs to be more powerful, easier to apply and easier to understand.
+  Two of the most widely used approaches to obtain PTASs on planar graphs are
+the Lipton-Tarjan separator based approach, and Baker's approach. Demaine and
+Hajiaghayi strengthened both approaches using bidimensionality and obtained
+EPTASs for a multitude of problems. We unify the two strenghtened approaches to
+combine the best of both worlds. At the heart of our framework is a
+decomposition lemma which states that for "most" bidimensional problems, there
+is a polynomial time algorithm which given an H-minor-free graph G as input and
+an e > 0 outputs a vertex set X of size e * OPT such that the treewidth of G n
+X is f(e). Here, OPT is the objective function value of the problem in question
+and f is a function depending only on e. This allows us to obtain EPTASs on
+(apex)-minor-free graphs for all problems covered by the previous framework, as
+well as for a wide range of packing problems, partial covering problems and
+problems that are neither closed under taking minors, nor contractions. To the
+best of our knowledge for many of these problems including cycle packing,
+vertex-h-packing, maximum leaf spanning tree, and partial r-dominating set no
+EPTASs on planar graphs were previously known.

@@ -1,0 +1,14 @@
+Each member of an $n$-person team has a secret, say a password. The $k$ out
+of $n$ gruppen secret sharing requires that any group of $k$ members should be
+able to recover the secrets of the other $n-k$ members, while any group of
+$k-1$ or less members should have no information on the secret of other team
+member even if other secrets leak out. We prove that when all secrets are
+chosen independently and have size $s$, then each team member must have a share
+of size at least $(n-k)s$, and we present a scheme which achieves this bound
+when $s$ is large enough. This result shows a significant saving over $n$
+independent applications of Shamir's $k$ out of $n-1$ threshold schemes which
+assigns shares of size $(n-1)s$ to each team member independently of $k$.
+  We also show how to set up such a scheme without any trusted dealer, and how
+the secrets can be recovered, possibly multiple times, without leaking
+information. We also discuss how our scheme fits to the much-investigated
+multiple secret sharing methods.

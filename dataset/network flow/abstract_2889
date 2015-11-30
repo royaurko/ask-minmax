@@ -1,0 +1,21 @@
+The problem of finding a resource residing in a network node (the
+\emph{resource location problem}) is a challenge in complex networks due to
+aspects as network size, unknown network topology, and network dynamics. The
+problem is especially difficult if no requirements on the resource placement
+strategy or the network structure are to be imposed, assuming of course that
+keeping centralized resource information is not feasible or appropriate. Under
+these conditions, random algorithms are useful to search the network. A
+possible strategy for static networks, proposed in previous work, uses short
+random walks precomputed at each network node as partial walks to construct
+longer random walks with associated resource information. In this work, we
+adapt the previous mechanisms to dynamic networks, where resource instances may
+appear in, and disappear from, network nodes, and the nodes themselves may
+leave and join the network, resembling realistic scenarios. We analyze the
+resulting resource location mechanisms, providing expressions that accurately
+predict average search lengths, which are validated using simulation
+experiments. Reduction of average search lengths compared to simple random walk
+searches are found to be very large, even in the face of high network
+volatility. We also study the cost of the mechanisms, focusing on the overhead
+implied by the periodic recomputation of partial walks to refresh the
+information on resources, concluding that the proposed mechanisms behave
+efficiently and robustly in dynamic networks.

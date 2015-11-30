@@ -1,0 +1,13 @@
+We present a practical implementation of an optimal first-order method, due
+to Nesterov, for large-scale total variation regularization in tomographic
+reconstruction, image deblurring, etc. The algorithm applies to $\mu$-strongly
+convex objective functions with $L$-Lipschitz continuous gradient. In the
+framework of Nesterov both $\mu$ and $L$ are assumed known -- an assumption
+that is seldom satisfied in practice. We propose to incorporate mechanisms to
+estimate locally sufficient $\mu$ and $L$ during the iterations. The mechanisms
+also allow for the application to non-strongly convex functions. We discuss the
+iteration complexity of several first-order methods, including the proposed
+algorithm, and we use a 3D tomography problem to compare the performance of
+these methods. The results show that for ill-conditioned problems solved to
+high accuracy, the proposed method significantly outperforms state-of-the-art
+first-order methods, as also suggested by theoretical results.

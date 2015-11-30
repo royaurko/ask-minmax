@@ -1,0 +1,20 @@
+Networked control systems (NCS) are spatially distributed systems where
+communication among plants, sensors, actuators and controllers occurs in a
+shared communication network. NCS have been studied for the last ten years and
+important research results have been obtained. These results are in the area of
+stability and stabilizability. However, while important, these results must be
+complemented in different areas to be able to design effective NCS. In this
+paper we approach the control design of NCS using symbolic (finite) models.
+Symbolic models are abstract descriptions of continuous systems where one
+symbol corresponds to an "aggregate" of continuous states. We consider a fairly
+general multiple-loop network architecture where plants communicate with
+digital controllers through a shared, non-ideal, communication network
+characterized by variable sampling and transmission intervals, variable
+communication delays, quantization errors, packet losses and limited bandwidth.
+We first derive a procedure to obtain symbolic models that are proven to
+approximate NCS in the sense of alternating approximate bisimulation. We then
+use these symbolic models to design symbolic controllers that realize
+specifications expressed in terms of automata on infinite strings. An example
+is provided where we address the control design of a pair of nonlinear control
+systems sharing a common communication network. The closed-loop NCS obtained is
+validated through the OMNeT++ network simulation framework.

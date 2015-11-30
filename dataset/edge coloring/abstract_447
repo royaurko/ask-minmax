@@ -1,0 +1,12 @@
+We report a calculation reduction method for color computer-generated
+holograms (CGHs) using color space conversion. Color CGHs are generally
+calculated on RGB space. In this paper, we calculate color CGHs in other color
+spaces: for example, YCbCr color space. In YCbCr color space, a RGB image is
+converted to the luminance component (Y), blue-difference chroma (Cb) and
+red-difference chroma (Cr) components. In terms of the human eye, although the
+negligible difference of the luminance component is well-recognized, the
+difference of the other components is not. In this method, the luminance
+component is normal sampled and the chroma components are down-sampled. The
+down-sampling allows us to accelerate the calculation of the color CGHs. We
+compute diffraction calculations from the components, and then we convert the
+diffracted results in YCbCr color space to RGB color space.

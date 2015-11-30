@@ -1,0 +1,27 @@
+Light rays incident on a transparent object of uniform refractive index
+undergo deflections, which uniquely characterize the surface geometry of the
+object. Associated with each point on the surface is a deflection map (or
+spectrum) which describes the pattern of deflections in various directions.
+This article presents a novel method to efficiently acquire and reconstruct
+sparse deflection spectra induced by smooth object surfaces. To this end, we
+leverage the framework of Compressed Sensing (CS) in a particular
+implementation of a schlieren deflectometer, i.e., an optical system providing
+linear measurements of deflection spectra with programmable spatial light
+modulation patterns. We design those modulation patterns on the principle of
+spread spectrum CS for reducing the number of observations. The ability of our
+device to simultaneously observe the deflection spectra on a dense
+discretization of the object surface is related to a Multiple Measurement
+Vector (MMV) model. This scheme allows us to estimate both the noise power and
+the instrumental point spread function.
+  We formulate the spectrum reconstruction task as the solving of a linear
+inverse problem regularized by an analysis sparsity prior using a translation
+invariant wavelet frame. Our results demonstrate the capability and advantages
+of using a CS based approach for deflectometric imaging both on simulated data
+and experimental deflectometric data.
+  Finally, the paper presents an extension of our method showing how we can
+extract the main deflection direction in each point of the object surface from
+a few compressive measurements, without needing any costly reconstruction
+procedures. This compressive characterization is then confirmed with
+experimental results on simple plano-convex and multifocal intra-ocular lenses
+studying the evolution of the main deflection as a function of the object point
+location.

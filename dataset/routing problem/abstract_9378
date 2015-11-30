@@ -1,0 +1,11 @@
+This paper addresses the problem of approximate MAP-MRF inference in general
+graphical models. Following [36], we consider a family of linear programming
+relaxations of the problem where each relaxation is specified by a set of
+nested pairs of factors for which the marginalization constraint needs to be
+enforced. We develop a generalization of the TRW-S algorithm [9] for this
+problem, where we use a decomposition into junction chains, monotonic w.r.t.
+some ordering on the nodes. This generalizes the monotonic chains in [9] in a
+natural way. We also show how to deal with nested factors in an efficient way.
+Experiments show an improvement over min-sum diffusion, MPLP and subgradient
+ascent algorithms on a number of computer vision and natural language
+processing problems.

@@ -1,0 +1,22 @@
+In this paper we address the complexity issues of two agreement problems in
+oblivious robot networks namely gathering and scattering. These abstractions
+are fundamental coordination problems in cooperative mobile robotics. Moreover,
+their oblivious characteristics makes them appealing for self-stabilization
+since they are self-stabilizing with no extra-cost. Given a set of robots with
+arbitrary initial location and no initial agreement on a global coordinate
+system, gathering requires that all robots reach the exact same but not
+predetermined location while scattering aims at scatter robots such that no two
+robots share the same location. Both deterministic gathering and scattering
+have been proved impossible under arbitrary schedulers therefore probabilistic
+solutions have been recently proposed. The contribution of this paper is
+twofold. First, we propose a detailed complexity analysis of the existent
+probabilistic gathering algorithms in both fault-free and fault-prone
+environments. We consider both crash and byzantine-prone environments.
+Moreover, using Markov chains tools and additional assumptions on the
+environment we prove that the gathering convergence time can be reduced from
+O(n^2) (the best known tight bound) to O(nln(n)). Additionally, we prove that
+in crash-prone environments gathering is achieved in O(nln(n)+2f). Second,
+using the same technique we prove that the best known scattering strategy
+converges in fault-free systems is O(n) (which is one to optimal) while in
+crash-prone environments it needs O(n-f). Finally, we conclude the paper with a
+discussion related to different strategies to gather oblivious robots.

@@ -1,0 +1,15 @@
+Finding optimal evolutionary trees from sequence data is typically an
+intractable problem, and there is usually no way of knowing how close to
+optimal the best tree from some search truly is. The problem would seem to be
+particularly acute when we have many taxa and when that data has high levels of
+homoplasy, in which the individual characters require many changes to fit on
+the best tree. However, a recent mathematical result has provided a precise
+tool to generate a short number of high-homoplasy characters for any given
+tree, so that this tree is provably the optimal tree under the maximum
+parsimony criterion. This provides, for the first time, a rigorous way to test
+tree search algorithms on homoplasy-rich data, where we know in advance what
+the `best' tree is. In this short note we consider just one search program
+(TNT) but show that it is able to locate the globally optimal tree correctly
+for 32,768 taxa, even though the characters in the dataset requires, on
+average, 1148 state-changes each to fit on this tree, and the number of
+characters is only 57.

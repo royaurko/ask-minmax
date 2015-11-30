@@ -1,0 +1,14 @@
+Recent developments in data science and big data research have produced an
+abundance of large data sets that are too big to be analyzed in their entirety,
+due to limits on either computer memory or storage capacity. Here, we introduce
+our R package 'BayesSummaryStatLM' for Bayesian linear regression models with
+Markov chain Monte Carlo implementation that overcomes these limitations. Our
+Bayesian models use only summary statistics of data as input; these summary
+statistics can be calculated from subsets of big data and combined over
+subsets. Thus, complete data sets do not need to be read into memory in full,
+which removes any physical memory limitations of a user. Our package
+incorporates the R package 'ff' and its functions for reading in big data sets
+in chunks while simultaneously calculating summary statistics. We describe our
+Bayesian linear regression models, including several choices of prior
+distributions for unknown model parameters, and illustrate capabilities and
+features of our R package using both simulated and real data sets.

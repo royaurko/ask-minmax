@@ -1,0 +1,17 @@
+We consider the neighborhood tree induced by alternating the use of different
+neighborhood structures within a local search descent. We investigate the issue
+of designing a search strategy operating at the neighborhood tree level by
+exploring different paths of the tree in a heuristic way. We show that allowing
+the search to 'backtrack' to a previously visited solution and resuming the
+iterative variable neighborhood descent by 'pruning' the already explored
+neighborhood branches leads to the design of effective and efficient search
+heuristics. We describe this idea by discussing its basic design components
+within a generic algorithmic scheme and we propose some simple and intuitive
+strategies to guide the search when traversing the neighborhood tree. We
+conduct a thorough experimental analysis of this approach by considering two
+different problem domains, namely, the Total Weighted Tardiness Problem
+(SMTWTP), and the more sophisticated Location Routing Problem (LRP). We show
+that independently of the considered domain, the approach is highly
+competitive. In particular, we show that using different branching and
+backtracking strategies when exploring the neighborhood tree allows us to
+achieve different trade-offs in terms of solution quality and computing cost.

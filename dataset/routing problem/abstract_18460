@@ -1,0 +1,18 @@
+In multi-criteria optimization problems, several objective functions have to
+be optimized. Since the different objective functions are usually in conflict
+with each other, one cannot consider only one particular solution as the
+optimal solution. Instead, the aim is to compute a so-called Pareto curve of
+solutions. Since Pareto curves cannot be computed efficiently in general, we
+have to be content with approximations to them.
+  We design a deterministic polynomial-time algorithm for multi-criteria
+g-metric STSP that computes (min{1 +g, 2g^2/(2g^2 -2g +1)} + eps)-approximate
+Pareto curves for all 1/2<=g<=1. In particular, we obtain a
+(2+eps)-approximation for multi-criteria metric STSP. We also present two
+randomized approximation algorithms for multi-criteria g-metric STSP that
+achieve approximation ratios of (2g^3 +2g^2)/(3g^2 -2g +1) + eps and (1 +g)/(1
++3g -4g^2) + eps, respectively.
+  Moreover, we present randomized approximation algorithms for multi-criteria
+g-metric ATSP (ratio 1/2 + g^3/(1 -3g^2) + eps) for g < 1/sqrt(3)), STSP with
+weights 1 and 2 (ratio 4/3) and ATSP with weights 1 and 2 (ratio 3/2). To do
+this, we design randomized approximation schemes for multi-criteria cycle cover
+and graph factor problems.

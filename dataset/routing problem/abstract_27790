@@ -1,0 +1,13 @@
+Nonlinear systems of partial differential equations (PDEs) may permit several
+distinct solutions. The typical current approach to finding distinct solutions
+is to start Newton's method with many different initial guesses, hoping to find
+starting points that lie in different basins of attraction. In this paper, we
+present an infinite-dimensional deflation algorithm for systematically
+modifying the residual of a nonlinear PDE problem to eliminate known solutions
+from consideration. This enables the Newton--Kantorovitch iteration to converge
+to several different solutions, even starting from the same initial guess. The
+deflated Jacobian is dense, but an efficient preconditioning strategy is
+devised, and the number of Krylov iterations is observed not to grow as
+solutions are deflated. The power of the approach is demonstrated on several
+problems from special functions, phase separation, differential geometry and
+fluid mechanics that permit distinct solutions.

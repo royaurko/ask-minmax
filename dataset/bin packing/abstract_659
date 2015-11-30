@@ -1,0 +1,16 @@
+We explore the fundamental limits of distributed balls-into-bins algorithms.
+We present an adaptive symmetric algorithm that achieves a bin load of two in
+log* n+O(1) communication rounds using O(n) messages in total. Larger bin loads
+can be traded in for smaller time complexities. We prove a matching lower bound
+of (1-o(1))log* n on the time complexity of symmetric algorithms that guarantee
+small bin loads at an asymptotically optimal message complexity of O(n). For
+each assumption of the lower bound, we provide an algorithm violating it, in
+turn achieving a constant maximum bin load in constant time.
+  As an application, we consider the following problem. Given a fully connected
+graph of n nodes, where each node needs to send and receive up to n messages,
+and in each round each node may send one message over each link, deliver all
+messages as quickly as possible to their destinations. We give a simple and
+robust algorithm of time complexity O(log* n) for this task and provide a
+generalization to the case where all nodes initially hold arbitrary sets of
+messages. A less practical algorithm terminates within asymptotically optimal
+O(1) rounds. All these bounds hold with high probability.

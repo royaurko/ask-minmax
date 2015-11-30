@@ -1,0 +1,22 @@
+This paper reports on the first systematic study of congestion-aware routing
+algorithms for wireless mesh networks to achieve an improved end-end delay
+performance. In particular, we compare 802.11 compatible implementations of a
+set of congestion-aware routing protocols against our implementation of state
+of the art shortest path routing protocol (SRCR). We implement congestion-aware
+routing algorithms Backpressure (BP), Enhanced-Backpressure (E-BP) adapted from
+[1], [2] suitably adjusted for 802.11 implementation. We then propose and
+implement Congestion Diversity Protocol (CDP) adapted from [3] recognizing the
+limitations of BP and E-BP for 802.11-based wireless networks. SRCR solely
+utilizes link qualities, while BP relies on queue differential to route
+packets. CDP and E-BP rely on distance metrics which take into account queue
+backlogs and link qualities in the network. E-BP computes its metric by summing
+the ETX and queue differential, while CDP determines its metric by calculating
+the least draining time to the destination. Our small testbed consisting of
+twelve 802.11g nodes enables us to empirically compare the performance of
+congestion-aware routing protocols (BP, E-BP and CDP) against benchmark SRCR.
+For medium to high load UDP traffic, we observe that CDP exhibits significant
+improvement with respect to both end-end delay and throughput over other
+protocols with no loss of performance for TCP traffic. Backpressure-based
+routing algorithms (BP and E-BP) show poorer performance for UDP and TCP
+traffic. Finally, we carefully study the effects of the modular approach to
+congestion-aware routing design in which the MAC layer is left intact

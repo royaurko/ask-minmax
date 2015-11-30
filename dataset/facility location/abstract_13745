@@ -1,0 +1,15 @@
+A large number of streaming applications use reliable transport protocols
+such as TCP to deliver content over the Internet. However, head-of-line
+blocking due to packet loss recovery can often result in unwanted behavior and
+poor application layer performance. Transport layer coding can help mitigate
+this issue by helping to recover from lost packets without waiting for
+retransmissions. We consider the use of an on-line network code that inserts
+coded packets at strategic locations within the underlying packet stream. If
+retransmissions are necessary, additional coding packets are transmitted to
+ensure the receiver's ability to decode. An analysis of this scheme is provided
+that helps determine both the expected in-order packet delivery delay and its
+variance. Numerical results are then used to determine when and how many coded
+packets should be inserted into the packet stream, in addition to determining
+the trade-offs between reducing the in-order delay and the achievable rate. The
+analytical results are finally compared with experimental results to provide
+insight into how to minimize the delay of existing transport layer protocols.

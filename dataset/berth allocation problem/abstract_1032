@@ -1,0 +1,16 @@
+We present a novel bio-inspired and dynamic coding scheme for static images.
+Our coder aims at reproducing the main steps of the visual stimulus processing
+in the mammalian retina taking into account its time behavior. The main novelty
+of this work is to show how to exploit the time behavior of the retina cells to
+ensure, in a simple way, scalability and bit allocation. To do so, our main
+source of inspiration will be the biologically plausible retina model called
+Virtual Retina. Following a similar structure, our model has two stages. The
+first stage is an image transform which is performed by the outer layers in the
+retina. Here it is modelled by filtering the image with a bank of difference of
+Gaussians with time-delays. The second stage is a time-dependent
+analog-to-digital conversion which is performed by the inner layers in the
+retina. Thanks to its conception, our coder enables scalability and bit
+allocation across time. Also, our decoded images do not show annoying artefacts
+such as ringing and block effects. As a whole, this article shows how to
+capture the main properties of a biological system, here the retina, in order
+to design a new efficient coder.

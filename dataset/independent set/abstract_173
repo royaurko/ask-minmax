@@ -1,0 +1,10 @@
+In many situations it is important to be able to propose $N$ independent
+realizations of a given distribution law. We propose a strategy for making $N$
+parallel Monte Carlo Markov Chains (MCMC) interact in order to get an
+approximation of an independent $N$-sample of a given target law. In this
+method each individual chain proposes candidates for all other chains. We prove
+that the set of interacting chains is itself a MCMC method for the product of
+$N$ target measures. Compared to independent parallel chains this method is
+more time consuming, but we show through concrete examples that it possesses
+many advantages: it can speed up convergence toward the target law as well as
+handle the multi-modal case.

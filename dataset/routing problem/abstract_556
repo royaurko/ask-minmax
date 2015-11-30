@@ -1,0 +1,25 @@
+The notion of aggregate signature has been motivated by applications and it
+enables any user to compress different signatures signed by different signers
+on different messages into a short signature. Sequential aggregate signature,
+in turn, is a special kind of aggregate signature that only allows a signer to
+add his signature into an aggregate signature in sequential order. This latter
+scheme has applications in diversified settings such as in reducing bandwidth
+of certificate chains and in secure routing protocols. Lu, Ostrovsky, Sahai,
+Shacham, and Waters (EUROCRYPT 2006) presented the first sequential aggregate
+signature scheme in the standard model. The size of their public key, however,
+is quite large (i.e., the number of group elements is proportional to the
+security parameter), and therefore, they suggested as an open problem the
+construction of such a scheme with short keys.
+  In this paper, we propose the first sequential aggregate signature schemes
+with short public keys (i.e., a constant number of group elements) in prime
+order (asymmetric) bilinear groups that are secure under static assumptions in
+the standard model. Furthermore, our schemes employ a constant number of
+pairing operations per message signing and message verification operation.
+Technically, we start with a public-key signature scheme based on the recent
+dual system encryption technique of Lewko and Waters (TCC 2010). This technique
+cannot directly provide an aggregate signature scheme since, as we observed,
+additional elements should be published in a public key to support aggregation.
+Thus, our constructions are careful augmentation techniques for the dual system
+technique to allow it to support sequential aggregate signature schemes. We
+also propose a multi-signature scheme with short public parameters in the
+standard model.

@@ -1,0 +1,18 @@
+In a recent paper entitled "Inconsistencies of Recently Proposed Citation
+Impact Indicators and how to Avoid Them," Schreiber (2012, at arXiv:1202.3861)
+proposed (i) a method to assess tied ranks consistently and (ii) fractional
+attribution to percentile ranks in the case of relatively small samples (e.g.,
+for n < 100). Schreiber's solution to the problem of how to handle tied ranks
+is convincing, in my opinion (cf. Pudovkin & Garfield, 2009). The fractional
+attribution, however, is computationally intensive and cannot be done manually
+for even moderately large batches of documents. Schreiber attributed scores
+fractionally to the six percentile rank classes used in the Science and
+Engineering Indicators of the U.S. National Science Board, and thus missed, in
+my opinion, the point that fractional attribution at the level of hundred
+percentiles-or equivalently quantiles as the continuous random variable-is only
+a linear, and therefore much less complex problem. Given the quantile-values,
+the non-linear attribution to the six classes or any other evaluation scheme is
+then a question of aggregation. A new routine based on these principles
+(including Schreiber's solution for tied ranks) is made available as software
+for the assessment of documents retrieved from the Web of Science (at
+http://www.leydesdorff.net/software/i3).

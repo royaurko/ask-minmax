@@ -1,0 +1,18 @@
+In parallel computing, a problem is divided into a set of smaller tasks that
+are distributed across multiple processing elements. Balancing the load of the
+processing elements is key to achieving good performance and scalability. If
+the computational costs of the individual tasks vary over time in an
+unpredictable way, dynamic load balancing aims at migrating them between
+processing elements so as to maintain load balance. During dynamic load
+balancing, the tasks amount to indivisible work packets with a real-valued
+cost. For this case of indivisible, real- valued loads, we analyze the
+balancing circuit model, a local dynamic load-balancing scheme that does not
+require global communication. We extend previous analyses to the present case
+and provide a probabilistic bound for the achievable load balance. Based on an
+analogy with the offline balls-into-bins problem, we further propose a novel
+algorithm for dynamic balancing of indivisible, real-valued loads. We benchmark
+the proposed algorithm in numerical experiments and compare it with the
+classical greedy algorithm, both in terms of solution quality and communication
+cost. We find that the increased communication cost of the proposed algorithm
+is compensated by a higher solution quality, leading on average to about an
+order of magnitude gain in overall performance.

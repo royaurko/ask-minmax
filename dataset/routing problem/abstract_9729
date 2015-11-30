@@ -1,0 +1,12 @@
+In this paper, we propose a decomposition approach for eigenvalue problems
+with spatial symmetries, including the formulation, discretization as well as
+implementation. This approach can handle eigenvalue problems with either
+Abelian or non-Abelian symmetries, and is friendly for grid-based
+discretizations such as finite difference, finite element or finite volume
+methods. With the formulation, we divide the original eigenvalue problem into a
+set of subproblems and require only a smaller number of eigenpairs for each
+subproblem. We implement the decomposition approach with finite elements and
+parallelize our code in two levels. We show that the decomposition approach can
+improve the efficiency and scalability of iterative diagonalization. In
+particular, we apply the approach to solving Kohn--Sham equations of symmetric
+molecules consisting of hundreds of atoms.

@@ -1,0 +1,23 @@
+An {\em ancestry labeling scheme} labels the nodes of any tree in such a way
+that ancestry queries between any two nodes in a tree can be answered just by
+looking at their corresponding labels. The common measure to evaluate the
+quality of an ancestry labeling scheme is by its {\em label size}, that is the
+maximal number of bits stored in a label, taken over all $n$-node trees. The
+design of ancestry labeling schemes finds applications in XML search engines.
+In the context of these applications, even small improvements in the label size
+are important. In fact, the literature about this topic is interested in the
+exact label size rather than just its order of magnitude. As a result,
+following the proposal of an original scheme of size $2\log n$ bits, a
+considerable amount of work was devoted to improve the bound on the label size.
+The current state of the art upper bound is $\log n + O(\sqrt{\log n})$ bits
+which is still far from the known $\log n + \Omega(\log\log n)$ lower bound.
+Moreover, the hidden constant factor in the additive $O(\sqrt{\log n})$ term is
+large, which makes this term dominate the label size for typical current XML
+trees.
+  In attempt to provide good performances for real XML data, we rely on the
+observation that the depth of a typical XML tree is bounded from above by a
+small constant. Having this in mind, we present an ancestry labeling scheme of
+size $\log n+2\log d +O(1)$, for the family of trees with at most $n$ nodes and
+depth at most $d$. In addition to our main result, we prove a result that may
+be of independent interest concerning the existence of a linear {\em universal
+graph} for the family of forests with trees of bounded depth.

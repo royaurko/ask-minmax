@@ -1,0 +1,23 @@
+The next generation of large-scale spectroscopic survey experiments such as
+DESI, will use thousands of fiber positioner robots packed on a focal plate. In
+order to maximize the observing time with this robotic system we need to move
+in parallel the fiber-ends of all positioners from the previous to the next
+target coordinates. Direct trajectories are not feasible due to collision risks
+that could undeniably damage the robots and impact the survey operation and
+performance. We have previously developed a motion planning method based on a
+novel decentralized navigation function for collision-free coordination of
+fiber positioners. The navigation function takes into account the configuration
+of positioners as well as their envelope constraints. The motion planning
+scheme has linear complexity and short motion duration (~2.5 seconds with the
+maximum speed of 30 rpm for the positioner), which is independent of the number
+of positioners. These two key advantages of the decentralization designate the
+method as a promising solution for the collision-free motion-planning problem
+in the next-generation of fiber-fed spectrographs. In a framework where a
+centralized computer communicates with the positioner robots, communication
+overhead can be reduced significantly by using velocity profiles consisting of
+a few bits only. We present here the discretization of velocity profiles to
+ensure the feasibility of a real-time coordination for a large number of
+positioners. The modified motion planning method that generates piecewise
+linearized position profiles guarantees collision-free trajectories for all the
+robots. The velocity profiles fit few bits at the expense of higher
+computational costs.

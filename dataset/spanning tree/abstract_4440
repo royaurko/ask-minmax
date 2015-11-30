@@ -1,0 +1,14 @@
+Existing approaches to the synthesis of reactive systems typically involve
+the construction of transition systems such as Mealy automata. However, in
+order to obtain a succinct representation of the desired system, structured
+programs can be a more suitable model. In 2011, Madhusudan proposed an
+algorithm to construct a structured reactive program for a given omega-regular
+specification without synthesizing a transition system first. His procedure is
+based on two-way alternating omega-automata on finite trees that recognize the
+set of "correct" programs.
+  We present a more elementary and direct approach using only deterministic
+bottom-up tree automata that compute so-called signatures for a given program.
+In doing so, we extend Madhusudan's results to the wider class of programs with
+bounded delay, which may read several input symbols before producing an output
+symbol (or vice versa). As a formal foundation, we inductively define a
+semantics for such programs.

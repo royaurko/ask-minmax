@@ -1,0 +1,21 @@
+Complex processes in perforated domains occur in many real-world
+applications. These problems are typically characterized by physical processes
+in domains with multiple scales (see Figure 1 for the illustration of a
+perforated domain). Moreover, these problems are intrinsically multiscale and
+their discretizations can yield very large linear or nonlinear systems. In this
+paper, we investigate multiscale approaches that attempt to solve such problems
+on a coarse grid by constructing multiscale basis functions in each coarse
+grid, where the coarse grid can contain many perforations. In particular, we
+are interested in cases when there is no scale separation and the perforations
+can have different sizes. In this regard, we mention some earlier pioneering
+works [14, 18, 17], where the contributors develop multiscale finite element
+methods. In our paper, we follow Generalized Multiscale Finite Element Method
+(GMsFEM) and develop a multiscale procedure where we identify multiscale basis
+functions in each coarse block using snapshot space and local spectral
+problems. We show that with a few basis functions in each coarse block, one can
+accurately approximate the solution, where each coarse block can contain many
+small inclusions. We apply our general concept to (1) Laplace equation in
+perforated domain; (2) elasticity equation in perforated domain; and (3) Stokes
+equations in perforated domain. Numerical results are presented for these
+problems using two types of heterogeneous perforated domains. The analysis of
+the proposed methods will be presented elsewhere.

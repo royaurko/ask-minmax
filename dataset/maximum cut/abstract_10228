@@ -1,0 +1,24 @@
+Interference alignment is a transmission technique for exploiting all
+available degrees of freedom in the interference channel with an arbitrary
+number of users. Most prior work on interference alignment, however, neglects
+interference from other nodes in the network not participating in the alignment
+operation. This paper proposes three generalizations of interference alignment
+for the multiple-antenna interference channel with multiple users that account
+for colored noise, which models uncoordinated interference. First, a minimum
+interference-plus-noise leakage algorithm is presented, and shown to be
+equivalent to previous subspace methods when noise is spatially white or
+negligible. A joint minimum mean squared error design is then proposed that
+jointly optimizes the transmit precoders and receive spatial filters, whereas
+previous designs neglect the receive spatial filter. This algorithm is shown to
+be a generalization of previous joint MMSE designs for other system
+configurations such as the broadcast channel. Finally, a maximum
+signal-to-interference-plus-noise ratio algorithm is developed that is proven
+to converge, unlike previous maximum SINR algorithms. The latter two designs
+are shown to have increased complexity due to non-orthogonal precoders, more
+required iterations, or more channel state knowledge than the min INL or
+subspace methods. The sum throughput performance of these algorithms is
+simulated in the context of a network with uncoordinated co-channel interferers
+not participating in the alignment protocol. It is found that a network with
+cochannel interference can benefit from employing precoders designed to
+consider that interference, but in some cases, ignoring the co-channel
+interference is advantageous.

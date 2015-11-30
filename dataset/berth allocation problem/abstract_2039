@@ -1,0 +1,16 @@
+In many inverse problems, model parameters cannot be precisely determined
+from observational data. Bayesian inference provides a mechanism for capturing
+the resulting parameter uncertainty, but typically at a high computational
+cost. This work introduces a multiscale decomposition that exploits conditional
+independence across scales, when present in certain classes of inverse
+problems, to decouple Bayesian inference into two stages: (1) a computationally
+tractable coarse-scale inference problem; and (2) a mapping of the
+low-dimensional coarse-scale posterior distribution into the original
+high-dimensional parameter space. This decomposition relies on a
+characterization of the non-Gaussian joint distribution of coarse- and
+fine-scale quantities via optimal transport maps. We demonstrate our approach
+on a sequence of inverse problems arising in subsurface flow, using the
+multiscale finite element method to discretize the steady state pressure
+equation. We compare the multiscale strategy with full-dimensional Markov chain
+Monte Carlo on a problem of moderate dimension (100 parameters) and then use it
+to infer a conductivity field described by over 10,000 parameters.

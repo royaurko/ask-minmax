@@ -1,0 +1,14 @@
+We address the tactical fixed job scheduling problem with spread-time
+constraints. In such a problem, there are a fixed number of classes of machines
+and a fixed number of groups of jobs. Jobs of the same group can only be
+processed by machines of a given set of classes. All jobs have their fixed
+start and end times. Each machine is associated with a cost according to its
+machine class. Machines have spread-time constraints, with which each machine
+is only available for $L$ consecutive time units from the start time of the
+earliest job assigned to it. The objective is to minimize the total cost of the
+machines used to process all the jobs. For this strongly NP-hard problem, we
+develop a branch-and-price algorithm, which solves instances with up to $300$
+jobs, as compared with CPLEX, which cannot solve instances of $100$ jobs. We
+further investigate the influence of machine flexibility by computational
+experiments. Our results show that limited machine flexibility is sufficient in
+most situations.

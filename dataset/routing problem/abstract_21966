@@ -1,0 +1,17 @@
+We study the decidability of three well-known problems related to integer
+matrix multiplication: Mortality (M), Zero in the Left-Upper Corner (Z), and
+Zero in the Right-Upper Corner (R).
+  Let d and k be positive integers. Define M(k, d x d) as the following special
+case of the Mortality problem: given a set X of d -by-d integer matrices such
+that the cardinality of X is not greater than k, decide whether the d-by-d zero
+matrix belongs to X^+, where X^+ denotes the closure of X under the usual
+matrix multiplication. In the same way, define the Z(k, d x d) problem as:
+given an instance X of M(k, d x d) (the instances of Z(k, d x d) are the same
+as those of M(k, d x d)), decide whether at least one matrix in X^+ has a zero
+in the left-upper corner. Define R(k, d x d) as the variant of Z(k, d x d)
+where "left-upper corner" is replaced with "right-upper corner".
+  In the paper, we prove that M(6, 3 x 3), M(4, 5 x 5), M(3, 9 x 9), M(2, 15 x
+15), Z(5, 3 x 3), Z(3, 5 x 5), Z(2, 9 x 9), R(6, 3 x 3), R(5, 4 x 4), and R(3,
+6 x 6) are undecidable. The previous best comparable results were the
+undecidabilities of M(7, 3 x 3), M(3, 13 x 13), M(2, 21 x 21), Z(7, 3 x 3),
+Z(2, 13 x 13), R(7, 3 x 3), and R(2, 10 x 10).

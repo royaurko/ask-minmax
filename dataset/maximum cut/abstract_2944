@@ -1,0 +1,20 @@
+We describe a new B-meson full reconstruction algorithm designed for the
+Belle experiment at the B-factory KEKB, an asymmetric e+e- collider that
+collected a data sample of 771.6 x 10^6 BBbar pairs during its running time. To
+maximize the number of reconstructed B decay channels, it utilizes a
+hierarchical reconstruction procedure and probabilistic calculus instead of
+classical selection cuts. The multivariate analysis package NeuroBayes was used
+extensively to hold the balance between highest possible efficiency, robustness
+and acceptable consumption of CPU time.
+  In total, 1104 exclusive decay channels were reconstructed, employing 71
+neural networks altogether. Overall, we correctly reconstruct one B+/- or B0
+candidate in 0.28% or 0.18% of the BBbar events, respectively. Compared to the
+cut-based classical reconstruction algorithm used at the Belle experiment, this
+is an improvement in efficiency by roughly a factor of 2, depending on the
+analysis considered.
+  The new framework also features the ability to choose the desired purity or
+efficiency of the fully reconstructed sample freely. If the same purity as for
+the classical full reconstruction code is desired ~25%, the efficiency is still
+larger by nearly a factor of 2. If, on the other hand, the efficiency is chosen
+at a similar level as the classical full reconstruction, the purity rises from
+~25% to nearly 90%.

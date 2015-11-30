@@ -1,0 +1,10 @@
+In this note we briefly describe our Cholesky modification algorithm for
+streaming multiprocessor architectures. Our implementation is available in C++
+with Matlab binding, using CUDA to utilise the graphics processing unit (GPU).
+Limited speed ups are possible due to the bandwidth bound nature of the
+problem. Furthermore, a complex dependency pattern must be obeyed, requiring
+multiple kernels to be launched. Nonetheless, this makes for an interesting
+problem, and our approach can reduce the computation time by a factor of around
+7 for matrices of size 5000 by 5000 and k=16, in comparison with the LINPACK
+suite running on a CPU of comparable vintage. Much larger problems can be
+handled however due to the O(n) scaling in required GPU memory of our method.

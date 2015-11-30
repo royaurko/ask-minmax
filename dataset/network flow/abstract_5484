@@ -1,0 +1,14 @@
+The stack in various forms has been widely used as an architectural template
+for networking systems. Recently the stack has been subject to criticism for a
+lack of flexibility. However, when it comes right down to it nobody has offered
+a truly compelling alternative. Various cross-layer optimizations have been
+proposed, but these optimizations are frequently hacks to achieve a particular
+goal and offer no direct insight into why the existing network stack is
+inadequate. We propose that a fundamental problem with the existing network
+stack is that it attempts to layer functionality that is not well-suited to
+layering. In this work we use a "bottom up" model of information computation,
+storage, and transfer and the "top down" goals of networking systems to
+formulate a modular decomposition of networking systems. Based on this modular
+decomposition we propose a semantic layered structure for networking systems
+that eliminates many awkward cross-layer interactions that arise in the
+canonical layered stack.

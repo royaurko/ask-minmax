@@ -1,0 +1,12 @@
+An explicit algorithm for the minimization of an $\ell_1$ penalized least
+squares functional, with non-separable $\ell_1$ term, is proposed. Each step in
+the iterative algorithm requires four matrix vector multiplications and a
+single simple projection on a convex set (or equivalently thresholding).
+Convergence is proven and a 1/N convergence rate is derived for the functional.
+In the special case where the matrix in the $\ell_1$ term is the identity (or
+orthogonal), the algorithm reduces to the traditional iterative
+soft-thresholding algorithm. In the special case where the matrix in the
+quadratic term is the identity (or orthogonal), the algorithm reduces to a
+gradient projection algorithm for the dual problem. By replacing the projection
+with a simple proximity operator, other convex non-separable penalties than
+those based on an $\ell_1$-norm can be handled as well.

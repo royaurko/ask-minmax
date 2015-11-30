@@ -1,0 +1,18 @@
+In this paper, we study the problem of distributing a real-time video
+sequence to a group of partially connected cooperative wireless devices using
+instantly decodable network coding (IDNC). In such a scenario, the coding
+conflicts occur to service multiple devices with an immediately decodable
+packet and the transmission conflicts occur from simultaneous transmissions of
+multiple devices. To avoid these conflicts, we introduce a novel IDNC graph
+that represents all feasible coding and transmission conflict-free decisions in
+one unified framework. Moreover, a real-time video sequence has a hard deadline
+and unequal importance of video packets. Using these video characteristics and
+the new IDNC graph, we formulate the problem of minimizing the mean video
+distortion before the deadline as a finite horizon Markov decision process
+(MDP) problem. However, the backward induction algorithm that finds the optimal
+policy of the MDP formulation has high modelling and computational
+complexities. To reduce these complexities, we further design a two-stage
+maximal independent set selection algorithm, which can efficiently reduce the
+mean video distortion before the deadline. Simulation results over a real video
+sequence show that our proposed IDNC algorithms improve the received video
+quality compared to the existing IDNC algorithms.

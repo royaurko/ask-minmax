@@ -1,0 +1,21 @@
+We consider the Erd\H{o}s-R\'enyi random graph process, which is a stochastic
+process that starts with $n$ vertices and no edges, and at each step adds one
+new edge chosen uniformly at random from the set of missing edges. Let
+$\mathcal{G}(n,m)$ be a graph with $m$ edges obtained after $m$ steps of this
+process. Each edge $e_i$ ($i=1,2,..., m$) of $\mathcal{G}(n,m)$ independently
+chooses precisely $k \in \mathbb{N}$ colours, uniformly at random, from a given
+set of $n-1$ colours (one may view $e_i$ as a multi-edge). We stop the process
+prematurely at time $M$ when the following two events hold: $\mathcal{G}(n,M)$
+is connected and every colour occurs at least once ($M={n \choose 2}$ if some
+colour does not occur before all edges are present; however, this does not
+happen asymptotically almost surely). The question addressed in this paper is
+whether $\mathcal{G}(n,M)$ has a rainbow spanning tree (that is, multicoloured
+tree on $n$ vertices). Clearly, both properties are necessary for the desired
+tree to exist.
+  In 1994, Frieze and McKay investigated the case $k=1$ and the answer to this
+question is "yes" (asymptotically almost surely). However, since the sharp
+threshold for connectivity is $\frac {n}{2} \log n$ and the sharp threshold for
+seeing all the colours is $\frac{n}{k} \log n$, the case $k=2$ is of special
+importance as in this case the two processes keep up with one another. In this
+paper, we show that asymptotically almost surely the answer is "yes" also for
+$k \ge 2$.

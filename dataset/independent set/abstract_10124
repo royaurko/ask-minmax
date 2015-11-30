@@ -1,0 +1,22 @@
+Split cuts are cutting planes for mixed integer programs whose validity is
+derived from maximal lattice point free polyhedra of the form $S:=\{x : \pi_0
+\leq \pi^T x \leq \pi_0+1 \}$ called split sets. The set obtained by adding all
+split cuts is called the split closure, and the split closure is known to be a
+polyhedron. A split set $S$ has max-facet-width equal to one in the sense that
+$\max\{\pi^T x : x \in S \}-\min\{\pi^T x : x \in S \} \leq 1$. In this paper
+we consider using general lattice point free rational polyhedra to derive valid
+cuts for mixed integer linear sets. We say that lattice point free polyhedra
+with max-facet-width equal to $w$ have width size $w$. A split cut of width
+size $w$ is then a valid inequality whose validity follows from a lattice point
+free rational polyhedron of width size $w$. The $w$-th split closure is the set
+obtained by adding all valid inequalities of width size at most $w$. Our main
+result is a sufficient condition for the addition of a family of rational
+inequalities to result in a polyhedral relaxation. We then show that a
+corollary is that the $w$-th split closure is a polyhedron. Given this result,
+a natural question is which width size $w^*$ is required to design a finite
+cutting plane proof for the validity of an inequality. Specifically, for this
+value $w^*$, a finite cutting plane proof exists that uses lattice point free
+rational polyhedra of width size at most $w^*$, but no finite cutting plane
+proof that only uses lattice point free rational polyhedra of width size
+smaller than $w^*$. We characterize $w^*$ based on the faces of the linear
+relaxation.

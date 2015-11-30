@@ -1,0 +1,19 @@
+A novel algorithm for wide-baseline matching called MODS - Matching On Demand
+with view Synthesis algorithm (MODS) - is presented. The MODS algorithm is
+experimentally shown to solve a broader range of wide-baseline problems than
+the state of the art while being nearly as fast as standard matchers on simple
+problems. The apparent robustness vs. speed trade-off is finessed by the use of
+progressively more time-consuming feature detectors and by on-demand generation
+of synthesized images that is performed until a reliable estimate of geometry
+is obtained.
+  We also introduce an improved method for tentative correspondence selection,
+applicable both with and without view synthesis. A modification of the standard
+first to second nearest distance rule increases the number of correct matches
+by 5-20% at no additional computational cost.
+  Performance of the MODS algorithm is evaluated on standard publicly available
+datasets and on a new set of geometrically challenging wide baseline problems
+that is made public together with the ground truth. Experiments show that the
+MODS outperforms the state-of-the-art in robustness and speed. Moreover, MODS
+performs well on other classes of difficult two-view problems like matching of
+images from different modalities, with wide temporal baseline or with
+significant lighting changes.

@@ -1,0 +1,27 @@
+This work revisits the PCP Verifiers used in the works of Hastad [Has01],
+Guruswami et al.[GHS02], Holmerin[Hol02] and Guruswami[Gur00] for satisfiable
+Max-E3-SAT and Max-Ek-Set-Splitting, and independent set in 2-colorable
+4-uniform hypergraphs. We provide simpler and more efficient PCP Verifiers to
+prove the following improved hardness results: Assuming that NP\not\subseteq
+DTIME(N^{O(loglog N)}),
+  There is no polynomial time algorithm that, given an n-vertex 2-colorable
+4-uniform hypergraph, finds an independent set of n/(log n)^c vertices, for
+some constant c > 0.
+  There is no polynomial time algorithm that satisfies 7/8 + 1/(log n)^c
+fraction of the clauses of a satisfiable Max-E3-SAT instance of size n, for
+some constant c > 0.
+  For any fixed k >= 4, there is no polynomial time algorithm that finds a
+partition splitting (1 - 2^{-k+1}) + 1/(log n)^c fraction of the k-sets of a
+satisfiable Max-Ek-Set-Splitting instance of size n, for some constant c > 0.
+  Our hardness factor for independent set in 2-colorable 4-uniform hypergraphs
+is an exponential improvement over the previous results of Guruswami et
+al.[GHS02] and Holmerin[Hol02]. Similarly, our inapproximability of (log
+n)^{-c} beyond the random assignment threshold for Max-E3-SAT and
+Max-Ek-Set-Splitting is an exponential improvement over the previous bounds
+proved in [Has01], [Hol02] and [Gur00]. The PCP Verifiers used in our results
+avoid the use of a variable bias parameter used in previous works, which leads
+to the improved hardness thresholds in addition to simplifying the analysis
+substantially. Apart from standard techniques from Fourier Analysis, for the
+first mentioned result we use a mixing estimate of Markov Chains based on
+uniform reverse hypercontractivity over general product spaces from the work of
+Mossel et al.[MOS13].

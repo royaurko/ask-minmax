@@ -1,0 +1,19 @@
+The general problem of robust optimization is this: one of several possible
+scenarios will appear tomorrow, but things are more expensive tomorrow than
+they are today. What should you anticipatorily buy today, so that the
+worst-case cost (summed over both days) is minimized? Feige et al. and
+Khandekar et al. considered the k-robust model where the possible outcomes
+tomorrow are given by all demand-subsets of size k, and gave algorithms for the
+set cover problem, and the Steiner tree and facility location problems in this
+model, respectively.
+  In this paper, we give the following simple and intuitive template for
+k-robust problems: "having built some anticipatory solution, if there exists a
+single demand whose augmentation cost is larger than some threshold, augment
+the anticipatory solution to cover this demand as well, and repeat". In this
+paper we show that this template gives us improved approximation algorithms for
+k-robust Steiner tree and set cover, and the first approximation algorithms for
+k-robust Steiner forest, minimum-cut and multicut. All our approximation ratios
+(except for multicut) are almost best possible.
+  As a by-product of our techniques, we also get algorithms for max-min
+problems of the form: "given a covering problem instance, which k of the
+elements are costliest to cover?".

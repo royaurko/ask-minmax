@@ -1,0 +1,20 @@
+We propose criteria that define a trend for time series with inherent
+multi-scale features. We call this trend the {\it tendency} of a time series.
+The tendency is defined empirically by a set of criteria and captures the
+large-scale temporal variability of the original signal as well as the most
+frequent events in its histogram. Among other properties, the tendency has a
+variance no larger than that of the original signal; the histogram of the
+difference between the original signal and the tendency is as symmetric as
+possible; and with reduced complexity, the tendency captures essential features
+of the signal.
+  To find the tendency we first use the Intrinsic Time-Scale Decomposition
+(ITD) of the signal, introduced in 2007 by Frei and Osorio, to produce a set of
+candidate tendencies. We then apply the criteria to each of the candidates to
+single out the one that best agrees with them.
+  While the criteria for the tendency are independent of the signal
+decomposition scheme, it is found that the ITD is a simple and stable
+methodology, well suited for multi-scale signals. The ITD is a relatively new
+decomposition and little is known about its outcomes. In this study we take the
+first steps towards a probabilistic model of the ITD analysis of random time
+series. This analysis yields details concerning the universality and scaling
+properties of the components of the decomposition.

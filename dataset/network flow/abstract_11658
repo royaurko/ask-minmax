@@ -1,0 +1,13 @@
+We present a new, deadlock-free, routing scheme for toroidal interconnection
+networks, called OutFlank Routing (OFR). OFR is an adaptive strategy which
+exploits non-minimal links, both in the source and in the destination nodes.
+When minimal links are congested, OFR deroutes packets to carefully chosen
+intermediate destinations, in order to obtain travel paths which are only an
+additive constant longer than the shortest ones. Since routing performance is
+very sensitive to changes in the traffic model or in the router parameters, an
+accurate discrete-event simulator of the toroidal network has been developed to
+empirically validate OFR, by comparing it against other relevant routing
+strategies, over a range of typical real-world traffic patterns. On the
+16x16x16 (4096 nodes) simulated network OFR exhibits improvements of the
+maximum sustained throughput between 14% and 114%, with respect to Adaptive
+Bubble Routing.

@@ -1,0 +1,20 @@
+This paper is devoted to minimizing the sum of a smooth function and a
+nonsmooth $\ell_1$-regularized term. This problem as a special cases includes
+the $\ell_1$-regularized convex minimization problem in signal processing,
+compressive sensing, machine learning, data mining, etc. However, the
+non-differentiability of the $\ell_1$-norm causes more challenging especially
+in large problems encountered in many practical applications. This paper
+proposes, analyzes, and tests a Barzilai-Borwein gradient algorithm. At each
+iteration, the generated search direction enjoys descent property and can be
+easily derived by minimizing a local approximal quadratic model and
+simultaneously taking the favorable structure of the $\ell_1$-norm. Moreover, a
+nonmonotone line search technique is incorporated to find a suitable stepsize
+along this direction. The algorithm is easily performed, where the values of
+the objective function and the gradient of the smooth term are required at
+per-iteration. Under some conditions, the proposed algorithm is shown to be
+globally convergent. The limited experiments by using some nonconvex
+unconstrained problems from CUTEr library with additive $\ell_1$-regularization
+illustrate that the proposed algorithm performs quite well. Extensive
+experiments for $\ell_1$-regularized least squares problems in compressive
+sensing verify that our algorithm compares favorably with several
+state-of-the-art algorithms which are specifically designed in recent years.

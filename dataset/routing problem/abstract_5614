@@ -1,0 +1,15 @@
+Mathematical modeling of many physical processes such as diffusion, viscosity
+of fluids and combustion involves differential equations with small
+coefficients of higher derivatives. These may be small diffusion coefficients
+for modeling the spreading of impurities, small coefficients of viscosity in
+fluid flow simulation etc. The difficulty with solving such problem is that if
+you set the small parameter at higher derivatives to zero, the solution of the
+degenerate problem doesn't correctly approximate the original problem, even if
+the small parameter approaches zero; the solution of the original problem
+exhibits the emergency of a boundary layer. As a result, the application of
+classical difference schemes for solving such equations produces great
+inaccuracies. Therefore, numerical solution of differential equations with
+small coefficients at higher derivatives demands special difference schemes
+exhibiting uniform convergence with respect to the small parameters involved.
+In this article contributor investigates two nonlinear boundary value problems on a
+finite interval, resulting in exponential and power-law boundary layers.

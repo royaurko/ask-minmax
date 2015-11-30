@@ -1,0 +1,14 @@
+Model Predictive Control (MPC) is increasing in popularity in industry as
+more efficient algorithms for solving the related optimization problem are
+developed. The main computational bottle-neck in on-line MPC is often the
+computation of the search step direction, i.e. the Newton step, which is often
+done using generic sparsity exploiting algorithms or Riccati recursions.
+However, as parallel hardware is becoming increasingly popular the demand for
+efficient parallel algorithms for solving the Newton step is increasing. In
+this paper a tailored, non-iterative parallel algorithm for computing the
+Riccati factorization is presented. The algorithm exploits the special
+structure in the MPC problem, and when sufficiently many processing units are
+available, the complexity of the algorithm scales logarithmically in the
+prediction horizon. Computing the Newton step is the main computational
+bottle-neck in many MPC algorithms and the algorithm can significantly reduce
+the computation cost for popular state-of-the-art MPC algorithms.

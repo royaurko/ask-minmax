@@ -1,0 +1,18 @@
+Much research has been devoted to optimizing algorithms of the Lempel-Ziv
+(LZ) 77 family, both in terms of speed and memory requirements. Binary search
+trees and suffix trees (ST) are data structures that have been often used for
+this purpose, as they allow fast searches at the expense of memory usage.
+  In recent years, there has been interest on suffix arrays (SA), due to their
+simplicity and low memory requirements. One key issue is that an SA can solve
+the sub-string problem almost as efficiently as an ST, using less memory. This
+paper proposes two new SA-based algorithms for LZ encoding, which require no
+modifications on the decoder side. Experimental results on standard benchmarks
+show that our algorithms, though not faster, use 3 to 5 times less memory than
+the ST counterparts. Another important feature of our SA-based algorithms is
+that the amount of memory is independent of the text to search, thus the memory
+that has to be allocated can be defined a priori. These features of low and
+predictable memory requirements are of the utmost importance in several
+scenarios, such as embedded systems, where memory is at a premium and speed is
+not critical. Finally, we point out that the new algorithms are general, in the
+sense that they are adequate for applications other than LZ compression, such
+as text retrieval and forward/backward sub-string search.

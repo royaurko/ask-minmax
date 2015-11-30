@@ -1,0 +1,16 @@
+Video streaming is in high demand by mobile users, as recent studies
+indicate. In cellular networks, however, the unreliable wireless channel leads
+to two major problems. Poor channel states degrade video quality and interrupt
+the playback when a user cannot sufficiently fill its local playout buffer:
+buffer underruns occur. In contrast to that, good channel conditions cause
+common greedy buffering schemes to pile up very long buffers. Such
+over-buffering wastes expensive wireless channel capacity.
+  To keep buffering in balance, we employ a novel approach. Assuming that we
+can predict data rates, we plan the quality and download time of the video
+segments ahead. This anticipatory scheduling avoids buffer underruns by
+downloading a large number of segments before a channel outage occurs, without
+wasting wireless capacity by excessive buffering. We formalize this approach as
+an optimization problem and derive practical heuristics for segmented video
+streaming protocols (e.g., HLS or MPEG DASH). Simulation results and testbed
+measurements show that our solution essentially eliminates playback
+interruptions without significantly decreasing video quality.

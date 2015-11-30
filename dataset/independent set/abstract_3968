@@ -1,0 +1,21 @@
+Aims: We outline the Bayesian approach to inferring f_NL, the level of
+non-Gaussianity of local type. Phrasing f_NL inference in a Bayesian framework
+takes advantage of existing techniques to account for instrumental effects and
+foreground contamination in CMB data and takes into account uncertainties in
+the cosmological parameters in an unambiguous way.
+  Methods: We derive closed form expressions for the joint posterior of f_NL
+and the reconstructed underlying curvature perturbation, Phi, and deduce the
+conditional probability densities for f_NL and Phi. Completing the inference
+problem amounts to finding the marginal density for f_NL. For realistic data
+sets the necessary integrations are intractable. We propose an exact
+Hamiltonian sampling algorithm to generate correlated samples from the f_NL
+posterior. For sufficiently high signal-to-noise ratios, we can exploit the
+assumption of weak non-Gaussianity to find a direct Monte Carlo technique to
+generate independent samples from the posterior distribution for f_NL. We
+illustrate our approach using a simplified toy model of CMB data for the simple
+case of a 1-D sky.
+  Results: When applied to our toy problem, we find that, in the limit of high
+signal-to-noise, the sampling efficiency of the approximate algorithm
+outperforms that of Hamiltonian sampling by two orders of magnitude. When f_NL
+is not significantly constrained by the data, the more efficient, approximate
+algorithm biases the posterior density towards f_NL = 0.

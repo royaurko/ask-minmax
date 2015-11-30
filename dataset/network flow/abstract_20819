@@ -1,0 +1,19 @@
+The increasing popularity of web-based applications has led to several
+critical services being provided over the Internet. This has made it imperative
+to monitor the network traffic so as to prevent malicious attackers from
+depleting the resources of the network and denying services to legitimate
+users. This paper has presented a mechanism for protecting a web-server against
+a distributed denial of service (DDoS) attack. Incoming traffic to the server
+is continuously monitored and any abnormal rise in the inbound traffic is
+immediately detected. The detection algorithm is based on a statistical
+analysis of the inbound traffic on the server and a robust hypothesis testing
+framework. While the detection process is on, the sessions from the legitimate
+sources are not disrupted and the load on the server is restored to the normal
+level by blocking the traffic from the attacking sources. To cater to different
+scenarios, the detection algorithm has various modules with varying level of
+computational and memory overheads for their execution. While the approximate
+modules are fast in detection and involve less overhead, they have lower
+detection accuracy. The accurate modules involve complex detection logic and
+hence involve more overhead for their execution, but they have very high
+detection accuracy. Simulations carried out on the proposed mechanism have
+produced results that demonstrate effectiveness of the scheme.

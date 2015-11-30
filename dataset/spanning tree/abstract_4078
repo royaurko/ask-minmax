@@ -1,0 +1,14 @@
+We present tests of comparison between our versions of the Fast Multipole
+Algorithm (FMA) and ``classic'' tree-code to evaluate gravitational forces in
+particle systems. We have optimized the Greengard's original version of FMA
+allowing for a more efficient criterion of well-separation between boxes, to
+improve the adaptivity of the method (which is very important in highly
+inhomogeneous situations) and to permit the smoothing of gravitational
+interactions. The results of our tests indicate that the tree-code is almost
+three times faster than FMA for both a homogeneous and a clumped
+distribution, at least in the interval of N (N< 10^5) here investigated and
+at the same level of accuracy (error ~ 10^{-3)). This order of accuracy is
+generally considered as the best compromise between CPU-time consumption and
+precision for astrophysical simulation. Moreover, the claimed linear
+dependence on N of the CPU-time of FMA is not confirmed and we give a
+``theoretical'' explanation for that.

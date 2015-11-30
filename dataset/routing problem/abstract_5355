@@ -1,0 +1,17 @@
+We consider the following metric clustering problem. We are given two point
+sets $X$ (clients) and $Y$ (servers), and a metric on $Z = X \cup Y$. We would
+like to cover the clients by balls centered at the servers. The objective
+function to minimize is the sum of the $\alpha$-th power of the radii of the
+balls. Here $\alpha \geq 1$ is a parameter of the problem (but not of a problem
+instance).
+  For any $\eps > 0$, we describe a quasi-polynomial time algorithm that
+returns a $(1 + \eps)$ approximation for the problem. Prior to our work, a
+$3^{\alpha}$ approximation was achieved by a polynomial-time algorithm. In
+contrast, for the variant of the MCC where $\alpha$ is part of the input, we
+show under standard assumptions that no polynomial time algorithm can achieve
+an approximation factor better than $O(\log |X|)$ for $\alpha \geq \log |X|$.
+  In order to achieve the QPTAS, we address the following problem on metric
+partitioning: we want to probabilistically partition $Z$ into blocks of at most
+half the diameter so that for any ball, the expected number of blocks of the
+partition that intersect the ball is appropriately small. We note that this
+problem can be of independent interest.

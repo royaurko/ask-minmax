@@ -1,0 +1,8 @@
+We develop the heuristic PROBI for the probabilistic Euclidean k-median
+problem based on a coreset construction by Lammersen et al. Our algorithm
+computes a summary of the data and then uses an adapted version of k-means++
+(Arthur and Vassilvitskii, 2007) to compute a good solution on the summary. The
+summary is maintained in a data stream, so PROBI can be used in a data stream
+setting on very large data sets. We experimentally evaluate the quality of the
+summary and of the computed solution and compare the running time to state of
+the art data stream clustering algorithms.

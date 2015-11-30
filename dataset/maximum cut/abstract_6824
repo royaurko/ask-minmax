@@ -1,0 +1,12 @@
+In certain applications it is useful to fit multinomial distributions to
+observed data with a penalty term that encourages sparsity. For example, in
+probabilistic latent audio source decomposition one may wish to encode the
+assumption that only a few latent sources are active at any given time. The
+standard heuristic of applying an L1 penalty is not an option when fitting the
+parameters to a multinomial distribution, which are constrained to sum to 1. An
+alternative is to use a penalty term that encourages low-entropy solutions,
+which corresponds to maximum a posteriori (MAP) parameter estimation with an
+entropic prior. The lack of conjugacy between the entropic prior and the
+multinomial distribution complicates this approach. In this report I propose a
+simple iterative algorithm for MAP estimation of multinomial distributions with
+sparsity-inducing entropic priors.

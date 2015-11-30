@@ -1,0 +1,24 @@
+A directed graph is called Eulerian, if it contains a tour that traverses
+every arc in the graph exactly once. We study the problem of Eulerian extension
+(EE) where a directed multigraph G and a weight function is given and it is
+asked whether G can be made Eulerian by adding arcs whose total weight does not
+exceed a given threshold. This problem is motivated through applications in
+vehicle routing and flowshop scheduling. However, EE is NP-hard and thus we use
+the parameterized complexity framework to analyze it. In parameterized
+complexity, the running time of algorithms is considered not only with respect
+to input length, but also with respect to other properties of the input -
+called "parameters". Dorn et. al. proved that EE can be solved in O(4^k n^4)
+time, where k denotes the parameter "number of arcs that have to be added". In
+this thesis, we analyze EE with respect to the (smaller) parameters "number c
+of connected components in the input graph" and "sum b over indeg(v) -
+outdeg(v) for all vertices v in the input graph where this value is positive".
+We prove that there is an algorithm for EE whose running time is polynomial
+except for the term 4^(c log(bc^2)). To obtain this result, we make several
+observations about the sets of arcs that have to be added to the input graph in
+order to make it Eulerian. We build upon these observations to restate EE in a
+matching context. This matching formulation of EE might be an important tool to
+solve the question of whether EE can be solved within running time whose
+superpolynomial part depends only on c. We also consider polynomial time
+preprocessing routines for EE and show that these routines cannot yield
+instances whose size depends polynomially only on either of the parameters b,
+c, k unless coNP is contained in NP/poly.

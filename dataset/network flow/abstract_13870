@@ -1,0 +1,23 @@
+In this paper, we discuss the incorporation of dynamic subgrid scale (SGS)
+models in the lattice-Boltzmann method (LBM) for large-eddy simulation (LES) of
+turbulent flows. The use of a dynamic procedure, which involves sampling or
+test-filtering of super-grid turbulence dynamics and subsequent use of
+scale-invariance for two levels, circumvents the need for empiricism in
+determining the magnitude of the model coefficient of the SGS models. We employ
+the multiple relaxation times (MRT) formulation of LBM with a forcing term for
+simulation of the grid-filtered dynamics of large-eddies. The dynamic procedure
+is illustrated for use with the common Smagorinsky eddy-viscosity SGS model. We
+also discuss proper sampling techniques or test-filters that facilitate
+implementation of dynamic models in the LBM. For accommodating variable
+resolutions, we employ locally refined grids in this framework. As examples, we
+consider the canonical fully developed turbulent channel flow at two different
+shear Reynolds numbers $Re_{*}$ of 180 and 395. The approach is able to
+automatically and self-consistently compute the values of the Smagorinsky
+coefficient, $C_S$. In particular, the computed value in the outer or bulk flow
+region, where turbulence is generally more isotropic, is about 0.155 (or the
+model coefficient $C=C_S^2=0.024$) which is in good agreement with prior data.
+The model coefficient is also found to become smaller and approaches towards
+zero near walls, reflecting the dampening of turbulent length scales near walls
+and the computed turbulence statistics are also in good agreement with prior
+data. The paper also discusses a procedure for incorporation of more general
+scale-similarity based SGS stress models.

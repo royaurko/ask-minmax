@@ -1,0 +1,20 @@
+Using modern technology, it is now common to survey microbial communities by
+sequencing DNA or RNA extracted in bulk from a given environment. Comparative
+methods are needed that indicate the extent to which two communities differ
+given data sets of this type. UniFrac, a method built around a somewhat ad hoc
+phylogenetics-based distance between two communities, is one of the most
+commonly used tools for these analyses. We provide a foundation for such
+methods by establishing that if one equates a metagenomic sample with its
+empirical distribution on a reference phylogenetic tree, then the weighted
+UniFrac distance between two samples is just the classical
+Kantorovich-Rubinstein (KR) distance between the corresponding empirical
+distributions. We demonstrate that this KR distance and extensions of it that
+arise from incorporating uncertainty in the location of sample points can be
+written as a readily computable integral over the tree, we develop $L^p$
+Zolotarev-type generalizations of the metric, and we show how the p-value of
+the resulting natural permutation test of the null hypothesis "no difference
+between the two communities" can be approximated using a functional of a
+Gaussian process indexed by the tree. We relate the $L^2$ case to an ANOVA-type
+decomposition and find that the distribution of its associated Gaussian
+functional is that of a computable linear combination of independent $\chi_1^2$
+random variables.

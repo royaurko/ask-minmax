@@ -1,0 +1,18 @@
+This article presents a unique design for a parser using the Ant Colony
+Optimization algorithm. The paper implements the intuitive thought process of
+human mind through the activities of artificial ants. The scheme presented here
+uses a bottom-up approach and the parsing program can directly use ambiguous or
+redundant grammars. We allocate a node corresponding to each production rule
+present in the given grammar. Each node is connected to all other nodes
+(representing other production rules), thereby establishing a completely
+connected graph susceptible to the movement of artificial ants. Each ant tries
+to modify this sentential form by the production rule present in the node and
+upgrades its position until the sentential form reduces to the start symbol S.
+Successful ants deposit pheromone on the links that they have traversed
+through. Eventually, the optimum path is discovered by the links carrying
+maximum amount of pheromone concentration. The design is simple, versatile,
+robust and effective and obviates the calculation of the above mentioned sets
+and precedence relation tables. Further advantages of our scheme lie in i)
+ascertaining whether a given string belongs to the language represented by the
+grammar, and ii) finding out the shortest possible path from the given string
+to the start symbol S in case multiple routes exist.

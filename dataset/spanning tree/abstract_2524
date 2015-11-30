@@ -1,0 +1,21 @@
+A nonrepetitive coloring of a path is a coloring of its vertices such that
+the sequence of colors along the path does not contain two identical,
+consecutive blocks. The remarkable construction of Thue asserts that 3 colors
+are enough to color nonrepetitively paths of any length. A nonrepetitive
+coloring of a graph is a coloring of its vertices such that all simple paths
+are nonrepetitively colored. Assume that each vertex $v$ of a graph $G$ has
+assigned a set (list) of colors $L_v$. A coloring is chosen from $\{L_v\}_{v\in
+V(G)}$ if the color of each $v$ belongs to $L_v$. The Thue choice number of
+$G$, denoted by $\pi_l(G)$, is the minimum $k$ such that for any list
+assignment $\set{L_v}$ of $G$ with each $|L_v|\geq k$ there is a nonrepetitive
+coloring of $G$ chosen from $\{L_v\}$. Alon et al. (2002) proved that
+$\pi_l(G)=O(\Delta^2)$ for every graph $G$ with maximum degree at most
+$\Delta$. We propose an almost linear bound in $\Delta$ for trees, namely for
+any $\epsi>0$ there is a constant $c$ such that $\pi_l(T)\leq
+c\Delta^{1+\epsi}$ for every tree $T$ with maximum degree $\Delta$. The only
+lower bound for trees is given by a recent result of Fiorenzi et al. (2011)
+that for any $\Delta$ there is a tree $T$ such that
+$\pi_l(T)=\Omega(\frac{\log\Delta}{\log\log\Delta})$. We also show that if one
+allows repetitions in a coloring but still forbid 3 identical consecutive
+blocks of colors on any simple path, then a constant size of the lists allows
+to color any tree.

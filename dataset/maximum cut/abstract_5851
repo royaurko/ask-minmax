@@ -1,0 +1,16 @@
+We consider an extension of the 2-person R\'enyi-Ulam liar game in which lies
+are governed by a channel $C$, a set of allowable lie strings of maximum length
+$k$. Carole selects $x\in[n]$, and Paul makes $t$-ary queries to uniquely
+determine $x$. In each of $q$ rounds, Paul weakly partitions $[n]=A_0\cup >...
+\cup A_{t-1}$ and asks for $a$ such that $x\in A_a$. Carole responds with some
+$b$, and if $a\neq b$, then $x$ accumulates a lie $(a,b)$. Carole's string of
+lies for $x$ must be in the channel $C$. Paul wins if he determines $x$ within
+$q$ rounds. We further restrict Paul to ask his questions in two off-line
+batches. We show that for a range of sizes of the second batch, the maximum
+size of the search space $[n]$ for which Paul can guarantee finding the
+distinguished element is $\sim t^{q+k}/(E_k(C)\binom{q}{k})$ as $q\to\infty$,
+where $E_k(C)$ is the number of lie strings in $C$ of maximum length $k$. This
+generalizes previous work of Dumitriu and Spencer, and of Ahlswede, Cicalese,
+and Deppe. We extend Paul's strategy to solve also the pathological liar
+variant, in a unified manner which gives the existence of asymptotically
+perfect two-batch adaptive codes for the channel $C$.

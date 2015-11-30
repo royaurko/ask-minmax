@@ -1,0 +1,22 @@
+This paper studies mixed finite element approximations of the viscosity
+solution to the Dirichlet problem for the fully nonlinear Monge-Amp\`ere
+equation $\det(D^2u^0)=f$ based on the vanishing moment method which was
+proposed recently by the contributors in \cite{Feng2}. In this approach, the second
+order fully nonlinear Monge-Amp\`ere equation is approximated by the fourth
+order quasilinear equation $-\epsilon\Delta^2 u^\epsilon + \det{D^2u^\epsilon}
+=f$. It was proved in \cite{Feng1} that the solution $u^\epsilon$ converges to
+the unique convex viscosity solution $u^0$ of the Dirichlet problem for the
+Monge-Amp\`ere equation. This result then opens a door for constructing
+convergent finite element methods for the fully nonlinear second order
+equations, a task which has been impracticable before. The goal of this paper
+is threefold. First, we develop a family of Hermann-Miyoshi type mixed finite
+element methods for approximating the solution $u^\epsilon$ of the regularized
+fourth order problem, which computes simultaneously $u^\vepsi$ and the moment
+tensor $\sigma^\vepsi:=D^2u^\epsilon$. Second, we derive error estimates, which
+track explicitly the dependence of the error constants on the parameter
+$\vepsi$, for the errors $u^\epsilon-u^\epsilon_h$ and
+$\sigma^\vepsi-\sigma_h^\vepsi$. Finally, we present a detailed numerical study
+on the rates of convergence in terms of powers of $\vepsi$ for the error
+$u^0-u_h^\vepsi$ and $\sigma^\vepsi-\sigma_h^\vepsi$, and numerically examine
+what is the "best" mesh size $h$ in relation to $\vepsi$ in order to achieve
+these rates.

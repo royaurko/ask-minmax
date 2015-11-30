@@ -1,0 +1,17 @@
+The ability to place objects in the environment is an important skill for a
+personal robot. An object should not only be placed stably, but should also be
+placed in its preferred location/orientation. For instance, a plate is
+preferred to be inserted vertically into the slot of a dish-rack as compared to
+be placed horizontally in it. Unstructured environments such as homes have a
+large variety of object types as well as of placing areas. Therefore our
+algorithms should be able to handle placing new object types and new placing
+areas. These reasons make placing a challenging manipulation task. In this
+work, we propose a supervised learning algorithm for finding good placements
+given the point-clouds of the object and the placing area. It learns to combine
+the features that capture support, stability and preferred placements using a
+shared sparsity structure in the parameters. Even when neither the object nor
+the placing area is seen previously in the training set, our algorithm predicts
+good placements. In extensive experiments, our method enables the robot to
+stably place several new objects in several new placing areas with 98%
+success-rate; and it placed the objects in their preferred placements in 92% of
+the cases.

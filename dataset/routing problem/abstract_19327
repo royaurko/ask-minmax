@@ -1,0 +1,26 @@
+E-values have been the dominant statistic for protein sequence analysis for
+the past two decades: from identifying statistically significant local sequence
+alignments to evaluating matches to hidden Markov models describing protein
+domain families. Here we formally show that for "stratified" multiple
+hypothesis testing problems, controlling the local False Discovery Rate (lFDR)
+per stratum, or partition, yields the most predictions across the data at any
+given threshold on the FDR or E-value over all strata combined. For the
+important problem of protein domain prediction, a key step in characterizing
+protein structure, function and evolution, we show that stratifying statistical
+tests by domain family yields excellent results. We develop the first
+FDR-estimating algorithms for domain prediction, and evaluate how well
+thresholds based on q-values, E-values and lFDRs perform in domain prediction
+using five complementary approaches for estimating empirical FDRs in this
+context. We show that stratified q-value thresholds substantially outperform
+E-values. Contradicting our theoretical results, q-values also outperform
+lFDRs; however, our tests reveal a small but coherent subset of domain
+families, biased towards models for specific repetitive patterns, for which
+FDRs are greatly underestimated due to weaknesses in random sequence models.
+Usage of lFDR thresholds outperform q-values for the remaining families, which
+have as-expected noise, suggesting that further improvements in domain
+predictions can be achieved with improved modeling of random sequences.
+Overall, our theoretical and empirical findings suggest that the use of
+stratified q-values and lFDRs could result in improvements in a host of
+structured multiple hypothesis testing problems arising in bioinformatics,
+including genome-wide association studies, orthology prediction, motif
+scanning, and multi-microarray analyses.

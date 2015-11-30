@@ -1,0 +1,17 @@
+An important problem in applications is the approximation of a function $f$
+from a finite set of randomly scattered data $f(x_j)$. A common and powerful
+approach is to construct a trigonometric least squares approximation based on
+the set of exponentials $\{e^{2\pi i kx}\}$. This leads to fast numerical
+algorithms, but suffers from disturbing boundary effects due to the underlying
+periodicity assumption on the data, an assumption that is rarely satisfied in
+practice. To overcome this drawback we impose Neumann boundary conditions on
+the data. This implies the use of cosine polynomials $\cos (\pi kx)$ as basis
+functions. We show that scattered data approximation using cosine polynomials
+leads to a least squares problem involving certain Toeplitz+Hankel matrices. We
+derive estimates on the condition number of these matrices. Unlike other
+Toeplitz+Hankel matrices, the Toeplitz+Hankel matrices arising in our context
+cannot be diagonalized by the discrete cosine transform, but they still allow a
+fast matrix-vector multiplication via DCT which gives rise to fast conjugate
+gradient type algorithms. We show how the results can be generalized to higher
+dimensions. Finally we demonstrate the performance of the proposed method by
+applying it to a two-dimensional geophysical scattered data problem.

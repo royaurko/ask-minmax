@@ -1,0 +1,19 @@
+This paper considers a simple on-off random multiple access channel, where n
+users communicate simultaneously to a single receiver over m degrees of
+freedom. Each user transmits with probability lambda, where typically lambda n
+< m << n, and the receiver must detect which users transmitted. We show that
+when the codebook has i.i.d. Gaussian entries, detecting which users
+transmitted is mathematically equivalent to a certain sparsity detection
+problem considered in compressed sensing. Using recent sparsity results, we
+derive upper and lower bounds on the capacities of these channels. We show that
+common sparsity detection algorithms, such as lasso and orthogonal matching
+pursuit (OMP), can be used as tractable multiuser detection schemes and have
+significantly better performance than single-user detection. These methods do
+achieve some near-far resistance but--at high signal-to-noise ratios
+(SNRs)--may achieve capacities far below optimal maximum likelihood detection.
+We then present a new algorithm, called sequential OMP, that illustrates that
+iterative detection combined with power ordering or power shaping can
+significantly improve the high SNR performance. Sequential OMP is analogous to
+successive interference cancellation in the classic multiple access channel.
+Our results thereby provide insight into the roles of power control and
+multiuser detection on random-access signalling.

@@ -1,0 +1,19 @@
+As antivirus and network intrusion detection systems have increasingly proven
+insufficient to detect advanced threats, large security operations centers have
+moved to deploy endpoint-based sensors that provide deeper visibility into
+low-level events across their enterprises. Unfortunately, for many
+organizations in government and industry, the installation, maintenance, and
+resource requirements of these newer solutions pose barriers to adoption and
+are perceived as risks to organizations' missions.
+  To mitigate this problem we investigated the utility of agentless detection
+of malicious endpoint behavior, using only the standard build-in Windows audit
+logging facility as our signal. We found that Windows audit logs, while
+emitting manageable sized data streams on the endpoints, provide enough
+information to allow robust detection of malicious behavior. Audit logs provide
+an effective, low-cost alternative to deploying additional expensive
+agent-based breach detection systems in many government and industrial
+settings, and can be used to detect, in our tests, 83% percent of malware
+samples with a 0.1% false positive rate. They can also supplement already
+existing host signature-based antivirus solutions, like Kaspersky, Symantec,
+and McAfee, detecting, in our testing environment, 78% of malware missed by
+those antivirus systems.

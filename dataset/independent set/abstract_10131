@@ -1,0 +1,22 @@
+We consider stability and uniqueness in real phase retrieval problems over
+general input sets. Specifically, we assume the data consists of noisy
+quadratic measurements of an unknown input x in R^n that lies in a general set
+T and study conditions under which x can be stably recovered from the
+measurements. In the noise-free setting we derive a general expression on the
+number of measurements needed to ensure that a unique solution can be found in
+a stable way, that depends on the set T through a natural complexity parameter.
+This parameter can be computed explicitly for many sets T of interest. For
+example, for k-sparse inputs we show that O(k\log(n/k)) measurements are
+needed, and when x can be any vector in R^n, O(n) measurements suffice. In the
+noisy case, we show that if one can find a value for which the empirical risk
+is bounded by a given, computable constant (that depends on the set T), then
+the error with respect to the true input is bounded above by an another,
+closely related complexity parameter of the set. By choosing an appropriate
+number N of measurements, this bound can be made arbitrarily small, and it
+decays at a rate faster than N^{-1/2+\delta} for any \delta>0. In particular,
+for k-sparse vectors stable recovery is possible from O(k\log(n/k)\log k) noisy
+measurements, and when x can be any vector in R^n, O(n \log n) noisy
+measurements suffice. We also show that the complexity parameter for the
+quadratic problem is the same as the one used for analyzing stability in linear
+measurements under very general conditions. Thus, no substantial price has to
+be paid in terms of stability if there is no knowledge of the phase.

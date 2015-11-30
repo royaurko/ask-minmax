@@ -1,0 +1,19 @@
+We demonstrate the use of a variational method to determine a quantitative
+lower bound on the rate of convergence of Markov Chain Monte Carlo (MCMC)
+algorithms as a function of the target density and proposal density. The bound
+relies on approximating the second largest eigenvalue in the spectrum of the
+MCMC operator using a variational principle and the approach is applicable to
+problems with continuous state spaces. We apply the method to one dimensional
+examples with Gaussian and quartic target densities, and we contrast the
+performance of the Random Walk Metropolis-Hastings (RWMH) algorithm with a
+``smart'' variant that incorporates gradient information into the trial moves.
+We find that the variational method agrees quite closely with numerical
+simulations. We also see that the smart MCMC algorithm often fails to converge
+geometrically in the tails of the target density except in the simplest case we
+examine, and even then care must be taken to choose the appropriate scaling of
+the deterministic and random parts of the proposed moves. Again, this calls
+into question the utility of smart MCMC in more complex problems. Finally, we
+apply the same method to approximate the rate of convergence in
+multidimensional Gaussian problems with and without importance sampling. There
+we demonstrate the necessity of importance sampling for target densities which
+depend on variables with a wide range of scales.

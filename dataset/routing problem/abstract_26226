@@ -1,0 +1,9 @@
+An $(f,g)$-semi-matching in a bipartite graph $G=(U \cup V,E)$ is a set of
+edges $M \subseteq E$ such that each vertex $u\in U$ is incident with at most
+$f(u)$ edges of $M$, and each vertex $v\in V$ is incident with at most $g(v)$
+edges of $M$. In this paper we give an algorithm that for a graph with $n$
+vertices and $m$ edges, $n\le m$, constructs a maximum $(f,g)$-semi-matching in
+running time $O(m\cdot \min (\sqrt{\sum_{u\in U}f(u)}, \sqrt{\sum_{v\in
+V}g(v)}))$. Using the reduction of [5], our result on maximum
+$(f,g)$-semi-matching problem directly implies an algorithm for the optimal
+semi-matching problem with running time $O(\sqrt{n}m \log n)$.

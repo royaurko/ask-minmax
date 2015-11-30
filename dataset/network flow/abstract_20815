@@ -1,0 +1,14 @@
+Two types of combining strategies were evaluated namely combining skin
+features and combining skin classifiers. Several combining rules were applied
+where the outputs of the skin classifiers are combined using binary operators
+such as the AND and the OR operators, "Voting", "Sum of Weights" and a new
+neural network. Three chrominance components from the YCbCr colour space that
+gave the highest correct detection on their single feature MLP were selected as
+the combining parameters. A major issue in designing a MLP neural network is to
+determine the optimal number of hidden units given a set of training patterns.
+Therefore, a "coarse to fine search" method to find the number of neurons in
+the hidden layer is proposed. The strategy of combining Cb/Cr and Cr features
+improved the correct detection by 3.01% compared to the best single feature MLP
+given by Cb-Cr. The strategy of combining the outputs of three skin classifiers
+using the "Sum of Weights" rule further improved the correct detection by 4.38%
+compared to the best single feature MLP.

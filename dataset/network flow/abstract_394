@@ -1,0 +1,17 @@
+We propose a branch flow model for the anal- ysis and optimization of mesh as
+well as radial networks. The model leads to a new approach to solving optimal
+power flow (OPF) that consists of two relaxation steps. The first step
+eliminates the voltage and current angles and the second step approximates the
+resulting problem by a conic program that can be solved efficiently. For radial
+networks, we prove that both relaxation steps are always exact, provided there
+are no upper bounds on loads. For mesh networks, the conic relaxation is always
+exact but the angle relaxation may not be exact, and we provide a simple way to
+determine if a relaxed solution is globally optimal. We propose convexification
+of mesh networks using phase shifters so that OPF for the convexified network
+can always be solved efficiently for an optimal solution. We prove that
+convexification requires phase shifters only outside a spanning tree of the
+network and their placement depends only on network topology, not on power
+flows, generation, loads, or operating constraints. Part I introduces our
+branch flow model, explains the two relaxation steps, and proves the conditions
+for exact relaxation. Part II describes convexification of mesh networks, and
+presents simulation results.

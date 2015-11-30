@@ -1,0 +1,9 @@
+We consider a connected undirected graph $G(n,m)$ with $n$ nodes and $m$
+edges. A $k$-dominating set $D$ in $G$ is a set of nodes having the property
+that every node in $G$ is at most $k$ edges away from at least one node in $D$.
+Finding a $k$-dominating set of minimum size is NP-hard. We give a new
+synchronous distributed algorithm to find a $k$-dominating set in $G$ of size
+no greater than $\lfloor n/(k+1)\rfloor$. Our algorithm requires $O(k\log^*n)$
+time and $O(m\log k+n\log k\log^*n)$ messages to run. It has the same time
+complexity as the best currently known algorithm, but improves on that
+algorithm's message complexity and is, in addition, conceptually simpler.

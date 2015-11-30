@@ -1,0 +1,24 @@
+Bayesian regression trees are flexible non-parametric models that are well
+suited to many modern statistical regression problems. Many such tree models
+have been proposed, from the simple single- tree model to more complex tree
+ensembles. Their non-parametric formulation allows for effective and efficient
+modeling of datasets exhibiting complex non-linear relationships between the
+model pre- dictors and observations. However, the mixing behavior of the Markov
+Chain Monte Carlo (MCMC) sampler is sometimes poor. This is because the
+proposals in the sampler are typically local alterations of the tree structure,
+such as the birth/death of leaf nodes, which does not allow for efficient
+traversal of the model space. This poor mixing can lead to inferential
+problems, such as under-representing uncertainty. In this paper, we develop
+novel proposal mechanisms for efficient sampling. The first is a rule
+perturbation proposal while the second we call tree rotation. The perturbation
+proposal can be seen as an efficient variation of the change proposal found in
+existing literature. The novel tree rotation proposal is simple to implement as
+it only requires local changes to the regression tree structure, yet it
+efficiently traverses disparate regions of the model space along contours of
+equal probability. When combined with the classical birth/death proposal, the
+resulting MCMC sampler exhibits good acceptance rates and properly represents
+model uncertainty in the posterior samples. We implement this sampling
+algorithm in the Bayesian Additive Regression Tree (BART) model and demonstrate
+its effectiveness on a prediction problem from computer experiments and a test
+function where structural tree variability is needed to fully explore the
+posterior.

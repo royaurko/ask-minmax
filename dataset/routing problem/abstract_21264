@@ -1,0 +1,23 @@
+A key task in social network and other complex network analysis is role
+analysis: describing and categorizing nodes according to how they interact with
+other nodes. Two nodes have the same role if they interact with equivalent sets
+of neighbors. The most fundamental role equivalence is automorphic equivalence.
+Unfortunately, the fastest algorithms known for graph automorphism are
+nonpolynomial. Moreover, since exact equivalence may be rare, a more meaningful
+task is to measure the role similarity between any two nodes. This task is
+closely related to the structural or link-based similarity problem that SimRank
+attempts to solve. However, SimRank and most of its offshoots are not
+sufficient because they do not fully recognize automorphically or structurally
+equivalent nodes. In this paper we tackle two problems. First, what are the
+necessary properties for a role similarity measure or metric? Second, how can
+we derive a role similarity measure satisfying these properties? For the first
+problem, we justify several axiomatic properties necessary for a role
+similarity measure or metric: range, maximal similarity, automorphic
+equivalence, transitive similarity, and the triangle inequality. For the second
+problem, we present RoleSim, a new similarity metric with a simple iterative
+computational method. We rigorously prove that RoleSim satisfies all the
+axiomatic properties. We also introduce an iceberg RoleSim algorithm which can
+guarantee to discover all pairs with RoleSim score no less than a user-defined
+threshold $\theta$ without computing the RoleSim for every pair. We demonstrate
+the superior interpretative power of RoleSim on both both synthetic and real
+datasets.

@@ -1,0 +1,25 @@
+We consider the design of efficient algorithms for a multicore computing
+environment with a global shared memory and p cores, each having a cache of
+size M, and with data organized in blocks of size B. We characterize the class
+of `Hierarchical Balanced Parallel (HBP)' multithreaded computations for
+multicores. HBP computations are similar to the hierarchical divide & conquer
+algorithms considered in recent work, but have some additional features that
+guarantee good performance even when accounting for the cache misses due to
+false sharing. Most of our HBP algorithms are derived from known
+cache-oblivious algorithms with high parallelism, however we incorporate new
+techniques that reduce the effect of false-sharing.
+  Our approach to addressing false sharing costs (or more generally, block
+misses) is to ensure that any task that can be stolen shares O(1) blocks with
+other tasks. We use a gapping technique for computations that have larger than
+O(1) block sharing. We also incorporate the property of limited access writes
+analyzed in a companion paper, and we bound the cost of accessing shared blocks
+on the execution stacks of tasks.
+  We present the Priority Work Stealing (PWS) scheduler, and we establish that,
+given a sufficiently `tall' cache, PWS deterministically schedules several
+highly parallel HBP algorithms, including those for scans, matrix computations
+and FFT, with cache misses bounded by the sequential complexity, when
+accounting for both traditional cache misses and for false sharing. We also
+present a list ranking algorithm with almost optimal bounds. PWS schedules
+without using cache or block size information, and uses knowledge of processors
+only to the extent of determining the available locations from which tasks may
+be stolen; thus it schedules resource-obliviously.

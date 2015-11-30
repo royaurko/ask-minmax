@@ -1,0 +1,15 @@
+The FETI-DP algorithms, proposed by the contributors in [SIAM J. Numer. Anal., 51
+(2013), pp.~1235--1253] and [Internat. J. Numer. Methods Engrg., 94 (2013),
+pp.~128--149] for solving incompressible Stokes equations, are extended to
+three-dimensional problems. A new analysis of the condition number bound for
+using the Dirichlet preconditioner is given. An advantage of this new analysis
+is that the numerous coarse level velocity components, required in the previous
+analysis to enforce the divergence free subdomain boundary velocity conditions,
+are no longer needed. This greatly reduces the size of the coarse level problem
+in the algorithm, especially for three-dimensional problems. The coarse level
+velocity space can be chosen as simple as for solving scalar elliptic problems
+corresponding to each velocity component. Both Dirichlet and lumped
+preconditioners are analyzed using a same framework in this new analysis. Their
+condition number bounds are proved to be independent of the number of
+subdomains for fixed subdomain problem size. Numerical experiments in both two
+and three dimensions demonstrate the convergence rate of the algorithms.

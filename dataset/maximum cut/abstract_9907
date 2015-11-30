@@ -1,0 +1,22 @@
+Weak lensing observations measure the shear field and hence the gradient of
+the dimensionless surface density $\kappa$. We present several new algorithms
+to recover $\kappa$ {}from shear estimates on a finite region and compare how
+they perform with realistically noisy data. The reconstruction methods studied
+here are divided into 2 classes: direct reconstruction and regularized
+inversion. Direct reconstruction techniques express $\kappa$ as a 2D integral
+of the shear field. This yields an estimator for $\kappa$ as a discrete sum
+over background galaxy ellipticities which is straightforward to implement, and
+allows a simple estimate of the noise. We study 3 types of direct
+reconstruction methods: 1) $\kappa$-estimators that measure the surface density
+at any given target point relative to the mean value in a reference region 2) a
+method that explicitly attempts to minimize the rotational part of $\nabla
+\kappa$ that is due to noise and 3) a novel, exact Fourier-space inverse
+gradient operator. We also develop two `regularized maximum likelihood'
+methods, one of which employs the conventional discrete Laplacian operator as a
+regularizer and the other uses regularization of all components in Fourier
+space. We compare the performance of all the estimators by means of simulations
+and noise power analysis. A general feature of these unbiased methods is an
+enhancement of the low frequency power which, for some of the methods, can be
+quite severe. We find the best performance is provided by the maximum
+likelihood method with Fourier space regularization although some of the other
+methods perform almost as well.

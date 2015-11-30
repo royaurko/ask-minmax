@@ -1,0 +1,15 @@
+We study the problem of reconstructing a sparse signal from a limited number
+of its linear projections when a part of its support is known, although the
+known part may contain some errors. The ``known" part of the support, denoted
+T, may be available from prior knowledge. Alternatively, in a problem of
+recursively reconstructing time sequences of sparse spatial signals, one may
+use the support estimate from the previous time instant as the ``known" part.
+The idea of our proposed solution (modified-CS) is to solve a convex relaxation
+of the following problem: find the signal that satisfies the data constraint
+and is sparsest outside of T. We obtain sufficient conditions for exact
+reconstruction using modified-CS. These are much weaker than those needed for
+compressive sensing (CS) when the sizes of the unknown part of the support and
+of errors in the known part are small compared to the support size. An
+important extension called Regularized Modified-CS (RegModCS) is developed
+which also uses prior signal estimate knowledge. Simulation comparisons for
+both sparse and compressible signals are shown.

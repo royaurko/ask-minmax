@@ -1,0 +1,24 @@
+The problem of designing efficient feedback-based scheduling policies for
+chunked codes (CC) over packet networks with delay and loss is considered. For
+networks with feedback, two scheduling policies, referred to as random push
+(RP) and local-rarest-first (LRF), already exist. We propose a new scheduling
+policy, referred to as minimum-distance-first (MDF), based on the expected
+number of innovative successful packet transmissions at each node of the
+network prior to the "next" transmission time, given the feedback information
+from the downstream node(s) about the received packets. Unlike the existing
+policies, the MDF policy incorporates loss and delay models of the link in the
+selection process of the chunk to be transmitted. Our simulations show that MDF
+significantly reduces the expected time required for all the chunks (or
+equivalently, all the message packets) to be decodable compared to the existing
+scheduling policies for line networks with feedback. The improvements are
+particularly profound (up to about 46% for the tested cases) for smaller chunks
+and larger networks which are of more practical interest. The improvement in
+the performance of the proposed scheduling policy comes at the cost of more
+computations, and a slight increase in the amount of feedback. We also propose
+a low-complexity version of MDF with a rather small loss in the performance,
+referred to as minimumcurrent-metric-first (MCMF). The MCMF policy is based on
+the expected number of innovative packet transmissions prior to the "current"
+transmission time, as opposed to the next transmission time, used in MDF. Our
+simulations (over line networks) demonstrate that MCMF is always superior to RP
+and LRF policies, and the superiority becomes more pronounced for smaller
+chunks and larger networks.

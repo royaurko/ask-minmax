@@ -1,0 +1,25 @@
+An added-mass partitioned (AMP) algorithm is described for solving
+fluid-structure interaction (FSI) problems coupling incompressible flows with
+thin elastic structures undergoing finite deformations. The new AMP scheme is
+fully second-order accurate and stable, without sub-time-step iterations, even
+for very light structures when added-mass effects are strong. The fluid,
+governed by the incompressible Navier-Stokes equations, is solved in
+velocity-pressure form using a fractional-step method; large deformations are
+treated with a mixed Eulerian-Lagrangian approach on deforming composite grids.
+The motion of the thin structure is governed by a generalized Euler-Bernoulli
+beam model, and these equations are solved in a Lagrangian frame using two
+approaches, one based on finite differences and the other on finite elements.
+Special treatment of the AMP condition is required to couple the finite-element
+beam solver with the finite-difference-based fluid solver, and two coupling
+approaches are described. A normal-mode stability analysis is performed for a
+linearized model problem involving a beam separating two fluid domains, and it
+is shown that the AMP scheme is stable independent of the ratio of the mass of
+the fluid to that of the structure. A traditional partitioned (TP) scheme using
+a Dirichlet-Neumann coupling for the same model problem is shown to be
+unconditionally unstable if the added mass of the fluid is too large. A series
+of benchmark problems of increasing complexity are considered to illustrate the
+behavior of the AMP algorithm, and to compare the behavior with that of the TP
+scheme. The results of all these benchmark problems verify the stability and
+accuracy of the AMP scheme. Results for one benchmark problem modeling blood
+flow in a deforming artery are also compared with corresponding results
+available in the literature.

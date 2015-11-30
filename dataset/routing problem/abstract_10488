@@ -1,0 +1,21 @@
+In this paper, we consider delay-optimal power and subcarrier allocation
+design for OFDMA systems with $N_F$ subcarriers, $K$ mobiles and one base
+station. There are $K$ queues at the base station for the downlink traffic to
+the $K$ mobiles with heterogeneous packet arrivals and delay requirements. We
+shall model the problem as a $K$-dimensional infinite horizon average reward
+Markov Decision Problem (MDP) where the control actions are assumed to be a
+function of the instantaneous Channel State Information (CSI) as well as the
+joint Queue State Information (QSI). This problem is challenging because it
+corresponds to a stochastic Network Utility Maximization (NUM) problem where
+general solution is still unknown. We propose an {\em online stochastic value
+iteration} solution using {\em stochastic approximation}. The proposed power
+control algorithm, which is a function of both the CSI and the QSI, takes the
+form of multi-level water-filling. We prove that under two mild conditions in
+Theorem 1 (One is the stepsize condition. The other is the condition on
+accessibility of the Markov Chain, which can be easily satisfied in most of the
+cases we are interested.), the proposed solution converges to the optimal
+solution almost surely (with probability 1) and the proposed framework offers a
+possible solution to the general stochastic NUM problem. By exploiting the
+birth-death structure of the queue dynamics, we obtain a reduced complexity
+decomposed solution with linear $\mathcal{O}(KN_F)$ complexity and
+$\mathcal{O}(K)$ memory requirement.

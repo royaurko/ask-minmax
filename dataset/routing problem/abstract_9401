@@ -1,0 +1,17 @@
+The central problem in this work is to compute a ranking of a set of elements
+which is "closest to" a given set of input rankings of the elements. We define
+"closest to" in an established way as having the minimum sum of Kendall-Tau
+distances to each input ranking. Unfortunately, the resulting problem Kemeny
+consensus is NP-hard for instances with n input rankings, n being an even
+integer greater than three. Nevertheless this problem plays a central role in
+many rank aggregation problems. It was shown that one can compute the
+corresponding Kemeny consensus list in f(k) + poly(n) time, being f(k) a
+computable function in one of the parameters "score of the consensus", "maximum
+distance between two input rankings", "number of candidates" and "average
+pairwise Kendall-Tau distance" and poly(n) a polynomial in the input size. This
+work will demonstrate the practical usefulness of the corresponding algorithms
+by applying them to randomly generated and several real-world data. Thus, we
+show that these fixed-parameter algorithms are not only of theoretical
+interest. In a more theoretical part of this work we will develop an improved
+fixed-parameter algorithm for the parameter "score of the consensus" having a
+better upper bound for the running time than previous algorithms.

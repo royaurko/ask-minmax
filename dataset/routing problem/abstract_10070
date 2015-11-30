@@ -1,0 +1,17 @@
+The containment problem of Datalog queries is well known to be undecidable.
+There are, however, several Datalog fragments for which containment is known to
+be decidable, most notably monadic Datalog and several "regular" query
+languages on graphs. Monadically Defined Queries (MQs) have been introduced
+recently as a joint generalization of these query languages. In this paper, we
+study a wide range of Datalog fragments with decidable query containment and
+determine exact complexity results for this problem. We generalize MQs to
+(Frontier-)Guarded Queries (GQs), and show that the containment problem is
+3ExpTime-complete in either case, even if we allow arbitrary Datalog in the
+sub-query. If we focus on graph query languages, i.e., fragments of linear
+Datalog, then this complexity is reduced to 2ExpSpace. We also consider nested
+queries, which gain further expressivity by using predicates that are defined
+by inner queries. We show that nesting leads to an exponentially increasing
+hierarchy for the complexity of query containment, both in the linear and in
+the general case. Our results settle open problems for (nested) MQs, and they
+paint a comprehensive picture of the state of the art in Datalog query
+containment.

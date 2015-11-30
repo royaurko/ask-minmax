@@ -1,0 +1,13 @@
+Given a coprime pair $(m,n)$ of positive integers, rational $(m,n)$-Dyck
+paths are lattice paths in the $m\times n$ rectangle that never go below the
+diagonal. The sweep map of a rational $(m,n)$-Dyck paths $D$ is the rational
+Dyck path $\Phi(D)$ obtained by sorting the steps of $D$ according to the ranks
+of their starting points, where the rank of $(a,b)$ is $bm-an$. It is
+conjectured to be a bijection, but to this date, $\Phi$ is only known to be
+bijective for the Fuss case ($m=kn\pm 1$). In this paper we give an efficient
+search algorithm for inverting the $\Phi$ map. Roughly speaking, given
+$\sigma\in \cal D_{m,n}$, by searching through a $d$-array tree of certain
+depth, we can output all $D$ such that $\Phi(D)=\sigma$, where $d$ is the
+remainder of $m$ when divided by $n$. In particular, we show that $\Phi$ is
+invertible for the Fuss case by giving a simple recursive construction for
+$\Phi^{-1} (\sigma)$.

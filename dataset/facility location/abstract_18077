@@ -1,0 +1,25 @@
+Image representation and classification are two fundamental tasks towards
+multimedia content retrieval and understanding. The idea that shape and texture
+information (e.g. edge or orientation) are the key features for visual
+representation is ingrained and dominated in current multimedia and computer
+vision communities. A number of low-level features have been proposed by
+computing local gradients (e.g. SIFT, LBP and HOG), and have achieved great
+successes on numerous multimedia applications. In this paper, we present a
+simple yet efficient local descriptor for image classification, referred as
+Local Color Contrastive Descriptor (LCCD), by leveraging the neural mechanisms
+of color contrast. The idea originates from the observation in neural science
+that color and shape information are linked inextricably in visual cortical
+processing. The color contrast yields key information for visual color
+perception and provides strong linkage between color and shape. We propose a
+novel contrastive mechanism to compute the color contrast in both spatial
+location and multiple channels. The color contrast is computed by measuring
+\emph{f}-divergence between the color distributions of two regions. Our
+descriptor enriches local image representation with both color and contrast
+information. We verified experimentally that it can compensate strongly for the
+shape based descriptor (e.g. SIFT), while keeping computationally simple.
+Extensive experimental results on image classification show that our descriptor
+improves the performance of SIFT substantially by combinations, and achieves
+the state-of-the-art performance on three challenging benchmark datasets. It
+improves recent Deep Learning model (DeCAF) [1] largely from the accuracy of
+40.94% to 49.68% in the large scale SUN397 database. Codes for the LCCD will be
+available.

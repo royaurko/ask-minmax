@@ -1,0 +1,20 @@
+Let $S$ be a set of $n^2$ symbols. Let $A$ be an $n\times n$ square grid with
+each cell labeled by a distinct symbol in $S$. Let $B$ be another $n\times n$
+square grid, also with each cell labeled by a distinct symbol in $S$. Then each
+symbol in $S$ labels two cells, one in $A$ and one in $B$. Define the
+\emph{combined distance} between two symbols in $S$ as the distance between the
+two cells in $A$ plus the distance between the two cells in $B$ that are
+labeled by the two symbols. Bel\'en Palop asked the following question at the
+open problems session of CCCG 2009: How to arrange the symbols in the two grids
+such that the minimum combined distance between any two symbols is maximized?
+In this paper, we give a partial answer to Bel\'en Palop's question.
+  Define $c_p(n) = \max_{A,B}\min_{s,t \in S} \{\dist_p(A,s,t) + \dist_p(B,s,t)
+\}$, where $A$ and $B$ range over all pairs of $n\times n$ square grids labeled
+by the same set $S$ of $n^2$ distinct symbols, and where $\dist_p(A,s,t)$ and
+$\dist_p(B,s,t)$ are the $L_p$ distances between the cells in $A$ and in $B$,
+respectively, that are labeled by the two symbols $s$ and $t$. We present
+asymptotically optimal bounds $c_p(n) = \Theta(\sqrt{n})$ for all
+$p=1,2,...,\infty$. The bounds also hold for generalizations to $d$-dimensional
+grids for any constant $d \ge 2$. Our proof yields a simple linear-time
+constant-factor approximation algorithm for maximizing the minimum combined
+distance between any two symbols in two grids.

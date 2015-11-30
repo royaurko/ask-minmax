@@ -1,0 +1,20 @@
+We study classical deadline-based preemptive scheduling of tasks in a
+computing environment equipped with both dynamic speed scaling and sleep state
+capabilities: Each task is specified by a release time, a deadline and a
+processing volume, and has to be scheduled on a single, speed-scalable
+processor that is supplied with a sleep state. In the sleep state, the
+processor consumes no energy, but a constant wake-up cost is required to
+transition back to the active state. In contrast to speed scaling alone, the
+addition of a sleep state makes it sometimes beneficial to accelerate the
+processing of tasks in order to transition the processor to the sleep state for
+longer amounts of time and incur further energy savings. The goal is to output
+a feasible schedule that minimizes the energy consumption. Since the
+introduction of the problem by Irani et al. [16], its exact computational
+complexity has been repeatedly posed as an open question (see e.g. [2,8,15]).
+The currently best known upper and lower bounds are a 4/3-approximation
+algorithm and NP-hardness due to [2] and [2,17], respectively. We close the
+aforementioned gap between the upper and lower bound on the computational
+complexity of speed scaling with sleep state by presenting a fully
+polynomial-time approximation scheme for the problem. The scheme is based on a
+transformation to a non-preemptive variant of the problem, and a discretization
+that exploits a carefully defined lexicographical ordering among schedules.

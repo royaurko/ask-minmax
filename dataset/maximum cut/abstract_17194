@@ -1,0 +1,15 @@
+An approach to the remote sensing of land surface temperature is developed
+using the methods of Bayesian inference. The starting point is the maximum
+entropy estimate for the posterior distribution of radiance in multiple bands.
+In order to convert this quantity to an estimator for surface temperature and
+emissivity with Bayes' theorem, it is necessary to obtain the joint prior
+probability for surface temperature and emissivity, given available prior
+knowledge. The requirement that any pair of distinct observers be able to
+relate their descriptions of radiance under arbitrary Lorentz transformations
+uniquely determines the prior probability. Perhaps surprisingly, surface
+temperature acts as a scale parameter, while emissivity acts as a location
+parameter, giving the prior probability P(T,emissivity|K)=const./T dT
+d(emissivity). Given this result, it is a simple matter to construct estimators
+for surface temperature and emssivity. Monte Carlo simulations of land surface
+temeprature retrieval in selected MODIS bands are presented as examples of the
+utility of the approach.

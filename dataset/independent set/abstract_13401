@@ -1,0 +1,22 @@
+A (1 + eps)-approximate distance oracle for a graph is a data structure that
+supports approximate point-to-point shortest-path-distance queries. The most
+relevant measures for a distance-oracle construction are: space, query time,
+and preprocessing time. There are strong distance-oracle constructions known
+for planar graphs (Thorup, JACM'04) and, subsequently, minor-excluded graphs
+(Abraham and Gavoille, PODC'06). However, these require Omega(eps^{-1} n lg n)
+space for n-node graphs. We argue that a very low space requirement is
+essential. Since modern computer architectures involve hierarchical memory
+(caches, primary memory, secondary memory), a high memory requirement in effect
+may greatly increase the actual running time. Moreover, we would like data
+structures that can be deployed on small mobile devices, such as handhelds,
+which have relatively small primary memory. In this paper, for planar graphs,
+bounded-genus graphs, and minor-excluded graphs we give distance-oracle
+constructions that require only O(n) space. The big O hides only a fixed
+constant, independent of \epsilon and independent of genus or size of an
+excluded minor. The preprocessing times for our distance oracle are also faster
+than those for the previously known constructions. For planar graphs, the
+preprocessing time is O(n lg^2 n). However, our constructions have slower query
+times. For planar graphs, the query time is O(eps^{-2} lg^2 n). For our
+linear-space results, we can in fact ensure, for any delta > 0, that the space
+required is only 1 + delta times the space required just to represent the graph
+itself.

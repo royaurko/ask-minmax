@@ -1,0 +1,21 @@
+It is well known that an arbitrary graphical model of statistical inference
+defined on a tree, i.e. on a graph without loops, is solved exactly and
+efficiently by an iterative Belief Propagation (BP) algorithm convergent to
+unique minimum of the so-called Bethe free energy functional. For a general
+graphical model on a loopy graph the functional may show multiple minima, the
+iterative BP algorithm may converge to one of the minima or may not converge at
+all, and the global minimum of the Bethe free energy functional is not
+guaranteed to correspond to the optimal Maximum-Likelihood (ML) solution in the
+zero-temperature limit. However, there are exceptions to this general rule,
+discussed in \cite{05KW} and \cite{08BSS} in two different contexts, where
+zero-temperature version of the BP algorithm finds ML solution for special
+models on graphs with loops. These two models share a key feature: their ML
+solutions can be found by an efficient Linear Programming (LP) algorithm with a
+Totally-Uni-Modular (TUM) matrix of constraints. Generalizing the two models we
+consider a class of graphical models reducible in the zero temperature limit to
+LP with TUM constraints. Assuming that a gedanken algorithm, g-BP, funding the
+global minimum of the Bethe free energy is available we show that in the limit
+of zero temperature g-BP outputs the ML solution. Our consideration is based on
+equivalence established between gapless Linear Programming (LP) relaxation of
+the graphical model in the $T\to 0$ limit and respective LP version of the
+Bethe-Free energy minimization.

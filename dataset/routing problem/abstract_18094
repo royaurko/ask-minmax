@@ -1,0 +1,15 @@
+We propose a new primal-dual splitting method for solving composite
+inclusions involving Lipschitzian, and parallel-sum-type monotone operators.
+Our approach extends the framework in \cite{Siopt4} to a more general class of
+monotone inclusions in a nontrivial fashion. The main idea is to represent the
+solution set of both the primal and dual problems using their associated
+Kuhn-Tucker set, and then develop a projected method to successively
+approximate a feasible point of the Kuhn-Tucker set. We propose a splitting
+algorithm based on the resolvent of each maximally monotone operator to
+construct a primal-dual sequence that weakly converges to a solution of the
+original problem. The key feature of our method is that it only employes the
+resolvent of each monotone operator separately, which is different from
+existing methods in the literature. As a byproduct, our algorithm can be
+specialized to solve composite convex minimization problems that uses the
+proximal-operator of each objective component independently, and is equipped
+with a weakly convergence guarantee.

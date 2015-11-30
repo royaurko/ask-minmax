@@ -1,0 +1,14 @@
+A Lyndon word is a primitive string which is lexicographically smallest among
+cyclic permutations of its characters. Lyndon words are used for constructing
+bases in free Lie algebras, constructing de Bruijn sequences, finding the
+lexicographically smallest or largest substring in a string, and succinct
+suffix-prefix matching of highly periodic strings. In this paper, we extend the
+concept of the Lyndon word to two dimensions. We introduce the 2D Lyndon word
+and use it to capture 2D horizontal periodicity of a matrix in which each row
+is highly periodic, and to efficiently solve 2D horizontal suffix-prefix
+matching among a set of patterns. This yields a succinct and efficient
+algorithm for 2D dictionary matching.
+  We present several algorithms that compute the 2D Lyndon word that represents
+a matrix. The final algorithm achieves linear time complexity even when the
+least common multiple of the periods of the rows is exponential in the matrix
+width.

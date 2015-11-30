@@ -1,0 +1,22 @@
+Given a set of objects with durations (jobs) that cover a base region, can we
+schedule the jobs to maximize the duration the original region remains covered?
+We call this problem the sensor cover problem. This problem arises in the
+context of covering a region with sensors. For example, suppose you wish to
+monitor activity along a fence by sensors placed at various fixed locations.
+Each sensor has a range and limited battery life. The problem is to schedule
+when to turn on the sensors so that the fence is fully monitored for as long as
+possible. This one dimensional problem involves intervals on the real line.
+Associating a duration to each yields a set of rectangles in space and time,
+each specified by a pair of fixed horizontal endpoints and a height. The
+objective is to assign a position to each rectangle to maximize the height at
+which the spanning interval is fully covered. We call this one dimensional
+problem restricted strip covering. If we replace the covering constraint by a
+packing constraint, the problem is identical to dynamic storage allocation, a
+scheduling problem that is a restricted case of the strip packing problem. We
+show that the restricted strip covering problem is NP-hard and present an O(log
+log n)-approximation algorithm. We present better approximations or exact
+algorithms for some special cases. For the uniform-duration case of restricted
+strip covering we give a polynomial-time, exact algorithm but prove that the
+uniform-duration case for higher-dimensional regions is NP-hard. Finally, we
+consider regions that are arbitrary sets, and we present an O(log
+n)-approximation algorithm.

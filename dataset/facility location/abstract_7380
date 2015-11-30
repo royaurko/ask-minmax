@@ -1,0 +1,19 @@
+We consider estimation of a step function $f$ from noisy observations of a
+deconvolution $\phi*f$, where $\phi$ is some bounded $L_1$-function. We use a
+penalized least squares estimator to reconstruct the signal $f$ from the
+observations, with penalty equal to the number of jumps of the reconstruction.
+Asymptotically, it is possible to correctly estimate the number of jumps with
+probability one. Given that the number of jumps is correctly estimated, we show
+that the corresponding parameter estimates of the jump locations and jump
+heights are $n^{-1/2}$ consistent and converge to a joint normal distribution
+with covariance structure depending on $\phi$, and that this rate is minimax
+for bounded continuous kernels $\phi$. As special case we obtain the asymptotic
+distribution of the least squares estimator in multiphase regression and
+generalisations thereof. In contrast to the results obtained for bounded
+$\phi$, we show that for kernels with a singularity of order $O(|
+x|^{-\alpha}),1/2<\alpha<1$, a jump location can be estimated at a rate of
+$n^{-1/(3-2\alpha)}$, which is again the minimax rate. We find that these rate
+do not depend on the spectral information of the operator rather on its
+localization properties in the time domain. Finally, it turns out that adaptive
+sampling does not improve the rate of convergence, in strict contrast to the
+case of direct regression.

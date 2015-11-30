@@ -1,0 +1,11 @@
+Branch-and-price algorithms combine a branch-and-bound search with an
+exponentially-sized LP formulation that must be solved via column generation.
+Unfortunately, the standard branching rules used in branch-and-bound for
+integer programming interfere with the structure of the column generation
+routine; therefore, most such algorithms employ alternate branching rules to
+circumvent this difficulty. This paper shows how a zero-suppressed binary
+decision diagram (ZDD) can be used to solve the pricing problem in a
+branch-and-price algorithm for the graph coloring problem, even in the presence
+of constraints imposed by branching decisions. This approach facilitates a much
+more direct solution method, and can improve convergence of the column
+generation subroutine.

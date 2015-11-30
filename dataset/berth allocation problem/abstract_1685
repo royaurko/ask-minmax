@@ -1,0 +1,18 @@
+We introduce a parameterized version of set cover that generalizes several
+previously studied problems. Given a ground set V and a collection of subsets
+S_i of V, a feasible solution is a partition of V such that each subset of the
+partition is included in one of the S_i. The problem involves maximizing the
+mean subset size of the partition, where the mean is the generalized mean of
+parameter p, taken over the elements. For p=-1, the problem is equivalent to
+the classical minimum set cover problem. For p=0, it is equivalent to the
+minimum entropy set cover problem, introduced by Halperin and Karp. For p=1,
+the problem includes the maximum-edge clique partition problem as a special
+case. We prove that the greedy algorithm simultaneously approximates the
+problem within a factor of (p+1)^1/p for any p in R^+, and that this is the
+best possible unless P=NP. These results both generalize and simplify previous
+results for special cases. We also consider the corresponding graph coloring
+problem, and prove several tractability and inapproximability results. Finally,
+we consider a further generalization of the set cover problem in which we aim
+at minimizing the sum of some concave function of the part sizes. As an
+application, we derive an approximation ratio for a Rent-or-Buy set cover
+problem.

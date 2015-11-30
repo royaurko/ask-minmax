@@ -1,0 +1,13 @@
+We consider the problem of numerically integrating functions with hyperplane
+discontinuities over the entire Euclidean space in many dimensions. We describe
+a simple process through which the Euclidean space is partitioned into
+simplices on which the integrand is smooth, generalising the standard practice
+of dividing the interval used in one-dimensional problems. Our procedure is
+combined with existing adaptive cubature algorithms to significantly reduce the
+necessary number of function valuations and memory requirements of the
+integrator. The method is embarrassingly parallel and can be trivially scaled
+across many cores with virtually no overhead. Our method is particularly
+pertinent to the integration of Green's functions, a problem directly related
+to the perturbation theory of impurity models. In three spatial dimensions we
+observe a speed-up of order $100$ which increases with increasing
+dimensionality.

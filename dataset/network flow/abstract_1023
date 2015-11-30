@@ -1,0 +1,18 @@
+The problem of serving multicast flows in a crossbar switch is considered.
+Intra-flow linear network coding is shown to achieve a larger rate region than
+the case without coding. A traffic pattern is presented which is achievable
+with coding but requires a switch speedup when coding is not allowed. The rate
+region with coding can be characterized in a simple graph-theoretic manner, in
+terms of the stable set polytope of the "enhanced conflict graph". No such
+graph-theoretic characterization is known for the case of fanout splitting
+without coding.
+  The minimum speedup needed to achieve 100% throughput with coding is shown to
+be upper bounded by the imperfection ratio of the enhanced conflict graph. When
+applied to KxN switches with unicasts and broadcasts only, this gives a bound
+of min{(2K-1)/K,2N/(N+1)} on the speedup. This shows that speedup, which is
+usually implemented in hardware, can often be substituted by network coding,
+which can be done in software.
+  Computing an offline schedule (using prior knowledge of the flow rates) is
+reduced to fractional weighted graph coloring. A graph-theoretic online
+scheduling algorithm (using only queue occupancy information) is also proposed,
+that stabilizes the queues for all rates within the rate region.

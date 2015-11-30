@@ -1,0 +1,25 @@
+The classical center based clustering problems such as
+$k$-means/median/center assume that the optimal clusters satisfy the locality
+property that the points in the same cluster are close to each other. A number
+of clustering problems arise in machine learning where the optimal clusters do
+not follow such a locality property. Consider a variant of the $k$-means
+problem that may be regarded as a general version of such problems. Here, the
+optimal clusters $O_1, ..., O_k$ are an arbitrary partition of the dataset and
+the goal is to output $k$-centers $c_1, ..., c_k$ such that the objective
+function $\sum_{i=1}^{k} \sum_{x \in O_{i}} ||x - c_{i}||^2$ is minimized. It
+is not difficult to argue that any algorithm (without knowing the optimal
+clusters) that outputs a single set of $k$ centers, will not behave well as far
+as optimizing the above objective function is concerned. However, this does not
+rule out the existence of algorithms that output a list of such $k$ centers
+such that at least one of these $k$ centers behaves well. Given an error
+parameter $\varepsilon > 0$, let $\ell$ denote the size of the smallest list of
+$k$-centers such that at least one of the $k$-centers gives a $(1+\varepsilon)$
+approximation w.r.t. the objective function above. In this paper, we show an
+upper bound on $\ell$ by giving a randomized algorithm that outputs a list of
+$2^{\tilde{O}(k/\varepsilon)}$ $k$-centers. We also give a closely matching
+lower bound of $2^{\tilde{\Omega}(k/\sqrt{\varepsilon})}$. Moreover, our
+algorithm runs in time $O \left(n d \cdot 2^{\tilde{O}(k/\varepsilon)}
+\right)$. This is a significant improvement over the previous result of Ding
+and Xu who gave an algorithm with running time $O \left(n d \cdot (\log{n})^{k}
+\cdot 2^{poly(k/\varepsilon)} \right)$ and output a list of size $O
+\left((\log{n})^k \cdot 2^{poly(k/\varepsilon)} \right)$.

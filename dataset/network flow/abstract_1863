@@ -1,0 +1,21 @@
+Although there are many neural network (NN) algorithms for prediction and for
+control, and although methods for optimal estimation (including filtering and
+prediction) and for optimal control in linear systems were provided by Kalman
+in 1960 (with nonlinear extensions since then), there has been, to my
+knowledge, no NN algorithm that learns either Kalman prediction or Kalman
+control (apart from the special case of stationary control). Here we show how
+optimal Kalman prediction and control (KPC), as well as system identification,
+can be learned and executed by a recurrent neural network composed of
+linear-response nodes, using as input only a stream of noisy measurement data.
+  The requirements of KPC appear to impose significant constraints on the
+allowed NN circuitry and signal flows. The NN architecture implied by these
+constraints bears certain resemblances to the local-circuit architecture of
+mammalian cerebral cortex. We discuss these resemblances, as well as caveats
+that limit our current ability to draw inferences for biological function. It
+has been suggested that the local cortical circuit (LCC) architecture may
+perform core functions (as yet unknown) that underlie sensory, motor,and other
+cortical processing. It is reasonable to conjecture that such functions may
+include prediction, the estimation or inference of missing or noisy sensory
+data, and the goal-driven generation of control signals. The resemblances found
+between the KPC NN architecture and that of the LCC are consistent with this
+conjecture.

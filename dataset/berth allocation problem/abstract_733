@@ -1,0 +1,21 @@
+A novel language system has given rise to promising alternatives to standard
+formal and processor network models of computation. An interstring linked with
+a abstract machine environment, shares sub-expressions, transfers data, and
+spatially allocates resources for the parallel evaluation of dataflow. Formal
+models called the a-Ram family are introduced, designed to support interstring
+programming languages (interlanguages). Distinct from dataflow, graph
+rewriting, and FPGA models, a-Ram instructions are bit level and execute in
+situ. They support sequential and parallel languages without the space/time
+overheads associated with the Turing Machine and l-calculus, enabling massive
+programs to be simulated. The devices of one a-Ram model, called the Synchronic
+A-Ram, are fully connected and simpler than FPGA LUT's. A compiler for an
+interlanguage called Space, has been developed for the Synchronic A-Ram. Space
+is MIMD. strictly typed, and deterministic. Barring memory allocation and
+compilation, modules are referentially transparent. At a high level of
+abstraction, modules exhibit a state transition system, aiding verification.
+Data structures and parallel iteration are straightforward to implement, and
+allocations of sub-processes and data transfers to resources are implicit.
+Space points towards highly connected architectures called Synchronic Engines,
+that scale in a GALS manner. Synchronic Engines are more general purpose than
+systolic arrays and GPUs, and bypass programmability and conflict issues
+associated with multicores.

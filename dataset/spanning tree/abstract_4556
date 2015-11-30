@@ -1,0 +1,16 @@
+Sparse approximations using highly over-complete dictionaries is a
+state-of-the-art tool for many imaging applications including denoising,
+super-resolution, compressive sensing, light-field analysis, and object
+recognition. Unfortunately, the applicability of such methods is severely
+hampered by the computational burden of sparse approximation: these algorithms
+are linear or super-linear in both the data dimensionality and size of the
+dictionary. We propose a framework for learning the hierarchical structure of
+over-complete dictionaries that enables fast computation of sparse
+representations. Our method builds on tree-based strategies for nearest
+neighbor matching, and presents domain-specific enhancements that are highly
+efficient for the analysis of image patches. Contrary to most popular methods
+for building spatial data structures, out methods rely on shallow, balanced
+trees with relatively few layers. We show an extensive array of experiments on
+several applications such as image denoising/superresolution, compressive
+video/light-field sensing where we practically achieve 100-1000x speedup (with
+a less than 1dB loss in accuracy).

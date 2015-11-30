@@ -1,0 +1,20 @@
+We show a tight lower bound of $\Omega(N \log\log N)$ on the number of
+transmissions required to compute the parity of $N$ input bits with constant
+error in a noisy communication network of $N$ randomly placed sensors, each
+having one input bit and communicating with others using local transmissions
+with power near the connectivity threshold. This result settles the lower bound
+question left open by Ying, Srikant and Dullerud (WiOpt 06), who showed how the
+sum of all the $N$ bits can be computed using $O(N \log\log N)$ transmissions.
+The same lower bound has been shown to hold for a host of other functions
+including majority by Dutta and Radhakrishnan (FOCS 2008).
+  Most works on lower bounds for communication networks considered mostly the
+full broadcast model without using the fact that the communication in real
+networks is local, determined by the power of the transmitters. In fact, in
+full broadcast networks computing parity needs $\theta(N)$ transmissions. To
+obtain our lower bound we employ techniques developed by Goyal, Kindler and
+Saks (FOCS 05), who showed lower bounds in the full broadcast model by reducing
+the problem to a model of noisy decision trees. However, in order to capture
+the limited range of transmissions in real sensor networks, we adapt their
+definition of noisy decision trees and allow each node of the tree access to
+only a limited part of the input. Our lower bound is obtained by exploiting
+special properties of parity computations in such noisy decision trees.

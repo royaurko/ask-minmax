@@ -1,0 +1,16 @@
+We consider the model of information diffusion in social networks from
+\cite{Hui2010a} which incorporates trust (weighted links) between actors, and
+allows actors to actively participate in the spreading process, specifically
+through the ability to query friends for additional information. This model
+captures how social agents transmit and act upon information more realistically
+as compared to the simpler threshold and cascade models. However, it is more
+difficult to analyze, in particular with respect to seeding strategies. We
+present efficient, scalable algorithms for determining good seed sets --
+initial nodes to inject with the information. Our general approach is to reduce
+our model to a class of simpler models for which provably good sets can be
+constructed. By tuning this class of simpler models, we obtain a good seed set
+for the original more complex model. We call this the \emph{projected greedy
+approach} because you `project' your model onto a class of simpler models where
+a greedy seed set selection is near-optimal. We demonstrate the effectiveness
+of our seeding strategy on synthetic graphs as well as a realistic San Diego
+evacuation network constructed during the 2007 fires.

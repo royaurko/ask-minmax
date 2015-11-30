@@ -1,0 +1,16 @@
+To harness the ever growing capacity and decreasing cost of storage,
+providing an abstraction of dependable storage in the presence of crash-stop
+and Byzantine failures is compulsory. We propose a decentralized Reed Solomon
+coding mechanism with minimum communication overhead. Using a progressive data
+retrieval scheme, a data collector contacts only the necessary number of
+storage nodes needed to guarantee data integrity. The scheme gracefully adapts
+the cost of successful data retrieval to the number of storage node failures.
+Moreover, by leveraging the Welch-Berlekamp algorithm, it avoids unnecessary
+computations. Compared to the state-of-the-art decoding scheme, the
+implementation and evaluation results show that our progressive data retrieval
+scheme has up to 35 times better computation performance for low Byzantine node
+rates. Additionally, the communication cost in data retrieval is derived
+analytically and corroborated by Monte-Carlo simulation results. Our
+implementation is flexible in that the level of redundancy it provides is
+independent of the number of data generating nodes, a requirement for
+distributed storage systems

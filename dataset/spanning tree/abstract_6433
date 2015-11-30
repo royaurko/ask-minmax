@@ -1,0 +1,16 @@
+Frequent itemset mining in uncertain transaction databases semantically and
+computationally differs from traditional techniques applied on standard
+(certain) transaction databases. Uncertain transaction databases consist of
+sets of existentially uncertain items. The uncertainty of items in transactions
+makes traditional techniques inapplicable. In this paper, we tackle the problem
+of finding probabilistic frequent itemsets based on possible world semantics.
+In this context, an itemset X is called frequent if the probability that X
+occurs in at least minSup transactions is above a given threshold. We make the
+following contributions: We propose the first probabilistic FP-Growth algorithm
+(ProFP-Growth) and associated probabilistic FP-Tree (ProFP-Tree), which we use
+to mine all probabilistic frequent itemsets in uncertain transaction databases
+without candidate generation. In addition, we propose an efficient technique to
+compute the support probability distribution of an itemset in linear time using
+the concept of generating functions. An extensive experimental section
+evaluates the our proposed techniques and shows that our ProFP-Growth approach
+is significantly faster than the current state-of-the-art algorithm.

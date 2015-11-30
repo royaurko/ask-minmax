@@ -1,0 +1,21 @@
+Consider the standard linear regression model $\y = \Xmat \betastar + w$,
+where $\y \in \real^\numobs$ is an observation vector, $\Xmat \in
+\real^{\numobs \times \pdim}$ is a design matrix, $\betastar \in \real^\pdim$
+is the unknown regression vector, and $w \sim \mathcal{N}(0, \sigma^2 I)$ is
+additive Gaussian noise. This paper studies the minimax rates of convergence
+for estimation of $\betastar$ for $\ell_\rpar$-losses and in the
+$\ell_2$-prediction loss, assuming that $\betastar$ belongs to an
+$\ell_{\qpar}$-ball $\Ballq(\myrad)$ for some $\qpar \in [0,1]$. We show that
+under suitable regularity conditions on the design matrix $\Xmat$, the minimax
+error in $\ell_2$-loss and $\ell_2$-prediction loss scales as $\Rq
+\big(\frac{\log \pdim}{n}\big)^{1-\frac{\qpar}{2}}$. In addition, we provide
+lower bounds on minimax risks in $\ell_{\rpar}$-norms, for all $\rpar \in [1,
++\infty], \rpar \neq \qpar$. Our proofs of the lower bounds are
+information-theoretic in nature, based on Fano's inequality and results on the
+metric entropy of the balls $\Ballq(\myrad)$, whereas our proofs of the upper
+bounds are direct and constructive, involving direct analysis of least-squares
+over $\ell_{\qpar}$-balls. For the special case $q = 0$, a comparison with
+$\ell_2$-risks achieved by computationally efficient $\ell_1$-relaxations
+reveals that although such methods can achieve the minimax rates up to constant
+factors, they require slightly stronger assumptions on the design matrix
+$\Xmat$ than algorithms involving least-squares over the $\ell_0$-ball.

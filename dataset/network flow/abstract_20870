@@ -1,0 +1,20 @@
+Biological structure and function depend on complex regulatory interactions
+between many genes. A wealth of gene expression data is available from
+high-throughput genome-wide measurement technologies, but effective gene
+regulatory network inference methods are still needed. Model-based methods
+founded on quantitative descriptions of gene regulation are among the most
+promising, but many such methods rely on simple, local models or on ad hoc
+inference approaches lacking experimental interpretability. We propose an
+experimental design and develop an associated statistical method for inferring
+a gene network by learning a standard quantitative, interpretable, predictive,
+biophysics-based ordinary differential equation model of gene regulation. We
+fit the model parameters using gene expression measurements from perturbed
+steady-states of the system, like those following overexpression or knockdown
+experiments. Although the original model is nonlinear, our design allows us to
+transform it into a convex optimization problem by restricting attention to
+steady-states and using the lasso for parameter selection. Here, we describe
+the model and inference algorithm and apply them to a synthetic six-gene
+system, demonstrating that the model is detailed and flexible enough to account
+for activation and repression as well as synergistic and self-regulation, and
+the algorithm can efficiently and accurately recover the parameters used to
+generate the data.

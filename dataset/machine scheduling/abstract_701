@@ -1,0 +1,23 @@
+It has been argued that a central objective of nanotechnology is to make
+products inexpensively, and that self-replication is an effective approach to
+very low-cost manufacturing. The research presented here is intended to be a
+step towards this vision. In previous work (JohnnyVon 1.0), we simulated
+machines that bonded together to form self-replicating strands. There were two
+types of machines (called types 0 and 1), which enabled strands to encode
+arbitrary bit strings. However, the information encoded in the strands had no
+functional role in the simulation. The information was replicated without being
+interpreted, which was a significant limitation for potential manufacturing
+applications. In the current work (JohnnyVon 2.0), the information in a strand
+is interpreted as instructions for assembling a polygonal mesh. There are now
+four types of machines and the information encoded in a strand determines how
+it folds. A strand may be in an unfolded state, in which the bonds are straight
+(although they flex slightly due to virtual forces acting on the machines), or
+in a folded state, in which the bond angles depend on the types of machines. By
+choosing the sequence of machine types in a strand, the user can specify a
+variety of polygonal shapes. A simulation typically begins with an initial
+unfolded seed strand in a soup of unbonded machines. The seed strand replicates
+by bonding with free machines in the soup. The child strands fold into the
+encoded polygonal shape, and then the polygons drift together and bond to form
+a mesh. We demonstrate that a variety of polygonal meshes can be manufactured
+in the simulation, by simply changing the sequence of machine types in the
+seed.

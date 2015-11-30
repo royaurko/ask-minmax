@@ -1,0 +1,25 @@
+In probability density function (PDF) methods of turbulent flows, the joint
+PDF of several flow variables is computed by numerically integrating a system
+of stochastic differential equations for Lagrangian particles. A mathematically
+exact treatment of advection, viscous effects and arbitrarily complex chemical
+reactions is possible; these processes are treated without closure assumptions.
+A set of algorithms is proposed to provide an efficient solution of the PDF
+transport equation modeling the joint PDF of turbulent velocity, frequency and
+concentration of a passive scalar in geometrically complex configurations. An
+unstructured Eulerian grid is employed to extract Eulerian statistics, to solve
+for quantities represented at fixed locations of the domain and to track
+particles. All three aspects regarding the grid make use of the finite element
+method. Compared to hybrid methods, the current methodology is stand-alone,
+therefore it is consistent both numerically and at the level of turbulence
+closure without the use of consistency conditions. Several newly developed
+algorithms are described that facilitate the numerical solution in complex flow
+geometries, including a stabilized mean-pressure projection scheme, the
+estimation of conditional and unconditional Eulerian statistics and their
+derivatives from stochastic particle fields, particle tracking through
+unstructured grids, an efficient particle redistribution procedure and
+techniques related to efficient random number generation. The solver has been
+parallelized and optimized for shared memory and multi-core architectures using
+the OpenMP standard. Relevant aspects of performance and parallelism on
+cache-based shared memory machines are discussed and presented in detail. The
+methodology shows great promise in the simulation of high-Reynolds-number
+incompressible inert or reactive turbulent flows in realistic configurations.

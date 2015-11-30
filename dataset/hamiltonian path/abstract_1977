@@ -1,0 +1,14 @@
+Shortest path computation is one of the most common queries in location-based
+services (LBSs). Although particularly useful, such queries raise serious
+privacy concerns. Exposing to a (potentially untrusted) LBS the client's
+position and her destination may reveal personal information, such as social
+habits, health condition, shopping preferences, lifestyle choices, etc. The
+only existing method for privacy-preserving shortest path computation follows
+the obfuscation paradigm; it prevents the LBS from inferring the source and
+destination of the query with a probability higher than a threshold. This
+implies, however, that the LBS still deduces some information (albeit not
+exact) about the client's location and her destination. In this paper we aim at
+strong privacy, where the adversary learns nothing about the shortest path
+query. We achieve this via established private information retrieval
+techniques, which we treat as black-box building blocks. Experiments on real,
+large-scale road networks assess the practicality of our schemes.

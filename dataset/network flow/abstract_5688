@@ -1,0 +1,16 @@
+Network operators today spend significant manual effort in ensuring and
+checking that the network meets their intended policies. While recent work in
+network verification has made giant strides to reduce this effort, they focus
+on simple reachability properties and cannot handle context-dependent policies
+(e.g., how many connections has a host spawned) that operators realize using
+stateful network functions (NFs). Together, these introduce new expressiveness
+and scalability challenges that fall outside the scope of existing network
+verification mechanisms. To address these challenges, we present Armstrong, a
+system that enables operators to test if network with stateful data plane
+elements correctly implements a given context-dependent policy. Our design
+makes three key contributions to address expressiveness and scalability: (1) An
+abstract I/O unit for modeling network I/O that encodes policy-relevant context
+information; (2) A practical representation of complex NFs via an ensemble of
+finite state machines abstraction; and (3) A scalable application of symbolic
+execution to tackle state space explosion. We demonstrate that Armstrong is
+several orders of magnitude faster than existing mechanisms.

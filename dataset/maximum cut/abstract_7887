@@ -1,0 +1,22 @@
+[Context] The stochasticity of grain chemistry requires special care in
+modeling. Previously methods based on the modified rate equation, the master
+equation, the moment equation, and Monte Carlo simulations have been used.
+[Aims] We attempt to develop a systematic and efficient way to model the
+gas-grain chemistry with a large reaction network as accurately as possible.
+[Methods] We present a hybrid moment equation approach which is a general and
+automatic method where the generating function is used to generate the moment
+equations. For large reaction networks, the moment equation is cut off at the
+second order, and a switch scheme is used when the average population of
+certain species reaches 1. For small networks, the third order moments can also
+be utilized to achieve a higher accuracy. [Results] For physical conditions in
+which the surface reactions are important, our method provides a major
+improvement over the rate equation approach, when benchmarked against the
+rigorous Monte Carlo results. For either very low or very high temperatures, or
+large grain radii, results from the rate equation are similar to those from our
+new approach. Our method is faster than the Monte Carlo approach, but slower
+than the rate equation approach. [Conclusions] The hybrid moment equation
+approach with a cutoff and switch scheme is applicable to large gas-grain
+networks, and is accurate enough to be used for astrochemistry studies. The
+layered structure of the grain mantle could also be incorporated into this
+approach, although a full implementation of the grain micro-physics appears to
+be difficult.

@@ -1,0 +1,20 @@
+Gene regulatory network reconstruction is a fundamental problem in
+computational biology. We recently developed an algorithm, called PANDA
+(Passing Attributes Between Networks for Data Assimilation), that integrates
+multiple sources of 'omics data and estimates regulatory network models. This
+approach was initially implemented in the C++ programming language and has
+since been applied to a number of biological systems. In our current research
+we are beginning to expand the algorithm to incorporate larger and most diverse
+data-sets, to reconstruct networks that contain increasing numbers of elements,
+and to build not only single network models, but sets of networks. In order to
+accomplish these "Big Data" applications, it has become critical that we
+increase the computational efficiency of the PANDA implementation. In this
+paper we show how to recast PANDA's similarity equations as matrix operations.
+This allows us to implement a highly readable version of the algorithm using
+the MATLAB/Octave programming language. We find that the resulting M-code much
+shorter (103 compared to 1128 lines) and more easily modifiable for potential
+future applications. The new implementation also runs significantly faster,
+with increasing efficiency as the network models increase in size. Tests
+comparing the C-code and M-code versions of PANDA demonstrate that this
+speed-up is on the order of 20-80 times faster for networks of similar
+dimensions to those we find in current biological applications.

@@ -1,0 +1,25 @@
+This paper presents an extension to Hoare logic for pointer program
+verification. Logic formulas with user-defined recursive functions are used to
+specify properties on the program states before/after program executions.
+  Three basic functions are introduced to represents memory access,
+record-field access and array-element access. Some axioms are introduced to
+specify these basic functions in our logic.
+  The concept Memory Scope Function (MSF) is introduced in our logic. Given a
+recursive function $f$, the MSF of $f$ computes the set of memory units
+accessed during the evaluation of $f$. A set of rules are given to derive the
+definition of this MSF syntactically from the definition of $f$. As MSFs are
+also recursive functions, they also have their MSFs. An axiom is given to
+specify that an MSF contains its MSF. Based on this axiom, local reasoning is
+supported with predicate variables.
+  Pre-state terms are used to specify the relations between pre-states and
+post-states. People can use pre-state terms in post-conditions to represents
+the values on the pre-state.
+  The axiom of assignment statements in Hoare's logic is modified to deal with
+pointers. The basic idea is that during the program execution, a recursive
+function is evaluated to the same value as long as no memory unit in its memory
+scope is modified. Another proof rule is added for memory allocation
+statements.
+  We use a simple example to show that our logic can deal with pointer programs
+in this paper. In the appendix, the Shorre-Waite algorithm is proved using our
+logic. We also use the selection-sort program to show that our logic can be
+used to prove program with indirectly-specified components.

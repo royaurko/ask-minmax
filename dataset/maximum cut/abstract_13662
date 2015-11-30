@@ -1,0 +1,14 @@
+In this paper fusion of visual and thermal images in wavelet transformed
+domain has been presented. Here, Daubechies wavelet transform, called as D2,
+coefficients from visual and corresponding coefficients computed in the same
+manner from thermal images are combined to get fused coefficients. After
+decomposition up to fifth level (Level 5) fusion of coefficients is done.
+Inverse Daubechies wavelet transform of those coefficients gives us fused face
+images. The main advantage of using wavelet transform is that it is well-suited
+to manage different image resolution and allows the image decomposition in
+different kinds of coefficients, while preserving the image information. Fused
+images thus found are passed through Principal Component Analysis (PCA) for
+reduction of dimensions and then those reduced fused images are classified
+using a multi-layer perceptron. For experiments IRIS Thermal/Visual Face
+Database was used. Experimental results show that the performance of the
+approach presented here achieves maximum success rate of 100% in many cases.

@@ -1,0 +1,17 @@
+This paper presents an approach to estimating a hidden process in a
+continuous-time setting, where the hidden process is a diffusion. The approach
+is simply to minimize the negative log-likelihood of the hidden path, where the
+likelihood is expressed relative to Wiener measure. This negative
+log-likelihood is the action integral of the path, which we minimize by
+calculus of variations. We then perform an asymptotic maximum-likelihood
+analysis to understand better how the actual path is distributed around the
+least-action path; it turns out that the actual path can be expressed
+(approximately) as the sum of the least-action path and a zero-mean Gaussian
+process which can be specified quite explicitly. Numerical solution of the ODEs
+which arise from the calculus of variations is often feasible, but is
+complicated by the shooting nature of the problem, and the possibility that we
+have found a local but not global minimum. We analyze the situations when this
+happens, and provide effective numerical methods for studying this. We also
+show how the methodology works in a situation where the hidden positive
+diffusion acts as the random intensity of a point process which is observed;
+here too it is possible to estimate the hidden process.

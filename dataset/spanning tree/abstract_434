@@ -1,0 +1,16 @@
+An out-(in-)branching B_s^+ (B_s^-) rooted at s in a digraph D is a connected
+spanning subdigraph of D in which every vertex x != s has precisely one arc
+entering (leaving) it and s has no arcs entering (leaving) it. We settle the
+complexity of the following two problems:
+  1) Given a 2-regular digraph $D$, decide if it contains two arc-disjoint
+branchings B^+_u, B^-_v.
+  2) Given a 2-regular digraph D, decide if it contains an out-branching B^+_u
+such that D remains connected after removing the arcs of B^+_u.
+  Both problems are NP-complete for general digraphs. We prove that the first
+problem remains NP-complete for 2-regular digraphs, whereas the second problem
+turns out to be polynomial when we do not prescribe the root in advance. We
+also prove that, for 2-regular digraphs, the latter problem is in fact
+equivalent to deciding if $D$ contains two arc-disjoint out-branchings. We
+generalize this result to k-regular digraphs where we want to find a number of
+pairwise arc-disjoint spanning trees and out-branchings such that there are k
+in total, again without prescribing any roots.

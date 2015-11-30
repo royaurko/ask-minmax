@@ -1,0 +1,19 @@
+The traditional virtual machine building and and deployment process is
+centered around the virtual machine hard disk image. The packages comprising
+the VM operating system are carefully selected, hard disk images are built for
+a variety of different hypervisors, and images have to be distributed and
+decompressed in order to instantiate a virtual machine. Within the HEP
+community, the CernVM File System has been established in order to decouple the
+distribution from the experiment software from the building and distribution of
+the VM hard disk images.
+  We show how to get rid of such pre-built hard disk images altogether. Due to
+the high requirements on POSIX compliance imposed by HEP application software,
+CernVM-FS can also be used to host and boot a Linux operating system. This
+allows the use of a tiny bootable CD image that comprises only a Linux kernel
+while the rest of the operating system is provided on demand by CernVM-FS. This
+approach speeds up the initial instantiation time and reduces virtual machine
+image sizes by an order of magnitude. Furthermore, security updates can be
+distributed instantaneously through CernVM-FS. By leveraging the fact that
+CernVM-FS is a versioning file system, a historic analysis environment can be
+easily re-spawned by selecting the corresponding CernVM-FS file system
+snapshot.

@@ -1,0 +1,13 @@
+We consider the problem of Partial Quantifier Elimination (PQE). Given
+formula exists(X)[F(X,Y) & G(X,Y)], where F, G are in conjunctive normal form,
+the PQE problem is to find a formula F*(Y) such that F* & exists(X)[G] is
+logically equivalent to exists(X)[F & G]. We solve the PQE problem by
+generating and adding to F clauses over the free variables that make the
+clauses of F with quantified variables redundant. The traditional Quantifier
+Elimination problem (QE) is a special case of PQE where G is empty so all
+clauses of the input formula with quantified variables need to be made
+redundant. The importance of PQE is twofold. First, many problems are more
+naturally formulated in terms of PQE rather than QE. Second, in many cases PQE
+can be solved more efficiently than QE. We describe a PQE algorithm based on
+the machinery of dependency sequents and give experimental results showing the
+promise of PQE.

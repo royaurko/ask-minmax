@@ -1,0 +1,23 @@
+To interpret differentially expressed genes or other discovered features,
+researchers conduct hypothesis tests to determine which biological categories
+such as those of the Gene Ontology (GO) are enriched in the sense of having
+differential representation among the discovered features. We study application
+of better estimators of the local false discovery rate (LFDR), a probability
+that the biological category has equivalent representation among the
+preselected features.
+  We identified three promising estimators of the LFDR for detecting
+differential representation: a semiparametric estimator (SPE), a normalized
+maximum likelihood estimator (NMLE), and a maximum likelihood estimator (MLE).
+We found that the MLE performs at least as well as the SPE for on the order of
+100 of GO categories even when the ideal number of components in its underlying
+mixture model is unknown. However, the MLE is unreliable when the number of GO
+categories is small compared to the number of PMM components. Thus, if the
+number of categories is on the order of 10, the SPE is a more reliable LFDR
+estimator. The NMLE depends not only on the data but also on a specified value
+of the prior probability of differential representation. It is therefore an
+appropriate LFDR estimator only when the number of GO categories is too small
+for application of the other methods.
+  For enrichment detection, we recommend estimating the LFDR by the MLE given
+at least a medium number (~100) of GO categories, by the SPE given a small
+number of GO categories (~10), and by the NMLE given a very small number (~1)
+of GO categories.

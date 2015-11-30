@@ -1,0 +1,20 @@
+We propose an algorithm, called OEM (a.k.a. orthogonalizing EM), intended for
+var- ious least squares problems. The first step, named active orthogonization,
+orthogonalizes an arbi- trary regression matrix by elaborately adding more
+rows. The second step imputes the responses of the new rows. The third step
+solves the least squares problem of interest for the complete orthog- onal
+design. The second and third steps have simple closed forms, and iterate until
+convergence. The algorithm works for ordinary least squares and regularized
+least squares with the lasso, SCAD, MCP and other penalties. It has several
+attractive theoretical properties. For the ordinary least squares with a
+singular regression matrix, an OEM sequence converges to the Moore-Penrose gen-
+eralized inverse-based least squares estimator. For the SCAD and MCP, an OEM
+sequence can achieve the oracle property after sufficient iterations for a
+fixed or diverging number of variables. For ordinary and regularized least
+squares with various penalties, an OEM sequence converges to a point having
+grouping coherence for fully aliased regression matrices. Convergence and
+convergence rate of the algorithm are examined. These convergence rate results
+show that for the same data set, OEM converges faster for regularized least
+squares than ordinary least squares. This provides a new theoretical comparison
+between these methods. Numerical examples are provided to illustrate the
+proposed algorithm.

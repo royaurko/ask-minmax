@@ -1,0 +1,19 @@
+We design a two-scale finite element method (FEM) for linear elliptic PDEs in
+non-divergence form $A(x) : D^2 u(x) = f(x)$. The fine scale is given by the
+meshsize $h$ whereas the coarse scale $\epsilon$ is dictated by an
+integro-differential approximation of the PDE. We show that the FEM satisfies
+the discrete maximum principle (DMP) for any uniformly positive definite matrix
+$A(x)$ provided that the mesh is weakly acute. Combining the DMP with weak
+operator consistency of the FEM, we establish convergence of the numerical
+solution $u_h^\epsilon$ to the viscosity solution $u$ as $\epsilon, h\to0$ and
+$\epsilon\ge C h|\ln h|$.
+  We develop a discrete Alexandroff-Bakelman-Pucci (ABP) estimate which is
+suitable for finite element analysis. Its proof relies on a geometric
+interpretation of Alexandroff estimate and control of the measure of the
+sub-differential of piecewise linear functions in terms of jumps, and thus of
+the discrete PDE. The discrete ABP estimate leads, under suitable regularity
+assumptions on $A$ and $u$, to the estimate \[ \| u - u^{\epsilon}_h
+\|_{L^{\infty}(\Omega)} \leq \; C \big( h^2 |\ln h| \big )^{\alpha /(2 +
+\alpha)} \qquad 0< \alpha \leq 2, \] provided $\epsilon \approx (h^2 |\ln
+h|)^{1/(2+\alpha)}$. Such a convergence rate is at best of order $ h |\ln
+h|^{1/2}$, which turns out to be quasi-optimal.

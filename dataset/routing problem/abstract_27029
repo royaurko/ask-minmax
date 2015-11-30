@@ -1,0 +1,16 @@
+The formulation of the on-surface radiation condition (OSRC) is extended to
+handle wave scattering problems in the presence of multiple obstacles. The new
+multiple-OSRC simultaneously accounts for the outgoing behavior of the wave
+fields, as well as, the multiple wave reflections between the obstacles. Like
+boundary integral equations (BIE), this method leads to a reduction in
+dimensionality (from volume to surface) of the discretization region. However,
+as opposed to BIE, the proposed technique leads to boundary integral equations
+with smooth kernels. Hence, these Fredholm integral equations can be handled
+accurately and robustly with standard numerical approaches without the need to
+remove singularities. Moreover, under weak scattering conditions, this approach
+renders a convergent iterative method which bypasses the need to solve single
+scattering problems at each iteration.
+  Inherited from the original OSRC, the proposed multiple-OSRC is generally a
+crude approximate method. If accuracy is not satisfactory, this approach may
+serve as a good initial guess or as an inexpensive pre-conditioner for Krylov
+iterative solutions of BIE.

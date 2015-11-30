@@ -1,0 +1,20 @@
+We describe a high performance parallel implementation of a derivative
+pricing model, within which we introduce a new parallel method for the
+calibration of the industry standard SABR (stochastic-\alpha \beta \rho)
+stochastic volatility model using three strike inputs. SABR calibration
+involves a non-linear three dimensional minimisation and parallelisation is
+achieved by incorporating several assumptions unique to the SABR class of
+models. Our calibration method is based on principles of surface intersection,
+guarantees convergence to a unique solution and operates by iteratively
+refining a two dimensional grid with local mesh refinement. As part of our
+pricing model we additionally present a fast parallel iterative algorithm for
+the creation of dynamically sized cumulative probability lookup tables that are
+able to cap maximum estimated linear interpolation error. We optimise
+performance for probability distributions that exhibit clustering of linear
+interpolation error. We also make an empirical assessment of error propagation
+through our pricing model as a result of changes in accuracy parameters within
+the pricing model's multiple algorithmic steps. Algorithms are implemented on a
+GPU (graphics processing unit) using Nvidia's Fermi architecture. The pricing
+model targets the evaluation of spread options using copula methods, however
+the presented algorithms can be applied to a wider class of financial
+instruments.

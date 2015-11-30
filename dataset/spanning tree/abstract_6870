@@ -1,0 +1,12 @@
+We consider the problem of learning an unknown context-free grammar when the
+only knowledge available and of interest to the learner is about its structural
+descriptions with depth at most $\ell.$ The goal is to learn a cover
+context-free grammar (CCFG) with respect to $\ell$, that is, a CFG whose
+structural descriptions with depth at most $\ell$ agree with those of the
+unknown CFG. We propose an algorithm, called $LA^\ell$, that efficiently learns
+a CCFG using two types of queries: structural equivalence and structural
+membership. We show that $LA^\ell$ runs in time polynomial in the number of
+states of a minimal deterministic finite cover tree automaton (DCTA) with
+respect to $\ell$. This number is often much smaller than the number of states
+of a minimum deterministic finite tree automaton for the structural
+descriptions of the unknown grammar.

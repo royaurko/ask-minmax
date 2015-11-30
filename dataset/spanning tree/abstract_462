@@ -1,0 +1,22 @@
+The Asymmetric Traveling Salesperson Path Problem (ATSPP) is one where, given
+an asymmetric metric space $(V,d)$ with specified vertices s and t, the goal is
+to find an s-t path of minimum length that passes through all the vertices in
+V.
+  This problem is closely related to the Asymmetric TSP (ATSP), which seeks to
+find a tour (instead of an $s-t$ path) visiting all the nodes: for ATSP, a
+$\rho$-approximation guarantee implies an $O(\rho)$-approximation for ATSPP.
+However, no such connection is known for the integrality gaps of the linear
+programming relaxations for these problems: the current-best approximation
+algorithm for ATSPP is $O(\log n/\log\log n)$, whereas the best bound on the
+integrality gap of the natural LP relaxation (the subtour elimination LP) for
+ATSPP is $O(\log n)$.
+  In this paper, we close this gap, and improve the current best bound on the
+integrality gap from $O(\log n)$ to $O(\log n/\log\log n)$. The resulting
+algorithm uses the structure of narrow $s$-$t$ cuts in the LP solution to
+construct a (random) tree spanning tree that can be cheaply augmented to
+contain an Eulerian $s$-$t$ walk.
+  We also build on a result of Oveis Gharan and Saberi and show a strong form
+of Goddyn's conjecture about thin spanning trees implies the integrality gap of
+the subtour elimination LP relaxation for ATSPP is bounded by a constant.
+Finally, we give a simpler family of instances showing the integrality gap of
+this LP is at least 2.

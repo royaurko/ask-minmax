@@ -1,0 +1,24 @@
+This paper deals with the problem of simultaneously making many (M) binary
+decisions based on one realization of a random data matrix X. M is typically
+large and X will usually have M rows associated with each of the M decisions to
+make, but for each row the data may be low dimensional. A Bayesian
+decision-theoretic approach for this problem is implemented with the overall
+loss function being a cost-weighted linear combination of Type I and Type II
+loss functions. The class of loss functions considered allows for the use of
+the false discovery rate (FDR), false nondiscovery rate (FNR), and missed
+discovery rate (MDR) in assessing the decision. Through this Bayesian paradigm,
+the Bayes multiple decision function (BMDF) is derived and an efficient
+algorithm to obtain the optimal Bayes action is described. In contrast to many
+works in the literature where the rows of the matrix X are assumed to be
+stochastically independent, we allow in this paper a dependent data structure
+with the associations obtained through a class of frailty-induced Archimedean
+copulas. In particular, non-Gaussian dependent data structure, which is the
+norm rather than the exception when dealing with failure-time data, can be
+entertained. The numerical implementation of the determination of the Bayes
+optimal action is facilitated through sequential Monte Carlo techniques. The
+main theory developed could also be extended to the problem of multiple
+hypotheses testing, multiple classification and prediction, and
+high-dimensional variable selection. The proposed procedure is illustrated for
+the simple versus simple and for the composite hypotheses setting via
+simulation studies. The procedure is also applied to a subset of a real
+microarray data set from a colon cancer study.

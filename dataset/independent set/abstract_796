@@ -1,0 +1,21 @@
+With the increase in agent-based applications, there are now agent systems
+that support \emph{concurrent} client accesses. The ability to process large
+volumes of simultaneous requests is critical in many such applications. In such
+a setting, the traditional approach of serving these requests one at a time via
+queues (e.g. \textsf{FIFO} queues, priority queues) is insufficient.
+Alternative models are essential to improve the performance of such
+\emph{heavily loaded} agents. In this paper, we propose a set of
+\emph{cost-based algorithms} to \emph{optimize} and \emph{merge} multiple
+requests submitted to an agent. In order to merge a set of requests, one first
+needs to identify commonalities among such requests. First, we provide an
+\emph{application independent framework} within which an agent developer may
+specify relationships (called \emph{invariants}) between requests. Second, we
+provide two algorithms (and various accompanying heuristics) which allow an
+agent to automatically rewrite requests so as to avoid redundant work---these
+algorithms take invariants associated with the agent into account. Our
+algorithms are independent of any specific agent framework. For an
+implementation, we implemented both these algorithms on top of the \impact
+agent development platform, and on top of a (non-\impact) geographic database
+agent. Based on these implementations, we conducted experiments and show that
+our algorithms are considerably more efficient than methods that use the $A^*$
+algorithm.

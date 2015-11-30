@@ -1,0 +1,25 @@
+We study the problem of enumerating all rooted directed spanning trees
+(arborescences) of a directed graph (digraph) $G=(V,E)$ of $n$ vertices. An
+arborescence $A$ consisting of edges $e_1,\ldots,e_{n-1}$ can be represented as
+a monomial $e_1\cdot e_2 \cdots e_{n-1}$ in variables $e \in E$. All
+arborescences $\mathsf{arb}(G)$ of a digraph then define the Kirchhoff
+polynomial $\sum_{A \in \mathsf{arb}(G)} \prod_{e\in A} e$. We show how to
+compute a compact representation of the Kirchhoff polynomial -- its prime
+factorization, and how it relates to combinatorial properties of digraphs such
+as strong connectivity and vertex domination. In particular, we provide digraph
+decomposition rules that correspond to factorization steps of the polynomial,
+and also give necessary and sufficient primality conditions of the resulting
+factors expressed by connectivity properties of the corresponding decomposed
+components. Thereby, we obtain a linear time algorithm for decomposing a
+digraph into components corresponding to factors of the initial polynomial, and
+a guarantee that no finer factorization is possible. The decomposition serves
+as a starting point for a recursive deletion-contraction algorithm, and also as
+a preprocessing phase for iterative enumeration algorithms. Both approaches
+produce a compressed output and retain some structural properties in the
+resulting polynomial. This proves advantageous in practical applications such
+as calculating steady states on digraphs governed by Laplacian dynamics, or
+computing the greatest common divisor of Kirchhoff polynomials. Finally, we
+initiate the study of a class of digraphs which allow for a practical
+enumeration of arborescences. Using our decomposition rules we observe that
+various digraphs from real-world applications fall into this class or are
+structurally similar to it.

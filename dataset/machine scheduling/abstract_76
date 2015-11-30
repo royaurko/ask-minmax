@@ -1,0 +1,21 @@
+Distributed memory machines equipped with CPUs and GPUs (hybrid computing
+nodes) are hard to program because of the multiple layers of memory and
+heterogeneous computing configurations. In this paper, we introduce a region
+template abstraction for the efficient management of common data types used in
+analysis of large datasets of high resolution images on clusters of hybrid
+computing nodes. The region template provides a generic container template for
+common data structures, such as points, arrays, regions, and object sets,
+within a spatial and temporal bounding box. The region template abstraction
+enables different data management strategies and data I/O implementations,
+while providing a homogeneous, unified interface to the application for data
+storage and retrieval. The execution of region templates applications is
+coordinated by a runtime system that supports efficient execution in hybrid
+machines. Region templates applications are represented as hierarchical
+dataflow in which each computing stage may be represented as another dataflow
+of finer-grain tasks. A number of optimizations for hybrid machines are
+available in our runtime system, including performance-aware scheduling for
+maximizing utilization of computing devices and techniques to reduce impact of
+data transfers between CPUs and GPUs. An experimental evaluation on a
+state-of-the-art hybrid cluster using a microscopy imaging study shows that
+this abstraction adds negligible overhead (about 3%) and achieves good
+scalability.

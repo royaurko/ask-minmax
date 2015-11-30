@@ -1,0 +1,18 @@
+We extend the quantitative synthesis framework by going beyond the
+worst-case. On the one hand, classical analysis of two-player games involves an
+adversary (modeling the environment of the system) which is purely antagonistic
+and asks for strict guarantees. On the other hand, stochastic models like
+Markov decision processes represent situations where the system is faced to a
+purely randomized environment: the aim is then to optimize the expected payoff,
+with no guarantee on individual outcomes. We introduce the beyond worst-case
+synthesis problem, which is to construct strategies that guarantee some
+quantitative requirement in the worst-case while providing an higher expected
+value against a particular stochastic model of the environment given as input.
+This problem is relevant to produce system controllers that provide nice
+expected performance in the everyday situation while ensuring a strict (but
+relaxed) performance threshold even in the event of very bad (while unlikely)
+circumstances. We study the beyond worst-case synthesis problem for two
+important quantitative settings: the mean-payoff and the shortest path. In both
+cases, we show how to decide the existence of finite-memory strategies
+satisfying the problem and how to synthesize one if one exists. We establish
+algorithms and we study complexity bounds and memory requirements.

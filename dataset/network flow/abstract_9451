@@ -1,0 +1,15 @@
+This paper examines Bayesian belief network inference using simulation as a
+method for computing the posterior probabilities of network variables.
+Specifically, it examines the use of a method described by Henrion, called
+logic sampling, and a method described by Pearl, called stochastic simulation.
+We first review the conditions under which logic sampling is computationally
+infeasible. Such cases motivated the development of the Pearl's stochastic
+simulation algorithm. We have found that this stochastic simulation algorithm,
+when applied to certain networks, leads to much slower than expected
+convergence to the true posterior probabilities. This behavior is a result of
+the tendency for local areas in the network to become fixed through many
+simulation cycles. The time required to obtain significant convergence can be
+made arbitrarily long by strengthening the probabilistic dependency between
+nodes. We propose the use of several forms of graph modification, such as graph
+pruning, arc reversal, and node reduction, in order to convert some networks
+into formats that are computationally more efficient for simulation.

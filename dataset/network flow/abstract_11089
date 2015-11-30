@@ -1,0 +1,15 @@
+We propose a mechanism that incorporates network coding into TCP with only
+minor changes to the protocol stack, thereby allowing incremental deployment.
+In our scheme, the source transmits random linear combinations of packets
+currently in the congestion window. At the heart of our scheme is a new
+interpretation of ACKs - the sink acknowledges every degree of freedom (i.e., a
+linear combination that reveals one unit of new information) even if it does
+not reveal an original packet immediately. Such ACKs enable a TCP-like
+sliding-window approach to network coding. Our scheme has the nice property
+that packet losses are essentially masked from the congestion control
+algorithm. Our algorithm therefore reacts to packet drops in a smooth manner,
+resulting in a novel and effective approach for congestion control over
+networks involving lossy links such as wireless links. Our experiments show
+that our algorithm achieves higher throughput compared to TCP in the presence
+of lossy wireless links. We also establish the soundness and fairness
+properties of our algorithm.

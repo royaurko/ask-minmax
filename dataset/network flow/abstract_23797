@@ -1,0 +1,13 @@
+Interference is usually viewed as an obstacle to communication in wireless
+networks. This paper proposes a new strategy, compute-and-forward, that
+exploits interference to obtain significantly higher rates between users in a
+network. The key idea is that relays should decode linear functions of
+transmitted messages according to their observed channel coefficients rather
+than ignoring the interference as noise. After decoding these linear equations,
+the relays simply send them towards the destinations, which given enough
+equations, can recover their desired messages. The underlying codes are based
+on nested lattices whose algebraic structure ensures that integer combinations
+of codewords can be decoded reliably. Encoders map messages from a finite field
+to a lattice and decoders recover equations of lattice points which are then
+mapped back to equations over the finite field. This scheme is applicable even
+if the transmitters lack channel state information.

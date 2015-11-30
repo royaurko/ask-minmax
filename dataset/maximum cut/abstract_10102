@@ -1,0 +1,17 @@
+The problem of detecting the sparsity pattern of a k-sparse vector in R^n
+from m random noisy measurements is of interest in many areas such as system
+identification, denoising, pattern recognition, and compressed sensing. This
+paper addresses the scaling of the number of measurements m, with signal
+dimension n and sparsity-level nonzeros k, for asymptotically-reliable
+detection. We show a necessary condition for perfect recovery at any given SNR
+for all algorithms, regardless of complexity, is m = Omega(k log(n-k))
+measurements. Conversely, it is shown that this scaling of Omega(k log(n-k))
+measurements is sufficient for a remarkably simple ``maximum correlation''
+estimator. Hence this scaling is optimal and does not require more
+sophisticated techniques such as lasso or matching pursuit. The constants for
+both the necessary and sufficient conditions are precisely defined in terms of
+the minimum-to-average ratio of the nonzero components and the SNR. The
+necessary condition improves upon previous results for maximum likelihood
+estimation. For lasso, it also provides a necessary condition at any SNR and
+for low SNR improves upon previous work. The sufficient condition provides the
+first asymptotically-reliable detection guarantee at finite SNR.

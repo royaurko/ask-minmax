@@ -1,0 +1,14 @@
+A working implementation of nested transactions has been produced for LOCUS,
+an integrated distributed operating system which provides a high degree of
+network transparency. Several aspects of our mechanism are novel. First, the
+mechanism allows a transaction to access objects directly without regard to the
+location of the object. Second, processes running on behalf of a single
+transaction may be located at many sites. Thus there is no need to invoke a new
+transaction to perform processing or access objects at a remote site. Third,
+unlike other environments, LOCUS allows replication of data objects at more
+than one site in the network, and this capability is incorporated into the
+transaction mechanism. If the copy of an object that is currently being
+accessed becomes unavailable, it is possible to continue work by using another
+one of the replicated copies. Finally, an efficient orphan removal algorithm is
+presented, and the problem of providing continued operation during network
+partitions is addressed in detail.

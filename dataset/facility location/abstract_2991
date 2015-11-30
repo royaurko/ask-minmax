@@ -1,0 +1,10 @@
+We propose a new data structure to compute the Delaunay triangulation of a
+set of points in the plane. It combines good worst case complexity, fast
+behavior on real data, and small memory occupation.
+  The location structure is organized into several levels. The lowest level
+just consists of the triangulation, then each level contains the triangulation
+of a small sample of the levels below. Point location is done by marching in a
+triangulation to determine the nearest neighbor of the query at that level,
+then the march restarts from that neighbor at the level below. Using a small
+sample (3%) allows a small memory occupation; the march and the use of the
+nearest neighbor to change levels quickly locate the query.

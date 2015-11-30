@@ -1,0 +1,21 @@
+It is significant to apply load-balancing strategy to improve the performance
+and reliability of resource in data centers. One of the challenging scheduling
+problems in Cloud data centers is to take the allocation and migration of
+reconfigurable virtual machines (VMs) as well as the integrated features of
+hosting physical machines (PMs) into consideration. In the reservation model,
+the workload of data centers has fixed process interval characteristics. In
+general, load-balance scheduling is NP-hard problem as proved in many open
+literatures. Traditionally, for offline load balance without migration, one of
+the best approaches is LPT (Longest Process Time first), which is well known to
+have approximation ratio 4/3. With virtualization, reactive (post) migration of
+VMs after allocation is one popular way for load balance and traffic
+consolidation. However, reactive migration has difficulty to reach predefined
+load balance objectives, and may cause interruption and instability of service
+and other associated costs. In view of this, we propose a new paradigm, called
+Prepartition, it proactively sets process-time bound for each request on each
+PM and prepares in advance to migrate VMs to achieve the predefined balance
+goal. Prepartition can reduce process time by preparing VM migration in advance
+and therefore reduce instability and achieve better load balance as desired. We
+also apply the Prepartition to online (PrepartitionOn) load balance and compare
+it with existing online scheduling algorithms. Both theoretical and
+experimental results are provided.

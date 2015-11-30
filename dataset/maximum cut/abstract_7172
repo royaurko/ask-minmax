@@ -1,0 +1,16 @@
+The traditional maximum likelihood estimator (MLE) is often of limited use in
+complex high-dimensional data due to the intractability of the underlying
+likelihood function. Maximum composite likelihood estimation (McLE) avoids full
+likelihood specification by combining a number of partial likelihood objects
+depending on small data subsets, thus enabling inference for complex data. A
+fundamental difficulty in making the McLE approach practicable is the selection
+from numerous candidate likelihood objects for constructing the composite
+likelihood function. In this paper, we propose a flexible Gibbs sampling scheme
+for optimal selection of sub-likelihood components. The sampled composite
+likelihood functions are shown to converge to the one maximally informative on
+the unknown parameters in equilibrium, since sub-likelihood objects are chosen
+with probability depending on the variance of the corresponding McLE. A
+penalized version of our method generates sparse likelihoods with a relatively
+small number of components when the data complexity is intense. Our algorithms
+are illustrated through numerical examples on simulated data as well as real
+genotype SNP data from a case-control study.

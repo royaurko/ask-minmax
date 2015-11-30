@@ -1,0 +1,14 @@
+We present an efficient algorithm to find non-empty minimizers of a symmetric
+submodular function over any family of sets closed under inclusion. This for
+example includes families defined by a cardinality constraint, a knapsack
+constraint, a matroid independence constraint, or any combination of such
+constraints. Our algorithm make $O(n^3)$ oracle calls to the submodular
+function where $n$ is the cardinality of the ground set. In contrast, the
+problem of minimizing a general submodular function under a cardinality
+constraint is known to be inapproximable within $o(\sqrt{n/\log n})$ (Svitkina
+and Fleischer [2008]).
+  The algorithm is similar to an algorithm of Nagamochi and Ibaraki [1998] to
+find all nontrivial inclusionwise minimal minimizers of a symmetric submodular
+function over a set of cardinality $n$ using $O(n^3)$ oracle calls. Their
+procedure in turn is based on Queyranne's algorithm [1998] to minimize a
+symmetric submodular

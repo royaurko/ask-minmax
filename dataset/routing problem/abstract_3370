@@ -1,0 +1,17 @@
+We consider basic problems of non-preemptive scheduling on uniformly related
+machines. For a given schedule, defined by a partition of the jobs into m
+subsets corresponding to the m machines, C_i denotes the completion time of
+machine i. Our goal is to find a schedule which minimizes or maximizes
+\sum_{i=1}^m C_i^p for a fixed value of p such that 0<p<\infty. For p>1 the
+minimization problem is equivalent to the well-known problem of minimizing the
+\ell_p norm of the vector of the completion times of the machines, and for
+0<p<1 the maximization problem is of interest. Our main result is an efficient
+polynomial time approximation scheme (EPTAS) for each one of these problems.
+Our schemes use a non-standard application of the so-called shifting technique.
+We focus on the work (total size of jobs) assigned to each machine and
+introduce intervals of forbidden work. These intervals are defined so that the
+resulting effect on the goal function is sufficiently small. This allows the
+partition of the problem into sub-problems (with subsets of machines and jobs)
+whose solutions are combined into the final solution using dynamic programming.
+Our results are the first EPTAS's for this natural class of load balancing
+problems.

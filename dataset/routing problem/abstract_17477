@@ -1,0 +1,13 @@
+Given a connected graph $G=(V,E)$, a set $S\subseteq V$ is said to be a
+$k$-metric generator for $G$ if the elements of any pair of vertices of $G$ are
+distinguished by at least $k$ elements of $S$, {\em i.e.}, for any two
+different vertices $u,v\in V$, there exist at least $k$ vertices
+$w_1,w_2,...,w_k\in S$ such that $d_G(u,w_i)\ne d_G(v,w_i)$ for every $i\in
+\{1,...,k\}$. A metric generator of minimum cardinality is called a $k$-metric
+basis and its cardinality the $k$-metric dimension of $G$. We show that the
+problem of computing the $k$-metric dimension of graphs is NP-Complete.
+However, the problem is solved in linear time for the particular case of trees.
+A connected graph $G$ is \emph{$k$-metric dimensional} if $k$ is the largest
+integer such that there exists a $k$-metric basis for $G$. We also show that
+the problem of finding the integer $k$ such that a graph $G$ is $k$-metric
+dimensional can be solved in polynomial time.

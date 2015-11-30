@@ -1,0 +1,13 @@
+In this paper we develop a method for report level tracking based on
+Dempster-Shafer clustering using Potts spin neural networks where clusters of
+incoming reports are gradually fused into existing tracks, one cluster for each
+track. Incoming reports are put into a cluster and continuous reclustering of
+older reports is made in order to obtain maximum association fit within the
+cluster and towards the track. Over time, the oldest reports of the cluster
+leave the cluster for the fixed track at the same rate as new incoming reports
+are put into it. Fusing reports to existing tracks in this fashion allows us to
+take account of both existing tracks and the probable future of each track, as
+represented by younger reports within the corresponding cluster. This gives us
+a robust report-to-track association. Compared to clustering of all available
+reports this approach is computationally faster and has a better
+report-to-track association than simple step-by-step association.

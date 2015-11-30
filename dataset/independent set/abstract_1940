@@ -1,0 +1,21 @@
+In this paper, the ByoRISC (Build your own RISC) configurable
+application-specific instruction-set processor (ASIP) family is presented.
+ByoRISCs, as vendor-independent cores, provide extensive architectural
+parameters over a baseline processor, which can be customized by
+application-specific hardware extensions (ASHEs). Such extensions realize
+multi-input multi-output (MIMO) custom instructions with local state and
+load/store accesses to the data memory. ByoRISCs incorporate a true multi-port
+register file, zero-overhead custom instruction decoding, and scalable data
+forwarding mechanisms. Given these design decisions, ByoRISCs provide a unique
+combination of features that allow their use as architectural testbeds and the
+seamless and rapid development of new high-performance ASIPs.
+  The performance characteristics of ByoRISCs, implemented as
+vendor-independent cores, have been evaluated for both ASIC and FPGA
+implementations, and it is proved that they provide a viable solution in
+FPGA-based system-on-a-chip design. A case study of an image processing
+pipeline is also presented to highlight the process of utilizing a ByoRISC
+custom processor. A peak performance speedup of up to 8.5$\times$ can be
+observed, whereas an average performance speedup of 4.4$\times$ on Xilinx
+Virtex-4 targets is achieved. In addition, ByoRISC outperforms an experimental
+VLIW architecture named VEX even in its 16-wide configuration for a number of
+data-intensive application kernels.

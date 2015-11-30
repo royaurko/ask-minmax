@@ -1,0 +1,24 @@
+This paper considers the requirements to ensure bounded mean queuing delay
+and non-starvation in a slotted Aloha network operating the exponential backoff
+protocol. It is well-known that the maximum possible throughput of a slotted
+Aloha system with a large number of nodes is 1/e = 0.3679. Indeed, a saturation
+throughput of 1/e can be achieved with an exponential backoff factor of r =
+e/(e-1)=1.5820. The binary backoff factor of r = 2 is assumed in the majority
+of prior work, and in many practical multiple-access networks such as the
+Ethernet and WiFi. For slotted Aloha, the saturation throughput 0.3466 for r =
+2 is reasonably close to the maximum of 1/e, and one could hardly raise
+objection to adopting r = 2 in the system. However, this paper shows that if
+mean queuing delay is to be bounded, then the sustainable throughput when r = 2
+is only 0.2158, a drastic 41% drop from 1/e . Fortunately, the optimal setting
+of r = 1.3757 under the bounded mean-delay requirement allows us to achieve
+sustainable throughput of 0.3545, a penalty of only less than 4% relative to
+1/e. A general conclusion is that the value of r may significantly affect the
+queuing delay performance. Besides analyzing mean queuing delay, this paper
+also delves into the phenomenon of starvation, wherein some nodes are deprived
+of service for an extended period of time while other nodes hog the system.
+Specifically, we propose a quantitative definition for starvation and show that
+the conditions to guarantee bounded mean delay and non-starved operation are
+one of the same, thus uniting these two notions. Finally, we show that when
+mean delay is large and starvation occurs, the performance results obtained
+from simulation experiments may not converge. A quantitative discussion of this
+issue is provided in this paper.

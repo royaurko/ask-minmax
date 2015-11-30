@@ -1,0 +1,16 @@
+A local algorithm is a distributed algorithm where each node must operate
+solely based on the information that was available at system startup within a
+constant-size neighbourhood of the node. We study the applicability of local
+algorithms to max-min LPs where the objective is to maximise $\min_k \sum_v
+c_{kv} x_v$ subject to $\sum_v a_{iv} x_v \le 1$ for each $i$ and $x_v \ge 0$
+for each $v$. Here $c_{kv} \ge 0$, $a_{iv} \ge 0$, and the support sets $V_i =
+\{v : a_{iv} > 0 \}$, $V_k = \{v : c_{kv}>0 \}$, $I_v = \{i : a_{iv} > 0 \}$
+and $K_v = \{k : c_{kv} > 0 \}$ have bounded size. In the distributed setting,
+each agent $v$ is responsible for choosing the value of $x_v$, and the
+communication network is a hypergraph $\mathcal{H}$ where the sets $V_k$ and
+$V_i$ constitute the hyperedges. We present inapproximability results for a
+wide range of structural assumptions; for example, even if $|V_i|$ and $|V_k|$
+are bounded by some constants larger than 2, there is no local approximation
+scheme. To contrast the negative results, we present a local approximation
+algorithm which achieves good approximation ratios if we can bound the relative
+growth of the vertex neighbourhoods in $\mathcal{H}$.

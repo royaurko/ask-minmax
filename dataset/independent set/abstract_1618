@@ -1,0 +1,11 @@
+A set of n points in low dimensions takes Theta(n w) bits to store on a w-bit
+machine. Surface reconstruction and mesh refinement impose a requirement on the
+distribution of the points they process. I show how to use this assumption to
+lossily compress a set of n input points into a representation that takes only
+O(n) bits, independent of the word size. The loss can keep inter-point
+distances to within 10% relative error while still achieving a factor of three
+space savings. The representation allows standard quadtree operations, along
+with computing the restricted Voronoi cell of a point, in time O(w^2 + log n),
+which can be improved to time O(log n) if w is in Theta(log n). Thus one can
+use this compressed representation to perform mesh refinement or surface
+reconstruction in O(n) bits with only a logarithmic slowdown.

@@ -1,0 +1,24 @@
+In the CONGEST model, a communications network is an undirected graph whose
+$n$ nodes are processors and whose $m$ edges are the communications links
+between processors. At any given time step, a message of size $O(\log n)$ may
+be sent by each node to each of its neighbors. We show for the synchronous
+model: If all nodes start in the same round, and each node knows its ID and the
+ID's of its neighbors, or in the case of MST, the distinct weights of its
+incident edges and knows $n$, then there are Monte Carlo algorithms which
+succeed w.h.p. to determine a minimum spanning forest (MST) and a spanning
+forest (ST) using $O(n \log^2 n/\log\log n)$ messages for MST and $O(n \log n
+)$ messages for ST, resp. These results contradict the "folk theorem" noted in
+Awerbuch, et.al., JACM 1990 that the distributed construction of a broadcast
+tree requires $\Omega(m)$ messages. This lower bound has been shown there and
+in other papers for some CONGEST models; our protocol demonstrates the limits
+of these models.
+  A dynamic distributed network is one which undergoes online edge insertions
+or deletions. We also show how to repair an MST or ST in a dynamic network with
+asynchronous communication. An edge deletion can be processed in $O(n\log n
+/\log \log n)$ expected messages in the MST, and $O(n)$ expected messages for
+the ST problem, while an edge insertion uses $O(n)$ messages in the worst case.
+We call this "impromptu" updating as we assume that between processing of edge
+updates there is no preprocessing or storage of additional information.
+Previous algorithms for this problem that use an amortized $o(m)$ messages per
+update require substantial preprocessing and additional local storage between
+updates.

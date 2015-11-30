@@ -1,0 +1,18 @@
+We study the problem of estimating the average of a Lipschitz continuous
+function $f$ defined over a metric space, by querying $f$ at only a single
+point. More specifically, we explore the role of randomness in drawing this
+sample. Our goal is to find a distribution minimizing the expected estimation
+error against an adversarially chosen Lipschitz continuous function. Our work
+falls into the broad class of estimating aggregate statistics of a function
+from a small number of carefully chosen samples. The general problem has a wide
+range of practical applications in areas as diverse as sensor networks, social
+sciences and numerical analysis. However, traditional work in numerical
+analysis has focused on asymptotic bounds, whereas we are interested in the
+\emph{best} algorithm. For arbitrary discrete metric spaces of bounded doubling
+dimension, we obtain a PTAS for this problem. In the special case when the
+points lie on a line, the running time improves to an FPTAS. Both algorithms
+are based on approximately solving a linear program with an infinite set of
+constraints, by using an approximate separation oracle. For
+Lipschitz-continuous functions over $[0,1]$, we calculate the precise
+achievable error as $1-\frac{\sqrt{3}}{2} \approx 0.134$, which improves upon
+the \quarter which is best possible for deterministic algorithms.

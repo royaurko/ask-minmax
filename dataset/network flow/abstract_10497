@@ -1,0 +1,22 @@
+This paper proposes to address new requirements of confidentiality, integrity
+and availability properties fitting to peer-to-peer domains of resources. The
+enforcement of security properties in an open peer-topeer network remains an
+open problem as the literature have mainly proposed contribution on
+availability of resources and anonymity of users. That paper proposes a novel
+architecture that eases the administration of a peer-to-peer network. It
+considers a network of safe peer-to-peer clients in the sense that it is a
+commune client software that is shared by all the participants to cope with the
+sharing of various resources associated with different security requirements.
+However, our proposal deals with possible malicious peers that attempt to
+compromise the requested security properties. Despite the safety of an open
+peer-to-peer network cannot be formally guaranteed, since a end user has
+privileges on the target host, our solution provides several advanced security
+enforcement. First, it enables to formally define the requested security
+properties of the various shared resources. Second, it evaluates the trust and
+the reputation of the requesting peer by sending challenges that test the
+fairness of its peer-to-peer security policy. Moreover, it proposes an advanced
+Mandatory Access Control that enforces the required peer-to-peer security
+properties through an automatic projection of the requested properties onto
+SELinux policies. Thus, the SELinux system of the requesting peer is
+automatically configured with respect to the required peer-to-peer security
+properties.

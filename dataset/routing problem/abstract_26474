@@ -1,0 +1,16 @@
+We describe an approach to modelling and reasoning about data-centric
+business processes and present a form of general model checking. Our technique
+extends existing approaches, which explore systems only from concrete initial
+states. Specifically, we model business processes in terms of smaller
+fragments, whose possible interactions are constrained by first-order logic
+formulae. In turn, process fragments are connected graphs annotated with
+instructions to modify data. Correctness properties concerning the evolution of
+data with respect to processes can be stated in a first-order branching-time
+logic over built-in theories, such as linear integer arithmetic, records and
+arrays.
+  Solving general model checking problems over this logic is considerably
+harder than model checking when a concrete initial state is given. To this end,
+we present a tableau procedure that reduces these model checking problems to
+first-order logic over arithmetic. The resulting proof obligations are passed
+on to appropriate "off-the-shelf" theorem provers. We also detail our modelling
+approach, describe the reasoning components and report on first experiments.

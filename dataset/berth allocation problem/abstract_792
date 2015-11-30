@@ -1,0 +1,22 @@
+The cloud radio access network (C-RAN) provides high spectral and energy
+efficiency performances, low expenditures and intelligent centralized system
+structures to operators, which has attracted intense interests in both academia
+and industry. In this paper, a hybrid coordinated multi-point transmission
+(H-CoMP) scheme is designed for the downlink transmission in C-RANs, which
+fulfills the flexible tradeoff between cooperation gain and fronthaul
+consumption. The queue-aware power and rate allocation with constraints of
+average fronthaul consumption for the delay-sensitive traffic are formulated as
+an infinite horizon constrained partially observed Markov decision process
+(POMDP), which takes both the urgent queue state information (QSI) and the
+imperfect channel state information at transmitters (CSIT) into account. To
+deal with the curse of dimensionality involved with the equivalent Bellman
+equation, the linear approximation of post-decision value functions is
+utilized. A stochastic gradient algorithm is presented to allocate the
+queue-aware power and transmission rate with H-CoMP, which is robust against
+unpredicted traffic arrivals and uncertainties caused by the imperfect CSIT.
+Furthermore, to substantially reduce the computing complexity, an online
+learning algorithm is proposed to estimate the per-queue post-decision value
+functions and update the Lagrange multipliers. The simulation results
+demonstrate performance gains of the proposed stochastic gradient algorithms,
+and confirm the asymptotical convergence of the proposed online learning
+algorithm.

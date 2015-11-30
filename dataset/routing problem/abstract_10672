@@ -1,0 +1,18 @@
+In the past several years, the problem of genome assembly has received
+considerable attention from both biologists and computer scientists. An
+important component of current assembly methods is the scaffolding process.
+This process involves building ordered and oriented linear collections of
+contigs (continuous overlapping sequence reads) called scaffolds and relies on
+the use of mate pair data. A mate pair is a set of two reads that are sequenced
+from the ends of a single fragment of DNA, and therefore have opposite mutual
+orientations. When two reads of a mate-pair are placed into two different
+contigs, one can infer the mutual orientation of these contigs. While several
+orientation algorithms exist as part of assembly programs, all encounter
+challenges while solving the orientation problem due to errors from
+mis-assemblies in contigs or errors in read placements. In this paper we
+present an algorithm based on hierarchical clustering that independently solves
+the orientation problem and is robust to errors. We show that our algorithm can
+correctly solve the orientation problem for both faux (generated) assembly data
+and real assembly data for {\em R. sphaeroides bacteria}. We demonstrate that
+our algorithm is stable to both changes in the initial orientations as well as
+noise in the data, making it advantageous compared to traditional approaches.

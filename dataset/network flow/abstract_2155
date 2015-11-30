@@ -1,0 +1,14 @@
+Finding a global solution to the optimal power flow (OPF) problem is
+difficult due to its nonconvexity. A convex relaxation in the form of
+semidefinite programming (SDP) has attracted much attention lately as it yields
+a global solution in several practical cases. However, it does not in all
+cases, and such cases have been documented in recent publications. This paper
+presents another SDP method known as the moment-sos (sum of squares) approach,
+which generates a sequence that converges towards a global solution to the OPF
+problem at the cost of higher runtime. Our finding is that in the small
+examples where the previously studied SDP method fails, this approach finds the
+global solution. The higher cost in runtime is due to an increase in the matrix
+size of the SDP problem, which can vary from one instance to another. Numerical
+experiment shows that the size is very often a quadratic function of the number
+of buses in the network, whereas it is a linear function of the number of buses
+in the case of the previously studied SDP method.

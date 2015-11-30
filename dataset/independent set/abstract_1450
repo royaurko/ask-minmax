@@ -1,0 +1,22 @@
+Genetical genomics experiments have now been routinely conducted to measure
+both the genetic markers and gene expression data on the same subjects. The
+gene expression levels are often treated as quantitative traits and are subject
+to standard genetic analysis in order to identify the gene expression
+quantitative loci (eQTL). However, the genetic architecture for many gene
+expressions may be complex, and poorly estimated genetic architecture may
+compromise the inferences of the dependency structures of the genes at the
+transcriptional level. In this paper we introduce a sparse conditional Gaussian
+graphical model for studying the conditional independent relationships among a
+set of gene expressions adjusting for possible genetic effects where the gene
+expressions are modeled with seemingly unrelated regressions. We present an
+efficient coordinate descent algorithm to obtain the penalized estimation of
+both the regression coefficients and the sparse concentration matrix. The
+corresponding graph can be used to determine the conditional independence among
+a group of genes while adjusting for shared genetic effects. Simulation
+experiments and asymptotic convergence rates and sparsistency are used to
+justify our proposed methods. By sparsistency, we mean the property that all
+parameters that are zero are actually estimated as zero with probability
+tending to one. We apply our methods to the analysis of a yeast eQTL data set
+and demonstrate that the conditional Gaussian graphical model leads to a more
+interpretable gene network than a standard Gaussian graphical model based on
+gene expression data alone.

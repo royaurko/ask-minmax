@@ -27,7 +27,7 @@ class Expert:
                 build_question = 'Build new database (0/1)? '
                 response = eval(input(build_question))
                 break
-            except ValueError:
+            except (SyntaxError, NameError, ValueError):
                 helper.error_one_zero()
         client, db = database.initialize_db()
         if response:
@@ -39,7 +39,7 @@ class Expert:
                     recover_question = 'Recover a database from bson file? '
                     flag = eval(input(recover_question))
                     break
-                except ValueError:
+                except (SyntaxError, NameError, ValueError):
                     helper.error_one_zero()
             if flag:
                 db = database.recover_db(client)
@@ -62,15 +62,21 @@ class Expert:
             problems_list = eval(input('Enter indices of problems to delete separated by comma: '))
         except (NameError, ValueError, SyntaxError):
             helper.error_comma()
-        for problem in problems_list:
-            problems.delete(db, problem_idx_to_id[problem])
+        if type(problems_list) is int:
+            problems.delete(db, problem_idx_to_id[problems_list])
+        else:
+            for problem in problems_list:
+                problems.delete(db, problem_idx_to_id[problem])
         question_idx_to_id = questions.print_list(db)
         try:
             questions_list = eval(input('Enter indices of questions to delete separated by comma: '))
         except (NameError, ValueError, SyntaxError):
             helper.error_comma()
-        for question in questions_list:
-            questions.delete(db, question_idx_to_id[question])
+        if type(questions_list) is int:
+            questions.delete(db, question_idx_to_id[questions_list])
+        else:
+            for question in questions_list:
+                questions.delete(db, question_idx_to_id[question])
         print('Modified database:')
         self.print_table()
 
@@ -82,13 +88,13 @@ class Expert:
         problems.print_list(db)
         questions.print_list(db)
 
-    def run(self):
+    def run(self, data_set, doc2vec_model_path, classifier_path):
         """ Control the main program flow
+        :param data_set: Path to data set
+        :param doc2vec_model_path: Path to doc2vec model
+        :param classifier_path: Path to classifier
         :return: None, modify db in place
         """
-        data_set = input('Path to data_set: ')
-        doc2vec_model_path = input('Path to Doc2Vec model: ')
-        classifier_path = input('Path to classifier trained on word vectors: ')
         try:
             while True:
                 # Ask the user for a short summary of the problem
@@ -181,7 +187,7 @@ class Expert:
                 except (NameError, ValueError, SyntaxError):
                     confidence = 0.95
                 break
-            except ValueError:
+            except (SyntaxError, NameError, ValueError):
                 helper.error_one_zero()
         return question, response, confidence
 
@@ -345,7 +351,10 @@ class Expert:
         while True:
             try:
                 yes_list = eval(input('Enter numbers of questions to which it answers YES: '))
-                yes_qid_list = [question_idx_to_id[x] for x in yes_list]
+                if type(yes_list) is int:
+                    yes_qid_list = question_idx_to_id(yes_list)
+                else:
+                    yes_qid_list = [question_idx_to_id[x] for x in yes_list]
                 break
             except (NameError, ValueError, SyntaxError):
                 helper.error_comma()
@@ -366,7 +375,10 @@ class Expert:
         while True:
             try:
                 no_list = eval(input('Enter numbers of questions to which it answers NO: '))
-                no_qid_list = [question_idx_to_id[x] for x in no_list]
+                if type(no_list) is int:
+                    no_qid_list = question_idx_to_id[no_list]
+                else:
+                    no_qid_list = [question_idx_to_id[x] for x in no_list]
                 break
             except ValueError:
                 helper.error_comma()
@@ -421,7 +433,10 @@ class Expert:
         while True:
             try:
                 yes_list = eval(input('Enter numbers of problems that have a YES answer to this question: '))
-                yes_pid_list = [problem_idx_to_id[x] for x in yes_list]
+                if type(yes_list) is int:
+                    yes_pid_list = problem_idx_to_id[yes_list]
+                else:
+                    yes_pid_list = [problem_idx_to_id[x] for x in yes_list]
                 break
             except ValueError:
                 helper.error_comma()
@@ -442,7 +457,10 @@ class Expert:
         while True:
             try:
                 no_list = eval(input('Enter numbers of problems that have a NO answer to this question: '))
-                no_pid_list = [problem_idx_to_id[x] for x in no_list]
+                if type(no_list) is int:
+                    no_pid_list = problem_idx_to_id[no_list]
+                else:
+                    no_pid_list = [problem_idx_to_id[x] for x in no_list]
                 break
             except ValueError:
                 helper.error_comma()

@@ -1,0 +1,17 @@
+In recent processor development, we have witnessed the integration of GPU and
+CPUs into a single chip. The result of this integration is a reduction of the
+data communication overheads. This enables an efficient collaboration of both
+devices in the execution of parallel workloads.
+  In this work, we focus on the problem of efficiently scheduling chunks of
+iterations of parallel loops among the computing devices on the chip (the GPU
+and the CPU cores) in the context of irregular applications. In particular, we
+analyze the sources of overhead that the host thread experiments when a chunk
+of iterations is offloaded to the GPU while other threads are executing
+concurrently other chunks on the CPU cores. We carefully study these overheads
+on different processor architectures and operating systems using Barnes Hut as
+a study case representative of irregular applications. We also propose a set of
+optimizations to mitigate the overheads that arise in presence of
+oversubscription and take advantage of the different features of the
+heterogeneous architectures. Thanks to these optimizations we reduce
+Energy-Delay Product (EDP) by 18% and 84% on Intel Ivy Bridge and Haswell
+architectures, respectively, and by 57% on the Exynos big.LITTLE.

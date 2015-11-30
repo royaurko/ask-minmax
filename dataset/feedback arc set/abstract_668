@@ -1,0 +1,11 @@
+We compare two closed-loop beamforming algorithms, one based on singular
+value decomposition (SVD) and the other based on equal diagonal QR
+decomposition (QRS). SVD has the advantage of parallelizing the MIMO channel,
+but each of the sub-channels has different gain. QRS has the advantage of
+having equal diagonal value for the decomposed channel, but the subchannels are
+not fully parallelized, hence requiring successive interference cancellation or
+other techniques to perform decoding. We consider a closed-loop system where
+the feedback information is a unitary beamforming matrix. Due to the discrete
+and limited modulation set, SVD may have inferior performance to QRS when no
+modulation set selection is performed. However, if the selection of modulation
+set is performed optimally, we show that SVD can outperform QRS.

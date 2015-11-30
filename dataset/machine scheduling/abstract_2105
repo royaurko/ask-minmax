@@ -1,0 +1,12 @@
+Task parallelism as employed by the OpenMP task construct or some Intel
+Threading Building Blocks (TBB) components, although ideal for tackling
+irregular problems or typical producer/consumer schemes, bears some potential
+for performance bottlenecks if locality of data access is important, which is
+typically the case for memory-bound code on ccNUMA systems. We present a thin
+software layer ameliorates adverse effects of dynamic task distribution by
+sorting tasks into locality queues, each of which is preferably processed by
+threads that belong to the same locality domain. Dynamic scheduling is fully
+preserved inside each domain, and is preferred over possible load imbalance
+even if nonlocal access is required, making this strategy well-suited for
+typical multicore-mutisocket systems. The effectiveness of the approach is
+demonstrated by using a blocked six-point stencil solver as a toy model.

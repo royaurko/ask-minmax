@@ -1,0 +1,17 @@
+We investigate whether an n-vertex instance (G,k) of Treewidth, asking
+whether the graph G has treewidth at most k, can efficiently be made sparse
+without changing its answer. By giving a special form of OR-cross-composition,
+we prove that this is unlikely: if there is an e > 0 and a polynomial-time
+algorithm that reduces n-vertex Treewidth instances to equivalent instances, of
+an arbitrary problem, with O(n^{2-e}) bits, then NP is in coNP/poly and the
+polynomial hierarchy collapses to its third level.
+  Our sparsification lower bound has implications for structural
+parameterizations of Treewidth: parameterizations by measures that do not
+exceed the vertex count, cannot have kernels with O(k^{2-e}) bits for any e >
+0, unless NP is in coNP/poly. Motivated by the question of determining the
+optimal kernel size for Treewidth parameterized by vertex cover, we improve the
+O(k^3)-vertex kernel from Bodlaender et al. (STACS 2011) to a kernel with
+O(k^2) vertices. Our improved kernel is based on a novel form of
+treewidth-invariant set. We use the q-expansion lemma of Fomin et al. (STACS
+2011) to find such sets efficiently in graphs whose vertex count is
+superquadratic in their vertex cover number.

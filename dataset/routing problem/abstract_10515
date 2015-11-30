@@ -1,0 +1,20 @@
+The polygon retrieval problem on points is the problem of preprocessing a set
+of $n$ points on the plane, so that given a polygon query, the subset of points
+lying inside it can be reported efficiently.
+  It is of great interest in areas such as Computer Graphics, CAD applications,
+Spatial Databases and GIS developing tasks. In this paper we study the problem
+of canonical $k$-vertex polygon queries on the plane. A canonical $k$-vertex
+polygon query always meets the following specific property: a point retrieval
+query can be transformed into a linear number (with respect to the number of
+vertices) of point retrievals for orthogonal objects such as rectangles and
+triangles (throughout this work we call a triangle orthogonal iff two of its
+edges are axis-parallel).
+  We present two new algorithms for this problem. The first one requires
+$O(n\log^2{n})$ space and $O(k\frac{log^3n}{loglogn}+A)$ query time. A simple
+modification scheme on first algorithm lead us to a second solution, which
+consumes $O(n^2)$ space and $O(k \frac{logn}{loglogn}+A)$ query time, where $A$
+denotes the size of the answer and $k$ is the number of vertices.
+  The best previous solution for the general polygon retrieval problem uses
+$O(n^2)$ space and answers a query in $O(k\log{n}+A)$ time, where $k$ is the
+number of vertices. It is also very complicated and difficult to be implemented
+in a standard imperative programming language such as C or C++.

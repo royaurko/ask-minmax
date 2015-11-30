@@ -1,0 +1,16 @@
+The bandwidth of a $n$-vertex graph $G$ is the smallest integer $b$ such that
+there exists a bijective function $f : V(G) \rightarrow \{1,...,n\}$, called a
+layout of $G$, such that for every edge $uv \in E(G)$, $|f(u) - f(v)| \leq b$.
+In the {\sc Bandwidth} problem we are given as input a graph $G$ and integer
+$b$, and asked whether the bandwidth of $G$ is at most $b$. We present two
+results concerning the parameterized complexity of the {\sc Bandwidth} problem
+on trees.
+  First we show that an algorithm for {\sc Bandwidth} with running time
+$f(b)n^{o(b)}$ would violate the Exponential Time Hypothesis, even if the input
+graphs are restricted to be trees of pathwidth at most two. Our lower bound
+shows that the classical $2^{O(b)}n^{b+1}$ time algorithm by Saxe [SIAM Journal
+on Algebraic and Discrete Methods, 1980] is essentially optimal.
+  Our second result is a polynomial time algorithm that given a tree $T$ and
+integer $b$, either correctly concludes that the bandwidth of $T$ is more than
+$b$ or finds a layout of $T$ of bandwidth at most $b^{O(b)}$. This is the first
+parameterized approximation algorithm for the bandwidth of trees.

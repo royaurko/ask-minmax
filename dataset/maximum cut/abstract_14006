@@ -1,0 +1,15 @@
+Saddle-node bifurcation occurs in a boost converter when parasitic inductor
+resistance is modeled. Closed-form critical conditions of the bifurcation are
+derived. If the parasitic inductor resistance is modeled, the saddle-node
+bifurcation occurs in the voltage mode control or in the current mode control
+with the voltage loop closed, but not in the current mode control with the
+voltage loop open. If the parasitic inductor resistance is not modeled, the
+saddle-node bifurcation does not occur, and one may be misled by the wrong
+dynamics and the wrong steady-state solutions. The saddle-node bifurcation
+still exists even in a boost converter with a popular type-III compensator.
+When the saddle-node bifurcation occurs, multiple steady-state solutions may
+coexist. The converter may operate with a voltage jump from one solution to
+another. Care should be taken in the compensator design to ensure that only the
+desired solution is stabilized. In industry practice, the solution with a
+higher duty cycle (and thus the saddle-node bifurcation) may be prevented by
+placing a limitation on the maximum duty cycle.

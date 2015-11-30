@@ -1,0 +1,13 @@
+This paper describes substantial advances in the analysis (parsing) of
+diagrams using constraint grammars. The addition of set types to the grammar
+and spatial indexing of the data make it possible to efficiently parse real
+diagrams of substantial complexity. The system is probably the first to
+demonstrate efficient diagram parsing using grammars that easily be retargeted
+to other domains. The work assumes that the diagrams are available as a flat
+collection of graphics primitives: lines, polygons, circles, Bezier curves and
+text. This is appropriate for future electronic documents or for vectorized
+diagrams converted from scanned images. The classes of diagrams that we have
+analyzed include x,y data graphs and genetic diagrams drawn from the biological
+literature, as well as finite state automata diagrams (states and arcs). As an
+example, parsing a four-part data graph composed of 133 primitives required 35
+sec using Macintosh Common Lisp on a Macintosh Quadra 700.

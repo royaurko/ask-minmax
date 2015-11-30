@@ -1,0 +1,19 @@
+We show how to enhance the redshift accuracy of surveys consisting of tracers
+with highly uncertain positions along the line of sight. Photometric surveys
+with redshift uncertainty delta_z ~ 0.03 can yield final redshift uncertainties
+of delta_z_f ~ 0.003 in high density regions. This increased redshift precision
+is achieved by imposing an isotropy and 2-point correlation prior in a Bayesian
+analysis and is completely independent of the process that estimates the
+photometric redshift. As a byproduct, the method also infers the three
+dimensional density field, essentially super-resolving high density regions in
+redshift space. Our method fully takes into account the survey mask and
+selection function. It uses a simplified Poissonian picture of galaxy
+formation, relating preferred locations of galaxies to regions of higher
+density in the matter field. The method quantifies the remaining uncertainties
+in the three dimensional density field and the true radial locations of
+galaxies by generating samples that are constrained by the survey data. The
+exploration of this high dimensional, non-Gaussian joint posterior is made
+feasible using multiple-block Metropolis-Hastings sampling. We demonstrate the
+performance of our implementation on a simulation containing 2.0 x 10^7
+galaxies. These results bear out the promise of Bayesian analysis for upcoming
+photometric large scale structure surveys with tens of millions of galaxies.

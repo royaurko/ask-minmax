@@ -1,0 +1,24 @@
+We consider the problem of identifying a team of skilled individuals for
+collaboration, in the presence of a social network. Each node in the social
+network may be an expert in one or more skills. Edge weights specify affinity
+or collaborative compatibility between respective nodes. Given a project that
+requires a set of specified number of skilled individuals in each area of
+expertise, the goal is to identify a team that maximizes the collaborative
+compatibility. For example, the requirement may be to form a team that has at
+least three databases experts and at least two theory experts. We explore team
+formation where the collaborative compatibility objective is measured as the
+density of the induced subgraph on selected nodes. The problem of maximizing
+density is NP-hard even when the team requires individuals of only one skill.
+We present a 3-approximation algorithm that improves upon a naive extension of
+the previously known algorithm for densest at least $k$ subgraph problem. We
+further show how the same approximation can be extended to a special case of
+multiple skills. Our problem generalizes the formulation studied by Lappas et
+al. [KDD '09] who measure team compatibility in terms of diameter or spanning
+tree costs. Experiments are performed on a crawl of the DBLP graph where
+individuals can be skilled in at most four areas - theory, databases, data
+mining, and artificial intelligence. In addition to our main algorithm, we also
+present heuristic extensions to trade off between the size of the solution and
+its induced density. These density-based algorithms outperform the
+diameter-based objective on several metrics for assessing the collaborative
+compatibility of teams. The solutions suggested are also intuitively meaningful
+and scale well with the increase in the number of skilled individuals required.

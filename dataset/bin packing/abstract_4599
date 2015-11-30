@@ -1,0 +1,16 @@
+The covariance matrices of power-spectrum (P(k)) measurements from galaxy
+surveys are difficult to compute theoretically. The current best practice is to
+estimate covariance matrices by computing a sample covariance of a large number
+of mock catalogues. The next generation of galaxy surveys will require
+thousands of large volume mocks to determine the covariance matrices to desired
+accuracy. The errors in the inverse covariance matrix are larger and scale with
+the number of P(k) bins, making the problem even more acute. We develop a
+method of estimating covariance matrices using a theoretically justified,
+few-parameter model, calibrated with mock catalogues. Using a set of 600 BOSS
+DR11 mock catalogues, we show that a seven parameter model is sufficient to fit
+the covariance matrix of BOSS DR11 P(k) measurements. The covariance computed
+with this method is better than the sample covariance at any number of mocks
+and only ~100 mocks are required for it to fully converge and the inverse
+covariance matrix converges at the same rate. This method should work equally
+well for the next generation of galaxy surveys, although a demand for higher
+accuracy may require adding extra parameters to the fitting function.

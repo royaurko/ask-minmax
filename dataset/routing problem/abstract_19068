@@ -1,0 +1,17 @@
+This paper investigates the distributed power allocation problem for
+coordinated multipoint (CoMP) transmissions in distributed antenna systems
+(DAS). Traditional duality based optimization techniques cannot be directly
+applied to this problem, because the non-strict concavity of the CoMP
+transmission's achievable rate with respect to the transmission power induces
+that the local power allocation subproblems have non-unique optimum solutions.
+We propose a distributed power allocation algorithm to resolve this non-strict
+concavity difficulty. This algorithm only requires local information exchange
+among neighboring base stations serving the same user, and is thus scalable as
+the network size grows. The step-size parameters of this algorithm are
+determined by only local user access relationship (i.e., the number of users
+served by each antenna), but do not rely on channel coefficients. Therefore,
+the convergence speed of this algorithm is quite robust to different channel
+fading coefficients. We rigorously prove that this algorithm converges to an
+optimum solution of the power allocation problem. Simulation results are
+presented to demonstrate the effectiveness of the proposed power allocation
+algorithm.

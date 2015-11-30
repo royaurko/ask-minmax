@@ -1,0 +1,19 @@
+A Stackelberg game is played between a leader and a follower. The leader
+first chooses an action, and then the follower plays his best response, and the
+goal of the leader is to pick the action that will maximize his payoff given
+the follower's best response. Stackelberg games capture, for example, the
+following interaction between a producer and a consumer. The producer chooses
+the prices of the goods he produces, and then a consumer chooses to buy a
+utility-maximizing bundle of goods. The goal of the seller here is to set
+prices to maximize his profit--his revenue, minus the production cost of the
+purchased bundle. It is quite natural that the seller in this example should
+not know the buyer's utility function. However, he does have access to revealed
+preference feedback--he can set prices, and then observe the purchased bundle
+and his own profit. We give algorithms for efficiently solving, in terms of
+both computation and query-complexity, a broad class of Stackelberg games in
+which the follower's utility function is unknown, using only "revealed
+preference" access to it. This class includes in particular the profit
+maximization problem, as well as the optimal tolling problem in nonatomic
+congestion games, when the latency functions are unknown. Surprisingly, we are
+able to solve these problems even though the optimization problems are
+non-convex in the leader's actions.

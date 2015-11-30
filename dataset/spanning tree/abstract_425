@@ -1,0 +1,14 @@
+Laman graphs are fundamental to rigidity theory. A graph G with n vertices
+and m edges is a generic minimally rigid graph (Laman graph), if m=2n-3 and
+every induced subset of k vertices spans at most 2k-3 edges. We consider the
+verification problem: Given a graph G with n vertices, decide if it is Laman.
+We present an algorithm that takes O(T(n)+n log n) time, where T(n) is the best
+time to extract two edge disjoint spanning trees from G or decide no such trees
+exist. Our algorithm exploits a known construction called red-black hierarchy
+(RBH), that is a certificate for Laman graphs. First, we show how to verify if
+G admits an RBH and argue this is enough to conclude whether G is Laman or not.
+Second, we show how to construct the RBH using a two steps procedure that is
+simple and easy to implement. Finally, we point out some difficulties in using
+red-black hierarchies to compute a Henneberg construction, which seem to imply
+super-quadratic time algorithms when used for embedding a planar Laman graph as
+a pointed pseudo-triangulation.

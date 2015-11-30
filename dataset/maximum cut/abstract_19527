@@ -1,0 +1,25 @@
+We study the inverse problem of estimating a field $u$ from data comprising a
+finite set of nonlinear functionals of $u$, subject to additive noise; we
+denote this observed data by $y$. Our interest is in the reconstruction of
+piecewise continuous fields in which the discontinuity set is described by a
+finite number of geometric parameters. Natural applications include groundwater
+flow and electrical impedance tomography. We take a Bayesian approach, placing
+a prior distribution on $u$ and determining the conditional distribution on $u$
+given the data $y$. It is then natural to study maximum a posterior (MAP)
+estimators. Recently (Dashti et al 2013) it has been shown that MAP estimators
+can be characterised as minimisers of a generalised Onsager-Machlup functional,
+in the case where the prior measure is a Gaussian random field. We extend this
+theory to a more general class of prior distributions which allows for
+piecewise continuous fields. Specifically, the prior field is assumed to be
+piecewise Gaussian with random interfaces between the different Gaussians
+defined by a finite number of parameters. We also make connections with recent
+work on MAP estimators for linear problems and possibly non-Gaussian priors
+(Helin, Burger 2015) which employs the notion of Fomin derivative.
+  In showing applicability of our theory we focus on the groundwater flow and
+EIT models, though the theory holds more generally. Numerical experiments are
+implemented for the groundwater flow model, demonstrating the feasibility of
+determining MAP estimators for these piecewise continuous models, but also that
+the geometric formulation can lead to multiple nearby (local) MAP estimators.
+We relate these MAP estimators to the behaviour of output from MCMC samples of
+the posterior, obtained using a state-of-the-art function space
+Metropolis-Hastings method.

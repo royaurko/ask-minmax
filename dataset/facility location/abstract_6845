@@ -1,0 +1,10 @@
+This paper presents a non-blocking Patricia trie implementation for an
+asynchronous shared-memory system using Compare&Swap. The trie implements a
+linearizable set and supports three update operations: insert adds an element,
+delete removes an element and replace replaces one element by another. The
+replace operation is interesting because it changes two different locations of
+tree atomically. If all update operations modify different parts of the trie,
+they run completely concurrently. The implementation also supports a wait-free
+find operation, which only reads shared memory and never changes the data
+structure. Empirically, we compare our algorithms to some existing set
+implementations.

@@ -1,0 +1,24 @@
+The selection problem, where one wishes to locate the $k^{th}$ smallest
+element in an unsorted array of size $n$, is one of the basic problems studied
+in computer science. The main focus of this work is designing algorithms for
+solving the selection problem in the presence of memory faults. These can
+happen as the result of cosmic rays, alpha particles, or hardware failures.
+  Specifically, the computational model assumed here is a faulty variant of the
+RAM model (abbreviated as FRAM), which was introduced by Finocchi and Italiano.
+In this model, the content of memory cells might get corrupted adversarially
+during the execution, and the algorithm is given an upper bound $\delta$ on the
+number of corruptions that may occur.
+  The main contribution of this work is a deterministic resilient selection
+algorithm with optimal O(n) worst-case running time. Interestingly, the running
+time does not depend on the number of faults, and the algorithm does not need
+to know $\delta$.
+  The aforementioned resilient selection algorithm can be used to improve the
+complexity bounds for resilient $k$-d trees developed by Gieseke, Moruz and
+Vahrenhold. Specifically, the time complexity for constructing a $k$-d tree is
+improved from $O(n\log^2 n + \delta^2)$ to $O(n \log n)$.
+  Besides the deterministic algorithm, a randomized resilient selection
+algorithm is developed, which is simpler than the deterministic one, and has
+$O(n + \alpha)$ expected time complexity and O(1) space complexity (i.e., is
+in-place). This algorithm is used to develop the first resilient sorting
+algorithm that is in-place and achieves optimal $O(n\log n + \alpha\delta)$
+expected running time.

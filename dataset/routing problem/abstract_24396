@@ -1,0 +1,16 @@
+To make a joint decision, agents (or voters) are often required to provide
+their preferences as linear orders. To determine a winner, the given linear
+orders can be aggregated according to a voting protocol. However, in realistic
+settings, the voters may often only provide partial orders. This directly leads
+to the Possible Winner problem that asks, given a set of partial votes, whether
+a distinguished candidate can still become a winner. In this work, we consider
+the computational complexity of Possible Winner for the broad class of voting
+protocols defined by scoring rules. A scoring rule provides a score value for
+every position which a candidate can have in a linear order. Prominent examples
+include plurality, k-approval, and Borda. Generalizing previous NP-hardness
+results for some special cases, we settle the computational complexity for all
+but one scoring rule. More precisely, for an unbounded number of candidates and
+unweighted voters, we show that Possible Winner is NP-complete for all pure
+scoring rules except plurality, veto, and the scoring rule defined by the
+scoring vector (2,1,...,1,0), while it is solvable in polynomial time for
+plurality and veto.

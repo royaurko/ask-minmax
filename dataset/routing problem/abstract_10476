@@ -1,0 +1,21 @@
+In this paper, we derive a variational integrator for certain highly
+oscillatory problems in mechanics. To do this, we take a new approach to the
+splitting of fast and slow potential forces: rather than splitting these forces
+at the level of the differential equations or the Hamiltonian, we split the two
+potentials with respect to the Lagrangian action integral. By using a different
+quadrature rule to approximate the contribution of each potential to the
+action, we arrive at a geometric integrator that is implicit in the fast force
+and explicit in the slow force. This can allow for significantly longer time
+steps to be taken (compared to standard explicit methods, such as
+St\"ormer/Verlet) at the cost of only a linear solve rather than a full
+nonlinear solve. We also analyze the stability of this method, in particular
+proving that it eliminates the linear resonance instabilities that can arise
+with explicit multiple-time-stepping methods. Next, we perform some numerical
+experiments, studying the behavior of this integrator for two test problems: a
+system of coupled linear oscillators, for which we compare against the
+resonance behavior of the r-RESPA method; and slow energy exchange in the
+Fermi--Pasta--Ulam problem, which couples fast linear oscillators with slow
+nonlinear oscillators. Finally, we prove that this integrator accurately
+preserves the slow energy exchange between the fast oscillatory components,
+which explains the numerical behavior observed for the Fermi--Pasta--Ulam
+problem.

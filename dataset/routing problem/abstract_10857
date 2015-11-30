@@ -1,0 +1,23 @@
+This paper studies a multiple-input single-output (MISO) broadcast channel
+(BC) featuring simultaneous wireless information and power transfer (SWIPT),
+where a multi-antenna access point (AP) delivers both information and energy
+via radio signals to multiple single-antenna receivers simultaneously, and each
+receiver implements either information decoding (ID) or energy harvesting (EH).
+In particular, pseudo-random sequences that are {\it a priori} known and
+therefore can be cancelled at each ID receiver is used as the energy signals,
+and the information-theoretically optimal dirty paper coding (DPC) is employed
+for the information transmission. We characterize the capacity region for ID
+receivers under given energy requirements for EH receivers, by solving a
+sequence of weighted sum-rate (WSR) maximization (WSRMax) problems subject to a
+maximum sum-power constraint for the AP, and a set of minimum harvested power
+constraints for individual EH receivers. The problem corresponds to a new form
+of WSRMax problem in MISO-BC with combined maximum and minimum linear transmit
+covariance constraints (MaxLTCCs and MinLTCCs), which differs from the
+celebrated capacity region characterization problem for MISO-BC under a set of
+MaxLTCCs only and is challenging to solve. By extending the general BC-multiple
+access channel (MAC) duality, which is only applicable to WSRMax problems with
+MaxLTCCs, and applying the ellipsoid method, we propose an efficient algorithm
+to solve this problem globally optimally. Furthermore, we also propose two
+suboptimal algorithms with lower complexity by assuming that the information
+and energy signals are designed separately. Finally, numerical results are
+provided to validate our proposed algorithms.

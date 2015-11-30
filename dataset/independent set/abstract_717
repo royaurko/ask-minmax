@@ -1,0 +1,23 @@
+We obtain the following new coloring results:
+  * A 3-colorable graph on $n$ vertices with maximum degree~$\Delta$ can be
+colored, in polynomial time, using $O((\Delta \log\Delta)^{1/3} \cdot\log{n})$
+colors. This slightly improves an $O((\Delta^{{1}/{3}}
+\log^{1/2}\Delta)\cdot\log{n})$ bound given by Karger, Motwani and Sudan.  More
+generally, $k$-colorable graphs with maximum degree $\Delta$ can be colored, in
+polynomial time, using $O((\Delta^{1-{2}/{k}}\log^{1/k}\Delta) \cdot\log{n})$
+colors.
+  * A 4-colorable graph on $n$ vertices can be colored, in polynomial time,
+using $\Ot(n^{7/19})$ colors. This improves an $\Ot(n^{2/5})$ bound given again
+by Karger, Motwani and Sudan. More generally, $k$-colorable graphs on $n$
+vertices can be colored, in polynomial time, using $\Ot(n^{\alpha_k})$ colors,
+where $\alpha_5=97/207$, $\alpha_6=43/79$, $\alpha_7=1391/2315$,
+$\alpha_8=175/271$, ...
+  The first result is obtained by a slightly more refined probabilistic
+analysis of the semidefinite programming based coloring algorithm of Karger,
+Motwani and Sudan. The second result is obtained by combining the coloring
+algorithm of Karger, Motwani and Sudan, the combinatorial coloring algorithms
+of Blum and an extension of a technique of Alon and Kahale (which is based on
+the Karger, Motwani and Sudan algorithm) for finding relatively large
+independent sets in graphs that are guaranteed to have very large independent
+sets. The extension of the Alon and Kahale result may be of independent
+interest.

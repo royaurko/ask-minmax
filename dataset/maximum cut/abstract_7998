@@ -1,0 +1,19 @@
+As increasingly complex hypothesis-testing scenarios are considered in many
+scientific fields, analytic derivation of null distributions is often out of
+reach. To the rescue comes Monte Carlo testing, which may appear deceptively
+simple: as long as you can sample test statistics under the null hypothesis,
+the $p$-value is just the proportion of sampled test statistics that exceed the
+observed test statistic. Sampling test statistics is often simple once you have
+a Monte Carlo null model for your data, and defining some form of randomization
+procedure is also, in many cases, relatively straightforward. However, there
+may be several possible choices of a randomization null model for the data and
+no clear-cut criteria for choosing among them. Obviously, different null models
+may lead to very different $p$-values, and a very low $p$-value may thus occur
+due to the inadequacy of the chosen null model. It is preferable to use
+assumptions about the underlying random data generation process to guide
+selection of a null model. In many cases, we may order the null models by
+increasing preservation of the data characteristics, and we argue in this paper
+that this ordering in most cases gives increasing $p$-values, that is, lower
+significance. We denote this as the null complexity principle. The principle
+gives a better understanding of the different null models and may guide in the
+choice between the different models.

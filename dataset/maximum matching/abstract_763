@@ -1,0 +1,15 @@
+We have presented a new problem -- the wide multiple baseline stereo (WxBS)
+-- which considers matching of images that simultaneously differ in more than
+one image acquisition factor such as viewpoint, illumination, sensor type or
+where object appearance changes significantly, e.g. over time. A new dataset
+with the ground truth for evaluation of matching algorithms has been introduced
+and will be made public.
+  We have extensively tested a large set of popular and recent detectors and
+descriptors and show than the combination of RootSIFT and HalfRootSIFT as
+descriptors with MSER and Hessian-Affine detectors works best for many
+different nuisance factors. We show that simple adaptive thresholding improves
+Hessian-Affine, DoG, MSER (and possibly other) detectors and allows to use them
+on infrared and low contrast images.
+  A novel matching algorithm for addressing the WxBS problem has been
+introduced. We have shown experimentally that the WxBS-M matcher dominantes the
+state-of-the-art methods both on both the new and existing datasets.

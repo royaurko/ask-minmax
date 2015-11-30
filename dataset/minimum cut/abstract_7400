@@ -1,0 +1,18 @@
+The joint probabilistic data association (JPDA) filter is a popular tracking
+methodology for problems involving well-spaced targets, but it is rarely
+applied in problems with closely-spaced targets due to its complexity in these
+cases, and due to the well-known phenomenon of coalescence. This paper
+addresses these difficulties using random finite sets (RFSs) and variational
+inference, deriving a highly tractable, approximate method for obtaining the
+multi-Bernoulli distribution that minimises the set Kullback-Leibler (KL)
+divergence from the true posterior, working within the RFS framework to
+incorporate uncertainty in target existence. The derivation is interpreted as
+an application of expectation-maximisation (EM), where the missing data is the
+correspondence of Bernoulli components (i.e., tracks) under each data
+association hypothesis. The missing data is shown to play an identical role to
+the selection of an ordered distribution in the same ordered family in the set
+JPDA algorithm. Subsequently, a special case of the proposed method is utilised
+to provide an efficient approximation of the minimum mean optimal sub-pattern
+assignment estimator. The performance of the proposed methods is demonstrated
+in challenging scenarios in which up to twenty targets come into close
+proximity.

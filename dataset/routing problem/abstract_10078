@@ -1,0 +1,15 @@
+Gradient methods are frequently used in large scale image deblurring problems
+since they avoid the onerous computation of the Hessian matrix of the objective
+function. Second order information is typically sought by a clever choice of
+the steplength parameter defining the descent direction, as in the case of the
+well-known Barzilai and Borwein rules. In a recent paper, a strategy for the
+steplength selection approximating the inverse of some eigenvalues of the
+Hessian matrix has been proposed for gradient methods applied to unconstrained
+minimization problems. In the quadratic case, this approach is based on a
+Lanczos process applied every m iterations to the matrix of the most recent m
+back gradients but the idea can be extended to a general objective function. In
+this paper we extend this rule to the case of scaled gradient projection
+methods applied to non-negatively constrained minimization problems, and we
+test the effectiveness of the proposed strategy in image deblurring problems in
+both the presence and the absence of an explicit edge-preserving regularization
+term.

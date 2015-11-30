@@ -1,0 +1,25 @@
+We study the problem of optimizing the cost of content delivery in a
+cooperative network of caches at end-nodes. The caches could be, for example,
+within the computers of users downloading videos from websites (such as
+Netflix, Blockbuster etc.), DVRs (such as TiVo, or cable boxes) used as part of
+video on demand services or public hot-spots (e.g. Wi-Fi access points with a
+cache) deployed over a city to serve content to mobile users. Each cache serves
+user requests locally over a medium that incurs no additional costs (i.e. WiFi,
+home LAN); if a request is not cached, it must be fetched from another cache or
+a central server. In our model, each cache has a tiered back-haul internet
+connection, with a usage cap (and fixed per-byte costs thereafter). Redirecting
+requests intended for the central server to other caches with unused back-haul
+capacity can bring down the network costs. Our goal is to develop a mechanism
+to optimally 1) place data into the caches and 2) route requests to caches to
+reduce the overall cost of content delivery.
+  We develop a multi-criteria approximation based on a LP rounding procedure
+that with a small (constant factor) blow-up in storage and upload limits of
+each cache, gives a data placement that is within constant factor of the
+optimum. Further, to speed up the solution, we propose a technique to cluster
+caches into groups, solve the data placement problem within a group, and
+combine the results in the rounding phase to get the global solution.Based on
+extensive simulations, we show that our schemes perform very well in practice,
+giving costs within $5--15$% to the optimal, and reducing the network load at a
+central server by as much as 55% with only a marginal blow up in the limits.
+Also we demonstrate that our approach out-performs a non-cooperative caching
+mechanism by about 20%.

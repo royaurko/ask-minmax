@@ -1,0 +1,19 @@
+In this work, we introduce multiplicative drift analysis as a suitable way to
+analyze the runtime of randomized search heuristics such as evolutionary
+algorithms.
+  We give a multiplicative version of the classical drift theorem. This allows
+easier analyses in those settings where the optimization progress is roughly
+proportional to the current distance to the optimum.
+  To display the strength of this tool, we regard the classical problem how the
+(1+1) Evolutionary Algorithm optimizes an arbitrary linear pseudo-Boolean
+function. Here, we first give a relatively simple proof for the fact that any
+linear function is optimized in expected time $O(n \log n)$, where $n$ is the
+length of the bit string. Afterwards, we show that in fact any such function is
+optimized in expected time at most ${(1+o(1)) 1.39 \euler n\ln (n)}$, again
+using multiplicative drift analysis. We also prove a corresponding lower bound
+of ${(1-o(1))e n\ln(n)}$ which actually holds for all functions with a unique
+global optimum.
+  We further demonstrate how our drift theorem immediately gives natural proofs
+(with better constants) for the best known runtime bounds for the (1+1)
+Evolutionary Algorithm on combinatorial problems like finding minimum spanning
+trees, shortest paths, or Euler tours.

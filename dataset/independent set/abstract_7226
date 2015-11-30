@@ -1,0 +1,11 @@
+Let ${\cal V}$ be a finite set of $n$ elements and ${\cal F}=\{X_1,X_2, >...,
+X_m\}$ a family of $m$ subsets of ${\cal V}.$ Two sets $X_i$ and $X_j$ of
+${\cal F}$ overlap if $X_i \cap X_j \neq \emptyset,$ $X_j \setminus X_i \neq
+\emptyset,$ and $X_i \setminus X_j \neq \emptyset.$ Two sets $X,Y\in {\cal F}$
+are in the same overlap class if there is a series $X=X_1,X_2, ..., X_k=Y$ of
+sets of ${\cal F}$ in which each $X_iX_{i+1}$ overlaps. In this note, we focus
+on efficiently identifying all overlap classes in $O(n+\sum_{i=1}^m |X_i|)$
+time. We thus revisit the clever algorithm of Dahlhaus of which we give a clear
+presentation and that we simplify to make it practical and implementable in its
+real worst case complexity. An useful variant of Dahlhaus's approach is also
+explained.

@@ -1,0 +1,15 @@
+Iterated localization is considered where each node of a network needs to get
+localized (find its location on 2-D plane), when initially only a subset of
+nodes have their location information. The iterated localization process
+proceeds as follows. Starting with a subset of nodes that have their location
+information, possibly using global positioning system (GPS) devices, any other
+node gets localized if it has three or more localized nodes in its radio range.
+The newly localized nodes are included in the subset of nodes that have their
+location information for the next iteration. This process is allowed to
+continue, until no new node can be localized. The problem is to find the
+minimum size of the initially localized subset to start with so that the whole
+network is localized with high probability. There are intimate connections
+between iterated localization and bootstrap percolation, that is well studied
+in statistical physics. Using results known in bootstrap percolation, we find a
+sufficient condition on the size of the initially localized subset that
+guarantees the localization of all nodes in the network with high probability.

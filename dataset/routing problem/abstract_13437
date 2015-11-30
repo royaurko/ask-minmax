@@ -1,0 +1,10 @@
+We revisit the SeqBin constraint. This meta-constraint subsumes a number of
+important global constraints like Change, Smooth and IncreasingNValue. We show
+that the previously proposed filtering algorithm for SeqBin has two drawbacks
+even under strong restrictions: it does not detect bounds disentailment and it
+is not idempotent. We identify the cause for these problems, and propose a new
+propagator that overcomes both issues. Our algorithm is based on a connection
+to the problem of finding a path of a given cost in a restricted $n$-partite
+graph. Our propagator enforces domain consistency in O(nd^2) and, for special
+cases of SeqBin that include Change, Smooth and IncreasingNValue, in O(nd)
+time.

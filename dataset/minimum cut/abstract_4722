@@ -1,0 +1,17 @@
+In this paper, relaxed belief propagation (RBP) based detectors are proposed
+for multiple-input multiple-out (MIMO) system. The factor graph is leveraged to
+represent the MIMO channels, and based on which our algorithms are developed.
+Unlike the existing complicated standard belief propagation (SBP) detector that
+considers all the edges of the factor graph when updating messages, the
+proposed RBP focuses on partial edges, which largely reduces computational
+complexity. In particular, relax degree is introduced in to determine how many
+edges to be selected, whereby RBP is a generalized edge selection based BP
+method and SBP is a special case of RBP having the smallest relax degree.
+Moreover, we propose a novel Gaussian approximation with feedback information
+mechanism to enable the proposed RBP detector. In order to further improve the
+detection performance, we also propose to cascade a minimum mean square error
+(MMSE) detector before the RBP detector, from which pseudo priori information
+is judiciously exploited. Convergence and complexity analyses, along with the
+numerical simulation results, verify that the proposed RBP outperform other BP
+methods having the similar complexity, and the MMSE cascaded RBP even
+outperform SBP at the largest relax degree in large MIMO systems.

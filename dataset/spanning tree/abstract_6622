@@ -1,0 +1,13 @@
+We propose a tree ensemble method, referred to as time series forest (TSF),
+for time series classification. TSF employs a combination of the entropy gain
+and a distance measure, referred to as the Entrance (entropy and distance)
+gain, for evaluating the splits. Experimental studies show that the Entrance
+gain criterion improves the accuracy of TSF. TSF randomly samples features at
+each tree node and has a computational complexity linear in the length of a
+time series and can be built using parallel computing techniques such as
+multi-core computing used here. The temporal importance curve is also proposed
+to capture the important temporal characteristics useful for classification.
+Experimental studies show that TSF using simple features such as mean,
+deviation and slope outperforms strong competitors such as one-nearest-neighbor
+classifiers with dynamic time warping, is computationally efficient, and can
+provide insights into the temporal characteristics.

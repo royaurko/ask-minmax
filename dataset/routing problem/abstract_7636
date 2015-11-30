@@ -1,0 +1,24 @@
+Stochastic gradient algorithms estimate the gradient based on only one or a
+few samples and enjoy low computational cost per iteration. They have been
+widely used in large-scale optimization problems. However, stochastic gradient
+algorithms are usually slow to converge and achieve sub-linear convergence
+rates, due to the inherent variance in the gradient computation. To accelerate
+the convergence, some variance-reduced stochastic gradient algorithms, e.g.,
+proximal stochastic variance-reduced gradient (Prox-SVRG) algorithm, have
+recently been proposed to solve strongly convex problems. Under the strongly
+convex condition, these variance-reduced stochastic gradient algorithms achieve
+a linear convergence rate. However, many machine learning problems are convex
+but not strongly convex. In this paper, we introduce Prox-SVRG and its
+projected variant called Variance-Reduced Projected Stochastic Gradient (VRPSG)
+to solve a class of non-strongly convex optimization problems widely used in
+machine learning. As the main technical contribution of this paper, we show
+that both VRPSG and Prox-SVRG achieve a linear convergence rate without strong
+convexity. A key ingredient in our proof is a Semi-Strongly Convex (SSC)
+inequality which is the first to be rigorously proved for a class of
+non-strongly convex problems in both constrained and regularized settings.
+Moreover, the SSC inequality is independent of algorithms and may be applied to
+analyze other stochastic gradient algorithms besides VRPSG and Prox-SVRG, which
+may be of independent interest. To the best of our knowledge, this is the first
+work that establishes the linear convergence rate for the variance-reduced
+stochastic gradient algorithms on solving both constrained and regularized
+problems without strong convexity.

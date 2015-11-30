@@ -1,0 +1,10 @@
+Jump Markov linear models consists of a finite number of linear state space
+models and a discrete variable encoding the jumps (or switches) between the
+different linear models. Identifying jump Markov linear models makes for a
+challenging problem lacking an analytical solution. We derive a new expectation
+maximization (EM) type algorithm that produce maximum likelihood estimates of
+the model parameters. Our development hinges upon recent progress in combining
+particle filters with Markov chain Monte Carlo methods in solving the nonlinear
+state smoothing problem inherent in the EM formulation. Key to our development
+is that we exploit a conditionally linear Gaussian substructure in the model,
+allowing for an efficient algorithm.

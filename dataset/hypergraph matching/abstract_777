@@ -1,0 +1,19 @@
+A central problem in comparative genomics consists in computing a
+(dis-)similarity measure between two genomes, e.g. in order to construct a
+phylogeny. All the existing measures are defined on genomes without duplicates.
+However, we know that genes can be duplicated within the same genome. One
+possible approach to overcome this difficulty is to establish a one-to-one
+correspondence (i.e. a matching) between genes of both genomes, where the
+correspondence is chosen in order to optimize the studied measure. In this
+paper, we are interested in three measures (number of breakpoints, number of
+common intervals and number of conserved intervals) and three models of
+matching (exemplar, intermediate and maximum matching models). We prove that,
+for each model and each measure M, computing a matching between two genomes
+that optimizes M is APX-hard. We also study the complexity of the following
+problem: is there an exemplarization (resp. an intermediate/maximum matching)
+that induces no breakpoint? We prove the problem to be NP-Complete in the
+exemplar model for a new class of instances, and we show that the problem is in
+P in the maximum matching model. We also focus on a fourth measure: the number
+of adjacencies, for which we give several approximation algorithms in the
+maximum matching model, in the case where genomes contain the same number of
+duplications of each gene.

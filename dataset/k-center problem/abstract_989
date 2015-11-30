@@ -1,0 +1,16 @@
+A challenging and fundamental research problem is the better understanding
+and control of the turbulent transport of heat in present-day tokamak fusion
+experiments. Recent developments in numerical methods along with enormous gains
+in computing power have made large-scale simulations an important tool for
+improving our understanding of this phenomena. Simulating this highly
+non-linear behavior requires solving for the perturbations of the phase space
+distribution function in five dimensions. We use a particle-in-cell approach to
+solve the equations. The code has been parallelized for a variety of
+architectures (C90, CM-5, T3D) using a 1-D domain decomposition along the
+toroidal axis, for which the number of particles in each cell remains
+approximately constant. The quasi-uniform distribution of particles, which
+minimizes load imbalance, coupled with the relatively small movement of
+particles across cells, which minimizes communications, makes this problem
+ideally suited to massively parallel architectures. We present the performance
+of the program for different numbers of processors and problem sizes. In
+addition, we discuss some recent scientific results obtained from the code.

@@ -1,0 +1,18 @@
+Our preceding paper introduced a method to compute Casimir forces in
+arbitrary geometries and for arbitrary materials that was based on a
+finite-difference time-domain (FDTD) scheme. In this manuscript, we focus on
+the efficient implementation of our method for geometries of practical interest
+and extend our previous proof-of-concept algorithm in one dimension to problems
+in two and three dimensions, introducing a number of new optimizations. We
+consider Casimir piston-like problems with nonmonotonic and monotonic force
+dependence on sidewall separation, both for previously solved geometries to
+validate our method and also for new geometries involving magnetic sidewalls
+and/or cylindrical pistons. We include realistic dielectric materials to
+calculate the force between suspended silicon waveguides or on a suspended
+membrane with periodic grooves, also demonstrating the application of PML
+absorbing boundaries and/or periodic boundaries. In addition we apply this
+method to a realizable three-dimensional system in which a silica sphere is
+stably suspended in a fluid above an indented metallic substrate. More
+generally, the method allows off-the-shelf FDTD software, already supporting a
+wide variety of materials (including dielectric, magnetic, and even anisotropic
+materials) and boundary conditions, to be exploited for the Casimir problem.

@@ -1,0 +1,18 @@
+We discuss the theoretical machinery involved in predicting financial market
+movements using an artificial market model which has been trained on real
+financial data. This approach to market prediction - in particular, forecasting
+financial time-series by training a third-party or 'black box' game on the
+financial data itself -- was discussed by Johnson et al. in cond-mat/0105303
+and cond-mat/0105258 and was based on some encouraging preliminary
+investigations of the dollar-yen exchange rate, various individual stocks, and
+stock market indices. However, the initial attempts lacked a clear formal
+methodology. Here we present a detailed methodology, using optimization
+techniques to build an estimate of the strategy distribution across the
+multi-trader population. In contrast to earlier attempts, we are able to
+present a systematic method for identifying 'pockets of predictability' in
+real-world markets. We find that as each pocket closes up, the black-box system
+needs to be 'reset' - which is equivalent to saying that the current
+probability estimates of the strategy allocation across the multi-trader
+population are no longer accurate. Instead, new probability estimates need to
+be obtained by iterative updating, until a new 'pocket of predictability'
+emerges and reliable prediction can resume.

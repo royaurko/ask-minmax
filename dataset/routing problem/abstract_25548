@@ -1,0 +1,15 @@
+Accelerated algorithms for maximum likelihood image reconstruction are
+essential for emerging applications such as 3D tomography, dynamic tomographic
+imaging, and other high dimensional inverse problems. In this paper, we
+introduce and analyze a class of fast and stable sequential optimization
+methods for computing maximum likelihood estimates and study its convergence
+properties. These methods are based on a {\it proximal point algorithm}
+implemented with the Kullback-Liebler (KL) divergence between posterior
+densities of the complete data as a proximal penalty function. When the
+proximal relaxation parameter is set to unity one obtains the classical
+expectation maximization (EM) algorithm. For a decreasing sequence of
+relaxation parameters, relaxed versions of EM are obtained which can have much
+faster asymptotic convergence without sacrifice of monotonicity. We present an
+implementation of the algorithm using Mor\'{e}'s {\it Trust Region} update
+strategy. For illustration the method is applied to a non-quadratic inverse
+problem with Poisson distributed data.

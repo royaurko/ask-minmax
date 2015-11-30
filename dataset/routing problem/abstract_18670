@@ -1,0 +1,15 @@
+The aim of this paper is to show the usefulness of Meyer wavelets for the
+classical problem of density estimation and for density deconvolution from
+noisy observations. By using such wavelets, the computation of the empirical
+wavelet coefficients relies on the fast Fourier transform of the data and on
+the fact that Meyer wavelets are band-limited functions. This makes such
+estimators very simple to compute and this avoids the problem of evaluating
+wavelets at non-dyadic points which is the main drawback of classical
+wavelet-based density estimators. Our approach is based on term-by-term
+thresholding of the empirical wavelet coefficients with random thresholds
+depending on an estimation of the variance of each coefficient. Such estimators
+are shown to achieve the same performances of an oracle estimator up to a
+logarithmic term. These estimators also achieve near-minimax rates of
+convergence over a large class of Besov spaces. A simulation study is proposed
+to show the good finite sample performances of the estimator for both problems
+of direct density estimation and density deconvolution.

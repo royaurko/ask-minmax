@@ -1,0 +1,11 @@
+In order to improve system performance efficiently, a number of systems
+choose to equip multi-core and many-core processors (such as GPUs). Due to
+their discrete memory these heterogeneous architectures comprise a distributed
+system within a computer. A data-flow programming model is attractive in this
+setting for its ease of expressing concurrency. Programmers only need to define
+task dependencies without considering how to schedule them on the hardware.
+However, mapping the resulting task graph onto hardware efficiently remains a
+challenge. In this paper, we propose a graph-partition scheduling policy for
+mapping data-flow workloads to heterogeneous hardware. According to our
+experiments, our graph-partition-based scheduling achieves comparable
+performance to conventional queue-base approaches.

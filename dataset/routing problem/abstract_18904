@@ -1,0 +1,17 @@
+For a given graph $G$ with positive integral cost and delay on edges,
+distinct vertices $s$ and $t$, cost bound $C\in Z^{+}$ and delay bound $D\in
+Z^{+}$, the $k$ bi-constraint path ($k$BCP) problem is to compute $k$ disjoint
+$st$-paths subject to $C$ and $D$. This problem is known NP-hard, even when
+$k=1$ \cite{garey1979computers}. This paper first gives a simple approximation
+algorithm with factor-$(2,2)$, i.e. the algorithm computes a solution with
+delay and cost bounded by $2*D$ and $2*C$ respectively. Later, a novel improved
+approximation algorithm with ratio
+$(1+\beta,\,\max\{2,\,1+\ln\frac{1}{\beta}\})$ is developed by constructing
+interesting auxiliary graphs and employing the cycle cancellation method. As a
+consequence, we can obtain a factor-$(1.369,\,2)$ approximation algorithm by
+setting $1+\ln\frac{1}{\beta}=2$ and a factor-$(1.567,\,1.567)$ algorithm by
+setting $1+\beta=1+\ln\frac{1}{\beta}$. Besides, by setting $\beta=0$, an
+approximation algorithm with ratio $(1,\, O(\ln n))$, i.e. an algorithm with
+only a single factor ratio $O(\ln n)$ on cost, can be immediately obtained. To
+the best of our knowledge, this is the first non-trivial approximation
+algorithm for the $k$BCP problem that strictly obeys the delay constraint.

@@ -1,0 +1,17 @@
+Nurse rostering is a complex scheduling problem that affects hospital
+personnel on a daily basis all over the world. This paper presents a new
+component-based approach with adaptive perturbations, for a nurse scheduling
+problem arising at a major UK hospital. The main idea behind this technique is
+to decompose a schedule into its components (i.e. the allocated shift pattern
+of each nurse), and then mimic a natural evolutionary process on these
+components to iteratively deliver better schedules. The worthiness of all
+components in the schedule has to be continuously demonstrated in order for
+them to remain there. This demonstration employs a dynamic evaluation function
+which evaluates how well each component contributes towards the final
+objective. Two perturbation steps are then applied: the first perturbation
+eliminates a number of components that are deemed not worthy to stay in the
+current schedule; the second perturbation may also throw out, with a low level
+of probability, some worthy components. The eliminated components are
+replenished with new ones using a set of constructive heuristics using local
+optimality criteria. Computational results using 52 data instances demonstrate
+the applicability of the proposed approach in solving real-world problems.

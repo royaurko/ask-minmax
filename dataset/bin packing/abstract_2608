@@ -1,0 +1,17 @@
+I describe a new time-domain algorithm for detecting localized structures
+(bursts), revealing pulse shapes, and generally characterizing intensity
+variations. The input is raw counting data, in any of three forms: time-tagged
+photon events (TTE), binned counts, or time-to-spill (TTS) data. The output is
+the most likely segmentation of the observation into time intervals during
+which the photon arrival rate is perceptibly constant -- i.e. has a fixed
+intensity without statistically significant variations. Since the analysis is
+based on Bayesian statistics, I call the resulting structures Bayesian Blocks.
+Unlike most, this method does not stipulate time bins -- instead the data
+themselves determine a piecewise constant representation. Therefore the
+analysis procedure itself does not impose a lower limit to the time scale on
+which variability can be detected. Locations, amplitudes, and rise and decay
+times of pulses within a time series can be estimated, independent of any
+pulse-shape model -- but only if they do not overlap too much, as deconvolution
+is not incorporated. The Bayesian Blocks method is demonstrated by analyzing
+pulse structure in BATSE $\gamma$-ray data. The MatLab scripts and sample data
+can be found on the WWW at: http://george.arc.nasa.gov/~scargle/papers.html

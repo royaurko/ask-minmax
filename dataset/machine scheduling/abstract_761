@@ -1,0 +1,10 @@
+We introduce an extension of the XQuery language, FluX, that supports
+event-based query processing and the conscious handling of main memory buffers.
+Purely event-based queries of this language can be executed on streaming XML
+data in a very direct way. We then develop an algorithm that allows to
+efficiently rewrite XQueries into the event-based FluX language. This algorithm
+uses order constraints from a DTD to schedule event handlers and to thus
+minimize the amount of buffering required for evaluating a query. We discuss
+the various technical aspects of query optimization and query evaluation within
+our framework. This is complemented with an experimental evaluation of our
+approach.

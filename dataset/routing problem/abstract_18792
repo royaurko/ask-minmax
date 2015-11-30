@@ -1,0 +1,21 @@
+Compressed sensing posits that, within limits, one can undersample a sparse
+signal and yet reconstruct it accurately. Knowing the precise limits to such
+undersampling is important both for theory and practice. We present a formula
+that characterizes the allowed undersampling of generalized sparse objects. The
+formula applies to Approximate Message Passing (AMP) algorithms for compressed
+sensing, which are here generalized to employ denoising operators besides the
+traditional scalar soft thresholding denoiser. This paper gives several
+examples including scalar denoisers not derived from convex penalization -- the
+firm shrinkage nonlinearity and the minimax nonlinearity -- and also nonscalar
+denoisers -- block thresholding, monotone regression, and total variation
+minimization.
+  Let the variables eps = k/N and delta = n/N denote the generalized sparsity
+and undersampling fractions for sampling the k-generalized-sparse N-vector x_0
+according to y=Ax_0. Here A is an n\times N measurement matrix whose entries
+are iid standard Gaussian. The formula states that the phase transition curve
+delta = delta(eps) separating successful from unsuccessful reconstruction of
+x_0 by AMP is given by: delta = M(eps| Denoiser), where M(eps| Denoiser)
+denotes the per-coordinate minimax mean squared error (MSE) of the specified,
+optimally-tuned denoiser in the directly observed problem y = x + z. In short,
+the phase transition of a noiseless undersampling problem is identical to the
+minimax MSE in a denoising problem.

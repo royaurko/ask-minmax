@@ -1,0 +1,9 @@
+Detecting deadlocks in MPI synchronization communication programs is very
+difficult and need building program models. All complex models are based on
+sequential models. The sequential model is mapped into a set of character
+strings and its deadlock detection problem is translated into an equivalent
+multi-queue string matching problem. An algorithm is devised and implemented to
+statically detect deadlocks in sequential models of MPI synchronization
+communication programs. The time and space complexity of the algorithm is O(n)
+where n is the amount of message in model. The algorithm is better than usual
+circle-detection methods and can adapt well to dynamic message stream.

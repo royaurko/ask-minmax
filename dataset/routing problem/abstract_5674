@@ -1,0 +1,15 @@
+Recent years have witnessed the popularity of using rank minimization as a
+regularizer for various signal processing and machine learning problems. As
+rank minimization problems are often converted to nuclear norm minimization
+(NNM) problems, they have to be solved iteratively and each iteration requires
+computing a singular value decomposition (SVD). Therefore, their solution
+suffers from the high computation cost of multiple SVDs. To relieve this issue,
+we propose using the block Lanczos method to compute the partial SVDs, where
+the principal singular subspaces obtained in the previous iteration are used to
+start the block Lanczos procedure. To avoid the expensive reorthogonalization
+in the Lanczos procedure, the block Lanczos procedure is performed for only a
+few steps. Our block Lanczos with warm start (BLWS) technique can be adopted by
+different algorithms that solve NNM problems. We present numerical results on
+applying BLWS to Robust PCA and Matrix Completion problems. Experimental
+results show that our BLWS technique usually accelerates its host algorithm by
+at least two to three times.

@@ -1,0 +1,14 @@
+We address the problem of minimal-change integrity maintenance in the context
+of integrity constraints in relational databases. We assume that
+integrity-restoration actions are limited to tuple deletions. We identify two
+basic computational issues: repair checking (is a database instance a repair of
+a given database?) and consistent query answers (is a tuple an answer to a
+given query in every repair of a given database?). We study the computational
+complexity of both problems, delineating the boundary between the tractable and
+the intractable. We consider denial constraints, general functional and
+inclusion dependencies, as well as key and foreign key constraints. Our results
+shed light on the computational feasibility of minimal-change integrity
+maintenance. The tractable cases should lead to practical implementations. The
+intractability results highlight the inherent limitations of any integrity
+enforcement mechanism, e.g., triggers or referential constraint actions, as a
+way of performing minimal-change integrity maintenance.

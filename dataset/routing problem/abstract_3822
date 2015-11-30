@@ -1,0 +1,24 @@
+Optimistic parallelization is a promising approach for the parallelization of
+irregular algorithms: potentially interfering tasks are launched dynamically,
+and the runtime system detects conflicts between concurrent activities,
+aborting and rolling back conflicting tasks. However, parallelism in irregular
+algorithms is very complex. In a regular algorithm like dense matrix
+multiplication, the amount of parallelism can usually be expressed as a
+function of the problem size, so it is reasonably straightforward to determine
+how many processors should be allocated to execute a regular algorithm of a
+certain size (this is called the processor allocation problem). In contrast,
+parallelism in irregular algorithms can be a function of input parameters, and
+the amount of parallelism can vary dramatically during the execution of the
+irregular algorithm. Therefore, the processor allocation problem for irregular
+algorithms is very difficult.
+  In this paper, we describe the first systematic strategy for addressing this
+problem. Our approach is based on a construct called the conflict graph, which
+(i) provides insight into the amount of parallelism that can be extracted from
+an irregular algorithm, and (ii) can be used to address the processor
+allocation problem for irregular algorithms. We show that this problem is
+related to a generalization of the unfriendly seating problem and, by extending
+Tur\'an's theorem, we obtain a worst-case class of problems for optimistic
+parallelization, which we use to derive a lower bound on the exploitable
+parallelism. Finally, using some theoretically derived properties and some
+experimental facts, we design a quick and stable control strategy for solving
+the processor allocation problem heuristically.

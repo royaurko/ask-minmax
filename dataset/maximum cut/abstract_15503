@@ -1,0 +1,16 @@
+In data science, it is often required to estimate dependencies between
+different data sources. These dependencies are typically calculated using
+Pearson's correlation, distance correlation, and/or mutual information.
+However, none of these measures satisfy all the Granger's axioms for an "ideal
+measure". One such ideal measure, proposed by Granger himself, calculates the
+Bhattacharyya distance between the joint probability density function (pdf) and
+the product of marginal pdfs. We call this measure the mutual dependence.
+However, to date this measure has not been directly computable from data. In
+this paper, we use our recently introduced maximum likelihood non-parametric
+estimator for band-limited pdfs, to compute the mutual dependence directly from
+the data. We construct the estimator of mutual dependence and compare its
+performance to standard measures (Pearson's and distance correlation) for
+different known pdfs by computing convergence rates, computational complexity,
+and the ability to capture nonlinear dependencies. Our mutual dependence
+estimator requires fewer samples to converge to theoretical values, is faster
+to compute, and captures more complex dependencies than standard measures.

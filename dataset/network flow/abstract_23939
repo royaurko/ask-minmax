@@ -1,0 +1,15 @@
+We investigate localization of a source based on angle of arrival (AoA)
+measurements made at a geographically dispersed network of cooperating
+receivers. The goal is to efficiently compute accurate estimates despite
+outliers in the AoA measurements due to multipath reflections in
+non-line-of-sight (NLOS) environments. Maximal likelihood (ML) location
+estimation in such a setting requires exhaustive testing of estimates from all
+possible subsets of "good" measurements, which has exponential complexity in
+the number of measurements. We provide a randomized algorithm that approaches
+ML performance with linear complexity in the number of measurements. The
+building block for this algorithm is a low-complexity sequential algorithm for
+updating the source location estimates under line-of-sight (LOS) environments.
+Our Bayesian framework can exploit the ability to resolve multiple paths in
+wideband systems to provide significant performance gains over narrowband
+systems in NLOS environments, and easily extends to accommodate additional
+information such as range measurements and prior information about location.

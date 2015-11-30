@@ -1,0 +1,19 @@
+The purpose of this paper is to give an overview in the realm of numerical
+computations of polydispersed turbulent two-phase flows, using a mean-field/PDF
+approach. In this approach, the numerical solution is obtained by resorting to
+a hybrid method where the mean fluid properties are computed by solving
+mean-field (RANS) equations with a classical finite volume procedure whereas
+the local instantaneous properties of the particles are determined by solving
+stochastic differential equations (SDEs). The fundamentals of the general
+formalism are recalled and particular attention is focused on a specific
+theoretical issue: the treatment of the multiscale character of the dynamics of
+the discrete particles, that is the consistency of the system of SDEs in
+asymptotic cases. Then, the main lines of the particle/mesh algorithm are given
+and some specific problems, related to the integration of the SDEs, are
+discussed, for example, issues related to the specificity of the treatment of
+the averaging and projection operators, the time integration of the SDEs (weak
+numerical schemes consistent with all asymptotic cases), and the computation of
+the source terms. Practical simulations, for three different flows, are
+performed in order to demonstrate the ability of both the models and the
+numerics to cope with the stringent specificities of polydispersed turbulent
+two-phase flows.

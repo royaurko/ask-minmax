@@ -1,0 +1,14 @@
+We propose a simple, yet effective approach for spatiotemporal feature
+learning using deep 3-dimensional convolutional networks (3D ConvNets) trained
+on a large scale supervised video dataset. Our findings are three-fold: 1) 3D
+ConvNets are more suitable for spatiotemporal feature learning compared to 2D
+ConvNets; 2) A homogeneous architecture with small 3x3x3 convolution kernels in
+all layers is among the best performing architectures for 3D ConvNets; and 3)
+Our learned features, namely C3D (Convolutional 3D), significantly outperform
+state-of-the-art methods on 4 different video analysis tasks and 6 different
+benchmarks with a simple linear SVM. In addition, the features are compact:
+achieving 52.8% accuracy on UCF101 dataset with only 10 dimensions and also
+very efficient to compute: 91 times faster than the current best hand-crafted
+features and approximately 2 orders of magnitude faster than deep learning
+based video classification method using optical flow. Finally, they are
+conceptually very simple and easy to train and use.

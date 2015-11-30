@@ -1,0 +1,23 @@
+A number of ill-posed inverse problems in signal processing, like blind
+deconvolution, matrix factorization, dictionary learning and blind source
+separation share the common characteristic of being bilinear inverse problems
+(BIPs), i.e. the observation model is a function of two variables and
+conditioned on one variable being known, the observation is a linear function
+of the other variable. A key issue that arises for such inverse problems is
+that of identifiability, i.e. whether the observation is sufficient to
+unambiguously determine the pair of inputs that generated the observation.
+Identifiability is a key concern for applications like blind equalization in
+wireless communications and data mining in machine learning. Herein, a unifying
+and flexible approach to identifiability analysis for general conic prior
+constrained BIPs is presented, exploiting a connection to low-rank matrix
+recovery via lifting. We develop deterministic identifiability conditions on
+the input signals and examine their satisfiability in practice for three
+classes of signal distributions, viz. dependent but uncorrelated, independent
+Gaussian, and independent Bernoulli. In each case, scaling laws are developed
+that trade-off probability of robust identifiability with the complexity of the
+rank two null space. An added appeal of our approach is that the rank two null
+space can be partly or fully characterized for many bilinear problems of
+interest (e.g. blind deconvolution). We present numerical experiments involving
+variations on the blind deconvolution problem that exploit a characterization
+of the rank two null space and demonstrate that the scaling laws offer good
+estimates of identifiability.

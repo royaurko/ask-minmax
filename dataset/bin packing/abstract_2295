@@ -1,0 +1,19 @@
+There is an increasing interest in executing complex analyses over large
+graphs, many of which require processing a large number of multi-hop
+neighborhoods or subgraphs. Examples include ego network analysis, motif
+counting, personalized recommendations, and others. These tasks are not well
+served by existing vertex-centric graph processing frameworks, where user
+programs are only able to directly access the state of a single vertex. This
+paper introduces NSCALE, a novel end-to-end graph processing framework that
+enables the distributed execution of complex subgraph-centric analytics over
+large-scale graphs in the cloud. NSCALE enables users to write programs at the
+level of subgraphs rather than at the level of vertices. Unlike most previous
+graph processing frameworks, which apply the user program to the entire graph,
+NSCALE allows users to declaratively specify subgraphs of interest. Our
+framework includes a novel graph extraction and packing (GEP) module that
+utilizes a cost-based optimizer to partition and pack the subgraphs of interest
+into memory on as few machines as possible. The distributed execution engine
+then takes over and runs the user program in parallel, while respecting the
+scope of the various subgraphs. Our experimental results show
+orders-of-magnitude improvements in performance and drastic reductions in the
+cost of analytics compared to vertex-centric approaches.

@@ -1,0 +1,20 @@
+We consider the problem of maximizing submodular functions; while this
+problem is known to be NP-hard, several numerically efficient local search
+techniques with approximation guarantees are available. In this paper, we
+propose a novel convex relaxation which is based on the relationship between
+submodular functions, entropies and probabilistic graphical models. In a
+graphical model, the entropy of the joint distribution decomposes as a sum of
+marginal entropies of subsets of variables; moreover, for any distribution, the
+entropy of the closest distribution factorizing in the graphical model provides
+an bound on the entropy. For directed graphical models, this last property
+turns out to be a direct consequence of the submodularity of the entropy
+function, and allows the generalization of graphical-model-based upper bounds
+to any submodular functions. These upper bounds may then be jointly maximized
+with respect to a set, while minimized with respect to the graph, leading to a
+convex variational inference scheme for maximizing submodular functions, based
+on outer approximations of the marginal polytope and maximum likelihood bounded
+treewidth structures. By considering graphs of increasing treewidths, we may
+then explore the trade-off between computational complexity and tightness of
+the relaxation. We also present extensions to constrained problems and
+maximizing the difference of submodular functions, which include all possible
+set functions.

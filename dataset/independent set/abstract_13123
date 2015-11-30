@@ -1,0 +1,27 @@
+We introduce two hierarchies of clause-sets, SLUR_k and UC_k, based on the
+classes SLUR (Single Lookahead Unit Refutation), introduced in 1995, and UC
+(Unit refutation Complete), introduced in 1994.
+  The class SLUR, introduced in [Annexstein et al, 1995], is the class of
+clause-sets for which unit-clause-propagation (denoted by r_1) detects
+unsatisfiability, or where otherwise iterative assignment, avoiding obviously
+false assignments by look-ahead, always yields a satisfying assignment. It is
+natural to consider how to form a hierarchy based on SLUR. Such investigations
+were started in [Cepek et al, 2012] and [Balyo et al, 2012]. We present what we
+consider the "limit hierarchy" SLUR_k, based on generalising r_1 by r_k, that
+is, using generalised unit-clause-propagation introduced in [Kullmann, 1999,
+2004].
+  The class UC, studied in [Del Val, 1994], is the class of Unit refutation
+Complete clause-sets, that is, those clause-sets for which unsatisfiability is
+decidable by r_1 under any falsifying assignment. For unsatisfiable clause-sets
+F, the minimum k such that r_k determines unsatisfiability of F is exactly the
+"hardness" of F, as introduced in [Ku 99, 04]. For satisfiable F we use now an
+extension mentioned in [Ansotegui et al, 2008]: The hardness is the minimum k
+such that after application of any falsifying partial assignments, r_k
+determines unsatisfiability. The class UC_k is given by the clause-sets which
+have hardness <= k. We observe that UC_1 is exactly UC.
+  UC_k has a proof-theoretic character, due to the relations between hardness
+and tree-resolution, while SLUR_k has an algorithmic character. The
+correspondence between r_k and k-times nested input resolution (or tree
+resolution using clause-space k+1) means that r_k has a dual nature: both
+algorithmic and proof theoretic. This corresponds to a basic result of this
+paper, namely SLUR_k = UC_k.

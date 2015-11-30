@@ -1,0 +1,16 @@
+We describe how we connected three programs that compute Groebner bases to
+Coq, to do automated proofs on algebraic, geometrical and arithmetical
+expressions. The result is a set of Coq tactics and a certificate mechanism
+(downloadable at http://www-sop.inria.fr/marelle/Loic.Pottier/gb-keappa.tgz).
+The programs are: F4, GB \, and gbcoq. F4 and GB are the fastest (up to our
+knowledge) available programs that compute Groebner bases. Gbcoq is slow in
+general but is proved to be correct (in Coq), and we adapted it to our specific
+problem to be efficient. The automated proofs concern equalities and
+non-equalities on polynomials with coefficients and indeterminates in R or Z,
+and are done by reducing to Groebner computation, via Hilbert's
+Nullstellensatz. We adapted also the results of Harrison, to allow to prove
+some theorems about modular arithmetics. The connection between Coq and the
+programs that compute Groebner bases is done using the "external" tactic of Coq
+that allows to call arbitrary programs accepting xml inputs and outputs. We
+also produce certificates in order to make the proof scripts independant from
+the external programs.

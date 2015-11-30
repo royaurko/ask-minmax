@@ -1,0 +1,15 @@
+We present a linear regression method for predictions on a small data set
+making use of a second possibly biased data set that may be much larger. Our
+method fits linear regressions to the two data sets while penalizing the
+difference between predictions made by those two models. The resulting
+algorithm is a shrinkage method similar to those used in small area estimation.
+We find a Stein-type finding for Gaussian responses: when the model has 5 or
+more coefficients and 10 or more error degrees of freedom, it becomes
+inadmissible to use only the small data set, no matter how large the bias is.
+We also present both plug-in and AICc-based methods to tune our penalty
+parameter. Most of our results use an $L_2$ penalty, but we obtain formulas for
+$L_1$ penalized estimates when the model is specialized to the location
+setting. Ordinary Stein shrinkage provides an inadmissibility result for only 3
+or more coefficients, but we find that our shrinkage method typically produces
+much lower squared errors in as few as 5 or 10 dimensions when the bias is
+small and essentially equivalent squared errors when the bias is large.

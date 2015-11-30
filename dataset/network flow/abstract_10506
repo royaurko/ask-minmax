@@ -1,0 +1,16 @@
+This paper presents new results for the (partial) maximum a posteriori (MAP)
+problem in Bayesian networks, which is the problem of querying the most
+probable state configuration of some of the network variables given evidence.
+First, it is demonstrated that the problem remains hard even in networks with
+very simple topology, such as binary polytrees and simple trees (including the
+Naive Bayes structure). Such proofs extend previous complexity results for the
+problem. Inapproximability results are also derived in the case of trees if the
+number of states per variable is not bounded. Although the problem is shown to
+be hard and inapproximable even in very simple scenarios, a new exact algorithm
+is described that is empirically fast in networks of bounded treewidth and
+bounded number of states per variable. The same algorithm is used as basis of a
+Fully Polynomial Time Approximation Scheme for MAP under such assumptions.
+Approximation schemes were generally thought to be impossible for this problem,
+but we show otherwise for classes of networks that are important in practice.
+The algorithms are extensively tested using some well-known networks as well as
+random generated cases to show their effectiveness.

@@ -1,0 +1,15 @@
+The finite element method can be viewed as a machine that automates the
+discretization of differential equations, taking as input a variational
+problem, a finite element and a mesh, and producing as output a system of
+discrete equations. However, the generality of the framework provided by the
+finite element method is seldom reflected in implementations (realizations),
+which are often specialized and can handle only a small set of variational
+problems and finite elements (but are typically parametrized over the choice of
+mesh).
+  This paper reviews ongoing research in the direction of a complete automation
+of the finite element method. In particular, this work discusses algorithms for
+the efficient and automatic computation of a system of discrete equations from
+a given variational problem, finite element and mesh. It is demonstrated that
+by automatically generating and compiling efficient low-level code, it is
+possible to parametrize a finite element code over variational problem and
+finite element in addition to the mesh.

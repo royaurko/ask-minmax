@@ -1,0 +1,15 @@
+Given a query graph that represents a pattern of interest, the emerging
+pattern detection problem can be viewed as a continuous query problem on a
+dynamic graph. We present an incremental algorithm for continuous query
+processing on dynamic graphs. The algorithm is based on the concept of query
+decomposition; we decompose a query graph into smaller subgraphs and assemble
+the result of sub-queries to find complete matches with the specified query.
+The novelty of our work lies in using the subgraph distributional statistics
+collected from the dynamic graph to generate the decomposition. We introduce a
+"Lazy Search" algorithm where the search strategy is decided on a
+vertex-to-vertex basis depending on the likelihood of a match in the vertex
+neighborhood. We also propose a metric named "Relative Selectivity" that is
+used to select between different query decomposition strategies. Our
+experiments performed on real online news, network traffic stream and a
+synthetic social network benchmark demonstrate 10-100x speedups over competing
+approaches.

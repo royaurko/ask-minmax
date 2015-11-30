@@ -1,0 +1,11 @@
+We consider the task of controlling in a distributed way a Zielonka
+asynchronous automaton. Every process of a controller has access to its causal
+past to determine the next set of actions it proposes to play. An action can be
+played only if every process controlling this action proposes to play it. We
+consider reachability objectives: every process should reach its set of final
+states. We show that this control problem is decidable for tree architectures,
+where every process can communicate with its parent, its children, and with the
+environment. The complexity of our algorithm is l-fold exponential with l being
+the height of the tree representing the architecture. We show that this is
+unavoidable by showing that even for three processes the problem is
+EXPTIME-complete, and that it is non-elementary in general.

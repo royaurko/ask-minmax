@@ -1,0 +1,24 @@
+Orienteering is the following optimization problem: given an edge-weighted
+graph (directed or undirected), two nodes s,t and a time limit T, find an s-t
+walk of total length at most T that maximizes the number of distinct nodes
+visited by the walk. One obtains a generalization, namely orienteering with
+time-windows (also referred to as TSP with time-windows), if each node v has a
+specified time-window [R(v), D(v)] and a node v is counted as visited by the
+walk only if v is visited during its time-window. For the time-window problem,
+an O(\log \opt) approximation can be achieved even for directed graphs if the
+algorithm is allowed quasi-polynomial time. However, the best known polynomial
+time approximation ratios are O(\log^2 \opt) for undirected graphs and O(\log^4
+\opt) in directed graphs. In this paper we make some progress towards closing
+this discrepancy, and in the process obtain improved approximation ratios in
+several natural settings. Let L(v) = D(v) - R(v) denote the length of the
+time-window for v and let \lmax = \max_v L(v) and \lmin = \min_v L(v). Our
+results are given below with \alpha denoting the known approximation ratio for
+orienteering (without time-windows). Currently \alpha = (2+\eps) for undirected
+graphs and \alpha = O(\log^2 \opt) in directed graphs.
+  1. An O(\alpha \log \lmax) approximation when R(v) and D(v) are integer
+valued for each v.
+  2. An O(\alpha \max{\log \opt, \log \frac{\lmax}{\lmin}}) approximation.
+  3. An O(\alpha \log \frac{\lmax}{\lmin}) approximation when no start and end
+points are specified.
+  In particular, if \frac{\lmax}{\lmin} is poly-bounded, we obtain an O(\log n)
+approximation for the time-window problem in undirected graphs.

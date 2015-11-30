@@ -1,0 +1,12 @@
+The Front End Driver, FED, is a 9U 400mm VME64x card designed for reading out
+the Compact Muon Solenoid, CMS, silicon tracker signals transmitted by the
+APV25 analogue pipeline Application Specific Integrated Circuits. The FED
+receives the signals via 96 optical fibers at a total input rate of 3.4 GB/sec.
+The signals are digitized and processed by applying algorithms for pedestal and
+common mode noise subtraction. Algorithms that search for clusters of hits are
+used to further reduce the input rate. Only the cluster data along with trigger
+information of the event are transmitted to the CMS data acquisition system
+using the S-LINK64 protocol at a maximum rate of 400 MB/sec. All data
+processing algorithms on the FED are executed in large on-board Field
+Programmable Gate Arrays. Results on the design, performance, testing and
+quality control of the FED are presented and discussed.

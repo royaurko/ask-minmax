@@ -1,0 +1,18 @@
+Graphical models are a framework for representing and exploiting prior
+conditional independence structures within distributions using graphs. In the
+Gaussian case, these models are directly related to the sparsity of the inverse
+covariance (concentration) matrix and allow for improved covariance estimation
+with lower computational complexity. We consider concentration estimation with
+the mean-squared error (MSE) as the objective, in a special type of model known
+as decomposable. This model includes, for example, the well known banded
+structure and other cases encountered in practice. Our first contribution is
+the derivation and analysis of the minimum variance unbiased estimator (MVUE)
+in decomposable graphical models. We provide a simple closed form solution to
+the MVUE and compare it with the classical maximum likelihood estimator (MLE)
+in terms of performance and complexity. Next, we extend the celebrated Stein's
+unbiased risk estimate (SURE) to graphical models. Using SURE, we prove that
+the MSE of the MVUE is always smaller or equal to that of the biased MLE, and
+that the MVUE itself is dominated by other approaches. In addition, we propose
+the use of SURE as a constructive mechanism for deriving new covariance
+estimators. Similarly to the classical MLE, all of our proposed estimators have
+simple closed form solutions but result in a significant reduction in MSE.

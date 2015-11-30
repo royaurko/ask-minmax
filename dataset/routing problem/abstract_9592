@@ -1,0 +1,17 @@
+We consider the problem of minimizing a convex objective which is the sum of
+a smooth part, with Lipschitz continuous gradient, and a nonsmooth part.
+Inspired by various applications, we focus on the case when the nonsmooth part
+is a composition of a proper closed convex function P and a nonzero affine map,
+with the proximal mappings of \tau P, \tau > 0, easy to compute. In this case,
+a direct application of the widely used proximal gradient algorithm does not
+necessarily lead to easy subproblems. In view of this, we propose a new
+algorithm, the proximal-proximal gradient algorithm, which admits easy
+subproblems. Our algorithm reduces to the proximal gradient algorithm if the
+affine map is just the identity map and the stepsizes are suitably chosen, and
+it is equivalent to applying a variant of the alternating minimization
+algorithm [35] to the dual problem. Moreover, it is closely related to inexact
+proximal gradient algorithms [29,33]. We show that the whole sequence generated
+from the algorithm converges to an optimal solution. We also establish an upper
+bound on iteration complexity. Our numerical experiments on the stochastic
+realization problem and the logistic fused lasso problem suggest that the
+algorithm performs reasonably well on large-scale instances.

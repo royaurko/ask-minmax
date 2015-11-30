@@ -1,0 +1,24 @@
+The well-known dictionary-based algorithms of the Lempel-Ziv (LZ) 77 family
+are the basis of several universal lossless compression techniques. These
+algorithms are asymmetric regarding encoding/decoding time and memory
+requirements, with the former being much more demanding. In the past years,
+considerable attention has been devoted to the problem of finding efficient
+data structures to support these searches, aiming at optimizing the encoders in
+terms of speed and memory. Hash tables, binary search trees and suffix trees
+have been widely used for this purpose, as they allow fast search at the
+expense of memory. Some recent research has focused on suffix arrays (SA), due
+to their low memory requirements and linear construction algorithms. Previous
+work has shown how the LZ77 decomposition can be computed using a single SA or
+an SA with an auxiliary array with the longest common prefix information. The
+SA-based algorithms use less memory than the tree-based encoders, allocating
+the strictly necessary amount of memory, regardless of the contents of the text
+to search/encode. In this paper, we improve on previous work by proposing
+faster SA-based algorithms for LZ77 encoding and sub-string search, keeping
+their low memory requirements. For some compression settings, on a large set of
+benchmark files, our low-memory SA-based encoders are also faster than
+tree-based encoders. This provides time and memory efficient LZ77 encoding,
+being a possible replacement for trees on well known encoders like LZMA. Our
+algorithm is also suited for text classification, because it provides a compact
+way to describe text in a bag-of-words representation, as well as a fast
+indexing mechanism that allows to quickly find all the sets of words that start
+with a given symbol, over a static dictionary.

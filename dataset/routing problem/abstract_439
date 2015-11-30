@@ -1,0 +1,28 @@
+Consider a routing problem consisting of a demand graph H and a supply graph
+G. If the pair obeys the cut condition, then the flow-cut gap for this instance
+is the minimum value C such that there is a feasible multiflow for H if each
+edge of G is given capacity C. The flow-cut gap can be greater than 1 even when
+G is the (series-parallel) graph K_{2,3}. In this paper we are primarily
+interested in the "integer" flow-cut gap. What is the minimum value C such that
+there is a feasible integer valued multiflow for H if each edge of G is given
+capacity C? We conjecture that the integer flow-cut gap is quantitatively
+related to the fractional flow-cut gap. This strengthens the well-known
+conjecture that the flow-cut gap in planar and minor-free graphs is O(1) to
+suggest that the integer flow-cut gap is O(1). We give several results on
+non-trivial special classes of graphs supporting this conjecture and further
+explore the "primal" method for understanding flow-cut gaps. Our results
+include:
+  - Let G be obtained by series-parallel operations starting from an edge st,
+and consider orienting all edges in G in the direction from s to t. A demand is
+compliant if its endpoints are joined by a directed path in the resulting
+oriented graph. If the cut condition holds for a compliant instance and G+H is
+Eulerian, then an integral routing of H exists.
+  - The integer flow-cut gap in series-parallel graphs is 5. We also give an
+explicit class of instances that shows via elementary calculations that the
+flow-cut gap in series-parallel graphs is at least 2-o(1); this simplifies the
+proof by Lee and Raghavendra.
+  - The integer flow-cut gap in k-Outerplanar graphs is c^{O(k)} for some fixed
+constant c.
+  - A simple proof that the flow-cut gap is O(\log k^*) where k^* is the size
+of a node-cover in H; this was previously shown by G\"unl\"uk via a more
+intricate proof.

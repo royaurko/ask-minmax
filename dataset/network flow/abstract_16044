@@ -1,0 +1,20 @@
+We consider the problem of distributed scheduling in wireless networks where
+heterogeneously delayed information about queue lengths and channel states of
+all links are available at all the transmitters. In an earlier work (by Reddy
+et al. in Queueing Systems, 2012), a throughput optimal scheduling policy
+(which we refer to henceforth as the R policy) for this setting was proposed.
+We study the R policy, and examine its two drawbacks -- (i) its huge
+computational complexity, and (ii) its non-optimal average per-packet queueing
+delay. We show that the R policy unnecessarily constrains itself to work with
+information that is more delayed than that afforded by the system. We propose a
+new policy that fully exploits the commonly available information, thereby
+greatly improving upon the computational complexity and the delay performance
+of the R policy. We show that our policy is throughput optimal. Our main
+contribution in this work is the design of two fast and near-throughput-optimal
+policies for this setting, whose explicit throughput and runtime performances
+we characterize analytically. While the R policy takes a few milliseconds to
+several tens of seconds to compute the schedule once (for varying number of
+links in the network), the running times of the proposed
+near-throughput-optimal algorithms range from a few microseconds to only a few
+hundred microseconds, and are thus suitable for practical implementation in
+networks with heterogeneously delayed information.

@@ -1,0 +1,22 @@
+Lipschitz extensions were recently proposed as a tool for designing node
+differentially private algorithms. However, efficiently computable Lipschitz
+extensions were known only for 1-dimensional functions (that is, functions that
+output a single real value). In this paper, we study efficiently computable
+Lipschitz extensions for multi-dimensional (that is, vector-valued) functions
+on graphs. We show that, unlike for 1-dimensional functions, Lipschitz
+extensions of higher-dimensional functions on graphs do not always exist, even
+with a non-unit stretch. We design Lipschitz extensions with small stretch for
+the sorted degree list and for the degree distribution of a graph. Crucially,
+our extensions are efficiently computable.
+  We also develop new tools for employing Lipschitz extensions in the design of
+differentially private algorithms. Specifically, we generalize the exponential
+mechanism, a widely used tool in data privacy. The exponential mechanism is
+given a collection of score functions that map datasets to real values. It
+attempts to return the name of the function with nearly minimum value on the
+data set. Our generalized exponential mechanism provides better accuracy when
+the sensitivity of an optimal score function is much smaller than the maximum
+sensitivity of score functions.
+  We use our Lipschitz extension and the generalized exponential mechanism to
+design a node-differentially private algorithm for releasing an approximation
+to the degree distribution of a graph. Our algorithm is much more accurate than
+algorithms from previous work.

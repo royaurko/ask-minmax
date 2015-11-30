@@ -1,0 +1,16 @@
+Conventional block-based multicast authentication schemes overlook the
+heterogeneity of receivers by letting the sender choose the block size, divide
+a multicast stream into blocks, associate each block with a signature, and
+spread the e?ect of the signature across all the packets in the block through
+hash graphs or coding algorithms. The correlation among packets makes them
+vulnerable to packet loss, which is inherent in the Internet and wireless
+networks. Moreover, the lack of Denial of Service (DoS) resilience renders most
+of them vulnerable to packet injection in hostile environments. In this paper,
+we propose a novel multicast authentication protocol, namely MABS, including
+two schemes. The basic scheme (MABS-B) eliminates the correlation among packets
+and thus provides the perfect resilience to packet loss, and it is also e?cient
+in terms of latency, computation, and communication overhead due to an e?cient
+cryptographic primitive called batch signature, which supports the
+authentication of any number of packets simultaneously.so we discuss their
+comparisons and performance evaluation of Packet Loss, Comparisons over Lossy
+Channels, Comparisons of Signature Schemes, computationational overheads etc.

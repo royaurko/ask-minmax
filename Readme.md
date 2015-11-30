@@ -7,6 +7,12 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
  * Ask-minmax associates a **prior** to every problem and question in the database. 
  * The prior of a problem is proportional to the number of times there is a query intended for that particular
   problem. 
+ * At the beginning of every iteration, it asks the user for a human readable [summary](summary.md).
+ * (Document vectors)[https://cs.stanford.edu/~quocle/paragraph_vector.pdf] have been trained on 
+  abstracts downloaded from arxiv and google-scholar.
+ * A softmax classifier is built on top of these document vectors to output a probability distribution on
+ the problems.
+ * The prior thus reflects this probability distribution together with the frequency. 
  * The prior of a question reflects the **gain in information** by asking the question  - in other words
  it is inversely proportional to the **expected conditional entropy** of the distribution of problem posteriors
  conditioned on the response to this question.
@@ -28,7 +34,6 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
  * Comes with a small default [database](database/db)
  
 ## Prerequisites: 
-The last three dependencies are due to Google's word2vec and are still a work in progress.
 
  * Python 3
  * A running [Mongodb](https://www.mongodb.org/) server 
@@ -46,7 +51,7 @@ The last three dependencies are due to Google's word2vec and are still a work in
 Clone the repository and use
 
 ```shell
-sudo python setup.py install
+sudo python3 setup.py install
 ```
 
 To create an instance of the Expert system first import the `Expert` class and
@@ -61,17 +66,18 @@ It will ask you to either import stuff from an existing database or it will give
 you the option to create one of your own. Finally to run the expert system use
 
 ```python
-expert.run()
+expert.run(data_set, doc2vec_model_path, classifier_path)
 ```
+where data_set 
 
-## Fun with Doc2Vec
+## Doc2Vec model examples
 
 You can train your own word2vec model on your domain specific dataset. In this case we train it on
 abstracts downloaded from `arxiv`. Here's a fun example in IPython:
 
 ```python
-In [1]: from gensim.models import Word2Vec
-In [2]: model = Word2Vec.load('model/model_175930')
+In [1]: from gensim.models import Doc2Vec
+In [2]: model = Doc2Vec.load('model/[Insert model name]')
 In [3]: model.doesnt_match(['bipartite', 'non-bipartite', 'stable', 'matching', 'scheduling'])
 Out[3]: 'scheduling'
 In [4]: model.doesnt_match(['facility location', 'minimum cut', 'maximum cut', 'sparsest cut'])

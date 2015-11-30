@@ -1,0 +1,16 @@
+Given a program and a time deadline, does the program finish before the
+deadline when executed on a given platform? With the requirement to produce a
+test case when such a violation can occur, we refer to this problem as the
+worst-case execution-time testing (WCETT) problem.
+  In this paper, we present an approach for solving the WCETT problem for
+loop-free programs by timing the execution of a program on a small number of
+carefully calculated inputs. We then create a sequence of integer linear
+programs the solutions of which encode the best timing model consistent with
+the measurements. By solving the programs we can find the worst-case input as
+well as estimate execution time of any other input. Our solution is more
+accurate than previous approaches and, unlikely previous work, by increasing
+the number of measurements we can produce WCETT bounds up to any desired
+accuracy.
+  Timing of a program depends on the properties of the platform it executes on.
+We further show how our approach can be used to quantify the timing
+repeatability of the underlying platform.

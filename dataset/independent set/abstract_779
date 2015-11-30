@@ -1,0 +1,20 @@
+Perhaps the best known kernelization result is the kernel of size 335k for
+the Planar Dominating Set problem by Alber et al. [JACM 2004], later improved
+to 67k by Chen et al. [SICOMP 2007]. This result means roughly, that the
+problem of finding the smallest dominating set in a planar graph is easy when
+the optimal solution is small. On the other hand, it is known that Planar
+Dominating Set parameterized by k'=|V|-k (also known as Planar Nonblocker) has
+a kernel of size 2k'. This means that Planar Dominating Set is easy when the
+optimal solution is very large. We improve the kernel for Planar Nonblocker to
+7/4k'. This also implies that Planar Dominating Set has no kernel of size at
+most (7/3-epsilon)k, for any epsilon>0, unless P=NP. This improves the previous
+lower bound of (2-epsilon)k of Chen et al. Both of these results immediately
+generalize to H-minor free graphs (without changing the constants). In our
+proof of the bound on the kernel size we use a variant of the discharging
+method (used e.g. in the proof of the four color theorem). We give some
+arguments that this method is natural in the context of kernelization and we
+hope it will be applied to get improved kernel size bounds for other problems
+as well. As a by-product we show a result which might be of independent
+interest: every n-vertex graph with no isolated vertices and such that every
+pair of degree 1 vertices is at distance at least 5 and every pair of degree 2
+vertices is at distance at least 2 has a dominating set of size at most 3/7n.

@@ -1,0 +1,25 @@
+We consider a strategic variant of the facility location problem. We would
+like to locate a facility on a closed interval. There are n agents located on
+that interval, divided into two types: type 1 agents, who wish for the facility
+to be as far from them as possible, and type 2 agents, who wish for the
+facility to be as close to them as possible. Our goal is to maximize a form of
+aggregated social benefit: maxisum- the sum of the agents' utilities, or the
+egalitarian objective- the minimal agent utility. The strategic aspect of the
+problem is that the agents' locations are not known to us, but rather reported
+to us by the agents- an agent might misreport his location in an attempt to
+move the facility away from or towards to his true location. We therefore
+require the facility-locating mechanism to be strategyproof, namely that
+reporting truthfully is a dominant strategy for each agent. As simply
+maximizing the social benefit is generally not strategyproof, our goal is to
+design strategyproof mechanisms with good approximation ratios.
+  For the maxisum objective, in the deterministic setting, we provide a
+best-possible 3- approximate strategyproof mechanism; in the randomized
+setting, we provide a 23/13- approximate strategyproof mechanism and a lower
+bound of \frac{2}{\sqrt{3}}. For the egalitarian objective, we provide a lower
+bound of 3/2 in the randomized setting, and show that no bounded approximation
+ratio is attainable in the deterministic setting. To obtain our deterministic
+lower bounds, we characterize all deterministic strategyproof mechanisms when
+all agents are of type 1. Finally, we consider a generalized model that allows
+an agent to control more than one location, and provide best-possible 3- and
+3/2- approximate strategyproof mechanisms for maxisum, in the deterministic and
+randomized settings respectively, when only type 1 agents are present.

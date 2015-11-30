@@ -1,0 +1,19 @@
+We study how to spread $k$ tokens of information to every node on an $n$-node
+dynamic network, the edges of which are changing at each round. This basic {\em
+gossip problem} can be completed in $O(n + k)$ rounds in any static network,
+and determining its complexity in dynamic networks is central to understanding
+the algorithmic limits and capabilities of various dynamic network models. Our
+focus is on token-forwarding algorithms, which do not manipulate tokens in any
+way other than storing, copying and forwarding them.
+  We first consider the {\em strongly adaptive} adversary model where in each
+round, each node first chooses a token to broadcast to all its neighbors
+(without knowing who they are), and then an adversary chooses an arbitrary
+connected communication network for that round with the knowledge of the tokens
+chosen by each node. We show that $\Omega(nk/\log n + n)$ rounds are needed for
+any randomized (centralized or distributed) token-forwarding algorithm to
+disseminate the $k$ tokens, thus resolving an open problem raised
+in~\cite{kuhn+lo:dynamic}. The bound applies to a wide class of initial token
+distributions, including those in which each token is held by exactly one node
+and {\em well-mixed} ones in which each node has each token independently with
+a constant probability.
+  We also show several upper bounds in varying models.

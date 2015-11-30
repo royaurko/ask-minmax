@@ -1,0 +1,24 @@
+We consider the distributed control of a network of heterogeneous agents with
+double integrator dynamics to maintain a rigid formation in 1D Euclidean space.
+The control signal at a vehicle is allowed to use relative position and
+velocity with its two nearest neighbors. Most of the work on this problem,
+though extensive, has been limited to homogeneous networks, in which agents
+have identical masses and control gains, and symmetric control, in which
+information from front and back neighbors are weighted equally. We examine the
+effect of heterogeneity and asymmetry on the closed loop stability margin,
+which is measured by the real part of the least stable pole of the closed-loop
+system. By using a PDE (partial differential equation) approximation in the
+limit of large number of vehicles, we show that heterogeneity has little effect
+while asymmetry has a significant effect on the stability margin. When control
+is symmetric, the stability margin decays to 0 as $O(1/N^2)$, where $N$ is the
+number of agents, even when the agents are heterogeneous in their masses and
+control gains. In contrast, we show that arbitrarily small amount of asymmetry
+in the velocity feedback gains can improve the decay of the stability margin to
+$O(1/N)$. Poor design of such asymmetry makes the closed loop unstable for
+sufficiently large $N$. With equal amount of asymmetry in both position and
+velocity feedback gains, the closed loop is stable for arbitrary $N$ and the
+stability margin scaling trend can also be improved to $O(1/N)$, but the
+sensitivity to disturbance becomes worse. Effect of asymmetry in position
+feedback gains alone and unequal amount of asymmetry in position and velocity
+feedback are open problems. Numerical computations are provided to corroborate
+the analysis.

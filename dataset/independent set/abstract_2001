@@ -1,0 +1,26 @@
+Most recent progress in understanding the dynamical evolution of star
+clusters relies on direct N-body simulations. Owing to the computational
+demands, and the desire to model more complex and more massive star clusters,
+hardware calculational accelerators, such as GRAPE special-purpose hardware or,
+more recently, GPUs (i.e. graphics cards), are generally utilised. In addition,
+simulations can be accelerated by adjusting parameters determining the
+calculation accuracy (i.e. changing the internal simulation time step used for
+each star).
+  We extend our previous thorough comparison (Anders et al. 2009) of basic
+quantities as derived from simulations performed either with STARLAB/KIRA or
+NBODY6. Here we focus on differences arising from using different hardware
+accelerations (including the increasingly popular graphic card
+accelerations/GPUs) and different calculation accuracy settings.
+  We use the large number of star cluster models (for a fixed stellar mass
+function, without stellar/binary evolution, primordial binaries, external tidal
+fields etc) already used in the previous paper, evolve them with STARLAB/KIRA
+(and NBODY6, where required), analyse them in a consistent way and compare the
+averaged results quantitatively. For this quantitative comparison, we apply the
+bootstrap algorithm for functional dependencies developed in our previous
+study.
+  In general we find very high comparability of the simulation results,
+independent of the used computer hardware (including the hardware accelerators)
+and the used N-body code. For the tested accuracy settings we find that for
+reduced accuracy (i.e. time step at least a factor 2.5 larger than the standard
+setting) most simulation results deviate significantly from the results using
+standard settings. The remaining deviations are comprehensible and explicable.

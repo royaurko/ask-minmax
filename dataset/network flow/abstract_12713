@@ -1,0 +1,24 @@
+Physical-layer Network Coding (PNC) can significantly improve the throughput
+of wireless two way relay channel (TWRC) by allowing the two end nodes to
+transmit messages to the relay simultaneously. To achieve reliable
+communication, channel coding could be applied on top of PNC. This paper
+investigates link-by-link channel-coded PNC, in which a critical process at the
+relay is to transform the superimposed channel-coded packets received from the
+two end nodes plus noise, Y3=X1+X2+W3, to the network-coded combination of the
+source packets, S1 XOR S2 . This is in distinct to the traditional
+multiple-access problem, in which the goal is to obtain S1 and S2 separately.
+The transformation from Y3 to (S1 XOR S2) is referred to as the
+Channel-decoding-Network-Coding process (CNC) in that it involves both channel
+decoding and network coding operations. A contribution of this paper is the
+insight that in designing CNC, we should first (i) channel-decode Y3 to the
+superimposed source symbols S1+S2 before (ii) transforming S1+S2 to the
+network-coded packets (S1 XOR S2) . Compared with previously proposed
+strategies for CNC, this strategy reduces the channel-coding network-coding
+mismatch. It is not obvious, however, that an efficient decoder for step (i)
+exists. A second contribution of this paper is to provide an explicit
+construction of such a decoder based on the use of the Repeat Accumulate (RA)
+code. Specifically, we redesign the belief propagation algorithm of the RA code
+for traditional point-to-point channel to suit the need of the PNC
+multiple-access channel. Simulation results show that our new scheme
+outperforms the previously proposed schemes significantly in terms of BER
+without added complexity.

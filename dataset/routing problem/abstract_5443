@@ -1,0 +1,20 @@
+For the vast majority of local graph problems standard dynamic programming
+techniques give c^tw V^O(1) algorithms, where tw is the treewidth of the input
+graph. On the other hand, for problems with a global requirement (usually
+connectivity) the best-known algorithms were naive dynamic programming schemes
+running in tw^O(tw) V^O(1) time.
+  We breach this gap by introducing a technique we dubbed Cut&Count that allows
+to produce c^tw V^O(1) Monte Carlo algorithms for most connectivity-type
+problems, including Hamiltonian Path, Feedback Vertex Set and Connected
+Dominating Set, consequently answering the question raised by Lokshtanov, Marx
+and Saurabh [SODA'11] in a surprising way. We also show that (under reasonable
+complexity assumptions) the gap cannot be breached for some problems for which
+Cut&Count does not work, like CYCLE PACKING.
+  The constant c we obtain is in all cases small (at most 4 for undirected
+problems and at most 6 for directed ones), and in several cases we are able to
+show that improving those constants would cause the Strong Exponential Time
+Hypothesis to fail.
+  Our results have numerous consequences in various fields, like FPT
+algorithms, exact and approximate algorithms on planar and H-minor-free graphs
+and algorithms on graphs of bounded degree. In all these fields we are able to
+improve the best-known results for some problems.

@@ -1,0 +1,15 @@
+A significant amount of recent research work has addressed the problem of
+solving various data management problems in the cloud. The major algorithmic
+challenges in map-reduce computations involve balancing a multitude of factors
+such as the number of machines available for mappers/reducers, their memory
+requirements, and communication cost (total amount of data sent from mappers to
+reducers). Most past work provides custom solutions to specific problems, e.g.,
+performing fuzzy joins in map-reduce, clustering, graph analyses, and so on.
+While some problems are amenable to very efficient map-reduce algorithms, some
+other problems do not lend themselves to a natural distribution, and have
+provable lower bounds. Clearly, the ease of "map-reducability" is closely
+related to whether the problem can be partitioned into independent pieces,
+which are distributed across mappers/reducers. What makes a problem
+distributable? Can we characterize general properties of problems that
+determine how easy or hard it is to find efficient map-reduce algorithms?
+  This is a vision paper that attempts to answer the questions described above.

@@ -1,0 +1,12 @@
+The Boolean satisfiability problem (SAT) can be solved efficiently with
+variants of the DPLL algorithm. For industrial SAT problems, DPLL with conflict
+analysis dependent dynamic decision heuristics has proved to be particularly
+efficient, e.g. in Chaff. In this work, algorithms that initialize the variable
+activity values in the solver MiniSAT v1.14 by analyzing the CNF are evolved
+using genetic programming (GP), with the goal to reduce the total number of
+conflicts of the search and the solving time. The effect of using initial
+activities other than zero is examined by initializing with random numbers. The
+possibility of countering the detrimental effects of reordering the CNF with
+improved initialization is investigated. The best result found (with validation
+testing on further problems) was used in the solver Actin, which was submitted
+to SAT-Race 2006.

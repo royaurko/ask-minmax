@@ -1,0 +1,15 @@
+Consider a stationary agent A at an unknown location and a mobile agent
+  B that must move to the vicinity of and then circumnavigate A at a prescribed
+distance from A. In doing so, B can only measure its distance from A, and knows
+its own position in some reference frame. This paper considers this problem,
+which has applications to surveillance or maintaining an orbit. In many of
+these applications it is difficult for B to directly sense the location of A,
+e.g. when all that B can sense is the intensity of a signal emitted by A. This
+intensity does, however provide a measure of the distance. We propose a
+nonlinear periodic continuous time control law that achieves the objective.
+Fundamentally, B must exploit its motion to estimate the location of A, and use
+its best instantaneous estimate of where A resides, to move itself to achieve
+the ultimate circumnavigation objective. The control law we propose marries
+these dual goals and is globally exponentially convergent. We show through
+simulations that it also permits B to approximately achieve this objective when
+A experiences slow, persistent and potentially nontrivial drift.

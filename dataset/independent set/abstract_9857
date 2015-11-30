@@ -1,0 +1,15 @@
+In this paper we present closed-form solutions for efficiently updating the
+principal components of a set of $n$ points, when $m$ points are added or
+deleted from the point set. For both operations performed on a discrete point
+set in $\mathbb{R}^d$, we can compute the new principal components in $O(m)$
+time for fixed $d$. This is a significant improvement over the commonly used
+approach of recomputing the principal components from scratch, which takes
+$O(n+m)$ time. An important application of the above result is the dynamical
+computation of bounding boxes based on principal component analysis. PCA
+bounding boxes are very often used in many fields, among others in computer
+graphics for collision detection and fast rendering. We have implemented and
+evaluated few algorithms for computing dynamically PCA bounding boxes in
+$\mathbb{R}^3$. In addition, we present closed-form solutions for computing
+dynamically principal components of continuous point sets in $\mathbb{R}^2$ and
+$\mathbb{R}^3$. In both cases, discrete and continuous, to compute the new
+principal components, no additional data structures or storage are needed.

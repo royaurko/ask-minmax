@@ -1,0 +1,14 @@
+This paper constructs an ensemble-based sampling smoother for
+four-dimensional data assimilation using a Hybrid/Hamiltonian Monte-Carlo
+approach. The smoother samples efficiently from the posterior probability
+density of the solution at the initial time. Unlike the well-known ensemble
+Kalman smoother, which is optimal only in the linear Gaussian case, the
+proposed methodology naturally accommodates non-Gaussian errors and non-linear
+model dynamics and observation operators. Unlike the four-dimensional
+variational met\-hod, which only finds a mode of the posterior distribution,
+the smoother provides an estimate of the posterior uncertainty. One can use the
+ensemble mean as the minimum variance estimate of the state, or can use the
+ensemble in conjunction with the variational approach to estimate the
+background errors for subsequent assimilation windows. Numerical results
+demonstrate the advantages of the proposed method compared to the traditional
+variational and ensemble-based smoothing methods.

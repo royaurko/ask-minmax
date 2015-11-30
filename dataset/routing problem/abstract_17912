@@ -1,0 +1,16 @@
+We describe a convex programming framework for pose estimation in 2D/3D
+point-set registration with unknown point correspondences. We give two
+mixed-integer nonlinear program (MINP) formulations of the 2D/3D registration
+problem when there are multiple 2D images, and propose convex relaxations for
+both of the MINPs to semidefinite programs (SDP) that can be solved efficiently
+by interior point methods. Our approach to the 2D/3D registration problem is
+non-iterative in nature as we jointly solve for pose and correspondence.
+Furthermore, these convex programs can readily incorporate feature descriptors
+of points to enhance registration results. We prove that the convex programs
+exactly recover the solution to the original nonconvex 2D/3D registration
+problem under noiseless condition. We apply these formulations to the
+registration of 3D models of coronary vessels to their 2D projections obtained
+from multiple intra-operative fluoroscopic images. For this application, we
+experimentally corroborate the exact recovery property in the absence of noise
+and further demonstrate robustness of the convex programs in the presence of
+noise.

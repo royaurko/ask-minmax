@@ -1,0 +1,22 @@
+Fast algorithms for the computation of $N$-body problems can be broadly
+classified into mesh-based interpolation methods, and hierarchical or
+multiresolution methods. To this last class belongs the well-known fast
+multipole method (FMM), which offers O(N) complexity. This paper presents an
+extensible parallel library for $N$-body interactions utilizing the FMM
+algorithm, built on the framework of PETSc. A prominent feature of this library
+is that it is designed to be extensible, with a view to unifying efforts
+involving many algorithms based on the same principles as the FMM and enabling
+easy development of scientific application codes. The paper also details an
+exhaustive model for the computation of tree-based $N$-body algorithms in
+parallel, including both work estimates and communications estimates. With this
+model, we are able to implement a method to provide automatic, a priori load
+balancing of the parallel execution, achieving optimal distribution of the
+computational work among processors and minimal inter-processor communications.
+Using a client application that performs the calculation of velocity induced by
+$N$ vortex particles, ample verification and testing of the library was
+performed. Strong scaling results are presented with close to a million
+particles in up to 64 processors, including both speedup and parallel
+efficiency. The library is currently able to achieve over 85% parallel
+efficiency for 64 processors. The software library is open source under the
+PETSc license; this guarantees the maximum impact to the scientific community
+and encourages peer-based collaboration for the extensions and applications.

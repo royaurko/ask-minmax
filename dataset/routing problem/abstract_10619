@@ -1,0 +1,20 @@
+For digraphs $G$ and $H$, a homomorphism of $G$ to $H$ is a mapping $f:\
+V(G)\dom V(H)$ such that $uv\in A(G)$ implies $f(u)f(v)\in A(H)$. If moreover
+each vertex $u \in V(G)$ is associated with costs $c_i(u), i \in V(H)$, then
+the cost of a homomorphism $f$ is $\sum_{u\in V(G)}c_{f(u)}(u)$. For each fixed
+digraph $H$, the {\em minimum cost homomorphism problem} for $H$, denoted
+MinHOM($H$), is the following problem. Given an input digraph $G$, together
+with costs $c_i(u)$, $u\in V(G)$, $i\in V(H)$, and an integer $k$, decide if
+$G$ admits a homomorphism to $H$ of cost not exceeding $k$. We focus on the
+minimum cost homomorphism problem for {\em reflexive} digraphs $H$ (every
+vertex of $H$ has a loop). It is known that the problem MinHOM($H$) is
+polynomial time solvable if the digraph $H$ has a {\em Min-Max ordering}, i.e.,
+if its vertices can be linearly ordered by $<$ so that $i<j, s<r$ and $ir, js
+\in A(H)$ imply that $is \in A(H)$ and $jr \in A(H)$. We give a forbidden
+induced subgraph characterization of reflexive digraphs with a Min-Max
+ordering; our characterization implies a polynomial time test for the existence
+of a Min-Max ordering. Using this characterization, we show that for a
+reflexive digraph $H$ which does not admit a Min-Max ordering, the minimum cost
+homomorphism problem is NP-complete. Thus we obtain a full dichotomy
+classification of the complexity of minimum cost homomorphism problems for
+reflexive digraphs.

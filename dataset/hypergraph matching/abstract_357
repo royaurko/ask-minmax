@@ -1,0 +1,15 @@
+The analysis of several algorithms and data structures can be framed as a
+peeling process on a random hypergraph: vertices with degree less than k are
+removed until there are no vertices of degree less than k left. The remaining
+hypergraph is known as the k-core. In this paper, we analyze parallel peeling
+processes, where in each round, all vertices of degree less than k are removed.
+It is known that, below a specific edge density threshold, the k-core is empty
+with high probability. We show that, with high probability, below this
+threshold, only (log log n)/log(k-1)(r-1) + O(1) rounds of peeling are needed
+to obtain the empty k-core for r-uniform hypergraphs. Interestingly, we show
+that above this threshold, Omega(log n) rounds of peeling are required to find
+the non-empty k-core. Since most algorithms and data structures aim to peel to
+an empty k-core, this asymmetry appears fortunate. We verify the theoretical
+results both with simulation and with a parallel implementation using graphics
+processing units (GPUs). Our implementation provides insights into how to
+structure parallel peeling algorithms for efficiency in practice.

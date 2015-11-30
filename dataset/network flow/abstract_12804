@@ -1,0 +1,26 @@
+Network communities represent mesoscopic structure for understanding the
+organization of real-world networks, where nodes often belong to multiple
+communities and form overlapping community structure in the network. Due to
+non-triviality in finding the exact boundary of such overlapping communities,
+this problem has become challenging, and therefore huge effort has been devoted
+to detect overlapping communities from the network.
+  In this paper, we present PVOC (Permanence based Vertex-replication algorithm
+for Overlapping Community detection), a two-stage framework to detect
+overlapping community structure. We build on a novel observation that
+non-overlapping community structure detected by a standard disjoint community
+detection algorithm from a network has high resemblance with its actual
+overlapping community structure, except the overlapping part. Based on this
+observation, we posit that there is perhaps no need of building yet another
+overlapping community finding algorithm; but one can efficiently manipulate the
+output of any existing disjoint community finding algorithm to obtain the
+required overlapping structure. We propose a new post-processing technique that
+by combining with any existing disjoint community detection algorithm, can
+suitably process each vertex using a new vertex-based metric, called
+permanence, and thereby finds out overlapping candidates with their community
+memberships. Experimental results on both synthetic and large real-world
+networks show that PVOC significantly outperforms six state-of-the-art
+overlapping community detection algorithms in terms of high similarity of the
+output with the ground-truth structure. Thus our framework not only finds
+meaningful overlapping communities from the network, but also allows us to put
+an end to the constant effort of building yet another overlapping community
+detection algorithm.

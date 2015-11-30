@@ -1,0 +1,18 @@
+We consider the fully dynamic bin packing problem, where items arrive and
+depart in an online fashion and repacking of previously packed items is
+allowed. The goal is, of course, to minimize both the number of bins used as
+well as the amount of repacking. A recently introduced way of measuring the
+repacking costs at each timestep is the migration factor, defined as the total
+size of repacked items divided by the size of an arriving or departing item.
+Concerning the trade-off between number of bins and migration factor, if we
+wish to achieve an asymptotic competitive ration of $1 + \epsilon$ for the
+number of bins, a relatively simple argument proves a lower bound of
+$\Omega(\frac{1}{\epsilon})$ for the migration factor. We establish a nearly
+matching upper bound of $O(\frac{1}{\epsilon}^4 \log \frac{1}{\epsilon})$ using
+a new dynamic rounding technique and new ideas to handle small items in a
+dynamic setting such that no amortization is needed. The running time of our
+algorithm is polynomial in the number of items $n$ and in $\frac{1}{\epsilon}$.
+The previous best trade-off was for an asymptotic competitive ratio of
+$\frac{5}{4}$ for the bins (rather than $1+\epsilon$) and needed an amortized
+number of $O(\log n)$ repackings (while in our scheme the number of repackings
+is independent of $n$ and non-amortized).

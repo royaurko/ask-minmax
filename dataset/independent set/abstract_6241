@@ -1,0 +1,22 @@
+Existing plan synthesis approaches in artificial intelligence fall into two
+categories -- domain independent and domain dependent. The domain independent
+approaches are applicable across a variety of domains, but may not be very
+efficient in any one given domain. The domain dependent approaches need to be
+(re)designed for each domain separately, but can be very efficient in the
+domain for which they are designed. One enticing alternative to these
+approaches is to automatically synthesize domain independent planners given the
+knowledge about the domain and the theory of planning. In this paper, we
+investigate the feasibility of using existing automated software synthesis
+tools to support such synthesis. Specifically, we describe an architecture
+called CLAY in which the Kestrel Interactive Development System (KIDS) is used
+to derive a domain-customized planner through a semi-automatic combination of a
+declarative theory of planning, and the declarative control knowledge specific
+to a given domain, to semi-automatically combine them to derive
+domain-customized planners. We discuss what it means to write a declarative
+theory of planning and control knowledge for KIDS, and illustrate our approach
+by generating a class of domain-specific planners using state space
+refinements. Our experiments show that the synthesized planners can outperform
+classical refinement planners (implemented as instantiations of UCP,
+Kambhampati & Srivastava, 1995), using the same control knowledge. We will
+contrast the costs and benefits of the synthesis approach with conventional
+methods for customizing domain independent planners.

@@ -1,0 +1,21 @@
+In cognitive radio networks, rendezvous is a fundamental operation by which
+two cognitive users establish a communication link on a commonly-available
+channel for communications. Some existing rendezvous algorithms can guarantee
+that rendezvous can be completed within finite time and they generate
+channel-hopping (CH) sequences based on the whole channel set. However, some
+channels may not be available (e.g., they are being used by the licensed users)
+and these existing algorithms would randomly replace the unavailable channels
+in the CH sequence. This random replacement is not effective, especially when
+the number of unavailable channels is large. In this paper, we design a new
+rendezvous algorithm that attempts rendezvous on the available channels only
+for faster rendezvous. This new algorithm, called Interleaved Sequences based
+on Available Channel set (ISAC), constructs an odd sub-sequence and an even
+sub-sequence and interleaves these two sub-sequences to compose a CH sequence.
+We prove that ISAC provides guaranteed rendezvous (i.e., rendezvous can be
+achieved within finite time). We derive the upper bound on the maximum
+time-to-rendezvous (MTTR) to be O(m) (m is not greater than Q) under the
+symmetric model and O(mn) (n is not greater than Q) under the asymmetric model,
+where m and n are the number of available channels of two users and Q is the
+total number of channels (i.e., all potentially available channels). We conduct
+extensive computer simulation to demonstrate that ISAC gives significantly
+smaller MTTR than the existing algorithms.

@@ -1,0 +1,24 @@
+This thesis describes the theoretical and practical foundations of a system
+for the static analysis of XML processing languages. The system relies on a
+fixpoint temporal logic with converse, derived from the mu-calculus, where
+models are finite trees. This calculus is expressive enough to capture regular
+tree types along with multi-directional navigation in trees, while having a
+single exponential time complexity. Specifically the decidability of the logic
+is proved in time 2^O(n) where n is the size of the input formula.
+  Major XML concepts are linearly translated into the logic: XPath navigation
+and node selection semantics, and regular tree languages (which include DTDs
+and XML Schemas). Based on these embeddings, several problems of major
+importance in XML applications are reduced to satisfiability of the logic.
+These problems include XPath containment, emptiness, equivalence, overlap,
+coverage, in the presence or absence of regular tree type constraints, and the
+static type-checking of an annotated query.
+  The focus is then given to a sound and complete algorithm for deciding the
+logic, along with a detailed complexity analysis, and crucial implementation
+techniques for building an effective solver. Practical experiments using a full
+implementation of the system are presented. The system appears to be efficient
+in practice for several realistic scenarios.
+  The main application of this work is a new class of static analyzers for
+programming languages using both XPath expressions and XML type annotations
+(input and output). Such analyzers allow to ensure at compile-time valuable
+properties such as type-safety and optimizations, for safer and more efficient
+XML processing.

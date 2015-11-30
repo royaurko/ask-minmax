@@ -1,0 +1,16 @@
+We define a domain-specific language (DSL) to inductively assemble flow
+networks from small networks or modules to produce arbitrarily large ones, with
+interchangeable functionally-equivalent parts. Our small networks or modules
+are "small" only as the building blocks in this inductive definition (there is
+no limit on their size). Associated with our DSL is a type theory, a system of
+formal annotations to express desirable properties of flow networks together
+with rules that enforce them as invariants across their interfaces, i.e, the
+rules guarantee the properties are preserved as we build larger networks from
+smaller ones. A prerequisite for a type theory is a formal semantics, i.e, a
+rigorous definition of the entities that qualify as feasible flows through the
+networks, possibly restricted to satisfy additional efficiency or safety
+requirements. This can be carried out in one of two ways, as a denotational
+semantics or as an operational (or reduction) semantics; we choose the first in
+preference to the second, partly to avoid exponential-growth rewriting in the
+operational approach. We set up a typing system and prove its soundness for our
+DSL.

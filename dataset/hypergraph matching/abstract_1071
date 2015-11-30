@@ -1,0 +1,14 @@
+Orthogonal Matching Pursuit (OMP) has long been considered a powerful
+heuristic for attacking compressive sensing problems; however, its theoretical
+development is, unfortunately, somewhat lacking. This paper presents an
+improved Restricted Isometry Property (RIP) based performance guarantee for
+T-sparse signal reconstruction that asymptotically approaches the conjectured
+lower bound given in Davenport et al. We also further extend the
+state-of-the-art by deriving reconstruction error bounds for the case of
+general non-sparse signals subjected to measurement noise. We then generalize
+our results to the case of K-fold Orthogonal Matching Pursuit (KOMP). We finish
+by presenting an empirical analysis suggesting that OMP and KOMP outperform
+other compressive sensing algorithms in average case scenarios. This turns out
+to be quite surprising since RIP analysis (i.e. worst case scenario) suggests
+that these matching pursuits should perform roughly T^0.5 times worse than
+convex optimization, CoSAMP, and Iterative Thresholding.

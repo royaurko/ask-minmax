@@ -1,0 +1,16 @@
+I describe here the performance of a parallel treecode with individual
+particle timesteps. The code is based on the Barnes-Hut algorithm and runs
+cosmological N-body simulations on parallel machines with a distributed memory
+architecture using the MPI message-passing library. For a configuration with a
+constant number of particles per processor the scalability of the code was
+tested up to P=128 processors on an IBM SP4 machine. In the large $P$ limit the
+average CPU time per processor necessary for solving the gravitational
+interactions is $\sim 10 %$ higher than that expected from the ideal scaling
+relation. The processor domains are determined every large timestep according
+to a recursive orthogonal bisection, using a weighting scheme which takes into
+account the total particle computational load within the timestep. The results
+of the numerical tests show that the load balancing efficiency $L$ of the code
+is high ($>=90%$) up to P=32, and decreases to $L\sim 80%$ when P=128. In the
+latter case it is found that some aspects of the code performance are affected
+by machine hardware, while the proposed weighting scheme can achieve a load
+balance as high as $L\sim 90%$ even in the large $P$ limit.

@@ -1,0 +1,11 @@
+A formal mean square error expansion (MSE) is derived for Euler--Maruyama
+numerical solutions of stochastic differential equations (SDE). The error
+expansion is used to construct a pathwise a posteriori adaptive time stepping
+Euler--Maruyama method for numerical solutions of SDE, and the resulting method
+is incorporated into a multilevel Monte Carlo (MLMC) method for weak
+approximations of SDE. This gives an efficient MSE adaptive MLMC method for
+handling a number of low-regularity approximation problems. In low-regularity
+numerical example problems, the developed adaptive MLMC method is shown to
+outperform the uniform time stepping MLMC method by orders of magnitude,
+producing output whose error with high probability is bounded by TOL>0 at the
+near-optimal MLMC cost rate O(TOL^{-2}log(TOL)^4).

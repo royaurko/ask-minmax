@@ -1,0 +1,13 @@
+One of the most fundamental problems in wireless networks is to achieve high
+throughput. Fractional Connected Dominating Set (FCDS) Packings can achieve a
+throughput of ${\Theta}(k/\log n)$ messages for networks with node connectivity
+$k$, which is optimal regarding routing-based message transmission. FCDS were
+proposed by Censor-Hillel \emph{et al.} [SODA'14,PODC'14] and are a natural
+generalization to Connected Dominating Sets (CDS), allowing each node to
+participate with a fraction of its weight in multiple FCDS. Thus, $\Omega(k)$
+co-existing transmission backbones are established, taking full advantage of
+the networks connectivity. We propose a modified distributed algorithm that
+improves upon previous algorithms for $k\Delta \in o(\min\{\frac{n \log n}{k}
+,D,\sqrt{n \log n} \log^* n\}\log n)$, where $\Delta$ is the maximum node
+degree, $D$ the diameter and $n$ the number of nodes in the network. We achieve
+this by explicitly computing connections between tentative dominating sets.

@@ -1,0 +1,17 @@
+Montage is a portable software toolkit for constructing custom, science-grade
+mosaics by composing multiple astronomical images. The mosaics constructed by
+Montage preserve the astrometry (position) and photometry (intensity) of the
+sources in the input images. The mosaic to be constructed is specified by the
+user in terms of a set of parameters, including dataset and wavelength to be
+used, location and size on the sky, coordinate system and projection, and
+spatial sampling rate. Many astronomical datasets are massive, and are stored
+in distributed archives that are, in most cases, remote with respect to the
+available computational resources. Montage can be run on both single- and
+multi-processor computers, including clusters and grids. Standard grid tools
+are used to run Montage in the case where the data or computers used to
+construct a mosaic are located remotely on the Internet. This paper describes
+the architecture, algorithms, and usage of Montage as both a software toolkit
+and as a grid portal. Timing results are provided to show how Montage
+performance scales with number of processors on a cluster computer. In
+addition, we compare the performance of two methods of running Montage in
+parallel on a grid.

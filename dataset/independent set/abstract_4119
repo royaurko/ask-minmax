@@ -1,0 +1,19 @@
+Bayesian analyses are often performed using so-called noninformative priors,
+with a view to achieving objective inference about unknown parameters on which
+available data depends. Noninformative priors depend on the relationship of the
+data to the parameters over the sample space. Combining Bayesian updating -
+multiplying an existing posterior density for parameters being estimated by a
+likelihood function derived from independent new data that depend on those
+parameters and renormalizing - with use of noninformative priors gives rise to
+inconsistency where existing and new data depend on continuous parameters in
+different ways. In such cases, noninformative priors for inference from only
+the existing and from only the new data would differ, so Bayesian updating
+would give different final posterior densities depending on which set of data
+was used to derive an initial posterior and which was used to update that
+posterior. I propose a revised Bayesian updating method, which resolves this
+inconsistency by updating the prior as well as the likelihood function, and
+involves only a single application of Bayes' theorem. The revised method is
+also applicable where actual prior information as to parameter values exists
+and inference that objectively reflects the existing information as well as new
+data is sought. I demonstrate by numerical testing the probability-matching
+superiority of the proposed revised updating method, in two cases.

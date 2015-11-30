@@ -1,0 +1,26 @@
+A \emph{$t$-treewidth-modulator} of a graph $G$ is a set $X \subseteq V(G)$
+such that the treewidth of $G-X$ is at most some constant $t-1$. In this paper,
+we present a novel algorithm to compute a decomposition scheme for graphs $G$
+that come equipped with a $t$-treewidth-modulator. This decomposition, called a
+\emph{protrusion decomposition}, is the cornerstone in obtaining the following
+two main results.
+  We first show that any parameterized graph problem (with parameter $k$) that
+has \emph{finite integer index} and is \emph{treewidth-bounding} admits a
+linear kernel on $H$-topological-minor-free graphs, where $H$ is some arbitrary
+but fixed graph. A parameterized graph problem is called treewidth-bounding if
+all positive instances have a $t$-treewidth-modulator of size $O(k)$, for some
+constant $t$. This result partially extends previous meta-theorems on the
+existence of linear kernels on graphs of bounded genus [Bodlaender et al., FOCS
+2009] and $H$-minor-free graphs [Fomin et al., SODA 2010].
+  Our second application concerns the Planar-$\mathcal{F}$-Deletion problem.
+Let $\mathcal{F}$ be a fixed finite family of graphs containing at least one
+planar graph. Given an $n$-vertex graph $G$ and a non-negative integer $k$,
+Planar-$\mathcal{F}$-Deletion asks whether $G$ has a set $X\subseteq V(G)$ such
+that $|X|\leq k$ and $G-X$ is $H$-minor-free for every $H\in \mathcal{F}$. Very
+recently, an algorithm for Planar-$\mathcal{F}$-Deletion with running time
+$2^{O(k)} n \log^2 n$ (such an algorithm is called \emph{single-exponential})
+has been presented in [Fomin et al., FOCS 2012] under the condition that every
+graph in $\mathcal{F}$ is connected. Using our algorithm to construct
+protrusion decompositions as a building block, we get rid of this connectivity
+constraint and present an algorithm for the general
+Planar-$\mathcal{F}$-Deletion problem running in time $2^{O(k)} n^2$.

@@ -1,0 +1,17 @@
+The Integrated Computer Control System (ICCS) is based on a scalable software
+framework that is distributed over some 325 computers throughout the NIF
+facility. The framework provides templates and services at multiple levels of
+abstraction for the construction of software applications that communicate via
+CORBA (Common Object Request Broker Architecture). Various forms of
+object-oriented software design patterns are implemented as templates to be
+extended by application software. Developers extend the framework base classes
+to model the numerous physical control points, thereby sharing the
+functionality defined by the base classes. About 56,000 software objects each
+individually addressed through CORBA are to be created in the complete ICCS.
+Most objects have a persistent state that is initialized at system start-up and
+stored in a database. Additional framework services are provided by centralized
+server programs that implement events, alerts, reservations, message logging,
+database/file persistence, name services, and process management. The ICCS
+software framework approach allows for efficient construction of a software
+system that supports a large number of distributed control points representing
+a complex control application.

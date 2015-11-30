@@ -1,0 +1,19 @@
+Generic matrix multiplication (GEMM) and one-dimensional
+convolution/cross-correlation (CONV) kernels often constitute the bulk of the
+compute- and memory-intensive processing within image/audio recognition and
+matching systems. We propose a novel method to scale the energy and processing
+throughput of GEMM and CONV kernels for such error-tolerant multimedia
+applications by adjusting the precision of computation. Our technique employs
+linear projections to the input matrix or signal data during the top-level GEMM
+and CONV blocking and reordering. The GEMM and CONV kernel processing then uses
+the projected inputs and the results are accumulated to form the final outputs.
+Throughput and energy scaling takes place by changing the number of projections
+computed by each kernel, which in turn produces approximate results, i.e.
+changes the precision of the performed computation. Results derived from a
+voltage- and frequency-scaled ARM Cortex A15 processor running face recognition
+and music matching algorithms demonstrate that the proposed approach allows for
+280%~440% increase of processing throughput and 75%~80% decrease of energy
+consumption against optimized GEMM and CONV kernels without any impact in the
+obtained recognition or matching accuracy. Even higher gains can be obtained if
+one is willing to tolerate some reduction in the accuracy of the recognition
+and matching applications.

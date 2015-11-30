@@ -1,0 +1,15 @@
+This paper introduces a new sweeping preconditioner for the iterative
+solution of the variable coefficient Helmholtz equation in two and three
+dimensions. The algorithms follow the general structure of constructing an
+approximate $LDL^t$ factorization by eliminating the unknowns layer by layer
+starting from an absorbing layer or boundary condition. The central idea of
+this paper is to approximate the Schur complement matrices of the factorization
+using moving perfectly matched layers (PMLs) introduced in the interior of the
+domain. Applying each Schur complement matrix is equivalent to solving a
+quasi-1D problem with a banded LU factorization in the 2D case and to solving a
+quasi-2D problem with a multifrontal method in the 3D case. The resulting
+preconditioner has linear application cost and the preconditioned iterative
+solver converges in a number of iterations that is essentially indefinite of
+the number of unknowns or the frequency. Numerical results are presented in
+both two and three dimensions to demonstrate the efficiency of this new
+preconditioner.

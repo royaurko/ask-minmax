@@ -1,0 +1,23 @@
+We present a joint source-channel multiple description (JSC-MD) framework for
+resource-constrained network communications (e.g., sensor networks), in which
+one or many deprived encoders communicate a Markov source against bit errors
+and erasure errors to many heterogeneous decoders, some powerful and some
+deprived. To keep the encoder complexity at minimum, the source is coded into K
+descriptions by a simple multiple description quantizer (MDQ) with neither
+entropy nor channel coding. The code diversity of MDQ and the path diversity of
+the network are exploited by decoders to correct transmission errors and
+improve coding efficiency. A key design objective is resource scalability:
+powerful nodes in the network can perform JSC-MD distributed
+estimation/decoding under the criteria of maximum a posteriori probability
+(MAP) or minimum mean-square error (MMSE), while primitive nodes resort to
+simpler MD decoding, all working with the same MDQ code. The application of
+JSC-MD to distributed estimation of hidden Markov models in a sensor network is
+demonstrated. The proposed JSC-MD MAP estimator is an algorithm of the longest
+path in a weighted directed acyclic graph, while the JSC-MD MMSE decoder is an
+extension of the well-known forward-backward algorithm to multiple
+descriptions. Both algorithms simultaneously exploit the source memory, the
+redundancy of the fixed-rate MDQ, and the inter-description correlations. They
+outperform the existing hard-decision MDQ decoders by large margins (up to
+8dB). For Gaussian Markov sources, the complexity of JSC-MD distributed MAP
+sequence estimation can be made as low as that of typical single description
+Viterbi-type algorithms.

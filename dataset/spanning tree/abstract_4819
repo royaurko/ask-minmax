@@ -1,0 +1,17 @@
+The rates-across-sites assumption in phylogenetic inference posits that the
+rate matrix governing the Markovian evolution of a character on an edge of the
+putative phylogenetic tree is the product of a character-specific scale factor
+and a rate matrix that is particular to that edge. Thus, evolution follows
+basically the same process for all characters, except that it occurs faster for
+some characters than others. To allow estimation of tree topologies and edge
+lengths for such models, it is commonly assumed that the scale factors are not
+arbitrary unknown constants, but rather unobserved, independent, identically
+distributed draws from a member of some parametric family of distributions. A
+popular choice is the gamma family. We consider an example of a clock-like tree
+with three taxa, one unknown edge length, and a parametric family of scale
+factor distributions that contain the gamma family. This model has the property
+that, for a generic choice of unknown edge length and scale factor
+distribution, there is another edge length and scale factor distribution which
+generates data with exactly the same distribution, so that even with infinitely
+many data it will be typically impossible to make correct inferences about the
+unknown edge length.

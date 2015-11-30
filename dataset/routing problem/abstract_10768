@@ -1,0 +1,18 @@
+To advance our understanding of Quantum Cellular Automata in problem solving
+through parallel and distributed computing, this research quantized the density
+classification problem and adopted the Quantum Particle Automata (QPA) to solve
+the quantized problem. In order to solve this problem, the QPA needed a unitary
+operator to carry out the QPA evolution and a boundary partition to make the
+classification decisions. We designed a Genetic Algorithm (GA) to search for
+the unitary operators and the boundary partitions to classify the density of
+binary inputs with length 5. The GA was able to find more than one unitary
+operator that can transform the QPA in ways such that when the particle was
+measured, it was more likely to collapse to the basis states that were on the
+correct side of the boundary partition for the QPA to decide if the binary
+input had majority density 0 or majority density 1. We analyzed these solutions
+and found that the QPA evolution dynamic was driven by a particular parameter
+$\theta$ of the unitary operator: a small $\theta$ gave the particle small mass
+hence fast evolution while large $\theta$ had the opposite effect. While these
+results are encouraging, scaling these solutions for binary inputs of arbitrary
+length of $n$ requires additional analysis, which we will investigate in our
+future work.

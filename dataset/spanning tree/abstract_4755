@@ -1,0 +1,26 @@
+A crucial ingredient for numerically solving the 3D radiative transfer
+problem is the choice of the grid that discretizes the transfer medium. Many
+modern radiative transfer codes, whether using Monte Carlo or ray tracing
+techniques, are equipped with hierarchical octree-based grids to accommodate a
+wide dynamic range in densities. We critically investigate two different
+aspects of octree grids in the framework of Monte Carlo dust radiative
+transfer. Inspired by their common use in computer graphics applications, we
+test hierarchical k-d tree grids as an alternative for octree grids. On the
+other hand, we investigate which node subdivision-stopping criteria are optimal
+for constructing of hierarchical grids. We implemented a k-d tree grid in the
+3D radiative transfer code SKIRT and compared it with the previously
+implemented octree grid. We also considered three different node
+subdivision-stopping criteria (based on mass, optical depth, and density
+gradient thresholds). Based on a small suite of test models, we compared the
+efficiency and accuracy of the different grids, according to various quality
+metrics. For a given set of requirements, the k-d tree grids only require half
+the number of cells of the corresponding octree. Moreover, for the same number
+of grid cells, the k-d tree is characterized by higher discretization accuracy.
+Concerning the subdivision stopping criteria, we find that an optical depth
+criterion is not a useful alternative to the more standard mass threshold,
+since the resulting grids show a poor accuracy. Both criteria can be combined;
+however, in the optimal combination, for which we provide a simple approximate
+recipe, this can lead to a 20% reduction in the number of cells needed to reach
+a certain grid quality. An additional density gradient threshold criterion can
+be added that solves the problem of poorly resolving sharp edges and...
+(abridged).

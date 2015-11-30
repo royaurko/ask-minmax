@@ -1,0 +1,12 @@
+We present a simple and versatile formulation of grid-based graph
+representation problems as an integer linear program (ILP) and a corresponding
+SAT instance. In a grid-based representation vertices and edges correspond to
+axis-parallel boxes on an underlying integer grid; boxes can be further
+constrained in their shapes and interactions by additional problem-specific
+constraints. We describe a general d-dimensional model for grid representation
+problems. This model can be used to solve a variety of NP-hard graph problems,
+including pathwidth, bandwidth, optimum st-orientation, area-minimal (bar-k)
+visibility representation, boxicity-k graphs and others. We implemented
+SAT-models for all of the above problems and evaluated them on the Rome graphs
+collection. The experiments show that our model successfully solves NP-hard
+problems within few minutes on small to medium-size Rome graphs.

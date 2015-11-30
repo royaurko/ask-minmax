@@ -1,0 +1,13 @@
+In this paper we present a general, flexible framework for learning mappings
+from images to actions by interacting with the environment. The basic idea is
+to introduce a feature-based image classifier in front of a reinforcement
+learning algorithm. The classifier partitions the visual space according to the
+presence or absence of few highly informative local descriptors that are
+incrementally selected in a sequence of attempts to remove perceptual aliasing.
+We also address the problem of fighting overfitting in such a greedy algorithm.
+Finally, we show how high-level visual features can be generated when the power
+of local descriptors is insufficient for completely disambiguating the aliased
+states. This is done by building a hierarchy of composite features that consist
+of recursive spatial combinations of visual features. We demonstrate the
+efficacy of our algorithms by solving three visual navigation tasks and a
+visual version of the classical Car on the Hill control problem.

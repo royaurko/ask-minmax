@@ -1,0 +1,21 @@
+Reliable low-latency gravitational wave parameter estimation is essential to
+target limited electromagnetic followup facilities toward astrophysically
+interesting and electromagnetically relevant sources of gravitational waves. In
+this study, we examine the tradeoff between speed and accuracy. Specifically,
+we estimate the astrophysical relevance of systematic errors in the posterior
+parameter distributions derived using a fast-but-approximate waveform model,
+SpinTaylorF2 (STF2), in parameter estimation with lalinference_mcmc. Though
+efficient, the STF2 approximation to compact binary inspiral employs
+approximate kinematics (e.g., a single spin) and an approximate waveform (e.g.,
+frequency domain versus time domain). More broadly, using a large
+astrophysically-motivated population of generic compact binary merger signals,
+we report on the effectualness and limitations of this single-spin
+approximation as a method to infer parameters of generic compact binary
+sources. For most low-mass compact binary sources, we find that the STF2
+approximation estimates compact binary parameters with biases comparable to
+systematic uncertainties in the waveform. We illustrate by example the effect
+these systematic errors have on posterior probabilities most relevant to
+low-latency electromagnetic followup: whether the secondary is has a mass
+consistent with a neutron star; whether the masses, spins, and orbit are
+consistent with that neutron star's tidal disruption; and whether the binary's
+angular momentum axis is oriented along the line of sight.

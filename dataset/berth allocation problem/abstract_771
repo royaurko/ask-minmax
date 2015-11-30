@@ -1,0 +1,17 @@
+Traditional UNIX time-share schedulers attempt to be fair to all users by
+employing a round-robin style algorithm for allocating CPU time. Unfortunately,
+a loophole exists whereby the scheduler can be biased in favor of a greedy user
+running many short CPU-time processes. This loophole is not a defect but an
+intrinsic property of the round-robin scheduler that ensures responsiveness to
+the short CPU demands associated with multiple interactive users. A new
+generation of UNIX system resource management software constrains the scheduler
+to be equitable to all users regardless of the number of processes each may be
+running. This "fair-share" scheduling draws on the concept of pro rating
+resource "shares" across users and groups and then dynamically adjusting CPU
+usage to meet those share proportions. The simple notion of statically
+allocating these shares, however, belies the potential consequences for
+performance as measured by user response time and service level targets. We
+demonstrate this point by modeling several simple share allocation scenarios
+and analyzing the corresponding performance effects. A brief comparison of
+commercial system resource management implementations from HP, IBM, and SUN is
+also given.

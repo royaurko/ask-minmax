@@ -1,0 +1,23 @@
+Combining matching and regression for causal inference provides
+double-robustness in removing treatment effect estimation bias due to
+confounding variables. In most real-world applications, however, treatment and
+control populations are not large enough for matching to achieve perfect or
+near-perfect balance on all confounding variables and their
+nonlinear/interaction functions, leading to trade-offs. [this fact is
+independent of regression, so a bit disjointed from first sentence.]
+Furthermore, variance is as important of a contributor as bias towards total
+error in small samples, and must therefore be factored into the methodological
+decisions. In this paper, we develop a mathematical framework for quantifying
+the combined impact of matching and linear regression on bias and variance of
+treatment effect estimation. The framework includes expressions for bias and
+variance in a misspecified linear regression, theorems regarding impact of
+matching on bias and variance, and a constrained bias estimation approach for
+quantifying misspecification bias and combining it with variance to arrive at
+total error. Methodological decisions can thus be based on minimization of this
+total error, given the practitioner's assumption/belief about an intuitive
+parameter, which we call `omitted R-squared'. The proposed methodology excludes
+the outcome variable from analysis, thereby avoiding overfit creep and making
+it suitable for observational study designs. All core functions for bias and
+variance calculation, as well as diagnostic tools for bias-variance trade-off
+analysis, matching calibration, and power analysis are made available to
+researchers and practitioners through an open-source R library, MatchLinReg.

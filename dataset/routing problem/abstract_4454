@@ -1,0 +1,9 @@
+In the last decade, the power of the state-of-the-art SAT and Integer
+Programming solvers has dramatically increased. They implement many new
+techniques and heuristics and since any NP problem can be converted to SAT or
+ILP instance, we could take advantage of these techniques in general by
+converting the instance of NP problem to SAT formula or Integer program. A
+problem we consider, in this proof of concept, is finding a largest clique in a
+graph. We ran several experiments on large random graphs and compared 3
+approaches: Optimised backtrack solution, Translation to SAT and Translation to
+Integer program. The last one was the fastest one.

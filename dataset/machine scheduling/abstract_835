@@ -1,0 +1,13 @@
+In this paper the performance of INET's emulation mode is evaluated. In
+particular, the focus of the study is on the precision of the delay emulation.
+It is shown, that this precision is low in INET 2.6 (respectively a later
+version provided in the integration branch that fixed the crashes of 2.6 in
+emulation mode). Two errors in the implementation are identified and an
+alternative configuration for packet capturing is proposed. The performance
+tests are re-run with such a modified version of the real-time scheduler (which
+is now included in the recent INET 3.0 release) and it is shown that the
+responsiveness of the emulation mode and the precision of delay emulation are
+improved significantly. Finally, the negative impact of the modified capturing
+configuration is briefly analyzed. Packet loss in the capturing process has
+deteriorated but in fact is has already plagued the emulation mode of previous
+implementations and this topic clearly demands for further studies.

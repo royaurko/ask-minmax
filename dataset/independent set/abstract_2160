@@ -1,0 +1,19 @@
+Numerical linear algebra plays an important role in computer science. In this
+paper, we initiate the study of performing linear algebraic tasks while
+preserving privacy when the data is streamed online. Our main focus is the
+space requirement of the privacy-preserving data-structures. We give the first
+{\em sketch-based} algorithm for differential privacy. We give optimal, up to
+logarithmic factor, space data-structures that can compute low rank
+approximation, linear regression, and matrix multiplication, while preserving
+differential privacy with better additive error bounds compared to the known
+results. Notably, we match the best known space bound in the non-private
+setting by Kane and Nelson (J. ACM, 61(1):4).
+  Our mechanism for differentially private low-rank approximation {\em reuses}
+the random Gaussian matrix in a specific way to provide a single-pass
+mechanism. We prove that the resulting distribution also preserve differential
+privacy. This can be of independent interest. We do not make any assumptions,
+like singular value separation or normalized row assumption, as made in the
+earlier works. The mechanisms for matrix multiplication and linear regression
+can be seen as the private analogues of the known non-private algorithms. All
+our mechanisms, in the form presented, can also be computed in the distributed
+setting.

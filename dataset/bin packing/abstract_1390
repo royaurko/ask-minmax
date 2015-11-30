@@ -1,0 +1,18 @@
+Recent results by Chen et al. and Polyanskiy et al. explore using feedback to
+approach capacity with short blocklengths. This paper explores Chernoff
+bounding techniques to extend the rate-compatible sphere-packing (RCSP)
+analysis proposed by Chen et al. to scenarios involving numerous
+retransmissions and different step sizes in each incremental retransmission.
+Williamson et al. employ exact RCSP computations for up to six transmissions.
+However, exact RCSP computation with more than six retransmissions becomes
+unwieldy because of joint error probabilities involving numerous chi-squared
+distributions. This paper explores Chernoff approaches for upper and lower
+bounds to provide support for computations involving more than six
+transmissions.
+  We present two versions of upper and lower bounds for the two-transmission
+case. One of the versions is extended to the general case of $m$ transmissions
+where $m \geq 1$. Computing the general bounds requires minimization of
+exponential functions with the auxiliary parameters, but is less complex and
+more stable than multiple rounds of numerical integration. These bounds also
+provide a good estimate of the expected throughput and expected latency, which
+are useful for optimization purposes.

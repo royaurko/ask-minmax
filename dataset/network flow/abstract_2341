@@ -1,0 +1,24 @@
+We study a multi-player one-round game termed Stackelberg Network Pricing
+Game, in which a leader can set prices for a subset of $m$ priceable edges in a
+graph. The other edges have a fixed cost. Based on the leader's decision one or
+more followers optimize a polynomial-time solvable combinatorial minimization
+problem and choose a minimum cost solution satisfying their requirements based
+on the fixed costs and the leader's prices. The leader receives as revenue the
+total amount of prices paid by the followers for priceable edges in their
+solutions, and the problem is to find revenue maximizing prices. Our model
+extends several known pricing problems, including single-minded and unit-demand
+pricing, as well as Stackelberg pricing for certain follower problems like
+shortest path or minimum spanning tree. Our first main result is a tight
+analysis of a single-price algorithm for the single follower game, which
+provides a $(1+\epsilon) \log m$-approximation for any $\epsilon >0$. This can
+be extended to provide a $(1+\epsilon)(\log k + \log m)$-approximation for the
+general problem and $k$ followers. The latter result is essentially best
+possible, as the problem is shown to be hard to approximate within
+$\mathcal{O(\log^\epsilon k + \log^\epsilon m)$. If followers have demands, the
+single-price algorithm provides a $(1+\epsilon)m^2$-approximation, and the
+problem is hard to approximate within $\mathcal{O(m^\epsilon)$ for some
+$\epsilon >0$. Our second main result is a polynomial time algorithm for
+revenue maximization in the special case of Stackelberg bipartite vertex cover,
+which is based on non-trivial max-flow and LP-duality techniques. Our results
+can be extended to provide constant-factor approximations for any constant
+number of followers.

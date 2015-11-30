@@ -1,0 +1,18 @@
+In this work we consider how surface-adherent bacterial biofilm communities
+respond in flowing systems. We simulate the fluid-structure interaction and
+separation process using the immersed boundary method. In these simulations we
+model and simulate different density and viscosity values of the biofilm than
+that of the surrounding fluid. The simulation also includes breakable springs
+connecting the bacteria in the biofilm. This allows the inclusion of erosion
+and detachment into the simulation. We use the incompressible Navier-Stokes
+(N-S) equations to describe the motion of the flowing fluid. We discretize the
+fluid equations using finite differences and use a geometric multigrid method
+to solve the resulting equations at each time step. The use of multigrid is
+necessary because of the dramatically different densities and viscosities
+between the biofilm and the surrounding fluid. We investigate and simulate the
+model in both two and three dimensions.
+  Our method differs from previous attempts of using IBM for modeling
+biofilm/flow interactions in the following ways: the density and viscosity of
+the biofilm can differ from the surrounding fluid, and the Lagrangian node
+locations correspond to experimentally measured bacterial cell locations from
+3D images taken of Staphylococcus epidermidis in a biofilm.

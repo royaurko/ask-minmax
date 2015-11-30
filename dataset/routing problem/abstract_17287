@@ -1,0 +1,11 @@
+There is much interest in providing probabilistic semantics for defaults but
+most approaches seem to suffer from one of two problems: either they require
+numbers, a problem defaults were intended to avoid, or they generate peculiar
+side effects. Rather than provide semantics for defaults, we address the
+problem defaults were intended to solve: that of reasoning under uncertainty
+where numeric probability distributions are not available. We describe a
+non-numeric formalism called an inference graph based on standard probability
+theory, conditional independence and sentences of favouring where a favours b -
+favours(a, b) - p(a|b) > p(a). The formalism seems to handle the examples from
+the nonmonotonic literature. Most importantly, the sentences of our system can
+be verified by performing an appropriate experiment in the semantic domain.

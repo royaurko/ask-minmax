@@ -1,0 +1,14 @@
+It is common today to deploy complex software inside a virtual machine (VM).
+Snapshots provide rapid deployment, migration between hosts, dependability
+(fault tolerance), and security (insulating a guest VM from the host). Yet, for
+each virtual machine, the code for snapshots is laboriously developed on a
+per-VM basis. This work demonstrates a generic checkpoint-restart mechanism for
+virtual machines. The mechanism is based on a plugin on top of an unmodified
+user-space checkpoint-restart package, DMTCP. Checkpoint-restart is
+demonstrated for three virtual machines: Lguest, user-space QEMU, and KVM/QEMU.
+The plugins for Lguest and KVM/QEMU require just 200 lines of code. The Lguest
+kernel driver API is augmented by 40 lines of code. DMTCP checkpoints
+user-space QEMU without any new code. KVM/QEMU, user-space QEMU, and DMTCP need
+no modification. The design benefits from other DMTCP features and plugins.
+Experiments demonstrate checkpoint and restart in 0.2 seconds using forked
+checkpointing, mmap-based fast-restart, and incremental Btrfs-based snapshots.

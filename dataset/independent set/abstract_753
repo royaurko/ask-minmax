@@ -1,0 +1,16 @@
+K-Nearest neighbor classifier (k-NNC) is simple to use and has little design
+time like finding k values in k-nearest neighbor classifier, hence these are
+suitable to work with dynamically varying data-sets. There exists some
+fundamental improvements over the basic k-NNC, like weighted k-nearest
+neighbors classifier (where weights to nearest neighbors are given based on
+linear interpolation), using artificially generated training set called
+bootstrapped training set, etc. These improvements are orthogonal to space
+reduction and classification time reduction techniques, hence can be coupled
+with any of them. The paper proposes another improvement to the basic k-NNC
+where the weights to nearest neighbors are given based on Gaussian distribution
+(instead of linear interpolation as done in weighted k-NNC) which is also
+independent of any space reduction and classification time reduction technique.
+We formally show that our proposed method is closely related to non-parametric
+density estimation using a Gaussian kernel. We experimentally demonstrate using
+various standard data-sets that the proposed method is better than the existing
+ones in most cases.

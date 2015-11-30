@@ -1,0 +1,16 @@
+A line-broadcasting model in a connected graph $G=(V,E)$, $|V|=n$, is a model
+in which one vertex, called the {\it originator} of the broadcast holds a
+message that has to be transmitted to all vertices of the graph through
+placement of a series of calls over the graph. In this model, an informed
+vertex can transmit a message through a path of any length in a single time
+unit, as long as two transmissions do not use the same edge at the same time.
+Farley \cite{f} has shown that the process is completed within at most $\lceil
+\log_{2}n \rceil$ time units from any originator in a tree (and thus in any
+connected undirected graph). and that the cost of broadcasting one message from
+any vertex is at most $(n-1) \lceil \log_{2}n \rceil$.
+  In this paper, we present lower and upper bounds for the cost to broadcast
+one message in a complete $k-$tree, from any vertex using the line-broadcasting
+model. We prove that if $B(u)$ is the minimum cost to broadcast in a graph
+$G=(V,E)$ from a vertex $u \in V$ using the line-broadcasting model, then
+$(1+o(1))n \le B(u) \le (2+o(1))n$, where $u$ is any vertex in a complete
+$k$-tree. Furthermore, for certain conditions, $B(u) \le (2-o(1))n$.

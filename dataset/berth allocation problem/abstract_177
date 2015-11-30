@@ -1,0 +1,18 @@
+In xDSL systems, crosstalk can be separated into two categories, namely
+in-domain crosstalk and out-of-domain crosstalk. In-domain crosstalk is also
+refered to as self crosstalk. Out-of-domain crosstalk is crosstalk originating
+from outside the multi-pair system and is also denoted as external noise (alien
+crosstalk, radio frequency interference,...). While self crosstalk in itself
+can easily be canceled by a linear detector like the ZF detector, the presence
+of external noise requires a more advanced processing. Coordination between
+transmitters and receivers enables the self crosstalk and the external noise to
+be mitigated using MIMO signal processing, usually by means of a whitening
+filter and SVD. In this paper, we investigate the problem of finding the
+optimal power allocation in MIMO xDSL systems in the presence of self crosstalk
+and external noise. Optimal Tx/Rx structures and power allocation algorithms
+will be devised under practical limitations from xDSL systems, namely per-modem
+total power constraints and/or spectral mask constraints, leading to a
+generalized SVD-based transmission. Simulation results are given for bonded
+VDSL2 systems with external noise coming from ADSL2+ or VDSL2 disturbing lines,
+along with a comparison between algorithms with one-sided signal coordination
+either only at the transmit side or the receive side.

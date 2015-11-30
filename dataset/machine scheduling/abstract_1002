@@ -1,0 +1,34 @@
+Synthesis is a particularly challenging problem for concurrent programs. At
+the same time it is a very promising approach, since concurrent programs are
+difficult to get right, or to analyze with traditional verification techniques.
+This paper gives an introduction to distributed synthesis in the setting of
+Mazurkiewicz traces, and its applications to decentralized runtime monitoring.
+1 Context Modern computing systems are increasingly distributed and
+heterogeneous. Software needs to be able to exploit these advances, providing
+means for applications to be more performant. Traditional concurrent
+programming paradigms, as in Java, are based on threads, shared-memory, and
+locking mechanisms that guard access to common data. More recent paradigms like
+the reactive programming model of Erlang [4] and Scala [35,36] replace shared
+memory by asynchronous message passing, where sending a message is
+non-blocking. In all these concurrent frameworks, writing reliable software is
+a serious challenge. Programmers tend to think about code mostly in a
+sequential way, and it is hard to grasp all possible schedulings of events in a
+concurrent execution. For similar reasons, verification and analysis of
+concurrent programs is a difficult task. Testing, which is still the main
+method for error detection in software, has low coverage for concurrent
+programs. The reason is that bugs in such programs are difficult to reproduce:
+they may happen under very specific thread schedules and the likelihood of
+taking such corner-case schedules is very low. Automated verification, such as
+model-checking and other traditional exploration techniques, can handle very
+limited instances of concurrent programs, mostly because of the very large
+number of possible states and of possible interleavings of executions. Formal
+analysis of programs requires as a prerequisite a clean mathematical model for
+programs. Verification of sequential programs starts usually with an
+abstraction step -- reducing the value domains of variables to finite domains,
+viewing conditional branching as non-determinism, etc. Another major
+simplification consists in disallowing recursion. This leads to a very robust
+computational model, namely finite-state automata and regular languages.
+Regular languages of words (and trees) are particularly well understood
+notions. The deep connections between logic and automata revealed by the
+foundational work of B\"uchi, Rabin, and others, are the main ingredients in
+automata-based verification .

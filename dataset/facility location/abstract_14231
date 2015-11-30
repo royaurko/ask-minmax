@@ -1,0 +1,17 @@
+Commercial detection in news broadcast videos involves judicious selection of
+meaningful audio-visual feature combinations and efficient classifiers. And,
+this problem becomes much simpler if these combinations can be learned from the
+data. To this end, we propose an Multiple Kernel Learning based method for
+boosting successful kernel functions while ignoring the irrelevant ones. We
+adopt a intermediate fusion approach where, a SVM is trained with a weighted
+linear combination of different kernel functions instead of single kernel
+function. Each kernel function is characterized by a feature set and kernel
+type. We identify the feature sub-space locations of the prediction success of
+a particular classifier trained only with particular kernel function. We
+propose to estimate a weighing function using support vector regression (with
+RBF kernel) for each kernel function which has high values (near 1.0) where the
+classifier learned on kernel function succeeded and lower values (nearly 0.0)
+otherwise. Second contribution of this work is TV News Commercials Dataset of
+150 Hours of News videos. Classifier trained with our proposed scheme has
+outperformed the baseline methods on 6 of 8 benchmark dataset and our own TV
+commercials dataset.

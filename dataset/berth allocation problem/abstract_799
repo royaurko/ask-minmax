@@ -1,0 +1,19 @@
+QoS-aware networking applications such as real-time streaming and video
+surveillance systems require nearly fixed average end-to-end delay over long
+periods to communicate efficiently, although may tolerate some delay variations
+in short periods. This variability exhibits complex dynamics that makes rate
+control of such applications a formidable task. This paper addresses rate
+allocation for heterogeneous QoS-aware applications that preserves the
+long-term end-to-end delay constraint while, similar to Dynamic Network Utility
+Maximization (DNUM), strives to achieve the maximum network utility aggregated
+over a fixed time interval. Since capturing temporal dynamics in QoS
+requirements of sources is allowed in our system model, we incorporate a novel
+time-coupling constraint in which delay-sensitivity of sources is considered
+such that a certain end-to-end average delay for each source over a
+pre-specified time interval is satisfied. We propose DA-DNUM algorithm, as a
+dual-based solution, which allocates source rates for the next time interval in
+a distributed fashion, given the knowledge of network parameters in advance.
+Through numerical experiments, we show that DA-DNUM gains higher average link
+utilization and a wider range of feasible scenarios in comparison with the
+best, to our knowledge, rate control schemes that may guarantee such
+constraints on delay.

@@ -1,0 +1,11 @@
+We extend the well known bottleneck paths problem in two directions for
+directed unweighted (unit edge cost) graphs with positive real edge capacities.
+Firstly we narrow the problem domain and compute the bottleneck of the entire
+network in $O(n^{\omega}\log{n})$ time, where $O(n^{\omega})$ is the time taken
+to multiply two $n$-by-$n$ matrices over ring. Secondly we enlarge the domain
+and compute the shortest paths for all possible flow amounts. We present a
+combinatorial algorithm to solve the Single Source Shortest Paths for All Flows
+(SSSP-AF) problem in $O(mn)$ worst case time, followed by an algorithm to solve
+the All Pairs Shortest Paths for All Flows (APSP-AF) problem in
+$O(\sqrt{d}n^{(\omega+9)/4})$ time, where $d$ is the number of distinct edge
+capacities. We also discuss real life applications for these new problems.

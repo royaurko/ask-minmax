@@ -1,0 +1,26 @@
+The hypergraph duality problem DUAL is defined as follows: given two simple
+hypergraphs $\mathcal{G}$ and $\mathcal{H}$, decide whether $\mathcal{H}$
+consists precisely of all minimal transversals of $\mathcal{G}$ (in which case
+we say that $\mathcal{G}$ is the dual of $\mathcal{H}$). This problem is
+equivalent to decide whether two given non-redundant monotone DNFs are dual. It
+is known that non-DUAL, the complementary problem to DUAL, is in
+$\mathrm{GC}(\log^2 n,\mathrm{PTIME})$, where $\mathrm{GC}(f(n),\mathcal{C})$
+denotes the complexity class of all problems that after a nondeterministic
+guess of $O(f(n))$ bits can be decided (checked) within complexity class
+$\mathcal{C}$. It was conjectured that non-DUAL is in $\mathrm{GC}(\log^2
+n,\mathrm{LOGSPACE})$. In this paper we prove this conjecture and actually
+place the non-DUAL problem into the complexity class $\mathrm{GC}(\log^2
+n,\mathrm{TC}^0)$ which is a subclass of $\mathrm{GC}(\log^2
+n,\mathrm{LOGSPACE})$. We here refer to the logtime-uniform version of
+$\mathrm{TC}^0$, which corresponds to $\mathrm{FO(COUNT)}$, i.e., first order
+logic augmented by counting quantifiers. We achieve the latter bound in two
+steps. First, based on existing problem decomposition methods, we develop a new
+nondeterministic algorithm for non-DUAL that requires to guess $O(\log^2 n)$
+bits. We then proceed by a logical analysis of this algorithm, allowing us to
+formulate its deterministic part in $\mathrm{FO(COUNT)}$. From this result, by
+the well known inclusion $\mathrm{TC}^0\subseteq\mathrm{LOGSPACE}$, it follows
+that DUAL belongs also to $\mathrm{DSPACE}[\log^2 n]$. Finally, by exploiting
+the principles on which the proposed nondeterministic algorithm is based, we
+devise a deterministic algorithm that, given two hypergraphs $\mathcal{G}$ and
+$\mathcal{H}$, computes in quadratic logspace a transversal of $\mathcal{G}$
+missing in $\mathcal{H}$.

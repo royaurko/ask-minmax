@@ -1,0 +1,24 @@
+We study three fundamental problems of Linear Algebra, lying in the heart of
+various Machine Learning applications, namely: 1)"Low-rank Column-based Matrix
+Approximation". We are given a matrix A and a target rank k. The goal is to
+select a subset of columns of A and, by using only these columns, compute a
+rank k approximation to A that is as good as the rank k approximation that
+would have been obtained by using all the columns; 2) "Coreset Construction in
+Least-Squares Regression". We are given a matrix A and a vector b. Consider the
+(over-constrained) least-squares problem of minimizing ||Ax-b||, over all
+vectors x in D. The domain D represents the constraints on the solution and can
+be arbitrary. The goal is to select a subset of the rows of A and b and, by
+using only these rows, find a solution vector that is as good as the solution
+vector that would have been obtained by using all the rows; 3) "Feature
+Selection in K-means Clustering". We are given a set of points described with
+respect to a large number of features. The goal is to select a subset of the
+features and, by using only this subset, obtain a k-partition of the points
+that is as good as the partition that would have been obtained by using all the
+features. We present novel algorithms for all three problems mentioned above.
+Our results can be viewed as follow-up research to a line of work known as
+"Matrix Sampling Algorithms". [Frieze, Kanna, Vempala, 1998] presented the
+first such algorithm for the Low-rank Matrix Approximation problem. Since then,
+such algorithms have been developed for several other problems, e.g. Graph
+Sparsification and Linear Equation Solving. Our contributions to this line of
+research are: (i) improved algorithms for Low-rank Matrix Approximation and
+Regression (ii) algorithms for a new problem domain (K-means Clustering).

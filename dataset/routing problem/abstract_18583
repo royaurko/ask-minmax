@@ -1,0 +1,18 @@
+Given a standard Brownian motion $B^{\mu}=(B_t^{\mu})_{0\le t\le T}$ with
+drift $\mu \in IR$ and letting $g$ denote the last zero of $B^{\mu}$ before
+$T$, we consider the optimal prediction problem
+  V_*=\inf_{0\le \tau \le T}\mathsf {E}\:|\:g-\tau |
+  where the infimum is taken over all stopping times $\tau$ of $B^{\mu}$.
+Reducing the optimal prediction problem to a parabolic free-boundary problem
+and making use of local time-space calculus techniques, we show that the
+following stopping time is optimal:
+  \tau_*=\inf {t\in [0,T] | B_t^{\mu} \le b_-(t) or B_t^{\mu} \ge b_+(t)}
+  where the function $t\mapsto b_-(t)$ is continuous and increasing on $[0,T]$
+with $b_-(T)=0$, the function $t\mapsto b_+(t)$ is continuous and decreasing on
+$[0,T]$ with $b_+(T)=0$, and the pair $b_-$ and $b_+$ can be characterised as
+the unique solution to a coupled system of nonlinear Volterra integral
+equations. This also yields an explicit formula for $V_*$ in terms of $b_-$ and
+$b_+$. If $\mu=0$ then $b_-=-b_+$ and there is a closed form expression for
+$b_{\pm}$ as shown in [10] using the method of time change from [4]. The latter
+method cannot be extended to the case when $\mu \ne 0$ and the present paper
+settles the remaining cases using a different approach.

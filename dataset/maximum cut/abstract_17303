@@ -1,0 +1,21 @@
+In recent years, a rich variety of regularization procedures have been
+proposed for high dimensional regression problems. However, tuning parameter
+choice and computational efficiency in ultra-high dimensional problems remain
+vexing issues. The routine use of $\ell_1$ regularization is largely
+attributable to the computational efficiency of the LARS algorithm, but similar
+efficiency for better behaved penalties has remained elusive. In this article,
+we propose a highly efficient path following procedure for combination of any
+convex loss function and a broad class of penalties. From a Bayesian
+perspective, this algorithm rapidly yields maximum a posteriori estimates at
+different hyper-parameter values. To bypass the inefficiency and potential
+instability of cross validation, we propose an empirical Bayes procedure for
+rapidly choosing the optimal model and corresponding hyper-parameter value.
+This approach applies to any penalty that corresponds to a proper prior
+distribution on the regression coefficients. While we mainly focus on sparse
+estimation of generalized linear models, the method extends to more general
+regularizations such as polynomial trend filtering after reparameterization.
+The proposed algorithm scales efficiently to large $p$ and/or $n$. Solution
+paths of 10,000 dimensional examples are computed within one minute on a laptop
+for various generalized linear models (GLM). Operating characteristics are
+assessed through simulation studies and the methods are applied to several real
+data sets.

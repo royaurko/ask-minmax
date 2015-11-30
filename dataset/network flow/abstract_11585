@@ -1,0 +1,17 @@
+Given a set of k networks, possibly with different sizes and no overlaps in
+nodes or edges, how can we quickly assess similarity between them, without
+solving the node-correspondence problem? Analogously, how can we extract a
+small number of descriptive, numerical features from each graph that
+effectively serve as the graph's "signature"? Having such features will enable
+a wealth of graph mining tasks, including clustering, outlier detection,
+visualization, etc.
+  We propose NetSimile -- a novel, effective, and scalable method for solving
+the aforementioned problem. NetSimile has the following desirable properties:
+(a) It gives similarity scores that are size-invariant. (b) It is scalable,
+being linear on the number of edges for "signature" vector extraction. (c) It
+does not need to solve the node-correspondence problem. We present extensive
+experiments on numerous synthetic and real graphs from disparate domains, and
+show NetSimile's superiority over baseline competitors. We also show how
+NetSimile enables several mining tasks such as clustering, visualization,
+discontinuity detection, network transfer learning, and re-identification
+across networks.

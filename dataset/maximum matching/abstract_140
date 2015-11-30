@@ -1,0 +1,25 @@
+In this paper, we consider lower bounds on the query complexity for testing
+CSPs in the bounded-degree model.
+  First, for any ``symmetric'' predicate $P:{0,1}^{k} \to {0,1}$ except \equ
+where $k\geq 3$, we show that every (randomized) algorithm that distinguishes
+satisfiable instances of CSP(P) from instances $(|P^{-1}(0)|/2^k-\epsilon)$-far
+from satisfiability requires $\Omega(n^{1/2+\delta})$ queries where $n$ is the
+number of variables and $\delta>0$ is a constant that depends on $P$ and
+$\epsilon$. This breaks a natural lower bound $\Omega(n^{1/2})$, which is
+obtained by the birthday paradox. We also show that every one-sided error
+tester requires $\Omega(n)$ queries for such $P$. These results are hereditary
+in the sense that the same results hold for any predicate $Q$ such that
+$P^{-1}(1) \subseteq Q^{-1}(1)$. For EQU, we give a one-sided error tester
+whose query complexity is $\tilde{O}(n^{1/2})$. Also, for 2-XOR (or,
+equivalently E2LIN2), we show an $\Omega(n^{1/2+\delta})$ lower bound for
+distinguishing instances between $\epsilon$-close to and $(1/2-\epsilon)$-far
+from satisfiability.
+  Next, for the general k-CSP over the binary domain, we show that every
+algorithm that distinguishes satisfiable instances from instances
+$(1-2k/2^k-\epsilon)$-far from satisfiability requires $\Omega(n)$ queries. The
+matching NP-hardness is not known, even assuming the Unique Games Conjecture or
+the $d$-to-$1$ Conjecture. As a corollary, for Maximum Independent Set on
+graphs with $n$ vertices and a degree bound $d$, we show that every
+approximation algorithm within a factor $d/\poly\log d$ and an additive error
+of $\epsilon n$ requires $\Omega(n)$ queries. Previously, only super-constant
+lower bounds were known.

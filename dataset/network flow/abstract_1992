@@ -1,0 +1,16 @@
+We have developed a method of solving for multi-species chemical reaction
+flows in non--equilibrium and self--consistently with the hydrodynamic
+equations in an expanding FLRW universe. The method is based on a backward
+differencing scheme for the required stability when solving stiff sets of
+equations and is designed to be efficient for three-dimensional calculations
+without sacrificing accuracy. In all, 28 kinetic reactions are solved including
+both collisional and radiative processes for the following nine separate
+species: H, H+, He, He+, He++, H-, H2+, H2, and e-. The method identifies those
+reactions (involving H- and H2+) ocurring on the shortest time scales,
+decoupling them from the rest of the network and imposing equilibrium
+concentrations to good accuracy over typical cosmological dynamical times.
+Several tests of our code are presented, including radiative shock waves,
+cosmological sheets, conservation constraints, and fully three-dimensional
+simulations of CDM cosmological evolutions in which we compare our method to
+results obtained when the packaged routine LSODAR is substituted for our
+algorithms.

@@ -1,0 +1,18 @@
+Consistent query answering is the problem of computing the answers from a
+database that are consistent with respect to certain integrity constraints that
+the database as a whole may fail to satisfy. Those answers are characterized as
+those that are invariant under minimal forms of restoring the consistency of
+the database. In this context, we study the problem of repairing databases by
+fixing integer numerical values at the attribute level with respect to denial
+and aggregation constraints. We introduce a quantitative definition of database
+fix, and investigate the complexity of several decision and optimization
+problems, including DFP, i.e. the existence of fixes within a given distance
+from the original instance, and CQA, i.e. deciding consistency of answers to
+aggregate conjunctive queries under different semantics. We provide sharp
+complexity bounds, identify relevant tractable cases; and introduce
+approximation algorithms for some of those that are intractable. More
+specifically, we obtain results like undecidability of existence of fixes for
+aggregation constraints; MAXSNP-hardness of DFP, but a good approximation
+algorithm for a relevant special case; and intractability but good
+approximation for CQA for aggregate queries for one database atom denials (plus
+built-ins).

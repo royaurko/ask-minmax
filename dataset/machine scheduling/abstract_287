@@ -1,0 +1,22 @@
+We consider a cognitive radio network with multiple primary users (PUs) and
+one secondary user (SU), where a spectrum server is utilized for spectrum
+sensing and scheduling the SU to transmit over one of the PU channels
+opportunistically. One practical yet challenging scenario is when \textit{both}
+the PU occupancy and the channel fading vary over time and exhibit temporal
+correlations. Little work has been done for exploiting such temporal memory in
+the channel fading and the PU occupancy simultaneously for opportunistic
+spectrum scheduling. A main goal of this work is to understand the intricate
+tradeoffs resulting from the interactions of the two sets of system states -
+the channel fading and the PU occupancy, by casting the problem as a partially
+observable Markov decision process. We first show that a simple greedy policy
+is optimal in some special cases. To build a clear understanding of the
+tradeoffs, we then introduce a full-observation genie-aided system, where the
+spectrum server collects channel fading states from all PU channels. The
+genie-aided system is used to decompose the tradeoffs in the original system
+into multiple tiers, which are examined progressively. Numerical examples
+indicate that the optimal scheduler in the original system, with observation on
+the scheduled channel only, achieves a performance very close to the
+genie-aided system. Further, as expected, the optimal policy in the original
+system significantly outperforms randomized scheduling, pointing to the merit
+of exploiting the temporal correlation structure in both channel fading and PU
+occupancy.

@@ -1,0 +1,21 @@
+This paper proposes three strong second order cone programming (SOCP)
+relaxations for the AC optimal power flow (OPF) problem. One of these
+relaxations is based on a new bilinear extended formulation of the OPF problem.
+These three relaxations are incomparable to each other and two of them are
+incomparable to the standard SDP relaxation of OPF. Extensive computational
+experiments show that these relaxations have numerous advantages over existing
+convex relaxations in the literature: (i) their solution quality is extremely
+close to that of the SDP relaxations (the best one is within 99.96% of the SDP
+relaxation on average for all the IEEE test cases) and consistently outperforms
+previously proposed convex quadratic relaxations of the OPF problem, (ii) the
+solutions from the strong SOCP relaxations can be directly used as a warm start
+in a local solver such as IPOPT to obtain a high quality feasible OPF solution,
+and (iii) in terms of computation times, the strong SOCP relaxations can be
+solved an order of magnitude faster than standard SDP relaxations. For example,
+one of the proposed SOCP relaxations together with IPOPT produces a feasible
+solution for the largest instance in the IEEE test cases (the 3375-bus system)
+and also certifies that this solution is within 0.13% of global optimality, all
+this computed within 157.20 seconds on a modest personal computer. Overall, the
+proposed strong SOCP relaxations provide a practical approach to obtain
+feasible OPF solutions with extremely good quality within a time framework that
+is compatible with the real-time operation in the current industry practice.

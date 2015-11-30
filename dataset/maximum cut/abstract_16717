@@ -1,0 +1,19 @@
+An analytical technique for the outage and BER analysis of the nx2 V-BLAST
+algorithm with the optimal ordering has been presented in [1], including
+closed-form exact expressions for average BER and outage probabilities, and
+simple high-SNR approximations. The analysis in [1] is based on the following
+essential approximations: 1. The SNR was defined in terms of total
+after-projection signal and noise powers, and the BER was analyzed based on
+their ratio. This corresponds to a non-coherent (power-wise) equal-gain
+combining of both the signal and the noise, and it is not optimum since it does
+not provide the maximum output SNR. 2. The definition of the total
+after-projection noise power at each step ignored the fact that the
+after-projection noise vector had correlated components. 3. The after-combining
+noises at different steps (and hence the errors) were implicitly assumed to be
+independent of each other. Under non-coherent equal-gain combining, that is not
+the case. It turns out that the results in [1] hold also true without these
+approximations, subject to minor modifications only. The purpose of this note
+is to show this and also to extend the average BER results in [1] to the case
+of BPSK-modulated V-BLAST with more than two Rx antennas (eq. 18-20).
+Additionally, we emphasize that the block error rate is dominated by the first
+step BER at the high-SNR mode (eq. 14 and 21).

@@ -1,0 +1,17 @@
+Consider the problem of a Multiple-Input Multiple-Output (MIMO)
+Multiple-Access Channel (MAC) at the limit of large number of users. Clearly,
+in practical scenarios, only a small subset of the users can be scheduled to
+utilize the channel simultaneously. Thus, a problem of user selection arises.
+However, since solutions which collect Channel State Information (CSI) from all
+users and decide on the best subset to transmit in each slot do not scale when
+the number of users is large, distributed algorithms for user selection are
+advantageous.
+  In this paper, we suggest a distributed user selection algorithm, which
+selects a group of users to transmit without coordinating between all users and
+without all users sending CSI to the base station. This threshold-based
+algorithm is analyzed for both Zero-Forcing (ZF) and Minimal Mean Square Error
+(MMSE) receivers, and its expected capacity in the limit of large number of
+users is investigated. It is shown that for large number of users it achieves
+the same scaling laws as the optimal centralized scheme. Multi-stage
+distributed schemes are also considered and shown to be advantageous in
+practical scenarios.

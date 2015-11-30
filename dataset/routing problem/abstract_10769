@@ -1,0 +1,15 @@
+A claw-free graph $G(V, E)$ is said to be basic if there exists a matching $M
+\subseteq E$ whose edges are strongly bisimplicial and such that each connected
+component $C$ of $G - M$ is either a clique or a {claw, net}-free graph or
+satisfies $\alpha(G[C \setminus V(M)]) \le 3$. The Maximum Weight Stable Set
+(MWSS) Problem in a basic claw-free graph can be easily solved by first solving
+at most four MWSS problems in each connected component of $G - M$ in ${\cal
+O}(|V|^2 \log(|V|))$ time (\cite{NobiliSassano15a,NobiliSassano15b}) and then
+solving the MWSS Problem on a suitable line graph constructed from $G$ in
+${\cal O}(|V|^2 \log(|V|))$ time. In this paper we show that, by means of
+lifting operations, every claw-free graph $G(V, E)$ can be transformed, in
+${\cal O}(|V|^2)$ time, into a basic claw-free graph $\bar G(\bar V, \bar E)$
+such that $|\bar V| = {\cal O}(|V|)$ and a MWSS of $G$ can be obtained from a
+MWSS of $\bar G$. This shows that the complexity of solving the MWSS Problem in
+a claw-free graph $G(V, E)$ is ${\cal O}(|V|^2 \log(|V|))$, the same as in line
+graphs.

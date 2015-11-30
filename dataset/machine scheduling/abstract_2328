@@ -1,0 +1,15 @@
+Today's monolithic kernels often implement a small, fixed set of policies
+such as disk I/O scheduling policies, while exposing many parameters to let
+users select a policy or adjust the specific setting of the policy. Ideally,
+the parameters exposed should be flexible enough for users to tune for good
+performance, but in practice, users lack domain knowledge of the parameters and
+are often stuck with bad, default parameter settings.
+  We present EOS, a system that bridges the knowledge gap between kernel
+developers and users by automatically evolving the policies and parameters in
+vivo on users' real, production workloads. It provides a simple policy
+specification API for kernel developers to programmatically describe how the
+policies and parameters should be tuned, a policy cache to make in-vivo tuning
+easy and fast by memorizing good parameter settings for past workloads, and a
+hierarchical search engine to effectively search the parameter space.
+Evaluation of EOS on four main Linux subsystems shows that it is easy to use
+and effectively improves each subsystem's performance.

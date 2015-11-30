@@ -1,0 +1,22 @@
+We study a random system of $cn$ linear equations over $n$ variables in
+GF(2), where each equation contains exactly $r$ variables; this is equivalent
+to $r$-XORSAT. \cite{ikkm,amxor} determined the clustering threshold, $c^*_r$:
+if $c=c^*_r+\e$ for any constant $\e>0$, then \aas the solutions partition into
+well-connected, well-separated {\em clusters} (with probability tending to 1 as
+$n\rightarrow\infty$). This is part of a general clustering phenomenon which is
+hypothesized to arise in most of the commonly studied models of random
+constraint satisfaction problems, via sophisticated but mostly non-rigorous
+techniques from statistical physics. We extend that study to the range
+$c=c^*_r+o(1)$, showing that if $c=c^*_r+n^{-\d}, \d>0$, then the connectivity
+parameter of each $r$-XORSAT cluster is $n^{\Theta(\d)}$, as compared to
+$O(\log n)$ when $c=c^*_r+\e$. This means that one can move between any two
+solutions in the same cluster via a sequence of solutions where consecutive
+solutions differ on at most $n^{\Theta(\d)}$ variables; this is tight up to the
+implicit constant. In contrast, moving to a solution in another cluster
+requires that some pair of consecutive solutions differ in at least
+$n^{1-O(\d)}$ variables.
+  Along the way, we prove that in a random $r$-uniform hypergraph with
+edge-density $n^{-\d}$ above the $k$-core threshold, \aas every vertex not in
+the $k$-core can be removed by a sequence of $n^{\Theta(\d)}$ vertex-deletions
+in which the deleted vertex has degree less than $k$; again, this is tight up
+to the implicit constant.

@@ -1,0 +1,21 @@
+Compressed sensing is a developing field aiming at reconstruction of sparse
+signals acquired in reduced dimensions, which make the recovery process
+under-determined. The required solution is the one with minimum $\ell_0$ norm
+due to sparsity, however it is not practical to solve the $\ell_0$ minimization
+problem. Commonly used techniques include $\ell_1$ minimization, such as Basis
+Pursuit (BP) and greedy pursuit algorithms such as Orthogonal Matching Pursuit
+(OMP) and Subspace Pursuit (SP). This manuscript proposes a novel semi-greedy
+recovery approach, namely A* Orthogonal Matching Pursuit (A*OMP). A*OMP
+performs A* search to look for the sparsest solution on a tree whose paths grow
+similar to the Orthogonal Matching Pursuit (OMP) algorithm. Paths on the tree
+are evaluated according to a cost function, which should compensate for
+different path lengths. For this purpose, three different auxiliary structures
+are defined, including novel dynamic ones. A*OMP also incorporates pruning
+techniques which enable practical applications of the algorithm. Moreover, the
+adjustable search parameters provide means for a complexity-accuracy trade-off.
+We demonstrate the reconstruction ability of the proposed scheme on both
+synthetically generated data and images using Gaussian and Bernoulli
+observation matrices, where A*OMP yields less reconstruction error and higher
+exact recovery frequency than BP, OMP and SP. Results also indicate that novel
+dynamic cost functions provide improved results as compared to a conventional
+choice.

@@ -1,0 +1,21 @@
+The generic matrix multiply (GEMM) function is the core element of
+high-performance linear algebra libraries used in many
+computationally-demanding digital signal processing (DSP) systems. We propose
+an acceleration technique for GEMM based on dynamically adjusting the
+imprecision (distortion) of computation. Our technique employs adaptive scalar
+companding and rounding to input matrix blocks followed by two forms of packing
+in floating-point that allow for concurrent calculation of multiple results.
+Since the adaptive companding process controls the increase of concurrency (via
+packing), the increase in processing throughput (and the corresponding increase
+in distortion) depends on the input data statistics. To demonstrate this, we
+derive the optimal throughput-distortion control framework for GEMM for the
+broad class of zero-mean, independent identically distributed, input sources.
+Our approach converts matrix multiplication in programmable processors into a
+computation channel: when increasing the processing throughput, the output
+noise (error) increases due to (i) coarser quantization and (ii) computational
+errors caused by exceeding the machine-precision limitations. We show that,
+under certain distortion in the GEMM computation, the proposed framework can
+significantly surpass 100% of the peak performance of a given processor. The
+practical benefits of our proposal are shown in a face recognition system and a
+multi-layer perceptron system trained for metadata learning from a large music
+feature database.

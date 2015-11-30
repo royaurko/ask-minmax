@@ -1,0 +1,9 @@
+A sampling method for spin systems is presented. The spin lattice is written
+as the union of a nested sequence of sublattices, all but the last with
+conditionally independent spins, which are sampled in succession using their
+marginals. The marginals are computed concurrently by a fast algorithm; errors
+in the evaluation of the marginals are offset by weights. There are no Markov
+chains and each sample is independent of the previous ones; the cost of a
+sample is proportional to the number of spins (but the number of samples needed
+for good statistics may grow with array size). The examples include the
+Edwards-Anderson spin glass in three dimensions.

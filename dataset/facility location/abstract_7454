@@ -1,0 +1,21 @@
+Huge numbers of short reads are being generated for mapping back to the
+genome to discover the frequency of transcripts, miRNAs, DNAase hypersensitive
+sites, FAIRE regions, nucleosome occupancy, etc. Since these reads are
+typically short (e.g., 36 base pairs) and since many eukaryotic genomes,
+including humans, have highly repetitive sequences then many of these reads map
+to two or more locations in the genome. Current mapping of these reads, grading
+them according to 0, 1 or 2 mismatches wastes a great deal of information.
+These short sequences are typically mapped with no account of the accuracy of
+the sequence, even in company software when per base error rates are being
+reported by another part of the machine. Further, multiply mapping locations
+are frequently discarded altogether or allocated with no regard to where other
+reads are accumulating. Here we show how to combine probabilistic mapping of
+reads with an EM algorithm to iteratively improve the empirical likelihood of
+the allocation of short reads. Mapping using LAST takes into account the per
+base accuracy of the read, plus insertions and deletions, plus anticipated
+occasional errors or SNPs with respect to the parent genome. The probabilistic
+EM algorithm iteratively allocates reads based on the proportion of reads
+mapping within windows on the previous cycle, along with any prior information
+on where the read best maps. The methods are illustrated with FAIRE ENCODE data
+looking at the very important head-to-head gene combination of TP53 and WRAP
+53.

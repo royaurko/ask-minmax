@@ -1,0 +1,19 @@
+We propose a very simple preconditioning method for integer programming
+feasibility problems: replacing the problem b' <= Ax <= b, x \in Z^n with b' <=
+AUy <= b, y \in Z^n, where U is a unimodular matrix computed via basis
+reduction, to make the columns of $AU$ short and nearly orthogonal. The
+reformulation is called rangespace reformulation. It is motivated by the
+reformulation technique proposed for equality constrained IPs by Aardal,
+Hurkens and Lenstra. We also study a family of IP instances, called
+decomposable knapsack problems (DKPs). DKPs generalize the instances proposed
+by Jeroslow, Chvatal and Todd, Avis, Aardal and Lenstra, and Cornuejols et al.
+DKPs are knapsack problems with a constraint vector of the form $pM + r, $ with
+$p >0$ and $r$ integral vectors, and $M$ a large integer. If the parameters are
+suitably chosen in DKPs, we prove 1) hardness results for these problems, when
+branch-and-bound branching on individual variables is applied; 2) that they are
+easy, if one branches on the constraint $px$ instead; and 3) that branching on
+the last few variables in either the rangespace- or the AHL-reformulations is
+equivalent to branching on $px$ in the original problem. We also provide
+recipes to generate such instances. Our computational study confirms that the
+behavior of the studied instances in practice is as predicted by the
+theoretical results.

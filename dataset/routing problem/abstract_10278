@@ -1,0 +1,16 @@
+Penalized selection criteria like AIC or BIC are among the most popular
+methods for variable selection. Their theoretical properties have been studied
+intensively and are well understood, but making use of them in case of
+high-dimensional data is difficult due to the non-convex optimization problem
+induced by L0 penalties. An elegant solution to this problem is provided by the
+multi-step adaptive lasso, where iteratively weighted lasso problems are
+solved, whose weights are updated in such a way that the procedure converges
+towards selection with L0 penalties. In this paper we introduce an adaptive
+ridge procedure (AR) which mimics the adaptive lasso, but is based on weighted
+Ridge problems. After introducing AR its theoretical properties are studied in
+the particular case of orthogonal linear regression. For the non-orthogonal
+case extensive simulations are performed to assess the performance of AR. In
+case of Poisson regression and logistic regression it is illustrated how the
+iterative procedure of AR can be combined with iterative maximization
+procedures. The paper ends with an efficient implementation of AR in the
+context of least-squares segmentation.

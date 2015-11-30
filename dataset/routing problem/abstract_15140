@@ -1,0 +1,21 @@
+We introduce the class of Interrupt Timed Automata (ITA), a subclass of
+hybrid automata well suited to the description of timed multi-task systems with
+interruptions in a single processor environment. While the reachability problem
+is undecidable for hybrid automata we show that it is decidable for ITA. More
+precisely we prove that the untimed language of an ITA is regular, by building
+a finite automaton as a generalized class graph. We then establish that the
+reachability problem for ITA is in NEXPTIME and in PTIME when the number of
+clocks is fixed. To prove the first result, we define a subclass ITA- of ITA,
+and show that (1) any ITA can be reduced to a language-equivalent automaton in
+ITA- and (2) the reachability problem in this subclass is in NEXPTIME (without
+any class graph). In the next step, we investigate the verification of real
+time properties over ITA. We prove that model checking SCL, a fragment of a
+timed linear time logic, is undecidable. On the other hand, we give model
+checking procedures for two fragments of timed branching time logic. We also
+compare the expressive power of classical timed automata and ITA and prove that
+the corresponding families of accepted languages are incomparable. The result
+also holds for languages accepted by controlled real-time automata (CRTA), that
+extend timed automata. We finally combine ITA with CRTA, in a model which
+encompasses both classes and show that the reachability problem is still
+decidable. Additionally we show that the languages of ITA are neither closed
+under complementation nor under intersection.

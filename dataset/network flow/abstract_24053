@@ -1,0 +1,17 @@
+A well-known result by Palamidessi tells us that \pimix (the \pi-calculus
+with mixed choice) is more expressive than \pisep (its subset with only
+separate choice). The proof of this result argues with their different
+expressive power concerning leader election in symmetric networks. Later on,
+Gorla offered an arguably simpler proof that, instead of leader election in
+symmetric networks, employed the reducibility of incestual processes (mixed
+choices that include both enabled senders and receivers for the same channel)
+when running two copies in parallel. In both proofs, the role of breaking
+(initial) symmetries is more or less apparent. In this paper, we shed more
+light on this role by re-proving the above result - based on a proper
+formalization of what it means to break symmetries without referring to another
+layer of the distinguishing problem domain of leader election. Both Palamidessi
+and Gorla rephrased their results by stating that there is no uniform and
+reasonable encoding from \pimix into \pisep. We indicate how the respective
+proofs can be adapted and exhibit the consequences of varying notions of
+uniformity and reasonableness. In each case, the ability to break initial
+symmetries turns out to be essential.

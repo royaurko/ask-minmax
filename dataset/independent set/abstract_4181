@@ -1,0 +1,20 @@
+Online or recursive robust PCA can be posed as a problem of recovering a
+sparse vector, $S_t$, and a dense vector, $L_t$, which lies in a slowly
+changing low-dimensional subspace, from $M_t:= S_t + L_t$ on-the-fly as new
+data comes in. For initialization, it is assumed that an accurate knowledge of
+the subspace in which $L_0$ lies is available. In recent works, Qiu et al
+proposed and analyzed a novel solution to this problem called recursive
+projected compressed sensing or ReProCS. In this work, we relax one limiting
+assumption of Qiu et al's result. Their work required that the $L_t$'s be
+mutually independent over time. However this is not a practical assumption,
+e.g., in the video application, $L_t$ is the background image sequence and one
+would expect it to be correlated over time. In this work we relax this and
+allow the $L_t$'s to follow an autoregressive model. We are able to show that
+under mild assumptions and under a denseness assumption on the unestimated part
+of the changed subspace, with high probability (w.h.p.), ReProCS can exactly
+recover the support set of $S_t$ at all times; the reconstruction errors of
+both $S_t$ and $L_t$ are upper bounded by a time invariant and small value; and
+the subspace recovery error decays to a small value within a finite delay of a
+subspace change time. Because the last assumption depends on an algorithm
+estimate, this result cannot be interpreted as a correctness result but only a
+useful step towards it.

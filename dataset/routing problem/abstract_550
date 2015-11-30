@@ -1,0 +1,21 @@
+We present a computational scheme for orbital-free density functional theory
+(OFDFT) that simultaneously provides access to all-electron values and
+preserves the OFDFT linear scaling as a function of the system size. Using the
+projector augmented-wave method (PAW) in combination with real-space methods we
+overcome some obstacles faced by other available implementation schemes.
+Specifically, the advantages of using the PAW method are two fold. First, PAW
+reproduces all-electron values offering freedom in adjusting the convergence
+parameters and the atomic setups allow tuning the numerical accuracy per
+element. Second, PAW can provide a solution to some of the convergence problems
+exhibited in other OFDFT implementations based on Kohn-Sham codes. Using PAW
+and real-space methods, our orbital-free results agree with the reference
+all-electron values with a mean absolute error of 10~meV and the number of
+iterations required by the self-consistent cycle is comparable to the KS
+method. The comparison of all-electron and pseudopotential bulk modulus and
+lattice constant reveal an enormous difference, demonstrating that in order to
+assess the performance of OFDFT functionals it is necessary to use
+implementations that obtain all-electron values. The proposed combination of
+methods is the most promising route currently available. We finally show that a
+parametrized kinetic energy functional can give lattice constants and bulk
+moduli comparable in accuracy to those obtained by the KS PBE method,
+exemplified with the case of diamond.

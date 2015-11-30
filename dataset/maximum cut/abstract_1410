@@ -1,0 +1,14 @@
+Proof search has been used to specify a wide range of computation systems. In
+order to build a framework for reasoning about such specifications, we make use
+of a sequent calculus involving induction and co-induction. These proof
+principles are based on a proof theoretic (rather than set-theoretic) notion of
+definition. Definitions are akin to (stratified) logic programs, where the left
+and right rules for defined atoms allow one to view theories as "closed" or
+defining fixed points. The use of definitions makes it possible to reason
+intensionally about syntax, in particular enforcing free equality via
+unification. We add in a consistent way rules for pre and post fixed points,
+thus allowing the user to reason inductively and co-inductively about
+properties of computational system making full use of higher-order abstract
+syntax. Consistency is guaranteed via cut-elimination, where we give the first,
+to our knowledge, cut-elimination procedure in the presence of general
+inductive and co-inductive definitions.

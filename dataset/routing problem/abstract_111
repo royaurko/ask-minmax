@@ -1,0 +1,13 @@
+Edge bundling reduces the visual clutter in a drawing of a graph by uniting
+the edges into bundles. We propose a method of edge bundling drawing each edge
+of a bundle separately as in metro-maps and call our method ordered bundles. To
+produce aesthetically looking edge routes it minimizes a cost function on the
+edges. The cost function depends on the ink, required to draw the edges, the
+edge lengths, widths and separations. The cost also penalizes for too many
+edges passing through narrow channels by using the constrained Delaunay
+triangulation. The method avoids unnecessary edge-node and edge-edge crossings.
+To draw edges with the minimal number of crossings and separately within the
+same bundle we develop an efficient algorithm solving a variant of the
+metro-line crossing minimization problem. In general, the method creates clear
+and smooth edge routes giving an overview of the global graph structure, while
+still drawing each edge separately and thus enabling local analysis.

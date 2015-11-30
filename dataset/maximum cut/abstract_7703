@@ -1,0 +1,17 @@
+Approximate Bayesian computation (ABC) or likelihood-free inference
+algorithms are used to find approximations to posterior distributions without
+making explicit use of the likelihood function, depending instead on simulation
+of sample data sets from the model. In this paper we show that under the
+assumption of the existence of a uniform additive model error term, ABC
+algorithms give exact results when sufficient summaries are used. This
+interpretation allows the approximation made in many previous application
+papers to be understood, and should guide the choice of metric and tolerance in
+future work. ABC algorithms can be generalized by replacing the 0-1 cut-off
+with an acceptance probability that varies with the distance of the simulated
+data from the observed data. The acceptance density gives the distribution of
+the error term, enabling the uniform error usually used to be replaced by a
+general distribution. This generalization can also be applied to approximate
+Markov chain Monte Carlo algorithms. In light of this work, ABC algorithms can
+be seen as calibration techniques for implicit stochastic models, inferring
+parameter values in light of the computer model, data, prior beliefs about the
+parameter values, and any measurement or model errors.

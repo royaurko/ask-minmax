@@ -1,0 +1,16 @@
+We study the problem of packing a knapsack without knowing its capacity.
+Whenever we attempt to pack an item that does not fit, the item is discarded;
+if the item fits, we have to include it in the packing. We show that there is
+always a policy that packs a value within factor 2 of the optimum packing,
+irrespective of the actual capacity. If all items have unit density, we achieve
+a factor equal to the golden ratio. Both factors are shown to be best possible.
+In fact, we obtain the above factors using packing policies that are universal
+in the sense that they fix a particular order of the items and try to pack the
+items in this order, independent of the observations made while packing. We
+give efficient algorithms computing these policies. On the other hand, we show
+that, for any alpha>1, the problem of deciding whether a given universal policy
+achieves a factor of alpha is coNP-complete. If alpha is part of the input, the
+same problem is shown to be coNP-complete for items with unit densities.
+Finally, we show that it is coNP-hard to decide, for given alpha, whether a set
+of items admits a universal policy with factor alpha, even if all items have
+unit densities.

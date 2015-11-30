@@ -1,0 +1,14 @@
+Multipath TCP (MPTCP) is a transport layer protocol that allows network
+devices to transfer data over multiple concurrent paths, and hence, utilizes
+the network resources more effectively than does the traditional single-path
+TCP. However, as a reliable protocol, MPTCP still needs to deliver data packets
+(to the upper application) at the receiver in the same order they are
+transmitted at the sender. The out-of-order packet problem becomes more severe
+for MPTCP due to the heterogeneous nature of delay and bandwidth of each path.
+In this paper, we propose the forward-delay-based packet scheduling (FDPS)
+algorithm for MPTCP to address that problem. The main idea is that the sender
+dispatches packets via concurrent paths according to their estimated forward
+delay and throughput differences. Via simulations with various network
+conditions, the results show that our algorithm significantly maintains
+in-order arrival packets at the receiver compared with several previous
+algorithms.

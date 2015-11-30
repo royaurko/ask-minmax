@@ -1,0 +1,17 @@
+In the \emph{tollbooth problem}, we are given a tree $\bT=(V,E)$ with $n$
+edges, and a set of $m$ customers, each of whom is interested in purchasing a
+path on the tree. Each customer has a fixed budget, and the objective is to
+price the edges of $\bT$ such that the total revenue made by selling the paths
+to the customers that can afford them is maximized. An important special case
+of this problem, known as the \emph{highway problem}, is when $\bT$ is
+restricted to be a line.
+  For the tollbooth problem, we present a randomized $O(\log n)$-approximation,
+improving on the current best $O(\log m)$-approximation. We also study a
+special case of the tollbooth problem, when all the paths that customers are
+interested in purchasing go towards a fixed root of $\bT$. In this case, we
+present an algorithm that returns a $(1-\epsilon)$-approximation, for any
+$\epsilon > 0$, and runs in quasi-polynomial time. On the other hand, we rule
+out the existence of an FPTAS by showing that even for the line case, the
+problem is strongly NP-hard. Finally, we show that in the \emph{coupon model},
+when we allow some items to be priced below zero to improve the overall profit,
+the problem becomes even APX-hard.

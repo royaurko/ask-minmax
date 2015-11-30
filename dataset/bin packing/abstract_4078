@@ -1,0 +1,10 @@
+Multigrid preconditioners and solvers for the indefinite Helmholtz equation
+suffer from non-stability of the stationary smoothers due to the indefinite
+spectrum of the operator. In this paper we explore GMRES as a replacement for
+the stationary smoothers of the standard multigrid method. This results in a
+robust and efficient solver for a complex shifted or stretched Helmholtz
+problem that can be used as a preconditioner. Very few GMRES iterations are
+required on each level to build a good multigrid method. The convergence
+behavior is compared to a theoretically derived stable polynomial smoother. We
+test this method on some benchmark problems and report on the observed
+convergence behavior.

@@ -1,0 +1,15 @@
+#SMT, or model counting for logical theories, is a well-known hard problem
+that generalizes such tasks as counting the number of satisfying assignments to
+a Boolean formula and computing the volume of a polytope. In the realm of
+satisfiability modulo theories (SMT) there is a growing need for model counting
+solvers, coming from several application domains (quantitative information
+flow, static analysis of probabilistic programs). In this paper, we answer this
+need and show how to reduce an approximate version of #SMT to SMT.
+  We focus on the theories of integer arithmetic and linear real arithmetic. We
+propose model counting algorithms that provide approximate solutions with
+formal bounds on the approximation error. They run in polynomial time and make
+a polynomial number of queries to the SMT solver for the underlying theory,
+exploiting "for free" the sophisticated heuristics implemented within modern
+SMT solvers. We have implemented the algorithms and used them to solve a value
+estimation problem for a model of loop-free probabilistic programs with
+nondeterminism.

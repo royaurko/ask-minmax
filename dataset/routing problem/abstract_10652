@@ -1,0 +1,20 @@
+We propose a proximal approach to deal with a class of convex variational
+problems involving nonlinear constraints. A large family of constraints, proven
+to be effective in the solution of inverse problems, can be expressed as the
+lower level set of a sum of convex functions evaluated over different, but
+possibly overlapping, blocks of the signal. For such constraints, the
+associated projection operator generally does not have a simple form. We
+circumvent this difficulty by splitting the lower level set into as many
+epigraphs as functions involved in the sum. A closed half-space constraint is
+also enforced, in order to limit the sum of the introduced epigraphical
+variables to the upper bound of the original lower level set. In this paper, we
+focus on a family of constraints involving linear transforms of distance
+functions to a convex set or $\ell_{1,p}$ norms with $p\in \{1,2,\infty\}$. In
+these cases, the projection onto the epigraph of the involved function has a
+closed form expression.
+  The proposed approach is validated in the context of image restoration with
+missing samples, by making use of constraints based on Non-Local Total
+Variation. Experiments show that our method leads to significant improvements
+in term of convergence speed over existing algorithms for solving similar
+constrained problems. A second application to a pulse shape design problem is
+provided in order to illustrate the flexibility of the proposed approach.

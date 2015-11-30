@@ -1,0 +1,21 @@
+Diffusion processes on trees are commonly used in evolutionary biology to
+model the joint distribution of continuous traits, such as body mass, across
+species. Estimating the parameters of such processes from tip values presents
+challenges because of the intrinsic correlation between the observations
+produced by the shared evolutionary history, thus violating the standard
+independence assumption of large-sample theory. For instance Ho and An\'e
+\cite{HoAne13} recently proved that the mean (also known in this context as
+selection optimum) of an Ornstein-Uhlenbeck process on a tree cannot be
+estimated consistently from an increasing number of tip observations if the
+tree height is bounded. Here, using a fruitful connection to the so-called
+reconstruction problem in probability theory, we study the convergence rate of
+parameter estimation in the unbounded height case. For the mean of the process,
+we provide a necessary and sufficient condition for the consistency of the
+maximum likelihood estimator (MLE) and establish a phase transition on its
+convergence rate in terms of the growth of the tree. In particular we show that
+a loss of $\sqrt{n}$-consistency (i.e., the variance of the MLE becomes
+$\Omega(n^{-1})$, where $n$ is the number of tips) occurs when the tree growth
+is larger than a threshold related to the phase transition of the
+reconstruction problem. For the covariance parameters, we give a novel,
+efficient estimation method which achieves $\sqrt{n}$-consistency under natural
+assumptions on the tree.

@@ -1,0 +1,21 @@
+In this work, we propose a distributed rate allocation algorithm that
+minimizes the average decoding delay for multimedia clients in inter-session
+network coding systems. We consider a scenario where the users are organized in
+a mesh network and each user requests the content of one of the available
+sources. We propose a novel distributed algorithm where network users determine
+the coding operations and the packet rates to be requested from the parent
+nodes, such that the decoding delay is minimized for all the clients. A rate
+allocation problem is solved by every user, which seeks the rates that minimize
+the average decoding delay for its children and for itself. Since the
+optimization problem is a priori non-convex, we introduce the concept of
+equivalent packet flows, which permits to estimate the expected number of
+packets that every user needs to collect for decoding. We then decompose our
+original rate allocation problem into a set of convex subproblems, which are
+eventually combined to obtain an effective approximate solution to the delay
+minimization problem. The results demonstrate that the proposed scheme
+eliminates the bottlenecks and reduces the decoding delay experienced by users
+with limited bandwidth resources. We validate the performance of our
+distributed rate allocation algorithm in different video streaming scenarios
+using the NS-3 network simulator. We show that our system is able to take
+benefit of inter-session network coding for simultaneous delivery of video
+sessions in networks with path diversity.

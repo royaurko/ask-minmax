@@ -1,0 +1,20 @@
+For successful estimation, the usual network tomography algorithms crucially
+require i) end-to-end data generated using multicast probe packets, real or
+emulated, and ii) the network to be a tree rooted at a single sender with
+destinations at leaves. These requirements, consequently, limit their scope of
+application. In this paper, we address successfully a general problem,
+henceforth called generalized network tomography, wherein the objective is to
+estimate the link performance parameters for networks with arbitrary topologies
+using only end-to-end measurements of pure unicast probe packets.
+Mathematically, given a binary matrix $A,$ we propose a novel algorithm to
+uniquely estimate the distribution of $X,$ a vector of independent non-negative
+random variables, given only IID samples of the components of the random vector
+$Y = AX.$ This algorithm, in fact, does not even require any prior knowledge of
+the unknown distributions. The idea is to approximate the distribution of each
+component of $X$ using linear combinations of known exponential bases and
+estimate the unknown weights. These weights are obtained by solving a set of
+polynomial systems based on the moment generating function of the components of
+$Y.$ For unique identifiability, it is only required that every pair of columns
+of the matrix $A$ be linearly independent, a property that holds true for the
+routing matrices of all multicast tree networks. Matlab based simulations have
+been included to illustrate the potential of the proposed scheme.

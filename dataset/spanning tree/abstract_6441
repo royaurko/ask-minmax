@@ -1,0 +1,12 @@
+In this paper, we present a distributed algorithm to compute various
+parameters of a tree such as the process number, the edge search number or the
+node search number and so the pathwidth. This algorithm requires n steps, an
+overall computation time of O(n log(n)), and n messages of size log_3(n)+3. We
+then propose a distributed algorithm to update the process number (or the node
+search number, or the edge search number) of each component of a forest after
+adding or deleting an edge. This second algorithm requires O(D) steps, an
+overall computation time of O(D log(n)), and O(D) messages of size log_3(n)+3,
+where D is the diameter of the modified connected component. Finally, we show
+how to extend our algorithms to trees and forests of unknown size using
+messages of less than 2a+4+e bits, where a is the parameter to be determined
+and e=1 for updates algorithms.

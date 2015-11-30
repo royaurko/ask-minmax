@@ -1,0 +1,19 @@
+We present a modern machine learning approach for cluster dynamical mass
+measurements that is a factor of two improvement over using a conventional
+scaling relation. Different methods are tested against a mock cluster catalog
+constructed using halos with mass >= 10^14 Msolar/h from Multidark's
+publicly-available N-body MDPL halo catalog. In the conventional method, we use
+a standard M(sigma_v) power law scaling relation to infer cluster mass, M, from
+line-of-sight (LOS) galaxy velocity dispersion, sigma_v. The resulting
+fractional mass error distribution is broad, with width=0.87 (68% scatter), and
+has extended high-error tails. The standard scaling relation can be simply
+enhanced by including higher-order moments of the LOS velocity distribution.
+Applying the kurtosis as a correction term to log(sigma_v) reduces the width of
+the error distribution to 0.74 (16% improvement). Machine learning can be used
+to take full advantage of all the information in the velocity distribution. We
+employ the Support Distribution Machines (SDMs) algorithm that learns from
+distributions of data to predict single values. SDMs trained and tested on the
+distribution of LOS velocities yield width=0.46 (47% improvement). Furthermore,
+the problematic tails of the mass error distribution are effectively
+eliminated. Decreasing cluster mass errors will improve measurements of the
+growth of structure and lead to tighter constraints on cosmological parameters.

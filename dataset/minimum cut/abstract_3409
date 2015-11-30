@@ -1,0 +1,16 @@
+Editing of radio interferometer data, a process commonly known as
+``flagging'', can be laborious and time-consuming. One quickly tends to flag
+more data than actually required, sacrificing sensitivity and image fidelity in
+the process. I describe a program, Pieflag, which can analyse radio
+interferometer data to filter out measurements which are likely to be affected
+by interference. Pieflag uses two algorithms to allow for data sets which are
+either dominated by receiver noise or by source structure. Together, the
+algorithms detect essentially all affected data whilst the amount of data which
+is not affected by interference but falsely marked as such is kept to a
+minimum. The sections marked by Pieflag are very similar to what would be
+deemed affected by the observer in a visual inspection of the data. Pieflag
+displays its results concisely and allows the user to add and remove flags
+interactively. It is written in Python, is easy to install and use, and has a
+variety of options to adjust its algorithms to a particular observing
+situation. I describe how Pieflag works and illustrate its effect using data
+from typical observations.

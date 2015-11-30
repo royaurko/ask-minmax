@@ -1,0 +1,16 @@
+We show conditional lower bounds for well-studied #P-hard problems:
+  (a) The number of satisfying assignments of a 2-CNF formula with n variables
+cannot be counted in time exp(o(n)), and the same is true for computing the
+number of all independent sets in an n-vertex graph.
+  (b) The permanent of an n x n matrix with entries 0 and 1 cannot be computed
+in time exp(o(n)).
+  (c) The Tutte polynomial of an n-vertex multigraph cannot be computed in time
+exp(o(n)) at most evaluation points (x,y) in the case of multigraphs, and it
+cannot be computed in time exp(o(n/polylog n)) in the case of simple graphs.
+  Our lower bounds are relative to (variants of) the Exponential Time
+Hypothesis (ETH), which says that the satisfiability of n-variable 3-CNF
+formulas cannot be decided in time exp(o(n)). We relax this hypothesis by
+introducing its counting version #ETH, namely that the satisfying assignments
+cannot be counted in time exp(o(n)). In order to use #ETH for our lower bounds,
+we transfer the sparsification lemma for d-CNF formulas to the counting
+setting.

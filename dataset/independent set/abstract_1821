@@ -1,0 +1,25 @@
+In recent years there has been an increased interest in statistical analysis
+of data with multiple types of relations among a set of entities, mainly driven
+by applications in biology, social sciences, e-commerce and marketing. Such
+multi-relational data can be represented as multi-layer graphs where multiple
+types of edges represent the relations and the set of vertices/nodes represents
+the entities. An important learning goal in such networks is to detect an
+underlying set of communities leveraging information from all the layers. For
+community detection in multi-layer graphs, we consider a random graph model,
+multi-layer stochastic blockmodel (MLSBM), which is an extension of the well
+known stochastic block model. In this connection we also propose a model with a
+restricted parameter space, restricted multi-layer stochastic blockmodel
+(RMLSBM), for applications where either the network layers are sparse or the
+number of communities is large or both. We derive consistency results for
+community assignments through both methods where MLSBM is assumed to be the
+true model, and either the number of nodes or the number of types of edges or
+both grow. We compare the two methods both in terms of performance in
+simulation and asymptotic performance under different asymptotic setups. We
+establish the advantage of RMLSBM over MLSBM when either the growth rate of the
+number of communities is high or the growth rate of the average degree of the
+component graphs in the multi-graph is low. To solve the computationally
+challenging problem of community assignment through maximum likelihood
+estimation, we derive a variational EM algorithm. The simulation studies and
+real data applications confirm the superior performance of the multi-layer
+approaches in comparison to independent modeling of the layers or majority
+voting.

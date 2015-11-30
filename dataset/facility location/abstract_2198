@@ -1,0 +1,11 @@
+I introduce a new code for fast calculation of the Lomb-Scargle periodogram,
+that leverages the computing power of graphics processing units (GPUs). After
+establishing a background to the newly emergent field of GPU computing, I
+discuss the code design and narrate key parts of its source. Benchmarking
+calculations indicate no significant differences in accuracy compared to an
+equivalent CPU-based code. However, the differences in performance are
+pronounced; running on a low-end GPU, the code can match 8 CPU cores, and on a
+high-end GPU it is faster by a factor approaching thirty. Applications of the
+code include analysis of long photometric time series obtained by ongoing
+satellite missions and upcoming ground-based monitoring facilities; and
+Monte-Carlo simulation of periodogram statistical properties.

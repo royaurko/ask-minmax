@@ -1,0 +1,21 @@
+This paper describes performance bounds for compressed sensing (CS) where the
+underlying sparse or compressible (sparsely approximable) signal is a vector of
+nonnegative intensities whose measurements are corrupted by Poisson noise. In
+this setting, standard CS techniques cannot be applied directly for several
+reasons. First, the usual signal-independent and/or bounded noise models do not
+apply to Poisson noise, which is non-additive and signal-dependent. Second, the
+CS matrices typically considered are not feasible in real optical systems
+because they do not adhere to important constraints, such as nonnegativity and
+photon flux preservation. Third, the typical $\ell_2$--$\ell_1$ minimization
+leads to overfitting in the high-intensity regions and oversmoothing in the
+low-intensity areas. In this paper, we describe how a feasible positivity- and
+flux-preserving sensing matrix can be constructed, and then analyze the
+performance of a CS reconstruction approach for Poisson data that minimizes an
+objective function consisting of a negative Poisson log likelihood term and a
+penalty term which measures signal sparsity. We show that, as the overall
+intensity of the underlying signal increases, an upper bound on the
+reconstruction error decays at an appropriate rate (depending on the
+compressibility of the signal), but that for a fixed signal intensity, the
+signal-dependent part of the error bound actually grows with the number of
+measurements or sensors. This surprising fact is both proved theoretically and
+justified based on physical intuition.

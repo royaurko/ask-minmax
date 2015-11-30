@@ -1,0 +1,18 @@
+The upper tail problem in the Erd\H{o}s-R\'enyi random graph
+$G\sim\mathcal{G}_{n,p}$ asks to estimate the probability that the number of
+copies of a graph $H$ in $G$ exceeds its expectation by a factor $1+\delta$.
+Chatterjee and Dembo (2014) showed that in the sparse regime of $p\to 0$ as
+$n\to\infty$ with $p \geq n^{-\alpha}$ for an explicit $\alpha=\alpha_H>0$,
+this problem reduces to a natural variational problem on weighted graphs, which
+was thereafter asymptotically solved by two of the contributors in the case where
+$H$ is a clique.
+  Here we extend the latter work to any fixed graph $H$ and determine a
+function $c_H(\delta)$ such that, for $p$ as above and any fixed $\delta>0$,
+the upper tail probability is $\exp[-(c_H(\delta)+o(1))n^2 p^\Delta
+\log(1/p)]$, where $\Delta$ is the maximum degree of $H$. As it turns out, the
+leading order constant in the large deviation rate function, $c_H(\delta)$, is
+governed by the independence polynomial of $H$, defined as $P_H(x)=\sum i_H(k)
+x^k $ where $i_H(k)$ is the number of independent sets of size $k$ in $H$. For
+instance, if $H$ is a regular graph on $m$ vertices, then $c_H(\delta)$ is the
+minimum between $\frac12 \delta^{2/m}$ and the unique positive solution of
+$P_H(x) = 1+\delta$.

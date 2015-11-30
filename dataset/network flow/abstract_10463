@@ -1,0 +1,22 @@
+Biochemical networks are the analog computers of life. They allow living
+cells to control a large number of biological processes, such as gene
+expression and cell signalling. In biochemical networks, the concentrations of
+the components are often low. This means that the discrete nature of the
+reactants and the stochastic character of their interactions have to be taken
+into account. Moreover, the spatial distribution of the components can be of
+crucial importance. However, the current numerical techniques for simulating
+biochemical networks either ignore the particulate nature of matter or treat
+the spatial fluctuations in a mean-field manner. We have developed a new
+technique, called Green's Function Reaction Dynamics (GFRD), that makes it
+possible to simulate biochemical networks at the particle level and in both
+time and space. In this scheme, a maximum time step is chosen such that only
+single particles or pairs of particles have to be considered. For these
+particles, the Smoluchowski equation can be solved analytically using Green's
+functions. The main idea of GFRD is to exploit the exact solution of the
+Smoluchoswki equation to set up an event-driven algorithm. This allows GFRD to
+make large jumps in time when the particles are far apart from each other.
+Here, we apply the technique to a simple model of gene expression. The
+simulations reveal that the scheme is highly efficient. Under biologically
+relevant conditions, GFRD is up to six orders of magnitude faster than
+conventional particle-based techniques for simulating biochemical networks in
+time and space.

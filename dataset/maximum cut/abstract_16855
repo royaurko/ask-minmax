@@ -1,0 +1,23 @@
+We propose a probabilistic framework for interpreting and developing hard
+thresholding sparse signal reconstruction methods and present several new
+algorithms based on this framework. The measurements follow an underdetermined
+linear model, where the regression-coefficient vector is the sum of an unknown
+deterministic sparse signal component and a zero-mean white Gaussian component
+with an unknown variance. We first derive an expectation-conditional
+maximization either (ECME) iteration that guarantees convergence to a local
+maximum of the likelihood function of the unknown parameters for a given signal
+sparsity level. To analyze the reconstruction accuracy, we introduce the
+minimum sparse subspace quotient (SSQ), a more flexible measure of the sampling
+operator than the well-established restricted isometry property (RIP). We prove
+that, if the minimum SSQ is sufficiently large, ECME achieves perfect or
+near-optimal recovery of sparse or approximately sparse signals, respectively.
+We also propose a double overrelaxation (DORE) thresholding scheme for
+accelerating the ECME iteration. If the signal sparsity level is unknown, we
+introduce an unconstrained sparsity selection (USS) criterion for its selection
+and show that, under certain conditions, applying this criterion is equivalent
+to finding the sparsest solution of the underlying underdetermined linear
+system. Finally, we present our automatic double overrelaxation (ADORE)
+thresholding method that utilizes the USS criterion to select the signal
+sparsity level. We apply the proposed schemes to reconstruct sparse and
+approximately sparse signals from tomographic projections and compressive
+samples.

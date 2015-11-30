@@ -1,0 +1,14 @@
+We show that an attempt to compute numerically a viscous flow in a domain
+with a piece-wise smooth boundary by straightforwardly applying well-tested
+numerical algorithms (and numerical codes based on their use, such as COMSOL
+Multiphysics) can lead to spurious multivaluedness and nonintegrable
+singularities in the distribution of the fluid's pressure. The origin of this
+difficulty is that, near a corner formed by smooth parts of the piece-wise
+smooth boundary, in addition to the solution of the inhomogeneous problem,
+there is also an eigensolution. For obtuse corner angles this eigensolution (a)
+becomes dominant and (b) has a singular radial derivative of velocity at the
+corner. A method is developed that uses the knowledge about the eigensolution
+to remove multivaluedness and nonintegrability of the pressure. The method is
+first explained in the simple case of a Stokes flow in a corner region and then
+generalised for the full-scale unsteady Navier-Stokes flow in a domain with a
+free surface.

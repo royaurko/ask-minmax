@@ -1,0 +1,13 @@
+In supervised learning, the nature of data often implies that the vast
+majority of transformations of the feature vectors, such as translation,
+scaling and rotation for images, do not change an object's class. At the same
+time, neural networks are known to be sensitive to such variations of input
+vectors. We propose an extension of the backpropagation algorithm that
+incorporates this information in the learning process, so that the neural
+network predictions are robust to variations and noise in the feature vector.
+This extension consists of an additional forward pass performed on the
+derivatives that are obtained in the end of the backward pass. We apply our
+algorithm to a collection of datasets for image classification, confirm its
+theoretically established properties and demonstrate an improvement of the
+classification accuracy with respect to the standard backpropagation algorithm
+in the majority of cases.

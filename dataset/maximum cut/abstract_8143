@@ -1,0 +1,18 @@
+We design and implement HPMC, a scalable hard particle Monte Carlo simulation
+toolkit, and release it open source as part of HOOMD-blue. HPMC runs in
+parallel on many CPUs and many GPUs using domain decomposition. We employ BVH
+trees instead of cell lists on the CPU for fast performance, especially with
+large particle size disparity, and optimize inner loops with SIMD vector
+intrinsics on the CPU. Our GPU kernel proposes many trial moves in parallel on
+a checkerboard and uses a block-level queue to redistribute work among threads
+and avoid divergence. HPMC supports a wide variety of shape classes, including
+spheres / disks, unions of spheres, convex polygons, convex spheropolygons,
+concave polygons, ellipsoids / ellipses, convex polyhedra, convex
+spheropolyhedra, spheres cut by planes, and concave polyhedra. NVT and NPT
+ensembles can be run in 2D or 3D triclinic boxes. Additional integration
+schemes permit Frenkel-Ladd free energy computations and implicit depletant
+simulations. In a benchmark system of a fluid of 4096 pentagons, HPMC performs
+10 million sweeps in 10 minutes on 96 CPU cores on XSEDE Comet. The same
+simulation would take 7.6 hours in serial. HPMC also scales to large system
+sizes, and the same benchmark with 16.8 million particles runs in 1.4 hours on
+2048 GPUs on OLCF Titan.

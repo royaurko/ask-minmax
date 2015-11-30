@@ -1,0 +1,19 @@
+Within the wireless mesh network, a bottleneck problem arises as the number
+of concurrent traffic flows (NCTF) increases over a single common control
+channel, as it is for most conventional networks. To alleviate this problem,
+this paper proposes a two-stage coordination multi-radio multi-channel MAC
+(TSC-M2MAC) protocol that designates all available channels as both control
+channels and data channels in a time division manner through a two-stage
+coordination. At the first stage, a load balancing breadth-first-search-based
+vertex coloring algorithm for multi-radio conflict graph is proposed to
+intelligently allocate multiple control channels. At the second stage, a
+REQ/ACK/RES mechanism is proposed to realize dynamical channel allocation for
+data transmission. At this stage, the Channel-and-Radio Utilization Structure
+(CRUS) maintained by each node is able to alleviate the hidden nodes problem;
+also, the proposed adaptive adjustment algorithm for the Channel Negotiation
+and Allocation (CNA) sub-interval is able to cope with the variation of NCTF.
+In addition, we design a power saving mechanism for the TSC-M2MAC to decrease
+its energy consumption. Simulation results show that the proposed protocol is
+able to achieve higher throughput and lower end-to-end packet delay than
+conventional schemes. They also show that the TSC-M2MAC can achieve load
+balancing, save energy, and remain stable when the network becomes saturated.

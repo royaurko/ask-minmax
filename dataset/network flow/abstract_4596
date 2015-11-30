@@ -1,0 +1,18 @@
+Sparsification reduces the size of networks while preserving structural and
+statistical properties of interest. Various sparsifying algorithms have been
+proposed in different contexts. We contribute the first systematic conceptual
+and experimental comparison of \textit{edge sparsification} methods on a
+diverse set of network properties. It is shown that they can be understood as
+methods for rating edges by importance and then filtering globally by these
+scores. In addition, we propose a new sparsification method (\textit{Local
+Degree}) which preserves edges leading to local hub nodes. All methods are
+evaluated on a set of 100 Facebook social networks with respect to network
+properties including diameter, connected components, community structure, and
+multiple node centrality measures. Experiments with our implementations of the
+sparsification methods (using the open-source network analysis tool suite
+NetworKit) show that many network properties can be preserved down to about
+20\% of the original set of edges. Furthermore, the experimental results allow
+us to differentiate the behavior of different methods and show which method is
+suitable with respect to which property. Our Local Degree method is fast enough
+for large-scale networks and performs well across a wider range of properties
+than previously proposed methods.

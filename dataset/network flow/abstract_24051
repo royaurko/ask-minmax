@@ -1,0 +1,15 @@
+Push message delivery, where a client maintains an ``always-on'' connection
+with a server in order to be notified of a (asynchronous) message arrival in
+real-time, is increasingly being used in Internet services. The key message in
+this paper is that push message delivery on the World Wide Web is not scalable
+for servers, intermediate network elements, and battery-operated mobile device
+clients. We present a measurement analysis of a commercially deployed WWW push
+email service to highlight some of these issues. Next, we suggest content-based
+optimization to reduce the always-on connection requirement of push messaging.
+Our idea is based on exploiting the periodic nature of human-to-human
+messaging. We show how machine learning can accurately model the times of a day
+or week when messages are least likely to arrive; and turn off always-on
+connections these times. We apply our approach to a real email data set and our
+experiments demonstrate that the number of hours of active always-on
+connections can be cut by half while still achieving real-time message delivery
+for up to 90% of all messages.

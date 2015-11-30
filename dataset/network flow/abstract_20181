@@ -1,0 +1,15 @@
+Two sinks drain precision from higher-order flow analyses: (1) merging of
+argument values upon procedure call and (2) merging of return values upon
+procedure return. To combat the loss of precision, these two sinks have been
+addressed independently. In the case of procedure calls, abstract garbage
+collection reduces argument merging; while in the case of procedure returns,
+context-free approaches eliminate return value merging. It is natural to expect
+a combined analysis could enjoy the mutually beneficial interaction between the
+two approaches. The central contribution of this work is a direct product of
+abstract garbage collection with context-free analysis. The central challenge
+to overcome is the conflict between the core constraint of a pushdown system
+and the needs of garbage collection: a pushdown system can only see the top of
+the stack, yet garbage collection needs to see the entire stack during a
+collection. To make the direct product computable, we develop "stack
+summaries," a method for tracking stack properties at each control state in a
+pushdown analysis of higher-order programs.

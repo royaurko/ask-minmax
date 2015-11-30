@@ -1,0 +1,10 @@
+Reliable and fast builds are essential for rapid turnaround during
+development and testing. Popular existing build systems rely on correct manual
+specification of build dependencies, which can lead to invalid build outputs
+and nondeterminism. We outline the challenges of developing reliable build
+systems and explore the design space for their implementation, with a focus on
+non-distributed, incremental, parallel build systems. We define a general model
+for resources accessed by build tasks and show its correspondence to the
+implementation technique of minimum information libraries, APIs that return no
+information that the application doesn't plan to use. We also summarize
+preliminary experimental results from several prototype build managers.

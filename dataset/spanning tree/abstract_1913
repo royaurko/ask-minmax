@@ -1,0 +1,17 @@
+The suffix tree is a data structure for indexing strings. It is used in a
+variety of applications such as bioinformatics, time series analysis,
+clustering, text editing and data compression. However, when the string and the
+resulting suffix tree are too large to fit into the main memory, most existing
+construction algorithms become very inefficient. This paper presents a
+disk-based suffix tree construction method, called Elastic Range (ERa), which
+works efficiently with very long strings that are much larger than the
+available memory. ERa partitions the tree construction process horizontally and
+vertically and minimizes I/Os by dynamically adjusting the horizontal
+partitions independently for each vertical partition, based on the evolving
+shape of the tree and the available memory. Where appropriate, ERa also groups
+vertical partitions together to amortize the I/O cost. We developed a serial
+version; a parallel version for shared-memory and shared-disk multi-core
+systems; and a parallel version for shared-nothing architectures. ERa indexes
+the entire human genome in 19 minutes on an ordinary desktop computer. For
+comparison, the fastest existing method needs 15 minutes using 1024 CPUs on an
+IBM BlueGene supercomputer.

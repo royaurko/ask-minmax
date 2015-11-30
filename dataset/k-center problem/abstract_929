@@ -1,0 +1,22 @@
+We consider the following detection problem: given a realization of a
+symmetric matrix ${\mathbf{X}}$ of dimension $n$, distinguish between the
+hypothesis that all upper triangular variables are i.i.d. Gaussians variables
+with mean 0 and variance $1$ and the hypothesis where ${\mathbf{X}}$ is the sum
+of such matrix and an independent rank-one perturbation.
+  This setup applies to the situation where under the alternative, there is a
+planted principal submatrix ${\mathbf{B}}$ of size $L$ for which all upper
+triangular variables are i.i.d. Gaussians with mean $1$ and variance $1$,
+whereas all other upper triangular elements of ${\mathbf{X}}$ not in
+${\mathbf{B}}$ are i.i.d. Gaussians variables with mean 0 and variance $1$. We
+refer to this as the `Gaussian hidden clique problem.'
+  When $L=(1+\epsilon)\sqrt{n}$ ($\epsilon>0$), it is possible to solve this
+detection problem with probability $1-o_n(1)$ by computing the spectrum of
+${\mathbf{X}}$ and considering the largest eigenvalue of ${\mathbf{X}}$. We
+prove that this condition is tight in the following sense: when
+$L<(1-\epsilon)\sqrt{n}$ no algorithm that examines only the eigenvalues of
+${\mathbf{X}}$ can detect the existence of a hidden Gaussian clique, with error
+probability vanishing as $n\to\infty$.
+  We prove this result as an immediate consequence of a more general result on
+rank-one perturbations of $k$-dimensional Gaussian tensors. In this context we
+establish a lower bound on the critical signal-to-noise ratio below which a
+rank-one signal cannot be detected.

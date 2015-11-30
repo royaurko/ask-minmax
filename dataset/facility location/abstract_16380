@@ -1,0 +1,21 @@
+The False Discovery Rate (FDR) is a commonly used type I error rate in
+multiple testing problems. It is defined as the expected False Discovery
+Proportion (FDP), that is, the expected fraction of false positives among
+rejected hypotheses. When the hypotheses are independent, the
+Benjamini-Hochberg procedure achieves FDR control at any pre-specified level.
+By construction, FDR control offers no guarantee in terms of power, or type II
+error. A number of alternative procedures have been developed, including
+plug-in procedures that aim at gaining power by incorporating an estimate of
+the proportion of true null hypotheses. In this paper, we study the asymptotic
+behavior of a class of plug-in procedures based on kernel estimators of the
+density of the $p$-values, as the number $m$ of tested hypotheses grows to
+infinity. In a setting where the hypotheses tested are independent, we prove
+that these procedures are asymptotically more powerful in two respects: (i) a
+tighter asymptotic FDR control for any target FDR level and (ii) a broader
+range of target levels yielding positive asymptotic power. We also show that
+this increased asymptotic power comes at the price of slower, non-parametric
+convergence rates for the FDP. These rates are of the form $m^{-k/(2k+1)}$,
+where $k$ is determined by the regularity of the density of the $p$-value
+distribution, or, equivalently, of the test statistics distribution. These
+results are applied to one- and two-sided tests statistics for Gaussian and
+Laplace location models, and for the Student model.

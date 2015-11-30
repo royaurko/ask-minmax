@@ -1,0 +1,18 @@
+We consider a variant of the Cops and Robber game, introduced by Fomin,
+Golovach, Kratochvil, in which the robber has unbounded speed, i.e. can take
+any path from her vertex in her turn, but she is not allowed to pass through a
+vertex occupied by a cop. We study this game on interval graphs, chordal
+graphs, planar graphs, and hypercube graphs. Let c_{\infty}(G) denote the
+number of cops needed to capture the robber in graph G in this variant. We show
+that if G is an interval graph, then c_{\infty}(G) = O(sqrt(|V(G)|)), and we
+give a polynomial-time 3-approximation algorithm for finding c_{\infty}(G) in
+interval graphs. We prove that for every n there exists an n-vertex chordal
+graph G with c_{\infty}(G) = Omega(n / \log n). Let tw(G) and Delta(G) denote
+the treewidth and the maximum degree of G, respectively. We prove that for
+every G, tw(G) + 1 \leq (Delta(G) + 1) c_{\infty}(G). Using this lower bound
+for c_{\infty}(G), we show two things. The first is that if G is a planar graph
+(or more generally, if G does not have a fixed apex graph as a minor), then
+c_{\infty}(G) = Theta(tw(G)). This immediately leads to an O(1)-approximation
+algorithm for computing c_{\infty} for planar graphs. The second is that if G
+is the m-hypercube graph, then there exist constants eta1, eta2>0 such that
+(eta1) 2^m / (m sqrt(m)) \leq c_{\infty}(G) \leq (eta2) 2^m / m.

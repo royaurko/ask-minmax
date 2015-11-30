@@ -1,0 +1,11 @@
+We propose in this paper a multilevel correction method to solve optimal
+control problems constrained by elliptic equations with the finite element
+method. In this scheme, solving optimization problem on the finest finite
+element space is transformed to a series of solutions of linear boundary value
+problems by the multigrid method on multilevel meshes and a series of solutions
+of optimization problems on the coarsest finite element space. Our proposed
+scheme, instead of solving a large scale optimization problem in the finest
+finite element space, solves only a series of linear boundary value problems
+and the optimization problems in a very low dimensional finite element space,
+and thus can improve the overall efficiency for the solution of optimal control
+problems governed by PDEs.

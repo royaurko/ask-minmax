@@ -1,0 +1,21 @@
+This paper presents a data-driven receding horizon fault estimation method
+for additive actuator and sensor faults in unknown linear time-invariant
+systems, with enhanced robustness to stochastic identification errors.
+State-of-the-art methods construct fault estimators with identified state-space
+models or Markov parameters, but they do not compensate for identification
+errors. Motivated by this limitation, we first propose a receding horizon fault
+estimator parameterized by predictor Markov parameters. This estimator provides
+(asymptotically) unbiased fault estimates as long as the subsystem from faults
+to outputs has no unstable transmission zeros. When the identified Markov
+parameters are used to construct the above fault estimator, zero-mean
+stochastic identification errors appear as model uncertainty multiplied with
+unknown fault signals and online system inputs/outputs (I/O). Based on this
+fault estimation error analysis, we formulate a mixed-norm problem for the
+offline robust design that regards online I/O data as unknown. An alternative
+online mixed-norm problem is also proposed that can further reduce estimation
+errors when the online I/O data have large amplitudes, at the cost of increased
+computational burden. Based on a geometrical interpretation of the two proposed
+mixed-norm problems, systematic methods to tune the user-defined parameters
+therein are given to achieve desired performance trade-offs. Simulation
+examples illustrate the benefits of our proposed methods compared to recent
+literature.

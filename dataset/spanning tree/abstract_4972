@@ -1,0 +1,23 @@
+The completion time for the dissemination (or alternatively, aggregation) of
+information from all nodes in a network plays a critical role in the design and
+analysis of communication systems, especially in real time applications for
+which delay is critical. In this work, we analyse the completion time of data
+dissemination in a shared loss (i.e., unreliable links) multicast tree, at the
+limit of large number of nodes. Specifically, analytic expressions for upper
+and lower bounds on the expected completion time are provided, and, in
+particular, it is shown that both these bounds scale as $\alpha \log n$. For
+example, on a full binary tree with $n$ end users, and packet loss probability
+of $0.1$, we bound the expected completion time for disseminating one packet
+from below by $1.41 \log_2 n+o \left( \log n \right)$ and from above by $1.78
+\log_2 n+o \left( \log n \right)$.
+  Clearly, the completion time is determined by the last end user who receives
+the message, that is, a maximum over all arrival times. Hence, Extreme Value
+Theory (EVT) is an appropriate tool to explore this problem. However, since
+arrival times are correlated, non-stationary, and furthermore, time slots are
+discrete, a thorough study of EVT for Non-Stationary Integer Valued (NSIV)
+sequences is required. To the best of our knowledge, such processes were not
+studied before in the framework of EVT. Consequently, we derive the asymptotic
+distribution of the maxima of NSIV sequences satisfying certain conditions, and
+give EVT results which are applicable also beyond the scope of this work. These
+result are then used to derive tight bounds on the completion time. Finally,
+the results are validated by extensive simulations and numerical analysis.

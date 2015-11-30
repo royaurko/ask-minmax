@@ -1,0 +1,21 @@
+The problem Simultaneous Embedding with Fixed Edges (SEFE) asks for two
+planar graph $G^1 = (V^1, E^1)$ and $G^2 = (V^2, E^2)$ sharing a common
+subgraph $G = G^1 \cap G^2$ whether they admit planar drawings such that the
+common graph is drawn the same in both. Previous results on this problem
+require $G$, $G^1$ and $G^2$ to be connected. This paper is a first step
+towards solving instances where these graphs are disconnected.
+  First, we show that an instance of the general SEFE-problem can be reduced in
+linear time to an equivalent instance where $V^1 = V^2$ and $G^1$ and $G^2$ are
+connected. This shows that it can be assumed without loss of generality that
+both input graphs are connected. Second, we consider instances where $G$ is
+disconnected. We show that SEFE can be solved in linear time if $G$ is a family
+of disjoint cycles by introducing the CC-tree, which represents all
+simultaneous embeddings. We extend these results (including the CC-tree) to the
+case where $G$ consists of arbitrary connected components, each with a fixed
+embedding.
+  Note that previous results require $G$ to be connected and thus do not need
+to care about relative positions of connected components. By contrast, we
+assume the embedding of each connected component to be fixed and thus focus on
+these relative positions. As SEFE requires to deal with both, embeddings of
+connected components and their relative positions, this complements previous
+work.

@@ -1,0 +1,22 @@
+One unfortunate consequence of the success story of wireless sensor networks
+(WSNs) in separate research communities is an ever-growing gap between theory
+and practice. Even though there is a increasing number of algorithmic methods
+for WSNs, the vast majority has never been tried in practice; conversely, many
+practical challenges are still awaiting efficient algorithmic solutions. The
+main cause for this discrepancy is the fact that programming sensor nodes still
+happens at a very technical level. We remedy the situation by introducing
+Wiselib, our algorithm library that allows for simple implementations of
+algorithms onto a large variety of hardware and software. This is achieved by
+employing advanced C++ techniques such as templates and inline functions,
+allowing to write generic code that is resolved and bound at compile time,
+resulting in virtually no memory or computation overhead at run time.
+  The Wiselib runs on different host operating systems, such as Contiki, iSense
+OS, and ScatterWeb. Furthermore, it runs on virtual nodes simulated by Shawn.
+For any algorithm, the Wiselib provides data structures that suit the specific
+properties of the target platform. Algorithm code does not contain any
+platform-specific specializations, allowing a single implementation to run
+natively on heterogeneous networks.
+  In this paper, we describe the building blocks of the Wiselib, and analyze
+the overhead. We demonstrate the effectiveness of our approach by showing how
+routing algorithms can be implemented. We also report on results from
+experiments with real sensor-node hardware.

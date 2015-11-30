@@ -1,0 +1,17 @@
+We propose a statistical method to test whether two phylogenetic trees with
+given alignments are significantly incongruent. Our method compares the two
+distributions of phylogenetic trees given by the input alignments, instead of
+comparing point estimations of trees. This statistical approach can be applied
+to gene tree analysis for example, detecting unusual events in genome evolution
+such as horizontal gene transfer and reshuffling. Our method uses difference of
+means to compare two distributions of trees, after embedding trees in a vector
+space. Bootstrapping alignment columns can then be applied to obtain p-values.
+To compute distances between means, we employ a "kernel trick" which speeds up
+distance calculations when trees are embedded in a high-dimensional feature
+space, e.g. splits or quartets feature space. In this pilot study, first we
+test our statistical method's ability to distinguish between sets of gene trees
+generated under coalescence models with species trees of varying dissimilarity.
+We follow our simulation results with applications to various data sets of
+gophers and lice, grasses and their endophytes, and different fungal genes from
+the same genome. A companion toolkit, {\tt Phylotree}, is provided to
+facilitate computational experiments.

@@ -1,0 +1,8 @@
+We describe a linearizable, wait-free implementation of a one-bit swap object
+from a single max register and an unbounded array of test-and-set bits. Each
+swap operation takes at most three steps. Using standard randomized
+constructions, the max register and test-and-set bits can be replaced by
+read-write registers, at the price of raising the cost of a swap operation to
+an expected O(max(log n, min(log t, n))) steps, where t is the number of times
+the swap object has previously changed its value and n is the number of
+processes.

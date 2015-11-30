@@ -1,0 +1,12 @@
+We address the problem of replicating a Voronoi diagram $V(S)$ of a planar
+point set $S$ by making proximity queries, which are of three possible (in
+decreasing order of information content): 1. the exact location of the nearest
+site(s) in $S$; 2. the distance to and label(s) of the nearest site(s) in $S$;
+3. a unique label for every nearest site in $S$. We provide algorithms showing
+how queries of Type 1 and Type 2 allow an exact cloning of $V(S)$ with $O(n)$
+queries and $O(n \log^2 n)$ processing time. We also prove that queries of Type
+3 can never exactly clone $V(S)$, but we show that with $O(n
+\log\frac{1}{\epsilon})$ queries we can construct an $\epsilon$-approximate
+cloning of $V(S)$. In addition to showing the limits of nearest-neighbor
+database security, our methods also provide one of the first natural
+algorithmic applications of retroactive data structures.

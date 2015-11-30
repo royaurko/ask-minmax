@@ -1,0 +1,15 @@
+The fast Fourier transform (FFT) is a primitive kernel in numerous fields of
+science and engineering. OpenFFT is an open-source parallel package for 3-D
+FFTs, built on a communication-optimal domain decomposition method for
+achieving minimal volume of communication. In this paper, we analyze and tune
+the performance of OpenFFT, paying a particular attention to tuning of
+communication that dominates the run time of large-scale calculations. We first
+analyze its performance on different machines for an understanding of the
+behaviors of the package and machines. Based on the performance analysis, we
+develop six communication methods for performing communication with the aim of
+covering varied calculation scales on a variety of computational platforms.
+OpenFFT is then augmented with an auto-tuning of communication to select the
+best method in run time depending on their performance. Numerical results
+demonstrate that the optimized OpenFFT is able to deliver relatively good
+performance in comparison with other state-of-the-art packages at different
+computational scales on a number of parallel machines.

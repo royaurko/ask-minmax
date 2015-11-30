@@ -1,0 +1,14 @@
+A cut tree (or Gomory-Hu tree) of an undirected weighted graph G=(V,E)
+encodes a minimum s-t-cut for each vertex pair {s,t} \subseteq V and can be
+iteratively constructed by n-1 maximum flow computations. They solve the
+multiterminal network flow problem, which asks for the all-pairs maximum flow
+values in a network and at the same time they represent n-1 non-crossing,
+linearly independent cuts that constitute a minimum cut basis of G. Hence, cut
+trees are resident in at least two fundamental fields of network analysis and
+graph theory, which emphasizes their importance for many applications. In this
+work we present a fully-dynamic algorithm that efficiently maintains a cut tree
+for a changing graph. The algorithm is easy to implement and has a high
+potential for saving cut computations under the assumption that a local change
+in the underlying graph does rarely affect the global cut structure. We
+document the good practicability of our approach in a brief experiment on real
+world data.

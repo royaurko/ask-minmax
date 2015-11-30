@@ -1,0 +1,22 @@
+SDYNA is a general framework designed to address large stochastic
+reinforcement learning problems. Unlike previous model based methods in FMDPs,
+it incrementally learns the structure and the parameters of a RL problem using
+supervised learning techniques. Then, it integrates decision-theoric planning
+algorithms based on FMDPs to compute its policy. SPITI is an instanciation of
+SDYNA that exploits ITI, an incremental decision tree algorithm, to learn the
+reward function and the Dynamic Bayesian Networks with local structures
+representing the transition function of the problem. These representations are
+used by an incremental version of the Structured Value Iteration algorithm. In
+order to learn the structure, SPITI uses Chi-Square tests to detect the
+independence between two probability distributions. Thus, we study the relation
+between the threshold used in the Chi-Square test, the size of the model built
+and the relative error of the value function of the induced policy with respect
+to the optimal value. We show that, on stochastic problems, one can tune the
+threshold so as to generate both a compact model and an efficient policy. Then,
+we show that SPITI, while keeping its model compact, uses the generalization
+property of its learning method to perform better than a stochastic classical
+tabular algorithm in large RL problem with an unknown structure. We also
+introduce a new measure based on Chi-Square to qualify the accuracy of the
+model learned by SPITI. We qualitatively show that the generalization property
+in SPITI within the FMDP framework may prevent an exponential growth of the
+time required to learn the structure of large stochastic RL problems.

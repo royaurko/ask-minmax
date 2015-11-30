@@ -1,0 +1,22 @@
+Many anonymous communication (AC) networks rely on routing traffic through
+proxy nodes to obfuscate the originator of the traffic. Without an
+accountability mechanism, exit proxy nodes risk sanctions by law enforcement if
+users commit illegal actions through the AC network. We present BackRef, a
+generic mechanism for AC networks that provides practical repudiation for the
+proxy nodes by tracing back the selected outbound traffic to the predecessor
+node (but not in the forward direction) through a cryptographically verifiable
+chain. It also provides an option for full (or partial) traceability back to
+the entry node or even to the corresponding user when all intermediate nodes
+are cooperating. Moreover, to maintain a good balance between anonymity and
+accountability, the protocol incorporates whitelist directories at exit proxy
+nodes. BackRef offers improved deployability over the related work, and
+introduces a novel concept of pseudonymous signatures that may be of
+independent interest.
+  We exemplify the utility of BackRef by integrating it into the onion routing
+(OR) protocol, and examine its deployability by considering several
+system-level aspects. We also present the security definitions for the BackRef
+system (namely, anonymity, backward traceability, no forward traceability, and
+no false accusation) and conduct a formal security analysis of the OR protocol
+with BackRef using ProVerif, an automated cryptographic protocol verifier,
+establishing the aforementioned security properties against a strong
+adversarial model.

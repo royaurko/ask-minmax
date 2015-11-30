@@ -1,0 +1,13 @@
+We compute a canonical circular-arc representation for a given circular-arc
+(CA) graph which implies solving the isomorphism and recognition problem for
+this class. To accomplish this we split the class of CA graphs into uniform and
+non-uniform ones and employ a generalized version of the argument given by
+K\"obler et al (2013) that has been used to show that the subclass of Helly CA
+graphs can be canonized in logspace. For uniform CA graphs our approach works
+in logspace and in addition to that Helly CA graphs are a strict subset of
+uniform CA graphs. Thus our result is a generalization of the canonization
+result for Helly CA graphs. In the non-uniform case a specific set of ambiguous
+vertices arises. By choosing the parameter to be the cardinality of this set
+the obstacle can be solved by brute force. This leads to an O(k + log n)
+algorithm to compute a canonical representation for non-uniform and therefore
+all CA graphs.

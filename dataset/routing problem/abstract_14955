@@ -1,0 +1,24 @@
+Minimizing the rank of a matrix subject to affine constraints is a
+fundamental problem with many important applications in machine learning and
+statistics. In this paper we propose a simple and fast algorithm SVP (Singular
+Value Projection) for rank minimization with affine constraints (ARMP) and show
+that SVP recovers the minimum rank solution for affine constraints that satisfy
+the "restricted isometry property" and show robustness of our method to noise.
+Our results improve upon a recent breakthrough by Recht, Fazel and Parillo
+(RFP07) and Lee and Bresler (LB09) in three significant ways:
+  1) our method (SVP) is significantly simpler to analyze and easier to
+implement,
+  2) we give recovery guarantees under strictly weaker isometry assumptions
+  3) we give geometric convergence guarantees for SVP even in presense of noise
+and, as demonstrated empirically, SVP is significantly faster on real-world and
+synthetic problems.
+  In addition, we address the practically important problem of low-rank matrix
+completion (MCP), which can be seen as a special case of ARMP. We empirically
+demonstrate that our algorithm recovers low-rank incoherent matrices from an
+almost optimal number of uniformly sampled entries. We make partial progress
+towards proving exact recovery and provide some intuition for the strong
+performance of SVP applied to matrix completion by showing a more restricted
+isometry property. Our algorithm outperforms existing methods, such as those of
+\cite{RFP07,CR08,CT09,CCS08,KOM09,LB09}, for ARMP and the matrix-completion
+problem by an order of magnitude and is also significantly more robust to
+noise.

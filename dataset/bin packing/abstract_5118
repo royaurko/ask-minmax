@@ -1,0 +1,26 @@
+This paper studies the problem of reconstructing sparse or compressible
+signals from compressed sensing measurements that have undergone nonuniform
+quantization. Previous approaches to this Quantized Compressed Sensing (QCS)
+problem based on Gaussian models (bounded l2-norm) for the quantization
+distortion yield results that, while often acceptable, may not be fully
+consistent: re-measurement and quantization of the reconstructed signal do not
+necessarily match the initial observations. Quantization distortion instead
+more closely resembles heteroscedastic uniform noise, with variance depending
+on the observed quantization bin. Generalizing our previous work on uniform
+quantization, we show that for nonuniform quantizers described by the
+"compander" formalism, quantization distortion may be better characterized as
+having bounded weighted lp-norm (p >= 2), for a particular weighting. We
+develop a new reconstruction approach, termed Generalized Basis Pursuit DeNoise
+(GBPDN), which minimizes the sparsity of the reconstructed signal under this
+weighted lp-norm fidelity constraint. We prove that for B bits per measurement
+and under the oversampled QCS scenario (when the number of measurements is
+large compared to the signal sparsity) if the sensing matrix satisfies a
+proposed generalized Restricted Isometry Property, then, GBPDN provides a
+reconstruction error of sparse signals which decreases like
+O(2^{-B}/\sqrt{p+1}): a reduction by a factor \sqrt{p+1} relative to that
+produced by using the l2-norm. Besides the QCS scenario, we also show that
+GBPDN applies straightforwardly to the related case of CS measurements
+corrupted by heteroscedastic Generalized Gaussian noise with provable
+reconstruction error reduction. Finally, we describe an efficient numerical
+procedure for computing GBPDN via a primal-dual convex optimization scheme, and
+demonstrate its effectiveness through simulations.

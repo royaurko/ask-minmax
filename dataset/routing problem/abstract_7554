@@ -1,0 +1,23 @@
+A fundamental problem in wireless networks is the maximum link scheduling
+problem: given a set $L$ of links, compute the largest possible subset
+$L'\subseteq L$ of links that can be scheduled simultaneously without
+interference. This problem is particularly challenging in the physical
+interference model based on SINR constraints (referred to as the SINR model),
+which has gained a lot of interest in recent years. Constant factor
+approximation algorithms have been developed for this problem, but low
+complexity distributed algorithms that give the same approximation guarantee in
+the SINR model are not known. Distributed algorithms are especially challenging
+in this model, because of its non-locality.
+  In this paper, we develop a set of fast distributed algorithms in the SINR
+model, providing constant approximation for the maximum link scheduling problem
+under uniform power assignment. We find that different aspects of available
+technology, such as full/half-duplex communication, and non-adaptive/adaptive
+power control, have a significant impact on the performance of the algorithm;
+these issues have not been explored in the context of distributed algorithms in
+the SINR model before. Our algorithms' running time is $O(g(L) \log^c m)$,
+where $c=1,2,3$ for different problem instances, and $g(L)$ is the "link
+diversity" determined by the logarithmic scale of a communication link length.
+Since $g(L)$ is small and remains in a constant range in most cases, our
+algorithms serve as the first set of "sublinear" time distributed solution. The
+algorithms are randomized and crucially use physical carrier sensing in
+distributed communication steps.

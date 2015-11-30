@@ -1,0 +1,20 @@
+Whether the 3D incompressible Euler equations can develop a singularity in
+finite time from smooth initial data is one of the most challenging problems in
+mathematical fluid dynamics. This work attempts to provide an affirmative
+answer to this long-standing open question from a numerical point of view, by
+presenting a class of potentially singular solutions to the Euler equations
+computed in axisymmetric geometries. The solutions satisfy a periodic boundary
+condition along the axial direction and no-flow boundary condition on the solid
+wall. The equations are discretized in space using a hybrid 6th-order Galerkin
+and 6th-order finite difference method, on specially designed adaptive (moving)
+meshes that are dynamically adjusted to the evolving solutions. With a maximum
+effective resolution of over $(3 \times 10^{12})^{2}$ near the point of the
+singularity, we are able to advance the solution up to $\tau_{2} = 0.003505$
+and predict a singularity time of $t_{s} \approx 0.0035056$, while achieving a
+\emph{pointwise} relative error of $O(10^{-4})$ in the vorticity vector
+$\omega$ and observing a $(3 \times 10^{8})$-fold increase in the maximum
+vorticity $\|\omega\|_{\infty}$. The numerical data are checked against all
+major blowup (non-blowup) criteria, including Beale-Kato-Majda,
+Constantin-Fefferman-Majda, and Deng-Hou-Yu, to confirm the validity of the
+singularity. A local analysis near the point of the singularity also suggests
+the existence of a self-similar blowup in the meridian plane.

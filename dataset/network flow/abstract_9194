@@ -1,0 +1,15 @@
+A natural language parser which has been successfully implemented is
+described. This is a hybrid system, in which neural networks operate within a
+rule based framework. It can be accessed via telnet for users to try on their
+own text. (For details, contact the contributor.) Tested on technical manuals, the
+parser finds the subject and head of the subject in over 90% of declarative
+sentences.
+  The neural processing components belong to the class of Generalized Single
+Layer Networks (GSLN). In general, supervised, feed-forward networks need more
+than one layer to process data. However, in some cases data can be
+pre-processed with a non-linear transformation, and then presented in a
+linearly separable form for subsequent processing by a single layer net. Such
+networks offer advantages of functional transparency and operational speed.
+  For our parser, the initial stage of processing maps linguistic data onto a
+higher order representation, which can then be analysed by a single layer
+network. This transformation is supported by information theoretic analysis.

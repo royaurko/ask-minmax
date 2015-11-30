@@ -1,0 +1,10 @@
+A minimax tree is similar to a Huffman tree except that, instead of
+minimizing the weighted average of the leaves' depths, it minimizes the maximum
+of any leaf's weight plus its depth. Golumbic (1976) introduced minimax trees
+and gave a Huffman-like, $\Oh{n \log n}$-time algorithm for building them.
+Drmota and Szpankowski (2002) gave another $\Oh{n \log n}$-time algorithm,
+which checks the Kraft Inequality in each step of a binary search. In this
+paper we show how Drmota and Szpankowski's algorithm can be made to run in
+linear time on a word RAM with (\Omega (\log n))-bit words. We also discuss how
+our solution applies to problems in data compression, group testing and circuit
+design.

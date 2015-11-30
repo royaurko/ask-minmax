@@ -1,0 +1,16 @@
+In this paper, we explore the multiple source localisation problem in the
+cerebral cortex using magnetoencephalography (MEG) data. We model neural
+currents as point-wise dipolar sources which dynamically evolve over time, then
+model dipole dynamics using a probabilistic state space model in which dipole
+locations are strictly constrained to lie within the cortex. Based on the
+proposed models, we develop a Bayesian particle filtering algorithm for
+localisation of both known and unknown numbers of dipoles. The algorithm
+consists of a region of interest (ROI) estimation step for initial dipole
+number estimation, a Gibbs multiple particle filter (GMPF) step for individual
+dipole state estimation, and a selection criterion step for selecting the final
+estimates. The estimated results from the ROI estimation are used to adaptively
+adjust particle filter's sample size to reduce the overall computational cost.
+The proposed models and the algorithm are tested in numerical experiments.
+Results are compared with existing particle filtering methods. The numerical
+results show that the proposed methods can achieve improved performance metrics
+in terms of dipole number estimation and dipole localisation.

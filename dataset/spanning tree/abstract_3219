@@ -1,0 +1,15 @@
+The first output-sensitive algorithm for the Maximal Clique Listing problem
+was given by Tsukiyama et.al. in 1977. As any algorithm falling within the
+Reverse Search paradigm, it performs a DFS visit of a directed tree (the
+RS-tree) having the objects to be listed (i.e. maximal cliques) as its nodes.
+In a recursive implementation, the RS-tree corresponds to the recursion tree of
+the algorithm. The time delay is given by the cost of generating the next child
+of a node, and Tsukiyama showed it is $O(mn)$. In 2004, Makino and Uno
+sharpened the time delay to $O(n^{\omega})$ by generating all the children of a
+node in one single shot performed by computing a \emph{square} fast matrix
+multiplication. In this paper, we further improve the asymptotics for the
+exploration of the same RS-tree by grouping the offsprings' computation even
+further. Our idea is to rely on rectangular fast matrix multiplication in order
+to compute all children of $n^2$ nodes in one shot. According to the current
+upper bounds on fast matrix multiplication, with this the time delay improves
+from $O(n^{2.3728639})$ to $O(n^{2.093362})$.

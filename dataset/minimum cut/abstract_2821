@@ -1,0 +1,23 @@
+We introduce a new technique for bounding the cover time of random walks by
+relating it to the runtime of randomized broadcast. In particular, we strongly
+confirm for dense graphs the intuition of Chandra et al. \cite{CRRST97} that
+"the cover time of the graph is an appropriate metric for the performance of
+certain kinds of randomized broadcast algorithms". In more detail, our results
+are as follows: For any graph $G=(V,E)$ of size $n$ and minimum degree
+$\delta$, we have $\mathcal{R}(G)= \Oh(\frac{|E|}{\delta} \cdot \log n)$, where
+$\mathcal{R}(G)$ denotes the quotient of the cover time and broadcast time.
+This bound is tight for binary trees and tight up to logarithmic factors for
+many graphs including hypercubes, expanders and lollipop graphs. For any
+$\delta$-regular (or almost $\delta$-regular) graph $G$ it holds that
+$\mathcal{R}(G) = \Omega(\frac{\delta^2}{n} \cdot \frac{1}{\log n})$. Together
+with our upper bound on $\mathcal{R}(G)$, this lower bound strongly confirms
+the intuition of Chandra et al. for graphs with minimum degree $\Theta(n)$,
+since then the cover time equals the broadcast time multiplied by $n$
+(neglecting logarithmic factors). Conversely, for any $\delta$ we construct
+almost $\delta$-regular graphs that satisfy $\mathcal{R}(G) = \Oh(\max
+\{\sqrt{n},\delta \} \cdot \log^2 n)$. Since any regular expander satisfies
+$\mathcal{R}(G) = \Theta(n)$, the strong relationship given above does not hold
+if $\delta$ is polynomially smaller than $n$. Our bounds also demonstrate that
+the relationship between cover time and broadcast time is much stronger than
+the known relationships between any of them and the mixing time (or the closely
+related spectral gap).

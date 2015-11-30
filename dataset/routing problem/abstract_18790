@@ -1,0 +1,22 @@
+Evolutionary algorithms (EAs), simulating the evolution process of natural
+species, are used to solve optimization problems. Crossover (also called
+recombination), originated from simulating the chromosome exchange phenomena in
+zoogamy reproduction, is widely employed in EAs to generate offspring
+solutions, of which the effectiveness has been examined empirically in
+applications. However, due to the irregularity of crossover operators and the
+complicated interactions to mutation, crossover operators are hard to analyze
+and thus have few theoretical results. Therefore, analyzing crossover not only
+helps in understanding EAs, but also helps in developing novel techniques for
+analyzing sophisticated metaheuristic algorithms.
+  In this paper, we derive the General Markov Chain Switching Theorem (GMCST)
+to facilitate theoretical studies of crossover-enabled EAs. The theorem allows
+us to analyze the running time of a sophisticated EA from an easy-to-analyze
+EA. Using this tool, we analyze EAs with several crossover operators on the
+LeadingOnes and OneMax problems, which are noticeably two well studied problems
+for mutation-only EAs but with few results for crossover-enabled EAs. We first
+derive the bounds of running time of the (2+2)-EA with crossover operators;
+then we study the running time gap between the mutation-only (2:2)-EA and the
+(2:2)-EA with crossover operators; finally, we develop strategies that apply
+crossover operators only when necessary, which improve from the mutation-only
+as well as the crossover-all-the-time (2:2)-EA. The theoretical results are
+verified by experiments.

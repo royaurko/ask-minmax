@@ -1,0 +1,24 @@
+We consider the problem of extracting a maximum-size reflected network in a
+linear program. This problem has been studied before and a state-of-the-art SGA
+heuristic with two variations have been proposed.
+  In this paper we apply a new approach to evaluate the quality of SGA\@. In
+particular, we solve majority of the instances in the testbed to optimality
+using a new fixed-parameter algorithm, i.e., an algorithm whose runtime is
+polynomial in the input size but exponential in terms of an additional
+parameter associated with the given problem.
+  This analysis allows us to conclude that the the existing SGA heuristic, in
+fact, produces solutions of a very high quality and often reaches the optimal
+objective values. However, SGA contain two components which leave some space
+for improvement: building of a spanning tree and searching for an independent
+set in a graph. In the hope of obtaining even better heuristic, we tried to
+replace both of these components with some equivalent algorithms.
+  We tried to use a fixed-parameter algorithm instead of a greedy one for
+searching of an independent set. But even the exact solution of this subproblem
+improved the whole heuristic insignificantly. Hence, the crucial part of SGA is
+building of a spanning tree. We tried three different algorithms, and it
+appears that the Depth-First search is clearly superior to the other ones in
+building of the spanning tree for SGA.
+  Thereby, by application of fixed-parameter algorithms, we managed to check
+that the existing SGA heuristic is of a high quality and selected the component
+which required an improvement. This allowed us to intensify the research in a
+proper direction which yielded a superior variation of SGA.

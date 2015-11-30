@@ -1,0 +1,28 @@
+The SINR model for the quality of wireless connections has been the subject
+of extensive recent study. It attempts to predict whether a particular
+transmitter is heard at a specific location, in a setting consisting of $n$
+simultaneous transmitters and background noise. The SINR model gives rise to a
+natural geometric object, the SINR diagram, which partitions the space into $n$
+regions where each of the transmitters can be heard and the remaining space
+where no transmitter can be heard.
+  Efficient point location in the SINR diagram, i.e., being able to build a
+data structure that facilitates determining, for a query point, whether any
+transmitter is heard there, and if so, which one, has been recently
+investigated in several papers. These planar data structures are constructed in
+time at least quadratic in $n$ and support logarithmic-time approximate
+queries. Moreover, the performance of some of the proposed structures depends
+strongly not only on the number $n$ of transmitters and on the approximation
+parameter $\varepsilon$, but also on some geometric parameters that cannot be
+bounded a priori as a function of $n$ or $\varepsilon$.
+  We address the question of batched point location queries, i.e., answering
+many queries simultaneously. Specifically, in one dimension, we can answer $n$
+queries exactly in amortized polylogarithmic time per query, while in the plane
+we can do it approximately.
+  We also show how to answer $n^2$ queries exactly in amortized polylogarithmic
+time per query, assuming the queries are located on a possibly non-uniform $n
+\times n$ grid.
+  All these results can handle arbitrary power assignments to the transmitters.
+Moreover, the amortized query time in these results depends only on $n$ and
+$\varepsilon$.
+  These results demonstrate the (so far underutilized) power of combining
+algebraic tools with those of computational geometry and other fields.

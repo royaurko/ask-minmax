@@ -1,0 +1,16 @@
+In the {\em nonuniform sparsest cut} problem, given two undirected graphs $G$
+and $H$ over the same set of vertices $V$, we want to find a cut $(S,V-S)$ that
+minimizes the ratio between the fraction of $G$-edges that are cut and the
+fraction of $H$-edges that are cut. The ratio (which is at most 1 in an optimal
+solution) is called the {\em sparsity} of the cut. In the {\em uniform sparsest
+cut} problem, $H$ is a clique over $V$. If $G$ is regular, it is possible to
+find a solution to the uniform sparsest cut of cost $O(\sqrt{opt})$ in nearly
+linear time. Is such an approximation, which we call "Cheege-type"
+approximation, achievable in the non-uniform case?
+  We show that the answer is negative, assuming the Unique Games Conjecture,
+for general H. Furthermore, the Leighton-Rao linear programming relaxation and
+the spectral relaxation fail to find such an approximation even if $H$ is a
+clique over a subset of vertices. Using semidefinite programming, however, we
+can find Cheeger-type approximations in polynomial time whenever the adjacency
+matrix of $H$ has rank 1. (This includes the cases in which $H$ is a clique
+over a subset of vertices.)

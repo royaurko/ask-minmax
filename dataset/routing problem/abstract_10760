@@ -1,0 +1,21 @@
+Many maximum likelihood estimation problems are, in general, intractable
+optimization problems. As a result, it is common to approximate the maximum
+likelihood estimator (MLE) using convex relaxations. Semidefinite relaxations
+are among the most popular. Sometimes, the relaxations turn out to be tight. In
+this paper, we study such a phenomenon.
+  The angular synchronization problem consists in estimating a collection of
+$n$ phases, given noisy measurements of some of the pairwise relative phases.
+The MLE for the angular synchronization problem is the solution of a (hard)
+non-bipartite Grothendieck problem over the complex numbers. It is known that
+its semidefinite relaxation enjoys worst-case approximation guarantees.
+  In this paper, we consider a stochastic model on the input of that
+semidefinite relaxation. We assume there is a planted signal (corresponding to
+a ground truth set of phases) and the measurements are corrupted with random
+noise. Even though the MLE does not coincide with the planted signal, we show
+that the relaxation is, with high probability, tight. This holds even for high
+levels of noise.
+  This analysis explains, for the interesting case of angular synchronization,
+a phenomenon which has been observed without explanation in many other
+settings. Namely, the fact that even when exact recovery of the ground truth is
+impossible, semidefinite relaxations for the MLE tend to be tight (in favorable
+noise regimes).

@@ -1,0 +1,20 @@
+Measurement shows that 85% of TCP flows in the internet are short-lived flows
+that stay most of their operation in the TCP startup phase. However, many
+previous studies indicate that the traditional TCP Slow Start algorithm does
+not perform well, especially in long fat networks. Two obvious problems are
+known to impact the Slow Start performance, which are the blind initial setting
+of the Slow Start threshold and the aggressive increase of the probing rate
+during the startup phase regardless of the buffer sizes along the path. Current
+efforts focusing on tuning the Slow Start threshold and/or probing rate during
+the startup phase have not been considered very effective, which has prompted
+an investigation with a different approach. In this paper, we present a novel
+TCP startup method, called threshold-less slow start or SSthreshless Start,
+which does not need the Slow Start threshold to operate. Instead, SSthreshless
+Start uses the backlog status at bottleneck buffer to adaptively adjust probing
+rate which allows better seizing of the available bandwidth. Comparing to the
+traditional and other major modified startup methods, our simulation results
+show that SSthreshless Start achieves significant performance improvement
+during the startup phase. Moreover, SSthreshless Start scales well with a wide
+range of buffer size, propagation delay and network bandwidth. Besides, it
+shows excellent friendliness when operating simultaneously with the currently
+popular TCP NewReno connections.

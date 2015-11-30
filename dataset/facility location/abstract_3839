@@ -1,0 +1,26 @@
+We present a large-scale study of commonality in liquidity and resilience
+across assets in an ultra high-frequency (millisecond-timestamped) Limit Order
+Book (LOB) dataset from a pan-European electronic equity trading facility. We
+first show that extant work in quantifying liquidity commonality through the
+degree of explanatory power of the dominant modes of variation of liquidity
+(extracted through Principal Component Analysis) fails to account for heavy
+tailed features in the data, thus producing potentially misleading results. We
+employ Independent Component Analysis, which both decorrelates the liquidity
+measures in the asset cross-section, but also reduces higher-order statistical
+dependencies.
+  To measure commonality in liquidity resilience, we utilise a novel
+characterisation as the time required for return to a threshold liquidity
+level. This reflects a dimension of liquidity that is not captured by the
+majority of liquidity measures and has important ramifications for
+understanding supply and demand pressures for market makers in electronic
+exchanges, as well as regulators and HFTs. When the metric is mapped out across
+a range of thresholds, it produces the daily Liquidity Resilience Profile (LRP)
+for a given asset. This daily summary of liquidity resilience behaviour from
+the vast LOB dataset is then amenable to a functional data representation. This
+enables the comparison of liquidity resilience in the asset cross-section via
+functional linear sub-space decompositions and functional regression. The
+functional regression results presented here suggest that market factors for
+liquidity resilience (as extracted through functional principal components
+analysis) can explain between 10 and 40% of the variation in liquidity
+resilience at low liquidity thresholds, but are less explanatory at more
+extreme levels, where individual asset factors take effect.

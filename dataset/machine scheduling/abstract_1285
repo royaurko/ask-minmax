@@ -1,0 +1,19 @@
+Disconnection of mobile clients from server, in an unclear time and for an
+unknown duration, due to mobility of mobile clients, is the most important
+challenges for concurrency control in mobile database with client-server model.
+Applying pessimistic common classic methods of concurrency control (like 2pl)
+in mobile database leads to long duration blocking and increasing waiting time
+of transactions. Because of high rate of aborting transactions, optimistic
+methods aren`t appropriate in mobile database. In this article, OPCOT
+concurrency control algorithm is introduced based on optimistic concurrency
+control method. Reducing communications between mobile client and server,
+decreasing blocking rate and deadlock of transactions, and increasing
+concurrency degree are the most important motivation of using optimistic method
+as the basis method of OPCOT algorithm. To reduce abortion rate of
+transactions, in execution time of transactions` operators a timestamp is
+assigned to them. In other to checking commitment ordering property of
+scheduler, the assigned timestamp is used in server on time of commitment. In
+this article, serializability of OPCOT algorithm scheduler has been proved by
+using serializability graph. Results of evaluating simulation show that OPCOT
+algorithm decreases abortion rate and waiting time of transactions in compare
+to 2pl and optimistic algorithms.

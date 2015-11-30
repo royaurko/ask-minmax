@@ -1,0 +1,16 @@
+We consider within a finite element approach the usage of different
+adaptively refined meshes for different variables in systems of nonlinear,
+time-depended PDEs. To resolve different solution behaviours of these
+variables, the meshes can be independently adapted. The resulting linear
+systems are usually much smaller, when compared to the usage of a single mesh,
+and the overall computational runtime can be more than halved in such cases.
+Our multi-mesh method works for Lagrange finite elements of arbitrary degree
+and is independent of the spatial dimension. The approach is well defined, and
+can be implemented in existing adaptive finite element codes with minimal
+effort. We show computational examples in 2D and 3D ranging from dendritic
+growth to solid-solid phase-transitions. A further application comes from fluid
+dynamics where we demonstrate the applicability of the approach for solving the
+incompressible Navier-Stokes equations with Lagrange finite elements of the
+same order for velocity and pressure. The approach thus provides an easy to
+implement alternative to stabilized finite element schemes, if Lagrange finite
+elements of the same order are required.

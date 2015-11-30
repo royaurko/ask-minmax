@@ -1,0 +1,15 @@
+For a given testing problem, let $U_1,...,U_n$ be individually valid and
+conditionally on the data i.i.d.\ P-variables (often called P-values). For
+example, the data could come in groups, and each $U_i$ could be based on
+subsampling just one datum from each group in order to satisfy an independence
+assumption under the hypothesis. The problem is then to deterministically
+combine the $U_i$ into a valid summary P-variable. Restricting here our
+attention to functions of a given order statistic $U_{k:n}$ of the $U_i$, we
+compute the function $f_{n,k}$ which is smallest among all increasing functions
+$f$ such that $f(U_{k:n})$ is always a valid P-variable under the stated
+assumptions. Since $f_{n,k}(u)\le 1\wedge (\frac {n}{k} u)$, with the right
+hand side being a good approximation for the left when $k$ is large, one may in
+particular always take the minimum of 1 and twice the left sample median of the
+given P-variables.
+  We sketch the original application of the above in a recent study of
+associations between various primate species by Astaras et al.

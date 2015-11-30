@@ -1,0 +1,20 @@
+Nonconvex optimisation problems constrained by partial differential equations
+(PDEs) may permit distinct local minima. In this paper we present a numerical
+technique, called deflation, for computing multiple local solutions of such
+optimisation problems. The basic approach is to apply a nonlinear
+transformation to the Karush--Kuhn--Tucker optimality conditions that
+eliminates previously found solutions from consideration. Starting from some
+initial guess, Newton's method is used to find a stationary point of the
+Lagrangian; this solution is then deflated away, and Newton's method is
+initialised from the same initial guess to find other solutions. In this paper,
+we investigate how the Schur complement preconditioners widely used in
+PDE-constrained optimisation perform after deflation. We prove an upper bound
+on the number of new distinct eigenvalues of a matrix after an arbitrary
+additive perturbation; from this it follows that for diagonalisable operators
+the number of Krylov iterations required for exact convergence of the Newton
+step at most doubles compared to the undeflated problem. While deflation is not
+guaranteed to converge to all minima, these results indicate the approach
+scales to arbitrary-dimensional problems if a scalable Schur complement
+preconditioner is available. The technique is demonstrated on a discretised
+nonconvex PDE-constrained optimisation problem with approximately ten million
+degrees of freedom.

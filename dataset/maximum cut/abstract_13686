@@ -1,0 +1,14 @@
+For a given set $\mathcal{L}$ of species and a set $\mathcal{T}$ of triplets
+on $\mathcal{L}$, one wants to construct a phylogenetic network which is
+consistent with $\mathcal{T}$, i.e which represents all triplets of
+$\mathcal{T}$. The level of a network is defined as the maximum number of
+hybrid vertices in its biconnected components. When $\mathcal{T}$ is dense,
+there exist polynomial time algorithms to construct level-$0,1,2$ networks (Aho
+et al. 81, Jansson et al. 04, Iersel et al. 08). For higher levels, partial
+answers were obtained by Iersel et al. 2008 with a polynomial time algorithm
+for simple networks. In this paper, we detail the first complete answer for the
+general case, solving a problem proposed by Jansson et al. 2004: for any $k$
+fixed, it is possible to construct a minimum level-$k$ network consistent with
+$\mathcal{T}$, if there is any, in time
+$O(|\mathcal{T}|^{k+1}n^{\lfloor\frac{4k}{3}\rfloor+1})$. This is an improved
+result of our preliminary version presented at CPM'2009.

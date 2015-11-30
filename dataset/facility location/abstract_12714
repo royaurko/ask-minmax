@@ -1,0 +1,15 @@
+Conditional autoregressive (CAR) models are commonly used to capture spatial
+correlation in areal unit data, and are typically specified as a prior
+distribution for a set of random effects, as part of a hierarchical Bayesian
+model. The spatial correlation structure induced by these models is determined
+by geographical adjacency, so that two areas have correlated random effects if
+they share a common border. However, this correlation structure is too
+simplistic for real data, which are instead likely to include sub-regions of
+strong correlation as well as locations at which the response exhibits a
+step-change. Therefore this paper proposes an extension to CAR priors, which
+can capture such localised spatial correlation. The proposed approach takes the
+form of an iterative algorithm, which sequentially updates the spatial
+correlation structure in the data as well as estimating the remaining model
+parameters. The efficacy of the approach is assessed by simulation, and its
+utility is illustrated in a disease mapping context, using data on respiratory
+disease risk in Greater Glasgow, Scotland.

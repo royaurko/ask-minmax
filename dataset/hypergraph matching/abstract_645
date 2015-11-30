@@ -1,0 +1,18 @@
+Undirected graphical models, also known as Markov random fields, are widely
+used to model stochastic dependences among large collections of variables. We
+introduce a new method of estimating sparse undirected conditional independence
+graphs based on the score matching loss, introduced by Hyvarinen (2005), and
+subsequently extended in Hyvarinen (2007). The regularized score matching
+method we propose applies to settings with continuous observations and allows
+for computationally efficient treatment of possibly non-Gaussian exponential
+family models. In the well-explored Gaussian setting, regularized score
+matching avoids issues of asymmetry that arise when applying the technique of
+neighborhood selection, and compared to existing methods that directly yield
+symmetric estimates, the score matching approach has the advantage that the
+considered loss is quadratic and gives piecewise linear solution paths under
+$\ell_1$-regularization. Under suitable irrepresentability conditions, we show
+that $\ell_1$-regularized score matching is consistent for graph estimation in
+high-dimensional settings. Through numerical experiments and an application to
+RNSseq data, we confirm that regularized score matching achieves
+state-of-the-art performance in the Gaussian case and provides a valuable tool
+for computationally efficient inference in non-Gaussian graphical models.

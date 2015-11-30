@@ -1,0 +1,12 @@
+We propose a tree regularization framework, which enables many tree models to
+perform feature selection efficiently. The key idea of the regularization
+framework is to penalize selecting a new feature for splitting when its gain
+(e.g. information gain) is similar to the features used in previous splits. The
+regularization framework is applied on random forest and boosted trees here,
+and can be easily applied to other tree models. Experimental studies show that
+the regularized trees can select high-quality feature subsets with regard to
+both strong and weak classifiers. Because tree models can naturally deal with
+categorical and numerical variables, missing values, different scales between
+variables, interactions and nonlinearities etc., the tree regularization
+framework provides an effective and efficient feature selection solution for
+many practical problems.

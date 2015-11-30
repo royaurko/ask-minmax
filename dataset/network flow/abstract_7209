@@ -1,0 +1,23 @@
+Operational network data, management data such as customer care call logs and
+equipment system logs, is a very important source of information for network
+operators to detect problems in their networks. Unfortunately, there is lack of
+efficient tools to automatically track and detect anomalous events on
+operational data, causing ISP operators to rely on manual inspection of this
+data. While anomaly detection has been widely studied in the context of network
+data, operational data presents several new challenges, including the
+volatility and sparseness of data, and the need to perform fast detection
+(complicating application of schemes that require offline processing or
+large/stable data sets to converge).
+  To address these challenges, we propose Tiresias, an automated approach to
+locating anomalous events on hierarchical operational data. Tiresias leverages
+the hierarchical structure of operational data to identify high-impact
+aggregates (e.g., locations in the network, failure modes) likely to be
+associated with anomalous events. To accommodate different kinds of operational
+network data, Tiresias consists of an online detection algorithm with low time
+and space complexity, while preserving high detection accuracy. We present
+results from two case studies using operational data collected at a large
+commercial IP network operated by a Tier-1 ISP: customer care call logs and
+set-top box crash logs. By comparing with a reference set verified by the ISP's
+operational group, we validate that Tiresias can achieve >94% accuracy in
+locating anomalies. Tiresias also discovered several previously unknown
+anomalies in the ISP's customer care cases, demonstrating its effectiveness.

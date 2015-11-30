@@ -1,0 +1,20 @@
+Collisions are a main cause of throughput degradation in WLANs. The current
+contention mechanism used in IEEE 802.11 networks is called Carrier Sense
+Multiple Access with Collision Avoidance (CSMA/CA). It uses a Binary
+Exponential Backoff (BEB) technique to randomise each contender attempt of
+transmitting, effectively reducing the collision probability. Nevertheless,
+CSMA/CA relies on a random backoff that while effective and totally
+distributed, in principle is unable to completely eliminate collisions,
+therefore degrading the network throughput as more contenders attempt to share
+the channel. Carrier Sense Multiple Access with Enhanced Collision Avoidance
+(CSMA/ECA) is able to create a collision-free schedule in a totally distributed
+manner using a deterministic backoff after successful transmissions. Hysteresis
+and Fair Share are two extensions of CSMA/ECA to support a large number of
+contenders in a collision-free schedule. CSMA/ECA offers better throughput than
+CSMA/CA and short-term throughput fairness.
+  This work describes CSMA/ECA and its extensions. Additionally, it provides
+the first evaluation results of CSMA/ECA in non-saturated traffic conditions as
+well as its performance when coexisting with CSMA/CA nodes. Furthermore, the
+effects of imperfect clocks over CSMA/ECA's deterministic backoff mechanism and
+its consequences when attempting to implement the protocol in real hardware are
+also analysed.

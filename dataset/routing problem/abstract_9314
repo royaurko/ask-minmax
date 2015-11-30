@@ -1,0 +1,16 @@
+The worst situation in computing the minimal nonnegative solution of a
+nonsymmetric algebraic Riccati equation associated with an M-matrix occurs when
+the corresponding linearizing matrix has two very small eigenvalues, one with
+positive and one with negative real part. When both these eigenvalues are
+exactly zero, the problem is called critical or null recurrent. While in this
+case the problem is ill-conditioned and the convergence of the algorithms based
+on matrix iterations is slow, there exist some techniques to remove the
+singularity and transform the problem to a well-behaved one. Ill-conditioning
+and slow convergence appear also in close-to-critical problems, but when none
+of the eigenvalues is exactly zero the techniques used for the critical case
+cannot be applied.
+  In this paper, we introduce a new method to accelerate the convergence
+properties of the iterations also in close-to-critical cases, by working on the
+invariant subspace associated with the problematic eigenvalues as a whole. We
+present a theoretical analysis and several numerical experiments which confirm
+the efficiency of the new method.

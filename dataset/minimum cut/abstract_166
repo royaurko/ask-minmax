@@ -1,0 +1,20 @@
+Coordinated checkpointing is an effective fault tolerant technique in
+distributed system as it avoids the domino effect and require minimum storage
+requirement. Most of the earlier coordinated checkpoint algorithms block their
+computation during checkpointing and forces minimum-process or non-blocking but
+forces all nodes to takes checkpoint even though many of them may not be
+necessary or non-blocking minimum-process but takes useless checkpoints or
+reduced useless checkpoint but has higher synchronization message overhead or
+has high checkpoint request propagation time. Hence in mobile distributed
+systems there is a great need of minimizing the number of communication message
+and checkpointing overhead as it raise new issues such as mobility, low
+bandwidth of wireless channels, frequently disconnections, limited battery
+power and lack of reliable stable storage on mobile nodes. In this paper, we
+propose a minimum-process coordinated checkpointing algorithm for mobile
+distributed system where no useless checkpoints are taken, no blocking of
+processes takes place and enforces a minimum-number of processes to take
+checkpoints. Our algorithm imposes low memory and computation overheads on MH's
+and low communication overheads on wireless channels. It avoids awakening of an
+MH if it is not required to take its checkpoint and has reduced latency time as
+each process involved in a global checkpoint can forward its own decision
+directly to the checkpoint initiator.

@@ -1,0 +1,18 @@
+Comparing two geometric graphs embedded in space is important in the field of
+transportation network analysis. Given street maps of the same city collected
+from different sources, researchers often need to know how and where they
+differ. However, the majority of current graph comparison algorithms are based
+on structural properties of graphs, such as their degree distribution or their
+local connectivity properties, and do not consider their spatial embedding.
+This ignores a key property of road networks since similarity of travel over
+two road networks is intimately tied to the specific spatial embedding.
+Likewise, many current street map comparison algorithms focus on the spatial
+embeddings only and do not take structural properties into account, which makes
+these algorithms insensitive to local connectivity properties and shortest path
+similarities. We propose a new path-based distance measure to compare two
+planar geometric graphs embedded in the plane. Our distance measure takes
+structural as well as spatial properties into account by imposing a distance
+measure between two road networks based on the Hausdorff distance between the
+two sets of travel paths they represent. We show that this distance can be
+approximated in polynomial time and that it preserves structural and spatial
+properties of the graphs.

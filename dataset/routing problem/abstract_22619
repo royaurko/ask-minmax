@@ -1,0 +1,15 @@
+An approximate Riemann solver for the equations of relativistic
+magnetohydrodynamics (RMHD) is derived. The HLLC solver, originally developed
+by Toro, Spruce and Spears, generalizes the algorithm described in a previous
+paper (Mignone & Bodo 2004) to the case where magnetic fields are present. The
+solution to the Riemann problem is approximated by two constant states bounded
+by two fast shocks and separated by a tangential wave. The scheme is
+Jacobian-free, in the sense that it avoids the expensive characteristic
+decomposition of the RMHD equations and it improves over the HLL scheme by
+restoring the missing contact wave.
+  Multidimensional integration proceeds via the single step, corner transport
+upwind (CTU) method of Colella, combined with the contrained tranport (CT)
+algorithm to preserve divergence-free magnetic fields. The resulting numerical
+scheme is simple to implement, efficient and suitable for a general equation of
+state. The robustness of the new algorithm is validated against one and two
+dimensional numerical test problems.

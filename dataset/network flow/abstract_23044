@@ -1,0 +1,22 @@
+This paper extends our recent theoretical work concerning the feasibility of
+stable and accurate computation of turbulence using a large eddy simulation
+[Ida and Taniguchi, Phys. Rev. E 68, 036705 (2003)]. In our previous paper, it
+was shown, based on a simple assumption regarding the instantaneous streamwise
+velocity, that the application of the Gaussian filter to the incompressible
+Navier-Stokes equations can result in the appearance of a numerically unstable
+term that can be decomposed into positive and negative viscosities. That result
+raises the question as to whether an accurate solution can be achieved by a
+numerically stable subgrid-scale model. In the present paper, based on
+assumptions regarding the statistically averaged velocity, we present similar
+theoretical investigations to show that in several situations, the shears
+appearing in the statistically averaged velocity field numerically destabilize
+the fluctuation components because of the derivation of a numerically unstable
+term that represents negative diffusion in a fixed direction. This finding can
+explain the problematic numerical instability that has been encountered in
+large eddy simulations of wall-bounded flows. The present result suggests that
+this numerical problem is universal in large eddy simulations, and that if
+there is no failure in modeling, the resulting subgrid-scale model can still
+have unstable characteristics; that is, the known instability problems of
+several existing subgrid-scale models are not something that one may remove
+simply by an artificial technique, but must be taken seriously so as to treat
+them accurately.

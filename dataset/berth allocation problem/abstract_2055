@@ -1,0 +1,14 @@
+This work proposes a scheme for significantly reducing the computational
+complexity of discretized problems involving the non-smooth forward propagation
+of uncertainty by combining the adaptive hierarchical sparse grid stochastic
+collocation method (ALSGC) with a hierarchy of successively finer spatial
+discretizations (e.g. finite elements) of the underlying deterministic problem.
+To achieve this, we build strongly upon ideas from the Multilevel Monte Carlo
+method (MLMC), which represents a well-established technique for the reduction
+of computational complexity in problems affected by both deterministic and
+stochastic error contributions. The resulting approach is termed the Multilevel
+Adaptive Sparse Grid Collocation (MLASGC) method. Preliminary results for a
+low-dimensional, non-smooth parametric ODE problem are promising: the proposed
+MLASGC method exhibits an error/cost-relation of $\varepsilon \sim t^{-0.95}$
+and therefore significantly outperforms the single-level ALSGC ($\varepsilon
+\sim t^{-0.65}$) and MLMC methods ($\varepsilon \lesssim t^{-0.5}$).

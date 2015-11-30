@@ -1,0 +1,18 @@
+In Source Location (SL) problems the goal is to select a mini-mum cost source
+set $S \subseteq V$ such that the connectivity (or flow) $\psi(S,v)$ from $S$
+to any node $v$ is at least the demand $d_v$ of $v$. In many SL problems
+$\psi(S,v)=d_v$ if $v \in S$, namely, the demand of nodes selected to $S$ is
+completely satisfied. In a node-connectivity variant suggested recently by
+Fukunaga, every node $v$ gets a "bonus" $p_v \leq d_v$ if it is selected to
+$S$. Fukunaga showed that for undirected graphs one can achieve ratio $O(k \ln
+k)$ for his variant, where $k=\max_{v \in V}d_v$ is the maximum demand. We
+improve this by achieving ratio $\min\{p^*\lnk,k\}\cdot O(\ln (k/q^*))$ for a
+more general version with node capacities, where $p^*=\max_{v \in V} p_v$ is
+the maximum bonus and $q^*=\min_{v \in V} q_v$ is the minimum capacity. In
+particular, for the most natural case $p^*=1$ considered by Fukunaga, we
+improve the ratio from $O(k \ln k)$ to $O(\ln^2k)$. We also get ratio $O(k)$
+for the edge-connectivity version, for which no ratio that depends on $k$ only
+was known before. To derive these results, we consider a particular case of the
+Survivable Network (SN) problem when all edges of positive cost form a star. We
+give ratio $O(\min\{\ln n,\ln^2 k\})$ for this variant, improving over the best
+ratio known for the general case $O(k^3 \ln n)$ of Chuzhoy and Khanna.

@@ -1,0 +1,18 @@
+In this paper, we propose a new approach to building synchronization
+primitives, dubbed "lwlocks" (short for light-weight locks). The primitives are
+optimized for small memory footprint while maintaining efficient performance in
+low contention scenarios. A read-write lwlock occupies 4 bytes, a mutex
+occupies 4 bytes (2 if deadlock detection is not required), and a condition
+variable occupies 4 bytes. The corresponding primitives of the popular pthread
+library occupy 56 bytes, 40 bytes and 48 bytes respectively on the x86-64
+platform. The API for lwlocks is similar to that of the pthread library but
+covering only the most common use cases. Lwlocks allow explicit control of
+queuing and scheduling decisions in contention situations and support
+"asynchronous" or "deferred blocking" acquisition of locks. Asynchronous
+locking helps in working around the constraints of lock-ordering which
+otherwise limits concurrency. The small footprint of lwlocks enables the
+construction of data structures with very fine-grained locking, which in turn
+is crucial for lowering contention and supporting highly concurrent access to a
+data structure. Currently, the Data Domain File System uses lwlocks for its
+in-memory inode cache as well as in a generic doubly-linked concurrent list
+which forms the building block for more sophisticated structures.

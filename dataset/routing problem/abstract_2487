@@ -1,0 +1,21 @@
+One of the major issues with multiparticle reactors is to handle their
+multiscale aspect. For modeling, it usually comes to coupling a reactor model
+(describing the phenomena at the macroscopic scale) with a so-called grain
+model (simulating the behavior of a single grain or a particle). An interesting
+approach proposed by H.Y. Sohn (1978) is to use the law of additive reaction
+times in order to calculate, approximately but analytically, the reaction rate
+of a particle in the reactor model. Its great advantage, compared to a
+numerical grain model, is to drastically reduce the computation time,
+particularly in the case of complex reactor models. This is the approach we
+retained for modeling the moving bed furnace, a counter-current gas-solid
+reactor used in the nuclear fuel-making route for producing uranium
+tetrafluoride from uranium trioxide. The numerical model we developed is
+2-dimensional, steady-state and based on the finite volume method. It describes
+solid and gas flow, convective, conductive and radiative heat transfers, and
+six chemical reactions involved in the process. The law of additive reaction
+times is used to calculate analytically the rate of the three principal
+gas-solid reactions at every discrete point in the reactor. We have
+demonstrated the validity of this approach by comparing its results with those
+calculated from a numerical grain model. Also detailed in the paper are the
+main results of the moving bed furnace model itself and the possibilities of
+optimizing the process revealed by the calculations.

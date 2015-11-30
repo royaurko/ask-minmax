@@ -1,0 +1,25 @@
+We describe the implementation of a module for the Athena
+magnetohydrodynamics (MHD) code which solves the time-independent,
+multi-frequency radiative transfer (RT) equation on multidimensional Cartesian
+simulation domains, including scattering and non-LTE effects. The module is
+based on well-known and well-tested algorithms developed for modeling stellar
+atmospheres, including the method of short characteristics to solve the RT
+equation, accelerated Lambda iteration to handle scattering and non-LTE
+effects, and parallelization via domain decomposition. The module serves
+several purposes: it can be used to generate spectra and images, to compute a
+variable Eddington tensor (VET) for full radiation MHD simulations, and to
+calculate the heating and cooling source terms in the MHD equations in flows
+where radiation pressure is small compared with gas pressure. For the latter
+case, the module is combined with the standard MHD integrators using
+operator-splitting and we describe this approach in detail. Implementation of
+the VET method for radiation pressure dominated flows is described in a
+companion paper. We present results from a suite of test problems for both the
+RT solver itself, and for dynamical problems that include radiative heating and
+cooling. These tests demonstrate that the radiative transfer solution is
+accurate, and confirm that the operator split method is stable, convergent, and
+efficient for problems of interest. We demonstrate there is no need to adopt
+ad-hoc assumptions of questionable accuracy to solve RT problems in concert
+with MHD: the computational cost for our general-purpose module for simple
+(e.g. LTE grey) problems can be comparable to or less than a single timestep of
+Athena's MHD integrators, and only few times more expensive than that for more
+general problems. (Abridged)

@@ -1,0 +1,16 @@
+In this work we present in-network techniques to improve the efficiency of
+spatial aggregate queries. Such queries are very common in a sensornet setting,
+demanding more targeted techniques for their handling. Our approach constructs
+and maintains multi-resolution cube hierarchies inside the network, which can
+be constructed in a distributed fashion. In case of failures, recovery can also
+be performed with in-network decisions. In this paper we demonstrate how
+in-network cube hierarchies can be used to summarize sensor data, and how they
+can be exploited to improve the efficiency of spatial aggregate queries. We
+show that query plans over our cube summaries can be computed in polynomial
+time, and we present a PTIME algorithm that selects the minimum number of data
+requests that can compute the answer to a spatial query. We further extend our
+algorithm to handle optimization over multiple queries, which can also be done
+in polynomial time. We discuss enriching cube hierarchies with extra summary
+information, and present an algorithm for distributed cube construction.
+Finally we investigate node and area failures, and algorithms to recover query
+results.

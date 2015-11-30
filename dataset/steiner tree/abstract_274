@@ -1,0 +1,18 @@
+Within the field of phylogenetics there is great interest in distance
+measures to quantify the dissimilarity of two trees. Recently, a new distance
+measure has been proposed: the Maximum Parsimony (MP) distance. This is based
+on the difference of the parsimony scores of a single character on both trees
+under consideration, and the goal is to find the character which maximizes this
+difference. Here we show that computation of MP distance on two \emph{binary}
+phylogenetic trees is NP-hard. This is a highly nontrivial extension of an
+earlier NP-hardness proof for two multifurcating phylogenetic trees, and it is
+particularly relevant given the prominence of binary trees in the phylogenetics
+literature. As a corollary to the main hardness result we show that computation
+of MP distance is also hard on binary trees if the number of states available
+is bounded. In fact, via a different reduction we show that it is hard even if
+only two states are available. Finally, as a first response to this hardness we
+give a simple Integer Linear Program (ILP) formulation which is capable of
+computing the MP distance exactly for small trees (and for larger trees when
+only a small number of character states are available) and which is used to
+computationally verify several auxiliary results required by the hardness
+proofs.

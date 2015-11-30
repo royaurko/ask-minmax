@@ -1,0 +1,19 @@
+We consider an index data structure for similar strings. The generalized
+suffix tree can be a solution for this. The generalized suffix tree of two
+strings $A$ and $B$ is a compacted trie representing all suffixes in $A$ and
+$B$. It has $|A|+|B|$ leaves and can be constructed in $O(|A|+|B|)$ time.
+However, if the two strings are similar, the generalized suffix tree is not
+efficient because it does not exploit the similarity which is usually
+represented as an alignment of $A$ and $B$.
+  In this paper we propose a space/time-efficient suffix tree of alignment
+which wisely exploits the similarity in an alignment. Our suffix tree for an
+alignment of $A$ and $B$ has $|A| + l_d + l_1$ leaves where $l_d$ is the sum of
+the lengths of all parts of $B$ different from $A$ and $l_1$ is the sum of the
+lengths of some common parts of $A$ and $B$. We did not compromise the pattern
+search to reduce the space. Our suffix tree can be searched for a pattern $P$
+in $O(|P|+occ)$ time where $occ$ is the number of occurrences of $P$ in $A$ and
+$B$. We also present an efficient algorithm to construct the suffix tree of
+alignment. When the suffix tree is constructed from scratch, the algorithm
+requires $O(|A| + l_d + l_1 + l_2)$ time where $l_2$ is the sum of the lengths
+of other common substrings of $A$ and $B$. When the suffix tree of $A$ is
+already given, it requires $O(l_d + l_1 + l_2)$ time.

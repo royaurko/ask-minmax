@@ -1,0 +1,11 @@
+We introduce a new Petrov-Galerkin multiscale method for the numerical
+approximation of the Helmholtz equation with large wave number $\kappa$ in
+bounded domains in $\mathbb{R}^d$. The discrete trial and test spaces are
+generated from standard mesh-based finite elements by local subscale
+corrections in the spirit of numerical homogenization. The precomputation of
+the corrections involves the solution of coercive cell problems on localized
+subdomains of size $\ell H$; $H$ being the mesh size and $\ell$ being the
+oversampling parameter. If the mesh size and the oversampling parameter are
+such that $H\kappa$ and $\log(\kappa)/\ell$ fall below some generic constants,
+the method is stable and its error is proportional to $H$; pollution effects
+are eliminated in this regime.

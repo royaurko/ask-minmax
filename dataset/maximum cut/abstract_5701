@@ -1,0 +1,16 @@
+This paper presents a novel selective constraint propagation method for
+constrained image segmentation. In the literature, many pairwise constraint
+propagation methods have been developed to exploit pairwise constraints for
+cluster analysis. However, since most of these methods have a polynomial time
+complexity, they are not much suitable for segmentation of images even with a
+moderate size, which is actually equivalent to cluster analysis with a large
+data size. Considering the local homogeneousness of a natural image, we choose
+to perform pairwise constraint propagation only over a selected subset of
+pixels, but not over the whole image. Such a selective constraint propagation
+problem is then solved by an efficient graph-based learning algorithm. To
+further speed up our selective constraint propagation, we also discard those
+less important propagated constraints during graph-based learning. Finally, the
+selectively propagated constraints are exploited based on $L_1$-minimization
+for normalized cuts over the whole image. The experimental results demonstrate
+the promising performance of the proposed method for segmentation with
+selectively propagated constraints.

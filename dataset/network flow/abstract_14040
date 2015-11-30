@@ -1,0 +1,23 @@
+We put forward a new type of spectral method for the direct numerical
+simulation of flows where anisotropy or very fine boundary layers are present.
+The mean idea is to take advantage of the fact that such structures are
+dissipative and that their presence should reduce the number of degrees of
+freedom of the flow, when paradoxically, their fine resolution incurs extra
+computational cost in most current methods. The principle of this method is to
+use a functional basis with elements that already include these fine structure
+so as to avoid these extra costs. This leads us to develop an algorithm to
+implement a spectral method for arbitrary functional bases, and in particular,
+non-orthogonal ones. We construct a basic implementation of this algorithm to
+simulate Magnetohydrodynamic (MHD) channel flows with an externally imposed,
+transverse magnetic field, where very thin boundary layers are known to develop
+along the channel walls. In this case, the sought functional basis can be built
+out of the eigenfunctions of the dissipation operator, which incorporate these
+boundary layers, and it turns out to be non-orthogonal. We validate this new
+scheme against numerical simulations of freely decaying MHD turbulence based on
+a Finite Volume code and it is found to provide accurate results. Its ability
+to fully resolve wall-bounded turbulence with a number of modes close to that
+required by the dynamics is demonstrated on a simple example. This opens the
+way to full blown simulations of MHD turbulence under very high magnetic
+fields, which were until now too computationally expensive, as the
+computational cost of the proposed method, in contrast to traditional methods,
+does not depend on the intensity of the magnetic field.

@@ -1,0 +1,19 @@
+The semantics of the Prolog ``cut'' construct is explored in the context of
+some desirable properties of logic programming systems, referred to as the
+witness properties. The witness properties concern the operational consistency
+of responses to queries. A generalization of Prolog with negation as failure
+and cut is described, and shown not to have the witness properties. A
+restriction of the system is then described, which preserves the choice and
+first-solution behaviour of cut but allows the system to have the witness
+properties.
+  The notion of cut in the restricted system is more restricted than the Prolog
+hard cut, but retains the useful first-solution behaviour of hard cut, not
+retained by other proposed cuts such as the ``soft cut''. It is argued that the
+restricted system achieves a good compromise between the power and utility of
+the Prolog cut and the need for internal consistency in logic programming
+systems. The restricted system is given an abstract semantics, which depends on
+the witness properties; this semantics suggests that the restricted system has
+a deeper connection to logic than simply permitting some computations which are
+logical.
+  Parts of this paper appeared previously in a different form in the
+Proceedings of the 1995 International Logic Programming Symposium.

@@ -1,0 +1,16 @@
+We propose a general multi-class visual recognition model, termed the
+Classifier Graph, which aims to generalize and integrate ideas from many of
+today's successful hierarchical recognition approaches. Our graph-based model
+has the advantage of enabling rich interactions between classes from different
+levels of interpretation and abstraction. The proposed multi-class system is
+efficiently learned using step by step updates. The structure consists of
+simple logistic linear layers with inputs from features that are automatically
+selected from a large pool. Each newly learned classifier becomes a potential
+new feature. Thus, our feature pool can consist both of initial manually
+designed features as well as learned classifiers from previous steps (graph
+nodes), each copied many times at different scales and locations. In this
+manner we can learn and grow both a deep, complex graph of classifiers and a
+rich pool of features at different levels of abstraction and interpretation.
+Our proposed graph of classifiers becomes a multi-class system with a recursive
+structure, suitable for deep detection and recognition of several classes
+simultaneously.

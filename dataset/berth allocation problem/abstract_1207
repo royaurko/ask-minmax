@@ -1,0 +1,14 @@
+Traditional parallel schedulers running on cluster supercomputers support
+only static scheduling, where the number of processors allocated to an
+application remains fixed throughout the execution of the job. This results in
+under-utilization of idle system resources thereby decreasing overall system
+throughput. In our research, we have developed a prototype framework called
+ReSHAPE, which supports dynamic resizing of parallel MPI applications executing
+on distributed memory platforms. The resizing library in ReSHAPE includes
+support for releasing and acquiring processors and efficiently redistributing
+application state to a new set of processors. In this paper, we derive an
+algorithm for redistributing two-dimensional block-cyclic arrays from $P$ to
+$Q$ processors, organized as 2-D processor grids. The algorithm ensures a
+contention-free communication schedule for data redistribution if $P_r \leq
+Q_r$ and $P_c \leq Q_c$. In other cases, the algorithm implements circular row
+and column shifts on the communication schedule to minimize node contention.

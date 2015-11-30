@@ -1,0 +1,11 @@
+In this paper we solve on GPUs massive problems with large amount of data,
+which are not appropriate for solution with the SIMD technology. For the given
+problem we consider a three-level parallelization. The multithreading of CPU is
+used at the top level and graphic processors for massive computing. For solving
+problems of cluster analysis on GPUs the nearest neighbor method (NNM) is
+developed. This algorithm allows us to handle up to 2 millions records with
+number of features up to 25. Since sequential and parallel algorithms are
+fundamentally different, it is difficult to compare the computation times.
+However, some comparisons are made. The gain in the computing time is about 10
+times. We plan to increase this factor up to 50-100 after fine tuning of
+algorithms.

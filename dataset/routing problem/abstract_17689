@@ -1,0 +1,13 @@
+We present a data augmentation scheme to perform Markov chain Monte Carlo
+inference for models where data generation involves a rejection sampling
+algorithm. Our idea, which seems to be missing in the literature, is a simple
+scheme to instantiate the rejected proposals preceding each data point. The
+resulting joint probability over observed and rejected variables can be much
+simpler than the marginal distribution over the observed variables, which often
+involves intractable integrals. We consider three problems, the first being the
+modeling of flow-cytometry measurements subject to truncation. The second is a
+Bayesian analysis of the matrix Langevin distribution on the Stiefel manifold,
+and the third, Bayesian inference for a nonparametric Gaussian process density
+model. The latter two are instances of problems where Markov chain Monte Carlo
+inference is doubly-intractable. Our experiments demonstrate superior
+performance over state-of-the-art sampling algorithms for such problems.

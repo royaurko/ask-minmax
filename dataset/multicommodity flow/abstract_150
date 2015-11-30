@@ -1,0 +1,17 @@
+Polymer dynamics in a turbulent flow is a problem spanning several orders of
+magnitude of length and time scales. A microscopic simulation covering all
+those scales from the polymer segment to the inertial scale of turbulence seems
+impossible within the foreseeable future. We propose a multiscale simulation
+strategy to enhance the spatio-temporal resolution of local Lagrangian
+turbulent flow by matching two different simulation techniques, i. e. direct
+numerical simulation for the flow as a whole, and the lattice Boltzmann method
+coupled to polymer dynamics at the Kolmogorov dissipation scale. Local
+turbulent flows sampled by Lagrangian tracer particles in the direct numerical
+simulation are reproduced in the lattice Boltzmann model with a finer
+resolution, by supplying the latter with both the correct initial condition as
+well as the correct time-dependent boundary condition, sampled from the former.
+When combined with a Molecular Dynamics simulation of a polymer chain in the
+lattice Boltzmann model, it provides a strategy to simulate the \emph{passive}
+dynamics of a polymer chain in a turbulent flow covering all those scales.
+While this approach allows for a fairly realistic model of the macromolecule,
+the back-coupling to the flow on the large scales is missing.

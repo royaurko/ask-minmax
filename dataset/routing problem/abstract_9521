@@ -1,0 +1,14 @@
+The problem of minimizing a continuously differentiable convex function over
+an intersection of closed convex sets is ubiquitous in applied mathematics. It
+is particularly interesting when it is easy to project onto each separate set,
+but nontrivial to project onto their intersection. Algorithms based on Newton's
+method such as the interior point method are viable for small to medium-scale
+problems. However, modern applications in statistics, engineering, and machine
+learning are posing problems with potentially tens of thousands of parameters
+or more. We revisit this convex programming problem and propose an algorithm
+that scales well with dimensionality. Our proposal is an instance of a
+sequential unconstrained minimization technique and revolves around three
+ideas: the majorization-minimization (MM) principle, the classical penalty
+method for constrained optimization, and quasi-Newton acceleration of
+fixed-point algorithms. The performance of our distance majorization algorithms
+is illustrated in several applications.

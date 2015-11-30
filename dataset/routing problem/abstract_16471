@@ -1,0 +1,17 @@
+We consider asynchronous multiprocessor systems where processes communicate
+by accessing shared memory. Exchange of information among processes in such a
+multiprocessor necessitates costly memory accesses called \emph{remote memory
+references} (RMRs), which generate communication on the interconnect joining
+processors and main memory. In this paper we compare two popular shared memory
+architecture models, namely the \emph{cache-coherent} (CC) and
+\emph{distributed shared memory} (DSM) models, in terms of their power for
+solving synchronization problems efficiently with respect to RMRs. The
+particular problem we consider entails one process sending a "signal" to a
+subset of other processes. We show that a variant of this problem can be solved
+very efficiently with respect to RMRs in the CC model, but not so in the DSM
+model, even when we consider amortized RMR complexity.
+  To our knowledge, this is the first separation in terms of amortized RMR
+complexity between the CC and DSM models. It is also the first separation in
+terms of RMR complexity (for asynchronous systems) that does not rely in any
+way on wait-freedom---the requirement that a process makes progress in a
+bounded number of its own steps.

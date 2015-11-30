@@ -1,0 +1,22 @@
+Applying assignment methods to compute user-equilibrium route choice is very
+common in traffic planning. It is common sense that vehicular traffic arranges
+in a user-equilibrium based on generalized costs in which travel time is a
+major factor. Surprisingly travel time has not received much attention for the
+route choice of pedestrians. In microscopic simulations of pedestrians the
+vastly dominating paradigm for the computation of the preferred walking
+direction is set into the direction of the (spatially) shortest path. For
+situations where pedestrians have travel time as primary determinant for their
+walking behavior it would be desirable to also have an assignment method in
+pedestrian simulations. To apply existing (road traffic) assignment methods
+with simulations of pedestrians one has to reduce the nondenumerably many
+possible pedestrian trajectories to a small subset of routes which represent
+the main, relevant, and significantly distinguished routing alternatives. All
+except one of these routes will mark detours, i.e. not the shortest connection
+between origin and destination. The proposed assignment method is intended to
+work with common operational models of pedestrian dynamics. These - as
+mentioned before - usually send pedestrians into the direction of the spatially
+shortest path. Thus, all detouring routes have to be equipped with intermediate
+destinations, such that pedestrians can do a detour as a piecewise connection
+of segments on which they walk into the direction of the shortest path. One has
+then to take care that the transgression from one segment to the following one
+no artifacts are introduced into the pedestrian trajectory.

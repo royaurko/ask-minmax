@@ -1,0 +1,25 @@
+In recent years, the use of PACS for radiation therapy has become the norm in
+hospital environment and has suggested for collecting data and management from
+different TPSs with DICOM objects. However, some TPS does not provide the DVH
+exportation with text or other format. In addition, plan review systems for
+various TPSs often allow DVH recalculation with different algorithms. These
+algorithms result in the inevitable discrepancy between the values obtained
+with the recalculation and those obtained with TPS itself. The purpose of this
+study was to develop a simple method for generating reproducible DVH values
+obtained from the TPSs. Treatment planning information including structures and
+delivered dose was exported by the DICOM format from planning systems. The
+supersampling and trilinear interpolation methods were employed to calculate
+DVH data from 35 treatment plans. The discrepancies between DVHs extracted from
+each TPS and the proposed calculation method were evaluated with respect to the
+supersampling ratio. The volume, minimum dose, maximum dose, and mean dose were
+compared. The variation of DVHs from multiple TPSs was compared with a
+commercially available treatment planning comparison tool. The overall
+comparisons of the volume, minimum dose, maximum dose, and mean dose showed
+that the proposed method generated relatively smaller discrepancies compared
+with TPS than those by MIM software and TPS. As the structure volume decreased,
+the overall percent difference increased. Most large difference was observed in
+the small organs such as eye ball, lens, optic nerve which had below 10 cc
+volume. A simple and useful technique was developed to generate DVH with
+acceptable error from a proprietary TPS. This study provides the convenient and
+common framework which allows to use a single well-managed storage solution for
+the independent information system.

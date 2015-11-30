@@ -1,0 +1,22 @@
+Systems incorporating many particles such as agents, molecules, stars or
+birds are gaining popularity as research topics. When modeled, the state space
+of the model is often very high-dimensional, using a separate dimension for
+each variable of each particle. However, the interesting properties of such a
+system can often be described by very few variables such as density, flow or
+other averaged quantities. The problem is that the dynamics in this
+low-dimensional space is often unknown or very hard to find.
+  In this paper, we describe and discuss an approach to numerically construct
+this low-dimensional space including the dynamics for a broad range of systems.
+The key idea is to transform observed values of the system, such as density or
+flow, into a new state space. In this new space, every point has enough
+information for the new dynamics to decide what the next point will be. In this
+case, we call the state \textit{closed}. The points in this new space cannot be
+interpreted directly in their original, physical sense. Hence we need an
+additional observer function that reconstructs the original observations given
+any point in the new space. Since the points in this new space are closed and
+observable, we call them \textit{closed observables}.
+  All abstract concepts are complemented by illustrative examples and
+algorithms to compute the new space. We use the original model to produce
+observations and then re-parametrize the output by diffusion maps. The new
+dynamics including parameters and the new observer are computed numerically as
+well.

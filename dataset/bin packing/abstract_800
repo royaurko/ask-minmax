@@ -1,0 +1,19 @@
+Over the past two decades, fair resource allocation problems have received
+considerable attention in a variety of application areas. While polynomial time
+distributed algorithms have been designed for max-min fair resource allocation,
+the design of distributed algorithms with convergence guarantees for the more
+general $\alpha-$fair allocations received little attention. In this paper, we
+study weighted $\alpha-$fair packing problems, that is, the problems of
+maximizing the objective functions $\sum_j w_j x_j^{1-\alpha}/(1-\alpha)$ when
+$\alpha > 0$, $\alpha \neq 1$ and $\sum_j w_j \ln x_j$ when $\alpha = 1$ over
+linear constraints $Ax \leq b$, $x\geq 0$, where $w_j$ are positive weights and
+$A$ and $b$ are non-negative. We consider the distributed computation model
+that was used for packing linear programs and network utility maximization
+problems. Under this model, we provide a distributed algorithm for general
+$\alpha$. The algorithm uses simple local update rules and is stateless
+(namely, it allows asynchronous updates, is self-stabilizing, and allows
+incremental and local adjustments). The algorithm converges to approximate
+solutions in running times that have an inverse polynomial dependence on the
+approximation parameter $\varepsilon$ and poly-logarithmic dependence on the
+problem size. These are the best convergence times known for the $\alpha-$fair
+packing problems.

@@ -1,0 +1,13 @@
+A upscaled lattice Boltzmann method (LBM) for flow simulations in
+heterogeneous porous media, at both pore and Darcy scales, is proposed in this
+paper. In the micro-scale simulations, we model flows using LBM with the
+modified Guo et al. algorithm where we replace the force model with a simple
+Shan-Chen force model. The proposed upscaled LBM uses coarser grids to
+represent the effects of the fine-grid (pore-scale) simulations. For the
+upscaled LBM, effective properties and reduced-order models are proposed as we
+coarsen the grid. The effective properties are computed using solutions of
+local problems (e.g., by performing local LBM simulations) subject to some
+boundary conditions. A upscaled LBM that can reduce the computational
+complexity of existing LBM and transfer the information between different
+scales is implemented. The results of coarse-grid, reduced-order, simulations
+agree very well with averaged results obtained using a fine grid.

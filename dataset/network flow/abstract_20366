@@ -1,0 +1,15 @@
+Motivation: We investigate whether a template-based classification pipeline
+could be used to identify immunophenotypes in (and thereby classify) a
+heterogeneous disease with many subtypes. The disease we consider here is Acute
+Myeloid Leukemia, which is heterogeneous at the morphologic, cytogenetic and
+molecular levels, with several known subtypes. The prognosis and treatment for
+AML depends on the subtype.
+  Results: We apply flowMatch, an algorithmic pipeline for flow cytometry data
+created in earlier work, to compute templates succinctly summarizing classes of
+AML and healthy samples. We develop a scoring function that accounts for
+features of the AML data such as heterogeneity to identify immunophenotypes
+corresponding to various AML subtypes, including APL. All of the AML samples in
+the test set are classified correctly with high confidence.
+  Availability: flowMatch is available at
+www.bioconductor.org/packages/devel/bioc/html/flowMatch.html; programs specific
+to immunophenotyping AML are at www.cs.purdue.edu/homes/aazad/software.html.

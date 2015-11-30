@@ -1,0 +1,21 @@
+The sensor network localization, SNL, problem in embedding dimension r,
+consists of locating the positions of wireless sensors, given only the
+distances between sensors that are within radio range and the positions of a
+subset of the sensors (called anchors). Current solution techniques relax this
+problem to a weighted, nearest, (positive) semidefinite programming, SDP,
+completion problem, by using the linear mapping between Euclidean distance
+matrices, EDM, and semidefinite matrices. The resulting SDP is solved using
+primal-dual interior point solvers, yielding an expensive and inexact solution.
+  This relaxation is highly degenerate in the sense that the feasible set is
+restricted to a low dimensional face of the SDP cone, implying that the Slater
+constraint qualification fails. Cliques in the graph of the SNL problem give
+rise to this degeneracy in the SDP relaxation. In this paper, we take advantage
+of the absence of the Slater constraint qualification and derive a technique
+for the SNL problem, with exact data, that explicitly solves the corresponding
+rank restricted SDP problem. No SDP solvers are used. For randomly generated
+instances, we are able to efficiently solve many huge instances of this NP-hard
+problem to high accuracy, by finding a representation of the minimal face of
+the SDP cone that contains the SDP matrix representation of the EDM. The main
+work of our algorithm consists in repeatedly finding the intersection of
+subspaces that represent the faces of the SDP cone that correspond to cliques
+of the SNL problem.

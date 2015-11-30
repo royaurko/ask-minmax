@@ -1,0 +1,22 @@
+Many regression problems involve not one but several response variables
+(y's). Often the responses are suspected to share a common underlying
+structure, in which case it may be advantageous to share information across
+them; this is known as multitask learning. As a special case, we can use
+multiple responses to better identify shared predictive features -- a project
+we might call multitask feature selection.
+  This thesis is organized as follows. Section 1 introduces feature selection
+for regression, focusing on ell_0 regularization methods and their
+interpretation within a Minimum Description Length (MDL) framework. Section 2
+proposes a novel extension of MDL feature selection to the multitask setting.
+The approach, called the "Multiple Inclusion Criterion" (MIC), is designed to
+borrow information across regression tasks by more easily selecting features
+that are associated with multiple responses. We show in experiments on
+synthetic and real biological data sets that MIC can reduce prediction error in
+settings where features are at least partially shared across responses. Section
+3 surveys hypothesis testing by regression with a single response, focusing on
+the parallel between the standard Bonferroni correction and an MDL approach.
+Mirroring the ideas in Section 2, Section 4 proposes a novel MIC approach to
+hypothesis testing with multiple responses and shows that on synthetic data
+with significant sharing of features across responses, MIC sometimes
+outperforms standard FDR-controlling methods in terms of finding true positives
+for a given level of false positives. Section 5 concludes.

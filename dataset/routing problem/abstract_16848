@@ -1,0 +1,16 @@
+Iterative imperative programs can be considered as infinite-state systems
+computing over possibly unbounded domains. Studying reachability in these
+systems is challenging as it requires to deal with an infinite number of states
+with standard backward or forward exploration strategies. An approach that we
+call Constraint-based reachability, is proposed to address reachability
+problems by exploring program states using a constraint model of the whole
+program. The keypoint of the approach is to interpret imperative constructions
+such as conditionals, loops, array and memory manipulations with the
+fundamental notion of constraint over a computational domain. By combining
+constraint filtering and abstraction techniques, Constraint-based reachability
+is able to solve reachability problems which are usually outside the scope of
+backward or forward exploration strategies. This paper proposes an
+interpretation of classical filtering consistencies used in Constraint
+Programming as abstract domain computations, and shows how this approach can be
+used to produce a constraint solver that efficiently generates solutions for
+reachability problems that are unsolvable by other approaches.

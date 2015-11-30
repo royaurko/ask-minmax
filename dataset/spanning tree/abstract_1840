@@ -1,0 +1,16 @@
+Given a set of leaf-labeled trees with identical leaf sets, the well-known
+"Maximum Agreement SubTree" problem (MAST) consists of finding a subtree
+homeomorphically included in all input trees and with the largest number of
+leaves. Its variant called "Maximum Compatible Tree" (MCT) is less stringent,
+as it allows the input trees to be refined. Both problems are of particular
+interest in computational biology, where trees encountered have often small
+degrees.
+  In this paper, we study the parameterized complexity of MAST and MCT with
+respect to the maximum degree, denoted by D, of the input trees. It is known
+that MAST is polynomial for bounded D. As a counterpart, we show that the
+problem is W[1]-hard with respect to parameter D. Moreover, relying on recent
+advances in parameterized complexity we obtain a tight lower bound: while MAST
+can be solved in O(N^{O(D)}) time where N denotes the input length, we show
+that an O(N^{o(D)}) bound is not achievable, unless SNP is contained in SE. We
+also show that MCT is W[1]-hard with respect to D, and that MCT cannot be
+solved in O(N^{o(2^{D/2})}) time, SNP is contained in SE.

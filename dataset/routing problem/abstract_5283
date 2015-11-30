@@ -1,0 +1,20 @@
+Let us consider the singularly perturbed model problem
+$Lu:=-\varepsilon\Delta u-bu_x+c u =f$ with homogeneous Dirichlet boundary
+conditions on $\Gamma=\partial\Omega$ $u|_\Gamma =0$ on the unit-square
+$\Omega=(0,1)^2$. Assuming that $b>0$ is of order one, the small perturbation
+parameter $0<\varepsilon\ll 1$ causes boundary layers in the solution. In order
+to solve above problem numerically, it is beneficial to resolve these layers.
+On properly layer-adapted meshes we can apply finite element methods and
+observe convergence.
+  We will consider standard Galerkin and stabilised FEM applied to above
+problem. Therein the polynomial order $p$ will be usually greater then two,
+i.e. we will consider higher-order methods. Most of the analysis presented here
+is done in the standard energy norm.
+  Nevertheless, the question arises: Is this the right norm for this kind of
+problem, especially if characteristic layers occur? We will address this
+question by looking into a balanced norm.
+  Finally, a-posteriori error analysis is an important tool to construct
+adapted meshes iteratively by solving discrete problems, estimating the error
+and adjusting the mesh accordingly. We will present estimates on the Green's
+function associated with $L$, that can be used to derive pointwise error
+estimators.

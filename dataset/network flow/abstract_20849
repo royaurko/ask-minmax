@@ -1,0 +1,23 @@
+New operating systems for mobile devices allow their users to download
+millions of applications created by various individual programmers, some of
+which may be malicious or flawed. In order to detect that an application is
+malicious, monitoring its operation in a real environment for a significant
+period of time is often required. Mobile devices have limited computation and
+power resources and thus are limited in their monitoring capabilities. In this
+paper we propose an efficient collaborative monitoring scheme that harnesses
+the collective resources of many mobile devices, "vaccinating" them against
+potentially unsafe applications. We suggest a new local information flooding
+algorithm called "TTL Probabilistic Propagation" (TPP). The algorithm
+periodically monitors one or more application and reports its conclusions to a
+small number of other mobile devices, who then propagate this information
+onwards. The algorithm is analyzed, and is shown to outperform existing state
+of the art information propagation algorithms, in terms of convergence time as
+well as network overhead. The maximal "load" of the algorithm (the fastest
+arrival rate of new suspicious applications, that can still guarantee complete
+monitoring), is analytically calculated and shown to be significantly superior
+compared to any non-collaborative approach. Finally, we show both analytically
+and experimentally using real world network data that implementing the proposed
+algorithm significantly reduces the number of infected mobile devices. In
+addition, we analytically prove that the algorithm is tolerant to several types
+of Byzantine attacks where some adversarial agents may generate false
+information, or abuse the algorithm in other ways.

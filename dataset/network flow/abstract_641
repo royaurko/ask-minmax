@@ -1,0 +1,17 @@
+Current Internet performs traffic engineering (TE) by estimating traffic
+matrices on a regular schedule, and allocating flows based upon weights
+computed from these matrices. This means the allocation is based upon a guess
+of the traffic in the network based on its history. Information-Centric
+Networks on the other hand provide a finer-grained description of the traffic:
+a content between a client and a server is uniquely identified by its name, and
+the network can therefore learn the size of different content items, and
+perform traffic engineering and resource allocation accordingly. We claim that
+Information-Centric Networks can therefore provide a better handle to perform
+traffic engineering, resulting in significant performance gain.
+  We present a mechanism to perform such resource allocation. We see that our
+traffic engineering method only requires knowledge of the flow size (which, in
+ICN, can be learned from previous data transfers) and outperforms a min-MLU
+allocation in terms of response time. We also see that our method identifies
+the traffic allocation patterns similar to that of min-MLU without having
+access to the traffic matrix ahead of time. We show a very significant gain in
+response time where min MLU is almost 50% slower than our ICN-based TE method.

@@ -1,0 +1,16 @@
+We propose a method for multi-scale hybrid simulations of molecular dynamics
+(MD) and computational fluid dynamics (CFD). In the method, usual lattice-mesh
+based simulations are applied for CFD level, but each lattice is associated
+with a small MD cell which generates a "local stress" according to a "local
+flow field" given from CFD instead of using any constitutive functions at CFD
+level. We carried out the hybrid simulations for some elemental flow problems
+of simple Lennard-Jones liquids and compared the results with those obtained by
+usual CFDs with a Newtonian constitutive relation in order to examine the
+validity of our hybrid simulation method. It is demonstrated that our hybrid
+simulations successfully reproduced the correct flow behavior obtained from
+usual CFDs as far as the mesh size $\Delta x$ and the time-step $\Delta t$ of
+CFD are not too large comparing to the system size $l_{\rm MD}$ and the
+sampling duration $t_{\rm MD}$ of MD simulations performed at each time step of
+CFDs. Otherwise, simulations are affected by large fluctuations due to poor
+statistical averages taken in the MD part. Properties of the fluctuations are
+analyzed in detail.

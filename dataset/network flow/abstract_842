@@ -1,0 +1,25 @@
+To control for multiscale effects in networks, one can transform the matrix
+of (in general) weighted, directed internodal flows to bistochastic
+(doubly-stochastic) form, using the iterative proportional fitting
+(Sinkhorn-Knopp) procedure, which alternatively scales row and column sums to
+all equal 1. The dominant entries in the bistochasticized table can then be
+employed for network reduction, using strong component hierarchical clustering.
+We illustrate various facets of this well-established, widely-applied two-stage
+algorithm with the 3, 107 x 3, 107 (asymmetric) 1995-2000 intercounty migration
+flow table for the United States. We compare the results obtained with ones
+using the disparity filter, for "extracting the "multiscale backbone of complex
+weighted networks", recently put forth by Serrano, Boguna and Vespignani (SBV)
+(Proc. Natl. Acad. Sci. 106 [2009], 6483), upon which we have briefly commented
+(Proc. Natl. Acad. Sci. 106 [2009], E66). The performance of the bistochastic
+filter appears to be superior-at least in this specific case-in two respects:
+(1) it requires far fewer links to complete a stongly-connected network
+backbone; and (2) it "belittles" small flows and nodes less-a principal
+desideratum of SBV-in the sense that the correlations of the nonzero raw flows
+are considerably weaker with the corresponding bistochastized links than with
+the significance levels yielded by the disparity filter. Additional comparative
+studies--as called for by SBV-of these two filtering procedures, in particular
+as regards their topological properties, should be of considerable interest.
+Relatedly, in its many geographic applications, the two-stage procedure
+has--with rare exceptions-clustered contiguous areas, often reconstructing
+traditional regions (islands, for example), even though no contiguity
+constraints, at all, are imposed beforehand.

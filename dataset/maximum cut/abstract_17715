@@ -1,0 +1,18 @@
+In this paper, we consider a three node relay network comprising a source, a
+relay, and a destination. The source transmits the message to the destination
+using hybrid automatic repeat request (HARQ) with incremental redundancy (IR).
+The relay overhears the transmitted message, amplifies it using a variable gain
+amplifier, and then forwards the message to the destination. This latter
+combines both the source and the relay message and tries to decode the
+information. In case of decoding failure, the destination sends a negative
+acknowledgement. A new replica of the message containing new parity bits is
+then transmitted in the subsequent HARQ round. This process continues until
+successful decoding occurs at the destination or a maximum number $M$ of rounds
+is reached. We study the performance of HARQ-IR over the considered relay
+channel from an information theoretic perspective. We derive exact expressions
+and bounds for the information outage probability, the average number of
+transmissions, and the average transmission rate. Moreover, we evaluate the
+delay experienced by Poisson arriving packets over the considered relay
+network. We also provide analytical expressions for the expected waiting time,
+the sojourn time, and the energy efficiency. The derived exact expressions are
+validated by Monte Carlo simulations.

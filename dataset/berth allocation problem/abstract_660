@@ -1,0 +1,24 @@
+We develop a framework to optimize the tradeoff between diversity,
+multiplexing, and delay in MIMO systems to minimize end-to-end distortion. We
+first focus on the diversity-multiplexing tradeoff in MIMO systems, and develop
+analytical results to minimize distortion of a vector quantizer concatenated
+with a space-time MIMO channel code. In the high SNR regime we obtain a
+closed-form expression for the end-to-end distortion as a function of the
+optimal point on the diversity-multiplexing tradeoff curve. For large but
+finite SNR we find this optimal point via convex optimization. We then consider
+MIMO systems using ARQ retransmission to provide additional diversity at the
+expense of delay. For sources without a delay constraint, distortion is
+minimized by maximizing the ARQ window size. This results in an ARQ-enhanced
+multiplexing-diversity tradeoff region, with distortion minimized over this
+region in the same manner as without ARQ. Under a source delay constraint the
+problem formulation changes to account for delay distortion associated with
+random message arrival and random ARQ completion times. We use a dynamic
+programming formulation to capture the channel diversity-multiplexing tradeoff
+at finite SNR as well as the random arrival and retransmission dynamics; we
+solve for the optimal multiplexing-diversity-delay tradeoff to minimize
+end-to-end distortion associated with the source encoder, channel, and ARQ
+retransmissions. Our results show that a delay-sensitive system should adapt
+its operating point on the diversity-multiplexing-delay tradeoff region to the
+system dynamics. We provide numerical results that demonstrate significant
+performance gains of this adaptive policy over a static allocation of
+diversity/multiplexing in the channel code and a static ARQ window size.

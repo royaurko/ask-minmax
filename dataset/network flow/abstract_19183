@@ -1,0 +1,16 @@
+Deep neural networks (DNN) have achieved huge practical success in recent
+years. However, its theoretical properties (in particular generalization
+ability) are not yet very clear, since existing error bounds for neural
+networks cannot be directly used to explain the statistical behaviors of
+practically adopted DNN models (which are multi-class in their nature and may
+contain convolutional layers). To tackle the challenge, we derive a new margin
+bound for DNN in this paper, in which the expected 0-1 error of a DNN model is
+upper bounded by its empirical margin error plus a Rademacher Average based
+capacity term. This new bound is very general and is consistent with the
+empirical behaviors of DNN models observed in our experiments. According to the
+new bound, minimizing the empirical margin error can effectively improve the
+test performance of DNN. We therefore propose large margin DNN algorithms,
+which impose margin penalty terms to the cross entropy loss of DNN, so as to
+reduce the margin error during the training process. Experimental results show
+that the proposed algorithms can achieve significantly smaller empirical margin
+errors, as well as better test performances than the standard DNN algorithm.

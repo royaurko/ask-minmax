@@ -1,0 +1,17 @@
+Data center networks need to provide low latency, especially at the tail, as
+demanded by many interactive applications. To improve tail latency, existing
+approaches require modifications to switch hardware and/or end-host operating
+systems, making them difficult to be deployed. We present the design,
+implementation, and evaluation of RepNet, an application layer transport that
+can be deployed today. RepNet exploits the fact that only a few paths among
+many are congested at any moment in the network, and applies simple flow
+replication to mice flows to opportunistically use the less congested path.
+RepNet has two designs for flow replication: (1) RepSYN, which only replicates
+SYN packets and uses the first connection that finishes TCP handshaking for
+data transmission, and (2) RepFlow which replicates the entire mice flow. We
+implement RepNet on {\tt node.js}, one of the most commonly used platforms for
+networked interactive applications. {\tt node}'s single threaded event-loop and
+non-blocking I/O make flow replication highly efficient. Performance evaluation
+on a real network testbed and in Mininet reveals that RepNet is able to reduce
+the tail latency of mice flows, as well as application completion times, by
+more than 50\%.

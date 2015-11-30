@@ -1,0 +1,18 @@
+Given a quadratic map Q : K^n -> K^k defined over a computable subring D of a
+real closed field K, and a polynomial p(Y_1,...,Y_k) of degree d, we consider
+the zero set Z=Z(p(Q(X)),K^n) of the polynomial p(Q(X_1,...,X_n)). We present a
+procedure that computes, in (dn)^O(k) arithmetic operations in D, a set S of
+(real univariate representations of) sampling points in K^n that intersects
+nontrivially each connected component of Z. As soon as k=o(n), this is faster
+than the standard methods that all have exponential dependence on n in the
+complexity. In particular, our procedure is polynomial-time for constant k. In
+contrast, the best previously known procedure (due to A.Barvinok) is only
+capable of deciding in n^O(k^2) operations the nonemptiness (rather than
+constructing sampling points) of the set Z in the case of p(Y)=sum_i Y_i^2 and
+homogeneous Q.
+  A by-product of our procedure is a bound (dn)^O(k) on the number of connected
+components of Z.
+  The procedure consists of exact symbolic computations in D and outputs
+vectors of algebraic numbers. It involves extending K by infinitesimals and
+subsequent limit computation by a novel procedure that utilizes knowledge of an
+explicit isomorphism between real algebraic sets.

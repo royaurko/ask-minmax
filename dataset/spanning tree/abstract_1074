@@ -1,0 +1,16 @@
+The concept of pedant tree-connectivity was introduced by Hager in 1985. For
+a graph $G=(V,E)$ and a set $S\subseteq V(G)$ of at least two vertices,
+\emph{an $S$-Steiner tree} or \emph{a Steiner tree connecting $S$} (or simply,
+\emph{an $S$-tree}) is a such subgraph $T=(V',E')$ of $G$ that is a tree with
+$S\subseteq V'$. For an $S$-Steiner tree, if the degree of each vertex in $S$
+is equal to one, then this tree is called a \emph{pedant $S$-Steiner tree}. Two
+pedant $S$-Steiner trees $T$ and $T'$ are said to be \emph{internally disjoint}
+if $E(T)\cap E(T')=\varnothing$ and $V(T)\cap V(T')=S$. For $S\subseteq V(G)$
+and $|S|\geq 2$, the \emph{local pedant tree-connectivity} $\tau_G(S)$ is the
+maximum number of internally disjoint pedant $S$-Steiner trees in $G$. For an
+integer $k$ with $2\leq k\leq n$, \emph{pedant tree $k$-connectivity} is
+defined as $\tau_k(G)=\min\{\tau_G(S)\,|\,S\subseteq V(G),|S|=k\}$. In this
+paper, we prove that for any two connected graphs $G$ and $H$, $\tau_3(G\Box
+H)\geq
+\min\{3\lfloor\frac{\tau_3(G)}{2}\rfloor,3\lfloor\frac{\tau_3(H)}{2}\rfloor\}$.
+Moreover, the bound is sharp.

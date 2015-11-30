@@ -1,0 +1,23 @@
+Due to the distribution of linked data across the web, the methods that
+process federated queries through a distributed approach are more attractive to
+the users and have gained more prosperity. In distributed processing of
+federated queries, we need methods and procedures to execute the query in an
+optimal manner. Most of the existing methods perform the optimization task
+based on some statistical information, whereas the query processor does not
+have precise statistical information about their properties, since the data
+sources are autonomous. When precise statistics are not available, the
+possibility of wrong estimations will highly increase, and may lead to
+inefficient execution of the query at runtime. Another problem of the existing
+methods is that in the optimization phase, they assume that runtime conditions
+of query execution are stable, while the environment in which federated queries
+are executed over linked data is dynamic and non-predictable. By considering
+these two problems, there is a great potential for exploiting the federated
+query processing techniques in an adaptive manner. In this paper, an adaptive
+method is proposed for processing federated queries over linked data, based on
+the concept of routing the tuples. The proposed method, named ADQUEX, is able
+to execute the query effectively without any prior statistical information.
+This method can change the query execution plan at runtime so that less
+intermediate results are produced. It can also adapt the execution plan to new
+situation if unpredicted network latencies arise. Extensive evaluation of our
+method by running real queries over well-known linked datasets shows very good
+results especially for complex queries.

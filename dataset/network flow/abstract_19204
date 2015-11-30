@@ -1,0 +1,17 @@
+For distributed sensor/relay networks, high reliability and power efficiency
+are often required. However, several implementation issues arise in practice.
+One such problem is that all the distributed transmitters have limited power
+supply since the power source of the transmitters cannot be recharged
+continually. To resolve this, distributed beamforming has been proposed as a
+viable solution where all distributed transmitters seek to align in phase at
+the receiver end. However, it is difficult to implement such transmit
+beamforming in a distributed fashion in practice since perfect channel state
+information (CSI) need to be made available at all distributed transmitters,
+requiring tremendous overhead to feed back CSI from the receiver to all
+distributed transmitters.
+  In this paper, we propose a novel algorithm that belongs to the category of
+deterministic phase adjustment algorithm: the Deterministic Differential Search
+Algorithm (DDSA), where the differences between the measured received signal
+strength (RSS) are utilized judiciously to help us predict the deterministic
+phase adjustment done at distributed transmitters. Numerical simulations
+demonstrate rapid convergence to a pre-determined threshold.

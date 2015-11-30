@@ -1,0 +1,18 @@
+Designing short DNA words is a problem of constructing a set (i.e., code) of
+n DNA strings (i.e., words) with the minimum length such that the Hamming
+distance between each pair of words is at least k and the n words satisfy a set
+of additional constraints. This problem has applications in, e.g., DNA
+self-assembly and DNA arrays. Previous works include those that extended
+results from coding theory to obtain bounds on code and word sizes for
+biologically motivated constraints and those that applied heuristic local
+searches, genetic algorithms, and randomized algorithms. In particular, Kao,
+Sanghi, and Schweller (2009) developed polynomial-time randomized algorithms to
+construct n DNA words of length within a multiplicative constant of the
+smallest possible word length (e.g., 9 max{log n, k}) that satisfy various sets
+of constraints with high probability. In this paper, we give deterministic
+polynomial-time algorithms to construct DNA words based on derandomization
+techniques. Our algorithms can construct n DNA words of shorter length (e.g.,
+2.1 log n + 6.28 k) and satisfy the same sets of constraints as the words
+constructed by the algorithms of Kao et al. Furthermore, we extend these new
+algorithms to construct words that satisfy a larger set of constraints for
+which the algorithms of Kao et al. do not work.

@@ -1,0 +1,18 @@
+For a long time biologists have used visual representations of biochemical
+networks to gain a quick overview of important structural properties. Recently
+SBGN, the Systems Biology Graphical Notation, has been developed to standardise
+the way in which such graphical maps are drawn in order to facilitate the
+exchange of information. Its qualitative Process Diagrams (SBGN-PD) are based
+on an implicit Process Flow Abstraction (PFA) that can also be used to
+construct quantitative representations, which can be used for automated
+analyses of the system. Here we explicitly describe the PFA that underpins
+SBGN-PD and define attributes for SBGN-PD glyphs that make it possible to
+capture the quantitative details of a biochemical reaction network. We
+implemented SBGNtext2BioPEPA, a tool that demonstrates how such quantitative
+details can be used to automatically generate working Bio-PEPA code from a
+textual representation of SBGN-PD that we developed. Bio-PEPA is a process
+algebra that was designed for implementing quantitative models of concurrent
+biochemical reaction systems. We use this approach to compute the expected
+delay between input and output using deterministic and stochastic simulations
+of the MAPK signal transduction cascade. The scheme developed here is general
+and can be easily adapted to other output formalisms.

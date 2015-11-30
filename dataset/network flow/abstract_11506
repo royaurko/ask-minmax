@@ -1,0 +1,16 @@
+In this paper we consider the problem of monitoring detecting separation of
+agents from a base station in robotic and sensor networks. Such separation can
+be caused by mobility and/or failure of the agents. While separation/cut
+detection may be performed by passing messages between a node and the base in
+static networks, such a solution is impractical for networks with high
+mobility, since routes are constantly changing. We propose a distributed
+algorithm to detect separation from the base station. The algorithm consists of
+an averaging scheme in which every node updates a scalar state by communicating
+with its current neighbors. We prove that if a node is permanently disconnected
+from the base station, its state converges to $0$. If a node is connected to
+the base station in an average sense, even if not connected in any instant,
+then we show that the expected value of its state converges to a positive
+number. Therefore, a node can detect if it has been separated from the base
+station by monitoring its state. The effectiveness of the proposed algorithm is
+demonstrated through simulations, a real system implementation and experiments
+involving both static as well as mobile networks.

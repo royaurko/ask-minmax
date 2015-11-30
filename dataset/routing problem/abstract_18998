@@ -1,0 +1,18 @@
+We present a randomized distributed approximation algorithm for the metric
+uncapacitated facility location problem. The algorithm is executed on a
+bipartite graph in the Congest model yielding a (1.861 + epsilon) approximation
+factor, where epsilon is an arbitrary small positive constant. It needs
+O(n^{3/4}log_{1+epsilon}^2(n) communication rounds with high probability (n
+denoting the number of facilities and clients). To the best of our knowledge,
+our algorithm currently has the best approximation factor for the facility
+location problem in a distributed setting. It is based on a greedy sequential
+approximation algorithm by Jain et al. (J. ACM 50(6), pages: 795-824, 2003).
+The main difficulty in executing this sequential algorithm lies in dealing with
+situations, where multiple facilities are eligible for opening, but (in order
+to preserve the approximation factor of the sequential algorithm) only a subset
+of them can actually be opened. Note that while the presented runtime bound of
+our algorithm is "with high probability", the approximation factor is not "in
+expectation" but always guaranteed to be (1.861 + epsilon). Thus, our main
+contribution is a sublinear time selection mechanism that, while increasing the
+approximation factor by an arbitrary small additive term, allows us to decide
+which of the eligible facilities to open.

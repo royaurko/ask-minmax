@@ -1,0 +1,20 @@
+In many emerging applications, data streams are monitored in a network
+environment. Due to limited communication bandwidth and other resource
+constraints, a critical and practical demand is to online compress data streams
+continuously with quality guarantee. Although many data compression and digital
+signal processing methods have been developed to reduce data volume, their
+super-linear time and more-than-constant space complexity prevents them from
+being applied directly on data streams, particularly over resource-constrained
+sensor networks. In this paper, we tackle the problem of online quality
+guaranteed compression of data streams using fast linear approximation (i.e.,
+using line segments to approximate a time series). Technically, we address two
+versions of the problem which explore quality guarantees in different forms. We
+develop online algorithms with linear time complexity and constant cost in
+space. Our algorithms are optimal in the sense they generate the minimum number
+of segments that approximate a time series with the required quality guarantee.
+To meet the resource constraints in sensor networks, we also develop a fast
+algorithm which creates connecting segments with very simple computation. The
+low cost nature of our methods leads to a unique edge on the applications of
+massive and fast streaming environment, low bandwidth networks, and heavily
+constrained nodes in computational power. We implement and evaluate our methods
+in the application of an acoustic wireless sensor network.

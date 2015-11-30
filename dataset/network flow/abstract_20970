@@ -1,0 +1,20 @@
+Data collecting agents in large networks, such as the electric power system,
+need to share information (measurements) for estimating the system state in a
+distributed manner. However, privacy concerns may limit or prevent this
+exchange leading to a tradeoff between state estimation fidelity and privacy
+(referred to as competitive privacy). This paper builds upon a recent
+information-theoretic result (using mutual information to measure privacy and
+mean-squared error to measure fidelity) that quantifies the region of
+achievable distortion-leakage tuples in a two-agent network. The objective of
+this paper is to study centralized and decentralized mechanisms that can enable
+and sustain non-trivial data exchanges among the agents. A centralized
+mechanism determines the data sharing policies that optimize a network-wide
+objective function combining the fidelities and leakages at both agents. Using
+common-goal games and best-response analysis, the optimal policies allow for
+distributed implementation. In contrast, in the decentralized setting, repeated
+discounted games are shown to naturally enable data exchange without any
+central control nor economic incentives. The effect of repetition is modeled by
+a time-averaged payoff function at each agent which combines its fidelity and
+leakage at each interaction stage. For both approaches, it is shown that
+non-trivial data exchange can be sustained for specific fidelity ranges even
+when privacy is a limiting factor.

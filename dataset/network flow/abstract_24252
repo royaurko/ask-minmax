@@ -1,0 +1,12 @@
+Deadlock detection is a challenging issue in the analysis and design of
+on-chip networks. We have designed an algorithm to detect deadlocks
+automatically in on-chip networks with wormhole switching. The algorithm has
+been specified and proven correct in ACL2. To enable a top-down proof
+methodology, some parts of the algorithm have been left unimplemented. For
+these parts, the ACL2 specification contains constrained functions introduced
+with defun-sk. We used single-threaded objects to represent the data structures
+used by the algorithm. In this paper, we present details on the proof of
+correctness of the algorithm. The process of formal verification was crucial to
+get the algorithm flawless. Our ultimate objective is to have an efficient
+executable, and formally proven correct implementation of the algorithm running
+in ACL2.

@@ -1,0 +1,21 @@
+We introduce a scalable searching algorithm for finding nodes and contents in
+random networks with Power-Law (PL) and heavy-tailed degree distributions. The
+network is searched using a probabilistic broadcast algorithm, where a query
+message is relayed on each edge with probability just above the bond
+percolation threshold of the network. We show that if each node caches its
+directory via a short random walk, then the total number of {\em accessible
+contents exhibits a first-order phase transition}, ensuring very high hit rates
+just above the percolation threshold. In any random PL network of size, $N$,
+and exponent, $2 \leq \tau < 3$, the total traffic per query scales
+sub-linearly, while the search time scales as $O(\log N)$. In a PL network with
+exponent, $\tau \approx 2$, {\em any content or node} can be located in the
+network with {\em probability approaching one} in time $O(\log N)$, while
+generating traffic that scales as $O(\log^2 N)$, if the maximum degree,
+$k_{max}$, is unconstrained, and as $O(N^{{1/2}+\epsilon})$ (for any
+$\epsilon>0$) if $ k_{max}=O(\sqrt{N})$. Extensive large-scale simulations show
+these scaling laws to be precise. We discuss how this percolation search
+algorithm can be directly adapted to solve the well-known scaling problem in
+unstructured Peer-to-Peer (P2P) networks. Simulations of the protocol on sample
+large-scale subnetworks of existing P2P services show that overall traffic can
+be reduced by almost two-orders of magnitude, without any significant loss in
+search performance.

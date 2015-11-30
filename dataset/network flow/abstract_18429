@@ -1,0 +1,16 @@
+This paper addresses the problem of averaging numbers across a wireless
+network from an important, but largely neglected, viewpoint: bandwidth/energy
+efficiency. We show that existing distributed averaging schemes have several
+drawbacks and are inefficient, producing networked dynamical systems that
+evolve with wasteful communications. Motivated by this, we develop Controlled
+Hopwise Averaging (CHA), a distributed asynchronous algorithm that attempts to
+"make the most" out of each iteration by fully exploiting the broadcast nature
+of wireless medium and enabling control of when to initiate an iteration. We
+show that CHA admits a common quadratic Lyapunov function for analysis, derive
+bounds on its exponential convergence rate, and show that they outperform the
+convergence rate of Pairwise Averaging for some common graphs. We also
+introduce a new way to apply Lyapunov stability theory, using the Lyapunov
+function to perform greedy, decentralized, feedback iteration control. Finally,
+through extensive simulation on random geometric graphs, we show that CHA is
+substantially more efficient than several existing schemes, requiring far fewer
+transmissions to complete an averaging task.

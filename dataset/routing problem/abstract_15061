@@ -1,0 +1,23 @@
+For $f$ a weighted voting scheme used by $n$ voters to choose between two
+candidates, the $n$ \emph{Shapley-Shubik Indices} (or {\em Shapley values}) of
+$f$ provide a measure of how much control each voter can exert over the overall
+outcome of the vote. Shapley-Shubik indices were introduced by Lloyd Shapley
+and Martin Shubik in 1954 \cite{SS54} and are widely studied in social choice
+theory as a measure of the "influence" of voters. The \emph{Inverse Shapley
+Value Problem} is the problem of designing a weighted voting scheme which
+(approximately) achieves a desired input vector of values for the
+Shapley-Shubik indices. Despite much interest in this problem no provably
+correct and efficient algorithm was known prior to our work.
+  We give the first efficient algorithm with provable performance guarantees
+for the Inverse Shapley Value Problem. For any constant $\eps > 0$ our
+algorithm runs in fixed poly$(n)$ time (the degree of the polynomial is
+independent of $\eps$) and has the following performance guarantee: given as
+input a vector of desired Shapley values, if any "reasonable" weighted voting
+scheme (roughly, one in which the threshold is not too skewed) approximately
+matches the desired vector of values to within some small error, then our
+algorithm explicitly outputs a weighted voting scheme that achieves this vector
+of Shapley values to within error $\eps.$ If there is a "reasonable" voting
+scheme in which all voting weights are integers at most $\poly(n)$ that
+approximately achieves the desired Shapley values, then our algorithm runs in
+time $\poly(n)$ and outputs a weighted voting scheme that achieves the target
+vector of Shapley values to within error $\eps=n^{-1/8}.$

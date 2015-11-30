@@ -1,0 +1,18 @@
+We introduce the graph parameter boolean-width, related to the number of
+different unions of neighborhoods across a cut of a graph. Boolean-width is
+similar to rank-width, which is related to the number of $GF[2]$-sums (1+1=0)
+of neighborhoods instead of the boolean-sums (1+1=1) used for boolean-width. We
+give algorithms for a large class of NP-hard vertex subset and vertex
+partitioning problems that are FPT when parameterized by either boolean-width,
+rank-width or clique-width, with runtime single exponential in either parameter
+if given the pertinent optimal decomposition. To compare boolean-width versus
+rank-width or clique-width, we first show that for any graph, the square root
+of its boolean-width is never more than its rank-width. Next, we exhibit a
+class of graphs, the Hsu-grids, for which we can solve NP-hard problems in
+polynomial time, if we use the right parameter. An $n \times \frac{n}{10}$
+Hsu-grid on ${1/10}n^2$ vertices has boolean-width $\Theta(\log n)$ and
+rank-width $\Theta(n)$. Moreover, any optimal rank-decomposition of such a
+graph will have boolean-width $\Theta(n)$, i.e. exponential in the optimal
+boolean-width. A main open problem is to approximate the boolean-width better
+than what is given by the algorithm for rank-width [Hlin\v{e}n\'y and Oum,
+2008]

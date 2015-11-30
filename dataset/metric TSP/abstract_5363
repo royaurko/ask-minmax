@@ -1,0 +1,18 @@
+Clustering under most popular objective functions is NP-hard, even to
+approximate well, and so unlikely to be efficiently solvable in the worst case.
+Recently, Bilu and Linial \cite{Bilu09} suggested an approach aimed at
+bypassing this computational barrier by using properties of instances one might
+hope to hold in practice. In particular, they argue that instances in practice
+should be stable to small perturbations in the metric space and give an
+efficient algorithm for clustering instances of the Max-Cut problem that are
+stable to perturbations of size $O(n^{1/2})$. In addition, they conjecture that
+instances stable to as little as O(1) perturbations should be solvable in
+polynomial time. In this paper we prove that this conjecture is true for any
+center-based clustering objective (such as $k$-median, $k$-means, and
+$k$-center). Specifically, we show we can efficiently find the optimal
+clustering assuming only stability to factor-3 perturbations of the underlying
+metric in spaces without Steiner points, and stability to factor $2+\sqrt{3}$
+perturbations for general metrics. In particular, we show for such instances
+that the popular Single-Linkage algorithm combined with dynamic programming
+will find the optimal clustering. We also present NP-hardness results under a
+weaker but related condition.

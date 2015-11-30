@@ -1,0 +1,20 @@
+We address a numerical instability that arises in the directionally split
+computation of hydrodynamic flows when shock fronts are parallel to a grid
+plane. Transverse oscillations in pressure, density and temperature are
+produced that are exacerbated by thermal instability when cooling is present,
+forming post--shock `stripes'. These are orthogonal to the classic post--shock
+'ringing' fluctuations. The resulting post--shock `striping' substantially
+modifies the flow. We discuss three different methods to resolve this problem.
+These include (1) a method based on artificial viscosity; (2) grid--jittering
+and (3) a new localized oscillation filter that acts on specific grid cells in
+the shock front. These methods are tested using a radiative wall shock problem
+with an embedded shear layer. The artificial viscosity method is unsatisfactory
+since, while it does reduce post--shock ringing, it does not eliminate the
+stripes and the excessive shock broadening renders the calculation of cooling
+inaccurate, resulting in an incorrect shock location. Grid--jittering
+effectively counteracts striping. However, elsewhere on the grid, the shear
+layer is unphysically diffused and this is highlighted in an extreme case. The
+oscillation filter method removes stripes and permits other high velocity
+gradient regions of the flow to evolve in a physically acceptable manner. It
+also has the advantage of only acting on a small fraction of the cells in a two
+or three dimensional simulation and does not significantly impair performance.

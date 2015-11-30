@@ -1,0 +1,18 @@
+Given two metastable states A and B of a biomolecular system, the problem is
+to calculate the likely paths of the transition from A to B. Such a calculation
+is more informative and more manageable if done for a reduced set of collective
+variables chosen so that paths cluster in collective variable space. The
+computational task becomes that of computing the "center" of such a cluster. A
+good way to define the center employs the concept of a committor, whose value
+at a point in collective variable space is the probability that a trajectory at
+that point will reach B before A. The committor "foliates" the transition
+region into a set of isocommittors. The maximum flux transition path is defined
+as a path that crosses each isocommittor at a point which (locally) has the
+highest crossing rate of distinct reactive trajectories. (This path is
+different from that of the MaxFlux method of Huo and Straub.) It is argued that
+such a path is nearer to an ideal path than others that have been proposed with
+the possible exception of the finite-temperature string method path. To make
+the calculation tractable, three approximations are introduced, yielding a path
+that is the solution of a nonsingular two-point boundary-value problem. For
+such a problem, one can construct a simple and robust algorithm. One such
+algorithm and its performance is discussed.

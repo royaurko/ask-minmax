@@ -1,0 +1,10 @@
+Rate based transport protocol determines the rate of data transmission
+between the sender and receiver and then sends the data according to that rate.
+To notify the rate to the sender, the receiver sends ACKplusRate packet based
+on epoch timer expiry. In this paper, through detailed arguments and simulation
+it is shown that the transmission of ACKplusRate packet based on epoch timer
+expiry consumes more energy in network with low mobility. To overcome this
+problem, a new technique called Dynamic Rate Feedback (DRF) is proposed. DRF
+sends ACKplusRate whenever there is a change in rate of (plus or minus) 25
+percent than the previous rate. Based on ns2 simulation DRF is compared with a
+reliable transport protocol for ad hoc network (ATP)

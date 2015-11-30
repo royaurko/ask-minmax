@@ -1,0 +1,20 @@
+The generalized connectivity of a graph, which was introduced recently by
+Chartrand et al., is a generalization of the concept of vertex connectivity.
+Let $S$ be a nonempty set of vertices of $G$, a collection
+$\{T_1,T_2,...,T_r\}$ of trees in $G$ is said to be internally disjoint trees
+connecting $S$ if $E(T_i)\cap E(T_j)=\emptyset$ and $V(T_i)\cap V(T_j)=S$ for
+any pair of distinct integers $i,j$, where $1\leq i,j\leq r$. For an integer
+$k$ with $2\leq k\leq n$, the $k$-connectivity $\kappa_k(G)$ of $G$ is the
+greatest positive integer $r$ for which $G$ contains at least $r$ internally
+disjoint trees connecting $S$ for any set $S$ of $k$ vertices of $G$.
+Obviously, $\kappa_2(G)=\kappa(G)$ is the connectivity of $G$. Sabidussi showed
+that $\kappa(G\Box H) \geq \kappa(G)+\kappa(H)$ for any two connected graphs
+$G$ and $H$. In this paper, we first study the 3-connectivity of the Cartesian
+product of a graph $G$ and a tree $T$, and show that $(i)$ if
+$\kappa_3(G)=\kappa(G)\geq 1$, then $\kappa_3(G\Box T)\geq \kappa_3(G)$; $(ii)$
+if $1\leq \kappa_3(G)< \kappa(G)$, then $\kappa_3(G\Box T)\geq \kappa_3(G)+1$.
+Furthermore, for any two connected graphs $G$ and $H$ with
+$\kappa_3(G)\geq\kappa_3(H)$, if $\kappa(G)>\kappa_3(G)$, then $\kappa_3(G\Box
+H)\geq \kappa_3(G)+\kappa_3(H)$; if $\kappa(G)=\kappa_3(G)$, then
+$\kappa_3(G\Box H)\geq \kappa_3(G)+\kappa_3(H)-1$. Our result could be seen as
+a generalization of Sabidussi's result. Moreover, all the bounds are sharp.

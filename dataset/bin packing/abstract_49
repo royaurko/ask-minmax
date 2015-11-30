@@ -1,0 +1,16 @@
+We study the problem of abstracting a table of data about individuals so that
+no selection query can identify fewer than k individuals. We show that it is
+impossible to achieve arbitrarily good polynomial-time approximations for a
+number of natural variations of the generalization technique, unless P = NP,
+even when the table has only a single quasi-identifying attribute that
+represents a geographic or unordered attribute:
+  Zip-codes: nodes of a planar graph generalized into connected subgraphs
+  GPS coordinates: points in R2 generalized into non-overlapping rectangles
+  Unordered data: text labels that can be grouped arbitrarily. In addition to
+impossibility results, we provide approximation algorithms for these difficult
+single-attribute generalization problems, which, of course, apply to
+multiple-attribute instances with one that is quasi-identifying. We show
+theoretically and experimentally that our approximation algorithms can come
+reasonably close to optimal solutions. Incidentally, the generalization problem
+for unordered data can be viewed as a novel type of bin packing
+problem--min-max bin covering--which may be of independent interest.

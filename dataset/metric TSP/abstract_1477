@@ -1,0 +1,14 @@
+For many machine learning algorithms such as $k$-Nearest Neighbor ($k$-NN)
+classifiers and $ k $-means clustering, often their success heavily depends on
+the metric used to calculate distances between different data points.
+  An effective solution for defining such a metric is to learn it from a set of
+labeled training samples. In this work, we propose a fast and scalable
+algorithm to learn a Mahalanobis distance metric. By employing the principle of
+margin maximization to achieve better generalization performances, this
+algorithm formulates the metric learning as a convex optimization problem and a
+positive semidefinite (psd) matrix is the unknown variable. a specialized
+gradient descent method is proposed. our algorithm is much more efficient and
+has a better performance in scalability compared with existing methods.
+Experiments on benchmark data sets suggest that, compared with state-of-the-art
+metric learning algorithms, our algorithm can achieve a comparable
+classification accuracy with reduced computational complexity.

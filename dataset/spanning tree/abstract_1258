@@ -1,0 +1,16 @@
+A fully threaded tree (FTT) for adaptive refinement of regular meshes is
+described. By using a tree threaded at all levels, tree traversals for finding
+nearest neighbors are avoided. All operations on a tree including tree
+modifications are O(N), where N is a number of cells, and are performed in
+parallel. An efficient implementation of the tree is described that requires 2N
+words of memory. A filtering algorithm for removing high-frequency noise during
+mesh refinement is described.
+  A FTT can be used in various numerical applications. In this paper, it is
+applied to the integration of the Euler equations of fluid dynamics. An
+adaptive-mesh time stepping algorithm is described in which different time
+steps are used at different levels of the tree. Time stepping and mesh
+refinement are interleaved to avoid extensive buffer layers of fine mesh which
+were otherwise required ahead of moving shocks. Test examples are presented,
+and the FTT performance is evaluated. The three-dimensional simulation of the
+interaction of a shock wave and a spherical bubble is carried out that shows
+the development of azimuthal perturbations on the bubble surface.

@@ -1,0 +1,12 @@
+We propose an algorithm for finding overlapping community structure in very
+large networks. The algorithm is based on the label propagation technique of
+Raghavan, Albert, and Kumara, but is able to detect communities that overlap.
+Like the original algorithm, vertices have labels that propagate between
+neighbouring vertices so that members of a community reach a consensus on their
+community membership. Our main contribution is to extend the label and
+propagation step to include information about more than one community: each
+vertex can now belong to up to v communities, where v is the parameter of the
+algorithm. Our algorithm can also handle weighted and bipartite networks. Tests
+on an independently designed set of benchmarks, and on real networks, show the
+algorithm to be highly effective in recovering overlapping communities. It is
+also very fast and can process very large and dense networks in a short time.

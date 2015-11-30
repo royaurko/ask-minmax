@@ -1,0 +1,21 @@
+We address a discrete tomography problem that arises in the study of the
+atomic structure of crystal lattices. A polyatomic structure T can be defined
+as an integer lattice in dimension D>=2, whose points may be occupied by $c$
+distinct types of atoms. To ``analyze'' T, we conduct ell measurements that we
+call_discrete X-rays_. A discrete X-ray in direction xi determines the number
+of atoms of each type on each line parallel to xi. Given ell such non-parallel
+X-rays, we wish to reconstruct T.
+  The complexity of the problem for c=1 (one atom type) has been completely
+determined by Gardner, Gritzmann and Prangenberg, who proved that the problem
+is NP-complete for any dimension D>=2 and ell>=3 non-parallel X-rays, and that
+it can be solved in polynomial time otherwise.
+  The NP-completeness result above clearly extends to any c>=2, and therefore
+when studying the polyatomic case we can assume that ell=2. As shown in another
+article by the same contributors, this problem is also NP-complete for c>=6 atoms,
+even for dimension D=2 and axis-parallel X-rays. They conjecture that the
+problem remains NP-complete for c=3,4,5, although, as they point out, the proof
+idea does not seem to extend to c<=5.
+  We resolve the conjecture by proving that the problem is indeed NP-complete
+for c>=3 in 2D, even for axis-parallel X-rays. Our construction relies heavily
+on some structure results for the realizations of 0-1 matrices with given row
+and column sums.

@@ -1,0 +1,22 @@
+A minimum cycle basis of a weighted undirected graph $G$ is a basis of the
+cycle space of $G$ such that the total weight of the cycles in this basis is
+minimized. If $G$ is a planar graph with non-negative edge weights, such a
+basis can be found in $O(n^2)$ time and space, where $n$ is the size of $G$. We
+show that this is optimal if an explicit representation of the basis is
+required. We then present an $O(n^{3/2}\log n)$ time and $O(n^{3/2})$ space
+algorithm that computes a minimum cycle basis \emph{implicitly}. From this
+result, we obtain an output-sensitive algorithm that explicitly computes a
+minimum cycle basis in $O(n^{3/2}\log n + C)$ time and $O(n^{3/2} + C)$ space,
+where $C$ is the total size (number of edges and vertices) of the cycles in the
+basis. These bounds reduce to $O(n^{3/2}\log n)$ and $O(n^{3/2})$,
+respectively, when $G$ is unweighted. We get similar results for the all-pairs
+min cut problem since it is dual equivalent to the minimum cycle basis problem
+for planar graphs. We also obtain $O(n^{3/2}\log n)$ time and $O(n^{3/2})$
+space algorithms for finding, respectively, the weight vector and a Gomory-Hu
+tree of $G$. The previous best time and space bound for these two problems was
+quadratic. From our Gomory-Hu tree algorithm, we obtain the following result:
+with $O(n^{3/2}\log n)$ time and $O(n^{3/2})$ space for preprocessing, the
+weight of a min cut between any two given vertices of $G$ can be reported in
+constant time. Previously, such an oracle required quadratic time and space for
+preprocessing. The oracle can also be extended to report the actual cut in time
+proportional to its size.

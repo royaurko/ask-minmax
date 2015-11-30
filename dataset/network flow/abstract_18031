@@ -1,0 +1,25 @@
+Despite 30+ years of intensive research, the distributed computing community
+still does not have a practical answer to non-crash faults of the machines that
+comprise a distributed system. In particular, Byzantine fault-tolerance (BFT),
+that promises to handle such faults, has not lived to expectations due to its
+resource and operation overhead with respect to its crash fault-tolerant(CFT)
+counterparts. This overhead comes from the worst-case assumption about
+Byzantine faults, in the sense that some coordinated adversarial activity
+controls the faulty machines and the entire network at will. To practitioners,
+however, such strong attacks appear irrelevant.
+  In this paper, we introduce XFT (\cross fault tolerance"), a novel approach
+to building reliable distributed systems, that decouples the fault space across
+the machine and network faults dimensions, treating machine faults and network
+asynchrony separately. This is in sharp contrast to the existing CFT and BFT
+models that discern system faults only along the machine fault dimension. XFT
+offers much more flexibility than traditional synchronous and asynchronous
+models that (too strictly) fix the network fault model of interest regardless
+of the machine faults.
+  As the showcase for XFT, we present Paxos++: the first state machine
+replication protocol in the XFT model. Paxos++ tolerates faults beyond crashes
+in an efficient and practical way, featuring many more nines of reliability
+than the celebrated crash-tolerant Paxos protocol, without impacting its
+resource/operation costs while maintaining the same performance (common-case
+communication complexity among replicas). Surprisingly, Paxos++ sometimes
+(depending on the system environment) even offers strictly stronger reliability
+guarantees than state-of-the-art BFT replication protocols.

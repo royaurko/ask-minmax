@@ -1,0 +1,24 @@
+Many image processing problems are naturally expressed as energy minimization
+or shape optimization problems, in which the free variable is a shape, such as
+a curve in 2d or a surface in 3d. Examples are image segmentation, multiview
+stereo reconstruction, geometric interpolation from data point clouds. To
+obtain the solution of such a problem, one usually resorts to an iterative
+approach, a gradient descent algorithm, which updates a candidate shape
+gradually deforming it into the optimal shape. Computing the gradient descent
+updates requires the knowledge of the first variation of the shape energy, or
+rather the first shape derivative. In addition to the first shape derivative,
+one can also utilize the second shape derivative and develop a Newton-type
+method with faster convergence. Unfortunately, the knowledge of shape
+derivatives for shape energies in image processing is patchy. The second shape
+derivatives are known for only two of the energies in the image processing
+literature and many results for the first shape derivative are limiting, in the
+sense that they are either for curves on planes, or developed for a specific
+representation of the shape or for a very specific functional form in the shape
+energy. In this work, these limitations are overcome and the first and second
+shape derivatives are computed for large classes of shape energies that are
+representative of the energies found in image processing. Many of the formulas
+we obtain are new and some generalize previous existing results. These results
+are valid for general surfaces in any number of dimensions. This work is
+intended to serve as a cookbook for researchers who deal with shape energies
+for various applications in image processing and need to develop algorithms to
+compute the shapes minimizing these energies.

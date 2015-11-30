@@ -1,0 +1,14 @@
+We present space lower bounds for online pattern matching under a number of
+different distance measures. Given a pattern of length m and a text that
+arrives one character at a time, the online pattern matching problem is to
+report the distance between the pattern and a sliding window of the text as
+soon as the new character arrives. We require that the correct answer is given
+at each position with constant probability. We give Omega(m) bit space lower
+bounds for L_1, L_2, L_\infty, Hamming, edit and swap distances as well as for
+any algorithm that computes the cross-correlation/convolution. We then show a
+dichotomy between distance functions that have wildcard-like properties and
+those that do not. In the former case which includes, as an example, pattern
+matching with character classes, we give Omega(m) bit space lower bounds. For
+other distance functions, we show that there exist space bounds of Omega(log m)
+and O(log^2 m) bits. Finally we discuss space lower bounds for non-binary
+inputs and show how in some cases they can be improved.

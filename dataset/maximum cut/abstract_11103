@@ -1,0 +1,24 @@
+Programs based on hash tables and Burrows-Wheeler are very fast for mapping
+short reads to genomes but have low accuracy in the presence of mismatches and
+gaps. Such reads can be aligned accurately with the Smith-Waterman algorithm
+but it can take hours and days to map millions of reads even for bacteria
+genomes. We introduce a GPU program called MaxSSmap with the aim of achieving
+comparable accuracy to Smith-Waterman but with faster runtimes. Similar to most
+programs MaxSSmap identifies a local region of the genome followed by exact
+alignment. Instead of using hash tables or Burrows-Wheeler in the first part,
+MaxSSmap calculates maximum scoring subsequence score between the read and
+disjoint fragments of the genome in parallel on a GPU and selects the highest
+scoring fragment for exact alignment. We evaluate MaxSSmap's accuracy and
+runtime when mapping simulated Illumina E.coli and human chromosome one reads
+of different lengths and 10\% to 30\% mismatches with gaps to the E.coli genome
+and human chromosome one. We also demonstrate applications on real data by
+mapping ancient horse DNA reads to modern genomes and unmapped paired reads
+from NA12878 in 1000 genomes. We show that MaxSSmap attains comparable high
+accuracy and low error to fast Smith-Waterman programs yet has much lower
+runtimes. We show that MaxSSmap can map reads rejected by BWA and NextGenMap
+with high accuracy and low error much faster than if Smith-Waterman were used.
+On short read lengths of 36 and 51 both MaxSSmap and Smith-Waterman have lower
+accuracy compared to at higher lengths. On real data MaxSSmap produces many
+alignments with high score and mapping quality that are not given by NextGenMap
+and BWA. The MaxSSmap source code is freely available from
+http://www.cs.njit.edu/usman/MaxSSmap.

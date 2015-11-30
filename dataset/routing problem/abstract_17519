@@ -1,0 +1,17 @@
+Scene labeling is the problem of assigning an object label to each pixel. It
+unifies the image segmentation and object recognition problems. The importance
+of using contextual information in scene labeling frameworks has been widely
+realized in the field. We propose a contextual framework, called contextual
+hierarchical model (CHM), which learns contextual information in a hierarchical
+framework for scene labeling. At each level of the hierarchy, a classifier is
+trained based on downsampled input images and outputs of previous levels. Our
+model then incorporates the resulting multi-resolution contextual information
+into a classifier to segment the input image at original resolution. This
+training strategy allows for optimization of a joint posterior probability at
+multiple resolutions through the hierarchy. Contextual hierarchical model is
+purely based on the input image patches and does not make use of any fragments
+or shape examples. Hence, it is applicable to a variety of problems such as
+object segmentation and edge detection. We demonstrate that CHM outperforms
+state-of-the-art on Stanford background and Weizmann horse datasets. It also
+outperforms state-of-the-art edge detection methods on NYU depth dataset and
+achieves state-of-the-art on Berkeley segmentation dataset (BSDS 500).

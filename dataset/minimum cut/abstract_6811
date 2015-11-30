@@ -1,0 +1,23 @@
+An open problem that arises when using modern iterative linear solvers, such
+as the preconditioned conjugate gradient (PCG) method or Generalized Minimum
+RESidual method (GMRES) is how to choose the residual tolerance in the linear
+solver to be consistent with the tolerance on the solution error. This problem
+is especially acute for integrated groundwater models which are implicitly
+coupled to another model, such as surface water models, and resolve both
+multiple scales of flow and temporal interaction terms, giving rise to linear
+systems with variable scaling.
+  This article uses the theory of 'forward error bound estimation' to show how
+rescaling the linear system affects the correspondence between the residual
+error in the preconditioned linear system and the solution error. Using
+examples of linear systems from models developed using the USGS GSFLOW package
+and the California State Department of Water Resources' Integrated Water Flow
+Model (IWFM), we observe that this error bound guides the choice of a practical
+measure for controlling the error in rescaled linear systems. It is found that
+forward error can be controlled in preconditioned GMRES by rescaling the linear
+system and normalizing the stopping tolerance. We implemented a preconditioned
+GMRES algorithm and benchmarked it against the Successive-Over-Relaxation (SOR)
+method. Improved error control reduces redundant iterations in the GMRES
+algorithm and results in overall simulation speedups as large as 7.7x. This
+research is expected to broadly impact groundwater modelers through the
+demonstration of a practical approach for setting the residual tolerance in
+line with the solution error tolerance.

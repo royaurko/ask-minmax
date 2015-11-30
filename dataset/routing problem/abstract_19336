@@ -1,0 +1,20 @@
+For an undirected graph G=(V,E), a vertex x \in V separates vertices u and v
+(where u,v \in V, u \neq v) if their distances to x are not equal. Given an
+integer parameter k \geq 1, a set of vertices L \subseteq V is a feasible
+solution if for every pair of distinct vertices, u,v, there are at least k
+distinct vertices x_1,x_2,...,x_k \in L each separating u and v. Such a
+feasible solution is called a "landmark set", and the k-metric dimension of a
+graph is the minimal cardinality of a landmark set for the parameter k. The
+case k=1 is a classic problem, where in its weighted version, each vertex v has
+a non-negative weight, and the goal is to find a landmark set with minimal
+total weight. We generalize the problem for k \geq 2, introducing two models,
+and we seek for solutions to both the weighted version and the unweighted
+version of this more general problem. In the model of all-pairs (AP), k
+separations are needed for every pair of distinct vertices of V, while in the
+non-landmarks model (NL), such separations are required only for pairs of
+distinct vertices in V \setminus L.
+  We study the weighted and unweighted versions for both models (AP and NL),
+for path graphs, complete graphs, complete bipartite graphs, and complete wheel
+graphs, for all values of k \geq 2. We present algorithms for these cases, thus
+demonstrating the difference between the two new models, and the differences
+between the cases k=1 and k \geq 2.

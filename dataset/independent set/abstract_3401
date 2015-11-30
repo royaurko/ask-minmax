@@ -1,0 +1,12 @@
+The Morton- or z-curve is one example for a space filling curve: Given a
+level of refinement L, it maps the interval [0, 2**dL) one-to-one to a set of
+d-dimensional cubes of edge length 2**-L that form a subdivision of the unit
+cube. In contrast to the Hilbert curve that is continuous, the Morton curve
+produces jumps. We prove that any contiguous subinterval of the curve divides
+the unit cube into no more than two face-connected, star-shaped subdomains, for
+arbitrary dimensions d > 0. In other words, there can be at most one jump in
+the curve that creates a new subdomain. We provide an algorithm for enumerating
+how many segments of a given length are continuous and prove a lower bound on
+the fraction of segments of a given length that are continuous. This result
+should eliminate concerns that the Morton curve may lead to an uncontrolled
+fragmentation of the domain.

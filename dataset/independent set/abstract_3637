@@ -1,0 +1,23 @@
+A new field of numerical astrophysics is introduced which addresses the
+solution of large, multidimensional structural or slowly-evolving problems
+(rotating stars, interacting binaries, thick advective accretion disks, four
+dimensional spacetimes, etc.). The technique employed is the Finite Element
+Method (FEM), commonly used to solve engineering structural problems. The
+approach developed herein has the following key features:
+  1. The computational mesh can extend into the time dimension, as well as
+space, perhaps only a few cells, or throughout spacetime.
+  2. Virtually all equations describing the astrophysics of continuous media,
+including the field equations, can be written in a compact form similar to that
+routinely solved by most engineering finite element codes.
+  3. The transformations that occur naturally in the four-dimensional FEM
+possess both coordinate and boost features, such that
+  (a) although the computational mesh may have a complex, non-analytic,
+curvilinear structure, the physical equations still can be written in a simple
+coordinate system independent of the mesh geometry.
+  (b) if the mesh has a complex flow velocity with respect to coordinate space,
+the transformations will form the proper arbitrary Lagrangian- Eulerian
+advective derivatives automatically.
+  4. The complex difference equations on the arbitrary curvilinear grid are
+generated automatically from encoded differential equations.
+  This first paper concentrates on developing a robust and widely-applicable
+set of techniques using the nonlinear FEM and presents some examples.

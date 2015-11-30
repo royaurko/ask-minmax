@@ -1,0 +1,19 @@
+In this paper we consider a Wireless Mesh Network (WMN) integrating SDN
+principles. The Wireless Mesh Routers (WMR) are OpenFlow capable switches that
+can be controlled by SDN controllers, according to the wmSDN (wireless mesh
+SDN) architecture that we have introduced in a previous work. We consider the
+issue of controller selection in a scenario with intermittent connectivity. We
+assume that over time a single WMN can become split in two or more partitions
+and that separate partitions can merge into a larger one. We assume that a set
+of SDN controllers can potentially take control of the WMRs. At a given time
+only one controller should be the master of a WMR and it should be the most
+appropriate one according to some metric. We argue that the state of the art
+solutions for "master election" among distributed controllers are not suitable
+in a mesh networking environment, as they could easily be affected by
+inconsistencies. We envisage a "master selection" approach which is under the
+control of each WMR, and guarantees that at a given time only one controller
+will be master of a WMR. We designed a specific master selection procedure
+which is very simple in terms of the control logic to be executed in the WMR.
+We have implemented the proposed solution and deployed it over a network
+emulator (CORE) and over the combination of two physical wireless testbeds
+(NITOS and wiLab.t).

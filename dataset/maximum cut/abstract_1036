@@ -1,0 +1,17 @@
+The use of deductive techniques, such as theorem provers, has several
+advantages in safety verification of hybrid sys- tems; however,
+state-of-the-art theorem provers require ex- tensive manual intervention.
+Furthermore, there is often a gap between the type of assistance that a theorem
+prover requires to make progress on a proof task and the assis- tance that a
+system designer is able to provide. This paper presents an extension to
+KeYmaera, a deductive verification tool for differential dynamic logic; the new
+technique allows local reasoning using system designer intuition about per-
+formance within particular modes as part of a proof task. Our approach allows
+the theorem prover to leverage for- ward invariants, discovered using numerical
+techniques, as part of a proof of safety. We introduce a new inference rule
+into the proof calculus of KeYmaera, the forward invariant cut rule, and we
+present a methodology to discover useful forward invariants, which are then
+used with the new cut rule to complete verification tasks. We demonstrate how
+our new approach can be used to complete verification tasks that lie out of the
+reach of existing deductive approaches us- ing several examples, including one
+involving an automotive powertrain control system.

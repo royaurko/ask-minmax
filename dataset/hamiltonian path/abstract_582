@@ -1,0 +1,17 @@
+In this paper we present a comparative study of path feasibility queries
+generated during path exploration based software engineering methods. Symbolic
+execution based methods are gaining importance in different aspects of software
+engineering e.g. proving properties about programs, test case generation,
+comparing different executions of programs. These methods use SMT solvers to
+check the satisfiability of path feasibility queries written as a formula in
+the supported theories. We study the performance of solving such path
+feasibility queries using SMT solvers for real world programs. Our path
+condition formulas are generated in a theory of quantifier free bit vectors
+with arrays (QF_ABV). We show that among the different SMT solvers, STP is
+better than Z3 by an order of magnitude for such kind of queries. As an
+application we design a new program analysis (Change Value Analysis) based on
+our study which exploits undefined behaviors in programs. We have implemented
+our analysis in LLVM and tested it with the benchmark of SIR programs. It
+reduces the time taken for solving path feasibility queries by 48%. The study
+can serve as guidance to practitioners using path feasibility queries to create
+scalable software engineering methods based on symbolic execution.

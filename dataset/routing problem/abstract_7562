@@ -1,0 +1,23 @@
+Consider a setting where possibly sensitive information sent over a path in a
+network is visible to every {neighbor} of the path, i.e., every neighbor of
+some node on the path, thus including the nodes on the path itself. The
+exposure of a path $P$ can be measured as the number of nodes adjacent to it,
+denoted by $N[P]$. A path is said to be secluded if its exposure is small. A
+similar measure can be applied to other connected subgraphs, such as Steiner
+trees connecting a given set of terminals. Such subgraphs may be relevant due
+to considerations of privacy, security or revenue maximization. This paper
+considers problems related to minimum exposure connectivity structures such as
+paths and Steiner trees. It is shown that on unweighted undirected $n$-node
+graphs, the problem of finding the minimum exposure path connecting a given
+pair of vertices is strongly inapproximable, i.e., hard to approximate within a
+factor of $O(2^{\log^{1-\epsilon}n})$ for any $\epsilon>0$ (under an
+appropriate complexity assumption), but is approximable with ratio
+$\sqrt{\Delta}+3$, where $\Delta$ is the maximum degree in the graph. One of
+our main results concerns the class of bounded-degree graphs, which is shown to
+exhibit the following interesting dichotomy. On the one hand, the minimum
+exposure path problem is NP-hard on node-weighted or directed bounded-degree
+graphs (even when the maximum degree is 4). On the other hand, we present a
+polynomial algorithm (based on a nontrivial dynamic program) for the problem on
+unweighted undirected bounded-degree graphs. Likewise, the problem is shown to
+be polynomial also for the class of (weighted or unweighted) bounded-treewidth
+graphs.

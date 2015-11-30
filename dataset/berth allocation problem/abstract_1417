@@ -1,0 +1,12 @@
+The TAIPAN instrument, currently being developed for the Australian
+Astronomical Observatory's UK Schmidt telescope at Siding Spring Observatory,
+makes use of the AAO's Starbug technology to deploy 150 science fibres to
+target positions on the optical plane. This paper describes the software system
+for controlling and deploying the fibre-bearing Starbug robots. The TAIPAN
+software is responsible for allocating each Starbug to its next target position
+based on its current position and the distribution of targets, finding a
+collision-free path for each Starbug, and then simultaneously controlling the
+Starbug hardware in a closed loop, with a metrology camera used to determine
+the position of each Starbug in the field during reconfiguration. The software
+is written in C++ and Java and employs a DRAMA middleware layer (Farrell et al.
+1995).

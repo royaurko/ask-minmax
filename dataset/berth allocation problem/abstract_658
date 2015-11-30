@@ -1,0 +1,22 @@
+Quantitative portfolio allocation requires the accurate and tractable
+estimation of covariances between a large number of assets, whose histories can
+greatly vary in length. Such data are said to follow a monotone missingness
+pattern, under which the likelihood has a convenient factorization. Upon
+further assuming that asset returns are multivariate normally distributed, with
+histories at least as long as the total asset count, maximum likelihood (ML)
+estimates are easily obtained by performing repeated ordinary least squares
+(OLS) regressions, one for each asset. Things get more interesting when there
+are more assets than historical returns. OLS becomes unstable due to
+rank--deficient design matrices, which is called a "big p small n" problem. We
+explore remedies that involve making a change of basis, as in principal
+components or partial least squares regression, or by applying shrinkage
+methods like ridge regression or the lasso. This enables the estimation of
+covariances between large sets of assets with histories of essentially
+arbitrary length, and offers improvements in accuracy and interpretation. We
+further extend the method by showing how external factors can be incorporated.
+This allows for the adaptive use of factors without the restrictive assumptions
+common in factor models. Our methods are demonstrated on randomly generated
+data, and then benchmarked by the performance of balanced portfolios using real
+historical financial returns. An accompanying R package called monomvn,
+containing code implementing the estimators described herein, has been made
+freely available on CRAN.

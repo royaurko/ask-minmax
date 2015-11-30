@@ -1,0 +1,15 @@
+This paper provides proofs of the rate stability, Harris recurrence, and
+epsilon-optimality of CSMA algorithms where the backoff parameter of each node
+is based on its backlog. These algorithms require only local information and
+are easy to implement.
+  The setup is a network of wireless nodes with a fixed conflict graph that
+identifies pairs of nodes whose simultaneous transmissions conflict. The paper
+studies two algorithms. The first algorithm schedules transmissions to keep up
+with given arrival rates of packets. The second algorithm controls the arrivals
+in addition to the scheduling and attempts to maximize the sum of the utilities
+of the flows of packets at the different nodes. For the first algorithm, the
+paper proves rate stability for strictly feasible arrival rates and also Harris
+recurrence of the queues. For the second algorithm, the paper proves the
+epsilon-optimality. Both algorithms operate with strictly local information in
+the case of decreasing step sizes, and operate with the additional information
+of the number of nodes in the network in the case of constant step size.

@@ -1,0 +1,23 @@
+One approach to robust control for linear plants with structured uncertainty
+as well as for linear parameter-varying (LPV) plants (where the controller has
+on-line access to the varying plant parameters) is through
+linear-fractional-transformation (LFT) models. Control issues to be addressed
+by controller design in this formalism include robust stability and robust
+performance. Here robust performance is defined as the achievement of a uniform
+specified $L^{2}$-gain tolerance for a disturbance-to-error map combined with
+robust stability. By setting the disturbance and error channels equal to zero,
+it is clear that any criterion for robust performance also produces a criterion
+for robust stability. Counter-intuitively, as a consequence of the so-called
+Main Loop Theorem, application of a result on robust stability to a feedback
+configuration with an artificial full-block uncertainty operator added in
+feedback connection between the error and disturbance signals produces a result
+on robust performance. The main result here is that this
+performance-to-stabilization reduction principle must be handled with care for
+the case of dynamic feedback compensation: casual application of this principle
+leads to the solution of a physically uninteresting problem, where the
+controller is assumed to have access to the states in the artificially-added
+feedback loop. Application of the principle using a known more refined
+dynamic-control robust stability criterion, where the user is allowed to
+specify controller partial-state dimensions, leads to correct
+robust-performance results. These latter results involve rank conditions in
+addition to Linear Matrix Inequality (LMI) conditions.

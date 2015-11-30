@@ -1,0 +1,13 @@
+The standard methodology handling nonlinear PDE's involves the two steps:
+numerical discretization to get a set of nonlinear algebraic equations, and
+then the application of the Newton iterative linearization or its variants to
+solve the nonlinear algebraic systems. Here we present an alternative strategy
+called direct linearization method (DLM). The DLM discretization algebraic
+equations of nonlinear PDE's is simply linear rather than nonlinear. The basic
+idea behind the DLM is that we see a nonlinear term as a new independent
+systematic variable and transfer a nonlinear PDE into a linear PDE with more
+than one independent variable. It is stressed that the DLM strategy can be
+applied combining any existing numerical discretization techniques. The
+resulting linear discretization equations can be either over-posed or
+well-posed. In particular, we also discuss how to create proper radial basis
+functions in conjunction with the DLM.

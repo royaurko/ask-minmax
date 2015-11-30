@@ -1,0 +1,15 @@
+Real time, density matrix based, time dependent density functional theory
+proceeds through the propagation of the density matrix, as opposed to the
+Kohn-Sham orbitals. It is possible to reduce the computational workload by
+imposing spatial cut-off radii on sparse matrices, and the propagation of the
+density matrix in this manner provides direct access to the optical response of
+very large systems, which would be otherwise impractical to obtain using the
+standard formulations of TDDFT. Following a brief summary of our
+implementation, along with several benchmark tests illustrating the validity of
+the method, we present an exploration of the factors affecting the accuracy of
+the approach. In particular we investigate the effect of basis set size and
+matrix truncation, the key approximation used in achieving linear scaling, on
+the propagator unitarity and optical spectra. Finally we illustrate that, with
+an appropriate density matrix truncation range applied, the computational load
+scales linearly with the system size and discuss the limitations of the
+approach.

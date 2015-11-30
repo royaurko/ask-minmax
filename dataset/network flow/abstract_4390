@@ -1,0 +1,12 @@
+The commonly used asynchronous bounded delay (ABD) network models assume a
+fixed bound on message delay. We propose a probabilistic network model, called
+asynchronous bounded expected delay (ABE) model. Instead of a strict bound, the
+ABE model requires only a bound on the expected message delay. While the
+conditions of ABD networks restrict the set of possible executions, in ABE
+networks all asynchronous executions are possible, but executions with
+extremely long delays are less probable. In contrast to ABD networks, ABE
+networks cannot be synchronised efficiently. At the example of an election
+algorithm, we show that the minimal assumptions of ABE networks are sufficient
+for the development of efficient algorithms. For anonymous, unidirectional ABE
+rings of known size N we devise a probabilistic leader election algorithm
+having average message and time complexity O(N).

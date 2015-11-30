@@ -1,0 +1,15 @@
+Recently, several researchers have found that cost-based satisficing search
+with A* often runs into problems. Although some "work arounds" have been
+proposed to ameliorate the problem, there has been little concerted effort to
+pinpoint its origin. In this paper, we argue that the origins of this problem
+can be traced back to the fact that most planners that try to optimize cost
+also use cost-based evaluation functions (i.e., f(n) is a cost estimate). We
+show that cost-based evaluation functions become ill-behaved whenever there is
+a wide variance in action costs; something that is all too common in planning
+domains. The general solution to this malady is what we call a surrogatesearch,
+where a surrogate evaluation function that doesn't directly track the cost
+objective, and is resistant to cost-variance, is used. We will discuss some
+compelling choices for surrogate evaluation functions that are based on size
+rather that cost. Of particular practical interest is a cost-sensitive version
+of size-based evaluation function -- where the heuristic estimates the size of
+cheap paths, as it provides attractive quality vs. speed tradeoffs

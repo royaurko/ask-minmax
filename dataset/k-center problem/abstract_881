@@ -1,0 +1,17 @@
+A high-performance parallel algorithm is proposed for modeling the
+propagation of acoustic and elastic waves in inhomogeneous media. An initial
+boundary-value problem is replaced by a series of boundary-value problems for a
+constant elliptic operator and different right-hand sides via the integral
+Laguerre transform. It is proposed to solve difference equations by the
+conjugate gradient method for acoustic equations and by the GMRES$(k)$ method
+for modeling elastic waves. A preconditioning operator was the Laplace operator
+that is inverted using the variable separation method. The novelty of the
+proposed algorithm is using the Dichotomy Algorithm (Terekhov, 2010), which was
+designed for solving a series of tridiagonal systems of linear equations, in
+the context of the preconditioning operator inversion. Via considering
+analytical solutions, it is shown that modeling wave processes for long
+instants of time requires high-resolution meshes. The proposed parallel
+fine-mesh algorithm enabled to solve real application seismic problems in
+acceptable time and with high accuracy. By solving model problems, it is
+demonstrated that the considered parallel algorithm possesses high performance
+and efficiency over a wide range of the number of processors (from 2 to 8192).

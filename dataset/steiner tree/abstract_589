@@ -1,0 +1,26 @@
+The dynamic optimality conjecture is perhaps the most fundamental open
+question about binary search trees (BST). It postulates the existence of an
+asymptotically optimal online BST, i.e. one that is constant factor competitive
+with any BST on any input access sequence. The two main candidates for dynamic
+optimality in the literature are splay trees [Sleator and Tarjan, 1985], and
+Greedy [Lucas, 1988; Munro, 2000; Demaine et al. 2009] [..]
+  Dynamic optimality is trivial for almost all sequences: the optimum access
+cost of most length-n sequences is Theta(n log n), achievable by any balanced
+BST. Thus, the obvious missing step towards the conjecture is an understanding
+of the "easy" access sequences. [..] The difficulty of proving dynamic
+optimality is witnessed by highly restricted special cases that remain
+unresolved; one prominent example is the traversal conjecture [Sleator and
+Tarjan, 1985], which states that preorder sequences (whose optimum is linear)
+are linear-time accessed by splay trees; no online BST is known to satisfy this
+conjecture.
+  In this paper, we prove two different relaxations of the traversal conjecture
+for Greedy: (i) Greedy is almost linear for preorder traversal, (ii) if a
+linear-time preprocessing is allowed, Greedy is in fact linear. These
+statements are corollaries of our more general results that express the
+complexity of access sequences in terms of a pattern avoidance parameter k.
+[..] To our knowledge, these are the first upper bounds for Greedy that are not
+known to hold for any other online BST. To obtain these results we identify an
+input-revealing property of Greedy. Informally, this means that the execution
+log partially reveals the structure of the access sequence. This property
+facilitates the use of rich technical tools from forbidden submatrix theory.
+  [Abridged]

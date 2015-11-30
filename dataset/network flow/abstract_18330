@@ -1,0 +1,13 @@
+Tree-based protocols are ubiquitous in distributed systems. They are
+flexible, they perform generally well, and, in static conditions, their
+analysis is mostly simple. Under churn, however, node joins and failures can
+have complex global effects on the tree overlays, making analysis surprisingly
+subtle. To our knowledge, few prior analytic results for performance estimation
+of tree based protocols under churn are currently known. We study a simple
+Bellman-Ford-like protocol which performs network size estimation over a
+tree-shaped overlay. A continuous time Markov model is constructed which allows
+key protocol characteristics to be estimated, including the expected number of
+nodes at a given (perceived) distance to the root and, for each such node, the
+expected (perceived) size of the subnetwork rooted at that node. We validate
+the model by simulation, using a range of network sizes, node degrees, and
+churn-to-protocol rates, with convincing results.

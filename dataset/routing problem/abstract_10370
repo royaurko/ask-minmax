@@ -1,0 +1,10 @@
+The {\sc Plane Diameter Completion} problem asks, given a plane graph $G$ and
+a positive integer $d$, if it is a spanning subgraph of a plane graph $H$ that
+has diameter at most $d$. We examine two variants of this problem where the
+input comes with another parameter $k$. In the first variant, called BPDC, $k$
+upper bounds the total number of edges to be added and in the second, called
+BFPDC, $k$ upper bounds the number of additional edges per face. We prove that
+both problems are {\sf NP}-complete, the first even for 3-connected graphs of
+face-degree at most 4 and the second even when $k=1$ on 3-connected graphs of
+face-degree at most 5. In this paper we give parameterized algorithms for both
+problems that run in $O(n^{3})+2^{2^{O((kd)^2\log d)}}\cdot n$ steps.

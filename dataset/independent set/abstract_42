@@ -1,0 +1,17 @@
+We consider weighted counting of independent sets using a rational weight x:
+Given a graph with n vertices, count its independent sets such that each set of
+size k contributes x^k. This is equivalent to computation of the partition
+function of the lattice gas with hard-core self-repulsion and hard-core pair
+interaction. We show the following conditional lower bounds: If counting the
+satisfying assignments of a 3-CNF formula in n variables (#3SAT) needs time
+2^{\Omega(n)} (i.e. there is a c>0 such that no algorithm can solve #3SAT in
+time 2^{cn}), counting the independent sets of size n/3 of an n-vertex graph
+needs time 2^{\Omega(n)} and weighted counting of independent sets needs time
+2^{\Omega(n/log^3 n)} for all rational weights x\neq 0.
+  We have two technical ingredients: The first is a reduction from 3SAT to
+independent sets that preserves the number of solutions and increases the
+instance size only by a constant factor. Second, we devise a combination of
+vertex cloning and path addition. This graph transformation allows us to adapt
+a recent technique by Dell, Husfeldt, and Wahlen which enables interpolation by
+a family of reductions, each of which increases the instance size only
+polylogarithmically.

@@ -1,0 +1,14 @@
+We consider the problem of constructing efficient P2P overlays for sensornets
+providing "Energy-Level Application and Services". The method presented in
+\cite{SOPXM09} presents a novel P2P overlay for Energy Level discovery in a
+sensornet. However, this solution is not dynamic, since requires periodical
+restructuring. In particular, it is not able to support neither join of
+sensor\_nodes with energy level out of the ranges supported by the existing p2p
+overlay nor leave of \emph{empty} overlay\_peers to which no sensor\_nodes are
+currently associated. On this purpose and based on the efficient P2P method
+presented in \cite{SPSTMT10}, we design a dynamic P2P overlay for Energy Level
+discovery in a sensornet, the so-called SART (Sensors' Autonomous Range Tree).
+The adaptation of the P2P index presented in \cite{SPSTMT10} guarantees the
+best-known dynamic query performance of the above operation. We experimentally
+verify this performance, via the D-P2P-Sim simulator (D-P2P-Sim is publicly
+available at http://code.google.com/p/d-p2p-sim/).

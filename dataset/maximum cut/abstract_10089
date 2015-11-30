@@ -1,0 +1,16 @@
+Since the early days of digital communication, Hidden Markov Models (HMMs)
+have now been routinely used in speech recognition, processing of natural
+languages, images, and in bioinformatics. An HMM $(X_i,Y_i)_{i\ge 1}$ assumes
+observations $X_1,X_2,...$ to be conditionally independent given an
+"explanotary" Markov process $Y_1,Y_2,...$, which itself is not observed;
+moreover, the conditional distribution of $X_i$ depends solely on $Y_i$.
+Central to the theory and applications of HMM is the Viterbi algorithm to find
+{\em a maximum a posteriori} estimate $q_{1:n}=(q_1,q_2,...,q_n)$ of $Y_{1:n}$
+given the observed data $x_{1:n}$. Maximum {\em a posteriori} paths are also
+called Viterbi paths or alignments. Recently, attempts have been made to study
+the behavior of Viterbi alignments of HMMs with two hidden states when $n$
+tends to infinity. It has indeed been shown that in some special cases a
+well-defined limiting Viterbi alignment exists. While innovative, these
+attempts have relied on rather strong assumptions. This work proves the
+existence of infinite Viterbi alignments for virtually any HMM with two hidden
+states.

@@ -1,0 +1,18 @@
+Motivated by the success of bounded model checking framework for finite state
+machines, Ouaknine and Worrell proposed a time-bounded theory of real-time
+verification by claiming that restriction to bounded-time recovers decidability
+for several key decision problem related to real-time verification. In support
+of this theory, the list of undecidable problems recently shown decidable under
+time-bounded restriction is rather impressive: language inclusion for timed
+automata, emptiness problem for alternating timed automata, and emptiness
+problem for rectangular hybrid automata. The objective of our study was to
+recover decidability for general recursive timed automata---and perhaps for
+recursive hybrid automata---under time-bounded restriction in order to provide
+an appealing verification framework for powerful modeling environments such as
+Stateflow/Simulink. Unfortunately, however, we answer this question in negative
+by showing that time-bounded reachability problem stays undecidable for
+recursive timed automata with five or more clocks. While the bad news continues
+even when one considers well-behaved subclasses of recursive hybrid automata,
+we recover decidability by considering recursive hybrid automata with bounded
+context using a pass-by-reference mechanism, or by restricting the number of
+variables to two, with rates in $\{0,1\}$.

@@ -1,0 +1,15 @@
+We consider the following problem: Given a rational matrix $A \in \setQ^{m
+\times n}$ and a rational polyhedron $Q \subseteq\setR^{m+p}$, decide if for
+all vectors $b \in \setR^m$, for which there exists an integral $z \in \setZ^p$
+such that $(b, z) \in Q$, the system of linear inequalities $A x \leq b$ has an
+integral solution. We show that there exists an algorithm that solves this
+problem in polynomial time if $p$ and $n$ are fixed. This extends a result of
+Kannan (1990) who established such an algorithm for the case when, in addition
+to $p$ and $n$, the affine dimension of $Q$ is fixed.
+  As an application of this result, we describe an algorithm to find the
+maximum difference between the optimum values of an integer program $\max \{c x
+: A x \leq b, x \in \setZ^n \}$ and its linear programming relaxation over all
+right-hand sides $b$, for which the integer program is feasible. The algorithm
+is polynomial if $n$ is fixed. This is an extension of a recent result of
+Ho\c{s}ten and Sturmfels (2003) who presented such an algorithm for integer
+programs in standard form.

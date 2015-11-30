@@ -1,0 +1,25 @@
+We revisit the problem of real-time verification with dense dynamics using
+timeout and calendar based models and simplify this to a finite state
+verification problem. To overcome the complexity of verification of real-time
+systems with dense dynamics, Dutertre and Sorea, proposed timeout and calender
+based transition systems to model the behavior of real-time systems and
+verified safety properties using k-induction in association with bounded model
+checking. In this work, we introduce a specification formalism for these models
+in terms of Timeout Transition Diagrams and capture their behavior in terms of
+semantics of Timed Transition Systems. Further, we discuss a technique, which
+reduces the problem of verification of qualitative temporal properties on
+infinite state space of (a large fragment of) these timeout and calender based
+transition systems into that on clockless finite state models through a
+two-step process comprising of digitization and canonical finitary reduction.
+This technique enables us to verify safety invariants for real-time systems
+using finite state model-checking avoiding the complexity of infinite state
+(bounded) model checking and scale up models without applying techniques from
+induction based proof methodology. Moreover, we can verify liveness properties
+for real-time systems, which is not possible by using induction with infinite
+state model checkers. We present examples of Fischer's Protocol, Train-Gate
+Controller, and TTA start-up algorithm to illustrate how such an approach can
+be efficiently used for verifying safety, liveness, and timeliness properties
+specified in LTL using finite state model checkers like SAL-smc and Spin. We
+also demonstrate how advanced modeling concepts like inter-process scheduling,
+priorities, interrupts, urgent and committed location can be specified as
+extensions of the proposed specification formalism.

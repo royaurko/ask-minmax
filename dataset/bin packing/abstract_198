@@ -1,0 +1,24 @@
+Protein side-chain packing is a critical component in obtaining the 3D
+coordinates of a structure and drug discovery. Single-domain protein side-chain
+packing has been thoroughly studied. A major challenge in generalizing these
+methods to protein complexes is that they, unlike monomers, often have very
+large treewidth, and thus algorithms such as TreePack cannot be directly
+applied. To address this issue, SCWRL4 treats the complex effectively as a
+monomer, heuristically excluding weak interactions to decrease treewidth; as a
+result, SCWRL4 generates poor packings on protein interfaces. To date, few
+side-chain packing methods exist that are specifically designed for protein
+complexes. In this paper, we introduce a method, iTreePack, which solves the
+side-chain packing problem for complexes by using a novel combination of dual
+decomposition and tree decomposition. In particular, iTreePack overcomes the
+problem of large treewidth by decomposing a protein complex into smaller
+subgraphs and novelly reformulating the complex side-chain packing problem as a
+dual relaxation problem; this allows us to solve the side-chain packing of each
+small subgraph separately using tree-decomposition. A projected subgradient
+algorithm is applied to enforcing the consistency among the side-chain packings
+of all the small subgraphs. Computational results demonstrate that our
+iTreePack program outperforms SCWRL4 on protein complexes. In particular,
+iTreePack places side-chain atoms much more accurately on very large complexes,
+which constitute a significant portion of protein-protein interactions.
+Moreover, the advantage of iTreePack over SCWRL4 increases with respect to the
+treewidth of a complex. Even for monomeric proteins, iTreePack is much more
+efficient than SCWRL and slightly more accurate.

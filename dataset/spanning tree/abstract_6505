@@ -1,0 +1,10 @@
+Practical data structures for the edit-sensitive parsing (ESP) are proposed.
+Given a string S, its ESP tree is equivalent to a context-free grammar G
+generating just S, which is represented by a DAG. Using the succinct data
+structures for trees and permutations, G is decomposed to two LOUDS bit strings
+and single array in (1+\epsilon)n\log n+4n+o(n) bits for any 0<\epsilon <1 and
+the number n of variables in G. The time to count occurrences of P in S is in
+O(\frac{1}{\epsilon}(m\log n+occ_c(\log m\log u)), whereas m = |P|, u = |S|,
+and occ_c is the number of occurrences of a maximal common subtree in ESPs of P
+and S. The efficiency of the proposed index is evaluated by the experiments
+conducted on several benchmarks complying with the other compressed indexes.

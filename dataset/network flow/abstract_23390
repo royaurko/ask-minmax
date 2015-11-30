@@ -1,0 +1,21 @@
+This paper introduces a state-of-the-art video representation and applies it
+to efficient action recognition and detection. We first propose to improve the
+popular dense trajectory features by explicit camera motion estimation. More
+specifically, we extract feature point matches between frames using SURF
+descriptors and dense optical flow. The matches are used to estimate a
+homography with RANSAC. To improve the robustness of homography estimation, a
+human detector is employed to remove outlier matches from the human body as
+human motion is not constrained by the camera. Trajectories consistent with the
+homography are considered as due to camera motion, and thus removed. We also
+use the homography to cancel out camera motion from the optical flow. This
+results in significant improvement on motion-based HOF and MBH descriptors. We
+further explore the recent Fisher vector as an alternative feature encoding
+approach to the standard bag-of-words histogram, and consider different ways to
+include spatial layout information in these encodings. We present a large and
+varied set of evaluations, considering (i) classification of short basic
+actions on six datasets, (ii) localization of such actions in feature-length
+movies, and (iii) large-scale recognition of complex events. We find that our
+improved trajectory features significantly outperform previous dense
+trajectories, and that Fisher vectors are superior to bag-of-words encodings
+for video recognition tasks. In all three tasks, we show substantial
+improvements over the state-of-the-art results.

@@ -1,0 +1,20 @@
+Consider the following probabilistic one-player game: The board is a graph
+with $n$ vertices, which initially contains no edges. In each step, a new edge
+is drawn uniformly at random from all non-edges and is presented to the player,
+henceforth called Painter. Painter must assign one of $r$ available colors to
+each edge immediately, where $r \geq 2$ is a fixed integer. The game is over as
+soon as a monochromatic copy of some fixed graph $F$ has been created, and
+Painter's goal is to 'survive' for as many steps as possible before this
+happens.
+  We present a new technique for deriving upper bounds on the threshold of this
+game, i.e., on the typical number of steps Painter will survive with an optimal
+strategy. More specifically, we consider a deterministic two-player variant of
+the game where the edges are not chosen randomly, but by a second player
+Builder. However, Builder has to adhere to the restriction that, for some real
+number $d$, the ratio of edges to vertices in all subgraphs of the evolving
+board never exceeds $d$. We show that the existence of a winning strategy for
+Builder in this deterministic game implies an upper bound of $n^{2-1/d}$ for
+the threshold of the original probabilistic game. Moreover, we show that the
+best bound that can be derived in this way is indeed the threshold of the game
+if $F$ is a forest. We illustrate our technique with several examples, and
+derive new explicit bounds for the case when $F$ is a path.

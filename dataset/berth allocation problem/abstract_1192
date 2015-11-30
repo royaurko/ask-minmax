@@ -1,0 +1,15 @@
+This paper discusses our experience in building SPIRE, an autonomic system
+for service provision. The architecture consists of a set of hosted Web
+Services subject to QoS constraints, and a certain number of servers used to
+run session-based traffic. Customers pay for having their jobs run, but require
+in turn certain quality guarantees: there are different SLAs specifying charges
+for running jobs and penalties for failing to meet promised performance
+metrics. The system is driven by an utility function, aiming at optimizing the
+average earned revenue per unit time. Demand and performance statistics are
+collected, while traffic parameters are estimated in order to make dynamic
+decisions concerning server allocation and admission control. Different utility
+functions are introduced and a number of experiments aiming at testing their
+performance are discussed. Results show that revenues can be dramatically
+improved by imposing suitable conditions for accepting incoming traffic; the
+proposed system performs well under different traffic settings, and it
+successfully adapts to changes in the operating environment.

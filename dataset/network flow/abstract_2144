@@ -1,0 +1,15 @@
+Internet is composed of numbers of independent autonomous systems. BGP is
+used to disseminate reachability information and establishing path between
+autonomous systems. Each autonomous system is allowed to select a single route
+to a destination and then export the selected route to its neighbors. The
+selection of single best route imposes restrictions on the use of alternative
+paths during interdomain link failure and thus, incurred packet loss. Packet
+loss still occurs even when multiple paths exist between source and destination
+but these paths have not been utilized. To minimize the packet loss, when
+multiple paths exist, multipath routing techniques are introduced. Multipath
+routing techniques ensure the use of alternative paths on link failure. It
+computes set of paths which can be used when primary path is not available and
+it also provides a way to transit domains to have control over the traffic
+flow. This can be achieved by little modification to current BGP. This paper
+highlights different multipath routing techniques and also discusses the
+overhead incurred by each of them.

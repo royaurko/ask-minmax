@@ -1,0 +1,18 @@
+Random Forest (RF) is a powerful supervised learner and has been popularly
+used in many applications such as bioinformatics.
+  In this work we propose the guided random forest (GRF) for feature selection.
+Similar to a feature selection method called guided regularized random forest
+(GRRF), GRF is built using the importance scores from an ordinary RF. However,
+the trees in GRRF are built sequentially, are highly correlated and do not
+allow for parallel computing, while the trees in GRF are built independently
+and can be implemented in parallel. Experiments on 10 high-dimensional gene
+data sets show that, with a fixed parameter value (without tuning the
+parameter), RF applied to features selected by GRF outperforms RF applied to
+all features on 9 data sets and 7 of them have significant differences at the
+0.05 level. Therefore, both accuracy and interpretability are significantly
+improved. GRF selects more features than GRRF, however, leads to better
+classification accuracy. Note in this work the guided random forest is guided
+by the importance scores from an ordinary random forest, however, it can also
+be guided by other methods such as human insights (by specifying $\lambda_i$).
+GRF can be used in "RRF" v1.4 (and later versions), a package that also
+includes the regularized random forest methods.

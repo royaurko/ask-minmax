@@ -1,0 +1,13 @@
+This paper considers the problem of finding a quickest path between two
+points in the Euclidean plane in the presence of a transportation network. A
+transportation network consists of a planar network where each road (edge) has
+an individual speed. A traveller may enter and exit the network at any point on
+the roads. Along any road the traveller moves with a fixed speed depending on
+the road, and outside the network the traveller moves at unit speed in any
+direction. We give an exact algorithm for the basic version of the problem:
+given a transportation network of total complexity n in the Euclidean plane, a
+source point s and a destination point t, and the quickest path between s and
+t. We also show how the transportation network can be preprocessed in time
+O(n^2 log n) into a data structure of size O(n^2) such that (1 +
+\epsilon)-approximate cheapest path cost queries between any two points in the
+plane can be answered in time O(1\epsilon^4 log n).

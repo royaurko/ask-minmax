@@ -1,0 +1,15 @@
+Boundary integral equations and Nystrom discretization provide a powerful
+tool for the solution of Laplace and Helmholtz boundary value problems.
+However, often a weakly-singular kernel arises, in which case specialized
+quadratures that modify the matrix entries near the diagonal are needed to
+reach a high accuracy. We describe the construction of four different
+quadratures which handle logarithmically-singular kernels. Only smooth
+boundaries are considered, but some of the techniques extend straightforwardly
+to the case of corners. Three are modifications of the global periodic
+trapezoid rule, due to Kapur-Rokhlin, to Alpert, and to Kress. The fourth is a
+modification to a quadrature based on Gauss-Legendre panels due to
+Kolm-Rokhlin; this formulation allows adaptivity. We compare in numerical
+experiments the convergence of the four schemes in various settings, including
+low- and high-frequency planar Helmholtz problems, and 3D axisymmetric Laplace
+problems. We also find striking differences in performance in an iterative
+setting. We summarize the relative advantages of the schemes.

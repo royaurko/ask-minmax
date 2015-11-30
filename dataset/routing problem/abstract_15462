@@ -1,0 +1,20 @@
+We consider in this paper a class of semi-continuous quadratic programming
+problems which arises in many real-world applications such as production
+planning, portfolio selection and subset selection in regression. We propose a
+lift-and-convexification approach to derive an equivalent reformulation of the
+original problem. This lift-and-convexification approach lifts the quadratic
+term involving $x$ only in the original objective function $f(x,y)$ to a
+quadratic function of both $x$ and $y$ and convexifies this equivalent
+objective function. While the continuous relaxation of our new reformulation
+attains the same tight bound as achieved by the continuous relaxation of the
+well known perspective reformulation, the new reformulation also retains the
+linearly constrained quadratic programming structure of the original
+mix-integer problem. This prominent feature improves the performance of
+branch-and-bound algorithms by providing the same tightness at the root node as
+the state-of-the-art perspective reformulation and offering much faster
+processing time at children nodes. We further combine the
+lift-and-convexification approach and the quadratic convex reformulation
+approach in the literature to form an even tighter reformulation. Promising
+results from our computational tests in both portfolio selection and subset
+selection problems numerically verify the benefits from these theoretical
+features of our new reformulations.

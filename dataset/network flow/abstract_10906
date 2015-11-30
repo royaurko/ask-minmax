@@ -1,0 +1,22 @@
+We consider the Gaussian N-relay diamond network, where a source wants to
+communicate to a destination node through a layer of N-relay nodes. We
+investigate the following question: what fraction of the capacity can we
+maintain by using only k out of the N available relays? We show that
+independent of the channel configurations and the operating SNR, we can always
+find a subset of k relays which alone provide a rate (kC/(k+1))-G, where C is
+the information theoretic cutset upper bound on the capacity of the whole
+network and G is a constant that depends only on N and k (logarithmic in N and
+linear in k). In particular, for k = 1, this means that half of the capacity of
+any N-relay diamond network can be approximately achieved by routing
+information over a single relay. We also show that this fraction is tight:
+there are configurations of the N-relay diamond network where every subset of k
+relays alone can at most provide approximately a fraction k/(k+1) of the total
+capacity. These high-capacity k-relay subnetworks can be also discovered
+efficiently. We propose an algorithm that computes a constant gap approximation
+to the capacity of the Gaussian N-relay diamond network in O(N log N) running
+time and discovers a high-capacity k-relay subnetwork in O(kN) running time.
+  This result also provides a new approximation to the capacity of the Gaussian
+N-relay diamond network which is hybrid in nature: it has both multiplicative
+and additive gaps. In the intermediate SNR regime, this hybrid approximation is
+tighter than existing purely additive or purely multiplicative approximations
+to the capacity of this network.

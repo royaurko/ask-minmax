@@ -1,0 +1,19 @@
+The current formulation of the optimal scheduling of appliance energy
+consumption uses as optimization variables the vectors of appliances' scheduled
+energy consumption over equally-divided time slots of a day, which does not
+take into account the atomicity of appliances' operations (i.e., the
+unsplittable nature of appliances' operations and resulting energy
+consumption). In this paper, we provide a new formulation of atomic scheduling
+of energy consumption based on the optimal routing framework; the flow
+configurations of users over multiple paths between the common source and
+destination nodes of a ring network are used as optimization variables, which
+indicate the starting times of scheduled energy consumption, and optimal
+scheduling problems are now formulated in terms of the user flow
+configurations. Because the atomic optimal scheduling results in a
+Boolean-convex problem for a convex objective function, we propose a successive
+convex relaxation technique for efficient calculation of an approximate
+solution, where we iteratively drop fractional-valued elements and apply convex
+relaxation to the resulting problem until we find a feasible suboptimal
+solution. Numerical results for the cost and peak-to-average ratio minimization
+problems demonstrate that the successive convex relaxation technique can
+provide solutions close to, often identical to, global optimal solutions.

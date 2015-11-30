@@ -1,0 +1,23 @@
+Full Duplex or Simultaneous transmission and reception (STR) in the same
+frequency at the same time can potentially double the physical layer capacity.
+However, high power transmit signal will appear at receive chain as echoes with
+powers much higher than the desired received signal. Therefore, in order to
+achieve the potential gain, it is imperative to cancel these echoes. As these
+high power echoes can saturate low noise amplifier (LNA) and also digital
+domain echo cancellation requires unrealistically high resolution
+analog-to-digital converter (ADC), the echoes should be cancelled or suppressed
+sufficiently before LNA. In this paper we present a closed-loop echo
+cancellation technique which can be implemented purely in analogue domain. The
+advantages of our method are multiple-fold: it is robust to phase noise, does
+not require additional set of antennas, can be applied to wideband signals and
+the performance is irrelevant to radio frequency (RF) impairments in transmit
+chain. Next, we study a few protocols for STR systems in carrier sense multiple
+access (CSMA) network and investigate MAC level throughput with realistic
+assumptions in both single cell and multiple cells. We show that STR can reduce
+hidden node problem in CSMA network and produce gains of up to 279% in maximum
+throughput in such networks. Finally, we investigate the application of STR in
+cellular systems and study two new unique interferences introduced to the
+system due to STR, namely BS-BS interference and UE-UE interference. We show
+that these two new interferences will hugely degrade system performance if not
+treated appropriately. We propose novel methods to reduce both interferences
+and investigate the performances in system level.

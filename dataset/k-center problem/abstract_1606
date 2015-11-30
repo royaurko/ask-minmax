@@ -1,0 +1,20 @@
+Given an overcomplete dictionary $A$ and a signal $b$ that is a linear
+combination of a few linearly independent columns of $A$, classical sparse
+recovery theory deals with the problem of recovering the unique sparse
+representation $x$ such that $b = A x$. It is known that under certain
+conditions on $A$, $x$ can be recovered by the Basis Pursuit (BP) and the
+Orthogonal Matching Pursuit (OMP) algorithms. In this work, we consider the
+more general case where $b$ lies in a low-dimensional subspace spanned by some
+columns of $A$, which are possibly linearly dependent. In this case, the
+sparsest solution $x$ is generally not unique, and we study the problem that
+the representation $x$ identifies the subspace, i.e. the nonzero entries of $x$
+correspond to dictionary atoms that are in the subspace. Such a representation
+$x$ is called subspace-sparse. We present sufficient conditions for
+guaranteeing subspace-sparse recovery, which have clear geometric
+interpretations and explain properties of subspace-sparse recovery. We also
+show that the sufficient conditions can be satisfied under a randomized model.
+Our results are applicable to the traditional sparse recovery problem and we
+get conditions for sparse recovery that are less restrictive than the canonical
+mutual coherent condition. We also use the results to analyze the sparse
+representation based classification (SRC) method, for which we get conditions
+to show its correctness.

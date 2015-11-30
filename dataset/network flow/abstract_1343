@@ -1,0 +1,17 @@
+The Session Initiation Protocol (SIP) server overload management has
+attracted interest since SIP is being widely deployed in the Next Generation
+Networks (NGN) as a core signaling protocol. Yet all existing SIP overload
+control work is focused on SIP-over-UDP, despite the fact that TCP is
+increasingly seen as the more viable choice of SIP transport. This paper
+answers the following questions: is the existing TCP flow control capable of
+handling the SIP overload problem? If not, why and how can we make it work? We
+provide a comprehensive explanation of the default SIP-over-TCP overload
+behavior through server instrumentation. We also propose and implement novel
+but simple overload control algorithms without any kernel or protocol level
+modification. Experimental evaluation shows that with our mechanism the
+overload performance improves from its original zero throughput to nearly full
+capacity. Our work leads to the important general insight that the traditional
+notion of TCP flow control alone is incapable of managing overload for
+time-critical session-based applications, which would be applicable not only to
+SIP, but also to a wide range of other common applications such as database
+servers.

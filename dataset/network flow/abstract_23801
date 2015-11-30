@@ -1,0 +1,17 @@
+We introduce a new neural architecture and an unsupervised algorithm for
+learning invariant representations from temporal sequence of images. The system
+uses two groups of complex cells whose outputs are combined multiplicatively:
+one that represents the content of the image, constrained to be constant over
+several consecutive frames, and one that represents the precise location of
+features, which is allowed to vary over time but constrained to be sparse. The
+architecture uses an encoder to extract features, and a decoder to reconstruct
+the input from the features. The method was applied to patches extracted from
+consecutive movie frames and produces orientation and frequency selective units
+analogous to the complex cells in V1. An extension of the method is proposed to
+train a network composed of units with local receptive field spread over a
+large image of arbitrary size. A layer of complex cells, subject to sparsity
+constraints, pool feature units over overlapping local neighborhoods, which
+causes the feature units to organize themselves into pinwheel patterns of
+orientation-selective receptive fields, similar to those observed in the
+mammalian visual cortex. A feed-forward encoder efficiently computes the
+feature representation of full images.

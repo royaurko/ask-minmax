@@ -1,0 +1,14 @@
+We study the worst-case communication complexity of distributed algorithms
+computing a path problem based on stationary distributions of random walks in a
+network $G$ with the caveat that $G$ is also the communication network. The
+problem is a natural generalization of shortest path lengths to expected path
+lengths, and represents a model used in many practical applications such as
+pagerank and eigentrust as well as other problems involving Markov chains
+defined by networks.
+  For the problem of computing a single stationary probability, we prove an
+$\Omega(n^2 \log n)$ bits lower bound; the trivial centralized algorithm costs
+$O(n^3)$ bits and no known algorithm beats this. We also prove lower bounds for
+the related problems of approximately computing the stationary probabilities,
+computing only the ranking of the nodes, and computing the node with maximal
+rank. As a corollary, we obtain lower bounds for labelling schemes for the
+hitting time between two nodes.

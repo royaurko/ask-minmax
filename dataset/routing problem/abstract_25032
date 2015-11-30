@@ -1,0 +1,13 @@
+We consider the minimum vertex cover problem in hypergraphs in which every
+hyperedge has size k (also known as minimum hitting set problem, or minimum set
+cover with element frequency k). Simple algorithms exist that provide
+k-approximations, and this is believed to be the best possible approximation
+achievable in polynomial time. We show how to exploit density and regularity
+properties of the input hypergraph to break this barrier. In particular, we
+provide a randomized polynomial-time algorithm with approximation factor k/(1
++(k-1)d/(k Delta)), where d and Delta are the average and maximum degree,
+respectively, and Delta must be Omega(n^{k-1}/log n). The proposed algorithm
+generalizes the recursive sampling technique of Imamura and Iwama (SODA'05) for
+vertex cover in dense graphs. As a corollary, we obtain an approximation factor
+k/(2-1/k) for subdense regular hypergraphs, which is shown to be the best
+possible under the unique games conjecture.

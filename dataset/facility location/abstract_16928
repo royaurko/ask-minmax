@@ -1,0 +1,22 @@
+A new numerical technique to identify the cosmic web is proposed. It is based
+on locating multi-stream flows, i.e. the places where the velocity field is
+multi-valued. The method is local in Eulerian space, simple and computaionally
+efficient. This technique uses the velocities of particles and thus takes into
+account the dynamical information. This is in contrast with the majority of
+standard methods that use the coordinates of particles only. Two quantities are
+computed in every mesh cell: the mean and variance of the velocity field. In
+the cells where the velocity is single-valued the variance must be equal to
+zero exactly, therefore the cells with non-zero variance are identified as
+multi-stream flows. The technique has been tested in a N-body simulation of the
+\L CDM model. The preliminary analysis has shown that numerical noise does not
+pose a significant problem. The web identified by the new method has been
+compared with the web identified by the standard technique using only the
+particle coordinates. The comparison has shown overall similarity of two webs
+as expected, however they by no means are identical. For example, the
+isocontours of the corresponding fields have significantly different shapes and
+some density peaks of similar heights exhibit significant differences in the
+velocity variance and vice versa. This suggest that the density and velocity
+variance have a significant degree of independence. The shape of the
+two-dimensional pdf of density and velocity variance confirms this proposition.
+Thus, we conclude that the dynamical information probed by this technique
+introduces an additional dimension into analysis of the web.

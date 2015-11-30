@@ -1,0 +1,19 @@
+We consider the sparse regression model where the number of parameters $p$ is
+larger than the sample size $n$. The difficulty when considering
+high-dimensional problems is to propose estimators achieving a good compromise
+between statistical and computational performances. The BIC estimator for
+instance performs well from the statistical point of view \cite{BTW07} but can
+only be computed for values of $p$ of at most a few tens. The Lasso estimator
+is solution of a convex minimization problem, hence computable for large value
+of $p$. However stringent conditions on the design are required to establish
+fast rates of convergence for this estimator. Dalalyan and Tsybakov
+\cite{arnak} propose a method achieving a good compromise between the
+statistical and computational aspects of the problem. Their estimator can be
+computed for reasonably large $p$ and satisfies nice statistical properties
+under weak assumptions on the design. However, \cite{arnak} proposes sparsity
+oracle inequalities in expectation for the empirical excess risk only. In this
+paper, we propose an aggregation procedure similar to that of \cite{arnak} but
+with improved statistical performances. Our main theoretical result is a
+sparsity oracle inequality in probability for the true excess risk for a
+version of exponential weight estimator. We also propose a MCMC method to
+compute our estimator for reasonably large values of $p$.

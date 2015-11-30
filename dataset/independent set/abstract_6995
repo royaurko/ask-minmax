@@ -1,0 +1,14 @@
+In a "tipping" model, each node in a social network, representing an
+individual, adopts a behavior if a certain number of his incoming neighbors
+previously held that property. A key problem for viral marketers is to
+determine an initial "seed" set in a network such that if given a property then
+the entire network adopts the behavior. Here we introduce a method for quickly
+finding seed sets that scales to very large networks. Our approach finds a set
+of nodes that guarantees spreading to the entire network under the tipping
+model. After experimentally evaluating 31 real-world networks, we found that
+our approach often finds such sets that are several orders of magnitude smaller
+than the population size. Our approach also scales well - on a Friendster
+social network consisting of 5.6 million nodes and 28 million edges we found a
+seed sets in under 3.6 hours. We also find that highly clustered local
+neighborhoods and dense network-wide community structure together suppress the
+ability of a trend to spread under the tipping model.

@@ -1,0 +1,17 @@
+We introduce several novel and computationally efficient methods for
+detecting "core-periphery structure" in networks. Core-periphery structure is a
+type of meso-scale structure that includes densely-connected core vertices and
+sparsely-connected peripheral vertices. Core vertices are well-connected both
+among themselves and to peripheral vertices, which are not well-connected to
+any vertices. Our first method, which is based on transportation in networks,
+aggregates information from many geodesic paths in a network and yields a score
+for each vertex that reflects the likelihood that that vertex is a core vertex.
+Our second method is based on a low-rank approximation of a network's adjacency
+matrix, which can often be expressed as a tensor-product matrix. Our third
+approach uses the bottom eigenvector of the random-walk Laplacian to infer a
+coreness score and a classification into core and peripheral vertices.
+Additionally, we design an objective function to (1) help classify vertices
+into core or peripheral vertices and (2) provide a goodness-of-fit criterion
+for classifications into core versus peripheral vertices. To examine the
+performance of our methods, we apply our algorithms to both
+synthetically-generated networks and a variety of real-world data sets.

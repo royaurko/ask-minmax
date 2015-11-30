@@ -1,0 +1,18 @@
+A graph $G=(V,E)$ is a {\it unipolar graph} if there exits a partition $V=V_1
+\cup V_2$ such that, $V_1$ is a clique and $V_2$ induces the disjoint union of
+cliques. The complement-closed class of {\it generalized split graphs} are
+those graphs $G$ such that either $G$ {\it or} the complement of $G$ is
+unipolar. Generalized split graphs are a large subclass of perfect graphs. In
+fact, it has been shown that almost all $C_5$-free (and hence, almost all
+perfect graphs) are generalized split graphs. In this paper we present a
+recognition algorithm for unipolar graphs that utilizes a minimal triangulation
+of the given graph, and produces a partition when one exists. Our algorithm has
+running time O($nm^\prime$), where $m^\prime$ is the number of edges in a
+minimal triangulation of the given graph. Generalized split graphs can
+recognized via this algorithm in O($nm' + n\OL{m}'$) = O($n^3$) time. We give
+algorithms on unipolar graphs for finding a maximum independent set and a
+minimum clique cover in O($n+m$) time and for finding a maximum clique and a
+minimum proper coloring in O($n^{2.5}/\log n$), when a unipolar partition is
+given. These algorithms yield algorithms for the four optimization problems on
+generalized split graphs that have the same worst-case time bound. We also
+prove that the perfect code problem is NP-Complete for unipolar graphs.

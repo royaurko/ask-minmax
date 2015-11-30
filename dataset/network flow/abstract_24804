@@ -1,0 +1,13 @@
+We consider a setting where multiple users share multiple channels modeled as
+a multi-user multi-armed bandit (MAB) problem. The characteristics of each
+channel are initially unknown and may differ between the users. Each user can
+choose between the channels, but her success depends on the particular channel
+as well as on the selections of other users: if two users select the same
+channel their messages collide and none of them manages to send any data. Our
+setting is fully distributed, so there is no central control and every user
+only observes the channel she currently uses. As in many communication systems
+such as cognitive radio networks, the users cannot communicate among themselves
+so coordination must be achieved without direct communication. We develop
+algorithms for learning a stable configuration for the multiple user MAB
+problem. We further offer both convergence guarantees and experiments inspired
+by real communication networks.

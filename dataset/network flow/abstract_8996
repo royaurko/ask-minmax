@@ -1,0 +1,22 @@
+In Grids scheduling decisions are often made on the basis of jobs being
+either data or computation intensive: in data intensive situations jobs may be
+pushed to the data and in computation intensive situations data may be pulled
+to the jobs. This kind of scheduling, in which there is no consideration of
+network characteristics, can lead to performance degradation in a Grid
+environment and may result in large processing queues and job execution delays
+due to site overloads. In this paper we describe a Data Intensive and Network
+Aware (DIANA) meta-scheduling approach, which takes into account data,
+processing power and network characteristics when making scheduling decisions
+across multiple sites. Through a practical implementation on a Grid testbed, we
+demonstrate that queue and execution times of data-intensive jobs can be
+significantly improved when we introduce our proposed DIANA scheduler. The
+basic scheduling decisions are dictated by a weighting factor for each
+potential target location which is a calculated function of network
+characteristics, processing cycles and data location and size. The job
+scheduler provides a global ranking of the computing resources and then selects
+an optimal one on the basis of this overall access and execution cost. The
+DIANA approach considers the Grid as a combination of active network elements
+and takes network characteristics as a first class criterion in the scheduling
+decision matrix along with computation and data. The scheduler can then make
+informed decisions by taking into account the changing state of the network,
+locality and size of the data and the pool of available processing cycles.

@@ -1,0 +1,14 @@
+Random hashing is a standard method to balance loads among nodes in
+Peer-to-Peer networks. However, hashing destroys locality properties of object
+keys, the critical properties to many applications, more specifically, those
+that require range searching. To preserve a key order while keeping loads
+balanced, Ganesan, Bawa and Garcia-Molina proposed a load-balancing algorithm
+that supports both object insertion and deletion that guarantees a ratio of
+4.237 between the maximum and minimum loads among nodes in the network using
+constant amortized costs. However, their algorithm is not straightforward to
+implement in real networks because it is recursive. Their algorithm mostly uses
+local operations with global max-min load information. In this work, we present
+a simple non-recursive algorithm using essentially the same primitive
+operations as in Ganesan {\em et al.}'s work. We prove that for insertion and
+deletion, our algorithm guarantees a constant max-min load ratio of 7.464 with
+constant amortized costs.

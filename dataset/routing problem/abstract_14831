@@ -1,0 +1,21 @@
+Nonnegative Matrix Factorization (NMF) is a data analysis technique which
+allows compression and interpretation of nonnegative data. NMF became widely
+studied after the publication of the seminal paper by Lee and Seung (Learning
+the Parts of Objects by Nonnegative Matrix Factorization, Nature, 1999, vol.
+401, pp. 788--791), which introduced an algorithm based on Multiplicative
+Updates (MU). More recently, another class of methods called Hierarchical
+Alternating Least Squares (HALS) was introduced that seems to be much more
+efficient in practice.
+  In this paper, we consider the problem of approximating a not necessarily
+nonnegative matrix with the product of two nonnegative matrices, which we refer
+to as Nonnegative Factorization (NF); this is the subproblem that HALS methods
+implicitly try to solve at each iteration. We prove that NF is NP-hard for any
+fixed factorization rank, using a reduction to the maximum edge biclique
+problem.
+  We also generalize the multiplicative updates to NF, which allows us to shed
+some light on the differences between the MU and HALS algorithms for NMF and
+give an explanation for the better performance of HALS. Finally, we link
+stationary points of NF with feasible solutions of the biclique problem to
+obtain a new type of biclique finding algorithm (based on MU) whose iterations
+have an algorithmic complexity proportional to the number of edges in the
+graph, and show that it performs better than comparable existing methods.

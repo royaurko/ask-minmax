@@ -1,0 +1,21 @@
+Content-Centric Networking (CCN) is an emerging network architecture designed
+to overcome limitations of the current IP-based Internet. One of the
+fundamental tenets of CCN is that data, or content, is a named and addressable
+entity in the network. Consumers request content by issuing interest messages
+with the desired content name. These interests are forwarded by routers to
+producers, and the resulting content object is returned and optionally cached
+at each router along the path. In-network caching makes it difficult to enforce
+access control policies on sensitive content outside of the producer since
+routers only use interest information for forwarding decisions. To that end, we
+propose an Interest-Based Access Control (IBAC) scheme that enables access
+control enforcement using only information contained in interest messages,
+i.e., by making sensitive content names unpredictable to uncontributorized parties.
+Our IBAC scheme supports both hash- and encryption-based name obfuscation. We
+address the problem of interest replay attacks by formulating a mutual trust
+framework between producers and consumers that enables routers to perform
+contributorization checks when satisfying interests from their cache. We assess the
+computational, storage, and bandwidth overhead of each IBAC variant. Our design
+is flexible and allows producers to arbitrarily specify and enforce any type of
+access control on content, without having to deal with the problems of content
+encryption and key distribution. This is the first comprehensive design for CCN
+access control using only information contained in interest messages.

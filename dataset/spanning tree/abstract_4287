@@ -1,0 +1,12 @@
+In this paper, we present a new hybrid algorithm for the time integration of
+collisional N-body systems. In this algorithm, gravitational force between two
+particles is divided into short-range and long-range terms, using a
+distance-dependent cutoff function. The long-range interaction is calculated
+using the tree algorithm and integrated with the constant-timestep leapfrog
+integrator. The short-range term is calculated directly and integrated with the
+high-order Hermite scheme. We can reduce the calculation cost per orbital
+period from O(N^2) to O(N log N), without significantly increasing the
+long-term integration error. The results of our test simulations show that
+close encounters are integrated accurately. Long-term errors of the total
+energy shows random-walk behaviour, because it is dominated by the error caused
+by tree approximation.

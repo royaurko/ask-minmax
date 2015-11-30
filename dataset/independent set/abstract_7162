@@ -1,0 +1,20 @@
+We consider the following basic learning task: given independent draws from
+an unknown distribution over a discrete support, output an approximation of the
+distribution that is as accurate as possible in $\ell_1$ distance
+(equivalently, total variation distance, or "statistical distance"). Perhaps
+surprisingly, it is often possible to "de-noise" the empirical distribution of
+the samples to return an approximation of the true distribution that is
+significantly more accurate than the empirical distribution, without relying on
+any prior assumptions on the distribution. We present an instance optimal
+learning algorithm which, up to an additive sub-constant factor, optimally
+performs this de-noising for every distribution for which such a de-noising is
+possible. More formally, given $n$ independent draws from a distribution $p$,
+our algorithm returns a labelled vector whose expected distance from $p$ is
+equal to the minimum possible expected error that could be obtained by any
+algorithm that knows the true unlabeled vector of probabilities of distribution
+$p$ and simply needs to assign labels, up to an additive subconstant term that
+is independent of $p$ and depends only on the number of samples, $n$. This
+somewhat surprising result has several conceptual implications, including the
+fact that, for any large sample, Bayesian assumptions on the "shape" or bounds
+on the tail probabilities of a distribution over discrete support are not
+helpful for the task of learning the distribution.

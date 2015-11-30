@@ -1,0 +1,16 @@
+Modern biological science produces vast amounts of genomic sequence data.
+This is fuelling the need for efficient algorithms for sequence compression and
+analysis. Data compression and the associated techniques coming from
+information theory are often perceived as being of interest for data
+communication and storage. In recent years, a substantial effort has been made
+for the application of textual data compression techniques to various
+computational biology tasks, ranging from storage and indexing of large
+datasets to comparison of genomic databases. This paper presents a differential
+compression algorithm that is based on production of difference sequences
+according to op-code table in order to optimize the compression of homologous
+sequences in dataset. Therefore, the stored data are composed of reference
+sequence, the set of differences, and differences locations, instead of storing
+each sequence individually. This algorithm does not require a priori knowledge
+about the statistics of the sequence set. The algorithm was applied to three
+different datasets of genomic sequences, it achieved up to 195-fold compression
+rate corresponding to 99.4% space saving.

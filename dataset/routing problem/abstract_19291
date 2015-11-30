@@ -1,0 +1,19 @@
+Identifying the sets of operations that can be executed simultaneously is an
+important problem appearing in many parallel applications. By modeling the
+operations and their interactions as a graph, one can identify the independent
+operations by solving a graph coloring problem. Many efficient sequential
+algorithms are known for this NP-Complete problem, but they are typically
+unsuitable when the operations and their interactions are distributed in the
+memory of large parallel computers. On top of an existing distributed-memory
+graph coloring algorithm, we investigate two compatible techniques in this
+paper for fast and scalable distributed-memory graph coloring. First, we
+introduce an improvement for the distributed post-processing operation, called
+recoloring, which drastically improves the number of colors. We propose a novel
+and efficient communication scheme for recoloring which enables it to scale
+gracefully. Recoloring must be seeded with an existing coloring of the graph.
+Our second contribution is to introduce a randomized color selection strategy
+for initial coloring which quickly produces solutions of modest quality. We
+extensively evaluate the impact of our new techniques on existing distributed
+algorithms and show the time-quality tradeoffs. We show that combining an
+initial randomized coloring with multiple recoloring iterations yields better
+quality solutions with the smaller runtime at large scale.

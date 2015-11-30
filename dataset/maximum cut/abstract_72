@@ -1,0 +1,11 @@
+In this work, we consider efficient maximum-likelihood decoding of linear
+block codes for small-to-moderate block lengths. The presented approach is a
+branch-and-bound algorithm using the cutting-plane approach of Zhang and Siegel
+(IEEE Trans. Inf. Theory, 2012) for obtaining lower bounds. We have compared
+our proposed algorithm to the state-of-the-art commercial integer program
+solver CPLEX, and for all considered codes our approach is faster for both low
+and high signal-to-noise ratios. For instance, for the benchmark (155,64)
+Tanner code our algorithm is more than 11 times as fast as CPLEX for an SNR of
+1.0 dB on the additive white Gaussian noise channel. By a small modification,
+our algorithm can be used to calculate the minimum distance, which we have
+again verified to be much faster than using the CPLEX solver.

@@ -1,0 +1,17 @@
+We consider large-scale sensor networks with n nodes, out of which k are in
+possession, (e.g., have sensed or collected in some other way) k information
+packets. In the scenarios in which network nodes are vulnerable because of, for
+example, limited energy or a hostile environment, it is desirable to
+disseminate the acquired information throughout the network so that each of the
+n nodes stores one (possibly coded) packet and the original k source packets
+can be recovered later in a computationally simple way from any (1 + \epsilon)k
+nodes for some small \epsilon > 0.
+  We developed two distributed algorithms for solving this problem based on
+simple random walks and Fountain codes. Unlike all previously developed
+schemes, our solution is truly distributed, that is, nodes do not know n, k or
+connectivity in the network, except in their own neighborhoods, and they do not
+maintain any routing tables. In the first algorithm, all the sensors have the
+knowledge of n and k. In the second algorithm, each sensor estimates these
+parameters through the random walk dissemination. We present analysis of the
+communication/transmission and encoding/decoding complexity of these two
+algorithms, and provide extensive simulation results as well

@@ -1,0 +1,24 @@
+We revisit the issue of low-distortion embedding of metric spaces into the
+line, and more generally, into the shortest path metric of trees, from the
+parameterized complexity perspective.Let $M=M(G)$ be the shortest path metric
+of an edge weighted graph $G=(V,E)$ on $n$ vertices. We describe algorithms for
+the problem of finding a low distortion non-contracting embedding of $M$ into
+line and tree metrics.
+  We give an $O(nd^4(2d+1)^{2d})$ time algorithm that for an unweighted graph
+metric $M$ and integer $d$ either constructs an embedding of $M$ into the line
+with distortion at most $d$, or concludes that no such embedding exists. We
+find the result surprising, because the considered problem bears a strong
+resemblance to the notoriously hard Bandwidth Minimization problem which does
+not admit any FPT algorithm unless an unlikely collapse of parameterized
+complexity classes occurs.
+  We show that our algorithm can also be applied to construct small distortion
+embeddings of weighted graph metrics. The running time of our algorithm is
+$O(n(dW)^4(2d+1)^{2dW})$ where $W$ is the largest edge weight of the input
+graph. We also show that deciding whether a weighted graph metric $M(G)$ with
+maximum weight $W < |V(G)|$ can be embedded into the line with distortion at
+most $d$ is NP-Complete for every fixed rational $d \geq 2$. This rules out any
+possibility of an algorithm with running time $O((nW)^{h(d)})$ where $h$ is a
+function of $d$ alone.
+  We generalize the result on embedding into the line by proving that for any
+tree $T$ with maximum degree $\Delta$, embedding of $M$ into a shortest path
+metric of $T$ is FPT, parameterized by $(\Delta,d)$.

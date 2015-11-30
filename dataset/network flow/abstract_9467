@@ -1,0 +1,14 @@
+It is well-known that the eigenvalue spectrum of the Laplacian matrix of a
+network contains valuable information about the network structure and the
+behavior of many dynamical processes run on it. In this paper, we propose a
+fully decentralized algorithm that iteratively modifies the structure of a
+network of agents in order to control the moments of the Laplacian eigenvalue
+spectrum. Although the individual agents have knowledge of their local network
+structure only (i.e., myopic information), they are collectively able to
+aggregate this local information and decide on what links are most beneficial
+to be added or removed at each time step. Our approach relies on gossip
+algorithms to distributively compute the spectral moments of the Laplacian
+matrix, as well as ensure network connectivity in the presence of link
+deletions. We illustrate our approach in nontrivial computer simulations and
+show that a good final approximation of the spectral moments of the target
+Laplacian matrix is achieved for many cases of interest.

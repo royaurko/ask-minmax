@@ -1,0 +1,23 @@
+Writing correct distributed programs is hard. In spite of extensive testing
+and debugging, software faults persist even in commercial grade software. Many
+distributed systems, especially those employed in safety-critical environments,
+should be able to operate properly even in the presence of software faults.
+Monitoring the execution of a distributed system, and, on detecting a fault,
+initiating the appropriate corrective action is an important way to tolerate
+such faults. This gives rise to the predicate detection problem which requires
+finding a consistent cut of a given computation that satisfies a given global
+predicate, if it exists.
+  Detecting a predicate in a computation is, however, an NP-complete problem.
+To ameliorate the associated combinatorial explosion problem, we introduce the
+notion of computation slice. Formally, the slice of a computation with respect
+to a predicate is a (sub)computation with the least number of consistent cuts
+that contains all consistent cuts of the computation satisfying the predicate.
+To detect a predicate, rather than searching the state-space of the
+computation, it is much more efficient to search the state-space of the slice.
+  We prove that the slice exists and is uniquely defined for all predicates. We
+present efficient slicing algorithms for several useful classes of predicates.
+We develop efficient heuristic algorithms for computing an approximate slice
+for predicates for which computing the slice is otherwise provably intractable.
+Our experimental results show that slicing can lead to an exponential
+improvement over existing techniques for predicate detection in terms of time
+and space.

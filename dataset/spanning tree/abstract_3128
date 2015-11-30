@@ -1,0 +1,11 @@
+We describe the implementation and performance of the ${\rm P^3T}$
+(Particle-Particle Particle-Tree) scheme for simulating dense stellar systems.
+In ${\rm P^3T}$, the force experienced by a particle is split into short-range
+and long-range contributions. Short-range forces are evaluated by direct
+summation and integrated with the fourth order Hermite predictor-corrector
+method with the block timesteps. For long-range forces, we use a combination of
+the Barnes-Hut tree code and the leapfrog integrator. The tree part of our
+simulation environment is accelerated using graphical processing units (GPU),
+whereas the direct summation is carried out on the host CPU. Our code gives
+excellent performance and accuracy for star cluster simulations with a large
+number of particles even when the core size of the star cluster is small.

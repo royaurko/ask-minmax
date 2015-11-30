@@ -1,0 +1,17 @@
+We elucidate the interplay between Newtonian thermal relaxation and numerical
+dissipation, of several different origins, in flow simulations of hot
+extrasolar planet atmospheres. Currently, a large range of Newtonian
+relaxation, or "cooling", times (~10 days to ~1 hour) is used among different
+models and within a single model over the model domain. In this study we
+demonstrate that a short relaxation time (much less than the planetary rotation
+time) leads to a large amount of unphysical, grid-scale oscillations that
+contaminate the flow field. These oscillations force the use of an excessive
+amount of artificial viscosity to quench them and prevent the simulation from
+"blowing up". Even if the blow-up is prevented, such simulations can be highly
+inaccurate because they are either severely over-dissipated or
+under-dissipated, and are best discarded in these cases. Other numerical
+stability and timestep size enhancers (e.g., Robert-Asselin filter or
+semi-implicit time-marching schemes) also produce similar, but less excessive,
+damping. We present diagnostics procedures to choose the "optimal" simulation
+and discuss implications of our findings for modeling hot extrasolar planet
+atmospheres.

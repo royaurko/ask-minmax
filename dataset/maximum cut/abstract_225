@@ -1,0 +1,9 @@
+Simulations involving the Lennard-Jones potential usually employ a cut-off at
+$r=2.5\sigma$. This paper investigates the possibility of reducing the cut-off.
+Two different cut-off implementations are compared, the standard shifted
+potential cut-off and the less commonly used shifted forces cut-off. The first
+has correct forces below the cut-off, whereas the shifted forces cut-off
+modifies Newton's equations at all distances. The latter is nevertheless
+superior; we find that for most purposes realistic simulations may be obtained
+using a shifted-forces cut-off at $r=1.5\sigma$, even though the pair force is
+here 30 times larger than at $r=2.5\sigma$.

@@ -1,0 +1,16 @@
+Intra-session network coding is known to be vulnerable to pollution attacks.
+In this work, first, we introduce a novel homomorphic MAC scheme called
+SpaceMac, which allows an intermediate node to verify if its received packets
+belong to a specific subspace, even if the subspace is expanding over time.
+Then, we use SpaceMac as a building block to design a cooperative scheme that
+provides complete defense against pollution attacks: (i) it can detect polluted
+packets early at intermediate nodes and (ii) it can identify the exact location
+of all, even colluding, attackers, thus making it possible to eliminate them.
+Our scheme is cooperative: parents and children of any node cooperate to detect
+any corrupted packets sent by the node, and nodes in the network cooperate with
+a central controller to identify the exact location of all attackers. We
+implement SpaceMac in both C/C++ and Java as a library, and we make the library
+available online. Our evaluation on both a PC and an Android device shows that
+(i) SpaceMac's algorithms can be computed quickly and efficiently, and (ii) our
+cooperative defense scheme has low computation and significantly lower
+communication overhead than other comparable state-of-the-art schemes.

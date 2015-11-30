@@ -1,0 +1,23 @@
+The GC problem is to identify a pre-determined number of center vertices such
+that the distances or costs from (or to) the centers to (or from) other
+vertices is minimized. The bottleneck of a path is the minimum capacity of
+edges on the path. The Bottleneck Paths (BP) problem is to compute the paths
+that give us the maximum bottleneck values between pairs of vertices. The Graph
+Bottleneck (GB) problem is to find the minimum bottleneck value out of
+bottleneck paths for all possible pairs of vertices. We give two similar
+algorithms that are based on binary search to solve the 1-center GC problem and
+the GB problem on directed graphs with unit edge costs. We achieve
+$\tilde{O}(n^{2.373})$ worst case time complexity for both the 1-center GC
+problem and the GB problem, where $n$ is the number of vertices in the graph.
+This is better than the straightforward methods of solving the two problems in
+$O(n^{2.575})$ and $O(n^{2.688})$ time bounds, respectively.
+  We then combine the Bottleneck Paths (BP) problem with the well known
+Shortest Paths (SP) problem to compute the shortest paths for all possible flow
+values. We call this problem the Shortest Paths for All Flows (SP-AF) problem.
+We show that if the flow demand is uncertain, but between two consecutive
+capacity values, the unique shortest path can be computed to push that flow. If
+the uncertainty stretches over two intervals, we need to prepare two shortest
+paths to accommodate the uncertainty, etc. In introducing this new problem, we
+define a new semi-ring called the distance/flow semi-ring, and show that the
+well known algorithm by Floyd can be used over the distance/flow semi-ring to
+solve the All Pairs Shortest Paths for All Flows (APSP-AF) problem.

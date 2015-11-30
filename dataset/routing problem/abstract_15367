@@ -1,0 +1,18 @@
+In the last decade we have witnessed an impressive progress in the
+expressiveness and efficiency of Satisfiability Modulo Theories (SMT) solving
+techniques. This has brought previously-intractable problems at the reach of
+state-of-the-art SMT solvers, in particular in the domain of SW and HW
+verification. Many SMT-encodable problems of interest, however, require also
+the capability of finding models that are optimal wrt. some cost functions. In
+previous work, namely "Optimization Modulo Theory with Linear Rational Cost
+Functions -- OMT(LAR U T )", we have leveraged SMT solving to handle the
+minimization of cost functions on linear arithmetic over the rationals, by
+means of a combination of SMT and LP minimization techniques. In this paper we
+push the envelope of our OMT approach along three directions: first, we extend
+it to work also with linear arithmetic on the mixed integer/rational domain, by
+means of a combination of SMT, LP and ILP minimization techniques; second, we
+develop a multi-objective version of OMT, so that to handle many cost functions
+simultaneously; third, we develop an incremental version of OMT, so that to
+exploit the incrementality of some OMT-encodable problems. An empirical
+evaluation performed on OMT-encoded verification problems demonstrates the
+usefulness and efficiency of these extensions.

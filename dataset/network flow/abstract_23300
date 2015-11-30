@@ -1,0 +1,18 @@
+We present a fast and accurate algorithm for the Poisson equation in complex
+geometries, using regular Cartesian grids. We consider a variety of
+configurations, including Poisson equations with interfaces across which the
+solution is discontinuous (of the type arising in multi-fluid flows). The
+algorithm is based on a combination of the Correction Function Method (CFM) and
+Boundary Integral Methods (BIM). Interface and boundary conditions can be
+treated in a fast and accurate manner using boundary integral equations, and
+the associated BIM. Unfortunately, BIM can be costly when the solution is
+needed everywhere in a grid, e.g. fluid flow problems. We use the CFM to
+circumvent this issue. The solution from the BIM is used to rewrite the problem
+as a series of Poisson equations in rectangular domains --- which requires the
+BIM solution at interfaces/boundaries only. These Poisson equations involve
+discontinuities at interfaces, of the type that the CFM can handle. Hence we
+use the CFM to solve them (to high order of accuracy) with finite differences
+and a Fast Fourier Transform based fast Poisson solver. We present 2D examples
+of the algorithm applied to problems involving boundary conditions over complex
+geometries (with 4th order accuracy), and to a Poisson equation with interfaces
+across which the solution is discontinuous (with 3rd order accuracy).

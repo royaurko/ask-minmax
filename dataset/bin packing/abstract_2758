@@ -1,0 +1,16 @@
+In this paper we propose an algorithm for allocating $n$ sequential balls
+into $n$ bins that are organized as a $d$-regular $n$-vertex graph $G$, where
+$d\ge3$ can be any integer. Let $l$ be a given positive integer. In each round
+$t$, $1\le t\le n$, ball $t$ picks a node of $G$ uniformly at random and
+performs a non-backtracking random walk of length $l$ from the chosen node.
+Then it deterministically selects a subset of the visited nodes as the
+potential choices and allocates itself on one of the choices with minimum load
+(ties are broken uniformly at random). Suppose that $G$ has a sufficiently
+large girth. Then we establish an upper bound for the maximum number of balls
+at any bin after allocating $n$ balls by the algorithm, called {\it maximum
+load}, in terms of $l$ with high probability. We also show that the upper bound
+is at most an $O(\log\log n)$ factor above the lower bound that is proved for
+the algorithm. In particular, we show that if we set $l=\lfloor(\log
+n)^{\frac{1+\epsilon}{2}}\rfloor$, for every constant $\epsilon\in (0, 1)$, and
+$G$ has girth at least $\omega(l)$, then the maximum load attained by the
+algorithm is bounded by $O(1/\epsilon)$ with high probability.

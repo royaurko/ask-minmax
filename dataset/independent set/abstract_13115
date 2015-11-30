@@ -1,0 +1,24 @@
+We consider the Item Pricing problem for revenue maximization in the limited
+supply setting, where a single seller with $n$ items caters to $m$ buyers with
+unknown subadditive valuation functions who arrive in a sequence. The seller
+sets the prices on individual items. Each buyer buys a subset of yet unsold
+items that maximizes her utility. Our goal is to design pricing strategies that
+guarantee an expected revenue that is within a small factor $\alpha$ of the
+maximum possible social welfare -- an upper bound on the maximum revenue that
+can be generated. Most earlier work has focused on the unlimited supply
+setting, where selling items to some buyer does not affect their availability
+to the future buyers. Balcan et. al. (EC 2008) studied the limited supply
+setting, giving a randomized strategy that assigns a single price to all items
+(uniform strategy), and never changes it (static strategy), that gives an
+$2^{O(\sqrt{\log n \log \log n})}$-approximation, and moreover, no static
+uniform pricing strategy can give better than $2^{\Omega(\log^{1/4} n)}$-
+approximation. We improve this lower bound to $2^{\Omega(sqrt{\log n})}$.
+  We consider dynamic uniform strategies, which can change the price upon the
+arrival of each buyer but the price on all unsold items is the same at all
+times, and static non-uniform strategies, which can assign different prices to
+different items but can never change it after setting it initially. We design
+such pricing strategies that give a poly-logarithmic approximation to maximum
+revenue. Thus in the limited supply setting, our results highlight a strong
+separation between the power of dynamic and non-uniform pricing versus static
+uniform pricing. To our knowledge, this is the first non-trivial analysis of
+dynamic and non-uniform pricing schemes for revenue maximization.

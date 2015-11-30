@@ -1,0 +1,19 @@
+In this paper we address the problem of modeling relational data, which
+appear in many applications such as social network analysis, recommender
+systems and bioinformatics. Previous studies either consider latent feature
+based models but disregarding local structure in the network, or focus
+exclusively on capturing local structure of objects based on latent blockmodels
+without coupling with latent characteristics of objects. To combine the
+benefits of the previous work, we propose a novel model that can simultaneously
+incorporate the effect of latent features and covariates if any, as well as the
+effect of latent structure that may exist in the data. To achieve this, we
+model the relation graph as a function of both latent feature factors and
+latent cluster memberships of objects to collectively discover globally
+predictive intrinsic properties of objects and capture latent block structure
+in the network to improve prediction performance. We also develop an
+optimization transfer algorithm based on the generalized EM-style strategy to
+learn the latent factors. We prove the efficacy of our proposed model through
+the link prediction task and cluster analysis task, and extensive experiments
+on the synthetic data and several real world datasets suggest that our proposed
+LFBM model outperforms the other state of the art approaches in the evaluated
+tasks.

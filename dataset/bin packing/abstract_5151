@@ -1,0 +1,25 @@
+Cross-correlation techniques provide a promising avenue for calibrating
+photometric redshifts and determining redshift distributions using spectroscopy
+which is systematically incomplete (e.g., current deep spectroscopic surveys
+fail to obtain secure redshifts for 30-50% or more of the galaxies targeted).
+In this paper we improve on the redshift distribution reconstruction methods
+presented in Matthews & Newman (2010) by incorporating full covariance
+information into our correlation function fits. Correlation function
+measurements are strongly covariant between angular or spatial bins, and
+accounting for this in fitting can yield substantial reduction in errors.
+However, frequently the covariance matrices used in these calculations are
+determined from a relatively small set (dozens rather than hundreds) of
+subsamples or mock catalogs, resulting in noisy covariance matrices whose
+inversion is ill-conditioned and numerically unstable. We present here a method
+of conditioning the covariance matrix known as ridge regression which results
+in a more well behaved inversion than other techniques common in large-scale
+structure studies. We demonstrate that ridge regression significantly improves
+the determination of correlation function parameters. We then apply these
+improved techniques to the problem of reconstructing redshift distributions. By
+incorporating full covariance information, applying ridge regression, and
+changing the weighting of fields in obtaining average correlation functions, we
+obtain reductions in the mean redshift distribution reconstruction error of as
+much as ~40% compared to previous methods. In an appendix, we provide a
+description of POWERFIT, an IDL code for performing power-law fits to
+correlation functions with ridge regression conditioning that we are making
+publicly available.

@@ -1,0 +1,13 @@
+With the increasing number of Quad-Core-based clusters and the introduction
+of compute nodes designed with large memory capacity shared by multiple cores,
+new problems related to scalability arise. In this paper, we analyze the
+overall performance of a cluster built with nodes having a dual Quad-Core
+Processor on each node. Some benchmark results are presented and some
+observations are mentioned when handling such processors on a benchmark test. A
+Quad-Core-based cluster's complexity arises from the fact that both local
+communication and network communications between the running processes need to
+be addressed. The potentials of an MPI-OpenMP approach are pinpointed because
+of its reduced communication overhead. At the end, we come to a conclusion that
+an MPI-OpenMP solution should be considered in such clusters since optimizing
+network communications between nodes is as important as optimizing local
+communications between processors in a multi-core cluster.

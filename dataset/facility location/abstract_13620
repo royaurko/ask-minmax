@@ -1,0 +1,15 @@
+We propose a computationally efficient statistical method to obtain
+distributional properties of annual maximum 24 hour precipitation on a 1 km by
+1 km regular grid over Iceland. A latent Gaussian model is built which takes
+into account observations, spatial variations and outputs from a local
+meteorological model. A covariate based on the meteorological model is
+constructed at each observational site and each grid point in order to
+assimilate available scientific knowledge about precipitation into the
+statistical model. The model is applied to two data sets on extreme
+precipitation, one uncorrected data set and one data set that is corrected for
+phase and wind. The observations are assumed to follow the generalized extreme
+value distribution. At the latent level, we implement SPDE spatial models for
+both the location and scale parameters of the likelihood. An efficient MCMC
+sampler which exploits the model structure is constructed, which yields fast
+continuous spatial predictions for spatially varying model parameters and
+quantiles.

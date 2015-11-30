@@ -1,0 +1,21 @@
+High availability has always been one of the main problems for a data center.
+Till now high availability was achieved by host per host redundancy, a highly
+expensive method in terms of hardware and human costs. A new approach to the
+problem can be offered by virtualization. Using virtualization, it is possible
+to achieve a redundancy system for all the services running on a data center.
+This new approach to high availability allows to share the running virtual
+machines over the servers up and running, by exploiting the features of the
+virtualization layer: start, stop and move virtual machines between physical
+hosts. The system (3RC) is based on a finite state machine with hysteresis,
+providing the possibility to restart each virtual machine over any physical
+host, or reinstall it from scratch. A complete infrastructure has been
+developed to install operating system and middleware in a few minutes. To
+virtualize the main servers of a data center, a new procedure has been
+developed to migrate physical to virtual hosts. The whole Grid data center
+SNS-PISA is running at the moment in virtual environment under the high
+availability system. As extension of the 3RC architecture, several storage
+solutions have been tested to store and centralize all the virtual disks, from
+NAS to SAN, to grant data safety and access from everywhere. Exploiting
+virtualization and ability to automatically reinstall a host, we provide a sort
+of host on-demand, where the action on a virtual machine is performed only when
+a disaster occurs.

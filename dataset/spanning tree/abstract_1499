@@ -1,0 +1,14 @@
+We present new MCMC algorithms for computing the posterior distributions and
+expectations of the unknown variables in undirected graphical models with
+regular structure. For demonstration purposes, we focus on Markov Random Fields
+(MRFs). By partitioning the MRFs into non-overlapping trees, it is possible to
+compute the posterior distribution of a particular tree exactly by conditioning
+on the remaining tree. These exact solutions allow us to construct efficient
+blocked and Rao-Blackwellised MCMC algorithms. We show empirically that tree
+sampling is considerably more efficient than other partitioned sampling schemes
+and the naive Gibbs sampler, even in cases where loopy belief propagation fails
+to converge. We prove that tree sampling exhibits lower variance than the naive
+Gibbs sampler and other naive partitioning schemes using the theoretical
+measure of maximal correlation. We also construct new information theory tools
+for comparing different MCMC schemes and show that, under these, tree sampling
+is more efficient.

@@ -1,0 +1,15 @@
+The difficulty of developing reliable parallel software is generating
+interest in deterministic environments, where a given program and input can
+yield only one possible result. Languages or type systems can enforce
+determinism in new code, and runtime systems can impose synthetic schedules on
+legacy parallel code. To parallelize existing serial code, however, we would
+like a programming model that is naturally deterministic without language
+restrictions or artificial scheduling. We propose "deterministic consistency",
+a parallel programming model as easy to understand as the "parallel assignment"
+construct in sequential languages such as Perl and JavaScript, where concurrent
+threads always read their inputs before writing shared outputs. DC supports
+common data- and task-parallel synchronization abstractions such as fork/join
+and barriers, as well as non-hierarchical structures such as producer/consumer
+pipelines and futures. A preliminary prototype suggests that software-only
+implementations of DC can run applications written for popular parallel
+environments such as OpenMP with low (<10%) overhead for some applications.

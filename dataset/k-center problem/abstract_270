@@ -1,0 +1,15 @@
+In this paper, we study the quantity of computational resources (state
+machine states and/or probabilistic transition precision) needed to solve
+specific problems in a single hop network where nodes communicate using only
+beeps. We begin by focusing on randomized leader election. We prove a lower
+bound on the states required to solve this problem with a given error bound,
+probability precision, and (when relevant) network size lower bound. We then
+show the bound tight with a matching upper bound. Noting that our optimal upper
+bound is slow, we describe two faster algorithms that trade some state
+optimality to gain efficiency. We then turn our attention to more general
+classes of problems by proving that once you have enough states to solve leader
+election with a given error bound, you have (within constant factors) enough
+states to simulate correctly, with this same error bound, a logspace TM with a
+constant number of unary input tapes: allowing you to solve a large and
+expressive set of problems. These results identify a key simplicity threshold
+beyond which useful distributed computation is possible in the beeping model.

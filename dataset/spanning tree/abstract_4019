@@ -1,0 +1,26 @@
+The tree automaton completion is an algorithm used for proving safety
+properties of systems that can be modeled by a term rewriting system. This
+representation and verification technique works well for proving properties of
+infinite systems like cryptographic protocols or more recently on Java Bytecode
+programs. This algorithm computes a tree automaton which represents a (regular)
+over approximation of the set of reachable terms by rewriting initial terms.
+This approach is limited by the lack of information about rewriting relation
+between terms. Actually, terms in relation by rewriting are in the same
+equivalence class: there are recognized by the same state in the tree
+automaton.
+  Our objective is to produce an automaton embedding an abstraction of the
+rewriting relation sufficient to prove temporal properties of the term
+rewriting system.
+  We propose to extend the algorithm to produce an automaton having more
+equivalence classes to distinguish a term or a subterm from its successors
+w.r.t. rewriting. While ground transitions are used to recognize equivalence
+classes of terms, epsilon-transitions represent the rewriting relation between
+terms. From the completed automaton, it is possible to automatically build a
+Kripke structure abstracting the rewriting sequence. States of the Kripke
+structure are states of the tree automaton and the transition relation is given
+by the set of epsilon-transitions. States of the Kripke structure are labelled
+by the set of terms recognized using ground transitions. On this Kripke
+structure, we define the Regular Linear Temporal Logic (R-LTL) for expressing
+properties. Such properties can then be checked using standard model checking
+algorithms. The only difference between LTL and R-LTL is that predicates are
+replaced by regular sets of acceptable terms.

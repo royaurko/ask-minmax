@@ -1,0 +1,17 @@
+The problem of estimating a sparse channel, i.e. a channel with a few
+non-zero taps, appears in various areas of communications. Recently, we have
+developed an algorithm based on iterative alternating minimization which
+iteratively detects the location and the value of the taps. This algorithms
+involves an approximate Maximum A Posteriori (MAP) probability scheme for
+detection of the location of taps, while a least square method is used for
+estimating the values at each iteration. In this work, based on the method of
+factor graphs and message passing algorithms, we will compute an exact solution
+for the MAP estimation problem. Indeed, we first find a factor graph model of
+this problem, and then perform the well-known min-sum algorithm on the edges of
+this graph. Consequently, we will find an exact estimator for the MAP problem
+that its complexity grows linearly with respect to the channel memory. By
+substituting this estimator in the mentioned alternating minimization method,
+we will propose an estimator that will nearly achieve the Cramer-Rao bound of
+the genie-aided estimation of sparse channels (estimation based on knowing the
+location of non-zero taps of the channel), while it can perform faster than
+most of the proposed algorithms in literature.

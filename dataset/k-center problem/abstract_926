@@ -1,0 +1,18 @@
+We study the complexity of a generic hitting problem H-Subgraph Hitting,
+where given a fixed pattern graph $H$ and an input graph $G$, the task is to
+find a set $X \subseteq V(G)$ of minimum size that hits all subgraphs of $G$
+isomorphic to $H$. In the colorful variant of the problem, each vertex of $G$
+is precolored with some color from $V(H)$ and we require to hit only
+$H$-subgraphs with matching colors. Standard techniques shows that for every
+fixed $H$, the problem is fixed-parameter tractable parameterized by the
+treewidth of $G$; however, it is not clear how exactly the running time should
+depend on treewidth. For the colorful variant, we demonstrate matching upper
+and lower bounds showing that the dependence of the running time on treewidth
+of $G$ is tightly governed by $\mu(H)$, the maximum size of a minimal vertex
+separator in $H$. That is, we show for every fixed $H$ that, on a graph of
+treewidth $t$, the colorful problem can be solved in time
+$2^{\mathcal{O}(t^{\mu(H)})}\cdot|V(G)|$, but cannot be solved in time
+$2^{o(t^{\mu(H)})}\cdot |V(G)|^{O(1)}$, assuming the Exponential Time
+Hypothesis (ETH). Furthermore, we give some preliminary results showing that,
+in the absence of colors, the parameterized complexity landscape of H-Subgraph
+Hitting is much richer.

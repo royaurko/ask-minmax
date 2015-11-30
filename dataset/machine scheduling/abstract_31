@@ -1,0 +1,18 @@
+MapReduce has become a popular programming model for running data intensive
+applications on the cloud. Completion time goals or deadlines of MapReduce jobs
+set by users are becoming crucial in existing cloud-based data processing
+environments like Hadoop. There is a conflict between the scheduling MR jobs to
+meet deadlines and "data locality" (assigning tasks to nodes that contain their
+input data). To meet the deadline a task may be scheduled on a node without
+local input data for that task causing expensive data transfer from a remote
+node. In this paper, a novel scheduler is proposed to address the above problem
+which is primarily based on the dynamic resource reconfiguration approach. It
+has two components: 1) Resource Predictor: which dynamically determines the
+required number of Map/Reduce slots for every job to meet completion time
+guarantee; 2) Resource Reconfigurator: that adjusts the CPU resources while not
+violating completion time goals of the users by dynamically increasing or
+decreasing individual VMs to maximize data locality and also to maximize the
+use of resources within the system among the active jobs. The proposed
+scheduler has been evaluated against Fair Scheduler on virtual cluster built on
+a physical cluster of 20 machines. The results demonstrate a gain of about 12%
+increase in throughput of Jobs

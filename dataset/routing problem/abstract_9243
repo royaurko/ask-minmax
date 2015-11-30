@@ -1,0 +1,15 @@
+The problem of approximate string matching is important in many different
+areas such as computational biology, text processing and pattern recognition. A
+great effort has been made to design efficient algorithms addressing several
+variants of the problem, including comparison of two strings, approximate
+pattern identification in a string or calculation of the longest common
+subsequence that two strings share.
+  We designed an output sensitive algorithm solving the edit distance problem
+between two strings of lengths n and m respectively in time
+O((s-|n-m|)min(m,n,s)+m+n) and linear space, where s is the edit distance
+between the two strings. This worst-case time bound sets the quadratic factor
+of the algorithm independent of the longest string length and improves existing
+theoretical bounds for this problem. The implementation of our algorithm excels
+also in practice, especially in cases where the two strings compared differ
+significantly in length. Source code of our algorithm is available at
+http://www.cs.miami.edu/\~dimitris/edit_distance

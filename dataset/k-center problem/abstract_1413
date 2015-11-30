@@ -1,0 +1,16 @@
+A solution of the radiative-transfer problem in arbitrary velocity fields
+introduced in a previous paper, has limitations in its applicability. For
+large-scale applications, the methods described also require large memory sets
+that are commonly not available to state-of-the-art computing hardware. In this
+work, we modify the algorithm to allow the computation of large-scale problems.
+We reduce the memory footprint via a domain decomposition. By introducing
+iterative Gauss-Seidel type solvers, we improve the speed of the overall
+computation. Because of the domain decomposition, the new algorithm requires
+the use of parallel-computing systems. The algorithm that we present permits
+large-scale solutions of radiative-transfer problems that include arbitrary
+wavelength couplings. In addition, we discover a quasi-analytic formal solution
+of the radiative transfer that significantly improves the overall computation
+speed. More importantly, this method ensures that our algorithm can be applied
+to multi-dimensional Lagrangian radiative-transfer calculations. In
+multi-dimensional atmospheres, velocity fields are in general chaotic ensuring
+that the inclusion of arbitrary wavelength couplings are mandatory.

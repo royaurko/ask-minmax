@@ -1,0 +1,19 @@
+A problem of current interest is the estimation of spatially distributed
+processes at locations where measurements are missing. Linear interpolation
+methods rely on the Gaussian assumption, which is often unrealistic in
+practice, or normalizing transformations, which are successful only for mild
+deviations from the Gaussian behavior. We propose to address the problem of
+missing values estimation on two-dimensional grids by means of spatial
+classification methods based on spin (Ising, Potts, clock) models. The "spin"
+variables provide an interval discretization of the process values, and the
+spatial correlations are captured in terms of interactions between the spins.
+The spins at the unmeasured locations are classified by means of the "energy
+matching" principle: the correlation energy of the entire grid (including
+prediction sites) is estimated from the sample-based correlations. We
+investigate the performance of the spin classifiers in terms of computational
+speed, misclassification rate, class histogram and spatial correlations
+reproduction using simulated realizations of spatial random fields, real
+rainfall data, and a digital test image. We also compare the spin-based methods
+with standard classifiers such as the k-nearest neighbor, the fuzzy k-nearest
+neighbor, and the Support Vector Machine. We find that the spin-based
+classifiers provide competitive choices.

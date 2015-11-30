@@ -1,0 +1,23 @@
+The processing of mega-dimensional data, such as images, scales linearly with
+image size only if fixed size processing windows are used. It would be very
+useful to be able to automate the process of sizing and interconnecting the
+processing windows. A stochastic encoder that is an extension of the standard
+Linde-Buzo-Gray vector quantiser, called a stochastic vector quantiser (SVQ),
+includes this required behaviour amongst its emergent properties, because it
+automatically splits the input space into statistically independent subspaces,
+which it then separately encodes. Various optimal SVQs have been obtained, both
+analytically and numerically. Analytic solutions which demonstrate how the
+input space is split into independent subspaces may be obtained when an SVQ is
+used to encode data that lives on a 2-torus (e.g. the superposition of a pair
+of uncorrelated sinusoids). Many numerical solutions have also been obtained,
+using both SVQs and chains of linked SVQs: (1) images of multiple independent
+targets (encoders for single targets emerge), (2) images of multiple correlated
+targets (various types of encoder for single and multiple targets emerge), (3)
+superpositions of various waveforms (encoders for the separate waveforms emerge
+- this is a type of independent component analysis (ICA)), (4) maternal and
+foetal ECGs (another example of ICA), (5) images of textures (orientation maps
+and dominance stripes emerge). Overall, SVQs exhibit a rich variety of
+self-organising behaviour, which effectively discovers the internal structure
+of the training data. This should have an immediate impact on "intelligent"
+computation, because it reduces the need for expert human intervention in the
+design of data processing algorithms.

@@ -1,0 +1,16 @@
+Thompson Sampling is one of the oldest heuristics for multi-armed bandit
+problems. It is a randomized algorithm based on Bayesian ideas, and has
+recently generated significant interest after several studies demonstrated it
+to have better empirical performance compared to the state-of-the-art methods.
+However, many questions regarding its theoretical performance remained open. In
+this paper, we design and analyze a generalization of Thompson Sampling
+algorithm for the stochastic contextual multi-armed bandit problem with linear
+payoff functions, when the contexts are provided by an adaptive adversary. This
+is among the most important and widely studied versions of the contextual
+bandits problem. We provide the first theoretical guarantees for the contextual
+version of Thompson Sampling. We prove a high probability regret bound of
+$\tilde{O}(d^{3/2}\sqrt{T})$ (or $\tilde{O}(d\sqrt{T \log(N)})$), which is the
+best regret bound achieved by any computationally efficient algorithm available
+for this problem in the current literature, and is within a factor of
+$\sqrt{d}$ (or $\sqrt{\log(N)}$) of the information-theoretic lower bound for
+this problem.

@@ -1,0 +1,13 @@
+Several approximate policy iteration schemes without value functions, which
+focus on policy representation using classifiers and address policy learning as
+a supervised learning problem, have been proposed recently. Finding good
+policies with such methods requires not only an appropriate classifier, but
+also reliable examples of best actions, covering the state space sufficiently.
+Up to this time, little work has been done on appropriate covering schemes and
+on methods for reducing the sample complexity of such methods, especially in
+continuous state spaces. This paper focuses on the simplest possible covering
+scheme (a discretized grid over the state space) and performs a
+sample-complexity comparison between the simplest (and previously commonly
+used) rollout sampling allocation strategy, which allocates samples equally at
+each state under consideration, and an almost as simple method, which allocates
+samples only as needed and requires significantly fewer samples.

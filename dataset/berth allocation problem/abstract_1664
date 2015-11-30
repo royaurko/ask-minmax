@@ -1,0 +1,25 @@
+Recent NVIDIA Graphics Processing Units (GPUs) can execute multiple kernels
+concurrently. On these GPUs, the thread block scheduler (TBS) uses the FIFO
+policy to schedule their thread blocks. We show that FIFO leaves performance to
+chance, resulting in significant loss of performance and fairness. To improve
+performance and fairness, we propose use of the preemptive Shortest Remaining
+Time First (SRTF) policy instead. Although SRTF requires an estimate of runtime
+of GPU kernels, we show that such an estimate of the runtime can be easily
+obtained using online profiling and exploiting a simple observation on GPU
+kernels' grid structure. Specifically, we propose a novel Structural Runtime
+Predictor. Using a simple Staircase model of GPU kernel execution, we show that
+the runtime of a kernel can be predicted by profiling only the first few thread
+blocks. We evaluate an online predictor based on this model on benchmarks from
+ERCBench, and find that it can estimate the actual runtime reasonably well
+after the execution of only a single thread block. Next, we design a thread
+block scheduler that is both concurrent kernel-aware and uses this predictor.
+We implement the SRTF policy and evaluate it on two-program workloads from
+ERCBench. SRTF improves STP by 1.18x and ANTT by 2.25x over FIFO. When compared
+to MPMax, a state-of-the-art resource allocation policy for concurrent kernels,
+SRTF improves STP by 1.16x and ANTT by 1.3x. To improve fairness, we also
+propose SRTF/Adaptive which controls resource usage of concurrently executing
+kernels to maximize fairness. SRTF/Adaptive improves STP by 1.12x, ANTT by
+2.23x and Fairness by 2.95x compared to FIFO. Overall, our implementation of
+SRTF achieves system throughput to within 12.64% of Shortest Job First (SJF, an
+oracle optimal scheduling policy), bridging 49% of the gap between FIFO and
+SJF.

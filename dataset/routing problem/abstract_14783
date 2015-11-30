@@ -1,0 +1,21 @@
+Runge Kutta Discontinuous Galerkin (RKDG) schemes can provide highly accurate
+solutions for a large class of important scientific problems. Using them for
+problems with shocks and other discontinuities requires that one has a strategy
+for detecting the presence of these discontinuities. In order to get past
+previous limitations in designing a limiter, we realize that the solution in
+RKDG schemes can carry meaningful sub-structure within a zone that may not need
+to be limited. To make this sub-structure visible, we take a sub-cell approach
+to detecting zones with discontinuities, known as troubled zones. A
+monotonicity preserving (MP) strategy is applied to distinguish between
+meaningful sub-structure and shocks. The strategy does not indiscriminately
+clip extrema and is, nevertheless, scale-free and problem-independent. The
+moments of the troubled zones is corrected using a weighted essentially
+non-oscillatory (WENO) or Hermite WENO (HWENO) approach. In the course of doing
+this work it was also realized that the most significant variation in the
+solution is contained in the solution variables and their first moments. Thus
+it is shown that the additional moments can be reconstructed using the
+variables and their first moments, resulting in a very substantial savings in
+computer memory and without any loss in order of accuracy. We call such schemes
+hybrid RKDG+HWENO schemes. Explicit, easy to implement formulae have been
+catalogued for third and fourth order of spatial accuracy. Several stringent
+test problems have also been presented.

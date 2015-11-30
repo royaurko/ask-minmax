@@ -1,0 +1,17 @@
+We describe a novel approach to statistical learning from particles tracked
+while moving in a random environment. The problem consists in inferring
+properties of the environment from recorded snapshots. We consider here the
+case of a fluid seeded with identical passive particles that diffuse and are
+advected by a flow. Our approach rests on efficient algorithms to estimate the
+weighted number of possible matchings among particles in two consecutive
+snapshots, the partition function of the underlying graphical model. The
+partition function is then maximized over the model parameters, namely
+diffusivity and velocity gradient. A Belief Propagation (BP) scheme is the
+backbone of our algorithm, providing accurate results for the flow parameters
+we want to learn. The BP estimate is additionally improved by incorporating
+Loop Series (LS) contributions. For the weighted matching problem, LS is
+compactly expressed as a Cauchy integral, accurately estimated by a saddle
+point approximation. Numerical experiments show that the quality of our
+improved BP algorithm is comparable to the one of a fully polynomial randomized
+approximation scheme, based on the Markov Chain Monte Carlo (MCMC) method,
+while the BP-based scheme is substantially faster than the MCMC scheme.

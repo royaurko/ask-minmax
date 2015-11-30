@@ -1,0 +1,15 @@
+We consider two models of computation: centralized local algorithms and local
+distributed algorithms. Algorithms in one model are adapted to the other model
+to obtain improved algorithms.
+  Distributed vertex coloring is employed to design improved centralized local
+algorithms for: maximal independent set, maximal matching, and an approximation
+scheme for maximum (weighted) matching over bounded degree graphs. The
+improvement is threefold: the algorithms are deterministic, stateless, and the
+number of probes grows polynomially in $\log^* n$, where $n$ is the number of
+vertices of the input graph.
+  The recursive centralized local improvement technique by Nguyen and
+Onak~\cite{onak2008} is employed to obtain an improved distributed
+approximation scheme for maximum (weighted) matching. The improvement is
+twofold: we reduce the number of rounds from $O(\log n)$ to $O(\log^*n)$ for a
+wide range of instances and, our algorithms are deterministic rather than
+randomized.

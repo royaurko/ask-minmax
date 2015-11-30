@@ -1,0 +1,13 @@
+We present two minimum residual methods for solving sequences of shifted
+linear systems, the right-preconditioned shifted GMRES and shifted Recycled
+GMRES algorithms. These methods are compatible with general preconditioning of
+all systems, and when restricted to right preconditioning, require no extra
+applications of the operator or preconditioner. These methods perform a minimum
+residual iteration for the base system while improving the approximations for
+the shifted systems at little additional cost. The iteration continues until
+the base system approximation is of satisfactory quality. The method is then
+recursively called for the remaining unconverged systems. We present both
+methods inside of a general framework which allows these techniques to be
+extended to the setting of flexible preconditioning and inexact Krylov methods.
+We present some analysis of such methods and numerical experiments
+demonstrating the effectiveness of the algorithms we have derived.

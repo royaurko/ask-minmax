@@ -1,0 +1,6 @@
+The reader-writer-problem is a standard problem in concurrent programming. A
+resource is shared by several processes which need either inclusive reading or
+exclusive writing access. The known solutions to this problem typically involve
+a number of global counters and queues. Here a very simple algorithm is
+presented which needs only two semaphores for synchronisation and no other
+global objects. The approach yields a fair solution without starving.

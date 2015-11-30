@@ -1,0 +1,21 @@
+A stochastic flow network is a directed graph with incoming edges (inputs)
+and outgoing edges (outputs), tokens enter through the input edges, travel
+stochastically in the network, and can exit the network through the output
+edges. Each node in the network is a splitter, namely, a token can enter a node
+through an incoming edge and exit on one of the output edges according to a
+predefined probability distribution. Stochastic flow networks can be easily
+implemented by DNA-based chemical reactions, with promising applications in
+molecular computing and stochastic computing. In this paper, we address a
+fundamental synthesis question: Given a finite set of possible splitters and an
+arbitrary rational probability distribution, design a stochastic flow network,
+such that every token that enters the input edge will exit the outputs with the
+prescribed probability distribution.
+  The problem of probability transformation dates back to von Neumann's 1951
+work and was followed, among others, by Knuth and Yao in 1976. Most existing
+works have been focusing on the "simulation" of target distributions. In this
+paper, we design optimal-sized stochastic flow networks for "synthesizing"
+target distributions. It shows that when each splitter has two outgoing edges
+and is unbiased, an arbitrary rational probability \frac{a}{b} with a\leq b\leq
+2^n can be realized by a stochastic flow network of size n that is optimal.
+Compared to the other stochastic systems, feedback (cycles in networks)
+strongly improves the expressibility of stochastic flow networks.

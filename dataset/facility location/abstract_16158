@@ -1,0 +1,20 @@
+The cutoff phenomenon describes a sharp transition in the convergence of a
+family of ergodic finite Markov chains to equilibrium. Many natural families of
+chains are believed to exhibit cutoff, and yet establishing this fact is often
+extremely challenging. An important such family of chains is the random walk on
+$\G(n,d)$, a random $d$-regular graph on $n$ vertices. It is well known that
+almost every such graph for $d\geq 3$ is an expander, and even essentially
+Ramanujan, implying a mixing-time of $O(\log n)$. According to a conjecture of
+Peres, the simple random walk on $\G(n,d)$ for such $d$ should then exhibit
+cutoff with high probability. As a special case of this, Durrett conjectured
+that the mixing time of the lazy random walk on a random 3-regular graph is
+w.h.p. $(6+o(1))\log_2 n$.
+  In this work we confirm the above conjectures, and establish cutoff in
+total-variation, its location and its optimal window, both for simple and for
+non-backtracking random walks on $\G(n,d)$. Namely, for any fixed $d\geq3$, the
+simple random walk on $\G(n,d)$ w.h.p. has cutoff at $\frac{d}{d-2}\log_{d-1}
+n$ with window order $\sqrt{\log n}$. Surprisingly, the non-backtracking random
+walk on $\G(n,d)$ w.h.p. has cutoff already at $\log_{d-1} n$ with constant
+window order. We further extend these results to $\G(n,d)$ for any $d=n^{o(1)}$
+that grows with $n$ (beyond which the mixing time is O(1)), where we establish
+concentration of the mixing time on one of two consecutive integers.

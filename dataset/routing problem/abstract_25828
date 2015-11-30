@@ -1,0 +1,15 @@
+For large scale distributed storage systems, flash memories are an excellent
+choice because flash memories consume less power, take lesser floor space for a
+target throughput and provide faster access to data. In a traditional
+distributed filesystem, even distribution is required to ensure load-balancing,
+balanced space utilisation and failure tolerance. In the presence of flash
+memories, in addition, we should also ensure that the number of writes to these
+different flash storage nodes are evenly distributed, to ensure even wear of
+flash storage nodes, so that unpredictable failures of storage nodes are
+avoided. This requires that we distribute updates and do garbage collection,
+across the flash storage nodes. We have motivated the distributed wearlevelling
+problem considering the replica placement algorithm for HDFS. Viewing the
+wearlevelling across flash storage nodes as a distributed co-ordination
+problem, we present an alternate design, to reduce the message communication
+cost across participating nodes. We demonstrate the effectiveness of our design
+through simulation

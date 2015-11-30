@@ -1,0 +1,15 @@
+Trees are fundamental data structure for many areas of computer science and
+system engineering. In this report, we show how to ensure eventual consistency
+of optimistically replicated trees. In optimistic replication, the different
+replicas of a distributed system are allowed to diverge but should eventually
+reach the same value if no more mutations occur. A new method to ensure
+eventual consistency is to design Conflict-free Replicated Data Types (CRDT).
+In this report, we design a collection of tree CRDT using existing set CRDTs.
+The remaining concurrency problems particular to tree data structure are
+resolved using one or two layers of correction algorithm. For each of these
+layer, we propose different and independent policies. Any combination of set
+CRDT and policies can be constructed, giving to the distributed application
+programmer the entire control of the behavior of the shared data in face of
+concurrent mutations. We also propose to order these trees by adding a
+positioning layer which is also independent to obtain a collection of ordered
+tree CRDTs.

@@ -1,0 +1,24 @@
+In this paper, a point-to-point Orthogonal Frequency Division Multiplexing
+(OFDM) system with a decode-and-forward (DF) relay is considered. The
+transmission consists of two hops. The source transmits in the first hop, and
+the relay transmits in the second hop. Each hop occupies one time slot. The
+relay is half-duplex, and capable of decoding the message on a particular
+subcarrier in one time slot, and re-encoding and forwarding it on a different
+subcarrier in the next time slot. Thus each message is transmitted on a pair of
+subcarriers in two hops. It is assumed that the destination is capable of
+combining the signals from the source and the relay pertaining to the same
+message. The goal is to maximize the weighted sum rate of the system by jointly
+optimizing subcarrier pairing and power allocation on each subcarrier in each
+hop. The weighting of the rates is to take into account the fact that different
+subcarriers may carry signals for different services. Both total and individual
+power constraints for the source and the relay are investigated. For the
+situations where the relay does not transmit on some subcarriers because doing
+so does not improve the weighted sum rate, we further allow the source to
+transmit new messages on these idle subcarriers. To the best of our knowledge,
+such a joint optimization inclusive of the destination combining has not been
+discussed in the literature. The problem is first formulated as a mixed integer
+programming problem. It is then transformed to a convex optimization problem by
+continuous relaxation, and solved in the dual domain. Based on the optimization
+results, algorithms to achieve feasible solutions are also proposed. Simulation
+results show that the proposed algorithms almost achieve the optimal weighted
+sum rate, and outperform the existing methods in various channel conditions.

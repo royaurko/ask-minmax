@@ -1,0 +1,15 @@
+The focus of this work is on an alternative implementation of the iterative
+ensemble smoother (iES). We show that iteration formulae similar to those used
+in \cite{chen2013-levenberg,emerick2012ensemble} can be derived by adopting a
+regularized Levenberg-Marquardt (RLM) algorithm \cite{jin2010regularized} to
+approximately solve a minimum-average-cost (MAC) problem. This not only leads
+to an alternative theoretical tool in understanding and analyzing the behaviour
+of the aforementioned iES, but also provides insights and guidelines for
+further developments of the smoothing algorithms. For illustration, we compare
+the performance of an implementation of the RLM-MAC algorithm to that of the
+approximate iES used in \cite{chen2013-levenberg} in three numerical examples:
+an initial condition estimation problem in a strongly nonlinear system, a
+facies estimation problem in a 2D reservoir and the history matching problem in
+the Brugge field case. In these three specific cases, the RLM-MAC algorithm
+exhibits comparable or even better performance, especially in the strongly
+nonlinear system.

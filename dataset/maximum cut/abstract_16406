@@ -1,0 +1,20 @@
+Many load balancing problems that arise in scientific computing applications
+ask to partition a graph with weights on the vertices and costs on the edges
+into a given number of almost equally-weighted parts such that the maximum
+boundary cost over all parts is small.
+  Here, this partitioning problem is considered for bounded-degree graphs
+G=(V,E) with edge costs c: E->R+ that have a p-separator theorem for some p>1,
+i.e., any (arbitrarily weighted) subgraph of G can be separated into two parts
+of roughly the same weight by removing a vertex set S such that the edges
+incident to S in the subgraph have total cost at most proportional to (SUM_e
+c^p_e)^(1/p), where the sum is over all edges e in the subgraph.
+  We show for all positive integers k and weights w that the vertices of G can
+be partitioned into k parts such that the weight of each part differs from the
+average weight by less than MAX{w_v; v in V}, and the boundary edges of each
+part have cost at most proportional to (SUM_e c_e^p/k)^(1/p) + MAX_e c_e. The
+partition can be computed in time nearly proportional to the time for computing
+a separator S of G.
+  Our upper bound on the boundary costs is shown to be tight up to a constant
+factor for infinitely many instances with a broad range of parameters. Previous
+results achieved this bound only if one has c=1, w=1, and one allows parts with
+weight exceeding the average by a constant fraction.

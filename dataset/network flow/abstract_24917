@@ -1,0 +1,25 @@
+Background: Many biological systems are modeled qualitatively with discrete
+models, such as probabilistic Boolean networks, logical models, Petri nets, and
+agent-based models, with the goal to gain a better understanding of the system.
+The computational complexity to analyze the complete dynamics of these models
+grows exponentially in the number of variables, which impedes working with
+complex models. Although there exist sophisticated algorithms to determine the
+dynamics of discrete models, their implementations usually require
+labor-intensive formatting of the model formulation, and they are oftentimes
+not accessible to users without programming skills. Efficient analysis methods
+are needed that are accessible to modelers and easy to use. Method: By
+converting discrete models into algebraic models, tools from computational
+algebra can be used to analyze their dynamics. Specifically, we propose a
+method to identify attractors of a discrete model that is equivalent to solving
+a system of polynomial equations, a long-studied problem in computer algebra.
+Results: A method for efficiently identifying attractors, and the web-based
+tool Analysis of Dynamic Algebraic Models (ADAM), which provides this and other
+analysis methods for discrete models. ADAM converts several discrete model
+types automatically into polynomial dynamical systems and analyzes their
+dynamics using tools from computer algebra. Based on extensive experimentation
+with both discrete models arising in systems biology and randomly generated
+networks, we found that the algebraic algorithms presented in this manuscript
+are fast for systems with the structure maintained by most biological systems,
+namely sparseness, i.e., while the number of nodes in a biological network may
+be quite large, each node is affected only by a small number of other nodes,
+and robustness, i.e., small number of attractors.

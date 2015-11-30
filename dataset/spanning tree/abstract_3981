@@ -1,0 +1,21 @@
+In computational phylogenetics, the problem of constructing a supertree of a
+given set of rooted input trees can be formalized in different ways, to cope
+with contradictory information in the input. We consider the Minimum Flip
+Supertree problem, where the input trees are transformed into a 0/1/?-matrix,
+such that each row represents a taxon, and each column represents an inner node
+of one of the input trees. Our goal is to find a perfect phylogeny for the
+input matrix requiring a minimum number of 0/1-flips, that is, corrections of
+0/1-entries in the matrix. The problem is known to be NP-complete. Here, we
+present a parameterized data reduction with polynomial running time. The data
+reduction guarantees that the reduced instance has a solution if and only if
+the original instance has a solution. We then make our data reduction
+parameter-independent by using upper bounds. This allows us to preprocess an
+instance, and to solve the reduced instance with an arbitrary method. Different
+from an existing data reduction for the consensus tree problem, our reduction
+allows us to draw conclusions about certain entries in the matrix. We have
+implemented and evaluated our data reduction. Unfortunately, we find that the
+Minimum Flip Supertree problem is also hard in practice: The amount of
+information that can be derived during data reduction diminishes as instances
+get more "complicated", and running times for "complicated" instances quickly
+become prohibitive. Still, our method offers another route of attack for this
+relevant phylogenetic problem.

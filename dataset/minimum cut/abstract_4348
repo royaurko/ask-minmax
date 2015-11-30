@@ -1,0 +1,13 @@
+A highway H is a line in the plane on which one can travel at a greater speed
+than in the remaining plane. One can choose to enter and exit H at any point.
+The highway time distance between a pair of points is the minimum time required
+to move from one point to the other, with optional use of H.
+  The highway hull HH(S,H) of a point set S is the minimal set containing S as
+well as the shortest paths between all pairs of points in HH(S,H), using the
+highway time distance.
+  We provide a Theta(n log n) worst-case time algorithm to find the highway
+hull under the L_1 metric, as well as an O(n log^2 n) time algorithm for the
+L_2 metric which improves the best known result of O(n^2).
+  We also define and construct the useful region of the plane: the region that
+a highway must intersect in order that the shortest path between at least one
+pair of points uses the highway.

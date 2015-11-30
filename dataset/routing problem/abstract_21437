@@ -1,0 +1,25 @@
+The topic of recovery of a structured model given a small number of linear
+observations has been well-studied in recent years. Examples include recovering
+sparse or group-sparse vectors, low-rank matrices, and the sum of sparse and
+low-rank matrices, among others. In various applications in signal processing
+and machine learning, the model of interest is known to be structured in
+several ways at the same time, for example, a matrix that is simultaneously
+sparse and low-rank.
+  Often norms that promote each individual structure are known, and allow for
+recovery using an order-wise optimal number of measurements (e.g., $\ell_1$
+norm for sparsity, nuclear norm for matrix rank). Hence, it is reasonable to
+minimize a combination of such norms. We show that, surprisingly, if we use
+multi-objective optimization with these norms, then we can do no better,
+order-wise, than an algorithm that exploits only one of the present structures.
+This result suggests that to fully exploit the multiple structures, we need an
+entirely new convex relaxation, i.e. not one that is a function of the convex
+relaxations used for each structure. We then specialize our results to the case
+of sparse and low-rank matrices. We show that a nonconvex formulation of the
+problem can recover the model from very few measurements, which is on the order
+of the degrees of freedom of the matrix, whereas the convex problem obtained
+from a combination of the $\ell_1$ and nuclear norms requires many more
+measurements. This proves an order-wise gap between the performance of the
+convex and nonconvex recovery problems in this case. Our framework applies to
+arbitrary structure-inducing norms as well as to a wide range of measurement
+ensembles. This allows us to give performance bounds for problems such as
+sparse phase retrieval and low-rank tensor completion.

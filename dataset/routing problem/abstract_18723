@@ -1,0 +1,18 @@
+Assume that $$ Au=f,\quad (1) $$ is a solvable linear equation in a Hilbert
+space, $||A||<\infty$, and $R(A)$ is not closed, so problem (1) is ill-posed.
+Here $R(A)$ is the range of the linear operator $A$. A DSM (dynamical systems
+method) for solving (1), consists of solving the following Cauchy problem: $$
+\dot u= -u +(B+\ep(t))^{-1}A^*f, \quad u(0)=u_0, \quad (2) $$ where $B:=A^*A$,
+$\dot u:=\frac {du}{dt}$, $u_0$ is arbitrary, and $\ep(t)>0$ is a continuously
+differentiable function, monotonically decaying to zero as $t\to \infty$.
+A.G.Ramm has proved that, for any $u_0$, problem (2) has a unique solution for
+all $t>0$, there exists $y:=w(\infty):=\lim_{t\to \infty}u(t)$, $Ay=f$, and $y$
+is the unique minimal-norm solution to (1). If $f_\d$ is given, such that
+$||f-f_\d||\leq \d$, then $u_\d(t)$ is defined as the solution to (2) with $f$
+replaced by $f_\d$. The stopping time is defined as a number $t_\d$such that
+$\lim_{\d \to 0}||u_\d (t_\d)-y||=0$, and $\lim_{\d \to 0}t_\d=\infty$. A
+discrepancy principle is proposed and proved in this paper. This principle
+yields $t_\d$ as the unique solution to the equation: $$
+||A(B+\ep(t))^{-1}A^*f_\d -f_\d||=\d, \quad (3) $$ where it is assumed that
+$||f_\d||>\d$ and $f_\d\perp N(A^*)$. For nonlinear monotone $A$ a discrepancy
+principle is formulated and justified.

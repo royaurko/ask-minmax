@@ -1,0 +1,16 @@
+Optical interferometers provide multiple wavelength measurements. In order to
+fully exploit the spectral and spatial resolution of these instruments, new
+algorithms for image reconstruction have to be developed. Early attempts to
+deal with multi-chromatic interferometric data have consisted in recovering a
+gray image of the object or independent monochromatic images in some spectral
+bandwidths. The main challenge is now to recover the full 3-D (spatio-spectral)
+brightness distribution of the astronomical target given all the available
+data. We describe a new approach to implement multi-wavelength image
+reconstruction in the case where the observed scene is a collection of
+point-like sources. We show the gain in image quality (both spatially and
+spectrally) achieved by globally taking into account all the data instead of
+dealing with independent spectral slices. This is achieved thanks to a
+regularization which favors spatial sparsity and spectral grouping of the
+sources. Since the objective function is not differentiable, we had to develop
+a specialized optimization algorithm which also accounts for non-negativity of
+the brightness distribution.

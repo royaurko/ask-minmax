@@ -1,0 +1,24 @@
+We are proposing a new computational thermochemistry protocol denoted W3
+theory, as a successor to W1 and W2 theory proposed earlier [Martin and De
+Oliveira, J. Chem. Phys. 111, 1843 (1999)]. The new method is both more
+accurate overall (error statistics for total atomization energies approximately
+cut in half) and more robust (particularly towards systems exhibiting
+significant nondynamical correlation) than W2 theory. The cardinal improvement
+rests in an approximate account for post-CCSD(T) correlation effects. Iterative
+T_3 (connected triple excitations) effects exhibit a basis set convergence
+behavior similar to the T_3 contribution overall. They almost universally
+decrease molecular binding energies. Their inclusion in isolation yields less
+accurate results than CCSD(T) nearly across the board: it is only when T_4
+(connected quadruple excitations) effects are included that superior
+performance is achieved. $T_4$ effects systematically increase molecular
+binding energies. Their basis set convergence is quite rapid, and even
+CCSDTQ/cc-pVDZ scaled by an empirical factor of 1.2532 will yield a quite
+passable quadruples contribution. The effect of still higher-order excitations
+was gauged for a subset of molecules (notably the eight-valence electron
+systems): T_5 (connected quintuple excitations) contributions reach 0.3
+kcal/mol for the pathologically multireference X ^1\Sigma^+_g state of C_2 but
+are quite small for other systems. A variety of avenues for achieving accuracy
+beyond that of W3 theory were explored, to no significant avail. W3 thus
+appears to represent a good compromise between accuracy and computational cost
+for those seeking a robust method for computational thermochemistry in the
+kJ/mol accuracy range on small systems.

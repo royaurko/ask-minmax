@@ -1,0 +1,24 @@
+We introduce a new, "worst-case" model for an asynchronous communication
+network and investigate the simplest (yet central) task in this model, namely
+the feasibility of end-to-end routing. Motivated by the question of how
+successful a protocol can hope to perform in a network whose reliability is
+guaranteed by as few assumptions as possible, we combine the main
+"unreliability" features encountered in network models in the literature,
+allowing our model to exhibit all of these characteristics simultaneously. In
+particular, our model captures networks that exhibit the following properties:
+1) On-line; 2) Dynamic Topology; 3)Distributed/Local Control 4) Asynchronous
+Communication; 5) (Polynomially) Bounded Memory; 6) No Minimal Connectivity
+Assumptions. In the confines of this network, we evaluate throughput
+performance and prove matching upper and lower bounds. In particular, using
+competitive analysis (perhaps somewhat surprisingly) we prove that the optimal
+competitive ratio of any on-line protocol is 1/n (where n is the number of
+nodes in the network), and then we describe a specific protocol and prove that
+it is n-competitive. The model we describe in the paper and for which we
+achieve the above matching upper and lower bounds for throughput represents the
+"worst-case" network, in that it makes no reliability assumptions. In many
+practical applications, the optimal competitive ratio of 1/n may be
+unacceptable, and consequently stronger assumptions must be imposed on the
+network to improve performance. However, we believe that a fundamental starting
+point to understanding which assumptions are necessary to impose on a network
+model, given some desired throughput performance, is to understand what is
+achievable in the worst case for the simplest task (namely end-to-end routing).

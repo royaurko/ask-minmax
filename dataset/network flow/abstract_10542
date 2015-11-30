@@ -1,0 +1,17 @@
+We have compared a recently developed module-based algorithm LeMoNe for
+reverse-engineering transcriptional regulatory networks to a mutual information
+based direct algorithm CLR, using benchmark expression data and databases of
+known transcriptional regulatory interactions for Escherichia coli and
+Saccharomyces cerevisiae. A global comparison using recall versus precision
+curves hides the topologically distinct nature of the inferred networks and is
+not informative about the specific subtasks for which each method is most
+suited. Analysis of the degree distributions and a regulator specific
+comparison show that CLR is 'regulator-centric', making true predictions for a
+higher number of regulators, while LeMoNe is 'target-centric', recovering a
+higher number of known targets for fewer regulators, with limited overlap in
+the predicted interactions between both methods. Detailed biological examples
+in E. coli and S. cerevisiae are used to illustrate these differences and to
+prove that each method is able to infer parts of the network where the other
+fails. Biological validation of the inferred networks cautions against
+over-interpreting recall and precision values computed using incomplete
+reference networks.

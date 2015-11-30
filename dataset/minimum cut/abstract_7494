@@ -1,0 +1,18 @@
+A graph is Hamiltonian if it contains a cycle passing through every vertex
+exactly once. A celebrated theorem of Dirac from 1952 asserts that every graph
+on $n\ge 3$ vertices with minimum degree at least $n/2$ is Hamiltonian. We
+refer to such graphs as Dirac graphs. In this paper we obtain the following
+strengthening of this result. Given a graph $G=(V,E)$, an {\em incompatibility
+system} $\mathcal{F}$ over $G$ is a family $\mathcal{F}=\{F_v\}_{v\in V}$ such
+that for every $v\in V$, the set $F_v$ is a set of unordered pairs $F_v
+\subseteq \{\{e,e'\}: e\ne e'\in E, e\cap e'=\{v\}\}$. An incompatibility
+system is {\em $\Delta$-bounded} if for every vertex $v$ and an edge $e$
+incident to $v$, there are at most $\Delta$ pairs in $F_v$ containing $e$. We
+say that a cycle $C$ in $G$ is {\em compatible} with $\mathcal{F}$ if every
+pair of incident edges $e,e'$ of $C$ satisfies $\{e,e'\} \notin F_v$, where
+$v=e\cap e'$. This notion is partly motivated by a concept of transition
+systems defined by Kotzig in 1968, and can be viewed as a quantitative measure
+of robustness of graph properties. We prove that there is a constant $\mu>0$
+such that for every $\mu n$-bounded incompatibility system $\mathcal{F}$ over a
+Dirac graph $G$, there exists a Hamilton cycle compatible with $\mathcal{F}$.
+This settles in a very strong form, a conjecture of H\"{a}ggkvist from 1988.

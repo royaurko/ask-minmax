@@ -1,0 +1,21 @@
+Real-world systems are often complex, dynamic, and nonlinear. Understanding
+the dynamics of a system from its observed time series is key to the prediction
+and control of the system's behavior. While most existing techniques tacitly
+assume some form of stationarity or continuity, abrupt changes, which are often
+due to external disturbances or sudden changes in the intrinsic dynamics, are
+common in time series. Structural breaks, which are time points at which the
+statistical patterns of a time series change, pose considerable challenges to
+data analysis. Without identification of such break points, the same dynamic
+rule would be applied to the whole period of observation, whereas false
+identification of structural breaks may lead to overfitting. In this paper, we
+cast the problem of decomposing a time series into its trend and seasonal
+components as an optimization problem. This problem is ill-posed due to the
+arbitrariness in the number of parameters. To overcome this difficulty, we
+propose the addition of a penalty function (i.e., a regularization term) that
+accounts for the number of parameters. Our approach simultaneously identifies
+seasonality and trend without the need of iterations, and allows the reliable
+detection of structural breaks. The method is applied to recorded data on fish
+populations and sea surface temperature, where it detects structural breaks
+that would have been neglected otherwise. This suggests that our method can
+lead to a general approach for the monitoring, prediction, and prevention of
+structural changes in real systems.

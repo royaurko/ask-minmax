@@ -1,0 +1,24 @@
+In this two-part paper, we consider SDL constructions of optical queues with
+a limited number of recirculations through the optical switches and the fiber
+delay lines. We show that the constructions of certain types of optical queues,
+including linear compressors, linear decompressors, and 2-to-1 FIFO
+multiplexers, under a simple packet routing scheme and under the constraint of
+a limited number of recirculations can be transformed into equivalent integer
+representation problems under a corresponding constraint. Given $M$ and $k$,
+the problem of finding an \emph{optimal} construction, in the sense of
+maximizing the maximum delay (resp., buffer size), among our constructions of
+linear compressors/decompressors (resp., 2-to-1 FIFO multiplexers) is
+equivalent to the problem of finding an optimal sequence ${\dbf^*}_1^M$ in
+$\Acal_M$ (resp., $\Bcal_M$) such that $B({\dbf^*}_1^M;k)=\max_{\dbf_1^M\in
+\Acal_M}B(\dbf_1^M;k)$ (resp., $B({\dbf^*}_1^M;k)=\max_{\dbf_1^M\in
+\Bcal_M}B(\dbf_1^M;k)$), where $\Acal_M$ (resp., $\Bcal_M$) is the set of all
+sequences of fiber delays allowed in our constructions of linear
+compressors/decompressors (resp., 2-to-1 FIFO multiplexers). In Part I, we
+propose a class of \emph{greedy} constructions of linear
+compressors/decompressors and 2-to-1 FIFO multiplexers by specifying a class
+$\Gcal_{M,k}$ of sequences such that $\Gcal_{M,k}\subseteq \Bcal_M\subseteq
+\Acal_M$ and each sequence in $\Gcal_{M,k}$ is obtained recursively in a greedy
+manner. We then show that every optimal construction must be a greedy
+construction. In Part II, we further show that there are at most two optimal
+constructions and give a simple algorithm to obtain the optimal
+construction(s).

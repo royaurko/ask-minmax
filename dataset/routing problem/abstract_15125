@@ -1,0 +1,17 @@
+Recently, a flexible and stable algorithm was introduced for the computation
+of 2D unstable manifolds of periodic solutions to systems of ordinary
+differential equations. The main idea of this approach is to represent orbits
+in this manifold as the solutions of an appropriate boundary value problem. The
+boundary value problem is under determined and a one parameter family of
+solutions can be found by means of arclength continuation. This family of
+orbits covers a piece of the manifold. The quality of this covering depends on
+the way the boundary value problem is discretised, as do the tractability and
+accuracy of the computation. In this paper, we describe an implementation of
+the orbit continuation algorithm which relies on multiple shooting and
+Newton-Krylov continuation. We show that the number of time integrations
+necessary for each continuation step scales only with the number of shooting
+intervals but not with the number of degrees of freedom of the dynamical
+system. The number of shooting intervals is chosen based on linear stability
+analysis to keep the conditioning of the boundary value problem in check. We
+demonstrate our algorithm with two test systems: a low-order model of shear
+flow and a well-resolved simulation of turbulent plane Couette flow.

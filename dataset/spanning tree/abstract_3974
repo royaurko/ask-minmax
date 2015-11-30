@@ -1,0 +1,18 @@
+We consider the indirect covering subtree problem (Kim et al., 1996). The
+input is an edge weighted tree graph along with customers located at the nodes.
+Each customer is associated with a radius and a penalty. The goal is to locate
+a tree-shaped facility such that the sum of setup and penalty cost is
+minimized. The setup cost equals the sum of edge lengths taken by the facility
+and the penalty cost is the sum of penalties of all customers whose distance to
+the facility exceeds their radius. The indirect covering subtree problem
+generalizes the single maximum coverage location problem on trees where the
+facility is a node rather than a subtree. Indirect covering subtree can be
+solved in $O(n\log^2 n)$ time (Kim et al., 1996). A slightly faster algorithm
+for single maximum coverage location with a running time of
+$O(n\log^2n/\log\log n)$ has been provided (Spoerhase and Wirth, 2009). We
+achieve time $O(n\log n)$ for indirect covering subtree thereby providing the
+fastest known algorithm for both problems. Our result implies also faster
+algorithms for competitive location problems such as $(1,X)$-medianoid and
+$(1,p)$-centroid on trees. We complement our result by a lower bound of
+$\Omega(n\log n)$ for single maximum coverage location and $(1,X)$-medianoid on
+a real-number RAM model showing that our algorithm is optimal in running time.

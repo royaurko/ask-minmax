@@ -1,0 +1,17 @@
+Kolmogorov complexity has inspired several alignment-free distance measures,
+based on the comparison of lengths of compressions, which have been applied
+successfully in many areas. One of these measures, the so-called Universal
+Similarity Metric (USM), has been used by Krasnogor and Pelta to compare simple
+protein contact maps, showing that it yielded good clustering on four small
+datasets. We report an extensive test of this metric using a much larger and
+representative protein dataset: the domain dataset used by Sierk and Pearson to
+evaluate seven protein structure comparison methods and two protein sequence
+comparison methods. One result is that Krasnogor-Pelta method has less domain
+discriminant power than any one of the methods considered by Sierk and Pearson
+when using these simple contact maps. In another test, we found that the USM
+based distance has low agreement with the CATH tree structure for the same
+benchmark of Sierk and Pearson. In any case, its agreement is lower than the
+one of a standard sequential alignment method, SSEARCH. Finally, we manually
+found lots of small subsets of the database that are better clustered using
+SSEARCH than USM, to confirm that Krasnogor-Pelta's conclusions were based on
+datasets that were too small.

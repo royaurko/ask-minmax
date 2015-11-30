@@ -1,0 +1,15 @@
+This report addresses state inference for hidden Markov models. These models
+rely on unobserved states, which often have a meaningful interpretation. This
+makes it necessary to develop diagnostic tools for quantification of state
+uncertainty. The entropy of the state sequence that explains an observed
+sequence for a given hidden Markov chain model can be considered as the
+canonical measure of state sequence uncertainty. This canonical measure of
+state sequence uncertainty is not reflected by the classic multivariate state
+profiles computed by the smoothing algorithm, which summarizes the possible
+state sequences. Here, we introduce a new type of profiles which have the
+following properties: (i) these profiles of conditional entropies are a
+decomposition of the canonical measure of state sequence uncertainty along the
+sequence and makes it possible to localize this uncertainty, (ii) these
+profiles are univariate and thus remain easily interpretable on tree
+structures. We show how to extend the smoothing algorithms for hidden Markov
+chain and tree models to compute these entropy profiles efficiently.

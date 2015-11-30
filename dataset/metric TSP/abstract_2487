@@ -1,0 +1,18 @@
+In this paper, we disprove a conjecture of Goemans and Linial; namely, that
+every negative type metric embeds into $\ell_1$ with constant distortion. We
+show that for an arbitrarily small constant $\delta> 0$, for all large enough
+$n$, there is an $n$-point negative type metric which requires distortion at
+least $(\log\log n)^{1/6-\delta}$ to embed into $\ell_1.$
+  Surprisingly, our construction is inspired by the Unique Games Conjecture
+(UGC) of Khot, establishing a previously unsuspected connection between
+probabilistically checkable proof systems (PCPs) and the theory of metric
+embeddings. We first prove that the UGC implies a super-constant hardness
+result for the (non-uniform) Sparsest Cut problem. Though this hardness result
+relies on the UGC, we demonstrate, nevertheless, that the corresponding PCP
+reduction can be used to construct an "integrality gap instance" for Sparsest
+Cut. Towards this, we first construct an integrality gap instance for a natural
+SDP relaxation of Unique Games. Then we "simulate" the PCP reduction and
+"translate" the integrality gap instance of Unique Games to an integrality gap
+instance of Sparsest Cut. This enables us to prove a $(\log \log
+n)^{1/6-\delta}$ integrality gap for Sparsest Cut, which is known to be
+equivalent to the metric embedding lower bound.

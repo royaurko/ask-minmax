@@ -1,0 +1,16 @@
+We present an exact method of greatly speeding up belief propagation (BP) for
+a wide variety of potential functions in pairwise MRFs and other graphical
+models. Specifically, our technique applies whenever the pairwise potentials
+have been {\em truncated} to a constant value for most pairs of states, as is
+commonly done in MRF models with robust potentials (such as stereo) that impose
+an upper bound on the penalty assigned to discontinuities; for each of the $M$
+possible states in one node, only a smaller number $m$ of compatible states in
+a neighboring node are assigned milder penalties. The computational complexity
+of our method is $O(mM)$, compared with $O(M^2)$ for standard BP, and we
+emphasize that the method is {\em exact}, in contrast with related techniques
+such as pruning; moreover, the method is very simple and easy to implement.
+Unlike some previous work on speeding up BP, our method applies both to
+sum-product and max-product BP, which makes it useful in any applications where
+marginal probabilities are required, such as maximum likelihood estimation. We
+demonstrate the technique on a stereo MRF example, confirming that the
+technique speeds up BP without altering the solution.

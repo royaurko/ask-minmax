@@ -1,0 +1,20 @@
+This paper designs hybrid analog-digital channel estimation and beamforming
+techniques for multiuser massive multiple input multiple output (MIMO) systems
+with limited number of radio frequency (RF) chains. For these systems, first we
+design novel minimum mean square error (MMSE) hybrid analog-digital channel
+estimator by considering both perfect and imperfect channel covariance matrix
+knowledge cases. Then, we utilize the estimated channels to enable beamforming
+for data transmission. When the channel covariance matrices of all user
+equipments (UEs) are known perfectly, we show that there is a tradeoff between
+the training duration and throughput. Specifically, we exploit that the optimal
+training duration that maximizes the throughput depends on the covariance
+matrices of all UEs, number of RF chains and channel coherence time ($T_c$). We
+also show that the training time optimization problem can be formulated as a
+concave maximization problem {for some system parameter settings} where its
+global optimal solution is obtained efficiently using existing tools. In
+particular, when the base station equipped with $64$ antennas and $1$ RF chain
+is serving one single antenna UE, $T_c=128$ symbol periods ($T_s$) and signal
+to noise ratio of $10$dB, we have found that the optimal training durations are
+$4T_s$ and $20T_s$ for highly correlated and uncorrelated Rayleigh fading
+channel coefficients, respectively. The analytical expressions are validated by
+performing numerical and extensive Monte Carlo simulations.

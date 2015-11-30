@@ -1,0 +1,17 @@
+This paper proposes a distributed algorithm which deterministically gathers n
+(n > 4) asynchronous, fat robots. The robots are assumed to be transparent and
+they have full visibility. The robots are initially considered to be
+stationary. A robot is visible in its motion. The robots do not store past
+actions. They are anonymous and can not be distinguished by their appearances
+and do not have common coordinate system or chirality. The robots do not
+communicate through message passing. In the proposed gathering algorithm one
+robot moves at a time towards its destination. The robot which moves, is
+selected in such a way that, it will be the only robot eligible to move, until
+it reaches its destination. In case of a tie, this paper proposes a leader
+election algorithm which produces an ordering of the robots and the first robot
+in the ordering becomes the leader. The ordering is unique in the sense that,
+each robot, characterized by its location, agrees on the same ordering. We show
+that if a set of robots can be ordered then they can gather deterministically.
+The paper also characterizes the cases, where ordering is not possible. This
+paper also presents an important fact that, if leader election is possible then
+gathering pattern formation is possible even with no chirality.

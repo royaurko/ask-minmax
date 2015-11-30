@@ -1,0 +1,17 @@
+Traditional control-flow analysis (CFA) for higher-order languages, whether
+implemented by constraint-solving or abstract interpretation, introduces
+spurious connections between callers and callees. Two distinct invocations of a
+function will necessarily pollute one another's return-flow. Recently, three
+distinct approaches have been published which provide perfect call-stack
+precision in a computable manner: CFA2, PDCFA, and AAC. Unfortunately, CFA2 and
+PDCFA are difficult to implement and require significant engineering effort.
+Furthermore, all three are computationally expensive; for a monovariant
+analysis, CFA2 is in $O(2^n)$, PDCFA is in $O(n^6)$, and AAC is in $O(n^9 log
+n)$.
+  In this paper, we describe a new technique that builds on these but is both
+straightforward to implement and computationally inexpensive. The crucial
+insight is an unusual state-dependent allocation strategy for the addresses of
+continuation. Our technique imposes only a constant-factor overhead on the
+underlying analysis and, with monovariance, costs only O(n3) in the worst case.
+  This paper presents the intuitions behind this development, a proof of the
+precision of this analysis, and benchmarks demonstrating its efficacy.

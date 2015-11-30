@@ -1,0 +1,12 @@
+For polar codes with short-to-medium code length, list successive
+cancellation decoding is used to achieve a good error-correcting performance.
+However, list pruning in the current list decoding is based on the sorting
+strategy and its timing complexity is high. This results in a long decoding
+latency for large list size. In this work, aiming at a low-latency list
+decoding implementation, a double thresholding algorithm is proposed for a fast
+list pruning. As a result, with a negligible performance degradation, the list
+pruning delay is greatly reduced. Based on the double thresholding, a
+low-latency list decoding architecture is proposed and implemented using a UMC
+90nm CMOS technology. Synthesis results show that, even for a large list size
+of 16, the proposed low-latency architecture achieves a decoding throughput of
+220 Mbps at a frequency of 641 MHz.

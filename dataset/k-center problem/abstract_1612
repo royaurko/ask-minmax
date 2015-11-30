@@ -1,0 +1,22 @@
+Sampling distribution over high-dimensional state-space is a problem which
+has recently attracted a lot of research efforts; applications include Bayesian
+non-parametrics, Bayesian inverse problems and aggregation of estimators.All
+these problems boil down to sample a target distribution $\pi$ having a density
+\wrt\ the Lebesgue measure on $\mathbb{R}^d$, known up to a normalisation
+factor $x \mapsto \mathrm{e}^{-U(x)}/\int\_{\mathbb{R}^d} \mathrm{e}^{-U(y)}
+\mathrm{d} y$ where $U$ is continuously differentiable and smooth. In this
+paper, we study a sampling technique based on the Euler discretization of the
+Langevin stochastic differential equation. Contrary to the Metropolis Adjusted
+Langevin Algorithm (MALA), we do not apply a Metropolis-Hastings correction. We
+obtain for both constant and decreasing step sizes in the Euler discretization,
+non-asymptotic bounds for the convergence to stationarity in both total
+variation and Wasserstein distances. A particular attention is paid on the
+dependence on the dimension of the state space, to demonstrate the
+applicability of this method in the high dimensional setting, at least when $U$
+is convex. These bounds are based on recently obtained estimates of the
+convergence of the Langevin diffusion to stationarity using Poincar{\'e} and
+log-Sobolev inequalities. These bounds improve and extend the results of
+(Dalalyan, 2014). We also investigate the convergence of an appropriately
+weighted empirical measure and we report sharp bounds for the mean square error
+and exponential deviation inequality for Lipschitz functions. A limited Monte
+Carlo experiment is carried out to support our findings.

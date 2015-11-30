@@ -1,0 +1,14 @@
+With a goal of supporting the timely and cost-effective analysis of Terabyte
+datasets on commodity components, we present and evaluate StoreTorrent, a
+simple distributed filesystem with integrated fault tolerance for efficient
+handling of small data records. Our contributions include an application-OS
+pipelining technique and metadata structure to increase small write and read
+performance by a factor of 1-10, and the use of peer-to-peer communication of
+replica-location indexes to avoid transferring data during parallel analysis
+even in a degraded state. We evaluated StoreTorrent, PVFS, and Gluster
+filesystems using 70 storage nodes and 560 parallel clients on an 8-core/node
+Ethernet cluster with directly attached SATA disks. StoreTorrent performed
+parallel small writes at an aggregate rate of 1.69 GB/s, and supported reads
+over the network at 8.47 GB/s. We ported a parallel analysis task and
+demonstrate it achieved parallel reads at the full aggregate speed of the
+storage node local filesystems.

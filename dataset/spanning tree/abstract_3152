@@ -1,0 +1,18 @@
+Algorithms for efficiently finding optimal alphabetic decision trees -- such
+as the Hu-Tucker algorithm -- are well established and commonly used. However,
+such algorithms generally assume that the cost per decision is uniform and thus
+independent of the outcome of the decision. The few algorithms without this
+assumption instead use one cost if the decision outcome is ``less than'' and
+another cost otherwise. In practice, neither assumption is accurate for
+software optimized for today's microprocessors. Such software generally has one
+cost for the more likely decision outcome and a greater cost -- often far
+greater -- for the less likely decision outcome. This problem and
+generalizations thereof are thus applicable to hard coding static decision tree
+instances in software, e.g., for optimizing program bottlenecks or for
+compiling switch statements. An O(n^3)-time O(n^2)-space dynamic programming
+algorithm can solve this optimal binary decision tree problem, and this
+approach has many generalizations that optimize for the behavior of processors
+with predictive branch capabilities, both static and dynamic. Solutions to this
+formulation are often faster in practice than ``optimal'' decision trees as
+formulated in the literature. Different search paradigms can sometimes yield
+even better performance.

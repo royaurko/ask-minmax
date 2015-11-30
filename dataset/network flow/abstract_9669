@@ -1,0 +1,15 @@
+Identifying latent structure in large data matrices is essential for
+exploring biological processes. Here, we consider recovering gene co-expression
+networks from gene expression data, where each network encodes relationships
+between genes that are locally co-regulated by shared biological mechanisms. To
+do this, we develop a Bayesian statistical model for biclustering to infer
+subsets of co-regulated genes whose covariation may be observed in only a
+subset of the samples. Our biclustering method, BicMix, has desirable
+properties, including allowing overcomplete representations of the data,
+computational tractability, and jointly modeling unknown confounders and
+biological signals. Compared with related biclustering methods, BicMix recovers
+latent structure with higher precision across diverse simulation scenarios.
+Further, we develop a method to recover gene co-expression networks from the
+estimated sparse biclustering matrices. We apply BicMix to breast cancer gene
+expression data and recover a gene co-expression network that is differential
+across ER+ and ER- samples.

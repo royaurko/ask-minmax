@@ -1,0 +1,17 @@
+We study the complexity of the maximum coverage problem, restricted to set
+systems of bounded VC-dimension. Our main result is a fixed-parameter tractable
+approximation scheme: an algorithm that outputs a $(1-\eps)$-approximation to
+the maximum-cardinality union of $k$ sets, in running time $O(f(\eps,k,d)\cdot
+poly(n))$ where $n$ is the problem size, $d$ is the VC-dimension of the set
+system, and $f(\eps,k,d)$ is exponential in $(kd/\eps)^c$ for some constant
+$c$. We complement this positive result by showing that the function
+$f(\eps,k,d)$ in the running-time bound cannot be replaced by a function
+depending only on $(\eps,d)$ or on $(k,d)$, under standard complexity
+assumptions.
+  We also present an improved upper bound on the approximation ratio of the
+greedy algorithm in special cases of the problem, including when the sets have
+bounded cardinality and when they are two-dimensional halfspaces. Complementing
+these positive results, we show that when the sets are four-dimensional
+halfspaces neither the greedy algorithm nor local search is capable of
+improving the worst-case approximation ratio of $1-1/e$ that the greedy
+algorithm achieves on arbitrary instances of maximum coverage.

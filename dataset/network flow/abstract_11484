@@ -1,0 +1,14 @@
+The celebrated Kermack-McKendric model of epidemics studies the transmission
+of a disease in a population where each individual is initially susceptible
+(S), may become infective (I) and then removed or recovered (R) and plays no
+further epidemiological role. This ODE model arises as the limiting case of a
+network model where each individual has an equal chance of infecting every
+other. More recent work gives explicit consideration to the network of social
+interaction and attendant probability of transmission for each interacting
+pair. The state of such a network is an assignment of the values {S,I,R} to its
+members. Given such a network, an initial state and a particular susceptible
+individual, we would like to compute their probability of becoming infected in
+the course of an epidemic. It turns out that this problem is NP-hard. In
+particular, it belongs in a class of problems all of whose known solutions
+require an exponential amount of computation and for which it is unlikely that
+there will be more efficient solutions.

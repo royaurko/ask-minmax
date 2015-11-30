@@ -1,0 +1,14 @@
+We show that the shadow vertex algorithm can be used to compute a short path
+between a given pair of vertices of a polytope P = {x : Ax \leq b} along the
+edges of P, where A \in R^{m \times n} is a real-valued matrix. Both, the
+length of the path and the running time of the algorithm, are polynomial in m,
+n, and a parameter 1/delta that is a measure for the flatness of the vertices
+of P. For integer matrices A \in Z^{m \times n} we show a connection between
+delta and the largest absolute value Delta of any sub-determinant of A,
+yielding a bound of O(Delta^4 m n^4) for the length of the computed path. This
+bound is expressed in the same parameter Delta as the recent non-constructive
+bound of O(Delta^2 n^4 \log (n Delta)) by Bonifas et al.
+  For the special case of totally unimodular matrices, the length of the
+computed path simplifies to O(m n^4), which significantly improves the
+previously best known constructive bound of O(m^{16} n^3 \log^3(mn)) by Dyer
+and Frieze.

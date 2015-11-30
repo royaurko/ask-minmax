@@ -1,0 +1,25 @@
+We introduce a graph-theoretic approach to synchronizing clocks in an {\em ad
+hoc} network of $N$~timepieces. Clocks naturally drift away from being
+synchronized because of many physical factors. The manual way of clock
+synchronization suffers from an inherrent propagation of the so called "clock
+drift" due to "word-of-mouth effect." The current standard way of automated
+clock synchronization is either via radio band transmission of the global clock
+or via the software-based Network Time Protocol (NTP). Synchronization via
+radio band transmission suffers from the wave transmission delay, while the
+client-server-based NTP does not scale to increased number of clients as well
+as to unforeseen server overload conditions (e.g., flash crowd and time-of-day
+effects). Further, the trivial running time of NTP for synchronizing an
+$N$-node network, where each node is a clock and the NTP server follows a
+single-port communication model, is~$\bigO(N)$. We introduce in this paper a
+$\bigO(\log N)$ time for synchronizing the clocks in exchange for an increase
+of $\bigO(N)$ in space complexity, though through creative "tweaking," we later
+reduced the space requirement to~$\bigO(1)$. Our graph-theoretic protocol
+assumes that the network is $\K_N$, while the subset of clocks are in an
+embedded circulant graph $\C_{n<N}^q$ with $q$~jumps and clock information is
+communicated through circular shifts within the $\C_{n<N}^q$. All $N$~nodes
+communicate via a single-port duplex channel model. Theoretically, this
+synchronization protocol allows for $N(\log N)^{-1} - 1$ more synchronizations
+than the client-server-based one. Empirically through statistically replicated
+multi-agent-based microsimulation runs, our protocol allows at most 80\% of the
+clocks synchronized compared to the current protocol which only allows up to
+30\% after some steady-state time.

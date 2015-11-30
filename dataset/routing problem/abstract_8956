@@ -1,0 +1,11 @@
+In the on-line file-caching problem problem, the input is a sequence of
+requests for files, given on-line (one at a time). Each file has a non-negative
+size and a non-negative retrieval cost. The problem is to decide which files to
+keep in a fixed-size cache so as to minimize the sum of the retrieval costs for
+files that are not in the cache when requested. The problem arises in web
+caching by browsers and by proxies. This paper describes a natural
+generalization of LRU called Landlord and gives an analysis showing that it has
+an optimal performance guarantee (among deterministic on-line algorithms).
+  The paper also gives an analysis of the algorithm in a so-called ``loosely''
+competitive model, showing that on a ``typical'' cache size, either the
+performance guarantee is O(1) or the total retrieval cost is insignificant.

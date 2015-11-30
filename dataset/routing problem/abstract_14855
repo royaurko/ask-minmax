@@ -1,0 +1,18 @@
+In this article, we propose an algorithm, NESTA-LASSO, for the LASSO problem,
+i.e., an underdetermined linear least-squares problem with a 1-norm constraint
+on the solution. We prove under the assumption of the restricted isometry
+property (RIP) and a sparsity condition on the solution, that NESTA-LASSO is
+guaranteed to be almost always locally linearly convergent. As in the case of
+the algorithm NESTA proposed by Becker, Bobin, and Candes, we rely on
+Nesterov's accelerated proximal gradient method, which takes O(e^{-1/2})
+iterations to come within e > 0 of the optimal value. We introduce a
+modification to Nesterov's method that regularly updates the prox-center in a
+provably optimal manner, and the aforementioned linear convergence is in part
+due to this modification.
+  In the second part of this article, we attempt to solve the basis pursuit
+denoising BPDN problem (i.e., approximating the minimum 1-norm solution to an
+underdetermined least squares problem) by using NESTA-LASSO in conjunction with
+the Pareto root-finding method employed by van den Berg and Friedlander in
+their SPGL1 solver. The resulting algorithm is called PARNES. We provide
+numerical evidence to show that it is comparable to currently available
+solvers.

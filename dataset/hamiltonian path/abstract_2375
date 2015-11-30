@@ -1,0 +1,10 @@
+In the Density Matrix Renormalization Group (DMRG) algorithm, Hamiltonian
+symmetries play an important role. Using symmetries, the matrix representation
+of the Hamiltonian can be blocked. Diagonalizing each matrix block is more
+efficient than diagonalizing the original matrix. This paper explains how the
+the DMRG++ code has been extended to handle the non-local SU(2) symmetry in a
+model independent way. Improvements in CPU times compared to runs with only
+local symmetries are discussed for the one-orbital Hubbard model, and for a
+two-orbital Hubbard model for iron-based superconductors. The computational
+bottleneck of the algorithm and the use of shared memory parallelization are
+also addressed.

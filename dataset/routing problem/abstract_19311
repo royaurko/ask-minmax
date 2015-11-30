@@ -1,0 +1,21 @@
+Databases often contain corrupted, degraded, and noisy data with duplicate
+entries across and within each database. Such problems arise in citations,
+medical databases, genetics, human rights databases, and a variety of other
+applied settings. The target of statistical inference can be viewed as an
+unsupervised problem of determining the edges of a bipartite graph that links
+the observed records to unobserved latent entities. Bayesian approaches provide
+attractive benefits, naturally providing uncertainty quantification via
+posterior probabilities. We propose a novel record linkage approach based on
+empirical Bayesian principles. Specifically, the empirical Bayesian--type step
+consists of taking the empirical distribution function of the data as the prior
+for the latent entities. This approach improves on the earlier HB approach not
+only by avoiding the prior specification problem but also by allowing both
+categorical and string-valued variables. Our extension to string-valued
+variables also involves the proposal of a new probabilistic mechanism by which
+observed record values for string fields can deviate from the values of their
+associated latent entities. Categorical fields that deviate from their
+corresponding true value are simply drawn from the empirical distribution
+function. We apply our proposed methodology to a simulated data set of German
+names and an Italian household survey, showing our method performs favorably
+compared to several standard methods in the literature. We also consider the
+robustness of our methods to changes in the hyper-parameters.

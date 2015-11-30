@@ -1,0 +1,18 @@
+We develop a time-dependent multi-group multidimensional relativistic
+radiative transfer code, which is required to numerically investigate radiation
+from relativistic fluids involved in, e.g., gamma-ray bursts and active
+galactic nuclei. The code is based on the spherical harmonic discrete ordinate
+method (SHDOM) that evaluates a source function including anisotropic
+scattering in spherical harmonics and implicitly solves the static radiative
+transfer equation with a ray tracing in discrete ordinates. We implement
+treatments of time dependence, multi-frequency bins, Lorentz transformation,
+and elastic Thomson and inelastic Compton scattering to the publicly available
+SHDOM code. Our code adopts a mixed frame approach; the source function is
+evaluated in the comoving frame whereas the radiative transfer equation is
+solved in the laboratory frame. This implementation is validated with various
+test problems and comparisons with results of a relativistic Monte Carlo code.
+These validations confirm that the code correctly calculates intensity and its
+evolution in the computational domain. The code enables us to obtain an
+Eddington tensor that relates first and third moments of intensity (energy
+density and radiation pressure) and is frequently used as a closure relation in
+radiation hydrodynamics calculations.

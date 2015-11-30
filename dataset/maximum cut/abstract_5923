@@ -1,0 +1,22 @@
+In this paper, we develop parametrized positivity satisfying flux limiters
+for the high order finite difference Runge-Kutta weighted essentially
+non-oscillatory (WENO) scheme solving compressible Euler equations to maintain
+positive density and pressure. Negative density and pressure, which often leads
+to simulation blow-ups or nonphysical solutions, emerges from many high
+resolution computations in some extreme cases. The methodology we propose in
+this paper is a nontrivial generalization of the parametrized maximum principle
+preserving flux limiters for high order finite difference schemes solving
+scalar hyperbolic conservation laws [22, 10, 20]. To preserve the maximum
+principle, the high order flux is limited towards a first order monotone flux,
+where the limiting procedures are designed by decoupling linear maximum
+principle constraints. High order schemes with such flux limiters are shown to
+preserve the high order accuracy via local truncation error analysis and by
+extensive numerical experiments with mild CFL constraints. The parametrized
+flux limiting approach is generalized to the Euler system to preserve the
+positivity of density and pressure of numerical solutions via decoupling some
+nonlinear constraints. Compared with existing high order positivity preserving
+approaches [24, 26, 25], our proposed algorithm is positivity preserving by the
+design; it is computationally efficient and maintains high order spatial and
+temporal accuracy in our extensive numerical tests. Numerical tests are
+performed to demonstrate the efficiency and effectiveness of the proposed new
+algorithm.

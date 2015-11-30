@@ -1,0 +1,17 @@
+How can we protect the network infrastructure from malicious traffic, such as
+scanning, malicious code propagation, and distributed denial-of-service (DDoS)
+attacks? One mechanism for blocking malicious traffic is filtering: access
+control lists (ACLs) can selectively block traffic based on fields of the IP
+header. Filters (ACLs) are already available in the routers today but are a
+scarce resource because they are stored in the expensive ternary content
+addressable memory (TCAM).
+  In this paper, we develop, for the first time, a framework for studying
+filter selection as a resource allocation problem. Within this framework, we
+study five practical cases of source address/prefix filtering, which correspond
+to different attack scenarios and operator's policies. We show that filter
+selection optimization leads to novel variations of the multidimensional
+knapsack problem and we design optimal, yet computationally efficient,
+algorithms to solve them. We also evaluate our approach using data from
+Dshield.org and demonstrate that it brings significant benefits in practice.
+Our set of algorithms is a building block that can be immediately used by
+operators and manufacturers to block malicious traffic in a cost-efficient way.

@@ -1,0 +1,19 @@
+With the popularity of mobile devices, personalized speech recognizer becomes
+more realizable today and highly attractive. Each mobile device is primarily
+used by a single user, so it's possible to have a personalized recognizer well
+matching to the characteristics of individual user. Although acoustic model
+personalization has been investigated for decades, much less work have been
+reported on personalizing language model, probably because of the difficulties
+in collecting enough personalized corpora. Previous work used the corpora
+collected from social networks to solve the problem, but constructing a
+personalized model for each user is troublesome. In this paper, we propose a
+universal recurrent neural network language model with user characteristic
+features, so all users share the same model, except each with different user
+characteristic features. These user characteristic features can be obtained by
+crowdsouring over social networks, which include huge quantity of texts posted
+by users with known friend relationships, who may share some subject topics and
+wording patterns. The preliminary experiments on Facebook corpus showed that
+this proposed approach not only drastically reduced the model perplexity, but
+offered very good improvement in recognition accuracy in n-best rescoring
+tests. This approach also mitigated the data sparseness problem for
+personalized language models.

@@ -1,0 +1,10 @@
+We introduce a Deep Boltzmann Machine model suitable for modeling and
+extracting latent semantic representations from a large unstructured collection
+of documents. We overcome the apparent difficulty of training a DBM with
+judicious parameter tying. This parameter tying enables an efficient
+pretraining algorithm and a state initialization scheme that aids inference.
+The model can be trained just as efficiently as a standard Restricted Boltzmann
+Machine. Our experiments show that the model assigns better log probability to
+unseen data than the Replicated Softmax model. Features extracted from our
+model outperform LDA, Replicated Softmax, and DocNADE models on document
+retrieval and document classification tasks.

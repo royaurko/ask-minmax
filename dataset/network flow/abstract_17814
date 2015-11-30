@@ -1,0 +1,24 @@
+Currently, there is renewed interest in the problem, raised by Shafer in
+1985, of updating probabilities when observations are incomplete. This is a
+fundamental problem in general, and of particular interest for Bayesian
+networks. Recently, Grunwald and Halpern have shown that commonly used updating
+strategies fail in this case, except under very special assumptions. In this
+paper we propose a new method for updating probabilities with incomplete
+observations. Our approach is deliberately conservative: we make no assumptions
+about the so-called incompleteness mechanism that associates complete with
+incomplete observations. We model our ignorance about this mechanism by a
+vacuous lower prevision, a tool from the theory of imprecise probabilities, and
+we use only coherence arguments to turn prior into posterior probabilities. In
+general, this new approach to updating produces lower and upper posterior
+probabilities and expectations, as well as partially determinate decisions.
+This is a logical consequence of the existing ignorance about the
+incompleteness mechanism. We apply the new approach to the problem of
+classification of new evidence in probabilistic expert systems, where it leads
+to a new, so-called conservative updating rule. In the special case of Bayesian
+networks constructed using expert knowledge, we provide an exact algorithm for
+classification based on our updating rule, which has linear-time complexity for
+a class of networks wider than polytrees. This result is then extended to the
+more general framework of credal networks, where computations are often much
+harder than with Bayesian nets. Using an example, we show that our rule appears
+to provide a solid basis for reliable updating with incomplete observations,
+when no strong assumptions about the incompleteness mechanism are justified.

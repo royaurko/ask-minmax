@@ -1,0 +1,24 @@
+In this paper, we develop efficient decoders for non-binary low-density
+parity-check (LDPC) codes using the alternating direction method of multipliers
+(ADMM). We apply ADMM to two decoding problems. The first problem is linear
+programming (LP) decoding. In order to develop an efficient algorithm, we focus
+on non-binary codes in fields of characteristic two. This allows us to
+transform each constraint in $\mathbb{F}_{2^m}$ to a set of constraints in
+$\mathbb{F}_{2}$ that has a factor graph representation. Applying ADMM to the
+LP decoding problem results in two types of non-trivial sub-routines. The first
+type requires us to solve an unconstrained quadratic program. We solve this
+problem efficiently by leveraging new results obtained from studying the above
+factor graphs. The second type requires Euclidean projection onto polytopes
+that are studied in the literature, a projection that can be solved efficiently
+using off-the-shelf techniques, which scale linearly in the dimension of the
+vector to project. ADMM LP decoding scales linearly with block length, linearly
+with check degree, and quadratically with field size. The second problem we
+consider is a penalized LP decoding problem. This problem is obtained by
+incorporating a penalty term into the LP decoding objective. The purpose of the
+penalty term is to make non-integer solutions (pseudocodewords) more expensive
+and hence to improve decoding performance. The ADMM algorithm for the penalized
+LP problem requires Euclidean projection onto a polytope formed by embedding
+the constraints specified by the non-binary single parity-check code, which can
+be solved by applying the ADMM technique to the resulting quadratic program.
+Empirically, this decoder achieves a much reduced error rate than LP decoding
+at low signal-to-noise ratios.

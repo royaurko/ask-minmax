@@ -1,0 +1,17 @@
+The problem of dictionary matching is a classical problem in string matching:
+given a set S of d strings of total length n characters over an (not
+necessarily constant) alphabet of size sigma, build a data structure so that we
+can match in a any text T all occurrences of strings belonging to S. The
+classical solution for this problem is the Aho-Corasick automaton which finds
+all occ occurrences in a text T in time O(|T| + occ) using a data structure
+that occupies O(m log m) bits of space where m <= n + 1 is the number of states
+in the automaton. In this paper we show that the Aho-Corasick automaton can be
+represented in just m(log sigma + O(1)) + O(d log(n/d)) bits of space while
+still maintaining the ability to answer to queries in O(|T| + occ) time. To the
+best of our knowledge, the currently fastest succinct data structure for the
+dictionary matching problem uses space O(n log sigma) while answering queries
+in O(|T|log log n + occ) time. In this paper we also show how the space
+occupancy can be reduced to m(H0 + O(1)) + O(d log(n/d)) where H0 is the
+empirical entropy of the characters appearing in the trie representation of the
+set S, provided that sigma < m^epsilon for any constant 0 < epsilon < 1. The
+query time remains unchanged.

@@ -1,0 +1,22 @@
+The instability in the selection of models is a major concern with data sets
+containing a large number of covariates. This paper deals with variable
+selection methodology in the case of high-dimensional problems where the
+response variable can be right censored. We focuse on new stable variable
+selection methods based on bootstrap for two methodologies: the Cox
+proportional hazard model and survival trees. As far as the Cox model is
+concerned, we investigate the bootstrapping applied to two variable selection
+techniques: the stepwise algorithm based on the AIC criterion and the
+L1-penalization of Lasso. Regarding survival trees, we review two
+methodologies: the bootstrap node-level stabilization and random survival
+forests. We apply these different approaches to two real data sets. We compare
+the methods on the prediction error rate based on the Harrell concordance index
+and the relevance of the interpretation of the corresponding selected models.
+The aim is to find a compromise between a good prediction performance and ease
+to interpretation for clinicians. Results suggest that in the case of a small
+number of individuals, a bootstrapping adapted to L1-penalization in the Cox
+model or a bootstrap node-level stabilization in survival trees give a good
+alternative to the random survival forest methodology, known to give the
+smallest prediction error rate but difficult to interprete by
+non-statisticians. In a clinical perspective, the complementarity between the
+methods based on the Cox model and those based on survival trees would permit
+to built reliable models easy to interprete by the clinician.

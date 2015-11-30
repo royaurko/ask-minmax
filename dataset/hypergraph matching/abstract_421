@@ -1,0 +1,22 @@
+Let $H=(V,E)$ be an $r$-uniform hypergraph with the vertex set $V$ and the
+edge set $E$. For $1\leq s \leq r/2$, we define a weighted graph $G^{(s)}$ on
+the vertex set ${V\choose s}$ as follows. Every pair of $s$-sets $I$ and $J$ is
+associated with a weight $w(I,J)$, which is the number of edges in $H$ passing
+through $I$ and $J$ if $I\cap J=\emptyset$, and 0 if $I\cap J\not=\emptyset$.
+The $s$-th Laplacian $\L^{(s)}$ of $H$ is defined to be the normalized
+Laplacian of $G^{(s)}$. The eigenvalues of $\mathcal L^{(s)}$ are listed as
+$\lambda^{(s)}_0, \lambda^{(s)}_1,..., \lambda^{(s)}_{{n\choose s}-1}$ in
+non-decreasing order. Let
+$\bar\lambda^{(s)}(H)=\max_{i\not=0}\{|1-\lambda^{(s)}_i|\}$. The parameters
+$\bar\lambda^{(s)}(H)$ and $\lambda^{(s)}_1(H)$, which were introduced in our
+previous paper, have a number of connections to the mixing rate of high-ordered
+random walks, the generalized distances/diameters, and the edge expansions.
+  For $0< p<1$, let $H^r(n,p)$ be a random $r$-uniform hypergraph over
+$[n]:={1,2,..., n}$, where each $r$-set of $[n]$ has probability $p$ to be an
+edge independently. For $1 \leq s \leq r/2$, $p(1-p)\gg \frac{\log^4
+n}{n^{r-s}}$, and $1-p\gg \frac{\log n}{n^2}$, we prove that almost surely
+$$\bar\lambda^{(s)}(H^r(n,p))\leq \frac{s}{n-s}+
+(3+o(1))\sqrt{\frac{1-p}{{n-s\choose r-s}p}}.$$ We also prove that the
+empirical distribution of the eigenvalues of $\L^{(s)}$ for $H^r(n,p)$ follows
+the Semicircle Law if $p(1-p)\gg \frac{\log^{1/3} n}{n^{r-s}}$ and $1-p\gg
+\frac{\log n}{n^{2+2r-2s}}$.

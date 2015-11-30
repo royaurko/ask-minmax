@@ -1,0 +1,22 @@
+We study sequential coding of Markov sources under an error propagation
+constraint. An encoder sequentially compresses a sequence of vector-sources
+that are spatially i.i.d. but temporally correlated according to a first-order
+Markov process. The channel erases up to B packets in a single burst, but
+reveals all other packets to the destination. The destination is required to
+reproduce all the source-vectors instantaneously and in a lossless manner,
+except those sequences that occur in an error propagation window of length B +
+W following the start of the erasure burst. We define the rate-recovery
+function R(B, W) - the minimum achievable compression rate per source sample in
+this framework - and develop upper and lower bounds on this function. Our upper
+bound is obtained using a random binning technique, whereas our lower bound is
+obtained by drawing connections to multi-terminal source coding. Our upper and
+lower bounds coincide, yielding R(B, W), in some special cases. More generally,
+both the upper and lower bounds equal the rate for predictive coding plus a
+term that decreases as 1/(W+1), thus establishing a scaling behaviour of the
+rate-recovery function. For a special class of semi-deterministic Markov
+sources we propose a new optimal coding scheme: prospicient coding. An
+extension of this coding technique to Gaussian sources is also developed. For
+the class of symmetric Markov sources and memoryless encoders, we establish the
+optimality of random binning. When the destination is required to reproduce
+each source sequence with a fixed delay and when W = 0 we also establish the
+optimality of binning.

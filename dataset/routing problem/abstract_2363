@@ -1,0 +1,12 @@
+The well known method C-Slow Retiming (CSR) can be used to automatically
+convert a given CPU into a multithreaded CPU with independent threads. These
+CPUs are then called streaming or barrel processors. System Hyper Pipelining
+(SHP) adds a new flexibility on top of CSR by allowing a dynamic number of
+threads to be executed and by enabling the threads to be stalled, bypassed and
+reordered. SHP is now applied on the programming elements (PE) of a
+coarse-grained reconfigurable architecture (CGRA). By using SHP, more
+performance can be achieved per PE. Fork-Join operations can be implemented on
+a PE using the flexibility provided by SHP to dynamically adjust the number of
+threads per PE. Multiple threads can share the same data locally, which greatly
+reduces the data traffic load on the CGRA's routing structure. The paper shows
+the results of a CGRA using SHP-ed RISC-V cores as PEs implemented on a FPGA.

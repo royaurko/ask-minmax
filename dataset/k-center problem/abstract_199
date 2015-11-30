@@ -1,0 +1,13 @@
+The large systems of complex linear equations that are generated in QCD
+problems often have multiple right-hand sides (for multiple sources) and
+multiple shifts (for multiple masses). Deflated GMRES methods have previously
+been developed for solving multiple right-hand sides. Eigenvectors are
+generated during solution of the first right-hand side and used to speed up
+convergence for the other right-hand sides. Here we discuss deflating
+non-restarted methods such as BiCGStab. For effective deflation, both left and
+right eigenvectors are needed. Fortunately, with the Wilson matrix, left
+eigenvectors can be derived from the right eigenvectors. We demonstrate for
+difficult problems with kappa near kappa_c that deflating eigenvalues can
+significantly improve BiCGStab. We also will look at improving solution of
+twisted mass problems with multiple shifts. Projecting over previous solutions
+is an easy way to reduce the work needed.

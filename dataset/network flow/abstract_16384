@@ -1,0 +1,19 @@
+The security of Android has been recently challenged by the discovery of a
+number of vulnerabilities involving different layers of the Android stack. We
+argue that such vulnerabilities are largely related to the interplay among
+layers composing the Android stack. Thus, we also argue that such interplay has
+been underestimated from a security point-of-view and a systematic analysis of
+the Android interplay has not been carried out yet. To this aim, in this paper
+we provide a simple model of the Android cross-layer interactions based on the
+concept of flow, as a basis for analyzing the Android interplay. In particular,
+our model allows us to reason about the security implications associated with
+the cross-layer interactions in Android, including a recently discovered
+vulnerability that allows a malicious application to make Android devices
+totally unresponsive. We used the proposed model to carry out an empirical
+assessment of some flows within the Android cross-layered architecture. Our
+experiments indicate that little control is exercised by the Android Security
+Framework (ASF) over cross-layer interactions in Android. In particular, we
+observed that the ASF lacks in discriminating the originator of a flow and
+sensitive security issues arise between the Android stack and the Linux kernel,
+thereby indicating that the attack surface of the Android platform is wider
+than expected.

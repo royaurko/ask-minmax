@@ -1,0 +1,13 @@
+Any two-way finite state automaton is equivalent to some one-way finite state
+automaton. This well-known result, shown by Rabin and Scott and independently
+by Shepherdson, states that two-way finite state automata (even
+non-deterministic) characterize the class of regular languages. It is also
+known that this result does not extend to finite string transductions:
+(deterministic) two-way finite state transducers strictly extend the expressive
+power of (functional) one-way transducers. In particular deterministic two-way
+transducers capture exactly the class of MSO-transductions of finite strings.
+In this paper, we address the following definability problem: given a function
+defined by a two-way finite state transducer, is it definable by a one-way
+finite state transducer? By extending Rabin and Scott's proof to transductions,
+we show that this problem is decidable. Our procedure builds a one-way
+transducer, which is equivalent to the two-way transducer, whenever one exists.

@@ -1,0 +1,15 @@
+Our previous work on classifying complex ship images [1,2] has evolved into
+an effort to develop software tools for building and solving generic
+classification problems. Managing the uncertainty associated with feature data
+and other evidence is an important issue in this endeavor. Bayesian techniques
+for managing uncertainty [7,12,13] have proven to be useful for managing
+several of the belief maintenance requirements of classification problem
+solving. One such requirement is the need to give qualitative explanations of
+what is believed. Pearl [11] addresses this need by computing what he calls a
+belief commitment-the most probable instantiation of all hypothesis variables
+given the evidence available. Before belief commitments can be computed, the
+straightforward implementation of Pearl's procedure involves finding an
+analytical solution to some often difficult optimization problems. We describe
+an efficient implementation of this procedure using tensor products that solves
+these problems enumeratively and avoids the need for case by case analysis. The
+procedure is thereby made more practical to use in the general case.

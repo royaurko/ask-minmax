@@ -1,0 +1,26 @@
+Astronomical photometry is the science of measuring the flux of a celestial
+object. Since its introduction, the CCD has been the principle method of
+measuring flux to calculate the apparent magnitude of an object. Each CCD image
+taken must go through a process of cleaning and calibration prior to its use.
+As the number of research telescopes increases the overall computing resources
+required for image processing also increases. Existing processing techniques
+are primarily sequential in nature, requiring increasingly powerful servers,
+faster disks and faster networks to process data. Existing High Performance
+Computing solutions involving high capacity data centres are complex in design
+and expensive to maintain, while providing resources primarily to high profile
+science projects. This research describes three distributed pipeline
+architectures, a virtualised cloud based IRAF, the Astronomical Compute Node
+(ACN), a private cloud based pipeline, and NIMBUS, a globally distributed
+system. The ACN pipeline processed data at a rate of 4 Terabytes per day
+demonstrating data compression and upload to a central cloud storage service at
+a rate faster than data generation. The primary contribution of this research
+is NIMBUS, which is rapidly scalable, resilient to failure and capable of
+processing CCD image data at a rate of hundreds of Terabytes per day. This
+pipeline is implemented using a decentralised web queue to control the
+compression of data, uploading of data to distributed web servers, and creating
+web messages to identify the location of the data. Using distributed web queue
+messages, images are downloaded by computing resources distributed around the
+globe. Rigorous experimental evidence is presented verifying the horizontal
+scalability of the system which has demonstrated a processing rate of 192
+Terabytes per day with clear indications that higher processing rates are
+possible.

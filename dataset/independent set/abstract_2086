@@ -1,0 +1,21 @@
+A bootstrap percolation process on a graph G is an "infection" process which
+evolves in rounds. Initially, there is a subset of infected nodes and in each
+subsequent round every uninfected node which has at least r infected neighbours
+becomes infected and remains so forever. The parameter r > 1 is fixed.
+  We consider this process in the case where the underlying graph is an
+inhomogeneous random graph whose kernel is of rank 1. Assuming that initially
+every vertex is infected independently with probability p > 0, we provide a law
+of large numbers for the number of vertices that will have been infected by the
+end of the process.
+  We also focus on a special case of such random graphs which exhibit a
+power-law degree distribution with exponent in (2,3). The first two contributors
+have shown the existence of a critical function a_c(n) such that a_c(n)=o(n)
+with the following property. Let n be the number of vertices of the underlying
+random graph and let a(n) be the number of the vertices that are initially
+infected. Assume that a set of a(n) vertices is chosen randomly and becomes
+externally infected. If a(n) << a_c(n), then the process does not evolve at
+all, with high probability as n grows, whereas if a(n)>> a_c(n), then with high
+probability the final set of infected vertices is linear.
+  Using the techniques of the previous theorem, we give the precise asymptotic
+fraction of vertices which will be eventually infected when a(n) >> a_c (n) but
+a(n) = o(n). Note that this corresponds to the case where p approaches 0.

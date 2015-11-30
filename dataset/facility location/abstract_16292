@@ -1,0 +1,19 @@
+Array-Based Comparative Genomic Hybridization (aCGH) is a method used to
+search for genomic regions with copy numbers variations. For a given aCGH
+profile, one challenge is to accurately segment it into regions of constant
+copy number. Subjects sharing the same disease status, for example a type of
+cancer, often have aCGH profiles with similar copy number variations, due to
+duplications and deletions relevant to that particular disease. We introduce a
+constrained optimization algorithm that jointly segments aCGH profiles of many
+subjects. It simultaneously penalizes the amount of freedom the set of profiles
+have to jump from one level of constant copy number to another, at genomic
+locations known as breakpoints. We show that breakpoints shared by many
+different profiles tend to be found first by the algorithm, even in the
+presence of significant amounts of noise. The algorithm can be formulated as a
+group LARS problem. We propose an extremely fast way to find the solution path,
+i.e., a sequence of shared breakpoints in order of importance. For no extra
+cost the algorithm smoothes all of the aCGH profiles into piecewise-constant
+regions of equal copy number, giving low-dimensional versions of the original
+data. These can be shown for all profiles on a single graph, allowing for
+intuitive visual interpretation. Simulations and an implementation of the
+algorithm on bladder cancer aCGH profiles are provided.

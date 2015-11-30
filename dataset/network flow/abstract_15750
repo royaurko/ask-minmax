@@ -1,0 +1,24 @@
+Initially TCP was designed with the notion in mind that wired networks are
+generally reliable and any segment loss in a transmission is due to congestion
+in the network rather than an unreliable medium (The assumptions is that the
+packet loss caused by damage is much less than 1 percent) . This notion doesnt
+hold in wireless parts of the network. Wireless links are highly unreliable and
+they lose segments all the time due to a number of factors. Very few papers are
+available which uses TCP for MANET. In this paper, an attempt have been made to
+justify the use of TCP variants (Tahoe and Reno) for loss of packet due to
+random noise introduces in the MANET. For the present analysis the simulation
+has been carried out for TCP variants (Tahoe and Reno) by introduces 0, 10, 20
+and 30 percent noise. The comparison of TCP variants is made by running
+simulation for 0, 10, 20 and 30 percent of data packet loss due to noise in the
+transmission link and the effect of throughput and congestion window has been
+examined. During the simulation we have observed that throughput has been
+decreased when a drop of multiple segments happens, further we have observed in
+the case of TCP variant (Reno) throughput is better at 1 percent (Figure 5)
+which implies a network with short burst of error and low BER, causing only one
+segment to be lost. When multiple segments are lost due to error prone nature
+of link, Tahoe perform better than Reno (Figure 13), that gives a significant
+saving of time (64.28 percent) in comparison with Reno (Table 4). Several
+simulations have been run with ns 2 simulator in order to acquire a better
+understanding of these TCP variants and the way they perform their function. We
+conclude with a discussion of whether these TCP versions can be used in Mobile
+Ad hoc Network.

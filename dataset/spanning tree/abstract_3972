@@ -1,0 +1,21 @@
+Collaborative editing consists in editing a common document shared by several
+independent sites. This may give rise to conficts when two different users
+perform simultaneous uncompatible operations. Centralized systems solve this
+problem by using locks that prevent some modifications to occur and leave the
+resolution of confict to users. On the contrary, peer to peer (P2P) editing
+doesn't allow locks and the optimistic approach uses a Integration
+Transformation IT that reconciliates the conficting operations and ensures
+convergence (all copies are identical on each site). Two properties TP1 and
+TP2, relating the set of allowed operations Op and the transformation IT, have
+been shown to ensure the correctness of the process. The choice of the set Op
+is crucial to define an integration operation that satisfies TP1 and TP2. Many
+existing algorithms don't satisfy these properties and are indeed incorrect
+i.e. convergence is not guaranteed. No algorithm enjoying both properties is
+known for strings and little work has been done for XML trees in a pure P2P
+framework (that doesn't use time-stamps for instance). We focus on editing
+unranked unordered labeled trees, so-called XML-like trees that are considered
+for instance in the Harmony pro ject. We show that no transformation satisfying
+TP1 and TP2 can exist for a first set of operations but we show that TP1 and
+TP2 hold for a richer set of operations. We show how to combine our approach
+with any convergent editing process on strings (not necessarily based on
+integration transformation) to get a convergent process.

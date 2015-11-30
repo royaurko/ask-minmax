@@ -1,0 +1,23 @@
+In this paper we analyze and extend the neural network based associative
+memory proposed by Gripon and Berrou. This associative memory resembles the
+celebrated Willshaw model with an added partite cluster structure. In the
+literature, two retrieving schemes have been proposed for the network dynamics,
+namely sum-of-sum and sum-of-max. They both offer considerably better
+performance than Willshaw and Hopfield networks, when comparable retrieval
+scenarios are considered. Former discussions and experiments concentrate on the
+erasure scenario, where a partial message is used as a probe to the network, in
+the hope of retrieving the full message. In this regard, sum-of-max outperforms
+sum-of-sum in terms of retrieval rate by a large margin. However, we observe
+that when noise and errors are present and the network is queried by a corrupt
+probe, sum-of-max faces a severe limitation as its stringent activation rule
+prevents a neuron from reviving back into play once deactivated. In this
+manuscript, we categorize and analyze different error scenarios so that both
+the erasure and the corrupt scenarios can be treated consistently. We make an
+amendment to the network structure to improve the retrieval rate, at the cost
+of an extra scalar per neuron. Afterwards, five different approaches are
+proposed to deal with corrupt probes. As a result, we extend the network
+capability, and also increase the robustness of the retrieving procedure. We
+then experimentally compare all these proposals and discuss pros and cons of
+each approach under different types of errors. Simulation results show that if
+carefully designed, the network is able to preserve both a high retrieval rate
+and a low running time simultaneously, even when queried by a corrupt probe.

@@ -1,0 +1,17 @@
+This paper presents an extension to Hoare logic for pointer program
+verification. First, the Logic for Partial Function (LPF) used by VDM is
+extended to specify memory access using pointers and memory layout of composite
+types. Then, the concepts of data-retrieve functions (DRF) and memory-scope
+functions (MSF) are introduced in this paper. People can define DRFs to
+retrieve abstract values from interconnected concrete data objects. The
+definition of the corresponding MSF of a DRF can be derived syntactically from
+the definition of the DRF. This MSF computes the set of memory units accessed
+when the DRF retrieves an abstract value. This memory unit set is called the
+memory scope of the abstract value. Finally, the proof rule of assignment
+statements in Hoare's logic is modified to deal with pointers. The basic idea
+is that a virtual value keeps unmodified as long as no memory unit in its scope
+is over-written. Another proof rule is added for memory allocation statements.
+The consequence rule and the rules for control-flow statements are slightly
+modified. They are essentially same as their original version in Hoare logic.
+  An example is presented to show the efficacy of this logic. We also give some
+heuristics on how to verify pointer programs.

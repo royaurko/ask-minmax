@@ -1,0 +1,25 @@
+During the last decade, the matroid secretary problem (MSP) became one of the
+most prominent classes of online selection problems. Partially linked to its
+numerous applications in mechanism design, substantial interest arose also in
+the study of nonlinear versions of MSP, with a focus on the submodular matroid
+secretary problem (SMSP). So far, O(1)-competitive algorithms have been
+obtained for SMSP over some basic matroid classes. This created some hope that,
+analogously to the matroid secretary conjecture, one may even obtain
+O(1)-competitive algorithms for SMSP over any matroid. However, up to now, most
+questions related to SMSP remained open, including whether SMSP may be
+substantially more difficult than MSP; and more generally, to what extend MSP
+and SMSP are related.
+  Our goal is to address these points by presenting general black-box
+reductions from SMSP to MSP. In particular, we show that any O(1)-competitive
+algorithm for MSP, even restricted to a particular matroid class, can be
+transformed in a black-box way to an O(1)-competitive algorithm for SMSP over
+the same matroid class. This implies that the matroid secretary conjecture is
+equivalent to the same conjecture for SMSP. Hence, in this sense SMSP is not
+harder than MSP. Also, to find O(1)-competitive algorithms for SMSP over a
+particular matroid class, it suffices to consider MSP over the same matroid
+class. Using our reductions we obtain many first and improved O(1)-competitive
+algorithms for SMSP over various matroid classes by leveraging known algorithms
+for MSP. Moreover, our reductions imply an O(loglog(rank))-competitive
+algorithm for SMSP, thus, matching the currently best asymptotic algorithm for
+MSP, and substantially improving on the previously best
+O(log(rank))-competitive algorithm for SMSP.

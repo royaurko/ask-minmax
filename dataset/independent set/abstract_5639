@@ -1,0 +1,19 @@
+An approach to the revision of logic programs under the answer set semantics
+is presented. For programs P and Q, the goal is to determine the answer sets
+that correspond to the revision of P by Q, denoted P * Q. A fundamental
+principle of classical (AGM) revision, and the one that guides the approach
+here, is the success postulate. In AGM revision, this stipulates that A is in K
+* A. By analogy with the success postulate, for programs P and Q, this means
+that the answer sets of Q will in some sense be contained in those of P * Q.
+The essential idea is that for P * Q, a three-valued answer set for Q,
+consisting of positive and negative literals, is first determined. The positive
+literals constitute a regular answer set, while the negated literals make up a
+minimal set of naf literals required to produce the answer set from Q. These
+literals are propagated to the program P, along with those rules of Q that are
+not decided by these literals. The approach differs from work in update logic
+programs in two main respects. First, we ensure that the revising logic program
+has higher priority, and so we satisfy the success postulate; second, for the
+preference implicit in a revision P * Q, the program Q as a whole takes
+precedence over P, unlike update logic programs, since answer sets of Q are
+propagated to P. We show that a core group of the AGM postulates are satisfied,
+as are the postulates that have been proposed for update logic programs.

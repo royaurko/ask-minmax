@@ -1,0 +1,14 @@
+We consider the problem of choosing a density estimate from a set of
+distributions F, minimizing the L1-distance to an unknown distribution
+(Devroye, Lugosi 2001). Devroye and Lugosi analyze two algorithms for the
+problem: Scheffe tournament winner and minimum distance estimate. The Scheffe
+tournament estimate requires fewer computations than the minimum distance
+estimate, but has strictly weaker guarantees than the latter.
+  We focus on the computational aspect of density estimation. We present two
+algorithms, both with the same guarantee as the minimum distance estimate. The
+first one, a modification of the minimum distance estimate, uses the same
+number (quadratic in |F|) of computations as the Scheffe tournament. The second
+one, called ``efficient minimum loss-weight estimate,'' uses only a linear
+number of computations, assuming that F is preprocessed.
+  We also give examples showing that the guarantees of the algorithms cannot be
+improved and explore randomized algorithms for density estimation.

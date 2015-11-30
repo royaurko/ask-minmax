@@ -1,0 +1,22 @@
+The theory of compressive sensing (CS) suggests that under certain
+conditions, a sparse signal can be recovered from a small number of linear
+incoherent measurements. An effective class of reconstruction algorithms
+involve solving a convex optimization program that balances the L1 norm of the
+solution against a data fidelity term. Tremendous progress has been made in
+recent years on algorithms for solving these L1 minimization programs. These
+algorithms, however, are for the most part static: they focus on finding the
+solution for a fixed set of measurements.
+  In this paper, we will discuss "dynamic algorithms" for solving L1
+minimization programs for streaming sets of measurements. We consider cases
+where the underlying signal changes slightly between measurements, and where
+new measurements of a fixed signal are sequentially added to the system. We
+develop algorithms to quickly update the solution of several different types of
+L1 optimization problems whenever these changes occur, thus avoiding having to
+solve a new optimization problem from scratch. Our proposed schemes are based
+on homotopy continuation, which breaks down the solution update in a systematic
+and efficient way into a small number of linear steps. Each step consists of a
+low-rank update and a small number of matrix-vector multiplications -- very
+much like recursive least squares. Our investigation also includes dynamic
+updating schemes for L1 decoding problems, where an arbitrary signal is to be
+recovered from redundant coded measurements which have been corrupted by sparse
+errors.

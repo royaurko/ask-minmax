@@ -1,0 +1,17 @@
+Our goal in this paper is to develop a practical framework for obtaining a
+uniform sample of users in an online social network (OSN) by crawling its
+social graph. Such a sample allows to estimate any user property and some
+topological properties as well. To this end, first, we consider and compare
+several candidate crawling techniques. Two approaches that can produce
+approximately uniform samples are the Metropolis-Hasting random walk (MHRW) and
+a re-weighted random walk (RWRW). Both have pros and cons, which we demonstrate
+through a comparison to each other as well as to the "ground truth." In
+contrast, using Breadth-First-Search (BFS) or an unadjusted Random Walk (RW)
+leads to substantially biased results. Second, and in addition to offline
+performance assessment, we introduce online formal convergence diagnostics to
+assess sample quality during the data collection process. We show how these
+diagnostics can be used to effectively determine when a random walk sample is
+of adequate size and quality. Third, as a case study, we apply the above
+methods to Facebook and we collect the first, to the best of our knowledge,
+representative sample of Facebook users. We make it publicly available and
+employ it to characterize several key properties of Facebook.

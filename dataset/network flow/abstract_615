@@ -1,0 +1,16 @@
+There has recently been considerable interest in design of low-complexity,
+myopic, distributed and stable scheduling policies for constrained queueing
+network models that arise in the context of emerging communication networks.
+Here, we consider two representative models. One, a model for the collection of
+wireless nodes communicating through a shared medium, that represents randomly
+varying number of packets in the queues at the nodes of networks. Two, a
+buffered circuit switched network model for an optical core of future Internet,
+to capture the randomness in calls or flows present in the network. The maximum
+weight scheduling policy proposed by Tassiulas and Ephremide in 1992 leads to a
+myopic and stable policy for the packet-level wireless network model. But
+computationally it is very expensive (NP-hard) and centralized. It is not
+applicable to the buffered circuit switched network due to the requirement of
+non-premption of the calls in the service. As the main contribution of this
+paper, we present a stable scheduling algorithm for both of these models. The
+algorithm is myopic, distributed and performs few logical operations at each
+node per unit time.

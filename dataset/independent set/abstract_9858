@@ -1,0 +1,16 @@
+Bit arrays, or bitmaps, are used to significantly speed up set operations in
+several areas, such as data warehousing, information retrieval, and data
+mining, to cite a few. However, bitmaps usually use a large storage space, thus
+requiring compression. Nevertheless, there is a space-time tradeoff among
+compression schemes. The Word Aligned Hybrid (WAH) bitmap compression trades
+some space to allow for bitwise operations without first decompressing bitmaps.
+WAH has been recognized as the most efficient scheme in terms of computation
+time. In this paper we present CONCISE (Compressed 'n' Composable Integer Set),
+a new scheme that enjoys significatively better performances than those of WAH.
+In particular, when compared to WAH, our algorithm is able to reduce the
+required memory up to 50%, by having similar or better performance in terms of
+computation time. Further, we show that CONCISE can be efficiently used to
+manipulate bitmaps representing sets of integral numbers in lieu of well-known
+data structures such as arrays, lists, hashtables, and self-balancing binary
+search trees. Extensive experiments over synthetic data show the effectiveness
+of our approach.

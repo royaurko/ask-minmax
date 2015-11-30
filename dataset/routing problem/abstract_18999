@@ -1,0 +1,21 @@
+Computing accurate WCET on modern complex architectures is a challenging
+task. This problem has been devoted a lot of attention in the last decade but
+there are still some open issues. First, the control flow graph (CFG) of a
+binary program is needed to compute the WCET and this CFG is built using some
+internal knowledge of the compiler that generated the binary code; moreover
+once constructed the CFG has to be manually annotated with loop bounds. Second,
+the algorithms to compute the WCET (combining Abstract Interpretation and
+Integer Linear Programming) are tailored for specific architectures: changing
+the architecture (e.g. replacing an ARM7 by an ARM9) requires the design of a
+new ad hoc algorithm. Third, the tightness of the computed results (obtained
+using the available tools) are not compared to actual execution times measured
+on the real hardware. In this paper we address the above mentioned problems. We
+first describe a fully automatic method to compute a CFG based solely on the
+binary program to analyse. Second, we describe the model of the hardware as a
+product of timed automata, and this model is independent from the program
+description. The model of a program running on a hardware is obtained by
+synchronizing (the automaton of) the program with the (timed automata) model of
+the hardware. Computing the WCET is reduced to a reachability problem on the
+synchronised model and solved using the model-checker UPPAAL. Finally, we
+present a rigorous methodology that enables us to compare our computed results
+to actual execution times measured on a real platform, the ARM920T.

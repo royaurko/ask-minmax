@@ -1,0 +1,18 @@
+An AVL tree is the original type of balanced binary search tree. An insertion
+in an $n$-node AVL tree takes at most two rotations, but a deletion in an
+$n$-node AVL tree can take $\Theta(\log n)$. A natural question is whether
+deletions can take many rotations not only in the worst case but in the
+amortized case as well. A sequence of $n$ successive deletions in an $n$-node
+tree takes $O(n)$ rotations, but what happens when insertions are intermixed
+with deletions? Heaupler, Sen, and Tarjan conjectured that alternating
+insertions and deletions in an $n$-node AVL tree can cause each deletion to do
+$\Omega(\log n)$ rotations, but they provided no construction to justify their
+claim. We provide such a construction: we show that, for infinitely many $n$,
+there is a set $E$ of {\it expensive} $n$-node AVL trees with the property
+that, given any tree in $E$, deleting a certain leaf and then reinserting it
+produces a tree in $E$, with the deletion having done $\Theta(\log n)$
+rotations. One can do an arbitrary number of such expensive deletion-insertion
+pairs. The difficulty in obtaining such a construction is that in general the
+tree produced by an expensive deletion-insertion pair is not the original tree.
+Indeed, if the trees in $E$ have even height $k$, $2^{k/2}$ deletion-insertion
+pairs are required to reproduce the original tree.

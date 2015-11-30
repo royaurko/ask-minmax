@@ -1,0 +1,16 @@
+Efficient sampling from high-dimensional distributions is a challenging issue
+which is encountered in many large data recovery problems involving Markov
+chain Monte Carlo schemes. In this context, sampling using Hamiltonian dynamics
+is one of the recent techniques that have been proposed to exploit the target
+distribution geometry. Such schemes have clearly been shown to be efficient for
+multi-dimensional sampling, but are rather adapted to the exponential families
+of distributions with smooth energy function. In this paper, we address the
+problem of using Hamiltonian dynamics to sample from probability distributions
+having non-differentiable energy functions such as $\ell_1$. Such distributions
+are being more and more used in sparse signal and image recovery applications.
+The proposed technique uses a modified leapfrog transform involving a proximal
+step. The resulting non-smooth Hamiltonian Monte Carlo (ns-HMC) method is
+tested and validated on a number of experiments. Results show its ability to
+accurately sample according to various multivariate target distributions. The
+proposed technique is illustrated on synthetic examples and is applied to an
+image denoising problem.

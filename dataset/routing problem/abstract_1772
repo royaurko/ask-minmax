@@ -1,0 +1,14 @@
+In this article we propose a method for measuring internet connection
+stability which is fast and has negligible overhead for the process of its
+complexity. This method finds a relative value for representing the stability
+of internet connections and can also be extended for aggregated internet
+connections. The method is documented with help of a real time implementation
+and results are shared. This proposed measurement scheme uses HTTP GET method
+for each connections. The normalized responses to identified sites like
+gateways of ISPs, google.com etc are used for calculating current link
+stability. The novelty of the approach is that historic values are used to
+calculate overall link stability. In this discussion, we also document a method
+to use the calculated values as a dynamic threshold metric. This is used in
+routing decisions and for load-balancing each of the connections in an
+aggregated bandwidth pipe. This scheme is a very popular practice in aggregated
+internet connections.

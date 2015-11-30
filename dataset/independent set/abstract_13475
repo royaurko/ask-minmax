@@ -1,0 +1,19 @@
+Tumorigenesis is an evolutionary process which involves a significant number
+of genomic rearrangements typically coupled with changes in the gene copy
+number profiles of numerous cells. Fluorescence in situ hybridization (FISH) is
+a cytogenetic technique which allows counting copy numbers of genes in single
+cells. The study of cancer progression using FISH data has received
+considerably less attention compared to other types of cancer datasets.
+  In this work we focus on inferring likely tumor progression pathways using
+publicly available FISH data. We model the evolutionary process as a Markov
+chain in the positive integer cone Z_+^g where g is the number of genes
+examined with FISH. Compared to existing work which oversimplifies reality by
+assuming independence of copy number changes, our model is able to capture
+dependencies. We model the probability distribution of a dataset with
+hierarchical log-linear models, a popular probabilistic model of count data.
+Our choice provides an attractive trade-off between parsimony and good data
+fit. We prove a theorem of independent interest which provides necessary and
+sufficient conditions for reconstructing oncogenetic trees. Using this theorem
+we are able to capitalize on the wealth of inter-tumor phylogenetic methods. We
+show how to produce tumor phylogenetic trees which capture the dynamics of
+cancer progression. We validate our proposed method on a breast tumor dataset.

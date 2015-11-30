@@ -1,0 +1,27 @@
+For many algorithmic problems, traditional algorithms that optimise on the
+number of instructions executed prove expensive on I/Os. Novel and very
+different design techniques, when applied to these problems, can produce
+algorithms that are I/O efficient. This thesis adds to the growing chorus of
+such results. The computational models we use are the external memory model and
+the W-Stream model.
+  On the external memory model, we obtain the following results. (1) An I/O
+efficient algorithm for computing minimum spanning trees of graphs that
+improves on the performance of the best known algorithm. (2) The first external
+memory version of soft heap, an approximate meldable priority queue. (3) Hard
+heap, the first meldable external memory priority queue that matches the
+amortised I/O performance of the known external memory priority queues, while
+allowing a meld operation at the same amortised cost. (4) I/O efficient exact,
+approximate and randomised algorithms for the minimum cut problem, which has
+not been explored before on the external memory model. (5) Some lower and upper
+bounds on I/Os for interval graphs.
+  On the W-Stream model, we obtain the following results. (1) Algorithms for
+various tree problems and list ranking that match the performance of the best
+known algorithms and are easier to implement than them. (2) Pass efficient
+algorithms for sorting, and the maximal independent set problems, that improve
+on the best known algorithms. (3) Pass efficient algorithms for the graphs
+problems of finding vertex-colouring, approximate single source shortest paths,
+maximal matching, and approximate weighted vertex cover. (4) Lower bounds on
+passes for list ranking and maximal matching.
+  We propose two variants of the W-Stream model, and design algorithms for the
+maximal independent set, vertex-colouring, and planar graph single source
+shortest paths problems on those models.

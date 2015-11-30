@@ -1,0 +1,7 @@
+We investigate effects of ordering in blocked matrix--matrix multiplication.
+We find that submatrices do not have to be stored contiguously in memory to
+achieve near optimal performance. Instead it is the choice of execution order
+of the submatrix multiplications that leads to a speedup of up to four times
+for small block sizes. This is in contrast to results for single matrix
+elements showing that contiguous memory allocation quickly becomes irrelevant
+as the blocksize increases.

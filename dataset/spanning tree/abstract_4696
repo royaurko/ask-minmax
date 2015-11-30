@@ -1,0 +1,18 @@
+Since beginning of Grid computing, scheduling of dependent tasks application
+has attracted attention of researchers due to NP-Complete nature of the
+problem. In Grid environment, scheduling is deciding about assignment of tasks
+to available resources. Scheduling in Grid is challenging when the tasks have
+dependencies and resources are heterogeneous. The main objective in scheduling
+of dependent tasks is minimizing make-span. Due to NP-complete nature of
+scheduling problem, exact solutions cannot generate schedule efficiently.
+Therefore, researchers apply heuristic or random search techniques to get
+optimal or near to optimal solution of such problems. In this paper, we show
+how Genetic Algorithm can be used to solve dependent task scheduling problem.
+We describe how initial population can be generated using random assignment and
+height based approaches. We also present design of crossover and mutation
+operators to enable scheduling of dependent tasks application without violating
+dependency constraints. For implementation of GA based scheduling, we explore
+and analyze SimGrid and GridSim simulation toolkits. From results, we found
+that SimGrid is suitable, as it has support of SimDag API for DAG applications.
+We found that GA based approach can generate schedule for dependent tasks
+application in reasonable time while trying to minimize make-span.

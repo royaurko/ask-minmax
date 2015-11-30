@@ -1,0 +1,18 @@
+We developed a Keplerian-based Hamiltonian splitting for solving the
+gravitational $N$-body problem. This splitting allows us to approximate the
+solution of a general $N$-body problem by a composition of multiple,
+independently evolved $2$-body problems. While the Hamiltonian splitting is
+exact, we show that the composition of independent $2$-body problems results in
+a non-symplectic non-time-symmetric first-order map. A time-symmetric
+second-order map is then constructed by composing this basic first-order map
+with its self-adjoint. The resulting method is precise for each individual
+$2$-body solution and produces quick and accurate results for near-Keplerian
+$N$-body systems, like planetary systems or a cluster of stars that orbit a
+supermassive black hole. The method is also suitable for integration of
+$N$-body systems with intrinsic hierarchies, like a star cluster with
+primordial binaries. The superposition of Kepler solutions for each pair of
+particles makes the method excellently suited for parallel computing; we
+achieve $\gtrsim 64\%$ efficiency for only $8$ particles per core, but close to
+perfect scaling for $16384$ particles on a $128$ core distributed-memory
+computer. We present several implementations in \texttt{Sakura}, one of which
+is publicly available via the AMUSE framework.

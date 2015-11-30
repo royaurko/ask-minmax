@@ -1,0 +1,19 @@
+We give efficient data-oblivious algorithms for several fundamental geometric
+problems that are relevant to geographic information systems, including planar
+convex hulls and all-nearest neighbors. Our methods are "data-oblivious" in
+that they don't perform any data-dependent operations, with the exception of
+operations performed inside low-level blackbox circuits having a constant
+number of inputs and outputs. Thus, an adversary who observes the control flow
+of one of our algorithms, but who cannot see the inputs and outputs to the
+blackbox circuits, cannot learn anything about the input or output. This
+behavior makes our methods applicable to secure multiparty computation (SMC)
+protocols for geographic data used in location-based services. In SMC
+protocols, multiple parties wish to perform a computation on their combined
+data without revealing individual data to the other parties. For instance, our
+methods can be used to solve a problem posed by Du and Atallah, where Alice has
+a set, A, of m private points in the plane, Bob has another set, B, of n
+private points in the plane, and Alice and Bob want to jointly compute the
+convex hull of A u B without disclosing any more information than what can be
+derived from the answer. In particular, neither Alice nor Bob want to reveal
+any of their respective points that are in the interior of the convex hull of A
+u B.

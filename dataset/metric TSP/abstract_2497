@@ -1,0 +1,19 @@
+The conformance testing problem for dynamical systems asks, given two
+dynamical models (e.g., as Simulink diagrams), whether their behaviors are
+"close" to each other. In the semi-formal approach to conformance testing, the
+two systems are simulated on a large set of tests, and a metric, defined on
+pairs of real-valued, real-timed trajectories, is used to determine a lower
+bound on the distance. We show how the Skorkhod metric on continuous dynamical
+systems can be used as the foundation for conformance testing of complex
+dynamical models. The Skorokhod metric allows for both state value mismatches
+and timing distortions, and is thus well suited for checking conformance
+between idealized models of dynamical systems and their implementations. We
+demonstrate the robustness of the system conformance quantification by proving
+a \emph{transference theorem}: trajectories close under the Skorokhod metric
+satisfy "close" logical properties. Specifically, we show the result for the
+timed linear time logic \TLTL augmented with a rich class of temporal and
+spatial constraint predicates. We provide a window-based streaming algorithm to
+compute the Skorokhod metric, and use it as a basis for a conformance testing
+tool for Simulink. We experimentally demonstrate the effectiveness of our tool
+in finding discrepant behaviors on a set of control system benchmarks,
+including an industrial challenge problem.

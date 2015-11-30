@@ -1,0 +1,15 @@
+We extend the finite element method introduced by Lakkis and Pryer [2011] to
+approximate the solution of second order elliptic problems in nonvariational
+form to incorporate the discontinuous Galerkin (DG) framework. This is done by
+viewing the NVFEM as a mixed method whereby the finite element Hessian is an
+auxiliary variable in the formulation. Representing the finite element Hessian
+in a discontinuous setting yields a linear system of the same size and having
+the same sparsity pattern of the compact DG methods for variational elliptic
+problems. Furthermore, the system matrix is very easy to assemble, Thus this
+approach greatly reduces the computational complexity of the discretisation
+compared to the continuous approach.
+  We conduct a stability and consistency analysis making use of the unified
+framework set out in Arnold et. al. [2001]. We also give an apriori analysis of
+the method. The analysis applies to any consistent representation of the finite
+element Hessian, thus is applicable to the previous works making use of
+continuous Galerkin approximations.

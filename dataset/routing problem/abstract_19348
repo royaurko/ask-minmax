@@ -1,0 +1,20 @@
+Spatio-temporal prediction of levels of an environmental exposure is an
+important problem in environmental epidemiology. Our work is motivated by
+multiple studies on the spatio-temporal distribution of mobile source, or
+traffic related, particles in the greater Boston area. When multiple sources of
+exposure information are available, a joint model that pools information across
+sources maximizes data coverage over both space and time, thereby reducing the
+prediction error. We consider a Bayesian hierarchical framework in which a
+joint model consists of a set of submodels, one for each data source, and a
+model for the latent process that serves to relate the submodels to one
+another. If a submodel depends on the latent process nonlinearly, inference
+using standard MCMC techniques can be computationally prohibitive. The
+implications are particularly severe when the data for each submodel are
+aggregated at different temporal scales. To make such problems tractable, we
+linearize the nonlinear components with respect to the latent process and
+induce sparsity in the covariance matrix of the latent process using compactly
+supported covariance functions. We propose an efficient MCMC scheme that takes
+advantage of these approximations. We use our model to address a temporal
+change of support problem whereby interest focuses on pooling daily and
+multiday black carbon readings in order to maximize the spatial coverage of the
+study region.

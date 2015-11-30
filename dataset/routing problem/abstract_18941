@@ -1,0 +1,19 @@
+The scheme of the sliding window is known in Information Theory, Computer
+Science, the problem of predicting and in stastistics. Let a source with
+unknown statistics generate some word $... x_{-1}x_{0}x_{1}x_{2}...$ in some
+alphabet $A$. For every moment $t, t=... $ $-1, 0, 1, ...$, one stores the word
+("window") $ x_{t-w} x_{t-w+1}... x_{t-1}$ where $w$,$w \geq 1$, is called
+"window length". In the theory of universal coding, the code of the $x_{t}$
+depends on source ststistics estimated by the window, in the problem of
+predicting, each letter $x_{t}$ is predicted using information of the window,
+etc. After that the letter $x_{t}$ is included in the window on the right,
+while $x_{t-w}$ is removed from the window. It is the sliding window scheme.
+This scheme has two merits: it allows one i) to estimate the source statistics
+quite precisely and ii) to adapt the code in case of a change in the source'
+statistics. However this scheme has a defect, namely, the necessity to store
+the window (i.e. the word $x_{t-w}... x_{t-1})$ which needs a large memory size
+for large $w$. A new scheme named "the Imaginary Sliding Window (ISW)" is
+constructed. The gist of this scheme is that not the last element $x_{t-w}$ but
+rather a random one is removed from the window. This allows one to retain both
+merits of the sliding window as well as the possibility of not storing the
+window and thus significantly decreasing the memory size.

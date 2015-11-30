@@ -1,0 +1,16 @@
+We present the first data structures that maintain near optimal maximum
+cardinality and maximum weighted matchings on sparse graphs in sublinear time
+per update. Our main result is a data structure that maintains a $(1+\epsilon)$
+approximation of maximum matching under edge insertions/deletions in worst case
+$O(\sqrt{m}\epsilon^{-2})$ time per update. This improves the 3/2 approximation
+given in [Neiman,Solomon,STOC 2013] which runs in similar time. The result is
+based on two ideas. The first is to re-run a static algorithm after a chosen
+number of updates to ensure approximation guarantees. The second is to
+judiciously trim the graph to a smaller equivalent one whenever possible.
+  We also study extensions of our approach to the weighted setting, and combine
+it with known frameworks to obtain arbitrary approximation ratios. For a
+constant $\epsilon$ and for graphs with edge weights between 1 and N, we design
+an algorithm that maintains an $(1+\epsilon)$-approximate maximum weighted
+matching in $O(\sqrt{m} \log N)$ time per update. The only previous result for
+maintaining weighted matchings on dynamic graphs has an approximation ratio of
+4.9108, and was shown in [Anand,Baswana,Gupta,Sen, FSTTCS 2012, arXiv 2012].

@@ -1,0 +1,22 @@
+Multiple Sequences Alignment (MSA) of biological sequences is a fundamental
+problem in computational biology due to its critical significance in wide
+ranging applications including haplotype reconstruction, sequence homology,
+phylogenetic analysis, and prediction of evolutionary origins. The MSA problem
+is considered NP-hard and known heuristics for the problem do not scale well
+with increasing number of sequences. On the other hand, with the advent of new
+breed of fast sequencing techniques it is now possible to generate thousands of
+sequences very quickly. For rapid sequence analysis, it is therefore desirable
+to develop fast MSA algorithms that scale well with the increase in the dataset
+size. In this paper, we present a novel domain decomposition based technique to
+solve the MSA problem on multiprocessing platforms. The domain decomposition
+based technique, in addition to yielding better quality, gives enormous
+advantage in terms of execution time and memory requirements. The proposed
+strategy allows to decrease the time complexity of any known heuristic of
+O(N)^x complexity by a factor of O(1/p)^x, where N is the number of sequences,
+x depends on the underlying heuristic approach, and p is the number of
+processing nodes. In particular, we propose a highly scalable algorithm,
+Sample-Align-D, for aligning biological sequences using Muscle system as the
+underlying heuristic. The proposed algorithm has been implemented on a cluster
+of workstations using MPI library. Experimental results for different problem
+sizes are analyzed in terms of quality of alignment, execution time and
+speed-up.

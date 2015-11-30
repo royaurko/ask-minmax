@@ -1,0 +1,25 @@
+Balanced allocation of online balls-into-bins has long been an active area of
+research for efficient load balancing and hashing applications.There exists a
+large number of results in this domain for different settings, such as parallel
+allocations~\cite{parallel}, multi-dimensional allocations~\cite{multi},
+weighted balls~\cite{weight} etc. For sequential multi-choice allocation, where
+$m$ balls are thrown into $n$ bins with each ball choosing $d$ (constant) bins
+independently uniformly at random, the maximum load of a bin is $O(\log \log n)
++ m/n$ with high probability~\cite{heavily_load}. This offers the current best
+known allocation scheme. However, for $d = \Theta(\log n)$, the gap reduces to
+$O(1)$~\cite{soda08}.A similar constant gap bound has been established for
+parallel allocations with $O(\log ^*n)$ communication rounds~\cite{lenzen}.
+  In this paper we propose a novel multi-choice allocation algorithm,
+\emph{Improved D-choice with Estimated Average} ($IDEA$) achieving a constant
+gap with a high probability for the sequential single-dimensional online
+allocation problem with constant $d$. We achieve a maximum load of $\lceil m/n
+\rceil$ with high probability for constant $d$ choice scheme with
+\emph{expected} constant number of retries or rounds per ball. We also show
+that the bound holds even for an arbitrary large number of balls, $m>>n$.
+Further, we generalize this result to (i)~the weighted case, where balls have
+weights drawn from an arbitrary weight distribution with finite variance,
+(ii)~multi-dimensional setting, where balls have $D$ dimensions with $f$
+randomly and uniformly chosen filled dimension for $m=n$, and (iii)~the
+parallel case, where $n$ balls arrive and are placed parallely in the bins. We
+show that the gap in these case is also a constant w.h.p. (independent of $m$)
+for constant value of $d$ with expected constant number of retries per ball.

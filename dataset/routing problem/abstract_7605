@@ -1,0 +1,21 @@
+It has been found that stochastic algorithms often find good solutions much
+more rapidly than inherently-batch approaches. Indeed, a very useful rule of
+thumb is that often, when solving a machine learning problem, an iterative
+technique which relies on performing a very large number of
+relatively-inexpensive updates will often outperform one which performs a
+smaller number of much "smarter" but computationally-expensive updates.
+  In this thesis, we will consider the application of stochastic algorithms to
+two of the most important machine learning problems. Part i is concerned with
+the supervised problem of binary classification using kernelized linear
+classifiers, for which the data have labels belonging to exactly two classes
+(e.g. "has cancer" or "doesn't have cancer"), and the learning problem is to
+find a linear classifier which is best at predicting the label. In Part ii, we
+will consider the unsupervised problem of Principal Component Analysis, for
+which the learning task is to find the directions which contain most of the
+variance of the data distribution.
+  Our goal is to present stochastic algorithms for both problems which are,
+above all, practical--they work well on real-world data, in some cases better
+than all known competing algorithms. A secondary, but still very important,
+goal is to derive theoretical bounds on the performance of these algorithms
+which are at least competitive with, and often better than, those known for
+other approaches.

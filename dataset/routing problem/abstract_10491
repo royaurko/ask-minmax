@@ -1,0 +1,21 @@
+We consider the computational complexity of pure Nash equilibria in graphical
+games. It is known that the problem is NP-complete in general, but tractable
+(i.e., in P) for special classes of graphs such as those with bounded
+treewidth. It is then natural to ask: is it possible to characterize all
+tractable classes of graphs for this problem? In this work, we provide such a
+characterization for the case of bounded in-degree graphs, thereby resolving
+the gap between existing hardness and tractability results. In particular, we
+analyze the complexity of PUREGG(C, -), the problem of deciding the existence
+of pure Nash equilibria in graphical games whose underlying graphs are
+restricted to class C. We prove that, under reasonable complexity theoretic
+assumptions, for every recursively enumerable class C of directed graphs with
+bounded in-degree, PUREGG(C, -) is in polynomial time if and only if the
+reduced graphs (the graphs resulting from iterated removal of sinks) of C have
+bounded treewidth. We also give a characterization for PURECHG(C,-), the
+problem of deciding the existence of pure Nash equilibria in colored
+hypergraphical games, a game representation that can express the additional
+structure that some of the players have identical local utility functions. We
+show that the tractable classes of bounded-arity colored hypergraphical games
+are precisely those whose reduced graphs have bounded treewidth modulo
+homomorphic equivalence. Our proofs make novel use of Grohe's characterization
+of the complexity of homomorphism problems.

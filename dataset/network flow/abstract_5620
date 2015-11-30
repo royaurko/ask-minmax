@@ -1,0 +1,15 @@
+High throughput is a fundamental goal of network design and is of particular
+interest in data center and high performance computing networks. Although
+myriad network topologies have been recently proposed, a broad head-to-head
+comparison of these proposals is absent, and the right way to compare
+worst-case throughput performance turns out to be a subtle problem.
+  In this paper, we present a framework to benchmark the throughput of network
+topologies. First, we show that cut-based metrics such as bisection bandwidth
+are the wrong measure: they yield incorrect conclusions about throughput
+performance. Next, we show how to generate a near-worst-case traffic matrix for
+a given topology, which empirically approaches a theoretical lower bound.
+Finally, we employ this metric, along with other traffic matrices, to analyze
+the throughput performance of a variety of networks proposed for data centers
+and high performance computing. Our evaluation code is freely available to
+facilitate future reproducible work on rigorously designing and evaluating
+networks.

@@ -1,0 +1,10 @@
+We show how to use a variational approximation to the logistic function to
+perform approximate inference in Bayesian networks containing discrete nodes
+with continuous parents. Essentially, we convert the logistic function to a
+Gaussian, which facilitates exact inference, and then iteratively adjust the
+variational parameters to improve the quality of the approximation. We
+demonstrate experimentally that this approximation is faster and potentially
+more accurate than sampling. We also introduce a simple new technique for
+handling evidence, which allows us to handle arbitrary distributions on
+observed nodes, as well as achieving a significant speedup in networks with
+discrete variables of large cardinality.

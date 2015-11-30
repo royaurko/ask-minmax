@@ -1,0 +1,20 @@
+An important result in the study of polynomial-time preprocessing shows that
+there is an algorithm which given an instance (G,k) of Vertex Cover outputs an
+equivalent instance (G',k') in polynomial time with the guarantee that G' has
+at most 2k' vertices (and thus O((k')^2) edges) with k' <= k. Using the
+terminology of parameterized complexity we say that k-Vertex Cover has a kernel
+with 2k vertices. There is complexity-theoretic evidence that both 2k vertices
+and Theta(k^2) edges are optimal for the kernel size. In this paper we consider
+the Vertex Cover problem with a different parameter, the size fvs(G) of a
+minimum feedback vertex set for G. This refined parameter is structurally
+smaller than the parameter k associated to the vertex covering number vc(G)
+since fvs(G) <= vc(G) and the difference can be arbitrarily large. We give a
+kernel for Vertex Cover with a number of vertices that is cubic in fvs(G): an
+instance (G,X,k) of Vertex Cover, where X is a feedback vertex set for G, can
+be transformed in polynomial time into an equivalent instance (G',X',k') such
+that |V(G')| <= 2k and |V(G')| <= O(|X'|^3). A similar result holds when the
+feedback vertex set X is not given along with the input. In sharp contrast we
+show that the Weighted Vertex Cover problem does not have a polynomial kernel
+when parameterized by the cardinality of a given vertex cover of the graph
+unless NP is in coNP/poly and the polynomial hierarchy collapses to the third
+level.

@@ -1,0 +1,20 @@
+Occlusion in face recognition is a common yet challenging problem. While
+sparse representation based classification (SRC) has been shown promising
+performance in laboratory conditions (i.e. noiseless or random pixel
+corrupted), it performs much worse in practical scenarios. In this paper, we
+consider the practical face recognition problem, where the occlusions are
+predictable and available for sampling. We propose the structured occlusion
+coding (SOC) to address occlusion problems. The structured coding here lies in
+two folds. On one hand, we employ a structured dictionary for recognition. On
+the other hand, we propose to use the structured sparsity in this formulation.
+Specifically, SOC simultaneously separates the occlusion and classifies the
+image. In this way, the problem of recognizing an occluded image is turned into
+seeking a structured sparse solution on occlusion-appended dictionary. In order
+to construct a well-performing occlusion dictionary, we propose an occlusion
+mask estimating technique via locality constrained dictionary (LCD), showing
+striking improvement in occlusion sample. On a category-specific occlusion
+dictionary, we replace norm sparsity with the structured sparsity which is
+shown more robust, further enhancing the robustness of our approach. Moreover,
+SOC achieves significant improvement in handling large occlusion in real world.
+Extensive experiments are conducted on public data sets to validate the
+superiority of the proposed algorithm.

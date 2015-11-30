@@ -1,0 +1,15 @@
+In a class of methods for measurement of available path capacity and other
+capacity-related metrics in a network, trains of probe packets are transmitted
+from a sender to a receiver across a network path, and the sequences of time
+stamps at sending and reception are analyzed. In large-scale implementations
+there may potentially be interference between the probe-packet trains
+corresponding to several concurrent measurement sessions, due to congestion in
+the network and common measurement end points.
+  This paper outlines principles for large-scale deployments of network
+capacity measurement methods using standardized network functionality. Further,
+the paper provides an in-depth study of dimensioning and scalability challenges
+related to the measurement end-points of such systems.
+  The main result is a framework for dimensioning of large-scale network
+capacity measurement systems based on TWAMP. The framework is based on a method
+for explicit calculation of queuelength and waiting-time distributions, where
+results from M/G/1 queuing theory are combined with Monte Carlo integration.

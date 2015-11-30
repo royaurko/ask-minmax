@@ -1,0 +1,14 @@
+This paper describes several new algorithms for estimating the parameters of
+a periodic bandlimited signal from samples corrupted by jitter (timing noise)
+and additive noise. Both classical (non-random) and Bayesian formulations are
+considered: an Expectation-Maximization (EM) algorithm is developed to compute
+the maximum likelihood (ML) estimator for the classical estimation framework,
+and two Gibbs samplers are proposed to approximate the Bayes least squares
+(BLS) estimate for parameters independently distributed according to a uniform
+prior. Simulations are performed to demonstrate the significant performance
+improvement achievable using these algorithms as compared to linear estimators.
+The ML estimator is also compared to the Cramer-Rao lower bound to determine
+the range of jitter for which the estimator is approximately efficient. These
+simulations provide evidence that the nonlinear algorithms derived here can
+tolerate 1.4-2 times more jitter than linear estimators, reducing on-chip ADC
+power consumption by 50-75 percent.

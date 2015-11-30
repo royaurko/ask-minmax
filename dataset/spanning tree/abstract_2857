@@ -1,0 +1,11 @@
+We describe here a simple application of rational trees to the implementation
+of an interpreter for a procedural language written in a logic programming
+language. This is possible in languages designed to support rational trees
+(such as Prolog II and its descendants), but also in traditional Prolog, whose
+data structures are initially based on Herbrand terms, but in which
+implementations often omit the occurs check needed to avoid the creation of
+infinite data structures. We provide code implementing two interpreters, one of
+which needs non-occurs-check unification, which makes it faster (and more
+economic). We provide experimental data supporting this, and we argue that
+rational trees are interesting enough as to receive thorough support inside the
+language.

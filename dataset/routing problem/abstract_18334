@@ -1,0 +1,26 @@
+Considerable effort has been devoted to the development of streaming
+algorithms for analyzing massive graphs. Unfortunately, many results have been
+negative, establishing that a wide variety of problems require $\Omega(n^2)$
+space to solve. One of the few bright spots has been the development of
+semi-streaming algorithms for a handful of graph problems -- these algorithms
+use space $O(n\cdot\text{polylog}(n))$.
+  In the annotated data streaming model of Chakrabarti et al., a
+computationally limited client wants to compute some property of a massive
+input, but lacks the resources to store even a small fraction of the input, and
+hence cannot perform the desired computation locally. The client therefore
+accesses a powerful but untrusted service provider, who not only performs the
+requested computation, but also proves that the answer is correct.
+  We put forth the notion of semi-streaming algorithms for annotated graph
+streams (semi-streaming annotation schemes for short). These are protocols in
+which both the client's space usage and the length of the proof are $O(n \cdot
+\text{polylog}(n))$. We give evidence that semi-streaming annotation schemes
+represent a substantially more robust solution concept than does the standard
+semi-streaming model. On the positive side, we give semi-streaming annotation
+schemes for two dynamic graph problems that are intractable in the standard
+model: (exactly) counting triangles, and (exactly) computing maximum matchings.
+The former scheme answers a question of Cormode. On the negative side, we
+identify for the first time two natural graph problems (connectivity and
+bipartiteness in a certain edge update model) that can be solved in the
+standard semi-streaming model, but cannot be solved by annotation schemes of
+"sub-semi-streaming" cost. That is, these problems are just as hard in the
+annotations model as they are in the standard model.

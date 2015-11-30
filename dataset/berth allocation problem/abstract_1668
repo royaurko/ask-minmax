@@ -1,0 +1,24 @@
+Power consumption is a critical consideration in high performance computing
+systems and it is becoming the limiting factor to build and operate Petascale
+and Exascale systems. When studying the power consumption of existing systems
+running HPC workloads, we find that power, energy and performance are closely
+related which leads to the possibility to optimize energy consumption without
+sacrificing (much or at all) the performance. In this paper, we propose a HPC
+system running with a GNU/Linux OS and a Real Time Resource Manager (RTRM) that
+is aware and monitors the healthy of the platform. On the system, an
+application for disaster management runs. The application can run with
+different QoS depending on the situation. We defined two main situations.
+Normal execution, when there is no risk of a disaster, even though we still
+have to run the system to look ahead in the near future if the situation
+changes suddenly. In the second scenario, the possibilities for a disaster are
+very high. Then the allocation of more resources for improving the precision
+and the human decision has to be taken into account. The paper shows that at
+design time, it is possible to describe different optimal points that are going
+to be used at runtime by the RTOS with the application. This environment helps
+to the system that must run 24/7 in saving energy with the trade-off of losing
+precision. The paper shows a model execution which can improve the precision of
+results by 65% in average by increasing the number of iterations from 1e3 to
+1e4. This also produces one order of magnitude longer execution time which
+leads to the need to use a multi-node solution. The optimal trade-off between
+precision vs. execution time is computed by the RTOS with the time overhead
+less than 10% against a native execution.

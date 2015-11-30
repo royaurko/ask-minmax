@@ -1,0 +1,15 @@
+In this note, we give a practical solution to the problem of determining the
+maximal period of matrix generators of pseudo-random numbers which are based on
+an integer-valued unimodular matrix of size NxN known as MIXMAX and arithmetic
+defined on a Galois field GF[p] with large prime modulus p. The existing theory
+of Galois finite fields is adapted to the present case, and necessary and
+sufficient condition to attain the maximum period is formulated. Three
+efficient algorithms are presented. First, allowing to compute the
+multiplication by the MIXMAX matrix with O(N) operations. Second, to
+recursively compute the characteristic polynomial with O(N^2) operations, and
+third, to apply skips of large number of steps S to the sequence in O(N^2
+log(S)) operations. It is demonstrated that the dynamical properties of this
+generator dramatically improve with the size of the matrix N, as compared to
+the classes of generators based on sparse matrices and/or sparse characteristic
+polynomials. Finally, we present the implementation details of the generator
+and the results of rigorous statistical testing.

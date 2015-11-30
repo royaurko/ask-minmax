@@ -1,0 +1,13 @@
+Entity matching is an important and difficult step for integrating web data.
+To reduce the typically high execution time for matching we investigate how we
+can perform entity matching in parallel on a distributed infrastructure. We
+propose different strategies to partition the input data and generate multiple
+match tasks that can be independently executed. One of our strategies supports
+both, blocking to reduce the search space for matching and parallel matching to
+improve efficiency. Special attention is given to the number and size of data
+partitions as they impact the overall communication overhead and memory
+requirements of individual match tasks. We have developed a service-based
+distributed infrastructure for the parallel execution of match workflows. We
+evaluate our approach in detail for different match strategies for matching
+real-world product data of different web shops. We also consider caching of
+in-put entities and affinity-based scheduling of match tasks.

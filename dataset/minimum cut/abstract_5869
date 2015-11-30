@@ -1,0 +1,16 @@
+A workflow is a collection of steps that must be executed in some specific
+order to achieve an objective. A computerised workflow management system may
+enforce contributorisation policies and constraints, thereby restricting which users
+can perform particular steps in a workflow. The existence of policies and
+constraints may mean that a workflow is unsatisfiable, in the sense that it is
+impossible to find an contributorised user for each step in the workflow and satisfy
+all constraints. In this paper, we consider the problem of finding the "least
+bad" assignment of users to workflow steps by assigning a weight to each policy
+and constraint violation. To this end, we introduce a framework for associating
+costs with the violation of workflow policies and constraints and define the
+\emph{valued workflow satisfiability problem} (Valued WSP), whose solution is
+an assignment of steps to users of minimum cost. We establish the computational
+complexity of Valued WSP with user-independent constraints and show that it is
+fixed-parameter tractable. We then describe an algorithm for solving Valued WSP
+with user-independent constraints and evaluate its performance, comparing it to
+that of an off-the-shelf mixed integer programming package.

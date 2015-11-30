@@ -1,0 +1,16 @@
+Numerical homogenization, i.e. the finite-dimensional approximation of
+solution spaces of PDEs with arbitrary rough coefficients, requires the
+identification of accurate basis elements. These basis elements are oftentimes
+found after a laborious process of scientific investigation and plain
+guesswork. Can this identification problem be facilitated? Is there a general
+recipe/decision framework for guiding the design of basis elements? We suggest
+that the answer to the above questions could be positive based on the
+reformulation of numerical homogenization as a Bayesian Inference problem in
+which a given PDE with rough coefficients (or multi-scale operator) is excited
+with noise (random right hand side/source term) and one tries to estimate the
+value of the solution at a given point based on a finite number of
+observations. We apply this reformulation to the identification of bases for
+the numerical homogenization of arbitrary integro-differential equations and
+show that these bases have optimal recovery properties. In particular we show
+how Rough Polyharmonic Splines can be re-discovered as the optimal solution of
+a Gaussian filtering problem.

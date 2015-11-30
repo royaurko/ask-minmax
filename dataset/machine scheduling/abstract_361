@@ -1,0 +1,24 @@
+We study scheduling problems motivated by recently developed techniques for
+microprocessor thermal management at the operating systems level. The general
+scenario can be described as follows. The microprocessor's temperature is
+controlled by the hardware thermal management system that continuously monitors
+the chip temperature and automatically reduces the processor's speed as soon as
+the thermal threshold is exceeded. Some tasks are more CPU-intensive than other
+and thus generate more heat during execution. The cooling system operates
+non-stop, reducing (at an exponential rate) the deviation of the processor's
+temperature from the ambient temperature. As a result, the processor's
+temperature, and thus the performance as well, depends on the order of the task
+execution. Given a variety of possible underlying architectures, models for
+cooling and for hardware thermal management, as well as types of tasks, this
+scenario gives rise to a plethora of interesting and never studied scheduling
+problems.
+  We focus on scheduling real-time jobs in a simplified model for cooling and
+thermal management. A collection of unit-length jobs is given, each job
+specified by its release time, deadline and heat contribution. If, at some time
+step, the temperature of the system is t and the processor executes a job with
+heat contribution h, then the temperature at the next step is (t+h)/2. The
+temperature cannot exceed the given thermal threshold T. The objective is to
+maximize the throughput, that is, the number of tasks that meet their
+deadlines. We prove that, in the offline case, computing the optimum schedule
+is NP-hard, even if all jobs are released at the same time. In the online case,
+we show a 2-competitive deterministic algorithm and a matching lower bound.

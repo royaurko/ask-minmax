@@ -1,0 +1,11 @@
+A clique in an undirected graph G= (V, E) is a subset V' V of vertices, each
+pair of which is connected by an edge in E. The clique problem is an
+optimization problem of finding a clique of maximum size in graph. The clique
+problem is NP-Complete. We have succeeded in developing a fast algorithm for
+maximum clique problem by employing the method of verification and elimination.
+For a graph of size N there are 2N sub graphs, which may be cliques and hence
+verifying all of them, will take a long time. Idea is to eliminate a major
+number of sub graphs, which cannot be cliques and verifying only the remaining
+sub graphs. This heuristic algorithm runs in polynomial time and executes
+successfully for several examples when applied to random graphs and DIMACS
+benchmark graphs.

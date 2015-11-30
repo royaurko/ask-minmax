@@ -1,0 +1,11 @@
+During the loading phase of a vessel, only the containers that are on top of
+their stack are directly accessible. If the container that needs to be loaded
+next is not the top container, extra moves have to be performed, resulting in
+an increased loading time. One way to resolve this issue is via a procedure
+called premarshalling. The goal of premarshalling is to reshuffle the
+containers into a desired lay-out prior to the arrival of the vessel, in the
+minimum number of moves possible. This paper presents an exact algorithm based
+on branch and bound, that is evaluated on a large set of instances. The
+complexity of the premarshalling problem is also considered, and this paper
+shows that the problem at hand is NP-hard, even in the natural case of stacks
+with fixed height.

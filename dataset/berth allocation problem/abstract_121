@@ -1,0 +1,18 @@
+In this paper, we consider the problem of joint scheduling and resource
+allocation in the OFDMA downlink, with the goal of maximizing an expected
+long-term goodput-based utility subject to an instantaneous sum-power
+constraint, and where the feedback to the base station consists only of
+ACK/NAKs from recently scheduled users. We first establish that the optimal
+solution is a partially observable Markov decision process (POMDP), which is
+impractical to implement. In response, we propose a greedy approach to joint
+scheduling and resource allocation that maintains a posterior channel
+distribution for every user, and has only polynomial complexity. For
+frequency-selective channels with Markov time-variation, we then outline a
+recursive method to update the channel posteriors, based on the ACK/NAK
+feedback, that is made computationally efficient through the use of particle
+filtering. To gauge the performance of our greedy approach relative to that of
+the optimal POMDP, we derive a POMDP performance upper-bound. Numerical
+experiments show that, for slowly fading channels, the performance of our
+greedy scheme is relatively close to the upper bound, and much better than
+fixed-power random user scheduling (FP-RUS), despite its relatively low
+complexity.

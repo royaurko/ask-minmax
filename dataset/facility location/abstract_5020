@@ -1,0 +1,16 @@
+In this paper, we consider learning dictionary models over a network of
+agents, where each agent is only in charge of a portion of the dictionary
+elements. This formulation is relevant in Big Data scenarios where large
+dictionary models may be spread over different spatial locations and it is not
+feasible to aggregate all dictionaries in one location due to communication and
+privacy considerations. We first show that the dual function of the inference
+problem is an aggregation of individual cost functions associated with
+different agents, which can then be minimized efficiently by means of diffusion
+strategies. The collaborative inference step generates dual variables that are
+used by the agents to update their dictionaries without the need to share these
+dictionaries or even the coefficient models for the training data. This is a
+powerful property that leads to an effective distributed procedure for learning
+dictionaries over large networks (e.g., hundreds of agents in our experiments).
+Furthermore, the proposed learning strategy operates in an online manner and is
+able to respond to streaming data, where each data sample is presented to the
+network once.

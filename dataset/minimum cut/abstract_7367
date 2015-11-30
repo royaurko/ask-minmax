@@ -1,0 +1,18 @@
+The problem of detecting an abrupt change in a sequence of independent and
+identically distributed (IID) random variables is addressed. Sequentially
+received samples are IID both before and after a single unknown change time.
+Unlike previous approaches to change detection that assume a known probability
+density function (PDF) at the start, the problem here is to detect a change
+between two given PDFs in either direction, meaning that the number of
+hypotheses to be tracked is always twice the number of samples received. A
+Bayesian multiple hypothesis approach is proposed and shown to have the
+following properties: (i) unlike previous tests that require a threshold, the
+minimum cost hypothesis is tracked through time, (ii) under an exponential
+delay cost function and suitable parameter choices, the proposed procedure's
+probability of detecting a change in the incorrect direction asymptotically
+vanishes with time, (iii) the method is recursive with constant computation per
+unit time, and (iv) the probabilities of false alarm and incorrect detection
+may be directly traded off with average delay. Performance results using
+simulation confirm the derived properties and also reveal that the average
+delay, after a transient period corresponding to when the starting state is
+uncertain, approaches that of the optimal one-sided test, CUSUM.

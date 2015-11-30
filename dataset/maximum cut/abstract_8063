@@ -1,0 +1,23 @@
+Multi-antenna or multiple-input multiple-output (MIMO) technique can
+significantly improve the efficiency of radio frequency (RF) signal enabled
+wireless energy transfer (WET). To fully exploit the energy beamforming gain at
+the energy transmitter (ET), the knowledge of channel state information (CSI)
+is essential, which, however, is difficult to be obtained in practice due to
+the hardware limitation of the energy receiver (ER). To overcome this
+difficulty, under a point-to-point MIMO WET setup, this paper proposes a
+general design framework for a new type of channel learning method based on the
+ER's energy measurement and feedback. Specifically, the ER measures and encodes
+the harvested energy levels over different training intervals into bits, and
+sends them to the ET via a feedback link of limited rate. Based on the
+energy-level feedback, the ET adjusts transmit beamforming in subsequent
+training intervals and obtains refined estimates of the MIMO channel by
+leveraging the technique of analytic center cutting plane method (ACCPM) in
+convex optimization. Under this general design framework, we further propose
+two specific feedback schemes termed energy quantization and energy comparison,
+where the feedback bits at each interval are generated at the ER by quantizing
+the measured energy level at the current interval and comparing it with those
+in the previous intervals, respectively. Numerical results are provided to
+compare the performance of the two feedback schemes. It is shown that energy
+quantization performs better when the number of feedback bits per interval is
+large, while energy comparison is more effective with small number of feedback
+bits.

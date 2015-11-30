@@ -1,0 +1,25 @@
+In this paper we revisit the sparse multiple measurement vector (MMV) problem
+where the aim is to recover a set of jointly sparse multichannel vectors from
+incomplete measurements. This problem has received increasing interest as an
+extension of the single channel sparse recovery problem which lies at the heart
+of the emerging field of compressed sensing. However the sparse approximation
+problem has origins which include links to the field of array signal processing
+where we find the inspiration for a new family of MMV algorithms based on the
+MUSIC algorithm. We highlight the role of the rank of the coefficient matrix X
+in determining the difficulty of the recovery problem. We derive the necessary
+and sufficient conditions for the uniqueness of the sparse MMV solution, which
+indicates that the larger the rank of X the less sparse X needs to be to ensure
+uniqueness. We also show that the larger the rank of X the less the
+computational effort required to solve the MMV problem through a combinatorial
+search. In the second part of the paper we consider practical suboptimal
+algorithms for solving the sparse MMV problem. We examine the rank awareness of
+popular algorithms such as SOMP and mixed norm minimization techniques and show
+them to be rank blind in terms of worst case analysis. We then consider a
+family of greedy algorithms that are rank aware. The simplest such algorithm is
+a discrete version of MUSIC and is guaranteed to recover the sparse vectors in
+the full rank MMV case under mild conditions. We extend this idea to develop a
+rank aware pursuit algorithm that naturally reduces to Order Recursive Matching
+Pursuit (ORMP) in the single measurement case and also provides guaranteed
+recovery in the full rank multi-measurement case. Numerical simulations
+demonstrate that the rank aware algorithms are significantly better than
+existing algorithms in dealing with multiple measurements.

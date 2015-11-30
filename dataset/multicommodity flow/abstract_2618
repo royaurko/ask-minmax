@@ -1,0 +1,14 @@
+We present a novel malware detection approach based on metrics over
+quantitative data flow graphs. Quantitative data flow graphs (QDFGs) model
+process behavior by interpreting issued system calls as aggregations of
+quantifiable data flows.Due to the high abstraction level we consider QDFG
+metric based detection more robust against typical behavior obfuscation like
+bogus call injection or call reordering than other common behavioral models
+that base on raw system calls. We support this claim with experiments on
+obfuscated malware logs and demonstrate the superior obfuscation robustness in
+comparison to detection using n-grams. Our evaluations on a large and diverse
+data set consisting of about 7000 malware and 500 goodware samples show an
+average detection rate of 98.01% and a false positive rate of 0.48%. Moreover,
+we show that our approach is able to detect new malware (i.e. samples from
+malware families not included in the training set) and that the consideration
+of quantities in itself significantly improves detection precision.

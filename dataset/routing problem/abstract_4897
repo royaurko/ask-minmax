@@ -1,0 +1,21 @@
+For digraphs $D$ and $H$, a mapping $f: V(D)\dom V(H)$ is a homomorphism of
+$D$ to $H$ if $uv\in A(D)$ implies $f(u)f(v)\in A(H).$ For a fixed digraph $H$,
+the homomorphism problem is to decide whether an input digraph $D$ admits a
+homomorphism to $H$ or not, and is denoted as HOM($H$).
+  An optimization version of the homomorphism problem was motivated by a
+real-world problem in defence logistics and was introduced in
+\cite{gutinDAM154a}. If each vertex $u \in V(D)$ is associated with costs
+$c_i(u), i \in V(H)$, then the cost of the homomorphism $f$ is $\sum_{u\in
+V(D)}c_{f(u)}(u)$. For each fixed digraph $H$, we have the {\em minimum cost
+homomorphism problem for} $H$ and denote it as MinHOM($H$). The problem is to
+decide, for an input graph $D$ with costs $c_i(u),$ $u \in V(D), i\in V(H)$,
+whether there exists a homomorphism of $D$ to $H$ and, if one exists, to find
+one of minimum cost.
+  Although a complete dichotomy classification of the complexity of MinHOM($H$)
+for a digraph $H$ remains an unsolved problem, complete dichotomy
+classifications for MinHOM($H$) were proved when $H$ is a semicomplete digraph
+\cite{gutinDAM154b}, and a semicomplete multipartite digraph \cite{gutinDAM}.
+In these studies, it is assumed that the digraph $H$ is loopless. In this
+paper, we present a full dichotomy classification for semicomplete digraphs
+with possible loops, which solves a problem in \cite{gutinRMS}.\footnote{This
+paper was submitted to SIAM J. Discrete Math. on October 27, 2006}

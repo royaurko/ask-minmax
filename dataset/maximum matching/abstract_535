@@ -1,0 +1,15 @@
+We consider string matching with variable length gaps. Given a string $T$ and
+a pattern $P$ consisting of strings separated by variable length gaps
+(arbitrary strings of length in a specified range), the problem is to find all
+ending positions of substrings in $T$ that match $P$. This problem is a basic
+primitive in computational biology applications. Let $m$ and $n$ be the lengths
+of $P$ and $T$, respectively, and let $k$ be the number of strings in $P$. We
+present a new algorithm achieving time $O(n\log k + m +\alpha)$ and space $O(m
++ A)$, where $A$ is the sum of the lower bounds of the lengths of the gaps in
+$P$ and $\alpha$ is the total number of occurrences of the strings in $P$
+within $T$. Compared to the previous results this bound essentially achieves
+the best known time and space complexities simultaneously. Consequently, our
+algorithm obtains the best known bounds for almost all combinations of $m$,
+$n$, $k$, $A$, and $\alpha$. Our algorithm is surprisingly simple and
+straightforward to implement. We also present algorithms for finding and
+encoding the positions of all strings in $P$ for every match of the pattern.

@@ -1,0 +1,19 @@
+This paper focuses on cascading line failures in the transmission system of
+the power grid. Recent large-scale power outages demonstrated the limitations
+of percolation- and epid- emic-based tools in modeling cascades. Hence, we
+study cascades by using computational tools and a linearized power flow model.
+We first obtain results regarding the Moore-Penrose pseudo-inverse of the power
+grid admittance matrix. Based on these results, we study the impact of a single
+line failure on the flows on other lines. We also illustrate via simulation the
+impact of the distance and resistance distance on the flow increase following a
+failure, and discuss the difference from the epidemic models. We then study the
+cascade properties, considering metrics such as the distance between failures
+and the fraction of demand (load) satisfied after the cascade (yield). We use
+the pseudo-inverse of admittance matrix to develop an efficient algorithm to
+identify the cascading failure evolution, which can be a building block for
+cascade mitigation. Finally, we show that finding the set of lines whose
+removal has the most significant impact (under various metrics) is NP-Hard and
+introduce a simple heuristic for the minimum yield problem. Overall, the
+results demonstrate that using the resistance distance and the pseudo-inverse
+of admittance matrix provides important insights and can support the
+development of efficient algorithms.

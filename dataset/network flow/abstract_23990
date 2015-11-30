@@ -1,0 +1,14 @@
+Graphical Gaussian models are popular tools for the estimation of
+(undirected) gene association networks from microarray data. A key issue when
+the number of variables greatly exceeds the number of samples is the estimation
+of the matrix of partial correlations. Since the (Moore-Penrose) inverse of the
+sample covariance matrix leads to poor estimates in this scenario, standard
+methods are inappropriate and adequate regularization techniques are needed. In
+this article, we investigate a general framework for combining regularized
+regression methods with the estimation of Graphical Gaussian models. This
+framework includes various existing methods as well as two new approaches based
+on ridge regression and adaptive lasso, respectively. These methods are
+extensively compared both qualitatively and quantitatively within a simulation
+study and through an application to six diverse real data sets. In addition,
+all proposed algorithms are implemented in the R package "parcor", available
+from the R repository CRAN.

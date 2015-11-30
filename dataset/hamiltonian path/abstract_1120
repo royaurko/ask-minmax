@@ -1,0 +1,18 @@
+Normally, program execution spends most of the time on loops. Automated test
+data generation devotes special attention to loops for better coverage.
+Automated test data generation for programs having loops with variable number
+of iteration and variable length array is a challenging problem. It is so
+because the number of paths may increase exponentially with the increase of
+array size for some programming constructs, like merge sort. We propose a
+method that finds heuristic for different types of programming constructs with
+loops and arrays. Linear search, Bubble sort, merge sort, and matrix
+multiplication programs are included in an attempt to highlight the difference
+in execution between single loop, variable length array and nested loops with
+one and two dimensional arrays. We have used two parameters/heuristics to
+predict the minimum number of iterations required for generating automated test
+data. They are longest path level (kL) and saturation level (kS). The
+proceedings of our work includes the instrumentation of source code at the
+elementary level, followed by the application of the random inputs until all
+feasible paths or all paths having longest paths are collected. However,
+duplicate paths are avoided by using a filter. Our test data is the random
+numbers that cover each feasible path.

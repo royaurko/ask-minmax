@@ -1,0 +1,21 @@
+We consider the problem of detecting whether or not, in a given sensor
+network, there is a cluster of sensors which exhibit an "unusual behavior."
+Formally, suppose we are given a set of nodes and attach a random variable to
+each node. We observe a realization of this process and want to decide between
+the following two hypotheses: under the null, the variables are i.i.d. standard
+normal; under the alternative, there is a cluster of variables that are i.i.d.
+normal with positive mean and unit variance, while the rest are i.i.d. standard
+normal. We also address surveillance settings where each sensor in the network
+collects information over time. The resulting model is similar, now with a time
+series attached to each node. We again observe the process over time and want
+to decide between the null, where all the variables are i.i.d. standard normal,
+and the alternative, where there is an emerging cluster of i.i.d. normal
+variables with positive mean and unit variance. The growth models used to
+represent the emerging cluster are quite general and, in particular, include
+cellular automata used in modeling epidemics. In both settings, we consider
+classes of clusters that are quite general, for which we obtain a lower bound
+on their respective minimax detection rate and show that some form of scan
+statistic, by far the most popular method in practice, achieves that same rate
+to within a logarithmic factor. Our results are not limited to the normal
+location model, but generalize to any one-parameter exponential family when the
+anomalous clusters are large enough.

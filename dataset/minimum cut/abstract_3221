@@ -1,0 +1,14 @@
+We present an efficient and simple modification of the standard transport
+algorithm used in explicit eulerian fixed polar grid codes, aimed at getting
+rid of the average azimuthal velocity when applying the Courant condition. This
+results in a much larger timestep then the usual procedure, and it is
+particularly well-suited to the description of a Keplerian disk where one is
+traditionally limited by the very demanding Courant condition on the fast
+orbital motion at the inner boundary. In this modified algorithm, the timestep
+is limited by the perturbed velocity and by the shear arising from the
+differential rotation. FARGO stands for ``Fast Advection in Rotating Gaseous
+Objects''. The speed-up resulting from the use of the FARGO algorithm is
+problem dependent. In the example presented here, which shows the evolution of
+a Jupiter sized protoplanet embedded in a minimum mass protoplanetary nebula,
+the FARGO algorithm is about an order of magnitude faster than a traditional
+transport scheme, with a much smaller numerical diffusivity.

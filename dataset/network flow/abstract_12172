@@ -1,0 +1,11 @@
+TCP performs poorly in networks with serious packet reordering. Processing
+reordered packets in the TCP layer is costly and inefficient, involving
+interaction of the sender and receiver. Motivated by the interrupt coalescing
+mechanism that delivers packets upward for protocol processing in blocks, we
+propose a new strategy, Sorting Reordered Packets with Interrupt Coalescing
+(SRPIC), to reduce packet reordering in the receiver. SRPIC works in the
+network device driver; it makes use of the interrupt coalescing mechanism to
+sort the reordered packets belonging to the same TCP stream in a block of
+packets before delivering them upward; each sorted block is internally ordered.
+Experiments have proven the effectiveness of SRPIC against forward-path
+reordering.

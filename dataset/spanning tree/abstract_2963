@@ -1,0 +1,15 @@
+The Firefighter problem is to place firefighters on the vertices of a graph
+to prevent a fire with known starting point from lighting up the entire graph.
+In each time step, a firefighter may be permanently placed on an unburned
+vertex and the fire spreads to its neighborhood in the graph in so far no
+firefighters are protecting those vertices. The goal is to let as few vertices
+burn as possible. This problem is known to be NP-complete, even when restricted
+to bipartite graphs or to trees of maximum degree three. Initial study showed
+the Firefighter problem to be fixed-parameter tractable on trees in various
+parameterizations. We complete these results by showing that the problem is in
+FPT on general graphs when parameterized by the number of burned vertices, but
+has no polynomial kernel on trees, resolving an open problem. Conversely, we
+show that the problem is W[1]-hard when parameterized by the number of unburned
+vertices, even on bipartite graphs. For both parameterizations, we additionally
+give refined algorithms on trees, improving on the running times of the known
+algorithms.

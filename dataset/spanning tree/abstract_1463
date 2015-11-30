@@ -1,0 +1,15 @@
+Theory of tree transducers provides a foundation for understanding
+expressiveness and complexity of analysis problems for specification languages
+for transforming hierarchically structured data such as XML documents. We
+introduce streaming tree transducers as an analyzable, executable, and
+expressive model for transforming unranked ordered trees in a single pass.
+Given a linear encoding of the input tree, the transducer makes a single
+left-to-right pass through the input, and computes the output in linear time
+using a finite-state control, a visibly pushdown stack, and a finite number of
+variables that store output chunks that can be combined using the operations of
+string-concatenation and tree-insertion. We prove that the expressiveness of
+the model coincides with transductions definable using monadic second-order
+logic (MSO). Existing models of tree transducers either cannot implement all
+MSO-definable transformations, or require regular look ahead that prohibits
+single-pass implementation. We show a variety of analysis problems such as
+type-checking and checking functional equivalence are solvable for our model.

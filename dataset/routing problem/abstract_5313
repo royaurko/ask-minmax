@@ -1,0 +1,16 @@
+We call a matrix completely mixable if the entries in its columns can be
+permuted so that all row sums are equal. If it is not completely mixable, we
+want to determine the smallest maximal and largest minimal row sum attainable.
+These values provide a discrete approximation of of minimum variance problems
+for discrete distributions, a problem motivated by the question how to estimate
+the $\alpha$-quantile of an aggregate random variable with unknown dependence
+structure given the marginals of the constituent random variables. We relate
+this problem to the multidimensional bottleneck assignment problem and show
+that there exists a polynomial $2$-approximation algorithm if the matrix has
+only $3$ columns. In general, deciding complete mixability is
+$\mathcal{NP}$-complete. In particular the swapping algorithm of Puccetti et
+al. is not an exact method unless $\mathcal{NP}\subseteq\mathcal{ZPP}$. For a
+fixed number of columns it remains $\mathcal{NP}$-complete, but there exists a
+PTAS. The problem can be solved in pseudopolynomial time for a fixed number of
+rows, and even in polynomial time if all columns furthermore contain entries
+from the same multiset.

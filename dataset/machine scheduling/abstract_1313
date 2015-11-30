@@ -1,0 +1,17 @@
+We present an algorithm for controlling and scheduling multiple linear
+time-invariant processes on a shared bandwidth limited communication network
+using adaptive sampling intervals. The controller is centralized and computes
+at every sampling instant not only the new control command for a process, but
+also decides the time interval to wait until taking the next sample. The
+approach relies on model predictive control ideas, where the cost function
+penalizes the state and control effort as well as the time interval until the
+next sample is taken. The latter is introduced in order to generate an adaptive
+sampling scheme for the overall system such that the sampling time increases as
+the norm of the system state goes to zero. The paper presents a method for
+synthesizing such a predictive controller and gives explicit sufficient
+conditions for when it is stabilizing. Further explicit conditions are given
+which guarantee conflict free transmissions on the network. It is shown that
+the optimization problem may be solved off-line and that the controller can be
+implemented as a lookup table of state feedback gains. Simulation studies which
+compare the proposed algorithm to periodic sampling illustrate potential
+performance gains.

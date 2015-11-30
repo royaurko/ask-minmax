@@ -1,0 +1,14 @@
+In order to integrate numerically a well-posed multiscale evolutionary
+problem such as a Cauchy problem for an ODE system or a PDE system, using
+time-subcycling techniques con- sists in splitting the vector field in a fast
+part and a slow part and take advantage of this decomposition, for example by
+integrating the fast equation on a much smaller time step than the slow
+equation (instead of having to integrate the whole system with a very small
+time step to ensure stability for example). These techniques are designed to
+improve the computational efficiency and have been been very widely used for
+schemes, that may have (at least) one com- ponent that has to be computed
+through an explicit scheme thus constrained by a limitation of the time step
+(CFL). In this paper, we study the long time behavior of such schemes, that are
+primarily designed to be convergent in short-time to the solution of the
+original problem. We develop our analysis on ODE toy-models and illustrate our
+results numerically on more complex PDE systems.

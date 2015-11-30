@@ -1,0 +1,12 @@
+Recurrent neural networks (RNNs) have shown outstanding performance on
+processing sequence data. However, they suffer from long training time, which
+demands parallel implementations of the training procedure. Parallelization of
+the training algorithms for RNNs are very challenging because internal
+recurrent paths form dependencies between two different time frames. In this
+paper, we first propose a generalized graph-based RNN structure that covers the
+most popular long short-term memory (LSTM) network. Then, we present a
+parallelization approach that automatically explores parallelisms of arbitrary
+RNNs by analyzing the graph structure. The experimental results show that the
+proposed approach shows great speed-up even with a single training stream, and
+further accelerates the training when combined with multiple parallel training
+streams.

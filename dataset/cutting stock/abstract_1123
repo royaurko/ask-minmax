@@ -1,0 +1,18 @@
+A limit order book provides information on available limit order prices and
+their volumes. Based on these quantities, we give an empirical result on the
+relationship between the bid-ask liquidity balance and trade sign and we show
+that liquidity balance on best bid/best ask is quite informative for predicting
+the future market order's direction. Moreover, we define price jump as a sell
+(buy) market order arrival which is executed at a price which is smaller
+(larger) than the best bid (best ask) price at the moment just after the
+precedent market order arrival. Features are then extracted related to limit
+order volumes, limit order price gaps, market order information and limit order
+event information. Logistic regression is applied to predict the price jump
+from the limit order book's feature. LASSO logistic regression is introduced to
+help us make variable selection from which we are capable to highlight the
+importance of different features in predicting the future price jump. In order
+to get rid of the intraday data seasonality, the analysis is based on two
+separated datasets: morning dataset and afternoon dataset. Based on an analysis
+on forty largest French stocks of CAC40, we find that trade sign and market
+order size as well as the liquidity on the best bid (best ask) are consistently
+informative for predicting the incoming price jump.

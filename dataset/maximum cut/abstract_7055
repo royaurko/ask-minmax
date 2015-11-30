@@ -1,0 +1,18 @@
+The bias of an estimator is defined as the difference of its expected value
+from the parameter to be estimated, where the expectation is with respect to
+the model. Loosely speaking, small bias reflects the desire that if an
+experiment is repeated indefinitely then the average of all the resultant
+estimates will be close to the parameter value that is estimated. The current
+paper is a review of the still-expanding repository of methods that have been
+developed to reduce bias in the estimation of parametric models. The review
+provides a unifying framework where all those methods are seen as attempts to
+approximate the solution of a simple estimating equation. Of particular focus
+is the maximum likelihood estimator, which despite being asymptotically
+unbiased under the usual regularity conditions, has finite-sample bias that can
+result in significant loss of performance of standard inferential procedures.
+An informal comparison of the methods is made revealing some useful practical
+side-effects in the estimation of popular models in practice including: i)
+shrinkage of the estimators in binomial and multinomial regression models that
+guarantees finiteness even in cases of data separation where the maximum
+likelihood estimator is infinite, and ii) inferential benefits for models that
+require the estimation of dispersion or precision parameters.

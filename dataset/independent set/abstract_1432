@@ -1,0 +1,24 @@
+The classical hard core model from statistical physics, with activity
+$\lambda > 0$ and capacity $C=1$, on a graph $G$, concerns a probability
+measure on the set ${\mathcal I}(G)$ of independent sets of $G$, with the
+measure of each independent set $I \in {\mathcal I}(G)$ being proportional to
+$\lambda^{|I|}$.
+  Ramanan et al. proposed a generalization of the hard core model as an
+idealized model of multicasting in communication networks. In this
+generalization, the {\em multi-state} hard core model, the capacity $C$ is
+allowed to be a positive integer, and a configuration in the model is an
+assignment of states from $\{0,\ldots,C\}$ to $V(G)$ (the set of nodes of $G$)
+subject to the constraint that the states of adjacent nodes may not sum to more
+than $C$. The activity associated to state $i$ is $\lambda^{i}$, so that the
+probability of a configuration $\sigma:V(G)\rightarrow \{0,\ldots, C\}$ is
+proportional to $\lambda^{\sum_{v \in V(G)} \sigma(v)}$.
+  In this work, we consider this generalization when $G$ is an infinite rooted
+$b$-ary tree and prove rigorously some of the conjectures made by Ramanan et
+al. In particular, we show that the $C=2$ model exhibits a (first-order) phase
+transition at a larger value of $\lambda$ than the $C=1$ model exhibits its
+(second-order) phase transition. In addition, for large $b$ we identify a short
+interval of values for $\lambda$ above which the model exhibits phase
+co-existence and below which there is phase uniqueness. For odd $C$, this
+transition occurs in the region of $\lambda = (e/b)^{1/\ceil{C/2}}$, while for
+even $C$, it occurs around $\lambda=(\log b/b(C+2))^{2/(C+2)}$. In the latter
+case, the transition is first-order.

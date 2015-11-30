@@ -1,0 +1,14 @@
+We consider online algorithms for broadcast scheduling. In the pull-based
+broadcast model there are $n$ unit-sized pages of information at a server and
+requests arrive online for pages. When the server transmits a page $p$, all
+outstanding requests for that page are satisfied. The longest-wait-first} (LWF)
+algorithm is a natural algorithm that has been shown to have good empirical
+performance. In this paper we make two main contributions to the analysis of
+LWF and broadcast scheduling. \begin{itemize} \item We give an intuitive and
+easy to understand analysis of LWF which shows that it is
+$O(1/\eps^2)$-competitive for average flow-time with $(4+\eps)$ speed. Using a
+more involved analysis, we show that LWF is $O(1/\eps^3)$-competitive for
+average flow-time with $(3.4+\epsilon)$ speed. \item We show that a natural
+extension of LWF is O(1)-speed O(1)-competitive for more general objective
+functions such as average delay-factor and $L_k$ norms of delay-factor (for
+fixed $k$). \end{itemize}

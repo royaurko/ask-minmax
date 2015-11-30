@@ -1,0 +1,14 @@
+The inference of gene predictors in the gene regulatory network has become an
+important research area in the genomics and medical disciplines. Accurate
+predicators are necessary for constructing the GRN model and to enable targeted
+biological experiments that attempt to confirm or control the regulation
+process. In this paper, we implement a SAT-based algorithm to determine the
+gene predictor set from steady state gene expression data (attractor states).
+Using the attractor states as input, the states are ordered into attractor
+cycles. For each attractor cycle ordering, all possible predictors are
+enumerated and a CNF expression is formulated which encodes these predictors
+and their biological constraints. Each CNF is explored using a SAT solver to
+find candidate predictor sets. Statistical analysis of the results selects the
+most likely predictor set of the GRN corresponding to the attractor data. We
+demonstrate our algorithm on attractor state data from a melanoma study, and
+present our predictor set results.

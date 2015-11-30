@@ -1,0 +1,22 @@
+The displacement distribution of a water molecular is characterized
+mathematically as Gaussianity without considering potential diffusion barriers
+and compartments. However, this is not true in real scenario: most biological
+tissues are comprised of cell membranes, various intracellular and
+extracellular spaces, and of other compartments, where the water diffusion is
+referred to have a non-Gaussian distribution. Diffusion kurtosis imaging (DKI),
+recently considered to be one sensitive biomarker, is an extension of diffusion
+tensor imaging, which quantifies the degree of non-Gaussianity of the
+diffusion. This work proposes an efficient scheme of maximum likelihood
+estimation (MLE) in DKI: we start from the Rician noise model of the signal
+intensities. By augmenting a Von-Mises distributed latent phase variable, the
+Rician likelihood is transformed to a tractable joint density without loss of
+generality. A fast computational method, an expectation-maximization (EM)
+algorithm for MLE is proposed in DKI. To guarantee the physical relevance of
+the diffusion kurtosis we apply the ternary quartic (TQ) parametrization to
+utilize its positivity, which imposes the upper bound to the kurtosis. A
+Fisher-scoring method is used for achieving fast convergence of the individual
+diffusion compartments. In addition, we use the barrier method to constrain the
+lower bound to the kurtosis. The proposed estimation scheme is conducted on
+both synthetic and real data with an objective of healthy human brain. We
+compared the method with the other popular ones with promising performance
+shown in the results.

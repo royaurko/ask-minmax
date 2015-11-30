@@ -1,0 +1,13 @@
+The simulation of granular media is usually done either with event-driven
+codes that treat collisions as instantaneous but have difficulty with very
+dense packings, or with molecular dynamics methods that approximate rigid
+grains using a stiff viscoelastic spring. There is a little-known method that
+combines several collision events into a single timestep in order to retain the
+instantaneous collisions of event-driven dynamics but also be able to handle
+dense packings. However, it is poorly characterized as to its regime of
+validity and failure modes. We present a modification of this method to reduce
+the introduction of overlap error, and test it using the problem of 2D granular
+Couette flow, a densely packed system that has been well-characterized by
+previous work. We find that this method can successfully replicate the results
+of previous work up to the point of jamming, and that it can do so a factor of
+10 faster than comparable MD methods.

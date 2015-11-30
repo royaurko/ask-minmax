@@ -1,0 +1,19 @@
+We present a novel method of simulating wave effects in graphics using
+ray--based renderers with a new function: the Wave BSDF (Bidirectional
+Scattering Distribution Function). Reflections from neighboring surface patches
+represented by local BSDFs are mutually independent. However, in many surfaces
+with wavelength-scale microstructures, interference and diffraction requires a
+joint analysis of reflected wavefronts from neighboring patches. We demonstrate
+a simple method to compute the BSDF for the entire microstructure, which can be
+used independently for each patch. This allows us to use traditional ray--based
+rendering pipelines to synthesize wave effects of light and sound. We exploit
+the Wigner Distribution Function (WDF) to create transmissive, reflective, and
+emissive BSDFs for various diffraction phenomena in a physically accurate way.
+In contrast to previous methods for computing interference, we circumvent the
+need to explicitly keep track of the phase of the wave by using BSDFs that
+include positive as well as negative coefficients. We describe and compare the
+theory in relation to well understood concepts in rendering and demonstrate a
+straightforward implementation. In conjunction with standard raytracers, such
+as PBRT, we demonstrate wave effects for a range of scenarios such as
+multi--bounce diffraction materials, holograms and reflection of high frequency
+surfaces.

@@ -1,0 +1,22 @@
+We discuss how matrix-free/timestepper algorithms can efficiently be used
+with dynamic non-Newtonian fluid mechanics simulators in performing systematic
+stability/bifurcation analysis. The timestepper approach to bifurcation
+analysis of large scale systems is applied to the plane Poiseuille flow of an
+Oldroyd-B fluid with non-monotonic slip at the wall, in order to further
+investigate a mechanism of extrusion instability based on the combination of
+viscoelasticity and nonmonotonic slip. Due to the nonmonotonicity of the slip
+equation the resulting steady-state flow curve is nonmonotonic and unstable
+steady-states appear in the negative-slope regime. It has been known that
+self-sustained oscillations of the pressure gradient are obtained when an
+unstable steady-state is perturbed [Fyrillas et al., Polymer Eng. Sci. 39
+(1999) 2498-2504].
+  Treating the simulator of a distributed parameter model describing the
+dynamics of the above flow as an input-output black-box timestepper of the
+state variables, stable and unstable branches of both equilibrium and periodic
+oscillating solutions are computed and their stability is examined. It is shown
+for the first time how equilibrium solutions lose stability to oscillating ones
+through a subcritical Hopf bifurcation point which generates a branch of
+unstable limit cycles and how the stable periodic solutions lose their
+stability through a critical point which marks the onset of the unstable limit
+cycles. This implicates the coexistence of stable equilibria with stable and
+unstable periodic solutions in a narrow range of volumetric flow rates.

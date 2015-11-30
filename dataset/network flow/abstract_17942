@@ -1,0 +1,19 @@
+It is well known that opportunistic scheduling algorithms are throughput
+optimal under full knowledge of channel and network conditions. However, these
+algorithms achieve a hypothetical achievable rate region which does not take
+into account the overhead associated with channel probing and feedback required
+to obtain the full channel state information at every slot. We adopt a channel
+probing model where $\beta$ fraction of time slot is consumed for acquiring the
+channel state information (CSI) of a single channel. In this work, we design a
+joint scheduling and channel probing algorithm named SDF by considering the
+overhead of obtaining the channel state information. We first analytically
+prove SDF algorithm can support $1+\epsilon$ fraction of of the full rate
+region achieved when all users are probed where $\epsilon$ depends on the
+expected number of users which are not probed. Then, for homogenous channel, we
+show that when the number of users in the network is greater than 3, $\epsilon
+> 0$, i.e., we guarantee to expand the rate region. In addition, for
+heterogenous channels, we prove the conditions under which SDF guarantees to
+increase the rate region. We also demonstrate numerically in a realistic
+simulation setting that this rate region can be achieved by probing only less
+than 50% of all channels in a CDMA based cellular network utilizing high data
+rate protocol under normal channel conditions.

@@ -1,0 +1,21 @@
+The fundamental equations that model turbulent flow do not provide much
+insight into the size and shape of observed turbulent structures. We
+investigate the efficient and accurate representation of structures in
+two-dimensional turbulence by applying statistical models directly to the
+simulated vorticity field. Rather than extract the coherent portion of the
+image from the background variation, as in the classical signal-plus-noise
+model, we present a model for individual vortices using the non-decimated
+discrete wavelet transform. A template image, supplied by the user, provides
+the features to be extracted from the vorticity field. By transforming the
+vortex template into the wavelet domain, specific characteristics present in
+the template, such as size and symmetry, are broken down into components
+associated with spatial frequencies. Multivariate multiple linear regression is
+used to fit the vortex template to the vorticity field in the wavelet domain.
+Since all levels of the template decomposition may be used to model each level
+in the field decomposition, the resulting model need not be identical to the
+template. Application to a vortex census algorithm that records quantities of
+interest (such as size, peak amplitude, circulation, etc.) as the vorticity
+field evolves is given. The multiresolution census algorithm extracts coherent
+structures of all shapes and sizes in simulated vorticity fields and is able to
+reproduce known physical scaling laws when processing a set of voriticity
+fields that evolve over time.

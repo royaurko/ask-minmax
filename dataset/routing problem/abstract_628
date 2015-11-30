@@ -1,0 +1,13 @@
+EGP and IGP are the key components of the present internet infrastructure.
+Routers in a domain forward IP packet within and between domains. Each domain
+uses an intra-domain routing protocol known as Interior Gateway Protocol (IGP)
+like IS-IS, OSPF, RIP etc to populate the routing tables of its routers.
+Routing information must also be exchanged between domains to ensure that a
+host in one domain can reach another host in remote domain. This role is
+performed by inter-domain routing protocol called Exterior Gateway Protocol
+(EGP). Basically EGP used these days is Border Gateway Protocol (BGP). Basic
+difference between the both is that BGP has smaller convergence as compared to
+the IGP's. And IGP's on the other hand have lesser scalability as compared to
+the BGP. So in this paper a proposal to create a new protocol is given which
+can act as an IGP when we consider inter-domain transfer of traffic and acts as
+BGP when we consider intra-domain transfer of traffic.

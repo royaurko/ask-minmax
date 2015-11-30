@@ -1,0 +1,14 @@
+We present semi-streaming algorithms for basic graph problems that have
+optimal per-edge processing times and therefore surpass all previous
+semi-streaming algorithms for these tasks. The semi-streaming model, which is
+appropriate when dealing with massive graphs, forbids random access to the
+input and restricts the memory to O(n*polylog n) bits.
+  Particularly, the formerly best per-edge processing times for finding the
+connected components and a bipartition are O(alpha(n)), for determining
+k-vertex and k-edge connectivity O(k^2n) and O(n*log n) respectively for any
+constant k and for computing a minimum spanning forest O(log n). All these time
+bounds we reduce to O(1).
+  Every presented algorithm determines a solution asymptotically as fast as the
+best corresponding algorithm up to date in the classical RAM model, which
+therefore cannot convert the advantage of unlimited memory and random access
+into superior computing times for these problems.

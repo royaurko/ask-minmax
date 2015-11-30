@@ -1,0 +1,15 @@
+In this work we show that randomized (block) coordinate descent methods can
+be accelerated by parallelization when applied to the problem of minimizing the
+sum of a partially separable smooth convex function and a simple separable
+convex function. The theoretical speedup, as compared to the serial method, and
+referring to the number of iterations needed to approximately solve the problem
+with high probability, is a simple expression depending on the number of
+parallel processors and a natural and easily computable measure of separability
+of the smooth component of the objective function. In the worst case, when no
+degree of separability is present, there may be no speedup; in the best case,
+when the problem is separable, the speedup is equal to the number of
+processors. Our analysis also works in the mode when the number of blocks being
+updated at each iteration is random, which allows for modeling situations with
+busy or unreliable processors. We show that our algorithm is able to solve a
+LASSO problem involving a matrix with 20 billion nonzeros in 2 hours on a large
+memory node with 24 cores.

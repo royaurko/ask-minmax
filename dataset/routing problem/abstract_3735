@@ -1,0 +1,13 @@
+We address the slow convergence and poor stability of quasi-newton sequential
+quadratic programming (SQP) methods that is observed when solving experimental
+design problems, in particular when they are large. Our findings suggest that
+this behavior is due to the fact that these problems often have bad absolute
+condition numbers. To shed light onto the structure of the problem close to the
+solution, we formulate a model problem (based on the $A$-criterion), that is
+defined in terms of a given initial design that is to be improved. We prove
+that the absolute condition number of the model problem grows without bounds as
+the quality of the initial design improves. Additionally, we devise a
+preconditioner that ensures that the condition number will instead stay
+uniformly bounded. Using numerical experiments, we study the effect of this
+reformulation on relevant cases of the general problem, and find that it leads
+to significant improvements in stability and convergence behavior.

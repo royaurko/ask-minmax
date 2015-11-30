@@ -1,0 +1,21 @@
+Probabilistic generative modeling of data distributions can potentially
+exploit hidden information which is useful for discriminative classification.
+This observation has motivated the development of approaches that couple
+generative and discriminative models for classification. In this paper, we
+propose a new approach to couple generative and discriminative models in an
+unified framework based on PAC-Bayes risk theory. We first derive the
+model-parameter-independent stochastic feature mapping from a practical MAP
+classifier operating on generative models. Then we construct a linear
+stochastic classifier equipped with the feature mapping, and derive the
+explicit PAC-Bayes risk bounds for such classifier for both supervised and
+semi-supervised learning. Minimizing the risk bound, using an EM-like iterative
+procedure, results in a new posterior over hidden variables (E-step) and the
+update rules of model parameters (M-step). The derivation of the posterior is
+always feasible due to the way of equipping feature mapping and the explicit
+form of bounding risk. The derived posterior allows the tuning of generative
+models and subsequently the feature mappings for better classification. The
+derived update rules of the model parameters are same to those of the uncoupled
+models as the feature mapping is model-parameter-independent. Our experiments
+show that the coupling between data modeling generative model and the
+discriminative classifier via a stochastic feature mapping in this framework
+leads to a general classification tool with state-of-the-art performance.

@@ -1,0 +1,24 @@
+Contour tracking in adverse environments is a challenging problem due to
+cluttered background, illumination variation, occlusion, and noise, among
+others. This paper presents a robust contour tracking method by contributing to
+some of the key issues involved, including (a) a region functional formulation
+and its optimization; (b) design of a robust and effective feature; and (c)
+development of an integrated tracking algorithm. First, we formulate a region
+functional based on robust Earth Mover's distance (EMD) with kernel density for
+distribution modeling, and propose a two-phase method for its optimization. In
+the first phase, letting the candidate contour be fixed, we express EMD as the
+transportation problem and solve it by the simplex algorithm. Next, using the
+theory of shape derivative, we make a perturbation analysis of the contour
+around the best solution to the transportation problem. This leads to a partial
+differential equation (PDE) that governs the contour evolution. Second, we
+design a novel and effective feature for tracking applications. We propose a
+dimensionality reduction method by tensor decomposition, achieving a
+low-dimensional description of SIFT features called Tensor-SIFT for
+characterizing local image region properties. Applicable to both color and
+gray-level images, Tensor-SIFT is very distinctive, insensitive to illumination
+changes, and noise. Finally, we develop an integrated algorithm that combines
+various techniques of the simplex algorithm, narrow-band level set and fast
+marching algorithms. Particularly, we introduce an inter-frame initialization
+method and a stopping criterion for the termination of PDE iteration.
+Experiments in challenging image sequences show that the proposed work has
+promising performance.

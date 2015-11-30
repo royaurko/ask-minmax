@@ -1,0 +1,22 @@
+We consider the problem of locating a facility on a network, represented by a
+graph. A set of strategic agents have different ideal locations for the
+facility; the cost of an agent is the distance between its ideal location and
+the facility. A mechanism maps the locations reported by the agents to the
+location of the facility. Specifically, we are interested in social choice
+mechanisms that do not utilize payments. We wish to design mechanisms that are
+strategyproof, in the sense that agents can never benefit by lying, or, even
+better, group strategyproof, in the sense that a coalition of agents cannot all
+benefit by lying. At the same time, our mechanisms must provide a small
+approximation ratio with respect to one of two optimization targets: the social
+cost or the maximum cost.
+  We give an almost complete characterization of the feasible truthful
+approximation ratio under both target functions, deterministic and randomized
+mechanisms, and with respect to different network topologies. Our main results
+are: We show that a simple randomized mechanism is group strategyproof and
+gives a (2-2/n)-approximation for the social cost, where n is the number of
+agents, when the network is a circle (known as a ring in the case of computer
+networks); we design a novel "hybrid" strategyproof randomized mechanism that
+provides a tight approximation ratio of 3/2 for the maximum cost when the
+network is a circle; and we show that no randomized SP mechanism can provide an
+approximation ratio better than 2-o(1) to the maximum cost even when the
+network is a tree, thereby matching a trivial upper bound of two.

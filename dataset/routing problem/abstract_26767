@@ -1,0 +1,12 @@
+We study the question of closeness testing for two discrete distributions.
+More precisely, given samples from two distributions $p$ and $q$ over an
+$n$-element set, we wish to distinguish whether $p=q$ versus $p$ is at least
+$\eps$-far from $q$, in either $\ell_1$ or $\ell_2$ distance. Batu et al. gave
+the first sub-linear time algorithms for these problems, which matched the
+lower bounds of Valiant up to a logarithmic factor in $n$, and a polynomial
+factor of $\eps.$
+  In this work, we present simple (and new) testers for both the $\ell_1$ and
+$\ell_2$ settings, with sample complexity that is information-theoretically
+optimal, to constant factors, both in the dependence on $n$, and the dependence
+on $\eps$; for the $\ell_1$ testing problem we establish that the sample
+complexity is $\Theta(\max\{n^{2/3}/\eps^{4/3}, n^{1/2}/\eps^2 \}).$

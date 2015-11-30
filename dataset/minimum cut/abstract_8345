@@ -1,0 +1,26 @@
+Large spectroscopic surveys such as the Gaia-ESO Survey produce huge
+quantities of data. Automatic tools are necessary to efficiently handle this
+material. The measurement of equivalent widths in stellar spectra is
+traditionally done by hand or with semi-automatic procedures that are
+time-consuming and not very robust with respect to the repeatability of the
+results. The program DAOSPEC is a tool that provides consistent measurements of
+equivalent widths in stellar spectra while requiring a minimum of user
+intervention. However, it is not optimised to deal with large batches of
+spectra, as some parameters still need to be modified and checked by the user.
+Exploiting the versatility and portability of BASH, we have built a pipeline
+called DAOSPEC Option Optimiser (DOOp) automating the procedure of equivalent
+widths measurement with DAOSPEC. DOOp is organised in different modules that
+run one after the other to perform specific tasks, taking care of the
+optimisation of the parameters needed to provide the final equivalent widths,
+and providing log files to ensure better control over the procedure. In this
+paper, making use of synthetic and observed spectra, we compare the performance
+of DOOp with other methods, including DAOSPEC used manually. The measurements
+made by DOOp are identical to the ones produced by DAOSPEC when used manually,
+while requiring less user intervention, which is convenient when dealing with a
+large quantity of spectra. DOOp shows its best performance on high-resolution
+spectra (R>20 000) and high signal-to-noise ratio (S/N>30), with uncertainties
+ranging from 6 m{\AA} to 2 m{\AA}. The only subjective parameter that remains
+is the normalisation, as the user still has to make a choice on the order of
+the polynomial used for the continuum fitting. As a test, we use the equivalent
+widths measured by DOOp to re-derive the stellar parameters of four
+well-studied stars.

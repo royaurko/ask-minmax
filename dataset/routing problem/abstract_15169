@@ -1,0 +1,23 @@
+In many scientific and engineering applications, one has to solve not one but
+a sequence of instances of the same problem. Often times, the problems in the
+sequence are linked in a way that allows intermediate results to be reused. A
+characteristic example for this class of applications is given by the
+Genome-Wide Association Studies (GWAS), a widely spread tool in computational
+biology. GWAS entails the solution of up to trillions ($10^{12}$) of correlated
+generalized least-squares problems, posing a daunting challenge: the
+performance of petaflops ($10^{15}$ floating-point operations) over terabytes
+of data.
+  In this paper, we design an algorithm for performing GWAS on multi-core
+architectures. This is accomplished in three steps. First, we show how to
+exploit the relation among successive problems, thus reducing the overall
+computational complexity. Then, through an analysis of the required data
+transfers, we identify how to eliminate any overhead due to input/output
+operations. Finally, we study how to decompose computation into tasks to be
+distributed among the available cores, to attain high performance and
+scalability. With our algorithm, a GWAS that currently requires the use of a
+supercomputer may now be performed in matter of hours on a single multi-core
+node.
+  The discussion centers around the methodology to develop the algorithm rather
+than the specific application. We believe the paper contributes valuable
+guidelines of general applicability for computational scientists on how to
+develop and optimize numerical algorithms.

@@ -1,0 +1,15 @@
+Forwarding decisions in classical IP-based networks are determined by
+routing. This is necessary to avoid loops, inhibiting opportunities to
+implement an adaptive and intelligent forwarding plane. Therefore content
+distribution efficiency is reduced due to a lack of inherent multi-path
+transmission. In Named Data Networking (NDN) instead, routing shall hold a
+supporting role to forwarding, providing sufficient potential to enhance
+content dissemination at the forwarding plane. In this paper we design,
+implement, and evaluate a novel probability-based forwarding strategy, called
+Stochastic Adaptive Forwarding (SAF) for NDN. By extensive simulations we show
+that our approach outperforms existing forwarding strategies in terms of the
+request satisfaction ratio. This is achieved by extensive utilization of NDN's
+multipath and content-lookup capabilities without relying on the routing plane.
+SAF explores the local environment by redirecting requests that are likely to
+be dropped. This allows to identify new paths to the content origin or cached
+replicas to circumvent link failures and resource shortages.

@@ -1,0 +1,18 @@
+Classifying network traffic according to their application-layer protocols is
+an important task in modern networks for traffic management and network
+security. Existing payload-based or statistical methods of application
+identification cannot meet the demand of both high performance and accurate
+identification at the same time. We propose an application identification
+framework that classifies traffic at aggregate-flow level leveraging
+aggregate-flow cache. A detailed traffic classifier designed based on this
+framework is illustrated to improve the throughput of payload-based
+identification methods. We further optimize the classifier by proposing an
+efficient design of aggregate-flow cache. The cache design employs a
+frequency-based, recency-aware replacement algorithm based on the analysis of
+temporal locality of aggregate-flow cache. Experiments on real-world traces
+show that our traffic classifier with aggregate-flow cache can reduce up to 95%
+workload of backend identification engine. The proposed cache replacement
+algorithm outperforms well-known replacement algorithms, and achieves 90% of
+the optimal performance using only 15% of memory. The throughput of a
+payload-based identification system, L7-filter [1], is increased by up to 5.1
+times by using our traffic classifier design.

@@ -1,0 +1,12 @@
+A low storage algorithm for constructing isogenies between ordinary elliptic
+curves was proposed by Galbraith, Hess and Smart (GHS). We give an improvement
+of this algorithm by modifying the pseudorandom walk so that lower-degree
+isogenies are used more frequently. This is motivated by the fact that high
+degree isogenies are slower to compute than low degree ones. We analyse the
+running time of the parallel collision search algorithm when the partitioning
+is uneven. We also give experimental results. We conclude that our algorithm is
+around 14 times faster than the GHS algorithm when constructing horizontal
+isogenies between random isogenous elliptic curves over a 160-bit prime field.
+  The results apply to generic adding walks and the more general group action
+inverse problem; a speed-up is obtained whenever the cost of computing edges in
+the graph varies significantly.

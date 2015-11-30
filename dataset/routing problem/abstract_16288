@@ -1,0 +1,15 @@
+Given a k-uniform hypergraph on n vertices, partitioned in k equal parts such
+that every hyperedge includes one vertex from each part, the k-dimensional
+matching problem asks whether there is a disjoint collection of the hyperedges
+which covers all vertices. We show it can be solved by a randomized polynomial
+space algorithm in time O*(2^(n(k-2)/k)). The O*() notation hides factors
+polynomial in n and k.
+  When we drop the partition constraint and permit arbitrary hyperedges of
+cardinality k, we obtain the exact cover by k-sets problem. We show it can be
+solved by a randomized polynomial space algorithm in time O*(c_k^n), where
+c_3=1.496, c_4=1.642, c_5=1.721, and provide a general bound for larger k.
+  Both results substantially improve on the previous best algorithms for these
+problems, especially for small k, and follow from the new observation that
+Lovasz' perfect matching detection via determinants (1979) admits an embedding
+in the recently proposed inclusion-exclusion counting scheme for set covers,
+despite its inability to count the perfect matchings.

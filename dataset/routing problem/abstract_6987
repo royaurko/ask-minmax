@@ -1,0 +1,9 @@
+We present a finite-difference scheme which solves the Stokes problem in the
+presence of curvilinear non-conforming interfaces and provides second-order
+accuracy on physical field (velocity, vorticity) and especially on pressure.
+The gist of our method is to rely on the Helmholtz decomposition of the Stokes
+equation: the pressure problem is then written in an integral form devoid of
+the spurious sources known to be the cause of numerical boundary layer error in
+most implementations, leading to a discretization which guarantees a strict
+enforcement of mass conservation. The ghost method is furthermore used to
+implement the boundary values of pressure and vorticity near curved interfaces.

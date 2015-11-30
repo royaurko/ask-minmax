@@ -1,0 +1,12 @@
+In this paper, we give efficient algorithms and lower bounds for solving the
+heavy hitters problem while preserving differential privacy in the fully
+distributed local model. In this model, there are n parties, each of which
+possesses a single element from a universe of size N. The heavy hitters problem
+is to find the identity of the most common element shared amongst the n
+parties. In the local model, there is no trusted database administrator, and so
+the algorithm must interact with each of the $n$ parties separately, using a
+differentially private protocol. We give tight information-theoretic upper and
+lower bounds on the accuracy to which this problem can be solved in the local
+model (giving a separation between the local model and the more common
+centralized model of privacy), as well as computationally efficient algorithms
+even in the case where the data universe N may be exponentially large.

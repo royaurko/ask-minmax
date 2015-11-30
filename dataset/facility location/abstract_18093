@@ -1,0 +1,18 @@
+The scan statistic is by far the most popular method for anomaly detection,
+being popular in syndromic surveillance, signal and image processing, and
+target detection based on sensor networks, among other applications. The use of
+the scan statistics in such settings yields an hypotheses testing procedure,
+where the null hypothesis corresponds to the absence of anomalous behavior. If
+the null distribution is known, then calibration of a scan-based test is
+relatively easy, as it can be done by Monte-Carlo simulation. When the null
+distribution is unknown, it is not clear what the best way to proceed is. We
+propose two procedures. One is a calibration by permutation and the other is a
+rank-based scan test, which is distribution-free and less sensitive to
+outliers. Furthermore, the rank-scan test requires only a one-time calibration
+for a given data size making it computationally more appealing. In both cases,
+we quantify the performance loss with respect to an oracle scan test that knows
+the null distribution, and show one incurs only a very small loss in the
+context of a natural exponential family. These results include the classical
+normal location model, as well as Poisson model popular in syndromic
+surveillance. We perform numerical experiments on simulated data further
+supporting our theory, and also experiments with a real dataset from genomics.

@@ -1,0 +1,15 @@
+Workloads that comb through vast amounts of data are gaining importance in
+the sciences. These workloads consist of "needle in a haystack" queries that
+are long running and data intensive so that query throughput limits
+performance. To maximize throughput for data-intensive queries, we put forth
+LifeRaft: a query processing system that batches queries with overlapping data
+requirements. Rather than scheduling queries in arrival order, LifeRaft
+executes queries concurrently against an ordering of the data that maximizes
+data sharing among queries. This decreases I/O and increases cache utility.
+However, such batch processing can increase query response time by starving
+interactive workloads. LifeRaft addresses starvation using techniques inspired
+by head scheduling in disk drives. Depending upon the workload saturation and
+queuing times, the system adaptively and incrementally trades-off processing
+queries in arrival order and data-driven batch processing. Evaluating LifeRaft
+in the SkyQuery federation of astronomy databases reveals a two-fold
+improvement in query throughput.

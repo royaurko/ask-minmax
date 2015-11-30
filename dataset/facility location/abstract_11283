@@ -1,0 +1,13 @@
+We propose an adaptive independent Metropolis--Hastings algorithm with the
+ability to learn from all previous proposals in the chain except the current
+location. It is an extension of the independent Metropolis--Hastings algorithm.
+Convergence is proved provided a strong Doeblin condition is satisfied, which
+essentially requires that all the proposal functions have uniformly heavier
+tails than the stationary distribution. The proof also holds if proposals
+depending on the current state are used intermittently, provided the
+information from these iterations is not used for adaption. The algorithm gives
+samples from the exact distribution within a finite number of iterations with
+probability arbitrarily close to 1. The algorithm is particularly useful when a
+large number of samples from the same distribution is necessary, like in
+Bayesian estimation, and in CPU intensive applications like, for example, in
+inverse problems and optimization.

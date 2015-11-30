@@ -1,0 +1,18 @@
+Let $A$ be a sequence of $n \geq 0$ real numbers. A subsequence of $A$ is a
+sequence of contiguous elements of $A$. A \emph{maximum scoring subsequence} of
+$A$ is a subsequence with largest sum of its elements, which can be found in
+O(n) time by Kadane's dynamic programming algorithm. We consider in this paper
+two problems involving maximal scoring subsequences of a sequence. Both of
+these problems arise in the context of buffer memory minimization in computer
+networks. The first one, which is called {\sc Insertion in a Sequence with
+Scores (ISS)}, consists in inserting a given real number $x$ in $A$ in such a
+way to minimize the sum of a maximum scoring subsequence of the resulting
+sequence, which can be easily done in $O(n^2)$ time by successively applying
+Kadane's algorithm to compute the maximum scoring subsequence of the resulting
+sequence corresponding to each possible insertion position for $x$. We show in
+this paper that the ISS problem can be solved in linear time and space with a
+more specialized algorithm. The second problem we consider in this paper is the
+{\sc Sorting a Sequence by Scores (SSS)} one, stated as follows: find a
+permutation $A'$ of $A$ that minimizes the sum of a maximum scoring
+subsequence. We show that the SSS problem is strongly NP-Hard and give a
+2-approximation algorithm for it.

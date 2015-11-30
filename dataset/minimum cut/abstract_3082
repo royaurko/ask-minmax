@@ -1,0 +1,21 @@
+Given a set of vertices $S=\{v_1,v_2,...,v_k\}$ of a connected graph $G$, the
+metric representation of a vertex $v$ of $G$ with respect to $S$ is the vector
+$r(v|S)=(d(v,v_1),d(v,v_2),...,d(v,v_k))$, where $d(v,v_i)$, $i\in \{1,...,k\}$
+denotes the distance between $v$ and $v_i$. $S$ is a resolving set of $G$ if
+for every pair of vertices $u,v$ of $G$, $r(u|S)\ne r(v|S)$. The metric
+dimension $dim(G)$ of $G$ is the minimum cardinality of any resolving set of
+$G$. Given an ordered partition $\Pi =\{P_1,P_2, ...,P_t\}$ of vertices of a
+connected graph $G$, the partition representation of a vertex $v$ of $G$, with
+respect to the partition $\Pi$ is the vector
+$r(v|\Pi)=(d(v,P_1),d(v,P_2),...,d(v,P_t))$, where $d(v,P_i)$, $1\leq i\leq t$,
+represents the distance between the vertex $v$ and the set $P_i$, that is
+$d(v,P_i)=\min_{u\in P_i}\{d(v,u)\}$. $\Pi$ is a resolving partition for $G$ if
+for every pair of vertices $u,v$ of $G$, $r(u|\Pi)\ne r(v|\Pi)$. The partition
+dimension $pd(G)$ of $G$ is the minimum number of sets in any resolving
+partition for $G$. Let $G$ and $H$ be two graphs of order $n_1$ and $n_2$
+respectively. The corona product $G\odot H$ is defined as the graph obtained
+from $G$ and $H$ by taking one copy of $G$ and $n_1$ copies of $H$ and then
+joining by an edge, all the vertices from the $i^{th}$-copy of $H$ with the
+$i^{th}$-vertex of $G$. Here we study the relationship between $pd(G\odot H)$
+and several parameters of the graphs $G\odot H$, $G$ and $H$, including
+$dim(G\odot H)$, $pd(G)$ and $pd(H)$.

@@ -1,0 +1,25 @@
+By the Riemann-mapping theorem, one can bijectively map the interior of an
+$n$-gon $P$ to that of another $n$-gon $Q$ conformally. However, (the boundary
+extension of) this mapping need not necessarily map the vertices of $P$ to
+those $Q$. In this case, one wants to find the ``best" mapping between these
+polygons, i.e., one that minimizes the maximum angle distortion (the
+dilatation) over \textit{all} points in $P$. From complex analysis such maps
+are known to exist and are unique. They are called extremal quasiconformal
+maps, or Teichm\"{u}ller maps.
+  Although there are many efficient ways to compute or approximate conformal
+maps, there is currently no such algorithm for extremal quasiconformal maps.
+This paper studies the problem of computing extremal quasiconformal maps both
+in the continuous and discrete settings.
+  We provide the first constructive method to obtain the extremal
+quasiconformal map in the continuous setting. Our construction is via an
+iterative procedure that is proven to converge quickly to the unique extremal
+map. To get to within $\epsilon$ of the dilatation of the extremal map, our
+method uses $O(1/\epsilon^{4})$ iterations. Every step of the iteration
+involves convex optimization and solving differential equations, and guarantees
+a decrease in the dilatation. Our method uses a reduction of the polygon
+mapping problem to that of the punctured sphere problem, thus solving a more
+general problem.
+  We also discretize our procedure. We provide evidence for the fact that the
+discrete procedure closely follows the continuous construction and is therefore
+expected to converge quickly to a good approximation of the extremal
+quasiconformal map.

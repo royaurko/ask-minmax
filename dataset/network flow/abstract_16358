@@ -1,0 +1,25 @@
+The finite element simulation of dynamic wetting phenomena, requiring the
+computation of flow in a domain confined by intersecting a liquid-fluid free
+surface and a liquid-solid interface, with the three-phase contact line moving
+across the solid, is considered. For this class of flows, different finite
+element method (FEM) implementations have been proposed in the literature and
+these are seen to produce apparently contradictory results. The purpose of this
+paper is to develop a robust framework for the FEM simulation of these flows
+and then, by performing numerical experiments, provide guidelines for future
+investigations. In the new framework, the boundary conditions on the
+liquid-solid interface are implemented in a methodologically similar way to
+those on the free surface so that the equations at the contact line, where the
+interfaces meet, are applied without any ad-hoc alterations. The new
+implementation removes the need for complex rotations of the momentum
+equations, usually required to apply boundary conditions normal and tangent to
+the solid surface. The developed code allows the convergence of the solution to
+be studied as the spatial resolution of the computational mesh is varied over
+many orders of magnitude. This makes it possible to provide practical
+recommendations on the spatial resolution required by a numerical scheme for a
+given set of non-dimensional similarity parameters. Furthermore, one can
+examine various implementations used in the literature and evaluate their
+performance. Finally, it is shown how the framework may be generalized to
+account for additional physical effects, such as gradients in surface tensions.
+A user-friendly step-by-step guide specifying the entire implementation and
+allowing the reader to easily reproduce all presented results is provided in
+the Appendix.

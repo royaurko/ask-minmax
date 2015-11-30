@@ -1,0 +1,23 @@
+We consider a secure source coding problem with a rate-limited helper. In
+particular, Alice observes an independent and identically distributed (i.i.d.)
+source X and wishes to transmit this source losslessly to Bob over a
+rate-limited link. A helper (Helen), observes an i.i.d. correlated source Y and
+can transmit information to Bob over a separate rate-limited link. A passive
+eavesdropper (Eve) can observe the coded output of Alice, i.e., the link from
+Alice to Bob is public. The uncertainty about the source X at Eve, is measured
+by the conditional entropy of the source given the coded output of Alice. We
+completely characterize the rate-equivocation region for this secure source
+coding model, where we show that Slepian-Wolf binning of X with respect to the
+coded side information received at Bob is optimal. We next consider a
+modification of this model in which Alice also has access to the coded output
+of Helen. For the two-sided helper model, we characterize the rate-equivocation
+region. While the availability of side information at Alice does not reduce the
+rate of transmission from Alice, it significantly enhances the resulting
+equivocation at Eve. In particular, the resulting equivocation for the
+two-sided helper case is shown to be min(H(X),R_y), i.e., one bit from the
+two-sided helper provides one bit of uncertainty at Eve. From this result, we
+infer that Slepian-Wolf binning of X is suboptimal and one can further decrease
+the information leakage to the eavesdropper by utilizing the side information
+at Alice. We finally generalize these results to the case in which there is
+additional un-coded side information W available at Bob and characterize the
+rate-equivocation regions under the assumption that Y-X-W forms a Markov chain.

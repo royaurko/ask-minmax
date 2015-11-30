@@ -1,0 +1,18 @@
+A flow of moving agents can be observed at different scales. Thus, in traffic
+modeling, three levels are generally considered: the micro, meso and macro
+levels, representing respectively the interactions between vehicles, groups of
+vehicles sharing common properties (such as a common destination or a common
+localization) and flows of vehicles. Each approach is useful in a given
+context: micro and meso models allow to simulate road networks with complex
+topologies such as urban area, while macro models allow to develop control
+strategies to prevent congestion in highways. However, to simulate large-scale
+road networks, it can be interesting to integrate different representations,
+e.g., micro and macro, in a single model. Existing models share the same
+limitation: connections between levels are fixed a priori and cannot be changed
+at runtime. Therefore, to be able to observe some emerging phenomena such as
+congestion formation or to find the exact location of a jam in a large macro
+section, a dynamic hybrid modeling approach is needed. In 2013 we started the
+development of a multi-level agent-based simulator called JAM-FREE within the
+ISART project. It allows to simulate large road networks efficiently using a
+dynamic level of detail. This simulator relies on a multi-level agent-based
+modeling framework called SIMILAR.

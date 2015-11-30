@@ -1,0 +1,17 @@
+The Lp regression problem takes as input a matrix $A \in \Real^{n \times d}$,
+a vector $b \in \Real^n$, and a number $p \in [1,\infty)$, and it returns as
+output a number ${\cal Z}$ and a vector $x_{opt} \in \Real^d$ such that ${\cal
+Z} = \min_{x \in \Real^d} ||Ax -b||_p = ||Ax_{opt}-b||_p$. In this paper, we
+construct coresets and obtain an efficient two-stage sampling-based
+approximation algorithm for the very overconstrained ($n \gg d$) version of
+this classical problem, for all $p \in [1, \infty)$. The first stage of our
+algorithm non-uniformly samples $\hat{r}_1 = O(36^p d^{\max\{p/2+1, p\}+1})$
+rows of $A$ and the corresponding elements of $b$, and then it solves the Lp
+regression problem on the sample; we prove this is an 8-approximation. The
+second stage of our algorithm uses the output of the first stage to resample
+$\hat{r}_1/\epsilon^2$ constraints, and then it solves the Lp regression
+problem on the new sample; we prove this is a $(1+\epsilon)$-approximation. Our
+algorithm unifies, improves upon, and extends the existing algorithms for
+special cases of Lp regression, namely $p = 1,2$. In course of proving our
+result, we develop two concepts--well-conditioned bases and subspace-preserving
+sampling--that are of independent interest.

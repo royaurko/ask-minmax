@@ -1,0 +1,18 @@
+In this paper, we propose sparse coding-based approaches for segmentation of
+tumor regions from MR images. Sparse coding with data-adapted dictionaries has
+been successfully employed in several image recovery and vision problems. The
+proposed approaches obtain sparse codes for each pixel in brain magnetic
+resonance images considering their intensity values and location information.
+Since it is trivial to obtain pixel-wise sparse codes, and combining multiple
+features in the sparse coding setup is not straightforward, we propose to
+perform sparse coding in a high-dimensional feature space where non-linear
+similarities can be effectively modeled. We use the training data from
+expert-segmented images to obtain kernel dictionaries with the kernel K-lines
+clustering procedure. For a test image, sparse codes are computed with these
+kernel dictionaries, and they are used to identify the tumor regions. This
+approach is completely automated, and does not require user intervention to
+initialize the tumor regions in a test image. Furthermore, a low complexity
+segmentation approach based on kernel sparse codes, which allows the user to
+initialize the tumor region, is also presented. Results obtained with both the
+proposed approaches are validated against manual segmentation by an expert
+radiologist, and the proposed methods lead to accurate tumor identification.

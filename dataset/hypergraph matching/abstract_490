@@ -1,0 +1,9 @@
+Regular expression patterns are a key feature of document processing
+languages like Perl and XDuce. It is in this context that the first and longest
+match policies have been proposed to disambiguate the pattern matching process.
+We formally define a matching semantics with these policies and show that the
+generally accepted method of simulating longest match by first match and
+recursion is incorrect. We continue by solving the associated type inference
+problem, which consists in calculating for every subexpression the set of words
+the subexpression can still match when these policies are in effect, and show
+how this algorithm can be used to efficiently implement the matching process.

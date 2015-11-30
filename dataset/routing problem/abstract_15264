@@ -1,0 +1,17 @@
+This paper considers a single-hop wireless network where a central node (or
+fusion center, FC) collects data from a set of m energy harvesting (EH) nodes
+(e.g. nodes of a wireless sensor network). In each time slot, k of m nodes can
+be scheduled by the FC for transmission over k orthogonal channels. FC has no
+knowledge about EH processes and current battery states of nodes; however, it
+knows outcomes of previous transmission attempts. The objective is to find a
+low complexity scheduling policy that maximizes total throughput of the data
+backlogged system using the harvested energy, for all types (uniform,
+non-uniform, independent, correlated (i.e. Markovian), etc.) EH processes.
+Energy is assumed to be stored losslessly in the nodes batteries, up to a
+storage capacity (the infinite capacity case is also considered.) The problem
+is treated in finite and infinite problem horizons. A low-complexity policy,
+UROP (Uniformizing Random Ordered Policy) is proposed, whose near optimality is
+shown. Numerical examples indicate that under a reasonable-sized battery
+capacity, UROP uses the arriving energy with almost perfect efficiency. As the
+problem is a restless multi-armed bandit (RMAB) problem with an average reward
+criterion, UROP may have a wider application area than communication networks.

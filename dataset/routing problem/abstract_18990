@@ -1,0 +1,21 @@
+Many least squares problems involve affine equality and inequality
+constraints. Although there are variety of methods for solving such problems,
+most statisticians find constrained estimation challenging. The current paper
+proposes a new path following algorithm for quadratic programming based on
+exact penalization. Similar penalties arise in $l_1$ regularization in model
+selection. Classical penalty methods solve a sequence of unconstrained problems
+that put greater and greater stress on meeting the constraints. In the limit as
+the penalty constant tends to $\infty$, one recovers the constrained solution.
+In the exact penalty method, squared penalties are replaced by absolute value
+penalties, and the solution is recovered for a finite value of the penalty
+constant. The exact path following method starts at the unconstrained solution
+and follows the solution path as the penalty constant increases. In the
+process, the solution path hits, slides along, and exits from the various
+constraints. Path following in lasso penalized regression, in contrast, starts
+with a large value of the penalty constant and works its way downward. In both
+settings, inspection of the entire solution path is revealing. Just as with the
+lasso and generalized lasso, it is possible to plot the effective degrees of
+freedom along the solution path. For a strictly convex quadratic program, the
+exact penalty algorithm can be framed entirely in terms of the sweep operator
+of regression analysis. A few well chosen examples illustrate the mechanics and
+potential of path following.

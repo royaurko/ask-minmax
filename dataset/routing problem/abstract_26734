@@ -1,0 +1,13 @@
+This paper aims at finding a subclass of DTDs that covers many of the
+real-world DTDs while offering a polynomial-time complexity for deciding the
+XPath satisfiability problem. In our previous work, we proposed RW-DTDs, which
+cover most of the real-world DTDs (26 out of 27 real-world DTDs and 1406 out of
+1407 DTD rules). However, under RW-DTDs, XPath satisfiability with only child,
+descendant-or-self, and sibling axes is tractable. In this paper, we propose
+MRW-DTDs, which are slightly smaller than RW-DTDs but have tractability on
+XPath satisfiability with parent axes or qualifiers. MRW-DTDs are a proper
+superclass of duplicate-free DTDs proposed by Montazerian et al., and cover 24
+out of the 27 real-world DTDs and 1403 out of the 1407 DTD rules. Under
+MRW-DTDs, we show that XPath satisfiability problems with (1) child, parent,
+and sibling axes, and (2) child and sibling axes and qualifiers are both
+tractable, which are known to be intractable under RW-DTDs.

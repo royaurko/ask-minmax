@@ -1,0 +1,19 @@
+Though high redundancy rate of a tight frame can improve performance in
+applications, as the dimension increases, it also makes the computational cost
+skyrocket and the storage of frame coefficients increase exponentially. This
+seriously restricts the usefulness of such tight frames for problems in
+moderately high dimensions such as video processing in dimension three.
+Inspired by the directional tensor product complex tight framelets ${TP-CTF}_m$
+with $m\ge 3$ in [14,18] and their impressive performance for image processing
+in [18,30] in this paper we introduce a directional tensor product complex
+tight framelet ${TP-CTF}^!_6$ (called reduced ${TP-CTF}_6$) with low
+redundancy. Such ${TP-CTF}_6^!$ is a particular example of tight framelet
+filter banks with mixed sampling factors. The ${TP-CTF}^!_6$ in $d$ dimensions
+not only offers good directionality but also has the low redundancy rate
+$\frac{3^d-1}{2^d-1}$ (e.g., the redundancy rates are $2,
+2\mathord{\frac{2}{3}}, 3\mathord{\frac{5}{7}}, 5\mathord{\frac{1}{3}}$ and
+$7\mathord{\frac{25}{31}}$ for dimension $d=1,..., 5$, respectively). Moreover,
+our numerical experiments on image/video denoising and inpainting show that the
+performance using our proposed ${TP-CTF}^!_6$ is often comparable or sometimes
+better than several state-of-the-art frame-based methods which have much higher
+redundancy rates than that of ${TPCTF}^!_6$.

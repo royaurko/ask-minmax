@@ -1,0 +1,9 @@
+Motivated by the observation that FIFO-based push-relabel algorithms are able
+to outperform highest label-based variants on modern, large maximum flow
+problem instances, we introduce an efficient implementation of the algorithm
+that uses coarse-grained parallelism to avoid the problems of existing parallel
+approaches. We demonstrate good relative and absolute speedups of our algorithm
+on a set of large graph instances taken from real-world applications. On a
+modern 40-core machine, our parallel implementation outperforms existing
+sequential implementations by up to a factor of 12 and other parallel
+implementations by factors of up to 3.

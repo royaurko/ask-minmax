@@ -1,0 +1,18 @@
+In this paper, we consider the following inverse maintenance problem: given
+$A \in \mathbb{R}^{n\times d}$ and a number of rounds $r$, we receive a
+$n\times n$ diagonal matrix $D^{(k)}$ at round $k$ and we wish to maintain an
+efficient linear system solver for $A^{T}D^{(k)}A$ under the assumption
+$D^{(k)}$ does not change too rapidly. This inverse maintenance problem is the
+computational bottleneck in solving multiple optimization problems. We show how
+to solve this problem in amortized $\tilde{O}(nnz(A)+d^{2})$ time per round,
+improving upon previous running times for solving this problem.
+  Consequently, we obtain the fastest known running times for solving multiple
+problems including, linear programming, computing a rounding of a polytope, and
+sampling a point in a polytope. In particular given a feasible point in a
+linear program with $d$ variables, $n$ constraints, and constraint matrix
+$A\in\mathbb{R}^{n\times d}$, we show how to solve the linear program in time
+$\tilde{O}(nnz(A)+d^{2})\sqrt{d}\log(\epsilon^{-1}))$. We achieve our results
+through a novel combination of classic numerical techniques of low rank update,
+preconditioning, and fast matrix multiplication as well as recent work on
+subspace embeddings and spectral sparsification that we hope will be of
+independent interest.

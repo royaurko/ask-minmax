@@ -1,0 +1,23 @@
+Discrete numerical methods with finite time-steps represent a practical
+technique to solve initial-value problems involving nonlinear differential
+equations. These methods seem particularly useful to the study of chaos since
+no analytical chaotic solution is currently available. Using the well-known
+Lorenz equations as an example, it is demonstrated that numerically computed
+results and their associated statistical properties are time-step dependent.
+There are two reasons for this behavior. First, chaotic differential equations
+are unstable so that any small error is amplified exponentially near an
+unstable manifold. The more serious and lesser-known reason is that stable and
+unstable manifolds of singular points associated with differential equations
+can form virtual separatrices. The existence of a virtual separatrix presents
+the possibility of a computed trajectory actually jumping through it due to the
+finite time-steps of discrete numerical methods. Such behavior violates the
+uniqueness theory of differential equations and amplifies the numerical errors
+explosively. These reasons imply that, even if computed results are bounded,
+their independence on time-step should be established before accepting them as
+useful numerical approximations to the true solution of the differential
+equations. However, due to these exponential and explosive amplifications of
+numerical errors, no computed chaotic solutions of differential equations
+independent of integration-time step have been found. Thus, reports of computed
+non-periodic solutions of chaotic differential equations are simply
+consequences of unstably amplified truncation errors, and are not approximate
+solutions of the associated differential equations.

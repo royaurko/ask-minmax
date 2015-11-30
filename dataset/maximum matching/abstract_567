@@ -1,0 +1,21 @@
+In many mobile visual analysis applications, compressed video is transmitted
+over a communication network and analyzed by a server. Typical processing steps
+performed at the server include keypoint detection, descriptor calculation, and
+feature matching. Video compression has been shown to have an adverse effect on
+feature matching performance. The negative impact of compression can be reduced
+by using the keypoints extracted from uncompressed video for descriptor
+calculation from the compressed video. Based on this observation, we propose to
+signal the keypoints as side information to the server and to extract only the
+descriptors from the compressed video. First, we introduce four different frame
+types for keypoint encoding considering different types of changes in the video
+content. These frame types represent new scenes, the same scene, a slowly
+changing scene, and a fast moving scene, respectively, and are determined by
+comparing features between successive video frames. Then, we propose Intra, P,
+and Skip modes to encode the keypoints for different frame types. For example,
+keypoints for new scenes are encoded with Intra mode, and keypoints for
+unchanged scenes are skipped. As a result, the bitrate of the side information
+for keypoint encoding is significantly reduced. Finally, we perform pairwise
+matching and image retrieval to evaluate the performance of the proposed
+approach using the Stanford mobile augmented reality dataset. Results show that
+the proposed approach significantly improves the feature matching performance
+at a given bitrate.

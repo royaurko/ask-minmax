@@ -1,0 +1,23 @@
+A central theme in distributed network algorithms concerns understanding and
+coping with the issue of locality. Inspired by sequential complexity theory, we
+focus on a complexity theory for distributed decision problems. In the context
+of locality, solving a decision problem requires the processors to
+independently inspect their local neighborhoods and then collectively decide
+whether a given global input instance belongs to some specified language. This
+paper introduces several classes of distributed decision problems, proves
+separation among them and presents some complete problems. More specifically,
+we consider the standard LOCAL model of computation and define LD (for local
+decision) as the class of decision problems that can be solved in constant
+number of communication rounds. We first study the intriguing question of
+whether randomization helps in local distributed computing, and to what extent.
+Specifically, we define the corresponding randomized class BPLD, and ask
+whether LD=BPLD. We provide a partial answer to this question by showing that
+in many cases, randomization does not help for deciding hereditary languages.
+In addition, we define the notion of local many-one reductions, and introduce
+the (nondeterministic) class NLD of decision problems for which there exists a
+certificate that can be verified in constant number of communication rounds. We
+prove that there exists an NLD-complete problem. We also show that there exist
+problems not in NLD. On the other hand, we prove that the class NLD#n, which is
+NLD assuming that each processor can access an oracle that provides the number
+of nodes in the network, contains all (decidable) languages. For this class we
+provide a natural complete problem as well.

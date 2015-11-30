@@ -1,0 +1,23 @@
+In meteorological and oceanological studies the classical approach for
+finding the numerical solution of the regional model consists in formulating
+and solving the Cauchy-Dirichlet problem. The related boundary conditions are
+obtained by linear interpolation of data available on a coarse grid (global
+data), to the boundary of regional model. Errors, in boundary conditions,
+appearing owing to linear interpolation may lead to increasing errors in
+numerical solution during integration. The methods developed to reduce these
+errors deal with continuous dynamic assimilation of known global data available
+inside the regional domain. Essentially, this assimilation procedure performs a
+nudging of large-scale component of regional model solution to large-scale
+global data component by introducing the relaxation forcing terms into the
+regional model equations. As a result, the obtained solution is not a valid
+numerical solution of the original regional model. In this work we propose the
+optimization approach which is free from the above-mentioned shortcoming. The
+formulation of the joint problem of finding the regional model solution and
+data assimilation, as a PDE-constrained optimization problem, gives the
+possibility to obtain the exact numerical solution of the regional model. Three
+simple model examples (ODE Burgers equation, Rossby-Oboukhov equation,
+Korteweg-de Vries equation) were considered in this paper. The result of
+performed numerical experiments indicates that the optimization approach can
+significantly improve the precision of the sought numerical solution, even in
+the cases in which the solution of Cauchy-Dirichlet problem is very sensitive
+to the errors in the boundary condition.

@@ -1,0 +1,24 @@
+Existing standard protocols for the web and Internet telephony fail to
+deliver real-time interactive communication from within a web browser. In
+particular, the client-server web protocol over reliable TCP is not always
+suitable for end-to-end low latency media path needed for interactive voice and
+video communication. To solve this, we compare the available platform options
+using the existing technologies such as modifying the web programming language
+and protocol, using an existing web browser plugin, and a separate host
+resident application that the web browser can talk to. We argue that using a
+separate application as an adaptor is a promising short term as well as
+long-term strategy for voice and video communications on the web. Our project
+aims at developing the open technology and sample implementations for web-based
+real-time voice and video communication applications. We describe the
+architecture of our project including (1) a RESTful web communication API over
+HTTP inspired by SIP message flows, (2) a web-friendly set of metadata for
+session description, and (3) an UDP-based end-to-end media path. All other
+telephony functions reside in the web application itself and/or in web feature
+servers. The adaptor approach allows us to easily add new voice and video
+codecs and NAT traversal technologies such as Host Identity Protocol. We want
+to make web-based communication accessible to millions of web developers,
+maximize the end user experience and security, and preserve the huge global
+investment in and experience from SIP systems while adhering to web standards
+and development tools as much as possible. We have created an open source
+prototype that allows you to freely use the conference application by directing
+a browser to the conference URL.

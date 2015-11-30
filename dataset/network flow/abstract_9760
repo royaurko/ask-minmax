@@ -1,0 +1,16 @@
+Methods from convex optimization such as accelerated gradient descent are
+widely used as building blocks for deep learning algorithms. However, the
+reasons for their empirical success are unclear, since neural networks are not
+convex and standard guarantees do not apply. This paper develops the first
+rigorous link between online convex optimization and error backpropagation on
+convolutional networks. The first step is to introduce circadian games, a mild
+generalization of convex games with similar convergence properties. The main
+result is that error backpropagation on a convolutional network is equivalent
+to playing out a circadian game. It follows immediately that the waking-regret
+of players in the game (the units in the neural network) controls the overall
+rate of convergence of the network. Finally, we explore some implications of
+the results: (i) we describe the representations learned by a neural network
+game-theoretically; (ii) propose a learning setting at the level of individual
+units that can be plugged into deep architectures; and (iii) propose a new
+approach to adaptive model selection by applying bandit algorithms to choose
+which players to wake on each round.

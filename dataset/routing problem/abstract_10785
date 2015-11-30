@@ -1,0 +1,21 @@
+This work is devoted to the study of a posteriori error estimation and
+adaptivity in parabolic problems with a particular focus on spatial
+discontinuous Galerkin (dG) discretisations.
+  We begin by deriving an a posteriori error estimator for a linear
+non-stationary convection-diffusion problem that is discretised with a backward
+Euler dG method. An adaptive algorithm is then proposed to utilise the error
+estimator. The effectiveness of both the error estimator and the proposed
+algorithm is shown through a series of numerical experiments.
+  Moving on to nonlinear problems, we investigate the numerical approximation
+of blow-up. To begin this study, we first look at the numerical approximation
+of blow-up in nonlinear ODEs through standard time stepping schemes. We then
+derive an a posteriori error estimator for an implicit-explicit (IMEX) dG
+discretisation of a semilinear parabolic PDE with quadratic nonlinearity. An
+adaptive algorithm is proposed that uses the error estimator to approach the
+blow-up time. The adaptive algorithm is then applied in a series of test cases
+to gauge the effectiveness of the error estimator.
+  Finally, we consider the adaptive numerical approximation of a nonlinear
+interface problem that is used to model the mass transfer of solutes through
+semi-permiable membranes. An a posteriori error estimator is proposed for the
+IMEX dG discretisation of the model and its effectiveness tested through a
+series of numerical experiments.

@@ -1,0 +1,14 @@
+We present and analyze an efficient implementation of an iteratively
+reweighted least squares algorithm for recovering a matrix from a small number
+of linear measurements. The algorithm is designed for the simultaneous
+promotion of both a minimal nuclear norm and an approximatively low-rank
+solution. Under the assumption that the linear measurements fulfill a suitable
+generalization of the Null Space Property known in the context of compressed
+sensing, the algorithm is guaranteed to recover iteratively any matrix with an
+error of the order of the best k-rank approximation. In certain relevant cases,
+for instance for the matrix completion problem, our version of this algorithm
+can take advantage of the Woodbury matrix identity, which allows to expedite
+the solution of the least squares problems required at each iteration. We
+present numerical experiments that confirm the robustness of the algorithm for
+the solution of matrix completion problems, and demonstrate its competitiveness
+with respect to other techniques proposed recently in the literature.

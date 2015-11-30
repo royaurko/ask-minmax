@@ -1,0 +1,20 @@
+The efficiency of minimum-energy configuration searching algorithms is
+closely linked to the energy landscape structure of complex systems. Here we
+characterize this structure by following the time evolution of two systems,
+vacancy aggregation in Fe and energy relaxation in ion-bombarded c-Si, using
+the kinetic Activation-Relaxation Technique (k-ART), an off-lattice kinetic
+Monte Carlo (KMC) method, and the well-known Bell-Evans-Polanyi (BEP)
+principle. We also compare the efficiency of two methods for handling
+non-diffusive flickering states -- an exact solution and a Tabu-like approach
+that blocks already visited states. Comparing these various simulations allow
+us to confirm that the BEP principle does not hold for complex system since
+forward and reverse energy barriers are completely uncorrelated. This means
+that following the lowest available energy barrier, even after removing the
+flickering states, leads to rapid trapping: relaxing complex systems requires
+crossing high-energy barriers in order to access new energy basins, in
+agreement with the recently proposed replenish-and-relax model [B\'eland et
+al., PRL 111, 105502 (2013)] This can be done by forcing the system through
+these barriers with Tabu-like methods. Interestingly, we find that following
+the fundamental kinetics of a system, though standard KMC approach, is at least
+as efficient as these brute-force methods while providing the correct kinetics
+information.

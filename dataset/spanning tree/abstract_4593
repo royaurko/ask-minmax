@@ -1,0 +1,16 @@
+Let $T$ be a finite tree graph, $T^N$ be the Cartesian power graph of $T$,
+and $d^N$ be the graph distance metric on $T^N$. Also let \[ \mathbb S_r^N(x)
+:= \{v \in T^N: d^N(x,v) = r\} \] be the sphere of radius $r$ centered at $x$
+and $M$ be the spherical maximal averaging operator on $T^N$ given by \[ Mf(x)
+:= \sup_{\substack{r \geq 0 \\ \mathbb S_r^N(x) \neq \emptyset}}
+\frac{1}{|\mathbb S_r^N(x)|} |\sum_{\mathbb S_r^N(x)} f(y)|. \] We will show
+that for any fixed $1 \leq p \leq \infty$, the $L^p$ operator norm of $M$, i.e.
+\[ \|M\|_p := \sup_{\|f\|_p = 1} \|Mf\|_p, \] grows exponentially in the
+dimension $N$. In particular, if $r$ is the probability that a random vertex of
+$T$ is a leaf, then $\|M\|_p \geq r^{-N/p}$, although this is not a sharp
+bound.
+  This exponential growth phenomenon extends to a class of graphs strictly
+larger than trees, which we will call \emph{global antipode graphs}. This
+growth result stands in contrast to the work of Greenblatt, Harrow, Kolla,
+Krause, and Schulman that proved that the spherical maximal $L^p$ bounds (for
+$p > 1$) are dimension-independent for finite cliques.

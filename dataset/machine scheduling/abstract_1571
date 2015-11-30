@@ -1,0 +1,20 @@
+An instance-weighted variant of the support vector machine (SVM) has
+attracted considerable attention recently since they are useful in various
+machine learning tasks such as non-stationary data analysis, heteroscedastic
+data modeling, transfer learning, learning to rank, and transduction. An
+important challenge in these scenarios is to overcome the computational
+bottleneck---instance weights often change dynamically or adaptively, and thus
+the weighted SVM solutions must be repeatedly computed. In this paper, we
+develop an algorithm that can efficiently and exactly update the weighted SVM
+solutions for arbitrary change of instance weights. Technically, this
+contribution can be regarded as an extension of the conventional solution-path
+algorithm for a single regularization parameter to multiple instance-weight
+parameters. However, this extension gives rise to a significant problem that
+breakpoints (at which the solution path turns) have to be identified in
+high-dimensional space. To facilitate this, we introduce a parametric
+representation of instance weights. We also provide a geometric interpretation
+in weight space using a notion of critical region: a polyhedron in which the
+current affine solution remains to be optimal. Then we find breakpoints at
+intersections of the solution path and boundaries of polyhedrons. Through
+extensive experiments on various practical applications, we demonstrate the
+usefulness of the proposed algorithm.

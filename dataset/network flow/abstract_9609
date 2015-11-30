@@ -1,0 +1,10 @@
+Predictably sharing the network is critical to achieving high utilization in
+the datacenter. Past work has focussed on providing bandwidth to endpoints, but
+often we want to allocate resources among multi-node services. In this paper,
+we present Parley, which provides service-centric minimum bandwidth guarantees,
+which can be composed hierarchically. Parley also supports service-centric
+weighted sharing of bandwidth in excess of these guarantees. Further, we show
+how to configure these policies so services can get low latencies even at high
+network load. We evaluate Parley on a multi-tiered oversubscribed network
+connecting 90 machines, each with a 10Gb/s network interface, and demonstrate
+that Parley is able to meet its goals.

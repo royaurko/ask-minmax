@@ -1,0 +1,21 @@
+We consider concurrent games played on graphs. At every round of the game,
+each player simultaneously and independently selects a move; the moves jointly
+determine the transition to a successor state. Two basic objectives are the
+safety objective: ``stay forever in a set F of states'', and its dual, the
+reachability objective, ``reach a set R of states''. We present in this paper a
+strategy improvement algorithm for computing the value of a concurrent safety
+game, that is, the maximal probability with which player 1 can enforce the
+safety objective. The algorithm yields a sequence of player-1 strategies which
+ensure probabilities of winning that converge monotonically to the value of the
+safety game.
+  The significance of the result is twofold. First, while strategy improvement
+algorithms were known for Markov decision processes and turn-based games, as
+well as for concurrent reachability games, this is the first strategy
+improvement algorithm for concurrent safety games. Second, and most
+importantly, the improvement algorithm provides a way to approximate the value
+of a concurrent safety game from below (the known value-iteration algorithms
+approximate the value from above). Thus, when used together with
+value-iteration algorithms, or with strategy improvement algorithms for
+reachability games, our algorithm leads to the first practical algorithm for
+computing converging upper and lower bounds for the value of reachability and
+safety games.

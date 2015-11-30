@@ -1,0 +1,17 @@
+Detecting outliers which are grossly different from or inconsistent with the
+remaining dataset is a major challenge in real-world KDD applications. Existing
+outlier detection methods are ineffective on scattered real-world datasets due
+to implicit data patterns and parameter setting issues. We define a novel
+"Local Distance-based Outlier Factor" (LDOF) to measure the {outlier-ness} of
+objects in scattered datasets which addresses these issues. LDOF uses the
+relative location of an object to its neighbours to determine the degree to
+which the object deviates from its neighbourhood. Properties of LDOF are
+theoretically analysed including LDOF's lower bound and its false-detection
+probability, as well as parameter settings. In order to facilitate parameter
+settings in real-world applications, we employ a top-n technique in our outlier
+detection approach, where only the objects with the highest LDOF values are
+regarded as outliers. Compared to conventional approaches (such as top-n KNN
+and top-n LOF), our method top-n LDOF is more effective at detecting outliers
+in scattered data. It is also easier to set parameters, since its performance
+is relatively stable over a large range of parameter values, as illustrated by
+experimental results on both real-world and synthetic datasets.

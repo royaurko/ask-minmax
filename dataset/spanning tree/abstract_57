@@ -1,0 +1,26 @@
+In the classical (min-cost) Steiner tree problem, we are given an
+edge-weighted undirected graph and a set of terminal nodes. The goal is to
+compute a min-cost tree S which spans all terminals. In this paper we consider
+the min-power version of the problem, which is better suited for wireless
+applications. Here, the goal is to minimize the total power consumption of
+nodes, where the power of a node v is the maximum cost of any edge of S
+incident to v. Intuitively, nodes are antennas (part of which are terminals
+that we need to connect) and edge costs define the power to connect their
+endpoints via bidirectional links (so as to support protocols with ack
+messages). Differently from its min-cost counterpart, min-power Steiner tree is
+NP-hard even in the spanning tree case, i.e. when all nodes are terminals.
+Since the power of any tree is within once and twice its cost, computing a rho
+\leq ln(4)+eps [Byrka et al.'10] approximate min-cost Steiner tree provides a
+2rho<2.78 approximation for the problem. For min-power spanning tree the same
+approach provides a 2 approximation, which was improved to 5/3+eps with a
+non-trivial approach in [Althaus et al.'06]. Here we present an improved
+approximation algorithm for min-power Steiner tree. Our result is based on two
+main ingredients. We prove the first decomposition theorem for min-power
+Steiner tree, in the spirit of analogous structural results for min-cost
+Steiner tree and min-power spanning tree. Based on this theorem, we define a
+proper LP relaxation, that we exploit within the iterative randomized rounding
+framework in [Byrka et al.'10]. A careful analysis provides a 3ln
+4-9/4+eps<1.91 approximation factor. The same approach gives an improved
+1.5+eps approximation for min-power spanning tree as well, matching the
+approximation factor in [Nutov and Yaroshevitch'09] for the special case of
+min-power spanning tree with edge weights in {0,1}.

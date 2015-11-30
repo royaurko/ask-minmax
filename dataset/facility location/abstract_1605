@@ -1,0 +1,15 @@
+Embedded systems contain several layers of target processing abstraction.
+These layers include electronic circuit, binary machine code, mnemonic assembly
+code, and high-level procedural and object-oriented abstractions. Physical and
+temporal constraints and artifacts within physically embedded systems make it
+impossible for software engineers to operate at a single layer of processor
+abstraction. The Luxdbg embedded system debugger exposes these layers to
+debugger users, and it adds an additional layer, the extension language layer,
+that allows users to extend both the debugger and its target processor
+capabilities. Tcl is Luxdbg's extension language. Luxdbg users can apply Tcl to
+automate interactive debugging steps, to redirect and to interconnect target
+processor input-output facilities, to schedule multiple processor execution, to
+log and to react to target processing exceptions, and to automate target system
+testing. Inclusion of an extension language like Tcl in a debugger promises
+additional advantages for distributed debugging, where debuggers can pass
+extension language expressions across computer networks.

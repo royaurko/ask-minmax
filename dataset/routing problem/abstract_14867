@@ -1,0 +1,17 @@
+We settle the question of tight thresholds for offline cuckoo hashing. The
+problem can be stated as follows: we have n keys to be hashed into m buckets
+each capable of holding a single key. Each key has k >= 3 (distinct) associated
+buckets chosen uniformly at random and independently of the choices of other
+keys. A hash table can be constructed successfully if each key can be placed
+into one of its buckets. We seek thresholds alpha_k such that, as n goes to
+infinity, if n/m <= alpha for some alpha < alpha_k then a hash table can be
+constructed successfully with high probability, and if n/m >= alpha for some
+alpha > alpha_k a hash table cannot be constructed successfully with high
+probability. Here we are considering the offline version of the problem, where
+all keys and hash values are given, so the problem is equivalent to previous
+models of multiple-choice hashing. We find the thresholds for all values of k >
+2 by showing that they are in fact the same as the previously known thresholds
+for the random k-XORSAT problem. We then extend these results to the setting
+where keys can have differing number of choices, and provide evidence in the
+form of an algorithm for a conjecture extending this result to cuckoo hash
+tables that store multiple keys in a bucket.

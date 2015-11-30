@@ -1,0 +1,16 @@
+We introduce a new method to efficiently approximate the number of infections
+resulting from a given initially-infected node in a network of susceptible
+individuals. Our approach is based on counting the number of possible infection
+walks of various lengths to each other node in the network. We analytically
+study the properties of our method, in particular demonstrating different forms
+for SIS and SIR disease spreading (e.g. under the SIR model our method counts
+self-avoiding walks). In comparison to existing methods to infer the spreading
+efficiency of different nodes in the network (based on degree, k-shell
+decomposition analysis and different centrality measures), our method directly
+considers the spreading process and, as such, is unique in providing estimation
+of actual numbers of infections. Crucially, in simulating infections on various
+real-world networks with the SIR model, we show that our walks-based method
+improves the inference of effectiveness of nodes over a wide range of infection
+rates compared to existing methods. We also analyse the trade-off between
+estimate accuracy and computational cost, showing that the better accuracy here
+can still be obtained at a comparable computational cost to other methods.

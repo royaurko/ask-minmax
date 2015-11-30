@@ -1,0 +1,16 @@
+Motivated by the effectiveness of correlation attacks against Tor, the
+censorship arms race, and observations of malicious relays in Tor, we propose
+that Tor users capture their trust in network elements using probability
+distributions over the sets of elements observed by network adversaries. We
+present a modular system that allows users to efficiently and conveniently
+create such distributions and use them to improve their security. The major
+components of this system are (i) an ontology of network-element types that
+represents the main threats to and vulnerabilities of anonymous communication
+over Tor, (ii) a formal language that allows users to naturally express trust
+beliefs about network elements, and (iii) a conversion procedure that takes the
+ontology, public information about the network, and user beliefs written in the
+trust language and produce a Bayesian Belief Network that represents the
+probability distribution in a way that is concise and easily sampleable. We
+also present preliminary experimental results that show the distribution
+produced by our system can improve security when employed by users; further
+improvement is seen when the system is employed by both users and services.

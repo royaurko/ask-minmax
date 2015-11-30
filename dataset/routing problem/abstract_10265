@@ -1,0 +1,11 @@
+Pre-training of input layers has shown to be efficient for learning deep
+architectures, solving the vanishing gradient issues. In this paper, we propose
+to extend the use of pre-training to output layers in order to address
+structured output problems, which are characterized by internal dependencies
+between the outputs (e.g. the classes of pixels in an image labeling problem).
+Whereas the output structure is generally modeled using graphical models, we
+propose a fully neural-based model called IODA (Input Output Deep Architecture)
+that learns both input and output dependencies. We apply IODA on facial
+landmark detection problems where the output is a strongly structured
+regression vector. We evaluate IODA on two public challenging datasets: LFPW
+and HELEN. We show that IODA outperforms the traditional pre-training approach.

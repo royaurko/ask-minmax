@@ -1,0 +1,22 @@
+Detecting on a graph the presence of the minimum number of nodes (target set)
+that will be able to "activate" a prescribed number of vertices in the graph is
+called the target set selection problem (TSS) proposed by Kempe, Kleinberg, and
+Tardos. In TSS's settings, nodes have two possible states (active or
+non-active) and the threshold triggering the activation of a node is given by
+the number of its active neighbors. Dealing with fault tolerance in a majority
+based system the two possible states are used to denote faulty or non-faulty
+nodes, and the threshold is given by the state of the majority of neighbors.
+Here, the major effort was in determining the distribution of initial faults
+leading the entire system to a faulty behavior. Such an activation pattern,
+also known as dynamic monopoly (or shortly dynamo), was introduced by Peleg in
+1996. In this paper we extend the TSS problem's settings by representing nodes'
+states with a "multicolored" set. The extended version of the problem can be
+described as follows: let G be a simple connected graph where every node is
+assigned a color from a finite ordered set C = {1, . . ., k} of colors. At each
+local time step, each node can recolor itself, depending on the local
+configurations, with the color held by the majority of its neighbors. Given G,
+we study the initial distributions of colors leading the system to a k
+monochromatic configuration in toroidal meshes, focusing on the minimum number
+of initial k-colored nodes. We find upper and lower bounds to the size of a
+dynamo, and then special classes of dynamos, outlined by means of a new
+approach based on recoloring patterns, are characterized.

@@ -1,0 +1,24 @@
+The smoothed analysis of algorithms is concerned with the expected running
+time of an algorithm under slight random perturbations of arbitrary inputs.
+Spielman and Teng proved that the shadow-vertex simplex method has polynomial
+smoothed complexity. On a slight random perturbation of an arbitrary linear
+program, the simplex method finds the solution after a walk on polytope(s) with
+expected length polynomial in the number of constraints n, the number of
+variables d and the inverse standard deviation of the perturbation 1/sigma.
+  We show that the length of walk in the simplex method is actually
+polylogarithmic in the number of constraints n. Spielman-Teng's bound on the
+walk was O(n^{86} d^{55} sigma^{-30}), up to logarithmic factors. We improve
+this to O(log^7 n (d^9 + d^3 \s^{-4})). This shows that the tight Hirsch
+conjecture n-d on the length of walk on polytopes is not a limitation for the
+smoothed Linear Programming. Random perturbations create short paths between
+vertices.
+  We propose a randomized phase-I for solving arbitrary linear programs, which
+is of independent interest. Instead of finding a vertex of a feasible set, we
+add a vertex at random to the feasible set. This does not affect the solution
+of the linear program with constant probability. This overcomes one of the
+major difficulties of smoothed analysis of the simplex method -- one can now
+statistically decouple the walk from the smoothed linear program. This yields a
+much better reduction of the smoothed complexity to a geometric quantity -- the
+size of planar sections of random polytopes. We also improve upon the known
+estimates for that size, showing that it is polylogarithmic in the number of
+vertices.

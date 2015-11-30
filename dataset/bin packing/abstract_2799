@@ -1,0 +1,25 @@
+Let $\bk=(k_1,...,k_n)$ be a sequence of $n$ integers. For an increasing
+monotone graph property $\mP$ we say that a base graph $G=([n],E)$ is
+\emph{$\bk$-resilient} with respect to $\mP$ if for every subgraph $H\subseteq
+G$ such that $d_H(i)\leq k_i$ for every $1\leq i\leq n$ the graph $G-H$
+possesses $\mP$. This notion naturally extends the idea of the \emph{local
+resilience} of graphs recently initiated by Sudakov and Vu. In this paper we
+study the $\bk$-resilience of a typical graph from $\GNP$ with respect to the
+Hamiltonicity property where we let $p$ range over all values for which the
+base graph is expected to be Hamiltonian. In particular, we prove that for
+every $\epsilon>0$ and $p\geq\frac{\ln n+\ln\ln n +\omega(1)}{n}$ if a graph is
+sampled from $\GNP$ then with high probability removing from each vertex of
+"small" degree all incident edges but two and from any other vertex at most a
+$(\frac{1}{3}-\epsilon)$-fraction of the incident edges will result in a
+Hamiltonian graph.
+  Considering this generalized approach to the notion of resilience allows to
+establish several corollaries which improve on the best known bounds of
+Hamiltonicity related questions. It implies that for every positive
+$\epsilon>0$ and large enough values of $K$, if $p>\frac{K\ln n}{n}$ then with
+high probability the local resilience of $\GNP$ with respect to being
+Hamiltonian is at least $(1-\epsilon)np/3$, improving on the previous bound for
+this range of $p$. Another implication is a result on optimal packing of edge
+disjoint Hamilton cycles in a random graph. We prove that if
+$p\leq\frac{1.02\ln n}{n}$ then with high probability a graph $G$ sampled from
+$\GNP$ contains $\lfloor\frac{\delta(G)}{2}\rfloor$ edge disjoint Hamilton
+cycles, extending the previous range of $p$ for which this was known to hold.

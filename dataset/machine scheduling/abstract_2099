@@ -1,0 +1,15 @@
+We present a new record on computing specific bits of Pi, the mathematical
+constant, and discuss performing such computations on Apache Hadoop clusters.
+The specific bits represented in hexadecimal are 0E6C1294 AED40403 F56D2D76
+4026265B CA98511D 0FCFFAA1 0F4D28B1 BB5392B8. These 256 bits end at the
+2,000,000,000,000,252nd bit position, which doubles the position and quadruples
+the precision of the previous known record. The position of the first bit is
+1,999,999,999,999,997 and the value of the two quadrillionth bit is 0. The
+computation is carried out by a MapReduce program called DistBbp. To
+effectively utilize available cluster resources without monopolizing the whole
+cluster, we develop an elastic computation framework that automatically
+schedules computation slices, each a DistBbp job, as either map-side or
+reduce-side computation based on changing cluster load condition. We have
+calculated Pi at varying bit positions and precisions, and one of the largest
+computations took 23 days of wall clock time and 503 years of CPU time on a
+1000-node cluster.

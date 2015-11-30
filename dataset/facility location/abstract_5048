@@ -1,0 +1,16 @@
+Fuel moisture has a major influence on the behavior of wildland fires and is
+an important underlying factor in fire risk assessment. We propose a method to
+assimilate dead fuel moisture content observations from remote automated
+weather stations (RAWS) into a time-lag fuel moisture model. RAWS are spatially
+sparse and a mechanism is needed to estimate fuel moisture content at locations
+potentially distant from observational stations. This is arranged using a trend
+surface model (TSM), which allows us to account for the effects of topography
+and atmospheric state on the spatial variability of fuel moisture content. At
+each location of interest, the TSM provides a pseudo-observation, which is
+assimilated via Kalman filtering. The method is tested with the time-lag fuel
+moisture model in the coupled weather-fire code WRF-SFIRE on 10-hr fuel
+moisture content observations from Colorado RAWS in 2013. We show using
+leave-one-out testing that the TSM compares favorably with inverse squared
+distance interpolation as used in the Wildland Fire Assessment System. Finally,
+we demonstrate that the data assimilation method is able to improve fuel
+moisture content estimates in unobserved fuel classes.

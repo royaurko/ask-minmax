@@ -1,0 +1,16 @@
+We address high dimensional covariance estimation for elliptical distributed
+samples, which are also known as spherically invariant random vectors (SIRV) or
+compound-Gaussian processes. Specifically we consider shrinkage methods that
+are suitable for high dimensional problems with a small number of samples
+(large $p$ small $n$). We start from a classical robust covariance estimator
+[Tyler(1987)], which is distribution-free within the family of elliptical
+distribution but inapplicable when $n<p$. Using a shrinkage coefficient, we
+regularize Tyler's fixed point iterations. We prove that, for all $n$ and $p$,
+the proposed fixed point iterations converge to a unique limit regardless of
+the initial condition. Next, we propose a simple, closed-form and data
+dependent choice for the shrinkage coefficient, which is based on a minimum
+mean squared error framework. Simulations demonstrate that the proposed method
+achieves low estimation error and is robust to heavy-tailed samples. Finally,
+as a real world application we demonstrate the performance of the proposed
+technique in the context of activity/intrusion detection using a wireless
+sensor network.

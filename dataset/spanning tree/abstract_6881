@@ -1,0 +1,12 @@
+We present a novel lossless universal source coding algorithm that uses
+parallel computational units to increase the throughput. The length-$N$ input
+sequence is partitioned into $B$ blocks. Processing each block independently of
+the other blocks can accelerate the computation by a factor of $B$, but
+degrades the compression quality. Instead, our approach is to first estimate
+the minimum description length (MDL) source underlying the entire input, and
+then encode each of the $B$ blocks in parallel based on the MDL source. With
+this two-pass approach, the compression loss incurred by using more parallel
+units is insignificant. Our algorithm is work-efficient, i.e., its
+computational complexity is $O(N/B)$. Its redundancy is approximately
+$B\log(N/B)$ bits above Rissanen's lower bound on universal coding performance,
+with respect to any tree source whose maximal depth is at most $\log(N/B)$.

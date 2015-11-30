@@ -1,0 +1,14 @@
+In this work we study optimization problems subject to a failure constraint.
+This constraint is expressed in terms of a condition that causes failure,
+representing a physical or technical breakdown. We formulate the problem in
+terms of a probability constraint, where the level of "confidence" is a
+modelling parameter and has the interpretation that the probability of failure
+should not exceed that level. Application of the stochastic Arrow-Hurwicz
+algorithm poses two difficulties: one is structural and arises from the lack of
+convexity of the probability constraint, and the other is the estimation of the
+gradient of the probability constraint. We develop two gradient estimators with
+decreasing bias via a convolution method and a finite difference technique,
+respectively, and we provide a full analysis of convergence of the algorithms.
+Convergence results are used to tune the parameters of the numerical algorithms
+in order to achieve best convergence rates, and numerical results are included
+via an example of application in finance.

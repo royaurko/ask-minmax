@@ -1,0 +1,17 @@
+k-means has recently been recognized as one of the best algorithms for
+clustering unsupervised data. Since k-means depends mainly on distance
+calculation between all data points and the centers, the time cost will be high
+when the size of the dataset is large (for example more than 500millions of
+points). We propose a two stage algorithm to reduce the time cost of distance
+calculation for huge datasets. The first stage is a fast distance calculation
+using only a small portion of the data to produce the best possible location of
+the centers. The second stage is a slow distance calculation in which the
+initial centers used are taken from the first stage. The fast and slow stages
+represent the speed of the movement of the centers. In the slow stage, the
+whole dataset can be used to get the exact location of the centers. The time
+cost of the distance calculation for the fast stage is very low due to the
+small size of the training data chosen. The time cost of the distance
+calculation for the slow stage is also minimized due to small number of
+iterations. Different initial locations of the clusters have been used during
+the test of the proposed algorithms. For large datasets, experiments show that
+the 2-stage clustering method achieves better speed-up (1-9 times).

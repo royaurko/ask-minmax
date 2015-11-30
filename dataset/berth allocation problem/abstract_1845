@@ -1,0 +1,26 @@
+Many inverse problems have to deal with complex, evolving and often not
+exactly known geometries, e.g. as domains of forward problems modeled by
+partial differential equations. This makes it desirable to use methods which
+are robust with respect to perturbed or not well resolved domains, and which
+allow for efficient discretizations not resolving any fine detail of those
+geometries. For forward problems in partial differential equations methods
+based on diffuse interface representations gained strong attention in the last
+years, but so far they have not been considered systematically for inverse
+problems. In this work we introduce a diffuse domain method as a tool for the
+solution of variational inverse problems. As a particular example we study ECG
+inversion in further detail. ECG inversion is a linear inverse source problem
+with boundary measurements governed by an anisotropic diffusion equation, which
+naturally cries for solutions under changing geometries, namely the beating
+heart.
+  We formulate a regularization strategy using Tikhonov regularization and,
+using standard source conditions, we prove convergence rates. A special
+property of our approach is that not only operator perturbations are introduced
+by the diffuse domain method, but more important we have to deal with
+topologies which depend on a parameter $\eps$ in the diffuse domain method,
+i.e. we have to deal with $\eps$-dependent forward operators and
+$\eps$-dependent norms. In particular the appropriate function spaces for the
+unknown and the data depend on $\eps$. This prevents to apply some standard
+convergence techniques for inverse problems, in particular interpreting the
+perturbations as data errors in the original problem does not yield suitable
+results. We consequently develop a novel approach based on saddle-point
+problems.

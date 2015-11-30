@@ -1,0 +1,21 @@
+In this paper, an efficient three-dimensional lattice Boltzmann (LB) model
+with multiple-relaxation-time (MRT) collision operator is developed for the
+simulation of multiphase flows. This model is an extension of our previous
+two-dimensional model (H. Liang, B. C. Shi, Z. L. Guo, and Z. H. Chai, Phys.
+Rev. E. 89, 053320 (2014)) to the three dimensions using the D3Q7 (seven
+discrete velocities in three dimensions) lattice for the Chan-Hilliard equation
+(CHE) and the D3Q15 lattice for the Navier-Stokes equations (NSEs). Due to the
+smaller lattice-velocity numbers used, the computional efficiency can be
+significantly improved in simulating real three-dimensional flows, and
+simultaneously the present model can recover to the CHE and NSEs correctly
+through the chapman-Enskog procedure. We compare the present MRT model with the
+single-relaxation-time model and the previous three-dimensional LB model using
+two benchmark interface-tracking problems, and numerical results show that the
+present MRT model can achieve a significant improvement in the accuracy and
+stability of the interface capturing. The developed model is also able to deal
+with multiphase fluids with very low viscosities due to the using of the MRT
+collision model, which is demonstrated by the simulation of the classical
+Rayleigh-Taylor instability at various Reynolds numbers. The maximum Reynolds
+number considered in this work reaches up to $4000$, which is larger than those
+of almost previous simulations. It is found that the instabilty induces a more
+complex structure of the interface at a high Reynolds number.

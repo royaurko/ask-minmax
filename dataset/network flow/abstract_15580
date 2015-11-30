@@ -1,0 +1,14 @@
+We present a deep layered architecture that generalizes classical
+convolutional neural networks (ConvNets). The architecture, called SimNets, is
+driven by two operators, one being a similarity function whose family contains
+the convolution operator used in ConvNets, and the other is a new soft
+max-min-mean operator called MEX that realizes classical operators like ReLU
+and max pooling, but has additional capabilities that make SimNets a powerful
+generalization of ConvNets. Three interesting properties emerge from the
+architecture: (i) the basic input to hidden layer to output machinery contains
+as special cases kernel machines with the Exponential and Generalized Gaussian
+kernels, the output units being "neurons in feature space" (ii) in its general
+form, the basic machinery has a higher abstraction level than kernel machines,
+and (iii) initializing networks using unsupervised learning is natural.
+Experiments demonstrate the capability of achieving state of the art accuracy
+with networks that are an order of magnitude smaller than comparable ConvNets.

@@ -1,0 +1,19 @@
+In this work we present the implementation of generators for W and Z bosons
+in association with two jets interfaced to parton showers using the POWHEG BOX.
+We incorporate matrix elements from the parton-level Monte Carlo program MCFM
+in the POWHEG BOX, allowing for a considerable improvement in speed compared to
+previous implementations. We address certain problems that arise when processes
+that are singular at the Born level are implemented in a shower framework using
+either a generation cut or a Born suppression factor to yield weighted events.
+In such a case, events with very large weights can be generated after the
+shower through a number of mechanisms. Events with very small transverse
+momentum at the Born level can develop large transverse momentum either after
+the hardest emission, after the shower, or after the inclusion of multi-parton
+interactions. We present a solution to this problem that can be easily
+implemented in the POWHEG BOX. We also show that a full solution to this
+problem can only be achieved if the generator maintains physical validity also
+when the transverse momentum of the emitted partons becomes unresolved. One
+such scheme is the recently-proposed MiNLO method for the choice of scale and
+the exponentiation of Sudakov form factors in NLO computations. We present a
+validation study of our generators, by comparing their output to available LHC
+data.

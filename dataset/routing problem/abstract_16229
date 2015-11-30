@@ -1,0 +1,12 @@
+The ``state-of-the-art'' in Length Limited Huffman Coding algorithms is the
+$\Theta(ND)$-time, $\Theta(N)$-space one of Hirschberg and Larmore, where $D\le
+N$ is the length restriction on the code. This is a very clever, very problem
+specific, technique. In this note we show that there is a simple
+Dynamic-Programming (DP) method that solves the problem with the same time and
+space bounds. The fact that there was an $\Theta(ND)$ time DP algorithm was
+previously known; it is a straightforward DP with the Monge property (which
+permits an order of magnitude speedup). It was not interesting, though, because
+it also required $\Theta(ND)$ space. The main result of this paper is the
+technique developed for reducing the space. It is quite simple and applicable
+to many other problems modeled by DPs with the Monge property. We illustrate
+this with examples from web-proxy design and wireless mobile paging.

@@ -1,0 +1,24 @@
+Random walks on expander graphs were thoroughly studied, with the important
+motivation that, under some natural conditions, these walks mix quickly and
+provide an efficient method of sampling the vertices of a graph. Alon,
+Benjamini, Lubetzky and Sodin studied non-backtracking random walks on regular
+graphs, and showed that their mixing rate may be up to twice as fast as that of
+the simple random walk. As an application, they showed that the maximal number
+of visits to a vertex, made by a non-backtracking random walk of length $n$ on
+a high-girth $n$-vertex regular expander, is typically $(1+o(1))\frac{\log
+n}{\log\log n}$, as in the case of the balls and bins experiment. They further
+asked whether one can establish the precise distribution of the visits such a
+walk makes.
+  In this work, we answer the above question by combining a generalized form of
+Brun's sieve with some extensions of the ideas in Alon et al. Let $N_t$ denote
+the number of vertices visited precisely $t$ times by a non-backtracking random
+walk of length $n$ on a regular $n$-vertex expander of fixed degree and girth
+$g$. We prove that if $g=\omega(1)$, then for any fixed $t$, $N_t/n$ is
+typically $\frac{1}{\mathrm{e}t!}+o(1)$. Furthermore, if $g=\Omega(\log\log
+n)$, then $N_t/n$ is typically $\frac{1+o(1)}{\mathrm{e}t!}$ uniformly on all
+$t \leq (1-o(1))\frac{\log n}{\log\log n}$ and 0 for all $t \geq
+(1+o(1))\frac{\log n}{\log\log n}$. In particular, we obtain the above result
+on the typical maximal number of visits to a single vertex, with an improved
+threshold window. The essence of the proof lies in showing that variables
+counting the number of visits to a set of sufficiently distant vertices are
+asymptotically independent Poisson variables.

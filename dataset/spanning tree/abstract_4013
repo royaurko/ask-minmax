@@ -1,0 +1,19 @@
+The bottom-up saliency, an early stage of humans' visual attention, can be
+considered as a binary classification problem between centre and surround
+classes. Discriminant power of features for the classification is measured as
+mutual information between distributions of image features and corresponding
+classes . As the estimated discrepancy very much depends on considered scale
+level, multi-scale structure and discriminant power are integrated by employing
+discrete wavelet features and Hidden Markov Tree (HMT). With wavelet
+coefficients and Hidden Markov Tree parameters, quad-tree like label structures
+are constructed and utilized in maximum a posterior probability (MAP) of hidden
+class variables at corresponding dyadic sub-squares. Then, a saliency value for
+each square block at each scale level is computed with discriminant power
+principle. Finally, across multiple scales is integrated the final saliency map
+by an information maximization rule. Both standard quantitative tools such as
+NSS, LCC, AUC and qualitative assessments are used for evaluating the proposed
+multi-scale discriminant saliency (MDIS) method against the well-know
+information based approach AIM on its released image collection with
+eye-tracking data. Simulation results are presented and analysed to verify the
+validity of MDIS as well as point out its limitation for further research
+direction.

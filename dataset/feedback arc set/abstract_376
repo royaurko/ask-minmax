@@ -1,0 +1,22 @@
+A $k$-dimensional box is the cartesian product $R_1 \times R_2 \times ...
+\times R_k$ where each $R_i$ is a closed interval on the real line. The {\it
+boxicity} of a graph $G$, denoted as $box(G)$, is the minimum integer $k$ such
+that $G$ can be represented as the intersection graph of a collection of
+$k$-dimensional boxes: that is two vertices are adjacent if and only if their
+corresponding boxes intersect. A circular arc graph is a graph that can be
+represented as the intersection graph of arcs on a circle.
+  Let $G$ be a circular arc graph with maximum degree $\Delta$. We show that if
+$\Delta <\lfloor \frac{n(\alpha-1)}{2\alpha}\rfloor$, $\alpha \in \mathbb{N}$,
+$\alpha \geq 2$ then $box(G) \leq \alpha$. We also demonstrate a graph with
+boxicity $> \alpha$ but with
+$\Delta=n\frac{(\alpha-1)}{2\alpha}+\frac{n}{2\alpha(\alpha+1)}+(\alpha+2)$. So
+the result cannot be improved substantially when $\alpha$ is large. Let
+$r_{inf}$ be minimum number of arcs passing through any point on the circle
+with respect to some circular arc representation of $G$. We also show that for
+any circular arc graph $G$, $box(G) \leq r_{inf} + 1$ and this bound is tight.
+Given a family of arcs $F$ on the circle, the circular cover number $L(F)$ is
+the cardinality of the smallest subset $F'$ of $F$ such that the arcs in $F'$
+can cover the circle. Maximum circular cover number $L_{max}(G)$ is defined as
+the maximum value of $L(F)$ obtained over all possible family of arcs $F$ that
+can represent $G$. We will show that if $G$ is a circular arc graph with
+$L_{max}(G)> 4$ then $box(G) \leq 3$.

@@ -1,0 +1,15 @@
+Regression bugs occur whenever software functionality that previously worked
+as desired stops working, or no longer works as expected. Code changes, such as
+bug fixes or new feature work, may result in a regression bug. Regression bugs
+are an annoying and painful phenomena in the software development process,
+requiring a great deal of effort to localize, effectively hindering team
+progress. In this paper we present Regression Detective, a method which assists
+the developer locating source code segments that caused a given regression bug.
+Unlike some of the existing tools, our approach doesn't require an automated
+test suite or executing past versions of the system. It is highly scalable to
+millions of loc systems. The developer, who has no prior knowledge of the code
+or the bug, reproduces the bug according to the steps described in the bug
+database. We evaluated our approach with bugs from leading open source projects
+(Eclipse, Tomcat, Ant). In over 90% of the cases, the developer only has to
+examine 10-20 lines of code in order to locate the bug, regardless of the code
+base size.

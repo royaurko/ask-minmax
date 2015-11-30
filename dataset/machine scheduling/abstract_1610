@@ -1,0 +1,18 @@
+Classical game theory treats players as special---a description of a game
+contains a full, explicit enumeration of all players---even though in the real
+world, "players" are no more fundamentally special than rocks or clouds. It
+isn't trivial to find a decision-theoretic foundation for game theory in which
+an agent's coplayers are a non-distinguished part of the agent's environment.
+Attempts to model both players and the environment as Turing machines, for
+example, fail for standard diagonalization reasons.
+  In this paper, we introduce a "reflective" type of oracle, which is able to
+answer questions about the outputs of oracle machines with access to the same
+oracle. These oracles avoid diagonalization by answering some queries randomly.
+We show that machines with access to a reflective oracle can be used to define
+rational agents using causal decision theory. These agents model their
+environment as a probabilistic oracle machine, which may contain other agents
+as a non-distinguished part.
+  We show that if such agents interact, they will play a Nash equilibrium, with
+the randomization in mixed strategies coming from the randomization in the
+oracle's answers. This can be seen as providing a foundation for classical game
+theory in which players aren't special.

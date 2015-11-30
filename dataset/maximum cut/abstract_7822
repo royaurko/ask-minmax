@@ -1,0 +1,23 @@
+Puiseux series are power series in which the exponents can be fractional
+and/or negative rational numbers. Several computer algebra systems have one or
+more built-in or loadable functions for computing truncated Puiseux series.
+Some are generalized to allow coe?cients containing functions of the series
+variable that are dominated by any power of that variable, such as logarithms
+and nested logarithms of the series variable. Some computer algebra systems
+also have built-in or loadable functions that compute infinite Puiseux series.
+Unfortunately, there are some little-known pitfalls in computing Puiseux
+series. The most serious of these is expansions within branch cuts or at branch
+points that are incorrect for some directions in the complex plane. For example
+with each series implementation accessible to you:
+  Compare the value of (z^2 + z^3)^(3/2) with that of its truncated series
+expansion about z = 0, approximated at z = -0.01. Does the series converge to a
+value that is the negative of the correct value?
+  Compare the value of ln(z^2 + z^3) with its truncated series expansion about
+z = 0, approximated at z = -0.01 + 0.1i. Does the series converge to a value
+that is incorrect by 2pi i?
+  Compare arctanh(-2 + ln(z)z) with its truncated series expansion about z = 0,
+approximated at z = -0.01. Does the series converge to a value that is
+incorrect by about pi i?
+  At the time of this writing, most implementations that accommodate such
+series exhibit such errors. This article describes how to avoid these errors
+both for manual derivation of series and when implementing series packages.

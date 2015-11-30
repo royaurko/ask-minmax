@@ -1,0 +1,23 @@
+Histogram-based empirical Bayes methods developed for analyzing data for
+large numbers of genes, SNPs, or other biological features tend to have large
+biases when applied to data with a smaller number of features such as genes
+with expression measured conventionally, proteins, and metabolites. To analyze
+such small-scale and medium-scale data in an empirical Bayes framework, we
+introduce corrections of maximum likelihood estimators (MLE) of the local false
+discovery rate (LFDR). In this context, the MLE estimates the LFDR, which is a
+posterior probability of null hypothesis truth, by estimating the prior
+distribution. The corrections lie in excluding each feature when estimating one
+or more parameters on which the prior depends. An application of the new
+estimators and previous estimators to protein abundance data illustrates how
+different estimators lead to very different conclusions about which proteins
+are affected by cancer.
+  The estimators are compared using simulated data of two different numbers of
+features, two different detectability levels, and all possible numbers of
+affected features. The simulations show that some of the corrected MLEs
+substantially reduce a negative bias of the MLE. (The best-performing corrected
+MLE was derived from the minimum description length principle.) However, even
+the corrected MLEs have strong negative biases when the proportion of features
+that are unaffected is greater than 90%. Therefore, since the number of
+affected features is unknown in the case of real data, we recommend an
+optimally weighted combination of the best of the corrected MLEs with a
+conservative estimator that has weaker parametric assumptions.

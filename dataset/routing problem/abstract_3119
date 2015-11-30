@@ -1,0 +1,24 @@
+In this paper we devise a novel \emph{unified} construction of Euclidean
+spanners that trades between the maximum degree, diameter and weight
+gracefully. For a positive integer k, our construction provides a
+(1+eps)-spanner with maximum degree O(k), diameter O(log_k n + alpha(k)),
+weight O(k \cdot log_k n \cdot log n) \cdot w(MST(S)), and O(n) edges. Note
+that for k= n^{1/alpha(n)} this gives rise to diameter O(alpha(n)), weight
+O(n^{1/alpha(n)} \cdot log n \cdot alpha(n)) \cdot w(MST(S)) and maximum degree
+O(n^{1/alpha(n)}), which improves upon a classical result of Arya et al.
+\cite{ADMSS95}; in the corresponding result from \cite{ADMSS95} the spanner has
+the same number of edges and diameter, but its weight and degree may be
+arbitrarily large. Also, for k = O(1) this gives rise to maximum degree O(1),
+diameter O(log n) and weight O(log^2 n) \cdot w(MST(S)), which reproves another
+classical result of Arya et al. \cite{ADMSS95}. Our bound of O(log_k n +
+alpha(k)) on the diameter is optimal under the constraints that the maximum
+degree is O(k) and the number of edges is O(n). Our bound on the weight is
+optimal up to a factor of log n. Our construction also provides a similar
+tradeoff in the complementary range of parameters, i.e., when the weight should
+be smaller than log^2 n, but the diameter is allowed to grow beyond log n.
+  For random point sets in the d-dimensional unit cube, we "shave" a factor of
+log n from the weight bound. Specifically, in this case our construction
+achieves maximum degree O(k), diameter O(log_k n + alpha(k)) and weight that is
+with high probability O(k \cdot log_k n) \cdot w(MST(S)).
+  Finally, en route to these results we devise optimal constructions of
+1-spanners for general tree metrics, which are of independent interest.

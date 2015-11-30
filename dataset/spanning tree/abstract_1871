@@ -1,0 +1,15 @@
+Transient faults corrupt the content and organization of data structures. A
+recovery technique dealing with such faults is stabilization, which guarantees,
+following some number of operations on the data structure, that content of the
+data structure is legitimate. Another notion of fault tolerance is
+availability, which is the property that operations continue to be applied
+during the period of recovery after a fault, and successful updates are not
+lost while the data structure stabilizes to a legitimate state. The available,
+stabilizing 2-3 tree supports find, insert, and delete operations, each with
+O(lg n) complexity when the tree's state is legitimate and contains n items.
+For an illegitimate state, these operations have O(lg K) complexity where K is
+the maximum capacity of the tree. Within O(t) operations, the state of the tree
+is guaranteed to be legitimate, where t is the number of nodes accessible via
+some path from the tree's root at the initial state. This paper resolves, for
+the first time, issues of dynamic allocation and pointer organization in a
+stabilizing data structure.

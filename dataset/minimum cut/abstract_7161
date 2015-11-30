@@ -1,0 +1,18 @@
+Boxicity of a graph $G(V,$ $E)$, denoted by $box(G)$, is the minimum integer
+$k$ such that $G$ can be represented as the intersection graph of axis parallel
+boxes in $\mathbb{R}^k$. The problem of computing boxicity is inapproximable
+even for graph classes like bipartite, co-bipartite and split graphs within
+$O(n^{1 - \epsilon})$-factor, for any $\epsilon >0$ in polynomial time unless
+$NP=ZPP$. We give FPT approximation algorithms for computing the boxicity of
+graphs, where the parameter used is the vertex or edge edit distance of the
+given graph from families of graphs of bounded boxicity. This can be seen as a
+generalization of the parameterizations discussed in \cite{Adiga2}.
+  Extending the same idea in one of our algorithms, we also get an
+$O\left(\frac{n\sqrt{\log \log n}}{\sqrt{\log n}}\right)$ factor approximation
+algorithm for computing boxicity and an $O\left(\frac{n {(\log \log
+n)}^{\frac{3}{2}}}{\sqrt{\log n}}\right)$ factor approximation algorithm for
+computing the cubicity. These seem to be the first $o(n)$ factor approximation
+algorithms known for both boxicity and cubicity. As a consequence of this
+result, a $o(n)$ factor approximation algorithm for computing the partial order
+dimension of finite posets and a $o(n)$ factor approximation algorithm for
+computing the threshold dimension of split graphs would follow.

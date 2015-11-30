@@ -1,0 +1,12 @@
+We propose a new protocol solving the fundamental problem of disseminating a
+piece of information to all members of a group of n players. It builds upon the
+classical randomized rumor spreading protocol and several extensions. The main
+achievements are the following:
+  Our protocol spreads the rumor to all other nodes in the asymptotically
+optimal time of (1 + o(1)) \log_2 n. The whole process can be implemented in a
+way such that only O(n f(n)) calls are made, where f(n)= \omega(1) can be
+arbitrary.
+  In contrast to other protocols suggested in the literature, our algorithm
+only uses push operations, i.e., only informed nodes take active actions in the
+network. To the best of our knowledge, this is the first randomized push
+algorithm that achieves an asymptotically optimal running time.

@@ -1,0 +1,24 @@
+There are many classes of mathematical problems which give rise to matrices,
+where a large number of the elements are zero. In this case it makes sense to
+have a special matrix type to handle this class of problems where only the
+non-zero elements of the matrix are stored. Not only does this reduce the
+amount of memory to store the matrix, but it also means that operations on this
+type of matrix can take advantage of the a-priori knowledge of the positions of
+the non-zero elements to accelerate their calculations. A matrix type that
+stores only the non-zero elements is generally called sparse.
+  Until recently Octave has lacked a full implementation of sparse matrices.
+This article address the implementation of sparse matrices within Octave,
+including their storage, creation, fundamental algorithms used, their
+implementations and the basic operations and functions implemented for sparse
+matrices. Mathematical issues such as the return types of sparse operations,
+matrix fill-in and reordering for sparse matrix factorization is discussed in
+the context of a real example.
+  Benchmarking of Octave's implementation of sparse operations compared to
+their equivalent in Matlab are given and their implications discussed. Results
+are presented for multiplication and linear algebra operations for various
+matrix orders and densities. Furthermore, the use of Octave's sparse matrix
+implementation is demonstrated using a real example of a finite element model
+(FEM) problem. Finally, the method of using sparse matrices with Octave's
+oct-files is discussed. The means of creating, using and returning sparse
+matrices within oct-files is discussed as well as the differences between
+Octave's Sparse and Array classes.

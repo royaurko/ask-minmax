@@ -1,0 +1,15 @@
+In order to gain an understanding of the effectiveness of phylogenetic Markov
+chain Monte Carlo (MCMC), it is important to understand how quickly the
+empirical distribution of the MCMC converges to the posterior distribution. In
+this paper we investigate this problem on phylogenetic tree topologies with a
+metric that is especially well suited to the task: the subtree
+prune-and-regraft (SPR) metric. This metric directly corresponds to the minimum
+number of MCMC rearrangements required to move between trees in common
+phylogenetic MCMC implementations. We develop a novel graph-based approach to
+analyze tree posteriors and find that the SPR metric is much more informative
+than simpler metrics that are unrelated to MCMC moves. In doing so we show
+conclusively that topological peaks do occur in Bayesian phylogenetic
+posteriors from real data sets as sampled with standard MCMC approaches,
+investigate the efficiency of Metropolis-coupled MCMC (MCMCMC) in traversing
+the valleys between peaks, and show that conditional clade distribution (CCD)
+can have systematic problems when there are multiple peaks.

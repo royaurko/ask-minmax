@@ -1,0 +1,12 @@
+We present a new implementation of the Fourier acceleration method for Landau
+gauge fixing. By means of a multigrid inversion we are able to avoid the use of
+the fast Fourier transform. This makes the method more flexible, and well
+suited for vector and parallel machines. We study the performance of this
+algorithm on serial and on parallel (APE100) machines for the 4-dimensional
+SU(2) case. We find that our method is equivalent to the standard
+implementation of Fourier acceleration already on a serial machine, and that it
+parallelizes very efficiently: its computational cost shows a linear speedup
+with the number of processors. We have also implemented, on the parallel
+machines, a version of the method using conjugate gradient instead of
+multigrid. This leads to an algorithm that is efficient at intermediate lattice
+volumes.

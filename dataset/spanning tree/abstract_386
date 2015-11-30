@@ -1,0 +1,14 @@
+The heap is a basic data structure used in a wide variety of applications,
+including shortest path and minimum spanning tree algorithms. In this paper we
+explore the design space of comparison-based, amortized-efficient heap
+implementations. From a consideration of dynamic single-elimination
+tournaments, we obtain the binomial queue, a classical heap implementation, in
+a simple and natural way. We give four equivalent ways of representing heaps
+arising from tournaments, and we obtain two new variants of binomial queues, a
+one-tree version and a one-pass version. We extend the one-pass version to
+support key decrease operations, obtaining the {\em rank-pairing heap}, or {\em
+rp-heap}. Rank-pairing heaps combine the performance guarantees of Fibonacci
+heaps with simplicity approaching that of pairing heaps. Like pairing heaps,
+rank-pairing heaps consist of trees of arbitrary structure, but these trees are
+combined by rank, not by list position, and rank changes, but not structural
+changes, cascade during key decrease operations.

@@ -1,0 +1,20 @@
+We describe an FPGA-based, 96-channel, time-to-digital converter (TDC)
+intended for use with the Central Outer Tracker (COT) in the CDF Experiment at
+the Fermilab Tevatron. The COT system is digitized and read out by 315 TDC
+cards, each serving 96 wires of the chamber. The TDC is physically configured
+as a 9U VME card. The functionality is almost entirely programmed in firmware
+in two Altera Stratix FPGA's. The special capabilities of this device are the
+availability of 840 MHz LVDS inputs, multiple phase-locked clock modules, and
+abundant memory. The TDC system operates with an input resolution of 1.2 ns.
+Each input can accept up to 7 hits per collision. The time-to-digital
+conversion is done by first sampling each of the 96 inputs in 1.2-ns bins and
+filling a circular memory; the memory addresses of logical transitions (edges)
+in the input data are then translated into the time of arrival and width of the
+COT pulses. Memory pipelines with a depth of 5.5 $\mu$s allow deadtime-less
+operation in the first-level trigger. The TDC VME interface allows a 64-bit
+Chain Block Transfer of multiple boards in a crate with transfer-rates up to 47
+Mbytes/sec. The TDC also contains a separately-programmed data path that
+produces prompt trigger data every Tevatron crossing. The full TDC design and
+multi-card test results are described. The physical simplicity ensures
+low-maintenance; the functionality being in firmware allows reprogramming for
+other applications.

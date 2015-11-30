@@ -1,0 +1,26 @@
+In this paper we extend the geometric binary search tree (BST) model of
+Demaine, Harmon, Iacono, Kane, and Patrascu (DHIKP) to accommodate for
+insertions and deletions. Within this extended model, we study the online
+Greedy BST algorithm introduced by DHIKP. Greedy BST is known to be equivalent
+to a maximally greedy (but inherently offline) algorithm introduced
+independently by Lucas in 1988 and Munro in 2000, conjectured to be dynamically
+optimal.
+  With the application of forbidden-submatrix theory, we prove a quasilinear
+upper bound on the performance of Greedy BST on deque sequences. It has been
+conjectured (Tarjan, 1985) that splay trees (Sleator and Tarjan, 1983) can
+serve such sequences in linear time. Currently neither splay trees, nor other
+general-purpose BST algorithms are known to fulfill this requirement. As a
+special case, we show that Greedy BST can serve output-restricted deque
+sequences in linear time. A similar result is known for splay trees (Tarjan,
+1985; Elmasry, 2004).
+  As a further application of the insert-delete model, we give a simple proof
+that, given a set U of permutations of [n], the access cost of any BST
+algorithm is Omega(log |U| + n) on "most" of the permutations from U. In
+particular, this implies that the access cost for a random permutation of [n]
+is Omega(n log n) with high probability.
+  Besides the splay tree noted before, Greedy BST has recently emerged as a
+plausible candidate for dynamic optimality. Compared to splay trees, much less
+effort has gone into analyzing Greedy BST. Our work is intended as a step
+towards a full understanding of Greedy BST, and we remark that
+forbidden-submatrix arguments seem particularly well suited for carrying out
+this program.

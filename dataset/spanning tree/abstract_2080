@@ -1,0 +1,14 @@
+Terms are a concise representation of tree structures. Since they can be
+naturally defined by an inductive type, they offer data structures in
+functional programming and mechanised reasoning with useful principles such as
+structural induction and structural recursion. However, for graphs or
+"tree-like" structures - trees involving cycles and sharing - it remains
+unclear what kind of inductive structures exists and how we can faithfully
+assign a term representation of them. In this paper we propose a simple term
+syntax for cyclic sharing structures that admits structural induction and
+recursion principles. We show that the obtained syntax is directly usable in
+the functional language Haskell and the proof assistant Agda, as well as
+ordinary data structures such as lists and trees. To achieve this goal, we use
+a categorical approach to initial algebra semantics in a presheaf category.
+That approach follows the line of Fiore, Plotkin and Turi's models of abstract
+syntax with variable binding.

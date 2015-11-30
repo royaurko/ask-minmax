@@ -1,0 +1,12 @@
+In this paper we revisit the classical regular expression matching problem,
+namely, given a regular expression $R$ and a string $Q$, decide if $Q$ matches
+one of the strings specified by $R$. Let $m$ and $n$ be the length of $R$ and
+$Q$, respectively. On a standard unit-cost RAM with word length $w \geq \log
+n$, we show that the problem can be solved in $O(m)$ space with the following
+running times: \begin{equation*} \begin{cases}
+  O(n\frac{m \log w}{w} + m \log w) & \text{if $m > w$} \\
+  O(n\log m + m\log m) & \text{if $\sqrt{w} < m \leq w$} \\
+  O(\min(n+ m^2, n\log m + m\log m)) & \text{if $m \leq \sqrt{w}$.} \end{cases}
+\end{equation*} This improves the best known time bound among algorithms using
+$O(m)$ space. Whenever $w \geq \log^2 n$ it improves all known time bounds
+regardless of how much space is used.

@@ -1,0 +1,25 @@
+This paper investigates an open problem introduced in [14]. Two or more
+mobile agents start from different nodes of a network and have to accomplish
+the task of gathering which consists in getting all together at the same node
+at the same time. An adversary chooses the initial nodes of the agents and
+assigns a different positive integer (called label) to each of them. Initially,
+each agent knows its label but does not know the labels of the other agents or
+their positions relative to its own. Agents move in synchronous rounds and can
+communicate with each other only when located at the same node. Up to f of the
+agents are Byzantine. A Byzantine agent can choose an arbitrary port when it
+moves, can convey arbitrary information to other agents and can change its
+label in every round, in particular by forging the label of another agent or by
+creating a completely new one.
+  What is the minimum number M of good agents that guarantees deterministic
+gathering of all of them, with termination?
+  We provide exact answers to this open problem by considering the case when
+the agents initially know the size of the network and the case when they do
+not. In the former case, we prove M=f+1 while in the latter, we prove M=f+2.
+More precisely, for networks of known size, we design a deterministic algorithm
+gathering all good agents in any network provided that the number of good
+agents is at least f+1. For networks of unknown size, we also design a
+deterministic algorithm ensuring the gathering of all good agents in any
+network but provided that the number of good agents is at least f+2. Both of
+our algorithms are optimal in terms of required number of good agents, as each
+of them perfectly matches the respective lower bound on M shown in [14], which
+is of f+1 when the size of the network is known and of f+2 when it is unknown.

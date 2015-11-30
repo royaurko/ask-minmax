@@ -1,0 +1,15 @@
+This paper studies problems of inferring order given noisy information. In
+these problems there is an unknown order (permutation) $\pi$ on $n$ elements
+denoted by $1,...,n$. We assume that information is generated in a way
+correlated with $\pi$. The goal is to find a maximum likelihood $\pi^*$ given
+the information observed. We will consider two different types of observations:
+noisy comparisons and noisy orders. The data in Noisy orders are permutations
+given from an exponential distribution correlated with \pi (this is also called
+the Mallow's model). The data in Noisy Comparisons is a signal given for each
+pair of elements which is correlated with their true ordering.
+  In this paper we present polynomial time algorithms for solving both problems
+with high probability. As part of our proof we show that for both models the
+maximum likelihood solution $\pi^{\ast}$ is close to the original permutation
+$\pi$.
+  Our results are of interest in applications to ranking, such as ranking in
+sports, or ranking of search items based on comparisons by experts.

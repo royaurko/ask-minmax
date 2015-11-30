@@ -1,0 +1,22 @@
+This paper presents the first implementation of a two-way relay network based
+on the principle of physical-layer network coding. To date, only a simplified
+version of physical-layer network coding (PNC) method, called analog network
+coding (ANC), has been successfully implemented. The advantage of ANC is that
+it is simple to implement; the disadvantage, on the other hand, is that the
+relay amplifies the noise along with the signal before forwarding the signal.
+PNC systems in which the relay performs XOR or other denoising PNC mappings of
+the received signal have the potential for significantly better performance.
+However, the implementation of such PNC systems poses many challenges. For
+example, the relay must be able to deal with symbol and carrier-phase
+asynchronies of the simultaneous signals received from the two end nodes, and
+the relay must perform channel estimation before detecting the signals. We
+investigate a PNC implementation in the frequency domain, referred to as FPNC,
+to tackle these challenges. FPNC is based on OFDM. In FPNC, XOR mapping is
+performed on the OFDM samples in each subcarrier rather than on the samples in
+the time domain. We implement FPNC on the universal soft radio peripheral
+(USRP) platform. Our implementation requires only moderate modifications of the
+packet preamble design of 802.11a/g OFDM PHY. With the help of the cyclic
+prefix (CP) in OFDM, symbol asynchrony and the multi-path fading effects can be
+dealt with in a similar fashion. Our experimental results show that
+symbol-synchronous and symbol-asynchronous FPNC have essentially the same BER
+performance, for both channel-coded and unchannel-coded FPNC.

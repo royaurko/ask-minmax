@@ -1,0 +1,15 @@
+Motivated by the relationship between the eigenvalue spectrum of the
+Laplacian matrix of a network and the behavior of dynamical processes evolving
+in it, we propose a distributed iterative algorithm in which a group of $n$
+autonomous agents self-organize the structure of their communication network in
+order to control the network's eigenvalue spectrum. In our algorithm, we assume
+that each agent has access only to a local (myopic) view of the network around
+it. In each iteration, agents in the network peform a decentralized decision
+process to determine the edge addition/deletion that minimizes a distance
+function defined in the space of eigenvalue spectra. This spectral distance
+presents interesting theoretical properties that allow an efficient distributed
+implementation of the decision process. Our iterative algorithm is stable by
+construction, i.e., locally optimizes the network's eigenvalue spectrum, and is
+shown to perform extremely well in practice. We illustrate our results with
+nontrivial simulations in which we design networks matching the spectral
+properties of complex networks, such as small-world and power-law networks.

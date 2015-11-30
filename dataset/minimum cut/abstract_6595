@@ -1,0 +1,16 @@
+A straight-line drawing $\delta$ of a planar graph $G$ need not be plane, but
+can be made so by \emph{untangling} it, that is, by moving some of the vertices
+of $G$. Let shift$(G,\delta)$ denote the minimum number of vertices that need
+to be moved to untangle $\delta$. We show that shift$(G,\delta)$ is NP-hard to
+compute and to approximate. Our hardness results extend to a version of
+\textsc{1BendPointSetEmbeddability}, a well-known graph-drawing problem.
+  Further we define fix$(G,\delta)=n-shift(G,\delta)$ to be the maximum number
+of vertices of a planar $n$-vertex graph $G$ that can be fixed when untangling
+$\delta$. We give an algorithm that fixes at least $\sqrt{((\log n)-1)/\log
+\log n}$ vertices when untangling a drawing of an $n$-vertex graph $G$. If $G$
+is outerplanar, the same algorithm fixes at least $\sqrt{n/2}$ vertices. On the
+other hand we construct, for arbitrarily large $n$, an $n$-vertex planar graph
+$G$ and a drawing $\delta_G$ of $G$ with fix$(G,\delta_G) \le \sqrt{n-2}+1$ and
+an $n$-vertex outerplanar graph $H$ and a drawing $\delta_H$ of $H$ with
+fix$(H,\delta_H) \le 2 \sqrt{n-1}+1$. Thus our algorithm is asymptotically
+worst-case optimal for outerplanar graphs.

@@ -1,0 +1,12 @@
+In this paper we present high performance dynamically allocated multi-queue
+(DAMQ) buffer schemes for fault tolerance systems on chip applications that
+require an interconnection network. Two or four virtual channels shared the
+same buffer space. On the message switching layer, we make improvement to boost
+system performance when there are faults involved in the components
+communication. The proposed schemes are when a node or a physical channel is
+deemed as faulty, the previous hop node will terminate the buffer occupancy of
+messages destined to the failed link. The buffer usage decisions are made at
+switching layer without interactions with higher abstract layer, thus buffer
+space will be released to messages destined to other healthy nodes quickly.
+Therefore, the buffer space will be efficiently used in case fault occurs at
+some nodes.

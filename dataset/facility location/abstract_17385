@@ -1,0 +1,17 @@
+Always Best Packet Switching (ABPS) is a novel approach for wireless
+communications that enables mobile nodes, equipped with multiple network
+interface cards (NICs), to dynamically determine the most appropriate NIC to
+use. Using ABPS, a mobile node can seamlessly switch to a different NIC in
+order to get better performance, without causing communication interruptions at
+the application level. To make this possible, NICs are kept always active and a
+software monitor constantly probes the channels for available access points.
+While this ensures maximum connection availability, considerable energy may be
+wasted when no access points are available for a given NIC. In this paper we
+address this issue by investigating the use of an "oracle" able to provide
+information on network availability. This allows to dynamically switch on/off
+NICs based on reported availability, thus reducing the power consumption. We
+present a Markov model which allows us to estimate the impact of the oracle on
+the ABPS mechanism: results show that significant reduction in energy
+consumption can be achieved with minimal impact on connection availability. We
+conclude by describing a prototype implementation of the oracle based on Web
+services and geolocalization.

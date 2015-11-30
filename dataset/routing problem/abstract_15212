@@ -1,0 +1,22 @@
+In this paper, we focus on the problem of determining whether two conjunctive
+("CQ") queries posed on relational data are combined-semantics equivalent [9].
+We continue the tradition of [2,5,9] of studying this problem using the tool of
+containment between queries. We introduce a syntactic necessary and sufficient
+condition for equivalence of queries belonging to a large natural language of
+"explicit-wave" combined-semantics CQ queries; this language encompasses (but
+is not limited to) all set, bag, and bag-set queries, and appears to cover all
+combined-semantics CQ queries that are expressible in SQL. Our result solves in
+the positive the decidability problem of determining combined-semantics
+equivalence for pairs of explicit-wave CQ queries. That is, for an arbitrary
+pair of combined-semantics CQ queries, it is decidable (i) to determine whether
+each of the queries is explicit wave, and (ii) to determine, in case both
+queries are explicit wave, whether or not they are combined-semantics
+equivalent, by using our syntactic criterion. (The problem of determining
+equivalence for general combined-semantics CQ queries remains open. Even so,
+our syntactic sufficient containment condition could still be used to determine
+that two general CQ queries are combined-semantics equivalent.) Our equivalence
+test, as well as our general sufficient condition for containment of
+combined-semantics CQ queries, reduce correctly to the special cases reported
+in [2,5] for set, bag, and bag-set semantics. Our containment and equivalence
+conditions also properly generalize the results of [9], provided that the
+latter are restricted to the language of (combined-semantics) CQ queries.

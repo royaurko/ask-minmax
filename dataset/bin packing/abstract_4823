@@ -1,0 +1,22 @@
+Predictive coding is attractive for compression onboard of spacecrafts thanks
+to its low computational complexity, modest memory requirements and the ability
+to accurately control quality on a pixel-by-pixel basis. Traditionally,
+predictive compression focused on the lossless and near-lossless modes of
+operation where the maximum error can be bounded but the rate of the compressed
+image is variable. Rate control is considered a challenging problem for
+predictive encoders due to the dependencies between quantization and prediction
+in the feedback loop, and the lack of a signal representation that packs the
+signal's energy into few coefficients. In this paper, we show that it is
+possible to design a rate control scheme intended for onboard implementation.
+In particular, we propose a general framework to select quantizers in each
+spatial and spectral region of an image so as to achieve the desired target
+rate while minimizing distortion. The rate control algorithm allows to achieve
+lossy, near-lossless compression, and any in-between type of compression, e.g.,
+lossy compression with a near-lossless constraint. While this framework is
+independent of the specific predictor used, in order to show its performance,
+in this paper we tailor it to the predictor adopted by the CCSDS-123 lossless
+compression standard, obtaining an extension that allows to perform lossless,
+near-lossless and lossy compression in a single package. We show that the rate
+controller has excellent performance in terms of accuracy in the output rate,
+rate-distortion characteristics and is extremely competitive with respect to
+state-of-the-art transform coding.

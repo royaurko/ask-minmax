@@ -1,0 +1,17 @@
+Using state-space representation, mobile object positioning problems can be
+described as dynamic systems, with the state representing the unknown location
+and the observations being the information gathered from the location sensors.
+For linear dynamic systems with Gaussian noise, the Kalman filter provides the
+Minimum Mean-Square Error (MMSE) state estimation by tracking the posterior.
+Hence, by approximating non-Gaussian noise distributions with Gaussian Mixtures
+(GM), a bank of Kalman filters or Gaussian Sum Filter (GSF), can provide the
+MMSE state estimation. However, the MMSE itself is not analytically tractable.
+Moreover, the general analytic bounds proposed in the literature are not
+tractable for GM noise statistics. Hence, in this work, we evaluate the MMSE of
+linear dynamic systems with GM noise statistics and propose its analytic lower
+and upper bounds. We provide two analytic upper bounds which are the
+Mean-Square Errors (MSE) of implementable filters, and we show that based on
+the shape of the GM noise distributions, the tighter upper bound can be
+selected. We also show that for highly multimodal GM noise distributions, the
+bounds and the MMSE converge. Simulation results support the validity of the
+proposed bounds and their behavior in limits.

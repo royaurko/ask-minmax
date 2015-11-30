@@ -1,0 +1,25 @@
+{\sc SigSpec} computes the spectral significance levels for the DFT amplitude
+spectrum of a time series at arbitrarily given sampling. It is based on the
+analytical solution for the Probability Density Function (PDF) of an amplitude
+level, including dependencies on frequency and phase and referring to white
+noise. Using a time series dataset as input, an iterative procedure including
+step-by-step prewhitening of the most significant signal components and
+MultiSine least-squares fitting is provided to determine a whole set of signal
+components, which makes the program a powerful tool for multi-frequency
+analysis. Instead of the step-by-step prewhitening of the most significant
+peaks, the program is also able to take into account several steps of the
+prewhitening sequence simultaneously and check for the combination associated
+to a minimum residual scatter. This option is designed to overcome the aliasing
+problem caused by periodic time gaps in the dataset. {\sc SigSpec} can detect
+non-sinusoidal periodicities in a dataset by simultaneously taking into account
+a fundamental frequency plus a set of harmonics. Time-resolved spectral
+significance analysis using a set of intervals of the time series is supported
+to investigate the development of eigenfrequencies over the observation time.
+Furthermore, an extension is available to perform the {\sc SigSpec} analysis
+for multiple time series input files at once. In this MultiFile mode, time
+series may be tagged as target and comparison data. Based on this selection,
+{\sc SigSpec} is capable of determining differential significance spectra for
+the target datasets with respect to coincidences in the comparison spectra. A
+built-in simulator to generate and superpose a variety of sinusoids and trends
+as well as different types of noise completes the software package at the
+present stage of development.

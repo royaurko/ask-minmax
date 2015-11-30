@@ -1,0 +1,15 @@
+Certain methods of analysis require the knowledge of the spatial distances
+between entities whose data are stored in a microdata table. For instance, such
+knowledge is necessary and sufficient to perform data mining tasks such as
+nearest neighbour searches or clustering. However, when inter-record distances
+are published in addition to the microdata for research purposes, the risk of
+identity disclosure has to be taken into consideration again. In order to
+tackle this problem, we introduce a flexible graph model for microdata in a
+metric space and propose a linkage attack based on realistic assumptions of a
+data snooper's background knowledge. This attack is based on the idea of
+finding a maximum approximate common subgraph of two vertex-labelled and
+edge-weighted graphs. By adapting a standard argument from algorithmic graph
+theory to our setup, this task is transformed to the maximum clique detection
+problem in a corresponding product graph. Using a toy example and experimental
+results on simulated data show that publishing even approximate distances could
+increase the risk of identity disclosure unreasonably.

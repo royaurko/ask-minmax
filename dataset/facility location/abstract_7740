@@ -1,0 +1,18 @@
+A $k$-nearest neighbor ($k$NN) query determines the $k$ nearest points, using
+distance metrics, from a specific location. An all $k$-nearest neighbor
+(A$k$NN) query constitutes a variation of a $k$NN query and retrieves the $k$
+nearest points for each point inside a database. Their main usage resonates in
+spatial databases and they consist the backbone of many location-based
+applications and not only (i.e. $k$NN joins in databases, classification in
+data mining). So, it is very crucial to develop methods that answer them
+efficiently. In this work, we propose a novel method for classifying
+multidimensional data using an A$k$NN algorithm in the MapReduce framework. Our
+approach exploits space decomposition techniques for processing the
+classification procedure in a parallel and distributed manner. To our
+knowledge, we are the first to study the classification of multidimensional
+objects under this perspective. Through an extensive experimental evaluation we
+prove that our solution is efficient and scalable in processing the given
+queries. We investigate many different perspectives that can affect the total
+computational cost, such as different dataset distributions, number of
+dimensions, growth of $k$ value and granularity of space decomposition and
+prove that our system is efficient, robust and scalable.

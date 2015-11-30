@@ -1,0 +1,23 @@
+We study size-based schedulers, and focus on the impact of inaccurate job
+size information on response time and fairness. Our intent is to revisit
+previous results, which allude to performance degradation for even small errors
+on job size estimates, thus limiting the applicability of size-based
+schedulers.
+  We show that scheduling performance is tightly connected to workload
+characteristics: in the absence of large skew in the job size distribution,
+even extremely imprecise estimates suffice to outperform size-oblivious
+disciplines. Instead, when job sizes are heavily skewed, known size-based
+disciplines suffer.
+  In this context, we show -- for the first time -- the dichotomy of
+over-estimation versus under-estimation. The former is, in general, less
+problematic than the latter, as its effects are localized to individual jobs.
+Instead, under-estimation leads to severe problems that may affect a large
+number of jobs.
+  We present an approach to mitigate these problems: our technique requires no
+complex modifications to original scheduling policies and performs very well.
+To support our claim, we proceed with a simulation-based evaluation that covers
+an unprecedented large parameter space, which takes into account a variety of
+synthetic and real workloads.
+  As a consequence, we show that size-based scheduling is practical and
+outperforms alternatives in a wide array of use-cases, even in presence of
+inaccurate size information.

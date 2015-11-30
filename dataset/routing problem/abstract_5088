@@ -1,0 +1,18 @@
+Constrained least-squares regression problems, such as the Nonnegative Least
+Squares (NNLS) problem, where the variables are restricted to take only
+nonnegative values, often arise in applications. Motivated by the recent
+development of the fast Johnson-Lindestrauss transform, we present a fast
+random projection type approximation algorithm for the NNLS problem. Our
+algorithm employs a randomized Hadamard transform to construct a much smaller
+NNLS problem and solves this smaller problem using a standard NNLS solver. We
+prove that our approach finds a nonnegative solution vector that, with high
+probability, is close to the optimum nonnegative solution in a relative error
+approximation sense. We experimentally evaluate our approach on a large
+collection of term-document data and verify that it does offer considerable
+speedups without a significant loss in accuracy. Our analysis is based on a
+novel random projection type result that might be of independent interest. In
+particular, given a tall and thin matrix $\Phi \in \mathbb{R}^{n \times d}$ ($n
+\gg d$) and a vector $y \in \mathbb{R}^d$, we prove that the Euclidean length
+of $\Phi y$ can be estimated very accurately by the Euclidean length of
+$\tilde{\Phi}y$, where $\tilde{\Phi}$ consists of a small subset of
+(appropriately rescaled) rows of $\Phi$.

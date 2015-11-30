@@ -1,0 +1,10 @@
+This work is aimed to develop a new class of methods for the BGK model of the
+Boltzmann equation. This technique allows to get high order of accuracy both in
+space and time, theoretically without CFL stability limitation. It's based on a
+Lagrangian formulation of the problem: information is stored on a fixed grid in
+space and velocity, and the equation is integrated along the characteristics.
+The source term is treated implicitly by using a DIRK (Diagonally Implicit
+Runge Kutta) scheme in order to avoid the time step restriction due to the
+stiff relaxation. In particular some L-stable schemes are tested by smooth and
+Riemann problems, both in rarefied and fully fluid regimes. Numerical results
+show good accuracy and efficiency of the method.

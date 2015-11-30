@@ -1,0 +1,14 @@
+Single node failures represent more than 85% of all node failures in the
+today's large communication networks such as the Internet. Also, these node
+failures are usually transient. Consequently, having the routing paths globally
+recomputed does not pay off since the failed nodes recover fairly quickly, and
+the recomputed routing paths need to be discarded. Instead, we develop
+algorithms and protocols for dealing with such transient single node failures
+by suppressing the failure (instead of advertising it across the network), and
+routing messages to the destination via alternate paths that do not use the
+failed node. We compare our solution to that of Ref. [11] wherein the contributors
+have presented a "Failure Insensitive Routing" protocol as a proactive recovery
+scheme for handling transient node failures. We show that our algorithms are
+faster by an order of magnitude while our paths are equally good. We show via
+simulation results that our paths are usually within 15% of the optimal for
+randomly generated graph with 100-1000 nodes.

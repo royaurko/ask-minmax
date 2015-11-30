@@ -1,0 +1,17 @@
+In the advent of large-scale multi-hop wireless technologies, such as MANET,
+VANET, iThings, it is of utmost importance to devise efficient distributed
+protocols to maintain network architecture and provide basic communication
+tools. One of such fundamental communication tasks is broadcast, also known as
+a 1-to-all communication. We propose several new efficient distributed
+algorithms and evaluate their time performance both theoretically and by
+simulations. First randomized algorithm accomplishes broadcast in O(D+log(1/d))
+rounds with probability at least 1-d on any uniform-power network of n nodes
+and diameter D, when equipped with local estimate of network density.
+Additionally, we evaluate average performance of this protocols by simulations
+on two classes of generated networks - uniform and social - and compare the
+results with performance of exponential backoff heuristic. Ours is the first
+provably efficient and well-scalable distributed solution for the (global)
+broadcast task. The second randomized protocol developed in this paper does not
+rely on the estimate of local density, and achieves only slightly higher time
+performance O((D+log(1/d))log n). Finally, we provide a deterministic algorithm
+achieving similar time O(D log^2 n), supported by theoretical analysis.

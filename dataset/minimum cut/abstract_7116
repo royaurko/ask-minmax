@@ -1,0 +1,23 @@
+The characteristics of wireless communication channels may vary with time due
+to fading, environmental changes and movement of mobile wireless devices.
+Tracking and estimating channel gains of wireless channels is therefore a
+fundamentally important element of many wireless communication systems. In
+particular, the receivers in many wireless networks need to estimate the
+channel gains by means of a training sequence. This paper studies the scaling
+law (on the network size) of the overhead for channel gain monitoring in
+wireless network. We first investigate the scenario in which a receiver needs
+to track the channel gains with respect to multiple transmitters. To be
+concrete, suppose that there are n transmitters, and that in the current round
+of channel-gain estimation, no more than k channels suffer significant
+variations since the last round. We proves that "\Theta(k\log((n+1)/k)) time
+slots" is the minimum number of time slots needed to catch up with the k varied
+channels. At the same time, we propose a novel channel-gain monitoring scheme
+named ADMOT to achieve the overhead lower-bound. ADMOT leverages recent
+advances in compressive sensing in signal processing and interference
+processing in wireless communication, to enable the receiver to estimate all n
+channels in a reliable and computationally efficient manner within
+O(k\log((n+1)/k)) time slots. To our best knowledge, all previous
+channel-tracking schemes require \Theta(n) time slots regardless of k. Note
+that based on above results for single receiver scenario, the scaling law of
+general setting is achieved in which there are multiple transmitters, relay
+nodes and receivers.

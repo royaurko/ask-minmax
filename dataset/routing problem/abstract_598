@@ -1,0 +1,23 @@
+We study {\em bottleneck congestion games} where the social cost is
+determined by the worst congestion of any resource. These games directly relate
+to network routing problems and also job-shop scheduling problems. In typical
+bottleneck congestion games, the utility costs of the players are determined by
+the worst congested resources that they use. However, the resulting Nash
+equilibria are inefficient, since the price of anarchy is proportional on the
+number of resources which can be high. Here we show that we can get smaller
+price of anarchy with the bottleneck social cost metric. We introduce the {\em
+polynomial bottleneck games} where the utility costs of the players are
+polynomial functions of the congestion of the resources that they use. In
+particular, the delay function for any resource $r$ is $C_{r}^\M$, where $C_r$
+is the congestion measured as the number of players that use $r$, and $\M \geq
+1$ is an integer constant that defines the degree of the polynomial. The
+utility cost of a player is the sum of the individual delays of the resources
+that it uses. The social cost of the game remains the same, namely, it is the
+worst bottleneck resource congestion: $\max_{r} C_r$. We show that polynomial
+bottleneck games are very efficient and give price of anarchy
+$O(|R|^{1/(\M+1)})$, where $R$ is the set of resources. This price of anarchy
+is tight, since we demonstrate a game with price of anarchy
+$\Omega(|R|^{1/(\M+1)})$, for any $\M \geq 1$. We obtain our tight bounds by
+using two proof techniques: {\em transformation}, which we use to convert
+arbitrary games to simpler games, and {\em expansion}, which we use to bound
+the price of anarchy in a simpler game.

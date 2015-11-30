@@ -1,0 +1,15 @@
+Recent research in the domain of real-time scheduling theory has tackled the
+problem of scheduling mixed-criticality systems upon uniprocessor or
+multiprocessor platforms, with the main objective being to respect the
+timeliness of the most critical tasks, at the expense of the requirements of
+the less critical ones. In particular, the less critical tasks are carelessly
+discarded when the computation demand of (some of) the high critical tasks
+increases. This might nevertheless result in system failure, as these less
+critical tasks could be accessing data, the consistency of which should be
+preserved. In this paper, we address this problem and propose a method to
+cautiously handle task suspension. Furthermore, it is usually assumed that the
+less critical tasks will never be re-enabled once discarded. In this paper, we
+also address this concern by proposing an approach to re-enable the less
+critical tasks, without jeopardizing the timeliness of the high critical ones.
+The suggested approaches apply to systems having two or more criticality
+levels.

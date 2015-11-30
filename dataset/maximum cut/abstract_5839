@@ -1,0 +1,19 @@
+We address single-user data transmission over a channel where the received
+signal incurs interference from a finite number of users (interfering users)
+that use single codebooks for transmitting their own messages. The receiver,
+however, is allowed to decode interfering users' messages. This means the
+signal transmitted from any interfering user is either decoded or considered as
+noise at the receiver side. We propose the following method to obtain an
+achievable rate for this channel. Assuming its own data is decoded
+successfully, the receiver partitions the set of interfering users into two
+disjoint subsets, namely the set of decodable users and the set of
+non-decodable users. Then the transmitter's rate is chosen such that the
+intended signal can be jointly decoded with the set of decodable users. To show
+the strength of this method, we prove that for the additive Gaussian channel
+with Gaussian interfering users, the Gaussian distribution is optimal and the
+achievable rate is the capacity of this channel. To obtain the maximum
+achievable rate, one needs to find the maximum decodable subset of interfering
+users. Due to the large number of possible choices, having efficient algorithms
+that find the set of decodable users with maximum cardinality is desired. To
+this end, we propose an algorithm that enables the receiver to accomplish this
+task in polynomial time.

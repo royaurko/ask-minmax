@@ -1,0 +1,28 @@
+We study the {edge-coloring} problem in the message-passing model of
+distributed computing. This is one of the most fundamental and well-studied
+problems in this area. Currently, the best-known deterministic algorithms for
+(2Delta -1)-edge-coloring requires O(Delta) + log-star n time \cite{PR01},
+where Delta is the maximum degree of the input graph. Also, recent results of
+\cite{BE10} for vertex-coloring imply that one can get an
+O(Delta)-edge-coloring in O(Delta^{epsilon} \cdot \log n) time, and an
+O(Delta^{1 + epsilon})-edge-coloring in O(log Delta log n) time, for an
+arbitrarily small constant epsilon > 0.
+  In this paper we devise a drastically faster deterministic edge-coloring
+algorithm. Specifically, our algorithm computes an O(Delta)-edge-coloring in
+O(Delta^{epsilon}) + log-star n time, and an O(Delta^{1 +
+epsilon})-edge-coloring in O(log Delta) + log-star n time. This result improves
+the previous state-of-the-art {exponentially} in a wide range of Delta,
+specifically, for 2^{Omega(\log-star n)} \leq Delta \leq polylog(n). In
+addition, for small values of Delta our deterministic algorithm outperforms all
+the existing {randomized} algorithms for this problem.
+  On our way to these results we study the {vertex-coloring} problem on the
+family of graphs with bounded {neighborhood independence}. This is a large
+family, which strictly includes line graphs of r-hypergraphs for any r = O(1),
+and graphs of bounded growth. We devise a very fast deterministic algorithm for
+vertex-coloring graphs with bounded neighborhood independence. This algorithm
+directly gives rise to our edge-coloring algorithms, which apply to {general}
+graphs.
+  Our main technical contribution is a subroutine that computes an
+O(Delta/p)-defective p-vertex coloring of graphs with bounded neighborhood
+independence in O(p^2) + \log-star n time, for a parameter p, 1 \leq p \leq
+Delta.

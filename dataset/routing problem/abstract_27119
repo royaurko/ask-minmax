@@ -1,0 +1,15 @@
+We present a localized a-posteriori error estimate for the localized reduced
+basis multi-scale (LRBMS) method [Albrecht, Haasdonk, Kaulmann, Ohlberger
+(2012): The localized reduced basis multiscale method]. The LRBMS is a
+combination of numerical multi-scale methods and model reduction using reduced
+basis methods to efficiently reduce the computational complexity of parametric
+multi-scale problems with respect to the multi-scale parameter $\varepsilon$
+and the online parameter $\mu$ simultaneously. We formulate the LRBMS based on
+a generalization of the SWIPDG discretization presented in [Ern, Stephansen,
+Vohralik (2010): Guaranteed and robust discontinuous Galerkin a posteriori
+error estimates for convection-diffusion-reaction problems] on a coarse
+partition of the domain that allows for any suitable discretization on the fine
+triangulation inside each coarse grid element. The estimator is based on the
+idea of a conforming reconstruction of the discrete diffusive flux, that can be
+computed using local information only. It is offline/online decomposable and
+can thus be efficiently used in the context of model reduction.

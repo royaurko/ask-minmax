@@ -1,0 +1,24 @@
+We present a computational framework for estimating the uncertainty in the
+numerical solution of linearized infinite-dimensional statistical inverse
+problems. We adopt the Bayesian inference formulation: given observational data
+and their uncertainty, the governing forward problem and its uncertainty, and a
+prior probability distribution describing uncertainty in the parameter field,
+find the posterior probability distribution over the parameter field. The prior
+must be chosen appropriately in order to guarantee well-posedness of the
+infinite-dimensional inverse problem and facilitate computation of the
+posterior. Furthermore, straightforward discretizations may not lead to
+convergent approximations of the infinite-dimensional problem. And finally,
+solution of the discretized inverse problem via explicit construction of the
+covariance matrix is prohibitive due to the need to solve the forward problem
+as many times as there are parameters. Our computational framework builds on
+the infinite-dimensional formulation proposed by Stuart (A. M. Stuart, Inverse
+problems: A Bayesian perspective, Acta Numerica, 19 (2010), pp. 451-559), and
+incorporates a number of components aimed at ensuring a convergent
+discretization of the underlying infinite-dimensional inverse problem. The
+framework additionally incorporates algorithms for manipulating the prior,
+constructing a low rank approximation of the data-informed component of the
+posterior covariance operator, and exploring the posterior that together ensure
+scalability of the entire framework to very high parameter dimensions. We
+demonstrate this computational framework on the Bayesian solution of an inverse
+problem in 3D global seismic wave propagation with hundreds of thousands of
+parameters.

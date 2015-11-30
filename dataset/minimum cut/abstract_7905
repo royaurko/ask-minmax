@@ -1,0 +1,23 @@
+A unit cube in $k$ dimensional space (or \emph{$k$-cube} in short) is defined
+as the Cartesian product $R_1\times R_2\times...\times R_k$ where $R_i$(for
+$1\leq i\leq k$) is a closed interval of the form $[a_i,a_i+1]$ on the real
+line. A $k$-cube representation of a graph $G$ is a mapping of the vertices of
+$G$ to $k$-cubes such that two vertices in $G$ are adjacent if and only if
+their corresponding $k$-cubes have a non-empty intersection. The
+\emph{cubicity} of $G$, denoted as $\cubi(G)$, is the minimum $k$ such that $G$
+has a $k$-cube representation. Roberts \cite{Roberts} showed that for any graph
+$G$ on $n$ vertices, $\cubi(G)\leq 2n/3$. Many NP-complete graph problems have
+polynomial time deterministic algorithms or have good approximation ratios in
+graphs of low cubicity. In most of these algorithms, computing a low
+dimensional cube representation of the given graph is usually the first step.
+  We present an efficient algorithm to compute the $k$-cube representation of
+$G$ with maximum degree $\Delta$ in $O(\Delta \ln b)$ dimensions where $b$ is
+the bandwidth of $G$. Bandwidth of $G$ is at most $n$ and can be much lower.
+The algorithm takes as input a bandwidth ordering of the vertices in $G$.
+Though computing the bandwidth ordering of vertices for a graph is NP-hard,
+there are heuristics that perform very well in practice. Even theoretically,
+there is an $O(\log^4 n)$ approximation algorithm for computing the bandwidth
+ordering of a graph using which our algorithm can produce a $k$-cube
+representation of any given graph in $k=O(\Delta(\ln b + \ln\ln n))$
+dimensions. Both the bounds on cubicity are shown to be tight upto a factor of
+$O(\log\log n)$.

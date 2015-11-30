@@ -1,0 +1,14 @@
+Energy disaggregation estimates appliance-by-appliance electricity
+consumption from a single meter that measures the whole home's electricity
+demand. Recently, deep neural networks have driven remarkable improvements in
+classification performance in neighbouring machine learning fields such as
+image classification and automatic speech recognition. In this paper, we adapt
+three deep neural network architectures to energy disaggregation: 1) a form of
+recurrent neural network called `long short-term memory' (LSTM); 2) denoising
+autoencoders; and 3) a network which regresses the start time, end time and
+average power demand of each appliance activation. We test the performance of
+these algorithms on real aggregate power data from five appliances against
+seven metrics. Tests are performed against houses seen during training and
+houses not seen during training. We find that all three neural nets achieve
+better F1 scores (averaged over all five appliances) than either combinatorial
+optimisation or factorial hidden Markov models.

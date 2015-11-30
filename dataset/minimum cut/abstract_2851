@@ -1,0 +1,20 @@
+This paper is concerned with statistical methods for the segmental
+classification of linear sequence data where the task is to segment and
+classify the data according to an underlying hidden discrete state sequence.
+Such analysis is commonplace in the empirical sciences including genomics,
+finance and speech processing. In particular, we are interested in answering
+the following question: given data $y$ and a statistical model $\pi(x,y)$ of
+the hidden states $x$, what should we report as the prediction $\hat{x}$ under
+the posterior distribution $\pi (x|y)$? That is, how should you make a
+prediction of the underlying states? We demonstrate that traditional approaches
+such as reporting the most probable state sequence or most probable set of
+marginal predictions can give undesirable classification artefacts and offer
+limited control over the properties of the prediction. We propose a decision
+theoretic approach using a novel class of Markov loss functions and report
+$\hat{x}$ via the principle of minimum expected loss (maximum expected
+utility). We demonstrate that the sequence of minimum expected loss under the
+Markov loss function can be enumerated exactly using dynamic programming
+methods and that it offers flexibility and performance improvements over
+existing techniques. The result is generic and applicable to any probabilistic
+model on a sequence, such as Hidden Markov models, change point or product
+partition models.

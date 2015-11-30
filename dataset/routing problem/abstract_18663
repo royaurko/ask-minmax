@@ -1,0 +1,21 @@
+We consider symplectic time integrators in numerical General Relativity and
+discuss both free and constrained evolution schemes. For free evolution of
+ADM-like equations we propose the use of the Stoermer-Verlet method, a standard
+symplectic integrator which here is explicit in the computationally expensive
+curvature terms. For the constrained evolution we give a formulation of the
+evolution equations that enforces the momentum constraints in a holonomically
+constrained Hamiltonian system and turns the Hamilton constraint function from
+a weak to a strong invariant of the system. This formulation permits the use of
+the constraint-preserving symplectic RATTLE integrator, a constrained version
+of the Stoermer-Verlet method.
+  The behavior of the methods is illustrated on two effectively 1+1-dimensional
+versions of Einstein's equations, that allow to investigate a perturbed
+Minkowski problem and the Schwarzschild space-time. We compare symplectic and
+non-symplectic integrators for free evolution, showing very different numerical
+behavior for nearly-conserved quantities in the perturbed Minkowski problem.
+Further we compare free and constrained evolution, demonstrating in our
+examples that enforcing the momentum constraints can turn an unstable free
+evolution into a stable constrained evolution. This is demonstrated in the
+stabilization of a perturbed Minkowski problem with Dirac gauge, and in the
+suppression of the propagation of boundary instabilities into the interior of
+the domain in Schwarzschild space-time.

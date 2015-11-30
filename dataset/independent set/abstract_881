@@ -1,0 +1,19 @@
+Social networking sites supporting federated identities offer a convenient
+and increasingly popular mechanism for cross-site authentication.
+Unfortunately, they also exacerbate many privacy and tracking risks. We propose
+Crypto-Book, an anonymizing layer enabling cross-site authentication while
+reducing these risks.
+  Crypto-Book relies on a set of independently managed servers that
+collectively assign each social network identity a public/private keypair. Only
+an identity's owner learns all the private key shares, and can therefore
+construct the private key, while all participants can obtain any user's public
+key, even if the corresponding private key has yet to be retrieved. Having
+obtained an appropriate key set, a user can then leverage anonymous
+authentication techniques such as linkable ring signatures to log into
+third-party web sites while preserving privacy.
+  We have implemented a prototype of Crypto-Book and demonstrate its use with
+three applications: a Wiki system, an anonymous group communication system, and
+a whistleblower submission system. Our results show that for anonymity sets of
+size 100, Crypto-Book login takes 0.56s for signature generation by the client,
+0.38s for signature verification on the server, and requires 5.6KB of
+communication bandwidth.

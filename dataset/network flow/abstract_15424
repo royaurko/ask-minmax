@@ -1,0 +1,17 @@
+Consider a connected network of agents endowed with local cost functions
+representing private objectives. Agents seek to find an agreement on some
+minimizer of the aggregate cost, by means of repeated communications between
+neighbors. Consensus on the average over the network, usually addressed by
+gossip algorithms, is a special instance of this problem, corresponding to
+quadratic private objectives. Consensus on the median, or more generally
+quantiles, is also a special instance, as many more consensus problems. In this
+paper we show that optimizing the aggregate cost function regularized by a
+total variation term has appealing properties. First, it can be done very
+naturally in a distributed way, yielding algorithms that are efficient on
+numerical simulations. Secondly, the optimum for the regularized cost is shown
+to be also the optimum for the initial aggregate cost function under
+assumptions that are simple to state and easily verifiable. Finally, these
+algorithms are robust to unreliable agents that keep injecting some false value
+in the network. This is remarkable enough, and is not the case, for instance,
+of gossip algorithms, that are entirely ruled by unreliable agents as detailed
+in the paper.

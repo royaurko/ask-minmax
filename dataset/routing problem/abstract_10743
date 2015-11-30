@@ -1,0 +1,17 @@
+The dictionary matching with gaps problem is to preprocess a dictionary $D$
+of $d$ gapped patterns $P_1,\ldots,P_d$ over alphabet $\Sigma$, where each
+gapped pattern $P_i$ is a sequence of subpatterns separated by bounded
+sequences of don't cares. Then, given a query text $T$ of length $n$ over
+alphabet $\Sigma$, the goal is to output all locations in $T$ in which a
+pattern $P_i\in D$, $1\leq i\leq d$, ends. There is a renewed current interest
+in the gapped matching problem stemming from cyber security. In this paper we
+solve the problem where all patterns in the dictionary have one gap with at
+least $\alpha$ and at most $\beta$ don't cares, where $\alpha$ and $\beta$ are
+given parameters. Specifically, we show that the dictionary matching with a
+single gap problem can be solved in either $O(d\log d + |D|)$ time and
+$O(d\log^{\varepsilon} d + |D|)$ space, and query time $O(n(\beta -\alpha
+)\log\log d \log ^2 \min \{ d, \log |D| \} + occ)$, where $occ$ is the number
+of patterns found, or preprocessing time and space: $O(d^2 + |D|)$, and query
+time $O(n(\beta -\alpha ) + occ)$, where $occ$ is the number of patterns found.
+As far as we know, this is the best solution for this setting of the problem,
+where many overlaps may exist in the dictionary.

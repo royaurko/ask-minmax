@@ -1,0 +1,21 @@
+This paper proposes a fully decentralized peer-to-peer overlay structure
+GeoP2P, to facilitate geographic location based search and retrieval of
+information. Certain limitations of centralized geographic indexes favor
+peer-to-peer organization of the information, which, in addition to avoiding
+performance bottleneck, allows autonomy over local information. Peer-to-peer
+systems for geographic or multidimensional range queries built on existing DHTs
+suffer from the inaccuracy in linearization of the multidimensional space.
+Other overlay structures that are based on hierarchical partitioning of the
+search space are not scalable because they use special super-peers to represent
+the nodes in the hierarchy. GeoP2P partitions the search space hierarchically,
+maintains the overlay structure and performs the routing without the need of
+any super-peers. Although similar fully-decentralized overlays have been
+previously proposed, they lack the ability to dynamically grow and retract the
+partition hierarchy when the number of peers change. GeoP2P provides such
+adaptive features with minimum perturbation of the system state. Such
+adaptation makes both the routing delay and the state size of each peer
+logarithmic to the total number of peers, irrespective of the size of the
+multidimensional space. Our analysis also reveals that the overlay structure
+and the routing algorithm are generic and independent of several aspects of the
+partitioning hierarchy, such as the geometric shape of the zones or the
+dimensionality of the search space.

@@ -1,0 +1,16 @@
+We address the problem of solving systems of two bivariate polynomials of
+total degree at most $d$ with integer coefficients of maximum bitsize $\tau$.
+It is known that a linear separating form, that is a linear combination of the
+variables that takes different values at distinct solutions of the system, can
+be computed in $\sOB(d^{8}+d^7\tau)$ bit operations (where $O_B$ refers to bit
+complexities and $\sO$ to complexities where polylogarithmic factors are
+omitted) and we focus here on the computation of a Rational Univariate
+Representation (RUR) given a linear separating form. We present an algorithm
+for computing a RUR with worst-case bit complexity in $\sOB(d^7+d^6\tau)$ and
+bound the bitsize of its coefficients by $\sO(d^2+d\tau)$. We show in addition
+that isolating boxes of the solutions of the system can be computed from the
+RUR with $\sOB(d^{8}+d^7\tau)$ bit operations. Finally, we show how a RUR can
+be used to evaluate the sign of a bivariate polynomial (of degree at most $d$
+and bitsize at most $\tau$) at one real solution of the system in
+$\sOB(d^{8}+d^7\tau)$ bit operations and at all the $\Theta(d^2)$ {real}
+solutions in only $O(d)$ times that for one solution.

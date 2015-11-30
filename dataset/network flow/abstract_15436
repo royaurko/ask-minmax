@@ -1,0 +1,11 @@
+We present an efficient algorithm for the inference of stochastic block
+models in large networks. The algorithm can be used as an optimized Markov
+chain Monte Carlo (MCMC) method, with a fast mixing time and a much reduced
+susceptibility to getting trapped in metastable states, or as a greedy
+agglomerative heuristic, with an almost linear $O(N\ln^2N)$ complexity, where
+$N$ is the number of nodes in the network, independent on the number of blocks
+being inferred. We show that the heuristic is capable of delivering results
+which are indistinguishable from the more exact and numerically expensive MCMC
+method in many artificial and empirical networks, despite being much faster.
+The method is entirely unbiased towards any specific mixing pattern, and in
+particular it does not favor assortative community structures.

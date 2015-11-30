@@ -1,0 +1,20 @@
+In this paper, we consider Markov Decision Processes (MDPs) with error
+states. Error states are those states entering which is undesirable or
+dangerous. We define the risk with respect to a policy as the probability of
+entering such a state when the policy is pursued. We consider the problem of
+finding good policies whose risk is smaller than some user-specified threshold,
+and formalize it as a constrained MDP with two criteria. The first criterion
+corresponds to the value function originally given. We will show that the risk
+can be formulated as a second criterion function based on a cumulative return,
+whose definition is independent of the original value function. We present a
+model free, heuristic reinforcement learning algorithm that aims at finding
+good deterministic policies. It is based on weighting the original value
+function and the risk. The weight parameter is adapted in order to find a
+feasible solution for the constrained problem that has a good performance with
+respect to the value function. The algorithm was successfully applied to the
+control of a feed tank with stochastic inflows that lies upstream of a
+distillation column. This control task was originally formulated as an optimal
+control problem with chance constraints, and it was solved under certain
+assumptions on the model to obtain an optimal solution. The power of our
+learning algorithm is that it can be used even when some of these restrictive
+assumptions are relaxed.

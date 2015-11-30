@@ -1,0 +1,19 @@
+Analytical models for IEEE 802.11-based WLANs are invariably based on
+approximations, such as the well-known \textit{decoupling approximation}
+proposed by Bianchi for modeling single cell WLANs consisting of saturated
+nodes. In this paper, we provide a new approach to model the situation when the
+nodes are not saturated. We study a State Dependent Attempt Rate (SDAR)
+approximation to model $M$ queues (one queue per node) served by the CSMA/CA
+protocol as standardized in the IEEE 802.11 DCF MAC protocol. The approximation
+is that, when $n$ of the $M$ queues are non-empty, the transmission attempt
+probability of the $n$ non-empty nodes is given by the long-term transmission
+attempt probability of $n$ "saturated" nodes as provided by Bianchi's model.
+The SDAR approximation reduces a single cell WLAN with non-saturated nodes to a
+"coupled queue system". When packets arrive to the $M$ queues according to
+independent Poisson processes, we provide a Markov model for the coupled queue
+system with SDAR service. \textit{The main contribution of this paper is to
+provide an analysis of the coupled queue process by studying a lower
+dimensional process, and by introducing a certain conditional independence
+approximation}. We show that the SDAR model of contention provides an accurate
+model for the DCF MAC protocol in single cells, and report the simulation
+speed-ups thus obtained by our \textit{model-based simulation}.

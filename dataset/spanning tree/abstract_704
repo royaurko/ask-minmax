@@ -1,0 +1,17 @@
+A data structure is presented for the Mergeable Dictionary abstract data
+type, which supports the following operations on a collection of disjoint sets
+of totally ordered data: Predecessor-Search, Split and Merge. While
+Predecessor-Search and Split work in the normal way, the novel operation is
+Merge. While in a typical mergeable dictionary (e.g. 2-4 Trees), the Merge
+operation can only be performed on sets that span disjoint intervals in
+keyspace, the structure here has no such limitation, and permits the merging of
+arbitrarily interleaved sets. Tarjan and Brown present a data structure which
+can handle arbitrary Merge operations in O(log n) amortized time per operation
+if the set of operations is restricted to exclude the Split operation. In the
+presence of Split operations, the amortized time complexity of their structure
+becomes \Omega(n). A data structure which supports both Split and Merge
+operations in O(log^2 n) amortized time per operation was given by Farach and
+Thorup. In contrast, our data structure supports all operations, including
+Split and Merge, in O(log n) amortized time, thus showing that interleaved
+Merge operations can be supported at no additional cost vis-a-vis disjoint
+Merge operations.

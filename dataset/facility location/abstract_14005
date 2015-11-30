@@ -1,0 +1,18 @@
+Although it has been widely discussed in video surveillance, background
+subtraction is still an open problem in the context of complex scenarios, e.g.,
+dynamic backgrounds, illumination variations, and indistinct foreground
+objects. To address these challenges, we propose an effective background
+subtraction method by learning and maintaining an array of dynamic texture
+models within the spatio-temporal representations. At any location of the
+scene, we extract a sequence of regular video bricks, i.e. video volumes
+spanning over both spatial and temporal domain. The background modeling is thus
+posed as pursuing subspaces within the video bricks while adapting the scene
+variations. For each sequence of video bricks, we pursue the subspace by
+employing the ARMA (Auto Regressive Moving Average) Model that jointly
+characterizes the appearance consistency and temporal coherence of the
+observations. During online processing, we incrementally update the subspaces
+to cope with disturbances from foreground objects and scene changes. In the
+experiments, we validate the proposed method in several complex scenarios, and
+show superior performances over other state-of-the-art approaches of background
+subtraction. The empirical studies of parameter setting and component analysis
+are presented as well.

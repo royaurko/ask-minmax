@@ -1,0 +1,14 @@
+Estimation of Distribution Algorithms (EDAs) require flexible probability
+models that can be efficiently learned and sampled. Autoencoders (AE) are
+generative stochastic networks with these desired properties. We integrate a
+special type of AE, the Denoising Autoencoder (DAE), into an EDA and evaluate
+the performance of DAE-EDA on several combinatorial optimization problems with
+a single objective. We asses the number of fitness evaluations as well as the
+required CPU times. We compare the results to the performance to the Bayesian
+Optimization Algorithm (BOA) and RBM-EDA, another EDA which is based on a
+generative neural network which has proven competitive with BOA. For the
+considered problem instances, DAE-EDA is considerably faster than BOA and
+RBM-EDA, sometimes by orders of magnitude. The number of fitness evaluations is
+higher than for BOA, but competitive with RBM-EDA. These results show that DAEs
+can be useful tools for problems with low but non-negligible fitness evaluation
+costs.

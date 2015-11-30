@@ -1,0 +1,29 @@
+We tackle the problem of planning in nondeterministic domains, by presenting
+a new approach to conformant planning. Conformant planning is the problem of
+finding a sequence of actions that is guaranteed to achieve the goal despite
+the nondeterminism of the domain. Our approach is based on the representation
+of the planning domain as a finite state automaton. We use Symbolic Model
+Checking techniques, in particular Binary Decision Diagrams, to compactly
+represent and efficiently search the automaton. In this paper we make the
+following contributions. First, we present a general planning algorithm for
+conformant planning, which applies to fully nondeterministic domains, with
+uncertainty in the initial condition and in action effects. The algorithm is
+based on a breadth-first, backward search, and returns conformant plans of
+minimal length, if a solution to the planning problem exists, otherwise it
+terminates concluding that the problem admits no conformant solution. Second,
+we provide a symbolic representation of the search space based on Binary
+Decision Diagrams (BDDs), which is the basis for search techniques derived from
+symbolic model checking. The symbolic representation makes it possible to
+analyze potentially large sets of states and transitions in a single
+computation step, thus providing for an efficient implementation. Third, we
+present CMBP (Conformant Model Based Planner), an efficient implementation of
+the data structures and algorithm described above, directly based on BDD
+manipulations, which allows for a compact representation of the search layers
+and an efficient implementation of the search steps. Finally, we present an
+experimental comparison of our approach with the state-of-the-art conformant
+planners CGP, QBFPLAN and GPT. Our analysis includes all the planning problems
+from the distribution packages of these systems, plus other problems defined to
+stress a number of specific factors. Our approach appears to be the most
+effective: CMBP is strictly more expressive than QBFPLAN and CGP and, in all
+the problems where a comparison is possible, CMBP outperforms its competitors,
+sometimes by orders of magnitude.

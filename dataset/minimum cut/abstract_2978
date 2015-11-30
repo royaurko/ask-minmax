@@ -1,0 +1,23 @@
+Access control is fundamental to computer security, and has thus been the
+subject of extensive formal study. In particular, *relative expressiveness
+analysis* techniques have used formal mappings called *simulations* to explore
+whether one access control system is capable of emulating another, thereby
+comparing the expressive power of these systems. Unfortunately, the notions of
+expressiveness simulation that have been explored vary widely, which makes it
+difficult to compare results in the literature, and even leads to apparent
+contradictions between results. Furthermore, some notions of expressiveness
+simulation make use of non-determinism, and thus cannot be used to define
+mappings between access control systems that are useful in practical scenarios.
+In this work, we define the minimum set of properties for an *implementable*
+access control simulation; i.e., a deterministic "recipe" for using one system
+in place of another. We then define a wide range of properties spread across
+several dimensions that can be enforced on top of this minimum definition.
+These properties define a taxonomy that can be used to separate and compare
+existing notions of access control simulation, many of which were previously
+incomparable. We position existing notions of simulation within our properties
+lattice by formally proving each simulation's equivalence to a corresponding
+set of properties. Lastly, we take steps towards bridging the gap between
+theory and practice by exploring the systems implications of points within our
+properties lattice. This shows that relative expressive analysis is more than
+just a theoretical tool, and can also guide the choice of the most suitable
+access control system for a specific application or scenario.

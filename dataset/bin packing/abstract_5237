@@ -1,0 +1,20 @@
+The cross-correlation function (CCF) is commonly employed in the study of
+AGN, where it is used to probe the structure of the broad line region by line
+reverberation, to study the continuum emission mechanism by correlating
+multi-waveband light curves and to seek correlations between the variability
+and other AGN properties. The z -transformed discrete correlation function
+(ZDCF) is a new method for estimating the CCF of sparse, unevenly sampled light
+curves. Unlike the commonly used interpolation method, it does not assume that
+the light curves are smooth and it does provide errors on its estimates. The
+ZDCF corrects several biases of the discrete correlation function method of
+Edelson & Krolik (1988) by using equal population binning and Fisher's z
+-transform. These lead to a more robust and powerful method of estimating the
+CCF of sparse light curves of as few as 12 points. Two examples of light curve
+analysis with the ZDCF are presented. 1) The ZDCF estimate of the
+auto-correlation function is used to uncover a correlation between AGN
+magnitude and variability time scale in a small simulated sample of very sparse
+and irregularly sampled light curves. 2) A maximum likelihood function for the
+ZDCF peak location is used to estimate the time-lag between two light curves.
+Fortran 77 and 95 code implementations of the ZDCF and the maximum likelihood
+peak location (PLIKE) algorithms are freely available (see
+http://www.weizmann.ac.il/weizsites/tal/research/software/).

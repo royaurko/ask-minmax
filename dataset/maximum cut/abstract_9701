@@ -1,0 +1,8 @@
+We present PEANUT (ParallEl AligNment UTility), a highly parallel GPU-based
+read mapper with several distinguishing features, including a novel q-gram
+index (called the q-group index) with small memory footprint built on-the-fly
+over the reads and the possibility to output both the best hits or all hits of
+a read. Designing the algorithm particularly for the GPU architecture, we were
+able to reach maximum core occupancy for several key steps. Our benchmarks show
+that PEANUT outperforms other state-of- the-art mappers in terms of speed and
+sensitivity. The software is available at http://peanut.readthedocs.org.

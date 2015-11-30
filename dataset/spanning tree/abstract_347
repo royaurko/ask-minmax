@@ -1,0 +1,19 @@
+Linear system solving is one of the main workhorses in applied mathematics.
+Recently, theoretical computer scientists have contributed sophisticated
+algorithms for solving linear systems with symmetric diagonally dominant
+matrices (a class to which Laplacian matrices belong) in provably nearly-linear
+time. While these algorithms are highly interesting from a theoretical
+perspective, there are no published results how they perform in practice.
+  With this paper we address this gap. We provide the first implementation of
+the combinatorial solver by [Kelner et al., STOC 2013], which is particularly
+appealing for implementation due to its conceptual simplicity. The algorithm
+exploits that a Laplacian matrix corresponds to a graph; solving Laplacian
+linear systems amounts to finding an electrical flow in this graph with the
+help of cycles induced by a spanning tree with the low-stretch property.
+  The results of our comprehensive experimental study are ambivalent. They
+confirm a nearly-linear running time, but for reasonable inputs the constant
+factors make the solver much slower than methods with higher asymptotic
+complexity. One other aspect predicted by theory is confirmed by our findings,
+though: Spanning trees with lower stretch indeed reduce the solver's running
+time. Yet, simple spanning tree algorithms perform in practice better than
+those with a guaranteed low stretch.

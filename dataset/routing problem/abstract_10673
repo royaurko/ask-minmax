@@ -1,0 +1,19 @@
+In this work we solve a special case of the problem of building an
+n-dimensional parallelepiped using a given set of n-dimensional
+parallelepipeds. Consider the identity x^3 = x(x-1)(x-2)+3x(x-1+x). For
+sufficiently large x, we associate with x^3 a cube with edges of size x, with
+x(x-1)(x-2) a parallelepiped with edges x, x-1, x-2, with 3x(x-1+x) three
+parallelepipeds of edges x, x-1, 1, and with x a parallelepiped of edges x, 1,
+1. The problem we takle is the actual construction of the cube using the given
+parallelepipeds. In [DDNP90] it was shown how to solve this specific problem
+and all similar instances in which a (monic) polynomial is expressed as a
+linear combination of a persistent basis. That is to say a sequence of
+polynomials q_0 = 1, and q_k(x) = q_{k-1}(x)(x-r_k) for k > 0. Here, after
+[Fil10], we deal with a multivariate version of the problem with respect to a
+basis of polynomials of the same degree (binomial basis). We show that it is
+possible to build the parallelepiped associated with a multivariate polynomial
+P(x_1, ..., x_n)=(x_1- s_1)...(x_n-s_n) with integer roots, using the
+parallelepipeds described by the elements of the basis. We provide an algorithm
+in Mathematica to solve the problem for each n. Moreover, for n = 2, 3, 4 (in
+the latter case, only when a projection is possible) we use Mathematica to
+display a step by step construction of the parallelepiped P(x1,...,x_n).

@@ -1,0 +1,14 @@
+Following a recent surge in using history-based methods for resolving
+perceptual aliasing in reinforcement learning, we introduce an algorithm based
+on the feature reinforcement learning framework called PhiMDP. To create a
+practical algorithm we devise a stochastic search procedure for a class of
+context trees based on parallel tempering and a specialized proposal
+distribution. We provide the first empirical evaluation for PhiMDP. Our
+proposed algorithm achieves superior performance to the classical U-tree
+algorithm and the recent active-LZ algorithm, and is competitive with
+MC-AIXI-CTW that maintains a bayesian mixture over all context trees up to a
+chosen depth.We are encouraged by our ability to compete with this
+sophisticated method using an algorithm that simply picks one single model, and
+uses Q-learning on the corresponding MDP. Our PhiMDP algorithm is much simpler,
+yet consumes less time and memory. These results show promise for our future
+work on attacking more complex and larger problems.

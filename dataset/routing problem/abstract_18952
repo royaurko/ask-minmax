@@ -1,0 +1,17 @@
+Let $k$ and $n$ be positive integers. Define $R(n,k)$ to be the minimum
+positive value of $$ | e_i \sqrt{s_1} + e_2 \sqrt{s_2} + ... + e_k \sqrt{s_k}
+-t | $$ where $ s_1, s_2, ..., s_k$ are positive integers no larger than $n$,
+$t$ is an integer and $e_i\in \{1,0, -1\}$ for all $1\leq i\leq k$. It is
+important in computational geometry to determine a good lower and upper bound
+of $ R(n,k)$. In this paper we show that this problem is closely related to the
+shortest vector problem in certain integral lattices and present an algorithm
+to find lower bounds based on lattice reduction algorithms. Although we can
+only prove an exponential time upper bound for the algorithm, it is efficient
+for large $k$ when an exhaustive search for the minimum value is clearly
+infeasible. It produces lower bounds much better than the root separation
+technique does. Based on numerical data, we formulate a conjecture on the
+length of the shortest nonzero vector in the lattice, whose validation implies
+that our algorithm runs in polynomial time and the problem of comparing two
+sums of square roots of small integers can be solved in polynomial time. As a
+side result, we obtain constructive upper bounds for $R(n,k)$ when $ n$ is much
+smaller than $2^{2k}$.

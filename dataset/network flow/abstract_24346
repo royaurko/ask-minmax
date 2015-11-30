@@ -1,0 +1,13 @@
+In learning belief networks, the single link lookahead search is widely
+adopted to reduce the search space. We show that there exists a class of
+probabilistic domain models which displays a special pattern of dependency. We
+analyze the behavior of several learning algorithms using different scoring
+metrics such as the entropy, conditional independence, minimal description
+length and Bayesian metrics. We demonstrate that single link lookahead search
+procedures (employed in these algorithms) cannot learn these models correctly.
+Thus, when the underlying domain model actually belongs to this class, the use
+of a single link search procedure will result in learning of an incorrect
+model. This may lead to inference errors when the model is used. Our analysis
+suggests that if the prior knowledge about a domain does not rule out the
+possible existence of these models, a multi-link lookahead search or other
+heuristics should be used for the learning process.

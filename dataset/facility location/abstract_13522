@@ -1,0 +1,14 @@
+This article presents a fast solver for the dense "frontal" matrices that
+arise from the multifrontal sparse elimination process of 3D elliptic PDEs. The
+solver relies on the fact that these matrices can be efficiently represented as
+a hierarchically off-diagonal low-rank (HODLR) matrix. To construct the
+low-rank approximation of the off-diagonal blocks, we propose a new
+pseudo-skeleton scheme, the boundary distance low-rank approximation, that
+picks rows and columns based on the location of their corresponding vertices in
+the sparse matrix graph. We compare this new low-rank approximation method to
+the adaptive cross approximation (ACA) algorithm and show that it achieves
+betters speedup specially for unstructured meshes. Using the HODLR direct
+solver as a preconditioner (with a low tolerance) to the GMRES iterative
+scheme, we can reach machine accuracy much faster than a conventional LU
+solver. Numerical benchmarks are provided for frontal matrices arising from 3D
+finite element problems corresponding to a wide range of applications.

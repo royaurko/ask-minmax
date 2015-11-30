@@ -1,0 +1,19 @@
+We study the fundamental network capacity of a multi-user wireless downlink
+under two assumptions: (1) Channels are not explicitly measured and thus
+instantaneous states are unknown, (2) Channels are modeled as ON/OFF Markov
+chains. This is an important network model to explore because channel probing
+may be costly or infeasible in some contexts. In this case, we can use channel
+memory with ACK/NACK feedback from previous transmissions to improve network
+throughput. Computing in closed form the capacity region of this network is
+difficult because it involves solving a high dimension partially observed
+Markov decision problem. Instead, in this paper we construct an inner and outer
+bound on the capacity region, showing that the bound is tight when the number
+of users is large and the traffic is symmetric. For the case of heterogeneous
+traffic and any number of users, we propose a simple queue-dependent policy
+that can stabilize the network with any data rates strictly within the inner
+capacity bound. The stability analysis uses a novel frame-based Lyapunov drift
+argument. The outer-bound analysis uses stochastic coupling and state
+aggregation to bound the performance of a restless bandit problem using a
+related multi-armed bandit system. Our results are useful in cognitive radio
+networks, opportunistic scheduling with delayed/uncertain channel state
+information, and restless bandit problems.

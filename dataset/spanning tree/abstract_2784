@@ -1,0 +1,23 @@
+With the huge variety of data and equally large-scale systems, there is not a
+unique execution setting for these systems which can guarantee the best
+performance for each query. In this project, we tried so study the impact of
+different execution settings on execution time of workloads by varying them one
+at a time. Using the data from these experiments, a decision tree was built
+where each internal node represents the execution parameter, each branch
+represents value chosen for the parameter and each leaf node represents a range
+for execution time in minutes. The attribute in the decision tree to split the
+dataset on is selected based on the maximum information gain or lowest entropy.
+Once the tree is trained with the training samples, this tree can be used to
+get approximate range for the expected execution time. When the actual
+execution time differs from this expected value, a performance anomaly can be
+detected. For a test dataset with 400 samples, 99% of samples had actual
+execution time in the range predicted time by the decision tree. Also on
+analyzing the constructed tree, an idea about what configuration can give
+better performance for a given workload can be obtained. Initial experiments
+suggest that the impact an execution parameter can have on the target attribute
+(here execution time) can be related to the distance of that feature node from
+the root of the constructed decision tree. From initial results the percent
+change in the values of the target attribute for various value of the feature
+node which is closer to the root is 6 times larger than when that same iii
+feature node is away from the root node. This observation will depend on how
+well the decision tree was trained and may not be true for every case.

@@ -1,0 +1,13 @@
+We solve the inverse problem of deblurring a pixelized image of Jupiter using
+regularized deconvolution and by sample-based Bayesian inference. By
+efficiently sampling the marginal posterior distribution for hyperparameters,
+then the full conditional for the deblurred image, we find that we can perform
+posterior sampling \emph{faster} than regularized inversion, when selection of
+the regularizing parameter is considered. Comparison to random-walk
+Metropolis-Hastings and block Gibbs MCMC shows that marginal then conditional
+sampling also outperforms these more common sampling algorithms, and has much
+better scaling with problem size. These conclusions also hold for other
+linear-Gaussian inverse problems when problem-specific computations are
+feasible, and in the infinite dimensional limit when that limit exists,
+implying that sample-based Bayesian inference may be performed more cheaply
+than regularized inversion and directly over function spaces.

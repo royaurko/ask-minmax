@@ -1,0 +1,14 @@
+Mapping applications onto heterogeneous platforms is a difficult challenge,
+even for simple application patterns such as pipeline graphs. The problem is
+even more complex when processors are subject to failure during the execution
+of the application. In this paper, we study the complexity of a bi-criteria
+mapping which aims at optimizing the latency (i.e., the response time) and the
+reliability (i.e., the probability that the computation will be successful) of
+the application. Latency is minimized by using faster processors, while
+reliability is increased by replicating computations on a set of processors.
+However, replication increases latency (additional communications, slower
+processors). The application fails to be executed only if all the processors
+fail during execution. While simple polynomial algorithms can be found for
+fully homogeneous platforms, the problem becomes NP-hard when tackling
+heterogeneous platforms. This is yet another illustration of the additional
+complexity added by heterogeneity.

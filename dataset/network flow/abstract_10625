@@ -1,0 +1,21 @@
+A reaction network consists of a finite number of species, which interact
+through predefined reaction channels. Traditionally such networks were modeled
+deterministically, but it is now well-established that when reactant copy
+numbers are small, the random timing of the reactions create internal noise
+that can significantly affect the macroscopic properties of the system. To
+understand the role of noise and quantify its effects, stochastic models are
+necessary. In the stochastic setting, the population is described by a
+probability distribution, which evolves according to a set of ordinary
+differential equations known as the Chemical Master Equation (CME). This set is
+infinite in most cases making the CME practically unsolvable. In many
+applications, it is important to determine if the solution of a CME has a
+globally attracting fixed point. This property is called ergodicity and its
+presence leads to several important insights about the underlying dynamics. The
+goal of this paper is to present a simple procedure to verify ergodicity in
+stochastic reaction networks. We provide a set of simple linear-algebraic
+conditions which are sufficient for the network to be ergodic. In particular,
+our main condition can be cast as a Linear Feasibility Problem (LFP) which is
+essentially the problem of determining the existence of a vector satisfying
+certain linear constraints. The inherent scalability of LFPs make our approach
+efficient, even for very large networks. We illustrate our procedure through an
+example from systems biology.

@@ -1,0 +1,21 @@
+This paper proposes a Hermite-kernel realization of the conjugate filter
+oscillation reduction (CFOR) scheme for the simulation of fluid flows. The
+Hermite kernel is constructed by using the discrete singular convolution (DSC)
+algorithm, which provides a systematic generation of low-pass filter and its
+conjugate high-pass filters. The high-pass filters are utilized for
+approximating spatial derivatives in solving flow equations, while the
+conjugate low-pass filter is activated to eliminate spurious oscillations
+accumulated during the time evolution of a flow. As both low-pass and high-pass
+filters are derived from the Hermite kernel, they have similar regularity,
+time-frequency localization, effective frequency band and compact support.
+Fourier analysis indicates that the CFOR-Hermite scheme yields a nearly optimal
+resolution and has a better approximation to the ideal low-pass filter than
+previously CFOR schemes. Thus, it has better potential for resolving natural
+high frequency oscillations from a shock. Extensive one- and two-dimensional
+numerical examples, including both incompressible and compressible flows, with
+or without shocks, are employed to explore the utility, test the resolution,
+and examine the stability of the present CFOR-Hermite scheme. Extremely small
+ratio of point-per-wavelength (PPW) is achieved in solving the Taylor problem,
+advancing a wavepacket and resolving a shock/entropy wave interaction. The
+present results for the advection of an isentropic vortex compare very
+favorably to those in the literature.

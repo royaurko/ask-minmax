@@ -1,0 +1,23 @@
+In wireless networks, the presence of interference among wireless links in-
+troduces dependencies among flows that do not share a single link or node. As a
+result, when designing a resource allocation scheme, be it a medium access
+scheduler or a flow rate controller, one needs to consider the interdependence
+among nodes within interference range of each other. Specifically, control
+plane information needs to reach nearby nodes which often lie outside the
+communi- cation range, but within the interference range of a node of interest.
+But how can one communicate control plane information well beyond the existing
+communication range? To address this fundamental need we introduce tag
+spotting. Tag spotting refers to a communication system which allows re- liable
+control data transmission at SNR values as low as 0 dB. It does this by
+employing a number of signal encoding techniques including adding redundancy to
+multitone modulation, shaping the spectrum to reduce inter-carrier interfer-
+ence, and the use of algebraic coding. Making use of a detection theory-based
+model we analyze the performance achievable by our modulation as well as the
+trade-off between the rate of the information transmitted and the likelihood of
+error. Using real-world experiments on an OFDM system built with software
+radios, we show that we can transmit data at the target SNR value of 0 dB with
+a 6% overhead; that is, 6% of our packet is used for our low-SNR decodable tags
+(which carry up to a couple of bytes of data in our testbed), while the remain-
+ing 94% is used for traditional header and payload data. We also demonstrate
+via simulations how tag spotting can be used in implementing fair and efficient
+rate control and scheduling schemes.

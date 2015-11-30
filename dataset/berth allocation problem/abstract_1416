@@ -1,0 +1,14 @@
+Large scale-free graphs are famously difficult to process efficiently: the
+highly skewed vertex degree distribution makes it difficult to obtain balanced
+workload partitions for parallel processing. Our research instead aims to take
+advantage of vertex degree heterogeneity by partitioning the workload to match
+the strength of the individual computing elements in a hybrid architecture.
+This paper extends the direction-optimized breadth first search algorithm to
+work efficiently on hybrid, GPU-accelerated platforms. We present the key graph
+partitioning, workload allocation, and communication strategies required for
+massive concurrency and good overall performance. We show that exploiting
+specialization enables gains as high as 2.4x in terms of time-to-solution and
+2.0x in terms of energy efficiency by adding 2 GPUs to a 2 CPU-only baseline,
+for synthetic graphs with up to 16 Billion undirected edges as well as for
+real-world graphs. We also show that, for a capped energy envelope, it is more
+efficient to add a GPU than an additional CPU.

@@ -1,0 +1,13 @@
+This paper presents a new type of genetic algorithm for the set covering
+problem. It differs from previous evolutionary approaches first because it is
+an indirect algorithm, i.e. the actual solutions are found by an external
+decoder function. The genetic algorithm itself provides this decoder with
+permutations of the solution variables and other parameters. Second, it will be
+shown that results can be further improved by adding another indirect
+optimisation layer. The decoder will not directly seek out low cost solutions
+but instead aims for good exploitable solutions. These are then post optimised
+by another hill-climbing algorithm. Although seemingly more complicated, we
+will show that this three-stage approach has advantages in terms of solution
+quality, speed and adaptability to new types of problems over more direct
+approaches. Extensive computational results are presented and compared to the
+latest evolutionary and other heuristic approaches to the same data instances.

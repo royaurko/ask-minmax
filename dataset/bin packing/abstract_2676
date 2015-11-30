@@ -1,0 +1,22 @@
+Biomedical studies have a common interest in assessing relationships between
+multiple related health outcomes and high-dimensional predictors. For example,
+in reproductive epidemiology, one may collect pregnancy outcomes such as length
+of gestation and birth weight and predictors such as single nucleotide
+polymorphisms in multiple candidate genes and environmental exposures. In such
+settings, there is a need for simple yet flexible methods for selecting true
+predictors of adverse health responses from a high-dimensional set of candidate
+predictors. To address this problem, one may either consider linear regression
+models for the continuous outcomes or convert these outcomes into binary
+indicators of adverse responses using pre-defined cutoffs. The former strategy
+has the disadvantage of often leading to a poorly fitting model that does not
+predict risk well, while the latter approach can be very sensitive to the
+cutoff choice. As a simple yet flexible alternative, we propose a method for
+adverse subpopulation regression (ASPR), which relies on a two component latent
+class model, with the dominant component corresponding to (presumed) healthy
+individuals and the risk of falling in the minority component characterized via
+a logistic regression. The logistic regression model is designed to accommodate
+high-dimensional predictors, as occur in studies with a large number of gene by
+environment interactions, through use of a flexible nonparametric multiple
+shrinkage approach. The Gibbs sampler is developed for posterior computation.
+The methods are evaluated using simulation studies and applied to a genetic
+epidemiology study of pregnancy outcomes.

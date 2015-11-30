@@ -1,0 +1,17 @@
+In 1998, Blaze, Bleumer, and Strauss suggested a cryptographic primitive
+named proxy re-signatures where a proxy turns a signature computed under
+Alice's secret key into one from Bob on the same message. The semi-trusted
+proxy does not learn either party's signing key and cannot sign arbitrary
+messages on behalf of Alice or Bob. At CCS 2005, Ateniese and Hohenberger
+revisited the primitive by providing appropriate security definitions and
+efficient constructions in the random oracle model. Nonetheless, they left open
+the problem of designing a multi-use unidirectional scheme where the proxy is
+able to translate in only one direction and signatures can be re-translated
+several times.
+  This paper solves this problem, suggested for the first time 10 years ago,
+and shows the first multi-hop unidirectional proxy re-signature schemes. We
+describe a random-oracle-using system that is secure in the
+Ateniese-Hohenberger model. The same technique also yields a similar
+construction in the standard model (i.e. without relying on random oracles).
+Both schemes are efficient and require newly defined -- but falsifiable --
+Diffie-Hellman-like assumptions in bilinear groups.

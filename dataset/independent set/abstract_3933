@@ -1,0 +1,18 @@
+A Monte Carlo algorithm is said to be adaptive if it automatically calibrates
+its current proposal distribution using past simulations. The choice of the
+parametric family that defines the set of proposal distributions is critical
+for good performance. In this paper, we present such a parametric family for
+adaptive sampling on high-dimensional binary spaces. A practical motivation for
+this problem is variable selection in a linear regression context. We want to
+sample from a Bayesian posterior distribution on the model space using an
+appropriate version of Sequential Monte Carlo. Raw versions of Sequential Monte
+Carlo are easily implemented using binary vectors with independent components.
+For high-dimensional problems, however, these simple proposals do not yield
+satisfactory results. The key to an efficient adaptive algorithm are binary
+parametric families which take correlations into account, analogously to the
+multivariate normal distribution on continuous spaces. We provide a review of
+models for binary data and make one of them work in the context of Sequential
+Monte Carlo sampling. Computational studies on real life data with about a
+hundred covariates suggest that, on difficult instances, our Sequential Monte
+Carlo approach clearly outperforms standard techniques based on Markov chain
+exploration.

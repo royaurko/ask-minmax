@@ -1,0 +1,22 @@
+In this article we consider the inversion problem for polynomially computable
+discrete functions. These functions describe behavior of many discrete systems
+and are used in model checking, hardware verification, cryptanalysis, computer
+biology and other domains. Quite often it is necessary to invert these
+functions, i.e. to find an unknown preimage if an image and algorithm of
+function computation are given. In general case this problem is computationally
+intractable. However, many of it's special cases are very important in
+practical applications. Thus development of algorithms that are applicable to
+these special cases is of importance. The practical applicability of such
+algorithms can be validated by their ability to solve the problems that are
+considered to be computationally hard (for example cryptanalysis problems). In
+this article we propose the technology of solving the inversion problem for
+polynomially computable discrete functions. This technology was implemented in
+distributed computing environments (parallel clusters and Grid-systems). It is
+based on reducing the inversion problem for the considered function to some SAT
+problem. We describe a general approach to coarse-grained parallelization for
+obtained SAT problems. Efficiency of each parallelization scheme is determined
+by the means of a special predictive function. The proposed technology was
+validated by successful solving of cryptanalysis problems for some keystream
+generators. The main practical result of this work is a complete cryptanalysis
+of keystream generator A5/1 which was performed in a Grid system specially
+built for this task.

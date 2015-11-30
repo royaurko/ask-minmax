@@ -1,0 +1,17 @@
+Achieving high performance in many distributed systems, ranging from clouds
+to multicore processors, requires finding good assignments of threads to
+servers as well as effectively allocating each server's resources to its
+assigned threads. Both the assignment and allocation component of this problem
+have been studied extensively, though separately in the literature. In this
+paper, we introduce the \emph{assign and allocate (AA)} problem, which seeks to
+simultaneously find an assignment and allocations that maximize the total
+utility of the threads. We first show that this problem is NP-hard, even when
+there are only two servers. We then present a $2 (\sqrt{2}-1) > 0.828$ factor
+approximation algorithm, which runs in $O(mn^2 + n (\log mC)^2)$ time for $n$
+threads and $m$ servers with $C$ amount of resources each. We also present a
+faster algorithm with the same approximation ratio and $O(n (\log mC)^2)$
+running time. We conducted experiments to test the performance of our algorithm
+on different types of threads, and found that it achieves over 99\% of the
+optimal utility on average. We also compared our algorithm against several
+other assignment and allocation algorithms, and found that it achieves up to
+5.7 times better total utility.

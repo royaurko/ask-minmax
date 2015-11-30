@@ -1,0 +1,16 @@
+We present a computer-aided programming approach to concurrency. The approach
+allows programmers to program assuming a friendly, non-preemptive scheduler,
+and our synthesis procedure inserts synchronization to ensure that the final
+program works even with a preemptive scheduler. The correctness specification
+is implicit, inferred from the non-preemptive behavior. Let us consider
+sequences of calls that the program makes to an external interface. The
+specification requires that any such sequence produced under a preemptive
+scheduler should be included in the set of such sequences produced under a
+non-preemptive scheduler. The solution is based on a finitary abstraction, an
+algorithm for bounded language inclusion modulo an independence relation, and
+rules for inserting synchronization. We apply the approach to device-driver
+programming, where the driver threads call the software interface of the device
+and the API provided by the operating system. Our experiments demonstrate that
+our synthesis method is precise and efficient, and, since it does not require
+explicit specifications, is more practical than the conventional approach based
+on user-provided assertions.

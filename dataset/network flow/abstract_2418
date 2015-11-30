@@ -1,0 +1,17 @@
+Distributed storage systems for large-scale applications typically use
+replication for reliability. Recently, erasure codes were used to reduce the
+large storage overhead, while increasing data reliability. A main limitation of
+off-the-shelf erasure codes is their high-repair cost during single node
+failure events. A major open problem in this area has been the design of codes
+that {\it i)} are repair efficient and {\it ii)} achieve arbitrarily high data
+rates.
+  In this paper, we explore the repair metric of {\it locality}, which
+corresponds to the number of disk accesses required during a
+{\color{black}single} node repair. Under this metric we characterize an
+information theoretic trade-off that binds together locality, code distance,
+and the storage capacity of each node. We show the existence of optimal {\it
+locally repairable codes} (LRCs) that achieve this trade-off. The achievability
+proof uses a locality aware flow-graph gadget which leads to a randomized code
+construction. Finally, we present an optimal and explicit LRC that achieves
+arbitrarily high data-rates. Our locality optimal construction is based on
+simple combinations of Reed-Solomon blocks.

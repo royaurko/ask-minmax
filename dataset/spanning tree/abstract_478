@@ -1,0 +1,18 @@
+Motivated by privacy preservation for outsourced data, data-oblivious
+external memory is a computational framework where a client performs
+computations on data stored at a semi-trusted server in a way that does not
+reveal her data to the server. This approach facilitates collaboration and
+reliability over traditional frameworks, and it provides privacy protection,
+even though the server has full access to the data and he can monitor how it is
+accessed by the client. The challenge is that even if data is encrypted, the
+server can learn information based on the client data access pattern; hence,
+access patterns must also be obfuscated. We investigate privacy-preserving
+algorithms for outsourced external memory that are based on the use of
+data-oblivious algorithms, that is, algorithms where each possible sequence of
+data accesses is independent of the data values. We give new efficient
+data-oblivious algorithms in the outsourced external memory model for a number
+of fundamental graph problems. Our results include new data-oblivious
+external-memory methods for constructing minimum spanning trees, performing
+various traversals on rooted trees, answering least common ancestor queries on
+trees, computing biconnected components, and forming open ear decompositions.
+None of our algorithms make use of constant-time random oracles.

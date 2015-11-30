@@ -1,0 +1,12 @@
+We present an efficient algorithm for finding all approximate occurrences of
+a given pattern $p$ of length $m$ in a text $t$ of length $n$ allowing for
+translocations of equal length adjacent factors and inversions of factors. The
+algorithm is based on an efficient filtering method and has an
+$\bigO(nm\max(\alpha, \beta))$-time complexity in the worst case and
+$\bigO(\max(\alpha, \beta))$-space complexity, where $\alpha$ and $\beta$ are
+respectively the maximum length of the factors involved in any translocation
+and inversion. Moreover we show that under the assumptions of equiprobability
+and independence of characters our algorithm has a $\bigO(n)$ average time
+complexity, whenever $\sigma = \Omega(\log m / \log\log^{1-\epsilon} m)$, where
+$\epsilon > 0$ and $\sigma$ is the dimension of the alphabet. Experiments show
+that the new proposed algorithm achieves very good results in practical cases.

@@ -1,0 +1,14 @@
+It is generally hard to count, or even estimate, how many integer points lie
+in a polytope P. Barvinok and Hartigan have approached the problem by way of
+information theory, showing how to efficiently compute a random vector which
+samples the integer points of P with (computable) constant mass, but which may
+also land outside P. Thus, to count the integer points of P, it suffices to
+determine the frequency with which the random vector falls in P.
+  We prove a collection of efficiently computable upper bounds on this
+frequency. We also show that if P is suitably presented by n linear
+inequalities and m linear equations (m fixed), then under mild conditions
+separating the expected value of the above random vector from the origin, the
+frequency with which it falls in P is O(n^{-m/2}) as n -> infinity. As in the
+classical Littlewood-Offord problem, all results in the paper are obtained by
+bounding the point concentration of a sum of independent random variables; we
+sketch connections to previous work on the subject.

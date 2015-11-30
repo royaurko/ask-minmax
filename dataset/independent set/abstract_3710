@@ -1,0 +1,18 @@
+In data sets with many predictors, algorithms for identifying a good subset
+of predictors are often used. Most such algorithms do not account for any
+relationships between predictors. For example, stepwise regression might select
+a model containing an interaction AB but neither main effect A or B. This paper
+develops mathematical representations of this and other relations between
+predictors, which may then be incorporated in a model selection procedure. A
+Bayesian approach that goes beyond the standard independence prior for variable
+selection is adopted, and preference for certain models is interpreted as prior
+information. Priors relevant to arbitrary interactions and polynomials, dummy
+variables for categorical factors, competing predictors, and restrictions on
+the size of the models are developed. Since the relations developed are for
+priors, they may be incorporated in any Bayesian variable selection algorithm
+for any type of linear model. The application of the methods here is
+illustrated via the Stochastic Search Variable Selection algorithm of George
+and McCulloch (1993), which is modified to utilize the new priors. The
+performance of the approach is illustrated with two constructed examples and a
+computer performance dataset. Keywords: Model Selection, Prior Distributions,
+Interaction, Dummy Variable

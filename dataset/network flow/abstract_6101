@@ -1,0 +1,22 @@
+Currently, TCP is the most popular and widely used network transmission
+protocol. In actual fact, about 90% of connections on the internet use TCP to
+communicate. Through several upgrades and improvements, TCP became well
+optimized for the very reliable wired networks. As a result, TCP considers all
+packet timeouts in wired networks as due to network congestion and not to bit
+errors. However, with networking becoming more heterogeneous, providing wired
+as well as wireless topologies, TCP suffers from performance degradation over
+error-prone wireless links as it has no mechanism to differentiate error losses
+from congestion losses. It therefore considers all packet losses as due to
+congestion and consequently reduces the burst of packet, diminishing at the
+same time the network throughput. This paper proposes a new TCP congestion
+control scheme appropriate for wireless as well as wired networks and is
+capable of distinguishing congestion losses from error losses. The proposed
+scheme is based on using the reserved field of the TCP header to indicate
+whether the established connection is over a wired or a wireless link.
+Additionally, the proposed scheme leverages the SNR ratio to detect the
+reliability of the link and decide whether to reduce packet burst or retransmit
+a timed-out packet. Experiments conducted, revealed that the proposed scheme
+proved to behave correctly in situations where timeouts were due to error and
+not to congestion. Future work can improve upon the proposed scheme so much so
+that it can leverage CRC and HEC errors so as to better determine the cause of
+transmission timeouts in wireless networks.

@@ -1,0 +1,19 @@
+We propose a novel path sampling method based on the Onsager-Machlup (OM)
+action by generalizing the multiscale enhanced sampling (MSES) technique
+suggested by Moritsugu and coworkers (J. Chem. Phys. 133, 224105 (2010)). The
+basic idea of this method is that the system we want to study (for example,
+some molecular system described by molecular mechanics) is coupled to a
+coarse-grained (CG) system, which can move more quickly and computed more
+efficiently than the original system. We simulate this combined system
+(original + CG system) using (underdamped) Langevin dynamics where different
+heat baths are coupled to the two systems. When the coupling is strong enough,
+the original system is guided by the CG system, and able to sample the
+configuration and path space more efficiency. We need to correct the bias
+caused by the coupling, however, by employing the Hamiltonian replica exchange
+where we prepare many path replica with different coupling strengths. As a
+result, an unbiased path ensemble for the original system can be found in the
+weakest coupling path ensemble. This strategy is easily implemented because a
+weight for a path calculated by the OM action is formally the same as the
+Boltzmann weight if we properly define the path "Hamiltonian". We apply this
+method to a model polymer with Asakura-Oosawa interaction, and compare the
+results with the conventional transition path sampling method.

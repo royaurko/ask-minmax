@@ -1,0 +1,18 @@
+We study truthful auctions for secondary spectrum usage in wireless networks.
+In this scenario, n communication requests need to be allocated to k available
+channels that are subject to interference and noise. We present the first
+truthful mechanisms for secondary spectrum auctions with symmetric or
+submodular valuations. Our approach to model interference uses an edge-weighted
+conflict graph, and our algorithms provide asymptotically almost optimal
+approximation bounds for conflict graphs with a small inductive independence
+number rho << n. This approach covers a large variety of interference models
+such as, e.g., the protocol model or the recently popular physical model of
+interference. For unweighted conflict graphs and symmetric valuations we use
+LP-rounding to obtain $O(\rho)$-approximate mechanisms; for weighted conflict
+graphs we get a factor of O(rho (log n + log k)). For submodular users we
+combine the convex rounding framework of Dughmi et al [STOC 2011] with
+randomized meta-rounding to obtain O(rho)-approximate mechanisms for
+matroid-rank-sum valuations; for weighted conflict graphs we can fully drop the
+dependence on k to get O(rho log n). We conclude with promising initialresults
+for deterministically truthful mechanisms that allow approximation factors
+based on rho.

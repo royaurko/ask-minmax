@@ -1,0 +1,16 @@
+Packet and flow scheduling algorithms for WiMAX has been a topic of interest
+for a long time since the very inception of WiMAX networks. WiMAX offers
+advantages particularly in terms of Quality of service it offers over a longer
+range at the MAC level. In our work, we propose two credit based scheduling
+schemes one in which completed flows distributes the left over credits equally
+to all higher priority uncompleted flows(ODRREDC) and another in which
+completed flows give away all the excess credits to the highest priority
+uncompleted flow(ODRRSDC). Both the schemes are compatible with 802.16 MAC
+protocol and can efficiently serve real time bursty traffic with reduced
+latency and hence improved QOS for real time flows. We compare the two proposed
+schemes for their latency, bandwidth utilization and throughput for real time
+burst flows with the opportunity based Deficit Round Robin scheduling scheme.
+While the ODRR scheduler focuses on reducing the credits for the flows with
+errors, our approach also distributes these remaining credits together with the
+credits from completed flows equally among the higher priority uncompleted
+flows or totally to the highest priority uncompleted flow.

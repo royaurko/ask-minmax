@@ -1,0 +1,20 @@
+We consider solving the $\ell_1$-regularized least-squares ($\ell_1$-LS)
+problem in the context of sparse recovery, for applications such as compressed
+sensing. The standard proximal gradient method, also known as iterative
+soft-thresholding when applied to this problem, has low computational cost per
+iteration but a rather slow convergence rate. Nevertheless, when the solution
+is sparse, it often exhibits fast linear convergence in the final stage. We
+exploit the local linear convergence using a homotopy continuation strategy,
+i.e., we solve the $\ell_1$-LS problem for a sequence of decreasing values of
+the regularization parameter, and use an approximate solution at the end of
+each stage to warm start the next stage. Although similar strategies have been
+studied in the literature, there have been no theoretical analysis of their
+global iteration complexity. This paper shows that under suitable assumptions
+for sparse recovery, the proposed homotopy strategy ensures that all iterates
+along the homotopy solution path are sparse. Therefore the objective function
+is effectively strongly convex along the solution path, and geometric
+convergence at each stage can be established. As a result, the overall
+iteration complexity of our method is $O(\log(1/\epsilon))$ for finding an
+$\epsilon$-optimal solution, which can be interpreted as global geometric rate
+of convergence. We also present empirical results to support our theoretical
+analysis.

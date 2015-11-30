@@ -1,0 +1,22 @@
+The problem of packet scheduling for traffic streams with target outflow
+profiles traversing input queued switches is formulated in this paper. Target
+outflow profiles specify the desirable inter-departure times of packets leaving
+the switch from each traffic stream. The goal of the switch scheduler is to
+dynamically select service configurations of the switch, so that actual outflow
+streams ("pulled" through the switch) adhere to their desired target profiles
+as accurately as possible. Dynamic service controls (schedules) are developed
+to minimize deviation of actual outflow streams from their targets and suppress
+stream "distortion". Using appropriately selected subsets of service
+configurations of the switch, efficient schedules are designed, which deliver
+high performance at relatively low complexity. Some of these schedules are
+provably shown to achieve 100% pull-throughput. Moreover, simulations
+demonstrate that for even substantial contention of streams through the switch,
+due to stringent/intense target outflow profiles, the proposed schedules
+achieve closely their target profiles and suppress stream distortion. The
+switch model investigated here deviates from the classical switching paradigm.
+In the latter, the goal of packet scheduling is primarily to "push" as much
+traffic load through the switch as possible, while controlling delay to
+traverse the switch and keeping congestion/backlogs from exploding. In the
+model presented here, however, the goal of packet scheduling is to "pull"
+traffic streams through the switch, maintaining desirable (target) outflow
+profiles.

@@ -1,0 +1,12 @@
+We accelerate many-flavor lattice QCD simulations using multiple GPUs.
+Multiple pseudo-fermion fields are introduced additively and independently for
+each flavor in the many-flavor HMC algorithm. Using the independence of each
+pseudo-fermion field and the blocking technique for the quark solver, we can
+assign the solver task to each GPU card. In this report we present the blocking
+technique for the many-flavor dynamical QCD simulations. We investigate the
+effect of the blocking and the acceleration with the multiple GPUs for the
+Schr\"{o}dinger functional simulations with Wilson SU(3) plaquette gauge action
+and $N_f=10$ Wilson fermions. Five pseudo-fermion fields are introduced and the
+quark solver task is distributed in the ratio of 2:3 to two GPUs. We expect a
+40% timing reduction from the single GPU case and have observed a 34% timing
+reduction in the test simulations.

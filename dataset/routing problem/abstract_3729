@@ -1,0 +1,14 @@
+Given a digraph $D$, the Minimum Leaf Out-Branching problem (MinLOB) is the
+problem of finding in $D$ an out-branching with the minimum possible number of
+leaves, i.e., vertices of out-degree 0. We prove that MinLOB is polynomial-time
+solvable for acyclic digraphs. In general, MinLOB is NP-hard and we consider
+three parameterizations of MinLOB. We prove that two of them are NP-complete
+for every value of the parameter, but the third one is fixed-parameter
+tractable (FPT). The FPT parametrization is as follows: given a digraph $D$ of
+order $n$ and a positive integral parameter $k$, check whether $D$ contains an
+out-branching with at most $n-k$ leaves (and find such an out-branching if it
+exists). We find a problem kernel of order $O(k^2)$ and construct an algorithm
+of running time $O(2^{O(k\log k)}+n^6),$ which is an `additive' FPT algorithm.
+We also consider transformations from two related problems, the minimum path
+covering and the maximum internal out-tree problems into MinLOB, which imply
+that some parameterizations of the two problems are FPT as well.

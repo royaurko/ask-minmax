@@ -1,0 +1,14 @@
+How can we succinctly describe a million-node graph with a few simple
+sentences? How can we measure the "importance" of a set of discovered subgraphs
+in a large graph? These are exactly the problems we focus on. Our main ideas
+are to construct a "vocabulary" of subgraph-types that often occur in real
+graphs (e.g., stars, cliques, chains), and from a set of subgraphs, find the
+most succinct description of a graph in terms of this vocabulary. We measure
+success in a well-founded way by means of the Minimum Description Length (MDL)
+principle: a subgraph is included in the summary if it decreases the total
+description length of the graph.
+  Our contributions are three-fold: (a) formulation: we provide a principled
+encoding scheme to choose vocabulary subgraphs; (b) algorithm: we develop
+\method, an efficient method to minimize the description cost, and (c)
+applicability: we report experimental results on multi-million-edge real
+graphs, including Flickr and the Notre Dame web graph.

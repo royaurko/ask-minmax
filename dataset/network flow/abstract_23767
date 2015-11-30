@@ -1,0 +1,17 @@
+The solution of high-dimensional inference and prediction problems in
+computational biology is almost always a compromise between mathematical theory
+and practical constraints such as limited computational resources. As time
+progresses, computational power increases but well-established inference
+methods often remain locked in their initial suboptimal solution. We revisit
+the approach of Segal et al. (2003) to infer regulatory modules and their
+condition-specific regulators from gene expression data. In contrast to their
+direct optimization-based solution we use a more representative centroid-like
+solution extracted from an ensemble of possible statistical models to explain
+the data. The ensemble method automatically selects a subset of most
+informative genes and builds a quantitatively better model for them. Genes
+which cluster together in the majority of models produce functionally more
+coherent modules. Regulators which are consistently assigned to a module are
+more often supported by literature, but a single model always contains many
+regulator assignments not supported by the ensemble. Reliably detecting
+condition-specific or combinatorial regulation is particularly hard in a single
+optimum but can be achieved using ensemble averaging.

@@ -1,0 +1,20 @@
+Traditional patch-based sparse representation modeling of natural images
+usually suffer from two problems. First, it has to solve a large-scale
+optimization problem with high computational complexity in dictionary learning.
+Second, each patch is considered independently in dictionary learning and
+sparse coding, which ignores the relationship among patches, resulting in
+inaccurate sparse coding coefficients. In this paper, instead of using patch as
+the basic unit of sparse representation, we exploit the concept of group as the
+basic unit of sparse representation, which is composed of nonlocal patches with
+similar structures, and establish a novel sparse representation modeling of
+natural images, called group-based sparse representation (GSR). The proposed
+GSR is able to sparsely represent natural images in the domain of group, which
+enforces the intrinsic local sparsity and nonlocal self-similarity of images
+simultaneously in a unified framework. Moreover, an effective self-adaptive
+dictionary learning method for each group with low complexity is designed,
+rather than dictionary learning from natural images. To make GSR tractable and
+robust, a split Bregman based technique is developed to solve the proposed
+GSR-driven minimization problem for image restoration efficiently. Extensive
+experiments on image inpainting, image deblurring and image compressive sensing
+recovery manifest that the proposed GSR modeling outperforms many current
+state-of-the-art schemes in both PSNR and visual perception.

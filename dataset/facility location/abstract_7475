@@ -1,0 +1,21 @@
+Accurate reconstruction of piecewise-smooth functions from a finite number of
+Fourier coefficients is an important problem in various applications. The
+inherent inaccuracy, in particular the Gibbs phenomenon, is being intensively
+investigated during the last decades. Several nonlinear reconstruction methods
+have been proposed, and it is by now well-established that the "classical"
+convergence order can be completely restored up to the discontinuities. Still,
+the maximal accuracy of determining the positions of these discontinuities
+remains an open question. In this paper we prove that the locations of the
+jumps (and subsequently the pointwise values of the function) can be
+reconstructed with at least "half the classical accuracy". In particular, we
+develop a constructive approximation procedure which, given the first $k$
+Fourier coefficients of a piecewise-$C^{2d+1}$ function, recovers the locations
+of the jumps with accuracy $\sim k^{-(d+2)}$, and the values of the function
+between the jumps with accuracy $\sim k^{-(d+1)}$ (similar estimates are
+obtained for the associated jump magnitudes). A key ingredient of the algorithm
+is to start with the case of a single discontinuity, where a modified version
+of one of the existing algebraic methods (due to K.Eckhoff) may be applied. It
+turns out that the additional orders of smoothness produce a highly correlated
+error terms in the Fourier coefficients, which eventually cancel out in the
+corresponding algebraic equations. To handle more than one jump, we propose to
+apply a localization procedure via a convolution in the Fourier domain.

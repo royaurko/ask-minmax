@@ -1,0 +1,18 @@
+Given observations of a collection of covariates and responses $(Y, X) \in
+\mathbb{R}^p \times \mathbb{R}^q$, sufficient dimension reduction (SDR)
+techniques aim to identify a mapping $f: \mathbb{R}^q \rightarrow \mathbb{R}^k$
+with $k \ll q$ such that $Y|f(X)$ is independent of $X$. The image $f(X)$
+summarizes the relevant information in a potentially large number of covariates
+$X$ that influence the responses $Y$. In many contemporary settings, the number
+of responses $p$ is also quite large, in addition to a large number $q$ of
+covariates. This leads to the challenge of fitting a succinctly parameterized
+statistical model to $Y|f(X)$, which is a problem that is usually not addressed
+in a traditional SDR framework. In this paper, we present a computationally
+tractable convex relaxation based estimator for simultaneously (a) identifying
+a linear dimension reduction $f(X)$ of the covariates that is sufficient with
+respect to the responses, and (b) fitting several types of structured
+low-dimensional models -- factor models, graphical models, latent-variable
+graphical models -- to the conditional distribution of $Y|f(X)$. We analyze the
+consistency properties of our estimator in a high-dimensional scaling regime.
+We also illustrate the performance of our approach on a newsgroup dataset and
+on a dataset consisting of financial asset prices.

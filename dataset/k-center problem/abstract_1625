@@ -1,0 +1,20 @@
+Cost-efficient compressive sensing is challenging when facing large-scale
+data, {\em i.e.}, data with large sizes. Conventional compressive sensing
+methods for large-scale data will suffer from low computational efficiency and
+massive memory storage. In this paper, we revisit well-known solvers called
+greedy algorithms, including Orthogonal Matching Pursuit (OMP), Subspace
+Pursuit (SP), Orthogonal Matching Pursuit with Replacement (OMPR). Generally,
+these approaches are conducted by iteratively executing two main steps: 1)
+support detection and 2) solving least square problem.
+  To reduce the cost of Step 1, it is not hard to employ the sensing matrix
+that can be implemented by operator-based strategy instead of matrix-based one
+and can be speeded by fast Fourier Transform (FFT). Step 2, however, requires
+maintaining and calculating a pseudo-inverse of a sub-matrix, which is random
+and not structural, and, thus, operator-based matrix does not work. To overcome
+this difficulty, instead of solving Step 2 by a closed-form solution, we
+propose a fast and cost-effective least square solver, which combines a
+Conjugate Gradient (CG) method with our proposed weighted least square problem
+to iteratively approximate the ground truth yielded by a greedy algorithm.
+Extensive simulations and theoretical analysis validate that the proposed
+method is cost-efficient and is readily incorporated with the existing greedy
+algorithms to remarkably improve the performance for large-scale problems.

@@ -1,0 +1,11 @@
+In this paper we present the \emph{Distributed Overlay Anycast Table}, a
+structured overlay that implements application-layer anycast, allowing the
+discovery of the closest host that is a member of a given group. One
+application is in locality-aware peer-to-peer networks, where peers need to
+discover low-latency peers participating in the distribution of a particular
+file or stream. The DOAT makes use of network delay coordinates and a space
+filling curve to achieve locality-aware routing across the overlay, and Bloom
+filters to aggregate group identifiers. The solution is designed to optimise
+both accuracy and query time, which are essential for real-time applications.
+We simulated DOAT using both random and realistic node distributions. The
+results show that accuracy is high and query time is low.

@@ -1,0 +1,13 @@
+We present two methods to compress the description of a route in a road
+network, i.e., of a path in a directed graph. The first method represents a
+path by a sequence of via edges. The subpaths between the via edges have to be
+unique shortest paths. Instead of via edges also via nodes can be used, though
+this requires some simple preprocessing. The second method uses contraction
+hierarchies to replace subpaths of the original path by shortcuts. The two
+methods can be combined with each other. Also, we propose the application to
+mobile server based routing: We compute the route on a server which has access
+to the latest information about congestions for example. Then we transmit the
+computed route to the car using some mobile radio communication. There, we
+apply the compression to save costs and transmission time. If the compression
+works well, we can transmit routes even when the bandwidth is low. Although we
+have not evaluated our ideas with realistic data yet, they are quite promising.

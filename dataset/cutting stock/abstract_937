@@ -1,0 +1,16 @@
+This research attempts to model the stochastic process of trades in a limit
+order book market as a marked point process. We propose a semi-parametric model
+for the conditional distribution given the past, attempting to capture the
+effect of the recent past in a nonparametric way and the effect of the more
+distant past using a parametric time series model. Our framework provides more
+flexibility than the most commonly used family of models, known as
+Autoregressive Conditional Duration (ACD), in terms of the shape of the density
+of durations and in the form of dependence across time. We also propose an
+online learning algorithm for intraday trends that vary from day to day. This
+allows us both to do prediction of future trade times and to incorporate the
+effects of additional explanatory variables. In this paper, we show that the
+framework works better than the ACD family both in the sense of prediction
+log-likelihood and according to various diagnostic tests using data from the
+New York Stock Exchange. In general, the framework can be used both to estimate
+the intensity of a point process, and to estimate a the joint density of a time
+series.

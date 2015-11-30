@@ -1,0 +1,20 @@
+We consider the application of a popular penalised regression method, Ridge
+Regression, to data with very high dimensions and many more covariates than
+observations. Our motivation is the problem of out-of-sample prediction and the
+setting is high-density genotype data from a genome-wide association or
+resequencing study. Ridge regression has previously been shown to offer
+improved performance for prediction when compared with other penalised
+regression methods. One problem with ridge regression is the choice of an
+appropriate parameter for controlling the amount of shrinkage of the
+coefficient estimates. Here we propose a method for choosing the ridge
+parameter based on controlling the variance of the predicted observations in
+the model.
+  Using simulated data, we demonstrate that our method outperforms subset
+selection based on univariate tests of association and another penalised
+regression method, HyperLasso regression, in terms of improved prediction
+error. We extend our approach to regression problems when the outcomes are
+binary (representing cases and controls, as is typically the setting for
+genome-wide association studies) and demonstrate the method on a real data
+example consisting of case-control and genotype data on Bipolar Disorder, taken
+from the Wellcome Trust Case Control Consortium and the Genetic Association
+Information Network.

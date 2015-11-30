@@ -1,0 +1,26 @@
+In this report, we aim at establishing proper ways for model checking the
+global security of distributed systems, which are designed consisting of set of
+localised security policies that enforce specific issues about the security
+expected.
+  The systems are formally specified following a syntax, defined in detail in
+this report, and their behaviour is clearly established by the Semantics, also
+defined in detail in this report. The systems include the formal attachment of
+security policies into their locations, whose intended interactions are trapped
+by the policies, aiming at taking access control decisions of the system, and
+the Semantics also takes care of this.
+  Using the Semantics, a Labelled Transition System (LTS) can be induced for
+every particular system, and over this LTS some model checking tasks could be
+done. We identify how this LTS is indeed obtained, and propose an alternative
+way of model checking the not-yet-induced LTS, by using the system design
+directly. This may lead to over-approximation thereby producing imprecise,
+though safe, results. We restrict ourselves to finite systems, in the sake of
+being certain about the decidability of the proposed method.
+  To illustrate the usefulness and validity of our proposal, we present 2 small
+case-study-like examples, where we show how the system can be specified, which
+policies could be added to it, and how to decide if the desired global security
+property is met.
+  Finally, an Appendix is given for digging deeply into how a tool for
+automatically performing this task is being built, including some
+implementation issues. The tool takes advantage of the proposed method, and
+given some system and some desired global security property, it safely (i.e.
+without false positives) ensures satisfaction of it.

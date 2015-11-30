@@ -1,0 +1,15 @@
+In the {\sc Min-Sum 2-Clustering} problem, we are given a graph and a
+parameter $k$, and the goal is to determine if there exists a 2-partition of
+the vertex set such that the total conflict number is at most $k$, where the
+conflict number of a vertex is the number of its non-neighbors in the same
+cluster and neighbors in the different cluster. The problem is equivalent to
+{\sc 2-Cluster Editing} and {\sc 2-Correlation Clustering} with an additional
+multiplicative factor two in the cost function. In this paper we show an
+algorithm for {\sc Min-Sum 2-Clustering} with time complexity $O(n\cdot
+2.619^{r/(1-4r/n)}+n^3)$, where $n$ is the number of vertices and $r=k/n$.
+Particularly, the time complexity is $O^*(2.619^{k/n})$ for $k\in o(n^2)$ and
+polynomial for $k\in O(n\log n)$, which implies that the problem can be solved
+in subexponential time for $k\in o(n^2)$. We also design a parameterized
+algorithm for a variant in which the cost is the sum of the squared
+conflict-numbers. For $k\in o(n^3)$, the algorithm runs in subexponential
+$O(n^3\cdot 5.171^{\theta})$ time, where $\theta=\sqrt{k/n}$.

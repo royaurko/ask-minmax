@@ -1,0 +1,16 @@
+This paper contains the technical foundations from stochastic differential
+geometry for the construction of geometrically intrinsic nonlinear recursive
+filters. A diffusion X on a manifold N is run for a time interval T, with a
+random initial condition. There is a single observation consisting of a
+nonlinear function of X(T), corrupted by noise, and with values in another
+manifold M. The noise covariance of X and the observation covariance themselves
+induce geometries on M and N, respectively. Using these geometries we compute
+approximate but coordinate-free formulas for the "best estimate" of X(T), given
+the observation, and its conditional variance. Calculations are based on use of
+Jacobi fields and of "intrinsic location parameters", a notion derived from the
+heat flow of harmonic mappings. When any nonlinearity is present, the resulting
+formulas are not the same as those for the continuous-discrete Extended Kalman
+Filter. A subsidiary result is a formula for computing approximately the
+"exponential barycenter" of a random variable S on a manifold, i.e. a point z
+such that the inverse image of S under the exponential map at z has mean zero
+in the tangent space at z.

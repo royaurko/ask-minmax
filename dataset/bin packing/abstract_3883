@@ -1,0 +1,14 @@
+An American option grants the holder the right to select the time at which to
+exercise the option, so pricing an American option entails solving an optimal
+stopping problem. Difficulties in applying standard numerical methods to
+complex pricing problems have motivated the development of techniques that
+combine Monte Carlo simulation with dynamic programming. One class of methods
+approximates the option value at each time using a linear combination of basis
+functions, and combines Monte Carlo with backward induction to estimate optimal
+coefficients in each approximation. We analyze the convergence of such a method
+as both the number of basis functions and the number of simulated paths
+increase. We get explicit results when the basis functions are polynomials and
+the underlying process is either Brownian motion or geometric Brownian motion.
+We show that the number of paths required for worst-case convergence grows
+exponentially in the degree of the approximating polynomials in the case of
+Brownian motion and faster in the case of geometric Brownian motion.

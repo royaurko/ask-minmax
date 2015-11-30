@@ -1,0 +1,15 @@
+A framework of demosaicing and superresolution for color filter array (CFA)
+via residual image reconstruction and sparse representation is presented.Given
+the intermediate image produced by certain demosaicing and interpolation
+technique, a residual image between the final reconstruction image and the
+intermediate image is reconstructed using sparse representation.The final
+reconstruction image has richer edges and details than that of the intermediate
+image. Specifically, a generic dictionary is learned from a large set of
+composite training data composed of intermediate data and residual data. The
+learned dictionary implies a mapping between the two data. A specific
+dictionary adaptive to the input CFA is learned thereafter. Using the adaptive
+dictionary, the sparse coefficients of intermediate data are computed and
+transformed to predict residual image. The residual image is added back into
+the intermediate image to obtain the final reconstruction image. Experimental
+results demonstrate the state-of-the-art performance in terms of PSNR and
+subjective visual perception.

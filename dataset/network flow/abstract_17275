@@ -1,0 +1,9 @@
+Latent Dirichlet Allocation (LDA) is a three-level hierarchical Bayesian
+model for topic inference. In spite of its great success, inferring the latent
+topic distribution with LDA is time-consuming. Motivated by the transfer
+learning approach proposed by~\newcite{hinton2015distilling}, we present a
+novel method that uses LDA to supervise the training of a deep neural network
+(DNN), so that the DNN can approximate the costly LDA inference with less
+computation. Our experiments on a document classification task show that a
+simple DNN can learn the LDA behavior pretty well, while the inference is
+speeded up tens or hundreds of times.

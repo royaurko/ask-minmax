@@ -1,0 +1,15 @@
+Strategy Logic (SL, for short) has been recently introduced by Mogavero,
+Murano, and Vardi as a useful formalism for reasoning explicitly about
+strategies, as first-order objects, in multi-agent concurrent games. This logic
+turns to be very powerful, subsuming all major previously studied modal logics
+for strategic reasoning, including ATL, ATL*, and the like. Unfortunately, due
+to its expressiveness, SL has a non-elementarily decidable model-checking
+problem and a highly undecidable satisfiability problem, specifically,
+$\Sigma_{1}^{1}$-Hard. In order to obtain a decidable sublogic, we introduce
+and study here One-Goal Strategy Logic (SL[1G], for short). This logic is a
+syntactic fragment of SL, strictly subsuming ATL*, which encompasses formulas
+in prenex normal form having a single temporal goal at a time, for every
+strategy quantification of agents. SL[1G] is known to have an elementarily
+decidable model-checking problem. Here we prove that, unlike SL, it has the
+bounded tree-model property and its satisfiability problem is decidable in
+2ExpTime, thus not harder than the one for ATL*.

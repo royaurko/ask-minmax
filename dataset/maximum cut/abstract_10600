@@ -1,0 +1,24 @@
+We propose a simplified version of local molecular field (LMF) theory to
+treat Coulomb interactions in simulations of ionic fluids. LMF theory relies on
+splitting the Coulomb potential into a short-ranged part that combines with
+other short-ranged core interactions and is simulated explicitly. The averaged
+effects of the remaining long-ranged part are taken into account through a
+self-consistently determined effective external field. The theory contains an
+adjustable length parameter sigma that specifies the cut-off distance for the
+short-ranged interaction. This can be chosen to minimize the errors resulting
+from the mean-field treatment of the complementary long-ranged part. Here we
+suggest that in many cases an accurate approximation to the effective field can
+be obtained directly from the equilibrium charge density given by the Debye
+theory of screening, thus eliminating the need for a self-consistent treatment.
+In the limit sigma -> 0, this assumption reduces to the classical Debye
+approximation. We examine the numerical performance of this approximation for a
+simple model of a symmetric ionic mixture. Our results for thermodynamic and
+structural properties of uniform ionic mixtures agree well with similar results
+of Ewald simulations of the full ionic system. In addition we have used the
+simplified theory in a grand-canonical simulation of a nonuniform ionic mixture
+where an ion has been fixed at the origin. Simulations using short-ranged
+truncations of the Coulomb interactions alone do not satisfy the exact
+condition of complete screening of the fixed ion, but this condition is
+recovered when the effective field is taken into account. We argue that this
+simplified approach can also be used in the simulations of more complex
+nonuniform systems.

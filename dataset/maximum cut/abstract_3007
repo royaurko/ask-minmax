@@ -1,0 +1,21 @@
+Dimensionality reduction methods, e.g. PCA and Laplacian eigenmap (LE), and
+cluster analysis methods, e.g. K-means and ratio cut (Rcut), are two kinds of
+widely-used unsupervised data analysis tools. The former concerns high
+representation fidelity, while the latter semantics. Some preliminary relations
+between these methods have been established in the literature, but they are not
+yet integrated into a unified framework. In this paper, we show that under an
+ideal condition, the four methods: PCA, K-means, LE, and Rcut, are unified
+together; and when the ideal condition is relaxed, the unification evolves to a
+new sparse representation method, called spectral sparse representation (SSR).
+It achieves the same representation fidelity as PCA/LE, and is able to reveal
+the cluster structure of data as K-means/Rcut. SSR is inherently related to
+cluster analysis, and the sparse codes can be directly used to do clustering.
+An efficient algorithm NSCrt is developed to solve the sparse codes of SSR. It
+is observed that NSCrt is able to effectively recover the underlying solutions.
+As a direct application of SSR, a new clustering algorithm Scut is devised. It
+reaches the start-of-the-art performance among spectral clustering methods.
+Compared with K-means based clustering methods, Scut does not depend on
+initialization and avoids getting trapped in local minima; and the solutions
+are comparable to the optimal ones of K-means run many times. Extensive
+experiments using data sets of different nature demonstrate the properties and
+strengths of SSR, NSCrt, and Scut.

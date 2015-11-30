@@ -1,0 +1,23 @@
+We introduce a new implementation of time-dependent density-functional theory
+which allows the \emph{entire} spectrum of a molecule or extended system to be
+computed with a numerical effort comparable to that of a \emph{single} standard
+ground-state calculation. This method is particularly well suited for large
+systems and/or large basis sets, such as plane waves or real-space grids. By
+using a super-operator formulation of linearized time-dependent
+density-functional theory, we first represent the dynamical polarizability of
+an interacting-electron system as an off-diagonal matrix element of the
+resolvent of the Liouvillian super-operator. One-electron operators and density
+matrices are treated using a representation borrowed from time-independent
+density-functional perturbation theory, which permits to avoid the calculation
+of unoccupied Kohn-Sham orbitals. The resolvent of the Liouvillian is evaluated
+through a newly developed algorithm based on the non-symmetric Lanczos method.
+Each step of the Lanczos recursion essentially requires twice as many
+operations as a single step of the iterative diagonalization of the unperturbed
+Kohn-Sham Hamiltonian. Suitable extrapolation of the Lanczos coefficients
+allows for a dramatic reduction of the number of Lanczos steps necessary to
+obtain well converged spectra, bringing such number down to hundreds (or a few
+thousands, at worst) in typical plane-wave pseudopotential applications. The
+resulting numerical workload is only a few times larger than that needed by a
+ground-state Kohn-Sham calculation for a same system. Our method is
+demonstrated with the calculation of the spectra of benzene, C$_{60}$
+fullerene, and of chlorofyll a.

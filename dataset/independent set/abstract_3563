@@ -1,0 +1,24 @@
+Let $G(V,E)$ be a simple, undirected graph where $V$ is the set of vertices
+and $E$ is the set of edges. A $b$-dimensional cube is a Cartesian product
+$I_1\times I_2\times...\times I_b$, where each $I_i$ is a closed interval of
+unit length on the real line. The \emph{cubicity} of $G$, denoted by $\cub(G)$
+is the minimum positive integer $b$ such that the vertices in $G$ can be mapped
+to axis parallel $b$-dimensional cubes in such a way that two vertices are
+adjacent in $G$ if and only if their assigned cubes intersect. Suppose $S(m)$
+denotes a star graph on $m+1$ nodes. We define \emph{claw number} $\psi(G)$ of
+the graph to be the largest positive integer $m$ such that $S(m)$ is an induced
+subgraph of $G$. It can be easily shown that the cubicity of any graph is at
+least $\ceil{\log_2\psi(G)}$.
+  In this paper, we show that, for an interval graph $G$
+$\ceil{\log_2\psi(G)}\le\cub(G)\le\ceil{\log_2\psi(G)}+2$. Till now we are
+unable to find any interval graph with $\cub(G)>\ceil{\log_2\psi(G)}$. We also
+show that, for an interval graph $G$, $\cub(G)\le\ceil{\log_2\alpha}$, where
+$\alpha$ is the independence number of $G$. Therefore, in the special case of
+$\psi(G)=\alpha$, $\cub(G)$ is exactly $\ceil{\log_2\alpha}$.
+  The concept of cubicity can be generalized by considering boxes instead of
+cubes. A $b$-dimensional box is a Cartesian product $I_1\times
+I_2\times...\times I_b$, where each $I_i$ is a closed interval on the real
+line. The \emph{boxicity} of a graph, denoted $ box(G)$, is the minimum $k$
+such that $G$ is the intersection graph of $k$-dimensional boxes. It is clear
+that $ box(G)\le\cub(G)$. From the above result, it follows that for any graph
+$G$, $\cub(G)\le box(G)\ceil{\log_2\alpha}$.

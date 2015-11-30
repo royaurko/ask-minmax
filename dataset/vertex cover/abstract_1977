@@ -1,0 +1,16 @@
+We have developed GPU versions for two major high-performance-computing (HPC)
+applications originating from two different scientific domains. GENE is a
+plasma microturbulence code which is employed for simulations of nuclear fusion
+plasmas. VERTEX is a neutrino-radiation hydrodynamics code for "first
+principles"-simulations of core-collapse supernova explosions. The codes are
+considered state of the art in their respective scientific domains, both
+concerning their scientific scope and functionality as well as the achievable
+compute performance, in particular parallel scalability on all relevant HPC
+platforms. GENE and VERTEX were ported by us to HPC cluster architectures with
+two NVidia Kepler GPUs mounted in each node in addition to two Intel Xeon CPUs
+of the Sandy Bridge family. On such platforms we achieve up to twofold gains in
+the overall application performance in the sense of a reduction of the time to
+solution for a given setup with respect to a pure CPU cluster. The paper
+describes our basic porting strategies and benchmarking methodology, and
+details the main algorithmic and technical challenges we faced on the new,
+heterogeneous architecture.

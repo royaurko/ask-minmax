@@ -1,0 +1,18 @@
+A substantial amount of work has recently gone into localizing BitTorrent
+traffic within an ISP in order to avoid excessive and often times unnecessary
+transit costs. Several architectures and systems have been proposed and the
+initial results from specific ISPs and a few torrents have been encouraging. In
+this work we attempt to deepen and scale our understanding of locality and its
+potential. Looking at specific ISPs, we consider tens of thousands of
+concurrent torrents, and thus capture ISP-wide implications that cannot be
+appreciated by looking at only a handful of torrents. Secondly, we go beyond
+individual case studies and present results for the top 100 ISPs in terms of
+number of users represented in our dataset of up to 40K torrents involving more
+than 3.9M concurrent peers and more than 20M in the course of a day spread in
+11K ASes. We develop scalable methodologies that permit us to process this huge
+dataset and answer questions such as: "\emph{what is the minimum and the
+maximum transit traffic reduction across hundreds of ISPs?}", "\emph{what are
+the win-win boundaries for ISPs and their users?}", "\emph{what is the maximum
+amount of transit traffic that can be localized without requiring fine-grained
+control of inter-AS overlay connections?}", "\emph{what is the impact to
+transit traffic from upgrades of residential broadband speeds?}".

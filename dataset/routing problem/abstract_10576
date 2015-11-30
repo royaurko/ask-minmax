@@ -1,0 +1,19 @@
+We present two open-source (BSD) implementations of ellipsoidal harmonic
+expansions for solving problems of potential theory using separation of
+variables. Ellipsoidal harmonics are used surprisingly infrequently,
+considering their substantial value for problems ranging in scale from
+molecules to the entire solar system. In this article, we suggest two possible
+reasons for the paucity relative to spherical harmonics. The first is
+essentially historical---ellipsoidal harmonics developed during the late 19th
+century and early 20th, when it was found that only the lowest-order harmonics
+are expressible in closed form. Each higher-order term requires the solution of
+an eigenvalue problem, and tedious manual computation seems to have discouraged
+applications and theoretical studies. The second explanation is practical: even
+with modern computers and accurate eigenvalue algorithms, expansions in
+ellipsoidal harmonics are significantly more challenging to compute than those
+in Cartesian or spherical coordinates. The present implementations reduce the
+"barrier to entry" by providing an easy and free way for the community to begin
+using ellipsoidal harmonics in actual research. We demonstrate our
+implementation using the specific and physiologically crucial problem of how
+charged proteins interact with their environment, and ask: what other
+analytical tools await re-discovery in an era of inexpensive computation?

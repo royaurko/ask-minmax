@@ -1,0 +1,25 @@
+We study the {\em verification} problem in distributed networks, stated as
+follows. Let $H$ be a subgraph of a network $G$ where each vertex of $G$ knows
+which edges incident on it are in $H$. We would like to verify whether $H$ has
+some properties, e.g., if it is a tree or if it is connected. We would like to
+perform this verification in a decentralized fashion via a distributed
+algorithm. The time complexity of verification is measured as the number of
+rounds of distributed communication. In this paper we initiate a systematic
+study of distributed verification, and give almost tight lower bounds on the
+running time of distributed verification algorithms for many fundamental
+problems such as connectivity, spanning connected subgraph, and $s-t$ cut
+verification. We then show applications of these results in deriving strong
+unconditional time lower bounds on the {\em hardness of distributed
+approximation} for many classical optimization problems including minimum
+spanning tree, shortest paths, and minimum cut. Many of these results are the
+first non-trivial lower bounds for both exact and approximate distributed
+computation and they resolve previous open questions. Moreover, our
+unconditional lower bound of approximating minimum spanning tree (MST) subsumes
+and improves upon the previous hardness of approximation bound of Elkin [STOC
+2004] as well as the lower bound for (exact) MST computation of Peleg and
+Rubinovich [FOCS 1999]. Our result implies that there can be no distributed
+approximation algorithm for MST that is significantly faster than the current
+exact algorithm, for {\em any} approximation factor. Our lower bound proofs
+show an interesting connection between communication complexity and distributed
+computing which turns out to be useful in establishing the time complexity of
+exact and approximate distributed computation of many problems.

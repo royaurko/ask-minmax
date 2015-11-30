@@ -1,0 +1,20 @@
+In answer set programming (ASP), a problem at hand is solved by (i) writing a
+logic program whose answer sets correspond to the solutions of the problem, and
+by (ii) computing the answer sets of the program using an answer set solver as
+a search engine. Typically, a programmer creates a series of gradually
+improving logic programs for a particular problem when optimizing program
+length and execution time on a particular solver. This leads the programmer to
+a meta-level problem of ensuring that the programs are equivalent, i.e., they
+give rise to the same answer sets. To ease answer set programming at
+methodological level, we propose a translation-based method for verifying the
+equivalence of logic programs. The basic idea is to translate logic programs P
+and Q under consideration into a single logic program EQT(P,Q) whose answer
+sets (if such exist) yield counter-examples to the equivalence of P and Q. The
+method is developed here in a slightly more general setting by taking the
+visibility of atoms properly into account when comparing answer sets. The
+translation-based approach presented in the paper has been implemented as a
+translator called lpeq that enables the verification of weak equivalence within
+the smodels system using the same search engine as for the search of models.
+Our experiments with lpeq and smodels suggest that establishing the equivalence
+of logic programs in this way is in certain cases much faster than naive
+cross-checking of answer sets.

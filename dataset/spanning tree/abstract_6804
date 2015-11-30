@@ -1,0 +1,14 @@
+One way to state the Load Coloring Problem (LCP) is as follows. Let $G=(V,E)$
+be graph and let $f:V\rightarrow \{{\rm red}, {\rm blue}\}$ be a 2-coloring. An
+edge $e\in E$ is called red (blue) if both end-vertices of $e$ are red (blue).
+For a 2-coloring $f$, let $r'_f$ and $b'_f$ be the number of red and blue edges
+and let $\mu_f(G)=\min\{r'_f,b'_f\}$. Let $\mu(G)$ be the maximum of $\mu_f(G)$
+over all 2-colorings.
+  We introduce the parameterized problem $k$-LCP of deciding whether $\mu(G)\ge
+k$, where $k$ is the parameter. We prove that this problem admits a kernel with
+at most $7k$. Ahuja et al. (2007) proved that one can find an optimal
+2-coloring on trees in polynomial time. We generalize this by showing that an
+optimal 2-coloring on graphs with tree decomposition of width $t$ can be found
+in time $O^*(2^t)$. We also show that either $G$ is a Yes-instance of $k$-LCP
+or the treewidth of $G$ is at most $2k$. Thus, $k$-LCP can be solved in time
+$O^*(4^k).$

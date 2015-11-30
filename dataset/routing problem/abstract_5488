@@ -1,0 +1,20 @@
+Robustness is a critical measure of the resilience of large networked
+systems, such as transportation and communication networks. Most prior works
+focus on the global robustness of a given graph at large, e.g., by measuring
+its overall vulnerability to external attacks or random failures. In this
+paper, we turn attention to local robustness and pose a novel problem in the
+lines of subgraph mining: given a large graph, how can we find its most robust
+local subgraph (RLS)?
+  We define a robust subgraph as a subset of nodes with high communicability
+among them, and formulate the RLS-PROBLEM of finding a subgraph of given size
+with maximum robustness in the host graph. Our formulation is related to the
+recently proposed general framework for the densest subgraph problem, however
+differs from it substantially in that besides the number of edges in the
+subgraph, robustness also concerns with the placement of edges, i.e., the
+subgraph topology. We show that the RLS-PROBLEM is NP-hard and propose two
+heuristic algorithms based on top-down and bottom-up search strategies.
+Further, we present modifications of our algorithms to handle three practical
+variants of the RLS-PROBLEM. Experiments on synthetic and real-world graphs
+demonstrate that we find subgraphs with larger robustness than the densest
+subgraphs even at lower densities, suggesting that the existing approaches are
+not suitable for the new problem setting.

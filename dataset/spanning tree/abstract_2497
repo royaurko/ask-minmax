@@ -1,0 +1,19 @@
+The method of flexi-Weighted Least Squares on evolutionary trees uses simple
+polynomial or exponential functions of the evolutionary distance in place of
+model-based variances. This has the advantage that unexpected deviations from
+additivity can be modeled in a more flexible way. At present, only polynomial
+weights have been used. However, a general family of exponential weights is
+desirable to compare with polynomial weights and to potentially exploit recent
+insights into fast least squares edge length estimation on trees. Here describe
+families of weights that are multiplicative on trees, along with measures of
+fit of data to tree. It is shown that polynomial, but also multiplicative
+weights can approximate model-based variance of evolutionary distances well.
+Both models are fitted to evolutionary data from yeast genomes and while the
+polynomial weights model fits better, the exponential weights model can fit a
+lot better than ordinary least squares. Iterated least squares is evaluated and
+is seen to converge quickly and with minimal change in the fit statistics when
+the data are in the range expected for the useful evolutionary distances and
+simple Markov models of character change. In summary, both polynomial and
+exponential weighted least squares work well and justify further investment
+into developing the fastest possible algorithms for evaluating evolutionary
+trees.

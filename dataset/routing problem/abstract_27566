@@ -1,0 +1,15 @@
+In the Travelling Salesman Problem (TSP), we are given a complete graph $K_n$
+together with an integer weighting $w$ on the edges of $K_n$, and we are asked
+to find a Hamilton cycle of $K_n$ of minimum weight. Let $h(w)$ denote the
+average weight of a Hamilton cycle of $K_n$ for the weighting $w$. Vizing
+(1973) asked whether there is a polynomial-time algorithm which always finds a
+Hamilton cycle of weight at most $h(w)$. He answered this question in the
+affirmative and subsequently Rublineckii (1973) and others described several
+other TSP heuristics satisfying this property. In this paper, we prove a
+considerable generalisation of Vizing's result: for each fixed $k$, we give an
+algorithm that decides whether, for any input edge weighting $w$ of $K_n$,
+there is a Hamilton cycle of $K_n$ of weight at most $h(w)-k$ (and constructs
+such a cycle if it exists). For $k$ fixed, the running time of the algorithm is
+polynomial in $n$, where the degree of the polynomial does not depend on $k$
+(i.e., the generalised Vizing problem is fixed-parameter tractable with respect
+to the parameter $k$).

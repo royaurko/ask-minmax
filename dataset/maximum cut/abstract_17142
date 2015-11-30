@@ -1,0 +1,25 @@
+For noncooperative games the mean field (MF) methodology provides
+decentralized strategies which yield Nash equilibria for large population
+systems in the asymptotic limit of an infinite (mass) population. The MF
+control laws use only the local information of each agent on its own state and
+own dynamical parameters, while the mass effect is calculated offline using the
+distribution function of (i) the population's dynamical parameters, and (ii)
+the population's cost function parameters, for the infinite population case.
+These laws yield approximate equilibria when applied in the finite population.
+  In this paper, these a priori information conditions are relaxed, and
+incrementally the cases are considered where, first, the agents estimate their
+own dynamical parameters, and, second, estimate the distribution parameter in
+(i) and (ii) above.
+  An MF stochastic adaptive control (SAC) law in which each agent observes a
+random subset of the population of agents is specified, where the ratio of the
+cardinality of the observed set to that of the number of agents decays to zero
+as the population size tends to infinity. Each agent estimates its own
+dynamical parameters via the recursive weighted least squares (RWLS) algorithm
+and the distribution of the population's dynamical parameters via maximum
+likelihood estimation (MLE). Under reasonable conditions on the population
+dynamical parameter distribution, the MF-SAC Law applied by each agent results
+in (i) the strong consistency of the self parameter estimates and the strong
+consistency of the population distribution function parameters; (ii) the long
+run average stability of all agent systems; (iii) a (strong) e-Nash equilibrium
+for the population of agents; and (iv) the a.s. equality of the long run
+average cost and the non-adaptive cost in the population limit.

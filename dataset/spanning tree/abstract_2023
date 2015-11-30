@@ -1,0 +1,18 @@
+This paper studies a Markov chain for phylogenetic reconstruction which uses
+a popular transition between tree topologies known as subtree
+pruning-and-regrafting (SPR). We analyze the Markov chain in the simpler
+setting that the generating tree consists of very short edge lengths, short
+enough so that each sample from the generating tree (or character in
+phylogenetic terminology) is likely to have only one mutation, and that there
+enough samples so that the data looks like the generating distribution. We
+prove in this setting that the Markov chain is rapidly mixing, i.e., it quickly
+converges to its stationary distribution, which is the posterior distribution
+over tree topologies. Our proofs use that the leading term of the maximum
+likelihood function of a tree T is the maximum parsimony score, which is the
+size of the minimum cut in T needed to realize single edge cuts of the
+generating tree. Our main contribution is a combinatorial proof that in our
+simplified setting, SPR moves are guaranteed to converge quickly to the maximum
+parsimony tree. Our results are in contrast to recent works showing examples
+with heterogeneous data (namely, the data is generated from a mixture
+distribution) where many natural Markov chains are exponentially slow to
+converge to the stationary distribution.

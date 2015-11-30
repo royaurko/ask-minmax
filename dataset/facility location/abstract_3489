@@ -1,0 +1,19 @@
+MEMS storage devices are new non-volatile secondary storages that have
+outstanding advantages over magnetic disks. MEMS storage devices, however, are
+much different from magnetic disks in the structure and access characteristics.
+They have thousands of heads called probe tips and provide the following two
+major access facilities: (1) flexibility: freely selecting a set of probe tips
+for accessing data, (2) parallelism: simultaneously reading and writing data
+with the set of probe tips selected. Due to these characteristics, it is
+nontrivial to find data placements that fully utilize the capability of MEMS
+storage devices. In this paper, we propose a simple logical model called the
+Region-Sector (RS) model that abstracts major characteristics affecting data
+retrieval performance, such as flexibility and parallelism, from the physical
+MEMS storage model. We also suggest heuristic data placement strategies based
+on the RS model and derive new data placements for relational data and
+two-dimensional spatial data by using those strategies. Experimental results
+show that the proposed data placements improve the data retrieval performance
+by up to 4.0 times for relational data and by up to 4.8 times for
+two-dimensional spatial data of approximately 320 Mbytes compared with those of
+existing data placements. Further, these improvements are expected to be more
+marked as the database size grows.

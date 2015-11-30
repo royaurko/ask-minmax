@@ -1,0 +1,14 @@
+In this paper, we analyze several recent schemes for watermarking network
+flows that are based on splitting the flow into timing intervals. We show that
+this approach creates time-dependent correlations that enable an attack that
+combines multiple watermarked flows. Such an attack can easily be mounted in
+nearly all applications of network flow watermarking, both in anonymous
+communication and stepping stone detection. The attack can be used to detect
+the presence of a watermark, recover the secret parameters, and remove the
+watermark from a flow. The attack can be effective even if different flows are
+marked with different values of a watermark.
+  We analyze the efficacy of our attack using a probabilistic model and a
+Markov-Modulated Poisson Process (MMPP) model of interactive traffic. We also
+implement our attack and test it using both synthetic and real-world traces,
+showing that our attack is effective with as few as 10 watermarked flows.
+Finally, we propose possible countermeasures to defeat the multi-flow attack.

@@ -1,0 +1,21 @@
+We present a loosely-coupled partitioned scheme for a benchmark problem in
+fluid-composite structure interaction. The benchmark problem proposed here
+consists of an incompressible, viscous fluid interacting with a composite
+structure that consists of two layers: a thin elastic layer which is in contact
+with the fluid, and a thick elastic layer which sits on top of the thin layer.
+The motivation comes from fluid-structure interaction (FSI) in hemodyam- ics.
+The equations of linear elasticity are used to model the thick structural
+layer, while the Koiter member/shell equations are used to model the thin
+structural layer which serves as fluid-structure interface with mass. An effi-
+cient, modular, operator-splitting scheme is proposed to simulate solutions to
+the coupled, nonlinear FSI problem. The operator splitting scheme sepa- rates
+the elastodynamics structure problem, from a fluid problem in which the thin
+structure inertia is included as a Robin-type boundary condition to achieve
+unconditional stability, without requiring any sub-iterations within
+time-steps. An energy estimate associated with unconditional stability is
+derived for the fully nonlinear FSI problem defined on moving domains. Two
+instructive numerical examples are presented to test the performance of the
+scheme, where it is shown numerically, that the scheme is at least first-order
+accurate in time. The second example reveals a new phenomenon in FSI problems:
+the presence of a thin fluid-structure interface with mass regularizes
+solutions to the full FSI problem.

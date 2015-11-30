@@ -1,0 +1,20 @@
+Algorithms for simulating complex physical systems or solving difficult
+optimization problems often resort to an annealing process. Rather than
+simulating the system at the temperature of interest, an annealing algorithm
+starts at a temperature that is high enough to ensure ergodicity and gradually
+decreases it until the destination temperature is reached. This idea is used in
+popular algorithms such as parallel tempering and simulated annealing. A
+general problem with annealing methods is that they require a temperature
+schedule. Choosing well-balanced temperature schedules can be tedious and
+time-consuming. Imbalanced schedules can have a negative impact on the
+convergence, runtime and success of annealing algorithms. This article outlines
+a unifying framework, ensemble annealing, that combines ideas from simulated
+annealing, histogram reweighting and nested sampling with concepts in
+thermodynamic control. Ensemble annealing simultaneously simulates a physical
+system and estimates its density of states. The temperatures are lowered not
+according to a prefixed schedule but adaptively so as to maintain a constant
+relative entropy between successive ensembles. After each step on the
+temperature ladder an estimate of the density of states is updated and a new
+temperature is chosen. Ensemble annealing is highly practical and broadly
+applicable. This is illustrated for various systems including Ising, Potts, and
+protein models.

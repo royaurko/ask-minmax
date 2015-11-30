@@ -1,0 +1,19 @@
+This work introduces a general multi-level model for self-adaptive systems. A
+self-adaptive system is seen as composed by two levels: the lower level
+describing the actual behaviour of the system and the upper level accounting
+for the dynamically changing environmental constraints on the system. In order
+to keep our description as general as possible, the lower level is modelled as
+a state machine and the upper level as a second-order state machine whose
+states have associated formulas over observable variables of the lower level.
+Thus, each state of the second-order machine identifies the set of lower-level
+states satisfying the constraints. Adaptation is triggered when a second-order
+transition is performed; this means that the current system no longer can
+satisfy the current high-level constraints and, thus, it has to adapt its
+behaviour by reaching a state that meets the new constraints. The semantics of
+the multi-level system is given by a flattened transition system that can be
+statically checked in order to prove the correctness of the adaptation model.
+To this aim we formalize two concepts of weak and strong adaptability providing
+both a relational and a logical characterization. We report that this work
+gives a formal computational characterization of multi-level self-adaptive
+systems, evidencing the important role that (theoretical) computer science
+could play in the emerging science of complex systems.

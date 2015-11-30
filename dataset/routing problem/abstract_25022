@@ -1,0 +1,18 @@
+This paper addresses the automatic image segmentation problem in a region
+merging style. With an initially over-segmented image, in which the many
+regions (or super-pixels) with homogeneous color are detected, image
+segmentation is performed by iteratively merging the regions according to a
+statistical test. There are two essential issues in a region merging algorithm:
+order of merging and the stopping criterion. In the proposed algorithm, these
+two issues are solved by a novel predicate, which is defined by the sequential
+probability ratio test (SPRT) and the maximum likelihood criterion. Starting
+from an over-segmented image, neighboring regions are progressively merged if
+there is an evidence for merging according to this predicate. We show that the
+merging order follows the principle of dynamic programming. This formulates
+image segmentation as an inference problem, where the final segmentation is
+established based on the observed image. We also prove that the produced
+segmentation satisfies certain global properties. In addition, a faster
+algorithm is developed to accelerate the region merging process, which
+maintains a nearest neighbor graph in each iteration. Experiments on real
+natural images are conducted to demonstrate the performance of the proposed
+dynamic region merging algorithm.

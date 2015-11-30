@@ -1,0 +1,14 @@
+A new iterative method for non-LTE multilevel polarized radiative transfer in
+hydrogen lines is presented. Iterative methods (such as the Jacobi method) tend
+to damp out high-frequency components of the error fast, but converges poorly
+due to slow reduction of low-frequency components. The idea is to use a set of
+differently coarsed grids to reduce both the short- and long-period errors.
+This leads to the so-called multigrid (MG) methods. For the grid of $N$ spatial
+points, the number of iterations required to solve a non-LTE transfer problem
+is of the order of O(N). This fact could be of great importance for problems
+with fine structure and for multi-dimensional models. The efficiency of the
+so-called standard MG iteration in comparison to Jacobi iteration is shown. The
+formalism of density matrix is applied to the demonstrative example of 1D,
+semi-infinite, non-magnetic, 3-principal level hydrogen atmospheric model. The
+effect of depolarizing collisions with thermal electrons is taken into account
+as well as general treatment of overlapping profiles.

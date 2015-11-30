@@ -1,0 +1,22 @@
+A fast algorithm is developed for the directional correlation of scalar
+band-limited signals and band-limited steerable filters on the sphere. The
+asymptotic complexity associated to it through simple quadrature is of order
+O(L^5), where 2L stands for the square-root of the number of sampling points on
+the sphere, also setting a band limit L for the signals and filters considered.
+The filter steerability allows to compute the directional correlation uniquely
+in terms of direct and inverse scalar spherical harmonics transforms, which
+drive the overall asymptotic complexity. The separation of variables technique
+for the scalar spherical harmonics transform produces an O(L^3) algorithm
+independently of the pixelization. On equi-angular pixelizations, a sampling
+theorem introduced by Driscoll and Healy implies the exactness of the
+algorithm. The equi-angular and HEALPix implementations are compared in terms
+of memory requirements, computation times, and numerical stability. The
+computation times for the scalar transform, and hence for the directional
+correlation, of maps of several megapixels on the sphere (L~10^3) are reduced
+from years to tens of seconds in both implementations on a single standard
+computer. These generic results for the scale-space signal processing on the
+sphere are specifically developed in the perspective of the wavelet analysis of
+the cosmic microwave background (CMB) temperature (T) and polarization (E and
+B) maps of the WMAP and Planck experiments. As an illustration, we consider the
+computation of the wavelet coefficients of a simulated temperature map of
+several megapixels with the second Gaussian derivative wavelet.

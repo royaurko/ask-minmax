@@ -1,0 +1,23 @@
+In an attempt to widen access to the study of magnetic fields in stellar
+astronomy, I present MOOGStokes, a version of the MOOG one-dimensional LTE
+radiative transfer code, overhauled to incorporate a Stokes vector treatment of
+polarized radiation through a magnetic medium. MOOGStokes is a suite of three
+complementary programs, which together can synthesize the disk-averaged
+emergent spectrum of a star with a magnetic field. The first element (a
+pre-processing script called CounterPoint) calculates for a given magnetic
+field strength, wavelength shifts and polarizations for the components of
+Zeeman sensitive lines. The second element (a MOOG driver called SynStokes
+derived from the existing MOOG driver Synth) uses the list of Zeeman shifted
+absorption lines together with the existing machinery of MOOG to synthesize the
+emergent spectrum at numerous locations across the stellar disk, accounting for
+stellar and magnetic field geometry. The third and final element (a
+post-processing script called DiskoBall) calculates the disk-averaged spectrum
+by weighting the individual emergent spectra by limb darkening and projected
+area, and applying the effects of Doppler broadening. All together, the
+MOOGStokes package allows users to synthesize emergent spectra of stars with
+magnetic fields in a familiar computational framework. MOOGStokes produces
+disk-averaged spectra for all Stokes vectors (I, Q, U, and V), normalized by
+the continuum. MOOGStokes agrees well with the predictions of INVERS10 a
+polarized radiative transfer code with a long history of use in the study of
+stellar magnetic fields. In the non-magnetic limit, MOOGStokes also agrees with
+the predictions of the scalar version of MOOG.

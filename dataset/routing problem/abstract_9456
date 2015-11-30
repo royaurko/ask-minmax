@@ -1,0 +1,16 @@
+This paper addresses the problem of summarizing the posterior distributions
+that typically arise, in a Bayesian framework, when dealing with signal
+decomposition problems with unknown number of components. Such posterior
+distributions are defined over union of subspaces of differing dimensionality
+and can be sampled from using modern Monte Carlo techniques, for instance the
+increasingly popular RJ-MCMC method. No generic approach is available, however,
+to summarize the resulting variable-dimensional samples and extract from them
+component-specific parameters.
+  We propose a novel approach to this problem, which consists in approximating
+the complex posterior of interest by a "simple"---but still
+variable-dimensional---parametric distribution. The distance between the two
+distributions is measured using the Kullback-Leibler divergence, and a
+Stochastic EM-type algorithm, driven by the RJ-MCMC sampler, is proposed to
+estimate the parameters. The proposed algorithm is illustrated on the
+fundamental signal processing example of joint detection and estimation of
+sinusoids in white Gaussian noise.

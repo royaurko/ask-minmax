@@ -1,0 +1,13 @@
+We are developing a general framework for using learned Bayesian models for
+decision-theoretic control of search and reasoningalgorithms. We illustrate the
+approach on the specific task of controlling both general and domain-specific
+solvers on a hard class of structured constraint satisfaction problems. A
+successful strategyfor reducing the high (and even infinite) variance in
+running time typically exhibited by backtracking search algorithms is to cut
+off and restart the search if a solution is not found within a certainamount of
+time. Previous work on restart strategies have employed fixed cut off values.
+We show how to create a dynamic cut off strategy by learning a Bayesian model
+that predicts the ultimate length of a trial based on observing the early
+behavior of the search algorithm. Furthermore, we describe the general
+conditions under which a dynamic restart strategy can outperform the
+theoretically optimal fixed strategy.

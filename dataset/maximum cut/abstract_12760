@@ -1,0 +1,10 @@
+In this paper, we introduce the on-line Viterbi algorithm for decoding hidden
+Markov models (HMMs) in much smaller than linear space. Our analysis on
+two-state HMMs suggests that the expected maximum memory used to decode
+sequence of length $n$ with $m$-state HMM can be as low as $\Theta(m\log n)$,
+without a significant slow-down compared to the classical Viterbi algorithm.
+Classical Viterbi algorithm requires $O(mn)$ space, which is impractical for
+analysis of long DNA sequences (such as complete human genome chromosomes) and
+for continuous data streams. We also experimentally demonstrate the performance
+of the on-line Viterbi algorithm on a simple HMM for gene finding on both
+simulated and real DNA sequences.

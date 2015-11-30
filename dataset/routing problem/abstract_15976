@@ -1,0 +1,15 @@
+An important class of problems exhibits macroscopically smooth behaviour in
+space and time, while only a microscopic evolution law is known. For such
+time-dependent multi-scale problems, the gap-tooth scheme has recently been
+proposed. The scheme approximates the evolution of an unavailable (in closed
+form) macroscopic equation in a macroscopic domain; it only uses appropriately
+initialized simulations of the available microscopic model in a number of small
+boxes. For some model problems, including numerical homogenization, the scheme
+is essentially equivalent to a finite difference scheme, provided we repeatedly
+impose appropriate algebraic constraints on the solution for each box. Here, we
+demonstrate that it is possible to obtain a convergent scheme without
+constraining the microscopic code, by introducing buffers that "shield" over
+relatively short times the dynamics inside each box from boundary effects. We
+explore and quantify the behavior of these schemes systematically through the
+numerical computation of damping factors of the corresponding coarse
+time-stepper, for which no closed formula is available.

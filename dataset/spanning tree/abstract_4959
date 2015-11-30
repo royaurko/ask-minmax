@@ -1,0 +1,24 @@
+Many forest management planning decisions are based on information about the
+number of trees by species and diameter per unit area. This information is
+commonly summarized in a stand table, where a stand is defined as a group of
+forest trees of sufficiently uniform species composition, age, condition, or
+productivity to be considered a homogeneous unit for planning purposes.
+Typically information used to construct stand tables is gleaned from observed
+subsets of the forest selected using a probability-based sampling design. Such
+sampling campaigns are expensive and hence only a small number of sample units
+are typically observed. This data paucity means that stand tables can only be
+estimated for relatively large areal units. Contemporary forest management
+planning and spatially explicit ecosystem models require stand table input at
+higher spatial resolution than can be affordably provided using traditional
+approaches. We propose a dynamic multivariate Poisson spatial regression model
+that accommodates both spatial correlation between observed diameter
+distributions and also correlation between tree counts across diameter classes
+within each location. To improve fit and prediction at unobserved locations,
+diameter specific intensities can be estimated using auxiliary data such as
+management history or remotely sensed information. The proposed model is used
+to analyze a diverse forest inventory dataset collected on the United States
+Forest Service Penobscot Experimental Forest in Bradley, Maine. Results
+demonstrate that explicitly modeling the residual spatial structure via a
+multivariate Gaussian process and incorporating information about forest
+structure from LiDAR covariates improve model fit and can provide high spatial
+resolution stand table maps with associated estimates of uncertainty.

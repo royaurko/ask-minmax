@@ -1,0 +1,16 @@
+In recent years, data streaming has gained prominence due to advances in
+technologies that enable many applications to generate continuous flows of
+data. This increases the need to develop algorithms that are able to
+efficiently process data streams. Additionally, real-time requirements and
+evolving nature of data streams make stream mining problems, including
+clustering, challenging research problems.
+  In this paper, we propose a one-pass streaming soft clustering (membership of
+a point in a cluster is described by a distribution) algorithm which
+approximates the "soft" version of the k-means objective function. Soft
+clustering has applications in various aspects of databases and machine
+learning including density estimation and learning mixture models. We first
+achieve a simple pseudo-approximation in terms of the "hard" k-means algorithm,
+where the algorithm is allowed to output more than $k$ centers. We convert this
+batch algorithm to a streaming one (using an extension of the k-means++
+algorithm recently proposed) in the "cash register" model. We also extend this
+algorithm when the clustering is done over a moving window in the data stream.

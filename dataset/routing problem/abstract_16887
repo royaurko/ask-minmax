@@ -1,0 +1,14 @@
+In traditional on-line problems, such as scheduling, requests arrive over
+time, demanding available resources. As each request arrives, some resources
+may have to be irrevocably committed to servicing that request. In many
+situations, however, it may be possible or even necessary to reallocate
+previously allocated resources in order to satisfy a new request. This
+reallocation has a cost. This paper shows how to service the requests while
+minimizing the reallocation cost. We focus on the classic problem of scheduling
+jobs on a multiprocessor system. Each unit-size job has a time window in which
+it can be executed. Jobs are dynamically added and removed from the system. We
+provide an algorithm that maintains a valid schedule, as long as a sufficiently
+feasible schedule exists. The algorithm reschedules only a total number of
+O(min{log^* n, log^* Delta}) jobs for each job that is inserted or deleted from
+the system, where n is the number of active jobs and Delta is the size of the
+largest window.

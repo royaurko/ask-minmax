@@ -1,0 +1,11 @@
+Benes networks are constructed with simple switch modules and have many
+advantages, including small latency and requiring only an almost linear number
+of switch modules. As circuit-switches, Benes networks are rearrangeably
+non-blocking, which implies that they are full-throughput as packet switches,
+with suitable routing.
+  Routing in Benes networks can be done by time-sharing permutations. However,
+this approach requires centralized control of the switch modules and
+statistical knowledge of the traffic arrivals. We propose a backpressure-based
+routing scheme for Benes networks, combined with end-to-end congestion control.
+This approach achieves the maximal utility of the network and requires only
+four queues per module, independently of the size of the network.

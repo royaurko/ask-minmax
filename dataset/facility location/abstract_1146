@@ -1,0 +1,10 @@
+Let $G$ be a (possibly disconnected) planar subdivision and let $D$ be a
+probability measure over $\R^2$. The current paper shows how to preprocess
+$(G,D)$ into an O(n) size data structure that can answer planar point location
+queries over $G$. The expected query time of this data structure, for a query
+point drawn according to $D$, is $O(H+1)$, where $H$ is a lower bound on the
+expected query time of any linear decision tree for point location in $G$. This
+extends the results of Collette et al (2008, 2009) from connected planar
+subdivisions to disconnected planar subdivisions. A version of this structure,
+when combined with existing results on succinct point location, provides a
+succinct distribution-sensitive point location structure.

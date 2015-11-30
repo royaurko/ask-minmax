@@ -1,0 +1,22 @@
+MADmap is a software application used to produce maximum-likelihood images of
+the sky from time-ordered data which include correlated noise, such as those
+gathered by Cosmic Microwave Background (CMB) experiments. It works efficiently
+on platforms ranging from small workstations to the most massively parallel
+supercomputers. Map-making is a critical step in the analysis of all CMB data
+sets, and the maximum-likelihood approach is the most accurate and widely
+applicable algorithm; however, it is a computationally challenging task. This
+challenge will only increase with the next generation of ground-based,
+balloon-borne and satellite CMB polarization experiments. The faintness of the
+B-mode signal that these experiments seek to measure requires them to gather
+enormous data sets. MADmap is already being run on up to $O(10^{11})$ time
+samples, $O(10^8)$ pixels and $O(10^4)$ cores, with ongoing work to scale to
+the next generation of data sets and supercomputers. We describe MADmap's
+algorithm based around a preconditioned conjugate gradient solver, fast Fourier
+transforms and sparse matrix operations. We highlight MADmap's ability to
+address problems typically encountered in the analysis of realistic CMB data
+sets and describe its application to simulations of the Planck and EBEX
+experiments. The massively parallel and distributed implementation is detailed
+and scaling complexities are given for the resources required. MADmap is
+capable of analysing the largest data sets now being collected on computing
+resources currently available, and we argue that, given Moore's Law, MADmap
+will be capable of reducing the most massive projected data sets.

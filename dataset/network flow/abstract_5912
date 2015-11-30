@@ -1,0 +1,10 @@
+This paper proposes a novel, algorithm-independent approach to optimizing
+belief network inference. rather than designing optimizations on an algorithm
+by algorithm basis, we argue that one should use an unoptimized algorithm to
+generate a Q-DAG, a compiled graphical representation of the belief network,
+and then optimize the Q-DAG and its evaluator instead. We present a set of
+Q-DAG optimizations that supplant optimizations designed for traditional
+inference algorithms, including zero compression, network pruning and caching.
+We show that our Q-DAG optimizations require time linear in the Q-DAG size, and
+significantly simplify the process of designing algorithms for optimizing
+belief network inference.

@@ -1,0 +1,14 @@
+The feeder reconfiguration problem chooses the on/off status of the switches
+in a distribution network in order to minimize a certain cost such as power
+loss. It is a mixed integer nonlinear program and hence hard to solve. A
+popular heuristic search consists of repeated application of branch exchange,
+where some loads are transferred from one feeder to another feeder while
+maintaining the radial structure of the network, until no load transfer can
+further reduce the cost. Optimizing each branch exchange step is itself a mixed
+integer nonlinear program. In this paper we propose an efficient algorithm for
+optimizing a branch exchange step. It uses an AC power flow model and is based
+on the recently developed convex relaxation of optimal power flow. We provide a
+bound on the gap between the optimal cost and that of our solution. We prove
+that our algorithm is optimal when the voltage magnitudes are the same at all
+buses. We illustrate the effectiveness of our algorithm through the simulation
+of real- world distribution feeders.

@@ -1,0 +1,12 @@
+Applying a sparse constraint on the beam pattern has been suggested to
+suppress the sidelobe of the minimum variance distortionless response (MVDR)
+beamformer recently. To further improve the performance, we add a mixed norm
+constraint on the beam pattern. It matches the beam pattern better and
+encourages dense distribution in mainlobe and sparse distribution in sidelobe.
+The obtained beamformer has a lower sidelobe level and deeper nulls for
+interference avoidance than the standard sparse constraint based beamformer.
+Simulation demonstrates that the SINR gain is considerable for its lower
+sidelobe level and deeper nulling for interference, while the robustness
+against the mismatch between the steering angle and the direction of arrival
+(DOA) of the desired signal, caused by imperfect estimation of DOA, is
+maintained too.

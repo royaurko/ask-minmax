@@ -1,0 +1,22 @@
+Networked control systems consist of distributed sensors and actuators that
+communicate via a wireless network. The use of an open wireless medium and
+unattended deployment leaves these systems vulnerable to intelligent
+adversaries whose goal is to disrupt the system performance. In this paper, we
+study the wormhole attack on a networked control system, in which an adversary
+establishes a link between two distant regions of the network by using either
+high-gain antennas, as in the out-of-band wormhole, or colluding network nodes
+as in the in-band wormhole. Wormholes allow the adversary to violate the timing
+constraints of real-time control systems by delaying or dropping packets, and
+cannot be detected using cryptographic mechanisms alone. We study the impact of
+the wormhole attack on the network flows and delays and introduce a
+passivity-based control-theoretic framework for modeling the wormhole attack.
+We develop this framework for both the in-band and out-of-band wormhole attacks
+as well as complex, hereto-unreported wormhole attacks consisting of arbitrary
+combinations of in-and out-of band wormholes. We integrate existing mitigation
+strategies into our framework, and analyze the throughput, delay, and stability
+properties of the overall system. Through simulation study, we show that, by
+selectively dropping control packets, the wormhole attack can cause
+disturbances in the physical plant of a networked control system, and
+demonstrate that appropriate selection of detection parameters mitigates the
+disturbances due to the wormhole while satisfying the delay constraints of the
+physical system.

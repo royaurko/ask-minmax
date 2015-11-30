@@ -1,0 +1,24 @@
+We propose a novel foundational framework for why-not explanations, that is,
+explanations for why a tuple is missing from a query result. Our why-not
+explanations leverage concepts from an ontology to provide high-level and
+meaningful reasons for why a tuple is missing from the result of a query. A key
+algorithmic problem in our framework is that of computing a most-general
+explanation for a why-not question, relative to an ontology, which can either
+be provided by the user, or it may be automatically derived from the data
+and/or schema. We study the complexity of this problem and associated problems,
+and present concrete algorithms for computing why-not explanations. In the case
+where an external ontology is provided, we first show that the problem of
+deciding the existence of an explanation to a why-not question is NP-complete
+in general. However, the problem is solvable in polynomial time for queries of
+bounded arity, provided that the ontology is specified in a suitable language,
+such as a member of the DL-Lite family of description logics, which allows for
+efficient concept subsumption checking. Furthermore, we show that a
+most-general explanation can be computed in polynomial time in this case. In
+addition, we propose a method for deriving a suitable (virtual) ontology from a
+database and/or a data workspace schema, and we present an algorithm for
+computing a most-general explanation to a why-not question, relative to such
+ontologies. This algorithm runs in polynomial-time in the case when concepts
+are defined in a selection-free language, or if the underlying schema is fixed.
+Finally, we also study the problem of computing short most-general
+explanations, and we briefly discuss alternative definitions of what it means
+to be an explanation, and to be most general.

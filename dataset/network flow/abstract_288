@@ -1,0 +1,25 @@
+This paper addresses the following question: Is it possible to migrate TCP/IP
+flows between different networks on modern mobile devices, without
+infrastructure support or protocol changes? To answer this question, we make
+three research contributions. (i) We report a comprehensive characterization of
+IP traffic on smartphones using traces collected from 27 iPhone 3GS users for
+three months. (ii) Driven by the findings from the characterization, we devise
+two novel system mechanisms for mobile devices to sup-port seamless flow
+migration without network support, and extensively evaluate their effectiveness
+using our field collected traces of real-life usage. Wait-n-Migrate leverages
+the fact that most flows are short lived. It establishes new flows on newly
+available networks but allows pre-existing flows on the old network to
+terminate naturally, effectively decreasing, or even eliminating, connectivity
+gaps during network switches. Resumption Agent takes advantage of the
+functionality integrated into many modern protocols to securely resume flows
+without application intervention. When combined, Wait-n-Migrate and Resumption
+Agent provide an unprecedented opportunity to immediately deploy performance
+and efficiency-enhancing policies that leverage multiple networks to improve
+the performance, efficiency, and connectivity of mobile devices. (iii) Finally,
+we report an iPhone 3GS based implementation of these two system mechanisms and
+show that their overhead is negligible. Furthermore, we employ an example
+network switching policy, called AutoSwitch, to demonstrate their performance.
+AutoSwitch improves the Wi-Fi user experience by intelligently migrating TCP
+flows between Wi-Fi and cellular networks. Through traces and field
+measurements, we show that AutoSwitch reduces the number of user disruptions by
+an order of magnitude.

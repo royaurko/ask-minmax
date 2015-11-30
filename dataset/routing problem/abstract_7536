@@ -1,0 +1,24 @@
+We study LP-rounding approximation algorithms for metric uncapacitated
+facility-location problems. We first give a new analysis for the algorithm of
+Chudak and Shmoys, which differs from the analysis of Byrka and Aardal in that
+now we do not need any bound based on the solution to the dual LP program.
+Besides obtaining the optimal bifactor approximation as do Byrka and Aardal, we
+can now also show that the algorithm with scaling parameter equaling 1.58 is,
+in fact, an 1.58-approximation algorithm. More importantly, we suggest an
+approach based on additional randomization and analyses such as ours, which
+could achieve or approach the conjectured optimal 1.46...--approximation for
+this basic problem.
+  Next, using essentially the same techniques, we obtain improved approximation
+algorithms in the 2-stage stochastic variant of the problem, where we must open
+a subset of facilities having only stochastic information about the future
+demand from the clients. For this problem we obtain a 2.2975-approximation
+algorithm in the standard setting, and a 2.4957-approximation in the more
+restricted, per-scenario setting.
+  We then study robust fault-tolerant facility location, introduced by Chechik
+and Peleg: solutions here are designed to provide low connection cost in case
+of failure of up to $k$ facilities. Chechik and Peleg gave a 6.5-approximation
+algorithm for $k=1$ and a ($7.5k + 1.5$)-approximation algorithm for general
+$k$. We improve this to an LP-rounding $(k+5+4/k)$-approximation algorithm. We
+also observe that in case of oblivious failures the expected approximation
+ratio can be reduced to $k + 1.5$, and that the integrality gap of the natural
+LP-relaxation of the problem is at least $k + 1$.

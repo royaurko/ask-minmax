@@ -1,0 +1,23 @@
+We consider the problem of performing a random walk in a distributed network.
+Given bandwidth constraints, the goal of the problem is to minimize the number
+of rounds required to obtain a random walk sample. Das Sarma et al. [PODC'10]
+show that a random walk of length $\ell$ on a network of diameter $D$ can be
+performed in $\tilde O(\sqrt{\ell D}+D)$ time. A major question left open is
+whether there exists a faster algorithm, especially whether the multiplication
+of $\sqrt{\ell}$ and $\sqrt{D}$ is necessary.
+  In this paper, we show a tight unconditional lower bound on the time
+complexity of distributed random walk computation. Specifically, we show that
+for any $n$, $D$, and $D\leq \ell \leq (n/(D^3\log n))^{1/4}$, performing a
+random walk of length $\Theta(\ell)$ on an $n$-node network of diameter $D$
+requires $\Omega(\sqrt{\ell D}+D)$ time. This bound is {\em unconditional},
+i.e., it holds for any (possibly randomized) algorithm. To the best of our
+knowledge, this is the first lower bound that the diameter plays a role of
+multiplicative factor. Our bound shows that the algorithm of Das Sarma et al.
+is time optimal.
+  Our proof technique introduces a new connection between {\em bounded-round}
+communication complexity and distributed algorithm lower bounds with $D$ as a
+trade-off parameter, strengthening the previous study by Das Sarma et al.
+[STOC'11]. In particular, we make use of the bounded-round communication
+complexity of the pointer chasing problem. Our technique can be of independent
+interest and may be useful in showing non-trivial lower bounds on the
+complexity of other fundamental distributed computing problems.

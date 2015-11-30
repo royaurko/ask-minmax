@@ -1,0 +1,14 @@
+We consider the problem of developing an efficient multi-threaded
+implementation of the matrix-vector multiplication algorithm for sparse
+matrices with structural symmetry. Matrices are stored using the compressed
+sparse row-column format (CSRC), designed for profiting from the symmetric
+non-zero pattern observed in global finite element matrices. Unlike classical
+compressed storage formats, performing the sparse matrix-vector product using
+the CSRC requires thread-safe access to the destination vector. To avoid race
+conditions, we have implemented two partitioning strategies. In the first one,
+each thread allocates an array for storing its contributions, which are later
+combined in an accumulation step. We analyze how to perform this accumulation
+in four different ways. The second strategy employs a coloring algorithm for
+grouping rows that can be concurrently processed by threads. Our results
+indicate that, although incurring an increase in the working set size, the
+former approach leads to the best performance improvements for most matrices.

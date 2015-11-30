@@ -1,0 +1,15 @@
+Sequential Monte Carlo (SMC) methods, such as the particle filter, are by now
+one of the standard computational techniques for addressing the filtering
+problem in general state-space models. However, many applications require
+post-processing of data offline. In such scenarios the smoothing problem--in
+which all the available data is used to compute state estimates--is of central
+interest. We consider the smoothing problem for a class of conditionally linear
+Gaussian models. We present a forward-backward-type Rao-Blackwellized particle
+smoother (RBPS) that is able to exploit the tractable substructure present in
+these models. Akin to the well known Rao-Blackwellized particle filter, the
+proposed RBPS marginalizes out a conditionally tractable subset of state
+variables, effectively making use of SMC only for the "intractable part" of the
+model. Compared to existing RBPS, two key features of the proposed method are:
+(i) it does not require structural approximations of the model, and (ii) the
+aforementioned marginalization is done both in the forward direction and in the
+backward direction.

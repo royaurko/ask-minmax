@@ -1,0 +1,27 @@
+A hypergraph is said to be $\chi$-colorable if its vertices can be colored
+with $\chi$ colors so that no hyperedge is monochromatic. $2$-colorability is a
+fundamental property (called Property B) of hypergraphs and is extensively
+studied in combinatorics. Algorithmically, however, given a $2$-colorable
+$k$-uniform hypergraph, it is NP-hard to find a $2$-coloring miscoloring fewer
+than a fraction $2^{-k+1}$ of hyperedges (which is achieved by a random
+$2$-coloring), and the best algorithms to color the hypergraph properly require
+$\approx n^{1-1/k}$ colors, approaching the trivial bound of $n$ as $k$
+increases.
+  In this work, we study the complexity of approximate hypergraph coloring, for
+both the maximization (finding a $2$-coloring with fewest miscolored edges) and
+minimization (finding a proper coloring using fewest number of colors)
+versions, when the input hypergraph is promised to have the following stronger
+properties than $2$-colorability:
+  (A) Low-discrepancy: If the hypergraph has discrepancy $\ell \ll \sqrt{k}$,
+we give an algorithm to color the it with $\approx n^{O(\ell^2/k)}$ colors.
+However, for the maximization version, we prove NP-hardness of finding a
+$2$-coloring miscoloring a smaller than $2^{-O(k)}$ (resp. $k^{-O(k)}$)
+fraction of the hyperedges when $\ell = O(\log k)$ (resp. $\ell=2$). Assuming
+the UGC, we improve the latter hardness factor to $2^{-O(k)}$ for almost
+discrepancy-$1$ hypergraphs.
+  (B) Rainbow colorability: If the hypergraph has a $(k-\ell)$-coloring such
+that each hyperedge is polychromatic with all these colors, we give a
+$2$-coloring algorithm that miscolors at most $k^{-\Omega(k)}$ of the
+hyperedges when $\ell \ll \sqrt{k}$, and complement this with a matching UG
+hardness result showing that when $\ell =\sqrt{k}$, it is hard to even beat the
+$2^{-k+1}$ bound achieved by a random coloring.

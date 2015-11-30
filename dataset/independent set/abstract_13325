@@ -1,0 +1,16 @@
+On-site boundary conditions are often desired for lattice Boltzmann
+simulations of fluid flow in complex geometries such as porous media or
+microfluidic devices. The possibility to specify the exact position of the
+boundary, independent of other simulation parameters, simplifies the analysis
+of the system. For practical applications it should allow to freely specify the
+direction of the flux, and it should be straight forward to implement in three
+dimensions. Furthermore, especially for parallelized solvers it is of great
+advantage if the boundary condition can be applied locally, involving only
+information available on the current lattice site. We meet this need by
+describing in detail how to transfer the approach suggested by Zou and He to a
+D3Q19 lattice. The boundary condition acts locally, is independent of the
+details of the relaxation process during collision and contains no artificial
+slip. In particular, the case of an on-site no-slip boundary condition is
+naturally included. We test the boundary condition in several setups and
+confirm that it is capable to accurately model the velocity field up to second
+order and does not contain any numerical slip.

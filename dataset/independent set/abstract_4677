@@ -1,0 +1,25 @@
+16S-ribosomal sequencing and other metagonomic techniques provide snapshots
+of microbial communities, revealing phylogeny and the abundances of microbial
+populations across diverse ecosystems. While changes in microbial community
+structure are demonstrably associated with certain environmental conditions,
+identification of underlying mechanisms requires new statistical tools, as
+these datasets present several technical challenges. First, the abundances of
+microbial operational taxonomic units (OTUs) from 16S datasets are
+compositional, and thus, microbial abundances are not independent. Secondly,
+microbial sequencing-based studies typically measure hundreds of OTUs on only
+tens to hundreds of samples; thus, inference of OTU-OTU interaction networks is
+severely under-powered, and additional assumptions are required for accurate
+inference. Here, we present SPIEC-EASI (SParse InversE Covariance Estimation
+for Ecological Association Inference), a statistical method for the inference
+of microbial ecological interactions from metagenomic datasets that addresses
+both of these issues. SPIEC-EASI combines data transformations developed for
+compositional data analysis with a graphical model inference framework that
+assumes the underlying ecological interaction network is sparse. To reconstruct
+the interaction network, SPIEC-EASI relies on algorithms for sparse
+neighborhood and inverse covariance selection. Because no large-scale microbial
+ecological networks have been experimentally validated, SPIEC-EASI comprises
+computational tools to generate realistic OTU count data from a set of diverse
+underlying network topologies. SPIEC-EASI outperforms state-of-the-art methods
+in terms of edge recovery and network properties on realistic synthetic data
+under a variety of scenarios. SPIEC-EASI also reproducibly predicts previously
+unknown microbial interactions using data from the American Gut project.

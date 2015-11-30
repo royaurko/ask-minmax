@@ -1,0 +1,13 @@
+We introduce an Expanded Parts Model (EPM) for recognizing human attributes
+(e.g. young, short hair, wearing suit) and actions (e.g. running, jumping) in
+still images. An EPM is a collection of part templates which are learnt
+discriminatively to explain specific scale-space regions in the images (in
+human centric coordinates). This is in contrast to current models which consist
+of a relatively few (i.e. a mixture of) 'average' templates. EPM uses only a
+subset of the parts to score an image and scores the image sparsely in space,
+i.e. it ignores redundant and random background in an image. To learn our
+model, we propose an algorithm which automatically mines parts and learns
+corresponding discriminative templates together with their respective locations
+from a large number of candidate parts. We validate our method on three recent
+challenging datasets of human attributes and actions. We obtain convincing
+qualitative and state-of-the-art quantitative results on the three datasets.

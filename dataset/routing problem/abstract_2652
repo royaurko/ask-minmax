@@ -1,0 +1,17 @@
+We propose a general framework to describe the impact of different events in
+the order book, that generalizes previous work on the impact of market orders.
+Two different modeling routes can be considered, which are equivalent when only
+market orders are taken into account. One model posits that each event type has
+a temporary impact (TIM). The "history dependent impact" model (HDIM), on the
+other hand, assumes that only price-changing events have a direct impact,
+itself modulated by the past history of all events through an "influence
+matrix" that measures how much, on average, an event of a given type affects
+the immediate impact of a price-changing event of the same sign in the future.
+We find in particular that aggressive market orders tend to reduce the impact
+of further aggressive market orders of the same sign (and increase the impact
+of aggressive market orders of opposite sign). We discuss the relative merits
+of TIM and HDIM, in particular concerning their ability to reproduce accurately
+the price diffusion pattern. We find that in spite of theoretical
+inconsistencies, TIM appears to fare better than HDIM when compared to
+empirical data. We ascribe this paradox to an uncontrolled approximation used
+to calibrate HDIMs, calling for further work on this issue.

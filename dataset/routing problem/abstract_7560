@@ -1,0 +1,17 @@
+We study a scheduling problem in which jobs may be split into parts, where
+the parts of a split job may be processed simultaneously on more than one
+machine. Each part of a job requires a setup time, however, on the machine
+where the job part is processed. During setup a machine cannot process or set
+up any other job. We concentrate on the basic case in which setup times are
+job-, machine-, and sequence-independent. Problems of this kind were
+encountered when modelling practical problems in planning disaster relief
+operations. Our main algorithmic result is a polynomial-time algorithm for
+minimising total completion time on two parallel identical machines. We argue
+why the same problem with three machines is not an easy extension of the
+two-machine case, leaving the complexity of this case as a tantalising open
+problem. We give a constant-factor approximation algorithm for the general case
+with any number of machines and a polynomial-time approximation scheme for a
+fixed number of machines. For the version with objective minimising weighted
+total completion time we prove NP-hardness. Finally, we conclude with an
+overview of the state of the art for other split scheduling problems with job-,
+machine-, and sequence-independent setup times.

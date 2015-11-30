@@ -1,0 +1,16 @@
+Local moments are used for local regression, to compute statistical measures
+such as sums, averages, and standard deviations, and to approximate probability
+distributions. We consider the case where the data source is a very large I/O
+array of size n and we want to compute the first N local moments, for some
+constant N. Without precomputation, this requires O(n) time. We develop a
+sequence of algorithms of increasing sophistication that use precomputation and
+additional buffer space to speed up queries. The simpler algorithms partition
+the I/O array into consecutive ranges called bins, and they are applicable not
+only to local-moment queries, but also to algebraic queries (MAX, AVERAGE, SUM,
+etc.). With N buffers of size sqrt{n}, time complexity drops to O(sqrt n). A
+more sophisticated approach uses hierarchical buffering and has a logarithmic
+time complexity (O(b log_b n)), when using N hierarchical buffers of size n/b.
+Using Overlapped Bin Buffering, we show that only a single buffer is needed, as
+with wavelet-based algorithms, but using much less storage. Applications exist
+in multidimensional and statistical databases over massive data sets,
+interactive image processing, and visualization.

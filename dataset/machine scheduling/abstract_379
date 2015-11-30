@@ -1,0 +1,19 @@
+The problem of universally predicting an individual continuous sequence using
+a deterministic finite-state machine (FSM) is considered. The empirical mean is
+used as a reference as it is the constant that fits a given sequence within a
+minimal square error. With this reference, a reasonable prediction performance
+is the regret, namely the excess square-error over the reference loss, the
+empirical variance. The paper analyzes the tradeoff between the number of
+states of the universal FSM and the attainable regret. It first studies the
+case of a small number of states. A class of machines, denoted Degenerated
+Tracking Memory (DTM), is defined and the optimal machine in this class is
+shown to be the optimal among all machines for small enough number of states.
+Unfortunately, DTM machines become suboptimal as the number of available states
+increases. Next, the Exponential Decaying Memory (EDM) machine, previously used
+for predicting binary sequences, is considered. While this machine has poorer
+performance for small number of states, it achieves a vanishing regret for
+large number of states. Following that, an asymptotic lower bound of
+O(k^{-2/3}) on the achievable regret of any k-state machine is derived. This
+bound is attained asymptotically by the EDM machine. Furthermore, a new
+machine, denoted the Enhanced Exponential Decaying Memory machine, is shown to
+outperform the EDM machine for any number of states.

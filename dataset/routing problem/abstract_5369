@@ -1,0 +1,22 @@
+Markov decision processes (MDPs) are a well studied framework for solving
+sequential decision making problems under uncertainty. Exact methods for
+solving MDPs based on dynamic programming such as policy iteration and value
+iteration are effective on small problems. In problems with a large discrete
+state space or with continuous state spaces, a compact representation is
+essential for providing an efficient approximation solutions to MDPs. Commonly
+used approximation algorithms involving constructing basis functions for
+projecting the value function onto a low dimensional subspace, and building a
+factored or hierarchical graphical model to decompose the transition and reward
+functions. However, hand-coding a good compact representation for a given
+reinforcement learning (RL) task can be quite difficult and time consuming.
+Recent approaches have attempted to automatically discover efficient
+representations for RL.
+  In this thesis proposal, we discuss the problems of automatically
+constructing structured kernel for kernel based RL, a popular approach to
+learning non-parametric approximations for value function. We explore a space
+of kernel structures which are built compositionally from base kernels using a
+context-free grammar. We examine a greedy algorithm for searching over the
+structure space. To demonstrate how the learned structure can represent and
+approximate the original RL problem in terms of compactness and efficiency, we
+plan to evaluate our method on a synthetic problem and compare it to other RL
+baselines.

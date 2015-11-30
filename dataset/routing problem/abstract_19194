@@ -1,0 +1,23 @@
+This work presents Drake, a dynamic executive for temporal plans with choice.
+Dynamic plan execution strategies allow an autonomous agent to react quickly to
+unfolding events, improving the robustness of the agent. Prior work developed
+methods for dynamically dispatching Simple Temporal Networks, and further
+research enriched the expressiveness of the plans executives could handle,
+including discrete choices, which are the focus of this work. However, in some
+approaches to date, these additional choices induce significant storage or
+latency requirements to make flexible execution possible.
+  Drake is designed to leverage the low latency made possible by a
+preprocessing step called compilation, while avoiding high memory costs through
+a compact representation. We leverage the concepts of labels and environments,
+taken from prior work in Assumption-based Truth Maintenance Systems (ATMS), to
+concisely record the implications of the discrete choices, exploiting the
+structure of the plan to avoid redundant reasoning or storage. Our labeling and
+maintenance scheme, called the Labeled Value Set Maintenance System, is
+distinguished by its focus on properties fundamental to temporal problems, and,
+more generally, weighted graph algorithms. In particular, the maintenance
+system focuses on maintaining a minimal representation of non-dominated
+constraints. We benchmark Drakes performance on random structured problems, and
+find that Drake reduces the size of the compiled representation by a factor of
+over 500 for large problems, while incurring only a modest increase in run-time
+latency, compared to prior work in compiled executives for temporal plans with
+discrete choices.

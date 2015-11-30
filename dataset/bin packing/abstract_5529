@@ -1,0 +1,26 @@
+In the stochastic knapsack problem, we are given a knapsack of size B, and a
+set of jobs whose sizes and rewards are drawn from a known probability
+distribution. However, we know the actual size and reward only when the job
+completes. How should we schedule jobs to maximize the expected total reward?
+We know O(1)-approximations when we assume that (i) rewards and sizes are
+independent random variables, and (ii) we cannot prematurely cancel jobs. What
+can we say when either or both of these assumptions are changed?
+  The stochastic knapsack problem is of interest in its own right, but
+techniques developed for it are applicable to other stochastic packing
+problems. Indeed, ideas for this problem have been useful for budgeted learning
+problems, where one is given several arms which evolve in a specified
+stochastic fashion with each pull, and the goal is to pull the arms a total of
+B times to maximize the reward obtained. Much recent work on this problem focus
+on the case when the evolution of the arms follows a martingale, i.e., when the
+expected reward from the future is the same as the reward at the current state.
+What can we say when the rewards do not form a martingale?
+  In this paper, we give constant-factor approximation algorithms for the
+stochastic knapsack problem with correlations and/or cancellations, and also
+for budgeted learning problems where the martingale condition is not satisfied.
+Indeed, we can show that previously proposed LP relaxations have large
+integrality gaps. We propose new time-indexed LP relaxations, and convert the
+fractional solutions into distributions over strategies, and then use the LP
+values and the time ordering information from these strategies to devise a
+randomized adaptive scheduling algorithm. We hope our LP formulation and
+decomposition methods may provide a new way to address other correlated bandit
+problems with more general contexts.

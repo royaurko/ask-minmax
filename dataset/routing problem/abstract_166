@@ -1,0 +1,19 @@
+Stateless geographic routing provides relatively good performance at a fixed
+overhead, which is typically much lower than conventional routing protocols
+such as AODV. However, the performance of geographic routing is impacted by
+physical voids, and localization errors. Accordingly, virtual coordinate
+systems (VCS) were proposed as an alternative approach that is resilient to
+localization errors and that naturally routes around physical voids. However,
+VCS also faces virtual anomalies, causing their performance to trail geographic
+routing. In existing VCS routing protocols, there is a lack of an effective
+stateless and delivery guaranteed complementary routing algorithm that can be
+used to traverse voids. Most proposed solutions use variants of flooding or
+blind searching when a void is encountered. In this paper, we propose a
+spanning-path virtual coordinate system which can be used as a complete routing
+algorithm or as the complementary algorithm to greedy forwarding that is
+invoked when voids are encountered. With this approach, and for the first time,
+we demonstrate a stateless and delivery guaranteed geometric routing algorithm
+on VCS. When used in conjunction with our previously proposed aligned virtual
+coordinate system (AVCS), it out-performs not only all geometric routing
+protocols on VCS, but also geographic routing with accurate location
+information.

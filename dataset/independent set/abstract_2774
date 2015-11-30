@@ -1,0 +1,16 @@
+In this paper we present a methodology and set of tools which assist the
+construction of applications from components, by separating the issues of
+transmission policy from component definition and implementation. This promotes
+a greater degree of software reuse than is possible using traditional
+middleware environments. Whilst component technologies are usually presented as
+a mechanism for promoting reuse, reuse is often limited due to design choices
+that permeate component implementation. The programmer has no direct control
+over inter-address-space parameter passing semantics: it is fixed by the
+distributed application's structure, based on the remote accessibility of the
+components. Using traditional middleware tools and environments, the
+application designer may be forced to use an unnatural encoding of application
+level semantics since application parameter passing semantics are tightly
+coupled with the component deployment topology. This paper describes how
+inter-address-space parameter passing semantics may be decided independently of
+component implementation. Transmission policy may be dynamically defined on a
+per-class, per-method or per-parameter basis.

@@ -1,0 +1,13 @@
+A sequential dynamical system (SDS) consists of an undirected simple graph
+$Y$ with vertices $v_1,v_2,\ldots,v_n$, a collection of vertex functions
+$\{f_{v_i}\}_{i=1}^n$, a permutation $\pi\in S_n$, and a collection of states
+$A$. The vertices update their states in a sequential order specified by $\pi$
+using the vertex functions $\{f_{v_i}\}_{i=1}^n$. Any sequential dynamical
+system gives rise to an SDS-map $[Y,\{f_{v_i}\}_{i=1}^n,\pi]$, which maps each
+initial configuration of vertex states to the new configuration of states
+obtained after each vertex updates. When all vertex functions are equal to the
+same function $f$, we write the SDS-map as $[Y,f,\pi]$.
+  Let $\eta_n$ denote the maximum number of periodic orbits of period $2$ that
+an SDS-map of the form $[K_n,f,\pi]$ can have. We show that $\eta_n$ is equal
+to the maximum number of codewords in a binary code of length $n-1$ with
+minimum distance at least $3$.

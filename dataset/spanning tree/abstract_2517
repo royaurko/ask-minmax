@@ -1,0 +1,18 @@
+We introduce the Tree Evaluation Problem, show that it is in logDCFL (and
+hence in P), and study its branching program complexity in the hope of
+eventually proving a superlogarithmic space lower bound. The input to the
+problem is a rooted, balanced d-ary tree of height h, whose internal nodes are
+labeled with d-ary functions on [k] = {1,...,k}, and whose leaves are labeled
+with elements of [k]. Each node obtains a value in [k] equal to its d-ary
+function applied to the values of its d children. The output is the value of
+the root. We show that the standard black pebbling algorithm applied to the
+binary tree of height h yields a deterministic k-way branching program with
+Theta(k^h) states solving this problem, and we prove that this upper bound is
+tight for h=2 and h=3. We introduce a simple semantic restriction called
+"thrifty" on k-way branching programs solving tree evaluation problems and show
+that the same state bound of Theta(k^h) is tight (up to a constant factor) for
+all h >= 2 for deterministic thrifty programs. We introduce fractional pebbling
+for trees and show that this yields nondeterministic thrifty programs with
+Theta(k^{h/2+1}) states solving the Boolean problem "determine whether the root
+has value 1". We prove that this bound is tight for h=2,3,4, and tight for
+unrestricted nondeterministic k-way branching programs for h=2,3.

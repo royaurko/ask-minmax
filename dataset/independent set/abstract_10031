@@ -1,0 +1,14 @@
+For fast and efficient analysis of large sets of fuzzy data, elimination of
+redundancies in the memory representation is needed. We used MTBDDs as the
+underlying data-structure to represent fuzzy sets and binary fuzzy relations.
+This leads to elimination of redundancies in the representation, less
+computations, and faster analyses. We have also extended a BDD package (BuDDy)
+to support MTBDDs in general and fuzzy sets and relations in particular.
+Different fuzzy operations such as max, min and max-min composition were
+implemented based on our representation. Effectiveness of our representation is
+shown by applying it on fuzzy connectedness and image segmentation problem.
+Compared to a base implementation, the running time of our MTBDD based
+implementation was faster (in our test cases) by a factor ranging from 2 to 27.
+Also, when the MTBDD based data-structure was employed, the memory needed to
+represent the final results was improved by a factor ranging from 37.9 to
+265.5.

@@ -1,0 +1,22 @@
+We present PlanetPack, a new software tool that we developed to facilitate
+and standardize the advanced analysis of radial velocity (RV) data for the goal
+of exoplanets detection, characterization, and basic dynamical $N$-body
+simulations. PlanetPack is a command-line interpreter, that can run either in
+an interactive mode or in a batch mode of automatic script interpretation.
+  Its major abilities include: (i) Advanced RV curve fitting with the proper
+maximum-likelihood treatment of unknown RV jitter; (ii) User-friendly
+multi-Keplerian as well as Newtonian $N$-body RV fits; (iii) Use of more
+efficient maximum-likelihood periodograms that involve the full multi-planet
+fitting (sometimes called as ``residual'' or ``recursive'' periodograms); (iv)
+Easily calculatable parametric 2D likelihood function level contours,
+reflecting the asymptotic confidence regions; (v) Fitting under some useful
+functional constraints is user-friendly; (vi) Basic tasks of short- and
+long-term planetary dynamical simulation using a fast Everhart-type integrator
+based on Gauss--Legendre spacings; (vii) Fitting the data with red noise
+(auto-correlated errors); (viii) Various analytical and numerical methods for
+the tasks of determining the statistical significance.
+  It is planned that further functionality may be added to PlanetPack in the
+future. During the development of this software, a lot of effort was made to
+improve the calculational speed, especially for CPU-demanding tasks. PlanetPack
+was written in pure C++ (standard of 1998/2003), and is expected to be
+compilable and usable on a wide range of platforms.

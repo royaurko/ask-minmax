@@ -1,0 +1,18 @@
+Search-based texture synthesis algorithms are sensitive to the order in which
+texture samples are generated; different synthesis orders yield different
+textures. Unfortunately, most polygon rasterizers and ray tracers do not
+guarantee the order with which surfaces are sampled. To circumvent this
+problem, textures are synthesized beforehand at some maximum resolution and
+rendered using texture mapping.
+  We describe a search-based texture synthesis algorithm in which samples can
+be generated in arbitrary order, yet the resulting texture remains identical.
+The key to our algorithm is a pyramidal representation in which each texture
+sample depends only on a fixed number of neighboring samples at each level of
+the pyramid. The bottom (coarsest) level of the pyramid consists of a noise
+image, which is small and predetermined. When a sample is requested by the
+renderer, all samples on which it depends are generated at once. Using this
+approach, samples can be generated in any order. To make the algorithm
+efficient, we propose storing texture samples and their dependents in a
+pyramidal cache. Although the first few samples are expensive to generate,
+there is substantial reuse, so subsequent samples cost less. Fortunately, most
+rendering algorithms exhibit good coherence, so cache reuse is high.

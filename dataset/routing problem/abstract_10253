@@ -1,0 +1,9 @@
+The longest common extension problem (LCE problem) is to construct a data
+structure for an input string $T$ of length $n$ that supports LCE$(i,j)$
+queries. Such a query returns the length of the longest common prefix of the
+suffixes starting at positions $i$ and $j$ in $T$. This classic problem has a
+well-known solution that uses $O(n)$ space and $O(1)$ query time. In this paper
+we show that for any trade-off parameter $1 \leq \tau \leq n$, the problem can
+be solved in $O(\frac{n}{\tau})$ space and $O(\tau)$ query time. This
+significantly improves the previously best known time-space trade-offs, and
+almost matches the best known time-space product lower bound.

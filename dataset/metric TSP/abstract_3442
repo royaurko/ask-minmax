@@ -1,0 +1,18 @@
+We consider unconstrained randomized optimization of smooth convex objective
+functions in the gradient-free setting. We analyze Random Pursuit (RP)
+algorithms with fixed (F-RP) and variable metric (V-RP). The algorithms only
+use zeroth-order information about the objective function and compute an
+approximate solution by repeated optimization over randomly chosen
+one-dimensional subspaces. The distribution of search directions is dictated by
+the chosen metric.
+  Variable Metric RP uses novel variants of a randomized zeroth-order Hessian
+approximation scheme recently introduced by Leventhal and Lewis (D. Leventhal
+and A. S. Lewis., Optimization 60(3), 329--245, 2011). We here present (i) a
+refined analysis of the expected single step progress of RP algorithms and
+their global convergence on (strictly) convex functions and (ii) novel
+convergence bounds for V-RP on strongly convex functions. We also quantify how
+well the employed metric needs to match the local geometry of the function in
+order for the RP algorithms to converge with the best possible rate.
+  Our theoretical results are accompanied by numerical experiments, comparing
+V-RP with the derivative-free schemes CMA-ES, Implicit Filtering, Nelder-Mead,
+NEWUOA, Pattern-Search and Nesterov's gradient-free algorithms.

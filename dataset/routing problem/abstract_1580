@@ -1,0 +1,18 @@
+Gossip algorithms for distributed computation are attractive due to their
+simplicity, distributed nature, and robustness in noisy and uncertain
+environments. However, using standard gossip algorithms can lead to a
+significant waste in energy by repeatedly recirculating redundant information.
+For realistic sensor network model topologies like grids and random geometric
+graphs, the inefficiency of gossip schemes is related to the slow mixing times
+of random walks on the communication graph. We propose and analyze an
+alternative gossiping scheme that exploits geographic information. By utilizing
+geographic routing combined with a simple resampling method, we demonstrate
+substantial gains over previously proposed gossip protocols. For regular graphs
+such as the ring or grid, our algorithm improves standard gossip by factors of
+$n$ and $\sqrt{n}$ respectively. For the more challenging case of random
+geometric graphs, our algorithm computes the true average to accuracy
+$\epsilon$ using $O(\frac{n^{1.5}}{\sqrt{\log n}} \log \epsilon^{-1})$ radio
+transmissions, which yields a $\sqrt{\frac{n}{\log n}}$ factor improvement over
+standard gossip algorithms. We illustrate these theoretical results with
+experimental comparisons between our algorithm and standard methods as applied
+to various classes of random fields.

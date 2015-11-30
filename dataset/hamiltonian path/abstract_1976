@@ -1,0 +1,14 @@
+We consider the problem of reconstructing vehicle trajectories from sparse
+sequences of GPS points, for which the sampling interval is between 10 seconds
+and 2 minutes. We introduce a new class of algorithms, called altogether path
+inference filter (PIF), that maps GPS data in real time, for a variety of
+trade-offs and scenarios, and with a high throughput. Numerous prior approaches
+in map-matching can be shown to be special cases of the path inference filter
+presented in this article. We present an efficient procedure for automatically
+training the filter on new data, with or without ground truth observations. The
+framework is evaluated on a large San Francisco taxi dataset and is shown to
+improve upon the current state of the art. This filter also provides insights
+about driving patterns of drivers. The path inference filter has been deployed
+at an industrial scale inside the Mobile Millennium traffic information system,
+and is used to map fleets of data in San Francisco, Sacramento, Stockholm and
+Porto.

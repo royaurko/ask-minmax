@@ -1,0 +1,16 @@
+Modern consumer devices, like smartphones and tablets, have multiple
+interfaces (e.g., WiFi and 3G) that attach to new access points as users move.
+These mobile, multi-homed computers are a poor match with an Internet
+architecture that binds connections to fixed end-points with topology-
+dependent addresses. As a result, hosts typically cannot spread a connection
+over multiple interfaces or paths, or change locations without breaking
+existing connections.
+  In this paper, we introduce ECCP, an end-host connection control protocol
+that allows hosts to communicate over mul- tiple interfaces with
+dynamically-changing IP addresses. Each ECCP connection consists of one or more
+flows, each associated with an interface or path. A host can move an existing
+flow from one interface to another or change the IP address using in-band
+signaling, without any support from the underlying network. We use formal
+models to verify that ECCP works correctly in the presence of packet loss,
+out-of-order delivery, and frequent mobility, and to identify bugs and design
+limitations in earlier mobility protocols.

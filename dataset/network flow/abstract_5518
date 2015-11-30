@@ -1,0 +1,19 @@
+We consider protocols that serve communication requests arising over time in
+a wireless network that is subject to interference. Unlike previous approaches,
+we take the geometry of the network and power control into account, both
+allowing to increase the network's performance significantly. We introduce a
+stochastic and an adversarial model to bound the packet injection. Although
+taken as the primary motivation, this approach is not only suitable for models
+based on the signal-to-interference-plus-noise ratio (SINR). It also covers
+virtually all other common interference models, for example the multiple-access
+channel, the radio-network model, the protocol model, and distance-2 matching.
+Packet-routing networks allowing each edge or each node to transmit or receive
+one packet at a time can be modeled as well.
+  Starting from algorithms for the respective scheduling problem with static
+transmission requests, we build distributed stable protocols. This is more
+involved than in previous, similar approaches because the algorithms we
+consider do not necessarily scale linearly when scaling the input instance. We
+can guarantee a throughput that is as large as the one of the original static
+algorithm. In particular, for SINR models the competitive ratios of the
+protocol in comparison to optimal ones in the respective model are between
+constant and O(log^2 m) for a network of size m.

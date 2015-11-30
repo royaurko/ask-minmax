@@ -1,0 +1,17 @@
+In this report, we study the multiparty communication complexity problem of
+the multiparty equality function (MEQ): EQ(x_1,...,x_n) = 1 if x_1=...=x_n, and
+0 otherwise. The input vector (x_1,...,x_n) is distributed among n>=2 nodes,
+with x_i known to node i, where x_i is chosen from the set {1,...,M}, for some
+integer M>0.
+  Instead of the "number on the forehand" model, we consider a point-to-point
+communication model (similar to the message passing model), which we believe is
+more realistic in networking settings. We assume a synchronous fully connected
+network of n nodes, the node IDs (identifiers) are common knowledge. We assume
+that all point-to-point communication channels/links are private such that when
+a node transmits, only the designated recipient can receive the message. The
+identity of the sender is known to the recipient.
+  We demonstrate that traditional techniques generalized from two-party
+communication complexity problem are not sufficient to obtain tight bounds
+under the point-to-point communication model. We then introduce techniques
+which significantly reduce the space of protocols to study. These techniques
+are used to study some instances of the MEQ problem.

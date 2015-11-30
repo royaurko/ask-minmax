@@ -1,0 +1,26 @@
+In this paper, we consider an intrusion detection application for Wireless
+Sensor Networks (WSNs). We study the problem of scheduling the sleep times of
+the individual sensors to maximize the network lifetime while keeping the
+tracking error to a minimum. We formulate this problem as a
+partially-observable Markov decision process (POMDP) with continuous
+state-action spaces, in a manner similar to (Fuemmeler and Veeravalli [2008]).
+However, unlike their formulation, we consider infinite horizon discounted and
+average cost objectives as performance criteria. For each criterion, we propose
+a convergent on-policy Q-learning algorithm that operates on two timescales,
+while employing function approximation to handle the curse of dimensionality
+associated with the underlying POMDP. Our proposed algorithm incorporates a
+policy gradient update using a one-simulation simultaneous perturbation
+stochastic approximation (SPSA) estimate on the faster timescale, while the
+Q-value parameter (arising from a linear function approximation for the
+Q-values) is updated in an on-policy temporal difference (TD) algorithm-like
+fashion on the slower timescale. The feature selection scheme employed in each
+of our algorithms manages the energy and tracking components in a manner that
+assists the search for the optimal sleep-scheduling policy. For the sake of
+comparison, in both discounted and average settings, we also develop a function
+approximation analogue of the Q-learning algorithm. This algorithm, unlike the
+two-timescale variant, does not possess theoretical convergence guarantees.
+Finally, we also adapt our algorithms to include a stochastic iterative
+estimation scheme for the intruder's mobility model. Our simulation results on
+a 2-dimensional network setting suggest that our algorithms result in better
+tracking accuracy at the cost of only a few additional sensors, in comparison
+to a recent prior work.

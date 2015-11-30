@@ -1,0 +1,22 @@
+We consider the problem of resource allocation and control of multihop
+networks in which multiple source-destination pairs communicate confidential
+messages, to be kept confidential from the intermediate nodes. We pose the
+problem as that of network utility maximization, into which confidentiality is
+incorporated as an additional quality of service constraint. We develop a
+simple, and yet provably optimal dynamic control algorithm that combines flow
+control, routing and end-to-end secrecy-encoding. In order to achieve
+confidentiality, our scheme exploits multipath diversity and temporal diversity
+due to channel variability. Our end-to-end dynamic encoding scheme encodes
+confidential messages across multiple packets, to be combined at the ultimate
+destination for recovery. We first develop an optimal dynamic policy for the
+case in which the number of blocks across which secrecy encoding is performed
+is asymptotically large. Next, we consider encoding across a finite number of
+packets, which eliminates the possibility of achieving perfect secrecy. For
+this case, we develop a dynamic policy to choose the encoding rates for each
+message, based on the instantaneous channel state information, queue states and
+secrecy outage requirements. By numerical analysis, we observe that the
+proposed scheme approaches the optimal rates asymptotically with increasing
+block size. Finally, we address the consequences of practical implementation
+issues such as infrequent queue updates and de-centralized scheduling. We
+demonstrate the efficacy of our policies by numerical studies under various
+network conditions.

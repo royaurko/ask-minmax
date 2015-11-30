@@ -1,0 +1,25 @@
+The unceasing demand for continuous situational awareness calls for
+innovative and large-scale signal processing algorithms, complemented by
+collaborative and adaptive sensing platforms to accomplish the objectives of
+layered sensing and control. Towards this goal, the present paper develops a
+spline-based approach to field estimation, which relies on a basis expansion
+model of the field of interest. The model entails known bases, weighted by
+generic functions estimated from the field's noisy samples. A novel field
+estimator is developed based on a regularized variational least-squares (LS)
+criterion that yields finitely-parameterized (function) estimates spanned by
+thin-plate splines. Robustness considerations motivate well the adoption of an
+overcomplete set of (possibly overlapping) basis functions, while a sparsifying
+regularizer augmenting the LS cost endows the estimator with the ability to
+select a few of these bases that ``better'' explain the data. This parsimonious
+field representation becomes possible, because the sparsity-aware spline-based
+method of this paper induces a group-Lasso estimator for the coefficients of
+the thin-plate spline expansions per basis. A distributed algorithm is also
+developed to obtain the group-Lasso estimator using a network of wireless
+sensors, or, using multiple processors to balance the load of a single
+computational unit. The novel spline-based approach is motivated by a spectrum
+cartography application, in which a set of sensing cognitive radios collaborate
+to estimate the distribution of RF power in space and frequency. Simulated
+tests corroborate that the estimated power spectrum density atlas yields the
+desired RF state awareness, since the maps reveal spatial locations where idle
+frequency bands can be reused for transmission, even when fading and shadowing
+effects are pronounced.

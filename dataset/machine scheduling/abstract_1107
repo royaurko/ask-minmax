@@ -1,0 +1,12 @@
+We study the problem of minimizing the average of $N$ convex functions using
+$m$ machines with each machine being able to access $n=\frac{N}{m}$ functions.
+We design a distributed stochastic variance reduced gradient (DSVRG) algorithm
+which, when the condition number $\kappa$ of the problem is less than $n^{0.9}$
+and when the data is assumed to be randomly partitioned onto the machines,
+simultaneously achieves the optimal parallel runtime, communication and rounds
+of communication among all first order methods up to constant factors. DSVRG
+and its extension DPPASVRG also outperform existing distributed algorithms in
+terms of the rounds of communication as long as $\kappa$ is not too large
+compared to $n$. For the regime when $n$ is relatively small, we propose a
+distributed accelerated SVRG algorithm which further reduces the parallel
+runtime.

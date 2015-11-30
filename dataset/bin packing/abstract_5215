@@ -1,0 +1,16 @@
+The boundaries of \textit{conic polygons} consist of conic segments or second
+degree curves. The conic polygon has two degenerate or special cases: the
+linear polygon and the circular-arc polygon. The natural problem --- boolean
+operation on linear polygons, has been \textit{well} studied. Surprisingly,
+(almost) no article \textit{focuses on} the problem of boolean operation on
+circular-arc polygons, which actually can also find many applications, implying
+that if there is a targeted solution for boolean operation on circular-arc
+polygons, which should be favourable for potential users. In this article, we
+devise a concise data structure, and then develop a targeted algorithm called
+R{\scriptsize E2L}. Our method is surprisingly simple, easy-to-implement but
+without loss of efficiency. Given two circular-arc polygons with $m$ and $n$
+edges respectively, we prove that the proposed method runs in $O(m+n+(l+k)\log
+l)$ time, using $O(m+n+l+k)$ space, where $k$ is the number of intersections,
+and $l$ is the number of related edges. The experimental results show our
+proposed algorithm is significantly faster than the ones that are by directly
+appealing to the existing algorithms.

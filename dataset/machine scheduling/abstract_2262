@@ -1,0 +1,15 @@
+In anonymous broadcast, one or more parties want to anonymously send messages
+to all parties. This problem is increasingly important as a black-box in many
+privacy-preserving applications such as anonymous communication, distributed
+auctions, and multi-party computation. In this paper, we design decentralized
+protocols for anonymous broadcast that require each party to send (and compute)
+a polylogarithmic number of bits (and operations) per anonymous bit delivered
+with $O(\log n)$ rounds of communication. Our protocol is provably secure
+against traffic analysis, does not require any trusted party, and is completely
+load-balanced. The protocol tolerates up to $n/6$ statically-scheduled
+Byzantine parties that are controlled by a computationally unbounded adversary.
+Our main strategy for achieving scalability is to perform local communications
+(and computations) among a logarithmic number of parties. We provide simulation
+results to show that our protocol improves significantly over previous work. We
+finally show that using a common cryptographic tool in our protocol one can
+achieve practical results for anonymous broadcast.

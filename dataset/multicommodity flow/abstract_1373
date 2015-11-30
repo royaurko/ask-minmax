@@ -1,0 +1,14 @@
+In this work, we propose a novel model order reduction approach for two-phase
+flow in porous media by introducing a formulation in which the mobility, which
+realizes the coupling between phase saturations and phase pressures, is
+regarded as a parameter to the pressure equation. Using this formulation, we
+introduce the Localized Reduced Basis Multiscale method to obtain a
+low-dimensional surrogate of the high-dimensional pressure equation. By
+applying ideas from model order reduction for parametrized partial differential
+equations, we are able to split the computational effort for solving the
+pressure equation into a costly offline step that is performed only once and an
+inexpensive online step that is carried out in every time step of the two-phase
+flow simulation, which is thereby largely accelerated. Usage of elements from
+numerical multiscale methods allows us to displace the computational intensity
+between the offline and online step to reach an ideal runtime at acceptable
+error increase for the two-phase flow simulation.

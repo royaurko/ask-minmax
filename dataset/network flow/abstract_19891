@@ -1,0 +1,13 @@
+We are given an acyclic directed graph with one source, and a subset of its
+edges which contains exactly one outgoing edge for every non-sink vertex. These
+edges determine a unique path from the source to a sink. We can think of it as
+a switch in every vertex, which determines which way the water arriving to that
+vertex flows further. We are interested in determining either the sink the flow
+arrives, or the whole path, with as few questions as possible. The questions we
+can ask correspond to the vertices of the graph, and the answer describes the
+switch, i.e. tells which outgoing edge is in our given subset. Originally the
+problem was proposed by Soren Riis (who posed the question for pyramid graphs)
+in the following more general form. We are given a natural number k, and k
+questions can be asked in a round. The goal is to minimize the number of
+rounds. We completely solve this problem for complete t-ary trees. Also, for
+pyramid graphs we present some non-trivial partial results.

@@ -1,0 +1,26 @@
+Independent Component Analysis (ICA) is a computational technique for
+revealing latent factors that underlie sets of measurements or signals. It has
+become a standard technique in functional neuroimaging. In functional
+neuroimaging, so called group ICA (gICA) seeks to identify and quantify
+networks of correlated regions across subjects. This paper reports on the
+development of a new group ICA approach, Homotopic Group ICA (H-gICA), for
+blind source separation of resting state functional magnetic resonance imaging
+(fMRI) data. Resting state brain functional homotopy is the similarity of
+spontaneous fluctuations between bilaterally symmetrically opposing regions
+(i.e. those symmetric with respect to the mid-sagittal plane) (Zuo et al.,
+2010). The approach we proposed improves network estimates by leveraging this
+known brain functional homotopy. H-gICA increases the potential for network
+discovery, effectively by averaging information across hemispheres. It is
+theoretically proven to be identical to standard group ICA when the true
+sources are both perfectly homotopic and noise-free, while simulation studies
+and data explorations demonstrate its benefits in the presence of noise.
+Moreover, compared to commonly applied group ICA algorithms, the structure of
+the H-gICA input data leads to significant improvement in computational
+efficiency. A simulation study comfirms its effectiveness in homotopic,
+non-homotopic and mixed settings, as well as on the landmark ADHD-200 dataset.
+From a relatively small subset of data, several brain networks were found
+including: the visual, the default mode and auditory networks, as well as
+others. These were shown to be more contiguous and clearly delineated than the
+corresponding ordinary group ICA. Finally, in addition to improving network
+estimation, H-gICA facilitates the investigation of functional homotopy via
+ICA-based networks.

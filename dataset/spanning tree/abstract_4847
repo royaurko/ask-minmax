@@ -1,0 +1,23 @@
+This paper studies the problem of detecting the information source in a
+network in which the spread of information follows the popular
+Susceptible-Infected-Recovered (SIR) model. We assume all nodes in the network
+are in the susceptible state initially except the information source which is
+in the infected state. Susceptible nodes may then be infected by infected
+nodes, and infected nodes may recover and will not be infected again after
+recovery. Given a snapshot of the network, from which we know all infected
+nodes but cannot distinguish susceptible nodes and recovered nodes, the problem
+is to find the information source based on the snapshot and the network
+topology. We develop a sample path based approach where the estimator of the
+information source is chosen to be the root node associated with the sample
+path that most likely leads to the observed snapshot. We prove for
+infinite-trees, the estimator is a node that minimizes the maximum distance to
+the infected nodes. A reverse-infection algorithm is proposed to find such an
+estimator in general graphs. We prove that for $g$-regular trees such that
+$gq>1,$ where $g$ is the node degree and $q$ is the infection probability, the
+estimator is within a constant distance from the actual source with a high
+probability, independent of the number of infected nodes and the time the
+snapshot is taken. Our simulation results show that for tree networks, the
+estimator produced by the reverse-infection algorithm is closer to the actual
+source than the one identified by the closeness centrality heuristic. We then
+further evaluate the performance of the reverse infection algorithm on several
+real world networks.

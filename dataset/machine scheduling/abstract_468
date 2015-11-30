@@ -1,0 +1,21 @@
+The emergence of multicore and manycore processors is set to change the
+parallel computing world. Applications are shifting towards increased
+parallelism in order to utilise these architectures efficiently. This leads to
+a situation where every application creates its desirable number of threads,
+based on its parallel nature and the system resources allowance. Task
+scheduling in such a multithreaded multiprogramming environment is a
+significant challenge. In task scheduling, not only the order of the execution,
+but also the mapping of threads to the execution resources is of a great
+importance. In this paper we state and discuss some fundamental rules based on
+results obtained from selected applications of the BOTS benchmarks on the
+64-core TILEPro64 processor. We demonstrate how previously efficient mapping
+policies such as those of the SMP Linux scheduler become inefficient when the
+number of threads and cores grows. We propose a novel, low-overhead technique,
+a heuristic based on the amount of time spent by each CPU doing some useful
+work, to fairly distribute the workloads amongst the cores in a
+multiprogramming environment. Our novel approach could be implemented as a
+pragma similar to those in the new task-based OpenMP versions, or can be
+incorporated as a distributed thread mapping mechanism in future manycore
+programming frameworks. We show that our thread mapping scheme can outperform
+the native GNU/Linux thread scheduler in both single-programming and
+multiprogramming environments.

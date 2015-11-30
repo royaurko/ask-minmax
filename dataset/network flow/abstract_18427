@@ -1,0 +1,15 @@
+Most existing work uses dual decomposition and subgradient methods to solve
+Network Utility Maximization (NUM) problems in a distributed manner, which
+suffer from slow rate of convergence properties. This work develops an
+alternative distributed Newton-type fast converging algorithm for solving
+network utility maximization problems with self-concordant utility functions.
+By using novel matrix splitting techniques, both primal and dual updates for
+the Newton step can be computed using iterative schemes in a decentralized
+manner with limited information exchange. Similarly, the stepsize can be
+obtained via an iterative consensus-based averaging scheme. We show that even
+when the Newton direction and the stepsize in our method are computed within
+some error (due to finite truncation of the iterative schemes), the resulting
+objective function value still converges superlinearly to an explicitly
+characterized error neighborhood. Simulation results demonstrate significant
+convergence rate improvement of our algorithm relative to the existing
+subgradient methods based on dual decomposition.

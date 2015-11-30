@@ -1,0 +1,18 @@
+This report describes a modification of the orthogonal function Poisson
+solver for n-body simulations that minimizes relaxation caused by small
+particle number fluctuations. With the standard algorithm, the noise leading to
+relaxation can be reduced by making the expansion basis similar to the particle
+distribution and by carefully choosing the maximum order in the expansion. The
+proposed algorithm accomplishes both tasks simultaneously while the simulation
+is running. This procedure is asymptotically equivalent to expanding in an
+orthogonal series which is matched to the distribution to start and truncating
+at low order. Because the modified algorithm adapts to a time-evolving
+distribution, it has advantage over a fixed basis.
+ The required changes to the standard algorithm are minor and do not affect its
+overall structure or scalability. Tests show that the overhead in CPU time is
+small in practical applications. The decrease in relaxation rate is
+demonstrated for both axisymmetric and non-axisymmetric systems and the
+robustness of the algorithm is demonstrated by following the evolution of
+unstable generalized polytropes. Finally, the empirically based moment analysis
+which leads to the uncorrelated basis is an ideal tool for investigating
+structure and modes in n-body simulations and an example is provided.

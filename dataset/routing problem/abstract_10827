@@ -1,0 +1,27 @@
+In the context of influence propagation in a social graph, we can identify
+three orthogonal dimensions - the number of seed nodes activated at the
+beginning (known as budget), the expected number of activated nodes at the end
+of the propagation (known as expected spread or coverage), and the time taken
+for the propagation. We can constrain one or two of these and try to optimize
+the third. In their seminal paper, Kempe et al. constrained the budget, left
+time unconstrained, and maximized the coverage: this problem is known as
+Influence Maximization.
+  In this paper, we study alternative optimization problems which are naturally
+motivated by resource and time constraints on viral marketing campaigns. In the
+first problem, termed Minimum Target Set Selection (or MINTSS for short), a
+coverage threshold n is given and the task is to find the minimum size seed set
+such that by activating it, at least n nodes are eventually activated in the
+expected sense. In the second problem, termed MINTIME, a coverage threshold n
+and a budget threshold k are given, and the task is to find a seed set of size
+at most k such that by activating it, at least n nodes are activated, in the
+minimum possible time. Both these problems are NP-hard, which motivates our
+interest in their approximation.
+  For MINTSS, we develop a simple greedy algorithm and show that it provides a
+bicriteria approximation. We also establish a generic hardness result
+suggesting that improving it is likely to be hard. For MINTIME, we show that
+even bicriteria and tricriteria approximations are hard under several
+conditions. However, if we allow the budget to be boosted by a logarithmic
+factor and allow the coverage to fall short, then the problem can be solved
+exactly in PTIME.
+  Finally, we show the value of the approximation algorithms, by comparing them
+against various heuristics.

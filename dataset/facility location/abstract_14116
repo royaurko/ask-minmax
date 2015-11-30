@@ -1,0 +1,19 @@
+One of the primary goals of coastal water quality monitoring is to
+characterize spatial variation. Generally, this monitoring takes place at a
+limited number of fixed sampling points. The alternative sampling methodology
+explored in this paper involves high density sampling from an onboard
+flow-through water analysis system (Dataflow). Dataflow has the potential to
+provide better spatial resolution of water quality features because it
+generates many closely spaced (< 10 m) measurements. Regardless of the
+measurement technique, parameter values at unsampled locations must be
+interpolated from nearby measurement points in order to generate a
+comprehensive picture of spatial variations. Standard Euclidean interpolations
+in coastal settings tend to yield inaccurate results because they extend
+through barriers in the landscape such as peninsulas, islands, and submerged
+banks. We recently developed a method for non-Euclidean interpolation by
+inverse path distance weighting (IPDW) in order to account for these barriers.
+The algorithms were implemented as part of an R package and made available from
+R repositories. The combination of IPDW with Dataflow provided more accurate
+estimates of salinity patterning relative to Euclidean inverse distance
+weighting (IDW). IPDW was notably more accurate than IDW in the presence of
+intense spatial gradients.

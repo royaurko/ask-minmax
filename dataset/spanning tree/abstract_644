@@ -1,0 +1,24 @@
+We revisit several maximization problems for geometric networks design under
+the non-crossing constraint, first studied by Alon, Rajagopalan and Suri (ACM
+Symposium on Computational Geometry, 1993). Given a set of $n$ points in the
+plane in general position (no three points collinear), compute a longest
+non-crossing configuration composed of straight line segments that is: (a) a
+matching (b) a Hamiltonian path (c) a spanning tree. Here we obtain new results
+for (b) and (c), as well as for the Hamiltonian cycle problem:
+  (i) For the longest non-crossing Hamiltonian path problem, we give an
+approximation algorithm with ratio $\frac{2}{\pi+1} \approx 0.4829$. The
+previous best ratio, due to Alon et al., was $1/\pi \approx 0.3183$. Moreover,
+the ratio of our algorithm is close to $2/\pi$ on a relatively broad class of
+instances: for point sets whose perimeter (or diameter) is much shorter than
+the maximum length matching. The algorithm runs in $O(n^{7/3}\log{n})$ time.
+  (ii) For the longest non-crossing spanning tree problem, we give an
+approximation algorithm with ratio 0.502 which runs in $O(n \log{n})$ time. The
+previous ratio, 1/2, due to Alon et al., was achieved by a quadratic time
+algorithm. Along the way, we first re-derive the result of Alon et al. with a
+faster $O(n \log{n})$-time algorithm and a very simple analysis.
+  (iii) For the longest non-crossing Hamiltonian cycle problem, we give an
+approximation algorithm whose ratio is close to $2/\pi$ on a relatively broad
+class of instances: for point sets with the product $\bf{<}$diameter$\times$
+convex hull size $\bf{>}$ much smaller than the maximum length matching. The
+algorithm runs in $O(n^{7/3}\log{n})$ time. No previous approximation results
+were known for this problem.

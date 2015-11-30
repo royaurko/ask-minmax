@@ -1,0 +1,14 @@
+Unranked trees can be represented using their minimal dag (directed acyclic
+graph). For XML this achieves high compression ratios due to their repetitive
+mark up. Unranked trees are often represented through first child/next sibling
+(fcns) encoded binary trees. We study the difference in size (= number of
+edges) of minimal dag versus minimal dag of the fcns encoded binary tree. One
+main finding is that the size of the dag of the binary tree can never be
+smaller than the square root of the size of the minimal dag, and that there are
+examples that match this bound. We introduce a new combined structure, the
+hybrid dag, which is guaranteed to be smaller than (or equal in size to) both
+dags. Interestingly, we find through experiments that last child/previous
+sibling encodings are much better for XML compression via dags, than fcns
+encodings. We determine the average sizes of unranked and binary dags over a
+given set of labels (under uniform distribution) in terms of their exact
+generating functions, and in terms of their asymptotical behavior.

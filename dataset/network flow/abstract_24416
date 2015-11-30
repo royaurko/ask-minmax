@@ -1,0 +1,15 @@
+The number of triangles in a graph is a fundamental metric, used in social
+network analysis, link classification and recommendation, and more. Driven by
+these applications and the trend that modern graph datasets are both large and
+dynamic, we present the design and implementation of a fast and cache-efficient
+parallel algorithm for estimating the number of triangles in a massive
+undirected graph whose edges arrive as a stream. It brings together the
+benefits of streaming algorithms and parallel algorithms. By building on the
+streaming algorithms framework, the algorithm has a small memory footprint. By
+leveraging the paralell cache-oblivious framework, it makes efficient use of
+the memory hierarchy of modern multicore machines without needing to know its
+specific parameters. We prove theoretical bounds on accuracy, memory access
+cost, and parallel runtime complexity, as well as showing empirically that the
+algorithm yields accurate results and substantial speedups compared to an
+optimized sequential implementation.
+  (This is an expanded version of a CIKM'13 paper of the same title.)

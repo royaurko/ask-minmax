@@ -1,0 +1,24 @@
+This paper is concerned with developing accurate and efficient discontinuous
+Galerkin methods for fully nonlinear second order elliptic and parabolic
+partial differential equations (PDEs) in the case of one spatial dimension. The
+primary goal of the paper to develop a general framework for constructing high
+order local discontinuous Galerkin (LDG) methods for approximating viscosity
+solutions of these fully nonlinear PDEs which are merely continuous functions
+by definition. In order to capture discontinuities of the first order
+derivative $u_x$ of the solution $u$, two independent functions $q_1$ and $q_2$
+are introduced to approximate one-sided derivatives of $u$. Similarly, to
+capture the discontinuities of the second order derivative $u_{xx}$, four
+independent functions $p_{1}$, $p_{2}$, $p_{3}$, and $p_{4}$ are used to
+approximate one-sided derivatives of $q_1$ and $q_2$. The proposed LDG
+framework, which is based on a nonstandard mixed formulation of the underlying
+PDE, embeds a given fully nonlinear problem into a mostly linear system of
+equations where the given nonlinear differential operator must be replaced by a
+numerical operator which allows multiple value inputs of the first and second
+order derivatives $u_x$ and $u_{xx}$. An easy to verify criterion for
+constructing "good" numerical operators is also proposed. It consists of a
+consistency and a generalized monotonicity. To ensure such a generalized
+monotonicity, the crux of the construction is to introduce the numerical moment
+in the numerical operator. The proposed framework extends a companion finite
+difference framework developed by the contributors in [9] and allows for the
+approximation of fully nonlinear PDEs using high order polynomials and
+non-uniform meshes.

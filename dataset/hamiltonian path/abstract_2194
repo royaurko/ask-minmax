@@ -1,0 +1,17 @@
+We present an optimal decoder for physical-layer network coding (PNC) in a
+multipath fading channels. Previous studies on PNC have largely focused on the
+single path case. For PNC, multipath not only introduces inter-symbol
+interference (ISI), but also cross-symbol interference (Cross-SI) between
+signals simultaneously transmitted by multiple users. In this paper, we assume
+the transmitters do not have channel state information (CSI). The relay in the
+PNC system, however, has CSI. The relay makes use of a belief propagation (BP)
+algorithm to decode the multipath-distorted signals received from multiple
+users into a network-coded packet. We refer to our multipath decoding algorithm
+as MP-PNC. Our simulation results show that, benchmarked against synchronous
+PNC over a one-path channel, the bit error rate (BER) performance penalty of
+MP-PNC under a two-tap ITU channel model can be kept within 0.5dB. Moreover, it
+outperforms a MUD-XOR algorithm by 3dB -- MUD-XOR decodes the individual
+information from both users explicitly before performing the XOR network-coding
+mapping. Although the framework of fading-channel PNC presented in this paper
+is demonstrated based on two-path and three-path channel models, our algorithm
+can be easily extended to cases with more than three paths.

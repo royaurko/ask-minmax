@@ -1,0 +1,18 @@
+Diagnosing faults in aircraft gas turbine engines is a complex problem. It
+involves several tasks, including rapid and accurate interpretation of patterns
+in engine sensor data. We have investigated contextual normalization for the
+development of a software tool to help engine repair technicians with
+interpretation of sensor data. Contextual normalization is a new strategy for
+employing machine learning. It handles variation in data that is due to
+contextual factors, rather than the health of the engine. It does this by
+normalizing the data in a context-sensitive manner. This learning strategy was
+developed and tested using 242 observations of an aircraft gas turbine engine
+in a test cell, where each observation consists of roughly 12,000 numbers,
+gathered over a 12 second interval. There were eight classes of observations:
+seven deliberately implanted classes of faults and a healthy class. We compared
+two approaches to implementing our learning strategy: linear regression and
+instance-based learning. We have three main results. (1) For the given problem,
+instance-based learning works better than linear regression. (2) For this
+problem, contextual normalization works better than other common forms of
+normalization. (3) The algorithms described here can be the basis for a useful
+software tool for assisting technicians with the interpretation of sensor data.

@@ -1,0 +1,19 @@
+This paper is about metric data structures in high-dimensional or
+non-Euclidean space that permit cached sufficient statistics accelerations of
+learning algorithms.
+  It has recently been shown that for less than about 10 dimensions, decorating
+kd-trees with additional "cached sufficient statistics" such as first and
+second moments and contingency tables can provide satisfying acceleration for a
+very wide range of statistical learning tasks such as kernel regression,
+locally weighted regression, k-means clustering, mixture modeling and Bayes Net
+learning.
+  In this paper, we begin by defining the anchors hierarchy - a fast data
+structure and algorithm for localizing data based only on a
+triangle-inequality-obeying distance metric. We show how this, in its own
+right, gives a fast and effective clustering of data. But more importantly we
+show how it can produce a well-balanced structure similar to a Ball-Tree
+(Omohundro, 1991) or a kind of metric tree (Uhlmann, 1991; Ciaccia, Patella, &
+Zezula, 1997) in a way that is neither "top-down" nor "bottom-up" but instead
+"middle-out". We then show how this structure, decorated with cached sufficient
+statistics, allows a wide variety of statistical learning algorithms to be
+accelerated even in thousands of dimensions.

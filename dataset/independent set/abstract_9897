@@ -1,0 +1,11 @@
+In signed k-SAT problems, one fixes a set M and a set $\mathcal S$ of subsets
+of M, and is given a formula consisting of a disjunction of m clauses, each of
+which is a conjunction of k literals. Each literal is of the form "$x \in S$",
+where $S \in \mathcal S$, and x is one of n variables.
+  For Interval-SAT (iSAT), M is an ordered set and $\mathcal S$ the set of
+intervals in M.
+  We propose an algorithm for 3-iSAT, and analyze it on uniformly random
+formulas. The algorithm follows the Unit Clause paradigm, enhanced by a (very
+limited) backtracking option. Using Wormald's ODE method, we prove that, if
+$m/n \le 2.3$, with high probability, our algorithm succeeds in finding an
+assignment of values to the variables satisfying the formula.

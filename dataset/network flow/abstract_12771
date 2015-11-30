@@ -1,0 +1,25 @@
+This paper explores bias in the estimation of sampling variance in Respondent
+Driven Sampling (RDS). Prior methodological work on RDS has focused on its
+problematic assumptions and the biases and inefficiencies of its estimators of
+the population mean. Nonetheless, researchers have not given much attention to
+the topic of estimating sampling variance in RDS, despite the importance of
+variance estimation for the construction of confidence intervals and hypothesis
+tests. In this paper, we show that the estimators of RDS sampling variance rely
+on a critical assumption that the network is First Order Markov (FOM) with
+respect to the variable of interest. We demonstrate, through intuitive
+examples, mathematical generalizations, and computational experiments that
+current RDS variance estimators will always underestimate the population
+sampling variance of RDS in networks that do not conform to the FOM assumption.
+Analysis of 215 observed university and school networks from Facebook and Add
+Health indicates that the FOM assumption is violated in every empirical network
+we analyze, and that these violations lead to biased RDS estimators of sampling
+variance. However, we find a majority of simulated RDS samples from these
+networks do not violate the FOM assumption, with no clear distinction in the
+magnitude of variance estimation bias between those samples which violate FOM
+and those which do not. This indicates that the potential biases of extant RDS
+variance estimators cannot be assessed on the basis of sample data. We propose
+and test two alternative variance estimators that show promise for reducing
+bias, but which also illustrate the limits of estimating sampling variance with
+partial information on the population network. Our results suggest researchers
+using RDS should be highly skeptical of reported variance, confidence
+intervals, and design effects as they are likely underestimated.

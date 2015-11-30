@@ -1,0 +1,18 @@
+This paper addresses the design of a dedicated homophonic coding for a class
+of communication systems which, in order to provide both reliability and
+security, first encode the data before encrypting it, which is referred to as
+the encoding-encryption paradigm. The considered systems employ
+error-correction coding for reliability, a stream cipher for encryption, and
+homophonic coding to enhance the protection of the key used in the stream
+cipher, on which relies the security of all the system transmissions. This
+paper presents a security evaluation of such systems from a computational
+complexity point of view, which serves as a source for establishing dedicated
+homophonic code design criteria. The security evaluation shows that the
+computational complexity of recovering the secret key, given all the
+information an attacker could gather during passive attacks he can mount, is
+lower bounded by the complexity of the related LPN (Learning Parity in Noise)
+problem in both the average and worst case. This gives guidelines to construct
+a dedicated homophonic encoder which maximizes the complexity of the underlying
+LPN problem for a given encoding overhead. Finally, this paper proposes a
+generic homophonic coding strategy that fulfills the proposed design criteria
+and thus both enhances security while minimizing the induced overhead.

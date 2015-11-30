@@ -1,0 +1,22 @@
+The fundamental problem of multiple secondary users contending for
+opportunistic spectrum access over multiple channels in cognitive radio
+networks has been formulated recently as a decentralized multi-armed bandit
+(D-MAB) problem. In a D-MAB problem there are $M$ users and $N$ arms (channels)
+that each offer i.i.d. stochastic rewards with unknown means so long as they
+are accessed without collision. The goal is to design a decentralized online
+learning policy that incurs minimal regret, defined as the difference between
+the total expected rewards accumulated by a model-aware genie, and that
+obtained by all users applying the policy. We make two contributions in this
+paper. First, we consider the setting where the users have a prioritized
+ranking, such that it is desired for the $K$-th-ranked user to learn to access
+the arm offering the $K$-th highest mean reward. For this problem, we present
+the first distributed policy that yields regret that is uniformly logarithmic
+over time without requiring any prior assumption about the mean rewards.
+Second, we consider the case when a fair access policy is required, i.e., it is
+desired for all users to experience the same mean reward. For this problem, we
+present a distributed policy that yields order-optimal regret scaling with
+respect to the number of users and arms, better than previously proposed
+policies in the literature. Both of our distributed policies make use of an
+innovative modification of the well known UCB1 policy for the classic
+multi-armed bandit problem that allows a single user to learn how to play the
+arm that yields the $K$-th largest mean reward.

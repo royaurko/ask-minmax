@@ -1,0 +1,16 @@
+Consider the situation where a query is to be answered using Web sources that
+restrict the accesses that can be made on backend relational data by requiring
+some attributes to be given as input of the service. The accesses provide
+lookups on the collection of attributes values that match the binding. They can
+differ in whether or not they require arguments to be generated from prior
+accesses. Prior work has focused on the question of whether a query can be
+answered using a set of data sources, and in developing static access plans
+(e.g., Datalog programs) that implement query answering. We are interested in
+dynamic aspects of the query answering problem: given partial information about
+the data, which accesses could provide relevant data for answering a given
+query? We consider immediate and long-term notions of "relevant accesses", and
+ascertain the complexity of query relevance, for both conjunctive queries and
+arbitrary positive queries. In the process, we relate dynamic relevance of an
+access to query containment under access limitations and characterize the
+complexity of this problem; we produce several complexity results about
+containment that are of interest by themselves.

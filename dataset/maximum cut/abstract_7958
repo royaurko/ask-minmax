@@ -1,0 +1,22 @@
+In this paper we tackle the problem of generating uniform designs in very
+small subregions of computer model input space that have been identified in
+previous experiments as worthy of further study. The method is capable of
+producing uniform designs in subregions of computer model input space defined
+by a membership function that consists of a continuous function passing a
+threshold test, and does so far more efficiently than current methods when
+these subregions are small. Our application is designing for regions of input
+space that are not ruled out by history matching, a statistical methodology
+applied in numerous diverse scientific applications whereby model runs are used
+to cut out regions of input space that are incompatible with real world
+observations. History matching defines a membership function for a region of
+input space that is not ruled out yet by observations in the form of a distance
+metric called implausibility. We use this distance metric to drive a new type
+of Evolutionary Monte Carlo algorithm with a uniform distribution on the not
+ruled out yet region as its target distribution. The algorithm can locate and
+generate uniform points within extremely small subspaces of the computer model
+input space with complex and even disconnected topologies. We illustrate the
+performance of the technique in comparison to current methods with a number of
+idealised examples. We then apply our algorithm to generating an optimal design
+for the not ruled out yet region of a galaxy simulation model called GALFORM
+following 4 previous waves of history matching where the target region is
+0.001% the volume of the input space.

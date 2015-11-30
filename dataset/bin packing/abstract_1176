@@ -1,0 +1,23 @@
+In the classical balls-and-bins paradigm, where $n$ balls are placed
+independently and uniformly in $n$ bins, typically the number of bins with at
+least two balls in them is $\Theta(n)$ and the maximum number of balls in a bin
+is $\Theta(\frac{\log n}{\log \log n})$. It is well known that when each round
+offers $k$ independent uniform options for bins, it is possible to typically
+achieve a constant maximal load if and only if $k=\Omega(\log n)$. Moreover, it
+is possible w.h.p. to avoid any collisions between $n/2$ balls if $k>\log_2n$.
+In this work, we extend this into the setting where only $m$ bits of memory are
+available. We establish a tradeoff between the number of choices $k$ and the
+memory $m$, dictated by the quantity $km/n$. Roughly put, we show that for
+$km\gg n$ one can achieve a constant maximal load, while for $km\ll n$ no
+substantial improvement can be gained over the case $k=1$ (i.e., a random
+allocation). For any $k=\Omega(\log n)$ and $m=\Omega(\log^2n)$, one can
+achieve a constant load w.h.p. if $km=\Omega(n)$, yet the load is unbounded if
+$km=o(n)$. Similarly, if $km>Cn$ then $n/2$ balls can be allocated without any
+collisions w.h.p., whereas for $km<\epsilon n$ there are typically $\Omega(n)$
+collisions. Furthermore, we show that the load is w.h.p. at least
+$\frac{\log(n/m)}{\log k+\log\log(n/m)}$. In particular, for
+$k\leq\operatorname {polylog}(n)$, if $m=n^{1-\delta}$ the optimal maximal load
+is $\Theta(\frac{\log n}{\log\log n})$ (the same as in the case $k=1$), while
+$m=2n$ suffices to ensure a constant load. Finally, we analyze nonadaptive
+allocation algorithms and give tight upper and lower bounds for their
+performance.

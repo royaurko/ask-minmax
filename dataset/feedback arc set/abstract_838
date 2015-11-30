@@ -1,0 +1,16 @@
+We study the representation of systems S of linear equations over the
+two-element field (aka xor- or parity-constraints) via conjunctive normal forms
+F (boolean clause-sets). First we consider the problem of finding an
+"arc-consistent" representation ("AC"), meaning that unit-clause propagation
+will fix all forced assignments for all possible instantiations of the
+xor-variables. Our main negative result is that there is no polysize
+AC-representation in general. On the positive side we show that finding such an
+AC-representation is fixed-parameter tractable (fpt) in the number of
+equations. Then we turn to a stronger criterion of representation, namely
+propagation completeness ("PC") --- while AC only covers the variables of S,
+now all the variables in F (the variables in S plus auxiliary variables) are
+considered for PC. We show that the standard translation actually yields a PC
+representation for one equation, but fails so for two equations (in fact
+arbitrarily badly). We show that with a more intelligent translation we can
+also easily compute a translation to PC for two equations. We conjecture that
+computing a representation in PC is fpt in the number of equations.

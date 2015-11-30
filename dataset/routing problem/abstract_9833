@@ -1,0 +1,16 @@
+The model checking problem for propositional dynamic logic (PDL) over message
+sequence charts (MSCs) and communicating finite state machines (CFMs) asks,
+given a channel bound $B$, a PDL formula $\varphi$ and a CFM $\mathcal{C}$,
+whether every existentially $B$-bounded MSC $M$ accepted by $\mathcal{C}$
+satisfies $\varphi$. Recently, it was shown that this problem is
+PSPACE-complete.
+  In the present work, we consider CRPDL over MSCs which is PDL equipped with
+the operators converse and repeat. The former enables one to walk back and
+forth within an MSC using a single path expression whereas the latter allows to
+express that a path expression can be repeated infinitely often. To solve the
+model checking problem for this logic, we define message sequence chart
+automata (MSCAs) which are multi-way alternating parity automata walking on
+MSCs. By exploiting a new concept called concatenation states, we are able to
+inductively construct, for every CRPDL formula $\varphi$, an MSCA precisely
+accepting the set of models of $\varphi$. As a result, we obtain that the model
+checking problem for CRPDL and CFMs is still in PSPACE.

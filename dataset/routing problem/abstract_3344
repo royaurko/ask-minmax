@@ -1,0 +1,16 @@
+We study the problem of anonymizing tables containing personal information
+before releasing them for public use. One of the formulations considered in
+this context is the $k$-anonymization problem: given a table, suppress a
+minimum number of cells so that in the transformed table, each row is identical
+to atleast $k-1$ other rows. The problem is known to be NP-hard and
+MAXSNP-hard; but in the known reductions, the number of columns in the
+constructed tables is arbitrarily large. However, in practical settings the
+number of columns is much smaller. So, we study the complexity of the practical
+setting in which the number of columns $m$ is small. We show that the problem
+is NP-hard, even when the number of columns $m$ is a constant ($m=3$). We also
+prove MAXSNP-hardness for this restricted version and derive that the problem
+cannot be approximated within a factor of (6238/6237). Our reduction uses
+alphabets $\Sigma$ of arbitrarily large size. A natural question is whether the
+problem remains NP-hard when both $m$ and $|\Sigma|$ are small. We prove that
+the $k$-anonymization problem is in $P$ when both $m$ and $|\Sigma|$ are
+constants.

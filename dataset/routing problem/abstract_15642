@@ -1,0 +1,14 @@
+The multigrid methodology is reviewed. By integrating numerical processes at
+all scales of a problem, it seeks to perform various computational tasks at a
+cost that rises as slowly as possible as a function of $n$, the number of
+degrees of freedom in the problem. Current and potential benefits for lattice
+field computations are outlined. They include: $O(n)$ solution of Dirac
+equations; just $O(1)$ operations in updating the solution (upon any local
+change of data, including the gauge field); similar efficiency in gauge fixing
+and updating; $O(1)$ operations in updating the inverse matrix and in
+calculating the change in the logarithm of its determinant; $O(n)$ operations
+per producing each independent configuration in statistical simulations
+(eliminating CSD), and, more important, effectively just $O(1)$ operations per
+each independent measurement (eliminating the volume factor as well). These
+potential capabilities have been demonstrated on simple model problems.
+Extensions to real life are explored.

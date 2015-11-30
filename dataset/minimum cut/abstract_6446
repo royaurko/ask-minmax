@@ -1,0 +1,17 @@
+We present a method for automated segmentation of the vasculature in retinal
+images. The method produces segmentations by classifying each image pixel as
+vessel or non-vessel, based on the pixel's feature vector. Feature vectors are
+composed of the pixel's intensity and continuous two-dimensional Morlet wavelet
+transform responses taken at multiple scales. The Morlet wavelet is capable of
+tuning to specific frequencies, thus allowing noise filtering and vessel
+enhancement in a single step. We use a Bayesian classifier with
+class-conditional probability density functions (likelihoods) described as
+Gaussian mixtures, yielding a fast classification, while being able to model
+complex decision surfaces and compare its performance with the linear minimum
+squared error classifier. The probability distributions are estimated based on
+a training set of labeled pixels obtained from manual segmentations. The
+method's performance is evaluated on publicly available DRIVE and STARE
+databases of manually labeled non-mydriatic images. On the DRIVE database, it
+achieves an area under the receiver operating characteristic (ROC) curve of
+0.9598, being slightly superior than that presented by the method of Staal et
+al.

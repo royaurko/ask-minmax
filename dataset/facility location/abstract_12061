@@ -1,0 +1,15 @@
+Attention has long been proposed by psychologists as important for
+effectively dealing with the enormous sensory stimulus available in the
+neocortex. Inspired by the visual attention models in computational
+neuroscience and the need of object-centric data for generative models, we
+describe for generative learning framework using attentional mechanisms.
+Attentional mechanisms can propagate signals from region of interest in a scene
+to an aligned canonical representation, where generative modeling takes place.
+By ignoring background clutter, generative models can concentrate their
+resources on the object of interest. Our model is a proper graphical model
+where the 2D Similarity transformation is a part of the top-down process. A
+ConvNet is employed to provide good initializations during posterior inference
+which is based on Hamiltonian Monte Carlo. Upon learning images of faces, our
+model can robustly attend to face regions of novel test subjects. More
+importantly, our model can learn generative models of new faces from a novel
+dataset of large images where the face locations are not known.

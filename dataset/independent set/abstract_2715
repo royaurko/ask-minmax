@@ -1,0 +1,17 @@
+In this paper we present an alternative separable implementation of
+L2-orthogonal space-time codes (STC) for continuous phase modulation (CPM). In
+this approach, we split the STC CPM transmitter into a single conventional CPM
+modulator and a correction filter bank. While the CPM modulator is common to
+all transmit antennas, the correction filter bank applies different correction
+units to each antenna. Thereby desirable code properties as orthogonality and
+full diversity are achievable with just a slightly larger bandwidth demand.
+This new representation has three main advantages. First, it allows to easily
+generalize the orthogonality condition to any arbitrary number of transmit
+antennas. Second, for a quite general set of correction functions that we
+detail, it can be proved that full diversity is achieved. Third, by separating
+the modulation and correction steps inside the receiver, a simpler receiver can
+be designed as a bank of data independent inverse correction filters followed
+by a single CPM demodulator. Therefore, in this implementation, only one
+correlation filter bank for the detection of all transmitted signals is
+necessary. The decoding effort grows only linearly with the number of transmit
+antennas.

@@ -1,0 +1,19 @@
+Given strings $P$ of length $m$ and $T$ of length $n$ over an alphabet of
+size $\sigma$, the string matching with $k$-mismatches problem is to find the
+positions of all the substrings in $T$ that are at Hamming distance at most $k$
+from $P$. If $T$ can be read only one character at the time the best known
+bounds are $O(n\sqrt{k\log k})$ and $O(n + n\sqrt{k/w}\log k)$ in the word-RAM
+model with word length $w$. In the RAM models (including $AC^0$ and word-RAM)
+it is possible to read up to $\floor{w / \log \sigma}$ characters in constant
+time if the characters of $T$ are encoded using $\ceil{\log \sigma}$ bits. The
+only solution for $k$-mismatches in packed text works in $O((n \log\sigma/\log
+n)\ceil{m \log (k + \log n / \log\sigma) / w} + n^{\varepsilon})$ time, for any
+$\varepsilon > 0$. We present an algorithm that runs in time
+$O(\frac{n}{\floor{w/(m\log\sigma)}} (1 + \log \min(k,\sigma) \log m /
+\log\sigma))$ in the $AC^0$ model if $m=O(w / \log\sigma)$ and $T$ is given
+packed. We also describe a simpler variant that runs in time
+$O(\frac{n}{\floor{w/(m\log\sigma)}}\log \min(m, \log w / \log\sigma))$ in the
+word-RAM model. The algorithms improve the existing bound for $w =
+\Omega(\log^{1+\epsilon}n)$, for any $\epsilon > 0$. Based on the introduced
+technique, we present algorithms for several other approximate matching
+problems.

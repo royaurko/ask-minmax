@@ -1,0 +1,12 @@
+In a graph $G=(V,E)$, a bisection $(X,Y)$ is a partition of $V$ into sets $X$
+and $Y$ such that $|X|\le |Y|\le |X|+1$. The size of $(X,Y)$ is the number of
+edges between $X$ and $Y$. In the Max Bisection problem we are given a graph
+$G=(V,E)$ and are required to find a bisection of maximum size. It is not hard
+to see that $\lceil |E|/2 \rceil$ is a tight lower bound on the maximum size of
+a bisection of $G$. We study parameterized complexity of the following
+parameterized problem called Max Bisection above Tight Lower Bound
+(Max-Bisec-ATLB): decide whether a graph $G=(V,E)$ has a bisection of size at
+least $\lceil |E|/2 \rceil+k,$ where $k$ is the parameter. We show that this
+parameterized problem has a kernel with $O(k^2)$ vertices and $O(k^3)$ edges,
+i.e., every instance of Max-Bisec-ATLB is equivalent to an instance of
+Max-Bisec-ATLB on a graph with at most $O(k^2)$ vertices and $O(k^3)$ edges.

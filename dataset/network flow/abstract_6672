@@ -1,0 +1,16 @@
+A network of signalized intersections is modeled as a queuing network. The
+intersections are regulated by fixed-time (FT) controls, all with the same
+cycle length or period, $T$. Vehicles arrive from outside the network at entry
+links in a deterministic periodic stream, also with period $T$, make turns at
+intersections in fixed proportions, and eventually leave the network. Vehicles
+take a fixed time to travel along each link, and at the end of the link they
+join a queue. There is a separate queue at each intersection for each movement.
+The storage capacity of the queues is infinite, so there is no spill back. The
+state of the network at time $t$ is the vector $x(t)$ of all queue lengths,
+together with the position of vehicles traveling along the links. The state
+evolves according to a delay-differential equation. Suppose the network is
+stable, that is, $x(t)$ is bounded. Then (1) there exists a unique periodic
+trajectory $x^*(t)$, with period $T$; (2) every trajectory converges to this
+periodic trajectory; (3) if vehicles do not follow loops, the convergence
+occurs in finite time. The periodic trajectory determines the performance of
+the entire network.

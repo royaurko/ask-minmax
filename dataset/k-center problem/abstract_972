@@ -1,0 +1,15 @@
+Here we study the complexity of string problems as a function of the size of
+a program that generates input. We consider straight-line programs (SLP), since
+all algorithms on SLP-generated strings could be applied to processing
+LZ-compressed texts.
+  The main result is a new algorithm for pattern matching when both a text T
+and a pattern P are presented by SLPs (so-called fully compressed pattern
+matching problem). We show how to find a first occurrence, count all
+occurrences, check whether any given position is an occurrence or not in time
+O(n^2m). Here m,n are the sizes of straight-line programs generating
+correspondingly P and T.
+  Then we present polynomial algorithms for computing fingerprint table and
+compressed representation of all covers (for the first time) and for finding
+periods of a given compressed string (our algorithm is faster than previously
+known). On the other hand, we show that computing the Hamming distance between
+two SLP-generated strings is NP- and coNP-hard.

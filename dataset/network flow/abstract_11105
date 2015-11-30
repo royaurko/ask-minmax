@@ -1,0 +1,14 @@
+Multi-resolution codes enable multicast at different rates to different
+receivers, a setup that is often desirable for graphics or video streaming. We
+propose a simple, distributed, two-stage message passing algorithm to generate
+network codes for single-source multicast of multi-resolution codes. The goal
+of this "pushback algorithm" is to maximize the total rate achieved by all
+receivers, while guaranteeing decodability of the base layer at each receiver.
+By conducting pushback and code generation stages, this algorithm takes
+advantage of inter-layer as well as intra-layer coding. Numerical simulations
+show that in terms of total rate achieved, the pushback algorithm outperforms
+routing and intra-layer coding schemes, even with codeword sizes as small as 10
+bits. In addition, the performance gap widens as the number of receivers and
+the number of nodes in the network increases. We also observe that naiive
+inter-layer coding schemes may perform worse than intra-layer schemes under
+certain network conditions.

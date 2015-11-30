@@ -1,0 +1,13 @@
+In this article we review standard null-move pruning and introduce our
+extended version of it, which we call verified null-move pruning. In verified
+null-move pruning, whenever the shallow null-move search indicates a fail-high,
+instead of cutting off the search from the current node, the search is
+continued with reduced depth.
+  Our experiments with verified null-move pruning show that on average, it
+constructs a smaller search tree with greater tactical strength in comparison
+to standard null-move pruning. Moreover, unlike standard null-move pruning,
+which fails badly in zugzwang positions, verified null-move pruning manages to
+detect most zugzwangs and in such cases conducts a re-search to obtain the
+correct result. In addition, verified null-move pruning is very easy to
+implement, and any standard null-move pruning program can use verified
+null-move pruning by modifying only a few lines of code.

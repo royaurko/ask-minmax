@@ -1,0 +1,14 @@
+We introduce methods for efficiently computing the Gaussian likelihood for
+stationary Markov random field models, when the data locations fall on a
+possibly incomplete regular grid. The calculations rely on the availability of
+the covariances, which we show can be computed to any user-specified accuracy
+with fast Fourier transform algorithms. Several methods are presented, covering
+models with and without additive error terms and situations where either
+conserving memory or reducing computation time are favored, and some of the
+algorithms are easily parallelized. The examples presented highlight
+frequentist inference, but access to the likelihood allows for Bayesian
+inference as well. We demonstrate our results in simulation and timing studies
+and with an application to gridded satellite data, where we use the likelihood
+both for parameter estimation and likelihood ratio model comparison. In the
+data analysis, stochastic partial differential equation approximations are
+outperformed by an independent block approximation.

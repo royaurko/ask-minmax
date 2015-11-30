@@ -1,0 +1,21 @@
+Many statistical applications involve models that it is difficult to evaluate
+the likelihood, but relatively easy to sample from, which is called intractable
+likelihood. Approximate Bayesian computation (ABC) is a useful Monte Carlo
+method for inference of the unknown parameter in the intractable likelihood
+problem under Bayesian framework. Without evaluating the likelihood function,
+ABC approximately samples from the posterior by jointly simulating the
+parameter and the data and accepting/rejecting the parameter according to the
+distance between the simulated and observed data. Many successful applications
+have been seen in population genetics, systematic biology, ecology etc. In this
+work, we analyse the asymptotic properties of ABC as the number of data points
+goes to infinity, under the assumption that the data is summarised by a
+fixed-dimensional statistic, and this statistic obeys a central limit theorem.
+We show that the ABC posterior mean for estimating a function of the parameter
+can be asymptotically normal, centred on the true value of the function, and
+with a mean square error that is equal to that of the maximum likelihood
+estimator based on the summary statistic. We further analyse the efficiency of
+importance sampling ABC for fixed Monte Carlo sample size. For a wide-range of
+proposal distributions importance sampling ABC can be efficient, in the sense
+that the Monte Carlo error of ABC increases the mean square error of our
+estimate by a factor that is just 1+O(1/N), where N is the Monte Carlo sample
+size.

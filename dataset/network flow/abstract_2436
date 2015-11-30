@@ -1,0 +1,18 @@
+In astrophysics and meteorology there exist numerous situations where flows
+exhibit small velocities compared to the sound speed. To overcome the stringent
+timestep restrictions posed by the predominantly used explicit methods for
+integration in time the Euler (or Navier-Stokes) equations are usually replaced
+by modified versions. In astrophysics this is nearly exclusively the anelastic
+approximation. Kwatra et al. have proposed a method with favourable time-step
+properties integrating the original equations (and thus allowing, for example,
+also the treatment of shocks). We describe the extension of the method to the
+Navier-Stokes and two-component equations. - However, when applying the
+extended method to problems in convection and double diffusive convection
+(semiconvection) we ran into numerical difficulties. We describe our procedure
+for stabilizing the method. We also investigate the behaviour of Kwatra et
+al.'s method for very low Mach numbers (down to Ma = 0.001) and point out its
+very favourable properties in this realm for situations where the explicit
+counterpart of this method returns absolutely unusable results. Furthermore, we
+show that the method strongly scales over 3 orders of magnitude of processor
+cores and is limited only by the specific network structure of the high
+performance computer we use.

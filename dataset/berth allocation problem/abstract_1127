@@ -1,0 +1,10 @@
+We propose several new schedules for Strassen-Winograd's matrix
+multiplication algorithm, they reduce the extra memory allocation requirements
+by three different means: by introducing a few pre-additions, by overwriting
+the input matrices, or by using a first recursive level of classical
+multiplication. In particular, we show two fully in-place schedules: one having
+the same number of operations, if the input matrices can be overwritten; the
+other one, slightly increasing the constant of the leading term of the
+complexity, if the input matrices are read-only. Many of these schedules have
+been found by an implementation of an exhaustive search algorithm based on a
+pebble game.

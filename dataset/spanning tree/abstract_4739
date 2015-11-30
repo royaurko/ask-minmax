@@ -1,0 +1,21 @@
+We consider receiver design for coded transmission over linear Gaussian
+channels. We restrict ourselves to the class of lattice codes and formulate the
+joint detection and decoding problem as a closest lattice point search (CLPS).
+Here, a tree search framework for solving the CLPS is adopted. In our
+framework, the CLPS algorithm decomposes into the preprocessing and tree search
+stages. The role of the preprocessing stage is to expose the tree structure in
+a form {\em matched} to the search stage. We argue that the minimum mean square
+error decision feedback (MMSE-DFE) frontend is instrumental for solving the
+joint detection and decoding problem in a single search stage. It is further
+shown that MMSE-DFE filtering allows for using lattice reduction methods to
+reduce complexity, at the expense of a marginal performance loss, and solving
+under-determined linear systems. For the search stage, we present a generic
+method, based on the branch and bound (BB) algorithm, and show that it
+encompasses all existing sphere decoders as special cases. The proposed generic
+algorithm further allows for an interesting classification of tree search
+decoders, sheds more light on the structural properties of all known sphere
+decoders, and inspires the design of more efficient decoders. In particular, an
+efficient decoding algorithm that resembles the well known Fano sequential
+decoder is identified. The excellent performance-complexity tradeoff achieved
+by the proposed MMSE-Fano decoder is established via simulation results and
+analytical arguments in several MIMO and ISI scenarios.

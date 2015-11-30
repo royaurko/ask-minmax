@@ -1,0 +1,18 @@
+We study filtering of multiscale dynamical systems with model error arising
+from unresolved smaller scale processes. The analysis assumes continuous-time
+noisy observations of all components of the slow variables alone. For a linear
+model with Gaussian noise, we prove existence of a unique choice of parameters
+in a linear reduced model for the slow variables. The linear theory extends to
+to a non-Gaussian, nonlinear test problem, where we assume we know the optimal
+stochastic parameterization and the correct observation model. We show that
+when the parameterization is inappropriate, parameters chosen for good filter
+performance may give poor equilibrium statistical estimates and vice versa.
+Given the correct parameterization, it is imperative to estimate the parameters
+simultaneously and to account for the nonlinear feedback of the stochastic
+parameters into the reduced filter estimates. In numerical experiments on the
+two-layer Lorenz-96 model, we find that parameters estimated online, as part of
+a filtering procedure, produce accurate filtering and equilibrium statistical
+prediction. In contrast, a linear regression based offline method, which fits
+the parameters to a given training data set independently from the filter,
+yields filter estimates which are worse than the observations or even divergent
+when the slow variables are not fully observed.

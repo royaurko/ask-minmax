@@ -1,0 +1,21 @@
+We study the delay (also known as depth) of circuits that simulate finite
+automata, showing that only certain growth rates (as a function of the number
+$n$ of steps simulated) are possible. A classic result due to Ofman
+(rediscovered and popularized by Ladner and Fischer) says that delay $O(\log
+n)$ is always sufficient. We show that if the automaton is "generalized
+definite", then delay O(1) is sufficient, but otherwise delay $\Omega(\log n)$
+is necessary; there are no intermediate growth rates. We also consider
+"physical" (rather than "logical") delay, whereby we consider the lengths of
+wires when inputs and outputs are laid out along a line. In this case, delay
+O(n) is clearly always sufficient. We show that if the automaton is "definite",
+then delay O(1) is sufficient, but otherwise delay $\Omega(n)$ is necessary;
+again there are no intermediate growth rates. Inspired by an observation of
+Burks, Goldstein and von Neumann concerning the average delay due to carry
+propagation in ripple-carry adders, we derive conditions for the average
+physical delay to be reduced from O(n) to $O(\log n)$, or to O(1), when the
+inputs are independent and uniformly distributed random variables; again there
+are no intermediate growth rates. Finally we consider an extension of this last
+result to a situation in which the inputs are not independent and uniformly
+distributed, but rather are produced by a non-stationary Markov process, and in
+which the computation is not performed by a single automaton, but rather by a
+sequence of automata acting in alternating directions.

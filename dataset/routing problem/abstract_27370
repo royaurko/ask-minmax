@@ -1,0 +1,16 @@
+Standard memory modules to store (and access) data are designed for use with
+a single system accessing it. More complicated memory modules would be accessed
+through a memory controller, which are also designed for one system. For
+multiple systems to access a single memory module there must be some
+facilitation that allows them to access the memory without overriding or
+corrupting the access from the others. This was done with the use of a memory
+arbiter, which controls the flow of traffic into the memory controller. The
+arbiter has a set of rules to abide to in order to choose which system gets
+through to the memory controller. In this project, a regular RAM module is
+designed for use with one system. Furthermore, a memory arbiter is also
+designed in Verilog that allows for more than one system to use a single RAM
+module in a controlled and synchronized manner. The arbiter uses a fixed
+priority scheme to avoid starvation of the system. In addition one of the major
+problems associated with such systems i.e. The Address Clash Problem has been
+nicely tackled and solved. The design is verified in simulation and validated
+on a Xilinx ML605 evaluation board with a Virtex 6 FPGA.

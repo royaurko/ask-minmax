@@ -1,0 +1,24 @@
+A discrete-time decentralized routing problem in a service system consisting
+of two service stations and two controllers is investigated. Each controller is
+affiliated with one station. Each station has an infinite size buffer.
+Exogenous customer arrivals at each station occur with rate $\lambda$. Service
+times at each station have rate $\mu$. At any time, a controller can route one
+of the customers waiting in its own station to the other station. Each
+controller knows perfectly the queue length in its own station and observes the
+exogenous arrivals to its own station as well as the arrivals of customers sent
+from the other station. At the beginning, each controller has a probability
+mass function (PMF) on the number of customers in the other station. These PMFs
+are common knowledge between the two controllers. At each time a holding cost
+is incurred at each station due to the customers waiting at that station. The
+objective is to determine routing policies for the two controllers that
+minimize either the total expected holding cost over a finite horizon or the
+average cost per unit time over an infinite horizon. In this problem there is
+implicit communication between the two controllers; whenever a controller
+decides to send or not to send a customer from its own station to the other
+station it communicates information about its queue length to the other
+station. This implicit communication through control actions is referred to as
+signaling in decentralized control. Signaling results in complex communication
+and decision problems. In spite of the complexity of signaling involved, it is
+shown that an optimal signaling strategy is described by a threshold policy
+which depends on the common information between the two controllers; this
+threshold policy is explicitly determined.

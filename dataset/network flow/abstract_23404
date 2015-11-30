@@ -1,0 +1,19 @@
+In this paper, we present two adaptive methods for the basis enrichment of
+the mixed Generalized Multiscale Finite Element Method (GMsFEM) for solving the
+flow problem in heterogeneous media. We develop an a-posteriori error indicator
+which depends on the norm of a local residual operator. Based on this
+indicator, we construct an offline adaptive method to increase the number of
+basis functions locally in coarse regions with large local residuals. We also
+develop an online adaptive method which iteratively enriches the function space
+by adding new functions computed based on the residual of the previous solution
+and special minimum energy snapshots. We show theoretically and numerically the
+convergence of the two methods. The online method is, in general, better than
+the offline method as the online method is able to capture distant effects (at
+a cost of online computations), and both methods have faster convergence than a
+uniform enrichment. Analysis shows that the online method should start with
+certain number of initial basis functions in order to have the best
+performance. The numerical results confirm this and show further that with
+correct selection of initial basis functions, the convergence of the online
+method can be independent of the contrast of the medium. We consider cases with
+both very high and very low conducting inclusions and channels in our numerical
+experiments.

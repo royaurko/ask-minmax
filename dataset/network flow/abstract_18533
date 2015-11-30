@@ -1,0 +1,16 @@
+The growth of real-time content streaming over the Internet has resulted in
+the use of peer-to-peer (P2P) approaches for scalable content delivery. In such
+P2P streaming systems, each peer maintains a playout buffer of content chunks
+which it attempts to fill by contacting other peers in the network. The
+objective is to ensure that the chunk to be played out is available with high
+probability while keeping the buffer size small. Given that a particular peer
+has been selected, a \emph{policy} is a rule that suggests which chunks should
+be requested by the peer from other peers.. We consider consider a number of
+recently suggested policies consistent with buffer minimization for a given
+target of skip free playout. We first study a \emph{rarest-first} policy that
+attempts to obtain chunks farthest from playout, and a \emph{greedy} policy
+that attempts to obtain chunks nearest to playout. We show that they both have
+similar buffer scalings (as a function of the number of peers of target
+probability of skip-free probability). We then study a hybrid policy which
+achieves order sense improvements over both policies and can achieve order
+optimal performance. We validate our results using simulations.

@@ -1,0 +1,11 @@
+We consider the problem of isolating the real roots of a square-free
+polynomial with integer coefficients using (variants of) the continued fraction
+algorithm (CF). We introduce a novel way to compute a lower bound on the
+positive real roots of univariate polynomials. This allows us to derive a worst
+case bound of $\sOB(d^6 + d^4\tau^2 + d^3\tau^2)$ for isolating the real roots
+of a polynomial with integer coefficients using the classic variant
+\cite{Akritas:implementation} of CF, where $d$ is the degree of the polynomial
+and $\tau$ the maximum bitsize of its coefficients. This improves the previous
+bound of Sharma \cite{sharma-tcs-2008} by a factor of $d^3$ and matches the
+bound derived by Mehlhorn and Ray \cite{mr-jsc-2009} for another variant of CF;
+it also matches the worst case bound of the subdivision-based solvers.

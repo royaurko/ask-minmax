@@ -1,0 +1,25 @@
+A skew-symmetric graph $(D=(V,A),\sigma)$ is a directed graph $D$ with an
+involution $\sigma$ on the set of vertices and arcs. In this paper, we
+introduce a separation problem, $d$-Skew-Symmetric Multicut, where we are given
+a skew-symmetric graph $D$, a family of $\cal T$ of $d$-sized subsets of
+vertices and an integer $k$. The objective is to decide if there is a set
+$X\subseteq A$ of $k$ arcs such that every set $J$ in the family has a vertex
+$v$ such that $v$ and $\sigma(v)$ are in different connected components of
+$D'=(V,A\setminus (X\cup \sigma(X))$. In this paper, we give an algorithm for
+this problem which runs in time $O((4d)^{k}(m+n+\ell))$, where $m$ is the
+number of arcs in the graph, $n$ the number of vertices and $\ell$ the length
+of the family given in the input.
+  Using our algorithm, we show that Almost 2-SAT has an algorithm with running
+time $O(4^kk^4\ell)$ and we obtain algorithms for {\sc Odd Cycle Transversal}
+and {\sc Edge Bipartization} which run in time $O(4^kk^4(m+n))$ and
+$O(4^kk^5(m+n))$ respectively. This resolves an open problem posed by Reed,
+Smith and Vetta [Operations Research Letters, 2003] and improves upon the
+earlier almost linear time algorithm of Kawarabayashi and Reed [SODA, 2010].
+  We also show that Deletion q-Horn Backdoor Set Detection is a special case of
+3-Skew-Symmetric Multicut, giving us an algorithm for Deletion q-Horn Backdoor
+Set Detection which runs in time $O(12^kk^5\ell)$. This gives the first
+fixed-parameter tractable algorithm for this problem answering a question posed
+in a paper by a superset of the contributors [STACS, 2013]. Using this result, we
+get an algorithm for Satisfiability which runs in time $O(12^kk^5\ell)$ where
+$k$ is the size of the smallest q-Horn deletion backdoor set, with $\ell$ being
+the length of the input formula.

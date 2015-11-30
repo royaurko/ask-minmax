@@ -1,0 +1,10 @@
+Many applications like pointer analysis and incremental compilation require
+maintaining a topological ordering of the nodes of a directed acyclic graph
+(DAG) under dynamic updates. All known algorithms for this problem are either
+only analyzed for worst-case insertion sequences or only evaluated
+experimentally on random DAGs. We present the first average-case analysis of
+online topological ordering algorithms. We prove an expected runtime of O(n^2
+polylog(n)) under insertion of the edges of a complete DAG in a random order
+for the algorithms of Alpern et al. (SODA, 1990), Katriel and Bodlaender (TALG,
+2006), and Pearce and Kelly (JEA, 2006). This is much less than the best known
+worst-case bound O(n^{2.75}) for this problem.

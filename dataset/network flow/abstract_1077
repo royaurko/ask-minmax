@@ -1,0 +1,19 @@
+Advanced channel reservation is emerging as an important feature of ultra
+high-speed networks requiring the transfer of large files. Applications include
+scientific data transfers and database backup. In this paper, we present two
+new, on-line algorithms for advanced reservation, called BatchAll and BatchLim,
+that are guaranteed to achieve optimal throughput performance, based on
+multi-commodity flow arguments. Both algorithms are shown to have
+polynomial-time complexity and provable bounds on the maximum delay for
+1+epsilon bandwidth augmented networks. The BatchLim algorithm returns the
+completion time of a connection immediately as a request is placed, but at the
+expense of a slightly looser competitive ratio than that of BatchAll. We also
+present a simple approach that limits the number of parallel paths used by the
+algorithms while provably bounding the maximum reduction factor in the
+transmission throughput. We show that, although the number of different paths
+can be exponentially large, the actual number of paths needed to approximate
+the flow is quite small and proportional to the number of edges in the network.
+Simulations for a number of topologies show that, in practice, 3 to 5 parallel
+paths are sufficient to achieve close to optimal performance. The performance
+of the competitive algorithms are also compared to a greedy benchmark, both
+through analysis and simulation.

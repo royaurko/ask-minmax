@@ -1,0 +1,12 @@
+The random initialization of weights of a multilayer perceptron makes it
+possible to model its training process as a Las Vegas algorithm, i.e. a
+randomized algorithm which stops when some required training error is obtained,
+and whose execution time is a random variable. This modeling is used to perform
+a case study on a well-known pattern recognition benchmark: the UCI Thyroid
+Disease Database. Empirical evidence is presented of the training time
+probability distribution exhibiting a heavy tail behavior, meaning a big
+probability mass of long executions. This fact is exploited to reduce the
+training time cost by applying two simple restart strategies. The first assumes
+full knowledge of the distribution yielding a 40% cut down in expected time
+with respect to the training without restarts. The second, assumes null
+knowledge, yielding a reduction ranging from 9% to 23%.

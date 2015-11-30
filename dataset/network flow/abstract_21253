@@ -1,0 +1,25 @@
+We present distributed randomized leader election protocols for multi-hop
+radio networks that elect a leader in almost the same time $T_{BC}$ required
+for broadcasting a message. For the setting without collision detection, our
+algorithm runs with high probability in $O(D \log \frac{n}{D} + \log^3 n)
+\min\{\log\log n,\log \frac{n}{D}\}$ rounds on any $n$-node network with
+diameter $D$. Since $T_{BC} = \Theta(D \log \frac{n}{D} + \log^2 n)$ is a lower
+bound, our upper bound is optimal up to a factor of at most $\log \log n$ and
+the extra $\log n$ factor on the additive term. This algorithm is furthermore
+the first $O(n)$ time algorithm for this setting.
+  Our algorithms improve over a 25 year old simulation approach of Bar-Yehuda,
+Goldreich and Itai with a $O(T_{BC} \log n)$ running time: In 1987 they
+designed a fast broadcast protocol and subsequently in 1989 they showed how it
+can be used to simulate one round of a single-hop network that has collision
+detection in $T_{BC}$ time. The prime application of this simulation was to
+simulate Willards single-hop leader election protocol, which elects a leader in
+$O(\log n)$ rounds with high probability and $O(\log \log n)$ rounds in
+expectation. While it was subsequently shown that Willards bounds are tight, it
+was unclear whether the simulation approach is optimal. Our results break this
+barrier and essentially remove the logarithmic slowdown over the broadcast time
+$T_{BC}$ by going away from the simulation approach.
+  We also give a distributed randomized leader election algorithm for the
+setting with collision detection that runs in $O(D + \log n \log \log n) \cdot
+\min\{\log \log n, \log \frac{n}{D}\}$ rounds. This round complexity is optimal
+up to $O(\log \log n)$ factors and improves over a deterministic algorithm that
+requires $\Theta(n)$ rounds independently of the diameter $D$.

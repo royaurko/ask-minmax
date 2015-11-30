@@ -1,0 +1,12 @@
+The evaluation of a matrix exponential function is a classic problem of
+computational linear algebra. Many different methods have been employed for its
+numerical evaluation [Moler C and van Loan C 1978 SIAM Review 20 4], none of
+which produce a definitive algorithm which is broadly applicable and
+sufficiently accurate, as well as being reasonably fast. Herein, we employ a
+method which evaulates a matrix exponential as the solution to a first-order
+initial value problem in a fictitious time variable. The new aspect of the
+present implementation of this method is to use finite elements in the
+fictitious time variable. [Weatherford C A, Red E, and Wynn A 2002 Journal of
+Molecular Structure 592 47] Then using an expansion in a properly chosen time
+basis, we are able to make accurate calculations of the exponential of any
+given matrix as the solution to a set of simultaneous equations.

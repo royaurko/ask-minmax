@@ -1,0 +1,18 @@
+Subspace clustering is the problem of clustering data that lie close to a
+union of linear subspaces. In this paper, we consider an abstract version of
+this problem, where one is given a set of points lying in general position
+inside the algebraic variety of a union of subspaces, and the objective is to
+decompose the underlying variety into its constituent subspaces. Prior
+algebraic-geometric approaches to this problem require the subspaces to be of
+equal dimension, or the number of subspaces to be known. While an algorithm
+addressing the general case of an unknown number of subspaces of possibly
+different dimensions had been proposed, a proof for its correctness had not
+been given. In this paper, we propose a provably correct algorithm for
+addressing the general case. Our algorithm uses the gradient of a vanishing
+polynomial at a point in the variety to find a hyperplane containing the
+subspace passing through that point. By intersecting the variety with this
+hyperplane and recursively applying the procedure until no non-zero vanishing
+polynomial exists, our algorithm identifies the subspace containing that point.
+By repeating this procedure for other points, our algorithm eventually
+identifies all the subspaces by returning a basis for their orthogonal
+complement.

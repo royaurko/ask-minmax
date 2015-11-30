@@ -1,0 +1,22 @@
+We consider the problem of energy-efficient point-to-point transmission of
+delay-sensitive data (e.g. multimedia data) over a fading channel. Existing
+research on this topic utilizes either physical-layer centric solutions, namely
+power-control and adaptive modulation and coding (AMC), or system-level
+solutions based on dynamic power management (DPM); however, there is currently
+no rigorous and unified framework for simultaneously utilizing both
+physical-layer centric and system-level techniques to achieve the minimum
+possible energy consumption, under delay constraints, in the presence of
+stochastic and a priori unknown traffic and channel conditions. In this report,
+we propose such a framework. We formulate the stochastic optimization problem
+as a Markov decision process (MDP) and solve it online using reinforcement
+learning. The advantages of the proposed online method are that (i) it does not
+require a priori knowledge of the traffic arrival and channel statistics to
+determine the jointly optimal power-control, AMC, and DPM policies; (ii) it
+exploits partial information about the system so that less information needs to
+be learned than when using conventional reinforcement learning algorithms; and
+(iii) it obviates the need for action exploration, which severely limits the
+adaptation speed and run-time performance of conventional reinforcement
+learning algorithms. Our results show that the proposed learning algorithms can
+converge up to two orders of magnitude faster than a state-of-the-art learning
+algorithm for physical layer power-control and up to three orders of magnitude
+faster than conventional reinforcement learning algorithms.

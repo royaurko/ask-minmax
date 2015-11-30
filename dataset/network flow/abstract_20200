@@ -1,0 +1,14 @@
+Finding an appropriate turbulence model for a given flow case usually calls
+for extensive experimentation with both models and numerical solution methods.
+This work presents the design and implementation of a flexible, programmable
+software framework for assisting with numerical experiments in computational
+turbulence. The framework targets Reynolds-averaged Navier-Stokes models,
+discretized by finite element methods. The novel implementation makes use of
+Python and the FEniCS package, the combination of which leads to compact and
+reusable code, where model- and solver-specific code resemble closely the
+mathematical formulation of equations and algorithms. The presented ideas and
+programming techniques are also applicable to other fields that involve systems
+of nonlinear partial differential equations. We demonstrate the framework in
+two applications and investigate the impact of various linearizations on the
+convergence properties of nonlinear solvers for a Reynolds-averaged
+Navier-Stokes model.

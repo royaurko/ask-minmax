@@ -1,0 +1,23 @@
+We propose the design of an original scalable image coder/decoder that is
+inspired from the mammalians retina. Our coder accounts for the time-dependent
+and also nondeterministic behavior of the actual retina. The present work
+brings two main contributions: As a first step, (i) we design a deterministic
+image coder mimicking most of the retinal processing stages and then (ii) we
+introduce a retinal noise in the coding process, that we model here as a dither
+signal, to gain interesting perceptual features. Regarding our first
+contribution, our main source of inspiration will be the biologically plausible
+model of the retina called Virtual Retina. The main novelty of this coder is to
+show that the time-dependent behavior of the retina cells could ensure, in an
+implicit way, scalability and bit allocation. Regarding our second
+contribution, we reconsider the inner layers of the retina. We emit a possible
+interpretation for the non-determinism observed by neurophysiologists in their
+output. For this sake, we model the retinal noise that occurs in these layers
+by a dither signal. The dithering process that we propose adds several
+interesting features to our image coder. The dither noise whitens the
+reconstruction error and decorrelates it from the input stimuli. Furthermore,
+integrating the dither noise in our coder allows a faster recognition of the
+fine details of the image during the decoding process. Our present paper goal
+is twofold. First, we aim at mimicking as closely as possible the retina for
+the design of a novel image coder while keeping encouraging performances.
+Second, we bring a new insight concerning the non-deterministic behavior of the
+retina.

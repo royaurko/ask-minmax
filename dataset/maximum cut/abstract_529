@@ -1,0 +1,19 @@
+The Maximum Entropy Modeling Toolkit supports parameter estimation and
+prediction for statistical language models in the maximum entropy framework.
+The maximum entropy framework provides a constructive method for obtaining the
+unique conditional distribution p*(y|x) that satisfies a set of linear
+constraints and maximizes the conditional entropy H(p|f) with respect to the
+empirical distribution f(x). The maximum entropy distribution p*(y|x) also has
+a unique parametric representation in the class of exponential models, as
+m(y|x) = r(y|x)/Z(x) where the numerator m(y|x) = prod_i alpha_i^g_i(x,y) is a
+product of exponential weights, with alpha_i = exp(lambda_i), and the
+denominator Z(x) = sum_y r(y|x) is required to satisfy the axioms of
+probability.
+  This manual explains how to build maximum entropy models for discrete domains
+with the Maximum Entropy Modeling Toolkit (MEMT). First we summarize the steps
+necessary to implement a language model using the toolkit. Next we discuss the
+executables provided by the toolkit and explain the file formats required by
+the toolkit. Finally, we review the maximum entropy framework and apply it to
+the problem of statistical language modeling.
+  Keywords: statistical language models, maximum entropy, exponential models,
+improved iterative scaling, Markov models, triggers.

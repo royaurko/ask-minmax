@@ -1,0 +1,15 @@
+AliEn (ALICE Environment) is a lightweight GRID framework developed by the
+Alice Collaboration. When the experiment starts running, it will collect data
+at a rate of approximately 2 PB per year, producing O(109) files per year. All
+these files, including all simulated events generated during the preparation
+phase of the experiment, must be accounted and reliably tracked in the GRID
+environment. The backbone of AliEn is a distributed file catalogue, which
+associates universal logical file name to physical file names for each dataset
+and provides transparent access to datasets independently of physical location.
+The file replication and transport is carried out under the control of the File
+Transport Broker. In addition, the file catalogue maintains information about
+every job running in the system. The jobs are distributed by the Job Resource
+Broker that is implemented using a simplified pull (as opposed to traditional
+push) architecture. This paper describes the Job and File Transport Resource
+Brokers and shows that a similar architecture can be applied to solve both
+problems.

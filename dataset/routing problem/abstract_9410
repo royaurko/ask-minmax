@@ -1,0 +1,16 @@
+We study the problem of ranking with submodular valuations. An instance of
+this problem consists of a ground set $[m]$, and a collection of $n$ monotone
+submodular set functions $f^1, \ldots, f^n$, where each $f^i: 2^{[m]} \to R_+$.
+An additional ingredient of the input is a weight vector $w \in R_+^n$. The
+objective is to find a linear ordering of the ground set elements that
+minimizes the weighted cover time of the functions. The cover time of a
+function is the minimal number of elements in the prefix of the linear ordering
+that form a set whose corresponding function value is greater than a unit
+threshold value.
+  Our main contribution is an $O(\ln(1 / \epsilon))$-approximation algorithm
+for the problem, where $\epsilon$ is the smallest non-zero marginal value that
+any function may gain from some element. Our algorithm orders the elements
+using an adaptive residual updates scheme, which may be of independent
+interest. We also prove that the problem is $\Omega(\ln(1 / \epsilon))$-hard to
+approximate, unless P = NP. This implies that the outcome of our algorithm is
+optimal up to constant factors.

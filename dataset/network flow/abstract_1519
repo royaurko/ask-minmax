@@ -1,0 +1,22 @@
+This paper presents resource management techniques for allocating
+communication and computational resources in a distributed stream processing
+platform. The platform is designed to exploit the synergy of two classes of
+network connections -- dedicated and opportunistic. Previous studies we
+conducted have demonstrated the benefits of such bi-modal resource organization
+that combines small pools of dedicated computers with a very large pool of
+opportunistic computing capacities of idle computers to serve high throughput
+computing applications. This paper extends the idea of bi-modal resource
+organization into the management of communication resources. Since distributed
+stream processing applications demand large volume of data transmission between
+processing sites at a consistent rate, adequate control over the network
+resources is important to assure a steady flow of processing. The system model
+used in this paper is a platform where stream processing servers at distributed
+sites are interconnected with a combination of dedicated and opportunistic
+communication links. Two pertinent resource allocation problems are analyzed in
+details and solved using decentralized algorithms. One is the mapping of the
+stream processing tasks on the processing and the communication resources. The
+other is the adaptive re-allocation of the opportunistic communication links
+due to the variations in their capacities. Overall optimization goal is higher
+task throughput and better utilization of the expensive dedicated links. The
+evaluation demonstrates that the algorithms are able to exploit the synergy of
+bi-modal communication links towards achieving the optimization goals.

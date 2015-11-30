@@ -1,0 +1,15 @@
+The practicality of the stochastic network calculus (SNC) is often questioned
+on grounds of potential looseness of its performance bounds. In this paper it
+is uncovered that for bursty arrival processes (specifically Markov-Modulated
+On-Off (MMOO)), whose amenability to \textit{per-flow} analysis is typically
+proclaimed as a highlight of SNC, the bounds can unfortunately indeed be very
+loose (e.g., by several orders of magnitude off). In response to this uncovered
+weakness of SNC, the (Standard) per-flow bounds are herein improved by deriving
+a general sample-path bound, using martingale based techniques, which
+accommodates FIFO, SP, EDF, and GPS scheduling. The obtained (Martingale)
+bounds gain an exponential decay factor of ${\mathcal{O}}(e^{-\alpha n})$ in
+the number of flows $n$. Moreover, numerical comparisons against simulations
+show that the Martingale bounds are remarkably accurate for FIFO, SP, and EDF
+scheduling; for GPS scheduling, although the Martingale bounds substantially
+improve the Standard bounds, they are numerically loose, demanding for
+improvements in the core SNC analysis of GPS.

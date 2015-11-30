@@ -1,0 +1,23 @@
+We present an extended version of THERMINATOR, a Monte Carlo event generator
+dedicated to studies of the statistical production of particles in relativistic
+heavy-ion collisions. The increased functionality of the code contains the
+following features: The input of any shape of the freeze-out hypersurface and
+the expansion velocity field, including the 3+1 dimensional profiles, in
+particular those generated externally with various hydrodynamic codes. The
+hypersufraces may have variable thermal parameters, which allows for studies
+departing significantly from the mid-rapidity region, where the baryon chemical
+potential becomes large. We include a library of standard sets of hypersurfaces
+and velocity profiles describing the RHIC Au+Au data at sqrt(s_(NN)) = 200 GeV
+for various centralities, as well as those anticipated for the LHC Pb+Pb
+collisions at sqrt(s_(NN)) = 5.5 TeV. A separate code, FEMTO-THERMINATOR, is
+provided to carry out the analysis of femtoscopic correlations which are an
+important source of information concerning the size and expansion of the
+system. We also include several useful scripts that carry out auxiliary tasks,
+such as obtaining an estimate of the number of elastic collisions after the
+freeze-out, counting of particles flowing back into the fireball and violating
+causality (typically very few), or visualizing various results: the particle
+p_T-spectra, the elliptic flow coefficients, and the HBT correlation radii. We
+also investigate the problem of the back-flow of particles into the
+hydrodynamic region, as well as estimate the elastic rescattering in terms of
+trajectory crossings. The package is written in C++ and uses the CERN ROOT
+environment.

@@ -1,0 +1,17 @@
+We investigate feasible computation over a fairly general notion of data and
+codata. Specifically, we present a direct Bellantoni-Cook-style normal/safe
+typed programming formalism, RS1, that expresses feasible structural recursions
+and corecursions over data and codata specified by polynomial functors. (Lists,
+streams, finite trees, infinite trees, etc. are all directly definable.) A
+novel aspect of RS1 is that it embraces structure-sharing as in standard
+functional-programming implementations. As our data representations use
+sharing, our implementation of structural recursions are memoized to avoid the
+possibly exponentially-many repeated subcomputations a naive implementation
+might perform. We introduce notions of size for representations of data
+(accounting for sharing) and codata (using ideas from type-2 computational
+complexity) and establish that type-level 1 RS1-functions have
+polynomial-bounded runtimes and satisfy a polynomial-time completeness
+condition. Also, restricting RS1 terms to particular types produces
+characterizations of some standard complexity classes (e.g., omega-regular
+languages, linear-space functions) and some less-standard classes (e.g.,
+log-space streams).

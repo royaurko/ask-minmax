@@ -1,0 +1,20 @@
+Consider an n-point metric M = (V,delta), and a transmission range assignment
+r: V \rightarrow \mathbb R^+ that maps each point v in V to the disk of radius
+r(v) around it. The {symmetric disk graph} (henceforth, SDG) that corresponds
+to M and r is the undirected graph over V whose edge set includes an edge (u,v)
+if both r(u) and r(v) are no smaller than delta(u,v). SDGs are often used to
+model wireless communication networks.
+  Abu-Affash, Aschner, Carmi and Katz (SWAT 2010, \cite{AACK10}) showed that
+for any {2-dimensional Euclidean} n-point metric M, the weight of the MST of
+every {connected} SDG for M is O(log n) w(MST(M)), and that this bound is
+tight. However, the upper bound proof of \cite{AACK10} relies heavily on basic
+geometric properties of 2-dimensional Euclidean metrics, and does not extend to
+higher dimensions. A natural question that arises is whether this surprising
+upper bound of \cite{AACK10} can be generalized for wider families of metrics,
+such as 3-dimensional Euclidean metrics.
+  In this paper we generalize the upper bound of Abu-Affash et al.
+\cite{AACK10} for Euclidean metrics of any dimension. Furthermore, our upper
+bound extends to {arbitrary metrics} and, in particular, it applies to any of
+the normed spaces ell_p. Specifically, we demonstrate that for {any} n-point
+metric M, the weight of the MST of every connected SDG for M is O(log n)
+w(MST(M)).

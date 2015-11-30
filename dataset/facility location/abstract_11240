@@ -1,0 +1,17 @@
+A typical computational geometry problem begins: Consider a set P of n points
+in R^d. However, many applications today work with input that is not precisely
+known, for example when the data is sensed and has some known error model. What
+if we do not know the set P exactly, but rather we have a probability
+distribution mu_p governing the location of each point p in P?
+  Consider a set of (non-fixed) points P, and let mu_P be the probability
+distribution of this set. We study several measures (e.g. the radius of the
+smallest enclosing ball, or the area of the smallest enclosing box) with
+respect to mu_P. The solutions to these problems do not, as in the traditional
+case, consist of a single answer, but rather a distribution of answers. We
+describe several data structures that approximate distributions of answers for
+shape fitting problems.
+  We provide simple and efficient randomized algorithms for computing all of
+these data structures, which are easy to implement and practical. We provide
+some experimental results to assert this. We also provide more involved
+deterministic algorithms for some of these data structures that run in time
+polynomial in n and 1/eps, where eps is the approximation factor.

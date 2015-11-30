@@ -1,0 +1,24 @@
+In this paper we introduce an optimized Markov Chain Monte Carlo (MCMC)
+technique for solving the integer least-squares (ILS) problems, which include
+Maximum Likelihood (ML) detection in Multiple-Input Multiple-Output (MIMO)
+systems. Two factors contribute to the speed of finding the optimal solution by
+the MCMC detector: the probability of the optimal solution in the stationary
+distribution, and the mixing time of the MCMC detector. Firstly, we compute the
+optimal value of the "temperature" parameter, in the sense that the temperature
+has the desirable property that once the Markov chain has mixed to its
+stationary distribution, there is polynomially small probability
+($1/\mbox{poly}(N)$, instead of exponentially small) of encountering the
+optimal solution. This temperature is shown to be at most
+$O(\sqrt{SNR}/\ln(N))$, where $SNR$ is the signal-to-noise ratio, and $N$ is
+the problem dimension. Secondly, we study the mixing time of the underlying
+Markov chain of the proposed MCMC detector. We find that, the mixing time of
+MCMC is closely related to whether there is a local minimum in the lattice
+structures of ILS problems. For some lattices without local minima, the mixing
+time of the Markov chain is independent of $SNR$, and grows polynomially in the
+problem dimension; for lattices with local minima, the mixing time grows
+unboundedly as $SNR$ grows, when the temperature is set, as in conventional
+wisdom, to be the standard deviation of noises. Our results suggest that, to
+ensure fast mixing for a fixed dimension $N$, the temperature for MCMC should
+instead be set as $\Omega(\sqrt{SNR})$ in general. Simulation results show that
+the optimized MCMC detector efficiently achieves approximately ML detection in
+MIMO systems having a huge number of transmit and receive dimensions.

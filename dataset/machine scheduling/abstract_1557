@@ -1,0 +1,23 @@
+Objectives: Text categorization has been used in biomedical informatics for
+identifying documents containing relevant topics of interest. We developed a
+simple method that uses a chi-square-based scoring function to determine the
+likelihood of MEDLINE citations containing genetic relevant topic. Methods: Our
+procedure requires construction of a genetic and a nongenetic domain document
+corpus. We used MeSH descriptors assigned to MEDLINE citations for this
+categorization task. We compared frequencies of MeSH descriptors between two
+corpora applying chi-square test. A MeSH descriptor was considered to be a
+positive indicator if its relative observed frequency in the genetic domain
+corpus was greater than its relative observed frequency in the nongenetic
+domain corpus. The output of the proposed method is a list of scores for all
+the citations, with the highest score given to those citations containing MeSH
+descriptors typical for the genetic domain. Results: Validation was done on a
+set of 734 manually annotated MEDLINE citations. It achieved predictive
+accuracy of 0.87 with 0.69 recall and 0.64 precision. We evaluated the method
+by comparing it to three machine learning algorithms (support vector machines,
+decision trees, na\"ive Bayes). Although the differences were not statistically
+significantly different, results showed that our chi-square scoring performs as
+good as compared machine learning algorithms. Conclusions: We suggest that the
+chi-square scoring is an effective solution to help categorize MEDLINE
+citations. The algorithm is implemented in the BITOLA literature-based
+discovery support system as a preprocessor for gene symbol disambiguation
+process.

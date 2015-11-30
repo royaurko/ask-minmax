@@ -1,0 +1,25 @@
+For graphs $G$ and $H$, let $G\to (H,H)$ signify that any red/blue edge
+coloring of $G$ contains a monochromatic $H$ as a subgraph, and
+$\mathcal{H}(\Delta,n)=\{H:|V(H)|=n,\Delta(H)\le \Delta\}$. For fixed $\Delta$
+and $n$, we say that $G$ is a partition universal graph for
+$\mathcal{H}(\Delta,n)$ if $G\to (H,H)$ for every $H\in\mathcal{H}(\Delta,n)$.
+  In 1983, Chv\'atal, R\"odl, Szemer\'edi and Trotter proved that for any
+$\Delta\ge2$ there exists a constant $B$ such that, for any $n$, if $N\ge Bn$
+then $K_N$ is partition universal for $\mathcal{H}(\Delta,n)$. Recently,
+Kohayakawa, R\"odl, Schacht and Szemer\'edi proved that the complete graph
+$K_N$ in above result can be replaced by sparse graphs. They obtained that for
+fixed $\Delta\ge2$, there exist constants $B$ and $C$ such that if $N\ge Bn$
+and $p=C(\log N/N)^{1/\Delta}$, then {\bf a.a.s.} $G(N,p)$ is partition
+universal graph for $\mathcal{H}(\Delta,n)$, where $G(N,p)$ is the standard
+random graph on $N$ vertices with $\mathbb{P}(e)=p$ for each edge $e$. From
+some results of Bollob\'as and {\L}uczak, we know that {\bf a.a.s.}
+$\chi(G(N,p)) = \Theta((N/\log N)^{1-1/\Delta})$.
+  In this paper, we shall show that the $G(N,p)$ in above result can be
+replaced by random multipartite graph. Let $K_{r}(N)$ be the complete
+$r$-partite graph with $N$ vertices in each part, and $G_r(N,p)$ the random
+spanning subgraph of $K_r(N)$, in which each edge appears with probability $p$.
+It is shown that for fixed $\Delta\ge2$ there exist constants $r, B$ and $C$
+depending only on $\Delta$ such that if $N\ge Bn$ and $p=C(\log
+N/N)^{1/\Delta}$, then {\bf a.a.s.} $G_r(N,p)$ is partition universal graph for
+$\mathcal{H}(\Delta,n)$. The proof mainly uses the sparse multipartite
+regularity lemma.

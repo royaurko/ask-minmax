@@ -1,0 +1,21 @@
+We consider a system in which two users communicate with a destination with
+the help of a half-duplex relay. Based on the compute-and-forward scheme, we
+develop and evaluate the performance of coding strategies that are of network
+coding spirit. In this framework, instead of decoding the users' information
+messages, the destination decodes two integer-valued linear combinations that
+relate the transmitted codewords. Two decoding schemes are considered. In the
+first one, the relay computes one of the linear combinations and then forwards
+it to the destination. The destination computes the other linear combination
+based on the direct transmissions. In the second one, accounting for the side
+information available at the destination through the direct links, the relay
+compresses what it gets using Wyner-Ziv compression and conveys it to the
+destination. The destination then computes the two linear combinations,
+locally. For both coding schemes, we discuss the design criteria, and derive
+the allowed symmetric-rate. Next, we address the power allocation and the
+selection of the integer-valued coefficients to maximize the offered
+symmetric-rate; an iterative coordinate descent method is proposed. The
+analysis shows that the first scheme can outperform standard relaying
+techniques in certain regimes, and the second scheme, while relying on feasible
+structured lattice codes, can at best achieve the same performance as regular
+compress-and-forward for the multiaccess relay network model that we study. The
+results are illustrated through some numerical examples.

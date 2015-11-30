@@ -1,0 +1,25 @@
+We consider the problem of estimating a spatially varying density function,
+motivated by problems that arise in large-scale radiological survey and anomaly
+detection. In this context, the density functions to be estimated are the
+background gamma-ray energy spectra at sites spread across a large geographical
+area, such as nuclear production and waste-storage sites, military bases,
+medical facilities, university campuses, or the downtown of a city. Several
+challenges combine to make this a difficult problem. First, the spectral
+density at any given spatial location may have both smooth and non-smooth
+features. Second, the spatial correlation in these density functions is neither
+stationary nor locally isotropic. Third, the spatial correlation decays at
+different length scales at different locations in the support of the underlying
+density. Finally, at some spatial locations, there is very little data. We
+present a method called multiscale spatial density smoothing that successfully
+addresses these challenges. The method is motivated by the same construction
+that underlies a P\'olya-tree prior, in that it is based on a recursive dyadic
+partition of the underlying probability measure. We also describe an efficient
+algorithm for finding a maximum a posteriori (MAP) estimate that leverages
+recent advances in convex optimization for non-smooth functions.
+  We apply multiscale spatial density smoothing to real data collected on the
+background gamma-ray spectra at locations across a large university campus. Our
+results show that the method exhibits state-of-the-art performance for spatial
+smoothing in density estimation, and that it leads to substantial improvements
+in power when used in conjunction with existing methods for detecting the kinds
+of radiological anomalies that may have important consequences for public
+health and safety.

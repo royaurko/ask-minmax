@@ -1,0 +1,21 @@
+We consider qualitative and quantitative verification problems for
+infinite-state Markov chains. We call a Markov chain decisive w.r.t. a given
+set of target states F if it almost certainly eventually reaches either F or a
+state from which F can no longer be reached. While all finite Markov chains are
+trivially decisive (for every set F), this also holds for many classes of
+infinite Markov chains. Infinite Markov chains which contain a finite attractor
+are decisive w.r.t. every set F. In particular, this holds for probabilistic
+lossy channel systems (PLCS). Furthermore, all globally coarse Markov chains
+are decisive. This class includes probabilistic vector addition systems (PVASS)
+and probabilistic noisy Turing machines (PNTM). We consider both safety and
+liveness problems for decisive Markov chains, i.e., the probabilities that a
+given set of states F is eventually reached or reached infinitely often,
+respectively. 1. We express the qualitative problems in abstract terms for
+decisive Markov chains, and show an almost complete picture of its decidability
+for PLCS, PVASS and PNTM. 2. We also show that the path enumeration algorithm
+of Iyer and Narasimha terminates for decisive Markov chains and can thus be
+used to solve the approximate quantitative safety problem. A modified variant
+of this algorithm solves the approximate quantitative liveness problem. 3.
+Finally, we show that the exact probability of (repeatedly) reaching F cannot
+be effectively expressed (in a uniform way) in Tarski-algebra for either PLCS,
+PVASS or (P)NTM.

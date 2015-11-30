@@ -1,0 +1,13 @@
+In recent years the Cache-Oblivious model of external memory computation has
+provided an attractive theoretical basis for the analysis of algorithms on
+massive datasets. Much progress has been made in discovering algorithms that
+are asymptotically optimal or near optimal. However, to date there are still
+relatively few successful experimental studies. In this paper we compare two
+different Cache-Oblivious priority queues based on the Funnel and Bucket Heap
+and apply them to the single source shortest path problem on graphs with
+positive edge weights. Our results show that when RAM is limited and data is
+swapping to external storage, the Cache-Oblivious priority queues achieve
+orders of magnitude speedups over standard internal memory techniques. However,
+for the single source shortest path problem both on simulated and real world
+graph data, these speedups are markedly lower due to the time required to
+access the graph adjacency list itself.

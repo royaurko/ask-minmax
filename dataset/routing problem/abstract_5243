@@ -1,0 +1,15 @@
+The problem of recovering a low-rank matrix from a set of observations
+corrupted with gross sparse error is known as the robust principal component
+analysis (RPCA) and has many applications in computer vision, image processing
+and web data ranking. It has been shown that under certain conditions, the
+solution to the NP-hard RPCA problem can be obtained by solving a convex
+optimization problem, namely the robust principal component pursuit (RPCP).
+Moreover, if the observed data matrix has also been corrupted by a dense noise
+matrix in addition to gross sparse error, then the stable principal component
+pursuit (SPCP) problem is solved to recover the low-rank matrix. In this paper,
+we develop efficient algorithms with provable iteration complexity bounds for
+solving RPCP and SPCP. Numerical results on problems with millions of variables
+and constraints such as foreground extraction from surveillance video, shadow
+and specularity removal from face images and video denoising from heavily
+corrupted data show that our algorithms are competitive to current
+state-of-the-art solvers for RPCP and SPCP in terms of accuracy and speed.

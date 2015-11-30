@@ -1,0 +1,25 @@
+We investigate online algorithms for maximum (weight) independent set on
+graph classes with bounded inductive independence number like, e.g., interval
+and disk graphs with applications to, e.g., task scheduling and spectrum
+allocation. In the online setting, it is assumed that nodes of an unknown graph
+arrive one by one over time. An online algorithm has to decide whether an
+arriving node should be included into the independent set. Unfortunately, this
+natural and practically relevant online problem cannot be studied in a
+meaningful way within a classical competitive analysis as the competitive ratio
+on worst-case input sequences is lower bounded by $\Omega(n)$.
+  As a worst-case analysis is pointless, we study online independent set in a
+stochastic analysis. Instead of focussing on a particular stochastic input
+model, we present a generic sampling approach that enables us to devise online
+algorithms achieving performance guarantees for a variety of input models. In
+particular, our analysis covers stochastic input models like the secretary
+model, in which an adversarial graph is presented in random order, and the
+prophet-inequality model, in which a randomly generated graph is presented in
+adversarial order. Our sampling approach bridges thus between stochastic input
+models of quite different nature. In addition, we show that our approach can be
+applied to a practically motivated admission control setting.
+  Our sampling approach yields an online algorithm for maximum independent set
+with competitive ratio $O(\rho^2)$ with respect to all of the mentioned
+stochastic input models. for graph classes with inductive independence number
+$\rho$. The approach can be extended towards maximum-weight independent set by
+losing only a factor of $O(\log n)$ in the competitive ratio with $n$ denoting
+the (expected) number of nodes.

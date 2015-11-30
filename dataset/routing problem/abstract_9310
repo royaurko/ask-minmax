@@ -1,0 +1,16 @@
+The selection of features that are relevant for a prediction or
+classification problem is an important problem in many domains involving
+high-dimensional data. Selecting features helps fighting the curse of
+dimensionality, improving the performances of prediction or classification
+methods, and interpreting the application. In a nonlinear context, the mutual
+information is widely used as relevance criterion for features and sets of
+features. Nevertheless, it suffers from at least three major limitations:
+mutual information estimators depend on smoothing parameters, there is no
+theoretically justified stopping criterion in the feature selection greedy
+procedure, and the estimation itself suffers from the curse of dimensionality.
+This chapter shows how to deal with these problems. The two first ones are
+addressed by using resampling techniques that provide a statistical basis to
+select the estimator parameters and to stop the search procedure. The third one
+is addressed by modifying the mutual information criterion into a measure of
+how features are complementary (and not only informative) for the problem at
+hand.

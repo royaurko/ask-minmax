@@ -1,0 +1,15 @@
+This article introduces a multi-object filter for the resolution of joint
+detection/tracking problems involving multiple targets, derived from the novel
+Bayesian estimation framework for stochastic populations. Fully probabilistic
+in nature, the filter for Distinguishable and Independent Stochastic
+Populations (DISP) exploits two exclusive probabilistic representations for the
+potential targets. The distinguishable targets are those for which individual
+information is available through past detections; they are represented by
+individual tracks. The indistinguishable targets are those for which no
+individual information is available yet; they are represented collectively by a
+single stochastic population. Assuming that targets are independent, and
+adopting the "at most one measurement per scan per target" rule, the DISP
+filter propagates the set of all possible tracks, with associated credibility,
+based on the sequence of measurement sets collected by the sensor so far. A few
+filtering approximations, aiming at curtailing the computational cost of a
+practical implementation, are also discussed.

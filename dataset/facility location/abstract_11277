@@ -1,0 +1,14 @@
+We present a data mining technique for the analysis of multichannel
+oscillatory timeseries data and show an application using poloidal arrays of
+magnetic sensors installed in the H-1 heliac. The procedure is highly
+automated, and scales well to large datasets. The timeseries data is split into
+short time segments to provide time resolution, and each segment is represented
+by a singular value decomposition (SVD). By comparing power spectra of the
+temporal singular vectors, singular values are grouped into subsets which
+define fluctuation structures. Thresholds for the normalised energy of the
+fluctuation structure and the normalised entropy of the SVD are used to filter
+the dataset. We assume that distinct classes of fluctuations are localised in
+the space of phase differences between each pair of nearest neighbour channels.
+An expectation maximisation clustering algorithm is used to locate the distinct
+classes of fluctuations, and a cluster tree mapping is used to visualise the
+results.

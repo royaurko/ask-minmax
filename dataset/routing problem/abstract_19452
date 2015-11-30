@@ -1,0 +1,19 @@
+HERO (Hybrid Evaluator for Radiative Objects) is a 3D general relativistic
+radiative transfer code which has been tailored to the problem of analyzing
+radiation from simulations of relativistic accretion discs around black holes.
+HERO is designed to be used as a postprocessor. Given some fixed fluid
+structure for the disc (i.e. density and velocity as a function of position
+from a hydrodynamics or magnetohydrodynamics simulation), the code obtains a
+self-consistent solution for the radiation field and for the gas temperatures
+using the condition of radiative equilibrium. The novel aspect of HERO is that
+it combines two techniques: 1) a short characteristics (SC) solver that quickly
+converges to a self consistent disc temperature and radiation field, with 2) a
+long characteristics (LC) solver that provides a more accurate solution for the
+radiation near the photosphere and in the optically thin regions. By combining
+these two techniques, we gain both the computational speed of SC and the high
+accuracy of LC. We present tests of HERO on a range of 1D, 2D and 3D problems
+in flat space and show that the results agree well with both analytical and
+benchmark solutions. We also test the ability of the code to handle
+relativistic problems in curved space. Finally, we discuss the important topic
+of ray-defects, a major limitation of the SC method, and describe our strategy
+for minimizing the induced error.

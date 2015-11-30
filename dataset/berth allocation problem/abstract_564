@@ -1,0 +1,19 @@
+We present a regularized logistic regression model for evaluating player
+contributions in hockey. The traditional metric for this purpose is the
+plus-minus statistic, which allocates a single unit of credit (for or against)
+to each player on the ice for a goal. However, plus-minus scores measure only
+the marginal effect of players, do not account for sample size, and provide a
+very noisy estimate of performance. We investigate a related regression
+problem: what does each player on the ice contribute, beyond aggregate team
+performance and other factors, to the odds that a given goal was scored by
+their team? Due to the large-p (number of players) and imbalanced design
+setting of hockey analysis, a major part of our contribution is a careful
+treatment of prior shrinkage in model estimation. We showcase two recently
+developed techniques -- for posterior maximization or simulation -- that make
+such analysis feasible. Each approach is accompanied with publicly available
+software and we include the simple commands used in our analysis. Our results
+show that most players do not stand out as measurably strong (positive or
+negative) contributors. This allows the stars to really shine, reveals diamonds
+in the rough overlooked by earlier analyses, and argues that some of the
+highest paid players in the league are not making contributions worth their
+expense.

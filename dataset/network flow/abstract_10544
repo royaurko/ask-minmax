@@ -1,0 +1,21 @@
+Given a set of robots with arbitrary initial location and no agreement on a
+global coordinate system, convergence requires that all robots asymptotically
+approach the exact same, but unknown beforehand, location. Robots are
+oblivious-- they do not recall the past computations -- and are allowed to move
+in a one-dimensional space. Additionally, robots cannot communicate directly,
+instead they obtain system related information only via visual sensors. We draw
+a connection between the convergence problem in robot networks, and the
+distributed \emph{approximate agreement} problem (that requires correct
+processes to decide, for some constant $\epsilon$, values distance $\epsilon$
+apart and within the range of initial proposed values). Surprisingly, even
+though specifications are similar, the convergence implementation in robot
+networks requires specific assumptions about synchrony and Byzantine
+resilience. In more details, we prove necessary and sufficient conditions for
+the convergence of mobile robots despite a subset of them being Byzantine (i.e.
+they can exhibit arbitrary behavior). Additionally, we propose a deterministic
+convergence algorithm for robot networks and analyze its correctness and
+complexity in various synchrony settings. The proposed algorithm tolerates f
+Byzantine robots for (2f+1)-sized robot networks in fully synchronous networks,
+(3f+1)-sized in semi-synchronous networks. These bounds are optimal for the
+class of cautious algorithms, which guarantee that correct robots always move
+inside the range of positions of the correct robots.

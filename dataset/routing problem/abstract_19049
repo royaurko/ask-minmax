@@ -1,0 +1,21 @@
+Previous researches have demonstrated that the framework of dictionary
+learning with sparse coding, in which signals are decomposed as linear
+combinations of a few atoms of a learned dictionary, is well adept to
+reconstruction issues. This framework has also been used for discrimination
+tasks such as image classification. To achieve better performances of
+classification, experts develop several methods to learn a discriminative
+dictionary in a supervised manner. However, another issue is that when the data
+become extremely large in scale, these methods will be no longer effective as
+they are all batch-oriented approaches. For this reason, we propose a novel
+online algorithm for discriminative dictionary learning, dubbed \textbf{ODDL}
+in this paper. First, we introduce a linear classifier into the conventional
+dictionary learning formulation and derive a discriminative dictionary learning
+problem. Then, we exploit an online algorithm to solve the derived problem.
+Unlike the most existing approaches which update dictionary and classifier
+alternately via iteratively solving sub-problems, our approach directly
+explores them jointly. Meanwhile, it can largely shorten the runtime for
+training and is also particularly suitable for large-scale classification
+issues. To evaluate the performance of the proposed ODDL approach in image
+recognition, we conduct some experiments on three well-known benchmarks, and
+the experimental results demonstrate ODDL is fairly promising for image
+classification tasks.

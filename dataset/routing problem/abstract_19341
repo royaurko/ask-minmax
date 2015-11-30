@@ -1,0 +1,20 @@
+Given the popularity of the viral marketing campaign in online social
+networks, finding an effective method to identify a set of most influential
+nodes so to compete well with other viral marketing competitors is of upmost
+importance. We propose a "General Competitive Independent Cascade (GCIC)" model
+to describe the general influence propagation of two competing sources in the
+same network. We formulate the "Competitive Influence Maximization (CIM)"
+problem as follows: Under a prespecified influence propagation model and that
+the competitor's seed set is known, how to find a seed set of $k$ nodes so as
+to trigger the largest influence cascade? We propose a general algorithmic
+framework TCIM for the CIM problem under the GCIC model. TCIM returns a
+$(1-1/e-\epsilon)$-approximate solution with probability at least
+$1-n^{-\ell}$, and has an efficient time complexity of $O(c(k+\ell)(m+n)\log
+n/\epsilon^2)$, where $c$ depends on specific propagation model and may also
+depend on $k$ and underlying network $G$. To the best of our knowledge, this is
+the first general algorithmic framework that has both $(1-1/e-\epsilon)$
+performance guarantee and practical efficiency. We conduct extensive
+experiments on real-world datasets under three specific influence propagation
+models, and show the efficiency and accuracy of our framework. In particular,
+we achieve up to four orders of magnitude speedup as compared to the previous
+state-of-the-art algorithms with the approximate guarantee.

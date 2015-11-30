@@ -1,0 +1,21 @@
+Independent component analysis (ICA) is a powerful computational tool for
+separating independent source signals from their linear mixtures. ICA has been
+widely applied in neuroimaging studies to identify and characterize underlying
+brain functional networks. An important goal in such studies is to assess the
+effects of subjects' clinical and demographic covariates on the spatial
+distributions of the functional networks. Currently, covariate effects are not
+incorporated in existing group ICA decomposition methods. Hence, they can only
+be evaluated through ad-hoc approaches which may not be accurate in many cases.
+In this paper, we propose a hierarchical covariate ICA model that provides a
+formal statistical framework for estimating and testing covariate effects in
+ICA decomposition. A maximum likelihood method is proposed for estimating the
+covariate ICA model. We develop two expectation-maximization (EM) algorithms to
+obtain maximum likelihood estimates. The first is an exact EM algorithm, which
+has analytically tractable E-step and M-step. Additionally, we propose a
+subspace-based approximate EM, which can significantly reduce computational
+time while still retain high model-fitting accuracy. Furthermore, to test
+covariate effects on the functional networks, we develop a voxel-wise
+approximate inference procedure which eliminates the needs of computationally
+expensive covariance estimation. The performance of the proposed methods is
+evaluated via simulation studies. The application is illustrated through an
+fMRI study of Zen meditation.

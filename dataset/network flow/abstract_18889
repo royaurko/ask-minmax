@@ -1,0 +1,11 @@
+We present a framework for networked state estimation, where systems encode
+their (possibly high dimensional) state vectors using a mutually agreed basis
+between the system and the estimator (in a remote monitoring unit). The basis
+sparsifies the state vectors, i.e., it represents them using vectors with few
+non-zero components, and as a result, the systems might need to transmit only a
+fraction of the original information to be able to recover the non-zero
+components of the transformed state vector. Hence, the estimator can recover
+the state vector of the system from an under-determined linear set of
+equations. We use a greedy search algorithm to calculate the sparsifying basis.
+Then, we present an upper bound for the estimation error. Finally, we
+demonstrate the results on a numerical example.

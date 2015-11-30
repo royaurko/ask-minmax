@@ -1,0 +1,17 @@
+In this survey we investigate the application of the Adleman-Lipton model on
+Rural Postman problem, which given an undirected graph $G=(V,E)$ with positive
+integer lengths on each of its edges and a subset $E^{'}\subseteq E$, asks
+whether there exists a hamiltonian circuit that includes each edge of $E^{'}$
+and has total cost (sum of edge lengths) less or equal to a given integer B (we
+are allowed to use any edges of the set $E-E^{'}$, but we must use all edges of
+the set $E'$). The Rural Postman problem (RPP) is a very interesting
+NP-complete problem used, especially, in network optimization. RPP is actually
+a special case of the Route Inspection problem, where we need to traverse all
+edges of an undirected graph at a minimum total cost. As all NP-complete
+problems, it currently admits no efficient solution and if actually $P\neq NP$
+as it is widely accepted to be, it cannot admit a polynomial time algorithm to
+solve it. The application of the Adleman-Lipton model on this problem, provides
+an efficient way to solve RPP, as it is the fact for many other hard problems
+on which the Adleman-Lipton model has been applied. In this survey, we provide
+a polynomial algorithm based on the Lipton-Adleman model, which solves the RPP
+in $\mathcal{O}(n^{2})$ time, where n refers to the input of the problem.

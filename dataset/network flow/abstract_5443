@@ -1,0 +1,14 @@
+We analyze the performance of TCP and TCP with network coding (TCP/NC) in
+lossy wireless networks. We build upon the simple framework introduced by
+Padhye et al. and characterize the throughput behavior of classical TCP as well
+as TCP/NC as a function of erasure rate, round-trip time, maximum window size,
+and duration of the connection. Our analytical results show that network coding
+masks erasures and losses from TCP, thus preventing TCP's performance
+degradation in lossy networks, such as wireless networks. It is further seen
+that TCP/NC has significant throughput gains over TCP. In addition, we simulate
+TCP and TCP/NC to verify our analysis of the average throughput and the window
+evolution. Our analysis and simulation results show very close concordance and
+support that TCP/NC is robust against erasures. TCP/NC is not only able to
+increase its window size faster but also to maintain a large window size
+despite losses within the network, whereas TCP experiences window closing
+essentially because losses are mistakenly attributed to congestion.

@@ -1,0 +1,7 @@
+Ariola and Felleisen's call-by-need {\lambda}-calculus replaces a variable
+occurrence with its value at the last possible moment. To support this gradual
+notion of substitution, function applications-once established-are never
+discharged. In this paper we show how to translate this notion of reduction
+into an abstract machine that resolves variable references via the control
+stack. In particular, the machine uses the static address of a variable
+occurrence to extract its current value from the dynamic control stack.

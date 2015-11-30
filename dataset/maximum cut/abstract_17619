@@ -1,0 +1,21 @@
+Two different approaches to analysis of data from diagnostic biomarker
+studies are commonly employed. Logistic regression is used to fit models for
+probability of disease given marker values, while ROC curves and risk
+distributions are used to evaluate classification performance. In this paper we
+present a method that simultaneously accomplishes both tasks. The key step is
+to standardize markers relative to the nondiseased population before including
+them in the logistic regression model. Among the advantages of this method are
+the following: (i) ensuring that results from regression and performance
+assessments are consistent with each other; (ii) allowing covariate adjustment
+and covariate effects on ROC curves to be handled in a familiar way, and (iii)
+providing a mechanism to incorporate important assumptions about structure in
+the ROC curve into the fitted risk model. We develop the method in detail for
+the problem of combining biomarker data sets derived from multiple studies,
+populations or biomarker measurement platforms, when ROC curves are similar
+across data sources. The methods are applicable to both cohort and case-control
+sampling designs. The data set motivating this application concerns Prostate
+Cancer Antigen 3 (PCA3) for diagnosis of prostate cancer in patients with or
+without previous negative biopsy where the ROC curves for PCA3 are found to be
+the same in the two populations. The estimated constrained maximum likelihood
+and empirical likelihood estimators are derived. The estimators are compared in
+simulation studies and the methods are illustrated with the PCA3 data set.

@@ -1,0 +1,19 @@
+Many datasets such as market basket data, text or hypertext documents, and
+sensor observations recorded in different locations or time periods, are
+modeled as a collection of sets over a ground set of keys. We are interested in
+basic aggregates such as the weight or selectivity of keys that satisfy some
+selection predicate defined over keys' attributes and membership in particular
+sets. This general formulation includes basic aggregates such as the Jaccard
+coefficient, Hamming distance, and association rules.
+  On massive data sets, exact computation can be inefficient or infeasible.
+Sketches based on coordinated random samples are classic summaries that support
+approximate query processing.
+  Queries are resolved by generating a sketch (sample) of the union of sets
+used in the predicate from the sketches these sets and then applying an
+estimator to this union-sketch.
+  We derive novel tighter (unbiased) estimators that leverage sampled keys that
+are present in the union of applicable sketches but excluded from the union
+sketch. We establish analytically that our estimators dominate estimators
+applied to the union-sketch for {\em all queries and data sets}. Empirical
+evaluation on synthetic and real data reveals that on typical applications we
+can expect a 25%-4 fold reduction in estimation error.

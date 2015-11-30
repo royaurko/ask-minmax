@@ -1,0 +1,17 @@
+Multicast communication primitives have broad utility as building blocks for
+distributed applications. The challenge is to create and maintain the
+distributed structures that support these primitives while accounting for
+volatile end nodes and variable network characteristics. Most solutions
+proposed to date rely on complex algorithms or global information, thus
+limiting the scale of deployments and acceptance outside the academic realm.
+This article introduces a low-complexity, self organizing solution for
+maintaining multicast trees, that we refer to as UMM (Unstructured Multi-source
+Multicast). UMM uses traditional distributed systems techniques: layering,
+soft-state, and passive data collection to adapt to the dynamics of the
+physical network and maintain data dissemination trees. The result is a simple,
+adaptive system with lower overheads than more complex alternatives. We have
+implemented UMM and evaluated it on a 100-node PlanetLab testbed and on up to
+1024-node emulated ModelNet networks Extensive experimental evaluations
+demonstrate UMM's low overhead, efficient network usage compared to alternative
+solutions, and ability to quickly adapt to network changes and to recover from
+failures.

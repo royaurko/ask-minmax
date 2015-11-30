@@ -1,0 +1,10 @@
+FIFO queues with a single reader and writer can be insufficient for "hard
+real-time" systems where interrupt handlers require wait-free guarantees when
+writing to message queues. We present an algorithm which elegantly and
+practically solves this problem on small processors that are often found in
+embedded systems. The algorithm does not require special CPU instructions (such
+as atomic CAS), and therefore is more robust than many existing methods that
+suffer the ABA problem associated with swing pointers. The algorithm gives
+"first-in, almost first-out" guarantees under pathological interrupt
+conditions, which manifests as arbitrary "shoving" among nearly-simultaneous
+arrivals at the end of the queue.

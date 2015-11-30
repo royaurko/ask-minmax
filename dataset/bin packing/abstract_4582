@@ -1,0 +1,14 @@
+In randomized experiments, linear regression is often used to adjust for
+imbalances in covariates between treatment groups, yielding an estimate of the
+average treatment effect with lower asymptotic variance than the unadjusted
+estimator. If there are a large number of covariates, many of which are
+irrelevant to the potential outcomes, the Lasso can be used to both select
+relevant covariates and perform the adjustment. We study the resulting
+estimator under the Neyman-Rubin model for randomization. We present conditions
+on the covariates and potential outcomes which guarantee that the Lasso is more
+efficient than the unadjusted estimator and provide a conservative estimate of
+the asymptotic variance. Simulation and data examples show that Lasso-based
+adjustment can be advantageous even when $p<n$ and that a variant of Lasso,
+cv(Lasso+OLS), is similar to cv(Lasso) in terms of confidence length and
+coverage, but outperforms cv(Lasso) with much fewer covariates in the
+adjustment.

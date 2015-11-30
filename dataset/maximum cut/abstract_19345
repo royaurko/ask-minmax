@@ -1,0 +1,24 @@
+Recent emergence of next-generation DNA sequencing technology has enabled
+acquisition of genetic information at unprecedented scales. In order to
+determine the genetic blueprint of an organism, sequencing platforms typically
+employ so-called shotgun sequencing strategy to oversample the target genome
+with a library of relatively short overlapping reads. The order of nucleotides
+in the reads is determined by processing the acquired noisy signals generated
+by the sequencing instrument. Assembly of a genome from potentially erroneous
+short reads is a computationally daunting task even in the scenario where a
+reference genome exists. Errors and gaps in the reference, and perfect repeat
+regions in the target, further render the assembly challenging and cause
+inaccuracies. In this paper, we formulate the reference-guided sequence
+assembly problem as the inference of the genome sequence on a bipartite graph
+and solve it using a message-passing algorithm. The proposed algorithm can be
+interpreted as the well-known classical belief propagation scheme under a
+certain prior. Unlike existing state-of-the-art methods, the proposed algorithm
+combines the information provided by the reads without needing to know
+reliability of the short reads (so-called quality scores). Relation of the
+message-passing algorithm to a provably convergent power iteration scheme is
+discussed. To evaluate and benchmark the performance of the proposed technique,
+we find an analytical expression for the probability of error of a genie-aided
+maximum a posteriori (MAP) decision scheme. Results on both simulated and
+experimental data demonstrate that the proposed message-passing algorithm
+outperforms commonly used state-of-the-art tools, and it nearly achieves the
+performance of the aforementioned MAP decision scheme.

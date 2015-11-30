@@ -1,0 +1,16 @@
+In this paper we propose and study a new complexity model for approximation
+algorithms. The main motivation are practical problems over large data sets
+that need to be solved many times for different scenarios, e.g., many multicast
+trees that need to be constructed for different groups of users. In our model
+we allow a preprocessing phase, when some information of the input graph
+$G=(V,E)$ is stored in a limited size data structure. Next, the data structure
+enables processing queries of the form ``solve problem A for an input
+$S\subseteq V$''. We consider problems like {\sc Steiner Forest}, {\sc Facility
+Location}, {\sc $k$-Median}, {\sc $k$-Center} and {\sc TSP} in the case when
+the graph induces a doubling metric. Our main results are data structures of
+near-linear size that are able to answer queries in time close to linear in
+$|S|$. This improves over typical worst case reuniting time of approximation
+algorithms in the classical setting which is $\Omega(|E|)$ independently of the
+query size. In most cases, our approximation guarantees are arbitrarily close
+to those in the classical setting. Additionally, we present the first fully
+dynamic algorithm for the Steiner tree problem.

@@ -1,0 +1,22 @@
+We introduce the polynomial coefficient matrix and identify maximum rank of
+this matrix under variable substitution as a complexity measure for
+multivariate polynomials. We use our techniques to prove super-polynomial lower
+bounds against several classes of non-multilinear arithmetic circuits. In
+particular, we obtain the following results :
+  As our main result, we prove that any homogeneous depth-3 circuit for
+computing the product of $d$ matrices of dimension $n \times n$ requires
+$\Omega(n^{d-1}/2^d)$ size. This improves the lower bounds by Nisan and
+Wigderson(1995) when $d=\omega(1)$.
+  There is an explicit polynomial on $n$ variables and degree at most
+$\frac{n}{2}$ for which any depth-3 circuit $C$ of product dimension at most
+$\frac{n}{10}$ (dimension of the space of affine forms feeding into each
+product gate) requires size $2^{\Omega(n)}$. This generalizes the lower bounds
+against diagonal circuits proved by Saxena(2007). Diagonal circuits are of
+product dimension 1.
+  We prove a $n^{\Omega(\log n)}$ lower bound on the size of product-sparse
+formulas. By definition, any multilinear formula is a product-sparse formula.
+Thus, our result extends the known super-polynomial lower bounds on the size of
+multilinear formulas by Raz(2006).
+  We prove a $2^{\Omega(n)}$ lower bound on the size of partitioned arithmetic
+branching programs. This result extends the known exponential lower bound on
+the size of ordered arithmetic branching programs given by Jansen(2008).

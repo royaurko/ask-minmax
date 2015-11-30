@@ -1,0 +1,13 @@
+Multipath routing is a trivial way to exploit the path diversity to leverage
+the network throughput. Technologies such as OSPF ECMP use all the available
+paths in the network to forward traffic, however, we argue that is not
+necessary to do so to load balance the network. In this paper, we consider
+multipath routing with only a limited number of end-to-end paths for each
+source and destination, and found that this can still load balance the traffic.
+We devised an algorithm to select a few paths for each source-destination pair
+so that when all traffic are forwarded over these paths, we can achieve a
+balanced load in the sense that the maximum link utilization is comparable to
+that of ECMP forwarding. When the constraint of only shortest paths (i.e. equal
+paths) are relaxed, we can even outperform ECMP in certain cases. As a result,
+we can use a few end-to-end tunnels between each source and destination nodes
+to achieve the load balancing of traffic.

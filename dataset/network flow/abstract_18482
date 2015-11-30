@@ -1,0 +1,11 @@
+Computing the exact likelihood of data in large Bayesian networks consisting
+of thousands of vertices is often a difficult task. When these models contain
+many deterministic conditional probability tables and when the observed values
+are extremely unlikely even alternative algorithms such as variational methods
+and stochastic sampling often perform poorly. We present a new importance
+sampling algorithm for Bayesian networks which is based on variational
+techniques. We use the updates of the importance function to predict whether
+the stochastic sampling converged above or below the true likelihood, and
+change the proposal distribution accordingly. The validity of the method and
+its contribution to convergence is demonstrated on hard networks of large
+genetic linkage analysis tasks.

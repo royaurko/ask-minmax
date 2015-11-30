@@ -1,0 +1,13 @@
+We consider an online network routing problem in continuous time, where calls
+have Poisson arrivals and exponential durations. The first-fit dynamic
+alternative routing algorithm sequentially selects up to $d$ random two-link
+routes between the two endpoints of a call, via an intermediate node, and
+assigns the call to the first route with spare capacity on each link, if there
+is such a route. The balanced dynamic alternative routing algorithm
+simultaneously selects $d$ random two-link routes, and the call is accepted on
+a route minimising the maximum of the loads on its two links, provided neither
+of these two links is saturated. We determine the capacities needed for these
+algorithms to route calls successfully and find that the balanced algorithm
+requires a much smaller capacity. In order to handle such interacting random
+processes on networks, we develop appropriate tools such as lemmas on biased
+random walks.

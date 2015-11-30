@@ -1,0 +1,14 @@
+Several biological problems require the identification of regions in a
+sequence where some feature occurs within a target density range: examples
+including the location of GC-rich regions, identification of CpG islands, and
+sequence matching. Mathematically, this corresponds to searching a string of 0s
+and 1s for a substring whose relative proportion of 1s lies between given lower
+and upper bounds. We consider the algorithmic problem of locating the longest
+such substring, as well as other related problems (such as finding the shortest
+substring or a maximal set of disjoint substrings). For locating the longest
+such substring, we develop an algorithm that runs in O(n) time, improving upon
+the previous best-known O(n log n) result. For the related problems we develop
+O(n log log n) algorithms, again improving upon the best-known O(n log n)
+results. Practical testing verifies that our new algorithms enjoy significantly
+smaller time and memory footprints, and can process sequences that are orders
+of magnitude longer as a result.

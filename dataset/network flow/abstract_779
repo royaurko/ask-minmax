@@ -1,0 +1,16 @@
+Dual descent methods are commonly used to solve network flow optimization
+problems, since their implementation can be distributed over the network. These
+algorithms, however, often exhibit slow convergence rates. Approximate Newton
+methods which compute descent directions locally have been proposed as
+alternatives to accelerate the convergence rates of conventional dual descent.
+The effectiveness of these methods, is limited by the accuracy of such
+approximations. In this paper, we propose an efficient and accurate distributed
+second order method for network flow problems. The proposed approach utilizes
+the sparsity pattern of the dual Hessian to approximate the the Newton
+direction using a novel distributed solver for symmetric diagonally dominant
+linear equations. Our solver is based on a distributed implementation of a
+recent parallel solver of Spielman and Peng (2014). We analyze the properties
+of the proposed algorithm and show that, similar to conventional Newton
+methods, superlinear convergence within a neighbor- hood of the optimal value
+is attained. We finally demonstrate the effectiveness of the approach in a set
+of experiments on randomly generated networks.

@@ -1,0 +1,14 @@
+A hybrid Monte Carlo (HMC) approach is employed to quantify the influence of
+inelastic deformation on the microstructural evolution of polycrystalline
+materials. This approach couples a time explicit material point method (MPM)
+for deformation with a calibrated Monte Carlo model for grain boundary motion.
+A rate-independent crystal plasticity model is implemented to account for
+localized plastic deformations in polycrystals. The dislocation energy
+difference between grains provides an additional driving force for texture
+evolution. This plastic driving force is then brought into a MC paradigm via
+parametric links between MC and sharp-interface (SI) kinetic models. The MC
+algorithm is implemented in a parallelized setting using a checkerboard
+updating scheme. As expected, plastic loading favors texture evolution for
+grains which have a bigger Schmid factor with respect to the loading direction,
+and these are the grains most easily removed by grain boundary motion. A
+macroscopic equation is developed to predict such texture evolution.

@@ -1,0 +1,14 @@
+We investigate ways in which an algorithm can improve its expected
+performance by fine-tuning itself automatically with respect to an unknown
+input distribution D. We assume here that D is of product type. More precisely,
+suppose that we need to process a sequence I_1, I_2, ... of inputs I = (x_1,
+x_2, ..., x_n) of some fixed length n, where each x_i is drawn independently
+from some arbitrary, unknown distribution D_i. The goal is to design an
+algorithm for these inputs so that eventually the expected running time will be
+optimal for the input distribution D = D_1 * D_2 * ... * D_n.
+  We give such self-improving algorithms for two problems: (i) sorting a
+sequence of numbers and (ii) computing the Delaunay triangulation of a planar
+point set. Both algorithms achieve optimal expected limiting complexity. The
+algorithms begin with a training phase during which they collect information
+about the input distribution, followed by a stationary regime in which the
+algorithms settle to their optimized incarnations.

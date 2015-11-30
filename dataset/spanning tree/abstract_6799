@@ -1,0 +1,13 @@
+The interval graph for a set of intervals on a line consists of one vertex
+for each interval, and an edge for each intersecting pair of intervals. A probe
+interval graph is a variant that is motivated by an application to genomics,
+where the intervals are partitioned into two sets: probes and non-probes. The
+graph has an edge between two vertices if they intersect and at least one of
+them is a probe. We give a linear-time algorithm for determining whether a
+given graph and partition of vertices into probes and non-probes is a probe
+interval graph. If it is, we give a layout of intervals that proves this. We
+can also determine whether the layout of the intervals is uniquely constrained
+within the same time bound. As part of the algorithm, we solve the
+consecutive-ones probe matrix problem in linear time, develop algorithms for
+operating on PQ trees, and give results that relate PQ trees for different
+submatrices of a consecutive-ones matrix.

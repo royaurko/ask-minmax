@@ -1,0 +1,15 @@
+Receive side scaling (RSS) is a network interface card (NIC) technology. It
+provides the benefits of parallel receive processing in multiprocessing
+environments. However, existing RSS-enabled NICs lack a critical data steering
+mechanism that would automatically steer incoming network data to the same core
+on which its application process resides. This absence causes inefficient cache
+usage if an application is not running on the core on which RSS has scheduled
+the received traffic to be processed. In Linux systems, it cannot even ensure
+that packets in a TCP flow are processed by a single core, even if the
+interrupts for the flow are pinned to a specific core. This results in degraded
+performance. In this paper, we develop such a data steering mechanism in the
+NIC for multicore or multiprocessor systems. This data steering mechanism is
+mainly targeted at TCP, but it can be extended to other transport layer
+protocols. We term a NIC with such a data steering mechanism "A Transport
+Friendly NIC" (A-TFN). Experimental results have proven the effectiveness of
+A-TFN in accelerating TCP/IP performance.

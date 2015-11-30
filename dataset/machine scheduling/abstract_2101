@@ -1,0 +1,17 @@
+Multicore parallel programming has some very difficult problems such as
+deadlocks during synchronizations and race conditions brought by concurrency.
+Added to the difficulty is the lack of a simple, well-accepted computing model
+for multicore architectures--because of that it is hard to develop powerful
+programming environments and debugging tools. To tackle the challenges, we
+promote a generalized stream computing model, inspired by previous researches
+on stream computing, that unifies parallelization strategies for programming
+language design, compiler design and operating system design. Our model
+provides a high-level abstraction in designing language constructs to convey
+concepts of concurrent operations, in organizing a program's runtime layout for
+parallel execution, and in scheduling concurrent instruction blocks through
+runtime and/or operating systems. In this paper, we give a high-level
+description of the proposed model: we define the foundation of the model, show
+its simplicity through algebraic/computational operation analysis, illustrate a
+programming framework enabled by the model, and demonstrate its potential
+through powerful design options for programming languages, compilers and
+operating systems.

@@ -1,0 +1,26 @@
+We consider a set of agents who are attempting to iteratively learn the
+'state of the world' from their neighbors in a social network. Each agent
+initially receives a noisy observation of the true state of the world. The
+agents then repeatedly 'vote' and observe the votes of some of their peers,
+from which they gain more information. The agents' calculations are Bayesian
+and aim to myopically maximize the expected utility at each iteration.
+  This model, introduced by Gale and Kariv (2003), is a natural approach to
+learning on networks. However, it has been criticized, chiefly because the
+agents' decision rule appears to become computationally intractable as the
+number of iterations advances. For instance, a dynamic programming approach
+(part of this work) has running time that is exponentially large in \min(n,
+(d-1)^t), where n is the number of agents.
+  We provide a new algorithm to perform the agents' computations on locally
+tree-like graphs. Our algorithm uses the dynamic cavity method to drastically
+reduce computational effort. Let d be the maximum degree and t be the iteration
+number. The computational effort needed per agent is exponential only in O(td)
+(note that the number of possible information sets of a neighbor at time t is
+itself exponential in td).
+  Under appropriate assumptions on the rate of convergence, we deduce that each
+agent is only required to spend polylogarithmic (in 1/\eps) computational
+effort to approximately learn the true state of the world with error
+probability \eps, on regular trees of degree at least five. We provide
+numerical and other evidence to justify our assumption on convergence rate.
+  We extend our results in various directions, including loopy graphs. Our
+results indicate efficiency of iterative Bayesian social learning in a wide
+range of situations, contrary to widely held beliefs.

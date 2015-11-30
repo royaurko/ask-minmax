@@ -1,0 +1,14 @@
+We consider a variant of bin packing called multiple-choice vector bin
+packing. In this problem we are given a set of items, where each item can be
+selected in one of several $D$-dimensional incarnations. We are also given $T$
+bin types, each with its own cost and $D$-dimensional size. Our goal is to pack
+the items in a set of bins of minimum overall cost. The problem is motivated by
+scheduling in networks with guaranteed quality of service (QoS), but due to its
+general formulation it has many other applications as well. We present an
+approximation algorithm that is guaranteed to produce a solution whose cost is
+about $\ln D$ times the optimum. For the running time to be polynomial we
+require $D=O(1)$ and $T=O(\log n)$. This extends previous results for vector
+bin packing, in which each item has a single incarnation and there is only one
+bin type. To obtain our result we also present a PTAS for the multiple-choice
+version of multidimensional knapsack, where we are given only one bin and the
+goal is to pack a maximum weight set of (incarnations of) items in that bin.

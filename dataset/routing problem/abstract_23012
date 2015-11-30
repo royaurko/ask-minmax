@@ -1,0 +1,18 @@
+Congestion on the Internet is an old problem but still a subject of intensive
+research. The TCP protocol with its AIMD (Additive Increase and Multiplicative
+Decrease) behavior hides very challenging problems; one of them is to
+understand the interaction between a large number of users with delayed
+feedback. This article will focus on two modeling issues of TCP which appeared
+to be important to tackle concrete scenarios when implementing the model
+proposed in [Baccelli McDonald Reynier 02] firstly the modeling of the maximum
+TCP window size: this maximum can be reached quickly in many practical cases;
+secondly the delay structure: the usual Little-like formula behaves really
+poorly when queuing delays are variable, and may change dramatically the
+evolution of the predicted queue size, which makes it useless to study
+drop-tail or RED (Random Early Detection) mechanisms. Within proposed TCP
+modeling improvements, we are enabled to look at a concrete example where RED
+should be used in FIFO routers instead of letting the default drop-tail happen.
+We study mathematically fixed points of the window size distribution and local
+stability of RED. An interesting case is when RED operates at the limit when
+the congestion starts, it avoids unwanted loss of bandwidth and delay
+variations.

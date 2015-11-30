@@ -1,0 +1,23 @@
+We consider n agents located on the vertices of a connected graph. Each agent
+v receives a signal X_v(0)~N(s, 1) where s is an unknown quantity. A natural
+iterative way of estimating s is to perform the following procedure. At
+iteration t + 1 let X_v(t + 1) be the average of X_v(t) and of X_w(t) among all
+the neighbors w of v.
+  In this paper we consider a variant of simple iterative averaging, which
+models "greedy" behavior of the agents. At iteration t, each agent v declares
+the value of its estimator X_v(t) to all of its neighbors. Then, it updates
+X_v(t + 1) by taking the maximum likelihood (or minimum variance) estimator of
+s, given X_v(t) and X_w(t) for all neighbors w of v, and the structure of the
+graph.
+  We give an explicit efficient procedure for calculating X_v(t), study the
+convergence of the process as t goes to infinity and show that if the limit
+exists then it is the same for all v and w. For graphs that are symmetric under
+actions of transitive groups, we show that the process is efficient. Finally,
+we show that the greedy process is in some cases more efficient than simple
+averaging, while in other cases the converse is true, so that, in this model,
+"greed" of the individual agents may or may not have an adverse affect on the
+outcome.
+  The model discussed here may be viewed as the Maximum-Likelihood version of
+models studied in Bayesian Economics. The ML variant is more accessible and
+allows in particular to show the significance of symmetry in the efficiency of
+estimators using networks of agents.

@@ -1,0 +1,19 @@
+Routing policies used in the Internet can be restrictive, limiting
+communication between source-destination pairs to one path, when often better
+alternatives exist. To avoid route flapping, recovery mechanisms may be
+dampened, making adaptation slow. Unstructured overlays have been proposed to
+mitigate the issues of path and performance failures in the Internet by routing
+through an indirect-path via overlay peer(s). Choosing alternate-paths in
+overlay networks is a challenging issue. Ensuring both availability and
+performance guarantees on alternate paths requires aggressive monitoring of all
+overlay paths using active probing; this limits scalability. An alternate
+technique to select an overlay-path is to bias its selection based on physical
+disjointness criteria to bypass the failure on the primary-path. Recently,
+several techniques have emerged which can optimize the selection of a
+disjoint-path without incurring the high costs associated with probing paths.
+In this paper, we show that using only commodity approaches, i.e. running
+infrequent traceroutes between overlay hosts, a lot of information can be
+revealed about the underlying physical path diversity in the overlay network
+which can be used to make informed-guesses for alternate-path selection. We
+test our approach using datasets between real-world hosts in AMP and RIPE
+networks.

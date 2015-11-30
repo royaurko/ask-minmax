@@ -1,0 +1,22 @@
+We address the problem of building and maintaining distributed spanning trees
+in highly dynamic networks, in which topological events can occur at any time
+and any rate, and no stable periods can be assumed. In these harsh
+environments, we strive to preserve some properties such as cycle-freeness or
+the existence of a root in each tree, in order to make it possible to keep
+using the trees uninterruptedly (to a possible extent). Our algorithm operates
+at a coarse-grain level, using atomic pairwise interactions in a way akin to
+recent population protocol models. The algorithm relies on a perpetual
+alternation of \emph{topology-induced splittings} and \emph{computation-induced
+mergings} of a forest of spanning trees. Each tree in the forest hosts exactly
+one token (also called root) that performs a random walk {\em inside} the tree,
+switching parent-child relationships as it crosses edges. When two tokens are
+located on both sides of a same edge, their trees are merged upon this edge and
+one token disappears. Whenever an edge that belongs to a tree disappears, its
+child endpoint regenerates a new token instantly. The main features of this
+approach is that both \emph{merging} and \emph{splitting} are purely localized
+phenomenons. In this paper, we present and motivate the algorithm, and we prove
+its correctness in arbitrary dynamic networks. Then we discuss several
+implementation choices around this general principle. Preliminary results
+regarding its analysis are also discussed, in particular an analytical
+expression of the expected merging time for two given trees in a static
+context.

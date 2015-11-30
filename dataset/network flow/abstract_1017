@@ -1,0 +1,22 @@
+We propose an optimization approach to design cost-effective electrical power
+transmission networks. That is, we aim to select both the network structure and
+the line conductances (line sizes) so as to optimize the trade-off between
+network efficiency (low power dissipation within the transmission network) and
+the cost to build the network. We begin with a convex optimization method based
+on the paper ``Minimizing Effective Resistance of a Graph'' [Ghosh, Boyd \&
+Saberi]. We show that this (DC) resistive network method can be adapted to the
+context of AC power flow. However, that does not address the combinatorial
+aspect of selecting network structure. We approach this problem as selecting a
+subgraph within an over-complete network, posed as minimizing the (convex)
+network power dissipation plus a non-convex cost on line conductances that
+encourages sparse networks where many line conductances are set to zero. We
+develop a heuristic approach to solve this non-convex optimization problem
+using: (1) a continuation method to interpolate from the smooth, convex problem
+to the (non-smooth, non-convex) combinatorial problem, (2) the
+majorization-minimization algorithm to perform the necessary intermediate
+smooth but non-convex optimization steps. Ultimately, this involves solving a
+sequence of convex optimization problems in which we iteratively reweight a
+linear cost on line conductances to fit the actual non-convex cost. Several
+examples are presented which suggest that the overall method is a good
+heuristic for network design. We also consider how to obtain sparse networks
+that are still robust against failures of lines and/or generators.

@@ -1,0 +1,13 @@
+Distributed fault-tolerance can mask the effect of a limited number of
+permanent faults, while self-stabilization provides forward recovery after an
+arbitrary number of transient fault hit the system. FTSS protocols combine the
+best of both worlds since they are simultaneously fault-tolerant and
+self-stabilizing. To date, FTSS solutions either consider static (i.e. fixed
+point) tasks, or assume synchronous scheduling of the system components. In
+this paper, we present the first study of dynamic tasks in asynchronous
+systems, considering the unison problem as a benchmark. Unison can be seen as a
+local clock synchronization problem as neighbors must maintain digital clocks
+at most one time unit away from each other, and increment their own clock value
+infinitely often. We present many impossibility results for this difficult
+problem and propose a FTSS solution when the problem is solvable that exhibits
+optimal fault containment.

@@ -1,0 +1,20 @@
+We present a numerical method to solve the optimal transport problem with a
+quadratic cost when the source and target measures are periodic probability
+densities. This method is based on a numerical resolution of the corresponding
+Monge-Amp\`ere equation. We extend the damped Newton algorithm of Loeper and
+Rapetti \cite{LR} to the more general case of a non uniform density which is
+relevant to the optimal transport problem, and we show that our algorithm
+converges for sufficiently large damping coefficients. The main idea consists
+of designing an iterative scheme where the fully nonlinear equation is
+approximated by a non-constant coefficient linear elliptic PDE that we solve
+numerically. We introduce several improvements and some new techniques for the
+numerical resolution of the corresponding linear system. Namely, we use a Fast
+Fourier Transform (FFT) method by Strain \cite{St}, which allows to increase
+the efficiency of our algorithm against the standard finite difference method.
+Moreover, we use a fourth order finite difference scheme to approximate the
+partial derivatives involved in the nonlinear terms of the Newton algorithm,
+which are evaluated once at each iteration; this leads to a significant
+improvement of the accuracy of the method, but does not sacrifice its
+efficiency. Finally, we present some numerical experiments which demonstrate
+the robustness and efficiency of our method on several examples of image
+processing, including an application to multiple sclerosis disease detection.

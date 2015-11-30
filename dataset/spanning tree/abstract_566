@@ -1,0 +1,24 @@
+A natural way to deal with multiple, partially conflicting objectives is
+turning all the objectives but one into budget constraints. Some classical
+polynomial-time optimization problems, such as spanning tree and forest,
+shortest path, (perfect) matching, independent set (basis) in a matroid or in
+the intersection of two matroids, become NP-hard even with one budget
+constraint. Still, for most of these problems deterministic and randomized
+polynomial-time approximation schemes are known. In the case of two or more
+budgets, typically only multi-criteria approximation schemes are available,
+which return slightly infeasible solutions. Not much is known however for the
+case of strict budget constraints: filling this gap is the main goal of this
+paper.
+  We show that shortest path, perfect matching, and spanning tree (and hence
+matroid basis and matroid intersection basis) are inapproximable already with
+two budget constraints. For the remaining problems, whose set of solutions
+forms an independence system, we present deterministic and randomized
+polynomial-time approximation schemes for a constant number k of budget
+constraints. Our results are based on a variety of techniques:
+  1. We present a simple and powerful mechanism to transform multi-criteria
+approximation schemes into pure approximation schemes.
+  2. We show that points in low dimensional faces of any matroid polytope are
+almost integral, an interesting result on its own. This gives a deterministic
+approximation scheme for k-budgeted matroid independent set.
+  3. We present a deterministic approximation scheme for 2-budgeted matching.
+The backbone of this result is a purely topological property of curves in R^2.

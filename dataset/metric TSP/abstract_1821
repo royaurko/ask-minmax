@@ -1,0 +1,15 @@
+For large software systems, refactoring activities can be a challenging task,
+since for keeping component complexity under control the overall architecture
+as well as many details of each component have to be considered. Product
+metrics are therefore often used to quantify several parameters related to the
+modularity of a software system. This paper devises an approach for
+automatically suggesting refactoring opportunities on large software systems.
+We show that by assessing metrics for all components, move methods refactoring
+an be suggested in such a way to improve modularity of several components at
+once, without hindering any other. However, computing metrics for large
+software systems, comprising thousands of classes or more, can be a time
+consuming task when performed on a single CPU. For this, we propose a solution
+that computes metrics by resorting to GPU, hence greatly shortening computation
+time. Thanks to our approach precise knowledge on several properties of the
+system can be continuously gathered while the system evolves, hence assisting
+developers to quickly assess several solutions for reducing modularity issues.

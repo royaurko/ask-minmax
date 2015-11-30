@@ -1,0 +1,15 @@
+Localization based on received signal strength indication (RSSI) is a low
+cost and low complexity technology, and it is widely applied in distance-based
+localization of wireless sensor networks (WSNs). Error of existed localization
+technologies is significant. This paper presents the N-times trilateral
+centroid weighted localization algorithm (NTCWLA), which can reduce the error
+considerably. Considering the instability of RSSI, we use the weighted average
+of many RSSIs as current RSSI. To improve the accuracy we select a number of
+(no less than three) reliable beacon nodes to increase the localization times.
+Then we calculate the distances between reliable beacon nodes and the mobile
+node using an empirical formula. The mobile node is located N times using the
+trilateral centroid algorithm. Finally, we take the weighted average of the
+filtered reference coordinates as the mobile node's coordinates. We conduct
+experiments with the STM32W108 chip which supports IEEE 802.15.4. The results
+show that the proposed algorithm performs better than the trilateral centroid
+algorithm.

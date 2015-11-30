@@ -1,0 +1,15 @@
+SBV is a deep inference system that extends the set of logical operators of
+multiplicative linear logic with the non commutative operator Seq. We introduce
+the logical system SBVr which extends SBV by adding a self-dual atom-renaming
+operator to it. We prove that the cut elimination holds on SBVr. SBVr and its
+cut free subsystem BVr are complete and sound with respect to linear lambda
+calculus with explicit substitutions. Under any strategy, a sequence of
+evaluation steps of any linear lambda-term M becomes a process of proof-search
+in SBVr (BVr) once M is mapped into a formula of SBVr. Completeness and
+soundness follow from simulating linear beta-reduction with explicit
+substitutions as processes. The role of the new renaming operator of SBVr is to
+rename channel-names on-demand. This simulates the substitution that occurs in
+a beta-reduction. Despite SBVr is a minimal extension of SBV its proof-search
+can compute all boolean functions, as linear lambda-calculus with explicit
+substitutions can compute all boolean functions as well. So, proof search of
+SBVr and BVr is at least ptime-complete.

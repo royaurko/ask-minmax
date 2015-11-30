@@ -1,0 +1,13 @@
+Many problems in computational science and engineering involve partial
+differential equations and thus require the numerical solution of large, sparse
+(non)linear systems of equations. Multigrid is known to be one of the most
+efficient methods for this purpose. However, the concrete multigrid algorithm
+and its implementation highly depend on the underlying problem and hardware.
+Therefore, changes in the code or many different variants are necessary to
+cover all relevant cases. In this article we provide a prototype implementation
+in Scala for a framework that allows abstract descriptions of PDEs, their
+discretization, and their numerical solution via multigrid algorithms. From
+these, one is able to generate data structures and implementations of multigrid
+components required to solve elliptic PDEs on structured grids. Two different
+test problems showcase our proposed automatic generation of multigrid solvers
+for both CPU and GPU target platforms.

@@ -1,0 +1,15 @@
+To save cost, recently more and more users choose to provision virtual
+machine resources in cluster systems, especially in data centres. Maintaining a
+consistent member view is the foundation of reliable cluster managements, and
+it also raises several challenge issues for large scale cluster systems
+deployed with virtual machines (which we call virtualized clusters). In this
+paper, we introduce our experiences in design and implementation of scalable
+member view management on large-scale virtual clusters. Our research
+contributions are three-fold: 1) we propose a scalable and reliable management
+infrastructure that combines a peer-to-peer structure and a hierarchy structure
+to maintain a consistent member view in virtual clusters; 2) we present a
+light-weighted group membership algorithm that can reach the consistent member
+view within a single round of message exchange; and 3) we design and implement
+a scalable membership service that can provision virtual machines and maintain
+a consistent member view in virtual clusters. Our work is verified on Dawning
+5000A, which ranked No.10 of Top 500 super computers in November, 2008.

@@ -1,0 +1,15 @@
+Practical applications of thermoacoustic tomography require numerical
+inversion of the spherical mean Radon transform with the centers of integration
+spheres occupying an open surface. Solution of this problem is needed (both in
+2-D and 3-D) because frequently the region of interest cannot be completely
+surrounded by the detectors, as it happens, for example, in breast imaging. We
+present an efficient numerical algorithm for solving this problem in 2-D
+(similar methods are applicable in the 3-D case). Our method is based on the
+numerical approximation of plane waves by certain single layer potentials
+related to the acquisition geometry. After the densities of these potentials
+have been precomputed, each subsequent image reconstruction has the complexity
+of the regular filtration backprojection algorithm for the classical Radon
+transform. The peformance of the method is demonstrated in several numerical
+examples: one can see that the algorithm produces very accurate reconstructions
+if the data are accurate and sufficiently well sampled, on the other hand, it
+is sufficiently stable with respect to noise in the data.

@@ -1,0 +1,23 @@
+This work introduces a generic framework, called the bag-of-paths (BoP), that
+can be used for link and network data analysis. The primary application of this
+framework, investigated in this paper, is the definition of distance measures
+between nodes enjoying some nice properties. More precisely, let us assume a
+weighted directed graph G where a cost is associated to each arc. Within this
+context, consider a bag containing all the possible paths between pairs of
+nodes in G. Then, following, a probability distribution on this countable set
+of paths through the graph is defined by minimizing the total expected cost
+between all pairs of nodes while fixing the total relative entropy spread in
+the graph. This results in a Boltzmann distribution on the set of paths such
+that long (high-cost) paths have a low probability of being sampled from the
+bag, while short (low-cost) paths have a high probability of being sampled.
+Within this probabilistic framework, the BoP probabilities, P(s=i,e=j), of
+drawing a path starting from node i (s=i) and ending in node j (e=j) can easily
+be computed in closed form by a simple matrix inversion. Various applications
+of this framework are currently investigated, e.g., the definition of distance
+measures between the nodes of G, betweenness indexes, network criticality
+measures, edit distances, etc. As a first step, this paper describes the
+general BoP framework and introduces two families of distance measures between
+nodes. In addition to being a distance measure, one of these two quantities has
+the interesting property of interpolating between the shortest path and the
+commute cost distances. Experimental results on semi-supervised tasks show that
+these distance families are competitive with other state-of-the-art approaches.

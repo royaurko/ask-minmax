@@ -1,0 +1,20 @@
+Heap data is potentially unbounded and seemingly arbitrary. As a consequence,
+unlike stack and static memory, heap memory cannot be abstracted directly in
+terms of a fixed set of source variable names appearing in the program being
+analysed. This makes it an interesting topic of study and there is an abundance
+of literature employing heap abstractions. Although most studies have addressed
+similar concerns, their formulations and formalisms often seem dissimilar and
+some times even unrelated. Thus, the insights gained in one description of heap
+abstraction may not directly carry over to some other description. This survey
+is a result of our quest for a unifying theme in the existing descriptions of
+heap abstractions. In particular, our interest lies in the abstractions and not
+in the algorithms that construct them.
+  In our search of a unified theme, we view a heap abstraction as consisting of
+two features: a heap model to represent the heap memory and a summarization
+technique for bounding the heap representation. We classify the models as
+storeless, store based, and hybrid. We describe various summarization
+techniques based on k-limiting, allocation sites, patterns, variables, other
+generic instrumentation predicates, and higher-order logics. This approach
+allows us to compare the insights of a large number of seemingly dissimilar
+heap abstractions and also paves way for creating new abstractions by
+mix-and-match of models and summarization techniques.

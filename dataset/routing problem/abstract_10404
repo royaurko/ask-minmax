@@ -1,0 +1,22 @@
+Coalition formation is a key topic in multi-agent systems. Coalitions enable
+agents to achieve goals that they may not have been able to achieve on their
+own. Previous work has shown problems in coalitional games to be
+computationally hard. Wooldridge and Dunne (Artificial Intelligence 2006)
+studied the classical computational complexity of several natural decision
+problems in Coalitional Resource Games (CRG) - games in which each agent is
+endowed with a set of resources and coalitions can bring about a set of goals
+if they are collectively endowed with the necessary amount of resources. The
+input of coalitional resource games bundles together several elements, e.g.,
+the agent set Ag, the goal set G, the resource set R, etc. Shrot, Aumann and
+Kraus (AAMAS 2009) examine coalition formation problems in the CRG model using
+the theory of Parameterized Complexity. Their refined analysis shows that not
+all parts of input act equal - some instances of the problem are indeed
+tractable while others still remain intractable.
+  We answer an important question left open by Shrot, Aumann and Kraus by
+showing that the SC Problem (checking whether a Coalition is Successful) is
+W[1]-hard when parameterized by the size of the coalition. Then via a single
+theme of reduction from SC, we are able to show that various problems related
+to resources, resource bounds and resource conflicts introduced by Wooldridge
+et al are 1. W[1]-hard or co-W[1]-hard when parameterized by the size of the
+coalition. 2. para-NP-hard or co-para-NP-hard when parameterized by |R|. 3. FPT
+when parameterized by either |G| or |Ag|+|R|.

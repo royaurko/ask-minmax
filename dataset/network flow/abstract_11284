@@ -1,0 +1,15 @@
+The Border Gateway Protocol (BGP) sets up routes between the smaller networks
+that make up the Internet. Despite its crucial role, BGP is notoriously
+vulnerable to serious problems, including (1) propagation of bogus routing
+information due to attacks or misconfigurations, and (2) network instabilities
+in the form of persistent routing oscillations. The conditions required to
+avoid BGP instabilities are quite delicate. How, then, can we explain the
+observed stability of today's Internet in the face of common configuration
+errors and attacks? This work explains this phenomenon by first noticing that
+almost every observed attack and misconfiguration to date shares a common
+characteristic: even when a router announces egregiously bogus information, it
+will continue to announce the same bogus information for the duration of its
+attack/misconfiguration. We call these the "fixed-route attacks", and show
+that, while even simple fixed-route attacks can destabilize a network, the
+commercial routing policies used in today's Internet prevent such attacks from
+creating instabilities.

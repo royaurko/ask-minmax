@@ -1,0 +1,26 @@
+Whenever observations are compared to theories, an estimate of the
+uncertainties associated with the observations is vital if the comparison is to
+be meaningful. However, many determinations of temperatures, densities and
+abundances in photoionized nebulae do not quote the associated uncertainty.
+Those that do typically propagate the uncertainties using analytical techniques
+which rely on assumptions that generally do not hold.
+  Motivated by this issue, we have developed NEAT (Nebular Empirical Analysis
+Tool), a new code for calculating chemical abundances in photoionized nebulae.
+The code carries out an analysis of lists of emission lines using
+long-established techniques to estimate the amount of interstellar extinction,
+calculate representative temperatures and densities, compute ionic abundances
+from both collisionally excited lines and recombination lines, and finally to
+estimate total elemental abundances using an ionization correction scheme. NEAT
+uses a Monte Carlo technique to robustly propagate uncertainties from line flux
+measurements through to the derived abundances.
+  We show that for typical observational data, this approach is superior to
+analytic estimates of uncertainties. NEAT also accounts for the effect of
+upward biasing on measurements of lines with low signal to noise, allowing us
+to accurately quantify the effect of this bias on abundance determinations. We
+find not only that the effect can result in significant over-estimates of heavy
+element abundances derived from weak lines, but that taking it into account
+reduces the uncertainty of these abundance determinations. Finally, we
+investigate the effect of possible uncertainties in R, the ratio of selective
+to total extinction, on abundance determinations. We find that the uncertainty
+due to this parameter is negligible compared to the statistical uncertainties
+due to typical line flux measurement uncertainties.

@@ -1,0 +1,21 @@
+We address the cold start problem in recommendation systems assuming no
+contextual information is available neither about users, nor items. We consider
+the case in which we only have access to a set of ratings of items by users.
+Most of the existing works consider a batch setting, and use cross-validation
+to tune parameters. The classical method consists in minimizing the root mean
+square error over a training subset of the ratings which provides a
+factorization of the matrix of ratings, interpreted as a latent representation
+of items and users. Our contribution in this paper is 5-fold. First, we
+explicit the issues raised by this kind of batch setting for users or items
+with very few ratings. Then, we propose an online setting closer to the actual
+use of recommender systems; this setting is inspired by the bandit framework.
+The proposed methodology can be used to turn any recommender system dataset
+(such as Netflix, MovieLens,...) into a sequential dataset. Then, we explicit a
+strong and insightful link between contextual bandit algorithms and matrix
+factorization; this leads us to a new algorithm that tackles the
+exploration/exploitation dilemma associated to the cold start problem in a
+strikingly new perspective. Finally, experimental evidence confirm that our
+algorithm is effective in dealing with the cold start problem on publicly
+available datasets. Overall, the goal of this paper is to bridge the gap
+between recommender systems based on matrix factorizations and those based on
+contextual bandits.

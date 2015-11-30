@@ -1,0 +1,14 @@
+In the online packet buffering problem (also known as the unweighted FIFO
+variant of buffer management), we focus on a single network packet switching
+device with several input ports and one output port. This device forwards
+unit-size, unit-value packets from input ports to the output port. Buffers
+attached to input ports may accumulate incoming packets for later transmission;
+if they cannot accommodate all incoming packets, their excess is lost. A packet
+buffering algorithm has to choose from which buffers to transmit packets in
+order to minimize the number of lost packets and thus maximize the throughput.
+  We present a tight lower bound of e/(e-1) ~ 1.582 on the competitive ratio of
+the throughput maximization, which holds even for fractional or randomized
+algorithms. This improves the previously best known lower bound of 1.4659 and
+matches the performance of the algorithm Random Schedule. Our result
+contradicts the claimed performance of the algorithm Random Permutation; we
+point out a flaw in its original analysis.

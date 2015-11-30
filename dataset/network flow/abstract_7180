@@ -1,0 +1,20 @@
+We explore the application of graph coloring to biological networks,
+specifically protein-protein interaction (PPI) networks. First, we find that
+given similar conditions (i.e. number of nodes, number of links, degree
+distribution and clustering), fewer colors are needed to color disassortative
+(high degree nodes tend to connect to low degree nodes and vice versa) than
+assortative networks. Fewer colors create fewer independent sets which in turn
+imply higher concurrency potential for a network. Since PPI networks tend to be
+disassortative, we suggest that in addition to functional specificity and
+stability proposed previously by Maslov and Sneppen (Science 296, 2002), the
+disassortative nature of PPI networks may promote the ability of cells to
+perform multiple, crucial and functionally diverse tasks concurrently. Second,
+since graph coloring is closely related to the presence of cliques in a graph,
+the significance of node coloring information to the problem of identifying
+protein complexes, i.e. dense subgraphs in a PPI network, is investigated. We
+find that for PPI networks where 1% to 11% of nodes participate in at least one
+identified protein complex, such as H. sapien (DIP20070219, DIP20081014 and
+HPRD070609), DSATUR (a well-known complete graph coloring algorithm) node
+coloring information can improve the quality (homogeneity and separation) of
+initial candidate complexes. This finding may help to improve existing protein
+complex detection methods, and/or suggest new methods.

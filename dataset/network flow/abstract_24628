@@ -1,0 +1,14 @@
+Recent work on modeling influence propagation focus on progressive models,
+i.e., once a node is influenced (active) the node stays in that state and
+cannot become inactive. However, this assumption is unrealistic in many
+settings where nodes can transition between active and inactive states. For
+instance, a user of a social network may stop using an app and become inactive,
+but again activate when instigated by a friend, or when the app adds a new
+feature or releases a new version. In this work, we study such non-progressive
+phenomena and propose an efficient model of influence propagation.
+Specifically, we model in influence propagation as a continuous-time Markov
+process with 2 states: active and inactive. Such a model is both highly
+scalable (we evaluated on graphs with over 2 million nodes), 17-20 times
+faster, and more accurate for estimating the spread of influence, as compared
+with state-of-the-art progressive models for several applications where nodes
+may switch states.

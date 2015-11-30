@@ -1,0 +1,20 @@
+We examine several online matching problems, with applications to Internet
+advertising reservation systems. Consider an edge-weighted bipartite graph G,
+with partite sets L, R. We develop an 8-competitive algorithm for the following
+secretary problem: Initially given R, and the size of L, the algorithm receives
+the vertices of L sequentially, in a random order. When a vertex l \in L is
+seen, all edges incident to l are revealed, together with their weights. The
+algorithm must immediately either match l to an available vertex of R, or
+decide that l will remain unmatched.
+  Dimitrov and Plaxton show a 16-competitive algorithm for the transversal
+matroid secretary problem, which is the special case with weights on vertices,
+not edges. (Equivalently, one may assume that for each l \in L, the weights on
+all edges incident to l are identical.) We use a similar algorithm, but
+simplify and improve the analysis to obtain a better competitive ratio for the
+more general problem. Perhaps of more interest is the fact that our analysis is
+easily extended to obtain competitive algorithms for similar problems, such as
+to find disjoint sets of edges in hypergraphs where edges arrive online. We
+also introduce secretary problems with adversarially chosen groups. Finally, we
+give a 2e-competitive algorithm for the secretary problem on graphic matroids,
+where, with edges appearing online, the goal is to find a maximum-weight
+acyclic subgraph of a given graph.

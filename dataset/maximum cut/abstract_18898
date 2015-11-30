@@ -1,0 +1,22 @@
+Motivated by the unceasing interest in hidden Markov models (HMMs), this
+paper re-examines hidden path inference in these models, using primarily a
+risk-based framework. While the most common maximum a posteriori (MAP), or
+Viterbi, path estimator and the minimum error, or Posterior Decoder (PD), have
+long been around, other path estimators, or decoders, have been either only
+hinted at or applied more recently and in dedicated applications generally
+unfamiliar to the statistical learning community. Over a decade ago, however, a
+family of algorithmically defined decoders aiming to hybridize the two standard
+ones was proposed (Brushe et al., 1998). The present paper gives a careful
+analysis of this hybridization approach, identifies several problems and issues
+with it and other previously proposed approaches, and proposes practical
+resolutions of those. Furthermore, simple modifications of the classical
+criteria for hidden path recognition are shown to lead to a new class of
+decoders. Dynamic programming algorithms to compute these decoders in the usual
+forward-backward manner are presented. A particularly interesting subclass of
+such estimators can be also viewed as hybrids of the MAP and PD estimators.
+Similar to previously proposed MAP-PD hybrids, the new class is parameterized
+by a small number of tunable parameters. Unlike their algorithmic predecessors,
+the new risk-based decoders are more clearly interpretable, and, most
+importantly, work "out of the box" in practice, which is demonstrated on some
+real bioinformatics tasks and data. Some further generalizations and
+applications are discussed in conclusion.

@@ -1,0 +1,18 @@
+Too high sampling rate is the bottleneck to wideband spectrum sensing for
+cognitive radio (CR). As the survey shows that the sensed signal has a sparse
+representation in frequency domain in the mass, compressed sensing (CS) can be
+used to transfer the sampling burden to the digital signal processor. An analog
+to information converter (AIC) can randomly sample the received signal with
+sub-Nyquist rate to obtained the random measurements. Considering that the
+static frequency spectrum allocation of primary radios means the bounds between
+different primary radios is known in advance, here we incorporate information
+of the spectrum boundaries between different primary user as a priori
+information to obtain a mixed l2/l1 norm denoising operator (MNDO). In the
+MNDO, the estimated power spectrum density (PSD) vector is divided into block
+sections with bounds corresponding different allocated primary radios.
+Different from previous standard l1-norm constraint on the whole PSD vector, a
+sum of the l2 norm of each section of the PSD vector is minimized to encourage
+the local grouping distribution while the sparse distribution in mass, while a
+relaxed constraint is used to improve the denoising performance. Simulation
+demonstrates that the proposed method outperforms standard sparse spectrum
+estimation in accuracy, denoising ability, etc.

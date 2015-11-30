@@ -1,0 +1,11 @@
+Avoiding access conflicts is a major challenge in the design of
+multi-threaded programs. In the context of real-time systems, the absence of
+conflicts can be guaranteed by ensuring that no two potentially conflicting
+accesses are ever scheduled concurrently.In this paper, we analyze programs
+that carry time annotations specifying the time for executing each statement.
+We propose a technique for verifying that a multi-threaded program with time
+annotations is free of access conflicts. In particular, we generate constraints
+that reflect the possible schedules for executing the program and the required
+properties. We then invoke an SMT solver in order to verify that no execution
+gives rise to concurrent conflicting accesses. Otherwise, we obtain a trace
+that exhibits the access conflict.

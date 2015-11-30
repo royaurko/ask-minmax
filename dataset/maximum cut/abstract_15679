@@ -1,0 +1,17 @@
+We introduce redMaGiC, an automated algorithm for selecting Luminous Red
+Galaxies (LRGs). The algorithm was specifically developed to minimize
+photometric redshift uncertainties in photometric large-scale structure
+studies. redMaGiC achieves this by self-training the color-cuts necessary to
+produce a luminosity-thresholded LRG sample of constant comoving density. We
+demonstrate that redMaGiC photozs are very nearly as accurate as the best
+machine-learning based methods, yet they require minimal spectroscopic
+training, do not suffer from extrapolation biases, and are very nearly
+Gaussian. We apply our algorithm to Dark Energy Survey (DES) Science
+Verification (SV) data to produce a redMaGiC catalog sampling the redshift
+range $z\in[0.2,0.8]$. Our fiducial sample has a comoving space density of
+$10^{-3}\ (h^{-1} Mpc)^{-3}$, and a median photoz bias ($z_{spec}-z_{photo}$)
+and scatter $(\sigma_z/(1+z))$ of 0.005 and 0.017 respectively. The
+corresponding $5\sigma$ outlier fraction is 1.4%. We also test our algorithm
+with Sloan Digital Sky Survey (SDSS) Data Release 8 (DR8) and Stripe 82 data,
+and discuss how spectroscopic training can be used to control photoz biases at
+the 0.1% level.

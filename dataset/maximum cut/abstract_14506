@@ -1,0 +1,12 @@
+We present an efficient and accurate algorithm for principal component
+analysis (PCA) of a large set of two dimensional images, and, for each image,
+the set of its uniform rotations in the plane and its reflection. The algorithm
+starts by expanding each image, originally given on a Cartesian grid, in the
+Fourier-Bessel basis for the disk. Because the images are bandlimited in the
+Fourier domain, we use a sampling criterion to truncate the Fourier-Bessel
+expansion such that the maximum amount of information is preserved without the
+effect of aliasing. The constructed covariance matrix is invariant to rotation
+and reflection and has a special block diagonal structure. PCA is efficiently
+done for each block separately. This Fourier-Bessel based PCA detects more
+meaningful eigenimages and has improved denoising capability compared to
+traditional PCA for a finite number of noisy images.

@@ -1,0 +1,17 @@
+We discuss the use of the determinantal point process (DPP) as a prior for
+latent structure in biomedical applications, where inference often centers on
+the interpretation of latent features as biologically or clinically meaningful
+structure. Typical examples include mixture models, where the terms of the
+mixture are meant to represent clinically meaningful subpopulations (of
+patients, genes, etc.); as well as generalizations of latent partition schemes
+including feature allocation models. We discuss a class of repulsive priors on
+latent mixture components and propose the DPP as an attractive prior for
+feature-specific parameters, when the goal is again to interpret those as
+clinically relevant structure. We illustrate the advantages of DPP priors in
+three case studies, including inference in mixture models for magnetic
+resonance images (MRI) and for protein expression, and a feature allocation
+model for gene expression using data from The Cancer Genome Atlas. An important
+part of our argument is an efficient and straightforward posterior simulation
+method. We implement a variation of reversible jump Markov chain Monte Carlo
+simulation for inference under the DPP prior, using a density with respect to
+the unit rate Poisson process.

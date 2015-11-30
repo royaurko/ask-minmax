@@ -1,0 +1,18 @@
+We study approaches for the exact solution of the \NP--hard minimum spanning
+tree problem under conflict constraints. Given a graph $G(V,E)$ and a set $C
+\subset E \times E$ of conflicting edge pairs, the problem consists of finding
+a conflict-free minimum spanning tree, i.e. feasible solutions are allowed to
+include at most one of the edges from each pair in $C$. The problem was
+introduced recently in the literature, with several results on its complexity
+and approximability. Some formulations and both exact and heuristic algorithms
+were also discussed, but computational results indicate considerably large
+duality gaps and a lack of optimality certificates for benchmark instances. In
+this paper, we build on the representation of conflict constraints using an
+auxiliary conflict graph $\hat{G}(E,C)$, where stable sets correspond to
+conflict-free subsets of $E$. We introduce a general preprocessing method and a
+branch and cut algorithm using an IP formulation with exponentially sized
+classes of valid inequalities for both the spanning tree and the stable set
+polytopes. Encouraging computational results indicate that the dual bounds of
+our approach are significantly stronger than those previously available,
+already in the initial LP relaxation, and we are able to provide new
+feasibility and optimality certificates.

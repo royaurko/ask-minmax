@@ -1,0 +1,23 @@
+In the Tree Augmentation Problem (TAP) the goal is to augment a tree $T$ by a
+minimum size edge set $F$ from a given edge set $E$ such that $T \cup F$ is
+$2$-edge-connected. The best approximation ratio known for TAP is $1.5$. In the
+more general Weighted TAP problem, $F$ should be of minimum weight. Weighted
+TAP admits several $2$-approximation algorithms w.r.t. to the standard cut
+LP-relaxation, but for all of them the performance ratio of $2$ is tight even
+for TAP. The problem is equivalent to the problem of covering a laminar set
+family. Laminar set families play an important role in the design of
+approximation algorithms for connectivity network design problems. In fact,
+Weighted TAP is the simplest connectivity network design problem for which a
+ratio better than $2$ is not known. Improving this "natural" ratio is a major
+open problem, which may have implications on many other network design
+problems. It seems that achieving this goal requires finding an LP-relaxation
+with integrality gap better than $2$, which is a long time open problem even
+for TAP. In this paper we introduce such an LP-relaxation and give an algorithm
+that computes a feasible solution for TAP of size at most $1.75$ times the
+optimal LP value. This gives some hope to break the ratio $2$ for the weighted
+case. Our algorithm computes some initial edge set by solving a partial system
+of constraints that form the integral edge-cover polytope, and then applies
+local search on $3$-leaf subtrees to exchange some of the edges and to add
+additional edges. Thus we do not need to solve the LP, and the algorithm runs
+roughly in time required to find a minimum weight edge-cover in a general
+graph.

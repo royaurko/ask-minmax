@@ -1,0 +1,16 @@
+In programming languages with dynamic use of memory, such as Java, knowing
+that a reference variable x points to an acyclic data structure is valuable for
+the analysis of termination and resource usage (e.g., execution time or memory
+consumption). For instance, this information guarantees that the depth of the
+data structure to which x points is greater than the depth of the data
+structure pointed to by x.f for any field f of x. This, in turn, allows
+bounding the number of iterations of a loop which traverses the structure by
+its depth, which is essential in order to prove the termination or infer the
+resource usage of the loop. The present paper provides an
+Abstract-Interpretation-based formalization of a static analysis for inferring
+acyclicity, which works on the reduced product of two abstract domains:
+reachability, which models the property that the location pointed to by a
+variable w can be reached by dereferencing another variable v (in this case, v
+is said to reach w); and cyclicity, modeling the property that v can point to a
+cyclic data structure. The analysis is proven to be sound and optimal with
+respect to the chosen abstraction.

@@ -1,0 +1,20 @@
+CAT(0) metric spaces constitute a far-reaching common generalization of
+Euclidean and hyperbolic spaces and simple polygons: any two points x and y of
+a CAT(0) metric space are connected by a unique shortest path {\gamma}(x,y). In
+this paper, we present an efficient algorithm for answering two-point distance
+queries in CAT(0) rectangular complexes and two of theirs subclasses, ramified
+rectilinear polygons (CAT(0) rectangular complexes in which the links of all
+vertices are bipartite graphs) and squaregraphs (CAT(0) rectangular complexes
+arising from plane quadrangulations in which all inner vertices have degrees
+\geq4). Namely, we show that for a CAT(0) rectangular complex K with n
+vertices, one can construct a data structure D of size $O(n^2)$ so that, given
+any two points x,y in K, the shortest path {\gamma}(x,y) between x and y can be
+computed in O(d(p,q)) time, where p and q are vertices of two faces of K
+containing the points x and y, respectively, such that {\gamma}(x,y) is
+contained in K(I(p,q)) and d(p,q) is the distance between p and q in the
+underlying graph of K. If K is a ramified rectilinear polygon, then one can
+construct a data structure D of optimal size O(n) and answer two-point shortest
+path queries in O(d(p,q)log{\Delta}) time, where {\Delta} is the maximal degree
+of a vertex of G(K). Finally, if K is a squaregraph, then one can construct a
+data structure D of size O(nlogn) and answer two-point shortest path queries in
+O(d(p,q)) time.

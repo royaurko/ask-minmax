@@ -1,0 +1,10 @@
+The paper gives estimations for the sizes of the the following sets: (1) the
+set of strings that have a given dependency with a fixed string, (2) the set of
+strings that are pairwise \alpha independent, (3) the set of strings that are
+mutually \alpha independent. The relevant definitions are as follows: C(x) is
+the Kolmogorov complexity of the string x. A string y has \alpha -dependency
+with a string x if C(y) - C(y|x) \geq \alpha. A set of strings {x_1, \ldots,
+x_t} is pairwise \alpha-independent if for all i different from j, C(x_i) -
+C(x_i | x_j) \leq \alpha. A tuple of strings (x_1, \ldots, x_t) is mutually
+\alpha-independent if C(x_{\pi(1)} \ldots x_{\pi(t)}) \geq C(x_1) + \ldots +
+C(x_t) - \alpha, for every permutation \pi of [t].

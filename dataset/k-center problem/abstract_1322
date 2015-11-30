@@ -1,0 +1,19 @@
+In the past decades, exactly recovering the intrinsic data structure from
+corrupted observations, which is known as robust principal component analysis
+(RPCA), has attracted tremendous interests and found many applications in
+computer vision. Recently, this problem has been formulated as recovering a
+low-rank component and a sparse component from the observed data matrix. It is
+proved that under some suitable conditions, this problem can be exactly solved
+by principal component pursuit (PCP), i.e., minimizing a combination of nuclear
+norm and $l_1$ norm. Most of the existing methods for solving PCP require
+singular value decompositions (SVD) of the data matrix, resulting in a high
+computational complexity, hence preventing the applications of RPCA to very
+large scale computer vision problems. In this paper, we propose a novel
+algorithm, called $l_1$ filtering, for \emph{exactly} solving PCP with an
+$O(r^2(m+n))$ complexity, where $m\times n$ is the size of data matrix and $r$
+is the rank of the matrix to recover, which is supposed to be much smaller than
+$m$ and $n$. Moreover, $l_1$ filtering is \emph{highly parallelizable}. It is
+the first algorithm that can \emph{exactly} solve a nuclear norm minimization
+problem in \emph{linear time} (with respect to the data size). Experiments on
+both synthetic data and real applications testify to the great advantage of
+$l_1$ filtering in speed over state-of-the-art algorithms.

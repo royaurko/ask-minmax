@@ -1,0 +1,21 @@
+Current garbage collectors leave a lot of garbage uncollected because they
+conservatively approximate liveness by reachability from program variables. In
+this paper, we describe a sequence of static analyses that takes as input a
+program written in a first-order, eager functional programming language, and
+finds at each program point the references to objects that are guaranteed not
+to be used in the future. Such references are made null by a transformation
+pass. If this makes the object unreachable, it can be collected by the garbage
+collector. This causes more garbage to be collected, resulting in fewer
+collections. Additionally, for those garbage collectors which scavenge live
+objects, it makes each collection faster.
+  The interesting aspects of our method are both in the identification of the
+analyses required to solve the problem and the way they are carried out. We
+identify three different analyses -- liveness, sharing and accessibility. In
+liveness and sharing analyses, the function definitions are analyzed
+independently of the calling context. This is achieved by using a variable to
+represent the unknown context of the function being analyzed and setting up
+constraints expressing the effect of the function with respect to the variable.
+The solution of the constraints is a summary of the function that is
+parameterized with respect to a calling context and is used to analyze function
+calls. As a result we achieve context sensitivity at call sites without
+analyzing the function multiple number of times.

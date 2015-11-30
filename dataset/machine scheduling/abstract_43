@@ -1,0 +1,22 @@
+Job scheduling for a MapReduce cluster has been an active research topic in
+recent years. However, measurement traces from real-world production
+environment show that the duration of tasks within a job vary widely. The
+overall elapsed time of a job, i.e. the so-called flowtime, is often dictated
+by one or few slowly-running tasks within a job, generally referred as the
+"stragglers". The cause of stragglers include tasks running on
+partially/intermittently failing machines or the existence of some localized
+resource bottleneck(s) within a MapReduce cluster. To tackle this online job
+scheduling challenge, we adopt the task cloning approach and design the
+corresponding scheduling algorithms which aim at minimizing the weighted sum of
+job flowtimes in a MapReduce cluster based on the Shortest Remaining Processing
+Time scheduler (SRPT). To be more specific, we first design a 2-competitive
+offline algorithm when the variance of task-duration is negligible. We then
+extend this offline algorithm to yield the so-called SRPTMS+C algorithm for the
+online case and show that SRPTMS+C is $(1+\epsilon)-speed$
+$o(\frac{1}{\epsilon^2})-competitive$ in reducing the weighted sum of job
+flowtimes within a cluster. Both of the algorithms explicitly consider the
+precedence constraints between the two phases within the MapReduce framework.
+We also demonstrate via trace-driven simulations that SRPTMS+C can
+significantly reduce the weighted/unweighted sum of job flowtimes by cutting
+down the elapsed time of small jobs substantially. In particular, SRPTMS+C
+beats the Microsoft Mantri scheme by nearly 25% according to this metric.

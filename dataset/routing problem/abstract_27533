@@ -1,0 +1,15 @@
+The Fibonacci heap is a classic data structure that supports deletions in
+logarithmic amortized time and all other heap operations in O(1) amortized
+time. We explore the design space of this data structure. We propose a version
+with the following improvements over the original: (i) Each heap is represented
+by a single heap-ordered tree, instead of a set of trees. (ii) Each
+decrease-key operation does only one cut and a cascade of rank changes, instead
+of doing a cascade of cuts. (iii) The outcomes of all comparisons done by the
+algorithm are explicitly represented in the data structure, so none are wasted.
+We also give an example to show that without cascading cuts or rank changes,
+both the original data structure and the new version fail to have the desired
+efficiency, solving an open problem of Fredman. Finally, we illustrate the
+richness of the design space by proposing several alternative ways to do
+cascading rank changes, including a randomized strategy related to one
+previously proposed by Karger. We leave the analysis of these alternatives as
+intriguing open problems.

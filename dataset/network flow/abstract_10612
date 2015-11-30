@@ -1,0 +1,18 @@
+Securing wireless sensor networks (WSNs) is a hard problem. In particular,
+network access control is notoriously difficult to achieve due to the inherent
+broadcast characteristics of wireless communications: an attacker can easily
+target any node in its transmission range and affect large parts of a sensor
+network simultaneously. In this paper, we therefore propose a distributed
+guardian system to protect a WSN based on physically regulating channel access
+by means of selective interference. The guardians are deployed alongside a
+sensor network, inspecting all local traffic, classifying packets based on
+their content, and destroying any malicious packet while still on the air. In
+that sense, the system tries to gain "air dominance" over attackers. A key
+challenge in implementing the guardian system is the resulting real-time
+requirement in order to classify and destroy packets during transmission. We
+present a USRP2 software radio based guardian implementation for IEEE 802.15.4
+that meets this challenge; using an FPGA-based design we can even check for the
+content of the very last payload byte of a packet and still prevent its
+reception by a potential victim mote. Our evaluation shows that the guardians
+effectively block 99.9% of uncontributorized traffic in 802.15.4 networks in our
+experiments, without disturbing the legitimate operations of the WSN.

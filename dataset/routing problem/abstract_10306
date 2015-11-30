@@ -1,0 +1,16 @@
+We consider the online machine minimization problem in which jobs with hard
+deadlines arrive online over time at their release dates. The task is to
+determine a feasible schedule on a minimum number of machines. Our main result
+is a general O(m^2 log m)-competitive algorithm for the preemptive online
+problem, where m is the optimal number of machines used in an offline solution.
+This is the first improvement on an O(log (p_max/p_min))-competitive algorithm
+by Phillips et al. (STOC 1997), which was to date the best known algorithm even
+when m=2. Our algorithm is O(1)-competitive for any m that is bounded by a
+constant. To develop the algorithm, we investigate two complementary special
+cases of the problem, namely, laminar instances and agreeable instances, for
+which we provide an O(log m)-competitive and an O(1)-competitive algorithm,
+respectively. Our O(1)-competitive algorithm for agreeable instances actually
+produces a non-preemptive schedule, which is of its own interest as there
+exists a strong lower bound of n, the number of jobs, for the general
+non-preemptive online machine minimization problem by Saha (FSTTCS 2013), which
+even holds for laminar instances.

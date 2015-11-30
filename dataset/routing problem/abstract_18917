@@ -1,0 +1,16 @@
+Sensor placement for the purpose of detecting/tracking news outbreak and
+preventing rumor spreading is a challenging problem in a large scale online
+social network (OSN). This problem is a kind of subset selection problem:
+choosing a small set of items from a large population so to maximize some
+prespecified set function. However, it is known to be NP-complete. Existing
+heuristics are very costly especially for modern OSNs which usually contain
+hundreds of millions of users. This paper aims to design methods to find
+\emph{good solutions} that can well trade off efficiency and accuracy. We first
+show that it is possible to obtain a high quality solution with a probabilistic
+guarantee from a "{\em candidate set}" of the underlying social network. By
+exploring this candidate set, one can increase the efficiency of placing social
+sensors. We also present how this candidate set can be obtained using "{\em
+graph sampling}", which has an advantage over previous methods of not requiring
+the prior knowledge of the complete network topology. Experiments carried out
+on two real datasets demonstrate not only the accuracy and efficiency of our
+approach, but also effectiveness in detecting and predicting news outbreak.

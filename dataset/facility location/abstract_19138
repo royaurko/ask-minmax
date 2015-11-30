@@ -1,0 +1,24 @@
+The multipath-rich wireless environment associated with typical wireless
+usage scenarios is characterized by a fading channel response that is
+time-varying, location-sensitive, and uniquely shared by a given
+transmitter-receiver pair. The complexity associated with a richly scattering
+environment implies that the short-term fading process is inherently hard to
+predict and best modeled stochastically, with rapid decorrelation properties in
+space, time and frequency. In this paper, we demonstrate how the channel state
+between a wireless transmitter and receiver can be used as the basis for
+building practical secret key generation protocols between two entities. We
+begin by presenting a scheme based on level crossings of the fading process,
+which is well-suited for the Rayleigh and Rician fading models associated with
+a richly scattering environment. Our level crossing algorithm is simple, and
+incorporates a self-authenticating mechanism to prevent adversarial
+manipulation of message exchanges during the protocol. Since the level crossing
+algorithm is best suited for fading processes that exhibit symmetry in their
+underlying distribution, we present a second and more powerful approach that is
+suited for more general channel state distributions. This second approach is
+motivated by observations from quantizing jointly Gaussian processes, but
+exploits empirical measurements to set quantization boundaries and a heuristic
+log likelihood ratio estimate to achieve an improved secret key generation
+rate. We validate both proposed protocols through experimentations using a
+customized 802.11a platform, and show for the typical WiFi channel that
+reliable secret key establishment can be accomplished at rates on the order of
+10 bits/second.

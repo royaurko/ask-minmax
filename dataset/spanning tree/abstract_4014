@@ -1,0 +1,18 @@
+We define a class of ranked tree automata TABG generalizing both the tree
+automata with local tests between brothers of Bogaert and Tison (1992) and with
+global equality and disequality constraints (TAGED) of Filiot et al. (2007).
+TABG can test for equality and disequality modulo a given flat equational
+theory between brother subterms and between subterms whose positions are
+defined by the states reached during a computation. In particular, TABG can
+check that all the subterms reaching a given state are distinct. This
+constraint is related to monadic key constraints for XML documents, meaning
+that every two distinct positions of a given type have different values. We
+prove decidability of the emptiness problem for TABG. This solves, in
+particular, the open question of the decidability of emptiness for TAGED. We
+further extend our result by allowing global arithmetic constraints for
+counting the number of occurrences of some state or the number of different
+equivalence classes of subterms (modulo a given flat equational theory)
+reaching some state during a computation. We also adapt the model to unranked
+ordered terms. As a consequence of our results for TABG, we prove the
+decidability of a fragment of the monadic second order logic on trees extended
+with predicates for equality and disequality between subtrees, and cardinality.

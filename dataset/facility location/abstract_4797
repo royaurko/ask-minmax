@@ -1,0 +1,17 @@
+Source localization by matched-field processing (MFP) generally involves
+solving a number of computationally intensive partial differential equations.
+This paper introduces a technique that mitigates this computational workload by
+"compressing" these computations. Drawing on key concepts from the recently
+developed field of compressed sensing, it shows how a low-dimensional proxy for
+the Green's function can be constructed by backpropagating a small set of
+random receiver vectors. Then, the source can be located by performing a number
+of "short" correlations between this proxy and the projection of the recorded
+acoustic data in the compressed space. Numerical experiments in a Pekeris ocean
+waveguide are presented which demonstrate that this compressed version of MFP
+is as effective as traditional MFP even when the compression is significant.
+The results are particularly promising in the broadband regime where using as
+few as two random backpropagations per frequency performs almost as well as the
+traditional broadband MFP, but with the added benefit of generic applicability.
+That is, the computationally intensive backpropagations may be computed offline
+independently from the received signals, and may be reused to locate any source
+within the search grid area.

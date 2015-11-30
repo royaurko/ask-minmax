@@ -1,0 +1,15 @@
+We propose an algorithm that builds and maintains clusters over a network
+subject to mobility. This algorithm is fully decentralized and makes all the
+different clusters grow concurrently. The algorithm uses circulating tokens
+that collect data and move according to a random walk traversal scheme. Their
+task consists in (i) creating a cluster with the nodes it discovers and (ii)
+managing the cluster expansion; all decisions affecting the cluster are taken
+only by a node that owns the token. The size of each cluster is maintained
+higher than $m$ nodes ($m$ is a parameter of the algorithm). The obtained
+clustering is locally optimal in the sense that, with only a local view of each
+clusters, it computes the largest possible number of clusters (\emph{ie} the
+sizes of the clusters are as close to $m$ as possible). This algorithm is
+designed as a decentralized control algorithm for large scale networks and is
+mobility-adaptive: after a series of topological changes, the algorithm
+converges to a clustering. This recomputation only affects nodes in clusters in
+which topological changes happened, and in adjacent clusters.

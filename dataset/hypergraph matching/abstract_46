@@ -1,0 +1,18 @@
+We study the problem of finding a maximum matching in a graph given by an
+input stream listing its edges in some arbitrary order, where the quantity to
+be maximized is given by a monotone submodular function on subsets of edges.
+This problem, which we call maximum submodular-function matching (MSM), is a
+natural generalization of maximum weight matching (MWM), which is in turn a
+generalization of maximum cardinality matching (MCM). We give two incomparable
+algorithms for this problem with space usage falling in the semi-streaming
+range---they store only $O(n)$ edges, using $O(n\log n)$ working memory---that
+achieve approximation ratios of $7.75$ in a single pass and $(3+\epsilon)$ in
+$O(\epsilon^{-3})$ passes respectively. The operations of these algorithms
+mimic those of Zelke's and McGregor's respective algorithms for MWM; the
+novelty lies in the analysis for the MSM setting. In fact we identify a general
+framework for MWM algorithms that allows this kind of adaptation to the broader
+setting of MSM.
+  In the sequel, we give generalizations of these results where the
+maximization is over "independent sets" in a very general sense. This
+generalization captures hypermatchings in hypergraphs as well as independence
+in the intersection of multiple matroids.

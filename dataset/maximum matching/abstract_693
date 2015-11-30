@@ -1,0 +1,19 @@
+Bayesian learning is often hampered by large computational expense. As a
+powerful generalization of popular belief propagation, expectation propagation
+(EP) efficiently approximates the exact Bayesian computation. Nevertheless, EP
+can be sensitive to outliers and suffer from divergence for difficult cases. To
+address this issue, we propose a new approximate inference approach, relaxed
+expectation propagation (REP). It relaxes the moment matching requirement of
+expectation propagation by adding a relaxation factor into the KL minimization.
+We penalize this relaxation with a $l_1$ penalty. As a result, when two
+distributions in the relaxed KL divergence are similar, the relaxation factor
+will be penalized to zero and, therefore, we obtain the original moment
+matching; In the presence of outliers, these two distributions are
+significantly different and the relaxation factor will be used to reduce the
+contribution of the outlier. Based on this penalized KL minimization, REP is
+robust to outliers and can greatly improve the posterior approximation quality
+over EP. To examine the effectiveness of REP, we apply it to Gaussian process
+classification, a task known to be suitable to EP. Our classification results
+on synthetic and UCI benchmark datasets demonstrate significant improvement of
+REP over EP and Power EP--in terms of algorithmic stability, estimation
+accuracy and predictive performance.

@@ -1,0 +1,18 @@
+For any sequence of positive integers j_1 < j_2 < ... < j_n, the k-tuples
+(j_i,j_{i + 1},...,j_{i + k-1}), i=1, 2,..., n - k+1, are said to form a
+monotone path of length n. Given any integers n\ge k\ge 2 and q\ge 2, what is
+the smallest integer N with the property that no matter how we color all
+k-element subsets of [N]=\{1,2,..., N\} with q colors, we can always find a
+monochromatic monotone path of length n? Denoting this minimum by N_k(q,n), it
+follows from the seminal 1935 paper of Erd\H os and Szekeres that
+N_2(q,n)=(n-1)^q+1 and N_3(2,n) = {2n -4\choose n-2} + 1. Determining the other
+values of these functions appears to be a difficult task. Here we show that
+2^{(n/q)^{q-1}} \leq N_3(q,n) \leq 2^{n^{q-1}\log n}, for q \geq 2 and n \geq
+q+2. Using a stepping-up approach that goes back to Erdos and Hajnal, we prove
+analogous bounds on N_k(q,n) for larger values of k, which are towers of height
+k-1 in n^{q-1}. As a geometric application, we prove the following extension of
+the Happy Ending Theorem. Every family of at least M(n)=2^{n^2 \log n} plane
+convex bodies in general position, any pair of which share at most two boundary
+points, has n members in convex position, that is, it has n members such that
+each of them contributes a point to the boundary of the convex hull of their
+union.

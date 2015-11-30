@@ -1,0 +1,23 @@
+This paper studies decentralized, Fountain and network-coding based
+strategies for facilitating data collection in circular wireless sensor
+networks, which rely on the stochastic diversity of data storage. The goal is
+to allow for a reduced delay collection by a data collector who accesses the
+network at a random position and random time. Data dissemination is performed
+by a set of relays which form a circular route to exchange source packets. The
+storage nodes within the transmission range of the route's relays linearly
+combine and store overheard relay transmissions using random decentralized
+strategies. An intelligent data collector first collects a minimum set of coded
+packets from a subset of storage nodes in its proximity, which might be
+sufficient for recovering the original packets and, by using a message-passing
+decoder, attempts recovering all original source packets from this set.
+Whenever the decoder stalls, the source packet which restarts decoding is
+polled/doped from its original source node. The random-walk-based analysis of
+the decoding/doping process furnishes the collection delay analysis with a
+prediction on the number of required doped packets. The number of doped packets
+can be surprisingly small when employed with an Ideal Soliton code degree
+distribution and, hence, the doping strategy may have the least collection
+delay when the density of source nodes is sufficiently large. Furthermore, we
+demonstrate that network coding makes dissemination more efficient at the
+expense of a larger collection delay. Not surprisingly, a circular network
+allows for a significantly more (analytically and otherwise) tractable
+strategies relative to a network whose model is a random geometric graph.

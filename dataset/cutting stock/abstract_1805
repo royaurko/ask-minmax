@@ -1,0 +1,24 @@
+We consider the well-studied problem of finding a perfect matching in
+$d$-regular bipartite graphs with $2n$ vertices and $m = nd$ edges. While the
+best-known algorithm for general bipartite graphs (due to Hopcroft and Karp)
+takes $O(m \sqrt{n})$ time, in regular bipartite graphs, a perfect matching is
+known to be computable in $O(m)$ time. Very recently, the $O(m)$ bound was
+improved to $O(\min\{m, \frac{n^{2.5}\ln n}{d}\})$ expected time, an expression
+that is bounded by $\tilde{O}(n^{1.75})$. In this paper, we further improve
+this result by giving an $O(\min\{m, \frac{n^2\ln^3 n}{d}\})$ expected time
+algorithm for finding a perfect matching in regular bipartite graphs; as a
+function of $n$ alone, the algorithm takes expected time $O((n\ln n)^{1.5})$.
+  To obtain this result, we design and analyze a two-stage sampling scheme that
+reduces the problem of finding a perfect matching in a regular bipartite graph
+to the same problem on a subsampled bipartite graph with $O(n\ln n)$ edges that
+has a perfect matching with high probability. The matching is then recovered
+using the Hopcroft-Karp algorithm. While the standard analysis of Hopcroft-Karp
+gives us an $\tilde{O}(n^{1.5})$ running time, we present a tighter analysis
+for our special case that results in the stronger $\tilde{O}(\min\{m,
+\frac{n^2}{d} \})$ time mentioned earlier.
+  Our proof of correctness of this sampling scheme uses a new correspondence
+theorem between cuts and Hall's theorem ``witnesses'' for a perfect matching in
+a bipartite graph that we prove. We believe this theorem may be of independent
+interest; as another example application, we show that a perfect matching in
+the support of an $n \times n$ doubly stochastic matrix with $m$ non-zero
+entries can be found in expected time $\tilde{O}(m + n^{1.5})$.

@@ -1,0 +1,22 @@
+The Laplace-Beltrami operator of a smooth Riemannian manifold is determined
+by the Riemannian metric. Conversely, the heat kernel constructed from its
+eigenvalues and eigenfunctions determines the Riemannian metric. This work
+proves the analogy on Euclidean polyhedral surfaces (triangle meshes), that the
+discrete Laplace-Beltrami operator and the discrete Riemannian metric (unique
+up to a scaling) are mutually determined by each other. Given an Euclidean
+polyhedral surface, its Riemannian metric is represented as edge lengths,
+satisfying triangle inequalities on all faces. The Laplace-Beltrami operator is
+formulated using the cotangent formula, where the edge weight is defined as the
+sum of the cotangent of angles against the edge. We prove that the edge lengths
+can be determined by the edge weights unique up to a scaling using the
+variational approach. First, we show that the space of all possible metrics of
+a polyhedral surface is convex. Then, we construct a special energy defined on
+the metric space, such that the gradient of the energy equals to the edge
+weights. Third, we show the Hessian matrix of the energy is positive definite,
+restricted on the tangent space of the metric space, therefore the energy is
+convex. Finally, by the fact that the parameter on a convex domain and the
+gradient of a convex function defined on the domain have one-to-one
+correspondence, we show the edge weights determines the polyhedral metric
+unique up to a scaling. The constructive proof leads to a computational
+algorithm that finds the unique metric on a topological triangle mesh from a
+discrete Laplace-Beltrami operator matrix.

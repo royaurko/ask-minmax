@@ -1,0 +1,14 @@
+We show how to represent sets in a linear space data structure such that
+expressions involving unions and intersections of sets can be computed in a
+worst-case efficient way. This problem has applications in e.g. information
+retrieval and database systems. We mainly consider the RAM model of
+computation, and sets of machine words, but also state our results in the I/O
+model. On a RAM with word size $w$, a special case of our result is that the
+intersection of $m$ (preprocessed) sets, containing $n$ elements in total, can
+be computed in expected time $O(n (\log w)^2 / w + km)$, where $k$ is the
+number of elements in the intersection. If the first of the two terms
+dominates, this is a factor $w^{1-o(1)}$ faster than the standard solution of
+merging sorted lists. We show a cell probe lower bound of time $\Omega(n/(w m
+\log m)+ (1-\tfrac{\log k}{w}) k)$, meaning that our upper bound is nearly
+optimal for small $m$. Our algorithm uses a novel combination of approximate
+set representations and word-level parallelism.

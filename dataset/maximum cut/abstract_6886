@@ -1,0 +1,15 @@
+We present a simple randomized scheme for triangulating a set $P$ of $n$
+points in the plane, and construct a kinetic data structure which maintains the
+triangulation as the points of $P$ move continuously along piecewise algebraic
+trajectories of constant description complexity. Our triangulation scheme
+experiences an expected number of $O(n^2\beta_{s+2}(n)\log^2n)$ discrete
+changes, and handles them in a manner that satisfies all the standard
+requirements from a kinetic data structure: compactness, efficiency, locality
+and responsiveness. Here $s$ is the maximum number of times where any specific
+triple of points of $P$ can become collinear,
+$\beta_{s+2}(q)=\lambda_{s+2}(q)/q$, and $\lambda_{s+2}(q)$ is the maximum
+length of Davenport-Schinzel sequences of order $s+2$ on $n$ symbols. Thus,
+compared to the previous solution of Agarwal et al.~\cite{AWY}, we achieve a
+(slightly) improved bound on the number of discrete changes in the
+triangulation. In addition, we believe that our scheme is simpler to implement
+and analyze.

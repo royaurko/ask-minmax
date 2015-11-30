@@ -1,0 +1,22 @@
+One of the driving problems in the CSP area is the Dichotomy Conjecture,
+formulated in 1993 by Feder and Vardi [STOC'93], stating that for any fixed
+relational structure G the Constraint Satisfaction Problem CSP(G) is either
+NP--complete or polynomial time solvable. A large amount of research has gone
+into checking various specific cases of this conjecture. One such variant which
+attracted a lot of attention in the recent years is the LIST MATRIX PARTITION
+problem. In 2004 Cameron et al. [SODA'04] classified almost all LIST MATRIX
+PARTITION variants for matrices of size at most four. The only case which
+resisted the classification became known as the STUBBORN PROBLEM. In this paper
+we show a result which enables us to finish the classification - thus solving a
+problem which resisted attacks for the last six years.
+  Our approach is based on a combinatorial problem known to be at least as hard
+as the STUBBORN PROBLEM - the 3-COMPATIBLE COLOURING problem. In this problem
+we are given a complete graph with each edge assigned one of 3 possible colours
+and we want to assign one of those 3 colours to each vertex in such a way that
+no edge has the same colour as both of its endpoints. The tractability of the
+3-COMPATIBLE COLOURING problem has been open for several years and the best
+known algorithm prior to this paper is due to Feder et al. [SODA'05] - a
+quasipolynomial algorithm with a n^O(log n / log log n) time complexity. In
+this paper we present a polynomial-time algorithm for the 3-COMPATIBLE
+COLOURING problem and consequently we prove a dichotomy for the k-COMPATIBLE
+COLOURING problem.

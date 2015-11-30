@@ -1,0 +1,25 @@
+In this paper, we propose an approach for modeling and analysis of a number
+of phenomena of collective behavior. By collectives we mean multi-agent systems
+that transition from one state to another at discrete moments of time. The
+behavior of a member of a collective (agent) is called conforming if the
+opinion of this agent at current time moment conforms to the opinion of some
+other agents at the previous time moment. We presume that at each moment of
+time every agent makes a decision by choosing from the set {0,1} (where
+1-decision corresponds to action and 0-decision corresponds to inaction). In
+our approach we model collective behavior with synchronous Boolean networks. We
+presume that in a network there can be agents that act at every moment of time.
+Such agents are called instigators. Also there can be agents that never act.
+Such agents are called loyalists. Agents that are neither instigators nor
+loyalists are called simple agents. We study two combinatorial problems. The
+first problem is to find a disposition of instigators that in several time
+moments transforms a network from a state where a majority of simple agents are
+inactive to a state with a majority of active agents. The second problem is to
+find a disposition of loyalists that returns the network to a state with a
+majority of inactive agents. Similar problems are studied for networks in which
+simple agents demonstrate the contrary to conforming behavior that we call
+anticonforming. We obtained several theoretical results regarding the behavior
+of collectives of agents with conforming or anticonforming behavior. In
+computational experiments we solved the described problems for randomly
+generated networks with several hundred vertices. We reduced corresponding
+combinatorial problems to the Boolean satisfiability problem (SAT) and used
+modern SAT solvers to solve the instances obtained.

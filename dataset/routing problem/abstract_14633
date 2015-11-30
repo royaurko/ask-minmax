@@ -1,0 +1,24 @@
+The multi-armed bandit is a concise model for the problem of iterated
+decision-making under uncertainty. In each round, a gambler must pull one of
+$K$ arms of a slot machine, without any foreknowledge of their payouts, except
+that they are uniformly bounded. A standard objective is to minimize the
+gambler's regret, defined as the gambler's total payout minus the largest
+payout which would have been achieved by any fixed arm, in hindsight. Note that
+the gambler is only told the payout for the arm actually chosen, not for the
+unchosen arms.
+  Almost all previous work on this problem assumed the payouts to be
+non-adaptive, in the sense that the distribution of the payout of arm $j$ in
+round $i$ is completely independent of the choices made by the gambler on
+rounds $1, \dots, i-1$. In the more general model of adaptive payouts, the
+payouts in round $i$ may depend arbitrarily on the history of past choices made
+by the algorithm.
+  We present a new algorithm for this problem, and prove nearly optimal
+guarantees for the regret against both non-adaptive and adaptive adversaries.
+After $T$ rounds, our algorithm has regret $O(\sqrt{T})$ with high probability
+(the tail probability decays exponentially). This dependence on $T$ is best
+possible, and matches that of the full-information version of the problem, in
+which the gambler is told the payouts for all $K$ arms after each round.
+  Previously, even for non-adaptive payouts, the best high-probability bounds
+known were $O(T^{2/3})$, due to Auer, Cesa-Bianchi, Freund and Schapire. The
+expected regret of their algorithm is $O(T^{1/2}) for non-adaptive payouts, but
+as we show, $\Omega(T^{2/3})$ for adaptive payouts.

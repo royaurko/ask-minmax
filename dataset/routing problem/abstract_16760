@@ -1,0 +1,17 @@
+The synchronization problem over the special orthogonal group $SO(d)$
+consists of estimating a set of unknown rotations $R_1,R_2,...,R_n$ from noisy
+measurements of a subset of their pairwise ratios $R_{i}^{-1}R_{j}$. The
+problem has found applications in computer vision, computer graphics, and
+sensor network localization, among others. Its least squares solution can be
+approximated by either spectral relaxation or semidefinite programming followed
+by a rounding procedure, analogous to the approximation algorithms of
+\textsc{Max-Cut}. The contribution of this paper is three-fold: First, we
+introduce a robust penalty function involving the sum of unsquared deviations
+and derive a relaxation that leads to a convex optimization problem; Second, we
+apply the alternating direction method to minimize the penalty function;
+Finally, under a specific model of the measurement noise and for both complete
+and random measurement graphs, we prove that the rotations are exactly and
+stably recovered, exhibiting a phase transition behavior in terms of the
+proportion of noisy measurements. Numerical simulations confirm the phase
+transition behavior for our method as well as its improved accuracy compared to
+existing methods.

@@ -1,0 +1,13 @@
+We call a CNF formula linear if any two clauses have at most one variable in
+common. We show that there exist unsatisfiable linear k-CNF formulas with at
+most 4k^2 4^k clauses, and on the other hand, any linear k-CNF formula with at
+most 4^k/(8e^2k^2) clauses is satisfiable. The upper bound uses probabilistic
+means, and we have no explicit construction coming even close to it. One reason
+for this is that unsatisfiable linear formulas exhibit a more complex structure
+than general (non-linear) formulas: First, any treelike resolution refutation
+of any unsatisfiable linear k-CNF formula has size at least 2^(2^(k/2-1))$.
+This implies that small unsatisfiable linear k-CNF formulas are hard instances
+for Davis-Putnam style splitting algorithms. Second, if we require that the
+formula F have a strict resolution tree, i.e. every clause of F is used only
+once in the resolution tree, then we need at least a^a^...^a clauses, where a
+is approximately 2 and the height of this tower is roughly k.

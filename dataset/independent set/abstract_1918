@@ -1,0 +1,24 @@
+Bayesian graphical modeling provides an appealing way to obtain uncertainty
+estimates when inferring network structures, and much recent progress has been
+made for Gaussian models. These models have been used extensively in
+applications to gene expression data, even in cases where there appears to be
+significant deviations from the Gaussian model. For more robust inferences, it
+is natural to consider extensions to t-distribution models. We argue that the
+classical multivariate t-distribution, defined using a single latent Gamma
+random variable to rescale a Gaussian random vector, is of little use in highly
+multivariate settings, and propose other, more flexible t-distributions. Using
+an independent Gamma-divisor for each component of the random vector defines
+what we term the alternative t-distribution. The associated model allows one to
+extract information from highly multivariate data even when most experiments
+contain outliers for some of their measurements. However, the use of this
+alternative model comes at increased computational cost and imposes constraints
+on the achievable correlation structures, raising the need for a compromise
+between the classical and alternative models. To this end we propose the use of
+Dirichlet processes for adaptive clustering of the latent Gamma-scalars, each
+of which may then divide a group of latent Gaussian variables. Dirichlet
+processes are commonly used to cluster independent observations; here they are
+used instead to cluster the dependent components of a single observation. The
+resulting Dirichlet t-distribution interpolates naturally between the two
+extreme cases of the classical and alternative t-distributions and combines
+more appealing modeling of the multivariate dependence structure with favorable
+computational properties.

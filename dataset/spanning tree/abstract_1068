@@ -1,0 +1,12 @@
+In this paper we study the structure of suffix trees. Given an unlabeled tree
+$\tau$ on $n$ nodes and suffix links of its internal nodes, we ask the question
+"Is $\tau$ a suffix tree?", i.e., is there a string $S$ whose suffix tree has
+the same topological structure as $\tau$? We place no restrictions on $S$, in
+particular we do not require that $S$ ends with a unique symbol. This
+corresponds to considering the more general definition of implicit or extended
+suffix trees. Such general suffix trees have many applications and are for
+example needed to allow efficient updates when suffix trees are built online.
+We prove that $\tau$ is a suffix tree if and only if it is realized by a string
+$S$ of length $n-1$, and we give a linear-time algorithm for inferring $S$ when
+the first letter on each edge is known. This generalizes the work of I et al.
+[Discrete Appl. Math. 163, 2014].

@@ -1,0 +1,17 @@
+Many or-parallel Prolog models exploiting implicit parallelism have been
+proposed in the past. Arguably, one of the most successful models is
+environment copying for shared memory architectures. With the increasing
+availability and popularity of multicore architectures, it makes sense to
+recover the body of knowledge there is in this area and re-engineer prior
+computational models to evaluate their performance on newer architectures. In
+this work, we focus on the implementation of splitting strategies for
+or-parallel Prolog execution on multicores and, for that, we develop a
+framework, on top of the YapOr system, that integrates and supports five
+alternative splitting strategies. Our implementation shares the underlying
+execution environment and most of the data structures used to implement
+or-parallelism in YapOr. In particular, we took advantage of YapOr's
+infrastructure for incremental copying and scheduling support, which we used
+with minimal modifications. We thus argue that all these common support
+features allow us to make a first and fair comparison between these five
+alternative splitting strategies and, therefore, better understand their
+advantages and weaknesses.

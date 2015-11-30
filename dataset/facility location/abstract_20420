@@ -1,0 +1,24 @@
+Long-term location tracking, where trajectory compression is commonly used,
+has gained high interest for many applications in transport, ecology, and
+wearable computing. However, state-of-the-art compression methods involve high
+space-time complexity or achieve unsatisfactory compression rate, leading to
+rapid exhaustion of memory, computation, storage and energy resources. We
+propose a novel online algorithm for error-bounded trajectory compression
+called the Bounded Quadrant System (BQS), which compresses trajectories with
+extremely small costs in space and time using convex-hulls. In this algorithm,
+we build a virtual coordinate system centered at a start point, and establish a
+rectangular bounding box as well as two bounding lines in each of its
+quadrants. In each quadrant, the points to be assessed are bounded by the
+convex-hull formed by the box and lines. Various compression error-bounds are
+therefore derived to quickly draw compression decisions without expensive error
+computations. In addition, we also propose a light version of the BQS version
+that achieves $\mathcal{O}(1)$ complexity in both time and space for processing
+each point to suit the most constrained computation environments. Furthermore,
+we briefly demonstrate how this algorithm can be naturally extended to the 3-D
+case.
+  Using empirical GPS traces from flying foxes, cars and simulation, we
+demonstrate the effectiveness of our algorithm in significantly reducing the
+time and space complexity of trajectory compression, while greatly improving
+the compression rates of the state-of-the-art algorithms (up to 47%). We then
+show that with this algorithm, the operational time of the target
+resource-constrained hardware platform can be prolonged by up to 41%.

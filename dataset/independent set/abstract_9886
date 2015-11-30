@@ -1,0 +1,13 @@
+A new algorithm, termed subspace evolution and transfer (SET), is proposed
+for solving the consistent matrix completion problem. In this setting, one is
+given a subset of the entries of a low-rank matrix, and asked to find one
+low-rank matrix consistent with the given observations. We show that this
+problem can be solved by searching for a column space that matches the
+observations. The corresponding algorithm consists of two parts -- subspace
+evolution and subspace transfer. In the evolution part, we use a line search
+procedure to refine the column space. However, line search is not guaranteed to
+converge, as there may exist barriers along the search path that prevent the
+algorithm from reaching a global optimum. To address this problem, in the
+transfer part, we design mechanisms to detect barriers and transfer the
+estimated column space from one side of the barrier to the another. The SET
+algorithm exhibits excellent empirical performance for very low-rank matrices.

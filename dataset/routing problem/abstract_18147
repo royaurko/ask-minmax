@@ -1,0 +1,16 @@
+Suppose a coin with unknown probability $p$ of heads can be flipped as often
+as desired. A Bernoulli factory for a function $f$ is an algorithm that uses
+flips of the coin together with auxiliary randomness to flip a single coin with
+probability $f(p)$ of heads. Applications include near perfect sampling from
+the stationary distribution of regenerative processes. When $f$ is analytic,
+the problem can be reduced to a Bernoulli factory of the form $f(p) = Cp$ for
+constant $C$. Presented here is a new algorithm where for small values of $Cp$,
+requires roughly only $C$ coin flips to generate a $Cp$ coin. From information
+theory considerations, this is also conjectured to be (to first order) the
+minimum number of flips needed by any such algorithm.
+  For $Cp$ large, the new algorithm can also be used to build a new Bernoulli
+factory that uses only 80\% of the expected coin flips of the older method, and
+applies to the more general problem of a multivariate Bernoulli factory, where
+there are $k$ coins, the $k$th coin has unknown probability $p_k$ of heads, and
+the goal is to simulate a coin flip with probability $C_1 p_1 + \cdots + C_k
+p_k$ of heads.

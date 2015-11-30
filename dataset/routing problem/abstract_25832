@@ -1,0 +1,15 @@
+We study the problem of computing the probability that a given stochastic
+context-free grammar (SCFG), G, generates a string in a given regular language
+L(D) (given by a DFA, D). This basic problem has a number of applications in
+statistical natural language processing, and it is also a key necessary step
+towards quantitative \omega-regular model checking of stochastic context-free
+processes (equivalently, 1-exit recursive Markov chains, or stateless
+probabilistic pushdown processes).
+  We show that the probability that G generates a string in L(D) can be
+computed to within arbitrary desired precision in polynomial time (in the
+standard Turing model of computation), under a rather mild assumption about the
+SCFG, G, and with no extra assumption about D. We show that this assumption is
+satisfied for SCFG's whose rule probabilities are learned via the well-known
+inside-outside (EM) algorithm for maximum-likelihood estimation (a standard
+method for constructing SCFGs in statistical NLP and biological sequence
+analysis). Thus, for these SCFGs the algorithm always runs in P-time.

@@ -1,0 +1,20 @@
+This paper investigates the opportunities and limitations of adaptive virtual
+machine (VM) migration to reduce communication costs in a virtualized
+environment. We introduce a new formal model for the problem of online VM
+migration in two scenarios: (1) VMs can be migrated arbitrarily in the
+substrate network; e.g., a private cloud provider may have an incentive to
+reduce the overall communication cost in the network. (2) VMs can only be
+migrated within a given tenant; e.g., a user that was assigned a set of
+physical machines may exchange the functionality of the VMs on these machines.
+  We propose a simple class of Destination-Swap algorithms which are based on
+an aggressive collocation strategy (inspired by splay datastructures) and which
+maintain a minimal and local amount of per-node (amortized cost) information to
+decide where to migrate a VM and how; thus, the algorithms react quickly to
+changes in the load. The algorithms come in two main flavors, an indirect and
+distributed variant which keeps existing VM placements local, and a direct
+variant which keeps the number of affected VMs small.
+  We show that naturally, inter-tenant optimizations yield a larger potential
+for optimization, but generally also a tenant itself can improve its embedding.
+Moreover, there exists an interesting tradeoff between direct and indirect
+strategies: indirect variants are preferable under skewed and sparse
+communication patterns due to their locality properties.

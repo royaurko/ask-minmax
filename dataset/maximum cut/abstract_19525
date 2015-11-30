@@ -1,0 +1,20 @@
+With the growing incidents of flash crowds and sophisticated DDoS attacks
+mimicking benign traffic, it becomes challenging to protect Internet-based
+services solely by differentiating attack traffic from legitimate traffic.
+While fair-sharing schemes are commonly suggested as a defense when
+differentiation is difficult, they alone may suffer from highly variable or
+even unbounded waiting times. We propose RainCheck Filter (RCF), a lightweight
+primitive that guarantees bounded waiting time for clients despite server
+flooding without keeping per-client state on the server. RCF achieves strong
+waiting time guarantees by prioritizing clients based on how long the clients
+have waited-as if the server maintained a queue in which the clients lined up
+waiting for service. To avoid keeping state for every incoming client request,
+the server sends to the client a raincheck, a timestamped cryptographic token
+that not only informs the client to retry later but also serves as a proof of
+the client's priority level within the virtual queue. We prove that every
+client complying with RCF can access the server in bounded time, even under a
+flash crowd incident or a DDoS attack. Our large-scale simulations confirm that
+RCF provides a small and predictable maximum waiting time while existing
+schemes cannot. To demonstrate its deployability, we implement RCF as a Python
+module such that web developers can protect a critical server resource by
+adding only three lines of code.

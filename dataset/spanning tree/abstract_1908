@@ -1,0 +1,12 @@
+The kd-tree is a fundamental tool in computer science. Among others, an
+application of the kd-tree search (oct-tree method) to fast evaluation of
+particle interactions and neighbor search is highly important since
+computational complexity of these problems are reduced from O(N^2) with a brute
+force method to O(N log N) with the tree method where N is a number of
+particles. In this paper, we present a parallel implementation of the tree
+method running on a graphic processor unit (GPU). We successfully run a
+simulation of structure formation in the universe very efficiently. On our
+system, which costs roughly $900, the run with N ~ 2.87x10^6 particles took
+5.79 hours and executed 1.2x10^13 force evaluations in total. We obtained the
+sustained computing speed of 21.8 Gflops and the cost per Gflops of 41.6/Gflops
+that is two and half times better than the previous record in 2006.

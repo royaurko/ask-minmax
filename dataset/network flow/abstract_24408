@@ -1,0 +1,15 @@
+Trusted timestamping consists in proving that certain data existed at a
+particular point in time. Existing timestamping methods require either a
+centralized and dedicated trusted service or the collaboration of other
+participants using the timestamping service. We propose a novel trusted
+timestamping scheme, called DNStamp, that does not require a dedicated service
+nor collaboration between participants. DNStamp produces shortlived timestamps
+with a validity period of several days. The generation and verification
+involves a large number of Domain Name System cache resolvers, thus removing
+any single point of failure and any single point of trust. Any host with
+Internet access may request or verify a timestamp, with no need to register to
+any timestamping service. We provide a full description and analysis of
+DNStamp. We analyze the security against various adversaries and show
+resistance to forward-dating, back-dating and erasure attacks. Experiments with
+our implementation of DNStamp show that one can set and then reliably verify
+timestamps even under continuous attack conditions.

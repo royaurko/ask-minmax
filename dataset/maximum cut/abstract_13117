@@ -1,0 +1,18 @@
+The Fast Multipole Method (FMM) offers an acceleration for pairwise
+interaction calculation, known as $N$-body problems, from $\mathcal{O}(N^2)$ to
+$\mathcal{O}(N)$ with $N$ particles. This has brought dramatic increase in the
+capability of particle simulations in many application areas, such as
+electrostatics, particle formulations of fluid mechanics, and others. Although
+the literature on the subject provides theoretical error bounds for the FMM
+approximation, there are not many reports of the measured errors in a suite of
+computational experiments. We have performed such an experimental
+investigation, and summarized the results of about 1000 calculations using the
+FMM algorithm, to characterize the accuracy of the method in relation with the
+different parameters available to the user. In addition to the more standard
+diagnostic of the maximum error, we supply illustrations of the spatial
+distribution of the errors, which offers visual evidence of all the
+contributing factors to the overall approximation accuracy: multipole
+expansion, local expansion, hierarchical spatial decomposition (interaction
+lists, local domain, far domain). This presentation is a contribution to any
+researcher wishing to incorporate the FMM acceleration to their application
+code, as it aids in understanding where accuracy is gained or compromised.

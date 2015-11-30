@@ -1,0 +1,14 @@
+Several aspects of managing a sensor network (e.g., motion planning for data
+mules, serial data fusion and inference) benefit once the network is linearized
+to a path. The linearization is often achieved by constructing a space filling
+curve in the domain. However, existing methods cannot handle networks
+distributed on surfaces of complex topology. This paper presents a novel method
+for generating space filling curves for 3D sensor networks that are distributed
+densely on some two-dimensional geometric surface. Our algorithm is completely
+distributed and constructs a path which gets uniformly, progressively denser as
+it becomes longer. We analyze the algorithm mathematically and prove that the
+curve we obtain is dense. Our method is based on the Hodge decomposition
+theorem and uses holomorphic differentials on Riemann surfaces. The underlying
+high genus surface is conformally mapped to a union of flat tori and then a
+proportionally-dense space filling curve on this union is constructed. The
+pullback of this curve to the original network gives us the desired curve.

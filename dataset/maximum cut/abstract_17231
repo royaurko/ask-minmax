@@ -1,0 +1,18 @@
+We study multipath parameter estimation from orthogonal frequency division
+multiplex signals transmitted over doubly dispersive mobile radio channels. We
+are interested in cases where the transmission is long enough to suffer time
+selectivity, but short enough such that the time variation can be accurately
+modeled as depending only on per-tap linear phase variations due to Doppler
+effects. We therefore concentrate on the estimation of the complex gain, delay
+and Doppler offset of each tap of the multipath channel impulse response. We
+show that the frequency domain channel coefficients for an entire packet can be
+expressed as the superimposition of two-dimensional complex sinusoids. The
+maximum likelihood estimate requires solution of a multidimensional non-linear
+least squares problem, which is computationally infeasible in practice. We
+therefore propose a low complexity suboptimal solution based on iterative
+successive and parallel cancellation. First, initial delay/Doppler estimates
+are obtained via successive cancellation. These estimates are then refined
+using an iterative parallel cancellation procedure. We demonstrate via Monte
+Carlo simulations that the root mean squared error statistics of our estimator
+are very close to the Cramer-Rao lower bound of a single two-dimensional
+sinusoid in Gaussian noise.

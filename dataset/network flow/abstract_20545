@@ -1,0 +1,24 @@
+The ideal MHD equations are a central model in astrophysics, and their
+solution relies upon stable numerical schemes. We present an implementation of
+a new method, which possesses excellent stability properties. Numerical tests
+demonstrate that the theoretical stability properties are valid in practice
+with negligible compromises to accuracy. The result is a highly robust scheme
+with state-of-the-art efficiency. The scheme's robustness is due to entropy
+stability, positivity and properly discretised Powell terms. The implementation
+takes the form of a modification of the MHD module in the FLASH code, an
+adaptive mesh refinement code. We compare the new scheme with the standard
+FLASH implementation for MHD. Results show comparable accuracy to standard
+FLASH with the Roe solver, but highly improved efficiency and stability,
+particularly for high Mach number flows and low plasma beta. The tests include
+1D shock tubes, 2D instabilities and highly supersonic, 3D turbulence. We
+consider turbulent flows with RMS sonic Mach numbers up to 10, typical of gas
+flows in the interstellar medium. We investigate both strong initial magnetic
+fields and magnetic field amplification by the turbulent dynamo from extremely
+high plasma beta. The energy spectra show a reasonable decrease in dissipation
+with grid refinement, and at a resolution of 512^3 grid cells we identify a
+narrow inertial range with the expected power-law scaling. The turbulent dynamo
+exhibits exponential growth of magnetic pressure, with the growth rate twice as
+high from solenoidal forcing than from compressive forcing. Two versions of the
+new scheme are presented, using relaxation-based 3-wave and 5-wave approximate
+Riemann solvers, respectively. The 5-wave solver is more accurate in some
+cases, and its computational cost is close to the 3-wave solver.

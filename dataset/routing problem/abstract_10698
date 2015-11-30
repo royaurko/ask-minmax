@@ -1,0 +1,16 @@
+For a partial word $w$ the longest common compatible prefix of two positions
+$i,j$, denoted $lccp(i,j)$, is the largest $k$ such that $w[i,i+k-1]\uparrow
+w[j,j+k-1]$, where $\uparrow$ is the compatibility relation of partial words
+(it is not an equivalence relation). The LCCP problem is to preprocess a
+partial word in such a way that any query $lccp(i,j)$ about this word can be
+answered in $O(1)$ time. It is a natural generalization of the longest common
+prefix (LCP) problem for regular words, for which an $O(n)$ preprocessing time
+and $O(1)$ query time solution exists.
+  Recently an efficient algorithm for this problem has been given by F.
+Blanchet-Sadri and J. Lazarow (LATA 2013). The preprocessing time was
+$O(nh+n)$, where $h$ is the number of "holes" in $w$. The algorithm was
+designed for partial words over a constant alphabet and was quite involved.
+  We present a simple solution to this problem with slightly better runtime
+that works for any linearly-sortable alphabet. Our preprocessing is in time
+$O(n\mu+n)$, where $\mu$ is the number of blocks of holes in $w$. Our algorithm
+uses ideas from alignment algorithms and dynamic programming.

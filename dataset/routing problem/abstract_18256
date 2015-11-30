@@ -1,0 +1,24 @@
+We study Recursive Concurrent Stochastic Games (RCSGs), extending our recent
+analysis of recursive simple stochastic games to a concurrent setting where the
+two players choose moves simultaneously and independently at each state. For
+multi-exit games, our earlier work already showed undecidability for basic
+questions like termination, thus we focus on the important case of single-exit
+RCSGs (1-RCSGs).
+  We first characterize the value of a 1-RCSG termination game as the least
+fixed point solution of a system of nonlinear minimax functional equations, and
+use it to show PSPACE decidability for the quantitative termination problem. We
+then give a strategy improvement technique, which we use to show that player 1
+(maximizer) has \epsilon-optimal randomized Stackless & Memoryless (r-SM)
+strategies for all \epsilon > 0, while player 2 (minimizer) has optimal r-SM
+strategies. Thus, such games are r-SM-determined. These results mirror and
+generalize in a strong sense the randomized memoryless determinacy results for
+finite stochastic games, and extend the classic Hoffman-Karp strategy
+improvement approach from the finite to an infinite state setting. The proofs
+in our infinite-state setting are very different however, relying on subtle
+analytic properties of certain power series that arise from studying 1-RCSGs.
+  We show that our upper bounds, even for qualitative (probability 1)
+termination, can not be improved, even to NP, without a major breakthrough, by
+giving two reductions: first a P-time reduction from the long-standing
+square-root sum problem to the quantitative termination decision problem for
+finite concurrent stochastic games, and then a P-time reduction from the latter
+problem to the qualitative termination problem for 1-RCSGs.

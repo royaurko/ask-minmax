@@ -1,0 +1,17 @@
+Trust management is an approach to access control in distributed systems
+where access decisions are based on policy statements issued by multiple
+principals and stored in a distributed manner. In trust management, the policy
+statements of a principal can refer to other principals' statements; thus, the
+process of evaluating an access request (i.e., a goal) consists of finding a
+"chain" of policy statements that allows the access to the requested resource.
+Most existing goal evaluation algorithms for trust management either rely on a
+centralized evaluation strategy, which consists of collecting all the relevant
+policy statements in a single location (and therefore they do not guarantee the
+confidentiality of intensional policies), or do not detect the termination of
+the computation (i.e., when all the answers of a goal are computed). In this
+paper we present GEM, a distributed goal evaluation algorithm for trust
+management systems that relies on function-free logic programming for the
+specification of policy statements. GEM detects termination in a completely
+distributed way without disclosing intensional policies, thereby preserving
+their confidentiality. We demonstrate that the algorithm terminates and is
+sound and complete with respect to the standard semantics for logic programs.

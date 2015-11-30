@@ -1,0 +1,20 @@
+In this paper, we consider the problem of reducing network delay in
+stochastic network utility optimization problems. We start by studying the
+recently proposed quadratic Lyapunov function based algorithms (QLA). We show
+that for every stochastic problem, there is a corresponding
+\emph{deterministic} problem, whose dual optimal solution "exponentially
+attracts" the network backlog process under QLA. In particular, the probability
+that the backlog vector under QLA deviates from the attractor is exponentially
+decreasing in their Euclidean distance. This not only helps to explain how QLA
+achieves the desired performance but also suggests that one can roughly
+"subtract out" a Lagrange multiplier from the system induced by QLA. We thus
+develop a family of \emph{Fast Quadratic Lyapunov based Algorithms} (FQLA) that
+achieve an $[O(1/V), O(\log^2(V))]$ performance-delay tradeoff for problems
+with a discrete set of action options, and achieve a square-root tradeoff for
+continuous problems. This is similar to the optimal performance-delay tradeoffs
+achieved in prior work by Neely (2007) via drift-steering methods, and shows
+that QLA algorithms can also be used to approach such performance.
+  These results highlight the "network gravity" role of Lagrange Multipliers in
+network scheduling. This role can be viewed as the counterpart of the "shadow
+price" role of Lagrange Multipliers in flow regulation for classic flow-based
+network problems.

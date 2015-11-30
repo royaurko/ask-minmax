@@ -1,0 +1,15 @@
+Let $G(V,E)$ be a directed graph with $n$ vertices and $m$ edges. The edges
+$E$ of $G$ are divided into two types: $E_F$ and $E_P$. Each edge of $E_F$ has
+a fixed price. The edges of $E_P$ are the priceable edges and their price is
+not fixed a priori. Let $r$ be a vertex of $G$. For an assignment of prices to
+the edges of $E_P$, the revenue is given by the following procedure: select a
+shortest path tree $T$ from $r$ with respect to the prices (a tree of cheapest
+paths); the revenue is the sum, over all priceable edges $e$, of the product of
+the price of $e$ and the number of vertices below $e$ in $T$.
+  Assuming that $k=|E_P|\ge 2$ is a constant, we provide a data structure whose
+construction takes $O(m+n\log^{k-1} n)$ time and with the property that, when
+we assign prices to the edges of $E_P$, the revenue can be computed in
+$(\log^{k-1} n)$. Using our data structure, we save almost a linear factor when
+computing the optimal strategy in the Stackelberg shortest paths tree game of
+[D. Bil{\`o} and L. Gual{\`a} and G. Proietti and P. Widmayer. Computational
+aspects of a 2-Player Stackelberg shortest paths tree game. Proc. WINE 2008].

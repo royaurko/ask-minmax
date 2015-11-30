@@ -1,0 +1,19 @@
+The condition of t-resilience stipulates that an n-process program is only
+obliged to make progress when at least n-t processes are correct. Put another
+way, the live sets, the collection of process sets such that progress is
+required if all the processes in one of these sets are correct, are all sets
+with at least n-t processes.
+  We show that the ability of arbitrary collection of live sets L to solve
+distributed tasks is tightly related to the minimum hitting set of L, a minimum
+cardinality subset of processes that has a non-empty intersection with every
+live set. Thus, finding the computing power of L is NP-complete.
+  For the special case of colorless tasks that allow participating processes to
+adopt input or output values of each other, we use a simple simulation to show
+that a task can be solved L-resiliently if and only if it can be solved
+(h-1)-resiliently, where h is the size of the minimum hitting set of L.
+  For general tasks, we characterize L-resilient solvability of tasks with
+respect to a limited notion of weak solvability: in every execution where all
+processes in some set in L are correct, outputs must be produced for every
+process in some (possibly different) participating set in L. Given a task T, we
+construct another task T_L such that T is solvable weakly L-resiliently if and
+only if T_L is solvable weakly wait-free.

@@ -1,0 +1,12 @@
+Developing large-scale distributed applications can be a daunting task.
+object-based environments have attempted to alleviate problems by providing
+distributed objects that look like local objects. We advocate that this
+approach has actually only made matters worse, as the developer needs to be
+aware of many intricate internal details in order to adequately handle partial
+failures. The result is an increase of application complexity. We present an
+alternative in which distribution transparency is lessened in favor of clearer
+semantics. In particular, we argue that a developer should always be offered
+the unambiguous semantics of local objects, and that distribution comes from
+copying those objects to where they are needed. We claim that it is often
+sufficient to provide only small, immutable objects, along with facilities to
+group objects into clusters.

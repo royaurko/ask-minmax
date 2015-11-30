@@ -1,0 +1,25 @@
+We consider the model of communication where wireless devices can either
+switch their radios off to save energy, or switch their radios on and engage in
+communication. We distill a clean theoretical formulation of this problem of
+minimizing radio use and present near-optimal solutions. Our base model ignores
+issues of communication interference, although we also extend the model to
+handle this requirement. We assume that nodes intend to communicate
+periodically, or according to some time-based schedule. Clearly, perfectly
+synchronized devices could switch their radios on for exactly the minimum
+periods required by their joint schedules. The main challenge in the deployment
+of wireless networks is to synchronize the devices' schedules, given that their
+initial schedules may be offset relative to one another (even if their clocks
+run at the same speed). We significantly improve previous results, and show
+optimal use of the radio for two processors and near-optimal use of the radio
+for synchronization of an arbitrary number of processors. In particular, for
+two processors we prove deterministically matching $\Theta(\sqrt{n})$ upper and
+lower bounds on the number of times the radio has to be on, where $n$ is the
+discretized uncertainty period of the clock shift between the two processors.
+(In contrast, all previous results for two processors are randomized.) For
+$m=n^\beta$ processors (for any $\beta < 1$) we prove $\Omega(n^{(1-\beta)/2})$
+is the lower bound on the number of times the radio has to be switched on (per
+processor), and show a nearly matching (in terms of the radio use)
+$\~{O}(n^{(1-\beta)/2})$ randomized upper bound per processor, with failure
+probability exponentially close to 0. For $\beta \geq 1$ our algorithm runs
+with at most $poly-log(n)$ radio invocations per processor. Our bounds also
+hold in a radio-broadcast model where interference must be taken into account.

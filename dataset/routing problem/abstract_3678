@@ -1,0 +1,13 @@
+In this paper we consider several instances of the k-center on a line problem
+where the goal is, given a set of points S in the plane and a parameter k >= 1,
+to find k disks with centers on a line l such that their union covers S and the
+maximum radius of the disks is minimized. This problem is a constraint version
+of the well-known k-center problem in which the centers are constrained to lie
+in a particular region such as a segment, a line, and a polygon. We first
+consider the simplest version of the problem where the line l is given in
+advance; we can solve this problem in O(n log^2 n) time. We then investigate
+the cases where only the orientation of the line l is fixed and where the line
+l can be arbitrary. We can solve these problems in O(n^2 log^2 n) time and in
+O(n^4 log^2 n) expected time, respectively. For the last two problems, we
+present (1 + e)-approximation algorithms, which run in O((1/e) n log^2 n) time
+and O((1/e^2) n log^2 n) time, respectively.

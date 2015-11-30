@@ -1,0 +1,19 @@
+A commonly used model for fault-tolerant computation is that of cellular
+automata. The essential difficulty of fault-tolerant computation is present in
+the special case of simply remembering a bit in the presence of faults, and
+that is the case we treat in this paper. We are concerned with the degree (the
+number of neighboring cells on which the state transition function depends)
+needed to achieve fault tolerance when the fault rate is high (nearly 1/2). We
+consider both the traditional transient fault model (where faults occur
+independently in time and space) and a recently introduced combined fault model
+which also includes manufacturing faults (which occur independently in space,
+but which affect cells for all time). We also consider both a purely
+probabilistic fault model (in which the states of cells are perturbed at
+exactly the fault rate) and an adversarial model (in which the occurrence of a
+fault gives control of the state to an omniscient adversary). We show that
+there are cellular automata that can tolerate a fault rate $1/2 - \xi$ (with
+$\xi>0$) with degree $O((1/\xi^2)\log(1/\xi))$, even with adversarial combined
+faults. The simplest such automata are based on infinite regular trees, but our
+results also apply to other structures (such as hyperbolic tessellations) that
+contain infinite regular trees. We also obtain a lower bound of
+$\Omega(1/\xi^2)$, even with purely probabilistic transient faults only.

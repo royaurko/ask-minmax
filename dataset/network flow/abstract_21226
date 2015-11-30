@@ -1,0 +1,23 @@
+The design of modulation schemes for the physical layer network-coded two way
+relaying scenario has been extensively studied recently with the protocol which
+employs two phases: Multiple access (MA) Phase and Broadcast (BC) Phase. It was
+observed by Koike-Akino et al. that adaptively changing the network coding map
+used at the relay according to the channel conditions greatly reduces the
+impact of multiple access interference which occurs at the relay during the MA
+Phase and all these network coding maps should satisfy a requirement called the
+exclusive law. Only the scenario in which the end nodes use M-PSK signal sets
+is extensively studied in \cite{NVR} using Latin Sqaures. In this paper, we
+address the case in which the end nodes use M-QAM signal sets (where M is of
+the form $2^{2\lambda}$, $\lambda$ being any positive integer). In a fading
+scenario, for certain channel conditions $\gamma e^{j \theta}$, termed singular
+fade states, the MA phase performance is greatly reduced. We show that the
+square QAM signal sets give lesser number of singular fade states compared to
+PSK signal sets. Because of this, the complexity at the relay is enormously
+reduced. Moreover, lesser number of overhead bits are required in the BC phase.
+The fade state $\gamma e^{j \theta}=1$ is singular for all constellations of
+arbitrary size including PSK and QAM. For arbitrary PSK constellation it is
+well known that the Latin Square obtained by bit-wise XOR mapping removes this
+singularity. We show that XOR mapping fails to remove this singularity for QAM
+of size more greater than 4 and show that a doubly block circulant Latin Square
+removes this singularity. Simulation results are presented to show the
+superiority of QAM over PSK.

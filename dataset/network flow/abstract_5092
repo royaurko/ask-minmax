@@ -1,0 +1,19 @@
+The round-trip distance function on a geographic network (such as a road
+network, flight network, or utility distribution grid) defines the "distance"
+from a single vertex to a pair of vertices as the minimum length tour visiting
+all three vertices and ending at the starting vertex. Given a geographic
+network and a subset of its vertices called "sites" (for example a road network
+with a list of grocery stores), a two-site round-trip Voronoi diagram labels
+each vertex in the network with the pair of sites that minimizes the round-trip
+distance from that vertex. Alternatively, given a geographic network and two
+sets of sites of different types (for example grocery stores and coffee shops),
+a two-color round-trip Voronoi diagram labels each vertex with the pair of
+sites of different types minimizing the round-trip distance. In this paper, we
+prove several new properties of two-site and two-color round-trip Voronoi
+diagrams in a geographic network, including a relationship between the
+"doubling density" of sites and an upper bound on the number of non-empty
+Voronoi regions. We show how those lemmas can be used in new algorithms
+asymptotically more efficient than previous known algorithms when the networks
+have reasonable distribution properties related to doubling density, and we
+provide experimental data suggesting that road networks with standard
+point-of-interest sites have these properties.

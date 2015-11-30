@@ -1,0 +1,26 @@
+We initiate the study of \emph{inverse} problems in approximate uniform
+generation, focusing on uniform generation of satisfying assignments of various
+types of Boolean functions. In such an inverse problem, the algorithm is given
+uniform random satisfying assignments of an unknown function $f$ belonging to a
+class $\C$ of Boolean functions, and the goal is to output a probability
+distribution $D$ which is $\epsilon$-close, in total variation distance, to the
+uniform distribution over $f^{-1}(1)$.
+  Positive results: We prove a general positive result establishing sufficient
+conditions for efficient inverse approximate uniform generation for a class
+$\C$. We define a new type of algorithm called a \emph{densifier} for $\C$, and
+show (roughly speaking) how to combine (i) a densifier, (ii) an approximate
+counting / uniform generation algorithm, and (iii) a Statistical Query learning
+algorithm, to obtain an inverse approximate uniform generation algorithm. We
+apply this general result to obtain a poly$(n,1/\eps)$-time algorithm for the
+class of halfspaces; and a quasipoly$(n,1/\eps)$-time algorithm for the class
+of $\poly(n)$-size DNF formulas.
+  Negative results: We prove a general negative result establishing that the
+existence of certain types of signature schemes in cryptography implies the
+hardness of certain inverse approximate uniform generation problems. This
+implies that there are no {subexponential}-time inverse approximate uniform
+generation algorithms for 3-CNF formulas; for intersections of two halfspaces;
+for degree-2 polynomial threshold functions; and for monotone 2-CNF formulas.
+  Finally, we show that there is no general relationship between the complexity
+of the "forward" approximate uniform generation problem and the complexity of
+the inverse problem for a class $\C$ -- it is possible for either one to be
+easy while the other is hard.

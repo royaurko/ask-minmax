@@ -1,0 +1,12 @@
+In recent years many algorithms have been developed for finding patterns in
+graphs and networks. A disadvantage of these algorithms is that they use
+subgraph isomorphism to determine the support of a graph pattern; subgraph
+isomorphism is a well-known NP complete problem. In this paper, we propose an
+alternative approach which mines tree patterns in networks by using subgraph
+homomorphism. The advantage of homomorphism is that it can be computed in
+polynomial time, which allows us to develop an algorithm that mines tree
+patterns in arbitrary graphs in incremental polynomial time. Homomorphism
+however entails two problems not found when using isomorphism: (1) two patterns
+of different size can be equivalent; (2) patterns of unbounded size can be
+frequent. In this paper we formalize these problems and study solutions that
+easily fit within our algorithm.

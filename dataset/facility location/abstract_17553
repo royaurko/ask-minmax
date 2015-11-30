@@ -1,0 +1,15 @@
+Autonomous robot networks are an effective tool for monitoring large-scale
+environmental fields. This paper proposes distributed control strategies for
+localizing the source of a noisy signal, which could represent a physical
+quantity of interest such as magnetic force, heat, radio signal, or chemical
+concentration. We develop algorithms specific to two scenarios: one in which
+the sensors have a precise model of the signal formation process and one in
+which a signal model is not available. In the model-free scenario, a team of
+sensors is used to follow a stochastic gradient of the signal field. Our
+approach is distributed, robust to deformations in the group geometry, does not
+necessitate global localization, and is guaranteed to lead the sensors to a
+neighborhood of a local maximum of the field. In the model-based scenario, the
+sensors follow the stochastic gradient of the mutual information between their
+expected measurements and the location of the source in a distributed manner.
+The performance is demonstrated in simulation using a robot sensor network to
+localize the source of a wireless radio signal.

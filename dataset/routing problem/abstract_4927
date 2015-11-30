@@ -1,0 +1,25 @@
+The notion of meta-mining has appeared recently and extends the traditional
+meta-learning in two ways. First it does not learn meta-models that provide
+support only for the learning algorithm selection task but ones that support
+the whole data-mining process. In addition it abandons the so called black-box
+approach to algorithm description followed in meta-learning. Now in addition to
+the datasets, algorithms also have descriptors, workflows as well. For the
+latter two these descriptions are semantic, describing properties of the
+algorithms. With the availability of descriptors both for datasets and data
+mining workflows the traditional modelling techniques followed in
+meta-learning, typically based on classification and regression algorithms, are
+no longer appropriate. Instead we are faced with a problem the nature of which
+is much more similar to the problems that appear in recommendation systems. The
+most important meta-mining requirements are that suggestions should use only
+datasets and workflows descriptors and the cold-start problem, e.g. providing
+workflow suggestions for new datasets.
+  In this paper we take a different view on the meta-mining modelling problem
+and treat it as a recommender problem. In order to account for the meta-mining
+specificities we derive a novel metric-based-learning recommender approach. Our
+method learns two homogeneous metrics, one in the dataset and one in the
+workflow space, and a heterogeneous one in the dataset-workflow space. All
+learned metrics reflect similarities established from the dataset-workflow
+preference matrix. We demonstrate our method on meta-mining over biological
+(microarray datasets) problems. The application of our method is not limited to
+the meta-mining problem, its formulations is general enough so that it can be
+applied on problems with similar requirements.

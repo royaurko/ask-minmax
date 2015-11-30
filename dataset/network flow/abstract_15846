@@ -1,0 +1,17 @@
+In this paper, we propose a novel inference method for dynamic genetic
+networks which makes it possible to face with a number of time measurements n
+much smaller than the number of genes p. The approach is based on the concept
+of low order conditional dependence graph that we extend here in the case of
+Dynamic Bayesian Networks. Most of our results are based on the theory of
+graphical models associated with the Directed Acyclic Graphs (DAGs). In this
+way, we define a minimal DAG G which describes exactly the full order
+conditional dependencies given the past of the process. Then, to face with the
+large p and small n estimation case, we propose to approximate DAG G by
+considering low order conditional independencies. We introduce partial qth
+order conditional dependence DAGs G(q) and analyze their probabilistic
+properties. In general, DAGs G(q) differ from DAG G but still reflect relevant
+dependence facts for sparse networks such as genetic networks. By using this
+approximation, we set out a non-bayesian inference method and demonstrate the
+effectiveness of this approach on both simulated and real data analysis. The
+inference procedure is implemented in the R package 'G1DBN' freely available
+from the CRAN archive.

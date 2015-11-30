@@ -1,0 +1,16 @@
+Errors due to hardware or low level software problems, if detected, can be
+fixed by various schemes, such as recomputation from a checkpoint. Silent
+errors are errors in application state that have escaped low-level error
+detection. At extreme scale, where machines can perform astronomically many
+operations per second, silent errors threaten the validity of computed results.
+  We propose a new paradigm for detecting silent errors at the application
+level. Our central idea is to frequently compare computed values to those
+provided by a cheap checking computation, and to build error detectors based on
+the difference between the two output sequences. Numerical analysis provides us
+with usable checking computations for the solution of initial-value problems in
+ODEs and PDEs, arguably the most common problems in computational science.
+Here, we provide, optimize, and test methods based on Runge-Kutta and linear
+multistep methods for ODEs, and on implicit and explicit finite difference
+schemes for PDEs. We take the heat equation and Navier-Stokes equations as
+examples. In tests with artificially injected errors, this approach effectively
+detects almost all meaningful errors, without significant slowdown.

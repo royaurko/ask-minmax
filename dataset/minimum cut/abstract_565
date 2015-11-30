@@ -1,0 +1,19 @@
+The ability to identify interesting and repetitive substructures is an
+essential component to discovering knowledge in structural data. We describe a
+new version of our SUBDUE substructure discovery system based on the minimum
+description length principle. The SUBDUE system discovers substructures that
+compress the original data and represent structural concepts in the data. By
+replacing previously-discovered substructures in the data, multiple passes of
+SUBDUE produce a hierarchical description of the structural regularities in the
+data. SUBDUE uses a computationally-bounded inexact graph match that identifies
+similar, but not identical, instances of a substructure and finds an
+approximate measure of closeness of two substructures when under computational
+constraints. In addition to the minimum description length principle, other
+background knowledge can be used by SUBDUE to guide the search towards more
+appropriate substructures. Experiments in a variety of domains demonstrate
+SUBDUE's ability to find substructures capable of compressing the original data
+and to discover structural concepts important to the domain. Description of
+Online Appendix: This is a compressed tar file containing the SUBDUE discovery
+system, written in C. The program accepts as input databases represented in
+graph form, and will output discovered substructures with their corresponding
+value.

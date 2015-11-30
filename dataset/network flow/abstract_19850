@@ -1,0 +1,16 @@
+We consider the following general scheduling problem: The input consists of n
+jobs, each with an arbitrary release time, size, and a monotone function
+specifying the cost incurred when the job is completed at a particular time.
+The objective is to find a preemptive schedule of minimum aggregate cost. This
+problem formulation is general enough to include many natural scheduling
+objectives, such as weighted flow, weighted tardiness, and sum of flow squared.
+Our main result is a randomized polynomial-time algorithm with an approximation
+ratio O(log log nP), where P is the maximum job size. We also give an O(1)
+approximation in the special case when all jobs have identical release times.
+The main idea is to reduce this scheduling problem to a particular geometric
+set-cover problem which is then solved using the local ratio technique and
+Varadarajan's quasi-uniform sampling technique. This general algorithmic
+approach improves the best known approximation ratios by at least an
+exponential factor (and much more in some cases) for essentially all of the
+nontrivial common special cases of this problem. Our geometric interpretation
+of scheduling may be of independent interest.

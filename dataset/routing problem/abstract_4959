@@ -1,0 +1,22 @@
+In an interference limited network, joint power and admission control (JPAC)
+aims at supporting a maximum number of links at their specified signal to
+interference plus noise ratio (SINR) targets while using a minimum total
+transmission power. Various convex approximation deflation approaches have been
+developed for the JPAC problem. In this paper, we propose an effective
+polynomial time non-convex approximation deflation approach for solving the
+problem. The approach is based on the non-convex $\ell_q$-minimization
+approximation of an equivalent sparse $\ell_0$-minimization reformulation of
+the JPAC problem where $q\in(0,1).$ We show that, for any instance of the JPAC
+problem, there exists a $\bar q\in(0,1)$ such that it can be exactly solved by
+solving its $\ell_q$-minimization approximation problem with any $q\in(0, \bar
+q]$. We also show that finding the global solution of the $\ell_q$
+approximation problem is NP-hard. Then, we propose a potential reduction
+interior-point algorithm, which can return an $\epsilon$-KKT solution of the
+NP-hard $\ell_q$-minimization approximation problem in polynomial time. The
+returned solution can be used to check the simultaneous supportability of all
+links in the network and to guide an iterative link removal procedure,
+resulting in the polynomial time non-convex approximation deflation approach
+for the JPAC problem. Numerical simulations show that the proposed approach
+outperforms the existing convex approximation approaches in terms of the number
+of supported links and the total transmission power, particularly exhibiting a
+quite good performance in selecting which subset of links to support.

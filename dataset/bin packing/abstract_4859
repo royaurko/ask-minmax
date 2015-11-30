@@ -1,0 +1,16 @@
+In the large-scale, Dark Energy Spectroscopic Instrument (DESI), thousands of
+fiber positioners will be used. Those are robotic positioners, with two axis,
+and having the size of a pen. They are tightly packed on the focal plane of the
+telescope. Dedicated micro-robots have been developed and they use 4mm
+brushless DC motors. To simplify the implementation and reduce the space
+occupancy, each actuator will integrate its own electronic control board. This
+board will be used to communicate with the central trajectory generator, manage
+low level control tasks and motor current feeding. In this context, we present
+a solution for a highly compact electronic. This electronic is composed of two
+layers. The first is the power stage that can drive simultaneously two
+brushless motors. The second one consists of a fast microcontroller and deals
+with different control tasks: communication, acquisition of the hall sensor
+signals, commutation of the motors phases, and performing position and current
+regulation. A set of diagnostic functions are also implemented to detect
+failure in the motors or the sensors, and to sense abnormal load change that
+may be the result of two robots colliding.

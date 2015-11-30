@@ -1,0 +1,18 @@
+In this paper we study the problem of tracking an object moving randomly
+through a network of wireless sensors. Our objective is to devise strategies
+for scheduling the sensors to optimize the tradeoff between tracking
+performance and energy consumption. We cast the scheduling problem as a
+Partially Observable Markov Decision Process (POMDP), where the control actions
+correspond to the set of sensors to activate at each time step. Using a
+bottom-up approach, we consider different sensing, motion and cost models with
+increasing levels of difficulty. At the first level, the sensing regions of the
+different sensors do not overlap and the target is only observed within the
+sensing range of an active sensor. Then, we consider sensors with overlapping
+sensing range such that the tracking error, and hence the actions of the
+different sensors, are tightly coupled. Finally, we consider scenarios wherein
+the target locations and sensors' observations assume values on continuous
+spaces. Exact solutions are generally intractable even for the simplest models
+due to the dimensionality of the information and action spaces. Hence, we
+devise approximate solution techniques, and in some cases derive lower bounds
+on the optimal tradeoff curves. The generated scheduling policies, albeit
+suboptimal, often provide close-to-optimal energy-tracking tradeoffs.

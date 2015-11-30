@@ -1,0 +1,17 @@
+Sphere decoding (SD) is a low complexity maximum likelihood (ML) detection
+algorithm, which has been adapted for different linear channels in digital
+communications. The complexity of the SD has been shown to be exponential in
+some cases, and polynomial in others and under certain assumptions. The sphere
+radius and the number of nodes visited throughout the tree traversal search are
+the decisive factors for the complexity of the algorithm. The radius problem
+has been addressed and treated widely in the literature. In this paper, we
+propose a new structure for SD, which drastically reduces the overall
+complexity. The complexity is measured in terms of the floating point
+operations per second (FLOPS) and the number of nodes visited throughout the
+algorithm tree search. This reduction in the complexity is due to the ability
+of decoding the real and imaginary parts of each jointly detected symbol
+independently of each other, making use of the new lattice representation. We
+further show by simulations that the new approach achieves 80% reduction in the
+overall complexity compared to the conventional SD for a 2x2 system, and almost
+50% reduction for the 4x4 and 6x6 cases, thus relaxing the requirements for
+hardware implementation.

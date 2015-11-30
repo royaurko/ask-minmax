@@ -1,0 +1,21 @@
+Object-oriented programming languages such as Java and Objective C have
+become popular for implementing agent-based and other object-based simulations
+since objects in those languages can {\em reflect} (i.e. make runtime queries
+of an object's structure). This allows, for example, a fairly trivial {\em
+serialisation} routine (conversion of an object into a binary representation
+that can be stored or passed over a network) to be written. However C++ does
+not offer this ability, as type information is thrown away at compile time. Yet
+C++ is often a preferred development environment, whether for performance
+reasons or for its expressive features such as operator overloading.
+  In scientific coding, changes to a model's codes takes place constantly, as
+the model is refined, and different phenomena are studied. Yet traditionally,
+facilities such as checkpointing, routines for initialising model parameters
+and analysis of model output depend on the underlying model remaining static,
+otherwise each time a model is modified, a whole slew of supporting routines
+needs to be changed to reflect the new data structures. Reflection offers the
+advantage of the simulation framework adapting to the underlying model without
+programmer intervention, reducing the effort of modifying the model.
+  In this paper, we present the {\em Classdesc} system which brings many of the
+benefits of object reflection to C++, {\em ClassdescMP} which dramatically
+simplifies coding of MPI based parallel programs and {\em
+  Graphcode} a general purpose data parallel programming environment.

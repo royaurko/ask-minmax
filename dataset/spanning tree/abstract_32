@@ -1,0 +1,26 @@
+In this thesis, Minimal Partitioning (MP) algorithm, an innovative algorithm
+for enumerating all the spanning trees in an undirected graph is presented.
+  While MP algorithm uses a computational tree graph to traverse all possible
+spanning trees by the edge exchange technique, it has two unique properties
+compared to previous algorithms. In the first place, the algorithm maintains a
+state of minimal partition size in the spanning tree due to edge deletion. This
+is realized by swapping peripheral edges, more precisely leaf edges, in most of
+edge exchange operations. Consequently, the main structure of the spanning
+trees is preserved during the steps of the enumeration process. This extra
+constraint proves to be advantageous in many applications where the partition
+size is a factor in the solution cost. Secondly, we introduce, and utilize, the
+new concept of edge promotion: the exchanged edges always share one end.
+Practically, and as a result of this property, the interface between the two
+partitions of the spanning tree during edge exchange has to be maintained from
+one side only.
+  For a graph $G(V,E)$, MP algorithm requires $O(log V+E/V)$ expected time and
+$OV log V)$ worst case time for generating each spanning tree. MP algorithm
+requires a total expected space limit of $O(E log V)$ with worst case limit of
+$O(EV)$. Like all edge exchange algorithms, MP algorithm retains the advantage
+of compacted output of $O(1)$ per spanning tree by listing the relative
+differences only.
+  Three sample real-world applications of spanning trees enumeration are
+explored and the effects of using MP algorithm are studied. Namely:
+construction of nets of polyhedra, multi-robots spanning tree routing, and
+computing the electric current in edges of a network. We report that MP
+algorithm outperforms other algorithm by $O(V)$ time complexity.

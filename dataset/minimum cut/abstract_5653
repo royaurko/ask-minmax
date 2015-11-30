@@ -1,0 +1,17 @@
+This work focuses on the numerical assessment of the accuracy of an
+adjoint-based gradient in the perspective of variational data assimilation and
+parameter identification in glaciology. Using noisy synthetic data, we quantify
+the ability to identify the friction coefficient for such methods with a
+non-linear friction law. The exact adjoint problem is solved, based on second
+order numerical schemes, and a comparison with the so called "self-adjoint"
+approximation, neglecting the viscosity dependency to the velocity (leading to
+an incorrect gradient), common in glaciology, is carried out. For data with a
+noise of $1\%$, a lower bound of identifiable wavelengths of $10$ ice
+thicknesses in the friction coefficient is established, when using the exact
+adjoint method, while the "self-adjoint" method is limited, even for lower
+noise, to a minimum of $20$ ice thicknesses wavelengths. The second order exact
+gradient method therefore provides robustness and reliability for the parameter
+identification process. In other respect, the derivation of the adjoint model
+using algorithmic differentiation leads to formulate a generalization of the
+"self-adjoint" approximation towards an incomplete adjoint method, adjustable
+in precision and computational burden.

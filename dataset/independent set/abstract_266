@@ -1,0 +1,19 @@
+Many relations of scientific interest are nonlinear, and even in linear
+systems distributions are often non-Gaussian, for example in fMRI BOLD data. A
+class of search procedures for causal relations in high dimensional data relies
+on sample derived conditional independence decisions. The most common
+applications rely on Gaussian tests that can be systematically erroneous in
+nonlinear non-Gaussian cases. Recent work (Gretton et al. (2009), Tillman et
+al. (2009), Zhang et al. (2011)) has proposed conditional independence tests
+using Reproducing Kernel Hilbert Spaces (RKHS). Among these, perhaps the most
+efficient has been KCI (Kernel Conditional Independence, Zhang et al. (2011)),
+with computational requirements that grow effectively at least as O(N3),
+placing it out of range of large sample size analysis, and restricting its
+applicability to high dimensional data sets. We propose a class of O(N2) tests
+using conditional correlation independence (CCI) that require a few seconds on
+a standard workstation for tests that require tens of minutes to hours for the
+KCI method, depending on degree of parallelization, with similar accuracy. For
+accuracy on difficult nonlinear, non-Gaussian data sets, we also compare a
+recent test due to Harris & Drton (2012), applicable to nonlinear, non-Gaussian
+distributions in the Gaussian copula, as well as to partial correlation, a
+linear Gaussian test.

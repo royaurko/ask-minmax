@@ -1,0 +1,19 @@
+In a recent paper, we introduced the simultaneous representation problem
+(defined for any graph class C) and studied the problem for chordal,
+comparability and permutation graphs. For interval graphs, the problem is
+defined as follows. Two interval graphs G_1 and G_2, sharing some vertices I
+(and the corresponding induced edges), are said to be `simultaneous interval
+graphs' if there exist interval representations R_1 and R_2 of G_1 and G_2,
+such that any vertex of I is mapped to the same interval in both R_1 and R_2.
+Equivalently, G_1 and G_2 are simultaneous interval graphs if there exist edges
+E' between G_1-I and G_2-I such that G_1 \cup G_2 \cup E' is an interval graph.
+  Simultaneous representation problems are related to simultaneous planar
+embeddings, and have applications in any situation where it is desirable to
+consistently represent two related graphs, for example: interval graphs
+capturing overlaps of DNA fragments of two similar organisms; or graphs
+connected in time, where one is an updated version of the other.
+  In this paper we give an O(n^2*logn) time algorithm for recognizing
+simultaneous interval graphs,where n = |G_1 \cup G_2|. This result complements
+the polynomial time algorithms for recognizing probe interval graphs and
+provides an efficient algorithm for the interval graph sandwich problem for the
+special case where the set of optional edges induce a complete bipartite graph.

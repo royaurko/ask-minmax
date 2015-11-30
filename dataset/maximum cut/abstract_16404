@@ -1,0 +1,22 @@
+An efficient, low-complexity, soft-output detector for general lattices is
+presented, based on their Tanner graph (TG) representations. Closest-point
+searches in lattices can be performed as non-binary belief propagation on
+associated TGs; soft-information output is naturally generated in the process;
+the algorithm requires no backtrack (cf. classic sphere decoding), and extracts
+extrinsic information. A lattice's coding gain enables equivalence relations
+between lattice points, which can be thereby partitioned in cosets. Total and
+extrinsic a posteriori probabilities at the detector's output further enable
+the use of soft detection information in iterative schemes. The algorithm is
+illustrated via two scenarios that transmit a 32-point, uncoded
+super-orthogonal (SO) constellation for multiple-input multiple-output (MIMO)
+channels, carved from an 8-dimensional non-orthogonal lattice (a direct sum of
+two 4-dimensional checkerboard lattice): it achieves maximum likelihood
+performance in quasistatic fading; and, performs close to interference-free
+transmission, and identically to list sphere decoding, in independent fading
+with coordinate interleaving and iterative equalization and detection. Latter
+scenario outperforms former despite the absence of forward error correction
+coding---because the inherent lattice coding gain allows for the refining of
+extrinsic information. The lattice constellation is the same as the one
+employed in the SO space-time trellis codes first introduced for 2-by-2 MIMO by
+Ionescu et al., then independently by Jafarkhani and Seshadri. Complexity is
+log-linear in lattice dimensionality, vs. cubic in sphere decoders.

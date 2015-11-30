@@ -1,0 +1,17 @@
+In many applications of computer algebra large expressions must be simplified
+to make repeated numerical evaluations tractable. Previous works presented
+heuristically guided improvements, e.g., for Horner schemes. The remaining
+expression is then further reduced by common subexpression elimination. A
+recent approach successfully applied a relatively new algorithm, Monte Carlo
+Tree Search (MCTS) with UCT as the selection criterion, to find better variable
+orderings. Yet, this approach is fit for further improvements since it is
+sensitive to the so-called exploration-exploitation constant $C_p$ and the
+number of tree updates $N$. In this paper we propose a new selection criterion
+called Simulated Annealing UCT (SA-UCT) that has a dynamic
+exploration-exploitation parameter, which decreases with the iteration number
+$i$ and thus reduces the importance of exploration over time. First, we provide
+an intuitive explanation in terms of the exploration-exploitation behavior of
+the algorithm. Then, we test our algorithm on three large expressions of
+different origins. We observe that SA-UCT widens the interval of good initial
+values $C_p$ where best results are achieved. The improvement is large (more
+than a tenfold) and facilitates the selection of an appropriate $C_p$.

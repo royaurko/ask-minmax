@@ -1,0 +1,14 @@
+Given an integer k, we consider the parallel k-stripping process applied to a
+hypergraph H: removing all vertices with degree less than k in each iteration
+until reaching the k-core of H. Take H as H_r(n,m): a random r-uniform
+hypergraph on n vertices and m hyperedges with the uniform distribution. Fixing
+k,r\ge 2 with (k,r)\neq (2,2), it has previously been proved that there is a
+constant c_{r,k} such that for all m=cn with constant c\neq c_{r,k}, with high
+probability, the parallel k-stripping process takes O(\log n) iterations. In
+this paper we investigate the critical case when c=c_{r,k}+o(1). We show that
+the number of iterations that the process takes can go up to some power of n,
+as long as c approaches c_{r,k} sufficiently fast. A second result we show
+involves the depth of a non-k-core vertex v: the minimum number of steps
+required to delete v from H_r(n,m) where in each step one vertex with degree
+less than k is removed. We will prove lower and upper bounds on the maximum
+depth over all non-k-core vertices.

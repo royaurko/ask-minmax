@@ -1,0 +1,26 @@
+The growing number of dimensionality reduction methods available for data
+visualization has recently inspired the development of quality assessment
+measures, in order to evaluate the resulting low-dimensional representation
+independently from a methods' inherent criteria. Several (existing) quality
+measures can be (re)formulated based on the so-called co-ranking matrix, which
+subsumes all rank errors (i.e. differences between the ranking of distances
+from every point to all others, comparing the low-dimensional representation to
+the original data). The measures are often based on the partioning of the
+co-ranking matrix into 4 submatrices, divided at the K-th row and column,
+calculating a weighted combination of the sums of each submatrix. Hence, the
+evaluation process typically involves plotting a graph over several (or even
+all possible) settings of the parameter K. Considering simple artificial
+examples, we argue that this parameter controls two notions at once, that need
+not necessarily be combined, and that the rectangular shape of submatrices is
+disadvantageous for an intuitive interpretation of the parameter. We debate
+that quality measures, as general and flexible evaluation tools, should have
+parameters with a direct and intuitive interpretation as to which specific
+error types are tolerated or penalized. Therefore, we propose to replace K with
+two parameters to control these notions separately, and introduce a differently
+shaped weighting on the co-ranking matrix. The two new parameters can then
+directly be interpreted as a threshold up to which rank errors are tolerated,
+and a threshold up to which the rank-distances are significant for the
+evaluation. Moreover, we propose a color representation of local quality to
+visually support the evaluation process for a given mapping, where every point
+in the mapping is colored according to its local contribution to the overall
+quality.

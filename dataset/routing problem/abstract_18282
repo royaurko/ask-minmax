@@ -1,0 +1,26 @@
+In this paper we consider a fundamental problem in the area of viral
+marketing, called T{\scriptsize ARGET} S{\scriptsize ET} S{\scriptsize
+ELECTION} problem.
+  In a a viral marketing setting, social networks are modeled by graphs with
+potential customers of a new product as vertices and friend relationships as
+edges, where each vertex $v$ is assigned a threshold value $\theta(v)$. The
+thresholds represent the different latent tendencies of customers (vertices) to
+buy the new product when their friend (neighbors) do.
+  Consider a repetitive process on social network $(G,\theta)$ where each
+vertex $v$ is associated with two states, active and inactive, which indicate
+whether $v$ is persuaded into buying the new product. Suppose we are given a
+target set $S\subseteq V(G)$. Initially, all vertices in $G$ are inactive. At
+time step 0, we choose all vertices in $S$ to become active.
+  Then, at every time step $t>0$, all vertices that were active in time step
+$t-1$ remain active, and we activate any vertex $v$ if at least $\theta(v)$ of
+its neighbors were active at time step $t-1$. The activation process terminates
+when no more vertices can get activated. We are interested in the following
+optimization problem, called T{\scriptsize ARGET} S{\scriptsize ET}
+S{\scriptsize ELECTION}: Finding a target set $S$ of smallest possible size
+that activates all vertices of $G$. There is an important and well-studied
+threshold called strict majority threshold, where for every vertex $v$ in $G$
+we have $\theta(v)=\lceil{(d(v) +1)/2}\rceil$ and $d(v)$ is the degree of $v$
+in $G$. In this paper, we consider the T{\scriptsize ARGET} S{\scriptsize ET}
+S{\scriptsize ELECTION} problem under strict majority thresholds and focus on
+three popular regular network structures: cycle permutation graphs, generalized
+Petersen graphs and torus cordalis.

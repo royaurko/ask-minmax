@@ -1,0 +1,12 @@
+We consider the problem of optimizing time averages in systems with
+independent and identically distributed behavior over renewal frames. This
+includes scheduling and task processing to maximize utility in stochastic
+networks with variable length scheduling modes. Every frame, a new policy is
+implemented that affects the frame size and that creates a vector of
+attributes. An algorithm is developed for choosing policies on each frame in
+order to maximize a concave function of the time average attribute vector,
+subject to additional time average constraints. The algorithm is based on
+Lyapunov optimization concepts and involves minimizing a ``drift-plus-penalty''
+ratio over each frame. The algorithm can learn efficient behavior without
+a-priori statistical knowledge by sampling from the past. Our framework is
+applicable to a large class of problems, including Markov decision problems.

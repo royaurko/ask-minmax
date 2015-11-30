@@ -1,0 +1,26 @@
+In this paper we propose a framework for solving constrained online convex
+optimization problem. Our motivation stems from the observation that most
+algorithms proposed for online convex optimization require a projection onto
+the convex set $\mathcal{K}$ from which the decisions are made. While for
+simple shapes (e.g. Euclidean ball) the projection is straightforward, for
+arbitrary complex sets this is the main computational challenge and may be
+inefficient in practice. In this paper, we consider an alternative online
+convex optimization problem. Instead of requiring decisions belong to
+$\mathcal{K}$ for all rounds, we only require that the constraints which define
+the set $\mathcal{K}$ be satisfied in the long run. We show that our framework
+can be utilized to solve a relaxed version of online learning with side
+constraints addressed in \cite{DBLP:conf/colt/MannorT06} and
+\cite{DBLP:conf/aaai/KvetonYTM08}. By turning the problem into an online
+convex-concave optimization problem, we propose an efficient algorithm which
+achieves $\tilde{\mathcal{O}}(\sqrt{T})$ regret bound and
+$\tilde{\mathcal{O}}(T^{3/4})$ bound for the violation of constraints. Then we
+modify the algorithm in order to guarantee that the constraints are satisfied
+in the long run. This gain is achieved at the price of getting
+$\tilde{\mathcal{O}}(T^{3/4})$ regret bound. Our second algorithm is based on
+the Mirror Prox method \citep{nemirovski-2005-prox} to solve variational
+inequalities which achieves $\tilde{\mathcal{\mathcal{O}}}(T^{2/3})$ bound for
+both regret and the violation of constraints when the domain $\K$ can be
+described by a finite number of linear constraints. Finally, we extend the
+result to the setting where we only have partial access to the convex set
+$\mathcal{K}$ and propose a multipoint bandit feedback algorithm with the same
+bounds in expectation as our first algorithm.

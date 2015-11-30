@@ -1,0 +1,20 @@
+The problem of deciding whether one point in a program is data dependent upon
+another is fundamental to program analysis and has been widely studied. In this
+paper we consider this problem at the abstraction level of program schemas in
+which computations occur in the Herbrand domain of terms and predicate symbols,
+which represent arbitrary predicate functions, are allowed. Given a vertex l in
+the flowchart of a schema S having only equality (variable copying) assignments
+and variables v,w, we show that it is PSPACE-hard to decide whether there
+exists an execution of a program defined by S in which v holds the initial
+value of w at at least one occurrence of l on the path of execution, with
+membership in PSPACE holding provided there is a constant upper bound on the
+arity of any predicate in S. We also consider the `dual' problem in which v is
+required to hold the initial value of w at every occurrence of l, for which the
+analogous results hold. Additionally, the former problem for programs with
+non-deterministic branching (in effect, free schemas) in which assignments with
+functions are allowed is proved to be polynomial-time decidable provided a
+constant upper bound is placed upon the number of occurrences of the
+concurrency operator in the schemas being considered. This result is promising
+since many concurrent systems have a relatively small number of threads
+(concurrent processes), especially when compared with the number of statements
+they have.

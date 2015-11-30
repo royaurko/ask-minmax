@@ -1,0 +1,14 @@
+Constraint Programming (CP) solvers typically tackle optimization problems by
+repeatedly finding solutions to a problem while placing tighter and tighter
+bounds on the solution cost. This approach is somewhat naive, especially for
+soft-constraint optimization problems in which the soft constraints are mostly
+satisfied. Unsatisfiable-core approaches to solving soft constraint problems in
+SAT (e.g. MAXSAT) force all soft constraints to be hard initially. When solving
+fails they return an unsatisfiable core, as a set of soft constraints that
+cannot hold simultaneously. These are reverted to soft and solving continues.
+Since lazy clause generation solvers can also return unsatisfiable cores we can
+adapt this approach to constraint programming. We adapt the original MAXSAT
+unsatisfiable core solving approach to be usable for constraint programming and
+define a number of extensions. Experimental results show that our methods are
+beneficial on a broad class of CP-optimization benchmarks involving soft
+constraints, cardinality or preferences.

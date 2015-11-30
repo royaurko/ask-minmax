@@ -1,0 +1,23 @@
+We consider a two-hop wireless network where a transmitter communicates with
+a receiver via $M$ relays with an amplify-and-forward (AF) protocol. Recent
+works have shown that sophisticated linear processing such as beamforming and
+distributed space-time coding (DSTC) at relays enables to improve the AF
+performance. However, the relative utility of these strategies depend on the
+available channel state information at transmitter (CSIT), which in turn
+depends on system parameters such as the speed of the underlying fading channel
+and that of training and feedback procedures. Moreover, it is of practical
+interest to have a single transmit scheme that handles different CSIT
+scenarios. This motivates us to consider a unified approach based on DSTC that
+potentially provides diversity gain with statistical CSIT and exploits some
+additional side information if available. Under individual power constraints at
+the relays, we optimize the amplifier power allocation such that pairwise error
+probability conditioned on the available CSIT is minimized. Under perfect CSIT
+we propose an on-off gradient algorithm that efficiently finds a set of relays
+to switch on. Under partial and statistical CSIT, we propose a simple
+waterfilling algorithm that yields a non-trivial solution between maximum power
+allocation and a generalized STC that equalizes the averaged amplified noise
+for all relays. Moreover, we derive closed-form solutions for M=2 and in
+certain asymptotic regimes that enable an easy interpretation of the proposed
+algorithms. It is found that an appropriate amplifier power allocation is
+mandatory for DSTC to offer sufficient diversity and power gain in a general
+network topology.

@@ -1,0 +1,16 @@
+Simple exponential smoothing is widely used in forecasting economic time
+series. This is because it is quick to compute and it generally delivers
+accurate forecasts. On the other hand, its multivariate version has received
+little attention due to the complications arising with the estimation. Indeed,
+standard multivariate maximum likelihood methods are affected by numerical
+convergence issues and bad complexity, growing with the dimensionality of the
+model. In this paper, we introduce a new estimation strategy for multivariate
+exponential smoothing, based on aggregating its observations into scalar models
+and estimating them. The original high-dimensional maximum likelihood problem
+is broken down into several univariate ones, which are easier to solve.
+Contrary to the multivariate maximum likelihood approach, the suggested
+algorithm does not suffer heavily from the dimensionality of the model. The
+method can be used for time series forecasting. In addition, simulation results
+show that our approach performs at least as well as a maximum likelihood
+estimator on the underlying VMA(1) representation, at least in our test
+problems.

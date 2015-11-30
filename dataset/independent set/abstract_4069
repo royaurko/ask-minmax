@@ -1,0 +1,18 @@
+In this paper, we focus on the following testing problem: assume that we are
+given observations of a real-valued signal along the grid $0,1,\ldots,N-1$,
+corrupted by white Gaussian noise. We want to distinguish between two
+hypotheses: (a) the signal is a nuisance - a linear combination of $d_n$
+harmonic oscillations of known frequencies, and (b) signal is the sum of a
+nuisance and a linear combination of a given number $d_s$ of harmonic
+oscillations with unknown frequencies, and such that the distance (measured in
+the uniform norm on the grid) between the signal and the set of nuisances is at
+least $\rho>0$. We propose a computationally efficient test for distinguishing
+between (a) and (b) and show that its "resolution" (the smallest value of
+$\rho$ for which (a) and (b) are distinguished with a given confidence
+$1-\alpha$) is $\mathrm{O}(\sqrt{\ln(N/\alpha)/N})$, with the hidden factor
+depending solely on $d_n$ and $d_s$ and independent of the frequencies in
+question. We show that this resolution, up to a factor which is polynomial in
+$d_n,d_s$ and logarithmic in $N$, is the best possible under circumstances. We
+further extend the outlined results to the case of nuisances and signals close
+to linear combinations of harmonic oscillations, and provide illustrative
+numerical results.

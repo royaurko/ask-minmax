@@ -1,0 +1,17 @@
+In systems with hard real-time constraints, it is necessary to compute upper
+bounds on the worst-case execution time (WCET) of programs; the closer the
+bound to the real WCET, the better. This is especially the case of synchronous
+reactive control loops with a fixed clock; the WCET of the loop body must not
+exceed the clock period. We compute the WCET (or at least a close upper bound
+thereof) as the solution of an optimization modulo theory problem that takes
+into account the semantics of the program, in contrast to other methods that
+compute the longest path whether or not it is feasible according to these
+semantics. Optimization modulo theory extends satisfiability modulo theory
+(SMT) to maximization problems. Immediate encodings of WCET problems into SMT
+yield formulas intractable for all current production-grade solvers; this is
+inherent to the DPLL(T) approach to SMT implemented in these solvers. By
+conjoining some appropriate "cuts" to these formulas, we considerably reduce
+the computation time of the SMT-solver. We experimented our approach on a
+variety of control programs, using the OTAWA analyzer both as baseline and as
+underlying microarchitectural analysis for our analysis, and show notable
+improvement on the WCET bound on a variety of benchmarks and control programs.

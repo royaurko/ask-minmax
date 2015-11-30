@@ -1,0 +1,16 @@
+We bound the condition number of the Jacobian in pseudo arclength
+continuation problems, and we quantify the effect of this condition number on
+the linear system solution in a Newton GMRES solve.
+  In pseudo arclength continuation one repeatedly solves systems of nonlinear
+equations $F(u(s),\lambda(s))=0$ for a real-valued function $u$ and a real
+parameter $\lambda$, given different values of the arclength $s$. It is known
+that the Jacobian $F_x$ of $F$ with respect to $x=(u,\lambda)$ is nonsingular,
+if the path contains only regular points and simple fold singularities. We
+introduce a new characterization of simple folds in terms of the singular value
+decomposition, and we use it to derive a new bound for the norm of $F_x^{-1}$.
+We also show that the convergence rate of GMRES in a Newton step for
+$F(u(s),\lambda(s))=0$ is essentially the same as that of the original problem
+$G(u,\lambda)=0$. In particular we prove that the bounds on the degrees of the
+minimal polynomials of the Jacobians $F_x$ and $G_u$ differ by at most 2. We
+illustrate the effectiveness of our bounds with an example from radiative
+transfer theory.

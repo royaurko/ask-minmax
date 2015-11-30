@@ -1,0 +1,22 @@
+Efficient identification and follow-up of astronomical transients is hindered
+by the need for humans to manually select promising candidates from data
+streams that contain many false positives. These artefacts arise in the
+difference images that are produced by most major ground-based time domain
+surveys with large format CCD cameras. This dependence on humans to reject
+bogus detections is unsustainable for next generation all-sky surveys and
+significant effort is now being invested to solve the problem computationally.
+In this paper we explore a simple machine learning approach to real-bogus
+classification by constructing a training set from the image data of ~32000
+real astrophysical transients and bogus detections from the Pan-STARRS1 Medium
+Deep Survey. We derive our feature representation from the pixel intensity
+values of a 20x20 pixel stamp around the centre of the candidates. This differs
+from previous work in that it works directly on the pixels rather than
+catalogued domain knowledge for feature design or selection. Three machine
+learning algorithms are trained (artificial neural networks, support vector
+machines and random forests) and their performances are tested on a held-out
+subset of 25% of the training data. We find the best results from the random
+forest classifier and demonstrate that by accepting a false positive rate of
+1%, the classifier initially suggests a missed detection rate of around 10%.
+However we also find that a combination of bright star variability, nuclear
+transients and uncertainty in human labelling means that our best estimate of
+the missed detection rate is approximately 6%.

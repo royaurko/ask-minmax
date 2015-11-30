@@ -1,0 +1,20 @@
+Consider a linear regression model with n-dimensional response vector,
+regression parameter \beta = (\beta_1, ..., \beta_p) and independent and
+identically N(0, \sigma^2) distributed errors. Suppose that the parameter of
+interest is \theta = a^T \beta where a is a specified vector. Define the
+parameter \tau = c^T \beta - t where c and t are specified. Also suppose that
+we have uncertain prior information that \tau = 0. Part of our evaluation of a
+frequentist confidence interval for \theta is the ratio (expected length of
+this confidence interval)/(expected length of standard 1-\alpha confidence
+interval), which we call the scaled expected length of this interval. We say
+that a 1-\alpha confidence interval for \theta utilizes this uncertain prior
+information if (a) the scaled expected length of this interval is significantly
+less than 1 when \tau = 0, (b) the maximum value of the scaled expected length
+is not too much larger than 1 and (c) this confidence interval reverts to the
+standard 1-\alpha confidence interval when the data happen to strongly
+contradict the prior information. Kabaila and Giri, 2009, JSPI present a new
+method for finding such a confidence interval. Let \hat\beta denote the least
+squares estimator of \beta. Also let \hat\Theta = a^T \hat\beta and \hat\tau =
+c^T \hat\beta - t. Using computations and new theoretical results, we show that
+the performance of this confidence interval improves as |Corr(\hat\Theta,
+\hat\tau)| increases and n-p decreases.

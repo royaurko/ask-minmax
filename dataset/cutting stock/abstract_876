@@ -1,0 +1,13 @@
+Ajax applications are designed to have high user interactivity and low
+user-perceived latency. Real-time dynamic web data such as news headlines,
+stock tickers, and auction updates need to be propagated to the users as soon
+as possible. However, Ajax still suffers from the limitations of the Web's
+request/response architecture which prevents servers from pushing real-time
+dynamic web data. Such applications usually use a pull style to obtain the
+latest updates, where the client actively requests the changes based on a
+predefined interval. It is possible to overcome this limitation by adopting a
+push style of interaction where the server broadcasts data when a change occurs
+on the server side. Both these options have their own trade-offs. This paper
+explores the fundamental limits of browser-based applications and analyzes push
+solutions for Ajax technology. It also shows the results of an empirical study
+comparing push and pull.

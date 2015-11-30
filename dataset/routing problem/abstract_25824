@@ -1,0 +1,13 @@
+We investigate the problem of determining a set S of k indistinguishable
+integers in the range [1,n]. The algorithm is allowed to query an integer $q\in
+[1,n]$, and receive a response comparing this integer to an integer randomly
+chosen from S. The algorithm has no control over which element of S the query q
+is compared to. We show tight bounds for this problem. In particular, we show
+that in the natural regime where $k\le n$, the optimal number of queries to
+attain $n^{-\Omega(1)}$ error probability is $\Theta(k^3 \log n)$. In the
+regime where $k>n$, the optimal number of queries is $\Theta(n^2 k \log n)$.
+  Our main technical tools include the use of information theory to derive the
+lower bounds, and the application of noisy binary search in the spirit of
+Feige, Raghavan, Peleg, and Upfal (1994). In particular, our lower bound
+technique is likely to be applicable in other situations that involve search
+under uncertainty.

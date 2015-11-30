@@ -1,0 +1,27 @@
+We study the problem of obtaining deterministic black-box polynomial identity
+testing algorithms (PIT) for algebraic branching programs (ABPs) that are
+read-once and oblivious. This class has an deterministic white-box polynomial
+identity testing algorithm (due to Raz and Shpilka), but prior to this work
+there was no known such black-box algorithm.
+  The main result of this work gives the first quasi-polynomial sized hitting
+sets for size S circuits from this class, when the order of the variables is
+known. As our hitting set is of size exp(lg^2 S), this is analogous (in the
+terminology of boolean pseudorandomness) to a seed-length of lg^2 S, which is
+the seed length of the pseudorandom generators of Nisan and
+Impagliazzo-Nisan-Wigderson for read-once oblivious boolean branching programs.
+  Our results are stronger for branching programs of bounded width, where we
+give a hitting set of size exp(lg^2 S/lglg S), corresponding to a seed length
+of lg^2 S/lglg S. This is in stark contrast to the known results for read-once
+oblivious boolean branching programs of bounded width, where no pseudorandom
+generator (or hitting set) with seed length o(lg^2 S) is known.
+  In follow up work, we strengthened a result of Mulmuley, and showed that
+derandomizing a particular case of the Noether Normalization Lemma is reducible
+to black-box PIT of read-once oblivious ABPs. Using the results of the present
+work, this gives a derandomization of Noether Normalization in that case, which
+Mulmuley conjectured would difficult due to its relations to problems in
+algebraic geometry.
+  We also show that several other circuit classes can be black-box reduced to
+read-once oblivious ABPs, including set-multilinear ABPs (a generalization of
+depth-3 set-multilinear formulas), non-commutative ABPs (generalizing
+non-commutative formulas), and (semi-)diagonal depth-4 circuits (as introduced
+by Saxena).

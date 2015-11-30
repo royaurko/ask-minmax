@@ -1,0 +1,19 @@
+The objective of this research is to integrate an RFID (Radio Frequency
+Identification) reader into a Wireless Sensor Network (WSN) to contributorize or
+keep track of people carrying RFID tags. The objective was accomplished by
+integrating hardware and software. The hardware consisted of two WSN nodes -
+the RFID node connected to one of the WSN nodes, and a computer connected to
+the other WSN node. For the RFID equipment, we used the SM130-EK kit, which
+included the RFID reader and the RFID tags; and for the WSN, we used the
+Synapse Network Evaluation kit, which included the two sensor nodes. The
+software consisted of a program module developed in Python to control the
+microprocessors of the nodes; and a database controlled by a simple program to
+manage the tag IDs of people wearing them. The WSN and RFID nodes were
+connected through I2C interfacing. Also, the work of sending commands to the
+RFID node, to make it read a tag and send it back to the computer, was
+accomplished by the Python code developed which also controls the data signals.
+At the computer, the received tag ID is evaluated with other existing tag IDs
+on the database, to check if that tag has contributorization or not to be in the
+covered area. Our research has the potential of being adapted for use with
+secure real-time access control applications involving WSN and RFID
+technologies.

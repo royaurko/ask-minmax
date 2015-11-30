@@ -1,0 +1,13 @@
+In this paper a new mining algorithm is defined based on frequent item set.
+Apriori Algorithm scans the database every time when it finds the frequent item
+set so it is very time consuming and at each step it generates candidate item
+set. So for large databases it takes lots of space to store candidate item set
+.In undirected item set graph, it is improvement on apriori but it takes time
+and space for tree generation. The defined algorithm scans the database at the
+start only once and then from that scanned data base it generates the Trade
+List. It contains the information of whole database. By considering minimum
+support it finds the frequent item set and by considering the minimum
+confidence it generates the association rule. If database and minimum support
+is changed, the new algorithm finds the new frequent items by scanning Trade
+List. That is why it's executing efficiency is improved distinctly compared to
+traditional algorithm.

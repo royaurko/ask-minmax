@@ -1,0 +1,14 @@
+We address a version of the set-cover problem where we do not know the sets
+initially (and hence referred to as covert) but we can query an element to find
+out which sets contain this element as well as query a set to know the
+elements. We want to find a small set-cover using a minimal number of such
+queries. We present a Monte Carlo randomized algorithm that approximates an
+optimal set-cover of size $OPT$ within $O(\log N)$ factor with high probability
+using $O(OPT \cdot \log^2 N)$ queries where $N$ is the input size.
+  We apply this technique to the network discovery problem that involves
+certifying all the edges and non-edges of an unknown $n$-vertices graph based
+on layered-graph queries from a minimal number of vertices. By reducing it to
+the covert set-cover problem we present an $O(\log^2 n)$-competitive Monte
+Carlo randomized algorithm for the covert version of network discovery problem.
+The previously best known algorithm has a competitive ratio of $\Omega
+(\sqrt{n\log n})$ and therefore our result achieves an exponential improvement.

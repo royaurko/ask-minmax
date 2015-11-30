@@ -1,0 +1,14 @@
+We present a domain decomposition approach for the simulation of charge
+transport in heterojunction semiconductors. The problem is characterized by a
+large variation of primary variables across an interface region of a size much
+smaller than the device scale, and requires a multiscale approach in which that
+region is modeled as an internal boundary. The model combines drift diffusion
+equations on subdomains coupled by thermionic emission heterojunction model on
+the interface which involves a nonhomogeneous jump computed at fine scale with
+Density Functional Theory. Our full domain decomposition approach extends our
+previous work for the potential equation only, and we present perspectives on
+its HPC implementation. The model can be used, e.g., for the design of higher
+efficiency solar cells for which experimental results are not available. More
+generally, our algorithm is naturally parallelizable and is a new domain
+decomposition paradigm for problems with multiscale phenomena associated with
+internal interfaces and/or boundary layers.

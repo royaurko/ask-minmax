@@ -1,0 +1,14 @@
+In this paper we study an algorithm for solving a minimization problem
+composed of a differentiable (possibly non-convex) and a convex (possibly
+non-differentiable) function. The algorithm iPiano combines forward-backward
+splitting with an inertial force. It can be seen as a non-smooth split version
+of the Heavy-ball method from Polyak. A rigorous analysis of the algorithm for
+the proposed class of problems yields global convergence of the function values
+and the arguments. This makes the algorithm robust for usage on non-convex
+problems. The convergence result is obtained based on the \KL inequality. This
+is a very weak restriction, which was used to prove convergence for several
+other gradient methods. First, an abstract convergence theorem for a generic
+algorithm is proved, and, then iPiano is shown to satisfy the requirements of
+this theorem. Furthermore, a convergence rate is established for the general
+problem class. We demonstrate iPiano on computer vision problems: image
+denoising with learned priors and diffusion based image compression.

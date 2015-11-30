@@ -1,0 +1,16 @@
+Exact Max-SAT solvers, compared with SAT solvers, apply little inference at
+each node of the proof tree. Commonly used SAT inference rules like unit
+propagation produce a simplified formula that preserves satisfiability but,
+unfortunately, solving the Max-SAT problem for the simplified formula is not
+equivalent to solving it for the original formula. In this paper, we define a
+number of original inference rules that, besides being applied efficiently,
+transform Max-SAT instances into equivalent Max-SAT instances which are easier
+to solve. The soundness of the rules, that can be seen as refinements of unit
+resolution adapted to Max-SAT, are proved in a novel and simple way via an
+integer programming transformation. With the aim of finding out how powerful
+the inference rules are in practice, we have developed a new Max-SAT solver,
+called MaxSatz, which incorporates those rules, and performed an experimental
+investigation. The results provide empirical evidence that MaxSatz is very
+competitive, at least, on random Max-2SAT, random Max-3SAT, Max-Cut, and Graph
+3-coloring instances, as well as on the benchmarks from the Max-SAT Evaluation
+2006.

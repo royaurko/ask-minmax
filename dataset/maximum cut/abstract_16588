@@ -1,0 +1,17 @@
+Being motivated by John Tantalo's Planarity Game, we consider straight line
+plane drawings of a planar graph $G$ with edge crossings and wonder how
+obfuscated such drawings can be. We define $obf(G)$, the obfuscation complexity
+of $G$, to be the maximum number of edge crossings in a drawing of $G$.
+Relating $obf(G)$ to the distribution of vertex degrees in $G$, we show an
+efficient way of constructing a drawing of $G$ with at least $obf(G)/3$ edge
+crossings. We prove bounds $(\delta(G)^2/24-o(1))n^2 < \obf G <3 n^2$ for an
+$n$-vertex planar graph $G$ with minimum vertex degree $\delta(G)\ge 2$.
+  The shift complexity of $G$, denoted by $shift(G)$, is the minimum number of
+vertex shifts sufficient to eliminate all edge crossings in an arbitrarily
+obfuscated drawing of $G$ (after shifting a vertex, all incident edges are
+supposed to be redrawn correspondingly). If $\delta(G)\ge 3$, then $shift(G)$
+is linear in the number of vertices due to the known fact that the matching
+number of $G$ is linear. However, in the case $\delta(G)\ge2$ we notice that
+$shift(G)$ can be linear even if the matching number is bounded. As for
+computational complexity, we show that, given a drawing $D$ of a planar graph,
+it is NP-hard to find an optimum sequence of shifts making $D$ crossing-free.

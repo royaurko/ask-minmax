@@ -1,0 +1,18 @@
+We provide the currently fastest randomized (1+epsilon)-approximation
+algorithm for the closest vector problem in the infinity norm. The running time
+of our method depends on the dimension n and the approximation guarantee
+epsilon by 2^O(n) (log 1/epsilon)^O(n)$ which improves upon the
+(2+1/epsilon)^O(n) running time of the previously best algorithm by Bl\"omer
+and Naewe.
+  Our algorithm is based on a solution of the following geometric covering
+problem that is of interest of its own: Given epsilon in (0,1), how many
+ellipsoids are necessary to cover the cube [-1+epsilon, 1-epsilon]^n such that
+all ellipsoids are contained in the standard unit cube [-1,1]^n? We provide an
+almost optimal bound for the case where the ellipsoids are restricted to be
+axis-parallel.
+  We then apply our covering scheme to a variation of this covering problem
+where one wants to cover [-1+epsilon,1-epsilon]^n with parallelepipeds that, if
+scaled by two, are still contained in the unit cube. Thereby, we obtain a
+method to boost any 2-approximation algorithm for closest-vector in the
+infinity norm to a (1+epsilon)-approximation algorithm that has the desired
+running time.

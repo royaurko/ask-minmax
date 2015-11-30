@@ -1,0 +1,17 @@
+Reachability and shortest path problems are NL-complete for general graphs.
+They are known to be in L for graphs of tree-width 2 [JT07]. However, for
+graphs of tree-width larger than 2, no bound better than NL is known. In this
+paper, we improve these bounds for k-trees, where k is a constant. In
+particular, the main results of our paper are log-space algorithms for
+reachability in directed k-trees, and for computation of shortest and longest
+paths in directed acyclic k-trees.
+  Besides the path problems mentioned above, we also consider the problem of
+deciding whether a k-tree has a perfect macthing (decision version), and if so,
+finding a perfect match- ing (search version), and prove that these two
+problems are L-complete. These problems are known to be in P and in RNC for
+general graphs, and in SPL for planar bipartite graphs [DKR08].
+  Our results settle the complexity of these problems for the class of k-trees.
+The results are also applicable for bounded tree-width graphs, when a
+tree-decomposition is given as input. The technique central to our algorithms
+is a careful implementation of divide-and-conquer approach in log-space, along
+with some ideas from [JT07] and [LMR07].

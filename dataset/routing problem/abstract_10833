@@ -1,0 +1,22 @@
+We study the design of truthful mechanisms that do not use payments for the
+generalized assignment problem (GAP) and its variants. An instance of the GAP
+consists of a bipartite graph with jobs on one side and machines on the other.
+Machines have capacities and edges have values and sizes; the goal is to
+construct a welfare maximizing feasible assignment. In our model of private
+valuations, motivated by impossibility results, the value and sizes on all
+job-machine pairs are public information; however, whether an edge exists or
+not in the bipartite graph is a job's private information.
+  We study several variants of the GAP starting with matching. For the
+unweighted version, we give an optimal strategyproof mechanism; for maximum
+weight bipartite matching, however, we show give a 2-approximate strategyproof
+mechanism and show by a matching lowerbound that this is optimal. Next we study
+knapsack-like problems, which are APX-hard. For these problems, we develop a
+general LP-based technique that extends the ideas of Lavi and Swamy to reduce
+designing a truthful mechanism without money to designing such a mechanism for
+the fractional version of the problem, at a loss of a factor equal to the
+integrality gap in the approximation ratio. We use this technique to obtain
+strategyproof mechanisms with constant approximation ratios for these problems.
+We then design an O(log n)-approximate strategyproof mechanism for the GAP by
+reducing, with logarithmic loss in the approximation, to our solution for the
+value-invariant GAP. Our technique may be of independent interest for designing
+truthful mechanisms without money for other LP-based problems.

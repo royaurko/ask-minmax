@@ -1,0 +1,15 @@
+Motivated by providing quality-of-service differentiated services in the
+Internet, we consider buffer management algorithms for network switches. We
+study a multi-buffer model. A network switch consists of multiple size-bounded
+buffers such that at any time, the number of packets residing in each
+individual buffer cannot exceed its capacity. Packets arrive at the network
+switch over time; they have values, deadlines, and designated buffers. In each
+time step, at most one pending packet is allowed to be sent and this packet can
+be from any buffer. The objective is to maximize the total value of the packets
+sent by their respective deadlines. A 9.82-competitive online algorithm has
+been provided for this model (Azar and Levy. SWAT 2006), but no offline
+algorithms have been known yet. In this paper, We study the offline setting of
+the multi-buffer model. Our contributions include a few optimal offline
+algorithms for some variants of the model. Each variant has its unique and
+interesting algorithmic feature. These offline algorithms help us understand
+the model better in designing online algorithms.

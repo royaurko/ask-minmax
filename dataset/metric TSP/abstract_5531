@@ -1,0 +1,15 @@
+This letter focuses on solving the challenging problem of detecting natural
+image boundaries. A boundary usually refers to the border between two regions
+with different semantic meanings. Therefore, a measurement of dissimilarity
+between image regions plays a pivotal role in boundary detection of natural
+images. To improve the performance of boundary detection, a Learning-based
+Boundary Metric (LBM) is proposed to replace $\chi^2$ difference adopted by the
+classical algorithm mPb. Compared with $\chi^2$ difference, LBM is composed of
+a single layer neural network and an RBF kernel, and is fine-tuned by
+supervised learning rather than human-crafted. It is more effective in
+describing the dissimilarity between natural image regions while tolerating
+large variance of image data. After substituting $\chi^2$ difference with LBM,
+the F-measure metric of mPb on the BSDS500 benchmark is increased from 0.69 to
+0.71. Moreover, when image features are computed on a single scale, the
+proposed LBM algorithm still achieves competitive results compared with
+\emph{mPb}, which makes use of multi-scale image features.

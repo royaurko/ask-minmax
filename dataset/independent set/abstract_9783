@@ -1,0 +1,14 @@
+It is a classical problem to compute a minimal set of invariant polynomial
+generating the invariant ring of a finite group as an algebra. We present here
+an algorithm for the computation of minimal generating sets in the non-modular
+case. Apart from very few explicit computations of Groebner bases, the
+algorithm only involves very basic operations, and is thus rather fast.
+  As a test bed for comparative benchmarks, we use transitive permutation
+groups on 7 and 8 variables. In most examples, our algorithm implemented in
+Singular works much faster than the one used in Magma, namely by factors
+between 50 and 1000. We also compute some further examples on more than 8
+variables, including a minimal generating set for the natural action of the
+cyclic group of order 11 in characteristic 0 and of order 15 in characteristic
+2.
+  We also apply our algorithm to the computation of irreducible secondary
+invariants.

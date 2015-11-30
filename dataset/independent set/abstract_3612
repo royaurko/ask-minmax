@@ -1,0 +1,27 @@
+The full-information model was introduced by Ben-Or and Linial in 1985 to
+study collective coin-flipping: the problem of generating a common bounded-bias
+bit in a network of $n$ players with $t=t(n)$ faults. They showed that the
+majority protocol can tolerate $t=O(\sqrt n)$ adaptive corruptions, and
+conjectured that this is optimal in the adaptive setting. Lichtenstein, Linial,
+and Saks proved that the conjecture holds for protocols in which each player
+sends a single bit. Their result has been the main progress on the conjecture
+in the last 30 years.
+  In this work we revisit this question and ask: what about protocols involving
+longer messages? Can increased communication allow for a larger fraction of
+faulty players?
+  We introduce a model of strong adaptive corruptions, where in each round, the
+adversary sees all messages sent by honest parties and, based on the message
+content, decides whether to corrupt a party (and intercept his message) or not.
+We prove that any one-round coin-flipping protocol, regardless of message
+length, is secure against at most $\tilde{O}(\sqrt n)$ strong adaptive
+corruptions. Thus, increased message length does not help in this setting.
+  We then shed light on the connection between adaptive and strongly adaptive
+adversaries, by proving that for any symmetric one-round coin-flipping protocol
+secure against $t$ adaptive corruptions, there is a symmetric one-round
+coin-flipping protocol secure against $t$ strongly adaptive corruptions.
+Returning to the standard adaptive model, we can now prove that any symmetric
+one-round protocol with arbitrarily long messages can tolerate at most
+$\tilde{O}(\sqrt n)$ adaptive corruptions.
+  At the heart of our results lies a novel use of the Minimax Theorem and a new
+technique for converting any one-round secure protocol into a protocol with
+messages of $polylog(n)$ bits. This technique may be of independent interest.

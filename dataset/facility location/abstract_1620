@@ -1,0 +1,14 @@
+With the current trend of multiprocessor machines towards more and more
+hierarchical architectures, exploiting the full computational power requires
+careful distribution of execution threads and data so as to limit expensive
+remote memory accesses. Existing multi-threaded libraries provide only limited
+facilities to let applications express distribution indications, so that
+programmers end up with explicitly distributing tasks according to the
+underlying architecture, which is difficult and not portable. In this article,
+we present: (1) a model for dynamically expressing the structure of the
+computation; (2) a scheduler interpreting this model so as to make judicious
+hierarchical distribution decisions; (3) an implementation within the Marcel
+user-level thread library. We experimented our proposal on a scientific
+application running on a ccNUMA Bull NovaScale with 16 Intel Itanium II
+processors; results show a 30% gain compared to a classical scheduler, and are
+similar to what a handmade scheduler achieves in a non-portable way.

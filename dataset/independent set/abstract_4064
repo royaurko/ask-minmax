@@ -1,0 +1,17 @@
+A central problem in Microeconomics is to design auctions with good revenue
+properties. In this setting, the bidders' valuations for the items are private
+knowledge, but they are drawn from publicly known prior distributions. The goal
+is to find a truthful auction (no bidder can gain in utility by misreporting
+her valuation) that maximizes the expected revenue.
+  Naturally, the optimal-auction is sensitive to the prior distributions. An
+intriguing question is to design a truthful auction that is oblivious to these
+priors, and yet manages to get a constant factor of the optimal revenue. Such
+auctions are called prior-free.
+  Goldberg et al. presented a constant-approximate prior-free auction when
+there are identical copies of an item available in unlimited supply, bidders
+are unit-demand, and their valuations are drawn from i.i.d. distributions. The
+recent work of Leonardi et al. [STOC 2012] generalized this problem to non
+i.i.d. bidders, assuming that the auctioneer knows the ordering of their
+reserve prices. Leonardi et al. proposed a prior-free auction that achieves a
+$O(\log^* n)$ approximation. We improve upon this result, by giving the first
+prior-free auction with constant approximation guarantee.

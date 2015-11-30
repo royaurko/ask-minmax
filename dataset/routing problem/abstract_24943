@@ -1,0 +1,16 @@
+In this paper we develop a new approach to sparse principal component
+analysis (sparse PCA). We propose two single-unit and two block optimization
+formulations of the sparse PCA problem, aimed at extracting a single sparse
+dominant principal component of a data matrix, or more components at once,
+respectively. While the initial formulations involve nonconvex functions, and
+are therefore computationally intractable, we rewrite them into the form of an
+optimization program involving maximization of a convex function on a compact
+set. The dimension of the search space is decreased enormously if the data
+matrix has many more columns (variables) than rows. We then propose and analyze
+a simple gradient method suited for the task. It appears that our algorithm has
+best convergence properties in the case when either the objective function or
+the feasible set are strongly convex, which is the case with our single-unit
+formulations and can be enforced in the block case. Finally, we demonstrate
+numerically on a set of random and gene expression test problems that our
+approach outperforms existing algorithms both in quality of the obtained
+solution and in computational speed.

@@ -1,0 +1,20 @@
+Magnetoencephalography (MEG) is an imaging technique used to measure the
+magnetic field outside the human head produced by the electrical activity
+inside the brain. The MEG inverse problem, identifying the location of the
+electrical sources from the magnetic signal measurements, is ill-posed, that
+is, there are an infinite number of mathematically correct solutions. Common
+source localization methods assume the source does not vary with time and do
+not provide estimates of the variability of the fitted model. Here, we
+reformulate the MEG inverse problem by considering time-varying locations for
+the sources and their electrical moments and we model their time evolution
+using a state space model. Based on our predictive model, we investigate the
+inverse problem by finding the posterior source distribution given the multiple
+channels of observations at each time rather than fitting fixed source
+parameters. Our new model is more realistic than common models and allows us to
+estimate the variation of the strength, orientation and position. We propose
+two new Monte Carlo methods based on sequential importance sampling. Unlike the
+usual MCMC sampling scheme, our new methods work in this situation without
+needing to tune a high-dimensional transition kernel which has a very high
+cost. The dimensionality of the unknown parameters is extremely large and the
+size of the data is even larger. We use Parallel Virtual Machine (PVM) to speed
+up the computation.

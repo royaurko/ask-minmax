@@ -1,0 +1,23 @@
+This paper presents a systematic approach to exploit TV white space (TVWS)
+for device-to-device (D2D) communications with the aid of the existing cellular
+infrastructure. The goal is to build a location-specific TVWS database, which
+provides a look-up table service for any D2D link to determine its maximum
+permitted emission power (MPEP) in an unlicensed digital TV (DTV) band. To
+achieve this goal, the idea of mobile crowd sensing is firstly introduced to
+collect active spectrum measurements from massive personal mobile devices.
+Considering the incompleteness of crowd measurements, we formulate the problem
+of unknown measurements recovery as a matrix completion problem and apply a
+powerful fixed point continuation algorithm to reconstruct the unknown elements
+from the known elements. By joint exploitation of the big spectrum data in its
+vicinity, each cellular base station further implements a nonlinear support
+vector machine algorithm to perform irregular coverage boundary detection of a
+licensed DTV transmitter. With the knowledge of the detected coverage boundary,
+an opportunistic spatial reuse algorithm is developed for each D2D link to
+determine its MPEP. Simulation results show that the proposed approach can
+successfully enable D2D communications in TVWS while satisfying the
+interference constraint from the licensed DTV services. In addition, to our
+best knowledge, this is the first try to explore and exploit TVWS inside the
+DTV protection region resulted from the shadowing effect. Potential application
+scenarios include communications between internet of vehicles in the
+underground parking, D2D communications in hotspots such as subway, game
+stadiums, and airports, etc.

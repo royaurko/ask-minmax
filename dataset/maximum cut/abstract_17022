@@ -1,0 +1,16 @@
+This paper demonstrates two different fusion techniques at two different
+levels of a human face recognition process. The first one is called data fusion
+at lower level and the second one is the decision fusion towards the end of the
+recognition process. At first a data fusion is applied on visual and
+corresponding thermal images to generate fused image. Data fusion is
+implemented in the wavelet domain after decomposing the images through
+Daubechies wavelet coefficients (db2). During the data fusion maximum of
+approximate and other three details coefficients are merged together. After
+that Principle Component Analysis (PCA) is applied over the fused coefficients
+and finally two different artificial neural networks namely Multilayer
+Perceptron(MLP) and Radial Basis Function(RBF) networks have been used
+separately to classify the images. After that, for decision fusion based
+decisions from both the classifiers are combined together using Bayesian
+formulation. For experiments, IRIS thermal/visible Face Database has been used.
+Experimental results show that the performance of multiple classifier system
+along with decision fusion works well over the single classifier system.

@@ -1,0 +1,22 @@
+One of the crucial steps in the design of an integrated circuit is the
+minimization of heating and temperature non-uniformity. Current temperature
+calculation methods, such as finite element analysis and resistor networks have
+considerable computation times, making them incompatible for use in routing and
+placement optimization algorithms. In an effort to reduce the computation time,
+we have developed a new method, deemed power blurring, for calculating
+temperature distributions using a matrix convolution technique in analogy with
+image blurring. For steady state analysis, power blurring was able to predict
+hot spot temperatures within 1 degree C with computation times 3 orders of
+magnitude faster than FEA. For transient analysis the computation times where
+enhanced by a factor of 1000 for a single pulse and around 100 for multiple
+frequency application, while predicting hot spot temperature within about 1
+degree C. The main strength of the power blurring technique is that it exploits
+the dominant heat spreading in the silicon substrate and it uses superposition
+principle. With one or two finite element simulations, the temperature point
+spread function for a sophisticated package can be calculated. Additional
+simulations could be used to improve the accuracy of the point spread function
+in different locations on the chip. In this calculation, we considered the
+dominant heat transfer path through the back of the IC chip and the heat sink.
+Heat transfer from the top of the chip through metallization layers and the
+board is usually a small fraction of the total heat dissipation and it is
+neglected in this analysis.

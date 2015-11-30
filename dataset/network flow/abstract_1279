@@ -1,0 +1,18 @@
+We develop a scalable \textit{cell-level} analytical model for multi-cell
+infrastructure IEEE 802.11 WLANs under a so-called Pairwise Binary Dependence
+(PBD) condition. The PBD condition is a geometric property under which the
+relative locations of the nodes inside a cell do not matter and the network is
+free of \textit{hidden nodes}. For the cases of saturated nodes and
+TCP-controlled long-file downloads, we provide accurate predictions of cell
+throughputs. Similar to Bonald et al (Sigmetrics, 2008), we model a multi-cell
+WLAN under short-file downloads as "a network of processor-sharing queues with
+state-dependent service rates." Whereas the state-dependent service rates
+proposed by Bonald et al are based only on the \textit{number} of contending
+neighbors, we employ state-dependent service rates that incorporate the the
+impact of the overall \textit{topology} of the network. We propose an
+\textit{effective service rate approximation} technique and obtain good
+approximations for the \textit{mean flow transfer delay} in each cell. For
+TCP-controlled downloads where the APs transmit a large fraction of time, we
+show that the throughputs predicted under the PBD condition are very good
+approximations in two important scenarios where hidden nodes are indeed present
+and the PBD condition does not strictly hold.

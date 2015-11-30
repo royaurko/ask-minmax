@@ -1,0 +1,17 @@
+The success of several constraint-based modeling languages such as OPL, ZINC,
+or COMET, appeals for better software engineering practices, particularly in
+the testing phase. This paper introduces a testing framework enabling automated
+test case generation for constraint programming. We propose a general framework
+of constraint program development which supposes that a first declarative and
+simple constraint model is available from the problem specifications analysis.
+Then, this model is refined using classical techniques such as constraint
+reformulation, surrogate and global constraint addition, or symmetry-breaking
+to form an improved constraint model that must be thoroughly tested before
+being used to address real-sized problems. We think that most of the faults are
+introduced in this refinement step and propose a process which takes the first
+declarative model as an oracle for detecting non-conformities. We derive
+practical test purposes from this process to generate automatically test data
+that exhibit non-conformities. We implemented this approach in a new tool
+called CPTEST that was used to automatically detect non-conformities on two
+classical benchmark programs, namely the Golomb rulers and the car-sequencing
+problem.

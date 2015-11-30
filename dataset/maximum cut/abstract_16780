@@ -1,0 +1,15 @@
+We generalize the well-known mixtures of Gaussians approach to density
+estimation and the accompanying Expectation--Maximization technique for finding
+the maximum likelihood parameters of the mixture to the case where each data
+point carries an individual $d$-dimensional uncertainty covariance and has
+unique missing data properties. This algorithm reconstructs the
+error-deconvolved or "underlying" distribution function common to all samples,
+even when the individual data points are samples from different distributions,
+obtained by convolving the underlying distribution with the heteroskedastic
+uncertainty distribution of the data point and projecting out the missing data
+directions. We show how this basic algorithm can be extended with conjugate
+priors on all of the model parameters and a "split-and-merge" procedure
+designed to avoid local maxima of the likelihood. We demonstrate the full
+method by applying it to the problem of inferring the three-dimensional
+velocity distribution of stars near the Sun from noisy two-dimensional,
+transverse velocity measurements from the Hipparcos satellite.

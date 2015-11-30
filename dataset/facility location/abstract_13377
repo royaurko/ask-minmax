@@ -1,0 +1,13 @@
+This paper presents an efficient approach for the evaluation of
+multi-parametric mixed integer quadratic programming (mp-MIQP) solutions,
+occurring for instance in control problems involving discrete time hybrid
+systems with quadratic cost. Traditionally, the online evaluation requires a
+sequential comparison of piecewise quadratic value functions. As the main
+contribution, we introduce a lifted parameter space in which the piecewise
+quadratic value functions become piecewise affine and can be merged to a single
+value function defined over a single polyhedral partition without any overlaps.
+This enables efficient point location approaches using a single binary search
+tree. Numerical experiments include a power electronics application and
+demonstrate an online speedup up to an order of magnitude. We also show how the
+achievable online evaluation time can be traded off against the offline
+computational time.

@@ -1,0 +1,23 @@
+Starting from a sequence regarded as a walk through some set of values, we
+consider the associated loop-erased walk as a sequence of directed edges, with
+an edge from $i$ to $j$ if the loop erased walk makes a step from $i$ to $j$.
+We introduce a coloring of these edges by painting edges with a fixed color as
+long as the walk does not loop back on itself, then switching to a new color
+whenever a loop is erased, with each new color distinct from all previous
+colors. The pattern of colors along the edges of the loop-erased walk then
+displays stretches of consecutive steps of the walk left untouched by the
+loop-erasure process. Assuming that the underlying sequence generating the
+loop-erased walk is a sequence of independent random variables, each uniform on
+$[N]:=\{1, 2, ..., N\}$, we condition the walk to start at $N$ and stop the
+walk when it first reaches the subset $[k]$, for some $1 \leq k \leq N-1$. We
+relate the distribution of the random length of this loop-erased walk to the
+distribution of the length of the first loop of the walk, via Cayley's
+enumerations of trees, and via Wilson's algorithm. For fixed $N$ and $k$, and
+$i = 1,2, ...$, let $B_i$ denote the event that the loop-erased walk from $N$
+to $[k]$ has $i +1$ or more edges, and the $i^{th}$ and $(i+1)^{th}$ of these
+edges are colored differently. We show that given that the loop-erased random
+walk has $j$ edges for some $1\leq j \leq N-k$, the events $B_i$ for $1 \leq i
+\leq j-1$ are independent, with the probability of $B_i$ equal to $1/(k+i+1)$.
+This determines the distribution of the sequence of random lengths of
+differently colored segments of the loop-erased walk, and yields asymptotic
+descriptions of these random lengths as $N \to \infty$.

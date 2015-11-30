@@ -1,0 +1,23 @@
+The problem of identification of statistically significant patterns in a
+sequence of data has been applied to many domains such as intrusion detection
+systems, financial models, web-click records, automated monitoring systems,
+computational biology, cryptology, and text analysis. An observed pattern of
+events is deemed to be statistically significant if it is unlikely to have
+occurred due to randomness or chance alone. We use the chi-square statistic as
+a quantitative measure of statistical significance. Given a string of
+characters generated from a memoryless Bernoulli model, the problem is to
+identify the substring for which the empirical distribution of single letters
+deviates the most from the distribution expected from the generative Bernoulli
+model. This deviation is captured using the chi-square measure. The most
+significant substring (MSS) of a string is thus defined as the substring having
+the highest chi-square value. Till date, to the best of our knowledge, there
+does not exist any algorithm to find the MSS in better than O(n^2) time, where
+n denotes the length of the string. In this paper, we propose an algorithm to
+find the most significant substring, whose running time is O(n^{3/2}) with high
+probability. We also study some variants of this problem such as finding the
+top-t set, finding all substrings having chi-square greater than a fixed
+threshold and finding the MSS among substrings greater than a given length. We
+experimentally demonstrate the asymptotic behavior of the MSS on varying the
+string size and alphabet size. We also describe some applications of our
+algorithm on cryptology and real world data from finance and sports. Finally,
+we compare our technique with the existing heuristics for finding the MSS.

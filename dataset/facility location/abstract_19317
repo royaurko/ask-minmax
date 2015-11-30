@@ -1,0 +1,23 @@
+Motivated by the growing interest in mobile systems, we study the dynamics of
+information dissemination between agents moving independently on a plane.
+Formally, we consider $k$ mobile agents performing independent random walks on
+an $n$-node grid. At time $0$, each agent is located at a random node of the
+grid and one agent has a rumor. The spread of the rumor is governed by a
+dynamic communication graph process ${G_t(r) | t \geq 0}$, where two agents are
+connected by an edge in $G_t(r)$ iff their distance at time $t$ is within their
+transmission radius $r$. Modeling the physical reality that the speed of radio
+transmission is much faster than the motion of the agents, we assume that the
+rumor can travel throughout a connected component of $G_t$ before the graph is
+altered by the motion. We study the broadcast time $T_B$ of the system, which
+is the time it takes for all agents to know the rumor. We focus on the sparse
+case (below the percolation point $r_c \approx \sqrt{n/k}$) where, with high
+probability, no connected component in $G_t$ has more than a logarithmic number
+of agents and the broadcast time is dominated by the time it takes for many
+independent random walks to meet each other. Quite surprisingly, we show that
+for a system below the percolation point the broadcast time does not depend on
+the relation between the mobility speed and the transmission radius. In fact,
+we prove that $T_B = \tilde{O}(n / \sqrt{k})$ for any $0 \leq r < r_c$, even
+when the transmission range is significantly larger than the mobility range in
+one step, giving a tight characterization up to logarithmic factors. Our result
+complements a recent result of Peres et al. (SODA 2011) who showed that above
+the percolation point the broadcast time is polylogarithmic in $k$.

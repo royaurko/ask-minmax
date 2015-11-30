@@ -1,0 +1,13 @@
+Algorithms based on semi-partitioned scheduling have been proposed as a
+viable alternative between the two extreme ones based on global and partitioned
+scheduling. In particular, allowing migration to occur only for few tasks which
+cannot be assigned to any individual processor, while most tasks are assigned
+to specific processors, considerably reduces the runtime overhead compared to
+global scheduling on the one hand, and improve both the schedulability and the
+system utilization factor compared to partitioned scheduling on the other hand.
+In this paper, we address the preemptive scheduling problem of hard real-time
+systems composed of sporadic constrained-deadline tasks upon identical
+multiprocessor platforms. We propose a new algorithm and a scheduling paradigm
+based on the concept of semi-partitioned scheduling with restricted migrations
+in which jobs are not allowed to migrate, but two subsequent jobs of a task can
+be assigned to different processors by following a periodic strategy.

@@ -1,0 +1,19 @@
+The alternating direction method of multipliers (ADMM) has recently sparked
+interest as a flexible and efficient optimization tool for imaging inverse
+problems, namely deconvolution and reconstruction under non-smooth convex
+regularization. ADMM achieves state-of-the-art speed by adopting a divide and
+conquer strategy, wherein a hard problem is split into simpler, efficiently
+solvable sub-problems (e.g., using fast Fourier or wavelet transforms, or
+simple proximity operators). In deconvolution, one of these sub-problems
+involves a matrix inversion (i.e., solving a linear system), which can be done
+efficiently (in the discrete Fourier domain) if the observation operator is
+circulant, i.e., under periodic boundary conditions. This paper extends
+ADMM-based image deconvolution to the more realistic scenario of unknown
+boundary, where the observation operator is modeled as the composition of a
+convolution (with arbitrary boundary conditions) with a spatial mask that keeps
+only pixels that do not depend on the unknown boundary. The proposed approach
+also handles, at no extra cost, problems that combine the recovery of missing
+pixels (i.e., inpainting) with deconvolution. We show that the resulting
+algorithms inherit the convergence guarantees of ADMM and illustrate its
+performance on non-periodic deblurring (with and without inpainting of interior
+pixels) under total-variation and frame-based regularization.

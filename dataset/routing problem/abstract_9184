@@ -1,0 +1,16 @@
+In the (discrete) CNN problem, online requests appear as points in
+$\mathbb{R}^2$. Each request must be served before the next one is revealed. We
+have a server that can serve a request simply by aligning either its $x$ or $y$
+coordinate with the request. The goal of the online algorithm is to minimize
+the total $L_1$ distance traveled by the server to serve all the requests. The
+best known competitive ratio for the discrete version is 879 (due to Sitters
+and Stougie).
+  We study the continuous version, in which, the request can move continuously
+in $\mathbb{R}^2$ and the server must continuously serve the request. A simple
+adversarial argument shows that the lower bound on the competitive ratio of any
+online algorithm for the continuous CNN problem is 3. Our main contribution is
+an online algorithm with competitive ratio $3+2 \sqrt{3} \approx 6.464$. Our
+analysis is tight. The continuous version generalizes the discrete orthogonal
+CNN problem, in which every request must be $x$ or $y$ aligned with the
+previous request. Therefore, Our result improves upon the previous best
+competitive ratio of 9 (due to Iwama and Yonezawa).

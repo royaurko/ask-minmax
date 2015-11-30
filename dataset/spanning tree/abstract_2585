@@ -1,0 +1,8 @@
+We present a new method for computing the Near-To-Far-Field (NTFF)
+transformation in FDTD simulations which has an overall scaling of $O(N^3)$
+instead of the standard $O(N^4)$. By mapping the far field with a cartesian
+coordinate system the 2D surface integral can be split into two successive 1D
+integrals. For a near field spanned by $N_X \times N_Y$ discrete sample points,
+and a far field spanned by $N_{\theta} \times N_{\phi}$ points, the calculation
+can then be performed in $O(N_{\theta}N_X N_Y) + O(N_{\theta}N_{\phi}N_Y)$
+operations instead of $O(N_{\theta}N_{\phi}N_X N_Y)$.

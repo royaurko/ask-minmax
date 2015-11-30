@@ -1,0 +1,25 @@
+The longest common extension (LCE) of two indices in a string is the length
+of the longest identical substrings starting at these two indices. The LCE
+problem asks to preprocess a string into a compact data structure that supports
+fast LCE queries. In this paper we generalize the LCE problem to trees and
+suggest a few applications of LCE in trees to tries and XML databases. Given a
+labeled and rooted tree $T$ of size $n$, the goal is to preprocess $T$ into a
+compact data structure that support the following LCE queries between subpaths
+and subtrees in $T$. Let $v_1$, $v_2$, $w_1$, and $w_2$ be nodes of $T$ such
+that $w_1$ and $w_2$ are descendants of $v_1$ and $v_2$ respectively.
+\begin{itemize} \item $\LCEPP(v_1, w_1, v_2, w_2)$: (path-path $\LCE$) return
+the longest common prefix of the paths $v_1 \leadsto w_1$ and $v_2 \leadsto
+w_2$. \item $\LCEPT(v_1, w_1, v_2)$: (path-tree $\LCE$) return maximal
+path-path LCE of the path $v_1 \leadsto w_1$ and any path from $v_2$ to a
+descendant leaf. \item $\LCETT(v_1, v_2)$: (tree-tree $\LCE$) return a maximal
+path-path LCE of any pair of paths from $v_1$ and $v_2$ to descendant leaves.
+\end{itemize} We present the first non-trivial bounds for supporting these
+queries. For $\LCEPP$ queries, we present a linear-space solution with
+$O(\log^{*} n)$ query time. For $\LCEPT$ queries, we present a linear-space
+solution with $O((\log\log n)^{2})$ query time, and complement this with a
+lower bound showing that any path-tree LCE structure of size $O(n \polylog(n))$
+must necessarily use $\Omega(\log\log n)$ time to answer queries. For $\LCETT$
+queries, we present a time-space trade-off, that given any parameter $\tau$, $1
+\leq \tau \leq n$, leads to an $O(n\tau)$ space and $O(n/\tau)$ query-time
+solution. This is complemented with a reduction to the the set intersection
+problem implying that a fast linear space solution is not likely to exist.

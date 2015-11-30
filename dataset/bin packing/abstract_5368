@@ -1,0 +1,18 @@
+This paper studies the constrained-space probabilistic threshold range query
+(CSPTRQ) for moving objects. We differentiate two kinds of CSPTRQs: implicit
+and explicit ones. Specifically, for each moving object $o$, we assume $o$
+cannot be located in some specific areas, we model its location as a closed
+region, $u$, together with a probability density function, and model a query
+range, $R$, as an arbitrary polygon. An implicit CSPTRQ can be reduced to a
+search (over all the $u$) that returns a set of objects, which have
+probabilities higher than a probability threshold $p_t$ to be located in $R$,
+where $0\leq p_t\leq 1$. In contrast, an explicit CSPTRQ returns a set of
+tuples in form of ($o$, $p$) such that $p\geq p_t$, where $p$ is the
+probability of $o$ being located in $R$. A straightforward adaptation of
+existing method is inefficient due to its weak pruning/validating capability.
+In order to efficiently process such queries, we propose targeted solutions, in
+which three main ideas are incorporated: (1) swapping the order of geometric
+operations based on the computation duality; (2) pruning unrelated objects in
+the early stages using the location unreachability; and (3) computing the
+probability using the multi-step mechanism. Extensive experimental results
+demonstrate the efficiency and effectiveness of the proposed algorithms.

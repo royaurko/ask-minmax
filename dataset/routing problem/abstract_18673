@@ -1,0 +1,20 @@
+The detection problem in statistical signal processing can be succinctly
+formulated: Given m (possibly) signal bearing, n-dimensional signal-plus-noise
+snapshot vectors (samples) and N statistically independent n-dimensional
+noise-only snapshot vectors, can one reliably infer the presence of a signal?
+This problem arises in the context of applications as diverse as radar, sonar,
+wireless communications, bioinformatics, and machine learning and is the
+critical first step in the subsequent signal parameter estimation phase.
+  The signal detection problem can be naturally posed in terms of the sample
+generalized eigenvalues. The sample generalized eigenvalues correspond to the
+eigenvalues of the matrix formed by "whitening" the signal-plus-noise sample
+covariance matrix with the noise-only sample covariance matrix. In this article
+we prove a fundamental asymptotic limit of sample generalized eigenvalue based
+detection of signals in arbitrarily colored noise when there are relatively few
+signal bearing and noise-only samples.
+  Numerical simulations highlight the accuracy of our analytical prediction and
+permit us to extend our heuristic definition of the effective number of
+identifiable signals in colored noise. We discuss implications of our result
+for the detection of weak and/or closely spaced signals in sensor array
+processing, abrupt change detection in sensor networks, and clustering
+methodologies in machine learning.

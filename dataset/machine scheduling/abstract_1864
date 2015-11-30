@@ -1,0 +1,12 @@
+We study distributed stochastic convex optimization under the delayed
+gradient model where the server nodes perform parameter updates, while the
+worker nodes compute stochastic gradients. We discuss, analyze, and experiment
+with a setup motivated by the behavior of real-world distributed computation
+networks, where the machines are differently slow at different time. Therefore,
+we allow the parameter updates to be sensitive to the actual delays
+experienced, rather than to worst-case bounds on the maximum delay. This
+sensitivity leads to larger stepsizes, that can help gain rapid initial
+convergence without having to wait too long for slower machines, while
+maintaining the same asymptotic complexity. We obtain encouraging improvements
+to overall convergence for distributed experiments on real datasets with up to
+billions of examples and features.

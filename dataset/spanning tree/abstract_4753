@@ -1,0 +1,25 @@
+Moss and Rabani[12] study constrained node-weighted Steiner tree problems
+with two independent weight values associated with each node, namely, cost and
+prize (or penalty). They give an O(log n)-approximation algorithm for the
+prize-collecting node-weighted Steiner tree problem (PCST). They use the
+algorithm for PCST to obtain a bicriteria (2, O(log n))-approximation algorithm
+for the Budgeted node-weighted Steiner tree problem. Their solution may cost up
+to twice the budget, but collects a factor Omega(1/log n) of the optimal prize.
+We improve these results from at least two aspects.
+  Our first main result is a primal-dual O(log h)-approximation algorithm for a
+more general problem, prize-collecting node-weighted Steiner forest, where we
+have (h) demands each requesting the connectivity of a pair of vertices. Our
+algorithm can be seen as a greedy algorithm which reduces the number of demands
+by choosing a structure with minimum cost-to-reduction ratio. This natural
+style of argument (also used by Klein and Ravi[10] and Guha et al.[8]) leads to
+a much simpler algorithm than that of Moss and Rabani[12] for PCST.
+  Our second main contribution is for the Budgeted node-weighted Steiner tree
+problem, which is also an improvement to [12] and [8]. In the unrooted case, we
+improve upon an O(log^2(n))-approximation of [8], and present an O(log
+n)-approximation algorithm without any budget violation. For the rooted case,
+where a specified vertex has to appear in the solution tree, we improve the
+bicriteria result of [12] to a bicriteria approximation ratio of (1+eps, O(log
+n)/(eps^2)) for any positive (possibly subconstant) (eps). That is, for any
+permissible budget violation (1+eps), we present an algorithm achieving a
+tradeoff in the guarantee for prize. Indeed, we show that this is almost tight
+for the natural linear-programming relaxation used by us as well as in [12].

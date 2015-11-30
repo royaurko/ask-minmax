@@ -1,0 +1,20 @@
+This paper investigates the task solvability of mobile robot systems subject
+to Byzantine faults. We first consider the gathering problem, which requires
+all robots to meet in finite time at a non-predefined location. It is known
+that the solvability of Byzantine gathering strongly depends on a number of
+system attributes, such as synchrony, the number of Byzantine robots,
+scheduling strategy, obliviousness, orientation of local coordinate systems and
+so on. However, the complete characterization of the attributes making
+Byzantine gathering solvable still remains open.
+  In this paper, we show strong impossibility results of Byzantine gathering.
+Namely, we prove that Byzantine gathering is impossible even if we assume one
+Byzantine fault, an atomic execution system, the n-bounded centralized
+scheduler, non-oblivious robots, instantaneous movements and a common
+orientation of local coordinate systems (where n denote the number of correct
+robots). Those hypotheses are much weaker than used in previous work, inducing
+a much stronger impossibility result.
+  At the core of our impossibility result is a reduction from the distributed
+consensus problem in asynchronous shared-memory systems. In more details, we
+newly construct a generic reduction scheme based on the distributed
+BG-simulation. Interestingly, because of its versatility, we can easily extend
+our impossibility result for general pattern formation problems.

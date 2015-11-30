@@ -1,0 +1,17 @@
+The conjugacy search problem in a group $G$ is the problem of recovering an
+$x \in G$ from given $g \in G$ and $h=x^{-1}gx$. The alleged computational
+hardness of this problem in some groups was used in several recently suggested
+public key exchange protocols, including the one due to Anshel, Anshel, and
+Goldfeld, and the one due to Ko, Lee et al. Sibert, Dehornoy, and Girault used
+this problem in their authentication scheme, which was inspired by the
+Fiat-Shamir scheme involving repeating several times a three-pass
+challenge-response step.
+  In this paper, we offer an authentication scheme whose security is based on
+the apparent hardness of the twisted conjugacy search problem, which is: given
+a pair of endomorphisms (i.e., homomorphisms into itself) phi, \psi of a group
+G and a pair of elements w, t \in G, find an element s \in G such that t =
+\psi(s^{-1}) w \phi(s) provided at least one such s exists. This problem
+appears to be very non-trivial even for free groups. We offer here another
+platform, namely, the semigroup of all 2x2 matrices over truncated one-variable
+polynomials over F_2, the field of two elements, with transposition used
+instead of inversion in the equality above.

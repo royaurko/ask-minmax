@@ -1,0 +1,24 @@
+The practical realization of managing and executing large scale scientific
+computations efficiently and reliably is quite challenging. Scientific
+computations often involve thousands or even millions of tasks operating on
+large quantities of data, such data are often diversely structured and stored
+in heterogeneous physical formats, and scientists must specify and run such
+computations over extended periods on collections of compute, storage and
+network resources that are heterogeneous, distributed and may change
+constantly. We present the integration of several advanced systems: Swift,
+Karajan, and Falkon, to address the challenges in running various large scale
+scientific applications in Grid environments. Swift is a parallel programming
+tool for rapid and reliable specification, execution, and management of
+large-scale science and engineering workflows. Swift consists of a simple
+scripting language called SwiftScript and a powerful runtime system that is
+based on the CoG Karajan workflow engine and integrates the Falkon light-weight
+task execution service that uses multi-level scheduling and a streamlined
+dispatcher. We showcase the scalability, performance and reliability of the
+integrated system using application examples drawn from astronomy, cognitive
+neuroscience and molecular dynamics, which all comprise large number of
+fine-grained jobs. We show that Swift is able to represent dynamic workflows
+whose structures can only be determined during runtime and reduce largely the
+code size of various workflow representations using SwiftScript; schedule the
+execution of hundreds of thousands of parallel computations via the Karajan
+engine; and achieve up to 90% reduction in execution time when compared to
+traditional batch schedulers.

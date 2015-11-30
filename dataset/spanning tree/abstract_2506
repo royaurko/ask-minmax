@@ -1,0 +1,15 @@
+Given an n-vertex graph G=(V,E) and a set R \subseteq {{x,y} | x,y \in V} of
+requests, we consider to assign a set of edges to each vertex in G so that for
+every request {u, v} in R the union of the edge sets assigned to u and v
+contains a path from u to v. The Minimum Certificate Dispersal Problem (MCD) is
+defined as one to find an assignment that minimizes the sum of the cardinality
+of the edge set assigned to each vertex. This problem has been shown to be
+LOGAPX-complete for the most general setting, and APX-hard and 2-approximable
+in polynomial time for dense request sets, where R forms a clique. In this
+paper, we investigate the complexity of MCD with sparse (tree) structures. We
+first show that MCD is APX-hard when R is a tree, even a star. We then explore
+the problem from the viewpoint of the maximum degree \Delta of the tree: MCD
+for tree request set with constant \Delta is solvable in polynomial time, while
+that with \Delta=\Omega(n) is 2.56-approximable in polynomial time but hard to
+approximate within 1.01 unless P=NP. As for the structure of G itself, we show
+that the problem can be solved in polynomial time if G is a tree.

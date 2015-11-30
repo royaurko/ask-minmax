@@ -1,0 +1,25 @@
+Purpose: To develop an algorithm for real-time volumetric image
+reconstruction and 3D tumor localization based on a single x-ray projection
+image for lung cancer radiotherapy. Methods: Given a set of volumetric images
+of a patient at N breathing phases as the training data, we perform deformable
+image registration between a reference phase and the other N-1 phases,
+resulting in N-1 deformation vector fields (DVFs). These DVFs can be
+represented efficiently by a few eigenvectors and coefficients obtained from
+principal component analysis (PCA). By varying the PCA coefficients, we can
+generate new DVFs, which, when applied on the reference image, lead to new
+volumetric images. We then can reconstruct a volumetric image from a single
+projection image by optimizing the PCA coefficients such that its computed
+projection matches the measured one. The 3D location of the tumor can be
+derived by applying the inverted DVF on its position in the reference image.
+Our algorithm was implemented on graphics processing units (GPUs) to achieve
+real-time efficiency. We generated the training data using a realistic and
+dynamic mathematical phantom with 10 breathing phases. The testing data were
+360 cone beam projections corresponding to one gantry rotation, simulated using
+the same phantom with a 50% increase in breathing amplitude. Results: The
+average relative image intensity error of the reconstructed volumetric images
+is 6.9% +/- 2.4%. The average 3D tumor localization error is 0.8 mm +/- 0.5 mm.
+On an NVIDIA Tesla C1060 GPU card, the average computation time for
+reconstructing a volumetric image from each projection is 0.24 seconds (range:
+0.17 and 0.35 seconds). Conclusions: We have shown the feasibility of
+reconstructing volumetric images and localizing tumor positions in 3D in near
+real-time from a single x-ray image.

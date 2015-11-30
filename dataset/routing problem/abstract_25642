@@ -1,0 +1,9 @@
+The contributors propose a recycling Krylov subspace method for the solution of a
+sequence of self-adjoint linear systems. Such problems appear, for example, in
+the Newton process for solving nonlinear equations. Ritz vectors are
+automatically extracted from one MINRES run and then used for self-adjoint
+deflation in the next. The method is designed to work with arbitrary inner
+products and arbitrary self-adjoint positive-definite preconditioners whose
+inverse can be computed with high accuracy. Numerical experiments with
+nonlinear Schr\"odinger equations indicate a substantial decrease in
+computation time when recycling is used.

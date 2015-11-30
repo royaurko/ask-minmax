@@ -1,0 +1,9 @@
+We design an adaptive finite element method to approximate the solutions of
+quasi-linear elliptic problems. The algorithm is based on a Ka\v{c}anov
+iteration and a mesh adaptation step is performed after each linear solve. The
+method is thus \emph{inexact} because we do not solve the discrete nonlinear
+problems exactly, but rather perform one iteration of a fixed point method
+(Ka\v{c}anov), using the approximation of the previous mesh as an initial
+guess. The convergence of the method is proved for any \emph{reasonable}
+marking strategy and starting from any initial mesh. We conclude with some
+numerical experiments that illustrate the theory.

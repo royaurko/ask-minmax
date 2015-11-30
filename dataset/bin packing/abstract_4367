@@ -1,0 +1,17 @@
+Integer-Forcing (IF) is a new framework, based on compute-and-forward, for
+decoding multiple integer linear combinations from the output of a Gaussian
+multiple-input multiple-output channel. This work applies the IF approach to
+arrive at a new low-complexity scheme, IF source coding, for distributed lossy
+compression of correlated Gaussian sources under a minimum mean squared error
+distortion measure. All encoders use the same nested lattice codebook. Each
+encoder quantizes its observation using the fine lattice as a quantizer and
+reduces the result modulo the coarse lattice, which plays the role of binning.
+Rather than directly recovering the individual quantized signals, the decoder
+first recovers a full-rank set of judiciously chosen integer linear
+combinations of the quantized signals, and then inverts it. In general, the
+linear combinations have smaller average powers than the original signals. This
+allows to increase the density of the coarse lattice, which in turn translates
+to smaller compression rates. We also propose and analyze a one-shot version of
+IF source coding, that is simple enough to potentially lead to a new design
+principle for analog-to-digital converters that can exploit spatial
+correlations between the sampled signals.

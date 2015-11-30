@@ -1,0 +1,13 @@
+Kutato is a system that takes as input a database of cases and produces a
+belief network that captures many of the dependence relations represented by
+those data. This system incorporates a module for determining the entropy of a
+belief network and a module for constructing belief networks based on entropy
+calculations. Kutato constructs an initial belief network in which all
+variables in the database are assumed to be marginally independent. The entropy
+of this belief network is calculated, and that arc is added that minimizes the
+entropy of the resulting belief network. Conditional probabilities for an arc
+are obtained directly from the database. This process continues until an
+entropy-based threshold is reached. We have tested the system by generating
+databases from networks using the probabilistic logic-sampling method, and then
+using those databases as input to Kutato. The system consistently reproduces
+the original belief networks with high fidelity.

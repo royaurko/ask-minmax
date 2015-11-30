@@ -1,0 +1,16 @@
+A descent algorithm, "Quasi-Quadratic Minimization with Memory" (QQMM), is
+proposed for unconstrained minimization of the sum, $F$, of a non-negative
+convex function, $V$, and a quadratic form. Such problems come up in
+regularized estimation in machine learning and statistics. In addition to
+values of $F$, QQMM requires the (sub)gradient of $V$. Two features of QQMM
+help keep low the number of evaluations of the objective function it needs.
+First, QQMM provides good control over stopping the iterative search. This
+feature makes QQMM well adapted to statistical problems because in such
+problems the objective function is based on random data and therefore stopping
+early is sensible. Secondly, QQMM uses a complex method for determining trial
+minimizers of $F$. After a description of the problem and algorithm a
+simulation study comparing QQMM to the popular BFGS optimization algorithm is
+described. The simulation study and other experiments suggest that QQMM is
+generally substantially faster than BFGS in the problem domain for which it was
+designed. A QQMM-BFGS hybrid is also generally substantially faster than BFGS
+but does better than QQMM when QQMM is very slow.

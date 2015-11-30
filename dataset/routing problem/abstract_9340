@@ -1,0 +1,16 @@
+The estimation of multivariate GARCH time series models is a difficult task
+mainly due to the significant overparameterization exhibited by the problem and
+usually referred to as the "curse of dimensionality". For example, in the case
+of the VEC family, the number of parameters involved in the model grows as a
+polynomial of order four on the dimensionality of the problem. Moreover, these
+parameters are subjected to convoluted nonlinear constraints necessary to
+ensure, for instance, the existence of stationary solutions and the positive
+semidefinite character of the conditional covariance matrices used in the model
+design. So far, this problem has been addressed in the literature only in low
+dimensional cases with strong parsimony constraints. In this paper we propose a
+general formulation of the estimation problem in any dimension and develop a
+Bregman-proximal trust-region method for its solution. The Bregman-proximal
+approach allows us to handle the constraints in a very efficient and natural
+way by staying in the primal space and the Trust-Region mechanism stabilizes
+and speeds up the scheme. Preliminary computational experiments are presented
+and confirm the very good performances of the proposed approach.

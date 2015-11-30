@@ -1,0 +1,24 @@
+We introduce the following elementary scheduling problem. We are given a
+collection of n jobs, where each job has an integer length as well as a set Ti
+of time intervals in which it can be feasibly scheduled. Given a parameter B,
+the processor can schedule up to B jobs at a timeslot t so long as it is
+"active" at t. The goal is to schedule all the jobs in the fewest number of
+active timeslots. The machine consumes a fixed amount of energy per active
+timeslot, regardless of the number of jobs scheduled in that slot (as long as
+the number of jobs is non-zero). In other words, subject to all units of each
+job being scheduled in its feasible region and at each slot at most B jobs
+being scheduled, we are interested in minimizing the total time during which
+the machine is active. We present a linear time algorithm for the case where
+jobs are unit length and each Ti is a single interval. For general Ti, we show
+that the problem is NP-complete even for B = 3. However when B = 2, we show
+that it can be efficiently solved. In addition, we consider a version of the
+problem where jobs have arbitrary lengths and can be preempted at any point in
+time. For general B, the problem can be solved by linear programming. For B =
+2, the problem amounts to finding a triangle-free 2-matching on a special
+graph. We extend the algorithm of Babenko et. al. to handle our variant, and
+also to handle non-unit length jobs. This yields an O(sqrt(L)m) time algorithm
+to solve the preemptive scheduling problem for B = 2, where L is the sum of the
+job lengths. We also show that for B = 2 and unit length jobs, the optimal
+non-preemptive schedule has at most 4/3 times the active time of the optimal
+preemptive schedule; this bound extends to several versions of the problem when
+jobs have arbitrary length.

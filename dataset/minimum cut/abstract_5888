@@ -1,0 +1,16 @@
+Sequence pattern avoidance is a central topic in combinatorics. A sequence
+$s$ contains a sequence $u$ if some subsequence of $s$ can be changed into $u$
+by a one-to-one renaming of its letters. If $s$ does not contain $u$, then $s$
+avoids $u$. A widely studied extremal function related to pattern avoidance is
+$Ex(u, n)$, the maximum length of an $n$-letter sequence that avoids $u$ and
+has every $r$ consecutive letters pairwise distinct, where $r$ is the number of
+distinct letters in $u$.
+  We bound $Ex(u, n)$ using the formation width function, $fw(u)$, which is the
+minimum $s$ for which there exists $r$ such that any concatenation of $s$
+permutations, each on the same $r$ letters, contains $u$. In particular, we
+identify every sequence $u$ such that $fw(u)=4$ and $u$ contains $ababa$. The
+significance of this result lies in its implication that, for every such
+sequence $u$, we have $Ex(u, n) = \Theta(n \alpha(n))$, where $\alpha(n)$
+denotes the incredibly slow-growing inverse Ackermann function. We have thus
+identified the extremal function of many infinite classes of previously
+unidentified sequences.

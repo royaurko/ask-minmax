@@ -1,0 +1,22 @@
+We consider the problem of computing the q->p norm of a matrix A, which is
+defined for p,q \ge 1, as |A|_{q->p} = max_{x !=0 } |Ax|_p / |x|_q. This is in
+general a non-convex optimization problem, and is a natural generalization of
+the well-studied question of computing singular values (this corresponds to
+p=q=2). Different settings of parameters give rise to a variety of known
+interesting problems (such as the Grothendieck problem when p=1 and q=\infty).
+However, very little is understood about the approximability of the problem for
+different values of p,q. Our first result is an efficient algorithm for
+computing the q->p norm of matrices with non-negative entries, when q \ge p \ge
+1. The algorithm we analyze is based on a natural fixed point iteration, which
+can be seen as an analog of power iteration for computing eigenvalues. We then
+present an application of our techniques to the problem of constructing a
+scheme for oblivious routing in the l_p norm. This makes constructive a recent
+existential result of Englert and R\"acke [ER] on O(log n)-competitive
+oblivious routing schemes (which they make constructive only for p=2). On the
+other hand, when we do not have any restrictions on the entries (such as
+non-negativity), we prove that the problem is NP-hard to approximate to any
+constant factor, for 2 < p \le q, and p \le q < 2 (these are precisely the
+ranges of p,q with p\le q, where constant factor approximations are not known).
+In this range, our techniques also show that if NP does not have
+quasi-polynomial time algorithms, the q->p cannot be approximated to a factor
+2^{(log n)^{1-eps}}, for any \eps>0.

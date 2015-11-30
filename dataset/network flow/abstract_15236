@@ -1,0 +1,11 @@
+Traditional end-to-end congestion control mechanisms assume data transferring
+happens between each pair user. In contrast, in a P2P network, many peers may
+locally keep a copy of a specific data object. If the path between a pair of
+peers is congested, the requesting peer who wants to download data will switch
+to another peer in its neighbor peer list to fetch the data instead of
+decreasing the download rate from the current peer. Thus, it is critical to
+study the performance in multi-point-to-multi-point (M2M) transport protocol in
+a P2P network. In this paper, we build a mathematical model for identifying the
+key parameters for the M2M transport protocol and also the relationships among
+these parameters. Finally, we conduct simulation experiments to validate our
+model.

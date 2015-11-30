@@ -1,0 +1,13 @@
+A Langevin equation with multiplicative noise is an equation schematically of
+the form dq/dt = - F(q) + e(q) xi, where e(q) xi is Gaussian white noise whose
+amplitude e(q) depends on q itself. I show how to convert such equations into
+path integrals. The definition of the path integral depends crucially on the
+convention used for discretizing time, and I specifically derive the correct
+path integral when the convention used is the natural, time-symmetric one that
+time derivatives are (q_t - q_{t-\Delta t}) / \Delta t and coordinates are (q_t
++ q_{t-\Delta t}) / 2. [This is the convention that permits standard
+manipulations of calculus on the action, like naive integration by parts.] It
+has sometimes been assumed in the literature that a Stratanovich Langevin
+equation can be quickly converted to a path integral by treating time as
+continuous but using the rule \theta(t=0) = 1/2. I show that this prescription
+fails when the amplitude e(q) is q-dependent.

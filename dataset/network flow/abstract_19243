@@ -1,0 +1,25 @@
+Multicast transmission, wherein the same packet must be delivered to multiple
+receivers, is an important aspect of sensor and tactical networks and has
+several distinctive traits as opposed to more commonly studied unicast
+networks. Specially, these include (i) identical packets must be delivered
+successfully to several nodes, (ii) outage at any receiver requires the packet
+to be retransmitted at least to that receiver, and (iii) the multicast rate is
+dominated by the receiver with the weakest link in order to minimize outage and
+retransmission. A first contribution of this paper is the development of a
+tractable multicast model and throughput metric that captures each of these key
+traits in a multicast wireless network. We utilize a Poisson cluster process
+(PCP) consisting of a distinct Poisson point process (PPP) for the transmitters
+and receivers, and then define the multicast transmission capacity (MTC) as the
+maximum achievable multicast rate per transmission attempt times the maximum
+intensity of multicast clusters under decoding delay and multicast outage
+constraints. A multicast cluster is a contiguous area over which a packet is
+multicasted, and to reduce outage it can be tessellated into $v$ smaller
+regions of multicast. The second contribution of the paper is the analysis of
+several key aspects of this model, for which we develop the following main
+result. Assuming $\tau/v$ transmission attempts are allowed for each
+tessellated region in a multicast cluster, we show that the MTC is $\Theta(\rho
+k^{x}\log(k)v^{y})$ where $\rho$, $x$ and $y$ are functions of $\tau$ and $v$
+depending on the network size and intensity, and $k$ is the average number of
+the intended receivers in a cluster. We derive $\{\rho, x, y\}$ for a number of
+regimes of interest, and also show that an appropriate number of
+retransmissions can significantly enhance the MTC.

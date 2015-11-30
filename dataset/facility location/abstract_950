@@ -1,0 +1,10 @@
+We formally specified the type system and operational semantics of LOOPw with
+Ott and Isabelle/HOL proof assistant. Moreover, both the type system and the
+semantics of LOOPw have been tested using Isabelle/HOL program extraction
+facility for inductively defined relations. In particular, the program that
+computes the Ackermann function type checks and behaves as expected. The main
+difference (apart from the choice of an Ada-like concrete syntax) with LOOPw
+comes from the treatment of parameter passing. Indeed, since Ott does not
+currently fully support alpha-conversion, we rephrased the operational
+semantics with explicit aliasing in order to implement the out parameter
+passing mode.

@@ -1,0 +1,20 @@
+We study the Minimum Latency Submodular Cover problem (MLSC), which consists
+of a metric $(V,d)$ with source $r\in V$ and $m$ monotone submodular functions
+$f_1, f_2, ..., f_m: 2^V \rightarrow [0,1]$. The goal is to find a path
+originating at $r$ that minimizes the total cover time of all functions. This
+generalizes well-studied problems, such as Submodular Ranking [AzarG11] and
+Group Steiner Tree [GKR00]. We give a polynomial time $O(\log \frac{1}{\eps}
+\cdot \log^{2+\delta} |V|)$-approximation algorithm for MLSC, where
+$\epsilon>0$ is the smallest non-zero marginal increase of any
+$\{f_i\}_{i=1}^m$ and $\delta>0$ is any constant.
+  We also consider the Latency Covering Steiner Tree problem (LCST), which is
+the special case of \mlsc where the $f_i$s are multi-coverage functions. This
+is a common generalization of the Latency Group Steiner Tree
+[GuptaNR10a,ChakrabartyS11] and Generalized Min-sum Set Cover [AzarGY09,
+BansalGK10] problems. We obtain an $O(\log^2|V|)$-approximation algorithm for
+LCST.
+  Finally we study a natural stochastic extension of the Submodular Ranking
+problem, and obtain an adaptive algorithm with an $O(\log 1/ \eps)$
+approximation ratio, which is best possible. This result also generalizes some
+previously studied stochastic optimization problems, such as Stochastic Set
+Cover [GoemansV06] and Shared Filter Evaluation [MunagalaSW07, LiuPRY08].

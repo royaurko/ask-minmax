@@ -1,0 +1,20 @@
+We present teraflop-scale calculations of biomolecular electrostatics enabled
+by the combination of algorithmic and hardware acceleration. The algorithmic
+acceleration is achieved with the fast multipole method (FMM) in conjunction
+with a boundary element method (BEM) formulation of the continuum electrostatic
+model, as well as the BIBEE approximation to BEM. The hardware acceleration is
+achieved through graphics processors, GPUs. We demonstrate the power of our
+algorithms and software for the calculation of the electrostatic interactions
+between biological molecules in solution. The applications demonstrated include
+the electrostatics of protein--drug binding and several multi-million atom
+systems consisting of hundreds to thousands of copies of lysozyme molecules.
+The parallel scalability of the software was studied in a cluster at the
+Nagasaki Advanced Computing Center, using 128 nodes, each with 4 GPUs. Delicate
+tuning has resulted in strong scaling with parallel efficiency of 0.8 for 256
+and 0.5 for 512 GPUs. The largest application run, with over 20 million atoms
+and one billion unknowns, required only one minute on 512 GPUs. We are
+currently adapting our BEM software to solve the linearized Poisson-Boltzmann
+equation for dilute ionic solutions, and it is also designed to be flexible
+enough to be extended for a variety of integral equation problems, ranging from
+Poisson problems to Helmholtz problems in electromagnetics and acoustics to
+high Reynolds number flow.

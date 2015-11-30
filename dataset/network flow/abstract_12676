@@ -1,0 +1,20 @@
+In designing a network to link n cities in a square of area n, one might be
+guided by the following two desiderata. First, the total network length should
+not be much greater than the length of the shortest network connecting all
+cities. Second, the average route length (taken over source-destination pairs)
+should not be much greater than the average straight-line distance. How small
+can we make these two differences? For typical configurations the shortest
+network length is order n and the average straight-line distance is order
+n^1/2, so it seems implausible that one can construct a network in which the
+first difference is o(n) and the second difference is o(n^1/2). But in fact one
+can do better: for an arbitrary configuration one can construct a network where
+the first difference is o(n) and the second difference is almost as small as
+O(log n). The construction is conceptually simple: over the minimum-length
+connected network (Steiner tree) superimpose a sparse stationary and isotropic
+Poisson line process. The key ingredient is a new result about the Poisson line
+process. Consider two points at distance r apart, and delete from the line
+process all lines which separate these two points. The resulting pattern of
+lines partitions the plane into cells; the cell containing the two points has
+mean boundary length 2r + C log r. Turning to lower bounds we show that, under
+a weak equidistribution assumption, if the first difference is O(n) then the
+second difference cannot be o(sqrt(log n)).

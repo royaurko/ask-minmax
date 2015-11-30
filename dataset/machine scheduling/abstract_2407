@@ -1,0 +1,18 @@
+Homogeneous charge compression ignition (HCCI) is a futuristic combustion
+technology that operates with a high fuel efficiency and reduced emissions.
+HCCI combustion is characterized by complex nonlinear dynamics which
+necessitates a model based control approach for automotive application. HCCI
+engine control is a nonlinear, multi-input multi-output problem with state and
+actuator constraints which makes controller design a challenging task. Typical
+HCCI controllers make use of a first principles based model which involves a
+long development time and cost associated with expert labor and calibration. In
+this paper, an alternative approach based on machine learning is presented
+using extreme learning machines (ELM) and nonlinear model predictive control
+(MPC). A recurrent ELM is used to learn the nonlinear dynamics of HCCI engine
+using experimental data and is shown to accurately predict the engine behavior
+several steps ahead in time, suitable for predictive control. Using the ELM
+engine models, an MPC based control algorithm with a simplified quadratic
+program update is derived for real time implementation. The working and
+effectiveness of the MPC approach has been analyzed on a nonlinear HCCI engine
+model for tracking multiple reference quantities along with constraints defined
+by HCCI states, actuators and operational limits.

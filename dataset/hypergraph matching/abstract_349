@@ -1,0 +1,26 @@
+Let $ H = (V,E) $ be a hypergraph. By the chromatic number of a hypergraph $
+H = (V,E) $ we mean the minimum number $\chi(H)$ of colors needed to paint all
+the vertices in $ V $ so that any edge $ e \in E $ contains at least two
+vertices of some different colors. Finally, a hypergraph is said to form a
+clique, if its edges are pairwise intersecting.
+  In 1973 Erd\H{o}s and Lov\'asz noticed that if an $n$-uniform hypergraph $ H
+= (V,E) $ forms a clique, then $ \chi(H) \in \{2,3\} $. They untoduced
+following quantity. $$ M(n) = \max \{|E|: \exists {\rm an} n-{\rm uniform} {\rm
+clique} H = (V,E) {\rm with} \chi(H) = 3\}. $$ Obviously such definition has no
+sense in the case of $ \chi(H) = 2 $.
+  Theorem 1 (P. Erdos, L. Lovasz} The inequalities hold $$ n!(e-1) \le M(n) \le
+n^n. $$
+  Almost nothing better has been done during the last 35 years.
+  At the same time, another quantity $ r(n) $ was introduced by Lovasz r(n) =
+\max \{|E|: ~ \exists {\rm an} ~ n-{\rm uniform} ~ {\rm clique} ~ H = (V,E) ~
+{\rm s.t.} ~ \tau(H) = n\}, $$ where $ \tau(H) $ is the {\it covering number}
+of $ H $, i.e., $$ \tau(H) = \min \{|f|: ~ f \subset V, ~ \forall ~ e \in E ~ f
+\cap e \neq \emptyset\}. $$ Clearly, for any $n$-uniform clique $ H $, we have
+$ \tau(H) \le n $, and if $ \chi(H) = 3 $, then $ \tau(H) = n $. Thus, $ M(n)
+\le r(n) $. Lov\'asz noticed that for $ r(n) $ the same estimates as in Theorem
+1 apply and conjectured that the lower estimate is best possible. In 1996 P.
+Frankl, K. Ota, and N. Tokushige disproved this conjecture and showed that $
+r(n) \ge (\frac{n}{2})^{n-1} $.
+  We discovered a new upper bound for the r(n) (so for M(n) too).
+  Theorem 2. $$ M(n) \leq r(n) \le c n^{n-1/2} \ln n. $$, where c is a
+constant.

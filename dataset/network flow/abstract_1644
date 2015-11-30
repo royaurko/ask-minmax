@@ -1,0 +1,24 @@
+Networks on Chip is a recent solution paradigm adopted to increase the
+performance of Multicore designs. The key idea is to interconnect various
+computation modules (IP cores) in a network fashion and transport packets
+simultaneously across them, thereby gaining performance. In addition to
+improving performance by having multiple packets in flight, NoCs also present a
+host of other advantages including scalability, power efficiency, and component
+reuse through modular design. This work focuses on design and development of
+high performance communication architectures for FPGAs using NoCs Once
+completely developed, the above methodology could be used to augment the
+current FPGA design flow for implementing multicore SoC applications. We design
+and implement an NoC framework for FPGAs, MultiClock OnChip Network for
+Reconfigurable Systems (MoCReS). We propose a novel microarchitecture for a
+hybrid two layer router that supports both packetswitched communications,
+across its local and directional ports, as well as, time multiplexed
+circuitswitched communications among the multiple IP cores directly connected
+to it. Results from place and route VHDL models of the advanced router
+architecture show an average improvement of 20.4 percent in NoC bandwidth
+(maximum of 24 percent compared to a traditional NoC). We parameterize the
+hybrid router model over the number of ports, channel width and bRAM depth and
+develop a library of network components (MoClib Library). For your paper to be
+published in the conference proceedings, you must use this document as both an
+instruction set and as a template into which you can type your own text. If
+your paper does not conform to the required format, you will be asked to fix
+it.

@@ -1,0 +1,14 @@
+Algorithm selection is typically based on models of algorithm performance,
+learned during a separate offline training sequence, which can be prohibitively
+expensive. In recent work, we adopted an online approach, in which a
+performance model is iteratively updated and used to guide selection on a
+sequence of problem instances. The resulting exploration-exploitation trade-off
+was represented as a bandit problem with expert advice, using an existing
+solver for this game, but this required the setting of an arbitrary bound on
+algorithm runtimes, thus invalidating the optimal regret of the solver. In this
+paper, we propose a simpler framework for representing algorithm selection as a
+bandit problem, with partial information, and an unknown bound on losses. We
+adapt an existing solver to this game, proving a bound on its expected regret,
+which holds also for the resulting algorithm selection technique. We present
+preliminary experiments with a set of SAT solvers on a mixed SAT-UNSAT
+benchmark.

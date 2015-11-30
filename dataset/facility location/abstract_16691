@@ -1,0 +1,17 @@
+A computer code is described for the simulation of gravitational lensing
+data. The code incorporates adaptive mesh refinement in choosing which rays to
+shoot based on the requirements of the source size, location and surface
+brightness distribution or to find critical curves/caustics. A variety of
+source surface brightness models are implemented to represent galaxies and
+quasar emission regions. The lensing mass can be represented by point masses
+(stars), smoothed simulation particles, analytic halo models, pixelized mass
+maps or any combination of these. The deflection and beam distortions
+(convergence and shear) are calculated by modified tree algorithm when halos,
+point masses or particles are used and by FFT when mass maps are used. The
+combination of these methods allow for a very large dynamical range to be
+represented in a single simulation. Individual images of galaxies can be
+represented in a simulation that covers many square degrees. For an individual
+strongly lensed quasar, source sizes from the size of the quasar's host galaxy
+(~ 100 kpc) down to microlensing scales (~ 10^-4 pc) can be probed in a self
+consistent simulation. Descriptions of various tests of the code's accuracy are
+given.

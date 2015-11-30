@@ -1,0 +1,12 @@
+In many network topologies, hosts have multiple IP addresses, and may choose
+among multiple network paths by selecting the source and destination addresses
+of the packets that they send. This can happen with multihomed hosts (hosts
+connected to multiple networks), or in multihomed networks using
+source-specific routing. A number of efforts have been made to dynamically
+choose between multiple addresses in order to improve the reliability or the
+performance of network applications, at the network layer, as in Shim6, or at
+the transport layer, as in MPTCP. In this paper, we describe our experience of
+implementing dynamic address selection at the application layer within the
+Mobile Shell. While our work is specific to Mosh, we hope that it is generic
+enough to serve as a basis for designing UDP-based multipath applications or
+even more general APIs.

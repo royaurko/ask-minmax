@@ -1,0 +1,25 @@
+The Expectation-Maximization (EM) algorithm (Dempster, Laird and Rubin, 1977)
+is a popular method for computing maximum likelihood estimates (MLEs) in
+problems with missing data. Each iteration of the al- gorithm formally consists
+of an E-step: evaluate the expected complete-data log-likelihood given the
+observed data, with expectation taken at current pa- rameter estimate; and an
+M-step: maximize the resulting expression to find the updated estimate.
+Conditions that guarantee convergence of the EM se- quence to a unique MLE were
+found by Boyles (1983) and Wu (1983). In complicated models for
+high-dimensional data, it is common to encounter an intractable integral in the
+E-step. The Monte Carlo EM algorithm of Wei and Tanner (1990) works around this
+difficulty by maximizing instead a Monte Carlo approximation to the appropriate
+conditional expectation. Convergence properties of Monte Carlo EM have been
+studied, most notably, by Chan and Ledolter (1995) and Fort and Moulines
+(2003). The goal of this review paper is to provide an accessible but rigorous
+in- troduction to the convergence properties of EM and Monte Carlo EM. No
+previous knowledge of the EM algorithm is assumed. We demonstrate the im-
+plementation of EM and Monte Carlo EM in two simple but realistic examples. We
+show that if the EM algorithm converges it converges to a stationary point of
+the likelihood, and that the rate of convergence is linear at best. For Monte
+Carlo EM we present a readable proof of the main result of Chan and Ledolter
+(1995), and state without proof the conclusions of Fort and Moulines (2003). An
+important practical implication of Fort and Moulines's (2003) result relates to
+the determination of Monte Carlo sample sizes in MCEM; we provide a brief
+review of the literature (Booth and Hobert, 1999; Caffo, Jank and Jones, 2005)
+on that problem.

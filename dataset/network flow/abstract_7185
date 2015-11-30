@@ -1,0 +1,20 @@
+With the proliferation of cheaper electronic devices, wireless communication
+over multiple-channels in a multi-interface network is now possible. For
+instace, wireless sensor nodes can now operate over multiplechannels. Moreover,
+cognitive radio sensor networks are also evolving, which also operates over
+multiple-channels. In the market, we can find antennas that can support the
+operation of multiple channels, for e.g. the cc2420 antenna that is used for
+communication between wireless sensor nodes consists of 16 programmable
+channels. The proper utilization of multiple-channels reduces the interference
+between the nodes and increase the network throughput. Recently, a Cognitive
+Radio Cognitive Network (CRCN) patch for NS-2 simulator has proposed to support
+multi-channel multi-interface capability in NS-2. In this tutorial, we consider
+how to simulate a multi-channel multiinterface wireless network using the NS-2
+simulator. This tutorial is trageted to the novice users who wants to
+understand the implementation of multi-channel multi-interface in NS-2. We take
+the Cognitive Radio Cognitive Network (CRCN) patch for NS-2 simulator and
+demonstrate broadcasting over multiple-channels in a multi-interface network
+setting. In our seeting, node braodcasts the Hello packets to its neighbors.
+Neighboring nodes receive the Hello packets if and only if they are tuned to
+the same channel. We demonstrate through example that the tuning of receivers
+can be done in two fashions.

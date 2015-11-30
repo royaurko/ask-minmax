@@ -1,0 +1,18 @@
+This paper analyzes the cache miss cost of algorithms when scheduled using
+randomized work stealing (RWS) in a parallel environment, taking into account
+the effects of false sharing.
+  First, prior analyses (due to Acar et al.) are extended to incorporate false
+sharing. However, to control the possible delays due to false sharing, some
+restrictions on the algorithms seem necessary. Accordingly, the class of
+Hierarchical Tree algorithms is introduced and their performance analyzed.
+  In addition, the paper analyzes the performance of a subclass of the
+Hierarchical Tree Algorithms, called HBP algorithms, when scheduled using RWS;
+improved complexity bounds are obtained for this subclass. This class was
+introduced in a companion paper with efficient resource oblivious computation
+in mind.
+  Finally, we note that in a scenario in which there is no false sharing the
+results in this paper match prior bounds for cache misses but with reduced
+assumptions, and in particular with no need for a bounding concave function for
+the cost of cache misses as in prior work by Frigo and Strumpen. This allows
+non-trivial cache miss bounds in this case to be obtained for a larger class of
+algorithms.

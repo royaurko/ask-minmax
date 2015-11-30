@@ -1,0 +1,20 @@
+In this paper we study the connectivity problem for wireless networks under
+the Signal to Interference plus Noise Ratio (SINR) model. Given a set of radio
+transmitters distributed in some area, we seek to build a directed strongly
+connected communication graph, and compute an edge coloring of this graph such
+that the transmitter-receiver pairs in each color class can communicate
+simultaneously. Depending on the interference model, more or less colors,
+corresponding to the number of frequencies or time slots, are necessary. We
+consider the SINR model that compares the received power of a signal at a
+receiver to the sum of the strength of other signals plus ambient noise . The
+strength of a signal is assumed to fade polynomially with the distance from the
+sender, depending on the so-called path-loss exponent $\alpha$.
+  We show that, when all transmitters use the same power, the number of colors
+needed is constant in one-dimensional grids if $\alpha>1$ as well as in
+two-dimensional grids if $\alpha>2$. For smaller path-loss exponents and
+two-dimensional grids we prove upper and lower bounds in the order of
+$\mathcal{O}(\log n)$ and $\Omega(\log n/\log\log n)$ for $\alpha=2$ and
+$\Theta(n^{2/\alpha-1})$ for $\alpha<2$ respectively. If nodes are distributed
+uniformly at random on the interval $[0,1]$, a \emph{regular} coloring of
+$\mathcal{O}(\log n)$ colors guarantees connectivity, while $\Omega(\log \log
+n)$ colors are required for any coloring.

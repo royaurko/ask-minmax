@@ -1,0 +1,18 @@
+Compressed sensing is a technique to sample compressible signals below the
+Nyquist rate, whilst still allowing near optimal reconstruction of the signal.
+In this paper we present a theoretical analysis of the iterative hard
+thresholding algorithm when applied to the compressed sensing recovery problem.
+We show that the algorithm has the following properties (made more precise in
+the main text of the paper)
+  - It gives near-optimal error guarantees.
+  - It is robust to observation noise.
+  - It succeeds with a minimum number of observations.
+  - It can be used with any sampling operator for which the operator and its
+adjoint can be computed.
+  - The memory requirement is linear in the problem size.
+  - Its computational complexity per iteration is of the same order as the
+application of the measurement operator or its adjoint.
+  - It requires a fixed number of iterations depending only on the logarithm of
+a form of signal to noise ratio of the signal.
+  - Its performance guarantees are uniform in that they only depend on
+properties of the sampling operator and signal sparsity.

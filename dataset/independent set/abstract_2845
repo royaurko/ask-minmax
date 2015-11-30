@@ -1,0 +1,11 @@
+We demonstrate a fast spin-s spherical harmonic transform algorithm, which is
+flexible and exact for band-limited functions. In contrast to previous work,
+where spin transforms are computed independently, our algorithm permits the
+computation of several distinct spin transforms simultaneously. Specifically,
+only one set of special functions is computed for transforms of quantities with
+any spin, namely the Wigner d-matrices evaluated at {\pi}/2, which may be
+computed with efficient recursions. For any spin the computation scales as
+O(L^3) where L is the band-limit of the function. Our publicly available
+numerical implementation permits very high accuracy at modest computational
+cost. We discuss applications to the Cosmic Microwave Background (CMB) and
+gravitational lensing.

@@ -1,0 +1,11 @@
+Bliss schemes of a run length limited (RLL) codec in combination with an LDPC
+codec, generate LDPC parity bits over a systematic sequence of RLL channel bits
+that are inherently redundant as they satisfy e.g. a $d=1$ minimum run length
+constraint. That is the subsequences consisting of runs of length $d=1$, viz.
+$...010...$ and $...101...$, cannot occur. We propose to use this redundancy
+during LDPC decoding in a Bliss scheme by introducing additional $d$-constraint
+nodes in the factor graph used by the LDPC decoder. The messages sent from
+these new nodes to the variable or codeword bit nodes exert a ``force'' on the
+resulting soft-bit vector coming out of the LDPC decoding that give it a
+tendency to comply with the $d$-constraints. This way, we can significantly
+reduce the probability of decoding error.

@@ -1,0 +1,19 @@
+Matrix computations, especially iterative PDE solving (and the sparse matrix
+vector multiplication subproblem within) using conjugate gradient algorithm,
+and LU/Cholesky decomposition for solving system of linear equations, form the
+kernel of many applications, such as circuit simulators, computational fluid
+dynamics or structural analysis etc. The problem of designing approaches for
+parallelizing these computations, to get good speedups as much as possible as
+per Amdahl's law, has been continuously researched upon. In this paper, we
+discuss approaches based on the use of finite projective geometry graphs for
+these two problems. For the problem of conjugate gradient algorithm, the
+approach looks at an alternative data distribution based on projective-geometry
+concepts. It is proved that this data distribution is an optimal data
+distribution for scheduling the main problem of dense matrix-vector
+multiplication. For the problem of parallel LU/Cholesky decomposition of
+general matrices, the approach is motivated by the recently published scheme
+for interconnects of distributed systems, perfect difference networks. We find
+that projective-geometry based graphs indeed offer an exciting way of
+parallelizing these computations, and in fact many others. Moreover, their
+applications ranges from architectural ones (interconnect choice) to
+algorithmic ones (data distributions).

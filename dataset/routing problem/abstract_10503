@@ -1,0 +1,24 @@
+We describe our software package Block Locally Optimal Preconditioned
+Eigenvalue Xolvers (BLOPEX) publicly released recently. BLOPEX is available as
+a stand-alone serial library, as an external package to PETSc (``Portable,
+Extensible Toolkit for Scientific Computation'', a general purpose suite of
+tools for the scalable solution of partial differential equations and related
+problems developed by Argonne National Laboratory), and is also built into {\it
+hypre} (``High Performance Preconditioners'', scalable linear solvers package
+developed by Lawrence Livermore National Laboratory). The present BLOPEX
+release includes only one solver--the Locally Optimal Block Preconditioned
+Conjugate Gradient (LOBPCG) method for symmetric eigenvalue problems. {\it
+hypre} provides users with advanced high-quality parallel preconditioners for
+linear systems, in particular, with domain decomposition and multigrid
+preconditioners. With BLOPEX, the same preconditioners can now be efficiently
+used for symmetric eigenvalue problems. PETSc facilitates the integration of
+independently developed application modules with strict attention to component
+interoperability, and makes BLOPEX extremely easy to compile and use with
+preconditioners that are available via PETSc. We present the LOBPCG algorithm
+in BLOPEX for {\it hypre} and PETSc. We demonstrate numerically the scalability
+of BLOPEX by testing it on a number of distributed and shared memory parallel
+systems, including a Beowulf system, SUN Fire 880, an AMD dual-core Opteron
+workstation, and IBM BlueGene/L supercomputer, using PETSc domain decomposition
+and {\it hypre} multigrid preconditioning. We test BLOPEX on a model problem,
+the standard 7-point finite-difference approximation of the 3-D Laplacian, with
+the problem size in the range $10^5-10^8$.

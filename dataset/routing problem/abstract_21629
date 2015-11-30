@@ -1,0 +1,25 @@
+In this article we consider a priori error and pointwise estimates for finite
+element approximations of solutions to semilinear elliptic boundary value
+problems in d>=2 space dimensions, with nonlinearities satisfying critical
+growth conditions. It is well-understood how mesh geometry impacts finite
+element interpolant quality, and leads to the reasonable notion of shape
+regular simplex meshes. It is also well-known how to perform both mesh
+generation and simplex subdivision, in arbitrary space dimension, so as to
+guarantee the entire hierarchy of nested simplex meshes produced through
+subdivision continue to satisfy shape regularity. However, much more
+restrictive angle conditions are needed for basic a priori quasi-optimal error
+estimates, as well as for a priori pointwise estimates. These angle conditions,
+which are particularly difficult to satisfy in three dimensions in any type of
+unstructured or adaptive setting, are needed to gain pointwise control of the
+nonlinearity through discrete maximum principles. This represents a major gap
+in finite element approximation theory for nonlinear problems on unstructured
+meshes, and in particular for adaptive methods. In this article, we close this
+gap in the case of semilinear problems with critical or sub-critical nonlinear
+growth, by deriving a priori estimates directly, without requiring the discrete
+maximum principle, and hence eliminating the need for restrictive angle
+conditions. Our main result is a type of local Lipschitz property that relies
+only on the continuous maximum principle, together with the growth condition.
+We also show that under some additional smoothness assumptions, the a priori
+error estimate itself is enough to give pointwise control the discrete
+solution, without the need for restrictive angle conditions. Numerical
+experiments confirm our theoretical conclusions.

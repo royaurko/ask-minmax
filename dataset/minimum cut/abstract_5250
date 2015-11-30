@@ -1,0 +1,16 @@
+It has been shown numerically that the performance of the Levenberg-Marquardt
+algorithm can be improved by including a second order correction known as the
+geodesic acceleration. In this paper we give the method a more sound
+theoretical foundation by deriving the geodesic acceleration correction without
+using differential geometry and showing that the traditional convergence proofs
+can be adapted to incorporate geodesic acceleration. Unlike other methods which
+include second derivative information, the geodesic acceleration does not
+attempt to improve the Gauss-Newton approximate Hessian, but rather is an
+extension of the small-residual approximation to cubic order. In deriving
+geodesic acceleration, we note that the small-residual approximation is
+complemented by a small-curvature approximation. This latter approximation
+provides a much broader justification for the Gauss-Newton approximate Hessian
+and Levenberg-Marquardt algorithm. In particular, it is justifiable even if the
+best fit residuals are large, is dependent only on the model and not on the
+data being fit, and is applicable for the entire course of the algorithm and
+not just the region near the minimum.

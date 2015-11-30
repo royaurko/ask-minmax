@@ -1,0 +1,17 @@
+The class $(r,2)$-CSP, or simply Max 2-CSP, consists of constraint
+satisfaction problems with at most two $r$-valued variables per clause. For
+instances with $n$ variables and $m$ binary clauses, we present an $O(n
+r^{5+19m/100})$-time algorithm which is the fastest polynomial-space algorithm
+for many problems in the class, including Max Cut. The method also proves a
+treewidth bound $\tw(G) \leq (13/75+o(1))m$, which gives a faster Max 2-CSP
+algorithm that uses exponential space: running in time
+$\Ostar{2^{(13/75+o(1))m}}$, this is fastest for most problems in Max 2-CSP.
+Parametrizing in terms of $n$ rather than $m$, for graphs of average degree $d$
+we show a simple algorithm running time $\Ostar{2^{(1-\frac{2}{d+1})n}}$, the
+fastest polynomial-space algorithm known.
+  In combination with ``Polynomial CSPs'' introduced in a companion paper,
+these algorithms also allow (with an additional polynomial-factor overhead in
+space and time) counting and sampling, and the solution of problems like Max
+Bisection that escape the usual CSP framework.
+  Linear programming is key to the design as well as the analysis of the
+algorithms.

@@ -1,0 +1,21 @@
+A celebrated theorem of Savitch states that NSPACE(S) is contained in
+DSPACE(S^2). In particular, Savitch gave a deterministic algorithm to solve
+ST-CONNECTIVITY (an NL-complete problem) using O(log^2{n}) space, implying NL
+is in DSPACE(log^2{n}). While Savitch's theorem itself has not been improved in
+the last four decades, studying the space complexity of several special cases
+of ST-CONNECTIVITY has provided new insights into the space-bounded complexity
+classes.
+  In this paper, we introduce new kind of graph connectivity problems which we
+call graph realizability problems. All of our graph realizability problems are
+generalizations of UNDIRECTED ST-CONNECTIVITY. ST-REALIZABILITY, the most
+general graph realizability problem, is LogCFL-complete. We define the
+corresponding complexity classes that lie between L and LogCFL and study their
+relationships.
+  As special cases of our graph realizability problems we define two natural
+problems, BALANCED ST-CONNECTIVITY and POSITIVE BALANCED ST-CONNECTIVITY, that
+lie between L and NL. We present a deterministic O(lognloglogn) space algorithm
+for BALANCED ST-CONNECTIVITY. More generally we prove that SGSLogCFL, a
+generalization of BALANCED ST-CONNECTIVITY, is contained in
+DSPACE(lognloglogn). To achieve this goal we generalize several concepts (such
+as graph squaring and transitive closure) and algorithms (such as parallel
+algorithms) known in the context of UNDIRECTED ST-CONNECTIVITY.

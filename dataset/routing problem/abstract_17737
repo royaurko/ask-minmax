@@ -1,0 +1,11 @@
+Distance labeling is a preprocessing technique introduced by Peleg [Journal
+of Graph Theory, 33(3)] to speed up distance queries in large networks. Herein,
+each vertex receives a (short) label and, the distance between two vertices can
+be inferred from their two labels. One such preprocessing problem occurs in the
+hub labeling algorithm [Abraham et al., SODA'10]: the label of a vertex v is a
+set of vertices x (the "hubs") with their distance d(x,v) to v and the distance
+between any two vertices u and v is the sum of their distances to a common hub.
+The problem of assigning as few such hubs as possible was conjectured to be
+NP-hard, but no proof was known to date. We give a reduction from the
+well-known Vertex Cover problem on graphs to prove that finding an optimal hub
+labeling is indeed NP-hard.

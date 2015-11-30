@@ -1,0 +1,25 @@
+A mathematical characterization of serially-pruned permutations (SPPs)
+employed in variable-length permuters and their associated fast pruning
+algorithms and architectures are proposed. Permuters are used in many signal
+processing systems for shuffling data and in communication systems as an
+adjunct to coding for error correction. Typically only a small set of discrete
+permuter lengths are supported. Serial pruning is a simple technique to alter
+the length of a permutation to support a wider range of lengths, but results in
+a serial processing bottleneck. In this paper, parallelizing SPPs is formulated
+in terms of recursively computing sums involving integer floor and related
+functions using integer operations, in a fashion analogous to evaluating
+Dedekind sums. A mathematical treatment for bit-reversal permutations (BRPs) is
+presented, and closed-form expressions for BRP statistics are derived. It is
+shown that BRP sequences have weak correlation properties. A new statistic
+called permutation inliers that characterizes the pruning gap of pruned
+interleavers is proposed. Using this statistic, a recursive algorithm that
+computes the minimum inliers count of a pruned BR interleaver (PBRI) in
+logarithmic time complexity is presented. This algorithm enables parallelizing
+a serial PBRI algorithm by any desired parallelism factor by computing the
+pruning gap in lookahead rather than a serial fashion, resulting in significant
+reduction in interleaving latency and memory overhead. Extensions to 2-D block
+and stream interleavers, as well as applications to pruned fast Fourier
+transforms and LTE turbo interleavers, are also presented. Moreover,
+hardware-efficient architectures for the proposed algorithms are developed.
+Simulation results demonstrate 3 to 4 orders of magnitude improvement in
+interleaving time compared to existing approaches.

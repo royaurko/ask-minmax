@@ -1,0 +1,20 @@
+Spatial Independent Component Analysis (ICA) is an increasingly used
+data-driven method to analyze functional Magnetic Resonance Imaging (fMRI)
+data. To date, it has been used to extract sets of mutually correlated brain
+regions without prior information on the time course of these regions. Some of
+these sets of regions, interpreted as functional networks, have recently been
+used to provide markers of brain diseases and open the road to paradigm-free
+population comparisons. Such group studies raise the question of modeling
+subject variability within ICA: how can the patterns representative of a group
+be modeled and estimated via ICA for reliable inter-group comparisons? In this
+paper, we propose a hierarchical model for patterns in multi-subject fMRI
+datasets, akin to mixed-effect group models used in linear-model-based
+analysis. We introduce an estimation procedure, CanICA (Canonical ICA), based
+on i) probabilistic dimension reduction of the individual data, ii) canonical
+correlation analysis to identify a data subspace common to the group iii)
+ICA-based pattern extraction. In addition, we introduce a procedure based on
+cross-validation to quantify the stability of ICA patterns at the level of the
+group. We compare our method with state-of-the-art multi-subject fMRI ICA
+methods and show that the features extracted using our procedure are more
+reproducible at the group level on two datasets of 12 healthy controls: a
+resting-state and a functional localizer study.

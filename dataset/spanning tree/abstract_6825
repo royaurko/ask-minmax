@@ -1,0 +1,9 @@
+XML document markup is highly repetitive and therefore well compressible
+using grammar-based compression. Downward, navigational XPath can be executed
+over grammar-compressed trees in PTIME: the query is translated into an
+automaton which is executed in one pass over the grammar. This result is
+well-known and has been mentioned before. Here we present precise bounds on the
+time complexity of this problem, in terms of big-O notation. For a given
+grammar and XPath query, we consider three different tasks: (1) to count the
+number of nodes selected by the query, (2) to materialize the pre-order numbers
+of the selected nodes, and (3) to serialize the subtrees at the selected nodes.

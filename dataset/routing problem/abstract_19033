@@ -1,0 +1,22 @@
+In the query-commit problem we are given a graph where edges have distinct
+probabilities of existing. It is possible to query the edges of the graph, and
+if the queried edge exists then its endpoints are irrevocably matched. The goal
+is to find a querying strategy which maximizes the expected size of the
+matching obtained. This stochastic matching setup is motivated by applications
+in kidney exchanges and online dating.
+  In this paper we address the query-commit problem from both theoretical and
+experimental perspectives. First, we show that a simple class of edges can be
+queried without compromising the optimality of the strategy. This property is
+then used to obtain in polynomial time an optimal querying strategy when the
+input graph is sparse. Next we turn our attentions to the kidney exchange
+application, focusing on instances modeled over real data from existing
+exchange programs. We prove that, as the number of nodes grows, almost every
+instance admits a strategy which matches almost all nodes. This result supports
+the intuition that more exchanges are possible on a larger pool of
+patient/donors and gives theoretical justification for unifying the existing
+exchange programs. Finally, we evaluate experimentally different querying
+strategies over kidney exchange instances. We show that even very simple
+heuristics perform fairly well, being within 1.5% of an optimal clairvoyant
+strategy, that knows in advance the edges in the graph. In such a
+time-sensitive application, this result motivates the use of committing
+strategies.

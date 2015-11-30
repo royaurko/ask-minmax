@@ -1,0 +1,24 @@
+The number of triangles is a computationally expensive graph statistic which
+is frequently used in complex network analysis (e.g., transitivity ratio), in
+various random graph models (e.g., exponential random graph model) and in
+important real world applications such as spam detection, uncovering of the
+hidden thematic structure of the Web and link recommendation. Counting
+triangles in graphs with millions and billions of edges requires algorithms
+which run fast, use small amount of space, provide accurate estimates of the
+number of triangles and preferably are parallelizable.
+  In this paper we present an efficient triangle counting algorithm which can
+be adapted to the semistreaming model. The key idea of our algorithm is to
+combine the sampling algorithm of Tsourakakis et al. and the partitioning of
+the set of vertices into a high degree and a low degree subset respectively as
+in the Alon, Yuster and Zwick work treating each set appropriately. We obtain a
+running time $O \left(m + \frac{m^{3/2} \Delta \log{n}}{t \epsilon^2} \right)$
+and an $\epsilon$ approximation (multiplicative error), where $n$ is the number
+of vertices, $m$ the number of edges and $\Delta$ the maximum number of
+triangles an edge is contained.
+  Furthermore, we show how this algorithm can be adapted to the semistreaming
+model with space usage $O\left(m^{1/2}\log{n} + \frac{m^{3/2} \Delta \log{n}}{t
+\epsilon^2} \right)$ and a constant number of passes (three) over the graph
+stream. We apply our methods in various networks with several millions of edges
+and we obtain excellent results. Finally, we propose a random projection based
+method for triangle counting and provide a sufficient condition to obtain an
+estimate with low variance.

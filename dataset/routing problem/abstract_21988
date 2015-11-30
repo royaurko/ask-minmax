@@ -1,0 +1,24 @@
+We consider the problem of clustering a graph $G$ into two communities by
+observing a subset of the vertex correlations. Specifically, we consider the
+inverse problem with observed variables $Y=B_G x \oplus Z$, where $B_G$ is the
+incidence matrix of a graph $G$, $x$ is the vector of unknown vertex variables
+(with a uniform prior) and $Z$ is a noise vector with Bernoulli$(\varepsilon)$
+i.i.d. entries. All variables and operations are Boolean. This model is
+motivated by coding, synchronization, and community detection problems. In
+particular, it corresponds to a stochastic block model or a correlation
+clustering problem with two communities and censored edges. Without noise,
+exact recovery (up to global flip) of $x$ is possible if and only the graph $G$
+is connected, with a sharp threshold at the edge probability $\log(n)/n$ for
+Erd\H{o}s-R\'enyi random graphs. The first goal of this paper is to determine
+how the edge probability $p$ needs to scale to allow exact recovery in the
+presence of noise. Defining the degree (oversampling) rate of the graph by
+$\alpha =np/\log(n)$, it is shown that exact recovery is possible if and only
+if $\alpha >2/(1-2\varepsilon)^2+ o(1/(1-2\varepsilon)^2)$. In other words,
+$2/(1-2\varepsilon)^2$ is the information theoretic threshold for exact
+recovery at low-SNR. In addition, an efficient recovery algorithm based on
+semidefinite programming is proposed and shown to succeed in the threshold
+regime up to twice the optimal rate. For a deterministic graph $G$, defining
+the degree rate as $\alpha=d/\log(n)$, where $d$ is the minimum degree of the
+graph, it is shown that the proposed method achieves the rate $\alpha>
+4((1+\lambda)/(1-\lambda)^2)/(1-2\varepsilon)^2+ o(1/(1-2\varepsilon)^2)$,
+where $1-\lambda$ is the spectral gap of the graph $G$.

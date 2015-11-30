@@ -1,0 +1,11 @@
+This paper examines the problem of estimating the parameters of a bandlimited
+signal from samples corrupted by random jitter (timing noise) and additive iid
+Gaussian noise, where the signal lies in the span of a finite basis. For the
+presented classical estimation problem, the Cramer-Rao lower bound (CRB) is
+computed, and an Expectation-Maximization (EM) algorithm approximating the
+maximum likelihood (ML) estimator is developed. Simulations are performed to
+study the convergence properties of the EM algorithm and compare the
+performance both against the CRB and a basic linear estimator. These
+simulations demonstrate that by post-processing the jittered samples with the
+proposed EM algorithm, greater jitter can be tolerated, potentially reducing
+on-chip ADC power consumption substantially.

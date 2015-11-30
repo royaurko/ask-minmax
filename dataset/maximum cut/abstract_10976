@@ -1,0 +1,23 @@
+We develop a novel method, based on the statistical concept of the
+Vapnik-Chervonenkis dimension, to evaluate the selectivity (output cardinality)
+of SQL queries - a crucial step in optimizing the execution of large scale
+database and data-mining operations. The major theoretical contribution of this
+work, which is of independent interest, is an explicit bound to the
+VC-dimension of a range space defined by all possible outcomes of a collection
+(class) of queries. We prove that the VC-dimension is a function of the maximum
+number of Boolean operations in the selection predicate and of the maximum
+number of select and join operations in any individual query in the collection,
+but it is neither a function of the number of queries in the collection nor of
+the size (number of tuples) of the database. We leverage on this result and
+develop a method that, given a class of queries, builds a concise random sample
+of a database, such that with high probability the execution of any query in
+the class on the sample provides an accurate estimate for the selectivity of
+the query on the original large database. The error probability holds
+simultaneously for the selectivity estimates of all queries in the collection,
+thus the same sample can be used to evaluate the selectivity of multiple
+queries, and the sample needs to be refreshed only following major changes in
+the database. The sample representation computed by our method is typically
+sufficiently small to be stored in main memory. We present extensive
+experimental results, validating our theoretical analysis and demonstrating the
+advantage of our technique when compared to complex selectivity estimation
+techniques used in PostgreSQL and the Microsoft SQL Server.

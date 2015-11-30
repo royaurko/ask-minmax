@@ -1,0 +1,13 @@
+This paper proposes a new approach for approximate evaluation of #P-hard
+queries with probabilistic databases. In our approach, every query is evaluated
+entirely in the database engine by evaluating a fixed number of query plans,
+each providing an upper bound on the true probability, then taking their
+minimum. We provide an algorithm that takes into account important schema
+information to enumerate only the minimal necessary plans among all possible
+plans. Importantly, this algorithm is a strict generalization of all known
+results of PTIME self-join-free conjunctive queries: A query is safe if and
+only if our algorithm returns one single plan. We also apply three relational
+query optimization techniques to evaluate all minimal safe plans very fast. We
+give a detailed experimental evaluation of our approach and, in the process,
+provide a new way of thinking about the value of probabilistic methods over
+non-probabilistic methods for ranking query answers.

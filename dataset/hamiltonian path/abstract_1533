@@ -1,0 +1,9 @@
+We present an efficient algorithm for simulating the time evolution due to a
+sparse Hamiltonian. In terms of the maximum degree d and dimension N of the
+space on which the Hamiltonian H acts for time t, this algorithm uses
+(d^2(d+log* N)||Ht||)^{1+o(1)} queries. This improves the complexity of the
+sparse Hamiltonian simulation algorithm of Berry, Ahokas, Cleve, and Sanders,
+which scales like (d^4(log* N)||Ht||)^{1+o(1)}. To achieve this, we decompose a
+general sparse Hamiltonian into a small sum of Hamiltonians whose graphs of
+non-zero entries have the property that every connected component is a star,
+and efficiently simulate each of these pieces.

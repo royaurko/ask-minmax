@@ -1,0 +1,22 @@
+A new architecture is presented for a Networked Signal Processing System
+(NSPS) suitable for handling the real-time signal processing of multi-element
+radio telescopes. In this system, a multi-element radio telescope is viewed as
+an application of a multi-sensor, data fusion problem which can be decomposed
+into a general set of computing and network components for which a practical
+and scalable architecture is enabled by current technology. The need for such a
+system arose in the context of an ongoing program for reconfiguring the Ooty
+Radio Telescope (ORT) as a programmable 264-element array, which will enable
+several new observing capabilities for large scale surveys on this mature
+telescope. For this application, it is necessary to manage, route and combine
+large volumes of data whose real-time collation requires large I/O bandwidths
+to be sustained. Since these are general requirements of many multi-sensor
+fusion applications, we first describe the basic architecture of the NSPS in
+terms of a Fusion Tree before elaborating on its application for the ORT. The
+paper addresses issues relating to high speed distributed data acquisition,
+Field Programmable Gate Array (FPGA) based peer-to-peer networks supporting
+significant on-the fly processing while routing, and providing a last mile
+interface to a typical commodity network like Gigabit Ethernet. The system is
+fundamentally a pair of two co-operative networks, among which one is part of a
+commodity high performance computer cluster and the other is based on
+Commercial-Off The-Shelf (COTS) technology with support from software/firmware
+components in the public domain.

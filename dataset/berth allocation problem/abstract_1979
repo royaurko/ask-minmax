@@ -1,0 +1,14 @@
+Given a simple polygon $P$ consisting of $n$ vertices, we study the problem
+of designing space-efficient algorithms for computing (i) the visibility
+polygon of a point inside $P$, (ii) the weak visibility polygon of a line
+segment inside $P$ and (iii) the minimum link path between a pair of points
+inside $P$. For problem (i) two algorithms are proposed. The first one is an
+in-place algorithm where the input array may be lost. It uses only O(1) extra
+space apart from the input array. The second one assumes that the input is
+given in a read-only array, and it needs $O(\sqrt{n})$ extra space. The time
+complexity of both the algorithms are O(n). For problem (ii), we have assumed
+that the input polygon is given in a read-only array. Our proposed algorithm
+runs in $O(n^2)$ time using O(1) extra space. For problem (iii) the time and
+space complexities of our proposed algorithm are $O(kn)$ and O(1) respectively;
+$k$ is the length (number of links) in a minimum link path between the given
+pair of points.

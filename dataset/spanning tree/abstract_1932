@@ -1,0 +1,13 @@
+Previous work reports about SXSI, a fast XPath engine which executes tree
+automata over compressed XML indexes. Here, reasons are investigated why SXSI
+is so fast. It is shown that tree automata can be used as a general framework
+for fine grained XML query optimization. We define the "relevant nodes" of a
+query as those nodes that a minimal automaton must touch in order to answer the
+query. This notion allows to skip many subtrees during execution, and, with the
+help of particular tree indexes, even allows to skip internal nodes of the
+tree. We efficiently approximate runs over relevant nodes by means of
+on-the-fly removal of alternation and non-determinism of (alternating) tree
+automata. We also introduce many implementation techniques which allows us to
+efficiently evaluate tree automata, even in the absence of special indexes.
+Through extensive experiments, we demonstrate the impact of the different
+optimization techniques.

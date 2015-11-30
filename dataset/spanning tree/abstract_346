@@ -1,0 +1,18 @@
+Let $P$ be a set of $n$ points in ${\mathbb R}^{d}$. A point $p \in P$ is
+$k$\emph{-shallow} if it lies in a halfspace which contains at most $k$ points
+of $P$ (including $p$). We show that if all points of $P$ are $k$-shallow, then
+$P$ can be partitioned into $\Theta(n/k)$ subsets, so that any hyperplane
+crosses at most $O((n/k)^{1-1/(d-1)} \log^{2/(d-1)}(n/k))$ subsets. Given such
+a partition, we can apply the standard construction of a spanning tree with
+small crossing number within each subset, to obtain a spanning tree for the
+point set $P$, with crossing number $O(n^{1-1/(d-1)}k^{1/d(d-1)}
+\log^{2/(d-1)}(n/k))$. This allows us to extend the construction of Har-Peled
+and Sharir \cite{hs11} to three and higher dimensions, to obtain, for any set
+of $n$ points in ${\mathbb R}^{d}$ (without the shallowness assumption), a
+spanning tree $T$ with {\em small relative crossing number}. That is, any
+hyperplane which contains $w \leq n/2$ points of $P$ on one side, crosses
+$O(n^{1-1/(d-1)}w^{1/d(d-1)} \log^{2/(d-1)}(n/w))$ edges of $T$. Using a
+similar mechanism, we also obtain a data structure for halfspace range
+counting, which uses $O(n \log \log n)$ space (and somewhat higher
+preprocessing cost), and answers a query in time $O(n^{1-1/(d-1)}k^{1/d(d-1)}
+(\log (n/k))^{O(1)})$, where $k$ is the output size.

@@ -1,0 +1,18 @@
+The advent of multipoint (multicast-based) applications and the growth and
+complexity of the Internet has complicated network protocol design and
+evaluation.
+  In this paper, we present a method for automatic synthesis of worst and best
+case scenarios for multipoint protocol performance evaluation.
+  Our method uses a fault-oriented test generation (FOTG) algorithm for
+searching the protocol and system state space to synthesize these scenarios.
+The algorithm is based on a global finite state machine (FSM) model. We extend
+the algorithm with timing semantics to handle end-to-end delays and address
+performance criteria. We introduce the notion of a virtual LAN to represent
+delays of the underlying multicast distribution tree.
+  As a case study, we use our method to evaluate variants of the timer
+suppression mechanism, used in various multipoint protocols, with respect to
+two performance criteria: overhead of response messages and response time.
+Simulation results for reliable multicast protocols show that our method
+provides a scalable way for synthesizing worst-case scenarios automatically. We
+expect our method to serve as a model for applying systematic scenario
+generation to other multipoint protocols.

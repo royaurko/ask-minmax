@@ -1,0 +1,20 @@
+A subset $T \subseteq V$ of terminals is $k$-connected to a root $s$ in a
+directed/undirected graph $J$ if $J$ has $k$ internally-disjoint $vs$-paths for
+every $v \in T$; $T$ is $k$-connected in $J$ if $T$ is $k$-connected to every
+$s \in T$. We consider the {\sf Subset $k$-Connectivity Augmentation} problem:
+given a graph $G=(V,E)$ with edge/node-costs, node subset $T \subseteq V$, and
+a subgraph $J=(V,E_J)$ of $G$ such that $T$ is $k$-connected in $J$, find a
+minimum-cost augmenting edge-set $F \subseteq E \setminus E_J$ such that $T$ is
+$(k+1)$-connected in $J \cup F$. The problem admits trivial ratio $O(|T|^2)$.
+We consider the case $|T|>k$ and prove that for directed/undirected graphs and
+edge/node-costs, a $\rho$-approximation for {\sf Rooted Subset $k$-Connectivity
+Augmentation} implies the following ratios for {\sf Subset $k$-Connectivity
+Augmentation}: (i) $b(\rho+k) + {(\frac{3|T|}{|T|-k})}^2
+H(\frac{3|T|}{|T|-k})$; (ii) $\rho \cdot O(\frac{|T|}{|T|-k} \log k)$, where
+b=1 for undirected graphs and b=2 for directed graphs, and $H(k)$ is the $k$th
+harmonic number. The best known values of $\rho$ on undirected graphs are
+$\min\{|T|,O(k)\}$ for edge-costs and $\min\{|T|,O(k \log |T|)\}$ for
+node-costs; for directed graphs $\rho=|T|$ for both versions. Our results imply
+that unless $k=|T|-o(|T|)$, {\sf Subset $k$-Connectivity Augmentation} admits
+the same ratios as the best known ones for the rooted version. This improves
+the ratios in \cite{N-focs,L}.

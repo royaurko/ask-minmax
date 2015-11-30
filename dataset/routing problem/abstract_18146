@@ -1,0 +1,9 @@
+We consider the classic problem of scheduling a set of n jobs
+non-preemptively on a single machine. Each job j has non-negative processing
+time, weight, and deadline, and a feasible schedule needs to be consistent with
+chain-like precedence constraints. The goal is to compute a feasible schedule
+that minimizes the sum of penalties of late jobs. Lenstra and Rinnoy Kan
+[Annals of Disc. Math., 1977] in their seminal work introduced this problem and
+showed that it is strongly NP-hard, even when all processing times and weights
+are 1. We study the approximability of the problem and our main result is an
+O(log k)-approximation algorithm for instances with k distinct job deadlines.

@@ -1,0 +1,21 @@
+We have developed a three-dimensional (3D) spectral hydrodynamic code to
+study vortex dynamics in rotating, shearing, stratified systems (e.g. the
+atmosphere of gas giant planets, protoplanetary disks around newly forming
+protostars). The time-independent background state is stably stratified in the
+vertical direction and has a unidirectional linear shear flow aligned with one
+horizontal axis. Superposed on this background state is an unsteady, subsonic
+flow that is evolved with the Euler equations subject to the anelastic
+approximation to filter acoustic phenomena. A Fourier-Fourier basis in a set of
+quasi-Lagrangian coordinates that advect with the background shear is used for
+spectral expansions in the two horizontal directions. For the vertical
+direction, two different sets of basis functions have been implemented: (1)
+Chebyshev polynomials on a truncated, finite domain, and (2) rational Chebyshev
+functions on an infinite domain. Use of this latter set is equivalent to
+transforming the infinite domain to a finite one with a cotangent mapping, and
+using cosine and sine expansions in the mapped coordinate. The nonlinear
+advection terms are time integrated explicitly, whereas the Coriolis force,
+buoyancy terms, and pressure/enthalpy gradient are integrated semi-implicitly.
+We show that internal gravity waves can be damped by adding new terms to the
+Euler equations. The code exhibits excellent parallel performance with the
+Message Passing Interface (MPI). As a demonstration of the code, we simulate
+the merger of two 3D vortices in the midplane of a protoplanetary disk.

@@ -1,0 +1,21 @@
+Many approaches to transform classification problems from non-linear to
+linear by feature transformation have been recently presented in the
+literature. These notably include sparse coding methods and deep neural
+networks. However, many of these approaches require the repeated application of
+a learning process upon the presentation of unseen data input vectors, or else
+involve the use of large numbers of parameters and hyper-parameters, which must
+be chosen through cross-validation, thus increasing running time dramatically.
+In this paper, we propose and experimentally investigate a new approach for the
+purpose of overcoming limitations of both kinds. The proposed approach makes
+use of a linear auto-associative network (called SCNN) with just one hidden
+layer. The combination of this architecture with a specific error function to
+be minimized enables one to learn a linear encoder computing a sparse code
+which turns out to be as similar as possible to the sparse coding that one
+obtains by re-training the neural network. Importantly, the linearity of SCNN
+and the choice of the error function allow one to achieve reduced running time
+in the learning phase. The proposed architecture is evaluated on the basis of
+two standard machine learning tasks. Its performances are compared with those
+of recently proposed non-linear auto-associative neural networks. The overall
+results suggest that linear encoders can be profitably used to obtain sparse
+data representations in the context of machine learning problems, provided that
+an appropriate error function is used during the learning phase.

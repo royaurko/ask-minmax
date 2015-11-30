@@ -1,0 +1,11 @@
+The way for performing multiple sequence alignment is based on the criterion
+of the maximum scored information content computed from a weight matrix, but it
+is possible to have two or more alignments to have the same highest score
+leading to ambiguities in selecting the best alignment. This paper addresses
+this issue by introducing the concept of joint weight matrix to eliminate the
+randomness in selecting the best multiple sequence alignment. Alignments with
+equal scores are iteratively rescored with the joint weight matrix of
+increasing level (nucleotide pairs, triplets and so on) until one single best
+alignment is eventually found. This method for resolving ambiguity in multiple
+sequence alignment can be easily implemented by use of the improved scoring
+matrix.

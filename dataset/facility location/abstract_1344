@@ -1,0 +1,15 @@
+Software crashes due to its increasing complexity. Once a crash happens, a
+crash report could be sent to software developers for investigation upon user
+permission. Because of the large number of crash reports and limited
+information, debugging for crashes is often a tedious and labor-intensive task.
+In this paper, we propose a statistical fault localization framework to help
+developers locate functions that contain crashing faults. We generate the
+execution traces for the failing traces based on the crash stack, and the
+passing traces from normal executions. We form program spectra by combining
+generated passing and failing trace, and then apply statistical fault
+localization techniques such as Ochiai to locate the crashing faults. We also
+propose two heuristics to improve the fault localization performance. We
+evaluate our approach using the real-world Firefox crash report data. The
+results show that the performance of our method is promising. Our approach
+permits developers to locate 63.9% crashing faults by examining only 5% Firefox
+3.6 functions in the spectra.

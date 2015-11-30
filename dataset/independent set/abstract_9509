@@ -1,0 +1,14 @@
+The Metropolis-adjusted Langevin algorithm (MALA) is a Metropolis-Hastings
+method for approximate sampling from continuous distributions. We derive upper
+bounds for the contraction rate in Kantorovich-Rubinstein-Wasserstein distance
+of the MALA chain with semi-implicit Euler proposals applied to log-concave
+probability measures that have a density w.r.t. a Gaussian reference measure.
+For sufficiently "regular" densities, the estimates are dimension-independent,
+and they hold for sufficiently small step sizes $h$ that do not depend on the
+dimension either. In the limit $h\downarrow0$, the bounds approach the known
+optimal contraction rates for overdamped Langevin diffusions in a convex
+potential. A similar approach also applies to Metropolis-Hastings chains with
+Ornstein-Uhlenbeck proposals. In this case, the resulting estimates are still
+independent of the dimension but less optimal, reflecting the fact that MALA is
+a higher order approximation of the diffusion limit than Metropolis-Hastings
+with Ornstein-Uhlenbeck proposals.

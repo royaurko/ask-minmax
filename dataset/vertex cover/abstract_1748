@@ -1,0 +1,19 @@
+We give a time-randomness tradeoff for the quasi-random rumor spreading
+protocol proposed by Doerr, Friedrich and Sauerwald [SODA 2008] on complete
+graphs. In this protocol, the goal is to spread a piece of information
+originating from one vertex throughout the network. Each vertex is assumed to
+have a (cyclic) list of its neighbors. Once a vertex is informed by one of its
+neighbors, it chooses a position in its list uniformly at random and then
+informs its neighbors starting from that position and proceeding in order of
+the list. Angelopoulos, Doerr, Huber and Panagiotou [Electron.~J.~Combin.~2009]
+showed that after $(1+o(1))(\log_2 n + \ln n)$ rounds, the rumor will have been
+broadcasted to all nodes with probability $1 - o(1)$.
+  We study the broadcast time when the amount of randomness available at each
+node is reduced in natural way. In particular, we prove that if each node can
+only make its initial random selection from every $\ell$-th node on its list,
+then there exists lists such that $(1-\varepsilon) (\log_2 n + \ln n - \log_2
+\ell - \ln \ell)+\ell-1$ steps are needed to inform every vertex with
+probability at least $1-O\bigl(\exp\bigl(-\frac{n^\varepsilon}{2\ln
+n}\bigr)\bigr)$. This shows that a further reduction of the amount of
+randomness used in a simple quasi-random protocol comes at a loss of
+efficiency.

@@ -1,0 +1,23 @@
+A new approach for simulating flows over complex geometries is developed by
+introducing an accurate virtual interpolation point scheme as well as a virtual
+local stencil approach. The present method is based on the concept of point
+collocation on a virtual staggered structure together with a fractional step
+method. The use of a virtual staggered structure arrangement, which stores all
+the variables at the same physical location and employs only one set of nodes
+using virtual interpolation points, reduces the geometrical complexity. The
+virtual staggered structure consists of the virtual interpolation points and
+the virtual local stencil. Also, computational enhancement of the virtual
+interpolation point method is considerable since the present method directly
+discretizes the strong forms of the incompressible Navier-Stokes equations
+without numerical integration. It makes a key difference from others. In the
+virtual interpolation point method, the choice of an accurate interpolation
+scheme satisfying the spatial approximation in the complex domain is important
+because there is the virtual staggered structure for computation of the
+velocities and pressure since there is no explicit staggered structure for
+stability. In our proposed method, the high order derivative approximations for
+constructing node-wise difference equations are easily obtained. Several
+different flow problems (decaying vortices, lid-driven cavity, triangular
+cavity, flow over a circular cylinder and a bumpy cylinder) are simulated using
+the virtual interpolation point method and the results agree very well with
+previous numerical and experimental results. They verify the accuracy of the
+present method.

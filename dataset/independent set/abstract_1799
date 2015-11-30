@@ -1,0 +1,21 @@
+In this paper we discuss the ability of channel codes to enhance
+cryptographic secrecy. Toward that end, we present the secrecy metric of
+degrees of freedom in an attacker's knowledge of the cryptogram, which is
+similar to equivocation. Using this notion of secrecy, we show how a specific
+practical channel coding system can be used to hide information about the
+ciphertext, thus increasing the difficulty of cryptographic attacks. The system
+setup is the wiretap channel model where transmitted data traverse through
+independent packet erasure channels with public feedback for authenticated ARQ
+(Automatic Repeat reQuest). The code design relies on puncturing nonsystematic
+low-density parity-check codes with the intent of inflicting an eavesdropper
+with stopping sets in the decoder. Furthermore, the design amplifies errors
+when stopping sets occur such that a receiver must guess all the channel-erased
+bits correctly to avoid an expected error rate of one half in the ciphertext.
+We extend previous results on the coding scheme by giving design criteria that
+reduces the effectiveness of a maximum-likelihood attack to that of a
+message-passing attack. We further extend security analysis to models with
+multiple receivers and collaborative attackers. Cryptographic security is
+enhanced in all these cases by exploiting properties of the physical-layer. The
+enhancement is accurately presented as a function of the degrees of freedom in
+the eavesdropper's knowledge of the ciphertext, and is even shown to be present
+when eavesdroppers have better channel quality than legitimate receivers.

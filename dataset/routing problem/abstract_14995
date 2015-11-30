@@ -1,0 +1,18 @@
+We give the first analysis of the computational complexity of {\it coalition
+structure generation over graphs}. Given an undirected graph $G=(N,E)$ and a
+valuation function $v:2^N\rightarrow\RR$ over the subsets of nodes, the problem
+is to find a partition of $N$ into connected subsets, that maximises the sum of
+the components' values. This problem is generally NP--complete; in particular,
+it is hard for a defined class of valuation functions which are {\it
+independent of disconnected members}---that is, two nodes have no effect on
+each other's marginal contribution to their vertex separator. Nonetheless, for
+all such functions we provide bounds on the complexity of coalition structure
+generation over general and minor free graphs. Our proof is constructive and
+yields algorithms for solving corresponding instances of the problem.
+Furthermore, we derive polynomial time bounds for acyclic, $K_{2,3}$ and $K_4$
+minor free graphs. However, as we show, the problem remains NP--complete for
+planar graphs, and hence, for any $K_k$ minor free graphs where $k\geq 5$.
+Moreover, our hardness result holds for a particular subclass of valuation
+functions, termed {\it edge sum}, where the value of each subset of nodes is
+simply determined by the sum of given weights of the edges in the induced
+subgraph.

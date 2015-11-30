@@ -1,0 +1,19 @@
+In many hybrid wireless sensor networks' applications, sensor nodes are
+deployed in hostile environments where trusted and un-trusted nodes co-exist.
+In anchor-based hybrid networks, it becomes important to allow trusted nodes to
+gain full access to the location information transmitted in beacon frames
+while, at the same time, prevent un-trusted nodes from using this information.
+The main challenge is that un-trusted nodes can measure the physical signal
+transmitted from anchor nodes, even if these nodes encrypt their transmission.
+Using the measured signal strength, un-trusted nodes can still tri-laterate the
+location of anchor nodes. In this paper, we propose HyberLoc, an algorithm that
+provides anchor physical layer location privacy in anchor-based hybrid sensor
+networks. The idea is for anchor nodes to dynamically change their transmission
+power following a certain probability distribution, degrading the localization
+accuracy at un-trusted nodes while maintaining high localization accuracy at
+trusted nodes. Given an average power constraint, our analysis shows that the
+discretized exponential distribution is the distribution that maximizes
+location uncertainty at the untrusted nodes. Detailed evaluation through
+analysis, simulation, and implementation shows that HyberLoc gives trusted
+nodes up to 3.5 times better localization accuracy as compared to untrusted
+nodes.

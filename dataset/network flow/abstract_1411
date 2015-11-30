@@ -1,0 +1,20 @@
+Given two independent point processes and a certain rule for matching points
+between them, what is the fraction of matched points over infinitely long
+streams? In many application contexts, e.g., secure networking, a meaningful
+matching rule is that of a maximum causal delay, and the problem is related to
+embedding a flow of packets in cover traffic such that no traffic analysis can
+detect it. We study the best undetectable embedding policy and the
+corresponding maximum flow rate ---that we call the embedding capacity--- under
+the assumption that the cover traffic can be modeled as arbitrary renewal
+processes. We find that computing the embedding capacity requires the inversion
+of very structured linear systems that, for a broad range of renewal models
+encountered in practice, admits a fully analytical expression in terms of the
+renewal function of the processes. Our main theoretical contribution is a
+simple closed form of such relationship. This result enables us to explore
+properties of the embedding capacity, obtaining closed-form solutions for
+selected distribution families and a suite of sufficient conditions on the
+capacity ordering. We evaluate our solution on real network traces, which shows
+a noticeable match for tight delay constraints. A gap between the predicted and
+the actual embedding capacities appears for looser constraints, and further
+investigation reveals that it is caused by inaccuracy of the renewal traffic
+model rather than of the solution itself.

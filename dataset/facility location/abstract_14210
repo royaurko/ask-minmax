@@ -1,0 +1,14 @@
+This paper proposes a simple and efficient method for the reconstruction and
+extraction of geometric parameters from 3D tubular objects. Our method
+constructs an image that accumulates surface normal information, then peaks
+within this image are located by tracking. Finally, the positions of these are
+optimized to lie precisely on the tubular shape centerline. This method is very
+versatile, and is able to process various input data types like full or partial
+mesh acquired from 3D laser scans, 3D height map or discrete volumetric images.
+The proposed algorithm is simple to implement, contains few parameters and can
+be computed in linear time with respect to the number of surface faces. Since
+the extracted tube centerline is accurate, we are able to decompose the tube
+into rectilinear parts and torus-like parts. This is done with a new linear
+time 3D torus detection algorithm, which follows the same principle of a
+previous work on 2D arc circle recognition. Detailed experiments show the
+versatility, accuracy and robustness of our new method.

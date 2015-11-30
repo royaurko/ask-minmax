@@ -1,0 +1,26 @@
+We study the problem of computing approximate minimum edge cuts by
+distributed algorithms. We use a standard synchronous message passing model
+where in each round, $O(\log n)$ bits can be transmitted over each edge (a.k.a.
+the CONGEST model). We present a distributed algorithm that, for any weighted
+graph and any $\epsilon \in (0, 1)$, with high probability finds a cut of size
+at most $O(\epsilon^{-1}\lambda)$ in $O(D) + \tilde{O}(n^{1/2 + \epsilon})$
+rounds, where $\lambda$ is the size of the minimum cut. This algorithm is based
+on a simple approach for analyzing random edge sampling, which we call the
+random layering technique. In addition, we also present another distributed
+algorithm, which is based on a centralized algorithm due to Matula [SODA '93],
+that with high probability computes a cut of size at most $(2+\epsilon)\lambda$
+in $\tilde{O}((D+\sqrt{n})/\epsilon^5)$ rounds for any $\epsilon>0$.
+  The time complexities of both of these algorithms almost match the
+$\tilde{\Omega}(D + \sqrt{n})$ lower bound of Das Sarma et al. [STOC '11], thus
+leading to an answer to an open question raised by Elkin [SIGACT-News '04] and
+Das Sarma et al. [STOC '11].
+  Furthermore, we also strengthen the lower bound of Das Sarma et al. by
+extending it to unweighted graphs. We show that the same lower bound also holds
+for unweighted multigraphs (or equivalently for weighted graphs in which
+$O(w\log n)$ bits can be transmitted in each round over an edge of weight $w$),
+even if the diameter is $D=O(\log n)$. For unweighted simple graphs, we show
+that even for networks of diameter $\tilde{O}(\frac{1}{\lambda}\cdot
+\sqrt{\frac{n}{\alpha\lambda}})$, finding an $\alpha$-approximate minimum cut
+in networks of edge connectivity $\lambda$ or computing an
+$\alpha$-approximation of the edge connectivity requires $\tilde{\Omega}(D +
+\sqrt{\frac{n}{\alpha\lambda}})$ rounds.

@@ -1,0 +1,20 @@
+The recent proliferation of Data Grids and the increasingly common practice
+of using resources as distributed data stores provide a convenient environment
+for communities of researchers to share, replicate, and manage access to copies
+of large datasets. This has led to the question of which replica can be
+accessed most efficiently. In such environments, fetching data from one of the
+several replica locations requires accurate predictions of end-to-end transfer
+times. The answer to this question can depend on many factors, including
+physical characteristics of the resources and the load behavior on the CPUs,
+networks, and storage devices that are part of the end-to-end data path linking
+possible sources and sinks. Our approach combines end-to-end application
+throughput observations with network and disk load variations and captures
+whole-system performance and variations in load patterns. Our predictions
+characterize the effect of load variations of several shared devices (network
+and disk) on file transfer times. We develop a suite of univariate and
+multivariate predictors that can use multiple data sources to improve the
+accuracy of the predictions as well as address Data Grid variations
+(availability of data and sporadic nature of transfers). We ran a large set of
+data transfer experiments using GridFTP and observed performance predictions
+within 15% error for our testbed sites, which is quite promising for a
+pragmatic system.

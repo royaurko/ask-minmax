@@ -1,0 +1,22 @@
+In this paper we consider the price of anarchy (PoA) in multi-commodity flows
+where the latency or delay function on an edge has a heterogeneous dependency
+on the flow commodities, i.e. when the delay on each link is dependent on the
+flow of individual commodities, rather than on the aggregate flow. An
+application of this study is the performance analysis of a network with
+differentiated traffic that may arise when traffic is prioritized according to
+some type classification. This study has implications in the debate on
+net-neutrality. We provide price of anarchy bounds for networks with $k$ (types
+of) commodities where each link is associated with heterogeneous polynomial
+delays, i.e. commodity $i$ on edge $e$ faces delay specified by
+$g_{i1}(e)f^{\theta}_1(e) + g_{i2}(e)f^{\theta}_2(e) + \ldots +
+g_{ik}(e)f^{\theta}_k(e) + c_i(e), $ where $f_i(e)$ is the flow of the $i$th
+commodity through edge $e$, $\theta \in {\cal N}$, $g_{i1}(e), g_{i2}(e),
+\ldots, g_{ik}(e)$ and $c_i(e)$ are nonnegative constants. We consider both
+atomic and non-atomic flows.
+  For networks with decomposable delay functions where the delay induced by a
+particular commodity is the same, i.e. delays on edge $e$ are defined by
+$a_1(e)f_1^\theta(e) + a_2(e)f_2^\theta(e) + \ldots + c(e)$ where $\forall j ,
+\forall e: g_{1j}(e) = g_{2j}(e) = \ldots = a_j(e)$, we show an improved bound
+on the price of anarchy.
+  Further, we show bounds on the price of anarchy for uniform latency functions
+where each edge of the network has the same delay function.

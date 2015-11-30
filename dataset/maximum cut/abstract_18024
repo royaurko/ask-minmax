@@ -1,0 +1,20 @@
+Current image segmentation techniques usually require that the user tune
+several parameters in order to obtain maximum segmentation accuracy, a
+computationally inefficient approach, especially when a large number of images
+must be processed sequentially in daily practice. The use of evolving fuzzy
+systems for designing a method that automatically adjusts parameters to segment
+medical images according to the quality expectation of expert users has been
+proposed recently (Evolving fuzzy image segmentation EFIS). However, EFIS
+suffers from a few limitations when used in practice mainly due to some fixed
+parameters. For instance, EFIS depends on auto-detection of the object of
+interest for feature calculation, a task that is highly application-dependent.
+This shortcoming limits the applicability of EFIS, which was proposed with the
+ultimate goal of offering a generic but adjustable segmentation scheme. In this
+paper, a new version of EFIS is proposed to overcome these limitations. The new
+EFIS, called self-configuring EFIS (SC-EFIS), uses available training data to
+self-estimate the parameters that are fixed in EFIS. As well, the proposed
+SC-EFIS relies on a feature selection process that does not require
+auto-detection of an ROI. The proposed SC-EFIS was evaluated using the same
+segmentation algorithms and the same dataset as for EFIS. The results show that
+SC-EFIS can provide the same results as EFIS but with a higher level of
+automation.

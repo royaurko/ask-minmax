@@ -1,0 +1,12 @@
+The dependency core calculus (DCC), a simple extension of the computational
+lambda calculus, captures a common notion of dependency that arises in many
+programming language settings. This notion of dependency is closely related to
+the notion of information flow in security; it is sensitive not only to data
+dependencies that cause explicit flows, but also to control dependencies that
+cause implicit flows. In this paper, we study variants of DCC in which the data
+and control dependencies are decoupled. This allows us to consider settings
+where a weaker notion of dependency---one that restricts only explicit
+flows---may usefully coexist with DCC's stronger notion of dependency. In
+particular, we show how strong, noninterference-based security may be
+reconciled with weak, trace-based security within the same system, enhancing
+soundness of the latter and completeness of the former.

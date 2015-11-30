@@ -1,0 +1,24 @@
+The study of photoionized environments is fundamental to many astrophysical
+problems. Up to the present most photoionization codes have numerically solved
+the equations of radiative transfer by making the extreme simplifying
+assumption of spherical symmetry. Unfortunately very few real astronomical
+nebulae satisfy this requirement. To remedy these shortcomings, a
+self-consistent, three-dimensional radiative transfer code has been developed
+using Monte Carlo techniques. The code, Mocassin, is designed to build
+realistic models of photoionized nebulae having arbitraries geometry and
+density distributions with both the stellar and diffuse radiation fields
+treated self-consistently. In addition, the code is capable of tretating on or
+more exciting stars located at non-central locations. The gaseous region is
+approximated by a cuboidal Cartesian grid composed of numerous cells. The
+physical conditions within each grid cell are determined by solving the thermal
+equilibrium and ionization balance equations This requires a knowledge of the
+local primary and secondary radiation fields, which are calculated
+self-consistently by locally simulating the individual processes of ionization
+and recombination. The main structure and computational methods used in the
+Mocassin code are described in this paper. Mocassin has been benchmarked
+against established one-dimensional spherically symmetric codes for a number of
+standard cases, as defined by the Lexington/Meudon photoionization workshops
+(Pequignot et al., 1986; Ferland et al., 1995; Pequignot et al.,
+2001)\citep{pequignot86,ferland95, pequignot01}. The results obtained for the
+benchmark cases are satisfactory and are presented in this paper. A performance
+analysis has also been carried out and is discussed here.

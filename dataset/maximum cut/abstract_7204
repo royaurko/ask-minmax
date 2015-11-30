@@ -1,0 +1,15 @@
+A common statistical situation concerns inferring an unknown distribution
+Q(x) from a known distribution P(y), where X (dimension n), and Y (dimension m)
+have a known functional relationship. Most commonly, n<m, and the task is
+relatively straightforward. For example, if Y1 and Y2 are independent random
+variables, each uniform on [0, 1], one can determine the distribution of X = Y1
++ Y2; here m=2 and n=1. However, biological and physical situations can arise
+where n>m. In general, in the absence of additional information, there is no
+unique solution to Q in those cases. Nevertheless, one may still want to draw
+some inferences about Q. To this end, we propose a novel maximum entropy
+(MaxEnt) approach that estimates Q(x) based only on the available data, namely,
+P(y). The method has the additional advantage that one does not need to
+explicitly calculate the Lagrange multipliers. In this paper we develop the
+approach, for both discrete and continuous probability distributions, and
+demonstrate its validity. We give an intuitive justification as well, and we
+illustrate with examples.

@@ -1,0 +1,17 @@
+This paper considers information sharing in a multi-player repeated game.
+Every round, each player observes a subset of components of a random vector and
+then takes a control action. The utility earned by each player depends on the
+full random vector and on the actions of others. An example is a game where
+different rewards are placed over multiple locations, each player only knows
+the rewards in a subset of the locations, and players compete to collect the
+rewards. Sharing information can help others, but can also increase competition
+for desirable locations. Standard Nash equilibrium and correlated equilibrium
+concepts are inadequate in this scenario. Instead, this paper develops an
+algorithm where, every round, all players pass their information and intended
+actions to a game manager. The manager provides suggested actions for each
+player that, if taken, maximize a concave function of average utilities subject
+to the constraint that each player gets an average utility no worse than it
+would get without sharing. The algorithm acts online using information given at
+each round and does not require a specific model of random events or player
+actions. Thus, the analytical results of this paper apply in non-ergodic
+situations with any sequence of actions taken by human players.

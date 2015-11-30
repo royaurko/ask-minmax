@@ -1,0 +1,19 @@
+We propose a computationally intensive method, the random lasso method, for
+variable selection in linear models. The method consists of two major steps. In
+step 1, the lasso method is applied to many bootstrap samples, each using a set
+of randomly selected covariates. A measure of importance is yielded from this
+step for each covariate. In step 2, a similar procedure to the first step is
+implemented with the exception that for each bootstrap sample, a subset of
+covariates is randomly selected with unequal selection probabilities determined
+by the covariates' importance. Adaptive lasso may be used in the second step
+with weights determined by the importance measures. The final set of covariates
+and their coefficients are determined by averaging bootstrap results obtained
+from step 2. The proposed method alleviates some of the limitations of lasso,
+elastic-net and related methods noted especially in the context of microarray
+data analysis: it tends to remove highly correlated variables altogether or
+select them all, and maintains maximal flexibility in estimating their
+coefficients, particularly with different signs; the number of selected
+variables is no longer limited by the sample size; and the resulting prediction
+accuracy is competitive or superior compared to the alternatives. We illustrate
+the proposed method by extensive simulation studies. The proposed method is
+also applied to a Glioblastoma microarray data analysis.

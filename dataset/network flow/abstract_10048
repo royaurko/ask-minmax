@@ -1,0 +1,14 @@
+Context-free approaches to static analysis gain precision over classical
+approaches by perfectly matching returns to call sites---a property that
+eliminates spurious interprocedural paths. Vardoulakis and Shivers's recent
+formulation of CFA2 showed that it is possible (if expensive) to apply
+context-free methods to higher-order languages and gain the same boost in
+precision achieved over first-order programs.
+  To this young body of work on context-free analysis of higher-order programs,
+we contribute a pushdown control-flow analysis framework, which we derive as an
+abstract interpretation of a CESK machine with an unbounded stack. One
+instantiation of this framework marks the first polyvariant pushdown analysis
+of higher-order programs; another marks the first polynomial-time analysis. In
+the end, we arrive at a framework for control-flow analysis that can
+efficiently compute pushdown generalizations of classical control-flow
+analyses.

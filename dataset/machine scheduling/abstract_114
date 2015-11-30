@@ -1,0 +1,17 @@
+This paper deals with the study of Earliest Deadline First (EDF) which is an
+optimal scheduling algorithm for uniprocessor real time systems use for
+scheduling the periodic task in soft real-time multiprocessor systems. In hard
+real-time systems, a significant disparity exists EDF-based schemes and RMA
+scheduling (which is the only known way of optimally scheduling recurrent
+real-time tasks on multiprocessors): on M processors, all known EDF variants
+have utilization-based schedulability bounds of approximately M/2, while RMA
+algorithms can fully utilize all processors. This is unfortunate because EDF
+based algorithms entail lower scheduling and task migration overheads. In work
+on hard real-time systems, it has been shown that this disparity in
+Schedulability can be lessened by placing caps on per task utilizations. Our
+main contribution is a new EDF based scheme that ensures bounded deadline
+tardiness. In this scheme, per-task utilizations must be focused,but overall
+utilization need not be stricted. Our scheme should enable a wide range of soft
+real-time applications to be scheduled with no constraints on total
+utilization. Also propose techniques and heuristics that can be used to reduce
+tardiness as well as increase the efficiency of task.

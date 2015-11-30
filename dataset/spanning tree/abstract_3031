@@ -1,0 +1,10 @@
+We present a new very fast tree-code which runs on massively parallel
+Graphical Processing Units (GPU) with NVIDIA CUDA architecture. The
+tree-construction and calculation of multipole moments is carried out on the
+host CPU, while the force calculation which consists of tree walks and
+evaluation of interaction list is carried out on the GPU. In this way we
+achieve a sustained performance of about 100GFLOP/s and data transfer rates of
+about 50GB/s. It takes about a second to compute forces on a million particles
+with an opening angle of $\theta \approx 0.5$. The code has a convenient user
+interface and is freely available for use\footnote{{\tt
+http://castle.strw.leidenuniv.nl/software/octgrav.html}}.

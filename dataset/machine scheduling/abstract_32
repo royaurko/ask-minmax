@@ -1,0 +1,17 @@
+The primary motivation for uptake of virtualization has been resource
+isolation, capacity management and resource customization allowing resource
+providers to consolidate their resources in virtual machines. Various
+approaches have been taken to integrate virtualization in to scientific Grids
+especially in the arena of High Performance Computing (HPC) to run grid jobs in
+virtual machines, thus enabling better provisioning of the underlying resources
+and customization of the execution environment on runtime. Despite the gains,
+virtualization layer also incur a performance penalty and its not very well
+understood that how such an overhead will impact the performance of systems
+where jobs are scheduled with tight deadlines. Since this overhead varies the
+types of workload whether they are memory intensive, CPU intensive or network
+I/O bound, and could lead to unpredictable deadline estimation for the running
+jobs in the system. In our study, we have attempted to tackle this problem by
+developing an intelligent scheduling technique for virtual machines which
+monitors the workload types and deadlines, and calculate the system over head
+in real time to maximize number of jobs finishing within their agreed
+deadlines.

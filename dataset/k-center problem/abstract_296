@@ -1,0 +1,20 @@
+Generally, when genetic programming (GP) is used for function synthesis any
+valuable experience gained by the system is lost from one problem to the next,
+even when the problems are closely related. With the aim of developing a system
+which retains beneficial experience from problem to problem, this paper
+introduces the novel Node-by-Node Growth Solver (NNGS) algorithm which features
+a component, called the controller, which can be adapted and improved for use
+across a set of related problems. NNGS grows a single solution tree from root
+to leaves. Using semantic backpropagation and acting locally on each node in
+turn, the algorithm employs the controller to assign subsequent child nodes
+until a fully formed solution is generated.
+  The aim of this paper is to pave a path towards the use of a neural network
+as the controller component and also, separately, towards the use of meta-GP as
+a mechanism for improving the controller component. A proof-of-concept
+controller is discussed which demonstrates the success and potential of the
+NNGS algorithm. In this case, the controller constitutes a set of hand written
+rules which can be used to deterministically and greedily solve standard
+Boolean function synthesis benchmarks. Even before employing machine learning
+to improve the controller, the algorithm vastly outperforms other well known
+recent algorithms on run times, maintains comparable solution sizes, and has a
+100% success rate on all Boolean function synthesis benchmarks tested so far.

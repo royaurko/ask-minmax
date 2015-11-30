@@ -1,0 +1,14 @@
+In the dynamic indexing problem, we must maintain a changing collection of
+text documents so that we can efficiently support insertions, deletions, and
+pattern matching queries. We are especially interested in developing efficient
+data structures that store and query the documents in compressed form. All
+previous compressed solutions to this problem rely on answering rank and select
+queries on a dynamic sequence of symbols. Because of the lower bound in
+[Fredman and Saks, 1989], answering rank queries presents a bottleneck in
+compressed dynamic indexing. In this paper we show how this lower bound can be
+circumvented using our new framework. We demonstrate that the gap between
+static and dynamic variants of the indexing problem can be almost closed. Our
+method is based on a novel framework for adding dynamism to static compressed
+data structures. Our framework also applies more generally to dynamizing other
+problems. We show, for example, how our framework can be applied to develop
+compressed representations of dynamic graphs and binary relations.

@@ -1,0 +1,12 @@
+Many recent approximation algorithms for different variants of the traveling
+salesman problem (asymmetric TSP, graph TSP, s-t-path TSP) exploit the
+well-known fact that a solution of the natural linear programming relaxation
+can be written as convex combination of spanning trees. The main argument then
+is that randomly sampling a tree from such a distribution and then completing
+the tree to a tour at minimum cost yields a better approximation guarantee than
+simply taking a minimum cost spanning tree (as in Christofides' algorithm). We
+argue that an additional step can help: reassembling the spanning trees before
+sampling. Exchanging two edges in a pair of spanning trees can improve their
+properties under certain conditions. We demonstrate the usefulness for the
+metric s-t-path TSP by devising a deterministic polynomial-time algorithm that
+improves on Seb\H{o}'s previously best approximation ratio of 8/5.

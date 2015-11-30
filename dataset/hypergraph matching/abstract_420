@@ -1,0 +1,22 @@
+We study a Maker/Breaker game described by Beck. As a result we disprove a
+conjecture of Beck on positional games, establish a connection between this
+game and SAT and construct an unsatisfiable k-CNF formula with few occurrences
+per variable, thereby improving a previous result by Hoory and Szeider and
+showing that the bound obtained from the Lovasz Local Lemma is tight up to a
+constant factor. The Maker/Breaker game we study is as follows. Maker and
+Breaker take turns in choosing vertices from a given n-uniform hypergraph F,
+with Maker going first. Maker's goal is to completely occupy a hyperedge and
+Breaker tries to avoid this. Beck conjectures that if the maximum neighborhood
+size of F is at most 2^(n-1) then Breaker has a winning strategy. We disprove
+this conjecture by establishing an n-uniform hypergraph with maximum
+neighborhood size 3*2^(n - 3) where Maker has a winning strategy. Moreover, we
+show how to construct an n-uniform hypergraph with maximum degree (2^(n-1))/n
+where maker has a winning strategy. Finally, we establish a connection between
+SAT and the Maker/Breaker game we study. We can use this connection to derive
+new results in SAT. Kratochvil, Savicky and Tuza showed that for every k >= 3
+there is an integer f(k) such that every (k,f(k))-formula is satisfiable, but
+(k,f(k) + 1)-SAT is already NP-complete (it is not known whether f(k) is
+computable). Kratochvil, Savicky and Tuza also gave the best known lower bound
+f(k) = Omega(2^k/k), which is a consequence of the Lovasz Local Lemma. We prove
+that, in fact, f(k) = Theta(2^k/k), improving upon the best known upper bound
+O((log k) * 2^k/k) by Hoory and Szeider.

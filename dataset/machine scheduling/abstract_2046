@@ -1,0 +1,14 @@
+As multicore systems continue to gain ground in the High Performance
+Computing world, linear algebra algorithms have to be reformulated or new
+algorithms have to be developed in order to take advantage of the architectural
+features on these new processors. Fine grain parallelism becomes a major
+requirement and introduces the necessity of loose synchronization in the
+parallel execution of an operation. This paper presents an algorithm for the
+Cholesky, LU and QR factorization where the operations can be represented as a
+sequence of small tasks that operate on square blocks of data. These tasks can
+be dynamically scheduled for execution based on the dependencies among them and
+on the availability of computational resources. This may result in an out of
+order execution of the tasks which will completely hide the presence of
+intrinsically sequential tasks in the factorization. Performance comparisons
+are presented with the LAPACK algorithms where parallelism can only be
+exploited at the level of the BLAS operations and vendor implementations.

@@ -1,0 +1,13 @@
+Maximum a Posteriori assignment (MAP) is the problem of finding the most
+probable instantiation of a set of variables given the partial evidence on the
+other variables in a Bayesian network. MAP has been shown to be a NP-hard
+problem [22], even for constrained networks, such as polytrees [18]. Hence,
+previous approaches often fail to yield any results for MAP problems in large
+complex Bayesian networks. To address this problem, we propose AnnealedMAP
+algorithm, a simulated annealing-based MAP algorithm. The AnnealedMAP algorithm
+simulates a non-homogeneous Markov chain whose invariant function is a
+probability density that concentrates itself on the modes of the target
+density. We tested this algorithm on several real Bayesian networks. The
+results show that, while maintaining good quality of the MAP solutions, the
+AnnealedMAP algorithm is also able to solve many problems that are beyond the
+reach of previous approaches.

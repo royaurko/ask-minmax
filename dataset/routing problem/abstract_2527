@@ -1,0 +1,21 @@
+Network coding can significantly improve the transmission rate of
+communication networks with packet loss compared with routing. However, using
+network coding usually incurs high computational and storage costs in the
+network devices and terminals. For example, some network coding schemes require
+the computational and/or storage capacities of an intermediate network node to
+increase linearly with the number of packets for transmission, making such
+schemes difficult to be implemented in a router-like device that has only
+constant computational and storage capacities. In this paper, we introduce
+BATched Sparse code (BATS code), which enables a digital fountain approach to
+resolve the above issue. BATS code is a coding scheme that consists of an outer
+code and an inner code. The outer code is a matrix generation of a fountain
+code. It works with the inner code that comprises random linear coding at the
+intermediate network nodes. BATS codes preserve such desirable properties of
+fountain codes as ratelessness and low encoding/decoding complexity. The
+computational and storage capacities of the intermediate network nodes required
+for applying BATS codes are independent of the number of packets for
+transmission. Almost capacity-achieving BATS code schemes are devised for
+unicast networks, two-way relay networks, tree networks, a class of three-layer
+networks, and the butterfly network. For general networks, under different
+optimization criteria, guaranteed decoding rates for the receiving nodes can be
+obtained.

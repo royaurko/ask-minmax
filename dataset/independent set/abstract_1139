@@ -1,0 +1,9 @@
+In this paper we give a construction of cut sparsifiers of Benczur and Karger
+in the {\em dynamic} streaming setting in a single pass over the data stream.
+Previous constructions either required multiple passes or were unable to handle
+edge deletions. We use $\tilde{O}(1/\e^2)$ time for each stream update and
+$\tilde{O}(n/\e^2)$ time to construct a sparsifier. Our $\e$-sparsifiers have
+$O(n\log^3 n/\e^2)$ edges. The main tools behind our result are an application
+of sketching techniques of Ahn et al.[SODA'12] to estimate edge connectivity
+together with a novel application of sampling with limited independence and
+sparse recovery to produce the edges of the sparsifier.

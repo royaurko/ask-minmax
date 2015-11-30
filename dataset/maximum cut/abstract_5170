@@ -1,0 +1,17 @@
+We outline a model and algorithm to perform inference on the palaeoclimate
+and palaeoclimate volatility from pollen proxy data. We use a novel
+multivariate non-linear non-Gaussian state space model consisting of an
+observation equation linking climate to proxy data and an evolution equation
+driving climate change over time. The link from climate to proxy data is
+defined by a pre-calibrated forward model, as developed in Salter-Townshend and
+Haslett (2012) and Sweeney (2012). Climatic change is represented by a
+temporally-uncertain Normal-Inverse Gaussian Levy process, being able to
+capture large jumps in multivariate climate whilst remaining temporally
+consistent. The pre-calibrated nature of the forward model allows us to cut
+feedback between the observation and evolution equations and thus integrate out
+the state variable entirely whilst making minimal simplifying assumptions. A
+key part of this approach is the creation of mixtures of marginal data
+posteriors representing the information obtained about climate from each
+individual time point. Our approach allows for an extremely efficient MCMC
+algorithm, which we demonstrate with a pollen core from Sluggan Bog, County
+Antrim, Northern Ireland.

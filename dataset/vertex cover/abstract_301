@@ -1,0 +1,13 @@
+In the concurrent graph sharing game, two players, called First and Second,
+share the vertices of a connected graph with positive vertex-weights summing up
+to $1$ as follows. The game begins with First taking any vertex. In each
+proceeding round, the player with the smaller sum of collected weights so far
+chooses a non-taken vertex adjacent to a vertex which has been taken, i.e., the
+set of all taken vertices remains connected and one new vertex is taken in
+every round. (It is assumed that no two subsets of vertices have the same sum
+of weights.) One can imagine the players consume their taken vertex over a time
+proportional to its weight, before choosing a next vertex. In this note we show
+that First has a strategy to guarantee vertices of weight at least $1/3$
+regardless of the graph and how it is weighted. This is best-possible already
+when the graph is a cycle. Moreover, if the graph is a tree First can guarantee
+vertices of weight at least $1/2$, which is clearly best-possible.

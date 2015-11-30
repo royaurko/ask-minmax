@@ -1,0 +1,23 @@
+Conventional turbo codes (CTCs) usually employ a block-oriented interleaving
+so that each block is separately encoded and decoded. As interleaving and
+de-interleaving are performed within a block, the message-passing process
+associated with an iterative decoder is limited to proceed within the
+corresponding range. This paper presents a new turbo coding scheme that uses a
+special interleaver structure and a multiple-round early termination test
+involving both sign check and a CRC code. The new interleaver structure is
+naturally suited for high speed parallel processing and the resulting coding
+system offers new design options and tradeoffs that are not available to CTCs.
+In particular, it becomes possible for the decoder to employ an efficient
+inter-block collaborative decoding algorithm, passing the information obtained
+from termination test proved blocks to other unproved blocks. It also becomes
+important to have a proper decoding schedule. The combined effect is improved
+performance and reduction in the average decoding delay (whence the required
+computing power). A memory (storage) management mechanism is included as a
+critical part of the decoder so as to provide additional design tradeoff
+between performance and memory size. It is shown that the latter has a
+modular-like effect in that additional memory units render enhanced performance
+due not only to less forced early terminations but to possible increases of the
+interleaving depth. Depending on the decoding schedule, the degree of
+parallelism and other decoding resources available, the proposed scheme admits
+a variety of decoder architectures that meet a large range of throughput and
+performance demands.

@@ -1,0 +1,17 @@
+(\rl = Richardson-Lucy) We propose a simulation-based bootstrap method to
+access global significance levels of deconvolution models in the \rl and other
+iterative restoration algorithms that converge locally. These significance
+levels allow one to check at each iterative step how good the model is and when
+iterations can be stopped. Adding more iterations in the deconvolution improves
+the fitting but is very slow at later time; while too much entropy or
+smoothness will be lost in the models. A good deconvolution model should
+firstly have a significance level as high as possible ($\ge$ 20\%), and
+secondly, be as smooth as possible. We have used two examples to illustrate how
+such models can be derived in practice. We point out that maximizing the sum of
+the likelihood of fitting and {\em a priori} entropy does not guarantee an
+acceptable significance level for the resulting model. If one's {\em a priori}
+knowledge is too poor, the model may not be able to fit the data at a
+reasonable significance level. Instead, a maximum-entropy-like iterative
+restoration algorithm can be performed later by acquiring {\em a priori}
+knowledge from the \rl restoration. However, this is necessary only when it
+does increase the levels significantly.

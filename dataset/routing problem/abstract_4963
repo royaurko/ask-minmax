@@ -1,0 +1,17 @@
+This paper considers the k-sink location problem in dynamic path networks. In
+our model, a dynamic path network consists of an undirected path with positive
+edge lengths, uniform edge capacity, and positive vertex supplies. Here, each
+vertex supply corresponds to a set of evacuees. Then, the problem requires to
+find the optimal location of $k$ sinks in a given path so that each evacuee is
+sent to one of k sinks. Let x denote a k-sink location. Under the optimal
+evacuation for a given x, there exists a (k-1)-dimensional vector d, called
+(k-1)-divider, such that each component represents the boundary dividing all
+evacuees between adjacent two sinks into two groups, i.e., all supplies in one
+group evacuate to the left sink and all supplies in the other group evacuate to
+the right sink. Therefore, the goal is to find x and d which minimize the
+maximum cost or the total cost, which are denoted by the minimax problem and
+the minisum problem, respectively. We study the k-sink location problem in
+dynamic path networks with continuous model, and prove that the minimax problem
+can be solved in O(kn) time and the minisum problem can be solved in O(n^2
+min{k, 2^{sqrt{log k log log n}}}) time, where n is the number of vertices in
+the given network. Note that these improve the previous results by [6].

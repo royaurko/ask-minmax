@@ -1,0 +1,22 @@
+Broadcasting algorithms are of fundamental importance for distributed systems
+engineering. In this paper we revisit the classical and well-studied push
+protocol for message broadcasting. Assuming that initially only one node has
+some piece of information, at each stage every one of the informed nodes
+chooses randomly and independently one of its neighbors and passes the message
+to it.
+  The performance of the push protocol on a fully connected network, where each
+node is joined by a link to every other node, is very well understood. In
+particular, Frieze and Grimmett proved that with probability 1-o(1) the push
+protocol completes the broadcasting of the message within (1 +/- \epsilon)
+(log_2 n + ln n) stages, where n is the number of nodes of the network.
+However, there are no tight bounds for the broadcast time on networks that are
+significantly sparser than the complete graph.
+  In this work we consider random networks on n nodes, where every edge is
+present with probability p, independently of every other edge. We show that if
+p > f(n)ln n/ n, where f(n) is any function that tends to infinity as n grows,
+then the push protocol broadcasts the message within (1 +/- \epsilon) (log_2 n
++ ln n) stages with probability 1-o(1). In other words, in almost every network
+of density d such that d > f(n)ln n, the push protocol broadcasts a message as
+fast as in a fully connected network. This is quite surprising in the sense
+that the time needed remains essentially unaffected by the fact that most of
+the links are missing.

@@ -1,0 +1,15 @@
+In optical WDM networks, since each lightpath can carry a huge mount of
+traffic, failures may seriously damage the end user applications. Hence fault
+tolerance becomes an important issue on these networks. The light path which
+carries traffic during normal operation is called as primary path. The traffic
+is rerouted on a backup path in case of a failure. In this paper we propose to
+design a reliable and fault tolerant routing algorithm for establishing primary
+and backup paths. In order to establish the primary path, this algorithm uses
+load balancing in which link cost metrics are estimated based on the current
+load of the links. In backup path setup, the source calculates the blocking
+probability through the received feedback from the destination by sending a
+small fraction of probe packets along the existing paths. It then selects the
+optimal light path with the lowest blocking probability. Based on the
+simulation results, we show that the reliable and fault tolerant routing
+algorithm reduces the blocking probability and latency while increasing the
+throughput and channel utilization.

@@ -1,0 +1,23 @@
+In this paper we summarized a framework for designing grammar-based procedure
+for the automatic extraction of the semantic content from spoken queries.
+Starting with a case study and following an approach which combines the notions
+of fuzziness and robustness in sentence parsing, we showed we built practical
+domain-dependent rules which can be applied whenever it is possible to
+superimpose a sentence-level semantic structure to a text without relying on a
+previous deep syntactical analysis. This kind of procedure can be also
+profitably used as a pre-processing tool in order to cut out part of the
+sentence which have been recognized to have no relevance in the understanding
+process. In the case of particular dialogue applications where there is no need
+to build a complex semantic structure (e.g. word spotting or excerpting) the
+presented methodology may represent an efficient alternative solution to a
+sequential composition of deep linguistic analysis modules. Even if the query
+generation problem may not seem a critical application it should be held in
+mind that the sentence processing must be done on-line. Having this kind of
+constraints we cannot design our system without caring for efficiency and thus
+provide an immediate response. Another critical issue is related to whole
+robustness of the system. In our case study we tried to make experiences on how
+it is possible to deal with an unreliable and noisy input without asking the
+user for any repetition or clarification. This may correspond to a similar
+problem one may have when processing text coming from informal writing such as
+e-mails, news and in many cases Web pages where it is often the case to have
+irrelevant surrounding information.

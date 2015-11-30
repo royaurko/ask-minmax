@@ -1,0 +1,9 @@
+We present an algorithm for computing a maximum agreement subtree of two
+unrooted evolutionary trees. It takes O(n^{1.5} log n) time for trees with
+unbounded degrees, matching the best known time complexity for the rooted case.
+Our algorithm allows the input trees to be mixed trees, i.e., trees that may
+contain directed and undirected edges at the same time. Our algorithm adopts a
+recursive strategy exploiting a technique called label compression. The
+backbone of this technique is an algorithm that computes the maximum weight
+matchings over many subgraphs of a bipartite graph as fast as it takes to
+compute a single matching.

@@ -1,0 +1,20 @@
+How can we uncover the natural communities in a real network that allows
+insight into its underlying structure and also potential functions? In this
+paper, we introduce a new community detection algorithm, called Attractor,
+which automatically spots the communities or groups in a network over time via
+local dynamic interaction. The basic idea is to envision a network as a
+dynamical system, and each agent interacts with its local partners. Instead of
+investigating the node dynamics, we actually examine the change of "distances"
+among linked nodes. As time evolves, these distances will be shrunk or
+stretched gradually based on their topological structures. Finally all
+distances among linked nodes will converge into a stable pattern, and
+communities can be intuitively identified. Thanks to the dynamic viewpoint of
+community detection, Attractor has several potential attractive properties: (a)
+Attractor provides an intuitive solution to analyze the community structure of
+a network, and faithfully captures the natural communities (with high quality).
+(b) Owing to its time complexity $O(|E|)$, Attractor allows finding communities
+on large networks. (c) The small communities or anomalies, usually existing in
+real-world networks, can be well pinpointed. (d) Attractor is easy to
+parameterize, since there is no need to specify the number of clusters.
+Extensive experiments on synthetic and real-world networks further demonstrate
+the effectiveness and efficiency of the proposed approach.

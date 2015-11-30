@@ -1,0 +1,19 @@
+We study network design with a cost structure motivated by redundancy in data
+traffic. We are given a graph, g groups of terminals, and a universe of data
+packets. Each group of terminals desires a subset of the packets from its
+respective source. The cost of routing traffic on any edge in the network is
+proportional to the total size of the distinct packets that the edge carries.
+Our goal is to find a minimum cost routing. We focus on two settings. In the
+first, the collection of packet sets desired by source-sink pairs is laminar.
+For this setting, we present a primal-dual based 2-approximation, improving
+upon a logarithmic approximation due to Barman and Chawla (2012). In the second
+setting, packet sets can have non-trivial intersection. We focus on the case
+where each packet is desired by either a single terminal group or by all of the
+groups, and the graph is unweighted. For this setting we present an O(log
+g)-approximation.
+  Our approximation for the second setting is based on a novel spanner-type
+construction in unweighted graphs that, given a collection of g vertex subsets,
+finds a subgraph of cost only a constant factor more than the minimum spanning
+tree of the graph, such that every subset in the collection has a Steiner tree
+in the subgraph of cost at most O(log g) that of its minimum Steiner tree in
+the original graph. We call such a subgraph a group spanner.

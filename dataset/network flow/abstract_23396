@@ -1,0 +1,19 @@
+Preventing implicit information flows by dynamic program analysis requires
+coarse approximations that result in false positives, because a dynamic monitor
+sees only the executed trace of the program. One widely deployed method is the
+no-sensitive-upgrade check, which terminates a program whenever a variable's
+taint is upgraded (made more sensitive) due to a control dependence on tainted
+data. Although sound, this method is restrictive, e.g., it terminates the
+program even if the upgraded variable is never used subsequently. To counter
+this, Austin and Flanagan introduced the permissive-upgrade check, which allows
+a variable upgrade due to control dependence, but marks the variable
+"partially-leaked". The program is stopped later if it tries to use the
+partially-leaked variable. Permissive-upgrade handles the dead-variable
+assignment problem and remains sound. However, Austin and Flanagan develop
+permissive-upgrade only for a two-point (low-high) security lattice and
+indicate a generalization to pointwise products of such lattices. In this
+paper, we develop a non-trivial and non-obvious generalization of
+permissive-upgrade to arbitrary lattices. The key difficulty lies in finding a
+suitable notion of partial leaks that is both sound and permissive and in
+developing a suitable definition of memory equivalence that allows an inductive
+proof of soundness.

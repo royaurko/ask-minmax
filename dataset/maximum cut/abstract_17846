@@ -1,0 +1,20 @@
+This paper presents a new Bayesian collaborative sparse regression method for
+linear unmixing of hyperspectral images. Our contribution is twofold; first, we
+propose a new Bayesian model for structured sparse regression in which the
+supports of the sparse abundance vectors are a priori spatially correlated
+across pixels (i.e., materials are spatially organised rather than randomly
+distributed at a pixel level). This prior information is encoded in the model
+through a truncated multivariate Ising Markov random field, which also takes
+into consideration the facts that pixels cannot be empty (i.e, there is at
+least one material present in each pixel), and that different materials may
+exhibit different degrees of spatial regularity. Secondly, we propose an
+advanced Markov chain Monte Carlo algorithm to estimate the posterior
+probabilities that materials are present or absent in each pixel, and,
+conditionally to the maximum marginal a posteriori configuration of the
+support, compute the MMSE estimates of the abundance vectors. A remarkable
+property of this algorithm is that it self-adjusts the values of the parameters
+of the Markov random field, thus relieving practitioners from setting
+regularisation parameters by cross-validation. The performance of the proposed
+methodology is finally demonstrated through a series of experiments with
+synthetic and real data and comparisons with other algorithms from the
+literature.

@@ -1,0 +1,22 @@
+Even with impressive advances in automated formal methods, certain problems
+in system verification and synthesis remain challenging. Examples include the
+verification of quantitative properties of software involving constraints on
+timing and energy consumption, and the automatic synthesis of systems from
+specifications. The major challenges include environment modeling,
+incompleteness in specifications, and the complexity of underlying decision
+problems.
+  This position paper proposes sciduction, an approach to tackle these
+challenges by integrating inductive inference, deductive reasoning, and
+structure hypotheses. Deductive reasoning, which leads from general rules or
+concepts to conclusions about specific problem instances, includes techniques
+such as logical inference and constraint solving. Inductive inference, which
+generalizes from specific instances to yield a concept, includes algorithmic
+learning from examples. Structure hypotheses are used to define the class of
+artifacts, such as invariants or program fragments, generated during
+verification or synthesis. Sciduction constrains inductive and deductive
+reasoning using structure hypotheses, and actively combines inductive and
+deductive reasoning: for instance, deductive techniques generate examples for
+learning, and inductive reasoning is used to guide the deductive engines.
+  We illustrate this approach with three applications: (i) timing analysis of
+software; (ii) synthesis of loop-free programs, and (iii) controller synthesis
+for hybrid systems. Some future applications are also discussed.

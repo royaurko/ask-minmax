@@ -1,0 +1,21 @@
+Ultra-high dimensional longitudinal data are increasingly common and the
+analysis is challenging both theoretically and methodologically. We offer a new
+automatic procedure for finding a sparse semivarying coefficient model, which
+is widely accepted for longitudinal data analysis. Our proposed method first
+reduces the number of covariates to a moderate order by employing a screening
+procedure, and then identifies both the varying and constant coefficients using
+a group SCAD estimator, which is subsequently refined by accounting for the
+within-subject correlation. The screening procedure is based on working
+independence and B-spline marginal models. Under weaker conditions than those
+in the literature, we show that with high probability only irrelevant variables
+will be screened out, and the number of selected variables can be bounded by a
+moderate order. This allows the desirable sparsity and oracle properties of the
+subsequent structure identification step. Note that existing methods require
+some kind of iterative screening in order to achieve this, thus they demand
+heavy computational effort and consistency is not guaranteed. The refined
+semivarying coefficient model employs profile least squares, local linear
+smoothing and nonparametric covariance estimation, and is semiparametric
+efficient. We also suggest ways to implement the proposed methods, and to
+select the tuning parameters. An extensive simulation study is summarized to
+demonstrate its finite sample performance and the yeast cell cycle data is
+analyzed.

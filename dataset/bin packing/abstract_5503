@@ -1,0 +1,24 @@
+We study the nearest neighbors one dimensional uniform q-model of force
+fluctuations in bead packs [Coppersmith et al (1996)], a stochastic model to
+simulate the stress of granular media in two dimensional silos. The vertical
+coordinate plays the role of time, and the horizontal coordinate the role of
+space. The process is a discrete time Markov process with state space
+$\R^{\{1,...,N\}}$. At each layer (time), the weight supported by each grain is
+a random variable of mean one (its own weight) plus the sum of random fractions
+of the weights supported by the nearest neighboring grains at the previous
+layer. The fraction of the weight given to the right neighbor of the successive
+layer is a uniform random variable in $[0,1]$ independent of everything. The
+remaining weight is given to the left neighbor. In the boundaries, a uniform
+fraction of the weight leans on the wall of the silo. This corresponds to
+\emph{absorbing boundary conditions}. For this model we show that there exists
+a unique invariant measure. The mean weight at site $i$ under the invariant
+measure is $i(N+1-i)$; we prove that its variance is $\frac12(i(N+1-i))^2 +
+O(N^3)$ and the covariances between grains $i\neq j$ are of order $O(N^3)$.
+Moreover, as $N\to\infty$, the law under the invariant measure of the weights
+divided by $N^2$ around site (integer part of) $rN$, $r\in (0,1)$, converges to
+a product of gamma distributions with parameters 2 and $2(r(1-r))^{-1}$ (sum of
+two exponentials of mean $r(1-r)/2$). Liu {\it et al} (1995) proved that for a
+silo with infinitely many weightless grains, any product of gamma distributions
+with parameters 2 and $2/\rho$ with $\rho\in [0,\infty)$ are invariant. Our
+result shows that as the silo grows, the model selects exactly one of these
+Gamma's at each macroscopic place.

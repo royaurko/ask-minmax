@@ -1,0 +1,25 @@
+We study distributed agreement in synchronous directed dynamic networks,
+where an omniscient message adversary controls the availability of
+communication links. We prove that consensus is impossible under a message
+adversary that guarantees weak connectivity only, and introduce vertex-stable
+root components (VSRCs) as a means for circumventing this impossibility: A
+VSRC(k, d) message adversary guarantees that, eventually, there is an interval
+of $d$ consecutive rounds where every communication graph contains at most $k$
+strongly (dynamic) connected components consisting of the same processes, which
+have at most outgoing links to the remaining processes. We present a consensus
+algorithm that works correctly under a VSRC(1, 4H + 2) message adversary, where
+$H$ is the dynamic causal network diameter. On the other hand, we show that
+consensus is impossible against a VSRC(1, H - 1) or a VSRC(2, $\infty$) message
+adversary, revealing that there is not much hope to deal with stronger message
+adversaries.
+  However, we show that gracefully degrading consensus, which degrades to
+general $k$-set agreement in case of unfavourable network conditions, is
+feasible against stronger message adversaries: We provide a $k$-uniform $k$-set
+agreement algorithm, where the number of system-wide decision values $k$ is not
+encoded in the algorithm, but rather determined by the actual power of the
+message adversary in a run: Our algorithm guarantees at most $k$ decision
+values under a VSRC(n, d) + MAJINF(k) message adversary, which combines VSRC(n,
+d) (for some small $d$, ensuring termination) with some information flow
+guarantee MAJINF(k) between certain VSRCs (ensuring $k$-agreement). Our results
+provide a significant step towards the exact solvability/impossibility border
+of general $k$-set agreement in directed dynamic networks.

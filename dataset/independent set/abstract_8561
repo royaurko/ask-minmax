@@ -1,0 +1,16 @@
+A common goal of privacy research is to release synthetic data that satisfies
+a formal privacy guarantee and can be used by an analyst in place of the
+original data. To achieve reasonable accuracy, a synthetic data set must be
+tuned to support a specified set of queries accurately, sacrificing fidelity
+for other queries.
+  This work considers methods for producing synthetic data under differential
+privacy and investigates what makes a set of queries "easy" or "hard" to
+answer. We consider answering sets of linear counting queries using the matrix
+mechanism, a recent differentially-private mechanism that can reduce error by
+adding complex correlated noise adapted to a specified workload.
+  Our main result is a novel lower bound on the minimum total error required to
+simultaneously release answers to a set of workload queries. The bound reveals
+that the hardness of a query workload is related to the spectral properties of
+the workload when it is represented in matrix form. The bound is most
+informative for $(\epsilon,\delta)$-differential privacy but also applies to
+$\epsilon$-differential privacy.

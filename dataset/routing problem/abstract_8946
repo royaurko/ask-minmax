@@ -1,0 +1,18 @@
+The idle computers on a local area, campus area, or even wide area network
+represent a significant computational resource---one that is, however, also
+unreliable, heterogeneous, and opportunistic. This type of resource has been
+used effectively for embarrassingly parallel problems but not for more tightly
+coupled problems. We describe an algorithm that allows branch-and-bound
+problems to be solved in such environments. In designing this algorithm, we
+faced two challenges: (1) scalability, to effectively exploit the variably
+sized pools of resources available, and (2) fault tolerance, to ensure the
+reliability of services. We achieve scalability through a fully decentralized
+algorithm, by using a membership protocol for managing dynamically available
+resources. However, this fully decentralized design makes achieving reliability
+even more challenging. We guarantee fault tolerance in the sense that the loss
+of up to all but one resource will not affect the quality of the solution. For
+propagating information efficiently, we use epidemic communication for both the
+membership protocol and the fault-tolerance mechanism. We have developed a
+simulation framework that allows us to evaluate design alternatives. Results
+obtained in this framework suggest that our techniques can execute scalably and
+reliably.

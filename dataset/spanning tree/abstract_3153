@@ -1,0 +1,15 @@
+Given two rooted, ordered, and labeled trees $P$ and $T$ the tree inclusion
+problem is to determine if $P$ can be obtained from $T$ by deleting nodes in
+$T$. This problem has recently been recognized as an important query primitive
+in XML databases. Kilpel\"ainen and Mannila [\emph{SIAM J. Comput. 1995}]
+presented the first polynomial time algorithm using quadratic time and space.
+Since then several improved results have been obtained for special cases when
+$P$ and $T$ have a small number of leaves or small depth. However, in the worst
+case these algorithms still use quadratic time and space. Let $n_S$, $l_S$, and
+$d_S$ denote the number of nodes, the number of leaves, and the %maximum depth
+of a tree $S \in \{P, T\}$. In this paper we show that the tree inclusion
+problem can be solved in space $O(n_T)$ and time: O(\min(l_Pn_T, l_Pl_T\log
+\log n_T + n_T, \frac{n_Pn_T}{\log n_T} + n_{T}\log n_{T})). This improves or
+matches the best known time complexities while using only linear space instead
+of quadratic. This is particularly important in practical applications, such as
+XML databases, where the space is likely to be a bottleneck.

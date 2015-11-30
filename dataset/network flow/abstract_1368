@@ -1,0 +1,16 @@
+We present a near-optimal distributed algorithm for $(1+o(1))$-approximation
+of single-commodity maximum flow in undirected weighted networks that runs in
+$(D+ \sqrt{n})\cdot n^{o(1)}$ communication rounds in the \Congest model. Here,
+$n$ and $D$ denote the number of nodes and the network diameter, respectively.
+This is the first improvement over the trivial bound of $O(n^2)$, and it nearly
+matches the $\tilde{\Omega}(D+ \sqrt{n})$ round complexity lower bound.
+  The development of the algorithm contains two results of independent
+interest:
+  (i) A $(D+\sqrt{n})\cdot n^{o(1)}$-round distributed construction of a
+spanning tree of average stretch $n^{o(1)}$.
+  (ii) A $(D+\sqrt{n})\cdot n^{o(1)}$-round distributed construction of an
+$n^{o(1)}$-congestion approximator consisting of the cuts induced by $O(\log
+n)$ virtual trees. The distributed representation of the cut approximator
+allows for evaluation in $(D+\sqrt{n})\cdot n^{o(1)}$ rounds.
+  All our algorithms make use of randomization and succeed with high
+probability.

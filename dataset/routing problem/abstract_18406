@@ -1,0 +1,17 @@
+A formalism for describing the dynamics of Genetic Algorithms (GAs) using
+methods from statistical mechanics is applied to the problem of generalization
+in a perceptron with binary weights. The dynamics are solved for the case where
+a new batch of training patterns is presented to each population member each
+generation, which considerably simplifies the calculation. The theory is shown
+to agree closely to simulations of a real GA averaged over many runs,
+accurately predicting the mean best solution found. For weak selection and
+large problem size the difference equations describing the dynamics can be
+expressed analytically and we find that the effects of noise due to the finite
+size of each training batch can be removed by increasing the population size
+appropriately. If this population resizing is used, one can deduce the most
+computationally efficient size of training batch each generation. For
+independent patterns this choice also gives the minimum total number of
+training patterns used. Although using independent patterns is a very
+inefficient use of training patterns in general, this work may also prove
+useful for determining the optimum batch size in the case where patterns are
+recycled.

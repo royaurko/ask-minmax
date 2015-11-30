@@ -1,0 +1,13 @@
+The complexity of computing the Lempel-Ziv factorization and the set of all
+runs (= maximal repetitions) is studied in the decision tree model of
+computation over ordered alphabet. It is known that both these problems can be
+solved by RAM algorithms in $O(n\log\sigma)$ time, where $n$ is the length of
+the input string and $\sigma$ is the number of distinct letters in it. We prove
+an $\Omega(n\log\sigma)$ lower bound on the number of comparisons required to
+construct the Lempel-Ziv factorization and thereby conclude that a popular
+technique of computation of runs using the Lempel-Ziv factorization cannot
+achieve an $o(n\log\sigma)$ time bound. In contrast with this, we exhibit an
+$O(n)$ decision tree algorithm finding all runs in a string. Therefore, in the
+decision tree model the runs problem is easier than the Lempel-Ziv
+factorization. Thus we support the conjecture that there is a linear RAM
+algorithm finding all runs.

@@ -1,0 +1,16 @@
+Many hard algorithmic problems dealing with graphs, circuits, formulas and
+constraints admit polynomial-time upper bounds if the underlying graph has
+small treewidth. The same problems often encourage reducing the maximal degree
+of vertices to simplify theoretical arguments or address practical concerns.
+Such degree reduction can be performed through a sequence of splittings of
+vertices, resulting in an _expansion_ of the original graph. We observe that
+the treewidth of a graph may increase dramatically if the splittings are not
+performed carefully. In this context we address the following natural question:
+is it possible to reduce the maximum degree to a constant without substantially
+increasing the treewidth?
+  Our work answers the above question affirmatively. We prove that any simple
+undirected graph G=(V, E) admits an expansion G'=(V', E') with the maximum
+degree <= 3 and treewidth(G') <= treewidth(G)+1. Furthermore, such an expansion
+will have no more than 2|E|+|V| vertices and 3|E| edges; it can be computed
+efficiently from a tree-decomposition of G. We also construct a family of
+examples for which the increase by 1 in treewidth cannot be avoided.

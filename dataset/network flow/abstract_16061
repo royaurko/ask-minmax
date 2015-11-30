@@ -1,0 +1,20 @@
+The virtualization and softwarization of modern computer networks enables the
+definition and fast deployment of novel network services called service chains:
+sequences of virtualized network functions (e.g., firewalls, caches, traffic
+optimizers) through which traffic is routed between source and destination.
+This paper attends to the problem of admitting and embedding a maximum number
+of service chains, i.e., a maximum number of source-destination pairs which are
+routed via a sequence of to-be-allocated, capacitated network functions. We
+consider an Online variant of this maximum Service Chain Embedding Problem,
+short OSCEP, where requests arrive over time, in a worst-case manner. Our main
+contribution is a deterministic O(log L)-competitive online algorithm, under
+the assumption that capacities are at least logarithmic in L. We show that this
+is asymptotically optimal within the class of deterministic and randomized
+online algorithms. We also explore lower bounds for offline approximation
+algorithms, and prove that the offline problem is APX-hard for unit capacities
+and small L > 2, and even Poly-APX-hard in general, when there is no bound on
+L. These approximation lower bounds may be of independent interest, as they
+also extend to other problems such as Virtual Circuit Routing. Finally, we
+present an exact algorithm based on 0-1 programming, implying that the general
+offline SCEP is in NP and by the above hardness results it is NP-complete for
+constant L.

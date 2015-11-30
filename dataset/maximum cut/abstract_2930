@@ -1,0 +1,21 @@
+Two finite element approximations of the Oldroyd-B model for dilute polymeric
+fluids are considered, in bounded 2- and 3-dimensional domains, under no flow
+boundary conditions. The pressure and the symmetric conformation tensor are
+aproximated by either (a) piecewise constants or (b) continuous piecewise
+linears, the velocity by (a) continuous piecewise quadratics or a reduced
+version with linear tangential component on each edge, and (b) by continuous
+piecewise quadratics or the mini-element. Both schemes (a) and (b) satisfy a
+free energy bound, which involves the logarithm of the conformation tensor,
+without any constraint on the time step for the backward Euler type time
+discretization. This extends the results of [Boyaval et al. M2AN 43 (2009)
+523--561], where a piecewise constant approximation of the conformation tensor
+was necessary to treat the advection term in the stress equation, and a
+restriction on the time step, based on the initial data, was required to ensure
+that the approximation to the conformation tensor remained positive definite.
+Furthermore, for (b) in the presence of an additional dissipative term in the
+stress equation and a cut-off on the conformation tensor on certain terms like
+in [Barrett and S\"uli, M3AS 18 (2008) 935--971] for the FENE dumbbell model,
+we show (subsequence) convergence towards global-in-time weak solutions (when
+d=2, cut-offs can be replaced with a time step restriction dependent on the
+spatial discretization parameter). Hence, we prove existence of global-in-time
+weak solutions to these regularized models.

@@ -1,0 +1,12 @@
+We show how Adjoint Algorithmic Differentiation (AAD) allows an extremely
+efficient calculation of correlation Risk of option prices computed with Monte
+Carlo simulations. A key point in the construction is the use of binning to
+simultaneously achieve computational efficiency and accurate confidence
+intervals. We illustrate the method for a copula-based Monte Carlo computation
+of claims written on a basket of underlying assets, and we test it numerically
+for Portfolio Default Options. For any number of underlying assets or names in
+a portfolio, the sensitivities of the option price with respect to all the
+pairwise correlations is obtained at a computational cost which is at most 4
+times the cost of calculating the option value itself. For typical
+applications, this results in computational savings of several order of
+magnitudes with respect to standard methods.

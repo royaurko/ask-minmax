@@ -1,0 +1,14 @@
+Invariant discretization schemes are derived for the one- and two-dimensional
+shallow-water equations with periodic boundary conditions. While originally
+designed for constructing invariant finite difference schemes, we extend the
+usage of difference invariants to allow constructing of invariant finite volume
+methods as well. It is found that the classical invariant schemes converge to
+the Lagrangian formulation of the shallow-water equations. These schemes
+require to redistribute the grid points according to the physical fluid
+velocity, i.e., the mesh cannot remain fixed in the course of the numerical
+integration. Invariant Eulerian discretization schemes are proposed for the
+shallow-water equations in computational coordinates. Instead of using the
+fluid velocity as the grid velocity, an invariant moving mesh generator is
+invoked in order to determine the location of the grid points at the subsequent
+time level. The numerical conservation of energy, mass and momentum is
+evaluated for both the invariant and non-invariant schemes.

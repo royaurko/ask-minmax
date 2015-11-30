@@ -1,0 +1,14 @@
+Playout buffers are used in VoIP systems to compensate for network delay
+jitter by making a trade-off between delay and loss. In this work we propose a
+playout buffer algorithm that makes the trade-off based on maximization of
+conversational speech quality, aiming to keep the computational complexity
+lowest possible. We model the network delay using a Pareto distribution and
+show that it is a good compromise between providing an appropriate fit to the
+network delay characteristics and yielding a low arithmetical complexity. We
+use the ITU-T E-Model as the quality model and simplify its delay impairment
+function. The proposed playout buffer algorithm finds the optimum playout delay
+using a closed-form solution that minimizes the sum of the simplified delay
+impairment factor and the loss-dependent equipment impairment factor of the
+E-model. The simulation results show that our proposed algorithm outperforms
+existing state-of-the-art algorithms with a reduced complexity for a
+quality-based algorithm.

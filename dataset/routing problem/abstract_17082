@@ -1,0 +1,15 @@
+We consider the problem of finding all allowed edges in a bipartite graph
+$G=(V,E)$, i.e., all edges that are included in some maximum matching. We show
+that given any maximum matching in the graph, it is possible to perform this
+computation in linear time $O(n+m)$ (where $n=|V|$ and $m=|E|$). Hence, the
+time complexity of finding all allowed edges reduces to that of finding a
+single maximum matching, which is $O(n^{1/2}m)$ [Hopcroft and Karp 1973], or
+$O((n/\log n)^{1/2}m)$ for dense graphs with $m=\Theta(n^2)$ [Alt et al. 1991].
+This time complexity improves upon that of the best known algorithms for the
+problem, which is $O(nm)$ ([Costa 1994] for bipartite graphs, and [Carvalho and
+Cheriyan 2005] for general graphs). Other algorithms for solving that problem
+are randomized algorithms due to [Rabin and Vazirani 1989] and [Cheriyan 1997],
+the runtime of which is $\tilde{O}(n^{2.376})$. Our algorithm, apart from being
+deterministic, improves upon that time complexity for bipartite graphs when
+$m=O(n^r)$ and $r<1.876$. In addition, our algorithm is elementary,
+conceptually simple, and easy to implement.

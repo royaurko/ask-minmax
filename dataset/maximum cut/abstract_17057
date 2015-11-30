@@ -1,0 +1,17 @@
+We consider the problem of estimating the graph associated with a binary
+Ising Markov random field. We describe a method based on $\ell_1$-regularized
+logistic regression, in which the neighborhood of any given node is estimated
+by performing logistic regression subject to an $\ell_1$-constraint. The method
+is analyzed under high-dimensional scaling in which both the number of nodes
+$p$ and maximum neighborhood size $d$ are allowed to grow as a function of the
+number of observations $n$. Our main results provide sufficient conditions on
+the triple $(n,p,d)$ and the model parameters for the method to succeed in
+consistently estimating the neighborhood of every node in the graph
+simultaneously. With coherence conditions imposed on the population Fisher
+information matrix, we prove that consistent neighborhood selection can be
+obtained for sample sizes $n=\Omega(d^3\log p)$ with exponentially decaying
+error. When these same conditions are imposed directly on the sample matrices,
+we show that a reduced sample size of $n=\Omega(d^2\log p)$ suffices for the
+method to estimate neighborhoods consistently. Although this paper focuses on
+the binary graphical models, we indicate how a generalization of the method of
+the paper would apply to general discrete Markov random fields.

@@ -1,0 +1,13 @@
+Despite the NP hardness of acquiring minimum distance $d_m$ for linear codes
+theoretically, in this paper we propose one experimental method of finding
+minimum-weight codewords, the weight of which is equal to $d_m$ for LDPC codes.
+One existing syndrome decoding method, called serial belief propagation (BP)
+with ordered statistic decoding (OSD), is adapted to serve our purpose. We hold
+the conjecture that among many candidate error patterns in OSD reprocessing,
+modulo 2 addition of the lightest error pattern with one of the left error
+patterns may generate a light codeword. When the decoding syndrome changes to
+all-zero state, the lightest error pattern reduces to all-zero, the lightest
+non-zero error pattern is a valid codeword to update lightest codeword list.
+  Given sufficient codewords sending, the survived lightest codewords are
+likely to be the target. Compared with existing techniques, our method
+demonstrates its efficiency in the simulation of several interested LDPC codes.

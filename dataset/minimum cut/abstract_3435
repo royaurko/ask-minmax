@@ -1,0 +1,13 @@
+This paper investigates the parallel complexity of several non-equilibrium
+growth models. Invasion percolation, Eden growth, ballistic deposition and
+solid-on-solid growth are all seemingly highly sequential processes that yield
+self-similar or self-affine random clusters. Nonetheless, we present fast
+parallel randomized algorithms for generating these clusters. The running times
+of the algorithms scale as $O(\log^2 N)$, where $N$ is the system size, and the
+number of processors required scale as a polynomial in $N$. The algorithms are
+based on fast parallel procedures for finding minimum weight paths; they
+illuminate the close connection between growth models and self-avoiding paths
+in random environments. In addition to their potential practical value, our
+algorithms serve to classify these growth models as less complex than other
+growth models, such as diffusion-limited aggregation, for which fast parallel
+algorithms probably do not exist.

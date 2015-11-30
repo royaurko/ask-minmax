@@ -1,0 +1,18 @@
+We define BioScapeL, a stochastic pi-calculus in 3D-space. A novel aspect of
+BioScapeL is that entities have programmable locations. The programmer can
+specify a particular location where to place an entity, or a location relative
+to the current location of the entity. The motivation for the extension comes
+from the need to describe the evolution of populations of biochemical species
+in space, while keeping a sufficiently high level description, so that
+phenomena like diffusion, collision, and confinement can remain part of the
+semantics of the calculus. Combined with the random diffusion movement
+inherited from BioScape, programmable locations allow us to capture the
+assemblies of configurations of polymers, oligomers, and complexes such as
+microtubules or actin filaments.
+  Further new aspects of BioScapeL include random translation and scaling.
+Random translation is instrumental in describing the location of new entities
+relative to the old ones. For example, when a cell secretes a hydronium ion,
+the ion should be placed at a given distance from the originating cell, but in
+a random direction. Additionally, scaling allows us to capture at a high level
+events such as division and growth; for example, daughter cells after mitosis
+have half the size of the mother cell.

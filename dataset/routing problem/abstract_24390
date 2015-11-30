@@ -1,0 +1,14 @@
+Visibly pushdown automata (VPA), introduced by Alur and Madhusuan in 2004, is
+a subclass of pushdown automata whose stack behavior is completely determined
+by the input symbol according to a fixed partition of the input alphabet. Since
+its introduce, VPAs have been shown to be useful in various context, e.g., as
+specification formalism for verification and as automaton model for processing
+XML streams. Due to high complexity, however, implementation of formal
+verification based on VPA framework is a challenge. In this paper we consider
+the problem of implementing VPA-based model checking algorithms. For doing so,
+we first present an improvement on upper bound for determinization of VPA.
+Next, we propose simple on-the-fly algorithms to check universality and
+inclusion problems of this automata class. Then, we implement the proposed
+algorithms in a prototype tool. Finally, we conduct experiments on randomly
+generated VPAs. The experimental results show that the proposed algorithms are
+considerably faster than the standard ones.

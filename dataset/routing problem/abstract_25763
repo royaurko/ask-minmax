@@ -1,0 +1,19 @@
+We consider the numerical solution of the scattering of time-harmonic plane
+waves from an infinite periodic array of reflection or transmission obstacles
+in a homogeneous background medium, in two dimensions. Boundary integral
+formulations are ideal since they reduce the problem to $N$ unknowns on the
+obstacle boundary. However, for complex geometries and/or higher frequencies
+the resulting dense linear system becomes large, ruling out dense direct
+methods, and often ill-conditioned (despite being 2nd-kind), rendering fast
+multipole-based iterative schemes also inefficient. We present an integral
+equation based solver with O(N) complexity, which handles such
+ill-conditioning, using recent advances in "fast" direct linear algebra to
+invert hierarchically the isolated obstacle matrix. This is combined with a
+recent periodizing scheme that is robust for all incident angles, including
+Wood's anomalies, based upon the free space Green's function kernel. The
+resulting solver is extremely efficient when multiple incident angles are
+needed, as occurs in many applications. Our numerical tests include a
+complicated obstacle several wavelengths in size, with $N=10^5$ and solution
+error of $10^{-10}$, where the solver is 66 times faster per incident angle
+than a fast multipole based iterative solution, and 600 times faster when
+incident angles are chosen to share Bloch phases.

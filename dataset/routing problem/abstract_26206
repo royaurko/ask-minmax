@@ -1,0 +1,12 @@
+This paper proposes a novel framework for delay-tolerant particle filtering
+that is computationally efficient and has limited memory requirements. Within
+this framework the informativeness of a delayed (out-of-sequence) measurement
+(OOSM) is estimated using a lightweight procedure and uninformative
+measurements are immediately discarded. The framework requires the
+identification of a threshold that separates informative from uninformative;
+this threshold selection task is formulated as a constrained optimization
+problem, where the goal is to minimize tracking error whilst controlling the
+computational requirements. We develop an algorithm that provides an
+approximate solution for the optimization problem. Simulation experiments
+provide an example where the proposed framework processes less than 40% of all
+OOSMs with only a small reduction in tracking accuracy.

@@ -1,0 +1,20 @@
+In this two-part paper, we consider multicomponent systems in which each
+component can iteratively exchange information with other components in its
+neighborhood in order to compute, in a distributed fashion, the average of the
+components' initial values or some other quantity of interest (i.e., some
+function of these initial values). In particular, we study an iterative
+algorithm for computing the average of the initial values of the nodes. In this
+algorithm, each component maintains two sets of variables that are updated via
+two identical linear iterations. The average of the initial values of the nodes
+can be asymptotically computed by each node as the ratio of two of the
+variables it maintains. In the first part of this paper, we show how the update
+rules for the two sets of variables can be enhanced so that the algorithm
+becomes tolerant to communication links that may drop packets, independently
+among them and independently between different transmission times. In this
+second part, by rewriting the collective dynamics of both iterations, we show
+that the resulting system is mathematically equivalent to a finite inhomogenous
+Markov chain whose transition matrix takes one of finitely many values at each
+step. Then, by using e a coefficients of ergodicity approach, a method commonly
+used for convergence analysis of Markov chains, we prove convergence of the
+robustified consensus scheme. The analysis suggests that similar convergence
+should hold under more general conditions as well.

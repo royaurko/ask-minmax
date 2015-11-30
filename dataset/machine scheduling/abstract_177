@@ -1,0 +1,18 @@
+In this work we study the problem of scheduling tasks with dependencies in
+multiprocessor architectures where processors have different speeds. We present
+the preemptive algorithm "Save-Energy" that given a schedule of tasks it post
+processes it to improve the energy efficiency without any deterioration of the
+makespan. In terms of time efficiency, we show that preemptive scheduling in an
+asymmetric system can achieve the same or better optimal makespan than in a
+symmetric system. Motivited by real multiprocessor systems, we investigate
+architectures that exhibit limited asymmetry: there are two essentially
+different speeds. Interestingly, this special case has not been studied in the
+field of parallel computing and scheduling theory; only the general case was
+studied where processors have $K$ essentially different speeds. We present the
+non-preemptive algorithm ``Remnants'' that achieves almost optimal makespan. We
+provide a refined analysis of a recent scheduling method. Based on this
+analysis, we specialize the scheduling policy and provide an algorithm of $(3 +
+o(1))$ expected approximation factor. Note that this improves the previous best
+factor (6 for two speeds). We believe that our work will convince researchers
+to revisit this well studied scheduling problem for these simple, yet
+realistic, asymmetric multiprocessor architectures.

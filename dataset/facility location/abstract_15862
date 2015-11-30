@@ -1,0 +1,23 @@
+It is well known that multigrid methods are optimally efficient for solution
+of elliptic equations (O(N)), which means that effort is proportional to the
+number of points at which the solution is evaluated). Thus this is an ideal
+method to solve the initial data/constraint equations in General Relativity for
+(for instance) black hole interactions, or for other strong-field gravitational
+configurations. Recent efforts have produced finite difference multigrid
+solvers for domains with holes (excised regions). We present here the extension
+of these concepts to higher order (fourth-, sixth- and eigth-order). The high
+order convergence allows rapid solution on relatively small computational
+grids. Also, general relativity evolution codes are moving to typically
+fourth-order; data have to be computed at least as accurately as this same
+order for straightfoward demonstration of the proper order of convergence in
+the evolution.
+  Our vertex-centered multigrid code demonstrates globally high-order-accurate
+solutions of elliptic equations over domains containing holes, in two spatial
+dimensions with fixed (Dirichlet) outer boundary conditions, and in three
+spatial dimensions with {\it Robin} outer boundary conditions. We demonstrate a
+``real world'' 3-dimensional problem which is the solution of the conformally
+flat Hamiltonian constraint of General Relativity. The success of this method
+depends on: a) the choice of the discretization near the holes; b) the
+definition of the location of the inner boundary, which allows resolution of
+the hole even on the coarsest grids; and on maintaining the same order of
+convergence at the boundaries as in the interior of the computational domain.

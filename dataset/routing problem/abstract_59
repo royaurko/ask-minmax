@@ -1,0 +1,23 @@
+With technology scaling down, hundreds and thousands processing elements
+(PEs) can be integrated on a single chip. Network-on-chip (NoC) has been
+proposed as an efficient solution to handle this distinctive challenge. In this
+thesis, we have explored the high performance NoC design for MPSoC and CMP
+structures from the performance modeling in the offline design phase to the
+routing algorithm and NoC architecture optimization. More specifically, we
+first deal with the issue of how to estimate an NoC design fast and accurately
+in the synthesis inner loop. For this purpose, we propose a machine learning
+based latency regression model to evaluate the NoC designs with respect to
+different configurations. Then, for high performance NoC designs, we tackle one
+of the most important problems, i.e., the routing algorithms design. For
+avoiding temperature hotspots, a thermal-aware routing algorithm is proposed to
+achieve an even temperature profile for application-specific Network-on-chips
+(NoCs). For improving the reliability, a routing algorithm to achieve maximum
+performance under fault is proposed. Finally, in the architecture level, we
+propose two new NoC structures using bi-directional links for the performance
+optimization. In particular, we propose a flit-level speedup scheme to enhance
+the network-on-chip(NoC) performance utilizing bidirectional channels. We also
+propose a flexible NoC architecture which takes advantage of a dynamic
+distributed routing algorithm and improves the NoC communication performance
+with moderate energy overhead. From the simulation results on both synthetic
+traffic and real workload traces, significant performance improvement in terms
+of latency and throughput can be achieved.

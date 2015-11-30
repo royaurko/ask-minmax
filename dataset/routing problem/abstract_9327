@@ -1,0 +1,16 @@
+We consider the discrepancy problem of coloring $n$ intervals with $k$ colors
+such that at each point on the line, the maximal difference between the number
+of intervals of any two colors is minimal. Somewhat surprisingly, a coloring
+with maximal difference at most one always exists. Furthermore, we give an
+algorithm with running time $O(n \log n + kn \log k)$ for its construction.
+This is in particular interesting because many known results for discrepancy
+problems are non-constructive. This problem naturally models a load balancing
+scenario, where $n$ tasks with given start- and endtimes have to be distributed
+among $k$ servers. Our results imply that this can be done ideally balanced.
+  When generalizing to $d$-dimensional boxes (instead of intervals), a solution
+with difference at most one is not always possible. We show that for any $d \ge
+2$ and any $k \ge 2$ it is NP-complete to decide if such a solution exists,
+which implies also NP-hardness of the respective minimization problem.
+  In an online scenario, where intervals arrive over time and the color has to
+be decided upon arrival, the maximal difference in the size of color classes
+can become arbitrarily high for any online algorithm.

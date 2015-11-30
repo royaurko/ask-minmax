@@ -1,0 +1,23 @@
+We focus on the problem of performing random walks efficiently in a
+distributed network. Given bandwidth constraints, the goal is to minimize the
+number of rounds required to obtain a random walk sample. We first present a
+fast sublinear time distributed algorithm for performing random walks whose
+time complexity is sublinear in the length of the walk. Our algorithm performs
+a random walk of length $\ell$ in $\tilde{O}(\sqrt{\ell D})$ rounds (with high
+probability) on an undirected network, where $D$ is the diameter of the
+network. This improves over the previous best algorithm that ran in
+$\tilde{O}(\ell^{2/3}D^{1/3})$ rounds (Das Sarma et al., PODC 2009). We further
+extend our algorithms to efficiently perform $k$ independent random walks in
+$\tilde{O}(\sqrt{k\ell D} + k)$ rounds. We then show that there is a
+fundamental difficulty in improving the dependence on $\ell$ any further by
+proving a lower bound of $\Omega(\sqrt{\frac{\ell}{\log \ell}} + D)$ under a
+general model of distributed random walk algorithms. Our random walk algorithms
+are useful in speeding up distributed algorithms for a variety of applications
+that use random walks as a subroutine. We present two main applications. First,
+we give a fast distributed algorithm for computing a random spanning tree (RST)
+in an arbitrary (undirected) network which runs in $\tilde{O}(\sqrt{m}D)$
+rounds (with high probability; here $m$ is the number of edges). Our second
+application is a fast decentralized algorithm for estimating mixing time and
+related parameters of the underlying network. Our algorithm is fully
+decentralized and can serve as a building block in the design of
+topologically-aware networks.

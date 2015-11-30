@@ -1,0 +1,25 @@
+In the time-ordered data (TOD) files of the WMAP CMB observations, there is
+an undocumented timing offset of -25.6 ms between the spacecraft attitude and
+radio flux density timestamps. If the offset induced an error during
+calibration of the raw TOD, then estimates of the WMAP CMB quadrupole might be
+substantially in error. A timing error during calibration would not only induce
+an artificial quadrupole-like signal in the mean sky map, it would also add
+variance per pixel. This variance would be present in the calibrated TOD.
+Low-resolution map-making as a function of timing offset should show a minimum
+variance for the correct timing offset. Three years of the calibrated, filtered
+WMAP 3-year TOD are compiled into sky maps at HEALPix resolution N_side=8,
+individually for each of the K, Ka, Q, V and W band differencing assemblies
+(DA's), as a function of timing offset. The median per map of the temperature
+fluctuation variance per pixel is calculated and minimised against timing
+offset. Minima are clearly present. The timing offsets that minimise the median
+variance are -38 \pm 8 ms (K, Ka), -27 \pm 3 ms (Q), -43 \pm 8 ms (V), and -47
+\pm 194 ms (W), i.e. an average of -30 \pm 3 ms, where the WMAP collaboration's
+preferred offset is 0 \pm 1.7 ms. A non-parametric bootstrap analysis rejects
+the latter at a significance of 99.999%. The hypothesis of a -25.6 ms offset,
+suggested by Liu, Xiong & Li from the TOD file timing offset, is consistent
+with these minima. It is difficult to avoid the conclusion that the WMAP
+calibrated TOD and inferred maps are wrongly calibrated. CMB quadrupole
+estimates (3/pi)C_2 based on the incorrectly calibrated TOD are overestimated
+by roughly 64 \pm 6% (KQ85 mask) to 94 \pm 10% (KQ75 mask). Ideally, the WMAP
+map-making pipelines should be redone starting from the uncalibrated TOD and
+using the -25.6 ms timing offset correction.

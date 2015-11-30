@@ -1,0 +1,14 @@
+Link state routing protocols such as OSPF or IS-IS currently use only best
+paths to forward IP packets throughout a domain. The optimality of sub-paths
+ensures consistency of hop by hop forwarding although paths, calculated using
+Dijkstra algorithm, are recursively composed. According to the link metric, the
+diversity of existing paths can be underestimated using only best paths. Hence,
+it reduces potential benefits of multipath applications such as load balancing
+and fast rerouting. In this paper, we propose a low time complexity multipath
+computation algorithm able to calculate at least two paths with a different
+first hop between all pairs of nodes in the network if such next hops exist.
+Using real and generated topologies, we evaluate and compare the complexity of
+our proposition with several techniques. Simulation results suggest that the
+path diversity achieved with our proposition is approximatively the same that
+the one obtained using consecutive Dijsktra computations, but with a lower time
+complexity.

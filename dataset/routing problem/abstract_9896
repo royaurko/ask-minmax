@@ -1,0 +1,13 @@
+All spacecraft attitude estimation methods are based on Wahba's optimization
+problem. This problem can be reduced to finding the largest eigenvalue and the
+corresponding eigenvector for Davenport's $K$-matrix. Several iterative
+algorithms, such as QUEST and FOMA, were proposed, aiming at reducing the
+computational cost. But their computational time is unpredictable because the
+iteration number is not fixed and the solution is not accurate in theory.
+Recently, an analytical solution, ESOQ was suggested. The advantages of
+analytical solutions are that their computational time is fixed and the
+solution should be accurate in theory if there is no numerical error. In this
+paper, we propose a different analytical solution to the Wahba's problem. We
+use simple and easy to be verified examples to show that this method is
+numerically more stable than ESOQ, potentially faster than QUEST and FOMA. We
+also use extensive simulation test to support this claim.

@@ -1,0 +1,16 @@
+The rate optimization for wireless networks with low SNR is investigated.
+While the capacity in the limit of disappearing SNR is known to be linear for
+fading and non-fading channels, we study the problem of operating in low SNR
+wireless network with given node locations that use network coding over flows.
+The model we develop for low SNR Gaussian broadcast channel and multiple access
+channel respectively operates in a non-trivial feasible rate region. We show
+that the problem reduces to the optimization of total network power which can
+be casted as standard linear multi-commodity min-cost flow program with no
+inherent combinatorially difficult structure when network coding is used with
+non integer constraints (which is a reasonable assumption). This is essentially
+due to the linearity of the capacity with respect to vanishing SNR which helps
+avoid the effect of interference for the degraded broadcast channel and
+multiple access environment in consideration, respectively. We propose a fully
+decentralized Primal-Dual Subgradient Algorithm for achieving optimal rates on
+each subgraph (i.e. hyperarcs) of the network to support the set of traffic
+demands (multicast/unicast connections).

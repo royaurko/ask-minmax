@@ -1,0 +1,16 @@
+We adress the problem of the algebraic decoding of any cyclic code up to the
+true minimum distance. For this, we use the classical formulation of the
+problem, which is to find the error locator polynomial in terms of the syndroms
+of the received word. This is usually done with the Berlekamp-Massey algorithm
+in the case of BCH codes and related codes, but for the general case, there is
+no generic algorithm to decode cyclic codes. Even in the case of the quadratic
+residue codes, which are good codes with a very strong algebraic structure,
+there is no available general decoding algorithm. For this particular case of
+quadratic residue codes, several contributors have worked out, by hand, formulas for
+the coefficients of the locator polynomial in terms of the syndroms, using the
+Newton identities. This work has to be done for each particular quadratic
+residue code, and is more and more difficult as the length is growing.
+Furthermore, it is error-prone. We propose to automate these computations,
+using elimination theory and Grbner bases. We prove that, by computing
+appropriate Grbner bases, one automatically recovers formulas for the
+coefficients of the locator polynomial, in terms of the syndroms.

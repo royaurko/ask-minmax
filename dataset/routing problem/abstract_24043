@@ -1,0 +1,17 @@
+Many genomic experiments, notably microarray experiments seeking to detect
+differential gene expression, involve calculating a large number of p-values.
+This leads to the multiple testing problem: when the number of null hypotheses
+is large, the probability of accepting at least one false alternative
+hypothesis is often much greater than the significance level of the tests,
+which tends to mislead investigators. Software called HighProbability provides
+a simple, fast, reliable solution to the multiple testing problem, with
+applications to many areas of bioinformatics. For example, in a microarray
+study, HighProbability can determine which genes are probably differentially
+expressed. Given a set of p-values not adjusted for multiple testing,
+HighProbability determines which ones are low enough to imply a high
+probability of the truth of their alternative hypotheses. The set of p-values
+may be determined by conventional hypothesis testing or by random permutations
+using existing R or S-PLUS software. HighProbability is freely available under
+license through http://www.davidbickel.com . Coded in S, HighProbability
+currently requires an installation of R or S-PLUS, but the algorithm is short
+enough for fast implementation in non-S languages as well.

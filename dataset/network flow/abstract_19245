@@ -1,0 +1,23 @@
+Bargaining networks model social or economic situations in which agents seek
+to form the most lucrative partnership with another agent from among several
+alternatives. There has been a flurry of recent research studying Nash
+bargaining solutions (also called 'balanced outcomes') in bargaining networks,
+so that we now know when such solutions exist, and also that they can be
+computed efficiently, even by market agents behaving in a natural manner. In
+this work we study a generalization of Nash bargaining, that models the
+possibility of unequal 'bargaining powers'. This generalization was introduced
+in [KB+10], where it was shown that the corresponding 'unequal division' (UD)
+solutions exist if and only if Nash bargaining solutions exist, and also that a
+certain local dynamics converges to UD solutions when they exist. However, the
+bound on convergence time obtained for that dynamics was exponential in network
+size for the unequal division case. This bound is tight, in the sense that
+there exists instances on which the dynamics of [KB+10] converges only after
+exponential time. Other approaches, such as the one of Kleinberg and Tardos, do
+not generalize to the unsymmetrical case. Thus, the question of computational
+tractability of UD solutions has remained open. In this paper, we provide an
+FPTAS for the computation of UD solutions, when such solutions exist. On a
+graph G=(V,E) with weights (i.e. pairwise profit opportunities) uniformly
+bounded above by 1, our FPTAS finds an \eps-UD solution in time
+poly(|V|,1/\eps). We also provide a fast local algorithm for finding \eps-UD
+solution, providing further justification that a market can find such a
+solution.

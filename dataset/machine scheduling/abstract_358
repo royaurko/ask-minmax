@@ -1,0 +1,13 @@
+In this article we present the design choices and the evaluation of a batch
+scheduler for large clusters, named OAR. This batch scheduler is based upon an
+original design that emphasizes on low software complexity by using high level
+tools. The global architecture is built upon the scripting language Perl and
+the relational database engine Mysql. The goal of the project OAR is to prove
+that it is possible today to build a complex system for ressource management
+using such tools without sacrificing efficiency and scalability. Currently, our
+system offers most of the important features implemented by other batch
+schedulers such as priority scheduling (by queues), reservations, backfilling
+and some global computing support. Despite the use of high level tools, our
+experiments show that our system has performances close to other systems.
+Furthermore, OAR is currently exploited for the management of 700 nodes (a
+metropolitan GRID) and has shown good efficiency and robustness.

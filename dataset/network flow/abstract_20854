@@ -1,0 +1,20 @@
+In this paper we develop scheduling policies that maximize the stability
+region of a wireless network under the assumption that mutual information
+accumulation is implemented at the physical layer. When the link quality
+between nodes is not sufficiently high that a packet can be decoded within a
+single slot, the system can accumulate information across multiple slots,
+eventually decoding the packet. The result is an expanded stability region. The
+accumulation process over weak links is temporally coupled and therefore does
+not satisfy the independent and identically distributed (i.i.d) assumption that
+underlies many previous analysis in this area. Therefore the problem setting
+also poses new analytic challenges. We propose two dynamic scheduling
+algorithms to cope with the non-i.i.d nature of the decoding. The first
+performs scheduling every $T$ slots, and approaches the boundary of the
+stability region as $T$ gets large, but at the cost of increased average delay.
+The second introduces virtual queues for each link and constructs a virtual
+system wherein two virtual nodes are introduced for each link. The constructed
+virtual system is shown to have the same stability region as the original
+system. Through controlling the virtual queues in the constructed system, we
+avoid the non-i.i.d analysis difficulty and attain the full stability region.
+We derive performance bounds for both algorithms and compare them through
+simulation results.

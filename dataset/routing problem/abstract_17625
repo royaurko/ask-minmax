@@ -1,0 +1,15 @@
+An undirected graph consists of a set of vertices and a set of undirected
+edges between vertices. Such a graph may contain an abundant number of cycles,
+then a feedback vertex set (FVS) is a set of vertices intersecting with each of
+these cycles. Constructing a FVS of cardinality approaching the global minimum
+value is a optimization problem in the nondeterministic polynomial-complete
+complexity class, therefore it might be extremely difficult for some large
+graph instances. In this paper we develop a simulated annealing local search
+algorithm for the undirected FVS problem. By defining an order for the vertices
+outside the FVS, we replace the global cycle constraints by a set of local
+vertex constraints on this order. Under these local constraints the cardinality
+of the focal FVS is then gradually reduced by the simulated annealing dynamical
+process. We test this heuristic algorithm on large instances of Er\"odos-Renyi
+random graph and regular random graph, and find that this algorithm is
+comparable in performance to the belief propagation-guided decimation
+algorithm.

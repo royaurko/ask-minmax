@@ -1,0 +1,20 @@
+In this work, we propose an efficient methodology for video super-resolution,
+that is, the recovery of a sequence of high-resolution images from its
+low-resolution counterpart. The optimization problem associated to video
+super-resolution has several specificities which makes it particularly
+challenging. A first barrier is the high-dimensionality of the problem, which
+derives from the extra temporal dimension and the unknown parametrization of
+the dynamical model characterizing the video. A second obstacle is the
+non-differentiability and the non-convexity of some of the terms of the cost
+function: the non-differentiability stems from the use of regularization terms
+of the state of the art (e.g., to enforce sparsity) whereas the non-convexity
+appears as soon as the motion describing the video is unknown.
+  In this paper, we propose an overall algorithmic framework to address the
+video super-resolution problem. Our approach is based on fast gradient
+evaluation methods and modern optimization techniques for
+non-differentiable/non-convex problems. As a consequence, unlike previous work
+in the field, we show that there exists a provably-convergent method estimating
+both the high-resolution image sequence and the underlying motion with a
+complexity linear in the problem dimensions. We assess the proposed
+optimization methods on videos of the MPI Sintel data set, known to be a
+challenging optical-flow benchmark.

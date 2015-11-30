@@ -1,0 +1,21 @@
+The Hierarchical Memory Model (HMM) of computation is similar to the standard
+Random Access Machine (RAM) model except that the HMM has a non-uniform memory
+organized in a hierarchy of levels numbered 1 through h. The cost of accessing
+a memory location increases with the level number, and accesses to memory
+locations belonging to the same level cost the same. Formally, the cost of a
+single access to the memory location at address a is given by m(a), where m: N
+-> N is the memory cost function, and the h distinct values of m model the
+different levels of the memory hierarchy.
+  We study the problem of constructing and storing a binary search tree (BST)
+of minimum cost, over a set of keys, with probabilities for successful and
+unsuccessful searches, on the HMM with an arbitrary number of memory levels,
+and for the special case h=2.
+  While the problem of constructing optimum binary search trees has been well
+studied for the standard RAM model, the additional parameter m for the HMM
+increases the combinatorial complexity of the problem. We present two dynamic
+programming algorithms to construct optimum BSTs bottom-up. These algorithms
+run efficiently under some natural assumptions about the memory hierarchy. We
+also give an efficient algorithm to construct a BST that is close to optimum,
+by modifying a well-known linear-time approximation algorithm for the RAM
+model. We conjecture that the problem of constructing an optimum BST for the
+HMM with an arbitrary memory cost function m is NP-complete.

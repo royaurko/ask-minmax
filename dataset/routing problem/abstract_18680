@@ -1,0 +1,18 @@
+Accurate reconstruction of phylogenies remains a key challenge in
+evolutionary biology. Most biologically plausible formulations of the problem
+are formally NP-hard, with no known efficient solution. The standard in
+practice are fast heuristic methods that are empirically known to work very
+well in general, but can yield results arbitrarily far from optimal. Practical
+exact methods, which yield exponential worst-case running times but generally
+much better times in practice, provide an important alternative. We report
+progress in this direction by introducing a provably optimal method for the
+weighted multi-state maximum parsimony phylogeny problem. The method is based
+on generalizing the notion of the Buneman graph, a construction key to
+efficient exact methods for binary sequences, so as to apply to sequences with
+arbitrary finite numbers of states with arbitrary state transition weights. We
+implement an integer linear programming (ILP) method for the multi-state
+problem using this generalized Buneman graph and demonstrate that the resulting
+method is able to solve data sets that are intractable by prior exact methods
+in run times comparable with popular heuristics. Our work provides the first
+method for provably optimal maximum parsimony phylogeny inference that is
+practical for multi-state data sets of more than a few characters.

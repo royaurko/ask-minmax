@@ -1,0 +1,14 @@
+In this paper, we consider the problem of maximizing the throughput of
+Byzantine agreement, given that the sum capacity of all links in between nodes
+in the system is finite. We have proposed a highly efficient Byzantine
+agreement algorithm on values of length l>1 bits. This algorithm uses error
+detecting network codes to ensure that fault-free nodes will never disagree,
+and routing scheme that is adaptive to the result of error detection. Our
+algorithm has a bit complexity of n(n-1)l/(n-t), which leads to a linear cost
+(O(n)) per bit agreed upon, and overcomes the quadratic lower bound
+(Omega(n^2)) in the literature. Such linear per bit complexity has only been
+achieved in the literature by allowing a positive probability of error. Our
+algorithm achieves the linear per bit complexity while guaranteeing agreement
+is achieved correctly even in the worst case. We also conjecture that our
+algorithm can be used to achieve agreement throughput arbitrarily close to the
+agreement capacity of a network, when the sum capacity is given.

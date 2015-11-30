@@ -1,0 +1,15 @@
+In this paper, we introduce a new domain adaptation (DA) algorithm where the
+source and target domains are represented by subspaces spanned by eigenvectors.
+Our method seeks a domain invariant feature space by learning a mapping
+function which aligns the source subspace with the target one. We show that the
+solution of the corresponding optimization problem can be obtained in a simple
+closed form, leading to an extremely fast algorithm. We present two approaches
+to determine the only hyper-parameter in our method corresponding to the size
+of the subspaces. In the first approach we tune the size of subspaces using a
+theoretical bound on the stability of the obtained result. In the second
+approach, we use maximum likelihood estimation to determine the subspace size,
+which is particularly useful for high dimensional data. Apart from PCA, we
+propose a subspace creation method that outperform partial least squares (PLS)
+and linear discriminant analysis (LDA) in domain adaptation. We test our method
+on various datasets and show that, despite its intrinsic simplicity, it
+outperforms state of the art DA methods.

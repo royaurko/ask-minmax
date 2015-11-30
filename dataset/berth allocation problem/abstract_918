@@ -1,0 +1,17 @@
+In hadoop, the job scheduling is an independent module, users can design
+their own job scheduler based on their actual application requirements, thereby
+meet their specific business needs. Currently, hadoop has three schedulers:
+FIFO, computing capacity scheduling and fair scheduling policy, all of them are
+take task allocation strategy that considerate data locality simply. They
+neither support data locality well nor fully apply to all cases of jobs
+scheduling. In this paper, we took the concept of resources-prefetch into
+consideration, and proposed a job scheduling algorithm based on data locality.
+By estimate the remaining time to complete a task, compared with the time to
+transfer a resources block, to preselect candidate nodes for task allocation.
+Then we preselect a non-local map tasks from the unfinished job queue as
+resources-prefetch tasks. Getting information of resources blocks of
+preselected map task, select a nearest resources blocks from the candidate node
+and transferred to local through network. Thus we would ensure data locality
+good enough. Eventually, we design a experiment and proved resources-prefetch
+method can guarantee good job data locality and reduce the time to complete the
+job to a certain extent.

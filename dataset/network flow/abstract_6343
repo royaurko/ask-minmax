@@ -1,0 +1,17 @@
+The aim of this paper is to develop a multiscale hierarchical hybrid model
+based on finite element analysis and neural network computation to link
+mesoscopic scale (trabecular network level) and macroscopic (whole bone level)
+to simulate bone remodelling process. Because whole bone simulation considering
+the 3D trabecular level is time consuming, the finite element calculation is
+performed at macroscopic level and a trained neural network are employed as
+numerical devices for substituting the finite element code needed for the
+mesoscale prediction. The bone mechanical properties are updated at macroscopic
+scale depending on the morphological organization at the mesoscopic computed by
+the trained neural network. The digital image-based modeling technique using
+m-CT and voxel finite element mesh is used to capture 2 mm3 Representative
+Volume Elements at mesoscale level in a femur head. The input data for the
+artificial neural network are a set of bone material parameters, boundary
+conditions and the applied stress. The output data is the updated bone
+properties and some trabecular bone factors. The presented approach, to our
+knowledge, is the first model incorporating both FE analysis and neural network
+computation to simulate the multilevel bone adaptation in rapid way.

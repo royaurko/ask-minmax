@@ -1,0 +1,16 @@
+In this paper we design and prove correct a fully dynamic distributed
+algorithm for maintaining an approximate Steiner tree that connects via a
+minimum-weight spanning tree a subset of nodes of a network (referred as
+Steiner members or Steiner group) . Steiner trees are good candidates to
+efficiently implement communication primitives such as publish/subscribe or
+multicast, essential building blocks for the new emergent networks (e.g. P2P,
+sensor or adhoc networks). The cost of the solution returned by our algorithm
+is at most $\log |S|$ times the cost of an optimal solution, where $S$ is the
+group of members. Our algorithm improves over existing solutions in several
+ways. First, it tolerates the dynamism of both the group members and the
+network. Next, our algorithm is self-stabilizing, that is, it copes with nodes
+memory corruption. Last but not least, our algorithm is
+\emph{superstabilizing}. That is, while converging to a correct configuration
+(i.e., a Steiner tree) after a modification of the network, it keeps offering
+the Steiner tree service during the stabilization time to all members that have
+not been affected by this modification.

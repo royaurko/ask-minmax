@@ -1,0 +1,21 @@
+We develop an algorithm of separating the $E$ and $B$ modes of the CMB
+polarization from the noisy and discretized maps of Stokes parameter $Q$ and
+$U$ in a finite area. A key step of the algorithm is to take a wavelet-Galerkin
+discretization of the differential relation between the $E$, $B$ and $Q$, $U$
+fields. This discretization allows derivative operator to be represented by a
+matrix, which is exactly diagonal in scale space, and narrowly banded in
+spatial space. We show that the effect of boundary can be eliminated by
+dropping a few DWT modes located on or nearby the boundary. This method reveals
+that the derivative operators will cause large errors in the $E$ and $B$ power
+spectra on small scales if the $Q$ and $U$ maps contain Gaussian noise. It also
+reveals that if the $Q$ and $U$ maps are random, these fields lead to the
+mixing of the $E$ and $B$ modes. Consequently, the $B$ mode will be
+contaminated if the powers of $E$ modes are much larger than that of $B$ modes.
+Nevertheless, numerical tests show that the power spectra of both $E$ and $B$
+on scales larger than the finest scale by a factor of 4 and higher can
+reasonably be recovered, even when the power ratio of $E$- to $B$-modes is as
+large as about 10$^2$, and the signal-to-noise ratio is equal to 10 and higher.
+This is because the Galerkin discretization is free of false correlations, and
+keeps the contamination under control. As wavelet variables contain information
+of both spatial and scale spaces, the developed method is also effective to
+recover the spatial structures of the $E$ and $B$ mode fields.

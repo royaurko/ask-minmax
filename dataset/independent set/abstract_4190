@@ -1,0 +1,19 @@
+The development of prior distributions for Bayesian regression has
+traditionally been driven by the goal of achieving sensible model selection and
+parameter estimation. The formalization of properties that characterize good
+performance has led to the development and popularization of thick tailed
+mixtures of g priors such as the Zellner--Siow and hyper-g priors. The
+properties of a particular prior are typically illuminated under limits on the
+likelihood or the prior. In this paper we introduce a new, conditional
+information asymptotic that is motivated by the common data analysis setting
+where at least one regression coefficient is much larger than others. We
+analyze existing mixtures of g priors under this limit and reveal two new
+behaviors, Essentially Least Squares (ELS) estimation and the Conditional
+Lindley's Paradox (CLP), and argue that these behaviors are, in general,
+undesirable. As the driver behind both of these behaviors is the use of a
+single, latent scale parameter that is common to all coefficients, we propose a
+block hyper-g prior, defined by first partitioning the covariates into groups
+and then placing independent hyper-g priors on the corresponding blocks of
+coefficients. We provide conditions under which ELS and the CLP are avoided by
+the new class of priors, and provide consistency results under traditional
+sample size asymptotics.

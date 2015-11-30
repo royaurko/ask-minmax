@@ -1,0 +1,15 @@
+Symmetries occur naturally in CSP or SAT problems and are not very difficult
+to discover, but using them to prune the search space tends to be very
+challenging. Indeed, this usually requires finding specific elements in a group
+of symmetries that can be huge, and the problem of their very existence is
+NP-hard. We formulate such an existence problem as a constraint problem on one
+variable (the symmetry to be used) ranging over a group, and try to find
+restrictions that may be solved in polynomial time. By considering a simple
+form of constraints (restricted by a cardinality k) and the class of groups
+that have the structure of Fp-vector spaces, we propose a partial algorithm
+based on linear algebra. This polynomial algorithm always applies when k=p=2,
+but may fail otherwise as we prove the problem to be NP-hard for all other
+values of k and p. Experiments show that this approach though restricted should
+allow for an efficient use of at least some groups of symmetries. We conclude
+with a few directions to be explored to efficiently solve this problem on the
+general case.

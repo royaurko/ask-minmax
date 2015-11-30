@@ -1,0 +1,25 @@
+Alternating least squares (ALS) is often considered the workhorse algorithm
+for computing the rank-R canonical tensor approximation, but for certain
+problems its convergence can be very slow. The nonlinear conjugate gradient
+(NCG) method was recently proposed as an alternative to ALS, but the results
+indicated that NCG is usually not faster than ALS. To improve the convergence
+speed of NCG, we consider a nonlinearly preconditioned nonlinear conjugate
+gradient (PNCG) algorithm for computing the rank-R canonical tensor
+decomposition. Our approach uses ALS as a nonlinear preconditioner in the NCG
+algorithm. Alternatively, NCG can be viewed as an acceleration process for ALS.
+We demonstrate numerically that the convergence acceleration mechanism in PNCG
+often leads to important pay-offs for difficult tensor decomposition problems,
+with convergence that is significantly faster and more robust than for the
+stand-alone NCG or ALS algorithms. We consider several approaches for
+incorporating the nonlinear preconditioner into the NCG algorithm that have
+been described in the literature previously and have met with success in
+certain application areas. However, it appears that the nonlinearly
+preconditioned NCG approach has received relatively little attention in the
+broader community and remains underexplored both theoretically and
+experimentally. Thus, this paper serves several additional functions, by
+providing in one place a concise overview of several PNCG variants and their
+properties that have only been described in a few places scattered throughout
+the literature, by systematically comparing the performance of these PNCG
+variants for the tensor decomposition problem, and by drawing further attention
+to the usefulness of nonlinearly preconditioned NCG as a general tool. In
+addition, we briefly discuss the convergence of the PNCG algorithm.

@@ -1,0 +1,19 @@
+To ensure the privacy of users in transport systems, researchers are working
+on new protocols providing the best security guarantees while respecting
+functional requirements of transport operators. In this paper, we design a
+secure NFC m-ticketing protocol for public transport that preserves users'
+anonymity and prevents transport operators from tracing their customers' trips.
+To this end, we introduce a new practical set-membership proof that does not
+require provers nor verifiers (but in a specific scenario for verifiers) to
+perform pairing computations. It is therefore particularly suitable for our
+(ticketing) setting where provers hold SIM/UICC cards that do not support such
+costly computations. We also propose several optimizations of Boneh-Boyen type
+signature schemes, which are of independent interest, increasing their
+performance and efficiency during NFC transactions. Our m-ticketing protocol
+offers greater flexibility compared to previous solutions as it enables the
+post-payment and the off-line validation of m-tickets. By implementing a
+prototype using a standard NFC SIM card, we show that it fulfils the stringent
+functional requirement imposed by transport operators whilst using strong
+security parameters. In particular, a validation can be completed in 184.25 ms
+when the mobile is switched on, and in 266.52 ms when the mobile is switched
+off or its battery is flat.

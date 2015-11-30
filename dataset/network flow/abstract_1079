@@ -1,0 +1,19 @@
+The traditional TCP congestion control mechanism encounters a number of new
+problems and suffers a poor performance when the IEEE 802.11 MAC protocol is
+used in multihop ad hoc networks. Many of the problems result from medium
+contention at the MAC layer. In this paper, I first illustrate that severe
+medium contention and congestion are intimately coupled, and TCP s congestion
+control algorithm becomes too coarse in its granularity, causing throughput
+instability and excessively long delay. Further, we illustrate TCP s severe
+unfairness problem due to the medium contention and the tradeoff between
+aggregate throughput and fairness. Then, based on the novel use of channel
+busyness ratio, a more accurate metric to characterize the network utilization
+and congestion status, I propose a new wireless congestion control protocol
+(WCCP) to efficiently and fairly support the transport service in multihop ad
+hoc networks. In this protocol, each forwarding node along a traffic flow
+exercises the internode and intranode fair resource allocation and determines
+the MAC layer feedback accordingly. The endtoend feedback, which is ultimately
+determined by the bottleneck node along the flow, is carried back to the source
+to control its sending rate. Extensive simulations show that WCCP significantly
+outperforms traditional TCP in terms of channel utilization, delay, and
+fairness, and eliminates the starvation problem.

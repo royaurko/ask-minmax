@@ -1,0 +1,13 @@
+An upward drawing of a rooted tree is a drawing such that no parents are
+below their children. It is ordered if the edges to children appear in
+prescribed order around each vertex. It is well-known that any tree has an
+upward (unordered) drawing with width $\log (n+1)$. For ordered drawings, the
+best-known bounds for the width for binary trees is $O(\log n)$, while for
+arbitrary trees it is $O(2^{O(\sqrt{\log n})})$. We present algorithms that
+compute upward drawings with instance-optimal width, i.e., the width is the
+minimum-possible for the input tree. In this first paper, we mostly study
+unordered drawings, where the algorithm is very simple and the drawings
+obtained are straight-line. We also give 2-approximation algorithms for the
+width of upward ordered drawings, and $O(\Delta)$-approximation where
+additionally the height is small. In particular any tree has an upward
+straight-line ordered drawing of area $O(\Delta n\log n)$.

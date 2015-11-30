@@ -1,0 +1,13 @@
+In this paper we present and evaluate a search strategy called Decomposition
+Based Search (DBS) which is based on two steps: subproblem generation and
+subproblem solution. The generation of subproblems is done through value
+ranking and domain splitting. Subdomains are explored so as to generate,
+according to the heuristic chosen, promising subproblems first.
+  We show that two well known search strategies, Limited Discrepancy Search
+(LDS) and Iterative Broadening (IB), can be seen as special cases of DBS. First
+we present a tuning of DBS that visits the same search nodes as IB, but avoids
+restarts. Then we compare both theoretically and computationally DBS and LDS
+using the same heuristic. We prove that DBS has a higher probability of being
+successful than LDS on a comparable number of nodes, under realistic
+assumptions. Experiments on a constraint satisfaction problem and an
+optimization problem show that DBS is indeed very effective if compared to LDS.

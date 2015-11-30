@@ -1,0 +1,22 @@
+Modern parallel computing devices, such as the graphics processing unit
+(GPU), have gained significant traction in scientific and statistical
+computing. They are particularly well-suited to data-parallel algorithms such
+as the particle filter, or more generally Sequential Monte Carlo (SMC), which
+are increasingly used in statistical inference. SMC methods carry a set of
+weighted particles through repeated propagation, weighting and resampling
+steps. The propagation and weighting steps are straightforward to parallelise,
+as they require only independent operations on each particle. The resampling
+step is more difficult, as standard schemes require a collective operation,
+such as a sum, across particle weights. Focusing on this resampling step, we
+analyse two alternative schemes that do not involve a collective operation
+(Metropolis and rejection resamplers), and compare them to standard schemes
+(multinomial, stratified and systematic resamplers). We find that, in certain
+circumstances, the alternative resamplers can perform significantly faster on a
+GPU, and to a lesser extent on a CPU, than the standard approaches. Moreover,
+in single precision, the standard approaches are numerically biased for upwards
+of hundreds of thousands of particles, while the alternatives are not. This is
+particularly important given greater single- than double-precision throughput
+on modern devices, and the consequent temptation to use single precision with a
+greater number of particles. Finally, we provide auxiliary functions useful for
+implementation, such as for the permutation of ancestry vectors to enable
+in-place propagation.

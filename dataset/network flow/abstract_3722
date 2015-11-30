@@ -1,0 +1,15 @@
+One issue limiting the adaption of large-scale multi-region segmentation is
+the sometimes prohibitive memory requirements. This is especially troubling
+considering advances in massively parallel computing and commercial graphics
+processing units because of their already limited memory compared to the
+current random access memory used in more traditional computation. To address
+this issue in the field of continuous max-flow segmentation, we have developed
+a \textit{pseudo-flow} framework using the theory of Bregman proximal
+projections and entropic distances which implicitly represents flow variables
+between labels and designated source and sink nodes. This reduces the memory
+requirements for max-flow segmentation by approximately 20\% for Potts models
+and approximately 30\% for hierarchical max-flow (HMF) and directed acyclic
+graph max-flow (DAGMF) models. This represents a great improvement in the
+state-of-the-art in max-flow segmentation, allowing for much larger problems to
+be addressed and accelerated using commercially available graphics processing
+hardware.

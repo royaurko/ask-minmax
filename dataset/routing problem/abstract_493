@@ -1,0 +1,16 @@
+A decentralized search algorithm is a method of routing on a random graph
+that uses only limited, local, information about the realization of the graph.
+In some random graph models it is possible to define such algorithms which
+produce short paths when routing from any vertex to any other, while for others
+it is not.
+  We consider random graphs with random costs assigned to the edges. In this
+situation, we use the methods of stochastic dynamic programming to create a
+decentralized search method which attempts to minimize the total cost, rather
+than the number of steps, of each path. We show that it succeeds in doing so
+among all decentralized search algorithms which monotonically approach the
+destination. Our algorithm depends on knowing the expected cost of routing from
+every vertex to any other, but we show that this may be calculated iteratively,
+and in practice can be easily estimated from the cost of previous routes and
+compressed into a small routing table. The methods applied here can also be
+applied directly in other situations, such as efficient searching in graphs
+with varying vertex degrees.

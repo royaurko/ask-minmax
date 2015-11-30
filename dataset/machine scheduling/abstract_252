@@ -1,0 +1,19 @@
+Heterogeneous multicore architectures are becoming increasingly popular due
+to their potential of achieving high performance and energy efficiency compared
+to the homogeneous multicore architectures. In such systems, the real-time
+scheduling problem becomes more challenging in that processors have different
+speeds. A job executing on a processor with speed $x$ for $t$ time units
+completes $(x \cdot t)$ units of execution. Prior research on heterogeneous
+multiprocessor real-time scheduling has focused on hard real-time systems,
+where, significant processing capacity may have to be sacrificed in the
+worst-case to ensure that all deadlines are met. As meeting hard deadlines is
+overkill for many soft real-time systems in practice, this paper shows that on
+soft real-time heterogeneous multiprocessors, bounded response times can be
+ensured for globally-scheduled sporadic task systems with no utilization loss.
+A GEDF-based scheduling algorithm, namely GEDF-H, is presented and response
+time bounds are established under both preemptive and non-preemptive GEDF-H
+scheduling. Extensive experiments show that the magnitude of the derived
+response time bound is reasonable, often smaller than three task periods. To
+the best of our knowledge, this paper is the first to show that soft real-time
+sporadic task systems can be supported on heterogeneous multiprocessors without
+utilization loss, and with reasonable predicted response time.

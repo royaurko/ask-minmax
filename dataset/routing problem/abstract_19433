@@ -1,0 +1,19 @@
+In this paper, we propose a regularized Newton method for computing ground
+states of Bose-Einstein condensates (BECs), which can be formulated as an
+energy minimization problem with a spherical constraint. The energy functional
+and constraint are discretized by either the finite difference, or sine or
+Fourier pseudospectral discretization schemes and thus the original infinite
+dimensional nonconvex minimization problem is approximated by a finite
+dimensional constrained nonconvex minimization problem. Then an initial
+solution is first constructed by using a feasible gradient type method, which
+is an explicit scheme and maintains the spherical constraint automatically. To
+accelerate the convergence of the gradient type method, we approximate the
+energy functional by its second-order Taylor expansion with a regularized term
+at each Newton iteration and adopt a cascadic multigrid technique for selecting
+initial data. It leads to a standard trust-region subproblem and we solve it
+again by the feasible gradient type method. The convergence of the regularized
+Newton method is established by adjusting the regularization parameter as the
+standard trust-region strategy. Extensive numerical experiments on challenging
+examples, including a BEC in three dimensions with an optical lattice potential
+and rotating BECs in two dimensions with rapid rotation and strongly repulsive
+interaction, show that our method is efficient, accurate and robust.

@@ -1,0 +1,15 @@
+This work develops frequency-domain decoding algorithms for $(n=2^m,k)$
+systematic Reed-Solomon (RS) codes over fields $\mathbb{F}_{2^m},m\in
+\mathbb{Z}^+$, where $n-k$ is a power of two. The proposed algorithms are based
+on a new polynomial basis with a fast Fourier transform with computational
+complexity of order $\mathcal{O}(n\lg(n))$. First, the basis of syndrome
+polynomials is reformulated in the decoding procedure so that the new
+transforms can be applied to the decoding procedure. A fast extended Euclidean
+algorithm is developed to determine the error locator polynomial. The
+computational complexity of the proposed decoding algorithm is
+$\mathcal{O}(n\lg(n-k)+(n-k)\lg^2(n-k))$, improving upon the best currently
+available decoding complexity of $\mathcal{O}(n\lg^2(n)\lg\lg(n))$ and reaching
+the best known complexity bound that was established by Justesen in 1976, whose
+approach is for RS codes that operate only on some specified finite fields. As
+revealed by the computer simulations, the proposed decoding algorithm is $50$
+times faster than the conventional one for the $(2^{16},2^{15})$ RS code.

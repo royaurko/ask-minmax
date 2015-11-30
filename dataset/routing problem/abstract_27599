@@ -1,0 +1,14 @@
+In their seminal work on the Stable Marriage Problem, Gale and Shapley
+describe an algorithm which finds a stable matching in $O(n^2)$ communication
+rounds. Their algorithm has a natural interpretation as a distributed algorithm
+where each player is represented by a single processor. In this distributed
+model, Floreen, Kaski, Polishchuk, and Suomela recently showed that for bounded
+preference lists, terminating the Gale-Shapley algorithm after a constant
+number of rounds results in an almost stable matching. In this paper, we
+describe a new deterministic distributed algorithm which finds an almost stable
+matching in $O(\log^5 n)$ communication rounds for arbitrary preferences. We
+also present a faster randomized variant which requires $O(\log^2 n)$ rounds.
+This run-time can be improved to $O(1)$ rounds for "almost regular" (and in
+particular complete) preferences. To our knowledge, these are the first
+sub-polynomial round distributed algorithms for any variant of the stable
+marriage problem with unbounded preferences.

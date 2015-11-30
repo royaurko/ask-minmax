@@ -1,0 +1,20 @@
+We attempt to forecast M-and X-class solar flares using a machine-learning
+algorithm, called Support Vector Machine (SVM), and four years of data from the
+Solar Dynamics Observatory's Helioseismic and Magnetic Imager, the first
+instrument to continuously map the full-disk photospheric vector magnetic field
+from space. Most flare forecasting efforts described in the literature use
+either line-of-sight magnetograms or a relatively small number of ground-based
+vector magnetograms. This is the first time a large dataset of vector
+magnetograms has been used to forecast solar flares. We build a catalog of
+flaring and non-flaring active regions sampled from a database of 2,071 active
+regions, comprised of 1.5 million active region patches of vector magnetic
+field data, and characterize each active region by 25 parameters. We then train
+and test the machine-learning algorithm and we estimate its performances using
+forecast verification metrics with an emphasis on the True Skill Statistic
+(TSS). We obtain relatively high TSS scores and overall predictive abilities.
+We surmise that this is partly due to fine-tuning the SVM for this purpose and
+also to an advantageous set of features that can only be calculated from vector
+magnetic field data. We also apply a feature selection algorithm to determine
+which of our 25 features are useful for discriminating between flaring and
+non-flaring active regions and conclude that only a handful are needed for good
+predictive abilities.

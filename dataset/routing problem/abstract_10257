@@ -1,0 +1,13 @@
+Given a graph~$G$ and integers $k_1$, $k_2$, and~$k_3$, the unit interval
+editing problem asks whether $G$ can be transformed into a unit interval graph
+by at most $k_1$ vertex deletions, $k_2$ edge deletions, and $k_3$ edge
+additions. We give an algorithm solving the problem in time $2^{O(k\log
+k)}\cdot (n+m)$, where $k := k_1 + k_2 + k_3$, and $n, m$ denote respectively
+the numbers of vertices and edges of $G$. Therefore, it is fixed-parameter
+tractable parameterized by the total number of allowed operations.
+  This implies the fixed-parameter tractability of the unit interval edge
+deletion problem, for which we also present a more efficient algorithm running
+in time $O(4^k \cdot (n + m))$. Another result is an $O(6^k \cdot (n +
+m))$-time algorithm for the unit interval vertex deletion problem,
+significantly improving the best-known algorithm running in time $O(6^k \cdot
+n^6)$.

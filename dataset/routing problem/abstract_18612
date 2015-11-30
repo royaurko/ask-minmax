@@ -1,0 +1,21 @@
+On the heels of compressed sensing, a remarkable new field has very recently
+emerged. This field addresses a broad range of problems of significant
+practical interest, namely, the recovery of a data matrix from what appears to
+be incomplete, and perhaps even corrupted, information. In its simplest form,
+the problem is to recover a matrix from a small sample of its entries, and
+comes up in many areas of science and engineering including collaborative
+filtering, machine learning, control, remote sensing, and computer vision to
+name a few.
+  This paper surveys the novel literature on matrix completion, which shows
+that under some suitable conditions, one can recover an unknown low-rank matrix
+from a nearly minimal set of entries by solving a simple convex optimization
+problem, namely, nuclear-norm minimization subject to data constraints.
+Further, this paper introduces novel results showing that matrix completion is
+provably accurate even when the few observed entries are corrupted with a small
+amount of noise. A typical result is that one can recover an unknown n x n
+matrix of low rank r from just about nr log^2 n noisy samples with an error
+which is proportional to the noise level. We present numerical results which
+complement our quantitative analysis and show that, in practice, nuclear norm
+minimization accurately fills in the many missing entries of large low-rank
+matrices from just a few noisy samples. Some analogies between matrix
+completion and compressed sensing are discussed throughout.

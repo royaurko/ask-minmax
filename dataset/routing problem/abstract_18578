@@ -1,0 +1,18 @@
+When applying the support vector machine (SVM) to high-dimensional
+classification problems, we often impose a sparse structure in the SVM to
+eliminate the influences of the irrelevant predictors. The lasso and other
+variable selection techniques have been successfully used in the SVM to perform
+automatic variable selection. In some problems, there is a natural hierarchical
+structure among the variables. Thus, in order to have an interpretable SVM
+classifier, it is important to respect the heredity principle when enforcing
+the sparsity in the SVM. Many variable selection methods, however, do not
+respect the heredity principle. In this paper we enforce both sparsity and the
+heredity principle in the SVM by using the so-called structured variable
+selection (SVS) framework originally proposed in Yuan, Joseph and Zou (2007).
+We minimize the empirical hinge loss under a set of linear inequality
+constraints and a lasso-type penalty. The solution always obeys the desired
+heredity principle and enjoys sparsity. The new SVM classifier can be
+efficiently fitted, because the optimization problem is a linear program.
+Another contribution of this work is to present a nonparametric extension of
+the SVS framework, and we propose nonparametric heredity SVMs. Simulated and
+real data are used to illustrate the merits of the proposed method.

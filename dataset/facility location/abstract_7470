@@ -1,0 +1,23 @@
+Compressive Sensing (CS) is a new technique for the efficient acquisition of
+signals, images, and other data that have a sparse representation in some
+basis, frame, or dictionary. By sparse we mean that the N-dimensional basis
+representation has just K<<N significant coefficients; in this case, the CS
+theory maintains that just M = K log N random linear signal measurements will
+both preserve all of the signal information and enable robust signal
+reconstruction in polynomial time. In this paper, we extend the CS theory to
+pulse stream data, which correspond to S-sparse signals/images that are
+convolved with an unknown F-sparse pulse shape. Ignoring their convolutional
+structure, a pulse stream signal is K=SF sparse. Such signals figure
+prominently in a number of applications, from neuroscience to astronomy. Our
+specific contributions are threefold. First, we propose a pulse stream signal
+model and show that it is equivalent to an infinite union of subspaces. Second,
+we derive a lower bound on the number of measurements M required to preserve
+the essential information present in pulse streams. The bound is linear in the
+total number of degrees of freedom S + F, which is significantly smaller than
+the naive bound based on the total signal sparsity K=SF. Third, we develop an
+efficient signal recovery algorithm that infers both the shape of the impulse
+response as well as the locations and amplitudes of the pulses. The algorithm
+alternatively estimates the pulse locations and the pulse shape in a manner
+reminiscent of classical deconvolution algorithms. Numerical experiments on
+synthetic and real data demonstrate the advantages of our approach over
+standard CS.

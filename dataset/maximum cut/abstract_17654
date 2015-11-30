@@ -1,0 +1,20 @@
+This paper proposes and experimentally validates a Bayesian network model of
+a range finder adapted to dynamic environments. All modeling assumptions are
+rigorously explained, and all model parameters have a physical interpretation.
+This approach results in a transparent and intuitive model. With respect to the
+state of the art beam model this paper: (i) proposes a different functional
+form for the probability of range measurements caused by unmodeled objects,
+(ii) intuitively explains the discontinuity encountered in te state of the art
+beam model, and (iii) reduces the number of model parameters, while maintaining
+the same representational power for experimental data. The proposed beam model
+is called RBBM, short for Rigorously Bayesian Beam Model. A maximum likelihood
+and a variational Bayesian estimator (both based on expectation-maximization)
+are proposed to learn the model parameters.
+  Furthermore, the RBBM is extended to a full scan model in two steps: first,
+to a full scan model for static environments and next, to a full scan model for
+general, dynamic environments. The full scan model accounts for the dependency
+between beams and adapts to the local sample density when using a particle
+filter. In contrast to Gaussian-based state of the art models, the proposed
+full scan model uses a sample-based approximation. This sample-based
+approximation enables handling dynamic environments and capturing
+multi-modality, which occurs even in simple static environments.

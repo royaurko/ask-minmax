@@ -1,0 +1,10 @@
+This paper discusses improvements to the numerical robustness of the
+algorithm described in Kasper Fauerby's "Improved Collision Detection and
+Response." The algorithm addresses a common collision detection query: a moving
+sphere or ellipsoid vs. a set of motionless triangles. In its current form, the
+algorithm allows the sphere to penetrate the triangles. The sphere also
+displays "jittering" behavior when colliding with certain geometry. Most of
+these problems are the product of insufficient attention to numerical
+robustness, the focus of this paper. Motivated by the importance of numerical
+robustness in collision detection code, this paper addresses these problems in
+detail and proposes efficient solutions to them.

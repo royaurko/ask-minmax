@@ -1,0 +1,17 @@
+In this paper, we recover sparse signals from their noisy linear measurements
+by solving nonlinear differential inclusions, which we call \emph{Bregman ISS}
+and \emph{Linearized Bregman ISS}. We show that under proper conditions, there
+exists a bias-free and sign-consistent point on their solution paths, which
+corresponds to a signal that is the unbiased estimate of the true signal and
+whose entries have the same signs as those of the true signs. Therefore, their
+solution paths are regularization paths better than the LASSO regularization
+path, since the points on the latter path are biased. We also show how to
+efficiently compute their solution paths in both continuous and discretized
+settings: the full solution paths can be exactly computed piece by piece, and a
+discretization leads to \emph{Linearized Bregman iteration}, which is faster
+and easy to parallelize. Theoretical guarantees such as sign-consistency and
+minimax optimal $l_2$-error bounds are established in both continuous and
+discrete settings for specific points on the paths. Early-stopping
+regularization rules for identifying these points are given. The key treatment
+relies on the development of differential inequalities for differential
+inclusions and their discretizations.

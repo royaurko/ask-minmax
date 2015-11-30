@@ -1,0 +1,22 @@
+This work establishes the design, analysis, and fine-tuning of a
+Peak-to-Average-Power-Ratio (PAPR) reducing system, based on compressed sensing
+at the receiver of a peak-reducing sparse clipper applied to an OFDM signal at
+the transmitter. By exploiting the sparsity of the OFDM signal in the time
+domain relative to a pre-defined clipping threshold, the method depends on
+partially observing the frequency content of extremely simple sparse clippers
+to recover the locations, magnitudes, and phases of the clipped coefficients of
+the peak-reduced signal. We claim that in the absence of optimization
+algorithms at the transmitter that confine the frequency support of clippers to
+a predefined set of reserved-tones, no other tone-reservation method can
+reliably recover the original OFDM signal with such low complexity.
+  Afterwards we focus on designing different clipping signals that can embed a
+priori information regarding the support and phase of the peak-reducing signal
+to the receiver, followed by modified compressive sensing techniques for
+enhanced recovery. This includes data-based weighted {\ell} 1 minimization for
+enhanced support recovery and phase-augmention for homogeneous clippers
+followed by Bayesian techniques.
+  We show that using such techniques for a typical OFDM signal of 256
+subcarriers and 20% reserved tones, the PAPR can be reduced by approximately
+4.5 dB with a significant increase in capacity compared to a system which uses
+all its tones for data transmission and clips to such levels. The design is
+hence appealing from both capacity and PAPR reduction aspects.

@@ -1,0 +1,15 @@
+Modern Internet-scale storage systems often provide weak consistency in
+exchange for better performance and resilience. An important weak consistency
+property is k-atomicity, which bounds the staleness of values returned by read
+operations. The k-atomicity-verification problem (or k-AV for short) is the
+problem of deciding whether a given history of operations is k-atomic. The 1-AV
+problem is equivalent to verifying atomicity/linearizability, a well-known and
+solved problem. However, for k > 2, no polynomial-time k-AV algorithm is known.
+  This paper makes the following contributions towards solving the k-AV
+problem. First, we present a simple 2- AV algorithm called LBT, which is likely
+to be efficient (quasilinear) for histories that arise in practice, although it
+is less efficient (quadratic) in the worst case. Second, we present a more
+involved 2-AV algorithm called FZF, which runs efficiently (quasilinear) even
+in the worst case. To our knowledge, these are the first algorithms that solve
+the 2-AV problem fully. Third, we show that the weighted k-AV problem, a
+natural extension of the k-AV problem, is NP-complete.

@@ -1,0 +1,16 @@
+We consider the problem of determining asymptotic bounds on the capacity of a
+random ad hoc network. Previous approaches assumed a link layer model in which
+if a transmitter-receiver pair can communicate with each other, i.e., the
+Signal to Interference and Noise Ratio (SINR) is above a certain threshold,
+then every transmitted packet is received error-free by the receiver thereby.
+Using this model, the per node capacity of the network was shown to be
+$\Theta(\frac{1}{\sqrt{n\log{n}}})$. In reality, for any finite link SINR,
+there is a non-zero probability of erroneous reception of the packet. We show
+that in a large network, as the packet travels an asymptotically large number
+of hops from source to destination, the cumulative impact of packet losses over
+intermediate links results in a per-node throughput of only $O(\frac{1}{n})$.
+We then propose a new scheduling scheme to counter this effect. The proposed
+scheme provides tight guarantees on end-to-end packet loss probability, and
+improves the per-node throughput to $\Omega(\frac{1}{\sqrt{n}
+({\log{n}})^{\frac{\alpha{{+2}}}{2(\alpha-2)}}})$ where $\alpha>2$ is the path
+loss exponent.

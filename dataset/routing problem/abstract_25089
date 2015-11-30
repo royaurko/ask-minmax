@@ -1,0 +1,15 @@
+In this paper, we study the MapReduce framework from an algorithmic
+standpoint and demonstrate the usefulness of our approach by designing and
+analyzing efficient MapReduce algorithms for fundamental sorting, searching,
+and simulation problems. This study is motivated by a goal of ultimately
+putting the MapReduce framework on an equal theoretical footing with the
+well-known PRAM and BSP parallel models, which would benefit both the theory
+and practice of MapReduce algorithms. We describe efficient MapReduce
+algorithms for sorting, multi-searching, and simulations of parallel algorithms
+specified in the BSP and CRCW PRAM models. We also provide some applications of
+these results to problems in parallel computational geometry for the MapReduce
+framework, which result in efficient MapReduce algorithms for sorting, 2- and
+3-dimensional convex hulls, and fixed-dimensional linear programming. For the
+case when mappers and reducers have a memory/message-I/O size of
+$M=\Theta(N^\epsilon)$, for a small constant $\epsilon>0$, all of our MapReduce
+algorithms for these applications run in a constant number of rounds.

@@ -1,0 +1,15 @@
+A Riemann problem with prescribed initial conditions will produce one of
+three possible wave patterns corresponding to the propagation of the different
+discontinuities that will be produced once the system is allowed to relax. In
+general, when solving the Riemann problem numerically, the determination of the
+specific wave pattern produced is obtained through some initial guess which can
+be successively discarded or improved. We here discuss a new procedure,
+suitable for implementation in an exact Riemann solver in one dimension, which
+removes the initial ambiguity in the wave pattern. In particular we focus our
+attention on the relativistic velocity jump between the two initial states and
+use this to determine, through some analytic conditions, the wave pattern
+produced by the decay of the initial discontinuity. The exact Riemann problem
+is then solved by means of calculating the root of a nonlinear equation.
+Interestingly, in the case of two rarefaction waves, this root can even be
+found analytically. Our procedure is straightforward to implement numerically
+and improves the efficiency of numerical codes based on exact Riemann solvers.

@@ -1,0 +1,21 @@
+In many graphics applications, the computation of exact geodesic distance is
+very important. However, the high computational cost of the existing geodesic
+algorithms means that they are not practical for large-scale models or
+time-critical applications. To tackle this challenge, we propose the parallel
+Chen-Han (or PCH) algorithm, which extends the classic Chen-Han (CH) discrete
+geodesic algorithm to the parallel setting. The original CH algorithm and its
+variant both lack a parallel solution because the windows (a key data structure
+that carries the shortest distance in the wavefront propagation) are maintained
+in a strict order or a tightly coupled manner, which means that only one window
+is processed at a time. We propose dividing the CH's sequential algorithm into
+four phases, window selection, window propagation, data organization, and
+events processing so that there is no data dependence or conflicts in each
+phase and the operations within each phase can be carried out in parallel. The
+proposed PCH algorithm is able to propagate a large number of windows
+simultaneously and independently. We also adopt a simple yet effective strategy
+to control the total number of windows. We implement the PCH algorithm on
+modern GPUs (such as Nvidia GTX 580) and analyze the performance in detail. The
+performance improvement (compared to the sequential algorithms) is highly
+consistent with GPU double-precision performance (GFLOPS). Extensive
+experiments on real-world models demonstrate an order of magnitude improvement
+in execution time compared to the state-of-the-art.

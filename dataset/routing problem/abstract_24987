@@ -1,0 +1,10 @@
+We transpose an optimal control technique to the image segmentation problem.
+The idea is to consider image segmentation as a parameter estimation problem.
+The parameter to estimate is the color of the pixels of the image. We use the
+adaptive parameterization technique which builds iteratively an optimal
+representation of the parameter into uniform regions that form a partition of
+the domain, hence corresponding to a segmentation of the image. We minimize an
+error function during the iterations, and the partition of the image into
+regions is optimally driven by the gradient of this error. The resulting
+segmentation algorithm inherits desirable properties from its optimal control
+origin: soundness, robustness, and flexibility.

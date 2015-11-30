@@ -1,0 +1,20 @@
+We consider power allocation for an access-controlled transmitter with energy
+harvesting capability based on causal observations of the channel fading state.
+We assume that the system operates in a time-slotted fashion and the channel
+gain in each slot is a random variable which is independent across slots.
+Further, we assume that the transmitter is solely powered by a renewable energy
+source and the energy harvesting process can practically be predicted. With the
+additional access control for the transmitter and the maximum power constraint,
+we formulate the stochastic optimization problem of maximizing the achievable
+rate as a Markov decision process (MDP) with continuous state. To efficiently
+solve the problem, we define an approximate value function based on a piecewise
+linear fit in terms of the battery state. We show that with the approximate
+value function, the update in each iteration consists of a group of convex
+problems with a continuous parameter. Moreover, we derive the optimal solution
+to these convex problems in closed-form. Further, we propose power allocation
+algorithms for both the finite- and infinite-horizon cases, whose computational
+complexity is significantly lower than that of the standard discrete MDP method
+but with improved performance. Extension to the case of a general payoff
+function and imperfect energy prediction is also considered. Finally,
+simulation results demonstrate that the proposed algorithms closely approach
+the optimal performance.

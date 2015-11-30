@@ -1,0 +1,21 @@
+Fitting a Gaussian Random Field (GRF) model to spatial data via maximum
+likelihood (ML) requires optimizing a non-convex function. Iterative methods to
+solve the ML problem require $O(n^3)$ floating point operations per iteration,
+where $n$ denotes the number of data points. For large data sets, the
+non-convexity and computational complexity of the ML problem render covariance
+ML methods inefficient for GRF fitting. In this paper, we propose a new
+two-step GRF estimation procedure when the process is second-order stationary.
+First, a \emph{convex} likelihood problem, regularized with a weighted
+$\ell_1$-norm based on available inter-point distance information, is solved to
+fit a sparse {\em precision} (inverse covariance) matrix to the GRF model using
+the Alternating Direction Method of Multipliers. Second, the parameters of the
+GRF spatial covariance function are estimated by solving a least square
+problem. Theoretical results provide convergence bound for the proposed SPS
+estimator. Numerical experiments verify the theoretical results and show
+improvements of one order of magnitude in mean square prediction error over
+competitor methods. The covariance parameters estimated by the proposed
+approach are shown to be more precise and accurate than those obtained with
+alternative methods. Large datasets are handled by a blocking scheme that
+enables parallel computation and ensures without further formulation that the
+predicted surface has no discontinuities at the block boundaries. The proposed
+approach can be easily modified to allow fitting non-stationary GRF processes.

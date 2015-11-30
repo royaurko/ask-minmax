@@ -1,0 +1,13 @@
+Tree reconstruction methods are often judged by their accuracy, measured by
+how close they get to the true tree. Yet most reconstruction methods like ML do
+not explicitly maximize this accuracy. To address this problem, we propose a
+Bayesian solution. Given tree samples, we propose finding the tree estimate
+which is closest on average to the samples. This ``median'' tree is known as
+the Bayes estimator (BE). The BE literally maximizes posterior expected
+accuracy, measured in terms of closeness (distance) to the true tree. We
+discuss a unified framework of BE trees, focusing especially on tree distances
+which are expressible as squared euclidean distances. Notable examples include
+Robinson--Foulds distance, quartet distance, and squared path difference. Using
+simulated data, we show Bayes estimators can be efficiently computed in
+practice by hill climbing. We also show that Bayes estimators achieve higher
+accuracy, compared to maximum likelihood and neighbor joining.

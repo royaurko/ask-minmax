@@ -1,0 +1,19 @@
+Multivariate time series (MTS) data such as time course gene expression data
+in genomics are often collected to study the dynamic nature of the systems.
+These data provide important information about the causal dependency among a
+set of random variables. In this paper, we introduce a computationally
+efficient algorithm to learn directed acyclic graphs (DAGs) based on MTS data,
+focusing on learning the local structure of a given target variable. Our
+algorithm is based on learning all parents (P), all children (C) and some
+descendants (D) (PCD) iteratively, utilizing the time order of the variables to
+orient the edges. This time series PCD-PCD algorithm (tsPCD-PCD) extends the
+previous PCD-PCD algorithm to dependent observations and utilizes composite
+likelihood ratio tests (CLRTs) for testing the conditional independence. We
+present the asymptotic distribution of the CLRT statistic and show that the
+tsPCD-PCD is guaranteed to recover the true DAG structure when the faithfulness
+condition holds and the tests correctly reject the null hypotheses. Simulation
+studies show that the CLRTs are valid and perform well even when the sample
+sizes are small. In addition, the tsPCD-PCD algorithm outperforms the PCD-PCD
+algorithm in recovering the local graph structures. We illustrate the algorithm
+by analyzing a time course gene expression data related to mouse T-cell
+activation.

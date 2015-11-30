@@ -1,0 +1,19 @@
+Embedded boundary methods alleviate many computational challenges, including
+those associated with meshing complex geometries and solving problems with
+evolving domains and interfaces. Developing model reduction methods for
+computational frameworks based on such methods seems however to be challenging.
+Indeed, most popular model reduction techniques are projection-based, and rely
+on basis functions obtained from the compression of simulation snapshots. In a
+traditional interface-fitted computational framework, the computation of such
+basis functions is straightforward, primarily because the computational domain
+does not contain in this case a fictitious region. This is not the case however
+for an embedded computational framework because the computational domain
+typically contains in this case both real and ghost regions whose definitions
+complicate the collection and compression of simulation snapshots. The problem
+is exacerbated when the interface separating both regions evolves in time. This
+paper addresses this issue by formulating the snapshot compression problem as a
+weighted low-rank approximation problem where the binary weighting identifies
+the evolving component of the individual simulation snapshots. The proposed
+approach is application independent and therefore comprehensive. It is
+successfully demonstrated for the model reduction of several two-dimensional,
+vortex-dominated, fluid-structure interaction problems.

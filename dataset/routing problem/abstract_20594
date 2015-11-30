@@ -1,0 +1,19 @@
+When a store sells items to customers, the store wishes to determine the
+prices of the items to maximize its profit. Intuitively, if the store sells the
+items with low (resp. high) prices, the customers buy more (resp. less) items,
+which provides less profit to the store. So it would be hard for the store to
+decide the prices of items. Assume that the store has a set V of n items and
+there is a set E of m customers who wish to buy those items, and also assume
+that each item i \in V has the production cost d_i and each customer e_j \in E
+has the valuation v_j on the bundle e_j \subseteq V of items. When the store
+sells an item i \in V at the price r_i, the profit for the item i is
+p_i=r_i-d_i. The goal of the store is to decide the price of each item to
+maximize its total profit. In most of the previous works, the item pricing
+problem was considered under the assumption that p_i \geq 0 for each i \in V,
+however, Balcan, et al. [In Proc. of WINE, LNCS 4858, 2007] introduced the
+notion of loss-leader, and showed that the seller can get more total profit in
+the case that p_i < 0 is allowed than in the case that p_i < 0 is not allowed.
+In this paper, we consider the line and the cycle highway problem, and show
+approximation algorithms for the line and/or cycle highway problem for which
+the smallest valuation is s and the largest valuation is \ell or all valuations
+are identical.

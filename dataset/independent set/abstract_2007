@@ -1,0 +1,27 @@
+In this paper we present a simple but powerful subgraph sampling primitive
+that is applicable in a variety of computational models including dynamic graph
+streams (where the input graph is defined by a sequence of edge/hyperedge
+insertions and deletions) and distributed systems such as MapReduce. In the
+case of dynamic graph streams, we use this primitive to prove the following
+results:
+  -- Matching: First, there exists an $\tilde{O}(k^2)$ space algorithm that
+returns an exact maximum matching on the assumption the cardinality is at most
+$k$. The best previous algorithm used $\tilde{O}(kn)$ space where $n$ is the
+number of vertices in the graph and we prove our result is optimal up to
+logarithmic factors. Our algorithm has $\tilde{O}(1)$ update time. Second,
+there exists an $\tilde{O}(n^2/\alpha^3)$ space algorithm that returns an
+$\alpha$-approximation for matchings of arbitrary size. (Assadi et al. (2015)
+showed that this was optimal and independently and concurrently established the
+same upper bound.) We generalize both results for weighted matching. Third,
+there exists an $\tilde{O}(n^{4/5})$ space algorithm that returns a constant
+approximation in graphs with bounded arboricity.
+  -- Vertex Cover and Hitting Set: There exists an $\tilde{O}(k^d)$ space
+algorithm that solves the minimum hitting set problem where $d$ is the
+cardinality of the input sets and $k$ is an upper bound on the size of the
+minimum hitting set. We prove this is optimal up to logarithmic factors. Our
+algorithm has $\tilde{O}(1)$ update time. The case $d=2$ corresponds to minimum
+vertex cover.
+  Finally, we consider a larger family of parameterized problems (including
+$b$-matching, disjoint paths, vertex coloring among others) for which our
+subgraph sampling primitive yields fast, small-space dynamic graph stream
+algorithms. We then show lower bounds for natural problems outside this family.

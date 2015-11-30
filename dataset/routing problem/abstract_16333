@@ -1,0 +1,15 @@
+The problem of identifying splice sites consists of two sub-problems: finding
+their boundaries, and characterizing their sequence markers. Other splicing
+elements---including, enhancers and silencers---that occur in the intronic and
+exonic regions play an important role in splicing activity. Existing methods
+for detecting splicing elements are limited to finding either splice sites or
+enhancers and silencers, even though these elements are well-known to co-occur.
+We introduce SeeSite, an efficient and accurate tool for detecting splice sites
+and their complementary exon splicing enhancers (ESEs).
+  SeeSite has three stages: graph construction, finding dense subgraphs, and
+recovering splice sites and ESEs along with their consensus. The third step
+involves solving Consensus Sequence with Outliers, an NP-complete string
+clustering problem. We prove that our algorithm for this problem outputs
+near-optimal solutions in polynomial time. Using SeeSite we demonstrate that
+ESEs are preferentially associated with weaker splice sites, and splice sites
+of a certain canonical form co-occur with specific ESEs.

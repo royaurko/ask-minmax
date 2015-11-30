@@ -1,0 +1,16 @@
+High order finite-difference or spectral methods are typically problematic in
+approximating a function with a jump discontinuity. Some common remedies come
+with a cost in accuracy near discontinuities, or in computational cost, or in
+complexity of implementation. However, for certain classes of problems
+involving piecewise analytic functions, the jump in the function and its
+derivatives are known or easy to compute. We show that high-order or spectral
+accuracy can then be recovered by simply adding to the Lagrange interpolation
+formula a linear combination of the jumps. Discretizations developed for smooth
+problems are thus easily extended to nonsmooth problems. Furthermore, in the
+context of one-dimensional finite-difference or pseudospectral discretizations,
+numerical integration and differentiation amount to matrix multiplication. We
+construct the matrices for such operations, in the presence of known
+discontinuities, by operating on the corrected Lagrange formula. In a
+method-of-lines framework, this provides a simple and efficient way to obtain
+solutions with moving discontinuities to evolution partial differential
+equations.

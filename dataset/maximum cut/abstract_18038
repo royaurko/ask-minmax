@@ -1,0 +1,20 @@
+Commodity memory interfaces have difficulty in scaling memory capacity to
+meet the needs of modern multicore and big data systems. DRAM device density
+and maximum device count are constrained by technology, package, and signal in-
+tegrity issues that limit total memory capacity. Synchronous DRAM protocols
+require data to be returned within a fixed latency, and thus memory extension
+methods over commodity DDRx interfaces fail to support scalable topologies.
+Current extension approaches either use slow PCIe interfaces, or require
+expensive changes to the memory interface, which limits commercial
+adoptability. Here we propose twin-load, a lightweight asynchronous memory
+access mechanism over the synchronous DDRx interface. Twin-load uses two
+special loads to accomplish one access request to extended memory, the first
+serves as a prefetch command to the DRAM system, and the second asynchronously
+gets the required data. Twin-load requires no hardware changes on the processor
+side and only slight soft- ware modifications. We emulate this system on a
+prototype to demonstrate the feasibility of our approach. Twin-load has
+comparable performance to NUMA extended memory and outperforms a page-swapping
+PCIe-based system by several orders of magnitude. Twin-load thus enables
+instant capacity increases on commodity platforms, but more importantly, our
+architecture opens opportunities for the design of novel, efficient, scalable,
+cost-effective memory subsystems.

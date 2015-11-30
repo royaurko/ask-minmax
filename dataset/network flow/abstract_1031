@@ -1,0 +1,26 @@
+Recent studies on the practice of shaping subscribers' traffic by ISPs give a
+new insight into the actual performance of broadband access networks at a
+packet level. Unlike metro and backbone networks, however, access networks
+directly interface with end-users, so it is important to base the study and
+design of access networks on the behaviors of and the actual performance
+perceived by end-users. In this paper we study the effect of ISP traffic
+shaping using traffic models based on user behaviors and
+application/session-layer metrics providing quantifiable measures of
+user-perceived performance for HTTP, FTP, and streaming video traffic. To
+compare the user-perceived performance of shaped traffic flows with those of
+unshaped ones in an integrated way, we use a multivariate non-inferiority
+testing procedure. We first investigate the effect of the token generation rate
+and the token bucket size of a token bucket filter on user-perceived
+performance at a subscriber level with a single subscriber. Then we investigate
+their effect at an access level where shaped traffic flows from multiple
+subscribers interact with one another in a common shared access network. The
+simulation results show that for a given token generation rate, a larger token
+bucket provides better user-perceived performance at both subscriber and access
+levels. It is also shown that the loose burst control resulting from the large
+token bucket --- up to 100 MB for access line rate of 100 Mbit/s --- does not
+negatively affect user-perceived performance with multiple subscribers even in
+the presence of non-conformant subscribers; with a much larger token bucket,
+however, the negative effect of non-conformant subscribers on the
+user-perceived performance of conformant subscribers becomes clearly visible
+because the impact of token bucket size and that of token generation rate are
+virtually indistinguishable in this case.

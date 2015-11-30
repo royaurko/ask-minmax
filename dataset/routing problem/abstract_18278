@@ -1,0 +1,20 @@
+In a multi-armed bandit (MAB) problem, an online algorithm makes a sequence
+of choices. In each round it chooses from a time-invariant set of alternatives
+and receives the payoff associated with this alternative. While the case of
+small strategy sets is by now well-understood, a lot of recent work has focused
+on MAB problems with exponentially or infinitely large strategy sets, where one
+needs to assume extra structure in order to make the problem tractable. In
+particular, recent literature considered information on similarity between
+arms.
+  We consider similarity information in the setting of "contextual bandits", a
+natural extension of the basic MAB problem where before each round an algorithm
+is given the "context" -- a hint about the payoffs in this round. Contextual
+bandits are directly motivated by placing advertisements on webpages, one of
+the crucial problems in sponsored search. A particularly simple way to
+represent similarity information in the contextual bandit setting is via a
+"similarity distance" between the context-arm pairs which gives an upper bound
+on the difference between the respective expected payoffs.
+  Prior work on contextual bandits with similarity uses "uniform" partitions of
+the similarity space, which is potentially wasteful. We design more efficient
+algorithms that are based on adaptive partitions adjusted to "popular" context
+and "high-payoff" arms.

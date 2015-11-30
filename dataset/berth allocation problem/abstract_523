@@ -1,0 +1,15 @@
+The circle travelling delay between OLT (Optical Line Terminal) and ONU
+(Optical Network Unit) is one of most important items in dynamic bandwidth
+allocation (DBA) algorithms in PON, called RTT (Round Trip Time). The RTT is
+taken into account when OLT assigns the start times for upstream bandwidth
+grants. In most case, RTT is estimated before making bandwidth allocation
+decisions in dynamic bandwidth allocation algorithms. If the estimated RTT is
+incorrect, the bandwidth allocation decisions are not matched with bandwidth
+requests of channels. Thus, performance of PON can get worse by deviation of
+RTT. There are several reasons that cause the RTT to be varying, such as
+processing delay, distance of OLT and ONU, changing in fiber refractive index
+resulting from temperature drift, and degree of accuracy of RTT estimation
+methods. In this paper, we evaluate the impacts of RTT inaccuracy on
+performance of DBA and identify levels of collision and waste of bandwidth. By
+this way, we propose a method to remedy the performance degradation encountered
+by the situation

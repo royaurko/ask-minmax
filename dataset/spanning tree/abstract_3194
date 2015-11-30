@@ -1,0 +1,18 @@
+Determining the interaction partners among protein/domain families poses hard
+computational problems, in particular in the presence of paralogous proteins.
+Available approaches aim to identify interaction partners among protein/domain
+families through maximizing the similarity between trimmed versions of their
+phylogenetic trees. Since maximization of any natural similarity score is
+computationally difficult, many approaches employ heuristics to maximize the
+distance matrices corresponding to the tree topologies in question. In this
+paper we devise an efficient deterministic algorithm which directly maximizes
+the similarity between two leaf labeled trees with edge lengths, obtaining a
+score-optimal alignment of the two trees in question.
+  Our algorithm is significantly faster than those methods based on distance
+matrix comparison: 1 minute on a single processor vs. 730 hours on a
+supercomputer. Furthermore we have advantages over the current state-of-the-art
+heuristic search approach in terms of precision as well as a recently suggested
+overall performance measure for mirrortree approaches, while incurring only
+acceptable losses in recall.
+  A C implementation of the method demonstrated in this paper is available at
+http://compbio.cs.sfu.ca/mirrort.htm

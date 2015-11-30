@@ -1,0 +1,20 @@
+This paper studies online shortest-path routing over dynamic multi-hop
+networks. Link costs or delays are time-varying and modeled by independent and
+identically distributed random processes, whose parameters are initially
+unknown. The parameters, and hence the optimal path, can only be estimated by
+routing packets through the network and observing the realized delays. Our aim
+is to find a routing policy that minimizes the regret (the cumulative delay
+difference) between the path chosen by the policy and the unknown optimal path.
+We formulate the problem as a combinatorial bandit optimization problem and
+consider several scenarios that differ in where routing decisions are made and
+in the information available when making the decision. For each scenario, we
+derive the tight asymptotic lower bound on the regret that has to be satisfied
+by any online routing policy. These bounds help us to understand the
+performance improvements we can expect when (i) taking routing decisions at
+each hop rather than at the source only, and (ii) observing per-link costs
+rather than aggregate path costs. In particular, we show that (i) is of no use
+while (ii) can have a spectacular impact. Three algorithms, with a trade-off
+between computational complexity and performance, are proposed. The regret
+upper bounds of these algorithm improve over those of the existing algorithms,
+and they significantly outperform the-state-of-art algorithm in numerical
+experiments.

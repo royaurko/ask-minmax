@@ -1,0 +1,15 @@
+Detection and localization of objects at multiple scales often involves
+sliding a single scale template in order to score windows at different scales
+independently. Nonetheless, multi-scale visual information at a given image
+location is highly correlated. This fundamental insight allows us to generalize
+the traditional multi-scale sliding window technique by jointly considering
+image features at all scales in order to detect and localize objects. Two
+max-margin approaches are studied for learning the multi-scale templates and
+leveraging the highly structured multi-scale information which would have been
+ignored if a single-scale template was used. The multi-scale formulation is
+shown to significantly improve general detection performance (measured on the
+PASCAL VOC dataset). The experimental analysis shows the method to be effective
+with different visual features, both HOG and CNN. Surprisingly, for a given
+window in a specific scale, visual information from windows at the same image
+location but other scales (`out-of-scale' information) contains most of the
+discriminative information for detection.

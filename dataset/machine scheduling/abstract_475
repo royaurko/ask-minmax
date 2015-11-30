@@ -1,0 +1,18 @@
+High-resolution images can be used to resolve matching ambiguities between
+trajectory fragments (tracklets), which is one of the main challenges in
+multiple target tracking. A PTZ camera, which can pan, tilt and zoom, is a
+powerful and efficient tool that offers both close-up views and wide area
+coverage on demand. The wide-area view makes it possible to track many targets
+while the close-up view allows individuals to be identified from
+high-resolution images of their faces. A central component of a PTZ tracking
+system is a scheduling algorithm that determines which target to zoom in on.
+  In this paper we study this scheduling problem from a theoretical
+perspective, where the high resolution images are also used for tracklet
+matching. We propose a novel data structure, the Multi-Strand Tracking Graph
+(MSG), which represents the set of tracklets computed by a tracker and the
+possible associations between them. The MSG allows efficient scheduling as well
+as resolving -- directly or by elimination -- matching ambiguities between
+tracklets. The main feature of the MSG is the auxiliary data saved in each
+vertex, which allows efficient computation while avoiding time-consuming graph
+traversal. Synthetic data simulations are used to evaluate our scheduling
+algorithm and to demonstrate its superiority over a na\"ive one.

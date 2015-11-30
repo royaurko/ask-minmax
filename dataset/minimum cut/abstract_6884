@@ -1,0 +1,18 @@
+We present a general framework for computing two-dimensional Voronoi diagrams
+of different classes of sites under various distance functions. The framework
+is sufficiently general to support diagrams embedded on a family of
+two-dimensional parametric surfaces in $R^3$. The computation of the diagrams
+is carried out through the construction of envelopes of surfaces in 3-space
+provided by CGAL (the Computational Geometry Algorithm Library). The
+construction of the envelopes follows a divide-and-conquer approach. A
+straightforward application of the divide-and-conquer approach for computing
+Voronoi diagrams yields algorithms that are inefficient in the worst case. We
+prove that through randomization the expected running time becomes near-optimal
+in the worst case. We show how to employ our framework to realize various types
+of Voronoi diagrams with different properties by providing implementations for
+a vast collection of commonly used Voronoi diagrams. We also show how to apply
+the new framework and other existing tools from CGAL to compute minimum-width
+annuli of sets of disks, which requires the computation of two Voronoi diagrams
+of two different types, and of the overlay of the two diagrams. We do not
+assume general position. Namely, we handle degenerate input, and produce exact
+results.

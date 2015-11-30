@@ -1,0 +1,17 @@
+This paper develops three polynomial-time pricing techniques for European
+Asian options with provably small errors, where the stock prices follow
+binomial trees or trees of higher-degree. The first technique is the first
+known Monte Carlo algorithm with analytical error bounds suitable for pricing
+single-stock options with meaningful confidence and speed. The second technique
+is a general recursive bucketing-based scheme that can use the
+Aingworth-Motwani-Oldham aggregation algorithm, Monte-Carlo simulation and
+possibly others as the base-case subroutine. This scheme enables robust
+trade-offs between accuracy and time over subtrees of different sizes. For
+long-term options or high frequency price averaging, it can price single-stock
+options with smaller errors in less time than the base-case algorithms
+themselves. The third technique combines Fast Fourier Transform with
+bucketing-based schemes for pricing basket options. This technique takes
+polynomial time in the number of days and the number of stocks, and does not
+add any errors to those already incurred in the companion bucketing scheme.
+This technique assumes that the price of each underlying stock moves
+independently.

@@ -1,0 +1,17 @@
+Sponsored search adopts generalized second price (GSP) auction mechanism
+which works on the concept of pay per click which is most commonly used for the
+allocation of slots in the searched page. Two main aspects associated with GSP
+are the bidding amount and the click through rate (CTR). The CTR learning
+algorithms currently being used works on the basic principle of (#clicks_i/
+#impressions_i) under a fixed window of clicks or impressions or time. CTR are
+prone to fraudulent clicks, resulting in sudden increase of CTR. The current
+algorithms are unable to find the solutions to stop this, although with the use
+of machine learning algorithms it can be detected that fraudulent clicks are
+being generated. In our paper, we have used the concept of relative ranking
+which works on the basic principle of (#clicks_i /#clicks_t). In this
+algorithm, both the numerator and the denominator are linked. As #clicks_t is
+higher than previous algorithms and is linked to the #clicks_i, the small
+change in the clicks which occurs in the normal scenario have a very small
+change in the result but in case of fraudulent clicks the number of clicks
+increases or decreases rapidly which will add up with the normal clicks to
+increase the denominator, thereby decreasing the CTR.

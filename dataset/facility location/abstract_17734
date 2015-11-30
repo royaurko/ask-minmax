@@ -1,0 +1,19 @@
+This paper presents a program logic for reasoning about multithreaded
+Java-like programs with dynamic thread creation, thread joining and reentrant
+object monitors. The logic is based on concurrent separation logic. It is the
+first detailed adaptation of concurrent separation logic to a multithreaded
+Java-like language. The program logic associates a unique static access
+permission with each heap location, ensuring exclusive write accesses and
+ruling out data races. Concurrent reads are supported through fractional
+permissions. Permissions can be transferred between threads upon thread
+starting, thread joining, initial monitor entrancies and final monitor exits.
+In order to distinguish between initial monitor entrancies and monitor
+reentrancies, auxiliary variables keep track of multisets of currently held
+monitors. Data abstraction and behavioral subtyping are facilitated through
+abstract predicates, which are also used to represent monitor invariants,
+preconditions for thread starting and postconditions for thread joining.
+Value-parametrized types allow to conveniently capture common strong global
+invariants, like static object ownership relations. The program logic is
+presented for a model language with Java-like classes and interfaces, the
+soundness of the program logic is proven, and a number of illustrative examples
+are presented.

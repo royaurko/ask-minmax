@@ -1,0 +1,20 @@
+A robust and resilient Medium Access Control (MAC) protocol is crucial for
+numerous machine-type devices to concurrently access the channel in a
+Machine-to-Machine (M2M) network. Simplex (reservation or contention based) MAC
+protocols are studied in most literatures which may not be able to provide a
+scalable solution for M2M networks with large number of heterogeneous devices.
+In this paper, a scalable hybrid MAC protocol, which consists of a contention
+period and a transmission period, is designed for heterogeneous M2M networks.
+In this protocol, different devices with pre-set priorities (hierarchical
+contending probabilities) firstly contend the transmission opportunities
+following the convention based $p$-persistent CSMA mechanism. Only the
+successful devices will be assigned a time slot for transmission following the
+reservation based TDMA mechanism. If the devices failed in contention at
+previous frame, to ensure the fairness among all devices, their contending
+priorities will be raised by increasing their contending probabilities at the
+next frame. To balance the tradeoff between the contention and transmission
+period in each frame, an optimization problem is formulated to maximize the
+channel utility by finding the key design parameters: the contention duration,
+initial contending probability and the incremental indicator. Analytical and
+simulation results demonstrate the effectiveness of the proposed Hybrid MAC
+protocol.

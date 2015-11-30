@@ -1,0 +1,16 @@
+We consider traffic-update mobile applications that let users learn traffic
+conditions based on reports from other users. These applications are becoming
+increasingly popular (e.g., Waze reported 30 million users in 2013) since they
+aggregate real-time road traffic updates from actual users traveling on the
+roads. However, the providers of these mobile services have access to such
+sensitive information as timestamped locations and movements of its users. In
+this paper, we describe Haze, a protocol for traffic-update applications that
+supports the creation of traffic statistics from user reports while protecting
+the privacy of the users. Haze relies on a small subset of users to jointly
+aggregate encrypted speed and alert data and report the result to the service
+provider. We use jury-voting protocols based on threshold cryptosystem and
+differential privacy techniques to hide user data from anyone participating in
+the protocol while allowing only aggregate information to be extracted and sent
+to the service provider. We show that Haze is effective in practice by
+developing a prototype implementation and performing experiments on a
+real-world dataset of car trajectories.

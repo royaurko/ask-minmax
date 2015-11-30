@@ -1,0 +1,15 @@
+This paper presents a novel pairwise constraint propagation approach by
+decomposing the challenging constraint propagation problem into a set of
+independent semi-supervised learning subproblems which can be solved in
+quadratic time using label propagation based on k-nearest neighbor graphs.
+Considering that this time cost is proportional to the number of all possible
+pairwise constraints, our approach actually provides an efficient solution for
+exhaustively propagating pairwise constraints throughout the entire dataset.
+The resulting exhaustive set of propagated pairwise constraints are further
+used to adjust the similarity matrix for constrained spectral clustering. Other
+than the traditional constraint propagation on single-source data, our approach
+is also extended to more challenging constraint propagation on multi-source
+data where each pairwise constraint is defined over a pair of data points from
+different sources. This multi-source constraint propagation has an important
+application to cross-modal multimedia retrieval. Extensive results have shown
+the superior performance of our approach.

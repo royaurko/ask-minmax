@@ -1,0 +1,19 @@
+We are given a set of sensors at given locations, a set of potential
+locations for placing base stations (BSs, or sinks), and another set of
+potential locations for placing wireless relay nodes. There is a cost for
+placing a BS and a cost for placing a relay. The problem we consider is to
+select a set of BS locations, a set of relay locations, and an association of
+sensor nodes with the selected BS locations, so that number of hops in the path
+from each sensor to its BS is bounded by hmax, and among all such feasible
+networks, the cost of the selected network is the minimum. The hop count bound
+suffices to ensure a certain probability of the data being delivered to the BS
+within a given maximum delay under a light traffic model. We observe that the
+problem is NP-Hard, and is hard to even approximate within a constant factor.
+For this problem, we propose a polynomial time approximation algorithm
+(SmartSelect) based on a relay placement algorithm proposed in our earlier
+work, along with a modification of the greedy algorithm for weighted set cover.
+We have analyzed the worst case approximation guarantee for this algorithm. We
+have also proposed a polynomial time heuristic to improve upon the solution
+provided by SmartSelect. Our numerical results demonstrate that the algorithms
+provide good quality solutions using very little computation time in various
+randomly generated network scenarios.

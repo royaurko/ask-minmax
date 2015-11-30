@@ -1,0 +1,11 @@
+Given a linear system, we consider the problem of finding a small set of
+variables to affect with an input so that the resulting system is controllable.
+We show that this problem is NP-hard; indeed, we show that even approximating
+the minimum number of variables that need to be affected within a
+multiplicative factor of $c \log n$ is NP-hard for some positive $c$. On the
+positive side, we show it is possible to find sets of variables matching this
+inapproximability barrier in polynomial time. This can be done by a simple
+greedy heuristic which sequentially picks variables to maximize the rank
+increase of the controllability matrix. Experiments on Erdos-Renyi random
+graphs demonstrate this heuristic almost always succeeds at findings the
+minimum number of variables.

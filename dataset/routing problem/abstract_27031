@@ -1,0 +1,13 @@
+This paper deals with the query problem in the Internet of Things (IoT).
+Flooding is an important query strategy. However, original flooding is prone to
+cause heavy network loads. To address this problem, we propose a variant of
+flooding, called Level-Based Flooding (LBF). With LBF, the whole network is
+divided into several levels according to the distances (i.e., hops) between the
+sensor nodes and the sink node. The sink node knows the level information of
+each node. Query packets are broadcast in the network according to the levels
+of nodes. Upon receiving a query packet, sensor nodes decide how to process it
+according to the percentage of neighbors that have processed it. When the
+target node receives the query packet, it sends its data back to the sink node
+via random walk. We show by extensive simulations that the performance of LBF
+in terms of cost and latency is much better than that of original flooding, and
+LBF can be used in IoT of different scales.

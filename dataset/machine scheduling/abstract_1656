@@ -1,0 +1,12 @@
+In this technical report we describe describe the Domain Specific Language
+(DSL) of the Workflow Execution Execution (WEE). Instead of interpreting an XML
+based workflow description language like BPEL, the WEE uses a minimized but
+expressive set of statements that runs directly on to of a virtual machine that
+supports the Ruby language.Frameworks/Virtual Machines supporting supporting
+this language include Java, .NET and there exists also a standalone Virtual
+Machine. Using a DSL gives us the advantage of maintaining a very compact code
+base of under 400 lines of code, as the host programming language implements
+all the concepts like parallelism, threads, checking for syntactic correctness.
+The implementation just hooks into existing statements to keep track of the
+workflow and deliver information about current existing context variables and
+state to the environment that embeds WEE.

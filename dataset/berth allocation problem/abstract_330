@@ -1,0 +1,16 @@
+This paper proposes a novel solution: the elimination of paged virtual memory
+and partial outsourcing of memory page allocation and manipulation from the
+operating system kernel into the individual process' user space - a user mode
+page allocator - which allows an application to have direct, bare metal access
+to the page mappings used by the hardware Memory Management Unit (MMU) for its
+part of the overall address space. A user mode page allocator based emulation
+of the mmap() abstraction layer of dlmalloc is then benchmarked against the
+traditional kernel mode implemented mmap() in a series of synthetic Monte-Carlo
+and real world application settings. Given the superb synthetic and positive
+real world results from the profiling conducted, this paper proposes that with
+proper operating system and API support one could gain a further order higher
+performance again while keeping allocator performance invariant to the amount
+of memory being allocated or freed i.e. a 100x performance improvement or more
+in some common use cases. It is rare that through a simple and easy to
+implement API and operating system structure change one can gain a Silver
+Bullet with the potential for a second one.

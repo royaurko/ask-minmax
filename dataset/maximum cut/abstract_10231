@@ -1,0 +1,22 @@
+The Golden Code is a full-rate full-diversity space-time code, which achieves
+maximum coding gain for Multiple-Input Multiple-Output (MIMO) systems with two
+transmit and two receive antennas. Since four information symbols taken from an
+M-QAM constellation are selected to construct one Golden Code codeword, a
+maximum likelihood decoder using sphere decoding has the worst-case complexity
+of O(M^4), when the Channel State Information (CSI) is available at the
+receiver. Previously, this worst-case complexity was reduced to O(M^(2.5))
+without performance degradation. When the CSI is known by the transmitter as
+well as the receiver, beamforming techniques that employ singular value
+decomposition are commonly used in MIMO systems. In the absence of channel
+coding, when a single symbol is transmitted, these systems achieve the full
+diversity order provided by the channel. Whereas this property is lost when
+multiple symbols are simultaneously transmitted. However, uncoded multiple
+beamforming can achieve the full diversity order by adding a properly designed
+constellation precoder. For 2 \times 2 Fully Precoded Multiple Beamforming
+(FPMB), the general worst-case decoding complexity is O(M). In this paper,
+Golden Coded Multiple Beamforming (GCMB) is proposed, which transmits the
+Golden Code through 2 \times 2 multiple beamforming. GCMB achieves the full
+diversity order and its performance is similar to general MIMO systems using
+the Golden Code and FPMB, whereas the worst-case decoding complexity of
+O(sqrt(M)) is much lower. The extension of GCMB to larger dimensions is also
+discussed.

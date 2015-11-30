@@ -1,0 +1,17 @@
+The slow-coloring game is played by Lister and Painter on a graph $G$. On
+each round, Lister marks a nonempty subset $M$ of the remaining vertices,
+scoring $|M|$ points. Painter then deletes a subset of $M$ that is independent
+in $G$. The game ends when all vertices are deleted. Painter's goal is to
+minimize the total score; Lister seeks to maximize it. The score that each
+player can guarantee doing no worse than is the cost of $G$, written
+$\mathring{s}(G)$. The game is a variant of online list coloring.
+  We prove several results. Always $\frac{|V(G)|}{2\alpha(G)}+\frac{1}{2}\leq
+\frac{\mathring{s}(G)}{|V(G)|}\leq
+\max\left\{\frac{|V(H)|}{\alpha(H)}\colon\,\!H \subset G\right\}$, where
+$\alpha(G)$ is the independence number. Among $n$-vertex trees, $\mathring{s}$
+is minimized by the star and maximized by the path. Trivially $\mathring{s}(G)$
+is at most the sum-paintability of $G$, with equality only when all components
+of $G$ are complete. Also $\mathring{s}(G)$ is at least the chromatic sum (the
+minimum sum of vertex colors in a proper coloring by positive integers), with
+equality if $\alpha(G)\leq 2$. Finally, we give good bounds on
+$\mathring{s}(K_{r,s})$.

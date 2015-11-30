@@ -1,0 +1,16 @@
+We present a parallel algorithm that computes the ask and bid prices of an
+American option when proportional transaction costs apply to the trading of the
+underlying asset. The algorithm computes the prices on recombining binomial
+trees, and is designed for modern multi-core processors. Although parallel
+option pricing has been well studied, none of the existing approaches takes
+transaction costs into consideration. The algorithm that we propose partitions
+a binomial tree into blocks. In any round of computation a block is further
+partitioned into regions which are assigned to distinct processors. To minimise
+load imbalance the assignment of nodes to processors is dynamically adjusted
+before each new round starts. Synchronisation is required both within a round
+and between two successive rounds. The parallel speedup of the algorithm is
+proportional to the number of processors used. The parallel algorithm was
+implemented in C/C++ via POSIX Threads, and was tested on a machine with 8
+processors. In the pricing of an American put option, the parallel speedup
+against an efficient sequential implementation was 5.26 using 8 processors and
+1500 time steps, achieving a parallel efficiency of 65.75%.

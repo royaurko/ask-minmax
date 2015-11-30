@@ -1,0 +1,18 @@
+We present an approach to computing spatial information based on Fourier
+coefficient distributions. The Fourier transform (FT) of an image contains a
+complete description of the image, and the values of the FT coefficients are
+uniquely associated with that image. For an image where the distribution of
+pixels is uncorrelated, the FT coefficients are normally distributed and
+uncorrelated. Further, the probability distribution for the FT coefficients of
+such an image can readily be obtained by Parseval's theorem. We take advantage
+of these properties to compute the spatial information in an image by
+determining the probability of each coefficient (both real and imaginary parts)
+in the FT, then using the Shannon formalism to calculate information. By using
+the probability distribution obtained from Parseval's theorem, an effective
+distance from the completely uncorrelated or most uncertain case is obtained.
+The resulting quantity is an information computed in k-space (kSI). This
+approach provides a robust, facile and highly flexible framework for
+quantifying spatial information in images and other types of data (of arbitrary
+dimensions). The kSI metric is tested on a 2D Ising ferromagnet, and the
+temperature-dependent phase transition is accurately determined from the
+spatial information in configurations of the system.

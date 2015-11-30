@@ -1,0 +1,20 @@
+Internet of Vehicles (IoV) has recently gained considerable attentions from
+both industry and research communities since the development of communication
+technology and smart city. However, a proprietary and closed way of operating
+hardwares in network equipments slows down the progress of new services
+deployment and extension in IoV. Moreover, the tightly coupled control and data
+planes in traditional networks significantly increase the complexity and cost
+of network management. By proposing a novel architecture, called
+Software-Defined Internet of Vehicles (SDIV), we adopt the software-defined
+network (SDN) architecture to address these problems by leveraging its
+separation of the control plane from the data plane and a uniform way to
+configure heterogeneous switches. However, the characteristics of IoV introduce
+the very challenges in rule installation due to the limited size of Flow Tables
+at OpenFlow-enabled switches which are the main component of SDN. It is
+necessary to build compact Flow Tables for the scalability of IoV. Accordingly,
+we develop a rule optimization approach for real-time query service in SDIV.
+Specifically, we separate wired data plane from wireless data plane and use
+multicast address in wireless data plane. Furthermore, we introduce a
+destination-driven model in wired data plane for reducing the number of rules
+at switches. Experiments show that our rule optimization strategy reduces the
+number of rules while keeping the performance of data transmission.

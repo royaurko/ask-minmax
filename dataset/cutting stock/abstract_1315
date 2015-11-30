@@ -1,0 +1,25 @@
+A graph G'(V,E') is an \eps-sparsification of G for some \eps>0, if every
+(weighted) cut in G' is within (1\pm \eps) of the corresponding cut in G. A
+celebrated result of Benczur and Karger shows that for every undirected graph
+G, an \eps-sparsification with O(n\log n/\e^2) edges can be constructed in
+O(m\log^2n) time. Applications to modern massive data sets often constrain
+algorithms to use computation models that restrict random access to the input.
+The semi-streaming model, in which the algorithm is constrained to use \tilde
+O(n) space, has been shown to be a good abstraction for analyzing graph
+algorithms in applications to large data sets. Recently, a semi-streaming
+algorithm for graph sparsification was presented by Anh and Guha; the total
+running time of their implementation is \Omega(mn), too large for applications
+where both space and time are important. In this paper, we introduce a new
+technique for graph sparsification, namely refinement sampling, that gives an
+\tilde{O}(m) time semi-streaming algorithm for graph sparsification.
+  Specifically, we show that refinement sampling can be used to design a
+one-pass streaming algorithm for sparsification that takes O(\log\log n) time
+per edge, uses O(\log^2 n) space per node, and outputs an \eps-sparsifier with
+O(n\log^3 n/\eps^2) edges. At a slightly increased space and time complexity,
+we can reduce the sparsifier size to O(n \log n/\e^2) edges matching the
+Benczur-Karger result, while improving upon the Benczur-Karger runtime for
+m=\omega(n\log^3 n). Finally, we show that an \eps-sparsifier with O(n \log
+n/\eps^2) edges can be constructed in two passes over the data and O(m) time
+whenever m =\Omega(n^{1+\delta}) for some constant \delta>0. As a by-product of
+our approach, we also obtain an O(m\log\log n+n \log n) time streaming
+algorithm to compute a sparse k-connectivity certificate of a graph.

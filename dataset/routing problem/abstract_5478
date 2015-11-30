@@ -1,0 +1,25 @@
+Finding an informative subset of a large number of data points or models is
+at the center of many problems in machine learning, computer vision, bio/health
+informatics and image/signal processing. Given pairwise dissimilarities between
+the elements of a `source set' and a `target set,' we consider the problem of
+finding a subset of the source set, called representatives or exemplars, that
+can efficiently describe the target set. We formulate the problem as a
+row-sparsity regularized trace minimization problem. Since the proposed
+formulation is, in general, an NP-hard problem, we consider a convex
+relaxation. The solution of our proposed optimization program finds the
+representatives and the probability that each element of the target set is
+associated with the representatives. We analyze the solution of our proposed
+optimization as a function of the regularization parameter. We show that when
+the two sets jointly partition into multiple groups, the solution of our
+proposed optimization program finds representatives from all groups and reveals
+clustering of the sets. In addition, we show that our proposed formulation can
+effectively deal with outliers. Our algorithm works with arbitrary
+dissimilarities, which can be asymmetric or violate the triangle inequality. To
+efficiently implement our proposed algorithm, we consider an Alternating
+Direction Method of Multipliers (ADMM) framework, which results in quadratic
+complexity in the problem size. We show that the ADMM implementation allows to
+parallelize the algorithm, hence further reducing the computational cost.
+Finally, by experiments on real-world datasets, we show that our proposed
+algorithm improves the state of the art on the two problems of scene
+categorization using representative images and time-series modeling and
+segmentation using representative models.

@@ -1,0 +1,12 @@
+In this paper we study the question of whether or not a static search tree
+should ever be unbalanced. We present several methods to restructure an
+unbalanced k-ary search tree $T$ into a new tree $R$ that preserves many of the
+properties of $T$ while having a height of $\log_k n +1$ which is one unit off
+of the optimal height. More specifically, we show that it is possible to ensure
+that the depth of the elements in $R$ is no more than their depth in $T$ plus
+at most $\log_k \log_k n +2$. At the same time it is possible to guarantee that
+the average access time $P(R)$ in tree $R$ is no more than the average access
+time $P(T)$ in tree $T$ plus $O(\log_k P(T))$. This suggests that for most
+applications, a balanced tree is always a better option than an unbalanced one
+since the balanced tree has similar average access time and much better worst
+case access time.

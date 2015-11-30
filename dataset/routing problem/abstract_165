@@ -1,0 +1,22 @@
+We study approximate distributed solutions to the weighted {\it
+all-pairs-shortest-paths} (APSP) problem in the CONGEST model. We obtain the
+following results.
+  $1.$ A deterministic $(1+o(1))$-approximation to APSP in $\tilde{O}(n)$
+rounds. This improves over the best previously known algorithm, by both
+derandomizing it and by reducing the running time by a $\Theta(\log n)$ factor.
+  In many cases, routing schemes involve relabeling, i.e., assigning new names
+to nodes and require that these names are used in distance and routing queries.
+It is known that relabeling is necessary to achieve running times of $o(n/\log
+n)$. In the relabeling model, we obtain the following results.
+  $2.$ A randomized $O(k)$-approximation to APSP, for any integer $k>1$,
+running in $\tilde{O}(n^{1/2+1/k}+D)$ rounds, where $D$ is the hop diameter of
+the network. This algorithm simplifies the best previously known result and
+reduces its approximation ratio from $O(k\log k)$ to $O(k)$. Also, the new
+algorithm uses uses labels of asymptotically optimal size, namely $O(\log n)$
+bits.
+  $3.$ A randomized $O(k)$-approximation to APSP, for any integer $k>1$,
+running in time $\tilde{O}((nD)^{1/2}\cdot n^{1/k}+D)$ and producing {\it
+compact routing tables} of size $\tilde{O}(n^{1/k})$. The node lables consist
+of $O(k\log n)$ bits. This improves on the approximation ratio of $\Theta(k^2)$
+for tables of that size achieved by the best previously known algorithm, which
+terminates faster, in $\tilde{O}(n^{1/2+1/k}+D)$ rounds.

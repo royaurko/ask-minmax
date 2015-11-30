@@ -1,0 +1,11 @@
+Suppose we have two trees on the same set of leaves, in which nodes are
+weighted such that children are heavier than their parents. We say a node from
+the first tree and a node from the second tree are induced together if they
+have a common leaf descendant. In this paper we describe data structures that
+efficiently support the following heaviest-induced-ancestor query: given a node
+from the first tree and a node from the second tree, find an induced pair of
+their ancestors with maximum combined weight. Our solutions are based on a
+geometric interpretation that enables us to find heaviest induced ancestors
+using range queries. We then show how to use these results to build an
+LZ-compressed index with which we can quickly find with high probability a
+longest substring common to the indexed string and a given pattern.

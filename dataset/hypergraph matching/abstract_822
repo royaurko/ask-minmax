@@ -1,0 +1,11 @@
+An algorithm is presented which produces the minimum cost bipartite matching
+between two sets of M points each, where the cost of matching two points is
+proportional to the minimum distance by which a particle could reach one point
+from the other while constrained to travel on a connected set of curves, or
+roads. Given any such roadmap, the algorithm obtains O(M log M) total runtime
+in terms of M, which is the best possible bound in the sense that any algorithm
+for minimal matching has runtime Omega(M log M). The algorithm is strongly
+polynomial and is based on a capacity-scaling approach to the [minimum] convex
+cost flow problem. The result generalizes the known Theta(M log M) complexity
+of computing optimal matchings between two sets of points on (i) a line
+segment, and (ii) a circle.

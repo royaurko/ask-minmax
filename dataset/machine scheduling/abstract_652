@@ -1,0 +1,18 @@
+In the {\em Musical Chairs} game $MC(n,m)$ a team of $n$ players plays
+against an adversarial {\em scheduler}. The scheduler wins if the game proceeds
+indefinitely, while termination after a finite number of rounds is declared a
+win of the team. At each round of the game each player {\em occupies} one of
+the $m$ available {\em chairs}. Termination (and a win of the team) is declared
+as soon as each player occupies a unique chair. Two players that simultaneously
+occupy the same chair are said to be {\em in conflict}. In other words,
+termination (and a win for the team) is reached as soon as there are no
+conflicts. The only means of communication throughout the game is this: At
+every round of the game, the scheduler selects an arbitrary nonempty set of
+players who are currently in conflict, and notifies each of them separately
+that it must move. A player who is thus notified changes its chair according to
+its deterministic program. As we show, for $m\ge 2n-1$ chairs the team has a
+winning strategy. Moreover, using topological arguments we show that this bound
+is tight. For $m\leq 2n-2$ the scheduler has a strategy that is guaranteed to
+make the game continue indefinitely and thus win. We also have some results on
+additional interesting questions. For example, if $m \ge 2n-1$ (so that the
+team can win), how quickly can they achieve victory?

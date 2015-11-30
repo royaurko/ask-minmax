@@ -1,0 +1,13 @@
+Courcelle's Theorem states that every problem definable in Monadic
+Second-Order logic can be solved in linear time on structures of bounded
+treewidth, for example, by constructing a tree automaton that recognizes or
+rejects a tree decomposition of the structure. Existing, optimized software
+like the MONA tool can be used to build the corresponding tree automata, which
+for bounded treewidth are of constant size. Unfortunately, the constants
+involved can become extremely large - every quantifier alternation requires a
+power set construction for the automaton. Here, the required space can become a
+problem in practical applications.
+  In this paper, we present a novel, direct approach based on model checking
+games, which avoids the expensive power set construction. Experiments with an
+implementation are promising, and we can solve problems on graphs where the
+automata-theoretic approach fails in practice.

@@ -1,0 +1,19 @@
+The growing amount of XML encoded data exchanged over the Internet increases
+the importance of XML based publish-subscribe (pub-sub) and content based
+routing systems. The input in such systems typically consists of a stream of
+XML documents and a set of user subscriptions expressed as XML queries. The
+pub-sub system then filters the published documents and passes them to the
+subscribers. Pub-sub systems are characterized by very high input ratios,
+therefore the processing time is critical. In this paper we propose a "pure
+hardware" based solution, which utilizes XPath query blocks on FPGA to solve
+the filtering problem. By utilizing the high throughput that an FPGA provides
+for parallel processing, our approach achieves drastically better throughput
+than the existing software or mixed (hardware/software) architectures. The
+XPath queries (subscriptions) are translated to regular expressions which are
+then mapped to FPGA devices. By introducing stacks within the FPGA we are able
+to express and process a wide range of path queries very efficiently, on a
+scalable environment. Moreover, the fact that the parser and the filter
+processing are performed on the same FPGA chip, eliminates expensive
+communication costs (that a multi-core system would need) thus enabling very
+fast and efficient pipelining. Our experimental evaluation reveals more than
+one order of magnitude improvement compared to traditional pub/sub systems.

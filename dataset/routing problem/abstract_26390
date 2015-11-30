@@ -1,0 +1,17 @@
+The Partially Observable Markov Decision Process has long been recognized as
+a rich framework for real-world planning and control problems, especially in
+robotics. However exact solutions in this framework are typically
+computationally intractable for all but the smallest problems. A well-known
+technique for speeding up POMDP solving involves performing value backups at
+specific belief points, rather than over the entire belief simplex. The
+efficiency of this approach, however, depends greatly on the selection of
+points. This paper presents a set of novel techniques for selecting informative
+belief points which work well in practice. The point selection procedure is
+combined with point-based value backups to form an effective anytime POMDP
+algorithm called Point-Based Value Iteration (PBVI). The first aim of this
+paper is to introduce this algorithm and present a theoretical analysis
+justifying the choice of belief selection technique. The second aim of this
+paper is to provide a thorough empirical comparison between PBVI and other
+state-of-the-art POMDP methods, in particular the Perseus algorithm, in an
+effort to highlight their similarities and differences. Evaluation is performed
+using both standard POMDP domains and realistic robotic tasks.

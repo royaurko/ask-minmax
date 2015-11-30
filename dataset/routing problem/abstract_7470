@@ -1,0 +1,20 @@
+There has been evidence that least-commitment planners can efficiently handle
+planning problems that involve difficult goal interactions. This evidence has
+led to the common belief that delayed-commitment is the "best" possible
+planning strategy. However, we recently found evidence that eager-commitment
+planners can handle a variety of planning problems more efficiently, in
+particular those with difficult operator choices. Resigned to the futility of
+trying to find a universally successful planning strategy, we devised a planner
+that can be used to study which domains and problems are best for which
+planning strategies. In this article we introduce this new planning algorithm,
+FLECS, which uses a FLExible Commitment Strategy with respect to plan-step
+orderings. It is able to use any strategy from delayed-commitment to
+eager-commitment. The combination of delayed and eager operator-ordering
+commitments allows FLECS to take advantage of the benefits of explicitly using
+a simulated execution state and reasoning about planning constraints. FLECS can
+vary its commitment strategy across different problems and domains, and also
+during the course of a single planning problem. FLECS represents a novel
+contribution to planning in that it explicitly provides the choice of which
+commitment strategy to use while planning. FLECS provides a framework to
+investigate the mapping from planning domains and problems to efficient
+planning strategies.

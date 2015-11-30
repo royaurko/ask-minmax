@@ -1,0 +1,17 @@
+Many data sources are naturally modeled by multiple weight assignments over a
+set of keys: snapshots of an evolving database at multiple points in time,
+measurements collected over multiple time periods, requests for resources
+served at multiple locations, and records with multiple numeric attributes.
+Over such vector-weighted data we are interested in aggregates with respect to
+one set of weights, such as weighted sums, and aggregates over multiple sets of
+weights such as the $L_1$ difference.
+  Sample-based summarization is highly effective for data sets that are too
+large to be stored or manipulated. The summary facilitates approximate
+processing queries that may be specified after the summary was generated.
+  Current designs, however, are geared for data sets where a single {\em
+scalar} weight is associated with each key.
+  We develop a sampling framework based on {\em coordinated weighted samples}
+that is suited for multiple weight assignments and obtain estimators that are
+{\em orders of magnitude tighter} than previously possible.
+  We demonstrate the power of our methods through an extensive empirical
+evaluation on diverse data sets ranging from IP network to stock quotes data.

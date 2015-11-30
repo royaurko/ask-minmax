@@ -1,0 +1,16 @@
+Let $k$ be a positive integer and $G=(V,E)$ be a graph of minimum degree at
+least $k-1$. A function $f:V\rightarrow \{-1,1\}$ is called a \emph{signed
+$k$-dominating function} of $G$ if $\sum_{u\in N_G[v]}f(u)\geq k$ for all $v\in
+V$. The \emph{signed $k$-domination number} of $G$ is the minimum value of
+$\sum_{v\in V}f(v)$ taken over all signed $k$-dominating functions of $G$. The
+\emph{signed total $k$-dominating function} and \emph{signed total
+$k$-domination number} of $G$ can be similarly defined by changing the closed
+neighborhood $N_G[v]$ to the open neighborhood $N_G(v)$ in the definition. The
+\emph{upper signed $k$-domination number} is the maximum value of $\sum_{v\in
+V}f(v)$ taken over all \emph{minimal} signed $k$-dominating functions of $G$.
+In this paper, we study these graph parameters from both algorithmic complexity
+and graph-theoretic perspectives. We prove that for every fixed $k\geq 1$, the
+problems of computing these three parameters are all \NP-hard. We also present
+sharp lower bounds on the signed $k$-domination number and signed total
+$k$-domination number for general graphs in terms of their minimum and maximum
+degrees, generalizing several known results about signed domination.

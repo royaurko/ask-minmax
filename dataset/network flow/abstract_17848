@@ -1,0 +1,19 @@
+Properly locating sensor nodes is an important building block for a large
+subset of wireless sensor networks (WSN) applications. As a result, the
+performance of the WSN degrades significantly when misbehaving nodes report
+false location and distance information in order to fake their actual location.
+In this paper we propose a general distributed deterministic protocol for
+accurate identification of faking sensors in a WSN. Our scheme does \emph{not}
+rely on a subset of \emph{trusted} nodes that are not allowed to misbehave and
+are known to every node in the network. Thus, any subset of nodes is allowed to
+try faking its position. As in previous approaches, our protocol is based on
+distance evaluation techniques developed for WSN. On the positive side, we show
+that when the received signal strength (RSS) technique is used, our protocol
+handles at most $\lfloor \frac{n}{2} \rfloor-2$ faking sensors. Also, when the
+time of flight (ToF) technique is used, our protocol manages at most $\lfloor
+\frac{n}{2} \rfloor - 3$ misbehaving sensors. On the negative side, we prove
+that no deterministic protocol can identify faking sensors if their number is
+$\lceil \frac{n}{2}\rceil -1$. Thus our scheme is almost optimal with respect
+to the number of faking sensors. We discuss application of our technique in the
+trusted sensor model. More precisely our results can be used to minimize the
+number of trusted sensors that are needed to defeat faking ones.

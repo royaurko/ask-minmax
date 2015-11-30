@@ -1,0 +1,15 @@
+Sampling-based motion planners are an effective means for generating
+collision-free motion paths. However, the quality of these motion paths (with
+respect to quality measures such as path length, clearance, smoothness or
+energy) is often notoriously low, especially in high-dimensional configuration
+spaces. We introduce a simple algorithm for merging an arbitrary number of
+input motion paths into a hybrid output path of superior quality, for a broad
+and general formulation of path quality. Our approach is based on the
+observation that the quality of certain sub-paths within each solution may be
+higher than the quality of the entire path. A dynamic-programming algorithm,
+which we recently developed for comparing and clustering multiple motion paths,
+reduces the running time of the merging algorithm significantly. We tested our
+algorithm in motion-planning problems with up to 12 degrees of freedom. We show
+that our algorithm is able to merge a handful of input paths produced by
+several different motion planners to produce output paths of much higher
+quality.

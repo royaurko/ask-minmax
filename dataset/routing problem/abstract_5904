@@ -1,0 +1,17 @@
+We present the first fully polynomial approximation schemes for the maximum
+weighted (uncapacitated or capacitated) $b$--Matching problem for nonbipartite
+graphs that run in time (near) linear in the number of edges, that is, given
+any $\delta>0$ the algorithm produces a $(1-\delta)$ approximation in $O(m
+\poly(\delta^{-1},\log n))$ time. We provide fractional solutions for the
+standard linear programming formulations for these problems and subsequently
+also provide fully polynomial (near) linear time approximation schemes for
+rounding the fractional solutions. Through these problems as a vehicle, we also
+present several ideas in the context of solving linear programs approximately
+using fast primal-dual algorithms. First, we show that approximation algorithms
+can be used to reduce the width of the formulation, and as a consequence we
+induce faster convergence. Second, even though the dual of these problems have
+exponentially many variables and an efficient exact computation of dual weights
+is infeasible, we can efficiently compute and use a sparse approximation of the
+dual weights using a combination of (i) adding perturbation to the constraints
+of the polytope and (ii) amplification followed by thresholding of the dual
+weights.

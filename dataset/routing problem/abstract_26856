@@ -1,0 +1,13 @@
+We consider the problem of multiclass road sign detection using a
+classification function with multiplicative kernel comprised from two kernels.
+We show that problems of detection and within-foreground classification can be
+jointly solved by using one kernel to measure object-background differences and
+another one to account for within-class variations. The main idea behind this
+approach is that road signs from different foreground variations can share
+features that discriminate them from backgrounds. The classification function
+training is accomplished using SVM, thus feature sharing is obtained through
+support vector sharing. Training yields a family of linear detectors, where
+each detector corresponds to a specific foreground training sample. The
+redundancy among detectors is alleviated using k-medoids clustering. Finally,
+we report detection and classification results on a set of road sign images
+obtained from a camera on a moving vehicle.

@@ -1,0 +1,17 @@
+Isotonic regression is a nonparametric approach for fitting monotonic models
+to data that has been widely studied from both theoretical and practical
+perspectives. However, this approach encounters computational and statistical
+overfitting issues in higher dimensions. To address both concerns, we present
+an algorithm, which we term Isotonic Recursive Partitioning (IRP), for isotonic
+regression based on recursively partitioning the covariate space through
+solution of progressively smaller "best cut" subproblems. This creates a
+regularized sequence of isotonic models of increasing model complexity that
+converges to the global isotonic regression solution. The models along the
+sequence are often more accurate than the unregularized isotonic regression
+model because of the complexity control they offer. We quantify this complexity
+control through estimation of degrees of freedom along the path. Success of the
+regularized models in prediction and IRPs favorable computational properties
+are demonstrated through a series of simulated and real data experiments. We
+discuss application of IRP to the problem of searching for gene--gene
+interactions and epistasis, and demonstrate it on data from genome-wide
+association studies of three common diseases.

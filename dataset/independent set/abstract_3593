@@ -1,0 +1,25 @@
+We consider linear regression in the high-dimensional regime where the number
+of observations $n$ is smaller than the number of parameters $p$. A very
+successful approach in this setting uses $\ell_1$-penalized least squares
+(a.k.a. the Lasso) to search for a subset of $s_0< n$ parameters that best
+explain the data, while setting the other parameters to zero. Considerable
+amount of work has been devoted to characterizing the estimation and model
+selection problems within this approach.
+  In this paper we consider instead the fundamental, but far less understood,
+question of \emph{statistical significance}. More precisely, we address the
+problem of computing p-values for single regression coefficients.
+  On one hand, we develop a general upper bound on the minimax power of tests
+with a given significance level. On the other, we prove that this upper bound
+is (nearly) achievable through a practical procedure in the case of random
+design matrices with independent entries. Our approach is based on a debiasing
+of the Lasso estimator. The analysis builds on a rigorous characterization of
+the asymptotic distribution of the Lasso estimator and its debiased version.
+Our result holds for optimal sample size, i.e., when $n$ is at least on the
+order of $s_0 \log(p/s_0)$.
+  We generalize our approach to random design matrices with i.i.d. Gaussian
+rows $x_i\sim N(0,\Sigma)$. In this case we prove that a similar distributional
+characterization (termed `standard distributional limit') holds for $n$ much
+larger than $s_0(\log p)^2$.
+  Finally, we show that for optimal sample size, $n$ being at least of order
+$s_0 \log(p/s_0)$, the standard distributional limit for general Gaussian
+designs can be derived from the replica heuristics in statistical physics.

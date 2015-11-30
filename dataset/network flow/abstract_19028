@@ -1,0 +1,17 @@
+Being able to design genetic regulatory networks (GRNs) to achieve a desired
+cellular function is one of the main goals of synthetic biology. However,
+determining minimal GRNs that produce desired time-series behaviors is
+non-trivial. In this paper, we propose a 'top-down' approach to evolving small
+GRNs and then use these to recursively boot-strap the identification of larger,
+more complex, modular GRNs. We start with relatively dense GRNs and then use
+differential evolution (DE) to evolve interaction coefficients. When the target
+dynamical behavior is found embedded in a dense GRN, we narrow the focus of the
+search and begin aggressively pruning out excess interactions at the end of
+each generation. We first show that the method can quickly rediscover known
+small GRNs for a toggle switch and an oscillatory circuit. Next we include
+these GRNs as non-evolvable subnetworks in the subsequent evolution of more
+complex, modular GRNs. Successful solutions found in canonical DE where we
+truncated small interactions to zero, with or without an interaction penalty
+term, invariably contained many excess interactions. In contrast, by
+incorporating aggressive pruning and the penalty term, the DE was able to find
+minimal or nearly minimal GRNs in all test problems.

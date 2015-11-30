@@ -1,0 +1,19 @@
+The problem of error control in random linear network coding is addressed
+from a matrix perspective that is closely related to the subspace perspective
+of K\"otter and Kschischang. A large class of constant-dimension subspace codes
+is investigated. It is shown that codes in this class can be easily constructed
+from rank-metric codes, while preserving their distance properties. Moreover,
+it is shown that minimum distance decoding of such subspace codes can be
+reformulated as a generalized decoding problem for rank-metric codes where
+partial information about the error is available. This partial information may
+be in the form of erasures (knowledge of an error location but not its value)
+and deviations (knowledge of an error value but not its location). Taking
+erasures and deviations into account (when they occur) strictly increases the
+error correction capability of a code: if $\mu$ erasures and $\delta$
+deviations occur, then errors of rank $t$ can always be corrected provided that
+$2t \leq d - 1 + \mu + \delta$, where $d$ is the minimum rank distance of the
+code. For Gabidulin codes, an important family of maximum rank distance codes,
+an efficient decoding algorithm is proposed that can properly exploit erasures
+and deviations. In a network coding application where $n$ packets of length $M$
+over $F_q$ are transmitted, the complexity of the decoding algorithm is given
+by $O(dM)$ operations in an extension field $F_{q^n}$.

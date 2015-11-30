@@ -1,0 +1,20 @@
+Cloud computing providers are now offering their unused resources for leasing
+in the spot market, which has been considered the first step towards a
+full-fledged market economy for computational resources. Spot instances are
+virtual machines (VMs) available at lower prices than their standard on-demand
+counterparts. These VMs will run for as long as the current price is lower than
+the maximum bid price users are willing to pay per hour. Spot instances have
+been increasingly used for executing compute-intensive applications. In spite
+of an apparent economical advantage, due to an intermittent nature of biddable
+resources, application execution times may be prolonged or they may not finish
+at all. This paper proposes a resource allocation strategy that addresses the
+problem of running compute-intensive jobs on a pool of intermittent virtual
+machines, while also aiming to run applications in a fast and economical way.
+To mitigate potential unavailability periods, a multifaceted fault-aware
+resource provisioning policy is proposed. Our solution employs price and
+runtime estimation mechanisms, as well as three fault tolerance techniques,
+namely checkpointing, task duplication and migration. We evaluate our
+strategies using trace-driven simulations, which take as input real price
+variation traces, as well as an application trace from the Parallel Workload
+Archive. Our results demonstrate the effectiveness of executing applications on
+spot instances, respecting QoS constraints, despite occasional failures.

@@ -1,0 +1,15 @@
+We consider the k-disjoint-clique problem. The input is an undirected graph G
+in which the nodes represent data items, and edges indicate a similarity
+between the corresponding items. The problem is to find within the graph k
+disjoint cliques that cover the maximum number of nodes of G. This problem may
+be understood as a general way to pose the classical `clustering' problem. In
+clustering, one is given data items and a distance function, and one wishes to
+partition the data into disjoint clusters of data items, such that the items in
+each cluster are close to each other. Our formulation additionally allows
+`noise' nodes to be present in the input data that are not part of any of the
+cliques. The k-disjoint-clique problem is NP-hard, but we show that a convex
+relaxation can solve it in polynomial time for input instances constructed in a
+certain way. The input instances for which our algorithm finds the optimal
+solution consist of k disjoint large cliques (called `planted cliques') that
+are then obscured by noise edges and noise nodes inserted either at random or
+by an adversary.

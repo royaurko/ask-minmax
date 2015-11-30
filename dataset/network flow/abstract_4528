@@ -1,0 +1,13 @@
+We show preliminary results for the performance of Network Coded TCP (CTCP)
+over large latency networks. While CTCP performs very well in networks with
+relatively short RTT, the slow-start mechanism currently employed does not
+adequately fill the available bandwidth when the RTT is large. Regardless, we
+show that CTCP still outperforms current TCP variants (i.e., Cubic TCP and
+Hybla TCP) for high packet loss rates (e.g., >2.5%). We then explore the
+possibility of a modified congestion control mechanism based off of H-TCP that
+opens the congestion window quickly to overcome the challenges of large latency
+networks. Preliminary results are provided that show the combination of network
+coding with an appropriate congestion control algorithm can provide gains on
+the order of 20 times that of existing TCP variants. Finally, we provide a
+discussion of the future work needed to increase CTCP's performance in these
+networks.

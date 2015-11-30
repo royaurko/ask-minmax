@@ -1,0 +1,21 @@
+There are several approaches to describe flows with particles e.g.
+Lattice-Gas Automata (LGA), Lattice-Boltzmann method (LBM) or smoothed particle
+hydrodynamics (SPH). These approaches do not use fixed grids on which the
+Navier-Stokes equations are solved via e.g. finite volume method. The flow is
+simulated using a multitude of particles or particle density distributions,
+which interacts and due to statistical laws and an even more fundamental
+approach than the Navier-Stokes equation, the averaged flow variables can be
+derived. After a short summary of the most popular particle methods the new
+DMPC (Dissipative Multiple Particles Collision) approach will be presented. The
+DMPC-model eliminates some of the weak points of the established particle
+methods and shows high potential for more accurate CFD solution especially in
+areas where standard CFD tools still have problems (e.g. aero-acoustics). The
+DMPC-model deals with discrete circular particles and calculates the detailed
+collision process (micro scale) of several overlapping particles. With
+thermodynamic, statistical and similarity laws global (large scale) flow
+variables can be derived. The model is so far 2d and the particles can move in
+every direction in the 2d plane depending on the forces acting on it. The
+possible overlap between neighbouring particles and multi-particle interactions
+are important features of this model. A freeware software is developed and
+published under www.cfd2k.eu. There the executable, the user guide and several
+exemplary cases can be downloaded.

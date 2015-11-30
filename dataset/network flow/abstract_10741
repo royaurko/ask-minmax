@@ -1,0 +1,21 @@
+Researchers have proposed formal definitions of quantitative information flow
+based on information theoretic notions such as the Shannon entropy, the min
+entropy, the guessing entropy, and channel capacity. This paper investigates
+the hardness and possibilities of precisely checking and inferring quantitative
+information flow according to such definitions.
+  We prove that, even for just comparing two programs on which has the larger
+flow, none of the definitions is a k-safety property for any k, and therefore
+is not amenable to the self-composition technique that has been successfully
+applied to precisely checking non-interference. We also show a complexity
+theoretic gap with non-interference by proving that, for loop-free boolean
+programs whose non-interference is coNP-complete, the comparison problem is
+#P-hard for all of the definitions.
+  For positive results, we show that universally quantifying the distribution
+in the comparison problem, that is, comparing two programs according to the
+entropy based definitions on which has the larger flow for all distributions,
+is a 2-safety problem in general and is coNP-complete when restricted for
+loop-free boolean programs. We prove this by showing that the problem is
+equivalent to a simple relation naturally expressing the fact that one program
+is more secure than the other. We prove that the relation also refines the
+channel-capacity based definition, and that it can be precisely checked via the
+self-composition as well as the "interleaved" self-composition technique.

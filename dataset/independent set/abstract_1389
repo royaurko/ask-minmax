@@ -1,0 +1,13 @@
+In this paper we address the problem of visual quality of images
+reconstructed from block-wise random projections. Independent reconstruction of
+the blocks can severely affect visual quality, by displaying artifacts along
+block borders. We propose a method to enforce smoothness across block borders
+by modifying the sensing and reconstruction process so as to employ partially
+overlapping blocks. The proposed algorithm accomplishes this by computing a
+fast preview from the blocks, whose purpose is twofold. On one hand, it allows
+to enforce a set of constraints to drive the reconstruction algorithm towards a
+smooth solution, imposing the similarity of block borders. On the other hand,
+the preview is used as a predictor of the entire block, allowing to recover the
+prediction error, only. The quality improvement over the result of independent
+reconstruction can be easily assessed both visually and in terms of PSNR and
+SSIM index.

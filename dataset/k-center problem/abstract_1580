@@ -1,0 +1,18 @@
+The design of digital filters is a fundamental process in the context of
+digital signal processing. The purpose of this paper is to study the use of
+$\lp$ norms (for $2 < p < \infty$) as design criteria for digital filters, and
+to introduce a set of algorithms for the design of Finite (FIR) and Infinite
+(IIR) Impulse Response digital filters based on the Iterative Reweighted Least
+Squares (IRLS) algorithm. The proposed algorithms rely on the idea of breaking
+the $\lp$ filter design problem into a sequence of approximations rather than
+solving the original $\lp$ problem directly. It is shown that one can
+efficiently design filters that arbitrarily approximate a desired $\lp$
+solution (for $2 < p < \infty$) including the commonly used $l_\infty$ (or
+minimax) design problem. A method to design filters with different norms in
+different bands is presented (allowing the user for better control of the
+signal and noise behavior per band). Among the main contributions of this work
+is a method for the design of {\it magnitude} $\lp$ IIR filters. Experimental
+results show that the algorithms in this work are robust and efficient,
+improving over traditional off-the-shelf optimization tools. The group of
+proposed algorithms form a flexible collection that offers robustness and
+efficiency for a wide variety of digital filter design applications.

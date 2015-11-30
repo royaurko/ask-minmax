@@ -1,0 +1,25 @@
+Camouflaging data by generating fake information is a well-known obfuscation
+technique for protecting data privacy. In this paper, we focus on a very
+sensitive and increasingly exposed type of data: location data. There are two
+main scenarios in which fake traces are of extreme value to preserve location
+privacy: publishing datasets of location trajectories, and using location-based
+services. Despite advances in protecting (location) data privacy, there is no
+quantitative method to evaluate how realistic a synthetic trace is, and how
+much utility and privacy it provides in each scenario. Also, the lack of a
+methodology to generate privacy-preserving fake traces is evident. In this
+paper, we fill this gap and propose the first statistical metric and model to
+generate fake location traces such that both the utility of data and the
+privacy of users are preserved. We build upon the fact that, although
+geographically they visit distinct locations, people have strongly semantically
+similar mobility patterns, for example, their transition pattern across
+activities (e.g., working, driving, staying at home) is similar. We define a
+statistical metric and propose an algorithm that automatically discovers the
+hidden semantic similarities between locations from a bag of real location
+traces as seeds, without requiring any initial semantic annotations. We
+guarantee that fake traces are geographically dissimilar to their seeds, so
+they do not leak sensitive location information. We also protect contributors
+to seed traces against membership attacks. Interleaving fake traces with mobile
+users' traces is a prominent location privacy defense mechanism. We
+quantitatively show the effectiveness of our methodology in protecting against
+localization inference attacks while preserving utility of sharing/publishing
+traces.

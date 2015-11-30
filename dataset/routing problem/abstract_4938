@@ -1,0 +1,20 @@
+A matrix framework is presented for the solution of ODEs, including initial-,
+boundary and inner-value problems. The framework enables the solution of the
+ODEs for arbitrary nodes. There are four key issues involved in the formulation
+of the framework: the use of a Lanczos process with complete
+reorthogonalization for the synthesis of discrete orthonormal polynomials (DOP)
+orthogonal over arbitrary nodes within the unit circle on the complex plane; a
+consistent definition of a local differentiating matrix which implements a
+uniform degree of approximation over the complete support --- this is
+particularly important for initial and boundary value problems; a method of
+computing a set of constraints as a constraining matrix and a method to
+generate orthonormal admissible functions from the constraints and a DOP
+matrix; the formulation of the solution to the ODEs as a least squares problem.
+The computation of the solution is a direct matrix method. The worst case
+maximum number of computations required to obtain the solution is known
+a-priori. This makes the method, by definition, suitable for real-time
+applications.
+  The functionality of the framework is demonstrated using a selection of
+initial value problems, Sturm-Liouville problems and a classical Engineering
+boundary value problem. The framework is, however, generally formulated and is
+applicable to countless differential equation problems.

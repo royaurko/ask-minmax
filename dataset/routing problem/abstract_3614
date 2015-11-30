@@ -1,0 +1,18 @@
+The following optimization problem was introduced in \cite{gutinDAM}, where
+it was motivated by a real-world problem in defence logistics. Suppose we are
+given a pair of digraphs $D,H$ and a positive cost $c_i(u)$ for each $u\in
+V(D)$ and $i\in V(H)$. The cost of a homomorphism $f$ of $D$ to $H$ is
+$\sum_{u\in V(D)}c_{f(u)}(u)$. For a fixed digraph $H$, the minimum cost
+homomorphism problem for $H$, MinHOMP($H$), is stated as follows: For an input
+digraph $D$ and costs $c_i(u)$ for each $u\in V(D)$ and $i\in V(H)$, verify
+whether there is a homomorphism of $D$ to $H$ and, if it exists, find such a
+homomorphism of minimum cost.
+  We obtain dichotomy classifications of the computational complexity of the
+list homomorphism problem and MinHOMP($H$), when $H$ is a semicomplete digraph
+(a digraph in which every two vertices have at least one arc between them). Our
+dichotomy for the list homomorphism problem coincides with the one obtained by
+Bang-Jensen, Hell and MacGillivray in 1988 for the homomorphism problem when
+$H$ is a semicomplete digraph: both problems are polynomial solvable if $H$ has
+at most one cycle; otherwise, both problems are NP-complete. The dichotomy for
+\MiP is different: the problem is polynomial time solvable if $H$ is acyclic or
+$H$ is a cycle of length 2 or 3; otherwise, the problem is NP-hard.

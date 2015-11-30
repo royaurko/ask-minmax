@@ -1,0 +1,26 @@
+The leader election task calls for all nodes of a network to agree on a
+single node. If the nodes of the network are anonymous, the task of leader
+election is formulated as follows: every node $v$ of the network must output a
+simple path, coded as a sequence of port numbers, such that all these paths end
+at a common node, the leader. In this paper, we study deterministic leader
+election in anonymous trees.
+  Our aim is to establish tradeoffs between the allocated time $\tau$ and the
+amount of information that has to be given $\textit{a priori}$ to the nodes to
+enable leader election in time $\tau$ in all trees for which leader election in
+this time is at all possible. Following the framework of $\textit{algorithms
+with advice}$, this information (a single binary string) is provided to all
+nodes at the start by an oracle knowing the entire tree. The length of this
+string is called the $\textit{size of advice}$. For an allocated time $\tau$,
+we give upper and lower bounds on the minimum size of advice sufficient to
+perform leader election in time $\tau$.
+  We consider $n$-node trees of diameter $diam \leq D$. While leader election
+in time $diam$ can be performed without any advice, for time $diam-1$ we give
+tight upper and lower bounds of $\Theta (\log D)$. For time $diam-2$ we give
+tight upper and lower bounds of $\Theta (\log D)$ for even values of $diam$,
+and tight upper and lower bounds of $\Theta (\log n)$ for odd values of $diam$.
+For the time interval $[\beta \cdot diam, diam-3]$ for constant $\beta >1/2$,
+we prove an upper bound of $O(\frac{n\log n}{D})$ and a lower bound of
+$\Omega(\frac{n}{D})$, the latter being valid whenever $diam$ is odd or when
+the time is at most $diam-4$. Finally, for time $\alpha \cdot diam$ for any
+constant $\alpha <1/2$ (except for the case of very small diameters), we give
+tight upper and lower bounds of $\Theta (n)$.

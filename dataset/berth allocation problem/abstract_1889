@@ -1,0 +1,21 @@
+This paper studies the minimal controllability problem (MCP), i.e., the
+problem of, given a linear time-invariant system, finding the sparsest input
+vector that ensures system's controllability. We show that the MCP can be
+exactly solved by (polynomially) reducing it to the minimum set covering
+problem, when the system dynamics matrix A is simple and the left-eigenbasis
+associated to A is known. In addition, we also show that the approximated
+solutions to the minimum set covering problem lead to feasible (sub-optimal)
+solutions to the MCP; hence, bounds on the optimality gap can be immediately
+obtained from existing literature on approximation algorithms to the minimum
+set covering problem. Further, we prove that under the same assumption the
+decision version of the minimal controllability problem is NP-complete, i.e.,
+there exists an input vector that ensures system's controllability and at most
+a prescribed number of nonzero entries. Another contribution is the fact that
+we analyze the relation of the MCP with its structural counterpart, the minimal
+structural controllability problem (MSCP) which is known to admit a polynomial
+complexity solution procedure. We provide an illustrative example where the
+solution to the MCP is found using the main results and reductions developed in
+this paper; in particular, we show that the solution to the MSCP is not a
+solution to MCP even when the dynamic matrix considered to the MCP is simple;
+hence, disproving the general belief that a solution to MSCP is a solution to
+MCP when the dynamic matrix is simple, and the eigenbasis structure known.

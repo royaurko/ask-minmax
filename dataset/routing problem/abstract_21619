@@ -1,0 +1,25 @@
+Let P be a set of points in the plane, representing directional antennas of
+angle a and range r. The coverage area of the antenna at point p is a circular
+sector of angle a and radius r, whose orientation is adjustable. For a given
+orientation assignment, the induced symmetric communication graph (SCG) of P is
+the undirected graph that contains the edge (u,v) iff v lies in u's sector and
+vice versa. In this paper we ask what is the smallest angle a for which there
+exists an integer n=n(a), such that for any set P of n antennas of angle a and
+unbounded range, one can orient the antennas so that the induced SCG is
+connected, and the union of the corresponding wedges is the entire plane. We
+show that the answer to this problem is a=\pi/2, for which n=4. Moreover, we
+prove that if Q_1 and Q_2 are quadruplets of antennas of angle \pi/2 and
+unbounded range, separated by a line, to which one applies the above
+construction, independently, then the induced SCG of Q_1 \cup Q_2 is connected.
+This latter result enables us to apply the construction locally, and to solve
+the following two further problems.
+  In the first problem, we are given a connected unit disk graph (UDG),
+corresponding to a set P of omni-directional antennas of range 1, and the goal
+is to replace these antennas by directional antennas of angle \pi/2 and range
+r=O(1) and to orient them, such that the induced SCG is connected, and,
+moreover, is an O(1)-spanner of the UDG, w.r.t. hop distance. In our solution r
+= 14\sqrt{2} and the spanning ratio is 8. In the second problem, we are given a
+set P of directional antennas of angle \pi/2 and adjustable range. The goal is
+to assign to each antenna p, an orientation and a range r_p, such that the
+resulting SCG is connected, and \sum_{p \in P} r_p^\beta is minimized, where
+\beta \ge 1 is a constant. We present an O(1)-approximation algorithm.

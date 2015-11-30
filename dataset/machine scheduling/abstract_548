@@ -1,0 +1,17 @@
+Predictive models are often used for real-time decision making. However,
+typical machine learning techniques ignore feature evaluation cost, and focus
+solely on the accuracy of the machine learning models obtained utilizing all
+the features available. We develop algorithms and indexes to support
+cost-sensitive prediction, i.e., making decisions using machine learning models
+taking feature evaluation cost into account. Given an item and a online
+computation cost (i.e., time) budget, we present two approaches to return an
+appropriately chosen machine learning model that will run within the specified
+time on the given item. The first approach returns the optimal machine learning
+model, i.e., one with the highest accuracy, that runs within the specified
+time, but requires significant up-front precomputation time. The second
+approach returns a possibly sub- optimal machine learning model, but requires
+little up-front precomputation time. We study these two algorithms in detail
+and characterize the scenarios (using real and synthetic data) in which each
+performs well. Unlike prior work that focuses on a narrow domain or a specific
+algorithm, our techniques are very general: they apply to any cost-sensitive
+prediction scenario on any machine learning algorithm.

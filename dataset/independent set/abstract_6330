@@ -1,0 +1,12 @@
+ADF95 is a tool to automatically calculate numerical first derivatives for
+any mathematical expression as a function of user defined independent
+variables. Accuracy of derivatives is achieved within machine precision. ADF95
+may be applied to any FORTRAN 77/90/95 conforming code and requires minimal
+changes by the user. It provides a new derived data type that holds the value
+and derivatives and applies forward differencing by overloading all FORTRAN
+operators and intrinsic functions. An efficient indexing technique leads to a
+reduced memory usage and a substantially increased performance gain over other
+available tools with operator overloading. This gain is especially pronounced
+for sparse systems with large number of independent variables. A wide class of
+numerical simulations, e.g., those employing implicit solvers, can profit from
+ADF95.

@@ -1,0 +1,16 @@
+Label propagation has proven to be a fast method for detecting communities in
+large complex networks. Recent developments have also improved the accuracy of
+the approach, however, a general algorithm is still an open issue. We present
+an advanced label propagation algorithm that combines two unique strategies of
+community formation, namely, defensive preservation and offensive expansion of
+communities. Two strategies are combined in a hierarchical manner, to
+recursively extract the core of the network, and to identify whisker
+communities. The algorithm was evaluated on two classes of benchmark networks
+with planted partition and on almost 25 real-world networks ranging from
+networks with tens of nodes to networks with several tens of millions of edges.
+It is shown to be comparable to the current state-of-the-art community
+detection algorithms and superior to all previous label propagation algorithms,
+with comparable time complexity. In particular, analysis on real-world networks
+has proven that the algorithm has almost linear complexity,
+$\mathcal{O}(m^{1.19})$, and scales even better than basic label propagation
+algorithm ($m$ is the number of edges in the network).

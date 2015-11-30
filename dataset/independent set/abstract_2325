@@ -1,0 +1,17 @@
+Athena is the ATLAS off-line software framework, based upon the GAUDI
+architecture from LHCb. As part of ATLAS' continuing efforts to enhance and
+customise the architecture to meet our needs, we have developed a data object
+description tool suite and service for Athena. The aim is to provide a set of
+tools to describe, manage, integrate and use the Event Data Model at a design
+level according to the concepts of the Athena framework (use of patterns,
+relationships, ...). Moreover, to ensure stability and reusability this must be
+fully independent from the implementation details. After an extensive
+investigation into the many options, we have developed a language grammar based
+upon a description language (IDL, ODL) to provide support for object
+integration in Athena. We have then developed a compiler front end based upon
+this language grammar, JavaCC, and a Java Reflection API-like interface. We
+have then used these tools to develop several compiler back ends which meet
+specific needs in ATLAS such as automatic generation of object converters, and
+data object scripting interfaces. We present here details of our work and
+experience to date on the Athena Definition Language and Athena Data
+Dictionary.

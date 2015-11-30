@@ -1,0 +1,23 @@
+X-ray tomographic image reconstruction consists of determining an object
+function from its projections. In many applications such as non-destructive
+testing, we look for a fault region (air) in a homogeneous, known background
+(metal). The image reconstruction problem then becomes the determination of the
+shape of the default region. Two approaches can be used: modeling the image as
+a binary Markov random field and estimating the pixels of the image, or
+modeling the shape of the fault and estimating it directly from the
+projections. In this work we model the fault shape by a deformable polygonal
+disc or a deformable polyhedral volume and propose a new method for directly
+estimating the coordinates of its vertices from a very limited number of its
+projections. The basic idea is not new, but in other competing methods, in
+general, the fault shape is modeled by a small number of parameters (polygonal
+shapes with very small number of vertices, snakes and deformable templates) and
+these parameters are estimated either by least squares or by maximum likelihood
+methods. We propose modeling the shape of the fault region by a polygon with a
+large number of vertices, allowing modeling of nearly any shape and estimation
+of its vertices' coordinates directly from the projections by defining the
+solution as the minimizer of an appropriate regularized criterion. This
+formulation can also be interpreted as a maximum a posteriori (MAP) estimate in
+a Bayesian estimation framework. To optimize this criterion we use either a
+simulated annealing or a special purpose deterministic algorithm based on
+iterated conditional modes (ICM). The simulated results are very encouraging,
+especially when the number and the angles of projections are very limited.

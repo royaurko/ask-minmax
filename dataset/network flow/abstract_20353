@@ -1,0 +1,17 @@
+An improved diffuse boundary condition, where the number flux of the incoming
+real molecules on the wall surface is calculated using the molecular variables
+rather than the cell's macroscopic variables, is proposed to eliminate the
+unphysical density drift, which was observed in the previous DSBGK simulation
+of the lid-driven problem but disappears in the channel flow problem because of
+the density constraint imposed at the open boundaries. Consequently, the
+efficient time-average process is valid for sampling all quantities of interest
+in closed as well as open problems. When the driven velocity of the lid-driven
+problem is only one micrometer per second that is realistic in the
+micro-electro-mechanical systems or pore-scale flows of the shale gas, we
+suggest to use the original boundary condition because the density drift during
+a very long time interval becomes unperceivable when the perturbation is tiny.
+Thus, the original diffuse boundary condition, which contains much less
+stochastic noise than the improved one, is still an advisable choice in closed
+problems with tiny perturbation and in open problems unless the density drift
+occurs and fails the goal of the simulations making the use of the improved
+boundary condition necessary.

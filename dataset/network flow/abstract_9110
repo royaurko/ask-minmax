@@ -1,0 +1,19 @@
+Computing shortest paths is a fundamental primitive for several social
+network applications including socially-sensitive ranking, location-aware
+search, social auctions and social network privacy. Since these applications
+compute paths in response to a user query, the goal is to minimize latency
+while maintaining feasible memory requirements. We present ASAP, a system that
+achieves this goal by exploiting the structure of social networks.
+  ASAP preprocesses a given network to compute and store a partial shortest
+path tree (PSPT) for each node. The PSPTs have the property that for any two
+nodes, each edge along the shortest path is with high probability contained in
+the PSPT of at least one of the nodes. We show that the structure of social
+networks enable the PSPT of each node to be an extremely small fraction of the
+entire network; hence, PSPTs can be stored efficiently and each shortest path
+can be computed extremely quickly.
+  For a real network with 5 million nodes and 69 million edges, ASAP computes a
+shortest path for most node pairs in less than 49 microseconds per pair. ASAP,
+unlike any previous technique, also computes hundreds of paths (along with
+corresponding distances) between any node pair in less than 100 microseconds.
+Finally, ASAP admits efficient implementation on distributed programming
+frameworks like MapReduce.

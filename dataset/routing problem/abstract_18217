@@ -1,0 +1,18 @@
+Continuous-domain visual signals are usually captured as discrete (digital)
+images. This operation is not invertible in general, in the sense that the
+continuous-domain signal cannot be exactly reconstructed based on the discrete
+image, unless it satisfies certain constraints (\emph{e.g.}, bandlimitedness).
+In this paper, we study the problem of recovering shape images with smooth
+boundaries from a set of samples. Thus, the reconstructed image is constrained
+to regenerate the same samples (consistency), as well as forming a shape
+(bilevel) image. We initially formulate the reconstruction technique by
+minimizing the shape perimeter over the set of consistent binary shapes. Next,
+we relax the non-convex shape constraint to transform the problem into
+minimizing the total variation over consistent non-negative-valued images. We
+also introduce a requirement (called reducibility) that guarantees equivalence
+between the two problems. We illustrate that the reducibility property
+effectively sets a requirement on the minimum sampling density. One can draw
+analogy between the reducibility property and the so-called restricted isometry
+property (RIP) in compressed sensing which establishes the equivalence of the
+$\ell_0$ minimization with the relaxed $\ell_1$ minimization. We also evaluate
+the performance of the relaxed alternative in various numerical experiments.

@@ -1,0 +1,12 @@
+A Green's function based solver for the modified Bessel equation has been
+developed with the primary motivation of solving the Poisson equation in
+cylindrical geometries. The method is implemented using a Discrete Hankel
+Transform and a Green's function based on the modified Bessel functions of the
+first and second kind. The computation of these Bessel functions has been
+implemented to avoid scaling problems due to their exponential and singular
+behavior, allowing the method to be used for large order problems, as would
+arise in solving the Poisson equation with a dense azimuthal grid. The method
+has been tested on monotonically decaying and oscillatory inputs, checking for
+errors due to interpolation and/or aliasing. The error has been found to reach
+machine precision and to have computational time linearly proportional to the
+number of nodes.

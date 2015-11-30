@@ -1,0 +1,23 @@
+One of the fundamental requirements for visual surveillance using smart
+camera networks is the correct association of each persons observations
+generated on different cameras. Recently, distributed data association that
+involves only local information processing on each camera node and mutual
+information exchanging between neighboring cameras has attracted many research
+interests due to its superiority in large scale applications. In this paper, we
+formulate the problem of data association in smart camera networks as an
+Integer Programming problem by introducing a set of linking variables, and
+propose two distributed algorithms, namely L-DD and Q-DD, to solve the Integer
+Programming problem using dual decomposition technique. In our algorithms, the
+original IP problem is decomposed into several sub-problems, which can be
+solved locally and efficiently on each smart camera, and then different
+sub-problems reach consensus on their solutions in a rigorous way by adjusting
+their parameters based on projected sub-gradient optimization. The proposed
+methods are simple and flexible, in that (i) we can incorporate any feature
+extraction and matching technique into our framework to measure the similarity
+between two observations, which is used to define the cost of each link, and
+(ii) we can decompose the original problem in any way as long as the resulting
+sub-problem can be solved independently on individual camera. We show the
+competitiveness of our methods in both accuracy and speed by theoretical
+analysis and experimental comparison with state of the art algorithms on two
+real data sets collected by camera networks in our campus garden and office
+building.

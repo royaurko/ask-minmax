@@ -1,0 +1,14 @@
+Constraint Programming (CP) solvers typically tackle optimization problems by
+repeatedly finding solutions to a problem while placing tighter and tighter
+bounds on the solution cost. This approach is somewhat naive, especially for
+soft-constraint optimization problems in which the soft constraints are mostly
+satisfied. Unsatisfiable-core approaches to solving soft constraint problems in
+Boolean Satisfiability (e.g. MAXSAT) force all soft constraints to hold
+initially. When solving fails they return an unsatisfiable core, as a set of
+soft constraints that cannot hold simultaneously. Using this information the
+problem is relaxed to allow certain soft constraint(s) to be violated and
+solving continues. Since Lazy Clause Generation (LCG) solvers can also return
+unsatisfiable cores we can adapt the MAXSAT unsatisfiable core approach to CP.
+We implement the original MAXSAT unsatisfiable core solving algorithms WPM1,
+MSU3 in a state-of-the-art LCG solver and show that there exist problems which
+benefit from this hybrid approach.

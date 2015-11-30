@@ -1,0 +1,27 @@
+We consider a CNF formula $F$ as a multiset of clauses: $F=\{c_1,..., c_m\}$.
+The set of variables of $F$ will be denoted by $V(F)$. Let $B_F$ denote the
+bipartite graph with partite sets $V(F)$ and $F$ and with an edge between $v
+\in V(F)$ and $c \in F$ if $v \in c$ or $\bar{v} \in c$. The matching number
+$\nu(F)$ of $F$ is the size of a maximum matching in $B_F$. In our main result,
+we prove that the following parameterization of {\sc MaxSat} (denoted by
+$(\nu(F)+k)$-\textsc{SAT}) is fixed-parameter tractable: Given a formula $F$,
+decide whether we can satisfy at least $\nu(F)+k$ clauses in $F$, where $k$ is
+the parameter.
+  A formula $F$ is called variable-matched if $\nu(F)=|V(F)|.$ Let
+$\delta(F)=|F|-|V(F)|$ and $\delta^*(F)=\max_{F'\subseteq F} \delta(F').$ Our
+main result implies fixed-parameter tractability of {\sc MaxSat} parameterized
+by $\delta(F)$ for variable-matched formulas $F$; this complements related
+results of Kullmann (2000) and Szeider (2004) for {\sc MaxSat} parameterized by
+$\delta^*(F)$.
+  To obtain our main result, we reduce $(\nu(F)+k)$-\textsc{SAT} into the
+following parameterization of the {\sc Hitting Set} problem (denoted by
+$(m-k)$-{\sc Hitting Set}): given a collection $\cal C$ of $m$ subsets of a
+ground set $U$ of $n$ elements, decide whether there is $X\subseteq U$ such
+that $C\cap X\neq \emptyset$ for each $C\in \cal C$ and $|X|\le m-k,$ where $k$
+is the parameter. Gutin, Jones and Yeo (2011) proved that $(m-k)$-{\sc Hitting
+Set} is fixed-parameter tractable by obtaining an exponential kernel for the
+problem. We obtain two algorithms for $(m-k)$-{\sc Hitting Set}: a
+deterministic algorithm of runtime $O((2e)^{2k+O(\log^2 k)} (m+n)^{O(1)})$ and
+a randomized algorithm of expected runtime $O(8^{k+O(\sqrt{k})} (m+n)^{O(1)})$.
+Our deterministic algorithm improves an algorithm that follows from the
+kernelization result of Gutin, Jones and Yeo (2011).

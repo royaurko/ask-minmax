@@ -1,0 +1,13 @@
+We consider the problem of diagnosing faults in a system represented by a
+Bayesian network, where diagnosis corresponds to recovering the most likely
+state of unobserved nodes given the outcomes of tests (observed nodes). Finding
+an optimal subset of tests in this setting is intractable in general. We show
+that it is difficult even to compute the next most-informative test using
+greedy test selection, as it involves several entropy terms whose exact
+computation is intractable. We propose an approximate approach that utilizes
+the loopy belief propagation infrastructure to simultaneously compute
+approximations of marginal and conditional entropies on multiple subsets of
+nodes. We apply our method to fault diagnosis in computer networks, and show
+the algorithm to be very effective on realistic Internet-like topologies. We
+also provide theoretical justification for the greedy test selection approach,
+along with some performance guarantees.

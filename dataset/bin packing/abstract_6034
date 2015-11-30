@@ -1,0 +1,18 @@
+We present a new algorithm designed to improve the signal to noise ratio
+(SNR) of point and extended source detections in direct imaging data. The novel
+part of our method is that it finds the linear combination of the science
+images that best match counterpart images with signal removed from suspected
+source regions. The algorithm, based on the Locally Optimized Combination of
+Images (LOCI) method, is called Matched LOCI or MLOCI. We show using data
+obtained with the Gemini Planet Imager (GPI) and Near-Infrared Coronagraphic
+Imager (NICI) that the new algorithm can improve the SNR of point source
+detections by 30-400% over past methods. We also find no increase in false
+detections rates. No prior knowledge of candidate companion locations is
+required to use MLOCI. While non-blind applications may yield linear
+combinations of science images which seem to increase the SNR of true sources
+by a factor > 2, they can also yield false detections at high rates. This is a
+potential pitfall when trying to confirm marginal detections or to re-detect
+point sources found in previous epochs. Our findings are relevant to any method
+where the coefficients of the linear combination are considered tunable, e.g.
+LOCI and Principal Component Analysis (PCA). Thus we recommend that false
+detection rates be analyzed when using these techniques.

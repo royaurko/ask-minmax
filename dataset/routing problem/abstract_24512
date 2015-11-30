@@ -1,0 +1,10 @@
+An iterative method LSMR is presented for solving linear systems $Ax=b$ and
+least-squares problem $\min \norm{Ax-b}_2$, with $A$ being sparse or a fast
+linear operator. LSMR is based on the Golub-Kahan bidiagonalization process. It
+is analytically equivalent to the MINRES method applied to the normal equation
+$A\T Ax = A\T b$, so that the quantities $\norm{A\T r_k}$ are monotonically
+decreasing (where $r_k = b - Ax_k$ is the residual for the current iterate
+$x_k$). In practice we observe that $\norm{r_k}$ also decreases monotonically.
+Compared to LSQR, for which only $\norm{r_k}$ is monotonic, it is safer to
+terminate LSMR early. Improvements for the new iterative method in the presence
+of extra available memory are also explored.

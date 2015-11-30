@@ -1,0 +1,8 @@
+We discuss the implementation and optimization challenges for a Wilson-Dirac
+solver with Clover term on QPACE, a parallel machine based on Cell processors
+and a torus network. We choose the mixed-precision Schwarz preconditioned FGCR
+algorithm in order to circumvent network bandwidth and latency constraints, to
+make efficient use of the multicore parallelism and on-chip memory, and to
+achieve flexibility in the choice of lattice sizes. We present benchmarks on up
+to 256 QPACE nodes showing an aggregate sustained performance of about 10
+TFlops for the complete solver and very good scaling.

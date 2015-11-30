@@ -1,0 +1,15 @@
+We analyze the problem of packing squares in an online fashion: Given a
+semi-infinite strip of width 1 and an unknown sequence of squares of side
+length in [0,1] that arrive from above, one at a time. The objective is to pack
+these items as they arrive, minimizing the resulting height. Just like in the
+classical game of Tetris, each square must be moved along a collision-free path
+to its final destination. In addition, we account for gravity in both motion
+(squares must never move up) and position (any final destination must be
+supported from below). A similar problem has been considered before; the best
+previous result is by Azar and Epstein, who gave a 4-competitive algorithm in a
+setting without gravity (i.e., with the possibility of letting squares "hang in
+the air") based on ideas of shelf-packing: Squares are assigned to different
+horizontal levels, allowing an analysis that is reminiscent of some bin-packing
+arguments. We apply a geometric analysis to establish a competitive factor of
+3.5 for the bottom-left heuristic and present a 34/13=2.615...-competitive
+algorithm.

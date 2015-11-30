@@ -1,0 +1,16 @@
+One of the most widely used methods for eigenvalue computation is the $QR$
+iteration with Wilkinson's shift: here the shift $s$ is the eigenvalue of the
+bottom $2\times 2$ principal minor closest to the corner entry. It has been a
+long-standing conjecture that the rate of convergence of the algorithm is
+cubic. In contrast, we show that there exist matrices for which the rate of
+convergence is strictly quadratic. More precisely, let $T_X$ be the $3 \times
+3$ matrix having only two nonzero entries $(T_X)_{12} = (T_X)_{21} = 1$ and let
+$T_L$ be the set of real, symmetric tridiagonal matrices with the same spectrum
+as $T_X$. There exists a neighborhood $U \subset T_L$ of $T_X$ which is
+invariant under Wilkinson's shift strategy with the following properties. For
+$T_0 \in U$, the sequence of iterates $(T_k)$ exhibits either strictly
+quadratic or strictly cubic convergence to zero of the entry $(T_k)_{23}$. In
+fact, quadratic convergence occurs exactly when $\lim T_k = T_X$. Let $X$ be
+the union of such quadratically convergent sequences $(T_k)$: the set $X$ has
+Hausdorff dimension 1 and is a union of disjoint arcs $X^\sigma$ meeting at
+$T_X$, where $\sigma$ ranges over a Cantor set.

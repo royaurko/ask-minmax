@@ -1,0 +1,15 @@
+Compared to on-off keying (OOK), M-ary pulse amplitude modulation (M-PAM,
+M>2) is more spectrally efficient. However, to detect M-PAM signals reliably,
+the requirement of accurate channel state information is more stringent.
+Previously, for OOK systems, we have developed a receiver that requires few
+pilot symbols and can jointly detect the data sequence and estimate the unknown
+channel gain implicitly. In this paper, using the same approach, we extend our
+previous work and derive a generalized receiver for M-PAM systems. A
+Viterbi-type trellis-search algorithm coupled with a selective-store strategy
+is adopted, resulting in a low implementation complexity and a low memory
+requirement. Therefore, the receiver is efficient in terms of energy, spectra,
+implementation complexity and memory. Using theoretical analysis, we show that
+its error performance approaches that of maximum likelihood detection with
+perfect knowledge of the channel gain, as the observation window length
+increases. Also, simulation results are presented to justify the theoretical
+analysis.

@@ -1,0 +1,15 @@
+A constant-rate encoder--decoder pair is presented for a fairly large family
+of two-dimensional (2-D) constraints. Encoding and decoding is done in a
+row-by-row manner, and is sliding-block decodable.
+  Essentially, the 2-D constraint is turned into a set of independent and
+relatively simple one-dimensional (1-D) constraints; this is done by dividing
+the array into fixed-width vertical strips. Each row in the strip is seen as a
+symbol, and a graph presentation of the respective 1-D constraint is
+constructed. The maxentropic stationary Markov chain on this graph is next
+considered: a perturbed version of the corresponding probability distribution
+on the edges of the graph is used in order to build an encoder which operates
+in parallel on the strips. This perturbation is found by means of a network
+flow, with upper and lower bounds on the flow through the edges.
+  A key part of the encoder is an enumerative coder for constant-weight binary
+words. A fast realization of this coder is shown, using floating-point
+arithmetic.

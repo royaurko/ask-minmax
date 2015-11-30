@@ -1,0 +1,19 @@
+Tucker decomposition is the cornerstone of modern machine learning on
+tensorial data analysis, which have attracted considerable attention for
+multiway feature extraction, compressive sensing, and tensor completion. The
+most challenging problem is related to determination of model complexity (i.e.,
+multilinear rank), especially when noise and missing data are present. In
+addition, existing methods cannot take into account uncertainty information of
+latent factors, resulting in low generalization performance. To address these
+issues, we present a class of probabilistic generative Tucker models for tensor
+decomposition and completion with structural sparsity over multilinear latent
+space. To exploit structural sparse modeling, we introduce two group sparsity
+inducing priors by hierarchial representation of Laplace and Student-t
+distributions, which facilitates fully posterior inference. For model learning,
+we derived variational Bayesian inferences over all model (hyper)parameters,
+and developed efficient and scalable algorithms based on multilinear
+operations. Our methods can automatically adapt model complexity and infer an
+optimal multilinear rank by the principle of maximum lower bound of model
+evidence. Experimental results and comparisons on synthetic, chemometrics and
+neuroimaging data demonstrate remarkable performance of our models for
+recovering ground-truth of multilinear rank and missing entries.

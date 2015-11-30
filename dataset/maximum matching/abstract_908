@@ -1,0 +1,18 @@
+A crystallographic cell is a representation of a lattice, but each lattice
+can be represented just as well by any of an infinite number of such unit
+cells. Searching for matches to an experimentally determined crystallographic
+unit cell in a large collection of previously determined unit cells is a useful
+verification step in synchrotron data collection and can be a screen for
+"similar" structures, but it is more useful to search for a match to the
+lattice represented by the experimentally determined cell. For identification
+of substances with small cells, a unit cell match may be sufficient for unique
+identification. Due to experimental error and multiple choices of cells and
+differing choices of lattice centering representing the same lattice, simple
+searches based on raw cell edges and angles can miss similarities among
+lattices. A database of lattices using the G6 representation of the
+Niggli-reduced cell as the search key provides a more robust and complete
+search. Searching is implemented by finding the distance from the probe cell to
+related cells using a topological embedding of the Niggli reduction in G6, so
+that all cells representing similar lattices will be found. Comparison of
+results with those from older cell-based search algorithms suggests significant
+value in the new approach.

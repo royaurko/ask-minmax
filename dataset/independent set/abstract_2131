@@ -1,0 +1,22 @@
+For the analysis of clustered survival data, two different types of models
+that take the association into account, are commonly used: frailty models and
+copula models. Frailty models assume that conditional on a frailty term for
+each cluster, the hazard functions of individuals within that cluster are
+independent. These unknown frailty terms with their imposed distribution are
+used to express the association between the different individuals in a cluster.
+Copula models on the other hand assume that the joint survival function of the
+individuals within a cluster is given by a copula function, evaluated in the
+marginal survival function of each individual. It is the copula function which
+describes the association between the lifetimes within a cluster. A major
+disadvantage of the present copula models over the frailty models is that the
+size of the different clusters must be small and equal in order to set up
+manageable estimation procedures for the different model parameters. We
+describe in this manuscript a copula model for clustered survival data where
+the clusters are allowed to be moderate to large and varying in size by
+considering the class of Archimedean copulas with completely monotone
+generator. We develop both one- and two-stage estimators for the different
+copula parameters. Furthermore we show the consistency and asymptotic normality
+of these estimators. Finally, we perform a simulation study to investigate the
+finite sample properties of the estimators. We illustrate the method on a data
+set containing the time to first insemination in cows, with cows clustered in
+herds.

@@ -1,0 +1,16 @@
+In two-stage robust optimization the solution to a problem is built in two
+stages: In the first stage a partial, not necessarily feasible, solution is
+exhibited. Then the adversary chooses the "worst" scenario from a predefined
+set of scenarios. In the second stage, the first-stage solution is extended to
+become feasible for the chosen scenario. The costs at the second stage are
+larger than at the first one, and the objective is to minimize the total cost
+paid in the two stages.
+  We give a 2-approximation algorithm for the robust mincut problem and a
+({\gamma}+2)-approximation for the robust shortest path problem, where {\gamma}
+is the approximation ratio for the Steiner tree. This improves the factors
+(1+\sqrt2) and 2({\gamma}+2) from [Golovin, Goyal and Ravi. Pay today for a
+rainy day: Improved approximation algorithms for demand-robust min-cut and
+shortest path problems. STACS 2006]. In addition, our solution for robust
+shortest path is simpler and more efficient than the earlier ones; this is
+achieved by a more direct algorithm and analysis, not using some of the
+standard demand-robust optimization techniques.

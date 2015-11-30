@@ -1,0 +1,14 @@
+In this note, we provide complexity characterizations of model checking
+multi-pushdown systems. Multi-pushdown systems model recursive concurrent
+programs in which any sequential process has a finite control. We consider
+three standard notions for boundedness: context boundedness, phase boundedness
+and stack ordering. The logical formalism is a linear-time temporal logic
+extending well-known logic CaRet but dedicated to multi-pushdown systems in
+which abstract operators (related to calls and returns) such as those for
+next-time and until are parameterized by stacks. We show that the problem is
+EXPTIME-complete for context-bounded runs and unary encoding of the number of
+context switches; we also prove that the problem is 2EXPTIME-complete for
+phase-bounded runs and unary encoding of the number of phase switches. In both
+cases, the value k is given as an input (whence it is not a constant of the
+model-checking problem), which makes a substantial difference in the
+complexity. In certain cases, our results improve previous complexity results.

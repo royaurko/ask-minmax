@@ -1,0 +1,12 @@
+We introduce a new linearly constrained minimum variance (LCMV) beamformer
+that combines the set-membership (SM) technique with the conjugate gradient
+(CG) method, and develop a low-complexity adaptive filtering algorithm for
+beamforming. The proposed algorithm utilizes a CG-based vector and a variable
+forgetting factor to perform the data-selective updates that are controlled by
+a time-varying bound related to the parameters. For the update, the CG-based
+vector is calculated iteratively (one iteration per update) to obtain the
+filter parameters and to avoid the matrix inversion. The resulting iterations
+construct a space of feasible solutions that satisfy the constraints of the
+LCMV optimization problem. The proposed algorithm reduces the computational
+complexity significantly and shows an enhanced convergence and tracking
+performance over existing algorithms.

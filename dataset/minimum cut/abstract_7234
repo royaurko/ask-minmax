@@ -1,0 +1,17 @@
+Integer-forcing (IF) linear receiver has been recently introduced for
+multiple-input multiple-output (MIMO) fading channels. The receiver has to
+compute an integer linear combination of the symbols as a part of the decoding
+process. In particular, the integer coefficients have to be chosen based on the
+channel realizations, and the choice of such coefficients is known to determine
+the receiver performance. The original known solution of finding these integers
+was based on exhaustive search. A practical algorithm based on
+Hermite-Korkine-Zolotareff (HKZ) and Minkowski lattice reduction algorithms was
+also proposed recently. In this paper, we propose a low-complexity method based
+on complex LLL algorithm to obtain the integer coefficients for the IF
+receiver. For the 2 X 2 MIMO channel, we study the effectiveness of the
+proposed method in terms of the ergodic rate. We also compare the bit error
+rate (BER) of our approach with that of other linear receivers, and show that
+the suggested algorithm outperforms the minimum mean square estimator (MMSE)
+and zero-forcing (ZF) linear receivers, but trades-off error performance for
+complexity in comparison with the IF receiver based on exhaustive search or on
+HKZ and Minkowski lattice reduction algorithms.

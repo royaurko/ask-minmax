@@ -1,0 +1,24 @@
+Let $G$ be a directed graph on $n$ vertices. Given an integer $k<=n$, the
+SIMPLE $k$-PATH problem asks whether there exists a simple $k$-path in $G$. In
+case $G$ is weighted, the MIN-WT SIMPLE $k$-PATH problem asks for a simple
+$k$-path in $G$ of minimal weight. The fastest currently known deterministic
+algorithm for MIN-WT SIMPLE $k$-PATH by Fomin, Lokshtanov and Saurabh runs in
+time $O(2.851^k\cdot n^{O(1)}\cdot \log W)$ for graphs with integer weights in
+the range $[-W,W]$. This is also the best currently known deterministic
+algorithm for SIMPLE k-PATH- where the running time is the same without the
+$\log W$ factor. We define $L_k(n)\subseteq [n]^k$ to be the set of words of
+length $k$ whose symbols are all distinct. We show that an explicit
+construction of a non-deterministic automaton (NFA) of size $f(k)\cdot
+n^{O(1)}$ for $L_k(n)$ implies an algorithm of running time $O(f(k)\cdot
+n^{O(1)}\cdot \log W)$ for MIN-WT SIMPLE $k$-PATH when the weights are
+non-negative or the constructed NFA is acyclic as a directed graph. We show
+that the algorithm of Kneis et al. and its derandomization by Chen et al. for
+SIMPLE $k$-PATH can be used to construct an acylic NFA for $L_k(n)$ of size
+$O^*(4^{k+o(k)})$.
+  We show, on the other hand, that any NFA for $L_k(n)$ must be size at least
+$2^k$. We thus propose closing this gap and determining the smallest NFA for
+$L_k(n)$ as an interesting open problem that might lead to faster algorithms
+for MIN-WT SIMPLE $k$-PATH.
+  We use a relation between SIMPLE $k$-PATH and non-deterministic xor automata
+(NXA) to give another direction for a deterministic algorithm with running time
+$O^*(2^k)$ for SIMPLE $k$-PATH.

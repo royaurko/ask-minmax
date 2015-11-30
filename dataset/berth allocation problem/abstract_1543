@@ -1,0 +1,20 @@
+In this paper, we consider a simple network consisting of a source, a
+half-duplex decode-and-forward relay, and a destination. We propose a new
+relaying protocol employing adaptive link selection, i.e., in any given time
+slot, based on the channel state information of the source-relay and the
+relay-destination link a decision is made whether the source or the relay
+transmits. In order to avoid data loss at the relay, adaptive link selection
+requires the relay to be equipped with a buffer such that data can be queued
+until the relay-destination link is selected for transmission. We study both
+delay constrained and delay unconstrained transmission. For the delay
+unconstrained case, we characterize the optimal link selection policy, derive
+the corresponding throughput, and develop an optimal power allocation scheme.
+For the delay constrained case, we propose to starve the buffer of the relay by
+choosing the decision threshold of the link selection policy smaller than the
+optimal one and derive a corresponding upper bound on the average delay.
+Furthermore, we propose a modified link selection protocol which avoids buffer
+overflow by limiting the queue size. Our analytical and numerical results show
+that buffer-aided relaying with adaptive link selection achieves significant
+throughput gains compared to conventional relaying protocols with and without
+buffers where the relay employs a fixed schedule for reception and
+transmission.

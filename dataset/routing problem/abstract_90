@@ -1,0 +1,13 @@
+In the store-and-forward routing problem, packets have to be routed along
+given paths such that the arrival time of the latest packet is minimized. A
+groundbreaking result of Leighton, Maggs and Rao says that this can always be
+done in time O(congestion + dilation), where the congestion is the maximum
+number of paths using an edge and the dilation is the maximum length of a path.
+However, the analysis is quite arcane and complicated and works by iteratively
+improving an infeasible schedule. Here, we provide a more accessible analysis
+which is based on conditional expectations. Like [LMR94], our easier analysis
+also guarantees that constant size edge buffers suffice.
+  Moreover, it was an open problem stated e.g. by Wiese, whether there is any
+instance where all schedules need at least (1 + epsilon)*(congestion +
+dilation) steps, for a constant epsilon > 0. We answer this question
+affirmatively by making use of a probabilistic construction.

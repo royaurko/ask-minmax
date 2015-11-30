@@ -1,0 +1,13 @@
+The Noah's Ark Problem (NAP) is an NP-Hard optimization problem with
+relevance to ecological conservation management. It asks to maximize the
+phylogenetic diversity (PD) of a set of taxa given a fixed budget, where each
+taxon is associated with a cost of conservation and a probability of
+extinction. NAP has received renewed interest with the rise in availability of
+genetic sequence data, allowing PD to be used as a practical measure of
+biodiversity. However, only simplified instances of the problem, where one or
+more parameters are fixed as constants, have as of yet been addressed in the
+literature. We present NAPX, the first algorithm for the general version of NAP
+that returns a $1 - \epsilon$ approximation of the optimal solution. It runs in
+$O(\frac{n B^2 h^2 \log^2n}{\log^2(1 - \epsilon)})$ time where $n$ is the
+number of species, and $B$ is the total budget and $h$ is the height of the
+input tree. We also provide improved bounds for its expected running time.

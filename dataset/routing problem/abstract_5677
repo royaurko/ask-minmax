@@ -1,0 +1,16 @@
+It is unknown whether two graphs can be tested for isomorphism in polynomial
+time. A classical approach to the Graph Isomorphism Problem is the
+d-dimensional Weisfeiler-Lehman algorithm. The d-dimensional WL-algorithm can
+distinguish many pairs of graphs, but the pairs of non-isomorphic graphs
+constructed by Cai, Furer and Immerman it cannot distinguish. If d is fixed,
+then the WL-algorithm runs in polynomial time. We will formulate the Graph
+Isomorphism Problem as an Orbit Problem: Given a representation V of an
+algebraic group G and two elements v_1,v_2 in V, decide whether v_1 and v_2 lie
+in the same G-orbit. Then we attack the Orbit Problem by constructing certain
+approximate categories C_d(V), d=1,2,3,... whose objects include the elements
+of V. We show that v_1 and v_2 are not in the same orbit by showing that they
+are not isomorphic in the category C_d(V) for some d. For every d this gives us
+an algorithm for isomorphism testing. We will show that the WL-algorithms
+reduce to our algorithms, but that our algorithms cannot be reduced to the
+WL-algorithms. Unlike the Weisfeiler-Lehman algorithm, our algorithm can
+distinguish the Cai-Furer-Immerman graphs in polynomial time.

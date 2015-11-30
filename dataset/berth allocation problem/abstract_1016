@@ -1,0 +1,22 @@
+In case of multiple node failures performance becomes very low as compare to
+single node failure. Failures of nodes in cluster computing can be tolerated by
+multiple fault tolerant computing. Existing recovery schemes are efficient for
+single fault but not with multiple faults. Recovery scheme proposed in this
+paper having two phases; sequentially phase, concurrent phase. In sequentially
+phase, loads of all working nodes are uniformly and evenly distributed by
+proposed dynamic rank based and load distribution algorithm. In concurrent
+phase, loads of all failure nodes as well as new job arrival are assigned
+equally to all available nodes by just finding the least loaded node among the
+several nodes by failure nodes job allocation algorithm. Sequential and
+concurrent executions of algorithms improve the performance as well better
+resource utilization. Dynamic rank based algorithm for load redistribution
+works as a sequential restoration algorithm and reassignment algorithm for
+distribution of failure nodes to least loaded computing nodes works as a
+concurrent recovery reassignment algorithm. Since load is evenly and uniformly
+distributed among all available working nodes with less number of iterations,
+low iterative time and communication overheads hence performance is improved.
+Dynamic ranking algorithm is low overhead, high convergence algorithm for
+reassignment of tasks uniformly among all available nodes. Reassignments of
+failure nodes are done by a low overhead efficient failure job allocation
+algorithm. Test results to show effectiveness of the proposed scheme are
+presented.

@@ -1,0 +1,20 @@
+Many types of tumors exhibit chromosomal losses or gains, as well as local
+amplifications and deletions. Within any given tumor type, sample specific
+amplifications and deletionsare also observed. Typically, a region that is
+aberrant in more tumors,or whose copy number change is stronger, would be
+considered as a more promising candidate to be biologically relevant to cancer.
+We sought for an intuitive method to define such aberrations and prioritize
+them. We define V, the volume associated with an aberration, as the product of
+three factors: a. fraction of patients with the aberration, b. the aberrations
+length and c. its amplitude. Our algorithm compares the values of V derived
+from real data to a null distribution obtained by permutations, and yields the
+statistical significance, p value, of the measured value of V. We detected
+genetic locations that were significantly aberrant and combined them with
+chromosomal arm status to create a succint fingerprint of the tumor genome.
+This genomic fingerprint is used to visualize the tumors, highlighting events
+that are co ocurring or mutually exclusive. We allpy the method on three
+different public array CGH datasets of Medulloblastoma and Neuroblastoma, and
+demonstrate its ability to detect chromosomal regions that were known to be
+altered in the tested cancer types, as well as to suggest new genomic locations
+to be tested. We identified a potential new subtype of Medulloblastoma, which
+is analogous to Neuroblastoma type 1.

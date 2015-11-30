@@ -1,0 +1,22 @@
+It has been noted that in many professional sports leagues a good predictor
+of a team's won-loss percentage is Bill James' Pythagorean Formula RSobs^c /
+(RSobs^c + RAobs^c), where RSobs (resp. RAobs) is the observed average number
+of runs scored (allowed) per game and c is a constant for the league; for
+baseball the best agreement is when c is about 1.82. We provide a theoretical
+justification for this formula and value of c by modelling the number of runs
+scored and allowed in baseball games as independent random variables drawn from
+Weibull distributions with the same b and c but different a; the probability
+density f(x;a,b,c) is 0 for x < b and is (c/a) ((x-b)/a)^{c-1}
+exp(-((x-b)/a)^c) otherwise. This model leads to a predicted won-loss
+percentage of (RS-b)^c / ((RS-b)^c + (RA-b)^c); here RS (resp. RA) is the mean
+of the random variable corresponding to runs scored (allowed), and RS - b
+(resp. RA - b) is an estimator of RSobs (resp. RAobs). An analysis of the 14
+American League teams from the 2004 baseball season shows that (1) given that
+the runs scored and allowed in a game cannot be equal, the runs scored and
+allowed are statistically independent; (2) the best fit Weibull parameters
+attained from a least squares or a maximum likelihood analysis give good fits;
+least squares gives a mean value of c of 1.79 with a standard deviation of .09,
+and maximum likelihood gives a mean value of c of 1.74 with a standard
+deviation of .06, which agree beautifully with the observed best value of 1.82
+attained by fitting RSobs^c / (RSobs^c + RAobs^c) to the observed winning
+percentages.

@@ -1,0 +1,20 @@
+We show that a large fraction of the data-structure lower bounds known today
+in fact follow by reduction from the communication complexity of lopsided
+(asymmetric) set disjointness. This includes lower bounds for:
+  * high-dimensional problems, where the goal is to show large space lower
+bounds.
+  * constant-dimensional geometric problems, where the goal is to bound the
+query time for space O(n polylog n).
+  * dynamic problems, where we are looking for a trade-off between query and
+update time. (In this case, our bounds are slightly weaker than the originals,
+losing a lglg n factor.)
+  Our reductions also imply the following new results:
+  * an Omega(lg n / lglg n) bound for 4-dimensional range reporting, given
+space O(n polylog n). This is quite timely, since a recent result solved 3D
+reporting in O(lglg n) time, raising the prospect that higher dimensions could
+also be easy.
+  * a tight space lower bound for the partial match problem, for constant query
+time.
+  * the first lower bound for reachability oracles.
+  In the process, we prove optimal randomized lower bounds for lopsided set
+disjointness.

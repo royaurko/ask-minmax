@@ -1,0 +1,7 @@
+Given an edge-weighted graph $G=(V,E)$ and a set $E_0\subset E$, the
+incremental network design problem with minimum spanning trees asks for a
+sequence of edges $e'_1,\ldots,e'_r\in E\setminus E_0$ minimizing
+$\sum_{t=1}^Tw(X_t)$ where $w(X_t)$ is the weight of a minimum spanning tree
+$X_t$ for the subgraph $(V,E_0\cup\{e'_1,\ldots,e'_t\})$ and $T=\lvert
+E\setminus E_0\rvert$. We prove that this problem can be solved by a greedy
+algorithm.

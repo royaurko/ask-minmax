@@ -1,0 +1,20 @@
+For digraphs $D$ and $H$, a mapping $f: V(D)\dom V(H)$ is a homomorphism of
+$D$ to $H$ if $uv\in A(D)$ implies $f(u)f(v)\in A(H).$ For a fixed digraph $H$,
+the homomorphism problem is to decide whether an input digraph $D$ admits a
+homomorphism to $H$ or not, and is denoted as HOMP($H$). Digraphs are allowed
+to have loops, but not allowed to have parallel arcs.
+  A natural optimization version of the homomorphism problem is defined as
+follows. If each vertex $u \in V(D)$ is associated with costs $c_i(u), i \in
+V(H)$, then the cost of the homomorphism $f$ is $\sum_{u\in V(D)}c_{f(u)}(u)$.
+For each fixed digraph $H$, we have the {\em minimum cost homomorphism problem
+for} $H$ and denote it as MinHOMP($H$). The problem is to decide, for an input
+graph $D$ with costs $c_i(u),$ $u \in V(D), i\in V(H)$, whether there exists a
+homomorphism of $D$ to $H$ and, if one exists, to find one of minimum cost.
+  In a recent paper, we posed a problem of characterizing polynomial time
+solvable and NP-hard cases of the minimum cost homomorphism problem for acyclic
+multipartite tournaments with possible loops (w.p.l.). In this paper, we solve
+the problem for reflexive multipartite tournaments and demonstrate a
+considerate difficulty of the problem for the whole class of multipartite
+tournaments w.p.l. using, as an example, acyclic 3-partite tournaments of order
+4 w.p.l.\footnote{This paper was submitted to Discrete Mathematics on April 6,
+2007}

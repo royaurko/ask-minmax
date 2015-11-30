@@ -1,0 +1,20 @@
+We extend the generalized approximate message passing (G-AMP) approach,
+originally proposed for high-dimensional generalized-linear regression in the
+context of compressive sensing, to the generalized-bilinear case, which enables
+its application to matrix completion, robust PCA, dictionary learning, and
+related matrix-factorization problems. In the first part of the paper, we
+derive our Bilinear G-AMP (BiG-AMP) algorithm as an approximation of the
+sum-product belief propagation algorithm in the high-dimensional limit, where
+central-limit theorem arguments and Taylor-series approximations apply, and
+under the assumption of statistically independent matrix entries with known
+priors. In addition, we propose an adaptive damping mechanism that aids
+convergence under finite problem sizes, an expectation-maximization (EM)-based
+method to automatically tune the parameters of the assumed priors, and two
+rank-selection strategies. In the second part of the paper, we discuss the
+specializations of EM-BiG-AMP to the problems of matrix completion, robust PCA,
+and dictionary learning, and present the results of an extensive empirical
+study comparing EM-BiG-AMP to state-of-the-art algorithms on each problem. Our
+numerical results, using both synthetic and real-world datasets, demonstrate
+that EM-BiG-AMP yields excellent reconstruction accuracy (often best in class)
+while maintaining competitive runtimes and avoiding the need to tune
+algorithmic parameters.

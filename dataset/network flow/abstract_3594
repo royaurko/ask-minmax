@@ -1,0 +1,18 @@
+Adaptive networks consist of a collection of nodes with adaptation and
+learning abilities. The nodes interact with each other on a local level and
+diffuse information across the network to solve estimation and inference tasks
+in a distributed manner. In this work, we compare the mean-square performance
+of two main strategies for distributed estimation over networks: consensus
+strategies and diffusion strategies. The analysis in the paper confirms that
+under constant step-sizes, diffusion strategies allow information to diffuse
+more thoroughly through the network and this property has a favorable effect on
+the evolution of the network: diffusion networks are shown to converge faster
+and reach lower mean-square deviation than consensus networks, and their
+mean-square stability is insensitive to the choice of the combination weights.
+In contrast, and surprisingly, it is shown that consensus networks can become
+unstable even if all the individual nodes are stable and able to solve the
+estimation task on their own. When this occurs, cooperation over the network
+leads to a catastrophic failure of the estimation task. This phenomenon does
+not occur for diffusion networks: we show that stability of the individual
+nodes always ensures stability of the diffusion network irrespective of the
+combination topology. Simulation results support the theoretical findings.

@@ -1,0 +1,20 @@
+We introduce a new algorithm for the calculation of multidimensional optical
+depths in approximate radiative transport schemes, equally applicable to
+neutrinos and photons. Motivated by (but not limited to) neutrino transport in
+three-dimensional simulations of core-collapse supernovae and neutron star
+mergers, our method makes no assumptions about the geometry of the matter
+distribution, apart from expecting optically transparent boundaries. Based on
+local information about opacities, the algorithm figures out an escape route
+that tends to minimize the optical depth without assuming any pre-defined paths
+for radiation. Its adaptivity makes it suitable for a variety of astrophysical
+settings with complicated geometry (e.g., core-collapse supernovae, compact
+binary mergers, tidal disruptions, star formation, etc.). We implement the MODA
+algorithm into both a Eulerian hydrodynamics code with a fixed, uniform grid
+and into an SPH code where we make use a tree structure that is otherwise used
+for searching neighbours and calculating gravity. In a series of numerical
+experiments, we compare the MODA results with analytically known solutions. We
+also use snapshots from actual 3D simulations and compare the results of MODA
+with those obtained with other methods such as the global and local ray-by-ray
+method. It turns out that MODA achieves excellent accuracy at a moderate
+computational cost. In an appendix we also discuss implementation details and
+parallelization strategies.

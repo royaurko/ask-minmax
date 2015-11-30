@@ -1,0 +1,25 @@
+We consider the allocation of spectral and power resources to the mobiles
+(i.e., user equipment (UE)) in a cell every subframe (1 ms) for the Long Term
+Evolution (LTE) orthogonal frequency division multiple access (OFDMA) cellular
+network. To enable scheduling based on packet delays, we design a novel
+mechanism for inferring the packet delays approximately from the buffer status
+reports (BSR) transmitted by the UEs; the BSR reports only contain queue length
+information. We then consider a constrained optimization problem with a concave
+objective function - schedulers such as those based on utility maximization,
+maximum weight scheduling, and recent results on iterative scheduling for small
+queue/delay follow as special cases. In particular, the construction of the
+non-differentiable objective function based on packet delays is novel. We model
+constraints on bandwidth, peak transmit power at the UE, and the transmit power
+spectral density (PSD) at the UE due to fractional power control. When
+frequency diversity doesn't exist or is not exploited at a fast time-scale, we
+use subgradient analysis to construct an O(N log L) (per iteration with small
+number of iterations) algorithm to compute the optimal resource allocation for
+N users and L points of non-differentiability in the objective function. For a
+frequency diversity scheduler with M sub-bands, the corre- sponding complexity
+per iteration is essentially O(N(M^2+L^2)). Unlike previous iterative policies
+based on delay/queue, in our approach the complexity of scheduling can be
+reduced when the coherence bandwidth is larger. Through detailed system
+simulations (based on NGMN and 3GPP evaluation methodology) which model H-ARQ,
+finite resource grants per sub-frame, deployment, realistic traffic, power
+limitations, interference, and channel fading, we demonstrate the effectiveness
+of our schemes for LTE.

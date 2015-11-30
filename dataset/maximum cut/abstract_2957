@@ -1,0 +1,20 @@
+Proof nets provide abstract counterparts to sequent proofs modulo rule
+permutations; the idea being that if two proofs have the same underlying
+proof-net, they are in essence the same proof. Providing a convincing proof-net
+counterpart to proofs in the classical sequent calculus is thus an important
+step in understanding classical sequent calculus proofs. By convincing, we mean
+that (a) there should be a canonical function from sequent proofs to proof
+nets, (b) it should be possible to check the correctness of a net in polynomial
+time, (c) every correct net should be obtainable from a sequent calculus proof,
+and (d) there should be a cut-elimination procedure which preserves
+correctness. Previous attempts to give proof-net-like objects for propositional
+classical logic have failed at least one of the above conditions. In [23], the
+contributor presented a calculus of proof nets (expansion nets) satisfying (a) and
+(b); the paper defined a sequent calculus corresponding to expansion nets but
+gave no explicit demonstration of (c). That sequent calculus, called LK\ast in
+this paper, is a novel one-sided sequent calculus with both additively and
+multiplicatively formulated disjunction rules. In this paper (a self-contained
+extended version of [23]), we give a full proof of (c) for expansion nets with
+respect to LK\ast, and in addition give a cut-elimination procedure internal to
+expansion nets - this makes expansion nets the first notion of proof-net for
+classical logic satisfying all four criteria.

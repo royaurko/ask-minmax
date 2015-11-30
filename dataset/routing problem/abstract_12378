@@ -1,0 +1,8 @@
+We consider the problem of testing distribution identity. Given a sequence of
+independent samples from an unknown distribution on a domain of size n, the
+goal is to check if the unknown distribution approximately equals a known
+distribution on the same domain. While Batu, Fortnow, Fischer, Kumar,
+Rubinfeld, and White (FOCS 2001) proved that the sample complexity of the
+problem is O~(sqrt(n) * poly(1/epsilon)), the running time of their tester is
+much higher: O(n) + O~(sqrt(n) * poly(1/epsilon)). We modify their tester to
+achieve a running time of O~(sqrt(n) * poly(1/epsilon)).

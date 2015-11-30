@@ -1,0 +1,21 @@
+Landin's SECD machine was the first abstract machine for applicative
+expressions, i.e., functional programs. Landin's J operator was the first
+control operator for functional languages, and was specified by an extension of
+the SECD machine. We present a family of evaluation functions corresponding to
+this extension of the SECD machine, using a series of elementary
+transformations (transformation into continu-ation-passing style (CPS) and
+defunctionalization, chiefly) and their left inverses (transformation into
+direct style and refunctionalization). To this end, we modernize the SECD
+machine into a bisimilar one that operates in lockstep with the original one
+but that (1) does not use a data stack and (2) uses the caller-save rather than
+the callee-save convention for environments. We also identify that the dump
+component of the SECD machine is managed in a callee-save way. The caller-save
+counterpart of the modernized SECD machine precisely corresponds to Thielecke's
+double-barrelled continuations and to Felleisen's encoding of J in terms of
+call/cc. We then variously characterize the J operator in terms of CPS and in
+terms of delimited-control operators in the CPS hierarchy. As a byproduct, we
+also present several reduction semantics for applicative expressions with the J
+operator, based on Curien's original calculus of explicit substitutions. These
+reduction semantics mechanically correspond to the modernized versions of the
+SECD machine and to the best of our knowledge, they provide the first syntactic
+theories of applicative expressions with the J operator.

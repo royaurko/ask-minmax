@@ -1,0 +1,12 @@
+Acceleration in symbolic verification consists in computing the exact effect
+of some control-flow loops in order to speed up the iterative fix-point
+computation of reachable states. Even if no termination guarantee is provided
+in theory, successful results were obtained in practice by different tools
+implementing this framework. In this paper, the acceleration framework is
+extended to data-flow analysis. Compared to a classical
+widening/narrowing-based abstract interpretation, the loss of precision is
+controlled here by the choice of the abstract domain and does not depend on the
+way the abstract value is computed. Our approach is geared towards precision,
+but we don't loose efficiency on the way. Indeed, we provide a cubic-time
+acceleration-based algorithm for solving interval constraints with full
+multiplication.

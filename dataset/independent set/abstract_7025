@@ -1,0 +1,15 @@
+The canonical correlation analysis (CCA) is commonly used to analyze data
+sets with paired data, e.g. measurements of gene expression and metabolomic
+intensities of the same experiments. This allows to find interesting
+relationships between the data sets, e.g. they can be assigned to biological
+processes. However, it can be difficult to interpret the processes and often
+the relationships observed are not related to the experimental design but to
+some unknown parameters.
+  Here we present an extension of the penalized CCA, the supervised penalized
+approach (spCCA), where the experimental design is used as a third data set and
+the correlation of the biological data sets with the design data set is
+maximized to find interpretable and meaningful canonical variables. The spCCA
+was successfully tested on a data set of Arabidopsis thaliana with gene
+expression and metabolite intensity measurements and resulted in eight
+significant canonical variables and their interpretation. We provide an
+R-package under the GPL license.

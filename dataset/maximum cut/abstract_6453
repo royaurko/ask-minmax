@@ -1,0 +1,10 @@
+A maximum weighted matching for bipartite graphs $G=(A \cup B,E)$ can be
+found by using the algorithm of Edmonds and Karp with a Fibonacci Heap and a
+modified Dijkstra in $O(nm + n^2 \log{n})$ time where n is the number of nodes
+and m the number of edges. For the case that $|A|=|B|$ the number of edges is
+$n^2$ and therefore the complexity is $O(n^3)$. In this paper we want to
+present a simple heuristic method to reduce the number of edges of complete
+bipartite graphs $G=(A \cup B,E)$ with $|A|=|B|$ such that $m = n\log{n}$ and
+therefore the complexity of such that $m = n\log{n}$ and therefore the
+complexity of $O(n^2 \log{n})$. The weights of all edges in G must be uniformly
+distributed in [0,1].

@@ -1,0 +1,15 @@
+The problem of optimal mass transport arises in numerous applications
+including image registration, mesh generation, reflector design, and
+astrophysics. One approach to solving this problem is via the Monge-Amp\`ere
+equation. While recent years have seen much work in the development of
+numerical methods for solving this equation, very little has been done on the
+implementation of the transport boundary condition. In this paper, we propose a
+method for solving the transport problem by iteratively solving a
+Monge-Amp\`ere equation with Neumann boundary conditions. To enable mappings
+between variable densities, we extend an earlier discretization of the equation
+to allow for right-hand sides that depend on gradients of the solution [Froese
+and Oberman, SIAM J. Numer. Anal., 49 (2011) 1692--1714]. This discretization
+provably converges to the viscosity solution. The resulting system is solved
+efficiently with Newton's method. We provide several challenging computational
+examples that demonstrate the effectiveness and efficiency ($O(M)-O(M^{1.3})$
+time) of the proposed method.

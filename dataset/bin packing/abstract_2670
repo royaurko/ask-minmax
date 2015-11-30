@@ -1,0 +1,21 @@
+This paper is our second step towards developing a theory of testing
+monomials in multivariate polynomials. The central question is to ask whether a
+polynomial represented by an arithmetic circuit has some types of monomials in
+its sum-product expansion. The complexity aspects of this problem and its
+variants have been investigated in our first paper by Chen and Fu (2010),
+laying a foundation for further study. In this paper, we present two pairs of
+algorithms. First, we prove that there is a randomized $O^*(p^k)$ time
+algorithm for testing $p$-monomials in an $n$-variate polynomial of degree $k$
+represented by an arithmetic circuit, while a deterministic $O^*(6.4^k + p^k)$
+time algorithm is devised when the circuit is a formula, here $p$ is a given
+prime number. Second, we present a deterministic $O^*(2^k)$ time algorithm for
+testing multilinear monomials in $\Pi_m\Sigma_2\Pi_t\times \Pi_k\Pi_3$
+polynomials, while a randomized $O^*(1.5^k)$ algorithm is given for these
+polynomials. The first algorithm extends the recent work by Koutis (2008) and
+Williams (2009) on testing multilinear monomials. Group algebra is exploited in
+the algorithm designs, in corporation with the randomized polynomial identity
+testing over a finite field by Agrawal and Biswas (2003), the deterministic
+noncommunicative polynomial identity testing by Raz and Shpilka (2005) and the
+perfect hashing functions by Chen {\em at el.} (2007). Finally, we prove that
+testing some special types of multilinear monomial is W[1]-hard, giving
+evidence that testing for specific monomials is not fixed-parameter tractable.

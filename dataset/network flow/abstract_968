@@ -1,0 +1,13 @@
+Linking two network flows that have the same source is essential in intrusion
+detection or in tracing anonymous connections. To improve the performance of
+this process, the flow can be modified (fingerprinted) to make it more
+distinguishable. However, an adversary located in the middle can modify the
+flow to impair the correlation by delaying the packets or introducing dummy
+traffic.
+  We introduce a game-theoretic framework for this problem, that is used to
+derive the Nash Equilibrium. As obtaining the optimal adversary delays
+distribution is intractable, some approximations are done. We study the
+concrete example where these delays follow a truncated Gaussian distribution.
+We also compare the optimal strategies with other fingerprinting schemes. The
+results are useful for understanding the limits of flow correlation based on
+packet timings under an active attacker.

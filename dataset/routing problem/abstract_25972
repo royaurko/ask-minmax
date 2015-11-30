@@ -1,0 +1,14 @@
+We address the problem of likelihood based inference for correlated diffusion
+processes using Markov chain Monte Carlo (MCMC) techniques. Such a task
+presents two interesting problems. First, the construction of the MCMC scheme
+should ensure that the correlation coefficients are updated subject to the
+positive definite constraints of the diffusion matrix. Second, a diffusion may
+only be observed at a finite set of points and the marginal likelihood for the
+parameters based on these observations is generally not available. We overcome
+the first issue by using the Cholesky factorisation on the diffusion matrix. To
+deal with the likelihood unavailability, we generalise the data augmentation
+framework of Roberts and Stramer (2001 Biometrika 88(3):603-621) to
+d-dimensional correlated diffusions including multivariate stochastic
+volatility models. Our methodology is illustrated through simulation based
+experiments and with daily EUR /USD, GBP/USD rates together with their implied
+volatilities.

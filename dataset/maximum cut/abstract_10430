@@ -1,0 +1,17 @@
+We investigate a variation of the graph coloring game, as studied in [2]. In
+the original coloring game, two players, Alice and Bob, alternate coloring
+vertices on a graph with legal colors from a fixed color set, where a color
+{\alpha} is legal for a vertex if said vertex has no neighbors colored
+{\alpha}. Other variations of the game change this definition of a legal color.
+For a fixed color set, Alice wins the game if all vertices are colored when the
+game ends, while Bob wins if there is a point in the game in which a vertex
+cannot be assigned a legal color. The least number of colors needed for Alice
+to have a winning strategy on a graph G is called the game chromatic number of
+G, and is denoted \c{hi}g(G). A well studied variation is the d-relaxed
+coloring game [5] in which a legal coloring of a graph G is defined as any
+assignment of colors to V (G) such that the subgraph of G induced by any color
+class has maximum degree d. We focus on the k-clique-relaxed n-coloring game. A
+k-clique-relaxed n-coloring of a graph G is an n-coloring in which the subgraph
+of G induced by any color class has maximum clique size k or less. In other
+words, a k-clique-relaxed n-coloring of G is an assignment of n colors to V (G)
+in which there are no monochromatic (k + 1)-cliques.

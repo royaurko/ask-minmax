@@ -1,0 +1,17 @@
+The task of similarity search in multimedia databases is usually accomplished
+by range or k nearest neighbor queries. However, the expressing power of these
+"single-example" queries fails when the user's delicate query intent is not
+available as a single example. Recently, the well-known skyline operator was
+reused in metric similarity search as a "multi-example" query type. When
+applied on a multi-dimensional database (i.e., on a multi-attribute table), the
+traditional skyline operator selects all database objects that are not
+dominated by other objects. The metric skyline query adopts the skyline
+operator such that the multiple attributes are represented by distances
+(similarities) to multiple query examples. Hence, we can view the metric
+skyline as a set of representative database objects which are as similar to all
+the examples as possible and, simultaneously, are semantically distinct. In
+this paper we propose a technique of processing the metric skyline query by use
+of PM-tree, while we show that our technique significantly outperforms the
+original M-tree based implementation in both time and space costs. In
+experiments we also evaluate the partial metric skyline processing, where only
+a controlled number of skyline objects is retrieved.

@@ -1,0 +1,18 @@
+We present a Monte Carlo method for the direct evaluation of the difference
+between the free energies of two crystal structures. The method is built on a
+lattice-switch transformation that maps a configuration of one structure onto a
+candidate configuration of the other by `switching' one set of lattice vectors
+for the other, while keeping the displacements with respect to the lattice
+sites constant. The sampling of the displacement configurations is biased,
+multicanonically, to favor paths leading to `gateway' arrangements for which
+the Monte Carlo switch to the candidate configuration will be accepted. The
+configurations of both structures can then be efficiently sampled in a single
+process, and the difference between their free energies evaluated from their
+measured probabilities. We explore and exploit the method in the context of
+extensive studies of systems of hard spheres. We show that the efficiency of
+the method is controlled by the extent to which the switch conserves correlated
+microstructure. We also show how, microscopically, the procedure works: the
+system finds gateway arrangements which fulfill the sampling bias
+intelligently. We establish, with high precision, the differences between the
+free energies of the two close packed structures (fcc and hcp) in both the
+constant density and the constant pressure ensembles.

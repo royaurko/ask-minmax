@@ -1,0 +1,16 @@
+In this paper, a method for efficient scheduling to obtain optimum job
+throughput in a distributed campus grid environment is presented; Traditional
+job schedulers determine job scheduling using user and job resource attributes.
+User attributes are related to current usage, historical usage, user priority
+and project access. Job resource attributes mainly comprise of soft
+requirements (compilers, libraries) and hard requirements like memory, storage
+and interconnect. A job scheduler dispatches jobs to a resource if a job's hard
+and soft requirements are met by a resource. In current scenario during
+execution of a job, if a resource becomes unavailable, schedulers are presented
+with limited options, namely re-queuing job or migrating job to a different
+resource. Both options are expensive in terms of data and compute time. These
+situations can be avoided, if the often ignored factor, availability time of a
+resource in a grid environment is considered. We propose resource rank
+approach, in which jobs are dispatched to a resource which has the highest rank
+among all resources that match the job's requirement. The results show that our
+approach can increase throughput of many serial / monolithic jobs.

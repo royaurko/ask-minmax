@@ -1,0 +1,8 @@
+We present a tableau-based algorithm for deciding satisfiability for
+propositional dynamic logic (PDL) which builds a finite rooted tree with
+ancestor loops and passes extra information from children to parents to
+separate good loops from bad loops during backtracking. It is easy to
+implement, with potential for parallelisation, because it constructs a
+pseudo-model ``on the fly'' by exploring each tableau branch independently. But
+its worst-case behaviour is 2EXPTIME rather than EXPTIME. A prototype
+implementation in the TWB (http://twb.rsise.anu.edu.au) is available.

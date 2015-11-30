@@ -1,0 +1,22 @@
+We introduce a variant of the capacitated vehicle routing problem that is
+encountered in sensor networks for scientific data collection. Consider an
+undirected graph $G=(V \cup \{\mathbf{sink}\},E)$. Each vertex $v \in V$ holds
+a constant-sized reading normalized to 1 byte that needs to be communicated to
+the $\mathbf{sink}$. The communication protocol is defined such that readings
+travel in packets. The packets have a capacity of $k$ bytes. We define a {\em
+packet hop} to be the communication of a packet from a vertex to its neighbor.
+Each packet hop drains one unit of energy and therefore, we need to communicate
+the readings to the $\mathbf{sink}$ with the fewest number of hops.
+  We show this problem to be NP-hard and counter it with a simple distributed
+$(2-\frac{3}{2k})$-approximation algorithm called {\tt SPT} that uses the
+shortest path tree rooted at the $\mathbf{sink}$. We also show that {\tt SPT}
+is absolutely optimal when $G$ is a tree and asymptotically optimal when $G$ is
+a grid. Furthermore, {\tt SPT} has two nice properties. Firstly, the readings
+always travel along a shortest path toward the $\mathbf{sink}$, which makes it
+an appealing solution to the convergecast problem as it fits the natural
+intuition. Secondly, each node employs a very elementary packing strategy.
+Given all the readings that enter into the node, it sends out as many fully
+packed packets as possible followed by at most 1 partial packet. We show that
+any solution that has either one of the two properties cannot be a
+$(2-\epsilon)$-approximation, for any fixed $\epsilon > 0$. This makes \spt
+optimal for the class of algorithms that obey either one of those properties.

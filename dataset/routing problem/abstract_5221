@@ -1,0 +1,16 @@
+Although the classical LQR design method has been very successful in real
+world engineering designs, in some cases, the classical design method needs
+modifications because of the saturation in actuators. This modified problem is
+sometimes called the constrained LQR design. For discrete systems, the
+constrained LQR design problem is equivalent to a convex quadratic programming
+problem with box constraints. We will show that the interior-point method is
+very efficient for this problem because an initial interior point is available,
+a condition which is not true for general convex quadratic programming problem.
+We will devise an effective and efficient algorithm for the constrained LQR
+design problem using the special structure of the box constraints and a
+recently introduced arc-search technique for the interior-point algorithm. We
+will prove that the algorithm is polynomial and has the best-known complexity
+bound for the convex quadratic programming. The proposed algorithm is
+implemented in MATLAB. An example for the constrained LQR design is provided to
+show the effectiveness and efficiency of the design method. The proposed
+algorithm can easily be used for model predictive control.

@@ -1,0 +1,20 @@
+To draw inferences about gamma-ray burst (GRB) source populations based on
+Swift observations, it is essential to understand the detection efficiency of
+the Swift burst alert telescope (BAT). This study considers the problem of
+modeling the Swift/BAT triggering algorithm for long GRBs, a computationally
+expensive procedure, and models it using machine learning algorithms. A large
+sample of simulated GRBs from Lien 2014 is used to train various models: random
+forests, boosted decision trees (with AdaBoost), support vector machines, and
+artificial neural networks. The best models have accuracies of $\gtrsim97\%$
+($\lesssim 3\%$ error), which is a significant improvement on a cut in GRB flux
+which has an accuracy of $89.6\%$ ($10.4\%$ error). These models are then used
+to measure the detection efficiency of Swift as a function of redshift $z$,
+which is used to perform Bayesian parameter estimation on the GRB rate
+distribution. We find a local GRB rate density of $n_0 \sim
+0.48^{+0.41}_{-0.23} \ {\rm Gpc}^{-3} {\rm yr}^{-1}$ with power-law indices of
+$n_1 \sim 1.7^{+0.6}_{-0.5}$ and $n_2 \sim -5.9^{+5.7}_{-0.1}$ for GRBs above
+and below a break point of $z_1 \sim 6.8^{+2.8}_{-3.2}$. This methodology is
+able to improve upon earlier studies by more accurately modeling Swift
+detection and using this for fully Bayesian model fitting. The code used in
+this is analysis is publicly available online
+(https://github.com/PBGraff/SwiftGRB_PEanalysis).

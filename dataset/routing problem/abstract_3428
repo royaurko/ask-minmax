@@ -1,0 +1,26 @@
+The stable marriage (SM) problem has a wide variety of practical
+applications, ranging from matching resident doctors to hospitals, to matching
+students to schools, or more generally to any two-sided market. In the
+classical formulation, n men and n women express their preferences (via a
+strict total order) over the members of the other sex. Solving a SM problem
+means finding a stable marriage where stability is an envy-free notion: no man
+and woman who are not married to each other would both prefer each other to
+their partners or to being single. We consider both the classical stable
+marriage problem and one of its useful variations (denoted SMTI) where the men
+and women express their preferences in the form of an incomplete preference
+list with ties over a subset of the members of the other sex. Matchings are
+permitted only with people who appear in these lists, an we try to find a
+stable matching that marries as many people as possible. Whilst the SM problem
+is polynomial to solve, the SMTI problem is NP-hard. We propose to tackle both
+problems via a local search approach, which exploits properties of the problems
+to reduce the size of the neighborhood and to make local moves efficiently. We
+evaluate empirically our algorithm for SM problems by measuring its runtime
+behaviour and its ability to sample the lattice of all possible stable
+marriages. We evaluate our algorithm for SMTI problems in terms of both its
+runtime behaviour and its ability to find a maximum cardinality stable
+marriage.For SM problems, the number of steps of our algorithm grows only as
+O(nlog(n)), and that it samples very well the set of all stable marriages. It
+is thus a fair and efficient approach to generate stable marriages.Furthermore,
+our approach for SMTI problems is able to solve large problems, quickly
+returning stable matchings of large and often optimal size despite the
+NP-hardness of this problem.

@@ -1,0 +1,16 @@
+We investigate unification problems related to the Cipher Block Chaining
+(CBC) mode of encryption. We first model chaining in terms of a simple,
+convergent, rewrite system over a signature with two disjoint sorts: list and
+element. By interpreting a particular symbol of this signature suitably, the
+rewrite system can model several practical situations of interest. An inference
+procedure is presented for deciding the unification problem modulo this rewrite
+system. The procedure is modular in the following sense: any given problem is
+handled by a system of `list-inferences', and the set of equations thus derived
+between the element-terms of the problem is then handed over to any
+(`black-box') procedure which is complete for solving these element-equations.
+An example of application of this unification procedure is given, as attack
+detection on a Needham-Schroeder like protocol, employing the CBC encryption
+mode based on the associative-commutative (AC) operator XOR. The 2-sorted
+convergent rewrite system is then extended into one that fully captures a block
+chaining encryption-decryption mode at an abstract level, using no AC-symbols;
+and unification modulo this extended system is also shown to be decidable.

@@ -1,0 +1,20 @@
+Network service providers and customers are often concerned with aggregate
+performance measures that span multiple network paths. Unfortunately, forming
+such network-wide measures can be difficult, due to the issues of scale
+involved. In particular, the number of paths grows too rapidly with the number
+of endpoints to make exhaustive measurement practical. As a result, it is of
+interest to explore the feasibility of methods that dramatically reduce the
+number of paths measured in such situations while maintaining acceptable
+accuracy.
+  We cast the problem as one of statistical prediction--in the spirit of the
+so-called `kriging' problem in spatial statistics--and show that end-to-end
+network properties may be accurately predicted in many cases using a
+surprisingly small set of carefully chosen paths. More precisely, we formulate
+a general framework for the prediction problem, propose a class of linear
+predictors for standard quantities of interest (e.g., averages, totals,
+differences) and show that linear algebraic methods of subset selection may be
+used to effectively choose which paths to measure. We characterize the
+performance of the resulting methods, both analytically and numerically. The
+success of our methods derives from the low effective rank of routing matrices
+as encountered in practice, which appears to be a new observation in its own
+right with potentially broad implications on network measurement generally.

@@ -1,0 +1,26 @@
+In this paper, we define and study the new problem Simultaneous PQ-Ordering.
+Its input consists of a set of PQ-trees, which represent sets of circular
+orders of their leaves, together with a set of child-parent relations between
+these PQ-trees, such that the leaves of the child form a subset of the leaves
+of the parent. Simultaneous PQ-Ordering asks whether orders of the leaves of
+each of the trees can be chosen simultaneously, that is, for every child-parent
+relation the order chosen for the parent is an extension of the order chosen
+for the child. We show that Simultaneous PQ-Ordering is NP-complete in general
+and that it is efficiently solvable for a special subset of instances, the
+2-fixed instances. We then show that several constrained embedding problems can
+be formulated as such 2-fixed instances.
+  In particular, we obtain a linear-time algorithm for Partially PQ-Constrained
+Planarity for biconnected graphs, a common generalization of two recently
+considered embedding problems, and a quadratic-time algorithm for Simultaneous
+Embedding with Fixed Edges for biconnected graphs with a connected
+intersection; formerly only the much more restricted case that the intersection
+is biconnected was known to be efficiently solvable. Both results can be
+extended to the case where the input graphs are not necessarily biconnected but
+have the property that each cutvertex is contained in at most two non-trivial
+blocks. This includes for example the case where both graphs have maximum
+degree 5. Moreover, we give an optimal linear-time algorithm for recognition of
+simultaneous interval graphs, improving upon a recent O(n^2 log n)-time
+algorithm due to Jampani and Lubiw and show that this can be used to also solve
+the problem of extending partial interval representations of graphs with n
+vertices and m edges in time O(n + m), improving a recent result of Klav\'ik et
+al.

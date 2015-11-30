@@ -1,0 +1,11 @@
+Suppose we have n keys, n access probabilities for the keys, and n+1 access
+probabilities for the gaps between the keys. Let h_min(n) be the minimal height
+of a binary search tree for n keys. We consider the problem to construct an
+optimal binary search tree with near minimal height, i.e.\ with height h <=
+h_min(n) + Delta for some fixed Delta. It is shown, that for any fixed Delta
+optimal binary search trees with near minimal height can be constructed in time
+O(n^2). This is as fast as in the unrestricted case.
+  So far, the best known algorithms for the construction of height-restricted
+optimal binary search trees have running time O(L n^2), whereby L is the
+maximal permitted height. Compared to these algorithms our algorithm is at
+least faster by a factor of log n, because L is lower bounded by log n.

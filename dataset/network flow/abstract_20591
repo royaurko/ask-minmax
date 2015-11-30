@@ -1,0 +1,25 @@
+The majority of research on efficient and scalable algorithms in
+computational science and engineering has focused on the forward problem: given
+parameter inputs, solve the governing equations to determine output quantities
+of interest. In contrast, here we consider the broader question: given a
+(large-scale) model containing uncertain parameters, (possibly) noisy
+observational data, and a prediction quantity of interest, how do we construct
+efficient and scalable algorithms to (1) infer the model parameters from the
+data (the deterministic inverse problem), (2) quantify the uncertainty in the
+inferred parameters (the Bayesian inference problem), and (3) propagate the
+resulting uncertain parameters through the model to issue predictions with
+quantified uncertainties (the forward uncertainty propagation problem)? We
+present efficient and scalable algorithms for this end-to-end,
+data-to-prediction process under the Gaussian approximation and in the context
+of modeling the flow of the Antarctic ice sheet and its effect on sea level.
+The ice is modeled as a viscous, incompressible, creeping, shear-thinning
+fluid. The observational data come from InSAR satellite measurements of surface
+ice flow velocity, and the uncertain parameter field to be inferred is the
+basal sliding parameter. The prediction quantity of interest is the present-day
+ice mass flux from the Antarctic continent to the ocean. We show that the work
+required for executing this data-to-prediction process is independent of the
+state dimension, parameter dimension, data dimension, and number of processor
+cores. The key to achieving this dimension independence is to exploit the fact
+that the observational data typically provide only sparse information on model
+parameters. This property can be exploited to construct a low rank
+approximation of the linearized parameter-to-observable map.

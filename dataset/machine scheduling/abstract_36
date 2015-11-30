@@ -1,0 +1,13 @@
+In the classical interval scheduling type of problems, a set of $n$ jobs,
+characterized by their start and end time, need to be executed by a set of
+machines, under various constraints. In this paper we study a new variant in
+which the jobs need to be assigned to at most $k$ identical machines, such that
+the minimum number of machines that are busy at the same time is maximized.
+This is relevant in the context of genome sequencing and haplotyping,
+specifically when a set of DNA reads aligned to a genome needs to be pruned so
+that no more than $k$ reads overlap, while maintaining as much read coverage as
+possible across the entire genome. We show that the problem can be solved in
+time $O(n^2\log k / \log n)$ by a reduction to max-flows. Because this
+complexity is infeasible in this application, we also give an $O(n\log n)$-time
+approximation algorithm with approximation ratio $\rho =\frac{k}{\lfloor k/2
+\rfloor}$.

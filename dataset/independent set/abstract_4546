@@ -1,0 +1,26 @@
+We develop results for the use of Lasso and Post-Lasso methods to form
+first-stage predictions and estimate optimal instruments in linear instrumental
+variables (IV) models with many instruments, $p$. Our results apply even when
+$p$ is much larger than the sample size, $n$. We show that the IV estimator
+based on using Lasso or Post-Lasso in the first stage is root-n consistent and
+asymptotically normal when the first-stage is approximately sparse; i.e. when
+the conditional expectation of the endogenous variables given the instruments
+can be well-approximated by a relatively small set of variables whose
+identities may be unknown. We also show the estimator is semi-parametrically
+efficient when the structural error is homoscedastic. Notably our results allow
+for imperfect model selection, and do not rely upon the unrealistic "beta-min"
+conditions that are widely used to establish validity of inference following
+model selection. In simulation experiments, the Lasso-based IV estimator with a
+data-driven penalty performs well compared to recently advocated
+many-instrument-robust procedures. In an empirical example dealing with the
+effect of judicial eminent domain decisions on economic outcomes, the
+Lasso-based IV estimator outperforms an intuitive benchmark.
+  In developing the IV results, we establish a series of new results for Lasso
+and Post-Lasso estimators of nonparametric conditional expectation functions
+which are of independent theoretical and practical interest. We construct a
+modification of Lasso designed to deal with non-Gaussian, heteroscedastic
+disturbances which uses a data-weighted $\ell_1$-penalty function. Using
+moderate deviation theory for self-normalized sums, we provide convergence
+rates for the resulting Lasso and Post-Lasso estimators that are as sharp as
+the corresponding rates in the homoscedastic Gaussian case under the condition
+that $\log p = o(n^{1/3})$.

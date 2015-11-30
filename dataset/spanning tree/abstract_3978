@@ -1,0 +1,16 @@
+This paper addresses the design and implementation of BiLingual Information
+Retrieval system on the domain, Festivals. A generic platform is built for
+BiLingual Information retrieval which can be extended to any foreign or Indian
+language working with the same efficiency. Search for the solution of the query
+is not done in a specific predefined set of standard languages but is chosen
+dynamically on processing the user's query. This paper deals with Indian
+language Tamil apart from English. The task is to retrieve the solution for the
+user given query in the same language as that of the query. In this process, a
+Ontological tree is built for the domain in such a way that there are entries
+in the above listed two languages in every node of the tree. A Part-Of-Speech
+(POS) Tagger is used to determine the keywords from the given query. Based on
+the context, the keywords are translated to appropriate languages using the
+Ontological tree. A search is performed and documents are retrieved based on
+the keywords. With the use of the Ontological tree, Information Extraction is
+done. Finally, the solution for the query is translated back to the query
+language (if necessary) and produced to the user.

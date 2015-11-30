@@ -1,0 +1,27 @@
+Spectral partitioning is a simple, nearly-linear time, algorithm to find
+sparse cuts, and the Cheeger inequalities provide a worst-case guarantee for
+the quality of the approximation found by the algorithm. Local graph
+partitioning algorithms [ST08,ACL06,AP09] run in time that is nearly linear in
+the size of the output set, and their approximation guarantee is worse than the
+guarantee provided by the Cheeger inequalities by a polylogarithmic
+$\log^{\Omega(1)} n$ factor. It has been a long standing open problem to design
+a local graph clustering algorithm with an approximation guarantee close to the
+guarantee of the Cheeger inequalities and with a running time nearly linear in
+the size of the output.
+  In this paper we solve this problem; we design an algorithm with the same
+guarantee (up to a constant factor) as the Cheeger inequality, that runs in
+time slightly super linear in the size of the output. This is the first
+sublinear (in the size of the input) time algorithm with almost the same
+guarantee as the Cheeger's inequality. As a byproduct of our results, we prove
+a bicriteria approximation algorithm for the expansion profile of any graph.
+Let $\phi(\gamma) = \min_{\mu(S) \leq \gamma}\phi(S)$. There is a polynomial
+time algorithm that, for any $\gamma,\epsilon>0$, finds a set $S$ of measure
+$\mu(S)\leq 2\gamma^{1+\epsilon}$, and expansion $\phi(S)\leq
+\sqrt{2\phi(\gamma)/\epsilon}$. Our proof techniques also provide a simpler
+proof of the structural result of Arora, Barak, Steurer [ABS10], that can be
+applied to irregular graphs.
+  Our main technical tool is that for any set $S$ of vertices of a graph, a
+lazy $t$-step random walk started from a randomly chosen vertex of $S$, will
+remain entirely inside $S$ with probability at least $(1-\phi(S)/2)^t$. This
+itself provides a new lower bound to the uniform mixing time of any finite
+states reversible markov chain.

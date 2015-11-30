@@ -1,0 +1,19 @@
+The use of IP filtering to improve system security is well established, and
+although limited in what it can achieve has proved to be efficient and
+effective.
+  In the design of a security policy there is always a trade-off between
+usability and security. Restricting access means that legitimate use of the
+network is prevented; allowing access means illegitimate use may be allowed.
+Static access list make finding a balance particularly stark -- we pay the
+price of decreased security 100% of the time even if the benefit of increased
+usability is only gained 1% of the time.
+  Dynamic access lists would allow the rules to change for short periods of
+time, and to allow local changes by non-experts. The network administrator can
+set basic security guide-lines which allow certain basic services only. All
+other services are restricted, but users are able to request temporary
+exceptions in order to allow additional access to the network. These exceptions
+are granted depending on the privileges of the user.
+  This paper covers the following topics: (1) basic introduction to TCP/IP
+filtering; (2) semantics for dynamic access lists and; (3) a proposed protocol
+for allowing dynamic access; and (4) a method for representing access lists so
+that dynamic update and look-up can be done efficiently performed.

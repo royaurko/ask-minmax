@@ -1,0 +1,12 @@
+A primary computational problem in kernel regression is solution of a dense
+linear system with the $N\times N$ kernel matrix. Because a direct solution has
+an O($N^3$) cost, iterative Krylov methods are often used with fast
+matrix-vector products. For poorly conditioned problems, convergence of the
+iteration is slow and preconditioning becomes necessary. We investigate
+preconditioning from the viewpoint of scalability and efficiency. The problems
+that conventional preconditioners face when applied to kernel methods are
+demonstrated. A \emph{novel flexible preconditioner }that not only improves
+convergence but also allows utilization of fast kernel matrix-vector products
+is introduced. The performance of this preconditioner is first illustrated on
+synthetic data, and subsequently on a suite of test problems in kernel
+regression and geostatistical kriging.

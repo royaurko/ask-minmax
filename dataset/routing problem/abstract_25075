@@ -1,0 +1,15 @@
+Almost all time-dependent density-functional theory (TDDFT) calculations of
+excited states make use of the adiabatic approximation, which implies a
+frequency-independent exchange-correlation kernel that limits applications to
+one-hole/one-particle states. To remedy this problem, Maitra et
+al.[J.Chem.Phys. 120, 5932 (2004)] proposed dressed TDDFT (D-TDDFT), which
+includes explicit two-hole/two-particle states by adding a frequency-dependent
+term to adiabatic TDDFT. This paper offers the first extensive test of D-TDDFT,
+and its ability to represent excitation energies in a general fashion. We
+present D-TDDFT excited states for 28 chromophores and compare them with the
+benchmark results of Schreiber et al.[J.Chem.Phys. 128, 134110 (2008).] We find
+the choice of functional used for the A-TDDFT step to be critical for
+positioning the 1h1p states with respect to the 2h2p states. We observe that
+D-TDDFT without HF exchange increases the error in excitations already
+underestimated by A-TDDFT. This problem is largely remedied by implementation
+of D- TDDFT including Hartree-Fock exchange.

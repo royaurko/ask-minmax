@@ -1,0 +1,21 @@
+We have formulated the problem of generating periodic dense paritcle packings
+as an optimization problem called the Adaptive Shrinking Cell (ASC) formulation
+[S. Torquato and Y. Jiao, Phys. Rev. E {\bf 80}, 041104 (2009)]. Because the
+objective function and impenetrability constraints can be exactly linearized
+for sphere packings with a size distribution in $d$-dimensional Euclidean space
+$\mathbb{R}^d$, it is most suitable and natural to solve the corresponding ASC
+optimization problem using sequential linear programming (SLP) techniques. We
+implement an SLP solution to produce robustly a wide spectrum of jammed sphere
+packings in $\mathbb{R}^d$ for $d=2,3,4,5$ and $6$ with a diversity of disorder
+and densities up to the maximally densities. This deterministic algorithm can
+produce a broad range of inherent structures besides the usual disordered ones
+with very small computational cost by tuning the radius of the {\it influence
+sphere}. In three dimensions, we show that it can produce with high probability
+a variety of strictly jammed packings with a packing density anywhere in the
+wide range $[0.6, 0.7408...]$. We also apply the algorithm to generate various
+disordered packings as well as the maximally dense packings for $d=2,3, 4,5$
+and 6. Compared to the LS procedure, our SLP protocol is able to ensure that
+the final packings are truly jammed, produces disordered jammed packings with
+anomalously low densities, and is appreciably more robust and computationally
+faster at generating maximally dense packings, especially as the space
+dimension increases.

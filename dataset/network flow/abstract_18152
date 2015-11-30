@@ -1,0 +1,14 @@
+Network Address Translation (NAT) causes well-known difficulties for
+peer-to-peer (P2P) communication, since the peers involved may not be reachable
+at any globally valid IP address. Several NAT traversal techniques are known,
+but their documentation is slim, and data about their robustness or relative
+merits is slimmer. This paper documents and analyzes one of the simplest but
+most robust and practical NAT traversal techniques, commonly known as "hole
+punching." Hole punching is moderately well-understood for UDP communication,
+but we show how it can be reliably used to set up peer-to-peer TCP streams as
+well. After gathering data on the reliability of this technique on a wide
+variety of deployed NATs, we find that about 82% of the NATs tested support
+hole punching for UDP, and about 64% support hole punching for TCP streams. As
+NAT vendors become increasingly conscious of the needs of important P2P
+applications such as Voice over IP and online gaming protocols, support for
+hole punching is likely to increase in the future.

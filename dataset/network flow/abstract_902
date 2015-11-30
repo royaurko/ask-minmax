@@ -1,0 +1,18 @@
+We consider a basic model of a dynamical distribution network, modeled as a
+directed graph with storage variables corresponding to every vertex and flow
+inputs corresponding to every edge, subject to unknown but constant inflows and
+outflows. In [1] we showed how a distributed proportionalintegral controller
+structure, associating with every edge of the graph a controller state,
+regulates the state variables of the vertices, irrespective of the unknown
+constant inflows and outflows, in the sense that the storage variables converge
+to the same value (load balancing or consensus). In many practical cases, the
+flows on the edges are constrained. The main result of [1] is a sufficient and
+necessary condition, which only depend on the structure of the network, for
+load balancing for arbitrary constraint intervals of which the intersection has
+nonempty interior. In this paper, we will consider the question about how to
+decide the steady states of the same model as in [1] with given network
+structure and constraint intervals. We will derive a graphic condition, which
+is sufficient and necessary, for load balancing. This will be proved by a
+Lyapunov function and the analysis the kernel of incidence matrix of the
+network. Furthermore, we will show that by modified PI controller, the storage
+variable on the nodes can be driven to an arbitrary point of admissible set.

@@ -1,0 +1,13 @@
+Using Hermite's formulation of polynomial stability conditions, static output
+feedback (SOF) controller design can be formulated as a polynomial matrix
+inequality (PMI), a (generally nonconvex) nonlinear semidefinite programming
+problem that can be solved (locally) with PENNON, an implementation of a
+penalty method. Typically, Hermite SOF PMI problems are badly scaled and
+experiments reveal that this has a negative impact on the overall performance
+of the solver. In this note we recall the algebraic interpretation of Hermite's
+quadratic form as a particular Bezoutian and we use results on polynomial
+interpolation to express the Hermite PMI in a Lagrange polynomial basis, as an
+alternative to the conventional power basis. Numerical experiments on benchmark
+problem instances show the substantial improvement brought by the approach, in
+terms of problem scaling, number of iterations and convergence behavior of
+PENNON.

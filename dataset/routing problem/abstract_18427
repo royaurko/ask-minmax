@@ -1,0 +1,21 @@
+A local search algorithm solving an NP-complete optimisation problem can be
+viewed as a stochastic process moving in an 'energy landscape' towards
+eventually finding an optimal solution. For the random 3-satisfiability
+problem, the heuristic of focusing the local moves on the presently
+unsatisfiedclauses is known to be very effective: the time to solution has been
+observed to grow only linearly in the number of variables, for a given
+clauses-to-variables ratio $\alpha$ sufficiently far below the critical
+satisfiability threshold $\alpha_c \approx 4.27$. We present numerical results
+on the behaviour of three focused local search algorithms for this problem,
+considering in particular the characteristics of a focused variant of the
+simple Metropolis dynamics. We estimate the optimal value for the
+``temperature'' parameter $\eta$ for this algorithm, such that its linear-time
+regime extends as close to $\alpha_c$ as possible. Similar parameter
+optimisation is performed also for the well-known WalkSAT algorithm and for the
+less studied, but very well performing Focused Record-to-Record Travel method.
+We observe that with an appropriate choice of parameters, the linear time
+regime for each of these algorithms seems to extend well into ratios $\alpha >
+4.2$ -- much further than has so far been generally assumed. We discuss the
+statistics of solution times for the algorithms, relate their performance to
+the process of ``whitening'', and present some conjectures on the shape of
+their computational phase diagrams.

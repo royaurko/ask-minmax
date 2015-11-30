@@ -1,0 +1,17 @@
+The control system (TICS) for the test interferometer being built to support
+the development of the Atacama Large Millimeter Array (ALMA)will itself be a
+prototype for the final ALMA array, providing a test for the distributed
+control system under development. TICS will be based on the ALMA Common
+Software (ACS) (developed at the European Southern Observatory), which provides
+CORBA-based services and a device management framework for the control
+software.
+  Simple device controllers will run on single board computers, one of which
+(known as an LCU) is located at each antenna; whereas complex, compound device
+controllers may run on centrally located computers. In either circumstance,
+client programs may obtain direct CORBA references to the devices and their
+properties. Monitor and control requests are sent to devices or properties,
+which then process and forward the commands to the appropriate hardware devices
+as required. Timing requirements are met by tagging commands with (future)
+timestamps synchronized to a timing pulse, which is regulated by a central
+reference generator, and is distributed to all hardware devices in the array.
+Monitoring is provided through a publish/subscribe CORBA-based service.

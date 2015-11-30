@@ -1,0 +1,21 @@
+In multiprocessor systems, various problems are treated with Lamport's
+logical clock and the resultant logical time orders between operations.
+However, one often needs to face the high complexities caused by the lack of
+logical time order information in practice. In this paper, we utilize the
+\emph{global clock} to infuse the so-called \emph{pending period} to each
+operation in a multiprocessor system, where the pending period is a time
+interval that contains the performed time of the operation. Further, we define
+the \emph{physical time order} for any two operations with disjoint pending
+periods. The physical time order is obeyed by any real execution in
+multiprocessor systems due to that it is part of the truly happened operation
+orders restricted by global clock, and it is then proven to be independent and
+consistent with traditional logical time orders. The above novel yet
+fundamental concepts enables new effective approaches for analyzing
+multiprocessor systems, which are named \emph{pending period analysis} as a
+whole. As a consequence of pending period analysis, many important problems of
+multiprocessor systems can be tackled effectively. As a significant application
+example, complete memory consistency verification, which was known as an
+NP-hard problem, can be solved with the complexity of $O(n^2)$ (where $n$ is
+the number of operations). Moreover, the two event ordering problems, which
+were proven to be Co-NP-Hard and NP-hard respectively, can both be solved with
+the time complexity of O(n) if restricted by pending period information.

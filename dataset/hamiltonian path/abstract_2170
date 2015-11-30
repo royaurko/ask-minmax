@@ -1,0 +1,15 @@
+This paper reports on the INRIA group's approach to XML mining while
+participating in the INEX XML Mining track 2005. We use a flexible
+representation of XML documents that allows taking into account the structure
+only or both the structure and content. Our approach consists of representing
+XML documents by a set of their sub-paths, defined according to some criteria
+(length, root beginning, leaf ending). By considering those sub-paths as words,
+we can use standard methods for vocabulary reduction, and simple clustering
+methods such as K-means that scale well. We actually use an implementation of
+the clustering algorithm known as "dynamic clouds" that can work with distinct
+groups of independent variables put in separate variables. This is useful in
+our model since embedded sub-paths are not independent: we split potentially
+dependant paths into separate variables, resulting in each of them containing
+independant paths. Experiments with the INEX collections show good results for
+the structure-only collections, but our approach could not scale well for large
+structure-and-content collections.

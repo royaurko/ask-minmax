@@ -1,0 +1,18 @@
+This paper presents a study on multiple-antenna interference channels,
+accounting for general overhead as a function of the number of users and
+antennas in the network. The model includes both perfect and imperfect channel
+state information based on channel estimation in the presence of noise. Three
+low complexity methods are proposed for reducing the impact of overhead in the
+sum network throughput by partitioning users into orthogonal groups. The first
+method allocates spectrum to the groups equally, creating an imbalance in the
+sum rate of each group. The second proposed method allocates spectrum unequally
+among the groups to provide rate fairness. Finally, geographic grouping is
+proposed for cases where some receivers do not observe significant interference
+from other transmitters. For each partitioning method, the optimal solution not
+only requires a brute force search over all possible partitions, but also
+requires full channel state information, thereby defeating the purpose of
+partitioning. We therefore propose greedy methods to solve the problems,
+requiring no instantaneous channel knowledge. Simulations show that the
+proposed greedy methods switch from time-division to interference alignment as
+the coherence time of the channel increases, and have a small loss relative to
+optimal partitioning only at moderate coherence times.

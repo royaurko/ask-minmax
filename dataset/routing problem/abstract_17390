@@ -1,0 +1,16 @@
+This paper addresses the problem of rank aggregation, which aims to find a
+consensus ranking among multiple ranking inputs. Traditional rank aggregation
+methods are deterministic, and can be categorized into explicit and implicit
+methods depending on whether rank information is explicitly or implicitly
+utilized. Surprisingly, experimental results on real data sets show that
+explicit rank aggregation methods would not work as well as implicit methods,
+although rank information is critical for the task. Our analysis indicates that
+the major reason might be the unreliable rank information from incomplete
+ranking inputs. To solve this problem, we propose to incorporate uncertainty
+into rank aggregation and tackle the problem in both unsupervised and
+supervised scenario. We call this novel framework {stochastic rank aggregation}
+(St.Agg for short). Specifically, we introduce a prior distribution on ranks,
+and transform the ranking functions or objectives in traditional explicit
+methods to their expectations over this distribution. Our experiments on
+benchmark data sets show that the proposed St.Agg outperforms the baselines in
+both unsupervised and supervised scenarios.

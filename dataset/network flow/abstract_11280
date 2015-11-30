@@ -1,0 +1,12 @@
+When analysing gene expression time series data an often overlooked but
+crucial aspect of the model is that the regulatory network structure may change
+over time. Whilst some approaches have addressed this problem previously in the
+literature, many are not well suited to the sequential nature of the data. Here
+we present a method that allows us to infer regulatory network structures that
+may vary between time points, utilising a set of hidden states that describe
+the network structure at a given time point. To model the distribution of the
+hidden states we have applied the Hierarchical Dirichlet Process Hideen Markov
+Model, a nonparametric extension of the traditional Hidden Markov Model, that
+does not require us to fix the number of hidden states in advance. We apply our
+method to exisiting microarray expression data as well as demonstrating is
+efficacy on simulated test data.

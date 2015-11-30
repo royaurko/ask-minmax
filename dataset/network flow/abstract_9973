@@ -1,0 +1,11 @@
+Robust and accurate schemes are designed to simulate the coupling between
+subsurface and overland flows. The coupling conditions at the interface enforce
+the continuity of both the normal flux and the pressure. Richards' equation
+governing the subsurface flow is discretized using a Backward Differentiation
+Formula and a symmetric interior penalty Discontinuous Galerkin method. The
+kinematic wave equation governing the overland flow is discretized using a
+Godunov scheme. Both schemes individually are mass conservative and can be used
+within single-step or multi-step coupling algorithms that ensure overall mass
+conservation owing to a specific design of the interface fluxes in the
+multi-step case. Numerical results are presented to illustrate the performances
+of the proposed algorithms.

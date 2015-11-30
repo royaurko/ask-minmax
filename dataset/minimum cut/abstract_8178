@@ -1,0 +1,26 @@
+We compare four different methods of calculating uncertainty estimates in
+fitting parameterized models to RHESSI X-ray spectra, considering only
+statistical sources of error. Three of the four methods are based on estimating
+the scale-size of the minimum in a hypersurface formed by the weighted sum of
+the squares of the differences between the model fit and the data as a function
+of the fit parameters, and are implemented as commonly practiced. The fourth
+method uses Bayesian data analysis and Markov chain Monte Carlo (MCMC)
+techniques to calculate an uncertainty estimate. Two flare spectra are modeled:
+one from the GOES X1.3 class flare of 19 January 2005, and the other from the
+X4.8 flare of 23 July 2002. The four methods give approximately the same
+uncertainty estimates for the 19 January 2005 spectral fit parameters, but lead
+to very different uncertainty estimates for the 23 July 2002 spectral fit. This
+is because each method implements different analyses of the hypersurface,
+yielding method-dependent results that differ greatly depending on the shape of
+the hypersurface. For the 23 July 2002 flare data, there is a 95% probability
+that the low energy cutoff lies below approximately 40 keV, and a 68%
+probability that it lies in the range 7-36 keV. The low-energy cutoff for the
+19 January 2005 flare is more tightly constrained to 107+/-4 keV (68%
+probability). Using the Bayesian/MCMC approach, we also estimate for the first
+time probability density functions (PDFs) for the total number of flare
+accelerated electrons and the energy they carry. For the 23 July 2002 event,
+these PDFs are asymmetric with long tails orders of magnitude higher than the
+most probable value, caused by the poorly constrained value of the low-energy
+cutoff. For the 19 January 2005 flare spectrum, the PDFs for the total number
+of flare accelerated electrons and their energy are much more symmetric and
+narrow.

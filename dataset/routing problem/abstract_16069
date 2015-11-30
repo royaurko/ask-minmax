@@ -1,0 +1,17 @@
+A basic assumption of molecular biology is that proteins sharing close
+three-dimensional (3D) structures are likely to share a common function and in
+most cases derive from a same ancestor. Computing the similarity between two
+protein structures is therefore a crucial task and has been extensively
+investigated. Evaluating the similarity of two proteins can be done by finding
+an optimal one-to-one matching between their components, which is equivalent to
+identifying a maximum weighted clique in a specific "alignment graph". In this
+paper we present a new integer programming formulation for solving such clique
+problems. The model has been implemented using the ILOG CPLEX Callable Library.
+In addition, we designed a dedicated branch and bound algorithm for solving the
+maximum cardinality clique problem. Both approaches have been integrated in
+VAST (Vector Alignment Search Tool) - a software for aligning protein 3D
+structures largely used in NCBI (National Center for Biotechnology
+Information). The original VAST clique solver uses the well known Bron and
+Kerbosh algorithm (BK). Our computational results on real life protein
+alignment instances show that our branch and bound algorithm is up to 116 times
+faster than BK for the largest proteins.

@@ -1,0 +1,22 @@
+We propose a new pattern recognition method that is able to reconstruct the
+3D structure of the active part of a fault network using the spatial location
+of earthquakes. The method is a generalization of the so-called dynamic
+clustering method, that originally partitions a set of datapoints into
+clusters, using a global minimization criterion over the spatial inertia of
+those clusters. The new method improves on it by taking into account the full
+spatial inertia tensor of each cluster, in order to partition the dataset into
+fault-like, anisotropic clusters. Given a catalog of seismic events, the output
+is the optimal set of plane segments that fits the spatial structure of the
+data. Each plane segment is fully characterized by its location, size and
+orientation. The main tunable parameter is the accuracy of the earthquake
+localizations, which fixes the resolution, i.e. the residual variance of the
+fit. The resolution determines the number of fault segments needed to describe
+the earthquake catalog, the better the resolution, the finer the structure of
+the reconstructed fault segments. The algorithm reconstructs successfully the
+fault segments of synthetic earthquake catalogs. Applied to the real catalog
+constituted of a subset of the aftershocks sequence of the 28th June 1992
+Landers earthquake in Southern California, the reconstructed plane segments
+fully agree with faults already known on geological maps, or with blind faults
+that appear quite obvious on longer-term catalogs. Future improvements of the
+method are discussed, as well as its potential use in the multi-scale study of
+the inner structure of fault zones.

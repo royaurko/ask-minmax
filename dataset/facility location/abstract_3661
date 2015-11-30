@@ -1,0 +1,24 @@
+It is often said that one of the biggest limitations on computer performance
+is memory bandwidth (i.e."the memory wall problem"). In this position paper, I
+argue that if historical trends in computing evolution (where growth in
+available capacity is exponential and reduction in its access latencies is
+linear) continue as they have, then this view is wrong - in fact we ought to be
+concentrating on reducing whole system memory access latencies wherever
+possible, and by "whole system" I mean that we ought to look at how software
+can be unnecessarily wasteful with memory bandwidth due to legacy design
+decisions. To this end I conduct a feasibility study to determine whether we
+ought to virtualise the MMU for each application process such that it has
+direct access to its own MMU page tables and the memory allocated to a process
+is managed exclusively by the process and not the kernel. I find under typical
+conditions that nearly scale invariant performance to memory allocation size is
+possible such that hundreds of megabytes of memory can be allocated, relocated,
+swapped and deallocated in almost the same time as kilobytes (e.g. allocating
+8Mb is 10x quicker under this experimental allocator than a conventional
+allocator, and resizing a 128Kb block to 256Kb block is 4.5x faster). I find
+that first time page access latencies are improved tenfold; moreover, because
+the kernel page fault handler is never called, the lack of cache pollution
+improves whole application memory access latencies increasing performance by up
+to 2x. Finally, I try binary patching existing applications to use the
+experimental allocation technique, finding almost universal performance
+improvements without having to recompile these applications to make better use
+of the new facilities.

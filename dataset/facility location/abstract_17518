@@ -1,0 +1,19 @@
+Optimizing one's observing strategy while at the telescope relies on knowing
+the current observing conditions and the obtained data quality. In particular
+the latter is not straight forward with current wide-field imagers, such as the
+WIYN One Degree Imager (ODI), currently consisting of 13 detectors, each of
+them read out in 64 independent cells.
+  Here we present a fast data reduction software for ODI, optimized for a first
+data inspection during acquisition at the the telescope, but capable enough for
+science-quality data reductions. The pipeline is coded in pure python with
+minimal additional requirements. It is installed on the ODI observer's
+interface and publicly available from the contributor's webpage. It performs all
+basic reduction steps as well as more advanced corrections for pupil-ghost
+removal, fringe correction and masking of persistent pixels. Additional
+capabilities include adding an accurate astrometric WCS solution based on the
+2MASS reference system as well as photometric zeropoint calibration for frames
+covered by the SDSS foot-print.
+  The pipeline makes use of multiple CPU-cores wherever possible, resulting in
+an execution time of only a few seconds per frame. As such this QuickReduce
+pipeline offers the ODI observer a convenient way to closely monitor data
+quality, a necessity to optimize the observing strategy during the night.

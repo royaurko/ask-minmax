@@ -1,0 +1,24 @@
+This work shows potentials for rapid self-organisation of sensor networks
+where nodes collaborate to relay messages to a common data collecting unit
+(sink node). The study problem is, in the sense of graph theory, to find a
+shortest path tree spanning a weighted graph. This is a well-studied problem
+where for example Dijkstra's algorithm provides a solution for non-negative
+edge weights. The present contribution shows by simulation examples that simple
+modifications of known distributed approaches here can provide significant
+improvements in performance. Phase transition phenomena, which are known to
+take place in networks close to percolation thresholds, may explain these
+observations. An initial method, which here serves as reference, assumes the
+sink node starts organisation of the network (tree) by transmitting a control
+message advertising its availability for its neighbours. These neighbours then
+advertise their current cost estimate for routing a message to the sink. A node
+which in this way receives a message implying an improved route to the sink,
+advertises its new finding and remembers which neighbouring node the message
+came from. This activity proceeds until there are no more improvements to
+advertise to neighbours. The result is a tree network for cost effective
+transmission of messages to the sink (root). This distributed approach has
+potential for simple improvements which are of interest when minimisation of
+storage and communication of network information are a concern. Fast
+organisation of the network takes place when the number $k$ of connections for
+each node ({\em degree}) is close above its critical value for global network
+percolation and at the same time there is a threshold for the nodes to decide
+to advertise network route updates.

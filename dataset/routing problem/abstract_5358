@@ -1,0 +1,14 @@
+An method is developed within an adaptive framework to solve quasilinear
+diffusion problems with internal and possibly boundary layers starting from a
+coarse mesh. The solution process is assumed to start on a mesh where the
+problem is badly resolved, and approximation properties of the exact problem
+and its corresponding finite element solution do not hold. A sequence of
+stabilized and inexact partial solves allow the mesh to be refined to capture
+internal layers while an approximate solution is built eventually leading to an
+accurate approximation of both the problem and its solution. The innovations in
+the current work include a closed form definition for the numerical dissipation
+and inexact scaling parameters on each mesh refinement, as well as a
+convergence result for the residual of the discrete problem. Numerical
+experiments demonstrate the method on a range of problems featuring steep
+internal layers and high solution dependent frequencies of the diffusion
+coefficients.

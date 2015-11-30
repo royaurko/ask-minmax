@@ -1,0 +1,24 @@
+This paper addresses the problem of obtaining low-order models of fluid flows
+for the purpose of designing robust feedback controllers. This is challenging
+since whilst many flows are governed by a set of nonlinear, partial
+differential-algebraic equations (the Navier-Stokes equations), the majority of
+established control theory assumes models of much greater simplicity, in that
+they are firstly: linear, secondly: described by ordinary differential
+equations, and thirdly: finite-dimensional. Linearisation, where appropriate,
+overcomes the first disparity, but attempts to reconcile the remaining two have
+proved difficult. This paper addresses these two problems as follows. Firstly,
+a numerical approach is used to project the governing equations onto a
+divergence-free basis, thus converting a system of differential-algebraic
+equations into one of ordinary differential equations. This dispenses with the
+need for analytical velocity-vorticity transformations, and thus simplifies the
+modelling of boundary sensing and actuation. Secondly, this paper presents a
+novel and straightforward approach for obtaining suitable low-order models of
+fluid flows, from which robust feedback controllers can be synthesised that
+provide a priori guarantees of robust performance when connected to the
+(infinite-dimensional) linearised flow system. This approach overcomes many of
+the problems inherent in approaches that rely upon model-reduction. To
+illustrate these methods, a perturbation shear stress controller is designed
+and applied to plane channel flow, assuming arrays of wall mounted shear-stress
+sensors and transpiration actuators. DNS results demonstrate robust attenuation
+of the perturbation shear-stresses across a wide range of Reynolds numbers with
+a single, linear controller.

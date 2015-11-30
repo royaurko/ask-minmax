@@ -1,0 +1,23 @@
+We consider straight line drawings of a planar graph $G$ with possible edge
+crossings. The \emph{untangling problem} is to eliminate all edge crossings by
+moving as few vertices as possible to new positions. Let $fix(G)$ denote the
+maximum number of vertices that can be left fixed in the worst case. In the
+\emph{allocation problem}, we are given a planar graph $G$ on $n$ vertices
+together with an $n$-point set $X$ in the plane and have to draw $G$ without
+edge crossings so that as many vertices as possible are located in $X$. Let
+$fit(G)$ denote the maximum number of points fitting this purpose in the worst
+case. As $fix(G)\le fit(G)$, we are interested in upper bounds for the latter
+and lower bounds for the former parameter.
+  For each $\epsilon>0$, we construct an infinite sequence of graphs with
+$fit(G)=O(n^{\sigma+\epsilon})$, where $\sigma<0.99$ is a known graph-theoretic
+constant, namely the shortness exponent for the class of cubic polyhedral
+graphs. To the best of our knowledge, this is the first example of graphs with
+$fit(G)=o(n)$. On the other hand, we prove that $fix(G)\ge\sqrt{n/30}$ for all
+$G$ with tree-width at most 2. This extends the lower bound obtained by Goaoc
+et al. [Discrete and Computational Geometry 42:542-569 (2009)] for outerplanar
+graphs.
+  Our upper bound for $fit(G)$ is based on the fact that the constructed graphs
+can have only few collinear vertices in any crossing-free drawing. To prove the
+lower bound for $fix(G)$, we show that graphs of tree-width 2 admit drawings
+that have large sets of collinear vertices with some additional special
+properties.

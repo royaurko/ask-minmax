@@ -1,0 +1,23 @@
+We study the stability and robustness of large-scale vehicular formations, in
+which each vehicle is modeled as a double-integrator. Two types of information
+graphs are considered: directed trees and undirected graphs. We prove stability
+of the formation with arbitrary number of vehicles for linear as well as a
+class of nonlinear controllers. In the case of linear control, we provide
+quantitative scaling laws of the stability margin and sensitivity to external
+disturbances (H-infinity norm) with respect to the number of vehicles $N$ in
+the formation. It is shown that the formation with directed tree graph achieves
+size-independent stability margin but suffers from high algebraic growth of
+initial errors. The stability margin in case of the undirected graph decays to
+0 as at least $O(1/N)$. In addition, we show that the sensitivity to external
+disturbances in directed tree graphs is geometric in $k$ where $k <= N$ is the
+number of generations of the directed tree, while that of the undirected graph
+is only quadratic in $N$. In particular, for 1-D vehicular platoons, we obtain
+precise formulae for the H-infinity norm of the transfer function from the
+disturbances to the position errors. It is shown that the H-infinity norm
+scales as $O(\alpha^N) (\alpha>1)$ for predecessor-following architecture, but
+only as $O(N^3)$ for symmetric bidirectional architectures. For a class of
+nonlinear controllers, numerical simulations show that the transient response
+due to initial errors and sensitivity to external disturbances are improved
+considerably for the formation with directed tree graphs. However, by using the
+nonlinear controller considered, little improvement can be made for that with
+undirected graphs.

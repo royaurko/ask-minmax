@@ -1,0 +1,14 @@
+This paper presents FAIR, a forwarding accountability mechanism that
+incentivizes ISPs to apply stricter security policies to their customers. The
+Autonomous System (AS) of the receiver specifies a traffic profile that the
+sender AS must adhere to. Transit ASes on the path mark packets. In case of
+traffic profile violations, the marked packets are used as a proof of
+misbehavior.
+  FAIR introduces low bandwidth overhead and requires no per-packet and no
+per-flow state for forwarding. We describe integration with IP and demonstrate
+a software switch running on commodity hardware that can switch packets at a
+line rate of 120 Gbps, and can forward 140M minimum-sized packets per second,
+limited by the hardware I/O subsystem.
+  Moreover, this paper proposes a "suspicious bit" for packet headers - an
+application that builds on top of FAIR's proofs of misbehavior and flags
+packets to warn other entities in the network.

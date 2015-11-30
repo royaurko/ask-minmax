@@ -1,0 +1,21 @@
+A streaming model is one where data items arrive over long period of time,
+either one item at a time or in bursts. Typical tasks include computing various
+statistics over a sliding window of some fixed time-horizon. What makes the
+streaming model interesting is that as the time progresses, old items expire
+and new ones arrive. One of the simplest and central tasks in this model is
+sampling. That is, the task of maintaining up to $k$ uniformly distributed
+items from a current time-window as old items expire and new ones arrive. We
+call sampling algorithms {\bf succinct} if they use provably optimal (up to
+constant factors) {\bf worst-case} memory to maintain $k$ items (either with or
+without replacement). We stress that in many applications structures that have
+{\em expected} succinct representation as the time progresses are not
+sufficient, as small probability events eventually happen with probability 1.
+Thus, in this paper we ask the following question: are Succinct Sampling on
+Streams (or $S^3$-algorithms)possible, and if so for what models? Perhaps
+somewhat surprisingly, we show that $S^3$-algorithms are possible for {\em all}
+variants of the problem mentioned above, i.e. both with and without replacement
+and both for one-at-a-time and bursty arrival models. Finally, we use $S^3$
+algorithms to solve various problems in sliding windows model, including
+frequency moments, counting triangles, entropy and density estimations. For
+these problems we present \emph{first} solutions with provable worst-case
+memory guarantees.

@@ -1,0 +1,25 @@
+We present sublinear-time (randomized) algorithms for finding simple cycles
+of length at least $k\geq 3$ and tree-minors in bounded-degree graphs. The
+complexity of these algorithms is related to the distance of the graph from
+being $C_k$-minor-free (resp., free from having the corresponding tree-minor).
+In particular, if the graph is far (i.e., $\Omega(1)$-far) {from} being
+cycle-free, i.e. if one has to delete a constant fraction of edges to make it
+cycle-free, then the algorithm finds a cycle of polylogarithmic length in time
+$\tildeO(\sqrt{N})$, where $N$ denotes the number of vertices. This time
+complexity is optimal up to polylogarithmic factors.
+  The foregoing results are the outcome of our study of the complexity of {\em
+one-sided error} property testing algorithms in the bounded-degree graphs
+model. For example, we show that cycle-freeness of $N$-vertex graphs can be
+tested with one-sided error within time complexity
+$\tildeO(\poly(1/\e)\cdot\sqrt{N})$. This matches the known $\Omega(\sqrt{N})$
+query lower bound, and contrasts with the fact that any minor-free property
+admits a {\em two-sided error} tester of query complexity that only depends on
+the proximity parameter $\e$. For any constant $k\geq3$, we extend this result
+to testing whether the input graph has a simple cycle of length at least $k$.
+On the other hand, for any fixed tree $T$, we show that $T$-minor-freeness has
+a one-sided error tester of query complexity that only depends on the proximity
+parameter $\e$.
+  Our algorithm for finding cycles in bounded-degree graphs extends to general
+graphs, where distances are measured with respect to the actual number of
+edges. Such an extension is not possible with respect to finding tree-minors in
+$o(\sqrt{N})$ complexity.

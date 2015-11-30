@@ -1,0 +1,8 @@
+This note recapitulates an algorithmic observation for ordered Depth-First
+Search (DFS) in directed graphs that immediately leads to a parallel algorithm
+with linear speed-up for a range of processors for non-sparse graphs. The note
+extends the approach to ordered Breadth-First Search (BFS). With $p$
+processors, both DFS and BFS algorithms run in $O(m/p+n)$ time steps on a
+shared-memory parallel machine allowing concurrent reading of locations, e.g.,
+a CREW PRAM, and have linear speed-up for $p\leq m/n$. Both algorithms need $n$
+synchronization steps.

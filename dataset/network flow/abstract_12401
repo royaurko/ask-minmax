@@ -1,0 +1,19 @@
+Consider designing a transportation network on $n$ vertices in the plane,
+with traffic demand uniform over all source-destination pairs. Suppose the cost
+of a link of length $\ell$ and capacity $c$ scales as $\ell c^\beta$ for fixed
+$0<\beta<1$. Under appropriate standardization, the cost of the minimum cost
+Gilbert network grows essentially as $n^{\alpha(\beta)}$, where $\alpha(\beta)
+= 1 - \frac{\beta}{2}$ on $0 < \beta \leq {1/2}$ and $\alpha(\beta) = {1/2} +
+\frac{\beta}{2}$ on ${1/2} \leq \beta < 1$. This quantity is an upper bound in
+the worst case (of vertex positions), and a lower bound under mild regularity
+assumptions. Essentially the same bounds hold if we constrain the network to be
+efficient in the sense that average route-length is only $1 + o(1)$ times
+average straight line length. The transition at $\beta = {1/2}$ corresponds to
+the dominant cost contribution changing from short links to long links. The
+upper bounds arise in the following type of hierarchical networks, which are
+therefore optimal in an order of magnitude sense. On the large scale, use a
+sparse Poisson line process to provide long-range links. On the medium scale,
+use hierachical routing on the square lattice. On the small scale, link
+vertices directly to medium-grid points. We discuss one of many possible
+variant models, in which links also have a designed maximum speed $s$ and the
+cost becomes $\ell c^\beta s^\gamma$.

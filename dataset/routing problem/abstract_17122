@@ -1,0 +1,15 @@
+Regular expressions provide a flexible means for matching strings and they
+are often used in data-intensive applications. They are formally equivalent to
+either deterministic finite automata (DFAs) or nondeterministic finite automata
+(NFAs). Both DFAs and NFAs are affected by two problems known as amnesia and
+acalculia, and DFAs are also affected by a problem known as insomnia. Existing
+techniques require an automata conversion and compaction step that prevents the
+use of existing automaton databases and hinders the maintenance of the
+resulting compact automata. In this paper, we propose Parallel Finite State
+Machines (PFSMs), which are able to run any DFA- or NFA-like state machines
+without a previous conversion or compaction step. PFSMs report, online, all the
+matches found within an input string and they solve the three aforementioned
+problems. Parallel Finite State Machines require quadratic time and linear
+memory and they are distributable. Parallel Finite State Machines make very
+fast distributed regular expression matching in data-intensive applications
+feasible.

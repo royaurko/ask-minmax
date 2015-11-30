@@ -1,0 +1,9 @@
+We describe a technique for drawing values from discrete distributions, such
+as sampling from the random variables of a mixture model, that avoids computing
+a complete table of partial sums of the relative probabilities. A table of
+alternate ("butterfly-patterned") form is faster to compute, making better use
+of coalesced memory accesses. From this table, complete partial sums are
+computed on the fly during a binary search. Measurements using an NVIDIA Titan
+Black GPU show that for a sufficiently large number of clusters or topics (K >
+200), this technique alone more than doubles the speed of a latent Dirichlet
+allocation (LDA) application already highly tuned for GPU execution.

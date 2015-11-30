@@ -1,0 +1,14 @@
+Query evaluation in an XML database requires reconstructing XML subtrees
+rooted at nodes found by an XML query. Since XML subtree reconstruction can be
+expensive, one approach to improve query response time is to use reconstruction
+views - materialized XML subtrees of an XML document, whose nodes are
+frequently accessed by XML queries. For this approach to be efficient, the
+principal requirement is a framework for view selection. In this work, we are
+the first to formalize and study the problem of XML reconstruction view
+selection. The input is a tree $T$, in which every node $i$ has a size $c_i$
+and profit $p_i$, and the size limitation $C$. The target is to find a subset
+of subtrees rooted at nodes $i_1,\cdots, i_k$ respectively such that
+$c_{i_1}+\cdots +c_{i_k}\le C$, and $p_{i_1}+\cdots +p_{i_k}$ is maximal.
+Furthermore, there is no overlap between any two subtrees selected in the
+solution. We prove that this problem is NP-hard and present a fully
+polynomial-time approximation scheme (FPTAS) as a solution.

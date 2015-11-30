@@ -1,0 +1,10 @@
+We introduce a novel technique for finding real errors in programs. The
+technique is based on a synergy of three well-known methods: metacompilation,
+slicing, and symbolic execution. More precisely, we instrument a given program
+with a code that tracks runs of state machines representing various kinds of
+errors. Next we slice the program to reduce its size without affecting runs of
+state machines. And then we symbolically execute the sliced program. Depending
+on the kind of symbolic execution, the technique can be applied as a
+stand-alone bug finding technique, or to weed out some false positives from an
+output of another bug-finding tool. We provide several examples demonstrating
+the practical applicability of our technique.

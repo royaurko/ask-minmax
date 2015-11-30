@@ -1,0 +1,23 @@
+Mining large graphs for information is becoming an increasingly important
+workload due to the plethora of graph structured data becoming available. An
+aspect of graph algorithms that has hitherto not received much interest is the
+effect of memory hierarchy on accesses. A typical system today has multiple
+levels in the memory hierarchy with differing units of locality; ranging across
+cache lines, TLB entries and DRAM pages. We postulate that it is possible to
+allocate graph structured data in main memory in a way as to improve the
+spatial locality of the data. Previous approaches to improving cache locality
+have focused only on a single unit of locality, either the cache line or
+virtual memory page. On the other hand cache oblivious algorithms can optimise
+layout for all levels of the memory hierarchy but unfortunately need to be
+specially designed for individual data structures. In this paper we explore
+hierarchical blocking as a technique for closing this gap. We require as input
+a specification of the units of locality in the memory hierarchy and lay out
+the input graph accordingly by copying its nodes using a hierarchy of breadth
+first searches. We start with a basic algorithm that is limited to trees and
+then extend it to arbitrary graphs. Our most efficient version requires only a
+constant amount of additional space. We have implemented versions of the
+algorithm in various environments: for C programs interfaced with macros, as an
+extension to the Boost object oriented graph library and finally as a
+modification to the traversal phase of the semispace garbage collector in the
+Jikes Java virtual machine. Our results show significant improvements in the
+access time to graphs of various structure.

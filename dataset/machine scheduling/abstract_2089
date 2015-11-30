@@ -1,0 +1,13 @@
+This article presents a complete scheme for the development of Critical
+Embedded Systems with Multiple Real-Time Constraints. The system is programmed
+with a language that extends the synchronous approach with high-level real-time
+primitives. It enables to assemble in a modular and hierarchical manner several
+locally mono-periodic synchronous systems into a globally multi-periodic
+synchronous system. It also allows to specify flow latency constraints. A
+program is translated into a set of real-time tasks. The generated code (\C\
+code) can be executed on a simple real-time platform with a dynamic-priority
+scheduler (EDF). The compilation process (each algorithm of the process, not
+the compiler itself) is formally proved correct, meaning that the generated
+code respects the real-time semantics of the original program (respect of
+periods, deadlines, release dates and precedences) as well as its functional
+semantics (respect of variable consumption).

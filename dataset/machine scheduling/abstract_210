@@ -1,0 +1,18 @@
+Partitioned multiprocessor scheduling has been widely accepted in academia
+and industry to statically assign and partition real-time tasks onto identical
+multiprocessor systems. This paper studies fixed-priority partitioned
+multiprocessor scheduling for sporadic real-time systems, in which
+deadline-monotonic scheduling is applied on each processor. Prior to this
+paper, the best known results are by Fisher, Baruah, and Baker with speedup
+factors $4-\frac{2}{M}$ and $3-\frac{1}{M}$ for arbitrary-deadline and
+constrained-deadline sporadic real-time task systems, respectively, where $M$
+is the number of processors. We show that a greedy mapping strategy has a
+speedup factor $3-\frac{1}{M}$ when considering task systems with arbitrary
+deadlines. Such a factor holds for polynomial-time schedulability tests and
+pseudo-polynomial-time (exact) schedulability tests. Moreover, we also improve
+the speedup factor to $2.84306$ when considering constrained-deadline task
+systems. We also provide tight examples when the fitting strategy in the
+mapping stage is arbitrary and $M$ is sufficiently large. For both constrained-
+and arbitrary-deadline task systems, the analytical result surprisingly shows
+that using exact tests does not gain theoretical benefits (with respect to
+speedup factors) for an arbitrary fitting strategy.

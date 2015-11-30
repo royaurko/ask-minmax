@@ -1,0 +1,20 @@
+Let F be a finite set of graphs. In the F-Deletion problem, we are given an
+n-vertex, m-edge graph G and an integer k as input, and asked whether at most k
+vertices can be deleted from G such that the resulting graph does not contain a
+graph from F as a minor. F-Deletion is a generic problem and by selecting
+different sets of forbidden minors F, one can obtain various fundamental
+problems such as Vertex Cover, Feedback Vertex Set or Treewidth t-Deletion.
+  In this paper we obtain a number of generic algorithmic results about Planar
+F-Deletion, when F contains at least one planar graph. The highlights of our
+work are
+  - A randomized O(nm) time constant factor approximation algorithm for the
+optimization version of Planar F-Deletion.
+  - A randomized O(2^{O(k)} n) time parameterized algorithm for Planar
+F-Deletion when F is connected. Here a family F is called connected if every
+graph in F is connected. The algorithm can be made deterministic at the cost of
+making the polynomial factor in the running time n\log^2 n rather than linear.
+  These algorithms unify, generalize, and improve over a multitude of results
+in the literature. Our main results have several direct applications, but also
+the methods we develop on the way have applicability beyond the scope of this
+paper. Our results -- constant factor approximation and FPT algorithms -- are
+stringed together by a common theme of polynomial time preprocessing.

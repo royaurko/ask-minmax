@@ -1,0 +1,21 @@
+In classical scheduling problems, we are given jobs and machines, and have to
+schedule all the jobs to minimize some objective function. What if each job has
+a specified profit, and we are no longer required to process all jobs -- we can
+schedule any subset of jobs whose total profit is at least a (hard) target
+profit requirement, while still approximately minimizing the objective
+function?
+  We refer to this class of problems as scheduling with outliers. This model
+was initiated by Charikar and Khuller (SODA'06) on the minimum max-response
+time in broadcast scheduling. We consider three other well-studied scheduling
+objectives: the generalized assignment problem, average weighted completion
+time, and average flow time, and provide LP-based approximation algorithms for
+them. For the minimum average flow time problem on identical machines, we give
+a logarithmic approximation algorithm for the case of unit profits based on
+rounding an LP relaxation; we also show a matching integrality gap. For the
+average weighted completion time problem on unrelated machines, we give a
+constant factor approximation. The algorithm is based on randomized rounding of
+the time-indexed LP relaxation strengthened by the knapsack-cover inequalities.
+For the generalized assignment problem with outliers, we give a simple
+reduction to GAP without outliers to obtain an algorithm whose makespan is
+within 3 times the optimum makespan, and whose cost is at most (1 + \epsilon)
+times the optimal cost.

@@ -1,0 +1,18 @@
+We report on recent work on adaptive timestep control for weakly instationary
+gas flows [16, 18, 17] carried out within SFB 401, TPA3. The method which we
+implement and extend is a space-time splitting of adjoint error representations
+for target functionals due to S\"uli [19] and Hartmann [10]. In this paper, we
+first review the method for scalar, 1D, conservation laws. We design a test
+problem for weakly instationary solutions and show numerical experiments which
+clearly show the possible benefits of the method. Then we extend the approach
+to the 2D Euler equations of gas dynamics. New ingredients are (i) a
+conservative formulation of the adjoint problem which makes its solution robust
+and efficient, (ii) the derivation of boundary conditions for this new
+formulation of the adjoint problem and (iii) the coupling of the adaptive
+time-stepping with the multiscale spatial adaptation due to M \"uller [12, 3],
+also developed within SFB 401. The combined space-time adaptive method provides
+an efficient choice of timesteps for implicit computations of weakly
+instationary flows. The timestep will be very large in regions of stationary
+flow, and becomes small when a perturbation enters the flow field. The
+efficiency of the Euler solver is investigated by means of an unsteady inviscid
+2D flow over a bump.

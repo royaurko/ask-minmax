@@ -1,0 +1,14 @@
+We describe two means by which XSTAR, a code which computes physical
+conditions and emission spectra of photoionized gases, has been parallelized.
+The first is pvm_xstar, a wrapper which can be used in place of the serial
+xstar2xspec script to foster concurrent execution of the XSTAR command line
+application on independent sets of parameters. The second is PModel, a plugin
+for the Interactive Spectral Interpretation System (ISIS) which allows
+arbitrary components of a broad range of astrophysical models to be distributed
+across processors during fitting and confidence limits calculations, by
+scientists with little training in parallel programming. Plugging the XSTAR
+family of analytic models into PModel enables multiple ionization states (e.g.,
+of a complex absorber/emitter) to be computed simultaneously, alleviating the
+often prohibitive expense of the traditional serial approach. Initial
+performance results indicate that these methods substantially enlarge the
+problem space to which XSTAR may be applied within practical timeframes.

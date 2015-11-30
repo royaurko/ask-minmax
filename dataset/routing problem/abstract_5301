@@ -1,0 +1,13 @@
+In the continuous 1.5-dimensional terrain guarding problem we are given an
+$x$-monotone chain (the \emph{terrain} $T$) and ask for the minimum number of
+point guards (located anywhere on $T$), such that all points of $T$ are covered
+by at least one guard. It has been shown that the 1.5-dimensional terrain
+guarding problem is \NP-hard. The currently best known approximation algorithm
+achieves a factor of $4$. For the discrete problem version with a finite set of
+guard candidates and a finite set of points on the terrain that need to be
+monitored, a polynomial time approximation scheme (PTAS) has been presented
+[10]. We show that for the general problem we can construct finite guard and
+witness sets, $G$ and $W$, such that there exists an optimal guard cover $G^*
+\subseteq G$ that covers $T$, and when these guards monitor all points in $W$
+the entire terrain is guarded. This leads to a PTAS as well as an (exact) IP
+formulation for the continuous terrain guarding problem.

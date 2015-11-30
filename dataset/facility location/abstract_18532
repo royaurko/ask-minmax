@@ -1,0 +1,23 @@
+We have developed a new halo finding method, Physically Self-Bound (PSB)
+group finding algorithm, which can efficiently identify halos located even at
+crowded regions. This method combines two physical criteria such as the tidal
+radius of a halo and the total energy of each particle to find member
+particles. Two hierarchical meshes are used to increase the speed and the power
+of halo identification in the parallel computing environments. First, a coarse
+mesh with cell size equal to the mean particle separation $l_{\rm mean}$ is
+used to obtain the density field over the whole simulation box. Mesh cells
+having density contrast higher than a local cutoff threshold $\delta_{\rm LOC}$
+are extracted and linked together for those adjacent to each other. This
+produces local-cell groups. Second, a finer mesh is used to obtain density
+field within each local-cell group and to identify halos. If a density shell
+contains only one density peak, its particles are assigned to the density peak.
+But in the case of a density shell surrounding at least two density peaks, we
+use both the tidal radii of halo candidates enclosed by the shell and the total
+energy criterion to find physically bound particles with respect to each halo.
+Similar to DENMAX and HOP, the \hfind method can efficiently identify small
+halos embedded in a large halo, while the FoF and the SO do not resolve such
+small halos. We apply our new halo finding method to a 1-Giga particle
+simulation of the $\Lambda$CDM model and compare the resulting mass function
+with those of previous studies. The abundance of physically self-bound halos is
+larger at the low mass scale and smaller at the high mass scale than proposed
+by the Jenkins et al. (2001) who used the FoF and SO methods. (abridged)

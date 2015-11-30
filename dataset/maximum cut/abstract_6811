@@ -1,0 +1,10 @@
+A neat 1972 result of Pohl asserts that [3n/2]-2 comparisons are sufficient,
+and also necessary in the worst case, for finding both the minimum and the
+maximum of an n-element totally ordered set. The set is accessed via an oracle
+for pairwise comparisons. More recently, the problem has been studied in the
+context of the Renyi-Ulam liar games, where the oracle may give up to k false
+answers. For large k, an upper bound due to Aigner shows that (k+O(\sqrt{k}))n
+comparisons suffice. We improve on this by providing an algorithm with at most
+(k+1+C)n+O(k^3) comparisons for some constant C. The known lower bounds are of
+the form (k+1+c_k)n-D, for some constant D, where c_0=0.5, c_1=23/32=0.71875,
+and c_k=\Omega(2^{-5k/4}) as k goes to infinity.

@@ -1,0 +1,18 @@
+This paper is an extended abstract of an analysis of term rewriting where the
+terms in the rewrite rules as well as the term to be rewritten are compressed
+by a singleton tree grammar (STG). This form of compression is more general
+than node sharing or representing terms as dags since also partial trees
+(contexts) can be shared in the compression. In the first part efficient but
+complex algorithms for detecting applicability of a rewrite rule under
+STG-compression are constructed and analyzed. The second part applies these
+results to term rewriting sequences.
+  The main result for submatching is that finding a redex of a left-linear rule
+can be performed in polynomial time under STG-compression.
+  The main implications for rewriting and (single-position or parallel)
+rewriting steps are: (i) under STG-compression, n rewriting steps can be
+performed in nondeterministic polynomial time. (ii) under STG-compression and
+for left-linear rewrite rules a sequence of n rewriting steps can be performed
+in polynomial time, and (iii) for compressed rewrite rules where the left hand
+sides are either DAG-compressed or ground and STG-compressed, and an
+STG-compressed target term, n rewriting steps can be performed in polynomial
+time.

@@ -1,0 +1,14 @@
+We propose a network-coding based scheme to protect multiple bidirectional
+unicast connections against adversarial errors and failures in a network. The
+network consists of a set of bidirectional primary path connections that carry
+the uncoded traffic. The end nodes of the bidirectional connections are
+connected by a set of shared protection paths that provide the redundancy
+required for protection. Such protection strategies are employed in the domain
+of optical networks for recovery from failures. In this work we consider the
+problem of simultaneous protection against adversarial errors and failures.
+  Suppose that n_e paths are corrupted by the omniscient adversary. Under our
+proposed protocol, the errors can be corrected at all the end nodes with 4n_e
+protection paths. More generally, if there are n_e adversarial errors and n_f
+failures, 4n_e + 2n_f protection paths are sufficient. The number of protection
+paths only depends on the number of errors and failures being protected against
+and is independent of the number of unicast connections.

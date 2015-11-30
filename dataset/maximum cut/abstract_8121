@@ -1,0 +1,26 @@
+This project models and studies the `head-on' collision of liquid helium
+nanodroplets within a vacuum, using molecular dynamics simulation techniques.
+Programs written in MATLAB and C are utilized in tandem to facilitate computer
+experimentation that achieves this goal. The most expensive computation, that
+of collision simulation, is handled by a HPC cluster `ALICE' at the University
+of Leicester.
+  Colliding droplets are modelled as roughly spherical collections of points,
+cut from a simple cubic lattice, obeying a modified Lennard-Jones potential,
+with average velocities initialized to ensure a `head-on' collision. These
+point-sets are then allowed to collide within a cuboid region, designed to take
+advantage of the observed angular distribution of post-collision fragmentation
+(favoring a plane orthogonal to `collision axis').
+  To implement the developed theoretical model, an existing C script by D. C.
+Rapaport, for modelling a homogeneous liquid state, is edited by the contributor to
+fit the given, highly heterogeneous scenario. To do analysis on the resulting
+positions and velocities of points in time, a precise definition of `droplet'
+was required. An object is defined, from the perspective of metric space, to
+satisfy this need. An existing cluster analysis algorithm, DBSCAN, is used to
+apply this definition to the points in simulation.
+  The results presented here focus on three distinct properties of
+post-collision droplets, these being size, speed and temperature; for collision
+speed varying across ten equidistant averages chosen based on visual
+examination of collisions. Quantitative evidence of post-collision droplet
+speed being inversely proportional to droplet radius is presented, droplet
+temperature distribution post-collision is noted, and qualitative change in
+collision behavior across a certain threshold of collision speed is observed.

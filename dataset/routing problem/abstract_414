@@ -1,0 +1,17 @@
+We consider the problem of computing a relational query $q$ on a large input
+database of size $n$, using a large number $p$ of servers. The computation is
+performed in rounds, and each server can receive only $O(n/p^{1-\varepsilon})$
+bits of data, where $\varepsilon \in [0,1]$ is a parameter that controls
+replication. We examine how many global communication steps are needed to
+compute $q$. We establish both lower and upper bounds, in two settings. For a
+single round of communication, we give lower bounds in the strongest possible
+model, where arbitrary bits may be exchanged; we show that any algorithm
+requires $\varepsilon \geq 1-1/\tau^*$, where $\tau^*$ is the fractional vertex
+cover of the hypergraph of $q$. We also give an algorithm that matches the
+lower bound for a specific class of databases. For multiple rounds of
+communication, we present lower bounds in a model where routing decisions for a
+tuple are tuple-based. We show that for the class of tree-like queries there
+exists a tradeoff between the number of rounds and the space exponent
+$\varepsilon$. The lower bounds for multiple rounds are the first of their
+kind. Our results also imply that transitive closure cannot be computed in O(1)
+rounds of communication.

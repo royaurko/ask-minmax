@@ -1,0 +1,17 @@
+The behavior of some stochastic chemical reaction networks is largely
+unaffected by slight inaccuracies in reaction rates. We formalize the
+robustness of state probabilities to reaction rate deviations, and describe a
+formal connection between robustness and efficiency of simulation. Without
+robustness guarantees, stochastic simulation seems to require computational
+time proportional to the total number of reaction events. Even if the
+concentration (molecular count per volume) stays bounded, the number of
+reaction events can be linear in the duration of simulated time and total
+molecular count. We show that the behavior of robust systems can be predicted
+such that the computational work scales linearly with the duration of simulated
+time and concentration, and only polylogarithmically in the total molecular
+count. Thus our asymptotic analysis captures the dramatic speedup when
+molecular counts are large, and shows that for bounded concentrations the
+computation time is essentially invariant with molecular count. Finally, by
+noticing that even robust stochastic chemical reaction networks are capable of
+embedding complex computational problems, we argue that the linear dependence
+on simulated time and concentration is likely optimal.

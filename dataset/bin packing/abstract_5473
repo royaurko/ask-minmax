@@ -1,0 +1,21 @@
+A consistency/latency tradeoff arises as soon as a distributed storage system
+replicates data. For low latency, modern storage systems often settle for weak
+consistency conditions, which provide little, or even worse, no guarantee for
+data consistency. In this paper we propose the notion of almost strong
+consistency as a better balance option for the consistency/latency tradeoff. It
+provides both deterministically bounded staleness of data versions for each
+read and probabilistic quantification on the rate of "reading stale values",
+while achieving low latency. In the context of distributed storage systems, we
+investigate almost strong consistency in terms of 2-atomicity. Our 2AM
+(2-Atomicity Maintenance) algorithm completes both reads and writes in one
+communication round-trip, and guarantees that each read obtains the value of
+within the latest 2 versions. To quantify the rate of "reading stale values",
+we decompose the so-called "old-new inversion" phenomenon into concurrency
+patterns and read-write patterns, and propose a stochastic queueing model and a
+"timed balls-into-bins model" to analyze them, respectively. The theoretical
+analysis not only demonstrates that "old-new inversions" rarely occur as
+expected, but also reveals that the read-write pattern dominates in
+guaranteeing such rare data inconsistencies. These are further confirmed by the
+experimental results, showing that 2-atomicity is "good enough" in distributed
+storage systems by achieving low latency, bounded staleness, and rare data
+inconsistencies.

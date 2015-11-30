@@ -1,0 +1,14 @@
+In this paper we present a new algorithm for learning oblique decision trees.
+Most of the current decision tree algorithms rely on impurity measures to
+assess the goodness of hyperplanes at each node while learning a decision tree
+in a top-down fashion. These impurity measures do not properly capture the
+geometric structures in the data. Motivated by this, our algorithm uses a
+strategy to assess the hyperplanes in such a way that the geometric structure
+in the data is taken into account. At each node of the decision tree, we find
+the clustering hyperplanes for both the classes and use their angle bisectors
+as the split rule at that node. We show through empirical studies that this
+idea leads to small decision trees and better performance. We also present some
+analysis to show that the angle bisectors of clustering hyperplanes that we use
+as the split rules at each node, are solutions of an interesting optimization
+problem and hence argue that this is a principled method of learning a decision
+tree.

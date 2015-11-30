@@ -1,0 +1,15 @@
+The global testing problem studied in this paper is to seek a definite answer
+to whether a system of concurrent black-boxes has an observable behavior in a
+given finite (but could be huge) set "Bad". We introduce a novel approach to
+solve the problem that does not require integration testing. Instead, in our
+approach, the global testing problem is reduced to testing individual
+black-boxes in the system one by one in some given order. Using an
+automata-theoretic approach, test sequences for each individual black-box are
+generated from the system's description as well as the test results of
+black-boxes prior to this black-box in the given order. In contrast to the
+conventional compositional/modular verification/testing approaches, our
+approach is essentially decompositional.
+  Also, our technique is complete, sound, and can be carried out automatically.
+Our experiment results show that the total number of tests needed to solve the
+global testing problem is substantially small even for an extremely large
+"Bad".

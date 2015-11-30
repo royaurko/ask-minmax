@@ -1,0 +1,24 @@
+Tolerance graphs model interval relations in such a way that intervals can
+tolerate a certain degree of overlap without being in conflict. This subclass
+of perfect graphs has been extensively studied, due to both its interesting
+structure and its numerous applications. Several efficient algorithms for
+optimization problems that are NP-hard on general graphs have been designed for
+tolerance graphs. In spite of this, the recognition of tolerance graphs -
+namely, the problem of deciding whether a given graph is a tolerance graph - as
+well as the recognition of their main subclass of bounded tolerance graphs,
+have been the most fundamental open problems on this class of graphs (cf. the
+book on tolerance graphs \cite{GolTol04}) since their introduction in 1982
+\cite{GoMo82}. In this article we prove that both recognition problems are
+NP-complete, even in the case where the input graph is a trapezoid graph. The
+presented results are surprising because, on the one hand, most subclasses of
+perfect graphs admit polynomial recognition algorithms and, on the other hand,
+bounded tolerance graphs were believed to be efficiently recognizable as they
+are a natural special case of trapezoid graphs (which can be recognized in
+polynomial time) and share a very similar structure with them. For our
+reduction we extend the notion of an \emph{acyclic orientation} of permutation
+and trapezoid graphs. Our main tool is a new algorithm that uses \emph{vertex
+splitting} to transform a given trapezoid graph into a permutation graph, while
+preserving this new acyclic orientation property. This method of vertex
+splitting is of independent interest; very recently, it has been proved a
+powerful tool also in the design of efficient recognition algorithms for other
+classes of graphs \cite{MC-Trapezoid}.

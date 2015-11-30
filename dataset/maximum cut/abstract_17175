@@ -1,0 +1,18 @@
+The Potts model is frequently used to describe the behavior of image classes,
+since it allows to incorporate contextual information linking neighboring
+pixels in a simple way. Its isotropic version has only one real parameter beta,
+known as smoothness parameter or inverse temperature, which regulates the
+classes map homogeneity. The classes are unavailable, and estimating them is
+central in important image processing procedures as, for instance, image
+classification. Methods for estimating the classes which stem from a Bayesian
+approach under the Potts model require to adequately specify a value for beta.
+The estimation of such parameter can be efficiently made solving the Pseudo
+Maximum likelihood (PML) equations in two different schemes, using the prior or
+the posterior model. Having only radiometric data available, the first scheme
+needs the computation of an initial segmentation, while the second uses both
+the segmentation and the radiometric data to make the estimation. In this
+paper, we compare these two PML estimators by computing the mean square error
+(MSE), bias, and sensitivity to deviations from the hypothesis of the model. We
+conclude that the use of extra data does not improve the accuracy of the PML,
+moreover, under gross deviations from the model, this extra information
+introduces unpredictable distortions and bias.

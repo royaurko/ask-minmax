@@ -1,0 +1,6 @@
+A projection-based immersed boundary method is dominated by sparse linear
+algebra routines. Using the open-source Cusp library, we observe a speedup
+(with respect to a single CPU core) which reflects the constraints of a
+bandwidth-dominated problem on the GPU. Nevertheless, GPUs offer the capacity
+to solve large problems on commodity hardware. This work includes validation
+and a convergence study of the GPU-accelerated IBM, and various optimizations.

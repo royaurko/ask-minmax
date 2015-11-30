@@ -1,0 +1,27 @@
+Given a property of Boolean functions, what is the minimum number of queries
+required to determine with high probability if an input function satisfies this
+property? This is a fundamental question in Property Testing, where
+traditionally the testing algorithm is allowed to pick its queries among the
+entire set of inputs. Balcan et al. suggested restricting the tester to take
+its queries from a smaller, typically random, subset of the inputs. This model
+is called active testing, in resemblance of active learning. Active testing
+gets more difficult as the size of candidate query set decreases, and the
+extreme case is when it is exactly the number of queries performed, so the
+algorithm has no choice. This is known as passive testing, or testing from
+random examples.
+  In their paper, Balcan et al. showed that active and passive testing of
+dictator functions is as hard as learning them, and requires \Theta(log n)
+queries (unlike the classic model, where O(1) queries suffice). We extend this
+result to k-linear functions, proving that passive and active testing of them
+requires \Theta(k log n) queries, assuming k is not too large. Other classes of
+functions we consider are juntas, partially symmetric functions, linear
+functions, and low degree polynomials. For linear functions we provide tight
+bounds on the query complexity in both models (which asymptotically differ).
+For juntas and partially symmetric functions we provide some lower and upper
+bounds. When the functions depend on a constant number of variables, our
+analysis for both families is asymptotically tight. Moreover, the family of
+partially symmetric functions is the first example for which the query
+complexities in all models are asymptotically different.
+  Our methods combine algebraic, combinatorial, and probabilistic techniques,
+including the Talagrand concentration inequality and the Erd\H{o}s--Rado
+results on \Delta-systems.

@@ -1,0 +1,16 @@
+This paper presents a new algorithm for personal identification from their
+Electrocardiograms (ECG) which is based on morphological descriptors and
+Hermite Polynomials Expansion coefficients (HPEc). After preprocessing, we
+extracted ten morphological descriptors which were divided into homogeneous
+groups (amplitude, surface interval and slope) and we extracted sixty Hermite
+Polynomials Expansion coefficients(HPEc) from each heartbeat. For the
+classification, we employed a binary Support Vector Machines with Gaussian
+kernel and we adopted a particular strategy: we first classified groups of
+morphological descriptors separately then we combined them in one system. On
+the other hand, we classified the Hermite Polynomials Expansion coefficients
+apart and we associated them with all groups of morphological descriptors in a
+single system in order to improve overall performance. We tested our algorithm
+on 18 different healthy signals of the MIT_BIH database. The analysis of
+different groups separately showed that the best recognition performance is
+96.45% for all morphological descriptors and the results of experiments showed
+that the proposed hybrid approach has led to an overall maximum of 98.97%.

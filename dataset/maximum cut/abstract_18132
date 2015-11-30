@@ -1,0 +1,20 @@
+Motivated by applications in neuroanatomy, we propose a novel methodology for
+estimating the heritability which corresponds to the proportion of phenotypic
+variance which can be explained by genetic factors. Estimating this quantity
+for neuroanatomical features is a fundamental challenge in psychiatric disease
+research. Since the phenotypic variations may only be due to a small fraction
+of the available genetic information, we propose an estimator of the
+heritability that can be used in high dimensional sparse linear mixed models.
+Our method consists of three steps. Firstly, a variable selection stage is
+performed in order to recover the support of the genetic effects -- also called
+causal variants -- that is to find the genetic effects which really explain the
+phenotypic variations. Secondly, we propose a maximum likelihood strategy for
+estimating the heritability which only takes into account the causal genetic
+effects found in the first step. Thirdly, we compute the standard error and the
+95% confidence interval associated to our heritability estimator thanks to a
+nonparametric bootsrap approach. Our main contribution consists in providing an
+estimation of the heritability with standard errors substantially smaller than
+methods without variable selection. We illustrate the performance of our
+methodology on synthetic and real neuroanatomic data coming from the Imagen
+project. We also show that our approach has a very low computational burden and
+is very efficient from a statistical point of view.

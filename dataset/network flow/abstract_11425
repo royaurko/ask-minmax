@@ -1,0 +1,13 @@
+Learning a Bayesian network structure from data is an NP-hard problem and
+thus exact algorithms are feasible only for small data sets. Therefore, network
+structures for larger networks are usually learned with various heuristics.
+Another approach to scaling up the structure learning is local learning. In
+local learning, the modeler has one or more target variables that are of
+special interest; he wants to learn the structure near the target variables and
+is not interested in the rest of the variables. In this paper, we present a
+score-based local learning algorithm called SLL. We conjecture that our
+algorithm is theoretically sound in the sense that it is optimal in the limit
+of large sample size. Empirical results suggest that SLL is competitive when
+compared to the constraint-based HITON algorithm. We also study the prospects
+of constructing the network structure for the whole node set based on local
+results by presenting two algorithms and comparing them to several heuristics.

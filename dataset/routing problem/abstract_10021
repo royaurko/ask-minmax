@@ -1,0 +1,15 @@
+We consider the problem of constructing an approximation of the Pareto curve
+associated with the multiobjective optimization problem $\min_{\mathbf{x} \in
+\mathbf{S}}\{ (f_1(\mathbf{x}), f_2(\mathbf{x})) \}$, where $f_1$ and $f_2$ are
+two conflicting polynomial criteria and $\mathbf{S} \subset \mathbb{R}^n$ is a
+compact basic semialgebraic set. We provide a systematic numerical scheme to
+approximate the Pareto curve. We start by reducing the initial problem into a
+scalarized polynomial optimization problem (POP). Three scalarization methods
+lead to consider different parametric POPs, namely (a) a weighted convex sum
+approximation, (b) a weighted Chebyshev approximation, and (c) a parametric
+sublevel set approximation. For each case, we have to solve a semidefinite
+programming (SDP) hierarchy parametrized by the number of moments or
+equivalently the degree of a polynomial sums of squares approximation of the
+Pareto curve. When the degree of the polynomial approximation tends to
+infinity, we provide guarantees of convergence to the Pareto curve in
+$L^2$-norm for methods (a) and (b), and $L^1$-norm for method (c).

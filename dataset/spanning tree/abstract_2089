@@ -1,0 +1,14 @@
+Connected operators are filtering tools that act by merging elementary
+regions of an image. A popular strategy is based on tree-based image
+representations: for example, one can compute an attribute on each node of the
+tree and keep only the nodes for which the attribute is sufficiently strong.
+This operation can be seen as a thresholding of the tree, seen as a graph whose
+nodes are weighted by the attribute. Rather than being satisfied with a mere
+thresholding, we propose to expand on this idea, and to apply connected filters
+on this latest graph. Consequently, the filtering is done not in the space of
+the image, but on the space of shapes build from the image. Such a processing
+is a generalization of the existing tree-based connected operators. Indeed, the
+framework includes classical existing connected operators by attributes. It
+also allows us to propose a class of novel connected operators from the
+leveling family, based on shape attributes. Finally, we also propose a novel
+class of self-dual connected operators that we call morphological shapings.

@@ -1,0 +1,14 @@
+We study the classic Vehicle Routing Problem in the setting of stochastic
+optimization with recourse. StochVRP is a two-stage optimization problem, where
+demand is satisfied using two routes: fixed and recourse. The fixed route is
+computed using only a demand distribution. Then after observing the demand
+instantiations, a recourse route is computed -- but costs here become more
+expensive by a factor lambda.
+  We present an O(log^2 n log(n lambda))-approximation algorithm for this
+stochastic routing problem, under arbitrary distributions. The main idea in
+this result is relating StochVRP to a special case of submodular orienteering,
+called knapsack rank-function orienteering. We also give a better approximation
+ratio for knapsack rank-function orienteering than what follows from prior
+work. Finally, we provide a Unique Games Conjecture based omega(1) hardness of
+approximation for StochVRP, even on star-like metrics on which our algorithm
+achieves a logarithmic approximation.

@@ -1,0 +1,21 @@
+Motion planning problems have been studied by both the robotics and the
+controls research communities for a long time, and many algorithms have been
+developed for their solution. Among them, incremental sampling-based motion
+planning algorithms, such as the Rapidly-exploring Random Trees (RRTs), and the
+Probabilistic Road Maps (PRMs) have become very popular recently, owing to
+their implementation simplicity and their advantages in handling
+high-dimensional problems. Although these algorithms work very well in
+practice, the quality of the computed solution is often not good, i.e., the
+solution can be far from the optimal one. A recent variation of RRT, namely the
+RRT* algorithm, bypasses this drawback of the traditional RRT algorithm, by
+ensuring asymptotic optimality as the number of samples tends to infinity.
+Nonetheless, the convergence rate to the optimal solution may still be slow.
+This paper presents a new incremental sampling-based motion planning algorithm
+based on Rapidly-exploring Random Graphs (RRG), denoted RRT# (RRT "sharp")
+which also guarantees asymptotic optimality but, in addition, it also ensures
+that the constructed spanning tree of the geometric graph is consistent after
+each iteration. In consistent trees, the vertices which have the potential to
+be part of the optimal solution have the minimum cost-come-value. This implies
+that the best possible solution is readily computed if there are some vertices
+in the current graph that are already in the goal region. Numerical results
+compare with the RRT* algorithm.

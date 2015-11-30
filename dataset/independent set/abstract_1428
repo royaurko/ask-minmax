@@ -1,0 +1,26 @@
+Study of diffusion limits of the Metropolis-Hastings algorithm in high
+dimensions yields useful quantificaton of the scaling of the underlying
+proposal distribution in terms of the dimensionality. Here we consider the
+recently introduced Transformation-based Markov Chain Monte Carlo (TMCMC)
+(Dutta and Bhattacharya (2013a)), a methodology that is designed to update all
+the parameters simultaneously using some simple deterministic transformation of
+a one-dimensional random variable drawn from some arbitrary distribution on a
+relevant support. The additive transformation based TMCMC is similar in spirit
+to random walk Metropolis, except the fact that unlike the latter, additive
+TMCMC uses a single draw from a one-dimensional proposal distribution to update
+the high-dimensional parameter.
+  In this paper, we study the diffusion limits of additive TMCMC under various
+set-ups ranging from the product structure of the target density to the case
+where the target is absolutely continuous with respect to a Gaussian measure;
+we also consider the additive TMCMC within Gibbs approach for all the above
+set-ups. These investigations lead to appropriate scaling of the
+one-dimensional proposal density. We also show that the optimal acceptance rate
+of additive TMCMC is 0.439 under all the aforementioned set-ups, in contrast
+with the well-established 0.234 acceptance rate associated with optimal random
+walk Metropolis algorithms under the same set-ups. We also elucidate the
+ramifications of our results and the advantages of additive TMCMC over random
+walk Metropolis with ample simulation studies. It was found that in all set ups
+we considered- namely iid component set up, independent scaling components, a
+wide range of dependent set ups as well as real spatial data application- TMCMC
+performed much better and converged to the target density much faster than the
+RWMH algorithm.

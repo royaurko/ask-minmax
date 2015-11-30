@@ -1,0 +1,16 @@
+We propose an extension of the non-homogeneous Gaussian regression (NGR)
+model by Gneiting et al. (2005) that yields locally calibrated probabilistic
+forecasts of tem- perature, based on the output of an ensemble prediction
+system (EPS). Our method represents the mean of the predictive distributions as
+a sum of short-term averages of local temperatures and EPS-driven terms. For
+the spatial interpolation of temperature averages and local forecast
+uncertainty parameters we use a Gaussian random field model with an
+intrinsically stationary component that captures large scale fluctuations and a
+location-dependent nugget effect that accounts for small scale variability.
+Based on the dynamical forecasts by the COSMO-DE-EPS and observational data
+over Germany we evaluate the performance of our method and and compare it with
+other post-processing approaches such as geostatistical model averaging. Our
+method yields locally calibrated and sharp probabilistic forecasts and compares
+favorably with other approaches. It is reasonably simple, computationally
+efficient, and therefore suitable for operational usage in the post-processing
+of temperature ensemble forecasts.

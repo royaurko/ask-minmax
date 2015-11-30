@@ -1,0 +1,23 @@
+In r-neighbour bootstrap percolation on a graph G, a set of initially
+infected vertices A \subset V(G) is chosen independently at random, with
+density p, and new vertices are subsequently infected if they have at least r
+infected neighbours. The set A is said to percolate if eventually all vertices
+are infected. Our aim is to understand this process on the grid, [n]^d, for
+arbitrary functions n = n(t), d = d(t) and r = r(t), as t -> infinity. The main
+question is to determine the critical probability p_c([n]^d,r) at which
+percolation becomes likely, and to give bounds on the size of the critical
+window. In this paper we study this problem when r = 2, for all functions n and
+d satisfying d \gg log n.
+  The bootstrap process has been extensively studied on [n]^d when d is a fixed
+constant and 2 \leq r \leq d, and in these cases p_c([n]^d,r) has recently been
+determined up to a factor of 1 + o(1) as n -> infinity. At the other end of the
+scale, Balogh and Bollobas determined p_c([2]^d,2) up to a constant factor, and
+Balogh, Bollobas and Morris determined p_c([n]^d,d) asymptotically if d > (log
+log n)^{2+\eps}, and gave much sharper bounds for the hypercube.
+  Here we prove the following result: let \lambda be the smallest positive root
+of the equation \sum_{k=0}^\infty (-1)^k \lambda^k / (2^{k^2-k} k!) = 0, so
+\lambda \approx 1.166. Then
+  (16\lambda / d^2) (1 + (log d / \sqrt{d})) 2^{-2\sqrt{d}} < p_c([2]^d,2) <
+(16\lambda / d^2) (1 + (5(log d)^2 / \sqrt{d})) 2^{-2\sqrt{d}} if d is
+sufficiently large, and moreover we determine a sharp threshold for the
+critical probability p_c([n]^d,2) for every function n = n(d) with d \gg log n.

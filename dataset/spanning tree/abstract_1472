@@ -1,0 +1,14 @@
+The multi-species coalescent provides an elegant theoretical framework for
+estimating species trees and species demographics from genetic markers.
+Practical applications of the multi-species coalescent model are, however,
+limited by the need to integrate or sample over all gene trees possible for
+each genetic marker. Here we describe a polynomial-time algorithm that computes
+the likelihood of a species tree directly from the markers under a finite-sites
+model of mutation, effectively integrating over all possible gene trees. The
+method applies to independent (unlinked) biallelic markers such as well-spaced
+single nucleotide polymorphisms (SNPs), and we have implemented it in SNAPP, a
+Markov chain Monte-Carlo sampler for inferring species trees, divergence dates,
+and population sizes. We report results from simulation experiments and from an
+analysis of 1997 amplified fragment length polymorphism (AFLP) loci in 69
+individuals sampled from six species of {\em Ourisia} (New Zealand native
+foxglove).

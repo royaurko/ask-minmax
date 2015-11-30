@@ -1,0 +1,23 @@
+The application of current generation computing machines in safety-centric
+applications like implantable biomedical chips and automobile safety has
+immensely increased the need for reviewing the worst-case error behavior of
+computing devices for fault-tolerant computation. In this work, we propose an
+exact probabilistic error model that can compute the maximum error over all
+possible input space in a circuit specific manner and can handle various types
+of structural dependencies in the circuit. We also provide the worst-case input
+vector, which has the highest probability to generate an erroneous output, for
+any given logic circuit. We also present a study of circuit-specific error
+bounds for fault-tolerant computation in heterogeneous circuits using the
+maximum error computed for each circuit. We model the error estimation problem
+as a maximum a posteriori (MAP) estimate, over the joint error probability
+function of the entire circuit, calculated efficiently through an intelligent
+search of the entire input space using probabilistic traversal of a binary join
+tree using Shenoy-Shafer algorithm. We demonstrate this model using MCNC and
+ISCAS benchmark circuits and validate it using an equivalent HSpice model. Both
+results yield the same worst-case input vectors and the highest % difference of
+our error model over HSpice is just 1.23%. We observe that the maximum error
+probabilities are significantly larger than the average error probabilities,
+and provides a much tighter error bounds for fault-tolerant computation. We
+also find that the error estimates depend on the specific circuit structure and
+the maximum error probabilities are sensitive to the individual gate failure
+probabilities.

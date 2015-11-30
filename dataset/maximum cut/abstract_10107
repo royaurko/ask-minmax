@@ -1,0 +1,16 @@
+In a bipartite max-min LP, we are given a bipartite graph $\myG = (V \cup I
+\cup K, E)$, where each agent $v \in V$ is adjacent to exactly one constraint
+$i \in I$ and exactly one objective $k \in K$. Each agent $v$ controls a
+variable $x_v$. For each $i \in I$ we have a nonnegative linear constraint on
+the variables of adjacent agents. For each $k \in K$ we have a nonnegative
+linear objective function of the variables of adjacent agents. The task is to
+maximise the minimum of the objective functions. We study local algorithms
+where each agent $v$ must choose $x_v$ based on input within its
+constant-radius neighbourhood in $\myG$. We show that for every $\epsilon>0$
+there exists a local algorithm achieving the approximation ratio ${\Delta_I (1
+- 1/\Delta_K)} + \epsilon$. We also show that this result is the best possible
+-- no local algorithm can achieve the approximation ratio ${\Delta_I (1 -
+1/\Delta_K)}$. Here $\Delta_I$ is the maximum degree of a vertex $i \in I$, and
+$\Delta_K$ is the maximum degree of a vertex $k \in K$. As a methodological
+contribution, we introduce the technique of graph unfolding for the design of
+local approximation algorithms.

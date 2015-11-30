@@ -1,0 +1,18 @@
+This paper develops a novel framework for sharing secret keys using the
+Automatic Repeat reQuest (ARQ) protocol. We first characterize the underlying
+information theoretic limits, under different assumptions on the channel
+spatial and temporal correlation function. Our analysis reveals a novel role of
+"dumb antennas" in overcoming the negative impact of spatial correlation on the
+achievable secrecy rates. We further develop an adaptive rate allocation
+policy, which achieves higher secrecy rates in temporally correlated channels,
+and explicit constructions for ARQ secrecy coding that enjoy low implementation
+complexity. Building on this theoretical foundation, we propose a unified
+framework for ARQ-based secrecy in Wi-Fi networks. By exploiting the existing
+ARQ mechanism in the IEEE 802.11 standard, we develop security overlays that
+offer strong security guarantees at the expense of only minor modifications in
+the medium access layer. Our numerical results establish the achievability of
+non-zero secrecy rates even when the eavesdropper channel is less noisy, on the
+average, than the legitimate channel, while our linux-based prototype
+demonstrates the efficiency of our ARQ overlays in mitigating all known,
+passive and active, Wi-Fi attacks at the expense of a minimal increase in the
+link setup time and a small loss in throughput.

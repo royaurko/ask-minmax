@@ -1,0 +1,24 @@
+Network or graph structures are ubiquitous in the study of complex systems.
+Often, we are interested in complexity trends of these system as it evolves
+under some dynamic. An example might be looking at the complexity of a food web
+as species enter an ecosystem via migration or speciation, and leave via
+extinction.
+  In a previous paper, a complexity measure of networks was proposed based on
+the {\em complexity is information content} paradigm. To apply this paradigm to
+any object, one must fix two things: a representation language, in which
+strings of symbols from some alphabet describe, or stand for the objects being
+considered; and a means of determining when two such descriptions refer to the
+same object. With these two things set, the information content of an object
+can be computed in principle from the number of equivalent descriptions
+describing a particular object.
+  The previously proposed representation language had the deficiency that the
+fully connected and empty networks were the most complex for a given number of
+nodes. A variation of this measure, called zcomplexity, applied a compression
+algorithm to the resulting bitstring representation, to solve this problem.
+Unfortunately, zcomplexity proved too computationally expensive to be
+practical.
+  In this paper, I propose a new representation language that encodes the
+number of links along with the number of nodes and a representation of the
+linklist. This, like zcomplexity, exhibits minimal complexity for fully
+connected and empty networks, but is as tractable as the original measure.
+  ...

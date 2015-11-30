@@ -1,0 +1,12 @@
+We study the problem of computing an ensemble of multiple sums where the
+summands in each sum are indexed by subsets of size $p$ of an $n$-element
+ground set. More precisely, the task is to compute, for each subset of size $q$
+of the ground set, the sum over the values of all subsets of size $p$ that are
+disjoint from the subset of size $q$. We present an arithmetic circuit that,
+without subtraction, solves the problem using $O((n^p+n^q)\log n)$ arithmetic
+gates, all monotone; for constant $p$, $q$ this is within the factor $\log n$
+of the optimal. The circuit design is based on viewing the summation as a "set
+nucleation" task and using a tree-projection approach to implement the
+nucleation. Applications include improved algorithms for counting heaviest
+$k$-paths in a weighted graph, computing permanents of rectangular matrices,
+and dynamic feature selection in machine learning.

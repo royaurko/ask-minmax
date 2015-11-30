@@ -1,0 +1,19 @@
+Transmitter channel state information (CSIT) is crucial for the multiplexing
+gains offered by advanced interference management techniques such as multiuser
+MIMO and interference alignment. Such CSIT is usually obtained by feedback from
+the receivers, but the feedback is subject to delays. The usual approach is to
+use the fed back information to predict the current channel state and then
+apply a scheme designed assuming perfect CSIT. When the feedback delay is large
+compared to the channel coherence time, such a prediction approach completely
+fails to achieve any multiplexing gain. In this paper, we show that even in
+this case, the completely stale CSI is still very useful. More concretely, we
+show that in a MIMO broadcast channel with $K$ transmit antennas and $K$
+receivers each with 1 receive antenna, $\frac{K}{1+1/2+ ...+ \frac{1}{K}} (> 1)
+$ degrees of freedom is achievable even when the fed back channel state is
+completely independent of the current channel state. Moreover, we establish
+that if all receivers have independent and identically distributed channels,
+then this is the optimal number of degrees of freedom achievable. In the
+optimal scheme, the transmitter uses the fed back CSI to learn the side
+information that the receivers receive from previous transmissions rather than
+to predict the current channel state. Our result can be viewed as the first
+example of feedback providing a degree-of-freedom gain in memoryless channels.

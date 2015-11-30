@@ -1,0 +1,20 @@
+Software Defined Networking (SDN) is a promising approach for improving the
+performance and manageability of future network architectures. However, little
+work has gone into using SDN to improve the performance and manageability of
+existing networks without requiring a major overhaul of the existing network
+infrastructure.
+  In this paper, we show how we can dramatically improve, or supercharge, the
+performance of existing IP routers by combining them with SDN-enabled equipment
+in a novel way. More particularly, our supercharged solution substantially
+reduces the convergence time of an IP router upon link or node failure without
+inducing any reconfiguration of the IP router itself. Our key insight is to use
+the SDN controller to precompute backup forwarding entries and immediately
+activate them upon failure, enabling almost immediate data-plane recovery,
+while letting the router converge at its typical slow pace. By boosting
+existing equipment's performance, we not only increase their lifetime but also
+provide new incentives for network operators to kickstart SDN deployment.
+  We implemented a fully functional "supercharger" and use it to boost the
+convergence performance of a Cisco Nexus 7k router. Using a FPGA-based traffic
+generator, we show that our supercharged router systematically converges within
+~150ms, a 900x reduction with respect to its normal convergence time under
+similar conditions.

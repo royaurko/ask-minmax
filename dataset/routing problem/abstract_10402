@@ -1,0 +1,21 @@
+This paper develops a general framework for solving a variety of convex cone
+problems that frequently arise in signal processing, machine learning,
+statistics, and other fields. The approach works as follows: first, determine a
+conic formulation of the problem; second, determine its dual; third, apply
+smoothing; and fourth, solve using an optimal first-order method. A merit of
+this approach is its flexibility: for example, all compressed sensing problems
+can be solved via this approach. These include models with objective
+functionals such as the total-variation norm, ||Wx||_1 where W is arbitrary, or
+a combination thereof. In addition, the paper also introduces a number of
+technical contributions such as a novel continuation scheme, a novel approach
+for controlling the step size, and some new results showing that the smooth and
+unsmoothed problems are sometimes formally equivalent. Combined with our
+framework, these lead to novel, stable and computationally efficient
+algorithms. For instance, our general implementation is competitive with
+state-of-the-art methods for solving intensively studied problems such as the
+LASSO. Further, numerical experiments show that one can solve the Dantzig
+selector problem, for which no efficient large-scale solvers exist, in a few
+hundred iterations. Finally, the paper is accompanied with a software release.
+This software is not a single, monolithic solver; rather, it is a suite of
+programs and routines designed to serve as building blocks for constructing
+complete algorithms.

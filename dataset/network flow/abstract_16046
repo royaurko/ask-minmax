@@ -1,0 +1,18 @@
+In this work, we propose a fast, robust and scalable method for retrieving
+and analyzing recurring patterns of activity induced by a causal process,
+typically modeled as time series on a graph. We introduce a particular type of
+multilayer graph as a model for the data. This graph is structured for
+emphasizing causal relations between connected nodes and their successive time
+series values. Within the data, the patterns of activity are assumed to be
+dynamic, sparse or small compared to the size of the network. For some
+applications they are also expected to appear in a repeated manner over time
+but are allowed to differ from an exact copy. The analysis of the activity
+within a social network and within a transportation network illustrates the
+power and efficiency of the method. Relevant information can be extracted,
+giving insights on the behavior of group of persons in social networks and on
+traffic congestion patterns. Moreover, in this era of big data, it is crucial
+to design tools able to handle large datasets. Our approach scales linearly
+with the dataset size and is implemented in a parallel manner. By leveraging a
+state-of-the-art data analytics framework, our implementation can be
+distributed on clusters of computers and easily handles millions of nodes on a
+single commodity server.

@@ -1,0 +1,21 @@
+Principal components (PCA) and hierarchical clustering are two of the most
+heavily used techniques for analyzing the differences between nucleic acid
+sequence samples sampled from a given environment. However, a classical
+application of these techniques to distances computed between samples can lack
+transparency because there is no ready interpretation of the axes of classical
+PCA plots, and it is difficult to assign any clear intuitive meaning to either
+the internal nodes or the edge lengths of trees produced by distance-based
+hierarchical clustering methods such as UPGMA. We show that more interesting
+and interpretable results are produced by two new methods that leverage the
+special structure of phylogenetic placement data. Edge principal components
+analysis enables the detection of important differences between samples that
+contain closely related taxa. Each principal component axis is simply a
+collection of signed weights on the edges of the phylogenetic tree, and these
+weights are easily visualized by a suitable thickening and coloring of the
+edges. Squash clustering outputs a (rooted) clustering tree in which each
+internal node corresponds to an appropriate "average" of the original samples
+at the leaves below the node. Moreover, the length of an edge is a suitably
+defined distance between the averaged samples associated with the two incident
+nodes, rather than the less interpretable average of distances produced by
+UPGMA. We present these methods and illustrate their use with data from the
+microbiome of the human vagina.

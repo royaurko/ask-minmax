@@ -1,0 +1,15 @@
+The malicious alteration of machine time is a big challenge in computer
+forensics. Detecting such changes and reconstructing the actual timeline of
+events is of paramount importance. However, this can be difficult since the
+attacker has many opportunities and means to hide such changes. In particular,
+cloud computing, host and guest machine time can be manipulated in various ways
+by an attacker. Guest virtual machines are especially vulnerable to attacks
+coming from their (more privileged) host. As such, it is important to guarantee
+the timeline integrity of both hosts and guests in a cloud, or at least to
+ensure that the alteration of such timeline does not go undetected. In this
+paper we survey the issues related to host and guest machine time integrity in
+the cloud. Further, we describe a novel architecture for host and guest time
+alteration detection and correction/resilience with respect to compromised
+hosts and guests. The proposed framework has been implemented on an especially
+built simulator. Collected results are evaluated and discussed. Performance
+figures show the feasibility of our proposal.

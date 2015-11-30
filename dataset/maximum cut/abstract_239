@@ -1,0 +1,16 @@
+The tree-cut width of a graph is a graph parameter defined by Wollan [J.
+Comb. Theory, Ser. B, 110:47-66, 2015] with the help of tree-cut
+decompositions. In certain cases, tree-cut width appears to be more adequate
+than treewidth as an invariant that, when bounded, can accelerate the
+resolution of intractable problems. While designing algorithms for problems
+with bounded tree-cut width, it is important to have a parametrically tractable
+way to compute the exact value of this parameter or, at least, some constant
+approximation of it. In this paper we give a parameterized 2-approximation
+algorithm for the computation of tree-cut width; for an input $n$-vertex graph
+$G$ and an integer $w$, our algorithm either confirms that the tree-cut width
+of $G$ is more than $w$ or returns a tree-cut decomposition of $G$ certifying
+that its tree-cut width is at most $2w$, in time $2^{O(w^2\log w)} \cdot n^2$.
+Prior to this work, no constructive parameterized algorithms, even approximated
+ones, existed for computing the tree-cut width of a graph. As a consequence of
+the Graph Minors series by Robertson and Seymour, only the existence of a
+decision algorithm was known.

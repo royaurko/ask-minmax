@@ -1,0 +1,26 @@
+Constrained submodular maximization problems have long been studied, with
+near-optimal results known under a variety of constraints when the submodular
+function is monotone. The case of non-monotone submodular maximization is less
+understood: the first approximation algorithms even for the unconstrainted
+setting were given by Feige et al. (FOCS '07). More recently, Lee et al. (STOC
+'09, APPROX '09) show how to approximately maximize non-monotone submodular
+functions when the constraints are given by the intersection of p matroid
+constraints; their algorithm is based on local-search procedures that consider
+p-swaps, and hence the running time may be n^Omega(p), implying their algorithm
+is polynomial-time only for constantly many matroids. In this paper, we give
+algorithms that work for p-independence systems (which generalize constraints
+given by the intersection of p matroids), where the running time is poly(n,p).
+Our algorithm essentially reduces the non-monotone maximization problem to
+multiple runs of the greedy algorithm previously used in the monotone case.
+  Our idea of using existing algorithms for monotone functions to solve the
+non-monotone case also works for maximizing a submodular function with respect
+to a knapsack constraint: we get a simple greedy-based constant-factor
+approximation for this problem.
+  With these simpler algorithms, we are able to adapt our approach to
+constrained non-monotone submodular maximization to the (online) secretary
+setting, where elements arrive one at a time in random order, and the algorithm
+must make irrevocable decisions about whether or not to select each element as
+it arrives. We give constant approximations in this secretary setting when the
+algorithm is constrained subject to a uniform matroid or a partition matroid,
+and give an O(log k) approximation when it is constrained by a general matroid
+of rank k.

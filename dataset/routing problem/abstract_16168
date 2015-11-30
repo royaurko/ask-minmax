@@ -1,0 +1,16 @@
+We present a new hybrid direct/iterative approach to the solution of a
+special class of saddle point matrices arising from the discretization of the
+steady incompressible Navier-Stokes equations on an Arakawa C-grid. The
+two-level method introduced here has the following properties: (i) it is very
+robust, even close to the point where the solution becomes unstable; (ii) a
+single parameter controls fill and convergence, making the method
+straightforward to use; (iii) the convergence rate is independent of the number
+of unknowns; (iv) it can be implemented on distributed memory machines in a
+natural way; (v) the matrix on the second level has the same structure and
+numerical properties as the original problem, so the method can be applied
+recursively; (vi) the iteration takes place in the divergence- free space, so
+the method qualifies as a 'constraint preconditioner'; (vii) the approach can
+also be applied to Poisson problems.
+  This work is also relevant for problems in which similar saddle point
+matrices occur, for instance when simulating electrical networks, where one has
+to satisfy Kirchhoff's conservation law for currents.

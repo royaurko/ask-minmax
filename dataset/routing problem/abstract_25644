@@ -1,0 +1,15 @@
+We present a new computational approach to the inversion of solar
+photospheric Stokes polarization profiles, under the Milne-Eddington model, for
+vector magnetography. Our code, named GENESIS (GENEtic Stokes Inversion
+Strategy), employs multi-threaded parallel-processing techniques to harness the
+computing power of graphics processing units GPUs, along with algorithms
+designed to exploit the inherent parallelism of the Stokes inversion problem.
+Using a genetic algorithm (GA) engineered specifically for use with a GPU, we
+produce full-disc maps of the photospheric vector magnetic field from polarized
+spectral line observations recorded by the Synoptic Optical Long-term
+Investigations of the Sun (SOLIS) Vector Spectromagnetograph (VSM) instrument.
+We show the advantages of pairing a population-parallel genetic algorithm with
+data-parallel GPU-computing techniques, and present an overview of the Stokes
+inversion problem, including a description of our adaptation to the
+GPU-computing paradigm. Full-disc vector magnetograms derived by this method
+are shown, using SOLIS/VSM data observed on 2008 March 28 at 15:45 UT.

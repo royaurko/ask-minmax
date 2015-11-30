@@ -1,0 +1,13 @@
+Optimally hybrid numerical solvers were constructed for massively parallel
+generalized eigenvalue problem (GEP).The strong scaling benchmark was carried
+out on the K computer and other supercomputers for electronic structure
+calculation problems in the matrix sizes of M = 10^4-10^6 with upto 105 cores.
+The procedure of GEP is decomposed into the two subprocedures of the reducer to
+the standard eigenvalue problem (SEP) and the solver of SEP. A hybrid solver is
+constructed, when a routine is chosen for each subprocedure from the three
+parallel solver libraries of ScaLAPACK, ELPA and EigenExa. The hybrid solvers
+with the two newer libraries, ELPA and EigenExa, give better benchmark results
+than the conventional ScaLAPACK library. The detailed analysis on the results
+implies that the reducer can be a bottleneck in next-generation (exa-scale)
+supercomputers, which indicates the guidance for future research. The code was
+developed as a middleware and a mini-application and will appear online.

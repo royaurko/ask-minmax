@@ -1,0 +1,16 @@
+Turing machines and G\"odel numbers are important pillars of the theory of
+computation. Thus, any computational architecture needs to show how it could
+relate to Turing machines and how stable implementations of Turing computation
+are possible. In this chapter, we implement universal Turing computation in a
+neural field environment. To this end, we employ the canonical symbologram
+representation of a Turing machine obtained from a G\"odel encoding of its
+symbolic repertoire and generalized shifts. The resulting nonlinear dynamical
+automaton (NDA) is a piecewise affine-linear map acting on the unit square that
+is partitioned into rectangular domains. Instead of looking at point dynamics
+in phase space, we then consider functional dynamics of probability
+distributions functions (p.d.f.s) over phase space. This is generally described
+by a Frobenius-Perron integral transformation that can be regarded as a neural
+field equation over the unit square as feature space of a dynamic field theory
+(DFT). Solving the Frobenius-Perron equation yields that uniform p.d.f.s with
+rectangular support are mapped onto uniform p.d.f.s with rectangular support,
+again. We call the resulting representation \emph{dynamic field automaton}.

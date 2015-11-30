@@ -1,0 +1,20 @@
+We describe work in progress by a collaboration of astronomers and
+statisticians developing a suite of Bayesian data analysis tools for extrasolar
+planet (exoplanet) detection, planetary orbit estimation, and adaptive
+scheduling of observations. Our work addresses analysis of stellar reflex
+motion data, where a planet is detected by observing the "wobble" of its host
+star as it responds to the gravitational tug of the orbiting planet. Newtonian
+mechanics specifies an analytical model for the resulting time series, but it
+is strongly nonlinear, yielding complex, multimodal likelihood functions; it is
+even more complex when multiple planets are present. The parameter spaces range
+in size from few-dimensional to dozens of dimensions, depending on the number
+of planets in the system, and the type of motion measured (line-of-sight
+velocity, or position on the sky). Since orbits are periodic, Bayesian
+generalizations of periodogram methods facilitate the analysis. This relies on
+the model being linearly separable, enabling partial analytical
+marginalization, reducing the dimension of the parameter space. Subsequent
+analysis uses adaptive Markov chain Monte Carlo methods and adaptive importance
+sampling to perform the integrals required for both inference (planet detection
+and orbit measurement), and information-maximizing sequential design (for
+adaptive scheduling of observations). We present an overview of our current
+techniques and highlight directions being explored by ongoing research.

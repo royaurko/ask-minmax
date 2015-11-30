@@ -1,0 +1,14 @@
+We study a general family of facility location problems defined on planar
+graphs and on the 2-dimensional plane. In these problems, a subset of $k$
+objects has to be selected, satisfying certain packing (disjointness) and
+covering constraints. Our main result is showing that, for each of these
+problems, the $n^{O(k)}$ time brute force algorithm of selecting $k$ objects
+can be improved to $n^{O(\sqrt{k})}$ time. The algorithm is based on an idea
+that was introduced recently in the design of geometric QPTASs, but was not yet
+used for exact algorithms and for planar graphs. We focus on the Voronoi
+diagram of a hypothetical solution of $k$ objects, guess a balanced separator
+cycle of this Voronoi diagram to obtain a set that separates the solution in a
+balanced way, and then recurse on the resulting subproblems. We complement our
+study by giving evidence that packing problems have $n^{O(\sqrt{k})}$ time
+algorithms for a much more general class of objects than covering problems
+have.

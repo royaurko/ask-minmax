@@ -1,0 +1,20 @@
+A key feature of the packet scheduler in LTE system is that it can allocate
+resources both in the time and frequency domain. Furthermore, the scheduler is
+acquainted with channel state information periodically reported by user
+equipments either in an aggregate form for the whole downlink channel, or
+distinguished for each available subchannel. This mechanism allows for wide
+discretion in resource allocation, thus promoting the flourishing of several
+scheduling algorithms, with different purposes. It is therefore of great
+interest to compare the performance of such algorithms in different scenarios.
+A very common simulation tool that can be used for this purpose is ns-3, which
+already supports a set of well known scheduling algorithms for LTE downlink,
+though it still lacks schedulers that provide throughput guarantees. In this
+work we contribute to fill this gap by implementing a scheduling algorithm that
+provides long-term throughput guarantees to the different users, while
+opportunistically exploiting the instantaneous channel fluctuations to increase
+the cell capacity. We then perform a thorough performance analysis of the
+different scheduling algorithms by means of extensive ns-3 simulations, both
+for saturated UDP and TCP traffic sources. The analysis makes it possible to
+appreciate the difference among the scheduling algorithms, and to assess the
+performance gain, both in terms of cell capacity and packet service time,
+obtained by allowing the schedulers to work on the frequency domain.

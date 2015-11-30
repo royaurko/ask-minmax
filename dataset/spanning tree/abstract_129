@@ -1,0 +1,15 @@
+In this paper I present general outlook on questions relevant to the basic
+graph algorithms; Finding the Shortest Path with Positive Weights and Minimum
+Spanning Tree. I will show so far known solution set of basic graph problems
+and present my own. My solutions to graph problems are characterized by their
+linear worst-case time complexity. It should be noticed that the algorithms
+which compute the Shortest Path and Minimum Spanning Tree problems not only
+analyze the weight of arcs (which is the main and often the only criterion of
+solution hitherto known algorithms) but also in case of identical path weights
+they select this path which walks through as few vertices as possible. I have
+presented algorithms which use priority queue based on multilevel prefix tree
+-- PTrie. PTrie is a clever combination of the idea of prefix tree -- Trie, the
+structure of logarithmic time complexity for insert and remove operations,
+doubly linked list and queues. In C++ I will implement linear worst-case time
+algorithm computing the Single-Destination Shortest-Paths problem and I will
+explain its usage.

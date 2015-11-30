@@ -1,0 +1,15 @@
+The {\em edit distance} between two ordered trees with vertex labels is the
+minimum cost of transforming one tree into the other by a sequence of
+elementary operations consisting of deleting and relabeling existing nodes, as
+well as inserting new nodes. In this paper, we present a worst-case
+$O(n^3)$-time algorithm for this problem, improving the previous best
+$O(n^3\log n)$-time algorithm~\cite{Klein}. Our result requires a novel
+adaptive strategy for deciding how a dynamic program divides into subproblems
+(which is interesting in its own right), together with a deeper understanding
+of the previous algorithms for the problem. We also prove the optimality of our
+algorithm among the family of \emph{decomposition strategy} algorithms--which
+also includes the previous fastest algorithms--by tightening the known lower
+bound of $\Omega(n^2\log^2 n)$~\cite{Touzet} to $\Omega(n^3)$, matching our
+algorithm's running time. Furthermore, we obtain matching upper and lower
+bounds of $\Theta(n m^2 (1 + \log \frac{n}{m}))$ when the two trees have
+different sizes $m$ and~$n$, where $m < n$.

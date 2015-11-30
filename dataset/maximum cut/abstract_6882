@@ -1,0 +1,17 @@
+Random graph mixture models are now very popular for modeling real data
+networks. In these setups, parameter estimation procedures usually rely on
+variational approximations, either combined with the expectation-maximisation
+(\textsc{em}) algorithm or with Bayesian approaches. Despite good results on
+synthetic data, the validity of the variational approximation is however not
+established. Moreover, the behavior of the maximum likelihood or of the maximum
+a posteriori estimators approximated by these procedures is not known in these
+models, due to the dependency structure on the variables. In this work, we show
+that in many different affiliation contexts (for binary or weighted graphs),
+estimators based either on moment equations or on the maximization of some
+composite likelihood are strongly consistent and $\sqrt{n}$-convergent, where
+$n$ is the number of nodes. As a consequence, our result establishes that the
+overall structure of an affiliation model can be caught by the description of
+the network in terms of its number of triads (order 3 structures) and edges
+(order 2 structures). We illustrate the efficiency of our method on simulated
+data and compare its performances with other existing procedures. A data set of
+cross-citations among economics journals is also analyzed.

@@ -1,0 +1,11 @@
+We prove that the Bounded Occurrence Ordering k-CSP Problem is not
+approximation resistant. We give a very simple local search algorithm that
+always performs better than the random assignment algorithm. Specifically, the
+expected value of the solution returned by the algorithm is at least Alg > Avg
++ a(B,k) (Opt - Avg), where "Opt" is the value of the optimal solution; "Avg"
+is the expected value of the random solution; and a(B,k)=Omega_k(B^{-(k+O(1))}
+is a parameter depending only on "k" (the arity of the CSP) and "B" (the
+maximum number of times each variable is used in constraints). The question
+whether bounded occurrence ordering k-CSPs are approximation resistant was
+raised by Guruswami and Zhou (APPROX 2012) who recently showed that bounded
+occurrence 3-CSPs and "monotone" k-CSPs admit a non-trivial approximation.

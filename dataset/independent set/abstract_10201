@@ -1,0 +1,21 @@
+In this paper we consider the problem of collectively classifying entities
+where relational information is available across the entities. In practice
+inaccurate class distribution for each entity is often available from another
+(external) classifier. For example this distribution could come from a
+classifier built using content features or a simple dictionary. Given the
+relational and inaccurate external classifier information, we consider two
+graph based settings in which the problem of collective classification can be
+solved. In the first setting the class distribution is used to fix labels to a
+subset of nodes and the labels for the remaining nodes are obtained like in a
+transductive setting. In the other setting the class distributions of all nodes
+are used to define the fitting function part of a graph regularized objective
+function. We define a generalized objective function that handles both the
+settings. Methods like harmonic Gaussian field and local-global consistency
+(LGC) reported in the literature can be seen as special cases. We extend the
+LGC and weighted vote relational neighbor classification (WvRN) methods to
+support usage of external classifier information. We also propose an efficient
+least squares regularization (LSR) based method and relate it to information
+regularization methods. All the methods are evaluated on several benchmark and
+real world datasets. Considering together speed, robustness and accuracy,
+experimental results indicate that the LSR and WvRN-extension methods perform
+better than other methods.

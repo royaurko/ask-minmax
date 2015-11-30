@@ -1,0 +1,11 @@
+We consider deployment of the particle filter on modern massively parallel
+hardware architectures, such as Graphics Processing Units (GPUs), with a focus
+on the resampling stage. While standard multinomial and stratified resamplers
+require a sum of importance weights computed collectively between threads, a
+Metropolis resampler favourably requires only pair-wise ratios between weights,
+computed independently by threads, and can be further tuned for performance by
+adjusting its number of iterations. While achieving respectable results for the
+stratified and multinomial resamplers, we demonstrate that a Metropolis
+resampler can be faster where the variance in importance weights is modest, and
+so is worth considering in a performance-critical context, such as particle
+Markov chain Monte Carlo and real-time applications.

@@ -1,0 +1,16 @@
+We present an approach for the traveling salesman problem with graph metric
+based on Steiner cycles. A Steiner cycle is a cycle that is required to contain
+some specified subset of vertices. For a graph $G$, if we can find a spanning
+tree $T$ and a simple cycle that contains the vertices with odd-degree in $T$,
+then we show how to combine the classic "double spanning tree" algorithm with
+Christofides' algorithm to obtain a TSP tour of length at most $\frac{4n}{3}$.
+We use this approach to show that a graph containing a Hamiltonian path has a
+TSP tour of length at most $4n/3$.
+  Since a Hamiltonian path is a spanning tree with two leaves, this motivates
+the question of whether or not a graph containing a spanning tree with few
+leaves has a short TSP tour. The recent techniques of M\"omke and Svensson
+imply that a graph containing a depth-first-search tree with $k$ leaves has a
+TSP tour of length $4n/3 + O(k)$. Using our approach, we can show that a
+$2(k-1)$-vertex connected graph that contains a spanning tree with at most $k$
+leaves has a TSP tour of length $4n/3$. We also explore other conditions under
+which our approach results in a short tour.

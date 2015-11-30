@@ -1,0 +1,19 @@
+Given natural limitations on the length DNA sequences, designing phylogenetic
+reconstruction methods which are reliable under limited information is a
+crucial endeavor. There have been two approaches to this problem:
+reconstructing partial but reliable information about the tree (\cite{Mo07,
+DMR08,DHJ06,GMS08}), and reaching "deeper" in the tree through reconstruction
+of ancestral sequences. In the latter category, \cite{DMR06} settled an
+important conjecture of M.Steel, showing that, under the CFN model of
+evolution, all trees on $n$ leaves with edge lengths bounded by the Ising model
+phase transition can be recovered with high probability from genomes of length
+$O(\log n)$ with a polynomial time algorithm. Their methods had a running time
+of $O(n^{10})$.
+  Here we enhance our methods from \cite{DHJ06} with the learning of ancestral
+sequences and provide an algorithm for reconstructing a sub-forest of the tree
+which is reliable given available data, without requiring a-priori known bounds
+on the edge lengths of the tree. Our methods are based on an intuitive minimum
+spanning tree approach and run in $O(n^3)$ time. For the case of full
+reconstruction of trees with edges under the phase transition, we maintain the
+same sequence length requirements as \cite{DMR06}, despite the considerably
+faster running time.

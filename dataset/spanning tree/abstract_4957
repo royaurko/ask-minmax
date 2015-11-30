@@ -1,0 +1,18 @@
+Cryptographic access control has been studied for over 30 years and is now a
+mature research topic. When symmetric cryptographic primitives are used, each
+protected resource is encrypted and only contributorized users should have access to
+the encryption key. By treating the keys themselves as protected resources, it
+is possible to develop schemes in which contributorized keys are derived from the
+keys explicitly assigned to the user's possession and publicly available
+information. It has been generally assumed that each user would be assigned a
+single key from which all other contributorized keys would be derived. Recent work
+has challenged this assumption by developing schemes that do not require public
+information, the trade-off being that a user may require more than one key.
+However, these new schemes, which require a chain partition of the partially
+ordered set on which the access control policy is based, have some
+disadvantages. In this paper we define the notion of a tree-based cryptographic
+enforcement scheme, which, like chain-based schemes, requires no public
+information. We establish that the strong security properties of chain-based
+schemes are preserved by tree-based schemes, and provide an efficient
+construction for deriving a tree-based enforcement scheme from a given policy
+that minimizes the number of keys required.

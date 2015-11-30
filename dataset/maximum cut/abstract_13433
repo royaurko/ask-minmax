@@ -1,0 +1,16 @@
+This paper addresses the problem of controlling a variable-speed wind turbine
+with a Doubly Fed Induction Generator (DFIG), modeled as an
+electromechanically-coupled nonlinear system with rotor voltages and blade
+pitch angle as its inputs, active and reactive powers as its outputs, and most
+of the aerodynamic and mechanical parameters as its uncertainties. Using a
+blend of linear and nonlinear control strategies (including feedback
+linearization, pole placement, uncertainty estimation, and gradient-based
+potential function minimization) as well as time-scale separation in the
+dynamics, we develop a controller that is capable of maximizing the active
+power in the Maximum Power Tracking (MPT) mode, regulating the active power in
+the Power Regulation (PR) mode, seamlessly switching between the two modes, and
+simultaneously adjusting the reactive power to achieve a desired power factor.
+The controller consists of four cascaded components, uses realistic feedback
+signals, and operates without knowledge of the C_p-surface, air density,
+friction coefficient, and wind speed. Finally, we show the effectiveness of the
+controller via simulation with a realistic wind profile.

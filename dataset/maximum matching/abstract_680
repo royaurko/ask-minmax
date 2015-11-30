@@ -1,0 +1,19 @@
+We investigate implementations of biometric cryptosystems protecting
+fingerprint templates (which are mostly based on the fuzzy vault scheme by
+Juels and Sudan in 2002) with respect to the security they provide. We show
+that attacks taking advantage of the system's false acceptance rate, i.e.
+false-accept attacks, pose a very serious risk --- even if brute-force attacks
+are impractical to perform. Our observations lead to the clear conclusion that
+currently a single fingerprint is not sufficient to provide a secure biometric
+cryptosystem. But there remain other problems that can not be resolved by
+merely switching to multi-finger: Kholmatov and Yanikoglu in 2007 demonstrated
+that it is possible to break two matching vault records at quite a high rate
+via the correlation attack.
+  We propose an implementation of a minutiae fuzzy vault that is inherently
+resistant against cross-matching and the correlation attack. Surprisingly,
+achieving cross-matching resistance is not at the cost of authentication
+performance. In particular, we propose to use a randomized decoding procedure
+and find that it is possible to achieve a GAR=91% at which no false accepts are
+observed on a database generally used. Our ideas can be adopted into an
+implementation of a multibiometric cryptosystem. All experiments described in
+this paper can fully be reproduced using software available for download.

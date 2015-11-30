@@ -1,0 +1,18 @@
+This paper deals with the analysis of critical observability and design of
+observers for networks of Finite State Machines (FSMs). Critical observability
+is a property of FSMs that corresponds to the possibility of detecting
+immediately if the current state of an FSM reaches a set of critical states
+modeling unsafe operations. This property is relevant in safety--critical
+applications where the timely recovery of human errors and device failures is
+of primary importance in ensuring safety. A critical observer is an observer
+that detects on--line the occurrence of critical states. When a large--scale
+network of FSMs is considered, the construction of such an observer is
+prohibitive because of the large computational effort needed. In this paper we
+propose a decentralized architecture for critical observers of networks of
+FSMs, where on--line detection of critical states is performed by local
+critical observers, each associated with an FSM of the network. For the design
+of local observers, efficient algorithms were provided which are based on
+on--the-fly techniques. Further, we present results on model reduction of
+networks of FSMs, based on bisimulation equivalence preserving critical
+observability. The advantages of the proposed approach in terms of
+computational complexity are discussed and examples offered.

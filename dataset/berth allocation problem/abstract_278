@@ -1,0 +1,20 @@
+Energy efficiency has become an important measurement of scheduling algorithm
+for private cloud. The challenge is trade-off between minimizing of energy
+consumption and satisfying Quality of Service (QoS) (e.g. performance or
+resource availability on time for reservation request). We consider resource
+needs in context of a private cloud system to provide resources for
+applications in teaching and researching. In which users request computing
+resources for laboratory classes at start times and non-interrupted duration in
+some hours in prior. Many previous works are based on migrating techniques to
+move online virtual machines (VMs) from low utilization hosts and turn these
+hosts off to reduce energy consumption. However, the techniques for migration
+of VMs could not use in our case. In this paper, a genetic algorithm for
+power-aware in scheduling of resource allocation (GAPA) has been proposed to
+solve the static virtual machine allocation problem (SVMAP). Due to limited
+resources (i.e. memory) for executing simulation, we created a workload that
+contains a sample of one-day timetable of lab hours in our university. We
+evaluate the GAPA and a baseline scheduling algorithm (BFD), which sorts list
+of virtual machines in start time (i.e. earliest start time first) and using
+best-fit decreasing (i.e. least increased power consumption) algorithm, for
+solving the same SVMAP. As a result, the GAPA algorithm obtains total energy
+consumption is lower than the baseline algorithm on simulated experimentation.

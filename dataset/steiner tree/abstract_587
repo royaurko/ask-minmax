@@ -1,0 +1,25 @@
+The total evidence approach to divergence-time dating uses molecular and
+morphological data of extant and fossil species to infer phylogenetic
+relationships, species divergence times, and macroevolutionary parameters in a
+single coherent framework. Current model-based implementations of this approach
+lack an appropriate model for the tree describing the diversification and
+fossilisation process which can result in erroneous conclusions. We address
+this shortcoming by providing a total evidence method implemented in a Bayesian
+framework. This approach uses a mechanistic tree prior to describe the
+underlying diversification process that generated the tree of extant and fossil
+taxa. Previous attempts to apply the total-evidence approach have used tree
+priors that do not account for the possibility that fossil samples may be
+direct ancestors of other samples. The fossilised birth-death process
+explicitly models the diversification, fossilisation, and sampling processes
+and naturally allows for sampled ancestors. This model was recently applied to
+estimate divergence times based on molecular data and fossil occurrence dates.
+We incorporate the fossilised birth-death model and a model of morphological
+trait evolution into a Bayesian total-evidence approach to dating species
+phylogenies. We apply this method to extant and fossil penguins and show that
+the modern penguins radiated much more recently than has been previously
+estimated, with the basal divergence in the crown clade occurring at~12.5 Ma
+and most splits leading to extant species occurring in the last 2 million
+years. Our results demonstrate that including stem-fossil diversity can greatly
+improve the estimates of the divergence times of crown taxa. The method is
+available in BEAST2 (v2.3) software www.beast2.org with packages SA (v1.1.3)
+and morph-models (v1.0.1) installed.

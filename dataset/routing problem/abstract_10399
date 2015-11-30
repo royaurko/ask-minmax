@@ -1,0 +1,23 @@
+Clustering is a fundamental problem in unsupervised learning, and has been
+studied widely both as a problem of learning mixture models and as an
+optimization problem. In this paper, we study clustering with respect the
+emph{k-median} objective function, a natural formulation of clustering in which
+we attempt to minimize the average distance to cluster centers. One of the main
+contributions of this paper is a simple but powerful sampling technique that we
+call emph{successive sampling} that could be of independent interest. We show
+that our sampling procedure can rapidly identify a small set of points (of size
+just O(klog{n/k})) that summarize the input points for the purpose of
+clustering. Using successive sampling, we develop an algorithm for the k-median
+problem that runs in O(nk) time for a wide range of values of k and is
+guaranteed, with high probability, to return a solution with cost at most a
+constant factor times optimal. We also establish a lower bound of Omega(nk) on
+any randomized constant-factor approximation algorithm for the k-median problem
+that succeeds with even a negligible (say 1/100) probability. Thus we establish
+a tight time bound of Theta(nk) for the k-median problem for a wide range of
+values of k. The best previous upper bound for the problem was O(nk), where the
+O-notation hides polylogarithmic factors in n and k. The best previous lower
+bound of O(nk) applied only to deterministic k-median algorithms. While we
+focus our presentation on the k-median objective, all our upper bounds are
+valid for the k-means objective as well. In this context our algorithm compares
+favorably to the widely used k-means heuristic, which requires O(nk) time for
+just one iteration and provides no useful approximation guarantees.

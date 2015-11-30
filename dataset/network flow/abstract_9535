@@ -1,0 +1,17 @@
+We describe algorithms for learning Bayesian networks from a combination of
+user knowledge and statistical data. The algorithms have two components: a
+scoring metric and a search procedure. The scoring metric takes a network
+structure, statistical data, and a user's prior knowledge, and returns a score
+proportional to the posterior probability of the network structure given the
+data. The search procedure generates networks for evaluation by the scoring
+metric. Previous work has concentrated on metrics for domains containing only
+discrete variables, under the assumption that data represents a multinomial
+sample. In this paper, we extend this work, developing scoring metrics for
+domains containing all continuous variables or a mixture of discrete and
+continuous variables, under the assumption that continuous data is sampled from
+a multivariate normal distribution. Our work extends traditional statistical
+approaches for identifying vanishing regression coefficients in that we
+identify two important assumptions, called event equivalence and parameter
+modularity, that when combined allow the construction of prior distributions
+for multivariate normal parameters from a single prior Bayesian network
+specified by a user.

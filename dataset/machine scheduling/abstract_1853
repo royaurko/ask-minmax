@@ -1,0 +1,14 @@
+This paper provides a novel characterization of the max-margin distribution
+in input space. The use of the statistical Extreme Value Theory (EVT) is
+introduced for modeling margin distances, allowing us to derive a scalable
+non-linear model called the Extreme Value Machine (EVM). Without the need for a
+kernel, the EVM leverages a margin model to estimate the probability of sample
+inclusion in each class. The EVM selects a near-optimal subset of the training
+vectors to optimize the gain in terms of points covered versus parameters used.
+We show that the problem reduces to the NP-hard Set Cover problem which has a
+provable polynomial time approximation. The resulting machine has comparable
+closed set accuracy (i.e., when all testing classes are known at training time)
+to optimized RBF SVMs and exhibits far superior performance in open set
+recognition (i.e., when unknown classes exist at testing time). In open set
+recognition performance, the EVM is more accurate and more scalable than the
+state of the art.

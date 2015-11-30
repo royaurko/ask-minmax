@@ -1,0 +1,17 @@
+Consider the following problem: given a graph with edge costs and a subset Q
+of vertices, find a minimum-cost subgraph in which there are two edge-disjoint
+paths connecting every pair of vertices in Q. The problem is a
+failure-resilient analog of the Steiner tree problem arising, for example, in
+telecommunications applications. We study a more general mixed-connectivity
+formulation, also employed in telecommunications optimization. Given a number
+(or requirement) r(v) in {0, 1, 2} for each vertex v in the graph, find a
+minimum-cost subgraph in which there are min{r(u), r(v)} edge-disjoint u-to-v
+paths for every pair u, v of vertices.
+  We address the problem in planar graphs, considering a popular relaxation in
+which the solution is allowed to use multiple copies of the input-graph edges
+(paying separately for each copy). The problem is max SNP-hard in general
+graphs and strongly NP-hard in planar graphs. We give the first polynomial-time
+approximation scheme in planar graphs. The running time is O(n log n).
+  Under the additional restriction that the requirements are only non-zero for
+vertices on the boundary of a single face of a planar graph, we give a
+polynomial-time algorithm to find the optimal solution.

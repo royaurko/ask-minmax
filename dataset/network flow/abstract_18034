@@ -1,0 +1,20 @@
+The cloud-radio access network (CRAN) is expected to be the core network
+architecture for next generation mobile radio system. In this paper, we
+consider the downlink of a CRAN formed of one central processor (the cloud) and
+several base-station (BS), where each BS is connected to the cloud via either a
+wireless or capacity-limited wireline backhaul link. The paper addresses the
+joint design of the hybrid backhaul links (i.e., designing the wireline and
+wireless backhaul connections from cloud to BSs) and the access links (i.e.,
+determining the sparse beamforming solution from the BSs to the users). The
+paper formulates the hybrid backhaul and access link design problem by
+minimizing the total network power consumption. The paper solves the problem
+using a two-stage heuristic algorithm. At one stage, the sparse beamforming
+solution is found using a weighted mixed $\ell_1/\ell_2$ norm minimization
+approach; the correlation matrix of the quantization noise of the wireline
+backhaul links is computed using the classical rate-distortion theory. At the
+second stage, the transmit powers of the wireless backhaul links are found by
+solving a power minimization problem subject to quality-of-service constraints,
+based on the principle of conservation of rate by utilizing the rates found in
+the first stage. Simulation results suggest that the performance of the
+proposed algorithm approaches the global optimum solution, especially at high
+SINR.

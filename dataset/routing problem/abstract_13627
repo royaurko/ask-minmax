@@ -1,0 +1,34 @@
+Let $\mathbf{f}=(f\_1,\ldots,f\_m)$ and $\mathbf{g}=(g\_1,\ldots,g\_m)$ be
+two sets of $m\geq 1$ nonlinear polynomials over $\mathbb{K}[x\_1,\ldots,x\_n]$
+($\mathbb{K}$ being a field). We consider the computational problem of finding
+-- if any -- an invertible transformation on the variables mapping $\mathbf{f}$
+to $\mathbf{g}$. The corresponding equivalence problem is known as {\tt
+Isomorphism of Polynomials with one Secret} ({\tt IP1S}) and is a fundamental
+problem in multivariate cryptography. The main result is a randomized
+polynomial-time algorithm for solving {\tt IP1S} for quadratic instances, a
+particular case of importance in cryptography and somewhat justifying {\it a
+posteriori} the fact that {\it Graph Isomorphism} reduces to only cubic
+instances of {\tt IP1S} (Agrawal and Saxena). To this end, we show that {\tt
+IP1S} for quadratic polynomials can be reduced to a variant of the classical
+module isomorphism problem in representation theory, which involves to test the
+orthogonal simultaneous conjugacy of symmetric matrices. We show that we can
+essentially {\it linearize} the problem by reducing quadratic-{\tt IP1S} to
+test the orthogonal simultaneous similarity of symmetric matrices; this latter
+problem was shown by Chistov, Ivanyos and Karpinski to be equivalent to finding
+an invertible matrix in the linear space $\mathbb{K}^{n \times n}$ of $n \times
+n$ matrices over $\mathbb{K}$ and to compute the square root in a matrix
+algebra. While computing square roots of matrices can be done efficiently using
+numerical methods, it seems difficult to control the bit complexity of such
+methods. However, we present exact and polynomial-time algorithms for computing
+the square root in $\mathbb{K}^{n \times n}$ for various fields (including
+finite fields). We then consider \\#{\tt IP1S}, the counting version of {\tt
+IP1S} for quadratic instances. In particular, we provide a (complete)
+characterization of the automorphism group of homogeneous quadratic
+polynomials. Finally, we also consider the more general {\it Isomorphism of
+Polynomials} ({\tt IP}) problem where we allow an invertible linear
+transformation on the variables \emph{and} on the set of polynomials. A
+randomized polynomial-time algorithm for solving {\tt IP} when
+\(\mathbf{f}=(x\_1^d,\ldots,x\_n^d)\) is presented. From an algorithmic point
+of view, the problem boils down to factoring the determinant of a linear matrix
+(\emph{i.e.}\ a matrix whose components are linear polynomials). This extends
+to {\tt IP} a result of Kayal obtained for {\tt PolyProj}.

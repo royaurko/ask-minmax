@@ -1,0 +1,21 @@
+We consider a network of devices, such as generators, fixed loads, deferrable
+loads, and storage devices, each with its own dynamic constraints and
+objective, connected by lossy capacitated lines. The problem is to minimize the
+total network objective subject to the device and line constraints, over a
+given time horizon. This is a large optimization problem, with variables for
+consumption or generation in each time period for each device. In this paper we
+develop a decentralized method for solving this problem. The method is
+iterative: At each step, each device exchanges simple messages with its
+neighbors in the network and then solves its own optimization problem,
+minimizing its own objective function, augmented by a term determined by the
+messages it has received. We show that this message passing method converges to
+a solution when the device objective and constraints are convex. The method is
+completely decentralized, and needs no global coordination other than
+synchronizing iterations; the problems to be solved by each device can
+typically be solved extremely efficiently and in parallel. The method is fast
+enough that even a serial implementation can solve substantial problems in
+reasonable time frames. We report results for several numerical experiments,
+demonstrating the method's speed and scaling, including the solution of a
+problem instance with over 30 million variables in 52 minutes for a serial
+implementation; with decentralized computing, the solve time would be less than
+one second.

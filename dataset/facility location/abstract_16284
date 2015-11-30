@@ -1,0 +1,19 @@
+With the puncture method for black hole simulations, the second infinity of a
+wormhole geometry is compactified to a single "puncture point" on the
+computational grid. The region surrounding the puncture quickly evolves to a
+trumpet geometry. The computational grid covers only a portion of the trumpet
+throat. It ends at a boundary whose location depends on resolution. This raises
+the possibility that perturbations in the trumpet geometry could propagate down
+the trumpet throat, reflect from the puncture boundary, and return to the black
+hole exterior with a resolution--dependent time delay. Such pathological
+behavior is not observed. This is explained by the observation that some
+perturbative modes propagate in the conformal geometry, others propagate in the
+physical geometry. The puncture boundary exists only in the physical geometry.
+The modes that propagate in the physical geometry are always directed away from
+the computational domain at the puncture boundary. The finite difference
+stencils ensure that these modes are advected through the boundary with no
+coupling to the modes that propagate in the conformal geometry. These results
+are supported by numerical experiments with a code that evolves spherically
+symmetric gravitational fields with standard Cartesian finite difference
+stencils. The code uses the Baumgarte--Shapiro--Shibata--Nakamura formulation
+of Einstein's equations with 1+log slicing and gamma--driver shift conditions.

@@ -1,0 +1,18 @@
+A distributed algorithm performs local computations on pieces of input and
+communicates the results through given communication links. When processing a
+massive graph in a distributed algorithm, local outputs must be configured as a
+solution to a graph problem without shared memory and with few rounds of
+communication. In this paper we consider the problem of computing a local
+cluster in a massive graph in the distributed setting. Computing local clusters
+are of certain application-specific interests, such as detecting communities in
+social networks or groups of interacting proteins in biological networks. When
+the graph models the computer network itself, detecting local clusters can help
+to prevent communication bottlenecks. We give a distributed algorithm that
+computes a local cluster in time that depends only logarithmically on the size
+of the graph in the CONGEST model. In particular, when the value of the optimal
+local cluster is known, the algorithm runs in time entirely independent of the
+size of the graph and depends only on error bounds for approximation. We also
+show that the local cluster problem can be computed in the k-machine
+distributed model in sublinear time. The speedup of our local cluster
+algorithms is mainly due to the use of our distributed algorithm for heat
+kernel pagerank.

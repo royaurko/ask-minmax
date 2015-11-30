@@ -1,0 +1,20 @@
+This paper studies the delay constrained multicast capacity of large scale
+mobile ad hoc networks (MANETs). We consider a MANET consists of $n_s$
+multicast sessions. Each multicast session has one source and $p$ destinations.
+The wireless mobiles move according to a two-dimensional i.i.d. mobility model.
+Each source sends identical information to the $p$ destinations in its
+multicast session, and the information is required to be delivered to all the
+$p$ destinations within $D$ time-slots. Given the delay constraint $D,$ we
+first prove that the capacity per multicast session is $O(\min\{1, (\log
+p)(\log (n_sp)) \sqrt{\frac{D}{n_s}}\}).$ Given non-negative functions $f(n)$
+and $g(n)$: $f(n)=O(g(n))$ means there exist positive constants $c$ and $m$
+such that $f(n) \leq cg(n)$ for all $ n\geq m;$ $f(n)=\Omega(g(n))$ means there
+exist positive constants $c$ and $m$ such that $f(n)\geq cg(n)$ for all $n\geq
+m;$ $f(n)=\Theta(g(n))$ means that both $f(n)=\Omega(g(n))$ and $f(n)=O(g(n))$
+hold; $f(n)=o(g(n))$ means that $\lim_{n\to \infty} f(n)/g(n)=0;$ and
+$f(n)=\omega(g(n))$ means that $\lim_{n\to \infty} g(n)/f(n)=0.$ We then
+propose a joint coding/scheduling algorithm achieving a throughput of
+$\Theta(\min\{1,\sqrt{\frac{D}{n_s}}\}).$ Our simulations show that the joint
+coding/scheduling algorithm achieves a throughput of the same order
+($\Theta(\min\{1, \sqrt{\frac{D}{n_s}}\})$) under random walk model and random
+waypoint model.

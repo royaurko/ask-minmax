@@ -1,0 +1,15 @@
+Stochastic discriminative EM (sdEM) is an online-EM-type algorithm for
+discriminative training of probabilistic generative models belonging to the
+exponential family. In this work, we introduce and justify this algorithm as a
+stochastic natural gradient descent method, i.e. a method which accounts for
+the information geometry in the parameter space of the statistical model. We
+show how this learning algorithm can be used to train probabilistic generative
+models by minimizing different discriminative loss functions, such as the
+negative conditional log-likelihood and the Hinge loss. The resulting models
+trained by sdEM are always generative (i.e. they define a joint probability
+distribution) and, in consequence, allows to deal with missing data and latent
+variables in a principled way either when being learned or when making
+predictions. The performance of this method is illustrated by several text
+classification problems for which a multinomial naive Bayes and a latent
+Dirichlet allocation based classifier are learned using different
+discriminative loss functions.

@@ -1,0 +1,15 @@
+In order to curtail the escalating packet loss rates caused by an exponential
+increase in network traffic, active queue management techniques such as Random
+Early Detection (RED) have come into picture. Flow Random Early Drop (FRED)
+keeps state based on instantaneous queue occupancy of a given flow. FRED
+protects fragile flows by deterministically accepting flows from low bandwidth
+connections and fixes several shortcomings of RED by computing queue length
+during both arrival and departure of the packet. Stochastic Fair Queuing (SFQ)
+ensures fair access to network resources and prevents a busty flow from
+consuming more than its fair share. In case of (Random Exponential Marking)
+REM, the key idea is to decouple congestion measure from performance measure
+(loss, queue length or delay). Stabilized RED (SRED) is another approach of
+detecting nonresponsive flows. In this paper, we have shown a comparative
+analysis of throughput, delay and queue length for the various congestion
+control algorithms RED, SFQ and REM. We also included the comparative analysis
+of loss rate having different bandwidth for these algorithms.

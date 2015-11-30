@@ -1,0 +1,23 @@
+Real-time search methods are suited for tasks in which the agent is
+interacting with an initially unknown environment in real time. In such
+simultaneous planning and learning problems, the agent has to select its
+actions in a limited amount of time, while sensing only a local part of the
+environment centered at the agents current location. Real-time heuristic search
+agents select actions using a limited lookahead search and evaluating the
+frontier states with a heuristic function. Over repeated experiences, they
+refine heuristic values of states to avoid infinite loops and to converge to
+better solutions. The wide spread of such settings in autonomous software and
+hardware agents has led to an explosion of real-time search algorithms over the
+last two decades. Not only is a potential user confronted with a hodgepodge of
+algorithms, but he also faces the choice of control parameters they use. In
+this paper we address both problems. The first contribution is an introduction
+of a simple three-parameter framework (named LRTS) which extracts the core
+ideas behind many existing algorithms. We then prove that LRTA*, epsilon-LRTA*,
+SLA*, and gamma-Trap algorithms are special cases of our framework. Thus, they
+are unified and extended with additional features. Second, we prove
+completeness and convergence of any algorithm covered by the LRTS framework.
+Third, we prove several upper-bounds relating the control parameters and
+solution quality. Finally, we analyze the influence of the three control
+parameters empirically in the realistic scalable domains of real-time
+navigation on initially unknown maps from a commercial role-playing game as
+well as routing in ad hoc sensor networks.

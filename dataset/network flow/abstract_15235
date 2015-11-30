@@ -1,0 +1,16 @@
+Distance bounding protocols are used by nodes in wireless networks to
+calculate upper bounds on their distances to other nodes. However, dishonest
+nodes in the network can turn the calculations both illegitimate and inaccurate
+when they participate in protocol executions. It is important to analyze
+protocols for the possibility of such violations. Past efforts to analyze
+distance bounding protocols have only been manual. However, automated
+approaches are important since they are quite likely to find flaws that manual
+approaches cannot, as witnessed in literature for analysis pertaining to key
+establishment protocols. In this paper, we use the constraint solver tool to
+automatically analyze distance bounding protocols. We first formulate a new
+trace property called Secure Distance Bounding (SDB) that protocol executions
+must satisfy. We then classify the scenarios in which these protocols can
+operate considering the (dis)honesty of nodes and location of the attacker in
+the network. Finally, we extend the constraint solver so that it can be used to
+test protocols for violations of SDB in these scenarios and illustrate our
+technique on some published protocols.

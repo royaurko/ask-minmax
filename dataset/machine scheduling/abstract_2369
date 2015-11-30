@@ -1,0 +1,18 @@
+Typical dimensionality reduction methods focus on directly reducing the
+number of random variables while retaining maximal variations in the data. In
+this paper, we consider the dimensionality reduction in parameter spaces of
+binary multivariate distributions. We propose a general
+Confident-Information-First (CIF) principle to maximally preserve parameters
+with confident estimates and rule out unreliable or noisy parameters. Formally,
+the confidence of a parameter can be assessed by its Fisher information, which
+establishes a connection with the inverse variance of any unbiased estimate for
+the parameter via the Cram\'{e}r-Rao bound. We then revisit Boltzmann machines
+(BM) and theoretically show that both single-layer BM without hidden units
+(SBM) and restricted BM (RBM) can be solidly derived using the CIF principle.
+This can not only help us uncover and formalize the essential parts of the
+target density that SBM and RBM capture, but also suggest that the deep neural
+network consisting of several layers of RBM can be seen as the layer-wise
+application of CIF. Guided by the theoretical analysis, we develop a
+sample-specific CIF-based contrastive divergence (CD-CIF) algorithm for SBM and
+a CIF-based iterative projection procedure (IP) for RBM. Both CD-CIF and IP are
+studied in a series of density estimation experiments.

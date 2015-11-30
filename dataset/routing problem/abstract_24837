@@ -1,0 +1,17 @@
+Identifying co-varying causal elements in very high dimensional feature space
+with internal structures, e.g., a space with as many as millions of linearly
+ordered features, as one typically encounters in problems such as whole genome
+association (WGA) mapping, remains an open problem in statistical learning. We
+propose a block-regularized regression model for sparse variable selection in a
+high-dimensional space where the covariates are linearly ordered, and are
+possibly subject to local statistical linkages (e.g., block structures) due to
+spacial or temporal proximity of the features. Our goal is to identify a small
+subset of relevant covariates that are not merely from random positions in the
+ordering, but grouped as contiguous blocks from large number of ordered
+covariates. Following a typical linear regression framework between the
+features and the response, our proposed model employs a sparsity-enforcing
+Laplacian prior for the regression coefficients, augmented by a 1st-order
+Markovian process along the feature sequence that "activates" the regression
+coefficients in a coupled fashion. We describe a sampling-based learning
+algorithm and demonstrate the performance of our method on simulated and
+biological data for marker identification under WGA.

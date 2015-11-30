@@ -1,0 +1,15 @@
+We investigate a model for traffic flow based on the
+Lighthill-Whitham-Richards model that consists of a hyperbolic conservation law
+with a discontinuous, piecewise-linear flux. A mollifier is used to smooth out
+the discontinuity in the flux function over a small distance epsilon << 1 and
+then the analytical solution to the corresponding Riemann problem is derived in
+the limit as epsilon goes to 0. For certain initial data, the Riemann problem
+can give rise to zero waves that propagate with infinite speed but have zero
+strength. We propose a Godunov-type numerical scheme that avoids the otherwise
+severely restrictive CFL constraint that would arise from waves with infinite
+speed by exchanging information between local Riemann problems and thereby
+incorporating the effects of zero waves directly into the Riemann solver.
+Numerical simulations are provided to illustrate the behaviour of zero waves
+and their impact on the solution. The effectiveness of our approach is
+demonstrated through a careful convergence study and comparisons to
+computations using a third-order WENO scheme.

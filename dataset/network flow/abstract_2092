@@ -1,0 +1,14 @@
+Failure detection is a fundamental building block for ensuring fault
+tolerance in large scale distributed systems. There are lots of approaches and
+implementations in failure detectors. Providing flexible failure detection in
+off-the-shelf distributed systems is difficult. In this paper we present an
+innovative solution to this problem. Our approach is based on adaptive,
+decentralized failure detectors, capable of working asynchronous and
+independent on the application flow. The proposed solution considers an
+architecture for the failure detectors, based on clustering, the use of a
+gossip-based algorithm for detection at local level and the use of a
+hierarchical structure among clusters of detectors along which traffic is
+channeled. The solution can scale to a large number of nodes, considers the QoS
+requirements of both applications and resources, and includes fault tolerance
+and system orchestration mechanisms, added in order to asses the reliability
+and availability of distributed systems.

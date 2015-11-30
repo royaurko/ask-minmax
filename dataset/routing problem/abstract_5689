@@ -1,0 +1,16 @@
+We consider the offset-deconstruction problem: Given a polygonal shape Q with
+n vertices, can it be expressed, up to a tolerance \eps in Hausdorff distance,
+as the Minkowski sum of another polygonal shape P with a disk of fixed radius?
+If it does, we also seek a preferably simple-looking solution P; then, P's
+offset constitutes an accurate, vertex-reduced, and smoothened approximation of
+Q. We give an O(n log n)-time exact decision algorithm that handles any
+polygonal shape, assuming the real-RAM model of computation. A variant of the
+algorithm, which we have implemented using CGAL, is based on rational
+arithmetic and answers the same deconstruction problem up to an uncertainty
+parameter \delta; its running time additionally depends on \delta. If the input
+shape is found to be approximable, this algorithm also computes an approximate
+solution for the problem. It also allows us to solve parameter-optimization
+problems induced by the offset-deconstruction problem. For convex shapes, the
+complexity of the exact decision algorithm drops to O(n), which is also the
+time required to compute a solution P with at most one more vertex than a
+vertex-minimal one.

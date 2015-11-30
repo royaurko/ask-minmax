@@ -1,0 +1,16 @@
+Wideband analog signals push contemporary analog-to-digital conversion
+systems to their performance limits. In many applications, however, sampling at
+the Nyquist rate is inefficient because the signals of interest contain only a
+small number of significant frequencies relative to the bandlimit, although the
+locations of the frequencies may not be known a priori. For this type of sparse
+signal, other sampling strategies are possible. This paper describes a new type
+of data acquisition system, called a random demodulator, that is constructed
+from robust, readily available components. Let K denote the total number of
+frequencies in the signal, and let W denote its bandlimit in Hz. Simulations
+suggest that the random demodulator requires just O(K log(W/K)) samples per
+second to stably reconstruct the signal. This sampling rate is exponentially
+lower than the Nyquist rate of W Hz. In contrast with Nyquist sampling, one
+must use nonlinear methods, such as convex programming, to recover the signal
+from the samples taken by the random demodulator. This paper provides a
+detailed theoretical analysis of the system's performance that supports the
+empirical observations.

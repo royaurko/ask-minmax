@@ -1,0 +1,26 @@
+In a multicore system, applications running on different cores interfere at
+main memory. This inter-application interference degrades overall system
+performance and unfairly slows down applications. Prior works have developed
+application-aware memory schedulers to tackle this problem. State-of-the-art
+application-aware memory schedulers prioritize requests of applications that
+are vulnerable to interference, by ranking individual applications based on
+their memory access characteristics and enforcing a total rank order.
+  In this paper, we observe that state-of-the-art application-aware memory
+schedulers have two major shortcomings. First, such schedulers trade off
+hardware complexity in order to achieve high performance or fairness, since
+ranking applications with a total order leads to high hardware complexity.
+Second, ranking can unfairly slow down applications that are at the bottom of
+the ranking stack. To overcome these shortcomings, we propose the Blacklisting
+Memory Scheduler (BLISS), which achieves high system performance and fairness
+while incurring low hardware complexity, based on two observations. First, we
+find that, to mitigate interference, it is sufficient to separate applications
+into only two groups. Second, we show that this grouping can be efficiently
+performed by simply counting the number of consecutive requests served from
+each application.
+  We evaluate BLISS across a wide variety of workloads/system configurations
+and compare its performance and hardware complexity, with five state-of-the-art
+memory schedulers. Our evaluations show that BLISS achieves 5% better system
+performance and 25% better fairness than the best-performing previous scheduler
+while greatly reducing critical path latency and hardware area cost of the
+memory scheduler (by 79% and 43%, respectively), thereby achieving a good
+trade-off between performance, fairness and hardware complexity.

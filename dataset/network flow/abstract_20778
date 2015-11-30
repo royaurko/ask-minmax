@@ -1,0 +1,22 @@
+A fundamental problem in wireless networks is the \emph{minimum spanning
+tree} (MST) problem: given a set $V$ of wireless nodes, compute a spanning tree
+$T$, so that the total cost of $T$ is minimized. In recent years, there has
+been a lot of interest in the physical interference model based on SINR
+constraints. Distributed algorithms are especially challenging in the SINR
+model, because of the non-locality of the model.
+  In this paper, we develop a fast distributed approximation algorithm for MST
+construction in an SINR based distributed computing model. For an $n$-node
+network, our algorithm's running time is $O(D\log{n}+\mu\log{n})$ and produces
+a spanning tree whose cost is within $O(\log n)$ times the optimal (MST cost),
+where $D$ denotes the diameter of the disk graph obtained by using the maximum
+possible transmission range, and $\mu=\log{\frac{d_{max}}{d_{min}}}$ denotes
+the "distance diversity" w.r.t. the largest and smallest distances between two
+nodes. (When $\frac{d_{max}}{d_{min}}$ is $n$-polynomial, $\mu = O(\log n)$.)
+Our algorithm's running time is essentially optimal (upto a logarithmic
+factor), since computing {\em any} spanning tree takes $\Omega(D)$ time; thus
+our algorithm produces a low cost spanning tree in time only a logarithmic
+factor more than the time to compute a spanning tree. The distributed
+scheduling complexity of the spanning tree resulted from our algorithm is
+$O(\mu \log n)$. Our algorithmic design techniques can be useful in designing
+efficient distributed algorithms for related "global" problems in wireless
+networks in the SINR model.

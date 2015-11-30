@@ -1,0 +1,13 @@
+We introduce a counter-example guided inductive synthesis (CEGIS) framework
+for synthesizing continuous-time switching controllers that guarantee reach
+while stay (RWS) properties of the closed loop system. The solution is based on
+synthesizing specially defined class of control Lyapunov functions (CLFs) for
+switched systems, that yield switching controllers with a guaranteed minimum
+dwell time in each mode. Next, we use a CEGIS-based approach to iteratively
+solve the resulting quantified exists-forall constraints, and find a CLF. We
+introduce relaxations to guarantee termination, as well as heuristics to
+increase convergence speed. Finally, we evaluate our approach on a set of
+benchmarks ranging from two to six state variables. Our evaluation includes a
+preliminary comparison with related tools. The proposed approach shows the
+promise of nonlinear SMT solvers for the synthesis of provably correct
+switching control laws.

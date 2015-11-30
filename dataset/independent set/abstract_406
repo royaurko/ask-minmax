@@ -1,0 +1,22 @@
+Most of the work on query evaluation in probabilistic databases has focused
+on the simple tuple-independent data model, where tuples are independent random
+events. Several efficient query evaluation techniques exists in this setting,
+such as safe plans, algorithms based on OBDDs, tree-decomposition and a variety
+of approximation algorithms. However, complex data analytics tasks often
+require complex correlations, and query evaluation then is significantly more
+expensive, or more restrictive. In this paper, we propose MVDB as a framework
+both for representing complex correlations and for efficient query evaluation.
+An MVDB specifies correlations by views, called MarkoViews, on the
+probabilistic relations and declaring the weights of the view's outputs. An
+MVDB is a (very large) Markov Logic Network. We make two sets of contributions.
+First, we show that query evaluation on an MVDB is equivalent to evaluating a
+Union of Conjunctive Query(UCQ) over a tuple-independent database. The
+translation is exact (thus allowing the techniques developed for tuple
+independent databases to be carried over to MVDB), yet it is novel and quite
+non-obvious (some resulting probabilities may be negative!). This translation
+in itself though may not lead to much gain since the translated query gets
+complicated as we try to capture more correlations. Our second contribution is
+to propose a new query evaluation strategy that exploits offline compilation to
+speed up online query evaluation. Here we utilize and extend our prior work on
+compilation of UCQ. We validate experimentally our techniques on a large
+probabilistic database with MarkoViews inferred from the DBLP data.

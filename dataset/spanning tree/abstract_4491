@@ -1,0 +1,12 @@
+In binary jumbled pattern matching we wish to preprocess a binary string $S$
+in order to answer queries $(i,j)$ which ask for a substring of $S$ that is of
+size $i$ and has exactly $j$ 1-bits. The problem naturally generalizes to
+node-labeled trees and graphs by replacing "substring" with "connected
+subgraph".
+  In this paper, we give an ${n^2}/{2^{\Omega(\log n/\log \log n)^{1/2}}}$ time
+solution for both strings and trees. This odd-looking time complexity improves
+the state of the art $O(n^2/\log^2 n)$ solutions by more than any
+poly-logarithmic factor. It originates from the recent seminal algorithm of
+Williams for min-plus matrix multiplication. We obtain the result by giving a
+black box reduction from trees to strings. This is then combined with a
+reduction from strings to min-plus matrix multiplications.

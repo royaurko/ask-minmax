@@ -1,0 +1,15 @@
+A central problem in data integration and data cleansing is to find entities
+in different data sources that describe the same real-world object. Many
+existing methods for identifying such entities rely on explicit linkage rules
+which specify the conditions that entities must fulfill in order to be
+considered to describe the same real-world object. In this paper, we present
+the GenLink algorithm for learning expressive linkage rules from a set of
+existing reference links using genetic programming. The algorithm is capable of
+generating linkage rules which select discriminative properties for comparison,
+apply chains of data transformations to normalize property values, choose
+appropriate distance measures and thresholds and combine the results of
+multiple comparisons using non-linear aggregation functions. Our experiments
+show that the GenLink algorithm outperforms the state-of-the-art genetic
+programming approach to learning linkage rules recently presented by Carvalho
+et. al. and is capable of learning linkage rules which achieve a similar
+accuracy as human written rules for the same problem.

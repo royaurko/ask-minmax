@@ -1,0 +1,15 @@
+Solving the Kohn-Sham eigenvalue problem constitutes the most computationally
+expensive part in self-consistent density functional theory (DFT) calculations.
+In a previous paper, we have proposed a nonlinear Chebyshev-filtered subspace
+iteration method, which avoids computing explicit eigenvectors except at the
+first SCF iteration. The method may be viewed as an approach to solve the
+original nonlinear Kohn-Sham equation by a nonlinear subspace iteration
+technique, without emphasizing the intermediate linearized Kohn-Sham eigenvalue
+problem. It reaches self-consistency within a similar number of SCF iterations
+as eigensolver-based approaches. However, replacing the standard
+diagonalization at each SCF iteration by a Chebyshev subspace filtering step
+results in a significant speedup over methods based on standard
+diagonalization. Here, we discuss an approach for implementing this method in
+multi-processor, parallel environment. Numerical results are presented to show
+that the method enables to perform a class of highly challenging DFT
+calculations that were not feasible before.

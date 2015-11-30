@@ -1,0 +1,22 @@
+In the book Boolean Function Complexity by Stasys Jukna, two lower bound
+techniques for Tree-like Cutting Plane proofs (henceforth, "Tree-CP proofs")
+using Karchmer-Widgerson type communication games (henceforth, "KW games") are
+presented: The first, applicable to Tree-CP proofs with bounded coefficients,
+translates Omega(t) deterministic lower bounds on KW games to 2^Omega(t/log n)
+lower bounds on Tree-CP proof size. The second, applicable to Tree-CP proofs
+with unbounded coefficients, translates Omega(t) randomized lower bounds on KW
+games to 2^Omega(t/log^2 n) lower bounds on Tree-CP proof size.
+  The textbook proof in the latter case uses a O(log^2 n)-bit randomized
+protocol for the GreaterThan function. However, Nisan mentioned using the ideas
+of Feige, et al. to construct a O(log n + log(1/epsilon))-bit randomized
+protocol for GreaterThan. Nisan did not explicitly give the proof, though later
+results in his paper assume such a protocol.
+  In this short exposition, we present the full O(log n + log(1/epsilon))-bit
+randomized protocol for the GreaterThan function based on the ideas of Feige,
+et al. for "noisy binary search." As an application, we show how to translate
+Omega(t) randomized lower bounds on KW games to 2^Omega(t/log n) lower bounds
+on Tree-CP proof size in the unbounded coefficient case. This equates
+randomness with coefficient size for the Tree-CP/KW game lower bound method.
+  We believe that, while the O(log n + log(1/epsilon))-bit randomized protocol
+for GreaterThan is a "known" result, the explicit connection to Tree-CP proof
+size lower bounds given here is new.

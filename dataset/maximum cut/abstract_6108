@@ -1,0 +1,24 @@
+In the problem Max Lin, we are given a system $Az=b$ of $m$ linear equations
+with $n$ variables over $\mathbb{F}_2$ in which each equation is assigned a
+positive weight and we wish to find an assignment of values to the variables
+that maximizes the excess, which is the total weight of satisfied equations
+minus the total weight of falsified equations. Using an algebraic approach, we
+obtain a lower bound for the maximum excess.
+  Max Lin Above Average (Max Lin AA) is a parameterized version of Max Lin
+introduced by Mahajan et al. (Proc. IWPEC'06 and J. Comput. Syst. Sci. 75,
+2009). In Max Lin AA all weights are integral and we are to decide whether the
+maximum excess is at least $k$, where $k$ is the parameter.
+  It is not hard to see that we may assume that no two equations in $Az=b$ have
+the same left-hand side and $n={\rm rank A}$. Using our maximum excess results,
+we prove that, under these assumptions, Max Lin AA is fixed-parameter tractable
+for a wide special case: $m\le 2^{p(n)}$ for an arbitrary fixed function
+$p(n)=o(n)$.
+  Max $r$-Lin AA is a special case of Max Lin AA, where each equation has at
+most $r$ variables. In Max Exact $r$-SAT AA we are given a multiset of $m$
+clauses on $n$ variables such that each clause has $r$ variables and asked
+whether there is a truth assignment to the $n$ variables that satisfies at
+least $(1-2^{-r})m + k2^{-r}$ clauses. Using our maximum excess results, we
+prove that for each fixed $r\ge 2$, Max $r$-Lin AA and Max Exact $r$-SAT AA can
+be solved in time $2^{O(k \log k)}+m^{O(1)}.$ This improves
+$2^{O(k^2)}+m^{O(1)}$-time algorithms for the two problems obtained by Gutin et
+al. (IWPEC 2009) and Alon et al. (SODA 2010), respectively.

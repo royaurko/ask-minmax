@@ -1,0 +1,26 @@
+Motivated by online advertisement and exchange settings, greedy randomized
+algorithms for the maximum matching problem have been studied, in which the
+algorithm makes (random) decisions that are essentially oblivious to the input
+graph. Any greedy algorithm can achieve performance ratio 0.5, which is the
+expected number of matched nodes to the number of nodes in a maximum matching.
+  Since Aronson, Dyer, Frieze and Suen proved that the Modified Randomized
+Greedy (MRG) algorithm achieves performance ratio 0.5 + \epsilon (where
+\epsilon = frac{1}{400000}) on arbitrary graphs in the mid-nineties, no further
+attempts in the literature have been made to improve this theoretical ratio for
+arbitrary graphs until two papers were published in FOCS 2012. Poloczek and
+Szegedy also analyzed the MRG algorithm to give ratio 0.5039, while Goel and
+Tripathi used experimental techniques to analyze the Ranking algorithm to give
+ratio 0.56. However, we could not reproduce the experimental results of Goel
+and Tripathi.
+  In this paper, we revisit the Ranking algorithm using the LP framework.
+Special care is given to analyze the structural properties of the Ranking
+algorithm in order to derive the LP constraints, of which one known as the
+\emph{boundary} constraint requires totally new analysis and is crucial to the
+success of our LP.
+  We use continuous LP relaxation to analyze the limiting behavior as the
+finite LP grows. Of particular interest are new duality and complementary
+slackness characterizations that can handle the monotone and the boundary
+constraints in continuous LP. We believe our work achieves the currently best
+theoretical performance ratio of \frac{2(5-\sqrt{7})}{9} \approx 0.523 on
+arbitrary graphs. Moreover, experiments suggest that Ranking cannot perform
+better than 0.724 in general.

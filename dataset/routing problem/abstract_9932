@@ -1,0 +1,15 @@
+The Euclidean TSP with neighborhoods (TSPN) is the following problem: Given a
+set R of k regions, find a shortest tour that visits at least one point from
+each region. We study the special cases of disjoint, connected, alpha-fat
+regions (i.e., every region P contains a disk of diameter diam(P)/alpha) and
+disjoint unit disks.
+  For the latter, Dumitrescu and Mitchell proposed an algorithm based on
+Mitchell's guillotine subdivision approach for the Euclidean TSP and claimed it
+to be a PTAS. However, their proof contains a severe gap, which we will close
+in the following. Bodlaender et al. remark that their techniques for the
+minimum corridor connection problem carry over to the TSPN and yield an
+alternative PTAS for this problem.
+  For disjoint connected alpha-fat regions of varying size, Mitchell proposed a
+slightly different PTAS candidate. We will expose several further problems and
+gaps in this approach. Some of them we can close, but overall, for alpha-fat
+regions, the existence of a PTAS for the TSPN remains open.

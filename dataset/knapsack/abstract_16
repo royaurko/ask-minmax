@@ -1,0 +1,21 @@
+The problem of maximizing non-negative monotone submodular functions under a
+certain constraint has been intensively studied in the last decade. In this
+paper, we address the problem for functions defined over the integer lattice.
+Suppose that a non-negative monotone submodular function $f:\mathbb{Z}_+^n \to
+\mathbb{R}_+$ is given via an evaluation oracle. Furthermore, we assume that
+$f$ satisfies the diminishing return property, which is not an immediate
+consequence of the submodularity when the domain is the integer lattice. Then,
+we show (i) a $(1-1/e-\epsilon)$-approximation algorithm for a cardinality
+constraint with $\widetilde{O}(\frac{n}{\epsilon}\log \frac{r}{\epsilon})$
+queries, where $r$ is the maximum cardinality of feasible solutions, (ii) a
+$(1-1/e-\epsilon)$-approximation algorithm for a polymatroid constraint with
+$\widetilde{O}(\frac{nr}{\epsilon^4}+n^6)$ queries, where $r$ is the rank of
+the polymatroid, and (iii) a $(1-1/e-\epsilon)$-approximation algorithm for a
+knapsack constraint with $\widetilde{O}(\frac{n^2}{\epsilon^{18}}\log
+\frac{1}{w})(\frac{1}{\epsilon})^{O(1/\epsilon^8)}$ queries, where $w$ is the
+minumum weight of elements.
+  Our algorithms for polymatroid constraints and knapsack constraints first
+extend the domain of the objective function to the Euclidean space and then run
+the continuous greedy algorithm. We give two different kinds of continuous
+extensions, one is for knapsack constraints and the other is for polymatroid
+constraints, which might be of independent interest.

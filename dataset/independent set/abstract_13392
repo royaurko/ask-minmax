@@ -1,0 +1,19 @@
+The Shirley reduced basis (SRB) represents the periodic parts of Bloch
+functions as linear combi- nations of eigenvectors taken from a coarse sample
+of the Brillouin zone, orthogonalized and reduced through proper orthogonal
+decomposition. We describe a novel transformation of the self-consistent
+density functional theory eigenproblem from a plane-wave basis with ultra-soft
+pseudopotentials to the SRB that is independent of the k-point. In particular,
+the number of operations over the space of plane-waves is independent of the
+number of k-points. The parameter space of the transformation is explored and
+suitable defaults are proposed. The SRB is shown to converge to the plane-wave
+solution. For reduced dimensional systems, reductions in computational cost,
+compared to the plane-wave calculations, exceed 5x. Performance on bulk systems
+improves by 1.67x in molecular dynamics-like contexts. This robust technique is
+well-suited to efficient study of systems with strin- gent requirements on
+numerical accuracy related to subtle details in the electronic band structure,
+such as topological insulators, Dirac semi-metals, metal surfaces and
+nanostructures, and charge transfer at interfaces with any of these systems.
+The techniques used to achieve a k-independent transformation could be applied
+to other computationally expensive matrix elements, such as those found in
+density functional perturbation theory and many-body perturbation theory.

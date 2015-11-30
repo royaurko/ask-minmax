@@ -1,0 +1,16 @@
+In this paper, we propose a general framework to design asymptotic preserving
+schemes for the Boltzmann kinetic kinetic and related equations. Numerically
+solving these equations are challenging due to the nonlinear stiff collision
+(source) terms induced by small mean free or relaxation time. We propose to
+penalize the nonlinear collision term by a BGK-type relaxation term, which can
+be solved explicitly even if discretized implicitly in time. Moreover, the
+BGK-type relaxation operator helps to drive the density distribution toward the
+local Maxwellian, thus natually imposes an asymptotic-preserving scheme in the
+Euler limit. The scheme so designed does not need any nonlinear iterative
+solver or the use of Wild Sum. It is uniformly stable in terms of the (possibly
+small) Knudsen number, and can capture the macroscopic fluid dynamic (Euler)
+limit even if the small scale determined by the Knudsen number is not
+numerically resolved. It is also consistent to the compressible Navier-Stokes
+equations if the viscosity and heat conductivity are numerically resolved. The
+method is applicable to many other related problems, such as hyperbolic systems
+with stiff relaxation, and high order parabilic equations.

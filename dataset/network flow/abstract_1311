@@ -1,0 +1,18 @@
+We present a capacity-achieving coding scheme for unicast or multicast over
+lossy packet networks. In the scheme, intermediate nodes perform additional
+coding yet do not decode nor even wait for a block of packets before sending
+out coded packets. Rather, whenever they have a transmission opportunity, they
+send out coded packets formed from random linear combinations of previously
+received packets. All coding and decoding operations have polynomial
+complexity.
+  We show that the scheme is capacity-achieving as long as packets received on
+a link arrive according to a process that has an average rate. Thus, packet
+losses on a link may exhibit correlation in time or with losses on other links.
+In the special case of Poisson traffic with i.i.d. losses, we give error
+exponents that quantify the rate of decay of the probability of error with
+coding delay. Our analysis of the scheme shows that it is not only
+capacity-achieving, but that the propagation of packets carrying "innovative"
+information follows the propagation of jobs through a queueing network, and
+therefore fluid flow models yield good approximations. We consider networks
+with both lossy point-to-point and broadcast links, allowing us to model both
+wireline and wireless packet networks.

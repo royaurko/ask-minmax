@@ -1,0 +1,12 @@
+This article presents a Bayesian implementation of a cumulative probit model
+to forecast the outcomes of the UEFA Champions League matches. The argument of
+the normal CDF involves a cut-off point, a home vs away playing effect and the
+difference in strength of the two competing teams. Team strength is assumed to
+follow a Gaussian distribution the expectation of which is expressed as a
+linear regression on an external rating of the team from eg the UEFA Club
+Ranking (UEFACR) or the Football Club World Ranking (FCWR). Priors on these
+parameters are updated at the beginning of each season from their posterior
+distributions obtained at the end of the previous one. This allows making
+predictions of match results for each phase of the competition: group stage and
+knock-out. An application is presented for the 2013-2014 season. Adjustment
+based on the FCWR performs better than on UEFACR.

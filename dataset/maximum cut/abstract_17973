@@ -1,0 +1,17 @@
+For a graph $G=(V,E)$, a set $D\subseteq V$ is called a \emph{disjunctive
+dominating set} of $G$ if for every vertex $v\in V\setminus D$, $v$ is either
+adjacent to a vertex of $D$ or has at least two vertices in $D$ at distance $2$
+from it. The cardinality of a minimum disjunctive dominating set of $G$ is
+called the \emph{disjunctive domination number} of graph $G$, and is denoted by
+$\gamma_{2}^{d}(G)$. The \textsc{Minimum Disjunctive Domination Problem} (MDDP)
+is to find a disjunctive dominating set of cardinality $\gamma_{2}^{d}(G)$.
+Given a positive integer $k$ and a graph $G$, the \textsc{Disjunctive
+Domination Decision Problem} (DDDP) is to decide whether $G$ has a disjunctive
+dominating set of cardinality at most $k$. In this article, we first propose a
+linear time algorithm for MDDP in proper interval graphs. Next we tighten the
+NP-completeness of DDDP by showing that it remains NP-complete even in chordal
+graphs. We also propose a $(\ln(\Delta^{2}+\Delta+2)+1)$-approximation
+algorithm for MDDP in general graphs and prove that MDDP can not be
+approximated within $(1-\epsilon) \ln(|V|)$ for any $\epsilon>0$ unless NP
+$\subseteq$ DTIME$(|V|^{O(\log \log |V|)})$. Finally, we show that MDDP is
+APX-complete for bipartite graphs with maximum degree $3$.

@@ -1,0 +1,24 @@
+In this paper, we formulate the collaborative multi-user wireless video
+transmission problem as a multi-user Markov decision process (MUMDP) by
+explicitly considering the users' heterogeneous video traffic characteristics,
+time-varying network conditions and the resulting dynamic coupling between the
+wireless users. These environment dynamics are often ignored in existing
+multi-user video transmission solutions. To comply with the decentralized
+nature of wireless networks, we propose to decompose the MUMDP into local MDPs
+using Lagrangian relaxation. Unlike in conventional multi-user video
+transmission solutions stemming from the network utility maximization
+framework, the proposed decomposition enables each wireless user to
+individually solve its own dynamic cross-layer optimization (i.e. the local
+MDP) and the network coordinator to update the Lagrangian multipliers (i.e.
+resource prices) based on not only current, but also future resource needs of
+all users, such that the long-term video quality of all users is maximized.
+However, solving the MUMDP requires statistical knowledge of the experienced
+environment dynamics, which is often unavailable before transmission time. To
+overcome this obstacle, we then propose a novel online learning algorithm,
+which allows the wireless users to update their policies in multiple states
+during one time slot. This is different from conventional learning solutions,
+which often update one state per time slot. The proposed learning algorithm can
+significantly improve the learning performance, thereby dramatically improving
+the video quality experienced by the wireless users over time. Our simulation
+results demonstrate the efficiency of the proposed MUMDP framework as compared
+to conventional multi-user video transmission solutions.

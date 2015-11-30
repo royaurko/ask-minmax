@@ -1,0 +1,16 @@
+Standard multi-armed bandits model decision problems in which the
+consequences of each action choice are unknown and independent of each other.
+But in a wide variety of decision problems - from drug dosage to dynamic
+pricing - the consequences (rewards) of different actions are correlated, so
+that selecting one action provides information about the consequences (rewards)
+of other actions as well. We propose and analyze a class of models of such
+decision problems; we call this class of models global bandits. When rewards
+across actions (arms) are sufficiently correlated we construct a greedy policy
+that achieves bounded regret, with a bound that depends on the true parameters
+of the problem. In the special case in which rewards of all arms are
+deterministic functions of a single unknown parameter, we construct a (more
+sophisticated) greedy policy that achieves bounded regret, with a bound that
+depends on the single true parameter of the problem. For this special case we
+also obtain a bound on regret that is independent of the true parameter; this
+bound is sub-linear, with an exponent that depends on the informativeness of
+the arms (which measures the strength of correlation between arm rewards).

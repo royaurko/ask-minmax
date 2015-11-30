@@ -1,0 +1,11 @@
+We consider an online learning problem on a continuum. A decision maker is
+given a compact feasible set $S$, and is faced with the following sequential
+problem: at iteration~$t$, the decision maker chooses a distribution $x^{(t)}
+\in \Delta(S)$, then a loss function $\ell^{(t)} : S \to \mathbb{R}_+$ is
+revealed, and the decision maker incurs expected loss $\langle \ell^{(t)},
+x^{(t)} \rangle = \mathbb{E}_{s \sim x^{(t)}} \ell^{(t)}(s)$. We view the
+problem as an online convex optimization problem on the space $\Delta(S)$ of
+Lebesgue-continnuous distributions on $S$. We prove a general regret bound for
+the Dual Averaging method on $L^2(S)$, then prove that dual averaging with
+$\omega$-potentials (a class of strongly convex regularizers) achieves
+sublinear regret when $S$ is uniformly fat (a condition weaker than convexity).

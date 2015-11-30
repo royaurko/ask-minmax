@@ -1,0 +1,11 @@
+In this paper, we consider the message forwarding problem that consists in
+managing the network resources that are used to forward messages. Previous
+works on this problem provide solutions that either use a significant number of
+buffers (that is n buffers per processor, where n is the number of processors
+in the network) making the solution not scalable or, they reserve all the
+buffers from the sender to the receiver to forward only one message %while
+using D buffers (where D refers to the diameter of the network) . The only
+solution that uses a constant number of buffers per link was introduced in [1].
+However the solution works only on a chain networks. In this paper, we propose
+a snap-stabilizing algorithm for the message forwarding problem that uses the
+same complexity on the number of buffers as [1] and works on tree topologies.

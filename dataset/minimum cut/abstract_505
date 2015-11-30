@@ -1,0 +1,18 @@
+Suppose we have a signal y which we wish to represent using a linear
+combination of a number of basis atoms a_i, y=sum_i x_i a_i = Ax. The problem
+of finding the minimum L0 norm representation for y is a hard problem. The
+Basis Pursuit (BP) approach proposes to find the minimum L1 norm representation
+instead, which corresponds to a linear program (LP) that can be solved using
+modern LP techniques, and several recent contributors have given conditions for the
+BP (minimum L1 norm) and sparse (minimum L0 solutions) representations to be
+identical. In this paper, we explore this sparse representation problem} using
+the geometry of convex polytopes, as recently introduced into the field by
+Donoho. By considering the dual LP we find that the so-called polar polytope P
+of the centrally-symmetric polytope P whose vertices are the atom pairs +-a_i
+is particularly helpful in providing us with geometrical insight into
+optimality conditions given by Fuchs and Tropp for non-unit-norm atom sets. In
+exploring this geometry we are able to tighten some of these earlier results,
+showing for example that the Fuchs condition is both necessary and sufficient
+for L1-unique-optimality, and that there are situations where Orthogonal
+Matching Pursuit (OMP) can eventually find all L1-unique-optimal solutions with
+m nonzeros even if ERC fails for m, if allowed to run for more than m steps.

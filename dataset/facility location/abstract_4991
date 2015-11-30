@@ -1,0 +1,16 @@
+In many developing countries, half the population lives in rural locations,
+where access to essentials such as school materials, mosquito nets, and medical
+supplies is restricted. We propose an alternative method of distribution (to
+standard road delivery) in which the existing mobility habits of a local
+population are leveraged to deliver aid, which raises two technical challenges
+in the areas optimisation and learning. For optimisation, a standard Markov
+decision process applied to this problem is intractable, so we provide an exact
+formulation that takes advantage of the periodicities in human location
+behaviour. To learn such behaviour models from sparse data (i.e., cell tower
+observations), we develop a Bayesian model of human mobility. Using real cell
+tower data of the mobility behaviour of 50,000 individuals in Ivory Coast, we
+find that our model outperforms the state of the art approaches in mobility
+prediction by at least 25% (in held-out data likelihood). Furthermore, when
+incorporating mobility prediction with our MDP approach, we find a 81.3%
+reduction in total delivery time versus routine planning that minimises just
+the number of participants in the solution path.

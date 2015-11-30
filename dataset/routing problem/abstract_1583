@@ -1,0 +1,13 @@
+This paper presents a digital VLSI design flow to create secure, side-channel
+attack (SCA) resistant integrated circuits. The design flow starts from a
+normal design in a hardware description language such as VHDL or Verilog and
+provides a direct path to a SCA resistant layout. Instead of a full custom
+layout or an iterative design process with extensive simulations, a few key
+modifications are incorporated in a regular synchronous CMOS standard cell
+design flow. We discuss the basis for side-channel attack resistance and adjust
+the library databases and constraints files of the synthesis and place & route
+procedures accordingly. Experimental results show that a DPA attack on a
+regular single ended CMOS standard cell implementation of a module of the DES
+algorithm discloses the secret key after 200 measurements. The same attack on a
+secure version still does not disclose the secret key after more than 2000
+measurements.

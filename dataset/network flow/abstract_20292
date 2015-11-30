@@ -1,0 +1,13 @@
+The increasing use of cloud computing and remote execution have made program
+security especially important. Code obfuscation has been proposed to make the
+understanding of programs more complicated to attackers. In this paper, we
+exploit multi-core processing to substantially increase the complexity of
+programs, making reverse engineering more complicated. We propose a novel
+method that automatically partitions any serial thread into an arbitrary number
+of parallel threads, at the basic-block level. The method generates new
+control-flow graphs, preserving the blocks' serial successor relations and
+guaranteeing that one basic-block is active at a time using guards. The method
+generates m^n different combinations for m threads and n basic-blocks,
+significantly complicating the execution state. We provide a correctness proof
+for the algorithm and implement the algorithm in the LLVM compilation
+framework.

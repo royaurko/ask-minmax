@@ -1,0 +1,14 @@
+In recent years, research efforts to extend linear metric learning models to
+handle nonlinear structures have attracted great interests. In this paper, we
+propose a novel nonlinear solution through the utilization of deformable
+geometric models to learn spatially varying metrics, and apply the strategy to
+boost the performance of both kNN and SVM classifiers. Thin-plate splines (TPS)
+are chosen as the geometric model due to their remarkable versatility and
+representation power in accounting for high-order deformations. By transforming
+the input space through TPS, we can pull same-class neighbors closer while
+pushing different-class points farther away in kNN, as well as make the input
+data points more linearly separable in SVMs. Improvements in the performance of
+kNN classification are demonstrated through experiments on synthetic and real
+world datasets, with comparisons made with several state-of-the-art metric
+learning solutions. Our SVM-based models also achieve significant improvements
+over traditional linear and kernel SVMs with the same datasets.

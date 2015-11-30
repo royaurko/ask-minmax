@@ -1,0 +1,20 @@
+Although WiFi fingerprint-based indoor localization is attractive, its
+accuracy remains a primary challenge especially in mobile environments.
+Existing approaches either appeal to physical layer information or rely on
+extra wireless signals for high accuracy. In this paper, we revisit the RSS
+fingerprint-based localization scheme and reveal crucial observations that act
+as the root causes of localization errors, yet are surprisingly overlooked or
+even unseen in previous works. Specifically, we recognize APs' diverse
+discrimination for fingerprinting a specific location, observe the RSS
+inconsistency caused by signal fluctuations and human body blockages, and
+uncover the RSS outdated problem on commodity smartphones. Inspired by these
+insights, we devise a discrimination factor to quantify different APs'
+discrimination, incorporate robust regression to tolerate outlier measurements,
+and reassemble different fingerprints to cope with outdated RSSs. Combining
+these techniques in a unified solution, we propose DorFin, a novel scheme of
+fingerprint generation, representation, and matching, which yields remarkable
+accuracy without incurring extra cost. Extensive experiments demonstrate that
+DorFin achieves mean error of 2 meters and more importantly, bounds the 95th
+percentile error under 5.5 meters; these are about 56% and 69% lower,
+respectively, compared with the state-of-the-art schemes such as Horus and
+RADAR.

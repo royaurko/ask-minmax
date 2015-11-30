@@ -1,0 +1,19 @@
+An N-component continuous-time dynamic system is considered whose components
+evolve autonomously all the time except for in discrete asynchronous instances
+of pairwise interactions. Examples include chaotically colliding billiard balls
+and combat models. A new efficient serial event-driven algorithm is described
+for simulating such systems. Rather than maintaining and updating the global
+state of the system, the algorithm tries to examine only essential events,
+i.e., component interactions. The events are processed in a non-decreasing
+order of time; new interactions are scheduled on the basis of the examined
+interactions using preintegrated equations of the evolutions of the components.
+If the components are distributed uniformly enough in the evolution space, so
+that this space can be subdivided into small sectors such that only O(1)
+sectors and O(1)$components are in the neighborhood of a sector, then the
+algorithm spends time O (log N) for processing an event which is the
+asymptotical minimum. The algorithm uses a simple strategy for handling data:
+only two states are maintained for each simulated component. Fast data access
+in this strategy assures the practical efficiency of the algorithm. It works
+noticeably faster than other algorithms proposed for this model.
+  Key phrases: collision detection, dense packing, molecular dynamics, hard
+spheres, granular flow

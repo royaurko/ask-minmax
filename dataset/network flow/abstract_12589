@@ -1,0 +1,21 @@
+Detecting new information and events in a dynamic network by probing
+individual nodes has many practical applications: discovering new webpages,
+analyzing influence properties in network, and detecting failure propagation in
+electronic circuits or infections in public drinkable water systems. In
+practice, it is infeasible for anyone but the owner of the network (if
+existent) to monitor all nodes at all times. In this work we study the
+constrained setting when the observer can only probe a small set of nodes at
+each time step to check whether new pieces of information (items) have reached
+those nodes.
+  We formally define the problem through an infinite time generating process
+that places new items in subsets of nodes according to an unknown probability
+distribution. Items have an exponentially decaying novelty, modeling their
+decreasing value. The observer uses a probing schedule (i.e., a probability
+distribution over the set of nodes) to choose, at each time step, a small set
+of nodes to check for new items. The goal is to compute a schedule that
+minimizes the average novelty of undetected items. We present an algorithm,
+WIGGINS, to compute the optimal schedule through convex optimization, and then
+show how it can be adapted when the parameters of the problem must be learned
+or change over time. We also present a scalable variant of WIGGINS for the
+MapReduce framework. The results of our experimental evaluation on real social
+networks demonstrate the practicality of our approach.

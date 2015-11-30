@@ -1,0 +1,19 @@
+Communities of vertices within a giant network such as the World-Wide Web are
+likely to be vastly smaller than the network itself. However, Fortunato and
+Barth\'{e}lemy have proved that modularity maximization algorithms for
+community detection may fail to resolve communities with fewer than
+$\sqrt{L/2}$ edges, where $L$ is the number of edges in the entire network.
+This resolution limit leads modularity maximization algorithms to have
+notoriously poor accuracy on many real networks. Fortunato and Barth\'{e}lemy's
+argument can be extended to networks with weighted edges as well, and we derive
+this corollary argument. We conclude that weighted modularity algorithms may
+fail to resolve communities with fewer than $\sqrt{W \epsilon/2}$ total edge
+weight, where $W$ is the total edge weight in the network and $\epsilon$ is the
+maximum weight of an inter-community edge. If $\epsilon$ is small, then small
+communities can be resolved.
+  Given a weighted or unweighted network, we describe how to derive new edge
+weights in order to achieve a low $\epsilon$, we modify the ``CNM'' community
+detection algorithm to maximize weighted modularity, and show that the
+resulting algorithm has greatly improved accuracy. In experiments with an
+emerging community standard benchmark, we find that our simple CNM variant is
+competitive with the most accurate community detection methods yet proposed.

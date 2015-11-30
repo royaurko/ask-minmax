@@ -1,0 +1,17 @@
+The JPEG2000 standard defines the discrete wavelet transform (DWT) as a
+linear space-to-frequency transform of the image domain in an irreversible
+compression. This irreversible discrete wavelet transform is implemented by FIR
+filter using 9/7 Daubechies coefficients or a lifting scheme of factorizated
+coefficients from 9/7 Daubechies coefficients. This work investigates the
+tradeoffs between area, power and data throughput (or operating frequency) of
+several implementations of the Discrete Wavelet Transform using the lifting
+scheme in various pipeline designs. This paper shows the results of five
+different architectures synthesized and simulated in FPGAs. It concludes that
+the descriptions with pipelined operators provide the best area-power-operating
+frequency trade-off over non-pipelined operators descriptions. Those
+descriptions require around 40% more hardware to increase the maximum operating
+frequency up to 100% and reduce power consumption to less than 50%. Starting
+from behavioral HDL descriptions provide the best area-power-operating
+frequency trade-off, improving hardware cost and maximum operating frequency
+around 30% in comparison to structural descriptions for the same power
+requirement.

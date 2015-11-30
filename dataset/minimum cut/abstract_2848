@@ -1,0 +1,20 @@
+With the growing focus on semantic searches and interpretations, an
+increasing number of standardized vocabularies and ontologies are being
+designed and used to describe data. We investigate the querying of objects
+described by a tree-structured ontology. Specifically, we consider the case of
+finding the top-k best pairs of objects that have been annotated with terms
+from such an ontology when the object descriptions are available only at
+runtime. We consider three distance measures. The first one defines the object
+distance as the minimum pairwise distance between the sets of terms describing
+them, and the second one defines the distance as the average pairwise term
+distance. The third and most useful distance measure, earth mover's distance,
+finds the best way of matching the terms and computes the distance
+corresponding to this best matching. We develop lower bounds that can be
+aggregated progressively and utilize them to speed up the search for top-k
+object pairs when the earth mover's distance is used. For the minimum pairwise
+distance, we devise an algorithm that runs in O(D + Tk log k) time, where D is
+the total information size and T is the total number of terms in the ontology.
+We also develop a novel best-first search strategy for the average pairwise
+distance that utilizes lower bounds generated in an ordered manner. Experiments
+on real and synthetic datasets demonstrate the practicality and scalability of
+our algorithms.

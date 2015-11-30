@@ -1,0 +1,25 @@
+The optimal power-flow problem (OPF) has played a key role in the planning
+and operation of power systems. Due to the non-linear nature of the AC
+power-flow equations, the OPF problem is known to be non-convex, therefore hard
+to solve. Most proposed methods for solving the OPF rely on approximations that
+render the problem convex, but that may yield inexact solutions. Recently,
+Farivar and Low proposed a method that is claimed to be exact for radial
+distribution systems, despite no apparent approximations. In our work, we show
+that it is, in fact, not exact. On one hand, there is a misinterpretation of
+the physical network model related to the ampacity constraint of the lines'
+current flows. On the other hand, the proof of the exactness of the proposed
+relaxation requires unrealistic assumptions related to the unboundedness of
+specific control variables. We also show that the extension of this approach to
+account for exact line models might provide physically infeasible solutions.
+Recently, several contributions have proposed OPF algorithms that rely on the
+use of the alternating-direction method of multipliers (ADMM). However, as we
+show in this work, there are cases for which the ADMM-based solution of the
+non-relaxed OPF problem fails to converge. To overcome the aforementioned
+limitations, we propose an algorithm for the solution of a non-approximated,
+non-convex OPF problem in radial distribution systems that is based on the
+method of multipliers, and on a primal decomposition of the OPF. This work is
+divided in two parts. In Part I, we specifically discuss the limitations of BFM
+and ADMM to solve the OPF problem. In Part II, we provide a centralized version
+and a distributed asynchronous version of the proposed OPF algorithm and we
+evaluate its performances using both small-scale electrical networks, as well
+as a modified IEEE 13-node test feeder.

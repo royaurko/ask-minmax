@@ -1,0 +1,20 @@
+Object proposals have quickly become the de-facto preprocessing step in a
+number of vision pipelines. The standard evaluation protocol for object
+proposal methods involves measuring 'recall' of annotated instances by the
+proposals in an object detection dataset such as PASCAL VOC. In this paper, we
+demonstrate that this evaluation protocol is biased. By evaluating only on a
+specific set of categories in a partially annotated dataset, we fail to capture
+the performance of the proposal algorithm on all the remaining object
+categories that are present in the test set, but not annotated in the ground
+truth. More importantly, this makes the evaluation protocol 'gameable' or
+susceptible to manipulation (both intentional and unintentional). To alleviate
+this problem, we perform an exhaustive evaluation of object proposal methods on
+multiple densely annotated datasets including a densely annotated version of
+PASCAL VOC which we introduce in this paper. We also release an easy-to-use
+toolbox which combines various publicly available implementations of object
+proposal algorithms which standardizes the proposal generation and evaluation
+so that new methods can be added and evaluated on different datasets. We hope
+that the results presented in the paper will stimulate discussion in the
+community about the choice of the protocol used to evaluate object proposal
+algorithms and motivate the use of densely annotated datasets or diagnostic
+tools to truly evaluate the category independence of object proposal methods.

@@ -1,0 +1,19 @@
+Distributed Denial of Service (DDoS) attacks have become more prominent
+recently, both in frequency of occurrence, as well as magnitude. Such attacks
+render key Internet resources unavailable and disrupt its normal operation. It
+is therefore of paramount importance to quickly identify malicious Internet
+activity. The DDoS threat model includes characteristics such as: (i)
+heavy-hitters that transmit large volumes of traffic towards "victims", (ii)
+persistent-hitters that send traffic, not necessarily large, to specific
+destinations to be used as attack facilitators, (iii) host and port scanning
+for compiling lists of un-secure servers to be used as attack amplifiers, etc.
+This conglomeration of problems motivates the development of space/time
+efficient summaries of data traffic streams that can be used to identify
+heavy-hitters associated with the above attack vectors. This paper presents a
+hashing-based framework and fast algorithms that take into account the
+large-dimensionality of the incoming network stream and can be employed to
+quickly identify the culprits. The algorithms and data structures proposed
+provide a synopsis of the network stream that is not taxing to fast-memory, and
+can be efficiently implemented in hardware due to simple bit-wise operations.
+The methods are evaluated using real-world Internet data from a large academic
+network.

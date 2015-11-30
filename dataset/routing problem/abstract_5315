@@ -1,0 +1,16 @@
+We consider the problem of reconstructing the shape of an impenetrable
+sound-soft obstacle from scattering measurements. The input data is assumed to
+be the far-field pattern generated when a plane wave impinges on an unknown
+obstacle from one or more directions and at one or more frequencies. It is well
+known that this inverse scattering problem is both ill posed and nonlinear. It
+is common practice to overcome the ill posedness through the use of a penalty
+method or Tikhonov regularization. Here, we present a more physical
+regularization, based simply on restricting the unknown boundary to be
+band-limited in a suitable sense. To overcome the nonlinearity of the problem,
+we use a variant of Newton's method. When multiple frequency data is available,
+we supplement Newton's method with the recursive linearization approach due to
+Chen.
+  During the course of solving the inverse problem, we need to compute the
+solution to a large number of forward scattering problems. For this, we use
+high-order accurate integral equation discretizations, coupled with fast direct
+solvers when the problem is sufficiently large.

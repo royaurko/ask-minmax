@@ -1,0 +1,24 @@
+One-counter processes (OCPs) are pushdown processes which operate only on a
+unary stack alphabet. We study the computational complexity of model checking
+computation tree logic (CTL) over OCPs. A PSPACE upper bound is inherited from
+the modal mu-calculus for this problem. First, we analyze the periodic
+behaviour of CTL over OCPs and derive a model checking algorithm whose running
+time is exponential only in the number of control locations and a syntactic
+notion of the formula that we call leftward until depth. Thus, model checking
+fixed OCPs against CTL formulas with a fixed leftward until depth is in P. This
+generalizes a result of the first contributor, Mayr, and To for the expression
+complexity of CTL's fragment EF. Second, we prove that already over some fixed
+OCP, CTL model checking is PSPACE-hard. Third, we show that there already
+exists a fixed CTL formula for which model checking of OCPs is PSPACE-hard. To
+obtain the latter result, we employ two results from complexity theory: (i)
+Converting a natural number in Chinese remainder presentation into binary
+presentation is in logspace-uniform NC^1 and (ii) PSPACE is AC^0-serializable.
+We demonstrate that our approach can be used to obtain further results. We show
+that model-checking CTL's fragment EF over OCPs is hard for P^NP, thus
+establishing a matching lower bound and answering an open question of the first
+contributor, Mayr, and To. We moreover show that the following problem is hard for
+PSPACE: Given a one-counter Markov decision process, a set of target states
+with counter value zero each, and an initial state, to decide whether the
+probability that the initial state will eventually reach one of the target
+states is arbitrarily close to 1. This improves a previously known lower bound
+for every level of the Boolean hierarchy by Brazdil et al.

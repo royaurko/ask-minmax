@@ -1,0 +1,16 @@
+The Mixture Transition Distribution (MTD) model was introduced by Raftery to
+face the need for parsimony in the modeling of high-order Markov chains in
+discrete time. The particularity of this model comes from the fact that the
+effect of each lag upon the present is considered separately and additively, so
+that the number of parameters required is drastically reduced. However, the
+efficiency for the MTD parameter estimations proposed up to date still remains
+problematic on account of the large number of constraints on the parameters. In
+this paper, an iterative procedure, commonly known as Expectation-Maximization
+(EM) algorithm, is developed cooperating with the principle of Maximum
+Likelihood Estimation (MLE) to estimate the MTD parameters. Some applications
+of modeling MTD show the proposed EM algorithm is easier to be used than the
+algorithm developed by Berchtold. Moreover, the EM Estimations of parameters
+for high-order MTD models led on DNA sequences outperform the corresponding
+fully parametrized Markov chain in terms of Bayesian Information Criterion. A
+software implementation of our algorithm is available in the library seq++ at
+http://stat.genopole.cnrs.fr/seqpp

@@ -1,0 +1,17 @@
+It is well known that the out-of-sample performance of Markowitz's
+mean-variance portfolio criterion can be negatively affected by estimation
+errors in the mean and covariance. In this paper we address the problem by
+regularizing the mean-variance objective function with a weighted elastic net
+penalty. We show that the use of this penalty can be motivated by a robust
+reformulation of the mean-variance criterion that directly accounts for
+parameter uncertainty. With this interpretation of the weighted elastic net
+penalty we derive data driven techniques for calibrating the weighting
+parameters based on the level of uncertainty in the parameter estimates. We
+test our proposed technique on US stock return data and our results show that
+the calibrated weighted elastic net penalized portfolio outperforms both the
+unpenalized portfolio and uniformly weighted elastic net penalized portfolio.
+  This paper also introduces a novel Adaptive Support Split-Bregman approach
+which leverages the sparse nature of $\ell_{1}$ penalized portfolios to
+efficiently compute a solution of our proposed portfolio criterion. Numerical
+results show that this modification to the Split-Bregman algorithm results in
+significant improvements in computational speed compared with other techniques.

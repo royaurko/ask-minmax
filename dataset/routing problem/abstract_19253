@@ -1,0 +1,19 @@
+Some properties of a Local discontinuous Galerkin (LDG) algorithm are
+demonstrated for the problem of evaluting a second derivative $g = f_{xx}$ for
+a given $f$. (This is a somewhat unusual problem, but it is useful for
+understanding the initial transient response of an algorithm for diffusion
+equations.) LDG uses an auxiliary variable to break this up into two first
+order equations and then applies techniques by analogy to DG algorithms for
+advection algorithms. This introduces an asymmetry into the solution that
+depends on the choice of upwind directions for these two first order equations.
+When using piecewise linear basis functions, this LDG solution $g_h$ is shown
+not to converge in an $L_2$ norm because the slopes in each cell diverge.
+However, when LDG is used in a time-dependent diffusion problem, this error in
+the second derivative term is transient and rapidly decays away, so that the
+overall error is bounded. I.e., the LDG approximation $f_h(x,t)$ for a
+diffusion equation $\partial f / \partial t = f_{xx}$ converges to the proper
+solution (as has been shown before), even though the initial rate of change
+$\partial f_h / \partial t$ does not converge. We also show results from the
+Recovery discontinuous Galerkin (RDG) approach, which gives symmetric solutions
+that can have higher rates of convergence for a stencil that couples the same
+number of cells.

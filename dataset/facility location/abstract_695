@@ -1,0 +1,17 @@
+We propose to design data structures called succinct geometric indexes of
+negligible space (more precisely, o(n) bits) that, by taking advantage of the n
+points in the data set permuted and stored elsewhere as a sequence, to support
+geometric queries in optimal time. Our first and main result is a succinct
+geometric index that can answer point location queries, a fundamental problem
+in computational geometry, on planar triangulations in O(lg n) time. We also
+design three variants of this index. The first supports point location using
+$\lg n + 2\sqrt{\lg n} + O(\lg^{1/4} n)$ point-line comparisons. The second
+supports point location in o(lg n) time when the coordinates are integers
+bounded by U. The last variant can answer point location in O(H+1) expected
+time, where H is the entropy of the query distribution. These results match the
+query efficiency of previous point location structures that use O(n) words or
+O(n lg n) bits, while saving drastic amounts of space.
+  We then generalize our succinct geometric index to planar subdivisions, and
+design indexes for other types of queries. Finally, we apply our techniques to
+design the first implicit data structures that support point location in
+$O(\lg^2 n)$ time.

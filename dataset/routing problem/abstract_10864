@@ -1,0 +1,24 @@
+The problem of inferring proteins from complex peptide samples in shotgun
+proteomic workflow sets extreme demands on computational resources. This is
+exacerbated by the fact that, in general, a given protein cannot be defined by
+a fixed sequence of amino acids due to the existence of splice variants and
+isoforms of that protein. Therefore, the problem of protein inference could be
+considered as one of identifying sequences of amino acids with some limited
+tolerance. Two problems arise from this: a) due to these variations, the
+applicability of exact string matching methodologies could be questioned and b)
+the difficulty of defining a reference sequence for a particular set of
+proteins that are functionally indistinguishable, but with some variation in
+features. This paper presents a model-based inference approach that is
+developed and validated to solve the inference problem. Our approach starts
+from an examination of the known set of splice variants and isoforms of a
+target protein to identify the Greatest Common Stable Substring (GCSS) of amino
+acids and the Substrings Subjects to Limited Variation (SSLV) and their
+respective locations on the GCSS. Then we define and solve the Sub-string
+Matching Problem with Limited Tolerance (SMPLT). This approach is validated on
+identified peptides in a labelled and clustered data set from UNIPROT.
+Identification of Baylisascaris Procyonis infection was used as an application
+instance that achieved up to 70 times speedup compared to a software only
+system. This workflow can be generalised to any inexact multiple pattern
+matching application by replacing the patterns in a clustered and distributed
+environment which permits a distance between member strings to account for
+permitted deviations such as substitutions, insertions and deletions.

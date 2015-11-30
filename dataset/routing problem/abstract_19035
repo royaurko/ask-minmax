@@ -1,0 +1,20 @@
+Let $({\bf U},{\bf S},d)$ be an instance of Set Cover Problem, where ${\bf
+U}=\{u_1,...,u_n\}$ is a $n$ element ground set, ${\bf S}=\{S_1,...,S_m\}$ is a
+set of $m$ subsets of ${\bf U}$ satisfying $\bigcup_{i=1}^m S_i={\bf U}$ and
+$d$ is a positive integer. In STOC 1993 M. Bellare, S. Goldwasser, C. Lund and
+A. Russell proved the NP-hardness to distinguish the following two cases of
+${\bf GapSetCover_{\eta}}$ for any constant $\eta > 1$. The Yes case is the
+instance for which there is an exact cover of size $d$ and the No case is the
+instance for which any cover of ${\bf U}$ from ${\bf S}$ has size at least
+$\eta d$. This was improved by R. Raz and S. Safra in STOC 1997 about the
+NP-hardness for ${\bf GapSetCover}_{clogm}$ for some constant $c$. In this
+paper we prove that restricted parameter range subproblem is easy. For any
+given function of $n$ satisfying $\eta(n) \geq 1$, we give a polynomial time
+algorithm not depending on $\eta(n)$ to distinguish between
+  {\bf YES:} The instance $({\bf U},{\bf S}, d)$ where $d>\frac{2 |{\bf
+S}|}{3\eta(n)-1}$, for which there exists an exact cover of size at most $d$;
+  {\bf NO:} The instance $({\bf U},{\bf S}, d)$ where $d>\frac{2 |{\bf
+S}|}{3\eta(n)-1}$, for which any cover from ${\bf S}$ has size larger than
+$\eta(n) d$.
+  The polynomial time reduction of this restricted parameter range set cover
+problem is constructed by using the lattice.

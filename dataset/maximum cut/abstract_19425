@@ -1,0 +1,26 @@
+Solving polynomial systems arising from applications is frequently made
+easier by the structure of the systems. Weighted homogeneity (or
+quasi-homogeneity) is one example of such a structure: given a system of
+weights $W=(w\_{1}, ...,w\_{n})$, $W$-homogeneous polynomials are polynomials
+which are homogeneous w.r.t the weighted degree
+$\deg\_{W}(X\_{1}^{\alpha\_{1}}, ...,X\_{n}^{\alpha\_{n}}) = \sum
+w\_{i}\alpha\_{i}$. Gr{\"o}bner bases for weighted homogeneous systems can be
+computed by adapting existing algorithms for homogeneous systems to the
+weighted homogeneous case. We show that in this case, the complexity estimate
+for Algorithm \F5 $(\binom{n+\dmax-1}{\dmax}^{\omega})$ can be divided by a
+factor $(\prod w\_{i})^{\omega}$. For zero-dimensional systems, the complexity
+of Algorithm \FGLM $nD^{\omega}$ (where $D$ is the number of solutions of the
+system) can be divided by the same factor $(\prod w\_{i})^{\omega}$. Under
+genericity assumptions, for zero-dimensional weighted homogeneous systems of
+$W$-degree $(d\_{1}, ...,d\_{n})$, these complexity estimates are polynomial in
+the weighted B{\'e}zout bound $\prod\_{i=1}^{n}d\_{i} /
+\prod\_{i=1}^{n}w\_{i}$.
+  Furthermore, the maximum degree reached in a run of Algorithm \F5 is bounded
+by the weighted Macaulay bound $\sum (d\_{i}-w\_{i}) + w\_{n}$, and this bound
+is sharp if we can order the weights so that $w\_{n}=1$. For overdetermined
+semi-regular systems, estimates from the homogeneous case can be adapted to the
+weighted case.
+  We provide some experimental results based on systems arising from a
+cryptography problem and from polynomial inversion problems. They show that
+taking advantage of the weighted homogeneous structure yields substantial
+speed-ups, and allows us to solve systems which were otherwise out of reach.

@@ -1,0 +1,26 @@
+We propose a general methodology for the construction and analysis of minimax
+estimators for a wide class of functionals of finite dimensional parameters,
+and elaborate on the case of discrete distributions, where the alphabet size
+$S$ is unknown and may be comparable with the number of observations $n$. We
+treat the respective regions where the functional is "nonsmooth" and "smooth"
+separately. In the "nonsmooth" regime, we apply an unbiased estimator for the
+best polynomial approximation of the functional whereas, in the "smooth"
+regime, we apply a bias-corrected Maximum Likelihood Estimator (MLE). We
+illustrate the merit of this approach by thoroughly analyzing two important
+cases: the entropy $H(P) = \sum_{i = 1}^S -p_i \ln p_i$ and $F_\alpha(P) =
+\sum_{i = 1}^S p_i^\alpha,\alpha>0$. We obtain the minimax $L_2$ rates for
+estimating these functionals. In particular, we demonstrate that our estimator
+achieves the optimal sample complexity $n \asymp S/\ln S$ for entropy
+estimation. We also show that the sample complexity for estimating
+$F_\alpha(P),0<\alpha<1$ is $n\asymp S^{1/\alpha}/ \ln S$, which can be
+achieved by our estimator but not the MLE. For $1<\alpha<3/2$, we show the
+minimax $L_2$ rate for estimating $F_\alpha(P)$ is $(n\ln n)^{-2(\alpha-1)}$
+regardless of the alphabet size, while the $L_2$ rate for the MLE is
+$n^{-2(\alpha-1)}$. For all the above cases, the behavior of the minimax
+rate-optimal estimators with $n$ samples is essentially that of the MLE with
+$n\ln n$ samples. We highlight the practical advantages of our schemes for
+entropy and mutual information estimation. We demonstrate that our approach
+reduces running time and boosts the accuracy compared to existing various
+approaches. Moreover, we show that the mutual information estimator induced by
+our methodology leads to significant performance boosts over the Chow--Liu
+algorithm in learning graphical models.

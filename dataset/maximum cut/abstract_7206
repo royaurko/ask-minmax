@@ -1,0 +1,13 @@
+We consider the unweighted bipartite maximum matching problem in the one-pass
+turnstile streaming model where the input stream consists of edge insertions
+and deletions. In the insertion-only model, a one-pass $2$-approximation
+streaming algorithm can be easily obtained with space $O(n \log n)$, where $n$
+denotes the number of vertices of the input graph. We show that no such result
+is possible if edge deletions are allowed, even if space $O(n^{3/2-\delta})$ is
+granted, for every $\delta > 0$. Specifically, for every $0 \le \epsilon \le
+1$, we show that in the one-pass turnstile streaming model, in order to compute
+a $O(n^{\epsilon})$-approximation, space $\Omega(n^{3/2 - 4\epsilon})$ is
+required for constant error randomized algorithms, and, up to logarithmic
+factors, space $O( n^{2-2\epsilon} )$ is sufficient. Our lower bound result is
+proved in the simultaneous message model of communication and may be of
+independent interest.

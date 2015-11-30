@@ -1,0 +1,19 @@
+We consider the problem of finding stationary Nash equilibria (NE) in a
+finite discounted general-sum stochastic game. We first generalize a non-linear
+optimization problem from Filar and Vrieze [2004] to a $N$-player setting and
+break down this problem into simpler sub-problems that ensure there is no
+Bellman error for a given state and an agent. We then provide a
+characterization of solution points of these sub-problems that correspond to
+Nash equilibria of the underlying game and for this purpose, we derive a set of
+necessary and sufficient SG-SP (Stochastic Game - Sub-Problem) conditions.
+Using these conditions, we develop two actor-critic algorithms: OFF-SGSP
+(model-based) and ON-SGSP (model-free). Both algorithms use a critic that
+estimates the value function for a fixed policy and an actor that performs
+descent in the policy space using a descent direction that avoids local minima.
+We establish that both algorithms converge, in self-play, to the equilibria of
+a certain ordinary differential equation (ODE), whose stable limit points
+coincide with stationary NE of the underlying general-sum stochastic game. On a
+single state non-generic game (see Hart and Mas-Colell [2005]) as well as on a
+synthetic two-player game setup with $810,000$ states, we establish that
+ON-SGSP consistently outperforms NashQ ([Hu and Wellman, 2003] and FFQ
+[Littman, 2001] algorithms.

@@ -1,0 +1,13 @@
+We address the problem of automatically acquiring case-frame patterns from
+large corpus data. In particular, we view this problem as the problem of
+estimating a (conditional) distribution over a partition of words, and propose
+a new generalization method based on the MDL (Minimum Description Length)
+principle. In order to assist with the efficiency, our method makes use of an
+existing thesaurus and restricts its attention on those partitions that are
+present as `cuts' in the thesaurus tree, thus reducing the generalization
+problem to that of estimating the `tree cut models' of the thesaurus. We then
+give an efficient algorithm which provably obtains the optimal tree cut model
+for the given frequency data, in the sense of MDL. We have used the case-frame
+patterns obtained using our method to resolve pp-attachment ambiguity.Our
+experimental results indicate that our method improves upon or is at least as
+effective as existing methods.

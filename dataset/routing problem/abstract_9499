@@ -1,0 +1,10 @@
+The adjoint method, among other sensitivity analysis methods, can fail in
+chaotic dynamical systems. The result from these methods can be too large,
+often by orders of magnitude, when the result is the derivative of a long time
+averaged quantity. This failure is known to be caused by ill-conditioned
+initial value problems. This paper overcomes this failure by replacing the
+initial value problem with the well-conditioned "least squares shadowing (LSS)
+problem". The LSS problem is then linearized in our sensitivity analysis
+algorithm, which computes a derivative that converges to the derivative of the
+infinitely long time average. We demonstrate our algorithm in several dynamical
+systems exhibiting both periodic and chaotic oscillations.

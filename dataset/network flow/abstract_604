@@ -1,0 +1,17 @@
+In this paper, we consider a network communications problem in which multiple
+correlated sources must be delivered to a single data collector node, over a
+network of noisy independent point-to-point channels. We prove that perfect
+reconstruction of all the sources at the sink is possible if and only if, for
+all partitions of the network nodes into two subsets S and S^c such that the
+sink is always in S^c, we have that H(U_S|U_{S^c}) < \sum_{i\in S,j\in S^c}
+C_{ij}. Our main finding is that in this setup a general source/channel
+separation theorem holds, and that Shannon information behaves as a classical
+network flow, identical in nature to the flow of water in pipes. At first
+glance, it might seem surprising that separation holds in a fairly general
+network situation like the one we study. A closer look, however, reveals that
+the reason for this is that our model allows only for independent
+point-to-point channels between pairs of nodes, and not multiple-access and/or
+broadcast channels, for which separation is well known not to hold. This
+``information as flow'' view provides an algorithmic interpretation for our
+results, among which perhaps the most important one is the optimality of
+implementing codes using a layered protocol stack.

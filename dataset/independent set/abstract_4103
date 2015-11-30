@@ -1,0 +1,20 @@
+Higher-order counter automata (\HOCS) can be either seen as a restriction of
+higher-order pushdown automata (\HOPS) to a unary stack alphabet, or as an
+extension of counter automata to higher levels. We distinguish two principal
+kinds of \HOCS: those that can test whether the topmost counter value is zero
+and those which cannot.
+  We show that control-state reachability for level $k$ \HOCS with $0$-test is
+complete for \mbox{$(k-2)$}-fold exponential space; leaving out the $0$-test
+leads to completeness for \mbox{$(k-2)$}-fold exponential time. Restricting
+\HOCS (without $0$-test) to level $2$, we prove that global (forward or
+backward) reachability analysis is $\PTIME$-complete. This enhances the known
+result for pushdown systems which are subsumed by level $2$ \HOCS without
+$0$-test.
+  We transfer our results to the formal language setting. Assuming that $\PTIME
+\subsetneq \PSPACE \subsetneq \mathbf{EXPTIME}$, we apply proof ideas of
+Engelfriet and conclude that the hierarchies of languages of \HOPS and of \HOCS
+form strictly interleaving hierarchies. Interestingly, Engelfriet's
+constructions also allow to conclude immediately that the hierarchy of
+collapsible pushdown languages is strict level-by-level due to the existing
+complexity results for reachability on collapsible pushdown graphs. This
+answers an open question independently asked by Parys and by Kobayashi.

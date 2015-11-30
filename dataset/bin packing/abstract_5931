@@ -1,0 +1,22 @@
+Let $\mathbb N_0$ be the set of non-negative integers, and let $P(n,l)$
+denote the set of all weak compositions of $n$ with $l$ parts, i.e., $P(n,l)=\{
+(x_1,x_2,\dots, x_l)\in\mathbb N_0^l\ :\ x_1+x_2+\cdots+x_l=n\}$. For any
+element $\mathbf u=(u_1,u_2,\dots, u_l)\in P(n,l)$, denote its $i$th-coordinate
+by $\mathbf u(i)$, i.e., $\mathbf u(i)=u_i$. A family $\mathcal A\subseteq
+P(n,l)$ is said to be $t$-intersecting if $\vert \{ i \ :\ \mathbf u(i)=\mathbf
+v(i)\} \vert\geq t$ for all $\mathbf u,\mathbf v\in \mathcal A$. A family
+$\mathcal A\subseteq P(n,l)$ is said to be trivially $t$-intersecting if there
+is a $t$-set $T$ of $\{1,2,\dots,l\}$ and elements $y_s\in \mathbb N_0$ ($s\in
+T$) such that $\mathcal{A}= \{\mathbf u\in P(n,l)\ :\ \mathbf u(j)=y_j\ {\rm
+for all}\ j\in T\}$. We prove that given any positive integers $l,t$ with
+$l\geq 2t+3$, there exists a constant $n_0(l,t)$ depending only on $l$ and $t$,
+such that for all $n\geq n_0(l,t)$, if $\mathcal{A} \subseteq P(n,l)$ is
+non-trivially $t$-intersecting then \begin{equation} \vert \mathcal{A}
+\vert\leq {n+l-t-1 \choose l-t-1}-{n-1 \choose l-t-1}+t.\notag \end{equation}
+Moreover, equality holds if and only if there is a $t$-set $T$ of
+$\{1,2,\dots,l\}$ such that \begin{equation} \mathcal A=\bigcup_{s\in
+\{1,2,\dots, l\}\setminus T} \mathcal A_s\cup \left\{ \mathbf q_i\ :\ i\in T
+\right\},\notag \end{equation} where \begin{align} \mathcal{A}_s & =\{\mathbf
+u\in P(n,l)\ :\ \mathbf u(j)=0\ {\rm for all}\ j\in T\ {\rm and}\ \mathbf
+u(s)=0\}\notag \end{align} and $\mathbf q_i\in P(n,l)$ with $\mathbf q_i(j)=0$
+for all $j\in \{1,2,\dots, l\}\setminus \{i\}$ and $\mathbf q_i(i)=n$.

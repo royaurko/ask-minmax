@@ -1,0 +1,15 @@
+In this work we consider battery powered portable systems which either have
+Field Programmable Gate Arrays (FPGA) or voltage and frequency scalable
+processors as their main processing element. An application is modeled in the
+form of a precedence task graph at a coarse level of granularity. We assume
+that for each task in the task graph several unique design-points are available
+which correspond to different hardware implementations for FPGAs and different
+voltage-frequency combinations for processors. It is assumed that performance
+and total power consumption estimates for each design-point are available for
+any given portable platfrom, including the peripheral components such as memory
+and display power usage. We present an iterative heuristic algorithm which
+finds a sequence of tasks along with an appropriate design-point for each task,
+such that a deadline is met and the amount of battery energy used is as small
+as possible. A detailed illustrative example along with a case study of a
+real-world application of a robotic arm controller which demonstrates the
+usefulness of our algorithm is also presented.

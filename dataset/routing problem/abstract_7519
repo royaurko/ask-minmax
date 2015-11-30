@@ -1,0 +1,17 @@
+We introduce a new technique for proving kernelization lower bounds, called
+cross-composition. A classical problem L cross-composes into a parameterized
+problem Q if an instance of Q with polynomially bounded parameter value can
+express the logical OR of a sequence of instances of L. Building on work by
+Bodlaender et al. (ICALP 2008) and using a result by Fortnow and Santhanam
+(STOC 2008) we show that if an NP-complete problem cross-composes into a
+parameterized problem Q then Q does not admit a polynomial kernel unless the
+polynomial hierarchy collapses. Our technique generalizes and strengthens the
+recent techniques of using OR-composition algorithms and of transferring the
+lower bounds via polynomial parameter transformations. We show its
+applicability by proving kernelization lower bounds for a number of important
+graphs problems with structural (non-standard) parameterizations, e.g.,
+Chromatic Number, Clique, and Weighted Feedback Vertex Set do not admit
+polynomial kernels with respect to the vertex cover number of the input graphs
+unless the polynomial hierarchy collapses, contrasting the fact that these
+problems are trivially fixed-parameter tractable for this parameter. We have
+similar lower bounds for Feedback Vertex Set.

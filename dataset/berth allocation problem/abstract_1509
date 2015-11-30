@@ -1,0 +1,20 @@
+We consider a multi-cell MIMO downlink (network MIMO) where $B$ base-stations
+(BS) with $M$ antennas connected to a central station (CS) serve $K$
+single-antenna user terminals (UT). Although many works have shown the
+potential benefits of network MIMO, the conclusion critically depends on the
+underlying assumptions such as channel state information at transmitters (CSIT)
+and backhaul links. In this paper, by focusing on the impact of partial CSIT,
+we propose an outage-efficient strategy. Namely, with side information of all
+UT's messages and local CSIT, each BS applies zero-forcing (ZF) beamforming in
+a distributed manner. For a small number of UTs ($K\leq M$), the ZF beamforming
+creates $K$ parallel MISO channels. Based on the statistical knowledge of these
+parallel channels, the CS performs a robust power allocation that
+simultaneously minimizes the outage probability of all UTs and achieves a
+diversity gain of $B(M-K+1)$ per UT. With a large number of UTs ($K \geq M$),
+we propose a so-called distributed diversity scheduling (DDS) scheme to select
+a subset of $\Ks$ UTs with limited backhaul communication. It is proved that
+DDS achieves a diversity gain of $B\frac{K}{\Ks}(M-\Ks+1)$, which scales
+optimally with the number of cooperative BSs $B$ as well as UTs. Numerical
+results confirm that even under realistic assumptions such as partial CSIT and
+limited backhaul communications, network MIMO can offer high data rates with a
+sufficient reliability to individual UTs.

@@ -1,0 +1,20 @@
+This paper deals with a new method for recognition of offline Handwritten
+non-compound Devnagari Characters in two stages. It uses two well known and
+established pattern recognition techniques: one using neural networks and the
+other one using minimum edit distance. Each of these techniques is applied on
+different sets of characters for recognition. In the first stage, two sets of
+features are computed and two classifiers are applied to get higher recognition
+accuracy. Two MLP's are used separately to recognize the characters. For one of
+the MLP's the characters are represented with their shadow features and for the
+other chain code histogram feature is used. The decision of both MLP's is
+combined using weighted majority scheme. Top three results produced by combined
+MLP's in the first stage are used to calculate the relative difference values.
+In the second stage, based on these relative differences character set is
+divided into two. First set consists of the characters with distinct shapes and
+second set consists of confused characters, which appear very similar in
+shapes. Characters of distinct shapes of first set are classified using MLP.
+Confused characters in second set are classified using minimum edit distance
+method. Method of minimum edit distance makes use of corner detected in a
+character image using modified Harris corner detection technique. Experiment on
+this method is carried out on a database of 7154 samples. The overall
+recognition is found to be 90.74%.

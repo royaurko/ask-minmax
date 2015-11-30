@@ -1,0 +1,19 @@
+Let $T$ be a regular rooted tree. For every natural number $n$, let $B_n$ be
+the finite subtree of vertices with graph distance at most $n$ from the root.
+Consider the following forest-fire model on $B_n$: Each vertex can be "vacant"
+or "occupied". At time $0$ all vertices are vacant. Then the process is
+governed by two opposing mechanisms: Vertices become occupied at rate $1$,
+independently for all vertices. Independently thereof and independently for all
+vertices, "lightning" hits vertices at rate $\lambda(n) > 0$. When a vertex is
+hit by lightning, its occupied cluster instantaneously becomes vacant.
+  Now suppose that $\lambda(n)$ decays exponentially in $n$ but much more
+slowly than $1/|B_n|$. We show that then there exist a supercritical time
+$\tau$ and $\epsilon > 0$ such that the forest-fire model on $B_n$ between time
+$0$ and time $\tau + \epsilon$ tends to the following process on $T$ as $n$
+goes to infinity: At time $0$ all vertices are vacant. Between time $0$ and
+time $\tau$ vertices become occupied at rate $1$, independently for all
+vertices. At time $\tau$ all infinite occupied clusters become vacant. Between
+time $\tau$ and time $\tau + \epsilon$ vertices again become occupied at rate
+$1$, independently for all vertices. At time $\tau + \epsilon$ all occupied
+clusters are finite. This process is a dynamic version of self-destructive
+percolation.

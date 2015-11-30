@@ -1,0 +1,25 @@
+We give an algorithmic framework for minimizing general convex objectives
+(that are differentiable and monotone non-decreasing) over a set of covering
+constraints that arrive online. This substantially extends previous work on
+online covering for linear objectives (Alon {\em et al.}, STOC 2003) and online
+covering with offline packing constraints (Azar {\em et al.}, SODA 2013). To
+the best of our knowledge, this is the first result in online optimization for
+generic non-linear objectives; special cases of such objectives have previously
+been considered, particularly for energy minimization.
+  As a specific problem in this genre, we consider the unrelated machine
+scheduling problem with startup costs and arbitrary $\ell_p$ norms on machine
+loads (including the surprisingly non-trivial $\ell_1$ norm representing total
+machine load). This problem was studied earlier for the makespan norm in both
+the offline (Khuller~{\em et al.}, SODA 2010; Li and Khuller, SODA 2011) and
+online settings (Azar {\em et al.}, SODA 2013). We adapt the two-phase approach
+of obtaining a fractional solution and then rounding it online (used
+successfully to many linear objectives) to the non-linear objective. The
+fractional algorithm uses ideas from our general framework that we described
+above (but does not fit the framework exactly because of non-positive entries
+in the constraint matrix). The rounding algorithm uses ideas from offline
+rounding of LPs with non-linear objectives (Azar and Epstein, STOC 2005; Kumar
+{\em et al.}, FOCS 2005). Our competitive ratio is tight up to a logarithmic
+factor. Finally, for the important special case of total load ($\ell_1$ norm),
+we give a different rounding algorithm that obtains a better competitive ratio
+than the generic rounding algorithm for $\ell_p$ norms. We show that this
+competitive ratio is asymptotically tight.

@@ -1,0 +1,22 @@
+We present SymPix, a special-purpose spherical grid optimized for efficient
+sampling of rotationally invariant linear operators. This grid is conceptually
+similar to the Gauss-Legendre (GL) grid, aligning sample points with
+iso-latitude rings located on Legendre polynomial zeros. Unlike the GL grid,
+however, the number of grid points per ring varies as a function of latitude,
+avoiding expensive over-sampling near the poles and ensuring nearly equal sky
+area per grid point. The ratio between the number of grid points in two
+neighbouring rings is required to be a low-order rational number (3, 2, 1, 4/3,
+5/4 or 6/5) to maintain a high degree of symmetries. Our main motivation for
+this grid is to solve linear systems using multi-grid methods, and to construct
+efficient preconditioners through pixel-space sampling of the linear operator
+in question. The GL grid is not suitable for these purposes due to its massive
+over-sampling near the poles, leading to nearly degenerate linear systems,
+while HEALPix, another commonly used spherical grid, exhibits few symmetries,
+and is therefore computationally inefficient for these purposes. As a benchmark
+and representative example, we compute a preconditioner for a linear system
+with both HEALPix and SymPix that involves the operator $D + B^T N^{-1} B$,
+where $B$ and $D$ may be described as both local and rotationally invariant
+operators, and $N$ is diagonal in pixel domain. For a bandwidth limit of
+$\ell_\text{max}=3000$, we find that SymPix, due to its higher number of
+internal symmetries, yields average speed-ups of 360 and 23 for $B^T N^{-1} B$
+and $D$, respectively, relative to HEALPix.

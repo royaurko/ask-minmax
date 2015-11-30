@@ -1,0 +1,18 @@
+We present a new non-blocking doubly-linked list implementation for an
+asynchronous shared-memory system. It is the first such implementation for
+which an upper bound on amortized time complexity has been proved. In our
+implementation, operations access the list via cursors. Each cursor is
+associated with an item in the list and is local to a process. The
+implementation supports two update operations, insertBefore and delete, and two
+move operations, moveRight and moveLeft. An insertBefore(c, x) operation
+inserts an item x into the list immediately before the cursor c's location. A
+delete(c) operation removes the item at the cursor c's location and sets the
+cursor to the next item in the list. The move operations move the cursor one
+position to the right or left. The update operations use single-word
+Compare&Swap instructions. The move operations only read shared memory and
+never change the state of the data structure. If all update operations modify
+different parts of the list, they run completely concurrently. Let cp(op) be
+the maximum number of active cursors at any one time during the operation op.
+The amortized complexity of each update operation op is O(cp(op)) and each move
+operation is O(1). We have written a detailed correctness proof and amortized
+analysis of our implementation.

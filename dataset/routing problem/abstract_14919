@@ -1,0 +1,18 @@
+In this report we address the linear state estimation problem: to estimate a
+linear transformation $\ell(\varphi)$ of the state $\varphi$ through an
+algorithm $\widehat{\ell(\varphi)}$ operating on measurements $y$, where
+$L\varphi=f,y=H\varphi+\eta$. We study the estimation problem in terms of the
+minimax estimation framework: to find a linear algorithm
+$\widehat{\widehat{\ell(\varphi)}}$ that minimizes the worst case error
+$\sup_{\varphi,\eta}d(\ell(\varphi),\widehat{\ell(\varphi)}) $. A key feature
+of the presented estimation approach is to fix a class of linear operators $L$,
+$H$; given any pair $L,H$ from that class we describe a class $\mathcal L$ of
+all solution operators $\ell$ such that the worst case error is finite.
+  We formulate a duality theorem (like Kalman duality principle) that is the
+estimation problem is equal to the optimal control problem if $G$ is convex
+bounded subset of the corresponding Hilbert space, $L$ is a closed linear
+mapping. We obtain optimal estimations as solutions of the linear operator
+equations if $G$ is an ellipsoid. Then we apply this to the state estimation
+for the linear differential-algebraic equations (DAE). The minimax observer for
+DAE is represented in the form of the minimax filter. For discrete time DAEs we
+present the online minimax estimator.

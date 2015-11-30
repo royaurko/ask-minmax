@@ -1,0 +1,16 @@
+The Balanced Domain Decomposition (BDD) method and the Finite Element Tearing
+and Interconnecting (FETI) method are two commonly used non-overlapping domain
+decomposition methods. Due to strong theoretical and numerical similarities,
+these two methods are generally considered as being equivalently efficient.
+However, for some particular cases, such as for structures with strong
+heterogeneities, FETI requires a large number of iterations to compute the
+solution compared to BDD. In this paper, the origin of the bad efficiency of
+FETI in these particular cases is traced back to poor initial estimates of the
+interface stresses. To improve the estimation of interface forces a novel
+strategy for splitting interface forces between neighboring substructures is
+proposed. The additional computational cost incurred is not significant. This
+yields a new initialization for the FETI method and restores numerical
+efficiency which makes FETI comparable to BDD even for problems where FETI was
+performing poorly. Various simple test problems are presented to discuss the
+efficiency of the proposed strategy and to illustrate the so-obtained numerical
+equivalence between the BDD and FETI solvers.

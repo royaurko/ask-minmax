@@ -1,0 +1,13 @@
+Fix a prime $p$ and an integer $m$ with $p> m \geq 2$. Define the family of
+finite groups \[ G_n :=SL_m (\mathbb{Z}/p^{n}\mathbb{Z}) \] for $n=1,2,... $.
+We will prove that there exist two positive constants $C$ and $d$ such that for
+any $n$ and any generating set $S\subseteq G_{n}$, \[ diam(G_n,S) \leq C \cdot
+log^d (|G_n|)\] when $diam (G,S)$ is the diameter of the finite group $G$ with
+respect to the set of generators $S$. It is defined as the maximum over $g \in
+G$ of the length of the shortest word in $S \cup S^{-1}$ representing $g$.
+  This result shows that these families of finite groups have a
+poly-logarithmic bound on the diameter with respect to \emph{any} set of
+generators. The proof of this result also provides a efficient algorithm for
+finding such a poly-logarithmic representation of any element. In addition it
+shows that the power $d$ in the $log$ bound can be arbitrary close to 3 for
+$m=2$ and arbitrary close to 4 for $m>2$.

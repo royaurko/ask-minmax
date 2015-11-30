@@ -1,0 +1,20 @@
+Harris Corporation has an interest in making HF radios a suitable medium for
+wireless information networks using standard Internet protocols. Although HF
+radio links have many unique characteristics, HF wireless subnets can be
+subject to many of the same traffic flow characteristics and topologies as
+existing line-of-sight (LOS) radio networks, giving rise to similar issues
+(media access, connectivity, routing) which lend themselves to investigation
+through simulation. Accordingly, we have undertaken to develop efficient,
+high-fidelity simulations of various aspects of HF radio communications and
+networking using the OMNeT++ framework. Essential aspects of these simulations
+include HF channel models simulating relevant channel attributes such as Signal
+to Noise Ratio, multipath, and Doppler spread; a calibrated physical layer
+model reproducing the error statistics (including burst error distributions) of
+the MIL-STD-188-110B/C HF modem waveforms, both narrowband (3 kHz) and wideband
+(up to 24 kHz) on the simulated HF channels; a model of the NATO STANAG 5066
+data link protocol; and integration of these models with the OMNeT++ network
+simulation framework and its INET library of Internet protocol models. This
+simulation is used to evaluate the impacts of different STANAG 5066
+configuration settings on TCP network performance, and to evaluate strategies
+for optimizing throughput over HF links using TCP Performance Enhancing Proxy
+(PEP) techniques.

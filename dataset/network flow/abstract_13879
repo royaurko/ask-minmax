@@ -1,0 +1,18 @@
+In the physically non viscous fluid dynamics, "shock capturing" methods adopt
+either an artificial viscosity contribution or an appropriate Riemann solver
+algorithm. These techniques are necessary to solve the strictly hyperbolic
+Euler equations if flow discontinuities (the Riemann problem) must be solved. A
+necessary dissipation is normally used in such cases. An explicit artificial
+viscosity contribution is normally adopted to smooth out spurious heating and
+to treat transport phenomena. Such a treatment of inviscid flows is also widely
+adopted in the Smooth Particle Hydrodynamics (SPH) finite volume free
+Lagrangian scheme. In other cases, the intrinsic dissipation of Godunov - type
+methods is implicitly useful. Instead "shock tracking" methods normally use the
+Rankine - Hugoniot jump conditions to solve such problem. A simple, effective
+solution of the Riemann problem in inviscid ideal gases is here proposed, based
+on an empirical reformulation of the equation of state (EoS) in the Euler
+equations in fluid dynamics, whose limit for a motionless gas coincides with
+the classical EoS of ideal gases. The application of such effective solution of
+the Riemann problem excludes any dependence, in the transport phenomena, on
+particle resolution length $h$ in non viscous SPH flows. Results on 1D shock
+tube tests are here shown.

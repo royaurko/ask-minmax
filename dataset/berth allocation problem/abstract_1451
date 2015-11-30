@@ -1,0 +1,16 @@
+The Hypertext Transfer Protocol (HTTP), a key building block of the World
+Wide Web, has succeeded to enable information exchange worldwide. Since its
+first version in 1996, HTTP/1.0, the average number of inlined objects and
+average total bytes per webpage have been increasing significantly for desktops
+and mobiles, from 1-10 objects in 1996 to more than 100 objects in June 2014.
+Even if the retrieving of inlined objects can be parallelized as a given
+Hypertext Markup Language (HTML) document is streamed, a maximum number of
+connections is allocated, and thus as the number of inlined objects increases,
+the overall webpage load duration grows, and the HTTP servers loading also gets
+higher. To overcome this issue, we propose a new HTTP method called BURST,
+which allows to retrieve the missing inlined objects of a webpage efficiently
+by requesting sets of web objects. We experimentally demonstrate the potential
+via a proof-of-concept demonstration, by comparing the regular HTTP to proposed
+HTTP-Burst using a virtual private server and real HTTP client and server over
+the Internet. The results indicate a latency reduction of webpage load duration
+compared to HTTP as high as 52 % under the considered configurations.

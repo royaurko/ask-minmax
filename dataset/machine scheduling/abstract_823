@@ -1,0 +1,14 @@
+Developing multithreaded software is an extremely challenging task, even for
+experienced programmers. The challenge does not end after the code is written.
+There are other tasks associated with a development process that become
+exceptionally hard in a multithreaded environment. A good example of this is
+creating unit tests for concurrent data structures. In addition to the desired
+test logic, such a test contains plenty of synchronization code that makes it
+hard to understand and maintain.
+  In our work we propose a novel approach for specifying and executing
+schedules for multithreaded tests. It allows explicit specification of desired
+thread scheduling for some unit test and enforces it during the test execution,
+giving the developer an ability to construct deterministic and repeatable unit
+tests. This goal is achieved by combining a few basic tools available in every
+modern runtime/IDE and does not require dedicated runtime environment, new
+specification language or code under test modifications.

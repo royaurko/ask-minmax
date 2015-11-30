@@ -1,0 +1,10 @@
+We propose a special computational device which uses light rays for solving
+the subset-sum problem. The device has a graph-like representation and the
+light is traversing it by following the routes given by the connections between
+nodes. The nodes are connected by arcs in a special way which lets us to
+generate all possible subsets of the given set. To each arc we assign either a
+number from the given set or a predefined constant. When the light is passing
+through an arc it is delayed by the amount of time indicated by the number
+placed in that arc. At the destination node we will check if there is a ray
+whose total delay is equal to the target value of the subset sum problem (plus
+some constants).

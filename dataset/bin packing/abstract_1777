@@ -1,0 +1,17 @@
+The parallel linear equations solver capable of effectively using 1000+
+processors becomes the bottleneck of large-scale implicit engineering
+simulations. In this paper, we present a new hierarchical parallel
+master-slave-structural iterative algorithm for the solution of super
+large-scale sparse linear equations in distributed memory computer cluster.
+Through alternatively performing global equilibrium computation and local
+relaxation, our proposed algorithm will reach the specific accuracy requirement
+in a few of iterative steps. Moreover, each set/slave-processor majorly
+communicate with its nearest neighbors, and the transferring data between
+sets/slave-processors and master is always far below the set-neighbor
+communication. The corresponding algorithm for implicit finite element analysis
+has been implemented based on MPI library, and a super large 2-dimension square
+system of triangle-lattice truss structure under random static loads is
+simulated with over one billion degrees of freedom and up to 2001 processors on
+"Exploration 100" cluster in Tsinghua University. The numerical experiments
+demonstrate that this algorithm has excellent parallel efficiency and high
+scalability, and it may have broad application in other implicit simulations.

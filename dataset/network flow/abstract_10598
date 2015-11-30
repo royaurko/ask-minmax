@@ -1,0 +1,20 @@
+Dynamic network reconfiguration is described as the process of replacing one
+routing function with another while the network keeps running. The main
+challenge is avoiding deadlock anomalies while keeping limitations on message
+injection and forwarding minimal. Current approaches, whose complexity is so
+high that their practical applicability is limited, either require the
+existence of extra network resources like virtual channels, or they affect the
+performance of the network during the reconfiguration process. In this paper we
+present a simple, fast and efficient mechanism for dynamic network
+reconfiguration which is based on regressive deadlock recoveries instead of
+avoiding deadlocks. The mechanism which is referred to as DBR guarantees a
+deadlock-free reconfiguration based on wormhole switching (WS) and it does not
+require additional resources. In this approach, the need for a reliable message
+transmission has led to a modified WS mechanism which includes additional flits
+or control signals. DBR allows cycles to be formed and in such conditions when
+a deadlock occurs, the messages suffer from time-out. Then, this method
+releases the buffers and channels from the current node and thus the source
+retransmits the message after a random time gap. Evaluating results reveal that
+the mechanism shows substantial performance improvements over the other methods
+and it works efficiently in different topologies with various routing
+algorithms.

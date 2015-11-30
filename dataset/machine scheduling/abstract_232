@@ -1,0 +1,14 @@
+Utilizing on-chip caches in embedded multiprocessor-system-on-a-chip (MPSoC)
+based systems is critical from both performance and power perspectives. While
+most of the prior work that targets at optimizing cache behavior are performed
+at hardware and compilation levels, operating system (OS) can also play major
+role as it sees the global access pattern information across applications. This
+paper proposes a cache-conscious OS process scheduling strategy based on data
+reuse. The proposed scheduler implements two complementary approaches. First,
+the processes that do not share any data between them are scheduled at
+different cores if it is possible to do so. Second, the processes that could
+not be executed at the same time (due to dependences) but share data among each
+other are mapped to the same processor core so that they share the cache
+contents. Our experimental results using this new data locality aware OS
+scheduling strategy are promising, and show significant improvements in task
+completion times.

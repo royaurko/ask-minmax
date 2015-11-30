@@ -1,0 +1,20 @@
+Performance of multicell systems is inevitably limited by interference and
+available resources. Although intercell interference can be mitigated by Base
+Station (BS) Coordination, the demand on inter-BS information exchange and
+computational complexity grows rapidly with the number of cells, subcarriers,
+and users. On the other hand, some of the existing coordination beamforming
+methods need computation of pseudo-inverse or generalized eigenvector of a
+matrix, which are practically difficult to implement in a real system. To
+handle these issues, we propose a novel linear beamforming across a set of
+coordinated cells only with limiting backhaul signalling. Resource allocation
+(i.e. precoding and power control) is formulated as an optimization problem
+with objective function of signal-to-interference-plus-noise ratios (SINRs) in
+order to maximize the instantaneous weighted sum-rate subject to power
+constraints. Although the primal problem is nonconvex and difficult to be
+optimally solved, an iterative algorithm is presented based on the
+Karush-Kuhn-Tucker (KKT) condition. To have a practical solution with low
+computational complexity and signalling overhead, we present CB-REFIM
+(coordination beamforming-reference based interference management) and show the
+recently proposed REFIM algorithm can be interpreted as a special case of
+CB-REFIM. We evaluate CB-REFIM through extensive simulation and observe that
+the proposed strategies achieve close-to-optimal performance.

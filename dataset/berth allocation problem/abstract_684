@@ -1,0 +1,10 @@
+This paper presents a novel communication-efficient parallel belief
+propagation (CE-PBP) algorithm for training latent Dirichlet allocation (LDA).
+Based on the synchronous belief propagation (BP) algorithm, we first develop a
+parallel belief propagation (PBP) algorithm on the parallel architecture.
+Because the extensive communication delay often causes a low efficiency of
+parallel topic modeling, we further use Zipf's law to reduce the total
+communication cost in PBP. Extensive experiments on different data sets
+demonstrate that CE-PBP achieves a higher topic modeling accuracy and reduces
+more than 80% communication cost than the state-of-the-art parallel Gibbs
+sampling (PGS) algorithm.

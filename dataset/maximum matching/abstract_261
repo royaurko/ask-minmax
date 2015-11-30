@@ -1,0 +1,19 @@
+We present a method that compares the protein interaction networks of two
+species to detect functionally similar (conserved) protein modules between
+them. The method is based on an algorithm we developed to identify matching
+subgraphs between two graphs. Unlike previous network comparison methods, our
+algorithm has provable guarantees on correctness and efficiency. Our algorithm
+framework also admits quite general connectivity and local matching criteria
+that define when two subgraphs match and constitute a conserved module.
+  We apply our method to pairwise comparisons of the yeast protein network with
+the human, fruit fly and nematode worm protein networks, using a lenient
+criterion based on connectedness and matching edges, coupled with a betweenness
+clustering heuristic. We evaluate the detected conserved modules against
+reference yeast protein complexes using sensitivity and specificity measures.
+In these evaluations, our method performs competitively with and sometimes
+better than two previous network comparison methods. Further under some
+conditions (proper homolog and species selection), our method performs better
+than a popular single-species clustering method. Beyond these evaluations, we
+discuss the biology of a couple of conserved modules detected by our method. We
+demonstrate the utility of network comparison for transferring annotations from
+yeast proteins to human ones, and validate the predicted annotations.

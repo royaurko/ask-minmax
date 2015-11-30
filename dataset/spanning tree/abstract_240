@@ -1,0 +1,19 @@
+Given a metric space on n points, an {\alpha}-approximate universal algorithm
+for the Steiner tree problem outputs a distribution over rooted spanning trees
+such that for any subset X of vertices containing the root, the expected cost
+of the induced subtree is within an {\alpha} factor of the optimal Steiner tree
+cost for X. An {\alpha}-approximate differentially private algorithm for the
+Steiner tree problem takes as input a subset X of vertices, and outputs a tree
+distribution that induces a solution within an {\alpha} factor of the optimal
+as before, and satisfies the additional property that for any set X' that
+differs in a single vertex from X, the tree distributions for X and X' are
+"close" to each other. Universal and differentially private algorithms for TSP
+are defined similarly. An {\alpha}-approximate universal algorithm for the
+Steiner tree problem or TSP is also an {\alpha}-approximate differentially
+private algorithm. It is known that both problems admit O(logn)-approximate
+universal algorithms, and hence O(log n)-approximate differentially private
+algorithms as well. We prove an {\Omega}(logn) lower bound on the approximation
+ratio achievable for the universal Steiner tree problem and the universal TSP,
+matching the known upper bounds. Our lower bound for the Steiner tree problem
+holds even when the algorithm is allowed to output a more general solution of a
+distribution on paths to the root.

@@ -1,0 +1,24 @@
+Anisoplanatic effects can cause significant systematic photometric
+uncertainty in the analysis of dense stellar fields observed with adaptive
+optics. Program packages have been developed for a spatially variable PSF, but
+they require that a sufficient number of bright, isolated stars in the image
+are present to adequately sample the PSF. Imaging the Galactic center is
+particularly challenging. We present two ways of dealing with spatially
+variable PSFs when only one or very few suitable PSF reference stars are
+present in the field. Local PSF fitting with the StarFinder algorithm is
+applied to the data. Satisfying results can be found in two ways: (a) creating
+local PSFs by merging locally extracted PSF cores with the PSF wings estimated
+from the brightest star in the field; (b) Wiener deconvolution of the image
+with the PSF estimated from the brightest star in the field and subsequent
+estimation of local PSFs on the deconvolved image. The methodology is tested on
+real, and on artificial images. The method involving Wiener deconvolution of
+the image prior to local PSF extraction and fitting gives excellent results. It
+limits systematic effects to ~2-5% in point source photometry and ~10% in
+diffuse emission on fields-of-view as large as 28" x 28" and observed through
+the H-band filter. Particular attention is given to how deconvolution changes
+the noise properties of the image. It is shown that mean positions and fluxes
+of the stars are conserved by the deconvolution. However, the estimated
+uncertainties of the PSF fitting algorithm are too small if the presence of
+covariances is ignored in the PSF fitting as has been done here. An appropriate
+scaling factor can, however, be determined from simulated images or by
+comparing measurements on independent data sets.

@@ -1,0 +1,14 @@
+In this paper, we develop a quantified propositional proof systems that
+corresponds to logarithmic-space reasoning. We begin by defining a class
+SigmaCNF(2) of quantified formulas that can be evaluated in log space. Then our
+new proof system GL^* is defined as G_1^* with cuts restricted to SigmaCNF(2)
+formulas and no cut formula that is not quantifier free contains a free
+variable that does not appear in the final formula.
+  To show that GL^* is strong enough to capture log space reasoning, we
+translate theorems of VL into a family of tautologies that have polynomial-size
+GL^* proofs. VL is a theory of bounded arithmetic that is known to correspond
+to logarithmic-space reasoning. To do the translation, we find an appropriate
+axiomatization of VL, and put VL proofs into a new normal form.
+  To show that GL^* is not too strong, we prove the soundness of GL^* in such a
+way that it can be formalized in VL. This is done by giving a logarithmic-space
+algorithm that witnesses GL^* proofs.

@@ -1,0 +1,24 @@
+We present a new Bayesian non-parametric deprojection algorithm DOPING
+(Deprojection of Observed Photometry using and INverse Gambit), that is
+designed to extract 3-D luminosity density distributions $\rho$ from observed
+surface brightness maps $I$, in generalised geometries, while taking into
+account changes in intrinsic shape with radius, using a penalised likelihood
+approach and an MCMC optimiser. We provide the most likely solution to the
+integral equation that represents deprojection of the measured $I$ to $\rho$.
+In order to keep the solution modular, we choose to express $\rho$ as a
+function of the line-of-sight (LOS) coordinate $z$. We calculate the extent of
+the system along the ${\bf z}$-axis, for a given point on the image that lies
+within an identified isophotal annulus. The extent along the LOS is binned and
+density is held a constant over each such $z$-bin. The code begins with a seed
+density and at the beginning of an iterative step, the trial $\rho$ is updated.
+Comparison of the projection of the current choice of $\rho$ and the observed
+$I$ defines the likelihood function (which is supplemented by Laplacian
+regularisation), the maximal region of which is sought by the optimiser
+(Metropolis Hastings). The algorithm is successfully tested on a set of test
+galaxies, the morphology of which ranges from an elliptical galaxy with varying
+eccentricity to an infinitesimally thin disk galaxy marked by an abruptly
+varying eccentricity profile. Applications are made to faint dwarf elliptical
+galaxy Ic~3019 and another dwarf elliptical that is characterised by a central
+spheroidal nuclear component superimposed upon a more extended flattened
+component. The result of deprojection of the X-ray image of triaxial cluster
+A1413 is also presented.

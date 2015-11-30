@@ -1,0 +1,20 @@
+The $k$-core decomposition in a graph is a fundamental problem for social
+network analysis. The problem of $k$-core decomposition is to calculate the
+core number for every node in a graph. Previous studies mainly focus on
+$k$-core decomposition in a static graph. There exists a linear time algorithm
+for $k$-core decomposition in a static graph. However, in many real-world
+applications such as online social networks and the Internet, the graph
+typically evolves over time. Under such applications, a key issue is to
+maintain the core number of nodes given the graph changes over time. A simple
+implementation is to perform the linear time algorithm to recompute the core
+number for every node after the graph is updated. Such simple implementation is
+expensive when the graph is very large. In this paper, we propose a new
+efficient algorithm to maintain the core number for every node in a dynamic
+graph. Our main result is that only certain nodes need to update their core
+number given the graph is changed by inserting/deleting an edge. We devise an
+efficient algorithm to identify and recompute the core number of such nodes.
+The complexity of our algorithm is independent of the graph size. In addition,
+to further accelerate the algorithm, we develop two pruning strategies by
+exploiting the lower and upper bounds of the core number. Finally, we conduct
+extensive experiments over both real-world and synthetic datasets, and the
+results demonstrate the efficiency of the proposed algorithm.

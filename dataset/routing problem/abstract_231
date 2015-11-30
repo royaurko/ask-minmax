@@ -1,0 +1,14 @@
+We propose distributed link reversal algorithms to circumvent communication
+voids in geographic routing. We also solve the attendant problem of integer
+overflow in these algorithms. These are achieved in two steps. First, we derive
+partial and full link reversal algorithms that do not require one-hop neighbor
+information, and convert a destination-disoriented directed acyclic graph (DAG)
+to a destination-oriented DAG. We embed these algorithms in the framework of
+Gafni and Bertsekas ("Distributed algorithms for generating loop-free routes in
+networks with frequently changing topology", 1981) in order to establish their
+termination properties. We also analyze certain key properties exhibited by our
+neighbor oblivious link reversal algorithms, e.g., for any two neighbors, their
+t-states are always consecutive integers, and for any node, its t-state size is
+upper bounded by log(N). In the second step, we resolve the integer overflow
+problem by analytically deriving one-bit full link reversal and two-bit partial
+link reversal versions of our neighbor oblivious link reversal algorithms.

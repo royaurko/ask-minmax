@@ -1,0 +1,12 @@
+We propose a parallel algorithm for local, on the fly, model checking of a
+fragment of CTL that is well-suited for modern, multi-core architectures. This
+model-checking algorithm takes bene t from a parallel state space construction
+algorithm, which we described in a previous work, and shares the same basic set
+of principles: there are no assumptions on the models that can be analyzed; no
+restrictions on the way states are distributed; and no restrictions on the way
+work is shared among processors. We evaluate the performance of diff erent
+versions of our algorithm and compare our results with those obtained using
+other parallel model checking tools. One of the most novel contributions of
+this work is to study a space-e fficient variant for CTL model-checking that
+does not require to store the whole transition graph but that operates on a
+reverse spanning tree.

@@ -1,0 +1,19 @@
+An interesting distributed adaptive CSMA MAC protocol, called adaptive CSMA,
+was proposed recently to schedule any strictly feasible achievable rates inside
+the capacity region. Of particular interest is the fact that the adaptive CSMA
+can achieve a system utility arbitrarily close to that is achievable under a
+central scheduler. However, a specially designed transport-layer rate
+controller is needed for this result. An outstanding question is whether the
+widely-installed TCP Reno is compatible with adaptive CSMA and can achieve the
+same result. The answer to this question will determine how close to practical
+deployment adaptive CSMA is. Our answer is yes and no. First, we observe that
+running TCP Reno directly over adaptive CSMA results in severe starvation
+problems. Effectively, its performance is no better than that of TCP Reno over
+legacy CSMA (IEEE 802.11), and the potentials of adaptive CSMA cannot be
+realized. Fortunately, we find that multi-connection TCP Reno over adaptive
+CSMA with active queue management can materialize the advantages of adaptive
+CSMA. NS-2 simulations demonstrate that our solution can alleviate starvation
+and achieve fair and efficient rate allocation. Multi-connection TCP can be
+implemented at either application or transport layer. Application-layer
+implementation requires no kernel modification, making the solution readily
+deployable in networks running adaptive CSMA.

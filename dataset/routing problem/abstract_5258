@@ -1,0 +1,15 @@
+A set of points and a positive integer $m$ are given and our goal is to cover
+the maximum number of these point with $m$ disks. We devise the first output
+sensitive algorithm for this problem. We introduce a parameter $\rho$ as the
+maximum number of points that one disk can cover. In this paper first we solve
+the problem for $m=2$ in $O({n\rho} + {\rho ^3}\log \rho ))$ time. The previous
+algorithm for this problem runs in $O({n^3}\log n)$ time. Our algorithm
+outperforms the previous algorithm because $\rho$ is much smaller than $n$ in
+many cases. Then we extend the algorithm for any value of $m$ and we solve the
+problem in $O(m{n\rho} + {(m\rho )^{2m - 1}}\log m\rho )$ time. The previous
+algorithm for this problem runs in $O({n^{2m - 1}}\log n)$ time. Our algorithm
+runs faster than the previous algorithm because $m\rho$ is smaller than $n$ in
+many cases. Our technique to obtain an output sensitive algorithm is to use a
+greedy algorithm to confine the areas that we should search to obtain the
+result. Our technique in this paper may be applicable in other set covering
+problems that deploy a greedy algorithm, to obtain faster solutions.

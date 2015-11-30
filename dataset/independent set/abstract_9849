@@ -1,0 +1,18 @@
+Programming languages are expected to support programmer's effort to
+structure program code. The ML module system, object systems and mixins are
+good examples of language constructs promoting modular programming. Among the
+three, mixins can be thought of as a generalization of the two others in the
+sense that mixins can incorporate features of ML modules and objects with a set
+of primitive operators with clean semantics. Much work has been devoted to
+build mixin-based module systems for practical programming languages. In
+respect of the operational semantics, previous work notably investigated mixin
+calculi in call-by-name and call-by-value evaluation settings. In this paper we
+examine a mixin calculus in a call-by-need, or lazy, evaluation setting. We
+demonstrate how lazy mixins can be interesting in practice with a series of
+examples, and formalize the operational semantics by adapting Ancona and
+Zucca's concise formalization of call-by-name mixins. We then extend the
+semantics with constraints to control the evaluation order of components of
+mixins in several ways. The main motivation for considering the constraints is
+to produce side effects in a more explicit order than in a purely lazy,
+demand-driven setting. We explore the design space of possibly interesting
+constraints and consider two examples in detail.

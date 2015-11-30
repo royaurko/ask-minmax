@@ -1,0 +1,17 @@
+In this work we propose and analyze a simple randomized algorithm to find a
+satisfiable assignment for a Boolean formula in conjunctive normal form (CNF)
+having at most 3 literals in every clause. Given a k-CNF formula phi on n
+variables, and alpha in{0,1}^n that satisfies phi, a clause of phi is critical
+if exactly one literal of that clause is satisfied under assignment alpha.
+Paturi et. al. (Chicago Journal of Theoretical Computer Science 1999) proposed
+a simple randomized algorithm (PPZ) for k-SAT for which success probability
+increases with the number of critical clauses (with respect to a fixed
+satisfiable solution of the input formula). Here, we first describe another
+simple randomized algorithm DEL which performs better if the number of critical
+clauses are less (with respect to a fixed satisfiable solution of the input
+formula). Subsequently, we combine these two simple algorithms such that the
+success probability of the combined algorithm is maximum of the success
+probabilities of PPZ and DEL on every input instance. We show that when the
+average number of clauses per variable that appear as unique true literal in
+one or more critical clauses in phi is between 1 and 1.9317, combined algorithm
+performs better than the PPZ algorithm.

@@ -1,0 +1,22 @@
+Space and time scales are not independent in diffusion. In fact, numerical
+simulations show that different patterns are obtained when space and time steps
+($\Delta x$ and $\Delta t$) are varied independently. On the other hand,
+anisotropy effects due to the symmetries of the discretization lattice prevent
+the quantitative calibration of models. We introduce a new class of explicit
+difference methods for numerical integration of diffusion and
+reaction-diffusion equations, where the dependence on space and time scales
+occurs naturally. Numerical solutions approach the exact solution of the
+continuous diffusion equation for finite $\Delta x$ and $\Delta t$, if the
+parameter $\gamma_N=D \Delta t/(\Delta x)^2$ assumes a fixed constant value,
+where $N$ is an odd positive integer parametrizing the alghorithm. The error
+between the solutions of the discrete and the continuous equations goes to zero
+as $(\Delta x)^{2(N+2)}$ and the values of $\gamma_N$ are dimension
+independent. With these new integration methods, anisotropy effects resulting
+from the finite differences are minimized, defining a standard for validation
+and calibration of numerical solutions of diffusion and reaction-diffusion
+equations. Comparison between numerical and analytical solutions of
+reaction-diffusion equations give global discretization errors of the order of
+$10^{-6}$ in the sup norm. Circular patterns of travelling waves have a maximum
+relative random deviation from the spherical symmetry of the order of 0.2%, and
+the standard deviation of the fluctuations around the mean circular wave front
+is of the order of $10^{-3}$.

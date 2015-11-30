@@ -1,0 +1,21 @@
+A method is presented for generating a good initial guess of a transition
+path between given initial and final states of a system without evaluation of
+the energy. An objective function surface is constructed using an interpolation
+of pairwise distances at each discretization point along the path and the
+nudged elastic band method then used to find an optimal path on this image
+dependent pair potential (IDPP) surface. This provides an initial path for the
+more computationally intensive calculations of the true minimum energy path
+using some method of choice for evaluating the energy and atomic forces, for
+example by ab initio or density functional theory. The optimal path on the IDPP
+surface is significantly closer to the true minimum energy path than a linear
+interpolation of the Cartesian coordinates and, therefore, reduces the number
+of iterations needed to reach convergence and averts divergence in the
+electronic structure calculations when atoms are brought too close to each
+other in the initial path. The method is illustrated with three examples: (1)
+rotation of a methyl group in an ethane molecule, (2) an exchange of atoms in
+an island on a crystal surface, and (3) an exchange of two Si-atoms in
+amorphous silicon. In all three cases, the computational effort in finding the
+minimum energy path with DFT was reduced by a factor ranging from 50 % to an
+order of magnitude by using an IDPP path as the initial path. The time required
+for parallel computations was reduced even more because of load imbalance when
+linear interpolation of Cartesian coordinates was used.

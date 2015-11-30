@@ -1,0 +1,23 @@
+We review the use of artificial neural networks, particularly the feedforward
+multilayer perceptron with back-propagation for training (MLP), in ecological
+modelling. Overtraining on data or giving vague references to how it was
+avoided is the major problem. Various methods can be used to determine when to
+stop training in artificial neural networks: 1) early stopping based on
+cross-validation, 2) stopping after a analyst defined error is reached or after
+the error levels off, 3) use of a test data set. We do not recommend the third
+method as the test data set is then not independent of model development. Many
+studies used the testing data to optimize the model and training. Although this
+method may give the best model for that set of data it does not give
+generalizability or improve understanding of the study system. The importance
+of an independent data set cannot be overemphasized as we found dramatic
+differences in model accuracy assessed with prediction accuracy on the training
+data set, as estimated with bootstrapping, and from use of an independent data
+set. The comparison of the artificial neural network with a general linear
+model (GLM) as a standard procedure is recommended because a GLM may perform as
+well or better than the MLP. MLP models should not be treated as black box
+models but instead techniques such as sensitivity analyses, input variable
+relevances, neural interpretation diagrams, randomization tests, and partial
+derivatives should be used to make the model more transparent, and further our
+ecological understanding which is an important goal of the modelling process.
+Based on our experience we discuss how to build a MLP model and how to optimize
+the parameters and architecture.

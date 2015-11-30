@@ -1,0 +1,19 @@
+Consider the standard Gaussian linear regression model $Y=X\theta+\epsilon$,
+where $Y\in R^n$ is a response vector and $ X\in R^{n*p}$ is a design matrix.
+Numerous work have been devoted to building efficient estimators of $\theta$
+when $p$ is much larger than $n$. In such a situation, a classical approach
+amounts to assume that $\theta_0$ is approximately sparse. This paper studies
+the minimax risks of estimation and testing over classes of $k$-sparse vectors
+$\theta$. These bounds shed light on the limitations due to
+high-dimensionality. The results encompass the problem of prediction
+(estimation of $X\theta$), the inverse problem (estimation of $\theta_0$) and
+linear testing (testing $X\theta=0$). Interestingly, an elbow effect occurs
+when the number of variables $k\log(p/k)$ becomes large compared to $n$.
+Indeed, the minimax risks and hypothesis separation distances blow up in this
+ultra-high dimensional setting. We also prove that even dimension reduction
+techniques cannot provide satisfying results in an ultra-high dimensional
+setting. Moreover, we compute the minimax risks when the variance of the noise
+is unknown. The knowledge of this variance is shown to play a significant role
+in the optimal rates of estimation and testing. All these minimax bounds
+provide a characterization of statistical problems that are so difficult so
+that no procedure can provide satisfying results.

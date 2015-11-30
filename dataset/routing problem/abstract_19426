@@ -1,0 +1,19 @@
+We consider the following natural graph cut problem called Critical Node Cut
+(CNC): Given a graph $G$ on $n$ vertices, and two positive integers $k$ and
+$x$, determine whether $G$ has a set of $k$ vertices whose removal leaves $G$
+with at most $x$ connected pairs of vertices. We analyze this problem in the
+framework of parameterized complexity. That is, we are interested in whether or
+not this problem is solvable in $f(\kappa) \cdot n^{O(1)}$ time (i.e., whether
+or not it is fixed-parameter tractable), for various natural parameters
+$\kappa$. We consider four such parameters:
+  - The size $k$ of the required cut.
+  - The upper bound $x$ on the number of remaining connected pairs.
+  - The lower bound $y$ on the number of connected pairs to be removed.
+  - The treewidth $w$ of $G$.
+  We determine whether or not CNC is fixed-parameter tractable for each of
+these parameters. We determine this also for all possible aggregations of these
+four parameters, apart from $w+k$. Moreover, we also determine whether or not
+CNC admits a polynomial kernel for all these parameterizations. That is,
+whether or not there is an algorithm that reduces each instance of CNC in
+polynomial time to an equivalent instance of size $\kappa^{O(1)}$, where
+$\kappa$ is the given parameter.

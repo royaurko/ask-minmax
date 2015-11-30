@@ -1,0 +1,16 @@
+In recent work, robust Principal Components Analysis (PCA) has been posed as
+a problem of recovering a low-rank matrix $\mathbf{L}$ and a sparse matrix
+$\mathbf{S}$ from their sum, $\mathbf{M}:= \mathbf{L} + \mathbf{S}$ and a
+provably exact convex optimization solution called PCP has been proposed. This
+work studies the following problem. Suppose that we have partial knowledge
+about the column space of the low rank matrix $\mathbf{L}$. Can we use this
+information to improve the PCP solution, i.e. allow recovery under weaker
+assumptions? We propose here a simple but useful modification of the PCP idea,
+called modified-PCP, that allows us to use this knowledge. We derive its
+correctness result which shows that, when the available subspace knowledge is
+accurate, modified-PCP indeed requires significantly weaker incoherence
+assumptions than PCP. Extensive simulations are also used to illustrate this.
+Comparisons with PCP and other existing work are shown for a stylized real
+application as well. Finally, we explain how this problem naturally occurs in
+many applications involving time series data, i.e. in what is called the online
+or recursive robust PCA problem. A corollary for this case is also given.

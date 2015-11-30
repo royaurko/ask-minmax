@@ -1,0 +1,16 @@
+In this work, we consider a variant of the classical Longest Common
+Subsequence problem called Doubly-Constrained Longest Common Subsequence
+(DC-LCS). Given two strings s1 and s2 over an alphabet A, a set C_s of strings,
+and a function Co from A to N, the DC-LCS problem consists in finding the
+longest subsequence s of s1 and s2 such that s is a supersequence of all the
+strings in Cs and such that the number of occurrences in s of each symbol a in
+A is upper bounded by Co(a). The DC-LCS problem provides a clear mathematical
+formulation of a sequence comparison problem in Computational Biology and
+generalizes two other constrained variants of the LCS problem: the Constrained
+LCS and the Repetition-Free LCS. We present two results for the DC-LCS problem.
+First, we illustrate a fixed-parameter algorithm where the parameter is the
+length of the solution. Secondly, we prove a parameterized hardness result for
+the Constrained LCS problem when the parameter is the number of the constraint
+strings and the size of the alphabet A. This hardness result also implies the
+parameterized hardness of the DC-LCS problem (with the same parameters) and its
+NP-hardness when the size of the alphabet is constant.

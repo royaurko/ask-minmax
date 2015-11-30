@@ -1,0 +1,14 @@
+This paper shows the debugging facilities provided by the SLAM system. The
+SLAM system includes i) a specification language that integrates algebraic
+specifications and model-based specifications using the object oriented model.
+Class operations are defined by using rules each of them with logical pre and
+postconditions but with a functional flavour. ii) A development environment
+that, among other features, is able to generate readable code in a high level
+object oriented language. iii) The generated code includes (part of) the pre
+and postconditions as assertions, that can be automatically checked in the
+debug mode execution of programs. We focus on this last aspect.
+  The SLAM language is expressive enough to describe many useful properties and
+these properties are translated into a Prolog program that is linked (via an
+adequate interface) with the user program. The debugging execution of the
+program interacts with the Prolog engine which is responsible for checking
+properties.

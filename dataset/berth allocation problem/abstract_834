@@ -1,0 +1,13 @@
+This paper shows how to harness existing theorem provers for first-order
+logic to automatically verify safety properties of imperative programs that
+perform dynamic storage allocation and destructive updating of pointer-valued
+structure fields. One of the main obstacles is specifying and proving the
+(absence) of reachability properties among dynamically allocated cells.
+  The main technical contributions are methods for simulating reachability in a
+conservative way using first-order formulas--the formulas describe a superset
+of the set of program states that would be specified if one had a precise way
+to express reachability. These methods are employed for semi-automatic program
+verification (i.e., using programmer-supplied loop invariants) on programs such
+as mark-and-sweep garbage collection and destructive reversal of a singly
+linked list. (The mark-and-sweep example has been previously reported as being
+beyond the capabilities of ESC/Java.)

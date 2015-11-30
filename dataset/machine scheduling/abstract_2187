@@ -1,0 +1,11 @@
+We introduce a new approximate solution technique for first-order Markov
+decision processes (FOMDPs). Representing the value function linearly w.r.t. a
+set of first-order basis functions, we compute suitable weights by casting the
+corresponding optimization as a first-order linear program and show how
+off-the-shelf theorem prover and LP software can be effectively used. This
+technique allows one to solve FOMDPs independent of a specific domain
+instantiation; furthermore, it allows one to determine bounds on approximation
+error that apply equally to all domain instantiations. We apply this solution
+technique to the task of elevator scheduling with a rich feature space and
+multi-criteria additive reward, and demonstrate that it outperforms a number of
+intuitive, heuristicallyguided policies.

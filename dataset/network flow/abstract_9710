@@ -1,0 +1,16 @@
+This paper shows an application of the theory of sorting networks to
+facilitate the synthesis of optimized general purpose sorting libraries.
+Standard sorting libraries are often based on combinations of the classic
+Quicksort algorithm with insertion sort applied as the base case for small
+fixed numbers of inputs. Unrolling the code for the base case by ignoring loop
+conditions eliminates branching and results in code which is equivalent to a
+sorting network. This enables the application of further program
+transformations based on sorting network optimizations, and eventually the
+synthesis of code from sorting networks. We show that if considering the number
+of comparisons and swaps then theory predicts no real advantage of this
+approach. However, significant speed-ups are obtained when taking advantage of
+instruction level parallelism and non-branching conditional assignment
+instructions, both of which are common in modern CPU architectures. We provide
+empirical evidence that using code synthesized from efficient sorting networks
+as the base case for Quicksort libraries results in significant real-world
+speed-ups.

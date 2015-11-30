@@ -1,0 +1,13 @@
+For two integers $r, \ell \geq 0$, a graph $G = (V, E)$ is an
+$(r,\ell)$-graph if $V$ can be partitioned into $r$ independent sets and $\ell$
+cliques. In the parameterized $(r,\ell)$-Vertex Deletion problem, given a graph
+$G$ and an integer $k$, one has to decide whether at most $k$ vertices can be
+removed from $G$ to obtain an $(r,\ell)$-graph. This problem is NP-hard if
+$r+\ell \geq 1$ and encompasses several relevant problems such as Vertex Cover
+and Odd Cycle Transversal. The parameterized complexity of $(r,\ell)$-Vertex
+Deletion was known for all values of $(r,\ell)$ except for $(2,1)$, $(1,2)$,
+and $(2,2)$. We prove that each of these three cases is FPT and, furthermore,
+solvable in single-exponential time, which is asymptotically optimal in terms
+of $k$. We consider as well the version of $(r,\ell)$-Vertex Deletion where the
+set of vertices to be removed has to induce an independent set, and provide
+also a parameterized complexity dichotomy for this problem.

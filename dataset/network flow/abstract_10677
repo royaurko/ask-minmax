@@ -1,0 +1,19 @@
+In this paper we present an algorithm for optimal processing of
+time-dependent sequenced route queries in road networks, i.e., given a road
+network where the travel time over an edge is time-dependent and a given
+ordered list of categories of interest, we find the fastest route between an
+origin and destination that passes through a sequence of points of interest
+belonging to each of the specified categories of interest. For instance,
+considering a city road network at a given departure time, one can find the
+fastest route between one's work and his/her home, passing through a bank, a
+supermarket and a restaurant, in this order. The main contribution of our work
+is the consideration of the time dependency of the network, a realistic
+characteristic of urban road networks, which has not been considered previously
+when addressing the optimal sequenced route query. Our approach uses the A*
+search paradigm that is equipped with an admissible heuristic function, thus
+guaranteed to yield the optimal solution, along with a pruning scheme for
+further reducing the search space. In order to compare our proposal we extended
+a previously proposed solution aimed at non-time dependent sequenced route
+queries, enabling it to deal with the time-dependency. Our experiments using
+real and synthetic data sets have shown our proposed solution to be up to two
+orders of magnitude faster than the temporally extended previous solution.

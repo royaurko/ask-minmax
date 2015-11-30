@@ -1,0 +1,18 @@
+We discuss the ill conditioning of the matrix for the discretised Poisson
+equation in the small aspect ratio limit, and motivate this problem in the
+context of nonhydrostatic ocean modelling. Efficient iterative solvers for the
+Poisson equation in small aspect ratio domains are crucial for the successful
+development of nonhydrostatic ocean models on unstructured meshes. We introduce
+a new multigrid preconditioner for the Poisson problem which can be used with
+finite element discretisations on general unstructured meshes; this
+preconditioner is motivated by the fact that the Poisson problem has a
+condition number which is independent of aspect ratio when Dirichlet boundary
+conditions are imposed on the top surface of the domain. This leads to the
+first level in an algebraic multigrid solver (which can be extended by further
+conventional algebraic multigrid stages), and an additive smoother. We
+illustrate the method with numerical tests on unstructured meshes, which show
+that the preconditioner makes a dramatic improvement on a more standard
+multigrid preconditioner approach, and also show that the additive smoother
+produces better results than standard SOR smoothing. This new solver method
+makes it feasible to run nonhydrostatic unstructured mesh ocean models in small
+aspect ratio domains.

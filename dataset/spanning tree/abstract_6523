@@ -1,0 +1,13 @@
+In this paper, we propose an HB-like protocol for privacy-preserving
+authentication of RFID tags, whereby a tag can remain anonymous and untraceable
+to an adversary during the authentication process. Previous proposals of such
+protocols were based on PRF computations. Our protocol can instead be used on
+low-cost tags that may be incapable of computing standard PRFs. Moreover, since
+the underlying computations in HB protocols are very efficient, our protocol
+also reduces reader load compared to PRF-based protocols.
+  We suggest a tree-based approach that replaces the PRF-based authentication
+from prior work with a procedure such as HB+ or HB#. We optimize the tree-
+traversal stage through usage of a "light version" of the underlying protocol
+and shared random challenges across all levels of the tree. This provides
+significant reduction of the communication resources, resulting in a
+privacy-preserving protocol almost as efficient as the underlying HB+ or HB#

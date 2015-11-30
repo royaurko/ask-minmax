@@ -1,0 +1,18 @@
+In this paper, we introduce a novel approach for power allocation in cellular
+networks. In our model, we use sigmoidal-like utility functions to represent
+different users' modulation schemes. Each utility function is a representation
+of the probability of successfully transmitted packets per unit of power
+consumed by a user, when using a certain modulation scheme. We consider power
+allocation with utility proportional fairness policy, where the fairness among
+users is in utility percentage i.e. percentage of successfully transmitted
+packets of the corresponding modulation scheme. We formulate our network
+utility maximization problem as a product of utilities of all users and prove
+that our power allocation optimization problem is convex and therefore the
+optimal solution is tractable. We present a distributed algorithm to allocate
+base station (BS) powers optimally with priority given to users running lower
+modulation schemes while ensuring non-zero power allocation to users running
+higher modulation schemes. Our algorithm prevents fluctuation in the power
+allocation process and is capable of traffic and modulation dependent pricing
+i.e. charges different price per unit power from different users depending in
+part on their modulation scheme and total power available at the BS. This is
+used to flatten traffic and decrease the service price for users.

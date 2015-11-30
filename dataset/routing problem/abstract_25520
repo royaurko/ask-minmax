@@ -1,0 +1,15 @@
+We compare various approaches to find the most efficient method for the
+practical computation of the lightcurves (integrated brightnesses) of
+irregularly shaped bodies such as asteroids at arbitrary viewing and
+illumination geometries. For convex models, this reduces to the problem of the
+numerical computation of an integral over a simply defined part of the unit
+sphere. We introduce a fast method, based on Lebedev quadratures, which is
+optimal for both lightcurve simulation and inversion in the sense that it is
+the simplest and fastest widely applicable procedure for accuracy levels
+corresponding to typical data noise. The method requires no tessellation of the
+surface into a polyhedral approximation. At the accuracy level of 0.01 mag, it
+is up to an order of magnitude faster than polyhedral sums that are usually
+applied to this problem, and even faster at higher accuracies. This approach
+can also be used in other similar cases that can be modelled on the unit
+sphere. The method is easily implemented in lightcurve inversion by a simple
+alteration of the standard algorithm/software.

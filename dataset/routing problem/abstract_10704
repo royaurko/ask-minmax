@@ -1,0 +1,20 @@
+In the classical $k$-median problem the goal is to select a subset of at most
+$k$ facilities in order to minimize the total cost of opened facilities and
+established connections between clients and opened facilities. We consider the
+capacitated version of the problem, where a single facility may only serve a
+limited number of clients. We construct approximation algorithms slightly
+violating the capacities based on rounding a fractional solution to the
+standard LP.
+  It is well known that the standard LP has unbounded integrality gap if we
+only allow violating capacities by a factor smaller than $2$, or if we only
+allow violating the number of facilities by a factor smaller than $2$. In an
+earlier version of our work we showed that violating capacities by a factor of
+$2+\varepsilon$ is sufficient to obtain constant factor approximation of the
+connection cost. In this paper we substantially extend this result in the
+following two directions. First, we extend the $2+\varepsilon$ capacity
+violating algorithm to the more general $k$-facility location problem with
+uniform capacities, where opening facilities incurs a location specific opening
+cost. Second, we show that violating capacities by a slightly bigger factor of
+$3+\varepsilon$ is sufficient to obtain constant factor approximation of the
+connection cost also in the case of the non-uniform hard capacitated $k$-median
+problem.

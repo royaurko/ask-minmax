@@ -1,0 +1,21 @@
+We show that any submodular minimization (SM) problem defined on a linear
+constraint set with constraints having up to two variables per inequality, are
+2-approximable in polynomial time. If the constraints are monotone (the two
+variables appear with opposite sign coefficients) then the problems of
+submodular minimization or supermodular maximization are polynomial time
+solvable. The key idea is to link these problems to a submodular s,t-cut
+problem defined here. This framework includes the problems: SM-vertex cover;
+SM-2SAT; SM-min satisfiability; SM-edge deletion for clique, SM-node deletion
+for biclique and others. We also introduce here the submodular closure problem
+and and show that it is solvable in polynomial time and equivalent to the
+submodular cut problem. All the results are extendible to multi-sets where each
+element of a set may appear with a multiplicity greater than 1. For all these
+NP-hard problems 2-approximations are the best possible in the sense that a
+better approximation factor cannot be achieved in polynomial time unless NP=P.
+The mechanism creates a relaxed "monotone" problem, solved as a submodular
+closure problem, the solution to which is mapped to a half integral
+super-optimal solution to the original problem. That half-integral solution has
+the persistency property meaning that integer valued variables retain their
+value in an optimal solution. This permits to delete the integer valued
+variables, and restrict the search of an optimal solution to the smaller set of
+remaining variables.

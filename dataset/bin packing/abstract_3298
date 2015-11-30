@@ -1,0 +1,14 @@
+We describe how the powerful "Divide and Concur" algorithm for constraint
+satisfaction can be derived as a special case of a message-passing version of
+the Alternating Direction Method of Multipliers (ADMM) algorithm for convex
+optimization, and introduce an improved message-passing algorithm based on
+ADMM/DC by introducing three distinct weights for messages, with "certain" and
+"no opinion" weights, as well as the standard weight used in ADMM/DC. The
+"certain" messages allow our improved algorithm to implement constraint
+propagation as a special case, while the "no opinion" messages speed
+convergence for some problems by making the algorithm focus only on active
+constraints. We describe how our three-weight version of ADMM/DC can give
+greatly improved performance for non-convex problems such as circle packing and
+solving large Sudoku puzzles, while retaining the exact performance of ADMM for
+convex problems. We also describe the advantages of our algorithm compared to
+other message-passing algorithms based upon belief propagation.

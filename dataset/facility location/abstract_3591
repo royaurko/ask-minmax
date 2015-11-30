@@ -1,0 +1,20 @@
+Soft real-time applications require timely delivery of messages conforming to
+the soft real-time constraints. Satisfying such requirements is a complex task
+both due to the volatile nature of distributed environments, as well as due to
+numerous domain-specific factors that affect message latency. Prompt detection
+of the root-cause of excessive message delay allows a distributed system to
+react accordingly. This may significantly improve compliance with the required
+timeliness constraints.
+  In this work, we present a novel approach for distributed performance
+monitoring of soft-real time distributed systems. We propose to employ recent
+distributed algorithms from the statistical signal processing and learning
+domains, and to utilize them in a different context of online performance
+monitoring and root-cause analysis, for pinpointing the reasons for violation
+of performance requirements. Our approach is general and can be used for
+monitoring of any distributed system, and is not limited to the soft real-time
+domain.
+  We have implemented the proposed framework in TransFab, an IBM prototype of
+soft real-time messaging fabric. In addition to root-cause analysis, the
+framework includes facilities to resolve resource allocation problems, such as
+memory and bandwidth deficiency. The experiments demonstrate that the system
+can identify and resolve latency problems in a timely fashion.

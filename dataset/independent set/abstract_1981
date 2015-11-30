@@ -1,0 +1,21 @@
+We consider the problem of doing fast and reliable estimation of the number
+of non-zero entries in a sparse boolean matrix product. This problem has
+applications in databases and computer algebra. Let n denote the total number
+of non-zero entries in the input matrices. We show how to compute a 1 +-
+epsilon approximation (with small probability of error) in expected time O(n)
+for any epsilon > 4/\sqrt[4]{z}. The previously best estimation algorithm, due
+to Cohen (JCSS 1997), uses time O(n/epsilon^2). We also present a variant using
+O(sort(n)) I/Os in expectation in the cache-oblivious model. In contrast to
+these results, the currently best algorithms for computing a sparse boolean
+matrix product use time omega(n^{4/3}) (resp. omega(n^{4/3}/B) I/Os), even if
+the result matrix has only z=O(n) nonzero entries. Our algorithm combines the
+size estimation technique of Bar-Yossef et al. (RANDOM 2002) with a particular
+class of pairwise independent hash functions that allows the sketch of a set of
+the form A x C to be computed in expected time O(|A|+|C|) and O(sort(|A|+|C|))
+I/Os. We then describe how sampling can be used to maintain (independent)
+sketches of matrices that allow estimation to be performed in time o(n) if z is
+sufficiently large. This gives a simpler alternative to the sketching technique
+of Ganguly et al. (PODS 2005), and matches a space lower bound shown in that
+paper. Finally, we present experiments on real-world data sets that show the
+accuracy of both our methods to be significantly better than the worst-case
+analysis predicts.

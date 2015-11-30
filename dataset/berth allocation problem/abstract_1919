@@ -1,0 +1,25 @@
+We address the numerical solution of minimal norm residuals of {\it
+nonlinear} equations in finite dimensions. We take inspiration from the problem
+of finding a sparse vector solution by using greedy algorithms based on
+iterative residual minimizations in the $\ell_p$-norm, for $1 \leq p \leq 2$.
+Due to the mild smoothness of the problem, especially for $p \to 1$, we develop
+and analyze a generalized version of Iteratively Reweighted Least Squares
+(IRLS). This simple and efficient algorithm performs the solution of
+optimization problems involving non-quadratic possibly non-convex and
+non-smooth cost functions, which can be transformed into a sequence of common
+least squares problems, which can be tackled more efficiently.While its
+analysis has been developed in many contexts when the model equation is {\it
+linear}, no results are provided in the {\it nonlinear} case. We address the
+convergence and the rate of error decay of IRLS for nonlinear problems. The
+convergence analysis is based on its reformulation as an alternating
+minimization of an energy functional, whose variables are the competitors to
+solutions of the intermediate reweighted least squares problems. Under specific
+conditions of coercivity and local convexity, we are able to show convergence
+of IRLS to minimizers of the nonlinear residual problem. For the case where we
+are lacking local convexity, we propose an appropriate convexification.. To
+illustrate the theoretical results we conclude the paper with several numerical
+experiments. We compare IRLS with standard Matlab functions for an easily
+presentable example and numerically validate our theoretical results in the
+more complicated framework of phase retrieval problems. Finally we examine the
+recovery capability of the algorithm in the context of data corrupted by
+impulsive noise where the sparsification of the residual is desired.

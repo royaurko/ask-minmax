@@ -1,0 +1,14 @@
+Sampling-based motion planners are an effective means for generating
+collision-free motion paths. However, the quality of these motion paths, with
+respect to different quality measures such as path length, clearance,
+smoothness or energy, is often notoriously low. This problem is accentuated in
+the case of non-holonomic sampling-based motion planning, in which the space of
+feasible motion trajectories is restricted. In this study, we combine the C-PRM
+algorithm by Song and Amato with our recently introduced path-hybridization
+approach, for creating high quality non-holonomic motion paths, with
+combinations of several different quality measures such as path length,
+smoothness or clearance, as well as the number of reverse car motions. Our
+implementation includes a variety of code optimizations that result in nearly
+real-time performance, and which we believe can be extended with further
+optimizations to a real-time tool for the planning of high-quality car-like
+motion.

@@ -1,0 +1,20 @@
+One of the differences among the various approaches to suspension-based
+tabled evaluation is the scheduling strategy. The two most popular strategies
+are local and batched evaluation.
+  The former collects all the solutions to a tabled predicate before making any
+one of them available outside the tabled computation. The latter returns
+answers one by one before computing them all, which in principle is better if
+only one answer (or a subset of the answers) is desired.
+  Batched evaluation is closer to SLD evaluation in that it computes solutions
+lazily as they are demanded, but it may need arbitrarily more memory than local
+evaluation, which is able to reclaim memory sooner. Some programs which in
+practice can be executed under the local strategy quickly run out of memory
+under batched evaluation. This has led to the general adoption of local
+evaluation at the expense of the more depth-first batched strategy.
+  In this paper we study the reasons for the high memory consumption of batched
+evaluation and propose a new scheduling strategy which we have termed swapping
+evaluation. Swapping evaluation also returns answers one by one before
+completing a tabled call, but its memory usage can be orders of magnitude less
+than batched evaluation. An experimental implementation in the XSB system shows
+that swapping evaluation is a feasible memory-scalable strategy that need not
+compromise execution speed.

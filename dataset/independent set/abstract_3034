@@ -1,0 +1,15 @@
+This paper studies the problem of finding a (1+eps)-approximation to positive
+semidefinite programs. These are semidefinite programs in which all matrices in
+the constraints and objective are positive semidefinite and all scalars are
+non-negative. Previous work (Jain and Yao, FOCS'11) gave an NC algorithm that
+requires at least Omega((1/eps)^13\log^{13}n) iterations. The algorithm
+performs at least Omega(n^\omega) work per iteration, where n is the dimension
+of the matrices involved, since each iteration involves computing spectral
+decomposition.
+  We present a simpler NC parallel algorithm that requires O((1/eps)^4 \log^4 n
+\log(1/eps)) iterations. Moreover, if the positive SDP is provided in a
+factorized form, the total work of our algorithm can be bounded by
+\otilde(n+M), where M is the total number of nonzero entries in the
+factorization. Our algorithm is a generalization of Young's algorithm and
+analysis techniques for positive linear programs (Young, FOCS'01) to the
+semidefinite programming setting.

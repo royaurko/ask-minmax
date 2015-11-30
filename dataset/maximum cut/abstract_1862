@@ -1,0 +1,18 @@
+Let X_1, ..., X_n be independent and identically distributed random vectors
+with a log-concave (Lebesgue) density f. We first prove that, with probability
+one, there exists a unique maximum likelihood estimator of f. The use of this
+estimator is attractive because, unlike kernel density estimation, the method
+is fully automatic, with no smoothing parameters to choose. Although the
+existence proof is non-constructive, we are able to reformulate the issue of
+computation in terms of a non-differentiable convex optimisation problem, and
+thus combine techniques of computational geometry with Shor's r-algorithm to
+produce a sequence that converges to the maximum likelihood estimate. For the
+moderate or large sample sizes in our simulations, the maximum likelihood
+estimator is shown to provide an improvement in performance compared with
+kernel-based methods, even when we allow the use of a theoretical, optimal
+fixed bandwidth for the kernel estimator that would not be available in
+practice. We also present a real data clustering example, which shows that our
+methodology can be used in conjunction with the Expectation--Maximisation (EM)
+algorithm to fit finite mixtures of log-concave densities. An R version of the
+algorithm is available in the package LogConcDEAD -- Log-Concave Density
+Estimation in Arbitrary Dimensions.

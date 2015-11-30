@@ -1,0 +1,10 @@
+This paper describes Census, a protocol for node visitation in MANETs. Given
+a set of tokens, the goal of Census is to ensure that every node is visited by
+at least one token. Census is a gossip style protocol where the random walks of
+the tokens are assisted by short, local gradients that guide the tokens towards
+hitherto unvisited nodes. This achieves fast convergence while eschewing
+routing structures such as spanning trees that incur a high messaging overhead
+to maintain under mobility. Analytical bounds on convergence time and message
+overhead are characterized for single token and multiple token scenarios. The
+scalability and robustness of Census are demonstrated using simulations in
+networks ranging from 150 to 4000 nodes.

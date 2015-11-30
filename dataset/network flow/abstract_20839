@@ -1,0 +1,18 @@
+This paper answers an open question of Chen, Doty, and Soloveichik [1], who
+showed that a function f:N^k --> N^l is deterministically computable by a
+stochastic chemical reaction network (CRN) if and only if the graph of f is a
+semilinear subset of N^{k+l}. That construction crucially used "leaders": the
+ability to start in an initial configuration with constant but non-zero counts
+of species other than the k species X_1,...,X_k representing the input to the
+function f. The contributors asked whether deterministic CRNs without a leader
+retain the same power.
+  We answer this question affirmatively, showing that every semilinear function
+is deterministically computable by a CRN whose initial configuration contains
+only the input species X_1,...,X_k, and zero counts of every other species. We
+show that this CRN completes in expected time O(n), where n is the total number
+of input molecules. This time bound is slower than the O(log^5 n) achieved in
+[1], but faster than the O(n log n) achieved by the direct construction of [1]
+(Theorem 4.1 in the latest online version of [1]), since the fast construction
+of that paper (Theorem 4.4) relied heavily on the use of a fast, error-prone
+CRN that computes arbitrary computable functions, and which crucially uses a
+leader.

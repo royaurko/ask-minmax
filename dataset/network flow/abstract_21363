@@ -1,0 +1,26 @@
+We consider a setting in which two nodes (referred to as forwarders) compete
+to choose a relay node from a set of relays, as they ephemerally become
+available (e.g., wake up from a sleep state). Each relay, when it arrives,
+offers a (possibly different) "reward" to each forwarder. Each forwarder's
+objective is to minimize a combination of the delay incurred in choosing a
+relay and the reward offered by the chosen relay. As an example, we develop the
+reward structure for the specific problem of geographical forwarding over a
+network of sleep-wake cycling relays.
+  We study two variants of the generic relay selection problem, namely, the
+completely observable (CO) case where, when a relay arrives, both forwarders
+get to observe both rewards, and the partially observable (PO) case where each
+forwarder can only observe its own reward. Formulating the problem as a two
+person stochastic game, we characterize solution in terms of Nash Equilibrium
+Policy Pairs (NEPPs). For the CO case we provide a general structure of the
+NEPPs. For the PO case we prove that there exists an NEPP within the class of
+threshold policy pairs.
+  We then consider the particular application of geographical forwarding of
+packets in a shared network of sleep-wake cycling wireless relays. For this
+problem, for a particular reward structure, using realistic parameter values
+corresponding to TelosB wireless mote, we numerically compare the performance
+(in terms of cost to both forwarders) of the various NEPPs and draw the
+following key insight: even for moderate separation between the two forwarders,
+the performance of the various NEPPs is close to the performance of a simple
+strategy where each forwarder behaves as if the other forwarder is not present.
+We also conduct simulation experiments to study the end-to-end performance of
+the simple forwarding policy.

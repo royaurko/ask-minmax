@@ -1,0 +1,14 @@
+Although cuckoo hashing has significant applications in both theoretical and
+practical settings, a relevant downside is that it requires lookups to multiple
+locations. In many settings, where lookups are expensive, cuckoo hashing
+becomes a less compelling alternative. One such standard setting is when memory
+is arranged in large pages, and a major cost is the number of page accesses. We
+propose the study of cuckoo hashing with pages, advocating approaches where
+each key has several possible locations, or cells, on a single page, and
+additional choices on a second backup page. We show experimentally that with k
+cell choices on one page and a single backup cell choice, one can achieve
+nearly the same loads as when each key has k+1 random cells to choose from,
+with most lookups requiring just one page access, even when keys are placed
+online using a simple algorithm. While our results are currently experimental,
+they suggest several interesting new open theoretical questions for cuckoo
+hashing with pages.

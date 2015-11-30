@@ -1,0 +1,23 @@
+This paper investigates approaches to parallelizing Bounded Model Checking
+(BMC) for shared memory environments as well as for clusters of workstations.
+We present a generic framework for parallelized BMC named Tarmo. Our framework
+can be used with any incremental SAT encoding for BMC but for the results in
+this paper we use only the current state-of-the-art encoding for full PLTL.
+Using this encoding allows us to check both safety and liveness properties,
+contrary to an earlier work on distributing BMC that is limited to safety
+properties only.
+  Despite our focus on BMC after it has been translated to SAT, existing
+distributed SAT solvers are not well suited for our application. This is
+because solving a BMC problem is not solving a set of independent SAT instances
+but rather involves solving multiple related SAT instances, encoded
+incrementally, where the satisfiability of each instance corresponds to the
+existence of a counterexample of a specific length. Our framework includes a
+generic architecture for a shared clause database that allows easy clause
+sharing between SAT solver threads solving various such instances.
+  We present extensive experimental results obtained with multiple variants of
+our Tarmo implementation. Our shared memory variants have a significantly
+better performance than conventional single threaded approaches, which is a
+result that many users can benefit from as multi-core and multi-processor
+technology is widely available. Furthermore we demonstrate that our framework
+can be deployed in a typical cluster of workstations, where several multi-core
+machines are connected by a network.

@@ -1,0 +1,17 @@
+This paper investigates the use of stratified sampling as a variance
+reduction technique for approximating integrals over large dimensional spaces.
+The accuracy of this method critically depends on the choice of the space
+partition, the strata, which should be ideally fitted to thesubsets where the
+functions to integrate is nearly constant, and on the allocation of the number
+of samples within each strata. When the dimension is large and the function to
+integrate is complex, finding such partitions and allocating the sample is a
+highly non-trivial problem. In this work, we investigate a novel method to
+improve the efficiency of the estimator "on the fly", by jointly sampling and
+adapting the strata and the allocation within the strata. The accuracy of
+estimators when this method is used is examined in detail, in the so-called
+asymptotic regime (i.e. when both the number of samples and the number of
+strata are large). We illustrate the use of the method for the computation of
+the price of path-dependent options in models with both constant and stochastic
+volatility. The use of this adaptive technique yields variance reduction by
+factors sometimes larger than 1000 compared to classical Monte Carlo
+estimators.

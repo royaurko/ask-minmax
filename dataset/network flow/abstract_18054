@@ -1,0 +1,25 @@
+The beep model is a very weak communications model in which devices in a
+network can communicate only via beeps and silence. As a result of its weak
+assumptions, it has broad applicability to many different implementations of
+communications networks. This comes at the cost of a restrictive environment
+for algorithm design.
+  Despite being only recently introduced, the beep model has received
+considerable attention, in part due to its relationship with other
+communication models such as that of ad-hoc radio networks. However, there has
+been no definitive published result for several fundamental tasks in the model.
+We aim to rectify this with our paper.
+  We present algorithms for the tasks of broadcast, gossiping, and
+multi-broadcast. Our $O(D+\log M)$-time algorithm for broadcasting is a simple
+formalization of a concept known as beep waves, and is asymptotically optimal.
+We give an $O(n \log L)$-time depth-first search procedure, and show how this
+can be used as the basis for an $O(n \log LM)$-time gossiping algorithm.
+Finally, we present almost optimal algorithms for the more general problem of
+multi-broadcast. When message provenance is required, we give an $O(k \log
+\frac{LM}{k}+D \log L)$-time algorithm and a corresponding $\Omega(k \log
+\frac{LM}{k}+D)$ lower bound. When provenance is not required, we give an
+algorithm taking $O(k \log \frac {M}{k}+D \log L)$ time when $M>k$ and $O(M+D
+\log L)$ otherwise, and a corresponding lower bound of $\Omega(k \log
+\frac{M}{k}+D)$ when $M>k$ and $\Omega(M+D)$ otherwise.
+  Our algorithms are all explicit, deterministic, and practical, and give
+efficient means of communication while making arguably the minimum possible
+assumptions about the network.

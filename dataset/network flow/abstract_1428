@@ -1,0 +1,18 @@
+Traffic Engineering (TE) leverages information of network traffic to generate
+a routing scheme optimizing the traffic distribution so as to advance network
+performance. However, optimize the link weights for OSPF to the offered traffic
+is an known NP-hard problem. In this paper, motivated by the fairness concept
+of congestion control, we firstly propose a new generic objective function,
+where various interests of providers can be extracted with different parameter
+settings. And then, we model the optimal TE as the utility maximization of
+multi-commodity flows with the generic objective function and theoretically
+show that any given set of optimal routes corresponding to a particular
+objective function can be converted to shortest paths with respect to a set of
+positive link weights. This can be directly configured on OSPF-based protocols.
+On these bases, we employ the Network Entropy Maximization(NEM) framework and
+develop a new OSPF-based routing protocol, SPEF, to realize a flexible way to
+split traffic over shortest paths in a distributed fashion. Actually, comparing
+to OSPF, SPEF only needs one more weight for each link and provably achieves
+optimal TE. Numerical experiments have been done to compare SPEF with the
+current version of OSPF, showing the effectiveness of SPEF in terms of link
+utilization and network load distribution.

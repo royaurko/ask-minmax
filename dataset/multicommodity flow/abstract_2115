@@ -1,0 +1,23 @@
+Central moment lattice Boltzmann method (LBM) is one of the more recent
+developments among the lattice kinetic schemes for computational fluid
+dynamics. A key element in this approach is the use of central moments to
+specify collision process and forcing, and thereby naturally maintaining
+Galilean invariance, an important characteristic of fluid flows. When the
+different central moments are relaxed at different rates like in a standard
+multiple relaxation time (MRT) formulation based on raw moments, it is endowed
+with a number of desirable physical and numerical features. Since the collision
+operator exhibits a cascaded structure, this approach is also known as the
+cascaded LBM. While the cascaded LBM has been developed sometime ago, a
+systematic study of its numerical properties, such as accuracy, grid
+convergence and stability for well defined canonical problems is lacking and
+the present work is intended to fulfill this need. We perform a quantitative
+study of the performance of the cascaded LBM for a set of benchmark problems of
+differing complexity, viz., Poiseuille flow, decaying Taylor-Green vortex flow
+and lid-driven cavity flow. We first establish its grid convergence and
+demonstrate second order accuracy under diffusive scaling for both the velocity
+field and its derivatives, i.e. components of the strain rate tensor, as well.
+The method is shown to quantitatively reproduce steady/unsteady analytical
+solutions or other numerical results with excellent accuracy. Numerical
+experiments further demonstrate that the central moment MRT LBM results in
+significant stability improvements when compared with certain existing
+collision models at moderate additional computational cost.

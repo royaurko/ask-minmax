@@ -1,0 +1,14 @@
+We consider the problems of finding a maximum clique in a graph and finding a
+maximum-edge biclique in a bipartite graph. Both problems are NP-hard. We write
+both problems as matrix-rank minimization and then relax them using the nuclear
+norm. This technique, which may be regarded as a generalization of compressive
+sensing, has recently been shown to be an effective way to solve rank
+optimization problems. In the special cases that the input graph has a planted
+clique or biclique (i.e., a single large clique or biclique plus diversionary
+edges), our algorithm successfully provides an exact solution to the original
+instance. For each problem, we provide two analyses of when our algorithm
+succeeds. In the first analysis, the diversionary edges are placed by an
+adversary. In the second, they are placed at random. In the case of random
+edges for the planted clique problem, we obtain the same bound as Alon,
+Krivelevich and Sudakov as well as Feige and Krauthgamer, but we use different
+techniques.

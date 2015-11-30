@@ -1,0 +1,25 @@
+Multiple-input, multiple-output (MIMO) technology provides high data rate and
+enhanced QoS for wireless com- munications. Since the benefits from MIMO result
+in a heavy computational load in detectors, the design of low-complexity
+sub-optimum receivers is currently an active area of research.
+Lattice-reduction-aided detection (LRAD) has been shown to be an effective
+low-complexity method with near-ML performance. In this paper we advocate the
+use of systolic array architectures for MIMO receivers, and in particular we
+exhibit one of them based on LRAD. The "LLL lattice reduction algorithm" and
+the ensuing linear detections or successive spatial-interference cancellations
+can be located in the same array, which is con- siderably hardware-efficient.
+Since the conventional form of the LLL algorithm is not immediately suitable
+for parallel processing, two modified LLL algorithms are considered here for
+the systolic array. LLL algorithm with full-size reduction (FSR-LLL) is one of
+the versions more suitable for parallel processing. Another variant is the
+all-swap lattice-reduction (ASLR) algorithm for complex-valued lattices, which
+processes all lattice basis vectors simultaneously within one iteration. Our
+novel systolic array can operate both algorithms with different external logic
+controls. In order to simplify the systolic array design, we replace the
+Lov\'asz condition in the definition of LLL-reduced lattice with the looser
+Siegel condition. Simulation results show that for LR- aided linear detections,
+the bit-error-rate performance is still maintained with this relaxation.
+Comparisons between the two algorithms in terms of bit-error-rate performance,
+and average FPGA processing time in the systolic array are made, which shows
+that ASLR is a better choice for a systolic architecture, especially for
+systems with a large number of antennas.

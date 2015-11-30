@@ -1,0 +1,12 @@
+Probabilistic sampling methods have become very popular to solve single-shot
+path planning problems. Rapidly-exploring Random Trees (RRTs) in particular
+have been shown to be very efficient in solving high dimensional problems. Even
+though several RRT variants have been proposed to tackle the dynamic replanning
+problem, these methods only perform well in environments with infrequent
+changes. This paper addresses the dynamic path planning problem by combining
+simple techniques in a multi-stage probabilistic algorithm. This algorithm uses
+RRTs as an initial solution, informed local search to fix unfeasible paths and
+a simple greedy optimizer. The algorithm is capable of recognizing when the
+local search is stuck, and subsequently restart the RRT. We show that this
+combination of simple techniques provides better responses to a highly dynamic
+environment than the dynamic RRT variants.

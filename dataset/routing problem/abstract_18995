@@ -1,0 +1,19 @@
+Linear programming (LP) decoding approximates maximum-likelihood (ML)
+decoding of a linear block code by relaxing the equivalent ML integer
+programming (IP) problem into a more easily solved LP problem. The LP problem
+is defined by a set of box constraints together with a set of linear
+inequalities called "parity inequalities" that are derived from the constraints
+represented by the rows of a parity-check matrix of the code and can be added
+iteratively and adaptively. In this paper, we first derive a new necessary
+condition and a new sufficient condition for a violated parity inequality
+constraint, or "cut," at a point in the unit hypercube. Then, we propose a new
+and effective algorithm to generate parity inequalities derived from certain
+additional redundant parity check (RPC) constraints that can eliminate
+pseudocodewords produced by the LP decoder, often significantly improving the
+decoder error-rate performance. The cut-generating algorithm is based upon a
+specific transformation of an initial parity-check matrix of the linear block
+code. We also design two variations of the proposed decoder to make it more
+efficient when it is combined with the new cut-generating algorithm. Simulation
+results for several low-density parity-check (LDPC) codes demonstrate that the
+proposed decoding algorithms significantly narrow the performance gap between
+LP decoding and ML decoding.

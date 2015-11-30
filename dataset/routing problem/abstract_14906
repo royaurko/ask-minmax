@@ -1,0 +1,20 @@
+We consider inapproximability of the correlation clustering problem defined
+as follows: Given a graph $G = (V,E)$ where each edge is labeled either "+"
+(similar) or "-" (dissimilar), correlation clustering seeks to partition the
+vertices into clusters so that the number of pairs correctly (resp.
+incorrectly) classified with respect to the labels is maximized (resp.
+minimized). The two complementary problems are called MaxAgree and MinDisagree,
+respectively, and have been studied on complete graphs, where every edge is
+labeled, and general graphs, where some edge might not have been labeled.
+Natural edge-weighted versions of both problems have been studied as well. Let
+S-MaxAgree denote the weighted problem where all weights are taken from set S,
+we show that S-MaxAgree with weights bounded by $O(|V|^{1/2-\delta})$
+essentially belongs to the same hardness class in the following sense: if there
+is a polynomial time algorithm that approximates S-MaxAgree within a factor of
+$\lambda = O(\log{|V|})$ with high probability, then for any choice of S',
+S'-MaxAgree can be approximated in polynomial time within a factor of $(\lambda
++ \epsilon)$, where $\epsilon > 0$ can be arbitrarily small, with high
+probability. A similar statement also holds for $S-MinDisagree. This result
+implies it is hard (assuming $NP \neq RP$) to approximate unweighted MaxAgree
+within a factor of $80/79-\epsilon$, improving upon a previous known factor of
+$116/115-\epsilon$ by Charikar et. al. \cite{Chari05}.

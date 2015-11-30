@@ -1,0 +1,13 @@
+The parametric shortest path problem is to find the shortest paths in graph
+where the edge costs are of the form w_ij+lambda where each w_ij is constant
+and lambda is a parameter that varies. The problem is to find shortest path
+trees for every possible value of lambda.
+  The minimum-balance problem is to find a ``weighting'' of the vertices so
+that adjusting the edge costs by the vertex weights yields a graph in which,
+for every cut, the minimum weight of any edge crossing the cut in one direction
+equals the minimum weight of any edge crossing the cut in the other direction.
+  The paper presents fast algorithms for both problems. The algorithms run in
+O(nm+n^2 log n) time. The paper also describes empirical studies of the
+algorithms on random graphs, suggesting that the expected time for finding a
+minimum-mean cycle (an important special case of both problems) is O(n log(n) +
+m).

@@ -1,0 +1,19 @@
+In this work we develop a dynamically adaptive sparse grids (SG) method for
+quasi-optimal interpolation of multidimensional analytic functions defined over
+a product of one dimensional bounded domains. The goal of such approach is to
+construct an interpolant in space that corresponds to the "best $M$-terms"
+based on sharp a priori estimate of polynomial coefficients. In the past, SG
+methods have been successful in achieving this, with a traditional construction
+that relies on the solution to a Knapsack problem: only the most profitable
+hierarchical surpluses are added to the SG. However, this approach requires
+additional sharp estimates related to the size of the analytic region and the
+norm of the interpolation operator, i.e., the Lebesgue constant. Instead, we
+present an iterative SG procedure that adaptively refines an estimate of the
+region and accounts for the effects of the Lebesgue constant. Our approach does
+not require any a priori knowledge of the analyticity or operator norm, is
+easily generalized to both affine and non-affine analytic functions, and can be
+applied to sparse grids build from one dimensional rules with arbitrary growth
+of the number of nodes. In several numerical examples, we utilize our
+dynamically adaptive SG to interpolate quantities of interest related to the
+solutions of parametrized elliptic and hyperbolic PDEs, and compare the
+performance of our quasi-optimal interpolant to several alternative SG schemes.

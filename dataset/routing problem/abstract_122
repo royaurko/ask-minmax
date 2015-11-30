@@ -1,0 +1,17 @@
+Ant Colony Optimization (ACO) has time complexity O(t*m*N*N), and its typical
+application is to solve Traveling Salesman Problem (TSP), where t, m, and N
+denotes the iteration number, number of ants, number of cities respectively.
+Cutting down running time is one of study focuses, and one way is to decrease
+parameter t and N, especially N. For this focus, the following method is
+presented in this paper. Firstly, design a novel clustering algorithm named
+Special Local Clustering algorithm (SLC), then apply it to classify all cities
+into compact classes, where compact class is the class that all cities in this
+class cluster tightly in a small region. Secondly, let ACO act on every class
+to get a local TSP route. Thirdly, all local TSP routes are jointed to form
+solution. Fourthly, the inaccuracy of solution caused by clustering is
+eliminated. Simulation shows that the presented method improves the running
+speed of ACO by 200 factors at least. And this high speed is benefit from two
+factors. One is that class has small size and parameter N is cut down. The
+route length at every iteration step is convergent when ACO acts on compact
+class. The other factor is that, using the convergence of route length as
+termination criterion of ACO and parameter t is cut down.

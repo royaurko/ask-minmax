@@ -1,0 +1,19 @@
+Designing protocols and formulating convenient programming units of
+abstraction for sensor networks is challenging due to communication errors and
+platform constraints. This paper investigates properties and implementation
+reliability for a \emph{local read-write} abstraction. Local read-write is
+inspired by the class of read-modify-write operations defined for shared-memory
+multiprocessor architectures. The class of read-modify-write operations is
+important in solving consensus and related synchronization problems for
+concurrency control. Local read-write is shown to be an atomic abstraction for
+synchronizing neighborhood states in sensor networks. The paper compares local
+read-write to similar lightweight operations in wireless sensor networks, such
+as read-all, write-all, and a transaction-based abstraction: for some
+optimistic scenarios, local read-write is a more efficient neighborhood
+operation. A partial implementation is described, which shows that three
+outcomes characterize operation response: success, failure, and cancel. A
+failure response indicates possible inconsistency for the operation result,
+which is the result of a timeout event at the operation's initiator. The paper
+presents experimental results on operation performance with different timeout
+values and situations of no contention, with some tests also on various
+neighborhood sizes.

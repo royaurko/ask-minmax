@@ -1,0 +1,22 @@
+A new graphical framework, Abridged Petri Nets (APNs) is introduced for
+bottom-up modeling of complex stochastic systems. APNs are similar to
+Stochastic Petri Nets (SPNs) in as much as they both rely on component-based
+representation of system state space, in contrast to Markov chains that
+explicitly model the states of an entire system. In both frameworks, so-called
+tokens (denoted as small circles) represent individual entities comprising the
+system; however, SPN graphs contain two distinct types of nodes (called places
+and transitions) with transitions serving the purpose of routing tokens among
+places. As a result, a pair of place nodes in SPNs can be linked to each other
+only via a transient stop, a transition node. In contrast, APN graphs link
+place nodes directly by arcs (transitions), similar to state space diagrams for
+Markov chains, and separate transition nodes are not needed.
+  Tokens in APN are distinct and have labels that can assume both discrete
+values ("colors") and continuous values ("ages"), both of which can change
+during simulation. Component interactions are modeled in APNs using triggers,
+which are either inhibitors or enablers (the inhibitors' opposites).
+Hierarchical construction of APNs rely on using stacks (layers) of submodels
+with automatically matching color policies. As a result, APNs provide at least
+the same modeling power as SPNs, but, as demonstrated by means of several
+examples, the resulting models are often more compact and transparent,
+therefore facilitating more efficient performance evaluation of complex
+systems.

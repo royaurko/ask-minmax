@@ -1,0 +1,25 @@
+Energy efficiency is an essential requirement for all contemporary computing
+systems. We thus need tools to measure the energy consumption of computing
+systems and to understand how workloads affect it. Significant recent research
+effort has targeted direct power measurements on production computing systems
+using on-board sensors or external instruments. These direct methods have in
+turn guided studies of software techniques to reduce energy consumption via
+workload allocation and scaling. Unfortunately, direct energy measurements are
+hampered by the low power sampling frequency of power sensors. The coarse
+granularity of power sensing limits our understanding of how power is allocated
+in systems and our ability to optimize energy efficiency via workload
+allocation.
+  We present ALEA, a tool to measure power and energy consumption at the
+granularity of basic blocks, using a probabilistic approach. ALEA provides
+fine-grained energy profiling via statistical sampling, which overcomes the
+limitations of power sensing instruments. Compared to state-of-the-art energy
+measurement tools, ALEA provides finer granularity without sacrificing
+accuracy. ALEA achieves low overhead energy measurements with mean error rates
+between 1.4% and 3.5% in 14 sequential and parallel benchmarks tested on both
+Intel and ARM platforms. The sampling method caps execution time overhead at
+approximately 1%. ALEA is thus suitable for online energy monitoring and
+optimization. Finally, ALEA is a user-space tool with a portable,
+machine-independent sampling method. We demonstrate two use cases of ALEA,
+where we reduce the energy consumption of a k-means computational kernel by 37%
+and an ocean modelling code by 33%, compared to high-performance execution
+baselines, by varying the power optimization strategy between basic blocks.

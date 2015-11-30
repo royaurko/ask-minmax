@@ -1,0 +1,18 @@
+Let A be a finite subset of N^n, and K be a compact semialgebraic set in R^n.
+An A-tms is a vector y indexed by elements in A. The A-truncated K-moment
+problem (A-TKMP) studies whether a given A-tms y admits a K-measure or not.
+This paper proposes a numerical algorithm for solving A-TKMPs. It is based on
+finding a flat extension of y by solving a hierarchy of semidefinite
+relaxations {(SDR)_k} for a moment optimization problem, whose objective R is
+generated in a certain randomized way. If y admits no K-measures and R[x]_A is
+K-full, then (SDR)_k is infeasible for all K big enough, which gives a
+certificate for the nonexistence of representing measures. If y admits a
+K-measure, then for almost all generated R, we prove that: i) we can
+asymptotically get a flat extension of y by solving the hierarchy {(SDR)_k\};
+ii) under a general condition that is almost sufficient and necessary, we can
+get a flat extension of y by solving (SDR)_k for some k; this occurred in all
+our numerical experiments; iii) the obtained flat extensions admit a r-atomic
+K-measure with r <= |A|. The decomposition problems for completely positive
+matrices and sums of even powers of real linear forms, and the standard
+truncated K-moment problems, are special cases of A-TKMPs, and hence can be
+solved numerically by this algorithm.

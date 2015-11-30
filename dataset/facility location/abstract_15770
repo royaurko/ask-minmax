@@ -1,0 +1,14 @@
+When do nonparametric Bayesian procedures ``overfit''? To shed light on this
+question, we consider a binary regression problem in detail and establish
+frequentist consistency for a certain class of Bayes procedures based on
+hierarchical priors, called uniform mixture priors. These are defined as
+follows: let $\nu$ be any probability distribution on the nonnegative integers.
+To sample a function $f$ from the prior $\pi^{\nu}$, first sample $m$ from
+$\nu$ and then sample $f$ uniformly from the set of step functions from $[0,1]$
+into $[0,1]$ that have exactly $m$ jumps (i.e., sample all $m$ jump locations
+and $m+1$ function values independently and uniformly). The main result states
+that if a data-stream is generated according to any fixed, measurable
+binary-regression function $f_0\not\equiv1/2$, then frequentist consistency
+obtains: that is, for any $\nu$ with infinite support, the posterior of
+$\pi^{\nu}$ concentrates on any $L^1$ neighborhood of $f_0$. Solution of an
+associated large-deviations problem is central to the consistency proof.

@@ -1,0 +1,15 @@
+Traditional Byzantine consensus does not work in P2P network due to Sybil
+attack while the most prevalent Sybil-proof consensus at present still can't
+resist adversary with dominant compute power. This paper proposed a two-layered
+opinion dynamics model named SkyHash for hash consensus over P2P network. For
+hash consensus, failures are constrained due to the difficulty to create
+collision with big hash size, however, we identified DoS attack and extent our
+model to a DoS-proof one. Simulations show that on the SNAP dataset of the
+Wikipedia who-votes-on-whom network with reasonable latencies, the network will
+reach consensus within 45 seconds, and it can also tolerant DoS attack
+committed by 7% random nodes or 0.9% top influential nodes, where no correct
+nodes decide on different hashes and 4% nodes refuse to decide, at the cost of
+50% reduction of throughput. Comparing to compute power based consensus, our
+approach can resist any faulty or malicious nodes by unfollowing them. To the
+best of our knowledge, it's the first work dedicated to hash consensus on P2P
+network based on opinion dynamics.

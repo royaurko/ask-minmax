@@ -1,0 +1,11 @@
+We address the exact resolution of a MINLP model where resources can be
+activated in order to satisfy a demand (a partitioning constraint) while
+minimizing total cost. Cost functions are convex latency functions plus a fixed
+activation cost. A branch and bound algorithm is devised, featuring three
+important characteristics. First, the lower bound (therefore each subproblem)
+can be computed in O(nlog n). Second, to break symmetries resulting in improved
+efficiency, the branching scheme is n-ary (instead of the "classical" binary).
+Third, a very affective heuristic is used to compute a good upper bound at the
+root node of the enumeration tree. All three features lead to a successful
+comparison against CPLEX MIPQ, which is the fastest among several commercial
+and open-source solvers: computational results showing this fact are provided.

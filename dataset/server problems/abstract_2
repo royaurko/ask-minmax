@@ -1,0 +1,13 @@
+The Work Function Algorithm is the most effective deterministic on-line
+algorithm for the k-server problem. Koutsoupias and Papadimitriou proved WFA is
+(2k-1) competitive. However the best known implementation of WFA requires time
+O(i^2) to process request r_i and this makes WFA impractical for long sequences
+of requests. The O(i^2) time is spent to compute the work function on the whole
+history of past requests. In order to make constant the time to process a
+request, Rudec and Menger proposed to restrict the history to a moving window
+of fixed size. However WFA restricted to a moving window loses its
+competitiveness. Here we give a condition that allows WFA to forget the whole
+previous history and restart from scratch without losing competitiveness.
+Moreover for most of the metric spaces of practical interest (finite or bounded
+spaces) there is a constant bound on the length of the history before the
+condition is verified and this makes O(1) the time to process each request.

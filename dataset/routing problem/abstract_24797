@@ -1,0 +1,11 @@
+We re-investigate the problem of LTL model-checking for finite-state systems.
+Typical solutions, like in Spin, work on the fly, reducing the problem to
+Buechi emptiness. This can be done in linear time, and a variety of algorithms
+with this property exist. Nonetheless, subtle design decisions can make a great
+difference to their actual performance in practice, especially when used
+on-the-fly. We compare a number of algorithms experimentally on a large
+benchmark suite, measure their actual run-time performance, and propose
+improvements. Compared with the algorithm implemented in Spin, our best
+algorithm is faster by about 33 % on average. We therefore recommend that, for
+on-the-fly explicit-state model checking, nested DFS should be replaced by
+better solutions.

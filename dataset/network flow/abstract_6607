@@ -1,0 +1,16 @@
+Many Information Centric Networking (ICN) proposals use a network of caches
+to bring the contents closer to the consumers, reduce the load on producers and
+decrease the unnecessary retransmission for ISPs. Nevertheless, the existing
+cache management scheme for the network of caches obtain poor performance. The
+main reason for performance degradation in a network of caches is the filter
+effect of the replacement policy. A cache serves the requests that generate
+cache-hits and forwards the requests that generate cache-misses. This filtering
+changes the pattern of requests and leads to decreased hit ratios in the
+subsequent caches. In this paper, we propose a coordinated caching scheme to
+solve the filter effect problem by introducing the selection policy. This
+policy manages a cache such that: i) the cache obtains a high hit ratio ii) the
+missed requests from the cache can be used by subsequent caches to obtain a
+high hit ratio. Our coordinated selection scheme achieves an overall hit ratio
+of a network of caches equivalent to that of edge routers with big caches.
+Moreover, our scheme decreases the average number of evictions per cache slot
+by four order of magnitude compared to the LRU universal caching.

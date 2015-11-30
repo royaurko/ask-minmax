@@ -1,0 +1,13 @@
+We study fixed parameter algorithms for three problems: Kemeny rank
+aggregation, feedback arc set tournament, and betweenness tournament. For
+Kemeny rank aggregation we give an algorithm with runtime O*(2^O(sqrt{OPT})),
+where n is the number of candidates, OPT is the cost of the optimal ranking,
+and O* hides polynomial factors. This is a dramatic improvement on the
+previously best known runtime of O*(2^O(OPT)). For feedback arc set tournament
+we give an algorithm with runtime O*(2^O(sqrt{OPT})), an improvement on the
+previously best known O*(OPT^O(sqrt{OPT})) (Alon, Lokshtanov and Saurabh 2009).
+For betweenness tournament we give an algorithm with runtime
+O*(2^O(sqrt{OPT/n})), where n is the number of vertices and OPT is the optimal
+cost. This improves on the previously known O*(OPT^O(OPT^{1/3}))$ (Saurabh
+2009), especially when OPT is small. Unusually we can solve instances with OPT
+as large as n (log n)^2 in polynomial time!

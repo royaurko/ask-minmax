@@ -1,0 +1,20 @@
+Let $P_1,...,P_{d+1} \subset \mathbb{R}^d$ be $d$-dimensional point sets such
+that the convex hull of each $P_i$ contains the origin. We call the sets $P_i$
+color classes, and we think of the points in $P_i$ as having color $i$. A
+colorful choice is a set with at most one point of each color. The colorful
+Caratheodory theorem guarantees the existence of a colorful choice whose convex
+hull contains the origin. So far, the computational complexity of finding such
+a colorful choice is unknown.
+  We approach this problem from two directions. First, we consider
+approximation algorithms: an $m$-colorful choice is a set that contains at most
+$m$ points from each color class. We show that for any constant $\varepsilon >
+0$, an $\lceil \varepsilon(d+1)\rceil$-colorful choice containing the origin in
+its convex hull can be found in polynomial time. This notion of approximation
+has not been studied before, and it is motivated through the applications of
+the colorful Caratheodory theorem in the literature. In the second part, we
+present a natural generalization of the colorful Caratheodory problem: in the
+Nearest Colorful Polytope problem (NCP), we are given sets $P_1,...,P_n \subset
+\mathbb{R}^d$ that do not necessarily contain the origin in their convex hulls.
+The goal is to find a colorful choice whose convex hull minimizes the distance
+to the origin. We show that computing local optima for the NCP problem is
+PLS-complete, while computing a global optimum is NP-hard.

@@ -1,0 +1,21 @@
+This paper presents greedy gossip with eavesdropping (GGE), a novel
+randomized gossip algorithm for distributed computation of the average
+consensus problem. In gossip algorithms, nodes in the network randomly
+communicate with their neighbors and exchange information iteratively. The
+algorithms are simple and decentralized, making them attractive for wireless
+network applications. In general, gossip algorithms are robust to unreliable
+wireless conditions and time varying network topologies. In this paper we
+introduce GGE and demonstrate that greedy updates lead to rapid convergence. We
+do not require nodes to have any location information. Instead, greedy updates
+are made possible by exploiting the broadcast nature of wireless
+communications. During the operation of GGE, when a node decides to gossip,
+instead of choosing one of its neighbors at random, it makes a greedy
+selection, choosing the node which has the value most different from its own.
+In order to make this selection, nodes need to know their neighbors' values.
+Therefore, we assume that all transmissions are wireless broadcasts and nodes
+keep track of their neighbors' values by eavesdropping on their communications.
+We show that the convergence of GGE is guaranteed for connected network
+topologies. We also study the rates of convergence and illustrate, through
+theoretical bounds and numerical simulations, that GGE consistently outperforms
+randomized gossip and performs comparably to geographic gossip on
+moderate-sized random geometric graph topologies.

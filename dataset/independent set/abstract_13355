@@ -1,0 +1,20 @@
+We construct pseudorandom generators that fool functions of halfspaces
+(threshold functions) under a very broad class of product distributions. This
+class includes not only familiar cases such as the uniform distribution on the
+discrete cube, the uniform distribution on the solid cube, and the multivariate
+Gaussian distribution, but also includes any product of discrete distributions
+with probabilities bounded away from 0.
+  Our first main result shows that a recent pseudorandom generator construction
+of Meka and Zuckerman [MZ09], when suitably modifed, can fool arbitrary
+functions of d halfspaces under product distributions where each coordinate has
+bounded fourth moment. To eps-fool any size-s, depth-d decision tree of
+halfspaces, our pseudorandom generator uses seed length O((d log(ds/eps)+log n)
+log(ds/eps)). For monotone functions of d halfspaces, the seed length can be
+improved to O((d log(d/eps)+log n) log(d/eps)). We get better bounds for larger
+eps; for example, to 1/polylog(n)-fool all monotone functions of (log n)= log
+log n halfspaces, our generator requires a seed of length just O(log n). Our
+second main result generalizes the work of Diakonikolas et al. [DGJ+09] to show
+that bounded independence suffices to fool functions of halfspaces under
+product distributions. Assuming each coordinate satisfies a certain stronger
+moment condition, we show that any function computable by a size-s, depth-d
+decision tree of halfspaces is eps-fooled by O(d^4s^2/eps^2)-wise independence.

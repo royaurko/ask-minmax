@@ -1,0 +1,17 @@
+The increasing adoption of Cloud-based data processing and storage poses a
+number of privacy issues. Users wish to preserve full control over their
+sensitive data and cannot accept it to be fully accessible to an external
+storage provider. Previous research in this area was mostly addressed at
+techniques to protect data stored on untrusted database servers; however, I
+argue that the Cloud architecture presents a number of specific problems and
+issues. This dissertation contains a detailed analysis of open issues. To
+handle them, I present a novel approach where confidential data is stored in a
+highly distributed partitioned database, partly located on the Cloud and partly
+on the clients. In my approach, data can be either private or shared; the
+latter is shared in a secure manner by means of simple grant-and-revoke
+permissions. I have developed a proof-of-concept implementation using an
+in-memory RDBMS with row-level data encryption in order to achieve fine-grained
+data access control. This type of approach is rarely adopted in conventional
+outsourced RDBMSs because it requires several complex steps. Benchmarks of my
+proofof-concept implementation show that my approach overcomes most of the
+problems.

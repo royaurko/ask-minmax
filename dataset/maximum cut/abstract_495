@@ -1,0 +1,14 @@
+This paper describes a graph clustering algorithm that aims to minimize the
+normalized cut criterion and has a model order selection procedure. The
+performance of the proposed algorithm is comparable to spectral approaches in
+terms of minimizing normalized cut. However, unlike spectral approaches, the
+proposed algorithm scales to graphs with millions of nodes and edges. The
+algorithm consists of three components that are processed sequentially: a
+greedy agglomerative hierarchical clustering procedure, model order selection,
+and a local refinement.
+  For a graph of n nodes and O(n) edges, the computational complexity of the
+algorithm is O(n log^2 n), a major improvement over the O(n^3) complexity of
+spectral methods. Experiments are performed on real and synthetic networks to
+demonstrate the scalability of the proposed approach, the effectiveness of the
+model order selection procedure, and the performance of the proposed algorithm
+in terms of minimizing the normalized cut metric.

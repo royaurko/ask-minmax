@@ -1,0 +1,14 @@
+The problem of solving a parity game is at the core of many problems in model
+checking, satisfiability checking and program synthesis. Some of the best
+algorithms for solving parity game are strategy improvement algorithms. These
+are global in nature since they require the entire parity game to be present at
+the beginning. This is a distinct disadvantage because in many applications one
+only needs to know which winning region a particular node belongs to, and a
+witnessing winning strategy may cover only a fractional part of the entire game
+graph.
+  We present a local strategy improvement algorithm which explores the game
+graph on-the-fly whilst performing the improvement steps. We also compare it
+empirically with existing global strategy improvement algorithms and the
+currently only other local algorithm for solving parity games. It turns out
+that local strategy improvement can outperform these others by several orders
+of magnitude.

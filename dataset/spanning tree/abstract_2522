@@ -1,0 +1,20 @@
+Tree Regular Model Checking (TRMC) is the name of a family of techniques for
+analyzing infinite-state systems in which states are represented by terms, and
+sets of states by Tree Automata (TA). The central problem in TRMC is to decide
+whether a set of bad states is reachable. The problem of computing a TA
+representing (an over- approximation of) the set of reachable states is
+undecidable, but efficient solutions based on completion or iteration of tree
+transducers exist. Unfortunately, the TRMC framework is unable to efficiently
+capture both the complex structure of a system and of some of its features. As
+an example, for JAVA programs, the structure of a term is mainly exploited to
+capture the structure of a state of the system. On the counter part, integers
+of the java programs have to be encoded with Peano numbers, which means that
+any algebraic operation is potentially represented by thousands of applications
+of rewriting rules. In this paper, we propose Lattice Tree Automata (LTAs), an
+extended version of tree automata whose leaves are equipped with lattices. LTAs
+allow us to represent possibly infinite sets of interpreted terms. Such terms
+are capable to represent complex domains and related operations in an efficient
+manner. We also extend classical Boolean operations to LTAs. Finally, as a
+major contribution, we introduce a new completion-based algorithm for computing
+the possibly infinite set of reachable interpreted terms in a finite amount of
+time.

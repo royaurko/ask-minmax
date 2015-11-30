@@ -1,0 +1,10 @@
+We consider the problem of reliably finding filaments in point clouds.
+Realistic data sets often have numerous filaments of various sizes and shapes.
+Statistical techniques exist for finding one (or a few) filaments but these
+methods do not handle noisy data sets with many filaments. Other methods can be
+found in the astronomy literature but they do not have rigorous statistical
+guarantees. We propose the following method. Starting at each data point we
+construct the steepest ascent path along a kernel density estimator. We locate
+filaments by finding regions where these paths are highly concentrated.
+Formally, we define the density of these paths and we construct a consistent
+estimator of this path density.

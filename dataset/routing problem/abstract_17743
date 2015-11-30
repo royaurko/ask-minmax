@@ -1,0 +1,15 @@
+We have introduced two crossover operators, MMX-BLXexploit and
+MMX-BLXexplore, for simultaneously solving multiple feature/subset selection
+problems where the features may have numeric attributes and the subset sizes
+are not predefined. These operators differ on the level of exploration and
+exploitation they perform; one is designed to produce convergence controlled
+mutation and the other exhibits a quasi-constant mutation rate. We illustrate
+the characteristic of these operators by evolving pattern detectors to
+distinguish alcoholics from controls using their visually evoked response
+potentials (VERPs). This task encapsulates two groups of subset selection
+problems; choosing a subset of EEG leads along with the lead-weights (features
+with attributes) and the other that defines the temporal pattern that
+characterizes the alcoholic VERPs. We observed better generalization
+performance from MMX-BLXexplore. Perhaps, MMX-BLXexploit was handicapped by not
+having a restart mechanism. These operators are novel and appears to hold
+promise for solving simultaneous feature selection problems.

@@ -1,0 +1,12 @@
+Given a directed acyclic graph with labeled vertices, we consider the problem
+of finding the most common label sequences ("traces") among all paths in the
+graph (of some maximum length m). Since the number of paths can be huge, we
+propose novel algorithms whose time complexity depends only on the size of the
+graph, and on the relative frequency epsilon of the most frequent traces. In
+addition, we apply techniques from streaming algorithms to achieve space usage
+that depends only on epsilon, and not on the number of distinct traces. The
+abstract problem considered models a variety of tasks concerning finding
+frequent patterns in event sequences. Our motivation comes from working with a
+data set of 2 million RFID readings from baggage trolleys at Copenhagen
+Airport. The question of finding frequent passenger movement patterns is mapped
+to the above problem. We report on experimental findings for this data set.

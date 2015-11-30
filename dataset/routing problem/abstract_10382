@@ -1,0 +1,24 @@
+An instance of Max CSP is a finite collection of constraints on a set of
+variables, and the goal is to assign values to the variables that maximises the
+number of satisfied constraints. Max CSP captures many well-known problems
+(such as Max k-SAT and Max Cut) and is consequently NP-hard. Thus, it is
+natural to study how restrictions on the allowed constraint types (or
+constraint languages) affect the complexity and approximability of Max CSP. The
+PCP theorem is equivalent to the existence of a constraint language for which
+Max CSP has a hard gap at location 1, i.e. it is NP-hard to distinguish between
+satisfiable instances and instances where at most some constant fraction of the
+constraints are satisfiable. All constraint languages, for which the CSP
+problem (i.e., the problem of deciding whether all constraints can be
+satisfied) is currently known to be NP-hard, have a certain algebraic property.
+We prove that any constraint language with this algebraic property makes Max
+CSP have a hard gap at location 1 which, in particular, implies that such
+problems cannot have a PTAS unless P = NP. We then apply this result to Max CSP
+restricted to a single constraint type; this class of problems contains, for
+instance, Max Cut and Max DiCut. Assuming P $\neq$ NP, we show that such
+problems do not admit PTAS except in some trivial cases. Our results hold even
+if the number of occurrences of each variable is bounded by a constant. We use
+these results to partially answer open questions and strengthen results by
+Engebretsen et al. [Theor. Comput. Sci., 312 (2004), pp. 17--45], Feder et al.
+[Discrete Math., 307 (2007), pp. 386--392], Krokhin and Larose [Proc.
+Principles and Practice of Constraint Programming (2005), pp. 388--402], and
+Jonsson and Krokhin [J. Comput. System Sci., 73 (2007), pp. 691--702]

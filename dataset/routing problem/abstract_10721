@@ -1,0 +1,24 @@
+This paper considers fundamental limits for solving sparse inverse problems
+in the presence of Poisson noise with physical constraints. Such problems arise
+in a variety of applications, including photon-limited imaging systems based on
+compressed sensing. Most prior theoretical results in compressed sensing and
+related inverse problems apply to idealized settings where the noise is i.i.d.,
+and do not account for signal-dependent noise and physical sensing constraints.
+Prior results on Poisson compressed sensing with signal-dependent noise and
+physical constraints provided upper bounds on mean squared error performance
+for a specific class of estimators. However, it was unknown whether those
+bounds were tight or if other estimators could achieve significantly better
+performance. This work provides minimax lower bounds on mean-squared error for
+sparse Poisson inverse problems under physical constraints. Our lower bounds
+are complemented by minimax upper bounds. Our upper and lower bounds reveal
+that due to the interplay between the Poisson noise model, the sparsity
+constraint and the physical constraints: (i) the mean-squared error does not
+depend on the sample size $n$ other than to ensure the sensing matrix satisfies
+RIP-like conditions and the intensity $T$ of the input signal plays a critical
+role; and (ii) the mean-squared error has two distinct regimes, a low-intensity
+and a high-intensity regime and the transition point from the low-intensity to
+high-intensity regime depends on the input signal $f^*$. In the low-intensity
+regime the mean-squared error is independent of $T$ while in the high-intensity
+regime, the mean-squared error scales as $\frac{s \log p}{T}$, where $s$ is the
+sparsity level, $p$ is the number of pixels or parameters and $T$ is the signal
+intensity.

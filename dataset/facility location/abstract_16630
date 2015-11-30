@@ -1,0 +1,17 @@
+Half-space depth (also called Tukey depth or location depth) is one of the
+most commonly studied data depth measures because it possesses many desirable
+properties for data depth functions. The data depth contours bound regions of
+increasing depth. For the sample case, there are two competing definitions of
+contours: the rank-based contours and the cover-based contours.
+  In this paper, we present three dynamic algorithms for maintaining the
+half-space depth of points and contours: The first maintains the half-space
+depth of a single point in a data set in $O(\log n)$ time per update
+(insertion/deletion) and overall linear space. By maintaining such a data
+structure for each data point, we present an algorithm for dynamically
+maintaining the rank-based contours in $O(n\cdot\log n)$ time per update and
+overall quadratic space. The third dynamic algorithm maintains the cover-based
+contours in $O(n\cdot \log^2 n)$ time per update and overall quadratic space.
+  We also augment our first algorithm to maintain the local cover-based
+contours at data points while maintaining the same complexities. A corollary of
+this discussion is a strong structural result of independent interest
+describing the behavior of dynamic cover-based contours near data points.

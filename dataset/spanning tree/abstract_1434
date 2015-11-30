@@ -1,0 +1,19 @@
+Bandit based methods for tree search have recently gained popularity when
+applied to huge trees, e.g. in the game of go [6]. Their efficient exploration
+of the tree enables to re- turn rapidly a good value, and improve preci- sion
+if more time is provided. The UCT algo- rithm [8], a tree search method based
+on Up- per Confidence Bounds (UCB) [2], is believed to adapt locally to the
+effective smoothness of the tree. However, we show that UCT is
+"over-optimistic" in some sense, leading to a worst-case regret that may be
+very poor. We propose alternative bandit algorithms for tree search. First, a
+modification of UCT us- ing a confidence sequence that scales expo- nentially
+in the horizon depth is analyzed. We then consider Flat-UCB performed on the
+leaves and provide a finite regret bound with high probability. Then, we
+introduce and analyze a Bandit Algorithm for Smooth Trees (BAST) which takes
+into account ac- tual smoothness of the rewards for perform- ing efficient
+"cuts" of sub-optimal branches with high confidence. Finally, we present an
+incremental tree expansion which applies when the full tree is too big
+(possibly in- finite) to be entirely represented and show that with high
+probability, only the optimal branches are indefinitely developed. We illus-
+trate these methods on a global optimization problem of a continuous function,
+given noisy values.

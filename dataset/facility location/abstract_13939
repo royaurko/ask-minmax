@@ -1,0 +1,12 @@
+This paper presents a computationally efficient implementation of a Hamming
+code decoder on a graphics processing unit (GPU) to support real-time
+software-defined radio (SDR), which is a software alternative for realizing
+wireless communication. The Hamming code algorithm is challenging to
+parallelize effectively on a GPU because it works on sparsely located data
+items with several conditional statements, leading to non-coalesced, long
+latency, global memory access, and huge thread divergence. To address these
+issues, we propose an optimized implementation of the Hamming code on the GPU
+to exploit the higher parallelism inherent in the algorithm. Experimental
+results using a compute unified device architecture (CUDA)-enabled NVIDIA
+GeForce GTX 560, including 335 cores, revealed that the proposed approach
+achieved a 99x speedup versus the equivalent CPU-based implementation.

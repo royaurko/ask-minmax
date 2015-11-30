@@ -1,0 +1,21 @@
+We consider the problem of inferring the opinions of a social network through
+strategically sampling a minimum subset of nodes by exploiting correlations in
+node opinions. We first introduce the concept of information dominating set
+(IDS). A subset of nodes in a given network is an IDS if knowing the opinions
+of nodes in this subset is sufficient to infer the opinion of the entire
+network. We focus on two fundamental algorithmic problems: (i) given a subset
+of the network, how to determine whether it is an IDS; (ii) how to construct a
+minimum IDS. Assuming binary opinions and the local majority rule for opinion
+correlation, we show that the first problem is co-NP-complete and the second
+problem is NP-hard in general networks. We then focus on networks with special
+structures, in particular, acyclic networks. We show that in acyclic networks,
+both problems admit linear-complexity solutions by establishing a connection
+between the IDS problems and the vertex cover problem. Our technique for
+establishing the hardness of the IDS problems is based on a novel graph
+transformation that transforms the IDS problems in a general network to that in
+an odd-degree network. This graph transformation technique not only gives an
+approximation algorithm to the IDS problems, but also provides a useful tool
+for general studies related to the local majority rule. Besides opinion
+sampling for applications such as political polling and market survey, the
+concept of IDS and the results obtained in this paper also find applications in
+data compression and identifying critical nodes in information networks.

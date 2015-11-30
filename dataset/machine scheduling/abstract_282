@@ -1,0 +1,22 @@
+In this paper, we propose a systematic solution to the problem of scheduling
+delay-sensitive media data for transmission over time-varying wireless
+channels. We first formulate the dynamic scheduling problem as a Markov
+decision process (MDP) that explicitly considers the users' heterogeneous
+multimedia data characteristics (e.g. delay deadlines, distortion impacts and
+dependencies etc.) and time-varying channel conditions, which are not
+simultaneously considered in state-of-the-art packet scheduling algorithms.
+This formulation allows us to perform foresighted decisions to schedule
+multiple data units for transmission at each time in order to optimize the
+long-term utilities of the multimedia applications. The heterogeneity of the
+media data enables us to express the transmission priorities between the
+different data units as a priority graph, which is a directed acyclic graph
+(DAG). This priority graph provides us with an elegant structure to decompose
+the multi-data unit foresighted decision at each time into multiple single-data
+unit foresighted decisions which can be performed sequentially, from the high
+priority data units to the low priority data units, thereby significantly
+reducing the computation complexity. When the statistical knowledge of the
+multimedia data characteristics and channel conditions is unknown a priori, we
+develop a low-complexity online learning algorithm to update the value
+functions which capture the impact of the current decision on the future
+utility. The simulation results show that the proposed solution significantly
+outperforms existing state-of-the-art scheduling solutions.

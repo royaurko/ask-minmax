@@ -1,0 +1,16 @@
+We describe a clustering method for labeled link network (semantic graph)
+that can be used to group important nodes (highly connected nodes) with their
+relevant link's labels by using PARAFAC tensor decomposition. In this kind of
+network, the adjacency matrix can not be used to fully describe all information
+about the network structure. We have to expand the matrix into 3-way adjacency
+tensor, so that not only the information about to which nodes a node connects
+to but by which link's labels is also included. And by applying PARAFAC
+decomposition on this tensor, we get two lists, nodes and link's labels with
+scores attached to each node and labels, for each decomposition group. So
+clustering process to get the important nodes along with their relevant labels
+can be done simply by sorting the lists in decreasing order. To test the
+method, we construct labeled link network by using blog's dataset, where the
+blogs are the nodes and labeled links are the shared words among them. The
+similarity measures between the results and standard measures look promising,
+especially for two most important tasks, finding the most relevant words to
+blogs query and finding the most similar blogs to blogs query, about 0.87.

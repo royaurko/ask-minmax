@@ -1,0 +1,25 @@
+This paper addresses the model-free nonlinear optimal problem with
+generalized cost functional, and a data-based reinforcement learning technique
+is developed. It is known that the nonlinear optimal control problem relies on
+the solution of the Hamilton-Jacobi-Bellman (HJB) equation, which is a
+nonlinear partial differential equation that is generally impossible to be
+solved analytically. Even worse, most of practical systems are too complicated
+to establish their accurate mathematical model. To overcome these difficulties,
+we propose a data-based approximate policy iteration (API) method by using real
+system data rather than system model. Firstly, a model-free policy iteration
+algorithm is derived for constrained optimal control problem and its
+convergence is proved, which can learn the solution of HJB equation and optimal
+control policy without requiring any knowledge of system mathematical model.
+The implementation of the algorithm is based on the thought of actor-critic
+structure, where actor and critic neural networks (NNs) are employed to
+approximate the control policy and cost function, respectively. To update the
+weights of actor and critic NNs, a least-square approach is developed based on
+the method of weighted residuals. The whole data-based API method includes two
+parts, where the first part is implemented online to collect real system
+information, and the second part is conducting offline policy iteration to
+learn the solution of HJB equation and the control policy. Then, the data-based
+API algorithm is simplified for solving unconstrained optimal control problem
+of nonlinear and linear systems. Finally, we test the efficiency of the
+data-based API control design method on a simple nonlinear system, and further
+apply it to a rotational/translational actuator system. The simulation results
+demonstrate the effectiveness of the proposed method.

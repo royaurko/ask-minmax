@@ -1,0 +1,10 @@
+We describe a simple neural language model that relies only on
+character-level inputs. Predictions are still made at the word-level. Our model
+employs a convolutional neural network (CNN) over characters, whose output is
+given to a long short-term memory (LSTM) recurrent neural network language
+model (RNN-LM). On the English Penn Treebank the model is on par with the
+existing state-of-the-art despite having 60% fewer parameters. On languages
+with rich morphology (Czech, German, French, Spanish, Russian), the model
+consistently outperforms a Kneser-Ney baseline (by 30-35%) and a word-level
+LSTM baseline (by 15-25%), again with far fewer parameters. Our results suggest
+that on many languages, character inputs are sufficient for language modeling.

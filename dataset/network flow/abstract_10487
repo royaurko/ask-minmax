@@ -1,0 +1,24 @@
+Network operators are reluctant to share traffic data due to security and
+privacy concerns. Consequently, there is a lack of publicly available traces
+for validating and generalizing the latest results in network and security
+research. Anonymization is a possible solution in this context; however, it is
+unclear how the sanitization of data preserves characteristics important for
+traffic analysis. In addition, the privacy-preserving property of
+state-of-the-art IP address anonymization techniques has come into question by
+recent attacks that successfully identified a large number of hosts in
+anonymized traces.
+  In this paper, we examine the tradeoff between data utility for anomaly
+detection and the risk of host identification for IP address truncation.
+Specifically, we analyze three weeks of unsampled and non-anonymized network
+traces from a medium-sized backbone network to assess data utility. The risk of
+de-anonymizing individual IP addresses is formally evaluated, using a metric
+based on conditional entropy.
+  Our results indicate that truncation effectively prevents host identification
+but degrades the utility of data for anomaly detection. However, the degree of
+degradation depends on the metric used and whether network-internal or external
+addresses are considered. Entropy metrics are more resistant to truncation than
+unique counts and the detection quality of anomalies degrades much faster in
+internal addresses than in external addresses. In particular, the usefulness of
+internal address counts is lost even for truncation of only 4 bits whereas
+utility of external address entropy is virtually unchanged even for truncation
+of 20 bits.

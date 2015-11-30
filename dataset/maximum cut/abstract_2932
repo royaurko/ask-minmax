@@ -1,0 +1,24 @@
+We present a general method for converting any family of unsatisfiable CNF
+formulas that is hard for one of the simplest proof systems, tree resolution,
+into formulas that require large rank in any proof system that manipulates
+polynomials or polynomial threshold functions of degree at most k (known as
+Th(k) proofs). Such systems include Lovasz-Schrijver and Cutting Planes proof
+systems as well as their high degree analogues.
+  These are based on analyzing two new proof systems, denoted by T^cc(k) and
+R^cc(k). The proof lines of T^cc(k) are arbitrary Boolean functions, each of
+which can be evaluated by an efficient k-party randomized communication
+protocol. They include Th{k-1} proofs as a special case. R^cc(k) proofs are
+stronger and only require that each inference be locally checkable by an
+efficient k-party randomized communication protocol.
+  Our main results are the following:
+  (1) When k is O(loglogn), for any unsatisfiable CNF formula F requiring
+resolution rank r, there is a related CNF formula G=Lift_k(F) requiring
+refutation rank r^Omega(1/k) log^O(1) n in all R^cc(k) systems.
+  (2) There are strict hierarchies for T^cc(k) and R^cc(k) systems with respect
+to k when k is O(loglogn in that there are unsatisfiable CNF formulas requiring
+large rank R^cc(k) refutations but having log^O(1) n rank Th(k) refutations.
+  (3) When k is O(loglogn) there are 2^(n^Omega(1/k)) lower bounds on the size
+of tree-like T^cc(k) refutations for large classes of lifted CNF formulas.
+  (4) A general method for producing integrality gaps for low rank R^cc(2)
+inference (and hence Cutting Planes and Th(1) inference) based on related gaps
+for low rank resolution. These gaps are optimal for MAX-2t-SAT.

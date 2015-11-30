@@ -1,0 +1,16 @@
+We consider greedy contention managers for transactional memory for M x N
+execution windows of transactions with M threads and N transactions per thread.
+Assuming that each transaction conflicts with at most C other transactions
+inside the window, a trivial greedy contention manager can schedule them within
+CN time. In this paper, we show that there are much better schedules. We
+present and analyze two new randomized greedy contention management algorithms.
+The first algorithm Offline-Greedy produces a schedule of length O(C + N
+log(MN)) with high probability, and gives competitive ratio O(log(MN)) for C <=
+N log(MN). The offline algorithm depends on knowing the conflict graph. The
+second algorithm Online-Greedy produces a schedule of length O(C log(MN) + N
+log^2(MN)) with high probability which is only a O(log(NM)) factor worse, but
+does not require knowledge of the conflict graph. We also give an adaptive
+version which achieves similar worst-case performance and C is determined on
+the fly under execution. Our algorithms provide new tradeoffs for greedy
+transaction scheduling that parameterize window sizes and transaction conflicts
+within the window.

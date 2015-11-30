@@ -1,0 +1,20 @@
+Infinite loops and redundant computations are long recognized open problems
+in Prolog. Two ways have been explored to resolve these problems: loop checking
+and tabling. Loop checking can cut infinite loops, but it cannot be both sound
+and complete even for function-free logic programs. Tabling seems to be an
+effective way to resolve infinite loops and redundant computations. However,
+existing tabulated resolutions, such as OLDT-resolution, SLG- resolution, and
+Tabulated SLS-resolution, are non-linear because they rely on the
+solution-lookup mode in formulating tabling. The principal disadvantage of
+non-linear resolutions is that they cannot be implemented using a simple
+stack-based memory structure like that in Prolog. Moreover, some strictly
+sequential operators such as cuts may not be handled as easily as in Prolog.
+  In this paper, we propose a hybrid method to resolve infinite loops and
+redundant computations. We combine the ideas of loop checking and tabling to
+establish a linear tabulated resolution called TP-resolution. TP-resolution has
+two distinctive features: (1) It makes linear tabulated derivations in the same
+way as Prolog except that infinite loops are broken and redundant computations
+are reduced. It handles cuts as effectively as Prolog. (2) It is sound and
+complete for positive logic programs with the bounded-term-size property. The
+underlying algorithm can be implemented by an extension to any existing Prolog
+abstract machines such as WAM or ATOAM.

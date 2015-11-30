@@ -1,0 +1,15 @@
+We consider the problem of estimating the graph structure associated with a
+discrete Markov random field. We describe a method based on
+$\ell_1$-regularized logistic regression, in which the neighborhood of any
+given node is estimated by performing logistic regression subject to an
+$\ell_1$-constraint. Our framework applies to the high-dimensional setting, in
+which both the number of nodes $p$ and maximum neighborhood sizes $d$ are
+allowed to grow as a function of the number of observations $n$. Our main
+results provide sufficient conditions on the triple $(n, p, d)$ for the method
+to succeed in consistently estimating the neighborhood of every node in the
+graph simultaneously. Under certain assumptions on the population Fisher
+information matrix, we prove that consistent neighborhood selection can be
+obtained for sample sizes $n = \Omega(d^3 \log p)$, with the error decaying as
+$\order(\exp(-C n/d^3))$ for some constant $C$. If these same assumptions are
+imposed directly on the sample matrices, we show that $n = \Omega(d^2 \log p)$
+samples are sufficient.

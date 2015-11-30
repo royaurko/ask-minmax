@@ -1,0 +1,10 @@
+Given n elements with nonnegative integer weights w1,..., wn and an integer
+capacity C, we consider the counting version of the classic knapsack problem:
+find the number of distinct subsets whose weights add up to at most the given
+capacity. We give a deterministic algorithm that estimates the number of
+solutions to within relative error 1+-eps in time polynomial in n and 1/eps
+(fully polynomial approximation scheme). More precisely, our algorithm takes
+time O(n^3 (1/eps) log (n/eps)). Our algorithm is based on dynamic programming.
+Previously, randomized polynomial time approximation schemes were known first
+by Morris and Sinclair via Markov chain Monte Carlo techniques, and
+subsequently by Dyer via dynamic programming and rejection sampling.

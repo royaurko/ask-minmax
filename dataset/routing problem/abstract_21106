@@ -1,0 +1,25 @@
+We consider the problem of monitoring an art gallery modeled as a polygon,
+the edges of which are arcs of curves, with edge or mobile guards. Our focus is
+on piecewise-convex polygons, i.e., polygons that are locally convex, except
+possibly at the vertices, and their edges are convex arcs. We transform the
+problem of monitoring a piecewise-convex polygon to the problem of 2-dominating
+a properly defined triangulation graph with edges or diagonals, where
+2-dominance requires that every triangle in the triangulation graph has at
+least two of its vertices in its 2-dominating set. We show that
+$\lfloor\frac{n+1}{3}\rfloor$ diagonal guards or $\lfloor\frac{2n+1}{5}\rfloor$
+edge guards are always sufficient and sometimes necessary, in order to
+2-dominate a triangulation graph. Furthermore, we show how to compute: a
+diagonal 2-dominating set of size $\lfloor\frac{n+1}{3}\rfloor$ in linear time,
+an edge 2-dominating set of size $\lfloor\frac{2n+1}{5}\rfloor$ in $O(n^2)$
+time, and an edge 2-dominating set of size $\lfloor\frac{3n}{7}\rfloor$ in O(n)
+time. Based on the above-mentioned results, we prove that, for piecewise-convex
+polygons, we can compute: a mobile guard set of size
+$\lfloor\frac{n+1}{3}\rfloor$ in $O(n\log{}n)$ time, an edge guard set of size
+$\lfloor\frac{2n+1}{5}\rfloor$ in $O(n^2)$ time, and an edge guard set of size
+$\lfloor\frac{3n}{7}\rfloor$ in $O(n\log{}n)$ time. Finally, we show that
+$\lfloor\frac{n}{3}\rfloor$ mobile or $\lceil\frac{n}{3}\rceil$ edge guards are
+sometimes necessary. When restricting our attention to monotone
+piecewise-convex polygons, the bounds mentioned above drop:
+$\lceil\frac{n+1}{4}\rceil$ edge or mobile guards are always sufficient and
+sometimes necessary; such an edge or mobile guard set, of size at most
+$\lceil\frac{n+1}{4}\rceil$, can be computed in O(n) time.

@@ -1,0 +1,14 @@
+Exploiting full computational power of current more and more hierarchical
+multiprocessor machines requires a very careful distribution of threads and
+data among the underlying non-uniform architecture. Unfortunately, most
+operating systems only provide a poor scheduling API that does not allow
+applications to transmit valuable scheduling hints to the system. In a previous
+paper, we showed that using a bubble-based thread scheduler can significantly
+improve applications' performance in a portable way. However, since
+multithreaded applications have various scheduling requirements, there is no
+universal scheduler that could meet all these needs. In this paper, we present
+a framework that allows scheduling experts to implement and experiment with
+customized thread schedulers. It provides a powerful API for dynamically
+distributing bubbles among the machine in a high-level, portable, and efficient
+way. Several examples show how experts can then develop, debug and tune their
+own portable bubble schedulers.

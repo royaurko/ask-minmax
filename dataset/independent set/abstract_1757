@@ -1,0 +1,13 @@
+An analysis of the relative motion and point feature model configurations
+leading to solution degeneracy is presented, for the case of a Simultaneous
+Localization and Mapping system using multicamera clusters with non-overlapping
+fields-of-view. The SLAM optimization system seeks to minimize image space
+reprojection error and is formulated for a cluster containing any number of
+component cameras, observing any number of point features over two keyframes.
+The measurement Jacobian is transformed to expose a reduced-dimension
+representation such that the degeneracy of the system can be determined by the
+rank of a dense submatrix. A set of relative motions sufficient for degeneracy
+are identified for certain cluster configurations, independent of target model
+geometry. Furthermore, it is shown that increasing the number of cameras within
+the cluster and observing features across different cameras over the two
+keyframes reduces the size of the degenerate motion sets significantly.

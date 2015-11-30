@@ -1,0 +1,14 @@
+A main problem of "Follow the Perturbed Leader" strategies for online
+decision problems is that regret bounds are typically proven against oblivious
+adversary. In partial observation cases, it was not clear how to obtain
+performance guarantees against adaptive adversary, without worsening the
+bounds. We propose a conceptually simple argument to resolve this problem.
+Using this, a regret bound of O(t^(2/3)) for FPL in the adversarial multi-armed
+bandit problem is shown. This bound holds for the common FPL variant using only
+the observations from designated exploration rounds. Using all observations
+allows for the stronger bound of O(t^(1/2)), matching the best bound known so
+far (and essentially the known lower bound) for adversarial bandits.
+Surprisingly, this variant does not even need explicit exploration, it is
+self-stabilizing. However the sampling probabilities have to be either
+externally provided or approximated to sufficient accuracy, using O(t^2 log t)
+samples in each step.

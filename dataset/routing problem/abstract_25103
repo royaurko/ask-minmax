@@ -1,0 +1,15 @@
+We study the problem of efficiently clustering protein sequences in a limited
+information setting. We assume that we do not know the distances between the
+sequences in advance, and must query them during the execution of the
+algorithm. Our goal is to find an accurate clustering using few queries. We
+model the problem as a point set $S$ with an unknown metric $d$ on $S$, and
+assume that we have access to \emph{one versus all} distance queries that given
+a point $s \in S$ return the distances between $s$ and all other points. Our
+one versus all query represents an efficient sequence database search program
+such as BLAST, which compares an input sequence to an entire data set. Given a
+natural assumption about the approximation stability of the \emph{min-sum}
+objective function for clustering, we design a provably accurate clustering
+algorithm that uses few one versus all queries. In our empirical study we show
+that our method compares favorably to well-established clustering algorithms
+when we compare computationally derived clusterings to gold-standard manual
+classifications.

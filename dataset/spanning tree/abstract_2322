@@ -1,0 +1,10 @@
+The suffix tree is a very important data structure in string processing, but
+it suffers from a huge space consumption. In large-scale applications,
+compressed suffix trees (CSTs) are therefore used instead. A CST consists of
+three (compressed) components: the suffix array, the LCP-array, and data
+structures for simulating navigational operations on the suffix tree. The
+LCP-array stores the lengths of the longest common prefixes of
+lexicographically adjacent suffixes, and it can be computed in linear time. In
+this paper, we present new LCP-array construction algorithms that are fast and
+very space efficient. In practice, our algorithms outperform the currently best
+algorithms.

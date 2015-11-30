@@ -1,0 +1,23 @@
+We have developed a three-dimensional radiative transfer method designed
+specifically for use with parallel adaptive mesh refinement hydrodynamics
+codes. This new algorithm, which we call hybrid characteristics, introduces a
+novel form of ray tracing that can neither be classified as long, nor as short
+characteristics, but which applies the underlying principles, i.e. efficient
+execution through interpolation and parallelizability, of both. Primary
+applications of the hybrid characteristics method are radiation hydrodynamics
+problems that take into account the effects of photoionization and heating due
+to point sources of radiation. The method is implemented in the hydrodynamics
+package FLASH. The ionization, heating, and cooling processes are modelled
+using the DORIC ionization package. Upon comparison with the long
+characteristics method, we find that our method calculates the column density
+with a similarly high accuracy and produces sharp and well defined shadows. We
+show the quality of the new algorithm in an application to the photoevaporation
+of multiple over-dense clumps. We present several test problems demonstrating
+the feasibility of our method for performing high resolution three-dimensional
+radiation hydrodynamics calculations that span a large range of scales. Initial
+performance tests show that the ray tracing part of our method takes less time
+to execute than other parts of the calculation (e.g. hydrodynamics and adaptive
+mesh refinement), and that a high degree of efficiency is obtained in parallel
+execution. Although the hybrid characteristics method is developed for problems
+involving photoionization due to point sources, the algorithm can be easily
+adapted to the case of more general radiation fields.

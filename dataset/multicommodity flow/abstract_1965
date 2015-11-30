@@ -1,0 +1,11 @@
+A principled approach to the design of program verification and con-
+struction tools is applied to separation logic. The control flow is modelled by
+power series with convolution as separating conjunction. A generic construction
+lifts resource monoids to assertion and predicate transformer quantales. The
+data flow is captured by concrete store/heap models. These are linked to the
+separation algebra by soundness proofs. Verification conditions and
+transformation laws are derived by equational reasoning within the predicate
+transformer quantale. This separation of concerns makes an implementation in
+the Isabelle/HOL proof as- sistant simple and highly automatic. The resulting
+tool is correct by construction; it is explained on the classical linked list
+reversal example.

@@ -1,0 +1,14 @@
+Each time-series has its own linear trend, the directionality of a
+timeseries, and removing the linear trend is crucial to get the more intuitive
+matching results. Supporting the linear detrending in subsequence matching is a
+challenging problem due to a huge number of possible subsequences. In this
+paper we define this problem the linear detrending subsequence matching and
+propose its efficient index-based solution. To this end, we first present a
+notion of LD-windows (LD means linear detrending), which is obtained as
+follows: we eliminate the linear trend from a subsequence rather than each
+window itself and obtain LD-windows by dividing the subsequence into windows.
+Using the LD-windows we then present a lower bounding theorem for the
+index-based matching solution and formally prove its correctness. Based on the
+lower bounding theorem, we next propose the index building and subsequence
+matching algorithms for linear detrending subsequence matching.We finally show
+the superiority of our index-based solution through extensive experiments.

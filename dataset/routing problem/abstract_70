@@ -1,0 +1,14 @@
+A reliable network infrastructure must be able to sustain traffic flows, even
+when a failure occurs and changes the network topology. During the occurrence
+of a failure, routing protocols, like OSPF, take from hundreds of milliseconds
+to various seconds in order to converge. During this convergence period,
+packets might traverse a longer path or even a loop. An even worse transient
+behaviour is that packets are dropped even though destinations are reachable.
+In this context, this paper describes a proactive fast rerouting approach,
+named Fast Emergency Paths Schema (FEP-S), to overcome problems originating
+from transient link failures in OSPF routing. Extensive experiments were done
+using several network topologies with different dimensionality degrees. Results
+show that the recovery paths, obtained by FEPS, are shorter than those from
+other rerouting approaches and can improve the network reliability by reducing
+the packet loss rate during the routing protocols convergence caused by a
+failure.

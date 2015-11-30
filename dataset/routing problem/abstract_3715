@@ -1,0 +1,12 @@
+This paper presents two new approaches to decomposing and solving large
+Markov decision problems (MDPs), a partial decoupling method and a complete
+decoupling method. In these approaches, a large, stochastic decision problem is
+divided into smaller pieces. The first approach builds a cache of policies for
+each part of the problem independently, and then combines the pieces in a
+separate, light-weight step. A second approach also divides the problem into
+smaller pieces, but information is communicated between the different problem
+pieces, allowing intelligent decisions to be made about which piece requires
+the most attention. Both approaches can be used to find optimal policies or
+approximately optimal policies with provable bounds. These algorithms also
+provide a framework for the efficient transfer of knowledge across problems
+that share similar structure.

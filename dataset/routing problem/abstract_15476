@@ -1,0 +1,17 @@
+In this paper we study the problem of sorting under non-uniform comparison
+costs, where costs are either 1 or $\infty$. If comparing a pair has an
+associated cost of $\infty$ then we say that such a pair cannot be compared
+(forbidden pairs). Along with the set of elements $V$ ($n = |V|$) the input to
+our problem is a graph $G(V, E)$, whose edges represents the pairs that we can
+compare incurring unit cost. We let $E_f = V\times V \setminus E$, the set of
+pairs that are forbidden. Under the assumption that the input graph is sortable
+we propose an algorithm for sorting $V$ when $|E_f| = O(n)$. This is a
+deterministic algorithm that makes $o(n^2)$ comparisons in the worst case. This
+is the first such method to achieve a non-trivial upper-bound; although on a
+restricted sub class of the problem. When $|E_f| = O(n^{2-\delta})$(Where
+$\delta > 0$ is some constant) we show that a certain class of random graphs
+with high probability can decide the order of $V$ with only $o(n^2)$ probes. We
+also show how the latter technique can be used to sort $V$ when the input graph
+is random. Additionally, the total run time of both of these methods are
+bounded by $O(n^2)$. For the general case, where $|E_f|$ is arbitrary, the
+problem of finding a $o(n^2)$ deterministic algorithm remains open.

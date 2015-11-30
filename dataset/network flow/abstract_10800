@@ -1,0 +1,25 @@
+First, a meshless simulation method is presented for multiphase
+fluid-particle flows with a two-way coupled Smoothed Particle Hydrodynamics
+(SPH) for the fluid and the Discrete Element Method (DEM) for the solid phase.
+The unresolved fluid model, based on the locally averaged Navier Stokes
+equations, is expected to be considerably faster than fully resolved models.
+Furthermore, in contrast to similar mesh-based Discrete Particle Methods
+(DPMs), our purely particle-based method enjoys the flexibility that comes from
+the lack of a prescribed mesh. It is suitable for problems such as free surface
+flow or flow around complex, moving and/or intermeshed geometries and is
+applicable to both dilute and dense particle flows.
+  Second, a comprehensive validation procedure for fluid-particle simulations
+is presented and applied here to the SPH-DEM method, using simulations of
+single and multiple particle sedimentation in a 3D fluid column and comparison
+with analytical models. Millimetre-sized particles are used along with three
+different test fluids: air, water and a water-glycerol solution. The velocity
+evolution for a single particle compares well (less than 1% error) with the
+analytical solution as long as the fluid resolution is coarser than two times
+the particle diameter. Two more complex multiple particle sedimentation
+problems (sedimentation of a homogeneous porous block and an inhomogeneous
+Rayleigh Taylor instability) are also reproduced well for porosities 0.6 <=
+\epsilon <= 1.0, although care should be taken in the presence of high porosity
+gradients.
+  Overall the SPH-DEM method successfully reproduces quantitatively the
+expected behaviour in the test cases, and promises to be a flexible and
+accurate tool for other, realistic fluid-particle system simulations.

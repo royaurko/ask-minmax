@@ -1,0 +1,13 @@
+Many matrices that arise in the solution of signal processing problems have a
+special displacement structure. For example, adaptive filtering and
+direction-of-arrival estimation yield matrices of Toeplitz type. A recent
+method of Gohberg, Kailath and Olshevsky (GKO) allows fast Gaussian elimination
+with partial pivoting for such structured matrices. In this paper, a rounding
+error analysis is performed on the Cauchy and Toeplitz variants of the GKO
+method. It is shown the error growth depends on the growth in certain auxiliary
+vectors, the generators, which are computed by the GKO algorithms. It is also
+shown that in certain circumstances, the growth in the generators can be large,
+and so the error growth is much larger than would be encountered with normal
+Gaussian elimination with partial pivoting. A modification of the algorithm to
+perform a type of row-column pivoting is proposed; it may ameliorate this
+problem.

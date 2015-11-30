@@ -1,0 +1,19 @@
+We study the problem of counting the number of popular matchings in a given
+instance. A popular matching instance consists of agents A and houses H, where
+each agent ranks a subset of houses according to their preferences. A matching
+is an assignment of agents to houses. A matching M is more popular than
+matching M' if the number of agents that prefer M to M' is more than the number
+of people that prefer M' to M. A matching M is called popular if there exists
+no matching more popular than M. McDermid and Irving gave a poly-time algorithm
+for counting the number of popular matchings when the preference lists are
+strictly ordered.
+  We first consider the case of ties in preference lists. Nasre proved that the
+problem of counting the number of popular matching is #P-hard when there are
+ties. We give an FPRAS for this problem.
+  We then consider the popular matching problem where preference lists are
+strictly ordered but each house has a capacity associated with it. We give a
+switching graph characterization of popular matchings in this case. Such
+characterizations were studied earlier for the case of strictly ordered
+preference lists (McDermid and Irving) and for preference lists with ties
+(Nasre). We use our characterization to prove that counting popular matchings
+in capacitated case is #P-hard.

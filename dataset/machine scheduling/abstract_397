@@ -1,0 +1,18 @@
+Machining time is a major performance criterion when it comes to high-speed
+machining. CAM software can help in estimating that time for a given strategy.
+But in practice, CAM-programmed feed rates are rarely achieved, especially
+where complex surface finishing is concerned. This means that machining time
+forecasts are often more than one step removed from reality. The reason behind
+this is that CAM routines do not take either the dynamic performances of the
+machines or their specific machining tolerances into account. The present
+article seeks to improve simulation of high-speed NC machine dynamic behaviour
+and machining time prediction, offering two models. The first contributes
+through enhanced simulation of three-axis paths in linear and circular
+interpolation, taking high-speed machine accelerations and jerks into account.
+The second model allows transition passages between blocks to be integrated in
+the simulation by adding in a polynomial transition path that caters for the
+true machining environment tolerances. Models are based on respect for path
+monitoring. Experimental validation shows the contribution of polynomial
+modelling of the transition passage due to the absence of a leap in
+acceleration. Simulation error on the machining time prediction remains below
+1%.

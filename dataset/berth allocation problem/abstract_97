@@ -1,0 +1,17 @@
+Compilation for embedded processors can be either aggressive (time consuming
+cross-compilation) or just in time (embedded and usually dynamic). The
+heuristics used in dynamic compilation are highly constrained by limited
+resources, time and memory in particular. Recent results on the SSA form open
+promising directions for the design of new register allocation heuristics for
+embedded systems and especially for embedded compilation. In particular,
+heuristics based on tree scan with two separated phases -- one for spilling,
+then one for coloring/coalescing -- seem good candidates for designing
+memory-friendly, fast, and competitive register allocators. Still, also because
+of the side effect on power consumption, the minimization of loads and stores
+overhead (spilling problem) is an important issue. This paper provides an
+exhaustive study of the complexity of the ``spill everywhere'' problem in the
+context of the SSA form. Unfortunately, conversely to our initial hopes, many
+of the questions we raised lead to NP-completeness results. We identify some
+polynomial cases but that are impractical in JIT context. Nevertheless, they
+can give hints to simplify formulations for the design of aggressive
+allocators.

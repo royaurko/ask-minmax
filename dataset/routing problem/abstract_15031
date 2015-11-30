@@ -1,0 +1,21 @@
+In this paper, we aim at recovering an unknown signal x0 from noisy
+L1measurements y=Phi*x0+w, where Phi is an ill-conditioned or singular linear
+operator and w accounts for some noise. To regularize such an ill-posed inverse
+problem, we impose an analysis sparsity prior. More precisely, the recovery is
+cast as a convex optimization program where the objective is the sum of a
+quadratic data fidelity term and a regularization term formed of the L1-norm of
+the correlations between the sought after signal and atoms in a given
+(generally overcomplete) dictionary. The L1-sparsity analysis prior is weighted
+by a regularization parameter lambda>0. In this paper, we prove that any
+minimizers of this problem is a piecewise-affine function of the observations y
+and the regularization parameter lambda. As a byproduct, we exploit these
+properties to get an objectively guided choice of lambda. In particular, we
+develop an extension of the Generalized Stein Unbiased Risk Estimator (GSURE)
+and show that it is an unbiased and reliable estimator of an appropriately
+defined risk. The latter encompasses special cases such as the prediction risk,
+the projection risk and the estimation risk. We apply these risk estimators to
+the special case of L1-sparsity analysis regularization. We also discuss
+implementation issues and propose fast algorithms to solve the L1 analysis
+minimization problem and to compute the associated GSURE. We finally illustrate
+the applicability of our framework to parameter(s) selection on several imaging
+problems.

@@ -1,0 +1,18 @@
+MAP is the problem of finding a most probable instantiation of a set of
+variables in a Bayesian network, given evidence. Unlike computing marginals,
+posteriors, and MPE (a special case of MAP), the time and space complexity of
+MAP is not only exponential in the network treewidth, but also in a larger
+parameter known as the "constrained" treewidth. In practice, this means that
+computing MAP can be orders of magnitude more expensive than
+computingposteriors or MPE. Thus, practitioners generally avoid MAP
+computations, resorting instead to approximating them by the most likely value
+for each MAP variableseparately, or by MPE.We present a method for
+approximating MAP using local search. This method has space complexity which is
+exponential onlyin the treewidth, as is the complexity of each search step. We
+investigate the effectiveness of different local searchmethods and several
+initialization strategies and compare them to otherapproximation
+schemes.Experimental results show that local search provides a much more
+accurate approximation of MAP, while requiring few search steps.Practically,
+this means that the complexity of local search is often exponential only in
+treewidth as opposed to the constrained treewidth, making approximating MAP as
+efficient as other computations.

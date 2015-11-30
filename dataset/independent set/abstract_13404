@@ -1,0 +1,22 @@
+We consider a basic problem in unsupervised learning: learning an unknown
+\emph{Poisson Binomial Distribution}. A Poisson Binomial Distribution (PBD)
+over $\{0,1,\dots,n\}$ is the distribution of a sum of $n$ independent
+Bernoulli random variables which may have arbitrary, potentially non-equal,
+expectations. These distributions were first studied by S. Poisson in 1837
+\cite{Poisson:37} and are a natural $n$-parameter generalization of the
+familiar Binomial Distribution. Surprisingly, prior to our work this basic
+learning problem was poorly understood, and known results for it were far from
+optimal.
+  We essentially settle the complexity of the learning problem for this basic
+class of distributions. As our first main result we give a highly efficient
+algorithm which learns to $\eps$-accuracy (with respect to the total variation
+distance) using $\tilde{O}(1/\eps^3)$ samples \emph{independent of $n$}. The
+running time of the algorithm is \emph{quasilinear} in the size of its input
+data, i.e., $\tilde{O}(\log(n)/\eps^3)$ bit-operations. (Observe that each draw
+from the distribution is a $\log(n)$-bit string.) Our second main result is a
+{\em proper} learning algorithm that learns to $\eps$-accuracy using
+$\tilde{O}(1/\eps^2)$ samples, and runs in time $(1/\eps)^{\poly (\log
+(1/\eps))} \cdot \log n$. This is nearly optimal, since any algorithm {for this
+problem} must use $\Omega(1/\eps^2)$ samples. We also give positive and
+negative results for some extensions of this learning problem to weighted sums
+of independent Bernoulli random variables.

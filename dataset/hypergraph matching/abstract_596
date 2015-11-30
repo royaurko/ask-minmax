@@ -1,0 +1,17 @@
+For a set $A$ of $n$ people and a set $B$ of $m$ items, with each person
+having a preference list that ranks all items from most wanted to least wanted,
+we consider the problem of matching every person with a unique item. A matching
+$M$ is called $\epsilon$-popular if for any other matching $M'$, the number of
+people who prefer $M'$ to $M$ is at most $\epsilon n$ plus the number of those
+who prefer $M$ to $M'$. In 2006, Mahdian showed that when randomly generating
+people's preference lists, if $m/n > 1.42$, then a 0-popular matching exists
+with $1-o(1)$ probability; and if $m/n < 1.42$, then a 0-popular matching
+exists with $o(1)$ probability. The ratio 1.42 can be viewed as a transition
+point, at which the probability rises from asymptotically zero to
+asymptotically one, for the case $\epsilon=0$. In this paper, we introduce an
+upper bound and a lower bound of the transition point in more general cases. In
+particular, we show that when randomly generating each person's preference
+list, if $\alpha(1-e^{-1/\alpha}) > 1-\epsilon$, then an $\epsilon$-popular
+matching exists with $1-o(1)$ probability (upper bound); and if
+$\alpha(1-e^{-(1+e^{1/\alpha})/\alpha}) < 1-2\epsilon$, then an
+$\epsilon$-popular matching exists with $o(1)$ probability (lower bound).

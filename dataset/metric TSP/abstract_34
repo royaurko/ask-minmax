@@ -1,0 +1,26 @@
+We study the structure of solutions to linear programming formulations for
+the traveling salesperson problem (TSP).
+  We perform a detailed analysis of the support of the subtour elimination
+linear programming relaxation, which leads to algorithms that find 2-matchings
+with few components in polynomial time. The number of components directly leads
+to integrality gap upper bounds for the TSP with distances one and two, for
+both undirected and directed graphs.
+  Our main results concern the subtour elimination relaxation with one
+additional cutting plane inequality:
+  - For undirected instances we obtain an integrality gap upper bound of 5/4
+without any further restrictions, of 7/6 if the optimal LP solution is
+half-integral.
+  - For instances of order n where the fractional LP value has a cost of n, we
+obtain a tight integrality gap upper bound of 10/9 if there is an optimal
+solution with subcubic support graph. The latter property that the graph is
+subcubic is implied if the solution is a basic solution in the fractional
+2-matching polytope.
+  - For directed instances we obtain an integrality gap upper bound of 3/2, and
+of 4/3 if given an optimal 1/2-integral solution. In the case of undirected
+graphs, we can avoid to add the cutting plane inequality if we accept slightly
+increased values. For the tight result, the cutting plane is not required.
+  Additionally, we show that relying on the structure of the support is not an
+artefact of our algorithm, but is necessary under standard complexity-theoretic
+assumptions: we show that finding improved solutions via local search is
+W[1]-hard for k-edge change neighborhoods even for the TSP with distances one
+and two, which strengthens a result of D\'aniel Marx.

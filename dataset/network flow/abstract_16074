@@ -1,0 +1,23 @@
+We consider the problem of self-healing in reconfigurable networks (e.g.
+peer-to-peer and wireless mesh networks) that are under repeated attack by an
+omniscient adversary and propose a fully distributed algorithm, Xheal that
+maintains good expansion and spectral properties of the network, also keeping
+the network connected. Moreover, Xheal does this while allowing only low
+stretch and degree increase per node. Thus, the algorithm heals global
+properties while only doing local changes and using only local information.
+  Our work improves over the self-healing algorithms 'Forgiving tree'[PODC
+2008] and 'Forgiving graph'[PODC 2009] (using a similar model) in that we are
+able to give guarantees on degree and stretch, while at the same time
+preserving the expansion and spectral properties of the network. These repairs
+preserve the invariants in the following sense. At any point in the algorithm,
+the expansion of the graph will be either `better' than the expansion of the
+graph formed by considering only the adversarial insertions (not the
+adversarial deletions) or the expansion will be, at least, a constant. Also,
+the stretch i.e. the distance between any pair of nodes in the healed graph is
+no more than a $O(\log n)$ factor. Similarly, at any point, a node $v$ whose
+degree would have been $d$ in the graph with adversarial insertions only, will
+have degree at most $O(\kappa d)$ in the actual graph, for a small parameter
+$\kappa$. We also provide bounds on the second smallest eigenvalue of the
+Laplacian which captures key properties such as mixing time, conductance,
+congestion in routing etc. Our distributed data structure has low amortized
+latency and bandwidth requirements.

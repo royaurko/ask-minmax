@@ -1,0 +1,15 @@
+An algorithm is presented that efficiently solves the selection problem:
+finding the k-th smallest member of a set. Relevant to a divide-and-conquer
+strategy, the algorithm also partitions a set into small and large valued
+subsets. Applied recursively, this partitioning results in a sorted set. The
+algorithm's applicability is therefore much broader than just the selection
+problem. The presented algorithm is based upon R.W. Floyd's 1964 algorithm that
+constructs a heap from the bottom-up. Empirically, the presented algorithm's
+performance appears competitive with the popular quickselect algorithm, a
+variant of C.A.R. Hoare's 1962 quicksort algorithm. Furthermore, constructing a
+heap from the bottom-up is an inherently parallel process (processors can work
+independently and simultaneously on subheap construction), suggesting a
+performance advantage with parallel implementations. Given the presented
+algorithm's broad applicability, simplicity, serial performance, and parallel
+nature, further study is warranted. Specifically, worst-case analysis is an
+important but still unsolved problem.

@@ -1,0 +1,23 @@
+We consider the numerical approximation of the filtering problem in high
+dimensions, that is, when the hidden state lies in $\mathbb{R}^d$ with $d$
+large. For low dimensional problems, one of the most popular numerical
+procedures for consistent inference is the class of approximations termed
+particle filters or sequential Monte Carlo methods. However, in high
+dimensions, standard particle filters (e.g. the bootstrap particle filter) can
+have a cost that is exponential in $d$ for the algorithm to be stable in an
+appropriate sense. We develop a new particle filter, called the
+\emph{space-time particle filter}, for a specific family of state-space models
+in discrete time. This new class of particle filters provide consistent Monte
+Carlo estimates for any fixed $d$, as do standard particle filters. Moreover,
+we expect that the state-space particle filter will scale much better with $d$
+than the standard filter. We illustrate this analytically for a model of a
+simple i.i.d. structure and one of a Markovian structure in the $d$-dimensional
+space-direction, when we show that the algorithm exhibits certain stability
+properties as $d$ increases at a cost $\mathcal{O}(nNd^2)$, where $n$ is the
+time parameter and $N$ is the number of Monte Carlo samples, that are fixed and
+independent of $d$. Similar results are expected to hold, under a more general
+structure than the i.i.d.~one. independently of the dimension. Our theoretical
+results are also supported by numerical simulations on practical models of
+complex structures. The results suggest that it is indeed possible to tackle
+some high dimensional filtering problems using the space-time particle filter
+that standard particle filters cannot handle.

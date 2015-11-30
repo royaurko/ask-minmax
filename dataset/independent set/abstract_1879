@@ -1,0 +1,25 @@
+Tractable generalizations of the Gaussian distribution play an important role
+for the analysis of high-dimensional data. One very general super-class of
+Normal distributions is the class of $\nu$-spherical distributions whose random
+variables can be represented as the product $\x = r\cdot \u$ of a uniformly
+distribution random variable $\u$ on the $1$-level set of a positively
+homogeneous function $\nu$ and arbitrary positive radial random variable $r$.
+Prominent subclasses of $\nu$-spherical distributions are spherically symmetric
+distributions ($\nu(\x)=\|\x\|_2$) which have been further generalized to the
+class of $L_p$-spherically symmetric distributions ($\nu(\x)=\|\x\|_p$). Both
+of these classes contain the Gaussian as a special case. In general, however,
+$\nu$-spherical distributions are computationally intractable since, for
+instance, the normalization constant or fast sampling algorithms are unknown
+for an arbitrary $\nu$. In this paper we introduce a new subclass of
+$\nu$-spherical distributions by choosing $\nu$ to be a nested cascade of
+$L_p$-norms. This class is still computationally tractable, but includes all
+the aforementioned subclasses as a special case. We derive a general expression
+for $L_p$-nested symmetric distributions as well as the uniform distribution on
+the $L_p$-nested unit sphere, including an explicit expression for the
+normalization constant. We state several general properties of $L_p$-nested
+symmetric distributions, investigate its marginals, maximum likelihood fitting
+and discuss its tight links to well known machine learning methods such as
+Independent Component Analysis (ICA), Independent Subspace Analysis (ISA) and
+mixed norm regularizers. Finally, we derive a fast and exact sampling algorithm
+for arbitrary $L_p$-nested symmetric distributions, and introduce the Nested
+Radial Factorization algorithm (NRF), which is a form of non-linear ICA.

@@ -1,0 +1,15 @@
+This work investigates the parameterized complexity of three related graph
+modification problems. Given a directed graph, a distinguished vertex, and a
+positive integer k, Minimum Indegree Deletion asks for a vertex subset of size
+at most k whose removal makes the distinguished vertex the only vertex with
+minimum indegree. Minimum Degree Deletion is analogously defined, but deals
+with undirected graphs. Bounded Degree Deletion is also defined on undirected
+graphs, but has a positive integer d instead of a distinguished vertex as part
+of the input. It asks for a vertex subset of size at most k whose removal
+results in a graph in which every vertex has degree at most d. The first two
+problems have applications in computational social choice whereas the third
+problem is used in computational biology. We investigate the parameterized
+complexity with respect to the parameters "treewidth", "size of a feedback
+vertex set" and "size of a feedback edge set" respectively "size of a feedback
+arc set". Each of these parameters measures the "degree of acyclicity" in
+different ways.

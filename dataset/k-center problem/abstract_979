@@ -1,0 +1,13 @@
+We develop a new collaborative filtering (CF) method that combines both
+previously known users' preferences, i.e. standard CF, as well as product/user
+attributes, i.e. classical function approximation, to predict a given user's
+interest in a particular product. Our method is a generalized low rank matrix
+completion problem, where we learn a function whose inputs are pairs of vectors
+-- the standard low rank matrix completion problem being a special case where
+the inputs to the function are the row and column indices of the matrix. We
+solve this generalized matrix completion problem using tensor product kernels
+for which we also formally generalize standard kernel properties. Benchmark
+experiments on movie ratings show the advantages of our generalized matrix
+completion method over the standard matrix completion one with no information
+about movies or people, as well as over standard multi-task or single task
+learning methods.

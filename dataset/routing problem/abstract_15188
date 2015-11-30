@@ -1,0 +1,19 @@
+In this work we derive fundamental limits for many linear and non-linear
+sparse signal processing models including linear and non-linear sparse
+regression, group testing, multivariate regression and problems with missing
+features. In general, sparse signal processing problems can be characterized in
+terms of the following Markovian property. We are given a set of $N$ variables
+$X_1,X_2,\ldots,X_N$, and there is an unknown subset of variables $S \subset
+\{1,2,\ldots, N\}$ that are \emph{relevant} for predicting outcomes/outputs
+$Y$. More specifically, when $Y$ is conditioned on $\{X_n\}_{n\in S}$ it is
+conditionally independent of the other variables, $\{X_n\}_{n \not \in S}$. Our
+goal is to identify the set $S$ from samples of the variables $X$ and the
+associated outcomes $Y$. We characterize this problem as a version of the noisy
+channel coding problem. Using asymptotic information theoretic analyses, we
+establish mutual information formulas that provide sufficient and necessary
+conditions on the number of samples required to successfully recover the
+salient variables. These mutual information expressions unify conditions for
+both linear and non-linear observations. We then compute sample complexity
+bounds for the aforementioned models, based on the mutual information
+expressions in order to demonstrate the applicability and flexibility of our
+results in general sparse signal processing models.

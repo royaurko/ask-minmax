@@ -1,0 +1,12 @@
+Let $G=(V,E)$ be any undirected graph on $V$ vertices and $E$ edges. A path
+$\textbf{P}$ between any two vertices $u,v\in V$ is said to be $t$-approximate
+shortest path if its length is at most $t$ times the length of the shortest
+path between $u$ and $v$. We consider the problem of building a compact data
+structure for a given graph $G$ which is capable of answering the following
+query for any $u,v,z\in V$ and $t>1$:
+  Report $t$-approximate shortest path between $u$ and $v$ when vertex $z$
+fails
+  We present data structures for the single source as well all-pairs versions
+of this problem. Our data structures guarantee optimal query time. Most
+impressive feature of our data structures is that their size {\em nearly} match
+the size of their best static counterparts.

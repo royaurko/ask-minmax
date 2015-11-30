@@ -1,0 +1,17 @@
+A security policy specifies a security property as the maximal information
+flow. A distributed system composed of interacting processes implicitly defines
+an intransitive security policy by repudiating direct information flow between
+processes that do not exchange messages directly. We show that implicitly
+defined security policies in distributed systems are enforced, provided that
+processes run in separation, and possible process communication on a technical
+platform is restricted to specified message paths of the system. Furthermore,
+we propose to further restrict the allowable information flow by adding filter
+functions for controlling which messages may be transmitted between processes,
+and we prove that locally checking filter functions is sufficient for ensuring
+global security policies. Altogether, global intransitive security policies are
+established by means of local verification conditions for the (trusted)
+processes of the distributed system. Moreover, security policies may be
+implemented securely on distributed integration platforms which ensure
+partitioning. We illustrate our results with a smart grid case study, where we
+use CTL model checking for discharging local verification conditions for each
+process under consideration.

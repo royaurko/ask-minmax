@@ -1,0 +1,16 @@
+Driven by recent advances in batch Reinforcement Learning (RL), this paper
+contributes to the application of batch RL to demand response. In contrast to
+conventional model-based approaches, batch RL techniques do not require a
+system identification step, which makes them more suitable for a large-scale
+implementation. This paper extends fitted Q-iteration, a standard batch RL
+technique, to the situation where a forecast of the exogenous data is provided.
+In general, batch RL techniques do not rely on expert knowledge on the system
+dynamics or the solution. However, if some expert knowledge is provided, it can
+be incorporated by using our novel policy adjustment method. Finally, we tackle
+the challenge of finding an open-loop schedule required to participate in the
+day-ahead market. We propose a model-free Monte-Carlo estimator method that
+uses a metric to construct artificial trajectories and we illustrate this
+method by finding the day-ahead schedule of a heat-pump thermostat. Our
+experiments show that batch RL techniques provide a valuable alternative to
+model-based controllers and that they can be used to construct both closed-loop
+and open-loop policies.

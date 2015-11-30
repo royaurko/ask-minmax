@@ -1,0 +1,26 @@
+Genomic distance between two genomes, i.e., the smallest number of genome
+rearrangements required to transform one genome into the other, is often used
+as a measure of evolutionary closeness of the genomes in comparative genomics
+studies. However, in models that include rearrangements of significantly
+different "power" such as reversals (that are "weak" and most frequent
+rearrangements) and transpositions (that are more "powerful" but rare), the
+genomic distance typically corresponds to a transformation with a large
+proportion of transpositions, which is not biologically adequate.
+  Weighted genomic distance is a traditional approach to bounding the
+proportion of transpositions by assigning them a relative weight {\alpha} > 1.
+A number of previous studies addressed the problem of computing weighted
+genomic distance with {\alpha} \leq 2.
+  Employing the model of multi-break rearrangements on circular genomes, that
+captures both reversals (modelled as 2-breaks) and transpositions (modelled as
+3-breaks), we prove that for {\alpha} \in (1,2], a minimum-weight
+transformation may entirely consist of transpositions, implying that the
+corresponding weighted genomic distance does not actually achieve its purpose
+of bounding the proportion of transpositions. We further prove that for
+{\alpha} \in (1,2), the minimum-weight transformations do not depend on a
+particular choice of {\alpha} from this interval. We give a complete
+characterization of such transformations and show that they coincide with the
+transformations that at the same time have the shortest length and make the
+smallest number of breakages in the genomes.
+  Our results also provide a theoretical foundation for the empirical
+observation that for {\alpha} < 2, transpositions are favored over reversals in
+the minimum-weight transformations.

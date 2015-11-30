@@ -1,0 +1,16 @@
+This paper proposes a new memetic evolutionary algorithm to achieve explicit
+learning in rule-based nurse rostering, which involves applying a set of
+heuristic rules for each nurse's assignment. The main framework of the
+algorithm is an estimation of distribution algorithm, in which an ant-miner
+methodology improves the individual solutions produced in each generation.
+Unlike our previous work (where learning is implicit), the learning in the
+memetic estimation of distribution algorithm is explicit, i.e. we are able to
+identify building blocks directly. The overall approach learns by building a
+probabilistic model, i.e. an estimation of the probability distribution of
+individual nurse-rule pairs that are used to construct schedules. The local
+search processor (i.e. the ant-miner) reinforces nurse-rule pairs that receive
+higher rewards. A challenging real world nurse rostering problem is used as the
+test problem. Computational results show that the proposed approach outperforms
+most existing approaches. It is suggested that the learning methodologies
+suggested in this paper may be applied to other scheduling problems where
+schedules are built systematically according to specific rules

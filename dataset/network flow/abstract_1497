@@ -1,0 +1,17 @@
+The possibility to offload, via a platform-agnostic specification, the
+execution of (some/part of the) control functions down to the switch and
+operate them at wire speed based on packet level events, would yield
+significant benefits in terms of control latency and reaction times, meanwhile
+retaining the SDN-type ability to program and instantiate a desired network
+operation from a central controller. While programmability inside the switches,
+at wire speed and using platform-independent abstractions, of "any possible'"
+control function seems well beyond the OpenFlow capabilities, in this paper we
+argue that a non trivial sub-class of stateful control functions, namely those
+that can be abstracted in terms of Mealy (Finite State) Machines, is already
+compatible with off-the-shelf OpenFlow version 1.1+ Hardware with marginal
+architectural modifications. With minimal additional hardware circuitry, the
+above sub-class can be extended to include support for bidirectional/cross-flow
+state handling. We demonstrate the viability of our proposed approach via two
+proof-of-concept implementations (hardware and software), and we show how some
+stateful control functionalities frequently exploited in network protocols are
+readily deployed using our application programming interface.

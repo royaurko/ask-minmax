@@ -1,0 +1,13 @@
+The robustness and integrity of IP networks require efficient tools for
+traffic monitoring and analysis, which scale well with traffic volume and
+network size. We address the problem of optimal large-scale flow monitoring of
+computer networks under resource constraints. We propose a stochastic
+optimization framework where traffic measurements are done by exploiting the
+spatial (across network links) and temporal relationship of traffic flows.
+Specifically, given the network topology, the state-space characterization of
+network flows and sampling constraints at each monitoring station, we seek an
+optimal packet sampling strategy that yields the best traffic volume estimation
+for all flows of the network. The optimal sampling design is the result of a
+concave minimization problem; then, Kalman filtering is employed to yield a
+sequence of traffic estimates for each network flow. We evaluate our algorithm
+using real-world Internet2 data.

@@ -1,0 +1,16 @@
+It is well-known that cross-layer scheduling which adapts power, rate and
+user allocation can achieve significant gain on system capacity. However,
+conventional cross-layer designs all require channel state information at the
+base station (CSIT) which is difficult to obtain in practice. In this paper, we
+focus on cross-layer resource optimization based on ACK/NAK feedback flows in
+OFDM systems without explicit CSIT. While the problem can be modeled as Markov
+Decision Process (MDP), brute force approach by policy iteration or value
+iteration cannot lead to any viable solution. Thus, we derive a simple
+closed-form solution for the MDP cross-layer problem, which is asymptotically
+optimal for sufficiently small target packet error rate (PER). The proposed
+solution also has low complexity and is suitable for realtime implementation.
+It is also shown to achieve significant performance gain compared with systems
+that do not utilize the ACK/NAK feedbacks for cross-layer designs or
+cross-layer systems that utilize very unreliable CSIT for adaptation with
+mismatch in CSIT error statistics. Asymptotic analysis is also provided to
+obtain useful design insights.

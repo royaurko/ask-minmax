@@ -1,0 +1,18 @@
+We consider Conditional Random Fields (CRFs) with pattern-based potentials
+defined on a chain. In this model the energy of a string (labeling) $x_1...x_n$
+is the sum of terms over intervals $[i,j]$ where each term is non-zero only if
+the substring $x_i...x_j$ equals a prespecified pattern $\alpha$. Such CRFs can
+be naturally applied to many sequence tagging problems.
+  We present efficient algorithms for the three standard inference tasks in a
+CRF, namely computing (i) the partition function, (ii) marginals, and (iii)
+computing the MAP. Their complexities are respectively $O(n L)$, $O(n L
+\ell_{max})$ and $O(n L \min\{|D|,\log (\ell_{max}+1)\})$ where $L$ is the
+combined length of input patterns, $\ell_{max}$ is the maximum length of a
+pattern, and $D$ is the input alphabet. This improves on the previous
+algorithms of (Ye et al., 2009) whose complexities are respectively $O(n L
+|D|)$, $O(n |\Gamma| L^2 \ell_{max}^2)$ and $O(n L |D|)$, where $|\Gamma|$ is
+the number of input patterns.
+  In addition, we give an efficient algorithm for sampling. Finally, we
+consider the case of non-positive weights. (Komodakis & Paragios, 2009) gave an
+$O(n L)$ algorithm for computing the MAP. We present a modification that has
+the same worst-case complexity but can beat it in the best case.

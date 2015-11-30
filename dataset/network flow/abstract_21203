@@ -1,0 +1,24 @@
+Among several heliophysical and geophysical quantities, the accurate
+evolution of the solar irradiance is fundamental to forecast the evolution of
+the neutral and ionized components of the Earth's atmosphere.We developed an
+artificial neural network model to compute the evolution of the solar
+irradiance in near-real time. The model is based on the assumption that that
+great part of the solar irradiance variability is due to the evolution of the
+structure of the solar magnetic field. We employ a Layer-Recurrent Network
+(LRN) to model the complex relationships between the evolution of the bipolar
+magnetic structures (input) and the solar irradiance (output). The evolution of
+the bipolar magnetic structures is obtained from near-real time solar disk
+magnetograms and intensity images. The magnetic structures are identify and
+classified according to the area of the solar disk covered. We constrained the
+model by comparing the output of the model and observations of the solar
+irradiance made by instruments onboard of SORCE spacecraft. Here we focus on
+two regions of the spectra that are covered by SORCE instruments. The
+generalization of the network is tested by dividing the data sets on two
+groups: the training set; and, the validation set. We have found that the model
+error is wavelength dependent. While the model error for 24-hour forecast in
+the band from 115 to 180 nm is lower than 5%, the model error can reach 20% in
+the band from 180 to 310 nm. The performance of the network reduces
+progressively with the increase of the forecast period, which limits
+significantly the maximum forecast period that we can achieve with the
+discussed architecture. The model proposed allows us to predict the total and
+spectral solar irradiance up to three days in advance.

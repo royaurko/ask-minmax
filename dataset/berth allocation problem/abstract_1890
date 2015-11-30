@@ -1,0 +1,24 @@
+Efficient use of multiple batteries is a practical problem with wide and
+growing application. The problem can be cast as a planning problem under
+uncertainty. We describe the approach we have adopted to modelling and solving
+this problem, seen as a Markov Decision Problem, building effective policies
+for battery switching in the face of stochastic load profiles.
+  Our solution exploits and adapts several existing techniques: planning for
+deterministic mixed discrete-continuous problems and Monte Carlo sampling for
+policy learning. The paper describes the development of planning techniques to
+allow solution of the non-linear continuous dynamic models capturing the
+battery behaviours. This approach depends on carefully handled discretisation
+of the temporal dimension. The construction of policies is performed using a
+classification approach and this idea offers opportunities for wider
+exploitation in other problems. The approach and its generality are described
+in the paper.
+  Application of the approach leads to construction of policies that, in
+simulation, significantly outperform those that are currently in use and the
+best published solutions to the battery management problem. We achieve
+solutions that achieve more than 99% efficiency in simulation compared with the
+theoretical limit and do so with far fewer battery switches than existing
+policies. Behaviour of physical batteries does not exactly match the simulated
+models for many reasons, so to confirm that our theoretical results can lead to
+real measured improvements in performance we also conduct and report
+experiments using a physical test system. These results demonstrate that we can
+obtain 5%-15% improvement in lifetimes in the case of a two battery system.

@@ -1,0 +1,16 @@
+This paper considers solving the unconstrained $\ell_q$-norm ($0\leq q<1$)
+regularized least squares ($\ell_q$-LS) problem for recovering sparse signals
+in compressive sensing. We propose two highly efficient first-order algorithms
+via incorporating the proximity operator for nonconvex $\ell_q$-norm functions
+into the fast iterative shrinkage/thresholding (FISTA) and the alternative
+direction method of multipliers (ADMM) frameworks, respectively. Furthermore,
+in solving the nonconvex $\ell_q$-LS problem, a sequential minimization
+strategy is adopted in the new algorithms to gain better global convergence
+performance. Unlike most existing $\ell_q$-minimization algorithms, the new
+algorithms solve the $\ell_q$-minimization problem without smoothing
+(approximating) the $\ell_q$-norm. Meanwhile, the new algorithms scale well for
+large-scale problems, as often encountered in image processing. We show that
+the proposed algorithms are the fastest methods in solving the nonconvex
+$\ell_q$-minimization problem, while offering competent performance in
+recovering sparse signals and compressible images compared with several
+state-of-the-art algorithms.

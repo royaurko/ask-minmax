@@ -1,0 +1,17 @@
+We study the minimum number of constraints needed to formulate random
+instances of the maximum stable set problem via linear programs (LPs), in two
+distinct models. In the uniform model, the constraints of the LP are not
+allowed to depend on the input graph, which should be encoded solely in the
+objective function. There we prove a $2^{\Omega(n/ \log n)}$ lower bound with
+probability at least $1 - 2^{-2^n}$ for every LP that is exact for a randomly
+selected set of instances; each graph on at most n vertices being selected
+independently with probability $p \geq 2^{-\binom{n/4}{2}+n}$. In the
+non-uniform model, the constraints of the LP may depend on the input graph, but
+we allow weights on the vertices. The input graph is sampled according to the
+G(n, p) model. There we obtain upper and lower bounds holding with high
+probability for various ranges of p. We obtain a super-polynomial lower bound
+all the way from $p = \Omega(\log^{6+\varepsilon} / n)$ to $p = o (1 / \log
+n)$. Our upper bound is close to this as there is only an essentially quadratic
+gap in the exponent, which currently also exists in the worst-case model.
+Finally, we state a conjecture that would close this gap, both in the
+average-case and worst-case models.

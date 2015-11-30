@@ -1,0 +1,24 @@
+High-level programming languages play a key role in a growing number of
+networking platforms, streamlining application development and enabling precise
+formal reasoning about network behavior. Unfortunately, current compilers only
+handle "local" programs that specify behavior in terms of hop-by-hop forwarding
+behavior, or modest extensions such as simple paths. To encode richer "global"
+behaviors, programmers must add extra state -- something that is tricky to get
+right and makes programs harder to write and maintain. Making matters worse,
+existing compilers can take tens of minutes to generate the forwarding state
+for the network, even on relatively small inputs. This forces programmers to
+waste time working around performance issues or even revert to using
+hardware-level APIs.
+  This paper presents a new compiler for the NetKAT language that handles rich
+features including regular paths and virtual networks, and yet is several
+orders of magnitude faster than previous compilers. The compiler uses symbolic
+automata to calculate the extra state needed to implement "global" programs,
+and an intermediate representation based on binary decision diagrams to
+dramatically improve performance. We describe the design and implementation of
+three essential compiler stages: from virtual programs (which specify behavior
+in terms of virtual topologies) to global programs (which specify network-wide
+behavior in terms of physical topologies), from global programs to local
+programs (which specify behavior in terms of single-switch behavior), and from
+local programs to hardware-level forwarding tables. We present results from
+experiments on real-world benchmarks that quantify performance in terms of
+compilation time and forwarding table size.

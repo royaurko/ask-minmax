@@ -1,0 +1,23 @@
+Calculations of cosmological hydrogen recombination are vital for the
+extraction of cosmological parameters from cosmic microwave background (CMB)
+observations, and for imposing constraints to inflation and re-ionization. The
+Planck} mission and future experiments will make high precision measurements of
+CMB anisotropies at angular scales as small as l~2500, necessitating a
+calculation of recombination with fractional accuracy of ~10^{-3}. Recent work
+on recombination includes two-photon transitions from high excitation states
+and many radiative transfer effects. Modern recombination calculations
+separately follow angular momentum sublevels of the hydrogen atom to accurately
+treat non-equilibrium effects at late times (z<900). The inclusion of extremely
+high-n (n>100) states of hydrogen is then computationally challenging,
+preventing until now a determination of the maximum n needed to predict CMB
+anisotropy spectra with sufficient accuracy for Planck. Here, results from a
+new multi-level-atom code (RecSparse) are presented. For the first time,
+`forbidden' quadrupole transitions of hydrogen are included, but shown to be
+negligible. RecSparse is designed to quickly calculate recombination histories
+including extremely high-n states in hydrogen. Histories for a sequence of
+values as high as n_max=250 are computed, keeping track of all angular momentum
+sublevels and energy shells of the hydrogen atom separately. Use of an
+insufficiently high n_max value (e.g., n_max=64) leads to errors (e.g., 1.8
+sigma for Planck) in the predicted CMB power spectrum. Extrapolating errors,
+the resulting CMB anisotropy spectra are converged to 0.5 sigma at
+Fisher-matrix level for n_max=128, in the purely radiative case.

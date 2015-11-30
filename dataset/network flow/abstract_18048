@@ -1,0 +1,18 @@
+In this paper we develop parallel random coordinate gradient descent methods
+for minimizing large linearly constrained separable convex problems over
+networks. Since we have coupled constraints in the problem, we devise an
+algorithm that updates in parallel $\tau \geq 2$ (block) components per
+iteration. Moreover, for this method the computations can be performed in a
+distributed fashion according to the structure of the network. However, its
+complexity per iteration is usually cheaper than of the full gradient method
+when the number of nodes $N$ in the network is large. We prove that for this
+method we obtain in expectation an $\epsilon$-accurate solution in at most
+$\mathcal{O}(\frac{N}{\tau \epsilon})$ iterations and thus the convergence rate
+depends linearly on the number of (block) components $\tau$ to be updated. For
+strongly convex functions the new method converges linearly. We also focus on
+how to choose the probabilities to make the randomized algorithm to converge as
+fast as possible and we arrive at solving a sparse SDP. Finally, we describe
+several applications that fit in our framework, in particular the convex
+feasibility problem. Numerically, we show that the parallel coordinate descent
+method with $\tau>2$ accelerates on its basic counterpart corresponding to
+$\tau=2$.

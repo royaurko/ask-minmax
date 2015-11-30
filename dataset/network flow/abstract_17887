@@ -1,0 +1,22 @@
+Distributed contention based Medium Access Control (MAC) protocols are the
+fundamental components for IEEE 802.11 based Wireless Local Area Networks
+(WLANs). Contention windows (CW) change dynamically to adapt to the current
+contention level, Upon each packet collision, a station doubles its CW to
+reduce further collision of packets. IEEE 802.11 Distributed Coordination
+Function (DCF) suffers from a common problem in erroneous channel. They cannot
+distinguish noise lost packets from collision lost packets. In both situations
+a station does not receive its ACK and doubles the CW to reduce further packet
+collisions. This increases backoff overhead unnecessarily in addition to the
+noise lost packets, reduces the throughput significantly. Furthermore, the
+aggregate throughput of a practical WLAN strongly depends on the channel
+conditions. In real radio environment, the received signal power at the access
+point from a station is subjected to deterministic path loss, shadowing and
+fast multipath fading. In this paper, we propose a new saturation throughput
+analysis for IEEE 802.11 DCF considering erroneous channel and capture effects.
+To alleviate the low performance of IEEE 802.11 DCF, we introduce a mechanism
+that greatly outperforms under noisy environment with low network traffic and
+compare their performances to the existing standards. We extend the
+multidimensional Markov chain model initially proposed by Bianchi(3) to
+characterize the behavior of DCF in order to account both real channel
+conditions and capture effects, especially in a high interference radio
+environment.

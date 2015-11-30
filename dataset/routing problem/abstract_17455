@@ -1,0 +1,15 @@
+Bisimulation equivalence (or bisimilarity) of first-order grammars is
+decidable, as follows from the decidability result by Senizergues (1998, 2005)
+that has been given in an equivalent framework of equational graphs with finite
+out-degree, or of pushdown automata (PDA) with only deterministic and popping
+epsilon-transitions. Benedikt, Goeller, Kiefer, and Murawski (2013) have shown
+that the bisimilarity problem for PDA (even) without epsilon-transitions is
+nonelementary. Here we show Ackermann-hardness for bisimilarity of first-order
+grammars. The grammars do not use explicit epsilon-transitions, but they
+correspond to the above mentioned PDA with (deterministic and popping)
+epsilon-transitions, and this feature is substantial in the presented
+lower-bound proof. The proof is based on a (polynomial) reduction from the
+reachability problem of reset (or lossy) counter machines, for which the
+Ackermann-hardness has been shown by Schnoebelen (2010); in fact, this
+reachability problem is known to be Ackermann-complete in the hierarchy of
+fast-growing complexity classes defined by Schmitz (2013).

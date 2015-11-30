@@ -1,0 +1,20 @@
+We consider the problem of estimating the region on which a non-parametric
+regression function is at its baseline level in two dimensions. The baseline
+level typically corresponds to the minimum/maximum of the function and
+estimating such regions or their complements is pertinent to several problems
+arising in edge estimation, environmental statistics, fMRI and related fields.
+We assume the baseline region to be convex and estimate it via fitting a
+`stump' function to approximate $p$-values obtained from tests for deviation of
+the regression function from its baseline level. The estimates, obtained using
+an algorithm originally developed for constructing convex contours of a
+density, are studied in two different sampling settings, one where several
+responses can be obtained at a number of different covariate-levels
+(dose-response) and the other involving limited number of response values per
+covariate (standard regression). The shape of the baseline region and the
+smoothness of the regression function at its boundary play a critical role in
+determining the rate of convergence of our estimate: for a regression function
+which is `p-regular' at the boundary of the convex baseline region, our
+estimate converges at a rate $N^{2/(4p+3)}$ in the dose-response setting, $N$
+being the total budget, and its analogue in the standard regression setting
+converges at a rate of $N^{1/(2p+2)}$. Extensions to non-convex baseline
+regions are explored as well.

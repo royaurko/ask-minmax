@@ -1,0 +1,24 @@
+We study the complexity of computing equilibria in two classes of network
+games based on flows - fractional BGP (Border Gateway Protocol) games and
+fractional BBC (Bounded Budget Connection) games. BGP is the glue that holds
+the Internet together and hence its stability, i.e. the equilibria of
+fractional BGP games (Haxell, Wilfong), is a matter of practical importance.
+BBC games (Laoutaris et al) follow in the tradition of the large body of work
+on network formation games and capture a variety of applications ranging from
+social networks and overlay networks to peer-to-peer networks.
+  The central result of this paper is that there are no fully polynomial-time
+approximation schemes (unless PPAD is in FP) for computing equilibria in both
+fractional BGP games and fractional BBC games. We obtain this result by proving
+the hardness for a new and surprisingly simple game, the fractional preference
+game, which is reducible to both fractional BGP and BBC games.
+  We define a new flow-based notion of equilibrium for matrix games --
+personalized equilibria -- generalizing both fractional BBC and fractional BGP
+games. We prove not just the existence, but the existence of rational
+personalized equilibria for all matrix games, which implies the existence of
+rational equilibria for fractional BGP and BBC games. In particular, this
+provides an alternative proof and strengthening of the main result in [Haxell,
+Wilfong]. For k-player matrix games, where k = 2, we provide a combinatorial
+characterization leading to a polynomial-time algorithm for computing all
+personalized equilibria. For k >= 5, we prove that personalized equilibria are
+PPAD-hard to approximate in fully polynomial time. We believe that the concept
+of personalized equilibria has potential for real-world significance.

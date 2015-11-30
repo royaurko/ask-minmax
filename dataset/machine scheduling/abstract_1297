@@ -1,0 +1,20 @@
+Despite the high throughput and low complexity achieved by input scheduling
+based on Birkhoff-von-Neumann (BvN) decomposition; the performance of the BvN
+switch becomes less predictable when the input traffic is bursty. In this
+paper, we propose a deflection-compensated BvN (D-BvN) switch architecture to
+enhance the quasi-static scheduling based on BvN decomposition. The D-BvN
+switches provide capacity guarantee for virtual circuits (VCs) and deflect
+bursty traffic when overflow occurs. The deflection scheme is devised to offset
+the excessive buffer requirement of each VC when input traffic is bursty. The
+design of our conditional deflection mechanism is based on the fact that it is
+unlikely that the traffic input to VCs is all bursty at the same time; most
+likely some starving VCs have spare capacities when some other VCs are in the
+overflow state. The proposed algorithm makes full use of the spare capacities
+of those starving VCs to deflect the overflow traffic to other inputs and
+provide bandwidth for the deflected traffic to re-access the desired VC. Our
+analysis and simulation show that this deflection-compensated mechanism can
+support BvN switches to achieve close to 100% throughput of offered load even
+with bursty input traffic, and reduces the average end-to-end delay and delay
+jitter. Also, our result indicates that the packet out-of-sequence probability
+due to deflection of overflow traffic is negligible, thus only a small
+re-sequencing buffer is needed at each output port.

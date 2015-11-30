@@ -1,0 +1,17 @@
+A significant problem with most functional data analyses is that of
+misaligned curves. Without adjustment, even an analysis as simple as estimation
+of the mean will fail. One common method to synchronize a set of curves
+involves equating ``landmarks'' such as peaks or troughs. The landmarks method
+can work well but will fail if marker events can not be identified or are
+missing from some curves. An alternative approach, the ``continuous monotone
+registration'' method, works by transforming the curves so that they are as
+close as possible to a target function. This method can also perform well but
+is highly dependent on identifying an accurate target function. We develop an
+alignment method based on equating the ``moments'' of a given set of curves.
+These moments are intended to capture the locations of important features which
+may represent local behavior, such as maximums and minimums, or more global
+characteristics, such as the slope of the curve averaged over time. Our method
+works by equating the moments of the curves while also shrinking toward a
+common shape. This allows us to capture the advantages of both the landmark and
+continuous monotone registration approaches. The method is illustrated on
+several data sets and a simulation study is performed.

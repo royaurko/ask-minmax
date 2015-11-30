@@ -1,0 +1,21 @@
+This paper considers the joint transceiver design in a wireless sensor
+network where multiple sensors observe the same physical event and transmit
+their contaminated observations to a fusion center, with all nodes equipped
+with multiple antennae and linear filters. Under the mean square error (MSE)
+criterion, the joint beamforming design problem can be formulated as a
+nonconvex optimization problem. To attack this problem, various block
+coordinate descent (BCD) algorithms are proposed with convergence being
+carefully examined. First we propose a two block coordinate descent (2-BCD)
+algorithm that iteratively designs all the beamformers and the linear receiver,
+where both subproblems are convex and the convergence of limit points to
+stationary points is guaranteed. Besides, the thorough solution to optimizing
+one single beamformer is given, which, although discussed several times, is
+usually incomplete in existing literature. Based on that, multiple block
+coordinate descent algorithms are proposed. Solving the joint beamformers'
+design by cyclically updating each separate beamformer under the 2-BCD
+framework gives birth to a layered BCD algorithm, which guarantees convergence
+to stationary points. Besides that, a wide class of multiple BCD algorithms
+using the general essentially cyclic updating rule has been studied. As will be
+seen, by appropriately adjusting the update of single beamformer, fast
+converging, highly efficient and stationary point achieving algorithms can be
+obtained. Extensive numerical results are presented to verify our findings.

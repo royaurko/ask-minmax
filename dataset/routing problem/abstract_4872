@@ -1,0 +1,22 @@
+In the k-arc connected subgraph problem, we are given a directed graph G and
+an integer k and the goal is the find a subgraph of minimum cost such that
+there are at least k-arc disjoint paths between any pair of vertices. We give a
+simple (1 + 1/k)-approximation to the unweighted variant of the problem, where
+all arcs of G have the same cost. This improves on the 1 + 2/k approximation of
+Gabow et al. [GGTW09].
+  Similar to the 2-approximation algorithm for this problem [FJ81], our
+algorithm simply takes the union of a k in-arborescence and a k
+out-arborescence. The main difference is in the selection of the two
+arborescences. Here, inspired by the recent applications of the rounding by
+sampling method (see e.g. [AGM+ 10, MOS11, OSS11, AKS12]), we select the
+arborescences randomly by sampling from a distribution on unions of k
+arborescences that is defined based on an extreme point solution of the linear
+programming relaxation of the problem. In the analysis, we crucially utilize
+the sparsity property of the extreme point solution to upper-bound the size of
+the union of the sampled arborescences.
+  To complement the algorithm, we also show that the integrality gap of the
+minimum cost strongly connected subgraph problem (i.e., when k = 1) is at least
+3/2 - c, for any c > 0. Our integrality gap instance is inspired by the
+integrality gap example of the asymmetric traveling salesman problem [CGK06],
+hence providing further evidence of connections between the approximability of
+the two problems.

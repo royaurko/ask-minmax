@@ -1,0 +1,20 @@
+We consider the problem of learning an unknown product distribution $X$ over
+$\{0,1\}^n$ using samples $f(X)$ where $f$ is a \emph{known} transformation
+function. Each choice of a transformation function $f$ specifies a learning
+problem in this framework.
+  Information-theoretic arguments show that for every transformation function
+$f$ the corresponding learning problem can be solved to accuracy $\eps$, using
+$\tilde{O}(n/\eps^2)$ examples, by a generic algorithm whose running time may
+be exponential in $n.$ We show that this learning problem can be
+computationally intractable even for constant $\eps$ and rather simple
+transformation functions. Moreover, the above sample complexity bound is nearly
+optimal for the general problem, as we give a simple explicit linear
+transformation function $f(x)=w \cdot x$ with integer weights $w_i \leq n$ and
+prove that the corresponding learning problem requires $\Omega(n)$ samples.
+  As our main positive result we give a highly efficient algorithm for learning
+a sum of independent unknown Bernoulli random variables, corresponding to the
+transformation function $f(x)= \sum_{i=1}^n x_i$. Our algorithm learns to
+$\eps$-accuracy in poly$(n)$ time, using a surprising poly$(1/\eps)$ number of
+samples that is independent of $n.$ We also give an efficient algorithm that
+uses $\log n \cdot \poly(1/\eps)$ samples but has running time that is only
+$\poly(\log n, 1/\eps).$

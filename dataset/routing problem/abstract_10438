@@ -1,0 +1,18 @@
+For digraphs $D$ and $H$, a mapping $f: V(D)\dom V(H)$ is a {\em homomorphism
+of $D$ to $H$} if $uv\in A(D)$ implies $f(u)f(v)\in A(H).$ For a fixed directed
+or undirected graph $H$ and an input graph $D$, the problem of verifying
+whether there exists a homomorphism of $D$ to $H$ has been studied in a large
+number of papers. We study an optimization version of this decision problem.
+Our optimization problem is motivated by a real-world problem in defence
+logistics and was introduced very recently by the contributors and M. Tso.
+  Suppose we are given a pair of digraphs $D,H$ and a positive integral cost
+$c_i(u)$ for each $u\in V(D)$ and $i\in V(H)$. The cost of a homomorphism $f$
+of $D$ to $H$ is $\sum_{u\in V(D)}c_{f(u)}(u)$. Let $H$ be a fixed digraph. The
+minimum cost homomorphism problem for $H$, MinHOMP($H$), is stated as follows:
+For input digraph $D$ and costs $c_i(u)$ for each $u\in V(D)$ and $i\in V(H)$,
+verify whether there is a homomorphism of $D$ to $H$ and, if it does exist,
+find such a homomorphism of minimum cost. In our previous paper we obtained a
+dichotomy classification of the time complexity of \MiP for $H$ being a
+semicomplete digraph. In this paper we extend the classification to
+semicomplete $k$-partite digraphs, $k\ge 3$, and obtain such a classification
+for bipartite tournaments.

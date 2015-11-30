@@ -1,0 +1,9 @@
+The whole computer hardware industry embraced multicores. For these machines,
+the extreme optimisation of sequential algorithms is no longer sufficient to
+squeeze the real machine power, which can be only exploited via thread-level
+parallelism. Decision tree algorithms exhibit natural concurrency that makes
+them suitable to be parallelised. This paper presents an approach for
+easy-yet-efficient porting of an implementation of the C4.5 algorithm on
+multicores. The parallel porting requires minimal changes to the original
+sequential code, and it is able to exploit up to 7X speedup on an Intel
+dual-quad core machine.

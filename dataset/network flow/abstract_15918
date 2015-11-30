@@ -1,0 +1,18 @@
+We consider the problem of rate allocation among multiple simultaneous video
+streams sharing multiple heterogeneous access networks. We develop and evaluate
+an analytical framework for optimal rate allocation based on observed available
+bit rate (ABR) and round-trip time (RTT) over each access network and video
+distortion-rate (DR) characteristics. The rate allocation is formulated as a
+convex optimization problem that minimizes the total expected distortion of all
+video streams. We present a distributed approximation of its solution and
+compare its performance against H-infinity optimal control and two heuristic
+schemes based on TCP-style additive-increase-multiplicative decrease (AIMD)
+principles. The various rate allocation schemes are evaluated in simulations of
+multiple high-definition (HD) video streams sharing multiple access networks.
+Our results demonstrate that, in comparison with heuristic AIMD-based schemes,
+both media-aware allocation and H-infinity optimal control benefit from
+proactive congestion avoidance and reduce the average packet loss rate from 45%
+to below 2%. Improvement in average received video quality ranges between 1.5
+to 10.7 dB in PSNR for various background traffic loads and video playout
+deadlines. Media-aware allocation further exploits its knowledge of the video
+DR characteristics to achieve a more balanced video quality among all streams.

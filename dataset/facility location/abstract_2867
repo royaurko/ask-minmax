@@ -1,0 +1,11 @@
+For a robust leverage diagnostic in linear regression, Rousseeuw and van
+Zomeren [1990] proposed using robust distance (Mahalanobis distance computed
+using robust estimates of location and covariance). However, a design matrix X
+that contains coded categorical predictor variables is often sufficiently
+sparse that robust estimates of location and covariance cannot be computed.
+Specifically, matrices formed by taking subsets of the rows of X are likely to
+be singular, causing algorithms that rely on subsampling to fail. Following the
+spirit of Maronna and Yohai [2000], we observe that extreme leverage points are
+extreme in the continuous predictor variables. We therefore propose a robust
+leverage diagnostic that combines a robust analysis of the continuous predictor
+variables and the classical definition of leverage.

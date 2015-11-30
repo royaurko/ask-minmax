@@ -1,0 +1,23 @@
+Casella and Hwang, 1983, JASA, introduced a broad class of recentered
+confidence spheres for the mean theta of a multivariate normal distribution
+with covariance matrix sigma^2 I, for sigma^2 known. Both the center and radius
+functions of these confidence spheres are flexible functions of the data. For
+the particular case of confidence spheres centered on the positive-part
+James-Stein estimator and with radius determined by empirical Bayes
+considerations, they show numerically that these confidence spheres have the
+desired minimum coverage probability 1-alpha and dominate the usual confidence
+sphere in terms of scaled volume. We shift the focus from the scaled volume to
+the scaled expected volume of the recentered confidence sphere. Since both the
+coverage probability and the scaled expected volume are functions of the
+Euclidean norm of theta, it is feasible to optimize the performance of the
+recentered confidence sphere by numerically computing both the center and
+radius functions so as to optimize some clearly specified criterion. We suppose
+that we have uncertain prior information that theta = 0. This motivates us to
+determine the center and radius functions of the confidence sphere by numerical
+minimization of the scaled expected volume of the confidence sphere at theta =
+0, subject to the constraints that (a) the coverage probability never falls
+below 1-alpha and (b) the radius never exceeds the radius of the standard
+1-alpha confidence sphere. Our results show that, by focusing on this clearly
+specified criterion, significant gains in performance (in terms of this
+criterion) can be achieved. We also present analogous results for the much more
+difficult case that sigma^2 is unknown.

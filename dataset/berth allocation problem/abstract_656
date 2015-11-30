@@ -1,0 +1,23 @@
+The watershed algorithm belongs to classical algorithms in mathematical
+morphology. Lotufo et al. published a principle of the watershed computation by
+means of an Image Foresting Transform (IFT), which computes a shortest path
+forest from given markers. The algorithm itself was described for a 2D case
+(image) without a detailed discussion of its computation and memory demands for
+real datasets. As IFT cleverly solves the problem of plateaus and as it gives
+precise results when thin objects have to be segmented, it is obvious to use
+this algorithm for 3D datasets taking in mind the minimizing of a higher memory
+consumption for the 3D case without loosing low asymptotical time complexity of
+O(m+C) (and also the real computation speed). The main goal of this paper is an
+implementation of the IFT algorithm with a priority queue with buckets and
+careful tuning of this implementation to reach as minimal memory consumption as
+possible.
+  The paper presents five possible modifications and methods of implementation
+of the IFT algorithm. All presented implementations keep the time complexity of
+the standard priority queue with buckets but the best one minimizes the costly
+memory allocation and needs only 19-45% of memory for typical 3D medical
+imaging datasets. Memory saving was reached by an IFT algorithm simplification,
+which stores more elements in temporary structures but these elements are
+simpler and thus need less memory.
+  The best presented modification allows segmentation of large 3D medical
+datasets (up to 512x512x680 voxels) with 12-or 16-bits per voxel on currently
+available PC based workstations.

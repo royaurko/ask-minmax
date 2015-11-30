@@ -1,0 +1,15 @@
+We develop a new finite element method for solving planar elasticity problems
+involving of heterogeneous materials with a mesh not necessarily aligning with
+the interface of the materials. This method is based on the `broken'
+Crouzeix-Raviart $P_1$-nonconforming finite element method for elliptic
+interface problems \cite{Kwak-We-Ch}.
+  To ensure the coercivity of the bilinear form arising from using the
+nonconforming finite elements, we add stabilizing terms as in the discontinuous
+Galerkin (DG) method \cite{Arnold-IP},\cite{Ar-B-Co-Ma},\cite{Wheeler}. The
+novelty of our method is that we use meshes independent of the interface, so
+that the interface may cut through the elements. Instead, we modify the basis
+functions so that they satisfy the Laplace-Young condition along the interface
+of each element. We prove optimal $H^1$ and divergence norm error estimates.
+  Numerical experiments are carried out to demonstrate that the our method is
+optimal for various Lam\`e parameters $\mu$ and $\lambda$ and locking free as
+$\lambda\to\infty$.

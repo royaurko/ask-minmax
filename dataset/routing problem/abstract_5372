@@ -1,0 +1,23 @@
+The usefulness of parameterized algorithmics has often depended on what
+Niedermeier has called, "the art of problem parameterization". In this paper we
+introduce and explore a novel but general form of parameterization: the number
+of numbers. Several classic numerical problems, such as Subset Sum, Partition,
+3-Partition, Numerical 3-Dimensional Matching, and Numerical Matching with
+Target Sums, have multisets of integers as input. We initiate the study of
+parameterizing these problems by the number of distinct integers in the input.
+We rely on an FPT result for ILPF to show that all the above-mentioned problems
+are fixed-parameter tractable when parameterized in this way. In various
+applied settings, problem inputs often consist in part of multisets of integers
+or multisets of weighted objects (such as edges in a graph, or jobs to be
+scheduled). Such number-of-numbers parameterized problems often reduce to
+subproblems about transition systems of various kinds, parameterized by the
+size of the system description. We consider several core problems of this kind
+relevant to number-of-numbers parameterization. Our main hardness result
+considers the problem: given a non-deterministic Mealy machine M (a finite
+state automaton outputting a letter on each transition), an input word x, and a
+census requirement c for the output word specifying how many times each letter
+of the output alphabet should be written, decide whether there exists a
+computation of M reading x that outputs a word y that meets the requirement c.
+We show that this problem is hard for W[1]. If the question is whether there
+exists an input word x such that a computation of M on x outputs a word that
+meets c, the problem becomes fixed-parameter tractable.

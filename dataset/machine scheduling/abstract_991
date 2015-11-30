@@ -1,0 +1,23 @@
+Relay networks having $n$ source-to-destination pairs and $m$ half-duplex
+relays, all operating in the same frequency band in the presence of block
+fading, are analyzed. This setup has attracted significant attention and
+several relaying protocols have been reported in the literature. However, most
+of the proposed solutions require either centrally coordinated scheduling or
+detailed channel state information (CSI) at the transmitter side. Here, an
+opportunistic relaying scheme is proposed, which alleviates these limitations.
+The scheme entails a two-hop communication protocol, in which sources
+communicate with destinations only through half-duplex relays. The key idea is
+to schedule at each hop only a subset of nodes that can benefit from
+\emph{multiuser diversity}. To select the source and destination nodes for each
+hop, it requires only CSI at receivers (relays for the first hop, and
+destination nodes for the second hop) and an integer-value CSI feedback to the
+transmitters. For the case when $n$ is large and $m$ is fixed, it is shown that
+the proposed scheme achieves a system throughput of $m/2$ bits/s/Hz. In
+contrast, the information-theoretic upper bound of $(m/2)\log \log n$ bits/s/Hz
+is achievable only with more demanding CSI assumptions and cooperation between
+the relays. Furthermore, it is shown that, under the condition that the product
+of block duration and system bandwidth scales faster than $\log n$, the
+achievable throughput of the proposed scheme scales as $\Theta ({\log n})$.
+Notably, this is proven to be the optimal throughput scaling even if
+centralized scheduling is allowed, thus proving the optimality of the proposed
+scheme in the scaling law sense.

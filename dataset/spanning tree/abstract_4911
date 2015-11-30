@@ -1,0 +1,22 @@
+Formulations of the turbo equalization approach to iterative equalization and
+decoding vary greatly when channel knowledge is either partially or completely
+unknown. Maximum aposteriori probability (MAP) and minimum mean square error
+(MMSE) approaches leverage channel knowledge to make explicit use of soft
+information (priors over the transmitted data bits) in a manner that is
+distinctly nonlinear, appearing either in a trellis formulation (MAP) or inside
+an inverted matrix (MMSE). To date, nearly all adaptive turbo equalization
+methods either estimate the channel or use a direct adaptation equalizer in
+which estimates of the transmitted data are formed from an expressly linear
+function of the received data and soft information, with this latter
+formulation being most common. We study a class of direct adaptation turbo
+equalizers that are both adaptive and nonlinear functions of the soft
+information from the decoder. We introduce piecewise linear models based on
+context trees that can adaptively approximate the nonlinear dependence of the
+equalizer on the soft information such that it can choose both the partition
+regions as well as the locally linear equalizer coefficients in each region
+independently, with computational complexity that remains of the order of a
+traditional direct adaptive linear equalizer. This approach is guaranteed to
+asymptotically achieve the performance of the best piecewise linear equalizer
+and we quantify the MSE performance of the resulting algorithm and the
+convergence of its MSE to that of the linear minimum MSE estimator as the depth
+of the context tree and the data length increase.

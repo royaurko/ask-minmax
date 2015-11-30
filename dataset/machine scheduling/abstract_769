@@ -1,0 +1,15 @@
+This paper first presents a parallel solution for the Flowshop Scheduling
+Problem in parallel environment, and then proposes a novel load balancing
+strategy. The proposed Proportional Fairness Strategy (PFS) takes computational
+performance of computing process sets into account, and assigns additional load
+to computing nodes proportionally to their evaluated performance. In order to
+efficiently utilize the power of parallel resource, we also discuss the data
+structure used in communications among computational nodes and design an
+optimized data transfer strategy. This data transfer strategy combined with the
+proposed load balancing strategy have been implemented and tested on a super
+computer consisted of 86 CPUs using MPI as the middleware. The results show
+that the proposed PFS achieves better performance in terms of computing time
+than the existing Adaptive Contracting Within Neighborhood Strategy. We also
+show that the combination of both the Proportional Fairness Strategy and the
+proposed data transferring strategy achieves additional 13~15% improvement in
+efficiency of parallelism.

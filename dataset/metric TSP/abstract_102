@@ -1,0 +1,20 @@
+This paper considers the joint transceiver design for downlink multiuser
+multiple-input single-output (MISO) systems with coordinated base stations
+(BSs) where imperfect channel state information (CSI) is available at the BSs
+and mobile stations (MSs). By incorporating antenna correlation at the BSs and
+taking channel estimation errors into account, we solve two robust design
+problems: 1) minimizing the weighted sum of meansquare- error (MSE) with per BS
+antenna power constraint, and 2) minimizing the total power of all BSs with per
+user MSE target and per BS antenna power constraints. These problems are solved
+as follows. First, for fixed receivers, we propose centralized and novel
+computationally efficient distributed algorithms to jointly optimize the
+precoders of all users. Our centralized algorithms employ the second-order-cone
+programming (SOCP) approach, whereas, our novel distributed algorithms use the
+Lagrangian dual decomposition, modified matrix fractional minimization and an
+iterative method. Second, for fixed BS precoders, the receivers are updated by
+the minimum mean-square-error (MMSE) criterion. These two steps are repeated
+until convergence is achieved. In all of our simulation results, we have
+observed that the proposed distributed algorithms achieve the same performance
+as that of the centralized algorithms. Moreover, computer simulations verify
+the robustness of the proposed robust designs compared to the non-robust/naive
+designs.

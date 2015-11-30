@@ -1,0 +1,15 @@
+A system for live high quality surface reconstruction using a single moving
+depth camera on a commodity hardware is presented. High accuracy and real-time
+frame rate is achieved by utilizing graphics hardware computing capabilities
+via OpenCL and by using sparse data structure for volumetric surface
+representation. Depth sensor pose is estimated by combining serial texture
+registration algorithm with iterative closest points algorithm (ICP) aligning
+obtained depth map to the estimated scene model. Aligned surface is then fused
+into the scene. Kalman filter is used to improve fusion quality. Truncated
+signed distance function (TSDF) stored as block-based sparse buffer is used to
+represent surface. Use of sparse data structure greatly increases accuracy of
+scanned surfaces and maximum scanning area. Traditional GPU implementation of
+volumetric rendering and fusion algorithms were modified to exploit sparsity to
+achieve desired performance. Incorporation of texture registration for sensor
+pose estimation and Kalman filter for measurement integration improved accuracy
+and robustness of scanning process.

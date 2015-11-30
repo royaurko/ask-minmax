@@ -1,0 +1,20 @@
+Let $G$ be a nontrivial connected graph of order $n$, and $k$ an integer with
+$2\leq k\leq n$. For a set $S$ of $k$ vertices of $G$, let $\kappa (S)$ denote
+the maximum number $\ell$ of edge-disjoint trees $T_1,T_2,...,T_\ell$ in $G$
+such that $V(T_i)\cap V(T_j)=S$ for every pair $i,j$ of distinct integers with
+$1\leq i,j\leq \ell$. Chartrand et al. generalized the concept of connectivity
+as follows: The $k$-$connectivity$, denoted by $\kappa_k(G)$, of $G$ is defined
+by $\kappa_k(G)=$min$\{\kappa(S)\}$, where the minimum is taken over all
+$k$-subsets $S$ of $V(G)$. Thus $\kappa_2(G)=\kappa(G)$, where $\kappa(G)$ is
+the connectivity of $G$. Moreover, $\kappa_{n}(G)$ is the maximum number of
+edge-disjoint spanning trees of $G$.
+  This paper mainly focus on the $k$-connectivity of complete bipartite graphs
+$K_{a,b}$. First, we obtain the number of edge-disjoint spanning trees of
+$K_{a,b}$, which is $\lfloor\frac{ab}{a+b-1}\rfloor$, and specifically give the
+$\lfloor\frac{ab}{a+b-1}\rfloor$ edge-disjoint spanning trees. Then based on
+this result, we get the $k$-connectivity of $K_{a,b}$ for all $2\leq k \leq
+a+b$. Namely, if $k>b-a+2$ and $a-b+k$ is odd then
+$\kappa_{k}(K_{a,b})=\frac{a+b-k+1}{2}+\lfloor\frac{(a-b+k-1)(b-a+k-1)}{4(k-1)}\rfloor,$
+if $k>b-a+2$ and $a-b+k$ is even then
+$\kappa_{k}(K_{a,b})=\frac{a+b-k}{2}+\lfloor\frac{(a-b+k)(b-a+k)}{4(k-1)}\rfloor,$
+and if $k\leq b-a+2$ then $\kappa_{k}(K_{a,b})=a. $

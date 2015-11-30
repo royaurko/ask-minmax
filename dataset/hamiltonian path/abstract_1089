@@ -1,0 +1,25 @@
+Diverse classes of proteins function through large-scale conformational
+changes and various sophisticated computational algorithms have been proposed
+to enhance sampling of these macromolecular transition paths. Because such
+paths are curves in a high-dimensional space, it has been difficult to
+quantitatively compare multiple paths, a necessary prerequisite to, for
+instance, assess the quality of different algorithms. We introduce a
+comprehensive method named Path Similarity Analysis (PSA) that enables us to
+quantify the similarity between two arbitrary paths and extract the
+atomic-scale determinants responsible for their differences. PSA utilizes the
+full information available in $3N$-dimensional configuration space trajectories
+by employing the Hausdorff or Fr\'echet metrics (adopted from computational
+geometry) to quantify the degree of similarity between piecewise-linear curves.
+It thus completely avoids relying on projections into low dimensional spaces,
+as used in traditional approaches. Using, as an example, the closed-to-open
+transitions of the enzyme adenylate kinase (AdK) in its substrate-free form, we
+compared a range of protein transition path-generating algorithms. PSA with
+clustering revealed that paths produced by a given method are more similar to
+each other than to those from another method and, for instance, that the
+ENM-based methods produced relatively similar paths. The new concept of a
+Hausdorff-pair map enabled us to extract the molecular structural determinants
+responsible for differences in pathways, namely a set of conserved salt bridges
+whose charge-charge interactions are fully modelled in DIMS MD but not in
+FRODA. PSA has the potential to enhance our understanding of transition path
+sampling methods, validate them, and ultimately help guide future research
+toward deeper physical insights into conformational transitions.

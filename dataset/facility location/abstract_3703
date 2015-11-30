@@ -1,0 +1,20 @@
+Cloud Computing has emerged as a successful computing paradigm for
+efficiently utilizing managed compute infrastructure such as high speed
+rack-mounted servers, connected with high speed networking, and reliable
+storage. Usually such infrastructure is dedicated, physically secured and has
+reliable power and networking infrastructure. However, much of our idle compute
+capacity is present in unmanaged infrastructure like idle desktops, lab
+machines, physically distant server machines, and laptops. We present a scheme
+to utilize this idle compute capacity on a best-effort basis and provide high
+availability even in face of failure of individual components or facilities.
+  We run virtual machines on the commodity infrastructure and present a cloud
+interface to our end users. The primary challenge is to maintain availability
+in the presence of node failures, network failures, and power failures. We run
+multiple copies of a Virtual Machine (VM) redundantly on geographically
+dispersed physical machines to achieve availability. If one of the running
+copies of a VM fails, we seamlessly switchover to another running copy. We use
+Virtual Machine Record/Replay capability to implement this redundancy and
+switchover. In current progress, we have implemented VM Record/Replay for
+uniprocessor machines over Linux/KVM and are currently working on VM
+Record/Replay on shared-memory multiprocessor machines. We report initial
+experimental results based on our implementation.

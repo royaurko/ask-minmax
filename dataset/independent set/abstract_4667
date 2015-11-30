@@ -1,0 +1,25 @@
+Numerical continuation calculations for ordinary differential equations
+(ODEs) are, by now, an established tool for bifurcation analysis in dynamical
+systems theory as well as across almost all natural and engineering sciences.
+Although several excellent standard software packages are available for ODEs,
+there are - for good reasons - no standard numerical continuation toolboxes
+available for partial differential equations (PDEs), which cover a broad range
+of different classes of PDEs automatically. A natural approach to this problem
+is to look for efficient gluing computation approaches, with independent
+components developed by researchers in numerical analysis, dynamical systems,
+scientific computing and mathematical modelling. In this paper, we shall study
+several elliptic PDEs (Lane-Emden-Fowler, Lane-Emden-Fowler with microscopic
+force, Caginalp) via the numerical continuation software pde2path and develop a
+gluing component to determine a set of starting solutions for the continuation
+by exploting the variational structures of the PDEs. In particular, we solve
+the initialization problem of numerical continuation for PDEs via a minimax
+algorithm to find multiple unstable solution. Furthermore, for the Caginalp
+system, we illustrate the efficient gluing link of pde2path to the underlying
+mesh generation and the FEM MatLab pdetoolbox. Even though the approach works
+efficiently due to the high-level programming language and without developing
+any new algorithms, we still obtain interesting bifurcation diagrams and
+directly applicable conclusions about the three elliptic PDEs we study, in
+particular with respect to symmetry-breaking. In particular, we show for a
+modified Lane-Emden-Fowler equation with an asymmetric microscopic force, how a
+fully connected bifurcation diagram splits up into C-shaped isolas on which
+localized pattern deformation appears towards two different regimes.

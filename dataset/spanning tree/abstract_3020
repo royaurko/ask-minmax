@@ -1,0 +1,11 @@
+Tree structures are very often used data structures. Among ordered types of
+trees there are many variants whose basic operations such as insert, delete,
+search, delete-min are characterized by logarithmic time complexity. In the
+article I am going to present the structure whose time complexity for each of
+the above operations is $O(\frac{M}{K} + K)$, where M is the size of data type
+and K is constant properly matching the size of data type. Properly matched K
+will make the structure function as a very effective Priority Queue. The
+structure size linearly depends on the number and size of elements. PTrie is a
+clever combination of the idea of prefix tree -- Trie, structure of logarithmic
+time complexity for insert and remove operations, doubly linked list and
+queues.

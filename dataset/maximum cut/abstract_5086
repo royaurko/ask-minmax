@@ -1,0 +1,12 @@
+We present a procedure for splitting processes in a process algebra with
+multi-actions (a subset of the specification language mCRL2). This splitting
+procedure cuts a process into two processes along a set of actions A: roughly,
+one of these processes contains no actions from A, while the other process
+contains only actions from A. We state and prove a theorem asserting that the
+parallel composition of these two processes equals the original process under
+appropriate synchronization.
+  We apply our splitting procedure to the process algebraic semantics of the
+coordination language Reo: using this procedure and its related theorem, we
+formally establish the soundness of splitting Reo connectors along the
+boundaries of their (a)synchronous regions in implementations of Reo. Such
+splitting can significantly improve the performance of connectors.

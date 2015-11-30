@@ -1,0 +1,22 @@
+When a sensor has continuous measurements but sends limited messages over a
+data network to a supervisor which estimates the state, the available packet
+rate fixes the achievable quality of state estimation. When such rate limits
+turn stringent, the sensor's messaging policy should be designed anew. What are
+the good causal messaging policies ? What should message packets contain ? What
+is the lowest possible distortion in a causal estimate at the supervisor ? Is
+Delta sampling better than periodic sampling ? We answer these questions under
+an idealized model of the network and the assumption of perfect measurements at
+the sensor. For a scalar, linear diffusion process, we study the problem of
+choosing the causal sampling times that will give the lowest aggregate squared
+error distortion. We stick to finite-horizons and impose a hard upper bound on
+the number of allowed samples. We cast the design as a problem of choosing an
+optimal sequence of stopping times. We reduce this to a nested sequence of
+problems each asking for a single optimal stopping time. Under an unproven but
+natural assumption about the least-square estimate at the supervisor, each of
+these single stopping problems are of standard form. The optimal stopping times
+are random times when the estimation error exceeds designed envelopes. For the
+case where the state is a Brownian motion, we give analytically: the shape of
+the optimal sampling envelopes, the shape of the envelopes under optimal Delta
+sampling, and their performances. Surprisingly, we find that Delta sampling
+performs badly. Hence, when the rate constraint is a hard limit on the number
+of samples over a finite horizon, we should should not use Delta sampling.

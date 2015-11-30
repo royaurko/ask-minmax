@@ -1,0 +1,21 @@
+In this paper, we formulate a novel problem for finding blackhole and volcano
+patterns in a large directed graph. Specifically, a blackhole pattern is a
+group which is made of a set of nodes in a way such that there are only inlinks
+to this group from the rest nodes in the graph. In contrast, a volcano pattern
+is a group which only has outlinks to the rest nodes in the graph. Both
+patterns can be observed in real world. For instance, in a trading network, a
+blackhole pattern may represent a group of traders who are manipulating the
+market. In the paper, we first prove that the blackhole mining problem is a
+dual problem of finding volcanoes. Therefore, we focus on finding the blackhole
+patterns. Along this line, we design two pruning schemes to guide the blackhole
+finding process. In the first pruning scheme, we strategically prune the search
+space based on a set of pattern-size-independent pruning rules and develop an
+iBlackhole algorithm. The second pruning scheme follows a divide-and-conquer
+strategy to further exploit the pruning results from the first pruning scheme.
+Indeed, a target directed graphs can be divided into several disconnected
+subgraphs by the first pruning scheme, and thus the blackhole finding can be
+conducted in each disconnected subgraph rather than in a large graph. Based on
+these two pruning schemes, we also develop an iBlackhole-DC algorithm. Finally,
+experimental results on real-world data show that the iBlackhole-DC algorithm
+can be several orders of magnitude faster than the iBlackhole algorithm, which
+has a huge computational advantage over a brute-force method.

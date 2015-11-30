@@ -1,0 +1,16 @@
+We present theory and algorithms to perform an all-sky coherent search for
+periodic signals of gravitational waves in narrow-band data of a detector. Our
+search is based on a statistic, commonly called the $\mathcal{F}$-statistic,
+derived from the maximum-likelihood principle in Paper I of this series. We
+briefly review the response of a ground-based detector to the
+gravitational-wave signal from a rotating neuron star and the derivation of the
+$\mathcal{F}$-statistic. We present several algorithms to calculate efficiently
+this statistic. In particular our algorithms are such that one can take
+advantage of the speed of fast Fourier transform (FFT) in calculation of the
+$\mathcal{F}$-statistic. We construct a grid in the parameter space such that
+the nodes of the grid coincide with the Fourier frequencies. We present
+interpolation methods that approximately convert the two integrals in the
+$\mathcal{F}$-statistic into Fourier transforms so that the FFT algorithm can
+be applied in their evaluation. We have implemented our methods and algorithms
+into computer codes and we present results of the Monte Carlo simulations
+performed to test these codes.

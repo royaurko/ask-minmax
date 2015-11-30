@@ -1,0 +1,11 @@
+Radio labeling is a variation of Hale's channel assignment problem, in which
+one seeks to assign positive integers to the vertices of a graph $G$ subject to
+certain constraints involving the distances between the vertices. Specifically,
+a radio labeling of a connected graph $G$ is a function $c:V(G) \rightarrow
+\mathbb Z_+$ such that $$d(u,v)+|c(u)-c(v)|\geq 1+\text{diam}(G)$$ for every
+two distinct vertices $u$ and $v$ of $G$ (where $d(u,v)$ is the distance
+between $u$ and $v$). The span of a radio labeling is the maximum integer
+assigned to a vertex. The radio number of a graph $G$ is the minimum span,
+taken over all radio labelings of $G$. This paper establishes the radio number
+of the Cartesian product of a cycle graph with itself (i.e., of $C_n\square
+C_n$.)

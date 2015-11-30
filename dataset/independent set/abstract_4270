@@ -1,0 +1,26 @@
+We consider multi-state capture-recapture-recovery data where observed
+individuals are recorded in a set of possible discrete states. Traditionally,
+the Arnason-Schwarz model has been fitted to such data where the state process
+is modeled as a first-order Markov chain, though second-order models have also
+been proposed and fitted to data. However, low-order Markov models may not
+accurately represent the underlying biology. For example, specifying a
+(time-independent) first-order Markov process assumes that the dwell time in
+each state (i.e., the duration of a stay in a given state) has a geometric
+distribution, and hence that the modal dwell time is one. Specifying
+time-dependent or higher-order processes provides additional flexibility, but
+at the expense of a potentially significant number of additional model
+parameters. We extend the Arnason-Schwarz model by specifying a semi-Markov
+model for the state process, where the dwell-time distribution is specified
+more generally, using for example a shifted Poisson or negative binomial
+distribution. A state expansion technique is applied in order to represent the
+resulting semi-Markov Arnason-Schwarz model in terms of a simpler and
+computationally tractable hidden Markov model. Semi-Markov Arnason-Schwarz
+models come with only a very modest increase in the number of parameters, yet
+permit a significantly more flexible state process. Model selection can be
+performed using standard procedures, and in particular via the use of
+information criteria. The semi-Markov approach allows for important biological
+inference to be drawn on the underlying state process, for example on the times
+spent in the different states. The feasibility of the approach is demonstrated
+in a simulation study, before being applied to real data corresponding to house
+finches where the states correspond to the presence or absence of
+conjunctivitis.

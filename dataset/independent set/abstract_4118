@@ -1,0 +1,23 @@
+Anisotropic mesh adaptation is a powerful way to directly minimise the
+computational cost of mesh based simulation. It is particularly important for
+multi-scale problems where the required number of floating-point operations can
+be reduced by orders of magnitude relative to more traditional static mesh
+approaches.
+  Increasingly, finite element and finite volume codes are being optimised for
+modern multi-core architectures. Typically, decomposition methods implemented
+through the Message Passing Interface (MPI) are applied for inter-node
+parallelisation, while a threaded programming model, such as OpenMP, is used
+for intra-node parallelisation. Inter-node parallelism for mesh adaptivity has
+been successfully implemented by a number of groups. However, thread-level
+parallelism is significantly more challenging because the underlying data
+structures are extensively modified during mesh adaptation and a greater degree
+of parallelism must be realised.
+  In this paper we describe a new thread-parallel algorithm for anisotropic
+mesh adaptation algorithms. For each of the mesh optimisation phases
+(refinement, coarsening, swapping and smoothing) we describe how independent
+sets of tasks are defined. We show how a deferred updates strategy can be used
+to update the mesh data structures in parallel and without data contention. We
+show that despite the complex nature of mesh adaptation and inherent load
+imbalances in the mesh adaptivity, a parallel efficiency of 60% is achieved on
+an 8 core Intel Xeon Sandybridge, and a 40% parallel efficiency is achieved
+using 16 cores in a 2 socket Intel Xeon Sandybridge ccNUMA system.

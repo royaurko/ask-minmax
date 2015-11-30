@@ -1,0 +1,24 @@
+We consider a multi-object detection problem over a sensor network (SNET)
+with limited range multi-modal sensors. Limited range sensing environment
+arises in a sensing field prone to signal attenuation and path losses. The
+general problem complements the widely considered decentralized detection
+problem where all sensors observe the same object. In this paper we develop a
+distributed detection approach based on recent development of the false
+discovery rate (FDR) and the associated BH test procedure. The BH procedure is
+based on rank ordering of scalar test statistics. We first develop scalar test
+statistics for multidimensional data to handle multi-modal sensor observations
+and establish its optimality in terms of the BH procedure. We then propose a
+distributed algorithm in the ideal case of infinite attenuation for
+identification of sensors that are in the immediate vicinity of an object. We
+demonstrate communication message scalability to large SNETs by showing that
+the upper bound on the communication message complexity scales linearly with
+the number of sensors that are in the vicinity of objects and is independent of
+the total number of sensors in the SNET. This brings forth an important
+principle for evaluating the performance of an SNET, namely, the need for
+scalability of communications and performance with respect to the number of
+objects or events in an SNET irrespective of the network size. We then account
+for finite attenuation by modeling sensor observations as corrupted by
+uncertain interference arising from distant objects and developing robust
+extensions to our idealized distributed scheme. The robustness properties
+ensure that both the error performance and communication message complexity
+degrade gracefully with interference.

@@ -1,0 +1,24 @@
+A workflow specification defines sets of steps and users. An contributorization
+policy determines for each user a subset of steps the user is allowed to
+perform. Other security requirements, such as separation-of-duty, impose
+constraints on which subsets of users may perform certain subsets of steps. The
+\emph{workflow satisfiability problem} (WSP) is the problem of determining
+whether there exists an assignment of users to workflow steps that satisfies
+all such contributorizations and constraints. An algorithm for solving WSP is
+important, both as a static analysis tool for workflow specifications, and for
+the construction of run-time reference monitors for workflow management
+systems. Given the computational difficulty of WSP, it is important,
+particularly for the second application, that such algorithms are as efficient
+as possible.
+  We introduce class-independent constraints, enabling us to model scenarios
+where the set of users is partitioned into groups, and the identities of the
+user groups are irrelevant to the satisfaction of the constraint. We prove that
+solving WSP is fixed-parameter tractable (FPT) for this class of constraints
+and develop an FPT algorithm that is useful in practice. We compare the
+performance of the FPT algorithm with that of SAT4J (a pseudo-Boolean SAT
+solver) in computational experiments, which show that our algorithm
+significantly outperforms SAT4J for many instances of WSP. User-independent
+constraints, a large class of constraints including many practical ones, are a
+special case of class-independent constraints for which WSP was proved to be
+FPT (Cohen {\em et al.}, J. Artif. Intel. Res. 2014). Thus our results
+considerably extend our knowledge of the fixed-parameter tractability of WSP.

@@ -1,0 +1,18 @@
+Uniform sampling from graphical realizations of a given degree sequence is a
+fundamental component in simulation-based measurements of network observables,
+with applications ranging from epidemics, through social networks to Internet
+modeling. Existing graph sampling methods are either link-swap based
+(Markov-Chain Monte Carlo algorithms) or stub-matching based (the Configuration
+Model). Both types are ill-controlled, with typically unknown mixing times for
+link-swap methods and uncontrolled rejections for the Configuration Model. Here
+we propose an efficient, polynomial time algorithm that generates statistically
+independent graph samples with a given, arbitrary, degree sequence. The
+algorithm provides a weight associated with each sample, allowing the
+observable to be measured either uniformly over the graph ensemble, or,
+alternatively, with a desired distribution. Unlike other algorithms, this
+method always produces a sample, without back-tracking or rejections. Using a
+central limit theorem-based reasoning, we argue, that for large N, and for
+degree sequences admitting many realizations, the sample weights are expected
+to have a lognormal distribution. As examples, we apply our algorithm to
+generate networks with degree sequences drawn from power-law distributions and
+from binomial distributions.

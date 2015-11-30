@@ -1,0 +1,22 @@
+We study the computational complexity of central analysis problems for
+One-Counter Markov Decision Processes (OC-MDPs), a class of finitely-presented,
+countable-state MDPs. OC-MDPs are equivalent to a controlled extension of
+(discrete-time) Quasi-Birth-Death processes (QBDs), a stochastic model studied
+heavily in queueing theory and applied probability. They can thus be viewed as
+a natural ``adversarial'' version of a classic stochastic model. Alternatively,
+they can also be viewed as a natural probabilistic/controlled extension of
+classic one-counter automata. OC-MDPs also subsume (as a very restricted
+special case) a recently studied MDP model called ``solvency games'' that model
+a risk-averse gambling scenario. Basic computational questions about these
+models include ``termination'' questions and ``limit'' questions, such as the
+following: does the controller have a ``strategy'' (or ``policy'') to ensure
+that the counter (which may for example count the number of jobs in the queue)
+will hit value 0 (the empty queue) almost surely (a.s.)? Or that it will have
+infinite limsup value, a.s.? Or, that it will hit value 0 in selected terminal
+states, a.s.? Or, in case these are not satisfied a.s., compute the maximum
+(supremum) such probability over all strategies. We provide new upper and lower
+bounds on the complexity of such problems. For some of them we present a
+polynomial-time algorithm, whereas for others we show PSPACE- or BH-hardness
+and give an EXPTIME upper bound. Our upper bounds combine techniques from the
+theory of MDP reward models, the theory of random walks, and a variety of
+automata-theoretic methods.

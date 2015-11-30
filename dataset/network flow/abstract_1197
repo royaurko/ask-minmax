@@ -1,0 +1,18 @@
+Flow scheduling tends to be one of the oldest and most stubborn problems in
+networking. It becomes more crucial in the next generation network, due to fast
+changing link states and tremendous cost to explore the global structure. In
+such situation, distributed algorithms often dominate. In this paper, we design
+a distributed virtual game to solve the flow scheduling problem and then
+generalize it to situations of unknown environment, where online learning
+schemes are utilized. In the virtual game, we use incentives to stimulate
+selfish users to reach a Nash Equilibrium Point which is valid based on the
+analysis of the `Price of Anarchy'. In the unknown-environment generalization,
+our ultimate goal is the minimization of cost in the long run. In order to
+achieve balance between exploration of routing cost and exploitation based on
+limited information, we model this problem based on Multi-armed Bandit Scenario
+and combined newly proposed DSEE with the virtual game design. Armed with these
+powerful tools, we find a totally distributed algorithm to ensure the
+logarithmic growing of regret with time, which is optimum in classic
+Multi-armed Bandit Problem. Theoretical proof and simulation results both
+affirm this claim. To our knowledge, this is the first research to combine
+multi-armed bandit with distributed flow scheduling.

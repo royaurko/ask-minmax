@@ -1,0 +1,13 @@
+We recall the occupancy problem introduced by Konheim & Weiss in 1966 and we
+consider parking functions as hash maps. Each car $c_i$ prefers parking space
+$p_i$ (the hash map $c_i \mapsto p_i$ with $c_i$ is a key and $p_i$ an index
+into an array), if $p_i$ is occupied then $c_i$ the next available parking
+space (the hash table implementation using an open addressing strategy). This
+paper considers some others hash table implementations like hash tables with
+linked lists (with parking functions as hash maps). Using the Species Theory,
+we enumerate by Lagrange inversion those hash tables structures via a bijection
+with tree-like structures. This bijection provides a generalization of the
+Foata-Riordan bijection between parking functions and (forests of) rooted
+trees. Finally we show the number of hash tables with linked lists on a set of
+keys of cardinality $n$ is $n!C_n$, so the number of labeled binary trees with
+$n$ nodes.

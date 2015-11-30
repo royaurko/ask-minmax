@@ -1,0 +1,18 @@
+We give a randomized $2^{n+o(n)}$-time and space algorithm for solving the
+Shortest Vector Problem (SVP) on n-dimensional Euclidean lattices. This
+improves on the previous fastest algorithm: the deterministic
+$\widetilde{O}(4^n)$-time and $\widetilde{O}(2^n)$-space algorithm of
+Micciancio and Voulgaris (STOC 2010, SIAM J. Comp. 2013).
+  In fact, we give a conceptually simple algorithm that solves the (in our
+opinion, even more interesting) problem of discrete Gaussian sampling (DGS).
+More specifically, we show how to sample $2^{n/2}$ vectors from the discrete
+Gaussian distribution at any parameter in $2^{n+o(n)}$ time and space. (Prior
+work only solved DGS for very large parameters.) Our SVP result then follows
+from a natural reduction from SVP to DGS. We also show that our DGS algorithm
+implies a $2^{n + o(n)}$-time algorithm that approximates the Closest Vector
+Problem to within a factor of $1.97$.
+  In addition, we give a more refined algorithm for DGS above the so-called
+smoothing parameter of the lattice, which can generate $2^{n/2}$ discrete
+Gaussian samples in just $2^{n/2+o(n)}$ time and space. Among other things,
+this implies a $2^{n/2+o(n)}$-time and space algorithm for $1.93$-approximate
+decision SVP.

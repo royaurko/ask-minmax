@@ -1,0 +1,19 @@
+This paper presents a high speed implementation of an optical flow algorithm
+which computes planar velocity fields in an experimental flow. Real-time
+computation of the flow velocity field allows the experimentalist to have
+instantaneous access to quantitative features of the flow. This can be very
+useful in many situations: fast evaluation of the performances and
+characteristics of a new setup, design optimization, easier and faster
+parametric studies, etc. It can also be a valuable measurement tool for
+closed-loop flow control experiments where fast estimation of the state of the
+flow is needed. The algorithm is implemented on a Graphics Processing Unit
+(GPU). The accuracy of the computation is shown. Computation speed and
+scalability are highlighted along with guidelines for further improvements. The
+system architecture is flexible, scalable and can be adapted on the fly in
+order to process higher resolutions or achieve higher precision. The set-up is
+applied on a Backward-Facing Step (BFS) flow in a hydrodynamic channel. For
+validation purposes, classical Particle Image Velocimetry (PIV) is used to
+compare with instantaneous optical flow measurements. Important flow
+characteristics, such as the dynamics of the recirculation bubble, are well
+recovered in real time. Accuracy of real-time optical flow measurements is
+comparable to off-line PIV computations.

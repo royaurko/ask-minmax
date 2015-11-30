@@ -1,0 +1,24 @@
+The goal of this paper is to develop and analyze some fully discrete finite
+element methods for a displacement-pressure model modeling swelling dynamics of
+polymer gels under mechanical constraints. In the model, the swelling dynamics
+is governed by the solvent permeation and the elastic interaction; the
+permeation is described by a pressure equation for the solvent, and the elastic
+interaction is described by displacement equations for the solid network of the
+gel. By introducing an "elastic pressure" we first present a reformulation of
+the original model, and then propose a time-stepping scheme which decouples the
+PDE system at each time step into two sub-problems, one of which is a
+generalized Stokes problem for the displacement vector field and another is a
+diffusion problem for a "pseudo-pressure" field. To make such a multiphysical
+approach feasible, it is vital to discover admissible constraints to resolve
+the uniqueness issue for both sub-problems. The main advantage of the proposed
+approach is that it allows one to utilize any convergent Stokes solver together
+with any convergent diffusion equation solver to solve the polymer gel model.
+In the paper, the Taylor-Hood mixed finite element method combined with the
+continuous linear finite element method are used as an example to present the
+ideas and to demonstrate the viability of the proposed multiphysical approach.
+It is proved that, under a mesh constraint, both the proposed semi-discrete (in
+space) and fully discrete methods enjoy some discrete energy laws which mimic
+the differential energy law satisfied by the PDE solution. Optimal order error
+estimates in various norms are established for the numerical solutions of both
+the semi-discrete and fully discrete methods. Numerical experiments are also
+presented to show the efficiency of the proposed approach and methods.

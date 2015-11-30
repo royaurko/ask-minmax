@@ -1,0 +1,18 @@
+The solution-space structure of the 3-Satisfiability Problem (3-SAT) is
+studied as a function of the control parameter alpha (ratio of number of
+clauses to the number of variables) using numerical simulations. For this
+purpose, one has to sample the solution space with uniform weight. It is shown
+here that standard stochastic local-search (SLS) algorithms like "ASAT" and
+"MCMCMC" (also known as "parallel tempering") exhibit a sampling bias.
+Nevertheless, unbiased samples of solutions can be obtained using the
+"ballistic-networking approach", which is introduced here. It is a
+generalization of "ballistic search" methods and yields also a cluster
+structure of the solution space. As application, solutions of 3-SAT instances
+are generated using ASAT plus ballistic networking. The numerical results are
+compatible with a previous analytic prediction of a simple solution-space
+structure for small values of alpha and a transition to a clustered phase at
+alpha_c ~ 3.86, where the solution space breaks up into several non-negligible
+clusters. Furthermore, in the thermodynamic limit there are, for values of
+alpha close to the SATUNSAT transition alpha_s ~ 4.267, always clusters without
+any frozen variables. This may explain why some SLS algorithms are able to
+solve very large 3-SAT instances close to the SAT-UNSAT transition.

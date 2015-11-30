@@ -1,0 +1,25 @@
+A $k$-box $B=(R_1,...,R_k)$, where each $R_i$ is a closed interval on the
+real line, is defined to be the Cartesian product $R_1\times R_2\times
+...\times R_k$. If each $R_i$ is a unit length interval, we call $B$ a
+$k$-cube. Boxicity of a graph $G$, denoted as $\boxi(G)$, is the minimum
+integer $k$ such that $G$ is an intersection graph of $k$-boxes. Similarly, the
+cubicity of $G$, denoted as $\cubi(G)$, is the minimum integer $k$ such that
+$G$ is an intersection graph of $k$-cubes.
+  It was shown in [L. Sunil Chandran, Mathew C. Francis, and Naveen Sivadasan:
+Representing graphs as the intersection of axis-parallel cubes. MCDES-2008,
+IISc Centenary Conference, available at CoRR, abs/cs/ 0607092, 2006.] that, for
+a graph $G$ with maximum degree $\Delta$, $\cubi(G)\leq \lceil 4(\Delta +1)\log
+n\rceil$. In this paper, we show that, for a $k$-degenerate graph $G$,
+$\cubi(G) \leq (k+2) \lceil 2e \log n \rceil$. Since $k$ is at most $\Delta$
+and can be much lower, this clearly is a stronger result. This bound is tight.
+We also give an efficient deterministic algorithm that runs in $O(n^2k)$ time
+to output a $8k(\lceil 2.42 \log n\rceil + 1)$ dimensional cube representation
+for $G$.
+  An important consequence of the above result is that if the crossing number
+of a graph $G$ is $t$, then $\boxi(G)$ is $O(t^{1/4}{\lceil\log
+t\rceil}^{3/4})$ . This bound is tight up to a factor of $O((\log t)^{1/4})$.
+We also show that, if $G$ has $n$ vertices, then $\cubi(G)$ is $O(\log n +
+t^{1/4}\log t)$.
+  Using our bound for the cubicity of $k$-degenerate graphs we show that
+cubicity of almost all graphs in $\mathcal{G}(n,m)$ model is $O(d_{av}\log n)$,
+where $d_{av}$ denotes the average degree of the graph under consideration.

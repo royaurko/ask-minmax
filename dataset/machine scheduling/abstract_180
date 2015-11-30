@@ -1,0 +1,20 @@
+User scheduling and multiuser multi-antenna (MU-MIMO) transmission are at the
+core of high rate data-oriented downlink schemes of the next-generation of
+cellular systems (e.g., LTE-Advanced). Scheduling selects groups of users
+according to their channels vector directions and SINR levels. However, when
+scheduling is applied independently in each cell, the inter-cell interference
+(ICI) power at each user receiver is not known in advance since it changes at
+each new scheduling slot depending on the scheduling decisions of all
+interfering base stations. In order to cope with this uncertainty, we consider
+the joint operation of scheduling, MU-MIMO beamforming and Automatic Repeat
+reQuest (ARQ). We develop a game-theoretic framework for this problem and build
+on stochastic optimization techniques in order to find optimal scheduling and
+ARQ schemes. Particularizing our framework to the case of "outage service
+rates", we obtain a scheme based on adaptive variable-rate coding at the
+physical layer, combined with ARQ at the Logical Link Control (ARQ-LLC). Then,
+we present a novel scheme based on incremental redundancy Hybrid ARQ (HARQ)
+that is able to achieve a throughput performance arbitrarily close to the
+"genie-aided service rates", with no need for a genie that provides
+non-causally the ICI power levels. The novel HARQ scheme is both easier to
+implement and superior in performance with respect to the conventional
+combination of adaptive variable-rate coding and ARQ-LLC.

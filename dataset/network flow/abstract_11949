@@ -1,0 +1,17 @@
+We present a neural network model for polyphonic music transcription. The
+architecture of the proposed model is analogous to speech recognition systems
+and comprises an acoustic model and a music language mode}. The acoustic model
+is a neural network used for estimating the probabilities of pitches in a frame
+of audio. The language model is a recurrent neural network that models the
+correlations between pitch combinations over time. The proposed model is
+general and can be used to transcribe polyphonic music without imposing any
+constraints on the polyphony or the number or type of instruments. The acoustic
+and language model predictions are combined using a probabilistic graphical
+model. Inference over the output variables is performed using the beam search
+algorithm. We investigate various neural network architectures for the acoustic
+models and compare their performance to two popular state-of-the-art acoustic
+models. We also present an efficient variant of beam search that improves
+performance and reduces run-times by an order of magnitude, making the model
+suitable for real-time applications. We evaluate the model's performance on the
+MAPS dataset and show that the proposed model outperforms state-of-the-art
+transcription systems.

@@ -1,0 +1,21 @@
+Given a set of people and a set of events they attend, we address the problem
+of measuring connectedness or tie strength between each pair of persons given
+that attendance at mutual events gives an implicit social network between
+people. We take an axiomatic approach to this problem. Starting from a list of
+axioms that a measure of tie strength must satisfy, we characterize functions
+that satisfy all the axioms and show that there is a range of measures that
+satisfy this characterization. A measure of tie strength induces a ranking on
+the edges (and on the set of neighbors for every person). We show that for
+applications where the ranking, and not the absolute value of the tie strength,
+is the important thing about the measure, the axioms are equivalent to a
+natural partial order. Also, to settle on a particular measure, we must make a
+non-obvious decision about extending this partial order to a total order, and
+that this decision is best left to particular applications. We classify
+measures found in prior literature according to the axioms that they satisfy.
+In our experiments, we measure tie strength and the coverage of our axioms in
+several datasets. Also, for each dataset, we bound the maximum Kendall's Tau
+divergence (which measures the number of pairwise disagreements between two
+lists) between all measures that satisfy the axioms using the partial order.
+This informs us if particular datasets are well behaved where we do not have to
+worry about which measure to choose, or we have to be careful about the exact
+choice of measure we make.

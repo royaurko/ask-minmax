@@ -1,0 +1,14 @@
+Given two simplicial complexes in R^d, and start and end vertices in each
+complex, we show how to compute curves (in each complex) between these
+vertices, such that the Fr\'echet distance between these curves is minimized.
+As a polygonal curve is a complex, this generalizes the regular notion of weak
+Fr\'echet distance between curves. We also generalize the algorithm to handle
+an input of k simplicial complexes.
+  Using this new algorithm we can solve a slew of new problems, from computing
+a mean curve for a given collection of curves, to various motion planning
+problems. Additionally, we show that for the mean curve problem, when the k
+input curves are c-packed, one can (1+epsilon)-approximate the mean curve in
+near linear time, for fixed k and epsilon.
+  Additionally, we present an algorithm for computing the strong Fr\'echet
+distance between two curves, which is simpler than previous algorithms, and
+avoids using parametric search.

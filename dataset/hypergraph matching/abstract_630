@@ -1,0 +1,16 @@
+Matching dependencies were recently introduced as declarative rules for data
+cleaning and entity resolution. Enforcing a matching dependency on a database
+instance identifies the values of some attributes for two tuples, provided that
+the values of some other attributes are sufficiently similar. Assuming the
+existence of matching functions for making two attributes values equal, we
+formally introduce the process of cleaning an instance using matching
+dependencies, as a chase-like procedure. We show that matching functions
+naturally introduce a lattice structure on attribute domains, and a partial
+order of semantic domination between instances. Using the latter, we define the
+semantics of clean query answering in terms of certain/possible answers as the
+greatest lower bound/least upper bound of all possible answers obtained from
+the clean instances. We show that clean query answering is intractable in some
+cases. Then we study queries that behave monotonically wrt semantic domination
+order, and show that we can provide an under/over approximation for clean
+answers to monotone queries. Moreover, non-monotone positive queries can be
+relaxed into monotone queries.

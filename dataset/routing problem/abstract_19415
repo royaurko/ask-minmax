@@ -1,0 +1,18 @@
+Accurate numerical solutions of the equations of hydrodynamics play an ever
+more important role in many fields of astrophysics. In this work, we
+reinvestigate the accuracy of the moving-mesh code \textsc{Arepo} and show how
+its convergence order can be improved for general problems. In particular, we
+clarify that for certain problems \textsc{Arepo} only reaches first-order
+convergence for its original formulation. This can be rectified by simple
+modifications we propose to the time integration scheme and the spatial
+gradient estimates of the code, both improving the accuracy of the code. We
+demonstrate that the new implementation is indeed second-order accurate under
+the $L^1$ norm, and in particular substantially improves conservation of
+angular momentum. Interestingly, whereas these improvements can significantly
+change the results of smooth test problems, we also find that cosmological
+simulations of galaxy formation are unaffected, demonstrating that the
+numerical errors eliminated by the new formulation do not impact these
+simulations. In contrast, simulations of binary stars followed over a large
+number of orbital times are strongly affected, as here it is particularly
+crucial to avoid a long-term build up of errors in angular momentum
+conservation.

@@ -1,0 +1,16 @@
+In this paper we present a synthesis of the work performed on two inference
+algorithms: the Pearl's belief propagation (BP) algorithm applied to Bayesian
+networks without loops (i.e. polytree) and the Loopy belief propagation (LBP)
+algorithm (inspired from the BP) which is applied to networks containing
+undirected cycles. It is known that the BP algorithm, applied to Bayesian
+networks with loops, gives incorrect numerical results i.e. incorrect posterior
+probabilities. Murphy and al. [7] find that the LBP algorithm converges on
+several networks and when this occurs, LBP gives a good approximation of the
+exact posterior probabilities. However this algorithm presents an oscillatory
+behaviour when it is applied to QMR (Quick Medical Reference) network [15].
+This phenomenon prevents the LBP algorithm from converging towards a good
+approximation of posterior probabilities. We believe that the translation of
+the inference computation problem from the probabilistic framework to the
+possibilistic framework will allow performance improvement of LBP algorithm. We
+hope that an adaptation of this algorithm to a possibilistic causal network
+will show an improvement of the convergence of LBP.

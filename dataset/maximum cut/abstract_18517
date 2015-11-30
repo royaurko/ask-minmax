@@ -1,0 +1,24 @@
+Traditional binned statistics such as $\chi^2$ suffer from information loss
+and arbitrariness of the binning procedure. We point out that the underlying
+statistical quantity (the log likelihood $L$) does not require any binning
+beyond the one implied by instrumental readout channels, and we propose to use
+it for low-count data. The performance of $L$ in the model classification and
+point estimation problems is explored by Monte-Carlo simulations of Chandra and
+XMM X-ray spectra, and is compared to the performances of the binned Poisson
+statistic ($C$), Pearson's $\chi^2$ and Neyman's $\chi^2_N$, the Kolmogorov-
+Smirnov, and Kuiper' statistics. It is found that the unbinned log likelihood
+$L$ performs best with regard to the expected chi-square distance between true
+and estimated spectra, the chance of a successful identification among discrete
+candidate models, the area under the receiver-operator curve of reduced
+(two-model) binary classification problems, and generally also with regard to
+the mean square errors of individual spectrum parameters. The $\chi^2$
+($\chi^2_{\rm N}$) statistics should only be used if more than 10 (15)
+predicted counts per bin are available. From the practical point of view, the
+computational cost of evaluating $L$ is smaller than for any of the alternative
+methods if the forward model is specified in terms of a Poisson intensity and
+normalization is a free parameter. The maximum-$L$ method is applied to 14
+observations from the Taurus Molecular Cloud, and the unbinned results are
+compared to binned XSPEC results, and found to generally agree, with exceptions
+explained by instability under re-binning and by background fine structures.
+The maximum-$L$ method has no lower limit on the available counts, and allows
+to treat weak sources which are beyond the means of binned methods.

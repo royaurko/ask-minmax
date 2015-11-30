@@ -1,0 +1,13 @@
+Mining frequent itemsets is at the core of mining association rules, and is
+by now quite well understood algorithmically. However, most algorithms for
+mining frequent itemsets assume that the main memory is large enough for the
+data structures used in the mining, and very few efficient algorithms deal with
+the case when the database is very large or the minimum support is very low.
+Mining frequent itemsets from a very large database poses new challenges, as
+astronomical amounts of raw data is ubiquitously being recorded in commerce,
+science and government. In this paper, we discuss approaches to mining frequent
+itemsets when data structures are too large to fit in main memory. Several
+divide-and-conquer algorithms are given for mining from disks. Many novel
+techniques are introduced. Experimental results show that the techniques reduce
+the required disk accesses by orders of magnitude, and enable truly scalable
+data mining.

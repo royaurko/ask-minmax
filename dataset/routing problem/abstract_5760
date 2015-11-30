@@ -1,0 +1,13 @@
+We study the computational complexity of graph planarization via edge
+contraction. The problem CONTRACT asks whether there exists a set $S$ of at
+most $k$ edges that when contracted produces a planar graph. We work with a
+more general problem called $P$-RESTRICTEDCONTRACT in which $S$, in addition,
+is required to satisfy a fixed MSOL formula $P(S,G)$. We give an FPT algorithm
+in time $O(n^2 f(k))$ which solves $P$-RESTRICTEDCONTRACT, where $P(S,G)$ is
+(i) inclusion-closed and (ii) inert contraction-closed (where inert edges are
+the edges non-incident to any inclusion minimal solution $S$).
+  As a specific example, we can solve the $\ell$-subgraph contractibility
+problem in which the edges of a set $S$ are required to form disjoint connected
+subgraphs of size at most $\ell$. This problem can be solved in time $O(n^2
+f'(k,\ell))$ using the general algorithm. We also show that for $\ell \ge 2$
+the problem is NP-complete.

@@ -1,0 +1,11 @@
+We use the standard multiple shooting method to solve a linear two point
+boundary-value problem. To ensure that the solution obtained by combining the
+partial solutions is continuous and satisfies the boundary conditions, we have
+to solve a system of linear equations. Our idea is to first solve a bidiagonal
+system related to the original system of linear equations, and then update it
+with the Sherman-Morrison-Woodbury formula. We study the feasibility, the
+numerical stability and the running time of this method. The results are: The
+method described above has the same stability problems like the well known
+Condensing method. The running time analysis shows that the new method is
+slower than the Condensing method. Therefore we recommend not to use the method
+described in this article.

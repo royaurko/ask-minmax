@@ -1,0 +1,13 @@
+We present the new parallel version (pCRASH2) of the cosmological radiative
+transfer code CRASH2 for distributed memory supercomputing facilities. The code
+is based on a static domain decomposition strategy inspired by geometric
+dilution of photons in the optical thin case that ensures a favourable
+performance speed-up with increasing number of computational cores. Linear
+speed-up is ensured as long as the number of radiation sources is equal to the
+number of computational cores or larger. The propagation of rays is segmented
+and rays are only propagated through one sub-domain per time step to guarantee
+an optimal balance between communication and computation. We have extensively
+checked pCRASH2 with a standardised set of test cases to validate the
+parallelisation scheme. The parallel version of CRASH2 can easily handle the
+propagation of radiation from a large number of sources and is ready for the
+extension of the ionisation network to species other than hydrogen and helium.

@@ -1,0 +1,19 @@
+Power spectrum estimation and evaluation of associated errors in the presence
+of incomplete sky coverage; non-homogeneous, correlated instrumental noise; and
+foreground emission is a problem of central importance for the extraction of
+cosmological information from the cosmic microwave background. We develop a
+ Monte Carlo approach for the maximum likelihood estimation of the power
+spectrum. The method is based on an identity for the Bayesian posterior as a
+marginalization over unknowns. Maximization of the posterior involves the
+computation of expectation values as a sample average from maps of the cosmic
+microwave background and foregrounds given some current estimate of the power
+spectrum or cosmological model, and some assumed statistical characterization
+of the foregrounds. Maps of the CMB are sampled by a linear transform of a
+Gaussian white noise process, implemented numerically with conjugate gradient
+descent. For time series data with N_{t} samples, and N pixels on the sphere,
+the method has a computational expense $KO[N^{2} +- N_{t} +AFw-log N_{t}],
+where K is a prefactor determined by the convergence rate of conjugate gradient
+descent. Preconditioners for conjugate gradient descent are given for scans
+close to great circle paths, and the method allows partial sky coverage for
+these cases by numerically marginalizing over the unobserved, or removed,
+region.

@@ -1,0 +1,19 @@
+This two-part paper series studies the performance of buffered Aloha networks
+with K-Exponential Backoff collision resolution algorithms. Part I focuses on
+stability and throughput analysis and Part II presents the delay analysis.
+  In Part I, the buffered Aloha network is modeled as a multi-queue
+single-server system. We adopt a widely used approach in packet switching
+systems to decompose the multi-queue system into independent first-in-first-out
+(FIFO) queues, which are hinged together by the probability of success of
+head-of-line (HOL) packets. A unified method is devised to tackle the stability
+and throughput problems of K-Exponential Backoff with any cutoff phase K. We
+demonstrate that a network with K-Exponential Backoff can be stabilized if the
+retransmission factor q is properly selected. The stable region of q is
+characterized and illustrated via examples of Geometric Retransmission (K=1)
+and Exponential Backoff (K=infinity). With an increasing number of nodes n, we
+show that the stable region of Geometric Retransmission rapidly shrinks, and
+vanishes as n goes to infinity. In contrast, the stable region of Exponential
+Backoff does not vary with the network population n, implying that a stable
+throughput can be achieved in networks with Exponential Backoff even with an
+infinite number of nodes. All the analytical results presented in this paper
+series are verified by simulations.

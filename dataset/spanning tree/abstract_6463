@@ -1,0 +1,12 @@
+Maximum A Posteriori inference in graphical models is often solved via
+message-passing algorithms, such as the junction-tree algorithm, or loopy
+belief-propagation. The exact solution to this problem is well known to be
+exponential in the size of the model's maximal cliques after it is
+triangulated, while approximate inference is typically exponential in the size
+of the model's factors. In this paper, we take advantage of the fact that many
+models have maximal cliques that are larger than their constituent factors, and
+also of the fact that many factors consist entirely of latent variables (i.e.,
+they do not depend on an observation). This is a common case in a wide variety
+of applications, including grids, trees, and ring-structured models. In such
+cases, we are able to decrease the exponent of complexity for message-passing
+by 0.5 for both exact and approximate inference.

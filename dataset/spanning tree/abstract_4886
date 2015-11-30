@@ -1,0 +1,19 @@
+Graph Isomorphism is the prime example of a computational problem with a wide
+difference between the best known lower and upper bounds on its complexity. We
+bridge this gap for a natural and important special case, planar graph
+isomorphism, by presenting an upper bound that matches the known logspace
+hardness [Lindell'92]. In fact, we show the formally stronger result that
+planar graph canonization is in logspace. This improves the previously known
+upper bound of AC1 [MillerReif'91].
+  Our algorithm first constructs the biconnected component tree of a connected
+planar graph and then refines each biconnected component into a triconnected
+component tree. The next step is to logspace reduce the biconnected planar
+graph isomorphism and canonization problems to those for 3-connected planar
+graphs, which are known to be in logspace by [DattaLimayeNimbhorkar'08]. This
+is achieved by using the above decomposition, and by making significant
+modifications to Lindell's algorithm for tree canonization, along with changes
+in the space complexity analysis.
+  The reduction from the connected case to the biconnected case requires
+further new ideas, including a non-trivial case analysis and a group theoretic
+lemma to bound the number of automorphisms of a colored 3-connected planar
+graph. This lemma is crucial for the reduction to work in logspace.

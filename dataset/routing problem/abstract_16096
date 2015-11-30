@@ -1,0 +1,19 @@
+We consider the problem of recognizing a vocabulary--a collection of words
+(sequences) over a finite alphabet--from a potential subsequence of one of its
+words. We assume the given subsequence is received through a deletion channel
+as a result of transmission of a random word from one of the two generic
+underlying vocabularies. An exact maximum a posterior (MAP) solution for this
+problem counts the number of ways a given subsequence can be derived from
+particular subsets of candidate vocabularies, requiring exponential time or
+space.
+  We present a polynomial approximation algorithm for this problem. The
+algorithm makes no prior assumption about the rules and patterns governing the
+structure of vocabularies. Instead, through off-line processing of
+vocabularies, it extracts data regarding regularity patterns in the
+subsequences of each vocabulary. In the recognition phase, the algorithm just
+uses this data, called subsequence-histogram, to decide in favor of one of the
+vocabularies. We provide examples to demonstrate the performance of the
+algorithm and show that it can achieve the same performance as MAP in some
+situations.
+  Potential applications include bioinformatics, storage systems, and search
+engines.

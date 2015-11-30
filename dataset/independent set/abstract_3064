@@ -1,0 +1,14 @@
+Visual tracking usually requires an object appearance model that is robust to
+changing illumination, pose and other factors encountered in video. In this
+paper, we construct an appearance model using the 3D discrete cosine transform
+(3D-DCT). The 3D-DCT is based on a set of cosine basis functions, which are
+determined by the dimensions of the 3D signal and thus independent of the input
+video data. In addition, the 3D-DCT can generate a compact energy spectrum
+whose high-frequency coefficients are sparse if the appearance samples are
+similar. By discarding these high-frequency coefficients, we simultaneously
+obtain a compact 3D-DCT based object representation and a signal
+reconstruction-based similarity measure (reflecting the information loss from
+signal reconstruction). To efficiently update the object representation, we
+propose an incremental 3D-DCT algorithm, which decomposes the 3D-DCT into
+successive operations of the 2D discrete cosine transform (2D-DCT) and 1D
+discrete cosine transform (1D-DCT) on the input video data.

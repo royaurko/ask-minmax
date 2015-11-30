@@ -1,0 +1,27 @@
+We efficiently solve the optimal multi-dimensional mechanism design problem
+for independent bidders with arbitrary demand constraints when either the
+number of bidders is a constant or the number of items is a constant. In the
+first setting, we need that each bidder's values for the items are sampled from
+a possibly correlated, item-symmetric distribution, allowing different
+distributions for each bidder. In the second setting, we allow the values of
+each bidder for the items to be arbitrarily correlated, but assume that the
+distribution of bidder types is bidder-symmetric.
+  For all eps>0, we obtain an additive eps-approximation, when the value
+distributions are bounded, or a multiplicative (1-eps)-approximation when the
+value distributions are unbounded, but satisfy the Monotone Hazard Rate
+condition, covering a widely studied class of distributions in Economics. Our
+runtime is polynomial in max{#items,#bidders}, and not the size of the support
+of the joint distribution of all bidders' values for all items, which is
+typically exponential in both the number of items and the number of bidders.
+Our mechanisms are randomized, explicitly price bundles, and can sometimes
+accommodate budget constraints.
+  Our results are enabled by establishing several new tools and structural
+properties of Bayesian mechanisms. We provide a symmetrization technique
+turning any truthful mechanism into one that has the same revenue and respects
+all symmetries in the underlying value distributions. We also prove that
+item-symmetric mechanisms satisfy a natural monotonicity property which, unlike
+cyclic-monotonicity, can be harnessed algorithmically. Finally, we provide a
+technique that turns any given eps-BIC mechanism (i.e. one where incentive
+constraints are violated by eps) into a truly-BIC mechanism at the cost of
+O(sqrt{eps}) revenue. We expect our tools to be used beyond the settings we
+consider here.

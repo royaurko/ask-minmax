@@ -1,0 +1,16 @@
+Websites today routinely combine JavaScript from multiple sources, both
+trusted and untrusted. Hence, JavaScript security is of paramount importance. A
+specific interesting problem is information flow control (IFC) for JavaScript.
+In this paper, we develop, formalize and implement a dynamic IFC mechanism for
+the JavaScript engine of a production Web browser (specifically, Safari's
+WebKit engine). Our IFC mechanism works at the level of JavaScript bytecode and
+hence leverages years of industrial effort on optimizing both the source to
+bytecode compiler and the bytecode interpreter. We track both explicit and
+implicit flows and observe only moderate overhead. Working with bytecode
+results in new challenges including the extensive use of unstructured control
+flow in bytecode (which complicates lowering of program context taints),
+unstructured exceptions (which complicate the matter further) and the need to
+make IFC analysis permissive. We explain how we address these challenges,
+formally model the JavaScript bytecode semantics and our instrumentation, prove
+the standard property of termination-insensitive non-interference, and present
+experimental results on an optimized prototype.

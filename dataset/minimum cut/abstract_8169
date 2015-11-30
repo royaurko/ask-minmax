@@ -1,0 +1,26 @@
+This paper studies the tension between throughput and decoding delay
+performance of two widely-used network coding schemes: random linear network
+coding (RLNC) and instantly decodable network coding (IDNC). A single-hop
+broadcasting system model is considered that aims to deliver a block of packets
+to all receivers in the presence of packet erasures. For a fair and
+analytically tractable comparison between the two coding schemes, the
+transmission comprises two phases: a systematic transmission phase and a
+network coded transmission phase which is further divided into rounds. After
+the systematic transmission phase and given the same packet reception state,
+three quantitative metrics are proposed and derived in each scheme: 1) the
+absolute minimum number of transmissions in the first coded transmission round
+(assuming no erasures), 2) probability distribution of extra coded
+transmissions in a subsequent round (due to erasures), and 3) average packet
+decoding delay. This comparative study enables application-aware adaptive
+selection between IDNC and RLNC after systematic transmission phase.
+  One contribution of this paper is to provide a deep and systematic
+understanding of the IDNC scheme, to propose the notion of packet diversity and
+an optimal IDNC encoding scheme for minimizing metric 1. This is generally
+NP-hard, but nevertheless required for characterizing and deriving all the
+three metrics. Analytical and numerical results show that there is no clear
+winner between RLNC and IDNC if one is concerned with both throughput and
+decoding delay performance. IDNC is more preferable than RLNC when the number
+of receivers is smaller than packet block size, and the case reverses when the
+number of receivers is much greater than the packet block size. In the middle
+regime, the choice can depend on the application and a specific instance of the
+problem.

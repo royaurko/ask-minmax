@@ -1,0 +1,23 @@
+It starts out innocently enough - users want to monitor Online data and so
+run their own copies of the detector control GUIs in their offices and at home.
+But over time, the number of processes making requests for values to display on
+GUIs, webpages and stripcharts can grow, and affect the performance of an
+Input/Output Controller (IOC) such that it is unable to respond to requests
+from requests critical to data-taking. At worst, an IOC can hang, its CPU
+having been allocated 100% to responding to network requests.
+  For the BaBar Online Detector Control System, we were able to eliminate this
+problem and make great gains in security by moving all of the IOCs to a
+non-routed, virtual LAN and by enlisting a workstation with two network
+interface cards to act as the interface between the virtual LAN and the public
+BaBar network. On the interface machine, we run the Experimental Physics
+Industrial Control System (EPICS) Channel Access (CA) gateway software
+(originating from Advanced Photon Source). This software accepts as inputs, all
+the channels which are loaded into the EPICS databases on all the IOCs. It
+polls them to update its copy of the values. It answers requests from
+applications by sending them the currently cached value.
+  We adopted the requirement that data-taking would be independent of the
+gateway, so that, in the event of a gateway failure, data-taking would be
+uninterrupted. In this way, we avoided introducing any new risk elements to
+data-taking. Security rules already in use by the IOC were propagated to the
+gateway's own security rules and the security of the IOCs themselves was
+improved by removing them from the public BaBar network.

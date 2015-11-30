@@ -1,0 +1,24 @@
+We consider the problem of simultaneous on-demand streaming of stored video
+to multiple users in a multi-cell wireless network where multiple unicast
+streaming sessions are run in parallel and share the same frequency band. Each
+streaming session is formed by the sequential transmission of video "chunks,"
+such that each chunk arrives into the corresponding user playback buffer within
+its playback deadline. We formulate the problem as a Network Utility
+Maximization (NUM) where the objective is to fairly maximize users' video
+streaming Quality of Experience (QoE) and then derive an iterative control
+policy using Lyapunov Optimization, which solves the NUM problem up to any
+level of accuracy and yields an online protocol with control actions at every
+iteration decomposing into two layers interconnected by the users' request
+queues : i) a video streaming adaptation layer reminiscent of DASH, implemented
+at each user node; ii) a transmission scheduling layer where a max-weight
+scheduler is implemented at each base station. The proposed chunk request
+scheme is a pull strategy where every user opportunistically requests video
+chunks from the neighboring base stations and dynamically adapts the quality of
+its requests based on the current size of the request queue. For the
+transmission scheduling component, we first describe the general max-weight
+scheduler and then particularize it to a wireless network where the base
+stations have multiuser MIMO (MU-MIMO) beamforming capabilities. We exploit the
+channel hardening effect of large-dimensional MIMO channels (massive MIMO) and
+devise a low complexity user selection scheme to solve the underlying
+combinatorial problem of selecting user subsets for downlink beamforming, which
+can be easily implemented and run independently at each base station.

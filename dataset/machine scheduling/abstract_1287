@@ -1,0 +1,19 @@
+A Relay Station (RS) uses a buffer to store and process the received data
+packets before forwarding them. Recently, the buffer has been exploited in
+one-way relaying to opportunistically schedule the two different links
+according to their channel quality. The intuition is that, if the channel to
+the destination is poor, then RS stores more data from the source, in order to
+use it when the channel to the destination is good. We apply this intuition to
+the case of half-duplex two-way relaying, where the interactions among the
+buffers and the links become more complex. We investigate the sum-rate
+maximization problem in the Time Division Broadcast (TDBC): the users send
+signals to the RS in different time slots, the RS decodes and stores messages
+in the buffers. For downlink transmission, the RS re-encodes and sends using
+the optimal broadcast strategy. The operation in each time slot is not
+determined in advance, but depends on the channel state information (CSI). We
+derive the decision function for adaptive link selection with respect to CSI
+using the Karush-Kuhn-Tucker (KKT) conditions. The thresholds of the decision
+function are obtained under Rayleigh fading channel conditions. The numerical
+results show that the sum-rate of the adaptive link selection protocol with
+buffering is significantly larger compared to the reference protocol with fixed
+transmission schedule.

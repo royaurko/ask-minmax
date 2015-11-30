@@ -1,0 +1,12 @@
+Separation Logic (SL) with inductive definitions is a natural formalism for
+specifying complex recursive data structures, used in compositional
+verification of programs manipulating such structures. The key ingredient of
+any automated verification procedure based on SL is the decidability of the
+entailment problem. In this work, we reduce the entailment problem for a
+non-trivial subset of SL describing trees (and beyond) to the language
+inclusion of tree automata (TA). Our reduction provides tight complexity bounds
+for the problem and shows that entailment in our fragment is EXPTIME-complete.
+For practical purposes, we leverage from recent advances in automata theory,
+such as inclusion checking for non-deterministic TA avoiding explicit
+determinization. We implemented our method and present promising preliminary
+experimental results.

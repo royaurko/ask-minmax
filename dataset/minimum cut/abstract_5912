@@ -1,0 +1,16 @@
+This paper presents a novel software driven voltage tuning method that
+utilises multi-purpose Ring Oscillators (ROs) to provide process variation and
+environment sensitive energy reductions. The proposed technique enables voltage
+tuning based on the observed frequency of the ROs, taken as a representation of
+the device speed and used to estimate a safe minimum operating voltage at a
+given core frequency. A conservative linear relationship between RO frequency
+and silicon speed is used to approximate the critical path of the processor.
+  Using a multi-purpose RO not specifically implemented for critical path
+characterisation is a unique approach to voltage tuning. The parameters
+governing the relationship between RO and silicon speed are obtained through
+the testing of a sample of processors from different wafer regions. These
+parameters can then be used on all devices of that model. The tuning method and
+software control framework is demonstrated on a sample of XMOS XS1-U8A-64
+embedded microprocessors, yielding a dynamic power saving of up to 25% with no
+performance reduction and no negative impact on the real-time constraints of
+the embedded software running on the processor.

@@ -1,0 +1,19 @@
+Jim Propp's rotor router model is a deterministic analogue of a random walk
+on a graph. Instead of distributing chips randomly, each vertex serves its
+neighbors in a fixed order.
+  Cooper and Spencer (Comb. Probab. Comput. (2006)) show a remarkable
+similarity of both models. If an (almost) arbitrary population of chips is
+placed on the vertices of a grid $\Z^d$ and does a simultaneous walk in the
+Propp model, then at all times and on each vertex, the number of chips on this
+vertex deviates from the expected number the random walk would have gotten
+there by at most a constant. This constant is independent of the starting
+configuration and the order in which each vertex serves its neighbors.
+  This result raises the question if all graphs do have this property. With
+quite some effort, we are now able to answer this question negatively. For the
+graph being an infinite $k$-ary tree ($k \ge 3$), we show that for any
+deviation $D$ there is an initial configuration of chips such that after
+running the Propp model for a certain time there is a vertex with at least $D$
+more chips than expected in the random walk model. However, to achieve a
+deviation of $D$ it is necessary that at least $\exp(\Omega(D^2))$ vertices
+contribute by being occupied by a number of chips not divisible by $k$ at a
+certain time.

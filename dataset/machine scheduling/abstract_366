@@ -1,0 +1,19 @@
+Parametric analysis is a powerful tool for designing modern embedded systems,
+because it permits to explore the space of design parameters, and to check the
+robustness of the system with respect to variations of some uncontrollable
+variable. In this paper, we address the problem of parametric schedulability
+analysis of distributed real-time systems scheduled by fixed priority. In
+particular, we propose two different approaches to parametric analysis: the
+first one is a novel technique based on classical schedulability analysis,
+whereas the second approach is based on model checking of Parametric Timed
+Automata (PTA).
+  The proposed analytic method extends existing sensitivity analysis for single
+processors to the case of a distributed system, supporting preemptive and
+non-preemptive scheduling, jitters and unconstrained deadlines. Parametric
+Timed Automata are used to model all possible behaviours of a distributed
+system, and therefore it is a necessary and sufficient analysis. Both
+techniques have been implemented in two software tools, and they have been
+compared with classical holistic analysis on two meaningful test cases. The
+results show that the analytic method provides results similar to classical
+holistic analysis in a very efficient way, whereas the PTA approach is slower
+but covers the entire space of solutions.

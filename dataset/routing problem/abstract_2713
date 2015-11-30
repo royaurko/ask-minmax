@@ -1,0 +1,22 @@
+Obtaining and maintaining anonymity on the Internet is challenging. The state
+of the art in deployed tools, such as Tor, uses onion routing (OR) to relay
+encrypted connections on a detour passing through randomly chosen relays
+scattered around the Internet. Unfortunately, OR is known to be vulnerable at
+least in principle to several classes of attacks for which no solution is known
+or believed to be forthcoming soon. Current approaches to anonymity also appear
+unable to offer accurate, principled measurement of the level or quality of
+anonymity a user might obtain.
+  Toward this end, we offer a high-level view of the Dissent project, the first
+systematic effort to build a practical anonymity system based purely on
+foundations that offer measurable and formally provable anonymity properties.
+Dissent builds on two key pre-existing primitives - verifiable shuffles and
+dining cryptographers - but for the first time shows how to scale such
+techniques to offer measurable anonymity guarantees to thousands of
+participants. Further, Dissent represents the first anonymity system designed
+from the ground up to incorporate some systematic countermeasure for each of
+the major classes of known vulnerabilities in existing approaches, including
+global traffic analysis, active attacks, and intersection attacks. Finally,
+because no anonymity protocol alone can address risks such as software exploits
+or accidental self-identification, we introduce WiNon, an experimental
+operating system architecture to harden the uses of anonymity tools such as Tor
+and Dissent against such attacks.

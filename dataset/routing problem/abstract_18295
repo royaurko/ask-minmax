@@ -1,0 +1,24 @@
+Rubik's Cube is an easily-understood puzzle, which is originally called the
+"magic cube". It is a well-known planning problem, which has been studied for a
+long time. Yet many simple properties remain unknown. This paper studies
+whether modern SAT solvers are applicable to this puzzle. To our best
+knowledge, we are the first to translate Rubik's Cube to a SAT problem. To
+reduce the number of variables and clauses needed for the encoding, we replace
+a naive approach of 6 Boolean variables to represent each color on each facelet
+with a new approach of 3 or 2 Boolean variables. In order to be able to solve
+quickly Rubik's Cube, we replace the direct encoding of 18 turns with the layer
+encoding of 18-subtype turns based on 6-type turns. To speed up the solving
+further, we encode some properties of two-phase algorithm as an additional
+constraint, and restrict some move sequences by adding some constraint clauses.
+Using only efficient encoding cannot solve this puzzle. For this reason, we
+improve the existing SAT solvers, and develop a new SAT solver based on
+PrecoSAT, though it is suited only for Rubik's Cube. The new SAT solver
+replaces the lookahead solving strategy with an ALO (\emph{at-least-one})
+solving strategy, and decomposes the original problem into sub-problems. Each
+sub-problem is solved by PrecoSAT. The empirical results demonstrate both our
+SAT translation and new solving technique are efficient. Without the efficient
+SAT encoding and the new solving technique, Rubik's Cube will not be able to be
+solved still by any SAT solver. Using the improved SAT solver, we can find
+always a solution of length 20 in a reasonable time. Although our solver is
+slower than Kociemba's algorithm using lookup tables, but does not require a
+huge lookup table.

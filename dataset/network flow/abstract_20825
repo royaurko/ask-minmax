@@ -1,0 +1,21 @@
+We consider the "coded cooperative data exchange problem" for general graphs.
+In this problem, given a graph G=(V,E) representing clients in a broadcast
+network, each of which initially hold a (not necessarily disjoint) set of
+information packets; one wishes to design a communication scheme in which
+eventually all clients will hold all the packets of the network. Communication
+is performed in rounds, where in each round a single client broadcasts a single
+(possibly encoded) information packet to its neighbors in G. The objective is
+to design a broadcast scheme that satisfies all clients with the minimum number
+of broadcast rounds.
+  The coded cooperative data exchange problem has seen significant research
+over the last few years; mostly when the graph G is the complete broadcast
+graph in which each client is adjacent to all other clients in the network, but
+also on general topologies, both in the fractional and integral setting. In
+this work we focus on the integral setting in general undirected topologies G.
+We tie the data exchange problem on G to certain well studied combinatorial
+properties of G and in such show that solving the problem exactly or even
+approximately within a multiplicative factor of \log{|V|} is intractable (i.e.,
+NP-Hard). We then turn to study efficient data exchange schemes yielding a
+number of communication rounds comparable to our intractability result. Our
+communication schemes do not involve encoding, and in such yield bounds on the
+"coding advantage" in the setting at hand.

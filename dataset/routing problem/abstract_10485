@@ -1,0 +1,21 @@
+Accurate signal recovery or image reconstruction from indirect and possibly
+undersampled data is a topic of considerable interest; for example, the
+literature in the recent field of compressed sensing is already quite immense.
+Inspired by recent breakthroughs in the development of novel first-order
+methods in convex optimization, most notably Nesterov's smoothing technique,
+this paper introduces a fast and accurate algorithm for solving common recovery
+problems in signal processing. In the spirit of Nesterov's work, one of the key
+ideas of this algorithm is a subtle averaging of sequences of iterates, which
+has been shown to improve the convergence properties of standard
+gradient-descent algorithms. This paper demonstrates that this approach is
+ideally suited for solving large-scale compressed sensing reconstruction
+problems as 1) it is computationally efficient, 2) it is accurate and returns
+solutions with several correct digits, 3) it is flexible and amenable to many
+kinds of reconstruction problems, and 4) it is robust in the sense that its
+excellent performance across a wide range of problems does not depend on the
+fine tuning of several parameters. Comprehensive numerical experiments on
+realistic signals exhibiting a large dynamic range show that this algorithm
+compares favorably with recently proposed state-of-the-art methods. We also
+apply the algorithm to solve other problems for which there are fewer
+alternatives, such as total-variation minimization, and convex programs seeking
+to minimize the l1 norm of Wx under constraints, in which W is not diagonal.

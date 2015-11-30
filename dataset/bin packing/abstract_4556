@@ -1,0 +1,18 @@
+With the imminent slowing down of DRAM scaling, Phase Change Memory (PCM) is
+emerging as a lead alternative for main memory technology. While PCM achieves
+low energy due to various technology-specific advantages, PCM is significantly
+slower than DRAM (especially for writes) and can endure far fewer writes before
+wearing out. Previous work has proposed to use a large, DRAM-based hardware
+cache to absorb writes and provide faster access. However, due to ineffectual
+caching where blocks are evicted before sufficient number of accesses, hardware
+caches incur significant overheads in energy and bandwidth, two key but scarce
+resources in modern multicores. Because using hardware for detecting and
+removing such ineffectual caching would incur additional hardware cost and
+complexity, we leverage the OS virtual memory support for this purpose. We
+propose a DRAM-PCM hybrid memory architecture where the OS migrates pages on
+demand from the PCM to DRAM. We call the DRAM part of our memory as
+MigrantStore which includes two ideas. First, to reduce the energy, bandwidth,
+and wear overhead of ineffectual migrations, we propose migration hysteresis.
+Second, to reduce the software overhead of good replacement policies, we
+propose recently- accessed-page-id (RAPid) buffer, a hardware buffer to track
+the addresses of recently-accessed MigrantStore pages.

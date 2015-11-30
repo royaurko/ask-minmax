@@ -1,0 +1,21 @@
+Despite seasonal cholera outbreaks in Bangladesh, little is known about the
+relationship between environmental conditions and cholera cases. We seek to
+develop a predictive model for cholera outbreaks in Bangladesh based on
+environmental predictors. To do this, we estimate the contribution of
+environmental variables, such as water depth and water temperature, to cholera
+outbreaks in the context of a disease transmission model. We implement a method
+which simultaneously accounts for disease dynamics and environmental variables
+in a Susceptible-Infected-Recovered-Susceptible (SIRS) model. The entire system
+is treated as a continuous-time hidden Markov model, where the hidden Markov
+states are the numbers of people who are susceptible, infected, or recovered at
+each time point, and the observed states are the numbers of cholera cases
+reported. We use a Bayesian framework to fit this hidden SIRS model,
+implementing particle Markov chain Monte Carlo methods to sample from the
+posterior distribution of the environmental and transmission parameters given
+the observed data. We test this method using both simulation and data from
+Mathbaria, Bangladesh. Parameter estimates are used to make short-term
+predictions that capture the formation and decline of epidemic peaks. We
+demonstrate that our model can successfully predict an increase in the number
+of infected individuals in the population weeks before the observed number of
+cholera cases increases, which could allow for early notification of an
+epidemic and timely allocation of resources.

@@ -1,0 +1,9 @@
+Consider a $m \times n$ matrix $A$, whose elements are arbitrary integers.
+Consider, for each square window of size $2 \times 2$, the sum of the
+corresponding elements of $A$. These sums form a $(m - 1) \times (n-1)$ matrix
+$S$. Can we efficiently (in polynomial time) restore the original matrix $A$
+given $S$? This problem was originally posed by Maurice Nivat for the case when
+the elements of matrix $A$ are zeros and ones. We prove that this problem is
+solvable in polynomial time. Moreover, the problem still can be efficiently
+solved if the elements of $A$ are integers from given intervals. On the other
+hand, for $2 \times 3$ windows the similar problem turns out to be NP-complete.

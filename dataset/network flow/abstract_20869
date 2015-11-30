@@ -1,0 +1,15 @@
+We are motivated by the problem of designing a simple distributed algorithm
+for Peer-to-Peer streaming applications that can achieve high throughput and
+low delay, while allowing the neighbor set maintained by each peer to be small.
+While previous works have mostly used tree structures, our algorithm constructs
+multiple random directed Hamiltonian cycles and disseminates content over the
+superposed graph of the cycles. We show that it is possible to achieve the
+maximum streaming capacity even when each peer only transmits to and receives
+from Theta(1) neighbors. Further, we show that the proposed algorithm achieves
+the streaming delay of Theta(log N) when the streaming rate is less than
+(1-1/K) of the maximum capacity for any fixed integer K>1, where N denotes the
+number of peers in the network. The key theoretical contribution is to
+characterize the distance between peers in a graph formed by the superposition
+of directed random Hamiltonian cycles, in which edges from one of the cycles
+may be dropped at random. We use Doob martingales and graph expansion ideas to
+characterize this distance as a function of N, with high probability.

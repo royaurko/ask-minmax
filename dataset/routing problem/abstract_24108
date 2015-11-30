@@ -1,0 +1,12 @@
+We generalize the approach of Liu and Lawrence (1999) for multiple
+changepoint problems where the number of changepoints is unknown. The approach
+is based on dynamic programming recursion for efficient calculation of the
+marginal probability of the data with the hidden parameters integrated out. For
+the estimation of the hyperparameters, we propose to use Monte Carlo EM when
+training data are available. We argue that there is some advantages of using
+samples from the posterior which takes into account the uncertainty of the
+changepoints, compared to the traditional MAP estimator, which is also more
+expensive to compute in this context. The samples from the posterior obtained
+by our algorithm are independent, getting rid of the convergence issue
+associated with the MCMC approach. We illustrate our approach on limited
+simulations and some real data set.

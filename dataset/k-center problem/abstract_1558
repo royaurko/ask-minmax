@@ -1,0 +1,17 @@
+In the context of cryptanalysis, computing discrete logarithms in large
+cyclic groups using index-calculus-based methods, such as the number field
+sieve or the function field sieve, requires solving large sparse systems of
+linear equations modulo the group order. Most of the fast algorithms used to
+solve such systems --- e.g., the conjugate gradient or the Lanczos and
+Wiedemann algorithms --- iterate a product of the corresponding sparse matrix
+with a vector (SpMV). This central operation can be accelerated on GPUs using
+specific computing models and addressing patterns, which increase the
+arithmetic intensity while reducing irregular memory accesses. In this work, we
+investigate the implementation of SpMV kernels on NVIDIA GPUs, for several
+representations of the sparse matrix in memory. We explore the use of Residue
+Number System (RNS) arithmetic to accelerate modular operations. We target
+linear systems arising when attacking the discrete logarithm problem on groups
+of size 100 to 1000 bits, which includes the relevant range for current
+cryptanalytic computations. The proposed SpMV implementation contributed to
+solving the discrete logarithm problem in GF($2^{619}$) and GF($2^{809}$) using
+the FFS algorithm.

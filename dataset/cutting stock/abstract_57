@@ -1,0 +1,20 @@
+We describe a bottom-up framework, based on the identification of appropriate
+order parameters and determination of phase diagrams, for understanding
+progressively refined agent-based models and simulations of financial markets.
+We illustrate this framework by starting with a deterministic toy model,
+whereby $N$ independent traders buy and sell $M$ stocks through an order book
+that acts as a clearing house. The price of a stock increases whenever it is
+bought and decreases whenever it is sold. Price changes are updated by the
+order book before the next transaction takes place. In this deterministic
+model, all traders based their buy decisions on a call utility function, and
+all their sell decisions on a put utility function. We then make the
+agent-based model more realistic, by either having a fraction $f_b$ of traders
+buy a random stock on offer, or a fraction $f_s$ of traders sell a random stock
+in their portfolio. Based on our simulations, we find that it is possible to
+identify useful order parameters from the steady-state price distributions of
+all three models. Using these order parameters as a guide, we find three
+phases: (i) the dead market; (ii) the boom market; and (iii) the jammed market
+in the the phase diagram of the deterministic model. Comparing the phase
+diagrams of the stochastic models against that of the deterministic model, we
+realize that the primary effect of stochasticity is to eliminate the dead
+market phase.

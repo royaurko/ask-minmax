@@ -1,0 +1,22 @@
+We study a natural generalization of the maximum weight many-to-one matching
+problem. We are given an undirected bipartite graph G= (A u P, E) with weights
+on the edges in E, and with lower and upper quotas on the vertices in P. We
+seek a maximum weight many-to-one matching satisfying two sets of constraints:
+vertices in A are incident to at most one matching edge, while vertices in P
+are either unmatched or they are incident to a number of matching edges between
+their lower and upper quota. This problem, which we call maximum weight
+many-to-one matching with lower and upper quotas (wmlq), has applications to
+the assignment of students to projects within university courses, where there
+are constraints on the minimum and maximum numbers of students that must be
+assigned to each project.
+  In this paper, we provide a comprehensive analysis of the complexity of wmlq
+from the viewpoints of classic polynomial time algorithms, fixed-parameter
+tractability, as well as approximability. We draw the line between NP-hard and
+polynomially tractable instances in terms of degree and quota constraints and
+provide efficient algorithms to solve the tractable ones. We further show that
+the problem can be solved in polynomial time for instances with bounded
+treewidth; however, the corresponding runtime is exponential in the treewidth
+with the maximum upper quota u_{max} as basis, and we prove that this
+dependence is necessary unless FPT = W[1]. Finally, we also present an
+approximation algorithm for the general case with performance guarantee
+u_{max}+1, which is asymptotically best possible unless P = NP.

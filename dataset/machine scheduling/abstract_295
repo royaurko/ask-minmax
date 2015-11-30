@@ -1,0 +1,18 @@
+In this paper, we devise a scheduling algorithm for ordering transmission of
+synchrophasor data from the substation to the control center in as short a time
+frame as possible, within the realtime hierarchical communications
+infrastructure in the electric grid. The problem is cast in the framework of
+the classic job scheduling with precedence constraints. The optimization setup
+comprises the number of phasor measurement units (PMUs) to be installed on the
+grid, a weight associated with each PMU, processing time at the control center
+for the PMUs, and precedence constraints between the PMUs. The solution to the
+PMU placement problem yields the optimum number of PMUs to be installed on the
+grid, while the processing times are picked uniformly at random from a
+predefined set. The weight associated with each PMU and the precedence
+constraints are both assumed known. The scheduling problem is provably NP-hard,
+so we resort to approximation algorithms which provide solutions that are
+suboptimal yet possessing polynomial time complexity. A lower bound on the
+optimal schedule is derived using branch and bound techniques, and its
+performance evaluated using standard IEEE test bus systems. The scheduling
+policy is power grid-centric, since it takes into account the electrical
+properties of the network under consideration.

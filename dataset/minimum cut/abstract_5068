@@ -1,0 +1,17 @@
+This article proposes novel sparsity-aware space-time adaptive processing
+(SA-STAP) algorithms with $l_1$-norm regularization for airborne phased-array
+radar applications. The proposed SA-STAP algorithms suppose that a number of
+samples of the full-rank STAP data cube are not meaningful for processing and
+the optimal full-rank STAP filter weight vector is sparse, or nearly sparse.
+The core idea of the proposed method is imposing a sparse regularization
+($l_1$-norm type) to the minimum variance (MV) STAP cost function. Under some
+reasonable assumptions, we firstly propose a $l_1$-based sample matrix
+inversion (SMI) to compute the optimal filter weight vector. However, it is
+impractical due to its matrix inversion, which requires a high computational
+cost when in a large phased-array antenna. Then, we devise lower complexity
+algorithms based on conjugate gradient (CG) techniques. A computational
+complexity comparison with the existing algorithms and an analysis of the
+proposed algorithms are conducted. Simulation results with both simulated and
+the Mountain Top data demonstrate that fast
+signal-to-interference-plus-noise-ratio (SINR) convergence and good performance
+of the proposed algorithms are achieved.

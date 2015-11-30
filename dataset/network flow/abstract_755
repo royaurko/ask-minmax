@@ -1,0 +1,20 @@
+We reconsider the well-studied Selfish Routing game with affine latency
+functions. The Price of Anarchy for this class of games takes maximum value
+4/3; this maximum is attained already for a simple network of two parallel
+links, known as Pigou's network. We improve upon the value 4/3 by means of
+Coordination Mechanisms.
+  We increase the latency functions of the edges in the network, i.e., if
+$\ell_e(x)$ is the latency function of an edge $e$, we replace it by
+$\hat{\ell}_e(x)$ with $\ell_e(x) \le \hat{\ell}_e(x)$ for all $x$. Then an
+adversary fixes a demand rate as input. The engineered Price of Anarchy of the
+mechanism is defined as the worst-case ratio of the Nash social cost in the
+modified network over the optimal social cost in the original network.
+Formally, if $\CM(r)$ denotes the cost of the worst Nash flow in the modified
+network for rate $r$ and $\Copt(r)$ denotes the cost of the optimal flow in the
+original network for the same rate then [\ePoA = \max_{r \ge 0}
+\frac{\CM(r)}{\Copt(r)}.]
+  We first exhibit a simple coordination mechanism that achieves for any
+network of parallel links an engineered Price of Anarchy strictly less than
+4/3. For the case of two parallel links our basic mechanism gives 5/4 = 1.25.
+Then, for the case of two parallel links, we describe an optimal mechanism; its
+engineered Price of Anarchy lies between 1.191 and 1.192.

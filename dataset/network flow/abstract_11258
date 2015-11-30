@@ -1,0 +1,17 @@
+The Principal Component Analysis (PCA) is a data dimensionality reduction
+technique well-suited for processing data from sensor networks. It can be
+applied to tasks like compression, event detection, and event recognition. This
+technique is based on a linear transform where the sensor measurements are
+projected on a set of principal components. When sensor measurements are
+correlated, a small set of principal components can explain most of the
+measurements variability. This allows to significantly decrease the amount of
+radio communication and of energy consumption. In this paper, we show that the
+power iteration method can be distributed in a sensor network in order to
+compute an approximation of the principal components. The proposed
+implementation relies on an aggregation service, which has recently been shown
+to provide a suitable framework for distributing the computation of a linear
+transform within a sensor network. We also extend this previous work by
+providing a detailed analysis of the computational, memory, and communication
+costs involved. A compression experiment involving real data validates the
+algorithm and illustrates the tradeoffs between accuracy and communication
+costs.

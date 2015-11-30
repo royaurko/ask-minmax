@@ -1,0 +1,12 @@
+We present a binary routing tree protocol for distributed hash table
+overlays. Using this protocol each peer can independently route messages to its
+parent and two descendants on the fly without any maintenance, global context,
+and synchronization. The protocol is then extended to support tree change
+notification with similar efficiency. The resulting tree is almost perfectly
+dense and balanced, and has O(1) stretch if the distributed hash table is
+symmetric Chord. We use the tree routing protocol to overcome the main
+impediment for implementation of local thresholding algorithms in peer-to-peer
+systems -- their requirement for cycle free routing. Direct comparison of a
+gossip-based algorithm and a corresponding local thresholding algorithm on a
+majority voting problem reveals that the latter obtains superior accuracy using
+a fraction of the communication overhead.

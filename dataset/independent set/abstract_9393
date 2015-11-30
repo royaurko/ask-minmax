@@ -1,0 +1,12 @@
+A numerical model of the Yarkovsky-O'Keefe-Radzievskii-Paddack (YORP) effect
+for objects defined in terms of a triangular mesh is described. The algorithm
+requires that each surface triangle can be handled independently, which implies
+the use of a 1D thermal model. Insolation of each triangle is determined by an
+optimized ray-triangle intersection search. Surface temperature is modeled with
+a spectral approach; imposing a quasi-periodic solution we replace heat
+conduction equation by the Helmholtz equation. Nonlinear boundary conditions
+are handled by an iterative, FFT based solver. The results resolve the question
+of the YORP effect in rotation rate independence on conductivity within the
+nonlinear 1D thermal model regardless of the accuracy issues and homogeneity
+assumptions. A seasonal YORP effect in attitude is revealed for objects moving
+on elliptic orbits when a nonlinear thermal model is used.

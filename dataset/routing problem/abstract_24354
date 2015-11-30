@@ -1,0 +1,17 @@
+We propose a novel approach for potential on-line treatment verification
+using cine EPID (Electronic Portal Imaging Device) images for hypofractionated
+lung radiotherapy based on a machine learning algorithm. Hypofractionated
+radiotherapy requires high precision. It is essential to effectively monitor
+the target to ensure that the tumor is within the beam aperture. We modeled the
+treatment verification problem as a two-class classification problem and
+applied an Artificial Neural Network (ANN) to classify the cine EPID images
+acquired during the treatment into corresponding classes with the tumor inside
+or outside of the beam aperture. Training samples were generated for the ANN
+using digitally reconstructed radiographs (DRRs) with artificially added shifts
+in tumor location to simulate cine EPID images with different tumor locations.
+Principal Component Analysis (PCA) was used to reduce the dimensionality of the
+training samples and cine EPID images acquired during the treatment. The
+proposed treatment verification algorithm was tested on five hypofractionated
+lung patients in a retrospective fashion. On average, our proposed algorithm
+achieved a 98.0% classification accuracy, a 97.6% recall rate, and a 99.7%
+precision rate.

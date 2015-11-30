@@ -1,0 +1,18 @@
+How stable is the performance of your flash-based Solid State Drives (SSDs)?
+This question is central for database designers and administrators, cloud
+service providers, and SSD constructors. The answer depends on
+write-amplification, i.e., garbage collection overhead. More specifically, the
+answer depends on how write-amplification evolves in time.
+  How then can one model and manage write-amplification, especially when
+application workloads change? This is the focus of this paper. Managing
+write-amplification boils down to managing the surplus physical space, called
+over-provisioned space. Modern SSDs essentially separate the physical space
+into several partitions, based on the update frequency of the pages they
+contain, and divide the over-provisioned space among the groups so as to
+minimize write-amplification. We introduce Wolf, a block manager that allocates
+over-provisioned space to SSD partitions using a near-optimal closed-form
+expression, based on the sizes and update frequencies of groups of pages. Our
+evaluation shows that Wolf is robust to workloads change, with an improvement
+factor of 2 with respect to the state-of-the-art. We also show that Wolf
+performs comparably and even slightly better than the state of the art with
+stable workloads (over 20% improvement with a TPC-C workload).

@@ -1,0 +1,17 @@
+The Lipschitz multi-armed bandit (MAB) problem generalizes the classical
+multi-armed bandit problem by assuming one is given side information consisting
+of a priori upper bounds on the difference in expected payoff between certain
+pairs of strategies. Classical results of (Lai and Robbins 1985) and (Auer et
+al. 2002) imply a logarithmic regret bound for the Lipschitz MAB problem on
+finite metric spaces. Recent results on continuum-armed bandit problems and
+their generalizations imply lower bounds of $\sqrt{t}$, or stronger, for many
+infinite metric spaces such as the unit interval. Is this dichotomy universal?
+We prove that the answer is yes: for every metric space, the optimal regret of
+a Lipschitz MAB algorithm is either bounded above by any $f\in \omega(\log t)$,
+or bounded below by any $g\in o(\sqrt{t})$. Perhaps surprisingly, this
+dichotomy does not coincide with the distinction between finite and infinite
+metric spaces; instead it depends on whether the completion of the metric space
+is compact and countable. Our proof connects upper and lower bound techniques
+in online learning with classical topological notions such as perfect sets and
+the Cantor-Bendixson theorem. Among many other results, we show a similar
+dichotomy for the "full-feedback" (a.k.a., "best-expert") version.

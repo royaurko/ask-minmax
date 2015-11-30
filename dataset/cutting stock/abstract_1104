@@ -1,0 +1,23 @@
+A time series consists of a series of values or events obtained over repeated
+measurements in time. Analysis of time series represents and important tool in
+many application areas, such as stock market analysis, process and quality
+control, observation of natural phenomena, medical treatments, etc. A vital
+component in many types of time-series analysis is the choice of an appropriate
+distance/similarity measure. Numerous measures have been proposed to date, with
+the most successful ones based on dynamic programming. Being of quadratic time
+complexity, however, global constraints are often employed to limit the search
+space in the matrix during the dynamic programming procedure, in order to speed
+up computation. Furthermore, it has been reported that such constrained
+measures can also achieve better accuracy. In this paper, we investigate two
+representative time-series distance/similarity measures based on dynamic
+programming, Dynamic Time Warping (DTW) and Longest Common Subsequence (LCS),
+and the effects of global constraints on them. Through extensive experiments on
+a large number of time-series data sets, we demonstrate how global constrains
+can significantly reduce the computation time of DTW and LCS. We also show
+that, if the constraint parameter is tight enough (less than 10-15% of
+time-series length), the constrained measure becomes significantly different
+from its unconstrained counterpart, in the sense of producing qualitatively
+different 1-nearest neighbor graphs. This observation explains the potential
+for accuracy gains when using constrained measures, highlighting the need for
+careful tuning of constraint parameters in order to achieve a good trade-off
+between speed and accuracy.

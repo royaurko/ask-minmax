@@ -1,0 +1,17 @@
+The off-lattice Boltzmann (OLB) method consists of numerical schemes which
+are used to solve the discrete Boltzmann equation. Unlike the commonly used
+lattice Boltzmann method, the spatial and time steps are uncoupled in the OLB
+method. In the currently proposed schemes, which can be broadly classified into
+Runge-Kutta-based and characteristics-based, the size of the time-step is
+limited due to numerical stability constraints. In this work, we systematically
+compare the numerical stability of the proposed schemes in terms of the maximum
+stable time-step. In line with the overall LB method, we investigate the
+available schemes where the advection approximation is explicit, and the
+collision approximation is either explicit or implicit. The comparison is done
+by implementing these schemes on benchmark incompressible flow problems such as
+Taylor vortex flow, Poiseuille flow and, lid-driven cavity flow. It is found
+that the characteristics-based OLB schemes are numerically more stable than the
+Runge-Kutta-based schemes. Additionally, we have observed that, with respect to
+time-step size, the scheme proposed by Bardow et al. [1] is the most
+numerically stable and computationally efficient scheme compared to similar
+schemes, for the flow problems tested here.

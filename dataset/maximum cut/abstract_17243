@@ -1,0 +1,19 @@
+Two major ideas in the analysis of missing data are (a) the EM algorithm
+[Dempster, Laird and Rubin, J. Roy. Statist. Soc. Ser. B 39 (1977) 1--38] for
+maximum likelihood (ML) estimation, and (b) the formulation of models for the
+joint distribution of the data ${Z}$ and missing data indicators ${M}$, and
+associated "missing at random"; (MAR) condition under which a model for ${M}$
+is unnecessary [Rubin, Biometrika 63 (1976) 581--592]. Most previous work has
+treated ${Z}$ and ${M}$ as single blocks, yielding selection or pattern-mixture
+models depending on how their joint distribution is factorized. This paper
+explores "block-sequential"; models that interleave subsets of the variables
+and their missing data indicators, and then make parameter restrictions based
+on assumptions in each block. These include models that are not MAR. We examine
+a subclass of block-sequential models we call block-conditional MAR (BCMAR)
+models, and an associated block-monotone reduced likelihood strategy that
+typically yields consistent estimates by selectively discarding some data.
+Alternatively, full ML estimation can often be achieved via the EM algorithm.
+We examine in some detail BCMAR models for the case of two multinomially
+distributed categorical variables, and a two block structure where the first
+block is categorical and the second block arises from a (possibly multivariate)
+exponential family distribution.

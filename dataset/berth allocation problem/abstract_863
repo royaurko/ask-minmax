@@ -1,0 +1,12 @@
+The provision of mechanisms for processor allocation in current distributed
+parallel programming models is very limited. This makes difficult, or even
+prohibits, the expression of a large class of programs which require a run-time
+assessment of their required resources. This includes programs whose structure
+is irregular, composite or unbounded. Efficient allocation of processors
+requires a process creation mechanism able to initiate and terminate remote
+computations quickly. This paper presents the design, demonstration and
+analysis of an explicit mechanism to do this, implemented on the XMOS XS1
+architecture, as a foundation for a more dynamic scheme. It shows that process
+creation can be made efficient so that it incurs only a fractional overhead of
+the total runtime and that it can be combined naturally with recursion to
+enable rapid distribution of computations over a system.

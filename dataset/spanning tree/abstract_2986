@@ -1,0 +1,13 @@
+We construct an algorithm to simulate imaginary time evolution of
+translationally invariant spin systems with local interactions on an infinite,
+symmetric tree. We describe the state by symmetric iPEPS and use
+translation-invariant operators for the updates at each time step. The
+contraction of this tree tensor network can be computed efficiently by
+recursion without approximations and one can then truncate all the iPEPS
+tensors at the same time. The translational symmetry is preserved at each time
+step that makes the algorithm very well conditioned and stable. The
+computational cost scales like $O(D^{q+1})$ with the bond dimension $D$ and
+coordination number $q$, much favourable than that of the iTEBD on trees [D.
+Nagaj et al. Phys. Rev. B \textbf{77}, 214431 (2008)]. Studying the
+transverse-field Ising model on the Bethe lattice, we find a second order phase
+transition with finite correlation lengths.

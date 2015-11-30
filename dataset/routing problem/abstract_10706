@@ -1,0 +1,20 @@
+Supercomputers are equipped with an increasingly large number of cores to use
+computational power as a way of solving problems that are otherwise
+intractable. Unfortunately, getting serial algorithms to run in parallel to
+take advantage of these computational resources remains a challenge for several
+application domains. Many parallel algorithms can scale to only hundreds of
+cores. The limiting factors of such algorithms are usually communication
+overhead and poor load balancing. Solving NP-hard graph problems to optimality
+using exact algorithms is an example of an area in which there has so far been
+limited success in obtaining large scale parallelism. Many of these algorithms
+use recursive backtracking as their core solution paradigm. In this paper, we
+propose a lightweight, easy-to-use, scalable framework for transforming almost
+any recursive backtracking algorithm into a parallel one. Our framework incurs
+minimal communication overhead and guarantees a load-balancing strategy that is
+implicit, i.e., does not require any problem-specific knowledge. The key idea
+behind this framework is the use of an indexed search tree approach that is
+oblivious to the problem being solved. We test our framework with parallel
+implementations of algorithms for the well-known Vertex Cover and Dominating
+Set problems. On sufficiently hard instances, experimental results show linear
+speedups for thousands of cores, reducing running times from days to just a few
+minutes.

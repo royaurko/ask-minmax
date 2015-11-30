@@ -1,0 +1,18 @@
+Kernel density estimation (KDE) is a popular statistical technique for
+estimating the underlying density distribution with minimal assumptions.
+Although they can be shown to achieve asymptotic estimation optimality for any
+input distribution, cross-validating for an optimal parameter requires
+significant computation dominated by kernel summations. In this paper we
+present an improvement to the dual-tree algorithm, the first practical kernel
+summation algorithm for general dimension. Our extension is based on the
+series-expansion for the Gaussian kernel used by fast Gauss transform. First,
+we derive two additional analytical machinery for extending the original
+algorithm to utilize a hierarchical data structure, demonstrating the first
+truly hierarchical fast Gauss transform. Second, we show how to integrate the
+series-expansion approximation within the dual-tree approach to compute kernel
+summations with a user-controllable relative error bound. We evaluate our
+algorithm on real-world datasets in the context of optimal bandwidth selection
+in kernel density estimation. Our results demonstrate that our new algorithm is
+the only one that guarantees a hard relative error bound and offers fast
+performance across a wide range of bandwidths evaluated in cross validation
+procedures.

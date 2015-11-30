@@ -1,0 +1,14 @@
+People have been studying the following problem: Given a finite set S with a
+hidden (black box) binary operation * on S which might come from a group law,
+and suppose you have access to an oracle that you can ask for the operation x*y
+of single pairs (x,y) you choose. What is the minimal number of queries to the
+oracle until the whole binary operation is recovered, i.e. you know x*y for all
+x,y in S?
+  This problem can trivially be solved by using |S|^2 queries to the oracle, so
+the question arises under which circumstances you can succeed with a
+significantly smaller number of queries.
+  In this presentation we give a lower bound on the number of queries needed
+for general binary operations. On the other hand, we present algorithms solving
+this problem by using |S| queries, provided that * is an abelian group
+operation. We also investigate black box rings and give lower and upper bounds
+for the number of queries needed to solve product recovering in this case.

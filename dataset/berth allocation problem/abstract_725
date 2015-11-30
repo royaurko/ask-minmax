@@ -1,0 +1,11 @@
+The aggressive application of scalar replacement to array references
+substantially reduces the number of memory operations at the expense of a
+possibly very large number of registers. In this paper we describe a register
+allocation algorithm that assigns registers to scalar replaced array references
+along the critical paths of a computation, in many cases exploiting the
+opportunity for concurrent memory accesses. Experimental results, for a set of
+image/signal processing code kernels, reveal that the proposed algorithm leads
+to a substantial reduction of the number of execution cycles for the
+corresponding hardware implementation on a contemporary
+Field-Programmable-Gate-Array (FPGA) when compared to other greedy allocation
+algorithms, in some cases, using even fewer number of registers.

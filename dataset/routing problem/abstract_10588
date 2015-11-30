@@ -1,0 +1,22 @@
+We investigate {\em multidimensional covering mechanism-design} problems,
+wherein there are $m$ items that need to be covered and $n$ agents who provide
+covering objects, with each agent $i$ having a private cost for the covering
+objects he provides. The goal is to select a set of covering objects of minimum
+total cost that together cover all the items.
+  We focus on two representative covering problems: uncapacitated facility
+location (\ufl) and vertex cover (\vcp). For multidimensional \ufl, we give a
+black-box method to transform any {\em Lagrangian-multiplier-preserving}
+$\rho$-approximation algorithm for \ufl to a truthful-in-expectation,
+$\rho$-approx. mechanism. This yields the first result for multidimensional
+\ufl, namely a truthful-in-expectation 2-approximation mechanism.
+  For multidimensional \vcp (\mvcp), we develop a {\em decomposition method}
+that reduces the mechanism-design problem into the simpler task of constructing
+{\em threshold mechanisms}, which are a restricted class of truthful
+mechanisms, for simpler (in terms of graph structure or problem dimension)
+instances of \mvcp. By suitably designing the decomposition and the threshold
+mechanisms it uses as building blocks, we obtain truthful mechanisms with the
+following approximation ratios ($n$ is the number of nodes): (1) $O(r^2\log n)$
+for $r$-dimensional \vcp; and (2) $O(r\log n)$ for $r$-dimensional \vcp on any
+proper minor-closed family of graphs (which improves to $O(\log n)$ if no two
+neighbors of a node belong to the same player). These are the first truthful
+mechanisms for \mvcp with non-trivial approximation guarantees.

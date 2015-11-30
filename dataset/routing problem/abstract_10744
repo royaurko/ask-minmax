@@ -1,0 +1,19 @@
+This study considers the data assimilation problem in coupled systems, which
+consists of two components (sub-systems) interacting with each other through
+certain coupling terms. A straightforward way to tackle the assimilation
+problem in such systems is to concatenate the states of the sub-systems into
+one augmented state vector, so that a standard ensemble Kalman filter (EnKF)
+can be directly applied. In this work we present a divided state-space
+estimation strategy, in which data assimilation is carried out with respect to
+each individual sub-system, involving quantities from the sub-system itself and
+correlated quantities from other coupled sub-systems. On top of the divided
+state-space estimation strategy, we also consider the possibility to run the
+sub-systems separately. Combining these two ideas, a few variants of the EnKF
+are derived. The introduction of these variants is mainly inspired by the
+current status and challenges in coupled data assimilation problems, and thus
+might be of interest from a practical point of view. Numerical experiments with
+a multi-scale Lorentz 96 model are conducted to evaluate the performance of
+these variants against that of the conventional EnKF. In addition, specific for
+coupled data assimilation problems, two prototypes of extensions of the
+presented methods are also developed in order to achieve a trade-off between
+efficiency and accuracy.

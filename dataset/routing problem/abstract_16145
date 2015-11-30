@@ -1,0 +1,19 @@
+We consider the problem of large-scale inference on the row or column
+variables of data in the form of a matrix. Often this data is transposable,
+meaning that both the row variables and column variables are of potential
+interest. An example of this scenario is detecting significant genes in
+microarrays when the samples or arrays may be dependent due to underlying
+relationships. We study the effect of both row and column correlations on
+commonly used test-statistics, null distributions, and multiple testing
+procedures, by explicitly modeling the covariances with the matrix-variate
+normal distribution. Using this model, we give both theoretical and simulation
+results revealing the problems associated with using standard statistical
+methodology on transposable data. We solve these problems by estimating the row
+and column covariances simultaneously, with transposable regularized covariance
+models, and de-correlating or sphering the data as a pre-processing step. Under
+reasonable assumptions, our method gives test statistics that follow the scaled
+theoretical null distribution and are approximately independent. Simulations
+based on various models with structured and observed covariances from real
+microarray data reveal that our method offers substantial improvements in two
+areas: 1) increased statistical power and 2) correct estimation of false
+discovery rates.

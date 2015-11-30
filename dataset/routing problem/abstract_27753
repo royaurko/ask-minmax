@@ -1,0 +1,13 @@
+We study the problem of sparse recovery from compressed measurements. This
+problem has generated a great deal of interest in recent years. To recover the
+sparse signal, we propose a new method called multiple orthogonal least squares
+(MOLS), which extends the well-known orthogonal least squares (OLS) algorithm
+by choosing multiple $L$ indices per iteration. Due to the inclusion of
+multiple support indices in each selection, the MOLS algorithm converges in
+much fewer iterations and hence improves the computational efficiency over the
+OLS algorithm. Theoretical analysis shows that MOLS performs the exact recovery
+of any $K$-sparse signal within $K$ iterations if the measurement matrix
+satisfies the restricted isometry property (RIP) with isometry constant
+$\delta_{LK} \leq \frac{\sqrt{L}}{\sqrt{K} + \sqrt{5 L}}.$ Empirical
+experiments demonstrate that MOLS is very competitive in recovering sparse
+signals compared to the state of the art recovery algorithms.

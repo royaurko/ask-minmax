@@ -1,0 +1,17 @@
+A prominent tool in many problems involving metric spaces is a notion of
+randomized low-diameter decomposition. Loosely speaking, $\beta$-decomposition
+refers to a probability distribution over partitions of the metric into sets of
+low diameter, such that nearby points (parameterized by $\beta>0$) are likely
+to be "clustered" together. Applying this notion to the shortest-path metric in
+edge-weighted graphs, it is known that $n$-vertex graphs admit an $O(\ln
+n)$-padded decomposition (Bartal, 1996), and that excluded-minor graphs admit
+$O(1)$-padded decomposition (Klein, Plotkin and Rao 1993, Fakcharoenphol and
+Talwar 2003, Abraham et al. 2014).
+  We design decompositions to the family of $p$-path-separable graphs, which
+was defined by Abraham and Gavoille (2006). and refers to graphs that admit
+vertex-separators consisting of at most $p$ shortest paths in the graph.
+  Our main result is that every $p$-path-separable $n$-vertex graph admits an
+$O(\ln (p \ln n))$-decomposition, which refines the $O(\ln n)$ bound for
+general graphs, and provides new bounds for families like bounded-treewidth
+graphs. Technically, our clustering process differs from previous ones by
+working in (the shortest-path metric of) carefully chosen subgraphs.

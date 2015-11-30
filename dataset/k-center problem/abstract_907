@@ -1,0 +1,20 @@
+We address the model checking problem for shared memory concurrent programs
+modeled as multi-pushdown systems. We consider here boolean programs with a
+finite number of threads and recursive procedures. It is well-known that the
+model checking problem is undecidable for this class of programs. In this
+paper, we investigate the decidability and the complexity of this problem under
+the assumption of bounded context-switching defined by Qadeer and Rehof, and of
+phase-boundedness proposed by La Torre et al. On the model checking of such
+systems against temporal logics and in particular branching time logics such as
+the modal $\mu$-calculus or CTL has received little attention. It is known that
+parity games, which are closely related to the modal $\mu$-calculus, are
+decidable for the class of bounded-phase systems (and hence for bounded-context
+switching as well), but with non-elementary complexity (Seth). A natural
+question is whether this high complexity is inevitable and what are the ways to
+get around it. This paper addresses these questions and unfortunately, and
+somewhat surprisingly, it shows that branching model checking for MPDSs is
+inherently an hard problem with no easy solution. We show that parity games on
+MPDS under phase-bounding restriction is non-elementary. Our main result shows
+that model checking a $k$ context bounded MPDS against a simple fragment of
+CTL, consisting of formulas that whose temporal operators come from the set
+${\EF, \EX}$, has a non-elementary lower bound.

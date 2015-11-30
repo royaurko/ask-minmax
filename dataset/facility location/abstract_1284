@@ -1,0 +1,20 @@
+Background: Identifying all possible mapping locations of next-generation
+sequencing (NGS) reads is highly essential in several applications such as
+prediction of genomic variants or protein binding motifs located in repeat
+regions, isoform expression quantification, metagenomics analysis, etc.
+However, this task is very time-consuming and majority of mapping tools only
+focus on one or a few best mapping locations. Results: We propose AMAS, an
+alignment tool specialized in identifying all possible mapping locations of NGS
+reads in a reference sequence. AMAS features an effective use of adaptive seeds
+to speed up read mapping while preserving sensitivity. Specifically, an index
+is designed to pre-store the locations of adaptive seeds in the reference
+sequence, efficiently reducing the time for seed matching and partitioning. An
+accurate filtration of adaptive seeds is further applied to substantially
+tighten the candidate alignment space. As a result, AMAS runs several times
+faster than other state-of-the-art read mappers while achieving similar
+accuracy. Conclusions: AMAS provides a valuable resource to speed up the
+important yet time-consuming task of identifying all mapping locations of NGS
+reads. AMAS is implemented in C++ based on the SeqAn library and is freely
+available at https://sourceforge.net/projects/ngsamas/. Keywords:
+next-generation sequencing, read mapping, sequence alignment, adaptive seeds,
+seed partition, filtration

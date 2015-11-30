@@ -1,0 +1,20 @@
+We describe a "spatio-spectral" deconvolution algorithm for wide-band imaging
+in radio interferometry. In contrast with the existing multi-frequency
+reconstruction algorithms, the proposed method does not rely on a model of the
+sky-brightness spectral distribution. This non-parametric approach can be of
+particular interest for the new generation of low frequency radiotelescopes.
+The proposed solution formalizes the reconstruction problem as a convex
+optimization problem with spatial and spectral regularizations. The efficiency
+of this approach has been already proven for narrow-band image reconstruction
+and the present contribution can be considered as its extension to the
+multi-frequency case. Because the number of frequency bands multiplies the size
+of the inverse problem, particular attention is devoted to the derivation of an
+iterative large scale optimization algorithm. It is shown that the main
+computational bottleneck of the approach, which lies in the resolution of a
+linear system, can be efficiently overcome by a fully parallel implementation
+w.r.t. the frequencies, where each processor reconstructs a narrow-band image.
+All the other optimization steps are extremely fast. A parallel implementation
+of the algorithm in Julia is publicly available at
+https://github.com/andferrari. Preliminary simulations illustrate the
+performances of the method and its ability to reconstruct complex
+spatio-spectral structures.

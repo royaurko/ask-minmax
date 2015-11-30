@@ -1,0 +1,16 @@
+We propose constant approximation algorithms for generalizations of the
+Flexible Flow Shop (FFS) problem which form a realistic model for
+non-preemptive scheduling in MapReduce systems. Our results concern the
+minimization of the total weighted completion time of a set of MapReduce jobs
+on unrelated processors and improve substantially on the model proposed by
+Moseley et al. (SPAA 2011) in two directions. First, we consider each job
+consisting of multiple Map and Reduce tasks, as this is the key idea behind
+MapReduce computations, and we propose a constant approximation algorithm.
+Then, we introduce into our model the crucial cost of data shuffle phase, i.e.,
+the cost for the transmission of intermediate data from Map to Reduce tasks. In
+fact, we model this phase by an additional set of Shuffle tasks for each job
+and we manage to keep the same approximation ratio when they are scheduled on
+the same processors with the corresponding Reduce tasks and to provide also a
+constant ratio when they are scheduled on different processors. This is the
+most general setting of the FFS problem (with a special third stage) for which
+a constant approximation ratio is known.

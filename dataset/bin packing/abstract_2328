@@ -1,0 +1,24 @@
+The use of photometric redshifts in cosmology is increasing. Often, however
+these photo-zs are treated like spectroscopic observations, in that the peak of
+the photometric redshift, rather than the full probability density function
+(PDF), is used. This overlooks useful information inherent in the full PDF. We
+introduce a new real-space estimator for one of the most used cosmological
+statistics, the 2-point correlation function, that weights by the PDF of
+individual photometric objects in a manner that is optimal when Poisson
+statistics dominate. As our estimator does not bin based on the PDF peak it
+substantially enhances the clustering signal by usefully incorporating
+information from all photometric objects that overlap the redshift bin of
+interest. As a real-world application, we measure QSO clustering in the Sloan
+Digital Sky Survey (SDSS). We find that our simplest binned estimator improves
+the clustering signal by a factor equivalent to increasing the survey size by a
+factor of 2-3. We also introduce a new implementation that fully weights
+between pairs of objects in constructing the cross-correlation and find that
+this pair-weighted estimator improves clustering signal in a manner equivalent
+to increasing the survey size by a factor of 4-5. Our technique uses
+spectroscopic data to anchor the distance scale and it will be particularly
+useful where spectroscopic data (e.g, from BOSS) overlaps deeper photometry
+(e.g.,from Pan-STARRS, DES or the LSST). We additionally provide simple,
+informative expressions to determine when our estimator will be competitive
+with the autocorrelation of spectroscopic objects. Although we use QSOs as an
+example population, our estimator can and should be applied to any clustering
+estimate that uses photometric objects.

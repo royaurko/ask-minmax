@@ -1,0 +1,22 @@
+The common utilization-based definition of available bandwidth and many of
+the existing tools to estimate it suffer from several important weaknesses: i)
+most tools report a point estimate of average available bandwidth over a
+measurement interval and do not provide a confidence interval; ii) the commonly
+adopted models used to relate the available bandwidth metric to the measured
+data are invalid in almost all practical scenarios; iii) existing tools do not
+scale well and are not suited to the task of multi-path estimation in
+large-scale networks; iv) almost all tools use ad-hoc techniques to address
+measurement noise; and v) tools do not provide enough flexibility in terms of
+accuracy, overhead, latency and reliability to adapt to the requirements of
+various applications. In this paper we propose a new definition for available
+bandwidth and a novel framework that addresses these issues. We define
+probabilistic available bandwidth (PAB) as the largest input rate at which we
+can send a traffic flow along a path while achieving, with specified
+probability, an output rate that is almost as large as the input rate. PAB is
+expressed directly in terms of the measurable output rate and includes
+adjustable parameters that allow the user to adapt to different application
+requirements. Our probabilistic framework to estimate network-wide
+probabilistic available bandwidth is based on packet trains, Bayesian
+inference, factor graphs and active sampling. We deploy our tool on the
+PlanetLab network and our results show that we can obtain accurate estimates
+with a much smaller measurement overhead compared to existing approaches.

@@ -1,0 +1,25 @@
+Most discovery systems for silent failures work in two phases: a continuous
+monitoring phase that detects presence of failures through probe packets and a
+localization phase that pinpoints the faulty element(s). This separation is
+important because localization requires significantly more resources than
+detection and should be initiated only when a fault is present.
+  We focus on improving the efficiency of the detection phase, where the goal
+is to balance the overhead with the cost associated with longer failure
+detection times. We formulate a general model which unifies the treatment of
+probe scheduling mechanisms, stochastic or deterministic, and different cost
+objectives - minimizing average detection time (SUM) or worst-case detection
+time (MAX).
+  We then focus on two classes of schedules. {\em Memoryless schedules} -- a
+subclass of stochastic schedules which is simple and suitable for distributed
+deployment. We show that the optimal memorlyess schedulers can be efficiently
+computed by convex programs (for SUM objectives) or linear programs (for MAX
+objectives), and surprisingly perhaps, are guaranteed to have expected
+detection times that are not too far off the (NP hard) stochastic optima. {\em
+Deterministic schedules} allow us to bound the maximum (rather than expected)
+cost of undetected faults, but like stochastic schedules, are NP hard to
+optimize. We develop novel efficient deterministic schedulers with provable
+approximation ratios.
+  An extensive simulation study on real networks, demonstrates significant
+performance gains of our memoryless and deterministic schedulers over previous
+approaches. Our unified treatment also facilitates a clear comparison between
+different objectives and scheduling mechanisms.

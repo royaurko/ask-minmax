@@ -1,0 +1,18 @@
+The multireference alignment problem consists of estimating a signal from
+multiple noisy shifted observations. Inspired by existing Unique-Games
+approximation algorithms, we provide a semidefinite program (SDP) based
+relaxation which approximates the maximum likelihood estimator (MLE) for the
+multireference alignment problem. Although we show that the MLE problem is
+Unique-Games hard to approximate within any constant, we observe that our
+poly-time approximation algorithm for the MLE appears to perform quite well in
+typical instances, outperforming existing methods. In an attempt to explain
+this behavior we provide stability guarantees for our SDP under a random noise
+model on the observations. This case is more challenging to analyze than
+traditional semi-random instances of Unique-Games: the noise model is on
+vertices of a graph and translates into dependent noise on the edges.
+Interestingly, we show that if certain positivity constraints in the SDP are
+dropped, its solution becomes equivalent to performing phase correlation, a
+popular method used for pairwise alignment in imaging applications. Finally, we
+show how symmetry reduction techniques from matrix representation theory can
+simplify the analysis and computation of the SDP, greatly decreasing its
+computational cost.

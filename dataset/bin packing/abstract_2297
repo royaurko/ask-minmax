@@ -1,0 +1,21 @@
+In the Upper Degree-Constrained Partial Orientation problem we are given an
+undirected graph $G=(V,E)$, together with two degree constraint functions
+$d^-,d^+ : V \to \mathbb{N}$. The goal is to orient as many edges as possible,
+in such a way that for each vertex $v \in V$ the number of arcs entering $v$ is
+at most $d^-(v)$, whereas the number of arcs leaving $v$ is at most $d^+(v)$.
+This problem was introduced by Gabow [SODA'06], who proved it to be MAXSNP-hard
+(and thus APX-hard). In the same paper Gabow presented an LP-based iterative
+rounding $4/3$-approximation algorithm.
+  Since the problem in question is a special case of the classic 3-Dimensional
+Matching, which in turn is a special case of the $k$-Set Packing problem, it is
+reasonable to ask whether recent improvements in approximation algorithms for
+the latter two problems [Cygan, FOCS'13; Sviridenko & Ward, ICALP'13] allow for
+an improved approximation for Upper Degree-Constrained Partial Orientation. We
+follow this line of reasoning and present a polynomial-time local search
+algorithm with approximation ratio $5/4+\varepsilon$. Our algorithm uses a
+combination of two types of rules: improving sets of bounded pathwidth from the
+recent $4/3+\varepsilon$-approximation algorithm for 3-Set Packing [Cygan,
+FOCS'13], and a simple rule tailor-made for the setting of partial
+orientations. In particular, we exploit the fact that one can check in
+polynomial time whether it is possible to orient all the edges of a given graph
+[Gy\'arf\'as & Frank, Combinatorics'76].

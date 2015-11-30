@@ -1,0 +1,18 @@
+We propose a novel two-stage Gene Set Gibbs Sampling (GSGS) framework, to
+reverse engineer signaling pathways from gene sets inferred from molecular
+profiling data. We hypothesize that signaling pathways are structurally an
+ensemble of overlapping linear signal transduction events which we encode as
+Information Flow Gene Sets (IFGS's). We infer pathways from gene sets
+corresponding to these events subjected to a random permutation of genes within
+each set. In Stage I, we use a source separation algorithm to derive unordered
+and overlapping IFGS's from molecular profiling data, allowing cross talk among
+IFGS's. In Stage II, we develop a Gibbs sampling like algorithm, Gene Set Gibbs
+Sampler, to reconstruct signaling pathways from the latent IFGS's derived in
+Stage I. The novelty of this framework lies in the seamless integration of the
+two stages and the hypothesis of IFGS's as the basic building blocks for signal
+pathways. In the proof-of-concept studies, our approach is shown to outperform
+the existing Bayesian network approaches using both continuous and discrete
+data generated from benchmark networks in the DREAM initiative. We perform a
+comprehensive sensitivity analysis to assess the robustness of the approach.
+Finally, we implement the GSGS framework to reconstruct signaling pathways in
+breast cancer cells.

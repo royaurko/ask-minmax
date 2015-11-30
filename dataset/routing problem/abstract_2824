@@ -1,0 +1,18 @@
+2-dimensional Matching Problem, which requires to find a matching of left- to
+right-vertices in a balanced $2n$-vertex bipartite graph, is a well-known
+polynomial problem, while various variants, like the 3-dimensional analogoue
+(3DM, with triangles on a tripartite graph), or the Hamiltonian Circuit Problem
+(HC, a restriction to ``unicyclic'' matchings) are among the main examples of
+NP-hard problems, since the first Karp reduction series of 1972. The same holds
+for the weighted variants of these problems, the Linear Assignment Problem
+being polynomial, and the Numerical 3-Dimensional Matching and Travelling
+Salesman Problem being NP-complete.
+  In this paper we show that a small modification of the 2-dimensional Matching
+and Assignment Problems in which for each $i \leq n/2$ it is required that
+either $\pi(2i-1)=2i-1$ or $\pi(2i)=2i$, is a NP-complete problem. The proof is
+by linear reduction from SAT (or NAE-SAT), with the size $n$ of the Matching
+Problem being four times the number of edges in the factor graph representation
+of the boolean problem. As a corollary, in combination with the simple linear
+reduction of One-in-Two Matching to 3-Dimensional Matching, we show that SAT
+can be linearly reduced to 3DM, while the original Karp reduction was only
+cubic.

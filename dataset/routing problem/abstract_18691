@@ -1,0 +1,16 @@
+We study efficient importance sampling techniques for particle filtering (PF)
+when either (a) the observation likelihood (OL) is frequently multimodal or
+heavy-tailed, or (b) the state space dimension is large or both. When the OL is
+multimodal, but the state transition pdf (STP) is narrow enough, the optimal
+importance density is usually unimodal. Under this assumption, many techniques
+have been proposed. But when the STP is broad, this assumption does not hold.
+We study how existing techniques can be generalized to situations where the
+optimal importance density is multimodal, but is unimodal conditioned on a part
+of the state vector. Sufficient conditions to test for the unimodality of this
+conditional posterior are derived. The number of particles, N, to accurately
+track using a PF increases with state space dimension, thus making any regular
+PF impractical for large dimensional tracking problems. We propose a solution
+that partially addresses this problem. An important class of large dimensional
+problems with multimodal OL is tracking spatially varying physical quantities
+such as temperature or pressure in a large area using a network of sensors
+which may be nonlinear and/or may have non-negligible failure probabilities.

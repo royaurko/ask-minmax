@@ -1,0 +1,16 @@
+MDS (maximum distance separable) array codes are widely used in storage
+systems due to their computationally efficient encoding and decoding
+procedures. An MDS code with r redundancy nodes can correct any r erasures by
+accessing (reading) all the remaining information in both the systematic nodes
+and the parity (redundancy) nodes. However, in practice, a single erasure is
+the most likely failure event; hence, a natural question is how much
+information do we need to access in order to rebuild a single storage node? We
+define the rebuilding ratio as the fraction of remaining information accessed
+during the rebuilding of a single erasure. In our previous work we showed that
+the optimal rebuilding ratio of 1/r is achievable (using our newly constructed
+array codes) for the rebuilding of any systematic node, however, all the
+information needs to be accessed for the rebuilding of the parity nodes.
+Namely, constructing array codes with a rebuilding ratio of 1/r was left as an
+open problem. In this paper, we solve this open problem and present array codes
+that achieve the lower bound of 1/r for rebuilding any single systematic or
+parity node.

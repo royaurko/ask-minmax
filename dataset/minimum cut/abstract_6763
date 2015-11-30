@@ -1,0 +1,23 @@
+In this paper we present a method for learning the parameters of a mixture of
+$k$ identical spherical Gaussians in $n$-dimensional space with an arbitrarily
+small separation between the components. Our algorithm is polynomial in all
+parameters other than $k$. The algorithm is based on an appropriate grid search
+over the space of parameters. The theoretical analysis of the algorithm hinges
+on a reduction of the problem to 1 dimension and showing that two 1-dimensional
+mixtures whose densities are close in the $L^2$ norm must have similar means
+and mixing coefficients. To produce such a lower bound for the $L^2$ norm in
+terms of the distances between the corresponding means, we analyze the behavior
+of the Fourier transform of a mixture of Gaussians in 1 dimension around the
+origin, which turns out to be closely related to the properties of the
+Vandermonde matrix obtained from the component means. Analysis of this matrix
+together with basic function approximation results allows us to provide a lower
+bound for the norm of the mixture in the Fourier domain.
+  In recent years much research has been aimed at understanding the
+computational aspects of learning parameters of Gaussians mixture distributions
+in high dimension. To the best of our knowledge all existing work on learning
+parameters of Gaussian mixtures assumes minimum separation between components
+of the mixture which is an increasing function of either the dimension of the
+space $n$ or the number of components $k$. In our paper we prove the first
+result showing that parameters of a $n$-dimensional Gaussian mixture model with
+arbitrarily small component separation can be learned in time polynomial in
+$n$.

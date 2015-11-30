@@ -1,0 +1,20 @@
+Cost-sensitive learning relies on the availability of a known and fixed cost
+matrix. However, in some scenarios, the cost matrix is uncertain during
+training, and re-train a classifier after the cost matrix is specified would
+not be an option. For binary classification, this issue can be successfully
+addressed by methods maximizing the Area Under the ROC Curve (AUC) metric.
+Since the AUC can measure performance of base classifiers independent of cost
+during training, and a larger AUC is more likely to lead to a smaller total
+cost in testing using the threshold moving method. As an extension of AUC to
+multi-class problems, MAUC has attracted lots of attentions and been widely
+used. Although MAUC also measures performance of base classifiers independent
+of cost, it is unclear whether a larger MAUC of classifiers is more likely to
+lead to a smaller total cost. In fact, it is also unclear what kinds of
+post-processing methods should be used in multi-class problems to convert base
+classifiers into discrete classifiers such that the total cost is as small as
+possible. In the paper, we empirically explore the relationship between MAUC
+and the total cost of classifiers by applying two categories of post-processing
+methods. Our results suggest that a larger MAUC is also beneficial.
+Interestingly, simple calibration methods that convert the output matrix into
+posterior probabilities perform better than existing sophisticated post
+re-optimization methods.

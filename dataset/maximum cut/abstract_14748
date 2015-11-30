@@ -1,0 +1,15 @@
+In a hidden Markov model, the underlying Markov chain is usually hidden.
+Often, the maximum likelihood alignment (Viterbi alignment) is used as its
+estimate. Although having the biggest likelihood, the Viterbi alignment can
+behave very untypically by passing states that are at most unexpected. To avoid
+such situations, the Viterbi alignment can be modified by forcing it not to
+pass these states. In this article, an iterative procedure for improving the
+Viterbi alignment is proposed and studied. The iterative approach is compared
+with a simple bunch approach where a number of states with low probability are
+all replaced at the same time. It can be seen that the iterative way of
+adjusting the Viterbi alignment is more efficient and it has several advantages
+over the bunch approach. The same iterative algorithm for improving the Viterbi
+alignment can be used in the case of peeping, that is when it is possible to
+reveal hidden states. In addition, lower bounds for classification
+probabilities of the Viterbi alignment under different conditions on the model
+parameters are studied.

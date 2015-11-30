@@ -1,0 +1,23 @@
+Reconstruction of multidimensional signals from the samples of their partial
+derivatives is known to be a standard problem in inverse theory. Such and
+similar problems routinely arise in numerous areas of applied sciences,
+including optical imaging, laser interferometry, computer vision, remote
+sensing and control. Though being ill-posed in nature, the above problem can be
+solved in a unique and stable manner, provided proper regularization and
+relevant boundary conditions. In this paper, however, a more challenging setup
+is addressed, in which one has to recover an image of interest from its noisy
+and blurry version, while the only information available about the imaging
+system at hand is the amplitude of the generalized pupil function (GPF) along
+with partial observations of the gradient of GPF's phase. In this case, the
+phase-related information is collected using a simplified version of the
+Shack-Hartmann interferometer, followed by recovering the entire phase by means
+of derivative compressed sensing. Subsequently, the estimated phase can be
+combined with the amplitude of the GPF to produce an estimate of the point
+spread function (PSF), whose knowledge is essential for subsequent image
+deconvolution. In summary, the principal contribution of this work is twofold.
+First, we demonstrate how to simplify the construction of the Shack-Hartmann
+interferometer so as to make it less expensive and hence more accessible.
+Second, it is shown by means of numerical experiments that the above
+simplification and its associated solution scheme produce image reconstructions
+of the quality comparable to those obtained using dense sampling of the GPF
+phase.

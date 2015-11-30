@@ -1,0 +1,20 @@
+Approximate Bayesian computation (ABC) methods perform inference on
+model-specific parameters of mechanistically motivated parametric statistical
+models when evaluating likelihoods is difficult. Central to the success of ABC
+methods is computationally inexpensive simulation of data sets from the
+parametric model of interest. However, when simulating data sets from a model
+is so computationally expensive that the posterior distribution of parameters
+cannot be adequately sampled by ABC, inference is not straightforward. We
+present approximate approximate Bayesian computation" (AABC), a class of
+methods that extends simulation-based inference by ABC to models in which
+simulating data is expensive. In AABC, we first simulate a limited number of
+data sets that is computationally feasible to simulate from the parametric
+model. We use these data sets as fixed background information to inform a
+non-mechanistic statistical model that approximates the correct parametric
+model and enables efficient simulation of a large number of data sets by
+Bayesian resampling methods. We show that under mild assumptions, the posterior
+distribution obtained by AABC converges to the posterior distribution obtained
+by ABC, as the number of data sets simulated from the parametric model and the
+sample size of the observed data set increase simultaneously. We illustrate the
+performance of AABC on a population-genetic model of natural selection, as well
+as on a model of the admixture history of hybrid populations.

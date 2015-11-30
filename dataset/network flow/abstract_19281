@@ -1,0 +1,25 @@
+Finding group elements from noisy measurements of their pairwise ratios is
+also known as the group synchronization problem, first introduced in the
+context of the group SO(2) of planar rotations, whose usefulness has been
+demonstrated recently in engineering and structural biology. Here, we focus on
+synchronization over $\mathbb{Z}_2$, and consider the problem of identifying
+communities in a multiplex network when the interaction between the nodes is
+described by a signed (possibly weighted) measure of similarity, and when the
+multiplex network has a natural partition into two communities. When one has
+the additional information that certain subsets of nodes represent the same
+unknown group element, we consider and compare several algorithms based on
+spectral, semidefinite programming (SDP) and message passing algorithms. In
+other words, all nodes within such a subset represent the same unknown group
+element, and one has available noisy pairwise measurements between pairs of
+nodes that belong to different non-overlapping subsets. Following a recent
+analysis of the eigenvector method for synchronization over SO(2), we analyze
+the robustness to noise of the eigenvector method for synchronization over
+$\mathbb{Z}_2$, when the underlying graph of pairwise measurements is the
+Erd\H{o}s-R\'{e}nyi random graph, using results from the random matrix theory
+literature. We also propose a message passing synchronization algorithm that
+outperforms the existing eigenvector synchronization algorithm only for certain
+classes of graphs and noise models, and enjoys the flexibility of incorporating
+constraints that may not be easily accommodated by other spectral or SDP-based
+methods. We apply our methods both to several synthetic models and a real data
+set of roll call voting patterns in the U.S. Congress across time, to identify
+the two existing communities, i.e., the Democratic and Republican parties.

@@ -1,0 +1,19 @@
+Recent years have seen the development of methods for multiagent planning
+under uncertainty that scale to tens or even hundreds of agents. However, most
+of these methods either make restrictive assumptions on the problem domain, or
+provide approximate solutions without any guarantees on quality. Methods in the
+former category typically build on heuristic search using upper bounds on the
+value function. Unfortunately, no techniques exist to compute such upper bounds
+for problems with non-factored value functions. To allow for meaningful
+benchmarking through measurable quality guarantees on a very general class of
+problems, this paper introduces a family of influence-optimistic upper bounds
+for factored decentralized partially observable Markov decision processes
+(Dec-POMDPs) that do not have factored value functions. Intuitively, we derive
+bounds on very large multiagent planning problems by subdividing them in
+sub-problems, and at each of these sub-problems making optimistic assumptions
+with respect to the influence that will be exerted by the rest of the system.
+We numerically compare the different upper bounds and demonstrate how we can
+achieve a non-trivial guarantee that a heuristic solution for problems with
+hundreds of agents is close to optimal. Furthermore, we provide evidence that
+the upper bounds may improve the effectiveness of heuristic influence search,
+and discuss further potential applications to multiagent planning.

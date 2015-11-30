@@ -1,0 +1,24 @@
+We consider a clustering problem where we observe feature vectors $X_i \in
+R^p$, $i = 1, 2, \ldots, n$, from $K$ possible classes. The class labels are
+unknown and the main interest is to estimate them. We are primarily interested
+in the modern regime of $p \gg n$, where classical clustering methods face
+challenges.
+  We propose Important Features PCA (IF-PCA) as a new clustering procedure. In
+IF-PCA, we select a small fraction of features with the largest
+Kolmogorov-Smirnov (KS) scores, where the threshold is chosen by adapting the
+recent notion of Higher Criticism, obtain the first $(K-1)$ left singular
+vectors of the post-selection normalized data matrix, and then estimate the
+labels by applying the classical k-means to these singular vectors. It can be
+seen that IF-PCA is a tuning free clustering method.
+  We apply IF-PCA to $10$ gene microarray data sets. The method has competitive
+performance in clustering. Especially, in three of the data sets, the error
+rates of IF-PCA are only $29\%$ or less of the error rates by other methods. We
+have also rediscovered a phenomenon on empirical null by \cite{Efron} on
+microarray data.
+  With delicate analysis, especially post-selection eigen-analysis, we derive
+tight probability bounds on the Kolmogorov-Smirnov statistics and show that
+IF-PCA yields clustering consistency in a broad context. The clustering problem
+is connected to the problems of sparse PCA and low-rank matrix recovery, but it
+is different in important ways. We reveal an interesting phase transition
+phenomenon associated with these problems and identify the range of interest
+for each.

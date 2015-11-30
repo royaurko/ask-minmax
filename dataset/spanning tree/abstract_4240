@@ -1,0 +1,14 @@
+There is a high demand of space-efficient algorithms in built-in or embedded
+softwares. In this paper, we consider the problem of designing space-efficient
+algorithms for computing the maximum area empty rectangle (MER) among a set of
+points inside a rectangular region $\cal R$ in 2D. We first propose an inplace
+algorithm for computing the priority search tree with a set of $n$ points in
+$\cal R$ using $O(\log n)$ extra bit space in $O(n\log n)$ time. It supports
+all the standard queries on priority search tree in $O(\log^2n)$ time. We also
+show an application of this algorithm in computing the largest empty
+axis-parallel rectangle. Our proposed algorithm needs $O(n\log^2n +m)$ time and
+$O(\log n)$ work-space apart from the array used for storing $n$ input points.
+Here $m$ is the number of maximal empty rectangles present in $\cal R$.
+Finally, we consider the problem of locating the maximum area empty rectangle
+of arbitrary orientation among a set of $n$ points, and propose an $O(n^3\log
+n)$ time in-place algorithm for that problem.

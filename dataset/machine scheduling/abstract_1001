@@ -1,0 +1,25 @@
+Making judicious channel access and transmission scheduling decisions is
+essential for improving performance as well as energy and spectral efficiency
+in multichannel wireless systems. This problem has been a subject of extensive
+study in the past decade, and the resulting dynamic and opportunistic channel
+access schemes can bring potentially significant improvement over traditional
+schemes. However, a common and severe limitation of these dynamic schemes is
+that they almost always require some form of a priori knowledge of the channel
+statistics. A natural remedy is a learning framework, which has also been
+extensively studied in the same context, but a typical learning algorithm in
+this literature seeks only the best static policy, with performance measured by
+weak regret, rather than learning a good dynamic channel access policy. There
+is thus a clear disconnect between what an optimal channel access policy can
+achieve with known channel statistics that actively exploits temporal, spatial
+and spectral diversity, and what a typical existing learning algorithm aims
+for, which is the static use of a single channel devoid of diversity gain. In
+this paper we bridge this gap by designing learning algorithms that track known
+optimal or sub-optimal dynamic channel access and transmission scheduling
+policies, thereby yielding performance measured by a form of strong regret, the
+accumulated difference between the reward returned by an optimal solution when
+a priori information is available and that by our online algorithm. We do so in
+the context of two specific algorithms that appeared in [1] and [2],
+respectively, the former for a multiuser single-channel setting and the latter
+for a single-user multichannel setting. In both cases we show that our
+algorithms achieve sub-linear regret uniform in time and outperforms the
+standard weak-regret learning algorithms.

@@ -1,0 +1,14 @@
+We discuss the implementation of two distributed solvers of the random K-SAT
+problem, based on some development of the recently introduced
+survey-propagation (SP) algorithm. The first solver, called the "SP diffusion
+algorithm", diffuses as dynamical information the maximum bias over the system,
+so that variable nodes can decide to freeze in a self-organized way, each
+variable making its decision on the basis of purely local information. The
+second solver, called the "SP reinforcement algorithm", makes use of
+time-dependent external forcing messages on each variable, which let the
+variables get completely polarized in the direction of a solution at the end of
+a single convergence. Both methods allow us to find a solution of the random
+3-SAT problem in a range of parameters comparable with the best previously
+described serialized solvers. The simulated time of convergence towards a
+solution (if these solvers were implemented on a distributed device) grows as
+log(N).

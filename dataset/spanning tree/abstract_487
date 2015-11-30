@@ -1,0 +1,16 @@
+An out-tree $T$ of a directed graph $D$ is a rooted tree subgraph with all
+arcs directed outwards from the root. An out-branching is a spanning out-tree.
+By $l(D)$ and $l_s(D)$ we denote the maximum number of leaves over all
+out-trees and out-branchings of $D$, respectively.
+  We give fixed parameter tractable algorithms for deciding whether $l_s(D)\geq
+k$ and whether $l(D)\geq k$ for a digraph $D$ on $n$ vertices, both with time
+complexity $2^{O(k\log k)} \cdot n^{O(1)}$. This improves on previous
+algorithms with complexity $2^{O(k^3\log k)} \cdot n^{O(1)}$ and $2^{O(k\log^2
+k)} \cdot n^{O(1)}$, respectively.
+  To obtain the complexity bound in the case of out-branchings, we prove that
+when all arcs of $D$ are part of at least one out-branching, $l_s(D)\geq
+l(D)/3$. The second bound we prove in this paper states that for strongly
+connected digraphs $D$ with minimum in-degree 3, $l_s(D)\geq \Theta(\sqrt{n})$,
+where previously $l_s(D)\geq \Theta(\sqrt[3]{n})$ was the best known bound.
+This bound is tight, and also holds for the larger class of digraphs with
+minimum in-degree 3 in which every arc is part of at least one out-branching.

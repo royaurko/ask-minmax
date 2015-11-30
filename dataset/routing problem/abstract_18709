@@ -1,0 +1,18 @@
+Predicting the occurrence of links is a fundamental problem in networks. In
+the link prediction problem we are given a snapshot of a network and would like
+to infer which interactions among existing members are likely to occur in the
+near future or which existing interactions are we missing. Although this
+problem has been extensively studied, the challenge of how to effectively
+combine the information from the network structure with rich node and edge
+attribute data remains largely open.
+  We develop an algorithm based on Supervised Random Walks that naturally
+combines the information from the network structure with node and edge level
+attributes. We achieve this by using these attributes to guide a random walk on
+the graph. We formulate a supervised learning task where the goal is to learn a
+function that assigns strengths to edges in the network such that a random
+walker is more likely to visit the nodes to which new links will be created in
+the future. We develop an efficient training algorithm to directly learn the
+edge strength estimation function.
+  Our experiments on the Facebook social graph and large collaboration networks
+show that our approach outperforms state-of-the-art unsupervised approaches as
+well as approaches that are based on feature extraction.

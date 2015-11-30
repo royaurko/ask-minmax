@@ -1,0 +1,15 @@
+We consider the following problem for a fixed graph H: given a graph G and
+two H-colorings of G, i.e. homomorphisms from G to H, can one be transformed
+(reconfigured) into the other by changing one color at a time, maintaining an
+H-coloring throughout. This is the same as finding a path in the Hom(G,H)
+complex. For H=K_k this is the problem of finding paths between k-colorings,
+which was shown to be in P for k<=3 and PSPACE-complete otherwise by Cereceda
+et al. 2011. We generalize the positive side of this dichotomy by providing an
+algorithm that solves the problem in polynomial time for any H with no C_4
+subgraph. This gives a large class of constraints for which finding solutions
+to the Constraint Satisfaction Problem is NP-complete, but finding paths in the
+solution space is P.
+  The algorithm uses a characterization of possible reconfiguration sequences
+(paths in Hom(G,H)), whose main part is a purely topological condition
+described in algebraic terms of the fundamental groupoid of H seen as a
+topological space.

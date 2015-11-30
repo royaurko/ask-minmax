@@ -1,0 +1,12 @@
+A collection of graphs is called bridge-alterable if, for each graph G with a
+bridge e, G is in the class if and only if G-e is. For example the class of
+forests is bridge-alterable. For a random forest $F_n$ sampled uniformly from
+the set of forests on vertex set {1,..,n}, a classical result of Renyi (1959)
+shows that the probability that $F_n$ is connected is $e^{-1/2 +o(1)}$.
+Recently Addario-Berry, McDiarmid and Reed (2012) and Kang and Panagiotou
+(2013) independently proved that, given a bridge-alterable class, for a random
+graph $R_n$ sampled uniformly from the graphs in the class on {1,..,n}, the
+probability that $R_n$ is connected is at least $e^{-1/2 +o(1)}$. Here we give
+a stronger non-asymptotic form of this result, with a more straightforward
+proof. We see that the probability that $R_n$ is connected is at least the
+minimum over $n/3 < t \leq n$ of the probability that $F_t$ is connected.

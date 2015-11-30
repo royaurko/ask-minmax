@@ -1,0 +1,17 @@
+We consider the question of interactive communication, in which two remote
+parties perform a computation while their communication channel is
+(adversarially) noisy. We extend here the discussion into a more general and
+stronger class of noise, namely, we allow the channel to perform insertions and
+deletions of symbols. These types of errors may bring the parties "out of
+sync", so that there is no consensus regarding the current round of the
+protocol.
+  In this more general noise model, we obtain the first interactive coding
+scheme that has a constant rate and resists noise rates of up to
+$1/18-\varepsilon$. To this end we develop a novel primitive we name edit
+distance tree code. The edit distance tree code is designed to replace the
+Hamming distance constraints in Schulman's tree codes (STOC 93), with a
+stronger edit distance requirement. However, the straightforward generalization
+of tree codes to edit distance does not seem to yield a primitive that suffices
+for communication in the presence of synchronization problems. Giving the
+"right" definition of edit distance tree codes is a main conceptual
+contribution of this work.

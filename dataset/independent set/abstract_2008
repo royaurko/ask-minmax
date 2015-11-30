@@ -1,0 +1,25 @@
+Dirichlet process mixtures can be useful models of multivariate categorical
+data and effective tools for multiple imputation of missing categorical values.
+In some contexts, however, these models can fit certain variables well at the
+expense of others in ways beyond the analyst's control. For example, when the
+data include some variables with non-trivial amounts of missing values, the
+mixture model may fit the marginal distributions of the nearly and fully
+complete variables at the expense of the variables with high fractions of
+missing data. Motivated by this setting, we present a Dirichlet process mixture
+model for mixed ordinal and nominal data that allows analysts to split
+variables into two groups: focus variables and remainder variables. The model
+uses three sets of clusters, one set for ordinal focus variables, one for
+nominal focus variables, and one for all remainder variables. The model uses a
+multivariate ordered probit specification for the ordinal variables and
+independent multinomial kernels for the nominal variables. The three sets of
+clusters are linked using an infinite tensor factorization prior, as well as
+via dependence of the means of the latent continuous focus variables on the
+remainder variables. This effectively specifies a rich, complex model for the
+focus variables and a simpler model for remainder variables, yet still
+potentially captures associations among the variables. In the multiple
+imputation context, focus variables include key variables with high rates of
+missing values, and remainder variables include variables without much missing
+data. Using simulations, we illustrate advantages and limitations of using
+focused clustering compared to mixture models that do not distinguish
+variables. We apply the model to handle missing values in an analysis of the
+2012 American National Election Study.

@@ -1,0 +1,15 @@
+We propose a distributed algorithm, named Distributed Alternating Direction
+Method of Multipliers (D-ADMM), for solving separable optimization problems in
+networks of interconnected nodes or agents. In a separable optimization problem
+there is a private cost function and a private constraint set at each node. The
+goal is to minimize the sum of all the cost functions, constraining the
+solution to be in the intersection of all the constraint sets. D-ADMM is proven
+to converge when the network is bipartite or when all the functions are
+strongly convex, although in practice, convergence is observed even when these
+conditions are not met. We use D-ADMM to solve the following problems from
+signal processing and control: average consensus, compressed sensing, and
+support vector machines. Our simulations show that D-ADMM requires less
+communications than state-of-the-art algorithms to achieve a given accuracy
+level. Algorithms with low communication requirements are important, for
+example, in sensor networks, where sensors are typically battery-operated and
+communicating is the most energy consuming operation.

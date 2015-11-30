@@ -1,0 +1,24 @@
+Scheduling questions arise naturally in many different areas among which
+operating system design, compiling,... In real life systems, the
+characteristics of the jobs (such as release time and processing time) are
+usually unknown and unpredictable beforehand. The system is typically unaware
+of the remaining work in each job or of the ability of the job to take
+advantage of more resources. Following these observations, we adopt the job
+model by Edmonds et al (2000, 2003) in which the jobs go through a sequence of
+different phases. Each phase consists of a certain quantity of work and a
+speed-up function that models how it takes advantage of the number of
+processors it receives. We consider the non-clairvoyant online setting where a
+collection of jobs arrives at time 0. We consider the metrics setflowtime
+introduced by Robert et al (2007). The goal is to minimize the sum of the
+completion time of the sets, where a set is completed when all of its jobs are
+done. If the input consists of a single set of jobs, this is simply the
+makespan of the jobs; and if the input consists of a collection of singleton
+sets, it is simply the flowtime of the jobs. We show that the non-clairvoyant
+strategy EQUIoEQUI that evenly splits the available processors among the still
+unserved sets and then evenly splits these processors among the still
+uncompleted jobs of each unserved set, achieves a competitive ratio
+(2+\sqrt3+o(1))\frac{ln n}{lnln n} for the setflowtime minimization and that
+this is asymptotically optimal (up to a constant factor), where n is the size
+of the largest set. For makespan minimization, we show that the non-clairvoyant
+strategy EQUI achieves a competitive ratio of (1+o(1))\frac{ln n}{lnln n},
+which is again asymptotically optimal.

@@ -1,0 +1,15 @@
+We present an on-line algorithm for maintaining a topological order of a
+directed acyclic graph as arcs are added, and detecting a cycle when one is
+created. Our algorithm takes O(m^{1/2}) amortized time per arc, where m is the
+total number of arcs. For sparse graphs, this bound improves the best previous
+bound by a logarithmic factor and is tight to within a constant factor for a
+natural class of algorithms that includes all the existing ones. Our main
+insight is that the bidirectional search method of previous algorithms does not
+require an ordered search, but can be more general. This allows us to avoid the
+use of heaps (priority queues) entirely. Instead, the deterministic version of
+our algorithm uses (approximate) median-finding. The randomized version of our
+algorithm avoids this complication, making it very simple. We extend our
+topological ordering algorithm to give the first detailed algorithm for
+maintaining the strong components of a directed graph, and a topological order
+of these components, as arcs are added. This extension also has an amortized
+time bound of O(m^{1/2}) per arc.

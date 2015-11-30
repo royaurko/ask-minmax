@@ -1,0 +1,27 @@
+For a property $P$ and a sub-property $P'$, we say that $P$ is $P'$-partially
+testable with $q$ queries if there exists an algorithm that distinguishes, with
+high probability, inputs in $P'$ from inputs $\epsilon$-far from $P$ by using
+$q$ queries. There are natural properties that require many queries to test,
+but can be partitioned into a small number of subsets for which they are
+partially testable with very few queries.
+  We prove the existence of a property $P$ such that the only subsets $P'$ for
+which $P$ is $P'$-partially testable are very small. To prove this we introduce
+new techniques for proving property testing lower bounds. In addition to
+obtaining some broad-brush criteria for non-testability, this implies a lower
+bound on the possibility of PCPPs with a sublinear proof. This also implies
+lower bounds on MAPs, a notion newly defined by Gur and Rothblum.
+  The new techniques rely on analyzing a proposed partial tester. We show that
+the queries performed by a tester must, with high probability, query indexes
+where a uniformly random member of the sub-property has low entropy. We then
+show how one can aggregate the "entropy loss" to deduce that a random choice in
+the sub-property must have low entropy, and therefore the sub-property must be
+small.
+  We develop two techniques for aggregating the entropy loss. A simpler
+technique that applies to non-adaptive testers is based on partitioning the
+input bits into high query probability parts and parts where there is an
+entropy loss when conditioned on the high probability parts. Against adaptive
+testers we develop a technique based on constructing a decision tree. The
+root-to-leaf paths in this tree rearrange the input into parts where each
+exhibits entropy loss when conditioned on the path prefix. This decision tree
+is constructed by combining carefully selected decision trees from those used
+by the adaptive testing algorithm.

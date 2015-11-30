@@ -1,0 +1,15 @@
+Top-down tree transducers are a convenient formalism for describing tree
+transformations. They can be equipped with regular look-ahead, which allows
+them to inspect a subtree before processing it. In certain cases, such a
+look-ahead can be avoided and the transformation can be realized by a
+transducer without look-ahead. Removing the look-ahead from a transducer, if
+possible, is technically highly challenging. For a restricted class of
+transducers with look-ahead, namely those that are total, deterministic,
+ultralinear, and bounded erasing, we present an algorithm that, for a given
+transducer from that class, (1) decides whether it is equivalent to a total
+deterministic transducer without look-ahead, and (2) constructs such a
+transducer if the answer is positive. For the whole class of total
+deterministic transducers with look-ahead we present a similar algorithm, which
+assumes that a so-called difference bound is known for the given transducer.
+The designer of a transducer can usually also determine a difference bound for
+it.

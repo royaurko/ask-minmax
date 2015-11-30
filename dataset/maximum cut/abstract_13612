@@ -1,0 +1,17 @@
+Distance-based approaches in phylogenetics such as Neighbor-Joining are a
+fast and popular approach for building trees. These methods take pairs of
+sequences from them construct a value that, in expectation, is additive under a
+stochastic model of site substitution. Most models assume a distribution of
+rates across sites, often based on a gamma distribution. Provided the (shape)
+parameter of this distribution is known, the method can correctly reconstruct
+the tree. However, if the shape parameter is not known then we show that
+topologically different trees, with different shape parameters and associated
+positive branch lengths, can lead to exactly matching distributions on pairwise
+site patterns between all pairs of taxa. Thus, one could not distinguish
+between the two trees using pairs of sequences without some prior knowledge of
+the shape parameter. More surprisingly, this can happen for {\em any} choice of
+distinct shape parameters on the two trees, and thus the result is not peculiar
+to a particular or contrived selection of the shape parameters. On a positive
+note, we point out known conditions where identifiability can be restored
+(namely, when the branch lengths are clocklike, or if methods such as maximum
+likelihood are used).

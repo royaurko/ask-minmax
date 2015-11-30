@@ -1,0 +1,17 @@
+Breadth First Search (BFS) and other graph traversal techniques are widely
+used for measuring large unknown graphs, such as online social networks. It has
+been empirically observed that an incomplete BFS is biased toward high degree
+nodes. In contrast to more studied sampling techniques, such as random walks,
+the precise bias of BFS has not been characterized to date. In this paper, we
+quantify the degree bias of BFS sampling. In particular, we calculate the node
+degree distribution expected to be observed by BFS as a function of the
+fraction of covered nodes, in a random graph $RG(p_k)$ with a given degree
+distribution $p_k$. Furthermore, we also show that, for $RG(p_k)$, all commonly
+used graph traversal techniques (BFS, DFS, Forest Fire, and Snowball Sampling)
+lead to the same bias, and we show how to correct for this bias. To give a
+broader perspective, we compare this class of exploration techniques to random
+walks that are well-studied and easier to analyze. Next, we study by simulation
+the effect of graph properties not captured directly by our model. We find that
+the bias gets amplified in graphs with strong positive assortativity. Finally,
+we demonstrate the above results by sampling the Facebook social network, and
+we provide some practical guidelines for graph sampling in practice.

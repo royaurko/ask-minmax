@@ -1,0 +1,18 @@
+The Subset Sum problem asks whether a given set of $n$ positive integers
+contains a subset of elements that sum up to a given target $t$. It is an
+outstanding open question whether the $O^*(2^{n/2})$-time algorithm for Subset
+Sum by Horowitz and Sahni [J. ACM 1974] can be beaten in the worst-case setting
+by a "truly faster", $O^*(2^{(0.5-\delta)n})$-time algorithm, with some
+constant $\delta > 0$. Continuing an earlier work [STACS 2015], we study Subset
+Sum parameterized by the maximum bin size $\beta$, defined as the largest
+number of subsets of the $n$ input integers that yield the same sum. For every
+$\epsilon > 0$ we give a truly faster algorithm for instances with $\beta \leq
+2^{(0.5-\epsilon)n}$, as well as instances with $\beta \geq 2^{0.661n}$.
+Consequently, we also obtain a characterization in terms of the popular density
+parameter $n/\log_2 t$: if all instances of density at least $1.003$ admit a
+truly faster algorithm, then so does every instance. This goes against the
+current intuition that instances of density 1 are the hardest, and therefore is
+a step toward answering the open question in the affirmative. Our results stem
+from novel combinations of earlier algorithms for Subset Sum and a study of an
+extremal question in additive combinatorics connected to the problem of
+Uniquely Decodable Code Pairs in information theory.

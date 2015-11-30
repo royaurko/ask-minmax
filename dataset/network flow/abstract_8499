@@ -1,0 +1,8 @@
+I present a parallel algorithm for exact probabilistic inference in Bayesian
+networks. For polytree networks with n variables, the worst-case time
+complexity is O(log n) on a CREW PRAM (concurrent-read, exclusive-write
+parallel random-access machine) with n processors, for any constant number of
+evidence variables. For arbitrary networks, the time complexity is O(r^{3w}*log
+n) for n processors, or O(w*log n) for r^{3w}*n processors, where r is the
+maximum range of any variable, and w is the induced width (the maximum clique
+size), after moralizing and triangulating the network.

@@ -1,0 +1,21 @@
+We present a generalization of the well-known problem of learning k-juntas in
+R^n, and a novel tensor algorithm for unraveling the structure of
+high-dimensional distributions. Our algorithm can be viewed as a higher-order
+extension of Principal Component Analysis (PCA).
+  Our motivating problem is learning a labeling function in R^n, which is
+determined by an unknown k-dimensional subspace. This problem of learning a
+k-subspace junta is a common generalization of learning a k-junta (a function
+of k coordinates in R^n) and learning intersections of k halfspaces. In this
+context, we introduce an irrelevant noisy attributes model where the
+distribution over the "relevant" k-dimensional subspace is independent of the
+distribution over the (n-k)-dimensional "irrelevant" subspace orthogonal to it.
+  We give a spectral tensor algorithm which identifies the relevant subspace,
+and thereby learns k-subspace juntas under some additional assumptions. We do
+this by exploiting the structure of local optima of higher moment tensors over
+the unit sphere; PCA finds the global optima of the second moment tensor
+(covariance matrix). Our main result is that when the distribution in the
+irrelevant (n-k)-dimensional subspace is any Gaussian, the complexity of our
+algorithm is T(k,\epsilon) + \poly(n), where T is the complexity of learning
+the concept in k dimensions, and the polynomial is a function of the
+k-dimensional concept class being learned. This substantially generalizes
+existing results on learning low-dimensional concepts.

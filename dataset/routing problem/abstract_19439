@@ -1,0 +1,22 @@
+We are concerned with high-fidelity subsurface imaging of the soil, which
+commonly arises in geotechnical site characterization and geophysical
+explorations. Specifically, we attempt to image the spatial distribution of the
+Lame parameters in semi-infinite, three-dimensional, arbitrarily heterogeneous
+formations, using surficial measurements of the soil's response to probing
+elastic waves. We use the complete waveform response of the medium to derive
+the inverse problem, by using a partial-differential-equation (PDE)-constrained
+optimization approach, directly in the time-domain, to minimize the misfit
+between the observed response of the medium at select measurement locations,
+and a computed response corresponding to a trial distribution of the Lame
+parameters. We discuss strategies that lend algorithmic robustness to our
+proposed inversion scheme. To limit the computational domain to the size of
+interest, we employ perfectly-matched-layers (PMLs).
+  In order to resolve the forward problem, we use a recently developed hybrid
+finite element approach, where a displacement-stress formulation for the PML is
+coupled to a standard displacement-only formulation for the interior domain,
+thus leading to a computationally cost-efficient scheme. Time-integration is
+accomplished by using an explicit Runge-Kutta scheme, which is well-suited for
+large-scale problems on parallel computers.
+  We verify the accuracy of the material gradients obtained via our proposed
+scheme, and report numerical results demonstrating successful reconstruction of
+the two Lame parameters for both smooth and sharp profiles.

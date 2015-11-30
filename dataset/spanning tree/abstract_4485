@@ -1,0 +1,12 @@
+Let $\phi$ be a function that maps any non-empty subset $A$ of $\mathbb{R}^2$
+to a non-empty subset $\phi(A)$ of $\mathbb{R}^2$. A $\phi$-cover of a set
+$T=\{T_1, T_2, \dots, T_m\}$ of pairwise non-crossing trees in the plane is a
+set of pairwise disjoint connected regions such that each tree $T_i$ is
+contained in some region of the cover, and each region of the cover is either
+(1) $\phi(T_i)$ for some $i$, or (2) $\phi(A \cup B)$, where $A$ and $B$ are
+constructed by either (1) or (2), and $A \cap B \neq \emptyset$.
+  We present two properties for the function $\phi$ that make the $\phi$-cover
+well-defined. Examples for such functions $\phi$ are the convex hull and the
+axis-aligned bounding box. For both of these functions $\phi$, we show that the
+$\phi$-cover can be computed in $O(n\log^2n)$ time, where $n$ is the total
+number of vertices of the trees in $T$.

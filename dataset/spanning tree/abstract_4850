@@ -1,0 +1,20 @@
+An ancestry labeling scheme assigns labels (bit strings) to the nodes of
+rooted trees such that ancestry queries between any two nodes in a tree can be
+answered merely by looking at their corresponding labels. The quality of an
+ancestry labeling scheme is measured by its label size, that is the maximal
+number of bits in a label of a tree node.
+  In addition to its theoretical appeal, the design of efficient ancestry
+labeling schemes is motivated by applications in web search engines. For this
+purpose, even small improvements in the label size are important. In fact, the
+literature about this topic is interested in the exact label size rather than
+just its order of magnitude. As a result, following the proposal of a simple
+interval-based ancestry scheme with label size $2\log_2 n$ bits (Kannan et al.,
+STOC '88), a considerable amount of work was devoted to improve the bound on
+the size of a label. The current state of the art upper bound is $\log_2 n +
+O(\sqrt{\log n})$ bits (Abiteboul et al., SODA '02) which is still far from the
+known $\log_2 n + \Omega(\log\log n)$ bits lower bound (Alstrup et al., SODA
+'03).
+  In this paper we close the gap between the known lower and upper bounds, by
+constructing an ancestry labeling scheme with label size $\log_2 n + O(\log\log
+n)$ bits. In addition to the optimal label size, our scheme assigns the labels
+in linear time and can support any ancestry query in constant time.

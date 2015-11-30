@@ -1,0 +1,23 @@
+We describe a powerful technique to model and interpret the stellar
+line-of-sight velocity profiles of galaxies. Following Schwarzschild's modeling
+approach, a representative library of orbits is calculated in a given
+potential; then the non-negative superposition of these orbits is determined to
+fit best a given set of observational constraints. Our implementation
+incorporates several new features: (i) we calculate velocity profiles and
+represent them by a Gauss-Hermite series. This allows us to constrain the
+orbital anisotropy in the fit. (ii) we take into account the error on each
+observational constraint to obtain an objective chi2 measure for the
+quality-of-fit. Only projected, observable quantities are included in the fit,
+and aperture binning and seeing convolution of the data are properly taken into
+account. This scheme is valid for any geometry, but here we focus on spherical
+geometry and the issue of dark halos around elliptical galaxies. We model
+radially extended velocity profiles of the E0 galaxy NGC 2434, and find that
+constant M/L models are clearly ruled out, regardless of the orbital
+anisotropy. To study how much dark matter is needed, we considered a sequence
+of cosmologically motivated `star+halo' potentials, which are specified by the
+stellar mass-to-light ratio Gamma and the characteristic halo velocity, V_200
+(from Navarro et al. 1996). The star+halo models provide an excellent fit to
+the data, with Gamma=3.35+-0.25 (in B-band solar units) and V_200=450+-100km/s.
+The best-fitting potential has a circular velocity Vc that is constant (at
+~300km/s) to within 10% between 0.2--3 effective radii. In NGC 2434 roughly
+half of the mass within an effective radius appears to be dark.

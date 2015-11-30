@@ -1,0 +1,19 @@
+Consider the following coloring process in a simple directed graph $G(V,E)$
+with positive indegrees. Initially, a set $S$ of vertices are white, whereas
+all the others are black. Thereafter, a black vertex is colored white whenever
+more than half of its in-neighbors are white. The coloring process ends when no
+additional vertices can be colored white. If all vertices end up white, we call
+$S$ an irreversible dynamic monopoly (or dynamo for short) under the
+strict-majority scenario. An irreversible dynamo under the simple-majority
+scenario is defined similarly except that a black vertex is colored white when
+at least half of its in-neighbors are white. We derive upper bounds of
+$(2/3)\,|\,V\,|$ and $|\,V\,|/2$ on the minimum sizes of irreversible dynamos
+under the strict and the simple-majority scenarios, respectively. For the
+special case when $G$ is an undirected connected graph, we prove the existence
+of an irreversible dynamo with size at most $\lceil |\,V\,|/2 \rceil$ under the
+strict-majority scenario. Let $\epsilon>0$ be any constant. We also show that,
+unless $\text{NP}\subseteq \text{TIME}(n^{O(\ln \ln n)}),$ no polynomial-time,
+$((1/2-\epsilon)\ln |\,V\,|)$-approximation algorithms exist for finding the
+minimum irreversible dynamo under either the strict or the simple-majority
+scenario. The inapproximability results hold even for bipartite graphs with
+diameter at most 8.

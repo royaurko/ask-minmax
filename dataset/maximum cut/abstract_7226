@@ -1,0 +1,16 @@
+In this paper, we consider the problem of approximating the densest subgraph
+in the dynamic graph stream model. In this model of computation, the input
+graph is defined by an arbitrary sequence of edge insertions and deletions and
+the goal is to analyze properties of the resulting graph given memory that is
+sub-linear in the size of the stream. We present a single-pass algorithm that
+returns a $(1+\epsilon)$ approximation of the maximum density with high
+probability; the algorithm uses $O(\epsilon^{-2} n \polylog n)$ space,
+processes each stream update in $\polylog (n)$ time, and uses $\poly(n)$
+post-processing time where $n$ is the number of nodes. The space used by our
+algorithm matches the lower bound of Bahmani et al.~(PVLDB 2012) up to a
+poly-logarithmic factor for constant $\epsilon$. The best existing results for
+this problem were established recently by Bhattacharya et al.~(STOC 2015). They
+presented a $(2+\epsilon)$ approximation algorithm using similar space and
+another algorithm that both processed each update and maintained a
+$(4+\epsilon)$ approximation of the current maximum density in $\polylog (n)$
+time per-update.

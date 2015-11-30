@@ -1,0 +1,14 @@
+This paper investigates the approximation property of the neural network with
+unbounded activation functions, such as the rectified linear unit (ReLU), which
+is new de-facto standard of deep learning. The ReLU network can be analyzed by
+the ridgelet transform with respect to Lizorkin distributions, which is
+introduced in this paper. By showing two reconstruction formulas by using the
+Fourier slice theorem and the Radon transform, it is shown that the neural
+network with unbounded activations still holds the universal approximation
+property. As an additional consequence, the ridgelet transform, or the
+backprojection filter in the Radon domain, is what the network will have
+learned after backpropagation. Subject to a constructive admissibility
+condition, the trained network can be obtained by just discretizing the
+ridgelet transform, without backpropagation. Numerical examples not only
+support the consistency of the admissibility condition but also imply that some
+non-admissible cases result in low-pass filtering.

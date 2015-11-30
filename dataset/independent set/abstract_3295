@@ -1,0 +1,18 @@
+Directed acyclic graph (DAG) models, also called Bayesian networks, impose
+conditional independence constraints on a multivariate probability
+distribution, and are widely used in probabilistic reasoning, machine learning
+and causal inference. If latent variables are included in such a model, then
+the set of possible marginal distributions over the remaining (observed)
+variables is generally complex, and not represented by any DAG. Larger classes
+of mixed graphical models, which use multiple edge types, have been introduced
+to overcome this; however, these classes do not represent all the models which
+can arise as margins of DAGs. In this paper we show that this is because
+ordinary mixed graphs are fundamentally insufficiently rich to capture the
+variety of marginal models.
+  We introduce a new class of hyper-graphs, called mDAGs, and a latent
+projection operation to obtain an mDAG from the margin of a DAG. We show that
+each distinct marginal of a DAG model is represented by at least one mDAG, and
+provide graphical results towards characterizing when two such marginal models
+are the same. Finally we show that mDAGs correctly capture the marginal
+structure of causally-interpreted DAGs under interventions on the observed
+variables.

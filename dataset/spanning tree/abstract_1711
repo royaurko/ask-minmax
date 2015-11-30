@@ -1,0 +1,8 @@
+We define secure operations with tree-formed, protected verification data
+registers. Functionality is conceptually added to Trusted Platform Modules
+(TPMs) to handle Platform Configuration Registers (PCRs) which represent roots
+of hash trees protecting the integrity of tree-formed Stored Measurement Logs
+(SMLs). This enables verification and update of an inner node of an SML and
+even attestation to its value with the same security level as for ordinary
+PCRs. As an important application, it is shown how certification of SML
+subtrees enables attestation of platform properties.

@@ -1,0 +1,24 @@
+Introduced in 1963, Glauber dynamics is one of the most practiced and
+extensively studied methods for sampling the Ising model on lattices. It is
+well known that at high temperatures, the time it takes this chain to mix in
+$L^1$ on a system of size $n$ is $O(\log n)$. Whether in this regime there is
+cutoff, i.e. a sharp transition in the $L^1$-convergence to equilibrium, is a
+fundamental open problem: If so, as conjectured by Peres, it would imply that
+mixing occurs abruptly at $(c+o(1))\log n$ for some fixed $c>0$, thus providing
+a rigorous stopping rule for this MCMC sampler. However, obtaining the precise
+asymptotics of the mixing and proving cutoff can be extremely challenging even
+for fairly simple Markov chains. Already for the one-dimensional Ising model,
+showing cutoff is a longstanding open problem.
+  We settle the above by establishing cutoff and its location at the high
+temperature regime of the Ising model on the lattice with periodic boundary
+conditions. Our results hold for any dimension and at any temperature where
+there is strong spatial mixing: For $\Z^2$ this carries all the way to the
+critical temperature. Specifically, for fixed $d\geq 1$, the continuous-time
+Glauber dynamics for the Ising model on $(\Z/n\Z)^d$ with periodic boundary
+conditions has cutoff at $(d/2\lambda_\infty)\log n$, where $\lambda_\infty$ is
+the spectral gap of the dynamics on the infinite-volume lattice. To our
+knowledge, this is the first time where cutoff is shown for a Markov chain
+where even understanding its stationary distribution is limited.
+  The proof hinges on a new technique for translating $L^1$ to $L^2$ mixing
+which enables the application of log-Sobolev inequalities. The technique is
+general and carries to other monotone and anti-monotone spin-systems.

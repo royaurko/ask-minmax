@@ -1,0 +1,14 @@
+We consider the problem of constructing roadmaps of real algebraic sets. The
+problem was introduced by Canny to answer connectivity questions and solve
+motion planning problems. Given $s$ polynomial equations with rational
+coefficients, of degree $D$ in $n$ variables, Canny's algorithm has a Monte
+Carlo cost of $s^n\log(s) D^{O(n^2)}$ operations in $\mathbb{Q}$; a
+deterministic version runs in time $s^n \log(s) D^{O(n^4)}$. The next
+improvement was due to Basu, Pollack and Roy, with an algorithm of
+deterministic cost $s^{d+1} D^{O(n^2)}$ for the more general problem of
+computing roadmaps of semi-algebraic sets ($d \le n$ is the dimension of an
+associated object). We give a Monte Carlo algorithm of complexity
+$(nD)^{O(n^{1.5})}$ for the problem of computing a roadmap of a compact
+hypersurface $V$ of degree $D$ in $n$ variables; we also have to assume that
+$V$ has a finite number of singular points. Even under these extra assumptions,
+no previous algorithm featured a cost better than $D^{O(n^2)}$.

@@ -1,0 +1,22 @@
+Bivariate ordered logistic models (BOLMs) are appealing to jointly model the
+marginal distribution of two ordered responses and their association, given a
+set of covariates. When the number of categories of the responses increases,
+the number of global odds ratios (or their re-parametrizations) to be estimated
+also increases and estimating the association structure becomes crucial for
+this type of data. In fact, such data could be too "rich" to be fully modelled
+with an ordinary BOLM while, sometimes, the well-known Dale's model could be
+too parsimonious to provide a good fit. In addition, when the cross-tabulation
+of the responses contains some zeros, for a number of model configurations,
+including the bivariate version of the partial proportional odds model (PPOM),
+estimation of a BOLM by the Fisher-scoring algorithm may either fail or
+estimate a too "irregular" association structure. In this work, we propose to
+use a nonparametric approach for the maximum likelihood estimation of a BOLM.
+We apply penalties to the differences between adjacent row and column effects.
+As a result, estimation is less demanding than an ordinary BOLM, permitting the
+fit of PPOMs and/or the smoothing of the marginal and association parameters by
+polynomial curves and surfaces, with scores chosen by the data. Model selection
+is based on the penalized log-likelihood ratio, whose limiting distribution has
+been studied through simulations, and AIC. Our proposal is compared to the
+Goodman's model and the Dale's model, in terms of goodness-of-fit and
+parsimony, on a literature data set. Finally, an application on an original
+data set of liver disease patients is proposed.

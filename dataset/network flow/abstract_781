@@ -1,0 +1,12 @@
+Packet networks need to maintain state in the form of forwarding tables at
+each switch. The cost of this state increases as networks support ever more
+sophisticated per-flow routing, traffic engineering, and service chaining.
+Per-flow or per-path state at the switches can be eliminated by encoding each
+packet's desired path in its header. A key component of such a method is an
+efficient encoding of paths through the network. We introduce a mathematical
+formulation of this optimal path-encoding problem. We prove that the problem is
+APX-hard, by showing that approximating it to within a factor less than 8/7 is
+NP-hard. Thus, at best we can hope for a constant-factor approximation
+algorithm. We then present such an algorithm, approximating the optimal
+path-encoding problem to within a factor 2. Finally, we provide empirical
+results illustrating the effectiveness of the proposed algorithm.

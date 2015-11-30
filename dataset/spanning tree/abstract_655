@@ -1,0 +1,24 @@
+This paper is motivated by the fact that many systems need to be maintained
+continually while the underlying costs change over time. The challenge is to
+continually maintain near-optimal solutions to the underlying optimization
+problems, without creating too much churn in the solution itself. We model this
+as a multistage combinatorial optimization problem where the input is a
+sequence of cost functions (one for each time step); while we can change the
+solution from step to step, we incur an additional cost for every such change.
+We study the multistage matroid maintenance problem, where we need to maintain
+a base of a matroid in each time step under the changing cost functions and
+acquisition costs for adding new elements. The online version of this problem
+generalizes online paging. E.g., given a graph, we need to maintain a spanning
+tree $T_t$ at each step: we pay $c_t(T_t)$ for the cost of the tree at time
+$t$, and also $| T_t\setminus T_{t-1} |$ for the number of edges changed at
+this step. Our main result is an $O(\log m \log r)$-approximation, where $m$ is
+the number of elements/edges and $r$ is the rank of the matroid. We also give
+an $O(\log m)$ approximation for the offline version of the problem. These
+bounds hold when the acquisition costs are non-uniform, in which caseboth these
+results are the best possible unless P=NP.
+  We also study the perfect matching version of the problem, where we must
+maintain a perfect matching at each step under changing cost functions and
+costs for adding new elements. Surprisingly, the hardness drastically
+increases: for any constant $\epsilon>0$, there is no
+$O(n^{1-\epsilon})$-approximation to the multistage matching maintenance
+problem, even in the offline case.

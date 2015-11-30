@@ -1,0 +1,12 @@
+We show that the sensor self-localization problem can be cast as a static
+parameter estimation problem for Hidden Markov Models and we implement fully
+decentralized versions of the Recursive Maximum Likelihood and on-line
+Expectation-Maximization algorithms to localize the sensor network
+simultaneously with target tracking. For linear Gaussian models, our algorithms
+can be implemented exactly using a distributed version of the Kalman filter and
+a novel message passing algorithm. The latter allows each node to compute the
+local derivatives of the likelihood or the sufficient statistics needed for
+Expectation-Maximization. In the non-linear case, a solution based on local
+linearization in the spirit of the Extended Kalman Filter is proposed. In
+numerical examples we demonstrate that the developed algorithms are able to
+learn the localization parameters.

@@ -1,0 +1,21 @@
+In this paper, we examine the fundamental trade-off between radiated power
+and achieved throughput in wireless multi-carrier, multiple-input and
+multiple-output (MIMO) systems that vary with time in an unpredictable fashion
+(e.g. due to changes in the wireless medium or the users' QoS requirements).
+Contrary to the static/stationary channel regime, there is no optimal power
+allocation profile to target (either static or in the mean), so the system's
+users must adapt to changes in the environment "on the fly", without being able
+to predict the system's evolution ahead of time. In this dynamic context, we
+formulate the users' power/throughput trade-off as an online optimization
+problem and we provide a matrix exponential learning algorithm that leads to no
+regret - i.e. the proposed transmit policy is asymptotically optimal in
+hindsight, irrespective of how the system evolves over time. Furthermore, we
+also examine the robustness of the proposed algorithm under imperfect channel
+state information (CSI) and we show that it retains its regret minimization
+properties under very mild conditions on the measurement noise statistics. As a
+result, users are able to track the evolution of their individually optimum
+transmit profiles remarkably well, even under rapidly changing network
+conditions and high uncertainty. Our theoretical analysis is validated by
+extensive numerical simulations corresponding to a realistic network deployment
+and providing further insights in the practical implementation aspects of the
+proposed algorithm.

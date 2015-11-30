@@ -1,0 +1,24 @@
+We consider the cheating strategies for the popular matchings problem. The
+popular matchings problem can be defined as follows: Let G = (A U P, E) be a
+bipartite graph where A denotes a set of agents, P denotes a set of posts and
+the edges in E are ranked. Each agent ranks a subset of posts in an order of
+preference, possibly involving ties. A matching M is popular if there exists no
+matching M' such that the number of agents that prefer M' to M exceeds the
+number of agents that prefer M to M'. Consider a centralized market where
+agents submit their preferences and a central contributority matches agents to posts
+according to the notion of popularity. Since a popular matching need not be
+unique, we assume that the central contributority chooses an arbitrary popular
+matching. Let a1 be the sole manipulative agent who is aware of the true
+preference lists of all other agents. The goal of a1 is to falsify her
+preference list to get better always, that is, to improve the set of posts that
+she gets matched to as opposed to what she got when she was truthful. We show
+that the optimal cheating strategy for a single agent to get better always can
+be computed in O(\sqrt{n}m) time when preference lists are allowed to contain
+ties and in O(m+n) time when preference lists are all strict. Here n = |A| +
+|P| and m = |E|.
+  To compute the cheating strategies, we develop a switching graph
+characterization of the popular matchings problem involving ties. The switching
+graph characterization was studied for the case of strict lists by McDermid and
+Irving (J. Comb. Optim. 2011) and it was open for the case of ties. The
+switching graph characterization for the case of ties is of independent
+interest and answers a part of the open questions posed by McDermid and Irving.

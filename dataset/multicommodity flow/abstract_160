@@ -1,0 +1,11 @@
+In a functional language, the dominant control-flow mechanism is function
+call and return. Most higher-order flow analyses, including k-CFA, do not
+handle call and return well: they remember only a bounded number of pending
+calls because they approximate programs with control-flow graphs. Call/return
+mismatch introduces precision-degrading spurious control-flow paths and
+increases the analysis time. We describe CFA2, the first flow analysis with
+precise call/return matching in the presence of higher-order functions and tail
+calls. We formulate CFA2 as an abstract interpretation of programs in
+continuation-passing style and describe a sound and complete summarization
+algorithm for our abstract semantics. A preliminary evaluation shows that CFA2
+gives more accurate data-flow information than 0CFA and 1CFA.

@@ -1,0 +1,19 @@
+This document describes the DIR net, a distributed environment which is part
+of the EFTOS fault tolerance framework. The DIR net is a system consisting of
+two components, called DIR Manager (or, shortly, the manager) and DIR Backup
+Agent (shortly, the backup). One manager and a set of backups is located in the
+system to be `guarded', one component per node. At this point the DIR net
+weaves a web which substantially does two things: 1) makes itself tolerant to a
+number of possible faults, and 2) gathers information pertaining the run of the
+user application. As soon as an error occurs within the DIR net, the system
+executes built-in recovery actions that allow itself to continue processing
+despite a number of hardware/software faults, possibly doing a graceful
+degradation of its features; when an error occurs in the user application, the
+DIR net, by means of custom- and user-defined detection tools, is informed of
+such events and runs one or more recovery strategies, both built-in and coded
+by the user using an ancillary compile-time tool, the rl translator. Such tools
+translates the user-defined strategies into a binary `R-code', i.e., a
+pseudo-code interpreted by a special component of the DIR net, the Recovery
+Interpreter, rint (in a sense, rint is a r-code virtual machine.) This document
+describes the generic component of the DIR net, a function which can behave
+either as manager or as backup.

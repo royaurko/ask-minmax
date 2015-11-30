@@ -1,0 +1,20 @@
+The 17th of the problems proposed by Steve Smale for the 21st century asks
+for the existence of a deterministic algorithm computing an approximate
+solution of a system of $n$ complex polynomials in $n$ unknowns in time
+polynomial, on the average, in the size $N$ of the input system. A partial
+solution to this problem was given by Carlos Beltran and Luis Miguel Pardo who
+exhibited a randomized algorithm doing so. In this paper we further extend this
+result in several directions. Firstly, we exhibit a linear homotopy algorithm
+that efficiently implements a non-constructive idea of Mike Shub. This
+algorithm is then used in a randomized algorithm, call it LV, a la
+Beltran-Pardo. Secondly, we perform a smoothed analysis (in the sense of
+Spielman and Teng) of algorithm LV and prove that its smoothed complexity is
+polynomial in the input size and $\sigma^{-1}$, where $\sigma$ controls the
+size of of the random perturbation of the input systems. Thirdly, we perform a
+condition-based analysis of LV. That is, we give a bound, for each system $f$,
+of the expected running time of LV with input $f$. In addition to its
+dependence on $N$ this bound also depends on the condition of $f$. Fourthly,
+and to conclude, we return to Smale's 17th problem as originally formulated for
+deterministic algorithms. We exhibit such an algorithm and show that its
+average complexity is $N^{O(\log\log N)}$. This is nearly a solution to Smale's
+17th problem.

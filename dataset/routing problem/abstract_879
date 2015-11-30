@@ -1,0 +1,12 @@
+We introduce BruNet, a general P2P software framework which we use to produce
+the first implementation of Symphony, a 1-D Kleinberg small-world architecture.
+Our framework is designed to easily implement and measure different P2P
+protocols over different transport layers such as TCP or UDP. This paper
+discusses our implementation of the Symphony network, which allows each node to
+keep $k \le \log N$ shortcut connections and to route to any other node with a
+short average delay of $O(\frac{1}{k}\log^2 N)$. %This provides a continuous
+trade-off between node degree and routing latency. We present experimental
+results taken from several PlanetLab deployments of size up to 1060 nodes.
+These succes sful deployments represent some of the largest PlanetLab
+deployments of P2P overlays found in the literature, and show our
+implementation's robustness to massive node dynamics in a WAN environment.

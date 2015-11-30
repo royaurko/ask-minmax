@@ -1,0 +1,14 @@
+An induced matching $M$ in a graph $G$ is dominating if every edge not in $M$
+shares exactly one vertex with an edge in $M$. The dominating induced matching
+problem (also known as efficient edge domination) asks whether a graph $G$
+contains a dominating induced matching. This problem is generally NP-complete,
+but polynomial-time solvable for graphs with some special properties. In
+particular, it is solvable in polynomial time for claw-free graphs. In the
+present paper, we study this problem for graphs containing no long claw, i.e.
+no induced subgraph obtained from the claw by subdividing each of its edges
+exactly once. To solve the problem in this class, we reduce it to the following
+question: given a graph $G$ and a subset of its vertices, does $G$ contain a
+matching saturating all vertices of the subset? We show that this question can
+be answered in polynomial time, thus providing a polynomial-time algorithm to
+solve the dominating induced matching problem for graphs containing no long
+claw.

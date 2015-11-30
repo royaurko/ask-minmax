@@ -1,0 +1,17 @@
+This paper provides a synthesis of the simulation based minimum distance
+estimators used in economics with the method of ABC (Approximate Bayesian
+Computation) used in other disciplines. While the two strands of work are
+seemingly related, the relation between them is not well understood beyond the
+fact that they all replace the likelihood by auxiliary statistics that are
+informative about the data. We connect the two methods by using a reverse
+sampler to engineer the ABC posterior distribution from a sequence of simulated
+minimum distance estimates. Focusing on the exactly identified case, we find
+that Bayesian and frequentist estimators have different bias properties for an
+arbitrary choice of prior. The difference can be traced to whether we match the
+sample auxiliary statistics to each or to the average of the simulated ones. In
+principle, the likelihood-free Bayesian estimators can completely eliminate the
+order $\frac{1}{T}$ bias with suitable choice of the prior. But under a
+specific relation between the structural parameters and auxiliary statistics,
+the frequentist simulated distance estimators are automatically second order
+unbiased. These differences are illustrated using an analytical example and a
+simulation study of the dynamic panel model.

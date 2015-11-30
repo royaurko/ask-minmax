@@ -1,0 +1,11 @@
+We show that it is feasible to carry out exact Bayesian inference for
+non-Gaussian state space models using an adaptive Metropolis Hastings sampling
+scheme with the likelihood approximated by the particle filter. Furthermore, an
+adapyive independent Metropolis Hastings sampler based on a mixture of normals
+proposal is computationally much more efficient than an adaptive random walk
+proposal because the cost of constructing a good adaptive proposal is
+negligible compared to the cost of approximating the likelihood. Independent
+Metropolis Hastings proposals are also attractive because they are easy to run
+in parallel on multiple processors. We also show that when the particle filter
+is used, the marginal likelihood of any model is obtained in an efficient and
+unbiased manner, making model comparison straightforward.

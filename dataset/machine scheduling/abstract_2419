@@ -1,0 +1,22 @@
+The expressive power of a machine learning model is closely related to the
+number of sequential computational steps it can learn. For example, Deep Neural
+Networks have been more successful than shallow networks because they can
+perform a greater number of sequential computational steps (each highly
+parallel). The Neural Turing Machine (NTM) is a model that can compactly
+express an even greater number of sequential computational steps, so it is even
+more powerful than a DNN. Its memory addressing operations are designed to be
+differentiable; thus the NTM can be trained with backpropagation.
+  While differentiable memory is relatively easy to implement and train, it
+necessitates accessing the entire memory content at each computational step.
+This makes it difficult to implement a fast NTM. In this work, we use the
+Reinforce algorithm to learn where to access the memory, while using
+backpropagation to learn what to write to the memory. We call this model the
+RL-NTM. Reinforce allows our model to access a constant number of memory cells
+at each computational step, so its implementation can be faster. The RL-NTM is
+the first model that can, in principle, learn programs of unbounded running
+time. We successfully trained the RL-NTM to solve a number of algorithmic tasks
+that are simpler than the ones solvable by the fully differentiable NTM.
+  As the RL-NTM is a fairly intricate model, we needed a method for verifying
+the correctness of our implementation. To do so, we developed a simple
+technique for numerically checking arbitrary implementations of models that use
+Reinforce, which may be of independent interest.

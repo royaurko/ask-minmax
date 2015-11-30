@@ -1,0 +1,15 @@
+The kernel-independent fast multipole method (KIFMM) proposed in [1] is of
+almost linear complexity. In the original KIFMM the time-consuming M2L
+translations are accelerated by FFT. However, when more equivalent points are
+used to achieve higher accuracy, the efficiency of the FFT approach tends to be
+lower because more auxiliary volume grid points have to be added. In this
+paper, all the translations of the KIFMM are accelerated by using the singular
+value decomposition (SVD) based on the low-rank property of the translating
+matrices. The acceleration of M2L is realized by first transforming the
+associated translating matrices into more compact form, and then using low-rank
+approximations. By using the transform matrices for M2L, the orders of the
+translating matrices in upward and downward passes are also reduced. The
+improved KIFMM is then applied to accelerate BEM. The performance of the
+proposed algorithms are demonstrated by three examples. Numerical results show
+that, compared with the original KIFMM, the present method can reduce about 40%
+of the iterating time and 25% of the memory requirement.

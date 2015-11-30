@@ -1,0 +1,20 @@
+We consider Bayesian estimation of a $p\times p$ precision matrix, when $p$
+can be much larger than the available sample size $n$. It is well known that
+consistent estimation in such ultra-high dimensional situations requires
+regularization such as banding, tapering or thresholding. We consider a banding
+structure in the model and induce a prior distribution on a banded precision
+matrix through a Gaussian graphical model, where an edge is present only when
+two vertices are within a given distance. For a proper choice of the order of
+graph, we obtain the convergence rate of the posterior distribution and Bayes
+estimators based on the graphical model in the $L_{\infty}$-operator norm
+uniformly over a class of precision matrices, even if the true precision matrix
+may not have a banded structure. Along the way to the proof, we also compute
+the convergence rate of the maximum likelihood estimator (MLE) under the same
+set of condition, which is of independent interest. The graphical model based
+MLE and Bayes estimators are automatically positive definite, which is a
+desirable property not possessed by some other estimators in the literature. We
+also conduct a simulation study to compare finite sample performance of the
+Bayes estimators and the MLE based on the graphical model with that obtained by
+using a Cholesky decomposition of the precision matrix. Finally, we discuss a
+practical method of choosing the order of the graphical model using the
+marginal likelihood function.

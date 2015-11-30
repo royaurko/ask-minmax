@@ -1,0 +1,20 @@
+Modern concurrent programming benefits from a large variety of
+synchronization techniques. These include conventional pessimistic locking, as
+well as optimistic techniques based on conditional synchronization primitives
+or transactional memory. Yet, it is unclear which of these approaches better
+leverage the concurrency inherent to multi-cores.
+  In this paper, we compare the level of concurrency one can obtain by
+converting a sequential program into a concurrent one using optimistic or
+pessimistic techniques. To establish fair comparison of such implementations,
+we introduce a new correctness criterion for concurrent programs, defined
+independently of the synchronization techniques they use.
+  We treat a program's concurrency as its ability to accept a concurrent
+schedule, a metric inspired by the theories of both databases and transactional
+memory. We show that pessimistic locking can provide strictly higher
+concurrency than transactions for some applications whereas transactions can
+provide strictly higher concurrency than pessimistic locks for others. Finally,
+we show that combining the benefits of the two synchronization techniques can
+provide strictly more concurrency than any of them individually. We propose a
+list-based set algorithm that is optimal in the sense that it accepts all
+correct concurrent schedules. As we show via experimentation, the optimality in
+terms of concurrency is reflected by scalability gains.

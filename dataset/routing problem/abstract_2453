@@ -1,0 +1,21 @@
+Analyzing and controlling large distributed services under a wide range of
+conditions is difficult. Yet these capabilities are essential to a number of
+important development and operational tasks such as benchmarking, testing, and
+system management. To facilitate these tasks, we have built the Application
+Control and Monitoring Environment (ACME), a scalable, flexible infrastructure
+for monitoring, analyzing, and controlling Internet-scale systems. ACME
+consists of two parts. ISING, the Internet Sensor In-Network agGregator,
+queries sensors and aggregates the results as they are routed through an
+overlay network. ENTRIE, the ENgine for TRiggering Internet Events, uses the
+data streams supplied by ISING, in combination with a user's XML configuration
+file, to trigger actuators such as killing processes during a robustness
+benchmark or paging a system administrator when predefined anomalous conditions
+are observed. In this paper we describe the design, implementation, and
+evaluation of ACME and its constituent parts. We find that for a 512-node
+system running atop an emulated Internet topology, ISING's use of in-network
+aggregation can reduce end-to-end query-response latency by more than 50%
+compared to using either direct network connections or the same overlay network
+without aggregation. We also find that an untuned implementation of ACME can
+invoke an actuator on one or all nodes in response to a discrete or aggregate
+event in less than four seconds, and we illustrate ACME's applicability to
+concrete benchmarking and monitoring scenarios.

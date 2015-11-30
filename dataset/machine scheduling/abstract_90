@@ -1,0 +1,23 @@
+This paper outlines the design of `Quest-V', which is implemented as a
+collection of separate kernels operating together as a distributed system on a
+chip. Quest-V uses virtualization techniques to isolate kernels and prevent
+local faults from affecting remote kernels. This leads to a high-confidence
+multikernel approach, where failures of system subcomponents do not render the
+entire system inoperable. A virtual machine monitor for each kernel keeps track
+of shadow page table mappings that control immutable memory access
+capabilities. This ensures a level of security and fault tolerance in
+situations where a service in one kernel fails, or is corrupted by a malicious
+attack. Communication is supported between kernels using shared memory regions
+for message passing. Similarly, device driver data structures are shareable
+between kernels to avoid the need for complex I/O virtualization, or
+communication with a dedicated kernel responsible for I/O. In Quest-V, device
+interrupts are delivered directly to a kernel, rather than via a monitor that
+determines the destination. Apart from bootstrapping each kernel, handling
+faults and managing shadow page tables, the monitors are not needed. This
+differs from conventional virtual machine systems in which a central monitor,
+or hypervisor, is responsible for scheduling and management of host resources
+amongst a set of guest kernels. In this paper we show how Quest-V can implement
+novel fault isolation and recovery techniques that are not possible with
+conventional systems. We also show how the costs of using virtualization for
+isolation of system services does not add undue overheads to the overall system
+performance.

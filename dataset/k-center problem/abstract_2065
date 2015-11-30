@@ -1,0 +1,25 @@
+The classical LTL synthesis problem is purely qualitative: the given LTL
+specification is realized or not by a reactive system. LTL is not expressive
+enough to formalize the correctness of reactive systems with respect to some
+quantitative aspects. This paper extends the qualitative LTL synthesis setting
+to a quantitative setting. The alphabet of actions is extended with a weight
+function ranging over the rational numbers. The value of an infinite word is
+the mean-payoff of the weights of its letters. The synthesis problem then
+amounts to automatically construct (if possible) a reactive system whose
+executions all satisfy a given LTL formula and have mean-payoff values greater
+than or equal to some given threshold. The latter problem is called LTLMP
+synthesis and the LTLMP realizability problem asks to check whether such a
+system exists. We first show that LTLMP realizability is not more difficult
+than LTL realizability: it is 2ExpTime-Complete. This is done by reduction to
+two-player mean-payoff parity games. While infinite memory strategies are
+required to realize LTLMP specifications in general, we show that
+epsilon-optimality can be obtained with finite memory strategies, for any
+epsilon > 0. To obtain an efficient algorithm in practice, we define a
+Safraless procedure to decide whether there exists a finite-memory strategy
+that realizes a given specification for some given threshold. This procedure is
+based on a reduction to two-player energy safety games which are in turn
+reduced to safety games. Finally, we show that those safety games can be solved
+efficiently by exploiting the structure of their state spaces and by using
+antichains as a symbolic data-structure. All our results extend to
+multi-dimensional weights. We have implemented an antichain-based procedure and
+we report on some promising experimental results.

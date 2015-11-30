@@ -1,0 +1,20 @@
+Centered numerical fluxes can be constructed for compressible Euler equations
+which preserve kinetic energy in the semi-discrete finite volume scheme. The
+essential feature is that the momentum flux should be of the form $f^m_\jph =
+\tp_\jph + \avg{u}_\jph f^\rho_\jph$ where $\avg{u}_\jph = (u_j + u_{j+1})/2$
+and $\tp_\jph, f^\rho_\jph$ are {\em any} consistent approximations to the
+pressure and the mass flux. This scheme thus leaves most terms in the numerical
+flux unspecified and various contributors have used simple averaging. Here we
+enforce approximate or exact entropy consistency which leads to a unique choice
+of all the terms in the numerical fluxes. As a consequence novel entropy
+conservative flux that also preserves kinetic energy for the semi-discrete
+finite volume scheme has been proposed. These fluxes are centered and some
+dissipation has to be added if shocks are present or if the mesh is coarse. We
+construct scalar artificial dissipation terms which are kinetic energy stable
+and satisfy approximate/exact entropy condition. Secondly, we use entropy-
+variable based matrix dissipation flux which leads to kinetic energy and
+entropy stable schemes. These schemes are shown to be free of entropy violating
+solutions unlike the original Roe scheme. For hypersonic flows a blended scheme
+is proposed which gives carbuncle free solutions for blunt body flows.
+Numerical results for Euler and Navier-Stokes equations are presented to
+demonstrate the performance of the different schemes.

@@ -1,0 +1,12 @@
+The working-set bound [Sleator and Tarjan, J. ACM, 1985] roughly states that
+searching for an element is fast if the element was accessed recently. Binary
+search trees, such as splay trees, can achieve this property in the amortized
+sense, while data structures that are not binary search trees are known to have
+this property in the worst case. We close this gap and present a binary search
+tree called a layered working-set tree that guarantees the working-set property
+in the worst case. The unified bound [Badoiu et al., TCS, 2007] roughly states
+that searching for an element is fast if it is near (in terms of rank distance)
+to a recently accessed element. We show how layered working-set trees can be
+used to achieve the unified bound to within a small additive term in the
+amortized sense while maintaining in the worst case an access time that is both
+logarithmic and within a small multiplicative factor of the working-set bound.

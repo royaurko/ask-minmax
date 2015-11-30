@@ -1,0 +1,14 @@
+In this paper, we consider the problem of maximizing the spread of influence
+through a social network. Given a graph with a threshold value~$thr(v)$
+attached to each vertex~$v$, the spread of influence is modeled as follows: A
+vertex~$v$ becomes "active" (influenced) if at least $thr(v)$ of its neighbors
+are active. In the corresponding optimization problem the objective is then to
+find a fixed number of vertices to activate such that the number of activated
+vertices at the end of the propagation process is maximum. We show that this
+problem is strongly inapproximable in fpt-time with respect to (w.r.t.)
+parameter $k$ even for very restrictive thresholds. In the case that the
+threshold of each vertex equals its degree, we prove that the problem is
+inapproximable in polynomial time and it becomes $r(n)$-approximable in
+fpt-time w.r.t. parameter $k$ for any strictly increasing function $r$.
+  Moreover, we show that the decision version is W[1]-hard w.r.t. parameter $k$
+but becomes fixed-parameter tractable on bounded degree graphs.

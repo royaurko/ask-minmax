@@ -1,0 +1,18 @@
+Intel Xeon Phi is a recently released high-performance coprocessor which
+features 61 cores each supporting 4 hardware threads with 512-bit wide SIMD
+registers achieving a peak theoretical performance of 1Tflop/s in double
+precision. Many scientific applications involve operations on large sparse
+matrices such as linear solvers, eigensolver, and graph mining algorithms. The
+core of most of these applications involves the multiplication of a large,
+sparse matrix with a dense vector (SpMV). In this paper, we investigate the
+performance of the Xeon Phi coprocessor for SpMV. We first provide a
+comprehensive introduction to this new architecture and analyze its peak
+performance with a number of micro benchmarks. Although the design of a Xeon
+Phi core is not much different than those of the cores in modern processors,
+its large number of cores and hyperthreading capability allow many application
+to saturate the available memory bandwidth, which is not the case for many
+cutting-edge processors. Yet, our performance studies show that it is the
+memory latency not the bandwidth which creates a bottleneck for SpMV on this
+architecture. Finally, our experiments show that Xeon Phi's sparse kernel
+performance is very promising and even better than that of cutting-edge general
+purpose processors and GPUs.

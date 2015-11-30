@@ -1,0 +1,22 @@
+We present a highly efficient molecular dynamics scheme for calculating the
+concentration profile of dopants implanted in group-IV alloy, and III-V zinc
+blende structure materials. Our program incorporates methods for reducing
+computational overhead, plus a rare event algorithm to give statistical
+accuracy over several orders of magnitude change in the dopant concentration.
+  The code uses a molecular dynamics (MD) model, instead of the binary
+collision approximation (BCA) used in implant simulators such as TRIM and
+Marlowe, to describe ion-target interactions. Atomic interactions are described
+by a combination of `many-body' and screened Coulomb potentials. Inelastic
+energy loss is accounted for using a Firsov model, and electronic stopping is
+described by a Brandt-Kitagawa model which contains the single adjustable
+parameter for the entire scheme. Thus, the program is easily extensible to new
+ion-target combinations with the minimum of tuning, and is predictive over a
+wide range of implant energies and angles.
+  The scheme is especially suited for calculating profiles due to low energy,
+large angle implants, and for situations where a predictive capability is
+required with the minimum of experimental validation. We give examples of using
+our code to calculate concentration profiles and 2D `point response' profiles
+of dopants in crystalline silicon, silicon-germanium blends, and
+gallium-arsenide. We can predict the experimental profile over five orders of
+magnitude for <100> and <110> channeling and for non-channeling implants at
+energies up to hundreds of keV.

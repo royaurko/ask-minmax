@@ -1,0 +1,24 @@
+We list in increasing order -- 1/3, 3/8, 2/5, 135 pi/1024, 16/(3 pi^2), 3
+pi/16, 5/8, 105 pi/512, 2 - 435 pi/1024, 11/16, 1 -- a number of exact
+two-qubit Hilbert-Schmidt (HS) separability probabilities, we are able to
+compute. Each probability corresponds to a specific scenario -- a class of 4 x
+4 density matrices (rho) with an m-subset (m<6) of its six off-diagonal pairs
+of symmetrically located entries set to zero. Initially, we consider only
+scenarios in which the (6-m) non-nullified pairs are real, but then permit them
+to be complex (as well as quaternionic) in nature also. The general analytical
+strategy we implement is based on the Bloore density matrix parameterization
+(J. Phys. A, 9, 2059 [1976]), allowing us to conveniently reduce the
+dimensionalities of required integrations. For each scenario, we identify a
+certain univariate ``separability function'' S_{scenario}(nu), where nu =
+rho_{11} rho_{44}/(rho_{22} rho_{33}). The integral over nu in [0,infty] of the
+product of this function with a scenario-specific (marginal) jacobian function
+J_{scenario}(nu) yields the HS {separable} volume (V^{HS}_{sep}). The ratio of
+V^{HS}_{sep} to the HS total (entangled and non-entangled) volume, gives us the
+HS scenario-specific separability probability. Among the possible forms that we
+have so far determined for S_{scenario}(nu) are piecewise combinations of c, c
+sqrt{nu} and c nu for nu in [0,1] and (in a dual manner) c, c/sqrt{nu} and c/nu
+for nu in [1,infty]. We also obtain bivariate separability functions
+S_{scenario)^{6 x 6}(nu_{1},nu_{2}} in the qubit-qutrit case, involving 6 x 6
+density matrices, with ratio variables, nu_{1}= rho_{11} rho_{55}/(rho_{22}
+rho_{44}), and nu_{2}= rho_{22} rho_{66}/(rho_{33} rho_{55}). Additionally, we
+investigate parallel two-qutrit and three-qubit problems.

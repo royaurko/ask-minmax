@@ -1,0 +1,24 @@
+We consider the problem of energy-efficient on-line scheduling for
+slice-parallel video decoders on multicore systems. We assume that each of the
+processors are Dynamic Voltage Frequency Scaling (DVFS) enabled such that they
+can independently trade off performance for power, while taking the video
+decoding workload into account. In the past, scheduling and DVFS policies in
+multi-core systems have been formulated heuristically due to the inherent
+complexity of the on-line multicore scheduling problem. The key contribution of
+this report is that we rigorously formulate the problem as a Markov decision
+process (MDP), which simultaneously takes into account the on-line scheduling
+and per-core DVFS capabilities; the power consumption of the processor cores
+and caches; and the loss tolerant and dynamic nature of the video decoder's
+traffic. In particular, we model the video traffic using a Direct Acyclic Graph
+(DAG) to capture the precedence constraints among frames in a Group of Pictures
+(GOP) structure, while also accounting for the fact that frames have different
+display/decoding deadlines and non-deterministic decoding complexities. The
+objective of the MDP is to minimize long-term power consumption subject to a
+minimum Quality of Service (QoS) constraint related to the decoder's
+throughput. Although MDPs notoriously suffer from the curse of dimensionality,
+we show that, with appropriate simplifications and approximations, the
+complexity of the MDP can be mitigated. We implement a slice-parallel version
+of H.264 on a multiprocessor ARM (MPARM) virtual platform simulator, which
+provides cycle-accurate and bus signal-accurate simulation for different
+processors. We use this platform to generate realistic video decoding traces
+with which we evaluate the proposed on-line scheduling algorithm in Matlab.

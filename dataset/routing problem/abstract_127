@@ -1,0 +1,20 @@
+Mobile ip (mip) is an internet protocol that allows mobile nodes to have
+continuous network connectivity to the internet without changing their ip
+addresses while moving to other networks. The packets sent from correspondent
+node (cn) to a mobile node (mn) go first through the mobile node's home agent
+(ha), then the ha tunnels them to the mn's foreign network. One of the main
+problems in the original mip is the triangle routing problem. Triangle routing
+problem appears when the indirect path between cn and mn through the ha is
+longer than the direct path. This paper proposes a new technique to improve the
+performance of the original mip during the handoff. The proposed technique
+reduces the delay, the packet loss and the registration time for all the
+packets transferred between the cn and the mn. In this technique, tunneling
+occurs at two levels above the ha in a hierarchical network. To show the
+effectiveness of the proposed technique, it is compared with the original mip
+and another technique for solving the same problem in which tunneling occurs at
+one level above the ha. Simulation results presented in this paper are based on
+the ns2 mobility software on linux platform. The simulations results show that
+our proposed technique achieves better performance than the others, considering
+the packet delay, the packet losses during handoffs and the registration time,
+in different scenarios for the location of the mn with respect to the ha and
+fas.
