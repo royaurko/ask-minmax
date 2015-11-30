@@ -27,12 +27,6 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
  posterior distribution supported on the "most relevant" (coming from Jenks/k-means) problems.
  * You can visualizes the changing distribution in a simple matplotlib plot.
  
-## Other stuff
- 
- * You can store the database files as a BSON object (stored in `database/db`).
- * To see the code organization see [organization.md](src/askminmax/organization.md)
- * Comes with a small default [database](database/db)
- 
 ## Prerequisites: 
 
  * Python 3
