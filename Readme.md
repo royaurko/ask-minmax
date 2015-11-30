@@ -7,7 +7,7 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
  * Ask-minmax associates a **prior** to every problem and question in the database. 
  * The prior of a problem is proportional to the number of times there is a query intended for that particular
   problem. 
- * At the beginning of every iteration, it asks the user for a human readable [summary](summary.md).
+ * At the beginning of every iteration, it asks the user for a human readable [summary](summaries.md).
  * (Document vectors)[https://cs.stanford.edu/~quocle/paragraph_vector.pdf] have been trained on 
   abstracts downloaded from arxiv and google-scholar.
  * A softmax classifier is built on top of these document vectors to output a probability distribution on
