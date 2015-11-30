@@ -68,12 +68,16 @@ you the option to create one of your own. Finally to run the expert system use
 ```python
 expert.run(data_set, doc2vec_model_path, classifier_path)
 ```
-where data_set 
+where `data_set` is the path to the data set (for e.g. [dataset](dataset)), 
+ `doc2vec_model_path` is the path to the Doc2Vec model (for e.g. 
+ [model_2015-11-25_08-44-27.d2v](model_2015-11-25_08-44-27.d2v)), and 
+ `classifier_path` is the path to the softmax classifier 
+ (for e.g. [model_2015-11-28_21-50-40.log](model_2015-11-28_21-50-40.log)).
 
 ## Doc2Vec model examples
 
-You can train your own word2vec model on your domain specific dataset. In this case we train it on
-abstracts downloaded from `arxiv`. Here's a fun example in IPython:
+You can train your own doc2vec model on your domain specific dataset. In this case we train it on
+abstracts downloaded from `arxiv` and `google-scholar`. Here are some interesting examples in IPython:
 
 ```python
 In [1]: from gensim.models import Doc2Vec
