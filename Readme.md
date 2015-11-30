@@ -25,7 +25,7 @@ Ask Minmax is an expert system for optimization problems targeted towards the no
   sampled from.
  * The algorithm is greedy in the sense that it only cares about questions that reduce the entropy on the
  posterior distribution supported on the "most relevant" (coming from Jenks/k-means) problems.
- * You can visualizes the changing distribution in a simple matplotlib plot.
+ * One can visualize the changing distribution in a simple matplotlib plot.
  
 ## Prerequisites: 
 
