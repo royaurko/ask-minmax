@@ -1,9 +1,0 @@
-The QCDSP machines were designed for lattice gauge calculations. For planning
-it is crucial to explore this architecture for other computationally intensive
-tasks. Here I describe an implementation of a simple message passing scheme.
-With the objective being simplicity, I introduce a small number of generic
-functions for manipulating a large data set spread over the machine. I test the
-scheme on three applications: a fast Fourier transform, arbitrary dimension
-SU(N) pure lattice gauge theory, and the manipulation of Fermionic Fock states
-through a distributed hash table. These routines compile both on QCDSP and a
-Unix workstation.

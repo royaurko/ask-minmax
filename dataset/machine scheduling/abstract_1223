@@ -1,9 +1,0 @@
-Priority queues with parallel access are an attractive data structure for
-applications like prioritized online scheduling, discrete event simulation, or
-branch-and-bound. However, a classical priority queue constitutes a severe
-bottleneck in this context, leading to very small throughput. Hence, there has
-been significant interest in concurrent priority queues with a somewhat relaxed
-semantics where deleted elements only need to be close to the minimum. In this
-paper we present a very simple approach based on multiple sequential priority
-queues. It turns out to outperform previous more complicated data structures
-while at the same time improving the quality of the returned elements.

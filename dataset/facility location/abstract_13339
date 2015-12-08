@@ -1,8 +1,0 @@
-We have developed a highly scalable application, called Shoal, for tracking
-and utilizing a distributed set of HTTP web caches. Squid servers advertise
-their existence to the Shoal server via AMQP messaging by running Shoal Agent.
-The Shoal server provides a simple REST interface that allows clients to
-determine their closest Squid cache. Our goal is to dynamically instantiate
-Squid caches on IaaS clouds in response to client demand. Shoal provides the
-VMs on IaaS clouds with the location of the nearest dynamically instantiated
-Squid Cache. In this paper, we describe the design and performance of Shoal.

@@ -1,9 +1,0 @@
-This paper proposes a technique to specify and verify whether a loop can be
-parallelised. Our approach can be used as an additional step in a parallelising
-compiler to verify user annotations about loop dependences. Essentially, our
-technique requires each loop iteration to be specified with the locations it
-will read and write. From the loop iteration specifications, the loop
-(in)dependences can be derived. Moreover, the loop iteration specifications
-also reveal where synchronisation is needed in the parallelised program. The
-loop iteration specifications can be verified using permission-based separation
-logic.

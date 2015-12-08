@@ -1,9 +1,0 @@
-We incorporate heteroskedasticity into Bayesian Additive Regression Trees
-(BART) by modeling the log of the error variance parameter as a linear function
-of prespecified covariates. Under this scheme, the Gibbs sampling procedure for
-the original sum-of- trees model is easily modified, and the parameters for the
-variance model are updated via a Metropolis-Hastings step. We demonstrate the
-promise of our approach by providing more appropriate posterior predictive
-intervals than homoskedastic BART in heteroskedastic settings and demonstrating
-the model's resistance to overfitting. Our implementation will be offered in an
-upcoming release of the R package bartMachine.

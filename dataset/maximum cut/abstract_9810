@@ -1,8 +1,0 @@
-We describe a new implementation of the elementary transcendental functions
-exp, sin, cos, log and atan for variable precision up to approximately 4096
-bits. Compared to the MPFR library, we achieve a maximum speedup ranging from a
-factor 3 for cos to 30 for atan. Our implementation uses table-based argument
-reduction together with rectangular splitting to evaluate Taylor series. We
-collect denominators to reduce the number of divisions in the Taylor series,
-and avoid overhead by doing all multiprecision arithmetic using the mpn layer
-of the GMP library. Our implementation provides rigorous error bounds.

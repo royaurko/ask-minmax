@@ -1,9 +1,0 @@
-In this work, we aim to evaluate different Distributed Lock Management
-service designs with Remote Direct Memory Access (RDMA). In specific, we
-implement and evaluate the centralized and the RDMA-enabled lock manager
-designs for fast network settings. Experimental results confirms a couple of
-hypotheses. First, in the traditional centralized lock manager design, CPU is
-the bottleneck and bypassing CPU on client-to-server communication using RDMA
-results in better lock service perofrmance. Second, different lock manager
-designs with RDMA in consideration result in even better performance; we need
-to re-design lock management system for RDMA and fast networks.

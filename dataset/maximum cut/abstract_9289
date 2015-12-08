@@ -1,9 +1,0 @@
-In this note we introduce a new randomized algorithm for counting triangles
-in graphs. We show that under mild conditions, the estimate of our algorithm is
-strongly concentrated around the true number of triangles. Specifically, if $p
-\geq \max{(\frac{\Delta \log{n}}{t}, \frac{\log{n}}{\sqrt{t}})}$, where $n$,
-$t$, $\Delta$ denote the number of vertices in $G$, the number of triangles in
-$G$, the maximum number of triangles an edge of $G$ is contained, then for any
-constant $\epsilon>0$ our unbiased estimate $T$ is concentrated around its
-expectation, i.e., $ \Prob{|T - \Mean{T}| \geq \epsilon \Mean{T}} = o(1)$.
-Finally, we present a \textsc{MapReduce} implementation of our algorithm.

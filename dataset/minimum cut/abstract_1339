@@ -1,9 +1,0 @@
-We show that the default-all propagation scheme for database annotations is
-dangerous. Dangerous here means that it can propagate annotations to the query
-output which are semantically irrelevant to the query the user asked. This is
-the result of considering all relationally equivalent queries and returning the
-union of their where-provenance in an attempt to define a propagation scheme
-that is insensitive to query rewriting. We propose an alternative
-query-rewrite-insensitive (QRI) where-provenance called minimum propagation. It
-is analogous to the minimum witness basis for why-provenance, straight-forward
-to evaluate, and returns all relevant and only relevant annotations.
