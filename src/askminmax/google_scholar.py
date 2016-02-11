@@ -6,6 +6,7 @@ import hashlib
 import time
 from . import database
 import random
+import argparse
 
 
 def download_abstracts_scholar(db, start, num_results, keyword, time_delay=1200):
@@ -61,3 +62,13 @@ def download_abstracts_scholar(db, start, num_results, keyword, time_delay=1200)
         except KeyboardInterrupt:
             break
     database.dump_db()
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d', '--db', help='Database to store result in')
+    parser.add_argument('-s', '--start', help='Start number of abstract to download')
+    parser.add_argument('-n', '--num_results', help='Number of abstracts to download')
+    parser.add_argument('-k', '--keyword', help='Keyword to download')
+    parser.add_argument('-t', '--time', help='Time delay')
+    args = parser.parse_args()
+    download_abstracts_scholar(args.db, args.start, args.num_results, args.keyword, args.time)

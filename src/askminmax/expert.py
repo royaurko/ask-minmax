@@ -596,7 +596,6 @@ class Expert:
         e = entropy(p)
         print('Entropy = ', e)
 
-
     def adjust_question_priors_from_summary(self, summary, model_name):
         """ Adjust the priors of problems from the summary
         :param summary: Word tokens of summary

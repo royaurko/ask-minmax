@@ -85,15 +85,25 @@ def train_random_forest_classifier(data_set, doc2vec_model_path):
     d = {}
     for i, keyword in enumerate(keywords):
         d[keyword] = i
-    train_data = []
+    data = []
     for keyword in keywords:
         for abstract in os.listdir(data_set + '/' + keyword):
             labelled_vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
-            train_data.append(labelled_vector)
+            data.append(labelled_vector)
+    # Split train and test
+    random.shuffle(data)
+    n = len(data)
+    m = int(0.9*n)
+    train_data = data[: m]
+    test_data = data[m: n]
     train_arrays = np.array([x[0] for x in train_data])
     train_labels = np.array([x[1] for x in train_data])
+    test_arrays = np.array([x[0] for x in test_data])
+    test_labels = np.array([x[1] for x in test_data])
     classifier = RandomForestClassifier(n_estimators=500, n_jobs=-1)
     classifier.fit(train_arrays, train_labels)
+    print('Classifier score on train data = ', classfier.score(train_arrays, train_labels))
+    print('Classifier score on test_data = ', classifier.score(test_arrays, test_labels))
     model_path = 'models/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
@@ -122,13 +132,22 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path):
         for abstract in os.listdir(data_set + '/' + keyword):
             vector = get_vector(doc2vec_model, data_set, keyword, abstract, d)
             data.append(vector)
+    # Split train and test
+    random.shuffle(data)
+    n = len(data)
+    m = int(0.9*n)
+    train_data = data[: m]
+    test_data = data[m: n]
     # Do a cross validation
-    train_arrays = np.array([x[0] for x in data])
-    train_labels = np.array([x[1] for x in data])
+    train_arrays = np.array([x[0] for x in train_data])
+    train_labels = np.array([x[1] for x in train_data])
+    test_arrays = np.array([x[0] for x in test_data])
+    test_labels = np.array([x[1] for x in test_data])
     classifier = LogisticRegression(C=1.0, max_iter=1000, penalty='l2',
                                       solver='newton-cg')
     classifier.fit(train_arrays, train_labels)
-    print(('Classifier score = ', classifier.score(train_arrays, train_labels)))
+    print('Classifier score on train_data = ', classifier.score(train_arrays, train_labels))
+    print('Classifier score on test_data = ', classifer.score(test_arrays, test_labels))
     model_path = 'models/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
@@ -247,7 +266,7 @@ def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('mode', help="'doc2vec' for training doc2vec vectors, 'logit' for building logit model")
+    parser.add_argument('mode', help="'doc2vec' for training doc2vec vectors, 'logit' for building logit model, 'rf' for RF model")
     parser.add_argument('-n', '--num_cores', help='Number of cores to use with -w')
     parser.add_argument('-e', '--num_epochs', help='Number of epochs to train with -w')
     parser.add_argument('-d', '--data_path', help='Path to abstracts')
@@ -261,5 +280,10 @@ if __name__ == '__main__':
     if args.mode == 'logit':
         try:
             train_logistic_regression_classifier(args.data_path, args.model_path)
+        except Exception as e:
+            print('Unexpected error: ', e)
+    if args.mode == 'rf':
+        try:
+            train_random_forest_classifier(args.data_path, args.model_path)
         except Exception as e:
             print('Unexpected error: ', e)
