@@ -102,7 +102,7 @@ def train_random_forest_classifier(data_set, doc2vec_model_path):
     test_labels = np.array([x[1] for x in test_data])
     classifier = RandomForestClassifier(n_estimators=500, n_jobs=-1)
     classifier.fit(train_arrays, train_labels)
-    print('Classifier score on train data = ', classfier.score(train_arrays, train_labels))
+    print('Classifier score on train data = ', classifier.score(train_arrays, train_labels))
     print('Classifier score on test_data = ', classifier.score(test_arrays, test_labels))
     model_path = 'models/'
     if not os.path.exists(model_path):
@@ -147,7 +147,7 @@ def train_logistic_regression_classifier(data_set, doc2vec_model_path):
                                       solver='newton-cg')
     classifier.fit(train_arrays, train_labels)
     print('Classifier score on train_data = ', classifier.score(train_arrays, train_labels))
-    print('Classifier score on test_data = ', classifer.score(test_arrays, test_labels))
+    print('Classifier score on test_data = ', classifier.score(test_arrays, test_labels))
     model_path = 'models/'
     if not os.path.exists(model_path):
         os.makedirs(model_path)
