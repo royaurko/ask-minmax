@@ -185,7 +185,7 @@ def word2vec_clusters(model):
     start = time.time()
     vectors = model.syn0
     num_clusters = eval(input('Number of clusters: '))
-    print(("Running clustering with %d clusters" % num_clusters))
+    print("Running clustering with {0} clusters".format(num_clusters))
     clustering_algorithm = sklearn.cluster.MiniBatchKMeans(n_clusters=num_clusters)
     idx = clustering_algorithm.fit_predict(vectors)
     end = time.time()
@@ -195,7 +195,7 @@ def word2vec_clusters(model):
     for cluster in range(num_clusters):
         words = [key for key in list(centroid_map.keys()) if centroid_map[key] == cluster]
         if 1 < len(words) < 20:
-            print(("\nCluster %d" % cluster))
+            print("\nCluster {0}".format(cluster))
             print(words)
 
 
@@ -207,7 +207,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
     :return: None, call k-means from w2vClusters(corpus)
     """
     sentences = MySentences(data_set)
-    print(("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs)))
+    print("Training doc2vec model using {0} cores for {1} epochs".format(cores, num_epochs)))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     model = gensim.models.Doc2Vec(sentences, size=400, min_count=10, window=10, alpha=0.025, min_alpha=0.025,
                                   sample=1e-4, workers=cores)
@@ -242,7 +242,7 @@ def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
     cursor = db.papers.find(no_cursor_timeout=True)
     keywords = [item['keyword'] for item in cursor]
     sentences = MySentences(db, flag, keywords)
-    print(("Training doc2vec model using %d cores for %d epochs" % (cores, num_epochs)))
+    print("Training doc2vec model using {0} cores for {0} epochs".format(cores, num_epochs))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     # Load model from model_path
     model = gensim.models.Doc2Vec.load(model_name)
