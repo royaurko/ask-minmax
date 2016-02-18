@@ -215,6 +215,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
     sentences_list = sentences.to_array()
     idx = list(range(len(sentences_list)))
     for i in range(num_epochs):
+        print('Epoch {0}'.format(i))
         random.shuffle(idx)
         perm_sentences = [sentences_list[i] for i in idx]
         model.train(perm_sentences)
@@ -267,16 +268,16 @@ def continue_training(db, flag, model_name, cores=num_cpu, num_epochs=10):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('mode', help="'doc2vec' for training doc2vec vectors, 'logit' for building logit model, 'rf' for RF model")
-    parser.add_argument('-n', '--num_cores', help='Number of cores to use with -w')
-    parser.add_argument('-e', '--num_epochs', help='Number of epochs to train with -w')
+    parser.add_argument('-n', '--num_cores', type=int, help='Number of cores to use')
+    parser.add_argument('-e', '--num_epochs', type=int, help='Number of epochs to train')
     parser.add_argument('-d', '--data_path', help='Path to abstracts')
     parser.add_argument('-m', '--model_path', help='Path to Doc2Vec model')
     args = parser.parse_args()
     if args.mode == 'doc2vec':
-        try:
-            build_model(args.data_path, args.num_cores, args.num_epochs)
-        except:
-            print('Unexpected error')
+        #try:
+        build_model(args.data_path, args.num_cores, args.num_epochs)
+        #except:
+        #    print('Unexpected error!!')
     if args.mode == 'logit':
         try:
             train_logistic_regression_classifier(args.data_path, args.model_path)
