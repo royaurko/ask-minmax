@@ -1,0 +1,168 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage[pagebackref,bookmarksnumbered,bookmarksopen,plainpages=false,pdfpagelabels,%
+unicode,
+breaklinks,colorlinks,citecolor=blue,linkcolor=blue,hyperindex]{hyperref}
+
+\newcommand{\ent}{\operatorname{H}}
+\usepackage{color}
+\usepackage{amsmath}
+
+\title{An Expert System for Optimization problems}
+\author{Aurko Roy}
+
+\begin{document}
+
+\maketitle
+In this report we describe an approach towards building an expert system
+for a very specific domain - in this case the area of \emph{Optimization problems}.
+The first step is to identify a small set of problems that will be the \emph{target 
+problems} for the expert system. We list the problems in Table~\ref{table:prob}. 
+
+For every problem we have downloaded abstracts from \texttt{ArXiv} and \texttt{Google Scholar} 
+by searching for the name of the problem as a keyword. Unfortunately, some problems are
+better represented in the academic literature than others and that is also the case
+with our dataset. The motivation behind downloading the abstracts is to get a 
+good vector representation for the texts corresponding to these problems so that
+these vectors are then easily separable by some classifier (such as e.g., Logistic
+Regression or Random Forest classifiers). Towards this end we use the \texttt{Doc2Vec}
+model of \cite{DBLP:journals/corr/LeM14} which is based on the celebrated \texttt{Word2Vec}
+model of \cite{mikolov2013distributed}. \texttt{Doc2Vec} is an unsupervised machine
+learning algorithm that learns fixed-length feature representations from variable length
+texts. The main idea behind this algorithm is to train a neural network to maximize 
+a certain ``contextual loss function''. More precisely, given a sequence
+\(w_1, w_2, \cdots, w_T\) of training words, the loss function that is maximized is the
+average log probability
+\begin{align*}
+ \frac{1}{T}\sum_{t=k}^{T-k} \log p\left(w_t \mid w_{t-k}, \cdots, w_{t + k}\right).
+\end{align*}
+
+This approach has been to known to work better than other typically used approaches for text classification
+(such as e.g., using \emph{bag-of-words} with Bayes, SVM and other classifiers). In our setting
+we build a \texttt{Doc2Vec} model that maps documents to \(400\) dimensional vectors with a window
+size \(k = 10\). The model is trained with an initial learning rate of \(0.025\) and high frequency
+words are downsampled with a threshold of \(10^{-4}\) (see \cite{mikolov2013distributed}). We then train 
+a multi-class Logistic Regression classifier (also
+known as Softmax) on the feature vectors of these abstracts, where the target 
+class for every abstract is the keyword (problem) it was searched for. This then gives us a way
+to classify textual information as belonging to one of these particular class of problems. 
+We trained the Logistic Regression classifier with \(C=1.0\) and a 
+\(\ell_2\) penalty to combat overfitting. We also trained a Random Forest classifier
+with \(500\) forests. The data was split into train and test using a \(9:1\) split and the 
+multiclass score for each classifier is reported in Table~\ref{table:score}. Note that 
+randomly guessing the problem class would have a probability of success of only \(\frac{1}{26} = 0.0384\).
+
+
+\begin{table}[!htb]
+  \begin{center}\label{table:exp}
+  \def\arraystretch{1.2}
+  \begin{tabular}{lcc}
+  Classifier &  Train score & Test score \\
+  \hline
+  Logistic Regression & \(0.3844\) & \(0.3796\)\\
+  Random Forests & \(1.0\) & \(0.3133\)\\
+ \end{tabular}
+\caption{Classifier results}\label{table:score}
+\end{center}
+\end{table}
+  
+
+The way this classifier model is used is by asking the user for some description of his problem. It is hoped
+that the description that a reasonably informed user would input would have some correlation
+with academic abstracts corresponding to their problem. From the text that the user enters one can get probability
+estimates for every problem class. For example on a Logistic Regression classifier trained as above,
+the sentence ``I want to route something'' assigns a probability mass of \(0.12\) to \emph{Traveling Salesman},
+\(0.15\) to \emph{Routing problem} and so on. Thus this gives us a good prior on the problems to start with. In 
+addition, the priors are also a function of the number of times a specific problem was queried for in the
+database. This gives us a good prior to start the reasoning of the expert system with (see Figure~\ref{fig:visualization}
+for a visualization of problem priors).
+
+\begin{figure}[htb!]
+\centering
+\includegraphics[scale=0.5]{fig1.png}
+\caption{Problem priors after user summary} \label{fig:visualization}
+\end{figure}
+
+The main technical tool behind picking suitable questions to ask with this set of problems and their
+priors is the notion of \emph{entropy}. Recall that for discrete distributions on a set \(X\), the
+entropy \(\ent(X)\) is defined as \(\ent(X) \coloneqq -\sum_{x \in X} p(x) \log{p(x)}\). Every question
+in the database has a list of \texttt{YES} and \texttt{NO} problems. A \texttt{YES} problem is one
+for which the answer to the question is positive for this problem, while a \texttt{NO} problem
+answers negatively to this question. As an example, the question ``Is it a routing problem'' would have
+\emph{Traveling salesman} in its \texttt{YES} problem list, while it would have \emph{Maximum cut}
+in its \texttt{NO} problem list. Intuitively, the usefulness of a question is in its discriminative
+power given a particular distribution on the problem set. This is precisely the notion of 
+\emph{Expected conditional entropy}. In this case we make a simplifying assumption about the 
+probability with which a user is expected to answer \texttt{YES} or \texttt{NO} - we assume
+that both answers are equally likely. Of course this will not always be the case, such as e.g.
+depending on previous contextual information  one of the 
+answers might be more likely than others. Thus if the problem set is \(X\) and 
+\(Y_q\) is an indicator random variable that captures the outcome of the question \(q\) then
+\(\ent(X \mid Y_q) \coloneqq  \frac{1}{2} \ent(X \mid Y_q = 1) + \frac{1}{2}\ent(X \mid Y_q = 0)\) 
+is the expected conditional entropy for question \(q\). Thus it makes sense given a certain distribution
+over the problems to ask questions with probability proportional to the amount with which
+asking that question is expected to reduce the uncertainty (entropy) in the distribution over the problems. 
+
+Ofcourse the end goal of the expert system is to reduce the entropy over the problems to \(0\) by
+asking the most helpful questions, which corresponds
+to a single point distribution where we have correctly identified a \emph{single} correct problem. However this is slightly
+fragile and hence what we do is the following. Any time the distribution over the problems change, we can identify
+a small set of ``most likely'' problems. This can be achieved for example by using \emph{Jenks natural breaks}
+algorithm which is just \(k\)-means in one dimensional space. There are fast implementations
+of this algorithm for e.g. in \emph{Cython}\footnote{\url{https://github.com/perrygeo/jenks}} 
+which allows us to identify a good set of high probability 
+points even when \(k\) is unknown. Thus the user may halt execution at any step if he or she is satisfied
+with this small list of problems. In case the user is not satisfied, then he or she has the
+option of adding a problem to the problem list or selecting a problem from the list. Further
+he or she can in addition add a \emph{separating question} - i.e. a question that for every incorrect problem
+in the set of problems identified by the expert discriminates it from the correct problem as expected by the
+user. In particular, a \emph{separating question} question can either be \texttt{YES} for the correct problem
+and \texttt{NO} for the incorrect problem, or it can be \texttt{NO} for the correct problem and 
+\texttt{YES} for the incorrect problem. This in turn builds up the \texttt{YES} and \texttt{NO} list
+for this question and so on.
+
+\begin{table}[!htb]
+  \begin{center}
+  \begin{tabular}{c|l}
+  & \textbf{Problems}\\
+  \hline
+1 & Vertex cover \\
+2 & Traveling salesman \\
+3 & facility location \\
+4 & Independent set \\
+5 & Routing problem \\
+6 & \(k\)-center problem \\
+7 & Metric TSP \\
+8 & Spanning tree \\
+9 & Feedback arc set \\
+10 & Hypergraph matching \\
+11 & Bin packing \\
+12 & Cutting stock \\
+13 & Hamiltonian path \\
+14 & Minimum cut \\
+15 & Maximum cut \\
+16 & Machine scheduling \\
+17 & Job scheduling \\
+18 & Edge coloring \\
+19 & Vehicle routing \\
+20 & Knapsack \\
+21 & Steiner tree \\
+22 & Network flow  \\
+23 & Berth allocation problem \\
+24 & Multicommodity flow \\
+25 & Maximum matching \\
+26 & Server problems
+\end{tabular}
+\caption{List of target problems for the expert system}\label{table:prob}
+\end{center}
+\end{table}
+
+\bibliographystyle{apalike}
+\bibliography{literature.bib}
+
+\end{document}
