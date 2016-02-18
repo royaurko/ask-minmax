@@ -207,7 +207,7 @@ def build_model(data_set, cores=num_cpu, num_epochs=10):
     :return: None, call k-means from w2vClusters(corpus)
     """
     sentences = MySentences(data_set)
-    print("Training doc2vec model using {0} cores for {1} epochs".format(cores, num_epochs)))
+    print("Training doc2vec model using {0} cores for {1} epochs".format(cores, num_epochs))
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
     model = gensim.models.Doc2Vec(sentences, size=400, min_count=10, window=10, alpha=0.025, min_alpha=0.025,
                                   sample=1e-4, workers=cores)
